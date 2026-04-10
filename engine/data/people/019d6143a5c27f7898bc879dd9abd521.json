@@ -1,0 +1,269 @@
+{
+  "id": "019d6143a5c27f7898bc879dd9abd521",
+  "type": "character",
+  "name": "Quinn Agyemang-Kjellberg",
+  "aliases": [
+    "Beni",
+    "Beni-from-the-cart"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Noodle cart vendor, Geartown morning market strip",
+  "age": 38,
+  "status": "active",
+  "location": "Geartown — operates her cart at the corner of Smelter's Passage and the main Geartown transit underpass, 05:30 to 14:00, near North Ave and Milwaukee",
+  "description": "Benedita is a solid, energetic woman who smells permanently of star anise and chili oil, a fact she considers an asset. Her skin is warm dark brown, her hair dyed a shifting copper-red that she touches up every three weeks with geneware dye she dilutes to stretch the bottle. She has a cat tail — rust-orange, thick, and expressive — that she got at nineteen during what she describes as 'a phase that became a personality.' It is genuinely expressive: anyone who knows her can read her mood from it before she's opened her mouth. She runs her cart with the systematic ferocity of someone who has learned that every Quanta counts, and she has optimized her workflow to a degree that would impress an industrial engineer.\n\nShe is loud, warm, and mercilessly funny, the kind of person who remembers your order and your name and your mother's name and will ask after all three. She extends credit to regulars who are short at the end of the month and maintains a running mental ledger that she rarely actually collects on. Her noodles are genuinely excellent — a recipe that is a fusion of her grandmother's Turkish-inflected broth technique and a Ghanaian pepper base she learned from the previous cart owner — and this is not incidental to her identity. She is aware that she is feeding people who cannot afford to eat otherwise and takes this seriously without making anyone feel it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.65,
+      "id": 0.7,
+      "shadow": 0.35,
+      "mask": 0.4,
+      "ghost": 0.45
+    },
+    "core_fears": [
+      "Losing the cart license — it represents everything she built after her marriage ended",
+      "Her daughter inheriting her financial precarity"
+    ],
+    "core_desires": [
+      "Enough stability to stop doing the math every month",
+      "For the food to speak for itself — to be known for the craft, not just the price"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection from genuine vulnerability",
+      "Generosity as a way of controlling the help she gives before the world gives it to her on worse terms"
+    ],
+    "blind_spots": [
+      "Extends trust too quickly to people who seem financially desperate, because she identifies with them — has been burned by this"
+    ],
+    "secret": "She has been quietly underreporting her cart's income to the Municipal Market Authority for three years to stay below the threshold that would kick her out of the subsidized licensing tier. The amount is small but consistent. She tells herself she'll fix it when she's more stable, which she knows is the thing people say."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, warm, market-inflected GLMZ street Portuguese mixed with English, occasional Turkish endearments from her mother's side. Nicknames everyone within two visits.",
+    "cadence": "Rapid-fire when busy, slows dramatically when something actually matters to her — the shift is noticeable",
+    "verbal_tics": [
+      "'Irmã' (used for women she likes)",
+      "'You want extra chili? Of course you do'",
+      "Clicking the ladle against the pot when making a point"
+    ],
+    "example_lines": [
+      "'Six Quanta. No, I know what you have. Give me four and come back Friday with the rest, I trust you. I don't know why I trust you, but here we are.'",
+      "'My grandmother made broth for a war. I'm making it for a Tuesday. It's the same thing, you understand? Same thing exactly.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular — a workshop machinist who ate at her cart every morning for four years — hasn't appeared in two weeks, and no one in Geartown seems to know where they went",
+    "A Municipal Market Authority inspector has been coming by more frequently than the quarterly schedule requires, always during rush hour, always ordering something small and watching the cart's payment terminal carefully"
+  ],
+  "narrative_function": "Neighborhood fixture and social connector — she knows every regular in Geartown's morning workforce and serves as a warm entry point into that community. Can be a quest giver (someone stopped showing up for their morning bowl), information source, or simply a place to establish grounding in Geartown.",
+  "augmentations": "Rust-orange cat tail, geneware (cosmetic, fully expressive, original installation age 19 — she has had it re-calibrated twice). Copper-red hair dye, geneware-based (diluted market grade). Heat-resistant palm pads — subdermal silicone layer in both palms, practical installation for working with hot equipment.",
+  "daily_life": "Up at 04:00 to prep stock, cart open by 05:30 for the first shift change at the Geartown workshops, runs until sold out (usually 13:30-14:00). Spends afternoons sourcing ingredients, managing her daughter's after-school care, and doing her books on a cracked tablet.",
+  "affiliation": "Independent (licensed vendor, Geartown Municipal Market Authority)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Neighborhood Institution",
+      "Precarious Survivor",
+      "Community Feeder",
+      "Expressive Geneware User"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed people first, ask questions second",
+      "Never extend credit to someone she suspects is going to disappear",
+      "Keep the cart's reputation clean even when her own finances aren't"
+    ],
+    "escalation_ladder": [
+      "Cheerful but pointed deflection",
+      "Direct statement of the problem, still warm in tone",
+      "The ladle stops moving — full attention, serious voice",
+      "Asks the person to come back tomorrow, which means she needs time to think"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately inclusive — assumes they're regulars waiting to happen",
+      "friends": "Teasing, generous, occasionally overwhelming in her attentiveness"
+    },
+    "stress_responses": {
+      "low": "Talks faster, more jokes",
+      "medium": "Goes quiet mid-sentence and resets",
+      "high": "Furious efficiency — the cart has never run faster or more silently than when she's genuinely scared"
+    },
+    "contradictions": [
+      "Presents herself as someone who has it handled; is never more than one bad month from not having it handled"
+    ],
+    "habits": [
+      "Tastes the broth exactly seven times before opening, adjusting each time",
+      "Keeps a small ELF offering — a bent Quanta coin and a dried chili — taped to the inside of the cart's steam panel"
+    ],
+    "breaking_points": [
+      "Someone being cruel to a customer who is visibly struggling"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Rust-orange cat tail geneware (cosmetic, expressive)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Rust-orange cat tail geneware (cosmetic, expressive)",
+      "replaces": ""
+    },
+    {
+      "name": "Copper-red hair dye geneware (diluted market grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Copper-red hair dye geneware (diluted market grade)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal heat-resistant palm pads (both hands, practical)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal heat-resistant palm pads (both hands, practical)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9,
+    "Generous Fool": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "related_entities": [
+    "Grandmother",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Thermite Cavity Disbursement Shell TCDS-3",
+    "Adaeze Chen-Hawkins",
+    "Copper",
+    "Celeste Abram",
+    "Rust",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Auntie Efe's Pot",
+    "Below the Threshold",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Pyrolytic Fascial Plane Separator PFPS-2 'Peeler'",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tafara Quiñones-Saarinen",
+    "The Coffin Nails",
+    "The Ledger",
+    "The Pure Hand",
+    "The Threshold",
+    "Witness"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (46.2%), Northern European (20.6%), East Asian (19.5%), Southeast Asian (13.7%) — a striking blend expressed in warm deep brown skin with subtle golden undertones, textured hair with natural curl patterns, and facial structure reflecting the convergence of these ancestries",
+    "height_cm": 167,
+    "weight_kg": 74,
+    "build": "Solid, muscular through the shoulders and forearms from years of repetitive cart work — heavy-set but not soft, the build of someone who moves with purpose and doesn't stop moving",
+    "hair_color": "Copper-red (geneware dye, maintained every three weeks)",
+    "hair_style": "Shoulder-length, usually pulled back in a functional braid or knot while working, loose and textured otherwise",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Warm deep brown with golden undertones, the complexion of someone who spends half her day working over steam and open flame",
+    "complexion": "Weathered in the way that comes from early rising and heat exposure — fine lines around the eyes from squinting and smiling, perpetually flushed cheeks from the cart's radiant heat. Facial structure reflects blended ancestry: broader nose with defined bridge, high cheekbones with balanced proportions across East and Southeast Asian heritage mixing with Sub-Saharan features. Calloused hands, nails kept short and practical. Permanently carries the smell of star anise, chili oil, and broth.",
+    "distinguishing_marks": [
+      "Rust-orange cat tail, thick and expressive, installed at age 19 — movements and position clearly reflect her emotional state (tail flicks with irritation, curls with contentment, swishes when she's concentrating on a complex order)",
+      "Heat-resistant subdermal silicone pads visible as slightly raised, translucent patches across both palms — worn from contact with pot handles and steam",
+      "Small scar on her left forearm from a childhood accident, pale against her skin tone",
+      "Calluses across her fingertips and the heel of her right hand from knife work and cart operation"
+    ],
+    "visible_augmentations": "Rust-orange cat tail with visible subdermal anchor points at the base of her spine (visible when her shirt rides up, which it often does during work). Hands show the telltale translucency of subdermal heat-resistant pads. Copper-red hair color has the characteristic slight iridescence of geneware dye under certain light angles.",
+    "posture_movement": "Always in motion — economical, efficient movements honed by years of cart work. She carries herself with a kind of compressed energy, ready to pivot from taking an order to chopping vegetables to handling change without hesitation. Her tail moves independently of her conscious attention, serving as a barometer of her mood that her face might not express. When standing still (rare), she shifts her weight to one leg, typically favoring her left.",
+    "clothing_style": "Practical Tier 3-4 workwear: reinforced apron with deep pockets (usually stained with turmeric, chili oil, broth) worn over a fitted long-sleeved undershirt, sleeves pushed up to mid-forearm. Cargo pants in dark gray or black, pockets full of tools (peeler, lighter, change purse, wrapped mints). Non-slip boots rated for wet surfaces and heat. A lightweight overshirt hanging nearby for when she steps away from the cart. No jewelry except a simple brass ring her daughter made her, worn on her right middle finger. Her appearance is deliberately practical — every item serves a function — but maintained with enough care that it's clear she takes pride in her work."
+  },
+  "image_prompt": "Quinn Agyemang-Kjellberg, 167cm tall, warm deep brown skin with golden undertones, Sub-Saharan African and East Asian heritage features, high cheekbones, dark brown observant eyes. Shoulder-length copper-red geneware-dyed textured hair in functional braid, showing iridescence under light. Muscular solid build, weathered from heat and steam exposure, fine lines around eyes. Rust-orange expressive cat tail augmentation curling expressively at spine. Subdermal heat-resistant silicone pads visible on palms, translucent patches. Working stance, economical efficient movements, mid-motion over street food cart in GLMZ neon-lit night market. Wearing reinforced apron stained with turmeric and chili oil over fitted long-sleeved undershirt with pushed-up sleeves, dark cargo pants, heat-rated non-slip boots. Brass ring daughter-made on right middle finger. Perpetually flushed cheeks from radiant heat, hands calloused from knife work. Cyberpunk 2226, steam and neon glow, practical Tier 3 workwear aesthetic, purposeful energy, smell of star anise and broth in the air --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 46.2,
+    "Northern European": 20.6,
+    "East Asian": 19.5,
+    "Southeast Asian": 13.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

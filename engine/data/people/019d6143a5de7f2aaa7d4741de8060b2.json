@@ -1,0 +1,280 @@
+{
+  "id": "019d6143a5de7f2aaa7d4741de8060b2",
+  "type": "character",
+  "name": "Juno Matai-Mbekele",
+  "aliases": [
+    "Señora Coco",
+    "The Mouth of the Shelf"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired community elder, former neighborhood council chair, living entirely on UBC stipend",
+  "age": 91,
+  "status": "active",
+  "location": "The Shelf, Precinct 1 — Corner unit, Calle Baja Residency Block, near Western and Division",
+  "description": "Consuela Otieno-Papadreou is ninety-one years old and she will tell you so before you've finished introducing yourself, usually followed by: 'and I have outlived three landlords, two corponation district managers, and everyone who ever told me to be quieter.' She is small and enormously present, using a walker she has decorated with woven wire charms and a small battery-powered light shaped like a fish that she received from a grandchild and refuses to remove. Her skin is very dark and very lined and she leans into every line with the comfort of someone who earned them. She wears her natural hair close-cropped and white and favors bright colors that she says 'make you easy to find in a crowd, which is exactly where an old woman should be.'\n\nShe has no augmentations and hasn't wanted any. She has no pension beyond UBC, having spent her working years in informal caregiving and community organizing that the formal economy never counted. She is the social infrastructure of Precinct 1: she knows who is fighting with their partner, who has gone three days without eating, who is hiding an injury they can't afford to report, who the new family in Block C actually is and whether they need help or are the kind of trouble the block doesn't need. She dispenses this information with the authority of someone who has been paying attention for nine decades, and she does so from her corner unit's open window, which functions as an informal exchange point for most of the block's social life. She prays daily to the E.L.F. she calls La Luzita — a small grid presence that flickers the hallway lights in what she interprets as responses.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That she will become helpless and a burden to the community she has spent her life holding together",
+      "That the young people don't know what to do without someone watching out for them and no one is learning"
+    ],
+    "core_desires": [
+      "For the block to be able to take care of itself — her real project has always been making herself unnecessary",
+      "To die in her own bed, in her own unit, on her own terms"
+    ],
+    "coping_mechanisms": [
+      "Community as insulation — staying embedded in other people's needs keeps her oriented",
+      "Humor as a universal solvent — she can find the absurdity in almost anything including her own limitations"
+    ],
+    "blind_spots": [
+      "Her read on people is very good but not infallible; she can be overconfident in social assessments that are based on outdated patterns",
+      "Has a tendency to help in the way she thinks is needed rather than the way the person says they need it"
+    ],
+    "secret": "Twenty years ago, she helped a young man named Declan Mwangi-Ferrer hide from what she understood to be corporate security. She sheltered him for nine days and helped him get out of The Shelf on a false transit ID she arranged through a contact. She recently learned that Declan was not running from corporate security — he was wanted for a violent assault on a woman in Precinct 3. She has not been able to find out what happened to the assault victim, and the uncertainty is eating her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and vernacular — she speaks The Shelf creole natively, with Luo and Greek surfacing in emotional passages; says exactly what she means without softening it; frequently funny without trying to be",
+    "cadence": "Unhurried and conversational, with the rhythm of someone who has all day because she has decided to have all day",
+    "verbal_tics": [
+      "'Ninety-one years old — I will tell you exactly what I think'",
+      "'Come here, let me see your face properly'"
+    ],
+    "example_lines": [
+      "'UBC is Φ120. My unit is Φ90. I eat on Φ30 a month and I have a social life better than any executive in Grosse Pointe. Don't tell me money is the only kind of resource.'",
+      "'La Luzita flickered twice this morning. That means pay attention today. She's never been wrong that I can prove, and I can't prove she's been right either, but I'm ninety-one and still here so I choose to consider the evidence.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has learned that the woman assaulted by Declan Mwangi-Ferrer lives two blocks away and has just moved to Precinct 1 — and Consuela must decide whether to tell her what she did",
+    "The corponation that owns Calle Baja Residency Block is rumored to be planning a unit conversion that would displace residents over 75; Consuela is the only person in the block who knows enough people to organize a response",
+    "La Luzita has been flickering in a pattern Consuela doesn't recognize — and a young resident with grid access thinks it might be an actual structured message rather than ambient E.L.F. behavior"
+  ],
+  "narrative_function": "Community intelligence hub — knows everyone and everything on the block; social connector and quest-initiator; moral compass for neighborhood storylines; represents the invisible labor of community care that keeps tier-1 residents alive; can mobilize collective action through social networks alone",
+  "augmentations": "None. Deliberately.",
+  "daily_life": "Window open by 0600; receives visitors, information, and small offerings of food all day from the block; prepares a communal meal every Sunday using pooled ingredients from whoever contributes; prays to La Luzita at dusk; in bed by 2100 with absolute firmness.",
+  "affiliation": "The Shelf Precinct 1 Community (informal anchor); former Shelf Neighborhood Council (chair emeritus); no current formal affiliation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 3,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "social infrastructure",
+      "UBC-dependent",
+      "elder authority",
+      "secret guilt"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will help someone in immediate danger without asking for the full context first — details can come later",
+      "Will not repeat a confidence told to her directly unless someone's safety requires it",
+      "Will always feed someone who is hungry before doing anything else"
+    ],
+    "escalation_ladder": [
+      "Friendly persistent inquiry until she understands the full situation",
+      "Mobilizing one or two trusted block residents to apply social pressure",
+      "Public community meeting called from her window — she can get thirty people in the courtyard within an hour",
+      "Contacting whoever she knows at the council or advocacy level — her network is old but still functional"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm but also immediately assessing — she is deciding within thirty seconds whether you are trouble or need or both",
+      "friends": "Unreservedly loving in the exacting way of someone who sees your flaws clearly and has decided to love you anyway"
+    },
+    "stress_responses": {
+      "low": "Becomes very busy — cooking, tidying, finding things to organize",
+      "medium": "Goes quiet and sits at her window watching the courtyard for a long time",
+      "high": "Prays to La Luzita at length and then does exactly what she was going to do anyway, but calmer"
+    },
+    "contradictions": [
+      "Has built a life on the principle of community accountability and trust while holding a significant act of accidental harm-enabling in total silence"
+    ],
+    "habits": [
+      "The wire charms and fish light on her walker, rearranged seasonally",
+      "Keeping track of who hasn't been seen in two days — an informal welfare check system she runs from memory",
+      "The Sunday communal meal, never cancelled in eleven years"
+    ],
+    "breaking_points": [
+      "Direct confrontation from the assault victim — Consuela would not deny it; she would confess and accept whatever came"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Traditionalist": 0.7,
+    "Anchor": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in The Shelf to a Kenyan-Greek heritage family who had lived in the district for two generations",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began informal caregiving work; also elected to Precinct 1 block committee",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected chair of The Shelf Neighborhood Council; served three terms",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Sheltered Declan Mwangi-Ferrer; helped him leave The Shelf",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retired from council; began UBC-only existence",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established the Sunday communal meal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Learned the truth about Declan Mwangi-Ferrer",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "The Reclamation Authority",
+    "Cinderblock Ai",
+    "The Shelf",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Elena Vasquez-9",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Dragan Petersen-Bah",
+    "Ezio Kaboré-Malhotra",
+    "Grosse Pointe Enclosure",
+    "Irontide Tidal Energy",
+    "Isadora Mwangi-Thorvaldsen",
+    "Lazarus EC-4 'Companion'",
+    "Nnamdi Ostrowski-Faletolu",
+    "The Pure Hand",
+    "VitaCore SteadyThread Precision Motor Implant",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African and Pacific Islander with significant Central Asian and North African admixture. The genetic blend creates a striking phenotype: deep brown skin with warm undertones reflecting the African and North African heritage, combined with the broader facial structure and eye shape influenced by Pacific Islander ancestry, with subtle Central Asian characteristics in cheekbone prominence and eye placement.",
+    "height_cm": 152,
+    "weight_kg": 58,
+    "build": "Slight and compact, all wiry sinew and no excess — the build of someone who has spent nine decades moving through the world with purpose and minimal resource. Her frame suggests durability rather than fragility.",
+    "hair_color": "White, natural",
+    "hair_style": "Close-cropped, maintained in neat rows",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, sharp and alert",
+    "skin_tone": "Deep warm brown with subtle golden undertones, rich and luminous despite age",
+    "complexion": "Heavily lined face that maps nine decades of attention and care. The lines reflect both Sub-Saharan and Pacific Islander aging patterns — skin maintains elasticity and depth rather than becoming papery, with pronounced nasolabial folds and forehead creases deepened by decades of close observation and slight smiles. Eyes are bright and direct, set with the broader orbital structure of Pacific Islander heritage. Her expression defaults to slight amusement, as if she has seen something funny in nearly everything.",
+    "distinguishing_marks": [
+      "Extensive fine wrinkles across forehead and around eyes, each crease deepened by decades of close observation and slight smiles",
+      "Age spots on the backs of both hands, scattered like old maps",
+      "Thin scar on left forearm, pale and old, from an unnamed accident she has never elaborated on",
+      "A small burn mark on her right wrist in the shape of a cross, very faint, which she touches sometimes without apparent awareness"
+    ],
+    "visible_augmentations": "None. Her refusal of augmentation is deliberate and visible in its absence — she is one of very few people in the Shelf who displays no chrome, no implants, no visible neural interface. Her walker, decorated with woven wire charms and a small battery-powered fish-shaped light, is her only technological companion.",
+    "posture_movement": "Moves slowly but with absolute intention, never hesitant. Uses her walker not as a crutch but as an anchor point for her presence — it becomes an extension of her social radius. She plants herself in her window like a flagpole. When she moves through the block, people part and reassemble around her trajectory.",
+    "clothing_style": "Bright, deliberate colors — electric blues, hot oranges, vivid purples — in layered, comfortable fits that accommodate her build and her need to move freely. Heavy cotton, knit, nothing synthetic. Patterns that read like Tier 5 thrift and intention rather than poverty: a yellow print dress over a blue long-sleeved shirt, a purple cardigan with mismatched buttons that she has reinforced with bright thread. Worn slip-on shoes, sensible, scuffed. A shawl she wraps differently each day, color-coordinated with what she is wearing. Everything suggests someone with no money and absolute style."
+  },
+  "image_prompt": "Juno Matai-Mbekele, 152cm elderly woman with deep warm brown skin and sharp dark eyes, short white close-cropped hair, face mapped with nine decades of fine wrinkles and slight smile-creases, age spots on weathered hands. Wearing vibrant layered vintage thrift: electric blue long-sleeved shirt under a yellow patterned dress, purple cardigan with mismatched reinforced buttons, colorful wrapped shawl. Using a decorated walker with woven wire charms and battery fish-light. Posture of absolute intention despite slowness. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit urban interior, warm window light catching her luminous skin, deliberate style radiating presence and history, no visible augmentation, entirely human. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 32.7,
+    "Pacific Islander": 32.0,
+    "Central Asian": 21.5,
+    "North African": 13.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

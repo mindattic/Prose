@@ -1,0 +1,330 @@
+{
+  "id": "019d6143a5f379e8812b15bb5fe36129",
+  "type": "character",
+  "name": "Youssef Cissé",
+  "aliases": [
+    "Arsenal",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Infrastructure disruption and industrial sabotage — saboteur",
+  "age": 37,
+  "status": "active",
+  "location": "The Rookery — dense vertical housing, gang-controlled, near Pulaski and Chicago Ave",
+  "description": "Djeneba Orlov-Obeng is lean and angular, all sharp edges and visible tension. At 37, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a saboteur out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDjeneba Orlov-Obeng has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.47,
+      "ideal": 0.21,
+      "id": 0.96,
+      "shadow": 0.31,
+      "mask": 0.3,
+      "ghost": 0.81
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Djeneba Orlov-Obeng is terrified of deep net diving but has built their reputation on it. Uses black-market AI to handle the heavy lifting while taking credit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"I don't break things. I introduce structural critiques.\"",
+      "\"The most effective sabotage looks like bad luck.\"",
+      "\"Everything has a weakness. Infrastructure has thousands.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Djeneba Orlov-Obeng discovers a job they completed last year was a setup for something much larger and much worse",
+    "A former associate resurfaces with evidence that could destroy Djeneba Orlov-Obeng's reputation — and a price for silence",
+    "A high-paying contract turns out to target someone Djeneba Orlov-Obeng owes a personal debt to"
+  ],
+  "narrative_function": "As a saboteur, Djeneba Orlov-Obeng embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Geneware muscle density treatment — looks natural, hits like chrome. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 6
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.57,
+      "caution": 0.85,
+      "loyalty": 0.74,
+      "greed": 0.64,
+      "empathy": 0.98
+    },
+    "drives": [
+      "power",
+      "money",
+      "survival"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 5,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "mechanical aptitude — can repair or modify almost anything",
+      "strategic thinking under pressure"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "saboteur",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Insists they work alone but performs noticeably better in a team",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware muscle density treatment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Internal air filtration system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9",
+    "Chicago",
+    "Arcturus MX-1 'Cerberus'",
+    "Breck Tannen",
+    "GLMZ",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Ilhan Sandstrom-Badu",
+    "Independent Micro-Grid Power Cooperative",
+    "Mika Sorel",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Réginald Asomaning-Čabarkapa",
+    "TESSERA CR-12 'Whisper'",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "North African Berber-Arab with significant Sub-Saharan African, East Asian, and Northern European ancestry. The combination produces distinctive features: warm brown skin with subtle golden undertones from North African heritage, angular facial structure reflecting East Asian admixture, and high cheekbones common to both North and Sub-Saharan African genetics. Facial geometry shows the bridge of mixed continental ancestry — defined but not sharp, with a complexity that defies simple categorization.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular with visible muscle definition from geneware enhancement; low body fat, wiry strength rather than bulk. Chest and shoulders show the telltale density of chrome muscle treatment — they move with inhuman precision.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Kept short and tight, minimal styling. Pragmatic cut for his line of work.",
+    "hair_length": "Short",
+    "eye_color": "Brown with faint amber undertone",
+    "skin_tone": "Warm medium-deep brown with golden undertones, slightly muted by nocturnal lifestyle but retaining the richness of North African-Sub-Saharan heritage. The nocturnal pallor sits beneath rather than displacing the natural warmth.",
+    "complexion": "Angular jawline and prominent cheekbones reflecting mixed North African and East Asian ancestry. Skin shows the strain of night-cycle living — faint dark circles beneath warm brown eyes, but clear and scar-free on the face. Grooming is meticulous and functional; no jewelry, no flash.",
+    "distinguishing_marks": [
+      "Faint linear scarring along left collarbone and down the sternum — surgical markers from lung replacement procedure, visible when shirtless",
+      "Pale burn marks across the inner right forearm in a grid pattern — old electrical accident, deliberate choice not to correct",
+      "Small tool-mark tattoos on the inside of both wrists in minimalist script — contract confirmation marks in the saboteur underground"
+    ],
+    "visible_augmentations": "Chrome geneware musculature visible under the skin of forearms, shoulders, and upper chest — not bulky, but with an unnatural density and subtle metallic sheen under certain lighting. The musculature moves with mechanical precision that betrays its artificial nature. No visible neural ports, optical implants, or external chrome.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands with slight forward lean, shoulders loose but alert. Natural state appears to be coiled tension; even at rest, his body reads as ready to move. Eyes track exits and structural weak points instinctively.",
+    "clothing_style": "Tier 4-5 utilitarian. Dark-colored cargo pants with reinforced panels and hidden pockets for tools. Black or charcoal synthetic jacket with asymmetrical chest pockets and articulated shoulders — brands like Cerberus Tactical or unmarked knockoffs from the Shelf. Steel-toed work boots, scuffed and worn. No corpo branding, no gang colors. Clothing is chosen for function: durability, mobility, pockets for equipment. Everything fits close enough to move but loose enough to hide things."
+  },
+  "image_prompt": "Youssef Cissé, 178cm lean cyberpunk saboteur with warm golden-brown skin and angular North African-East Asian features, short natural dark textured hair, brown eyes with amber undertones. Meticulous grooming, no facial scarring. Chrome geneware musculature visible under forearms and shoulders with subtle metallic sheen, moving with unnatural precision. Linear surgical scarring visible on left collarbone and sternum, pale grid burn marks on inner right forearm, minimalist tool-mark tattoos on wrists. Wearing dark charcoal Cerberus Tactical synthetic jacket with asymmetrical pockets and articulated shoulders, reinforced cargo pants, scuffed steel-toed work boots. Coiled posture, economical movement, eyes tracking exits. Nocturnal setting, cool blue and amber lighting, industrial warehouse background, cyberpunk 2226, utilitarian underground aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "North African": 44.5,
+    "Sub-Saharan African": 24.3,
+    "East Asian": 17.8,
+    "Northern European": 13.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "id": "019d6143a6f27f5da85ae4aaf239b540",
+  "type": "character",
+  "name": "Sable Faalele",
+  "aliases": [
+    "Karma",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Chemical and biological agent specialist — poisoner",
+  "age": 60,
+  "status": "active",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
+  "description": "Tenzin Takahashi-Boateng is average height but with a presence that fills more space than the body accounts for. At 60, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTenzin Takahashi-Boateng is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.97,
+      "ideal": 0.66,
+      "id": 0.82,
+      "shadow": 0.52,
+      "mask": 0.35,
+      "ghost": 0.91
+    },
+    "core_fears": [
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "The perfect run — one job so clean it becomes legend",
+      "To prove everyone who dismissed them catastrophically wrong"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies"
+    ],
+    "secret": "Tenzin Takahashi-Boateng witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
+    "verbal_tics": [
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop",
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
+    ],
+    "example_lines": [
+      "\"Chemistry is just cooking with consequences.\"",
+      "\"The best poison is the one nobody tests for.\"",
+      "\"Patience, precision, and an understanding of human biology. Everything else is optional.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Tenzin Takahashi-Boateng's reputation — and a price for silence",
+    "A dead drop Tenzin Takahashi-Boateng maintains is found and cleaned out — whoever did it now has leverage",
+    "A corporate black site Tenzin Takahashi-Boateng once infiltrated is being reopened, and the people inside know her face"
+  ],
+  "narrative_function": "Tenzin Takahashi-Boateng is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Vocal modulator — can replicate any voice after 30 seconds of sample audio",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 9
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 10
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.17,
+      "caution": 0.88,
+      "loyalty": 0.41,
+      "greed": 0.45,
+      "empathy": 0.66
+    },
+    "drives": [
+      "freedom",
+      "protection",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 5,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "ability to remain calm under fire",
+      "encyclopedic knowledge of GLMZ infrastructure"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "physical limitation from incomplete augmentation",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "poisoner",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Counts ammunition obsessively — knows the exact round count at all times"
+    ],
+    "breaking_points": [
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    },
+    {
+      "name": "Vocal modulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Vocal modulator — can replicate any voice after 30 seconds of sample audio",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Poisoner": 0.9,
+    "Cold Calculator": 0.9,
+    "Ghost": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "The Milwaukee Core",
+    "Arcturus Exo-Runner Frame",
+    "Aslan Granlund-Tawiah",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Crucible RE-2 'Receptionist'",
+    "Ilhan Sandstrom-Badu",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Neuromorphic Pressure Cestus",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Heritage Vault",
+    "The Underlayer Collective"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Pacific Islander dominant (37.6%) with significant Indigenous American (26.0%) and Sub-Saharan African (19.3%) ancestry, blended with Hispanic/Latin American (10.6%), Eastern European (3.5%), and Northern European (3.0%) heritage. Genetic ancestry produces warm, rich medium-brown skin tone with undertones reflecting the Pacific Islander and African components, bone structure showing angular Indigenous American characteristics.",
+    "height_cm": 167,
+    "weight_kg": 62,
+    "build": "Lean and compact, deceptively strong. Muscle density concentrated in core and legs from decades of augmentation integration. No wasted mass — economical, efficient.",
+    "hair_color": "Steel gray with natural black undertones",
+    "hair_style": "Pulled back in a tight, functional braid. Practical. No decoration.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, sharp and assessing",
+    "skin_tone": "Warm medium-dark brown with rich undertones — Pacific Islander and Sub-Saharan African ancestry creating deep, luminous base tone with slight golden warmth from Indigenous American heritage",
+    "complexion": "Weathered but not aged poorly. High cheekbones with angular definition characteristic of Indigenous American ancestry, strong jawline. Fine lines around eyes from squinting, not smiling. Skin carries a faint chemical sheen — occupational hazard, never quite washes out. Facial structure shows the blend of broad Pacific Islander features with sharper Indigenous American definition.",
+    "distinguishing_marks": [
+      "Keloid scarring along both temples from neural interface installation — visible even with hair pulled back, jagged lines suggesting field work rather than clinic precision",
+      "Surgical scar along right jawline where vocal modulator was installed, partially concealed by bone structure but visible in profile",
+      "Faint chemical burns on fingertips and knuckles — discoloration, textured skin from years handling reactive compounds",
+      "Small tattoo on left inner wrist: three vertical lines in faded black ink, origin and meaning never explained"
+    ],
+    "visible_augmentations": "Hydraulic joints at both knees and elbows — the chrome is evident, brushed steel finish with visible piston housings. No attempt at discretion or cosmetic covering. The joints move with mechanical precision, sometimes a hydraulic hiss when stress loads exceed threshold. Subdermal plating visible along her forearms when sleeves ride up — gray-metal sheen beneath skin.",
+    "posture_movement": "Economical. Moves without flourish — each motion serves a purpose. Stands with weight balanced on the balls of feet, ready to shift. When seated, she maintains alertness rather than relaxation. Her movements carry a mechanical underlayer; the hydraulic joints have a subtle rhythm that marks her as augmented to anyone watching. No fidgeting. No nervous tells.",
+    "clothing_style": "Tier 3-4 transitional — pragmatic rather than aspirational. When in cover identity: neutral corporate-adjacent clothing, forgettable brands, nothing that draws attention. When working: dark fitted synthetics with reinforced seams and hidden pockets, matte finishes to avoid reflection. Favors jackets with high collars to partially conceal scarring. No jewelry except a simple analog watch — nothing wireless that could be traced or hacked. Boots with reinforced ankle support to accommodate hydraulic knee joints. Everything worn shows age; she maintains gear rather than replacing it."
+  },
+  "image_prompt": "Cyberpunk 2226 character portrait: Sable Faalele, a lean 167cm woman with warm medium-dark brown skin reflecting Pacific Islander, Indigenous American, and Sub-Saharan African ancestry. Sharp angular cheekbones and defined jawline, dark brown assessing eyes. Steel gray hair pulled back in functional braid. Visible jagged keloid scarring on temples from neural interface, surgical scar on right jawline, chemical burns on knuckles. Brushed steel hydraulic joints visible at both knees and elbows with mechanical precision. Subdermal plating visible on forearms. Wearing dark fitted synthetics with high collar jacket concealing scarring, reinforced boots. Posture alert and economical, weight balanced forward. Minimalist analog watch, no wireless tech. Chemical sheen on weathered skin. Cyberpunk Great Lakes Metropolitan Zone setting, moody lighting emphasizing the mechanical-organic blend, professional cover-work aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 37.6,
+    "Indigenous American": 26.0,
+    "Sub-Saharan African": 19.3,
+    "Hispanic/Latin American": 10.6,
+    "Eastern European": 3.5,
+    "Northern European": 3.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

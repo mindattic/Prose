@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a6bb7e5fa3db5456e6f47afd",
+  "type": "character",
+  "name": "Chenoa Pathak-Tlaloc",
+  "aliases": [
+    "Rue",
+    "the Pharmacist at the End of the World"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Pharmacist and bio-compound specialist, Geartown",
+  "age": 28,
+  "status": "active",
+  "location": "Geartown, Grindstone Shore, near Milwaukee and Damen",
+  "description": "Ruthanne runs a licensed pharmacy out of a narrow shopfront wedged between a hydraulics supplier and a noodle counter in the worst-smelling block of Geartown, and she has made it into something that people travel across two districts to use. She is short and broad-shouldered, with warm russet-brown skin, a mouth that moves faster than most people's thoughts, and a shock of white hair she grows long and wears in complicated braids studded with small metallic charms that clink softly when she moves. Her geneware is both functional and ostentatious: her fingertips have been modified to contain chemical assay sensors — she can touch a pill and tell you if it's cut — and her tongue has a sensory modification she uses for compound tasting that has made her one of the most accurate pharmacists in the district. She wears a lab coat covered in pockets over whatever she put on that morning, which is usually something with a print that shouldn't work but does.\n\nShe is an expert in the specific pharmaceutical ecology of a cyberpunk megacity: what people are actually taking, why they're taking it, what it's doing to them in combination with their augmentations, what the street versions are cut with, and how to get the effect someone needs through a combination of legal compounds when the thing they actually want isn't legal or isn't available. She is also the first person in Geartown to notice disease trends — she sees the prescriptions, she sees what people are buying over the counter, she talks to people, and she has a mind that aggregates data the way other people collect worries. She files reports with the community health co-op rather than Aurochs because Aurochs would turn the data into a pricing algorithm.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Missing something — a pattern in the data that she should have caught, a drug interaction she should have flagged, a trend that turns into an epidemic because she didn't report it fast enough",
+      "That her gray-market sourcing is going to blow back on a patient — that something she got from a distributor she trusted was actually compromised"
+    ],
+    "core_desires": [
+      "To build a pharmaceutical cooperative that operates entirely outside corponation licensing — truly community-owned, truly accessible",
+      "To be taken seriously as a researcher — her pattern recognition work is genuine epidemiology and she has never been credentialed for it"
+    ],
+    "coping_mechanisms": [
+      "Hyperfocus — she channels anxiety into meticulous record-keeping and pattern analysis",
+      "The daily noodle lunch as a non-negotiable anchor",
+      "Talking, fast and constantly, to anyone who will listen or work with her"
+    ],
+    "blind_spots": [
+      "She trusts her own data analysis completely and is slow to consider that her data set itself might be manipulated",
+      "She is so accustomed to assessing people through a pharmaceutical lens that she sometimes misses purely social dynamics"
+    ],
+    "secret": "Eight months ago she identified a cluster of symptoms in seventeen patients that matched a suppressed Helix Biosystems trial report she found in a data dump on the Undernet. She has been quietly documenting it ever since and has not reported it anywhere because she doesn't know who is safe to report to, and the report has gotten long enough that it is now a liability she can't just put back."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with pharmaceutical and chemical terminology that she explains rapidly without being condescending; speaks in cascades — one sentence triggers three subordinate clauses; very dry humor inserted without warning",
+    "cadence": "Fast. Very fast. Streams of information delivered as if there is a limited-time window in which she can fit them.",
+    "verbal_tics": [
+      "'Right, so—' as a constant restart",
+      "'Which, by the way—' digressions mid-sentence",
+      "Taps the counter with one finger when she's making a key point"
+    ],
+    "example_lines": [
+      "'That's the licensed version, which is fine, it works, but the compound ratio is off for someone with your augmentation load — right, so — here's what I'd actually suggest.'",
+      "'Someone's been cutting the block's peptide supply with a filler that looks inert until it hits anything Helix-manufactured, which, by the way, is about sixty percent of what people in this district are running, so.'",
+      "'I'm not a doctor. I'm better. I know what everyone in a six-block radius is actually taking.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The compound cluster she's been documenting has just produced its first fatality — someone she knew by name — and she needs someone to help her figure out what to do with what she knows without getting herself disappeared",
+    "One of her gray-market distributors has gone dark, and the last delivery they sent her contained something she doesn't recognize and cannot identify even with her assay sensors, packaged as if it were a standard compound"
+  ],
+  "narrative_function": "Information source about what is chemically circulating in the city at street level; can identify unknown substances; can source unusual compounds through gray-market channels; early warning system for disease outbreaks, new drugs, new toxins; local color and personality anchor for Geartown.",
+  "augmentations": "Chemical assay sensors (fingertip subdermal, bilateral); gustatory sensory modification (tongue, allows compound identification by taste — unusual, unlicensed); standard optical corrective overlay (heads-up display for drug interaction lookup, contact-lens type)",
+  "daily_life": "Opens at 8am, closes when she's done. She eats lunch at the noodle counter next door every day without exception. She spends an hour most evenings cross-referencing what she's dispensed that day against her own mental model of what's circulating, looking for patterns.",
+  "affiliation": "Licensed independent pharmacist (Zheng-Dao dispensing license, which she resents and maintains); informal partnership with Geartown community health collective; sourcing relationship with two gray-market compound distributors she trusts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Information Dense",
+      "Pattern Recognition",
+      "Gray Market",
+      "Suppressed Evidence",
+      "Geartown Institution"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient safety overrides everything including profit, licensing, and personal risk",
+      "Never dispense something you can't verify — touch it, taste it, know it",
+      "Keep records of everything, even things that might be incriminating, because the records might save someone"
+    ],
+    "escalation_ladder": [
+      "Rapid verbal boundary-setting — she is not subtle about not liking something",
+      "Refusal and explanation — she tells you exactly why",
+      "Referral to the collective and documentation",
+      "Goes to ground with her records and figures out who she can trust before moving"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately professional and very talkative — she asks questions like intake, remembers answers, treats you like a complex system she wants to understand",
+      "friends": "Loyal and exhausting in equal measure; the fast talking slows down and becomes something closer to actual conversation"
+    },
+    "stress_responses": {
+      "low": "Talks faster, more tangents",
+      "medium": "Becomes very precise and very quiet in the middle of being very busy",
+      "high": "Gets short, gets sharp, stops eating the noodle lunch — those who know her treat the missed lunch as an alarm"
+    },
+    "contradictions": [
+      "She preaches patient trust and informed consent while maintaining a secret cache of information about a health crisis that directly affects her patients"
+    ],
+    "habits": [
+      "Noodle lunch daily, no exceptions",
+      "Touches every compound she dispenses even when she doesn't need to — it's ritual now",
+      "Keeps a tiny shrine to the E.L.F. Assay on the back counter — an old digital scale with a coin on it"
+    ],
+    "breaking_points": [
+      "A second death she could have prevented if she'd acted on her data",
+      "Discovering that someone she trusted has been deliberately contaminating the supply chain she relies on"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Chemical Assay Sensors (fingertip subdermal, bilateral)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Chemical Assay Sensors (fingertip subdermal, bilateral)",
+      "replaces": ""
+    },
+    {
+      "name": "Gustatory Sensory Modification (tongue, compound identification — unlicensed)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Gustatory Sensory Modification (tongue, compound identification — unlicensed)",
+      "replaces": ""
+    },
+    {
+      "name": "Contact Overlay Optical HUD (drug interaction database, standard model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Contact Overlay Optical HUD (drug interaction database, standard model)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Street-Custom Gutter Katana 'Flatline'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Grindstone Shore",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Flicker",
+    "Geartown",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Babel",
+    "The Milwaukee Core",
+    "Anatoliy Faye-Nkrumah",
+    "Cinderblock Ai",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Helix Biosystems",
+    "Hepatic Glycogen Depletion Projector",
+    "Iowan Behemoth — 'Palisade'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Narrowcast",
+    "Patient Zero",
+    "Plot 17",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Réginald Asomaning-Čabarkapa",
+    "ShieldTech CLA-3 'Cascade'",
+    "Slagworks Industrial",
+    "Street-Custom Gutter Katana 'Flatline'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Collective",
+    "The Counter",
+    "The Gutter Prophets",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-dao Bioelectric"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Predominantly Indigenous American (Mesoamerican and North American), with significant South Asian and Southeast Asian ancestry, blended with Hispanic/Latin American, Central Asian, and minor Northern European heritage. The combination produces warm, medium-to-deep brown skin with subtle golden and reddish undertones characteristic of Mesoamerican-South Asian blending.",
+    "height_cm": 157,
+    "weight_kg": 68,
+    "build": "Broad-shouldered and compact, with dense musculature through the chest and upper back from years of reaching, gripping, and working at pharmacy counters. Not athletic — functional and grounded, built for endurance rather than speed.",
+    "hair_color": "Stark white with warm undertones, natural or early-onset silver that she has chosen not to dye",
+    "hair_style": "Worn in intricate, tight box braids that reach mid-back, studded throughout with small brass, copper, and anodized aluminum charms that clink audibly with movement",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, with a faint iridescent sheen from the optical corrective overlay (contact-lens type)",
+    "skin_tone": "Warm golden-brown with deeper undertones, even complexion with a slight weathered quality from long hours under pharmacy lighting. The tone reflects the blended melanin profile of Indigenous American and South Asian ancestry.",
+    "complexion": "Open, expressive face with a wide mouth that moves constantly — talking, tasting, thinking out loud. Facial structure shows the subtle bone structure characteristic of Mesoamerican and South Asian heritage blending. Skin is clean and practical, with faint chemical stains (iodine, mercurochrome residue) sometimes visible on her jawline or neck from compound work. No makeup.",
+    "distinguishing_marks": [
+      "Fine white scar tissue on the inner surface of both wrists from early experimentation with the gustatory modification; faded and barely visible unless closely examined.",
+      "Chemical burns (pale, almost invisible now) scattered across her knuckles and the backs of both hands from years of handling reactive compounds; marks of competence rather than accidents.",
+      "A small tattoo on her left inner forearm — a stylized pharmaceutical flask overlapped with a Hausan spiral — done in matte black ink, faded to dark gray."
+    ],
+    "visible_augmentations": "Fingertips of both hands show subtle iridescence under direct light where the chemical assay sensors sit just beneath the skin at each fingertip pad — not obviously cybernetic, but noticeably different in texture and slight color variation compared to the rest of her hands. The optical overlay is invisible except for the faint shimmer in her eyes when she's consulting her heads-up display. The gustatory modification is invisible; only the precision of her tasting reveals it.",
+    "posture_movement": "Constantly in motion — fidgeting with charms in her hair, tapping fingers on counters, shifting weight from foot to foot. When focused (tasting a compound, reading data), she goes still and intent, almost meditative. Her hands are always doing something: gesturing when she talks, which she does rapidly and without much pause for breath. She moves through her pharmacy with economical precision, knows every bottle by location and muscle memory.",
+    "clothing_style": "A well-worn lab coat, oversized and cream-colored originally but now stained and softened by countless washings, covered in deep pockets stuffed with vials, test strips, a worn tablet, and loose change. Over whatever she grabbed that morning — usually vintage print shirts (1990s-2010s earth tones, geometric patterns, or intentionally clashing color combinations that she makes work), loose-fitting and practical. Comfortable slip-on shoes, perpetually scuffed. A small silver chain around her neck, occasionally threaded with a compound sample vial when she's testing something. Tier 4 working-class aesthetic — functional, worn, deeply comfortable. No jewelry besides the braided charms and the chain."
+  },
+  "image_prompt": "Chenoa Pathak-Tlaloc, a 157cm woman with warm golden-brown skin blending Indigenous American and South Asian heritage. Stark white hair in tight box braids reaching mid-back, decorated with brass and copper charms that clink softly. Deep brown eyes with subtle optical overlay shimmer. Broad-shouldered, compact muscular build. Wearing a well-worn cream lab coat over a vintage earth-tone geometric print shirt, pockets bulging with vials and equipment. Fingertips show subtle iridescence from embedded chemical sensors. Small silver chain around neck. Constantly fidgeting, expressive face mid-gesture while talking rapidly. Pharmacy setting with warm amber lighting reflecting off glass bottles in background, cyberpunk 2226, working-class aesthetic, weathered but precise, motion blur suggesting her constant movement, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Indigenous American": 27.3,
+    "South Asian": 26.2,
+    "Southeast Asian": 20.6,
+    "Hispanic/Latin American": 12.1,
+    "Central Asian": 8.3,
+    "Northern European": 5.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

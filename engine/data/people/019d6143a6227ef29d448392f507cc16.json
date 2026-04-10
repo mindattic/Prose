@@ -1,0 +1,285 @@
+{
+  "id": "019d6143a6227ef29d448392f507cc16",
+  "type": "character",
+  "name": "Tendai Masoe-Árnason",
+  "aliases": [
+    "Old Hadri",
+    "the Puppeteer of Pilsen"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Puppet maker and street performer",
+  "age": 67,
+  "status": "active",
+  "location": "Pilsen Veil, works from a narrow workshop on Coppervane Alley, near Ashland and Chicago Ave",
+  "description": "Hadrianus is a large man gone soft at the edges, with the powerful hands of someone who has done fine work for forty years and the stooped posture of someone who has spent those years hunched over a workbench. His skin is a warm medium brown — West African father, Russian mother — and his face is deeply lined in ways that make him look either wise or exhausted depending on the light, which he finds funny. His hair went fully white in his fifties and he wears it short. His left eye is mechanical, a deep-focus optic he got secondhand in the 2180s that has a faint red ring around the iris; he's kept it this long because it helps him see tiny joints and wire connections, not for aesthetics, and it gives his face a slightly uncanny quality he has come to appreciate.\n\nHadrianus makes puppets — not the simple kind. His creations are articulated sculptures two to three feet tall, built from salvaged materials, each with a distinct E.L.F. invoked into them through a ritual he developed over decades. He performs with them in the streets of the Pilsen Veil two or three afternoons a week, drawing crowds of children and their exhausted parents who stay longer than they meant to. He is gentle, patient, and possessed of a very dry humor that flies over children's heads and lands precisely on adults. He has seen a great deal and chosen to remain in the Veil when he could have moved elsewhere, which is itself a statement he doesn't feel the need to make aloud.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "The Pilsen Veil being bought out and demolished — losing the place that holds his memories",
+      "That his craft dies with him because he never found the right student"
+    ],
+    "core_desires": [
+      "For the community around him to outlast both of them",
+      "To complete one final puppet — a piece he's been building for eleven years — before his hands give out"
+    ],
+    "coping_mechanisms": [
+      "Work — the workshop is where he processes everything",
+      "Storytelling — reframes painful things as narrative, which gives him distance"
+    ],
+    "blind_spots": [
+      "Tends to see younger people as needing guidance rather than as fully formed; it's kindly meant but still patronizing",
+      "Underestimates how much his presence protects and organizes the community, so he doesn't protect himself"
+    ],
+    "secret": "The unfinished puppet he's been building for eleven years is a likeness of his son, Dmitri, who died in a Ferrogate Transit accident in 2189 that the company classified as operator error. Hadrianus has evidence it was a systems failure. He's been afraid to do anything with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Unhurried, full of anecdote and digression, uses old Wolof words for things he considers sacred; occasionally slips into Russian when surprised",
+    "cadence": "Slow and circular — arrives at the point eventually, but takes the scenic route",
+    "verbal_tics": [
+      "'When I was young, we thought—' (pivot to relevant memory)",
+      "'The E.L.F.s remember even when we forget'"
+    ],
+    "example_lines": [
+      "'This one here — the marionette with the copper fingers — she doesn't like being rushed. I learned that the hard way. We have an understanding now.'",
+      "'You want to know who owns that building? Son, I want to know who owned it before that. The answer to your question lives inside my answer.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit development survey team has been photographing the Coppervane Alley block — Hadrianus suspects a buyout is coming and wants help finding out what's planned before the community loses the ability to fight it",
+    "One of his older puppets, sold years ago, has turned up in the collection of a Tier 4 Axiom executive — and Hadrianus is certain the E.L.F. invoked in it is still active and unhappy about where it ended up"
+  ],
+  "narrative_function": "Wise elder, quest giver, community anchor — he knows the Pilsen Veil's history better than anyone and can provide historical context, connect characters to longtime residents, or commission characters for protective tasks regarding the community.",
+  "augmentations": "Secondhand deep-focus mechanical left eye (functional cyberware, older model); mild arthritis suppressors in both hands (pharmaceutical, not chrome)",
+  "daily_life": "Wakes early, spends mornings in the workshop building and repairing puppets; performs in the afternoon when weather permits; evenings he takes requests for commissioned pieces and attends community meetings when needed.",
+  "affiliation": "Independent; respected figure in the Pilsen Veil community; informal advisor to the local tenants' assembly",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Elder",
+      "Community Anchor",
+      "Craftsperson",
+      "Spiritual Practitioner",
+      "Tier 2",
+      "Grieving Parent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the children and the old ones first — everything else is secondary",
+      "Do not accept money from corponations for anything, not even indirectly"
+    ],
+    "escalation_ladder": [
+      "Patient listening and careful questions",
+      "Gentle but direct naming of the problem",
+      "Formal appeal to the tenants' assembly",
+      "Quiet, determined obstruction by whatever means available"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Welcoming, offers tea, asks about their people — where they're from, who raised them",
+      "friends": "Treats them like family, which means he worries about them openly and remembers everything they've ever told him"
+    },
+    "stress_responses": {
+      "low": "Works longer hours in the workshop",
+      "medium": "Becomes very still and very quiet — listening mode",
+      "high": "Performs in the street even in bad weather, using the routine to hold himself together"
+    },
+    "contradictions": [
+      "Preaches community interdependence but carries his grief about his son entirely alone, sharing it with no one"
+    ],
+    "habits": [
+      "Talks to his puppets while working — full conversations",
+      "Keeps a bowl of clean water on the workshop windowsill as an offering to the E.L.F. of the Coppervane drainage system",
+      "Walks the full perimeter of the Pilsen Veil every Sunday morning"
+    ],
+    "breaking_points": [
+      "Ferrogate Transit surveyors setting foot in his workshop",
+      "Being shown evidence that his son's death was preventable and covered up"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Secondhand deep-focus mechanical left eye (Zheng-Dao manufacture, 2180s model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Secondhand deep-focus mechanical left eye (Zheng-Dao manufacture, 2180s model)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2133: Born in Pilsen Veil to a Senegalese father and Russian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2155: Began making puppets after losing his factory job to automation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189: Son Dmitri killed in Ferrogate Transit systems accident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189: Began building the unfinished puppet",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2201: Became informal advisor to the Pilsen Veil tenants' assembly after the first development survey",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Glass Garden' Caltrops"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Pilsen Veil",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Copperveil Intelligence",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Chicago",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Free Assembly",
+    "Makena Johanssen-Diallo",
+    "Myoelectric Seizure Projector MSP-6 'Marionette'",
+    "Narrowcast",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Shelf Chairlift",
+    "Street Custom 'Glass Garden' Caltrops",
+    "SynapTech AromaVeil Olfactory Filter",
+    "TESSERA ES-4 'Perimeter'",
+    "The Glass Garden",
+    "The Heritage Vault",
+    "The Unfinished Theorem",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (35.1%), Pacific Islander (28.1%), Southeast Asian (12.7%), North African (11.5%), South Asian (9.2%), Hispanic/Latin American (3.4%) — a complex diaspora blend creating warm deep brown skin with subtle golden and copper undertones from the Pacific Islander and South Asian ancestry mixed with the Sub-Saharan and North African foundation",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed and broad-shouldered, age and sedentary craft work have softened muscle definition into a comfortable heaviness; powerful forearms and hands show decades of fine manipulation work despite the softening elsewhere",
+    "hair_color": "White",
+    "hair_style": "Short, close-cropped",
+    "hair_length": "Short",
+    "eye_color": "Right eye: warm brown natural; left eye: mechanical deep-focus optic with faint red ring around iris",
+    "skin_tone": "Warm deep brown with golden and copper undertones, reflecting the complex blend of Sub-Saharan African, Pacific Islander, Southeast Asian, and North African ancestry; even complexion with natural richness",
+    "complexion": "Deeply lined face with pronounced creases around the eyes and mouth; the lines read as wisdom or weariness depending on expression; slight jowl softness at the jawline; facial structure shows broad nose and defined cheekbones characteristic of Sub-Saharan and Pacific Islander heritage; hands show prominent veins and age spots, knuckles enlarged from decades of fine work; kept well but not fastidiously groomed",
+    "distinguishing_marks": [
+      "Left eye replaced with a secondhand mechanical deep-focus optic bearing a faint red ring around the iris, giving the eye an uncanny but functional appearance",
+      "Fine network of small scars across both hands from four decades of puppetry work with wire, salvage metal, and sharp tools",
+      "Mild tremor visible in both hands at rest, managed by pharmaceutical arthritis suppressors"
+    ],
+    "visible_augmentations": "Mechanical left eye with red iris ring (older model, functional rather than aesthetic); the eye sits slightly more recessed than natural, and its focus depth is noticeably different when he concentrates. No visible chrome or subdermal modifications.",
+    "posture_movement": "Habitual stoop from decades hunched over workbenches; moves with deliberate slowness that reads as either careful precision or age-worn caution; hands are rarely still, often gesturing or making small manipulative motions; seated more often than standing; when performing, posture straightens slightly and movements become more theatrical",
+    "clothing_style": "Tier 3-4 working class, practical and worn. Typically wears multi-pocketed work vests over long-sleeved cotton shirts (sleeves rolled or pushed up during work); loose trousers with reinforced knees; soft leather shoes scuffed from street performance. Fabrics are durable and stained with decades of work — paint, sealant, oil. A faded jacket from the 2190s hangs in the workshop. No jewelry except a simple steel wedding band. Clothing shows care but not vanity; he dresses for function and comfort."
+  },
+  "image_prompt": "Tendai Masoe-Árnason, 188cm tall mixed-heritage man with warm deep golden-brown skin reflecting Sub-Saharan African and Pacific Islander ancestry, white close-cropped hair, deeply lined weathered face with wisdom-etched creases. Right eye warm brown natural, left eye mechanical deep-focus optic with faint red iris ring—uncanny and functional. Powerful forearms and hands covered in fine scars from decades of puppetry work, slight tremor at rest. Wearing faded multi-pocketed work vest over rolled-sleeve cotton shirt, loose trousers with reinforced knees, scuffed leather shoes. Habitual workbench stoop, hands making small manipulative gestures. Steel wedding band. Cyberpunk 2226 GLMZ street performance setting, moody neon-amber workshop lighting casting shadows on his lined face, theatrical presence despite age-worn caution. Tier 3-4 working-class aesthetic, practical and worn fabrics stained with paint and oil. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 35.1,
+    "Pacific Islander": 28.1,
+    "Southeast Asian": 12.7,
+    "North African": 11.5,
+    "South Asian": 9.2,
+    "Hispanic/Latin American": 3.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

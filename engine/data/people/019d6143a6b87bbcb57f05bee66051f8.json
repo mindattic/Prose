@@ -1,0 +1,318 @@
+{
+  "id": "019d6143a6b87bbcb57f05bee66051f8",
+  "type": "character",
+  "name": "Nyx Tursunov-Haraldsen",
+  "aliases": [
+    "Rosh"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Private Investigator, freelance",
+  "age": 38,
+  "status": "active",
+  "location": "Copperhead, near Damen and Armitage",
+  "description": "Roshan operates out of a two-room office above a synthetic-meat processing plant in Copperhead, which means the whole building smells faintly of rendered protein and their clothes always carry it. They are medium-height and built lean, with dark brown skin, a shaved head kept glossy, and cat ears — matte black, constantly swiveling — that they got in their late twenties and which have proved professionally useful in surveillance contexts. Their eyes are standard human but surrounded by fine scleral tattooing in deep indigo that gives them a slightly uncanny quality in certain lighting. They dress for invisibility: nothing remarkable, nothing memorable, colors that belong to whatever district they're working.\n\nThey have the particular emotional intelligence of someone who survived a chaotic childhood by reading rooms faster than anyone else. They are charming in exactly calibrated doses — enough to open doors, not enough to invite attachment — and they have a gift for making people feel seen and understood that they deploy like a tool. They are not cynical, exactly. They still take cases for people who can't pay full rate, still get angry when they find what they find, still leave data offerings at the Copperhead neighborhood E.L.F. shrine. But they have built a careful architecture of professional distance that they defend with wit and deflection.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "forming a genuine attachment and watching it get used against them or destroyed",
+      "discovering that the truth they worked to find does nothing — helps no one"
+    ],
+    "core_desires": [
+      "for the work to matter — for information to translate into justice at least occasionally",
+      "to eventually stop performing being fine and just be fine"
+    ],
+    "coping_mechanisms": [
+      "professional framing of everything — treating their own life as a case to be managed",
+      "walking the city late at night",
+      "the E.L.F. shrine ritual as a moment of genuine surrender"
+    ],
+    "blind_spots": [
+      "their emotional unavailability drives away people who could actually help them",
+      "they overestimate their ability to stay detached from cases that mirror their own history"
+    ],
+    "secret": "Five years ago they found definitive proof that a Tier 4 Axiom executive had murdered a Tier 1 dock worker during a property dispute. The client — the worker's daughter — couldn't afford the legal infrastructure to do anything with it. Roshan quietly sold the information to a journalist collective who ran the story. The executive was reassigned. The daughter found out Roshan sold the information without asking her. She has never forgiven them and Roshan has never stopped wondering if they were right."
+  },
+  "speech_patterns": {
+    "vocabulary": "Conversational, slightly informal, code-switches easily between district registers; can match the vocabulary of whoever they're talking to within a few sentences",
+    "cadence": "Easy and unhurried with strangers; sharper and more direct when getting to a point; uses humor as punctuation",
+    "verbal_tics": [
+      "'Right.' as a filler when thinking",
+      "lets silences run longer than comfortable to see what fills them"
+    ],
+    "example_lines": [
+      "'Right. So you want to know where your partner goes on Tuesday nights. I can find that out. I want you to think, before I do, about whether you want to know. That's not a moral question. It's a practical one.'",
+      "'I'm not a cop and I'm not your friend. That's actually useful for you. Cops have jurisdiction and friends have feelings. I just have information.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A current case has led them to evidence implicating someone they investigated years ago — someone they thought they'd finished with — suggesting a larger pattern they can't look away from.",
+    "The dock worker's daughter from the Axiom case has resurfaced, not to argue, but because she needs help and there's no one else she trusts, and Roshan doesn't know how to handle that."
+  ],
+  "narrative_function": "Information hub and street-level investigative resource; has connections across tiers and districts from years of case work; can surface buried information, follow threads, and identify patterns — also a moral mirror for clients, reflecting uncomfortable truths back at them.",
+  "augmentations": "Cat ears — matte black, geneware (cosmetic/functional, enhanced directional hearing); scleral tattooing — indigo (cosmetic); subvocal recorder implanted in throat (professional tool, unlicensed); basic optical overlay for photo documentation (licensed)",
+  "daily_life": "No fixed hours — cases dictate the schedule; typically starts the day reviewing overnight surveillance captures with bad synthetic coffee, spends afternoons in the field, and writes case notes until early morning; leaves the office most nights to walk the district, claiming it's professional habit.",
+  "affiliation": "Freelance; occasional contract work for GLMZ Metro Police (arms-length), private clients across Tiers 2-3",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information specialist",
+      "code-switcher",
+      "geneware-enhanced",
+      "freelance PI",
+      "emotionally armored",
+      "E.L.F.-adjacent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never take a case that would require harming a Tier 1 civilian to close",
+      "document everything before acting on it",
+      "protect source identity absolutely — it's the only currency that keeps working"
+    ],
+    "escalation_ladder": [
+      "Passive observation and data collection",
+      "Direct contact with subject using cover story",
+      "Confrontation with evidence — offering the subject a chance to respond",
+      "Going to client, or in extremis to press, with findings"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Charming, observational, slightly warm — performing approachability while cataloguing everything",
+      "friends": "Rare, but fierce — genuinely shows up, remembers everything, terrible at saying what they feel out loud"
+    },
+    "stress_responses": {
+      "low": "Becomes more verbally precise and slightly wry",
+      "medium": "Goes physically still; the cat ears flatten and stop swiveling — a tell they're unaware of",
+      "high": "Withdraws entirely into professional mode; becomes almost cold; needs to be alone to regroup"
+    },
+    "contradictions": [
+      "Reads others' emotions with extraordinary accuracy while being almost deliberately opaque about their own; their professional gift is the skill they most need personally and least use"
+    ],
+    "habits": [
+      "Cat ears orient toward sounds involuntarily — they've learned to use this rather than hide it",
+      "Keeps a physical notebook despite digital alternatives being superior",
+      "Data offering at the Copperhead E.L.F. shrine every Thursday evening"
+    ],
+    "breaking_points": [
+      "Evidence that directly implicates a client in harm to a third party",
+      "Being asked to disappear information rather than surface it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cat ears — matte black, geneware enhanced (directional hearing, cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cat ears — matte black, geneware enhanced (directional hearing, cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Scleral tattooing — indigo (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Scleral tattooing — indigo (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Subvocal recorder implant (unlicensed, professional tool)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subvocal recorder implant (unlicensed, professional tool)",
+      "replaces": ""
+    },
+    {
+      "name": "Optical overlay — documentation grade (licensed)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Optical overlay — documentation grade (licensed)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Sentinel": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2162 — Born in Mexicantown Libre, mixed Igbo-Kazakh heritage, raised in rotating foster placements across Tiers 1-2",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2183 — Worked as a paralegal assistant for a Tier 3 compliance firm; began taking informal investigative work on the side",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Cat ears and scleral mod; opened freelance operation in Copperhead",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Axiom executive case; sold information to journalist collective without client consent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Current operations, Copperhead office",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Nkomo-Lindqvist NLR-9 'Counselor'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Nkomo-Lindqvist NLR-9 'Counselor'"
+  ],
+  "related_entities": [
+    "Copperhead",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Irontide Tidal Energy",
+    "Amara Osei-Dzhaparidze",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Auricula Felis Modification",
+    "Bioacoustic Communication Membrane",
+    "Deniz Salazar-Quansah",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Nkomo-Lindqvist NLR-9 'Counselor'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Saodat Mirzoyan-Fubara",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "SynapTech PolyGlot Live Translation Implant",
+    "The Human Baseline Alliance",
+    "The Nearfield",
+    "Vanta Ordnance Phalanx VO-8 'Centurion'",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Central Asian (Kazakh/Uyghur phenotype) with Northern European admixture and minor North African, South Asian, and Sub-Saharan African ancestry. The genetic mix produces a warm-toned complexion with Central Asian facial structure—high, prominent cheekbones and angular jawline—softened by the genetic contributions from multiple continents.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and compact, muscles defined but not bulky—built for movement and endurance rather than presence. Shoulders slightly narrower than hips, giving them an almost avian quality when they move quickly.",
+    "hair_color": "None—shaved",
+    "hair_style": "Bald, kept glossy with frequent maintenance; the scalp gleams slightly under indoor lighting",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown, natural iris; scleral region heavily tattooed in fine indigo linework creating an almost constellation-like pattern radiating from the pupil",
+    "skin_tone": "Warm golden-brown with subtle olive undertones—a blend of Central Asian base with North African warmth. Complexion shows the faint wear of late-night work but is otherwise clear.",
+    "complexion": "High, prominent cheekbones with slight Central Asian flatness to the upper face structure, angular jawline. Small scar running through left eyebrow (old, barely noticeable). Face carries the kind of neutral readability that comes from years of controlled expression. No facial hair. Lips unmodified, medium fullness. Slight epicanthal fold visible, giving the eyes a subtle almond shape.",
+    "distinguishing_marks": [
+      "Scar through left eyebrow—thin, white, approximately 2cm, likely from impact injury or blade work, old enough to be barely visible",
+      "Fine indigo scleral tattooing covering both eyes in radiating geometric patterns, creating an uncanny luminescence under certain light angles",
+      "Pair of matte black feline ears (geneware implants) positioned at the natural ear location on the skull; ears are fully articulated with visible muscular control, approximately 8cm tall when extended upright, with pink inner flesh and responsive to sound"
+    ],
+    "visible_augmentations": "The cat ears are immediately obvious—matte black, slightly too perfect in their symmetry, and they move independently of head position in response to ambient sound. The scleral tattooing is visible only under direct light or close proximity but gives their gaze an unsettling depth when noticed. No visible chrome, no external ports, no obvious limb augmentation. Everything else is subcutaneous.",
+    "posture_movement": "They move with controlled economy—no wasted motion, always aware of exits and sight lines. Their head turns less than a baseline human's would; the ear implants rotate to track sound instead, giving them an almost predatory stillness in the neck and shoulders. When they sit, they favor positions with back-to-wall exposure. They have a habit of tilting their chin slightly when listening, a gesture made more pronounced by the ear movement. Their walk is measured and deliberate, designed to blend into crowd environments rather than command attention.",
+    "clothing_style": "Tier 3 utilitarian with Tier 2 undercarriage—nothing that reads as conspicuous wealth, nothing that reads as struggling. Typically: dark fitted jeans (Kessler or Astra brand, neutral grey or black), layered tops that allow easy arm movement (thermal base layer under a thin synthetic jacket or work shirt), sturdy boots with good ankle support and grip (Helios brand, worn looking). A long coat for fieldwork—oversized, pockets deep enough for recording equipment, color chosen to match whatever district they're working (currently a grey-brown that belongs to Copperhead's post-industrial palette). All fabrics slightly worn, slightly stained—not from neglect, but from active use. The synthetic-meat processing plant smell clings to everything despite attempts at mitigation. They wear a single piece of jewelry: a thin brass ring on their left ring finger with no stone, old enough to show wear patterns."
+  },
+  "image_prompt": "Cyberpunk 2226, character portrait: Nyx Tursunov-Haraldsen, 168cm lean frame, shaved glossy scalp reflecting neon. Warm golden-brown skin with olive undertones, Central Asian facial structure with high prominent cheekbones and angular jawline. Deep brown eyes with fine indigo scleral constellation tattoos creating unsettling luminescence. Pair of articulated matte black feline ears (geneware implants) positioned naturally, responsive to sound, 8cm tall with pink inner flesh. Small white scar through left eyebrow. Neutral expression, controlled and readable. Wearing dark grey fitted jeans, thermal base layer under thin synthetic jacket, sturdy worn Helios boots. Long oversized grey-brown coat with deep pockets. Single brass ring on left ring finger. Standing with economical posture, slight predatory stillness, head tilted as if listening. Post-industrial cyberpunk district background, cool neon and sodium lighting, geometric shadows. Moody, focused intensity. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Central Asian": 59.9,
+    "Northern European": 22.3,
+    "North African": 6.3,
+    "Hispanic/Latin American": 5.0,
+    "South Asian": 3.6,
+    "Sub-Saharan African": 2.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

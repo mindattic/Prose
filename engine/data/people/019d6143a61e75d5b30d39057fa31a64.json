@@ -1,0 +1,283 @@
+{
+  "id": "019d6143a61e75d5b30d39057fa31a64",
+  "type": "character",
+  "name": "Orion Hinojosa-Popescu",
+  "aliases": [
+    "Gullie",
+    "The Mechanic"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Independent vehicle mechanic specializing in Ferrogate Transit auxiliary vehicles and civilian cargo crawlers",
+  "age": 34,
+  "status": "active",
+  "location": "Geartown, Ironvein sub-block, bay unit 7, near Milwaukee and Damen",
+  "description": "Gulliver is lean and grease-darkened in a way that feels permanent, as though the machine oil has become part of his pigmentation — his hands are always a shade darker than his forearms no matter how much he scrubs. He has his mother's Ghanaian cheekbones and his father's Kazakh jaw, which together give him a face that people find hard to stop looking at without knowing quite why. He keeps his hair close-cropped except for two finger-wide stripes he has dyed iridescent copper, a remnant of a decade-old fashion he never bothered to give up. He has a prehensile tail modification — mottled gray-brown with a slightly prehensile curl — that he got at nineteen and has used as a third utility limb ever since: it holds tools, hooks parts bins, and occasionally taps impatiently on the floor when he is thinking.\n\nGulliver is constitutionally incapable of leaving a broken thing alone. This is a professional gift and a personal curse. His bay is organized with the obsessive logic of a man who has lost a critical component one too many times and never forgot it. He is not unfriendly but he is focused, and conversations with him often drift sideways into the mechanics of whatever he happens to be working on. He keeps a small ELF shrine mounted above his main workbench — a figure he calls Grease Aunt, fashioned from fused capacitors and old gasket rings — and consults it before any job that involves a vehicle with a history of instability.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "losing the use of his hands",
+      "being trapped in obligation to someone powerful enough that he cannot refuse"
+    ],
+    "core_desires": [
+      "to work only on problems that genuinely interest him",
+      "to eventually open a second bay and hire one good apprentice"
+    ],
+    "coping_mechanisms": [
+      "hyperfocusing on mechanical problems to avoid emotional processing",
+      "physical humor and deflection when conversations get too personal"
+    ],
+    "blind_spots": [
+      "underestimates how much people notice and rely on him",
+      "takes on jobs he shouldn't out of compulsive curiosity about the machine"
+    ],
+    "secret": "He has been covertly maintaining a Ferrogate Transit emergency crawler that he rebuilt from scrap — it is not registered anywhere and he uses it occasionally to move people who need to get somewhere without being tracked, never charging them, telling himself it is just a test run"
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical vocabulary bleeds into everything; uses mechanical metaphors constantly without noticing; drops into Twi occasionally when frustrated",
+    "cadence": "Rapid when explaining something he knows well, halting and mid-sentence-stopping when trying to talk about feelings",
+    "verbal_tics": [
+      "'yeah, no, but—' as a way of agreeing and adding a complication simultaneously",
+      "trailing off in the middle of a sentence because he has started thinking about something else"
+    ],
+    "example_lines": [
+      "Yeah, no, but the thing is the thing you think is broken is never actually the thing that's broken — it's the thing two steps upstream from that. Always.",
+      "She runs fine until she doesn't. That's the job."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A vehicle brought in for routine work has a hidden smuggling compartment built into the chassis — the person who dropped it off hasn't come back for three days",
+    "Ferrogate Transit's auxiliary depot manager is pushing Gulliver to sign an exclusivity contract that would effectively make him a corporate employee; he is resisting but the financial pressure is real"
+  ],
+  "narrative_function": "Reliable repair and gear contact for anyone needing vehicle access or maintenance information; knows the Ferrogate Transit auxiliary fleet's unofficial quirks intimately; can identify vehicle origins and modifications; potential hook into Geartown criminal infrastructure through what he sees without asking",
+  "augmentations": "Geneware prehensile tail (gray-brown, partial prehensility). Subdermal tool-link ports in left forearm for direct diagnostic handshake with vehicle systems. Iridescent copper hair stripes (pigment geneware, low-grade).",
+  "daily_life": "Arrives at bay 7 by 07:30, runs diagnostic queues on anything left overnight, spends most of the day underneath or inside machines, eats a flatbread he buys from the cart outside while reviewing job lists, and often stays past midnight if something has him genuinely puzzled.",
+  "affiliation": "Independent; informal contract relationships with Ferrogate Transit auxiliary depot",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technical savant",
+      "compulsive fixer",
+      "underground resource",
+      "unofficial good Samaritan"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "will not work on military hardware regardless of pay",
+      "always gets paid half upfront, no exceptions"
+    ],
+    "escalation_ladder": [
+      "distraction and subject change",
+      "blunt statement that the conversation is over",
+      "physical removal of himself from the situation — leaves the bay entirely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally direct, not unfriendly, assesses whether they know anything about machines as a measure of compatibility",
+      "friends": "Relaxed, teasing, generous with time and knowledge"
+    },
+    "stress_responses": {
+      "low": "Works faster, becomes monologue-y about whatever he is doing",
+      "medium": "Goes silent, tail curls tight, answers in single words",
+      "high": "Abrupt and sharp-edged, liable to say something honest that he will regret"
+    },
+    "contradictions": [
+      "Insists he only cares about machines and not people, then quietly fixes things for neighbors who haven't asked and can't pay"
+    ],
+    "habits": [
+      "taps his tail three times on the ground before starting any complex diagnostic",
+      "always knows what time it is without checking"
+    ],
+    "breaking_points": [
+      "being ordered to do something that will hurt someone who trusted him",
+      "watching someone mistreat a well-made machine"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good, regularly maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent, fully functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Started as a runner-fetch kid for a Geartown body shop at age 18",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Earned his independent bay license after four years of apprenticeship under a mechanic who retired to Mexicantown Libre",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Signed first informal contract with Ferrogate Transit auxiliary depot; has renewed it annually without committing to exclusivity",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed the secret crawler rebuild; has used it six times",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Geartown",
+    "Ironvein",
+    "Crucible WR-9 'Gulliver'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Pure Hand",
+    "Copper",
+    "The Wire Taps",
+    "The Milwaukee Core",
+    "Altan Tanaka-Frimpong",
+    "Arcturus KS-7 'Nursery'",
+    "Arcturus PX-1 'Phantom'",
+    "Devraj Solano-Yildirim",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Tafara Quiñones-Saarinen",
+    "The Crawl",
+    "The Heritage Vault",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Veslemøy Achebe-Tursynov",
+    "Vespid Dynamics Reconnaissance Beetle RB-2",
+    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European (32.5%) / Hispanic/Latin American (26.9%) / Sub-Saharan African (25.6%) / Middle Eastern (15.0%) - a complex diaspora blend creating warm, nuanced skin tones with layered undertones. Strong bone structure from Eastern European ancestry mixed with the facial geometry of his African and Hispanic heritage, creating distinctive cheekbone prominence and jaw definition. Middle Eastern features contribute to his alert, intense gaze.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and muscular with ropey forearm definition from two decades of wrench work; chest and shoulders have the kind of practical strength that comes from lifting and maneuvering engine blocks, not gym routines. His core is tight—mechanics spend half their lives reaching into tight spaces.",
+    "hair_color": "Black with two finger-wide iridescent copper stripes running from temple to crown",
+    "hair_style": "Close-cropped fade on sides and back; stripes visible from multiple angles; minimal styling, maximum practicality",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and focused",
+    "skin_tone": "Warm medium brown with complex undertones—golden warmth from African ancestry, subtle olive-red undertones from Middle Eastern heritage, and cooler Eastern European influence creating a rich, layered complexion. Permanently darkened by embedded machine oil and grease that resists complete removal, particularly on hands and forearms.",
+    "complexion": "Weathered but not aged; his face displays the strong cheekbone and jaw definition characteristic of his mixed heritage—Eastern European bone structure sharpened by African and Hispanic features, with subtle Middle Eastern intensity in his expression. His hands and forearms are visibly darker than the rest of his body from permanent grease staining. Small burn scar on left cheek from a hydraulic coupling failure eight years ago.",
+    "distinguishing_marks": [
+      "Burn scar on left cheekbone, pale and slightly puckered, approximately 2cm diameter, from hydraulic coupling incident",
+      "Intricate machine-part tattoo on right shoulder blade: an exploded diagram of a Ferrogate Mark VII differential, rendered in black ink and copper highlights",
+      "Callused knuckles and deep grease staining in cuticles and palm creases that never fully wash out",
+      "Faint horizontal scarring across left inner forearm where the tool-link ports are subdermal—visible as pale lines under the skin when his arm is exposed"
+    ],
+    "visible_augmentations": "Prehensile tail emerges from base of spine at coccyx, approximately 1.2 meters long when fully extended, mottled gray-brown with slight scale-texture. Tail is muscular and semi-flexible, capable of fine manipulation and tool-gripping. Subdermal tool-link ports in left forearm are invisible unless closely inspected—appear as faint scar tissue. Iridescent copper hair stripes are functional geneware pigmentation, not dye.",
+    "posture_movement": "Moves with economical precision; no wasted motion. Often half-bent or crouched even when standing still, as though perpetually preparing to slide under a vehicle. His tail curls idly around tool racks or his own leg when he's concentrating, taps a slow rhythm on concrete when he's problem-solving. Hands are never completely still—fidgeting with tools, checking fasteners, or gesturing explanations. Makes direct eye contact when discussing mechanical problems but can seem distant in social small talk.",
+    "clothing_style": "Tier 3 working-class pragmatism. Uniform consists of heavy canvas work pants (Ferrogate Transit gray-blue) with reinforced knees and multiple cargo pockets, worn soft and stained with hydraulic fluid and grease. Sleeveless or short-sleeved undershirt (usually black or charcoal to hide stains) underneath a canvas work vest or lightweight jacket when weather demands. Steel-toed boots, scuffed and re-heeled multiple times. Leather finger gloves (left hand, custom-fitted around tool-link port forearm) for diagnostic work. No jewelry except a thin brass bracelet on his right wrist—a gift from his mother, dented and worn. His personal style is minimal but intentional: the copper hair stripes are his one deliberate aesthetic choice, a holdover from his twenties that he's never bothered to abandon. Everything else is function."
+  },
+  "image_prompt": "Orion Hinojosa-Popescu, 178cm lean-muscular mechanic with warm medium-brown complexion mixing Eastern European, Hispanic, African, and Middle Eastern heritage features. Strong defined cheekbones and jaw, dark alert eyes with subtle intensity. Black hair with iridescent copper stripes from temples to crown, close-cropped fade sides. Small pale burn scar on left cheekbone. Sleeveless black undershirt under canvas work vest, Ferrogate gray-blue work pants, scuffed steel-toed boots, leather left-hand work gloves. Prehensile mottled gray-brown tail (1.2m) curled around his leg. Thin brass bracelet on right wrist. Grease stains on hands and forearms. Standing half-crouched in a neon-lit cyberpunk 2226 vehicle workshop, hands fidgeting with diagnostic tools, subdermal forearm tech ports visible as faint scars. Industrial lighting casting warm amber on his rich skin tone, neon blues and magentas reflecting off machinery behind him. Focused, economical posture, world-weary but alert expression. Cyberpunk 2200s noir aesthetic, gritty mechanical environment. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 32.5,
+    "Hispanic/Latin American": 26.9,
+    "Sub-Saharan African": 25.6,
+    "Middle Eastern": 15.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

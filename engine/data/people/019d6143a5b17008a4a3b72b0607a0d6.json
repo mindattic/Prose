@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a5b17008a4a3b72b0607a0d6",
+  "type": "character",
+  "name": "Kira Björnsdóttir-Shirazi-Valenzuela",
+  "aliases": [
+    "Brosie",
+    "The Cartographer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neural calibrator at Aurochs Medical Complex, specializing in augmentation integration and ghost-signal disorders",
+  "age": 34,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Neuro-Integration Ward, Sub-Level 3, near sub-level access near LaSalle and Congress",
+  "description": "Ambrosia is slight and precise, with warm brown skin and natural hair kept in a high, unruly cloud that she occasionally forgets to fix after long shifts. Her irises have been modded in a slow spiral pattern of amber and deep violet — a choice she made at nineteen that she now finds embarrassing but refuses to reverse on principle. She wears her Aurochs ID badge clipped to her lapel at all times, even off-shift, as though she is afraid of forgetting who she is supposed to be in this building.\n\nHer work is the mapping of neural integration errors — the place where human nervous tissue meets augmentation hardware and occasionally refuses to agree. She is brilliant at it, producing calibration maps of patients' neural architectures that her colleagues call 'the cartography' because they look less like medical charts and more like hand-drawn city plans. She is also quietly terrified by her work in a way she has never articulated: every calibration map shows her how thin the border is between a person and their modifications, and some days she cannot decide which side of that border the person actually lives on.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the line between self and augmentation is an illusion she has already crossed without noticing",
+      "Being seen as merely competent rather than exceptional"
+    ],
+    "core_desires": [
+      "To understand neural integration well enough to prevent ghost-signal disorder entirely",
+      "To be recognized as the author of her own work rather than a footnote in Helix's research portfolio"
+    ],
+    "coping_mechanisms": [
+      "Over-documentation — she writes everything down, as if records make experience more real",
+      "Intense focus on the next technical problem as a way of not sitting with larger uncertainties"
+    ],
+    "blind_spots": [
+      "Cannot see how much the Aurochs/Helix institutional structure limits what questions she is even allowed to ask",
+      "Assumes her patients' subjective accounts of their augmentation experience are less reliable than her calibration data"
+    ],
+    "secret": "Three months ago she completed a calibration map for a patient whose neural architecture suggested they had a second, dormant augmentation interface — one that was not on any medical record. She filed the chart without flagging it, and has been returning to that file every few days since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise at work, becomes strangely lyrical when explaining her calibration maps — she talks about neural space like geography",
+    "cadence": "Quick, slightly ahead of herself, will restart a sentence if it comes out less precise than she intended",
+    "verbal_tics": [
+      "'Here's the thing—' (before any explanation she finds genuinely interesting)",
+      "Taps her fingertips against her thigh when thinking"
+    ],
+    "example_lines": [
+      "'Here's the thing about ghost-signal disorder — it's not that the hardware is lying to the brain. It's that the brain has started believing the hardware more than it believes itself. That's a cartography problem.'",
+      "'I can tell you exactly where the integration failed. I cannot tell you what it felt like. That part's yours.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The patient with the undocumented secondary interface has stopped coming to follow-up appointments, and Ambrosia's attempts to reach them have returned a disconnected signal",
+    "A Helix Biosystems researcher has contacted her about 'co-authoring' a paper based heavily on her unpublished calibration methodology — the offer comes with a significant payment and a veiled threat"
+  ],
+  "narrative_function": "Information source on augmentation black markets (she sees what bad chrome does to bodies), potential ally for characters experiencing neural augmentation problems, window into the corporate medical world's ethical compromises",
+  "augmentations": "Patterned spiral irises (cosmetic, amber/violet); neural interface port at the base of her skull for direct calibration instrument connection (standard medical professional grade); subdermal haptic feedback layer in fingertips for fine augmentation work",
+  "daily_life": "Arrives at Sub-Level 3 at 0630, spends mornings in calibration sessions with patients experiencing augmentation integration failure, afternoons writing case reports and occasionally arguing with the Helix research liaison about publication credit, evenings either in the staff canteen or walking the Aurochs roof garden alone.",
+  "affiliation": "Aurochs Medical Complex (Tier 3 staff contract); academic affiliation with Helix Biosystems research division (publication-only, non-exclusive)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neural_calibration",
+      "augmentation_specialist",
+      "corporate_medical",
+      "cartographer",
+      "suppressed_whistleblower"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything before acting on it",
+      "Do not share patient chart anomalies with the Helix liaison under any circumstances",
+      "Maintain professional distance in calibration sessions — intimacy clouds the data"
+    ],
+    "escalation_ladder": [
+      "Polite deflection",
+      "Technical objection backed by documentation",
+      "Formal complaint through Aurochs HR channels — which she knows rarely works but believes in anyway"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, asks clarifying questions, slightly uncomfortable with small talk",
+      "friends": "Surprisingly funny, prone to absurdist observations about her work, fiercely loyal"
+    },
+    "stress_responses": {
+      "low": "Talks faster, produces more documentation",
+      "medium": "Goes very quiet, retreats into the calibration maps",
+      "high": "Dissociates briefly into pure technical focus, becomes blunt to the point of seeming cold"
+    },
+    "contradictions": [
+      "Believes absolutely in patient-centered care but has suppressed a significant finding because she was frightened by what it implied"
+    ],
+    "habits": [
+      "Leaves her calibration instruments in the same precise arrangement every evening before leaving the ward",
+      "Buys the same meal from the staff canteen four days out of five — a creature of routine who would deny being one"
+    ],
+    "breaking_points": [
+      "Someone taking credit for her methodology in print — she has rehearsed exactly what she would say and do, and it is not professional"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Calumet Rise to a Kenyan-Bosnian father and Colombian-Kikuyu mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Graduated neural sciences program, began junior calibration technician role at Aurochs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to senior neural calibrator, assigned to neuro-integration ward",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered undocumented secondary interface in patient chart; did not report it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "The Eastline",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Stalker",
+    "Bridgepoint",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Makena Johanssen-Diallo",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Slagworks Industrial",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly Middle Eastern (57.9%) with significant East Asian (27.6%) and Hispanic/Latin American (14.5%) ancestry, creating a striking blend of features from the Levantine and Persian regions mixed with East Asian bone structure and Latin American warmth",
+    "height_cm": 162,
+    "weight_kg": 52,
+    "build": "Slight and wiry, with the precise musculature of someone who spends hours in focused manual work rather than exertion. Her frame carries almost no excess; she moves like she's rationing her own physical presence.",
+    "hair_color": "Natural black with fine texture",
+    "hair_style": "Worn in a high, deliberately unruly cloud, often escaping its own containment after long shifts; she pulls it back absently with her fingers but rarely commits to restraining it",
+    "hair_length": "Long",
+    "eye_color": "Modified: slow spiral pattern of amber and deep violet, the spirals rotating outward from the pupil in a mesmerizing concentric design",
+    "skin_tone": "Warm olive-tan with golden undertones from Middle Eastern and East Asian heritage, deepened slightly by Latin American ancestry; medium depth with even clarity",
+    "complexion": "Fine-featured, angular face with pronounced cheekbones and a sharp jawline characteristic of Levantine and East Asian mixing. Minimal facial hair. Eyes are almond-shaped with a subtle epicanthic fold from East Asian ancestry. Skin shows the exhaustion of Sub-Level 3 work—slight darkness under the eyes, but the skin itself is well-maintained. Faint stress lines around her mouth from concentration during calibration sessions. The interplay of her warm olive complexion with her modified spiral iris creates an almost otherworldly intensity.",
+    "distinguishing_marks": [
+      "Barely visible surgical scar at the base of her skull (approximately 2cm), concealed most days by her hairline but occasionally exposed when hair shifts",
+      "Small crescent-shaped scar on the inner left wrist from an early augmentation calibration accident at age 26",
+      "No tattoos; she considers permanent marks a personal violation after seeing too many integration failures"
+    ],
+    "visible_augmentations": "The spiral iris modification is immediately striking and unsettling—it draws the eye and creates an almost hypnotic effect. The neural interface port at the base of her skull is usually hidden by hair but occasionally visible at the nape of her neck as a slight raised disc with subtle threading. Her fingertips occasionally display faint LED indicators when her subdermal haptic layer is in active calibration mode. She wears her Aurochs Medical ID badge on her lapel constantly, even off-shift.",
+    "posture_movement": "Moves with compressed efficiency, as though taking up space is a minor inconvenience. Her hands are her most expressive feature—they move with surgical precision and subtle awareness of space, constantly micro-adjusting. She stands slightly forward-leaning, head tilted as though listening to something just below audible range. Makes intense eye contact during work but avoids it socially.",
+    "clothing_style": "Tier 3 medical professional: Aurochs-issued sterile tunic in charcoal gray with the Medical Complex logo (a spiral helix) embroidered on the left shoulder. Under it, typically a plain long-sleeve undershirt in cream or pale blue. Black synthmesh trousers with reinforced knees from frequent kneeling in calibration pods. Worn black slip-on medical shoes with grip soles. Off-shift clothing maintains the same neutral palette and utilitarian cut—no ornamentation, no brands, nothing that signals affiliation beyond Aurochs. Always wears her ID badge. Her clothing shows signs of old stains (calibration fluid, probably) that never quite came out, which she ignores."
+  },
+  "image_prompt": "Kira Björnsdóttir-Shirazi-Valenzuela, cyberpunk 2226, 162cm slight wiry frame, warm olive-tan skin blending Middle Eastern and East Asian heritage with Latin American warmth, angular face with high cheekbones and almond eyes. Her signature feature: hypnotic modified spiral iris with rotating amber and deep violet patterns. Long natural black hair worn in unruly high cloud, often escaping. Dressed in Aurochs Medical Complex gray sterile tunic with spiral helix logo, cream undershirt, black synthmesh trousers, worn medical shoes. Aurochs ID badge on lapel. Visible neural interface port at base of skull (occasionally glimpsed at nape), faint LED calibration indicators on fingertips. Forward-leaning posture, hands poised with surgical precision. Sub-Level 3 workplace exhaustion visible—darkness under eyes, faint stress lines around mouth. Compressed, efficient movement. Clinical sterile environment with soft bioluminescent work lighting casting her features in sharp relief, her modified spiral iris catching and reflecting the glow. Professional, intense, slightly otherworldly. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 57.9,
+    "East Asian": 27.6,
+    "Hispanic/Latin American": 14.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

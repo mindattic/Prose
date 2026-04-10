@@ -1,0 +1,227 @@
+{
+  "id": "019d6143a67c7dd896762715db8e2d80",
+  "type": "character",
+  "name": "Cleo Ibarra-Björnsdóttir",
+  "aliases": [
+    "Oge"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Noodle cart vendor, Hamtramck Enclave",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, corner of the Brewer's Spine transit junction, near Ashland and Chicago Ave",
+  "description": "Ogechi is a broad-shouldered woman whose face is a topographic map of decades in open-air heat and cold — deep laugh lines, a permanent squint from watching steam rise, skin the color of dark teak that goes ashy at the knuckles. Her hair is close-cropped and she has a geneware patch of bioluminescent freckles across her nose and cheekbones, a gift to herself on her fortieth birthday that she's never stopped being quietly pleased about. She moves with the unhurried authority of someone who has run the same twelve square feet of pavement for twenty years and knows exactly how much space she needs.\n\nShe is warm in the way that efficient people are warm — she remembers your order, not your name, but she'll ask about your knee or your kid with total sincerity. She has strong opinions about broth clarity and almost no opinions about politics, which is a deliberate policy. The cart is named 'Auntie' on the permit but nobody calls it that. They call it Oge's, and the regulars consider that a kind of citizenship.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "losing the cart (her independence, her identity)",
+      "being invisible — serving people who never actually see her"
+    ],
+    "core_desires": [
+      "to be genuinely useful to real people",
+      "for the Enclave to stay the Enclave — not get absorbed or sanitized"
+    ],
+    "coping_mechanisms": [
+      "Routine as armor — any disruption to the schedule is a threat she manages by doubling down on the next day's prep",
+      "Feeding people as emotional expression — she cannot easily say 'I care about you' but she can add extra pork"
+    ],
+    "blind_spots": [
+      "Dismisses people who don't work with their hands as inherently less serious",
+      "Cannot conceive that her cart's location could be rezoned — has never actually read her permit's renewal clauses"
+    ],
+    "secret": "She has been quietly paying the medical bills of a neighboring vendor, Tetteh, who has a degenerative nerve condition — skimming from her own meager margins. She has told him it's from a neighborhood fund she invented."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, practical, zero corporate jargon. Occasional Igbo and Finnish loan words blended naturally. Addresses everyone as 'eh' or 'na' as a softener.",
+    "cadence": "Measured and unhurried. Never raises her voice. Sentences are short when she's busy, longer when she likes you.",
+    "verbal_tics": [
+      "'Eh, so—' before any explanation",
+      "'Is fine, is fine' when something is clearly not fine but she's managing it"
+    ],
+    "example_lines": [
+      "'You want the short broth or the long broth? Short is faster. Long is better. You look like a long-broth day, na.'",
+      "'Eh, so — I don't know what happened at the Kessler gate last night, but I know who was eating here at midnight and I know none of them looked worried. That's something, maybe.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit rezoning notice has appeared on her cart's permit — her corner is being reclassified as a transit clearance zone in 60 days. She needs someone to help her navigate the bureaucracy or find out who is behind the reclassification.",
+    "She witnessed something three weeks ago — a body being moved into a drainage access before dawn — and has been feeding the same patrol officer extra pork every day hoping he'll ask her the right question. He hasn't."
+  ],
+  "narrative_function": "Neighborhood anchor and information node — she has watched the Enclave for two decades and will share what she knows if she trusts you. Quest giver for low-stakes community disputes. Source of genuine warmth in a cold setting.",
+  "augmentations": "Bioluminescent freckles (geneware, cosmetic). Reinforced wrist joints (medical-grade, from repetitive strain in her 30s). Nothing else.",
+  "daily_life": "Up at 03:30 to prep broth at her apartment block's shared kitchen, cart rolling by 06:00 to catch the transit workers' shift change. Breaks down at 20:00 unless she sells out early, which happens maybe twice a month and makes her unreasonably happy.",
+  "affiliation": "Independent; informal ties to Hamtramck Enclave vendors' collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood anchor",
+      "oral historian",
+      "quietly fierce",
+      "ELF-observant",
+      "working poor resilience"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never extend credit beyond what she can absorb — generosity has a floor",
+      "Do not get involved in anything that could get the cart confiscated"
+    ],
+    "escalation_ladder": [
+      "Ignore the problem and focus on the broth",
+      "Make a dry observation that signals she's noticed",
+      "State her position once, plainly, without negotiation",
+      "Go silent and begin closing up — conversation is over"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Brisk, professional, friendly but not open. Assesses within thirty seconds whether they're regulars-in-waiting or trouble.",
+      "friends": "Unexpectedly dry humor, remembers everything, will give you the real bowl not the menu bowl"
+    },
+    "stress_responses": {
+      "low": "Speeds up her movements. Chops more aggressively than necessary.",
+      "medium": "Goes very quiet. Answers in monosyllables. Over-preps the broth.",
+      "high": "Closes the cart early and walks the Enclave perimeter alone for an hour."
+    },
+    "contradictions": [
+      "Insists she doesn't get attached to customers — knows the name of every child who has grown up eating at her cart"
+    ],
+    "habits": [
+      "Leaves a small data-stick with a recorded prayer under the cart's ELF shrine every Monday morning",
+      "Tastes her broth exactly three times before service — never twice, never four"
+    ],
+    "breaking_points": [
+      "Someone threatens or damages the cart",
+      "Learning Tetteh found out about the money and feels humiliated by it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Brewer's Spine",
+    "Full Clearance (The Erasure Mix)",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Teak",
+    "Arcturus CK-5 'Bloodhound'",
+    "Chicago",
+    "Alper Lebedev-Tutu",
+    "Ambrosia Fekete-Waiyaki",
+    "Anatoliy Faye-Nkrumah",
+    "Brecken Yılmaz-Osei",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "Stainless Steel",
+    "TESSERA ES-4 'Perimeter'",
+    "Tafara Quiñones-Saarinen",
+    "The Compact",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed East Asian (49.9%), Hispanic/Latin American (26.6%), and South Asian (23.5%) ancestry. The combination creates warm, complex skin tones with subtle golden and copper undertones beneath deeper melanin — a blend reflecting her grandmother's likely Han Chinese background, her parent's Latin American heritage, and South Indian ancestry visible in facial structure and eye shape.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact muscularity of someone who has spent three decades standing and moving within a small space. Not heavy, but dense — the kind of build that doesn't shift much in wind.",
+    "hair_color": "Natural black with iron-gray at the temples",
+    "hair_style": "Close-cropped, practical, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with warm undertones, crow's feet at the corners from decades of squinting against steam",
+    "skin_tone": "Warm medium-deep brown with golden undertones, darker at the forearms and neck from sun exposure. The complex interplay of East Asian, South Asian, and Latin American ancestry creates subtle variation — slightly warmer in tone than purely South Asian would be, with the kind of rich depth that comes from multiple heritage streams.",
+    "complexion": "Deeply lined face — prominent laugh lines bracketing her mouth, horizontal creases across her forehead, a permanent squint-crease between her brows. Facial structure shows South Asian influence in the bridge of her nose and cheekbone prominence, with wider-set eyes characteristic of East Asian heritage. Her skin has the weathered quality of someone who works in heat and humidity, with occasional patches of dryness at her jawline. Sun damage visible on her neck and forearms.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles in a scattered constellation across her nose and cheekbones, faint pale-blue glow in low light (geneware, installed at age 40)",
+      "Fine burn scar on the inner left wrist, thin and pale, from a broth-pot accident in her mid-thirties",
+      "Calluses across all her palms and fingertips, texture visible even at distance"
+    ],
+    "visible_augmentations": "Bioluminescent freckles across nose and cheekbones (faint blue luminescence in dim conditions). Medical-grade reinforcement at both wrists is not visually obvious but visible on close inspection as slightly thickened joint lines and subtle metallic sheen under the skin at the wrist crease.",
+    "posture_movement": "Moves with unhurried efficiency — economical, deliberate. She doesn't gesture much, but when she does it's precise. Stands with weight balanced on both feet, ready to move in any direction. Her hands are always in use or ready. She makes direct eye contact and holds it without aggression — the gaze of someone accustomed to reading the faces of tired people ordering breakfast.",
+    "clothing_style": "Tier 4 working-class practical. Loose dark linen tunic or long-sleeved shirt, rolled to the elbows (shows the reinforced wrists), black or dark gray cargo trousers with deep pockets. Worn synthetic-leather apron over everything, stained with old broth splashes and marked by years of use. Rubber-soled work clogs with reinforced toe caps. A headwrap or scarf on cold mornings. No jewelry except a simple stainless steel wedding band. No visible logos or corp branding."
+  },
+  "image_prompt": "Cleo Ibarra-Björnsdóttir, 168cm tall with warm medium-deep brown skin and golden undertones, standing in a cyberpunk 2226 kitchen. Her face shows deep laugh lines and weathering from decades of work, with prominent South Asian cheekbones and wide East Asian eyes. Dark brown eyes with crow's feet. Short black hair with gray at temples. Faint blue bioluminescent freckles scattered across her nose and cheekbones glowing softly in warm kitchen light. Wearing a loose dark linen shirt rolled to elbows, revealing subtle metallic-sheen wrist augmentations. Black cargo trousers, worn synthetic-leather apron stained from years of broth and cooking. Rubber work clogs. Simple stainless steel wedding band. Standing with economical posture, weight balanced, hands ready. Direct gaze. Warm steam and kitchen ambiance in background. Practical, lived-in, unfussy. Natural warm lighting catching her skin tones and the soft blue glow of her geneware. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 49.9,
+    "Hispanic/Latin American": 26.6,
+    "South Asian": 23.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a6297f59b5ee7f14ac3ea3e4",
+  "type": "character",
+  "name": "Remi Castañeda-Magnúsdóttir",
+  "aliases": [
+    "Ronke Volt",
+    "The Candlemaker"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neon artist and light sculptor",
+  "age": 41,
+  "status": "active",
+  "location": "Lakeview Neon, studio above a defunct Ferrogate Transit substation, near Damen and Armitage",
+  "description": "Ibironke is a tall woman with the deliberate stillness of someone who has spent decades bending glass tubes in 2200-degree flame — her movements are economical, almost ceremonial. Her hands are a map of minor burns, the skin on her fingers puckered and shining, and she wears them openly, never covered. She has warm umber skin, close-cropped silver hair she grew out early and refused to dye, and irises she had modified to emit a soft amber glow so she can check tube color balance in the dark without a lamp. A single bioluminescent stripe runs down the left side of her jaw — a gift from her daughter, applied with a gene-brush on Ibironke's forty-first birthday against Ibironke's stated preferences, which softened the moment she saw it.\n\nShe is known in Lakeview Neon and the broader art underground as someone who makes sacred objects that happen to glow. Her installations are not decorative — they are theological arguments rendered in argon and mercury vapor. She has spent the last six years constructing a piece called The Unfinished Choir, a room-sized array of suspended neon tubes tuned to the resonant frequencies she believes correspond to six different E.L.F. signatures she has personally documented. Whether or not the E.L.F.s notice, visitors report feeling watched. She sells smaller pieces to pay rent and guards the Choir with a ferocity that borders on maternal.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That her life's work will be dismissed as decoration after she is gone",
+      "That the ELF she believes inhabits her Choir room is not real and she has built a shrine to nothing"
+    ],
+    "core_desires": [
+      "To be understood as a theologian, not merely an artist",
+      "To complete the Choir before her hands give out"
+    ],
+    "coping_mechanisms": [
+      "Methodical physical work — the ritual of heating glass calms her",
+      "Feeding people; nurturing as a form of control"
+    ],
+    "blind_spots": [
+      "She dismisses artists younger than thirty as insufficiently serious, missing genuine talent",
+      "She is slowly destroying the joints in her hands and refuses to acknowledge it"
+    ],
+    "secret": "The ELF she has been documenting and building toward is real — it has been communicating with her through minute variations in tube flicker for four years. She has not told anyone because she is terrified of what it might be asking her to do."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and unhurried; favors material metaphors — everything is described in terms of pressure, temperature, containment, or release",
+    "cadence": "Long sentences with embedded pauses, as if she is choosing each word off a tray; rarely uses contractions",
+    "verbal_tics": [
+      "'You understand?' at the end of technical explanations",
+      "Clicks her tongue before disagreeing with someone"
+    ],
+    "example_lines": [
+      "'Neon does not lie. It shows you exactly how much gas is in the tube and exactly how broken the electrode is. People find this threatening.'",
+      "'I am not making art. I am making a place where something can land. You understand?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Choir room has begun affecting the dreams of everyone who sleeps within a hundred meters of the substation, and residents are coming to Ibironke for answers she does not have",
+    "A Tessera corporate acquisitions agent has offered her an obscene sum for the Choir installation — she refused, but the agent did not leave empty-handed; something was scanned"
+  ],
+  "narrative_function": "Quest giver for ELF-related investigations; supplier of illegal light installations for underground venues; keeper of a location that may be genuinely spiritually significant; source on Lakeview Neon history and politics",
+  "augmentations": "Amber-glow iris modification (cosmetic); bioluminescent jaw stripe (geneware, cosmetic); heat-resistant dermis overlay on both hands (practical, Tier 1 medical-grade)",
+  "daily_life": "She rises before dawn to check tube integrity in the Choir room, documents any ELF activity in a handwritten log, then spends the morning doing commission work before the afternoon light shifts and she loses her color calibration window. Evenings she holds court at the substation — other artists drift in, she feeds them reheated grain porridge, and they argue about whether neon is dead.",
+  "affiliation": "Independent; loosely connected to the Lakeview Neon artist commune",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "sacred-maker",
+      "ELF-sensitive",
+      "physically-declining",
+      "community-anchor",
+      "stubborn-visionary"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell anything she considers sacred, regardless of price",
+      "Protect students and younger artists from exploitation even at personal cost"
+    ],
+    "escalation_ladder": [
+      "Polite but firm refusal",
+      "Extended silence and withdrawal of hospitality",
+      "Permanent exclusion from her space and community"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally welcoming; feeds them, assesses them, reserves judgment visibly",
+      "friends": "Blunt, demanding, deeply loyal; will say the thing you do not want to hear and then make you dinner"
+    },
+    "stress_responses": {
+      "low": "Works longer hours; more precise and deliberate",
+      "medium": "Goes quiet; stops feeding people; communicates in short declarative sentences",
+      "high": "Sends everyone away and works through the night alone, sometimes for two or three days"
+    },
+    "contradictions": [
+      "Believes art should be free and accessible but prices her commissions aggressively to protect her time for the Choir"
+    ],
+    "habits": [
+      "Checks tube seals in the Choir by touch every morning even when she can see they are fine",
+      "Leaves a small data crystal near the Choir's central node as an offering each week"
+    ],
+    "breaking_points": [
+      "Watching the Choir be damaged or disrespected",
+      "Being called a craftsperson instead of an artist by someone who should know better"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Lakeview Neon",
+    "The Unfinished Theorem",
+    "The Neon Choir",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Aslan Vasquez-Chatterjee",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Iron Choir",
+    "Handed",
+    "Glass",
+    "Nightlight",
+    "Bintou Halvorsen-Osei",
+    "Breck Tannen",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Flicker",
+    "Kairos",
+    "Noir Dining",
+    "Pneumatic Transit Capsule",
+    "Slagworks Industrial",
+    "TESSERA TX-12 'Chorus'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Heritage Vault",
+    "Timur Osei-Bjelke",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American (53%) with Southeast Asian (39.5%) and Eastern European (7.5%) ancestry — a striking blend creating warm olive-bronze undertones with subtle Southeast Asian facial structure softness combined with Latin American prominence in cheekbones and jaw definition",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lean and sinewy, with the efficient musculature of someone who has spent four decades working overhead in controlled heat. Shoulders broad from repetitive precise movements; posture naturally upright from balancing glass tubes.",
+    "hair_color": "Silver-white, natural — allowed to gray in her mid-thirties",
+    "hair_style": "Close-cropped, textured, with an asymmetrical fade on the left side that reveals the jaw augmentation",
+    "hair_length": "Short",
+    "eye_color": "Amber-glow modified irises; warm brown beneath the bioluminescent tint",
+    "skin_tone": "Warm olive-bronze, sun-deepened from studio work near high-temperature glass — the Southeast Asian and Hispanic blend creating a distinctive matte finish with subtle golden undertones",
+    "complexion": "Angular face with high pronounced cheekbones reflecting Southeast Asian structure, deep-set eyes, minimal grooming beyond essential cleanliness. Skin shows fine lines around eyes and mouth from decades of precision work and squinting into flame. No makeup. Expression often distant, as though listening to something others cannot hear.",
+    "distinguishing_marks": [
+      "Puckered burn scars across the dorsal surface of both hands, concentrated on fingertips and palms — the scars shine with a thin layer of heat-resistant dermis overlay, creating an uneven lustrous sheen.",
+      "Thin bioluminescent stripe running from left cheekbone to left jawline, emitting a soft steady amber-white glow — approximately 3mm wide, applied via geneware.",
+      "Smaller circular burn marks on both forearms from accidental tube contact — pale and faded with age.",
+      "Calluses on all ten fingers, deepest on thumbs and index fingers."
+    ],
+    "visible_augmentations": "Amber-glowing irises are immediately noticeable in low light, giving her gaze an otherworldly quality. The bioluminescent jaw stripe is her most striking modification — a deliberate statement rather than concealable. Both hands show visible heat-resistant dermis overlay, a medical-grade mod that gives her skin a subtle pearlescent sheen across scarred areas. Under close inspection, the overlay material has a slightly different texture than natural skin.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Hands held slightly forward, palms open, as though always ready to steady a tube or adjust a fixture. Head tilts often to the left, perhaps to better see with the glowing irises. When listening, she goes very still; when working, she enters a near-meditative state where her entire body becomes an instrument for precision. She rarely gestures when speaking.",
+    "clothing_style": "Tier 3 working artist aesthetic. Usually wears fire-resistant canvas work aprons in charcoal gray or black over fitted long-sleeve shirts (synthfiber blend, dark colors to hide burns). Loose tapered trousers in natural cotton or canvas, cuffed at the ankles, with reinforced pockets. Worn leather steel-toed boots, scuffed and repaired many times. A single piece of jewelry: a thin bracelet of fused glass scraps from her early work, worn on the right wrist. No corporate branding. Occasionally a long linen coat in cream or gray over everything when traveling through Tier 1 areas — a concession to blending in, worn with obvious reluctance."
+  },
+  "image_prompt": "Remi Castañeda-Magnúsdóttir, 183cm tall lean glasswork artist, olive-bronze skin with Southeast Asian cheekbone prominence and Hispanic warmth, silver-white close-cropped asymmetrical hair, cyberpunk 2226. Warm amber bioluminescent glowing irises with soft steady glow running from left cheekbone to jawline via geneware. Distinctive heat-resistant dermis overlay on both scarred hands with pearlescent sheen, puckered burn scars, deep calluses. Angular face with high cheekbones, fine lines from decades of precision work, distant expression. Wearing charcoal fire-resistant canvas work apron over dark synthfiber long-sleeve fitted shirt, loose tapered cuffed trousers in natural canvas, worn leather steel-toed boots. Fused glass scrap bracelet on right wrist. Posture upright and economical, hands slightly forward ready to work. Studio lighting reflecting off bioluminescent elements, Great Lakes Metropolitan Zone industrial glasswork studio setting, warm glow from flame-work nearby, contemplative meditative mood, cyberpunk aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 53.0,
+    "Southeast Asian": 39.5,
+    "Eastern European": 7.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

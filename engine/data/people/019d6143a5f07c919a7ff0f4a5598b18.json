@@ -1,0 +1,290 @@
+{
+  "id": "019d6143a5f07c919a7ff0f4a5598b18",
+  "type": "character",
+  "name": "Echo Bergqvist",
+  "aliases": [
+    "Dev",
+    "Mama Dev"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Childcare worker and after-school program coordinator at a community center in The Shelf",
+  "age": 28,
+  "status": "active",
+  "location": "The Shelf — Clearpath Community Node, a converted transit shed that serves as a childcare center, food pantry, and meeting space, near Ashland and Division",
+  "description": "Devaki is compact and energetic, built like someone who has spent years crouching to a child's eye level and then standing up quickly to manage chaos. Their skin is warm brown, their hair a natural cloud of deep black shot through with self-maintaining bioluminescent streaks of soft green — a geneware mod they got as a teenager and have never changed because the children love it and they love the children. They have their Ghanaian father's broad cheekbones and their Iranian mother's sharp nose, and they wear expressions that shift fast: delight to concern to focused calm, all in the span of a breath. Their hands are always slightly stained with paint or chalk or both.\n\nDevaki runs on conviction and substandard coffee. They believe — with a firmness that sometimes looks like stubbornness and sometimes looks like the only sane response to GLMZ — that children are the one non-negotiable. Whatever the Corponations decide, whatever the district politics do, whatever the power cuts and the overcrowding and the data poverty do, the kids at Clearpath are going to have three meals today and a clean place to learn and an adult who will not disappear on them. They are funny in a dry, quick way that children respond to immediately. Adults who underestimate them because of their warmth make a reliable and often entertaining mistake.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Burning out and failing the children who depend on the center",
+      "The center losing funding and closing — they've watched it happen to three others"
+    ],
+    "core_desires": [
+      "For every child who passes through Clearpath to feel like they were chosen, not managed",
+      "To build something durable enough to outlast them"
+    ],
+    "coping_mechanisms": [
+      "Hyperactivity as avoidance — if they're doing six things, they can't feel the one thing",
+      "Compartmentalization: work mode is airtight, personal distress is for the walk home"
+    ],
+    "blind_spots": [
+      "They genuinely cannot process the idea of their own limits and will not accept help gracefully",
+      "They project resilience onto the families they serve and miss when parents are drowning"
+    ],
+    "secret": "Clearpath's funding gap this quarter is larger than they've told anyone — including the staff. Devaki has been supplementing it from their own account for four months and is now two months from eviction. They haven't told their mother."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and direct, shifts register fluidly between child-level and adult-level; capable of bureaucratic language when cornered but visibly hates using it; occasional Farsi expressions from their mother",
+    "cadence": "Fast when excited or worried, which is often; slows down deliberately when speaking to children or when delivering difficult news",
+    "verbal_tics": [
+      "'Okay, okay, listen—' before making a point",
+      "'Azizam' (my dear, Farsi) used for children they're especially fond of",
+      "Laughs before jokes and after difficult truths"
+    ],
+    "example_lines": [
+      "'I need three things from you and I need them now: what happened, who got hurt, and whether anyone's still bleeding. In that order.'",
+      "'This center has been closing for six years according to people who don't work here. We are still open. Azizam, that is not luck. That is us.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A child at the center has stopped speaking and is showing signs of acute stress-response augmentation — someone installed something in a minor without consent, and Devaki needs help finding out who and why without alarming the family",
+    "The building that houses Clearpath has been quietly purchased by a Tessera subsidiary, and Devaki just received the first notice of lease renegotiation",
+    "One of the teenagers in the after-school program has been recruited by someone Devaki can't identify — the kid is suddenly carrying new hardware and won't say where it came from"
+  ],
+  "narrative_function": "Moral compass character — their presence grounds stories in the human cost of systemic issues. Quest giver for crises that affect the neighborhood's children. Can provide critical local knowledge about families and community dynamics. Represents what civic infrastructure looks like when it's held together by human will rather than institutional support.",
+  "augmentations": "Bioluminescent hair streaks (geneware, soft green, self-maintaining); basic health-monitoring subdermal patch on their sternum that they share data with a local free clinic",
+  "daily_life": "Arrives at Clearpath by 06:30 for early drop-offs, coordinates breakfast, runs three age-grouped learning sessions, handles two hours of administrative work that they hate, and usually can't leave until 19:00. Eats standing up. Sends voice messages to their mother on the crosstown walk home.",
+  "affiliation": "Clearpath Community Node (community-funded, not-for-profit); receives marginal supplementary funding from the GLMZ Social Services Bureau",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Community Bedrock",
+      "Controlled Burnout",
+      "Child Advocate",
+      "Resource Juggler",
+      "Hidden Crisis"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Children's safety is not a variable — it is a constant that other variables are arranged around",
+      "Ask for help last, not because of pride but because the list of people they trust to help is very short",
+      "Tell the truth to people who can handle it; protect people who can't"
+    ],
+    "escalation_ladder": [
+      "Address the problem directly and immediately",
+      "Bring in the other staff member to mediate",
+      "Escalate to the community council",
+      "Go public — they've done it before and will again"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and assessing — reads people quickly for whether they are safe to let near the kids; warm if they pass, watchful if unclear",
+      "friends": "Loose and revealing, capable of being genuinely silly; drops the competent-coordinator act and just exists"
+    },
+    "stress_responses": {
+      "low": "Reorganizes something that doesn't need reorganizing",
+      "medium": "Stops eating, doesn't notice",
+      "high": "Goes very controlled and very quiet in a way the staff recognize as a warning sign — it means things are worse than they're saying"
+    },
+    "contradictions": [
+      "Preaches interdependence and community while solving every problem alone",
+      "Infinitely patient with children, has almost no patience for institutional bureaucracy and sometimes lets it show at the wrong moment"
+    ],
+    "habits": [
+      "Checks every child's face individually at morning drop-off — a personal inspection for distress signals",
+      "Leaves a green-light data-prayer at the center's E.L.F. (which lives in the old lighting panel) every morning before the kids arrive",
+      "Carries a worn multi-tool in their apron pocket at all times"
+    ],
+    "breaking_points": [
+      "A child being harmed on their watch",
+      "Being told the center's work 'isn't scalable' by someone who has never been poor"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in The Shelf to a Ghanaian transit worker and an Iranian medical technician",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began volunteering at Clearpath at age 18; never really left",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became full-time coordinator after the previous director emigrated under a Sterling-Nakamura relocation contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began quietly subsidizing the center's funding gap from their own account — the gap has been growing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Iron Lotus",
+    "Clearpath",
+    "The Shelf",
+    "Flicker",
+    "The Pellucid Span",
+    "The Gradient Compact",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-7 'Nursery'",
+    "Davi Ousseini-Brătianu",
+    "Ilhan Sandstrom-Badu",
+    "Isadora Mwangi-Thorvaldsen",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Patient Zero",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "TESSERA PA-5 'Attendant'",
+    "The Canopy",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian (73.1%) with significant Pacific Islander ancestry (21.1%), complemented by minor Hispanic/Latin American (3.5%) and Sub-Saharan African (2.3%) heritage. This creates a warm, sun-bronzed complexion with subtle warm undertones characteristic of tropical maritime populations, blended with warmer mid-tone depth.",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry with functional muscle from constant movement — crouching, lifting, reaching. No excess weight; built for efficiency rather than strength.",
+    "hair_color": "Deep black with self-maintaining bioluminescent green streaks",
+    "hair_style": "Natural cloud texture, worn loose and unstyled; the green bioluminescent threads run through it organically",
+    "hair_length": "Medium (shoulder-length when relaxed, often pulled back with whatever is handy — a crayon, a rubber band, a child's hair clip)",
+    "eye_color": "Dark brown, warm and expressive",
+    "skin_tone": "Warm medium bronze with golden-honey undertones, reflecting Southeast Asian and Pacific Islander ancestry. Sun-kissed without appearing tanned—this is the baseline complexion of tropical heritage.",
+    "complexion": "Clear, lively complexion with a few paint stains perpetually visible around the cuticles and knuckles. Southeast Asian bone structure with defined cheekbones and angular features; warm, open face. Facial expressions mobile and quick — rarely still for long. No visible cosmetics; skin maintained with practical care rather than aesthetics.",
+    "distinguishing_marks": [
+      "Small, faded chalk smudge on their left temple (semi-permanent from work)",
+      "Callus on the base of their right ring finger from holding pencils and markers",
+      "Faint watercolor paint stain on the inside of their left wrist (occupational)"
+    ],
+    "visible_augmentations": "Bioluminescent hair streaks (soft green, most visible in dim light or shadow). The subdermal health-monitoring patch on their sternum is not visible under clothing. No chrome or obvious cybernetics — deliberately maintained low-profile augmentation.",
+    "posture_movement": "Alert and kinetic. Rarely sits fully still; shoulders slightly forward, knees ready to bend. Moves with practiced efficiency — no wasted motion, but not tense. Hands gesture frequently when speaking. Eyes scan rooms habitually (checking for hazards, watching for children in distress). Default stance is slightly lower center of gravity, as if ready to crouch or react.",
+    "clothing_style": "Tier 4 practical. Well-maintained but worn clothing chosen for durability and washability: reinforced pants (usually dark, many pockets), soft oversized t-shirts or loose button-ups in muted colors (often with faint permanent stains from paint/food/chalk). Comfortable shoes broken in from eight-hour days. A cardigan or lightweight jacket, usually unzipped. No jewelry except a faded fabric bracelet made by a child. Clothes show care but not vanity — repaired seams, re-hemmed cuffs. The green bioluminescent hair streaks are their single deliberate aesthetic statement."
+  },
+  "image_prompt": "Echo Bergqvist, compact Southeast Asian-heritage figure (158cm), warm bronze complexion with golden undertones, deep black hair with soft green bioluminescent streaks glowing faintly. Alert, kinetic posture ready to crouch. Wearing muted oversized shirt and dark reinforced pants with paint stains visible on hands and wrists. Faded chalk smudge on left temple. Worn-in comfortable shoes. Faded child-made fabric bracelet. Scanning expression, hands mid-gesture. Cyberpunk 2226 Great Lakes setting, dim overhead lighting highlighting bioluminescent hair threads. Low center of gravity stance. Practical, well-maintained but visibly worn clothing. No chrome augmentations visible. Soft warm shadows, moody atmospheric lighting. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 73.1,
+    "Pacific Islander": 21.1,
+    "Hispanic/Latin American": 3.5,
+    "Sub-Saharan African": 2.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

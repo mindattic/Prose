@@ -1,0 +1,340 @@
+{
+  "id": "019d6143a6077a5994f0b3a8dde07b9b",
+  "type": "character",
+  "name": "Sage Szabó-Vestergaard",
+  "aliases": [
+    "Molten",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate espionage and data exfiltration — data thief",
+  "age": 25,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
+  "description": "Eshe Petersen-Bah is lean and angular, all sharp edges and visible tension. At 25, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.44,
+      "ideal": 0.79,
+      "id": 0.34,
+      "shadow": 0.84,
+      "mask": 0.93,
+      "ghost": 0.96
+    },
+    "core_fears": [
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "The quiet — silence means something is about to go very wrong"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "Freedom from augmentation debt — the interest compounds like a tumor"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+    ],
+    "blind_spots": [
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Overestimates their own abilities in situations outside their specialty"
+    ],
+    "secret": "Eshe Petersen-Bah betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
+    ],
+    "example_lines": [
+      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
+      "\"I copy things. The original owners rarely appreciate the compliment.\"",
+      "\"Data wants to be free. I just charge a facilitation fee.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Eshe Petersen-Bah's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A dead drop Eshe Petersen-Bah maintains is found and cleaned out — whoever did it now has leverage",
+    "Eshe Petersen-Bah intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Eshe Petersen-Bah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Subdermal weapon mount — pop-out blade in each forearm",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — known in Old Harbor circles",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 10
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.44,
+      "caution": 0.44,
+      "loyalty": 0.16,
+      "greed": 0.51,
+      "empathy": 0.26
+    },
+    "drives": [
+      "knowledge",
+      "loyalty",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 3,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "social chameleon — adapts to any environment",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "data thief",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Checks exits within 10 seconds of entering any room",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Discovering their employer deliberately sent them into a death trap",
+      "Being publicly exposed — name, face, address, all of it blown"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Pragmatist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Street Custom 'Tombstone' Concrete Block Launcher",
+    "Street Custom 'Scorpion Tail' Chain Whip"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Ezio Kaboré-Malhotra",
+    "Glenville Sound",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Old Harbor",
+    "Oumarou Svec-Ranginui",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Street Custom 'Cigarette' Pen Gun",
+    "Street Custom 'Scorpion Tail' Chain Whip",
+    "Street Custom 'Tombstone' Concrete Block Launcher",
+    "TESSERA CR-12 'Whisper'",
+    "The Human Baseline Alliance",
+    "The Quiet Room",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Southeast Asian dominant (51.5%) with Eastern European (30.2%) and East Asian (18.3%) ancestry, creating a complex pan-Asian phenotype with secondary European features",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible muscle definition from constant movement and maintenance work. No excess fat. Shoulders narrow but wiry-strong. The physiology of someone who runs on adrenaline and caffeine more than calories.",
+    "hair_color": "Dark brown with premature gray threading at the temples",
+    "hair_style": "Cropped close to the scalp, maintained with military precision — easier to clean, harder to grab",
+    "hair_length": "Short",
+    "eye_color": "Amber-brown, alert and constantly tracking",
+    "skin_tone": "Warm medium brown with olive-golden undertones from Southeast Asian ancestry, deepened by salt spray and urban sun exposure. The complexion carries subtle warmth from Eastern European and East Asian heritage blending",
+    "complexion": "Strong cheekbones with slight width characteristic of Southeast Asian ancestry, defined jawline refined by Eastern European heritage. Eyes set with moderate width, slightly hooded in the East Asian style, giving intense predatory attentiveness. Skin shows minor scarring from street work with no visible inflammation. Lips of medium fullness, usually pressed in a neutral line. No facial hair — kept clean to reduce identification markers.",
+    "distinguishing_marks": [
+      "Thick scar tissue along the right temple extending to upper right ear — the cortical bomb extraction site, roughly 8cm long, silvery-pink and poorly healed by street doc standards",
+      "Fine linear scars across both inner forearms at the subdermal weapon mount sites — barely visible unless under direct light, but present as pale lines",
+      "Small burn scar on the back of left hand, shaped like a cigarette end — old violence from an unpaid debt collector",
+      "Tattoo on inside of left wrist: a simple Φ symbol in gray ink, barely visible, personal marker from early running days"
+    ],
+    "visible_augmentations": "The cortical bomb scar is immediately visible and unmissable — it reads as street-level, dangerous, and committed. The forearm weapon mounts show as subtle ridges under the skin when arms are extended or tensed. No obvious chrome, no LED installations, no subdermal armor plating. The augmentations are working-class and understated.",
+    "posture_movement": "Stands with weight balanced on the balls of his feet, ready to move in any direction. Eyes constantly scan horizontal and vertical space — doors, windows, exits. Moves with economy of motion, nothing wasted. Sits with his back to walls. Handshake grip is firm but not aggressive — testing baseline tension. When thinking, his right hand unconsciously touches the cortical scar, a tell he's aware of but hasn't broken.",
+    "clothing_style": "Tier 3-4 practical runner wear. Black or dark gray synth-weave jacket with internal cargo pockets — nothing visible, everything accessible. Fitted dark cargo pants with reinforced knees and thigh pockets for tools and data slicers. Worn black tactical boots with grip soles for the wet dockside environment. No logos, no corpo branding, no affiliation markers. Layers beneath in case of quick climate change or blood. A single chain around his neck, industrial steel, holding a small encrypted data key he never removes. Everything fits tight — nothing loose to snag or slow him down."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Sage Szabó-Vestergaard, Southeast Asian-dominant mixed heritage with warm olive-brown skin tone, sharp cheekbones, amber-brown alert eyes with slight East Asian hooding, short dark hair with gray at temples. Prominent 8cm silvery-pink cortical bomb scar on right temple and ear. Lean angular 178cm frame, wiry-strong build. Wearing black synth-weave tactical jacket and dark cargo pants, industrial steel chain necklace with encrypted data key. Standing with balanced predatory posture, weight on balls of feet, eyes scanning. Dockside setting, salt-spray weathered appearance, neon-lit Great Lakes Metropolitan Zone background with rain-slicked surfaces. Moody atmospheric lighting, cool blue and amber neon glow, cinematic depth. Professional runner aesthetic, minimal augmentation markers visible, street-level dangerous presence. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 51.5,
+    "Eastern European": 30.2,
+    "East Asian": 18.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

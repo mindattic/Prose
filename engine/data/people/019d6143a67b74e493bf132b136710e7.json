@@ -1,0 +1,247 @@
+{
+  "id": "019d6143a67b74e493bf132b136710e7",
+  "type": "character",
+  "name": "Ash Volkov-Nkrumah",
+  "aliases": [
+    "Odu",
+    "the Cartographer"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Wandering hyperlane trader and oral map-keeper",
+  "age": 58,
+  "status": "active",
+  "location": "Kenosha Crossing, rotating between hyperlane rest stops, near beyond the Western Perimeter",
+  "description": "Oduduwa is a broad-shouldered man whose skin has the weathered texture of someone who has slept under more open skies than ceilings. His face is mapped with deep sun-lines and three horizontal scarification marks across each cheek — family marks from a grandmother he never met, replicated from a photograph. He keeps his silver-streaked hair in compressed locs wound tight against his skull, and his left eye is a replacement — milky synthetic glass with a faint amber glow that never quite matches the warm brown of his right. He wears a patchwork coat assembled from fabric scraps collected across twenty years of travel: Sahel weave, Andean fleece, Siberian synthetic fur stitched together into something ungainly and unmistakable.\n\nOduduwa does not use navigation apps. He carries the hyperlane network in his head — every checkpoint, every informal rest stop, every E.L.F. shrine worth stopping at between here and the Escanaba Gateway. He sells information as readily as the salvaged electronics and dried foodstuffs strapped to his cargo cart. He is unhurried in a way that unnerves people who are used to the city's pace, and he has a habit of studying strangers as if cataloguing them for a story he will tell somewhere else, to someone else, years from now.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being forgotten before he has passed on what he knows",
+      "Losing the mental maps — cognitive decline"
+    ],
+    "core_desires": [
+      "To be the thread that connects isolated communities",
+      "To find one place worth staying"
+    ],
+    "coping_mechanisms": [
+      "Oral recitation of route mnemonics when anxious",
+      "Deliberate slowing of pace and breath"
+    ],
+    "blind_spots": [
+      "Underestimates how much others rely on him emotionally, not just practically",
+      "Assumes movement is always the answer to discomfort"
+    ],
+    "secret": "He has a daughter in Escanaba Gateway he has not spoken to in eleven years. She told him to choose between the road and her family. He chose wrong, and he knows it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Measured, archaic-flavored. Uses geographic metaphors constantly. Switches between at least three creolized languages mid-sentence without noticing.",
+    "cadence": "Slow and deliberate, with long pauses before important information as if checking internal files.",
+    "verbal_tics": [
+      "'You understand where I am?' (checking comprehension)",
+      "'Mark it.'",
+      "Long exhalations before disagreement"
+    ],
+    "example_lines": [
+      "'The checkpoint at Iron Bend is kinder on Tuesdays. The inspector there, she prays to a water E.L.F. — leave something wet at the shrine and she softens.'",
+      "'I have walked that road four hundred times. It has never walked back to me. That is the arrangement.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He is carrying a sealed data-chip someone pressed into his hand three weeks ago in Manitowoc Drydock, begging him to deliver it. He does not know what is on it and is beginning to suspect it is dangerous.",
+    "His internal maps include routes that no longer officially exist — pre-Ferrogate Transit routes that certain powerful people would prefer stayed forgotten."
+  ],
+  "narrative_function": "Information broker and world-expander — he can tell players about routes, checkpoints, people, and rumors across the wider hyperlane network. Quest giver for courier or retrieval jobs. Living encyclopedia of the city's edges.",
+  "augmentations": "Synthetic replacement left eye (functional, older model — amber-glowing, basic vision enhancement only). No other augmentations.",
+  "daily_life": "Rises before dawn to check his cart inventory and whisper a short prayer to the transit E.L.F. at Kenosha Crossing's pillar shrine; spends mornings trading and afternoons walking the lanes, mentally updating his internal route maps.",
+  "affiliation": "Unaffiliated; loose ties to the Crossing Caravan Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "navigator",
+      "oral historian",
+      "trader",
+      "loner",
+      "grief-carrier"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never carry contraband knowingly — information only",
+      "Always leave a location with more knowledge than he arrived with",
+      "Honor a promise made at a shrine, no exceptions"
+    ],
+    "escalation_ladder": [
+      "Redirect conversation away from conflict",
+      "Become very still and very quiet",
+      "Walk away without explanation",
+      "If cornered, use the cart as a barrier and shout for witnesses"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Observant and formally courteous, offers information as a gift before asking for anything in return",
+      "friends": "Rambling, warm, prone to long stories that turn out to have been useful all along"
+    },
+    "stress_responses": {
+      "low": "Recites route mnemonics under his breath",
+      "medium": "Becomes very still and very formal, voice drops",
+      "high": "Moves — just starts walking, needs to physically relocate to think"
+    },
+    "contradictions": [
+      "Preaches the value of connection but has systematically avoided his deepest one for a decade"
+    ],
+    "habits": [
+      "Touches the frame of his synthetic eye when thinking",
+      "Leaves small data-offerings at every E.L.F. shrine he passes regardless of affiliation",
+      "Eats the same breakfast wherever he is"
+    ],
+    "breaking_points": [
+      "Any mention of his daughter by name",
+      "Witnessing a child separated from a parent at a checkpoint"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Synthetic eye (amber-glow, basic vision enhancement, older model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Synthetic eye (amber-glow, basic vision enhancement, older model)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Manitowoc Drydock",
+    "Ferrogate Transit",
+    "Kenosha Crossing",
+    "Grandmother",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Glass",
+    "Nightlight",
+    "Abeke Soriano-Dlamini",
+    "Arcturus GE-1 'Garrison'",
+    "Bathysphere Networks",
+    "Breck Tannen",
+    "Emeka Johansson-Orozco",
+    "Iron Bend",
+    "Nodar Kuznetsov-Adu",
+    "Obafemi Szczypiński-Lautoa",
+    "Ringo DV-4 'Courier'",
+    "Saodat Mirzoyan-Fubara",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA CR-12 'Whisper'",
+    "TESSERA ES-4 'Perimeter'",
+    "Tafara Quiñones-Saarinen",
+    "The Arrangement",
+    "The Crossing",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (37.8%, likely West African) with significant Eastern European (20.3%, likely Slavic), South Asian (14.9%), Northern European (13.9%), and East Asian (11.5%) ancestry—a complex Pan-African and Eurasian blend reflecting the Ubiquitous Diaspora. Facial structure shows the broad features of West African heritage softened by Eastern European and South Asian bone structure contributions; skin reflects the deep melanin concentrations of African ancestry with subtle warm undertones from South Asian heritage.",
+    "height_cm": 185,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick-framed, carrying the solid mass of decades of manual labor and long-distance walking. Not muscular in a refined sense, but densely built — the frame of someone who loads and unloads carts without machinery.",
+    "hair_color": "Silver-streaked black",
+    "hair_style": "Compressed locs wound tight against the skull",
+    "hair_length": "Medium (locs approximately 8-10cm in length)",
+    "eye_color": "Right eye: warm brown natural; Left eye: milky synthetic glass with faint amber glow",
+    "skin_tone": "Deep rich brown with warm undertones from the South Asian component of ancestry, sun-darkened and weathered across exposed surfaces from chronic equatorial and subtropical exposure",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of sun exposure and smiling. Broad cheekbones and defined jawline showing West African heritage structure, softened slightly by South Asian and Eastern European ancestry. Three horizontal scarification marks across each cheek — deliberate family markings, cleanly healed. Weathered but well-maintained; grooming is sparse but intentional.",
+    "distinguishing_marks": [
+      "Three horizontal scarification marks across the left cheek, approximately 5cm each, evenly spaced 2cm apart — family marks deliberately replicated from family photograph",
+      "Three matching horizontal scarification marks across the right cheek, mirror placement to the left side",
+      "Deep sun-weathering and permanent creases across forehead and around eyes from chronic sun exposure",
+      "Calloused hands with permanent staining on fingertips suggesting decades of handling worn fabrics and salvaged materials"
+    ],
+    "visible_augmentations": "Left eye replacement: milky synthetic glass sphere with faint amber luminescence, visibly older model with slight mechanical iris movement. Sits slightly more recessed than natural eye. Otherwise no visible augmentations.",
+    "posture_movement": "Unhurried and deliberate in movement — a man comfortable with silence and observation. Tends to stand with weight distributed evenly, as if always ready to walk long distances. Eyes move methodically across environments, cataloguing details. Rarely makes rapid gestures; speaks with long pauses between thoughts.",
+    "clothing_style": "Patchwork long-coat assembled from twenty years of fabric scraps: visible panels of Sahel weave (rust and indigo tones), Andean fleece (cream and earth red), Siberian synthetic fur (silver-gray) stitched together into an ungainly but distinctive silhouette. Underneath: worn neutral-toned utilitarian layers suitable for variable climates. Footwear: heavily repaired all-terrain boots showing multiple generations of patches. No corporate branding; Tier 4-5 aesthetic through necessity rather than choice. Carries a battered leather satchel worn across his body — color faded to caramel from decades of use."
+  },
+  "image_prompt": "Ash Volkov-Nkrumah, 185cm tall, dense heavy-framed man with deep rich brown skin bearing West African, Eastern European, and South Asian ancestry blend. Tightly wound silver-streaked black locs compressed against skull. Deep facial lines and sun-weathering across forehead and eyes. Distinctive scarification: three horizontal lines across each cheek, family markings. Right eye warm brown natural, left eye milky synthetic glass with faint amber luminescence and mechanical iris. Worn patchwork long-coat in Sahel indigo, Andean rust-red, and silver-gray Siberian synthetic fur panels. Neutral utilitarian layers beneath. Heavily patched all-terrain boots. Battered caramel leather satchel across body. Calloused hands with fabric stains. Posture unhurried and deliberate, weight evenly distributed. Standing in dim neon-lit GLMZ marketplace corridor, 2226, surrounded by salvage stalls and worn metal fixtures. Contemplative, methodical gaze. Cyberpunk greenwash lighting mixing sodium vapor and LED. Hyper-detailed weathering and fabric texture. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 37.8,
+    "Eastern European": 20.3,
+    "South Asian": 14.9,
+    "Northern European": 13.9,
+    "East Asian": 11.5,
+    "Hispanic/Latin American": 1.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

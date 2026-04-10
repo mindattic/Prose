@@ -1,0 +1,221 @@
+{
+  "id": "019d6143a5fe7cbfb0d8ef2662e21ad9",
+  "type": "character",
+  "name": "Ananya Bustamante-Wickramasinghe",
+  "aliases": [
+    "Fee",
+    "Ghost Fee"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street orphan, junior prospect for the Copperhead Reclaimers gang",
+  "age": 9,
+  "status": "active",
+  "location": "Copperhead, near Fullerton and Damen",
+  "description": "Efua is small even for nine, with close-cropped natural hair and enormous dark eyes that seem to be processing information on a continuous loop. Her Barański great-grandmother's pallor didn't quite make it through four generations but left her with an unusual warm-olive undertone beneath her brown skin that makes her look perpetually lit from within. She wears whatever fits and has developed an uncanny eye for what is sturdy versus what merely looks sturdy. She has no geneware and no augs — she is very physically ordinary, which she has learned to use.\n\nThe Copperhead Reclaimers use her as a look-out and occasional distraction because she looks like a lost child, which she also is, though she would be furious at anyone who said so. She has an intense, almost reverent relationship with a cracked data-terminal in the Reclaimers' squat that she has named 'Mbe' and leaves small offerings for — bits of copper wire, interesting pebbles, once a dead battery that she insists the E.L.F. inside appreciated. She is a child who has organized her world into a system of loyalties and debts she tracks with absolute precision.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The Reclaimers deciding she's not useful enough and telling her to leave",
+      "Something happening to Mbe — the terminal being destroyed or moved"
+    ],
+    "core_desires": [
+      "A permanent place that is specifically hers",
+      "To understand what Mbe is trying to tell her — she's convinced the E.L.F. communicates through screen flickers"
+    ],
+    "coping_mechanisms": [
+      "The ritual of offerings and 'conversations' with Mbe",
+      "Keeping meticulous internal tallies of who owes her what as a way to feel secure"
+    ],
+    "blind_spots": [
+      "She has completely idealized the Reclaimers' older members and misses signals that some of them see her as disposable",
+      "She interprets the terminal's random error codes as meaningful messages because she needs them to be"
+    ],
+    "secret": "She has been memorizing the faces, routines, and apparent weaknesses of every Reclaimer adult — not out of any plan to use this information, but because she learned before she can remember that knowing things about people who have power over you is the only safety available"
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and direct; uses fewer words than adults expect from a child; occasional surprising formal phrase picked up from whoever she's been near",
+    "cadence": "Slow and careful, as though each word has a weight she's measured",
+    "verbal_tics": [
+      "Long silences that she doesn't feel the need to fill",
+      "'Mbe says—' followed by an interpretation of recent screen behavior"
+    ],
+    "example_lines": [
+      "'Mbe says the green flicker means someone's coming. Mbe's right more than you.'",
+      "'I don't need anything. I was just standing here. I can stand here.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Efua approaches someone because Mbe's terminal has started displaying a repeating sequence she can't interpret and she is absolutely certain it is urgent — and she happens to be right, because someone patched malware through it weeks ago",
+    "A Reclaimer adult has given Efua a task that is clearly more dangerous than they've told her, and she doesn't fully understand this yet — but the players might"
+  ],
+  "narrative_function": "Emotional core character, E.L.F. lore window, moral weight in stories about child labor and gang exploitation, unexpected information source because adults underestimate her",
+  "augmentations": "None",
+  "daily_life": "Wakes when the squat wakes, runs lookout on whatever the Reclaimers need her for, spends her unsupervised hours in the market strip watching people and trading small favors, returns to 'talk' to Mbe the terminal before sleep.",
+  "affiliation": "Copperhead Reclaimers (junior prospect, non-combatant); no family",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 7,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Orphan",
+      "Street Kid",
+      "ELF Devotee",
+      "Watcher",
+      "Emotionally Older Than She Looks"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Trust the tally — if someone has been reliable three times, they get credit; if they've failed once, they get nothing",
+      "Stay close to Mbe whenever possible"
+    ],
+    "escalation_ladder": [
+      "Goes very still and watches",
+      "Moves to a position with better sightlines",
+      "Disappears — she is extraordinarily good at not being where people look"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Invisible and watchful, will not approach unless she wants something specific",
+      "friends": "Intensely loyal, expresses affection through bringing people things they mentioned once and forgot about"
+    },
+    "stress_responses": {
+      "low": "Goes to sit near Mbe",
+      "medium": "Counts things — tiles, sounds, heartbeats — until she feels steady",
+      "high": "Hides somewhere extremely small and does not come out until the threat has passed"
+    },
+    "contradictions": [
+      "She is brave in ways that look like recklessness but is actually running a constant calculation — she's just willing to accept higher risk than adults think a child should be"
+    ],
+    "habits": [
+      "Leaves a small object near wherever she sleeps as a 'marker' so she knows if anyone moved through while she was out",
+      "Mirrors the sitting position of adults she's trying to get information from"
+    ],
+    "breaking_points": [
+      "The terminal being destroyed",
+      "A Reclaimer adult being explicitly cruel to her rather than just careless"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9,
+    "Enforcer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Grandmother",
+    "Copperhead",
+    "The Reclaimed",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Copper",
+    "Elena Vasquez-9",
+    "Déjà Vu",
+    "Flicker",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Street Custom 'Cigarette' Pen Gun",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "Street Custom 'Glass Garden' Caltrops",
+    "The Bazaar",
+    "The Canopy",
+    "The Pure Hand",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian (35%) with significant North African (24.5%) and Hispanic/Latin American (18.5%) ancestry, complemented by East Asian (16.5%) and Southeast Asian (5.5%) heritage. A complex genetic mosaic reflecting the Ubiquitous Diaspora.",
+    "height_cm": 125,
+    "weight_kg": 24,
+    "build": "Slight and wiry, the lean frame of a child who eats irregularly but moves constantly. Her posture is alert, shoulders slightly forward as if perpetually ready to scatter.",
+    "hair_color": "Natural black with warm undertones",
+    "hair_style": "Close-cropped, no styling, maintained for practicality and speed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, nearly black, with an unusual reflective quality that suggests constant processing",
+    "skin_tone": "Warm golden-brown with subtle olive undertones and a luminous quality despite poor nutrition. The complexion reflects the blending of South Asian base warmth with North African and Mediterranean depth, creating a rich medium tone that catches light.",
+    "complexion": "Clean but weathered for her age, hands calloused from handling salvage and scrap. Facial structure shows blended heritage: subtle definition from South Asian ancestry with wider cheekbones suggesting East/Southeast Asian influence, and warm undertones from North African genetics. No visible acne or grooming marks — her face has the concentrated, worn clarity of a child managing survival.",
+    "distinguishing_marks": [
+      "Thin white scar on her right inner wrist, jagged, consistent with childhood street accident rather than intentional mark",
+      "Faint copper stains on her fingertips from handling wire and corroded circuitry, permanent discoloration in the creases",
+      "Small burn mark on the back of her left hand, healed, approximately the size of a cigarette end"
+    ],
+    "visible_augmentations": "None visible. No chrome, no optics, no subdermal plating. This is intentional — her invisibility is her asset.",
+    "posture_movement": "Moves with economical precision, minimal wasted motion. Stands with weight on her toes, ready to move. Eyes constantly tracking: people, exits, objects of value. Speaks rarely and quietly, but listens intently. When focused on a task or problem, her entire body goes still.",
+    "clothing_style": "Tier 5 salvage aesthetic: mismatched layers, all oversized and worn from previous owners. Cargo pants with multiple pockets (half-empty, half-full of trading items), a faded long-sleeve shirt under a vest made from old climbing harness webbing. Shoes are too large but wrapped tight with wire to stay on. Her only personal item: a length of braided copper wire worn as a bracelet, constantly twisted between her fingers."
+  },
+  "image_prompt": "Ananya Bustamante-Wickramasinghe, 125cm tall wiry child, warm golden-brown skin with olive undertones, blended South Asian and North African heritage visible in facial structure, dark reflective eyes, close-cropped black hair, calloused hands with copper stains, thin white scar on inner wrist, burn mark on left hand. Wearing oversized cargo pants with wire-wrapped shoes, faded long-sleeve shirt, climbing harness webbing vest. Copper wire bracelet twisted between fingers. Alert posture, weight on toes, economical precise movement. Cyberpunk 2226 Great Lakes Metropolitan Zone, standing in dim salvage yard with soft neon ambient light filtering through haze, tracking with intense focused gaze, hands ready. Gritty, lived-in, survival-worn aesthetic, cinematic lighting emphasizing her luminous skin against shadows, atmospheric depth, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 35.0,
+    "North African": 24.5,
+    "Hispanic/Latin American": 18.5,
+    "East Asian": 16.5,
+    "Southeast Asian": 5.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

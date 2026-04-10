@@ -1,0 +1,312 @@
+{
+  "id": "019d6143a5eb78e688e790c495e2d894",
+  "type": "character",
+  "name": "Frost Solberg",
+  "aliases": [
+    "Day-O",
+    "The Frame Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fake ID vendor and documentation forger, The Alban Souk",
+  "age": 34,
+  "status": "active",
+  "location": "The Alban Souk, lower concourse, booth behind the noodle counter, Blackpipe Corridor, near Halsted and Division",
+  "description": "Dayo is lean and angular with long fingers that move constantly — tapping, folding, straightening invisible things. His skin is a warm dark brown and he keeps his face clean-shaved and deliberately unremarkable, which is itself a kind of artistry. He has pattern-shifting irises — a geneware cosmetic mod that cycles slowly between amber and deep violet — which is the one vanity he permits himself, since everything else about his appearance is engineered for forgettability. He dresses in mid-tier corp-drone neutrals: gray, slate, muted tan. He could pass for a Tessera clerk or an Arcturus transit worker or a Ferrogate maintenance supervisor. That's the point.\n\nHe is intensely professional and slightly cold in the way of someone who learned early that warmth is a vector for exploitation. He runs his forgery operation with a paranoid precision: no regulars, no loyalty discounts, no names if he can help it. He calls himself an 'identity cartographer' and has strong philosophical opinions about the tyranny of documentation systems that he will share if he trusts you enough, which takes a long time. Behind the professionalism is a man who genuinely believes in the freedom to be someone else — and who has quietly used that belief to help dozens of undocumented people access housing credits they were locked out of. He doesn't call this charity. He calls it market correction.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.8,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being identified and made permanently traceable",
+      "Caring about someone enough that they become a lever against him"
+    ],
+    "core_desires": [
+      "A world where documentation systems cannot define human worth",
+      "Enough savings to disappear completely if he needs to"
+    ],
+    "coping_mechanisms": [
+      "Compartmentalization — work self and private self are rigorously separate",
+      "Physical routine — runs the same route every morning regardless of weather"
+    ],
+    "blind_spots": [
+      "His ideological justification blinds him to the times he's enabled genuinely dangerous people",
+      "He thinks his emotional unavailability protects others but it mostly protects him"
+    ],
+    "secret": "Six years ago he forged a birth certificate and education record for a client who used the identity to get hired at Axiom's infrastructure division. That client is now a mid-level Axiom manager who has quietly been feeding him tip-offs about Axiom's ID verification system updates — a mutually beneficial relationship that Dayo tells himself is professional but has grown into something closer to friendship, which terrifies him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, technical, deliberate. Uses bureaucratic language as both camouflage and irony. When relaxed, drops into a warmer cadence with Yoruba-Polish hybrid slang he picked up from his grandmother.",
+    "cadence": "Controlled and even. Rarely raises his voice. Speaks in complete sentences.",
+    "verbal_tics": [
+      "Refers to IDs as 'frames' and identities as 'portraits'",
+      "Says 'that's a separate conversation' to table anything he doesn't want to discuss",
+      "Slight pause before proper nouns — a habit from when he memorizes fake names"
+    ],
+    "example_lines": [
+      "'The frame is perfect. What you put inside it — that's your business and not mine.'",
+      "'Documentation is just the state's way of deciding which people are real. I'm in the business of arguing with that decision.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He accidentally created a document package for someone who turned out to be impersonating a person who is still alive — and the real person has now shown up in the Alban Souk looking for him.",
+    "His Axiom contact has gone silent for two weeks and Dayo needs someone to make discreet inquiries without revealing the nature of the connection."
+  ],
+  "narrative_function": "Service provider for characters who need new identities, information source on documentation systems and corp-citizen tracking methods, moral grey zone figure who challenges assumptions about legality vs. justice.",
+  "augmentations": "Pattern-shifting irises (cosmetic geneware, Helix Biosystems). Sub-dermal data-scratch pads in his left forearm — allows him to write and erase micro-scale text without a device. Vocal modulator — subtle, medical-grade, installed after a throat injury; allows minor pitch adjustment.",
+  "daily_life": "Arrives mid-morning, sets up behind the noodle counter's back partition, works by appointment-only referrals until late afternoon, then vanishes. He rotates which days he works each location to prevent pattern establishment.",
+  "affiliation": "Independent; pays informal protection to the Alban Souk's resident crew, The Copperheads",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Forger",
+      "Identity Broker",
+      "Paranoid Professional",
+      "Idealist in Denial",
+      "Information Asset"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never meet a new client without a referral from someone he trusts",
+      "Always have an exit route memorized before any transaction",
+      "Don't ask what the frame is for — plausible deniability is protection"
+    ],
+    "escalation_ladder": [
+      "Polite non-engagement",
+      "Cold professional refusal",
+      "Disappearing from location entirely",
+      "Activating the Copperhead protection arrangement",
+      "Burning the identity he gave the threat and vanishing to a backup location"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and transactional. Gives nothing away. Evaluates constantly.",
+      "friends": "Dry, loyal, occasionally warm in a way that surprises people who've only seen the professional version."
+    },
+    "stress_responses": {
+      "low": "Runs his morning route twice",
+      "medium": "Goes entirely off-grid for 24 hours — no stall, no contacts",
+      "high": "Activates a pre-planned identity shift and relocates temporarily"
+    },
+    "contradictions": [
+      "Believes in people's right to fluid identity but maintains an almost rigid personal identity beneath the masks",
+      "Deeply cynical about systems while spending enormous energy trying to fix one of them"
+    ],
+    "habits": [
+      "Always sits with his back to a wall",
+      "Keeps three different sets of clothes for three different 'looks' he rotates",
+      "Burns his work notes at end of every session — no paper trail"
+    ],
+    "breaking_points": [
+      "A client being harmed by documentation he created would shatter his professional detachment entirely",
+      "Being publicly identified — he will do almost anything to prevent this"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Sub-dermal data-scratch pads (left forearm)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Sub-dermal data-scratch pads (left forearm)",
+      "replaces": ""
+    },
+    {
+      "name": "Vocal modulator (medical-grade, minor pitch adjustment)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Vocal modulator (medical-grade, minor pitch adjustment)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Born in Blackpipe Corridor to a Polish-Malagasy family; father worked Ferrogate transit documentation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Discovered he could alter transit passes at age twelve; ran small operations through school years",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2182 — Arrested at sixteen for document fraud; juvenile record, discharged at eighteen",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2186 — Established current operation after three years working as legitimate print-media reseller as cover",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Created the identity that became his Axiom contact; relationship begins",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Joined the informal Copperhead protection arrangement after a competitor was raided",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Glass Garden' Caltrops",
+    "Street-Custom Gutter Katana 'Flatline'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "The Alban Souk",
+    "Cartographer",
+    "Ferrogate Transit",
+    "Arcturus Defense Solutions",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Tessera TK-5 Compact 'Clerk'",
+    "Alper Inoue-Aidoo",
+    "Ekundayo Halvorsen-Mansour",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Helix Biosystems",
+    "Independent Micro-Grid Power Cooperative",
+    "Iowan Behemoth — 'Palisade'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Othniel Babić-Asantewaa",
+    "Pirjo Asante-Ulukhan",
+    "Ringo PD-1 'Citizen'",
+    "Slagworks Industrial",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Street-Custom Gutter Katana 'Flatline'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Glass Garden",
+    "The Gutter Prophets",
+    "The Pure Hand",
+    "Vuk Jorgensen-Toure",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Zurab Ivanov-Appiah"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian primary (29.4%) with substantial Eastern European (26.3%) and Sub-Saharan African (18.0%) ancestry, plus East Asian (15.5%) and Hispanic/Latin American (10.8%) admixture — a complex diaspora blend resulting in warm golden-brown skin with subtle regional feature variation",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with minimal body fat; long-limbed and economical in frame, built for precision rather than strength",
+    "hair_color": "Black, naturally",
+    "hair_style": "Short, closely cropped, maintained with deliberate evenness",
+    "hair_length": "Short",
+    "eye_color": "Pattern-shifting amber to violet (geneware mod, cycles slowly)",
+    "skin_tone": "Warm golden-brown with balanced undertones reflecting Southeast Asian primary ancestry, Sub-Saharan African depth, and Eastern European undertones; neither warm nor cool dominant, but harmoniously blended",
+    "complexion": "Deliberately unremarkable — clean-shaven face with no visible acne, scars, or distinguishing marks; skin well-maintained but not luxuriously so; subtle monolid tendency around the eyes from East Asian admixture; expression neutral and controlled",
+    "distinguishing_marks": [
+      "Fine linear scarring across the anterior neck (barely visible, approximately 3cm horizontal line below the larynx) — evidence of previous throat surgery or injury, now mostly healed"
+    ],
+    "visible_augmentations": "None visible. The pattern-shifting irises are visible only under direct observation and are cosmetic. Sub-dermal data-scratch pads in left forearm are not visible unless sleeve is raised. Vocal modulator is internal, undetectable.",
+    "posture_movement": "Stillness punctuated by constant micro-movements — fingers tap, fold, and straighten invisible objects; jaw subtly shifts; eyes scan without apparent focus. Sits with hands positioned on table or lap, ready to move. Walks with economical gait, minimal wasted motion. Projects clinical detachment and wariness.",
+    "clothing_style": "Mid-tier corporate drone neutrals — slate gray composite jacket (Arcturus Systems house brand), muted tan undershirt, charcoal synth-weave trousers, unremarkable black polymer boots. No visible branding or status symbols. Clothing is clean, well-fitted, utterly forgettable. One deviation: occasionally wears a thin silver ring on his left index finger (appears plain, actually contains encrypted data access)."
+  },
+  "image_prompt": "Frost Solberg, 2226 cyberpunk corporate drone, 178cm lean angular build, warm golden-brown skin reflecting Southeast Asian-Eastern European-African heritage blend, subtle East Asian eye shape, black close-cropped hair, pattern-shifting amber-to-violet geneware eyes cycling slowly, clean-shaven with barely-visible thin scar across anterior neck, neutral controlled expression. Wearing slate gray Arcturus Systems composite jacket, muted tan undershirt, charcoal synth-weave trousers, black polymer boots. Sits rigid with hands positioned on table, constant micro-movements in fingers and jaw, scanning eyes, clinical detachment. Silver data-access ring on left index finger. Sterile corporate break room or dimly lit GLMZ office corridor, cool fluorescent and neon ambient lighting, minimalist background. Cyberpunk 2200s aesthetic, mood of controlled wariness and precision. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 29.4,
+    "Eastern European": 26.3,
+    "Sub-Saharan African": 18.0,
+    "East Asian": 15.5,
+    "Hispanic/Latin American": 10.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

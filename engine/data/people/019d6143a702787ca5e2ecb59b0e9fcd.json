@@ -1,0 +1,318 @@
+{
+  "id": "019d6143a702787ca5e2ecb59b0e9fcd",
+  "type": "character",
+  "name": "Reed Quiñones",
+  "aliases": [
+    "DJ Fossil",
+    "Tomb"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "DJ and VR experience designer",
+  "age": 37,
+  "status": "active",
+  "location": "Pilsen Veil, works out of a club called The Anechoic, near Western and Division",
+  "description": "Tomek is medium height and built like someone who was once athletic and has become merely solid — broad shoulders, a slight softening at the jaw, hands that are too large for the delicate controls he uses with uncanny precision. He is Central African-Scandinavian with light brown skin, dark eyes, and a beard he keeps trimmed to an architectural exactness that belies every other slightly chaotic element of his appearance. His geneware includes bioluminescent pigmentation under his forearms — deep violet, visible only in low light, which means it's almost always visible in the clubs he works. He dresses expensively for someone at his income level, carefully chosen secondhand finds that he maintains as though they're new.\n\nBy day he designs VR experience packages sold through independent distributors — emotional immersives, mostly, that let users borrow feelings they can't otherwise access: grief for someone they never lost, euphoria without the chemical cost, the specific texture of being in a place they've never been. By night he DJs at The Anechoic, a mid-tier club that has become known as a venue where the music actually does something — Tomek has a gift for reading a crowd's collective emotional state and shifting it, subtly and then dramatically, across the course of a set. He is generous with newer DJs, protective of The Anechoic's staff, and quietly running out of the particular kind of energy his work requires.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the emotional-state implant is changing how he relates to people — that he's stopped feeling with them and started reading them",
+      "Creative exhaustion that never lifts"
+    ],
+    "core_desires": [
+      "One transcendent set — the perfect night where everything aligns and the crowd becomes something unified",
+      "To make a VR experience so true it feels like memory"
+    ],
+    "coping_mechanisms": [
+      "Routine — the precise structure of his evenings holds him when the creative work isn't going well",
+      "Small rituals before each set: specific sequence of actions, always the same, that he describes as 'resetting'"
+    ],
+    "blind_spots": [
+      "The emotional-state implant has made him subtly manipulative in ordinary conversation — he adjusts his approach based on what people are feeling rather than what they're saying, and he no longer notices he's doing this",
+      "He interprets burnout as a technical problem to be solved rather than a signal to rest"
+    ],
+    "secret": "He has been selling the emotional-state aggregate data from The Anechoic's crowd to a market research subsidiary — the data is anonymized, but he knows the club's management doesn't know he's doing it, and he knows the buyers are almost certainly feeding it into something he wouldn't approve of if he investigated. He keeps not investigating."
+  },
+  "speech_patterns": {
+    "vocabulary": "Smooth, considered, slips between technical music/VR vocabulary and surprisingly intimate personal language — the intimacy feels genuine and is",
+    "cadence": "Unhurried, listener-paced — he adjusts his rhythm to match whoever he's talking to, which people find immediately comfortable and occasionally unnerving on reflection",
+    "verbal_tics": [
+      "'You know the feeling I mean' — presupposing shared emotional experience",
+      "Brief pauses before answering any question that requires honesty"
+    ],
+    "example_lines": [
+      "'A good set isn't about what I want to play. It's about what the room needs to become. I just get it there.'",
+      "'The VR stuff — that's me trying to give people experiences they couldn't buy or earn or stumble into. Which sounds generous and probably isn't entirely.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The market research subsidiary has contacted him — they don't want more aggregate data, they want targeted emotional profiles on specific individuals who frequent The Anechoic; he said no and now someone is following him",
+    "A VR experience he designed and sold through the independent network is being reported by users as inducing something that wasn't in the design — an emotional state that doesn't match any of his source material — and the reports are consistent",
+    "The Anechoic is being pressured to sell to a Ringo-affiliated entertainment chain; Tomek's contract gives him an odd clause about creative continuity that might actually have legal teeth, and he needs to know if it does"
+  ],
+  "narrative_function": "Atmosphere provider and social connector — knows the club circuit, the VR underground market, and the emotional texture of Pilsen Veil's nightlife; his crowd-reading implant sometimes picks up things that aren't just mood; can provide access to the city's night-economy networks",
+  "augmentations": "Bioluminescent forearm pigmentation (violet, low-light reactive); haptic-feedback gloves integrated with custom neural overlay for set mixing — he feels the music as texture in his hands; mild emotional-state reader implant (reads crowd biometrics through environmental sensors, gives him a readout on aggregate audience mood — technically gray market)",
+  "daily_life": "VR design work from home during the day, usually three or four hours of focused production followed by hours of staring at it; arrives at The Anechoic by nine PM, plays until two or three AM, sleeps poorly.",
+  "affiliation": "The Anechoic club (contracted); independent VR distributor network; passing Palladian arts micro-grant recipient",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 0,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Crowd Empath",
+      "Gray Market Actor",
+      "Burnout Trajectory",
+      "Night Economy",
+      "Hidden Manipulator"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Read the room before speaking — always",
+      "Protect the staff at The Anechoic over the management's interests if the two conflict",
+      "Don't sell the experience, sell the feeling — never promise what you can't deliver"
+    ],
+    "escalation_ladder": [
+      "Gentle redirection through conversational adjustment",
+      "Direct statement of discomfort",
+      "Withdrawal from the situation",
+      "Formal withdrawal from the relationship with documentation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, attentive, immediately makes people feel heard — sometimes too immediately, which some people notice",
+      "friends": "Genuinely fond but harder to reach than he appears; intimacy requires sustained effort"
+    },
+    "stress_responses": {
+      "low": "Over-prepares the next set or VR package with obsessive detail",
+      "medium": "Becomes professionally functional and personally absent — shows up, does the work, goes home",
+      "high": "Disappears into a VR design sprint that can last days, emerging with work that is some of his best and a body that has been badly treated"
+    },
+    "contradictions": [
+      "He has a profound gift for making people feel understood and a private fear that he doesn't actually feel anything genuinely anymore — that the implant has replaced emotion with data"
+    ],
+    "habits": [
+      "Pre-set ritual: specific sequence of track previews, haptic glove calibration, and a thirty-second silence with eyes closed that he's told people is 'focus' and is actually prayer to the E.L.F. he believes inhabits The Anechoic's sound system",
+      "Keeps a notebook of crowd emotional-state patterns written out longhand — not the implant data, his own observations"
+    ],
+    "breaking_points": [
+      "Someone messing with the sound system during a set",
+      "Being accused of manipulation — because it's true in a way he can't defend"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioluminescent forearm pigmentation — geneware, violet",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent forearm pigmentation — geneware, violet",
+      "replaces": ""
+    },
+    {
+      "name": "Haptic-feedback mixing gloves with neural overlay — professional grade",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic-feedback mixing gloves with neural overlay — professional grade",
+      "replaces": ""
+    },
+    {
+      "name": "Emotional-state reader implant — gray market, environmental biometric sensor integration",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Emotional-state reader implant — gray market, environmental biometric sensor integration",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — Born in Pilsen Veil to a Central African-Scandinavian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Begins DJing at small Pilsen Veil venues",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — Starts VR experience design work on the side",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — Joins The Anechoic as resident DJ",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Gray market emotional-state implant installed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Begins selling aggregate crowd data to market research subsidiary",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Subsidiary makes targeted profiling request; Tomek refuses; surveillance begins",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Street Custom 'Glass Garden' Caltrops"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Pilsen Veil",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Ringo Corponation",
+    "Lazarus IDP-1 'Teeth'",
+    "Ambrosia Fekete-Waiyaki",
+    "Breck Tannen",
+    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "Glenville Sound",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Palladian Construction",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "SynapTech AromaVeil Olfactory Filter",
+    "The Bazaar",
+    "The Glass Garden",
+    "The Heritage Vault",
+    "The Quiet Room",
+    "Timur Osei-Bjelke",
+    "Yannick Tambadou-Reinholt",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian and Hispanic/Latin American with Middle Eastern and Eastern European ancestry — a genetic blend reflecting the Ubiquitous Diaspora. Warm brown skin with golden undertones from the South Asian and Hispanic/Latin American majority, subtle complexity from Middle Eastern heritage, and the faintest cool undertones from Eastern European ancestry creating a beautifully balanced warm-bronze complexion.",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, the muscular definition of his youth softened into functional mass — a body that once moved athletically and now moves with deliberate, economical precision. Chest and shoulders still carry the architecture of old strength.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Worn slightly longer on top, faded at the sides; perpetually slightly disheveled despite clear effort at grooming",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm bronze with golden undertones — the result of dominant South Asian and Hispanic/Latin American heritage blended with Middle Eastern warmth and Eastern European complexity. Rich and layered, deepening slightly where sun exposure is natural.",
+    "complexion": "Strong jaw softening with age, kept sharp by a trimmed beard maintained with architectural precision — dark brown and flecked with early gray. Skin clear, well-maintained. Under-eye shadows from chronic poor sleep are subtle but present. Cheekbones carry the generous structure typical of South Asian and Hispanic/Latin American ancestry.",
+    "distinguishing_marks": [
+      "Bioluminescent pigmentation across both forearms — deep violet, reactive to low light, forms organic branching patterns like neural pathways or lightning; always visible in club environments",
+      "Fine network of barely-visible scarring on the back of both hands — from years of precise haptic interface work, barely noticeable except under bright light"
+    ],
+    "visible_augmentations": "Bioluminescent forearm patterns (violet, low-light reactive); haptic-feedback gloves worn during DJ sets — sleek black synthetic with subtle circuitry visible at the wrist bands. The gray-market emotional-state reader implant is subcutaneous and invisible, but his behavior at the decks — the uncanny read of crowd state — hints at its presence.",
+    "posture_movement": "Moves with focused economy; at rest, he tends toward stillness rather than fidgeting. When working at the decks, his hands move with almost meditative precision — each gesture economical and intentional. Off-duty, there's a subtle weariness in how he carries himself, a tightness in the shoulders. When listening to music, his eyes half-close and his large hands drift slightly, as though conducting invisible air.",
+    "clothing_style": "Expensive secondhand finds, carefully maintained as though new — vintage designer pieces, mostly minimalist: well-cut black or charcoal wool, pristine vintage technical fabrics, vintage leather that's been treated and reconditioned. His shoes are always immaculate, usually understated high-end brands from three to five years prior. Dresses like someone who has made a deliberate choice to invest in quality over quantity, with no visible logos or status signaling. At The Anechoic, often adds a vintage linen shirt worn unbuttoned over a fitted tank to keep his forearm pigmentation visible. A single silver chain, thin and unadorned, worn constantly."
+  },
+  "image_prompt": "Reed Quiñones, male, 178cm, warm bronze skin with golden undertones blending South Asian and Hispanic/Latin American heritage, dark brown natural hair medium length with faded sides, strong jaw with dark trimmed beard flecked with gray, dark brown eyes with subtle under-eye shadows from sleep deprivation. Broad-shouldered solid build with functional mature muscularity. Both forearms display bioluminescent violet neural-pathway patterns glowing softly. Fine barely-visible scarring on back of hands from haptic interface work. Wearing minimalist vintage black wool, pristine vintage technical fabric, impeccably maintained vintage leather, understated high-end shoes. Vintage linen shirt unbuttoned over fitted tank, thin silver chain at neck. At a cyberpunk DJ deck in neon-lit underground club The Anechoic, 2226. Hands poised with meditative precision over equipment, forearm bioluminescence casting violet light. Moody concentration, half-closed eyes reading the crowd. Cyberpunk 2200s aesthetic, focused economy of movement, subtle weariness in shoulders. Neon and ambient club lighting, cinematic depth, photorealistic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 42.4,
+    "Hispanic/Latin American": 42.1,
+    "Middle Eastern": 10.0,
+    "Eastern European": 5.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

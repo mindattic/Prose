@@ -1,0 +1,348 @@
+{
+  "id": "019d6143a5fd7d61a16f0c78246a9ee7",
+  "type": "character",
+  "name": "Vale Asomaning",
+  "aliases": [
+    "Nyx",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Field trauma surgeon and combat support — combat medic",
+  "age": 33,
+  "status": "active",
+  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Halsted and Chicago Ave",
+  "description": "Ebele Smirnov-Ankrah are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a combat medic out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEbele Smirnov-Ankrah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.96,
+      "ideal": 0.44,
+      "id": 0.13,
+      "shadow": 0.31,
+      "mask": 0.99,
+      "ghost": 0.32
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "The quiet — silence means something is about to go very wrong",
+      "Betrayal by someone they trust — the only currency that matters"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Cannot accept help without interpreting it as leverage",
+      "Thinks speed can substitute for planning because it's worked so far"
+    ],
+    "secret": "Ebele Smirnov-Ankrah has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"Hold still. This is going to hurt and I don't care.\"",
+      "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
+      "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Ebele Smirnov-Ankrah's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A former associate resurfaces with evidence that could destroy Ebele Smirnov-Ankrah's reputation — and a price for silence",
+    "A Tier 4 executive offers Ebele Smirnov-Ankrah a permanent position — the pay is obscene and the strings are invisible until they tighten"
+  ],
+  "narrative_function": "Ebele Smirnov-Ankrah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Eye replacement — one organic, one cybernetic with recording capability and zoom",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 9
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.99,
+      "caution": 0.46,
+      "loyalty": 0.51,
+      "greed": 0.7,
+      "empathy": 0.52
+    },
+    "drives": [
+      "power",
+      "revenge",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 3,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "expert marksman",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "poor impulse control in specific triggers",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "combat medic",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to choose between a crew member and the mission — and choosing wrong"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    },
+    {
+      "name": "Eye replacement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  ],
+  "related_entities": [
+    "GLMZ",
+    "The Unfinished Theorem",
+    "Chicago",
+    "Arcturus BH-2 'Marrow'",
+    "Breck Tannen",
+    "Carrion Defense Works",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Crucible RE-2 'Receptionist'",
+    "Crucible TR-7 'Triage'",
+    "Djeneba Park-Traore",
+    "Helix Biosystems Vagal Resonance Dampener",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Oumarou Svec-Ranginui",
+    "Prophet",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TERMINUS",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Lattice",
+    "The Underlayer Collective",
+    "Tshiamo Vukić-Arellano",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multiethnic blend: Sub-Saharan African (41.7%) dominates, with significant East Asian (20.4%), Eastern European (12.9%), Northern European (12.1%), Indigenous American (7.4%), and Hispanic/Latin American (5.5%) ancestry. Complex genetic tapestry reflected in facial structure and skin undertones.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Athletic and lean with defined musculature — dancer's flexibility combined with fighter's density. Low body fat, efficient movement economy. Built for sustained exertion and precision, not bulk.",
+    "hair_color": "Natural dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, practical braid. No styling for aesthetics — pure function. Occasionally loose for night operations.",
+    "hair_length": "Medium (shoulder-length when unbraided)",
+    "eye_color": "Left eye: warm brown, organic. Right eye: cybernetic with iridescent chrome iris, capable of zoom and recording.",
+    "skin_tone": "Deep warm brown with complex undertones — melanin-rich base from Sub-Saharan ancestry with subtle warm and neutral undertones from East Asian and European admixture. Rich, dimensional complexion.",
+    "complexion": "Face mapped with surgical scars: one diagonal across left cheekbone (3cm, white and thin), another above right brow (2cm, slightly raised). Jaw defined and sharp with subtle high cheekbones reflecting mixed ancestry. No facial hair. Skin shows minor pitting around the right eye socket where the prosthetic interfaces — barely noticeable without close inspection. Dark circles permanent from nocturnal schedule. Expression default is neutral, observation-focused.",
+    "distinguishing_marks": [
+      "Surgical scar across left cheekbone, approximately 3cm, pale and thin, angled downward toward jaw",
+      "Scar above right eyebrow, 2cm, slightly hypertrophic white tissue",
+      "Bioware interface scarring around right eye socket in pale arcs, visible only in close proximity or bright light",
+      "Series of small puncture scars along left forearm (subcutaneous implant sites), arranged in a vertical line"
+    ],
+    "visible_augmentations": "Bioware adrenaline regulator visible as a subtle bulge beneath the left side of the neck, marked by a thin chrome interface line running from collarbone to jawline. Right eye is unmistakably cybernetic — chrome housing with slight luminescence during low-light operations. No attempt at concealment.",
+    "posture_movement": "Moves with economical precision — dancer's flow combined with predator's readiness. Weight distributed for instant directional change. Eyes constantly cataloging environment and threat vectors. Stillness when stationary is absolute, no fidgeting. In conversation, maintains visual contact with the cybernetic eye slightly longer than natural (unconscious habit). Walks with slightly favored left side — old injury memory in the body.",
+    "clothing_style": "Tier 4 utilitarian — high-function field medic aesthetic. Black synthetic reinforced jacket (thermal-regulated, pressure-sealed for contamination), kevlar-weave underlayer visible at wrists and collar. Cargo pants with reinforced thigh and calf pockets for medical supplies and tools. Modular belt system with quick-release medical kit attachments. Steel-toed boots rated for industrial hazard zones. Minimal jewelry except for a scratched medical alert chip embedded in left wrist. Everything is maintained, practical, and selected for rapid field deployment. No branding, no status symbols — survival aesthetic."
+  },
+  "image_prompt": "Vale Asomaning, 2226 GLMZ cyberpunk medic, 178cm athletic frame in black synthetic tactical jacket over kevlar underlayer, cargo combat pants with medical kit attachments, steel-toed boots. Deep warm brown skin with complex multiethnic features—Sub-Saharan, East Asian, and Eastern European heritage—high cheekbones, sharp jaw. Shoulder-length dark brown hair with silver at temples pulled into tight practical braid. Left eye warm brown organic, right eye unmistakable chrome cybernetic with faint iridescent luminescence. Surgical scar diagonal across left cheekbone, pale 3cm line, scar above right brow. Subtle bioware interface bulge at left neck with chrome line. Dark circles from nocturnal work. Neutral observation-focused expression. Moves with economical predator-dancer precision in industrial hazard zone setting, low cyan and orange neon lighting reflecting off wet concrete, rain, cyberpunk dystopian backdrop, ready and alert stance. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 41.7,
+    "East Asian": 20.4,
+    "Eastern European": 12.9,
+    "Northern European": 12.1,
+    "Indigenous American": 7.4,
+    "Hispanic/Latin American": 5.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

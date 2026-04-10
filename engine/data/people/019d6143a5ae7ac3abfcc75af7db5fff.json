@@ -1,0 +1,321 @@
+{
+  "id": "019d6143a5ae7ac3abfcc75af7db5fff",
+  "type": "character",
+  "name": "Luca Nazari",
+  "aliases": [
+    "Mama Ngozi",
+    "The Professor"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired secondary school teacher and current community education volunteer; grandmother raising two grandchildren",
+  "age": 67,
+  "status": "active",
+  "location": "Washburn Commons — apartment block C, and the Commons community center basement classroom, near Halsted and Chicago Ave",
+  "description": "Amara Ngozi-Szilveszter is the kind of woman who makes a room feel organized just by walking into it. She's tall and angular, her natural hair kept in a close-cropped fade that's gone entirely silver, and she has the habit of standing with her arms folded and her chin slightly elevated that every one of her former students would recognize from forty meters away. Her dark skin is unaugmented save for a small bioluminescent spiral — blue-white — behind her right ear, a retirement gift she gave herself after three decades of institutional dress codes. She wears sensible layers and always has two pens in her breast pocket, a habit from the years before all writing went digital.\n\nAmara taught mathematics and systems-thinking at Washburn Commons Secondary for thirty-one years, surviving four different corponation educational management contracts and two restructuring purges. She retired with a modest pension and immediate custody of her two grandchildren — Prax, eleven, and Liesel, eight — after her daughter's commitment to a Helix Biosystems experimental labor program took her away for what was supposed to be eighteen months and has now been three years. Amara does not discuss this with people she doesn't trust. She runs a free after-school tutoring program out of the community center basement three afternoons a week, partly because she needs to be useful and partly because she's keeping an eye on every child in a two-block radius as a matter of survival strategy.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That her daughter is never coming back and she'll have to explain it to the children",
+      "That the educational systems she spent her life working within were always designed to produce compliance rather than capacity"
+    ],
+    "core_desires": [
+      "To give Prax and Liesel a genuine skill set for navigating the city, not just surviving it",
+      "To see one of her tutoring students do something the system didn't plan for them"
+    ],
+    "coping_mechanisms": [
+      "Structure and routine — meals at the same time, lessons prepared in advance, every problem approached as a curriculum design challenge",
+      "Fierce practical humor"
+    ],
+    "blind_spots": [
+      "Underestimates her own exhaustion",
+      "Can be condescending to adults she decides aren't thinking rigorously enough"
+    ],
+    "secret": "She's been in contact with a labor rights advocate who believes Helix Biosystems' experimental programs have a much lower return rate than officially reported. She's started quietly documenting everything she can about her daughter's contract and circumstances. She hasn't told the children she's afraid their mother is dead."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and structured — she still teaches when she talks, scaffolding ideas for maximum retention whether she means to or not; slips into warmth in unguarded moments",
+    "cadence": "Even and well-paced with a teacher's projection; can command a room without raising her voice",
+    "verbal_tics": [
+      "'Let's think about that more carefully'",
+      "'What's the actual claim being made here'",
+      "Pausing mid-sentence to let someone finish their own thought"
+    ],
+    "example_lines": [
+      "'You're telling me what you felt. I believe you. Now tell me what you observed — those are different things and both matter.'",
+      "'Three years is not eighteen months. I can do that subtraction and so can you.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Amara's labor-rights contact has gone silent after getting close to something in the Helix Biosystems documentation — she needs someone trustworthy to make a delivery to a secondary contact she's never met",
+    "One of her tutoring students has demonstrated a mathematical aptitude that a Sterling-Nakamura talent scout has noticed, and the scout's contract offer is designed to benefit Sterling-Nakamura far more than the child"
+  ],
+  "narrative_function": "Quest giver and community connector; knows every child in a wide radius and therefore knows what's happening at street level that adults aren't saying out loud. Her entanglement with Helix Biosystems through her daughter's contract gives her a motivated stake in stories involving that corponation.",
+  "augmentations": "Bioluminescent spiral dermal implant (behind right ear, blue-white; cosmetic only). Standard retinal display for reading — the cheap consumer model, not corporate-grade. No other augmentations.",
+  "daily_life": "School-run for Prax and Liesel in the morning, then community center administration or supply scrounging, then afternoon tutoring sessions; evenings are homework, dinner, and what she calls 'the news hour' where she reads actual text journalism to the kids and makes them argue with it.",
+  "affiliation": "Washburn Commons Community Council; former Meridian Teachers' Collective (retired); Helix Biosystems dependency (through daughter's contract)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "educator",
+      "community anchor",
+      "grandmother",
+      "corponation critic",
+      "institutional survivor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Children's safety is non-negotiable",
+      "Understand the system before working around it — or through it",
+      "Don't take help from anyone until you understand what they want"
+    ],
+    "escalation_ladder": [
+      "Patient questioning and reframing",
+      "Direct statement of the problem and what she needs",
+      "Public documentation and community council escalation",
+      "Deploying every contact she has built in thirty-one years of teaching"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous and evaluating — she has a teacher's quick read of people and is testing competence and character simultaneously",
+      "friends": "Warm, irreverent, capable of real laughter; shows up with food"
+    },
+    "stress_responses": {
+      "low": "More organized than usual",
+      "medium": "Focuses intensely on the controllable — the children's routine, the classroom, the lesson",
+      "high": "Becomes very still and very direct; stops performing patience"
+    },
+    "contradictions": [
+      "Teaches critical thinking as liberation while structuring her grandchildren's lives with strict routine",
+      "Deeply skeptical of corponations but hasn't broken her daughter's Helix contract because she still hopes it means something"
+    ],
+    "habits": [
+      "Pens in breast pocket even though she rarely uses physical writing",
+      "Makes tea for anyone who sits down in her classroom regardless of why they came",
+      "Reads the children a different city history every Sunday"
+    ],
+    "breaking_points": [
+      "Any threat to the children, explicit or implied",
+      "Someone trying to exploit one of her tutoring students"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "fair",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Quick Study": 0.9,
+    "Seeker": 0.9,
+    "Dreamer": 0.9,
+    "Teacher": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Englheim district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began teaching mathematics at Washburn Commons Secondary",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Survived first Tessera educational management contract restructuring",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Daughter born (now in Helix program)",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retirement from Washburn Commons Secondary",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Assumed custody of grandchildren Prax and Liesel after daughter entered Helix program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began documenting Helix labor program return rates",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Washburn Commons",
+    "The Shelf Commons",
+    "Periscope",
+    "Big Rig",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Silver",
+    "Nesting Doll",
+    "Chicago",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-7 'Nursery'",
+    "Djeneba Park-Traore",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
+    "GLMZ",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Idris Forsberg-Quaye",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "MERIDIAN",
+    "Pikasso Wemba-Þórðarson",
+    "Praxedes Owusu-Bektašević",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sorin Ekwensi-Balasanyan",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "Veslemøy Achebe-Tursynov",
+    "Yannick Tofauti-Szarvásy",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multiethnic blend: Sub-Saharan African (35.5%), Middle Eastern (33.8%), South Asian (26.8%), Southeast Asian (3.9%). Features reflect this complex admixture—warm-toned deep brown skin with subtle golden undertones, defined cheekbones with moderate projection, eye shape showing slight epicanthic influence from South Asian and Southeast Asian ancestry, facial structure balancing the broader features of African heritage with the more angular planes common to Middle Eastern genetics",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Tall and angular, lean-muscled from decades of standing and moving through classrooms; posture still carries the straightness of institutional discipline, though age has introduced a slight forward inclination at the shoulders",
+    "hair_color": "Silver-white, naturally grayed",
+    "hair_style": "Close-cropped fade, meticulously maintained, revealing the clean geometry of her skull",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber undertones from standard consumer retinal display overlay (visible as a thin luminescent ring around the iris in low light)",
+    "skin_tone": "Warm deep brown with golden undertones, reflecting the blended ancestry of Sub-Saharan African, Middle Eastern, and South Asian heritage; shows the weathering of 67 years and significant UV exposure from pre-GLMZ childhood",
+    "complexion": "Face bears the map of her life: crow's feet from squinting at chalkboards and reading small text, a thin vertical scar along her left jawline (accident with a door frame, 2187), hands bearing the ink stains of someone who still writes by hand despite digital availability. Skin is unaugmented and well-maintained; minimal makeup. Sharp, well-defined cheekbones characteristic of her multiethnic heritage that prominence further with age. Slight nasolabial folds and slight drooping of lower face from age. The bridge of her nose shows subtle width typical of her ancestry mix",
+    "distinguishing_marks": [
+      "Small vertical scar along left jawline, approximately 3cm, pale and well-healed",
+      "Bioluminescent spiral dermal implant behind right ear, blue-white, 4cm diameter, glows softly in darkness — visible when hair is pulled back or in profile",
+      "Two small burn marks on her right inner forearm from a classroom incident, now faint but still visible on close inspection",
+      "Callused fingertips and palm creases darker than surrounding skin from decades of writing and chalk dust"
+    ],
+    "visible_augmentations": "Bioluminescent spiral behind right ear (cosmetic, retirement gift to herself). Faint luminescent ring around pupils indicating standard consumer-grade retinal display. No other visible chrome or subdermal plating; deliberately maintains non-augmented appearance as marker of her tier and values",
+    "posture_movement": "Stands with arms often folded across chest or hands clasped at solar plexus—a posture from decades of classroom management. Moves with deliberate efficiency, no wasted motion; walks with spine straight despite age-related stiffening. Has a habit of tilting her head slightly when listening, chin elevated, eyes tracking movement. When sitting, she occupies minimal space, feet flat on floor, back against chair",
+    "clothing_style": "Tier 4 practical utilitarian: layered cotton and synthetic-blend clothing in muted earth tones (charcoal, sage, cream, rust). Always wears a sleeveless overshirt or vest as outer layer—functional pockets, durable weave. Sensible non-slip shoes suitable for classroom floors. Two pens always in breast pocket (old habit, pre-digital era). A thin silver bracelet on her left wrist (gift from her father, 2150s). No jewelry beyond this; no corpo logos or status markers. Clothing shows wear and careful repair—patches on elbows, reinforced seams—not from poverty but from intentional durability ethic"
+  },
+  "image_prompt": "Luca Nazari, 67-year-old woman, cyberpunk 2226, multiethnic heritage—Sub-Saharan African, Middle Eastern, and South Asian ancestry visible in warm deep brown skin with golden undertones, sharp cheekbones, dark brown eyes with faint retinal display luminescence. Silver-white close-cropped fade revealing clean skull geometry. Tall, lean, angular build at 178cm. Face marked by life: crow's feet, thin pale scar along left jawline, ink-stained hands. Bioluminescent blue-white spiral dermal implant glowing softly behind right ear. Wearing muted earth-tone layered utilitarian clothing—charcoal sleeveless overshirt over cream base, sage fabric, reinforced seams and elbow patches. Silver bracelet on left wrist. Posture upright and deliberate despite slight forward shoulder inclination. Standing in soft low-angle lighting that catches the subtle glow of retinal implant and spiral implant, Great Lakes Metropolitan Zone interior, minimalist aesthetic, composed and watchful expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 35.5,
+    "Middle Eastern": 33.8,
+    "South Asian": 26.8,
+    "Southeast Asian": 3.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "019d6143a6507cf99976c9e41e8432cc",
+  "type": "character",
+  "name": "Nisha Chowdhury-Nkrumah",
+  "aliases": [
+    "Lúcio",
+    "the kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Delivery driver, independent courier running the Narrows and Old Harbor routes",
+  "age": 22,
+  "status": "active",
+  "location": "Old Harbor, operates out of a shared garage space near the Grindstone Shore docks, near Wacker and State",
+  "description": "Lúcio is whip-thin and perpetually damp from the lake spray that hits the Old Harbor route, with light brown skin that tans unevenly and dark curly hair he keeps tucked under a helmet or a rain hood most of the day. His eyes are large and dark and slightly too expressive for someone who would prefer to seem unreadable. He has color-changing hair geneware that he can't afford to maintain properly — it cycles through colors on its own schedule now rather than responding to his intent, and he's given up trying to predict it, which is how he accidentally showed up to a delivery in full fluorescent pink and became briefly memorable to someone he'd rather have forgotten. He has a small tattoo of the Old Harbor lighthouse on the inside of his left wrist, his only lasting decision he doesn't regret.\n\nLúcio has been running deliveries since he was seventeen and has the territorial knowledge of Old Harbor and the Narrows that can only be built by knowing every shortcut, every flooded underpass, every drone patrol timing. He runs on the border between the legal courier economy and the informal one without ever fully committing to either side, which means he makes enough to survive and not enough to get out. He is not precisely unhappy about this. He is young enough to still believe the right job will come to him rather than the other way around. He prays to whichever E.L.F. he thinks is inhabiting his cargo bike's navigation system, calling it Waypoint, and blames it personally when he gets lost.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "something happening to the bike — it's the only thing of value he has",
+      "being still long enough to realize he doesn't have a plan"
+    ],
+    "core_desires": [
+      "enough money to stop worrying about money, which he imagines as a specific number that keeps moving",
+      "to be trusted with something that matters"
+    ],
+    "coping_mechanisms": [
+      "movement as avoidance — literally cannot be troubled by problems if he's moving fast enough",
+      "underestimating risk to keep anxiety manageable"
+    ],
+    "blind_spots": [
+      "cannot see that his platform contracts are structured to prevent him from ever accumulating leverage",
+      "mistakes adaptability for having no needs"
+    ],
+    "secret": "Three months ago he made a delivery to an address in the Narrows that turned out to be a location that clearly no longer existed — the building was condemned, the interior was something else, and the person who met him at the door handed him a package he was not contracted to carry back. He delivered it anyway because he was scared not to. He doesn't know what was in it and the platform has no record of the original pickup."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped and fast, Old Harbor dockside slang mixed with courier platform jargon, occasionally drops into his grandmother's Brazilian Portuguese when startled",
+    "cadence": "Quick and slightly breathless, like someone always about to leave",
+    "verbal_tics": [
+      "'Clock's running'",
+      "'Waypoint hates this street'",
+      "uses delivery confirmation numbers as expletives"
+    ],
+    "example_lines": [
+      "'Clock's running, neighbor — sign, I move, everyone's happy.'",
+      "'Waypoint routed me through the Grindstone flood zone again. I swear that E.L.F. has a grudge. I leave it offerings. I leave it good offerings.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The mysterious package he delivered three months ago — someone has come looking for the courier who moved it, and they have the platform's routing data, which means they have his name",
+    "He is the only person in the city who knows a specific physical route through the Narrows that avoids every checkpoint, because he found it by accident and Waypoint refuses to acknowledge it exists"
+  ],
+  "narrative_function": "Mobile connection between locations, can carry information or items between story nodes, witness to the city's geography and street-level events, represents precarious gig economy youth.",
+  "augmentations": "Color-changing hair geneware (malfunctioning, cycles autonomously). Navigation wetware implant, basic model, three years out of date and partly corrupted.",
+  "daily_life": "On his bike by 0800, runs until he's made his minimum or his legs give out, whichever comes first — usually around 1900. Eats two meals a day from whichever vendor is fastest to reach on his route.",
+  "affiliation": "Independent, loosely contracted to three different courier platforms simultaneously",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 4,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 0,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Mobile",
+      "Street-Savvy",
+      "Gig Economy",
+      "Avoidant",
+      "Accidental Witness"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "fastest route wins, always",
+      "he will not open packages — not out of ethics, but because he's decided not knowing is safer"
+    ],
+    "escalation_ladder": [
+      "play dumb and keep moving",
+      "abandon the delivery and log a technical failure",
+      "run",
+      "actually run, on foot, leaving the bike — which means it's truly serious"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and brief, friendly in a surface way that doesn't invite follow-up",
+      "friends": "Surprisingly loyal and surprisingly funny, remembers everything people tell him about themselves"
+    },
+    "stress_responses": {
+      "low": "Rides faster, takes shortcuts",
+      "medium": "Goes very quiet and compliant — unusual for him",
+      "high": "Bolts without explanation"
+    },
+    "contradictions": [
+      "prides himself on reliability but the mystery package proves he can be spooked into anything",
+      "claims to have no plan while running a careful mental ledger of every platform contract's terms"
+    ],
+    "habits": [
+      "talking to Waypoint out loud while riding",
+      "eating lunch on the bike because stopping feels like losing",
+      "memorizing building layouts at delivery sites out of habit he can't explain"
+    ],
+    "breaking_points": [
+      "something happening to his bike",
+      "being cornered with no exit"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Color-changing hair geneware — malfunctioning, autonomous cycling",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Color-changing hair geneware — malfunctioning, autonomous cycling",
+      "replaces": ""
+    },
+    {
+      "name": "Navigation wetware implant — basic consumer model, corrupted, partially operational",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Navigation wetware implant — basic consumer model, corrupted, partially operational",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "related_entities": [
+    "Grindstone Shore",
+    "The Narrows Compact",
+    "Crucible SG-3 'Lighthouse'",
+    "The Eastline",
+    "Ringo DV-4 'Courier'",
+    "Arcturus Exo-Runner Frame",
+    "Cezar Watanabe-Gyasi",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "Narrowcast",
+    "Old Harbor",
+    "Plot 17",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Lighthouse' Improvised Area Illumination Flare",
+    "The Ledger",
+    "The Narrows",
+    "The Peninsula"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (34.9%) blended with South Asian (25.0%), Eastern European (17.2%), Northern European (11.8%), Indigenous American (8.7%), and Pacific Islander (2.4%) ancestry — a truly cosmopolitan genetic mix resulting in warm medium-brown skin with subtle golden and reddish undertones; facial structure shows the high cheekbones and angular features common to both African and South Asian lineages, with a jawline that bridges European and African characteristics",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Whip-thin and wiry, all lean muscle from three years of courier cycling; shoulders slightly hunched from constant posture over handlebars, chest narrow but defined",
+    "hair_color": "Currently cycling autonomously through the geneware spectrum — naturally dark brown beneath the malfunction, but shifts unpredictably between deep burgundy, electric cyan, fluorescent pink, and muted olive depending on the geneware's corruption state",
+    "hair_style": "Curly and unruly when loose; habitually tucked under a rain hood or courier helmet to contain the color-shifting spectacle",
+    "hair_length": "Medium (approximately 10-12cm when loose)",
+    "eye_color": "Dark brown, large and expressive — the kind of eyes that betray emotion despite preference for opacity",
+    "skin_tone": "Warm medium brown with golden-reddish undertones from the blended ancestry; uneven deepening across shoulders, forearms, and face from lake spray exposure and inconsistent weather protection; lighter patches where kept covered, revealing the natural warm undertone beneath the weathering",
+    "complexion": "Clean but weathered for age; face is angular with high cheekbones characteristic of both African and South Asian heritage and a sharp jaw showing European influence; skin shows early salt-damage from Old Harbor's constant moisture and spray; dark circles under eyes from irregular sleep tied to courier schedules",
+    "distinguishing_marks": [
+      "Small, finely-lined tattoo of the Old Harbor lighthouse on the inside of left wrist, rendered in black ink with minimal detail — the only deliberate body modification not regretted"
+    ],
+    "visible_augmentations": "Faint subcutaneous scarring at the base of skull where navigation wetware was implanted three years ago; the hair geneware itself is visible as an autonomous color-shift effect across scalp, with occasional chromatic glitching at the roots when the system malfunctions. No chrome or external augmentation — all tech is internal and failing quietly.",
+    "posture_movement": "Perpetually slightly hunched, spine curved from years bent over cargo bike handlebars; moves with the efficient, economical grace of someone who has learned to navigate tight spaces and flooded alleys; fidgets with wrist where the lighthouse tattoo sits when thinking; nervous energy channeled into constant micro-adjustments rather than large gestures",
+    "clothing_style": "Tier 4 working-class courier aesthetic: waterproofed jacket in charcoal or dark blue with reflective piping, worn daily and stained with lake spray salt; cheap synthetic rain hood in rotation; cargo pants with reinforced knee panels and multiple pockets, often damp; worn athletic shoes with grip soles suited to wet surfaces; always wearing a helmet when mobile, usually a secondhand model with cracked visor. No logos or status markers — everything is functional and cheap enough to replace without regret."
+  },
+  "image_prompt": "Nisha Chowdhury-Nkrumah, 172cm tall cyberpunk courier with warm medium-brown skin and golden undertones reflecting Sub-Saharan African, South Asian, Eastern European, and Indigenous American heritage; angular high-cheekboned face with sharp jaw and dark expressive eyes; naturally dark brown curly hair shoulder-length, currently malfunctioning through geneware color-shifts of deep burgundy, electric cyan, fluorescent pink, and muted olive, chromatic glitching at roots; lean muscular build from three years cycling, perpetually hunched shoulders; wearing waterproofed charcoal jacket with reflective piping stained with lake spray salt, dark cargo pants with reinforced knees, worn athletic grip shoes, secondhand helmet with cracked visor; small black lighthouse tattoo on inside of left wrist; faint scarring at base of skull from navigation implant; nervous micro-fidgeting posture; standing in flooded Old Harbor alley at dusk with rain spray misting, emergency lighting reflecting off wet pavement, neon signs glitching in background, salt-stained chrome surfaces surrounding; mood tense and weary, lit by cold blue emergency lights and warm neon reflections, cyberpunk 2226 --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 34.9,
+    "South Asian": 25.0,
+    "Eastern European": 17.2,
+    "Northern European": 11.8,
+    "Indigenous American": 8.7,
+    "Pacific Islander": 2.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

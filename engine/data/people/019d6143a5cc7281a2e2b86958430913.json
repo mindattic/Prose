@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a5cc7281a2e2b86958430913",
+  "type": "character",
+  "name": "Remi Villalobos-Fredriksen-Magnúsdóttir",
+  "aliases": [
+    "Bren",
+    "Two-Stop"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Transit Police Officer, Ferrogate Transit Security",
+  "age": 28,
+  "status": "active",
+  "location": "Kessler Interchange, GLMZ, near North Ave and Damen",
+  "description": "Brennus is a broad-shouldered young man, Ghanaian-Croatian in the specific way that produced his particular amber skin tone, tight dark curls, and a jaw that looks like it was designed to take a punch and was then tested extensively. He wears the Ferrogate Transit Security uniform with the particular posture of someone who chose this job over something better and has spent two years finding peace with that choice. His cosmetic geneware is subtle: bioluminescent freckles across his cheekbones that pulse a faint amber when he's calm and edge toward orange-red when his heart rate climbs — a mod he got at eighteen that he now considers a professional liability and is saving to have adjusted. His colleagues call him Two-Stop because he has never, in two years of duty at Kessler Interchange, needed more than two stops on the escalating force protocol before a situation resolved.\n\nKessler is a brutal posting — five rail lines converging in a subterranean cavern full of vending shrines, checkpoint queues, and the particular desperation of people who missed the last platform-credit subsidy. Brennus has developed a talent for the moment just before things escalate, which he deploys through an almost theatrical calm and a habit of learning names. He knows the regulars by face, knows which unhoused people shelter in which alcoves, knows which Ferrogate checkpoint operators skim scanning fees. He has not reported the last thing. He is thinking about reporting it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "becoming the kind of officer he tells himself he isn't",
+      "that his calm is just numbness accumulating"
+    ],
+    "core_desires": [
+      "to be genuinely useful to people who have no other options",
+      "to eventually afford a posting that doesn't smell like coolant and desperation"
+    ],
+    "coping_mechanisms": [
+      "memorizing details about his regulars as a form of caring that requires no emotional vulnerability",
+      "cooking elaborate meals on days off"
+    ],
+    "blind_spots": [
+      "tells himself his tolerance for checkpoint skimming is pragmatism rather than complicity",
+      "underestimates how much the regulars depend on him personally"
+    ],
+    "secret": "He let a woman through a checkpoint two months ago — no transit credits, outstanding low-level warrant, visibly eight months pregnant — and deleted the scan log. He checks the Ferrogate birth notices sometimes. He doesn't know what he's looking for."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, warm, working-class Meridian patois mixed with transit-specific jargon; uses people's names constantly and deliberately",
+    "cadence": "Unhurried, rhythmic, tends to pause before delivering anything important — a habit developed to give people time to choose non-escalation",
+    "verbal_tics": [
+      "'Hey, listen—'",
+      "using first names even with strangers once he's learned them"
+    ],
+    "example_lines": [
+      "'Mwenda. Mwenda. I know you're having a bad shift. I'm having a bad shift. Let's both not make it worse, yeah?'",
+      "'I'm not going to pretend I didn't see that. I'm going to ask you nicely to put it back and then we're going to forget this whole stop happened.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The woman he let through the checkpoint has reappeared — now she's involved in something complicated and she told her associates there's a transit cop at Kessler who can be trusted",
+    "He's finally ready to report the checkpoint skimming but needs someone to take his account who won't bury it — and he's heard there's an IA investigator worth approaching",
+    "A body was found in a maintenance alcove he patrols; officially ruled a transit accident; unofficially, three of his regulars have disappeared from that section in two months"
+  ],
+  "narrative_function": "Street-level contact who knows the transit system's unofficial geography; can grant access or look the other way; moral decision point about reporting corruption; local color and scene-setter for transit hub scenes",
+  "augmentations": "Bioluminescent freckles (cosmetic geneware, amber-to-red affect-linked); department-standard subvocal comms implant; reinforced knuckle plating (standard FTS issue)",
+  "daily_life": "Works a split shift at Kessler Interchange — morning platform patrol and evening checkpoint observation; eats his lunch at the same noodle kiosk every workday and has informal intelligence conversations he doesn't call intelligence conversations with the vendor.",
+  "affiliation": "Ferrogate Transit Security",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 0,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "peacekeeper",
+      "community anchor",
+      "complicit by omission",
+      "de-escalation specialist",
+      "transit system insider"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Learn the name first, decide everything else after",
+      "Escalate only when de-escalation has been genuinely attempted, not just performed",
+      "Protect his regulars from institutional consequences whenever he can do so without directly lying"
+    ],
+    "escalation_ladder": [
+      "Name-using, calm conversation with offered exits",
+      "Physical positioning and presence without contact",
+      "Warning of consequences with genuine pause for compliance",
+      "Controlled physical intervention, minimum necessary force"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, makes eye contact, introduces himself by first name — disarming by design",
+      "friends": "Teasing, fond, shows up with food, carries grudges that he pretends he doesn't carry"
+    },
+    "stress_responses": {
+      "low": "Gets quieter, more deliberate with words",
+      "medium": "Bioluminescent freckles redden noticeably — he becomes hyper-focused and stops small talk entirely",
+      "high": "Goes into a functional action-mode that looks like calm from outside but leaves him shaking slightly for twenty minutes after"
+    },
+    "contradictions": [
+      "Enforces regulations while selectively ignoring the ones he finds unjust, with no consistent framework for which is which",
+      "Values community while keeping everyone at a precise emotional arm's length"
+    ],
+    "habits": [
+      "Greets the Kessler E.L.F. shrine (a small cluster of cable-wound icons near platform 3) every shift start with a quiet nod",
+      "Keeps a handwritten list of regulars' names in his breast pocket"
+    ],
+    "breaking_points": [
+      "Watching someone he knows get processed through a system he knows is broken and being given a direct order not to intervene",
+      "Being asked to falsify a transit incident report"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Tessera TK-5 Compact 'Clerk'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Tessera TK-5 Compact 'Clerk'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Arcturus GE-1 'Garrison'",
+    "GLMZ",
+    "Big Rig",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Bioacoustic Communication Membrane",
+    "Kairos",
+    "Kwabena Ilyich Ferreira-Sattout",
+    "MERIDIAN",
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA PA-5 'Attendant'",
+    "Tessera Corponation",
+    "Tessera TK-5 Compact 'Clerk'",
+    "The Human Baseline Alliance",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European (51.5%, primarily Polish/Czech/Slovak ancestry) with significant Northern European (24.7%, Scandinavian) admixture, East Asian (13.1%, likely Korean or Mongolian), Hispanic/Latin American (8.0%), and minor Sub-Saharan African (2.7%) ancestry. The combination produces a phenotype with Slavic bone structure, East Asian eye shape and cheekbone prominence, and warm undertones from the admixed heritage.",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and solid without excess mass—built like someone who moves through crowded spaces with deliberate intent. Chest and shoulders carry visible musculature; waist tapers cleanly. The build of a man who chose physical work over desk jobs.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Neat, close-cropped fade with natural texture; kept regulation-short but not aggressively military",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with slight epicanthic fold from East Asian ancestry, alert and direct",
+    "skin_tone": "Medium-warm complexion with subtle golden undertones—the result of Eastern European base with East Asian, Hispanic, and African admixture creating a distinctive mid-range tone with warmth rather than coolness. Not pale; not deep; distinctly mixed-heritage warm.",
+    "complexion": "Clear, well-maintained skin with a scattering of bioluminescent freckles across both cheekbones. Cheekbones are prominent and slightly high-set, reflecting East Asian ancestry components. Jaw is angular and prominent, showing the wear of professional calm and the subtle bruising of someone who has absorbed impact. Five o'clock shadow typical by evening shift. No visible acne or skin conditions; the freckles glow faintly amber at rest.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both cheekbones (cosmetic geneware, amber baseline, shift toward orange-red under stress or elevated heart rate)",
+      "Thin scar along left knuckle ridge (professional wear, partially concealed by reinforced plating)",
+      "Pale line of scar tissue along right temple (pre-augmentation, roughly 4cm, barely visible unless light catches it directly)"
+    ],
+    "visible_augmentations": "Reinforced knuckle plating visible on both hands—matte black synthetic bone composite showing at the knuckles and back-hand ridges, FTS-standard issue. Subvocal comms implant invisible but occasionally visible as faint vibration under jawline when receiving radio traffic. Bioluminescent freckles are the most visible augmentation, especially in low-light conditions.",
+    "posture_movement": "Stands with shoulders square and weight distributed evenly—the posture of someone trained to respond quickly but not presently threatened. Moves through crowded spaces with economical precision, never rushed. Hands rest naturally at sides or loosely clasped, knuckle plating giving them a slightly industrial appearance. Eye contact is direct and held slightly longer than average—a deliberate choice to establish calm authority. When walking a platform or moving through checkpoint areas, his gaze sweeps in practiced patterns without seeming mechanical.",
+    "clothing_style": "Wears Ferrogate Transit Security uniform as standard: fitted dark-gray polymer blend shirt with FTS insignia on left chest, tactical-cut to allow arm mobility. Black reinforced cargo pants with regulation belt carrying comm unit, flex-cuffs, and incident log tablet. Steel-toed boots (scuffed, well-maintained). Off-duty: simple athletic wear, earth-tone hoodies, worn denim. Tier 3-4 worker clothing—functional, durable, not flashy. No jewelry except a faded cloth wristband (frayed, looks like it's been retied many times) in dark blue."
+  },
+  "image_prompt": "Remi, a 188cm transit security officer with mixed Eastern European, Scandinavian, East Asian, and Hispanic ancestry, standing in a GLMZ checkpoint corridor under industrial LED lighting. Medium-warm skin tone, high cheekbones with faint bioluminescent amber freckles that glow softly in the low light, dark brown eyes with subtle epicanthic fold, close-cropped dark hair. Wearing FTS dark-gray tactical uniform shirt and black reinforced cargo pants, steel-toed boots scuffed from patrol work. Matte black synthetic bone knuckle plating visible on both hands. Direct, alert posture with economical stance. Faded dark-blue cloth wristband on left wrist. Cyberpunk 2220s transit hub setting, cool industrial LED lighting casting slight shadows across high cheekbones and knuckle plating, slight five o'clock shadow, calm but watchful expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 51.5,
+    "Northern European": 24.7,
+    "East Asian": 13.1,
+    "Hispanic/Latin American": 8.0,
+    "Sub-Saharan African": 2.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

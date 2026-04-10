@@ -1,0 +1,141 @@
+{
+  "id": "019d6143a6ff7117a8fb914fb7d2a350",
+  "type": "character",
+  "name": "Aiyana Ixchel",
+  "aliases": [
+    "Deadpan"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Business only",
+  "age": 46,
+  "status": "active",
+  "location": "The Circuit, near North Ave and Milwaukee",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Angry Mary' Aerosol Flamethrower"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "The Milwaukee Core",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower",
+    "The Heritage Vault"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Indigenous American, Southeast Asian, Central Asian, Sub-Saharan African, Pacific Islander, and Hispanic/Latin American — a complex diaspora blend reflecting the Ubiquitous mixing of the 2220s. Features suggest high cheekbone prominence and broad facial structure from Indigenous American ancestry (26.8%), warm undertones from Southeast Asian heritage (22.6%), and depth from Central Asian genetics (21.3%), balanced with Sub-Saharan African warmth (12.6%), Pacific Islander solidity (8.9%), and Latin American regional characteristics (7.8%).",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic, slightly lean with broad shoulders — the physique of someone who maintains discipline without obsession. Minimal body fat, suggesting regular calibration work or structured exercise.",
+    "hair_color": "Salt-and-pepper grey with natural black undertones",
+    "hair_style": "Neat, cropped fade with subtle texture; groomed to project competence and authority",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with slight amber undertone in certain light",
+    "skin_tone": "Rich, warm brown with golden and amber undertones — the result of multiple heritage layers. Neither pale nor deeply saturated, but a harmonious medium-deep tone that catches light with subtle variation, characteristic of Indigenous American and Southeast Asian blending with Sub-Saharan warmth.",
+    "complexion": "Clean, well-maintained skin with minimal scarring. Fine lines around the eyes suggesting years of intense focus and negotiation. High, defined cheekbones from Indigenous ancestry. Broad, well-proportioned nose bridge. No visible blemishes or cosmetic damage. Expression carries practiced neutrality.",
+    "distinguishing_marks": [
+      "Thin scar running 3cm along the left temple, barely visible unless backlit — consistent with old trauma, pre-augmentation era",
+      "Small, faded tattoo on inner right wrist: three vertical lines in an abstract geometric pattern, possibly Indigenous or personal significance"
+    ],
+    "visible_augmentations": "None visible. Aiyana presents as unaugmented — likely carries subcutaneous neural arrays or internal augmentations for secure communications. Age and independent status suggest pre-visibility-as-status era origins.",
+    "posture_movement": "Upright, measured gait with deliberate hand placement. Minimal wasted motion. Sits with one leg slightly extended, suggesting old injury or favored stance during negotiations. Makes direct eye contact. Speaks with pauses — calculated, not nervous.",
+    "clothing_style": "Tier 2-3 professional: tailored charcoal wool coat (vintage, maintained), crisp white compression shirt underneath with discrete side pockets for tools or devices. Dark grey neo-denim with reinforced seams. Worn leather ankle boots — scuffed but functional. Minimal jewelry: single matte-black band on left ring finger. No visible logos or corporate markers."
+  },
+  "image_prompt": "Portrait of Aiyana Ixchel, a 182cm athletic woman with rich warm brown skin blending Indigenous American, Southeast Asian, Central Asian, and African heritage. High prominent cheekbones, dark brown eyes with amber undertones, salt-and-pepper grey cropped fade haircut. Wearing tailored charcoal wool coat over white compression shirt, dark grey reinforced neo-denim, worn leather boots. Faint 3cm scar on left temple visible in side-lighting. Matte-black ring on left finger. Measured posture, direct gaze, practiced neutrality. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool neon ambient lighting, professional/negotiator setting, subtle depth-of-field. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Indigenous American": 26.8,
+    "Southeast Asian": 22.6,
+    "Central Asian": 21.3,
+    "Sub-Saharan African": 12.6,
+    "Pacific Islander": 8.9,
+    "Hispanic/Latin American": 7.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

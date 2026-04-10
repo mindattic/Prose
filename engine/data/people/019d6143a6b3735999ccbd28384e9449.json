@@ -1,0 +1,313 @@
+{
+  "id": "019d6143a6b3735999ccbd28384e9449",
+  "type": "character",
+  "name": "Leszek Tamale-Rahman",
+  "aliases": [
+    "Chop",
+    "The Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Chop shop operator and parts runner, Shallowgrave",
+  "age": 19,
+  "status": "active",
+  "location": "Shallowgrave, Geartown adjacent — a rented bay in a semi-collapsed parking structure called the Stack, near Western and Division",
+  "description": "Roko is nineteen and looks younger, which he has stopped minding because it means people underestimate what he can do to a Ferrogate Transit pod in forty minutes flat. He's wiry and long-limbed, Algerian-Māori heritage that gives him a face of striking angles — high forehead, strong jaw, a nose that's been broken once (proud of it), skin a warm tawny brown that's perpetually smudged with grease no matter how thoroughly he washes. His hair is dark and tight-curled, usually stuffed into a mechanical bandana that can project a heads-up schematic overlay. He has cat ears from a geneware package he bought secondhand at sixteen — mottled grey and black, fully functional for enhanced hearing, constantly swiveling toward sounds before he's consciously registered them.\n\nHe is relentlessly cheerful in a way that reads as naive until you notice he is also relentlessly competent. He can strip a Ferrogate pod, a Sterling-Nakamura delivery drone, or an Axiom security crawler down to useful components faster than anyone else in Shallowgrave, and he knows the resale value of every part to three decimal places. He has no interest in violence, considerable interest in engines, and a complicated relationship with the two older crew members who 'own' the bay he works out of and take sixty percent of what he earns.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Getting locked into sixty percent forever — that this is what his life actually is",
+      "Something happening to Pulleys (the ELF he's befriended)"
+    ],
+    "core_desires": [
+      "To own his own bay, no partners, no cuts owed to anyone",
+      "To build something from scratch someday instead of only breaking things down"
+    ],
+    "coping_mechanisms": [
+      "Enthusiastic focus on mechanical problems as escape from social ones",
+      "Humor and deflection when confronted with his own exploitation"
+    ],
+    "blind_spots": [
+      "Doesn't recognize that his crew's 'protection' is the only thing keeping other crews from simply taking the Stack",
+      "His cheerfulness sometimes reads as consent to people who want to take advantage of him"
+    ],
+    "secret": "He has been quietly, methodically skimming components — never money, always parts, each one small and easily lost in inventory — and has a hidden cache in the Stack's elevator shaft (Pulleys' home) that he is slowly assembling into something he has told no one about: the beginning of a vehicle of his own design"
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast Meridian Standard slang, heavy Shallowgrave dialect, technical mechanical vocabulary that appears suddenly and without warning in otherwise casual sentences",
+    "cadence": "Rapid, enthusiastic, sentences sometimes abandoned mid-thought when something more interesting occurs to him",
+    "verbal_tics": [
+      "'Okay but listen—'",
+      "Ears swivel visibly before he turns his head toward sounds",
+      "'That's a Tessera Mark IV compression seal, I can tell by the hiss'"
+    ],
+    "example_lines": [
+      "'Okay but listen, you could get sixty for that housing or you could let me have it and I'll give you forty now and a favor later and the favor is worth more than twenty, I promise, I'm good for it.'",
+      "'Pulleys told me something came through here last night. Don't ask me how I know Pulleys is real, just — do you want the information or not?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A vehicle he stripped turns out to have had someone locked in the trunk — he didn't check, the part he needed was the engine, and now there's a body in a pile of components and he's the only one who knows",
+    "His hidden cache has been discovered — not by his crew, but by Pulleys the ELF, who wants to negotiate terms for continued silence"
+  ],
+  "narrative_function": "Local color and community texture of Shallowgrave youth crime, parts and vehicle-related services, information about what vehicles are moving through the district, moral complexity of exploitation within criminal hierarchies",
+  "augmentations": "Geneware cat ears (mottled grey-black, enhanced hearing, cosmetic). Mechanical bandana with schematic HUD overlay (not technically augmentation, wearable). Grease-resistant keratin treatment on hands.",
+  "daily_life": "Sleeps in the Stack in a hammock he's strung between two defunct vehicles, is awake before anyone else examining whatever came in overnight, spends his days stripping and cataloging, argues with the ELF that inhabits the Stack's old elevator shaft (which he has named Pulleys) about fair market value.",
+  "affiliation": "Nominal member of the Shallowgrave Strippers (small chop shop crew); informally connected to parts brokers throughout Geartown",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "mechanical prodigy",
+      "exploited youth",
+      "ELF-friend",
+      "hidden ambition",
+      "cheerful survivalist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Take the mechanical problem, figure out the social problem later",
+      "Never steal from someone who can count well enough to notice",
+      "Talk fast enough and they won't finish thinking about whether to say no"
+    ],
+    "escalation_ladder": [
+      "Enthusiastic negotiation",
+      "Fast talking and distraction",
+      "Running — he is extremely fast on foot",
+      "Hiding in the Stack's infrastructure, which he knows better than anyone alive"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately friendly, immediately pitching something, immediately useful",
+      "friends": "Genuinely warm, will share his last protein bar, still probably negotiating with you about something"
+    },
+    "stress_responses": {
+      "low": "Talks faster",
+      "medium": "Goes very quiet and starts cleaning tools — his hands need to do something",
+      "high": "Vanishes into the Stack and doesn't come out until he's thought it through"
+    },
+    "contradictions": [
+      "Dislikes violence but has an encyclopedic knowledge of how vehicles can be weaponized",
+      "Claims not to care about owning things but is secretly building his most precious possession piece by piece"
+    ],
+    "habits": [
+      "Talks to Pulleys every morning, leaving a small offering of updated transit schedules (data the ELF finds useful)",
+      "Absently disassembles and reassembles anything small and mechanical while having conversations"
+    ],
+    "breaking_points": [
+      "Someone destroying or stealing his hidden cache",
+      "His crew being directly violent toward someone he considers a friend"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware: mottled grey-black cat ears — enhanced directional hearing, 4x normal human range",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware: mottled grey-black cat ears — enhanced directional hearing, 4x normal human range",
+      "replaces": ""
+    },
+    {
+      "name": "Grease-resistant keratin treatment — cosmetic/practical, hands shed oil and coolant easily",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Grease-resistant keratin treatment — cosmetic/practical, hands shed oil and coolant easily",
+      "replaces": ""
+    },
+    {
+      "name": "Schematic bandana — wearable HUD, projects vehicle schematics and parts overlays (not implanted)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Schematic bandana — wearable HUD, projects vehicle schematics and parts overlays (not implanted)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Born in Shallowgrave to a Māori-Algerian family of transit workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — Family displaced when Ferrogate Transit reclassified their residential zone as operational infrastructure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Begins working odd jobs at the Stack at age twelve",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Joins the Shallowgrave Strippers formally, begins the 60% arrangement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Begins secretly assembling his cache vehicle, names the elevator ELF Pulleys",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Shallowgrave",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Vespid Dynamics Reconnaissance Beetle RB-2",
+    "Slagworks Industrial",
+    "Arcturus CK-5 'Bloodhound'",
+    "Auricula Felis Modification",
+    "Aïssé Dragomirescu-Faalelei",
+    "Breck Tannen",
+    "Devraj Solano-Yildirim",
+    "Doru Fofana-Câmpeanu",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Idris Forsberg-Quaye",
+    "Lazarus LX-2 'Lab Rat'",
+    "MERIDIAN",
+    "Obinna Czekalski-Fonoti",
+    "Othniel Babić-Asantewaa",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sorin Ekwensi-Balasanyan",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Eastern European (Polish/Slavic) with significant Sub-Saharan African, South Asian, Hispanic, and Pacific Islander admixture; this creates a unique phenotype blending Northern and Equatorial traits — warm medium-brown skin with subtle olive undertones, angular Slavic bone structure softened by broader features from African and South Asian ancestry, dark hair texture showing both European and African characteristics",
+    "height_cm": 176,
+    "weight_kg": 62,
+    "build": "Wiry and long-limbed with corded forearms from years of precision mechanical work; lean muscle density, minimal body fat, functional rather than aesthetic physiology",
+    "hair_color": "Natural dark brown, nearly black",
+    "hair_style": "Tight natural curls, usually compressed under mechanical bandana",
+    "hair_length": "Short (approximately 5cm when loose)",
+    "eye_color": "Dark brown, alert and quick-moving",
+    "skin_tone": "Warm medium brown with subtle olive undertones, the result of Eastern European, African, South Asian, and Pacific Islander ancestry blended together; richer than pure tawny, with depth from multiple heritage sources",
+    "complexion": "Perpetually smudged with machinery grease despite frequent washing; bone structure reflects mixed ancestry — high forehead and strong jaw from Eastern European heritage, broader cheekbones and fuller facial contours from Sub-Saharan and South Asian ancestry, nose slightly off-center from old break (kept as is). Minimal facial hair. Youthful appearance — reads 17-18 despite being 19",
+    "distinguishing_marks": [
+      "Faded scar along left knuckles from old mechanical injury, pale against his skin tone",
+      "Grease stains under fingernails that resist cleaning, occupational marker",
+      "Small burn mark on right wrist from soldering accident, approximately 2cm diameter, pale and healed"
+    ],
+    "visible_augmentations": "Mottled grey-and-black geneware cat ears mounted on skull, fully functional with independent articulation — swivel and rotate consciously and reflexively toward sounds. Mechanical bandana worn constantly, woven composite with visible circuitry threading along edges, small holographic projector node at left temple",
+    "posture_movement": "Moves with economic precision — minimal wasted motion, fluid when working, tends to crouch or sit cross-legged rather than stand idle. Hands constantly active even at rest (sorting, measuring, fidgeting with small parts). Cat ears telegraph his attention before his eyes do; often appears to be listening to sounds others don't perceive. Carries himself with quiet confidence that reads as youth until you watch him work",
+    "clothing_style": "Tier 5 working-class functional: wear-stained synthmesh shop coat (charcoal grey, multiple pockets, reinforced at elbows and cuffs), layered with a faded band-logo tee underneath. Cargo pants in heavy cotton-blend with grease marks and repair patches, held up with a braided belt made from salvaged cable. Reinforced steel-toed boots, scuffed and worn. No jewelry except a thin wire-wrapped band around left wrist (handmade, possibly from parts). Bandana always in place; layers minimally beyond that. Clothing is maintained but clearly secondhand and well-used — everything chosen for durability over appearance"
+  },
+  "image_prompt": "Leszek Tamale-Rahman, 19-year-old cyberpunk mechanic with warm medium-brown skin blending Eastern European, African, South Asian, and Pacific Islander ancestry; angular Slavic bone structure softened by broader cheekbones and fuller features from African and South Asian heritage. Short tight dark curls compressed under mechanical bandana with visible circuitry and holographic projector node at left temple. Functional grey-and-black geneware cat ears swivel independently on skull. Dark brown alert eyes, off-center nose from old break, perpetually grease-smudged complexion. Wiry lean build with corded forearms. Wearing worn charcoal synthmesh shop coat over faded band tee, patched cargo pants with grease marks, scuffed steel-toed boots, braided cable belt, thin wire-wrapped wrist band. Faded scar on left knuckles, small healed burn mark on right wrist. Crouching in a neon-lit GLMZ workshop, hands active with mechanical parts, cat ears angled toward distant sound, cyberpunk 2226 aesthetic, warm industrial lighting with cool blue-tinted neon glows, photorealistic with gritty texture, quiet confident youth energy despite looking mature when focused on technical work --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 36.8,
+    "Sub-Saharan African": 22.9,
+    "South Asian": 20.9,
+    "Hispanic/Latin American": 10.7,
+    "Pacific Islander": 8.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

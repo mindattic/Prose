@@ -1,0 +1,291 @@
+{
+  "id": "019d6143a6a37875b8e7e2989cecbabd",
+  "type": "character",
+  "name": "Remi Björnsdóttir-Mazurek",
+  "aliases": [
+    "Pryb",
+    "the Sequence Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Gene-sequence archivist cataloguing pre-modification baseline human genomes and tracking heritage-line drift",
+  "age": 28,
+  "status": "active",
+  "location": "Meridian Core — Helix Biosystems Civic Archive, sub-basement sequencing lab, near State and Monroe",
+  "description": "Przybysław is young and knows it in a way that alternately embarrasses and animates him. He is pale-skinned with sharp Slavic features softened by Mongolian bone structure, and he has bioluminescent skin modification — his forearms glow a deep amber when he is in low light, something he got as a celebration when he finished his thesis and has been self-conscious about ever since, finding it hard to maintain the serious affect he aims for when his arms are literally glowing. He is lean and a little hunched from years at sequencing benches, and he has the habit of standing too close when he is excited about something, not from aggression but from a total failure to monitor interpersonal distance when his brain is elsewhere.\n\nHe is a prodigy in a narrow lane — his memory for genomic sequences and his ability to identify heritage-drift patterns from partial samples is genuinely rare — and he has not yet learned how to carry that without it becoming awkward. He is earnest in a way that people either find charming or exhausting. He believes the genome archive is an ethical project: that as geneware modification becomes cheaper and more ubiquitous, documenting what exists before modification is a form of keeping memory, not of preserving purity. He is very clear about this distinction and will explain it at length if given any opening.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the archive will be privatized and locked behind Helix Biosystems access fees",
+      "That he will be used as a tool for something harmful without realizing it until too late"
+    ],
+    "core_desires": [
+      "To complete the baseline archive before geneware drift makes reconstruction impossible",
+      "To be respected as a serious researcher rather than a talented kid"
+    ],
+    "coping_mechanisms": [
+      "Immersive focus on technical work when anxious",
+      "Compulsive listening to pre-flood music as a grounding ritual"
+    ],
+    "blind_spots": [
+      "Naively trusts that Helix Biosystems' stated civic mission aligns with its actual priorities",
+      "So focused on the non-purity framing of his work that he sometimes misses when others ARE using it for purity-adjacent arguments"
+    ],
+    "secret": "He has found a sequence in the archive that suggests one of Helix Biosystems' senior executives' publicly stated heritage — used heavily in their marketing — is fabricated; he does not know what to do with this and has told no one"
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical vocabulary bleeds into casual speech; uses genomic metaphors without noticing; speaks faster when excited until the words start running together",
+    "cadence": "Quick and slightly uneven — he thinks faster than he speaks and has to keep looping back to fill in what he skipped",
+    "verbal_tics": [
+      "'No, wait, let me back up—'",
+      "'The interesting thing — and it IS interesting, stay with me—'",
+      "Starts sentences three times before finding the right entry point"
+    ],
+    "example_lines": [
+      "'This is a baseline from 2087. Nobody alive has this sequence unmodified. That's — do you understand what that means? That's a sound no one can hear anymore. I can read it but I can't play it back.'",
+      "'I know how it sounds. I know. But documenting what exists isn't the same as saying what exists is better. Memory isn't hierarchy.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Helix Biosystems liaison has asked him to run a sequence check on a sample without logging it in the standard archive — the request was framed casually but the sample's reference tags suggest it came from a living person",
+    "He has discovered the fabricated heritage sequence and someone within Helix may have noticed that he found it"
+  ],
+  "narrative_function": "Specialist information source on genetics, heritage lines, and geneware modification history; his archive access could identify people, verify identity claims, or reveal inconvenient heritage information; represents the ethical complications of genomic data in corporate custody",
+  "augmentations": "Bioluminescent forearm skin modification (amber, cosmetic); high-resolution retinal implant for sequencing readout (single eye, standard for the field)",
+  "daily_life": "Arrives early to the sub-basement sequencing lab, spends most of the day running archival sequences against his pattern-recognition models, eats lunch at his station while listening to archived music from the pre-flood era, attends a weekly university affiliate colloquium where he is usually the youngest person in the room by fifteen years.",
+  "affiliation": "Helix Biosystems Civic Archive (technically corporate-administered, nominally public); University Spine junior research affiliate",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "earnest",
+      "naive",
+      "specialist",
+      "ethically-motivated"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Log everything in the archive correctly, always — the record is the point",
+      "If asked to do something that would compromise the archive's integrity, refuse and document the request",
+      "Don't assume malice when confusion is possible, but document either way"
+    ],
+    "escalation_ladder": [
+      "Asks for clarification and assumes good faith",
+      "Escalates to his university affiliate supervisor when something feels wrong",
+      "Contacts the civic archive ombudsperson (a position that may or may not have teeth)",
+      "Goes public — he has thought about this a lot and knows the journalism contacts he would use"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Awkward initially, recovers quickly if they show genuine interest in his work; tends to over-explain as a way of connecting",
+      "friends": "Loyal and enthusiastic; shows care through sharing things he finds interesting rather than asking how you are"
+    },
+    "stress_responses": {
+      "low": "Becomes more meticulous and runs verification checks on his own completed work",
+      "medium": "Gets very quiet and listens to pre-flood music on continuous loop",
+      "high": "Makes errors — the only time his precision fails him is under high stress, which he is aware of and finds humiliating"
+    },
+    "contradictions": [
+      "Committed to the archive as a civic good while employed by a corporation with obvious profit motives for genomic data",
+      "Desperate to be taken seriously as an adult researcher while being genuinely, endearingly young about most things"
+    ],
+    "habits": [
+      "Labels everything twice — digital and a small physical tag — 'redundancy is care,' he says",
+      "Hums while working, unaware he is doing it"
+    ],
+    "breaking_points": [
+      "Discovering the archive has been accessed without authorization and data removed",
+      "Being directly ordered to falsify or omit a record"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "2",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironvein district to a Polish-French father and Malian-Mongolian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed accelerated doctorate at University Spine on genomic heritage-drift modeling",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed to Helix Biosystems Civic Archive sequencing lab",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the anomalous heritage sequence linked to Helix Biosystems executive",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received the unlogged sequence request from Helix liaison; has not yet decided how to respond",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Street-Custom Razorwire Wraps 'Glass Hands'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Meridian Core",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "The Heritage Vault",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Pellucid Systems",
+    "The Pale Mile",
+    "Nightlight",
+    "Brecken Yılmaz-Osei",
+    "Chronicle",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Lazarus IDP-1 'Teeth'",
+    "Lumen",
+    "MERIDIAN",
+    "Narrowcast",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sisay Bergqvist-Mallari",
+    "Street-Custom Razorwire Wraps 'Glass Hands'",
+    "TESSERA PA-5 'Attendant'",
+    "Tessera Nexus Town Car",
+    "The Archive",
+    "The Human Baseline Alliance",
+    "The Nearfield",
+    "The Pure Hand",
+    "The Quiet Room",
+    "University Spine",
+    "VitaCore SteadyThread Precision Motor Implant",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "East Asian (34.6%) / Eastern European (32.9%) / Northern European (32.5%) — a balanced tripartite ancestry creating distinctive blended features. Strong Slavic bone structure tempered by East Asian facial geometry, with Northern European coloring as a base.",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lean and slightly hunched, shoulders curved inward from years bent over sequencing benches. Wiry frame with minimal muscle definition — the build of someone who lives in climate-controlled labs rather than outdoors.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Straight, swept back from his forehead with a few pieces falling forward when he leans — perpetually slightly disheveled",
+    "hair_length": "Medium (collar-length)",
+    "eye_color": "Right eye: pale grey (natural). Left eye: augmented with subtle amber LED ring around the iris for sequencing readout interface",
+    "skin_tone": "Cool neutral with balanced warmth — Northern European base providing fair complexion, enriched by East Asian and Eastern European undertones creating a subtle golden-olive cast. Noticeably lighter on torso and face from minimal sun exposure, with a faint warm peachy undertone visible at cheekbones and temples.",
+    "complexion": "Prominent high cheekbones and angular jawline from Eastern European ancestry, softened by slightly broader face geometry and gentle eye shape from East Asian heritage. Skin is clear but has the translucent quality of someone who spends most hours indoors under fluorescent light. Faint dark circles under both eyes. Clean-shaven, though perpetually shows 24-hour shadow. Delicate nose bridge with subtle width through the middle.",
+    "distinguishing_marks": [
+      "Both forearms glow with bioluminescent amber skin modification — deeper saturation at the wrists, fading toward the elbows; most visible in dim lab lighting and noticeably distracting when he gestures while excited",
+      "Small burn scar on the inside of his left wrist from a sequencing equipment accident, roughly 2cm in length, pale and well-healed"
+    ],
+    "visible_augmentations": "Bioluminescent forearms (amber glow, involuntary in low light). Left eye retinal implant visible as a faint amber LED circle around the iris when light catches it at certain angles — appears as a subtle ring rather than an obvious prosthetic. No visible external ports or obvious chrome.",
+    "posture_movement": "Habitually hunched forward, shoulders rolled slightly inward. When focused on someone or something he is interested in, he leans in without noticing, violating personal space. His hand movements are precise and controlled when working (trained from lab work) but become animated and loose when explaining something he is passionate about. When uncertain, he glances down at his glowing forearms as if surprised they are still there.",
+    "clothing_style": "Tier 3-4 working professional, lab-appropriate. Standard grey Helix Biosystems unisex lab coat over a fitted charcoal turtleneck (practical for hiding the glow of his forearms during client meetings). Dark grey or black utility pants with multiple pockets. Worn synthetic-leather ankle boots. Minimal jewelry — a simple steel watch on his right wrist, a university affiliate pin on his coat lapel. Everything is clean but shows wear; nothing is fashionable or deliberately styled. The effect is carefully rumpled in a way that suggests he does not think much about his appearance."
+  },
+  "image_prompt": "Remi Björnsdóttir-Mazurek, 178cm lean bioluminescent geneticist with balanced East Asian and Northern European features — sharp high cheekbones with gentle eye geometry, pale cool-toned skin with warm golden undertones. Dark brown hair medium-length swept back, pale grey right eye with amber LED-rimmed augmented left eye. Worn grey Helix Biosystems lab coat over charcoal turtleneck, dark utility pants. Both forearms glow bioluminescent amber, brightest at wrists. Habitually hunched posture, 24-hour stubble shadow, faint dark circles. Standing in dimly-lit lab corridor with overhead fluorescent strips, ambient neon signage reflecting off polished floor. Glowing forearms casting amber light on coat sleeves. Focused, slightly leaning-forward posture. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, cool clinical lighting with warm bioluminescent contrast. Detailed, realistic portraiture --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 34.6,
+    "Eastern European": 32.9,
+    "Northern European": 32.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

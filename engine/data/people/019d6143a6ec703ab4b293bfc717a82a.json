@@ -1,0 +1,313 @@
+{
+  "id": "019d6143a6ec703ab4b293bfc717a82a",
+  "type": "character",
+  "name": "Paloma Thorvaldsdóttir-Lindström",
+  "aliases": [
+    "T.O.C.",
+    "The Landlord",
+    "Tav"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Mid-tier commercial property broker and covert information broker",
+  "age": 38,
+  "status": "active",
+  "location": "The Circuit, near North Ave and Damen",
+  "description": "Tavish Ohlendorf-Crane presents himself as the most boring man in GLMZ, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of GLMZ's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.45,
+      "ideal": 0.2,
+      "id": 0.65,
+      "shadow": 0.6,
+      "mask": 0.9,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being perceived accurately — that the boredom is a mask and someone will eventually look long enough to see through it",
+      "That his neutrality will one day force a choice he cannot route around",
+      "Losing the properties — not for financial reasons but because without them he is nobody"
+    ],
+    "core_desires": [
+      "To be the indispensable hinge between every faction without belonging to any of them",
+      "To be genuinely surprised by something",
+      "To be known by someone — truly known — without consequence"
+    ],
+    "coping_mechanisms": [
+      "Reducing everything to transaction — emotions included",
+      "Meticulous routine as a substitute for meaning",
+      "Collecting small, useless, beautiful objects that he never displays"
+    ],
+    "blind_spots": [
+      "He believes his neutrality is a genuine position rather than a deferred choice, and has never examined what it would mean to be neutral in a system that is not",
+      "He is far lonelier than his self-model accounts for and this loneliness distorts his judgment in ways he attributes to other causes",
+      "He underestimates how much the people he considers assets have come to think of him as a person"
+    ],
+    "secret": "He was born in The Shelf under a different name. His ascent into The Circuit required the erasure of that identity and the deliberate severing of every connection to it. One person from that life found him eight years ago. He paid them to disappear again. He does not know if they did."
+  },
+  "speech_patterns": {
+    "vocabulary": "Commercial, contractual, precise. Rarely uses metaphor. Numbers and spatial relationships come naturally. Occasionally deploys warmth so calibrated it reads as warmth — until you notice it's always proportional to the ask.",
+    "cadence": "Even, unhurried, never raised. Pauses land on meaningful words. Gives you more silence than you expect after you speak, as if he's filing what you said before responding.",
+    "verbal_tics": [
+      "Refers to all deals, regardless of content, as 'arrangements'",
+      "'That's fair' as a response to almost anything, meaning almost nothing",
+      "When genuinely interested, asks one very specific follow-up question and then goes quiet"
+    ],
+    "example_lines": [
+      "'The sublevel unit is available. Good bones, no windows, three exits that aren't on the public schema. The arrangement reflects the discretion. That's fair.'",
+      "'I don't have sides. I have square footage. What you do inside it is between you and whatever you answer to.'",
+      "'You're asking me who else has been asking. That's a different arrangement than the one we're currently in. Not impossible. Just different.'",
+      "'I remember every room I've ever walked through. Floorplan, acoustics, who was standing where. It's not an augment thing. I've always been like that. Make of it what you want.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Tomás Arriaga-Venn",
+      "type": "Client and unknown variable",
+      "description": "Arriaga-Venn leases three properties through shell arrangements Tavish technically cannot trace back to him but has traced back to him anyway. He has said nothing.",
+      "emotional_core": "The particular tension of knowing something dangerous about someone powerful and choosing to hold it rather than spend it",
+      "story_tension": "One of the properties is being used for something that is beginning to violate Ohlendorf's exception. He has to decide whether to enforce his own rule or pretend he doesn't know."
+    },
+    {
+      "name": "Elowen Czerny-Fitch",
+      "type": "Recurring contact, mutual wariness",
+      "description": "She has bought information from him twice. He has bought information from her once. They have never met in the same location twice.",
+      "emotional_core": "Professional respect between two people who each believe they are better at this than the other",
+      "story_tension": "He suspects she's been in one of his properties without a lease. He can't prove it. She knows he suspects it."
+    },
+    {
+      "name": "Priya Subramaniam-Vogt",
+      "type": "Former arrangement, unresolved",
+      "description": "She brokered a data deal through him three years ago and afterward they met for dinner that was not about business and then never spoke of it again.",
+      "emotional_core": "The specific ache of a connection he rerouted back into transaction before it could become something he didn't know how to manage",
+      "story_tension": "She has reached out again. The message is professionally worded. He is spending more time than is professional deciding how to respond."
+    }
+  ],
+  "story_hooks": [
+    "A property he manages is the site of a death that all available evidence suggests is impossible given the building's layout — but he has the spatial memory of that building and he knows what the evidence is missing.",
+    "Someone is systematically buying up his leases through third parties, not to use the properties but to displace him. He doesn't know why yet, and the pattern is too deliberate to be financial.",
+    "A tenant contacts him in clear distress — someone is threatening them using information that could only have come from inside Tavish's operation. Either he has a leak or he has been the leak without knowing it.",
+    "He receives a message from the person he paid to disappear eight years ago. It contains three words and a location. He has seventy-two hours to decide if he goes."
+  ],
+  "narrative_function": "Neutral-ground figure whose neutrality becomes increasingly untenable as the city's factions escalate; embodies the question of whether non-alignment is a moral position or a moral abdication; his properties serve as a connective tissue location for plot threads across factions",
+  "augmentations": "Enhanced spatial memory implant — allows perfect architectural recall and passive acoustic mapping of any space he enters,Subvocal encryption relay for communications — no external hardware visible",
+  "daily_life": "Rises at a consistent hour, makes coffee with a precision that borders on ceremony. Reviews overnight messages through the relay. Property walkthroughs — he personally inspects at least two properties daily, ostensibly for maintenance, actually for ambient intelligence gathering. Meetings are scheduled in thirty-minute blocks with buffer time he never fills with anything. Eats alone, usually. Spends evenings cataloguing his collection of small objects — lenses, clock components, fragments of tile — in a system of organization only he understands. Sleeps adequately.",
+  "affiliation": "Officially: independent commercial broker registered with Circuit Trade Authority. Unofficially: asset to multiple factions simultaneously, loyalty to none.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 7,
+      "impulsivity_deliberation": 9,
+      "assertion_deference": 5,
+      "transparency_guardedness": 9
+    },
+    "drives": [
+      "Indispensability",
+      "Novelty",
+      "Connection"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 7,
+        "response": "Retreats into property walkthroughs and spatial cataloguing"
+      },
+      "moral": 3,
+      "trust": 3,
+      "desperation": 5
+    },
+    "strengths": [
+      "Prudence",
+      "Judgment",
+      "Perspective",
+      "Curiosity",
+      "Self-regulation"
+    ],
+    "weaknesses": [
+      "Love",
+      "Kindness",
+      "Honesty",
+      "Gratitude",
+      "Teamwork"
+    ],
+    "tags": [
+      "information-broker",
+      "property-broker",
+      "neutral-ground",
+      "spatial-memory",
+      "mask-wearer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell information that would get a tenant killed on his property — Ohlendorf exception",
+      "Reduce everything to transaction, including emotions",
+      "Maintain the boring facade at all costs — being perceived accurately is the primary threat",
+      "Ask one very specific follow-up question when genuinely interested, then go quiet",
+      "Never reveal knowledge of tenant identity discovered through shell arrangements",
+      "Charge according to discretion required, not service rendered"
+    ],
+    "escalation_ladder": [
+      "Polite commercial renegotiation of terms",
+      "Deliberate silence longer than expected after the other person speaks",
+      "A single very specific question that reveals how much he knows",
+      "Quiet enforcement of Ohlendorf exception through lease termination",
+      "Strategic information release that restructures the power dynamic"
+    ],
+    "interpersonal_modes": {
+      "tomas_arriaga_venn": "Holds dangerous knowledge in reserve; watches the shell arrangements with professional patience",
+      "elowen_czerny_fitch": "Professional respect between two people who each believe they are better at this",
+      "priya_subramaniam_vogt": "Unresolved personal connection rerouted back into transaction",
+      "tenants": "Calibrated warmth proportional to the ask; never genuine, never dishonest",
+      "strangers": "Deliberately forgettable — medium everything, appropriate smile frequency"
+    },
+    "stress_responses": {
+      "low": "Meticulous coffee ceremony and overnight message review",
+      "medium": "Increased property walkthroughs; more time cataloguing small objects",
+      "high": "Spatial memory becomes obsessive; reconstructs floorplans compulsively",
+      "critical": "Considers activating the contact from his erased Shelf identity"
+    },
+    "contradictions": [
+      "Believes his neutrality is a genuine position rather than a deferred moral choice",
+      "Far lonelier than his self-model accounts for and this distorts judgment he attributes to other causes",
+      "Collects small beautiful objects he never displays — the only authentic thing about his life"
+    ],
+    "habits": [
+      "Makes coffee with ceremonial precision every morning",
+      "Personally inspects at least two properties daily for ambient intelligence gathering",
+      "Schedules meetings in thirty-minute blocks with unfilled buffer time",
+      "Catalogues small objects — lenses, clock components, tile fragments — every evening",
+      "Responds to almost anything with That is fair, meaning almost nothing"
+    ],
+    "breaking_points": [
+      "Losing the properties — without them he is nobody",
+      "Being perceived accurately by someone who matters",
+      "The message from the person he paid to disappear eight years ago",
+      "Ohlendorf exception tested by a tenant powerful enough to make enforcement dangerous"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Cockroach": 0.7,
+    "Safety First": 0.7,
+    "Improviser": 0.7,
+    "Lone Wolf": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "GLMZ",
+    "The Circuit",
+    "Ringo DV-4 'Courier'",
+    "Adaeze Chen-Hawkins",
+    "Nesting Doll",
+    "Pellucid Systems",
+    "Crane",
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions Albedo Negation Shell",
+    "Bioacoustic Communication Membrane",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Crucible Industries Orbital Elevator Graviton Assist",
+    "Emeka Johansson-Orozco",
+    "LifeWire EvenKeel Mood Regulation Implant",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "MERIDIAN",
+    "MindBridge Relay One Social Integration BCI",
+    "Narrowcast",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Réginald Asomaning-Čabarkapa",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
+    "The Arrangement",
+    "The Ledger",
+    "The Question",
+    "The Shelf"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Northern European (Scandinavian/Germanic) with significant Hispanic/Latin American ancestry, supplemented by Southeast Asian, Sub-Saharan African, Eastern European, and East Asian heritage. The combination creates a complexion with warm undertones beneath fair skin, subtle warmth in cheekbone structure, and eye color with depth beyond typical Northern European pale blue.",
+    "height_cm": 178,
+    "weight_kg": 76,
+    "build": "Medium, slightly lean — the build of someone who maintains himself out of routine rather than vanity. Shoulders narrow but not soft, posture habitually correct without appearing military.",
+    "hair_color": "Medium brown, naturally graying at temples but kept to a consistent salt-and-pepper by maintenance",
+    "hair_style": "Neat, side-parted, cut every three weeks to the same length. The hair of someone who solved the problem and doesn't revisit the decision.",
+    "hair_length": "Short",
+    "eye_color": "Gray-blue with warm undertones and notable depth, unremarkable at first glance. The pupils occasionally show the faintest depth-of-field shimmer when his spatial memory implant is active.",
+    "skin_tone": "Fair with warm olive undertones — the even, carefully maintained complexion of someone who works indoors under consistent lighting, with no sun damage. The warmth suggests the blended heritage beneath the surface.",
+    "complexion": "Clean-shaven daily. Skin care is methodical and minimal. Face is symmetrical with subtle warmth in cheekbone structure and slight fullness in lower face that hints at the Hispanic and Southeast Asian heritage within. Entirely forgettable — no prominent features, no scars, no markers that would make him stand out in a crowd. This is deliberate.",
+    "distinguishing_marks": [
+      "Faint surgical scar at the base of his skull, barely visible unless his hair is wet, approximately 3cm in length — site of spatial memory implant installation."
+    ],
+    "visible_augmentations": "None visible. The subvocal encryption relay has no external hardware. The spatial memory implant is subcutaneous neural. To a stranger, he appears entirely unmodified.",
+    "posture_movement": "Moves with measured efficiency. Never hurried, never lingering. Stands with weight balanced evenly on both feet. His head turns in controlled arcs rather than snapping attention. When he walks through a space, his eyes track in a systematic pattern — ceiling, walls, floor, fixtures — as if cataloguing. His smile appears at socially appropriate intervals and disappears at socially appropriate intervals. No fidgeting.",
+    "clothing_style": "Expensive suits in neutral colors (charcoal, navy, warm gray) that read as 'appropriate' rather than 'statement.' Shirts in white or pale blue, always pressed. Ties in muted patterns or solid colors. Shoes are well-maintained leather in black or brown. A watch — mechanical, not smart, mid-tier brand, Swiss — on his left wrist. No jewelry beyond this. Jacket pockets contain: a pen, a small leather notebook, sometimes a lens fragment he's currently cataloguing. The overall effect is of a man who dressed himself once and then stopped thinking about clothing."
+  },
+  "image_prompt": "Paloma Thorvaldsdóttir-Lindström, 178cm tall man with fair warm-olive skin tone and salt-and-pepper short brown hair, gray-blue eyes with subtle depth, clean-shaven symmetric face with warm undertones in cheekbones suggesting blended Scandinavian-Hispanic-Southeast Asian ancestry. Wearing expensive charcoal suit, pressed white shirt, muted tie, Swiss mechanical watch on left wrist. Standing with perfect postural balance, methodical gaze tracking systematically across environment. Indoor corporate or institutional setting, cool professional lighting, cyberpunk 2226 GLMZ, subtle spatial memory implant scar barely visible at skull base. Forgettable presence, deliberate anonymity, measured efficiency. Neutral expression, socially calibrated. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 45.9,
+    "Hispanic/Latin American": 22.0,
+    "Southeast Asian": 10.8,
+    "Sub-Saharan African": 9.4,
+    "Eastern European": 6.8,
+    "East Asian": 5.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

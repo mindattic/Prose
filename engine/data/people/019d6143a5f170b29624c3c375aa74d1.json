@@ -1,0 +1,294 @@
+{
+  "id": "019d6143a5f170b29624c3c375aa74d1",
+  "type": "character",
+  "name": "Kai Sabbagh",
+  "aliases": [
+    "Dev",
+    "Grease"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Mobile mechanic — operates a converted cargo trike, does roadside and residential vehicle repair",
+  "age": 29,
+  "status": "active",
+  "location": "Geartown, working routes through Kessler Interchange and Dearborn Forge, near North Ave and Milwaukee",
+  "description": "Dev is lean and wire-strung, with warm brown skin perpetually stained at the knuckles with synthetic lubricant that no solvent fully removes. He has geneware cat ears — mottled amber and black, twitching with genuine involuntary response to sound — that he got at nineteen on a payment plan he took three years to finish. His dark eyes have patterned irises in a sunburst of gold and deep green, a cosmetic mod he received free from a friend who owed him labor. He keeps his hair close-cropped except for a single braid at the back held with a copper fitting.\n\nDev is relentlessly cheerful in a way that reads as either genuine warmth or a very good performance, and the truth is somewhere in between. He talks to every vehicle he works on, whispering diagnoses and apologies and thanks, and he half-believes the E.L.F.s that inhabit older engines can hear him. He runs on stimulant tea and spite, fiercely proud of his independence, and quietly terrified of what happens if the trike breaks down and he can't afford the parts.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.65,
+      "shadow": 0.35,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "losing the trike and with it his independence and identity",
+      "being absorbed into a corponation's employment system"
+    ],
+    "core_desires": [
+      "to own a permanent shop with his name on it",
+      "to be genuinely known by someone, not just liked"
+    ],
+    "coping_mechanisms": [
+      "compulsive cheerfulness as social armor",
+      "talking to machines as a substitute for intimacy"
+    ],
+    "blind_spots": [
+      "mistakes being useful to people for being close to them"
+    ],
+    "secret": "The trike isn't registered under his name — it's still legally owned by a dead man, a former mentor whose death Dev never reported because it would have triggered a debt transfer. He's been operating on forged plates for four years."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and colloquial, heavy with Geartown mechanical slang and Tamil endearments absorbed from his mother. Gives machines pronouns and personalities.",
+    "cadence": "Rapid-fire when comfortable, chattiness as a social weapon. Slows dramatically when he's actually thinking.",
+    "verbal_tics": [
+      "calls engines and vehicles 'her' regardless of make",
+      "'She just needs to be heard, yeah?'"
+    ],
+    "example_lines": [
+      "'Okay so here is the thing — she is not broken, she is insulted. You ran her on cut-rate coolant. That is a personal offense.'",
+      "'I can have it done by second bell. Maybe third bell. Definitely before dark. Probably.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He serviced a vehicle that came in with biological material in the undercarriage that he cleaned out without thinking — he now suspects he destroyed evidence of something serious",
+    "A Ferrogate Transit supervisor has been pressuring him to report on the movements of independent operators in exchange for legitimate subcontract status — he hasn't said yes or no yet"
+  ],
+  "narrative_function": "Mobile information source — he sees everything from street level across multiple districts. Potential transport fixer, someone who can get a vehicle running quietly and ask no questions. Represents the precarity of gig-tier independence.",
+  "augmentations": "Geneware cat ears (amber/black, functional sound sensitivity). Patterned irises (sunburst, cosmetic). Haptic feedback gloves — not implanted, worn — that translate micro-vibrations in metal into tactile data.",
+  "daily_life": "Loads the trike by 06:30, runs a fixed morning route through Kessler Interchange hitting fleet clients, then freelances through Geartown and Dearborn Forge until dark. Eats whatever cart food he passes.",
+  "affiliation": "Independent; occasional subcontract work for Ferrogate Transit maintenance overflow",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "mobile worker",
+      "street-level intelligence",
+      "gig economy",
+      "charming deflector",
+      "E.L.F. sympathizer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always finish a job once started — abandoning work feels like a death",
+      "Never work on vehicles for anyone who makes him feel watched"
+    ],
+    "escalation_ladder": [
+      "Joke his way past discomfort",
+      "Get busy with tools and go quiet",
+      "Invent a prior commitment and leave",
+      "Run"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and helpful — uses friendliness to control the interaction",
+      "friends": "Inconsistently available, generous with labor but withholding emotionally"
+    },
+    "stress_responses": {
+      "low": "Talks more and faster",
+      "medium": "Focuses entirely on physical task at hand, becomes briefly brilliant",
+      "high": "Disappears — literally drives away and doesn't answer comms"
+    },
+    "contradictions": [
+      "Craves genuine connection but keeps every relationship transactional so it can be ended cleanly"
+    ],
+    "habits": [
+      "Taps three times on any engine before starting it — an offering gesture to whatever E.L.F. might be resident",
+      "Hums tunelessly while working, stops immediately if he notices someone listening"
+    ],
+    "breaking_points": [
+      "Threat to the trike or his operating license",
+      "Being caught in the dead man's registration fraud"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware cat ears (cosmetic-functional)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware cat ears (cosmetic-functional)",
+      "replaces": ""
+    },
+    {
+      "name": "Patterned irises (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned irises (cosmetic)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9,
+    "Judge": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Born in Geartown to a Tamil-Turkish family, father a fleet mechanic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — Began apprenticing under independent mechanic Osei Varma-Delic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Osei Varma-Delic dies; Dev conceals death and assumes trike operation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Began occasional Ferrogate subcontract overflow work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Ferrogate supervisor begins applying pressure for information",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Dearborn Forge",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Slagworks Industrial",
+    "Gold",
+    "The Milwaukee Core",
+    "Arcturus KS-7 'Nursery'",
+    "Auricula Felis Modification",
+    "Axonal Stretch Resonance Lance",
+    "Dragan Petersen-Bah",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Pure Hand",
+    "The Wire Taps",
+    "VESPER AESTHETICS Mirage Dual-Mode Social Eye",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Middle Eastern-Southeast Asian-Pacific Islander blend with Eastern European undertones; ancestry creates a complexion that bridges warm amber-bronze tones with subtle olive undertones characteristic of the Levantine-Malay genetic corridor",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and wire-strung, all efficient muscle with minimal body fat; the build of someone who climbs in and out of engine bays for twelve hours a day",
+    "hair_color": "Black",
+    "hair_style": "Close-cropped on sides and crown, with a single braid at the nape secured with a copper fitting; braid is approximately 20cm long",
+    "hair_length": "Short (crown) / Medium (braid)",
+    "eye_color": "Dark brown with patterned irises — sunburst design in deep gold and forest green radiating from pupil",
+    "skin_tone": "Warm amber-bronze with olive undertones; the particular golden-brown cast that results from Middle Eastern and Southeast Asian ancestry mixing, with subtle warmth from Pacific Islander heritage",
+    "complexion": "Lean, angular jaw with prominent cheekbones characteristic of Southeast Asian and Levantine ancestry blend; perpetual dark stains at knuckles and under fingernails from synthetic lubricant; skin otherwise clear with naturally warm undertone; expression tends toward half-smile or concentrated focus",
+    "distinguishing_marks": [
+      "Synthetic lubricant staining at knuckles and under fingernails (permanent discoloration from years of work)",
+      "Small grease burn scar on left forearm, approximately 3cm, pale and faded"
+    ],
+    "visible_augmentations": "Functional geneware cat ears — mottled amber and black fur, naturally proportioned, with visible muscle and cartilage structure; ears twitch involuntarily in response to sound and vehicle engine frequencies. Worn haptic feedback gloves (heavy-duty synthetic leather with visible micro-vibration sensors embedded at fingertips and palm, usually tucked into tool belt or worn during diagnostic work).",
+    "posture_movement": "Relaxed, ground-centered posture; moves with economical efficiency through tight spaces; head tilts slightly when listening — cat ears often rotate toward sound source independently of head movement; hands are always in motion, fingers splayed and sensitive; walks with the loose stride of someone comfortable in grimy environments",
+    "clothing_style": "Tier 4 working-class utility wear: reinforced canvas work pants in faded gray with multiple tool pockets (Ferrogate Transit contractor patch on left thigh); sleeveless thermal undershirt or loose linen shirt depending on weather, often left unbuttoned and tied at waist; heavy-duty steel-toed boots scuffed and oil-darkened; insulated work vest with reflective strips; copper wedding-band style ring on left hand, dented and worn from work. Gear: tool belt with integrated Φ-scanner, multitool, and diagnostic cable spool; haptic gloves usually hung from belt. No corporate branding except the Ferrogate patch — everything else is independent or salvaged."
+  },
+  "image_prompt": "Kai Sabbagh, a lean 172cm tall mechanic with warm amber-bronze skin and olive undertones reflecting Middle Eastern-Southeast Asian-Pacific Islander heritage, in a dimly lit 2226 GLMZ engine bay. Close-cropped black hair with a copper-fitted braid at nape. Functional mottled amber-and-black geneware cat ears that twitch toward distant engine sounds. Dark brown eyes with gold-and-green sunburst irises. Wearing faded gray reinforced canvas work pants with Ferrogate Transit contractor patch, sleeveless thermal undershirt tied at waist, oil-darkened steel-toed boots, insulated work vest with reflective strips. Worn copper ring on left hand. Haptic feedback gloves tucked into heavy tool belt carrying Φ-scanner and diagnostics. Lean angular face with perpetual synthetic lubricant stains at knuckles and under fingernails; pale 3cm grease burn scar on left forearm. Relaxed posture, hands in motion, ground-centered stance. Warm industrial lighting with neon accents reflecting off chrome engine components. Cyberpunk 2200s aesthetic, working-class independent contractor aesthetic, gritty and authentic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 36.9,
+    "Southeast Asian": 31.1,
+    "Pacific Islander": 21.0,
+    "Eastern European": 11.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

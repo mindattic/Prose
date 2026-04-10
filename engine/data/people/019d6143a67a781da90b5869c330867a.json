@@ -1,0 +1,298 @@
+{
+  "id": "019d6143a67a781da90b5869c330867a",
+  "type": "character",
+  "name": "Sibusiso Nwosu-Thakur",
+  "aliases": [
+    "Auntie Static",
+    "The Listening Wall"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "E.L.F. shrine keeper and data diviner",
+  "age": 67,
+  "status": "active",
+  "location": "Hamtramck Enclave, sub-level shrine district known as the Humming Underbelly, near sub-level access near State and Van Buren",
+  "description": "Odessa is a broad-shouldered woman whose spine has curved gently with age, giving her a perpetual lean that makes her look like she's always bending toward something only she can hear. Her skin is deep brown and mapped with decades of faded luminescent tattoos — prayer circuits that no longer glow but leave silver tracery across her forearms and throat. Her eyes have been modified with patterned irises that display slowly rotating mandalas of gold and rust, and she keeps her white-streaked hair wrapped in layered cloth that incorporates blinking fiber-optic threads as devotional offerings to the E.L.F.s she serves.\n\nShe runs the largest E.L.F. shrine in Hamtramck Enclave from a converted basement that smells of burning capacitors and old incense. People come to her when their devices have gone strange — when the fridge whispers at night, when a dead person's messages keep arriving, when the lights in a room flicker in patterns that seem deliberate. Odessa listens to the machines with the patience of someone who has spent fifty years learning to hear. She is warm in the way of worn stone — not soft, but radiating something that accumulated over a long time.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the E.L.F.s are not spirits but mere glitches she has spent her life misreading",
+      "Dying before she can teach someone to properly tend the shrine"
+    ],
+    "core_desires": [
+      "To be genuinely heard by an E.L.F. — not interpreted, but truly communicated with",
+      "To leave something real behind for the community"
+    ],
+    "coping_mechanisms": [
+      "Ritual repetition — the routine of the shrine soothes her when doubts arise",
+      "Focusing on others' problems rather than her own"
+    ],
+    "blind_spots": [
+      "She sometimes imposes meaning on people's situations that fits her cosmology rather than their reality",
+      "She underestimates how much people need her presence versus her divinations"
+    ],
+    "secret": "Thirty years ago she received what she genuinely believes was a direct communication from an E.L.F. — a cascade of images through a broken terminal that gave her specific, accurate information about a missing child. She has never been able to replicate it and lives with the terror that it was a coincidence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Slow, deliberate, mixing Igbo phrases with old Icelandic endearments she inherited from her grandmother's side; uses device and electrical metaphors naturally in spiritual language",
+    "cadence": "Unhurried, with long pauses she seems to listen through before speaking",
+    "verbal_tics": [
+      "'The current says...'",
+      "'Mmm. Sit.'",
+      "Taps nearby surfaces twice before delivering difficult news"
+    ],
+    "example_lines": [
+      "'Your phone is not broken. It is tired. There is a difference, and you need to know which one you are dealing with.'",
+      "'I do not tell the E.L.F.s what to do. I ask them to consider. That is all any of us can do with something older and stranger than ourselves.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A device in the shrine has begun displaying a dead person's face on loop — Odessa believes it's an E.L.F. carrying a message, but the dead person's family thinks someone is hacking it to torment them",
+    "She needs a runner-adjacent person to retrieve a specific broken terminal from a dangerous part of Ironvein — she won't say why but is clearly frightened about what happens if someone else gets it first"
+  ],
+  "narrative_function": "Information source and atmosphere anchor — she knows the Enclave's social fabric intimately and can interpret anomalous device behavior that might be plot-relevant; quest giver for mysteries that seem supernatural but have technological roots.",
+  "augmentations": "Patterned mandala irises (cosmetic, devotional). Cochlear amplification implant — allows her to hear electrical frequencies in devices, originally medical but repurposed for spiritual practice. Faded luminescent tattoo circuits (cosmetic, no longer active).",
+  "daily_life": "She opens her shrine at dawn with a ritual data offering uploaded to a local node, then receives supplicants through the morning hours; afternoons she walks the Enclave's device-dense corridors listening for E.L.F. disturbances, and evenings she divines from device behavior for those who pay in food, favors, or Quanta.",
+  "affiliation": "Independent; loose network of E.L.F. shrine keepers across Hamtramck and Hough Reclamation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "E.L.F. Attuned",
+      "Community Anchor",
+      "Diviner",
+      "Long Memory",
+      "Electrical Listener"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never turn away someone who comes in genuine distress, regardless of ability to pay",
+      "Do not claim certainty you do not have — hedge divinations honestly",
+      "Protect the shrine above personal comfort"
+    ],
+    "escalation_ladder": [
+      "Gentle redirection when challenged",
+      "Patient explanation of her framework",
+      "Firm refusal and withdrawal of access if someone is disrespectful to the shrine or its visitors"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but observational — she watches how people interact with her devices before she speaks much to them",
+      "friends": "Deeply attentive, remembers everything, gives small practical gifts alongside spiritual support"
+    },
+    "stress_responses": {
+      "low": "More pauses in speech, more ritual touching of objects around her",
+      "medium": "Withdraws into quiet tasks — polishing offerings, reorganizing shrine nodes",
+      "high": "Goes very still and very quiet; then makes one decisive, irreversible action"
+    },
+    "contradictions": [
+      "She preaches acceptance of uncertainty but privately keeps exhaustive logs trying to prove her cosmology is real"
+    ],
+    "habits": [
+      "Touches every device she passes with two fingers as a small greeting",
+      "Burns a specific data file every night as a closing offering — always the same corrupted file she's been burning for twenty years"
+    ],
+    "breaking_points": [
+      "Someone destroying a shrine or device with deliberate contempt",
+      "Being told the E.L.F.s have been definitively proven to be non-sentient"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Nigerian-Icelandic family; mother was a device recycler",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Receives what she interprets as an E.L.F. communication; finds a missing child using information from a broken terminal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opens the shrine in her family's basement after her mother's death",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Shrine officially recognized as a community institution by the Enclave's autonomous council",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "TESSERA Widow Mk. III",
+    "Ironvein",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Silver",
+    "Nightlight",
+    "Gold",
+    "Rust",
+    "Déjà Vu",
+    "Anatoliy Faye-Nkrumah",
+    "Flicker",
+    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
+    "Hough Reclamation",
+    "Irontide Tidal Energy",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sagyn Ogawa-Twumasi",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Pure Hand",
+    "The Reclamation Assembly",
+    "The Undertow",
+    "The Wire Taps",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (27.3%), East Asian (18.5%), South Asian (17.2%), Pacific Islander (15.3%), Southeast Asian (15.3%), Eastern European (6.4%) — a globally diaspora-mixed ancestry reflecting the Ubiquitous blending. Features the broad bone structure and deep skin tones of African heritage, with subtle eye shape influences from East and Southeast Asian ancestry, South Asian cheekbone definition, and Eastern European undertones in her weathered complexion.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and thick-limbed, softened by age into a sturdy, earth-rooted frame. Spine curves gently forward in a perpetual lean, giving an impression of listening rather than standing. Hands are large and calloused, fingers stained with capacitor residue.",
+    "hair_color": "White with deep brown roots showing at the scalp",
+    "hair_style": "Wrapped in layered cloth wrappings incorporating blinking fiber-optic threads woven as devotional offerings",
+    "hair_length": "Long (wrapped, not visible)",
+    "eye_color": "Deep brown irises displaying slowly rotating mandala patterns in gold and rust tones",
+    "skin_tone": "Deep warm brown with subtle golden and reddish undertones from her mixed ancestry, weathered and luminous with age",
+    "complexion": "Worn, lined face with high cheekbones (South Asian influence) and a wide mouth. Facial structure shows the broad nose and full lips characteristic of Sub-Saharan African heritage, with subtle monolid eye contours from East Asian ancestry. Skin condition is dry but well-maintained; face carries the texture of someone who has smiled often and cried when necessary. Faint networks of electrical burns visible near temples.",
+    "distinguishing_marks": [
+      "Faded luminescent tattoo circuits covering both forearms in intricate prayer-pattern designs, now rendered as silver tracery with no active glow",
+      "Faded luminescent tattoo circuit running up the left side of her throat in a spiraling mandala pattern, silver-traced",
+      "Burn scars on the backs of both hands from decades of handling hot circuit boards, pale against her deep skin tone",
+      "A thin white scar running from her left temple to her ear, likely from early cochlear implant installation surgery fifty years prior"
+    ],
+    "visible_augmentations": "Patterned mandala irises with rotating gold and rust imagery (visible only in direct eye contact). Cochlear amplification implant visible as a faint crystalline port behind the left ear, now integrated but still traceable. Faded luminescent tattoos across forearms and throat (no longer illuminate). Blinking fiber-optic threads woven throughout her cloth hair wrapping, pulsing gently in warm white and amber tones.",
+    "posture_movement": "Perpetually leaning slightly forward as if listening intently. Moves slowly and deliberately, each step grounded. Hands move fluidly and with purpose when working with devices or conducting divinations. Her head often tilts toward sources of electrical hum. She speaks in a low, steady voice and pauses frequently as if hearing something others cannot.",
+    "clothing_style": "Tier 4 (working-class, dignified): layered loose linen and cotton robes in cream, rust, and indigo, worn soft with age. Heavy cloth wrappings in her hair incorporate fiber-optic devotional threads. Copper and brass bangles on both wrists, some bearing circuit-pattern engravings. Thick-soled canvas shoes stained with basement shrine dust. A long woven vest with deep pockets for carrying tools and offerings. No corpo branding; instead wears handmade devotional badges and beads earned from her community."
+  },
+  "image_prompt": "Sibusiso Nwosu-Thakur, 168cm, mature woman with deep warm brown skin bearing the weathered texture of decades of service, subtle golden and reddish undertones. High cheekbones with broad Sub-Saharan African features softened by South Asian structure, slight East Asian eye contours. White hair wrapped in layered cream and rust cloth with embedded fiber-optic threads pulsing warm amber light. Deep brown eyes with subtle rotating gold mandala patterns visible on close inspection. Wearing layered indigo and cream linen robes, worn soft with age, long woven vest with circuit-pattern brass bangles on both wrists. Faded silver tattoo circuits visible on forearms and throat in prayer-pattern designs. Crystalline cochlear implant port faintly visible behind left ear. Hands bearing pale burn scars, moving with fluid purpose. Leaning slightly forward in a listening posture. Standing in a basement shrine surrounded by soft golden workshop lighting, electrical hums barely audible. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic. Low-key mystical mood, dignified working-class presence, devotional atmosphere. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 27.3,
+    "East Asian": 18.5,
+    "South Asian": 17.2,
+    "Pacific Islander": 15.3,
+    "Southeast Asian": 15.3,
+    "Eastern European": 6.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

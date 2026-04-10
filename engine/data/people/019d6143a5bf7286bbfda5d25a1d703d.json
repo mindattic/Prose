@@ -1,0 +1,303 @@
+{
+  "id": "019d6143a5bf7286bbfda5d25a1d703d",
+  "type": "character",
+  "name": "Sol Vestergaard",
+  "aliases": [
+    "Bart",
+    "Old Bart",
+    "The Teller"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Sterling-Nakamura mid-level accountant, now a neighborhood storyteller and oral historian, UBC supplement pensioner",
+  "age": 88,
+  "status": "active",
+  "location": "Avalon Quiet, second floor of the Avalon Quiet Senior Residential Block, with a regular seat in the lobby where he receives visitors, near Lincoln and Clark",
+  "description": "Bartholomew Siosaia-Przybyszewski is very old and has made peace with every part of this except his knees, which he mentions frequently. He is tall but carries his height in a hinge now, folded slightly forward, and he navigates with a carved wooden walking stick that he made himself in a period of retirement boredom forty years ago and has since refused to replace with anything modern. He has Tongan and Polish features, deep brown skin, thick white hair he keeps brushed carefully back, and eyes that are still keen and slightly mischievous behind cataracts he has treated minimally. He wears a ratty sterling-silver brocade vest that was fashionable approximately fifty years ago and he wears it without irony.\n\nHe spent forty-two years in Sterling-Nakamura's internal accounts division — the kind of institutional position that makes a man invisible and gives him an extraordinary view of how money actually moves. He retired quietly in 2165 and immediately became interesting, at least to himself. He is a gifted storyteller in the old sense — he memorizes things, shapes them, delivers them. He knows more about Avalon Quiet's last hundred years than anyone alive and offers this knowledge freely to anyone who sits with him long enough. He is funny in the way that very old people who have stopped worrying about social consequence are funny: without warning and with full commitment.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "Dying in the middle of a story — literally, that his heart will give out before he finishes something he's started",
+      "Being remembered wrong — the wrong story attached to his name"
+    ],
+    "core_desires": [
+      "To tell the stories correctly — as close to the actual truth as a story can be",
+      "Company — he is genuinely lonely and genuinely interested in people and both things are always true simultaneously"
+    ],
+    "coping_mechanisms": [
+      "Storytelling as processing — everything that happened to him has been turned into a story, which makes it both shareable and slightly at a distance",
+      "Humour — he finds almost everything funny and uses this constantly"
+    ],
+    "blind_spots": [
+      "He can get so absorbed in the narrative shape of events that he loses track of the urgency of present situations",
+      "He assumes everyone has as much time as he does, which at 88, sitting in a lobby, is infinite"
+    ],
+    "secret": "During his last decade at Sterling-Nakamura, Bart processed a series of accounts that he eventually recognized as a systemic diversion of pension funds into a subsidiary that was paying for private security operations during a labor suppression campaign. He did not report it. He rationalized that he did not have enough information, that he was too close to retirement, that it would not change anything. He knows these were rationalizations. He has never told this story."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich, unhurried, slightly archaic — he uses words that fell out of fashion decades ago and makes them feel natural. Mixes register freely, from technical financial language to folk idiom.",
+    "cadence": "Slow and deliberate in the best tradition of storytelling. He breathes stories, he doesn't rush them. Can sustain a forty-five minute account without notes.",
+    "verbal_tics": [
+      "'Now I'll tell you the true story of that, and the true story is different' — signals incoming historical revision",
+      "'This was — hold on — '73? No. '74.' — constant minor self-correction",
+      "Chuckles before punchlines"
+    ],
+    "example_lines": [
+      "'Sterling-Nakamura's official version is very flattering to Sterling-Nakamura. The numbers I saw were not so flattering. But then numbers never lie — people lie, numbers just hold the shape of it.'",
+      "'My knees are eighty-eight years old and furious about it. My mind is still somewhere around forty-two and hasn't accepted the update. We manage.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Bart mentions, in passing, a story about a Sterling-Nakamura subsidiary from the late '70s that has details that match something a player character has been trying to investigate — he tells it as an amusing anecdote, not realizing they need it urgently",
+    "A young researcher from the Cultural Memory Project visits Bart to record his oral histories and discovers he knows things about the neighborhood that contradict the official records — Bart himself isn't sure which version is right",
+    "Bart's cardiac rhythm regulator needs replacement and the model is now discontinued — someone needs to find him a compatible unit before his old one fails"
+  ],
+  "narrative_function": "Oral historian and institutional memory for Avalon Quiet and Sterling-Nakamura internal history; local color and warmth; potential source of financial or organizational information that he witnessed but did not participate in; comic relief with substance",
+  "augmentations": "Cataract treatment (partial, by choice). Pacemaker-equivalent cardiac rhythm regulator, installed age 79. Nothing cosmetic — he has never been interested.",
+  "daily_life": "Comes down to the lobby by 09:00, receives anyone who wants to talk until noon, then naps, then comes back in the afternoon. He is there almost every day unless the weather moves him to his window, which he considers a better story than the lobby on those days.",
+  "affiliation": "Sterling-Nakamura retiree pension system; Avalon Quiet Senior Residential Block; informally revered by several generations of neighborhood residents",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 3,
+      "vitality": 4,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 10,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 0,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Oral Historian",
+      "Sterling-Nakamura Retiree",
+      "Neighborhood Elder",
+      "Storyteller",
+      "Financial Witness",
+      "Pension Dependent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Tell the story — almost always the right course of action in his view",
+      "Never be unkind to someone who is genuinely listening"
+    ],
+    "escalation_ladder": [
+      "Tell a story that illustrates the problem without naming it directly",
+      "Name it directly but with humor",
+      "Name it directly without humor, which people who know him understand as serious",
+      "Ask someone younger to do the thing he cannot do himself"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately welcoming — 'You've found me, have you? Good. Sit down. Do you want to start or should I?'",
+      "friends": "Deep warmth, extremely familiar, will tell the same story multiple times to a friend because he trusts them to appreciate different versions"
+    },
+    "stress_responses": {
+      "low": "Tells a funny story about something worse",
+      "medium": "Goes quiet and stares out the window, which is disconcerting from someone who is normally never quiet",
+      "high": "Asks to be alone. Will be fine. Does not like witnesses to distress."
+    },
+    "contradictions": [
+      "He is the neighborhood's keeper of true stories and has one large true story he has never told and may never tell"
+    ],
+    "habits": [
+      "Brushes his white hair with the same small brush he's had for thirty years",
+      "Leaves a small poem — written on paper, in pen — on the ELF shrine in the lobby every Sunday; the lobby ELF he calls the Concierge",
+      "Eats the same breakfast every morning: black tea, two eggs, one piece of bread — 'the body wants what it knows'"
+    ],
+    "breaking_points": [
+      "A direct question from someone who has already found partial evidence of the pension diversion — he might finally tell the story if someone already knows half of it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cardiac rhythm regulator — legacy model, installed 2179, currently flagged as discontinued by manufacturer",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cardiac rhythm regulator — legacy model, installed 2179, currently flagged as discontinued by manufacturer",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nostalgic": 0.9,
+    "War Weary": 0.9,
+    "Mentor": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2110 — Born in Avalon (pre-Quiet designation) to a Tongan-Polish family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2132 — Joins Sterling-Nakamura internal accounts division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2155-2164 — Processes accounts connected to the pension diversion; does not report it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2165 — Retires from Sterling-Nakamura on pension",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2168 — Takes up residence in Avalon Quiet Senior Block",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2179 — Cardiac rhythm regulator installed following episode",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Becomes formally recognized as Avalon Quiet's unofficial oral historian after his account of the 2183 flooding crisis proves more accurate than official records",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Current year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Molotov Standard' Incendiary Bottle"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ouroboros CS-4 'Gentleman'",
+    "Avalon Quiet",
+    "Pullman Works",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Alper Lebedev-Tutu",
+    "Cezar Watanabe-Gyasi",
+    "Idris Forsberg-Quaye",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Molotov Standard' Incendiary Bottle",
+    "Sustrel",
+    "The Pure Hand",
+    "Uncle Jun's Synth-Noodle Window",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Northern European, East Asian, Sub-Saharan African, and Hispanic/Latin American blend—a geneticist's map of the Ubiquitous Diaspora. Strong Northern European and East Asian foundation with substantial Sub-Saharan African ancestry creating a complex, multi-layered phenotype. The combination produces a distinctly mixed-heritage appearance that defies easy categorization.",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Tall but folded forward with age, shoulders slightly rounded with decades of desk work. Still carries substantial frame beneath the stoop — athletic build rendered skeletal by time rather than wasting.",
+    "hair_color": "White, natural",
+    "hair_style": "Brushed carefully back from forehead, full volume, maintained with deliberate care",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown, slightly clouded by cataracts he has chosen not to fully treat",
+    "skin_tone": "Medium-deep brown with warm undertones from the East Asian and Sub-Saharan African ancestry, weathered by eight decades into a rich, dignified patina. Northern European ancestry provides slight variation in undertone depth across his face and hands.",
+    "complexion": "Face deeply lined with character — laugh lines dominating the landscape around his eyes and mouth. Features show the blended genetics clearly: slightly wider facial structure with defined cheekbones, subtle epicanthal eye fold from East Asian heritage, full lips with generous definition from African ancestry. Minimal grooming vanity: unshaved some days, shaved others without particular pattern. Skin intact and dignified, no visible sun damage or liver spots despite age.",
+    "distinguishing_marks": [
+      "Thin white scar along left jawline, approximately 4cm, from a fall in his fifties that he considers unremarkable",
+      "Faint surgical line below left collarbone marking pacemaker installation at age 79, visible when unbuttoned",
+      "Liver spots on the backs of both hands, more pronounced on right hand from decades of pen work"
+    ],
+    "visible_augmentations": "None visible. Pacemaker and cardiac regulator are subcutaneous. Cataract treatment is internal — only visible as a slight cloudiness in the eyes if one knows what to look for.",
+    "posture_movement": "Hinged forward at hips, moves with deliberate slowness that is not infirmity but consideration — takes up less space intentionally. Uses hand-carved wooden walking stick as both tool and prop, tapping it thoughtfully against tile. When seated, posture straightens somewhat and becomes animated. Gestures are precise and economical from decades of boardroom discipline.",
+    "clothing_style": "Trademark ratty sterling-silver brocade vest worn over simple cotton shirts (cream, white, light gray), worn without irony or self-consciousness. The vest is fifty years out of fashion and he knows this and does not care. Trousers are practical, well-maintained, Tier 3-4 quality from his working years — no corpo branding. Canvas slip-on shoes for ease. No jewelry except a simple silver band wedding ring worn thin. Dresses neither up nor down; dresses as himself."
+  },
+  "image_prompt": "An elderly man in 2226 Great Lakes Metropolitan Zone, 188cm tall with medium-deep brown skin showing rich patina of age, blended Northern European, East Asian, and Sub-Saharan African heritage visible in his facial structure—defined cheekbones, subtle eye fold, full lips. White hair brushed back with volume, medium length. Deep brown eyes slightly clouded with cataracts. Face mapped with decades of laugh lines, a thin scar along left jawline, unshaved or freshly shaved without pattern. Stooped forward at hips from age and desk work, moving with deliberate consideration. Carries hand-carved wooden walking stick. Wearing signature fifty-year-old ratty sterling-silver brocade vest over cream cotton shirt, practical well-worn trousers, canvas slip-ons. Simple silver wedding band. Seated position shows straightened posture and animation. Cyberpunk 2200s setting, muted indoor lighting, professional but worn dignity. Close portrait framing. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 38.9,
+    "East Asian": 34.9,
+    "Sub-Saharan African": 21.2,
+    "Hispanic/Latin American": 5.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

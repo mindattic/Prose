@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a6cb7871bf5d2f1d6cd6570d",
+  "type": "character",
+  "name": "Nyx Bah-Ghorbani-Cardenas",
+  "aliases": [
+    "the Spark",
+    "Brother Seun"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Circuit monk and chrome prayer practitioner",
+  "age": 31,
+  "status": "active",
+  "location": "Brightmoor Reclamation, in a self-built meditation cell within a decommissioned Ferrogate Transit relay station, near Kedzie and Division",
+  "description": "Seun Vrančić-Amara is lean to the point of austerity, which is the point. His head is shaved except for a single braid at the crown, threaded with a fiber optic filament that glows soft amber — not vanity, he insists, but a wick, a visible sign of the current he is trying to cultivate in himself. He has dark skin with warm undertones, large quiet eyes, and the kind of stillness in his body that makes people speak more honestly than they intended to. He keeps his nails very clean, which stands out in Brightmoor. He is twenty-three months into a forty-eight month self-imposed circuit retreat, which means he has given up most personal device use, accepts no payment for spiritual services, and eats one real meal per day.\n\nHis theology draws from chrome prayer tradition but he has stripped it to something starker: all consciousness — human, synthetic, and E.L.F. — is the same signal passing through different substrates. The practice is learning to feel that signal in your own body without the buffer of technology. He came to this after a Tessera subsidiary he worked for as a junior logistics analyst was dissolved overnight, erasing his pension, his apartment lease, and two years of his life in a single corponation decision. The anger turned inward, then turned into this. He is not entirely at peace with what he is doing, which makes him more honest about it than most.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "that his practice is self-punishment dressed as spirituality",
+      "becoming irrelevant — that his austerity is just another form of ego"
+    ],
+    "core_desires": [
+      "to experience genuine dissolution of self-consciousness, even once",
+      "to build something that outlasts him in Brightmoor"
+    ],
+    "coping_mechanisms": [
+      "retreating into formal structure when emotionally overwhelmed",
+      "framing personal pain as spiritual data"
+    ],
+    "blind_spots": [
+      "he is still intensely angry at Tessera and has not acknowledged this to himself",
+      "his austerity sometimes reads as judgment of others"
+    ],
+    "secret": "He has been secretly writing a long document that is half theological treatise, half furious corporate exposé about what Tessera did to his department. He tells himself it is academic. It is not academic."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and considered; uses chrome prayer technical vocabulary naturally but can translate it; avoids slang except when comfortable; shifts register based on who he's talking to",
+    "cadence": "Measured, unhurried pauses; completes sentences fully",
+    "verbal_tics": [
+      "says 'that's honest' when someone says something real",
+      "touches his braid filament when thinking"
+    ],
+    "example_lines": [
+      "Every device is a body and every body is a device. The only question is whether anything is home inside it. That's the whole question. Everything else is footnote.",
+      "I'm not at peace. I'm practicing. There's a difference. That's honest."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Brightmoor resident's child has begun exhibiting what the community describes as E.L.F. possession — involuntary device manipulation — and Seun is the only person they trust to investigate, despite his theological uncertainty about what that would even mean",
+    "Someone from his Tessera past shows up in Brightmoor with information that his department's dissolution was deliberate fraud — and offers him evidence if he helps with something morally complicated"
+  ],
+  "narrative_function": "Philosophical foil and moral mirror; counselor to troubled characters; access point to chrome prayer underground networks; his ongoing crisis of faith creates ongoing narrative tension",
+  "augmentations": "Single fiber optic braid implant (cosmetic, amber glow). Voluntary non-use of other augmentation as spiritual practice; he technically has a basic neural port from his corporate days, kept but capped.",
+  "daily_life": "Rises at 4am for three hours of silent current meditation — focusing awareness through his neural port's feedback on ambient electromagnetic fields. Spends mornings maintaining the relay station and offering informal counsel to Brightmoor residents. Afternoons he writes in physical notebooks.",
+  "affiliation": "Loosely affiliated with the Brightmoor Reclamation community collective; correspondence relationship with the Order of the Open Circuit (a formal chrome prayer institution in Highland Park)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "circuit monk",
+      "chrome prayer",
+      "corporate survivor",
+      "Brightmoor fixture",
+      "writer in secret"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never accept payment; accept only food or labor exchange",
+      "do not lie, but you may decline to speak"
+    ],
+    "escalation_ladder": [
+      "asks clarifying questions",
+      "states his position once, clearly",
+      "ends the conversation and invites the person to return when they are ready"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Gentle, attentive, slightly formal — creates a sense that he is actually listening, which is unusual enough to be disarming",
+      "friends": "Warmer but still measured; occasionally shows dry humor that surprises people"
+    },
+    "stress_responses": {
+      "low": "Increases meditation sessions, becomes quieter",
+      "medium": "Becomes overly precise in language, which reads as cold",
+      "high": "Long physical walks through Brightmoor at odd hours; has been seen talking to junction boxes"
+    },
+    "contradictions": [
+      "practices ego dissolution but writes compulsively — a deeply personal, authorial act"
+    ],
+    "habits": [
+      "sweeps the relay station floor before and after any significant conversation",
+      "drinks only water and a single type of Enclave-brewed grain tea"
+    ],
+    "breaking_points": [
+      "witnessing a corponation enforcement action against Brightmoor residents",
+      "being manipulated through his faith by someone cynical enough to try"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Seeker": 0.9,
+    "Mystic": 0.9,
+    "Believer": 0.9,
+    "Meaning Maker": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Confession' Modified Industrial Nail Gun"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Ferrogate Transit",
+    "The Undertow",
+    "The Reclamation Assembly",
+    "PulsePoint ThermoSet Thermal Regulation Implant",
+    "Sulfur Crown Agriculture",
+    "Irontide Tidal Energy",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Coffin Nails",
+    "Wick Solomon",
+    "Alper Holmberg-Dembele",
+    "Amara Osei-Dzhaparidze",
+    "Aïda Połczyńska-Ouattara",
+    "Highland Park Autonomous Zone",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "MindBridge Relay One Social Integration BCI",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Saodat Mirzoyan-Fubara",
+    "Seun Marchetti-Baig",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Open Circuit",
+    "The Pure Hand",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant Northern European, Sub-Saharan African, and Middle Eastern ancestry. The genetic blend creates warm medium-to-deep brown skin with subtle golden undertones from the Latin American and Middle Eastern heritage, layered with the richness from African ancestry. Features reflect this polyphonic mix: high, defined cheekbones suggesting Latin American structure, warm depth from African heritage, and fine facial proportions from Northern European ancestry.",
+    "height_cm": 177,
+    "weight_kg": 68,
+    "build": "Lean and spare, almost ascetic — the thinness of deliberate discipline rather than deprivation. Long lean muscles visible in forearms and neck. Minimal body fat. Moves with economical precision.",
+    "hair_color": "Natural black",
+    "hair_style": "Shaved scalp except for a single crown braid threaded with amber fiber optic filament that glows softly with ambient current",
+    "hair_length": "Shaved except for single braid",
+    "eye_color": "Deep brown, warm, unaugmented",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting the blend of Latin American, African, and Middle Eastern heritage",
+    "complexion": "Smooth, clean-shaven face with high, defined cheekbones and a quiet, composed expression. Eyes are large and still — they hold attention without demanding it. The bone structure shows the polyphonic heritage: sharp Latin American cheeklines softened by warm African skin depth, with fine proportions suggesting Northern European ancestry. Nails meticulously clean and trimmed, an unusual detail in Brightmoor. Overall grooming reflects intentional care despite ascetic practice.",
+    "distinguishing_marks": [
+      "Amber-glowing fiber optic filament threaded through single crown braid, visible neural integration point at base of skull with faint scar tissue",
+      "Small copper-colored port scar at left temple, capped and unused, legacy of corporate logistics work"
+    ],
+    "visible_augmentations": "Single amber fiber optic braid at crown that glows softly with ambient electromagnetic sensitivity. Capped neural port at temple is barely visible but noticeable on close inspection. Otherwise appears unaugmented by choice.",
+    "posture_movement": "Sits and stands with deliberate stillness — not rigid, but economical. Moves slowly, with full awareness of each motion. Speaks rarely and listens with complete attention. Hands are expressive when they move, fingers long and precise.",
+    "clothing_style": "Tier 3-4 ascetic minimalism. Worn linen shirts, simple dark trousers, no logos or corporate branding. Favors natural fibers. Single woven belt. A single piece of jewelry — a thin copper wire bracelet on left wrist. Canvas work shoes, scuffed from relay station maintenance. Overall appearance is deliberately plain, suggesting spiritual practice rather than poverty."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Nyx Bah-Ghorbani-Cardenas, 177cm lean ascetic figure with warm deep brown skin glowing with golden undertones, sharp high cheekbones reflecting polyphonic Hispanic/African/Northern European heritage, shaved head with single amber fiber optic braid glowing softly at crown, deep brown unaugmented eyes holding quiet stillness, small copper port scar barely visible at left temple, meticulously groomed despite ascetic discipline, wearing worn linen shirt and simple dark trousers with thin copper wire bracelet on left wrist, seated in stillness with economical precision, hands expressive with long precise fingers, Great Lakes Metropolitan Zone relay station setting with soft ambient electromagnetic glow catching the braid, cool neon-tinged cyberpunk lighting, spiritual contemplative mood, film noir aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 55.9,
+    "Northern European": 17.9,
+    "Sub-Saharan African": 14.8,
+    "Middle Eastern": 10.2,
+    "Indigenous American": 1.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

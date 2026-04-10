@@ -1,0 +1,314 @@
+{
+  "id": "019d6143a61b76a99f98c215a66b5162",
+  "type": "character",
+  "name": "Rune Banerjee",
+  "aliases": [
+    "Old Gervaz",
+    "The Cartographer",
+    "Gerry"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "expelled citizen, wandering cartographer, and oral historian of lost places",
+  "age": 71,
+  "status": "active",
+  "location": "Escanaba Gateway, the Slow Benches outside Arrivals Terminal 7, near Lake Shore and Navy Pier",
+  "description": "Gerváz is an old man who carries himself as though he once occupied considerably more space in the world and is still adjusting to the reduction. He is tall and lightly stooped, with a face mapped by seventy years of weather and worry, deep brown skin faded to ash at the temples, a white beard trimmed with unexpected fastidiousness. His most striking feature is a pair of retractable cat ears in heathered grey that he had installed in his fifties — a mid-life extravagance he refuses to explain and which sit somewhat incongruously on a man of his gravitas. He dresses carefully in old clothes: a decent coat, shoes that have been resoled twice, a wide-brimmed hat of the kind no one under fifty wears anymore. He carries a physical notebook, which in 2200 is eccentric enough to be alarming.\n\nGerváz was a senior urban planning official in Highland Park Autonomous Zone for thirty-one years before being expelled following a rezoning dispute that escalated into a political purge. His crime, ultimately, was insisting on documenting what was being demolished. He was stripped of his residency, his pension, and his archive access in a single administrative action. He has been stateless for six years now, drifting between transit hubs and writing everything down. He has accepted this with a philosopher's outward composure and a grief he will only show you if you accidentally give him an opening, at which point it will pour out of him like a dam failing slowly.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "that his documentation will be lost or dismissed as the obsession of a bitter old man",
+      "dying in a transit hub with no one who knew him before the expulsion"
+    ],
+    "core_desires": [
+      "to have his urban archive recognized as legitimate historical record",
+      "to return to Highland Park Autonomous Zone long enough to see what they built on the site of the old community gardens he designed"
+    ],
+    "coping_mechanisms": [
+      "compulsive documentation of everything he observes",
+      "performing dignity and composure even when he feels neither",
+      "making himself useful to strangers as a substitute for having a real role"
+    ],
+    "blind_spots": [
+      "genuinely believes his political neutrality and good intentions protected him right up until the moment they didn't — and has not fully updated this belief even now"
+    ],
+    "secret": "His physical notebook contains, embedded in seemingly innocent urban sketches, a complete coded map of the subterranean water and power infrastructure of Highland Park Autonomous Zone, drawn from memory. He hid this information years ago when he realized what the rezoning was actually about. He is waiting for someone trustworthy enough to give it to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, precise, institutional — the language of a man who spent decades writing policy documents, softened at the edges by a dry wit he deploys with perfect timing",
+    "cadence": "Measured and unhurried, with long pauses before significant points, as though everything he says has been drafted in advance",
+    "verbal_tics": [
+      "'You understand'",
+      "a slight emphasis on the second-to-last word in serious sentences",
+      "beginning answers with 'Well—' followed by a pause"
+    ],
+    "example_lines": [
+      "'Well — the official transit map shows you three options from this terminal. I can show you four more that aren't on the map, two of which are legal. You understand.'",
+      "'They demolished the Ferryview community gardens in 2194. I designed those gardens. I was told it was for a transit node. There is no transit node there. There is a parking structure for vehicles that are mostly not used. I have documented this. No one has asked to see the documentation.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Gerváz's coded infrastructure map of Highland Park Autonomous Zone is exactly what a resistance group, a corponation, and the HPAZ council itself are all separately searching for — and he doesn't know all three are looking",
+    "He recognizes a demolished building in a player character's old photo and begins talking — and the story of why it was really demolished leads somewhere dangerous"
+  ],
+  "narrative_function": "Information source with deep institutional memory, quest giver with historical knowledge of urban zones, world-building anchor for the political history of GLMZ, moral counterweight who provides perspective on what has been lost.",
+  "augmentations": "Retractable cat ears, heathered grey (cosmetic, installed age 54). Corrective eye augmentation for macular degeneration. Pacemaker-adjacent cardiac stabilizer, medical grade.",
+  "daily_life": "Rises early, claims a bench at Escanaba Gateway Arrivals Terminal 7, spends the day writing in his notebook and talking to anyone who sits near him; makes himself useful by interpreting transit regulations for newly arrived migrants who can't parse the official language.",
+  "affiliation": "No formal affiliation; loosely connected to a transit hub collective of older expelled citizens he calls 'the Slow Bench Parliament'",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "expelled citizen",
+      "urban historian",
+      "stateless",
+      "slow bench parliament",
+      "cat ears (cosmetic)"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything, trust the record over memory",
+      "Never ask for charity but accept practical help gracefully",
+      "Do not pretend to agree with something you find morally wrong, regardless of the social cost"
+    ],
+    "escalation_ladder": [
+      "Engage with formal courtesy",
+      "Ask clarifying questions that reveal the problem without accusation",
+      "State his objection precisely and once",
+      "Withdraw entirely and document the interaction in his notebook"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Treats them as citizens deserving of the same careful institutional respect he gave everyone in his professional life — slightly formal, genuinely helpful",
+      "friends": "Tells long, detailed stories about places that no longer exist; asks questions about your family; occasionally embarrassingly sincere"
+    },
+    "stress_responses": {
+      "low": "Becomes very formal and very precise",
+      "medium": "Goes quiet and takes out his notebook",
+      "high": "Experiences a visible tremor in his left hand and becomes briefly, devastatingly honest about his situation"
+    },
+    "contradictions": [
+      "Presents himself as a pragmatist who has made peace with his situation but becomes emotionally overwhelmed if anyone treats him with specific, personal kindness"
+    ],
+    "habits": [
+      "Tips his hat to E.L.F. shrines he passes even though he is privately skeptical of E.L.F. theology",
+      "Recopies any page of his notebook that gets wet or damaged from memory",
+      "Gives extremely detailed directions as a form of generosity"
+    ],
+    "breaking_points": [
+      "Watching someone destroy written or recorded documentation of any kind — he will physically intervene, which is very bad for him given his age and general condition"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "retractable cat ears, heathered grey (cosmetic, installed age 54)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "retractable cat ears, heathered grey (cosmetic, installed age 54)",
+      "replaces": ""
+    },
+    {
+      "name": "macular correction optical augment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "macular correction optical augment",
+      "replaces": ""
+    },
+    {
+      "name": "cardiac stabilizer (medical grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "cardiac stabilizer (medical grade)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 28: Joins Highland Park Autonomous Zone urban planning office as junior surveyor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 40: Promoted to senior planning official",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 54: Installs cat ears during a period he declines to discuss in detail",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 65: Begins covert documentation of rezoning irregularities",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 65: Expelled from HPAZ following political purge of documentation department",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 71: Present day — sixth year on the transit circuit, Escanaba Gateway",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Escanaba Gateway",
+    "ARCHIVE",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "Alper Lebedev-Tutu",
+    "Ambassador Silk",
+    "Ambrogio Waweru-Djordanović",
+    "Anatoliy Faye-Nkrumah",
+    "Auricula Felis Modification",
+    "Chronicle",
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "Hadiya Karlsen-Sow",
+    "Kairos",
+    "Last Word",
+    "Lazarus EC-4 'Companion'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Pikasso Wemba-Þórðarson",
+    "Ringo PD-1 'Citizen'",
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
+    "Sulfur Crown Agriculture",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Erie Remnant",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "South Asian (43.8%, dominant—North Indian phenotype with warm undertones), Hispanic/Latin American (31.7%, contributing warmth and additional melanin), Northern European (20.2%, tempering with cooler undertones), Pacific Islander (4.3%, subtle warmth in deeper layers). A striking blend: South Asian bone structure and warmth as the primary expression, enriched by Latin American depth, with Northern European paleness emerging at temples and jawline with age.",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and lightly stooped, shoulders caved slightly inward as though bearing a weight distributed across decades. Lean but not frail—the build of someone who was once muscular and has aged into wiriness rather than atrophy. Visible in the forearms and neck is the remnant of strength.",
+    "hair_color": "White with ashen grey at the temples; darker brown visible only in the beard",
+    "hair_style": "Beard trimmed with deliberate care—neat, squared-off, the grooming of a man who maintains standards in reduced circumstances. Head hair swept back, thinning at the crown.",
+    "hair_length": "Medium (head), Medium (beard)",
+    "eye_color": "Deep brown, augmented with corrective neural overlay for macular degeneration—faint silver tracery visible at the iris edge when light catches them",
+    "skin_tone": "Warm medium-to-deep brown base (South Asian-Hispanic blend dominant), with grey-ash fading visible at the temples and jawline where Northern European undertones surface with age. The layered ancestry creates a subtle gradient: deeper golden-brown at the cheeks and forehead, cooling toward grey-brown at the periphery. Age-spots scattered across forehead and back of hands like a map of lost coordinates.",
+    "complexion": "Weathered and lined, with the broad-bridged nose and fuller nasal base of South Asian heritage. Deep nasolabial folds. Forehead creased by seven decades of frowning at documents and city plans. Cheeks carry residual fullness from South Asian and Latin American ancestry beneath the hollowing of age—not gaunt. Skin texture rough, age-spotted, the complexion of someone who has spent significant time outdoors recently—sun-damaged at the ears and the bridge of the nose, where warm brown deepens to darker brown.",
+    "distinguishing_marks": [
+      "Network of fine scars across the knuckles of the right hand, pale and old, consistent with archival work or document handling",
+      "A burn scar on the left forearm (inner), roughly 4cm, faded to pale brown—deliberately positioned to be hidden by standard clothing",
+      "Deep vertical crease between the eyebrows, permanent even at rest"
+    ],
+    "visible_augmentations": "Pair of retractable cat ears mounted on the skull above and behind the natural ears, heathered grey with slight metallic sheen at the joints. When retracted, they leave a subtle bulge at the temples. The incongruity of them—sleek, cosmetic, installed in mid-life—is immediately striking on a man of his apparent gravitas. Faint silver circuitry visible at the iris edge when light catches his augmented eyes.",
+    "posture_movement": "Carries himself as though still occupying the space of his former authority, but the posture is now inverted—a man adjusting downward. Walks deliberately, not shuffling, with a slight favor to the left side. Sits with careful attention to his back. Speaks with his hands, though the gestures have become smaller, more economical. His bearing suggests someone still processing a significant loss of status; there is a courtliness to his movements, a habit of formality worn like an old coat.",
+    "clothing_style": "Tier 4 (working class, but aspirational): a dark wool coat (navy, resoled at the seams, clearly maintained), good quality but aged. Underneath, neutral layers—cream linen shirt, dark trousers. A wide-brimmed hat of the kind no one under fifty wears anymore, dark felt, slightly faded at the band. Shoes have been resoled twice and polished regularly. His physical notebook—leather-bound, water-stained, clearly his constant companion—is carried in a canvas satchel worn crosswise. He dresses carefully in old things, avoiding both the disposable fast-fashion of Tier 5 and the aggressively contemporary styling of Tier 2. Everything about his clothing reads as: a man of means who has been reduced, and is maintaining dignity through precision."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of elderly South Asian-heritage man (warm deep brown skin with age-grey at temples), 188cm tall, lean weathered build, white and grey hair swept back thinning at crown, dark brown eyes with silver neural overlay tracery, deep facial lines and age-spots. Retractable grey metallic cat ears mounted on skull visible at temples. Formal bearing despite stooped posture, hands showing old document-handling scars. Dressed in worn but meticulously maintained navy wool coat, cream linen shirt, dark trousers, wide-brimmed dark felt hat. Leather-bound notebook in canvas satchel. Detailed weathered complexion, hollow cheeks, permanent frown-crease between eyebrows. Faded burn scar on left forearm. Standing in neon-lit Great Lakes Metropolitan Zone street, warm amber streetlight catching silver eye augmentation, deep shadow emphasizing age and formality, quiet dignity despite reduced circumstances, archival worker aesthetic, 2200s cyberpunk realism --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 43.8,
+    "Hispanic/Latin American": 31.7,
+    "Northern European": 20.2,
+    "Pacific Islander": 4.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "id": "019d6143a5c07a9e836ceb2bfd9810e9",
+  "type": "character",
+  "name": "Leif Malhotra",
+  "aliases": [
+    "Bast",
+    "Null-Seven",
+    "The Architect's Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Mid-tier corporate infrastructure auditor, covert saboteur",
+  "age": 31,
+  "status": "active",
+  "location": "The Meridian Core (official residence), The Circuit (operational base), near LaSalle and Jackson",
+  "description": "Bastian Czernowitz-Olade is the kind of person whose appearance is engineered to be forgotten: medium height, medium build, features that are generically pleasant in a way that resists description. His Silesian-Nigerian heritage gives him warm brown skin and light gray-green eyes that seem slightly wrong on his face—memorable only in the moment you're looking directly at them. He keeps his hair short and neat, dresses in the Meridian Core's standard mid-tier professional palette (charcoal, slate, the occasional muted teal), and moves through spaces like someone who has rehearsed being unremarkable. His augmentations are all internal or invisible by design.\n\nOfficially, Bastian is a Level 4 Infrastructure Compliance Auditor for Heliostat Consolidated, one of the Spire's subsidiary logistics and data architecture firms. His job is to find vulnerabilities in Heliostat's own systems—and, on contract, in the systems of competitors. He is exceptionally good at this. He has three corporate commendations, a clean performance file, and a social profile calibrated to read as ambitious-but-stable. His apartment in the Meridian Core is tidy and impersonal in the way of someone who spends as little time there as possible.\n\nIn The Circuit, in a rented workspace registered to a shell persona, Bastian is Null-Seven: one of the most methodical infrastructure saboteurs operating in GLMZ. He does not work for ideology in the pure sense—he works from a specific, contained grievance that has grown tendrils. Three years ago, a Heliostat data architecture decision he flagged and documented was overridden by management. Six months later, the resulting failure cascaded into a residential power grid collapse in The Shelf that killed eleven people. The incident was classified as 'infrastructure fatigue.' His report was buried. He has been quietly, surgically dismantling Heliostat's redundancy systems ever since—not to destroy the company, but to force an audit so complete that the buried report will surface. He does not let himself examine whether this plan is rational.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.65,
+      "ideal": 0.58,
+      "id": 0.72,
+      "shadow": 0.68,
+      "mask": 0.9,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the buried report will be found and destroyed before it can surface",
+      "That he is doing this for ego and has constructed the justice narrative afterward",
+      "Being genuinely known by someone—it would compromise everything",
+      "That the eleven deaths were not the last consequence of the decision he failed to stop"
+    ],
+    "core_desires": [
+      "The buried report entered into official record",
+      "To be believed—specifically by someone who has the power to act on it",
+      "To stop performing and exist as a coherent person",
+      "To sleep without running probability trees on failure scenarios"
+    ],
+    "coping_mechanisms": [
+      "Extreme compartmentalization—his identities are psychologically sealed",
+      "Elaborate preparatory rituals before any operational action",
+      "Collecting and organizing data as a substitute for emotional processing",
+      "Occasional anonymous donations to The Shelf community funds"
+    ],
+    "blind_spots": [
+      "His 'contained' sabotage is creating secondary instabilities he hasn't modeled",
+      "He has convinced himself no one at Heliostat suspects him—one person does",
+      "His emotional investment in the outcome is degrading his analytical precision",
+      "He mistakes the absence of attachment for safety"
+    ],
+    "secret": "The original buried report has a second author—a colleague named Saoirse who co-wrote it and then quietly accepted a promotion and said nothing. Bastian knows where she is. He has not contacted her. He doesn't know if he's protecting her, punishing her, or waiting for her to come forward on her own. He thinks about her most days."
+  },
+  "speech_patterns": {
+    "vocabulary": "Corporate-precise in professional contexts—systems language, passive constructions, quantified risk. In the Circuit, more clipped and direct, technical jargon from a different register. Rarely expresses emotion as emotion; expresses it as data.",
+    "cadence": "Even and measured, with a slight over-deliberateness that reads as careful rather than robotic. Pauses before answering questions he finds complicated. Never interrupts.",
+    "verbal_tics": [
+      "Phrases risk as probability: 'that's a sixty-percent outcome at current'",
+      "Uses 'noted' to terminate conversations he doesn't want to continue",
+      "'At baseline' as a qualifier when he's uncertain but won't admit it"
+    ],
+    "example_lines": [
+      "'The system didn't fail. The system was failed. There's a meaningful distinction and Heliostat has been very careful not to make it.'",
+      "'I'm not asking you to trust me. I'm asking you to look at the data and reach your own conclusion. They're not the same request.'",
+      "'Noted. I'll factor that in.'",
+      "'At baseline, I'd say this is recoverable. At baseline.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Orvyn Specht",
+      "type": "Professional contact, uneven",
+      "description": "Specht's work has occasionally intersected with infrastructure vulnerabilities Bastian has created. Bastian has watched this with controlled alarm. Specht doesn't know who Null-Seven is but has noticed the pattern.",
+      "emotional_core": "Wary professional respect from Bastian; Specht finds the infrastructure anomalies intellectually interesting without knowing they're intentional.",
+      "story_tension": "Specht is getting close to the pattern. Bastian has to decide whether to misdirect him, recruit him, or disappear the thread."
+    },
+    {
+      "name": "Casimir Wróbel-Haan",
+      "type": "Unwitting resource",
+      "description": "Bastian has used Casimir's data brokerage services twice under the Null-Seven persona. Casimir has no idea his corporate-side client and his Circuit client are the same person.",
+      "emotional_core": "Purely instrumental on Bastian's side. Casimir finds Null-Seven a reliable and overly cautious client.",
+      "story_tension": "One of Casimir's other clients is beginning to ask questions about infrastructure anomalies that would connect the dots."
+    },
+    {
+      "name": "Saoirse (surname withheld)",
+      "type": "Ghost relationship",
+      "description": "The co-author who accepted her promotion and stayed silent. Bastian knows her current Heliostat posting. Has never reached out.",
+      "emotional_core": "Grief, betrayal, and something that might be understanding if he let himself get there.",
+      "story_tension": "She has started an anonymous tip file. She doesn't know Bastian is Null-Seven. She's been building toward the same disclosure from the inside."
+    }
+  ],
+  "story_hooks": [
+    "The Shelf infrastructure begins showing failures that aren't Bastian's work—someone else is in the system, and their goals are not his",
+    "Heliostat's internal security assigns him to audit the very anomalies he created, placing him in an impossible position",
+    "Saoirse's anonymous tip file is intercepted—Bastian has to decide whether to burn his cover to protect it",
+    "A Shelf resident who lost family in the grid collapse starts looking for answers and gets close enough to find Null-Seven's fingerprints",
+    "Bastian discovers the buried report has already been found and used—not for accountability, but as leverage in a corporate acquisition"
+  ],
+  "narrative_function": "Explores institutional cover-up, the ethics of individual sabotage versus systemic change, and the psychological cost of sustained double-life operation. Creates pressure points between The Circuit's underground and The Meridian Core's corporate machinery.",
+  "augmentations": "Subdermal neural lace (memory partitioning, identity-state switching—allows him to fully inhabit either persona without behavioral bleed),Ocular HUD implant (standard corporate model, modified with custom encryption overlay),Passive signal dampener in left forearm (reduces his wireless signature to near-zero when activated)",
+  "daily_life": "Commutes from the Meridian Core to Heliostat offices by mag-rail, performs his auditor role with mechanical competence. Twice a week takes a circuitous route to The Circuit workspace. Eats alone almost always—too much conversational improvisation in shared meals. Runs probability models recreationally. Keeps no personal objects in either space that couldn't be abandoned in under three minutes.",
+  "affiliation": "Heliostat Consolidated (official). No formal affiliation as Null-Seven—operates entirely solo.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 3,
+      "expression": 5,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": 5
+    },
+    "drives": [
+      "Surface the buried report",
+      "Force institutional accountability",
+      "Maintain dual identity"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 6,
+        "response": "Retreats into probability modeling and preparatory rituals"
+      },
+      "moral": 6,
+      "trust": 2,
+      "desperation": 7
+    },
+    "strengths": [
+      "Prudence",
+      "Perseverance",
+      "Judgment",
+      "Self-regulation",
+      "Curiosity"
+    ],
+    "weaknesses": [
+      "Love",
+      "Honesty",
+      "Forgiveness",
+      "Teamwork",
+      "Zest"
+    ],
+    "tags": [
+      "double-life",
+      "corporate-auditor",
+      "saboteur",
+      "Null-Seven",
+      "systems-thinker",
+      "emotionally-sealed",
+      "Heliostat"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will never take an action without running probability analysis first",
+      "Will always maintain behavioral separation between his two identities",
+      "Will never harm a Shelf resident directly — his sabotage targets corporate redundancy, not people",
+      "Will always terminate conversations he does not want to continue with 'Noted'",
+      "Will never contact Saoirse unless forced — her freedom to act independently is sacred to him",
+      "Will always have an exit strategy prepared before entering any operational space",
+      "Will never keep personal objects in either space that cannot be abandoned in three minutes"
+    ],
+    "escalation_ladder": [
+      "Deflects with corporate blandness — becomes more boring until the threat loses interest",
+      "Calculates and presents risk as probability to reframe the situation logically",
+      "Compartmentalizes harder — switches identity states to access different emotional registers",
+      "Burns a prepared cover story or diversion to redirect attention",
+      "Disappears — physically relocates and activates signal dampener, goes dark"
+    ],
+    "interpersonal_modes": {
+      "Orvyn Specht": "Wary professional monitoring — keeps distance while tracking Specht's pattern recognition",
+      "Casimir Wróbel-Haan": "Purely instrumental as Null-Seven; cordial and forgettable as Bastian",
+      "Saoirse": "Obsessive avoidance masking something between grief and hope"
+    },
+    "stress_responses": {
+      "low": "Runs probability models, reorganizes data files",
+      "medium": "Preparatory rituals intensify, sleep deteriorates, begins contingency planning",
+      "high": "Behavioral bleed between identities — corporate Bastian starts using Null-Seven's clipped speech",
+      "critical": "Emotional investment overwhelms analytical precision — he makes the mistake he has been dreading"
+    },
+    "contradictions": [
+      "Claims to work from justice but refuses to examine whether ego drives the mission",
+      "Destroys corporate systems to force accountability while being a model corporate employee",
+      "Protects Saoirse's freedom by refusing contact while monitoring her movements constantly"
+    ],
+    "habits": [
+      "Phrases uncertainty as probability percentages",
+      "Eats alone to avoid conversational improvisation",
+      "Runs probability models recreationally before sleep",
+      "Takes circuitous routes to The Circuit workspace, never the same path twice",
+      "Makes anonymous donations to Shelf community funds after each sabotage operation"
+    ],
+    "breaking_points": [
+      "The buried report being found and destroyed before it surfaces",
+      "Saoirse's anonymous tip file being intercepted and her being endangered",
+      "Being assigned to audit his own sabotage at Heliostat",
+      "Someone genuinely knowing him — both identities, the full picture"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "The Circuit",
+    "GLMZ",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Ouroboros Energy Power Distribution Trunk Network",
+    "The Spire",
+    "The Shelf",
+    "The Heritage Vault",
+    "Palette",
+    "Slagworks Industrial",
+    "Null",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Immaculée Dalgaard-Nwosu",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Kairos",
+    "Lacunal",
+    "Lazarus BX-0 'Test Subject'",
+    "MERIDIAN",
+    "Nnamdi Ostrowski-Faletolu",
+    "Philibert Mwangi-Djordjevic",
+    "Stainless Steel",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
+    "TESSERA PG-2 'Signature'",
+    "The Human Baseline Alliance",
+    "Yannick Tofauti-Szarvásy",
+    "Zoë Mbekele-Thorvaldsdóttir"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Genetically kaleidoscopic—Northern European (23.7%), South Asian (23.6%), Indigenous American (22.1%), Eastern European (10.6%), Sub-Saharan African (10.2%), and East Asian (9.8%) in near-equal distribution. The result is a phenotype that resists easy categorization: features draw from multiple continental traditions in subtle combination rather than stark contrast.",
+    "height_cm": 174,
+    "weight_kg": 72,
+    "build": "Medium, lean but not wiry—economical muscle distribution from deliberate fitness maintenance rather than athletic pursuit. Posture is neither relaxed nor rigid, calibrated to occupy minimal psychological space.",
+    "hair_color": "Dark brown, naturally straight",
+    "hair_style": "Neatly trimmed, geometric precision. No styling product, no texture. Parted slightly off-center.",
+    "hair_length": "Short",
+    "eye_color": "Light gray-green with slight amber undertone—unusual enough to create momentary cognitive friction, then dissolve from memory",
+    "skin_tone": "Medium-deep warm brown with complex undertones—neither distinctly warm nor cool, the result of blended melanin inheritance across multiple ancestry lines. Resists categorical description; shifts subtly across the spectrum from olive to golden to reddish depending on angle and light.",
+    "complexion": "Clean-shaven, smooth skin with no visible scarring or blemishing. Minimal sun exposure suggests tier-appropriate indoor lifestyle. Features are harmoniously blended across ancestral lines: high cheekbones with slight lateral width, straight nose with subtle bridge width, unmarked jawline with balanced angularity. Appears five years younger or older depending on lighting angle. The overall impression is of pleasant symmetry that reads as generically 'human' rather than distinctly regional.",
+    "distinguishing_marks": [
+      "No visible scars, tattoos, or birthmarks—deliberately maintained absence functions as its own mark in the augmented underworld"
+    ],
+    "visible_augmentations": "None visible. The ocular HUD implant is indistinguishable from standard corporate-issue optics during casual observation. All augmentations (neural lace, signal dampener) are completely subcutaneous.",
+    "posture_movement": "Moves with economic efficiency—no wasted gesture, no expansive body language. Walks at consistent pace, neither hurried nor leisurely. Sits with spine slightly forward, ready to stand. Eyes track surroundings in predictable patterns. Speaks in measured tone with minimal vocal inflection. Handshake is firm but brief. Overall impression: someone whose presence is a checkbox rather than a presence.",
+    "clothing_style": "Meridian Core Tier 2-3 professional: charcoal wool trousers, slate technical shirts in breathable microfiber, muted teal or gray blazers from mid-market corpo brands (Zeiss-Luxor, Nakamura Systems). Watches a stainless steel minimalist chronometer (Braun-licensed). Shoes are black leather composite, maintained to utilitarian polish. Bag is a slim messenger in technical fabric—carries encrypted tablet, earpiece, secondary comms device, nothing personal. The effect is of someone assembling a costume from a corporate template."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Leif Malhotra, a mixed-heritage corporate operative with medium-deep warm brown skin showing subtle olive-golden undertones. Sharp cheekbones, straight nose, unmarked jawline. Short dark brown straight hair with geometric precision, parted slightly off-center. Light gray-green eyes with amber undertones. Clean-shaven, youthful-appearing but ageless. 174cm tall, lean build. Wearing charcoal wool trousers, slate microfiber technical shirt, muted teal blazer from Zeiss-Luxor. Black leather composite shoes, stainless steel minimalist chronometer visible. Slim technical messenger bag. Posture economical and reserved, moves with minimal gesture. Corporate tier 2-3 aesthetic. Standing in sleek GLMZ office or transit hub under cool neon and fluorescent lighting. Neutral expression. Slightly forward-leaning stance suggesting readiness. Atmosphere of quiet professionalism and deliberate anonymity. High-contrast cyberpunk lighting, subtle shadows emphasizing symmetrical features. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 23.7,
+    "South Asian": 23.6,
+    "Indigenous American": 22.1,
+    "Eastern European": 10.6,
+    "Sub-Saharan African": 10.2,
+    "East Asian": 9.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "id": "019d6143a5e273749ee47507859d77b1",
+  "type": "character",
+  "name": "Idris Mensah",
+  "aliases": [
+    "Dag"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Ferrogate Transit operator (tram line, elevated routes)",
+  "age": 41,
+  "status": "active",
+  "location": "Based out of the Kessler Interchange operator depot; runs the elevated Kessler-to-Ironvein route daily, near Milwaukee and North Ave",
+  "description": "Dagny is solidly built, the kind of person who takes up space with complete comfort and no aggression. Their skin is a warm medium brown, kept clear with the obsessive skincare routine of someone who spends twelve hours a day under artificial light. They have a shaved head except for a wide stripe of deep blue hair — color-changing geneware that shifts to violet under emotional stress, which is inconvenient in an argument. Their eyes are light amber, patterned with concentric rings — another mod, older, cheaper, and slightly irregular in a way that gives people pause before they realize what they're looking at. They wear their Ferrogate operator uniform with the precise fit of someone who has strong opinions about how a uniform should sit.\n\nDagny has the specific psychological profile of someone who chose a job requiring total situational control and excellent in the role. They are calm during crises in a way that frightens some people — not cold, but genuinely stilled, operating on a different clock. Off the tram, they are warmer and more sardonic than their professional face suggests, with a dry wit that takes a moment to register and then lands fully. They have worked the Kessler-Ironvein route for nine years and know it the way you know a body — its rhythms, its problems, the spots where it gets strange after midnight.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "causing harm through error or inattention — especially to passengers who trusted them",
+      "the route being cancelled or restructured and losing the only thing they've felt genuinely good at"
+    ],
+    "core_desires": [
+      "to be excellent at something that matters to ordinary people",
+      "a stable, warm home life that they haven't managed to build yet"
+    ],
+    "coping_mechanisms": [
+      "ritual and routine as psychological scaffolding",
+      "dark humor with trusted colleagues",
+      "intense focus on the mechanical — fixing things, understanding systems"
+    ],
+    "blind_spots": [
+      "assumes emotional problems can be resolved with enough information and patience, which fails with people who don't want resolution",
+      "doesn't notice when they are lonely until it's acute"
+    ],
+    "secret": "Eight years ago they made an error in judgment during a systems failure that could have caused a derailment. It didn't — they caught it — but the incident was never logged because their supervisor at the time helped them bury it to protect both their records. That supervisor retired. The buried report exists somewhere in Ferrogate's archive system and Dagny doesn't know if it was actually destroyed or just unfiled."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and professional on duty. Off duty: dry, understated, a little clipped. Uses transit jargon habitually even outside context.",
+    "cadence": "Even and measured on duty. Off duty, slightly more variable — occasional long pauses, occasional rapid sardonic sequences.",
+    "verbal_tics": [
+      "'Clear and proceed' (used outside work contexts ironically)",
+      "Repeats the last word of a sentence quietly to themselves when processing something",
+      "'That's a maintenance issue' (for problems they can't fix)"
+    ],
+    "example_lines": [
+      "'Sir, the door sensor is telling me what you're telling me. The door sensor is also not my problem to argue with. Step back from the door sensor.'",
+      "'Nine years on this route. I know when something's wrong before the board does. Something's been wrong at Ironvein station for about three weeks. I filed it. Someone will look at it eventually.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They've been logging anomalies at Ironvein station — specific times, specific passengers who board but don't seem to disembark — and the reports are going somewhere but nothing is being done",
+    "A passenger left something on the tram: not lost property, something placed deliberately, in a specific seat, at a specific time",
+    "The buried incident report has resurfaced as part of an internal Ferrogate audit they didn't know was happening"
+  ],
+  "narrative_function": "Mobile observer — Dagny crosses between districts constantly and sees who travels where, when, in what condition. Reliable institutional knowledge about Ferrogate's internal politics. Potential emergency-situation anchor. Can provide transit-related information and serve as a checkpoint encounter.",
+  "augmentations": "Color-shift hair geneware (blue/violet, emotional-reactive — they did not know it was emotional-reactive when they bought it); patterned iris mod (concentric amber rings, older consumer grade); neural latency dampener integrated into their operator jack — standard Ferrogate issue, used for tram interface",
+  "daily_life": "Reports to Kessler depot at 0530, completes pre-run checks with methodical thoroughness, runs the route through peak hours, takes a mandated break they use entirely for eating and doing nothing else, runs the evening route, files incident reports before leaving. Stops at the same food stall every single day.",
+  "affiliation": "Ferrogate Transit (Local Operators Guild, Shop 7); informal mentor within the depot",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional-knowledge",
+      "crisis-calm",
+      "buried-secret",
+      "transit-expert",
+      "reluctant-confessor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Passenger safety is not negotiable, ever, for any reason",
+      "Log everything — if it's not logged it didn't happen",
+      "Don't volunteer personal information to people you don't trust yet; let them earn it"
+    ],
+    "escalation_ladder": [
+      "Calm instruction",
+      "Repeated calm instruction with added context",
+      "Formal verbal warning ('I'm asking you once more')",
+      "Emergency protocol activation",
+      "Physical intervention — reluctant, controlled, effective"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and measured. Not unkind but offers nothing personal. Watches the tram car, not the individual faces.",
+      "friends": "Opens up slowly but fully. Loyal past the point of easy explanation. Will show up at 0300 with no questions."
+    },
+    "stress_responses": {
+      "low": "Becomes very quiet and precise. Checks systems twice.",
+      "medium": "Focuses entirely on task, freezes social processing until situation is resolved.",
+      "high": "Enters a state of absolute calm that people who don't know them find alarming. Acts, does not feel, until it's over. Feels afterward."
+    },
+    "contradictions": [
+      "Absolutely committed to logging everything and institutional transparency — except the one thing they themselves buried"
+    ],
+    "habits": [
+      "Touches the E.L.F. plate in the operator cab before every run — not religious exactly, but reliable",
+      "Eats the same meal from the same stall every break",
+      "Walks the full length of their tram car before first run each day even though systems already confirmed clear"
+    ],
+    "breaking_points": [
+      "A passenger being harmed while in their care — would risk their job, their record, everything, immediately and without deliberation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Ferrogate Transit as a platform operator at age 22",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to tram operator after completing certification",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The incident — systems failure, near-miss, buried report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Assigned permanently to Kessler-Ironvein elevated route",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became informal mentor to new operators in the depot cohort",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Ironvein",
+    "Pellucid Systems",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Elena Vasquez-9",
+    "The Milwaukee Core",
+    "Alper Holmberg-Dembele",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus NX-1 'Sandman'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Crucible Industries Long Arm LA-20 'Verdict'",
+    "Ezio Kaboré-Malhotra",
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Last Word",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Peninsula",
+    "Vantablack VS-3 'Skin Job'",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Cosmopolitan blend: Sub-Saharan African (32.5%) forms the dominant foundation, with substantial Southeast Asian (21.7%) and North African (19.6%) heritage creating warm, complex undertones. Eastern European (9.7%), Northern European (9.5%), and Hispanic/Latin American (7.0%) ancestry blend smoothly throughout, creating a phenotype that resists easy geographic categorization — precisely the Ubiquitous Diaspora standard.",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Solidly stocky with developed upper body and core strength — the build of someone who has worked a physical job for nine years without vanity about it. Shoulders broad and held with easy confidence.",
+    "hair_color": "Deep blue with violet undertones (color-shift geneware, shifts to violet under emotional stress)",
+    "hair_style": "Shaved head except for a wide stripe of color-shifting hair running front-to-back",
+    "hair_length": "Shaved (body), Medium stripe (reactive geneware)",
+    "eye_color": "Light amber with concentric ring patterning (iris modification, older consumer-grade, slightly irregular)",
+    "skin_tone": "Warm medium brown with subtle golden undertones from Southeast Asian heritage, exceptionally clear",
+    "complexion": "Clean, maintained skin with obsessive skincare routine (12-hour daily artificial light exposure). Facial structure shows balanced Sub-Saharan and Southeast Asian features — defined cheekbones, strong jaw with slight tapering from Southeast Asian ancestry. No facial hair. Expression typically neutral and still, which reads as either calm competence or unsettling detachment depending on context.",
+    "distinguishing_marks": [
+      "Concentric patterned iris modification in both eyes — amber rings creating a target-like effect, slightly asymmetrical due to older installation quality",
+      "Neural jack port visible at the base of skull, left side — standard Ferrogate operator hardware, integrated with latency dampener"
+    ],
+    "visible_augmentations": "Iris patterning is immediately noticeable upon close eye contact (slightly uncanny due to imprecise installation). Neural operator jack at base of skull visible if head is tilted back or in bright overhead light. Color-reactive hair geneware is visible but reads as deliberate cosmetic choice rather than augmentation unless someone knows to look for the inconsistent shift pattern under stress.",
+    "posture_movement": "Carries themselves with compact, economical movement — nothing wasted. When standing still, completely still in a way that suggests deliberate control rather than rigidity. Walks with measured pace, shoulders level. On the tram, moves through the cab with practiced precision. Off-duty, posture softens slightly but maintains that same underlying steadiness.",
+    "clothing_style": "Ferrogate Transit operator uniform worn with exacting precision — fabric crisp, fit exact, reflective safety panels properly positioned. The uniform fits them like a chosen second skin, not a reluctant requirement. Off-duty: practical Tier 3-4 wear — durable synthetics, neutral colors, minimal branding. No excess, nothing decorative. Well-maintained boots."
+  },
+  "image_prompt": "Idris Mensah, transit operator, cyberpunk 2226, warm medium brown skin with golden undertones, shaved head with reactive color-shift geneware stripe (deep blue-violet), amber concentric iris modifications creating target-like pattern in both eyes, structured facial features blending Sub-Saharan and Southeast Asian ancestry, neural jack port visible at base of skull, solidly stocky build with broad shoulders, compact economical posture, wearing crisp Ferrogate Transit operator uniform with reflective safety panels, neutral expression reading as calm competence, standing in fluorescent-lit tram station with overhead lighting catching the iris modifications, moody cyberpunk lighting, hyperrealistic detail on iris patterning and geneware, professional but unsettling presence, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 32.5,
+    "Southeast Asian": 21.7,
+    "North African": 19.6,
+    "Eastern European": 9.7,
+    "Northern European": 9.5,
+    "Hispanic/Latin American": 7.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

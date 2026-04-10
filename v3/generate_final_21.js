@@ -516,7 +516,7 @@ const ch1 = {
   related_entities: ["The Cartographers", "The Atlas of Irregularities", "The Seam", "The Bread Baker of Block 9", "Mnemic Clay", "Meridian 88"],
   district: "The Circuit"
 };
-if (writeEntity('characters', ch1)) count++;
+if (writeEntity('people', ch1)) count++;
 
 // ── 17. CHARACTER: The Bread Baker of Block 9 ──
 const ch2 = {
@@ -679,7 +679,7 @@ const ch2 = {
   related_entities: ["Plot 17", "Block 9 Rooftop Garden Cooperative", "Emile Nakamura-Osei", "The Shelf"],
   district: "The Shelf"
 };
-if (writeEntity('characters', ch2)) count++;
+if (writeEntity('people', ch2)) count++;
 
 // ── 18. DOCUMENT: "Catalogue Entry 10,000" ──
 const d2 = {

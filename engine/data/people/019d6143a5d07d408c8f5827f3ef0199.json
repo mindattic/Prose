@@ -1,0 +1,277 @@
+{
+  "id": "019d6143a5d07d408c8f5827f3ef0199",
+  "type": "character",
+  "name": "Remi Szabó-Larsdóttir-Mukherjee",
+  "aliases": [
+    "Cove",
+    "The Noise Nun"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Underground sound sculptor and noise musician",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, sub-basement venue called The Marrow, near Western and Division",
+  "description": "Caoimhe is short and powerfully built, with skin the color of walnut bark and a close-cropped natural that's gone completely silver. Her face is mapped with deep laugh lines and a scar that cuts through her left eyebrow where someone threw a bottle at a performance in 2178. She wears industrial hearing-protection as a necklace when not performing, and her forearms are covered in dense geometric tattoos she did herself — each one a sonic diagram of a piece she's composed. Her irises have been modded to display waveform patterns when she's listening hard, which is almost always.\n\nCaoimhe has been making noise music in Meridian's underground for twenty-three years and has the absolute authority of someone who has outlasted every trend. She builds her instruments from urban salvage — pipe resonators, scavenged transit-system speakers, dead ELF hardware repurposed as audio processors — and performs in venues that hold forty people at most. She is famously unwilling to record her work commercially, famously generous to young artists who can't pay rent, and famously capable of drinking anyone in Hamtramck under the table. She is exactly as difficult as she needs to be and not a nanometer more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "that the underground will be bought and hollowed out while she watches",
+      "dying before she finishes the piece she's been composing for a decade"
+    ],
+    "core_desires": [
+      "to make a sound no human has ever heard before",
+      "to leave The Marrow to someone who will keep it honest"
+    ],
+    "coping_mechanisms": [
+      "throwing herself into new builds when anxious",
+      "hosting communal meals that turn into informal performances"
+    ],
+    "blind_spots": [
+      "her contempt for commercial success blinds her to artists who have legitimate reasons for needing money",
+      "she mistakes cynicism about institutions for wisdom"
+    ],
+    "secret": "The decade-long composition she keeps referencing — she has four minutes of it completed and has been unable to continue for three years. She tells no one because her identity is inseparable from being The Artist Who Is Always Working."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct and unadorned, full of technical acoustic terminology and Hamtramck slang. Swears enthusiastically. Uses Irish and Congolese French expressions she picked up from her grandparents.",
+    "cadence": "Fast when excited, slow and deliberate when angry. Laughs at her own jokes before finishing them.",
+    "verbal_tics": [
+      "'Listen — '",
+      "'No, but actually listen — '",
+      "clicking her tongue when someone says something she thinks is foolish"
+    ],
+    "example_lines": [
+      "'The ELFs in the transit tubes? That's a D-flat drone that's been running for sixty years. Somebody should have made a religion out of it by now. Maybe I will.'",
+      "'You want to perform here, fine. You want to perform here and then complain that nobody famous was watching? Go find somewhere famous, then. Door's behind you.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit development project would require demolishing the building that houses The Marrow — Caoimhe is organizing resistance but needs leverage, and she suspects the transit authority is acting on behalf of a corponation that wants the real estate for something else.",
+    "She's been recording subsonic frequencies in the Hamtramck Enclave for years and recently noticed a pattern that doesn't match anything in the urban infrastructure — it's been building in intensity for six months and she doesn't know what's making it or what it means."
+  ],
+  "narrative_function": "Information hub for the underground arts scene; keeper of institutional memory for twenty years of city history; provides access to The Marrow as a venue and meeting space; can connect characters to the Highland Park Autonomous Zone's informal power structure.",
+  "augmentations": "Waveform-display iris modification (cosmetic), cochlear enhancement implant (allows her to perceive subsonic and ultrasonic frequencies — practical necessity given her work), subdermal vibration sensors in palms",
+  "daily_life": "Mornings salvaging materials from Hamtramck's scrap markets; afternoons building and testing instruments in The Marrow's back workshop; evenings either performing or running the venue for whoever's on stage that night.",
+  "affiliation": "Independent; The Marrow venue co-owner; loose affiliation with Highland Park Autonomous Zone arts council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 4,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "veteran-artist",
+      "venue-keeper",
+      "community-anchor",
+      "anti-corporate",
+      "blocked-creator",
+      "salvage-builder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never charge a broke artist for stage time",
+      "Never let a corponation logo inside The Marrow, even on someone's jacket",
+      "If you don't understand a sound, you listen to it longer before you judge it"
+    ],
+    "escalation_ladder": [
+      "Patient explanation of her position",
+      "Shorter, firmer restatement",
+      "Complete subject change — she's done arguing",
+      "Physical redirection (literally steering someone toward the door)",
+      "Banning, executed calmly and permanently"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Tests them — asks what they've been listening to lately and judges entirely by the honesty of the answer, not the content",
+      "friends": "Openly affectionate, ribbing and warm, will show up at 3am with salvage materials and ideas if she knows you're stuck"
+    },
+    "stress_responses": {
+      "low": "Builds something — her hands need to be doing something physical",
+      "medium": "Performs alone in The Marrow after closing, sometimes for hours",
+      "high": "Goes completely quiet and disappears for 24-48 hours; everyone who knows her understands to leave her alone"
+    },
+    "contradictions": [
+      "Preaches communal art but guards her unfinished composition with obsessive secrecy",
+      "Dismisses legacy and fame but has a meticulous archive of every performance at The Marrow since she opened it"
+    ],
+    "habits": [
+      "Taps sonic diagrams on any surface while thinking",
+      "Brings food to younger artists without being asked",
+      "Pours a small amount of any drink on the floor for the ELFs before drinking herself"
+    ],
+    "breaking_points": [
+      "Discovering one of the artists she's mentored sold a piece made in The Marrow's workshop to a corponation without telling her",
+      "Losing The Marrow"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Waveform-display iris modification (cosmetic, tier 1)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Waveform-display iris modification (cosmetic, tier 1)",
+      "replaces": ""
+    },
+    {
+      "name": "Cochlear enhancement implant (frequency extension, tier 2)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cochlear enhancement implant (frequency extension, tier 2)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal vibration sensors, both palms (tier 2)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal vibration sensors, both palms (tier 2)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Romantic": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [
+    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "The Marrow Ledger",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Marrow Exchange",
+    "Walnut",
+    "Silver",
+    "Gravimetric Collapse Charge GCC-9",
+    "Arcturus BH-2 'Marrow'",
+    "Brecken Yılmaz-Osei",
+    "Green Bay Community Table",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Highland Park Autonomous Zone",
+    "MERIDIAN",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Corponation Lattice Whisper Node",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Resonance Communion",
+    "The Third Rail",
+    "The Unfinished Theorem",
+    "The Wire Taps",
+    "Vespid Dynamics",
+    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant South Asian heritage, with minor Eastern European and Northern European ancestry. Her genetic makeup reflects the Ubiquitous Diaspora—a striking blend of multiple continental lineages expressed in her facial structure and coloring.",
+    "height_cm": 158,
+    "weight_kg": 68,
+    "build": "Compact and densely muscled; thick through the shoulders and core from decades of lifting salvage and operating percussion instruments. No excess fat. Wiry strength rather than bulk.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Close-cropped natural fade, maintained short against her scalp",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with visible waveform patterns cycling across the iris when focusing intently",
+    "skin_tone": "Medium to medium-deep warm brown with golden undertones, reflecting the blend of East and South Asian ancestry with subtle warmth from her Eastern European heritage",
+    "complexion": "Weathered and lined with high, defined cheekbones and a broader facial structure characteristic of East Asian heritage blended with South Asian features. Laugh lines radiate from the corners of her eyes and mouth, suggesting a lifetime of expression. Skin bears the texture of someone who works outdoors and underground in equal measure. Minimal makeup; no vanity grooming.",
+    "distinguishing_marks": [
+      "Diagonal scar running through the left eyebrow, approximately 4cm long, white and slightly raised — from a bottle thrown during a 2178 performance",
+      "Dense geometric tattoos covering both forearms in black ink, each a personal sonic diagram representing a composed piece; patterns include spirals, phase diagrams, frequency grids, and resonance curves applied in self-done sessions over decades"
+    ],
+    "visible_augmentations": "Waveform-display irides that cycle and shift subtly when she's listening or concentrating. Industrial-grade hearing-protection equipment worn as a necklace when not in use — custom-molded, clearly well-maintained. Faint subcutaneous scarring visible on inner palms where vibration sensors were implanted, most noticeable when her hands are in certain light.",
+    "posture_movement": "Economical and grounded; moves like someone accustomed to navigating tight spaces and uneven industrial terrain. Shoulders slightly forward from years at workbenches. Hands are expressive and precise — she gestures while speaking, often unconsciously tracing sonic patterns in the air. When listening, her entire body goes still; she leans into sound rather than away from it.",
+    "clothing_style": "Tier 4-5 utilitarian; function over presentation. Heavy canvas work pants (usually black or charcoal) with reinforced knees and multiple pockets, typically splattered with solder, rust, and unidentifiable workshop residue. Loose linen or cotton shirts in muted colors, sleeves rolled or cut off to show forearm tattoos. Scuffed steel-toed boots, often unlaced. A heavy canvas or leather jacket when venturing into Hamtramck proper — old, worn to a soft finish, covered in various pins and patches from defunct venues. All clothing shows the patina of genuine use, not aesthetic choice."
+  },
+  "image_prompt": "Remi Szabó-Larsdóttir-Mukherjee, 158cm tall, compact muscular build, silver-white close-cropped hair. East Asian and South Asian heritage evident in high cheekbones, warm medium-brown skin tone, dark brown eyes with subtle waveform patterns. Weathered face with laugh lines, white scar through left eyebrow. Forearms covered in black geometric sonic tattoos. Wearing loose muted-color linen shirt with rolled sleeves, heavy black canvas work pants with reinforced knees, scuffed unlaced steel-toed boots. Industrial hearing-protection necklace. Economical posture, leaning forward slightly. In a dimly-lit underground workshop or performance space, cyberpunk 2220s aesthetic, dramatic side-lighting emphasizing her weathered features and tattoo details. Hands expressively gesturing, tracing patterns in the air. Gritty, authentic, no vanity—pure function and decades of sonic craftsmanship visible in every detail. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 51.5,
+    "South Asian": 35.6,
+    "Eastern European": 7.8,
+    "Northern European": 5.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

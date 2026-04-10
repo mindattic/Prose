@@ -1,0 +1,311 @@
+{
+  "id": "019d6143a64f742dbaef3680e6f3dd75",
+  "type": "character",
+  "name": "Remi Dalgaard-Holm",
+  "aliases": [
+    "Bonemeal",
+    "Lóa"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Protection racket enforcer for a Stockyard crew called the Harrow Brothers",
+  "age": 27,
+  "status": "active",
+  "location": "The Stockyard, operates across Garfield Rack and into the edges of Ironvein, near Ashland and Chicago Ave",
+  "description": "Lóa is built like a question you don't want answered — wide through the shoulders, with a stillness in their face that reads less as calm and more as the particular quiet of someone who has already made a decision you haven't been told about yet. They have Icelandic and Yoruba ancestry refracted through three generations of Meridian Stockyard living: a long face with high coloring, skin a deep reddish brown, hair grown into a single dense column at the back of their skull and bleached white at the tips — a Stockyard crew identifier. Their left hand has two knuckles replaced with reinforced ceramic implants after a break that didn't heal clean. They have a small bioluminescent tattoo — amber, heron-shaped — on the inside of their right wrist that pulses when they're calm and goes dark when they're not. It is a gift from someone they won't discuss.\n\nLóa does not hurt people enthusiastically. This is what makes them effective and what has given them the nickname Bonemeal — not because they're violent, but because they show up at businesses before the violence is necessary, like something ground down before you even see the stone. They collect protection fees, mediate disputes between crew and clients, and serve as a physical deterrent. They are also, privately, a careful reader who borrows physical books from a Stockyard librarian named Asante and returns them with the spines uncreased. Nobody in the crew knows this. They keep their inner life behind walls that would be impressive in anyone and are almost heartbreaking in someone this young.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Becoming someone they can no longer recognize as themselves",
+      "That the people they protect are more afraid of them than of whatever they're protecting them from"
+    ],
+    "core_desires": [
+      "To be useful in a way that doesn't require them to erase themselves",
+      "Somewhere quieter — not safety, exactly, just less pressure in the air"
+    ],
+    "coping_mechanisms": [
+      "Books — they can be someone else for hours",
+      "Physical routine — the circuit, the payments, the same path creates a kind of meditation"
+    ],
+    "blind_spots": [
+      "Loyalty to the Harrow Brothers reads in their psychology as identity rather than employment — they can't see how expendable they are",
+      "They believe they are preventing worse violence; they have not examined this belief carefully enough"
+    ],
+    "secret": "Eight months ago they broke a shopkeeper's arm during a collection — the first time they've caused that level of damage. The shopkeeper had laughed at them and said something about their gender that they won't repeat to anyone. Lóa did not report the escalation to the crew; the shopkeeper now pays on time and has told no one. Lóa thinks about it every day. The heron tattoo went dark for a week afterward."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and deliberate. Stockyard shorthand when working, unexpectedly formal and precise in personal conversation. Occasionally uses Yoruba courtesy phrases without translating them.",
+    "cadence": "Very slow for professional interactions — built for discomfort. Normal speed with people they trust.",
+    "verbal_tics": [
+      "Long pause before any answer, even simple ones",
+      "Says 'I hear you' rather than 'I understand' — a distinction that matters to them",
+      "Clicks tongue once when transitioning from 'working' to 'personal' mode"
+    ],
+    "example_lines": [
+      "'You're two weeks behind. I'm not here to discuss why. I'm here to tell you that next week, the number is the same. That's the deal. I hear you.'",
+      "'I don't — look. It's not — the book is good. The librarian said you'd probably like it too. That's all I was saying.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of the businesses on their circuit is a family that Lóa has become genuinely fond of — the Harrow Brothers want to increase their fee by 40% and Lóa has been tasked with delivering the news, which they haven't done yet",
+    "The shopkeeper whose arm they broke has started attending a neighborhood meeting about crew activity in the Stockyard — Lóa needs to decide what they will or won't do about this"
+  ],
+  "narrative_function": "Moral gray zone character, potential reluctant ally — they are doing violence-adjacent work with clearly ambivalent feelings, creating tension that can be pulled in multiple directions by the right character or situation.",
+  "augmentations": "Ceramic knuckle reinforcements, left hand (medical, post-break). Bioluminescent heron tattoo on right inner wrist (cosmetic geneware, emotional indicator). Subdermal impact mesh across the ribs — illegal grade, adds significant blunt force resistance.",
+  "daily_life": "Afternoons through midnight are their working hours; they walk a circuit of twelve businesses across Garfield Rack collecting weekly payments, handling complaints, and being visible; mornings are for sleep and books.",
+  "affiliation": "The Harrow Brothers, a Stockyard protection crew — third longest-running independent crew in the district",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 8,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "enforcer",
+      "reluctant muscle",
+      "reader",
+      "identity-conflicted",
+      "controlled danger"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never threaten more than you're prepared to do — and try not to prepare to do much",
+      "The circuit runs regardless of personal feelings",
+      "Do not tell the crew anything they will use as a reason to escalate"
+    ],
+    "escalation_ladder": [
+      "Presence — they stand in the doorway until acknowledged",
+      "Direct statement of consequences, once, quietly",
+      "Physical demonstration of capability — not injury, but certainty",
+      "Injury — and they are very quiet about it afterward"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and still — lets the other person fill silence, reads what they put in it",
+      "friends": "Opens in unexpected ways — shares thoughts about books or the Stockyard sky through the corrugated roof gaps; still not fully readable but warmer"
+    },
+    "stress_responses": {
+      "low": "Slows down further; more pauses",
+      "medium": "Physical grounding — presses their ceramic knuckles against their palm",
+      "high": "Goes silent completely; the heron tattoo goes dark"
+    },
+    "contradictions": [
+      "Despises the vulnerability of the people they're extorting but protects them with genuine effort from other predators",
+      "Reads philosophy and books about ethics in the same hours they spend planning collection routes"
+    ],
+    "habits": [
+      "Returns borrowed books with handwritten notes on scraps tucked inside — observations, not summaries",
+      "Eats the same meal every morning: whatever the Stockyard carts have that's cheapest plus a single fried egg"
+    ],
+    "breaking_points": [
+      "Being asked to hurt a child or elderly person — they will refuse regardless of consequence",
+      "Discovering the Harrow Brothers have been running a second operation under their circuit that they were kept ignorant of — this will feel like a betrayal of the only identity they have"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ceramic knuckle reinforcements — left hand, two knuckles, post-injury",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ceramic knuckle reinforcements — left hand, two knuckles, post-injury",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal impact mesh — ribcage, illegal grade blunt force resistance",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal impact mesh — ribcage, illegal grade blunt force resistance",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2173 — Born in the Stockyard to a Yoruba-Icelandic family of salvagers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — Father killed in a Stockyard crew dispute; family left without protection",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189 — Joined the Harrow Brothers at 16 as the most direct solution to the family's safety problem",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Became the crew's primary enforcer after a predecessor was picked up by Axiom security",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — The shopkeeper incident; ongoing internal conflict",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present, unsettled, reading a book about the ethics of collective obligation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Tessera Personal Defense System TPDS-1 'Reflex'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Tessera Personal Defense System TPDS-1 'Reflex'"
+  ],
+  "related_entities": [
+    "The Stockyard",
+    "Garfield Rack",
+    "Rendstone Nuclear",
+    "Ironvein",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Gravimetric Collapse Charge GCC-9",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "Harrow & The Bone Meridian",
+    "Chicago",
+    "Blackmarket",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Ferrogate Enforcer Cruiser",
+    "Ihaia Nystrom-Keita",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "MERIDIAN",
+    "Meridian Core",
+    "Neuromorphic Pressure Cestus",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Tessera Corponation",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Tessera Personal Defense System TPDS-1 'Reflex'",
+    "The Circuit",
+    "The Heritage Vault",
+    "The Librarian",
+    "The Pure Hand",
+    "Tobechukwu Papadimitriou-Vásárhelyi"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Northern European (55.1%) with significant Pacific Islander (19.3%) and East Asian (18.3%) ancestry, with minor Hispanic/Latin American (4.6%) and Southeast Asian (2.7%) heritage. Three generations Meridian Stockyard.",
+    "height_cm": 185,
+    "weight_kg": 89,
+    "build": "Wide through shoulders and chest, lean-muscled through the core, structured like load-bearing architecture. No excess; every kilogram serves function. Hands and forearms show working density.",
+    "hair_color": "Black at roots, bleached white from mid-length to tips",
+    "hair_style": "Single dense column braided or twisted, worn at the back of the skull — Harrow Brothers crew identifier",
+    "hair_length": "Long (shoulder-blade length when unbound)",
+    "eye_color": "Light gray-blue with warm amber undertones",
+    "skin_tone": "Warm medium-tan with golden undertones and high coloring in the cheeks and temples, blending Northern European fairness with Pacific Islander and East Asian warmth",
+    "complexion": "Long face with defined jawline and prominent cheekbones shaped by East Asian ancestry. Skin weathered but clean, no acne scarring. Expression neutral at rest — the kind of stillness that suggests a decision already made. Minimal facial hair, kept trimmed close.",
+    "distinguishing_marks": [
+      "Small bioluminescent tattoo on the inside of right wrist: heron shape in amber bio-ink, pulses faintly when calm, darkens when agitated — emotional indicator.",
+      "Faint white scar tissue across left knuckles where ceramic implants were installed post-fracture."
+    ],
+    "visible_augmentations": "Left hand: two ceramic knuckle reinforcements (visible as slightly off-color joints, seamless but noticeable in close proximity). Subdermal impact mesh across ribs is invisible beneath clothing but creates subtle contour difference in torso definition under tight clothing. No chrome, no LED modifications — deliberately low-profile.",
+    "posture_movement": "Moves with economic efficiency, no wasted motion. Shoulders squared but not aggressive. Head level, eyes tracking but not scanning — suggests threat assessment is passive, constant. Stillness is their default state; movement is deliberate. Hands stay relaxed and visible, never fidgeting.",
+    "clothing_style": "Tier 3-4 working crew aesthetic: well-maintained dark synthleather jacket with Harrow Brothers insignia (understated), charcoal thermal undershirt, cargo pants in matte black with functional pockets, steel-toed work boots broken in but not scuffed. No logos, no ostentatious chrome. Clothing is armor and uniform both. One small amber knot-charm hanging from left shoulder strap — crew marker."
+  },
+  "image_prompt": "Remi Dalgaard-Holm, tall mixed-ancestry person with warm golden-tan skin and defined East Asian-influenced facial structure, long black-to-white ombre braided hair bound at back of skull. Light gray-blue eyes with amber warmth. 185cm athletic build, wide shoulders tapering to lean core. Wearing dark synthleather Harrow Brothers jacket over charcoal thermal, matte black cargo pants, steel-toed boots. Bioluminescent amber heron tattoo visible on inside of right wrist, ceramic knuckle reinforcements on left hand. Neutral resting expression, perfectly still posture suggesting constant passive threat assessment. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody industrial warehouse lighting, cool blues and amber accent light hitting the wrist tattoo. Professional crew operative aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 55.1,
+    "Pacific Islander": 19.3,
+    "East Asian": 18.3,
+    "Hispanic/Latin American": 4.6,
+    "Southeast Asian": 2.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

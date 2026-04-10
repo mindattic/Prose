@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a60372298d1f8acd26195e94",
+  "type": "character",
+  "name": "Ximena Holm-Johansson-Trujillo",
+  "aliases": [
+    "Mil",
+    "Coach"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Gym trainer and former competitive athlete",
+  "age": 42,
+  "status": "active",
+  "location": "Geartown, Ironvein district — works at a gym called Foundry Fitness, a no-frills facility above a machine shop, near Damen and Armitage",
+  "description": "Emiljan is built like a question mark — once a very large man, now a large man who has aged into something more deliberate. He carries the muscle of his competitive years but it's softened at the edges, and his shoulders have the slight forward curve of someone who has spent too much time bent over injured people and broken equipment. He keeps a short beard, keeps his head shaved, and has a retractable-claw geneware mod on his right hand that he got as a young man when it seemed cool and now views with mild embarrassment — he keeps the claws trimmed short and rarely mentions them. His face is deeply expressive, heavy eyebrows doing most of the work.\n\nEmiljan ran as a competitive strength athlete in his twenties under a Ringo corponation sports sponsorship, which ended badly when he refused to take a Helix-manufactured performance modifier ahead of a sanctioned event and got quietly dropped from the roster. He's been training civilians and amateur athletes at Foundry for eleven years and genuinely loves the work — the slow process of watching someone find out what their body can do. He is patient to a fault in professional contexts and has almost no patience for bullshit in personal ones. He carries a specific, articulated bitterness toward corporate sports sponsorship that he will tell you about if you give him even a half-opening.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That his refusal cost him something he can't get back and it was the wrong call",
+      "Becoming bitter enough that he can no longer genuinely help people"
+    ],
+    "core_desires": [
+      "To be the trainer his clients needed and didn't have — to actually change someone's trajectory",
+      "A clean account of what Ringo did to the athletes who complied with the modifier program"
+    ],
+    "coping_mechanisms": [
+      "Physical labor — fixing the gym equipment himself even when he could hire it out",
+      "Long runs along the lake at 05:00 before the city wakes up"
+    ],
+    "blind_spots": [
+      "Attributes his own discipline and resilience to character rather than circumstance — can be harsh on clients who struggle with consistency for structural reasons he doesn't see",
+      "The bitterness he thinks he has processed is closer to the surface than he knows"
+    ],
+    "secret": "Three of the athletes who took the Ringo-Helix modifier during his sponsorship era have since developed progressive neurological symptoms. He has been in quiet contact with two of them for years. He has a file. He doesn't know who to give it to or whether giving it to anyone would help or just hurt them more."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, body-focused, coaches through sensation rather than theory. Albanian-Lingala family idioms surface when emotional. Doesn't use much slang — speaks like someone who learned communication as a professional tool.",
+    "cadence": "Steady and measured in professional mode, picks up speed and sharpness when something makes him angry or when he's excited about a client's progress.",
+    "verbal_tics": [
+      "'Right.' as a sentence-ender to indicate he's done",
+      "Long pause before answering anything he doesn't want to answer"
+    ],
+    "example_lines": [
+      "'I don't care what your body looked like before. I care what it does next. Those are different questions.'",
+      "'Ringo will tell you the modifier is optional. It is optional the way rent is optional. You understand what I mean by that.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of the athletes in his quiet contact network has gone silent — missed two weeks of check-ins. Emiljan knows the symptoms were progressing and he's scared to find out why they've stopped responding.",
+    "A young client of his has been approached by a Ringo talent scout. The kid wants Emiljan to vouch for the program. Emiljan is being asked to choose between the kid's dream and what he knows."
+  ],
+  "narrative_function": "Neighborhood stabilizer, moral anchor, indirect connection to corporate sports world. Source of information about Ringo's sponsorship programs and the dark side of corp-backed athletics. Possible mentor figure.",
+  "augmentations": "Retractable claw geneware mod, right hand (claws trimmed, rarely deployed). Ringo-era cartilage reinforcement in both knees — he kept the augment when they dropped him, technically a contract gray area he's never tested. Old spinal microbrace from a competition injury — passive support, no active components.",
+  "daily_life": "At Foundry by 06:00 for early clients, runs groups until noon, does private sessions afternoons, paperwork and equipment maintenance evenings. Cooks his own food, eats at the gym more often than not.",
+  "affiliation": "Independent — Foundry Fitness; loose ties to the Geartown Trades Association",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "former athlete",
+      "corporate grievance",
+      "physical intelligence",
+      "mentor",
+      "quiet whistleblower"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't lie to someone about their body — they live in it",
+      "The file stays protected until he knows it will actually land somewhere that matters"
+    ],
+    "escalation_ladder": [
+      "Patient redirection",
+      "Clear direct statement of the problem",
+      "Personal confrontation — quiet, private, final",
+      "Walking away entirely — he will not stay somewhere that compromises his integrity"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm and evaluative — he is always assessing whether someone is worth his time, not in a mercenary way but in a limited-capacity way",
+      "friends": "Loyal and occasionally suffocating — calls to check in, shows up with food when he thinks someone is struggling"
+    },
+    "stress_responses": {
+      "low": "Trains harder than usual — takes an extra session",
+      "medium": "Becomes very methodical and quiet, retreats into routine",
+      "high": "Makes a decision he has been deferring — usually the harder of the available options"
+    },
+    "contradictions": [
+      "Believes in the body's honesty but has spent years not being honest about his own grief"
+    ],
+    "habits": [
+      "Pre-dawn runs, lakeside, regardless of weather",
+      "Keeps a handwritten training log for every client going back eleven years — never digital"
+    ],
+    "breaking_points": [
+      "Watching someone he warned be hurt by something preventable"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ringo-era cartilage reinforcement — both knees, passive, no active components",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ringo-era cartilage reinforcement — both knees, passive, no active components",
+      "replaces": ""
+    },
+    {
+      "name": "Passive spinal microbrace — L3-L5, competition injury repair, no active components",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Passive spinal microbrace — L3-L5, competition injury repair, no active components",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Sunday School' Weaponized Religious Artifact"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ringo Corponation",
+    "Geartown",
+    "Ironvein",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Crucible Industries CR-9 'Foundry'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Slagworks Industrial",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Aphelion",
+    "Davi Ousseini-Brătianu",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Noir Dining",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact",
+    "The Pure Hand",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yannick Tofauti-Szarvásy",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European (46.5%), Hispanic/Latin American (26.7%), Southeast Asian (14.2%), and Sub-Saharan African (12.6%) — a complex global blend creating warm medium-brown skin with golden and olive undertones. The combination produces soft, rounded facial geometry with some angular features, creating distinctive multicultural presence.",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Heavy, muscular frame with softened edges — the physique of a former elite strength athlete now in his early forties. Broad shoulders with a slight forward curve from years of coaching and equipment work. Chest and upper back still heavily muscled; lower body shows proportional but less defined mass. No visible fat deposit, but the sharp definition of his competitive years has mellowed into solid, functional density.",
+    "hair_color": "Black",
+    "hair_style": "Shaved head, maintained with precision",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm medium brown with golden and olive undertones — weathered and sun-exposed from years of outdoor training and work. The multicultural ancestry creates subtle depth and warmth across the complexion.",
+    "complexion": "Expressive face with balanced geometry — fuller cheekbones from Southeast Asian and Hispanic heritage, stronger jawline from Northern European ancestry. Thick, pronounced eyebrows set low over deep-set dark brown eyes. Close-trimmed salt-and-pepper beard kept at roughly 5mm, darkening the lower face. Skin shows the texture of someone who has spent decades in physical labor and outdoor conditions — not scarred, but weathered with character. Three faint horizontal lines across his forehead from years of intense concentration during lifts and coaching.",
+    "distinguishing_marks": [
+      "Burn scar across the top of his left shoulder blade — pale, roughly 8cm in width, from a failed equipment calibration during a Ringo sponsorship event in his twenties.",
+      "Surgical scar running vertically along his lower spine, approximately 12cm, from microbrace insertion — barely visible beneath his shirt line.",
+      "Calluses across both palms and inner fingers, thick and permanent from decades of gripping iron.",
+      "Small circular scar on his right palm where the claw geneware was installed — now barely noticeable."
+    ],
+    "visible_augmentations": "Right hand bears retractable claw geneware — currently trimmed to blunt, functional length and visually indistinguishable from normal fingernails unless deployed. The installation point at the palm is a faint whitish line. Knees show no external augmentation markers but move with deliberate, controlled mechanics suggesting internal reinforcement. Otherwise no visible chrome or external augmentation.",
+    "posture_movement": "Moves with deliberate efficiency — economical, no wasted motion. Standing posture shows the slight forward shoulder curve from decades of loaded lifting and coaching posture. When focused on another person (coaching or listening), his entire body angles toward them; his eyebrows do most of his emotional communication. Walks flat-footed, grounded. Hands often at rest at his sides or engaged in small, precise movements (adjusting equipment, demonstrating form). Rarely fidgets. When tired, the forward curve becomes more pronounced.",
+    "clothing_style": "Strictly functional, Tier 3-4 practical. Black or dark gray athletic wear — worn Foundry Fitness hoodies (faded logo), plain t-shirts, reinforced cargo pants with heavy pockets. Worn leather work belt. Old training shoes (usually Ringo-era branded athletic footwear he's kept from his sponsorship days, now resoled multiple times). No jewelry, no visible personal grooming beyond maintenance. Clothes show honest wear — stains from equipment oil, fraying at cuffs — but are clean and maintained. Everything is built to survive heavy work."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Ximena Holm-Johansson-Trujillo — 188cm tall, powerfully muscled strength athlete in his early forties with warm medium-brown skin, golden undertones, multicultural features: rounded cheekbones, strong jaw, thick low eyebrows, deep-set dark brown eyes. Shaved head, close-trimmed salt-and-pepper beard at 5mm. Weathered complexion, controlled posture with forward shoulder curve. Wearing faded black Foundry Fitness hoodie, reinforced cargo pants, worn resoled training shoes. Visible faint scar on left shoulder blade, callused hands with retractable claw geneware. Standing in industrial gym facility with heavy lifting equipment, neon accent lighting casting shadows across his face, deliberate grounded stance, hands at sides, intense focused expression. Honest wear on clothing, industrial aesthetic, late-night gym atmosphere. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 46.5,
+    "Hispanic/Latin American": 26.7,
+    "Southeast Asian": 14.2,
+    "Sub-Saharan African": 12.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

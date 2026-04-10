@@ -1,0 +1,305 @@
+{
+  "id": "019d6143a67872e58bdcdf10b8d554a1",
+  "type": "character",
+  "name": "Chinwe Ibarra-Vestergaard",
+  "aliases": [
+    "The Old Projector",
+    "Soren"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Holographic street muralist and unlicensed public art provocateur",
+  "age": 54,
+  "status": "active",
+  "location": "Pilsen Veil, operating across Mexicantown Libre and Lakeview Neon, near Ashland and Chicago Ave",
+  "description": "Obinna is a broad-shouldered man going soft at the middle, with dark skin mapped by fifty years of lake wind and workshop dust. His beard is full and shot through with silver he has dyed in rotating chromatic bands — currently a deep violet fading to copper — a vanity he accepts without embarrassment. He moves with the deliberate economy of someone who has been on his feet for three decades and has stopped pretending urgency. His hands are enormous and scarred across the knuckles from old hardware accidents, and he keeps them in constant motion even when he's sitting still.\n\nHe projects illegal holo-murals onto corporate architecture using a rig of his own design: a backpack-mounted emitter disguised as an air filtration unit. The murals last twenty minutes before building defense systems scrub them — sometimes longer in Pilsen Veil where the buildings remember him fondly, or so he says. He talks constantly and with tremendous warmth, the kind of person who makes strangers feel immediately known and slightly exposed. He has been arrested fourteen times and considers this a reasonable professional overhead.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Irrelevance — that the murals are just spectacle and change nothing",
+      "That he has been a bad father to his two adult children who left GLMZ"
+    ],
+    "core_desires": [
+      "For someone to point at a piece of city architecture and remember what it looked like before the corponations branded it",
+      "To finish one truly permanent work before he gets too old to run"
+    ],
+    "coping_mechanisms": [
+      "Humor — reflex deflection from anything actually painful",
+      "Constant movement and sociality; he rarely sits alone with his thoughts"
+    ],
+    "blind_spots": [
+      "He romanticizes poverty in ways that irritate people who haven't chosen it",
+      "Genuinely cannot perceive when his gregariousness is unwanted"
+    ],
+    "secret": "He has a standing verbal agreement with a mid-level Ringo Corp brand manager: Ringo lets him know patrol rotation schedules in exchange for occasionally projecting murals that contain, subtly, Ringo color palettes. He tells himself it's subversion from within. His collective would call it collaboration."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and discursive; code-switches between English, Igbo phrases, and Samoan words his grandmother used; fond of historical references nobody can verify",
+    "cadence": "Fast and flowing with sudden full stops when something matters to him",
+    "verbal_tics": [
+      "'You know what I mean?' (rhetorical, doesn't wait for answer)",
+      "'My grandmother used to say —' (introduces invented or half-remembered wisdom)"
+    ],
+    "example_lines": [
+      "'They paint over it, I paint it back. We've been having this conversation for twenty years and neither of us is bored yet.'",
+      "'My grandmother used to say a wall with no story on it is just a threat wearing a coat.'",
+      "'You want to know who controls a neighborhood? Look at whose face is on the buildings. Then look at whose face isn't.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A mural he projected two weeks ago onto a Zheng-Dao distribution hub contained, in the holo-code layer most people can't read, a data fragment he picked up from a corrupted ELF shrine — he didn't know what it was, just thought it made the colors interesting, but someone very serious is now looking for it",
+    "His youngest child has returned to GLMZ after twelve years and is working corporate, and Obinna is managing this with loudly performed equanimity and private devastation"
+  ],
+  "narrative_function": "Information broker of the informal economy — he has been everywhere at 3 AM for thirty years and notices everything. Natural quest giver for anything involving public space, corporate territory, or community memory. Knows everyone.",
+  "augmentations": "Color-shifting beard dye (geneware cosmetic treatment, semi-permanent); projection targeting overlay in left eye (basic cyberware); old burn scar on right forearm from early rig accident, deliberately unrepaired",
+  "daily_life": "Spends mornings at a tea stall in Pilsen Veil arguing with friends and reading old physical newspapers he collects. Afternoons are for prep and equipment maintenance. He projects between 2 and 4 AM when patrol cycles have gaps he's spent years mapping.",
+  "affiliation": "Independent; loose association with Mexicantown Libre arts council; has a complicated and ongoing relationship with a Ringo Corp street-marketing division that he publicly despises and occasionally accepts commissions from",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "charismatic",
+      "principled",
+      "hypocritical",
+      "generous",
+      "nostalgic"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never project on residential walls — only corporate or civic architecture",
+      "If a stranger needs help in the street, he stops. Every time. This has gotten him hurt before."
+    ],
+    "escalation_ladder": [
+      "Jokes and deflection",
+      "Direct warm confrontation",
+      "Disappointed silence (devastating)",
+      "Walks away and does not come back quickly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and curious; asks names, remembers them; offers tea or food if he has it",
+      "friends": "Teases relentlessly and shows up at bad moments with exactly the right thing"
+    },
+    "stress_responses": {
+      "low": "Talks more",
+      "medium": "Jokes with a slightly harder edge",
+      "high": "Goes very quiet and very still, which people who know him recognize as genuinely alarming"
+    },
+    "contradictions": [
+      "He preaches against corporate compromise and accepts corporate money",
+      "He says he doesn't care about legacy and has been cataloguing every mural he's ever projected in meticulous personal records"
+    ],
+    "habits": [
+      "Photographs every site he's worked before and after",
+      "Leaves small physical gifts — a folded paper, a bottle cap — at ELF shrines near his projection sites",
+      "Hums to himself when working, always the same three bars of something he can't name"
+    ],
+    "breaking_points": [
+      "Someone destroying a community-initiated mural, as opposed to a corporate scrub",
+      "Being called a tourist in someone else's struggle"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Basic projection targeting overlay (left eye)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Basic projection targeting overlay (left eye)",
+      "replaces": ""
+    },
+    {
+      "name": "Homemade backpack holo-emitter rig",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Homemade backpack holo-emitter rig",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "Opportunist": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2146 — Born in Mexicantown Libre, son of a Nigerian-Danish dockworker and a Samoan medical technician",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2165 — First illegal projection; a portrait of a demolished community center thrown onto the Ferrogate station that replaced it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2170s — Series of fourteen arrests; brief radicalization period; gradually moderated",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Ringo arrangement begins",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Children leave GLMZ",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Current: preparing a month-long nightly projection cycle commemorating the Pilsen Veil flood of 2167",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Lakeview Neon",
+    "Pilsen Veil",
+    "GLMZ",
+    "Zheng-dao Bioelectric",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "Silver",
+    "Copper",
+    "The Pure Hand",
+    "Weathervane",
+    "Chicago",
+    "Bintou Halvorsen-Osei",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Emeka Johansson-Orozco",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Makena Johanssen-Diallo",
+    "Neuromorphic Pressure Cestus",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Ringo Corponation",
+    "SynapTech AromaVeil Olfactory Filter",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tomasz Wren",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African heritage and minor Northern European ancestry. This blend manifests in warm, richly pigmented skin with undertones reflecting the full spectrum of his mixed ancestry—the deep warmth of African heritage combined with the olive-golden undertones common in Latin American populations, with subtle coolness from European ancestry visible in undertone complexity.",
+    "height_cm": 183,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and barrel-chested, softening through the middle with age but still carrying the frame of someone who's spent decades on his feet. Forearms remain ropey with muscle memory.",
+    "hair_color": "Black with natural gray throughout",
+    "hair_style": "Full, well-maintained beard worn long and styled with deliberate care",
+    "hair_length": "Medium (beard); head hair kept close to scalp",
+    "eye_color": "Dark brown; left eye has a subtle luminescent targeting reticle visible when ambient light hits it at certain angles",
+    "skin_tone": "Rich warm brown with golden-bronze undertones, sun-darkened from decades of outdoor work, reflecting the blended warmth of Latin American and African ancestry with subtle olive cast",
+    "complexion": "Heavily lined face—creases around eyes and mouth from constant talking and laughter. Skin texture roughened by workshop dust and lake wind exposure. Facial structure shows the broader nose and fuller lips characteristic of African heritage, balanced with the cheekbone definition common in Latin American populations. Grooming is meticulous despite worn appearance; beard is regularly conditioned.",
+    "distinguishing_marks": [
+      "Old burn scar across right forearm from early rig accident—deliberately left unrepaired, pale and mottled against darker skin, approximately 12cm long running from wrist toward elbow",
+      "Multiple thin scars across knuckles of both hands, white against darker skin, from decades of hardware work and accidents",
+      "The beard itself serves as a permanent distinguishing feature: currently dyed in rotating chromatic bands of deep violet fading to copper, refreshed every 6-8 weeks"
+    ],
+    "visible_augmentations": "Left eye projection targeting overlay appears as faint geometric patterns visible only when light catches the eye at certain angles. Backpack-mounted holo-emitter disguised as an air filtration unit when carrying his rig. Otherwise augmentations are minimal and mostly invisible to casual observation.",
+    "posture_movement": "Moves with deliberate, economical grace born of three decades on his feet—no wasted motion, but never rushed. Hands are in constant subtle motion even when seated, gesturing while speaking, fidgeting with small objects. Head tilts forward slightly when listening intently. Carries himself with the unselfconscious confidence of someone long comfortable in his own skin.",
+    "clothing_style": "Tier 3-4 functional with deliberate artistic flair. Favors layered, weathered utilitarian pieces: worn canvas work pants, thermal base layers visible at collar and wrists, oversized linen or hemp overshirts in muted earth tones. Often wears a long coat of synthetic leather that's seen better days but is carefully maintained. Work boots that are scuffed but well-oiled. Jewelry is minimal but intentional—a silver ring on one hand, possibly hand-made. No visible corporate branding; aesthetic is deliberately anti-corpo while remaining accessible to working-class spaces he frequents."
+  },
+  "image_prompt": "A weathered 60-something male figure with rich warm brown skin and golden undertones, standing in cyberpunk 2226 setting. He has close-cropped black hair with gray, a long full beard in striking chromatic bands of deep violet fading to copper. Dark brown eyes with one bearing a subtle luminescent targeting reticle overlay. Broad-shouldered build, 183cm tall, heavily lined face showing lifetime of outdoor work. Visible pale burn scar across right forearm, scars on knuckles. Wears layered utilitarian clothing: worn canvas work pants, thermal base layer visible at collar, oversized muted earth-tone hemp overshirt, weathered synthetic leather long coat, well-oiled scuffed work boots. Minimal silver jewelry. Hands in subtle motion, posture economical and graceful. Backpack-mounted holo-emitter disguised as air filtration unit. Standing in industrial workshop or Great Lakes Metropolitan Zone street setting with warm practical lighting catching his eye augmentation at certain angles. Anti-corpo aesthetic, working-class accessibility. Cyberpunk 2200s, film noir meets functional utility wear. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 67.4,
+    "Sub-Saharan African": 21.7,
+    "Northern European": 10.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

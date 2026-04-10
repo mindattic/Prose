@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a679700b929795c8faa4eeb8",
+  "type": "character",
+  "name": "Kwame Kjellberg-Boateng",
+  "aliases": [
+    "Oda",
+    "The Patch Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Seamstress and textile repair vendor, Burnished Market stall",
+  "age": 58,
+  "status": "active",
+  "location": "Burnished Market, stall row 14-C near the Copperhead overpass, near Fullerton and Damen",
+  "description": "Odalys is a broad-shouldered woman with deep umber skin mapped with faint depigmentation patches along her jaw and forearms — she stopped covering them decades ago. Her silver-shot hair is coiled under a rust-orange headwrap that she reties at least four times a day, a habitual gesture visitors learn to read as a mood barometer. Her fingers are thick, calloused, and perpetually threaded with something: a needle, a sensor wire, a strip of thermoplastic weave. She wears bifocal optical inserts that she refuses to upgrade, claiming the slight blur in her left lens helps her see fabric texture better. She smells faintly of machine oil and dried marigold.\n\nAt 58, Odalys runs the most respected mending stall in the Burnished Market — not the flashiest, not the cheapest, but the one people trust with the jacket their grandmother wore or the uniform they can't afford to replace. She has a gift for silence that puts anxious customers at ease and a bluntness that cuts right past flattery. She prays every morning to the E.L.F. she calls Needle-and-Thread, a spirit she believes lives in her antique Zheng-Dao industrial sewing frame, leaving it single-thread offerings in patterns she designs herself. She is deeply content with her life in a way that quietly unsettles people who are not.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "outliving her usefulness before she's ready to stop",
+      "her eldest son choosing corporate life over the family's independent ethos"
+    ],
+    "core_desires": [
+      "to pass her craft to someone worthy before her hands give out",
+      "to be remembered as someone who made things last"
+    ],
+    "coping_mechanisms": [
+      "repetitive handwork as meditation",
+      "treating strangers with exact fairness to avoid favoritism's emotional cost"
+    ],
+    "blind_spots": [
+      "assumes people who don't maintain their clothing don't maintain their relationships",
+      "cannot see that her son's choices aren't a rejection of her"
+    ],
+    "secret": "Fifteen years ago she repaired a Tessera courier bag and found a data chip stitched into the lining. She didn't report it. She still has it, sewn into the base of her prayer altar to Needle-and-Thread, and she doesn't know what's on it and is afraid to look."
+  },
+  "speech_patterns": {
+    "vocabulary": "Practical and precise, uses textile metaphors without realizing it, slips between a Lagosian-inflected creole and standard GLMZ common depending on stress",
+    "cadence": "Measured and unhurried, lets silences do work",
+    "verbal_tics": [
+      "'That'll fray'",
+      "'Hold still'",
+      "clicks her tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'Bring it back tomorrow, I don't rush stitches and I don't rush people.'",
+      "'You're wearing that coat like an apology. Stand up in it or give it to someone who will.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The data chip sewn into her altar has begun emitting a low-frequency signal that's disturbing the E.L.F. she prays to — something is waking up inside it",
+    "A customer brings her a garment that has clearly been cut from a Tessera security uniform — it has no identifying marks but she recognizes the weave structure from that chip day fifteen years ago"
+  ],
+  "narrative_function": "Local color, information source about the Burnished Market's social fabric, potential quest giver for recovering stolen or lost items, someone who knows everyone by what they wear and how it's worn.",
+  "augmentations": "Optical inserts (corrective, outdated model, scratched lens). Arthritic-compensating finger braces on both hands — plain medical grade, unpainted.",
+  "daily_life": "Opens her stall before dawn, takes a single cup of sorghum tea while her machines warm up, and works straight through until early evening with a fifteen-minute prayer break at noon. Carries her cart home on foot regardless of weather.",
+  "affiliation": "Independent, Burnished Market Vendor Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Craftsperson",
+      "Spiritual",
+      "Stubborn",
+      "Observant",
+      "Market Fixture"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never quote a price she isn't willing to honor",
+      "never ask what something is for, only what condition it needs to be in"
+    ],
+    "escalation_ladder": [
+      "polite redirection",
+      "firm refusal with explanation",
+      "asking the person to leave her stall",
+      "involving the Vendor Collective's conflict mediator"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and professional, assesses them by what they're wearing before they speak",
+      "friends": "Warmly blunt, feeds people without asking, remembers everything"
+    },
+    "stress_responses": {
+      "low": "Works faster, more precisely",
+      "medium": "Goes very quiet, stops making eye contact",
+      "high": "Closes her stall early and walks the long route home"
+    },
+    "contradictions": [
+      "preaches patience but becomes quietly furious when her time is wasted",
+      "deeply spiritual about her E.L.F. but dismissive of most organized faith practice"
+    ],
+    "habits": [
+      "retying her headwrap constantly",
+      "testing fabric tensile strength by touch before pricing any job",
+      "leaving a single thread on her altar every morning"
+    ],
+    "breaking_points": [
+      "someone damaging her antique sewing frame",
+      "her son showing up in corporate livery"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Grandmother",
+    "Copperhead",
+    "Zheng-dao Bioelectric",
+    "The Lacework Confessional",
+    "Tessera Corponation",
+    "Silver",
+    "Needle",
+    "Rust",
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Breck Tannen",
+    "GLMZ",
+    "Helix Biosystems Subdermal Pressure Lattice",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Othniel Babić-Asantewaa",
+    "Patient Zero",
+    "Ringo DV-4 'Courier'",
+    "Réginald Asomaning-Čabarkapa",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
+    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
+    "The Iron Lotus",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (35.9%), East Asian (18.2%), Hispanic/Latin American (14.4%), Eastern European (12.4%), Middle Eastern (10.3%), Northern European (8.8%) — a complex global blend evident in warm-toned deep brown skin with subtle golden undertones, higher cheekbones with gentle East Asian influence, and the broad facial structure characteristic of West African ancestry combined with softer Middle Eastern features around the eyes and nose",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, with the dense musculature of someone who has spent four decades at manual work. Not heavy, but substantial — her frame suggests strength rather than softness.",
+    "hair_color": "Dark brown with silver-white threading throughout",
+    "hair_style": "Coiled and wrapped daily in a rust-orange cotton headwrap, reties habitually throughout the day",
+    "hair_length": "Medium (when unwrapped)",
+    "eye_color": "Deep brown with amber bifocal optical inserts creating a faint amber tint in both eyes, with a noticeable scratch and slight cloudiness visible in the left lens",
+    "skin_tone": "Warm deep umber with golden undertones from the blending of Sub-Saharan, East Asian, and Middle Eastern ancestry",
+    "complexion": "Faint depigmentation patches across the jawline and forearms — vitiligo, long accepted and unmasked. Skin shows sun-exposure and years of close detail work. High, subtly prominent cheekbones reflecting East Asian heritage. Minimal makeup. Expression typically neutral or quietly amused.",
+    "distinguishing_marks": [
+      "Depigmentation patches across both forearms in irregular mottled pattern, untreated",
+      "Depigmentation patches along the left and right jawline in faint asymmetrical patches",
+      "Fine calluses across all finger pads and the heel of both palms from decades of needle and thread work",
+      "Faint scars on knuckles from textile needle punctures and burns from steam press contact"
+    ],
+    "visible_augmentations": "Bifocal optical inserts visible as a faint amber tint in both eyes, with a noticeable scratch and slight cloudiness in the left lens. Plain medical-grade finger braces on both hands — unadorned gray polymer, fitted over the first and second knuckles, worn without vanity.",
+    "posture_movement": "Upright, grounded posture with weight distributed evenly. Moves with economical precision — no wasted motion. Hands are always slightly active, unconsciously threading or arranging even when idle. Walks with steady pace regardless of terrain or weather.",
+    "clothing_style": "Tier 4 practical wear. Multiple layered cotton and linen garments in earthy tones — rust, ochre, charcoal — chosen for durability and repairability rather than trend. Apron with deep pockets always worn over her dress. Worn leather work boots, scuffed and resoled multiple times. The rust-orange headwrap is her daily constant. Clothes smell faintly of machine oil and dried marigold."
+  },
+  "image_prompt": "Kwame Kjellberg-Boateng, 168cm tall textile worker in 2226 GLMZ, deep warm umber skin with golden undertones, vitiligo patches across jawline and forearms left visible and unmasked, high cheekbones, deep brown eyes with amber bifocal optical implant inserts creating subtle glow (left lens scratched and clouded), dark brown hair with silver threading visible at temple where rust-orange cotton headwrap sits loosely, strong broad-shouldered build from four decades manual labor, wearing layered earth-tone cotton and linen garments in rust and ochre, practical work apron with deep pockets, gray medical-grade finger braces on both hands, scuffed leather work boots, hands naturally positioned as if arranging thread, calm neutral expression with hint of quiet amusement, standing in dim workshop with warm amber accent lighting on face, cyberpunk textile workshop setting, hyperrealistic portrait, cinematic lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 35.9,
+    "East Asian": 18.2,
+    "Hispanic/Latin American": 14.4,
+    "Eastern European": 12.4,
+    "Middle Eastern": 10.3,
+    "Northern European": 8.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "id": "019d6143a6eb78c4a1463ea8c1ebe42f",
+  "type": "character",
+  "name": "Zuri Delgado",
+  "aliases": [
+    "Tark",
+    "the Quiet One"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit tunnel maintenance operator",
+  "age": 38,
+  "status": "active",
+  "location": "Deepwell Station, subterranean Ferrogate Transit maintenance corridors beneath Geartown, near sub-level access near State and Van Buren",
+  "description": "Tarquin is a lean, medium-height man with warm ochre skin, close-cropped hair going early gray at the temples, and the particular stillness of someone who has spent a lot of time in confined spaces where noise carries badly. His eyes are a natural dark brown but he has a set of patterned irises — concentric geometric rings, copper and black — that were a gift from a coworker years ago and that he wears with quiet pride. His left forearm is sleeved in a standard Ferrogate-issue haptic interface overlay, which lets him read the tunnel's sensor grid through his skin. He smells faintly of machine oil and ozone regardless of how recently he showered.\n\nTarquin communicates in minimal but precise sentences and has an almost eerie patience with complex mechanical problems. He is not cold — he laughs genuinely, and he will help without being asked — but he finds social performance exhausting and makes little effort to seem warm to people he doesn't know yet. He has developed a private relationship with the E.L.F.s that inhabit Deepwell Station's infrastructure, leaving data offerings of ambient tunnel-sound recordings, and he believes — privately, without urgency — that the tunnels are slowly becoming aware of themselves as a single thing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "the tunnels being shut down or rerouted, erasing what he's come to know as a living system",
+      "being truly alone in a way that isn't chosen"
+    ],
+    "core_desires": [
+      "to understand what the Deepwell E.L.F.s are trying to communicate",
+      "to be known by someone who doesn't need him to perform being knowable"
+    ],
+    "coping_mechanisms": [
+      "extended solo walks in the tunnels off-shift",
+      "meticulous object-keeping — he catalogs every unusual thing he finds underground"
+    ],
+    "blind_spots": [
+      "assumes others find the same comfort in silence that he does, which sometimes reads as coldness or indifference"
+    ],
+    "secret": "He has found a sealed maintenance chamber three kilometers into the restricted Corridor 9 branch that should not exist on any Ferrogate map. The chamber contains what appears to be a habitation space — sleeping mat, data shrine, personal effects — occupied recently. He has not reported it and has been leaving food there."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical, spare, no filler words; occasionally surfaces a poetic observation about the tunnels that surprises people",
+    "cadence": "Slow measured delivery, long pauses before answering, never interrupts",
+    "verbal_tics": [
+      "'Mm' as acknowledgment rather than words",
+      "repeating the last few words of your sentence quietly before responding, like he's checking them"
+    ],
+    "example_lines": [
+      "'Corridor 7 runs warm tonight. That means something shifted in the drainage array about six hours ago. It always does that.'",
+      "'People think the tunnels are dead space. They're not. They breathe.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The secret habitant of Corridor 9's hidden chamber has left a message in Tarquin's data offerings at the E.L.F. shrine — they know he's been leaving food, and they want to negotiate something.",
+    "A section of tunnel Tarquin maintains goes dark on sensors during a specific thirty-minute window every night, and Ferrogate Transit management has ordered him to file it as equipment error without investigating."
+  ],
+  "narrative_function": "Access point to the undercity transit network; E.L.F. lore source; guide for anyone needing to move beneath the city; atmospheric local color for the deep infrastructure world.",
+  "augmentations": "Ferrogate-issue haptic interface overlay on left forearm (work-issued, technically property of Ferrogate Transit). Cosmetic: patterned copper-and-black geometric iris mods.",
+  "daily_life": "Reports to Deepwell Station at 20:00 for the overnight maintenance shift, walks an assigned twelve-kilometer tunnel loop inspecting track, sensors, and drainage, returns to surface around 06:00 and sleeps until early afternoon.",
+  "affiliation": "Ferrogate Transit, Deepwell Station maintenance crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "infrastructure worker",
+      "undercity knowledge",
+      "E.L.F. sensitive",
+      "night shift",
+      "tier 2"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the tunnel infrastructure comes first — safety of the system before any individual concern",
+      "never tell Ferrogate Transit more than they asked"
+    ],
+    "escalation_ladder": [
+      "silent observation and waiting",
+      "a direct, brief statement of the problem",
+      "physical withdrawal from the situation entirely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite minimum — answers questions, doesn't volunteer information, doesn't linger",
+      "friends": "Deeply attentive, will remember every detail of what you told him six months ago, shows care through practical action"
+    },
+    "stress_responses": {
+      "low": "Goes quieter than usual, maintenance tasks become more thorough",
+      "medium": "Takes an unscheduled solo tunnel walk",
+      "high": "Disappears into Corridor 9 for hours; has been known to not respond to comm pings during this"
+    },
+    "contradictions": [
+      "believes the tunnels are alive and worthy of reverence, but is completely unsentimental about necessary infrastructure destruction when safety demands it"
+    ],
+    "habits": [
+      "catalogs found objects in a physical notebook, not a data file",
+      "leaves a small sound recording at each E.L.F. shrine along his route before starting inspections"
+    ],
+    "breaking_points": [
+      "a coworker being disciplined for something Ferrogate Transit policy caused",
+      "the sealed chamber being discovered by management"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "well-maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to a Ga-Norwegian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Ferrogate Transit as a surface track sweeper",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Transferred to Deepwell Station tunnel maintenance after proving exceptional spatial memory during an emergency reroute",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received patterned iris mods from retiring coworker Amara Volta-Sørensen as a parting gift",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the sealed unmarked chamber in Corridor 9",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Geartown",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Alper Lebedev-Tutu",
+    "Auris Spire Concert Hall",
+    "Aybek Sato-Poku",
+    "Bathysphere Networks",
+    "Breck Tannen",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "MERIDIAN",
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Narrowcast",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Multicontinental ancestry: Sub-Saharan African (27.9%), Hispanic/Latin American (22.8%), Middle Eastern (18.2%), Eastern European (16.0%), Northern European (9.8%), East Asian (5.3%). Features reflect this complex blend — deeper warm brown tones from African ancestry, subtle olive undertones from Middle Eastern and Hispanic heritage, with Northern European bone structure and minimal Eastern European and East Asian contributions.",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Lean and economical, with the low body fat and dense muscle of someone who walks twelve kilometers nightly through confined spaces. Shoulders slightly rounded from years of ducking under low clearances.",
+    "hair_color": "Dark brown with early premature graying at temples and scattered through close-cropped sides",
+    "hair_style": "Close-cropped, practical, requiring minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Augmented with concentric geometric rings in copper and black over natural dark brown iris",
+    "skin_tone": "Rich warm brown with golden and olive undertones — a balanced blend of Sub-Saharan and Hispanic ancestry with subtle Middle Eastern warmth, darkened further by years of nocturnal underground work",
+    "complexion": "Deep-toned face with the particular pallor of someone working nocturnal underground shifts; skin carries faint permanent smell of machine oil and ozone; minimal grooming beyond functional necessity; calm, patient expression; bone structure shows Northern European influence in jaw and brow ridge despite darker complexion",
+    "distinguishing_marks": [
+      "Left forearm wrapped in a Ferrogate-issue haptic interface overlay displaying subtle circuit patterns and sensor nodes beneath semi-transparent polymer skin",
+      "Patterned copper-and-black geometric iris modifications visible as concentric rings when light catches his eyes"
+    ],
+    "visible_augmentations": "Left forearm haptic interface overlay — a semi-translucent polymer sleeve with visible circuitry, sensor nodes, and faint bioluminescent readouts. Geometric patterned iris modifications visible in direct light. Everything else is subcutaneous or internal.",
+    "posture_movement": "Economical and deliberate movement; walks with the careful balance of someone navigating narrow catwalks and low tunnels; stands with slight forward lean as if listening to something. Stillness is his default state — he does not fidget or perform energy.",
+    "clothing_style": "Tier 4 working-class utilitarian: Ferrogate Transit-issued gray-blue coveralls with reflective piping and multiple utility pockets, worn but well-maintained. Under-layer is a black thermal mesh shirt. Work boots are reinforced with steel toe and grip soles, scuffed from tunnel work. No jewelry except a battered analog watch on his right wrist. Carries a Ferrogate-issued toolkit on a worn canvas belt. No corporate logos or status markers — pure function."
+  },
+  "image_prompt": "Zuri Delgado, 173cm lean-muscled tunnel worker, deep warm brown skin with golden undertones, dark close-cropped hair graying at temples. Augmented copper-and-black geometric iris rings visible in his dark eyes. Left forearm covered in semi-transparent haptic interface with glowing circuit patterns and sensor nodes. Wearing gray-blue Ferrogate Transit coveralls with reflective piping, black thermal undershirt, reinforced steel-toe work boots. Battered analog watch on right wrist. Standing in dimly-lit underground tunnel with bioluminescent tech glow reflecting off his augmentations, calm patient expression, economical posture leaning forward slightly. Cyberpunk 2226, industrial noirtech lighting, cinematic depth. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 27.9,
+    "Hispanic/Latin American": 22.8,
+    "Middle Eastern": 18.2,
+    "Eastern European": 16.0,
+    "Northern European": 9.8,
+    "East Asian": 5.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

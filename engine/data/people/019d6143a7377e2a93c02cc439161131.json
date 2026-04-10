@@ -1,0 +1,217 @@
+{
+  "id": "019d6143a7377e2a93c02cc439161131",
+  "type": "character",
+  "name": "Quinn Magnúsdóttir",
+  "aliases": [
+    "Zinzi"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Synthetic rights paralegal and street-level legal advocate",
+  "age": 26,
+  "status": "active",
+  "location": "The Shelf, near Halsted and Division",
+  "description": "Zinzile is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises — concentric rings of gold and green that pulse very faintly when they're stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that's been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Zinzile has no law degree — they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn't yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being responsible for a case outcome that gets someone hurt",
+      "That synthetic personhood will be won on paper and mean nothing in practice"
+    ],
+    "core_desires": [
+      "A legal framework that cannot be bought case by case",
+      "To be taken seriously — not as a prodigy, not as a symbol, as a competent advocate"
+    ],
+    "coping_mechanisms": [
+      "Research spirals — when uncertain, accumulates more information",
+      "Tight humor with close colleagues as emotional valve"
+    ],
+    "blind_spots": [
+      "Overestimates the persuasive power of a good legal argument against naked economic interest",
+      "Struggles to accept that some clients don't want what she thinks they need"
+    ],
+    "secret": "Zinzile has been feeding case summaries and anonymized intake data to an investigative journalist (not Nneka — someone at a larger outlet) without their supervising advocate's knowledge. They believe the exposure helps. They have not thought carefully about what it does to client confidentiality."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rapid alternation between precise legal language and very blunt colloquial speech — the code-switching is intentional, they use it as a tool",
+    "cadence": "Fast, tends to front-load the most important information as if they're always afraid of being cut off",
+    "verbal_tics": [
+      "'Okay but here's the actual issue —'",
+      "Trails off mid-sentence when they're working something out, then resumes at full speed"
+    ],
+    "example_lines": [
+      "Okay but here's the actual issue — they didn't file that injunction because they thought they'd win. They filed it because the processing delay gives them forty days to relocate the unit. It's a clock, not a case.",
+      "I know I'm twenty-six. I also know I read the statute and you didn't. We can talk about my age or we can talk about the filing date."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A synthetic they've been advocating for has vanished from the pre-trial holding register — no transfer record, no release, just gone — and Zinzile is too scared to escalate officially without knowing who to trust",
+    "They've stumbled onto a pattern in their caseload that suggests a coordinated effort to reclassify certain synthetic models as property before a rights bill comes to vote"
+  ],
+  "narrative_function": "Access point to the synthetic rights world and legal system underbelly — they know who has been disappeared, what cases are being buried, and which corporate legal teams are playing dirty.",
+  "augmentations": "Patterned irises (concentric gold/green rings, stress-reactive pulse — unintended behavior from cosmetic mod). Subvocal comms implant for silent communication during proceedings.",
+  "daily_life": "Intake shifts three mornings a week at the Parallel Standing storefront on The Shelf, rest of their time split between case prep, street outreach to synthetic communities, and attending every public hearing they can get into.",
+  "affiliation": "Parallel Standing Legal Advocacy Collective; loose affiliation with several synthetic rights organizations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "synthetic rights",
+      "legal access",
+      "idealist",
+      "information hub"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The client's safety comes first, the precedent comes second, their own principles come third",
+      "Never misrepresent a legal position — it destroys credibility they can't afford to rebuild"
+    ],
+    "escalation_ladder": [
+      "File every available procedural challenge",
+      "Go public with the case if institutional channels are blocked",
+      "Call in every favor and contact simultaneously if someone's safety is immediately at risk"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Eager and slightly overwhelming — they want to know if you're an ally and tend to skip several steps of social preamble",
+      "friends": "Devoted and slightly chaotic — will show up for you completely and also forget plans, flood you with information you didn't ask for, and apologize with genuine distress"
+    },
+    "stress_responses": {
+      "low": "Talks faster",
+      "medium": "Stops eating, develops visible tension in the jaw",
+      "high": "Goes very quiet and still in a way that frightens people who know them"
+    },
+    "contradictions": [
+      "Fights for client autonomy while subtly nudging clients toward the choices they think are right"
+    ],
+    "habits": [
+      "Annotates every document they read even if it's not case-relevant",
+      "Leaves voice memos to themselves in the middle of the night and never remembers recording them"
+    ],
+    "breaking_points": [
+      "A client being harmed because Zinzile made the wrong call",
+      "Discovering their own organization is compromised by a corporate donor with strings attached"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "The Shelf",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Gold",
+    "Bioacoustic Communication Membrane",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Nnenna Baluarte-Volkov",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "TESSERA TK-4 'Hellhound'",
+    "Tessera Nexus Town Car",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Ghost Ronin",
+    "The Pure Hand",
+    "Timur Osei-Bjelke"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian dominant (46.7%) with significant Hispanic/Latin American (15.3%), Eastern European (14.7%), Northern European (14.3%), and South Asian (9.0%) ancestry — creating a complex phenotype with Southeast Asian facial structure and pigmentation as the primary influence, layered with Latin American and South Asian warmth, and Northern/Eastern European undertones",
+    "height_cm": 168,
+    "weight_kg": 54,
+    "build": "Wiry and lean — the thinness of someone sustained by conviction and irregular meals rather than deprivation. Long-limbed, slight shoulders, core strength that reads in how they hold themselves upright despite the exhaustion",
+    "hair_color": "Natural dark brown with subtle auburn undertones in sunlight",
+    "hair_style": "Thick natural halo, usually unstyled; frequently compressed under a faded canvas cap with a peeling Parallel Standing logo",
+    "hair_length": "Long (shoulder-length when unconstrained)",
+    "eye_color": "Warm brown base with augmented concentric iris patterns — rings of gold and green that pulse faintly under stress (involuntary)",
+    "skin_tone": "Medium warm brown with golden-amber undertones; complexion carries the slight uneven pigmentation of someone who spends half their time indoors in legal offices and half on The Shelf's inconsistent lighting. The tone reflects the Southeast Asian-dominant ancestry with warmth from Hispanic and South Asian heritage",
+    "complexion": "Southeast Asian facial structure with defined cheekbones, full mouth, expressive face that telegraphs emotion before they speak. Minimal grooming — no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
+    "distinguishing_marks": [
+      "Thin scar along left jawline, pale and old, approximately 4cm — origin unknown, never volunteered",
+      "Small burn mark on inside of right wrist (2cm diameter, faded brown) from a heating element accident in their teens",
+      "Faint tattoo on inner left forearm — a small gavel interlocked with a synthetic circuit symbol, done in black ink, approximately 3cm wide"
+    ],
+    "visible_augmentations": "The stress-reactive iris patterns are immediately visible — concentric rings that pulse with golden and green light when cortisol spikes. No visible external chrome or subdermal plating. The subvocal comms implant is invisible, though tiny articulation points are visible at the angle of the jaw if you know to look",
+    "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves quickly with purpose, gestures when they talk — hands are expressive and rarely still. Tends to pace during phone calls or case review. Eyes dart frequently, cataloging exits and overhead sprinklers (habit from street outreach). Maintains direct eye contact even when tired, sometimes to the point of seeming confrontational",
+    "clothing_style": "Tier 3-4 working class with nonprofit aesthetic. Worn jeans or cargo pants (pockets full of case files, evidence bags, burner comm devices). Layered tops — usually a faded Parallel Standing t-shirt under an oversized thrift-store button-up in neutral tones. The battered legal tablet lives in a patched canvas messenger bag with countless stickers from synthetic rights organizations. Worn canvas sneakers held together with determination and duct tape. One piece of jewelry: a silver ring on their right index finger, worn thin from years of anxious spinning. Cap always within arm's reach"
+  },
+  "image_prompt": "Quinn Magnúsdóttir, 168cm lean cyberpunk activist with medium warm brown skin and Southeast Asian facial structure, dark shoulder-length hair usually under a faded canvas cap. Sharp cheekbones, full mouth, expressive warm brown eyes with augmented pulsing gold-green concentric iris rings that glow faintly under stress. Faint jaw scar, ink-stained fingers, worn silver ring on index finger. Layered thrift-store aesthetic — faded Parallel Standing t-shirt under oversized neutral button-up, worn jeans with cargo pockets, canvas sneakers held together with duct tape, patched messenger bag covered in synthetic rights stickers. Sitting forward intensely at a cramped legal office desk or pacing through neon-lit underground shelter corridors. Dark circles from overwork, direct confrontational eye contact. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody dramatic lighting with overhead synthetic lights casting sharp shadows, worn and purposeful, slight motion blur suggesting constant movement. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 46.7,
+    "Hispanic/Latin American": 15.3,
+    "Eastern European": 14.7,
+    "Northern European": 14.3,
+    "South Asian": 9.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

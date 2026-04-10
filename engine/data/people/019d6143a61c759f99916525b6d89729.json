@@ -1,0 +1,297 @@
+{
+  "id": "019d6143a61c759f99916525b6d89729",
+  "type": "character",
+  "name": "Sigrid Erikstad",
+  "aliases": [
+    "Goddie",
+    "the Chemist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Small-scale drug manufacturer specializing in synthetic mood regulators in the Undertow",
+  "age": 38,
+  "status": "active",
+  "location": "The Undertow — a converted flood-control maintenance suite beneath the Blackpipe Corridor infrastructure level, near Fullerton and Damen",
+  "description": "Godfrey is a tall, thin man with very dark skin, close-cropped natural hair going gray at the temples earlier than he'd like, and the particular posture of someone who spends most of his time in low-ceilinged spaces — a slight forward hunch, head naturally inclined downward. He has round eyeglasses with an amber tint — not augmented, just glass, just preference — and long-fingered hands that he keeps very still when he's thinking, which is always. He has one geneware modification: his fingertips emit a faint violet bioluminescence when he's working in the dark, something he had done for practical reasons and has found he cannot imagine working without. He dresses neatly for someone who lives underground; he irons things.\n\nGodfrey was a legitimate pharmaceutical technician for Helix Biosystems for eleven years, and it shows. His lab is cleaner than it has any right to be. His product — a synthetic serotonin modulator he calls 'Vesper,' along with two variants he's developed iteratively over seven years — is consistent, dosed accurately, and free of the adulterants that make cheap compounds dangerous. He has customers who have been with him since the beginning, people from the Undertow and Blackpipe Corridor who cannot afford Helix's licensed version of essentially the same compound, and he regards this as his primary moral justification. He carries this justification the way a man carries something heavy — not lightly, but he carries it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the harm his compounds cause — and he is not naive; he knows some people misuse them — outweighs the access he provides",
+      "Being taken by Helix Biosystems, specifically — not the police, but the company he left, who would have the most reasons and resources"
+    ],
+    "core_desires": [
+      "To be able to produce his compounds openly and safely, in a world that doesn't require him to hide",
+      "Verification: to know his net impact has been positive"
+    ],
+    "coping_mechanisms": [
+      "The lab work itself — precision and control are emotionally regulatory for him",
+      "A detailed personal record he keeps of client outcomes, filtered through intermediaries — he calls it the pastoral log"
+    ],
+    "blind_spots": [
+      "He has convinced himself his monitoring system is robust enough to catch misuse; it is not, and he knows this but cannot fully sit with it",
+      "He left Helix because of their pricing practices but has not fully processed how much of his identity is still their training, their standards, their framework"
+    ],
+    "secret": "He still has his Helix Biosystems employee credentials — they never properly revoked them after his departure was managed quietly. He has never used them, but he has never deleted them. Twice he has come very close to using them to access Helix research servers for formulation data that would improve his compounds significantly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, technical, with a tendency toward passive voice that makes him sound cautious even when he isn't being. Igbo terms of address for people he respects. Kazakh-inflected patterns in his emphasis and sentence structure from his father's family, most noticeable when he's stressed.",
+    "cadence": "Measured and careful, with frequent pauses — he edits himself in real time, and you can sometimes watch him decide not to say something.",
+    "verbal_tics": [
+      "'In principle' as a qualifier that means he agrees but is worried",
+      "Long pauses before answering questions about himself specifically",
+      "Refers to his product always by name — 'Vesper' — never generically"
+    ],
+    "example_lines": [
+      "'Vesper is — in principle — not different from what Helix sells as Serenol. The molecule is the same. The difference is that I know what's in it and I've priced it for the people who actually need it. Whether that makes it medicine or crime is a question I've stopped expecting anyone else to answer for me.'",
+      "'I keep records. I know what my clients are using it for. That's — not nothing. That's something.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of his three trusted intermediaries has gone silent — not unusually so, but the timing aligns with what Godfrey has been hearing about increased Helix Biosystems activity in the Undertow, which is not coincidental if you know what to look for",
+    "His pastoral log has flagged a client whose usage pattern has shifted dramatically — someone he cannot contact directly is in some kind of crisis, and the only way to reach them is to break his own protocols about direct contact"
+  ],
+  "narrative_function": "Moral complexity figure, information source about Undertow infrastructure, potential quest giver — he is quiet and careful and has been watching the underground long enough to know where the bodies are, metaphorically and otherwise.",
+  "augmentations": "Bioluminescent fingertip geneware — violet, activates in darkness during fine motor tasks. Internal atmospheric filter (nose and throat modification from his Helix days that he kept — filters particulate matter, useful in the lab). No combat or social augmentations.",
+  "daily_life": "Production days are Tuesday and Friday — eight to twelve hours of careful synthesis work. Other days are for procurement, quality testing, and the small pastoral work of checking in with intermediaries and, through them, with long-term clients whose situations he monitors for signs of misuse.",
+  "affiliation": "No formal gang affiliation; pays access fees to whoever controls Undertow infrastructure access that month. Sells exclusively through three trusted intermediaries and has never expanded beyond what he can personally guarantee.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Ethical Complexity",
+      "Technical Mastery",
+      "Underground Physician",
+      "Paranoid Caution",
+      "Unresolved Past"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "No new clients without vouching from existing ones — the network must be verifiable",
+      "If a synthesis run produces inconsistent results, destroy the batch entirely rather than test the margins",
+      "Never discuss the lab's location with anyone; the intermediaries don't know it and have never asked"
+    ],
+    "escalation_ladder": [
+      "Polite but firm decline",
+      "Silence — he will simply stop responding if pressure continues",
+      "Relocation — he has two backup sites partially prepared and has rehearsed the move"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Reserved, careful, measures every sentence — warm in tone but not in disclosure",
+      "friends": "Still measured, but allows himself questions and uncertainties; the difference is that with friends he tells you when he doesn't know something"
+    },
+    "stress_responses": {
+      "low": "More precise — the work gets neater",
+      "medium": "Retreats into the pastoral log, reviewing records as a grounding exercise",
+      "high": "Goes still and cold, works through a formal decision tree in his head, arrives at a single action and takes it"
+    },
+    "contradictions": [
+      "Maintains meticulous ethical frameworks for a fundamentally extralegal operation and is not sure whether this makes him better or worse than someone who doesn't bother"
+    ],
+    "habits": [
+      "Irons his clothing on Sunday evenings regardless of what the week holds",
+      "Checks the lab atmospheric filters every morning before beginning anything else"
+    ],
+    "breaking_points": [
+      "The pastoral log producing evidence of a death he could have prevented by doing something differently — he has never faced this but has thought about it extensively"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good, due for calibration",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cleaner": 0.9,
+    "Stoic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironhaven to an Igbo-Kazakh family; father was a Ferrogate Transit engineer, mother a secondary educator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed pharmaceutical chemistry qualification; joined Helix Biosystems as a synthesis technician",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Left Helix after internal escalation about pricing practices was dismissed and quietly documented against him",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First Vesper batch produced in the Undertow; three clients, all personal referrals",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lab settled into current location; pastoral log system established",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Twelve clients, two variants developed, credentials still undeleted, still undecided",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Glass Garden' Caltrops"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Helix Biosystems",
+    "The Undertow",
+    "Aslan Vasquez-Chatterjee",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Vesper",
+    "Glass",
+    "Breck Tannen",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Noir Dining",
+    "Slagworks Industrial",
+    "Street Custom 'Glass Garden' Caltrops",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Collective",
+    "The Glass Garden",
+    "The Third Rail",
+    "UNDERTOW PASTORAL",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Northern European dominant (50%) with significant East Asian (17.4%), Sub-Saharan African (13.5%), and Hispanic/Latin American (13.5%) ancestry, with minor South Asian and Central Asian contributions. The genetic blend produces a complexion that bridges multiple continental regions—warm deep brown with subtle undertones reflecting the East Asian and South Asian components.",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and lean, almost ascetic — the build of someone who forgets to eat during focus work. Long limbs, narrow shoulders, minimal musculature. Posture dominated by a habitual forward hunch from years in low-ceilinged laboratory spaces.",
+    "hair_color": "Natural black with silver-gray threading at temples and sideburns",
+    "hair_style": "Close-cropped, neatly maintained, precisely edged",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, obscured behind amber-tinted optical glass",
+    "skin_tone": "Deep warm brown with golden and olive undertones—a rich blend reflecting the Northern European, East Asian, Sub-Saharan African, and Hispanic/Latin American ancestry. Uniform tone with subtle warmth rather than the cooler darkness of single-region ancestry.",
+    "complexion": "Clean-shaven, meticulous grooming despite underground living. Skin shows minimal weathering; fine lines around eyes from concentration squinting. Facial structure shows the subtle blend of ancestry—defined cheekbones with slight angularity from Northern European heritage, almond eye shape suggesting East Asian genetics, and warm undertones across the bridge of nose and cheeks. Hands show callus-work from glass beakers and precision pipetting — palms and inner fingers slightly rougher than the rest of frame.",
+    "distinguishing_marks": [
+      "Fingertip pads emit faint violet bioluminescence during fine motor tasks or in total darkness — a geneware modification visible as thin luminous halos around thumb through ring finger when active.",
+      "Thin surgical scar along inside of left wrist, pale and old, approximately 4cm in length — legacy of early pharmaceutical training accident."
+    ],
+    "visible_augmentations": "Bioluminescent fingertip geneware (faint violet glow during laboratory work). Internal atmospheric filter modification (nose/throat) not externally visible except as slightly unusual nasal structure. Amber-tinted eyeglasses are non-augmented optical wear.",
+    "posture_movement": "Habitual forward hunch from low-ceiling laboratory work. Movements are slow, deliberate, economical — nothing wasted. Hands remain still when thinking, fingers precisely arced when working. Walks with slight downward head inclination. Overall carriage suggests sustained focus and nervous energy held in abeyance.",
+    "clothing_style": "Tier 4 working-class practical with exceptional maintenance discipline. Typically wears dark denim trousers (pressed), dark fitted shirts or lab coats in good condition, steel-toed safety shoes (practical for laboratory environment). No logos or status markers. Everything is clean, wrinkle-free, clearly ironed regularly. A cardigan or unadorned jacket for transit. No jewelry except a simple metal watch (non-augmented). Clothing choices suggest a man who maintains standards of order as a form of personal sovereignty."
+  },
+  "image_prompt": "Sigrid Erikstad, tall lean cyberpunk scientist (188cm) with deep warm brown skin blending Northern European, East Asian, Sub-Saharan African, and Hispanic heritage. Close-cropped black hair with gray temples. Clean-shaven with fine focus-lines around eyes, wearing amber-tinted optical glasses. Dark pressed denim and fitted dark lab coat, steel-toed shoes. Hands with faint violet bioluminescent fingertips glowing softly. Habitual forward hunch from laboratory work, slow deliberate movements. Standing in dimly-lit underground laboratory with cool blue-green lighting reflecting off glass beakers and equipment. Violet geneware glow illuminating precision work surfaces. Meticulous, focused, exhausted concentration. GLMZ 2226 cyberpunk aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 50.0,
+    "East Asian": 17.4,
+    "Sub-Saharan African": 13.5,
+    "Hispanic/Latin American": 13.5,
+    "South Asian": 3.1,
+    "Central Asian": 2.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

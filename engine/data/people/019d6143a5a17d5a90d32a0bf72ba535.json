@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a5a17d5a90d32a0bf72ba535",
+  "type": "character",
+  "name": "Kira Sokolov-Sow",
+  "aliases": [
+    "Daze",
+    "The Flood"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Anti-corporate agitator and underground press operator based in Highland Park Autonomous Zone",
+  "age": 27,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, GLMZ, near Michigan Ave and Walton",
+  "description": "Adaeze is compact and kinetic, the kind of person who seems to be in motion even when she's standing still — weight shifting, fingers moving, eyes cataloguing everything in the room. Her natural hair is grown out in a voluminous cloud shot through with bioluminescent threads she had woven in at a Shelf parlor, the glow cycling slowly through amber and deep red, which she chose because they are the colors of burning. Her skin is warm brown, and she has a thin scar through her left eyebrow from a Tessera security baton three years ago that she displays without shame.\n\nShe runs a print shop front called Frequency that produces neighborhood circulars by day and incendiary agitprop by night. She is funny in a way that disarms people before she makes them angry, which is her preferred order of operations. She believes fiercely in the zone's autonomy and is deeply suspicious of anyone who frames activism as a stepping stone to conventional politics. She eats too little, sleeps too little, and spends money she doesn't have on ink, paper, and anonymous server time. She has a small shrine to the local E.L.F. she calls The Compositor in the back of the shop, surrounded by botched print runs.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the zone will eventually be absorbed and normalized into the corponation grid and no one will remember what was there before",
+      "That she is performing resistance rather than enacting it"
+    ],
+    "core_desires": [
+      "To publish something so true and so sharp that it cannot be ignored",
+      "A Highland Park that outlasts her"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection and weapon simultaneously",
+      "Hyperactivity — filling silence with tasks"
+    ],
+    "blind_spots": [
+      "Tendency to burn bridges with potential allies who don't share her exact politics",
+      "Underestimates how much the community needs stability as much as challenge"
+    ],
+    "secret": "She received a one-time anonymous payment of Φ2,400 from an untraceable source eight months ago — enough to save Frequency when she was about to lose the lease. She told herself she would find out who sent it and refuse if it was compromised. She has not tried very hard to find out."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick, colloquial, layered with zone slang and print-shop jargon. Switches registers rapidly — can go from street talk to precise political theory in one breath.",
+    "cadence": "Fast, rhythmic. Sentences run together. Often talks in lists.",
+    "verbal_tics": [
+      "'Right? Right.' as punctuation",
+      "Refers to Tessera and Axiom simply as 'the company' as if there is only one"
+    ],
+    "example_lines": [
+      "'I printed three hundred copies, they confiscated eighty, which means two-twenty got through, which means we're ahead. This is math. This is winning.'",
+      "'The company doesn't want you angry. Angry organizes. They want you tired. So the first thing I'm going to do is make you laugh, because laughter is the opposite of tired.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The anonymous payment traces back to a Tessera internal communications operative who was using Frequency to launder disinformation — Adaeze must decide what to do with a press whose integrity may be compromised.",
+    "A photographic exposé she is about to publish contains an image that inadvertently identifies a protected witness in an unrelated case."
+  ],
+  "narrative_function": "Information source, underground press contact, agitator who can mobilize crowds but struggles to sustain movements. Potential ally with complicated strings attached.",
+  "augmentations": "Bioluminescent hair threads (cosmetic). A secondhand optical implant in her right eye that she bought refurbished — it has a slight lag on the zoom function that sometimes makes her blink involuntarily. Subdermal data sleeve on her right forearm for rapid data transfer to her press equipment.",
+  "daily_life": "Manages print orders until midday, attends at least one community meeting or action per week, spends evenings composing the next issue of Frequency on an air-gapped terminal in her back room.",
+  "affiliation": "Frequency Press (her own operation), Highland Park Autonomous Zone Community Council (unofficial relationship — she criticizes them when warranted)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 4,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Press Operator",
+      "Agitator",
+      "Zone Loyalist",
+      "Morally Grey Funding",
+      "Fast Talker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Publish first, negotiate second",
+      "Never reveal a source, even under duress"
+    ],
+    "escalation_ladder": [
+      "Satirical piece in Frequency",
+      "Public rally and paper distribution",
+      "Direct action coordination with other zone groups",
+      "If cornered — destruction of her own press equipment before allowing seizure"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but probing. Tests them with a joke to see how they respond to irreverence.",
+      "friends": "Fiercely loyal, will exhaust herself for people she loves, bad at asking for help in return."
+    },
+    "stress_responses": {
+      "low": "Works longer hours, produces more content",
+      "medium": "Becomes sharp-tongued and picks unnecessary fights",
+      "high": "Goes completely silent for twelve to twenty-four hours, then emerges with a decision already made"
+    },
+    "contradictions": [
+      "Believes in collective decision-making but runs Frequency as a one-person operation answerable to no one"
+    ],
+    "habits": [
+      "Ink-stained fingers she never fully cleans",
+      "Leaves a blank page in the E.L.F. shrine for the Compositor to 'fill in'"
+    ],
+    "breaking_points": [
+      "If someone she printed for is arrested using her publication as evidence against them, she will destroy the press herself before the authorities can seize it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Sentinel": 0.7,
+    "Protector": 0.7,
+    "Code Keeper": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Garrison Rifle GR-5 'Rampart'",
+    "Tessera TK-5 Compact 'Clerk'",
+    "Galvanic Disruption Gauntlet GDG-2 'Palsy'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Garrison Rifle GR-5 'Rampart'",
+    "Tessera TK-5 Compact 'Clerk'"
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "GLMZ",
+    "The Quiet Room",
+    "The Gradient Compact",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Tessera Corponation",
+    "Witness",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight",
+    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus GE-1 'Garrison'",
+    "Breck Tannen",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "Crucible Industries Garrison Rifle GR-5 'Rampart'",
+    "Djeneba Magnusson-Camara",
+    "Galvanic Disruption Gauntlet GDG-2 'Palsy'",
+    "Ilhan Sandstrom-Badu",
+    "Lowline Press",
+    "Lumen",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Patient Zero",
+    "Réginald Asomaning-Čabarkapa",
+    "Slagworks Industrial",
+    "Sustrel",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera TK-5 Compact 'Clerk'",
+    "The Pure Hand",
+    "The Underlayer Collective",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "East Asian dominant (38.5%) with substantial Eastern European (25.3%) and Sub-Saharan African (24.7%) ancestry, creating a striking multihued phenotype. Moderate Hispanic/Latin American admixture (9.8%) adds warmth to undertones. Northern European ancestry (1.7%) contributes minimal but detectable influence.",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Compact and wiry, all kinetic energy — lean muscle with the restless quality of someone who burns calories through constant motion rather than exercise. Her frame is small-boned but dense.",
+    "hair_color": "Natural deep brown with bioluminescent thread accents cycling amber to deep red",
+    "hair_style": "Voluminous natural cloud, approximately shoulder-length, threads woven throughout",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: warm brown, natural. Right eye: augmented optical implant with slight metallic sheen, amber-tinted lens with visible micro-servos at the iris",
+    "skin_tone": "Medium-deep bronze with complex undertones — East Asian golden warmth blended with Sub-Saharan undertones and Eastern European cooler undertones creating nuanced warm-neutral balance. Displays rich dimensionality across different lighting conditions.",
+    "complexion": "Angular, high-cheekboned face reflecting East Asian and Eastern European features softened and enriched by Sub-Saharan African heritage. Bone structure is sharp and defined. Skin shows the slight wear of chronic sleep deprivation — faint shadows under eyes. Well-maintained grooming despite irregular self-care habits.",
+    "distinguishing_marks": [
+      "Thin white scar through left eyebrow running vertically, approximately 3cm, from Tessera security baton strike three years prior — displayed without concealment",
+      "Small, faded tattoo on right inner wrist: a printer's mark (⊞), approximately 1.5cm, from her early days running the shop"
+    ],
+    "visible_augmentations": "Right eye optical implant with amber lens and visible micro-servo mechanics at the iris; occasional involuntary blink from zoom lag. Bioluminescent hair threads cycling slowly through amber and deep red. Faint subdermal tracery visible on right forearm under certain lighting — data sleeve interface ports at wrist and elbow.",
+    "posture_movement": "Never fully still — weight shifts from foot to foot, fingers fidget with whatever is at hand (paper, thread, ink pen), eyes in constant motion cataloguing surroundings. Moves with economical precision despite the kinetic restlessness. When seated, legs bounce or tap. When engaged in conversation, gestures are emphatic and deliberate.",
+    "clothing_style": "Tier 4-5 utilitarian: worn-in Carhartt print shop apron in faded charcoal over mismatched layers (thermal underlayer, oversized pullover in muted earth tones). Hands usually stained with ink. Boots are well-maintained but scuffed (practical, no-logo brands from secondary markets). Minimal jewelry except for a small copper ring on her left thumb. Clothing prioritizes function and durability over aesthetics; any wear is from use, not affectation."
+  },
+  "image_prompt": "Kira Sokolov-Sow, 158cm tall, compact wiry frame, medium-deep bronze skin with East Asian and Sub-Saharan African heritage richness, angular high cheekbones. Natural deep brown voluminous shoulder-length hair with amber-to-deep-red bioluminescent threads woven throughout. Left eye warm brown with prominent white scar through eyebrow; right eye augmented optical implant with amber lens and visible micro-servos. Faint sleep-deprivation shadows under eyes. Wearing faded charcoal Carhartt print shop apron over mismatched muted earth-tone layers, hands ink-stained, well-maintained scuffed boots. Small copper ring on left thumb. Printer's mark tattoo visible on right inner wrist. Subdermal data sleeve tracery faintly visible on right forearm. Restless kinetic energy, weight shifting, fingers fidgeting with paper or ink pen. Cyberpunk 2226 Great Lakes Metropolitan Zone print shop setting, neon and fluorescent overhead lighting casting shadows on her angular features, augmented eye catching amber light. Mood: focused intensity mixed with controlled restlessness, surrounded by printing equipment and papers. Cinematic, detailed character portrait --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 38.5,
+    "Eastern European": 25.3,
+    "Sub-Saharan African": 24.7,
+    "Hispanic/Latin American": 9.8,
+    "Northern European": 1.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

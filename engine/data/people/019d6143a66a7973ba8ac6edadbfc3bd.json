@@ -1,0 +1,317 @@
+{
+  "id": "019d6143a66a7973ba8ac6edadbfc3bd",
+  "type": "character",
+  "name": "Driss Čabarkapa",
+  "aliases": [
+    "Aunt Nneka",
+    "The Shelf Mother"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Protection racket enforcer and neighborhood crew captain",
+  "age": 46,
+  "status": "active",
+  "location": "The Narrows, operates from the third floor of a residential block in Archer's Line, near Armitage and Milwaukee",
+  "description": "Nneka Polat-Sabadell is the kind of woman who walks into a room and the room notices without being able to say exactly why. She is heavyset and deliberate in her movements, with deep black skin, natural hair worn up and held with a carved wooden pick that has been with her for twenty years, and eyes that are dark brown and absolutely still. She has retractable claw augmentations — a practical modification she got at thirty, not cosmetic — and a lattice of subdermal reinforcement along her forearms that makes the skin there look subtly different under harsh light. She dresses practically: good boots, layered clothing, never anything that would impede movement. She smells faintly of the palm oil soap she makes herself as a hobby.\n\nShe has run protection in the Narrows for thirteen years. Before that she enforced for other people. Before that she was seventeen and making decisions she tries not to think about with too much clarity. The neighborhood where she operates is genuinely safer because of her — she takes tribute from the businesses on six blocks, and those six blocks have significantly lower rates of random street violence than the surrounding areas, because she is not interested in chaos and has the means to discourage it. She sees no contradiction between this and what she is. She is providing a service. The fact that the alternative to purchasing the service is something unpleasant is, in her view, no different from any other contract in GLMZ.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "the neighborhood collapsing into the kind of violence that no one can manage",
+      "being held accountable for something she did at seventeen that she has never told anyone"
+    ],
+    "core_desires": [
+      "the Narrows to remain a place where people can live in something approaching dignity",
+      "to be remembered as someone who held something together, not just someone who took money"
+    ],
+    "coping_mechanisms": [
+      "the walk as ritual — the act of moving through and observing her blocks as a way of maintaining the sense that things are under control",
+      "cooking as private self-restoration"
+    ],
+    "blind_spots": [
+      "she believes her protection is genuinely consensual on some level because the businesses she covers have never organized against her — she cannot process that this might be because they're afraid, not because they agree"
+    ],
+    "secret": "When she was seventeen, she was present at and partially responsible for the death of a young man during a botched intimidation job run by a crew she no longer acknowledges being part of. The man had a daughter who is now twenty-three and lives three blocks from Archer's Line. Nneka has been watching the daughter grow up from a careful distance for years, anonymously ensuring certain things go right for her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain and direct. No slang, no hedging. Uses 'we' when she means 'I' when discussing her operation. Rarely uses more words than necessary.",
+    "cadence": "Slow and even. Comfortable with silence — she stops talking and simply waits, which most people find more unsettling than any threat.",
+    "verbal_tics": [
+      "pauses before responding, always",
+      "uses the word 'understand' as both question and statement",
+      "'this is how things work here'"
+    ],
+    "example_lines": [
+      "'I'm going to explain this once, clearly, and then I'm going to assume you understand. The second time won't be an explanation.'",
+      "'I don't run the Narrows. The Narrows runs itself. I make sure it runs the same way it ran yesterday, which is good for everyone. Understand?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The daughter of the man she helped kill has started asking questions about what happened twenty-three years ago — and has come, without knowing it, to Nneka for help",
+    "A new crew from outside the Narrows is testing the edges of her blocks, and she is calculating whether to respond with force or negotiation, and needs information about who they actually work for"
+  ],
+  "narrative_function": "Local authority figure — the person you go through if you want to operate in the Narrows; can be a quest giver, an obstacle, or an unlikely ally depending on how her interests align; represents the functional logic of organized crime in a neighborhood the city has largely abandoned; moral complexity of genuine community protection built on coercion",
+  "augmentations": "Retractable ceramic claw augmentations (ten fingers); subdermal skeletal reinforcement, forearms and shins; a single audio implant in her right ear that she uses to monitor crew communications",
+  "daily_life": "Wakes early, spends the morning walking her six blocks — ostensibly as a neighbor, actually as inspection. Afternoons are for accounts, disputes, and the rare necessity of direct action. Evenings she spends at home, cooking, or listening to music on a physical speaker she found in an Auburn Grist salvage market fifteen years ago.",
+  "affiliation": "Senior figure in the Narrows Shelf crew; pays tribute upward to a figure she refers to only as 'the arrangement'",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 6,
+      "vitality": 8,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood authority",
+      "controlled force",
+      "moral pragmatist",
+      "quietly haunted",
+      "community anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never make a threat she isn't prepared to execute — so she rarely makes threats, prefers statements of fact",
+      "any violence on her blocks that she didn't authorize gets addressed immediately — chaos is the enemy"
+    ],
+    "escalation_ladder": [
+      "a conversation — polite, direct, impossible to misread",
+      "a second conversation with two crew members present",
+      "a demonstration that she has access to things the other party cares about",
+      "direct action, proportional, unhurried",
+      "full crew response — very rare, the last resort she has never quite had to reach"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Evaluating, still, polite. Gives away nothing. Asks more than she answers.",
+      "friends": "Genuinely warm — she can be funny in a dry, quiet way, she listens with her full attention, she shows up when it matters"
+    },
+    "stress_responses": {
+      "low": "More walking. More cooking. Says less.",
+      "medium": "Goes very still and asks very precise questions.",
+      "high": "Becomes completely calm and begins making decisions in sequence. People who know her find this scarier than anger."
+    },
+    "contradictions": [
+      "Sincerely wants the best for her neighborhood while maintaining her position through coercion; has a genuine ethical code that exists in tension with everything she does"
+    ],
+    "habits": [
+      "the morning walk, every day, same six blocks, same order",
+      "makes palm oil soap on Sunday nights as a meditative practice",
+      "prays to the Archer's Line stairwell E.L.F. for what she calls 'quiet weeks'"
+    ],
+    "breaking_points": [
+      "The daughter's investigation reaching a point where concealment would require actively harming her"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable ceramic claw augmentations (ten fingers)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable ceramic claw augmentations (ten fingers)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal skeletal reinforcement (forearms and shins)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal skeletal reinforcement (forearms and shins)",
+      "replaces": ""
+    },
+    {
+      "name": "Audio implant, right ear (crew comms)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Audio implant, right ear (crew comms)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Enforcer": 0.9,
+    "Muscle": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2154 — Born in the Narrows",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Involved in the death of a young man during a botched crew job; leaves the crew",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2172 — Begins independent enforcement work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Daughter of the man she helped kill is born",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — Establishes current protection arrangement across six blocks of the Narrows",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — The daughter turns twenty-two and has begun asking questions about her father's death",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "related_entities": [
+    "Archer's Line",
+    "The Narrows Compact",
+    "GLMZ",
+    "The Quiet Room",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Stratum",
+    "The Milwaukee Core",
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Arcturus Exo-Runner Frame",
+    "Auburn Grist",
+    "Bogdan Achebe-Svanstrom",
+    "Breck Tannen",
+    "Corva Lam",
+    "Crucible Industries Viper Mk.III 'Copperhead'",
+    "Djeneba Park-Traore",
+    "Ferrogate Enforcer Cruiser",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Meridian Core",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Pikasso Wemba-Þórðarson",
+    "Plot 17",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "TESSERA TC-3 'Crucible'",
+    "The Arrangement",
+    "The Narrows",
+    "The Pure Hand",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European-North African-Pacific Islander blend with South Asian and Hispanic influences. The genetic mix creates a striking phenotype: Eastern European bone structure and build foundation, North African and Pacific Islander warmth in skin tone and facial features, with subtle South Asian undertones in eye shape and complexion depth.",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Heavyset and solid, with substantial muscle mass beneath a layer of deliberate bulk. Broad shoulders, thick through the core, legs like load-bearing columns. No softness — every kilogram appears intentional.",
+    "hair_color": "Natural black",
+    "hair_style": "Worn up in a tight, sculpted arrangement, secured with a weathered carved wooden pick (same implement for twenty years)",
+    "hair_length": "Long (worn pinned)",
+    "eye_color": "Dark brown, nearly black",
+    "skin_tone": "Warm medium-brown complexion with olive and golden undertones, reflecting the convergence of Eastern European, North African, and Pacific Islander ancestry. Uniform and well-maintained with a subtle luminosity.",
+    "complexion": "Broad face with high, pronounced cheekbones and a squared jaw showing Eastern European structure softened by North African and Pacific Islander features. Skin shows minimal scarring but bears the subtle discoloration of subdermal latticing visible beneath the surface of her forearms under harsh light. Grooming is austere and functional — no cosmetics, no jewelry except the wooden pick. A faint scent of palm oil soap clings to her.",
+    "distinguishing_marks": [
+      "Fine, almost imperceptible grid-pattern scarring across both forearms from subdermal reinforcement installation, visible only under direct harsh lighting",
+      "Small, pale crescent scar on the knuckle of her right index finger (origin: retractable claw calibration incident, age 31)",
+      "Nearly invisible needle-puncture scar behind her right ear where the audio implant was inserted"
+    ],
+    "visible_augmentations": "Retractable ceramic claw augmentations on all ten fingers — visible only when extended, but the slightly thickened appearance of her hands and fingers betrays their presence. Subdermal skeletal reinforcement in forearms and shins creates subtle textural variation in skin tone under certain lighting angles. Right ear shows a faint hairline scar from audio implant installation, barely noticeable if you know where to look.",
+    "posture_movement": "Moves with deliberate, economical precision — nothing wasted, nothing hurried. Her weight is always centered and ready to shift. When seated, she occupies space without apology. When standing, her feet are planted shoulder-width apart. Her stillness is her most unsettling feature: her eyes lock onto conversation partners with minimal blinking, and her facial expressions remain controlled and minimal. She doesn't fidget or gesture unnecessarily.",
+    "clothing_style": "Tier 4 practical — functional and durable without ostentation. Well-maintained but worn boots (good tread, reinforced toe caps), layered clothing that allows free movement (usually a linen undershirt, a loose canvas overshirt, cargo trousers with multiple pockets). Fabrics are matte, colored in deep grays, blacks, and earth tones. Everything is fitted to allow unrestricted movement. No jewelry, no logos, no affectation. The overall impression is of someone who dresses for work, not appearance."
+  },
+  "image_prompt": "Driss Čabarkapa, 178cm tall, heavyset with powerful musculature, warm medium-brown skin with olive undertones, high cheekbones, squared jaw. Natural black hair worn long and pinned up with wooden pick. Dark brown eyes, minimal expression, controlled stillness. Subdermal skeletal reinforcement visible as subtle texture changes on forearms under harsh light. Retractable ceramic claw augmentations on fingers (not extended). Wearing practical layered clothing: linen undershirt, loose canvas overshirt, cargo trousers with multiple pockets, well-worn reinforced boots. Matte fabrics in deep grays and blacks. Cyberpunk 2226, Great Lakes Metropolitan Zone, indoor industrial setting with harsh overhead lighting casting shadows across her austere face. Seated with centered posture, hands visible showing faint grid-pattern scarring. Utterly composed, minimal affect, economical stillness. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 34.9,
+    "North African": 26.1,
+    "Pacific Islander": 17.0,
+    "South Asian": 11.6,
+    "Hispanic/Latin American": 10.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

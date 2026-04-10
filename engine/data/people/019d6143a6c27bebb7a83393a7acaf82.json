@@ -1,0 +1,337 @@
+{
+  "id": "019d6143a6c27bebb7a83393a7acaf82",
+  "type": "character",
+  "name": "Tarn Hernández",
+  "aliases": [
+    "Dagger",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Cross-district contraband specialist — smuggler",
+  "age": 64,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
+  "description": "Sagyn Ogawa-Twumasi is average height but with a presence that fills more space than the body accounts for. At 64, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Sagyn Ogawa-Twumasi is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.81,
+      "ideal": 0.42,
+      "id": 0.24,
+      "shadow": 0.38,
+      "mask": 0.92,
+      "ghost": 0.21
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Their past catching up — debts, enemies, broken promises"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Overestimates their own abilities in situations outside their specialty",
+      "Thinks speed can substitute for planning because it's worked so far"
+    ],
+    "secret": "Sagyn Ogawa-Twumasi murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
+    ],
+    "example_lines": [
+      "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
+      "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
+      "\"I move things from where they are to where they need to be. The legality is your problem.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate black site Sagyn Ogawa-Twumasi once infiltrated is being reopened, and the people inside know his face",
+    "Sagyn Ogawa-Twumasi intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "Someone is impersonating Sagyn Ogawa-Twumasi on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Sagyn Ogawa-Twumasi functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — Lattice territory specialist",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 10
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 6
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.83,
+      "caution": 0.56,
+      "loyalty": 0.49,
+      "greed": 0.89,
+      "empathy": 0.14
+    },
+    "drives": [
+      "power",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 5,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "pain tolerance beyond normal limits"
+    ],
+    "weaknesses": [
+      "grudge-holding that compromises rational decision-making",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "smuggler",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    },
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Smuggler": 0.7,
+    "Risk Taker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'"
+  ],
+  "related_entities": [
+    "Masquerade",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Adaptive Camouflage Skin",
+    "Alper Castillo-Ababio",
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
+    "Bintou Halvorsen-Osei",
+    "Breck Tannen",
+    "Djeneba Park-Traore",
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Spire Light on Still Water",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA CR-12 'Whisper'",
+    "The Wire Taps",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Central Asian-dominant mixed ancestry with significant Hispanic/Latin American, Sub-Saharan African, Northern European, and minor Southeast/South Asian components. Central Asian features dominate bone structure; Hispanic and African heritage visible in skin tone depth and facial proportions; Northern European ancestry contributes to eye shape and hair greying pattern; Southeast and South Asian ancestry adds subtle refinement to cheekbone prominence.",
+    "height_cm": 172,
+    "weight_kg": 76,
+    "build": "Lean and compact, muscle retention from military conditioning but not bulk — the kind of frame that moves efficiently rather than impressively. Shoulders slightly forward from decades of night work and low-light vigilance.",
+    "hair_color": "Salt-and-pepper grey, natural with darker undertones",
+    "hair_style": "Short, cropped military-style, minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, left eye with faint chromatic aberration from old augmentation removal",
+    "skin_tone": "Warm medium-tan complexion with subtle golden undertones — a synthesis of Central Asian base with darker depth from African and Hispanic ancestry. Burnished by irregular circadian cycles and street-level work. Shows warm undertone in direct light, cooler undertones in shadow.",
+    "complexion": "Weathered but not deeply lined. Face has an unfinished quality — asymmetrical, sharp cheekbones with Central Asian height and definition, jaw set in a way that suggests constant low-level tension. Shallow creases around eyes from squinting in low light. Skin texture uneven where dermal camouflage pigment cells cluster beneath the epidermis. Subtle warmth across cheekbones and bridge of nose.",
+    "distinguishing_marks": [
+      "Jagged scar tissue tracing a vertical line from right temple to jaw, pale and slightly raised — cortical bomb removal site, street doc work visible",
+      "Faint lattice of thin scars across knuckles and forearms, tactical training and old violence",
+      "Chromatic shimmer visible across shoulders and neck during certain light angles — dermal camouflage cells responding to stress or temperature change",
+      "Pale crescent-shaped burn scar on inside of left wrist, precision tool mark"
+    ],
+    "visible_augmentations": "Cortical bomb removal scar is the primary visible marker — unmistakable to anyone who knows what they're looking at. Dermal camouflage creates subtle color-shift iridescence across exposed skin, especially under neon or harsh lighting — not obvious at first glance but noticeable if you're looking. No obvious chrome limbs or external hardware; augmentations are embedded.",
+    "posture_movement": "Economical movement — nothing wasted, nothing showy. Shifts weight forward slightly when standing still, as if ready to move in any direction. Eyes track edges and exits automatically. When sitting, occupies minimal space but radiates controlled tension. Handshake is firm but not aggressive. Speaks quietly; people lean in to listen.",
+    "clothing_style": "Tier 3-4 practical wear. Dark synthetic fibers — charcoal, black, dark grey — that don't reflect light or show wear easily. Mid-grade tactical jacket with internal pockets (Zenith or Kessler brand), reinforced seams. Unmarked cargo pants with knife holsters on thighs. Boots are worn but maintained — professional grade, not flashy. No corpo logos, no faction colors. A single piece of jewelry: worn silver ring on left ring finger, military-issue design, never removed. Carries a long coat for The Spires' climate-controlled corridors, aged leather with interior mesh lining."
+  },
+  "image_prompt": "Tarn Hernández, male operative in cyberpunk 2226, 172cm lean muscular frame wearing dark tactical jacket and cargo pants, warm medium-tan skin tone reflecting Central Asian-Hispanic-African mixed heritage, sharp cheekbones and asymmetrical weathered face, salt-pepper cropped hair, dark brown eyes with left eye chromatic aberration shimmer, jagged vertical scar right temple to jaw from cortical implant removal, faint lattice scars on forearms, dermal camouflage cells creating iridescent color-shift across neck and shoulders under neon light, worn silver military ring on left hand, minimal body language projecting controlled tension, standing in dimly-lit Great Lakes Metropolitan Zone corridor with cool blue-purple neon lighting casting shadows, aged leather long coat draped over tactical gear, edges and exits visible in background, photorealistic cyberpunk noir aesthetic, moody atmospheric lighting, professional operatic tension --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Central Asian": 38.1,
+    "Hispanic/Latin American": 19.5,
+    "Sub-Saharan African": 14.2,
+    "Northern European": 14.0,
+    "Southeast Asian": 7.7,
+    "South Asian": 6.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

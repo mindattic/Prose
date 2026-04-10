@@ -1,0 +1,335 @@
+{
+  "id": "019d6143a71d752190c4c96e06201756",
+  "type": "character",
+  "name": "Sage Tehrani-Nygaard",
+  "aliases": [
+    "Lodestone",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
+  "age": 28,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
+  "description": "Ximena Cruz-Addo is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 28, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a counterintelligence specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Ximena Cruz-Addo lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.47,
+      "ideal": 0.93,
+      "id": 0.87,
+      "shadow": 0.54,
+      "mask": 0.22,
+      "ghost": 0.42
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Their past catching up — debts, enemies, broken promises"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "Stability — a place to sleep that's the same place two nights running",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Cannot accept help without interpreting it as leverage",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Trusts technology more than people — machines don't betray"
+    ],
+    "secret": "Ximena Cruz-Addo betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Ends statements with 'yeah?' — not a question, a dare"
+    ],
+    "example_lines": [
+      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
+      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
+      "\"I find the leak. What happens to the leak after that isn't my department.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ximena Cruz-Addo is offered a contract that would clear all their debts — the target is someone they respect",
+    "A corporate black site Ximena Cruz-Addo once infiltrated is being reopened, and the people inside know her face",
+    "Ximena Cruz-Addo intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Ximena Cruz-Addo is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 10
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.49,
+      "caution": 0.88,
+      "loyalty": 0.47,
+      "greed": 0.39,
+      "empathy": 0.76
+    },
+    "drives": [
+      "survival",
+      "revenge",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 6,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "social chameleon — adapts to any environment"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "difficulty with authority figures"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "counterintelligence specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Insists they work alone but performs noticeably better in a team"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Being publicly exposed — name, face, address, all of it blown"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    },
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Street Custom 'Molotov Standard' Incendiary Bottle"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Unfinished Theorem",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Alper Lebedev-Tutu",
+    "Ambrosia Fekete-Waiyaki",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Flicker",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Glenville Sound",
+    "Lazarus LX-2 'Lab Rat'",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Street Custom 'Molotov Standard' Incendiary Bottle",
+    "TERMINUS",
+    "TESSERA CR-12 'Whisper'",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Heritage Vault",
+    "The Quiet Room",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Complex diaspora ancestry: 36.6% East Asian, 29.4% Sub-Saharan African, 22.3% Middle Eastern, 8.8% North African, 2.9% Indigenous American. The genetic blend creates striking facial geometry — high cheekbones and defined jawline from East Asian ancestry, warm undertones and facial structure from African heritage, refined nose bridge and brow arc from Middle Eastern lineage.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean with defined muscle — the physiology of someone who converts nervous energy into constant motion. Shoulders angular, limbs long relative to torso. No excess fat, minimal bulk.",
+    "hair_color": "Natural black with faint grey threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid. No styling affectation — practical, utilitarian.",
+    "hair_length": "Medium (past shoulders when loose)",
+    "eye_color": "Dark brown, slightly enhanced with low-grade ocular overlay (infrared flicker visible in certain light angles)",
+    "skin_tone": "Rich warm brown — the blended result of East Asian, African, and Middle Eastern ancestry, with subtle golden undertones beneath the base warmth. Complexion deepened by time spent outdoors near water.",
+    "complexion": "Sharp facial geometry with high cheekbones and a defined jawline reflecting her genetic diversity. The bone structure carries East Asian refinement layered with African sculptural depth and Middle Eastern proportion. Minimal makeup or grooming beyond functionality. Small scar on left cheekbone (knife work, Dockside, 2224). Perpetual tension in the muscles around her eyes and mouth — her default expression is careful neutrality, maintained through deliberate effort.",
+    "distinguishing_marks": [
+      "Thin scar along left cheekbone, approximately 4cm, pale against her skin tone — acquired during a mole-detection contract gone sideways",
+      "Faint stippled burn marks on the inner aspect of her left wrist — old electrical contact damage, pre-augmentation",
+      "Tattoo on inside of right forearm: QUANTA symbol (Φ) rendered in minimalist black lines, approximately 2cm diameter — likely marks a contract milestone or debt"
+    ],
+    "visible_augmentations": "Chrome smartgun link in right forearm — a visible silvered interface panel approximately 3cm × 5cm, positioned on the inner forearm just above the wrist. The interface shows faint blue circuitry tracing beneath polished metal. No effort made to conceal it. The bioware adrenaline regulator is subcutaneous and not visibly apparent, though her movement patterns and lack of visible stress response might indicate its presence to trained observers.",
+    "posture_movement": "Economical and alert. She moves with the compressed energy of someone trained in threat assessment — head positioned to maintain peripheral vision, weight distributed for rapid direction change. Default posture is slightly forward-leaning, shoulders loose but ready. She exhibits minimal fidgeting despite her internal restlessness; the anxiety finds outlets in context (weapon checks, equipment maintenance) rather than display.",
+    "clothing_style": "Tier 3-4 practical: Reinforced synthetic jacket (charcoal grey, worn leather-look polymer) with internal pockets for tools and dead-drop comms. Black cargo pants with thigh pocket reinforcements. Worn tactical boots, scuffed but maintained. No visible corpo branding. Clothing is designed for function — multiple carry points, quick-release systems, range of motion for weapon access. Worn over a fitted black undershirt. A silver chain around her neck holds a cheap metal trinket (likely a dead-drop key or memento from GLMZ)."
+  },
+  "image_prompt": "Sage Tehrani-Nygaard, 168cm lean wiry frame, sharp facial geometry with high cheekbones and defined jawline reflecting East Asian and African ancestry blend, rich warm brown skin with golden undertones, dark brown eyes with faint infrared overlay glow, natural black hair with grey threading pulled tight in functional braid. Small pale scar on left cheekbone. Dressed in worn charcoal grey reinforced synthetic jacket and black cargo pants, tactical boots, silver chain necklace with trinket. Chrome smartgun link panel visible on right inner forearm showing blue circuitry. Posture alert and economical, forward-leaning ready stance. Dockside setting, GLMZ 2226, neon-lit evening, industrial cyberpunk aesthetic, tension in face muscles, minimal expression, weapon-ready composure, atmospheric blue and grey lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 36.6,
+    "Sub-Saharan African": 29.4,
+    "Middle Eastern": 22.3,
+    "North African": 8.8,
+    "Indigenous American": 2.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

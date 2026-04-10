@@ -1,0 +1,308 @@
+{
+  "id": "019d6143a69074ff8d965ee507b6bd2a",
+  "type": "character",
+  "name": "Mateo Salazar-Haugen-Möller",
+  "aliases": [
+    "Spore",
+    "the Quiet Market"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Subterranean merchant specializing in fungus cultivation, bioluminescent compounds, and underground pharmacopoeia",
+  "age": 51,
+  "status": "active",
+  "location": "Deepwell Station, lower market tier (stall designation DW-7 through DW-9), near sub-level access near LaSalle and Congress",
+  "description": "Pachacuti is broad and slow-moving in the way of people who have never needed to flee quickly because they have never given anyone a reason to chase them. Their skin is dark and mottled with deliberate bioluminescent geneware patches — clusters of soft amber and violet light that bloom slowly across their neck and hands when they're pleased or thinking hard, a modification they received at thirty in exchange for a particularly good season of cultivated medicinal spores. They are bald by choice, their scalp tattooed with a map of the Deepwell Station fungal garden network — a living ledger that requires fresh ink additions every time a new cultivation shaft opens. Their hands are enormous and stained permanently umber-brown at the fingertips from decades of spore-work.\n\nPachacuti speaks rarely but with great precision, and they have a gift for making people feel they've received something valuable even in small transactions. They know the medicinal, nutritional, and psychoactive properties of forty-seven distinct fungal strains grown in the tunnels, and they keep this knowledge close, sharing it calibrated to trust. They maintain a small shrine to the Drip-ELF at the back of their stall — a cracked tablet running a looping prayer-sequence, surrounded by offerings of protein paste and carefully harvested spore clusters. People who know Deepwell Station know that Pachacuti's blessing before a difficult journey down-tunnel is worth more than any map.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "A blight or contamination event destroying the cultivation network they've spent thirty years building",
+      "Being forced to surface — they are no longer sure they could survive up there"
+    ],
+    "core_desires": [
+      "For Deepwell Station to become genuinely self-sufficient, not dependent on surface supply lines",
+      "To pass on full knowledge of the fungal pharmacopoeia before they die"
+    ],
+    "coping_mechanisms": [
+      "Immersion in cultivation work as meditative practice",
+      "The ritual of tending the Drip-ELF shrine every morning and evening"
+    ],
+    "blind_spots": [
+      "Too willing to trust people who are patient and quiet, mistaking deliberateness for integrity",
+      "Has convinced themselves that staying neutral in Deepwell politics protects everyone — it mostly protects themselves"
+    ],
+    "secret": "One of their fungal strains — DW-7's back shelf, never for sale — produces a compound that, in the right concentration, causes complete and painless cardiac arrest within six hours. They cultivated it deliberately twelve years ago when a man was hurting children in the station. They used it once. They have kept the strain alive ever since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Botanical terminology mixed with Undertow pidgin and archaic Quechua phrases used as emphasis or punctuation; very formal when conducting trade",
+    "cadence": "Slow and even, with comfortable silences — they never rush sentences or fill pauses",
+    "verbal_tics": [
+      "'Ayni' (reciprocity — used to close transactions)",
+      "Long pause before answering any question they consider important",
+      "'The spore knows'"
+    ],
+    "example_lines": [
+      "'You want the luminescent strain or the nutritional grade? Don't tell me what you think sounds better. Tell me what you actually need.'",
+      "'Ayni. We are balanced. Come back.'",
+      "'The Drip-ELF doesn't care about your urgency. Offer something real and then wait.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A new fungal strain has appeared in the deep tunnels that Pachacuti has never catalogued — it's spreading fast and its properties are unknown, possibly dangerous or possibly the most significant medical discovery in the underworld's history",
+    "Someone has been systematically buying out their DW-7 stock of a specific medicinal compound — in quantities suggesting they're stockpiling for something large",
+    "A young Bore Rat apprentice they've been quietly teaching has disappeared after being seen near the surface access shaft"
+  ],
+  "narrative_function": "Merchant access point for underworld goods; information broker through passive observation of market traffic; spiritual authority figure for Deepwell residents; potential quest-giver for fungal mystery or contamination plots",
+  "augmentations": "Bioluminescent skin patches (geneware, amber/violet, covers neck and hands). Reinforced fingertip bones (practical modification for harvest work — not chrome, a simple structural geneware treatment). No combat augmentations.",
+  "daily_life": "Opens stall at what passes for dawn in Deepwell Station, tends three active cultivation shafts in the two hours before customers arrive, then maintains the market until late — they sleep in a curtained alcove behind DW-8.",
+  "affiliation": "Deepwell Station merchant collective; informal ties to the deep shrine keeper network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Cultivator",
+      "Station Anchor",
+      "Quiet Authority",
+      "Keeper of Dangerous Knowledge"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell to someone in clear crisis without first determining what the crisis is — they have lost customers by doing this and don't regret it",
+      "Prices are fair and fixed; they will not negotiate down, but will sometimes give freely"
+    ],
+    "escalation_ladder": [
+      "Silence and waiting",
+      "Polite, firm refusal with no explanation offered",
+      "Asking the person to leave in a voice that makes it clear the question will not be repeated",
+      "Very rare: calling on the considerable informal social authority they hold in Deepwell Station"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Attentive and neutral — they watch everything, offer nothing personal, but are genuinely helpful about the goods",
+      "friends": "Slow warmth, remembered details, the sharing of cultivation knowledge as intimacy"
+    },
+    "stress_responses": {
+      "low": "Goes still and quieter than usual",
+      "medium": "Begins tending plants with great focus while thinking",
+      "high": "Completely calm exterior, methodical action — the calm is real, which is possibly the most unsettling thing about them"
+    },
+    "contradictions": [
+      "Deeply spiritual about the ELF-shrines and the 'life' of the fungal network, but entirely pragmatic and unsentimental about death"
+    ],
+    "habits": [
+      "Hums while doing inventory — always the same low, tuneless sound",
+      "Leaves a small offering at the shrine every time a cultivation shaft produces something new"
+    ],
+    "breaking_points": [
+      "Deliberate destruction of the cultivation network",
+      "Harm to children in Deepwell Station"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Provider": 0.7,
+    "Opportunist": 0.7,
+    "Nurturer": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born on the surface in Ironvein to Andean-Senegalese-Russian parents; family descended to the Undertow following a Tessera labor dispute eviction",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began cultivation apprenticeship under an older Bore Rat elder at age fourteen",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established their own stall in Deepwell Station",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received bioluminescent geneware in exchange for a year's supply of medicinal compounds",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The incident with the harmful man; first and only use of the cardiac compound",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Running the most trusted merchant operation in Deepwell Station; managing the unknown new fungal strain spreading through cultivation shaft 7",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Forge-454 'Hammerfall'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Forge-454 'Hammerfall'"
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Lymphatic Resonance Injector LRI-5 'Floodgate'",
+    "Bathysphere Networks",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
+    "Breck Tannen",
+    "Crucible Industries Forge-454 'Hammerfall'",
+    "Emeka Johansson-Orozco",
+    "Imara Solís-Khatgal",
+    "Iskander Mbeki-Ó'Treasaigh",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "Narrowcast",
+    "Ossolo Przenysław-Faatoafe",
+    "PulsePoint HydraLine Fluid Balance Monitor",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA TC-3 'Crucible'",
+    "The Bazaar",
+    "The Human Baseline Alliance",
+    "The Ledger",
+    "The Question",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore BloomFilter Olfactory Modulation Implant",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Hispanic/Latin American and Northern European ancestry, complemented by Indigenous American, Sub-Saharan African, and South Asian heritage. This complex genetic mix produces warm, multitonal skin with subtle regional feature blending.",
+    "height_cm": 168,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and thick-bodied, with the settled weight of someone accustomed to sustained labor rather than speed. Chest and torso carry muscle beneath a layer of deliberate softness — the build of a person who moves with purpose but without urgency.",
+    "hair_color": "None",
+    "hair_style": "Shaved scalp",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown, slightly sunken from decades in low-light environments",
+    "skin_tone": "Warm medium to dark brown with subtle golden and olive undertones from the East Asian and South Asian components, enriched by the Latin American and Sub-Saharan African heritage. Irregular mottling and discoloration from spore exposure and geneware integration creates an uneven patina across the surface.",
+    "complexion": "Weathered but composed, with facial structure showing the blended features of East Asian heritage (moderate cheekbones, slightly rounded face shape) softened by the broader bone structure and fuller features from Latin American and Indigenous ancestry. Warmer skin undertones across the cheeks and temples. Fine lines around eyes and mouth suggest more thinking than talking. Permanent umber staining at the cuticles and under fingernails, impossible to fully clean despite regular attempts.",
+    "distinguishing_marks": [
+      "Full scalp tattoo depicting the Deepwell Station fungal garden network in blue and amber ink, with deliberate gaps left for future additions.",
+      "Bioluminescent geneware patches across the neck in three clusters: one along the left side of the neck, two spreading down the right side toward the collarbone — soft amber-to-violet gradient that pulses gently when engaged.",
+      "Matching bioluminescent patches across both hands, concentrating on the palms and back of the fingers, same amber-violet spectrum.",
+      "Fine white scarring across both palms from decades of microscopic cuts during spore harvesting and cultivation work."
+    ],
+    "visible_augmentations": "Bioluminescent geneware patches on neck and hands that glow with soft amber-violet light when activated — visible especially in Deepwell's low-light environment. The patches appear organic rather than mechanical, integrated seamlessly into the skin. No visible chrome or metallic augmentations. The structural reinforcement to fingertip bones is not visually apparent but produces slightly unusual hand proportions — fingers slightly thicker and more robust than baseline.",
+    "posture_movement": "Moves with deliberate slowness, each gesture economical and purposeful. Stands with weight distributed evenly, shoulders slightly forward in a posture suited to hours spent working at cultivation benches. Hands rest naturally with palms slightly open — a gesture of openness that feels genuine rather than performed. Head tilts slightly when listening, a habit of someone working in spaces where sound travels strangely. Their presence feels anchoring — people around them unconsciously slow down.",
+    "clothing_style": "Tier 4 working-class with personal adaptation. Wears loose linen tunics in earth tones (ochre, dark gray, faded brown) over reinforced work pants with multiple deep pockets. A heavy canvas apron over everything, stained with spore-growth medium and dyed various colors from bioluminescent compounds. Boots are practical, oil-treated leather, visibly old but meticulously maintained. Over the shoulders, a woven shawl in muted indigo that serves as both insulation and a place to carry small items. No corporate branding, no status signifiers — the clothing of someone who has moved beyond the need to perform their tier."
+  },
+  "image_prompt": "Mateo Salazar-Haugen-Möller, cyberpunk 2226, medium-dark warm brown skin with golden-olive undertones from blended East Asian, Latin American, Indigenous, and South Asian heritage, shaved scalp with intricate blue and amber bioluminescent fungal garden tattoo, deep brown eyes slightly sunken from low-light work, sturdy 168cm frame with broad shoulders and deliberate weight, weathered composed expression. Soft amber-violet bioluminescent geneware patches glowing faintly on neck and hands. Earth-tone linen tunic under stained canvas apron, reinforced work pants, old maintained leather boots, muted indigo woven shawl across shoulders. Standing at cultivation bench in Deepwell Station's low-light fungal garden, surrounded by softly glowing bioluminescent growth medium in translucent containers, warm amber and violet light reflecting off weathered hands with fine white scarring and thickened fingertips. Anchoring presence, deliberate movements, posture of sustained labor. Atmospheric underground setting with spore-laden air catching the subtle glow of geneware and bioluminescent compounds. Cinematic moody lighting, depth of field emphasizing weathered features and hands. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 26.6,
+    "Hispanic/Latin American": 25.4,
+    "Northern European": 17.5,
+    "Indigenous American": 13.0,
+    "Sub-Saharan African": 9.8,
+    "South Asian": 7.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "id": "019d6143a5e8794eb2521b635381fe18",
+  "type": "character",
+  "name": "Haze Quiñones-Nygaard",
+  "aliases": [
+    "Murmur",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Freelance combat specialist — street samurai",
+  "age": 45,
+  "status": "active",
+  "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
+  "description": "Daulet Reyes-Abubakar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Reyes-Abubakar is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.99,
+      "ideal": 0.45,
+      "id": 0.84,
+      "shadow": 0.85,
+      "mask": 0.43,
+      "ghost": 0.76
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Dying alone in some alley and nobody noticing for weeks"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Daulet Reyes-Abubakar has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
+      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Daulet Reyes-Abubakar's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A high-paying contract turns out to target someone Daulet Reyes-Abubakar owes a personal debt to",
+    "Daulet Reyes-Abubakar intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "As a street samurai, Daulet Reyes-Abubakar embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Geneware muscle density treatment — looks natural, hits like chrome. Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.69,
+      "caution": 0.89,
+      "loyalty": 0.35,
+      "greed": 0.68,
+      "empathy": 0.51
+    },
+    "drives": [
+      "loyalty",
+      "power",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 8,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "physical limitation from incomplete augmentation",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "street samurai",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always verifies target identity independently before lethal contracts",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware muscle density treatment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal armor plating across torso and forearms",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Protector": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "related_entities": [
+    "GLMZ",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "The Milwaukee Core",
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Doru Fofana-Câmpeanu",
+    "Ezio Kaboré-Malhotra",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Quilt",
+    "Réginald Asomaning-Čabarkapa",
+    "TERMINUS",
+    "TESSERA CR-12 'Whisper'",
+    "The Human Baseline Alliance",
+    "Volkov-Saito Precision VS-44 'Fenris'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Pan-diaspora blend: Hispanic/Latin American (29.3%) provides warm undertones and defined facial structure; East Asian (27.9%) contributes eye shape and cheekbone prominence; Northern European (16.0%) adds lighter undertones to skin; Pacific Islander (14.2%) brings warmth and resilience; Sub-Saharan African (7.5%) deepens complexion; Eastern European (5.1%) adds subtle coolness. Result: warm medium-brown skin with golden undertones, almond-shaped eyes with warm amber-brown tones, prominent cheekbones with balanced angularity—neither sharp nor soft—and a complexion that reads as globally mixed rather than regionally specific.",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Athletic and lean with visible musculature — dancer's precision married to fighter's density. Geneware muscle treatment creates subtle dimensional quality to shoulders and forearms, almost imperceptibly denser than baseline human",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a functional braid, often wrapped with wire or cord for quick-release",
+    "hair_length": "Medium — shoulder-length when loose, never loose during work",
+    "eye_color": "Amber-brown, natural — no optical augmentation",
+    "skin_tone": "Warm medium brown with subtle golden undertone—a harmonious blend reflecting Latin American, East Asian, Pacific Islander, and African ancestry without defaulting to any single regional archetype",
+    "complexion": "Prominent cheekbones with defined jawline, almond-shaped eyes set at slight upward angle, minimal scarring on face—suggests careful work. Skin texture resilient, weathered around eyes from squinting in industrial light. No cosmetic grooming; pragmatic and maintained. Facial structure shows East Asian and Latin American influence in balanced proportions.",
+    "visible_augmentations": "Subdermal armor plating across torso and forearms creates subtle but unmistakable geometric texture beneath skin — scarred, worn appearance with evidence of field repairs. Geneware muscle density treatment visible as exceptional muscular definition and unusual density in shoulders, forearms, and core — reads as 'too capable' to observers familiar with chrome. No visible optics, limb replacement, or external hardware — augmentations are surgical and deliberate",
+    "distinguishing_marks": [
+      "Burn scar along left collarbone — three fingers wide, pale and smooth, circa 8 years old, deliberate pattern suggests industrial accident or intentional marking",
+      "Claw-rake scar across right forearm — four parallel lines, faded white, speaks to close-quarters engagement with unaugmented opponent",
+      "Subdermal armor plating visible as subtle geometric ridges beneath skin across chest and both forearms — catches light differently depending on angle, scratched and worn military-surplus appearance with deliberate serial number defacement",
+      "Tattoo on inside left wrist — minimalist circuit pattern in faded black ink, personal sigil or gang marker, deliberately concealable"
+    ],
+    "posture_movement": "Economical and alert — never fully relaxed, baseline awareness maintained even in cover identity mode. Movement is fluid and precise, minimal wasted motion. When armed or in operational context, posture becomes predatory and coiled. Eye contact duration calibrated; she watches before engaging. Walks with slight forward lean, weight centered on balls of feet — ready for explosive movement",
+    "clothing_style": "Tier 3-4 pragmatism — functional streetwear that accommodates concealed weapons and augmentations. Off-duty: loose-fitting long-sleeve synthweave tops (dark colors) that allow subdermal armor to move freely, worn tactical pants with reinforced thigh pockets, scuffed runner boots with reinforced soles. On-contract: armored jacket — unmarked, modular, with integrated holsters. No logos, no corp affiliation visible. Minimal jewelry except functional watch with subdued face. Overall impression: someone who buys clothes to wear, not to signal status"
+  },
+  "image_prompt": "Haze Quiñones-Nygaard, 173cm athletic woman, warm medium-brown skin with golden undertones, amber-brown eyes, prominent cheekbones, defined jawline, dark brown hair with silver threads pulled back in functional braid. Faded burn scar along left collarbone, claw-rake scars on right forearm. Subdermal armor plating visible as geometric ridges beneath skin on torso and forearms—worn, scratched military appearance. Geneware muscle treatment creates exceptional definition in shoulders and forearms. Minimalist circuit tattoo on left wrist. Wearing loose dark synthweave long-sleeve top and reinforced tactical pants, scuffed runner boots. Economical posture, alert presence, coiled readiness. Cyberpunk 2226, Great Lakes Metropolitan Zone, industrial low light, neon accent lighting catching subdermal armor at sharp angles, moody and dangerous. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 29.3,
+    "East Asian": 27.9,
+    "Northern European": 16.0,
+    "Pacific Islander": 14.2,
+    "Sub-Saharan African": 7.5,
+    "Eastern European": 5.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

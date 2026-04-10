@@ -1,0 +1,346 @@
+{
+  "id": "019d6143a60f75d78de43932bea0ba0d",
+  "type": "character",
+  "name": "Ragna Strömqvist",
+  "aliases": [
+    "Scalpel",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "High-speed vehicle operations specialist — wheelman",
+  "age": 58,
+  "status": "active",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
+  "description": "Fanta Popov-Adjei is compact and densely muscled, built low to the ground like something designed to survive impacts. At 58, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a wheelman out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFanta Popov-Adjei has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.11,
+      "ideal": 0.17,
+      "id": 0.16,
+      "shadow": 0.71,
+      "mask": 0.93,
+      "ghost": 0.48
+    },
+    "core_fears": [
+      "That their reputation is built on luck, not skill, and the luck is finite",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "The quiet — silence means something is about to go very wrong"
+    ],
+    "core_desires": [
+      "To prove everyone who dismissed them catastrophically wrong",
+      "Control — over their body, their schedule, their future",
+      "Freedom from augmentation debt — the interest compounds like a tumor"
+    ],
+    "coping_mechanisms": [
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Fanta Popov-Adjei has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
+      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
+    ],
+    "example_lines": [
+      "\"Get in, sit down, hold on. Questions can wait until we're not being shot at.\"",
+      "\"This vehicle has been modified for speed, armor, and my personal comfort. Two of those help you.\"",
+      "\"I know every street in this district the way you know your own face.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Fanta Popov-Adjei's reputation — and a price for silence",
+    "A corporate black site Fanta Popov-Adjei once infiltrated is being reopened, and the people inside know his face",
+    "Fanta Popov-Adjei is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Fanta Popov-Adjei functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — Dockside connections",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 7
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 4
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.54,
+      "caution": 0.7,
+      "loyalty": 0.55,
+      "greed": 0.71,
+      "empathy": 0.64
+    },
+    "drives": [
+      "survival",
+      "money",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 4,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "mechanical aptitude — can repair or modify almost anything",
+      "expert marksman"
+    ],
+    "weaknesses": [
+      "poor impulse control in specific triggers",
+      "physical limitation from incomplete augmentation",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "wheelman",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always verifies target identity independently before lethal contracts",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Preaches independence but is desperate for approval from people they respect",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    },
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Improviser": 0.7,
+    "Risk Taker": 0.7,
+    "Quick Study": 0.7,
+    "Cockroach": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "The Gradient Compact",
+    "Stratum",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Arcturus Exo-Runner Frame",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Crucible RE-2 'Receptionist'",
+    "Dzemal Acholonu-Patagiri",
+    "Ezio Kaboré-Malhotra",
+    "Fanta Dzhuraev-Mboyo",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Ilhan Sandstrom-Badu",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Oumarou Svec-Ranginui",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Fathom Line",
+    "The Skinners",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European and Eastern European with secondary East Asian and minor Hispanic admixture. Scandinavian-Slavic bone structure dominates — high cheekbones, strong jaw — with subtle East Asian epicanthic fold variation around eyes and slight facial width averaging from mixed ancestry. The result is distinctly pan-European with understated Asian influence visible primarily in eye shape and subtle midface proportions.",
+    "height_cm": 168,
+    "weight_kg": 79,
+    "build": "Compact and densely muscled, built low to the ground with a center of gravity that favors lateral movement and impact absorption. Shoulders broad relative to frame, legs thick and powerful. No excess fat — the physique of someone who treats their body as operational equipment.",
+    "hair_color": "Salt-and-pepper gray with darker streaks",
+    "hair_style": "Close-cropped, military neat",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint network scarring in left iris from old neural interface burn",
+    "skin_tone": "Cool-toned pale to medium — characteristic Northern European base with Eastern European olive undertones. Weathered from years of outdoor contract work, with minimal warm brown coloration. Sun damage visible but not deep.",
+    "complexion": "Strong Scandinavian-Slavic features: high angular cheekbones, broad forehead, pronounced jawline. Face carries fine lines around eyes and mouth, legacy of squinting through years of high-speed pursuits. Clean-shaven. Scar tissue visible along right jawline, thin and pale. Skin texture weathered but maintained — evidence of functional discipline rather than vanity. Subtle East Asian influence visible in eye shape and slight facial width.",
+    "distinguishing_marks": [
+      "Three parallel lines scarred into right temple — tribal marking origin unclear, possibly heritage, possibly earned",
+      "Burn scar across left palm and wrist in scattered pattern, consistent with neural jack calibration trauma",
+      "Deep rope-scar along right forearm where smartgun link chrome interfaces with flesh — the surgical seam still visible despite five years of integration"
+    ],
+    "visible_augmentations": "Smartgun link port protruding slightly from right forearm near wrist — brushed steel housing with faint LED indicator that cycles blue when powered. Neural interface jack at base of skull beneath close-cropped hair — visible as a small metallic disc when head is angled or hair shifts. Both modifications show functional age and routine maintenance rather than cosmetic polish.",
+    "posture_movement": "Moves with economical precision — no wasted motion, weight distributed low. Sits with back always to wall or corner. Right hand unconsciously rests near smartgun link integration point. Eyes track movement vectors in crowds. Walks with slight favoring of left leg during extended periods — residual compensation from old injury. Overall bearing suggests someone perpetually aware of nearest exits and vehicle trajectories.",
+    "clothing_style": "Tier 3-4 practical — reinforced synth-leather jacket in faded charcoal over smart-weave undershirt that monitors vitals. Heavy cargo pants with mag-sealed pockets and knee armor integration points. Steel-toed ankle boots with grip-sole designed for vehicle footwork. Minimal branding — function over identification. One piece of jewelry: worn titanium signet ring on left ring finger, inherited from his mentor. No visible corp-affiliation markers."
+  },
+  "image_prompt": "Ragna Strömqvist, hardened contract operative in cyberpunk 2226, close-cropped salt-and-pepper hair, pale cool-toned weathered Northern European-Eastern European complexion with subtle East Asian features, dark brown eyes with neural damage scarring, strong angular Scandinavian cheekbones and jawline, three parallel temple scars, burn scar on left wrist, neural interface jack visible at skull base, smartgun link port on right forearm with blue LED, clean-shaven with fine lines around eyes, built compact and muscular at 168cm, dense frame showing years of operational discipline. Wearing faded charcoal synth-leather reinforced jacket over smart-weave undershirt, heavy mag-sealed cargo pants, steel-toed boots, worn titanium signet ring. Standing in neon-lit Great Lakes Metropolitan Zone parking structure, back to wall, weight distributed low, right hand near smartgun integration point, eyes tracking shadows. Moody blue-cyan cyberpunk lighting with scattered amber accent lights, cold industrial concrete, slight rain-slick surfaces, cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 50.2,
+    "Eastern European": 36.9,
+    "East Asian": 9.0,
+    "Hispanic/Latin American": 3.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "id": "019d6143a5ba7a94b5856e27ef9e5dae",
+  "type": "character",
+  "name": "Frost Olofsson",
+  "aliases": [
+    "Static",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "High-speed vehicle operations specialist — wheelman",
+  "age": 26,
+  "status": "active",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Kedzie and Division",
+  "description": "Aybek Alvarez-Okonkwo is average height but with a presence that fills more space than the body accounts for. At 26, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a wheelman out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAybek Alvarez-Okonkwo has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.13,
+      "ideal": 0.56,
+      "id": 0.35,
+      "shadow": 0.17,
+      "mask": 0.49,
+      "ghost": 0.27
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Thinks speed can substitute for planning because it's worked so far"
+    ],
+    "secret": "Aybek Alvarez-Okonkwo is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"Get in, sit down, hold on. Questions can wait until we're not being shot at.\"",
+      "\"This vehicle has been modified for speed, armor, and my personal comfort. Two of those help you.\"",
+      "\"I know every street in this district the way you know your own face.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Aybek Alvarez-Okonkwo discovers a job they completed last year was a setup for something much larger and much worse",
+    "A crew member from Aybek Alvarez-Okonkwo's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A corporate black site Aybek Alvarez-Okonkwo once infiltrated is being reopened, and the people inside know her face"
+  ],
+  "narrative_function": "Aybek Alvarez-Okonkwo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage. Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — Narrows-based operations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 5
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 4
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.81,
+      "caution": 0.47,
+      "loyalty": 0.4,
+      "greed": 0.5,
+      "empathy": 0.95
+    },
+    "drives": [
+      "reputation",
+      "revenge",
+      "freedom"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 4,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "physical endurance",
+      "pain tolerance beyond normal limits"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "emotional volatility under extreme stress"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "wheelman",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Counts ammunition obsessively — knows the exact round count at all times"
+    ],
+    "breaking_points": [
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Being publicly exposed — name, face, address, all of it blown"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    },
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Improviser": 0.7,
+    "Risk Taker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "Ironveil Canopy",
+    "GLMZ",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Clover",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Narrowcast",
+    "Quilt",
+    "Sorin Ekwensi-Balasanyan",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian, Northern European, Middle Eastern, and Hispanic/Latin American blend — sharp features from East Asian and Northern European ancestry with warmer undertones from Middle Eastern and Latin American heritage. High cheekbones and defined jawline reflect the East Asian and Northern European mix, while skin warmth comes from the Middle Eastern and Hispanic components.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and economical — muscle distributed for endurance and precision rather than bulk. Wiry forearms from constant grip work on vehicle controls. Shoulders slightly forward, the posture of someone who spends hours hunched over a steering interface.",
+    "hair_color": "Black with subtle iridescent shift — natural base, but the chromatic skin augmentation extends faintly into the hair roots, catching light like oil on water",
+    "hair_style": "Pulled back tight into a single high braid, practical and exposing the neck and ears — deliberate choice to showcase augmentations",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, alert and constantly tracking — pupils dial slightly faster than baseline human response",
+    "skin_tone": "Warm medium-golden brown with peachy undertones — the complex interplay of East Asian, Northern European, Middle Eastern, and Latin American ancestry creating a distinctive warm-neutral complexion",
+    "complexion": "Sharp cheekbones and defined jawline reflecting East Asian structure with Northern European angularity, warmed by Middle Eastern and Latin American heritage. Minimal grooming beyond function. Skin bears the faint shimmer of active chromatic pigment cells — patches across her collarbone, temple, and the inner forearms appear to shift between deep purple and gunmetal grey depending on ambient light and her conscious control. Small scar through her left eyebrow, white and old. Perpetual dark circles from sleep debt and stimulant use.",
+    "distinguishing_marks": [
+      "Thin white scar bisecting left eyebrow — impact injury, 4+ years old",
+      "Faint burn scarring along right inner wrist — subcutaneous circuitry installation scar, surgical but imperfectly healed",
+      "Chromatic pigment cells visible across collarbones, temples, and inner forearms — shimmer between purple and grey",
+      "Small tattoo on the inside of her left wrist — three interlocking circles, done in black ink, faded. Mentor's mark or personal symbol — she doesn't explain."
+    ],
+    "visible_augmentations": "Dermal camouflage — chromatic skin pigment cells that shift visibly across exposed skin, most active on neck, collarbones, and forearms. Both ears show subtle structural augmentation at the canal — slight metallic gleam where the cyberear hardware interfaces with organic tissue. No visible external ports or exposed chrome, but the skin augmentation is deliberate, not hidden.",
+    "posture_movement": "Economical and precise — no wasted motion. Sits slightly forward, weight balanced on the balls of her feet even when stationary, ready for rapid position shift. Hands rest near her body, fingers loose but not relaxed. Eyes move before her head does. In conversation, she has a habit of tilting her head slightly when listening — the cyberears directional array at work. Walks with a controlled stride, shoulders level, weight distributed for quick lateral movement.",
+    "clothing_style": "Tier 3-4 utilitarian with runner undertones. Black or charcoal synthetic cargo pants with reinforced seams and deep pockets — fit snug at the waist, loose through the thigh. Layered tops: a thin grey compression shirt under a black tactical mesh overshirt with asymmetrical pockets and wrist cuffs that can seal. Worn black synthetic bomber jacket — the kind that sheds water and projectile debris, with no corporate logos but visible wear marks where patches have been removed and reattached. Boots are heavy-duty, laced military-style, soles worn from thousands of hours of pedal work. Minimal jewelry — a thin silver wire wrapped around her left wrist, functional rather than decorative. Everything fits close, nothing flares or drags."
+  },
+  "image_prompt": "Frost Olofsson, 168cm lean runner build, warm golden-brown skin with East Asian-Northern European-Middle Eastern-Hispanic ancestry blend. High sharp cheekbones, defined jawline, dark brown alert eyes with fast-tracking pupils. Long black hair in tight high braid. Visible chromatic pigment cell augmentation shimmering purple-to-grey across collarbones, temples, inner forearms. Subtle metallic cyberear augmentation at ear canals. Old white scar bisecting left eyebrow, dark circles from stimulant use. Black tactical mesh overshirt layered over grey compression shirt, worn black water-resistant bomber jacket, charcoal cargo pants, heavy military-style boots. Silver wire wrapped around left wrist. Three interlocking circle tattoo on inner left wrist. Forward-leaning posture, economical movement, fingers loose near body. Cyberpunk 2226 runner aesthetic, neon-lit urban setting with rain-slicked surfaces, moody blue-purple lighting reflecting off wet pavement, slight chromatic glow around augmented skin. Film noir atmosphere, vigilant expression, ready stance. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 33.7,
+    "Northern European": 30.8,
+    "Middle Eastern": 18.1,
+    "Hispanic/Latin American": 17.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

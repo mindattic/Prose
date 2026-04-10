@@ -132,12 +132,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>z4guopeisq</Fingerprint>
-      <Integrity>zdaxlNH4fOK8PIGtrYwvtfWW4B8H+IC4sunOnQ87V00=</Integrity>
+      <Fingerprint>9ht2zhgdm4</Fingerprint>
+      <Integrity>Q9enl4ka3bGvR5UsS7XBtwBxjh4eIC2y79jAWlPqaAc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>4895</FileLength>
-      <LastWriteTime>Thu, 09 Apr 2026 06:55:47 GMT</LastWriteTime>
+      <FileLength>8274</FileLength>
+      <LastWriteTime>Thu, 09 Apr 2026 19:33:27 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">

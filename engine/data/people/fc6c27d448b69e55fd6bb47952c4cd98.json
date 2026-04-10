@@ -1,0 +1,112 @@
+{
+  "id": "fc6c27d448b69e55fd6bb47952c4cd98",
+  "name": "Farah Vasquez-Alfarsi-Taufa",
+  "type": "character",
+  "aliases": [
+    "Dockrat",
+    "The Longshoreman"
+  ],
+  "role": "Private Investigator",
+  "description": "Tiare Volkov-Annan is the Dockside PI — the investigator who handles everything that happens where GLMZ meets Lake Michigan. Cargo theft, smuggling operations, insurance fraud, waterfront murders, union disputes that turn violent, and the constant flow of people and goods that enters the city through its busiest port — all of it passes through Tiare's awareness.\n\nShe never planned to be an investigator. She was a dockworker herself until a cargo theft ring framed her for a shipment disappearance. She cleared her own name by investigating the actual thieves, discovered she was good at it, and realized that the docks needed someone who understood the waterfront from the inside. Formal PIs don't understand dock culture, don't know the rhythms and routines that create investigative opportunities, and don't have the trust of the workers who see everything. Tiare has all three.\n\nHer methods are half investigation and half physical labor. She climbs containers, dives into the lake, crawls through cargo holds, and gets her hands dirty in ways that most PIs wouldn't consider. Her geneware lung enhancement makes her uniquely capable of underwater investigation — she has recovered evidence from the lake bottom that surface-based investigators didn't know existed. She is known on the docks as someone who will help workers with problems that CorpSec ignores, and this reputation is her most valuable investigative asset.",
+  "affiliation": "Independent — deeply embedded in Dockside's shipping community",
+  "tier": "Tier 1",
+  "location": "A repurposed shipping container on the Dockside waterfront, insulated and wired for power, with a view of Lake Michigan, near Michigan Ave and Roosevelt",
+  "specialization": "Maritime and shipping investigations — smuggling, cargo theft, insurance fraud, and people who disappear at the docks",
+  "methods": [
+    "Reading shipping manifests and cargo logs for inconsistencies",
+    "Maintaining relationships with dockworkers, crane operators, and harbor pilots",
+    "Physical inspection of cargo containers — knows how smugglers modify standard containers",
+    "Understanding tidal patterns, shipping schedules, and dock procedures that create blind spots",
+    "Swimming — she can hold her breath for six minutes with geneware lung enhancements and has investigated submerged evidence personally"
+  ],
+  "notable_cases": [
+    "Discovered a smuggling operation that was bringing unregistered synthetics into GLMZ inside modified refrigeration containers",
+    "Solved a series of 'accidental' drownings at Dockside by proving the victims had been weighted and thrown from a specific pier during shift changes when no one was watching",
+    "Recovered Φ3 million in stolen pharmaceutical cargo by tracking the unique salt-water corrosion patterns on the stolen containers"
+  ],
+  "equipment": [
+    "Geneware lung enhancement — six-minute breath hold, pressure tolerance to 30 meters",
+    "Waterproof evidence kit — chemical-sealed containers for recovering submerged evidence",
+    "A small motorboat she maintains herself, docked at a private slip she won in a card game",
+    "Shipping database access — semi-legal, obtained through dockworker union connections",
+    "Dive gear with integrated thermal protection for Lake Michigan's cold waters"
+  ],
+  "personality": "Tiare is Polynesian-Russian-Ghanaian, thirty-three years old, brown-skinned and sun-weathered with a swimmer's build and calloused hands. She grew up on the docks — her father was a crane operator, her mother ran a supply shop — and she knows the waterfront the way other people know their own apartment. She is loud, profane, and physically fearless in a way that borders on reckless. She drinks with dockworkers, fights with smugglers, and investigates with a combination of genuine intelligence and relentless stubbornness. She is deeply loyal to the dock community and will not take cases that would harm ordinary workers — her targets are the operations that exploit the docks, not the people who work them.",
+  "relationships": [
+    {
+      "name": "Bosun Kenji Haugen-Sarpong",
+      "type": "dockworker contact",
+      "description": "Shift supervisor who alerts Tiare to anything unusual on the docks — she fixed a problem for his family once and he's been loyal ever since"
+    },
+    {
+      "name": "Captain Mere Arvidsson-Boateng",
+      "type": "harbor pilot",
+      "description": "Knows every ship that enters GLMZ's harbor and what they're really carrying — trades information for Tiare's help keeping the docks safe for workers"
+    }
+  ],
+  "story_hooks": [
+    "A massive container ship arrives with a sealed hold that no one is authorized to open — but Tiare's dock contacts tell her something inside is alive",
+    "Dockworkers are disappearing during night shifts and the bodies are washing up days later on the far shore — CorpSec has classified it as accidental drownings but the pattern is obvious to anyone who knows the water",
+    "Tiare's geneware lungs begin failing during a critical underwater investigation — the enhancement was black-market and the warranty was a lie"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "dockside",
+    "maritime",
+    "smuggling",
+    "tier_1",
+    "waterfront",
+    "sentient"
+  ],
+  "carried_weapons": [
+    "Meridian Munitions Wheelgun-38 'Roundhouse'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "GLMZ",
+    "Bay View Docks",
+    "The Pure Hand",
+    "Anatoliy Faye-Nkrumah",
+    "Constance",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "MERIDIAN",
+    "Meridian Munitions Wheelgun-38 'Roundhouse'",
+    "Nnabuchi Svensson-Qarabağlı",
+    "The Heritage Vault",
+    "The Underlayer Collective",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Middle Eastern and Pacific Islander with South Asian, Hispanic, and Sub-Saharan African ancestry. The blend creates striking features: warm medium-deep brown skin with golden undertones from Middle Eastern and Pacific Islander heritage, refined by South Asian bone structure and Sub-Saharan African warmth.",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Athletic and lean with functional muscle — built for climbing, diving, and sustained physical labor. Shoulders broad from years of cargo handling; core visibly defined but not bodybuilder aesthetics. Movements economical and deliberate.",
+    "hair_color": "Dark brown with salt-bleached lighter streaks from lake water exposure",
+    "hair_style": "Pulled back in a practical braid or knot, often loose strands escaping during work",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with faint amber undertones",
+    "skin_tone": "Warm medium-deep brown with golden undertones — Middle Eastern and Pacific Islander foundation enriched by South Asian and Sub-Saharan African heritage, weathered by constant sun and water exposure into a rich, burnished finish",
+    "complexion": "Strong, refined jawline with high, prominent cheekbones from South Asian ancestry blending with the broader facial structure of Pacific Islander heritage. Straight nose with slight width, characteristic of Middle Eastern and Pacific Islander mix. Skin shows sun damage and fine weathering lines around eyes from squinting at water glare. Minimal makeup. Faint pattern of freckles across shoulders and upper back from UV exposure.",
+    "distinguishing_marks": [
+      "Three parallel scars along left forearm, pale white and roughly 8cm long each — from a cargo hook accident at age 22",
+      "Faint anchor tattoo on right inner wrist, small and faded, done by a dock tattooist",
+      "Old burn scar across right palm and thumb webbing, circa 2.5cm wide — thermal damage from a shipping fire investigation"
+    ],
+    "visible_augmentations": "None readily visible. The geneware lung enhancement is internal and undetectable externally. She may wear a simple waterproof wrist comm interface on her left wrist.",
+    "posture_movement": "Alert and grounded. Stands with weight balanced slightly forward, ready to move. Moves with purposeful economy — no wasted motion. Climbs and descends with practiced confidence. In conversation, maintains steady eye contact and often leans in slightly when listening.",
+    "clothing_style": "Tier 4 practical. Heavy-duty cargo pants in dark gray or tan with multiple pockets, often salt-stained. Worn steel-toed boots, leather creased and scuffed from dock work. Layered with a fitted athletic underlayer and a windproof jacket in charcoal or navy — brands are functional (Cargotech, Harborfit), not flashy. Often carries a tool belt or cargo vest. No jewelry except a simple steel watch that's water-resistant to 200m depth. Overall impression: someone who owns one or two outfits and wears them until they need replacing."
+  },
+  "image_prompt": "Farah Vasquez-Alfarsi-Taufa, a 172cm athletic dock worker in the Great Lakes Metropolitan Zone, 2226. Rich warm medium-deep brown skin with golden undertones, high cheekbones blending Middle Eastern and Pacific Islander heritage with South Asian refinement. Dark brown hair with salt-bleached streaks pulled back in a practical braid, dark amber-flecked eyes with weathered sun lines. Visible white scars on left forearm from cargo accident, old burn scar on right palm, faded anchor tattoo on wrist. Wearing charcoal windproof jacket over fitted athletic underlayer, dark gray cargo pants with salt stains, scuffed steel-toed boots. Simple waterproof wrist comm on left wrist, steel dive watch. Standing alert with weight forward on a rain-slicked Great Lakes dock at dusk, industrial shipping containers and crane lights behind her, cool blue-gray harbor lighting reflecting off dark water, cyberpunk 2200s aesthetic, professional dock environment, grounded and purposeful posture --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 48.8,
+    "Pacific Islander": 34.5,
+    "Hispanic/Latin American": 6.3,
+    "South Asian": 5.9,
+    "Sub-Saharan African": 4.5
+  },
+  "ancestry_harmonized": true
+}

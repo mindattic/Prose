@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const OUTPUT_DIR = path.resolve(__dirname, '..', 'engine_data', 'characters');
+const OUTPUT_DIR = path.resolve(__dirname, '..', 'engine_data', 'people');
 
 // Ensure output directory exists
 if (!fs.existsSync(OUTPUT_DIR)) {

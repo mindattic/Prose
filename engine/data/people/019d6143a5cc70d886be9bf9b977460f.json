@@ -1,0 +1,265 @@
+{
+  "id": "019d6143a5cc70d886be9bf9b977460f",
+  "type": "character",
+  "name": "Jabari Boateng",
+  "aliases": [
+    "Brick"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Ferrogate Transit Security officer, Kessler Interchange",
+  "age": 34,
+  "status": "active",
+  "location": "Kessler Interchange, The Shelf, near Halsted and Division",
+  "description": "Briseis stands a broad-shouldered 172cm with skin the color of dark amber and a jaw that looks like it was quarried rather than grown. Her left eye is a Ferrogate-issued surveillance implant — a flat pewter disc that logs everything without blinking — and she never bothers to disguise it with a cosmetic iris. Her hair is shaved close on the sides and locked into a tight crown on top, threaded through with copper wire she wound herself. Her uniform is transit authority grey, always pressed, always missing the top button she lost six months ago and never replaced.\n\nShe runs the Kessler checkpoint with the bored efficiency of someone who has seen every trick twice. She is not cruel but she is not kind either — she is precise. She knows every vendor, every regular, every face that belongs and every face that doesn't, and she catalogs them in the back of her head like a library nobody else can access. She leaves a small data-offering by the interchange's resident E.L.F. shrine every shift start — a compressed packet of the day's transit patterns — and genuinely believes the spirit watches the cameras better when it's well-fed.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.45,
+      "mask": 0.65,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "losing her post and with it her sense of purpose",
+      "being complicit in something she cannot undo"
+    ],
+    "core_desires": [
+      "to be genuinely useful rather than just present",
+      "to find the one incident in her footage logs that finally explains something"
+    ],
+    "coping_mechanisms": [
+      "cataloging and memorizing details as a form of control",
+      "ritual offerings to the Kessler E.L.F. as outsourced vigilance"
+    ],
+    "blind_spots": [
+      "assumes institutional loyalty is the same as personal integrity",
+      "cannot recognize when she is being used as a tool by people above her"
+    ],
+    "secret": "She has a compressed archive of three months of Kessler footage from the year her younger brother disappeared — she reviews it every few weeks looking for a face, a pattern, anything. She has never filed a missing person inquiry because she does not trust what the system would do with his name."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, functional, transit-authority jargon mixed with Shelf working-class cadence. Rarely wastes words.",
+    "cadence": "Flat and measured, speeds up slightly when she is annoyed",
+    "verbal_tics": [
+      "'Move along' even when people already are",
+      "'I see you' as acknowledgment rather than threat",
+      "Long pauses before answering questions she considers stupid"
+    ],
+    "example_lines": [
+      "'ID up, thumb down, move along. Yes, all three, at the same time.'",
+      "'I see you every Tuesday. You never smile. That's fine. Neither do I.'",
+      "'The shrine's been dark two days. Something's wrong in the upper tunnels. I'd take the surface.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She flags a player character's transit ID as a soft-match to someone on a watch list — not enough to detain, but enough to follow up",
+    "She approaches someone quietly: she caught something on the surveillance archive that doesn't match the official incident report from three months ago and doesn't know who to trust with it",
+    "The Kessler E.L.F. has gone silent and she is convinced something is wrong in the tunnels — she needs someone to go look who isn't Ferrogate-badged"
+  ],
+  "narrative_function": "Checkpoint gatekeeper, recurring local presence, potential information source about who passes through Kessler, low-level quest giver for 'I saw something on the cameras' hooks",
+  "augmentations": "Ferrogate-issue surveillance ocular (left eye, logs and streams to central), subdermal ID scanner in right palm, standard-issue neural alert dampener to manage shift fatigue",
+  "daily_life": "Runs the morning and afternoon checkpoint shifts at Kessler, cross-referencing IDs against the no-transit list and managing the slow crush of commuter traffic; eats her lunch at her post and spends her off-hours in her Shelf apartment rewatching old transit incident footage she shouldn't still have copies of.",
+  "affiliation": "Ferrogate Transit Security",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional",
+      "observant",
+      "grief-driven",
+      "disciplined",
+      "quietly haunted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always run the ID — no exceptions for familiar faces",
+      "Do not escalate if compliance is possible",
+      "Protect the checkpoint first, ask questions second"
+    ],
+    "escalation_ladder": [
+      "Verbal redirect and ID request",
+      "Physical barrier and loud warning",
+      "Call for backup and detain",
+      "Deploy stunner and seal the gate"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and procedural — treats everyone as a variable to be processed until they prove otherwise",
+      "friends": "Quietly loyal, remembers small details about people's lives without ever bringing them up first"
+    },
+    "stress_responses": {
+      "low": "Becomes more meticulous — double-checks logs, tightens posture",
+      "medium": "Goes very quiet and still, lets the implant do the watching while she thinks",
+      "high": "Acts fast and hard, shuts emotion entirely off, apologizes later if she overstepped"
+    },
+    "contradictions": [
+      "Believes in the system enough to enforce it daily but privately documents its failures in her archive"
+    ],
+    "habits": [
+      "Touches the copper wire in her hair when she is thinking",
+      "Leaves the same compressed data-packet offering every shift without variation",
+      "Eats standing up, always facing the gate"
+    ],
+    "breaking_points": [
+      "Discovering that Ferrogate management knew something about her brother's disappearance and buried it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate-issue surveillance ocular (left) — logs 72hr rolling footage, streams to Ferrogate central",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate-issue surveillance ocular (left) — logs 72hr rolling footage, streams to Ferrogate central",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal ID scanner, right palm — reads transit chips and biometric tags",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal ID scanner, right palm — reads transit chips and biometric tags",
+      "replaces": ""
+    },
+    {
+      "name": "Neural alert dampener — suppresses fatigue signals during double shifts",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural alert dampener — suppresses fatigue signals during double shifts",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "Pragmatist": 0.7,
+    "Code Keeper": 0.7,
+    "Face": 0.6,
+    "Charmer": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "The Interchange",
+    "Ferrogate Transit",
+    "The Shelf",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Stalker",
+    "Aphelion",
+    "Arcturus GE-1 'Garrison'",
+    "Brecken Yılmaz-Osei",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Mika Sorel",
+    "Nnamdi Ostrowski-Faletolu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
+    "The Gate",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African dominant (39.9%), with significant East Asian (25.1%), North African (21.3%), and Hispanic/Latin American (12.0%) ancestry. Minimal Northern European influence (1.7%). A striking multiethnic blend expressed through warm amber-brown skin with subtle golden undertones, angular facial structure reflecting African and North African heritage, and an understated East Asian influence in eye shape and cheekbone prominence.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular without bulk — the build of someone who handles confrontation through presence rather than violence. Compact, efficient, built low and wide like ballast.",
+    "hair_color": "Black, natural",
+    "hair_style": "Shaved close on the sides, locked crown on top threaded through with hand-wound copper wire that catches light when she turns her head",
+    "hair_length": "Short (sides) / Medium (crown)",
+    "eye_color": "Right eye: dark brown, natural. Left eye: flat pewter surveillance implant disc, non-blinking, expressionless",
+    "skin_tone": "Warm amber-brown with golden undertones, reflecting the blend of Sub-Saharan, North African, and East Asian heritage",
+    "complexion": "Strong angular jaw with high, prominent cheekbones — architecture that speaks to African and North African ancestry with subtle East Asian influence. Minimal facial hair. Skin is weathered but maintained — no scars on the face, suggesting careful hygiene and deliberate grooming despite the uniform neglect. Permanent slight furrow between brows from years of focused observation. Features carry understated multiethnic complexity rather than monoethnic clarity.",
+    "distinguishing_marks": [
+      "Left eye is a Ferrogate-issue surveillance ocular implant — a flat pewter disc replacing the natural eye, always visible, never cosmetically masked",
+      "Subdermal ridge along the inside of right palm where ID scanner sits flush beneath skin, visible as a thin raised line when hand is open",
+      "Small burn scar on left forearm, roughly 3cm, from old industrial accident — faded but deliberate-looking"
+    ],
+    "visible_augmentations": "Left eye surveillance implant (pewter disc, non-functional iris, glowing faintly in low light). Subdermal ID scanner ridge on right palm. No attempt at cosmetic concealment — augmentations are presented as uniform equipment, not personal modification.",
+    "posture_movement": "Stands with shoulders back, weight balanced, head slightly forward in a stance that communicates alertness without aggression. Movements are economical and deliberate — no wasted motion. Her gaze is steady and scanning, a habitual checkpoint sweep. When still, she has the compressed readiness of a coiled spring.",
+    "clothing_style": "Transit authority grey uniform, always pressed and maintained except for the deliberately unfixed missing top button from six months ago — a small act of controlled nonconformity within rigid structure. Utility belt with standard-issue restraint gear, scanner, and comm unit. Off-duty: practical grey and charcoal layers, minimal adornment except for the copper wire in her hair. Tier 3-4 functional aesthetic — not poor, not wealthy, entirely mission-focused."
+  },
+  "image_prompt": "Jabari Boateng, a 172cm transit authority enforcement officer in the Great Lakes Metropolitan Zone, 2226. Warm amber-brown skin with golden undertones, reflecting Sub-Saharan African, North African, and East Asian heritage. Strong angular jawline and high cheekbones. Black hair shaved close on sides with locked crown threaded with hand-wound copper wire. Right eye natural dark brown; left eye a flat pewter Ferrogate surveillance implant disc that glows faintly in low light. Compact, solid build with broad shoulders. Wearing pressed grey transit authority uniform with one deliberately unfixed missing top button, utility belt with restraint gear and scanner visible. Subdermal ID scanner ridge visible on right palm. Standing in alert checkpoint posture with weight balanced, head slightly forward, economical movement. Serious expression with permanent slight furrow between brows. Cyberpunk 2200s aesthetic, functional and mission-focused. Cool neon-tinted station lighting casting shadows across her face, emphasizing the surveillance implant's faint glow. Professional, compressed readiness --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 39.9,
+    "East Asian": 25.1,
+    "North African": 21.3,
+    "Hispanic/Latin American": 12.0,
+    "Northern European": 1.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

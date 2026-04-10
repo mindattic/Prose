@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a600782ab8f640463442893d",
+  "type": "character",
+  "name": "Rune Salazar",
+  "aliases": [
+    "Eke",
+    "The Pharmacist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street pharmacist — legal supplements, gray-market stims, pain management, and occasional compassionate dispensing of controlled substances",
+  "age": 23,
+  "status": "active",
+  "location": "The Narrows, Irkalla, near Halsted and Chicago Ave",
+  "description": "Ekwueme is tall and painfully thin in the way of someone who grew up on UBC stipend food and spent their teens in a growth spurt the nutrition couldn't fully support. His skin is a blue-black that catches the Narrows' neon in purples and greens, and he has a habit of standing slightly too still, which people find either reassuring or unsettling depending on their business with him. His hair is kept very short; he has a small bioluminescent strip tattooed along his left jawline that glows a steady, dim teal — a medic's mark used by unlicensed practitioners in Irkalla to signal availability. His eyes are clear and attentive in a way that makes people feel examined, which is accurate. He carries his stock in a decommissioned Helix Biosystems medical case, battered and re-stickered many times over, that he keeps chained to his wrist.\n\nEkwueme is twenty-three years old and already exhausted by things that would exhaust a person twice his age. He trained through a community apprenticeship program under a retired Aurochs Medical Complex nurse who has since died. He knows more clinical pharmacology than most people with actual licenses and has never been able to afford to sit the exams. He is not idealistic in the way of someone who has never done the work; he is idealistic in the way of someone who has done the work and keeps doing it anyway, which is a different and more serious condition. He doesn't enjoy the gray-market side of his trade. He does it because the alternative is that the people who need the gray-market side of his trade go to people who will hurt them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.9,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Making an error that kills someone — confusing a compound, missing a contraindication",
+      "That the system is not broken and reformable but is working exactly as designed"
+    ],
+    "core_desires": [
+      "To practice medicine legally and properly, with the safety net and the tools and the support that it requires",
+      "For his patients to not need him"
+    ],
+    "coping_mechanisms": [
+      "Extreme methodical preparation as a substitute for the safety nets he doesn't have",
+      "Compartmentalizing anxiety about legality by focusing entirely on clinical outcome",
+      "The notebook as both professional tool and emotional anchor"
+    ],
+    "blind_spots": [
+      "Carries guilt for things outside his control as if they were his failures",
+      "The Helix Biosystems rep who 'looks the other way' is almost certainly running him as a data collection asset and he has noticed and chosen not to examine it"
+    ],
+    "secret": "When Ekwueme was nineteen, his mentor — the nurse who trained him — asked him to acquire a specific controlled substance for a patient who was terminally ill and in unmanaged pain. Ekwueme did it. The patient died comfortably. Three weeks later his mentor died of an unrelated stroke. Ekwueme has no one to tell about what they did together, and he carries it as both his greatest act and the source of a guilt he cannot fully name. He continued practicing. He considers this either the only logical response or the only response he was capable of and he cannot always tell the difference."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical and precise about medical matters; unexpectedly gentle about everything else; Igbo-inflected rhythm from his paternal grandmother; Bolivian Spanish phrases from his Zárate grandfather that emerge when he's tired",
+    "cadence": "Quiet and even; rarely raises his voice; delivers bad news slowly and without softening it",
+    "verbal_tics": [
+      "Begins explanations with 'So —' and a small pause",
+      "Says 'I understand' when he hears something hard, without elaborating",
+      "Occasionally code-switches into Igbo for counting or calculating"
+    ],
+    "example_lines": [
+      "'So — this is going to interact with anything else you're taking. I need you to be honest with me. I am not going to report you to anyone. I need to know so I do not hurt you.'",
+      "'I can give you the stim. It will work for twelve hours and then you will crash hard. I want you to know that before you decide.'",
+      "'I understand. Come back Thursday. I will have what you need by Thursday. Do not buy it from anyone else before Thursday.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A contaminated batch of a common pain suppressant is moving through the Narrows and Ekwueme has identified the signature but not the source — three of his patients have already been harmed.",
+    "The Helix Biosystems rep's 'looking the other way' comes with a newly explicit ask: she wants Ekwueme to report on any patients presenting with symptoms matching an undisclosed pathogen Helix is tracking.",
+    "Ekwueme has been quietly maintaining a patient whose condition he's recognized as the result of illegal experimentation — and the patient doesn't know what was done to them."
+  ],
+  "narrative_function": "Medical resource for street-level characters; moral center character who complicates easy judgments about illegal activity; potential quest giver or reluctant ally; can provide access to the Irkalla Mutual Aid Collective's networks.",
+  "augmentations": "Bioluminescent jawline tattoo (teal, steady glow, medic's mark — geneware). Olfactory enhancement aug for compound identification — low-grade, allows him to assess medication quality and contamination by scent. No other modifications.",
+  "daily_life": "Works the Narrows from late afternoon through midnight; mornings spent acquiring stock through a network of contacts and doing inventory; keeps a battered notebook of his regular patients' conditions and dosage histories.",
+  "affiliation": "Independent; known to and loosely protected by the Irkalla Mutual Aid Collective; has a complicated non-relationship with a Helix Biosystems community outreach rep who pretends not to know what he does",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 9,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "healer",
+      "exhausted idealist",
+      "principled",
+      "quietly compromised",
+      "street medicine"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Clinical outcome is the only metric that matters in the moment of treatment",
+      "Never dispense something you haven't verified yourself",
+      "If you cannot help, say so clearly rather than guess"
+    ],
+    "escalation_ladder": [
+      "Clear explanation of why the request is a problem",
+      "Firm refusal with alternatives offered",
+      "Walking away from the interaction entirely",
+      "Reporting to the Mutual Aid Collective if someone is creating danger for his other patients"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Calm, clinical, non-judgmental — the manner of someone who has practiced not reacting to what people bring them",
+      "friends": "Slightly less guarded; still clinical in a crisis; will sit with someone who is frightened"
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical and slower-moving",
+      "medium": "Works in complete silence, jaw tight",
+      "high": "Hands are steady; voice is steady; everything else about him broadcasts that he is at capacity"
+    },
+    "contradictions": [
+      "Believes in doing no harm while operating entirely outside the harm-reduction frameworks that 'do no harm' was designed to require"
+    ],
+    "habits": [
+      "Updates his patient notebook every morning before acquiring stock",
+      "Leaves a prayer at the Irkalla E.L.F. shrine — written in Igbo on a scrap of paper, folded small — before starting each shift",
+      "Eats the same meal every night if he can afford it: rice and a protein supplement he chose for its nutritional profile"
+    ],
+    "breaking_points": [
+      "A patient dying from something he could have caught if he'd had proper diagnostic tools",
+      "Being directly asked to harm a patient by any party"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Nostalgic": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Sunday School' Weaponized Religious Artifact"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "PulsePoint ScentSig Personal Biochemical Scent Node",
+    "The Narrows Compact",
+    "WELLSPRING",
+    "TESSERA PG-2 'Signature'",
+    "Irkalla",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Pellucid Systems",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus HX-1 'Headsman'",
+    "Bintou Halvorsen-Osei",
+    "Breck Tannen",
+    "Ezio Kaboré-Malhotra",
+    "Kairos",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Lazarus LP-3 'Clinic Spider'",
+    "Mika Sorel",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "ShieldTech CLA-3 'Cascade'",
+    "Slagworks Industrial",
+    "Stainless Steel",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact",
+    "SynapTech PolyGlot Live Translation Implant",
+    "The Narrows",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly East Asian (31.4%) with significant Hispanic/Latin American (27.8%) and Pacific Islander (26.9%) ancestry, creating a striking pan-Asian-Pacific phenotype with secondary Latin American features. Northern European (11.9%) ancestry contributes subtle undertones to his overall appearance.",
+    "height_cm": 189,
+    "weight_kg": 68,
+    "build": "Tall and wiry—lanky in the way of someone who grew too fast on insufficient calories and never quite filled out. His frame is angular, all long limbs and prominent joints; his chest is narrow but his shoulders are broad enough to suggest potential muscle under different circumstances.",
+    "hair_color": "Natural black with slight warm undertone",
+    "hair_style": "Closely cropped, neat, practical; kept short enough that maintenance takes seconds",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, nearly black—clear and unaugmented, but unnaturally alert and tracking",
+    "skin_tone": "Warm tan to light brown with golden undertones from the East Asian-Pacific Islander-Hispanic blend; catches ambient neon (especially the Narrows' reds and purples) and throws it back in shifted hues—greens and violets bleeding across his shoulders and neck in low light",
+    "complexion": "Clean-shaven with defined cheekbones and a long jaw reflecting East Asian and Pacific Islander ancestry structure. Eyes set with the characteristic shape of his East Asian heritage. Skin is clear but shows the faint pallor of someone who works nights and moves between climate-controlled interiors. No visible scarring on the face, but there is a careful, examined quality to his expression—the look of someone who watches people for a living.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware tattoo running along the left jawline from below the ear to the chin; thin, precise line glowing steady teal approximately 0.5 cm in brightness; marks him as an unlicensed medical practitioner",
+      "Small, faint surgical scars on both inner wrists (subcutaneous sensor implants from his apprenticeship training, non-functional but never removed)"
+    ],
+    "visible_augmentations": "The bioluminescent jawline tattoo is the only visible modification; glows steadily in low light, dims in bright settings. The olfactory enhancement is completely subcutaneous—no external indicators. The Helix Biosystems medical case chained to his left wrist is more 'augmentation' than his body is—battered stainless steel and worn polymer, restickered a dozen times over, fitted with a reinforced titanium chain.",
+    "posture_movement": "Stands very still by default—an economical stance that reads as either meditation or surveillance depending on context. When he moves, it is deliberate and precise; no wasted motion. He does not gesture much when speaking. His attention is complete when directed at someone; he makes sustained eye contact that most people find either deeply reassuring or deeply unsettling. He walks slowly, which allows him to observe without appearing to observe.",
+    "clothing_style": "Tier 4 / working-class practical. Typically wears dark, well-maintained clothing: matte-black or charcoal synth-cotton long-sleeve shirt (loose fit, arm cuffs rolled to mid-forearm to keep hands visible and free); dark gray utility trousers with reinforced pockets, several Velcro-sealed compartments for inventory; black composite boots with grip soles (required for Narrows micro-terrain). No jewelry except the chain on his wrist. A worn, oversized hooded jacket (actual fabric, likely salvaged wool-blend) in dark olive that he sheds in the pharmacy but carries always. Patch on left shoulder: faded Irkalla Mutual Aid Collective circle-and-flame in white. No visible Helix Biosystems branding, though his case is unmistakably their decommissioned design."
+  },
+  "image_prompt": "Rune Salazar, tall wiry East Asian-Pacific Islander man with golden-tan skin, sharp cheekbones and long jaw, short black hair, dark eyes. Unaugmented but alert gaze. Bioluminescent teal tattoo glowing along left jawline. Matte-black synth-cotton long-sleeve shirt with rolled cuffs, dark gray utility trousers, black composite boots. Worn olive wool-blend hooded jacket draped over shoulders. Battered stainless steel Helix Biosystems medical case chained to left wrist. Still, economical posture—complete stillness reading as meditation or surveillance. Low neon lighting casting shifted greens and violets across shoulders. Great Lakes Metropolitan Zone pharmacy setting, cyberpunk 2226, moody atmospheric lighting, working-class practical aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 31.4,
+    "Hispanic/Latin American": 27.8,
+    "Pacific Islander": 26.9,
+    "Northern European": 11.9,
+    "South Asian": 2.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "019d6143a61473bc8d247d87abcccf02",
+  "type": "character",
+  "name": "Ingrid Holm-Mwangi-Salazar",
+  "aliases": [
+    "Fen",
+    "Slowburn"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor, Edison Grid district",
+  "age": 34,
+  "status": "active",
+  "location": "Edison Grid, corner of Copper Row and the 14th underpass, near Armitage and Milwaukee",
+  "description": "Fenwick is a lean, unhurried man of medium height with deep umber skin and close-cropped hair that he keeps dyed a matte rust-red. He has a bioluminescent mod along his forearms — thin lines of blue-white light under the skin that pulse gently with his heartbeat, which he originally got because it helped him keep time when cooking stock. He wears the same canvas apron every day, bleached and re-stained so many times it has developed a geological stratigraphy of meals past. His cart, 'The Long Burn,' is a retrofitted maintenance vehicle he rebuilt himself over eighteen months, and he knows its every rattle and squeak as personally as a language.\n\nFenwick moves through the world with a quality of stillness that some people mistake for slowness and others, correctly, read as patience. He is not a talker — his cart is not a place for conversation so much as a place for eating — but he notices everything: who looks hungry versus broke, who's been crying, who's scanning the crowd too carefully. He keeps a small E.L.F. shrine rigged into the cart's boiler panel, a data-spirit he calls 'the Pilot Light' to whom he murmurs thanks each morning before ignition.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "His daughter growing up not knowing him",
+      "The cart being impounded or destroyed — losing the one thing he built from nothing"
+    ],
+    "core_desires": [
+      "Stability — a day that goes as planned",
+      "Being the kind of father his own wasn't"
+    ],
+    "coping_mechanisms": [
+      "The ritual of cooking as a way to feel in control",
+      "Emotional withdrawal — going quiet rather than engaging conflict"
+    ],
+    "blind_spots": [
+      "Believes being present physically is the same as being emotionally available",
+      "Underestimates how much his silences communicate"
+    ],
+    "secret": "He witnessed a Axiom security officer disposing of something in the underpass canal eight months ago and has said nothing. He told himself it wasn't his business. He's been telling himself that for eight months."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal, functional, with occasional bursts of unexpected precision about food, temperature, or timing",
+    "cadence": "Slow and considered — he doesn't fill silences",
+    "verbal_tics": [
+      "Long pauses before answering",
+      "'Yeah' as a complete sentence",
+      "Referring to his cart in the first person plural: 'we're out of the pork belly'"
+    ],
+    "example_lines": [
+      "'Broth's been going since four. You can taste it.'",
+      "'I don't know what you saw. I was cooking.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Whatever Fenwick saw in the underpass canal is now relevant ��� someone is asking around the Edison Grid, and his regulars are starting to notice",
+    "His daughter has gone quiet and he can't reach her; he'll ask someone he trusts from the cart — obliquely, carefully — to check on her"
+  ],
+  "narrative_function": "Reliable scene-setting presence; a node of quiet observation in a busy district. Information source who never seems like one — people talk near his cart as if he's furniture. Can point players toward things he's witnessed without ever seeming to inform.",
+  "augmentations": "Bioluminescent subdermal lines on forearms (blue-white, heartbeat-synced). No other mods.",
+  "daily_life": "Rolls the cart out at 0530 for morning workers, breaks midday, returns for the evening shift until 2200. Spends Sunday mornings sourcing ingredients and visiting his daughter at his ex-partner's apartment in Calumet Rise.",
+  "affiliation": "Independent; informal supplier relationship with Grainfort wholesale district",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 3,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Observer",
+      "Neighborhood Fixture",
+      "Reluctant Witness",
+      "Single Parent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't get involved in things that put the cart at risk",
+      "Feed people who are hungry regardless of whether they can pay — but only once"
+    ],
+    "escalation_ladder": [
+      "Silence and deliberate turning away",
+      "A single quiet statement of boundary",
+      "Packing up and leaving — removing himself entirely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and efficient — takes the order, makes the food, asks no questions",
+      "friends": "Slightly warmer — remembers orders, nods, might offer an extra portion without comment"
+    },
+    "stress_responses": {
+      "low": "Cooks with more focus, becomes very precise",
+      "medium": "Goes completely nonverbal, communicates only in gestures",
+      "high": "Leaves. Physically removes himself from the situation."
+    },
+    "contradictions": [
+      "Prizes stability above all but has built his life on a cart with wheels — he could leave any time, which is the point"
+    ],
+    "habits": [
+      "Wipes the counter three times before opening",
+      "Always gives the last bowl of the day away free, regardless of who's there"
+    ],
+    "breaking_points": [
+      "Someone threatening or damaging the cart",
+      "Being forced to choose between his daughter and his silence about what he saw"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Generous Fool": 0.9,
+    "Hustler": 0.7,
+    "People Pleaser": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Edison Grid",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Big Rig",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Palette",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Copper",
+    "Rust",
+    "The Milwaukee Core",
+    "Breck Tannen",
+    "Calumet Rise",
+    "Duravex",
+    "Marathine",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Patient Zero",
+    "Tafara Quiñones-Saarinen",
+    "The Counter",
+    "The Pure Hand",
+    "Tsveta Nwosu-Karlsdóttir",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European, Sub-Saharan African, Hispanic/Latin American, and East Asian blend — 51% Northern European (Scandinavian/Polish ancestry visible in bone structure), 24% Sub-Saharan African (warm undertones, facial features), 15% Hispanic/Latin American (contributing to overall complexion depth), 9% East Asian (subtle influence in eye shape and cheekbone prominence)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and wiry, muscular forearms from years of stirring heavy stock pots and pushing the cart through Edison Grid's cracked streets. No excess fat; his body is efficient.",
+    "hair_color": "Matte rust-red (dyed; natural color likely dark brown or black)",
+    "hair_style": "Close-cropped, kept neat and functional",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with fine laugh lines at the corners",
+    "skin_tone": "Warm umber with golden undertones — the result of Northern European base genetics warmed and deepened by strong Sub-Saharan African, Hispanic, and East Asian heritage. Not purely deep; carries richness with subtle warmth throughout.",
+    "complexion": "Weathered but clean, marked by years of steam and heat exposure. High, defined cheekbones reflecting East Asian and African ancestry. Face carries the still quality of someone who listens more than speaks. Faint scars on knuckles from knife work.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal lines running along both forearms in thin parallel trails, glowing soft blue-white in rhythm with heartbeat — visible when sleeves are rolled or pushed up",
+      "Thin burn scar on the inside of left wrist, old and faded, likely from early cooking accident",
+      "Calloused hands with permanent discoloration from years of handling turmeric and other spices"
+    ],
+    "visible_augmentations": "Bioluminescent forearm mods only — thin blue-white lines beneath the skin that pulse steadily. Most visible when arms are bare or when ambient light drops in the evening shifts.",
+    "posture_movement": "Moves with deliberate economy. Stands still frequently, observing rather than fidgeting. When working the cart, movements are precise and rhythmic — choreographed by repetition. Does not rush. Carries a quality of groundedness even in crowded grid intersections.",
+    "clothing_style": "The same bleached canvas apron daily, layered with the stains of hundreds of meals — a geological record of his work. Beneath it: simple tier-4 workwear (faded gray or black thermal, worn jeans, steel-toed boots suitable for standing 16+ hours). No corporate logos. Everything practical, nothing decorative. Moves like someone who owns very little and maintains what he has."
+  },
+  "image_prompt": "Ingrid Holm-Mwangi-Salazar, 172cm tall lean mixed-heritage man with warm umber skin and golden undertones blending Northern European, Sub-Saharan African, Hispanic, and East Asian ancestry. Short matte rust-red dyed hair, dark brown eyes with laugh lines, high defined cheekbones. Bleached canvas work apron stained with years of cooking, faded gray thermal beneath, worn steel-toed boots. Forearms bare revealing bioluminescent blue-white subdermal lines pulsing with heartbeat. Weathered hands with turmeric stains and small scars from knife work. Standing motionless by a street food cart in Edison Grid, cyberpunk 2226, evening neon-lit atmosphere with ambient light casting glow on forearm bios. Expression calm and observant. Precise, economical posture. Cyberpunk street kitchen setting, moody atmospheric lighting, gritty metropolitan backdrop --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 51.3,
+    "Sub-Saharan African": 23.9,
+    "Hispanic/Latin American": 15.3,
+    "East Asian": 9.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "019d6143a6ed7efe93d58ed971a6a54b",
+  "type": "character",
+  "name": "Nova Kjellberg-Benali",
+  "aliases": [
+    "Officer Tem",
+    "Temmy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit Police Officer",
+  "age": 26,
+  "status": "active",
+  "location": "Kessler Interchange, near Fullerton and Damen",
+  "description": "Temitope is young enough that his uniform still doesn't quite look like his own — he moves in it with a faint self-consciousness, straightening the collar at intervals, as if checking that he still belongs inside it. He is broad-shouldered and round-faced with a warm brown complexion and natural hair he keeps in a compressed puff because regulations don't quite cover it and he hasn't been told to change it. His most notable feature is a color-changing pigment modification across the backs of both hands and up his forearms: it shifts through amber and green with his body temperature, going brilliant gold when he's embarrassed, which happens often. He has learned to read his own tells before others do, which has made him better at hiding his emotions in his face even as his hands remain honest.\n\nHe is genuinely enthusiastic about public service in a way that is equal parts touching and alarming to his colleagues. He believes in the Ferrogate mission statement sincerely. He memorizes passenger rights documentation. He leaves small data offerings at the Kessler Interchange E.L.F. shrine before every shift because his grandmother told him transit spirits protect those who protect transit. He is not naive so much as he is still in the process of learning which of his ideals the actual job will allow him to keep, and he is watching that process happen to himself with a kind of determined grief.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "becoming someone his grandmother would be ashamed of",
+      "making a mistake that seriously hurts a civilian"
+    ],
+    "core_desires": [
+      "to genuinely help people navigate a difficult city",
+      "to be respected by his colleagues without having to compromise his values to get there"
+    ],
+    "coping_mechanisms": [
+      "E.L.F. prayer and ritual at the transit shrine",
+      "long calls to his grandmother in the Polynesian-West African diaspora community in Grainfort",
+      "reframing difficult incidents as learning experiences"
+    ],
+    "blind_spots": [
+      "his belief in Ferrogate's stated mission makes him slow to recognize when the institution acts contrary to it",
+      "he reads hard interactions as individual bad actors rather than systemic problems"
+    ],
+    "secret": "Three months ago he witnessed his patrol sergeant accept a payment from a black-market cargo operator in exchange for looking the other way on an unmanifested shipment. He hasn't reported it because he's been quietly trying to find evidence that will make his report undeniable. The shipment turned out to contain medical supplies being rerouted to underserved Tier 1 zones at below-cost prices — and now he doesn't know what the right thing is anymore."
+  },
+  "speech_patterns": {
+    "vocabulary": "Professional register with Ferrogate terminology, slips into warmth easily; his grandmother's Samoan-inflected Yoruba phrases appear when he's emotional",
+    "cadence": "Earnest and slightly faster than necessary when engaged; slows down and becomes more careful when uncertain",
+    "verbal_tics": [
+      "'Actually—' when correcting someone, including himself",
+      "hands move expressively — and change color — when he's worked up about something"
+    ],
+    "example_lines": [
+      "'Platform three southbound is delayed eleven minutes — actually, twelve, the board just updated. I know that's frustrating. There's a water dispenser at the east end of the concourse if you need it.'",
+      "'I don't — look, I know what I saw. I just need to understand what I saw before I do anything with it. That's not the same as doing nothing. That's — I'm trying to be careful.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The medical supply operation has expanded and someone senior in Ferrogate security has noticed. Temitope may be about to be used as an unwitting instrument to shut it down — or to take the fall for not reporting it sooner.",
+    "A recurring passenger — a Tier 1 regular on the Kessler-Ironhaven commute — has started leaving small data packets at the transit shrine addressed to the E.L.F., but their content is encrypted coordinates that don't map to any official location."
+  ],
+  "narrative_function": "Moral freshness — a character who hasn't yet been fully shaped by institutional cynicism; useful for contrast with more jaded law enforcement NPCs; his genuine belief in the rules can be an asset or an obstacle; also represents the human face of systems that often present as impersonal.",
+  "augmentations": "Color-shifting pigment modification across hands and forearms (geneware, cosmetic — amber/green/gold spectrum); standard Ferrogate issue comm bead; no additional chrome",
+  "daily_life": "Split shift coverage at Kessler Interchange — morning rush management and evening platform patrol; spends break periods at the transit police booth studying regulation updates or talking to regulars at the interchange food stalls; leaves work prompt at end of shift to call his grandmother.",
+  "affiliation": "Ferrogate Transit Security — Kessler Interchange Patrol Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "transit officer",
+      "institutional idealist",
+      "E.L.F.-devout",
+      "moral threshold",
+      "geneware cosmetic",
+      "ethical crossroads"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "follow Ferrogate regulations as written, not as enforced",
+      "treat every passenger as someone who has somewhere they need to be",
+      "don't act on incomplete information — but don't stop gathering information"
+    ],
+    "escalation_ladder": [
+      "Polite inquiry and offer of assistance",
+      "Clear statement of regulation with explanation",
+      "Firm enforcement with documentation",
+      "Calling supervisor — done reluctantly, because he's seen what supervisors do"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, organized, slightly over-helpful — gives full information when partial would do",
+      "friends": "Relaxed and funny in a self-deprecating way; asks questions, remembers answers; reliable to the point of predictability"
+    },
+    "stress_responses": {
+      "low": "Arms-shifting pigment goes warm gold; talks slightly faster",
+      "medium": "Goes very formal and documentation-focused; creates process to manage uncertainty",
+      "high": "Freezes briefly, then over-commits to a course of action he hasn't fully thought through"
+    },
+    "contradictions": [
+      "His commitment to rules coexists with a growing moral suspicion that the rules were written by people with interests — but he hasn't built a framework for what to do with that yet"
+    ],
+    "habits": [
+      "Straightens uniform collar at the start of every patrol",
+      "Data offering at the Kessler transit shrine before first shift",
+      "Memorizes faces of regulars and greets them by name when possible"
+    ],
+    "breaking_points": [
+      "Being directly ordered to enforce a regulation he knows will harm a specific innocent person",
+      "Evidence that his sergeant has been using him as cover for something worse than the cargo incident"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Color-shifting pigment modification — hands and forearms, amber/green/gold spectrum (geneware, cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Color-shifting pigment modification — hands and forearms, amber/green/gold spectrum (geneware, cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Ferrogate standard-issue comm bead (work-issued)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate standard-issue comm bead (work-issued)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Born in Grainfort to a Yoruba-Samoan family, third generation in GLMZ",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — Applied to Ferrogate Transit Security Academy after two years of voluntary community transit monitoring in Grainfort",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Graduated and assigned to Kessler Interchange",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Witnesses sergeant accepting payment from cargo operator; begins quiet independent evidence collection",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Grandmother",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Ferrogate Transit",
+    "Ironhaven",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Gold",
+    "Crucible Industries Viper Mk.III 'Copperhead'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "TESSERA TC-3 'Crucible'",
+    "The Human Baseline Alliance",
+    "The Interchange",
+    "Vojislav Addo-Mensimah",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East Asian / Pacific Islander / North African / South Asian / Sub-Saharan African blend. Predominantly East Asian (34.6%) with significant Pacific Islander (21.3%) and North African (17.6%) ancestry, supplemented by South Asian (15.7%), Sub-Saharan African (5.9%), and Middle Eastern (4.9%) heritage. The result is a complex, warm complexion with subtle golden and olive undertones that shift depending on light.",
+    "height_cm": 182,
+    "weight_kg": 88,
+    "build": "Broad-shouldered and solidly built with an athletic frame that carries its weight evenly through the chest and torso. Not muscular in the augmented sense, but naturally strong — a body built for standing watch and moving through crowds without apparent effort.",
+    "hair_color": "Natural black",
+    "hair_style": "Compressed puff, regulation-compliant, closely maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm and expressive",
+    "skin_tone": "Warm golden-olive medium brown, complex and layered — luminous undertones from East Asian heritage blending with the deeper warmth of North African and South Asian ancestry, brightened by Pacific Islander genetics. Subtle radiance in natural light.",
+    "complexion": "Angular but softly-structured face reflecting East Asian and South Asian bone structure, with full cheeks and youthful softness that carries Pacific Islander roundness. Clear skin, well-groomed, no facial hair. Frequent flushing visible across the cheeks and bridge of nose — warm sienna tones intensifying when emotionally activated — a tell he's still learning to control.",
+    "distinguishing_marks": [
+      "Color-shifting pigment modification across the backs of both hands extending up both forearms in intricate branching patterns — shifts between amber and green at baseline, intensifying to brilliant gold when embarrassed or emotionally activated",
+      "Small, thin scar along the left jawline (civilian incident during training, healed clean)"
+    ],
+    "visible_augmentations": "Color-shifting forearm geneware (cosmetic pigment modification — visible and deliberate); standard-issue Ferrogate comm bead behind the right ear (silver finish, regulation model); no other chrome or prosthetics visible.",
+    "posture_movement": "Stands with shoulders slightly forward in the early-career posture of someone still getting comfortable in authority. Moves with careful deliberation through crowds — practiced crowd-management gait. Frequently touches his uniform collar and cuffs in unconscious adjustment gestures. Makes direct eye contact with civilians, a habit from his genuine belief in customer service. His hands betray him constantly; he reads his own pigment shifts like a real-time emotional readout.",
+    "clothing_style": "Ferrogate Transit Police standard-issue uniform: navy blue polyweave duty shirt with reflective piping, black polymer tactical trousers, steel-toed boots (scuffed from daily platform work), duty belt with cuff-lock, citation pad, and comm rig. Uniform is clean but shows wear — seams stressed from repeated wearing, collar edges slightly frayed. No personal modifications to uniform beyond what regulations allow. Off-duty: plain clothes are carefully neutral (grey synthetic hoodies, dark jeans, maintenance-tier functional wear) — nothing that draws attention, suggesting someone who hasn't yet built a personal style separate from his role."
+  },
+  "image_prompt": "Nova Kjellberg-Benali, 182cm tall transit police officer with warm golden-olive medium brown complexion, subtle radiance across high cheekbones showing East Asian and South Asian structure softened by Pacific Islander roundness. Dark expressive eyes, short natural black compressed puff hair. Navy polyweave Ferrogate Transit Police duty shirt with reflective piping, black tactical trousers, scuffed steel-toed boots. Color-shifting amber-to-green geneware pigment patterns on both forearms branching intricately, intensifying to gold across his hands. Silver comm bead behind right ear. Standing in a crowded maglev platform at night under cool cyan-and-orange neon transit lighting, uniform worn from daily wear but meticulously maintained, shoulders slightly forward in early-career posture, hand absently touching collar cuff, direct gaze. Cyberpunk 2226 Great Lakes Metropolitan Zone. Realistic, detailed, atmospheric lighting, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 34.6,
+    "Pacific Islander": 21.3,
+    "North African": 17.6,
+    "South Asian": 15.7,
+    "Sub-Saharan African": 5.9,
+    "Middle Eastern": 4.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

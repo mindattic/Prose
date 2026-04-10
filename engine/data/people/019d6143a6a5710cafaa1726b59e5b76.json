@@ -1,0 +1,302 @@
+{
+  "id": "019d6143a6a5710cafaa1726b59e5b76",
+  "type": "character",
+  "name": "Luca Najjar-Strömqvist",
+  "aliases": [
+    "Q",
+    "Static Kid"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Graffiti artist and neon artist",
+  "age": 19,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, stays in a rotating series of shared squats, near Michigan Ave and Chicago Ave",
+  "description": "Quillan is all angles and velocity — long-limbed, dark-skinned, with Ghanaian-Czech features that look perpetually younger than their nineteen years, which frustrates them endlessly. They keep their hair in tight coils pinned back with a self-made clip constructed from a bent network card, and they have bioluminescent freckles across their cheekbones and nose that glow faint orange under stress or excitement — a geneware mod they saved for over two years to afford. Their clothes are always paint-stained. Always. Even fresh ones develop stains within hours by some law of Quillan's personal physics.\n\nThey work at the intersection of illegal graffiti and legal neon art commissions — the commissions fund the graffiti, which funds the bigger commissions, in a cycle they describe as 'washing money through beauty.' Their graffiti is large-scale, technically complex, and unmistakably political: maps of corporate land grabs rendered in photo-realistic detail, portraits of people displaced by development, data visualizations of pollution levels turned into murals that can be read at a glance. They have been detained by Ferrogate Transit security twice and by Axiom's private enforcement arm once, and wear all three incidents as credentials. They are funny, quick, slightly too reckless, and working very hard to hide that they have absolutely no idea what they're doing with their life beyond the next piece.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.6,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "Being caught and having their hands damaged or their mods stripped as penalty",
+      "Growing up and becoming someone who compromises for stability"
+    ],
+    "core_desires": [
+      "To make a piece so undeniable it changes how someone thinks about the city permanently",
+      "To be taken seriously as an artist and a thinker, not just a talented kid"
+    ],
+    "coping_mechanisms": [
+      "Working — physical activity of painting quiets everything else",
+      "Dark humor deployed at maximum velocity to avoid genuine vulnerability"
+    ],
+    "blind_spots": [
+      "Their confidence in their own safety assessment is well ahead of their actual experience; they routinely underestimate risk",
+      "They mistake being seen with being understood"
+    ],
+    "secret": "The Tessera pseudonym commission they took is paying for gene-mod reversal consultations — they are deeply unhappy with one of their mods but won't say which one, because the choice was so public and the money was so hard to save that admitting regret feels unbearable."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, contemporary, code-switches between Zone slang and surprisingly precise art-critical language — the combination startles people",
+    "cadence": "Rapid-fire with sudden stops, as though they edit themselves mid-sentence and start again",
+    "verbal_tics": [
+      "'Okay but—' to redirect any conversation they're losing",
+      "'That's the bit' when something confirms their worldview"
+    ],
+    "example_lines": [
+      "'Okay but the wall doesn't care who owns it. The wall is just standing there being a wall. I'm the one making it matter.'",
+      "'They detained me for three hours and the whole time I was just thinking about the color temperature I wanted for the next piece. Is that bad?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of their murals — a data visualization of illegal dumping in the Zone — has attracted attention from someone who wants the data source, not to praise it but to identify and silence whoever leaked the original data to Quillan",
+    "They have been commissioned anonymously for a piece in a location they've now realized is inside a contested corporate boundary — completing it could trigger a legal crisis for the Zone",
+    "A piece they painted three months ago has started doing something that paint doesn't do: the colors are shifting on their own, slowly, and Quillan is certain the E.L.F. they always address before painting has somehow gotten inside the pigment"
+  ],
+  "narrative_function": "Ground-level intelligence source on corporate activity and Zone politics; can get people into or out of the Highland Park Autonomous Zone through network contacts; their art sometimes contains coded information they didn't know they were encoding",
+  "augmentations": "Bioluminescent freckles (orange, stress/excitement reactive); retractable claws on right hand only — a geneware mod they got cheap and partially regret because the left-hand option was sold out; basic subdermal paint-reservoir taps in both forearms (allows pressurized delivery to spray nozzles without external cans)",
+  "daily_life": "Sleeps late, spends afternoons in a burst of planning and materials acquisition, works from midnight to dawn — their most significant pieces are painted in darkness and discovered at sunrise.",
+  "affiliation": "Highland Park Autonomous Zone community; loosely connected to the Zone's information networks; one legitimate neon art commission currently running through a Tessera cultural initiative they agreed to under a pseudonym",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Reckless Idealist",
+      "Political Artist",
+      "Zone Native",
+      "Hidden Regret",
+      "Night Worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the piece — worry about the consequences after",
+      "Never give up a source even under significant pressure",
+      "Don't take commissions that require you to lie about who you are to the people in the neighborhood"
+    ],
+    "escalation_ladder": [
+      "Deflect with humor",
+      "Direct refusal with explanation",
+      "Disappear entirely and go dark for days",
+      "Escalate publicly through art — make the conflict into a piece"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Guarded with a performance of openness — talks a lot but reveals little for the first several interactions",
+      "friends": "Intensely loyal, will show up at any hour, keeps score of kindnesses but never mentions it"
+    },
+    "stress_responses": {
+      "low": "Gets faster and louder",
+      "medium": "Goes very quiet and starts sketching obsessively",
+      "high": "Runs — literally, physically leaves the situation and puts distance between themselves and the problem"
+    },
+    "contradictions": [
+      "They are deeply idealistic about community and deeply reluctant to actually be vulnerable within one"
+    ],
+    "habits": [
+      "Addresses whatever E.L.F. they believe inhabits the wall before starting any piece — a brief spoken greeting and statement of intent",
+      "Sleeps with a small lamp on; total darkness makes them anxious in a way they won't discuss"
+    ],
+    "breaking_points": [
+      "Someone covering or destroying their work",
+      "Being condescended to about their age in a professional context"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal paint-reservoir taps — both forearms, custom modification",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal paint-reservoir taps — both forearms, custom modification",
+      "replaces": ""
+    },
+    {
+      "name": "Retractable claws — right hand only, geneware",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable claws — right hand only, geneware",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Born in Highland Park Autonomous Zone",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — First major graffiti piece, covers an entire Ferrogate Transit wall, removed within six hours",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — First detention by Ferrogate Transit security",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Saves for two years, purchases bioluminescent freckle mod",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Takes Tessera pseudonym commission; begins gene-mod reversal consultations in secret",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Ember-9 'Firefly'",
+    "Meridian Munitions Twin PDW MTP-2 'Gemini'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Ember-9 'Firefly'",
+    "Meridian Munitions Twin PDW MTP-2 'Gemini'"
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Ferrogate Transit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight",
+    "Chicago",
+    "Alper Lebedev-Tutu",
+    "Bintou Halvorsen-Osei",
+    "Breck Tannen",
+    "Crucible Industries Ember-9 'Firefly'",
+    "Iowan Behemoth — 'Palisade'",
+    "Irontide Tidal Energy",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "MERIDIAN",
+    "Meridian Munitions Twin PDW MTP-2 'Gemini'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Corponation",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Cosmopolitan genetic blend: Southeast Asian (25.2%), East Asian (21.3%), Middle Eastern (18.0%), Sub-Saharan African (13.2%), Northern European (12.7%), Hispanic/Latin American (9.6%) — features reflect this complex diaspora ancestry with warm brown undertones, slight epicanthic eye folds, and angular bone structure across multiple phenotypic traditions",
+    "height_cm": 178,
+    "weight_kg": 61,
+    "build": "Wiry and angular — long-limbed with minimal body fat, all sharp joints and lean muscle developed from climbing scaffolding and reaching across twenty-foot wall sections. Movement suggests coiled energy rather than bulk.",
+    "hair_color": "Natural black with occasional paint-bleached streaks from overspray",
+    "hair_style": "Tight coils swept back and secured with a handmade clip fashioned from a bent network card, creating a deliberately industrial aesthetic",
+    "hair_length": "Short to medium length, roughly chin-level when loose",
+    "eye_color": "Deep brown, alert and constantly cataloging environments",
+    "skin_tone": "Warm medium-to-deep brown with olive and golden undertones — reflects blended Southeast Asian, East Asian, Middle Eastern, and Sub-Saharan ancestry, creating rich chromatic depth",
+    "complexion": "Young-looking features that read younger than nineteen — high cheekbones with subtle monolid characteristic, sharp jawline, minimal facial hair. Skin condition: perpetually paint-speckled across knuckles, forearms, and occasionally cheeks. Bioluminescent freckles scattered across cheekbones and bridge of nose glow faint orange when stressed or excited — visible as faintly glowing dots even in daylight, more prominent in shadows.",
+    "distinguishing_marks": [
+      "Orange bioluminescent freckles across both cheekbones and nose bridge (geneware modification, stress-reactive)",
+      "Paint stains on nearly every visible surface — dried acrylic in blues, reds, silvers, and neon colors; permanent discoloration on fingertips and under thumbnails",
+      "Fine scars on right knuckles consistent with graffiti detention (tool confiscation resistance)",
+      "Faint chemical burns on inner forearms where subdermal paint-reservoir taps interface with skin"
+    ],
+    "visible_augmentations": "Bioluminescent freckles are immediately visible and distinctive. Right hand shows subtle irregularities at fingertips — retractable claws visible as slightly raised keratin sheaths when inactive, fully extended they appear as dark curved protrusions 2-3cm long. Forearms show faint scarring patterns consistent with subdermal implants, but the paint-reservoir taps themselves remain subcutaneous unless actively pressurizing.",
+    "posture_movement": "Restless and economical — stands with weight on one leg, fidgets constantly with hands and fingers. Moves with parkour-informed efficiency, naturally scanning surfaces for climb routes and wall angles. Eye contact is inconsistent; they focus more on surfaces and spaces than faces. When concentrating on art or problem-solving, they adopt an intense stillness that contrasts sharply with their default velocity.",
+    "clothing_style": "Tier 5 functional aesthetic — thrifted or salvaged base layers (oversized hoodies in dark colors, worn band/activist t-shirts), paint-stained cargo pants with multiple pockets for supplies, reinforced climbing gloves (right hand often removed mid-work), scuffed sneakers with grip-enhanced soles. Wears a canvas satchel covered in hand-stitched patches and pins representing Highland Park zones and artist collectives. Colors shift based on active projects — tends toward monochrome with accent colors matching their current major piece. Never wears corporate logos or Tier 1-2 fast fashion, not from ideology alone but because such clothing marks them as outsider/target in their zones."
+  },
+  "image_prompt": "Luca Najjar-Strömqvist, nineteen-year-old street artist with lean angular frame and warm medium-brown skin blending Southeast Asian, East Asian, Middle Eastern, Sub-Saharan African, and Northern European heritage. Alert deep brown eyes with subtle monolid feature, high cheekbones, sharp jawline. Short black coils swept back with handmade network-card clip. Bioluminescent orange freckles glowing faintly across cheekbones and nose bridge. Paint-speckled skin on hands and forearms with chemical burn scars from subdermal paint-reservoir implants. Right hand showing subtle retractable claw augmentations at fingertips. Dressed in oversized dark hoodie, paint-stained cargo pants, reinforced climbing gloves, scuffed grip-sole sneakers. Canvas satchel with activist patches and pins. Restless posture, weight on one leg, intense focus on surrounding environment. Cyberpunk 2226, Highland Park GLMZ, dusk lighting on industrial wall covered with graffiti art, neon accent colors in wet reflections, gritty street aesthetic, urban climbing context. Mood: concentrated creative energy, slight stress-glow on freckles. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 25.2,
+    "East Asian": 21.3,
+    "Middle Eastern": 18.0,
+    "Sub-Saharan African": 13.2,
+    "Northern European": 12.7,
+    "Hispanic/Latin American": 9.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

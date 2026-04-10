@@ -72,17 +72,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7zmXPLz7tWQeI2ByD8L5Xw0o5sjnBzGNJq9gWCJ0h3A="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22001"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227zmXPLz7tWQeI2ByD8L5Xw0o5sjnBzGNJq9gWCJ0h3A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 04:28:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="js/treemap-interop.9ht2zhgdm4.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9ht2zhgdm4"},{"Name":"integrity","Value":"sha256-Q9enl4ka3bGvR5UsS7XBtwBxjh4eIC2y79jAWlPqaAc="},{"Name":"label","Value":"js/treemap-interop.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8274"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Q9enl4ka3bGvR5UsS7XBtwBxjh4eIC2y79jAWlPqaAc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 19:33:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="js/treemap-interop.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zdaxlNH4fOK8PIGtrYwvtfWW4B8H\u002BIC4sunOnQ87V00="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4895"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zdaxlNH4fOK8PIGtrYwvtfWW4B8H\u002BIC4sunOnQ87V00=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 06:55:47 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="js/treemap-interop.z4guopeisq.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z4guopeisq"},{"Name":"integrity","Value":"sha256-zdaxlNH4fOK8PIGtrYwvtfWW4B8H\u002BIC4sunOnQ87V00="},{"Name":"label","Value":"js/treemap-interop.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4895"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zdaxlNH4fOK8PIGtrYwvtfWW4B8H\u002BIC4sunOnQ87V00=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 06:55:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q9enl4ka3bGvR5UsS7XBtwBxjh4eIC2y79jAWlPqaAc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8274"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Q9enl4ka3bGvR5UsS7XBtwBxjh4eIC2y79jAWlPqaAc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 19:33:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="js/write-interop.8ogh0a67mk.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))</AssetFile>

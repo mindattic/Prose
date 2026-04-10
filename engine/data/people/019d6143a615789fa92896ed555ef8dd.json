@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a615789fa92896ed555ef8dd",
+  "type": "character",
+  "name": "Svetlana Horváth",
+  "aliases": [
+    "Fen",
+    "Fennie"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Pharmacist and black-market pharmaceutical broker, The Shelf district",
+  "age": 29,
+  "status": "active",
+  "location": "The Shelf, operating from a legitimate licensed pharmacy called Goldthread Dispensary, near Ashland and Division",
+  "description": "Fenwick is short, stocky, and perpetually cheerful in a way that takes people a moment to calibrate — not false exactly, but layered over something more complicated, like a coral reef over deep water. His skin is a warm medium brown, his hair grown out in a loose high puff with copper-dyed ends, and he has a set of patterned irises — interlocking geometric circles in charcoal and cream — that he keeps well-maintained and that give him the slightly uncanny look of someone whose eyes are always aesthetically composed. He wears a pharmacist's white coat that he has clearly owned for years and refuses to replace despite its soft edges.\n\nHe is genuinely good at pharmacy. He remembers dosage interactions, flags contraindications before patients can finish asking their questions, and has a gift for making the most boring parts of medication management feel like he is doing you a personal favor. He is also, two nights a week, coordinating distribution of unlicensed gene-therapy compounds through a network that runs from The Shelf down to the Narrows and up to certain Tier 3 residential blocks where people want treatments Helix Biosystems has priced out of their reach. He finds this deeply morally straightforward and would be genuinely surprised if someone told him it was brave.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "His supply network being traced back to the providers — not to himself, specifically to them",
+      "Becoming complicit in something genuinely harmful because he misjudged a compound"
+    ],
+    "core_desires": [
+      "For medicine to be boring and available and cheap and fine — he finds the drama of scarcity genuinely offensive",
+      "To be taken seriously as a pharmacist by the Aurochs system that views The Shelf dispensaries as second-tier"
+    ],
+    "coping_mechanisms": [
+      "Cheerfulness as genuine philosophy, not suppression — he processes quickly and moves on",
+      "Extensive batch-testing of everything that comes through his network before distribution",
+      "Talking to the dispensary's E.L.F. — a minor spirit in the pill-counter AI — like a friend"
+    ],
+    "blind_spots": [
+      "He trusts his own risk assessment too completely; he has been lucky so far and mistakes luck for skill",
+      "He genuinely cannot imagine being betrayed by someone he likes, so he does not plan for it"
+    ],
+    "secret": "One of his regular legal customers is a Ferrogate Transit safety officer who takes a compound Fenwick supplies that controls a neurological tremor — a tremor that, if disclosed, would disqualify her from her position. He has never mentioned this to anyone. She has never asked him not to. The unspoken arrangement terrifies him more than the network does."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, rapid, technically fluent; slides between clinical precision and neighborhood vernacular without noticing",
+    "cadence": "Fast and easy; comfortable overlapping conversation; laughs quickly and genuinely",
+    "verbal_tics": [
+      "'Okay so—'",
+      "Narrating what he is doing while he does it"
+    ],
+    "example_lines": [
+      "'Okay so what you're describing is not an allergy, it's a sensitivity, and those are different in ways that matter, and I'm going to explain why while I find you something that won't make your face do that.'",
+      "'The E.L.F. in the counter says this batch is clean. I also tested it three times myself. I trust her more than my own results, honestly.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A compound from his network has caused an unexpected reaction in a patient — not fatal, but strange, and tracing the batch leads somewhere he was not expecting",
+    "The Ferrogate Transit officer's tremor has gotten worse and she needs a higher dose that he is not sure he should provide"
+  ],
+  "narrative_function": "Supply source, information broker, black-market access point disguised as local color; can provide controlled substances for various story purposes; comic relief that is smarter than it appears",
+  "augmentations": "Patterned cosmetic irises (geometric charcoal and cream); olfactory enhancement (mild, professional — helps him detect compound purity); no structural augmentation",
+  "daily_life": "Dispensary opens at eight, closes at nine. He eats lunch standing up behind the counter. Two evenings per week he runs 'after-hours inventory' that is not inventory. He sleeps six hours and considers this sufficient.",
+  "affiliation": "Self-employed (Goldthread Dispensary license); informal supply network with several underground medical providers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Network Node",
+      "Genuinely Kind",
+      "Risk-Blind Optimist",
+      "Chemical Memory",
+      "E.L.F. Devotee"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Test everything before it reaches a patient — this is non-negotiable",
+      "Do not distribute anything you would not give to someone you love",
+      "Keep the network's providers' identities separate from each other"
+    ],
+    "escalation_ladder": [
+      "Deflection with humor",
+      "Calm, direct honesty about what he will and won't do",
+      "Quiet, firm refusal",
+      "Ending the relationship permanently and with minimal drama"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm; default assumption is goodwill until demonstrated otherwise",
+      "friends": "Loyal and slightly fussy; remembers birthdays and medication schedules with equal devotion"
+    },
+    "stress_responses": {
+      "low": "Talks faster",
+      "medium": "Starts narrating things that don't need narrating — a displacement behavior",
+      "high": "Goes quiet and very precise; the cheerfulness simply turns off, which is alarming if you know him"
+    },
+    "contradictions": [
+      "He is risk-averse about compounds and cavalier about his own legal exposure; he has inverted where the caution goes"
+    ],
+    "habits": [
+      "Wipes down the counter in the same sequence every morning",
+      "Names the pill-counter E.L.F. 'Dora' and says goodbye to it when he leaves",
+      "Keeps his personal medication — anxiety management, obtained through his own network — in an unlabeled brown bottle in his coat pocket"
+    ],
+    "breaking_points": [
+      "A patient in his network being harmed by a compound he approved",
+      "The Ferrogate officer losing her job because of him"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Ember-9 'Firefly'",
+    "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Ember-9 'Firefly'",
+    "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Ferrogate Transit",
+    "The Narrows Compact",
+    "Dredge Mining Collective Underwater Resource Extraction Platform",
+    "The Shelf",
+    "Stratum",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "Copper",
+    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+    "Aurochs Medical Complex",
+    "Crucible Industries Ember-9 'Firefly'",
+    "Emeka Johansson-Orozco",
+    "Ezio Kaboré-Malhotra",
+    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
+    "TESSERA TC-3 'Crucible'",
+    "The Collective",
+    "The Counter",
+    "The Narrows",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Eastern European (66.5%) with significant Northern European ancestry (15.9%), combined with Southeast Asian (9.1%) and East Asian (8.5%) heritage—a genetic blend reflecting the Ubiquitous Diaspora. The result is a warm, balanced complexion with subtle monolid eye shape influence and Eastern European bone structure.",
+    "height_cm": 167,
+    "weight_kg": 78,
+    "build": "Stocky and compact, broad shoulders tapering to a solid midsection; the build of someone who stands for twelve hours and doesn't compensate with gym time",
+    "hair_color": "Natural deep black with intentional copper dye at the ends",
+    "hair_style": "Loose high puff, well-maintained, with visible fade lines at the sides",
+    "hair_length": "Medium (approximately 10-12cm at crown)",
+    "eye_color": "Augmented: interlocking geometric patterns in charcoal and cream, custom cosmetic irises that resemble mandala or circuit board motifs",
+    "skin_tone": "Warm medium brown with golden undertones—a harmonious blend of Eastern European and Southeast Asian ancestry, even and clear",
+    "complexion": "Clean-shaven, youthful face with slight crow's feet from squinting at small print; high cheekbones with subtle monolid characteristics; skin shows minimal scarring or damage; perpetual micro-expression caught between attentiveness and something withheld",
+    "distinguishing_marks": [
+      "Faint chemical burn scar on the inside of right wrist, approximately 3cm, from a compounding accident five years ago",
+      "A small tattoo on left collarbone: a simplified outline of a pestle and mortar in black ink"
+    ],
+    "visible_augmentations": "Patterned cosmetic irises are the only visible augmentation — striking enough that strangers often comment on them. No chrome, no subdermal plating. Olfactory enhancement is entirely internal and undetectable.",
+    "posture_movement": "Stands with weight evenly distributed, hands often resting on the pharmacy counter or clasped loosely. Moves with economical precision — no wasted motion. Cheerfulness expressed through eye contact and vocal warmth rather than physical animation; appears both present and slightly at a remove.",
+    "clothing_style": "White pharmacist's coat, visibly aged and soft at the edges despite regular washing, worn over practical civilian clothes (typically dark t-shirt, gray or black slacks). No corporate branding. Shoes are worn but well-maintained. The coat is almost a uniform at this point—owned for years, reads as either stubborn or sentimental. No jewelry. Tier 3-4 working professional, understated."
+  },
+  "image_prompt": "Svetlana Horváth, 2226 cyberpunk pharmacist, warm medium-brown complexion with golden undertones, high cheekbones with subtle East Asian influence, augmented mandala-circuit board eyes in charcoal and cream geometric patterns, deep black hair with copper dye at ends in loose high puff, slight crow's feet, clean-shaven youthful face. Wearing soft aged white pharmacist's coat over dark t-shirt and gray slacks, standing at pharmacy counter with economical posture, hands resting quietly. Chemical burn scar visible on inside of right wrist, pestle-and-mortar tattoo on left collarbone. Warm professional presence, present yet slightly at a remove. Cyberpunk clinic lighting, neon-tinged pharmaceutical shelves in background, cool and warm light interplay. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 66.5,
+    "Northern European": 15.9,
+    "Southeast Asian": 9.1,
+    "East Asian": 8.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "id": "019d6143a67774d989f5fdb3726b6af9",
+  "type": "character",
+  "name": "Sage Raghavan-Villanueva",
+  "aliases": [
+    "Bricks",
+    "Obi-Weight"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Protection racket enforcer",
+  "age": 27,
+  "status": "active",
+  "location": "The Stockyard, rotating between the Grainfort market corridor and the Escanaba Gateway transit hub, near Michigan Ave South and Cermak",
+  "description": "Obinna is built like something industrial — broad through the chest and shoulders, standing nearly two meters, with close-cropped hair and a face that might be called handsome if it weren't so carefully arranged into blankness. His skin is deep brown and his eyes are standard issue except for a faint bioluminescent ring around each iris that pulses a dim coral color when his heart rate elevates, a geneware modification he had installed at eighteen that he now slightly regrets because it is a readable tell. He has a ritual scar pattern across his left forearm in three parallel lines that he added himself with a heated wire at twenty — he has told different people it means different things, and none of the stories are true.\n\nObinna is not a sadist. This surprises people who meet him in a professional context. He is methodical and proportional: he delivers exactly the level of violence the situation requires and stops, which is both more disturbing and more effective than enthusiasm. Off the clock he is a devoted older brother to three younger siblings he quietly funds through the Stockyard community school, and he attends the local ELF shrine at the Grainfort gate every week without fail. He wants out of this work and has wanted out for three years, but he has never figured out what out looks like, and so he keeps showing up.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "One of his siblings finding out in detail what he does for money",
+      "Losing control during a job and going further than he intends"
+    ],
+    "core_desires": [
+      "A clean exit from the Lambs without getting his family hurt",
+      "To be seen as a protector rather than a threat by people he respects"
+    ],
+    "coping_mechanisms": [
+      "Compartmentalization — work is work, home is home, and he enforces this separation rigidly",
+      "Physical training as emotional regulation"
+    ],
+    "blind_spots": [
+      "He genuinely believes the Lambs provide a kind of order that benefits the Stockyard — and there is some truth to it, which makes the belief dangerous",
+      "He doesn't recognize how much his siblings already know"
+    ],
+    "secret": "Six months ago he broke a market vendor's wrist during a collection dispute. The vendor — an elderly Micronesian woman named Pita — never reopened her stall. He found out she'd left GLMZ entirely. He has left an unsigned Φ200 deposit at her former stall's ELF shrine every month since, which he cannot afford."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical — says what needs to be said and stops; more expressive in informal settings with people he trusts",
+    "cadence": "Slow and even in professional contexts; faster and warmer at home",
+    "verbal_tics": [
+      "Long pauses before answering questions he doesn't like",
+      "'I hear you' as a non-committal acknowledgment"
+    ],
+    "example_lines": [
+      "'Takoda said next Thursday. It's Thursday. So here I am.'",
+      "'I'm not going to stand here and explain the situation. You already understand the situation.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A business on his route is actually a front for something significantly more dangerous than a market stall — and the person running it knows who Obinna's siblings are",
+    "He has been asked by the Lambs to collect from the Stockyard community school his siblings attend, which has missed two payments"
+  ],
+  "narrative_function": "Moral gray zone — a violent person with genuine humanity; local color for Stockyard scenes; potential ally or complication depending on who the players represent; sympathetic antagonist",
+  "augmentations": "Bioluminescent iris rings (coral pulse, geneware — cosmetic, regretted); subdermal impact-dampening mesh over knuckles and forearms (functional, standard enforcer mod)",
+  "daily_life": "He walks the collection route Monday, Wednesday, Friday starting at 08:00 — sixteen shops, three market stalls, two transit kiosks. The rest of his time he spends at the gym, at the shrine, and at his younger sister Adaeze's apartment helping her with coursework she doesn't ask for help with.",
+  "affiliation": "The Stockyard Lambs — a mid-tier local gang with deep roots in the Grainfort market district",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 9,
+      "dexterity": 6,
+      "vitality": 8,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 7,
+      "creativity": 3,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Enforcer",
+      "Compartmentalizer",
+      "Loyal",
+      "Exit-Seeker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never collect from the same business twice in one week regardless of orders — it collapses the relationship",
+      "Never mention family, his or anyone else's, during a collection"
+    ],
+    "escalation_ladder": [
+      "Arrives and states the amount owed and the date it was due",
+      "Returns with a colleague and states the consequences without dramatizing them",
+      "Applies proportional physical consequence to property first, person second"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Still, watchful, gives little; interprets everything before responding",
+      "friends": "Unexpectedly warm and attentive; remembers small details about people's lives; genuinely interested"
+    },
+    "stress_responses": {
+      "low": "Goes very quiet and still",
+      "medium": "Leaves the situation, walks the full market loop alone",
+      "high": "Controlled explosion — precise, fast, stops himself"
+    },
+    "contradictions": [
+      "He is genuinely gentle with people he loves and genuinely capable of hurting strangers",
+      "He believes in the ELF shrines with sincere devotion and leaves offerings before collections"
+    ],
+    "habits": [
+      "Cracks his knuckles in a specific sequence — right hand first — before entering any building on a job",
+      "Buys the same meal (rice with groundnut soup from a Stockyard stall) every Friday without variation"
+    ],
+    "breaking_points": [
+      "Being ordered to hurt someone his age or younger who reminds him of his siblings",
+      "His sister Adaeze asking him directly what he does"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioluminescent iris rings — coral pulse (geneware, cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent iris rings — coral pulse (geneware, cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal impact mesh — knuckles and forearms",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal impact mesh — knuckles and forearms",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2173: Born in the Stockyard to Nigerian-Algerian-Tongan parents, third of four children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187: Father's death in a transit accident leaves family dependent on UBC stipend",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189: Recruited by the Stockyard Lambs at 16; begins as a runner",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192: Promoted to enforcer after demonstrating unusual calm during a market dispute",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199: The Pita incident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Current — walking the route, funding his siblings, looking for a way out he cannot name",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
+  ],
+  "related_entities": [
+    "Escanaba Gateway",
+    "The Stockyard",
+    "Grainfort",
+    "Timekeeper",
+    "Big Rig",
+    "Aïssé Dragomirescu-Faalelei",
+    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'",
+    "Ferrogate Enforcer Cruiser",
+    "GLMZ",
+    "MERIDIAN",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Mika Sorel",
+    "Nnamdi Ostrowski-Faletolu",
+    "ShieldTech CLA-3 'Cascade'",
+    "Somalex",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA TC-3 'Crucible'",
+    "The Clock",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "South Asian (38.1%) with substantial Middle Eastern (16.7%), Hispanic/Latin American (16.0%), and Sub-Saharan African (14.9%) ancestry, complemented by Northern European (7.6%) and East Asian (6.7%) heritage. The genetic blend produces warm undertones across his complexion with features reflecting this multifaceted ancestry.",
+    "height_cm": 198,
+    "weight_kg": 104,
+    "build": "Heavily muscled and broad-shouldered — industrial strength without bulk. Chest wide and defined from consistent weight training. Forearms thickened visibly by subdermal impact mesh beneath the skin. Carries no excess fat.",
+    "hair_color": "Black, natural",
+    "hair_style": "Close-cropped, precision-cut, maintained weekly",
+    "hair_length": "Short",
+    "eye_color": "Brown with faint bioluminescent coral rings around the iris perimeter — pulses dim when elevated",
+    "skin_tone": "Warm medium-deep brown with golden undertones — the result of layered South Asian, Middle Eastern, and Sub-Saharan ancestry creating a rich, complex complexion that reads distinctly warm rather than cool.",
+    "complexion": "Clean-shaven, no facial hair. Smooth skin with minimal scarring on the face — his face is deliberately kept unmarked, a professional choice. Features reflect his mixed heritage: defined cheekbones with subtle width, strong jaw with slightly squared angles, eyes set with depth. Expression rests neutral and controlled; smiles rarely and briefly.",
+    "distinguishing_marks": [
+      "Three parallel ritual scars across the left forearm (inner side, wrist to elbow) — evenly spaced, deliberately self-inflicted with heated wire at age twenty, now pale silver against his skin",
+      "Faint grid pattern of subdermal impact mesh visible as subtle raised lines across knuckles and forearm fascia, most visible on the back of the hands"
+    ],
+    "visible_augmentations": "Bioluminescent iris rings (coral, faint pulse under exertion — a tell he dislikes). Subdermal impact mesh across knuckles and forearms creates slight texture variation in the skin, visible up close or in certain light. No obvious chrome plating or external augmentation — everything integrated.",
+    "posture_movement": "Stands with weight evenly distributed, ready. Moves with deliberate economy — no wasted motion. Walks slow, intentionally unhurried, shoulders slightly forward. Hands stay visible and loose, not aggressive but present. Makes minimal eye contact unless he is trying to convey something. When engaged physically, shifts into methodical efficiency; no flourish.",
+    "clothing_style": "Tier 3-4 practical wear. Black fitted compression undershirt or plain tee beneath a grey or charcoal canvas jacket — durable, functional, no logos or ostentatious branding. Dark work trousers, combat-cut, multiple pockets, worn with steel-toed boots scuffed from routine. A simple steel chain visible at the collar — family piece, not affectation. No visible jewelry beyond the chain. Clothes are clean, maintained, but not new; they read as well-worn professional gear rather than fashion statement."
+  },
+  "image_prompt": "Sage Raghavan-Villanueva, 198cm tall, heavily muscled frame, warm deep brown skin with golden undertones reflecting South Asian and Middle Eastern heritage. Close-cropped black hair, sharp cheekbones and strong jaw, neutral expression. Brown eyes with faint bioluminescent coral iris rings. Clean-shaven. Three pale ritual scars visible on inner left forearm, subdermal impact mesh visible on knuckles and hands as subtle raised texture. Wearing black fitted compression tee under grey canvas jacket, dark combat-cut work trousers, scuffed steel-toed boots. Simple steel chain at collar. Standing with even weight distribution, deliberate posture, hands visible and controlled. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody low-level lighting casting subtle shadows on his face, professional and methodical presence. Industrial urban background, film noir color palette with cool shadows and warm skin highlights. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 38.1,
+    "Middle Eastern": 16.7,
+    "Hispanic/Latin American": 16.0,
+    "Sub-Saharan African": 14.9,
+    "Northern European": 7.6,
+    "East Asian": 6.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "id": "019d6143a60a768e91618c52a1d27e7d",
+  "type": "character",
+  "name": "Thora Björnsdóttir",
+  "aliases": [
+    "Zeke",
+    "The Long Haul"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Freight delivery driver for a small independent logistics company",
+  "age": 55,
+  "status": "active",
+  "location": "Based out of Bridgepoint depot; routes across Old Harbor, Collinwood Docks, and Escanaba Gateway, near Lake Shore and Wacker",
+  "description": "Ezekiel is a big man gone soft at the middle without losing any of the underlying solidity, with a Samoan-Polynesian breadth to his shoulders and a German-Kazakh fairness to his complexion that produces a particular warm gold-brown. He keeps a neatly trimmed beard that is going white at the chin, and his hair is cut short on the sides with a modest wave on top. He has no augmentations except for a spinal support brace system embedded under the skin of his lower back — invisible from outside, a concession to fifteen years of heavy lifting, and the thing he is most privately embarrassed about. He dresses in the same way every day: Ferrogate Transit–adjacent work pants (not an official uniform, just the brand he likes), an undershirt, and whatever jacket is appropriate to the weather, always with the same small enamel pin of a cargo ship on the lapel.\n\nEzekiel is the specific kind of man who has decided what he thinks about most things and is comfortable living there. He is not incurious — he listens with genuine attention — but he does not perform enthusiasm or urgency. He has a deep, slow voice and the habit of answering questions with a question first, not as an evasion but as genuine interest in understanding what you actually want to know. He is known along his routes as someone you can trust to deliver fragile things intact and to keep his mouth shut about what he transports, which has made him both well-regarded and occasionally the target of people who want to exploit those qualities.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Losing his route to automation — Polaris Freight is under pressure from a Ferrogate automated logistics subsidiary",
+      "Something happening to his daughter while he's on the road"
+    ],
+    "core_desires": [
+      "To retire with enough to not be a burden on anyone",
+      "To be remembered as a reliable man �� not a great man, not a famous man, a reliable one"
+    ],
+    "coping_mechanisms": [
+      "Structures everything — his cab, his day, his thoughts — to limit chaos to manageable size",
+      "Long silences he fills with music only he can hear, one earbud in while driving"
+    ],
+    "blind_spots": [
+      "Reads reliability as virtue so consistently that he gives dishonest people too long a grace period if they're punctual",
+      "Slow to recognize when a situation has already escalated past the point where staying calm is appropriate"
+    ],
+    "secret": "Twice in the last year he has transported packages for a customer he knows are not legitimate freight, accepting the work because the pay kept Polaris Freight solvent through a bad quarter. He doesn't know exactly what the packages contained and has decided, with a deliberateness that costs him sleep, not to find out."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, concrete, unhurried; prefers nouns to adjectives; occasionally drops into a warm Samoan cadence when relaxed",
+    "cadence": "Slow and even, like someone who has learned that silence isn't wasted time",
+    "verbal_tics": [
+      "Starts sentences with 'Now—' when he's about to say something careful",
+      "Long pause before any answer involving a decision"
+    ],
+    "example_lines": [
+      "'Now — what is it you actually need, versus what you said you need?'",
+      "'I'll be there at the time I said I'd be there. That's the whole job.'",
+      "'I don't ask. You don't tell. The package gets there in one piece. That's what I know.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular customer on his Old Harbor route has stopped answering their delivery buzzer; after three failed deliveries, Ezekiel is sitting on a package that he suspects contains something important, and a second party has approached him about 'recovering' it",
+    "Polaris Freight's owner has just told the drivers that a Ferrogate automated logistics subsidiary has made an acquisition offer — Ezekiel has three weeks of work left unless they refuse the offer, and the owner is clearly wavering"
+  ],
+  "narrative_function": "Mobile information source who moves between neighborhoods and can carry news, packages, or people; access point to the logistics underworld; represents the working Tier-2 experience with dignity; can introduce locations by literally being the character who delivers somewhere new",
+  "augmentations": "Subdermal spinal support brace system (lower back, medical necessity); no cosmetic modifications",
+  "daily_life": "On the road by 05:30, first delivery by 06:00. Runs three to six deliveries per day depending on cargo size. Eats every meal in the cab of his truck from containers his daughter packs for him. Returns to depot by 18:00, does his own vehicle checks, home by 19:30.",
+  "affiliation": "Polaris Freight (small independent, three drivers total, one depot); informal relationship with Collinwood Docks loading union",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Blue-Collar Dignity",
+      "Quiet Complicity",
+      "Route Memory",
+      "Automation Anxiety"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Finish what you started before you start something new",
+      "Don't talk about other people's business even when you know it",
+      "Never take a job you can't complete with your own hands and equipment"
+    ],
+    "escalation_ladder": [
+      "Steady and neutral engagement",
+      "Quiet withdrawal of cooperation",
+      "Short, very final statement of refusal",
+      "He simply drives away"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, minimal, professional — not cold, just contained",
+      "friends": "Expansive and surprisingly funny; remembers details about people's lives from years back"
+    },
+    "stress_responses": {
+      "low": "Quieter than usual, checks mirrors more often",
+      "medium": "Routes and re-routes his day mentally, finding the controllable variables",
+      "high": "Parks the truck, sits in silence for ten minutes, then makes a decision"
+    },
+    "contradictions": [
+      "Insists he doesn't get attached to places on his route and has been leaving small machine-oil offerings at the E.L.F. shrine at the Collinwood Docks loading bay for nine years"
+    ],
+    "habits": [
+      "Checks tire pressure before and after every route regardless of distance",
+      "Keeps a physical paper log of every delivery in addition to the digital one"
+    ],
+    "breaking_points": [
+      "Being asked to lie to someone's face about a delivery",
+      "Any threat directed at his daughter"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "maintained annually at Aurochs Medical Complex, one missed appointment",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bridgepoint to a Samoan-Tongan father and a Kazakh-German mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Started driving freight at eighteen for a Ferrogate contractor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Daughter born; spinal injury same year from a loading accident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Left the Ferrogate contractor after a union dispute and joined Polaris Freight as one of its founding drivers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First of two questionable freight deliveries; ongoing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Street Custom 'Lazarus Wire' Garrote System"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Collinwood Docks",
+    "Escanaba Gateway",
+    "Bridgepoint",
+    "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "TESSERA TD-3 'Hornet'",
+    "Gold",
+    "Breck Tannen",
+    "Dragan Petersen-Bah",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Lazarus Pharmaceuticals",
+    "Malika Zhukov-Wiredu",
+    "Mika Sorel",
+    "Nnamdi Ostrowski-Faletolu",
+    "Old Harbor",
+    "Street Custom 'Lazarus Wire' Garrote System",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Northern European-dominant with significant Middle Eastern, Eastern European, South Asian, and minor Hispanic/Latin American ancestry — a complex Diaspora blend creating warm golden-brown skin with olive undertones, broad Northern European bone structure refined by Middle Eastern features, and South Asian warmth in coloration",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Broad-shouldered and solid through the chest and arms, with pronounced softness at the midsection — the physique of a man whose frame was built for heavy labor but whose daily work has shifted to sustained driving. Still carries underlying mass and strength beneath the slackness.",
+    "hair_color": "Dark brown with white threading, particularly concentrated at the chin and edges of beard",
+    "hair_style": "Short-clipped sides with a modest wave maintained on top; well-maintained without fussiness",
+    "hair_length": "Short",
+    "eye_color": "Warm brown",
+    "skin_tone": "Warm golden-brown with subtle olive undertones — the result of Northern European fairness deeply sun-darkened and enriched by Middle Eastern and South Asian ancestry, creating a complexion that reads as sun-weathered and lived-in rather than fair",
+    "complexion": "Weathered but clean-shaven except for a neatly trimmed dark beard; sun-marked on the face and forearms from decades of dock-side work and windshield-filtered UV exposure; Middle Eastern-influenced bone structure visible in cheekbones and jaw; no cosmetic modifications; the face of someone who has decided to age without resistance",
+    "distinguishing_marks": [
+      "Deep horizontal crease across his lower back (visible only when shirtless) from the embedded spinal support brace running beneath the skin",
+      "Faded scarring on both palms and along the inner sides of forearms, consistent with decades of cable work and dock labor"
+    ],
+    "visible_augmentations": "None visible. The subdermal spinal support brace system is completely subcutaneous and undetectable without medical imaging.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Sits with the careful attention of someone managing chronic back strain, favoring slight forward flexion. His default is stillness; when he speaks, his gestures are minimal and purposeful. Walks with a trucker's stride, slightly favoring weight distribution.",
+    "clothing_style": "Ferrogate Transit work pants (Tier 4 industrial-grade, well-maintained), neutral undershirt (usually grey or black), weather-appropriate jacket (canvas or synthetic blend depending on season). Everything is functional, well-worn but clean. A small enamel pin of a cargo ship is affixed to his jacket lapel — the only decorative element, worn daily without variation. No corpo branding or status signaling. Shoes are scuffed steel-toed work boots."
+  },
+  "image_prompt": "Thora Björnsdóttir, 188cm tall, weathered dock worker in GLMZ 2226, golden-brown skin with olive undertones from mixed Northern European, Middle Eastern, Eastern European, and South Asian ancestry. Dark brown hair with white threading in neatly trimmed beard, warm brown eyes, broad shoulders with solid chest and pronounced midsection softness. Wearing worn Ferrogate Transit work pants, grey undershirt, canvas jacket with faded cargo ship enamel pin, scuffed steel-toed boots. Sitting in trucker cab with deliberate posture, managing chronic back strain, minimal gestures. Sun-weathered face and forearms, faded scarring on palms visible. Cyberpunk 2226, industrial lighting from windshield, worn utilitarian aesthetic, tired but purposeful expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 43.8,
+    "Middle Eastern": 26.6,
+    "Eastern European": 15.2,
+    "South Asian": 11.3,
+    "Hispanic/Latin American": 3.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

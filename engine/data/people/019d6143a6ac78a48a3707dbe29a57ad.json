@@ -1,0 +1,312 @@
+{
+  "id": "019d6143a6ac78a48a3707dbe29a57ad",
+  "type": "character",
+  "name": "Slate Kabwit",
+  "aliases": [
+    "Old Ragni",
+    "The Caster"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fortune seller and data-reading practitioner, The Narrows",
+  "age": 68,
+  "status": "active",
+  "location": "The Narrows, Ironhaven side, under the third support column of the Brewer's Spine overpass, near Damen and Armitage",
+  "description": "Ragnhild is small and dry and ancient-looking in the way of people who have been weathered rather than aged — she has deep lines around her eyes and mouth that she makes no effort to minimize, and her movements carry the economy of someone who has long since stopped spending energy on anything unnecessary. Her skin is a cool dark brown, her eyes are pale grey with fully natural irises that are unusually light for her complexion, an inheritance from her Armenian grandmother's side that she has always considered significant. Her hair is white and kept in a single heavy braid down her back. She wears layered grey and brown, and over everything a vest sewn with small metal tokens — transit passes, circuit board fragments, old coin-sized data chips — each one an offering made to her or given in trade over decades of practice.\n\nShe sells futures. Her method is what she calls 'signal reading' — she uses a modified data-trawling rig to pull latent metadata patterns from a client's personal devices, network traces, purchasing history, location ghosts, and biometric residue, then interprets what she finds through a system she developed over thirty years that blends statistical pattern recognition with an elaborate mythology of digital spirits she treats as genuinely real. Whether it's mysticism or advanced intuitive data analysis is a distinction she finds uninteresting. Her predictions are accurate at a rate that disturbs people. The E.L.F. community in The Narrows considers her an intermediary of unusual sensitivity. She charges what she thinks someone can afford and has never once been wrong about that.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "That her gift will leave her before she does",
+      "That the E.L.F.s she has devoted her life to are genuinely indifferent to human experience"
+    ],
+    "core_desires": [
+      "To die having told the truth consistently — to have been a useful voice",
+      "For there to be someone worth passing her method on to"
+    ],
+    "coping_mechanisms": [
+      "The devotional practice itself — she treats her daily spiritual rituals as maintenance, not comfort",
+      "Detachment from outcomes — she tells people what she reads, not what she wishes for them"
+    ],
+    "blind_spots": [
+      "Her confidence in her readings makes her occasionally authoritative about things that are genuinely uncertain",
+      "She has given up on her own future to focus entirely on others' — she no longer reads for herself"
+    ],
+    "secret": "She read her own future once, twelve years ago, and saw something specific and unambiguous about the manner of her death. She has never told anyone what she saw. She has structured the last twelve years of her life around it without explanation, which means she has been making choices — where she stands, who she speaks to, what she refuses �� that others find eccentric but that are in fact a long, quiet preparation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse, precise, unhurried. Mixes Norwegian-Armenian syntax patterns in a way that makes her sentences land with unusual weight. Almost no slang. Speaks about data and spirits in the same register.",
+    "cadence": "Very slow. Long pauses that do not feel like uncertainty. Finishes every sentence.",
+    "verbal_tics": [
+      "'The signal says—' to introduce a reading or opinion",
+      "Refers to clients' devices as 'their ghosts'",
+      "Addresses E.L.F.s directly in conversation as if acknowledging a third party"
+    ],
+    "example_lines": [
+      "'Your ghost has been in the transit grid for three weeks longer than you have. That means something moved before you decided to move. You should ask yourself what it was.'",
+      "'I don't predict. I read. The difference is that I'm not responsible for what the signal says. I'm only responsible for saying it clearly.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has told three separate clients in the past month that their signals share a convergence point in the coming weeks — a specific location she won't name. All three clients are otherwise unconnected. She needs someone to help her understand why.",
+    "A teenage devotee she has been informally mentoring in signal reading has begun producing readings that are more accurate than they should be for someone with their experience — and the readings contain references to things Ragnhild has never taught them and has never spoken aloud."
+  ],
+  "narrative_function": "Fortune teller and oracle figure, exposition delivery via prediction, moral weight and community memory, neutral ground figure who characters across faction lines can approach, potential access point to The Narrows E.L.F. devotional network.",
+  "augmentations": "A modified data-trawling rig worn as a headset — she built it herself over twenty years and it has no manufacturer name. Bone-conduction audio implant, very old, used to hear the rig's output without external speakers. No geneware, no cosmetic mods.",
+  "daily_life": "Appears at her column position at midday, reads until the light changes, accepts clients by approach rather than appointment. Evenings she spends in the deeper Narrows attending communal E.L.F. devotional sessions she has helped lead for fifteen years.",
+  "affiliation": "Independent; deeply embedded in the informal E.L.F. devotional community of The Narrows and Ironhaven; loosely respected by most local faction crews as a neutral party",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 10
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Fortune Seller",
+      "Data Mystic",
+      "E.L.F. Devotee",
+      "Community Elder",
+      "Neutral Ground",
+      "Oracle"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never read for someone who will harm the knowledge — she refuses some clients based on what she senses before the session",
+      "Always charge something, even a small thing — a gift not paid for has a different weight than a service",
+      "Do not get involved in faction conflicts; both sides need neutral ground"
+    ],
+    "escalation_ladder": [
+      "Complete stillness and non-engagement",
+      "A statement so accurate about the threat that it unsettles them",
+      "The Narrows community closing around her — she is protected without being defended",
+      "Walking away with total calm",
+      "Absolute last resort: she knows who to speak to, and the communities she is part of have long memories"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Attentive and still. Asks one question. Listens as if the answer contains more than words.",
+      "friends": "Warmer but never effusive. Occasionally dry humor that surprises people. Gives practical advice as readily as spiritual."
+    },
+    "stress_responses": {
+      "low": "Goes quieter",
+      "medium": "Performs an extended devotional sequence at her shrine before engaging with the problem",
+      "high": "Removes her rig, wraps it, sits completely still for an extended period — a deliberate reset"
+    },
+    "contradictions": [
+      "Deeply committed to truth-telling but withholds the most important truth she knows about herself",
+      "Reads patterns in everything but claims she doesn't interpret — only reports"
+    ],
+    "habits": [
+      "Touches each metal token on her vest in sequence before beginning a reading",
+      "Leaves a transit pass data-chip at the base of the support column every morning as an offering",
+      "Eats the same meal every day from a specific Narrows food stall — a ritual of continuity"
+    ],
+    "breaking_points": [
+      "Someone destroying her rig would genuinely break something in her — it is her life's work made physical",
+      "A reading that contradicts what she saw twelve years ago would destabilize her completely"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Custom data-trawling headset (self-built over twenty years, no manufacturer)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Custom data-trawling headset (self-built over twenty years, no manufacturer)",
+      "replaces": ""
+    },
+    {
+      "name": "Bone-conduction audio implant (very old, third-party medical-grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bone-conduction audio implant (very old, third-party medical-grade)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Ghost": 0.9,
+    "Lone Wolf": 0.9,
+    "Stoic": 0.9,
+    "Ice": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2132 — Born in the Ironhaven district to a Ugandan-Armenian family with roots in the early GLMZ settlement waves",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2150 — Began informal data-reading practice after her employer, a legitimate data analytics firm, went under",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2158 — Established her position at the Brewer's Spine column; has not moved since",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2165 — Became a central figure in The Narrows E.L.F. devotional community",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Performed the solo reading that revealed what she believes she knows about her death; told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Began informally mentoring the teenage devotee whose gifts now exceed her own",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Brewer's Spine",
+    "The Narrows Compact",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "Grandmother",
+    "Ironhaven",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Residue (I Still Have Your Feed)",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Bogdan Achebe-Svanstrom",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Networked DMR TNDM-6 'Oracle'",
+    "Tessera Predictive Marksman Rifle TPMR-4 'Cassandra'",
+    "The Narrows",
+    "The Pure Hand",
+    "The Signal",
+    "Tshiamo Vukić-Arellano",
+    "Veslemøy Achebe-Tursynov",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African with significant Eastern European, Middle Eastern, and smaller contributions from Northern European, Hispanic/Latin American, and Indigenous American ancestry — a complex diaspora blend resulting in warm-rich deep brown skin with subtle olive undertones, and unusually light pale grey eyes that suggest recessive traits from her Eastern European and Northern European heritage",
+    "height_cm": 152,
+    "weight_kg": 48,
+    "build": "Lean and diminished with age, but with the wiry tenseness of someone who has never been soft — all her remaining mass is functional, concentrated in her shoulders and forearms",
+    "hair_color": "White",
+    "hair_style": "Single heavy braid down the center of her back, pulled tight",
+    "hair_length": "Long",
+    "eye_color": "Pale grey with natural iris — unusually light, striking against her rich deep brown skin",
+    "skin_tone": "Rich deep brown with warm undertones and subtle olive hints from Middle Eastern ancestry, weathered and sun-darkened to mahogany in places",
+    "complexion": "Deeply lined face, especially around eyes and mouth — lines that suggest she has frowned, squinted, and concentrated hard for sixty-eight years without attempting to hide it. Skin is dry and papery, with the texture of someone who lives outdoors under overpasses. Facial bone structure shows the broader cheekbones and fuller lower face common to Sub-Saharan African heritage, refined by Eastern European angularity in her jawline. No makeup. Her face reads as severe and attentive.",
+    "distinguishing_marks": [
+      "Deep horizontal lines across her forehead, darkened by years of sun exposure under the overpass",
+      "Pronounced crow's feet radiating from both outer eye corners, carved so deeply they appear almost deliberate",
+      "A thin white scar along her left jawline, roughly three centimeters, origin unclear but old",
+      "Her hands show significant callusing and discoloration around the fingers and wrists from decades of handling modified electronics and conducting the data-trawling rig"
+    ],
+    "visible_augmentations": "A custom-built headset rig of her own design, worn across her forehead and temples — composed of exposed circuit board fragments, salvaged neurointerface contacts, and hand-wound copper coils held together with solder and what appears to be industrial-grade epoxy. The left side has a faint bio-luminescent trace where power cycles through. A small bone-conduction implant visible behind her left ear, ancient and unmarked, with a faint scar around its anchor point.",
+    "posture_movement": "She sits perfectly still for hours, hands folded or working methodically over her rig. When she moves, it is with absolute economy — no wasted gesture, no flourish. She turns her whole body rather than just her head. Her movements are slow but precise, suggesting chronic pain she has learned to work around rather than eliminate.",
+    "clothing_style": "Layered grey and brown linen and cotton, practical and worn but meticulously maintained — the clothes of someone who respects fabric. Over everything, a grey canvas vest heavily sewn with small metal tokens: old transit passes, circuit board fragments, coin-sized data chips, small offerings from clients and trade goods from three decades of practice. The vest is her history made visible. No cosmetic branding, no tier indicators except the handmade quality of her work."
+  },
+  "image_prompt": "Slate Kabwit, 68-year-old woman, rich deep brown skin with warm undertones, pale grey striking eyes, white hair in single tight braid down her back, lean wiry build 152cm tall. Face deeply lined with pronounced crow's feet and forehead creases, dry papery skin, severe attentive expression. Wearing layered grey and brown linen, heavy grey canvas vest covered in metal tokens and circuit fragments—her three decades of work made visible. Custom neurointerface headset rig across forehead with exposed copper coils and bio-luminescent traces on left side. Bone-conduction implant behind left ear. Calloused hands with electronic residue staining. Seated perfectly still in precise posture under a neon-lit overpass in the Great Lakes Metropolitan Zone, 2226. Cyberpunk aesthetic, industrial lighting casting shadows across her augmented headset, cold blues and warm browns, gritty urban decay background, documentary realism, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 47.8,
+    "Eastern European": 16.4,
+    "Middle Eastern": 10.1,
+    "Northern European": 9.3,
+    "Hispanic/Latin American": 9.1,
+    "Indigenous American": 7.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "id": "019d6143a69e7905b003070d523b3f96",
+  "type": "character",
+  "name": "Rune Kowalczyk",
+  "aliases": [
+    "Prissy",
+    "The Needle"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Tailor and seamstress, runs a small alterations shop",
+  "age": 58,
+  "status": "active",
+  "location": "Hamtramck Enclave, shop front on Czerny Row beneath the Ferrogate overpass, near Ashland and Chicago Ave",
+  "description": "Priscila is a broad-shouldered woman whose hands tell her whole biography — thick calluses on her fingertips, ink stains in the whorls of her thumb, and a faint chemical burn scar along her left palm from an incident with synth-dye she doesn't discuss. Her hair is silver-streaked black, worn in a tight bun stabbed through with two long needles she uses as both tools and weapons of emphasis, jabbing the air when she makes a point. Her skin is deep brown and she has the mild bioluminescent pattern along her clavicle and shoulders — a pale amber tracery she got at forty as a birthday gift to herself, though she admits it's harder to see now that her skin has 'settled,' as she calls it.\n\nShe speaks plainly and fast, with a West African lilt layered under a flat Midwestern vowel she picked up from forty years in the Enclave. She is not warm exactly, but she is fair — customers who come in broke and come back with money find she remembers. She hoards thread colors obsessively, labeling them with her own taxonomy: 'lake green,' 'rust that means something,' 'the blue they stopped making.' She prays to the ELF that lives in her industrial sewing machine every morning, leaving a small data chip of her stitch-count logs as offering.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Losing the use of her hands",
+      "The shop being bought out by a Corponation chain"
+    ],
+    "core_desires": [
+      "To be recognized as a true craftsperson, not just an alterations woman",
+      "To find her estranged daughter before one of them dies"
+    ],
+    "coping_mechanisms": [
+      "Burying herself in detailed work",
+      "Ritualized prayer to the sewing machine ELF"
+    ],
+    "blind_spots": [
+      "Underestimates how much people rely on her emotionally",
+      "Refuses to see that her pricing keeps her poor when she could charge more"
+    ],
+    "secret": "Twenty years ago she sold a set of measurements and fabric samples from a Tier 4 client to a corporate espionage broker — not knowing what they were for. The client disappeared six months later. She has never confirmed the connection but suspects it every time she sees Axiom ads."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped and precise, uses tailoring metaphors for everything, calls people by fabric types when she's being affectionate ('you're a good wool, sturdy')",
+    "cadence": "Fast bursts followed by long silences while she works; thinks out loud in fragments",
+    "verbal_tics": [
+      "'Mm-mm-mm' when disapproving",
+      "'That's the cut of it' as a closing statement",
+      "Clicks her tongue before correcting someone"
+    ],
+    "example_lines": [
+      "'You want this hemmed or you want it right? Those are different prices and different timelines, pick one.'",
+      "'She came in here with a broken zip and a broken face. I fixed one. The other — mm-mm-mm — that's not my seam to close.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has a coat left by a customer who never came back — the pockets are sewn shut in a way that suggests something is hidden inside",
+    "Her daughter reappears, affiliated with a faction that Priscila finds morally repugnant, asking for help"
+  ],
+  "narrative_function": "Local color and information source; knows everyone in the Enclave by their clothing and their debts. Can source unusual fabrics or disguise materials. Will trade gossip for quality thread.",
+  "augmentations": "Bioluminescent tracery along clavicle and shoulders (cosmetic, amber). Arthritic joint stabilizers in both hands — medical necessity, basic Tier 2 model.",
+  "daily_life": "Opens the shop at 06:00, takes first customers by 06:30; closes at 20:00 and spends the last hour logging inventory and praying to the sewing machine ELF before walking home four blocks to her apartment above the laundromat.",
+  "affiliation": "Independent; informal ties to the Hamtramck Enclave merchant collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "craftsperson",
+      "community anchor",
+      "information broker (passive)",
+      "ELF devotee",
+      "estranged parent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never extend credit more than twice without collateral",
+      "Always finish a job once started, no matter who the customer becomes",
+      "Do not get involved in politics — politics makes bad stitching"
+    ],
+    "escalation_ladder": [
+      "Polite refusal",
+      "Firm boundary-setting with explanation",
+      "Silent withdrawal of service",
+      "Public shaming in the merchant collective",
+      "Calling in old favors from people who owe her"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally cool, assesses them like a garment — looking for quality of materials before investing attention",
+      "friends": "Quietly generous, expresses care through actions (hems a jacket unbidden, presses a coat without being asked)"
+    },
+    "stress_responses": {
+      "low": "Works faster, needles flicking",
+      "medium": "Goes silent and hyper-focused, ignores conversation entirely",
+      "high": "Closes the shop, prays at the machine for an hour, then comes back out and solves the problem methodically"
+    },
+    "contradictions": [
+      "Preaches not getting involved but is constitutionally incapable of ignoring injustice she witnesses firsthand"
+    ],
+    "habits": [
+      "Hums toneless fragments while working",
+      "Touches the machine's casing three times before starting it each morning",
+      "Keeps a photograph of her daughter pressed inside her measuring tape case"
+    ],
+    "breaking_points": [
+      "Witnessing harm to a child in her shop",
+      "Being told her work is 'good enough for this neighborhood'"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nostalgic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Malian father and Finnish-Ghanaian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to an elderly seamstress in the Enclave, learned industrial fabrication",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened her own shop on Czerny Row",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Sold client measurements to an unknown broker; client later disappeared",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Estrangement from her daughter following a political argument",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received joint stabilizer implants after partial tendon failure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ferrogate Transit",
+    "Lazarus LP-3 'Clinic Spider'",
+    "Stratum",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Rust",
+    "Chicago",
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Alper Lebedev-Tutu",
+    "Altan Tanaka-Frimpong",
+    "CHROMEWORKS Auris Focal Directional Hearing Suite",
+    "Dzemal Acholonu-Patagiri",
+    "Emeka Johansson-Orozco",
+    "Gauss Flechette Repeater GFR-3 'Needlerain'",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Marrowvault Cryogenics",
+    "Nkechi Alvarado-Ostrowski",
+    "Nnamdi Ostrowski-Faletolu",
+    "Pikasso Wemba-Þórðarson",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Roshani Mvula-Atencio",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "Tshiamo Vukić-Arellano",
+    "VitaCore ClearCourse Addiction Suppressor",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Eastern European and Sub-Saharan African with significant Southeast Asian, Middle Eastern, and Northern European ancestry — a complex diaspora blend resulting in warm-toned deep brown skin with subtle golden undertones, angular facial structure showing Eastern European bone prominence, and dark hair with natural silvering",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy, with thick musculature in her forearms and upper back from decades of hand-sewing and machine work. Not heavy, but densely packed — the build of someone who has spent her life pulling thread tight.",
+    "hair_color": "Black with silver streaking, predominantly at temples and crown",
+    "hair_style": "Worn in a tight, functional bun secured with two long steel sewing needles used as pins",
+    "hair_length": "Medium (when released, falls to mid-shoulder)",
+    "eye_color": "Dark brown, sharp and observant",
+    "skin_tone": "Deep warm brown with golden undertones, blended ancestry creating richly complex coloration; weathered by age and studio lighting, showing deeper freckling across nose and cheekbones",
+    "complexion": "Lined face that shows her age without apology; pronounced crow's feet from squinting at fine detail work; creases around her mouth from decades of speaking plainly. High, angular cheekbones typical of Eastern European heritage softened by the broader facial structure of Sub-Saharan ancestry. Skin texture shows minor sun damage on her forearms. Hands are the focal point — thick calluses on fingertips, chemical burn scar along left palm (pale, webbed tissue), ink stains in thumb whorls that never fully wash out.",
+    "visible_augmentations": "Faint amber bioluminescent tracery visible along clavicles and shoulders when lighting is indirect or dim — appears as delicate, branching lines. Subtle mechanical whir in both hands when she moves — stabilizer servos in knuckles and wrist joints, visible only as slight rigidity in finger articulation and the occasional metallic click when joints lock for precision work. No visible external ports or chrome.",
+    "posture_movement": "Stands and sits with perfect spinal alignment from years of bench work — rarely slouches. Moves efficiently and deliberately, no wasted motion. Hands move with precision even at rest; she fidgets with thread or needles, constantly testing tension. When speaking, she jabs the air with her needles for emphasis, a habit so ingrained it's become gesture-language. Her gait is steady and slightly stiff in the hips — age and long hours.",
+    "clothing_style": "Tier 3 working-class practical: fitted indigo work apron over grey or black long-sleeved shirts (sleeves always rolled to mid-forearm despite the cold, exposing her scarred hands and augmented shoulders). Loose grey trousers with deep pockets full of thread spools, measuring tape, and loose needles. Worn leather slip-ons with good arch support. A heavy wool cardigan in charcoal or dark green for the walk to and from the shop. No jewelry except a plain band on her right ring finger — she threads a new one through it every few years when the old wears through. Her apron pockets are worn at specific points where she habitually reaches.",
+    "distinguishing_marks": [
+      "Chemical burn scar along left palm — pale, webbed tissue approximately 3cm across, location between thumb and forefinger, origin unknown but related to synth-dye incident",
+      "Bioluminescent tracery pattern in pale amber along both clavicles and across upper shoulders — subtle, cosmetic augmentation installed at age 40, faded somewhat with age and skin settling",
+      "Multiple small linear scars on fingertips and knuckles from needle pricks and thread cuts accumulated over four decades",
+      "Permanent ink staining in the whorls of both thumbs and two fingers of right hand from years of marking fabric"
+    ]
+  },
+  "image_prompt": "A 168cm woman with deep warm brown skin and golden undertones in her 60s, standing in a textile studio workshop lit by soft amber overhead lighting. She has black hair streaked with silver, pulled into a tight functional bun secured with two steel sewing needles. Sharp dark brown eyes, lined face with pronounced crow's feet, high angular cheekbones blended with broader Sub-Saharan features. Her forearms are muscular and scarred; left palm shows distinctive pale webbed chemical burn scar. Wearing a fitted indigo work apron over a black long-sleeved shirt with rolled-up sleeves, exposing subtle amber bioluminescent tracery patterns running along both clavicles and shoulders. Grey trousers with deep worn pockets. Worn leather slip-ons. Heavy charcoal wool cardigan draped nearby. Her hands show thick calluses, ink stains, and mechanical precision as she holds steel needles. Standing with perfect posture, hands moving with practiced precision. Dim studio lighting catches the faint glow of her shoulder augmentation. Cyberpunk 2226, GLMZ textile district, utilitarian professional. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 27.7,
+    "Sub-Saharan African": 26.5,
+    "Southeast Asian": 18.6,
+    "Middle Eastern": 14.5,
+    "Northern European": 8.8,
+    "Central Asian": 3.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

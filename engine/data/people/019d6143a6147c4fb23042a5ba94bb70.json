@@ -1,0 +1,261 @@
+{
+  "id": "019d6143a6147c4fb23042a5ba94bb70",
+  "type": "character",
+  "name": "Vega Boateng-Kovalenko",
+  "aliases": [
+    "The Handshake",
+    "QT-3",
+    "Mr. Drum"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Field operative and physical security — The Quiet Table",
+  "age": 49,
+  "status": "active",
+  "location": "The Circuit — maintains a modest apartment with no personal effects and exceptional sight lines, near Damen and Armitage",
+  "description": "Felix Drum is the Quiet Table's hands in the physical world. When information needs to be collected in person, when dead drops need servicing, when a meeting requires the implicit suggestion that non-cooperation would be unwise — Felix handles it. He is not muscle in the traditional sense. He is presence. The kind of calm, attentive, well-dressed man who makes you want to cooperate because the alternative seems profoundly unappealing without him ever specifying why.\n\nBefore the Quiet Table, Felix spent twenty years in private security — first for corporate executives, then for politicians, then for people who existed in the space between those categories. He was very good at keeping people alive. He was less good at caring about whether they deserved to be alive. The moral vacancy started small and grew until he walked away from a client who was using his protection to facilitate human trafficking. He reported the client to the authorities. Nothing happened. He reported the client to someone else. Something happened. That was the last year of his legitimate career.\n\nFelix is average height, solidly built without being imposing, with the kind of face that belongs in a crowd — pleasant, forgettable, professional. He keeps his hair short, his clothes clean, and his posture perfect. The only augmentation anyone notices is a slight heaviness to his handshake — the reinforced bones in his hands and forearms are subtle but present. Everything else is hidden, maintained, and ready.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.55,
+      "id": 0.45,
+      "shadow": 0.6,
+      "mask": 0.55,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That his capacity for violence is more fundamental than his conscience — that the years of moral vacancy were the real him",
+      "That the man he reported is still operating and the something that happened wasn't enough",
+      "That Glass and Noor see him as a tool rather than a colleague — useful but not respected"
+    ],
+    "core_desires": [
+      "To prove that choosing right late is still choosing right — that the course correction counts",
+      "To protect people who deserve protection, for reasons he believes in, not just for pay",
+      "To be trusted with the full picture, not just the parts that require his physical presence"
+    ],
+    "coping_mechanisms": [
+      "Maintains rigid routine as a framework for a life that used to have none",
+      "Reads crime fiction because the genre provides clear moral resolution that reality doesn't",
+      "Channels his capacity for violence into precise, measured physical readiness rather than suppressing it"
+    ],
+    "blind_spots": [
+      "His composure is so complete that people assume he doesn't feel things strongly — he does, he just processes it in the apartment, alone, after the fact",
+      "He conflates being useful with being valued and cannot tell the difference",
+      "His late-life moral awakening has an element of self-punishment — he takes the dangerous assignments partly as penance"
+    ],
+    "secret": "The client he reported — the human trafficker — was never prosecuted. Felix contacted a runner crew to handle it. The client disappeared. Felix does not know if the client was extracted, imprisoned, or killed. He has chosen not to find out because all three answers are complicated."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clean, professional, slightly formal. Security industry diction — 'secure,' 'principal,' 'threat posture.' Deliberately inexpressive.",
+    "cadence": "Even, unhurried. He speaks at the same pace regardless of circumstances. The steadiness is both calming and, in certain contexts, deeply unsettling.",
+    "verbal_tics": [
+      "Says 'understood' with exactly the same intonation every time — it functions as acknowledgment, agreement, and closure",
+      "Refers to violent outcomes in euphemism: 'that would be inadvisable' means 'I will hurt you'",
+      "Uses 'sir' and 'ma'am' reflexively — the formality is genuine, not ironic"
+    ],
+    "example_lines": [
+      "Understood. I'll handle the physical side.",
+      "I'm suggesting that this meeting go well for everyone. I'm not insisting. Yet.",
+      "I read crime novels because the detective always solves it. That's not how the real world works, but it's nice to visit."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Glass Maren",
+      "type": "crew lead / employer",
+      "description": "Glass trusts Felix with the physical world and withholds the informational one. Felix accepts this division because it's professional, but he's increasingly aware that he's executing plans he doesn't fully understand.",
+      "emotional_core": "Professional loyalty with growing intellectual hunger",
+      "story_tension": "Felix wants to know why, not just what. Glass's compartmentalization protects the crew but also isolates Felix from the work's meaning."
+    },
+    {
+      "name": "Noor Farouk",
+      "type": "crewmate / intellectual bridge",
+      "description": "Noor briefs Felix before field work with the thoroughness of someone who takes his safety personally. He returns from the field with observations that refine her models. The professional loop has produced a quiet, steady warmth that neither has named.",
+      "emotional_core": "Two careful people circling the possibility of trust",
+      "story_tension": "If the warmth becomes something more, it would violate Glass's operational boundaries and force a conversation nobody is ready for."
+    },
+    {
+      "name": "The former client (unnamed trafficker)",
+      "type": "ghost / moral weight",
+      "description": "The man Felix reported and then handled through unofficial channels. Felix does not know his fate. The uncertainty is both punishment and protection.",
+      "emotional_core": "Guilt that refuses to resolve because Felix won't let it",
+      "story_tension": "If the client survived, he's a threat. If he didn't, Felix is responsible. The unknown is the worst option and the one he's chosen."
+    }
+  ],
+  "story_hooks": [
+    "The former client resurfaces — alive, connected, and aware that Felix was responsible for his disappearance",
+    "A field operation puts Felix in contact with Kyle — two men with different kinds of violence recognizing each other",
+    "Noor's analysis sends Felix into a situation more dangerous than the data predicted, forcing a reckoning about trust and information",
+    "Glass asks Felix to do something morally ambiguous — the first test of whether the Quiet Table is different from Felix's previous employers"
+  ],
+  "narrative_function": "Felix bridges the Quiet Table's intellectual world and the physical reality of M88's streets. His stories explore the weight of being the person who does the dangerous part of someone else's plan, and the moral complexity of a man who chose conscience late in life and is still figuring out what that means. He is the political thriller's action element — measured, competent, carrying more violence in reserve than he ever deploys.",
+  "augmentations": "Reinforced skeletal structure in hands, forearms, and ribcage — impact-resistant without bulk. Adrenal regulator that prevents panic responses and maintains steady heart rate under threat. Optical threat-assessment overlay (low-profile, passive) — highlights weapons, augmentations, and stress indicators in his visual field. Subvocal communicator linked to Glass and Noor.",
+  "daily_life": "Wakes at 0530. Physical training — low-impact, functional, focused on reaction and endurance rather than strength. Reviews Noor's briefings for the day's field work. Conducts meetings, services dead drops, performs physical reconnaissance on behalf of the Quiet Table. Returns to the apartment by 1900. Eats simply, reads crime fiction, sleeps by 2200. The routine has not varied in three years. The stability is the point.",
+  "affiliation": "The Quiet Table",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will follow operational instructions unless they require harm to non-combatants — this is the line he drew after the trafficking client",
+      "Will not deploy lethal force without Glass's authorization unless crew lives are at immediate risk",
+      "Will always verify Noor's briefing against his own field assessment — trust but verify",
+      "Will maintain his cover identity in all public interactions — the apartment, the routine, the forgettable face",
+      "Will not carry weapons that are visible — his augmentations and training are sufficient, and visible weapons change the social equation",
+      "Will always report field observations to Noor within one hour of return — the data loop is sacred"
+    ],
+    "escalation_ladder": [
+      "1. Presence — stand still, maintain eye contact, let the augmented calm do the work. Most people cooperate when faced with someone who is clearly not afraid.",
+      "2. Words — specific, professional, unambiguous. 'This meeting is over. You'll provide what was discussed.' No threats. Descriptions of reality.",
+      "3. Position — move to the optimal physical geometry. Block exits, control sightlines. The message is spatial.",
+      "4. Contact — reinforced hands, precise strikes, joint control. Non-lethal but definitive. The fight ends fast because Felix does not enjoy it and does not extend it.",
+      "5. Lethal — clinical, efficient, and followed by immediate extraction. Felix has killed people. He knows exactly how many. He does not discuss it.",
+      "6. Report — afterward, he tells Glass and Noor everything. The transparency is recent and deliberate. His previous life was defined by secrets. This one won't be."
+    ],
+    "interpersonal_modes": {
+      "glass": "Respectful, attentive, increasingly direct. He's begun asking 'why' after receiving instructions. Glass notices.",
+      "noor": "Careful, warm, attentive to her needs in ways that look like professional courtesy. He brings her coffee when he returns from field work. The coffee is always the right temperature.",
+      "clients": "Professional to the point of opacity. They see the suit, the handshake, the steadiness. They don't see the person underneath and that's by design.",
+      "threats": "Still, calm, absolutely present. The adrenal regulator keeps his pulse at 62 regardless. The threat-assessment overlay paints targets he hopes he won't need to engage. The composure is genuine — he has been in worse situations and survived all of them."
+    },
+    "stress_responses": {
+      "low": "Training increases. He runs longer, trains harder. The body processes what the mind won't engage with.",
+      "medium": "Crime fiction consumption increases. He reads three or four novels a week, looking for resolution he can't find elsewhere.",
+      "high": "The routine tightens. Every action becomes more precise, more scheduled. The rigidity is a cage he builds around the chaos.",
+      "critical": "Sits in the apartment in the dark and does nothing. The adrenal regulator keeps him calm. The calm is not peace — it's paralysis with a steady heart rate. When it passes, he returns to routine and does not discuss it."
+    },
+    "contradictions": [
+      "He chose conscience late in life and now punishes himself for the years before — the penance is the dangerous fieldwork he volunteers for",
+      "His composure makes him effective but prevents him from processing the emotional cost of the work",
+      "He wants to be trusted with the full picture but might not be able to handle it — the moral complexity increases with information",
+      "He reads crime fiction for its moral clarity while living a life that has none"
+    ],
+    "habits": [
+      "Physical training every morning at 0530 — the same routine, never skipped, never varied",
+      "Inspects his hands every evening — checking the reinforced bone structures for any degradation. The hands are his instruments.",
+      "Reads exactly one chapter of a crime novel before sleep — no more, no less",
+      "Brings coffee to Noor after field work — always the same order, always the right temperature. He doesn't know when this became a ritual.",
+      "Walks his neighborhood perimeter before entering his building — counting cars, noting changes, mapping the ordinary"
+    ],
+    "breaking_points": [
+      "Being ordered to harm a non-combatant would force him to leave the Quiet Table — the line exists because crossing it once nearly destroyed him",
+      "The former client appearing alive and operational would break the careful compartmentalization that keeps Felix functional",
+      "Noor being hurt because his field assessment was wrong would combine professional failure with personal loss in a way his composure can't contain",
+      "Glass revealing that the Quiet Table's operations have caused deaths Felix didn't know about would replay the trafficking client's moral collapse"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7,
+    "Face": 0.6,
+    "Diplomat": 0.6,
+    "Social Chameleon": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Tessera Networked SMG TNSM-3 'Chorus'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Tessera Networked SMG TNSM-3 'Chorus'"
+  ],
+  "related_entities": [
+    "The Circuit",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Flicker",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pure Hand",
+    "Glass",
+    "Bioacoustic Communication Membrane",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Kyle Ellen Corbin-Vasik",
+    "Lazarus LX-2 'Lab Rat'",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "Mika Sorel",
+    "Noir Dining",
+    "Oumarou Svec-Ranginui",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Street Custom 'Cigarette' Pen Gun",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA TX-12 'Chorus'",
+    "Tessera Corponation",
+    "Tessera Networked SMG TNSM-3 'Chorus'",
+    "The Burden Clause",
+    "The Fathom Line",
+    "The Human Baseline Alliance",
+    "Vantablack VS-3 'Skin Job'",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African with significant Hispanic/Latin American and Eastern European ancestry, creating a striking phenotype. Rich melanin undertones base his complexion, with warm undertones from Hispanic heritage and subtle Eastern European influence visible in facial structure. A rare genetic combination that reads as deliberately ambiguous — difficult to place at first glance, which suits his profession.",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Solidly compact without visible bulk — the build of someone who trains for function rather than appearance. Broad shoulders, economical muscle distribution, minimal body fat. Moves like a person accustomed to carrying weight efficiently.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Close-cropped, military precision, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with amber undertones",
+    "skin_tone": "Rich warm brown — deeper base from Sub-Saharan ancestry with olive-warm undertones from Hispanic and Middle Eastern heritage. Weathered by Great Lakes climate exposure but with the underlying luminosity that comes from melanin-rich skin.",
+    "complexion": "Clean-shaven, minimal scarring on the face. Facial structure shows the broader nose and fuller lips characteristic of Sub-Saharan ancestry, with cheekbones and jaw definition influenced by Eastern European heritage. Expression naturally neutral. The kind of face that does not arrest attention — this is intentional and cultivated.",
+    "distinguishing_marks": [
+      "Thin white scar on the left knuckle from a decade-old surveillance job in Detroit.",
+      "Callusing across both hands consistent with daily combat training and reinforced skeletal work.",
+      "Small, faded burn mark on the inside of right wrist — cigarette, self-inflicted, 2195, during the trafficking case. Never discussed."
+    ],
+    "visible_augmentations": "None immediately apparent. His handshake carries a subtle heaviness — reinforced bones in hands and forearms create a density that registers as presence rather than threat. The rest is subcutaneous: adrenal regulator maintaining baseline calm, optical overlay dormant until needed, subvocal communicator embedded beneath the jawline with no external indicators.",
+    "posture_movement": "Upright, economical gait, never hurried. Stands with weight distributed evenly, hands visible and relaxed. Eyes move constantly but without apparent anxiety — threat assessment is passive, automatic. Enters rooms slowly, positions himself with clear sight lines. Never fidgets. Never raises his voice. The physical language is: I have considered all outcomes.",
+    "clothing_style": "Tier 3 professional — clean, well-maintained, deliberately forgettable. Dark slacks or charcoal jeans. Neutral-toned button-up shirts (cotton, never synthetic — easier to move in, easier to clean). A grey wool coat for outdoor work, no logos, no augmentation bling. Shoes are quality leather boots, broken in, maintained. Everything is functional, nothing is fashionable. The aesthetic communicates: I am someone you can trust to handle the unglamorous work."
+  },
+  "image_prompt": "Vega Boateng-Kovalenko, a 178cm man of rich warm brown complexion with Sub-Saharan and Eastern European features, graying dark brown close-cropped hair, deep brown eyes with amber undertones. Clean-shaven, calm neutral expression. Wearing charcoal jeans and a neutral button-up shirt under a grey wool coat, quality leather boots. Standing with perfect postural control, weight balanced, hands relaxed and visible, eyes alert but passive. Faded white scar on left knuckle, subtle burn mark on right wrist visible. Subcutaneous augmentations only — no visible chrome. Great Lakes urban environment, cyberpunk 2226, cool daylight or neon interior lighting, moody atmospheric tone. Professional fixer aesthetic, the physical language of calculated readiness. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 51.9,
+    "Hispanic/Latin American": 22.0,
+    "Eastern European": 20.4,
+    "Middle Eastern": 5.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

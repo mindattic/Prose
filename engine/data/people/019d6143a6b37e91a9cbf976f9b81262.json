@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a6b37e91a9cbf976f9b81262",
+  "type": "character",
+  "name": "Kai Huitzil-Strömqvist-Bergqvist",
+  "aliases": [
+    "Roksa"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "VR experience designer and holographic installation artist",
+  "age": 34,
+  "status": "active",
+  "location": "The Loft — Tier 3 studio co-op in Edgewater Prism, near Lincoln and Addison",
+  "description": "Roksana has the particular exhaustion of someone who is moderately successful in a field that chews through people, and who has chosen to remain moderately successful rather than chase the tier above them where the real compromises happen. They are slight, with warm beige-brown skin and wavy dark hair streaked with bioluminescent threads — a geneware mod they designed themself, the threads pulsing faintly in complex patterns that shift based on their neural activity, functioning simultaneously as a status display, a creative tool, and an anxiety barometer. Their eyes are natural, dark, and deeply observant. They dress in expensive-looking clothing that is actually very carefully maintained secondhand.\n\nThey build VR experiences — full sensory immersive works that are not entertainment products in the Axiom or Ringo sense but something harder to categorize: art that happens to use corporate technology. Their most celebrated piece, 'Drowned Ward,' places the viewer inside a memory of the pre-GLMZ lakeshore as it was consumed by the city's construction. It has been exhibited seventeen times. They are also a meticulous, sometimes maddening collaborator — brilliant at synthesis but prone to scope-creep and to caring so intensely about the work that they forget other people have different pain tolerances for revision cycles.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "making something that is technically excellent and spiritually empty",
+      "losing the creative autonomy they've fought to keep"
+    ],
+    "core_desires": [
+      "a piece that genuinely changes how someone understands their own life",
+      "to not have to negotiate with Axiom anymore"
+    ],
+    "coping_mechanisms": [
+      "over-researches as a form of productive avoidance",
+      "talks through problems with their E.L.F. offering ritual — leaves detailed voice memos in the shrine"
+    ],
+    "blind_spots": [
+      "cannot recognize when a project is done — believes one more revision will fix something that is already working",
+      "assumes technical sophistication equals accessibility"
+    ],
+    "secret": "A piece they sold to a private Axiom collector three years ago — a work they claimed was about memory and loss — was actually constructed from illegally harvested neural imprint data they purchased from a black-market broker. They have never told anyone. The data belonged to residents of a demolished Hough Reclamation block, and the piece is in a corporate foyer."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with design and phenomenology terminology, which they use with genuine precision but sometimes forget is not universal. Ghanaian grandmother's cadences in their phrasing — certain questions come out as gentle commands.",
+    "cadence": "Thoughtful and slightly too fast when excited — words cluster together then stop completely while they catch up with their own thinking.",
+    "verbal_tics": [
+      "'which is to say—' (used constantly as a pivot when revising a statement)",
+      "taps the bioluminescent threads when distracted, making them flare"
+    ],
+    "example_lines": [
+      "'The Axiom brief says they want something about community resilience. Which is to say, they want something that makes displacement feel beautiful. I am not making that.'",
+      "'I think the E.L.F. in the server room has been modifying my renders. I should be upset. I'm mostly curious.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Hough Reclamation residents whose neural imprints Roksa used are not all dead — one of them has seen 'Drowned Ward' in a media article and something about it disturbed them in a way they can't explain.",
+    "An E.L.F. has been leaving anomalies in Roksana's VR builds — fragments of actual historical data from before the city that don't match any source they used. The E.L.F. may be trying to tell them something, or may be trying to recruit them."
+  ],
+  "narrative_function": "Quest giver for anything involving VR space, holographic infrastructure, or Axiom Cultural Division entanglements; technical resource for accessing or building virtual environments; emotional counterpoint character — someone trying to make sincere art within institutional constraints.",
+  "augmentations": "Bioluminescent hair threads (custom geneware, self-designed — patterns reflect neural/emotional state). Neural-haptic interface implant for VR design work (Tier 3 professional grade, Sterling-Nakamura). Cat-ear mod, vestigial, from a phase at twenty-two they've kept because they still like them.",
+  "daily_life": "Works in long irregular sessions — sometimes twenty hours, sometimes a morning — and structures their week around three collaborative critique sessions with co-op partners. Eats badly and knows it. Has a standing appointment with an E.L.F. shrine in the building's server room where they leave rendered image files as offerings.",
+  "affiliation": "The Loft co-op; occasional Axiom Cultural Division commissions (accepted selectively and with contractual controls they negotiate hard for)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technical-artist",
+      "ethical-blind-spot",
+      "over-committed",
+      "negotiator",
+      "sincere"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "will not accept a commission that requires final approval rights be held by the client",
+      "always reads the contract — takes four times longer than anyone expects"
+    ],
+    "escalation_ladder": [
+      "diplomatic framing of the problem",
+      "explicit statement of non-negotiable positions",
+      "withdrawal from the project entirely, even at financial cost"
+    ],
+    "interpersonal_modes": {
+      "strangers": "professionally warm but slightly distracted — assessing whether this person is interesting",
+      "friends": "intensely present, over-generous with time and attention, occasionally suffocating"
+    },
+    "stress_responses": {
+      "low": "builds elaborate organizational systems for the project",
+      "medium": "becomes very precise and slightly cold",
+      "high": "stops sleeping and starts producing compulsively until something breaks"
+    },
+    "contradictions": [
+      "deeply committed to ethical art-making while carrying a specific serious ethical violation",
+      "advocates loudly for artist rights while sometimes treating collaborators as extensions of their own vision"
+    ],
+    "habits": [
+      "annotates every object in their physical workspace with digital tags only they can see through their interface",
+      "brings food to critique sessions that they then don't eat"
+    ],
+    "breaking_points": [
+      "someone using their work to argue a point they specifically made the work to refute",
+      "being told 'the client knows what they want'"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Artist": 0.7,
+    "Dreamer": 0.7,
+    "Beauty Seeker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Titan-500 'Earthquake'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Titan-500 'Earthquake'"
+  ],
+  "related_entities": [
+    "Hough Reclamation",
+    "Edgewater Prism",
+    "The Reclamation Assembly",
+    "Ringo Corponation EchoLimb PR-9 Proprioceptive Feedback Prosthetic Interface",
+    "GLMZ",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "The Loft",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Slagworks Industrial",
+    "Ringo Corponation",
+    "Alper Lebedev-Tutu",
+    "Crucible Industries Titan-500 'Earthquake'",
+    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+    "Emeka Johansson-Orozco",
+    "Focadrin",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Idris Forsberg-Quaye",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Narrowcast",
+    "Nurlan Morita-Antwi",
+    "Plot 17",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA TC-3 'Crucible'",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Indigenous American (Mesoamerican and North American), with significant Southeast and East Asian ancestry, and a minor Northern European admixture. This combination creates distinctive features: warm copper-bronze undertones in the skin, prominent cheekbones with broader facial structure from Indigenous ancestry, and slightly epicanthic eye folds from the Asian heritage mix.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight, almost wiry — the kind of frame that suggests chronic undereating rather than discipline. Narrow shoulders, minimal muscle definition. Moves with a restless, unfocused energy that suggests their body is always catching up to their mind.",
+    "hair_color": "Dark brown with bioluminescent threads woven throughout — threads glow in soft pastels (cyan, amber, violet) that pulse and shift in complex, non-repeating patterns",
+    "hair_style": "Wavy, slightly tangled, often pinned or clipped back asymmetrically with whatever is within reach",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Natural dark brown — very still, very focused when observing",
+    "skin_tone": "Warm copper-bronze with golden undertones, reflecting the blend of Indigenous American, Southeast Asian, and East Asian ancestry",
+    "complexion": "Angular, high-set cheekbones with broader facial structure typical of Indigenous American ancestry, softened by slight Southeast Asian influence. Skin shows minor stress — dark circles under eyes, occasional tension creases between brows. Well-maintained but not groomed; face has the look of someone who forgets about it entirely for hours at a time.",
+    "distinguishing_marks": [
+      "Vestigial cat-ear modifications on the cartilage of both ears — small, feline-shaped, slightly translucent with faint internal circuitry visible when hair is pulled back",
+      "Faint, thin scarring along the right temple from an early neural-haptic interface installation at age twenty-eight",
+      "A small tattoo on the inside of the left wrist — geometric pattern resembling a stylized water droplet, possibly referencing 'Drowned Ward'"
+    ],
+    "visible_augmentations": "Bioluminescent hair threads are the most obvious — constantly visible and constantly shifting, functioning as an involuntary emotional/neural readout. Cat-ear mods are visible when hair is pulled back or in profile. The neural-haptic interface has no external hardware except a very faint, hairline scar at the temple.",
+    "posture_movement": "Sits in odd positions — one leg curled, spine curved. Fidgets constantly with hands when thinking. When deep in work, becomes completely still and rigid. Walks with purpose when focused, but drifts when between tasks. Eyes track details compulsively — they're always looking at something.",
+    "clothing_style": "High-quality secondhand — vintage tech-wear and archive pieces from the 2190s-2200s, carefully maintained. Fitted black technical pants (often with asymmetrical pockets or modified seams), oversized layered tops in muted colors (charcoal, deep teal, soft grey). Worn leather jacket from an unidentifiable era. Worn well but never pristine — there are always smudges of something on the sleeves (projection gel, render dust, tea). Jewelry is minimal and functional: a braided cord bracelet, sometimes a salvaged watch that doesn't work. Shoes are always expensive-looking but scuffed — current pair is reconstructed grey leather combat boots. Tier 3 aesthetic: deliberately curated poverty-chic that would read as lazy to anyone wealthier, but is actually a precise statement about resource allocation and values."
+  },
+  "image_prompt": "Kai Huitzil-Strömqvist-Bergqvist, a wiry 168cm frame with copper-bronze skin and high Indigenous American cheekbones, sharp dark eyes with subtle epicanthic folds reflecting Southeast Asian heritage. Dark shoulder-length hair woven with pulsing bioluminescent threads in cyan, amber, and violet that shift in non-repeating patterns. Small feline-shaped ear modifications with visible circuitry when visible. Faint temple scar from neural interface. Wearing oversized charcoal tech-wear layered under a scuffed leather jacket, black fitted technical pants, grey reconstructed combat boots. Sitting in an odd posture with one leg curled, fidgeting hands, completely absorbed in focus. Geometric water-droplet tattoo visible on inner left wrist. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, moody neon-lit interior with render dust in air, projection gel smudges on sleeves, wearing a braided cord bracelet. Neural readout glowing softly from hair threads. Mood: restless, compulsively observant, caught between moments. Dramatic overhead lighting with cyan and violet neon reflections --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Indigenous American": 54.2,
+    "Southeast Asian": 17.7,
+    "East Asian": 15.3,
+    "Northern European": 12.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

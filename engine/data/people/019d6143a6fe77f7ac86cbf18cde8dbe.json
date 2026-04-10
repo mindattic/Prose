@@ -1,0 +1,312 @@
+{
+  "id": "019d6143a6fe77f7ac86cbf18cde8dbe",
+  "type": "character",
+  "name": "Kai Subramaniam-Halverson",
+  "aliases": [
+    "Tobi Pap",
+    "the Book"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "bookmaker and numbers runner",
+  "age": 22,
+  "status": "active",
+  "location": "The Narrows, running between Chatham Flats and Grand Crossing Gate, near Ashland and Division",
+  "description": "Tobi is young in a way that still surprises people when they see the operation he runs — twenty-two with the face of someone seventeen if he's relaxed and thirty if he's working, a long-limbed Igbo-Greek-Hungarian mix with deep brown skin, an expressive mouth that defaults to a salesperson's easy grin, and eyes that are doing financial calculations behind whatever expression he's performing. He keeps his hair grown out into a soft cloud that he touches when thinking, and he has purely cosmetic cat ears in deep amber — a mod he got at sixteen and still maintains because they genuinely help him gauge crowd mood at events (they swivel toward sound, a secondary function the modder threw in for free). He dresses up — always, even when it's unnecessary, because he understood early that clothes are information.\n\nTobi runs numbers for the Chatham Flats syndicate and manages his own secondary book on the side, a fact the syndicate suspects but hasn't confirmed. He is fast — fast with numbers, fast with people, fast with exits — and he has the particular gift of making everyone feel like his most valued client while simultaneously extracting the maximum from them. He is not cynical about this; he genuinely likes people, the way a card player likes cards. He is also genuinely frightened, most of the time, because he is twenty-two and running credit for people who will break his hands if the math goes wrong, and the math going wrong is always one bad fight result away.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.8,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "the syndicate discovering his secondary book before he's big enough to buy his independence",
+      "being physically hurt — he has a deep and specific fear of pain he considers shameful"
+    ],
+    "core_desires": [
+      "to be independent — his own operation, nobody's employee",
+      "to be genuinely respected rather than liked, which he suspects are different things"
+    ],
+    "coping_mechanisms": [
+      "charm and humor as deflection",
+      "constant motion — if he's moving he feels safer",
+      "compulsive probability calculation applied to all situations including social ones"
+    ],
+    "blind_spots": [
+      "underestimates how much people like him versus respect him, and how that gap could be exploited",
+      "believes his math is always right even when his data is wrong"
+    ],
+    "secret": "He has been quietly skimming the Chatham syndicate's book by fractional rounding errors — fractions too small to notice individually, substantial over volume — and has accumulated nearly Φ4,000 in a hidden account he intends to use as seed money to go independent"
+  },
+  "speech_patterns": {
+    "vocabulary": "quick and street-inflected, numerical metaphors everywhere, mixes Igbo terms of address with Greek exclamations he picked up from his yiayia",
+    "cadence": "fast, overlapping itself, ideas arriving faster than sentences can contain them",
+    "verbal_tics": [
+      "'The line is the line, yeah?'",
+      "re-explains odds even when nobody asked",
+      "'Malakas, that's not how probability works'",
+      "calls everyone 'boss' regardless of actual hierarchy"
+    ],
+    "example_lines": [
+      "'Look, I'm not saying the Ironvein Rippers can't win — I'm saying at these odds, your Φ20 bet needs them to win, not just not lose badly, you feel the difference? You want that action or do you want to make money?'",
+      "'Boss, I like you, which is why I'm telling you — take the under. The line's wrong and I know why and I can't tell you why but trust the math.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A result was fixed without Tobi being told — he took heavy action on the wrong side and now owes the syndicate more than he has, and the skimmed account is his only way out, which means his secret comes out",
+    "He has accidentally taken a bet from someone who cannot lose — a Tessera corp-sec captain who will make the result come out correctly regardless of what happens — and now Tobi knows something dangerous"
+  ],
+  "narrative_function": "Information source (knows who owes who across the Narrows criminal economy), local color, potential quest giver when his secondary book gets him in trouble, comic-tragic figure of young ambition overreaching",
+  "augmentations": "Cosmetic cat ears (amber, sound-swivel enabled), subdermal quick-calc implant for rapid probability calculation, retinal display overlay for live odds management",
+  "daily_life": "Spends mornings collecting prior-day settlements and making payouts across a circuit of Chatham Flats to Grand Crossing Gate; afternoons taking new action; evenings at whatever venue has the highest-traffic betting event — fights, racing, corporate sports feeds.",
+  "affiliation": "Chatham Flats syndicate (numbers runner, salaried), independent secondary book (unsanctioned)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 4,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fast-talker",
+      "ambitious",
+      "secretly-terrified",
+      "probability-obsessed",
+      "overreaching"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "always know two exits from every room",
+      "never extend credit past what he can personally absorb — except when he does",
+      "keep everyone feeling good even when delivering bad news"
+    ],
+    "escalation_ladder": [
+      "charm and redirection",
+      "invoking syndicate backing as implied threat",
+      "running — literal physical running",
+      "desperate negotiation while running"
+    ],
+    "interpersonal_modes": {
+      "strangers": "immediate warmth, quick read, tailored pitch within thirty seconds",
+      "friends": "genuinely warmer but still performing, has difficulty switching off"
+    },
+    "stress_responses": {
+      "low": "talks faster and funnier",
+      "medium": "goes very still and very quiet, which frightens people who know him",
+      "high": "makes a joke that doesn't land and then looks genuinely young and scared"
+    },
+    "contradictions": [
+      "presents as fearless risk-taker while being privately terrified of pain and confrontation",
+      "insists he's loyal to the syndicate while systematically stealing from them"
+    ],
+    "habits": [
+      "touches his cat ears when calculating something difficult",
+      "mentally runs odds on every conversation as it happens",
+      "changes outfit at least twice daily"
+    ],
+    "breaking_points": [
+      "physical violence directed at him specifically",
+      "someone he genuinely cares about being used as leverage against him"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cosmetic cat ears — amber, with active sound-swivel",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cosmetic cat ears — amber, with active sound-swivel",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal quick-calc implant — probability calculation assist",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal quick-calc implant — probability calculation assist",
+      "replaces": ""
+    },
+    {
+      "name": "Retinal display overlay — live odds management interface",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retinal display overlay — live odds management interface",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178: Born in Chatham Flats, third child of an Igbo-Greek transport worker and a Hungarian-descent market vendor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194: Began as a street-level numbers runner for the Chatham syndicate at 16",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197: Promoted to independent circuit manager, given his own collection route",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199: Quietly opened secondary book using fractional skimming proceeds as float",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Current — managing escalating risk as secondary book grows and skimming total approaches dangerous threshold",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Chatham Flats",
+    "The Blackout Syndicate",
+    "The Narrows Compact",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Amygdacet",
+    "Auricula Felis Modification",
+    "Aïssé Dragomirescu-Faalelei",
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Corva Lam",
+    "Ezio Kaboré-Malhotra",
+    "Flicker",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Lazarus LX-2 'Lab Rat'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Mika Sorel",
+    "NeuralPath CalcCore Arithmetic Co-Processor",
+    "Nnamdi Ostrowski-Faletolu",
+    "Oluwatobi Czerwiński-Faleolo",
+    "Pirjo Asante-Ulukhan",
+    "Plot 17",
+    "Ringo Corponation Haptic Signature Recorder",
+    "Slagworks Industrial",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Narrows",
+    "The Skinners"
+  ],
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "South Asian (predominantly Tamil/Telugu with Punjabi influence) and Southeast Asian (Vietnamese/Thai blend); the genetic mixture creates a striking intermediate phenotype — warm brown skin with subtle golden undertones characteristic of the Indian subcontinent meeting the softer facial geometry of Southeast Asia",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Long-limbed and lean with minimal muscle definition; the physique of someone who moves constantly but doesn't lift — all angles and nervous energy, built for speed and slipping through crowds rather than standing ground",
+    "hair_color": "Natural dark brown with slight reddish undertone",
+    "hair_style": "Soft, voluminous natural cloud; kept deliberately untamed, often touched unconsciously when concentrating or calculating",
+    "hair_length": "Medium (8-10cm when fully grown out)",
+    "eye_color": "Deep brown with faint retinal display overlay visible as subtle iridescent shimmer in bright light",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones; the blended result of South Asian and Southeast Asian heritage creating a complexion that shifts subtly between amber and honey depending on light angle",
+    "complexion": "Youthful face with slightly softer cheekbone structure (characteristic of Southeast Asian ancestry) balanced by the defined jawline from South Asian heritage; expressive mouth and bright, calculating eyes; skin clear and well-maintained (grooming is part of his professional presentation); a softness around the eyes that contradicts the calculating sharpness behind them when he's working",
+    "distinguishing_marks": [
+      "Cosmetic amber cat ears mounted subdermal at temples, fully articulated and sound-reactive; they swivel independently toward noise sources",
+      "Faint scar tissue along left inner wrist from early implant installation (subdermal quick-calc), barely visible but noticeable up close"
+    ],
+    "visible_augmentations": "Amber cat ears are immediately obvious and intentional; retinal display overlay only visible in certain lighting angles as a faint iridescent flicker. The subdermal quick-calc implant is completely invisible.",
+    "posture_movement": "Constantly in motion — fidgeting, weight shifting, fingers moving through rapid counting gestures even when empty-handed. When relaxed, he appears seventeen: slouched, open-faced, boyish. When working, his spine straightens, his expression hardens into focused calculation, and he appears five to ten years older. His movements are fluid and economical; he never wastes motion but creates the impression of casual ease.",
+    "clothing_style": "High-tier Chatham Flats casual: tailored but not formal. Recent Φ2,400-3,200 investment pieces — smart-fabric shirts that shift subtle iridescence, fitted synthlinen slacks in charcoal or deep blue, vintage leather blazers from early-2200s stock (a status marker in the Narrows). Always wears a chain bracelet of mixed metals (gold, silver, chrome) — a gift from his first major score, never removed. Shoes are always pristine: current rotation is high-end synth-leather street runners in black or deep gray. The overall effect is carefully curated to signal: young, successful, trustworthy, and smart enough to know how much to spend without looking desperate."
+  },
+  "image_prompt": "Kai Subramaniam-Halverson, 183cm lean cyberpunk hacker in mid-2220s, warm golden-brown South Asian-Southeast Asian complexion, natural dark brown voluminous hair, deep brown eyes with subtle retinal display shimmer, articulated amber cat ears mounted at temples swiveling alertly. Wearing tailored smart-fabric iridescent shirt, charcoal synthlinen slacks, vintage early-2200s leather blazer, pristine black synth-leather runners, mixed-metal chain bracelet. Boyish relaxed posture transitioning to sharp calculating focus, fidgeting hands, nervous energy barely contained. High-end Narrows aesthetic, Great Lakes Metropolitan Zone neon-lit evening, moody cyan and amber ambient lighting catching skin tone warmth and ear luminescence, sitting at sleek terminal workstation, professional but youthful and approachable, cyberpunk 2226 --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 46.9,
+    "South Asian": 45.8,
+    "East Asian": 7.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

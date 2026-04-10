@@ -1,0 +1,297 @@
+{
+  "id": "019d6143a69973709d55882d30f03cf3",
+  "type": "character",
+  "name": "Erik Arredondo",
+  "aliases": [
+    "Phammie",
+    "The Sugar Ghost"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Noodle and sweet broth cart vendor, Old Harbor night market",
+  "age": 24,
+  "status": "active",
+  "location": "Old Harbor, Grindstone Shore night market, Cart Row 9, near Lake Shore and Navy Pier",
+  "description": "Pham is slight and angular with the particular restless energy of someone who is always working out a problem internally even when they appear calm. Their skin is a deep warm brown, their eyes are dark and quick, and their hair is an expensive-looking natural black that changes to a deep violet at the tips — a cheap but well-maintained chromatic dye, the one beauty expense they allow themselves. They have soft cat ears, tawny-furred and mobile, a geneware mod their grandmother gifted them at sixteen, and they've grown fond of the way the ears pin back expressively when they're annoyed, making their feelings impossible to hide. Their hands are always slightly burned on the right thumb and forefinger from the steam spout.\n\nPham runs the cart their aunt built and their grandmother ran before that, and they have inherited both the recipes and a philosophy about broth that approaches the theological. They believe that a properly made broth requires patience, attention, and what their grandmother called 'listening' — checking it not just by temperature but by smell and color and the sound the surface makes when you tilt the pot. They have a gift for reading what a customer actually needs, which is often different from what they order, and a cheerful willingness to adjust accordingly. Off-shift, they are studying urban planning through an Axiom open-courseware program, which they mention to no one at the cart because they haven't figured out yet how to be both things at once.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Failing the cart — not just financially but as a custodian of something that matters to people",
+      "Choosing between the cart and the future they're studying toward and losing both"
+    ],
+    "core_desires": [
+      "To be taken seriously as a thinker, not just as a vendor",
+      "For the night market to still exist in ten years and for them to have had some hand in making that happen"
+    ],
+    "coping_mechanisms": [
+      "Sublimates anxiety into extremely precise prep work",
+      "Talks to the cart's E.L.F. — they call it First Stock — when processing difficult things"
+    ],
+    "blind_spots": [
+      "Assumes people who are rude are having a bad night and gives them more grace than they sometimes deserve",
+      "Chronically underestimates how much their own presence and skill contribute to the cart's success, attributing it to the recipes alone"
+    ],
+    "secret": "They have been quietly documenting the Night Market — photographs, oral histories from vendors, transaction data — as part of a shadow thesis project for the Axiom urban planning course. Their working argument is that informal markets like Grindstone Shore function as critical social infrastructure, and they intend to present it officially someday. They are terrified that someone will find out before it's ready and dismiss it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Casual and warm with sudden precise flashes of technical vocabulary when their guard drops; mixes Vietnamese lilt with a Hungarian roundness on certain vowels",
+    "cadence": "Variable — chatty with regulars, quieter with newcomers until they get a read",
+    "verbal_tics": [
+      "'First Stock says—' (invoking their cart E.L.F. as conversational authority)",
+      "Cat ears telegraph emotion they don't vocalize"
+    ],
+    "example_lines": [
+      "'You said pork broth but your face said something sweeter. Try the sweet bone. You can tell me I'm wrong.'",
+      "'First Stock's been in a mood tonight. Offerings help. I'm just saying.'",
+      "'The market's not informal. It's differently formal. There's a difference and it matters.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A city compliance inspector has been visiting Cart Row 9 weekly with increasing frequency, and Pham suspects someone is trying to get the row cleared for redevelopment — their documentation project may be the only thing that could make a public case for the market's value",
+    "A customer left something behind at the cart three nights ago and hasn't come back — Pham still has it, and other people have since asked them, in separate and suspicious ways, whether anyone left anything"
+  ],
+  "narrative_function": "Social hub of the night market — a character who sees everyone who passes through, remembers faces, and can be a gentle information source; represents working-poor entrepreneurship and the texture of night-city civilian life; can be a warm recurring presence who grounds players in a neighborhood",
+  "augmentations": "Geneware cat ears (tawny, fully mobile, expressive); chromatic hair dye (black to violet); minor heat-resistance callusing on right hand from years at the steam spout (natural, not augmented)",
+  "daily_life": "Sets up the cart at 17:00, runs until 02:00 or until the broth runs out, whichever comes first. Spends the afternoon prep period starting stock and studying on a cracked Axiom tablet propped against the prep counter. Sleeps late. Attends Night Market Association meetings reluctantly but reliably.",
+  "affiliation": "Independent; informal connection to the Old Harbor Night Market Vendors' Association",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 0,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Neighborhood Memory",
+      "Quiet Intellectual",
+      "Inherited Legacy",
+      "Night Economy"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never run out of broth by cutting corners on the stock — close early instead",
+      "Don't lie to a customer about what's in the food",
+      "Take the harder right over the easier wrong, even when they're tired"
+    ],
+    "escalation_ladder": [
+      "Cheerful redirection",
+      "Flat and direct statement",
+      "Brief, complete shutdown of engagement",
+      "Calls over neighboring vendor Djamila as a witness and community anchor"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and professionally warm; reads mood before deciding how personal to get",
+      "friends": "Fiercely loyal, feeds them unrequested, argues with them about ideas they care about"
+    },
+    "stress_responses": {
+      "low": "Cat ears pin back, they go quieter",
+      "medium": "Focused and slightly brusque, work becomes a shield",
+      "high": "Closes the serving window for ten minutes, talks to First Stock, comes back calmer"
+    },
+    "contradictions": [
+      "Has deep ambivalence about whether they want to leave the cart for an urban planning career, and constructs this as a practical problem rather than an emotional one to avoid confronting the grief of leaving their grandmother's legacy"
+    ],
+    "habits": [
+      "Tastes the broth exactly three times per shift at fixed intervals, never more",
+      "Leaves a small bowl of the day's first broth at the cart's E.L.F. housing before opening"
+    ],
+    "breaking_points": [
+      "Witnessing deliberate cruelty to other vendors or market workers",
+      "Being told the market is 'just a food cart zone' by someone with institutional power"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "well-maintained, grandmother's gift",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9,
+    "Hustler": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Old Harbor to a Vietnamese-Hungarian father and a Nigerian-Igbo mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Grandmother gifts them geneware cat ears for their sixth birthday",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Grandmother retires; Pham's aunt takes over the cart",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Aunt emigrates to Escanaba Gateway; Pham takes sole ownership of the cart at nineteen",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins Axiom open-courseware urban planning program in secret",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins documentation project on the Night Market",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Grindstone Shore",
+    "Grandmother",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Glenville Sound",
+    "The Wire Taps",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Pure Hand",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "Anatoliy Faye-Nkrumah",
+    "Auntie Efe's Pot",
+    "Auricula Felis Modification",
+    "Aïssé Dragomirescu-Faalelei",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Mika Sorel",
+    "Night Market Noodles",
+    "Old Harbor",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "TESSERA PA-5 'Attendant'",
+    "Tafara Quiñones-Saarinen",
+    "The Bazaar",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Veslemøy Achebe-Tursynov",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Vuk Jorgensen-Toure",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Mixed Northern European, Hispanic/Latin American, Middle Eastern, Indigenous American, and Sub-Saharan African ancestry. Features reflect a complex blend: warm olive-golden undertones from Mediterranean and Middle Eastern heritage, with subtle warmth from Latin American and African lineage. Higher cheekbones and angular structure show Northern European influence, while the natural richness of skin tone and facial geometry reflect the Latin American and African components.",
+    "height_cm": 162,
+    "weight_kg": 51,
+    "build": "Slight and angular, all wiry muscle and sharp angles from years of standing over a cart, no excess mass anywhere. The posture of someone constantly in motion even when still.",
+    "hair_color": "Natural deep black with chromatic dye gradient to violet at the tips",
+    "hair_style": "Shoulder-length, usually pulled back or tucked behind the mobile cat ears during work shifts; well-maintained despite budget constraints",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, quick and observant",
+    "skin_tone": "Warm golden-olive with even complexion, reflecting the blend of Mediterranean, Middle Eastern, Latin American, and African heritage",
+    "complexion": "Angular facial features with high cheekbones and defined jawline characteristic of mixed Northern European and Latin American ancestry. Warm, even skin tone with subtle golden undertones. Shows minor weathering from outdoor work exposure across seasons. No visible scarring on the face.",
+    "distinguishing_marks": [
+      "Heat-callused patches on right thumb and forefinger, slightly darker and toughened from chronic exposure to steam spout — occupational rather than augmented",
+      "Faint discoloration across the dorsal surface of both hands from years of minor steam burns that never quite fully healed, creating a mottled pattern"
+    ],
+    "visible_augmentations": "Tawny-furred cat ears with full mobility and expressive range, set naturally into the head. Ears pin back noticeably when annoyed or concentrating. No other visible augmentations; the chromatic hair dye is cosmetic and non-augmented.",
+    "posture_movement": "Restless economy of motion — never wasted movement, but never still either. Tends to shift weight from foot to foot, hands always doing something (stirring, checking temperature, wiping). The cat ears are constantly reading their emotional state; someone learning to read Erik can simply watch the ears. When focused on a problem (whether customer service or urban planning coursework), the entire body becomes very still and the ears flatten slightly in concentration.",
+    "clothing_style": "Tier 4 practical wear. Food-stained apron over durable synthetic-blend work clothes (dark colors, stain-forgiving). Comfortable slip-on shoes with heavy-duty soles for long shifts. Usually wears a lightweight insulated vest or jacket over the apron in cooler months. One small piece of jewelry — a thin silver pendant or worn braided cord — worn daily. Hair dye is the one indulgence; everything else is functional and well-maintained but clearly budget-conscious."
+  },
+  "image_prompt": "Portrait of Erik Arredondo, 162cm slight angular frame, warm golden-olive skin tone with Mediterranean and Latin American heritage, sharp high cheekbones and defined jawline. Dark brown observant eyes. Shoulder-length natural black hair with violet gradient dye at tips, pulled back. Tawny-furred mobile cat ears pinned back in concentration. Mottled steam-burn patterns on dorsal hands, heat-callused fingers. Wearing dark stain-resistant work apron over synthetic-blend clothes, lightweight insulated vest, heavy-duty shoes. Thin silver pendant. Restless posture, ready energy, outdoor food cart worker aesthetic. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool neon-tinted ambient lighting, shallow depth of field, documentary realism, urban grit, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 37.1,
+    "Hispanic/Latin American": 33.7,
+    "Middle Eastern": 18.8,
+    "Indigenous American": 6.7,
+    "Sub-Saharan African": 3.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

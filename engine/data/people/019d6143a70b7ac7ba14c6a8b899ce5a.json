@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a70b7ac7ba14c6a8b899ce5a",
+  "type": "character",
+  "name": "Lark Ibarra-Fredriksen-Sefanaia",
+  "aliases": [
+    "Temi",
+    "TM16"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "gene-mod body artist and tattoo artist",
+  "age": 19,
+  "status": "active",
+  "location": "Hamtramck Enclave — works out of a studio called 'Derma' on the Enclave's main commercial strip, near Halsted and Chicago Ave",
+  "description": "Tèmítọpẹ is nineteen and operates at the velocity of someone who knows they are good and cannot wait for the world to confirm it. She is compact and energetic, her dark skin extensively modified with her own work: bioluminescent subcutaneous patterns run from her collarbones to her wrists in interlocking Yoruba adinkra symbols and Polynesian wave-forms, her Māori grandfather's heritage made literal on her body, the two visual languages coexisting in something that is recognizably neither and entirely her own. She has retractable claw mods on her right hand — practical for fine-work and also, she admits, because they look excellent — and her irises are modified to display the Enclave's coordinates in tiny glowing text, a joke that is also a statement of belonging.\n\nShe apprenticed at Derma at fifteen, doing cleanup and equipment sterilization. By seventeen she was doing bioluminescent pattern work. Now she is the reason people come to Derma specifically — her reputation spreading through the Hamtramck Enclave's dense social networks faster than she can accommodate the demand. She is brash and funny and has opinions about everything, delivered with the cheerful certainty of someone who has not yet been wrong enough times to become cautious. She is also, underneath the performance of confidence, deeply serious about her craft in a way she rarely lets people see directly.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "that her talent is real but not enough — that she will hit a ceiling she cannot skill her way through",
+      "losing the Enclave as a home to slow gentrification or corporate rezoning"
+    ],
+    "core_desires": [
+      "to design a gene-mod that becomes culturally significant — something that enters the visual language of the city",
+      "for her parents (both mid-tier corporate, both skeptical of her path) to see what she's built"
+    ],
+    "coping_mechanisms": [
+      "redirects anxiety into work — books herself solid when afraid",
+      "uses humor as a firewall against vulnerability"
+    ],
+    "blind_spots": [
+      "believes charm and skill can navigate situations that actually require patience and political understanding",
+      "does not take seriously the Helix Biosystems certification entanglement she's in"
+    ],
+    "secret": "She has been secretly developing an unlicensed bioluminescent geneware mod — a pattern that responds to specific emotional states rather than just ambient neural activity — using a combination of pirated Helix code and original synthesis. It works. It is also completely illegal, and if Helix Biosystems discovers it they will own it under her certification contract."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, dense with Hamtramck Enclave slang and Yoruba expressions she uses as punctuation. Switches to precise technical language when discussing the work — the register-shift is startling.",
+    "cadence": "Rapid-fire in conversation, with overlapping ideas. Slows down completely when she's being serious, which is the tell.",
+    "verbal_tics": [
+      "'I'm not even joking' (said when she is 100% joking)",
+      "'okay but technically—' (when correcting something she cares about)"
+    ],
+    "example_lines": [
+      "'Helix wants me to pay licensing fees on work I designed myself with techniques they've never published. Okay but technically that means I invented something they haven't, which, yes.'",
+      "'Every piece I put on someone is a conversation between where they're from and where they're going. I'm not a printer. I'm a translator.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Her unlicensed emotional-response geneware mod has been noticed — a client posted a discreet video of the pattern responding to grief at a funeral and it has attracted attention from a Helix Biosystems IP enforcement agent who is now quietly investigating who did the work.",
+    "Someone came into Derma asking for a specific pattern that Temi recognized immediately — it's a marking used by a network she's heard rumors about, and the client insisted it was 'just aesthetic.' She did the work and now she's not sure."
+  ],
+  "narrative_function": "Social connector — knows everyone young in the Enclave and most people who move through it; access point for geneware information and modification services; represents the generation that has grown up entirely inside GLMZ's reality; can be quest giver for anything touching the Enclave's community politics.",
+  "augmentations": "Extensive self-applied bioluminescent subcutaneous patterns (own work). Retractable claw mods on right hand (function and aesthetics). Coordinate-display iris mods. Scent gland enhancement — she chose a specific compound she describes as 'like the Enclave smells when it rains.'",
+  "daily_life": "Opens Derma at noon, works clients until 20:00, spends evenings with a rotating group of Enclave peers, researches new geneware techniques late at night on pirated Helix Biosystems technical manuals she's compiled over four years.",
+  "affiliation": "Derma studio (Hamtramck Enclave); loose affiliation with Helix Biosystems through their licensed geneware supply chain — she is technically a certified Helix applicator, which she finds both useful and ideologically uncomfortable",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "enclave-rooted",
+      "legally-entangled",
+      "performer",
+      "quietly-serious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never applies a modification she hasn't researched thoroughly — the bravado stops at the skin",
+      "always gets explicit consent for design choices, even minor ones"
+    ],
+    "escalation_ladder": [
+      "joke that also makes the point",
+      "direct statement without the joke",
+      "becomes very still and very cold — the humor vanishes completely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "performs confidence and warmth — genuine but amplified for first contact",
+      "friends": "drops the performance, is funnier and more uncertain and more real"
+    },
+    "stress_responses": {
+      "low": "gets louder and funnier",
+      "medium": "books more clients, works more hours",
+      "high": "goes completely quiet and disappears into research mode for 48 hours"
+    },
+    "contradictions": [
+      "performs certainty while secretly consuming technical documentation obsessively because she is terrified of being caught inadequate",
+      "advocates for body autonomy while being contractually entangled with a corporation that owns the tools she uses"
+    ],
+    "habits": [
+      "sketches designs on her own arms with a washable stylus while thinking",
+      "greets the E.L.F. she believes inhabits Derma's autoclave with a specific three-tap ritual before starting any session"
+    ],
+    "breaking_points": [
+      "someone treating a client's modification as a novelty or joke",
+      "Helix Biosystems claiming credit for or ownership of her work"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Helix Biosystems",
+    "The CEO",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Chimera-Null",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Carrion Defense Works",
+    "Gravimetric Collapse Charge GCC-9",
+    "Slagworks Industrial",
+    "Chicago",
+    "Aybek Sato-Poku",
+    "Dragan Petersen-Bah",
+    "GLMZ",
+    "Orhan Dlamini-Kurikka",
+    "Philibert Mwangi-Djordjevic",
+    "Plot 17",
+    "PulsePoint MoodGlyph Affective Display Implant",
+    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
+    "Temitán Asabere-Zubkov",
+    "The Flood Register",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American (41.1%) with East Asian (27.1%), Pacific Islander (16.8%), Northern European (7.7%), and Middle Eastern (7.3%) ancestry. Genetic mosaic creates warm-toned skin with subtle golden undertones and a youthful, open expression. Features blend high cheekbones and almond-shaped eyes from East Asian heritage with broader nose bridge and fuller lips from Latin American and Pacific Islander mix. Overall phenotype: warm-brown complexion with balanced feature proportions reflecting the dominant but diverse ancestry.",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, muscle definition visible in forearms and shoulders from precision handwork. Low body fat. Moves with economical grace — no wasted motion.",
+    "hair_color": "Natural black with deep indigo undertones, color-shifted by bioluminescent pattern bleed",
+    "hair_style": "Closely braided in geometric patterns; often worn in a high crown with loose synthetic extensions threaded through",
+    "hair_length": "Medium (braids reach mid-back)",
+    "eye_color": "Dark brown base with embedded coordinate display — tiny cyan glowing numerals (latitude/longitude) visible in iris under low light",
+    "skin_tone": "Warm medium-brown with golden and olive undertones reflecting the blended ancestry of Latin American, East Asian, and Pacific Islander heritage",
+    "complexion": "Clear, youthful. High cheekbones with gentle width across face from diverse ancestry. Skin has a faint luminescent quality from subcutaneous work. Minimal scarring. Expression typically animated — eyebrows mobile, smile quick. Eyes have subtle epicanthic fold from East Asian component. Hands show fine calluses and occasional minor chemical burns from geneware handling.",
+    "visible_augmentations": "Retractable claw mods on right hand (4cm bone-white carbide tips, housed under normal nail beds; extends with visible finger joint articulation). Coordinate-display irises visible only under direct light or eye contact. Subcutaneous bioluminescent patterns visible across exposed skin — active in low light, dormant in bright daylight. Faint iridescent sheen to skin under certain angles from pigment suspension.",
+    "distinguishing_marks": [
+      "Extensive bioluminescent subcutaneous patterns across collarbones, shoulders, and both wrists in interlocking Yoruba adinkra symbols (wisdom knots, strength glyphs) and Polynesian wave-forms in pale cyan and deep indigo that glow softly in darkness",
+      "Radial scar pattern on right inner forearm (3cm long, faint) from first failed claw mod installation at age 16",
+      "Chemical burn mark on left palm, barely visible, shaped like a droplet — 'proof of concept' from early bioluminescent pigment testing"
+    ],
+    "posture_movement": "Stands and sits slightly forward-leaning, as if always mid-thought. Hand gestures precise and economical. Right hand frequently unconsciously extends/retracts claws during conversation. Walks with quick, confident stride. Eyes track details obsessively — color palettes, symmetry, proportion.",
+    "clothing_style": "Tier 3-4 hybrid. Favors sleeveless or minimal-sleeve tops to showcase arm work (often custom-fitted, tailored pieces from Enclave makers). High-waisted cargo pants or modified coveralls in matte synthetics with visible utility pockets and tool loops. Reinforced leather gloves for client work, often removed and worn loose around wrists. Heavy-soled boots suitable for standing 8+ hours. Minimal jewelry — her body is her ornament. Occasional Helix Biosystems branded gear (hoodies, base layers) worn ironically. Scent is distinctive: rain-ozone-metal baseline from scent gland mod, often overlaid with bioluminescent pigment solvent."
+  },
+  "image_prompt": "Lark Ibarra-Fredriksen-Sefanaia, cyberpunk 2226, compact 158cm wiry frame with warm golden-brown skin blending Hispanic, East Asian, and Pacific Islander heritage. Natural black hair with indigo shift in geometric braids worn in high crown. Dark brown eyes with glowing cyan coordinate display visible in low light. Sleeveless custom top showcasing extensive bioluminescent subcutaneous patterns in cyan and indigo — interlocking wisdom knots and wave-forms across collarbones, shoulders, wrists. Right hand with retractable bone-white carbide claws extended mid-gesture. High-waisted cargo pants, reinforced boots, minimal jewelry. Hands show fine calluses and chemical burn marks from geneware work. Forward-leaning posture, precise economical movements. Faint iridescent skin sheen in moody cyberpunk workspace lighting — neon ambient with shadows emphasizing bioluminescent patterns. Rain-ozone-metal scent suggested by atmospheric mist. Helix Biosystems aesthetic. Youthful animated expression, observant gaze. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 41.1,
+    "East Asian": 27.1,
+    "Pacific Islander": 16.8,
+    "Northern European": 7.7,
+    "Middle Eastern": 7.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

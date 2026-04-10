@@ -1,0 +1,340 @@
+{
+  "id": "019d6143a70978d382a0a79708843831",
+  "type": "character",
+  "name": "Esperanza Cisneros-Karunaratne",
+  "aliases": [
+    "Valence",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Target acquisition and fugitive recovery — bounty hunter",
+  "age": 34,
+  "status": "active",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Fullerton and Damen",
+  "description": "Tui Fedorov-Ampofo are compact and densely muscled, built low to the ground like something designed to survive impacts. At 34, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a bounty hunter out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Tui Fedorov-Ampofo describe them as a precision instrument — point them at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.84,
+      "id": 0.43,
+      "shadow": 0.56,
+      "mask": 0.21,
+      "ghost": 0.48
+    },
+    "core_fears": [
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "To find the person who burned them and make it educational",
+      "Stability — a place to sleep that's the same place two nights running"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+    ],
+    "blind_spots": [
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Cannot distinguish between caution and cowardice in themselves or others"
+    ],
+    "secret": "Tui Fedorov-Ampofo has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
+    ],
+    "example_lines": [
+      "\"Everyone has a pattern. Patterns are addresses waiting to be read.\"",
+      "\"I find people. Whether they're alive when I bring them back depends on their behavior.\"",
+      "\"You can run. It's cardiovascular exercise for both of us.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Tui Fedorov-Ampofo is offered a contract that would clear all their debts — the target is someone they respect",
+    "Someone is impersonating Tui Fedorov-Ampofo on jobs, and the impersonator is better at the work than the original",
+    "Tui Fedorov-Ampofo discovers a job they completed last year was a setup for something much larger and much worse"
+  ],
+  "narrative_function": "Tui Fedorov-Ampofo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Freelance — Geartown regular",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 6
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 8
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.18,
+      "caution": 0.53,
+      "loyalty": 0.75,
+      "greed": 0.49,
+      "empathy": 0.56
+    },
+    "drives": [
+      "justice",
+      "revenge",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 7,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "photographic memory for faces and layouts",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "difficulty with authority figures",
+      "risk-averse to the point of missed opportunities"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "bounty hunter",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always verifies target identity independently before lethal contracts",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal armor plating across torso and forearms",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Pragmatist": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "related_entities": [
+    "Masquerade",
+    "The Gradient Compact",
+    "Pellucid Systems",
+    "Alper Lebedev-Tutu",
+    "Arcturus Exo-Runner Frame",
+    "Bioelectric Muscle Fiber",
+    "Breck Tannen",
+    "Cezar Watanabe-Gyasi",
+    "Chibundo Reinholt-Sarpong",
+    "Helix Biosystems Vagal Resonance Dampener",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Lazarus LX-2 'Lab Rat'",
+    "MERIDIAN",
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Prophet",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TERMINUS",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian, Hispanic/Latin American, Indigenous American, and Sub-Saharan African—a complex diaspora blend. South Asian structure shows in facial geometry and bone prominence; Hispanic/Latin American and Indigenous American ancestry visible in skin undertone warmth and cheekbone definition; Sub-Saharan African heritage contributes to hair texture and subtle facial feature richness.",
+    "height_cm": 163,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, low center of gravity — built for impact absorption and explosive movement. Broad shoulders, thick forearms, minimal body fat. Legs show unusual definition from synthetic muscle fiber replacement.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short, utilitarian undercut; kept precisely trimmed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm golden-brown with subtle red undertones—a blend of South Asian olive, Hispanic/Latin American warmth, and Sub-Saharan African richness. Medium depth, even distribution.",
+    "complexion": "Defined facial structure with prominent cheekbones reflecting South Asian and Indigenous American ancestry. Warm undertone across bridge of nose and temples. Weathered appearance from chronic exposure and sleep deprivation. Extensive scarring across left cheekbone and jawline (rough, silvered tissue). Fine lines around eyes suggesting constant vigilance. Skin bears minor burn marks on neck (thermal signature from past firefight). Grooming is functional—minimal facial hair, kept clean.",
+    "distinguishing_marks": [
+      "Deep scar running from left temple to jawline, pale and puckered, approximately 12cm long",
+      "Burn scar on right side of neck, circular, approximately 3cm diameter, faded to ash-gray",
+      "Network of thin white scars across knuckles and back of both hands",
+      "Tattoo on inner right forearm: military unit designation in Cyrillic, partially obscured by armor plating seams"
+    ],
+    "visible_augmentations": "Subdermal armor plating visible across torso and forearms — matte gunmetal finish with scratched, illegible serial numbers. Plating sits slightly proud of skin at edges. Synthetic muscle fiber replacement in legs visible as subtle discoloration and unusual muscle striations under skin, more pronounced during movement. No cosmetic modification — purely functional, military-grade.",
+    "posture_movement": "Economical movement—no wasted motion. Stands with weight distributed forward on the balls of feet, ready-stance default. Moves with predatory precision, especially in low light. Often keeps hands visible and near body. Head tracking is sharp and constant—threat assessment reflex. Sits with back to walls, exits always in peripheral awareness.",
+    "clothing_style": "Tier 3-4 functional streetwear. Standard loadout: reinforced tactical jacket (dark synthetic leather, multiple pockets and mag retention clips), fitted cargo pants with thigh holster, military-spec boots (scuffed, maintained). Layers beneath for temperature and armor integration. No corporate branding—all gear is utilitarian, modular, replaceable. Watch is reliable analog + basic digital heads-up interface wrist unit. No jewelry. Clothing shows wear patterns consistent with daily fieldwork and nocturnal schedule."
+  },
+  "image_prompt": "Esperanza Cisneros-Karunaratne, compact 163cm operative with warm golden-brown skin blending South Asian, Hispanic, Indigenous American, and African heritage. Dark brown natural short undercut, dark eyes, defined cheekbones. Extensive scarring left temple to jawline, burn scar on neck, network of hand scars. Subdermal gunmetal armor plating visible across torso and forearms. Synthetic muscle fiber legs with pronounced striations. Military-grade cybernetic augmentations, zero cosmetic mods. Wearing dark tactical leather jacket with mag clips, reinforced cargo pants, scuffed military boots, analog watch with HUD interface. Ready-stance posture, predatory precision movement, threat-assessment constant scanning. Nocturnal GLMZ 2226 setting, low-light cyberpunk atmosphere, neon and shadow, functional streetwear aesthetic, no corporate branding. Cinematic lighting emphasizing augmentation hardware and scarring. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 37.5,
+    "Hispanic/Latin American": 35.6,
+    "Indigenous American": 20.1,
+    "Sub-Saharan African": 6.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

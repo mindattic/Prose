@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a71676bca9f3769d68b655b3",
+  "type": "character",
+  "name": "Delta Balogun-Bergqvist",
+  "aliases": [
+    "Vir",
+    "The Constructor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "VR experience designer for corporate clients",
+  "age": 42,
+  "status": "active",
+  "location": "Grand Corridor, studio-apartment in the Palladian-adjacent professional district, near North Ave and Milwaukee",
+  "description": "Viriato is the kind of handsome that looks managed — he maintains it deliberately, with the same project-management energy he brings to everything. Angular Igbo-Portuguese features, light brown skin, hair worn in a tight fade with a geometric pattern razored into one side that he refreshes every ten days. He has cat ears — a mod he got in his mid-twenties, silver-grey tipped in black, which he's kept long past the trend's peak because he claims they improve his spatial audio perception and because, privately, they were a gift from a relationship that ended badly. His right hand has a mesh of subdermal haptic filaments that interface with design software, so his fingers move through VR design space with the same precision a surgeon has with instruments.\n\nViriato designs immersive VR experiences for corporate clients — Tessera hospitality spaces, Axiom employee wellness programs, Palladian executive retreats. He is very good at it and has made genuine money doing it and spends considerable energy not thinking about whether any of it matters. He has what colleagues call 'the polish' — he presents well, delivers on time, absorbs client absurdity without visible strain. The strain goes somewhere, though. He has started designing unauthorized personal projects in the hours between 2 and 5 AM, dense and strange and nothing like his portfolio, which he has shown exactly one person.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That the polish has become him — that there is no authentic self underneath the professional persona",
+      "Becoming irrelevant; the industry moves fast and he's spent years serving clients instead of pushing the form"
+    ],
+    "core_desires": [
+      "To make something genuinely strange and his own, recognized on its own terms",
+      "To be known — really known — by someone, not as 'the Constructor' or the reliable contractor"
+    ],
+    "coping_mechanisms": [
+      "Treats his life as a series of deliverables — emotional problems become project plans, which delays but never resolves them",
+      "The 2-5 AM work sessions are his actual pressure valve; losing them would be dangerous"
+    ],
+    "blind_spots": [
+      "Mistake discipline for emotional health — he can function under enormous stress but is not okay",
+      "His clients see him as a peer; he's actually dependent on their approval in ways he hasn't examined"
+    ],
+    "secret": "The unauthorized VR experiences he's been building in secret are composite environments assembled from illegally harvested memory-imprint data — emotional and sensory recordings extracted from public-space neural bleed. He tells himself it's art. It is also absolutely illegal."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clean and professional by default; the 2 AM version of himself slips into Portuguese phrases and becomes more associative, more honest",
+    "cadence": "Controlled and rhythmic in professional settings; tends toward the declarative; after midnight he speaks in longer, looping sentences",
+    "verbal_tics": [
+      "'Functionally, what we're looking at is—'",
+      "Touches the cat ears when thinking, unaware he does it",
+      "'Interesting' (means many things, rarely what it says)"
+    ],
+    "example_lines": [
+      "'The Tessera experience needs to feel like discovery without discomfort. Which is not discovery. But I'll make it feel like it.'",
+      "'I built a room once — just for me — that was nothing but the feeling of being about to understand something. You can stay in it for six minutes before it gets unbearable. I consider it my best work. No one's ever paid me for it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The memory-imprint data Viriato has been using in his private work was harvested from a specific location during a specific event — and one of the people whose neural bleed he used without consent has started experiencing déjà vu of places they've never been",
+    "A Palladian executive has seen fragments of Viriato's private work (he's not sure how) and wants to commission it, at a price that would be life-changing, for purposes Viriato suspects are not artistic"
+  ],
+  "narrative_function": "Corporate-adjacent information source; players navigating Palladian or Tessera's cultural programming will encounter him; represents the moral and creative compromises of working within corponation systems; the private projects are a hook into something stranger",
+  "augmentations": "Cosmetic cat ears (silver-grey tipped black, geneware); subdermal haptic filament mesh in right hand (professional tool); mild ocular overlay implant for design preview rendering (basic, standard-issue for VR professionals)",
+  "daily_life": "Viriato keeps corporate hours — meetings and client reviews in the morning, design work in the afternoon, delivery and revision cycles that don't respect time — and then a sharp second life between 2 and 5 AM when he works on the personal projects no one has commissioned.",
+  "affiliation": "Freelance contractor with primary contracts through Palladian and Tessera; represented by a boutique creative agency called Apex Referral",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "corporate-creative",
+      "night-worker",
+      "secret-keeper",
+      "masked",
+      "tier-3"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never miss a deadline — the professional reputation is the foundation everything else rests on",
+      "Keep the personal work separate from the commercial work, completely",
+      "Don't let clients see the cost — whatever it took, the delivery looks effortless"
+    ],
+    "escalation_ladder": [
+      "Becomes more precise and more polished — the mask tightens",
+      "Starts working longer hours, adding deliverables to feel in control",
+      "Shuts down the 2 AM sessions, which is a warning sign he doesn't recognize as one",
+      "Has a controlled, private crisis that he handles completely alone and mentions to no one"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately professional and warm in a way that's difficult to object to; discloses nothing personal",
+      "friends": "He has two or three genuine friends and with them is unexpectedly self-deprecating and funny; still avoids talking about work and feelings"
+    },
+    "stress_responses": {
+      "low": "Over-prepares for the next client meeting",
+      "medium": "Works through the 2 AM sessions until dawn, sleeps four hours, performs fine",
+      "high": "Becomes completely unreachable and submits impeccable work — a bad sign"
+    },
+    "contradictions": [
+      "Designs emotional experiences for clients with great skill and care; has minimal access to his own emotional states",
+      "Values artistic authenticity intensely but works almost exclusively in corporate commission"
+    ],
+    "habits": [
+      "Makes coffee at exactly 1:55 AM before the private sessions begin, as a threshold ritual",
+      "Reviews his calendar obsessively — checks it six or seven times a day",
+      "Sends handwritten digital cards to clients on project completion — a small formality that is disproportionately remembered"
+    ],
+    "breaking_points": [
+      "Being forced to choose between the private work and the professional identity",
+      "Someone accessing the private projects without permission"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Corridor",
+    "ARCHIVE",
+    "The Filament",
+    "Palladian Construction",
+    "Tessera Corponation",
+    "Déjà Vu",
+    "Silver",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Milwaukee Core",
+    "Alper Holmberg-Dembele",
+    "Alper Inoue-Aidoo",
+    "Arcturus Exo-Runner Frame",
+    "Auricula Felis Modification",
+    "Axonal Stretch Resonance Lance",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Mika Sorel",
+    "Narrowcast",
+    "Philibert Mwangi-Djordjevic",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (36.7%) with East Asian (34.2%) and Hispanic/Latin American (29.1%) ancestry — a balanced tri-continental blend that manifests in warm undertones, subtle eye shape, and facial structure reflecting all three regions equally",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular, with defined musculature maintained through deliberate discipline rather than intensity. Moves with economical precision — no wasted motion. Shoulders slightly narrow, chest flat, legs long. The body of someone who designs rather than builds.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Tight fade with a geometric pattern (interlocking hexagons or circuit-board motif) razored into the right side, refreshed every ten days with the consistency of a scheduled system update",
+    "hair_length": "Short (approximately 8mm on top, faded to 2mm on sides)",
+    "eye_color": "Warm brown with faint golden undertone; subtle ocular overlay implant visible as a soft luminescence in low light, like an old monitor warming up",
+    "skin_tone": "Warm honey-brown, the harmonious blend of Sub-Saharan, East Asian, and Latin American ancestry — even-toned across face and body with subtle warm undertones that shift slightly in different lighting",
+    "complexion": "Meticulously groomed. Skin is clear and well-maintained, suggesting access to quality skincare and time spent on appearance. Sharp jawline with gentle East Asian influence in structure, high cheekbones with fullness from Latin American ancestry. The kind of handsome that reads as *managed* — attractive in a way that requires active maintenance. No visible blemishes or scarring on the face.",
+    "distinguishing_marks": [
+      "Cosmetic cat ears (geneware modification): silver-grey fur with black-tipped inner edges, approximately 8cm tall, positioned naturally atop the skull where human ears would sit. They move subtly with emotional states and environmental sound — a tell he hasn't learned to fully suppress.",
+      "Fine white scarring in a branching pattern across the outer edge of the right hand and wrist — visible evidence of the subdermal haptic filament mesh installation, now fully integrated but leaving a faint constellation of entry points beneath the skin."
+    ],
+    "visible_augmentations": "The cat ears are immediately visible and somewhat incongruous with his otherwise corporate aesthetic — they suggest a younger decision he's carried into middle age. The right hand's fine scarring and the subtle shimmer of haptic filaments under the skin are visible only on close inspection or when his hand moves through light. The ocular overlay implant is only visible in dim lighting, as a faint glow. All augmentations are professional-grade rather than flashy — nothing that screams 'modded,' everything that whispers 'enhanced.'",
+    "posture_movement": "Sits with perfect posture in meetings; stands with the slight forward lean of someone ready to move. Moves economically, with precision. His hands are eloquent — designer's hands that gesture through space as though mapping geometry. The cat ears twitch reflexively when processing complex information or when he's absorbing client absurdity without visible strain. When alone and working (especially during the 2-5 AM sessions), his posture relaxes but his focus intensifies. He has a habit of touching the geometric pattern on his head when thinking, as though checking a system status.",
+    "clothing_style": "Tier 1-2 professional aesthetic with deliberate restraint. Favors high-end minimalism: tailored charcoal or navy shirts (expensive fabrics, understated brands), neutral trousers, minimal jewelry except for a thin silver band on his left ring finger (legacy of the ended relationship that also gave him the ears — he doesn't remove it). Shoes are always clean, usually monochrome (grey, black, white). In client meetings, adds a lightweight Tessera-branded or neutral blazer. During late-night personal projects, trades polish for comfort: loose dark clothing, often with the technical precision of fabrics that don't snag on haptic mesh. His entire wardrobe communicates 'professional,' 'trustworthy,' 'will deliver on time' — the opposite of the dense, strange, unpolished work he creates between 2 and 5 AM."
+  },
+  "image_prompt": "Delta Balogun-Bergqvist, 178cm tall lean angular designer-build, warm honey-brown skin blending Sub-Saharan African, East Asian, and Latin American heritage, sharp jawline high cheekbones, dark brown hair with geometric hexagon fade pattern on right side. Silver-grey cosmetic cat ears with black-tipped inner edges atop head, subtly expressive. Warm brown eyes with golden undertone and faint ocular implant glow. Fine white scarring visible on right hand from haptic filament mesh. Impeccably groomed, professional minimalist aesthetic: tailored charcoal shirt, neutral trousers, monochrome shoes, thin silver ring on left ring finger. Sitting with perfect posture at design workstation, hands eloquently gesturing through holographic interface. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool blue-grey ambient lighting mixing with warm desk glow, precise economical movement, the aesthetic of polished corporate professional concealing intricate creative genius. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 36.7,
+    "East Asian": 34.2,
+    "Hispanic/Latin American": 29.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

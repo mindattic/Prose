@@ -1,0 +1,329 @@
+{
+  "id": "019d6143a64274a3b981ff8c7f1a9a43",
+  "type": "character",
+  "name": "Cipher Chowdhury",
+  "aliases": [
+    "Crucible",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Electronic and physical observation expert — surveillance specialist",
+  "age": 40,
+  "status": "active",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
+  "description": "Kenji Kimura-Nkrumah are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — enhanced tendons — geneware upgrade, jump height and grip strength tripled — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a surveillance specialist out of The Underbelly, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nKenji Kimura-Nkrumah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.34,
+      "id": 0.43,
+      "shadow": 0.16,
+      "mask": 0.59,
+      "ghost": 0.97
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Control — over their body, their schedule, their future"
+    ],
+    "coping_mechanisms": [
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Exercises compulsively — the body must be ready, always",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+    ],
+    "blind_spots": [
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Trusts technology more than people — machines don't betray",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+    ],
+    "secret": "Kenji Kimura-Nkrumah witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"I've been watching you for three days. You should close your curtains.\"",
+      "\"Information is the only commodity that appreciates with age.\"",
+      "\"Everyone thinks they're careful. Nobody is careful enough.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A dead drop Kenji Kimura-Nkrumah maintains is found and cleaned out — whoever did it now has leverage",
+    "A crew member from Kenji Kimura-Nkrumah's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A former associate resurfaces with evidence that could destroy Kenji Kimura-Nkrumah's reputation — and a price for silence"
+  ],
+  "narrative_function": "Kenji Kimura-Nkrumah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Enhanced tendons — geneware upgrade, jump height and grip strength tripled. Geneware muscle density treatment — looks natural, hits like chrome",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — Narrows-based operations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 4
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.66,
+      "caution": 0.13,
+      "loyalty": 0.87,
+      "greed": 0.24,
+      "empathy": 0.32
+    },
+    "drives": [
+      "protection",
+      "loyalty",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 8,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "intimidating physical presence",
+      "mechanical aptitude — can repair or modify almost anything"
+    ],
+    "weaknesses": [
+      "poor impulse control in specific triggers",
+      "difficulty with authority figures",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "surveillance specialist",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Never drinks anything they didn't see poured or open themselves",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Enhanced tendons",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware muscle density treatment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
+    "Irontide Tidal Energy",
+    "Lazarus IDP-1 'Teeth'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TESSERA CR-12 'Whisper'",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "South Asian, Northern European, and Middle Eastern blend — approximately equal contributions from the Indian subcontinent and Scandinavian ancestry with secondary Middle Eastern features. The result is a striking intermediate phenotype: warm golden-brown skin with subtle olive undertones, facial structure that bridges South Asian angularity with Northern European bone prominence, and dark eyes with the alert intensity common to multiple ancestral lines.",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and elongated — low body fat, visible muscle definition without bulk. The enhanced tendons give their limbs a slightly angular quality, as if every joint is optimized for extension and contraction.",
+    "hair_color": "Natural black with early silver at the temples",
+    "hair_style": "Pulled back tight, secured at the nape",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and observant",
+    "skin_tone": "Warm golden-brown with olive undertones — the blended result of South Asian melanin depth, Northern European undertones, and Middle Eastern complexity. The skin catches light with subtle warmth across the cheekbones and brow ridge.",
+    "complexion": "Clean-shaven, sharp cheekbones with the slight prominence typical of Northern European and Middle Eastern ancestry, angular jawline softened by South Asian fullness in the lower face. Minimal scarring on the visible face. Skin is taut and unmarred — evidence of disciplined self-care and regular maintenance cycles. No wrinkles despite age; augmentation and regimen preserve a deceptive youth.",
+    "distinguishing_marks": [
+      "Chromatic seams running down both forearms where enhanced tendon upgrades interface with natural musculature — thin surgical lines with faint iridescent sheen visible under certain lighting.",
+      "Thin white scar along the left jawline, approximately 4cm, barely visible unless lit from the side — old, healed cleanly.",
+      "Faint burn scarring on the right palm, webbed pattern consistent with electrical contact — functional but disfiguring."
+    ],
+    "visible_augmentations": "Chrome-reinforced tendons visible as metallic threading under translucent skin at wrists and inner forearms. The seams catch light distinctly. Geneware muscle treatment is invisible but visible in movement — precision of motion suggests internal optimization. Hands show subtle mechanical articulation in finger joints during fine motor work.",
+    "posture_movement": "Economical and controlled — no wasted motion. Moves like someone counting steps. Capable of sudden, explosive movement; transitions between stillness and action are sharp. Stands with weight balanced evenly, ready to shift direction. Eyes track continuously without apparent effort.",
+    "clothing_style": "Tier 3-4 utilitarian. Black or dark grey tech-weave jacket with reinforced shoulder and forearm panels. Form-fitting tactical pants with cargo pockets and integrated cable routing. Worn climbing boots, scuffed but maintained. Minimal branding — function over aesthetics. All clothing is modular, replaceable, and carries no sentimental value. A single silver ring on the right ring finger — the only item suggesting something beyond pure pragmatism."
+  },
+  "image_prompt": "Cipher Chowdhury, cyberpunk 2226, portrait of a 188cm lean operative with golden-brown skin and olive undertones blending South Asian, Northern European, and Middle Eastern ancestry. Sharp cheekbones, dark observant eyes, black hair pulled back tight with early silver at temples. Clean-shaven with a thin white scar along left jawline. Visible chrome-reinforced tendon seams down both forearms with iridescent sheen catching harsh neon light. Faint electrical burn scarring on right palm. Wearing black tech-weave tactical jacket with reinforced panels, form-fitting cargo pants, worn climbing boots. Silver ring on right ring finger. Posture economical and controlled, weight balanced, ready to shift. Moody cyberpunk lighting, cool blue and amber neon, shadows emphasizing angular features and augmentation seams. Professional operative aesthetic, precision and pragmatism evident in every detail. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 45.3,
+    "Northern European": 42.6,
+    "Middle Eastern": 12.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

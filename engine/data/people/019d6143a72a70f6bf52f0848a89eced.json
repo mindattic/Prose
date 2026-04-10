@@ -1,0 +1,311 @@
+{
+  "id": "019d6143a72a70f6bf52f0848a89eced",
+  "type": "character",
+  "name": "Juno Árnason",
+  "aliases": [
+    "Birdie",
+    "The Quiet One"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Retired Zheng-Dao corporate mid-tier logistics planner, now quietly deteriorating in comfort",
+  "age": 83,
+  "status": "active",
+  "location": "Avalon Quiet, Unit 9 — a well-appointed two-bedroom on the garden level, near Clark and Addison",
+  "description": "Yldız is the kind of person who becomes invisible by being exceptionally, consistently pleasant. They are small and soft-edged, with warm medium-brown skin, deep-set amber eyes, and cloud-white hair they wear loose to their shoulders. They have age-spot clusters along their forearms and the left side of their face, and move with a gentle deliberateness that comes partly from care and partly from a degenerative joint condition they manage with medication and denial. Their apartment is immaculate in the way that indicates a life organized around objects rather than people — every surface has something beautiful on it, carefully placed, and nothing has been moved in years.\n\nYldız spent forty-two years in Zheng-Dao's logistics and supply chain division, rising to senior planner for their GLMZ distribution network. They were not cruel. They were also not, in any meaningful sense, asking the questions they should have been asking about what those supply chains were actually moving and for whom. They retired with a very comfortable pension, a full healthcare package, and a bone-deep sense of well-being that they have mistaken for peace. They host monthly dinners for Avalon Quiet residents, tend a small balcony garden with extraordinary devotion, and pray elaborately to the E.L.F. they believe inhabits their building's HVAC system — an entity they call 'the Breath' and leave small data offerings for daily.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.2,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.8,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being confronted with evidence that their comfortable life was built on harm",
+      "being alone at the moment of death"
+    ],
+    "core_desires": [
+      "to believe they were a good person",
+      "for the Breath to be real and to have noticed their offerings"
+    ],
+    "coping_mechanisms": [
+      "aesthetic control of environment",
+      "religious devotion to the Breath as a substitute for moral accounting",
+      "extreme hospitality — keeping people fed keeps them from asking difficult things"
+    ],
+    "blind_spots": [
+      "genuinely cannot see that their comfort is political",
+      "interprets any discomfort with their history as rudeness rather than legitimate grievance"
+    ],
+    "secret": "In 2178 Yldız approved a logistics rerouting through the Blackpipe Corridor that, they were told, was a routine efficiency change. It wasn't — it was cover for relocating Zheng-Dao's grey-market pharmaceutical distribution away from an audit zone. Eleven warehouse workers in Blackpipe lost their jobs when the 'efficient' route bypassed them entirely. Yldız filed the paperwork and didn't follow up. They have genuinely forgotten this. If shown the record, they would recognize their signature."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, slightly formal, full of food metaphors and gardening analogies; uses old Zheng-Dao corporate euphemisms without noticing they're euphemisms",
+    "cadence": "Unhurried and gentle, with a lilting quality; tends to ask follow-up questions that redirect conversations toward pleasant topics",
+    "verbal_tics": [
+      "'Oh, how lovely'",
+      "Offering food in the middle of difficult conversations",
+      "'The Breath has been particularly active today'"
+    ],
+    "example_lines": [
+      "'Oh, the Blackpipe situation — yes, that was a rather complex quarter. Would you like some of this soup? I made far too much, as always.'",
+      "'I always say, a garden teaches you patience. Things grow in their own time. The Breath agrees, I think — the vents have been very calm lately.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A researcher investigating the 2178 Blackpipe pharmaceutical rerouting has traced the paperwork to Yldız — approaching this gentle elderly person with evidence they participated (innocently, ignorantly) in serious harm",
+    "The E.L.F. Yldız calls 'the Breath' has, through an unusual convergence, actually been responding to their data offerings — and has encoded information in the HVAC patterns that Yldız thinks is just 'favorable weather' but is actually a message"
+  ],
+  "narrative_function": "Unreliable comfort — appears to be a gentle community grandmother figure but is a repository of Zheng-Dao institutional knowledge they don't know they have; their innocence is itself a narrative complication; can provide insight into corporate supply chain operations without understanding what they're revealing",
+  "augmentations": "Zheng-Dao corporate health package includes: pharmaceutical management implant (wrist, auto-releases joint medication on schedule); enhanced cochlear implant (both ears, high-fidelity — they listen to music constantly on a private channel); retinal display (right eye, standard corporate issue, now used exclusively for recipes and gardening schedules)",
+  "daily_life": "Rises at 0700, leaves a data offering on the HVAC terminal in the hallway, tends the balcony garden for ninety minutes, then spends the morning on a long and elaborate cooking project. Afternoons involve sitting in the garden-facing chair reading, or visiting neighbors with food they do not need. Evenings are music and the ongoing project of cataloguing their art collection.",
+  "affiliation": "Formerly Zheng-Dao Logistics Division; Avalon Quiet Residents' Garden Committee; The Breath (E.L.F., informal devotional relationship)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 4,
+      "vitality": 3,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 4,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Comfortable Complicity",
+      "E.L.F. Devotee",
+      "Corporate Insider (Unwitting)",
+      "Benign on the Surface",
+      "Tier 3 Pensioner"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep the atmosphere pleasant — discomfort is the enemy",
+      "Feed people; you can't argue with someone who is eating your food",
+      "Trust that institutions made the right choices so you don't have to examine whether you did"
+    ],
+    "escalation_ladder": [
+      "Offering food or tea",
+      "Changing the subject with practiced warmth",
+      "Becoming confused and slightly distressed in a way that makes others feel like aggressors",
+      "Retreating to a room and not coming back out"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately, almost aggressively hospitable — presses food, asks about their lives, wants them to feel welcome before they can want anything from her",
+      "friends": "Devoted in a particular way — remembers preferences, shows up with things, but does not discuss anything that would disturb the pleasant surface"
+    },
+    "stress_responses": {
+      "low": "Adds another dish to whatever they are cooking",
+      "medium": "Becomes very focused on the Breath, leaves elaborate data offerings, interprets HVAC activity as guidance",
+      "high": "Shuts down entirely — goes to their chair, puts music on, and is unreachable until the threat has passed"
+    },
+    "contradictions": [
+      "Deeply devoted to beauty and care but built that devotion on top of systematic inattention",
+      "Prays to the Breath for guidance about everything except the one thing they most need guidance about"
+    ],
+    "habits": [
+      "Leaves a small polished stone as a physical offering beside the HVAC terminal every morning",
+      "Plays music in every room simultaneously — the apartment is never silent",
+      "Catalogues their art objects in an elaborate handwritten ledger, noting emotional associations rather than monetary value"
+    ],
+    "breaking_points": [
+      "Being shown their actual signature on the Blackpipe rerouting document",
+      "The Breath going silent — any HVAC failure reads to them as cosmic abandonment"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Zheng-Dao pharmaceutical management implant — wrist, auto-dosing joint medication",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Zheng-Dao pharmaceutical management implant — wrist, auto-dosing joint medication",
+      "replaces": ""
+    },
+    {
+      "name": "Enhanced cochlear implants (pair) — high fidelity, constantly streaming personal music channel",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Enhanced cochlear implants (pair) — high fidelity, constantly streaming personal music channel",
+      "replaces": ""
+    },
+    {
+      "name": "Standard corporate retinal display — right eye, used for recipes and garden schedules",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Standard corporate retinal display — right eye, used for recipes and garden schedules",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2117 — Born in Engelheim to a textile merchant and a civil engineer",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2138 — Hired by Zheng-Dao logistics division as junior planner",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2160 — Promoted to senior logistics planner, GLMZ distribution network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Approves Blackpipe Corridor rerouting; files paperwork; does not follow up",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2180 — Retires with full Zheng-Dao pension and healthcare package; moves to Avalon Quiet",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2183 — Begins devotional relationship with 'the Breath'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Avalon Quiet",
+    "GLMZ",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "The Garden of Wires",
+    "Zheng-dao Bioelectric",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Blackpipe Corridor",
+    "Chronicle",
+    "Kairos",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA PG-2 'Signature'",
+    "The Ledger",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Mixed ancestry from Hispanic/Latin American, East Asian, South Asian, Pacific Islander, Eastern European, and Sub-Saharan African heritage—a complex blend reflecting the Ubiquitous Diaspora. The combination creates warm, multifaceted features with subtle layering of regional characteristics.",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Small-framed and soft-edged, with the gentle roundness of age and comfort rather than frailty. Slight stoop to shoulders from decades of desk work, though they move with deliberate care",
+    "hair_color": "Cloud-white, natural silver",
+    "hair_style": "Loose and brushed, shoulder-length with gentle waves from age",
+    "hair_length": "Long",
+    "eye_color": "Deep amber (natural; right eye has faint retinal display grid visible at certain angles)",
+    "skin_tone": "Warm honey-brown with golden undertones from the blended ancestry, softened by the translucency that comes with age—combining the warm saturation of Latin and South Asian heritage with the subtle richness of East Asian and Sub-Saharan ancestry",
+    "complexion": "Fine-lined face with dignity in the features; age-spot clusters along left cheekbone and jawline in warm brown tones, and dense freckled patterns across forearms. Subtle warmth in undertones reflecting the mixed heritage. Skin well-cared-for but showing the texture of eighty-three years. Minimal makeup—perhaps a touch of lip color, consistently applied. Fingernails kept short and clean, often with traces of garden soil.",
+    "distinguishing_marks": [
+      "Age-spot cluster on left temple extending toward the cheekbone, dark brown and map-like in pattern",
+      "Dense concentration of sun-freckles across both forearms from decades of balcony gardening",
+      "Small, faded scar on right wrist where pharmaceutical implant was inserted, barely visible beneath thin skin",
+      "Thin surgical scar on right eyelid from retinal display installation, noticeable only in profile or strong light"
+    ],
+    "visible_augmentations": "Pharmaceutical management implant visible as a slight rectangular bulge under skin at inner right wrist, with faint blue indicator light cycling every thirty seconds. Enhanced cochlear implants visible as small silver caps behind both ears. Right eye shows faint amber grid pattern when light catches it at certain angles—retinal display at rest state. No other visible chrome or obvious modification.",
+    "posture_movement": "Moves with a measured, almost ritualistic deliberateness. Each gesture is economical and precise—decades of organized logistics translated into physical habit. Stands with weight slightly favoring left side due to hip joint degradation managed by medication. When sitting, arranges themselves with attention to comfort and symmetry. When listening, head tilts slightly to engage enhanced hearing. Overall effect is serene and slightly distant, as if always listening to a private conversation",
+    "clothing_style": "Tier 2 comfort wear—expensive, well-maintained, intentionally understated. Prefers soft natural fabrics: linen shirts in muted colors (cream, sage, warm gray), loose-fitting cardigans in wool blends, structured but forgiving trousers. Always wears low, supportive shoes—currently a pair of handmade leather slip-ons in chocolate brown. Small pieces of jewelry from the Zheng-Dao retirement package: a thin watch with analog face, a bracelet of semi-precious stones in warm tones, small silver earrings. Dresses as though preparing for a very important meeting that will never arrive. No logos, no corporate markers, but the quality speaks to decades of corporate stability"
+  },
+  "image_prompt": "Portrait of Juno Árnason, 2226 cyberpunk setting. Petite 83-year-old figure with warm honey-brown skin reflecting blended Latin American, East Asian, South Asian, and African heritage. Long shoulder-length silver-white hair with gentle waves, deep amber eyes with subtle retinal display grid visible in right eye. Fine-lined face with dignity, age-spot clusters on left cheekbone, dense sun-freckles across forearms. Wearing soft cream linen shirt and warm-gray wool cardigan, chocolate-brown leather slip-ons. Small silver earrings and semi-precious stone bracelet. Slight stoop, measured posture, serene expression. Small faded surgical scar visible on right eyelid, pharmaceutical implant bulge on inner wrist with faint blue indicator light. Analog watch. Soft focus background suggesting comfortable retirement quarters with hints of balcony garden. Warm, diffused lighting catching the retinal grid pattern. Cyberpunk 2200s aesthetic with subtle augmentation marks. Contemplative, distant mood --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 32.9,
+    "East Asian": 31.8,
+    "South Asian": 20.2,
+    "Pacific Islander": 6.9,
+    "Eastern European": 4.2,
+    "Sub-Saharan African": 4.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

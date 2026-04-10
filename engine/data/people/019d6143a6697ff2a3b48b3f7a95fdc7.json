@@ -1,0 +1,152 @@
+{
+  "id": "019d6143a6697ff2a3b48b3f7a95fdc7",
+  "type": "character",
+  "name": "Kwame Okafor-Kjellberg",
+  "aliases": [
+    "Silk"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Social engineering",
+  "age": 33,
+  "status": "active",
+  "location": "The Narrows, near Milwaukee and North Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9,
+    "Problem Solver": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Bioelectric Induction Lance BIL-3 'Lamprey'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "The Milwaukee Core",
+    "Arcturus UT-5 'Lamprey'",
+    "Bioacoustic Communication Membrane",
+    "Bioelectric Induction Lance BIL-3 'Lamprey'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Stainless Steel",
+    "The Narrows",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (60.2%) with significant Hispanic/Latin American (20.2%) and East Asian (19.6%) ancestry, creating a striking tri-continental blend. West African bone structure and melanin dominates, complemented by warm Latin American undertones and subtle East Asian eye geometry.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined shoulders; moves with deliberate economy. No wasted motion.",
+    "hair_color": "Natural black with silver threading at temples",
+    "hair_style": "Box braids pulled into a high crown knot, practical and intimidating",
+    "hair_length": "Medium (braids fall to mid-back when loose)",
+    "eye_color": "Deep brown with subtle monolid tendency from East Asian ancestry, alert and analytical",
+    "skin_tone": "Rich warm brown with golden undertones from Sub-Saharan African heritage, warmed further by Latin American ancestry influence",
+    "complexion": "Clear skin with high, defined cheekbones reflecting both African and East Asian ancestry, full lips set in a neutral expression. Subtle warmth in undertones from tri-continental mix. A thin scar traces from left jaw to ear—old, deliberate, never regretted.",
+    "distinguishing_marks": [
+      "Thin diagonal scar running from lower left jawline to behind left ear, approximately 8cm, pale and precise",
+      "Small geometric tattoo on inner right wrist: three interlocking circles in matte black ink",
+      "Faint burn marks on palms (both hands) in concentric circles, consistent with controlled exposure—subcutaneous conditioning evidence"
+    ],
+    "visible_augmentations": "None visible. Her augmentations are deep—subcutaneous neural array for lie detection and microexpression reading, internal subvocal mic, distributed haptic feedback nodes. Only the faint telltale palmar scarring suggests enhancement.",
+    "posture_movement": "Sits with spine straight, always positioned to see exits. Hands rest visible on table or lap—never hidden. Moves between stillness and sudden precision; no fidgeting. Speaks from a centered diaphragm. Eyes track micro-movements in conversation partners.",
+    "clothing_style": "Tier 3 refined casual: fitted dark turtleneck (Sekitani brand, brushed synthetic), tailored charcoal cargo pants with hidden pockets, matte black reinforced shoes (non-descript, practical). A worn leather jacket over everything—buffalo leather, pre-2200s, patina that speaks of real use. No jewelry except a simple stainless steel chronometer on her left wrist. Aesthetic is 'professional operative who doesn't need to advertise.'"
+  },
+  "image_prompt": "Kwame Okafor-Kjellberg, 2226 cyberpunk era. Woman of tri-continental heritage with rich warm brown skin bearing golden undertones, high defined cheekbones, deep analytical brown eyes with subtle monolid geometry, natural black hair in medium box braids crowned in a tight knot with silver threading at temples. Precise pale scar running from left jawline to ear. Wearing fitted dark Sekitani turtleneck, tailored charcoal cargo pants, matte black reinforced shoes, worn buffalo leather jacket with 2100s patina. Stainless steel chronometer on left wrist. Sitting with rigid, purposeful posture in a GLMZ neon-lit safe house, positioned to view exits, hands visible and controlled on table surface. Professional operative aesthetic, no wasted motion, alert gaze tracking micro-expressions. Cyberpunk noir lighting, cool blue and amber neon reflecting off her skin and leather. Completely still, radiating dangerous competence. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 60.2,
+    "Hispanic/Latin American": 20.2,
+    "East Asian": 19.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

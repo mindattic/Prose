@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a65a7d068c52fbaa7bd74a88",
+  "type": "character",
+  "name": "Sterling Tetteh",
+  "aliases": [
+    "Miri",
+    "The Needle"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Tailor and seamstress, alteration shop owner",
+  "age": 58,
+  "status": "active",
+  "location": "Hamtramck Enclave, shop called 'Second Skin' on Brewer's Spine, near Western and Chicago Ave",
+  "description": "Mirela is a broad-shouldered woman whose hands tell the story of forty years of needlework — knuckles thick as bolts, fingertips calloused to near-insensitivity, but still capable of threading a two-micron filament in dim light without blinking. Her silver-streaked hair is always pinned up with what appear to be decorative sticks but are actually precision seam rippers. Her skin is deep brown with reddish undertones, and she wears a pair of magnifying lenses on a chain around her neck that she raises to her eyes with theatrical gravity when inspecting a fabric flaw. She has a single cosmetic mod — color-shifting irises that she bought thirty years ago and which now cycle slowly through amber and green, a fashion relic she's never seen reason to update.\n\nMirela runs Second Skin with the authority of someone who has outlasted three landlords, two corporate rezoning attempts, and a flooding incident she still blames on Ferrogate Transit's drainage rerouting. She is blunt, even harsh, with new customers — she will tell you your measurements, your problem areas, and her honest opinion of your fashion choices without invitation — but the neighborhood considers this honesty a form of affection. She prays to the local E.L.F. she calls 'the Loom,' leaving offerings of thread spools and pattern fragments on the small shrine bolted above her cutting table.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the shop to corporate rezoning",
+      "Becoming invisible — irrelevant — to the neighborhood she built"
+    ],
+    "core_desires": [
+      "To see the Enclave survive intact another generation",
+      "To pass her craft to someone who actually deserves it"
+    ],
+    "coping_mechanisms": [
+      "Channeling anxiety into work — the more stressed she is, the finer the stitching",
+      "Sardonic humor as deflection"
+    ],
+    "blind_spots": [
+      "Assumes she knows what's best for younger people without asking them",
+      "Underestimates how much her bluntness actually wounds"
+    ],
+    "secret": "She has been quietly altering the uniforms of Ferrogate Transit workers to include hidden pockets — at the request of a transit workers' mutual aid group she pretends not to be part of. If Ferrogate found out, she'd lose the shop."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, technically precise about fabric and construction, peppered with Serbo-Croatian endearments and Akan proverbs learned from her mother's side",
+    "cadence": "Measured and deliberate, with long pauses before delivering verdicts",
+    "verbal_tics": [
+      "'I'll tell you what I see'",
+      "'That's not a garment, that's a problem'"
+    ],
+    "example_lines": [
+      "'Sit still. You're fidgeting and your hem will pay for it.'",
+      "'I've been here longer than that building. I'll be here longer than you, probably. So. What do you need?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A garment left for alteration contains something sewn into the lining — something the owner may or may not come back alive to collect",
+    "Ferrogate Transit has sent a compliance inspector to the Enclave; Mirela needs someone to make the inspector's visit very unproductive"
+  ],
+  "narrative_function": "Local color anchor and information hub; knows every family in the Enclave by their clothing needs. Quest giver for anything involving neighborhood politics or missing persons. Can source unusual fabrics through gray market contacts she'd never call criminal.",
+  "augmentations": "Cosmetic iris mod (color-cycling, amber/green). No chrome. Reads as fully organic at a glance.",
+  "daily_life": "Opens at 0700, takes no appointments before 0900, and closes exactly when she decides she is done — which is never a predictable hour. Spends evenings doing alterations by hand while listening to serialized audio dramas on a battered speaker.",
+  "affiliation": "Independent; loose ties to Hamtramck Enclave merchant collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Craftsperson",
+      "Neighborhood Anchor",
+      "Gray Market Adjacent",
+      "Community Memory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the shop above personal comfort",
+      "Give loyalty proportional to what's been earned over time, not what's promised"
+    ],
+    "escalation_ladder": [
+      "Pointed comment",
+      "Direct refusal of service",
+      "Raising her voice — rare and alarming",
+      "Involving the merchant collective as community pressure"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and slightly suspicious — she measures you before she decides if you're worth her time",
+      "friends": "Warm in a gruff way; shows care through action rather than words"
+    },
+    "stress_responses": {
+      "low": "Works faster, mutters under her breath",
+      "medium": "Becomes very precise and controlled — almost eerily calm",
+      "high": "Goes silent, which frightens the people who know her"
+    },
+    "contradictions": [
+      "Insists she doesn't care about sentiment but keeps every scrap of fabric from notable jobs she's ever done"
+    ],
+    "habits": [
+      "Always straightens the collars of people she talks to without asking permission",
+      "Pins a small piece of fabric to her lapel each morning as a kind of daily intention-setting"
+    ],
+    "breaking_points": [
+      "Watching the Enclave be hollowed out by corporate interests while residents do nothing",
+      "Someone disrespecting a garment she made as if it were disposable"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Molotov Standard' Incendiary Bottle"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Brewer's Spine",
+    "The Reclamation Authority",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Lacework Confessional",
+    "The Skinners",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Loom",
+    "Chicago",
+    "Alper Holmberg-Dembele",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Dzemal Acholonu-Patagiri",
+    "Obafemi Szczypiński-Lautoa",
+    "Roshani Mvula-Atencio",
+    "Réginald Asomaning-Čabarkapa",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "Street Custom 'Molotov Standard' Incendiary Bottle",
+    "The Compact",
+    "The Loom",
+    "Vantablack VS-3 'Skin Job'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (59%) with significant Hispanic/Latin American (26.4%) admixture, complemented by South Asian (9.3%) and Eastern European (5.3%) ancestry. This genetic combination manifests in rich, warm-toned deep brown skin with subtle golden and reddish undertones from the African and Latin American heritage, enhanced by the warm complexion influence of South Asian genetics.",
+    "height_cm": 167,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact, functional musculature of someone who spends eight hours daily hunched over a cutting table. Not soft, not lean — a body built for sustained precision work rather than display.",
+    "hair_color": "Deep black with silver streaking, natural graying",
+    "hair_style": "Pinned upward in a tight, practical arrangement, secured with what appear to be decorative bone or wood sticks but are precision seam rippers",
+    "hair_length": "Long, worn up",
+    "eye_color": "Cosmetic mod: color-cycling irises that shift between amber and green on a slow loop (relic tech, installed ~30 years ago)",
+    "skin_tone": "Rich, warm deep brown with golden and reddish undertones, evenly pigmented across the face and body",
+    "complexion": "Unlined face with deep smile creases at the corners of her eyes and mouth. Facial structure reflects the blended ancestry — broad cheekbones characteristic of African heritage softened by the warmer, rounder contours influenced by Latin American and South Asian genetics. Skin shows sun-exposure history from working near windows. No visible tattoos or scarification. Grooming is minimal but deliberate — she does not fuss with appearance.",
+    "distinguishing_marks": [
+      "Callused fingertips on both hands, worn smooth and thick from forty years of needlework, nearly insensitive to fine touch",
+      "Knuckles thickened and slightly arthritic, particularly on index and middle fingers",
+      "Magnifying lenses on a thin chain around her neck, worn constantly and raised to eyes with theatrical precision"
+    ],
+    "visible_augmentations": "None chrome. Single cosmetic iris modification (color-shifting, amber/green cycle) reads as jewelry or affectation rather than serious mod. No subdermal plates, no visible neural ports. Appears entirely organic at first glance.",
+    "posture_movement": "Habitually forward-leaning from decades at the worktable, shoulders slightly rounded. Movements are economical and deliberate — no wasted motion. Hands are constantly in motion even when at rest, fingers flexing or mimicking stitching patterns. Stands with weight distributed evenly, grounded.",
+    "clothing_style": "Tier 3-4 utilitarian aesthetic. Always wears a work apron over simple, well-maintained clothing — the apron is a patchwork of fabric samples, seams, and repaired tears, a walking advertisement for her skill. Prefers muted colors (grays, blacks, deep blues) with occasional bright accent fabrics pinned to her collar or cuff. Wears soft leather shoes with reinforced soles, broken in and comfortable. No jewelry except the magnifying lens chain. Grooming reflects tier 3 independence — clean, functional, not fashionable."
+  },
+  "image_prompt": "Sterling Tetteh, a 167cm dark-skinned tailor with rich warm brown complexion and golden undertones, mid-50s, wearing a patchwork work apron covered in fabric swatches over utilitarian grays and blacks. Deep black hair with silver streaks pinned up with bone sticks. Slow color-cycling amber-green eyes (relic tech) framed by pronounced smile lines. Broad shoulders and solid build from decades of precision needlework. Magnifying lenses on chain around neck. Weathered, callused hands frozen mid-stitch gesture. Habitually forward-leaning posture. Soft leather work shoes. Standing near a cutting table in warm window light, shadows across industrial workshop. Cyberpunk 2226, Great Lakes Metropolitan Zone, tier 3 independent seamstress aesthetic, photorealistic, cinematic lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 59.0,
+    "Hispanic/Latin American": 26.4,
+    "South Asian": 9.3,
+    "Eastern European": 5.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

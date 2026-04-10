@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a5da7a0b848a2056c86e9d75",
+  "type": "character",
+  "name": "Sardor Karimov",
+  "aliases": [
+    "Chima",
+    "Seven-Season"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "climate refugee, expelled citizen, caravan support worker",
+  "age": 34,
+  "status": "active",
+  "location": "Escanaba Gateway, temporary processing overflow — a repurposed cargo hangar on the eastern dock, near Michigan Ave and Roosevelt",
+  "description": "Chiamaka has the kind of face that is beautiful in a way that takes a moment to resolve — wide-set dark eyes, a long jaw, a nose that has been broken and healed slightly crooked, which they consider an improvement. Their hair is grown long on top and cut close at the sides, currently dyed a deep amber that is growing out at the roots into black. Bioluminescent freckles run across both cheekbones and the bridge of their nose, a genemod that was fashionable a decade ago and that they have kept because they find it useful in the dark. They dress in layers of practical clothing with a great number of pockets, all of which serve a purpose.\n\nChiamaka came to GLMZ with the Seventh Coastal Movement — a caravan of climate refugees from the drowned lowlands east of what used to be Lagos, where their Igbo family had mixed with Samoan shipwright families over three generations of coastal labor. They have been in the Gateway processing overflow for seven months, which is four months longer than they were told. They work as an informal translator and advocate for other caravan members, navigating the GLMZ resettlement bureaucracy with a simmering precision that occasionally flares into something that frightens officials. They are not angry in a way that is hot. They are angry in a way that is patient.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "that the people they're responsible for will be dispersed before they can secure anything lasting for them",
+      "that their anger will eventually make them less effective rather than more"
+    ],
+    "core_desires": [
+      "a door with their name on a lease behind it — any door, anywhere in the city",
+      "to see one of the caravan's children enrolled in a school with a fixed address"
+    ],
+    "coping_mechanisms": [
+      "bureaucratic precision — the log, the records, the documentation of everything",
+      "walking the perimeter",
+      "translating for others, which requires full attention and leaves no room for despair"
+    ],
+    "blind_spots": [
+      "they have made themselves so essential to the collective that they haven't built anything for themselves — no personal plan if the collective dissolves",
+      "they sometimes push people to fight battles they're not ready to fight because Chiamaka is ready"
+    ],
+    "secret": "Chiamaka was not technically displaced by the flooding — they had a processing job with a Zheng-Dao logistics subsidiary in the coastal network and could have applied for corporate relocation. They left with the caravan instead because a family member asked them to, and that family member died crossing the hyperlane corridor near Lambeau Terminus. Chiamaka has told no one this. They carry the dead person's ID chip in their left boot."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and formal in bureaucratic contexts, slipping into a warmer creole register with caravan members. Igbo exclamations under stress. Their Samoan grandmother's habit of using fish species as metaphors for human behavior.",
+    "cadence": "Measured and even, with a quality of absolute attention — they speak as if recording testimony",
+    "verbal_tics": [
+      "pauses before proper nouns as if consulting an internal list",
+      "'as it stands' as a throat-clearing phrase",
+      "repeats numbers back to confirm them"
+    ],
+    "example_lines": [
+      "'As it stands, your file has been in Secondary Review since the fourteenth. That is not a processing step. That is a file that someone has decided not to look at. Those are different problems with different solutions.'",
+      "'My grandmother would say that man is a flatfish — he sees everything from one side and calls it the whole ocean.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Twelve-year-old caravan member Tobias Faatoafe-Musa (a distant cousin) has vanished from the overflow facility. The Gateway security log shows him leaving voluntarily. Chiamaka knows he would never leave without telling them. They need someone to look into it who can move through the city in ways they cannot.",
+    "Chiamaka has found a procedural error in GLMZ's resettlement framework that would, if properly filed, advance thirty-seven caravan cases simultaneously. They need someone with digital access to help them file it before the quarterly review window closes in six days."
+  ],
+  "narrative_function": "Quest giver (bureaucratic navigation problems, missing persons within the refugee system), information source on GLMZ's resettlement processes and their failures, emotional anchor for the caravan community, potential ally with a network of people who owe them favors",
+  "augmentations": "Bioluminescent freckles (cosmetic geneware, cheekbones and nose bridge, amber-warm light). No other augmentations.",
+  "daily_life": "Chiamaka rises before the hangar wakes up, spends two hours updating a meticulous handwritten log of each caravan member's bureaucratic status, spends the rest of the day navigating the Gateway's processing windows and taking meetings with anyone who might have authority over resettlement timelines, and spends their evenings walking the perimeter of the overflow facility because stillness has become impossible.",
+  "affiliation": "Seventh Coastal Movement caravan collective; informal advocacy with no organizational backing",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "refugee advocate",
+      "bureaucratic fighter",
+      "collective anchor",
+      "patient fury",
+      "bioluminescent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything — if it isn't written down, it didn't happen and can be denied",
+      "Never promise what they can't deliver; never understate what they believe they can deliver",
+      "The collective's needs before their own, with the exception of sleep, which they protect"
+    ],
+    "escalation_ladder": [
+      "Patient procedural pressure — filing the correct forms in the correct order",
+      "Escalating to supervisors with documented evidence of failure at each previous level",
+      "Public witnessing — bringing community members to meetings, making invisibility impossible"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm; immediately assesses whether this person has useful authority or useful access",
+      "friends": "Drops the formality entirely; very dry humor, unexpected softness, will cry at surprising things and not apologize for it"
+    },
+    "stress_responses": {
+      "low": "Updates the log",
+      "medium": "Walks the perimeter, sometimes twice",
+      "high": "Becomes very still, very quiet, and extremely precise — speech slows down, word choice becomes surgical"
+    },
+    "contradictions": [
+      "Preaches collective care but refuses to let anyone take care of them in return"
+    ],
+    "habits": [
+      "Taps the boot where the ID chip is kept when thinking — a gesture they're not consciously aware of",
+      "Eats the same meal every day when in a fixed location (familiarity as comfort)",
+      "Leaves small bioluminescent handprints at E.L.F. shrines as offerings — a palm pressed to the screen"
+    ],
+    "breaking_points": [
+      "Being told a bureaucratic failure is 'just how it works'",
+      "A caravan member giving up and withdrawing their application"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Cockroach": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Wheelgun-38 'Roundhouse'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "GLMZ",
+    "Aslan Vasquez-Chatterjee",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Arcturus CK-5 'Bloodhound'",
+    "Ambassador Silk",
+    "Anatoliy Faye-Nkrumah",
+    "Axolotl Regenerative Suite",
+    "Cezar Watanabe-Gyasi",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Imara Solís-Bekele",
+    "Lambeau Terminus",
+    "Lumen",
+    "MERIDIAN",
+    "Meridian Munitions Wheelgun-38 'Roundhouse'",
+    "NeuralPath CivID Plus Identity & Payment BCI",
+    "Nnamdi Ostrowski-Faletolu",
+    "Noir Dining",
+    "Ringo PD-1 'Citizen'",
+    "Slagworks Industrial",
+    "TESSERA ES-4 'Perimeter'",
+    "The Collective",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Tshiamo Vukić-Arellano",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-dao Bioelectric"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Central Asian Tajik-Uzbek with Middle Eastern Persian influences and trace Northern European ancestry. Strong Silk Road genetics reflected in facial structure and coloring.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, with the kind of economy of movement that comes from doing physical labor in confined spaces. Long-limbed, minimal body fat, shoulders slightly forward from years of hunching over paperwork and port work.",
+    "hair_color": "Deep amber with black roots showing 2-3cm of regrowth",
+    "hair_style": "Undercut: long on top (10-12cm, swept back or tied loosely), faded close at the sides and nape",
+    "hair_length": "Long/Medium",
+    "eye_color": "Dark brown, almost black, with a directness that holds attention longer than expected",
+    "skin_tone": "Warm olive-brown with golden undertones characteristic of Central Asian descent, deepening slightly in sun-exposed areas with hints of Middle Eastern amber",
+    "complexion": "Strong Central Asian features: prominent cheekbones, angular jawline, straight nose with a visible crook from a past break, wide-set eyes that read as observant and exhausted simultaneously. Minimal grooming beyond necessity—clean, functional, no cosmetics. Early lines around the eyes and mouth from sustained tension. Subtle warmth to skin that reflects both Central Asian and Middle Eastern heritage.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both cheekbones and bridge of nose, warm amber-gold color that glows faintly in low light",
+      "Small scar on left temple, thin and pale, approximately 2cm long",
+      "Calluses on palms and inner fingers from years of manual labor and sustained handwriting"
+    ],
+    "visible_augmentations": "Bioluminescent freckles only—functional and cosmetic geneware, no chrome or subcutaneous hardware visible. The glow is subtle in daylight, noticeable in the hangar's fluorescent wash.",
+    "posture_movement": "Economical and purposeful. Stands with weight slightly forward, ready to move. Walks with the kind of precision that suggests constant awareness of surroundings and others' personal space. Hands often occupied—writing, organizing, gesturing through explanations. When still, there is visible tension in the shoulders and jaw.",
+    "clothing_style": "Tier 4 utilitarian. Multiple layers: fitted base layer (often dark or neutral), mid-layer with pockets (canvas, worn synthetic blends), outer layer of reinforced fabric or light weatherproof material. Colors are muted—grays, blacks, faded greens, occasional warm tones. Clothing is patched where necessary, maintained with care. Worn boots with good tread. A canvas satchel containing handwritten logs, documents, and translation references. No corporate branding. Jewelry minimal—a simple metal bracelet on left wrist, possibly of personal or cultural significance."
+  },
+  "image_prompt": "Sardor Karimov, Central Asian heritage man with warm olive-brown skin and prominent cheekbones, dark almost-black eyes with sustained exhaustion, strong angular features. Deep amber hair with black roots in an undercut style, swept back. Bioluminescent amber-gold freckles glowing faintly across cheekbones and nose bridge. Thin scar on left temple. Lean 178cm frame, slightly forward posture ready to move. Wearing layered utilitarian cyberpunk clothing—fitted dark base layer, canvas mid-layer with pockets, muted grays and blacks, worn boots with good tread. Canvas satchel with documents visible. Simple metal bracelet on left wrist. Standing in fluorescent hangar lighting, minimal body tension visible in shoulders and jaw. Economical, purposeful movement. Cyberpunk 2226, Great Lakes Metropolitan Zone port worker aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Central Asian": 69.2,
+    "Middle Eastern": 24.2,
+    "Northern European": 6.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

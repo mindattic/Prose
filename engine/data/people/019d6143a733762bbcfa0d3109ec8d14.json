@@ -1,0 +1,260 @@
+{
+  "id": "019d6143a733762bbcfa0d3109ec8d14",
+  "type": "character",
+  "name": "Zephyr Nwosu-Olofsson",
+  "aliases": [
+    "Zib",
+    "The Pole"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Black market data broker and bootleg media seller",
+  "age": 44,
+  "status": "active",
+  "location": "The Burnished Market, stall cluster near the Alban Souk border, Calumet Rise, near Halsted and Division",
+  "description": "Zbigniew is a compact man with a permanent five-day beard the colour of iron filings and a complexion that sits somewhere between olive and warm brown depending on the light — an inheritance from a Polish grandfather and a Ghanaian grandmother that he describes as 'maximum average.' His eyes are augmented with data-overlay lenses that give his irises a faint amber grid pattern; the left one has a slow drift that he's never gotten fixed because the repair estimate was 'an absolute scandal.' He dresses in the studied nondescriptness of someone who doesn't want to be remembered: mid-grey layers, nothing with a logo, shoes that could belong to six different professions. His stall front is officially a media archive service — data recovery, legacy file transfer, antique format conversion — which is completely true and also a cover for everything else.\n\nHe's been in the Burnished Market for eleven years and has a quality that experienced market-walkers learn to recognise: the stillness of someone who is always listening more than they appear to be. He is affable in a careful, calibrated way, and his sense of humour is so dry it can take a full beat for people to realise a joke has been made. He has never been arrested. He considers this his primary professional achievement.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being made visible — truly seen and tracked by someone with the resources to do something about it",
+      "That the data he's brokered has caused harm he doesn't know about"
+    ],
+    "core_desires": [
+      "To retire to a degree of comfort and total anonymity",
+      "To broker the one genuinely important piece of information — the thing that actually matters — before he's done"
+    ],
+    "coping_mechanisms": [
+      "The lunch ritual — the one fixed point of his day",
+      "Compartmentalising: doesn't think about consequences of brokered data after the transaction closes",
+      "Meticulous risk assessment before every decision"
+    ],
+    "blind_spots": [
+      "His risk assessment is excellent for external threats but he underestimates internal ones — the people he's close to",
+      "Believes he's more anonymous than he actually is"
+    ],
+    "secret": "He has a copy of a complete Axiom internal communication archive from 2189-2194 that he's never sold because he doesn't know who is safe to sell it to. He's had it for six years. It contains evidence of something large — he hasn't read all of it because he's afraid knowing more would make him a target he couldn't manage."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, economical, dry wit buried in flat delivery; uses archaic media terminology as in-jokes; occasionally lets Polish phrasing structure bleed into English syntax",
+    "cadence": "Even and measured, rarely varies — gives nothing away through inflection",
+    "verbal_tics": [
+      "Long pause before answering any question that matters",
+      "'That's one way to describe it'"
+    ],
+    "example_lines": [
+      "What you're asking for is technically a legacy format transfer. That's what I do. The particular files you want transferred — that's a pricing question.",
+      "Someone came asking yesterday. Similar questions. I told them the same thing I'll tell you: I don't know anything interesting. I just know where the interesting things are stored."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Axiom archive he's been sitting on for six years becomes suddenly relevant — someone else has found a fragment of it and is moving",
+    "A regular customer he's always liked comes in wanting data that Zbigniew knows will get them killed, and for once he's not sure how to handle it professionally"
+  ],
+  "narrative_function": "Data broker and information source; can access a wide range of leaked, stolen, or simply forgotten corporate data; bootleg media seller provides local colour; quest giver when a data packet he's brokered turns out to be far more dangerous than advertised.",
+  "augmentations": "Data-overlay lens augmentation (left eye drifts slightly, unrepaired). Neural buffer chip for temporary data storage — allows him to hold a data packet in short-term neural memory for up to two hours before it must be offloaded.",
+  "daily_life": "Arrives at stall at 1000, keeps irregular hours, never closes at the same time twice. Has lunch at the same dumpling counter in the Alban Souk every day regardless of circumstances — the one predictable thing about his schedule.",
+  "affiliation": "Independent; working relationship with two Axiom mid-level data archivists who leak surplus; pays a complex web of informal fees to four different factions operating in Calumet Rise",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 0,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information-broker",
+      "low-profile",
+      "cautious",
+      "long-game-player",
+      "ritual-creature"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never hold data you can't plausibly deny holding — except the one exception, which keeps him up at night",
+      "Don't sell to anyone you can't read"
+    ],
+    "escalation_ladder": [
+      "Flat denial with perfect neutrality",
+      "Redirecting to something harmless and legitimate",
+      "Closing the stall and not opening again for three days"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and slightly blank — gives nothing, takes everything in",
+      "friends": "Wry and surprisingly warm; the jokes become visible"
+    },
+    "stress_responses": {
+      "low": "Goes flatter — less expression, more precise language",
+      "medium": "Skips straight to the dumpling counter regardless of time of day",
+      "high": "Activates the neural buffer, loads the Axiom archive fragment into working memory, and sits with it like a private crisis"
+    },
+    "contradictions": [
+      "Meticulous about anonymity but keeps the most dangerous thing he's ever had, undeleted, for six years"
+    ],
+    "habits": [
+      "Drums two fingers on the counter when listening",
+      "Reorganises data categories in his head during boring moments — visible as a slight unfocusing of the eyes"
+    ],
+    "breaking_points": [
+      "Someone he's protected being made into collateral damage by information he brokered"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "left eye drifts, unrepaired",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Opportunist": 0.7,
+    "Info Broker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Street Custom 'Backfire' Weaponized Exhaust System"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "The Alban Souk",
+    "Calumet Rise",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "The CEO",
+    "Grandmother",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "The Gradient Compact",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "ARCHIVE",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Iron",
+    "Emeka Johansson-Orozco",
+    "Last Word",
+    "MERIDIAN",
+    "Makena Johanssen-Diallo",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Philibert Mwangi-Djordjevic",
+    "Ringo DV-4 'Courier'",
+    "Réginald Asomaning-Čabarkapa",
+    "Street Custom 'Backfire' Weaponized Exhaust System",
+    "The Bazaar",
+    "The Counter",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (36.5%), Northern European (22.0%), Hispanic/Latin American (12.6%), South Asian (12.1%), East Asian (9.2%), Eastern European (7.6%) — a truly pan-global mixture resulting in warm mid-brown skin with complex undertones, subtle warm golden highlights beneath the surface, and facial structure reflecting the blend of West African, Scandinavian, Mediterranean, and pan-Asian ancestry",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and economical — neither lean nor heavy, structured like someone who moves through crowded spaces efficiently. Shoulders squared, no wasted bulk.",
+    "hair_color": "Dark brown with premature grey threading through",
+    "hair_style": "Short, swept back, functional",
+    "hair_length": "Short",
+    "eye_color": "Natural brown with faint amber grid pattern overlay (augmented left lens); left iris shows minor drift",
+    "skin_tone": "Warm mid-brown with golden undertones, deepening slightly at temples and jawline — the result of blended Sub-Saharan, South Asian, and Northern European ancestry creating depth and richness",
+    "complexion": "Five-day stubble in iron-grey, persistent across all seasons. Even complexion with no visible scarring. Forehead and around the eyes shows the wear of concentration — fine lines that suggest chronic focus. Facial structure reflects pan-global ancestry: broader cheekbones with subtle East Asian influence, balanced with West African warmth and Northern European angularity. Clean but not groomed; the appearance of someone who maintains standards without vanity.",
+    "distinguishing_marks": [
+      "Faint silvery scar tissue running 3cm along the underside of left forearm near wrist — old, precise, consistent with surgical intervention or careful blade work",
+      "Augmentation port scar behind left ear, barely visible under close inspection — roughly 8mm diameter, healed smooth"
+    ],
+    "visible_augmentations": "Left eye displays subtle amber grid pattern across the iris when light catches at certain angles; the eye drifts inward slightly at rest, noticeable only during extended conversation. No other visible chrome or subdermal modifications.",
+    "posture_movement": "Stillness is his default — minimal gesture, economical motion. Hands rest in lap or on counter surface. When he moves through the market, he navigates without apparent urgency, head tracking conversations and movement around him. Doesn't make eye contact unless necessary; when he does, it's deliberate. Turns to face people only partially, as if ready to pivot away.",
+    "clothing_style": "Deliberately unremarkable: mid-grey merino layers, matte textiles, nothing with visible branding. Worn jacket in charcoal, practical pockets, no decoration. Shoes are functional and forgettable — could be construction worker, data courier, or archival technician. A scarf in neutral tone, wrapped once, used interchangeably for warmth or to obscure the lower face. The effect is studied nondescriptness — expensive enough to suggest competence, generic enough to resist memory."
+  },
+  "image_prompt": "Zephyr Nwosu-Olofsson, compact mixed-heritage man 168cm, warm mid-brown skin with golden undertones, dark hair with premature grey swept back short, five-day iron-grey stubble, natural brown eyes with subtle amber grid augmentation in left iris showing minor drift, fine concentration lines around eyes, economical posture at rest, hands relaxed, wearing layered mid-grey merino and charcoal jacket, neutral-toned scarf draped once, functional dark shoes, minimal visible augmentation, studied nondescript appearance, cyberpunk 2200s Great Lakes Metropolitan setting, dimly lit market or data den, still and deliberate presence, ready to pivot, no eye contact, moody atmospheric lighting, photorealistic, intimate portraiture, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 36.5,
+    "Northern European": 22.0,
+    "Hispanic/Latin American": 12.6,
+    "South Asian": 12.1,
+    "East Asian": 9.2,
+    "Eastern European": 7.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

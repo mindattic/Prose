@@ -1,0 +1,327 @@
+{
+  "id": "019d6143a5f27175b3f3aafd69e7b87e",
+  "type": "character",
+  "name": "Emiliano Espinoza",
+  "aliases": [
+    "Uranium",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Remote drone and vehicle operations specialist — rigger",
+  "age": 45,
+  "status": "active",
+  "location": "Meridian Station — central transit nexus, neutral ground, near LaSalle and Madison",
+  "description": "Djeneba Aguilar-Annan are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Djeneba Aguilar-Annan plans to keep it that way. They work as a rigger out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented rigger in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.72,
+      "ideal": 0.27,
+      "id": 0.34,
+      "shadow": 0.89,
+      "mask": 0.65,
+      "ghost": 0.53
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "To protect the people in their district who can't protect themselves",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Djeneba Aguilar-Annan once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Repeats the last thing someone said back to them before responding — processing or intimidation"
+    ],
+    "example_lines": [
+      "\"I have eyes in every district. Most of them are on wings.\"",
+      "\"The drone doesn't care about your feelings. Neither do I.\"",
+      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Djeneba Aguilar-Annan on jobs, and the impersonator is better at the work than the original",
+    "Djeneba Aguilar-Annan's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A high-paying contract turns out to target someone Djeneba Aguilar-Annan owes a personal debt to"
+  ],
+  "narrative_function": "Djeneba Aguilar-Annan functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Eye replacement — one organic, one cybernetic with recording capability and zoom. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — works solo contracts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 5
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.65,
+      "caution": 0.9,
+      "loyalty": 0.92,
+      "greed": 0.28,
+      "empathy": 0.66
+    },
+    "drives": [
+      "loyalty",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 7,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "natural leadership presence",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "grudge-holding that compromises rational decision-making",
+      "chronic insomnia affecting long-term performance",
+      "emotional volatility under extreme stress"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "rigger",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Eye replacement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "replaces": ""
+    },
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "GLMZ",
+    "The Nearfield",
+    "Brecken Yılmaz-Osei",
+    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Ilhan Sandstrom-Badu",
+    "Independent Micro-Grid Power Cooperative",
+    "Lazarus IDP-1 'Teeth'",
+    "MERIDIAN",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Slagworks Industrial",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Pure Hand"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Southeast Asian dominant (42.2%) with significant Hispanic/Latin American (28.9%), Central Asian (19.3%), and Northern European (9.6%) ancestry. The genetic mix produces warm-toned, olive-to-amber skin with high cheekbones and angular facial structure characteristic of Southeast Asian and Central Asian features, softened by Hispanic and Northern European genetic contribution.",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Athletic and lean with defined musculature — the wiry strength of someone who trains daily. No excess fat. Shoulders broad but not bulky. Movement suggests coiled tension.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Close-cropped fade on sides, longer on top — practical, minimal maintenance. No ornamentation.",
+    "hair_length": "Short",
+    "eye_color": "Left eye: dark brown, organic. Right eye: cybernetic with silver-chrome iris, LED recording indicators faintly visible around the pupil",
+    "skin_tone": "Warm olive-amber with golden undertones, reflecting the dominant Southeast Asian ancestry blended with Central Asian, Hispanic, and minimal Northern European heritage. Medium depth with a subtle luminosity.",
+    "complexion": "Angular face with high, prominent cheekbones and sharp jawline characteristic of Southeast Asian and Central Asian features. Eyes set with slight depth creating an intent gaze. Minimal facial hair — meticulously groomed. Skin shows the wear of exposure but is kept clean. Expression naturally guarded, eyes rarely at rest.",
+    "distinguishing_marks": [
+      "Thin scar along left temple running toward the hairline — old trauma, surgical precision suggests medical intervention or augmentation work",
+      "Faint burn scarring across the dorsal surface of right hand and wrist — chemical exposure or electrical feedback, carefully concealed under work gloves when in public",
+      "Small tattoo on the inside of left wrist: minimalist circuit pattern, likely personal significance or dead-name remnant"
+    ],
+    "visible_augmentations": "Right eye is obviously cybernetic — chrome and polished steel casing, LED indicators, slight luminescence when recording. The prosthetic is expensive and deliberately visible; no cosmetic covering. Wired reflexes are subcutaneous, not visible, but affect movement — a coiled readiness in the shoulders and hands, reaction time evident in micro-adjustments.",
+    "posture_movement": "Upright, economical. Moves like someone always calculating trajectory and distance. Hands at rest tend toward positioning that allows rapid movement. Eyes scan constantly — the organic one and the cybernetic one sometimes move at different speeds, creating an unsettling uncanny-valley effect. When focused on a task, becomes absolutely still.",
+    "clothing_style": "Tier 3-4 practical wear. Dark utility jacket (synthetic leather, reinforced) over fitted black undershirt. Cargo pants with multiple pockets, worn grey. Steel-toed boots broken in but well-maintained. No logos or corp affiliation visible. Small rig-rig pouch on belt carrying micro-tools, data sticks, and maintenance gear. Wears a weathered smart-glasses accessory but rarely uses it — prefers unmediated vision. Everything functional, nothing decorative. The wardrobe of someone who doesn't want to be remembered."
+  },
+  "image_prompt": "Emiliano Espinoza, 172cm tall, lean athletic build with coiled tension. Southeast Asian-dominant mixed heritage with olive-amber warm skin tone, high angular cheekbones, sharp jawline. Dark brown closely cropped fade hairstyle. Left eye organic dark brown, right eye cybernetic chrome with LED indicators and luminescent recording glow. Thin surgical scar left temple. Expressionless guarded face, constantly scanning. Dark utility jacket synthetic leather over black fitted shirt, grey cargo pants, steel-toed worn boots. Micro-tools pouch on belt. Wired reflexes visible in micro-shoulder adjustments, hands positioned for rapid movement. Standing in shadow of neon-lit Great Lakes Metropolitan Zone, low-key industrial setting, cool blue and amber lighting casting chrome eye reflection. Cyberpunk 2226, unmediated vision, no-logo aesthetic, the kind of person designed not to be remembered. Cinematic lighting, photorealistic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 42.2,
+    "Hispanic/Latin American": 28.9,
+    "Central Asian": 19.3,
+    "Northern European": 9.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

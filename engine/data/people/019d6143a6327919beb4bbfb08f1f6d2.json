@@ -1,0 +1,308 @@
+{
+  "id": "019d6143a6327919beb4bbfb08f1f6d2",
+  "type": "character",
+  "name": "Samira Sengupta",
+  "aliases": [
+    "Madame Brig",
+    "The Knife"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired Arcturus mid-tier executive, Tier 4 (reduced from peak Tier 4), pension-comfortable, quietly bitter neighbor",
+  "age": 63,
+  "status": "active",
+  "location": "Avalon Quiet, a well-appointed fourth-floor flat in a maintained residential block, Tessera-managed, near Lincoln and Clark",
+  "description": "Ingeborg is a sharp-featured woman of Norwegian-Uzbek-Congolese descent, tall and angular with silver hair worn in a severe geometric cut she has maintained for thirty years. Her skin is a warm medium brown, and she has the kind of precise posture that comes from being watched for decades and deciding to make the watching work for her. She has chromatic irises — a geneware modification she got at the peak of her Arcturus career, cycling slowly through a spectrum from steel-blue to amber-grey — which she once selected for boardroom presence and now keeps because she finds them soothing to observe in mirrors. She dresses expensively and correctly, every day, even when she has nowhere to go.\n\nIngeborg retired four years ago when Arcturus restructured her division out of existence without asking her opinion. She is sixty-three and considered herself a decade from true retirement, and the rage about this has had four years to marinate into something complex and layered — part bitterness, part dark humor, part unexpected empathy for the working-class neighbors she never would have chosen and has found, to her own irritation, that she genuinely likes. She attends the community council meetings and offers unsolicited strategic advice. She has a small consulting practice that generates occasional income and gives her somewhere to put her competence. She is not a villain. She is a person whose worldview has been significantly disrupted by having to actually live in a community rather than manage it from above, and she is, slowly and gracelessly, adjusting.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being irrelevant — not disliked, not opposed, just genuinely not needed",
+      "Discovering that the career she sacrificed everything for was built on foundations she should have questioned"
+    ],
+    "core_desires": [
+      "To exercise her competence at a scale that matters",
+      "To understand, finally, how she ended up alone in a flat in Avalon Quiet"
+    ],
+    "coping_mechanisms": [
+      "Reframing every situation as a strategic problem she can solve",
+      "Maintaining external appearances as a bulwark against internal uncertainty"
+    ],
+    "blind_spots": [
+      "She defaults to assuming that good strategy produces good outcomes, underweighting luck, timing, and the irrational",
+      "She still categorizes people by their institutional utility before their human qualities, though she is increasingly aware of doing this and trying to correct for it"
+    ],
+    "secret": "During her time at Arcturus, she approved a resource-extraction contract for a site in what is now Calumet Rise knowing the environmental impact projections had been manipulated by the site team. She approved it because the numbers worked and the project made her division's year. The contamination from that site is still being managed, and seventeen families who lived nearest the extraction point have documented health impacts. She has reviewed the updated environmental reports three times in retirement. She has not reported this to anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Executive-precise, high-register, with a tendency to restate other people's points more accurately and efficiently than they made them. Fluent Norwegian and Uzbek surface occasionally as loan words when she's surprised or amused.",
+    "cadence": "Clipped, efficient, with the rhythm of someone who spent decades running meetings. Uncomfortable with meandering; has learned to tolerate it in others while visibly containing herself.",
+    "verbal_tics": [
+      "'What you're actually asking is —'",
+      "Completes her sentences with complete precision even when this makes her sound cold",
+      "A very slight pause before she says something she knows will be unwelcome"
+    ],
+    "example_lines": [
+      "What you're actually asking is whether I know someone at Arcturus who would care about this. The answer is yes. Whether they would act on it is a different question, and the answer to that one depends on what you can offer them that they can't get more safely elsewhere.",
+      "I cooked for twenty-three years of business dinners. I was very good at it. Now I cook for myself, which is either liberation or a very specific kind of loss. I haven't decided. Beklara. — sorry, that's Uzbek, it means wait and see."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ingeborg receives an unsolicited encrypted dossier from someone inside Arcturus that contains evidence about the Calumet Rise contamination — it's unclear if it's an offer, a threat, or a test",
+    "A community dispute in Avalon Quiet requires someone with corporate legal expertise to navigate a Tessera maintenance contract; Ingeborg is the obvious choice and resents being obvious",
+    "Her neural interface begins receiving fragments of Arcturus internal communications it shouldn't have access to — either it's a hack, a ghost in the system, or someone is trying to reconnect her to something she thought she'd left behind"
+  ],
+  "narrative_function": "Former insider with detailed knowledge of Arcturus internal structures, procedures, and key personnel; strategic advisor willing to trade information for the right consideration; complex antagonist-ally whose help comes with friction; window into corporate culture and the experience of losing institutional power.",
+  "augmentations": "Chromatic iris geneware (steel-blue to amber-grey cycle, slow). Neural interface for executive data management — high-end, Arcturus-issued, still functional, she keeps it because decommissioning it feels like admitting something. Color-adjusting fingernail treatment (cosmetic geneware, shifts nail beds from nude to deep burgundy — a personal indulgence).",
+  "daily_life": "Wakes precisely at 0630, exercises with disciplined intensity for 45 minutes, takes a long shower, dresses fully before breakfast. Mornings on consulting calls or drafting strategic documents that may or may not have clients. Afternoons she walks Avalon Quiet extensively in the way she once walked corporate corridors — observing, cataloguing, assessing — and has begun doing this with something more like affection than she would admit. Evenings she cooks elaborate meals for one and listens to music from the 2140s.",
+  "affiliation": "Formerly Arcturus Division of Strategic Resource Management (23 years, Division Director); currently independent consultant (Ingeborg K-S Consulting, sole proprietor); Avalon Quiet residents' association (member, frequently combative)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Former Executive",
+      "Strategic Mind",
+      "Reluctant Community Member",
+      "Compromised Conscience",
+      "Isolated by Design"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Assess the actual stakes before responding to the apparent stakes",
+      "Never volunteer information before understanding what the other party wants with it"
+    ],
+    "escalation_ladder": [
+      "Cool, precise question that reframes the situation to her advantage",
+      "Clear articulation of what she knows, what she will and won't do, and why",
+      "Strategic withdrawal — she stops engaging, begins working another angle",
+      "Direct, private, comprehensive confrontation that leaves no ambiguity about consequences"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally polite, immediately categorizing, controlled warmth as social lubricant",
+      "friends": "Drier humor, more direct, occasionally startlingly perceptive about their inner lives in ways that feel like gifts"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise — shorter sentences, cleaner analysis",
+      "medium": "Falls into full executive mode; all emotion becomes data; makes lists",
+      "high": "Goes entirely silent for a period, then returns with a position so thoroughly prepared it seems almost alarming"
+    },
+    "contradictions": [
+      "Believes in rigorous ethics while having made an ethically catastrophic decision and not corrected it",
+      "Dislikes sentimentality while developing genuine sentimental attachment to her neighborhood in retirement"
+    ],
+    "habits": [
+      "Changes her iris color setting to amber when she is making a decision she's unsure about",
+      "Keeps a printed organizational chart of Arcturus that she updates by memory quarterly",
+      "Reviews the Calumet Rise environmental reports approximately every six months, late at night"
+    ],
+    "breaking_points": [
+      "Being publicly diminished or condescended to",
+      "Being directly confronted with the Calumet Rise decision by someone who lives with its consequences"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Nostalgic": 0.7,
+    "War Weary": 0.7,
+    "Mentor": 0.7,
+    "Stoic": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what was then a Tier 3 Engelheim residential block to a civil engineer mother and a municipal archivist father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Arcturus as a junior resource analyst",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to mid-level divisional management; begins rapid ascent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Approves the Calumet Rise extraction contract with the manipulated projections",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed Division Director, Strategic Resource Management",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Arcturus restructures her division; she is retired with full pension but not offered a transfer",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moves to Avalon Quiet; begins consulting practice; reviews the Calumet Rise environmental report for the first time since approval",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Calumet Rise",
+    "Avalon Quiet",
+    "Arcturus Defense Solutions",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Steel",
+    "Arcturus Bulwark APC",
+    "Cezar Watanabe-Gyasi",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Korrath",
+    "Plot 17",
+    "Solveig Tambadou-Kereselidze",
+    "The Pure Hand",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Predominantly South Asian and Middle Eastern ancestry with significant Sub-Saharan African, East Asian, and minor Eastern European and Pacific Islander heritage. This complex global mix manifests in warm medium-brown skin with subtle golden undertones, sharp angular features with high cheekbones characteristic of South Asian and Middle Eastern genetics, and the lean musculature of disciplined maintenance.",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and angular, with the lean musculature of someone who exercises with disciplined intensity. Shoulders squared, minimal body fat, a frame that reads as deliberately maintained rather than naturally effortless.",
+    "hair_color": "Silver",
+    "hair_style": "Severe geometric cut, precisely shaped with clean lines; the same cut maintained for thirty years",
+    "hair_length": "Short (chin-length, swept back)",
+    "eye_color": "Chromatic irises cycling steel-blue to amber-grey (geneware modification)",
+    "skin_tone": "Warm medium brown with golden undertones, the complexion of someone who has spent decades in climate-controlled corporate environments and now walks daily in variable weather. The tone reflects the blending of South Asian warmth, Middle Eastern depth, and Sub-Saharan richness.",
+    "complexion": "Sharp-featured with high cheekbones and a defined jawline characteristic of South Asian and Middle Eastern ancestry. Minimal wrinkles for her age — precise skincare and subtle cosmetic maintenance. Skin texture even, lightly weathered around the eyes from recent daily walking exposure. Expression default: controlled, observant, precise.",
+    "distinguishing_marks": [
+      "Fine surgical scars at both temples where the chromatic iris geneware was installed, barely visible unless light catches them directly",
+      "Age marks on her hands — sun damage accumulated from Tier 4 balcony exposure and recent daily walking — which she neither hides nor corrects"
+    ],
+    "visible_augmentations": "Chromatic irises (most obvious — slowly cycling between steel-blue and amber-grey, visible in any light). Color-adjusting fingernail treatment on both hands: nail beds shift from nude to deep burgundy depending on skin chemistry and mood. High-end neural interface port at the base of her skull, small and discrete, left visible as a statement rather than concealed.",
+    "posture_movement": "Precise, upright posture maintained from decades of executive observation and self-presentation. Walks with measured stride, deliberate and cataloguing — the gait of someone taking inventory. Gestures are economical and controlled, hands moving only when purposeful. No fidgeting. She carries herself as though still being watched, but has made a quiet peace with it.",
+    "clothing_style": "Expensive and correct, every day. Tier 4 professional wardrobe: tailored wool trousers, high-quality knitwear, structured blazers in neutral palettes (charcoal, ivory, camel). Jewelry minimal and functional — a chronometer watch (Arcturus-issue, never replaced), a single platinum ring. Footwear always precise: polished leather loafers or structured boots. No compromise, no casual wear. Clothing reads as armor, but also as self-respect."
+  },
+  "image_prompt": "Samira Sengupta, tall angular South Asian and Middle Eastern woman with warm medium-brown skin and golden undertones, sharp high cheekbones, silver hair in severe geometric cut swept back. Chromatic geneware irises cycling between steel-blue and amber-grey, barely-visible surgical scars at temples. Age marks on hands from sun exposure. Wearing expensive charcoal tailored wool trousers and ivory structured blazer, polished leather loafers, minimal platinum jewelry and Arcturus chronometer. Precise upright posture, measured deliberate gait, controlled expression, cataloguing demeanor. Neural interface port visible at base of skull. High-end color-adjusting fingernails. Cyberpunk 2226 GLMZ corporate environment, cool overhead lighting casting subtle shadows on her sharp features, standing in climate-controlled interior with floor-to-ceiling windows behind her. Mood: controlled, observant, self-possessed, armor-like professionalism. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 29.2,
+    "Middle Eastern": 27.6,
+    "Sub-Saharan African": 15.9,
+    "East Asian": 15.6,
+    "Eastern European": 5.9,
+    "Pacific Islander": 5.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

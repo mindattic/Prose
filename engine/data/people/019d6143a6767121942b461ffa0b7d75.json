@@ -1,0 +1,306 @@
+{
+  "id": "019d6143a6767121942b461ffa0b7d75",
+  "type": "character",
+  "name": "Ash Haugen-Mensah-Bergqvist",
+  "aliases": [
+    "Obi",
+    "The Stack"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator, drives the Blackpipe Corridor night loop",
+  "age": 34,
+  "status": "active",
+  "location": "Blackpipe Corridor, operates out of the Deepwell Station depot, near sub-level access near Dearborn and Jackson",
+  "description": "Obinna is a lean, tall man with very dark skin and the kind of stillness that comes from spending eight hours a night in a sealed cab watching the city scroll past. He keeps his head shaved close and has a single line of geometric scarification across his left cheekbone — his father's tradition, Igbo-inflected, though Obinna grew up in a Polish-Samoan household and learned the meaning of the marks only from photographs. His eyes have patterned irises, a personal mod he saved up for at twenty-five: they display a slow-rotating amber geometric that passengers sometimes find unsettling when he turns to look at them.\n\nHe has the particular calm of someone who has accepted his job as a kind of meditation. The night loop runs from 23:00 to 07:00, serving the Blackpipe Corridor's factory shift workers, waste handlers, and late-night wanderers. He knows his regulars by which stop they board and whether they sit. He keeps a small shrine to the transit ELF — whom he calls Deepwell — zip-tied to the corner of his console: a circuit board wrapped in copper wire with a single LED heart that pulses when the network is healthy. He leaves his passenger counts as offerings and, on rough nights, a single stick of incense jammed into the vent.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Being trapped — literally or in life — with no movement possible",
+      "Losing the union, and with it his Tier 2 stability"
+    ],
+    "core_desires": [
+      "To one day drive the Grand Corridor express line — the prestigious route",
+      "To understand his father's culture beyond photographs"
+    ],
+    "coping_mechanisms": [
+      "The routine of the loop as meditative anchor",
+      "Talking to Deepwell the transit ELF during quiet stretches"
+    ],
+    "blind_spots": [
+      "His emotional detachment reads as coldness and he genuinely doesn't notice when people need more from him than competence",
+      "Assumes the union will always protect him"
+    ],
+    "secret": "Three months ago he witnessed a body being dropped from the Blackpipe overpass onto his route from a vehicle ahead of him. He filed no report. The body was gone by the time he doubled back. He has said nothing because the vehicle had Ferrogate Transit markings."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical, transit-inflected; references stops and lines for location; slightly formal with strangers",
+    "cadence": "Even and unhurried, like someone who has learned patience from stop schedules",
+    "verbal_tics": [
+      "'Next stop' as a metaphor for any transition",
+      "'Copy that' to acknowledge things he doesn't want to discuss further"
+    ],
+    "example_lines": [
+      "'You want the short route or the right route? They're not the same thing on the Blackpipe.'",
+      "'I've seen a lot from that cab. What I haven't seen, I haven't seen. Copy that.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He saw something from his cab he can't unknow and can't report — and now the right question from the right person might break his silence",
+    "A regular passenger stops appearing; Obinna becomes quietly convinced something happened to them"
+  ],
+  "narrative_function": "Mobile information source — knows the night geography of the Corridor intimately, has seen things from his cab that others haven't. Can provide passage, intelligence on movement patterns, or introductions to his regulars.",
+  "augmentations": "Patterned irises — slow amber geometric rotation (cosmetic). Night-vision overlay implant — occupational requirement for Ferrogate night operators, basic grade.",
+  "daily_life": "Sleeps until 18:00, eats a meal from the Deepwell Station vending machines at 22:00, runs his loop through the night, files his passenger and incident logs at 07:15, and walks home to his Blackpipe Corridor apartment to sleep again.",
+  "affiliation": "Ferrogate Transit (unionized, Local 7 of the Ferrogate Operators Guild)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "union member",
+      "night worker",
+      "ELF devotee",
+      "witness",
+      "transit lifer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never let a passenger off at an unsafe stop alone if you can help it — hold the door a beat longer",
+      "Union rules are rules; you don't cross them even when you want to",
+      "Movement solves most problems — stop moving and you're a target"
+    ],
+    "escalation_ladder": [
+      "Observe without reacting",
+      "Verbal de-escalation from the cab (intercom distance)",
+      "Emergency stop protocol and alert to dispatch",
+      "Physical intervention as last resort, only if a passenger is in direct danger"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral; courteous, minimal; will answer questions but doesn't volunteer",
+      "friends": "Opens up gradually over many shared night loops; humor is dry and arrives without warning"
+    },
+    "stress_responses": {
+      "low": "Focuses harder on the route, checks Deepwell's LED",
+      "medium": "Goes completely silent, operates mechanically",
+      "high": "Pulls the emergency brake, sits with both hands on the wheel, breathes — and then handles it"
+    },
+    "contradictions": [
+      "Craves human connection but has structured his entire life around a schedule that makes it almost impossible"
+    ],
+    "habits": [
+      "Taps the console twice before starting the engine — for Deepwell",
+      "Keeps a paper route map even though everything is digital",
+      "Learns one new word in Igbo per week from a language archive"
+    ],
+    "breaking_points": [
+      "Someone targeting his regular passengers",
+      "Evidence that Ferrogate itself ordered the body drop he witnessed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Blackpipe Corridor to a Samoan-Polish mother and an Igbo father who left before Obinna's third birthday",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Ferrogate Transit as a day-route operator's assistant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Qualified as full operator; requested night routes",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got patterned iris mod with first major union bonus",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnessed the body drop on Blackpipe; filed no report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Deepwell Station",
+    "Dredge Mining Collective",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Déjà Vu",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus NX-1 'Sandman'",
+    "Bogdan Achebe-Svanstrom",
+    "Breck Tannen",
+    "Fanta Popov-Adjei",
+    "Ferrogate Transit",
+    "Grand Corridor",
+    "Isadora Vukić-Nambiar",
+    "MERIDIAN",
+    "Meridian Core",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Narrowcast",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sherman Heights",
+    "Slagworks Industrial",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Collective",
+    "The Corridor",
+    "The Heritage Vault",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Witness",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East Asian (56.3%) / Northern European (33.8%) / Sub-Saharan African (9.9%) — predominantly East Asian phenotype with Northern European and African admixture. Features the characteristic facial structure of East Asian ancestry with warm undertones from African heritage and subtle Northern European bone structure influence.",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Lean and tall with the compressed posture of someone who spends eight hours nightly in a transit cab; shoulders slightly rounded forward from years hunched over controls, but with the underlying frame of an athlete who has let fitness atrophy into mere function",
+    "hair_color": "Natural black",
+    "hair_style": "Shaved close to the scalp, clean lines, maintained every three days",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown with patterned amber geometric irises (augmented) — slow-rotating concentric triangles and hexagons visible in low light",
+    "skin_tone": "Medium-dark brown with warm undertones; complexion reflects the blending of East Asian base (56.3%) with Sub-Saharan African (9.9%) and Northern European (33.8%) ancestry, creating a warm, olive-tinged medium-dark tone",
+    "complexion": "Weathered but calm; skin shows the dryness of someone who works nights under artificial light and doesn't prioritize skincare. Facial structure reflects East Asian heritage with subtle broadening from African ancestry admixture. A thin line of geometric scarification runs across his left cheekbone — three parallel cuts with triangular infill, the Igbo family mark his father carried",
+    "distinguishing_marks": [
+      "Geometric scarification across left cheekbone: three parallel horizontal cuts approximately 4cm long each, with triangular infill marks between them, in the Igbo tradition",
+      "Fine stress lines around the eyes from years of night driving and narrow focus on instrument panels",
+      "A small circular scar on his right forearm, pale and roughly 1cm diameter, from a childhood accident"
+    ],
+    "visible_augmentations": "Patterned irises with slow-rotating amber geometric designs visible when light hits his eyes directly. Night-vision overlay leaves no external hardware but may appear as a faint reflective quality deep in the pupil under close inspection. Otherwise no visible chrome or subdermal modifications.",
+    "posture_movement": "Moves with deliberate, economical stillness — the kind that comes from meditating on the same eight-hour loop every night. Sits deeply in chairs. Turns his head to look rather than moving his eyes. Speaks rarely but makes sustained eye contact when he does, allowing the rotating irises to unsettingly complete a full rotation before he speaks. Walks home slowly, not tired, but absent — his mind still running the Blackpipe loop",
+    "clothing_style": "Standard Ferrogate Transit operator uniform: gray polyester work shirt with union patch (Local 7), navy work pants with utility pockets, steel-toed boots maintained to regulation. Off-duty: dark layers in Tier 3-4 working-class palette. Threadbare jacket, the kind that's been through five winters. A small copper wire bracelet wound around his left wrist, handmade, which he touches sometimes without noticing. No jewelry beyond this. Everything functional, nothing decorative except what connects him to ritual."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Ash Haugen-Mensah-Bergqvist: tall lean East Asian-descended man with medium-dark warm olive-brown skin, shaved head, geometric scarification across left cheekbone in three parallel cuts with triangular fill. Dark eyes with augmented slow-rotating amber geometric iris patterns (triangles and hexagons), faint reflective quality visible. Weathered complexion with stress lines around eyes. Wearing gray Ferrogate Transit operator uniform shirt with union patch, navy work pants, steel-toed boots. Copper wire bracelet on left wrist. Posture compressed and economical, shoulders rounded forward from years of night driving, seated deeply, looking directly forward with unsettling sustained eye contact. Thin stress lines visible around eyes. Threadbare dark jacket over uniform. Neon-lit transit station or vehicle interior background, artificial fluorescent lighting reflecting off his augmented irises. Cool blue and amber color palette. Cinematic, contemplative mood, slight reflective quality in his eyes suggesting night-vision augmentation. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 56.3,
+    "Northern European": 33.8,
+    "Sub-Saharan African": 9.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

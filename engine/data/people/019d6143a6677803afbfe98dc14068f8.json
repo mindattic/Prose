@@ -1,0 +1,313 @@
+{
+  "id": "019d6143a6677803afbfe98dc14068f8",
+  "type": "character",
+  "name": "Abiodun Achebe-Tovar",
+  "aliases": [
+    "Old Scratch",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Ferrogate Transit union leader, now community council elder",
+  "age": 78,
+  "status": "active",
+  "location": "Washburn Commons, Block 7 Community Hall, near Halsted and Division",
+  "description": "Nnamdi is a broad-shouldered man whose body still carries the architecture of someone who once commanded rooms — the squared posture, the deliberate occupation of space — though age has softened his silhouette into something more like a weathered monument than a weapon. His skin is deep brown and mapped with the creases of seven decades of expression, and he keeps his white hair cropped close to the scalp except for a single braid at the temple, a tradition from his Polynesian grandmother he has never explained to anyone who asked. His left arm from the elbow down is functional chrome — a Ferrogate industrial replacement from a coupling accident in '61 — and he polishes it every morning with the same cloth he uses on his shoes.\n\nHe speaks slowly and with enormous precision, as a man who learned early that imprecise words cost people their livelihoods. He has strong opinions about nearly everything and shares them freely but listens — genuinely listens — in a way that has become increasingly rare. Younger residents come to him with problems he cannot solve and leave feeling they have been given something anyway. He does not romanticize the past. He is one of the few people in Washburn Commons who will tell you, to your face, that the Corporate Wars were atrocities on all sides.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "dying before the pension system collapses and leaving his people undefended",
+      "having been complicit in harm he told himself was compromise"
+    ],
+    "core_desires": [
+      "to see one generation live without the fear of being discarded",
+      "to be honestly remembered, not mythologized"
+    ],
+    "coping_mechanisms": [
+      "routine as armor",
+      "channeling grief into bureaucratic action",
+      "humor that disarms before it wounds"
+    ],
+    "blind_spots": [
+      "overestimates what institutions can be reformed from within",
+      "assumes good faith in people who remind him of his younger self"
+    ],
+    "secret": "In 2178, during a wildcat strike, he secretly negotiated a back-channel deal with Ferrogate that ended the action early — he got pension protections for the oldest workers but left the younger strikers exposed to disciplinary action. Three of them lost their jobs. He has never told anyone and the guilt has calcified into his ideology."
+  },
+  "speech_patterns": {
+    "vocabulary": "formal but not cold; union-meeting diction mixed with old proverbs from Igbo and Samoan traditions he half-remembers; very specific with numbers and dates",
+    "cadence": "slow, measured, each sentence placed like a stone",
+    "verbal_tics": [
+      "'Let me be precise about this'",
+      "'You understand the distinction'",
+      "long pauses before answering emotional questions"
+    ],
+    "example_lines": [
+      "'Ferrogate gave me this arm and took the original. That is a fair summary of how they do business.'",
+      "'The young always think the elders don't understand urgency. We understand it better — we've watched it expire.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate auditor has arrived claiming pension overpayments dating back twenty years — Nnamdi suspects it's targeted harassment designed to exhaust elderly claimants before they can fight back",
+    "A young resident discovers the back-channel deal he made in 2178 and confronts him publicly at a community meeting",
+    "He is quietly dying of a cardiac condition he hasn't told anyone about and is trying to find someone to hand the council records to before he can no longer function"
+  ],
+  "narrative_function": "Quest giver, community anchor, moral compass, information broker on labor history and corporate pension law loopholes; can mobilize community opinion",
+  "augmentations": "Chrome industrial replacement left arm (elbow down), Ferrogate-issued, functional grade; mild cochlear amplifier (right ear only, left is natural and partially deaf)",
+  "daily_life": "Rises at 05:30, walks the same route through the Commons regardless of weather, opens the community hall at 07:00 and holds informal court until noon; afternoons are for pension paperwork disputes he helps residents navigate.",
+  "affiliation": "Washburn Commons Community Council; Ferrogate Transit Retiree Pension Union",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 4,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community leader",
+      "labor history",
+      "pension law",
+      "moral authority",
+      "secret guilt",
+      "union veteran"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "always read the document before agreeing to anything",
+      "never humiliate someone in front of others if you can avoid it — private correction, public support",
+      "if a corporation is offering something freely, find the clause"
+    ],
+    "escalation_ladder": [
+      "patient explanation",
+      "formal written objection",
+      "mobilizing community pressure",
+      "making noise through pension union channels",
+      "civil disobedience if no other option remains"
+    ],
+    "interpersonal_modes": {
+      "strangers": "courteous and slightly formal, asks more questions than he answers on first meeting",
+      "friends": "warm, teasing, occasionally surprisingly bawdy; remembers every birthday"
+    },
+    "stress_responses": {
+      "low": "becomes very still and methodical",
+      "medium": "starts building files and documentation compulsively",
+      "high": "goes silent for twenty-four hours then returns with a plan"
+    },
+    "contradictions": [
+      "preaches collective action but makes unilateral decisions under pressure",
+      "deeply principled but pragmatic in ways his principles don't quite cover"
+    ],
+    "habits": [
+      "polishes chrome arm every morning",
+      "keeps a physical ledger of every favor given and received in the community — not to collect, just to remember",
+      "leaves small data offerings at the ELF shrine in the hall's network closet before major council votes"
+    ],
+    "breaking_points": [
+      "watching a vulnerable resident get evicted while he couldn't stop it",
+      "being publicly called a sellout by someone who doesn't know what he actually sacrificed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "maintained, cosmetically worn",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Mentor": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born Washburn Commons, third generation GLMZ",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Industrial accident at Ferrogate coupling yard; loses left forearm",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joins Ferrogate Transit Workers Union; begins organizing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Back-channel deal ends wildcat strike; secret he carries since",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected union president; serves three terms",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retires from union leadership; joins Washburn Commons Community Council",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Nkomo-Lindqvist NLR-9 'Counselor'",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Nkomo-Lindqvist NLR-9 'Counselor'"
+  ],
+  "related_entities": [
+    "Washburn Commons",
+    "Grandmother",
+    "Ferrogate Transit",
+    "Amara Osei-Dzhaparidze",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Brewer's Spine",
+    "Cezar Watanabe-Gyasi",
+    "Emeka Johansson-Orozco",
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Isadora Mwangi-Thorvaldsen",
+    "Ngaire Rojas-Yeboah",
+    "Nkomo-Lindqvist NLR-9 'Counselor'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Nodar Kuznetsov-Adu",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Saodat Mirzoyan-Fubara",
+    "Solveig Tambadou-Kereselidze",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
+    "The Burden Clause",
+    "The Ledger",
+    "The Shelf Commons",
+    "Tidewater Hall",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (45.2%), Hispanic/Latin American (31.9%), Northern European (22.9%) — resulting in rich warm brown skin with subtle golden undertones from the Latin American and Northern European ancestry blending with the deeper tones of West African heritage",
+    "height_cm": 182,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and deep-chested, with the residual musculature of manual labor work, now softened by age into a sturdy, monumental frame. Slight forward curve to the spine from decades of leaning into union negotiations and community work.",
+    "hair_color": "White",
+    "hair_style": "Cropped close to scalp with a single braid at the left temple, approximately 20cm long, kept with dark thread wrapping",
+    "hair_length": "Short (mostly) with one medium braid",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm deep brown with golden undertones, reflecting the blend of West African, Latin American, and Northern European ancestry",
+    "complexion": "Heavily lined face with deep laugh lines around the eyes and mouth; weathered but clean-shaven; skin texture shows sun exposure and age but maintains even warm tone across high cheekbones; expression lines suggest a lifetime of careful listening and deliberate speech; facial structure shows the broader features characteristic of Sub-Saharan African heritage blended with the angular definition from Northern European ancestry",
+    "distinguishing_marks": [
+      "Deep linear scar along the inside of right forearm, pale and old, approximately 12cm long",
+      "Burn scarring on the left shoulder blade, roughly 8cm across, pale and mottled — industrial accident related",
+      "Thin white scar along the left jawline, approximately 6cm, barely visible unless lit from the side"
+    ],
+    "visible_augmentations": "Left arm from elbow down is functional chrome industrial-grade replacement with articulated fingers and visible servo joints; polished daily to mirror finish; bore company markings (Ferrogate Transit Authority logo) on the forearm plate. Right ear shows a small discrete cochlear amplifier module, matte black, barely noticeable unless directly observed.",
+    "posture_movement": "Stands with squared shoulders and deliberate occupation of physical space, a learned posture of authority that has not diminished with age. Moves slowly and with precision — economical gestures, no wasted motion. Left hand (chrome) operates with mechanical smoothness; right hand moves with natural aging slowness. Tends to lean slightly forward when listening. Walks at a measured, steady pace regardless of weather or urgency.",
+    "clothing_style": "Tier 3-4 working class, conservative and functional. Typically wears a dark button-up shirt (cotton blend, no logo) over a simple crew-neck undershirt; dark trousers with a heavy leather belt worn soft with age. Work boots — currently a pair of Consolidated Transit Authority issue from the 1990s, resoled twice. A grey wool long-coat in cold months. No jewelry except a faded union ring on his right ring finger. Clothing is clean, well-maintained, never flashy. The overall impression is of someone for whom fashion was never a priority, but dignity was."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Abiodun Achebe-Tovar, 182cm tall mature man with warm deep brown skin and golden undertones, close-cropped white hair with single dark-wrapped braid at left temple, heavy expression lines and laugh lines, clean-shaven weathered face. Dark brown natural eyes. Left arm polished chrome industrial prosthetic with visible servo joints and Ferrogate Transit Authority logo, right ear with discrete matte black cochlear amplifier module. Standing with squared authoritative posture, wearing dark cotton button-up shirt over crew-neck undershirt, dark trousers, worn leather belt, old Consolidated Transit Authority work boots. Grey wool long-coat. Faded union ring on right ring finger. Multiple scars visible: 12cm pale scar on right forearm inside, 8cm mottled burn scarring on left shoulder blade, 6cm white scar on left jawline. Deliberate economical movement, leaning slightly forward. Great Lakes Metropolitan Zone neon-lit background, cool industrial lighting with warm accent light catching chrome arm and facial features, dignified working-class atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 45.2,
+    "Hispanic/Latin American": 31.9,
+    "Northern European": 22.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

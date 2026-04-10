@@ -1,0 +1,285 @@
+{
+  "id": "019d6143a6687765adcb51724d01b14e",
+  "type": "character",
+  "name": "Slate Sepúlveda",
+  "aliases": [
+    "Vas",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bootleg media seller and small-time data broker — pre-collapse film, music, and suppressed corporate documents",
+  "age": 62,
+  "status": "active",
+  "location": "The Burnished Market, Engelheim, near Lincoln and Addison",
+  "description": "Nnamdi is a tall man who has bent slightly toward the horizontal over six decades, giving him the look of someone perpetually leaning in to tell you something. His hair is close-cropped white, his skin deeply lined, and his eyes are sharp behind a pair of thick-framed corrective lenses he refuses to replace with optical implants on principle — though the lenses do have an overlay function he uses for catalog searching. He dresses in the deliberate, considered style of a man who believes clothing is a form of argument: always a pressed collar, always polished shoes, always slightly too formal for wherever he is. It reads as dignity in Engelheim and pretension everywhere else. He has no geneware and finds the question slightly rude.\n\nNnamdi's stall is a dense archive of physical media — pressed data-plates, original optical discs in sealed cases, handmade data-crystals, printed zines, and annotated hard copies of documents that technically don't exist. He can find almost anything if given enough time and a reasonable description. He is opinionated, prolix, and absolutely certain that the things he sells matter in ways that most of his customers will only understand decades later. He is frequently correct and only occasionally insufferable about it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.6,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That history is being actively and successfully erased — and that he is not enough to stop it",
+      "Dying before his archive is secured and accessible to someone who will continue the work"
+    ],
+    "core_desires": [
+      "To preserve things that would otherwise be lost — to serve as a bulwark against forgetting",
+      "Recognition, if he is honest, for a life spent on things that feel thankless"
+    ],
+    "coping_mechanisms": [
+      "Intellectualizing everything, including his own pain",
+      "Treating the archive as a living project — always unfinished, always forward-looking"
+    ],
+    "blind_spots": [
+      "His conviction that he is on the right side of history makes him less careful about who he sells sensitive documents to",
+      "Has not processed that some of his anonymous archivist contacts may have institutional backing he would object to"
+    ],
+    "secret": "He is sitting on a collection of internal Axiom documents from the 2150s that detail a series of deliberate food contamination events used to accelerate slum clearance in what is now the Meridian Core. He has not released them because he is afraid — genuinely afraid, for the first time in his life — and he hates himself for it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, dense, historically literate. Quotes things. Parenthetical asides within asides.",
+    "cadence": "Builds slowly to a point, takes scenic routes through context, occasionally loses the thread and finds it again",
+    "verbal_tics": [
+      "'Which is to say—' as a pivot",
+      "refers to himself in a context-giving third person occasionally ('a man who has spent forty years in this market')"
+    ],
+    "example_lines": [
+      "What you're looking for — which is to say, what you think you're looking for — exists in three versions, and only one of them is the version they didn't want found. The price difference between them is significant. So is the reason.",
+      "I am not a fence. I am an archivist who operates in a market that does not officially value archives. The distinction matters to me even if it does not matter to you."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone has been purchasing specific pre-collapse Axiom documents from his catalog — not the most dramatic ones, but a very deliberate sequence — and Nnamdi is starting to understand what the pattern points to",
+    "He finally decides to release the Axiom contamination documents and needs a trusted intermediary to get them to someone who can protect and publish them",
+    "A physical archive he has been curating for twenty years — stored in a sub-basement of the Burnished Market — is at risk from a structural collapse or deliberate sabotage"
+  ],
+  "narrative_function": "Deep information source — can surface suppressed histories, corporate document leaks, and cultural artifacts. Exposition delivery via genuine enthusiasm. Can broker access to specific information if players know what they're looking for, or surface unexpected context about something they've already encountered.",
+  "augmentations": "Corrective lenses with overlay function (catalog and ID search). Cochlear audio enhancer — allows him to hear music and recorded audio at fidelity that most people need expensive implants for; he considers this his one real luxury.",
+  "daily_life": "Opens his stall mid-morning, spends the first hour cataloging new acquisitions while listening to music, trades and advises customers through the afternoon, and spends evenings digitally preserving materials too fragile to sell in physical form.",
+  "affiliation": "Independent; informal relationships with Engelheim's academic underground and several anonymous archivists he has never met in person",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "data broker",
+      "pre-collapse media",
+      "Axiom secret",
+      "Engelheim intellectual"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Sell to anyone who can demonstrate they understand what they're buying and why it matters",
+      "Never sell the same suppressed document to someone who could use it against the people it documents without charging considerably more and feeling bad about it"
+    ],
+    "escalation_ladder": [
+      "Engages with disagreement enthusiastically — he enjoys being challenged",
+      "Becomes formal and slightly cold when dismissed rather than engaged",
+      "Ends the conversation by turning to his catalog and simply not speaking further"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately evaluates intellectual seriousness — opens up quickly to anyone who asks a real question",
+      "friends": "Voluble, generous, will give things away that he shouldn't, stays up too late talking"
+    },
+    "stress_responses": {
+      "low": "More talkative, more referential — a flood of context as comfort",
+      "medium": "Goes quiet and organizes things — his hands need to be sorting",
+      "high": "Leaves the market and walks the Engelheim waterfront alone for hours"
+    },
+    "contradictions": [
+      "Champion of transparency who is currently withholding his most important find out of fear"
+    ],
+    "habits": [
+      "Plays music at low volume through his cochlear enhancer all day — always something pre-collapse",
+      "Annotates every new acquisition in a physical notebook before entering it in the digital catalog",
+      "Makes tea from a setup hidden under his stall counter — offers it only to people he likes"
+    ],
+    "breaking_points": [
+      "The Axiom documents being found and destroyed before he can act on them",
+      "Being made to feel that his life's work is trivial"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Engelheim; grew up in the market district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established his stall in the Burnished Market after a decade of informal trading",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Made contact with anonymous archivists, began brokering more sensitive documents",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Acquired the Axiom contamination document collection; has not released it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Riddle",
+    "Engelheim",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "ARCHIVE",
+    "Gravimetric Collapse Charge GCC-9",
+    "Abeke Soriano-Dlamini",
+    "Arcturus Bulwark APC",
+    "Arcturus PX-1 'Phantom'",
+    "Emeka Johansson-Orozco",
+    "MERIDIAN",
+    "Meridian Core",
+    "Patient Zero",
+    "The Archive",
+    "The Bazaar",
+    "The Heritage Vault",
+    "The Meridian Core",
+    "The Pure Hand",
+    "The Question",
+    "The Unfinished Theorem",
+    "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Predominantly Pacific Islander with significant Hispanic/Latin American, Eastern European, Southeast Asian, Sub-Saharan African, and Indigenous American ancestry—a complex Diaspora blend reflecting the Ubiquitous mixing of 2226. Genetic heritage expressed through warm, sun-darkened skin with layered undertones from multiple continental sources.",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Tall and lean with age-related postural rounding; shoulders slightly forward as if perpetually leaning in. Wiry musculature suggests decades of standing and fine manual work rather than physical labor.",
+    "hair_color": "White, natural",
+    "hair_style": "Close-cropped, precise edges — maintained with deliberate care",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, sharp and alert",
+    "skin_tone": "Deep warm mahogany-bronze with complex undertones—Pacific Islander sun-darkening layered with Southeast Asian warmth and Sub-Saharan depth, subtle olive undertones from Eastern European and Hispanic heritage. Skin appears burnished by decades under equatorial and subtropical light exposure.",
+    "complexion": "Heavily lined face with deep creases around eyes and mouth—map of sixty years of expression and environmental exposure across multiple climate zones. Skin weathered but meticulously groomed, with the particular texture of someone whose ancestry includes both high-altitude and tropical heritage. Minimal facial hair, clean-shaven daily. No visible acne or skin lesions; age spots on temples and backs of hands show the characteristic patterning of mixed-heritage sun exposure.",
+    "distinguishing_marks": [
+      "Fine scar tissue along left temple, approximately 3cm, consistent with childhood injury—faded but visible under direct light",
+      "Small burn mark on inside of right wrist (2cm diameter), pale and old, location suggests accidental contact with heated equipment decades ago"
+    ],
+    "visible_augmentations": "Thick-framed corrective lenses with barely perceptible overlay interface—distinctly analog-looking, pre-2200s aesthetic. Cochlear enhancement invisible except for occasional micro-adjustments to ear position when listening. No chrome, no subdermal implants, no visible geneware.",
+    "posture_movement": "Habitually leans forward at the torso when speaking or listening, creating an impression of intense engagement. Moves with deliberate slowness—not infirm, but considered. Hands gesture precisely when explaining; fingers move with the dexterity of someone accustomed to handling fragile objects.",
+    "clothing_style": "Deliberately formal regardless of context: pressed collars, polished shoes, fitted vests or blazers even in the Burnished Market. Favors earth tones, grays, and deep blacks. Clothes are well-maintained, slightly dated (2210s-era tailoring), and deliberately read as dignity in working-class Engelheim. Wears a battered leather satchel for daily transactions—genuinely worn, not affectation."
+  },
+  "image_prompt": "Slate Sepúlveda, 60-year-old man with deep mahogany-bronze skin reflecting Pacific Islander, Southeast Asian, and Sub-Saharan heritage, white close-cropped hair, standing in cyberpunk 2226 Great Lakes Metropolitan Zone. Tall lean frame, slightly forward-leaning posture suggesting intense focus. Wearing formal 2210s-era pressed gray blazer and collared shirt, polished shoes, thick-framed analog corrective lenses with subtle interface overlay. Deeply lined weathered face, sharp dark brown eyes, small temple scar visible. Holding worn leather satchel. Standing in Burnished Market or industrial Engelheim district, neon signage in background casting cool blue-violet light across his warm skin tones. Deliberate, dignified posture. Cinematic, naturalistic lighting emphasizing age and complexity of heritage. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 39.9,
+    "Hispanic/Latin American": 17.9,
+    "Eastern European": 15.6,
+    "Southeast Asian": 12.6,
+    "Sub-Saharan African": 10.4,
+    "Indigenous American": 3.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

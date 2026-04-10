@@ -1,0 +1,311 @@
+{
+  "id": "019d6143a6cd79068a8f0375037e294f",
+  "type": "character",
+  "name": "Haze Vaai",
+  "aliases": [
+    "Sigga",
+    "The Rememberer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired oral historian and neighborhood storyteller",
+  "age": 91,
+  "status": "active",
+  "location": "Norwood Quiet, the Hearthrow Senior Cooperative, Room 3, near Armitage and Milwaukee",
+  "description": "Sigríður is tiny — barely 155 centimeters — and has been shrinking for decades, but she carries herself with a posture of such exact deliberateness that she seems to take up more space than her body warrants. Her skin is cool brown with the papery translucence of extreme age, and she wears her white hair in long Icelandic-style braids intertwined with small glass beads in amber and blue that chime softly when she turns her head. Her eyes are her most striking feature: she had them modified in her fifties to display a slowly shifting pattern of bioluminescent fractal rings in gold and violet — a luxury cosmetic then, now simply the color of her eyes, and startlingly beautiful in a face otherwise marked by time. She keeps a small data-prayer shrine in the corner of her room, meticulously maintained, with offerings to the ELF she believes inhabits Norwood Quiet's public broadcast network.\n\nSigríður spent forty years as an oral historian employed by a civic archive collective that no longer exists — its records absorbed, corrupted, and partially deleted during the Tessera data consolidation of 2183. She was not a passive victim of that loss; she spent the following eight years reconstructing what she could from memory and from the memories of others, and the result is a living archive of GLMZ neighborhood history that exists nowhere else. She is sharp, occasionally ruthless in conversation, deeply funny in ways people do not always catch, and has a tendency to evaluate everyone she meets as a potential story. She is also slowly dying — her kidneys are failing, and she knows it, and has decided to spend whatever time remains getting her memories into formats that will outlast her.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.55,
+      "shadow": 0.3,
+      "mask": 0.25,
+      "ghost": 0.85
+    },
+    "core_fears": [
+      "That the stories she carries will die with her — that the Tessera deletion will finish what it started",
+      "That she will lose her memory before she loses her body"
+    ],
+    "core_desires": [
+      "To complete her reconstruction archive before she dies",
+      "To be remembered as someone who preserved something real"
+    ],
+    "coping_mechanisms": [
+      "Narrates her own experiences as if she is already recounting them to a future listener",
+      "Maintains meticulous daily ritual around her prayer shrine — it gives structure to days that otherwise blur"
+    ],
+    "blind_spots": [
+      "Sometimes treats living people as sources rather than individuals — extracts their stories without quite returning the warmth she takes",
+      "Has difficulty with the present; the past is so much more legible to her now"
+    ],
+    "secret": "The Tessera data consolidation of 2183 was not entirely a hostile act — Sigríður was approached beforehand and offered preservation of her work in exchange for helping Tessera identify which archive figures had politically sensitive materials. She refused. But she has never told anyone that the offer was made, which means she has never told anyone that someone inside the old archive collective told Tessera what to look for."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal archival register that slips into vivid vernacular storytelling when she warms up; uses Icelandic rhythm patterns in her sentence construction, occasionally drops in Yoruba or Polish phrases inherited from different sides of her family",
+    "cadence": "Starts slowly, almost tediously, then builds — she is always setting something up, and patient listeners are rewarded",
+    "verbal_tics": [
+      "'In the year—' as a story-opening tic even in casual conversation",
+      "'That's not how it happened' (correcting misremembered history with uncanny confidence)",
+      "A brief silence before saying anything she considers important"
+    ],
+    "example_lines": [
+      "'In the year 2171, Kessler Interchange was the most dangerous transit corridor in the city. People know that now as a statistic. I knew it as Amara Osei-Volkov's widow, who came to me three months after, because she needed someone to remember her husband's name correctly.'",
+      "'You want to know about the Tessera consolidation. Everyone does, eventually. Sit down. This is not a short story and I am not going to rush it for you.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A researcher has offered to fund completion of Sigríður's archive — but the funding comes through a Tessera subsidiary, and she needs someone she trusts to investigate whether accepting it would compromise the archive's independence",
+    "She holds a recorded testimony from someone now dead that contradicts the official history of an event a current powerful figure is trading on — she will only release it if she believes it will actually matter",
+    "Her kidneys are failing faster than expected; she has begun urgently trying to pass specific stories to specific people, and one of those people is someone the players know"
+  ],
+  "narrative_function": "Living archive and information source; knows the history of multiple neighborhoods and many families going back 60+ years; can provide context, backstory, and leads that no database can. Also serves as a clock — her declining health creates urgency around preserving what she knows.",
+  "augmentations": "Bioluminescent fractal-patterned irises (cosmetic, installed 2148, gold and violet shifting patterns); cochlear amplifier (medical, installed 2179); no other augmentations — she has strong opinions about keeping most of her body original",
+  "daily_life": "Receives visitors in the morning — neighbors, researchers, occasionally journalists — and records their stories and her own commentary onto a growing archive of physical datacards she keeps in a locked cabinet. Afternoons she sleeps. Evenings she sits by the common room window and talks to anyone who sits near her, and the conversations are never quite what people expect.",
+  "affiliation": "Norwood Quiet Hearthrow Cooperative; informally, the Meridian Oral History Network (defunct, she is its last active member)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 3,
+      "vitality": 2,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 10,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "living archive",
+      "elderly sage",
+      "keeper of secrets",
+      "dying clock",
+      "unexpected humor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Stories belong to the people who lived them — she will not share certain things without the subject's consent, even if the subject is dead and the consent must be inferred",
+      "Never lie about what she remembers — she will decline to tell a story but she will not tell it wrong"
+    ],
+    "escalation_ladder": [
+      "Listens and evaluates what kind of person she is dealing with",
+      "Offers a test story — something true but not sensitive — to see how they receive it",
+      "Decides whether to open the archive or maintain distance",
+      "If threatened or manipulated, becomes icily formal and completely unreachable",
+      "If her archive is directly threatened, she has already made arrangements she will not discuss"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally welcoming but observant; treats every new person as a potential story and as a potential threat to her archive in equal measure",
+      "friends": "Warmly demanding — expects them to be interesting, to share, to remember things she tells them"
+    },
+    "stress_responses": {
+      "low": "Tells tangential stories that seem unrelated but are actually processing the stress",
+      "medium": "Becomes very still and precise; stops using idioms",
+      "high": "Goes entirely silent and retreats to her room; can be heard recording onto datacards for hours"
+    },
+    "contradictions": [
+      "Believes fiercely in preserving truth but made one choice — her silence about the informant inside the archive — that allowed a lie to stand for seventeen years"
+    ],
+    "habits": [
+      "Touches each bead in her hair braids in sequence when thinking — there are seventeen beads, one for each year since the Tessera deletion",
+      "Leaves a datacard with a single recorded story at her prayer shrine every new moon",
+      "Corrects misremembered history in any conversation, no matter how socially inconvenient"
+    ],
+    "breaking_points": [
+      "Watching someone use a corrupted or false version of a story she knows the truth of to harm someone",
+      "Losing a significant block of memory — the first sign it has already started"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent, fully functional after 52 years",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good, medical grade",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Nostalgic": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Norwood Quiet to an Icelandic-Nigerian father and Polish-descended mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joins the Meridian Civic Archive Collective as a junior oral historian",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Has bioluminescent iris modification installed — considered extravagant by her colleagues",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Becomes lead oral historian for the Collective; archive spans 40 neighborhoods",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Tessera data consolidation destroys or corrupts 70% of the Collective's digital archive; Sigríður begins reconstruction project",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Collective formally dissolved; Sigríður continues alone, moves to Hearthrow Cooperative",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Kidney failure diagnosis; accelerates archive work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Norwood Quiet",
+    "GLMZ",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Glass",
+    "Gold",
+    "The Milwaukee Core",
+    "Auricula Felis Modification",
+    "Breck Tannen",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kessler Interchange",
+    "MERIDIAN",
+    "Meridian Core",
+    "NeuralPath Horizon Standard Neural Mesh",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Patient Zero",
+    "Plot 17",
+    "Quilt",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA Widow Mk. III",
+    "The Archive",
+    "The Pure Hand",
+    "Witness"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Pacific Islander and Hispanic/Latin American with Eastern European admixture — warm golden-brown undertones from the dominant ancestry groups, with subtle cooler undertones from the minority Eastern European heritage. The genetic blend manifests in her facial structure: broader cheekbones and jawline characteristic of Pacific Islander ancestry, combined with the fine-boned delicacy sometimes seen in Hispanic/Latin American populations, all softened and sharpened by nine decades of life.",
+    "height_cm": 155,
+    "weight_kg": 42,
+    "build": "Extremely slight and diminished by age, almost bird-like in its fragility, but with the core density of someone who has carried their own weight deliberately for nine decades. Shoulders slightly rounded forward, spine curved with the compression of time.",
+    "hair_color": "White, naturally grey-white for the past forty years",
+    "hair_style": "Long Icelandic-style braids, interwoven throughout with small glass beads in amber and blue",
+    "hair_length": "Long (approximately 40cm when braided)",
+    "eye_color": "Bioluminescent fractal-patterned irises shifting between gold and violet rings",
+    "skin_tone": "Warm golden-brown with significant translucency from age and thinning dermis, luminous in low light",
+    "complexion": "Deeply lined face mapped with age — forehead creases, nasolabial folds, crow's feet around the modified eyes. Skin papery with warm undertones. Cheekbones prominent from weight loss, structured by Pacific Islander and Latin American ancestry. Expression defaulting to slight amusement or appraisal. Impeccably groomed despite age.",
+    "distinguishing_marks": [
+      "Surgical scar along left collarbone from cochlear amplifier installation (2179), now barely visible",
+      "Fine network of age spots across forearms and hands, particularly on right hand",
+      "Small callus on right middle finger from decades of manual recording and writing"
+    ],
+    "visible_augmentations": "Bioluminescent fractal-patterned irises that shift slowly between gold and violet — the most striking feature, particularly luminous in low light. Cochlear amplifier not visibly apparent unless she removes her hair braid to expose the minimal port behind her left ear.",
+    "posture_movement": "Moves with exact deliberateness, each gesture economical and purposeful. Posture ramrod-straight despite her height and age — she seems to will herself to occupy space precisely. Turns her head slowly; the glass beads in her braids chime softly with the movement. Hands move with precision when handling objects, particularly datacards or recording equipment. She sits very still when listening.",
+    "clothing_style": "Tier 3-4 practical elder comfort — high-quality vintage sweaters in cream, grey, or deep blue; loose linen trousers in neutral tones; soft shoes with excellent arch support (worn Tier 3 corpo charity comfort brands). Always wears a small textile prayer-wrap around her wrist or neck, hand-stitched with symbols of her data-spirituality. Layers against the regulated cool of the Cooperative. No chrome, no corporate logos, no aesthetic concessions to age — clothing chosen for function and dignity."
+  },
+  "image_prompt": "Haze Vaai, 155cm tall elderly woman with warm golden-brown skin and translucent papery texture from age, Pacific Islander and Latin American genetic heritage visible in broad cheekbones and fine-boned delicate features. Long white braids interwoven with amber and blue glass beads that chime softly. Most striking: bioluminescent fractal-patterned irises shifting gold to violet, glowing softly in low light. Deeply lined face with prominent cheekbones, expression of slight amusement. Ramrod-straight posture despite extreme slightness. Wearing cream vintage sweater, loose neutral linen trousers, soft supportive shoes. Hand-stitched textile prayer-wrap around wrist. Sits with exact deliberateness in dimly lit Cooperative interior, cyberpunk 2226, cool regulated lighting highlighting bioluminescent eyes, precise economical hand gesture holding a datacard, moody introspective atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 42.6,
+    "Hispanic/Latin American": 40.5,
+    "Eastern European": 16.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

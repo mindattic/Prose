@@ -1,0 +1,297 @@
+{
+  "id": "019d6143a6f37017a82b14c32e34a1cd",
+  "type": "character",
+  "name": "Haze Haraldsen-Guerrero",
+  "aliases": [
+    "Tess"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Gene therapist at Helix Biosystems' Aurochs Medical Complex outpatient clinic, specializing in hereditary conditions and geneware integration complications",
+  "age": 29,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Calumet Rise, near North Ave and Milwaukee",
+  "description": "Tessaly is small and precise in her movements, with light brown skin, natural hair worn in a large puff held back by a polished Helix Biosystems ID clip, and eyes modified with patterned irises — a double helix in dark gold on amber that she got as a graduation gift to herself. She is young for her position and knows it, which makes her simultaneously more careful and more aggressive in equal measure. She works within the Helix system because she believes — genuinely, not cynically — that gene therapy at scale requires institutional infrastructure, and she is trying to change the institution from inside while not yet having enough power to change much.\n\nShe is technically brilliant and interpersonally awkward in ways she's actively working on. She has a tendency to present information in dense technical bursts before remembering she's talking to a person. She finds pediatric gene therapy cases the hardest and doesn't understand why it took her two years to figure out that it's because she was a gene therapy patient herself as a child — a realization her therapist gently surfaced during a session she thought was about something else entirely. She's been different with parents and children ever since.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That the institution she's trying to change is in fact unchangeable and she's just providing it with a face it can use",
+      "Causing harm through a therapeutic error she was too confident to see coming"
+    ],
+    "core_desires": [
+      "To develop a gene therapy protocol that could be administered without Helix Biosystems' pricing structure",
+      "To feel fluent in human interaction the way she's fluent in molecular biology"
+    ],
+    "coping_mechanisms": [
+      "Converts anxiety into additional work hours",
+      "Maintains meticulous therapy attendance as a form of discipline"
+    ],
+    "blind_spots": [
+      "Believes informed consent is possible within a system that controls patients' access to alternatives",
+      "Underestimates how much her institutional affiliation shapes what patients feel safe telling her"
+    ],
+    "secret": "She has been secretly documenting cases where Helix's treatment protocols appear to prioritize proprietary geneware compatibility over optimal patient outcomes — she doesn't know what to do with the documentation yet, and is terrified of what it means that she's collecting it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise, with visible self-corrections when she catches herself going too deep. Asks clarifying questions compulsively. Earnest in a way that can read as naive.",
+    "cadence": "Fast when discussing science, deliberately slower when discussing feelings — you can hear the gears shifting.",
+    "verbal_tics": [
+      "'So what that means in practice is—'",
+      "Restates questions back to the asker before answering them",
+      "Apologizes preemptively before delivering bad news"
+    ],
+    "example_lines": [
+      "'Your genome isn't a problem to be solved. It's just — it's the context we're working in. Does that make sense? I mean, does it help to hear it that way?'",
+      "'I can tell you what Helix's recommended protocol is. I can also tell you what I would do if it were my genome. Those aren't the same answer.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient's genome contains markers that exactly match an undisclosed Helix research project — and the patient has never consented to be part of a study",
+    "The documentation she's been collecting has grown large enough that someone in Helix's internal audit division has noticed unusual access patterns from her credentials",
+    "A child patient's parents are pushing for a treatment that Tessaly knows is marginally effective but extremely profitable for Helix — and the truly effective treatment is off-protocol"
+  ],
+  "narrative_function": "Information source on cutting-edge gene therapy and Helix Biosystems' internal culture. Potential quest giver when she discovers something in a patient's genome that Helix wants suppressed. A character who complicates simple 'corponations are evil' narratives by being genuinely idealistic within one.",
+  "augmentations": "Patterned iris modification (double helix, gold on amber). Gene-reader implant in right fingertip pad — allows rapid genomic data access via touch interface with consenting patients. Geneware: enhanced olfactory receptors for detecting biochemical stress markers in patients.",
+  "daily_life": "Works eight-to-twelve-hour shifts at the Aurochs complex Monday through Friday, attends a mandatory Helix research briefing every Thursday, sees her own therapist every other Tuesday, and spends most weekends in the lab she isn't supposed to use on weekends.",
+  "affiliation": "Helix Biosystems — Aurochs Medical Complex Outpatient Gene Therapy Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Idealist",
+      "Institutional Insider",
+      "Technically Brilliant",
+      "Socially Effortful",
+      "Quietly Rebellious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient genomic data belongs to the patient, not Helix",
+      "When in doubt about a protocol, order more tests — never guess at a genomic scale",
+      "Stay inside the institution until you have something worth leaving it for"
+    ],
+    "escalation_ladder": [
+      "Works within protocol, documents everything",
+      "Raises concerns through official channels with detailed evidence",
+      "Goes outside the institution — a step she has never taken but is building toward"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm but slightly over-formal — she's following a script she's practiced",
+      "friends": "Suddenly funny and enthusiastic, talks too fast, asks too many questions, deeply loyal"
+    },
+    "stress_responses": {
+      "low": "Runs additional verification checks she doesn't need",
+      "medium": "Becomes quieter and more formally polite — a warning sign her colleagues have learned to recognize",
+      "high": "Requests a personal day and spends it in the lab — working, but on her own terms"
+    },
+    "contradictions": [
+      "Believes in radical transparency as a value but is building a secret archive",
+      "Trusts the scientific method completely but is only now learning to trust her own instincts about people"
+    ],
+    "habits": [
+      "Runs a private genomic log of her own health markers every month — she calls it 'professional curiosity'",
+      "Keeps a physical notebook of questions she wants to ask her therapist, organized by topic"
+    ],
+    "breaking_points": [
+      "Being ordered to falsify or omit a finding from a patient's record",
+      "A patient being harmed by a Helix protocol she flagged as problematic"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Patterned iris modification (double helix, gold on amber)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned iris modification (double helix, gold on amber)",
+      "replaces": ""
+    },
+    {
+      "name": "Gene-reader fingertip implant (right index finger) — touch-interface genomic data access",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Gene-reader fingertip implant (right index finger) — touch-interface genomic data access",
+      "replaces": ""
+    },
+    {
+      "name": "Enhanced olfactory receptors (geneware) — biochemical stress marker detection",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Enhanced olfactory receptors (geneware) — biochemical stress marker detection",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 4-7: Received gene therapy treatment for hereditary condition (nature not fully processed by her until adulthood)",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 24: Graduated from Helix Biosystems-sponsored advanced gene therapy program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 25: Joined Aurochs Medical Complex outpatient division as junior gene therapist",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 27: Began collecting informal documentation of protocol irregularities",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 29: Current — recently promoted to senior therapist, documentation archive is extensive and undisclosed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Calumet Rise",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9",
+    "Gold",
+    "The Milwaukee Core",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
+    "TESSERA TN-1 'Cradle'",
+    "The Pure Hand",
+    "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American dominant (49.7%) with significant East Asian (41.9%) and minor Northern European (8.4%) ancestry; displays the warm golden-brown skin tones characteristic of Latin American heritage with the refined facial structure suggesting East Asian ancestry, creating a striking blend of warm and cool undertones",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Slight and compact, with efficient musculature suggesting controlled movement rather than strength; posture reflects precision work and long hours at benches",
+    "hair_color": "Natural dark brown with subtle warm undertones",
+    "hair_style": "Large, rounded puff held back with a polished Helix Biosystems chrome ID clip; meticulously maintained",
+    "hair_length": "Medium (approximately 10-12cm natural length when released)",
+    "eye_color": "Amber with dark gold double helix patterning in both irises — a deliberate modification suggesting both technical sophistication and personal statement",
+    "skin_tone": "Warm golden-brown with even complexion; the result of Latin American and East Asian genetic blending creates luminous undertones that shift subtly in different light",
+    "complexion": "Clear, well-maintained skin with minimal visible scarring; face carries slight tension around the eyes and jaw from concentration; minimal cosmetic grooming beyond professional necessity. Facial structure shows the refined bone geometry typical of East Asian ancestry softened by the warmer, rounder features of Latin American heritage",
+    "distinguishing_marks": [
+      "Faint surgical scar on right inner wrist from childhood gene therapy port — barely visible unless looking closely",
+      "Barely perceptible raised pattern on right index and middle fingertip pads where gene-reader implant interfaces with skin"
+    ],
+    "visible_augmentations": "The double helix iris modification is immediately striking — both eyes display the custom patterning. The gene-reader implant in the right fingertip is only visible on close inspection as subtle raised scarring and a faint metallic gleam under certain light. Enhanced olfactory receptors are not externally visible but may manifest as subtle tension in nasal passages during heavy scent-marker detection work.",
+    "posture_movement": "Moves with deliberate economy; spine is straight but shoulders carry slight forward lean from years of microscope and console work. Hands are rarely still — fingers tap, fidget, or gesture while talking, especially when moving through dense technical explanations. Makes minimal eye contact during conversation unless consciously working on engagement. Quick, efficient movements in clinical settings; slower, more careful movements in social contexts as if calculating each gesture.",
+    "clothing_style": "Tier 1-2 corporate professional. Helix-branded lab coat over fitted, muted-color clothing (grays, blacks, deep blues, sage greens) from mid-tier suppliers like Isamu or Kyoto Basics. Closed-toe shoes with good arch support, minimal jewelry beyond the ID clip and a simple watch that logs biometric data. Clothing is always clean and pressed but shows signs of regular wear and occasional small stains from lab work that didn't quite come out. No visible personal style affectation — fashion choices are functional first, professional second."
+  },
+  "image_prompt": "Haze Haraldsen-Guerrero, 158cm tall petite figure with warm golden-brown skin blending Latin American and East Asian ancestry, standing in a corporate biotech lab, cyberpunk 2226. Sharp amber eyes with intricate double helix pattern modifications in both irises catching clinical LED lighting. Dark brown hair pulled back in a rounded puff held by polished chrome Helix Biosystems ID clip. Wearing professional Helix-branded lab coat over muted gray fitted shirt, posture showing slight forward lean from years of precision microscope work. Hands positioned with subtle fidgeting gesture, right hand showing barely visible metallic gleam of gene-reader implant on fingertips. Lab environment with soft blue-white LED overhead lighting creating luminous undertones in skin. Professional but worn clothing showing faint lab work stains. Minimalist jewelry, simple biometric watch visible. Expression concentrated, minimal eye contact. Cyberpunk aesthetic blending corporate professionalism with advanced biological modification tech --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 49.7,
+    "East Asian": 41.9,
+    "Northern European": 8.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

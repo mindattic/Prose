@@ -1,0 +1,324 @@
+{
+  "id": "019d6143a6517a62ae8f6288909d4227",
+  "type": "character",
+  "name": "Kavya Chakraborty",
+  "aliases": [
+    "Uncle Tobi",
+    "Tobi-V"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Former union leader (Ferrogate Transit Workers Union), now raising two grandchildren on a reduced pension",
+  "age": 68,
+  "status": "active",
+  "location": "The Shelf, Block 14 — a three-room unit he shares with his grandchildren, near Western and Division",
+  "description": "Ọlọruntóbi is a man who was built for louder rooms than the one he currently occupies. He is tall and loose-limbed, with the kind of face that was clearly handsome and has aged into something more interesting — deep sienna complexion, heavy brow, a jaw that still juts when he is angry. He has cosmetic tiger-stripe bioluminescence on his arms and collarbone, a geneware mod he got in his forties to celebrate the Union's successful Ferrogate walkout of 2172, and which now glows a gentle amber when the building's lights go down. His natural hair has gone grey-silver and he wears it in short locs. A subvocal transceiver is implanted at his throat — old union infrastructure, technically still active.\n\nFor sixteen years Tobi was the loudest, most tenacious shop steward and eventually regional director the Ferrogate Transit Workers Union ever produced. He won three collective agreements, survived two corporate union-busting campaigns, and was personally blacklisted by two Ferrogate senior executives. Then his daughter Comfort died of an untreated pulmonary infection in 2194 — a death he attributes directly to Helix Biosystems' pharmaceutical pricing, which the union had been fighting for years — and left behind two children aged four and seven. Tobi took them without a moment's hesitation and quietly stopped being the man who changed things, because he was suddenly the man who made breakfast.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "failing the grandchildren the way he failed to save their mother",
+      "that his years of union work genuinely changed nothing permanent"
+    ],
+    "core_desires": [
+      "to see Helix Biosystems face real consequences for pharmaceutical pricing",
+      "to give Dami and Kofi-Ren a better tier than he could achieve"
+    ],
+    "coping_mechanisms": [
+      "busyness — he does not sit still",
+      "gallows humor about corporate power",
+      "telling the grandchildren edited stories about their mother that emphasize her strength"
+    ],
+    "blind_spots": [
+      "his grief has calcified into a very specific political target — he struggles to address grief in any other form",
+      "does not see how much Kofi-Ren is watching and internalizing his anger"
+    ],
+    "secret": "He knows who the Ferrogate executive was who personally ordered the data purge that destroyed evidence of the pharmaceutical partnership he was building a case against. The executive is retired, living comfortably in Grosse Pointe Enclosure. Tobi has the executive's home address and has had it for three years. He has done nothing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Union oratory mixed with Block 14 street vernacular; code-switches fluidly based on audience; drops into formal rhetoric when emotional",
+    "cadence": "Naturally rhetorical — builds to emphasis, uses repetition for effect; softens completely around the grandchildren",
+    "verbal_tics": [
+      "'You hear what I'm telling you?'",
+      "Tapping the table with two fingers when making a point",
+      "'That's the record. That's what happened.'"
+    ],
+    "example_lines": [
+      "'They don't win because they're stronger. They win because we keep being surprised that they'll actually do it. Stop being surprised. Then we can talk about winning.'",
+      "'Dami, eat. Kofi-Ren, I can see you. Eat your food and then you can show me your rig work, yes.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Kofi-Ren has been approached by someone recruiting young people for direct action against Helix Biosystems — Tobi has found evidence of this and is terrified, not because he disagrees with the cause but because he knows exactly how it ends",
+    "A younger union organizer has uncovered the same pharmaceutical partnership evidence Tobi once had, and has come to him for guidance — reigniting everything he put away"
+  ],
+  "narrative_function": "Quest giver for labor and corporate accountability storylines; access point to Ferrogate Transit insider knowledge and union network; emotionally complex figure whose activism is dormant but not dead; the grandchildren can be a vulnerability or a source of motivation",
+  "augmentations": "Tiger-stripe bioluminescent geneware (arms and collarbone, amber-gold) — cosmetic, personal significance; subvocal transceiver (throat implant, FTW Union network standard issue — technically still connected)",
+  "daily_life": "Gets the grandchildren — Dami, 10, and Kofi-Ren, 13 — up and fed and to their learning pods by 0730, then spends the morning doing odd-job consulting for younger union members who call him for advice. Afternoons he does building maintenance for reduced rent. Evenings are homework, dinner, and whatever drama the Block 14 neighbors bring to his door.",
+  "affiliation": "Ferrogate Transit Workers Union (retired regional director, still listed as emeritus); The Shelf Block 14 informal community network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Union Organizer (Retired)",
+      "Grieving Father",
+      "Reluctant Patriarch",
+      "Dormant Firebrand",
+      "Working Class Tier 1"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The grandchildren come before everything, always",
+      "Never cross a picket line, in any context, metaphorically or literally",
+      "Don't spend anger before you know what you need it to accomplish"
+    ],
+    "escalation_ladder": [
+      "Listening without showing his hand",
+      "Asking precise questions that reveal he knows more than expected",
+      "Stating exactly what he knows and who he can reach with it",
+      "Calling in old union network favors — he still has them"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly, slightly performative warmth — he is assessing whether they are labor or management energy before deciding how much to trust them",
+      "friends": "Deeply loyal, occasionally overbearing, will show up with food and unsolicited opinions in equal measure"
+    },
+    "stress_responses": {
+      "low": "Gets very loud and animated, paces, talks through problems to anyone nearby",
+      "medium": "Goes quiet and organizing — starts writing things down, making contact lists",
+      "high": "Focuses with frightening intensity on a single immediate task, delegates everything else without discussion"
+    },
+    "contradictions": [
+      "Believes collective action is the only answer but has been handling his grief in radical isolation",
+      "Will deliver powerful speeches about courage but has not acted on the one thing he most wants to act on"
+    ],
+    "habits": [
+      "Makes elaborate breakfasts — the grandchildren's nutrition is his externalized anxiety management",
+      "Keeps a handwritten ledger of every favor given and received in the Block 14 network",
+      "Refers to his subvocal transceiver as 'the wire' and checks it is still active every morning"
+    ],
+    "breaking_points": [
+      "One of the grandchildren being harmed or threatened",
+      "Learning the Ferrogate executive has been profiting further from Helix Biosystems partnership"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Tiger-stripe bioluminescent geneware — arms and collarbone, amber-gold (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tiger-stripe bioluminescent geneware — arms and collarbone, amber-gold (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "FTW Union subvocal transceiver — throat implant, vintage 2170s, still networked",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "FTW Union subvocal transceiver — throat implant, vintage 2170s, still networked",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Commander": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2132 — Born on The Shelf to a Ferrogate maintenance worker and a market vendor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2150 — Hired by Ferrogate Transit as track maintenance crew",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2156 — Elected shop steward; begins union organizing in earnest",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2172 — Leads successful Ferrogate walkout; gets bioluminescence as celebration",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2176 — Daughter Comfort born",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Blacklisted by two Ferrogate executives; moves to consulting role within union",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Comfort dies of untreated pulmonary infection; Tobi takes custody of grandchildren Dami and Kofi-Ren",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Formally retires from union directorship",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "The Shelf",
+    "Aminata Strand-Otieno",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Arcturus KS-7 'Nursery'",
+    "Aïssé Dragomirescu-Faalelei",
+    "Bioacoustic Communication Membrane",
+    "Block 19-South",
+    "Cavitation Pulse Carbine CPC-2 'Bends'",
+    "Chronicle",
+    "Cinderblock Ai",
+    "Green Bay Community Table",
+    "Grosse Pointe Enclosure",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "Oluwatobi Czerwiński-Faleolo",
+    "Street Custom 'Gallows' Recurve Bow",
+    "The Ledger",
+    "The Pure Hand",
+    "VitaCore SteadyThread Precision Motor Implant",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian (35.7%) with significant Indigenous American (26.1%) and Hispanic/Latin American (22.2%) ancestry, complemented by Northern European (11.8%) and Sub-Saharan African (4.2%) heritage. The genetic blend creates warm, complex skin tones with layered undertones from multiple continental populations.",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Tall and lean, still carrying the frame of a younger man despite age — long-limbed and loose-jointed, with the kind of structural efficiency that comes from decades of physical labor and deliberate movement. Slight forward curve to the shoulders from years hunched over union paperwork.",
+    "hair_color": "Grey-silver with amber undertones",
+    "hair_style": "Short locs, neat and well-maintained, threaded with a few dark fibers at the base",
+    "hair_length": "Short",
+    "eye_color": "Deep brown",
+    "skin_tone": "Rich warm bronze with reddish and golden undertones — a complex blend of South Asian depth, Indigenous American and Hispanic warmth, with subtle African undertones creating visual warmth and luminosity",
+    "complexion": "Weathered and lined — a face that has spent decades in fluorescent light and loud rooms. Strong, angular bone structure reflecting South Asian and Indigenous American heritage with a pronounced jaw and prominent cheekbones. Heavy brow ridge, strong jaw that still juts forward when concentrated or angry. Minimal grooming vanity; clean but not polished. Faint scarring on the left temple from a 2168 Ferrogate station incident.",
+    "distinguishing_marks": [
+      "Tiger-stripe bioluminescent geneware running across both forearms in amber-gold lines, glowing softly in low light — marks the 2172 Ferrogate walkout victory.",
+      "Matching bioluminescent stripes across the collarbone and upper chest, visible above work shirt collar when unbuttoned.",
+      "Burn scar on the inside of right wrist, pale and puckered, approximately 3cm diameter — origin lost to old stories.",
+      "Thin white scar bisecting the left eyebrow, partially obscured by hair."
+    ],
+    "visible_augmentations": "Subvocal transceiver implant visible as a faint metallic subcutaneous ridge along the left side of the throat, approximately 2cm below the jawline. Device itself dormant but hardware still present. Bioluminescent geneware on arms and chest is the primary visible augmentation — always subtly active, brighter in darkness.",
+    "posture_movement": "Moves with economical precision despite his height — someone who learned to navigate crowded transit stations and union halls without wasting energy. Stands with weight slightly forward, shoulders relaxed but capable of sudden tension. When listening to younger people, his entire frame bends forward attentively. When angry or making a point, his jaw juts and his hands become very still — a union organizer's learned control.",
+    "clothing_style": "Tier 4 utilitarian — well-worn but maintained. Favors loose grey or charcoal work shirts with FTW union emblems faded but still visible. Cargo pants in dark synthetic with reinforced pockets. Worn composite work boots that he repairs himself. A thin wool cardigan in deep blue, decades old, worn over everything. No jewelry except a simple platinum band on his left ring finger (his late husband's, worn since 2189). Clothing carries the faint smell of building maintenance — solvents, electrical compound, the particular dust of old transit infrastructure."
+  },
+  "image_prompt": "Cyberpunk 2226, weathered 188cm tall union organizer with rich warm bronze skin blending South Asian, Indigenous American, and Hispanic heritage. Deep brown eyes, grey-silver short locs with dark undertones. Prominent angular cheekbones and strong jaw, faint scarring on left temple. Tiger-stripe amber-gold bioluminescent geneware glowing softly across both forearms and upper chest. Subvocal transceiver ridge visible on throat. Wearing faded grey FTW union work shirt, dark reinforced cargo pants, worn composite boots, deep blue wool cardigan draped over shoulders. Simple platinum wedding band. Economical posture, weight forward, relaxed but capable. Fluorescent union hall lighting casting shadows across weathered features. Mood: weary dignity, decades of labor, quiet resolve. Slight forward lean. Industrial background. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 35.7,
+    "Indigenous American": 26.1,
+    "Hispanic/Latin American": 22.2,
+    "Northern European": 11.8,
+    "Sub-Saharan African": 4.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

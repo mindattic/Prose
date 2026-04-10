@@ -1,0 +1,335 @@
+{
+  "id": "019d6143a5e77353ae6d1715af66ee53",
+  "type": "character",
+  "name": "Briar Sigurdsson-Hosseini",
+  "aliases": [
+    "Jetstream",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Electronic and physical observation expert — surveillance specialist",
+  "age": 29,
+  "status": "active",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Fullerton and Damen",
+  "description": "Daulet Malm-Amoah is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 29, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a surveillance specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Malm-Amoah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.63,
+      "ideal": 0.64,
+      "id": 0.93,
+      "shadow": 0.34,
+      "mask": 0.24,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "To build something that outlasts the next contract cycle",
+      "Power — enough leverage that nobody ever threatens them again",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Daulet Malm-Amoah has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
+    ],
+    "example_lines": [
+      "\"I've been watching you for three days. You should close your curtains.\"",
+      "\"Information is the only commodity that appreciates with age.\"",
+      "\"Everyone thinks they're careful. Nobody is careful enough.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Daulet Malm-Amoah's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A Tier 4 executive offers Daulet Malm-Amoah a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Someone is impersonating Daulet Malm-Amoah on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Daulet Malm-Amoah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others. Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance — Geartown regular",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 9
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.74,
+      "caution": 0.14,
+      "loyalty": 1,
+      "greed": 0.56,
+      "empathy": 0.89
+    },
+    "drives": [
+      "money",
+      "power",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 4,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "network of reliable contacts",
+      "physical endurance"
+    ],
+    "weaknesses": [
+      "chronic insomnia affecting long-term performance",
+      "grudge-holding that compromises rational decision-making",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "surveillance specialist",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cranial bomb defuser",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
+      "replaces": ""
+    },
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Analyst": 0.9,
+    "Pattern Reader": 0.9,
+    "Sentinel": 0.9,
+    "Crowd Reader": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Clover",
+    "Adaptive Camouflage Skin",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Ilhan Sandstrom-Badu",
+    "Independent Micro-Grid Power Cooperative",
+    "Kamala Blomberg-Konadu",
+    "MERIDIAN",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Quilt",
+    "Sorin Ekwensi-Balasanyan",
+    "TERMINUS",
+    "The Fathom Line",
+    "Veslemøy Achebe-Tursynov",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southeast Asian dominant (51%) with significant Middle Eastern (33%) and East Asian (10%) ancestry, with Sub-Saharan African (6%) undertones. The genetic blend produces warm-toned skin with subtle depth, angular facial structure from Southeast Asian heritage combined with Middle Eastern bone prominence, and East Asian eye shape characteristics.",
+    "height_cm": 183,
+    "weight_kg": 62,
+    "build": "Rawboned and lean — minimal subcutaneous fat, defined musculature from consistent training. The kind of frame that reads as either disciplined or half-starved depending on the light. Long-limbed and efficient.",
+    "hair_color": "Dark brown, almost black, with a faint metallic sheen from mineral deposits in Steamvent water",
+    "hair_style": "Pulled back in a tight, utilitarian braid that exposes the cranial implant",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with subtle chromatic shift at the edges — side effect of dermal camouflage neural integration, shape slightly almond-toned from East Asian ancestry",
+    "skin_tone": "Warm golden-brown with Southeast Asian depth, enriched by Middle Eastern undertones and Sub-Saharan warmth. Medium saturation that catches light with subtle luminescence.",
+    "complexion": "Sharp, angular cheekbones with Middle Eastern prominence, defined jawline reflecting Southeast Asian ancestry, minimal facial hair. Skin is weathered but well-maintained — scars are few but deliberately unhidden. No cosmetic grooming; everything functional. Feature structure shows balanced blend of sharp Southeast Asian angles with broader Middle Eastern facial planes.",
+    "distinguishing_marks": [
+      "Cranial bomb defuser implant visible along right temple — a thin line of chrome running from temple to occipital ridge, with a small circular access port behind the right ear",
+      "Thin scar running down the left side of her neck, approximately 8cm, likely from bladed trauma",
+      "Chromatic skin patches across both shoulders and upper forearms in irregular patterns — areas of active dermal camouflage integration that shift subtly in certain light"
+    ],
+    "visible_augmentations": "Cranial bomb defuser implant is prominently visible along the right side of her skull with chrome detailing and an access port. Dermal camouflage creates irregular pigmentation variations across shoulders and forearms that shift slightly under different lighting — noticeable but not grotesque. No effort made to conceal either.",
+    "posture_movement": "Economical and controlled — every movement serves a purpose. She stands with weight balanced, shoulders back, ready to move in any direction. Her gaze is constant and assessing. She moves with the precision of someone trained to enter and exit spaces without leaving traces.",
+    "clothing_style": "Tier 3-4 working specialist aesthetic. Black or dark gray reinforced tactical pants with utility pockets and cable routing. Loose-fit thermal undershirt. Lightweight ballistic vest with custom modifications for surveillance work — no unnecessary branding, matte finish to avoid reflection. Worn cargo jacket with multiple hidden pockets and signal-blocking lining. Pair of worn boots with reinforced soles, good for urban climbing. Everything is functional, well-maintained, and color-coordinated for Steamvent's industrial backdrop."
+  },
+  "image_prompt": "Cyberpunk 2226 character portrait of Briar Sigurdsson-Hosseini, a lean 183cm operative with warm golden-brown skin blending Southeast Asian, Middle Eastern, and East Asian heritage. Sharp angular cheekbones, dark almond-shaped eyes with chromatic shift, pulled back long dark braid exposing a chrome cranial implant running from temple to occipital ridge with visible access port. Thin neck scar visible. Irregular chromatic dermal camouflage patches across shoulders and forearms shifting in light. Wearing matte black tactical gear: reinforced pants with cable routing, thermal undershirt, modified ballistic vest, worn cargo jacket with signal-blocking lining, reinforced boots. Standing with economical posture, weight balanced, gaze assessing. Industrial Steamvent backdrop with moody neon and shadow lighting, cool blue-gray tones. Photorealistic, cinematic, professional operative aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 50.9,
+    "Middle Eastern": 32.9,
+    "East Asian": 10.4,
+    "Sub-Saharan African": 5.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

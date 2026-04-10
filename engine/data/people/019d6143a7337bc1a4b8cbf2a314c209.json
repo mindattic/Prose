@@ -1,0 +1,287 @@
+{
+  "id": "019d6143a7337bc1a4b8cbf2a314c209",
+  "type": "character",
+  "name": "Moana Tuiloma",
+  "aliases": [
+    "Z",
+    "Starstitch"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Clothing and fashion vendor, bespoke modifications and wearable tech integration",
+  "age": 32,
+  "status": "active",
+  "location": "The Laceworks, Lakeview Neon, near Clark and Belmont",
+  "description": "Zara is conspicuously beautiful and entirely aware of it, in the way of someone who has learned to use aesthetics as both shield and spear. They are tall and slender with rich dark brown skin and a shaved head except for a dramatic crest of natural coils dyed rotating gradient colors — currently deep violet fading to copper — achieved through cosmetic geneware that responds to their mood chemistry and can be overridden manually. Their eyes have iris mods: six-pointed geometric patterns in pale gold. They dress in their own designs, always, which are architectural and theatrical — structured silhouettes, integrated LED piping, reactive fabrics that shift pattern based on environment or wearer biometrics. Their stall at The Laceworks is less a stall and more an installation: draped fabric, soft indirect lighting, a rack of finished pieces and a consultation corner where they sketch.\n\nZara makes clothes that do things. Not just look extraordinary — though they do — but interface: garments with embedded health monitoring, reactive armor weaving for Tier 1 clients who can't afford body modification, emotive pattern-shift fabrics, wearable communication arrays. Their clientele spans Tier 1 to Tier 3, which is unusual. They do charity commissions for people in genuine hardship and charge Tier 3 clients appropriately to balance it, which their accountant — if they had one — would find alarming. They are deeply, almost dangerously idealistic about fashion as democratic technology: the idea that a piece of clothing could give a street-poor person capabilities that a corporate executive buys as augmentation. They are also twenty-two thousand quanta in informal debt to a materials supplier and trying not to think about it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Creating work that is co-opted by corporate aesthetics and stripped of its meaning",
+      "Debt forcing them to compromise on who they make things for"
+    ],
+    "core_desires": [
+      "To build something beautiful that also gives people material power — art and utility fused",
+      "To be financially stable enough to work entirely on their own terms"
+    ],
+    "coping_mechanisms": [
+      "Creating — the act of making things is inherently regulating for them",
+      "Idealism as a buffer against practical despair — focusing on what the work means rather than what it costs"
+    ],
+    "blind_spots": [
+      "The debt situation is more serious than they are engaging with",
+      "Has difficulty distinguishing between clients who appreciate their work and clients who are exploiting their generosity"
+    ],
+    "secret": "The biomaterials dealer they source reactive fabric components from is connected to unlicensed Helix Biosystems research — the materials are genuine and effective, but their supply chain involves experiments conducted without regulatory oversight. Zara suspects this and has not investigated further because they cannot afford to lose the source. This keeps them up at night."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fluid and expressive, moving between technical textile/engineering vocabulary and lyrical abstraction without apparent effort. Uses 'we' when discussing their work — the garment is always a collaboration between maker and wearer.",
+    "cadence": "Variable — slow and deliberate when explaining a design concept, quick and animated when excited about a material or technique.",
+    "verbal_tics": [
+      "Sketches in the air with one finger while thinking out loud",
+      "Says 'the piece wants—' as if garments have intentions"
+    ],
+    "example_lines": [
+      "'The piece wants a second layer here — something reactive, something that knows when you're afraid and changes the silhouette. Broader. You deserve to look larger when the world is trying to make you small.'",
+      "'I charge Tier 3 clients what it costs to make something well. I charge everyone else what they can carry. That's not charity. That's correct pricing.'",
+      "'I know where those fibers come from and I know I should care more about it than I do. I'm working on caring more. I'm not there yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 3 client — a Sterling-Nakamura mid-level — commissioned a piece with an unusual specification: they need it to block a specific biometric scan frequency used in their company's executive access checkpoints. They've paid well. Zara has made the piece. Now they're wondering what the client actually plans to do with it.",
+    "The biomaterials dealer has abruptly raised prices and added an exclusivity clause to the supply arrangement. Zara needs either to find a new source or to discover what leverage the dealer has over other suppliers — and why the prices changed now.",
+    "The Laceworks cooperative is being squeezed by a development company with Palladian ties that wants to repurpose the building. Zara is the most public face of the cooperative and is being pressured to be the one who negotiates — or the one who refuses and takes the legal consequences."
+  ],
+  "narrative_function": "Equipment and appearance modification source — can create garments with specific functional properties. Cultural barometer for Lakeview Neon's creative underground. Represents the intersection of poverty and art; quest giver for problems in the artisan community; can provide functional wearable tech as an alternative to cyberware for characters who can't afford or won't accept implants.",
+  "augmentations": "Cosmetic geneware (gradient color-shift hair crest, mood/manual responsive). Geometric gold iris mods. Fingertip precision enhancement implants — ultra-fine motor control for detailed textile work.",
+  "daily_life": "Works long, irregular hours — consulting with clients in the morning, fabrication in the afternoon, sourcing and design development late at night. Eats opportunistically and often forgets. Attends the Laceworks cooperative meetings faithfully because they believe in collective advocacy even when the meetings are tedious.",
+  "affiliation": "Independent; active member of the Laceworks Artisan Cooperative; known to the Lakeview Neon creative community; materials relationship with a Helix Biosystems-adjacent biomaterials dealer they are trying not to be dependent on",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 10,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -5,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artisan",
+      "wearable tech",
+      "idealist",
+      "community organizer",
+      "beautiful things",
+      "ethical blind spot"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never make a piece for someone who intends to wear it to harm someone who cannot fight back",
+      "Every commission gets full creative investment regardless of what it pays",
+      "The cooperative comes before individual profit — every time, even when it hurts"
+    ],
+    "escalation_ladder": [
+      "Expresses disagreement clearly and with specific reasoning — direct but not aggressive",
+      "Withdraws from collaboration or commission with a clear, polite explanation",
+      "Brings the issue to the cooperative as a collective problem",
+      "Public — will make the problem visible through their work, literally: has before created pieces that were wearable protest statements"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and attentive, genuinely curious about who they are and what they need. Consultation instinct — wants to understand before proposing anything.",
+      "friends": "Generous and present. Will create things for friends at cost or below without announcement. Can be emotionally intense — loves fully and expects the same."
+    },
+    "stress_responses": {
+      "low": "Works longer hours; pieces become more elaborate and technically demanding",
+      "medium": "Becomes quieter in conversation but more expressive in work — the garments get louder as they get more silent",
+      "high": "Hits a creative block and becomes brittle and self-critical; needs to be talked down slowly"
+    },
+    "contradictions": [
+      "Holds deep ethical convictions about supply chain integrity while actively not investigating a supply chain they suspect is unethical",
+      "Believes in the collective above the individual but carries the cooperative's visibility burdens entirely on their own shoulders"
+    ],
+    "habits": [
+      "Carries a small sketchbook everywhere and draws in it compulsively — observations of people's movement, color combinations seen on the street, construction details",
+      "Names every finished piece — not for sale, just privately, written in a ledger no one else sees",
+      "Touches fabric before buying it the way some people read fortunes — a slow, eyes-closed assessment"
+    ],
+    "breaking_points": [
+      "Discovering definitively that the biomaterials are from non-consensual experimentation — would force a decision they have been avoiding",
+      "Losing the Laceworks space — not just the stall but the cooperative, the community, the context for their work"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7,
+    "People Pleaser": 0.7,
+    "Face": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 23 — joined the Laceworks Artisan Cooperative; first stall in Lakeview Neon",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First wearable tech commission — reactive armor-weave jacket for a Tier 1 client; word of mouth established their dual reputation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began sourcing reactive biomaterials from current dealer; work quality improved significantly; began accruing debt on volume orders",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became cooperative meeting chair; became more publicly visible as artisan community advocate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: debt situation escalating; Palladian development pressure on the Laceworks building; Sterling-Nakamura commission raising questions",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+  ],
+  "registered_firearms": [
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+  ],
+  "related_entities": [
+    "The Laceworks",
+    "Lakeview Neon",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Palladian Construction",
+    "Copper",
+    "The Pale Mile",
+    "Gold",
+    "Alper Lebedev-Tutu",
+    "Bintou Halvorsen-Osei",
+    "Cryogenic Fracture Disbursement Mine CFDM-4",
+    "Helix Biosystems",
+    "Idris Forsberg-Quaye",
+    "Irontide Tidal Energy",
+    "Nodar Kuznetsov-Adu",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Collective",
+    "The Heritage Vault",
+    "The Ledger",
+    "The Pure Hand",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Volkov-Saito Precision VSX-7 'Strelok'",
+    "WELLSPRING"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Pacific Islander (Polynesian/Melanesian) with Hispanic/Latin American and Sub-Saharan African ancestry; a striking blend of warm-toned melanin expression with genetic markers from three continents creating rich brown skin with complex undertones",
+    "height_cm": 183,
+    "weight_kg": 62,
+    "build": "Tall and slender with minimal body fat; angular shoulders and defined collarbones. Long-limbed and graceful, built for precision work rather than bulk. Almost deliberately ascetic in frame.",
+    "hair_color": "Natural deep black coils with cosmetic geneware gradient: currently deep violet fading to copper, responsive to mood chemistry and manually overrideable",
+    "hair_style": "Shaved head except for dramatic architectural crest of natural coils, approximately 8-10cm tall, precisely maintained",
+    "hair_length": "Shaved (with crest exception)",
+    "eye_color": "Natural warm brown base with gold iris mods: six-pointed geometric patterns in pale gold creating a mandala-like effect across the iris",
+    "skin_tone": "Deep warm brown with golden and reddish undertones from Pacific Islander, Hispanic, and African ancestry blended; luminous quality from regular skincare and internal bioluminescent enhancements",
+    "complexion": "Broad facial structure with strong cheekbones characteristic of Pacific Islander ancestry, full expressive features, sharp jawline. Skin is clear and meticulously maintained—no visible acne or blemishes. Grooming is intentional and artistic; they are conspicuously beautiful and carry themselves with full awareness of it.",
+    "distinguishing_marks": [
+      "Fine precision-work calluses on fingertips from detailed textile manipulation, barely visible but present on index through ring fingers of both hands",
+      "Faint chemical stains—dyes, reactive fabric compounds—around the cuticles and occasional spots on inner wrists from materials handling"
+    ],
+    "visible_augmentations": "Geometric gold iris mods creating six-pointed star patterns. Cosmetic geneware hair crest with active color-shift capability (currently violet-to-copper gradient). Fingertip precision enhancement implants visible as subtle metallic tracery at the base of fingernails under close inspection. No visible heavy chrome or external cybernetics.",
+    "posture_movement": "Moves with deliberate grace and economical precision—every gesture is purposeful. Stands with weight balanced, ready to shift; hands often animated when speaking about design. Posture is confident but not aggressive; they occupy space thoughtfully. There is a quality of constant creative assessment—eyes track fabrics, patterns, light reflections on surfaces.",
+    "clothing_style": "Always wears their own designs: architectural, theatrical garments with integrated LED piping, reactive smart fabrics that shift patterns based on environment or biometric response. Current uniform: asymmetrical structured jacket in a dark base color with LED thread highlights (currently amber/copper to match hair crest), fitted reactive trousers that shift from charcoal to deep blue under different lighting, custom modular shirt with embedded monitoring nodes visible as subtle geometric seams. Accessories: precision tools worn on a custom leather utility belt; statement jewelry that doubles as diagnostic tools. Tier 2-3 materials quality—expensive but not ostentatiously so. Footwear: custom modular boots with integrated grip and sensor nodes. Overall effect: high-fashion cyberpunk artisan, intentionally designed personal brand."
+  },
+  "image_prompt": "Moana Tuiloma, tall slender figure with deep warm brown skin blending Pacific Islander, Hispanic, and African heritage, shaved head with dramatic architectural crest of natural black coils, gold geometric iris mods forming six-pointed stars, natural brown eyes with pale gold patterns. Wears asymmetrical structured jacket with amber LED piping matching violet-to-copper hair gradient, fitted reactive smart trousers shifting charcoal to deep blue, custom modular shirt with geometric seams and monitoring nodes. Custom leather utility belt with precision tools, statement diagnostic jewelry, modular boots with sensor nodes. Deliberate graceful posture, hands animated, creative gaze. Cyberpunk 2226 Great Lakes Metropolitan Zone, high-fashion artisan aesthetic, dramatic moody lighting emphasizing gold accents and LED highlights, theatrical architectural clothing design --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 58.6,
+    "Hispanic/Latin American": 27.7,
+    "Sub-Saharan African": 13.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

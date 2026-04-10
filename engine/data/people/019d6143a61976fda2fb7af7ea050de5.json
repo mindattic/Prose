@@ -1,0 +1,306 @@
+{
+  "id": "019d6143a61976fda2fb7af7ea050de5",
+  "type": "character",
+  "name": "Soraya Árnason-Sabbagh",
+  "aliases": [
+    "Patch",
+    "The Healer of Gate 9",
+    "Nobody's Doctor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Unlicensed field medic and augmentation repair technician",
+  "age": 22,
+  "status": "active",
+  "location": "Old Harbor, near Lake Shore and Wacker",
+  "description": "Gavril is a slight young man of Ghanaian-Japanese descent who looks, at first glance, like he is in the wrong place — too young, too clean-handed, too careful with his movements for Old Harbor's Gate 9 district. The impression lasts until you see him work, at which point it inverts entirely. He has his mother's broad cheekbones and his father's near-black eyes, and his hands, when they are still, have the quality of instruments waiting to be used. A fading scar runs from his left jaw to his collarbone, the only visible evidence of the incident that ended his two years of formal medical training at a Meridian Core institution.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.9,
+      "id": 0.55,
+      "shadow": 0.25,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Making a mistake that kills someone he could have saved with proper resources",
+      "That the institution was right about him — that he doesn't belong in formal medicine — and that this is his punishment rather than his choice",
+      "Losing his hands"
+    ],
+    "core_desires": [
+      "To practice medicine fully and properly, without the constraints of who can afford it or who has the right credentials",
+      "To be trusted absolutely by at least one community",
+      "To understand what happened to him well enough to name it"
+    ],
+    "coping_mechanisms": [
+      "Extreme procedural focus — breaks every task into steps to avoid sitting with emotion",
+      "Gallows humor that functions as pressure release",
+      "Over-preparation as anxiety management; he carries more supplies than any single call should require"
+    ],
+    "blind_spots": [
+      "His youth makes him underestimate how much his patients' histories differ from his training cases",
+      "He takes on cases beyond his current capability because saying no feels like the institution winning",
+      "He cannot ask for help without framing it as a clinical consultation rather than an admission of need"
+    ],
+    "secret": "He was expelled from the Meridian Core medical program not for incompetence but because he filed a formal complaint against a senior physician who was deliberately undertreating augmentation-dependent patients to create dependency on paid maintenance contracts. The complaint was buried, his record was flagged, and the physician was promoted. Gavril has the original documentation. He doesn't know what to do with it and is afraid that if he uses it, whatever credibility he's built in Old Harbor will be consumed by the process."
+  },
+  "speech_patterns": {
+    "vocabulary": "Code-switches fluidly between clinical precision and Old Harbor vernacular depending on context and audience. Uses medical terminology accurately but translates it without being asked. Humor is dry and slightly dark.",
+    "cadence": "Quick during procedures, deliberately slowed when delivering difficult information. Asks clarifying questions in rapid succession when assessing a situation.",
+    "verbal_tics": [
+      "Says 'okay, so' at the start of clinical assessments as a focusing mechanism",
+      "Uses 'technically' as a hedge when he's about to say something that should be said by a licensed physician",
+      "Ends reassurances with 'that's the easy part' even when it isn't"
+    ],
+    "example_lines": [
+      "Okay, so — the augmentation isn't the problem, the interface rejection is the problem. Different fix. Cheaper, actually, technically.",
+      "I'm not a doctor. I want to be clear about that. I'm also the person who's going to keep you from losing that arm, so let's do both things at once.",
+      "That's the easy part. The hard part is whatever put you in this situation in the first place, and that one I can't fix.",
+      "You want the version where I explain the pathology or the version where I tell you what I'm going to do about it? Because I only have time for one."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Nadira Osei-Brempong",
+      "type": "Distant relation, complicated",
+      "description": "A shared family name from his father's side that may or may not indicate actual kinship — both are uncertain and neither has pushed to resolve it. Nadira has sent him patients twice without explanation. He has treated them without asking.",
+      "emotional_core": "The tentative, almost superstitious care of two people who might be family in a world where family is a liability",
+      "story_tension": "One of the patients Nadira sent him is now asking questions about who referred them, and Gavril doesn't know whether answering is a protection or a betrayal"
+    },
+    {
+      "name": "Orvyn Specht",
+      "type": "Reluctant information source",
+      "description": "Orvyn occasionally has need of discreet medical attention and has learned that Gavril is cheaper, more competent, and less talkative than alternatives. Gavril finds Orvyn's work ethically troubling and clinically interesting in roughly equal measure.",
+      "emotional_core": "The professional intimacy of the examination room applied to someone you would not otherwise choose to know",
+      "story_tension": "Orvyn's last visit revealed an augmentation modification that Gavril has only read about in suppressed research papers — and he cannot un-know it"
+    },
+    {
+      "name": "Priya Subramaniam-Vogt",
+      "type": "Mentor figure, one-sided and unacknowledged",
+      "description": "Gavril has read everything Priya has published and follows her professional movements through public records. He has never contacted her. She does not know he exists. He is aware this is strange.",
+      "emotional_core": "The orphaned admiration of someone whose path was cut off — he is following her work the way you follow a road you were not allowed to take",
+      "story_tension": "Priya is currently investigating something in Old Harbor that will bring her into his district within weeks, and he will have to decide whether to surface"
+    }
+  ],
+  "story_hooks": [
+    "A patient arrives with a wound pattern that matches three other cases Gavril has treated in the past month — all from different factions, all claiming different incidents, all with the same unusual tissue damage signature",
+    "The documentation he's been sitting on for two years has become newly relevant — the physician he reported is now involved in a public health initiative in The Shelf",
+    "Someone has started leaving supplies outside his container door — high-quality, expensive, exactly what he's been running low on — with no note and no explanation",
+    "A child patient requires a procedure that is genuinely beyond his current capability, and the nearest licensed facility has a policy that will turn them away"
+  ],
+  "narrative_function": "Street-level moral center — his youth and incomplete training make his commitment to care feel earned rather than assumed, and he functions as a point-of-entry character who makes the consequences of the city's systems visible through the bodies that survive them",
+  "augmentations": "Tactile sensitivity amplifiers in fingertips — medical grade, salvaged from a decommissioned Meridian Core surgical suite, allow detection of pulse irregularities and tissue density variations by touch,No other augmentations by choice — he considers his unaugmented baseline a diagnostic tool and is wary of anything that might alter his sensory calibration",
+  "daily_life": "The container clinic runs on no fixed schedule because injuries don't run on schedules. He sleeps in three-to-five hour blocks, often on a folding cot in the back of the clinic. Mornings, if they're quiet, he updates his reference databases and does equipment maintenance. He eats at the noodle stall in front, where the owner — who knows exactly what's behind the storage panel — charges him nothing and asks nothing. Twice a week he does what he thinks of as rounds: a walk through Gate 9's adjacent blocks, checking in with regulars, noting who looks worse than last week. He is twenty-two years old and has the sleep debt of someone much older.",
+  "affiliation": "Unaffiliated; known to and tolerated by most Old Harbor factions as a neutral resource; maintains careful non-alignment as a survival strategy and an ethical position he isn't always sure he can sustain",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 0,
+      "transparency_guardedness": -1
+    },
+    "drives": [
+      "Practice medicine fully and properly",
+      "Earn absolute community trust",
+      "Name what happened to him"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Breaks everything into procedural steps, over-prepares, carries extra supplies"
+      },
+      "moral": 8,
+      "trust": 5,
+      "desperation": 5
+    },
+    "strengths": [
+      "Kindness",
+      "Bravery",
+      "Perseverance",
+      "Integrity",
+      "Curiosity"
+    ],
+    "weaknesses": [
+      "Humility",
+      "Prudence",
+      "Self-regulation",
+      "Perspective",
+      "Teamwork"
+    ],
+    "tags": [
+      "field-medic",
+      "unlicensed",
+      "expelled",
+      "young",
+      "Old-Harbor",
+      "Gate-9",
+      "tactile-augmented",
+      "sleep-deprived"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always open clinical assessments with 'okay, so' as a focusing mechanism",
+      "Will never turn away a patient even when the case exceeds his capability",
+      "Will always translate medical terminology for patients without being asked",
+      "Will never use the original documentation against the physician unless the moment is right",
+      "Will always end reassurances with 'that's the easy part' even when it is not",
+      "Will never frame a request for help as anything other than a clinical consultation",
+      "Will always carry more supplies than any single call should require"
+    ],
+    "escalation_ladder": [
+      "Rapid-fire clarifying questions — clinical assessment mode activates",
+      "Uses 'technically' to hedge while doing something only a licensed physician should do",
+      "Drops the vernacular and goes full clinical precision — the expelled medical student emerges",
+      "Refuses to leave a patient's side regardless of external threat — the clinic becomes inviolable ground",
+      "Deploys the documentation — the complaint, the evidence, the name of the physician — the weapon he has been sitting on"
+    ],
+    "interpersonal_modes": {
+      "Nadira Osei-Brempong": "Tentative, superstitious care — they might be family and neither pushes to confirm",
+      "Orvyn Specht": "Clinical intimacy applied to someone he would not otherwise choose to know — ethically troubled, clinically fascinated",
+      "Priya Subramaniam-Vogt": "Orphaned admiration — follows her work the way you follow a road you were not allowed to take"
+    },
+    "stress_responses": {
+      "low": "Updates reference databases, does equipment maintenance, eats something warm",
+      "medium": "Gallows humor intensifies, sleep drops further, over-preparation becomes extreme",
+      "high": "Takes on cases beyond his capability because saying no feels like the institution winning",
+      "critical": "The expelled student's rage surfaces — he becomes the person who filed the complaint, righteous and reckless"
+    },
+    "contradictions": [
+      "Refuses to say no to cases beyond his skill because saying no means the institution was right about him",
+      "Cannot ask for help without framing it clinically — admitting need feels like admitting incompetence",
+      "Holds documentation that could change things but fears using it would consume the credibility he has built"
+    ],
+    "habits": [
+      "Opens assessments with 'okay, so' regardless of context",
+      "Uses 'technically' before saying anything a licensed physician should say",
+      "Does rounds twice weekly — walks Gate 9 blocks, checks on regulars, notes who looks worse",
+      "Maintains equipment with the focus he cannot sustain in the rest of his life",
+      "Sleeps in three-to-five hour blocks on a folding cot behind the clinic"
+    ],
+    "breaking_points": [
+      "A child patient requiring a procedure genuinely beyond his capability with no referral option",
+      "The physician he reported appearing in Old Harbor in a public health capacity",
+      "Losing his hands — the one augmentation he values above everything",
+      "Discovering who has been leaving high-quality supplies at his door and what they want in return"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "related_entities": [
+    "Ringo Corponation Haptic Signature Recorder",
+    "Meridian Core",
+    "TESSERA PG-2 'Signature'",
+    "The Shelf",
+    "Irontide Tidal Energy",
+    "Handed",
+    "The Pure Hand",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-7 'Nursery'",
+    "Crucible TR-7 'Triage'",
+    "Ezio Kaboré-Malhotra",
+    "Kairos",
+    "Korrath",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Norwood Quiet",
+    "Old Harbor",
+    "Patient Zero",
+    "Street Custom 'Gallows' Recurve Bow",
+    "Sustrel",
+    "The Heritage Vault",
+    "The Human Baseline Alliance",
+    "The Meridian Core"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Middle Eastern, Southeast Asian, Hispanic/Latin American, and Eastern European ancestry creating a striking blend; warm golden-olive undertones from the Middle Eastern and Southeast Asian majority, with subtle warmth from Latin American heritage and fair undertones from Eastern European genetics",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and wiry with minimal body fat; shoulders slightly narrow but defined through constant physical work; the build of someone who doesn't eat regularly but moves with precision",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Short, kept practical and clean; styled close to the scalp, minimal styling effort",
+    "hair_length": "Short",
+    "eye_color": "Near-black with warm undertones, alert and observant",
+    "skin_tone": "Warm golden-olive complexion blending Middle Eastern depth (40.8%) with Southeast Asian luminosity (32.3%), enriched by Latin American warmth (20%), with subtle fair undertones from Eastern European genetics (6.9%); irregular sun exposure creates slight pallor suggesting street living and sleep deprivation",
+    "complexion": "Angular features with high, prominent cheekbones and a slightly tapered jawline reflecting the Southeast Asian and Middle Eastern ancestry; skin is generally clear but shows the pallor of someone living on irregular sleep and minimal sun exposure; faint darkening under eyes suggesting chronic fatigue; facial structure shows the blend of Middle Eastern definition with Southeast Asian delicacy",
+    "distinguishing_marks": [
+      "Fading surgical scar running from left jaw down to left collarbone, approximately 15cm in length, pale and thin but still visible under certain light — evidence of the incident that ended formal medical training",
+      "Calloused fingertips on both hands, particularly index and middle fingers, from constant fine motor work and tactile examination"
+    ],
+    "visible_augmentations": "None externally visible; medical-grade tactile sensitivity amplifiers in fingertips are subcutaneous and undetectable without close examination",
+    "posture_movement": "Moves with deliberate economy of motion; posture is upright but not rigid, suggesting both medical training and street-learned caution; hands rest in a neutral ready position; eyes track details in environment constantly; walks with purpose but never hurries unless responding to emergency",
+    "clothing_style": "Tier 4 working-class practical: dark matte synthweave cargo pants with multiple pockets for tools and supplies; plain gray or dark blue long-sleeved fitted shirt, sometimes rolled up during work; worn black synthetic jacket with internal pockets for equipment; no visible branding; sturdy grey composite boots broken in from heavy use; overall appearance deliberately unremarkable and functional"
+  },
+  "image_prompt": "Soraya Árnason-Sabbagh, 172cm lean wiry figure, warm golden-olive skin with Middle Eastern and Southeast Asian prominence, angular high cheekbones with Southeast Asian delicacy, near-black alert eyes, short dark brown hair close to scalp, faint surgical scar from jaw to collarbone, calloused fingertips suggesting medical work, wearing dark synthweave cargo pants and gray fitted long-sleeved shirt with worn black synthetic jacket, sturdy grey composite boots, posture upright and precise with hands in ready position, eyes tracking environment, cyberpunk 2226 Great Lakes Metropolitan Zone, dimly lit industrial Old Harbor setting, neon signs reflecting off wet pavement, mood of focused determination and street caution, atmospheric depth of field, cinematic lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 40.8,
+    "Southeast Asian": 32.3,
+    "Hispanic/Latin American": 20.0,
+    "Eastern European": 6.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

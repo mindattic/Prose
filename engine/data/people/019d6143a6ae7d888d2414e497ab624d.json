@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a6ae7d888d2414e497ab624d",
+  "type": "character",
+  "name": "Zara Holm-Calvillo",
+  "aliases": [
+    "Raz",
+    "Razvan the Resinous"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Street pharmacist and herbal remedy dealer",
+  "age": 34,
+  "status": "active",
+  "location": "The Alban Souk, Copperhead, near Halsted and Chicago Ave",
+  "description": "Razvan is tall and languid with warm brown skin, a generous nose, and long fingers that are perpetually stained faint green-brown from their work with plant matter and synthesis compounds. Their hair is grown long and kept in thick, loose coils dyed deep forest green — a permanent gene-dye job they refresh every two years. They wear a worn canvas apron covered in small pockets over layered thrift-store clothing, and their stall is a magnificent, chaotic installation of hanging dried plants, labeled glass jars, handwritten signs in four scripts, and a small humming cold-storage unit for the compounds that need it. At the stall's center hangs an intricate woven E.L.F. net — a traditional Copperhead offering structure — for the spirit Razvan calls Vessel, whom they believe governs transformation and the passing of one state into another.\n\nRazvan operates in the grey legal space between licensed pharmacy (which they are not) and herbalism (which they technically are). They can read your symptoms by watching you walk up, and their stock ranges from grandmother-tested plant tinctures to synthesized compounds that would cost six times as much at a Zheng-Dao medkiosk. They are unhurried, gently sardonic, and possess a nearly preternatural calm that people find either deeply comforting or faintly unnerving. They see a great deal of human suffering in small doses every day and have developed a philosophy about it that they will share with you if you seem like you can handle it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the harm reduction work they do is statistically meaningless against the scale of structural neglect",
+      "Losing their sense of equanimity — that the calm is the only thing holding them together"
+    ],
+    "core_desires": [
+      "To reduce suffering in their immediate radius, measurably, concretely",
+      "To one day have the synthesizer equipment to do what the Zheng-Dao medkiosks do, but free"
+    ],
+    "coping_mechanisms": [
+      "Philosophical framing of suffering as transition rather than endpoint",
+      "Focused craft work as grounding ritual"
+    ],
+    "blind_spots": [
+      "Their emotional detachment reads as wisdom to clients but is partly unprocessed grief — they have lost three regular clients to overdose in two years and have not mourned any of them properly"
+    ],
+    "secret": "One of their most popular tincture blends — marketed as a sleep aid — contains a microdose of a compound that mildly inhibits the neurological pathway Zheng-Dao's addiction-maintenance pharmaceuticals depend on. They have been slowly, quietly weaning certain clients off corporate pharmaceutical dependency without telling them. It works. They are not certain they had the right to do it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise botanical and pharmacological terminology mixed with old souk slang; occasionally slips into Tamil phrases from their grandmother's side; deliberate and thoughtful word choice.",
+    "cadence": "Slow, unhurried, with long considered pauses that feel intentional rather than hesitant.",
+    "verbal_tics": [
+      "'What your body is doing is—' as a framing device for diagnoses",
+      "A soft sound — somewhere between 'hmm' and 'ah' — before delivering information they suspect you won't like"
+    ],
+    "example_lines": [
+      "What your body is doing is spending everything it has on the symptom and nothing on the cause. Here. This. Three drops, not five.",
+      "Hmm. You have been taking the Zheng-Dao maintenance tabs for how long. Ah. Well. We can talk about that. Sit down first."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They have noticed an unusual cluster of the same symptom profile in people from a specific block in Copperhead — something is in the water or the air, and they want someone to find out what before they go to anyone official.",
+    "A regular client — someone Razvan has been quietly de-pharming — has gone missing. The client's family blames the withdrawal and is very angry."
+  ],
+  "narrative_function": "Medical resource for street-level characters; source of information about what ailments are circulating in the neighborhood, suggesting environmental hazards or deliberate poisoning; moral sounding board.",
+  "augmentations": "A basic biochemical sensor strip embedded under the skin of their forearm — they tap it to their wrist to run a rough analysis of compounds, legal and otherwise. Came with a stolen Helix Biosystems calibration kit they will not discuss.",
+  "daily_life": "Spends mornings doing synthesis and preparation in their back room before opening at 1100; the stall runs until 2000, after which they attend to the free clinic supply chain two nights a week.",
+  "affiliation": "Independent; informal network of Copperhead and Alban Souk herbalists; occasionally supplies the Hough Reclamation free clinic with donated stock",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street medic",
+      "herbalist",
+      "pharmaceutical grey market",
+      "moral complexity",
+      "harm reduction"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell anything that increases dependency without disclosing that it does",
+      "Do not dispense to someone who is visibly in crisis — sit them down first"
+    ],
+    "escalation_ladder": [
+      "Calm, direct statement of what they are and are not willing to do",
+      "Moves the interaction away from the public stall, quietly",
+      "Shuts down and refers — will not be baited into confrontation; the stall is more important than the argument"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Attentive and neutral, reads them clinically before socially",
+      "friends": "Warmer and more sardonic; asks good questions; remembers what you told them six months ago"
+    },
+    "stress_responses": {
+      "low": "Increases methodical work pace, hums",
+      "medium": "Goes very quiet and still; processes internally before responding",
+      "high": "Removes themselves from the situation entirely if possible; returns hours later composed and practical"
+    },
+    "contradictions": [
+      "Deeply committed to informed consent and patient autonomy while having made a significant unilateral decision about their clients' pharmaceutical lives"
+    ],
+    "habits": [
+      "Speaks quietly to Vessel each morning while preparing the day's stock — not prayer exactly, more like narrating their intentions",
+      "Keeps a small notebook of client symptoms coded by symbol, no names — their own privacy system"
+    ],
+    "breaking_points": [
+      "Watching someone choose a corporate pharmaceutical dependency over a free, working alternative because the packaging looks more legitimate"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  ],
+  "registered_firearms": [
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  ],
+  "related_entities": [
+    "The Alban Souk",
+    "Copperhead",
+    "Grandmother",
+    "Zheng-dao Bioelectric",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Stratum",
+    "Palette",
+    "Glass",
+    "Arcturus CK-5 'Bloodhound'",
+    "Chicago",
+    "Arcturus BH-2 'Marrow'",
+    "Arcturus HW-1 'Goliath'",
+    "Carrion Defense Works",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
+    "Helix Biosystems",
+    "Hough Reclamation",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "Slagworks Industrial",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "The Coffin Nails",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Reclamation Assembly",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American, Southeast Asian, Middle Eastern, Sub-Saharan African, and South Asian—a complex diaspora blend. Warm medium brown skin with golden undertones reflecting the convergence of multiple equatorial and subtropical ancestries. Features show the influence of all five genetic sources: generous nose and high cheekbones with subtle Southeast Asian eye shape, warm amber-brown eyes with darker iris rings, full lips with Middle Eastern and African heritage characteristics.",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and languid with lean musculature; long-limbed and graceful, moving with unhurried fluidity. Fingers noticeably elongated and dexterous from years of precise synthesis and plant handling.",
+    "hair_color": "Deep forest green (permanent gene-dye, refreshed biennially)",
+    "hair_style": "Thick coils worn loose and shoulder-length, often gathered with twine or copper wire during work",
+    "hair_length": "Long",
+    "eye_color": "Warm amber-brown, with faint ring of darker brown at iris edge",
+    "skin_tone": "Warm medium brown with golden undertones; rich melanization across all ancestry groups present in their genetic profile",
+    "complexion": "Clear, unlined face with generous nose and high cheekbones reflecting Southeast Asian and Middle Eastern structure blended with Sub-Saharan and South Asian features. Perpetually faint green-brown staining on fingertips and the webbing between fingers from plant matter and synthesis compounds. Nails kept trimmed and slightly calloused at cuticles from daily handling of dried botanicals.",
+    "distinguishing_marks": [
+      "Fine, barely-visible linear scarring across the inner left forearm where the biochemical sensor strip was embedded — approximately 8cm long, pale against their skin tone"
+    ],
+    "visible_augmentations": "A thin, slightly-raised biotech nodule visible beneath the skin on the inside of the left forearm (biochemical sensor strip); occasionally glimmers faintly with bioluminescent calibration light when activated. No external chrome or obvious cybernetic modifications.",
+    "posture_movement": "Moves with deliberate, economical grace — no wasted motion. When standing at rest, weight balanced evenly with a slight forward cant from years of leaning over the synthesis table. Gestures are precise and controlled; hands move through space with the confidence of someone accustomed to delicate work. Eyes track customers with quiet assessment before engaging. Overall bearing conveys unhurried calm and deep presence.",
+    "clothing_style": "Worn canvas apron with multiple small sewn pockets, stained with dried plant residue and synthesis marks, worn over layered thrift-store pieces: faded botanical-print long-sleeve shirts, oversized cardigans in earth tones, patched cargo pants in neutral colors. Practical Tier 3-4 working-class aesthetic with deliberate bohemian touches. Copper wire, twine, and occasional brass findings woven into hair. Barefoot or wearing scuffed leather sandals at the stall."
+  },
+  "image_prompt": "Cyberpunk 2226, Zara Holm-Calvillo, a tall graceful figure with deep forest green coiled hair at shoulder-length, warm medium-brown skin with golden undertones reflecting mixed Hispanic/Latin American, Southeast Asian, Middle Eastern, Sub-Saharan African and South Asian heritage. Warm amber-brown eyes with dark iris rings, generous nose and high cheekbones. Lean muscular build, 188cm tall, moving with economical precision. Wearing worn canvas apron stained with plant residue over faded botanical-print layered shirts and patched cargo pants in earth tones. Copper wire and twine woven through hair. Green-brown botanical staining visible on fingertips and between fingers. Thin glimmering biotech nodule visible on inner left forearm. Standing at synthesis stall in Great Lakes Metropolitan Zone, quiet presence, precise hand gestures, unhurried calm bearing, warm indoor bioluminescent and natural light, bohemian working-class aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 29.4,
+    "Southeast Asian": 21.7,
+    "Middle Eastern": 18.9,
+    "Sub-Saharan African": 17.9,
+    "South Asian": 12.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

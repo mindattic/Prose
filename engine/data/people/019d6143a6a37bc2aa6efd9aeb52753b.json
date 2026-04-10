@@ -1,0 +1,301 @@
+{
+  "id": "019d6143a6a37bc2aa6efd9aeb52753b",
+  "type": "character",
+  "name": "Ioane Dlamini-Guerrero",
+  "aliases": [
+    "Preem",
+    "The Shelf Rat"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bootleg media seller and small-time data broker — pirated sensorium feeds, black-market memory cores, and hot information",
+  "age": 27,
+  "status": "active",
+  "location": "The Shelf, Ironvein district — operates from a converted maintenance alcove beneath the mag-rail support struts, near Kedzie and Division",
+  "description": "Przemek is a sharp-faced young man with the kind of restless eyes that track every entrance and exit in a room simultaneously. He is wiry and pale-complexioned with his Hausa grandfather's high cheekbones and his Mexican grandmother's jaw, and he has cat ears — matte black, expensive enough to be the nicest thing he owns — that swivel independent of his attention, which unnerves people who don't know him. He keeps his dark hair in a short braid tucked under a hood most of the time and dresses in layered secondhand tech-worker castoffs that make him look like he belongs in a server room rather than a market alcove.\n\nHe is aggressively, exhaustingly clever — the kind of person who has already run seventeen versions of this conversation in his head before you finish your first sentence. He deals in media and data with the same practiced casualness that a much older person would deal in rumors, and he has a genuine passion for pre-Consolidation cinema that he disguises as ironic interest. He is afraid of exactly two things: boredom and being cornered, and he confuses both with death.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.3,
+      "id": 0.8,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being trapped — physically, contractually, or socially",
+      "Being proven stupid in front of someone he respects"
+    ],
+    "core_desires": [
+      "Enough money to buy a legitimate data-broker license and operate above ground",
+      "To be taken seriously by people who currently dismiss him as a kid"
+    ],
+    "coping_mechanisms": [
+      "Deflects vulnerability with sarcasm and rapid topic changes",
+      "Hoards information he doesn't need because knowledge feels like armor"
+    ],
+    "blind_spots": [
+      "He trusts his own read of situations so completely that he ignores evidence that contradicts it",
+      "He does not recognize how visible his fear of being trapped makes him"
+    ],
+    "secret": "He once sold a memory core that contained evidence of a Sterling-Nakamura illegal neural trial to a buyer who turned out to be a Sterling-Nakamura internal audit operative — three people he knew went quiet afterward; he has never confirmed whether they were arrested or killed, and he has never sold to an anonymous buyer since, but he has also never reported what he knows"
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, dense, laced with media slang and Shelf technical jargon; switches registers instantly depending on who he's talking to — he can sound like a corporate drone or a street kid in the same breath",
+    "cadence": "Machine-gun delivery when excited or nervous, which is most of the time; pauses are deliberate and mean he is calculating",
+    "verbal_tics": [
+      "'Look—' as a sentence opener when he wants to reframe something",
+      "'Completely unrelated, but—' before anything that is very related",
+      "Snaps his fingers when he lands on a word he was searching for"
+    ],
+    "example_lines": [
+      "'Look, I'm not saying the feed is legal, I'm saying it's accurate, which is more than you get from Tessera News so can we agree those are different categories?'",
+      "'Completely unrelated, but the last person who asked me that question stopped coming around. I'm sure it's fine. What did you say your name was?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has a memory core in his possession that he pulled from a salvage lot and hasn't been able to crack — something on it is clearly valuable because two different parties have already asked him about it without him advertising its existence",
+    "One of the three people who went quiet after the Sterling-Nakamura incident has resurfaced and is looking for him, and Przemek doesn't know if this is good news or the worst news",
+    "He has a pirated sensorium feed of an Axiom boardroom meeting from six weeks ago that he doesn't understand but that a buyer is offering an implausible amount of Quanta for"
+  ],
+  "narrative_function": "Information vendor and media source; can provide access to pirated content including surveillance feeds and corporate internal communications; useful as an entry point into the Shelf's underground data economy",
+  "augmentations": "Black geneware cat ears (cosmetic, mid-range); basic neural buffer for faster media previewing (cheap Zheng-Dao utility model); subdermal data-storage nodules in left forearm",
+  "daily_life": "He sleeps until noon in his alcove behind a security screen, opens for business by 14:00, and runs until the mag-rail goes quiet after midnight; he eats whatever is cheap and nearby and survives primarily on stimulant tabs and spite.",
+  "affiliation": "Loosely affiliated with a collective of Shelf vendors called the Strut Crew; occasional data-runner for independent parties; refuses formal gang affiliation on principle he claims is ideological but is actually paranoia",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information broker",
+      "paranoid",
+      "media obsessive",
+      "street-smart",
+      "accidental conscience"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell to anonymous buyers — everyone gets a name and a face attached",
+      "If something is too valuable, it is also too dangerous — price accordingly or don't carry it",
+      "First instinct is always to run; second instinct is to find out more before running"
+    ],
+    "escalation_ladder": [
+      "Friendly deflection — jokes, redirects, offers unrelated product",
+      "Cautious engagement — provides partial information while assessing the person",
+      "Transactional alliance — sells what they need, no favors, no commitments",
+      "Genuine investment — rare; only when he decides someone is both trustworthy and interesting"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Bright, fast, professionally charming — performs competence and ease as a deterrent to being tested",
+      "friends": "Drops the performance almost completely; becomes oddly earnest and asks too many personal questions"
+    },
+    "stress_responses": {
+      "low": "Becomes chattier and funnier than usual — stress reads as energy",
+      "medium": "Goes very still and precise; the jokes stop",
+      "high": "Exits. Physically if possible, mentally if not. Will burn a relationship rather than stay in a situation that feels like a trap."
+    },
+    "contradictions": [
+      "Claims to be purely mercenary but has a consistent pattern of giving away information to people he thinks genuinely need it",
+      "Insists he has no loyalties but has never once sold out someone from the Strut Crew"
+    ],
+    "habits": [
+      "Rotates the stock visible from the entrance to always look different to repeat browsers",
+      "Watches old flat-format films on a tiny screen at the back of the alcove when business is slow",
+      "Writes a daily encrypted log that he tells himself is operational security and is actually a diary"
+    ],
+    "breaking_points": [
+      "Finding out he was used as an instrument to hurt someone innocent",
+      "Being physically restrained or confined"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural buffer — Zheng-Dao Utility Series 3, basic media-processing acceleration",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural buffer — Zheng-Dao Utility Series 3, basic media-processing acceleration",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal data-storage nodules, left forearm — 4TB, encrypted",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal data-storage nodules, left forearm — 4TB, encrypted",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "People Pleaser": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2173 — Born in Ironvein to a Polish-Hausa father and a Mexican-Ghanaian mother, second of four children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Drops out of Ironvein public schooling at age 12; begins running errands for Shelf vendors",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2191 — Establishes his own alcove stall with Φ200 borrowed from the Strut Crew collective",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — The Sterling-Nakamura memory core incident; never fully processed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The CEO",
+    "Grandmother",
+    "The Shelf",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Ironvein",
+    "Stratum",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile",
+    "Auricula Felis Modification",
+    "Emeka Johansson-Orozco",
+    "Idris Forsberg-Quaye",
+    "Irontide Tidal Energy",
+    "Lazarus LX-2 'Lab Rat'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Obafemi Szczypiński-Lautoa",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Plot 17",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Corponation",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Vuk Jorgensen-Toure",
+    "Waxwing Neuromedia",
+    "Zheng-dao Bioelectric"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (39.6%), Pacific Islander (31.5%), and Hispanic/Latin American (28.9%) — a striking tricontinent blend. His features reflect this complex ancestry: high, prominent cheekbones and facial structure from his African heritage, softened and broadened by Pacific Islander bone structure, with warmth and angularity from Latin American lineage. The genetic mix creates an unusual harmony of sharp and rounded features.",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Wiry and angular, all elbows and sharp shoulders — the physique of someone who subsists on stimulant tabs and minimal nutrition rather than exercise. Tense musculature suggests constant readiness rather than strength.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Short braid, typically tucked beneath a hood; when exposed, the braid runs down the nape of his neck",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and constantly tracking",
+    "skin_tone": "Deep warm bronze with golden undertones — a natural blend of melanin-rich African ancestry, Pacific Islander sun-adapted pigmentation, and Latin American warmth. The overall effect is a rich, lived-in brown that suggests both equatorial heritage and time spent under artificial light, creating subtle ashen undertones in certain angles.",
+    "complexion": "Sharp-featured face with high, prominent cheekbones from his African heritage, balanced by the broader, more angular jawline reflecting his Pacific Islander ancestry and strengthened by his Latin American lineage. His facial structure suggests someone built for both sharp precision and resilience. Facial hair is sparse and unkempt. Skin shows the minor wear of irregular sleep and poor nutrition — not scarred, but with a faint grayness that stimulant overuse brings, barely dulling the natural warmth beneath.",
+    "visible_augmentations": "Matte black geneware cat ears mounted on his skull, capable of independent rotation — they swivel toward sound sources or movement without conscious input from him, creating an unsettling impression of divided attention. The ears are his most expensive possession and show meticulous maintenance despite his general disregard for appearance. Subdermal data-storage nodules are faintly visible as small ridges beneath the skin of his left forearm when his sleeve rides up, glinting dully under certain light.",
+    "distinguishing_marks": [
+      "Faint chemical burn on right forearm (reactive acid splash during early black-market data extraction attempt, poorly healed)",
+      "Thin scar along left temple, barely visible unless hair is pulled back (childhood accident, irrelevant to his current life but shapes how he positions himself in crowds)"
+    ],
+    "posture_movement": "He moves with controlled, economical precision — no wasted motion, but a constant underlying tension suggesting he is never fully at rest. His eyes track entrances and exits habitually. When sitting, he positions himself with a clear sightline to exits and keeps his hands visible. His cat ears swivel independently of his gaze, creating a disquieting multiplicity of attention.",
+    "clothing_style": "Layered secondhand tech-worker castoffs in muted grays, blacks, and industrial blues — oversized server-room wear salvaged from corporate recycling bins, now repurposed as street armor. A hood is almost always up. His jacket is a patchwork of thermal vests with exposed wiring at the sleeves (non-functional, purely aesthetic). His pants are cargo-style with reinforced pockets (for data cores and merchandise). Footwear is worn Tier 4 worker boots, resoled twice. Everything is functional, nothing is fashionable; he dresses for invisibility in tech spaces and operates on the principle that he should look like a maintenance worker who belongs in infrastructure rather than a street vendor. No visible jewelry except the cat ears."
+  },
+  "image_prompt": "Ioane Dlamini-Guerrero, a lean 172cm mixed-heritage hacker in cyberpunk 2226: deep bronze skin with golden undertones blending Sub-Saharan, Pacific Islander, and Latin American ancestry, sharp high cheekbones and angular jaw, dark brown alert eyes constantly tracking. Matte black geneware cat ears mounted on skull swiveling independently. Sparse facial hair, faint chemical burn scar on right forearm, thin temple scar barely visible. Dark brown hair in short braid tucked under hood. Wearing oversized gray and black server-room castoffs layered for street armor, patchwork thermal vest jacket with exposed wiring at sleeves, reinforced cargo pants, worn Tier 4 worker boots. Posture tense and economical, positioned to see exits, hands visible. Moody neon-lit underground tech space or dimly lit infrastructure corridor, harsh LED lighting catching the dull glint of subdermal data-storage nodules in his left forearm. Cyberpunk aesthetic, gritty and lived-in, constant underlying danger --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 39.6,
+    "Pacific Islander": 31.5,
+    "Hispanic/Latin American": 28.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

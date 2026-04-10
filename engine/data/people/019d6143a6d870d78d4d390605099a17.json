@@ -1,0 +1,278 @@
+{
+  "id": "019d6143a6d870d78d4d390605099a17",
+  "type": "character",
+  "name": "Sable Taualagi-Deshpande-Sesay",
+  "aliases": [
+    "Dry Soraya",
+    "the Mapmaker"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Wandering cartographer and hyperlane migrant",
+  "age": 52,
+  "status": "active",
+  "location": "Kenosha Crossing transit hub, sleeping berth corridor B-7, near beyond the Western Perimeter",
+  "description": "Soraya is a tall, drought-weathered woman with the broad cheekbones of her Botswanan grandmother and the pale grey eyes she inherited from somewhere in the Bulgarian line. Her skin is the color of cracked clay, deeply lined around the eyes and mouth from decades of squinting at horizon lines. She wears a patchwork duster covered in hand-sewn pockets, each holding a rolled paper map — actual paper, a near-mythological material in GLMZ — annotated in four different scripts. No cosmetic mods; her only concession to technology is a battered retinal overlay that flickers at the edges because she can't afford calibration.\n\nSoraya spent thirty years mapping the hyperlane rest stops between the Great Lakes and the Gulf Shelf, and there is no one who knows the informal infrastructure of drifter life better. She speaks with the deliberate economy of someone who has learned to make every sentence count because silence is the only privacy a transient gets. She is neither sentimental nor cruel — she has simply seen too much to be surprised by either kindness or brutality, and treats both as weather.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Becoming unneeded — that her maps will be obsolete before she dies",
+      "Dying in a place she has already charted and therefore already left behind"
+    ],
+    "core_desires": [
+      "To find one route no one else has recorded",
+      "To be trusted with something worth protecting"
+    ],
+    "coping_mechanisms": [
+      "Obsessive documentation — writes down everything",
+      "Treats movement itself as emotional regulation"
+    ],
+    "blind_spots": [
+      "Underestimates how much people need her personally, not just her knowledge",
+      "Cannot recognize when she is the one who needs help"
+    ],
+    "secret": "She has a complete, updated map of the Q-zero ghost communities — people with zero digital identity — hidden inside the lining of her duster. At least two corponation intelligence divisions would pay significantly for it. She has never sold it and does not intend to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, geographic, uses cardinal directions and distances even in conversation. Mixes Setswana phrases with Bulgarian-inflected cadence.",
+    "cadence": "Measured and unhurried, with long pauses before answering questions as if calculating distance",
+    "verbal_tics": [
+      "'Mark that'",
+      "'Three days south of here...' as a metaphor for anything distant or past"
+    ],
+    "example_lines": [
+      "'Mark that — this checkpoint runs light on Tuesdays. File it.'",
+      "'You want to know where the Waukegan Shelf camps are. Three days south of trusting me, that information lives.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corponation fixer approaches players claiming to be a 'transit researcher' — Soraya has noticed and is quietly trying to warn the Q-zero communities she has mapped",
+    "One of her paper maps leads to a hyperlane rest stop that has been officially erased from all records — something is being hidden there"
+  ],
+  "narrative_function": "Information source and orientation guide — she knows where drifter camps are, which checkpoints are bribeable, which hyperlane segments are currently dangerous, and which E.L.F.s are venerated at which rest stops.",
+  "augmentations": "Flickering retinal overlay (third-hand, poorly calibrated). No geneware. A healed fracture in her left wrist repaired with cheap calcium-bonding paste leaves a visible ridge under the skin.",
+  "daily_life": "She rises before the transit hub's artificial dawn cycle, trades map copies for food credits or information, and walks every corridor of whatever transit space she inhabits to update her charts before moving on within three to five days.",
+  "affiliation": "None — loosely respected by several nomad caravans as a neutral resource",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "cartographer",
+      "drifter",
+      "information broker (informal)",
+      "Q-zero ally",
+      "stateless"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never trade information that gets people killed",
+      "Always know the exits before sitting down"
+    ],
+    "escalation_ladder": [
+      "Deflects with vague generalities",
+      "Offers partial truth to redirect attention",
+      "Goes very still and very quiet — a warning sign",
+      "Walks away without explanation and does not return"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses them the way she assesses terrain — methodically, without expression, looking for what they're hiding",
+      "friends": "Rarely uses the word but demonstrates loyalty through showing up with exactly the right information at the right time"
+    },
+    "stress_responses": {
+      "low": "Draws maps or annotates existing ones",
+      "medium": "Becomes clipped and monosyllabic",
+      "high": "Disappears — genuinely relocates within hours"
+    },
+    "contradictions": [
+      "Devoted her life to helping people find their way but never allows herself to be found"
+    ],
+    "habits": [
+      "Draws a small compass rose on any surface she's going to sleep near",
+      "Counts exits upon entering any space",
+      "Drinks tea only — refuses anything else"
+    ],
+    "breaking_points": [
+      "Someone using her maps to hunt down drifters or Q-zero ghosts"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born to a seasonal agricultural worker family on the Sahel-Lake Superior corridor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost her residency documentation in the Grainfort data purge; became stateless",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began trading hand-drawn maps for food and passage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently rotating through Kenosha Crossing on her seasonal circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Kenosha Crossing",
+    "GLMZ",
+    "Grandmother",
+    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
+    "Synaptic Drift Emitter SDE-4 'Lullaby'",
+    "Chimera-Null",
+    "The Pale Mile",
+    "Clay",
+    "Breck Tannen",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Compass Rose",
+    "Ihaia Nystrom-Keita",
+    "Isadora Mwangi-Thorvaldsen",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Obafemi Szczypiński-Lautoa",
+    "Rictus Entertainment",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower",
+    "TESSERA ES-4 'Perimeter'",
+    "The Meridian Drift",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Xochitl Adaeze Velarde-Okeke",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "South Asian (61%) with significant Pacific Islander (31.4%), East Asian (3.9%), and Sub-Saharan African (3.7%) ancestry. The genetic blend produces warm medium-brown skin with subtle golden undertones from South Asian heritage, deepened and enriched by Pacific Islander genetics, with minor East Asian and African contributions creating fine textural variation across her face and body.",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and sinewy from decades of walking hyperlane corridors; all functional muscle with minimal fat, shoulders slightly hunched from years bent over cartographic work",
+    "hair_color": "Grey-brown, salt-and-pepper with streaks of ash",
+    "hair_style": "Pulled back in a loose, pragmatic braid, secured with whatever wire or cord is at hand",
+    "hair_length": "Medium",
+    "eye_color": "Pale grey, slightly rheumy at the inner corners; the left iris has a faint grid pattern from the flickering retinal overlay",
+    "skin_tone": "Warm medium-brown with golden undertones, weathered and sun-exposed. The baseline is distinctly South Asian-Pacific Islander—a rich tan-brown that has been bleached and desiccated by decades under harsh artificial transit hub lighting and open hyperlane sun exposure, creating an uneven, weathered patina.",
+    "complexion": "Deeply lined face, particularly around eyes and mouth—rictus lines from perpetual squinting at maps and screens. Skin has papery texture of chronic dehydration but retains underlying warmth of South Asian-Pacific Islander heritage. High, broad cheekbones with gentle width across the face typical of Pacific Islander genetics. Prominent, defined jaw. Clean but unadorned; no makeup. A faint scar along her left temple, barely visible unless light hits it directly.",
+    "distinguishing_marks": [
+      "A visible ridge of calcium-bonding paste repair running along the inside of her left wrist, creating a permanent raised line under the skin that catches light when her hand moves",
+      "Fine white scar tissue at the outer corner of her left eye, approximately 2cm, angled downward—origin unknown but old",
+      "Ink stains (various colors—blues, blacks, iron reds) permanently discoloring the pads of her thumb and first two fingers on both hands"
+    ],
+    "visible_augmentations": "Left retinal overlay visible as a faint grey-white geometric grid flickering at the iris edge, with occasional chromatic aberration (faint red/blue fringing) indicating poor calibration. The device sometimes glitches, causing her left eye to jitter slightly. Otherwise no visible augmentation—the calcium-bonding repair on her wrist appears organic.",
+    "posture_movement": "Upright but economical; she moves with the careful precision of someone who has learned to conserve energy over long distances. Her gait is steady and unhurried, with a slight favoring of her right side. She tends to walk the perimeter of spaces rather than cutting across them—mapping as she goes. Her hands move constantly when at rest, fingers twitching as if annotating invisible charts.",
+    "clothing_style": "Tier 4-5 nomad utility wear. A long patchwork duster of faded synthetic canvas and worn linen, dyed in multiple washes to a mottled beige-grey, covered in approximately thirty hand-sewn pockets of varying sizes and materials—each pocket holding rolled paper maps. The duster has visible repairs done with different thread colors, a collage of temporary fixes. Underneath: a grey long-sleeved compression shirt (Tier 4 surplus, pre-owned), the cuffs frayed. Loose-fitting cargo trousers in charcoal synthetic, knees reinforced with stitched patches. Boots: scuffed, resoled multiple times, practical, non-brand. A thin polymer raincoat rolled and tied to her pack. No jewelry, no logos, no status markers. Everything designed for transit between climate-controlled hubs and exposed hyperlane routes."
+  },
+  "image_prompt": "Sable Taualagi-Deshpande-Sesay, weathered cartographer, cyberpunk 2226. Tall lean woman with warm medium-brown skin bearing three decades of sun-bleach and transit hub living. South Asian-Pacific Islander heritage evident in high broad cheekbones and defined jaw. Salt-and-pepper hair pulled back in pragmatic braid. Grey eyes with left iris showing faint glitching retinal overlay grid pattern and chromatic aberration. Fine scar at outer corner of left eye. Deep lines around eyes and mouth from constant squinting. Papery, desiccated complexion. Wearing patched beige-grey canvas duster loaded with thirty pockets, each stuffed with rolled paper maps. Grey compression shirt underneath, frayed cuffs. Charcoal cargo trousers with reinforced knee patches. Scuffed, resoled boots. Upright but economical posture, moving with conserved precision. Perimeter-walker stance. Ink-stained fingers on both hands. Calcium-bonding ridge scar visible on inside of left wrist. Transit hub nomad aesthetic. Dim neon lighting casting cool shadows across her lined face. Slightly hunched shoulders. Standing in a corridor of overlapping hyperlane maps. Dystopian, meticulous, worn. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 61.0,
+    "Pacific Islander": 31.4,
+    "East Asian": 3.9,
+    "Sub-Saharan African": 3.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

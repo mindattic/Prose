@@ -1,0 +1,252 @@
+{
+  "id": "019d6143a5b673afb4ef0936a16b8374",
+  "type": "character",
+  "name": "Nova Rakhimov",
+  "aliases": [
+    "Seny",
+    "Seny the Knife"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor and informal neighborhood cook",
+  "age": 38,
+  "status": "active",
+  "location": "The Narrows — operates a cart at the Kessler Interchange underpass, dawn to afternoon, near Milwaukee and Damen",
+  "description": "Arsenio is a compact man who takes up more space than his size suggests, carried in the loud warmth of his voice and the theatrical sweep of his gestures when he describes a dish. His father was Beninese-Chinese and his mother Finnish-Togolese, and his face holds that genealogy in an arrangement that doesn't resolve easily into anything his customers can pin down — wide-set eyes, a snub nose, and a smile with one gold-capped molar. He wears his hair in dense, close locs dyed a permanent deep-sea teal via geneware treatment. Both forearms are tattooed with ingredient lists from dishes he's invented over the years, written in a cramped personal shorthand. He has a cat tail — russet-furred, thick at the base — which emerged from a cheap geneware kit he bought at nineteen and has become as much a part of him as his hands; it curls up when he's focused and lashes when he's irritated.\n\nSeny treats every transaction as an audition and every satisfied customer as a standing ovation. He is genuinely, almost exhaustingly enthusiastic about food — will describe a broth's development across four hours with the intensity of someone recounting a battle. This enthusiasm is real and it is also armor: underneath it he is calculating, ambitious in ways he doesn't advertise, and running several small ventures on the side of the cart that he'd prefer the Narrows' various interested parties didn't examine too closely.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being exposed as less than he presents — the business acumen revealed as scrambling improvisation",
+      "The cart being seized or his permits revoked by a Corponation claiming the Kessler space"
+    ],
+    "core_desires": [
+      "A permanent restaurant — four walls, his name above the door, a menu that changes with the season",
+      "To be taken seriously as a chef, not just a vendor"
+    ],
+    "coping_mechanisms": [
+      "Performance and noise — when anxious he gets louder and funnier",
+      "Cooking increasingly complex dishes late at night when the cart is packed away"
+    ],
+    "blind_spots": [
+      "His charm makes him assume he can talk his way out of situations that have already moved past talking",
+      "Underestimates how much his 'side operations' are known about by people who haven't yet chosen to act on it"
+    ],
+    "secret": "His cart's enhanced olfactory mod doesn't just help him cook — he can detect certain chemical signatures in people passing by, and he's been selling this information to a Narrows-based debt-collection operation: he can confirm whether specific individuals have passed the interchange, what direction they were headed, and approximately when. He tells himself it's harmless. It is not entirely harmless."
+  },
+  "speech_patterns": {
+    "vocabulary": "Expansive and food-saturated — describes everything through culinary metaphor; code-switches between a French-inflected Narrows patois and clipped transactional English depending on who he's selling to.",
+    "cadence": "Fast when excited (which is most of the time), drops to slow and deliberate when he wants you to know he means something.",
+    "verbal_tics": [
+      "'Listen, listen, listen' as preamble when he's about to say something important",
+      "Names the bowl he's handing you, every time, as if introducing people at a party",
+      "'You'll thank me' — statement, not question"
+    ],
+    "example_lines": [
+      "'Listen, listen, listen — this is the Golden-Mile Pork Neck, thirty-hour broth, Sahel pepper finish. You'll thank me.'",
+      "'My man, that is a Tier-4 face on a Tier-2 morning. I'll add extra fat. You need it. No charge, but you owe me a good word.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The debt-collection outfit he's been informing for has crossed a line — one of the people he ID'd turned up badly hurt — and he's now caught between guilt, complicity, and the threat of retaliation if he stops cooperating.",
+    "A corporate food-safety inspector has begun making weekly visits to the interchange with unusual interest in his cart specifically — either someone tipped them off or something else is going on.",
+    "He's been approached by a silent investor offering to bankroll his restaurant dream — but the investor's paperwork has one clause he's been told not to read too carefully."
+  ],
+  "narrative_function": "Reliable social hub and rumor exchange — the cart is a gathering point; potential quest giver around supply-chain problems or protection-money disputes; comic relief with unexpected depth; can source unusual items through his supply network.",
+  "augmentations": "Geneware cat tail (russet, full sensory); geneware hair (deep-sea teal, permanent); enhanced olfactory mod (professional-grade scent discrimination, helps with cooking and sourcing ingredients).",
+  "daily_life": "Up at 03:30 to prep broth, cart positioned by 05:45 to catch early commuters at the interchange; sells until stock runs out, usually early afternoon; spends evenings sourcing ingredients through channels he doesn't discuss.",
+  "affiliation": "Independent; pays a protection tithe to the Kessler Interchange's informal block association; occasional informal supplier to two restaurants in the Ferment Quarter",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Social Hub",
+      "Hidden Operator",
+      "Sensory Enhanced",
+      "Ambition Masked as Contentment"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always give value — the transaction has to feel good for the other person or it doesn't stick",
+      "Never let silence happen if he can fill it",
+      "Protect the cart above everything; the cart is the foundation of everything else"
+    ],
+    "escalation_ladder": [
+      "Humor and deflection — jokes his way around the problem",
+      "Offers something — food, information, a favor — to reframe the situation",
+      "Disappears; closes the cart, goes silent, waits for the situation to resolve or move on"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediate warmth, full-charm offensive, assessing their spend-profile and information value simultaneously",
+      "friends": "Still performs but shows the cracks — will admit fear through jokes, ask for help indirectly through elaborate favors"
+    },
+    "stress_responses": {
+      "low": "Tail lashing increases; gets louder",
+      "medium": "Over-salts things; notices afterward, corrects, says nothing",
+      "high": "Shuts the cart mid-service with an excuse, walks the interchange perimeter three times, returns calmer"
+    },
+    "contradictions": [
+      "Performs absolute transparency and openness while running concealed operations that depend on no one looking closely"
+    ],
+    "habits": [
+      "Names every dish he makes even if it's a one-time improvisation",
+      "Checks the cart's wheels and locking bolts in the same sequence every morning like a ritual",
+      "Leaves a small ladle of broth at the underpass E.L.F. shrine — a local spirit associated with the interchange's data-traffic — every Monday"
+    ],
+    "breaking_points": [
+      "Evidence that his information got someone killed",
+      "The cart being destroyed or permanently confiscated"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Enhanced Olfactory Module (professional-grade, civilian market)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Enhanced Olfactory Module (professional-grade, civilian market)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Generous Fool": 0.9,
+    "Face": 0.7,
+    "Charmer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "The Interchange",
+    "The Narrows Compact",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Arcturus KS-7 'Nursery'",
+    "Breck Tannen",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Four Walls, No Ceiling",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA ES-4 'Perimeter'",
+    "Tafara Quiñones-Saarinen",
+    "The Ferment Quarter",
+    "The Heritage Vault",
+    "The Narrows",
+    "The Peninsula",
+    "Vanta Ordnance Phalanx VO-8 'Centurion'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Central Asian (41.8%) with significant Hispanic/Latin American (32.5%) ancestry, supplemented by Southeast Asian (9.7%), Sub-Saharan African (7.9%), and minor Northern European (5.1%) and South Asian (3.0%) heritage. The result is a striking blend: warm-toned skin with golden and olive undertones, facial structure showing Central Asian cheekbone prominence combined with Hispanic/Latin American and Southeast Asian features, with subtle Sub-Saharan African texture and warmth in complexion.",
+    "height_cm": 168,
+    "weight_kg": 71,
+    "build": "Compact and dense, shoulders slightly elevated from years of cart work and constant gesture; forearms corded with lean muscle from repetitive lifting and stirring; core strength evident in his posture despite modest frame",
+    "hair_color": "Deep-sea teal (permanent geneware treatment)",
+    "hair_style": "Tight locs, meticulously maintained, shoulder-length",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with amber undertone",
+    "skin_tone": "Warm golden-bronze with subtle olive cast, reflecting the blended warmth of Central Asian, Hispanic/Latin American, and Southeast Asian ancestry; sun-darkened across cheekbones and nose bridge from heat exposure",
+    "complexion": "Weathered from early-morning cart work and heat exposure; prominent cheekbones with Central Asian structure; laugh lines around eyes and mouth; clean-shaven except for precisely groomed short beard; bronze-gold undertones across face with slight warmth in cheeks from mixed heritage; one gold-capped molar visible when he smiles",
+    "distinguishing_marks": [
+      "Both forearms covered in dense black tattoos: cramped personal shorthand listing ingredients and proportions from invented dishes, running from wrist to elbow, overlapping in layers like palimpsest",
+      "Russet-furred cat tail, thick at base, approximately 65cm long, emerging from base of spine with full sensory capability; visible above cart apron line, curls when focused, lashes when irritated"
+    ],
+    "visible_augmentations": "Permanent deep-sea teal hair via geneware (immediately recognizable as modified); functional cat tail with visible fur and muscular control; enhanced olfactory sensitivity (not visually obvious, but noticeable in his behavior — frequent deep sniffing, precision ingredient selection)",
+    "posture_movement": "Perpetually animated; hands rarely still, gesturing expansively when describing food; leans forward into conversation; cat tail moves with independent expressiveness, curling upward when concentrating on prep work or tasting; stands with weight favoring the balls of his feet, ready to move; voice carries volume and warmth naturally",
+    "clothing_style": "Tier 4 working-class pragmatism with personal flair: food-stained but maintained apron (currently deep indigo with faded embroidered chili peppers); fitted dark utility pants with multiple pockets (source: Narrows black-market tailors); loose long-sleeve shirts in muted colors (charcoal, forest green, navy) rolled to elbows to display tattoos; worn but well-kept canvas high-tops with thick soles for standing all day; small brass ring on left thumb; wears a thin chain necklace with unmarked brass cylinder (purpose undisclosed)"
+  },
+  "image_prompt": "Nova Rakhimov, a 168cm street food vendor in the GLMZ 2226, with warm golden-bronze skin reflecting Central Asian and Hispanic/Latin American heritage blended with Southeast Asian and African warmth. Deep-set dark brown eyes with amber undertones, prominent Central Asian cheekbones, sun-weathered face with laugh lines, precisely groomed short beard. Shoulder-length tight locs in permanent deep-sea teal geneware, dark and striking against his bronzed skin. Thick russet-furred cat tail with full articulation curling expressively from base of spine. Muscular forearms densely covered in black tattoo palimpsests of recipe shorthand, displayed as long-sleeve charcoal shirt is rolled to elbows. Wearing indigo apron with faded embroidered chili peppers over dark utility pants, brass ring on thumb, thin chain necklace with brass cylinder. Animated posture leaning forward, hands gesturing mid-conversation, cat tail curling upward with concentration. Standing behind food cart in neon-lit Great Lakes street market at dusk, warm street lighting casting golden-bronze highlights across skin and teal hair, cyberpunk 2200s urban environment, gritty and vibrant --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Central Asian": 41.8,
+    "Hispanic/Latin American": 32.5,
+    "Southeast Asian": 9.7,
+    "Sub-Saharan African": 7.9,
+    "Northern European": 5.1,
+    "South Asian": 3.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

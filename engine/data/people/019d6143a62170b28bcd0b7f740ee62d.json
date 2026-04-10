@@ -1,0 +1,342 @@
+{
+  "id": "019d6143a62170b28bcd0b7f740ee62d",
+  "type": "character",
+  "name": "Mika Trujillo-Tamale",
+  "aliases": [
+    "Kindle",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Network intrusion and digital warfare specialist — netrunner",
+  "age": 33,
+  "status": "active",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Ashland and Chicago Ave",
+  "description": "Hadiya Forsberg-Ofosu is lean and angular, all sharp edges and visible tension. At 33, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a netrunner out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHadiya Forsberg-Ofosu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.88,
+      "ideal": 0.28,
+      "id": 0.76,
+      "shadow": 0.98,
+      "mask": 0.76,
+      "ghost": 0.93
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Betrayal by someone they trust — the only currency that matters",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "Freedom from augmentation debt — the interest compounds like a tumor"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up"
+    ],
+    "blind_spots": [
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Cannot accept help without interpreting it as leverage",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Hadiya Forsberg-Ofosu betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
+      "Repeats the last thing someone said back to them before responding — processing or intimidation"
+    ],
+    "example_lines": [
+      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
+      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Hadiya Forsberg-Ofosu on jobs, and the impersonator is better at the work than the original",
+    "Hadiya Forsberg-Ofosu is offered a contract that would clear all their debts — the target is someone they respect",
+    "A Tier 4 executive offers Hadiya Forsberg-Ofosu a permanent position — the pay is obscene and the strings are invisible until they tighten"
+  ],
+  "narrative_function": "As a netrunner, Hadiya Forsberg-Ofosu embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Neural dampener — blocks external hacking attempts, passive ICE in the brain. Eye replacement — one organic, one cybernetic with recording capability and zoom",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Independent — Lattice territory specialist",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 9
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 10
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 7
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.41,
+      "caution": 0.52,
+      "loyalty": 0.14,
+      "greed": 0.4,
+      "empathy": 0.86
+    },
+    "drives": [
+      "freedom",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 6,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "strategic thinking under pressure",
+      "encyclopedic knowledge of GLMZ infrastructure"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "old injury that flares under specific conditions",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "netrunner",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    },
+    {
+      "name": "Eye replacement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Analyst": 0.7,
+    "Pattern Reader": 0.7,
+    "Problem Solver": 0.7,
+    "Innovator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street-Custom Razorwire Wraps 'Glass Hands'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Chicago",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Brewer's Spine",
+    "Djeneba Park-Traore",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Mika Sorel",
+    "Mireille Fontaine-Obi",
+    "Nnamdi Ostrowski-Faletolu",
+    "Réginald Asomaning-Čabarkapa",
+    "Solveig Tambadou-Kereselidze",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Street-Custom Razorwire Wraps 'Glass Hands'",
+    "TESSERA TC-3 'Crucible'",
+    "The Fathom Line",
+    "The Pure Hand",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "VitaCore SteadyThread Precision Motor Implant",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant Southeast Asian and Sub-Saharan African ancestry, with minor Eastern European and East Asian contributions. The genetic blend creates distinctive features: warm medium-brown skin with subtle golden undertones from the Latin American and Southeast Asian heritage, combined with the bone structure complexity that comes from the African ancestry percentage. The result is a face with high cheekbones and an angular jaw that speaks to multiple continents.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — wiry rather than bulk, built for precision and endurance rather than power. Chest and shoulders show the kind of tension that comes from years of controlled stress.",
+    "hair_color": "Dark brown with natural bronze undertones",
+    "hair_style": "Worn short and functional, swept back from the face with minimal styling effort",
+    "hair_length": "Short",
+    "eye_color": "Left eye: warm brown, organic. Right eye: matte black with faint cyan circuit-line tracery, cybernetic.",
+    "skin_tone": "Medium-warm brown with golden undertones — the mixed Latin American, Southeast Asian, and African heritage visible in the rich depth and subtle warmth of the complexion",
+    "complexion": "Sharp, high cheekbones reflecting Southeast Asian and Sub-Saharan African heritage, angular jaw with defined bone structure. Skin condition is clean but shows the wear of stress — faint lines around the eyes, the kind that come from squinting at screens in low light. No visible scarring on the face.",
+    "distinguishing_marks": [
+      "Neural dampener port at the base of skull, just below the hairline — visible chrome backing plate, approximately 3cm diameter, with thin lead-gray wiring running downward into the spine.",
+      "Faint burn scarring along the left forearm, thin and precise — tool marks from an old intrusion attempt that went wrong, partially covered by a dark grey dataflow tattoo in kanji characters that runs wrist to elbow."
+    ],
+    "visible_augmentations": "Neural dampener at base of skull with visible chrome backing and wiring. Right eye is cybernetic — matte black faceplate with faint circuit tracery, noticeably different from the warm brown of the left eye. No visible arm or leg augmentations.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Tends to keep his augmented eye side slightly forward in conversation, a habit born from always knowing where the threat is. When still, there is visible tension in his shoulders and jaw, like a coiled spring. Hands are steady, fingers occasionally twitching in small, unconscious patterns — muscle memory for keyboard work.",
+    "clothing_style": "Tier 3 practical — dark grey long-sleeve compression shirt fitted to his lean frame, worn under a matte black synthweave jacket with reinforced seams and interior pockets designed for hardware. Cargo pants in charcoal with multiple sealed pockets. Boots are military-grade synthetic leather, scuffed from regular use. No visible corporate branding. A single piece of jewelry: a silver ring on his left middle finger, worn thin — the origin is not discussed."
+  },
+  "image_prompt": "Mika Trujillo-Tamale, cyberpunk 2226, lean angular frame, 178cm tall, warm medium-brown skin with golden undertones reflecting Hispanic/Latin American, Southeast Asian, and Sub-Saharan African heritage, high sharp cheekbones, angular jaw, dark brown hair with bronze undertones swept back short, left eye warm organic brown, right eye matte black cybernetic with cyan circuit tracery, visible chrome neural dampener port at base of skull with lead-gray wiring, dark grey dataflow kanji tattoo on left forearm, faint burn scarring on forearm, silver ring worn thin on left middle finger, dark grey fitted compression shirt under matte black synthweave jacket with reinforced seams, charcoal cargo pants with sealed pockets, military-grade synthetic leather boots scuffed from use, posture tense and coiled, hands steady with slight unconscious finger twitching, economical precise movement, cool moody cyberpunk setting with neon shadows and soft underglow lighting, dystopian GLMZ interior, no corporate branding, professional fixer aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 55.0,
+    "Southeast Asian": 17.7,
+    "Sub-Saharan African": 16.1,
+    "Eastern European": 8.1,
+    "East Asian": 3.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

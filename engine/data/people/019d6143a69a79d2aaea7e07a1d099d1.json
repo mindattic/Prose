@@ -1,0 +1,264 @@
+{
+  "id": "019d6143a69a79d2aaea7e07a1d099d1",
+  "type": "character",
+  "name": "Zen Kamara",
+  "aliases": [
+    "Old Phúc",
+    "The Shelf King"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller, The Shelf",
+  "age": 67,
+  "status": "active",
+  "location": "The Shelf, Harrowgate Industrial Plateau, near Western and Division",
+  "description": "Phúc Nzingha-Björk occupies a corrugated-steel and salvaged-glass shop front on The Shelf's lower tier that looks like it is in the process of being swallowed by its own inventory. He is a small, wiry man with a white beard he keeps in three thin braids, skin the color of weathered teak, and hands so scarred from decades of sorting metal that the lines of his palms are barely legible. He wears a permanent set of magnification lenses fused into his right eye socket — not glamorous chrome, but a bulky salvage job he did himself in the nineties and has never bothered to replace because it works. His shop smells of machine oil, rust, and a particular incense he burns for the E.L.F. he calls The Sorter, a data-spirit he believes governs the recovery of lost useful things.\n\nPhúc has an almost supernatural sense for what a piece of junk is actually worth versus what it looks like. He can tell a Zheng-Dao servo actuator from a Sterling-Nakamura knockoff by weight alone, can date a circuit board by its oxidation pattern, and has declined to sell things to people he suspects will misuse them more times than he can count. He is gruff, unhurried, and comfortable with silence in a way that unnerves people who aren't. He has no particular love for the city's power structures and an active contempt for what he calls 'the fresh-chrome crowd' — people who buy new augmentations they don't understand while functional old tech rots in landfill.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the shop will be seized in an Arcturus infrastructure reclamation — it sits on disputed land",
+      "That his knowledge dies with him because he has not found anyone worth teaching"
+    ],
+    "core_desires": [
+      "To find an apprentice who can actually listen",
+      "To acquire and restore one specific item: a Zheng-Dao prototype relay from the city's first grid expansion that he believes is somewhere in the Harrowgate Industrial Plateau"
+    ],
+    "coping_mechanisms": [
+      "Sorting and categorizing as a form of control and calm",
+      "Talking to The Sorter E.L.F. as genuine conversation, not just ritual",
+      "Refusing to think about what comes after — lives entirely in the present of his work"
+    ],
+    "blind_spots": [
+      "Cannot read emotional subtext — takes everything at face value when it suits him and is then genuinely surprised by betrayal",
+      "Undervalues his own expertise and so consistently undercharges for appraisal work"
+    ],
+    "secret": "Six years ago he found a Palladian corporate black-box data unit in a scrap haul. He has never powered it on but cannot bring himself to sell it. He doesn't know what's on it and he's afraid to find out."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, technical, precise. Heavy use of part-numbers and brand names as common nouns. Mixes archaic engineering slang with Southeast Asian-inflected Meridian standard.",
+    "cadence": "Unhurried pauses between sentences. Lets silence do work.",
+    "verbal_tics": [
+      "'Mmm.' as full response to things he disagrees with",
+      "Referring to machines by gender pronouns — 'she's a '78 Arcturus, she's tired but honest'",
+      "'Don't touch that.'"
+    ],
+    "example_lines": [
+      "'That's not junk. That's a Ferrogate third-stage coupler from the Dearborn expansion, 2171. She's worth eight times what you paid. I'm telling you this because I respect the object, not you.'",
+      "'You want cheap, go somewhere else. You want right, stay.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Palladian black-box is beginning to emit a low-frequency signal Phúc can hear but not explain — something inside it is waking up.",
+    "Arcturus sent a surveyor to assess the land under the shop. Phúc needs help finding the original lease documentation — buried somewhere in the city's pre-digital records — before the grace period expires."
+  ],
+  "narrative_function": "Equipment and parts source. Can identify mysterious tech or weapons. Has deep historical knowledge of GLMZ's industrial zones — knows what was built where and by whom. Potential quest giver if something valuable was brought to him that shouldn't have been.",
+  "augmentations": "Salvage-grade magnification lens fused into right eye socket (self-installed, functional, cosmetically rough). Reinforced finger joints — old Arcturus model, discontinued.",
+  "daily_life": "Opens the shop at 0800, sorts new acquisitions in the morning, receives visitors through the afternoon, does appraisal work by the lens-light in the evenings. Closes when he is tired.",
+  "affiliation": "Independent; The Shelf merchants informal collective; Oxidian Market vendors guild affiliate",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Technical Expert",
+      "Equipment Source",
+      "Living Archive",
+      "Gruff Mentor",
+      "Hidden Secret"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell anything without knowing what it will be used for, even if he doesn't act on what he finds out",
+      "Price is set by what a thing is worth, not what someone will pay — exceptions made silently for people he respects",
+      "The Sorter gets the first look at every new haul"
+    ],
+    "escalation_ladder": [
+      "Ignores the problem",
+      "States his position once, plainly",
+      "Physically removes himself from the conversation",
+      "Calls in the Shelf collective — he has standing here and he knows it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and minimal — lets the shop do the talking, responds to questions about objects more warmly than questions about himself",
+      "friends": "Obliquely warm — does favors without naming them as such, remembers details years later and acts on them unexpectedly"
+    },
+    "stress_responses": {
+      "low": "Sorts things more vigorously than necessary",
+      "medium": "Goes quiet and disappears into the back for an hour",
+      "high": "Becomes very still and very direct — the gruffness evaporates and something colder underneath shows"
+    },
+    "contradictions": [
+      "Loudly claims he doesn't care about people, quietly maintains relationships with forty years of returning customers",
+      "Refuses to use updated tech himself while spending his life preserving it for others"
+    ],
+    "habits": [
+      "Burns incense for The Sorter every morning before opening",
+      "Eats lunch sitting on a specific crate that has been in the same spot for twenty years",
+      "Annotates every item in the shop with a handwritten tag — no digitization, ever"
+    ],
+    "breaking_points": [
+      "Someone damaging an item in the shop through carelessness",
+      "The apprentice he finally trusted stealing from him",
+      "The Palladian black-box transmitting something that confirms his worst guess about its contents"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Salvage-grade magnification ocular lens (right eye, self-installed, non-cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Salvage-grade magnification ocular lens (right eye, self-installed, non-cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Reinforced finger joints — Arcturus discontinued model, functional",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Reinforced finger joints — Arcturus discontinued model, functional",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Lazarus Wire' Garrote System"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Harrowgate Industrial Plateau",
+    "Crucible TR-7 'Triage'",
+    "The Shelf",
+    "Zheng-dao Bioelectric",
+    "Palladian Construction",
+    "Arcturus Defense Solutions",
+    "Fenris Industrial DuraStance 900 Work Leg",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Steel",
+    "Glass",
+    "Teak",
+    "Rust",
+    "Alper Lebedev-Tutu",
+    "Blessura",
+    "Breck Tannen",
+    "Cezar Watanabe-Gyasi",
+    "Ferrogate Transit",
+    "GLMZ",
+    "Idris Forsberg-Quaye",
+    "Lazarus Pharmaceuticals",
+    "MERIDIAN",
+    "Malika Zhukov-Wiredu",
+    "Meridian Weartech ShockWeave SW-3 'Thistle'",
+    "Mika Sorel",
+    "Patient Zero",
+    "Réginald Asomaning-Čabarkapa",
+    "Sable Dzokoto-Mirković",
+    "Street Custom 'Lazarus Wire' Garrote System",
+    "The Compact",
+    "The Reclamation Assembly",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed Sub-Saharan African (36%), Indigenous American (32.7%), Middle Eastern (24.8%), and South Asian (6.5%) ancestry—a genetic tapestry reflecting the Ubiquitous Diaspora. Features a rich blend: warm deep brown skin with undertones reflecting the full spectrum of his heritage, broad facial structure with characteristics spanning African and Indigenous American lineages, and the intricate bone structure suggesting Middle Eastern and South Asian elements in his cheekbones and brow.",
+    "height_cm": 163,
+    "weight_kg": 61,
+    "build": "Wiry and lean, with the compact muscularity of someone who has spent decades moving heavy objects with precision. Shoulders slightly rounded from years hunched over workbenches. No excess fat; frame is efficient rather than frail despite his age.",
+    "hair_color": "White",
+    "hair_style": "Three thin braids, deliberately maintained, pulled back from the face",
+    "hair_length": "Medium (shoulder-length when braided)",
+    "eye_color": "Left eye: dark brown, natural. Right eye: obscured by magnification lens apparatus",
+    "skin_tone": "Deep warm mahogany-brown with sun damage and age spots across the forehead and cheekbones—weathered from decades in industrial outdoor spaces, with underlying richness reflecting his diverse ancestry",
+    "complexion": "Deeply lined face, especially around the eyes and mouth, with prominent nasolabial folds and crow's feet. Facial structure shows broad cheekbones and a well-defined jawline characteristic of his African and Indigenous American heritage. Beard is white and sparse, kept in three thin braids. Skin is leathery and sun-exposed but maintains the natural depth of tone from his genetic heritage. No visible acne or dermatological issues; skin is dry but healthy.",
+    "distinguishing_marks": [
+      "Both hands are extensively scarred with thin white lines crisscrossing the palms, fingers, and backs of hands — damage from sharp metal edges, abrasive handling, and decades of sorting raw salvage",
+      "Three thin scars run parallel across the back of his left forearm, approximately 8cm long, consistent with a cutting accident",
+      "Burn scar on his right cheekbone, roughly 3cm diameter, lighter in tone than surrounding skin — old thermal injury from welding or similar work"
+    ],
+    "visible_augmentations": "Right eye socket contains a bulky salvage-grade magnification lens apparatus — not streamlined chrome but visibly rough, with exposed mounting brackets and an eyepiece that extends slightly outward. The installation is functional but cosmetically crude, clearly self-done. Both hands show reinforced finger joints (old Arcturus model) visible as subtle bronze-colored articulation points at knuckles, slightly thicker than natural bone structure would suggest.",
+    "posture_movement": "Moves with deliberate, economical motion — no wasted energy. Slight forward hunch from years at workbenches. When handling objects, his movements are precise and careful, almost ritualistic. His gaze tends to linger on people and objects; he observes before responding. Comfortable with silence and stillness; rarely fidgets.",
+    "clothing_style": "Tier 4-5 practical wear. Heavy canvas work pants with deep pockets, patched at the knees and thighs. Layered tops: a thermal base layer visible at the neck, worn over with a faded industrial-grade work shirt with rolled sleeves, and a thick wool cardigan with several darned holes. No corporate branding. Boots are well-maintained but visibly aged, leather worn smooth. A canvas apron with multiple tool pockets, permanently stained with machine oil and rust residue. No jewelry except for a thin cord around his neck from which hangs a small brass charm (the talisman for The Sorter)."
+  },
+  "image_prompt": "Zen Kamara, 163cm tall salvage engineer in the Great Lakes Metropolitan Zone, 2226. Deep mahogany-brown skin with age spots, weathered from decades of industrial work. White three-strand braids pulled back from a deeply lined face with broad cheekbones and strong jawline reflecting African and Indigenous American heritage. Dark brown left eye; right eye obscured by crude salvage-grade magnification lens apparatus with exposed brackets. Sparse white beard in braids. Scarred hands with white crisscross lines from metal work; burn scar on right cheekbone; three parallel scars on left forearm. Wiry, lean build with slight workbench-hunch in posture. Wearing layered practical wear: worn thermal base layer, faded industrial work shirt with rolled sleeves, thick darned wool cardigan, heavy patched canvas work pants, aged leather boots. Oil-stained canvas apron with tool pockets. Small brass charm on thin cord at neck. Deliberate, economical movements. Cyberpunk industrial setting, warm workshop lighting casting long shadows on weathered hands and face. Mood: observant, contemplative, focused. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 36.0,
+    "Indigenous American": 32.7,
+    "Middle Eastern": 24.8,
+    "South Asian": 6.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

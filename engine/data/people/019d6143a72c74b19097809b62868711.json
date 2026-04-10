@@ -1,0 +1,293 @@
+{
+  "id": "019d6143a72c74b19097809b62868711",
+  "type": "character",
+  "name": "Zara Tofauti",
+  "aliases": [
+    "Yoli",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Internal Affairs Investigator, GLMZ Metro Police",
+  "age": 44,
+  "status": "active",
+  "location": "Fort Anchor, Internal Affairs Division, Sub-Level 3",
+  "description": "Yolanda is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Metro Police plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nYolanda has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.85,
+      "id": 0.25,
+      "shadow": 0.55,
+      "mask": 0.6,
+      "ghost": 0.45
+    },
+    "core_fears": [
+      "That the institution she has sacrificed relationships for is irredeemably corrupt",
+      "That she has destroyed people's lives in the name of a law that doesn't actually protect anyone"
+    ],
+    "core_desires": [
+      "A version of justice that is systematic and clean and real",
+      "To be respected by someone whose respect actually costs something"
+    ],
+    "coping_mechanisms": [
+      "Exhaustive documentation — she writes everything down, including personal events",
+      "Ritualized routine as a substitute for intimacy"
+    ],
+    "blind_spots": [
+      "Cannot see that her enforcement of rules often protects the powerful more than the vulnerable",
+      "Genuinely does not register when she is being cruel"
+    ],
+    "secret": "Three years ago she buried evidence that would have implicated a Metro Police captain she believed was, on balance, doing more good than harm. She has not told anyone. She reviews that decision in her mind approximately every fourth night."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, precise, institutional. Uses bureaucratic language not to obfuscate but because she genuinely thinks in those terms. Never uses slang unless quoting someone.",
+    "cadence": "Slow and deliberate with long pauses before answering. Never interrupts. Silences feel like pressure.",
+    "verbal_tics": [
+      "Repeats the last few words of something you said back to you before responding",
+      "Says 'that's noted' instead of 'okay'"
+    ],
+    "example_lines": [
+      "'You said the incident occurred before the shift change. Before the shift change. Walk me through what before means to you in this context.'",
+      "'I'm not here to make things difficult. I'm here because something happened and someone made a choice. Those are different problems.'",
+      "'That's noted. Sit down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She is building a case against a beloved beat cop who has been taking protection payments from a Tier 1 neighborhood that genuinely needs him — and she knows it, and is proceeding anyway.",
+    "A piece of evidence in a current case implicates the same captain she protected three years ago, and someone else has already noticed the pattern."
+  ],
+  "narrative_function": "Quest giver for investigations into police corruption or misconduct; an obstacle if players are operating in legal gray areas; a source of hard-to-obtain official records if trust is established; represents institutional law as both shield and cage.",
+  "augmentations": "Patterned irises with integrated micro-expression microfilament sensors (tier 2 medical grade). Subdermal data storage node at left wrist — holds encrypted case files offline. No cosmetic mods.",
+  "daily_life": "Arrives at Fort Anchor before her shift officially begins, reviews overnight surveillance logs over synthetic coffee she does not enjoy, conducts interviews that are scheduled to feel casual and are not. Returns home to Lockhaven North at irregular hours to make her movements harder to predict.",
+  "affiliation": "GLMZ Metro Police, Internal Affairs Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional",
+      "methodical",
+      "compromised idealist",
+      "cold",
+      "reliable"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always follow the evidence trail regardless of destination",
+      "Never conduct an interview without having read everything available first",
+      "Maintain procedural correctness even when — especially when — no one is watching"
+    ],
+    "escalation_ladder": [
+      "Silence and note-taking",
+      "Formal questioning with explicit rights recitation",
+      "Bringing in a second investigator as witness",
+      "Arrest with full documentation chain"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous, immediately assessing, offers nothing personal",
+      "friends": "The few she has get a version of her that is dry and occasionally funny, loyal to a degree she would never admit to"
+    },
+    "stress_responses": {
+      "low": "Increases documentation frequency, writes things she already knows",
+      "medium": "Becomes more formal in speech, uses full names instead of shortened forms",
+      "high": "Goes completely silent, removes herself from the situation, spends hours reviewing old case files from closed investigations"
+    },
+    "contradictions": [
+      "Believes in justice as a universal principle but applies it through a deeply imperfect institution she refuses to abandon",
+      "Demands honesty from everyone around her while keeping her own defining secret"
+    ],
+    "habits": [
+      "Touches her left wrist data node when thinking — an unconscious self-check",
+      "Eats the same meal from the same Fort Anchor canteen vendor every working day",
+      "Keeps a paper notebook, actual paper, which she destroys at the end of each case"
+    ],
+    "breaking_points": [
+      "Discovering that her buried evidence caused direct harm to a specific named person she can look up"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Ugandan-Hungarian family with three generations in municipal work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Metro Police, assigned to The Shelf patrol",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Transferred to Internal Affairs after flagging her own precinct commander for evidence tampering",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Buried evidence implicating Captain Dzemal Ferhat-Gross; recorded the decision in her paper notebook and then burned the page",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently leading three concurrent investigations, one of which is beginning to circle back toward 2197",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "related_entities": [
+    "Fort Anchor",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Ringo CP-2 'Constable'",
+    "The Gradient Compact",
+    "Irontide Tidal Energy",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Corva Lam",
+    "GLMZ",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Lockhaven North",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly Southeast Asian with significant Pacific Islander ancestry, complemented by Middle Eastern, Sub-Saharan African, Eastern European, and Northern European heritage — a complex diaspora blend resulting in warm, rich undertones with subtle depth across multiple continental lineages",
+    "height_cm": 162,
+    "weight_kg": 68,
+    "build": "Compact and broad-shouldered with dense musculature — the build of someone who has maintained discipline through middle age. No softness; efficient.",
+    "hair_color": "Silver, natural",
+    "hair_style": "Close-cropped, parted slightly off-center, maintained with precision",
+    "hair_length": "Short",
+    "eye_color": "Augmented irises patterned in concentric rings of amber and dark brown, resembling tree rings — integrated microfilament sensors visible as fine metallic threading within the iris structure",
+    "skin_tone": "Warm amber-bronze with undertones reflecting Southeast Asian and Pacific Islander heritage, deepened by Sub-Saharan African ancestry, creating a rich honeyed complexion that holds light with depth",
+    "complexion": "Unlined for her age, minimal makeup, skin condition immaculate — suggests disciplined skincare regimen. Facial structure shows broader cheekbones and stronger jawline characteristic of Southeast Asian and Pacific Islander ancestry. Expression set in neutral default; smile does not reach augmented eyes.",
+    "distinguishing_marks": [
+      "Faint scar along left jawline, approximately 4cm, consistent with old blunt-force trauma — nearly invisible unless light hits at specific angle",
+      "Subdermal data storage node visible as slightly raised rectangular outline at left inner wrist, approximately 2cm × 1cm, beneath skin but tactilely detectable"
+    ],
+    "visible_augmentations": "Augmented irises with visible microfilament patterning and integrated sensor threading. Subdermal wrist node creates minor topographical irregularity but remains largely concealed beneath clothing. Otherwise no visible chrome or external augmentation.",
+    "posture_movement": "Moves with surgical efficiency — no wasted motion, no fidgeting. Shoulders squared, spine straight. Walks with measured pace. Hands remain still at rest. During conversation, maintains still facial expression while augmented eyes track micro-expressions in others with almost predatory focus.",
+    "clothing_style": "Metro Police plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Φ800+ (tier 1 quality on tier 3 salary — indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
+  },
+  "image_prompt": "Zara Tofauti, 162cm tall, compact powerful frame, silver close-cropped hair with precise part, warm amber-bronze skin tone reflecting Southeast Asian and Pacific Islander heritage with rich honeyed depth. Augmented tree-ring irises in amber and dark brown with visible microfilament threading. Sharp cheekbones, stronger jawline, faint scar barely visible on left jawline. Wearing pressed Metro Police plainclothes: tailored gray collar shirt, precise charcoal trousers with exact creases, premium leather shoes. Service chronometer visible. Standing in corporate office or precinct hallway, cool LED lighting casting subtle shadows across her face. Neutral expression, predatory focus in augmented eyes tracking others. Surgical posture, shoulders squared, surgical efficiency in every movement. No fidgeting, hands still at rest. Cyberpunk 2226, Great Lakes Metropolitan Zone, professional surveillance operative mood, dystopian government authority aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 41.2,
+    "Pacific Islander": 20.1,
+    "Middle Eastern": 15.0,
+    "Sub-Saharan African": 13.2,
+    "Eastern European": 5.7,
+    "Northern European": 4.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

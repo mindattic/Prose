@@ -1,0 +1,343 @@
+{
+  "id": "019d6143a5a8780c99a5e6dbf3babfba",
+  "type": "character",
+  "name": "Rowan Haugen",
+  "aliases": [
+    "Filament",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Electronic and physical observation expert — surveillance specialist",
+  "age": 40,
+  "status": "active",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
+  "description": "Alper Holmberg-Dembele is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Alper Holmberg-Dembele plans to keep it that way. He works as a surveillance specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Alper Holmberg-Dembele describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.38,
+      "ideal": 0.43,
+      "id": 0.67,
+      "shadow": 0.85,
+      "mask": 0.24,
+      "ghost": 0.79
+    },
+    "core_fears": [
+      "The quiet — silence means something is about to go very wrong",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Betrayal by someone they trust — the only currency that matters"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "Control — over their body, their schedule, their future",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Cannot see that their independence is actually isolation wearing a better outfit"
+    ],
+    "secret": "Alper Holmberg-Dembele is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
+    ],
+    "example_lines": [
+      "\"I've been watching you for three days. You should close your curtains.\"",
+      "\"Information is the only commodity that appreciates with age.\"",
+      "\"Everyone thinks they're careful. Nobody is careful enough.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Alper Holmberg-Dembele's reputation — and a price for silence",
+    "Alper Holmberg-Dembele discovers a job they completed last year was a setup for something much larger and much worse",
+    "Alper Holmberg-Dembele intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "As a surveillance specialist, Alper Holmberg-Dembele embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Subdermal weapon mount — pop-out blade in each forearm. Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 9
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 5
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 4
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.43,
+      "caution": 0.52,
+      "loyalty": 0.98,
+      "greed": 0.26,
+      "empathy": 0.68
+    },
+    "drives": [
+      "survival",
+      "justice",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 3,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "encyclopedic knowledge of GLMZ infrastructure",
+      "mechanical aptitude — can repair or modify almost anything",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "overconfidence in specialty areas leading to blind spots",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "surveillance specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always verifies target identity independently before lethal contracts"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic arm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "Street Custom 'Scorpion Tail' Chain Whip"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ashfield",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Chicago",
+    "Bioelectric Muscle Fiber",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "GLMZ",
+    "Helix Biosystems Vagal Resonance Dampener",
+    "Lazarus LX-2 'Lab Rat'",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Oumarou Svec-Ranginui",
+    "Prophet",
+    "Réginald Asomaning-Čabarkapa",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "Street Custom 'Scorpion Tail' Chain Whip",
+    "TESSERA PA-5 'Attendant'",
+    "TESSERA WL-6 'Stacker'",
+    "The Compact",
+    "The Human Baseline Alliance",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Northern European, East Asian, Hispanic/Latin American, and Sub-Saharan African blend — a diaspora mix resulting in warm medium skin tone with olive undertones, angular features influenced by both Northern European and East Asian ancestry, and subtle warm undertones from Hispanic/Latin American and African heritage",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Stocky and solid, thick through the chest and shoulders with the compact density of someone who has spent decades maintaining functional strength rather than aesthetic muscle. Forearms are visibly corded, scarred from repeated augmentation work.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Cropped short, practical, no styling",
+    "hair_length": "Short",
+    "eye_color": "Pale gray, unremarkable — human baseline",
+    "skin_tone": "Medium warm tan with olive undertones, weathered from years in Ashfield's polluted air and inconsistent shelter. The warmth reflects the blended ancestry across multiple continents.",
+    "complexion": "Hard-lined face with balanced angular and slightly broader features reflecting both Northern European and East Asian ancestry. Jaw is prominent with subtle width. Deep nasolabial folds frame the mouth. Skin texture rough, pockmarked around the temple and jawline where augmentation scarring pulls slightly at the surface. Five-o'clock shadow is his default state. Eyes sit deep-set, giving him a permanently tired appearance that suits his work. Cheekbone structure shows the influence of East Asian genetics with Northern European angularity.",
+    "distinguishing_marks": [
+      "Augmentation scarring in a horseshoe pattern around both temples, pale pink tissue against warm tan skin, from subdermal blade mount installation.",
+      "Jagged scar running from left jaw angle down toward the clavicle, approximately 8cm, old and white — pre-augmentation injury.",
+      "Heavy keloid scarring across both inner forearms where the weapon mounts were installed, visible when his sleeves are rolled.",
+      "Burn mark on right shoulder — crescent-shaped, roughly 5cm across, from industrial accident or weapons discharge, old enough to have faded to light brown."
+    ],
+    "visible_augmentations": "Right arm is full-replacement cybernetic from shoulder joint down — obvious chrome and polished steel, synthetic muscle layering visible at the elbow joint. The arm is noticeably stronger and more refined than organic tissue, with articulation that's too precise. Pop-out blade mounts are visible along both forearms as chrome-lined slots, sealed but obvious to anyone who knows what they're looking at. Subdermal scarring around temples indicates weapon mount installation beneath the skin.",
+    "posture_movement": "Stands with weight balanced forward on the balls of his feet, a runner's ready stance. Moves deliberately, economically — no wasted motion. His right arm compensates with slight mechanical hesitation on fast movements, but he's so practiced with it that the hesitation reads as control rather than disability. Hands rest in fists more often than open palms. His gaze is active, tracking, never settling — the paranoia is embedded in his body language.",
+    "clothing_style": "Tier 5 utilitarian — worn synthweave cargo pants with visible equipment loops, reinforced at stress points. Sleeveless or short-sleeved tops to keep the right arm visible and unobstructed, usually unmarked dark gray or black. Over this, a faded ballistic jacket with multiple pockets, patched at the elbows, missing the logo from its original brand. Steel-toed boots, scuffed, re-soled multiple times. No jewelry, no identifying markers beyond his augmentations. Clothing is functional and replaceable, not an investment. He dresses for work, not for appearance."
+  },
+  "image_prompt": "Rowan Haugen, cyberpunk 2226, medium-warm olive-toned skin with mixed Northern European and East Asian ancestry, deep-set pale gray eyes, dark hair graying at temples cropped short. Hardened angular face with prominent jaw and deep lines. Scarred: horseshoe augmentation scars around temples in pale pink, jagged white scar from jaw to clavicle, keloid scarring on inner forearms. Stocky 178cm build, muscular and dense. Full-replacement chrome cybernetic right arm with visible synthetic muscle and blade mount slots, organic left arm scarred and corded. Wearing sleeveless dark gray top and worn faded ballistic jacket with patches, synthweave cargo pants with equipment loops, steel-toed scuffed boots. Standing in ready stance, weight forward, hands in fists, paranoid active gaze. Industrial cyberpunk workshop setting, harsh neon lighting casting shadows across augmentation scarring, gritty polluted air, moody and dangerous. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 46.8,
+    "East Asian": 37.5,
+    "Hispanic/Latin American": 10.7,
+    "Sub-Saharan African": 5.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

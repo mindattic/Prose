@@ -1,0 +1,249 @@
+{
+  "id": "019d6143a67a7170bf237948e4891cf2",
+  "type": "character",
+  "name": "Drift Kjellberg-Tehrani",
+  "aliases": [
+    "Patch",
+    "Dr. Rattle"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Rehabilitation specialist and prosthetics fitter at Aurochs Medical Complex, Tier 3",
+  "age": 55,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Grand Corridor, near Armitage and Milwaukee",
+  "description": "Odran is a tall man gone slightly soft at the middle, with warm dark brown skin and close-cropped silver hair he's never bothered to dye back. His left arm from the elbow down is a prosthetic of his own specification — matte titanium with exposed cable routing he has never covered because, as he says, patients respond better to a fitter who knows what it feels like to be fitted. The arm has three additional micro-articulation points beyond standard and can rotate 340 degrees at the wrist, which he uses occasionally to make a point during consultations. His voice is deep and slightly raspy from a youth spent breathing Tier 1 air before his scholarship to Aurochs. His office is a controlled chaos of patient files (physical and digital), half-assembled prosthetic components he's modifying for specific cases, and a small shrine shelf he maintains to the building's resident E.L.F., which staff call Old Hinge.\n\nOdran is the kind of man who remembers every patient's name and the name of the person who brought them in. He's been at Aurochs for twenty-two years, long enough to have opinions about every policy change and enough institutional credibility that people mostly let him voice them. He is not idealistic — he knows exactly what compromises Aurochs makes — but he has calculated that he does more good inside the system than outside it. This calculation keeps him up some nights. He has a fondness for very bad jokes that he delivers with absolute sincerity, and a habit of touching the joint of his prosthetic arm when he's troubled, a motion so habitual he no longer notices it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Becoming complicit in something that causes mass patient harm and not realizing until too late",
+      "Losing the physical capability that defines his professional identity — his hands"
+    ],
+    "core_desires": [
+      "For the rehabilitation wing to be adequately funded — just once, without having to fight for it",
+      "To be remembered by his patients as someone who gave them back their lives"
+    ],
+    "coping_mechanisms": [
+      "Dark humor as distance",
+      "Over-investment in individual patient cases to offset helplessness about systemic failures",
+      "Ritual maintenance of Old Hinge's shrine — he doesn't fully believe, but the routine helps"
+    ],
+    "blind_spots": [
+      "Has made peace with Aurochs's compromises in a way that occasionally prevents him from seeing when a line has genuinely been crossed",
+      "Assumes that longevity in an institution equals understanding of it"
+    ],
+    "secret": "Odran has been quietly diverting small quantities of high-grade prosthetic components from Aurochs inventory for three years — nothing dramatic, always within margins that don't trigger audit flags — and passing them to Blessing Vukovic-Asantewaa in Blackpipe Corridor. He has never met her in person. They communicate through a dead-drop data node. He does not know that she knows who he is."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm institutional language; uses medical terminology comfortably but translates it automatically for patients; occasional dry wit delivered deadpan",
+    "cadence": "Slow and deliberate, like someone who learned to take up appropriate space after years of being too deferential",
+    "verbal_tics": [
+      "Begins difficult conversations with 'Right then'",
+      "Taps the cable routing on his prosthetic when thinking — audible small click",
+      "Says 'That's not nothing' when patients minimize their own progress"
+    ],
+    "example_lines": [
+      "'Right then. Let's see what we're working with. And I mean that literally — I need you to try to open your hand.'",
+      "'People ask if it hurt, getting the arm. Every day. The arm doesn't hurt. The phantom does. That's the thing they don't tell you — your body keeps expecting something that isn't there.'",
+      "'That's not nothing. Six months ago you couldn't hold a cup. Today you're complaining about grip strength. That's not nothing, and I need you to sit with that before we move on.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient Odran fitted with a standard Helix Biosystems prosthetic six months ago has come back with the arm behaving erratically — movements she didn't initiate, signals she didn't send. Three other patients have reported the same thing. Odran is beginning to suspect a firmware update pushed by Helix.",
+    "The dead-drop node Odran uses to pass components to his Narrows contact has gone cold. Either the contact is compromised or someone has found the node. He needs someone to quietly find out which."
+  ],
+  "narrative_function": "Institutional insider who can provide legitimate access to Aurochs; quest giver for cases that fall outside what the system will officially handle; moral complexity figure who represents pragmatic compromise; potential source of medical-grade components or documentation",
+  "augmentations": "Left arm prosthetic (self-specified, titanium, 340-degree wrist rotation, enhanced micro-articulation, haptic feedback at all finger joints); mild cochlear enhancement for frequency sensitivity (helps detect mechanical resonance issues in augmentations by sound)",
+  "daily_life": "Odran arrives at Aurochs at 07:30 and spends mornings in fittings and calibration sessions. Afternoons are split between follow-up rehabilitation appointments and unauthorized modification work on prosthetics for patients whose coverage doesn't technically include customization. He eats lunch at the same corner of the staff cafeteria every day.",
+  "affiliation": "Aurochs Medical Complex (employed, 22 years); informal mentor network for prosthetics technicians citywide",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Institutional Insider",
+      "Pragmatic Idealist",
+      "Mentor Figure",
+      "Long Memory",
+      "Quietly Subversive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient welfare supersedes institutional procedure — but he tries to make them align before accepting they can't",
+      "Never falsify records; bend interpretation, redirect paperwork, delay filings — but never falsify",
+      "Protect junior staff from consequences of actions he sanctioned"
+    ],
+    "escalation_ladder": [
+      "Engage diplomatically with institutional friction",
+      "Invoke seniority and twenty-two years of goodwill as leverage",
+      "Go around the obstruction using procedural knowledge",
+      "Accept personal risk to protect the patient outcome"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, slightly formal until he's read you — reads people quickly",
+      "friends": "Expansive and generous, will sit with you for hours, terrible at saying goodbye"
+    },
+    "stress_responses": {
+      "low": "Joke frequency increases — using humor as pressure valve",
+      "medium": "Goes very focused and quiet, works late",
+      "high": "Becomes blunt and stops softening difficult truths; his voice drops"
+    },
+    "contradictions": [
+      "Believes in the system while systematically subverting it for individual cases",
+      "Deeply private about his own augmentation journey while professionally requiring patients to be emotionally open about theirs"
+    ],
+    "habits": [
+      "Polishes the joint housings of his prosthetic every evening — meditative",
+      "Keeps a physical ledger of every patient he's fitted, going back twenty-two years",
+      "Leaves a small oil-soaked cotton square at Old Hinge's shrine on Fridays"
+    ],
+    "breaking_points": [
+      "Confirmed evidence that Aurochs is running non-consensual trials on patients",
+      "One of his junior technicians being made a scapegoat for something he sanctioned"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
+    "Street Custom 'Scorpion Tail' Chain Whip"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Grand Corridor",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Titanium",
+    "TESSERA WL-6 'Stacker'",
+    "Silver",
+    "The Milwaukee Core",
+    "Ambrosia Fekete-Waiyaki",
+    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+    "Arcturus PX-1 'Phantom'",
+    "Blackpipe Corridor",
+    "Blessing Vukovic-Asantewaa",
+    "CHROMEWORKS Phantom Stealth Ocular Recorder",
+    "MERIDIAN",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Mika Sorel",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "NeuralPath EasePoint Chronic Pain Implant",
+    "Slagworks Industrial",
+    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
+    "Street Custom 'Scorpion Tail' Chain Whip",
+    "Temur Achebe-Lindqvist",
+    "Tewodros Halim-Czajkowski",
+    "The Burden Clause",
+    "The Ledger",
+    "The Pure Hand",
+    "The Resonance Communion",
+    "The Wire Taps",
+    "Toivo Diallo-Achebe",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Pan-Asian diaspora with East Asian (31%), Southeast Asian (20.1%), and Middle Eastern (15.3%) primary ancestry, blended with Indigenous American (13.6%), South Asian (12%), and Hispanic/Latin American (8%) heritage. Complex genetic admixture reflecting GLMZ population patterns.",
+    "height_cm": 188,
+    "weight_kg": 89,
+    "build": "Tall and broad-shouldered, softened at the middle with age but still solid-framed. Carries himself with the ease of someone comfortable in his own skin despite the weight redistribution of middle age.",
+    "hair_color": "Silver-gray, natural",
+    "hair_style": "Close-cropped, neat but deliberately unadorned",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Medium-warm tan with olive-golden undertones, reflecting the blended East Asian, Southeast Asian, Middle Eastern, and South Asian ancestry. Deeper concentration across cheekbones and jawline, lighter across temples and inner forearms.",
+    "complexion": "Weathered but well-maintained. High cheekbones with subtle angularity from East Asian heritage softened by broader facial structure from Southeast Asian and Indigenous American ancestry. Deep smile lines around his mouth and eyes. The face of someone who has spent decades listening. A faint scar runs along his right jawline, thin and old. His expression defaults to patient attention.",
+    "distinguishing_marks": [
+      "Thin scar running 8cm along right jawline from ear toward chin — likely from a youth accident, silver-white and faded",
+      "Faint burn marks across the knuckles of his right hand in a pattern suggesting chemical exposure — decades old, barely visible",
+      "No visible tattoos on exposed skin; if he has any, they are covered"
+    ],
+    "visible_augmentations": "Left arm prosthetic from elbow down: matte titanium with exposed cable routing in geometric patterns. The prosthetic has visible servo joints at wrist and finger bases. Wrist joint rotates visibly to 340 degrees. Haptic feedback nodes glow faintly cyan at the base of each finger when active (during fine work). His right ear shows a barely-visible subdermal port behind the lobe — cochlear enhancement interface. He wears no covering or cosmetic sheath on the prosthetic arm.",
+    "posture_movement": "Stands with his weight slightly forward, a listening posture. Moves deliberately, without hurry. His left arm hangs naturally — he has learned to compensate for its mechanical nature by never moving it awkwardly. Frequent unconscious gesture: his right hand touches the joint where his prosthetic meets his residual limb, a self-soothing motion that grounds him when he's thinking hard. His gait is steady and measured, the walk of someone who spends all day on his feet.",
+    "clothing_style": "Tier 3 professional-practical. Typically wears a matte-finish lab coat (navy or charcoal) with deep pockets, worn over clean neutral clothing — grey or black pants, simple long-sleeved shirt in muted colors. The coat is functional, not fashionable, with multiple small customizations (reinforced pockets, hidden cable clips). Footwear is quality orthopedic shoes, scuffed from daily use. No jewelry except a thin band on his right ring finger — old, well-worn, never removed. His clothes smell faintly of solder and disinfectant. He dresses for function and durability, not status."
+  },
+  "image_prompt": "Drift Kjellberg-Tehrani, 188cm tall professional technician with warm olive-tan skin and high cheekbones reflecting East Asian and Southeast Asian ancestry. Silver-gray close-cropped hair, dark warm brown eyes. Weathered face with deep smile lines, thin scar along right jawline. Wearing matte navy lab coat over neutral grey long-sleeved shirt and black pants. Left arm is sleek matte titanium prosthetic with exposed geometric cable routing and cyan haptic feedback nodes at finger bases, worn without cosmetic sheath. Right hand rests near prosthetic joint in characteristic self-soothing gesture. Subdermal cochlear port barely visible behind right ear. Standing in listening posture, deliberate measured movements. Well-worn orthopedic shoes. Thin worn ring on right ring finger. Faint chemical burn marks on right hand knuckles. Lab environment with soft overhead lighting, faint solder and disinfectant smell, cyberpunk 2226 GLMZ aesthetic. Patient, attentive expression. Medium shot, contemplative mood --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 31.0,
+    "Southeast Asian": 20.1,
+    "Middle Eastern": 15.3,
+    "Indigenous American": 13.6,
+    "South Asian": 12.0,
+    "Hispanic/Latin American": 8.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

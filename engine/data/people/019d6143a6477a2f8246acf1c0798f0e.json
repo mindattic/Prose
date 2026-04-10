@@ -1,0 +1,284 @@
+{
+  "id": "019d6143a6477a2f8246acf1c0798f0e",
+  "type": "character",
+  "name": "Atlas Solberg",
+  "aliases": [
+    "Kwe",
+    "Noodle Kwe"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor",
+  "age": 29,
+  "status": "active",
+  "location": "Operates his cart at the intersection of two elevated walkways in the Bronzeline district, near the Ferrogate transit relay junction, near North Ave and Damen",
+  "description": "Kweku is lean and quick, with deep brown skin and a constellation of bioluminescent freckles across his cheeks and forearms — a cosmetic genemod he got at nineteen and has never regretted, though they pulse faster when he's agitated, which he finds embarrassing. His hair is kept short on the sides, grown out into a soft cloud on top, often dusted with dried chili residue he doesn't notice. He has a long nose and an expressive mouth that defaults to a grin that's one part genuine warmth and two parts salesmanship. A small Ferrogate Transit logo is tattooed behind his left ear from a brief period he'd rather not discuss.\n\nKweku is relentlessly social and genuinely curious about people in a way that can be hard to distinguish from nosiness. He remembers orders perfectly — not just what people eat, but what they ordered the first time, what they ordered the day something bad happened to them, what changes in someone's order say about the state of their life. He has no filter on his opinions and will share them freely unless he senses real pain, at which point he becomes unexpectedly gentle. He has enormous ambitions for his cart and absolutely no plan for them. He talks about opening a real restaurant with the same frequency and specificity as people talk about dreams they don't actually intend to pursue.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being stuck — same cart, same corner, same conversation, forever",
+      "being genuinely disliked rather than just ribbed"
+    ],
+    "core_desires": [
+      "to build something that lasts and has his name on it",
+      "to be someone people come home to"
+    ],
+    "coping_mechanisms": [
+      "humor and rapid subject-changing",
+      "cooking as creative expression and emotional labor simultaneously"
+    ],
+    "blind_spots": [
+      "reads people's interest in him as friendship before it's earned",
+      "consistently underestimates how much information he leaks to people he likes"
+    ],
+    "secret": "The Ferrogate tattoo is from a six-month period when he was recruited as a low-level informant for a Ferrogate Transit security division — reporting on vendors who were using transit infrastructure without permits. He got out when it started involving actual people he knew. He has never told anyone. The tattoo was supposed to come off; he never saved up enough to have it properly removed."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rapid, informal, Twi-inflected slang mixed with transit-district creole. Talks in short punchy sentences that chain together. Lots of questions.",
+    "cadence": "Fast and animated. Slows only when he's being sincere, which makes his sincere moments very readable.",
+    "verbal_tics": [
+      "'You hear me?' (constant, not actually seeking confirmation)",
+      "'That's a whole thing' (to dismiss complexity)",
+      "Hisses through his teeth when surprised"
+    ],
+    "example_lines": [
+      "'The spicy or the very spicy? Because I need you to be honest with yourself before you answer that.'",
+      "'Nah, I don't know nothing about the relay being down at 0200. I know I sold eight bowls to people who looked like they'd been waiting somewhere cold for a long time. That's different from knowing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He witnessed something at the transit junction three weeks ago — a handoff, a collapse, a person being carried — and hasn't decided what to do with it, if anything",
+    "A regular customer stopped coming; Kweku is low-key worried and doesn't know whether to be charmed or alarmed by how much he cares",
+    "The Bronzeline Vendor Association is raising pitch fees in a way that will end his margin, and he's looking for someone to help him draft a complaint or find an alternative"
+  ],
+  "narrative_function": "Information hub and street-level thermometer — Kweku talks to everyone and remembers everything. Excellent source of neighborhood gossip, rumor, and the general mood of the district. Comic relief with occasional unexpected emotional depth. Can become a quest hook if something he's observed puts him in danger.",
+  "augmentations": "Bioluminescent freckle genemod (cosmetic, chest/face/forearms); basic retinal overlay for order-taking and payment processing (Tier 1, consumer grade)",
+  "daily_life": "Wakes at 0400 to prep broth, rolls the cart to his spot by 0600, works the breakfast and lunch rush, breaks in the mid-afternoon, catches the late-night commuter crowd until 2300. Talks constantly throughout.",
+  "affiliation": "Independent; pays a pitch fee to the Bronzeline Vendor Association; occasional cash work for a cousin who runs deliveries",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 4,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-informant",
+      "social-hub",
+      "ambitious-dreamer",
+      "hidden-guilt",
+      "food-as-language"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If it makes people laugh, it's probably fine",
+      "Never extend credit — but do sometimes 'forget' to charge people who look like they need it",
+      "Don't get involved in things that aren't your business... but establish what counts as your business generously"
+    ],
+    "escalation_ladder": [
+      "Joke to deflect",
+      "Pointed joke that isn't fully a joke",
+      "Direct question ('What's actually happening here?')",
+      "Calling for help from other vendors or passersby",
+      "Running — genuinely, fast, no hesitation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and slightly performative. Pitches himself as much as his food. Genuinely curious but reads as enthusiastic first.",
+      "friends": "Drops the sales energy entirely. Comfortable, teasing, remembers everything. Shows up."
+    },
+    "stress_responses": {
+      "low": "Talks faster and makes more jokes.",
+      "medium": "Goes quiet between customers. Gets his prep very precise and controlled.",
+      "high": "Shuts the cart early, goes home, cooks something complicated for himself that no one will eat."
+    },
+    "contradictions": [
+      "Presents as completely open but has never told anyone the Ferrogate story; the openness is real but carefully boundaried around certain specific things"
+    ],
+    "habits": [
+      "Taps the E.L.F. sticker on his cart's burner unit before lighting it every morning",
+      "Names his daily special after whatever mood he's in",
+      "Eats standing up, always"
+    ],
+    "breaking_points": [
+      "Someone being cruel to a vendor or service worker within his eyeline — he will absolutely and immediately start a scene"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9,
+    "Generous Fool": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Started working his uncle's noodle cart at age 17",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Recruited as low-level Ferrogate Transit informant; got the tattoo as 'proof of affiliation'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ended the Ferrogate arrangement after being asked to report on a vendor he knew personally",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Purchased his own cart with savings and a loan from his mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Secured his current Bronzeline pitch after previous vendor retired",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Angry Mary' Aerosol Flamethrower"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Bronzeline",
+    "Flicker",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Residue (I Still Have Your Feed)",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Autonomous Adhesive Denial Drone AADD-2 'Barnacle'",
+    "Devraj Solano-Yildirim",
+    "Ezio Kaboré-Malhotra",
+    "Lazarus IDP-1 'Teeth'",
+    "MindBridge Relay One Social Integration BCI",
+    "Patient Zero",
+    "Pirjo Asante-Ulukhan",
+    "Slagworks Industrial",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "TESSERA PA-5 'Attendant'",
+    "TESSERA TK-4 'Hellhound'",
+    "Tafara Quiñones-Saarinen",
+    "The Pure Hand",
+    "The Wire Taps"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European base with significant Pacific Islander heritage, combined with Hispanic/Latin American, South Asian, and trace East Asian ancestry—creating a striking blend of Scandinavian bone structure with warmer, golden-bronze skin undertones and subtle features from multiple ancestral lines",
+    "height_cm": 175,
+    "weight_kg": 68,
+    "build": "Lean and wiry with defined shoulders from pushing his cart daily; quick, efficient movements suggest habitual physical labor without bulk",
+    "hair_color": "Natural deep black",
+    "hair_style": "Faded undercut with a soft, voluminous cloud of curls on top; often matted with steam and chili dust by midday",
+    "hair_length": "Short sides, medium-long crown",
+    "eye_color": "Deep brown with faint cathode-orange glow from retinal overlay at rest",
+    "skin_tone": "Warm golden-bronze with subtle honey undertones—a blend of Northern European fairness warmed by Pacific Islander and South Asian heritage, creating a sun-kissed, weathered appearance",
+    "complexion": "Clear skin with a faint sheen from constant exposure to cart steam; high cheekbones with strong Scandinavian structure softened by broader facial planes from Pacific Islander ancestry; expressive mouth usually curved in an easy grin; five o'clock shadow by evening",
+    "distinguishing_marks": [
+      "Constellation of bioluminescent freckles across cheeks, bridge of nose, and forearms—soft cyan-blue glow, pulse rate increases with emotional agitation",
+      "Small Ferrogate Transit Authority logo tattoo behind left ear (stylized rail line in black ink, faded from age and regret)"
+    ],
+    "visible_augmentations": "Faint orange cathode gleam in irises when retinal overlay activates for transactions; bioluminescent freckles provide low ambient glow in dim conditions",
+    "posture_movement": "Stands with weight on his toes, ready to pivot or lean into sales pitch; constant fidgeting with hands when talking (gestures with ladles, wipes chili from apron, adjusts cart struts); walks with economical, quick steps; defaults to leaning against his cart with arms crossed or elbows braced, depending on how engaged he is with a customer",
+    "clothing_style": "Tier 3 working class: faded charcoal chef's coat with embroidered 'Kweku's' in mismatched lettering he did himself; underneath, a thermal undershirt in various states of staining; cargo pants in dark grey with grease and sauce marks; weatherproof apron with deep pockets for small supplies; scuffed composite-toe work boots; a thin stainless-steel chain around his neck holding a small brass luck charm his grandmother gave him"
+  },
+  "image_prompt": "Atlas Solberg, 175cm lean street food vendor with golden-bronze skin from mixed Northern European and Pacific Islander heritage, warm honey undertones glowing in neon light. Deep black curled undercut, strong cheekbones with expressive features. Wearing faded charcoal chef's coat over stained thermal, dark cargo pants, weatherproof apron. Bioluminescent cyan freckles constellation across cheeks and nose softly glowing. Cathode-orange retinal implant gleam visible at rest. Brass luck charm visible on stainless-steel chain. Leaning against worn food cart with economical posture, weathered work boots, hands animated mid-gesture. Great Lakes Metropolitan Zone 2226, cyberpunk street food vendor aesthetic, moody neon and steam lighting, evening shift, slightly gritty urban setting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 57.0,
+    "Pacific Islander": 22.6,
+    "Hispanic/Latin American": 10.0,
+    "South Asian": 8.8,
+    "East Asian": 1.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

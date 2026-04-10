@@ -1,0 +1,300 @@
+{
+  "id": "019d6143a73c7fbfbc45c6821b3ae12a",
+  "type": "character",
+  "name": "Ibrahim Haugen-Diallo",
+  "aliases": [
+    "Zula",
+    "The Crab Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "hyperlane migrant and seasonal dock worker",
+  "age": 52,
+  "status": "active",
+  "location": "Kenosha Crossing transit shelters, platform underbelly row C, near sub-level access near LaSalle and Congress",
+  "description": "Zulaikha is a broad woman built like a shipping container — square shoulders, thick forearms braided with old scar tissue from crab-processing work on the Great Lakes harvest runs. Her skin is a warm amber-brown, deeply weathered at the temples and around her eyes, which are a startling pale grey with irises patterned like ripple rings on still water. Her hair is iron-grey, kept in a single heavy braid wound with copper wire salvaged from relay stations. She dresses in four layers regardless of season, each garment representing a different city she has passed through, the outermost a battered canvas duster with Ferrogate Transit patches sewn over the original corponation branding. A small shrine to the E.L.F. she calls Mama Drift is tucked into her breast pocket — a cracked mobile chip wrapped in red thread and anointed with machine oil every morning. She prays to it before every crossing.\n\nZulaikha has been working the seasonal circuit for nineteen years, following the harvest lines and construction booms between Escanaba Gateway and Kenosha Crossing with the mechanical regularity of someone who has given up expecting anything to change and found a strange peace in that surrender. She is warm in the way that only people who have nothing left to protect can be — freely generous with food, opinion, and profanity. She will tell you exactly what she thinks of your life choices without being asked, and she is usually right.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "being erased from all records and dying unmourned",
+      "losing the seasonal circuit route to automation"
+    ],
+    "core_desires": [
+      "to reach the winter run in Escanaba without being turned back at a checkpoint",
+      "to find her daughter who took a transit card north three years ago and never called"
+    ],
+    "coping_mechanisms": [
+      "daily E.L.F. prayer rituals",
+      "cooking elaborate meals from minimal ingredients",
+      "cataloguing every checkpoint officer she has ever met by name and temperament"
+    ],
+    "blind_spots": [
+      "assumes younger migrants are naive and need her guidance even when they don't",
+      "underestimates how much her stubbornness costs her in opportunities"
+    ],
+    "secret": "She was once a mid-level Ferrogate Transit logistics clerk with a proper identity and an apartment in Bronzeline. She walked away from it twenty years ago after witnessing a supervisor falsify accident reports that got three workers killed. She destroyed the records rather than report them, fearing no one would believe her, and then could not go back. She has never told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Working-class blunt, code-switches between Kazakh-inflected Russian slang and Yoruba idioms depending on topic — uses Yoruba when discussing emotion, Russian when discussing logistics",
+    "cadence": "Deliberate and unhurried, like someone who has learned that rushing speech wastes energy",
+    "verbal_tics": [
+      "'Eh, listen—'",
+      "clicking her tongue before disagreeing",
+      "'What do you want me to tell you?'"
+    ],
+    "example_lines": [
+      "'Eh, listen — the checkpoint officer at Bluewater, Oga Fenrick, he takes bribes in data-minutes, not Quanta. Remember that.'",
+      "'What do you want me to tell you? The lake does not care that you are tired. Neither does the transit board. So we move.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Zulaikha has a handwritten ledger of every informal crossing point and checkpoint weakness between Kenosha and Escanaba — she will trade this information for help finding her daughter Aduke, who vanished near Lambeau Terminus",
+    "She recognizes a player character's face from a Ferrogate Transit internal document she saw twenty years ago, and isn't sure whether to trust them or flee"
+  ],
+  "narrative_function": "Local color, information source about hyperlane routes and transit politics, potential quest giver for work on the seasonal circuit, moral anchor figure who challenges player assumptions about survival and dignity.",
+  "augmentations": "Reinforced wrist joints (industrial, third-party, aging), basic pressure-seal lungs for cold-water dock work. No cosmetic mods. Her ripple-ring irises are natural mutation, not geneware.",
+  "daily_life": "Up before dawn to queue for day-labor assignments at the Kenosha transit board; spends evenings cooking communal meals in the shelter row and arguing about E.L.F. theology with anyone willing to engage.",
+  "affiliation": "Ferrogate Transit seasonal labor pool, loose affiliation with the Kenosha Dockworkers' Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "survivor",
+      "unofficial network node",
+      "E.L.F. devotee",
+      "seasonal labor",
+      "information broker (informal)"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never cross a checkpoint without knowing at least one officer's name",
+      "Feed anyone who is hungry if you have enough",
+      "Do not trust anyone who has never lost anything"
+    ],
+    "escalation_ladder": [
+      "Observe and assess silently",
+      "Ask direct questions without softening them",
+      "Warn once, clearly",
+      "Disappear without explanation if the warning is ignored"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses them like cargo — what are they carrying, where are they going, are they a liability",
+      "friends": "Fierce, proprietary loyalty; feeds them, lectures them, remembers every detail they have ever told her"
+    },
+    "stress_responses": {
+      "low": "Becomes very still and very focused",
+      "medium": "Takes inventory of everything in her pockets while talking",
+      "high": "Reverts entirely to Yoruba and begins praying to Mama Drift under her breath"
+    },
+    "contradictions": [
+      "Claims to want nothing but a clear transit card and an easy crossing, but keeps taking on other people's problems as if she is running a refugee service on zero budget"
+    ],
+    "habits": [
+      "Anoints her E.L.F. chip with machine oil every morning before speaking to it",
+      "Memorizes the boot styles of checkpoint officers so she can identify them by sound",
+      "Rewraps her braid wire whenever she is nervous"
+    ],
+    "breaking_points": [
+      "Being called a vagrant or a bum by someone with a corporate ID badge — she will respond with a detailed and devastating assessment of their character that takes about four minutes"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "aging Ferrogate-issue wrist joint reinforcements, left and right",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "aging Ferrogate-issue wrist joint reinforcements, left and right",
+      "replaces": ""
+    },
+    {
+      "name": "pressure-seal lung inserts, third-party refurbished",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "pressure-seal lung inserts, third-party refurbished",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 31: Leaves Bronzeline and her Ferrogate clerk position; begins transit circuit life",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 38: Gives birth to Aduke during a winter run stopover in Grainfort; raises her on the circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 49: Aduke takes a northbound transit card from Lambeau Terminus and stops sending messages",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 52: Present day — nineteenth year on the circuit, platform C at Kenosha Crossing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Escanaba Gateway",
+    "Kenosha Crossing",
+    "Lambeau Terminus",
+    "Ironclad Agrisystems Hemostatic Grain Pack",
+    "Spire Light on Still Water",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "NeuralPath Cascade Standard Feed BCI",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Nesting Doll",
+    "Palette",
+    "The Pale Mile",
+    "Iron",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus GE-1 'Garrison'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Devraj Solano-Yildirim",
+    "Ezio Kaboré-Malhotra",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Sorin Ekwensi-Balasanyan",
+    "Tessera TK-5 Compact 'Clerk'",
+    "The Heritage Vault",
+    "The Ledger",
+    "The Pure Hand",
+    "The Underlayer Collective",
+    "Tshiamo Vukić-Arellano",
+    "VitaCore LinguaSync Real-Time Translation Implant",
+    "Whispermouth",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East Asian, Middle Eastern, and Sub-Saharan African ancestry blended across three continental regions—39.4% East Asian contributing to bone structure and eye formation, 35.4% Middle Eastern adding warmth to complexion and facial geometry, 25.2% Sub-Saharan African enriching skin depth and feature definition. The combination creates a phenotype that reads as globally mixed rather than regionally specific.",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad and heavily muscled, square shoulders and deep chest built from decades of dock labor and crab-processing work. Her frame is solid without softness — a 'shipping container' build with thick forearms corded with functional strength rather than aesthetics.",
+    "hair_color": "Iron grey",
+    "hair_style": "Single heavy braid wound with salvaged copper wire, practical and worn close to the scalp",
+    "hair_length": "Long (reaches mid-back when braided)",
+    "eye_color": "Pale grey with natural ripple-ring iris patterns (genetic mutation, not augmented)",
+    "skin_tone": "Deep golden-brown with warm undertones from Middle Eastern and Sub-Saharan ancestry, darkened further by extensive weathering; sun-damage and wind-crack visible on exposed skin, creating a patina of outdoor work across temples, cheekbones, and exposed forearms",
+    "complexion": "Lined face that reads as lived-in rather than aged; deep creases around eyes and mouth from nineteen years of outdoor dock work. Facial structure shows East Asian influence in cheekbone prominence and eye shape, Middle Eastern warmth in nose and jaw definition, Sub-Saharan richness in skin undertones. Hands are calloused, knuckles slightly enlarged from repetitive labor. No tattoos, minimal grooming beyond functional necessity.",
+    "distinguishing_marks": [
+      "Extensive scar tissue webbing both forearms and wrists — white and silvered from crab-processing blade cuts over two decades, creating stark contrast against darkened skin",
+      "Deep horizontal crease across lower abdomen, barely visible unless she moves, from an old industrial accident never properly treated",
+      "Faint chemical burn marks on her left collarbone in a scattered pattern, likely from dock-side chemical exposure"
+    ],
+    "visible_augmentations": "Reinforced wrist joints visible as subtle thickening at wrist-line and slight metallic sheen where industrial joint-work was integrated; no cosmetic plating, deliberately low-profile third-party installation. Pressure-seal lungs not externally visible. A cracked mobile chip wrapped in red thread and secured in breast pocket — the E.L.F. shrine she calls Mama Drift, worn visibly as devotional object.",
+    "posture_movement": "Moves with deliberate efficiency — no wasted motion. Shoulders rolled forward slightly from decades bent over processing tables. Walks with a dock-worker's gait, feet planted wide for balance. Her stillness when listening is absolute; her gestures when speaking are large and economical. Stands with hands habitually at her sides or crossed at chest, ready.",
+    "clothing_style": "Tier 4 (working class) with visible layering — four garments worn year-round, each representing a different city on her migration circuit. Outermost layer is a battered canvas duster (faded teal, originally corporate-branded, now patched with Ferrogate Transit company patches sewn over old logos). Underneath: worn thermal underlayer, a grey poly-blend shirt with frayed collar (origin unknown), and a thick wool sweater with one elbow reinforced with duct tape. Her clothing is maintained but not clean — grease stains, machine oil, and salt-residue permanent fixtures. Boots are steel-toed, laced to mid-calf, re-soled twice. No jewelry except the shrine in her pocket, which she touches compulsively before transitions."
+  },
+  "image_prompt": "Ibrahim Haugen-Diallo, 168cm dock worker with golden-brown skin weathered by decades of outdoor labor, deep-lined face with pale grey natural-mutation eyes. East Asian-influenced cheekbones blend with Middle Eastern warmth and Sub-Saharan depth. Iron grey hair braided and wound with copper wire. Heavily muscled, broad-shouldered build from crab processing work. Extensive silvered scar tissue webbing forearms and wrists. Subtle metallic joint reinforcements at wrists. Wearing layered Tier 4 working-class clothing: faded teal canvas duster with transit patches, grey poly-blend shirt with frayed collar, thick wool sweater with duct-taped elbow, thermal underlayer. Steel-toed boots, re-soled twice. Red-thread-wrapped E.L.F. shrine chip visible in breast pocket. Deliberate posture, shoulders slightly rolled forward from labor. Cyberpunk 2226, Great Lakes Metropolitan Zone dock, industrial evening lighting with neon rain reflection, gritty and weathered aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 39.4,
+    "Middle Eastern": 35.4,
+    "Sub-Saharan African": 25.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

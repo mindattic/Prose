@@ -1,0 +1,282 @@
+{
+  "id": "019d6143a64875a6b06defc0d539f1f6",
+  "type": "character",
+  "name": "Mika Sow-Zielinski",
+  "aliases": [
+    "Auntie Laleh",
+    "the House"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Bookmaker and numbers runner — operates an illegal betting house out of a tea and meal shop",
+  "age": 56,
+  "status": "active",
+  "location": "Shallowgrave, Ondaatje's Tea and Provisions, Mercy Lane off the Sump Road transit stop, near Ashland and Chicago Ave",
+  "description": "Laleh is short, broad-shouldered, and carries herself with the composed authority of someone who has run a complicated household for decades—which, in a sense, she has. Her hair is silver-white, cut practically short, and her hands are large and permanently warm-looking from years behind a steam counter. Her skin is a deep warm brown marked by two old vertical scars along her left jaw from an incident she has never explained to anyone's satisfaction. She wears reading glasses on a chain and uses them as a prop—taking them on and off, gesturing with them—when she's negotiating. Her shop is genuinely beloved: the tea is actually good, the rice-and-lentil specials actually excellent, and the back room is where the real business happens.\n\nLaleh is the kind of person who has been essential to a community for so long that even people who morally disapprove of gambling come to her when they're in trouble—not to place a bet, but because she knows everything and her counsel is free if you're eating. She has a gift for making people feel they are the most important problem in the room, which is a talent both for hospitality and for extracting information. She is genuinely warm and genuinely hard, and the line between those two things moves at her discretion. She has been fined four times and arrested once (charges dropped). She tithes ten percent of her operation's income to the Shallowgrave block mutual aid fund, which is not tax-deductible and not public but is the reason three hundred families have eaten during lean months.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "The shop being shut down—not for her sake but because it is the only stable institution on Mercy Lane",
+      "Outliving the community she has built, watching it displace or dissolve around her"
+    ],
+    "core_desires": [
+      "Shallowgrave to survive and improve without losing its character",
+      "Her nephew to choose his own path and have it work out well"
+    ],
+    "coping_mechanisms": [
+      "Cooking—elaborate preparation of dishes when stressed, feeds everyone in range",
+      "Prayer to the shop's ELF, which she treats as a genuine spiritual relationship"
+    ],
+    "blind_spots": [
+      "She sees her operation as community service and is almost entirely blind to how the debt cycle of gambling harms some of her regulars",
+      "She assumes her read on people is more accurate than it sometimes is"
+    ],
+    "secret": "The numbers syndicate she works with has recently been absorbed by a network with significantly less ethical scruples about debt collection. Her arrangement predates the acquisition and she has not been told of the change. Two of her regular bettors have already been approached by new collectors using methods she would never have permitted, and she doesn't yet know the calls are coming from inside her own arrangement."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and colloquial, moves between warmth and precise hardness without warning. Proverbs—her own invented ones as often as inherited ones.",
+    "cadence": "Unhurried and warm in public-facing mode; becomes crisper and quieter when doing business.",
+    "verbal_tics": [
+      "'Come eat first, then we'll talk, because everything is clearer after you eat'",
+      "Addresses most adults as 'friend' and means it literally when she says it and as a neutral placeholder otherwise"
+    ],
+    "example_lines": [
+      "'I have been on Mercy Lane for twenty-one years. I have seen four gangs, two corporate rezoning attempts, a flood, and whatever that was in '94 that nobody talks about. I'm still here. Sit down and tell me what you actually need.'",
+      "'If you owe me and you come to tell me, that is a very different situation from me having to come find you. I want you to understand that before you decide how this conversation goes.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Laleh has discovered that one of her longtime regulars—a man who bets modestly and always pays—has borrowed heavily from a back-room source connected to her new syndicate masters and is about to be hurt, and she is trying to quietly resolve it before it happens in a way that reveals her own exposure",
+    "A community member has come to her with evidence that the Shallowgrave block council has been compromised by Sterling-Nakamura rezoning money, and she is now the de facto decision-maker about whether to surface it"
+  ],
+  "narrative_function": "Community anchor and information hub, moral center of Shallowgrave, quest giver for local problems, reliable source of gossip and history, potential ally with serious resources in the local community fabric.",
+  "augmentations": "None beyond a hearing aid implant in the left ear—medical necessity, basic model. She has declined all cosmetic mods on principle and mentions this when it comes up.",
+  "daily_life": "Opens the shop at 0630 for the morning transit crowd, runs the visible operation through lunch, hands the counter to her nephew in the afternoon while she manages back-room business—taking bets, paying out, maintaining the ledger—then returns to the counter for evening service.",
+  "affiliation": "Nominally independent; longstanding informal arrangement with both the Shallowgrave block council and a mid-tier numbers syndicate that uses her as a distribution node",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community-anchor",
+      "warm-and-hard",
+      "information-hub",
+      "morally-complex",
+      "ELF-devout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed someone before doing any serious business—it changes the room",
+      "Collect what is owed, but never take the last thing—leave people able to function"
+    ],
+    "escalation_ladder": [
+      "Warm reminder, framed as concern",
+      "Firm conversation in the back room, clearly business",
+      "Engages the syndicate's collection arm with specific instructions about limits",
+      "Cuts the relationship entirely and writes off the debt—she has done this three times"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and attentive, offers food, asks good questions—genuinely curious and simultaneously assessing",
+      "friends": "Openly affectionate, teasing, protective to a degree that occasionally becomes controlling"
+    },
+    "stress_responses": {
+      "low": "Makes a complicated dish that takes three hours",
+      "medium": "Closes the back room for the evening and sits with the shop's ELF shrine in private",
+      "high": "Becomes very still and begins making a list—physical, handwritten, which means she is genuinely planning something"
+    },
+    "contradictions": [
+      "Tithing to mutual aid from proceeds of an operation that sometimes puts those same people in debt",
+      "Runs her shop with an ethics she does not apply to her syndicate relationship because she chose not to look closely"
+    ],
+    "habits": [
+      "Leaves a small food offering at the corner of the counter for the shop's ELF every morning before opening",
+      "Remembers everyone's regular order and delivers it before they finish asking"
+    ],
+    "breaking_points": [
+      "Physical harm to her nephew",
+      "Discovery that her arrangement has been used to hurt someone on Mercy Lane without her permission"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Hearing aid implant (left ear, medical necessity, basic model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Hearing aid implant (left ear, medical necessity, basic model)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Survivor Ethics": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 28: Opened Ondaatje's Tea and Provisions on Mercy Lane with savings from a decade of transit catering work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 33: The incident that produced the jaw scars—she does not discuss it, the other party is no longer in Shallowgrave",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 35: Began back-room numbers operation as a neighborhood service",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 44: Formalized arrangement with the mid-tier syndicate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 55: Syndicate absorbed by new network—she has not yet been informed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Shallowgrave",
+    "The Quiet Room",
+    "The Fathom Line",
+    "South Deering Sump",
+    "Silver",
+    "The Pure Hand",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Aïda Połczyńska-Ouattara",
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Idris Forsberg-Quaye",
+    "Lazarus LX-2 'Lab Rat'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "The Blackout Syndicate",
+    "The Counter",
+    "The Heritage Vault",
+    "The Ledger",
+    "The Sump",
+    "Witness"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (60.4%) with significant Eastern European (32.6%) and Northern European (7.0%) ancestry, creating a complexion that blends deep warm brown tones with subtle undertones from her mixed heritage",
+    "height_cm": 156,
+    "weight_kg": 68,
+    "build": "Broad-shouldered and solid, carrying weight with the structural efficiency of someone built for endurance rather than speed. Forearms thickened from decades of counter work—lifting pots, wringing cloths, gripping ledgers.",
+    "hair_color": "Silver-white, natural gray from age",
+    "hair_style": "Practical, close-cropped, swept back from her forehead with no styling product—pure function",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm and perceptive",
+    "skin_tone": "Rich deep brown with warm undertones, reflecting her strong Sub-Saharan African ancestry balanced with the subtle influence of her Eastern and Northern European heritage",
+    "complexion": "Face lined with the wear of 56 years and thousands of negotiating conversations; crow's feet pronounced at the outer corners of her eyes; a quality of settled centeredness in her expression. Minimal makeup—perhaps a trace of kohl on workdays. Jaw and neck unmarked save for the two vertical scars. Facial structure shows the blend of her ancestry in her broad cheekbones and defined jawline.",
+    "distinguishing_marks": [
+      "Two parallel vertical scars running approximately 4 centimeters along her left jaw from angle to mid-cheek, thin and clean-edged, suggesting old surgical or blade work—source unknown and deflected",
+      "Light callusing on the palms and inner fingers of both hands from decades of kitchen work",
+      "A faint burn scar on the inside of her right wrist, small and old, consistent with steam exposure"
+    ],
+    "visible_augmentations": "A small flesh-tone hearing aid implant visible behind her left ear when her hair is pulled back—medical-grade, no cosmetic modification. The device is utilitarian and un-hidden. No other visible augmentation; she explicitly declines chrome on principle.",
+    "posture_movement": "She moves with economy and intention—no wasted motion. When standing at a counter, rooted and present. When seated for business, she leans back slightly, creating a small distance that feels like neutrality rather than coldness. Hands gesture deliberately when speaking; she uses her reading glasses (on a chain around her neck) as a negotiating tool, removing and replacing them with theatrical precision. Her default expression is attentive and warm, but her eyes track everything in a room simultaneously.",
+    "clothing_style": "Tier 4 working-class practicality. In the shop: a dark linen apron over loose cotton trousers in dark blue or charcoal, a long-sleeved undyed cotton shirt (rolled to the elbow in warm weather), sturdy non-slip kitchen shoes. In the back room: the apron comes off; she wears a structured dark jacket of synthetic wool, well-maintained but not new. Reading glasses on a silver-plated chain. No jewelry beyond a simple steel watch and a thin band on her left ring finger (wedding or memorial—never explained). Her clothes are always clean, often still damp along the collar from the steam of her own kitchen. No visible corp logos or status symbols. Everything suggests: I have been doing this for decades and I will continue doing this for decades."
+  },
+  "image_prompt": "Mika Sow-Zielinski, 56-year-old woman with rich deep brown skin and silver-white cropped hair, standing behind a worn kitchen counter in a cyberpunk 2226 Great Lakes Metropolitan Zone establishment. Her heritage visible in defined cheekbones and strong jawline, bearing two thin parallel scars on her left jaw. Practical undyed cotton shirt with sleeves rolled to elbows, dark linen apron, reading glasses on silver chain around her neck. Broad-shouldered, solid build, moving with economical purpose. Small flesh-tone hearing aid visible behind left ear. Warm dark brown eyes tracking the room with simultaneous attention. Hands show decades of callusing from kitchen work. Steel watch on wrist. Expression attentive and centered. Background shows steaming kitchen, warm overhead lighting casting shadows across her lined face. Cyberpunk utilitarian aesthetic, no chrome augmentation, everything worn but meticulously maintained. Atmospheric steam and neon glow filtering through kitchen windows. Intimate, grounded moment of a lifetime worker. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 60.4,
+    "Eastern European": 32.6,
+    "Northern European": 7.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

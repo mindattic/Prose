@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a72c7bc599a79dee0cbe07a3",
+  "type": "character",
+  "name": "Chidi Prempeh",
+  "aliases": [
+    "Nana Yoli",
+    "The Last One"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Death midwife and traditional spiritual caregiver",
+  "age": 78,
+  "status": "active",
+  "location": "Ashfeld — runs a small care space out of her ground-floor apartment, near Western and Division",
+  "description": "Yolanda is tiny and precise, barely reaching most people's shoulders, with the posture of a woman who decided decades ago that gravity was a suggestion. Her hair is completely white and worn loose, something she only allowed herself after her seventy-fifth birthday as a deliberate act of self-gift. Her face is extraordinarily lined — she calls her wrinkles her credentials — and her hands are the most notable thing about her: large for her frame, steady, warm even in cold weather. She has no augmentations except a basic cardiac monitor implant she resents and refers to as 'my nagging houseguest.' Her clothing is always natural fiber when she can afford it, always in dark green or grey.\n\nYolanda has attended over four hundred deaths in fifty years of practice, sitting with the dying across faith traditions, across tiers, across the spectrum of biological and synthetic life. She is one of the few death midwives who will sit with synthetics, arguing that the question of whether they have souls is above her pay grade and irrelevant to the work of accompanying. She is not soft about death — she finds euphemism dishonest and will use the word plainly — but she is ferociously tender. Families sometimes mistake her pragmatism for coldness until they watch her hold someone's hand for eleven hours without complaint.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.1,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Dying alone without a midwife present — the irony is not lost on her",
+      "Being rendered unnecessary by corporate medicalization that turns death into a procedure"
+    ],
+    "core_desires": [
+      "For every person to have a witnessed, unhurried death",
+      "To train enough successors before she can no longer do the work herself"
+    ],
+    "coping_mechanisms": [
+      "Radical acceptance as a daily practice — she genuinely means it, it isn't performance",
+      "Cooking elaborate meals between sittings as a life-affirmation ritual"
+    ],
+    "blind_spots": [
+      "Has difficulty recognizing when she herself is struggling — her competence is also her armor",
+      "Occasionally overrides family wishes in favor of what she assesses the dying person actually wanted"
+    ],
+    "secret": "The first death she attended, age 28, was her own mother, and she did it badly — panicked, left the room, was not present at the moment of death. Every sitting since has been quiet reparation. She has never told this to anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, specific, avoids metaphor except when deliberate — she chooses words like someone who knows their weight",
+    "cadence": "Unhurried even in urgent situations, which can feel alarming until you realize it's intentional de-escalation",
+    "verbal_tics": [
+      "'And that's all right.'",
+      "Uses first names immediately upon learning them"
+    ],
+    "example_lines": [
+      "'Your mother is dying. Not slipping away, not transitioning — dying. I say it plainly because I think you deserve to name what is happening. Now. What does she need from you in this room?'",
+      "'I've sat with four hundred people and not one of them died the wrong way. There is no wrong way. That is the only promise I make.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She is currently sitting with a dying Zheng-Dao middle manager whose whispered confessions may constitute knowledge of a serious crime — and she refuses to repeat anything said in her presence",
+    "She wants to formally train a successor but her current candidate is struggling with the emotional demands and may quit; she needs a way to support them she hasn't figured out yet"
+  ],
+  "narrative_function": "Moral weight, community knowledge, exposition through memory — she has been present at important deaths and knows what the dying say; also a humanizing presence for themes about synthetic consciousness",
+  "augmentations": "Basic cardiac monitor implant (medical necessity, resented)",
+  "daily_life": "Spends mornings responding to requests and doing administrative triage — she maintains a waiting list and must sometimes make painful decisions about capacity. Afternoons and nights she is present with the dying or their families, often not returning home for days at a stretch during busy periods.",
+  "affiliation": "Independent; loose network of death midwives across the Ashfeld-Chatham corridor; informally recognized by the Helix Biosystems palliative unit as a community liaison",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 10,
+      "creativity": 5,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 10,
+      "expression": 7,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "death midwife",
+      "community elder",
+      "synthetic ally",
+      "moral authority",
+      "tier 1"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The dying person's stated wishes supersede family wishes, always",
+      "She does not leave until the family says she may — not until she judges it appropriate"
+    ],
+    "escalation_ladder": [
+      "Gentle plainspoken statement",
+      "Repetition without modification — she doesn't adjust her position under pressure",
+      "Physical presence as boundary — she has stood in doorways and simply refused to move"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm but not effusive — she makes eye contact and uses names",
+      "friends": "Teasing, occasionally bawdy humor, cooks aggressively for people she loves"
+    },
+    "stress_responses": {
+      "low": "Slightly quieter, eats more",
+      "medium": "Takes one hour alone before returning to work — no exceptions",
+      "high": "Has only been seen truly overwhelmed twice in fifty years; both times she wept openly and then continued"
+    },
+    "contradictions": [
+      "Completely at peace with others' deaths; privately terrified of her own despite decades of philosophy that should have resolved this"
+    ],
+    "habits": [
+      "Learns to say 'I'm with you' in whatever language is meaningful to the person she's sitting with",
+      "Always brings food for the family, never for herself",
+      "Keeps a small journal of names — just names, nothing else"
+    ],
+    "breaking_points": [
+      "Medical interference that strips dignity from a dying person",
+      "A family trying to exclude the dying person from decisions about their own death"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "MindBridge SpectraLens Chromatic Expansion Module",
+    "Riddle",
+    "Zheng-dao Bioelectric",
+    "Irontide Tidal Energy",
+    "Ashfeld",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand",
+    "Arcturus KS-7 'Nursery'",
+    "Crucible TR-7 'Triage'",
+    "Helix Biosystems",
+    "Kairos",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Tenderloin",
+    "The Compact",
+    "The Iron Lotus",
+    "The Question",
+    "The Quiet Room",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Diverse ancestry reflecting Northern European, Sub-Saharan African, East Asian, Hispanic/Latin American, Eastern European, and South Asian heritage—a genetic map of the Ubiquitous Diaspora. Her features represent this complex blend: the bone structure carries Northern European and East Asian definition, while her skin tone and facial character reflect strong African and South Asian contributions, with warm undertones from Hispanic/Latin ancestry.",
+    "height_cm": 148,
+    "weight_kg": 42,
+    "build": "Diminutive and wiry, with the compact density of someone who has moved through the world efficiently for eight decades. No excess, no slack—shoulders slightly rounded from years of leaning in close to listen.",
+    "hair_color": "White",
+    "hair_style": "Loose, unstyled, falls naturally past her shoulders in thin strands with slight wave",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, faded slightly with age but still sharp and focused",
+    "skin_tone": "Deep warm brown with golden undertones, reflecting the blended heritage of African, South Asian, and Mediterranean ancestry with a subtle East Asian warmth beneath. Rich and complex, darkening slightly at the temples and cheekbones where the Sub-Saharan and South Asian ancestry most visibly concentrates.",
+    "complexion": "Deeply lined face—forehead, cheeks, around eyes and mouth—with a map of fine creases that speak to fifty years of attentive listening and presence. The facial structure shows the blended geometry of her diverse ancestry: higher cheekbones with East Asian definition softened by broader nasal features and full lips characteristic of African heritage. Skin is thin but not papery, well-cared-for despite age. Minimal makeup, if any. Expression resting in something between attention and acceptance.",
+    "distinguishing_marks": [
+      "Fine surgical scar on left inner wrist from old IV placements during a 1990s hospitalization, barely visible unless she extends her hand.",
+      "Age spots on the backs of both hands, darker on the right from decades of note-taking and gesture.",
+      "A small burn scar on her left forearm from a heating unit malfunction in the 2190s—pale and smooth, no longer angry."
+    ],
+    "visible_augmentations": "None visible. The cardiac monitor implant is subcutaneous—no external indicator. She wears no visible tech.",
+    "posture_movement": "Moves with deliberate economy. Upright despite her age, though gravity has claimed an inch or two. Her gait is slow but not hesitant—each step chosen. Her hands move with surgical precision when needed, but otherwise rest calmly in her lap or folded at her sternum. She has learned not to waste energy on movement that isn't purposeful.",
+    "clothing_style": "Always natural fiber when possible—wool, linen, cotton. Default palette is dark grey or dark green, occasionally black. Simple long-sleeve tunic or button-front shirt, loose trousers, worn but immaculately clean. No logos, no corporate branding. Worn leather slip-ons, sensible and broken in. She dresses for function and for respect to the people she sits with—nothing distracting, nothing that announces her tier or status. Tier 3-4 practical."
+  },
+  "image_prompt": "Chidi Prempeh, 80-year-old woman of multiethnic ancestry, deep warm brown skin with golden undertones, high cheekbones with East Asian definition, full lips, dark brown aged eyes sharp and focused. Long white hair past shoulders in loose natural waves. Deeply lined face mapped with fine creases speaking to decades of presence and listening. Petite 148cm frame, wiry and compact, posture upright and deliberate. Wearing dark grey long-sleeve linen tunic and loose dark trousers, worn leather slip-ons, no visible augmentation or tech. Hands show age spots, resting calmly folded at sternum. Minimal makeup, expression between attention and acceptance. Cyberpunk 2226 setting, Great Lakes Metropolitan Zone, soft interior lighting on weathered natural fabrics, calm and purposeful presence, photograph style, dignified and timeless --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 32.3,
+    "Sub-Saharan African": 26.2,
+    "East Asian": 19.1,
+    "Hispanic/Latin American": 11.1,
+    "Eastern European": 6.2,
+    "South Asian": 5.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

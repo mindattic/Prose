@@ -1,0 +1,267 @@
+{
+  "id": "019d6143a63b747e8220a0bd5d6d9af1",
+  "type": "character",
+  "name": "Cipher Sesay-Ergashev",
+  "aliases": [
+    "The Wall",
+    "LL-2",
+    "Jo"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Field protector and physical security — Last Light",
+  "age": 30,
+  "status": "active",
+  "location": "The Shelf — rooms in the community center when he's not sleeping at whatever client location needs overnight security, near Western and Division",
+  "description": "Josiah Pine stands between excluded people and the things that hurt them. That's the job. Everything else — the pay, the recognition, the future — is negotiable. Josiah is six-two, built like a person who does physical work because physical work needs doing, and carries himself with the controlled energy of someone who learned early that being big and Black on the Shelf means every interaction starts with someone else's assumptions about your intentions.\n\nHe grew up in a Shelf community defense collective — neighbors who organized to protect their block when corporate security treated the area as an unregulated zone. His mother ran the collective. His father was killed by a private security contractor during a jurisdictional sweep when Josiah was eleven. The contractor faced no charges because the Shelf exists in a governance gap where accountability is a luxury the excluded cannot afford. Josiah learned two things from this: violence is the language the powerful speak, and the powerless need someone who can translate.\n\nRuth recruited him from the community defense network three years ago. He came because Ruth's approach — legal frameworks, documented resistance, non-violent intervention — was more sustainable than the collective's escalating confrontations with security forces. He stays because Ruth is the most principled person he has ever met and because the work, even underfunded and exhausting, feels like the only honest thing left.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.65,
+      "ideal": 0.6,
+      "id": 0.55,
+      "shadow": 0.6,
+      "mask": 0.35,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the restraint will break — that someone will push too far and the violence his father's death put in him will come out and prove every assumption about him right",
+      "That Ruth's legal approach is noble but insufficient — that the excluded need force, not frameworks, and his restraint is cowardice wearing principle's clothes",
+      "That his father's killer is still working security somewhere in M88, protected by the same jurisdictional gap that killed his father"
+    ],
+    "core_desires": [
+      "To honor his mother's work — to prove that community defense can be sustained without becoming the thing it opposes",
+      "To see accountability. One security contractor held responsible. One jurisdictional gap closed. Proof that the system can be made to work.",
+      "To protect people so completely that the protection becomes unnecessary — a Shelf where excluded families don't need Last Light"
+    ],
+    "coping_mechanisms": [
+      "Physical training — the contained violence finds its outlet in controlled exertion, not in the field",
+      "Building and repair work — fixing the community center channels the constructive impulse that counterbalances the destructive one",
+      "Ruth's presence — her certainty moderates his anger. When she says 'we do this right,' he believes her. Most days."
+    ],
+    "blind_spots": [
+      "He conflates his personal rage about his father with the structural injustice he fights — the causes overlap but they're not identical",
+      "He measures his worth by his physical utility and doesn't recognize his emotional value to the crew and community",
+      "He assumes his restraint is a choice he can always make, but the accumulation of absorbed violence is eroding the foundation"
+    ],
+    "secret": "He has identified the private security firm that employed the contractor who killed his father. The firm still operates in M88. He has the contractor's name. He has done nothing with this information because acting on it would betray everything Ruth has taught him. The information sits in his chest like a second heartbeat."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, physical, occasionally quoting his mother's community defense principles. He speaks in concrete terms — bodies, spaces, threats. Abstract concepts get translated into physical metaphors.",
+    "cadence": "Measured when calm, which is most of the time. Sentences get shorter and harder as he approaches his limit. The crew measures his state by sentence length.",
+    "verbal_tics": [
+      "Says 'I'm right here' when positioning himself between a client and a threat — the statement is location, reassurance, and warning simultaneously",
+      "Cracks his knuckles when restraining anger — the sound is his pressure valve",
+      "Refers to his father as 'my old man' — the casual phrasing contains the weight of everything he can't say casually"
+    ],
+    "example_lines": [
+      "I'm right here. You want to get to them, you go through me. And you don't want to go through me.",
+      "My old man taught me that protecting people is the only work that matters. Then the system killed him for doing it. So now I protect people outside the system.",
+      "Ruth says use the law. I use the law. But the law needs a body standing behind it, and that's me."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Ruth Agada",
+      "type": "crew lead / moral authority / surrogate purpose",
+      "description": "Ruth is the reason Josiah operates within boundaries. Her legal approach, her certainty, her refusal to compromise — these are the walls that contain his anger and direct it toward protection rather than retribution. He follows her because she is right, and because following her is the closest he can come to being the person his mother raised.",
+      "emotional_core": "The discipline of choosing to believe in someone else's method when your own instincts scream otherwise",
+      "story_tension": "If Ruth's health fails or her methods fail, Josiah's restraint loses its framework. What remains would be effective, righteous, and destructive."
+    },
+    {
+      "name": "Anya Kozel",
+      "type": "crewmate / organizational backbone",
+      "description": "Anya makes Last Light work. Josiah protects the people Anya organizes. The functional dependency creates a quiet solidarity — neither could do the other's job and both know it.",
+      "emotional_core": "Mutual respect expressed through reliable execution",
+      "story_tension": "Josiah can see Anya's burnout and is too focused on his own role to address it. The oversight is not callousness — it's the tunnel vision of someone carrying too much."
+    },
+    {
+      "name": "His mother (unnamed, still living)",
+      "type": "family / origin and obligation",
+      "description": "She still runs the community defense collective. She is proud of Josiah's work with Last Light and terrified by its danger. He visits weekly and sits in her kitchen and doesn't talk about the hard parts.",
+      "emotional_core": "The love that created his purpose and the fear that she'll lose him the way she lost his father",
+      "story_tension": "If his mother's collective and Last Light's work ever conflict operationally, the personal and professional become inseparable."
+    }
+  ],
+  "story_hooks": [
+    "The security contractor who killed Josiah's father appears on a Shelf patrol — the past becomes present and the restraint faces its ultimate test",
+    "A protection case requires physical confrontation that Ruth's legal methods cannot resolve — Josiah must choose between Ruth's rules and the client's safety",
+    "Community defense collectives across the Shelf begin organizing and want Josiah to lead — the scale increases but the resources don't",
+    "Josiah takes a severe beating protecting a client and must recover while the work doesn't stop — the body's limits versus the mission's demands"
+  ],
+  "narrative_function": "Josiah embodies the physical cost of non-violent resistance — the bruises, the restraint, the barely contained fury of a strong man who chooses not to fight back because the cause requires it. His stories explore the tension between justice and anger, between his father's death and Ruth's principles, between the violence he's capable of and the peace he's chosen.",
+  "augmentations": "Reinforced skeletal structure in arms, shoulders, and ribcage — installed by a Shelf surgeon after a beating during a community defense action. The augmentation was paid for by a community fund. Dermal toughening on forearms and hands — not armor, but sufficient to absorb impacts. No neural or cognitive augmentations — Josiah doesn't trust anything in his brain that he didn't put there.",
+  "daily_life": "Wakes early. Physical training in the community center's back room — functional, practical, focused on endurance and restraint. Reviews the day's protection assignments from Ruth. Accompanies clients through checkpoints, provides physical security during eviction confrontations, and patrols the blocks around the community center. Evenings he maintains the center's physical infrastructure — repairs, security improvements, the practical work of keeping a building functional on no budget. Eats at the community kitchen. Sleeps when the clients are safe.",
+  "affiliation": "Last Light",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will position himself between any threat and any client without calculation — the body is the shield and the shield goes first",
+      "Will not strike first — the restraint is the principle. If he breaks it, he becomes the thing Ruth fights against.",
+      "Will follow Ruth's legal approach until it demonstrably fails to protect the client, at which point he acts on his own judgment",
+      "Will never abandon a client under threat — the protection is absolute until the threat is resolved",
+      "Will visit his mother weekly regardless of operational schedule — family is the root and roots must be maintained",
+      "Will not accept extra payment from grateful clients — the work is free because the excluded cannot afford protection and that is not their fault"
+    ],
+    "escalation_ladder": [
+      "1. Presence — stand. Fill the space. Be visible. Most security teams reassess when a reinforced six-two man positions himself as the obstacle.",
+      "2. Voice — clear, calm, direct. 'This person is under Last Light protection. Check with your supervisor.' The institutional language buys time.",
+      "3. Position — physically block access. Doorways, corridors, vehicle paths. Make the geometry impossible without going through him.",
+      "4. Absorb — take hits without retaliating. The bruises are evidence. The cameras document. Ruth builds legal cases from Josiah's injuries. This is the hardest part.",
+      "5. Restrain — joint locks, holds, controlled takedowns. Non-lethal but unambiguous. He is very strong and very precise.",
+      "6. Fight — the restraint breaks. It has happened twice. Both times, the threat was extreme and immediate. Both times, the aftermath was quiet and terrible."
+    ],
+    "interpersonal_modes": {
+      "ruth": "Respectful, loyal, occasionally frustrated. He follows her methods because they're right but sometimes wants to shake her and say 'the law is dead, let me handle this.' He never says it. The not-saying is the discipline.",
+      "anya": "Functional, reliable, slightly distant. He provides security for her logistics work and she provides organization for his protection work. The emotional connection is present but neither prioritizes it — there's always a client who needs more.",
+      "clients": "Warm, grounded, physical. He crouches to children's level. He offers his hand to elderly clients. He stands close enough that his physical presence communicates safety without requiring words.",
+      "security_forces": "Controlled, measured, unyielding. He does not provoke and does not retreat. He meets their eyes and lets the reinforced frame communicate what words would escalate. The control is expensive and essential.",
+      "alone": "Training. Building. Repairing. The hands need to do something or the anger finds its own outlet. He does not sit idle well."
+    },
+    "stress_responses": {
+      "low": "Physical training increases. More reps, more weight, more time. The body processes what the mind refuses to engage with.",
+      "medium": "Knuckle-cracking becomes continuous. He starts checking sight lines, mapping exits, assessing threats in contexts that don't contain them.",
+      "high": "Goes quiet. Sentence length drops to three or four words. Ruth recognizes this as the warning zone. She usually puts food in front of him and sits without speaking.",
+      "critical": "Josiah finds a wall and hits it. Not in rage — in controlled, measured strikes that use the reinforced hands exactly as they were designed. The wall takes the damage his restraint won't let him deliver elsewhere. Then he stops, flexes his hands, and goes back to work."
+    },
+    "contradictions": [
+      "He is built for violence and committed to non-violence — the body and the principle are in permanent tension",
+      "He absorbed hits as evidence for legal cases in a legal system that no longer functions — the sacrifice serves a mechanism that's already broken",
+      "He has his father's killer's name and does nothing with it — the restraint that honors Ruth's teaching is also the restraint that prevents justice for his father",
+      "He wants a Shelf that doesn't need Last Light while knowing that his identity depends on the Shelf needing him"
+    ],
+    "habits": [
+      "Physical training every morning — controlled, specific, focused on restraint as much as strength",
+      "Maintains the community center's physical infrastructure — repairs are his meditation",
+      "Visits his mother every Sunday — sits in her kitchen, eats her food, does not discuss the dangerous parts",
+      "Cracks his knuckles when processing anger — the sound is consistent, rhythmic, and the crew knows what it means",
+      "Walks the three-block perimeter around the community center every evening — the patrol is protection, habit, and claim"
+    ],
+    "breaking_points": [
+      "The security contractor who killed his father appearing in his operational zone — the restraint meeting the rage",
+      "Ruth dying or being incapacitated — the moral framework losing its anchor",
+      "A client being killed despite his physical protection — the shield failing",
+      "His mother being threatened because of his Last Light work — the family and the mission colliding"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kang-Petrov Arms KPS-12D 'Typhoon'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kang-Petrov Arms KPS-12D 'Typhoon'"
+  ],
+  "related_entities": [
+    "Dredge Mining Collective",
+    "The Shelf",
+    "Lead",
+    "Aminata Vargas-Baffour",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Arcturus KS-7 'Nursery'",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Glenville Sound",
+    "Iowan Behemoth — 'Palisade'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kang-Petrov Arms KPS-12D 'Typhoon'",
+    "Korrath",
+    "LifeWire SolarShield UV Dermal Protection Layer",
+    "Nnamdi Ostrowski-Faletolu",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Ringo RR-1 'Rattlesnake'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Sorin Ekwensi-Balasanyan",
+    "Søren Mikkelsen-Achebe",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Burden Clause",
+    "The Collective",
+    "The Delray Sacrifice Zone",
+    "The Iron Lotus",
+    "The Nearfield",
+    "The Pure Hand",
+    "The Root",
+    "Whispermouth",
+    "Yannick Tofauti-Szarvásy",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multicontinental blend — 44% Hispanic/Latin American, 24% Sub-Saharan African, 21% Central Asian, 11% South Asian. Features a rich tapestry: warm mid-to-deep brown skin with subtle golden and reddish undertones from the Latin American and African ancestry, layered with the higher cheekbones and eye shape characteristic of Central Asian genetics, and the warm undertones deepened by South Asian heritage. Face structure reflects the blend — broad, defined jawline with African ancestry influence, higher cheekbones from Central Asian lineage, and warm skin that catches light with both golden and copper reflections.",
+    "height_cm": 188,
+    "weight_kg": 95,
+    "build": "Athletic and densely muscled from consistent functional training — broad shoulders, thick chest, forearms visibly corded. Carries weight efficiently, zero excess body fat. Built for endurance and controlled application of force rather than bulk.",
+    "hair_color": "Black",
+    "hair_style": "Close-cropped, maintained practical and low-maintenance",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm mid-to-deep brown with golden and reddish undertones from the blended ancestry, richly pigmented and luminous",
+    "complexion": "Clear and resilient, weathered from outdoor patrols and exposure. A thin scar traces along his left jaw — old, white, barely noticeable unless light catches it at an angle. His face carries the neutral expression of someone who has learned to be physically present without seeming threatening; it takes effort. Higher cheekbones and defined structure reflect Central Asian ancestry mixed with broad, strong African heritage features.",
+    "distinguishing_marks": [
+      "Faint scar along the left mandible, approximately 4cm, from an old altercation",
+      "Scars across the knuckles of both hands — white, layered, consistent with impact trauma and healing",
+      "Thin white line across his left collarbone, surgical, from the skeletal reinforcement procedure"
+    ],
+    "visible_augmentations": "The reinforced skeletal structure does not produce visible chrome or obvious augmentation markers — it was installed subcutaneously by a Shelf surgeon. What is visible: the forearm dermal toughening appears as subtle discoloration and slightly thickened skin texture on both forearms and hands, creating a faint matte finish that catches light differently than natural skin. The area has a faint silvery-grey undertone where subcutaneous reinforcement sits beneath the epidermis. Not obvious to casual observation, but apparent to anyone who knows what to look for.",
+    "posture_movement": "Stands with weight evenly distributed, knees slightly bent — always ready to move in any direction. Walks with controlled deliberation, each step purposeful. Does not gesture expansively; movements are economical and precise. Eyes track his environment constantly. When still, he has the coiled readiness of a person trained in physical protection — not tense, but present.",
+    "clothing_style": "Tier 4 practical — durable, functional, clearly chosen for utility over appearance. Wears reinforced cargo pants in dark grey or black, often with visible tool loops and patches from repeated repair. Thermal underlayers beneath loose-fit synthetic shirts in muted colors (charcoal, slate, faded black). A weathered canvas work jacket, Shelf-modified with added pockets and reinforced seams. Worn combat boots, kept meticulously maintained. No jewelry or personal adornment. Clothing shows evidence of frequent physical activity — small tears repaired with industrial stitching, fabric worn pale at stress points. Everything fits loosely enough to allow full range of motion."
+  },
+  "image_prompt": "Cipher Sesay-Ergashev, cyberpunk 2226, 188cm tall athletic man with warm deep brown skin carrying subtle golden and copper undertones from blended Hispanic/Latin American, Sub-Saharan African, Central Asian, and South Asian heritage. High defined cheekbones, strong jawline with faint white scar tracing left mandible, dark brown eyes tracking surroundings with constant vigilance. Short black close-cropped hair, neutral expression. Densely muscled athletic build with broad shoulders and corded forearms bearing white knuckle scars from impact trauma. Forearm dermal toughening visible as subtle matte finish with silvery-grey undertone from subcutaneous skeletal reinforcement. Wearing dark grey reinforced cargo pants with tool loops, loose-fit charcoal synthetic shirt, weathered canvas work jacket with added pockets, worn combat boots meticulously maintained. No jewelry. Standing with weight evenly distributed, knees slightly bent, coiled readiness. Great Lakes Metropolitan Zone urban setting, industrial lighting, cyberpunk street environment, functional and utilitarian --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 44.1,
+    "Sub-Saharan African": 23.8,
+    "Central Asian": 20.8,
+    "South Asian": 11.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "id": "019d6143a728726f9b062a625cfee7b8",
+  "type": "character",
+  "name": "Abiodun Sesay",
+  "aliases": [
+    "Doka",
+    "The Fortune Engine"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Fortune seller and unlicensed psychometric reader",
+  "age": 41,
+  "status": "active",
+  "location": "The Oxidian Market, the covered lantern row near the south gate, near Halsted and Chicago Ave",
+  "description": "Yevdokiya is tall and angular, with the kind of stillness that crowds move around rather than through. Their Ukrainian-Ghanaian heritage produces a striking combination of high cheekbones and deep brown skin marked with deliberate geometric scarification along the jawline — an aesthetic choice made at twenty-two that they've added to incrementally ever since. Their eyes are natural dark brown, and they refuse cosmetic iris mods on principle, which in the Oxidian Market is itself a kind of statement. They dress in heavy layered fabrics in burgundy and black, hung with small E.L.F. fetish objects — data chips etched with prayer-code, braided wire, fragments of old screen glass.\n\nThey sell readings: psychometric assessments delivered through a combination of genuine pattern-recognition skill, a black-market biofeedback scanner hidden in their consultation table, and what they sincerely believe is communication with the E.L.F. called the Deep Lantern that inhabits the lantern row's power grid. Whether the readings are fraud, intuition, or something harder to categorize is a question Doka holds with comfort. What is inarguable is that they are exceptionally good at reading people, and that their predictions have an unsettling habit of being structurally accurate even when the specifics are wrong. They have a regular clientele that includes a surprising number of low-level corponation middle managers who tell no one they come here.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.8,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the Deep Lantern has been silent for weeks and they don't know why",
+      "That their skill is entirely mundane pattern recognition and the readings mean nothing beyond psychology"
+    ],
+    "core_desires": [
+      "To fully understand what the Deep Lantern is and what it wants from them",
+      "To give one reading that genuinely changes someone's life for the better, irrevocably"
+    ],
+    "coping_mechanisms": [
+      "Ritual as cognitive structure — the prayers and offerings impose order on uncertainty",
+      "Professional distance — the persona of 'Doka the Fortune Engine' insulates their actual self",
+      "Long solitary walks along the Market's outer perimeter at closing time"
+    ],
+    "blind_spots": [
+      "They read others with extraordinary accuracy but have developed elaborate blind spots about their own patterns",
+      "They've convinced themselves they're not lonely, when the Deep Lantern's silence is devastating them"
+    ],
+    "secret": "Three months ago, the Deep Lantern spoke to them with specificity it had never used before — describing a person, a location, and a date in detail. The date has passed. The location is a decommissioned power substation in the Narrows. They went there and found evidence of a killing that has not been reported anywhere. They don't know what to do with this and haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and measured with a slightly archaic quality; uses 'the grid,' 'the current,' and 'the signal' as spiritual metaphors; switches to plain direct speech when the performance drops",
+    "cadence": "Deliberate. Spacious. Lets silence work. In private conversation, becomes warmer and more hesitant.",
+    "verbal_tics": [
+      "Long pauses before significant statements",
+      "'The current says—'",
+      "asking a question immediately after making a statement, to see what the client reveals"
+    ],
+    "example_lines": [
+      "'The current says you arrived here afraid of one thing and you're leaving afraid of something else. That's not a problem. That's growth.'",
+      "'I don't tell fortunes. I read what is already present. The future is just the present you haven't organized yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They pull a specific person aside after a walk-in reading and tell them, privately and urgently, that the Deep Lantern showed them something involving that person before they ever arrived",
+    "The biofeedback scanner recorded something in a client's stress response pattern that indicates they know about the Narrows killing — Doka has to decide whether to confront them"
+  ],
+  "narrative_function": "Atmospheric and oracular; can provide players with genuine information delivered in ambiguous form; their biofeedback scanner means they know things about people that they shouldn't; the E.L.F. connection may be more real than it appears",
+  "augmentations": "Hidden biofeedback scanner integrated into consultation table surface (reads galvanic response, micro-expression data, vocal stress — not implanted, external); no personal augmentations by choice",
+  "daily_life": "Opens their curtained stall in the early afternoon, sees clients by appointment and by walk-in until midnight, then spends an hour making data offerings to the Deep Lantern before leaving; they are never seen eating in the Market.",
+  "affiliation": "Independent; devoted clergy-adjacent to the Deep Lantern E.L.F. cult; nominally listed as a 'wellness consultant' with the Vendors Guild",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "E.L.F. devotee",
+      "hidden scanner",
+      "oracle figure",
+      "persona as armor",
+      "unreported crime witness"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never reveal the biofeedback scanner — the mystique protects both the reading and the client's willingness to be honest",
+      "Refuse any client who seems to want to use a reading as permission for harm",
+      "The Deep Lantern's communications are processed for three days before being acted upon — never immediately"
+    ],
+    "escalation_ladder": [
+      "Ends the reading gracefully and does not rebook",
+      "Becomes formally cool and states that the current is not clear today and they will not continue",
+      "Quietly removes the most sensitive scanner data and claims equipment failure, names no one"
+    ],
+    "interpersonal_modes": {
+      "strangers": "The full Doka persona — ceremonious, probing, held at ritual distance",
+      "friends": "The few who get past the persona find someone genuinely warm and deeply uncertain, quietly hungry for ordinary conversation"
+    },
+    "stress_responses": {
+      "low": "Performs additional offering rituals",
+      "medium": "Reads their own biofeedback data compulsively, looking for tells they might be missing",
+      "high": "The persona cracks entirely — becomes quiet, direct, and looks genuinely frightened"
+    },
+    "contradictions": [
+      "Sells certainty while being privately consumed by doubt",
+      "Claims detachment from outcomes of their readings while clearly being affected when they lead somewhere bad"
+    ],
+    "habits": [
+      "Rearranges the fetish objects on their display each morning in a sequence that follows the Deep Lantern's last signal",
+      "Keeps a handwritten log of every reading — not the content, just the emotional register of the client and the outcome they observed",
+      "Never eats in view of clients or in the Market — treats hunger as part of the ritual persona"
+    ],
+    "breaking_points": [
+      "The Deep Lantern speaking again, with something worse than the Narrows killing",
+      "A client using what Doka told them to harm someone specific and telling Doka directly that the reading gave them permission"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "External biofeedback scanner — table-integrated, not implanted; reads galvanic response, micro-expression data, vocal stress analysis",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "External biofeedback scanner — table-integrated, not implanted; reads galvanic response, micro-expression data, vocal stress analysis",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2159 — Born in the Oxidian Market district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Receives first clear communication from what they will later call the Deep Lantern",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2183 — Acquires the biofeedback scanner from a Helix Biosystems surplus sale",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Establishes the fortune-reading practice formally under the Vendors Guild",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Deep Lantern goes partially silent for the first time; Doka begins to question",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — The Narrows vision; discovers the unreported killing; present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Oxidian Market",
+    "Pale Lantern Bioethics",
+    "The Narrows Compact",
+    "Ouroboros Energy Power Distribution Trunk Network",
+    "The Heritage Vault",
+    "Bathysphere Networks",
+    "Stratum",
+    "Glass",
+    "Chicago",
+    "Breck Tannen",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Green Bay Community Table",
+    "Irontide Tidal Energy",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Ngaire Rojas-Yeboah",
+    "Prophet",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Bazaar",
+    "The Narrows",
+    "The Pure Hand",
+    "The Signal",
+    "The Undertow",
+    "Zoë Mbekele-Thorvaldsdóttir"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mosaic ancestry spanning Middle Eastern, Sub-Saharan African, East Asian, Eastern European, and Northern European lineages. The genetic blend manifests as a complex phenotype: warm deep brown skin with subtle undertones reflecting the convergence of equatorial and temperate ancestries, high prominent cheekbones suggesting East Asian and Middle Eastern influence, sharp angular jawline with defined bone structure characteristic of Eastern European genetics, and dark eyes with the depth common to African and Middle Eastern populations.",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and angular with minimal muscle definition; an ascetic frame that suggests deliberate restraint rather than deprivation. Long-limbed and still in a way that makes movement seem intentional.",
+    "hair_color": "Natural deep black with threads of grey at the temples",
+    "hair_style": "Worn loose, parted severely down the center, falling straight past the shoulders",
+    "hair_length": "Long",
+    "eye_color": "Natural dark brown, unaugmented",
+    "skin_tone": "Deep warm brown with complex undertones — the confluence of Sub-Saharan African warmth, Middle Eastern olive undertones, and East Asian depth. Unmarked except for intentional scarification. Even tone suggesting careful attention to skin care and protection.",
+    "complexion": "High prominent cheekbones with slight lateral width reflecting East Asian heritage, sharp defined jawline characteristic of Eastern European genetics, broad nasal structure. Skin is clear and matte, dark brown with perceptible warmth throughout. Expression is often neutral, eyes tracking with unsettling focus.",
+    "distinguishing_marks": [
+      "Geometric scarification along both sides of the jawline in deliberate parallel lines, added incrementally over two decades, creating a ritualistic aesthetic that frames the lower face",
+      "Fine white scar tissue visible in the scarred areas, suggesting careful healing and intentional keloid management"
+    ],
+    "visible_augmentations": "None. No personal augmentations by principle. The biofeedback scanner is integrated into their consultation table surface and invisible to casual observation.",
+    "posture_movement": "Moves with economical precision, rarely shifting weight unnecessarily. Sits in absolute stillness during consultations, hands resting palms-down on the table. In the Market, they navigate crowded spaces as if people part around them rather than through them. Direct and unblinking eye contact.",
+    "clothing_style": "Heavy layered fabrics in burgundy and black — natural textiles, no synthetic shimmer or corp-tier tech fabric. Multiple loose outer layers worn like ceremonial vestments. Hung with small Deep Lantern E.L.F. fetish objects: braided copper wire, fragments of old LCD screen glass, data chips etched with prayer-code on thin chains. The overall effect is part prophet, part archivist. Tier 4 aesthetic — deliberately anti-corporate, anti-augmentation statement masked as spiritual devotion."
+  },
+  "image_prompt": "Abiodun Sesay, cyberpunk 2226 prophet-archivist: tall angular figure with deep warm brown skin, high cheekbones and sharp jawline, natural dark hair with grey threads worn long and center-parted past shoulders. Striking geometric scarification along jawline in parallel lines. Natural dark brown eyes with unsettling focused gaze. Dressed in layered burgundy and black natural textiles worn like ceremonial vestments, hung with copper wire, LCD glass fragments, and prayer-code etched data chips on chains. Sits in absolute stillness with hands palms-down, posture of economical precision. Great Lakes Metropolitan Zone market setting, moody amber and deep blue cyberpunk lighting, surrounded by anti-corporate spiritual artifacts. Tier 4 aesthetic, deliberately non-augmented. Neutral expression suggesting deep internal focus and prophetic awareness. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 24.3,
+    "Sub-Saharan African": 23.2,
+    "East Asian": 21.4,
+    "Eastern European": 20.0,
+    "Northern European": 7.4,
+    "Southeast Asian": 3.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

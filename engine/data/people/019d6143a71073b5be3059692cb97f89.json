@@ -1,0 +1,130 @@
+{
+  "id": "019d6143a71073b5be3059692cb97f89",
+  "type": "character",
+  "name": "Arc Magnúsdóttir-Cardenas",
+  "aliases": [
+    "The Warden"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Graycloak commander - Guts militia",
+  "age": 52,
+  "status": "active",
+  "location": "The Underworld - B4-B8, near sub-level access near Dearborn and Jackson",
+  "description": "Vasili commands the Graycloaks. Enormous, unaugmented by choice, carries a salvaged riot shield he has never had to use.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Graycloaks",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Survivor Ethics": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Hispanic/Latin American and Pacific Islander ancestry, creating warm golden-bronze undertones beneath a weathered, sun-darkened complexion. The genetic mix expresses in subtle facial structure: slightly wider cheekbones and eye set from East Asian heritage, balanced with fuller features and warmer skin undertones from Latin American and Pacific Islander ancestry.",
+    "height_cm": 198,
+    "weight_kg": 145,
+    "build": "Massive and lean — a wall of muscle gone slightly soft with age, broad-shouldered and dense. Prison-yard bulk, not gym-built. Forearms thick as fence posts.",
+    "hair_color": "Steel gray with black roots",
+    "hair_style": "Cropped military flat-top, receding at temples",
+    "hair_length": "Short",
+    "eye_color": "Pale gray-blue",
+    "skin_tone": "Golden-bronze with warm undertones, weathered to leather by decades of sun and labor exposure",
+    "complexion": "Deep facial creases around the eyes and mouth. Broad face with moderate cheekbones characteristic of East Asian heritage, softened by fuller lower face from Pacific Islander and Latin American ancestry. Stubble perpetually at 2-day growth. Pores enlarged from decades of grime and sweat in sub-levels.",
+    "distinguishing_marks": [
+      "Faded Cyrillic prison tattoo on left forearm: three stacked lines (sentence marker from pre-Collapse era)",
+      "Burn scar across the back of right hand — white and puckered, shaped like a handprint",
+      "Long thin scar running from left cheekbone to jawline, pale and old",
+      "Knuckle scars across both hands — fighter's hands, bone-white ridges"
+    ],
+    "visible_augmentations": "None visible. Deliberately unaugmented — a statement of power in a chrome-heavy world.",
+    "posture_movement": "Stands with weight balanced, feet shoulder-width apart — ready to move. Moves slowly and deliberately, each motion economical. Doesn't swagger. Presence fills a room without effort.",
+    "clothing_style": "Tier 4 utilitarian. Worn olive drab cargo jacket, patched at elbows and shoulders. Black reinforced trousers with cargo pockets. Steel-toed boots, laced tight. A salvaged riot shield slung across his back — dented, marked with gang tags he refuses to remove. No corpo logos. Wears a faded gray undershirt beneath the jacket, collar always visible and worn soft."
+  },
+  "image_prompt": "Arc Magnúsdóttir-Cardenas, towering 198cm frame of dense muscle and weathered presence, standing in a neon-lit GLMZ sub-level corridor, year 2226. Golden-bronze skin with deep creases, East Asian heritage visible in facial structure, broader cheekbones, gray-blue eyes carrying decades of weight. Military flat-top of steel gray hair with black roots, receding slightly. Faded Cyrillic prison tattoo visible on left forearm, white handprint burn scar on right hand, old pale scar from cheekbone to jaw. Knuckle scars across both hands. Deliberately unaugmented in a chrome-heavy world. Wearing worn olive drab cargo jacket patched at elbows, black reinforced tactical trousers, steel-toed boots. Salvaged dented riot shield slung across back bearing gang tag marks. Faded gray undershirt visible at collar. Posture balanced and economical, presence commanding without swagger. Standing in industrial cyberpunk setting with degraded infrastructure, bioluminescent signage casting warm and cold light, moody and gravitas-heavy atmosphere --ar 2:3 --v 6",
+  "related_entities": [
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "The Pure Hand"
+  ],
+  "genetic_ancestry": {
+    "East Asian": 58.8,
+    "Hispanic/Latin American": 30.5,
+    "Pacific Islander": 10.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

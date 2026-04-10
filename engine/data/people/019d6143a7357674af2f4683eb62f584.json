@@ -1,0 +1,144 @@
+{
+  "id": "019d6143a7357674af2f4683eb62f584",
+  "type": "character",
+  "name": "Briar Chowdhury-Mwangi-Karimi",
+  "aliases": [
+    "Morning Star"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Helix proxy",
+  "age": 33,
+  "status": "active",
+  "location": "The Core, near LaSalle and Madison",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Helix BioSystems",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Helix Biosystems",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "The Pure Hand"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "South Asian (37.9%), Sub-Saharan African (25.0%), Middle Eastern (14.3%), Eastern European (13.0%), Northern European (9.8%). The genetic blend manifests as a rich, complex phenotype: South Asian bone structure and warmth forms the primary foundation, layered with Sub-Saharan African features creating distinctive facial geometry. Middle Eastern heritage adds depth to eye setting and nose bridge definition. Eastern and Northern European ancestry contributes subtle coolness to undertones and lighter eye flecking.",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Lean and angular, with defined musculature from consistent physical conditioning. Long-limbed with a graceful but tense posture that betrays readiness for confrontation.",
+    "hair_color": "Natural black with subtle auburn undertones in direct light",
+    "hair_style": "Pulled back in a tight, high ponytail; precisely maintained with no loose strands",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with faint amber flecking near the iris",
+    "skin_tone": "Rich warm-medium brown with subtle olive-golden undertones, reflecting the blend of South Asian, Sub-Saharan African, and Middle Eastern ancestry. Evenly toned with luminous quality.",
+    "complexion": "Prominent, well-defined cheekbones with strong angular jawline characteristic of South Asian-Sub-Saharan African blend. Nose bridge defined with subtle Middle Eastern influence. Skin is well-maintained but shows signs of stress — minor tension lines around the eyes and mouth. No visible blemishes; meticulous grooming standard. Small scar tissue along the left temple partially obscured by hairline.",
+    "distinguishing_marks": [
+      "Thin, pale surgical scar running 3cm along the left temple hairline, partially hidden by hair when worn down",
+      "Small tattoo on the inside of her right wrist: a stylized helix symbol in silver ink, company-affiliated",
+      "Faint burn scarring on the back of her right shoulder, roughly 5cm diameter, old and well-healed"
+    ],
+    "visible_augmentations": "Right hand shows chrome plating along the knuckles and finger joints, seamlessly integrated with warm medium-brown skin. The augmentation is precise and expensive-looking, suggesting Tier 1 corporate quality. Otherwise, augmentations are not visibly apparent—likely subcutaneous neural interfaces or internal modifications.",
+    "posture_movement": "Moves with controlled efficiency, economical gestures. Rarely relaxes completely; shoulders held slightly forward. Makes deliberate eye contact. Walks with measured pace, feet landing heel-first. Hands often rest in lap or clasped at waist when seated. Exudes controlled tension rather than relaxation.",
+    "clothing_style": "Corporate-adjacent minimalism. Favors tailored, high-end fabrics in blacks, grays, and muted blues. Typically wears fitted tactical trousers with discrete thigh pockets, fitted long-sleeved compression shirts, and lightweight polymer jackets with hidden hardware loops. Expensive, unremarkable sneakers for mobility. Minimal jewelry aside from her wrist tattoo. Tier 1-2 aesthetic—professional, expensive, deliberately understated to avoid drawing attention in corporate spaces."
+  },
+  "image_prompt": "Briar Chowdhury-Mwangi-Karimi, cyberpunk 2226, woman of mixed South Asian, Sub-Saharan African, Middle Eastern and European heritage with rich warm-medium brown skin, deep brown eyes with amber flecking, sharp angular cheekbones and defined jawline, natural black hair with auburn highlights pulled into tight high ponytail. Chrome-plated augmented right hand with silver wrist tattoo helix symbol. Wearing tailored black tactical trousers, fitted gray compression long-sleeve shirt, lightweight dark polymer jacket, expensive minimalist sneakers. Controlled posture with shoulders slightly forward, deliberate eye contact, tense readiness evident in stance. Corporate Tier 1-2 aesthetic, professionally understated. Cool neon-tinged lighting in Great Lakes Metropolitan Zone setting, sharp focus, professional corporate infiltration mood, cinematic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 37.9,
+    "Sub-Saharan African": 25.0,
+    "Middle Eastern": 14.3,
+    "Eastern European": 13.0,
+    "Northern European": 9.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

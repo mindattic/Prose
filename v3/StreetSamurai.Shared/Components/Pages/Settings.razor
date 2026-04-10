@@ -712,7 +712,7 @@
         try
         {
             var pipelineDir = Path.Combine(Paths.DataRoot, "v3", "python");
-            var scriptPath = Path.Combine(pipelineDir, "run_pipeline.py");
+            var scriptPath = Path.Combine(pipelineDir, "run_fact_pipeline.py");
 
             if (!File.Exists(scriptPath))
             {
@@ -752,7 +752,7 @@
         try
         {
             var pipelineDir = Path.Combine(Paths.DataRoot, "v3", "python");
-            var scriptPath = Path.Combine(pipelineDir, "describe.py");
+            var scriptPath = Path.Combine(pipelineDir, "generate_descriptions.py");
 
             if (!File.Exists(scriptPath))
             {

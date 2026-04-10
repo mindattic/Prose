@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a70a797789691585dfcb4ac1",
+  "type": "character",
+  "name": "Ember Odinga",
+  "aliases": [
+    "Tãm",
+    "Ghostlight"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Holographic street artist and illegal installation designer",
+  "age": 22,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, sleeping in rotating crash spots, near Michigan Ave and Walton",
+  "description": "Tãmzin is wiry and perpetually in motion, the kind of person who sits cross-legged on surfaces not designed for sitting and who always seems to be angled slightly toward an exit. Their skin is a warm medium brown, decorated with hand-applied luminescent tattoos — not geneware, but UV-reactive ink applied in sessions they traded for or self-administered — that map constellations native to parts of the sky no longer visible through GLMZ's light pollution. Cat ears in matte grey sit atop their head, a cosmetic mod they got at sixteen and have never regretted; they tend to press flat when Tãmzin is anxious. Their eyes are patterned with a radial fracture iris mod, deep amber cracked through with lines of pale gold, and they cycle through four colors of hair via a basic follicle-mod — currently a washed-out rust that fades to near-white at the tips.\n\nTãmzin's installations appear overnight on surfaces they have no permission to use: the underside of Ferrogate overpasses, the water-stained ceilings of underpasses in Highland Park, the blank flanks of corporate logistics buildings along the Blackpipe Corridor. The projectors are small, disguised, solar-trickle powered, and booby-trapped with data-noise payloads that corrupt the first attempt at a clean scan. The content is always the same thematic territory — the lake before the city, the people who lived where the towers now stand, animals that no longer exist — rendered in holographic depth that catches passersby off-guard at night. Tãmzin has been detained three times and released twice; the third detention record is sealed, which Tãmzin will not explain.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being disappeared quietly — detained without record",
+      "Their work being co-opted and sold as aesthetic rather than argument"
+    ],
+    "core_desires": [
+      "For someone to stop in front of an installation and stay for an hour",
+      "To belong somewhere without having to explain themselves"
+    ],
+    "coping_mechanisms": [
+      "Hyperactive forward motion — planning the next installation before the current one is complete",
+      "Collecting small objects from the locations they install in"
+    ],
+    "blind_spots": [
+      "Conflates visibility with safety; believes that being seen is protection, which is not always true",
+      "Underestimates the danger of the sealed detention record"
+    ],
+    "secret": "The third detention was not for the installations — they witnessed a Tessera security operative disposing of a body in the Blackpipe Corridor and were held to ensure their silence. They agreed. They haven't installed anything in that district since, which they frame as artistic choice."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, associative, skips steps in their reasoning and expects you to keep up; technical when discussing projector hardware; raw and plainspoken when something actually matters to them",
+    "cadence": "Quick bursts punctuated by sudden stillness when something catches their attention",
+    "verbal_tics": [
+      "'—right?' (seeking confirmation, not really pausing for it)",
+      "'No, wait, listen—' (course-correcting mid-thought)"
+    ],
+    "example_lines": [
+      "'The overpasses are screens. They've always been screens. I'm just the one putting something worth watching on them.'",
+      "'I'm not illegal. The city is illegal. I'm just noticing that out loud with light.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of Tãmzin's installations in the Blackpipe Corridor has inadvertently gone up on a wall that conceals something someone does not want visible",
+    "A curator from a Palladian-sponsored arts initiative is hunting Tãmzin down to offer a legitimate contract, and Tãmzin can't decide if this is an opportunity or a threat"
+  ],
+  "narrative_function": "Local color representing the city's resistant creative underground; can provide access to unsanctioned spaces and hidden locations; their installations sometimes capture imagery relevant to plot events; source of information on enforcement patterns and surveillance gaps.",
+  "augmentations": "Cosmetic cat ears (matte grey, geneware); patterned fracture iris mod (amber/gold); follicle color-cycle mod; UV-reactive luminescent tattoos (non-geneware, manually applied)",
+  "daily_life": "Sleeps until noon when possible, spends afternoons scavenging components and scouting locations, works from midnight to four or five installing projectors or maintaining existing ones; eats irregularly and badly.",
+  "affiliation": "No formal affiliation; loosely tolerated by the Highland Park Autonomous Zone community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 10,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-artist",
+      "holographics",
+      "fugitive-aesthetic",
+      "fast",
+      "haunted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never install anything that could be used to identify or harm a specific individual",
+      "Always leave the projector retrievable — they do not litter, they scatter seeds"
+    ],
+    "escalation_ladder": [
+      "Deflect with humor",
+      "Physical evasion — they are very fast",
+      "Data-noise deploy from a pocket device to disrupt surveillance",
+      "Disappear into a network of crash spots"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly and slightly performative, reads them fast and adjusts",
+      "friends": "Intensely loyal in chaotic ways — shows up with components you needed, forgets to show up to plans they made"
+    },
+    "stress_responses": {
+      "low": "Talks faster, ideas pile up",
+      "medium": "Goes very quiet and still, which is alarming to anyone who knows them",
+      "high": "Disappears for days, returns with a new installation and no explanation"
+    },
+    "contradictions": [
+      "Wants to be seen — profoundly, personally seen — but structurally avoids any situation where that could happen"
+    ],
+    "habits": [
+      "Carries a small object from each installation site in their jacket pocket",
+      "Traces the luminescent tattoo constellations on their forearms when anxious"
+    ],
+    "breaking_points": [
+      "Discovering their work is being used by a corponation as an 'authentic urban aesthetic' in an advertisement",
+      "Someone being hurt because of a location they chose"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Tessera Personal Defense System TPDS-1 'Reflex'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Tessera Personal Defense System TPDS-1 'Reflex'"
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Blackpipe Corridor",
+    "GLMZ",
+    "Ferrogate Transit",
+    "Neurochemical Dispersal Grenade",
+    "Palladian Construction",
+    "Flicker",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Gold",
+    "Rust",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Auricula Felis Modification",
+    "Axonal Stretch Resonance Lance",
+    "Aïssé Dragomirescu-Faalelei",
+    "Breck Tannen",
+    "Ihaia Nystrom-Keita",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Tabula",
+    "Tessera Corponation",
+    "Tessera Personal Defense System TPDS-1 'Reflex'",
+    "The Pure Hand",
+    "The Undertow"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Southeast Asian dominant (34.4%) with significant Sub-Saharan African (30.7%), Hispanic/Latin American (14.9%), Eastern European (11.4%), and North African (8.6%) ancestry—a complex diaspora blend creating warm bronze-brown undertones with subtle golden and olive facets",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Wiry and angular, all elbows and sharp shoulders; built for moving through tight spaces and climbing. Muscle definition comes from constant motion rather than intentional training.",
+    "hair_color": "Rust with white-blonde tips, cycled via follicle mod",
+    "hair_style": "Shoulder-length, usually unstyled and slightly matted; often pulled back with whatever's available",
+    "hair_length": "Medium",
+    "eye_color": "Deep amber with pale gold radial fracture pattern (iris mod)",
+    "skin_tone": "Warm bronze-brown with golden and subtle olive undertones, reflecting the Southeast Asian-African-Hispanic blend; medium depth with warm luminosity",
+    "complexion": "Angular face with high, prominent cheekbones typical of Southeast Asian-African heritage; skin shows signs of irregular sleep and poor nutrition—slight darkness under eyes, a few healing scratches from installation work. The underlying bone structure is defined by mixed ancestry: slightly wider facial width from African heritage, subtle epicanthal character from Southeast Asian ancestry, refined by Hispanic and Eastern European admixture. No significant acne or blemishing, but weathered by sun exposure and inconsistent skincare.",
+    "distinguishing_marks": [
+      "UV-reactive luminescent constellation tattoos across both shoulders and upper back, mapping extinct star patterns, visible only under UV light in faint cyan and violet",
+      "Faint scar on left inner wrist from self-administered geneware cosmetic procedure at age 16",
+      "Shallow burn mark on right forearm (2cm, pale) from projector component contact during installation",
+      "Small tattoo on inside of left ankle—a simple circular symbol, hand-poked style, barely darker than the surrounding skin"
+    ],
+    "visible_augmentations": "Matte grey cosmetic cat ears mounted via geneware integration at the temporal region, capable of flattening against skull when anxious; patterned iris modification visible in direct light (fractured amber/gold); cycled follicle color mod (current rust-to-white). Luminescent tattoos invisible in standard light.",
+    "posture_movement": "Restless and angled—sits cross-legged or perched on edges, rarely fully relaxed. Moves with efficient economy; capable of sudden speed and precision. Eyes constantly assess surroundings, especially exits and sightlines. Hands fidget with components or tools even when at rest. Cat ears twitch reactively with mood shifts.",
+    "clothing_style": "Tier 4-5 salvage aesthetic. Worn 5-panel cap (black, faded logo unidentifiable), oversized black military-surplus jacket with welded patches and tool loops, fitted grey thermal undershirt with burn holes. Cargo pants with reinforced knees and multiple pockets, cuffed at ankles over worn synthetic ankle boots with grip soles. Webbing belt rigged with component pouches and a small multi-tool. No jewelry except a loose beaded bracelet (salvaged). Clothing is functional, layered, and designed for climbing and rapid movement—not for style, though the aesthetic reads intentional."
+  },
+  "image_prompt": "Ember Odinga, 2226 cyberpunk gutter hacker, 168cm wiry frame with angular shoulders. Warm bronze-brown skin with golden undertones reflecting Southeast Asian-African-Hispanic heritage, high defined cheekbones, deep amber fractured-gold iris mods. Matte grey geneware cat ears atop temples (slightly flattened), rust-colored hair with white-blonde tips shoulder-length and matted, worn black 5-panel cap. Dark military-surplus jacket with welded patches and tool loops over grey thermal undershirt with burn holes, cargo pants with reinforced knees cuffed at worn synthetic boots. Webbing belt with component pouches, loose beaded salvage bracelet. UV-reactive cyan-violet constellation tattoos faintly visible on shoulders under harsh industrial lighting. Restless posture perched on edge, hands fidgeting with tech components, cat ears twitching with focus. Urban salvage workshop setting, neon and sodium-vapor lighting casting sharp shadows, rain-slicked metal surfaces, scattered geneware parts. Weathered skin, dark under-eye shadows, slight installation scratches visible. Efficient, predatory readiness in stance and eye contact. Cyberpunk 2200s aesthetic, gritty and augmented. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 34.4,
+    "Sub-Saharan African": 30.7,
+    "Hispanic/Latin American": 14.9,
+    "Eastern European": 11.4,
+    "North African": 8.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

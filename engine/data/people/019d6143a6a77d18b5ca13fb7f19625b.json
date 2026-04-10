@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6a77d18b5ca13fb7f19625b",
+  "type": "character",
+  "name": "Idris Dalgaard-Hernández",
+  "aliases": [
+    "Dr. Rad",
+    "the Quiet Surgeon"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Trauma surgeon at Aurochs Medical Complex, Tier 3 OR suite, with a secondary specialization in blast and crush injuries",
+  "age": 51,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Trauma Surgery Division, Floors 14-17",
+  "description": "Radovan is tall and heavy-shouldered, built like someone who used to be athletic and is now simply solid, with dark brown skin and a close-cropped greying beard he keeps meticulously trimmed. His face is the kind that has settled into its expressions — the default is neutral but not cold, the sort of neutral that comes from having looked at catastrophic injury long enough that it no longer reads as horror but simply as problem. He moves through the hospital with a particular gravity: people step out of his way not because he demands it but because something in his bearing makes them. His surgical scrubs are always immaculate going in and catastrophically otherwise coming out, and he seems unbothered by either state.\n\nHe has been at Aurochs for nineteen years, which means he has watched two generations of hospital administration cycles, four ownership transitions, and three different eras of augmentation injury — from the early years when the implants were new and failing unpredictably, to now, when the injuries are more complex but the tech more understood. He does not speak about his personal life at work and does not socialize at hospital events. What colleagues know: he is twice divorced, has a son who works freight at Ferrogate Transit and doesn't call, and keeps a personal shrine to a Samoan navigation E.L.F. in his office that he will neither explain nor apologize for. What they don't know is more interesting.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.2,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the detachment he's developed is no longer a professional tool but has replaced him entirely",
+      "That his son's silence is a verdict"
+    ],
+    "core_desires": [
+      "To do the work well for as long as his hands hold out",
+      "To be known by someone — not professionally, but as a person"
+    ],
+    "coping_mechanisms": [
+      "Extreme compartmentalization — the hospital is one world, everything else is another, and they do not touch",
+      "The navigation E.L.F. shrine — he believes in nothing formally but finds the ritual of offering useful",
+      "Physical activity, specifically swimming in the Complex's staff pool at midnight when no one else is there"
+    ],
+    "blind_spots": [
+      "His emotional unavailability reads to him as professional discipline; he genuinely cannot see how it functions interpersonally",
+      "Assumes institutional loyalty is the correct way to demonstrate integrity; doesn't see how much the institution has changed around him"
+    ],
+    "secret": "He has been performing pro-bono, off-record surgeries for Highland Park Autonomous Zone residents once a month, using hospital supplies he accounts for as waste. He has done this for six years. Three colleagues suspect. None have reported him, partly out of respect and partly because they believe they would do the same."
+  },
+  "speech_patterns": {
+    "vocabulary": "Spare and clinical at work, surprisingly warm in private moments; uses full sentences always, hates contractions in formal contexts",
+    "cadence": "Slow and deliberate, long pauses between statements that are not uncertainty but conclusion",
+    "verbal_tics": [
+      "Phrases things as observations rather than opinions: 'It appears that—' rather than 'I think—'",
+      "Says 'Yes' with a slight delay when he means it fully"
+    ],
+    "example_lines": [
+      "'The injury pattern is consistent with a Ferrogate press assembly. Someone should look into that.'",
+      "'It appears that your concern is not medical. You should sit down. That is not a clinical recommendation.'",
+      "'I do not discuss the shrine. It is there. It functions.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient arrives with injuries that Radovan recognizes as evidence of something systematic — a corporate workplace hazard being covered up — and he's starting to document it quietly",
+    "His son calls for the first time in two years, needing medical help he can't get through official channels, and Radovan must decide how to help him without compromising the hospital work"
+  ],
+  "narrative_function": "High-tier medical contact, potential source of off-record trauma care, character who can identify injuries and what caused them; his consulting work with Highland Park creates a tension that could draw him into narratives",
+  "augmentations": "Surgical-grade haptic implants both hands (Helix Biosystems top-tier, hospital-subsidized); titanium-reinforced lumbar spine (occupational injury, age 43); optical zoom implants (bilateral, surgical precision enhancement); no cosmetic mods",
+  "daily_life": "Takes the same tram at 05:40 every morning, arrives before the OR opens, reviews overnight cases; performs four to seven surgeries on a typical shift; eats in his office alone; leaves after dictating surgical notes in person rather than using voice-to-text software because he doesn't trust it.",
+  "affiliation": "Aurochs Medical Complex (senior staff, employed); quiet consulting arrangement with the Highland Park Autonomous Zone medical committee",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Veteran Surgeon",
+      "Institutional Insider",
+      "Covert Idealist",
+      "Emotional Fortress",
+      "Technical Authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Treat the patient in front of you; politics happens after",
+      "Document everything, even what you're not supposed to document",
+      "Do not use a patient's situation as leverage — ever"
+    ],
+    "escalation_ladder": [
+      "Quiet non-compliance — does not confront, simply does not cooperate",
+      "Formal objection filed through official channels with precise language",
+      "Disappears from a situation entirely — leaves the building, leaves the conversation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally polite, gives nothing away, assesses; warms almost imperceptibly if they are in distress",
+      "friends": "There are very few of these; they receive a version of him that is still quiet but occasionally, startlingly, funny"
+    },
+    "stress_responses": {
+      "low": "Becomes more deliberate and precise — movements slow, language clarifies",
+      "medium": "Enters a state his residents call 'the zone' — he is unreachable emotionally but extremely effective",
+      "high": "Leaves. Goes to the pool. Does not explain."
+    },
+    "contradictions": [
+      "Claims to have no spiritual beliefs but maintains an E.L.F. shrine with the same care he gives his instruments"
+    ],
+    "habits": [
+      "Checks every instrument tray himself before any surgery regardless of who prepped it",
+      "Swims exactly forty laps at midnight, no more, no less",
+      "Writes his surgical notes in longhand before transcribing — the act of writing helps him think"
+    ],
+    "breaking_points": [
+      "Being ordered to falsify a cause of injury",
+      "Someone threatening a patient in his OR"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Haptic surgical implants — both hands, Helix Biosystems MedPro Elite series",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic surgical implants — both hands, Helix Biosystems MedPro Elite series",
+      "replaces": ""
+    },
+    {
+      "name": "Titanium lumbar spine reinforcement — L3-S1, occupational injury repair",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Titanium lumbar spine reinforcement — L3-S1, occupational injury repair",
+      "replaces": ""
+    },
+    {
+      "name": "Bilateral optical zoom implants — surgical precision enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bilateral optical zoom implants — surgical precision enhancement",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Carrion Defense Works Ricochet Pistol RCH-1 'Billiard'",
+    "Ossic Resonance Baton ORB-3 'Earbreaker'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Carrion Defense Works Ricochet Pistol RCH-1 'Billiard'"
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Ferrogate Transit",
+    "Flicker",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Chimera-Null",
+    "Slagworks Industrial",
+    "Arcturus ST-4 'Verdict'",
+    "Breck Tannen",
+    "Carrion Defense Works",
+    "Carrion Defense Works Ricochet Pistol RCH-1 'Billiard'",
+    "Fanta Popov-Adjei",
+    "Free Assembly",
+    "Helix Biosystems",
+    "Highland Park Autonomous Zone",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "MERIDIAN",
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Mika Sorel",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossic Resonance Baton ORB-3 'Earbreaker'",
+    "Patient Zero",
+    "Praevex",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Pure Hand",
+    "The Resonance Communion",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mixed ancestry: Northern European (43%), Hispanic/Latin American (36%), Southeast Asian (14%), Sub-Saharan African (7%). Reflects Ubiquitous Diaspora heritage with blended phenotype—Scandinavian bone structure and light undertones balanced by warmer Latin American and Southeast Asian features, with subtle Sub-Saharan undertones in skin depth.",
+    "height_cm": 188,
+    "weight_kg": 102,
+    "build": "Heavy-shouldered and solid, the residual athleticism of a younger man settled into functional mass. Wide chest, thick neck, forearms that still carry definition despite age. No fat softness—compact density from decades of standing in ORs.",
+    "hair_color": "Dark brown with grey at temples and throughout the beard",
+    "hair_style": "Close-cropped on sides, slightly longer on top, kept precisely neat",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint silver augmentation luminescence visible under surgical lighting",
+    "skin_tone": "Medium-deep warm brown—a harmonious blend of Nordic and Latin American undertones with Southeast Asian warmth and Sub-Saharan depth. Weathered and clear, showing the patina of surgical precision rather than age.",
+    "complexion": "Weathered but well-maintained. Deep lines around the eyes and mouth from years of surgical concentration and emotional containment. Meticulously groomed—the beard is trimmed to exact specifications, no stubble. Skin shows minor scarring on knuckles (occupational), no visible lesions or blemishes. The default expression is neutral bordering on severe; the face reads as someone who has catalogued every variation of human trauma and filed them away.",
+    "distinguishing_marks": [
+      "Thin surgical scar along the right temple from a retracted scalp incision during his own lumbar surgery, barely visible but present in certain light",
+      "Faint white marks on both palms where haptic implants interface with the skin surface—only noticeable if you know to look",
+      "Small tattoo on the inside of his left wrist: a traditional Samoan star pattern (tatau-style, three points), done decades ago in a style he has never explained"
+    ],
+    "visible_augmentations": "Bilateral optical implants visible as faint silvery-grey rings around the iris under bright light; minute servo micromovements visible when he focuses on small objects. Hands show no external augmentation scarring due to surgical-grade implant integration—the haptics are subcutaneous, but the precision and speed of his hand movements mark them as augmented to anyone watching him work. Occasionally a faint electromagnetic hum from the lumbar spine implants under his shirt during diagnostic scans, but otherwise invisible.",
+    "posture_movement": "Moves with deliberate economy—no wasted motion. Walks slowly through corridors despite his height, as if carrying weight that has nothing to do with body mass. In the OR, he becomes motionless except for his hands and eyes; all concentration funnels downward. Stands with his shoulders slightly forward, spine reinforced by titanium, hands always at rest position—palms down, fingers slightly curved as if on the edge of a surgical field.",
+    "clothing_style": "Surgical scrubs in the hospital (navy blue, Aurochs-issue, worn soft from washing), always immaculate before surgeries despite the catastrophic state after. Outside the hospital (rare observation): plain charcoal or dark grey clothing, well-fitted but anonymous—no logos, no affectation. A single silver chain around his neck under his shirt (never visible but known to exist). Work boots rather than sneakers, practical and unremarkable. Tier 3 functional style: clothes that serve purpose, purchased for durability, replaced when worn rather than for novelty."
+  },
+  "image_prompt": "Idris Dalgaard-Hernández, tall mixed-heritage surgeon in his 60s with warm medium-brown skin blending Nordic and Latin American features, dark grey eyes with subtle silver augmentation rings visible in clinical light. Close-cropped dark hair greying at temples, neatly trimmed beard. Heavy-shouldered 188cm frame with surgical precision in posture, hands positioned with implant-enhanced control. Wearing navy surgical scrubs or charcoal functional clothing, minimal jewelry except silver chain beneath shirt. Standing in a 2226 cyberpunk hospital corridor with cool blue surgical lighting, faint electromagnetic aura near spine. Expression neutral and severe, cataloguing trauma with surgical detachment. Cyberpunk 2200s medical facility aesthetic, high-tech but worn practical. Mood: controlled, exhausted, professionally distant. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 42.9,
+    "Hispanic/Latin American": 36.3,
+    "Southeast Asian": 14.3,
+    "Sub-Saharan African": 6.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

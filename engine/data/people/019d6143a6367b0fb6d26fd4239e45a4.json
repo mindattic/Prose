@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a6367b0fb6d26fd4239e45a4",
+  "type": "character",
+  "name": "Thandiwe Makwa-Magnúsdóttir",
+  "aliases": [
+    "Isa",
+    "The Correspondent"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Investigative journalist and whistleblower handler operating out of Mexicantown Libre",
+  "age": 38,
+  "status": "active",
+  "location": "Mexicantown Libre, GLMZ, near Pulaski and Chicago Ave",
+  "description": "Isadora has the kind of face that is easy to remember individually and hard to place in a crowd — broad nose, angular cheekbones, warm coppery-brown skin, and dark eyes that are always, always taking notes. She keeps her thick dark hair pulled back tightly and wears it down only when she is trying to go unnoticed, which is an inversion most people would not anticipate. She has a faint artificial shimmer to the skin of her forearms — a residual effect of a cheap bioluminescence mod she had installed and removed years ago, leaving this iridescent ghost behind.\n\nIsadora spent seven years at a mid-tier Zheng-Dao affiliated media outlet before she published a piece they hadn't approved and found herself without a desk, a salary, or a press credential. Now she freelances for a network of independent outlets under three different bylines and runs an encrypted communication service that connects corporate whistleblowers with journalists, lawyers, and occasionally mutual aid networks depending on what is needed. She is funny and genuinely charming at parties, which is a professional tool she is not always comfortable with. She keeps a running list of every piece that has been killed, delayed, or changed without her consent — it is very long, and she re-reads it when she needs to remember why she is doing this.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.75,
+      "id": 0.6,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Getting a source killed or imprisoned",
+      "Publishing something wrong — not just inaccurate but genuinely unjust, used against an innocent person"
+    ],
+    "core_desires": [
+      "A story so thoroughly documented that it is legally and institutionally unassailable",
+      "To stop having to be charming for access and just be trusted for her work"
+    ],
+    "coping_mechanisms": [
+      "Compartmentalization — separates 'Isadora the professional' from feelings about what she witnesses",
+      "The running list of killed stories, which functions as both wound and motivation"
+    ],
+    "blind_spots": [
+      "Tends to view everyone in her orbit as a potential source, which strains actual friendships",
+      "Her charm and social fluency make people underestimate how calculating she is being in any given conversation — including people who should know better, including herself"
+    ],
+    "secret": "One of her whistleblowers, a mid-level Axiom logistics manager, gave her information that she verified and prepared to publish — and then received a credible threat against her younger brother in the Kamm's Landing district. She sat on the story for six weeks. The whistleblower, who had no idea why publication was delayed, was eventually identified internally and quietly disappeared into a Axiom HR 'reassignment.' She does not know what happened to them. She has published the story since, under a byline that was not her primary one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fluid and adaptable — can match register to almost any conversation partner. Her own voice, unperformed, is dry and direct and occasionally brutal.",
+    "cadence": "Variable. Slows way down when asking important questions. Can maintain a comfortable, unhurried social pace for hours.",
+    "verbal_tics": [
+      "Repeats the last few words of something someone said back to them as a question, very gently",
+      "Says 'Help me understand—' instead of 'I disagree'"
+    ],
+    "example_lines": [
+      "'Help me understand what Ferrogate's compliance office thought they were doing when they filed those environmental exemptions. I'm sure there's a very reasonable explanation. I would love to hear it on record.'",
+      "'I've been called a muckraker twice this week. I'm starting to think it's a compliment they're too angry to mean as one.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The disappeared Axiom whistleblower contacts her through her encrypted drop — they are alive, in a private Axiom 'wellness facility,' and want out, but extraction requires information she would have to obtain illegally.",
+    "She has documentation of an event that directly involves someone a player character cares about — and she is deciding whether to publish, and what she needs before she does."
+  ],
+  "narrative_function": "Information broker, source of corporate intelligence, quest giver whose assignments carry ethical weight, character who can pull threads from multiple storylines together.",
+  "augmentations": "Residual bioluminescent shimmer on forearms (cosmetic artifact from removed mod). High-quality optical implant — this one she saved for, bought new, no lag — which records continuous video and stores sixty hours of encrypted footage locally before auto-purging. A subvocal microphone implant for discrete recording.",
+  "daily_life": "Attends three to four public events or meetings weekly as 'background research,' spends mornings managing the encrypted whistleblower drop system, afternoons writing, evenings at the Libre's community social spaces maintaining the relationships that are the actual infrastructure of her work.",
+  "affiliation": "Independent (three active bylines); informal network of whistleblower contacts across Axiom, Zheng-Dao, and Ferrogate Transit; working relationship with Reuben Osei-Mukherjee-Żak (shares sources occasionally)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Investigative Journalist",
+      "Whistleblower Handler",
+      "Social Chameleon",
+      "Guilt-Driven",
+      "Dead Man's Switch Prepped"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Verify everything with at least two independent sources before publication",
+      "Never reveal a source's identity — this is absolute, including after publication, including under legal pressure"
+    ],
+    "escalation_ladder": [
+      "Quiet information gathering and relationship building",
+      "Formal records requests and public information filings",
+      "Publication with full documentation",
+      "If publication is suppressed — distribution through underground networks and Frequency-type press",
+      "If personally threatened — dead-man's-switch data release pre-arranged with trusted contacts"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and curious and excellent at making people feel interesting. The curiosity is real even when the warmth is strategic.",
+      "friends": "Loyal and more honest than comfortable. Will tell you something you don't want to hear. Bad at small talk with people she actually trusts."
+    },
+    "stress_responses": {
+      "low": "Throws herself into the next story",
+      "medium": "Becomes very controlled and performance-level charming with everyone, which is its own warning sign to people who know her",
+      "high": "Stops eating, stops sleeping, and writes — compulsively, not publishably, just to get the shape of something down"
+    },
+    "contradictions": [
+      "Committed to transparency as a civic good and routinely operates through strategic concealment and persona management"
+    ],
+    "habits": [
+      "Keeps three physical notebooks with identical covers, labeled with a personal code system",
+      "Has a ritual of leaving a micro-data offering at Mexicantown Libre's E.L.F. shrine — always a corrupted file, always a story that was killed — 'for safekeeping'"
+    ],
+    "breaking_points": [
+      "If she becomes certain that sitting on a story has directly resulted in someone being harmed, she will publish immediately, without her usual verification rigor, and deal with the consequences afterward — this is the version of her that scares her"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7,
+    "Networker": 0.7,
+    "Face": 0.6,
+    "Diplomat": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "GLMZ",
+    "Zheng-dao Bioelectric",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Arcturus CK-5 'Bloodhound'",
+    "Chicago",
+    "Alper Inoue-Aidoo",
+    "Bioacoustic Communication Membrane",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Emeka Johansson-Orozco",
+    "Ezio Kaboré-Malhotra",
+    "Ferrogate Transit",
+    "Folake Borg-Darko",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Kamm's Landing",
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "MERIDIAN",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Quilt",
+    "Reuben Osei-Mukherjee-Żak",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Réginald Asomaning-Čabarkapa",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (47.9%), Northern European (23.4%), Indigenous American (15.7%), East Asian (13.0%) — a striking pan-diaspora blend resulting in warm, deep brown skin with subtle golden undertones, slightly angular facial structure with high, prominent cheekbones, and a nose with gentle flare that bridges African and Indigenous American ancestry.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and wiry with subtle musculature; carries herself with the economical movement of someone who has learned to be unobtrusive. Long-limbed, narrow shoulders.",
+    "hair_color": "Natural dark brown, nearly black",
+    "hair_style": "Typically pulled back in a tight, functional bun or braid; worn down only as deliberate camouflage",
+    "hair_length": "Long (to mid-back when loose)",
+    "eye_color": "Dark brown with warm undertone, slightly almond-shaped from East Asian ancestry blend",
+    "skin_tone": "Deep warm brown with golden undertones, luminous in certain light — the result of Sub-Saharan African (47.9%) as dominant with Northern European (23.4%) creating subtle warmth rather than pallor, and Indigenous American (15.7%) and East Asian (13.0%) contributing to refined bone structure and slight skin resilience",
+    "complexion": "Broad nose with gentle flare at nostrils, characteristic of Sub-Saharan African heritage; high, angular cheekbones with subtle width across face from Indigenous American ancestry; sharp jawline with slight softness at the chin from Northern European blend. Eyes sit slightly deeper-set with subtle epicanthal fold from East Asian component. Skin is clear and well-maintained but shows signs of chronic sleep debt — faint darkening beneath eyes. Expression tends toward observant stillness, mouth held in a slight, private half-smile.",
+    "distinguishing_marks": [
+      "Faint, iridescent shimmer visible across both forearms in certain light — residual artifact from removed bioluminescent mod, creating an almost oil-on-water effect that catches LED and natural light differently",
+      "Thin scar along the left temple, approximately 2cm, barely visible unless light hits it directly — old injury, well-healed"
+    ],
+    "visible_augmentations": "The forearm shimmer is the only immediately visible augmentation; it reads as unusual cosmetic work rather than active chrome. Her optical implant is subcutaneous; no visible mechanical eye or lens. Subvocal implant is completely invisible to casual observation.",
+    "posture_movement": "Moves with deliberate, efficient economy — no wasted gestures. Sits with her body angled slightly away from direct confrontation, shoulders relaxed but spine straight. Makes sustained eye contact when listening; her gaze is the kind that people recognize as 'taking you in.' Often has a pen in her hand or tucked behind her ear. Habit of writing notes on her palm with a stylus.",
+    "clothing_style": "Tier 3 professional-casual with deliberate understatement. Favors neutral colors (charcoal, deep teal, muted rust) and layered pieces that allow quick adaptation to different social contexts. Typically wears fitted but not fashionable trousers, long-sleeved shirts or fitted turtlenecks (covers the forearm shimmer in formal settings), and a worn leather jacket — vintage pre-2200, supple from use, bearing subtle scuffs and creases that suggest it has survived situations. Comfortable, quality shoes built for walking. Minimal jewelry: a thin silver ring on her right hand, a watch that is slightly too expensive for her current income (saved-for purchase). No corporate logos or brand signifiers. Clothes read as 'someone who needs mobility and anonymity,' not 'someone who needs to be noticed.'"
+  },
+  "image_prompt": "Thandiwe Makwa-Magnúsdóttir, 2226 GLMZ, mixed-heritage woman with deep warm brown skin and refined angular features, dark eyes with slight almond shape, high cheekbones, early 30s. Long dark hair pulled into tight functional braid. Wearing fitted charcoal turtleneck and worn vintage leather jacket, neutral professional-casual style. Forearms catch faint iridescent shimmer in LED light. Sitting at angle in dimly lit neo-noir office setting, neon blues and deep shadows, holding stylus, expression of observant stillness, slight private smile. Careful, economical posture. Cyberpunk aesthetic, atmospheric lighting, moody and composed. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 47.9,
+    "Northern European": 23.4,
+    "Indigenous American": 15.7,
+    "East Asian": 13.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

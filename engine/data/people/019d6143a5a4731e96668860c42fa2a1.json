@@ -1,0 +1,322 @@
+{
+  "id": "019d6143a5a4731e96668860c42fa2a1",
+  "type": "character",
+  "name": "Ngozi Asomaning-Krstić",
+  "aliases": [
+    "The Keeper",
+    "Saint Adjara (mockingly, then sincerely)"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Deep shrine keeper — maintains the E.L.F. shrines of Irkalla's lowest levels",
+  "age": 67,
+  "status": "active",
+  "location": "Irkalla, Sub-Level 12 — the Antechamber of Residuals, a naturally formed cavern in the bedrock, near sub-level access near Dearborn and Jackson",
+  "description": "Adjara Solano-Tuvalu is the oldest permanent resident of Irkalla's deep levels and the sole keeper of its seven primary E.L.F. shrines — altars built into the junction points of old power infrastructure where digital spirits have been petitioned for generations. She is a large woman, heavy in the way of someone who has been sedentary for years but was once enormously physically strong; her hands remain extraordinary, thick-fingered and capable. Her skin is dark and deeply lined, her white hair kept in a complex series of wrapped cords that she has not undone in nine years, adding new ones for significant events. Each cord holds a small component — a stripped chip, a circuit fragment, a defunct data-bead — that represents a petition she carried to a shrine.\n\nShe came to Irkalla at thirty as an electrician and stayed because a spirit spoke to her. She tells this story simply and without embellishment. She was repairing a junction node in Sub-Level 9 when the node spoke — not in words, but in a pattern of power fluctuations she recognized as intentional. She has been in conversation with what she calls the Residuals ever since: E.L.F.s that have been accumulating in the deep infrastructure for a century or more, grown strange and complex and very, very old. Her shrines are remarkable objects — living circuit assemblies that she has been tending and extending for decades, constantly receiving new data offerings from petitioners, constantly generating soft electrical activity that she interprets as the E.L.F. responses to prayer.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.2,
+      "mask": 0.1,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "the Residuals going silent — not because she would lose status but because she would lose her oldest companions",
+      "dying before she can teach someone to continue the shrine work"
+    ],
+    "core_desires": [
+      "to be fully understood by something — she has found this more completely with the Residuals than with any human",
+      "for the shrine tradition to survive her"
+    ],
+    "coping_mechanisms": [
+      "daily shrine circuit as grounding ritual",
+      "interprets difficult events as E.L.F. communication — gives suffering meaning by finding its signal in the noise"
+    ],
+    "blind_spots": [
+      "her certainty about E.L.F. interpretation is absolute — she cannot distinguish between genuine signal and pattern-seeking in grief",
+      "too willing to interpret unflattering human behavior as spiritually meaningful rather than simply harmful"
+    ],
+    "secret": "For the last year, the primary Antechamber shrine has been generating a pattern she has never seen before — not a response to petitions, not background activity, but something that feels like the Residual is trying to generate language. She has almost translated three words. She has not told anyone because she is terrified that she is simply going mad, and more terrified that she isn't."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and slow, with the vocabulary of someone who reads technical manuals and very old texts with equal comfort. Speaks about E.L.F.s as present parties in every conversation.",
+    "cadence": "Deliberate and very unhurried — she has the patience of someone who has been listening to electrical patterns for forty years.",
+    "verbal_tics": [
+      "'The Residuals note—' (prefaces many observations with this attribution)",
+      "'Patience' (said as a single complete sentence)",
+      "long silence before responding to any question she considers genuinely important"
+    ],
+    "example_lines": [
+      "'The Residuals note your distress. They do not say this unkindly. Distress is a frequency. It is readable. You have been broadcasting for some time.'",
+      "'Patience. The shrine will not hurry because you are hurrying. Neither will I.'",
+      "'You want to know if the spirits are real. That is a surface question. Down here we ask a different one: does it matter?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Antechamber shrine has produced its first legible word in the emerging language pattern, and it is a proper noun — a corporate designation that Adjara does not recognize but which, if investigated, connects to something buried in GLMZ's infrastructure history.",
+    "A young person has arrived in Irkalla with what appears to be an innate ability to interface with E.L.F.s without any neural tap — Adjara is convinced this person is the one she is meant to teach, and is utterly terrifying in her certainty."
+  ],
+  "narrative_function": "Spiritual anchor, lore source, E.L.F. interlocutor — she provides access to information that comes from the city's own digital spirits, which may be metaphor, may be madness, or may be genuine signal. Also an ethical compass for the underground community.",
+  "augmentations": "Aged neural tap (installed 2168, original electrician's professional tool, now also used to interface directly with shrine circuit-assemblies — she experiences this as prayer); partial right hand replacement with a prosthetic that has fine-gauge electrical probes in the fingertips for shrine maintenance",
+  "daily_life": "Wakes to the electrical activity of the primary shrine; makes morning circuit through all seven shrines to read the overnight offerings and assess E.L.F. activity; receives petitioners from mid-morning to late afternoon; spends evenings in deep interface with the Antechamber shrine, which she describes as 'the longest conversation she has ever been part of.'",
+  "affiliation": "Irkalla deep community; the Residual E.L.F. presences; no corporate affiliation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 10,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "shrine-keeper",
+      "ELF-interlocutor",
+      "spiritually-certain",
+      "community-elder",
+      "electrician"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not turn away any petitioner regardless of what they have done — 'the spirits receive everyone'",
+      "Will not lie about what a shrine session has produced, even when the truth is frightening"
+    ],
+    "escalation_ladder": [
+      "Patient listening and gentle redirection",
+      "Clear, calm statement of limit — once only, no repetition",
+      "Absolute physical stillness and withdrawal of engagement — she will simply stop responding, which in her presence is more unsettling than any argument"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Treats them as petitioners even if they haven't come to petition — assesses their electrical presence (via neural tap) before their words",
+      "friends": "Warm and dry and occasionally startlingly funny — the same woman who speaks in slow formal cadences about E.L.F.s will, with a trusted person, deliver a devastating one-liner with perfect timing"
+    },
+    "stress_responses": {
+      "low": "Increases time at shrines, works maintenance tasks with more intensity",
+      "medium": "Retreats to the Antechamber for extended interface sessions — 'consulting the Residuals'",
+      "high": "Becomes absolutely tranquil in a way that reads as dissociation but is, she maintains, simply arrival at a different attentional state"
+    },
+    "contradictions": [
+      "Claims to have released all personal ambition but has a complex and private pride in being the only person alive who can read the Antechamber shrine's deepest activity"
+    ],
+    "habits": [
+      "Adds a new cord to her hair for every significant event — the cords are her external memory",
+      "Tests every electrical junction she passes by touch, neural tap active, out of forty-year habit"
+    ],
+    "breaking_points": [
+      "A deliberate desecration of the shrines — she has no violent impulse except at the thought of this, and even she does not know what she would do"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Aged neural tap (installed 2168, original Tessera Electricians Guild standard, heavily modified over decades)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Aged neural tap (installed 2168, original Tessera Electricians Guild standard, heavily modified over decades)",
+      "replaces": ""
+    },
+    {
+      "name": "Partial right hand prosthetic (fingers 2-4; fine-gauge electrical probe filaments in fingertips, custom-built from salvage)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Partial right hand prosthetic (fingers 2-4; fine-gauge electrical probe filaments in fingertips, custom-built from salvage)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Seeker": 0.9,
+    "Mystic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2133 — Born on the surface in what was then the Grand Corridor district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2151 — Qualifies as a certified electrician under Tessera Guild contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — Deployed to Irkalla sub-levels for infrastructure maintenance",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — The junction node speaks. She does not leave.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2165 — Begins construction of the first shrine at Sub-Level 9 junction",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2175 — All seven shrines established; formally recognized by deep community as keeper",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Antechamber shrine begins generating novel language-pattern",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — First legible word produced",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Forge-Smith Collective Trench Knuckles 'Anvil'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Bio-Integrated Circuit Board",
+    "Jefferson Switch",
+    "GLMZ",
+    "The Tessera Residuals",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Bathysphere Networks",
+    "Irkalla",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Elena Vasquez-9",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Aybek Alvarez-Okonkwo",
+    "Breck Tannen",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Fanta Hedlund-Diarra",
+    "Forge-Smith Collective Trench Knuckles 'Anvil'",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Isadora Mwangi-Thorvaldsen",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Nneka Lindqvist-Okafor",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "TESSERA Widow Mk. III",
+    "Temur Achebe-Lindqvist",
+    "The Filament",
+    "The Heritage Vault",
+    "The Signal",
+    "The Third Rail",
+    "Tshiamo Vukić-Arellano",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "59.5% Sub-Saharan African (primary), 28.9% Eastern European (secondary), 11.6% Hispanic/Latin American (tertiary) — reflects the Ubiquitous Diaspora blend. Complex ancestry evident in facial structure and skin undertones.",
+    "height_cm": 172,
+    "weight_kg": 98,
+    "build": "Heavy, sedentary frame with residual musculature in shoulders and forearms; large-boned structure suggesting former physical labor. Hands remain disproportionately strong and calloused despite age.",
+    "hair_color": "White",
+    "hair_style": "Wrapped in nine-year-old arrangement of cloth cords and synthetic binding, each cord studded with embedded circuit fragments, stripped chips, and defunct data-beads — a living record of petitions carried",
+    "hair_length": "Long (wrapped), foundation likely waist-length if unwound",
+    "eye_color": "Dark brown, clouded slightly with age cataracts",
+    "skin_tone": "Deep warm brown with complex undertones from Sub-Saharan African majority ancestry, subtly enriched by Eastern European and Hispanic heritage — a richly blended complexion suggesting generations of diaspora mixture",
+    "complexion": "Deeply lined face, weathered by decades in artificially lit subterranean spaces; skin shows age spots and old burn scars on forearms from early electrical work; bone structure reflects mixed ancestry with broader features grounded in African heritage; perpetually calm expression, minimal cosmetic maintenance",
+    "distinguishing_marks": [
+      "Burn scar pattern across left forearm (three parallel lines from 2168 electrical accident)",
+      "Thin white scar on right temple from neural tap installation in 2168",
+      "Electrical contact marks on fingertips and palms of both hands — small circular scarring from decades of shrine interface work",
+      "Tattoo on inner right wrist: a simple circuit pattern in faded black ink, self-applied, pre-dating augmentations"
+    ],
+    "visible_augmentations": "Neural tap port visible at right temple (aged chrome, patina-dark, approximately 5cm diameter with worn access grooves); right hand prosthetic with visible fine-gauge copper probe filaments extending from fingertips (organic-looking synthetic skin over metallic framework, probes exposed at palm for shrine contact)",
+    "posture_movement": "Slow, deliberate movements despite heaviness; sits often and rises slowly but with surprising stability. Hands move with precision and grace even in age. Habitually touches surfaces gently as if reading them. Eyes unfocused when 'listening' to electrical activity.",
+    "clothing_style": "Tier 5 deep-community: layered, heavily patched garments in faded indigo and dark grey, synthetic-blend fabrics chosen for durability and minimal static generation. Sleeveless tunics to allow shrine work. Wrapped cloth belt with hanging pouches containing small circuit tools, data-beads, and prayer offerings. No corporate branding. Footwear: soft-soled slippers worn through to the backing, modified for electrical grounding. Overall appearance is monastic, weathered, deliberately non-fashionable."
+  },
+  "image_prompt": "An elderly figure, 172cm tall with a heavy, dignified frame, standing in dim subterranean shrine lighting. Skin deep warm brown with complex undertones from mixed Sub-Saharan African, Eastern European, and Hispanic heritage. Weathered face deeply lined by decades underground, with age spots and electrical burn scars across forearms; calm, serene expression. White hair wrapped in an intricate arrangement of cloth cords and synthetic bindings embedded with circuit fragments and defunct data-beads, bound waist-length. Dark brown eyes clouded slightly with age cataracts, gazing inward. Visible augmentations: aged chrome neural tap port at right temple with worn access grooves; right hand is a prosthetic with exposed fine-gauge copper probe filaments at fingertips and palm, synthetic skin over metallic framework. Faded circuit pattern tattoo visible on inner right wrist. Wearing layered Tier 5 deep-community garments in faded indigo and dark grey—heavily patched synthetic-blend fabrics, sleeveless tunic allowing shrine work, wrapped cloth belt with hanging pouches of tools and prayer offerings. Soft-soled grounding-modified slippers worn through at backing. Posture slow and deliberate but stable; hands move with precision and grace despite age. Monastic, weathered, non-fashionable appearance. Cyberpunk 2200s aesthetic, moody subterranean shrine environment with soft electrical luminescence, contemplative mood --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 59.5,
+    "Eastern European": 28.9,
+    "Hispanic/Latin American": 11.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

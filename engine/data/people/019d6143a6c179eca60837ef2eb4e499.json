@@ -1,0 +1,331 @@
+{
+  "id": "019d6143a6c179eca60837ef2eb4e499",
+  "type": "character",
+  "name": "Zephyr Fredriksen-Achebe",
+  "aliases": [
+    "Crimson",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Covert entry and social penetration specialist — infiltrator",
+  "age": 26,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
+  "description": "Sagyn Ibarra-Prempeh is average height but with a presence that fills more space than the body accounts for. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a infiltrator out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Sagyn Ibarra-Prempeh is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.45,
+      "id": 0.71,
+      "shadow": 0.42,
+      "mask": 0.98,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "The quiet — silence means something is about to go very wrong",
+      "Becoming obsolete as augmentation technology outpaces their chrome"
+    ],
+    "core_desires": [
+      "Knowledge — to understand the systems that grind people down",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Power — enough leverage that nobody ever threatens them again"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Maintains weapons obsessively — cleaning guns is meditation"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot distinguish between caution and cowardice in themselves or others"
+    ],
+    "secret": "Sagyn Ibarra-Prempeh is terrified of deep net diving but has built their reputation on it. Uses black-market AI to handle the heavy lifting while taking credit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop",
+      "Repeats the last thing someone said back to them before responding — processing or intimidation"
+    ],
+    "example_lines": [
+      "\"The best disguise is being exactly who they expect to see.\"",
+      "\"I was in the building for six hours before anyone realized I didn't work there.\"",
+      "\"Security is a story people tell themselves. I'm the plot twist.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A dead drop Sagyn Ibarra-Prempeh maintains is found and cleaned out — whoever did it now has leverage",
+    "A Tier 4 executive offers Sagyn Ibarra-Prempeh a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A former associate resurfaces with evidence that could destroy Sagyn Ibarra-Prempeh's reputation — and a price for silence"
+  ],
+  "narrative_function": "Sagyn Ibarra-Prempeh functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Independent — Dockside connections",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 4
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.32,
+      "caution": 0.35,
+      "loyalty": 0.16,
+      "greed": 0.77,
+      "empathy": 0.88
+    },
+    "drives": [
+      "protection",
+      "reputation",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 8,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "social chameleon — adapts to any environment",
+      "intimidating physical presence"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "overconfidence in specialty areas leading to blind spots",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "infiltrator",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    },
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Social Chameleon": 0.9,
+    "Charmer": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Compact-7 'Rat Trap'"
+  ],
+  "related_entities": [
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Ezio Kaboré-Malhotra",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Glenville Sound",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "MERIDIAN",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Neuromorphic Pressure Cestus",
+    "Oumarou Svec-Ranginui",
+    "TERMINUS",
+    "The Fathom Line",
+    "The Quiet Room",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Northern European / Central Asian / Sub-Saharan African / Indigenous American / Hispanic-Latin American blend (Ubiquitous Diaspora phenotype) — complex genetic admixture producing unique feature combinations: Scandinavian bone structure with Central Asian cheekbone prominence, Sub-Saharan African skin richness and lip fullness, Indigenous American undertones in complexion, Hispanic-Latin warmth in overall coloration",
+    "height_cm": 177,
+    "weight_kg": 74,
+    "build": "Lean and functionally muscular — compact rather than bulky, built for efficiency and deception rather than intimidation. Shoulders slightly narrower than average, core visibly defined. The physiology of someone who trains for infiltration rather than combat.",
+    "hair_color": "Dark brown with subtle warm undertones",
+    "hair_style": "Short, cleanly maintained, minimal styling — practical. No affectation.",
+    "hair_length": "Short",
+    "eye_color": "Chrome iris rings over dark brown pupils — thermal and low-light augmentation visible as faint luminescent halos when activated",
+    "skin_tone": "Medium-rich bronze with warm undertones — complex interplay of copper from Sub-Saharan heritage, olive from Central Asian ancestry, and golden undertones from Indigenous American and Hispanic admixture. Sun exposure deepens the overall warmth without shifting the base tone.",
+    "complexion": "Striking angular features combining Northern European definition with Central Asian cheekbone prominence and Sub-Saharan African fullness in lips and face shape. Sharp cheekbones, defined jawline, minimal facial hair — clean-shaven or closely trimmed. Skin condition excellent — well-maintained. Face has the quality of someone who has learned to be invisible; features don't demand attention but repay it.",
+    "distinguishing_marks": [
+      "Surgical scar running 2cm along the left temple, barely visible unless light catches it at certain angles — precision work, not violence",
+      "Faint burn mark on the inside of right forearm (5cm long) from early augmentation surgery — deliberately left unhidden",
+      "Three small dot tattoos on the inside of left wrist in a vertical line — personal significance, kept deliberately subtle"
+    ],
+    "visible_augmentations": "Chrome iris rings around both eyes with visible tech architecture — thermal overlay and low-light systems that produce a faint phosphorescent shimmer when active. Hydraulic joint articulation visible at elbows and knees — subtle mechanical definition in movement, slightly smoother than human biomechanics. Chrome plating on joint mechanisms catches light distinctly.",
+    "posture_movement": "Economy of motion — every movement serves a purpose. Posture is relaxed but alert, shoulders naturally slightly forward. Gait is quiet and balanced, weight centered low for quick directional changes. His presence fills space through attention rather than volume — people orient toward him in crowded rooms without him demanding it.",
+    "clothing_style": "Tier 3-4 utilitarian — high-end runner gear masquerading as casual. Fitted charcoal tactical pants with discreet cargo pockets and reinforced seams, neutral-tone compression layer or fitted turtleneck, outer layer is either a charcoal bomber jacket with smart-fabric lining or a custom black peacoat with subtle armor plating (visible only as structural weight). Minimalist chrome accessory — wrist comm or small jewelry that matches his eye augmentation chrome. No logos, no corporate branding. Everything worn has function; nothing is for show."
+  },
+  "image_prompt": "Zephyr Fredriksen-Achebe, cyberpunk 2226 operative in Great Lakes Metropolitan Zone, medium-rich bronze skin with warm copper and olive undertones, sharp Nordic-Central Asian cheekbones with Sub-Saharan fullness, dark brown eyes with glowing chrome iris augmentations, short dark practical hair, lean muscular build 177cm, standing in quiet alert posture. Wearing charcoal tactical pants and fitted turtleneck compression layer under custom black peacoat with subtle armor plating, minimalist chrome wrist comm matching eye tech. Faint surgical scar on left temple barely visible, small dot tattoos on left wrist. Chrome joint articulation visible at elbows and knees with luminescent shimmer. Neo-Tokyo neon alley lighting, rain-slicked streets, moody atmospheric cyberpunk setting, presence that fills space through attention rather than volume, economy of movement captured mid-stride. Photorealistic, cinematic, atmospheric --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 36.3,
+    "Central Asian": 21.8,
+    "Sub-Saharan African": 15.1,
+    "Indigenous American": 11.7,
+    "Hispanic/Latin American": 9.3,
+    "East Asian": 5.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

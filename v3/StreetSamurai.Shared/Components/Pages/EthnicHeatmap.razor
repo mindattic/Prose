@@ -3,13 +3,13 @@
 @inject IJSRuntime JS
 
 <h4 class="text-danger mb-1">Genetic Ancestry Heatmap</h4>
-<p class="text-muted mb-3">23andMe-style genetic ancestry across @totalCharacters characters in the GLMZ. Based on demographic projections for a 2226 megacity. Independent of surname heritage.</p>
+<p class="text-muted mb-3">23andMe-style genetic ancestry across @totalCharacters people in the GLMZ. Based on demographic projections for a 2226 megacity. Click a region to drill down into sub-groups.</p>
 
 <div class="row g-3 mb-3">
     <div class="col-auto">
-        <span class="badge bg-secondary">@totalCharacters characters</span>
+        <span class="badge bg-secondary">@totalCharacters people</span>
         <span class="badge bg-secondary">@uniqueGroups ancestry groups</span>
-        <span class="badge bg-danger">Weighted by genetic percentage per character</span>
+        <span class="badge bg-danger">Weighted by genetic percentage per person</span>
     </div>
 </div>
 
@@ -18,11 +18,11 @@
 @if (heritageData.Count > 0)
 {
     <div class="mt-3">
-        <h6 class="text-muted">Top 30 Heritage Groups</h6>
+        <h6 class="text-muted">Heritage Groups</h6>
         <table class="table table-sm table-dark">
             <thead><tr><th>Heritage</th><th class="text-end">References</th><th class="text-end">%</th><th>Bar</th></tr></thead>
             <tbody>
-                @foreach (var h in heritageData.Take(30))
+                @foreach (var h in heritageData)
                 {
                     <tr>
                         <td class="text-light">@h.name</td>
@@ -49,9 +49,10 @@
         if (firstRender)
         {
             ParseHeritages();
+            var hierarchy = BuildHierarchy();
             StateHasChanged();
             await Task.Delay(100);
-            await JS.InvokeVoidAsync("heritageTreemap.render", "heritage-treemap", heritageData);
+            await JS.InvokeVoidAsync("heritageTreemap.render", "heritage-treemap", hierarchy);
         }
     }
 
@@ -90,118 +91,59 @@
             .ToList();
     }
 
-    private static List<string> ExtractGroups(string heritage)
+
+    // Map specific ancestry groups to their parent region for drill-down
+    private static readonly Dictionary<string, string> GroupToRegion = new(StringComparer.OrdinalIgnoreCase)
     {
-        // Heritage strings look like:
-        // "West African / Eastern European (Polish)"
-        // "Somali / Russian / Polynesian (Tuvaluan)"
-        // "West African (Yoruba) / French-Québécois / Polish"
-        // "Angolan / Mongolian"
-        // Split on " / " first, then extract sub-groups from parentheses
-
-        var results = new List<string>();
-        var parts = heritage.Split(new[] { " / ", " and " }, StringSplitOptions.RemoveEmptyEntries);
-
-        foreach (var part in parts)
-        {
-            var trimmed = part.Trim();
-
-            // Strip stuff like "(derived from surname blend)" or "(diaspora blend)"
-            if (trimmed.Contains("derived from") || trimmed.Contains("surname") || trimmed.Contains("diaspora blend"))
-            {
-                var cleanIdx = trimmed.IndexOf('(');
-                if (cleanIdx > 0) trimmed = trimmed[..cleanIdx].Trim();
-            }
-
-            // "West African (Yoruba)" → only "Yoruba" (specific wins over broad)
-            // "Eastern European (Polish)" → only "Polish"
-            // "West African" (no specifics) → "West African"
-            var parenOpen = trimmed.IndexOf('(');
-            var parenClose = trimmed.IndexOf(')');
-            if (parenOpen > 0 && parenClose > parenOpen)
-            {
-                var broad = trimmed[..parenOpen].Trim();
-                var specific = trimmed[(parenOpen + 1)..parenClose].Trim();
-
-                // Extract specific sub-groups — these replace the broad label
-                var specifics = specific.Split(new[] { '/', ',' }, StringSplitOptions.RemoveEmptyEntries)
-                    .Select(s => s.Trim())
-                    .Where(s => s.Length > 2)
-                    .ToList();
-
-                if (specifics.Count > 0)
-                {
-                    // Use specific groups only — don't also add the broad region
-                    results.AddRange(specifics);
-                }
-                else
-                {
-                    // No valid specifics, fall back to broad
-                    if (broad.Length > 2) results.Add(broad);
-                }
-            }
-            else
-            {
-                // Hyphenated like "French-Québécois" → split
-                if (trimmed.Contains('-') && !trimmed.Contains("Anglo-"))
-                {
-                    foreach (var h in trimmed.Split('-'))
-                    {
-                        var hh = h.Trim();
-                        if (hh.Length > 2) results.Add(hh);
-                    }
-                }
-                else if (trimmed.Length > 2)
-                {
-                    results.Add(trimmed);
-                }
-            }
-        }
-
-        return results;
-    }
-
-    // Broad labels that the LLM used as lazy defaults — redistribute to specifics
-    private static readonly Dictionary<string, string[]> BroadToSpecific = new()
-    {
-        ["West African"] = ["Yoruba", "Igbo", "Ghanaian", "Nigerian", "Senegalese", "Malian", "Guinean", "Akan"],
-        ["East African"] = ["Ethiopian", "Kenyan", "Somali", "Tanzanian", "Ugandan"],
-        ["Scandinavian"] = ["Swedish", "Norwegian", "Danish", "Finnish", "Icelandic"],
-        ["Eastern European"] = ["Polish", "Russian", "Czech", "Hungarian", "Romanian", "Ukrainian", "Serbian", "Croatian"],
-        ["South Asian"] = ["Indian", "Pakistani", "Bangladeshi", "Sri Lankan", "Nepali"],
-        ["Southeast Asian"] = ["Filipino", "Vietnamese", "Thai", "Indonesian", "Malaysian"],
-        ["Latin American"] = ["Mexican", "Brazilian", "Colombian", "Peruvian", "Chilean", "Argentine"],
-        ["Central Asian"] = ["Kazakh", "Uzbek", "Kyrgyz", "Mongolian"],
+        // East Asian
+        ["Chinese"] = "East Asian",
+        ["Korean"] = "East Asian",
+        ["Japanese"] = "East Asian",
+        // Southeast Asian
+        ["Vietnamese"] = "Southeast Asian",
+        ["Filipino"] = "Southeast Asian",
+        ["Indonesian"] = "Southeast Asian",
+        ["Laotian"] = "Southeast Asian",
+        ["Cambodian"] = "Southeast Asian",
+        ["Thai"] = "Southeast Asian",
+        // These map to themselves (already top-level regions)
+        ["Sub-Saharan African"] = "Sub-Saharan African",
+        ["Hispanic/Latin American"] = "Hispanic/Latin American",
+        ["South Asian"] = "South Asian",
+        ["Northern European"] = "Northern European",
+        ["Eastern European"] = "Eastern European",
+        ["Middle Eastern"] = "Middle Eastern",
+        ["Pacific Islander"] = "Pacific Islander",
+        ["Indigenous American"] = "Indigenous American",
+        ["Central Asian"] = "Central Asian",
+        ["North African"] = "North African",
     };
 
-    private static string NormalizeGroup(string group)
+    private List<RegionEntry> BuildHierarchy()
     {
-        var g = group.Trim().Trim(',', '.', ';');
-        if (g.Length <= 2) return "";
+        // Group the flat heritageData into regions with drill-down sub-groups
+        var regionMap = new Dictionary<string, List<HeritageEntry>>();
 
-        return g switch
+        foreach (var entry in heritageData)
         {
-            "Québécois" => "French",
-            "Anglo" => "British",
-            "Slavic" => "Eastern European",
-            "Bantu" => "Central African",
-            _ => g
-        };
-    }
-
-    /// <summary>
-    /// When a broad label like "West African" has no specifics, pick a random specific
-    /// group from the known set — distributes the blob into realistic sub-groups.
-    /// Uses a deterministic hash so the same character always gets the same assignment.
-    /// </summary>
-    private static string RedistributeBroad(string group, string characterName)
-    {
-        if (BroadToSpecific.TryGetValue(group, out var specifics))
-        {
-            var hash = Math.Abs(characterName.GetHashCode());
-            return specifics[hash % specifics.Length];
+            var region = GroupToRegion.GetValueOrDefault(entry.name, entry.name);
+            if (!regionMap.ContainsKey(region))
+                regionMap[region] = [];
+            regionMap[region].Add(entry);
         }
-        return group;
+
+        var totalWeight = heritageData.Sum(e => e.value);
+
+        return regionMap
+            .Select(kv => new RegionEntry
+            {
+                name = kv.Key,
+                value = kv.Value.Sum(e => e.value),
+                pct = totalWeight > 0 ? (kv.Value.Sum(e => e.value) * 100.0 / totalWeight).ToString("F1") : "0",
+                subGroups = kv.Value.Count > 1 ? kv.Value : []
+            })
+            .OrderByDescending(r => r.value)
+            .ToList();
     }
 
     private record HeritageEntry
@@ -209,5 +151,13 @@
         public string name { get; init; } = "";
         public int value { get; init; }
         public string pct { get; init; } = "0";
+    }
+
+    private record RegionEntry
+    {
+        public string name { get; init; } = "";
+        public int value { get; init; }
+        public string pct { get; init; } = "0";
+        public List<HeritageEntry> subGroups { get; init; } = [];
     }
 }

@@ -1,0 +1,327 @@
+{
+  "id": "019d6143a7307104a233ab7101361460",
+  "type": "character",
+  "name": "Indigo Sepúlveda-Tamale",
+  "aliases": [
+    "Lieutenant Tanabe",
+    "Yuki",
+    "The Ex"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Former romantic partner / Axiom security operative / the path not taken",
+  "age": 29,
+  "status": "alive",
+  "location": "Meridian Core — Axiom Industries Security Division, Floor 47. Clean apartment in the corporate residential block, Level 30.",
+  "description": "Yuki moves like someone who has been evaluated her entire adult life and has decided to make every\nevaluation flawless. Not arrogant — precise. Every step measured, every gesture controlled, every\nword vetted by some internal review board that never adjourns. She is 5'8\", athletic, with the\nparticular build that comes from corporate training programs designed to maximize combat efficiency\nwithout sacrificing the professional appearance Axiom demands of its security personnel. Her black\nhair is kept in a regulation-length bob that frames a face built for stillness — high cheekbones,\ndark eyes that assess before they acknowledge, a mouth that defaults to a neutral line that gives\naway nothing.\n\nHer uniform is always immaculate. Her augments are always calibrated. Her quarterly performance\nreviews are always exceptional. She is, on paper and in practice, the model Axiom operative: a\nproduct of the Shelf who climbed out through sheer competence and disciplined compliance. The\ncorporation holds her up as proof that the system works — that anyone with talent and willingness\ncan ascend. They do not mention what she had to leave behind to do it.\n\nFirst impression: a professional. Competent, controlled, slightly cold. The kind of person you\nrespect and don't approach. Second impression, available only to those who knew her before: a\nwoman who is performing the role of herself with such precision that the performance has become\nindistinguishable from reality. She's not pretending. She's not honest either. She's something\nworse — she's forgotten where the mask ends.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.75,
+      "mask": 0.9,
+      "ghost": 0.55
+    },
+    "core_fears": [
+      "That Kyle was right to leave — that his moral clarity is real and hers is theater",
+      "That she has become exactly what killed the communities she grew up in — the system's enforcement arm",
+      "Losing control — of her career, her emotions, her carefully constructed life. One crack and it all falls.",
+      "Being sent back to the Shelf — not physically, but spiritually. Becoming powerless again."
+    ],
+    "core_desires": [
+      "Security — real, permanent, unshakable. The kind that can't be taken away by a policy change or a restructuring.",
+      "To prove that working within the system is more effective than fighting it from the margins",
+      "To feel something again without it threatening everything she's built",
+      "To hear Kyle say she made the right choice — because his opinion still matters, and she hates that it does"
+    ],
+    "coping_mechanisms": [
+      "Over-performance — be so excellent they can never discard you. Outwork the doubt.",
+      "Physical training: 0600, every day, no exceptions. The body is the one thing she can control completely.",
+      "Emotional compartmentalization — she calls it 'operational focus.' It's a filing system for feelings she can't afford.",
+      "Reading poetry alone at night with the lights off — Basho, Rumi, Warsan Shire. She'd rather die than let anyone know."
+    ],
+    "blind_spots": [
+      "She thinks loyalty to Axiom is the same as integrity. It's not. It's employment.",
+      "She can't see that her 'choice' and Kyle's 'choice' were both survival — just different calculations of the same fear",
+      "She assumes Kyle left because he was weak, because he couldn't handle the work. He left because he was horrified. She can't let herself see the difference, because then she'd have to ask why she wasn't.",
+      "She doesn't realize that her isolation is the system working as designed — atomized employees don't organize, don't question, don't leave"
+    ],
+    "secret": "She keeps a file on Kyle. Not an official one — a personal file, on a private device, encrypted\nwith a key she changes monthly. Every job he takes that crosses Axiom's radar, every sighting,\nevery rumor. She's tracked his movements for five years. She tells herself it's professional\ndue diligence — knowing where a former operative operates is standard security practice. It's\nnot. She's watching him the way you watch someone who jumped off a bridge — not because you\nwant to jump, but because you need to know if they survived the fall."
+  },
+  "speech_patterns": {
+    "vocabulary": "Military-corporate hybrid. Clean, precise, stripped of imagery, heavy on clarity. She uses rank and protocol language even in casual conversation — it's armor. When she's caught off-guard, fragments of Shelf dialect surface ('that's gutter—' she'll start, then correct to standard phrasing immediately, furious at the slip). She never swears. She considers it imprecise.",
+    "cadence": "Controlled, even, delivered at the same volume and speed regardless of content. She could be ordering dinner or ordering a tactical strike and it would sound identical. When she's angry, she gets quieter — the words get shorter, the pauses get longer, and the most dangerous Yuki is the one who stops talking entirely and just looks at you.",
+    "verbal_tics": [],
+    "example_lines": [
+      "You left. That's your prerogative. I stayed. That's mine. We don't need to discuss it further.",
+      "I sleep fine, Kyle. I sleep in a bed with clean sheets in a room with a lock. I sleep fine.",
+      "The objective is clear. The method is your discretion. The timeline is not.",
+      "I didn't leave the Shelf to have opinions about the Shelf. I left to never go back.",
+      "You think your code makes you better than me. It doesn't. It just makes you poorer.",
+      "Don't ask me if I'm happy. That's not a relevant metric."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Kyle",
+      "type": "ex-partner / unresolved / professional adversary",
+      "description": "They haven't spoken in five years. She's seen him twice on operations — once across a crowded\nmarket during a surveillance sweep, once through a security feed during an incident in the\nCircuit. Both times she let him go. Both times she filed the sighting as \"unconfirmed.\" She\ndoesn't examine why. The relationship was the most honest thing in her life, and when it ended,\nshe sealed the room where it lived and hasn't opened the door since. But she keeps the key.\nThe tattoo. The file. The thirty-seven minutes every morning.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Axiom Industries",
+      "type": "employer / identity / cage",
+      "description": "Axiom is her world. It gave her augments, a career, a clean apartment, a locked door, and a\npurpose that doesn't require her to ask difficult questions as long as she doesn't look too\nclosely at the answers. It also systematically grinds the communities she came from — places\nlike the Shelf — under its operational requirements. She knows both things. She keeps them in\nseparate compartments and never lets them meet.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Her parents (deceased)",
+      "type": "origin / motivation / guilt",
+      "description": "Her father died when she was fourteen — a workplace accident at the docks that Axiom classified\nas \"operator error\" to avoid liability. Her mother died three years later, worn through by\ndouble shifts at an understaffed clinic. Yuki enlisted within months. She never says their\nnames. She sends money to maintain their graves on the Shelf, through an anonymous account,\nbecause going in person would mean seeing what she left.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Commander Zhao",
+      "type": "superior officer / mentor",
+      "description": "Her commanding officer. Competent, fair within the system's definition of fairness, and\nabsolutely loyal to Axiom. He sees Yuki as his best operative and his likely successor. He\nhas no idea about the private file on Kyle. If he found out, her career would be over in hours.\nShe respects Zhao. She does not trust him. She doesn't trust anyone. That's the training working.",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [
+    "Kyle and Yuki on opposite sides of the same job — she's protecting what he's been hired to steal",
+    "Axiom orders Yuki to bring Kyle in. She has to choose between her career and the person she was before she had one.",
+    "Commander Zhao discovers the private file. Yuki faces termination unless she turns Kyle in — with real intel this time.",
+    "She shows up at Mrs. Chen's noodle shop. She hasn't been to the Shelf since she left. Mrs. Chen recognizes her immediately.",
+    "She reads a poem that cracks something open — and for the first time, she lets herself ask whether Kyle was right",
+    "A Shelf operation she's ordered to command — clearing the area she grew up in. The same kind of action that made Kyle leave."
+  ],
+  "narrative_function": "Yuki is the road not taken. She is what Kyle would be if he'd stayed with Axiom — successful,\nstable, effective, and slowly being consumed by the machine she chose. She represents the argument\nthat principles are a luxury, that pragmatism is survival, that the system is ugly but it works\nfor those willing to work it.\n\nBut she also mirrors Kyle's hypocrisy from the other side. He calls himself a samurai while doing\nmercenary work. She calls herself an officer while enforcing corporate will on communities like\nthe one she grew up in. Neither of them is fully honest about what they are. But Yuki's dishonesty\nis state-sponsored, which makes it invisible, and Kyle's is self-imposed, which makes it romantic.\nThe story should question both.\n\nShe is the tension between where you came from and what you became. She buried the same moral\ndoubts Kyle couldn't swallow. She chose pragmatism. It works. She has healthcare. She has security.\nShe has a clean ceiling to stare at for thirty-seven minutes every morning while she doesn't think\nabout whether any of it was worth it.\n\nThe question she poses to Kyle: Was leaving brave, or was it easy? Was staying cowardly, or was\nit the harder choice — to look at the machine every day and keep going? The story should make\nboth answers feel true and neither feel sufficient.",
+  "augmentations": "",
+  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "affiliation": "",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 7,
+      "impulsivity_deliberation": 9,
+      "assertion_deference": 8,
+      "transparency_guardedness": 9
+    },
+    "drives": [
+      "Security",
+      "Validation",
+      "Feeling again"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Gets quieter; words get shorter; pauses get longer; the most dangerous Yuki stops talking entirely"
+      },
+      "moral": 5,
+      "trust": 2,
+      "desperation": 4
+    },
+    "strengths": [
+      "Perseverance",
+      "Self-regulation",
+      "Judgment",
+      "Leadership",
+      "Bravery"
+    ],
+    "weaknesses": [
+      "Love",
+      "Forgiveness",
+      "Humor",
+      "Hope",
+      "Gratitude"
+    ],
+    "tags": [
+      "axiom-operative",
+      "corporate-security",
+      "ex-partner",
+      "shelf-origin",
+      "mask-wearer",
+      "path-not-taken"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Be so excellent they can never discard you — outwork the doubt",
+      "Physical training at 0600 every day, no exceptions",
+      "File Kyle sightings as unconfirmed — never act on them officially",
+      "Never swear — it is imprecise",
+      "Compartmentalize emotions into operational focus",
+      "Never return to the Shelf for personal reasons",
+      "Update the private encrypted file on Kyle monthly"
+    ],
+    "escalation_ladder": [
+      "Controlled even speech delivered at identical volume regardless of content",
+      "Words get shorter, pauses get longer",
+      "Complete silence with sustained eye contact",
+      "Tactical action executed with perfect training and zero hesitation",
+      "Breaking protocol — the mask cracks and the Shelf dialect surfaces"
+    ],
+    "interpersonal_modes": {
+      "kyle": "Five years of silence; twice let him go and filed as unconfirmed; keeps the tattoo and the file and the thirty-seven minutes",
+      "axiom": "Total loyalty as identity; the corporation is her world and her cage simultaneously",
+      "commander_zhao": "Respect without trust; performs the ideal operative",
+      "parents_memory": "Anonymous grave maintenance through encrypted account; never visits in person",
+      "strangers": "Professional coldness that reads as competence; never approaches, rarely acknowledged"
+    },
+    "stress_responses": {
+      "low": "Extended physical training sessions; immaculate uniform maintenance",
+      "medium": "Emotional compartmentalization intensifies; poetry reading sessions lengthen",
+      "high": "The Shelf dialect surfaces involuntarily and she corrects it with fury",
+      "critical": "Stares at the ceiling for thirty-seven minutes and does not think about whether any of it was worth it"
+    },
+    "contradictions": [
+      "Calls herself an officer while enforcing corporate will on communities like the one she grew up in",
+      "Thinks loyalty to Axiom is the same as integrity when it is employment",
+      "Assumes Kyle left because he was weak when he left because he was horrified — she cannot see the difference"
+    ],
+    "habits": [
+      "Physical training at 0600 daily without exception",
+      "Reads poetry alone at night with the lights off — Basho, Rumi, Warsan Shire",
+      "Updates encrypted personal file on Kyle with every sighting or rumor",
+      "Sends anonymous money to maintain parents graves on the Shelf",
+      "Thirty-seven minutes every morning staring at a clean ceiling"
+    ],
+    "breaking_points": [
+      "Axiom ordering her to bring Kyle in with real intel",
+      "Commander Zhao discovering the private file",
+      "Being ordered to command a Shelf clearing operation in the area she grew up",
+      "Kyle saying she made the right choice — because his opinion still matters"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Protector": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
+  ],
+  "related_entities": [
+    "Axiom Industries",
+    "Meridian Core",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Pullman Works",
+    "The Shelf",
+    "Flicker",
+    "Clearpath",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "Slagworks Industrial",
+    "Alper Inoue-Aidoo",
+    "Altan Tanaka-Frimpong",
+    "Arcturus HW-1 'Goliath'",
+    "Arcturus ST-4 'Verdict'",
+    "Breck Tannen",
+    "Chen Wei-Lin",
+    "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Imara Solís-Bekele",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kyle Ellen Corbin-Vasik",
+    "MERIDIAN",
+    "New Windsor / Novaya Windsorka",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Slipcast",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Stonepath Logistics",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA TC-3 'Crucible'",
+    "The Gutter Prophets",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Question",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American (62.1%) with substantial Sub-Saharan African (25.6%) and Central Asian (12.3%) ancestry. The genetic blend creates warm, richly saturated skin tones with prominent melanin expression across the spectrum, combined with facial structure reflecting the diverse geographic origins of her mixed heritage.",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined musculature from corporate combat training regimens. No excess body fat; every line suggests functional precision rather than aesthetic cultivation.",
+    "hair_color": "Black, natural",
+    "hair_style": "Regulation-length bob, blunt-cut, frames face precisely at jaw line",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and analytical",
+    "skin_tone": "Deep warm brown with golden undertones — the result of African and Latin American ancestry dominant in her genetic profile, enriched by subtle warmth from Central Asian heritage. Rich melanin expression, luminous rather than matte.",
+    "complexion": "High, prominent cheekbones with broader facial structure reflecting her multi-continental ancestry; face sculpted by the blended genetics of three major heritage regions. Skin immaculate — corporate-grade skincare regimen evident. Rich, warm undertones across all exposed skin. No visible scarring on face. Expression defaults to professional neutrality.",
+    "distinguishing_marks": [
+      "Faint linear scar along left trapezius, approximately 4cm, consistent with combat training wound — visible only when neck is exposed",
+      "No visible tattoos; corporate policy prohibits them"
+    ],
+    "visible_augmentations": "None visible. Any augmentations are subcutaneous or internal — consistent with Axiom's corporate aesthetic requirements for Floor 47 personnel. Posture and movement suggest possible proprioceptive neural enhancement, but not overtly apparent.",
+    "posture_movement": "Moves with measured efficiency — no wasted motion, no casual slouching. Steps are deliberate and grounded. Hands remain visible and controlled. Head positioning suggests constant environmental assessment. Stands at attention even when nominally at rest. Movement is precise enough to unsettle observers who expect human variability.",
+    "clothing_style": "Axiom security uniform when on-duty: tailored charcoal tactical weave, minimal insignia, matte finish. Off-duty: high-tier Tier 1-2 minimalist corporate wear — monochromatic, fitted, expensive in restraint rather than embellishment. No jewelry. No personal customization. Every garment is neutral, functional, and perfectly maintained."
+  },
+  "image_prompt": "Indigo Sepúlveda-Tamale, 173cm tall corporate security operative with rich warm brown skin from Latin American and African ancestry, short blunt-cut black bob framing sharp cheekbones, dark analytical eyes. Athletic lean build in tailored charcoal Axiom tactical uniform with matte finish. Standing at rigid attention in minimalist pose, posture suggesting neural enhancement. Cool corporate floor lighting casting precision shadows across her face. Cyberpunk 2226 Great Lakes Metropolitan Zone, geometric composition emphasizing controlled stillness and professional neutrality. High-resolution detail on skin tone warmth and precise uniform tailoring. Mood: coldly efficient, perpetually assessing. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 62.1,
+    "Sub-Saharan African": 25.6,
+    "Central Asian": 12.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

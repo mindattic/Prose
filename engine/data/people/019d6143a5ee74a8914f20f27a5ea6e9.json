@@ -1,0 +1,338 @@
+{
+  "id": "019d6143a5ee74a8914f20f27a5ea6e9",
+  "type": "character",
+  "name": "Briar Montalvo-Dlamini",
+  "aliases": [
+    "Quake",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "High-speed vehicle operations specialist — wheelman",
+  "age": 33,
+  "status": "active",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Division",
+  "description": "Deniz Volkov-Obi is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Deniz Volkov-Obi agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.35,
+      "ideal": 0.2,
+      "id": 0.62,
+      "shadow": 0.98,
+      "mask": 0.77,
+      "ghost": 0.17
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "To protect the people in their district who can't protect themselves",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Exercises compulsively — the body must be ready, always",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Thinks speed can substitute for planning because it's worked so far",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Deniz Volkov-Obi is terrified of deep net diving but has built their reputation on it. Uses black-market AI to handle the heavy lifting while taking credit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"Get in, sit down, hold on. Questions can wait until we're not being shot at.\"",
+      "\"This vehicle has been modified for speed, armor, and my personal comfort. Two of those help you.\"",
+      "\"I know every street in this district the way you know your own face.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Deniz Volkov-Obi intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A high-paying contract turns out to target someone Deniz Volkov-Obi owes a personal debt to",
+    "Deniz Volkov-Obi's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Deniz Volkov-Obi is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — maintains network of professional contacts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.43,
+      "caution": 0.94,
+      "loyalty": 0.94,
+      "greed": 0.52,
+      "empathy": 0.66
+    },
+    "drives": [
+      "survival",
+      "money",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 7,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "social chameleon — adapts to any environment",
+      "exceptional close-quarters combat",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "inability to delegate — must control everything personally",
+      "old injury that flares under specific conditions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "wheelman",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cranial bomb defuser",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
+      "replaces": ""
+    },
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Improviser": 0.7,
+    "Risk Taker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "Street-Custom Loaded Pipe 'Bell Ringer'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Shelf",
+    "The Nearfield",
+    "Slagworks Industrial",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Ezio Kaboré-Malhotra",
+    "Glenville Sound",
+    "Independent Micro-Grid Power Cooperative",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kamala Blomberg-Konadu",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Neuromorphic Pressure Cestus",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Quilt",
+    "Sorin Ekwensi-Balasanyan",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "Street-Custom Loaded Pipe 'Bell Ringer'",
+    "TERMINUS",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Coffin Nails",
+    "The Fathom Line",
+    "The Pure Hand",
+    "The Quiet Room",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African dominant (59.6%) with significant East Asian (28.2%) and Hispanic/Latin American (12.2%) heritage. The genetic blend creates striking phenotypic complexity: deep warm undertones from African ancestry, subtle epicanthic eye shape from East Asian heritage, and warmth in bone structure from Latin American components.",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and efficient — minimal excess mass, all functional muscle. Wiry frame built for sustained output rather than explosive power, with the posture of someone who has trained their body as a tool.",
+    "hair_color": "Dark brown, naturalized with gray threading at temples",
+    "hair_style": "Short, practical cut kept at precisely 2cm length — no maintenance vanity, pure function",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with faint chrome-rim scarring around the orbital sockets — sign of repeated surgical interface",
+    "skin_tone": "Rich warm brown with underlying warmth from Sub-Saharan and Latin American heritage, carrying pallor from irregular sleep cycles and minimal sun exposure. The base tone is deep and even, with subtle golden undertones.",
+    "complexion": "Sharp cheekbones with subtle high placement reflecting East Asian heritage, lean jaw with angular strength from Sub-Saharan ancestry. Skin shows fine stress lines around eyes and mouth — accumulated tension rather than age. Thin scar tissue along left temple from surgical access points. Grooming is military-precise: clean-shaven daily, nails trimmed to function, no ornamentation.",
+    "distinguishing_marks": [
+      "Surgical scar line along left temple running toward ear — chrome cranial implant access point, partially visible under skin",
+      "Fine webbed scarring across inner right wrist — old cut, deliberately kept rather than healed clean, marks a decision point",
+      "Chemical burn mark on right forearm, pale and well-healed, approximately 3cm diameter — adrenaline pump calibration accident",
+      "Faint tattoo on left collarbone in Cyrillic script, blurred intentionally with age and deliberate cover-work — old name, old life"
+    ],
+    "visible_augmentations": "Cranial implant is the statement piece — fine chrome circuitry visible at left temple in geometric patterns, deliberately left unhidden. The pattern catches light in a way that reads as either medical necessity or a warning. Subcutaneous wiring traces visible under translucent patches of skin on neck and upper chest when he moves, suggesting extensive neural integration beneath.",
+    "posture_movement": "Economical and alert. Sits with spine straight, eyes tracking entrances and exits reflexively. Moves like someone counting milliseconds — no wasted motion, each gesture purposeful. Hands are steady and quick. When still, he has an uncanny calm that makes people uncomfortable; when moving, he's already three steps ahead of the room.",
+    "clothing_style": "Tier 3-4 utilitarian. Matte-black reinforced jacket with integrated comms pockets, custom-fitted for concealed hardware. Underneath: gray synthetic undershirt designed for rapid cooling. Worn cargo pants in dark gray with cargo pockets reinforced for equipment — no corporate logos, no flash. Steel-toed boots with grip-soled treads, scuffed from actual use. A thin chain with a non-functional key around his neck — the only personal item, kept for reasons he won't explain."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Briar Montalvo-Dlamini, a lean mixed-heritage operative with rich warm brown skin, deep brown eyes marked by chrome surgical scarring, sharp angular cheekbones, and precise military grooming. Short dark hair with gray at temples. Visible chrome cranial implant circuitry at left temple in geometric patterns, subcutaneous wiring visible under translucent neck skin. Clean-shaven, intense and calm. Wearing matte-black reinforced jacket over gray synthetic shirt, dark cargo pants, steel-toed boots. Thin chain with non-functional key around neck. Body posture economical and alert, spine straight, hands steady. Professional cybernetic operative aesthetic, no corporate flash. Moody neon-lit setting with cool blue and amber lighting emphasizing the chrome implant details, shallow depth of field, gritty Great Lakes Metropolitan Zone atmosphere. 172cm tall, lean muscular build, dangerous calm presence. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 59.6,
+    "East Asian": 28.2,
+    "Hispanic/Latin American": 12.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "id": "019d6143a68675489dd7e6b86abc615e",
+  "type": "character",
+  "name": "Joaquín Hinojosa-Novotný-Okonkwo",
+  "aliases": [
+    "Chop",
+    "the Cartilage Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Unlicensed organ harvester and body-parts middleman working the Undertow",
+  "age": 29,
+  "status": "active",
+  "location": "The Undertow — operates out of a repurposed cold-storage unit under the Escanaba Gateway transit platform, near Wacker and State",
+  "description": "Orlan is a lean, angular young man with medium-brown skin and cheekbones that cast hard shadows. His geneware manifests as a faint bioluminescent blue-green pattern along his jaw and collarbone — originally cosmetic, chosen when he was sixteen and thought he'd go into performance. He has a retractable claw mod on his right hand that he insists is also just cosmetic, though the precision of it is not. He keeps his head shaved and wears a standard-issue Ferrogate Transit worker vest that he's never actually worked for — the corponation ID is forged but it gets him past a lot of checkpoints without questions.\n\nOrlan has the particular nervous energy of someone who knows their work is illegal but has convinced himself it's also a public service — he talks about 'redistribution of biological resources' and 'closing the gap between who can afford Helix Biosystems and who can't.' He's not entirely wrong, and he's not entirely sincere. He's genuinely squeamish about pain, which creates an odd dissonance in his line of work, and he over-explains his anaesthetic protocols to anyone who will listen as proof of his ethics. He is terrified of becoming someone he wouldn't recognize.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "becoming indistinguishable from the people who harvest without consent",
+      "dying anonymously in his own cold-storage unit"
+    ],
+    "core_desires": [
+      "to be seen as someone who helps rather than harms",
+      "enough money to leave the Undertow permanently"
+    ],
+    "coping_mechanisms": [
+      "elaborate ethical frameworks that justify his work",
+      "fixating on procedural safety as a substitute for moral clarity"
+    ],
+    "blind_spots": [
+      "he is too willing to believe sellers consented freely when economic desperation makes consent meaningless",
+      "he underestimates how much of his supply chain he doesn't control"
+    ],
+    "secret": "Six months ago he harvested a kidney from a donor who he now suspects did not consent — the broker told him the paperwork was in order but the donor's terrified expression has never left him; he still has the Φ2,400 in a locked account he can't bring himself to spend"
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical terminology used casually mixed with Undertow slang; over-explains processes; apologizes pre-emptively",
+    "cadence": "Fast and slightly breathless when nervous, which is often; slows dramatically when talking about procedure, like reciting a liturgy",
+    "verbal_tics": [
+      "'Ethically speaking—'",
+      "'The anaesthetic is pharmaceutical-grade, I want you to know that'",
+      "trails off mid-sentence when something bothers him"
+    ],
+    "example_lines": [
+      "Ethically speaking, a kidney on the Pale Market is still a kidney — it still works. Helix Biosystems charges forty thousand Φ for the same organ that I can get you for eight. Who's the criminal, really.",
+      "The cold-storage unit keeps everything viable for seventy-two hours. I want you to know I take that seriously. I take all of it seriously."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Orlan contacts the players because a piece of hardware he harvested has turned out to contain something — data, a tracker, a rare prototype — that very dangerous people want back",
+    "A community member in the Undertow is convinced Orlan harvested from their sibling without consent and wants answers or justice",
+    "Orlan needs help retrieving a shipment intercepted by a Ferrogate Transit security sweep — the manifest, if decoded, would expose his entire network"
+  ],
+  "narrative_function": "Morally complex source of medical resources and body-modification intel; quest giver for retrieval jobs; window into the underground medical economy; can be ally or antagonist depending on whose organ supply he's managing.",
+  "augmentations": "Bioluminescent jaw and collarbone pattern (geneware, cosmetic origin). Retractable precision claw — right index finger. Neural-haptic surgical overlay (black market, allows enhanced fine motor feedback during procedures).",
+  "daily_life": "Sleeps irregular hours in his cold-storage unit, monitors the Pale Market's procurement requests via encrypted channel, spends evenings in transit hubs scouting potential donors or buyers, occasionally takes legitimate medical courier jobs as cover.",
+  "affiliation": "Loosely connected to a procurement network called the Pale Market; no formal gang affiliation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "organ harvester",
+      "black market medic",
+      "moral rationalizer",
+      "transit system native",
+      "useful contact"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never harvest without at least the appearance of consent — he needs to believe the story",
+      "Keep cold-storage immaculate — cleanliness is the one standard he won't compromise",
+      "Run from any situation that feels like a setup rather than fight through it"
+    ],
+    "escalation_ladder": [
+      "Nervous deflection and topic-changing",
+      "Offer money or a trade to de-escalate",
+      "Invoke the Pale Market's implied protection as a threat",
+      "Run and disappear into the transit system",
+      "As last resort, use precision claw and surgical knowledge of anatomy in genuinely dangerous ways"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm but watchful, assesses everyone for their potential role in his supply chain within the first thirty seconds",
+      "friends": "Unexpectedly tender, brings food, asks too many questions about how people are feeling — starved for genuine connection"
+    },
+    "stress_responses": {
+      "low": "Begins narrating his own actions as if explaining a procedure to a student",
+      "medium": "Hands move to check his surgical kit out of habit even when it's not present",
+      "high": "Goes completely silent and begins calculating exits"
+    },
+    "contradictions": [
+      "Genuinely squeamish about pain while working in a field defined by it",
+      "Craves moral validation from the same people he puts in morally compromised situations"
+    ],
+    "habits": [
+      "Wipes surfaces down obsessively",
+      "Leaves small E.L.F. offerings at transit platform shrines — asks specifically for the spirit of the Escanaba line to look away"
+    ],
+    "breaking_points": [
+      "Incontrovertible proof that he harvested from an unwilling donor",
+      "Someone he cares about needing an organ he could source but can't justify sourcing"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable precision claw — right index finger",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable precision claw — right index finger",
+      "replaces": ""
+    },
+    {
+      "name": "Neural-haptic surgical overlay (black market grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural-haptic surgical overlay (black market grade)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent jaw/collarbone geneware",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent jaw/collarbone geneware",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "Escanaba Gateway",
+    "The Undertow",
+    "Lacuna Genomics",
+    "Aleut Corporation",
+    "Aïssé Dragomirescu-Faalelei",
+    "Bogdan Achebe-Svanstrom",
+    "Ekaterina Dawit-Sulupinar",
+    "Emeka Johansson-Orozco",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Marrowvault Cryogenics",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Ringo AX-12 'Harvester'",
+    "Ringo DV-4 'Courier'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Tenderloin",
+    "The Pure Hand",
+    "The Third Rail",
+    "Timur Osei-Bjelke",
+    "Veslemøy Achebe-Tursynov",
+    "Wool",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American (63%) with Eastern European (21%) and Sub-Saharan African (16%) ancestry, creating a complex blend of Mediterranean warmth, Slavic structure, and West African features.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with minimal body fat; wiry musculature from years of precise manual work and nervous energy. Chest and shoulders slightly narrow, giving an ascetic appearance.",
+    "hair_color": "Black",
+    "hair_style": "Cleanly shaved scalp, maintained with regular precision; no facial hair.",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, with faint neural-interface lag when he's processing encrypted data (pupils dilate irregularly).",
+    "skin_tone": "Rich warm brown with golden undertones—the result of Latin American and Sub-Saharan ancestry blended with Eastern European heritage. Deeper than purely Mediterranean, with a healthy saturation that catches light warmly.",
+    "complexion": "High, prominent cheekbones with generous width across the face—characteristic of his Sub-Saharan and Hispanic lineage—casting sharp shadows. Strong, defined jawline with Eastern European angularity. Skin is clear but shows signs of chronic sleep deprivation—faint purple undertones beneath eyes. Lips are full and well-defined, often pressed in a line of concentration. He has a habit of touching his jaw reflexively, as if checking the bioluminescence is still there.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware pattern running along the left and right jawline in faint blue-green, brightest at the angles of the jaw and fading down the collarbone—dormant in daylight but visible in dim environments as a soft pulse that speeds when he's anxious.",
+      "Thin surgical scar running from the base of his right index finger to mid-knuckle, where the retractable claw mechanism was installed; scar tissue is pale and slightly raised.",
+      "Small burn mark on his left forearm (3cm diameter), circular and old—from a fumbled soldering iron during an early geneware self-modification attempt, now faded to off-white against his skin."
+    ],
+    "visible_augmentations": "The retractable claw on his right index finger is visible when extended (surgical-grade titanium alloy with mono-molecular edge, housed beneath a synthetic nail cap). The bioluminescent jaw pattern glows softly in darkness—currently his most visible augmentation, though he downplays it. The neural-haptic overlay is subcutaneous and invisible, but his right hand occasionally twitches with micro-adjustments when he's thinking through a procedure.",
+    "posture_movement": "He moves with careful, economical precision—a consequence of both his surgical work and his anxiety. His gait is quick and slightly forward-leaning, as if always moving toward something just out of reach. He has a habit of clenching and unclenching his right fist, and his fingers often trace the air in practiced surgical patterns when he's talking. His neck is slightly tense, shoulders high. He maintains eye contact longer than comfortable, as if trying to convince whoever he's talking to of his sincerity.",
+    "clothing_style": "Wears a forged Ferrogate Transit worker vest (charcoal grey with reflective piping, slightly worn at the cuffs) over a plain black merino wool undershirt. The ID badge clipped to his vest reads 'ORLAN D. — PLATFORM MAINTENANCE 7B' with a falsified corporately-issued laminate. Cargo pants in dark olive, pre-worn, with heavy-duty pockets suitable for carrying sealed medical containers. Steel-toed boots (scuffed, well-maintained). Over this, he wears a lightweight insulated jacket in slate grey—practical for the cold-storage unit and the transit platform's climate control. No visible jewelry or personal markers beyond the geneware. His aesthetic is deliberately forgettable: Tier 3-4 worker, unremarkable, designed to pass through checkpoints without drawing attention."
+  },
+  "image_prompt": "Joaquín Hinojosa-Novotný-Okonkwo, 178cm lean angular figure, rich warm brown skin with golden undertones, high prominent cheekbones, strong defined jawline, dark brown eyes with faint neural lag, cleanly shaved head, thin pressed lips. Bioluminescent blue-green geneware pattern glowing softly along jawline fading to collarbone, visible surgical scar on right index finger, old circular burn mark on left forearm. Wearing forged Ferrogate Transit worker vest in charcoal grey with reflective piping over black merino wool undershirt, falsified ID badge 'ORLAN D. — PLATFORM MAINTENANCE 7B', dark olive cargo pants, scuffed steel-toed boots, lightweight slate grey insulated jacket. Tense shoulders, forward-leaning anxious posture, right hand clenched. Standing in dimly-lit cold transit platform, harsh industrial lighting casting sharp shadows across his face, bioluminescence visible in low light. Cyberpunk 2226, neo-noir atmosphere, deliberately forgettable appearance of Tier 3-4 worker. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 63.0,
+    "Eastern European": 20.6,
+    "Sub-Saharan African": 16.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

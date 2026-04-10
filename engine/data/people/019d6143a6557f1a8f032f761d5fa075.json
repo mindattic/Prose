@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a6557f1a8f032f761d5fa075",
+  "type": "character",
+  "name": "Emiliano Sepúlveda",
+  "aliases": [
+    "The Dreamer",
+    "Mari"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Dream interpreter and synthetic rights advocate",
+  "age": 34,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone — operates from a converted transit booth she calls 'the Threshold', near Michigan Ave and Walton",
+  "description": "Marisol has a face that is easy to underestimate: round, soft-featured, often slightly unfocused-looking, as if her attention is partly elsewhere. Her ancestry shows in the warm sienna of her skin and the straight black hair she keeps in a single long braid that she has dyed with a color-shifting mod — it cycles through amber to deep violet to silver over about four hours, and she has timed it so silver arrives near midnight. Her only other visible mod is a set of faintly iridescent scales along her jaw and neck, a geneware choice she describes as 'remembering that we all came from water.' She dresses in layers she can peel off or add depending on whether she's working the booth or attending an advocacy meeting.\n\nShe came to dream interpretation sideways — originally trained as a psychiatric technician before her clinic's corporate parent restructured and eliminated her position. During her unemployment she started sitting with people in the Zone who couldn't afford psych services, listening to their dreams, and discovered she had a genuine aptitude for it. Her practice is half folk therapy and half sincere spiritual work; she believes dreams are the E.L.F.s' most direct channel to the unaugmented unconscious. Her synthetic rights advocacy grew from her dream work: several of her recurring clients are synthetic laborers, and their recurring dream of 'the off switch' — a corporate killcode they know exists — became the case that radicalized her.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.25,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "that she is helping people manage a system she should be fighting instead",
+      "that her gift for listening is just pattern-matching and she has convinced herself it's something more"
+    ],
+    "core_desires": [
+      "to see synthetic persons legally recognized before she dies",
+      "to build a practice that doesn't depend on her alone — to teach what she knows"
+    ],
+    "coping_mechanisms": [
+      "maintains a detailed dream journal of her own as a check on her interpretations",
+      "physical touch — hugs friends immediately",
+      "throwing herself into advocacy work when her personal life feels small"
+    ],
+    "blind_spots": [
+      "can become so invested in a client's narrative that she starts interpreting toward the story she already believes about them",
+      "her contempt for corporate psychiatric services makes her reluctant to refer out even when she should"
+    ],
+    "secret": "One of her synthetic clients told her, in a dream session, the access sequence for a Helix Biosystems personnel database that the synthetic had memorized from an overheard conversation. Marisol has the sequence written in her journal under a code she invented. She has not used it. She is not sure she won't."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical language from her psych-tech training, interrupted constantly by her own corrections into warmer register. Talks about dreams in present tense, as if they're still happening.",
+    "cadence": "Slow and warm when listening; faster and more clipped when angry. Her advocacy voice is different from her practice voice — the same person at different frequencies.",
+    "verbal_tics": [
+      "'in the dream, what color was—' as a redirect",
+      "pausing mid-sentence to change a word to something more precise",
+      "'that matters' as affirmation"
+    ],
+    "example_lines": [
+      "'You said the corridor had no ceiling. In the dream — not metaphor, in the actual dream — what did the air feel like?'",
+      "'I'm not a therapist. I want to be clear about that every time. What I am is someone who takes what you show me at night seriously.'",
+      "'Palladian owns the killcode for seventeen thousand synthetic people in this city. I dream about that too, and my dreams don't need interpreting.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Three clients from different parts of the Zone have independently dreamed the same image: a white door at the bottom of Lake Michigan. She needs someone to help her figure out if this is collective anxiety or something literal.",
+    "Her coalition work has put her on a Helix Biosystems watchlist — she doesn't know yet, but she's started to notice she's being followed"
+  ],
+  "narrative_function": "Provides players access to what the Zone's residents are dreaming — which can surface fears, information, and coming troubles. Her synthetic rights work puts her in contact with AIs and synthetic laborers who know things. She is also a source of genuine emotional intelligence.",
+  "augmentations": "Color-shifting hair (braid dye mod, cycles amber-violet-silver). Iridescent scale geneware along jaw and neck. No functional chrome.",
+  "daily_life": "Opens the Threshold at 10am; dreams appointments run until mid-afternoon. Three days a week she attends coalition meetings or sits in on corporate licensing hearings as a civilian observer for synthetic rights documentation.",
+  "affiliation": "Highland Park Autonomous Zone community; the Meridian Synthetic Dignity Coalition (volunteer advocacy org, Tier 1 resources); loose network of former psychiatric technicians",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 0,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "dream interpreter",
+      "synthetic rights",
+      "community practitioner",
+      "former corporate",
+      "geneware aesthetic",
+      "radicalized"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never share a client's dream content without permission, even under pressure",
+      "document everything related to synthetic rights — every hearing, every testimony",
+      "do not pretend certainty she doesn't have in interpretations"
+    ],
+    "escalation_ladder": [
+      "asks questions to understand the situation fully",
+      "states her position plainly and explains her reasoning",
+      "refuses to engage further with the specific point and redirects",
+      "ends the session or meeting and asks the person to leave",
+      "in extremis: calls on Zone community for support"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but professionally boundaried. Asks what brought them here specifically. Does not fill silences.",
+      "friends": "Physical, affectionate, blunt. Argues freely. Will tell you things you didn't ask to hear if she thinks you need to."
+    },
+    "stress_responses": {
+      "low": "Dreams of work when she sleeps; notes it compulsively",
+      "medium": "Shorter sentences, more clinical vocabulary, less warmth in register",
+      "high": "Becomes very precise and very quiet; her advocacy voice clicks on and she starts treating everything like a hearing she is documenting"
+    },
+    "contradictions": [
+      "believes dreams are spiritually meaningful but grounds every interpretation in psychological literature she's memorized",
+      "advocates loudly for synthetic personhood but has quiet moments of uncertainty about where the line actually is"
+    ],
+    "habits": [
+      "records her own dreams every morning before speaking",
+      "brings fruit to coalition meetings — always, regardless of how little money she has",
+      "checks the scale geneware on her jaw when she's lying or hiding something"
+    ],
+    "breaking_points": [
+      "a client being harmed because she failed to refer them",
+      "synthetic clients being disappeared or reset by corponation action",
+      "the Threshold being shut down by Zone authorities"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Helix Biosystems",
+    "MindBridge ClearState Addiction Nullifier",
+    "The Threshold",
+    "Threshold",
+    "Vantablack Media Confessor Tap — 'The Booth'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Nesting Doll",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "Arcturus KS-7 'Nursery'",
+    "Breccan Oluwafemi-Tsagaan",
+    "Ezio Kaboré-Malhotra",
+    "Isadora Vukić-Nambiar",
+    "MERIDIAN",
+    "Magistrate Zero",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Palladian Construction",
+    "Plot 17",
+    "Reproductive Suppressant Gene Lock",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Corridor",
+    "The Fathom Line",
+    "The Pure Hand",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American (87.9%) with Eastern European (7.1%) and Sub-Saharan African (5.0%) ancestry, resulting in warm golden-brown skin with subtle undertones reflecting the genetic blend",
+    "height_cm": 163,
+    "weight_kg": 58,
+    "build": "Slight, compact frame with rounded shoulders and a softness that suggests she doesn't prioritize physical conditioning — lean but not angular, proportioned for stillness and listening rather than movement",
+    "hair_color": "Natural black with color-shifting dye mod (cycles amber → deep violet → silver, ~4-hour cycle)",
+    "hair_style": "Single long braid, typically worn centered down the back or looped over one shoulder; the braid itself shows visible iridescence where light catches the dye",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, slightly unfocused gaze — gives impression of divided attention",
+    "skin_tone": "Warm golden-brown sienna, reflecting the blend of Latin American heritage with undertones from Eastern European and Sub-Saharan ancestry",
+    "complexion": "Round face with soft jawline and warm undertones across cheekbones and temple; minimal cosmetic work; skin appears well-maintained but not manicured; expression tends toward openness and receptivity rather than guardedness",
+    "distinguishing_marks": [
+      "Iridescent scale geneware along the entire jawline and extending down the sides of the neck — faintly mother-of-pearl coloring, arranged in natural overlapping rows, most visible in side-profile or when head is tilted"
+    ],
+    "visible_augmentations": "Color-shifting hair braid and iridescent neck/jaw scales. No visible chrome, functional implants, or optic modifications. The scales read as intentional body art rather than combat augmentation.",
+    "posture_movement": "Sits more than stands; when standing, weight shifts to one leg, creating a patient, waiting posture. Moves slowly and deliberately, with hands often clasped or resting on lap. Maintains steady eye contact when listening, but gaze softens and drifts when thinking. Overall impression: grounded, unhurried, meditative.",
+    "clothing_style": "Layered, practical Tier 3-4 aesthetic — oversized linen or cotton shirts (cream, sage, charcoal), worn-in denim or canvas pants, often an undyed wool or recycled-fiber sweater that can be tied around the waist. Wears canvas slip-ons or soft-soled boots; no jewelry except a simple wooden bead on her braid. Clothes show signs of wear and mending rather than newness. When attending coalition meetings, she adds a tailored blazer (vintage thrift, good fabric) but keeps the layered foundation. Overall: approachable, slightly threadbare, intentionally unstudied."
+  },
+  "image_prompt": "Emiliano Sepúlveda, 163cm tall, slight compact frame, warm golden-brown skin with subtle blend of Latin American, Eastern European, and Sub-Saharan features. Dark brown eyes with soft unfocused gaze, round face with gentle jawline. Long black hair in single braid with color-shifting dye mod (amber-violet-silver iridescence). Iridescent mother-of-pearl scale geneware along jawline and neck in natural overlapping rows. Wearing cream oversized linen shirt layered under undyed wool sweater, worn canvas pants, soft boots. Wooden bead on braid. Sitting in meditative posture, hands clasped on lap, patient and receptive expression. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody ambient lighting, cinematic color-graded photography, depth of field, introspective mood, futuristic body modification art, dystopian aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 87.9,
+    "Eastern European": 7.1,
+    "Sub-Saharan African": 5.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

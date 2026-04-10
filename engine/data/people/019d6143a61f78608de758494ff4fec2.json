@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a61f78608de758494ff4fec2",
+  "type": "character",
+  "name": "Kai Árnason",
+  "aliases": [
+    "Gum-Gum",
+    "the Old Pipe"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Elder pipe-folk patriarch and keeper of oral tunnel history",
+  "age": 68,
+  "status": "active",
+  "location": "Deepwell Station, the sprawling pipe-folk encampment called Bellows Town, near sub-level access near LaSalle and Congress",
+  "description": "Ọgụ is a man who looks like he was carved from the same material as the tunnels — his skin is the brown-grey of old concrete, deeply lined, and perpetually damp at the temples from the humidity of Bellows Town. He is larger than you'd expect someone who has spent decades in low-clearance tunnels to be: broad across the shoulders, thick-necked, with hands so calloused they look armored. One leg was crushed in a pressure-seal failure forty years ago and never properly repaired; he walks with a rocking gait and a carved ferroceramic cane he calls his Third Opinion. His eyes are undmodified and dark brown, and his gaze carries the particular weight of someone who has outlived many people he loved and is not surprised by anything anymore.\n\nHe is the closest thing Bellows Town has to a leader, though he would reject the title. He mediates disputes between pipe-folk clans, arbitrates resource-sharing on food and water taps, and is the living archive of Deepwell Station's last sixty years — collapses, floods, disappearances, treaties between tunnel communities. He is warm in the way of someone who has no energy left for performance; he will feed a stranger without asking questions and he will also tell that stranger an uncomfortable truth without softening it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "Bellows Town being discovered and evicted by Ferrogate Transit or another corponation",
+      "Dying before he has passed his oral histories on"
+    ],
+    "core_desires": [
+      "The pipe-folk communities to achieve some form of recognized territorial claim to their tunnels",
+      "To be remembered accurately, not mythologized"
+    ],
+    "coping_mechanisms": [
+      "Turns grief into story — every loss becomes a lesson he narrates to the young",
+      "Physical labor as meditation; he repairs pipes and fittings himself even when it hurts"
+    ],
+    "blind_spots": [
+      "Underestimates how much the younger pipe-folk want surface contact and surface things",
+      "His hatred of augmentation means he sometimes dismisses people with mods as 'surface-contaminated'"
+    ],
+    "secret": "Ọgụ was born on the surface — Calumet Rise, tier 2 family — and chose to disappear underground at age 22 after informing on a neighbor to a Ferrogate Transit security division. The neighbor was evicted and died. He has never told anyone in Bellows Town he was once a surface person."
+  },
+  "speech_patterns": {
+    "vocabulary": "Slow and deliberate; mixes pipe-folk technical terms with formal, almost ceremonial phrasing; quotes tunnel sayings like proverbs",
+    "cadence": "Unhurried to the point of seeming to move in a different time — he pauses between sentences, not between thoughts",
+    "verbal_tics": [
+      "Begins difficult statements with 'Now here's a thing'",
+      "Refers to the tunnels as 'she' and 'her'"
+    ],
+    "example_lines": [
+      "Now here's a thing — she was flooding in that section thirty years before the Transit maps even showed it existed.",
+      "The young ones want to know where to go. The wise ones want to know why it matters."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He possesses oral knowledge of a tunnel route to a pre-city infrastructure vault that he refuses to share until he judges someone trustworthy — the process of earning that trust is itself a small quest",
+    "Someone has been quietly recording his stories and selling transcripts to a Sterling-Nakamura heritage data broker — Ọgụ knows it's happening but not who"
+  ],
+  "narrative_function": "Lore source for tunnel history and underworld geography; faction mediator; can grant or withhold access to pipe-folk resources and knowledge; his approval is social currency in the deep levels",
+  "augmentations": "None — he is philosophically opposed to augmentation, viewing it as a surface-world dependency that creates vulnerabilities underground; his cane is the only technology he trusts",
+  "daily_life": "Wakes early to walk Bellows Town's perimeter — he says the settlement tells him its mood through the sounds the pipes make. Spends mornings in arbitration or teaching younger pipe-folk tunnel repair skills. Evenings are for storytelling and the careful rationing of a small still-fermenting brew he makes from fungal mash.",
+  "affiliation": "Bellows Town pipe-folk community; elder neutral party among Undertow clans",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 3,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "elder",
+      "oral-historian",
+      "community-anchor",
+      "surface-refugee"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not act against the collective safety of Bellows Town for any individual benefit",
+      "Refuses to speak to anyone who has harmed a child in his community, full stop, regardless of circumstances"
+    ],
+    "escalation_ladder": [
+      "Listens completely before responding",
+      "States his position as community consensus, not personal opinion",
+      "Invokes the weight of sixty years of tunnel history and lets silence do the rest"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Genuinely hospitable — feeds them, asks where they came from and treats the answer seriously",
+      "friends": "Teases with affectionate ruthlessness; remembers everything they've ever told him"
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more deliberate",
+      "medium": "Begins moving — walks the perimeter, repairs something",
+      "high": "Goes completely still and says exactly what the situation is, flatly, without comfort"
+    },
+    "contradictions": [
+      "Preaches collective good but secretly keeps his own origin story private — the one history he won't share"
+    ],
+    "habits": [
+      "Runs his thumb along the ferroceramic grain of his cane when thinking",
+      "Sleeps sitting up, claiming it's easier on his leg but actually because he startles awake from recurring dreams"
+    ],
+    "breaking_points": [
+      "A corponation survey crew appearing at the Bellows Town entrance would bring out a capacity for organized resistance he's never had to show"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Commander": 0.9,
+    "Natural Authority": 0.9,
+    "Vanguard": 0.9,
+    "Standard Bearer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Calumet Rise to a surface-dwelling family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Informed on a neighbor to Ferrogate Transit; neighbor evicted and died",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Descended into the tunnels and never returned to the surface",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Leg crushed in the Deepwell pressure-seal failure; repaired by pipe-folk medicine",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Recognized as Bellows Town's senior arbitrator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Full Clearance (The Erasure Mix)",
+    "The Heritage Vault",
+    "Concrete",
+    "Electrothermal Compression Lance ETCL-9 'Ironlung'",
+    "ARCHIVE",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Bathysphere Networks",
+    "Breck Tannen",
+    "Calumet Rise",
+    "Emeka Johansson-Orozco",
+    "Ferrogate Transit",
+    "Gavril Asante-Puusepp",
+    "Idris Forsberg-Quaye",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Narrowcast",
+    "NeuralPath Conduit Everyday Neural Mesh",
+    "PulsePoint AerExpand Pulmonary Efficiency Implant",
+    "PulsePoint AerWork Pulmonary Work Implant",
+    "SafeStep Promenade Defender PD-2 'Elderwood'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA ES-4 'Perimeter'",
+    "The Burden Clause",
+    "The Collective",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Northern European (Scandinavian), East Asian, Hispanic/Latin American, with Indigenous American ancestry—a diaspora blend reflected in his phenotype: fair-to-medium undertones from Northern European ancestry tempered by East Asian and Hispanic/Latino genetic expression, creating a warm, weathered complexion that suggests global heritage rather than any single continental origin",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Broad-shouldered and thick-necked despite decades in confined spaces; age has not diminished his mass, only redistributed it — chest and shoulders still powerful, abdomen thick with settled weight. His left leg is noticeably thinner than the right, atrophied from decades of reduced use.",
+    "hair_color": "Grey-white with residual dark brown at the roots",
+    "hair_style": "Short, cropped close to the scalp, streaked with moisture-darkened sections",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unmodified",
+    "skin_tone": "Warm tan-to-bronze with olive undertones—weathered and damp-darkened at temples and jaw, reflecting the blend of Northern European baseline with East Asian and Hispanic/Latino ancestry genetics; the overall effect is earthy and time-worn, like aged leather left in humid climates",
+    "complexion": "Deeply lined face; crow's feet, forehead creases, and nasolabial folds cut deep; perpetually damp at the temples and along the jawline from Bellows Town's constant humidity; sparse beard stubble, salt-and-pepper, often unshaven; skin texture rough and weather-stained, hands especially calloused and grey at the knuckles; facial structure shows the blended heritage in moderate cheekbone prominence and jaw geometry",
+    "distinguishing_marks": [
+      "Extensive scarring across both palms and the backs of his hands — linear burn and pressure-seal marks from decades of tunnel work, pale against darker skin",
+      "A deep, discolored scar running along his left shin and knee from the pressure-seal failure forty years ago — the limb itself slightly shorter and visibly thinner than the right",
+      "Faint horizontal scarring across his right forearm — old rope burns",
+      "A dark, aged tattoo on his left chest near the shoulder — abstract geometric pattern, faded and slightly distorted by loose skin, design unknown to outsiders"
+    ],
+    "visible_augmentations": "None. He carries a hand-carved ferroceramic cane (called 'Third Opinion') with grip marks worn smooth by decades of use; this is his only trust technology.",
+    "posture_movement": "Walks with a pronounced rocking gait due to his compromised left leg — the cane absorbs significant weight. His upper body compensates with slight lateral sway. Despite this, he moves with deliberate purpose; no wasted motion. When seated, he sits low and deep, as if settling into weight. His gaze is steady and unflinching; he makes direct eye contact and holds it without challenge.",
+    "clothing_style": "Tier 5 utilitarian pipe-folk: layers of durable, patched fabric in browns and greys — a heavy canvas or rubberized long-coat over multiple undershirts, all worn thin at the elbows and cuffs. His trousers are reinforced at the knees with darker fabric. Boots are heavy, split-leather, resoled multiple times. He wears no jewelry, no ornamentation, no status markers. Everything he wears serves a function or serves no purpose at all."
+  },
+  "image_prompt": "Kai Árnason, 188cm tall weathered man with warm tan-bronze skin, grey-white cropped hair with dark roots, deep brown eyes; prominent facial scars and lines across a lean, angular face shaped by decades underground. Extensive pale burn scarring across both hands, pale rope-burn scars on right forearm. Left leg visibly atrophied, thinner than right. Wearing patched heavy canvas long-coat in browns and greys over multiple undershirts, reinforced trousers, split-leather boots resoled many times. Carrying a hand-carved ferroceramic cane worn smooth by use. Pronounced rocking gait, deliberate purposeful movement despite compromised mobility. Direct unflinching gaze. Bellows Town pipe-folk, 2226, cyberpunk Great Lakes Metropolitan Zone setting, perpetually damp atmosphere, industrial tunnels and confined spaces in background, warm amber-grey lighting casting deep shadows across weathered face and scarred hands, humble utilitarian aesthetic, no augmentation visible. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 50.7,
+    "East Asian": 27.9,
+    "Hispanic/Latin American": 17.0,
+    "Indigenous American": 4.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

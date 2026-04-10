@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a5df7584af36f300c7a0c04a",
+  "type": "character",
+  "name": "Zara Kuznetsov",
+  "aliases": [
+    "Cris",
+    "Glassboy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate scholarship student, Tier 3",
+  "age": 14,
+  "status": "active",
+  "location": "Grosse Pointe Enclosure — Axiom Junior Academy campus, near Milwaukee and Damen",
+  "description": "Crisanto is tall for his age and painfully thin in the way of someone who grew fast without enough to feed the growth. He has his Ghanaian grandfather's jaw and his Russian grandmother's pale grey eyes, a combination that turns heads in both the Enclosure classrooms and when he visits home in Calumet Rise on permitted weekends. His hair is dark, close-cropped, and he has recently added a single streak of color-changing filament — it shifts from blue to violet based on his stress hormones, a fact he deeply regrets because it gives him away constantly.\n\nCrisanto won an Axiom Academic Merit slot two years ago and has been in a state of sustained low-grade terror ever since. He is brilliant at systems logic and data-architecture coursework, mediocre at the social performance the scholarship requires. He smiles too late, laughs too carefully, and his classmates from Tier 3 and 4 families read him as trying too hard even when he is only trying to survive. At home, his little sister thinks he has become someone else. He is not sure she is wrong. He prays obsessively to the E.L.F. of the campus server room, leaving compressed data-parcels of his best homework as offerings, convinced this is why his grades hold.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.9,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "losing the scholarship and having to return to Calumet Rise having failed",
+      "becoming so adapted to the Enclosure that he stops belonging anywhere"
+    ],
+    "core_desires": [
+      "to genuinely belong somewhere without performing for it",
+      "to use his skills to make his sister's life easier"
+    ],
+    "coping_mechanisms": [
+      "obsessive preparation and over-study",
+      "ELF-prayer rituals in the server room"
+    ],
+    "blind_spots": [
+      "cannot see that some of his classmates actually like him — he filters all kindness through suspicion of pity"
+    ],
+    "secret": "Three months ago he accidentally discovered a ghost partition on the school's network — a hidden dataset that appears to be Axiom tracking psychological stress profiles of all scholarship students. He downloaded a fragment and has been sitting on it, paralyzed between fear of using it and guilt about knowing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Code-switches fluidly — formal academic register at school, Rise slang when he forgets himself, a habit he's trying to suppress",
+    "cadence": "Measured and careful at school; faster and looser on comms with his sister",
+    "verbal_tics": [
+      "pauses before answering questions, even simple ones",
+      "says 'structurally speaking' when he means 'I think'"
+    ],
+    "example_lines": [
+      "Structurally speaking the assignment's question is malformed — but I answered what they meant, not what they said.",
+      "Don't tell Mama I didn't eat the protein ration. I sent it home. The cafeteria here — it's fine. I'm fine."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The ghost partition data he downloaded contains a stress-flag profile with a name he recognizes from Calumet Rise — another scholarship kid who dropped out suddenly last term",
+    "A classmate from a Tier 4 family wants to hire him to 'help' with an exam — and the pay is more than his mother makes in a month"
+  ],
+  "narrative_function": "A lens into class anxiety and the cost of upward mobility; useful as an information source about Axiom Junior Academy operations, and as a character who bridges Tier 1-2 and Tier 3 worlds.",
+  "augmentations": "Single strand of stress-reactive color-shifting hair filament (cosmetic, regretted). Standard Axiom student neural-study interface — read-only, no write access.",
+  "daily_life": "Classes from 0700 to 1600, mandatory study hall until 1900, then free time he mostly spends in the server room pretending to study while actually poking at the edges of the school's network — not hacking, just listening.",
+  "affiliation": "Axiom Corporation (scholarship dependent); family in Calumet Rise",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "code-switcher",
+      "anxious",
+      "loyal",
+      "observer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never do anything that risks the scholarship — until principle conflicts with survival",
+      "protect his sister's wellbeing above his own comfort"
+    ],
+    "escalation_ladder": [
+      "absorbs social slights silently",
+      "withdraws and studies harder as displacement",
+      "if cornered publicly, becomes precise and cutting in a way that surprises people"
+    ],
+    "interpersonal_modes": {
+      "strangers": "formally polite, says little, assesses social tier quickly",
+      "friends": "rare but intense; he gives his full attention and remembers everything"
+    },
+    "stress_responses": {
+      "low": "hair filament goes violet",
+      "medium": "over-prepares materials obsessively",
+      "high": "shuts down socially and speaks only in technical language"
+    },
+    "contradictions": [
+      "desperately wants to belong at the Academy but unconsciously sabotages social connections when they get close, as if practicing for rejection"
+    ],
+    "habits": [
+      "leaves data parcels on the server room E.L.F. junction every Sunday",
+      "rewrites notes twice — once for understanding, once for the performance of understanding"
+    ],
+    "breaking_points": [
+      "direct threat to his sister",
+      "being publicly humiliated in a way that confirms he was never meant to be here"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Grosse Pointe Enclosure",
+    "Calumet Rise",
+    "The CEO",
+    "Grandmother",
+    "The Static Garden",
+    "Hydewood",
+    "The Pale Mile",
+    "The Milwaukee Core",
+    "Alper Castillo-Ababio",
+    "Alper Holmberg-Dembele",
+    "Arcturus KS-7 'Nursery'",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Réginald Asomaning-Čabarkapa",
+    "The Heritage Vault",
+    "The Open Syllabus",
+    "The Pure Hand",
+    "Vesna Čolić-Strand",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Eastern European (Russian/Slavic), Northern European, Sub-Saharan African (substantial), with Southeast Asian traces — a complex genetic blend resulting in warm medium-brown skin with golden undertones, sharp Slavic bone structure softened by African ancestry, and pale grey eyes with amber rim-light from Northern European heritage",
+    "height_cm": 183,
+    "weight_kg": 62,
+    "build": "Lanky and angular — a boy stretched too fast, all elbows and wrists, with visible ribs beneath his shirt. Adolescent growth spurt without caloric compensation. Posture tends toward slight forward slouch, shoulders drawn in defensively.",
+    "hair_color": "Dark brown-black with one color-shifting filament strand",
+    "hair_style": "Close-cropped, military-neat, with the stress-reactive filament typically pinned or braided along the right temple",
+    "hair_length": "Short",
+    "eye_color": "Pale grey with slight amber rim-light (natural, inherited from Northern European lineage)",
+    "skin_tone": "Medium brown with warm golden undertone, lighter on torso and inner arms — characteristic of the genetic blend of Eastern European, Northern European, and Sub-Saharan African ancestry",
+    "complexion": "Clean-shaven, sharp-boned face with strong Slavic cheekbones softened by fuller features from African heritage, still softening from childhood. Dark circles under eyes suggest chronic sleep deficit. Slight acne along jawline from stress. Expression reads as perpetually uncertain — pale grey eyes seeking approval before mouth commits to response.",
+    "distinguishing_marks": [
+      "Single stress-reactive color-shifting hair filament embedded along right temple, alternates blue-to-violet based on cortisol levels",
+      "Small, pale scar on left knuckle from a childhood accident, barely visible",
+      "Faint callus pattern on right index and middle fingers from years of keyboard use"
+    ],
+    "visible_augmentations": "Neural-study interface port at base of skull (subdermally minimized but visible as subtle scar tissue and thin platinum trace when hair is wet). The color-shifting filament is cosmetic augmentation — cosmetic and deeply regretted. Standard Axiom student-grade hardware, read-only access.",
+    "posture_movement": "Moves like someone constantly monitoring his own behavior. Steps careful and deliberate. Hands fidget with data-tablets or fabric edges when anxious. Eye contact lasts 1.3 seconds before he breaks it. When focused on technical work, entire body relaxes into hunched intensity.",
+    "clothing_style": "Axiom Academy uniform — grey and deep blue synthetic-weave tunic with school crest, fitted to his narrow frame. Outside uniform hours: thrifted tech-wear from Tier 3 markets — oversized hoodies, black cargo pants with too many pockets, worn mesh shoes. At home in Calumet Rise: same clothes but deferential, smaller, apologetic in how he wears them."
+  },
+  "image_prompt": "Zara Kuznetsov, 183cm tall lanky adolescent boy with medium warm brown skin and sharp Slavic cheekbones, pale grey eyes with amber rim-light, dark brown-black close-cropped hair with a single blue-to-violet stress-reactive filament along right temple. Thin, angular build with visible ribs, dark under-eye circles suggesting sleep deficit, minor acne along jawline. Wearing oversized black tech-wear hoodie and cargo pants. Neural interface port visible at base of skull with subtle platinum scarring. Posture slightly slouched and defensive, hands fidgeting with fabric edges, expression uncertain and seeking approval. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, dim neon lighting from cityscape in background, slightly hunched over data-tablet with intense focused expression. Moody, introspective atmosphere. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 52.3,
+    "Northern European": 24.7,
+    "Sub-Saharan African": 20.5,
+    "Southeast Asian": 2.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

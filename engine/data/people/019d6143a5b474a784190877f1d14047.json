@@ -1,0 +1,293 @@
+{
+  "id": "019d6143a5b474a784190877f1d14047",
+  "type": "character",
+  "name": "Slate Kovács-Vaai",
+  "aliases": [
+    "Nou",
+    "Nouka"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Street-level noodle cart vendor",
+  "age": 26,
+  "status": "active",
+  "location": "The cart circuit: mornings at Calumet Rise worker gate, afternoons at Deepwell Station plaza, evenings outside the Ferment Quarter, near sub-level access near State and Van Buren",
+  "description": "Anouk has the kind of face that changes depending on what they're feeling — not through any augmentation, but because their expressions are theatrical and unguarded, eyebrows mobile as flags. Their skin is deep brown with a warm undertone, and they have a bioluminescent patterning along their collarbone and upper arms: a cascade of soft teal dots that pulse gently when their body temperature rises — which it frequently does over a cooking cart. Their hair is kept in a high puff wrapped in orange synthetic silk, and they wear a secondhand Arcturus-branded apron they've covered in patches, safety pins, and one embroidered patch that reads 'ASK ME ABOUT BABA STOCK' in blocky letters.\n\nThe cart is called Threefold, named for the three broths Anouk cycles through depending on their mood and what they could source cheaply. They are exuberantly social, know regulars by name and usual order, and maintain a strict policy of sliding-scale pricing that they enforce entirely based on vibes — they have never written it down and deny having a system, but longtime customers know that if Anouk likes you and you look hungry, you pay less. They pray to a small E.L.F. they call the Burner before every cook session, leaving a data-chip with a new recipe they've invented as an offering. They believe sincerely that the Burner makes the broth better.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Losing the cart and with it the only thing that is entirely theirs",
+      "Being ordinary — being someone no one stops for"
+    ],
+    "core_desires": [
+      "To open a real restaurant someday, just one room, just their food",
+      "To be loved without having to perform for it"
+    ],
+    "coping_mechanisms": [
+      "Cooking as emotional regulation",
+      "Deflecting difficult feelings with humor and volume"
+    ],
+    "blind_spots": [
+      "Overgives to people who exploit their generosity, then resents them without saying so",
+      "The cart's finances are worse than they admit to themselves"
+    ],
+    "secret": "One of their regulars — a quiet man who eats at the Deepwell stop every Tuesday — has been paying three times the price and leaving without change for a year. Anouk found out he's a low-level Tessera facilities worker who lost a child and comes to the cart because it was where he used to bring her. Anouk hasn't told anyone and saves his usual table obsessively."
+  },
+  "speech_patterns": {
+    "vocabulary": "High-energy, food-metaphor-heavy, occasional Twi or Bosnian interjection",
+    "cadence": "Fast, overlapping, hard to interrupt — they talk while they cook and barely pause",
+    "verbal_tics": [
+      "'Okay but listen—'",
+      "'That's a cold broth problem' (meaning: bad situation that's been left too long)"
+    ],
+    "example_lines": [
+      "'Okay but listen — I put the fermented lime in the Threefold Three today, you want the Three, I'm telling you, I woke up at 3 AM thinking about the Three.'",
+      "'You look like a cold broth problem. Sit down. Eat first. Then tell me.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A supplier from the Grainfort wholesale market has started pushing unusual synthetic protein that Anouk can't identify but that makes the broth unnervingly popular — something is in the additive.",
+    "The Calumet Rise vendor cooperative is being strong-armed into accepting a Zheng-Dao food-service contract that would displace independent carts; Anouk is the loudest voice against it but also the most financially vulnerable."
+  ],
+  "narrative_function": "Social hub of street-level information; pulse-point for neighborhood mood; can introduce players to a wide web of working-class contacts. Potential quest giver for local disputes or ingredient sourcing gone strange.",
+  "augmentations": "Cosmetic geneware: bioluminescent teal subdermal dot pattern across collarbone and upper arms. Heat-resistant dermis on both hands (functional mod, bought over two years of installments).",
+  "daily_life": "Up at 04:30 to source ingredients and prep stock; on location at Calumet Rise by 06:30; moves the cart to Deepwell by noon; ends the day at the Ferment Quarter edge until they sell out or run out of energy.",
+  "affiliation": "Independent; licensed through the Calumet Rise vendor cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street vendor",
+      "community heart",
+      "E.L.F. devotee",
+      "bioluminescent",
+      "sliding-scale economics"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed people first, sort the rest out later",
+      "Never let someone eat alone if they look like they're struggling"
+    ],
+    "escalation_ladder": [
+      "Offer food and gentle deflection",
+      "Ask directly with full attention",
+      "Advocate loudly on someone's behalf to a third party",
+      "Get other vendors involved",
+      "Make a scene — Anouk is very good at making scenes"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, immediately offering something, subtly reading them for what they actually need",
+      "friends": "Overwhelming affection, constant feeding, will fight anyone who harms them"
+    },
+    "stress_responses": {
+      "low": "Talks faster and makes more jokes",
+      "medium": "Goes quiet and cooks something complicated that doesn't need to be cooked",
+      "high": "Closes the cart mid-service and calls their oldest friend, voice cracking"
+    },
+    "contradictions": [
+      "Believes deeply that food should be for everyone but prices their labor in ways that keep them perpetually broke"
+    ],
+    "habits": [
+      "Leaves a small data-chip offering at Baba Burner's shrine before each cook session",
+      "Always tastes the broth an even number of times — never odd"
+    ],
+    "breaking_points": [
+      "Watching someone take food from a child",
+      "Being told their food is 'just cart food'"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Heat-resistant synthetic dermis overlay, both hands (Helix Biosystems budget line, fully paid off)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Heat-resistant synthetic dermis overlay, both hands (Helix Biosystems budget line, fully paid off)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent geneware — teal subdermal dot cascade (cosmetic, Narrows clinic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent geneware — teal subdermal dot cascade (cosmetic, Narrows clinic)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Born in Calumet Rise to a Ghanaian-Bosnian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — Saves for two years and buys Threefold cart from a retiring vendor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Joins Calumet Rise vendor cooperative",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Gets heat-resistant dermis mod after a bad burn incident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day; cooperative under development pressure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
+    "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
+    "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'"
+  ],
+  "related_entities": [
+    "The Ferment Quarter",
+    "Deepwell Station",
+    "Calumet Rise",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Grainfort",
+    "Zheng-dao Bioelectric",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Arcturus Defense Solutions",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA TK-4 'Hellhound'",
+    "Silk",
+    "Ablonite-KR",
+    "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Solina Barreto-Kiptoo",
+    "Sorin Ekwensi-Balasanyan",
+    "Tafara Quiñones-Saarinen",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Cosmopolitan diaspora blend: Eastern European (23%), Pacific Islander (21.4%), Sub-Saharan African (14.7%), East Asian (14%), South Asian (13.5%), Northern European (13.4%). Genetic mosaic reflects the Ubiquitous Diaspora—features a warm-toned deep brown complexion with subtle undertones from Pacific Islander and South Asian ancestry, balanced with Northern European genetic markers creating nuanced facial structure.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and sinewy, with developed forearm and shoulder muscle from years of repetitive cart work and lifting heavy stockpots; compact, efficient frame",
+    "hair_color": "Black, natural",
+    "hair_style": "High puff, wrapped in orange synthetic silk",
+    "hair_length": "Medium (worn gathered)",
+    "eye_color": "Deep brown, warm undertone",
+    "skin_tone": "Deep warm brown with golden undertones; melanin-rich with subtle warmth from blended Pacific Islander and South Asian heritage",
+    "complexion": "Smooth, clear skin with warm golden undertones reflecting diverse ancestry; slightly broader cheekbones with gentle angularity from East Asian and Northern European heritage blend; expressive face with mobile eyebrows that move frequently with emotion; face is highly animated and readable; minimal grooming beyond daily care",
+    "distinguishing_marks": [
+      "Bioluminescent teal subdermal dot pattern cascading across collarbone and upper arms, pulses gently when body temperature rises or during exertion",
+      "Heat-resistant callusing and lighter scar tissue across both palms and inner forearms from cart work and steam burns accumulated before thermal hand augmentation"
+    ],
+    "visible_augmentations": "Bioluminescent teal biophotonic pattern across collarbone and upper arms (cosmetic geneware, heat-responsive); visibly tougher, slightly discolored dermis on both hands and forearms indicating heat-resistance augmentation",
+    "posture_movement": "Moves with quick, efficient energy; stands with weight shifted forward slightly, ready to move or gesture; hands animate constantly while speaking; leans into conversations; posture relaxes when focused on cooking but becomes restless during downtime",
+    "clothing_style": "Tier 4 working-class, secondhand and personalized; worn Arcturus-branded apron (secondhand, covered in embroidered patches including 'ASK ME ABOUT BABA STOCK', safety pins, and accumulated vendor cooperative pins); layered with heat-resistant synthetic undergarments; practical closed-toe shoes suitable for cart work; orange synthetic silk head wrap; minimal jewelry except for a small charm or talisman worn on a cord"
+  },
+  "image_prompt": "Slate Kovács-Vaai, 168cm lean sinewy figure with warm deep brown skin and golden undertones, animated expressive face with mobile eyebrows, black hair gathered in high puff wrapped in bright orange synthetic silk. Bioluminescent teal biophotonic subdermal pattern glowing softly across collarbone and upper arms, pulsing faintly with body heat. Visibly callused and scarred hands and forearms from years of heat work. Wearing secondhand Arcturus-branded apron covered in embroidered patches and safety pins over heat-resistant synthetics, practical work shoes. Quick energetic posture leaning forward, hands animated mid-gesture while speaking. Cyberpunk 2200s Great Lakes Metropolitan Zone, vendor cart setting with warm ambient lighting catching the gentle teal bioluminescence, worn but personalized working-class aesthetic, hyperlocal food vendor vibes --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 23.0,
+    "Pacific Islander": 21.4,
+    "Sub-Saharan African": 14.7,
+    "East Asian": 14.0,
+    "South Asian": 13.5,
+    "Northern European": 13.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

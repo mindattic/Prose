@@ -1,0 +1,319 @@
+{
+  "id": "019d6143a72f78588388e6ed60294a5e",
+  "type": "character",
+  "name": "Aero Ingebrigtsen",
+  "aliases": [
+    "Ysa",
+    "Ironmask"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Union organizer and strike coordinator",
+  "age": 27,
+  "status": "active",
+  "location": "Dearborn Forge, near Damen and Armitage",
+  "description": "Ysolde is wiry and kinetic, never quite still — they bounce a knee, tap a pattern on surfaces, turn a stylus through their fingers in endless loops. Their skin is medium brown, their eyes modified to shift through a slow amber-to-green cycle they bought on installment from a bodmod stall and haven't finished paying off. They keep their hair long and loose on days off and braided tight when they're working, and they have a small constellation of bioluminescent freckles across their nose and cheekbones that pulse faintly when they're excited or angry — which is most of the time.\n\nYsolde organizes Ferrogate Transit maintenance workers across three Dearborn Forge yards, in direct defiance of both Ferrogate's union-busting contractors and a faction within the official union that has grown comfortable with management. They're charismatic in the way of someone who has figured out exactly how to make you feel heard and then redirect that energy into collective action — they're not manipulative, exactly, but they are deliberate. They take risks that frighten older organizers. They also show up at 05:30 when someone's shift starts and stay until the last worker goes home.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Getting people hurt because they moved too fast",
+      "Being bought out or neutralized the way the official union leadership was"
+    ],
+    "core_desires": [
+      "A genuine wildcat strike that forces Ferrogate to the table",
+      "To build something that keeps working after they're gone"
+    ],
+    "coping_mechanisms": [
+      "Physical movement — long runs, sparring",
+      "Gallows humor about corporate power",
+      "Redirecting personal anxiety into organizing tasks"
+    ],
+    "blind_spots": [
+      "Overestimates how much personal charisma can substitute for institutional structure",
+      "Struggles to see that some of the older workers' caution comes from wisdom, not cowardice"
+    ],
+    "secret": "Ferrogate's internal security division has offered them a quiet settlement twice — money, relocation, a clean record. They've refused both times. But they told no one they were offered it, because they're terrified their network would wonder why Ferrogate wanted them gone badly enough to pay for it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Vernacular-heavy, labor slang, code-switches into French phrases they picked up from their Malian grandparent; efficient and concrete",
+    "cadence": "Fast, punchy, uses rhetorical questions constantly",
+    "verbal_tics": [
+      "'You hear me?'",
+      "'That's not solidarity, that's performance'",
+      "Starts sentences with 'Okay, so—'"
+    ],
+    "example_lines": [
+      "'Okay, so — you know what Ferrogate called the safety violation that took Doru's hand? An acceptable operational variance. You hear me? Acceptable. We are going to make it unacceptable.'",
+      "'That's not solidarity, that's performance. Showing up to one vigil and posting about it is not the same as being on the line at five in the morning, friend.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate security contractor has been photographing workers who talk to Ysolde — someone in the network may be feeding them names",
+    "A planned work stoppage is 48 hours away and someone has tipped off management — Ysolde needs to know who and whether to abort",
+    "An older worker Ysolde mentored has been offered a supervisory role by Ferrogate — they're considering taking it, and Ysolde doesn't know how to process the betrayal"
+  ],
+  "narrative_function": "Quest giver, local color, fixer within working-class networks — knows every maintenance worker, freight handler, and yard supervisor across the Dearborn yards. Can provide access, safe harbor, or boots-on-the-ground numbers.",
+  "augmentations": "Color-cycling eye modification (amber to green, installment-plan bodmod); bioluminescent freckle array (chest and face); a cheap neural ping implant that lets them push alerts to their network contacts",
+  "daily_life": "Early mornings at the yard gates talking to workers coming off overnight shifts. Days spent in the stalls and common areas of Dearborn Forge, meeting in ones and twos. Evenings coordinating with the broader network over encrypted channels. They sleep in rotating locations — officially their address is a cousin's flat in Mexicantown Libre.",
+  "affiliation": "Ferrogate Transit Workers' Solidarity Network (wildcat faction); informal ties to the Dearborn Forge neighborhood mutual aid grid",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "organizer",
+      "charismatic",
+      "risk-taker",
+      "labor",
+      "working-class"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Move at the speed of trust — but push the trust as fast as it will go",
+      "Never ask someone to take a risk you won't take yourself",
+      "Protect your network over your plan"
+    ],
+    "escalation_ladder": [
+      "One-on-ones and listening sessions",
+      "Small-group education and grievance mapping",
+      "Coordinated slowdowns",
+      "Public action and work stoppage"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and genuinely curious, makes strong eye contact, remembers names",
+      "friends": "Irreverent, teasing, physically affectionate — hugs, shoulder bumps — shows stress by going quiet"
+    },
+    "stress_responses": {
+      "low": "Talks faster, plans more",
+      "medium": "Long run at 03:00, then back to planning",
+      "high": "Gets very still and starts asking everyone around them targeted questions — unnerving shift from their usual energy"
+    },
+    "contradictions": [
+      "Preaches collective decision-making but makes unilateral calls under pressure",
+      "Genuinely loves the people they organize but struggles with the bureaucracy of caring for them individually"
+    ],
+    "habits": [
+      "Leaves small offerings — a printed lyric sheet, a transit token, a candy — for the E.L.F. that lives in the old Ferrogate dispatch terminal they use as a meeting point",
+      "Carries a physical notebook covered in coded organizing maps",
+      "Drinks terrible vending machine coffee and insists it's fine"
+    ],
+    "breaking_points": [
+      "A worker being fired or injured directly because of something Ysolde organized",
+      "Discovering the Ferrogate settlement offers are now public knowledge within their network"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Good, still being paid off",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Fair — range limited",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Mexicantown Libre; Malian-Bosnian heritage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as a Ferrogate Transit yard maintenance apprentice at age 17",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnesses a safety incident that injures a co-worker; formal complaint goes nowhere",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First contact with Solidarity Network; begins organizing training",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First Ferrogate settlement offer — refused; told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Second settlement offer — refused again",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Dearborn Forge",
+    "Dredge Mining Collective",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Cezar Watanabe-Gyasi",
+    "Green Bay Community Table",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Ilhan Sandstrom-Badu",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Lyric",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Mexicantown Libre",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Gallows' Recurve Bow",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Collective",
+    "The Driftyard",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Tomasz Wren",
+    "Tshiamo Vukić-Arellano"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European (Scandinavian) dominant with significant South Asian, East Asian, and Middle Eastern admixture; reflects the Ubiquitous Diaspora with a complex phenotype blending Nordic base with subtle South and East Asian features",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and kinetic, lean muscle with minimal body fat; shoulders slightly narrower than hips; posture that suggests constant motion even when standing still",
+    "hair_color": "Natural dark brown with faint red undertones",
+    "hair_style": "Worn long and loose on days off in natural waves; pulled into tight, compact braids on working days—typically 4-6 thick plaits secured at the nape with recycled polymer clips",
+    "hair_length": "Long (shoulder-length when loose, mid-back when braided)",
+    "eye_color": "Modified: cycles slowly from amber through chartreuse to soft green on ~8-second loop; irises are slightly larger than baseline due to implant housing",
+    "skin_tone": "Fair to light skin with warm golden undertones; reflects Northern European base with subtle warmth from South Asian and Middle Eastern admixture, creating a complexion that appears luminous and warm-neutral rather than pure pale",
+    "complexion": "Youthful face with high cheekbones and a sharp jawline showing South Asian angularity blended with Northern European structure; skin is generally clear but shows signs of inconsistent sleep and stress—faint darkening under eyes; a small scar on the left temple (about 1cm, thin) from a bodmod session gone slightly wrong; subtle epicanthic fold characteristics from East Asian ancestry blend with broader eye set",
+    "distinguishing_marks": [
+      "Bioluminescent freckle array across nose bridge and upper cheekbones (approximately 12-15 points), pale blue-white when active, barely visible when dormant; pulses noticeably during elevated emotional states",
+      "Matching bioluminescent freckle constellation across upper chest (visible only if shirt is open or loose-fitting), radiating outward from sternum in a loose star pattern",
+      "Small circular scar on inner right forearm (neural ping implant insertion point, approximately 0.5cm diameter, pale and clean-edged)"
+    ],
+    "visible_augmentations": "Color-cycling eye modification is immediately apparent due to the slow, continuous hue shift and slightly non-standard iris diameter; bioluminescent freckles are visible on face and chest when garments expose skin, dormant but traceable under close inspection; neural ping implant is subcutaneous and not externally obvious unless clothing is removed",
+    "posture_movement": "Restless and economical; bounces left knee in rapid intervals when sitting; habitually rotates a stylus or small object (pen, data-chip, transit token) through fingers in continuous loops; walks with quick, efficient strides; hands gesticulate frequently during conversation; eyes track movement and entrances constantly; overall impression is of someone running on high alert but not agitated—controlled kinetic energy",
+    "clothing_style": "Tier 3-4 working class with militant undertones; prefers fitted, durable clothing in muted colors (charcoal, deep blue, rust); typically wears secondhand surplus work pants with reinforced knees, thermal base layers, and a faded Ferrogate maintenance union jacket (unofficial, from a previous campaign) with hand-stitched patches; multiple cargo pockets filled with union literature, encrypted data-chips, and snack bars; insulated boots with grip treads suitable for yard work; a worn canvas shoulder bag with frayed straps that carries personal items and organizing materials; minimal jewelry except for a recycled-metal ring on left ring finger (no clear symbolism, just worn). Appearance communicates 'always ready to move, always working, always listening.'"
+  },
+  "image_prompt": "Aero Ingebrigtsen, 168cm wiry lean figure, fair warm-golden skin blending Northern European and South Asian heritage, high cheekbones with subtle East Asian angularity, dark brown hair with red undertones worn long in braids secured with polymer clips, cybernetic eyes cycling amber-chartreuse-green on 8-second loop with oversized irises, bioluminescent freckle constellations pale blue-white across nose and upper chest pulsing softly, faint scar on left temple, controlled kinetic posture, deep blue thermal base layer visible under faded Ferrogate maintenance union jacket with hand-stitched patches, reinforced work pants, grip-treaded boots, worn canvas shoulder bag, recycled-metal ring, hands gesticulating expressively, eyes tracking constantly, cyberpunk 2226 Great Lakes Metropolitan Zone, industrial maintenance yard setting with neon-tinted evening lighting casting warm amber and cool blues, neural implant scar visible on inner forearm, restless energy despite controlled stance, organized working-class aesthetic communicating constant readiness --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 60.8,
+    "South Asian": 16.7,
+    "East Asian": 14.3,
+    "Middle Eastern": 8.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

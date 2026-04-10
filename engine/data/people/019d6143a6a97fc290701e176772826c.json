@@ -1,0 +1,292 @@
+{
+  "id": "019d6143a6a97fc290701e176772826c",
+  "type": "character",
+  "name": "Vivaan Bhattacharya",
+  "aliases": [
+    "Rafe",
+    "The Kid with the Cart"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "climate refugee child, errand runner, and informal courier for transit hub communities",
+  "age": 12,
+  "status": "active",
+  "location": "Escanaba Gateway, central atrium and cargo transit corridors, near Michigan Ave and Roosevelt",
+  "description": "Rafailo is small for twelve, wire-thin, with the particular watchful quality of a child who has learned to read rooms before entering them. His skin is a deep reddish-brown, his hair cropped close and growing in with the slight redness of someone whose scalp has been sun-damaged. His eyes are very dark and very bright, and he has a habit of tracking all the exits in any space he enters without appearing to do so. He is missing the tip of his right ring finger, lost to frostbite three winters ago during a crossing he doesn't talk about. He wears practical clothes two sizes too large and has fitted them with improvised adjustment ties, and he pushes an ancient cargo cart with a wheel he has repaired four times with different materials, which means it now sounds like three different instruments simultaneously when in motion.\n\nRafailo arrived at Escanaba Gateway eighteen months ago with his grandmother and two cousins as part of a larger group of climate refugees from the northern agricultural collapse zones. His grandmother, Kebebush, is now in the Gateway's informal medical shelter recovering from the crossing. His cousins, both older, have found seasonal work in Grainfort. Rafailo runs errands. He runs them for Zulaikha Petrov-Oyelaran, for Gerváz Ouattara-Siljanovski, for Chidinma Rautavaara-Saberi, for anyone in the transit community who needs something carried or delivered and can't leave their post to do it. He charges in food, transit tokens, and occasionally information. He is twelve years old and he is already developing a professional reputation.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "his grandmother dying before they find somewhere permanent to live",
+      "being separated from the rest of his family by transit enforcement"
+    ],
+    "core_desires": [
+      "to find a place where he and his grandmother can stop moving",
+      "to become something specific — he wants to be an engineer, a word he uses with great precision, having seen someone fix a turbine at the Gateway and been transfixed"
+    ],
+    "coping_mechanisms": [
+      "staying in motion — errands give him structure and purpose",
+      "attaching himself to competent older people in the transit community as informal mentors",
+      "fixing small broken things he finds during courier runs"
+    ],
+    "blind_spots": [
+      "does not fully understand that the transit community's provisional stability could collapse quickly; has built emotional safety on foundations that are less stable than they feel"
+    ],
+    "secret": "During the northern crossing, the group was stopped at a checkpoint and one of the adults bribed the officer with a data chip. Rafailo doesn't know what was on the chip, but he memorized the officer's face and badge number out of pure instinct. The officer is now stationed at Escanaba Gateway's inner checkpoint and Rafailo routes all his courier runs to avoid that section of the building."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and functional, code-switches between three languages mid-sentence in ways that suggest he learned all of them simultaneously and doesn't entirely separate them",
+    "cadence": "Rapid and low, like someone who has learned that being quiet is a survival strategy",
+    "verbal_tics": [
+      "nods quickly twice before speaking, as if confirming something to himself",
+      "'Okay, so—'",
+      "using 'we' to refer to the transit community collective as if membership is assumed"
+    ],
+    "example_lines": [
+      "'Okay, so — two transit tokens to the Arrivals dock and back, or one token and you tell me what that gauge on the turbine housing actually measures. That's the deal.'",
+      "'We don't go in that section. There's a checkpoint officer in there. Nobody goes in that section.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Rafailo has seen the checkpoint officer who was bribed during his family's crossing accepting another payment — this time from someone in a Ferrogate Transit uniform, which feels different and more dangerous, and he doesn't know who to tell or if he should",
+    "His grandmother Kebebush, delirious in the medical shelter, has been asking for something — a specific object she calls 'the anchor box' — that she left with someone in the north for safekeeping before they fled; Rafailo is quietly trying to find a way to retrieve it without leaving the Gateway"
+  ],
+  "narrative_function": "Local color and humanizing element; informal information source with wide access due to his courier routes; quest giver for small but personally significant tasks; represents the child population of the transit refugee community and the stakes of the larger political situation.",
+  "augmentations": "None. He has a salvaged solar-charge strap on his wrist that powers a battered display device.",
+  "daily_life": "Up at dawn to get first courier assignments from early-rising traders and transit workers; runs deliveries all day across the Gateway's corridors and outer docks; returns each evening to sit with his grandmother in the medical shelter and eat whatever he earned.",
+  "affiliation": "Informal courier for Escanaba Gateway transit hub community; family connection to Kebebush Tshabalala-Nunavik (grandmother, in medical shelter)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "climate refugee",
+      "child courier",
+      "transit hub community",
+      "frostbite scar",
+      "engineering interest"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Complete every delivery you accept — your reputation is your only asset",
+      "Avoid checkpoint officer badge number 4471 at all costs",
+      "Don't let anyone know you're scared"
+    ],
+    "escalation_ladder": [
+      "Comply and observe",
+      "Ask a practical question to buy time and information",
+      "Find an adult in his informal network",
+      "Run, and run fast — he is very fast"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Presents as purely transactional — here is what I do, here is what it costs, is this a deal",
+      "friends": "Becomes abruptly and unexpectedly chatty, asks detailed technical questions about whatever the person does, starts bringing small repaired items as gifts"
+    },
+    "stress_responses": {
+      "low": "Goes very quiet and very efficient",
+      "medium": "Takes a longer route to wherever he's going, adding a loop to think",
+      "high": "Finds Zulaikha Petrov-Oyelaran or whoever in his adult network is closest and stays near them without explaining why"
+    },
+    "contradictions": [
+      "Presents as a small professional running a clean operation but will abandon the professional manner entirely for anyone he decides is worth trusting, which he decides very quickly and usually correctly"
+    ],
+    "habits": [
+      "Fixes small broken objects he finds during courier runs and leaves them repaired where he found them without telling anyone",
+      "Visits his grandmother every evening regardless of how tired he is",
+      "Keeps a tally of every delivery in his head in a system he invented himself"
+    ],
+    "breaking_points": [
+      "Any direct threat to his grandmother or cousins — he will do something impractical and brave"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "salvaged solar-charge wrist strap with battered display device (non-augmentation, external tool)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "salvaged solar-charge wrist strap with battered display device (non-augmentation, external tool)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Safety First": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 9: Northern agricultural collapse zone becomes uninhabitable; family begins moving south",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 9: Frostbite incident during winter crossing; loses fingertip",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 10: Checkpoint bribe incident; memorizes officer badge number 4471",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 10: Arrives at Escanaba Gateway with grandmother Kebebush and two cousins",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 10-12: Establishes courier operation within Gateway transit community",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 12: Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Ferrogate Transit",
+    "Arcturus GE-1 'Garrison'",
+    "Bluewater Checkpoint",
+    "Grandmother",
+    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
+    "Grainfort",
+    "Big Rig",
+    "Compass Rose",
+    "Alper Inoue-Aidoo",
+    "Anatoliy Faye-Nkrumah",
+    "Aurocet",
+    "Blackmarket",
+    "Brecken Yılmaz-Osei",
+    "Chidinma Rautavaara-Saberi",
+    "Crisanto Dela Torre-Ångström",
+    "Gerváz Ouattara-Siljanovski",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Ringo DV-4 'Courier'",
+    "Somadina Karlsen-Sow",
+    "The Compact",
+    "The Crossing",
+    "Tshiamo Vukić-Arellano",
+    "Zulaikha Petrov-Oyelaran"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Mixed global ancestry: Hispanic/Latin American (37.2%), South Asian (23.3%), Pacific Islander (20.5%), Sub-Saharan African (19.0%). Features reflect this complex blend—warm brown skin tones with subtle golden undertones from Pacific Islander heritage, defined facial structure influenced by South Asian ancestry, and the alert intensity common to equatorial populations.",
+    "height_cm": 142,
+    "weight_kg": 32,
+    "build": "Wire-thin and small for his age, with the compact frame of a child adapted to scarcity; no excess mass, all efficient movement",
+    "hair_color": "Dark brown with sun-bleached copper undertones",
+    "hair_style": "Cropped close to the scalp in a practical cut",
+    "hair_length": "Short",
+    "eye_color": "Very dark brown, nearly black, with unusual brightness and alertness",
+    "skin_tone": "Warm medium-brown with golden undertones and sun-weathered depth; the particular quality of someone adapted to intense equatorial and subtropical climates across multiple continents",
+    "complexion": "Sharp, intelligent facial structure with high cheekbones and defined planes reflecting South Asian ancestry; warm bronze undertones across cheeks and bridge of nose; scalp shows patchy sun damage from extended outdoor exposure; no facial hair; skin is lean and defined despite his age",
+    "distinguishing_marks": [
+      "Missing the tip of his right ring finger, cleanly severed below the first knuckle — frostbite damage from a winter crossing three years prior",
+      "Calloused palms and fingertips from pushing and operating the cargo cart daily"
+    ],
+    "visible_augmentations": "A salvaged solar-charge strap worn on his left wrist, weathered and patched, powering a battered handheld display device with a cracked screen; no chrome, no surgical augmentations",
+    "posture_movement": "Economical and deliberate; he moves quietly and without wasted energy; habitual head-tracking behavior — his eyes constantly register exits, obstacles, and personnel positions without appearing to focus on them; posture is alert but not tense, balanced for quick directional changes",
+    "clothing_style": "Practical Tier 4-5 hand-me-downs fitted with improvised adjustment ties; garments two sizes too large that have been cinched, knotted, or stitched to fit; worn synthetic cargo jacket with multiple pockets, faded gray thermal layers, patched utility pants; footwear is mismatched but functional — salvaged work boots held together with adhesive tape and paracord; everything is clean but weathered"
+  },
+  "image_prompt": "Vivaan Bhattacharya, a 142cm tall lean young boy with warm medium-brown skin and golden undertones, sharp intelligent features with high cheekbones, very dark alert eyes, short dark brown hair with copper sun-bleached highlights. Missing tip of right ring finger. Wearing oversized hand-me-down synthetic cargo jacket cinched with improvised ties, faded gray thermal layers, patched utility pants, mismatched salvaged work boots taped and paracorded together. Weathered solar-charge strap on left wrist powering cracked handheld display. Alert, economical posture with constant environmental awareness. Cyberpunk 2226 Great Lakes Metropolitan Zone street urchin aesthetic. Neon-lit urban alley setting with industrial backdrop, cool blue and amber accent lighting, gritty and weathered atmosphere. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 37.2,
+    "South Asian": 23.3,
+    "Pacific Islander": 20.5,
+    "Sub-Saharan African": 19.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

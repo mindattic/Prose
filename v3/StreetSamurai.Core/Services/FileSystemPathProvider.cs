@@ -15,7 +15,7 @@ public class FileSystemPathProvider : IPathProvider
 
     public string DataRoot => Root;
     public string WorldbuildingDir => Path.Combine(Root, "worldbuilding");
-    public string CharactersDir => Path.Combine(Root, "characters");
+    public string CharactersDir => Path.Combine(Root, "people");
     public string EssencesDir => Path.Combine(Root, "essences");
     public string NarrativeBiblePath => Path.Combine(Root, "narrative_bible.md");
     public string WorldDir => Path.Combine(Root, "world");

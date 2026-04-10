@@ -1,0 +1,313 @@
+{
+  "id": "019d6143a5fc7e7680fe75bd511feca6",
+  "type": "character",
+  "name": "Lark Karunaratne-Espinoza",
+  "aliases": [
+    "Dáithí the Brief",
+    "Phantom Papers"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "identity fabricator and document forger",
+  "age": 22,
+  "status": "active",
+  "location": "The Narrows, sublevel 4 print den beneath a Ferrogate Transit ventilation shaft, near sub-level access near Dearborn and Jackson",
+  "description": "Dáithí looks younger than twenty-two, which has been both a professional liability and an asset. He's tall and lanky with warm brown skin, freckles scattered densely across his nose and cheeks from his Irish-Malian heritage, and hair that shifts color on a slow cycle — deep brown to auburn to near-black over the course of four hours. It's cheap geneware, the kind you get at a market stall, but he's adjusted the cycle timing himself and is unreasonably proud of this. He has ink under his fingernails permanently and smells faintly of solvent and the ozone of active print-heads.\n\nHe fell into forgery through genuine talent — he could copy letterforms by hand at age fourteen in a way that made teachers uncomfortable — and through necessity, since a Tier 1 upbringing in the Narrows offers limited other uses for that talent. He is extraordinarily good at what he does and knows it with a confidence that occasionally crosses into recklessness. He treats every document like a puzzle: the deep-substrate security threads of a Zheng-Dao transit pass, the layered biometric encoding on a Sterling-Nakamura contractor credential. He keeps a gallery of his best work photographed and stored on a dead-drop server like a portfolio. He would show it to people if he could. He is desperate to be recognized as an artist.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.3,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being ordinary — forgettable, without distinction",
+      "Being caught not for the crime but for mediocre work"
+    ],
+    "core_desires": [
+      "Recognition as a craftsman — legitimate or otherwise",
+      "Enough money to get a real studio space"
+    ],
+    "coping_mechanisms": [
+      "Aesthetic obsession — aestheticizes everything including danger",
+      "Deflects vulnerability with humor and technical bravado"
+    ],
+    "blind_spots": [
+      "Underestimates the risk exposure from his photography archive",
+      "Cannot accurately assess when clients are dangerous versus merely criminal"
+    ],
+    "secret": "Six months ago he fabricated a full identity — birth record, employment history, biometric seed — for a woman who claimed to be fleeing a domestic situation. He charged her almost nothing. He has since seen that identity used in connection with a Ringo Corporation executive's disappearance that is all over the encrypted newsfeeds. He doesn't know if she killed the executive. He doesn't know if he should care. He knows he is implicated."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick, referential, slightly show-offy — drops technical printing and document-security terminology casually. Uses art criticism language applied to forgeries.",
+    "cadence": "Fast bursts followed by long pauses when he's actually thinking. Interrupts himself.",
+    "verbal_tics": [
+      "'Look, okay, look—'",
+      "Refers to his forgeries as 'pieces'",
+      "'That's actually interesting' when nervous"
+    ],
+    "example_lines": [
+      "'The Sterling-Nakamura contractor pass is the most beautiful security document in the city and it is an absolute pleasure to replicate.'",
+      "'I made you a whole person. Technically speaking, you owe me an existential debt, not a financial one. The financial one is Φ800.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The woman he helped has been identified and is now in Ringo Corporation custody — they are working backward through her documentation and Dáithí's print signature is traceable to anyone who knows what to look for.",
+    "A rival forger has been copying his style closely enough that Dáithí's clients are getting burned — he needs someone to help him find who's using his aesthetic and why."
+  ],
+  "narrative_function": "Service provider for identity needs, potential information source on who's operating under false credentials in the city, quest giver if his work creates unexpected blowback.",
+  "augmentations": "Geneware color-shifting hair (slow four-hour cycle). Retinal micro-focus implants for close detail work. Faint subdermal temperature control in fingers to prevent print-smear.",
+  "daily_life": "Wakes early afternoon, works through the night on orders, takes breaks to wander the Narrows and observe faces, documents, signage — he is always studying fonts and materials. Eats badly and irregularly.",
+  "affiliation": "Loosely affiliated with a Narrows print collective; takes commissions from three regular criminal brokers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 10,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Gifted",
+      "Reckless",
+      "Artist-Criminal",
+      "Charming",
+      "In Over His Head"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never meet a client in the same place twice",
+      "Don't take jobs that feel personal — personal jobs make mistakes",
+      "Price work high enough that clients treat it carefully"
+    ],
+    "escalation_ladder": [
+      "Polite professional decline of suspicious requests",
+      "Goes quiet and gives a false completion date to create space to think",
+      "Provides the work but builds in a subtle traceable flaw as insurance",
+      "Disappears — he has three emergency bolt-holes mapped"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Performs confidence and competence aggressively — won't let uncertainty show",
+      "friends": "Relaxes into genuine warmth, shows the work, asks for opinions, actually listens"
+    },
+    "stress_responses": {
+      "low": "Talks faster, makes more jokes",
+      "medium": "Goes quiet, handles objects — shuffles paper, fidgets with print tools",
+      "high": "Fixates on a technical problem he can solve as displacement activity for the one he can't"
+    },
+    "contradictions": [
+      "Talks constantly about not caring about legality but gets visibly distressed when work is used for violence rather than just deception"
+    ],
+    "habits": [
+      "Photographs every interesting document he encounters — menus, tickets, permits — for reference",
+      "Leaves a hair pressed into each finished document as a private signature",
+      "Talks to the print-head E.L.F. he calls the Compositor while working"
+    ],
+    "breaking_points": [
+      "If someone is hurt directly because of a document he made",
+      "If his archive is discovered by anyone with enforcement connections"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware color-shifting hair (slow 4-hour cycle, self-modified timing)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware color-shifting hair (slow 4-hour cycle, self-modified timing)",
+      "replaces": ""
+    },
+    {
+      "name": "Retinal micro-focus implants (both eyes, 40x close detail magnification)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retinal micro-focus implants (both eyes, 40x close detail magnification)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal finger temperature regulation (prevents sweat-smear on sensitive print work)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal finger temperature regulation (prevents sweat-smear on sensitive print work)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "Pragmatist": 0.9,
+    "Code Keeper": 0.9,
+    "Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Born in the Narrows to a Malian-Irish father and a Belarusian-Guinean mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — First paid forgery job at age 14 — a student transit pass",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Established print den in current location",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Began taking corporate credential commissions, exponential income increase",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Fabricated identity for the woman connected to the Ringo executive disappearance",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Narrows Compact",
+    "Zheng-dao Bioelectric",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Bathysphere Networks",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Stratum",
+    "Ringo Corponation",
+    "Arcturus CK-5 'Bloodhound'",
+    "Arcturus ST-4 'Verdict'",
+    "Aybek Sato-Poku",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Dragan Petersen-Bah",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Gwenaëlle Osei-Diallo",
+    "Idris Forsberg-Quaye",
+    "Ihaia Nystrom-Keita",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Nnamdi Ostrowski-Faletolu",
+    "Slagworks Industrial",
+    "Solveig Tambadou-Kereselidze",
+    "Sorin Ekwensi-Balasanyan",
+    "The Bleach Boys",
+    "The Narrows",
+    "Volkov-Saito Precision VS-R8 'Verdict'",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly South Asian with significant Sub-Saharan African ancestry, complemented by Hispanic/Latin American, Eastern European, and minor East Asian heritage. The genetic blend creates warm, rich brown tones with complex undertones reflecting the confluence of these diverse regions.",
+    "height_cm": 188,
+    "weight_kg": 71,
+    "build": "Tall and lanky with minimal muscle definition; the posture of someone hunched over precision work for extended periods. Shoulders rounded slightly forward. Long-limbed and angular.",
+    "hair_color": "Geneware-cycled: rotates through deep brown, auburn, and near-black on a four-hour cycle; currently mid-cycle toward auburn",
+    "hair_style": "Deliberately unkempt, shoulder-length, often pulled back with whatever is at hand (wire, fabric scraps, sometimes print-ribbon)",
+    "hair_length": "Long",
+    "eye_color": "Warm brown with faint iridescent shimmer at pupil edges from retinal micro-focus implants",
+    "skin_tone": "Deep warm brown with golden and olive undertones from the South Asian-African-Hispanic blend, creating a rich, complex complexion that shifts subtly in different light",
+    "complexion": "Youthful face with pronounced freckles densely scattered across nose, cheeks, and upper eyelids—a striking feature from the genetic interplay of multiple heritage lines. Perpetually exhausted expression; dark circles. Fine lines around eyes from squinting at close detail work. Skin otherwise clear but marked by chronic ink stains and solvent exposure — slight dermatitis around fingertips.",
+    "distinguishing_marks": [
+      "Permanent ink staining under all fingernails, arranged in layers of different pigments reflecting current and past projects",
+      "Fine chemical burn scar across the back of right hand from early geneware implant application, mostly healed but visible under certain light",
+      "Hairline stress fracture scar on left temple from a Narrows altercation at age nineteen; barely visible but palpable to touch"
+    ],
+    "visible_augmentations": "Retinal micro-focus implants visible as a faint prismatic distortion in direct light when pupils dilate. Faint subdermal grid-pattern scarring on fingertips (temperature-control implants beneath). Otherwise augmentations are subtle or subcutaneous.",
+    "posture_movement": "Moves with the economical precision of someone accustomed to close work; careful hand placement, minimal wasted motion. When standing still, weight shifts to the balls of feet. Tendency to examine objects (walls, signage, other people's credentials) with forensic intensity. Nervous habit of rotating fingers individually as if checking for fine tremor.",
+    "clothing_style": "Tier 4-5 Narrows aesthetic: cheap, deliberately maintained chaos. Oversized grey cotton hoodie with bleach stains and solvent discoloration; patches of lighter fabric where ink has been cleaned off. Black cargo pants with reinforced pockets weighted by tools and dead-storage drives. Scuffed leather boots resoled at least twice. Wears a modified welder's apron over everything during work — pockets filled with micro-tools, color samples, reference prints. No jewelry; one fraying paracord bracelet (salvaged). Carries a battered leather satchel (salvaged from a corpo dumpsite) containing reference materials, proof prints, and dead-drop credentials."
+  },
+  "image_prompt": "Lark Karunaratne-Espinoza, a tall lanky figure in cyberpunk 2226, deep warm brown skin with golden undertones and scattered freckles across nose and cheeks, youthful face marked by dark circles and exhaustion lines. Shoulder-length geneware-cycled hair in auburn-brown transitioning tones, deliberately unkempt and tied back. Wearing oversized bleach-stained grey hoodie and black reinforced cargo pants, scuffed boots. Modified welder's apron layered over clothing filled with micro-tools and color samples. Battered salvaged leather satchel across torso. Hands stained with layers of ink pigments, fine chemical burn scar visible on right hand. Retinal micro-focus implants creating subtle prismatic distortion in pupils. Precise, economical posture with weight on balls of feet. Examining something with forensic intensity. Great Lakes Metropolitan Zone Narrows setting, dim amber and cool blue neon lighting, industrial workspace aesthetic, gritty and cyberpunk. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 47.0,
+    "Sub-Saharan African": 26.4,
+    "Hispanic/Latin American": 11.1,
+    "Eastern European": 10.9,
+    "East Asian": 4.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

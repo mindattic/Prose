@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CHAR_DIR = path.join(__dirname, '..', 'engine', 'data', 'characters');
+const CHAR_DIR = path.join(__dirname, '..', 'engine', 'data', 'people');
 
 // Canonical districts
 const DISTRICTS = {

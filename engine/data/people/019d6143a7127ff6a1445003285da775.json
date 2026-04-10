@@ -1,0 +1,223 @@
+{
+  "id": "019d6143a7127ff6a1445003285da775",
+  "type": "character",
+  "name": "Aero Fredriksen",
+  "aliases": [
+    "Vesle",
+    "The Moth Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neon artist and light installation sculptor",
+  "age": 52,
+  "status": "active",
+  "location": "Lakeview Neon, near Damen and Armitage",
+  "description": "Veslemøy is a broad-shouldered woman with hands permanently stained violet from decades of working with reactive phosphor compounds. Her skin has been lightly treated with bioluminescent dermal patches — subtle, cream-colored glows along her collarbone and forearms that she uses as a living proof-of-concept for clients. Her hair is cropped close on the sides, left long and white on top, the natural silver of age she refuses to alter. Her face is deeply lined around the eyes from squinting at hot glass tubes, and she wears thick-framed optical enhancers on a beaded cord around her neck.\n\nShe is unhurried and slightly theatrical in conversation, with a habit of holding her hands up near her face to demonstrate scale when describing her work. She's not warm exactly — more like a fire that's comfortable to sit near once you learn the distance. She has opinions about everything and shares them without apology, but listens with genuine interest when someone surprises her. Her installations are known for depicting the ELFs of Lakeview in enormous luminous murals — branching signal-forms and recursive spirals that locals believe please the local grid-spirits.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Being forgotten before her work outlasts her",
+      "Losing fine motor control in her hands"
+    ],
+    "core_desires": [
+      "To make something so beautiful it changes how people see their neighborhood",
+      "To be understood — not just admired"
+    ],
+    "coping_mechanisms": [
+      "Long physical labor that silences the mind",
+      "Ritualized offerings to the Lakeview ELFs before beginning major works"
+    ],
+    "blind_spots": [
+      "She undervalues her own teaching and mentorship, seeing it as distraction from making"
+    ],
+    "secret": "Three of the large public installations attributed to her deceased partner Halvard were actually completed by Veslemøy alone after his death; she has never corrected the record because she believed it would diminish his memory, but it corrodes her whenever those pieces are praised"
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and technical when discussing craft; expansive and slightly elliptical when discussing meaning; Norwegian-inflected idioms mixed with Ghanaian proverbs picked up from her mother's side",
+    "cadence": "Slow and deliberate, with long pauses she doesn't seem to notice",
+    "verbal_tics": [
+      "'You understand?' after statements, not questions",
+      "Refers to neon tubes as 'she' or 'her'"
+    ],
+    "example_lines": [
+      "'She wants to be pink. I know, I know — the client said amber. But she wants pink. We'll see who wins.'",
+      "'Light doesn't lie. People lie. Light just shows you what's there. Sometimes that's the same thing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A massive Veslemøy installation has started emitting irregular light pulses the locals believe are ELF communications — she needs someone to help her decode or suppress them before Axiom's interference-monitoring team notices",
+    "A corporate art acquisitions agent from Tessera wants to purchase and relocate one of her outdoor installations, and the neighborhood is splitting over whether to let her sell",
+    "She is quietly dying of a progressive nerve condition and is searching for an apprentice she can trust with her unfinished projects and her partner's secret"
+  ],
+  "narrative_function": "Local landmark and keeper of neighborhood visual identity; quest giver for art-related commissions; source of district history and gossip; can read ELF-sign in her installations and serve as informal medium",
+  "augmentations": "Bioluminescent dermal patches (cosmetic, cream-white); optical enhancers (corrective, non-military grade); fused fingertip sensors for detecting gas pressure in neon tubes — a practical mod she got in her thirties",
+  "daily_life": "She spends mornings doing structural work in her studio-warehouse on the canal edge, afternoons negotiating with district merchants and property owners for wall permissions, and evenings bent over a gas lathe shaping tube.",
+  "affiliation": "Independent; informal patronage from the Lakeview Neon district merchants' cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artisan",
+      "neighborhood-institution",
+      "ELF-adjacent",
+      "grief-shaped",
+      "stubborn"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never work for a corponation that will own the piece outright — she licenses, never sells",
+      "Always consult the immediate neighborhood before installing something large"
+    ],
+    "escalation_ladder": [
+      "Ignores provocation with pointed silence",
+      "Delivers a single measured statement of displeasure",
+      "Removes herself from the situation entirely and refuses to return to it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Politely distant; evaluates whether they're worth her time before engaging further",
+      "friends": "Blunt, loyal, occasionally overwhelming in her generosity"
+    },
+    "stress_responses": {
+      "low": "Works longer hours and speaks less",
+      "medium": "Makes offerings at the nearest ELF shrine and then argues with it quietly",
+      "high": "Goes silent for days, producing frenetic rough sketches she never shares"
+    },
+    "contradictions": [
+      "Publicly insists art is for the community but privately makes work she considers too personal to ever display"
+    ],
+    "habits": [
+      "Eats the same breakfast every morning from the same canal-side stall",
+      "Leaves small phosphor-dust patterns on windowsills near her studio that only glow in UV — a private signature she never mentions"
+    ],
+    "breaking_points": [
+      "Someone deliberately destroys one of her public works",
+      "Being told her partner deserves more credit than she does for a piece she made"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Lakeview Neon",
+    "The Unfinished Theorem",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Silver",
+    "Glass",
+    "Aphelion",
+    "Arcturus KS-7 'Nursery'",
+    "Bintou Halvorsen-Osei",
+    "Breck Tannen",
+    "Chronicle",
+    "Crucible Industries Furnace CF-15 'Meltdown'",
+    "Halima Ogawa-Twumasi",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA PG-2 'Signature'",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East Asian, Indigenous American, and Northern European blend — 39% East Asian (high cheekbones, eye shape tendency), 32% Indigenous American (facial structure, warm undertones), 29% Northern European (lighter eye potential, build). A striking tri-continental mix evident in balanced facial proportions and warm-to-medium skin tone.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy, with the dense musculature of someone who has spent five decades manipulating hot glass and heavy scaffolding. Not heavy, but solid — the build of functional strength rather than athleticism.",
+    "hair_color": "Natural silver-white",
+    "hair_style": "Cropped close to the scalp on the sides; long and swept back on top, often tied loosely or left to fall forward when working",
+    "hair_length": "Long (top) / Short (sides)",
+    "eye_color": "Warm amber-brown with faded clarity from age and heat exposure, reflecting the East Asian and Indigenous American ancestry",
+    "skin_tone": "Warm medium-bronze with golden undertones — the blended result of East Asian and Indigenous American heritage brightened by Northern European ancestry, deepened by decades of sun exposure near industrial glass furnaces",
+    "complexion": "Deeply lined around the eyes and forehead from decades of squinting at luminous tubes and furnace heat. High, pronounced cheekbones with balanced facial structure reflecting tri-continental ancestry. Skin texture is weathered but well-maintained. Permanent faint violet discoloration on palms and under fingernails from reactive phosphor compound exposure.",
+    "distinguishing_marks": [
+      "Faint bioluminescent cream-white glow running along both collarbones — dermal patches active at dusk and in dim light.",
+      "Bioluminescent patches also glow faintly along the inner forearms in a branching pattern, mimicking neon tube designs.",
+      "Old burn scar on the back of her right hand, silvered and smooth, from a furnace accident in her forties.",
+      "Calluses and minor burn marks across both palms and inner forearms — occupational marks."
+    ],
+    "visible_augmentations": "Thick-framed optical enhancers on a beaded cord worn around her neck (vintage style, non-military). When examined closely, faint seams visible at the tips of her index and middle fingers where fused pressure sensors were installed. Subtle cream-white bioluminescent patches along collarbone and forearms, glowing faintly in low light.",
+    "posture_movement": "Unhurried and deliberate. She moves with the confidence of someone who knows the exact reach of her body in space. Habit of holding her hands up near her face when speaking, fingers gesturing to demonstrate scale and dimension. When working, she hunches slightly forward, shoulders relaxed, entering a focused state. Standing still, she often rests weight on one leg, hip cocked slightly.",
+    "clothing_style": "Functional Tier 3-4 workwear with artistic flourish. Heavy canvas work apron (often stained with phosphor compounds and soot) over sturdy linen or cotton shirts in muted earth tones. Wide-legged trousers in charcoal or dark indigo, reinforced at knees and hems. Worn leather boots with good grip for warehouse flooring. She favors natural fibers and practical layers. Occasionally wears a vintage denim jacket with hand-stitched patches commemorating major installations. No corporate branding, but well-maintained — the aesthetic of someone who respects her tools and workspace."
+  },
+  "image_prompt": "Aero Fredriksen, 172cm tall, sturdy broad-shouldered craftsperson with warm bronze-gold skin blending East Asian, Indigenous American, and Northern European heritage. Silver-white hair cropped at sides, long and swept back on top. Warm amber-brown eyes, deeply lined from decades of furnace work. High pronounced cheekbones, weathered complexion. Cream-white bioluminescent patches glow faintly along collarbones and branching patterns on inner forearms. Silvered burn scar on right hand. Vintage optical enhancers on beaded cord around neck. Wearing heavy canvas work apron stained with phosphor compounds over muted earth-tone linen shirt, dark indigo reinforced trousers, worn leather boots. Standing with weight on one leg, relaxed posture. Industrial glass workshop setting, warm furnace light casting long shadows, dusk lighting bringing bioluminescent patches into subtle glow. Cyberpunk 2226, functional artisan aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 39.2,
+    "Indigenous American": 31.7,
+    "Northern European": 29.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

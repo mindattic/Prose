@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6b979898d4ed633bbe4b36c",
+  "type": "character",
+  "name": "Lyric Lindström-Espinoza",
+  "aliases": [
+    "Rudo the Loud",
+    "Councilor Rudo (sarcastically used by opponents)"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Union organizer and protest coordinator",
+  "age": 24,
+  "status": "active",
+  "location": "Mexicantown Libre — sleeps in the back of the Ferrogate Transit Workers' Local 9 hall, near Western and Division",
+  "description": "Rudo is compact and kinetic, rarely fully still, with medium-brown skin and a geneware tail — a long, expressive black cat tail they got at seventeen — that broadcasts their mood with embarrassing accuracy. Their hair is dyed in shifting bands of amber and copper, and they have the kind of face that looks younger than it is, which they've learned to use strategically: people underestimate them exactly once. There are calluses on their hands from six months working actual transit maintenance before they moved into organizing full-time, and they consider those calluses a credential.\n\nRudo has been with Transit Workers' Local 9 for three years and is, depending on who you ask, either the most effective junior organizer the local has seen in a decade or an absolute disaster waiting to happen. Both assessments are probably true. They have an instinct for crowd dynamics and an appetite for confrontation that their more experienced colleagues find alternately inspiring and terrifying. They believe completely in the workers they represent and are only beginning to understand the gap between belief and strategy.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Getting someone hurt because they moved too fast",
+      "Becoming the kind of leader who talks about workers instead of to them"
+    ],
+    "core_desires": [
+      "A genuine strike win — not a settlement, a win",
+      "To be taken seriously without having to perform seriousness"
+    ],
+    "coping_mechanisms": [
+      "Movement — physical activity, walking, pacing",
+      "Talking it out loud even when no one is there",
+      "Spending time with the E.L.F. of the union hall's old PA system, which they treat as a confidant"
+    ],
+    "blind_spots": [
+      "They read momentum as mandate",
+      "They can't always tell when they've inspired someone versus exhausted them"
+    ],
+    "secret": "During a wildcat action eighteen months ago that went wrong — a blockade that got three workers cited and fined — Rudo had been warned it was premature by their mentor and proceeded anyway. They've never told anyone this. The official union account blames miscommunication. The workers who were fined don't know Rudo knew."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, concrete, collective 'we' constantly. Quotes union history with genuine enthusiasm. Uses profanity as punctuation, not emphasis.",
+    "cadence": "Fast and building, with a rhetorical rhythm they've learned from watching older organizers — sets up a beat and carries people along it.",
+    "verbal_tics": [
+      "'We don't ask, we build power.'",
+      "Physical — the tail flicks sharply when they're making a point they're unsure of"
+    ],
+    "example_lines": [
+      "'Ferrogate runs the trains on our labor and they want to reclassify the night crew as contractors. I don't care if it's legal. I care if we let them.'",
+      "'I've been wrong before. I'll be wrong again. The question is whether we're wrong together or right alone, and I know which one wins.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A secret vote is scheduled within Local 9 on whether to affiliate with a larger corponation-adjacent 'workers' advocacy group that Rudo believes is a co-optation attempt — and they don't have the votes yet.",
+    "The three workers fined during the wildcat action eighteen months ago have begun asking questions about who knew what and when."
+  ],
+  "narrative_function": "Local color and action catalyst. They can mobilize people fast and are the character most likely to turn a situation from a conversation into an event. They're also a mentorship opportunity and a liability — their energy is useful and their judgment is developing.",
+  "augmentations": "Geneware cat tail (cosmetic, expressive). Cheap subvocal mic implant for hands-free comms during actions.",
+  "daily_life": "Moves constantly between the union hall, worksites, and community meetings. Eats whatever's available whenever someone puts it in front of them. Attends every public meeting of the Ferrogate Transit corponation they can access, usually in the back row.",
+  "affiliation": "Ferrogate Transit Workers' Local 9; loose network of Mexicantown Libre community organizers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "crowd catalyst",
+      "developing leader",
+      "guilty conscience",
+      "genuine belief",
+      "lovable liability"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Ask the workers first, always",
+      "Don't call an action you can't see the exit from — a rule they're still learning to follow",
+      "Protect your relationships because they're your infrastructure"
+    ],
+    "escalation_ladder": [
+      "Organizing conversation",
+      "Petition and formal grievance",
+      "Public visibility action",
+      "Work-to-rule",
+      "Strike authorization vote",
+      "Strike"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and assessing — are you a worker, a boss, or neither? Moves fast to establish which.",
+      "friends": "Fiercely present, also occasionally suffocating. Texts at 2am with organizing ideas."
+    },
+    "stress_responses": {
+      "low": "Paces. Talks to the PA system E.L.F.",
+      "medium": "Calls a meeting, real or informal, needs to be in motion with other people.",
+      "high": "Goes very quiet and still, which alarmed people who know them — the tail stops moving entirely."
+    },
+    "contradictions": [
+      "Believes in collective process deeply, but makes unilateral decisions when they're scared"
+    ],
+    "habits": [
+      "Leaves transit tokens as offerings at the union hall PA shrine",
+      "Counts exits and sight lines in every room — a habit they picked up from an older organizer and can't explain why they've kept"
+    ],
+    "breaking_points": [
+      "Being directly confronted with evidence of the wildcat action deception",
+      "Watching someone get badly hurt at an action they called"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Ferrogate Transit",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Big Rig",
+    "The Gradient Compact",
+    "Lacuna Genomics",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pure Hand",
+    "Alper Inoue-Aidoo",
+    "Arcturus NX-1 'Sandman'",
+    "Bioacoustic Communication Membrane",
+    "Brewer's Spine",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Ilhan Sandstrom-Badu",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Plot 17",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Solina Barreto-Kiptoo",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Question",
+    "Timur Osei-Bjelke",
+    "Yannick Tambadou-Reinholt",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Pan-diaspora blend: Hispanic/Latin American (31.5%), Southeast Asian (21.7%), East Asian (21.6%), Indigenous American (19.3%), Eastern European (5.9%). Features a striking mix of warm olive and golden undertones with subtle East and Southeast Asian eye and cheekbone structure, Latin American jaw and mouth shape, and Indigenous American facial proportions.",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and wiry, high muscle density from transit maintenance work. Restless kinetic energy evident even at rest — shoulders often slightly raised, weight constantly shifting between feet.",
+    "hair_color": "Natural dark brown with semi-permanent dye in shifting bands of amber and copper",
+    "hair_style": "Shoulder-length, deliberately unkempt, often pulled back with whatever's at hand — wire, fabric scraps, union pins",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Warm olive-gold complexion reflecting the blend of Latin American, Southeast Asian, East Asian, and Indigenous ancestry — medium depth with golden and honey undertones",
+    "complexion": "Angular-faced with high, pronounced cheekbones reflecting East and Southeast Asian ancestry, combined with a fuller lower face and wide mouth showing Latin American and Indigenous heritage. Youthful features that read younger than 24. Skin shows sun exposure and stress — occasional breakouts along the jaw from inconsistent sleep. Minimal grooming beyond necessity; calluses on palms and finger pads from six months of maintenance work and constant document handling.",
+    "distinguishing_marks": [
+      "Subvocal mic implant visible as a small silvered node at the base of the throat, faintly luminescent when active",
+      "Geneware cat tail: sleek black, feline structure, approximately 60cm long, extends from base of spine with full articulation and fur texture. Ears remain human. The tail moves independently of conscious control, broadcasting emotional states with visibility that Rudo finds simultaneously useful and mortifying.",
+      "Callused palms and finger pads, deeply grooved from six months of transit maintenance",
+      "A faint scar on the left knuckle from a tool slip during early maintenance work"
+    ],
+    "visible_augmentations": "Black feline geneware tail with independent articulation, visible at the base of the spine and extending below the hip line — constantly moving. Subvocal mic implant at the throat base, subtle silvered node, faintly luminescent during active transmission.",
+    "posture_movement": "Never fully still. Weight rocks side to side while standing. Hands gesture constantly — punctuating speech, organizing space around them, fidgeting with union pins, fabric, document edges. When focused in conversation, they lean forward with intense eye contact. When agitated or thinking, the tail lashes in tight circles. When confident, the tail arcs high and relaxed. Moves quickly through spaces with purposeful efficiency, rarely walks when they can move with intention.",
+    "clothing_style": "Tier 4 working-class practical with protest aesthetics. Black cargo pants with multiple pockets and frayed cuffs, scuffed steel-toed boots. Oversized union-branded windbreaker or worn flannel shirt layered over cheap synthetic tank tops. Visible union pins, hand-drawn protest patch clusters on jacket sleeves. Wears a faded 'Ferrogate Transit Local 9' baseball cap backward when working public actions. Jewelry minimal: a simple cord bracelet with metal beads made by fellow organizers, clip-on comms earpiece (basic model, visible). No grooming for aesthetics — appearance reflects time scarcity and tier reality."
+  },
+  "image_prompt": "Lyric Lindström-Espinoza, 162cm tall, compact wiry frame, warm olive-gold skin with golden undertones, high cheekbones blending East Asian structure with Latin American fullness, dark brown alert eyes, youthful 24-year-old face with stress-line breakouts on jaw. Medium-length natural dark brown hair with amber and copper dye bands, deliberately unkempt, pulled back with fabric scraps and union pins. Black articulated feline geneware tail extending from spine, constantly moving with emotional states. Subvocal mic implant at throat base, subtle silvered luminescent node. Callused hands, knuckle scar. Wearing black cargo pants with frayed cuffs, scuffed steel-toed boots, oversized union-branded windbreaker over synthetic tank top, visible union pins and hand-drawn protest patches on sleeves, backward 'Ferrogate Transit Local 9' baseball cap, simple cord bracelet with metal beads, basic clip-on comms earpiece. Never fully still, weight shifting constantly, tail lashing in tight circles. Cyberpunk 2226, Great Lakes Metropolitan Zone, transit maintenance worker aesthetic, gritty industrial setting, neon transit station lighting, restless kinetic energy, protest movement atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 31.5,
+    "Southeast Asian": 21.7,
+    "East Asian": 21.6,
+    "Indigenous American": 19.3,
+    "Eastern European": 5.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

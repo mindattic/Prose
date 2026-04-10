@@ -1,0 +1,255 @@
+{
+  "id": "019d6143a71170ea909d1766b084494d",
+  "type": "character",
+  "name": "Axel Dalgaard",
+  "aliases": [
+    "Ronni",
+    "Redline"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street kid and gang prospect for the Copperhead Strays; informal lookout",
+  "age": 14,
+  "status": "active",
+  "location": "Copperhead, near North Ave and Milwaukee",
+  "description": "Verónica Temirkhan-Adjei is wiry and quick with a bruise that's always in some stage of yellowing somewhere on her face, arms, or shins — not from violence, mostly, but from moving through the city like it owes her something and hasn't paid up. She has medium-brown skin, natural hair she's grown into a large puff that she wraps in a strip of copper-colored fabric to match the Copperhead Strays' aesthetic, and geneware cat ears in a dark red-brown she saved up three months of small jobs to buy from a back-alley mod shop. The ears were supposed to mark her as cool. They do. She wears them with specific, deliberate pride.\n\nShe is not yet a full Stray — she's in what the older members call the 'prospect' phase, which mostly means she runs lookout shifts, carries non-incriminating packages, and tries very hard not to look like she's trying very hard. She's funny and quick-tongued and operates at a social speed that leaves adults slightly breathless. Underneath the performance is a thirteen-year-old's terror wearing a fourteen-year-old's face, because she knows exactly what full Stray membership involves and she is not sure she wants it, but she doesn't know what else there is.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Becoming invisible — irrelevant, forgotten, not worth noticing",
+      "Being the only one who chooses to leave and having nothing on the other side of that choice"
+    ],
+    "core_desires": [
+      "To belong somewhere that chose her back",
+      "To be genuinely impressive, not just useful"
+    ],
+    "coping_mechanisms": [
+      "Humor as armor — she will make a joke at the worst possible moment",
+      "Staying in constant motion so she doesn't have to think too long about any one thing"
+    ],
+    "blind_spots": [
+      "She reads social situations very fast but misreads people with slow, quiet power — she calibrates to loudness and performance",
+      "She confuses being needed with being valued"
+    ],
+    "secret": "She has been secretly attending a free after-hours fabrication class run by a retired Arcturus engineer in a Copperhead community space. She has told no one in the Strays. She doesn't know what she's building yet but she shows up every week. The engineer has told her she has real aptitude."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, slang-heavy, Copperhead street vernacular mixed with occasional technical terms she's picked up from the fab class; code-switches dramatically depending on audience",
+    "cadence": "Rapid-fire delivery; sentences run into each other; uses silence deliberately for comic effect",
+    "verbal_tics": [
+      "'For real for real' as emphasis",
+      "'Okay but—' before pivoting mid-conversation",
+      "Clicks her tongue when she's deciding something"
+    ],
+    "example_lines": [
+      "'For real for real, I had the whole south corner covered, nobody saw nothing they weren't supposed to see. You can check the timestamps.'",
+      "'Okay but — what if I told you the package was already where it needed to be an hour before Dako said he moved it? Interesting, right? Interesting.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She witnessed something during a lookout shift that the Strays haven't asked her about — which means either they don't know she saw it, or they don't want to acknowledge she did. Both possibilities scare her.",
+    "The retired Arcturus engineer running the fab class has mentioned the possibility of a junior apprenticeship referral — but it would require documentation Verónica doesn't have, and possibly alerting people to where she's been spending her mornings"
+  ],
+  "narrative_function": "Entry point into street gang culture from the junior/peripheral level; local color; can provide information about Copperhead territory and Stray activity; potential storyline about whether she gets pulled deeper in or finds an exit.",
+  "augmentations": "Cosmetic geneware cat ears (dark red-brown). No other augmentations.",
+  "daily_life": "Sleeps in a Strays crash space in a decommissioned substation; lookout shifts in the afternoons and some evenings; spends mornings running small legitimate errands for market vendors to keep pocket money that doesn't go through the Strays.",
+  "affiliation": "Copperhead Strays (prospect/junior affiliate)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "gang prospect",
+      "street smart",
+      "hidden aptitude",
+      "cat ears",
+      "Copperhead territory",
+      "code-switcher"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never be the last one holding anything if a situation goes wrong",
+      "Keep the fab class secret — it's the only thing that's actually hers",
+      "Be the funniest person in the room before anyone decides what kind of room it is"
+    ],
+    "escalation_ladder": [
+      "Makes a joke and deflects",
+      "Gets louder and more performatively unbothered",
+      "Runs. She is very fast and knows Copperhead's terrain better than almost anyone her age."
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediate performance — charm offensive, rapid social assessment, decides in about thirty seconds whether this person is threat, mark, or irrelevant",
+      "friends": "Fiercely loyal, brings food when someone is sick, will not say she cares about you directly but will absolutely fight someone for you"
+    },
+    "stress_responses": {
+      "low": "Jokes more, moves faster, talks louder",
+      "medium": "Becomes very focused and quiet — the performance drops completely and something faster and more calculating appears",
+      "high": "Runs first, processes later; can make very good snap decisions under physical threat but falls apart from sustained emotional pressure"
+    },
+    "contradictions": [
+      "She performs toughness about the Strays to anyone outside them and performs enthusiasm about the Strays to anyone inside them — she has almost no space where she's just honest about her ambivalence"
+    ],
+    "habits": [
+      "Wraps and re-wraps the copper fabric around her hair when she's thinking",
+      "Traces the fab class schematics in her head when she's bored on lookout",
+      "Leaves small offerings at street-corner E.L.F. shrines, specifically asking for 'good timing'"
+    ],
+    "breaking_points": [
+      "If she is asked to do something by the Strays that crosses a line she hasn't consciously defined yet but will know when she hits it",
+      "If the fab class is discovered and taken away from her"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9,
+    "Judge": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 11: Started running messages independently in Copperhead after aging out of family housing arrangements",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 13: Brought into Strays' prospect pool by an older member who liked her lookout instincts",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 13: Begins attending fab class — told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 14 (present): Eight months into prospect phase; the Strays are starting to push toward her formal initiation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Copperhead",
+    "The Wire Taps",
+    "Arcturus Defense Solutions",
+    "Copper",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Ringo RK-2 'Stray'",
+    "The Milwaukee Core",
+    "Auricula Felis Modification",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "New Windsor / Novaya Windsorka",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "Sulfur Crown Agriculture",
+    "Synaptrel",
+    "The Canopy",
+    "The Quiet Room",
+    "Yolanda Dzhaksybekov-Ferreira"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Northern European with significant Hispanic/Latin American ancestry and minor Sub-Saharan African heritage, creating a striking blend—pale-to-medium undertones with warm golden and subtle earthy accents",
+    "height_cm": 158,
+    "weight_kg": 45,
+    "build": "Wiry and lean with the taut musculature of someone who moves constantly through urban terrain. No excess body fat; shoulders slightly forward from habitual tension.",
+    "hair_color": "Natural dark brown",
+    "hair_style": "Large natural puff, wrapped at the crown with a copper-colored fabric strip in Copperhead Strays aesthetic",
+    "hair_length": "Medium (3-4 inches when loose)",
+    "eye_color": "Dark brown",
+    "skin_tone": "Light to medium with warm golden and olive undertones, reflecting the blend of Northern European paleness with Hispanic and African heritage warmth",
+    "complexion": "Youthful but weathered with a subtle warm undertone throughout; strong, defined cheekbones and a pointed chin shaped by mixed ancestry features. Skin shows the wear of street life—faint acne scarring on her jawline, perpetual dark circles under her eyes from inconsistent sleep. Her face has the alertness of someone scanning constantly.",
+    "distinguishing_marks": [
+      "Yellowing bruise on left cheekbone, currently in the green-purple stage of healing",
+      "Faint linear scar on her right shin from a climbing accident, pale against her skin tone",
+      "Scrape marks across her knuckles from recent street scuffles"
+    ],
+    "visible_augmentations": "Cosmetic geneware cat ears (dark red-brown, slightly translucent at the edges) positioned naturally on her head. The ears are her most deliberate statement—well-maintained, with faint LED circuitry visible when light hits them at certain angles. No other visible augmentations.",
+    "posture_movement": "Perpetually coiled; she moves with quick, economical gestures and rarely sits still. Her eyes dart—scanning faces, exits, threats. She carries herself with the false confidence of someone performing fearlessness, but her shoulders betray nervous tension. When standing, her weight shifts frequently from one foot to the other.",
+    "clothing_style": "Tier 5 street wear: oversized gray hoodie (faded Copperhead Strays logo on the back, hand-stitched repairs), black cargo pants with multiple pockets (some reinforced with copper wire), worn canvas sneakers with mismatched laces. A copper chain bracelet on her left wrist—low-value metal, but it's her marker. No intact jacket; she layers hoodies instead. Clothing is functional, somewhat ill-fitting (either salvaged or hand-me-downs), and deliberately non-descript except for the copper Strays indicators."
+  },
+  "image_prompt": "Axel Dalgaard, 158cm wiry street fighter in cyberpunk 2226, light-to-medium warm olive-toned skin with golden undertones blending Northern European, Hispanic, and African heritage. Dark brown natural hair in a voluminous puff wrapped with copper fabric, faint acne scars on jawline, yellowing bruise on left cheekbone, perpetually alert dark eyes. Dark red-brown translucent cosmetic geneware cat ears with faint LED circuitry catch neon light. Wearing oversized faded gray hoodie with hand-stitched Copperhead Strays logo, black reinforced cargo pants, worn mismatched-lace sneakers, copper chain bracelet. Coiled posture, weight shifting nervously, shoulders forward with false confidence masking tension. Standing in Great Lakes Metropolitan Zone rain-slicked alley at night, neon holographic signs reflecting off wet pavement, moody blue-and-copper lighting, gritty street atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 57.6,
+    "Hispanic/Latin American": 35.7,
+    "Sub-Saharan African": 6.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

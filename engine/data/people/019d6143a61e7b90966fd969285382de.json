@@ -1,0 +1,148 @@
+{
+  "id": "019d6143a61e7b90966fd969285382de",
+  "type": "character",
+  "name": "Cleo Larsdóttir",
+  "aliases": [
+    "The Midwife"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Medical contracts",
+  "age": 45,
+  "status": "active",
+  "location": "The Shelf, near Ashland and Chicago Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Chicago",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "The Pure Hand",
+    "The Third Rail",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Witness"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Central Asian (37.4%) with East Asian (31.5%), Eastern European (14.2%), North African (10.4%), and South Asian (6.5%) ancestry; a striking blend reflecting the Ubiquitous Diaspora with high cheekbones and almond-shaped eyes from Central/East Asian heritage, warm medium-brown skin with subtle golden undertones from North African and South Asian admixture, and fine facial structure influenced by Eastern European genetics",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Athletic and lean with defined shoulders from decades of precise manual work; carries herself with the economical posture of someone who has learned to move without wasting energy",
+    "hair_color": "Dark brown with natural silver streaking at the temples",
+    "hair_style": "Pulled back in a tight, practical braid that loops at the nape of her neck; the style emphasizes sharp cheekbones",
+    "hair_length": "Medium",
+    "eye_color": "Light hazel with amber flecks",
+    "skin_tone": "Medium warm brown with golden-amber undertones; a luminous quality from the blend of Central Asian, East Asian, and North African ancestry",
+    "complexion": "Weathered but maintained; fine lines around the eyes from years of concentration; minimal cosmetics; skin shows the wear of chemical exposure and years navigating The Shelf's environmental hazards; high, prominent cheekbones characteristic of Central and East Asian heritage; subtle warmth to the face that catches light",
+    "distinguishing_marks": [
+      "Thin white scar running from the corner of her right eye to her cheekbone, sustained during a black-market surgery extraction gone wrong circa 2203",
+      "Faded tattoo on her left inner forearm: a stylized caduceus wrapped in circuit lines, marking her allegiance to the underground medical collective",
+      "Burn scar across the back of her right hand in a distinctive three-point pattern from a failed autosurgeon calibration"
+    ],
+    "visible_augmentations": "Modified right hand: chromatic fingers with articulated joints capable of micro-precision work; a subtle neural interface port at the base of her skull concealed by her braid, visible only when hair is pulled aside; faint subcutaneous bioluminescent network visible under the skin of her right forearm when activated (used for low-light surgical work)",
+    "posture_movement": "Moves with deliberate, economical grace; hands are always slightly active, fingers twitching through practiced gestures even at rest; maintains steady eye contact; speaks in measured tones with minimal wasted breath; carries tension in her shoulders that only releases when she's focused on a task",
+    "clothing_style": "Tier 3-4 utilitarian: reinforced gray synthetic jacket with internal pockets for tools and implant diagnostics; dark cargo pants with utility webbing; worn leather fingerless gloves over her left hand only; steel-toed boots with custom orthotic inserts for standing through long procedures; a medical-grade respirator hangs loose around her neck (air quality on The Shelf is unreliable); no corporate branding, but visible wear patterns suggest expensive maintenance; a single piece of jewelry: a Scandinavian silver ring on her right index finger (her augmented hand), family heirloom"
+  },
+  "image_prompt": "Cyberpunk 2226, Cleo Larsdóttir, 172cm tall surgical operative with striking Central and East Asian features—high prominent cheekbones, almond-shaped amber-hazel eyes, medium warm golden-brown skin with subtle undertones. Dark brown hair streaked silver at temples, pulled back in tight practical braid. White scar from right eye to cheekbone. Wearing reinforced gray synthetic jacket over dark cargo utility pants, steel-toed boots, medical respirator hanging at neck. Right hand augmented with chromatic precision fingers, left hand in worn leather fingerless gloves. Silver family ring catches light on augmented index finger. Faint subcutaneous bioluminescent network visible in right forearm. Economical posture, hands slightly active, steady focused expression. Underground medical collective aesthetic. Dim The Shelf lighting, cool neon accents, worn industrial interior setting. Tension in shoulders, concentrated gaze. Ultra-detailed cyberpunk surgical operative portrait. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Central Asian": 37.4,
+    "East Asian": 31.5,
+    "Eastern European": 14.2,
+    "North African": 10.4,
+    "South Asian": 6.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

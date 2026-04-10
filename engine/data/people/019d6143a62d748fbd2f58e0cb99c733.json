@@ -1,0 +1,331 @@
+{
+  "id": "019d6143a62d748fbd2f58e0cb99c733",
+  "type": "character",
+  "name": "Onyx Popescu-Vestergaard",
+  "aliases": [
+    "Locus",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Social engineering and negotiation specialist — face",
+  "age": 56,
+  "status": "active",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
+  "description": "Ilhan Park-Traore is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 56, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a face out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented face in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.47,
+      "ideal": 0.68,
+      "id": 0.88,
+      "shadow": 0.54,
+      "mask": 0.68,
+      "ghost": 0.46
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Betrayal by someone they trust — the only currency that matters"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Control — over their body, their schedule, their future",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
+    ],
+    "secret": "Ilhan Park-Traore is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"People want to trust someone. I just make sure that someone is me.\"",
+      "\"The hardest lock to pick is between someone's ears.\"",
+      "\"I don't lie. I tell a better version of the truth.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ilhan Park-Traore discovers a job they completed last year was a setup for something much larger and much worse",
+    "A corporate black site Ilhan Park-Traore once infiltrated is being reopened, and the people inside know her face",
+    "A crew member from Ilhan Park-Traore's past shows up in GLMZ, carrying old grievances and new chrome"
+  ],
+  "narrative_function": "Ilhan Park-Traore is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 6
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.78,
+      "caution": 0.92,
+      "loyalty": 0.92,
+      "greed": 0.16,
+      "empathy": 0.55
+    },
+    "drives": [
+      "reputation",
+      "freedom",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "mechanical aptitude — can repair or modify almost anything",
+      "ability to remain calm under fire"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "trust issues that limit crew effectiveness",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "face",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Preaches independence but is desperate for approval from people they respect",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Checks exits within 10 seconds of entering any room",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic arm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Tessera TKR-10 'Executor'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Unfinished Theorem",
+    "The Shelf",
+    "Slagworks Industrial",
+    "Alper Lebedev-Tutu",
+    "Arcturus Exo-Runner Frame",
+    "Bioelectric Muscle Fiber",
+    "Breck Tannen",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Independent Micro-Grid Power Cooperative",
+    "Narrowcast",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Pikasso Wemba-Þórðarson",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TESSERA WL-6 'Stacker'",
+    "Tessera Corponation",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "Tessera TKR-10 'Executor'",
+    "The Fathom Line",
+    "The Wire Taps"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Latin American, East Asian, Eastern European, and Sub-Saharan African—a genetic tapestry reflecting the Ubiquitous Diaspora. The combination manifests as high cheekbones with slight epicanthic folds, warm medium-brown skin with undertones spanning multiple continental traditions, and a facial structure that synthesizes rather than segregates these lineages.",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lean and angular with defined musculature in shoulders and core — the build of someone who maintains strength through precise, economical movement rather than bulk. Legs show subtle unevenness in muscle definition from synthetic fiber augmentation.",
+    "hair_color": "Salt-and-pepper gray, natural with premature silver from stress and circadian disruption",
+    "hair_style": "Pulled back in a tight, functional braid, no ornamentation",
+    "hair_length": "Long (shoulder blade)",
+    "eye_color": "Dark brown, unaugmented but with the flat, focused quality of someone trained to read micro-expressions",
+    "skin_tone": "Medium warm brown—a blend of Latin American, East Asian, and African heritage, with subtle golden and reddish undertones. Complexion weathered by decades of nocturnal work, showing the patina of time and exposure.",
+    "complexion": "Sharp, angular cheekbones reflecting East Asian and Latin American ancestry, prominent brow ridge, narrow jaw with subtle width that suggests Sub-Saharan and Eastern European influence. Minimal grooming — no makeup, skin shows minor scarring around the temples (old neural port testing), fine lines around eyes from constant squinting in low light. Slight asymmetry to her face that reads as unforgettable rather than beautiful.",
+    "distinguishing_marks": [
+      "Thin white scar running from right temple to cheekbone, approximately 4cm, from a knife fight in 2198",
+      "Burn scarring on the underside of left wrist, old and faded, precise geometric pattern consistent with calibration equipment",
+      "No visible tattoos — she operates in circles where skin art is liability, not identity"
+    ],
+    "visible_augmentations": "Right arm is full cybernetic replacement from shoulder joint down — matte-black chrome with visible servo joints at elbow and wrist, synthetic muscle fiber showing through gaps in the plating. The arm moves with inhuman precision and strength. Minimal attempt to make it cosmetic — the chrome is industrial-grade, scarred and nicked from heavy use. Subtle augmentation scars visible at shoulders and hip flexors (synthetic leg fiber installation points), though the legs themselves appear organic at first glance.",
+    "posture_movement": "Stands with weight distributed evenly, never favoring one side. Moves with deliberate economy — every gesture means something, nothing is wasted. Slight favoring of the left leg when stationary (synthetic fibers compensate for endurance but introduce micro-delays on stairs and uneven terrain). Right hand rests naturally, chrome catching light in a way that announces its presence without being theatrical.",
+    "clothing_style": "Tier 4-5 practical: matte black tactical cargo pants with reinforced knee panels, worn synthleather boots with ankle actuators for uneven terrain, oversized black long-sleeve shirt in military-grade moisture-wicking fabric. A 15-year-old Yamagata Industries field jacket, charcoal gray, with custom internal modifications and worn silver zippers. No logos or clan colors — anonymity is her brand. Carries equipment in a leather messenger bag (real leather, rare in the GLMZ, inherited from a mentor) worn across her torso for stability. No visible Φ indicators of wealth."
+  },
+  "image_prompt": "Onyx Popescu-Vestergaard, a 183cm lean-muscled operative standing in sharp silhouette against neon-soaked industrial architecture. Warm medium-brown skin with angular East Asian-influenced cheekbones and a Latin American-African genetic blend visible in her facial structure. Salt-and-pepper hair pulled back in a tight braid. Dark brown unaugmented eyes with the flat focus of a trained operative. A thin white scar traces her right temple to cheekbone. Her right arm is a full matte-black chrome cybernetic replacement with visible servo joints and industrial scarring, contrasting against her organic left. She wears matte black tactical cargo pants, worn synthleather boots with ankle actuators, and an oversized black moisture-wicking long-sleeve shirt beneath a weathered charcoal Yamagata Industries field jacket with custom modifications. A worn real leather messenger bag crosses her torso. She stands motionless with weight distributed evenly, every stance deliberate and economical. Night-cycle Great Lakes Metropolitan Zone, cool blue-purple ambient light with hard shadows, rain-slicked concrete beneath her feet, no logos or clan colors—pure functional anonymity, 2226 cyberpunk noir aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 35.0,
+    "East Asian": 29.3,
+    "Eastern European": 23.8,
+    "Sub-Saharan African": 11.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

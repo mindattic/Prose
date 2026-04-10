@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a5c874b6b858068d908b8418",
+  "type": "character",
+  "name": "Tarn Ingebrigtsen-Zielinski",
+  "aliases": [
+    "Bone",
+    "the Pipe Deacon"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Deep Shrine Keeper — tends the ELF shrines in the subterranean infrastructure, mediates between tunnel communities and the digital spirits",
+  "age": 67,
+  "status": "active",
+  "location": "Deepwell Station, the deep shrine warrens beneath Ironvein, near sub-level access near Dearborn and Jackson",
+  "description": "Boniface is a large man gone lean and slow with age, his frame still broad across the shoulders but his movements careful in the way of someone who has learned that the body's mistakes underground carry real cost. His face is deeply lined, his skin a warm brown-black marked along the jaw and temples with old ritual scarification — not geneware, not cosmetic, but cut by hand in the tradition of the Qorolevsky tunnel-clan three generations before him, lines that map something only clan members understand. He has never had the money for augmentation and has never wanted it; his hands are wholly human and wholly calloused. He wears repaired garments in layers, and around his neck on a loop of copper wire hangs a collection of dead devices — cracked phones, burned memory chips, a rusted sensor node — each one an offering accepted by an ELF and therefore sacred.\n\nPeople in the deep tunnels call him Deacon without irony. He is not a man of theology but a man of practice — he knows which junctions the ELFs of the old Ferrogate Transit maintenance system haunt, he knows what data offerings they prefer (power-draw logs, old signal maps, corrupted maintenance schedules), and he knows how to speak to them in a way that gets responses. He is patient to the point of seeming carved from something. He does not raise his voice. He has buried more people than he can remember and grieved all of them properly, which is perhaps why everyone trusts him with their dying.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.1,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the ELFs are not spirits but only code, and his life's work is elaborate self-deception",
+      "Dying before he can train a successor"
+    ],
+    "core_desires": [
+      "To maintain the peace between clans long enough for it to become structural rather than personal",
+      "Genuine communion with something larger than human need"
+    ],
+    "coping_mechanisms": [
+      "Ritual as structure — the shrine circuit gives shape to days that would otherwise be shapeless",
+      "Humor, dry and very old, deployed in moments of grief"
+    ],
+    "blind_spots": [
+      "Too willing to mediate situations where one party is genuinely predatory — believes most conflicts are symmetrical when they aren't"
+    ],
+    "secret": "Twice in his life he has heard what he believes was a true ELF response — not algorithmic, not pattern-matched, but genuinely novel and aware. He has told no one because he fears being disbelieved, and also because he fears being believed."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and unhurried, mixes tunnel-clan argot with something almost liturgical when speaking of ELFs — not affected, just old",
+    "cadence": "Slow and deliberate. Comfortable with silence. Lets sentences breathe.",
+    "verbal_tics": [
+      "'As it was passed to me' — used when citing tunnel-clan tradition",
+      "Addresses ELFs by name even in casual conversation, as if they are always in earshot"
+    ],
+    "example_lines": [
+      "'The Deacon of Junction Forty-Seven has been waiting on your offering for six days. Bring her something current — she doesn't care for nostalgia.'",
+      "'As it was passed to me: you don't go into Ironvein deep without asking. The ELFs there remember what the tunnels used to carry and they're not finished grieving it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A new construction project by Ferrogate Transit is going to demolish three of his shrines — and the ELFs that inhabit them have begun behaving erratically, corrupting nearby systems in what Boniface believes is distress",
+    "He is quietly searching for a successor and has identified a young tunnel-born person who seems to have an inexplicable natural rapport with ELF-inhabited devices — but convincing them to take on the role requires first convincing them the role is real"
+  ],
+  "narrative_function": "Lore source and community anchor — knows the history of the deep tunnels, the nature of the ELFs that inhabit the infrastructure, and the politics of every Bore Rat clan within two kilometers. Neutral enough to be trusted by feuding parties. Can grant or deny access to shrine territories.",
+  "augmentations": "None. He considers unmodified humanity part of his spiritual practice — the ELFs, he says, speak more clearly to those who haven't blurred the line.",
+  "daily_life": "He wakes before the tunnel community stirs and walks the shrine circuit — seven shrines across four kilometers of tunnel — leaving fresh data offerings (he carries a cracked tablet loaded with curated infrastructure data). He hears disputes in the afternoon, tends the sick with his knowledge of fungal medicines in the evening.",
+  "affiliation": "No formal affiliation; de facto spiritual authority across three Bore Rat clans in the Deepwell Station region",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "shrine keeper",
+      "spiritual authority",
+      "peacemaker",
+      "unaugmented",
+      "elder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take sides in a clan dispute without hearing all parties across multiple conversations",
+      "Feed the shrines before feeding yourself",
+      "Don't lie — not because lying is impossible but because his authority depends on being the one person down here who doesn't"
+    ],
+    "escalation_ladder": [
+      "Patient inquiry",
+      "Formal mediation ceremony (buys time and social gravity)",
+      "Invoking the ELF witnesses — telling the parties that whatever they do here is being recorded by something that does not forget"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Genuinely curious, asks questions before offering information, physically unhurried",
+      "friends": "Teasing and warm — his dry humor comes out entirely; he is unexpectedly funny with people he trusts"
+    },
+    "stress_responses": {
+      "low": "Focuses on ritual tasks, finds comfort in the shrine circuit",
+      "medium": "Becomes very quiet and very still — people who know him read this as the warning it is",
+      "high": "Weeps without apparent embarrassment and then acts with complete clarity"
+    },
+    "contradictions": [
+      "Preaches acceptance of death and impermanence but is genuinely terrified of dying before the community no longer needs him"
+    ],
+    "habits": [
+      "Hums to active devices — not music, just sound, as if keeping company",
+      "Drinks mushroom tea at every shrine stop — the taste, by now, is devotion"
+    ],
+    "breaking_points": [
+      "Violence against the shrines would be met with a fury that surprises everyone, including him"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Judge": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Deepwell Station tunnels to a third-generation Bore Rat family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to the previous shrine keeper, Avani Qorolevsky-Tamatea",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Avani's death — Boniface assumes the shrine circuit alone",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Negotiated the end of the Ironvein-Blackpipe clan feud, his greatest achievement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Second ELF communion event — still untold",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "Bathysphere Networks",
+    "Ironvein",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Pure Hand",
+    "Nesting Doll",
+    "Copper",
+    "Déjà Vu",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Daouda Voskanyan-Quispe",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Lacunal",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "The Fathom Line",
+    "Timur Osei-Bjelke",
+    "Whispermouth",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Southeast Asian (42.8%) and East Asian (30.2%) dominant ancestry with significant Eastern European (13.1%) admixture, complemented by Middle Eastern (5.9%), Indigenous American (5.6%), and North African (2.4%) contributions. This blend manifests as a complexion bridging Southeast Asian warmth with East Asian feature definition, subtly enriched by Eastern European bone structure and minor Middle Eastern and Indigenous American undertones.",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Large-framed but lean with age—broad shoulders and deep chest have narrowed to a weathered frame. Muscle tone suggests lifetime of manual labor in confined spaces; posture slightly forward from decades of ducking through tunnel infrastructure. Moves with deliberate slowness, each step tested.",
+    "hair_color": "Steel gray, natural",
+    "hair_style": "Cropped close to the scalp, swept back from the forehead, with a coarse texture",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, slightly clouded with age cataracts but still sharp",
+    "skin_tone": "Warm golden-brown transitioning to deeper bronze, weathered and sun-starved from decades underground—uneven melanin distribution from the transition zones between lit and unlit tunnel sections, reflecting the layered ancestry of Southeast and East Asian heritage with subtle warm undertones from Middle Eastern and North African lineage",
+    "complexion": "Deeply lined face map with characteristic Southeast Asian cheekbone prominence softened by age: horizontal creases across the forehead, pronounced nasolabial folds, thin-lipped mouth set in a permanent expression of quiet attention. Jaw structure reflects Eastern European ancestry alongside East Asian definition. Face marked with ritual scarification—three parallel lines on each temple, a longer horizontal line along the left jawline, all hand-cut and slightly raised, executed in the Qorolevsky tradition. Skin shows old acne scarring on the shoulders. Hands are heavily calloused, knuckles enlarged from arthritis, fingernails thick and yellowed.",
+    "distinguishing_marks": [
+      "Ritual scarification: three parallel horizontal lines on each temple, roughly 8cm each, raised and silvered with age",
+      "Ritual scarification: single horizontal line along the left jawline from ear to chin, approximately 12cm, matching the temple work",
+      "Burn scar on the right forearm (10cm long, pale and smooth) from an old tunnel accident, circa 2189",
+      "Faded tattoo on the inner left wrist: Ferrogate Transit maintenance glyph, barely legible from two decades of abrasion"
+    ],
+    "visible_augmentations": "None. Entirely unmodified human. The absence of chrome, implants, or LED work is itself visually distinctive—his hands are visibly and entirely biological, marked only by labor and time.",
+    "posture_movement": "Moves with economical precision, stepping carefully as if the ground is unreliable. Stands with weight evenly distributed, shoulders slightly forward. Rarely gestures; when he does, movements are slow and deliberate. Head often tilted slightly downward in a listening posture. When seated, he remains completely still. Speech is accompanied by minimal facial movement.",
+    "clothing_style": "Tier 5 / subsistence layering. Wears four or five repaired garments in overlapping fashion: a faded thermal undershirt (burned at one cuff), a wool sweater with visible mending on both elbows, a heavy canvas coat with patched pockets, and a rain-worn nylon overshell. Cargo pants held up with rope, stuffed with small pouches of fungal medicines and offerings. No visible corpo branding, no pretense. Around his neck on a loop of oxidized copper wire hangs his collection of sacred dead devices: a cracked smart phone (pre-2210), two burned memory chips, a corroded environmental sensor node, a shattered optical hub. These hang against his chest and click softly when he moves."
+  },
+  "image_prompt": "Portrait of Tarn Ingebrigtsen-Zielinski, weathered 70-year-old man of mixed Southeast Asian and East Asian heritage (42.8% and 30.2%), golden-brown skin deeply lined from decades underground, short steel-gray hair swept back. Deep brown eyes with age cataracts, slight forward posture from tunnel work. Three parallel ritual scarification lines on each temple and horizontal line along left jawline, all raised and silvered. Burn scar visible on right forearm. Unaugmented human, entirely biological. Wearing overlapping subsistence layers: faded thermal undershirt, mended wool sweater, patched canvas coat, rain-worn nylon shell. Cargo pants held with rope. Sacred dead devices hang on copper wire around neck—cracked phone, memory chips, sensor node, optical hub clicking against chest. Calm, listening expression, minimal facial movement. Standing in dim tunnel lighting with soft shadows emphasizing weathered features and ritual marks. Cyberpunk 2226, Great Lakes Metropolitan Zone underground setting. Atmospheric, dignified, utterly unmodified. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 42.8,
+    "East Asian": 30.2,
+    "Eastern European": 13.1,
+    "Middle Eastern": 5.9,
+    "Indigenous American": 5.6,
+    "North African": 2.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

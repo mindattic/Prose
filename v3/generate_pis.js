@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const OUTPUT_DIR = path.resolve(__dirname, '..', 'engine', 'data', 'characters');
+const OUTPUT_DIR = path.resolve(__dirname, '..', 'engine', 'data', 'people');
 
 // Ensure output directory exists
 if (!fs.existsSync(OUTPUT_DIR)) {

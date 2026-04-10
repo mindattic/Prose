@@ -1,0 +1,150 @@
+{
+  "id": "019d6143a5a77290b42dc84594d24f62",
+  "type": "character",
+  "name": "Arc Petelo-Tetteh",
+  "aliases": [
+    "Vapor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Disappearance specialist",
+  "age": 44,
+  "status": "active",
+  "location": "Old Harbor, near Michigan Ave and Roosevelt",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American, Pacific Islander, Sub-Saharan African, East Asian, and Middle Eastern — a true Ubiquitous Diaspora blend. Warm golden-brown undertones from Latin and Pacific heritage mix with deeper melanin from African ancestry, creating rich dimensional skin with subtle warmth. East Asian heritage contributes to bone structure refinement; Middle Eastern ancestry adds to facial architecture complexity.",
+    "height_cm": 187,
+    "weight_kg": 89,
+    "build": "Lean and angular, shoulders broad but not bulky. Decades of moving through tight spaces and maintaining low profiles have kept him wiry rather than muscular. Moves with economical precision.",
+    "hair_color": "Salt-and-pepper gray",
+    "hair_style": "Closely cropped, military-neat",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint cataracts forming at edges — signs of age and too many years squinting through scope sights",
+    "skin_tone": "Rich warm brown with golden undertones, deeper in pigmentation from blended ancestry. Weathered to a matte finish, sun-exposed and lived-in.",
+    "complexion": "Deep lines around the eyes and mouth reflecting diverse facial structure — stronger cheekbones and jaw definition from Pacific and African heritage, subtle eye shape variations from East Asian ancestry. Scar bisecting left eyebrow, skin bearing the texture of someone who works outdoors in industrial weather. Stubble always present — pragmatic rather than styled.",
+    "distinguishing_marks": [
+      "Surgical scar running 8cm down the left temple, partially hidden by hairline, result of a cortex jack installation",
+      "Burn scarring across the back of his right hand, silvered and smooth, old enough to predate most of his current augmentations",
+      "Small triangular tattoo on his left wrist in faded indigo — a maker's mark from a Tier-5 clinic, specific enough to identify him to those who know what it means"
+    ],
+    "visible_augmentations": "None obvious. A faint whirring occasionally audible beneath his left ear suggests subcutaneous neural processing. No chrome visible — he dresses and maintains himself deliberately invisible.",
+    "posture_movement": "Upright but not rigid. Moves with minimal wasted motion, always aware of exits. Hands positioned low and neutral. Eyes track rooms methodically. Sits with his back to walls. Speaks in measured sentences with long pauses — listening costs nothing.",
+    "clothing_style": "Tier-3 practical wear: charcoal thermal undershirt, unmarked gray composite jacket with internal pockets, dark pants with reinforced knees, worn Black Archon steel-toe boots. A single piece of jewelry — a faded copper wedding band on his left ring finger, worn smooth. Carries a worn canvas satchel, contents unknown. No logos, no status symbols. Everything chosen to disappear into crowds."
+  },
+  "image_prompt": "Arc Petelo-Tetteh, 187cm tall lean angular man with rich warm golden-brown skin blending Pacific Islander, Latin American, African and East Asian ancestry. Salt-and-pepper closely cropped hair, dark brown eyes with age-worn cataracts, deep weathered lines around eyes and mouth. Surgical scar left temple hidden by hairline, prominent scar left eyebrow, burn scarring right hand. Faded indigo tattoo left wrist. Wearing unmarked gray composite jacket, charcoal thermal shirt, dark reinforced pants, Black Archon boots. Copper wedding band worn smooth. Carries canvas satchel. Minimal wasted motion, back straight, hands low and neutral, eyes tracking methodically. Sitting with back to wall in cyberpunk 2226 Great Lakes Metropolitan Zone dive bar, neon bleeding through grimy windows, industrial rain-streaked light, cigarette smoke and neural hum in background, utterly unremarkable and deliberately invisible in the crowd. --ar 2:3 --v 6",
+  "related_entities": [
+    "Focadrin",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Irontide Tidal Energy",
+    "Kamala Blomberg-Konadu",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Old Harbor",
+    "Slagworks Industrial",
+    "The Pure Hand"
+  ],
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 30.9,
+    "Pacific Islander": 29.0,
+    "Sub-Saharan African": 24.1,
+    "East Asian": 9.9,
+    "Middle Eastern": 6.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

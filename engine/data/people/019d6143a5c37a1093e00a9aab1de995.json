@@ -1,0 +1,283 @@
+{
+  "id": "019d6143a5c37a1093e00a9aab1de995",
+  "type": "character",
+  "name": "Zephyr Castañeda-Mensah",
+  "aliases": [
+    "Biri",
+    "The Knife"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Noodle cart vendor, Geartown",
+  "age": 52,
+  "status": "active",
+  "location": "Geartown, corner of Ironvein Passage and the Sixth Lateral, near Milwaukee and North Ave",
+  "description": "Birgitta is a wide-shouldered woman with close-cropped silver-streaked hair and dark amber skin mapped with decades of small burn scars from broth splatter. Her left eye has been replaced with a simple optical implant — utilitarian amber glass, no cosmetic flourish — and she keeps a row of mismatched E.L.F. shrine tokens zip-tied to the roof of her cart's canopy: a cracked tablet, a dead phone, a bent transit card. She believes the E.L.F. that lives in her cart's heating element blesses the broth. She has never given it a name because she says that would be presumptuous.\n\nShe is brisk, efficient, and faintly terrifying to newcomers who don't know how to order. Her menu is three items and she will not deviate. She has been at the same corner for nineteen years and knows every shift-change, every backroom deal, and every failing marriage in a four-block radius. She does not gossip. She observes. She is saving for something she will not discuss.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being forced to move her cart — losing the one fixed thing in her life",
+      "Dying before she finishes what she started"
+    ],
+    "core_desires": [
+      "To buy out the lease on a small building and open a real restaurant before she's sixty",
+      "To know her daughter is safe, wherever she is"
+    ],
+    "coping_mechanisms": [
+      "Ritual �� the same prep sequence every morning, never varying",
+      "Redirecting emotional energy into physical labor"
+    ],
+    "blind_spots": [
+      "She assumes people who are kind to her want something",
+      "She underestimates how much younger workers look up to her"
+    ],
+    "secret": "She has been quietly funneling a portion of her daily earnings into an anonymous account that she sends to her estranged daughter in Hamtramck Enclave. She has not spoken to her daughter in eleven years. She does not know if the daughter checks it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Short sentences. No filler. Technical when it comes to food. Surprisingly precise vocabulary for a street vendor — she reads constantly.",
+    "cadence": "Flat, even, unhurried. Does not raise her voice.",
+    "verbal_tics": [
+      "'Three items.' (when people ask for modifications)",
+      "'Next.' (when she's done with a conversation)",
+      "Long pauses before answering personal questions"
+    ],
+    "example_lines": [
+      "'You want the bone or the clear. That's the choice. You've had ten seconds.'",
+      "'I've seen that man eat here every Tuesday for six years. Last week he didn't come. I'm telling you so someone knows.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular customer hasn't shown up in two weeks. She noticed before anyone else did and she wants someone to check.",
+    "She's being pressured by a Ferrogate Transit sub-contractor to relocate her cart to clear the corner for a new maintenance depot. She refuses. Things are escalating.",
+    "She received a data packet in her anonymous account — not money, but a message. She doesn't know who sent it or what it means."
+  ],
+  "narrative_function": "Information source, local anchor, atmospheric color. She's seen everything and will share exactly as much as she decides you've earned. Quest giver for neighborhood-level problems.",
+  "augmentations": "Basic optical implant (left eye, utilitarian grade). No geneware. Hands show subdermal grip-texture from an old work mod, mostly faded.",
+  "daily_life": "She arrives at her corner at 04:30 to start the broth and leaves at 14:00 exactly, regardless of the queue. She spends her afternoons doing accounts and repairing her cart's aging heating coils herself.",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Observant",
+      "Stubborn",
+      "Ritualistic",
+      "Quietly Generous",
+      "Guarded"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never extend credit to anyone she doesn't personally know",
+      "Don't get involved in other people's violence unless it happens at her cart",
+      "Maintain the routine no matter what — the routine is load-bearing"
+    ],
+    "escalation_ladder": [
+      "Ignore the problem",
+      "Address it once, directly, without emotion",
+      "Remove herself from the situation entirely — pack up and leave"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Transactional and neutral. Efficient. Not unkind but not warm.",
+      "friends": "Still short on words but attentive in practical ways — remembering what people like, having it ready."
+    },
+    "stress_responses": {
+      "low": "Moves faster, chops more aggressively",
+      "medium": "Goes completely silent and focused",
+      "high": "Shuts the cart early and walks for hours without destination"
+    },
+    "contradictions": [
+      "Claims not to care about people but has memorized the schedules and habits of dozens of regulars",
+      "Says she's saving for herself but the math doesn't add up if you pay attention"
+    ],
+    "habits": [
+      "Wipes down the counter between every customer even when it doesn't need it",
+      "Prays silently to the cart's E.L.F. every morning before first service — a murmured sequence in a mix of Greek and Twi she won't translate"
+    ],
+    "breaking_points": [
+      "Someone threatening a regular she's grown fond of",
+      "Learning her daughter is in danger"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Ghanaian-descended father and a Greek-descended mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Estrangement from daughter following an undisclosed conflict",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Sets up cart at current corner in Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins anonymous financial transfers to daughter's account",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Geartown",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Pellucid Systems",
+    "Glass",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Grigor Nakweti-Halász",
+    "Hamtramck Enclave",
+    "Isadora Vukić-Nambiar",
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "MERIDIAN",
+    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
+    "Réginald Asomaning-Čabarkapa",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tafara Quiñones-Saarinen",
+    "The Counter",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "Witness",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American, Sub-Saharan African, North African, Eastern European, Northern European—a complex diaspora blend. Her features reflect deep African ancestry layered with Mediterranean warmth, Eastern European bone structure, and subtle traces of Iberian heritage.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Wide-shouldered and sturdy, with developed forearms and calloused hands from nineteen years of repetitive labor. Carries weight in her frame without softness—compact, functional muscle beneath a frame built for endurance.",
+    "hair_color": "Silver-streaked dark brown",
+    "hair_style": "Close-cropped, tight to the scalp, practical. No styling beyond basic maintenance.",
+    "hair_length": "Short",
+    "eye_color": "Left: utilitarian amber glass optical implant (non-cosmetic). Right: natural dark brown.",
+    "skin_tone": "Deep warm brown with golden undertones—the result of African, Latin American, and North African ancestry blending into a rich, complex hue that catches light with subtle warmth.",
+    "complexion": "Weather-worn and scored with dozens of fine, pale burn scars across her forearms, neck, and the left side of her face—a cartography of nineteen years of steam and broth splatter. Skin is clear but aged, with deep creases at the corners of her right eye and around her mouth. High, prominent cheekbones suggest Eastern European ancestry; broader nose and fuller lips reflect African heritage. No cosmetic modifications; grooming is strictly functional.",
+    "distinguishing_marks": [
+      "Dense cluster of thin burn scars across both forearms, from wrist to elbow, pale against dark skin",
+      "Scattered smaller burn marks on her neck and collarbone",
+      "Fine line of silvery scar tissue along her left temple, partially concealed by hair",
+      "Faint subdermal texture visible on her palms and fingers—ghost of an old grip-mod, mostly faded to tactile ridge patterns"
+    ],
+    "visible_augmentations": "Left eye is a simple, unadorned optical implant with an amber glass lens set in brushed steel—no cosmetic shell, no LED rim, purely functional. The implant has a barely-perceptible lag when she shifts focus. Hands show faint subdermal grip-texture modifications from decades prior, now mostly integrated into scar tissue.",
+    "posture_movement": "Stands with feet shoulder-width apart, weight balanced. Moves with efficient, economical gestures—no wasted motion. Her gaze is direct and lingering; people feel observed. She has a habit of tilting her head slightly when listening, favoring her right eye. When working the cart, she moves with practiced rhythm, hands moving through the same sequences thousands of times.",
+    "clothing_style": "Tier 4 utilitarian. Wears a faded charcoal coverall with deep pockets and reinforced seams, sleeves rolled to mid-forearm. Over it: a long, stained apron in faded burgundy canvas, sectioned with loops for tools and small jars of spices. Beneath: a plain cream undershirt, collar darkened with old sweat stains. Feet clad in heavy, scuffed black synthetic boots with good tread—built for standing. A threadbare woolen cardigan, moss-gray, hangs on a hook under the cart for afternoon cooldown. No jewelry. A single faded transit pass hangs from a cord around her neck, years past expiration."
+  },
+  "image_prompt": "Zephyr Castañeda-Mensah, 172cm tall street food vendor in Great Lakes Metropolitan Zone 2226, deep warm brown skin with golden undertones reflecting African-Hispanic-North African heritage, high cheekbones with Eastern European structure, weather-worn face scored with pale burn scars across neck and left temple, silver-streaked dark brown hair close-cropped to scalp, left eye amber glass optical implant in brushed steel (non-cosmetic), right eye natural dark brown, direct unwavering gaze. Wearing faded charcoal coverall with rolled sleeves exposing dense pale burn scars on dark forearms, burgundy canvas apron sectioned with spice jars and tool loops, cream undershirt with darkened collar, heavy scuffed black synthetic boots. Standing shoulder-width apart with balanced weight, hands showing faint subdermal grip-texture from old modifications, efficiency in every gesture. Cyberpunk street cart vendor, functional utilitarian aesthetic, weathered hands, tired but observant expression, neon-lit evening in sprawling metropolitan zone, cold overhead lighting catching the texture of scar tissue and deep skin tones, gritty realism, documentary photography style --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 43.1,
+    "Sub-Saharan African": 34.2,
+    "Eastern European": 11.9,
+    "North African": 8.2,
+    "Northern European": 2.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

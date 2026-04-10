@@ -1,0 +1,340 @@
+{
+  "id": "019d6143a62374938e94804a033078d7",
+  "type": "character",
+  "name": "Zara Mbekele-Ingebrigtsen-Dalgaard",
+  "aliases": [
+    "Yoke",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Corporate espionage and data exfiltration — data thief",
+  "age": 59,
+  "status": "active",
+  "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
+  "description": "Halima Akerblom-Manu are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 59, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a data thief out of Burnside Corridor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHalima Akerblom-Manu operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.81,
+      "ideal": 0.66,
+      "id": 0.68,
+      "shadow": 0.22,
+      "mask": 0.35,
+      "ghost": 0.56
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Overwork — takes every contract offered because idleness invites thinking",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Overestimates their own abilities in situations outside their specialty"
+    ],
+    "secret": "Halima Akerblom-Manu witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
+      "Whispers when angry — the quieter the voice, the worse the situation"
+    ],
+    "example_lines": [
+      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
+      "\"I copy things. The original owners rarely appreciate the compliment.\"",
+      "\"Data wants to be free. I just charge a facilitation fee.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Halima Akerblom-Manu intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "The fixer who handles Halima Akerblom-Manu's contracts goes silent — dead, disappeared, or turned",
+    "A crew member from Halima Akerblom-Manu's past shows up in GLMZ, carrying old grievances and new chrome"
+  ],
+  "narrative_function": "As a data thief, Halima Akerblom-Manu embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — Dockside connections",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 8
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.18,
+      "caution": 0.46,
+      "loyalty": 0.32,
+      "greed": 0.79,
+      "empathy": 0.43
+    },
+    "drives": [
+      "freedom",
+      "reputation",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 5,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "multilingual — speaks 4+ languages fluently",
+      "intimidating physical presence"
+    ],
+    "weaknesses": [
+      "poor impulse control in specific triggers",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "data thief",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
+      "Checks exits within 10 seconds of entering any room",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "GLMZ",
+    "The Heritage Vault",
+    "Burnside Pocket",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Brecken Yılmaz-Osei",
+    "Chibundo Reinholt-Sarpong",
+    "Compass Rose",
+    "Crucible RE-2 'Receptionist'",
+    "Ezio Kaboré-Malhotra",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Helix Biosystems Vagal Resonance Dampener",
+    "Isadora Mwangi-Thorvaldsen",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Mika Sorel",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Prophet",
+    "Réginald Asomaning-Čabarkapa",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TESSERA CR-12 'Whisper'",
+    "The Narrows"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southeast Asian dominant with significant East Asian and Sub-Saharan African ancestry — a complex genetic blend reflecting the Ubiquitous Diaspora. The result is a face and frame that resists easy categorization, drawing strength from three continental regions.",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Rawboned and lean — minimal body fat, long limbs built for speed rather than power. Decades of confined-space combat training have carved efficiency into every muscle. No wasted mass.",
+    "hair_color": "Salt-and-pepper gray with natural dark undertones",
+    "hair_style": "Pulled back in a tight, practical braid secured with a steel cable tie",
+    "hair_length": "Long",
+    "eye_color": "Chrome iris rings with amber pupil dilation — cybernetic enhancement visible in lowlight",
+    "skin_tone": "Warm golden-brown with slight olive undertones — the complexion of someone who spends more time in artificial light than sunlight, carrying the blended warmth of Southeast and East Asian heritage with deeper shadows from Sub-Saharan ancestry",
+    "complexion": "Lean, angular face with prominent high cheekbones and a sharp, defined jaw. The bone structure reflects East and Southeast Asian ancestry with subtle broadening through the cheeks. Skin is weathered but clean — no cosmetic concern, only functional maintenance. Lines around the eyes from decades of focus, with the characteristic eye shape showing East Asian influence. The face resists easy categorization — distinctly their own.",
+    "distinguishing_marks": [
+      "Thin surgical scar running 4cm along the left temple, partially obscured by the hairline — old combat injury, professionally closed",
+      "Series of three parallel burn marks across the right forearm, each 2-3cm long and faded to white — chemical splash from a failed extraction, circa 2211",
+      "Small tattoo at the inside of the left wrist — a stylized compass rose in gray ink, barely visible unless specifically looked for"
+    ],
+    "visible_augmentations": "Chrome iris rings with faint LED glow in thermal mode. Wired reflex ports visible along both sides of the neck as raised metallic nodes, pulsing with faint bioluminescent blue when active. The adrenaline pump manifests as a slight broadening at the solar plexus — internal augmentation visible only as a subtle scar pattern beneath fitted clothing.",
+    "posture_movement": "Stands with shoulders slightly forward, weight balanced on the balls of the feet — never fully relaxed, always ready. Movements are economical and precise, no extraneous motion. Eyes scan environments methodically. When they move through space, it's with the calculated efficiency of someone trained in confined-space tactics.",
+    "clothing_style": "Tier 4 pragmatist. Black or dark gray fitted synthetic bodysuit with modular cargo pockets — reinforced stitching, thermal-damping weave for stealth. Over this, a lightweight gray tech-jacket with reflective piping, minimal branding. Worn boots — expensive once, now broken in. No jewelry except the cable tie in their hair. Everything is functional, replaceable, and kept in good repair. Nothing screams wealth or poverty — calculated invisibility."
+  },
+  "image_prompt": "Zara Mbekele-Ingebrigtsen-Dalgaard, 183cm tall mixed-heritage woman with Southeast Asian, East Asian, and Sub-Saharan African ancestry. Golden-brown skin with olive undertones, warm complexion weathered by decades of confined-space operations. Angular, sharp-featured face with high cheekbones and defined jawline. Chrome iris rings with amber pupils glowing faintly in thermal mode. Salt-and-pepper gray hair pulled back in tight practical braid with steel cable tie. Visible cybernetic reflex ports along both sides of neck as metallic nodes with faint blue bioluminescence. Thin surgical scar along left temple, white burn marks across right forearm, small gray compass rose tattoo at left wrist. Raw, lean 68kg build with minimal body fat, long limbs carved for speed. Black fitted synthetic bodysuit with modular cargo pockets, lightweight gray tech-jacket with reflective piping, worn-in expensive boots. Posture forward-balanced on balls of feet, shoulders slightly tense. Standing in neon-lit cyberpunk 2200s environment, scanning surroundings with methodical precision. Mood: calculated, dangerous, professional. Lighting: artificial low-light with thermal glow from augmentations. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 52.9,
+    "East Asian": 25.1,
+    "Sub-Saharan African": 22.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

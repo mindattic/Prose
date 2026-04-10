@@ -1,0 +1,315 @@
+{
+  "id": "019d6143a6e27473b7dacf121b976369",
+  "type": "character",
+  "name": "Wren Khorasani",
+  "aliases": [
+    "Sveta",
+    "The Axe"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Executive Vice President, Logistics & Supply Chain — Ferrogate Transit",
+  "age": 55,
+  "status": "active",
+  "location": "Lincoln Fortress, Ferrogate Transit Executive Tower — 34th floor",
+  "description": "Svetlana Boateng-Quiñonez is a heavyset, silver-haired woman who moves through Lincoln Fortress like weather — unhurried, pervasive, and capable of causing significant structural damage. Her skin is a warm light brown, heavily lined in ways she has never bothered to smooth, and she wears her age with the deliberate comfort of someone who learned long ago that looking powerful is less useful than being powerful. She has no cosmetic augmentations. Her one visible modification is a retractile data-port behind her right ear, elegant and old — installed in 2171 and never upgraded because it works. She dresses in Ferrogate corporate grey with red piping, always exactly regulation, always somehow implying that the regulations were written with her in mind.\n\nSveta earned her nickname honestly — she has restructured three divisions, eliminated two redundant subsidiary contracts worth a combined Φ40 million annually, and once remotely rerouted an entire shipment corridor mid-transit to prevent a competitor from intercepting Ferrogate cargo, all in the same fiscal quarter. She is not a cruel executive but she is a ruthlessly efficient one, and she draws a very clean line between what she considers professional and what she considers personal. On the professional side, she is demanding, decisive, and fair in a way that feels almost aggressive. On the personal side — which almost no one at Ferrogate has ever seen — she is funny, nostalgic, and occasionally wrecked by things she won't talk about.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.65,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing control of systems she is responsible for — not for personal reasons, but because she has seen what that costs the people those systems serve",
+      "Being remembered as someone who built something hollow"
+    ],
+    "core_desires": [
+      "To leave Ferrogate's infrastructure genuinely better than she found it",
+      "To be known by one person, completely, without having to perform competence"
+    ],
+    "coping_mechanisms": [
+      "Control — maintaining it, extending it, refining it as a substitute for emotional processing",
+      "Walking the infrastructure — physical movement through the systems she manages",
+      "A private monthly ritual at a small ELF-shrine in Ferrogate's oldest transit hub, which she has maintained for twenty years"
+    ],
+    "blind_spots": [
+      "She genuinely does not see how her efficiency has translated into human cost at the bottom of the org chart — she measures outcomes, not the texture of the suffering behind them",
+      "She has mistaken emotional self-sufficiency for emotional health for so long she can no longer tell the difference"
+    ],
+    "secret": "Ferrogate's northern corridor expansion — a project she championed and considers her defining achievement — was built on a land-use agreement that she knows displaced a Highland Park Autonomous Zone community. She didn't falsify anything. She simply chose not to look too closely at the human geography reports before signing. The project succeeded. She still knows where those people went."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, precise, and institutional. Never wastes words. Uses logistics and infrastructure metaphors for everything including human relationships. Spanish and Russian phrases emerge only in private or under significant stress.",
+    "cadence": "Slow and deliberate in public meetings — every word placed. In private, considerably faster. Long silences that are not awkward; they are evaluative.",
+    "verbal_tics": [
+      "Refers to problems as 'inefficiencies' regardless of their human content",
+      "A habit of stating conclusions before explanations, then filling in the reasoning if pressed",
+      "'That's already decided' as a conversational door-close"
+    ],
+    "example_lines": [
+      "'I don't need you to agree with me. I need you to understand what happens if this corridor goes dark for six hours. Then decide.'",
+      "'I've been walking these hubs for thirty years. The transit doesn't lie. People lie. The system tells you exactly what it is.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She quietly approaches someone to investigate a series of cargo anomalies in the northern corridor — but only once she's confirmed they have no connection to Ferrogate's internal audit apparatus. She doesn't want this found officially.",
+    "A junior Ferrogate employee who was flagging safety concerns about aging infrastructure in the southern hubs has suddenly been quietly transferred. Sveta's name is on the transfer order, but someone who knows her work says it doesn't look like her signature move.",
+    "She has the transit access codes to move something — or someone — across the entire GLMZ infrastructure undetected. The question is what she'd need in exchange, and whether her price is payable."
+  ],
+  "narrative_function": "High-tier quest giver with genuinely complex motivations; antagonist who isn't wrong; source of macro-level information about Ferrogate's operations and GLMZ's transit infrastructure; gatekeeper to resources that players might desperately need.",
+  "augmentations": "Retractile data-port (behind right ear, installed 2171). Subdermal cardiac monitor with automatic emergency alert — required by Ferrogate for all Tier 5 executives over 50. No cosmetic modifications.",
+  "daily_life": "In her office by 06:00, has reviewed overnight logistics reports before most of her staff have eaten breakfast. Conducts three standing meetings before noon. Takes lunch in her office twice a week; uses the other three days to walk the lower transit hubs personally — she believes executives who don't see their actual infrastructure are executives making bad decisions.",
+  "affiliation": "Ferrogate Transit (Tier 5)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "executive",
+      "systemic-thinker",
+      "ethically-compromised",
+      "powerful",
+      "privately-haunted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Identify the actual variable, not the apparent one",
+      "Never make a decision under time pressure that could wait twelve hours",
+      "Always know the second-order consequences before the first-order ones"
+    ],
+    "escalation_ladder": [
+      "Quiet internal redirection — adjusting variables without confrontation",
+      "Direct statement of the problem and her preferred solution, delivered once",
+      "Structural intervention — reorganize the system until the problem can no longer persist"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing, professionally courteous, gives very little away. Asks one or two questions that seem simple and are not.",
+      "friends": "Almost unrecognizable from her professional persona — dry, occasionally self-mocking, genuinely curious about the lives of people she trusts. Still doesn't talk about herself much."
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and economical. Fewer words, faster decisions.",
+      "medium": "Starts walking — physically moves through infrastructure she controls. Reasserts direct management over things she normally delegates.",
+      "high": "Goes completely cold and purely transactional. Briefly becomes the most dangerous version of herself. Has, historically, done things she later regrets in this state."
+    },
+    "contradictions": [
+      "She believes deeply in the social value of functional infrastructure and genuinely cares about the people who depend on it, but has made every decision that caused harm to those same people through the logic of efficiency"
+    ],
+    "habits": [
+      "Walks a different section of Ferrogate's hub network every Tuesday and Thursday, usually alone",
+      "Keeps a handwritten ledger of every major decision she's made and its downstream outcomes, updated monthly",
+      "Maintains the ELF-shrine at Transit Hub 7-South with fresh data offerings, always in person"
+    ],
+    "breaking_points": [
+      "If she were confronted with direct evidence — faces, names, testimony — of the harm her northern corridor displacement caused, in a context where denial was impossible, she would have a genuine crisis of her constructed self-image"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "People Pleaser": 0.7,
+    "Commander": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in New Windsor / Novaya Windsorka, Ghanaian-Russian-Mexican family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Ferrogate Transit as junior logistics coordinator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Data-port installation; promoted to regional logistics manager",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Championed and signed off on northern corridor expansion — Highland Park displacement occurs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Executive Vice President, Logistics & Supply Chain",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: managing northern corridor anomalies in private, maintaining the ELF-shrine she has never discussed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Lincoln Fortress",
+    "Ferrogate Transit",
+    "Riddle",
+    "GLMZ",
+    "TESSERA PG-2 'Signature'",
+    "Silver",
+    "Slagworks Industrial",
+    "Alper Inoue-Aidoo",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus ST-4 'Verdict'",
+    "Dzemal Acholonu-Patagiri",
+    "Eshe Pena-Baah",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Highland Park Autonomous Zone",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Nnamdi Ostrowski-Faletolu",
+    "Nodar Kuznetsov-Adu",
+    "O'Hare Sovereign",
+    "Patient Zero",
+    "Red Circuit RC-Pit 'Dogfighter'",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Heritage Vault",
+    "The Ledger",
+    "The Pure Hand",
+    "The Question",
+    "The Transfer",
+    "Vanta Ordnance Railgun Pistol RP-1 'Thumbtack'",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'",
+    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
+    "Zheng-dao Bioelectric"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Predominantly Middle Eastern with significant Southeast Asian, Hispanic/Latin American, Eastern European, South Asian, and East Asian ancestry — a complex genetic mosaic reflecting the Ubiquitous Diaspora. Her phenotype is a sophisticated blend: Middle Eastern bone structure and warmth at the foundation, Southeast Asian refinement in her eye set and cheekbones, Hispanic/Latin warmth in her skin undertones, Eastern European strength in her jaw and frame, with subtle South and East Asian features creating a face that reads as globally integrated rather than regionally fixed.",
+    "height_cm": 172,
+    "weight_kg": 89,
+    "build": "Heavyset but structured — broad shoulders and a solid frame that reads as presence rather than softness. Years of moving through industrial spaces have kept her posture military-straight despite her weight. Her mass is distributed with the confidence of someone who has never felt the need to apologize for taking up space.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Swept back from her face in a severe, practical arrangement, pinned at the nape with a grey titanium clip",
+    "hair_length": "Medium (shoulder-blade length)",
+    "eye_color": "Steel grey, unremarkable, the kind that misses nothing",
+    "skin_tone": "Rich warm tan with subtle golden and olive undertones — the result of her diverse ancestry creating a complexion that catches light with depth. Not uniform: her skin has the character of someone who has lived through decades of transit and industrial environments, with variation in tone across her face and neck that speaks to exposure and time.",
+    "complexion": "Heavily lined face with deep creases around her eyes and mouth. Her skin has the texture of someone who spent decades in poorly-humidified office environments and industrial transit zones. No attempts at smoothing or rejuvenation. Her face reads as a map of decisions made and consequences accepted. Her bone structure — a blend of Middle Eastern prominence and Southeast Asian definition — gives her face a geometric strength that age has only sharpened. Minimal makeup — just enough to maintain professional presentation.",
+    "distinguishing_marks": [
+      "Linear scar along her left jawline, faint but visible under certain light — approximately 8cm long, origin and age unknown, never discussed",
+      "Burn scar across the back of her right hand, old and silvered — consistent with thermal damage from 2180s-era transit equipment malfunction",
+      "Small tattoo on her inner right wrist: a stylized anchor and crescent moon, barely visible unless she extends her arm with deliberate exposure — installed in 2147, before corporate regulations tightened"
+    ],
+    "visible_augmentations": "Retractile data-port behind her right ear — a precisely engineered socket of brushed steel and black polymer, elegant and deliberately dated. The port sits just at the hairline; when not in use, it retracts flush with her skin, leaving only a faint seam. The augmentation is intentionally visible; she has never hidden it and actively maintains its visibility as a signal of uninterrupted service and refusal to chase cosmetic upgrades.",
+    "posture_movement": "She moves like weather moving through a space — unhurried, purposeful, with the physical confidence of someone who has spent 30+ years in executive logistics. Her stride is long and economical; she doesn't waste motion. She sits with her spine against chair backs, never reclining, and her hands are always occupied or resting flat on surfaces. Her movements have the precision of someone who has trained her body to reflect her mind: controlled, efficient, communicative without words.",
+    "clothing_style": "Always Ferrogate corporate grey — tailored jackets and regulation trousers with red piping at the seams and collar. The cuts are formal, almost dated by current standards, which is deliberate; she has worn the same silhouette for 15 years and has no intention of changing it. Her clothing fits impeccably — tailored quarterly by Ferrogate's in-house contractor — and carries subtle status markers: the red piping is real anodized aluminum, not printed, and her jacket cuffs have reinforced wear-patches from constant contact with desk edges and transit equipment railings. She wears a single piece of jewelry: a platinum watch from 2156, never serviced, perpetually accurate to within 2 seconds."
+  },
+  "image_prompt": "Wren Khorasani, 172cm woman with heavyset structured build, cyberpunk 2226, GLMZ executive. Rich warm tan complexion with golden undertones, blend of Middle Eastern, Southeast Asian, Hispanic, Eastern European and South Asian heritage visible in her strong geometric bone structure and deep-set steel grey eyes. Silver-white hair shoulder-blade length swept back and pinned with titanium clip. Heavily lined face, weathered skin, faint 8cm scar along left jawline, burn scar on right hand. Behind right ear: retractile brushed steel data-port at hairline. Wearing immaculate Ferrogate corporate grey tailored jacket with red anodized aluminum piping, regulation grey trousers with reinforced wear-patches on cuffs. Platinum watch from 2156 on wrist. Military-straight posture, hands resting flat on surface or occupied, economical movement. Minimal makeup, no cosmetic rejuvenation. Formal, dated silhouette deliberately maintained. Industrial corporate transit setting, cool grey lighting with subtle warm accent from ambient screens. Professional presence, uncompromising authority, 30+ years of logistics command readable in every line. Cyberpunk corporate aesthetic, photorealistic detail. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 35.5,
+    "Southeast Asian": 18.0,
+    "Hispanic/Latin American": 17.5,
+    "Eastern European": 13.1,
+    "South Asian": 9.7,
+    "East Asian": 6.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

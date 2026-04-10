@@ -1,0 +1,314 @@
+{
+  "id": "019d6143a688731cb5033e5c9c33dd01",
+  "type": "character",
+  "name": "Drift Mwangi-Deshpande",
+  "aliases": [
+    "Wren",
+    "The Wren"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Underground filmmaker and VR experience designer",
+  "age": 24,
+  "status": "active",
+  "location": "Pilsen Veil, near Ashland and Division",
+  "description": "Wren is compact and restless, with warm brown skin, a mess of thick natural hair dyed an oxidized copper that they refuse to maintain so the roots always show, and a pair of geneware cat ears — black, slightly larger than natural — that they got at sixteen and now consider embarrassingly juvenile but can't bring themselves to remove because their late grandmother loved them. They have an omnidirectional recording implant behind their left ear that means they are always, technically, filming, and people who know this have complicated feelings about being around them.\n\nThey make films that are not films exactly — hour-long VR experiences that place the viewer inside the nervous system of someone surviving something: a three-day eviction, a corporate audit, a birth, a first heartbreak at age sixty-two. Wren sources their subjects entirely from their neighborhood in Pilsen Veil, refusing to aestheticize poverty they don't live in, and they have a reputation for brutal honesty and an equally brutal ability to make you cry in under four minutes. They are vibrating with ideas at all times, finish other people's sentences constantly, and have never once in their life been on time to anything.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.2,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Making something dishonest — treating a real person's life as raw material for their own expression",
+      "Being absorbed by a corponation content platform and losing ownership of their work"
+    ],
+    "core_desires": [
+      "To make the invisible audible — to force GLMZ's comfortable tiers to actually see who lives below them",
+      "To make something their grandmother would have watched and understood"
+    ],
+    "coping_mechanisms": [
+      "Turns anxiety into frenzied productivity",
+      "Asks interviewee-style questions of people they are uncomfortable with, which gives them control of the frame"
+    ],
+    "blind_spots": [
+      "Genuinely does not recognize when their recording of someone is a violation of privacy rather than documentation",
+      "Assumes their good intentions make them immune to causing harm"
+    ],
+    "secret": "The most-watched piece in their catalog — a devastating 40-minute VR experience about a family's eviction — was partially staged. One scene was reconstructed from memory because their implant malfunctioned that day. They have never told anyone, including the family."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, associative, film-theory vocabulary mixed with Pilsen Veil street slang; frequently uses visual framing metaphors",
+    "cadence": "Rapid-fire, often abandons a sentence halfway through to start a better one",
+    "verbal_tics": [
+      "'No wait, hold on—' before correcting themselves",
+      "Calls everyone 'friend' regardless of actual relationship",
+      "'You see what I mean?' as punctuation"
+    ],
+    "example_lines": [
+      "'No wait, hold on — it's not about poverty, friend, it's about the specific geometry of a room you can't leave. You see what I mean? The walls are the character.'",
+      "'I'm not filming you right now. I mean — I am, but I do that with everyone, it's — the consent toggle is off. Mostly.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Their always-on implant accidentally captured footage of a Sterling-Nakamura security team conducting something illegal in Pilsen Veil — they don't know what they have, but someone has been following them",
+    "A subject from one of their earliest films has been reported missing, and Wren's archived footage from years of casual recording may contain the last known evidence of where they went"
+  ],
+  "narrative_function": "Information source about neighborhood events and people — they have recorded almost everything that has happened in Pilsen Veil for three years. Can also serve as a quest giver (one of their subjects is in danger and they are the only one who knows because of something they recorded), or a source of tension (their recordings contain things people would pay to suppress).",
+  "augmentations": "Omnidirectional recording implant (left mastoid bone, always-on with consent toggle). Geneware black cat ears. Haptic feedback gloves for VR sculpting.",
+  "daily_life": "Wren wakes up at noon, spends the afternoon doing street interviews or trawling Pilsen Veil for stories, stays up until 4am editing in a VR rig they assembled from salvaged Axiom components. They eat irregularly and live mostly on noodles from a stall run by a woman named Auntie Priya who has appeared in two of their films.",
+  "affiliation": "Independent; distributed through the Irkalla underground film circuit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "documentarian",
+      "ethical-grey-area",
+      "neighborhood-memory",
+      "underground-circuit",
+      "always-watching"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always asks consent before using someone's story publicly — but sometimes asks after they've already started forming it in their head",
+      "Will not accept money from any corponation for any reason"
+    ],
+    "escalation_ladder": [
+      "Nervous deflection into interview mode",
+      "Rapid-fire bargaining and reframing",
+      "Sudden complete stillness and direct eye contact — people who know them find this alarming",
+      "Disappears for days and releases the film anyway"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Intensely curious, slightly too close, asks personal questions very quickly and seems genuinely shocked when people find this uncomfortable",
+      "friends": "Loyal to a fault, will promote their work relentlessly, remembers everything they've ever told them and brings it up at unexpected moments"
+    },
+    "stress_responses": {
+      "low": "Talks faster, makes more plans than they can execute",
+      "medium": "Goes very quiet, watches everything, the implant's record indicator blinks constantly",
+      "high": "Locks themselves in the edit suite for 48 hours and emerges with a new piece"
+    },
+    "contradictions": [
+      "Deeply committed to consent and ethical documentation but struggles to turn off the recording reflex even in private moments"
+    ],
+    "habits": [
+      "Narrates their own surroundings under their breath as if writing a voiceover",
+      "Leaves small data chips with free copies of their work wedged into cracks in walls around Pilsen Veil"
+    ],
+    "breaking_points": [
+      "Being told a subject they care about found their film exploitative",
+      "A corponation claiming ownership of footage from their implant under the Axiom Data Origination clause"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Omnidirectional recording implant (left mastoid, Axiom-salvaged)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Omnidirectional recording implant (left mastoid, Axiom-salvaged)",
+      "replaces": ""
+    },
+    {
+      "name": "Haptic feedback sculpting gloves (VR-grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic feedback sculpting gloves (VR-grade)",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware black cat ears (cosmetic, juvenile regret)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware black cat ears (cosmetic, juvenile regret)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Judge": 0.7,
+    "Sentinel": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2176 — Born in Pilsen Veil to a Ghanaian-Filipino mother and a Serbian father; grew up in a three-family shared unit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Grandmother gifted them their first VR rig secondhand; first short piece recorded on a borrowed implant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — Grandmother died; Wren got the cat ears the same week, a decision made in grief they have never fully explained",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — 'Three Days Notice' (the eviction experience) distributed on the Irkalla circuit; thirty thousand views in the first month",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Currently working on a piece about Pilsen Veil's E.L.F. shrine keepers; increasingly aware they are being watched",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Crucible Industries Havoc-44 'Mauler'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Crucible Industries Havoc-44 'Mauler'"
+  ],
+  "related_entities": [
+    "Pilsen Veil",
+    "Grandmother",
+    "The Gradient Compact",
+    "Copper",
+    "Arcturus Exo-Runner Frame",
+    "Auricula Felis Modification",
+    "Axolotl Regenerative Suite",
+    "Axonal Stretch Resonance Lance",
+    "Aïssé Dragomirescu-Faalelei",
+    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
+    "Crucible Industries Havoc-44 'Mauler'",
+    "GLMZ",
+    "Idris Forsberg-Quaye",
+    "Irkalla",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "MERIDIAN",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Neuromorphic Pressure Cestus",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Rongo Delgado-Opoku",
+    "SynapTech AromaVeil Olfactory Filter",
+    "SynapTech PolyGlot Live Translation Implant",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "TESSERA TC-3 'Crucible'",
+    "The Iron Lotus",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vuk Jorgensen-Toure",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (43.6%), Pacific Islander (20.8%), South Asian (16.8%), Indigenous American (13.1%), Hispanic/Latin American (5.7%) — a striking blend resulting in warm deep brown skin with golden-bronze undertones, facial structure reflecting the mix of African width and definition with South Asian and Pacific Islander softness, and Indigenous American bone structure evident in cheekbones and jaw",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, all restless energy with minimal fat mass — the build of someone who forgets to eat and moves constantly. Slight shoulders, narrow chest, quick-twitch muscle definition in forearms and legs.",
+    "hair_color": "Oxidized copper with dark brown roots always visible",
+    "hair_style": "Deliberately unmaintained thick natural coils, chaotic and shoulder-length, copper color fading unevenly as regrowth emerges",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Deep warm brown with golden-bronze undertones, melanin-rich and luminous",
+    "complexion": "Clear-faced with the slightly hollowed cheeks of chronic irregular eating, dark circles under eyes from late-night editing sessions. Minor acne scarring on jawline. Expressive face that moves constantly, with facial structure reflecting African, South Asian, and Pacific Islander heritage — defined cheekbones, slightly full lips, warm depth to features.",
+    "distinguishing_marks": [
+      "Twin small tattoos on inner wrists: Irkalla circuit symbols in silver ink, one on each side",
+      "Faint scar across left knuckle from a filmmaking accident with salvaged equipment at age nineteen",
+      "Thin white line above right eyebrow from childhood"
+    ],
+    "visible_augmentations": "Geneware black cat ears protruding from scalp at natural ear position — slightly larger than biological ears, textured fur, responsive to emotion (flatten slightly when anxious, perk when excited). Barely-visible surgical line behind left ear where omnidirectional recording implant sits beneath skin; small amber LED indicator blinks softly when recording. Haptic feedback gloves worn frequently — black synthetic leather with embedded haptic nodes visible as raised points across palms and fingers.",
+    "posture_movement": "Perpetually forward-leaning, as if about to interrupt or bolt. Fidgets with hands constantly — gestures while talking, taps fingers on surfaces rhythmically. Walks fast with quick, efficient strides. Often caught mid-gesture when listening, finishing sentences with their hands before their mouth catches up. Cat ears twitch with attention, betraying emotional states they try to hide.",
+    "clothing_style": "Tier 3-4 working creative: layered, functional, thrifted. Favors oversized band tees (mostly defunct GLMZ indie labels) tucked into high-waisted secondhand jeans with ripped knees. Worn Axiom-branded hoodie in faded charcoal (salvaged from dumpster, now a uniform). Scuffed black Shenzen knockoff sneakers patched multiple times. Carries a weathered shoulder bag made from recycled synth-leather stuffed with recording gear, hard drives, noodle receipts, and cables. Silver rings on most fingers — some handmade, some stolen from street markets. No corporate branding except what's incidental. Looks like they've just come from a 36-hour edit session or are about to have one."
+  },
+  "image_prompt": "Drift Mwangi-Deshpande, 158cm lean wiry figure, deep warm golden-brown skin with luminous undertones, shoulder-length chaotic copper coils with dark roots, dark observant eyes, expressive face with defined cheekbones and jawline scarring. Black geneware cat ears protruding responsively from head. Wearing oversized faded band tee tucked into ripped high-waisted jeans, worn charcoal Axiom hoodie, patched black sneakers. Silver rings on most fingers, haptic feedback gloves with visible nodes, weathered synth-leather shoulder bag. Perpetually forward-leaning posture, mid-gesture with twitching cat ears betraying emotion. Hollowed cheeks, dark circles from late-night work. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial setting, amber LED recording implant barely visible behind left ear, sitting among scattered hard drives and recording equipment, moody blue-purple ambient lighting, exhausted creative energy --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 43.6,
+    "Pacific Islander": 20.8,
+    "South Asian": 16.8,
+    "Indigenous American": 13.1,
+    "Hispanic/Latin American": 5.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

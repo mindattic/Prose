@@ -1,0 +1,147 @@
+{
+  "id": "019d6143a6a079ccb75e41520a0a1872",
+  "type": "character",
+  "name": "Lyric Echeverría-Mazurek",
+  "aliases": [
+    "The Broker"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Tessera proxy",
+  "age": 41,
+  "status": "active",
+  "location": "The Core, near State and Jackson",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Tessera",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "MERIDIAN",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Réginald Asomaning-Čabarkapa",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Eastern European (36.7%) with significant Hispanic/Latin American (25.3%) and Sub-Saharan African (21.5%) ancestry, blended with Indigenous American (6.3%), Northern European (5.9%), and North African (4.3%) heritage. A complex global admixture creating warm-toned skin with layered undertones.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and angular, with defined shoulders from decades of fieldwork. Minimal body fat, efficient musculature suggesting regular maintenance rather than vanity fitness.",
+    "hair_color": "Natural dark brown with silver-gray threading at temples and crown",
+    "hair_style": "Pulled back into a tight, geometric braid that wraps around her skull—practical, intimidating, signature",
+    "hair_length": "Medium (when unbound)",
+    "eye_color": "Natural brown, right eye replaced with a 2nd-gen OPTIC-7 chrono-tracking augment (amber-gold lens with faint reticle grid visible at certain angles)",
+    "skin_tone": "Warm medium-to-deep brown with golden and reddish undertones from Eastern European, Hispanic, Sub-Saharan, and North African blending. Sun-weathered and uneven from asymmetrical scarring.",
+    "complexion": "Sharp, prominent cheekbones reflecting Eastern European and Sub-Saharan ancestry. Long face with slight underbite. Fine scar tissue across left cheekbone and temple. No wrinkles; her face has the taut, preserved quality of someone using mid-tier dermaplast treatments. Facial structure shows the blended geometry of her diverse heritage.",
+    "distinguishing_marks": [
+      "Surgical scar running from left temple to jawline, pale and thin but visible under overhead light—result of optic augmentation procedure at age 28",
+      "Burn scarring on right forearm (inside of wrist to elbow) in an irregular oval pattern—plasma discharge incident, circa 2208",
+      "Small tattoo on inner left wrist: three stacked Φ symbols in silver ink, Tessera affiliation marker"
+    ],
+    "visible_augmentations": "Right eye is a chro-amber lens with visible gold circuitry at the iris edge. Right arm from mid-forearm down is brushed-steel synthetic (smooth, articulated fingers with pressure-sensitive pads). The transition at the elbow is covered by a fitted gray tactical sleeve. Neural interface port at base of skull (covered by hair).",
+    "posture_movement": "Stands with shoulders back, weight centered. Her movements are economical—no wasted motion. She walks with an even, measured pace despite the synthetic arm. Makes deliberate eye contact and rarely blinks with her augmented eye, which can unsettle people.",
+    "clothing_style": "Tier 2 utilitarian-chic. Dark charcoal second-skin bodysuit under a tailored matte-black tactical jacket (Korin Industries, mid-grade chrome-weave lining). Fitted tactical pants with too many pockets. Boots: unmarked matte-black combat boots, expensive but anonymous. Single chrome pendant (Tessera marker) worn under her shirt. No jewelry. Her entire ensemble costs 15,000 Φ and looks it only to those who know the brands."
+  },
+  "image_prompt": "Lyric Echeverría-Mazurek, 168cm lean angular woman with warm golden-brown skin blending Eastern European, Hispanic, Sub-Saharan African, and North African heritage. Geometric braid wrapped around skull, dark brown hair with silver threading. Sharp cheekbones, long face, surgical scar running temple to jawline. Right eye replaced with amber-gold OPTIC-7 chrono-tracking augment showing gold circuitry. Right arm brushed-steel synthetic with articulated fingers. Wearing dark charcoal second-skin bodysuit under matte-black Korin Industries tactical jacket with chrome-weave lining, tactical pants, unmarked black combat boots. Centered posture, economical movements, cyberpunk 2226 Great Lakes Metropolitan Zone operative. Cool overhead neon-blue and cold white lighting, industrial background, intense focused expression, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 36.7,
+    "Hispanic/Latin American": 25.3,
+    "Sub-Saharan African": 21.5,
+    "Indigenous American": 6.3,
+    "Northern European": 5.9,
+    "North African": 4.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

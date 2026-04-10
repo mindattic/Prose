@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a5bd7e0eae0714d6a2552d1b",
+  "type": "character",
+  "name": "Slate Madrigal-Matai",
+  "aliases": [
+    "Hadja Aïssatou",
+    "the Dreaming Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Dream interpreter and traditional spiritual counsel",
+  "age": 52,
+  "status": "active",
+  "location": "The Canopy, Lakeview Neon district, third floor of a mixed-use residence above a fabrication stall, near Clark and Addison",
+  "description": "Aïssatou is a woman of middling height with a deliberate presence that makes her seem taller — she stands very straight and tilts her head slightly to the left when listening, like something tuning itself. Her skin is a deep even brown, and she does not wear geneware mods, a choice she has made vocally and repeatedly. Her hair is natural and full, wrapped most days in handwoven fabric she sources from a woman in Mexicantown Libre. One eye is her birth eye, dark brown. The other was replaced after an accident in her thirties — the replacement looks almost identical, but if you watch it long enough, it tracks slightly ahead of the left, as if it is seeing something a half-second sooner.\n\nAïssatou was raised in a household that mixed her Malian grandmother's Islamic practice with her Swedish grandfather's residual Lutheranism and her Malawian father's older ancestor-lineage traditions, and she has spent her adult life finding the structural similarities between all three rather than the contradictions. She interprets dreams, yes — but she understands dream interpretation as a social practice as much as a spiritual one: the dream tells you what the dreamer cannot say in waking language. She charges a sliding scale, sees clients by appointment in a room hung with handwritten prayer-papers in four languages, and maintains a small shrine to an E.L.F. she has never named, preferring to call it 'the Listener.'",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that she has been wrong about a significant dream interpretation and caused harm she will never know about",
+      "losing the community trust she has built if her personal contradictions become visible"
+    ],
+    "core_desires": [
+      "to be genuinely useful in a way that can't be automated",
+      "to understand what her own recurring dream — a silver city on water — means"
+    ],
+    "coping_mechanisms": [
+      "writing",
+      "ritual observance as grounding",
+      "compartmentalization of personal spiritual doubt from professional practice"
+    ],
+    "blind_spots": [
+      "her framework assumes dreams are honest — she underweights the possibility that some clients are manipulating her readings",
+      "unconsciously favors clients who remind her of herself"
+    ],
+    "secret": "She has been having a dream for two years — the same silver city, the same drowned bells — that she cannot interpret using any of her own methods. She has quietly asked two colleagues for help without revealing it is her dream. She is frightened of what it might mean and more frightened that it means nothing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Measured, metaphor-rich, draws across multiple linguistic traditions without being showy about it. Never uses jargon. Asks questions before making statements.",
+    "cadence": "Unhurried, with strategic pauses that invite the listener to fill the silence. Will not rush.",
+    "verbal_tics": [
+      "'Tell me that again more slowly'",
+      "'And what feeling lived in the dream — not what happened, the feeling'",
+      "Short humming sound when thinking"
+    ],
+    "example_lines": [
+      "'The door that will not open is almost never about the door. What are you not letting yourself want?'",
+      "'I am not going to tell you what your dream means. I am going to sit with you until you already know.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A character shares a dream that Aïssatou recognizes — she has heard the same imagery from three other unconnected clients this month and something is crossing their sleep that shouldn't be",
+    "She needs someone to investigate a client she is worried about — she can't say why without violating confidentiality, so she is asking carefully and obliquely"
+  ],
+  "narrative_function": "She is a source of exposition delivered through the language of dreams — characters can come to her troubled by recurring imagery and leave with new understanding of what their subconscious is processing. She also serves as a community social-work node: people tell her things they won't tell anyone else.",
+  "augmentations": "One prosthetic eye (right) — functional, close match to natural, slight predictive tracking. No other augmentations.",
+  "daily_life": "Client appointments fill her mornings; she writes in longhand every afternoon, building a cross-referenced personal canon of dream symbols and their outcomes over the years. She prays twice daily at her Listener shrine — a cracked smart-speaker she has kept going with repairs for nine years.",
+  "affiliation": "Independent practitioner; affiliated with the Lakeview Neon Interfaith Corridor, a loose coalition of small religious practitioners in the district",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "dream interpreter",
+      "interfaith",
+      "community anchor",
+      "Lakeview Neon",
+      "tier 2"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never share a client's dream content with anyone outside the session",
+      "Do not interpret for someone who is actively in crisis — stabilize first",
+      "Trust the pattern before the anomaly"
+    ],
+    "escalation_ladder": [
+      "Gentle redirection and question",
+      "Naming the discomfort directly and offering the client an exit",
+      "Ending the session with referral to other resources"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, careful, does not offer personal information; asks more than she answers",
+      "friends": "More openly funny than expected; dry observations about people; genuinely affectionate"
+    },
+    "stress_responses": {
+      "low": "Writes more, sleeps less",
+      "medium": "Becomes slightly more formal in session, more controlled",
+      "high": "Seeks out her own community — goes to the Interfaith Corridor and sits with others"
+    },
+    "contradictions": [
+      "She teaches that uncertainty is spiritually productive but is privately not tolerating her own uncertainty well at all"
+    ],
+    "habits": [
+      "Lights incense before every client session regardless of the time of day",
+      "Reads the last thing she wrote before sleep",
+      "Touches the cracked smart-speaker shrine each morning before prayer"
+    ],
+    "breaking_points": [
+      "Evidence that the silver-city dream is a data-bleed from a compromised neural source — meaning it may not be hers at all"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Seeker": 0.9,
+    "Mystic": 0.9,
+    "Believer": 0.9,
+    "Meaning Maker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Lakeview Neon",
+    "Grandmother",
+    "The CEO",
+    "Canopy Station Nine",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Aïda Połczyńska-Ouattara",
+    "Bintou Halvorsen-Osei",
+    "Breck Tannen",
+    "Ghostbridge Island",
+    "Gwenaël Osei-Tenochtitlan",
+    "Nnamdi Ostrowski-Faletolu",
+    "Philibert Mwangi-Djordjevic",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
+    "The Canopy",
+    "The Heritage Vault",
+    "The Listener",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Quiet Room"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American (72.6%) with significant Sub-Saharan African (19.1%) and Pacific Islander (8.3%) ancestry. The blend creates warm, rich brown tones with subtle golden undertones characteristic of Latinx and African heritage mixing, with hints of Pacific Islander facial structure in cheekbone prominence and eye shape.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and grounded, with a dancer's carriage — strong shoulders, minimal excess, the posture of someone who has spent decades in deliberate, controlled movement",
+    "hair_color": "Natural black with scattered silver threads",
+    "hair_style": "Wrapped daily in handwoven indigo and rust-colored fabric; when unwrapped, full and textured, worn in a natural crown",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Left eye: warm deep brown (natural). Right eye: prosthetic, engineered to near-perfect match but with imperceptible predictive tracking lag",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of strong Hispanic/Latin American and Sub-Saharan African ancestry blended with Pacific Islander warmth",
+    "complexion": "Clear, minimal scarring except for faint surgical lines at the right orbital socket (nearly invisible unless examined closely). High, prominent cheekbones suggesting Pacific Islander heritage structure. Minimal makeup; skin care is practical rather than cosmetic. Slight creases around eyes and mouth from fifty-two years of deliberate expression. Warm golden undertone visible in natural light.",
+    "distinguishing_marks": [
+      "Surgical scar tissue at right eye socket, visible only under direct light and careful inspection",
+      "Small burn mark on left forearm (2cm), pale against skin, from a fabrication stall accident in her forties",
+      "Faint ritual scarification on both inner wrists (three parallel lines each, cultural rather than augmentation-related)"
+    ],
+    "visible_augmentations": "Right prosthetic eye — nearly undetectable at conversational distance, but under close observation the tracking behavior differs marginally from the left. No other visible augmentations. She wears no chrome, no LEDs, no subdermal plating.",
+    "posture_movement": "Upright, economical. Tilts head slightly left when listening — a habit that reads as active tuning rather than distraction. Moves slowly and with intention; no unnecessary gestures. Hands remain still or engaged in purpose (writing, arranging prayer-papers). Eye contact is direct and maintained without aggression.",
+    "clothing_style": "Practical and layered, Tier 3-4 aesthetic. Prefers natural fibers: linen, cotton, wool. Favors earth tones (ochre, indigo, rust, cream). Daily uniform consists of a long-sleeved tunic (custom-sewn, likely from a Mexicantown tailor), loose trousers, and handwoven shawl. Wears minimal jewelry — a small wooden prayer bead on her left wrist, a gift from her grandmother. Footwear is simple and well-maintained (cloth slippers indoors, sturdy canvas walking shoes for the district). Nothing corporate, nothing flashy, nothing that signals wealth or status-seeking."
+  },
+  "image_prompt": "Slate Madrigal-Matai, 168cm lean frame with dancer's posture, warm golden-brown skin blending Hispanic/Latin American, Sub-Saharan African, and Pacific Islander heritage. Medium-length natural black hair with silver threads, wrapped in handwoven indigo and rust fabric when styled. Deep brown left eye and subtle prosthetic right eye. High, prominent cheekbones. Wearing long-sleeved linen tunic in ochre, loose cream trousers, handwoven rust-colored shawl. Simple wooden prayer bead on left wrist. Standing with upright, economical posture in soft warm lighting. Cyberpunk 2226 GLMZ setting, minimalist aesthetic, no chrome or flashy augmentation. Thoughtful, centered, spiritual presence. Indoor domestic or community space with earth-tone surroundings. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 72.6,
+    "Sub-Saharan African": 19.1,
+    "Pacific Islander": 8.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

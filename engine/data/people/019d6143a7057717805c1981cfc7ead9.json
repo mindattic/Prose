@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a7057717805c1981cfc7ead9",
+  "type": "character",
+  "name": "Khalil Mansour",
+  "aliases": [
+    "Tsetse",
+    "Null"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Protest coordinator and mutual aid organizer serving the Shelf and Hough Reclamation districts",
+  "age": 24,
+  "status": "active",
+  "location": "Hough Reclamation, GLMZ, near Western and Division",
+  "description": "Tsetseg is lean and angular with a long neck and the kind of stillness that belongs to people who grew up in crowded spaces and learned to take up exactly the amount of room they needed and no more. Their skin is deep brown with a warm undertone, and they have patterned irises — a cosmetic mod done with pigment injections, producing a geometric ring of burnt orange around the pupil that makes their gaze unsettling in photographs. Their hair is kept very short, almost shaved. They dress functionally, with a persistent preference for dark colors that won't show damage from protest conditions.\n\nTsetseg has lived in Hough Reclamation their entire life and has watched three different waves of supposed 'revitalization' turn into displacement. They are twenty-four years old and already tired of promises. What they are not tired of is logistics — they have a genuine gift for coordination, for understanding how bodies move through space, how information needs to flow in chaotic conditions, how to build a supply chain out of mutual obligation and goodwill. They coordinate Shelf Mutual Aid, a network that distributes food, medical supplies, and emergency housing connections across two districts. They have a complicated relationship with attention — they need people to show up and to trust the network, but they find visibility personally uncomfortable.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.65,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.35,
+      "mask": 0.55,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being made a symbol or a face in a way that makes the network about them instead of the people it serves",
+      "Hough Reclamation becoming the next Highland Park — autonomous in name, absorbed in practice"
+    ],
+    "core_desires": [
+      "A mutual aid network robust enough that it runs without them if they burn out or disappear",
+      "Enough stability that the people in their network can think beyond next month"
+    ],
+    "coping_mechanisms": [
+      "Extreme organizational focus — if everything is planned and scheduled, there is less room for the anxiety to find purchase",
+      "Humor that is self-deprecating to the point of erasure"
+    ],
+    "blind_spots": [
+      "Undervalues their own contributions to the network they built — genuinely believes it would function the same without them",
+      "Avoids conflict within the network because they are afraid of fracture, which means problems fester"
+    ],
+    "secret": "They have been in contact with a Ringo corporate social investment officer who has offered substantial funding to the mutual aid network with 'minimal' conditions. They have not told the network. They have not said yes. They have not said no. The conversation has been ongoing for four months."
+  },
+  "speech_patterns": {
+    "vocabulary": "Efficient and concrete. Describes everything in logistical terms. Uses 'we' almost exclusively. Deflects personal compliments immediately.",
+    "cadence": "Steady, unhurried. Never wastes words. Comfortable with silence.",
+    "verbal_tics": [
+      "Counts things — 'Three reasons,' 'Two problems,' 'One ask'",
+      "Says 'the network needs' instead of 'I need' even when talking about personal things"
+    ],
+    "example_lines": [
+      "'The network needs forty volunteers for the distribution run. The network has twenty-two. That's the problem. Not the city's problem. Our problem. So.'",
+      "'I'm not a leader. The network leads. I'm more like — plumbing. Functional, unglamorous, and you really notice when it breaks.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Ringo funding offer reaches the network's members through a leak — Tsetseg must explain four months of silence before the council meeting that will determine whether the network fractures.",
+    "A long-anticipated displacement action against Hough Reclamation residents is announced with two weeks' notice — Tsetseg must coordinate a response larger than anything they've attempted before, while their biomonitor is already flagging critical stress levels."
+  ],
+  "narrative_function": "Resource and community connection hub, local color, someone who knows everyone in two districts and can vouch for or warn against anyone.",
+  "augmentations": "Patterned irises (cosmetic, pigment injection). A cheap mesh implant in their left wrist — not a full data sleeve, more of a scheduling and coordination node that syncs with the mutual aid network's distribution software. A small sub-dermal biomonitor installed by a community clinic that tracks stress markers and sends alerts if they're in crisis territory — a condition of receiving the mutual aid network's health stipend.",
+  "daily_life": "Morning distribution runs with the mutual aid network, afternoon spent at the Neighborhood Council office processing appeals and emergencies, evenings planning the next action or training new volunteers — they eat when someone puts food in front of them.",
+  "affiliation": "Shelf Mutual Aid Network (coordinator), Hough Reclamation Neighborhood Council (elected), informal ties to the Highland Park Autonomous Zone",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 9,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Logistician",
+      "Mutual Aid",
+      "Community Anchor",
+      "Burnout Risk",
+      "Quietly Compromised"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The network's integrity comes before any single action's success",
+      "Never put a volunteer in a position of legal or physical risk without full information and consent"
+    ],
+    "escalation_ladder": [
+      "Internal network coordination and resource mobilization",
+      "Public demonstrations and information campaigns",
+      "Coordinated civil disobedience — sit-ins, blockades, organized non-compliance",
+      "Emergency network dispersal protocols if the situation becomes dangerous — protecting people first, action second"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Cautious but not cold. Assesses what the person needs and whether the network can provide it before engaging further.",
+      "friends": "Quietly devoted. Will rearrange everything to be there in a crisis. Bad at saying they care with words."
+    },
+    "stress_responses": {
+      "low": "More lists, more schedules, more sub-plans",
+      "medium": "Stops sleeping well, becomes very terse, begins making decisions without consulting anyone",
+      "high": "Disappears for twenty-four hours — genuinely goes off-grid — then reappears with a complete action plan and no explanation of where they went"
+    },
+    "contradictions": [
+      "Builds systems designed to distribute power and then accumulates critical knowledge and relationships in ways that make the system dependent on them"
+    ],
+    "habits": [
+      "Carries physical index cards with network contact info in case of digital grid failures",
+      "Leaves tokens at E.L.F. shrines along their distribution routes — small data offerings for safe passage"
+    ],
+    "breaking_points": [
+      "If a network member is seriously harmed during an action Tsetseg planned, they will step back from coordination roles entirely and need to be asked back specifically and personally"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Dredge Mining Collective",
+    "GLMZ",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Ringo Corponation",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Highland Park Autonomous Zone",
+    "Ihaia Nystrom-Keita",
+    "Independent Micro-Grid Power Cooperative",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "MERIDIAN",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Sorin Ekwensi-Balasanyan",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Stonepath Logistics",
+    "TESSERA CR-12 'Whisper'",
+    "The Collective",
+    "The Heidelberg Scar",
+    "The Pure Hand",
+    "The Shelf",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Middle Eastern with Eastern European and Sub-Saharan African ancestry, creating a complex phenotype: warm medium-to-deep brown skin tone with subtle olive undertones from the Middle Eastern base, enhanced by the Sub-Saharan African genetics. Facial structure reflects the Middle Eastern primary ancestry with Eastern European secondary features softening the overall geometry.",
+    "height_cm": 171,
+    "weight_kg": 58,
+    "build": "Lean and angular with minimal soft tissue, long-limbed and economical in movement. The build of someone who has never had excess and doesn't waste energy on unnecessary gesture.",
+    "hair_color": "Black",
+    "hair_style": "Cut very close to the scalp, almost shaved, maintained with utilitarian precision every two weeks",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown with geometric ring of burnt orange pigment injected around each pupil, creating an unsettling starburst pattern",
+    "skin_tone": "Warm medium-brown with olive undertones, even throughout, unburned despite irregular sleep schedules. The tone reflects the dominant Middle Eastern ancestry with subtle warmth from Sub-Saharan African heritage.",
+    "complexion": "Sharp cheekbones characteristic of Middle Eastern and Eastern European ancestry, long neck, minimal facial hair, skin condition pragmatic rather than maintained — a few healing acne marks on the jawline, hands calloused from handling boxes and climbing fire escapes.",
+    "distinguishing_marks": [
+      "Geometric patterned irises: burnt orange pigment arranged in a perfect four-pointed starburst around both pupils, done with cheap cosmetic injection three years ago, slightly uneven but deliberate",
+      "Small round scar on the underside of left wrist where the mesh implant was installed, site occasionally irritated and red",
+      "Thin white scar running along the right ribs, approximately 8cm long, from a knife wound during a Tier 5 eviction defense in 2224",
+      "Bruising pattern on shins and forearms that cycles between fresh purple and fading yellow — recurring from protest line contact"
+    ],
+    "visible_augmentations": "Left wrist shows a faint subcutaneous grid pattern beneath the skin where the mesh node sits; the scar tissue is slightly raised and sometimes glows with a dim blue diagnostic light when the implant syncs. No external components. The subdermal biomonitor is invisible but occasionally causes a faint thermal shimmer visible on thermal imaging.",
+    "posture_movement": "Stillness is their default state — they move with precision and economy, never fidgeting. When in motion, they flow between spaces like they're calculating the path beforehand. In crowds, they occupy exactly the space their body requires and no more. Their hands are often doing small logistics work — arranging items, checking lists, adjusting straps. Their gaze is level and unflinching, the geometric irises making direct eye contact feel confrontational even when they don't intend it.",
+    "clothing_style": "Strictly functional Tier 4-5 utilitarian wear: black or dark grey heavy cotton blend work pants with multiple cargo pockets and reinforced stress points, often paint-stained or marked with food residue. Black long-sleeve thermal shirt layered under a dark green or black technical vest with chest pockets and inventory loops. On colder days, a battered black puffer jacket with patches of reflective tape added by hand. Worn black steel-toed boots, always laced tight. A canvas crossbody bag that never leaves their side, containing supply lists, medical inventory, and backup power cells. No visible brands or logos — all functional, all weathered, all chosen for durability over appearance. Occasionally wears a surgical mask even when not required, less from caution than from a desire to be less visible."
+  },
+  "image_prompt": "Khalil Mansour, 2226 cyberpunk character, 171cm lean angular build, warm medium-brown skin with olive undertones, shaved black hair, geometric burnt orange starburst augmented irises creating unsettling eye pattern. Sharp cheekbones, long neck, healing acne marks and calloused hands. Subcutaneous mesh implant grid visible on left wrist with faint blue diagnostic glow, thin white rib scar, bruising pattern on shins and forearms. Wearing black heavy-duty work pants with cargo pockets, black thermal long-sleeve under dark technical vest, battered black puffer jacket with hand-applied reflective tape, worn black steel-toed boots, canvas crossbody bag. Standing in utilitarian stillness, precise economical posture, level unflinching gaze. Surgical mask worn. Dark industrial setting, cool blue-grey cyberpunk lighting with thermal shimmer, weathered urban environment, great lakes metropolitan zone aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 75.6,
+    "Eastern European": 15.7,
+    "Sub-Saharan African": 8.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

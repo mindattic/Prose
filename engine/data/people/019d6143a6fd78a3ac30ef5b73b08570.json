@@ -1,0 +1,313 @@
+{
+  "id": "019d6143a6fd78a3ac30ef5b73b08570",
+  "type": "character",
+  "name": "Koffi Vestergaard",
+  "aliases": [
+    "Old Timur",
+    "the Jaw"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant, scrap reseller, informal augmentation parts dealer",
+  "age": 64,
+  "status": "active",
+  "location": "The Alban Souk, Old Harbor, near Michigan Ave South and Cermak",
+  "description": "Timur is a large man gone slightly to ruin in the graceful way of old machinery — still clearly capable, still clearly heavy, but weathered in ways that suggest many renegotiated repairs. He has a prominent jaw and broad cheekbones, medium-brown skin crosshatched with fine white scars from decades of handling sharp-edged salvage without sufficient gloves, and a right arm that is entirely cybernetic from the shoulder — a heavy industrial prosthetic, matte gunmetal, visibly older than current models and repaired in multiple places with mismatched components. He wears it with the casual comfort of a man who has had it longer than he hasn't. His stall at the Alban Souk is technically three stalls — he has occupied the space long enough that the boundaries have blurred into a small empire of organized rubble: crates of stripped components, racks of salvage-grade augmentation parts, shelves of pre-owned tools, bins of miscellaneous tech detritus that he can identify by feel.\n\nTimur is a man of comfortable silences. He does not make conversation; he makes transactions, and occasionally, for people he has decided are worth it, he makes exceptions to his general indifference. He has a sharp technical mind and can assess the quality of a piece of salvage hardware faster than most licensed appraisers, and he quietly sells aug components — stripped limbs, neural interface boards, secondhand sensory units — to people who cannot afford licensed installation. He does not perform the installations himself anymore. He used to. He stopped after something went wrong that he does not discuss.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.3,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the installation that went wrong is going to catch up with him — legally or personally",
+      "Dying without having made it right"
+    ],
+    "core_desires": [
+      "Quiet — just to be left alone with his work and not be asked for things he can't give",
+      "That the person the installation hurt is, somewhere, okay"
+    ],
+    "coping_mechanisms": [
+      "Absorption in physical work — the tactile focus of repair and salvage as a way of not thinking",
+      "Reduced emotional availability as preventive protection"
+    ],
+    "blind_spots": [
+      "His guilt makes him undervalue himself — he accepts less for his expertise than it is worth because he doesn't feel entitled to fair compensation",
+      "Does not ask for help, ever, to his own detriment"
+    ],
+    "secret": "Six years ago, he installed a neural interface on a young woman who couldn't afford licensed care. The installation went wrong — a component fault he didn't catch — and she lost partial motor function in her left hand. He found out indirectly months later. He has been quietly sending anonymous Quanta transfers to what he believes is her account ever since, but he has never confirmed she received them or that the account is still hers."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal and technical. Speaks in parts descriptions, condition assessments, and prices. Personal statements are short and final.",
+    "cadence": "Slow, deliberate. Very long pauses between sentences. Does not fill silence.",
+    "verbal_tics": [
+      "Taps the metal fingers of his prosthetic against surfaces when thinking — a faint rhythmic clicking",
+      "Says 'it'll do' as the highest compliment he gives"
+    ],
+    "example_lines": [
+      "'This is a 2193 Arcturus sensory board, stripped clean, no provenance. It'll do for what you described. Three hundred.'",
+      "'I don't install anymore. I can tell you where to go. That's what I can do.'",
+      "'The arm works. Don't need a new one. The one I have knows where everything is.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A salvage crew from Manitowoc Drydock brought him a crate of stripped components they found in an underwater cache near Old Harbor's outer piers. One of the units in the crate is still active — faintly broadcasting a locator signal on a frequency he doesn't recognize. He has not told anyone. He's asking quiet questions.",
+    "The young woman he injured — he has recently been told by a mutual acquaintance that she is in Old Harbor. He doesn't know if she knows who he is, and he is paralyzed between the desire to make it right in person and the fear of what that conversation holds.",
+    "The Guild is under pressure from a Ferrogate Transit rep to stop reselling transit-surplus components, claiming it violates their salvage reclamation agreement. Timur has the original 2187 contract that says otherwise, but he needs someone who can read legal documents to confirm it."
+  ],
+  "narrative_function": "Gear and equipment source, particularly for secondhand or non-standard augmentation components. Technical knowledge resource. Represents the city's long memory — he has been in Old Harbor since before most current residents were born. Can provide access to salvage networks and drydock connections.",
+  "augmentations": "Full right arm industrial cybernetic prosthetic (shoulder-down); older Ferrogate Transit-surplus model, heavily modified and personally maintained. Subvocal communication implant (very old, barely functional, he keeps it for sentimental reasons).",
+  "daily_life": "Opens at dawn, works through the day doing appraisals, parts matching, and quiet negotiation. Takes an hour at midday to sit on an upturned crate and eat in silence. Closes at sundown regardless of customers.",
+  "affiliation": "Independent; long-standing member of The Oxidian Market vendors guild (Old Harbor chapter); known to have a working relationship with salvage crews from the Manitowoc Drydock",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 3,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "salvage expert",
+      "aug parts dealer",
+      "haunted",
+      "taciturn",
+      "old harbor institution"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Only sell aug components to people he has assessed as capable of handling them safely, or who have someone who can",
+      "Never take a job that requires leaving the stall unattended for more than a day",
+      "Do not discuss the installation. Not with anyone."
+    ],
+    "escalation_ladder": [
+      "Flat refusal with no explanation offered",
+      "Physical stillness that communicates danger without words — he gets very quiet and very large",
+      "Asks once for someone to leave, plainly",
+      "The prosthetic arm is very heavy and he has spent forty years lifting things with it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Functional and impersonal. Answers questions about merchandise. Volunteers nothing.",
+      "friends": "Still quiet, but present in a different way — will sit with someone without needing to talk, will notice and remember things without acknowledging them out loud."
+    },
+    "stress_responses": {
+      "low": "Begins an unnecessary disassembly and reassembly of a piece of equipment",
+      "medium": "Goes fully monosyllabic; the tap of the prosthetic fingers gets faster",
+      "high": "Closes the stall and does not explain. Goes somewhere alone. Returns the next day without discussion."
+    },
+    "contradictions": [
+      "Has stopped doing installations because he hurt someone, but still sells the components that enable installations — he has not fully resolved what he is responsible for",
+      "Appears entirely indifferent to people but sends anonymous financial support to a woman he wronged because he cannot stop caring"
+    ],
+    "habits": [
+      "Cleans and maintains his prosthetic arm every Sunday morning with the focused attention of a religious ritual",
+      "Keeps a worn photograph of the Old Harbor waterfront from before the current development — he was in it, young, carrying something — tucked inside his tool roll",
+      "Sends a Φ transfer to the account every month on the 14th without fail"
+    ],
+    "breaking_points": [
+      "Being confronted directly by the woman he injured",
+      "Watching someone suffer from a bad installation and knowing he could have prevented it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Hustler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 25 — lost right arm in a salvage accident at the Old Harbor docks; received industrial prosthetic as insurance settlement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established stall at the Alban Souk; began trading in aug components alongside general salvage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Signed the original Guild-Ferrogate surplus contract that gives him resale rights; still has the physical document",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The installation — neural interface, component fault, partial motor damage to client. Stopped doing installations permanently.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began anonymous monthly transfers to what he believes is the client's account",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: underwater cache discovery; possible proximity to the woman he injured",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Manitowoc Drydock",
+    "Ferrogate Transit",
+    "The Alban Souk",
+    "The Reclamation Assembly",
+    "The Cutters Guild",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Irontide Tidal Energy",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus Defense Solutions",
+    "Bathysphere Networks",
+    "Bioacoustic Communication Membrane",
+    "Breck Tannen",
+    "Devraj Solano-Yildirim",
+    "Djeneba Park-Traore",
+    "Dzemal Acholonu-Patagiri",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Old Harbor",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "TESSERA WL-6 'Stacker'",
+    "The Oxidian Market",
+    "The Pure Hand",
+    "The Seam",
+    "The Undertow",
+    "The Wire Taps",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore LinguaSync Real-Time Translation Implant"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Sub-Saharan African, South Asian, Southeast Asian, and Hispanic/Latin American ancestry—a complex diaspora blend that manifests in his facial structure and skin tone. His features reflect this multifaceted genetic heritage rather than any single regional origin.",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Heavy and broad-shouldered, gone soft at the midsection but still conveying underlying strength—the physique of a man who has spent six decades moving weight around but has stopped fighting gravity in the last decade",
+    "hair_color": "Steel gray with residual dark brown at the roots",
+    "hair_style": "Close-cropped, practical, unstyled",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with slight cloudiness in the left eye (cataracts, age-related)",
+    "skin_tone": "Medium-warm golden brown—the result of East Asian and Southeast Asian genetics blended with Sub-Saharan African undertones, creating a complex tan that sits between olive and warm bronze",
+    "complexion": "Weathered and lined—his face bears the deep creases of decades spent outdoors and in poorly ventilated salvage yards. His bone structure reflects his mixed heritage: moderate cheekbones with subtle angularity from East and Southeast Asian ancestry, a prominent jaw strengthened by Sub-Saharan and South Asian genetic contribution, and a broad bridge to his nose. His features are still clearly defined beneath the age. Stubble is constant; he shaves irregularly.",
+    "distinguishing_marks": [
+      "Fine white scar tissue crisscrossing both hands and forearms in a dense lattice pattern from years of handling sharp salvage without gloves",
+      "A burn scar running from his left wrist up to his elbow in a thin line, pale against his skin",
+      "Deep horizontal creases across his knuckles and the backs of his hands",
+      "A thin white scar along his right jaw near the angle of his chin, roughly 3 inches long, likely from impact trauma decades past"
+    ],
+    "visible_augmentations": "Right arm entirely cybernetic from the shoulder down—a heavy industrial prosthetic in matte gunmetal, visibly older than modern models (approximately 35+ years old). The seam where it joins his shoulder is reinforced with band-aid-style mismatched plating in slightly different shades of gray. Multiple repair welds are visible along the forearm and wrist. The hand is articulated but has a deliberate, non-humanoid design—wider palm, reinforced digits, no attempt at biological mimicry. A faint scar tissue ridge marks where the prosthetic was originally installed at the shoulder.",
+    "posture_movement": "He moves with the deliberate economy of an older man who has learned where his center of gravity sits. Standing, he favors his left side slightly, shoulder cocked back. His right arm—the prosthetic—moves with mechanical precision but without hesitation; he has inhabited it long enough that it reads as natural to him. He sits heavily and rises slowly. His hands are rarely still; even in conversation, his left hand fidgets—turning something over, feeling its weight and balance.",
+    "clothing_style": "Tier 4 working-class practical. He wears heavy canvas cargo pants stained with years of grease and rust, held up with a braided leather belt. His shirts are always long-sleeved—industrial cotton or poly-blend, usually gray or dark blue, with large pockets and reinforced stress points. Over this, a sleeveless vest in charcoal leather, old but meticulously maintained, with deep pockets for tools and small components. His shoes are steel-toed work boots, scuffed and resoled multiple times. He wears a pair of fingerless leather gloves on his left hand only; his right prosthetic requires no protection. No jewelry, no visible corpo branding, no pretense. Everything he wears is functional and long past fashionable."
+  },
+  "image_prompt": "Portrait of Koffi Vestergaard, a weathered 60-year-old salvage worker, medium-warm golden-brown complexion blending East Asian, Sub-Saharan African, and Southeast Asian heritage, short steel-gray hair, deep facial creases, dark brown eyes with left eye cloudiness, prominent jaw and moderate cheekbones. Right arm entirely matte gunmetal cybernetic prosthetic with visible repair welds, seams reinforced with mismatched plating, non-humanoid hand. Dense white scar lattice across both hands and forearms, thin burn scar from left wrist to elbow, 3-inch jaw scar. Wearing long-sleeved dark blue industrial shirt, charcoal leather sleeveless vest with tool pockets, grease-stained canvas cargo pants, steel-toed work boots, fingerless leather gloves on left hand only. Standing with left-favored posture, shoulder cocked back, mechanical precision in right arm movement. Cyberpunk 2226 Great Lakes Metropolitan Zone salvage yard setting, cool industrial lighting with blue-gray shadows, weathered and functional aesthetic, no corpo branding, worn and practical appearance --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 42.6,
+    "Sub-Saharan African": 20.7,
+    "South Asian": 13.8,
+    "Hispanic/Latin American": 12.9,
+    "Southeast Asian": 10.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

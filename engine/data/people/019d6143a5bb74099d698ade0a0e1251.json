@@ -1,0 +1,345 @@
+{
+  "id": "019d6143a5bb74099d698ade0a0e1251",
+  "type": "character",
+  "name": "Vladislav Nurzhanov",
+  "aliases": [
+    "Revenant",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Social engineering and negotiation specialist — face",
+  "age": 40,
+  "status": "active",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Halsted and Division",
+  "description": "Aybek Herrera-Kyei is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a face out of The Overhang, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aybek Herrera-Kyei describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.95,
+      "ideal": 0.94,
+      "id": 0.21,
+      "shadow": 0.95,
+      "mask": 0.42,
+      "ghost": 0.63
+    },
+    "core_fears": [
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "The quiet — silence means something is about to go very wrong"
+    ],
+    "core_desires": [
+      "To protect the people in their district who can't protect themselves",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Aybek Herrera-Kyei witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"People want to trust someone. I just make sure that someone is me.\"",
+      "\"The hardest lock to pick is between someone's ears.\"",
+      "\"I don't lie. I tell a better version of the truth.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Aybek Herrera-Kyei on jobs, and the impersonator is better at the work than the original",
+    "A crew member from Aybek Herrera-Kyei's past shows up in GLMZ, carrying old grievances and new chrome",
+    "The fixer who handles Aybek Herrera-Kyei's contracts goes silent — dead, disappeared, or turned"
+  ],
+  "narrative_function": "Aybek Herrera-Kyei represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Thermal masking system — body heat signature can be suppressed or spoofed. Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — works solo contracts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 5
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.97,
+      "caution": 0.26,
+      "loyalty": 0.13,
+      "greed": 0.97,
+      "empathy": 0.54
+    },
+    "drives": [
+      "freedom",
+      "power",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 5,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "photographic memory for faces and layouts",
+      "multilingual — speaks 4+ languages fluently",
+      "ability to remain calm under fire"
+    ],
+    "weaknesses": [
+      "risk-averse to the point of missed opportunities",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "face",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Always verifies target identity independently before lethal contracts",
+      "Never discusses active contracts with anyone not directly involved",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Thermal masking system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
+      "replaces": ""
+    },
+    {
+      "name": "Move-by-wire system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Volkov-Saito Precision VS-40 'Magistrate'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Volkov-Saito Precision VS-40 'Magistrate'"
+  ],
+  "related_entities": [
+    "Masquerade",
+    "Ironveil Canopy",
+    "GLMZ",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Brewer's Spine",
+    "Chibundo Reinholt-Sarpong",
+    "Crucible RE-2 'Receptionist'",
+    "Ilhan Sandstrom-Badu",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Oumarou Svec-Ranginui",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Pikasso Wemba-Þórðarson",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA CR-12 'Whisper'",
+    "The Wire Taps",
+    "Timur Osei-Bjelke",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Volkov-Saito Precision VS-40 'Magistrate'",
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European dominant (34.5%) with significant Central Asian (20.8%), Middle Eastern (20.2%), and East Asian (17.3%) ancestry, creating a striking Eurasian phenotype. Minor Hispanic/Latin American admixture (7.2%) adds subtle warmth to overall coloration.",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Stocky and solid, compact muscle density with a heavyweight fighter's frame — broad shoulders tapering to a narrow waist. Hands are large and calloused, with scarred knuckles. Chest and forearms show pronounced muscle definition.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Short, swept back, minimal styling",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with subtle epicanthic fold influence, unremarkable",
+    "skin_tone": "Warm olive-bronze complexion with underlying cool undertones — the blend of Eastern European, Central Asian, and Middle Eastern ancestry creates a distinctive mid-to-deep tan that weathers gracefully rather than burns.",
+    "complexion": "High, prominent cheekbones with slight Eurasian flattening from East Asian ancestry; strong squared jaw from Eastern European lineage. Face is worn but not aged — hard angles accentuated by Middle Eastern bone structure. Lines around the eyes from years of squinting. Stubble perpetually at 1-2 days growth. Skin texture shows weathering but maintains underlying resilience. No cosmetic grooming; functional appearance only.",
+    "distinguishing_marks": [
+      "Surgical scar running from left temple to jawline, thin and well-healed, partially obscured by hair growth",
+      "Cluster of three burn marks on the inside of right forearm — old electrical burns, uniform spacing, deliberate cauterization pattern",
+      "Knuckle scars on both hands, deep and raised, telling a history of bare-knuckle violence"
+    ],
+    "visible_augmentations": "Thermal masking system visible as a faint network of luminescent micro-circuitry beneath the skin across the chest and upper back, most visible when ambient light is low. The circuitry runs in geometric patterns along the clavicle and deltoids. Move-by-wire neural integration visible as subtle subdermal striations along the spine when he moves — the muscle control is unnaturally precise, almost mechanical in its efficiency. No chrome limbs; all augmentation is internal or subcutaneous.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders relaxed but ready. Moves with controlled efficiency — no wasted motion. Combat stance is his neutral. Eyes constantly scan — threat assessment is automatic. Handshakes are firm but measured, never aggressive. When focused on a target, he becomes perfectly still, predatory.",
+    "clothing_style": "Tier 3-4 practical wear — charcoal tactical pants with reinforced thigh pockets, black compression shirt layered under a worn gray canvas overshirt with utility pockets and rolled sleeves. Matte black steel-toed boots, well-maintained. Heavy watch on left wrist (analog, no smart features — redundancy is safety). Light gray neural-dampening jacket (non-branded, military-grade) draped over a chair or worn open. Everything is neutral, durable, and designed for quick movement. No logos, no status signifiers — complete functional anonymity."
+  },
+  "image_prompt": "Vladislav Nurzhanov, 178cm Eurasian man with warm olive-bronze skin, high cheekbones, strong squared jaw, dark brown eyes with subtle Asian influence. Graying dark brown hair swept back, 1-2 days stubble. Stocky heavyweight fighter build with visible muscle definition. Thin surgical scar from left temple to jaw, electrical burn marks on right forearm, scarred knuckles. Wearing charcoal tactical pants, black compression shirt under worn gray canvas overshirt, matte black steel-toed boots, analog watch. Faint luminescent thermal masking circuitry visible on chest and upper back in low ambient light, subdermal striations along spine. Standing in neutral but ready combat stance, scanning surroundings with predatory focus, no wasted motion. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-shadowed interior, cool blue and amber lighting, atmospheric haze, professional tactical environment. Completely anonymous, functional aesthetic, no status signifiers. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 34.5,
+    "Central Asian": 20.8,
+    "Middle Eastern": 20.2,
+    "East Asian": 17.3,
+    "Hispanic/Latin American": 7.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

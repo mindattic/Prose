@@ -1,0 +1,279 @@
+{
+  "id": "019d6143a5d377a9bdbc50eef70d8ced",
+  "type": "character",
+  "name": "Nova Castañeda-Holm",
+  "aliases": [
+    "Celly",
+    "Chrome Celly"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Augmentation reseller and back-alley aug installer, The Burnished Market",
+  "age": 34,
+  "status": "active",
+  "location": "The Burnished Market, Copperhead, near North Ave and Milwaukee",
+  "description": "Celestine Rawlings-Ouédraogo runs a stall so clean it seems out of place in The Burnished Market — white privacy screen on three sides, blue UV lamp, surfaces wiped twice between every customer. She is a tall woman with close-cropped natural hair shot through with bioluminescent silver strands she does herself, medium-brown skin, and the kind of face that defaults to amusement rather than skepticism. Her own augmentations are a working advertisement: both forearms have exposed chrome chassis panels over the muscle — not for function, for show, a fashion aug popular in 2195 that she still thinks is beautiful — and her right hand has a fine-motor surgical assist exo-glove built into it that she never removes. She can install a basic aug in twenty-two minutes. She has done it in eleven.\n\nShe is quick, professional, and genuinely good at her job, which she will remind you she learned the hard way without a Helix Biosystems vocational cert because she couldn't afford the program. She resells grey-market augs sourced from a network she's cultivated for eight years — returned corporate units, discontinued models, overstock from clinics that take Axiom insurance. What she charges is well below clinic prices. What she provides is not clinic-grade sterility, but it is closer than anyone else in Copperhead offers. She is easy to like and slightly difficult to read — the warmth is genuine but the smile is a layer she has learned to maintain regardless of what's underneath.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Installing something that kills someone — she thinks about this every single time",
+      "Being shut down by a Helix Biosystems licensing enforcement sweep"
+    ],
+    "core_desires": [
+      "Enough money to open a real clinic with real licensing — she has a number in her head and watches it approach very slowly",
+      "To be recognized as a skilled practitioner, not just a back-alley tech"
+    ],
+    "coping_mechanisms": [
+      "The clean stall — maintaining the environment is a way of managing anxiety about outcomes",
+      "Compartmentalization — she does not think about the regulatory status of her work while she is doing it",
+      "Treating every installation as though she will be peer-reviewed afterward"
+    ],
+    "blind_spots": [
+      "Is too loyal to her Helix supply contact and hasn't questioned why the supply chain has recently gotten easier",
+      "Mistakes professionalism for emotional distance and doesn't let people close enough to notice she's struggling"
+    ],
+    "secret": "Two months ago she installed a refurbished Zheng-Dao neural interface on a client who paid in full and disappeared. Last week she found a news item about an unidentified body found near Edgewater Prism with a fried neural port. She doesn't know if it's the same person but she is almost certain it is."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clean, medical-adjacent vocabulary when talking about work. Caribbean-inflected slang in casual conversation. Does not mix the two registers in the same sentence.",
+    "cadence": "Warm and even — controlled, slightly deliberate, like someone who has trained themselves out of nervous speech patterns.",
+    "verbal_tics": [
+      "'Right, so here's what we're looking at—' as a transition into any technical explanation",
+      "Tilts her head slightly before answering a question she finds interesting",
+      "'That's not a problem, that's a step.'"
+    ],
+    "example_lines": [
+      "'I don't do rushed work. You want fast, there's a vet two stalls down who does augs between livestock calls. You want right, you wait your turn.'",
+      "'I am going to be completely transparent with you about what this unit can and cannot do, and then I am going to install it perfectly, and then you are going to not tell anyone where you got it. That's the deal.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The client with the fried neural interface — if it was her installation that failed, she needs to know if it was the unit, her technique, or something done to the client afterward. She will pay for information.",
+    "Her Helix Biosystems supply contact has started asking her to install specific units in specific clients, no questions asked — the pay is double. She hasn't agreed yet."
+  ],
+  "narrative_function": "Affordable augmentation source and installer. Can be a critical resource for players needing augs installed without corporate records. Potential contact into grey-market medical supply chains. Quest hooks around defective product that got into her inventory.",
+  "augmentations": "Decorative chrome forearm chassis panels (both arms, fashion mod). Fine-motor surgical assist exo-glove (right hand, integrated, never removed). Bioluminescent silver hair strands (self-installed geneware, cosmetic).",
+  "daily_life": "Opens the stall by 1000, runs walk-in aug services through early afternoon, handles sourcing calls and repair consults in the evenings. Does two or three installations a day at most — she will not rush for volume.",
+  "affiliation": "Independent; Oxidian Market vendors guild; informal supply relationship with a Helix Biosystems logistics employee she will not name",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Service Provider",
+      "Technical Skilled",
+      "Hidden Crisis",
+      "Professional Warmth",
+      "Grey Market"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never install an aug she hasn't inspected personally",
+      "No installations on minors, no exceptions, no negotiations",
+      "Keep the stall clean — if the environment degrades, stop working until it's right"
+    ],
+    "escalation_ladder": [
+      "Professional decline — polite, final",
+      "Directed exit from the stall",
+      "Invokes the market collective's code of conduct formally",
+      "Closes the stall and disappears for a few days until whatever the problem is has moved on"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm professionalism — puts people at ease, asks questions about their situation before the aug situation",
+      "friends": "Unguarded and funny, genuinely affectionate, prone to long silences that don't feel awkward"
+    },
+    "stress_responses": {
+      "low": "Cleans things that don't need cleaning",
+      "medium": "Becomes hyper-focused on technical details — the warmth dims",
+      "high": "Goes very still, makes a decision, and then does not revisit it"
+    },
+    "contradictions": [
+      "Maintains clinic-grade professional standards in a structurally illegal operation without apparent cognitive dissonance",
+      "Is warm and expressive socially but refuses to share anything personal even with people she trusts"
+    ],
+    "habits": [
+      "Wipes the installation surface with a specific seven-stroke pattern before every procedure",
+      "Checks her supply inventory every morning before opening — runs the count even when she knows it hasn't changed",
+      "Leaves a data prayer on the blue UV lamp for the E.L.F. she calls the Clean Current before first installation of the day"
+    ],
+    "breaking_points": [
+      "An installation death — would shut down immediately and completely",
+      "Finding out her Helix contact has been routing compromised units through her intentionally",
+      "Being publicly accused of malpractice by someone she actually helped"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Decorative chrome chassis forearm panels (bilateral, fashion aug)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Decorative chrome chassis forearm panels (bilateral, fashion aug)",
+      "replaces": ""
+    },
+    {
+      "name": "Fine-motor surgical assist exo-glove (right hand, integrated)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Fine-motor surgical assist exo-glove (right hand, integrated)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent silver geneware hair strands (cosmetic, self-installed)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent silver geneware hair strands (cosmetic, self-installed)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Helix Biosystems",
+    "Copperhead",
+    "Tessera Suppression Lattice SL-3 'Quilt'",
+    "Crucible RE-2 'Receptionist'",
+    "Silver",
+    "Tibor Osei-Svanstrom",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Arcturus NX-1 'Sandman'",
+    "Blackmarket",
+    "Edgewater Prism",
+    "Ezio Kaboré-Malhotra",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Irontide Tidal Energy",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Nurlan Morita-Antwi",
+    "Quilt",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "The Bazaar",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Vantablack VS-3 'Skin Job'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-dao Bioelectric"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (56.2%) with significant Southeast Asian (30.2%) and Hispanic/Latin American (13.6%) ancestry. Complex Pan-African and Asian blend showing in bone structure and skin undertones — angular cheekbones and eye shape reflect the Southeast Asian component, while skin warmth and hair texture derive from Sub-Saharan roots, with subtle warm undertones from Latin heritage.",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and efficient, muscular without bulk — the build of someone who moves precisely. Her frame suggests long hours on her feet, hands steady, posture economical.",
+    "hair_color": "Natural dark brown with bioluminescent silver threads woven throughout",
+    "hair_style": "Close-cropped, precision cut, reveals scalp and ear shape. Silver strands catch and glow faintly in low light — self-maintained, intentional.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm, perceptive",
+    "skin_tone": "Rich warm medium brown with golden undertones from Sub-Saharan and Southeast Asian blend, enhanced by Hispanic/Latin warmth — luminous in certain light",
+    "complexion": "Clear, well-maintained skin with minimal scarring. Face defaults to amusement — crow's feet at the corners of eyes from frequent smiling. Bone structure is angular with prominent cheekbones showing Southeast Asian influence blended with Sub-Saharan definition. No visible facial tattoos or marks. Grooming is meticulous but utilitarian.",
+    "distinguishing_marks": [
+      "Faint surgical scars on both inner forearms where chrome chassis panels are mounted (approximately 8cm each, pale, well-healed).",
+      "Fine network of pale lines across the dorsal surface of her right hand where the exo-glove integrates with her skin (appears as delicate circuitry pattern).",
+      "Small keloid scar on her left temple, approximately 1cm, partially concealed by hairline — origin unclear, never discussed."
+    ],
+    "visible_augmentations": "Both forearms feature exposed polished chrome chassis panels integrated over muscle tissue — decorative but functional, showing the mechanical infrastructure beneath the skin in a deliberate aesthetic choice. Right hand has an integrated fine-motor surgical assist exo-glove (chrome and articulated silicone joints) that she never removes; it appears as a second skin with visible mechanical articulation at fingertips and palm. Bioluminescent silver hair strands glow faintly in darkness — cosmetic geneware installation she maintains herself.",
+    "posture_movement": "Upright, centered, economical. Moves with purpose but never hurry. Hands are always in motion — fidgeting with tools, wiping surfaces, adjusting equipment. Her right hand (with exo-glove) moves with precise mechanical grace; her left is more naturally organic by comparison, which creates an unconscious asymmetry in her gestures. When listening, she tilts her head slightly, maintaining eye contact. Default expression is a slight smile that reads as genuine amusement rather than professional warmth, though both exist simultaneously.",
+    "clothing_style": "Tier 3-4 utilitarian with personal flair. Typically wears a fitted, washable white synthetic coat (medical aesthetic, practical for her work) over form-fitting dark-colored undershirt. Favors high-waisted cargo pants in charcoal or midnight blue with multiple tool pockets and reinforced seams — worn but maintained. Footwear is always clinical-grade slip-resistant shoes (currently wearing Steris-brand white non-slip medical shoes, Φ80/pair). She layers a tool belt around her hips containing calibration devices, sterile glove dispensers, and small component cases. Jewelry minimal: a simple silver band on her left middle finger (no wedding ring equivalent — personal choice)."
+  },
+  "image_prompt": "Nova Castañeda-Holm, tall lean 182cm woman with rich warm brown skin blending Sub-Saharan African, Southeast Asian, and Latin heritage, angular cheekbones and expressive dark eyes with crow's feet smile lines. Short dark brown hair with glowing bioluminescent silver threads catching light. Exposed polished chrome chassis panels on both forearms integrated into skin, right hand features intricate chrome exo-glove with visible mechanical articulation. White clinical-grade synthetic coat over dark undershirt, high-waisted charcoal cargo pants with tool belt, white medical-grade slip-resistant shoes. Slight knowing smile, tilted head posture, hands in constant precise motion. Cyberpunk 2226 medical tech aesthetic, neon-lit clinic stall background, cool blue and silver lighting emphasizing bioluminescent hair and chrome augmentations, moody and focused atmosphere, precise and deliberate presence --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 56.2,
+    "Southeast Asian": 30.2,
+    "Hispanic/Latin American": 13.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

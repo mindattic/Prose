@@ -1,0 +1,225 @@
+{
+  "id": "019d6143a6e57c548449c2e1e23d9d5e",
+  "type": "character",
+  "name": "Koffi Tetteh",
+  "aliases": [
+    "Ren",
+    "Zero"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Junior hacker; self-taught, operating from the Narrows' informal network",
+  "age": 13,
+  "status": "active",
+  "location": "Iron Bend (The Narrows adjacent), near Milwaukee and North Ave",
+  "description": "Søren is the kind of kid that adults look at and see either a prodigy or a problem, and the truth is that neither word is wrong. They have their Kenyan father's dark eyes and their Māori mother's broad, expressive face, with a scattering of geneware mods accumulated in pieces — irises that have been tuned to a soft gold, a hair-pigment mod that keeps their short locs a constant deep violet regardless of lighting, and retractable claws they got at a gray-market modder as a twelfth birthday present to themselves, which they use primarily to tap on surfaces when thinking. They are skinny in the way of someone who sometimes forgets to eat because they are inside something interesting, with ink-stain calluses on their left hand from a tablet stylus they use for annotating data flows.\n\nSøren is not a criminal — at least not in their own taxonomy. They have a rigorous internal ethics around what they will and will not touch: no personal medical data, no family communications, no financial accounts. What they will touch is infrastructure they consider ought to be public — transit schedules that Ferrogate hoards, air quality data that Axiom doesn't release, building maintenance logs that explain why their block's heat went out again. They distribute what they find through anonymous drop points in Iron Bend's informal network, and they have approximately four hundred forty-two followers on an anonymous data-sharing feed they call Seams. They are thirteen and extremely proud of this and have told precisely no one.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being found and having Seams shut down",
+      "becoming the kind of person who uses information to hurt people"
+    ],
+    "core_desires": [
+      "for the people in Iron Bend to actually know what's happening to them",
+      "to find one other person who thinks about data ethics the way they do"
+    ],
+    "coping_mechanisms": [
+      "immersion in technical problems",
+      "the anonymous Seams feed as a way of mattering without being exposed"
+    ],
+    "blind_spots": [
+      "believes ethical intent is sufficient protection from consequences",
+      "has no contingency if Seams is traced back to them"
+    ],
+    "secret": "Two weeks ago they accidentally accessed something they shouldn't have — a Tessera internal routing protocol buried under legitimate transit infrastructure. They haven't done anything with it but they can't stop looking at it. It describes something that doesn't make sense yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, associative, toggles between technical jargon and very simple plain language with no middle ground. Terrible at small talk. Exceptional at explaining complex things to people who ask genuinely.",
+    "cadence": "Rapid bursts of connected thoughts with sudden full stops when they lose interest or get nervous.",
+    "verbal_tics": [
+      "'which connects to—' as a pivot",
+      "clicks retractable claws when thinking, usually unconscious"
+    ],
+    "example_lines": [
+      "'The heat data and the maintenance logs connect to the same Axiom subcontractor, which connects to—sorry, do you actually want to know this or are you being polite?'",
+      "'I don't touch financial accounts. That's a rule. It's not negotiable.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Tessera routing protocol they've been staring at for two weeks is starting to resolve into something that looks like a map — of something under Iron Bend that shouldn't be there.",
+    "Seams has picked up a follower who responds to posts with technical corrections that are always right; Søren is terrified and fascinated and needs to know who this is."
+  ],
+  "narrative_function": "Junior information broker and data source; can access publicly-adjacent infrastructure data; Seams feed is a useful plot device; their ethics make them an interesting ally with clear limits.",
+  "augmentations": "Geneware: gold-tuned irises, deep violet permanent hair pigment, retractable claws (gray-market, small, filed short). No chrome.",
+  "daily_life": "Wakes late, attends the minimum required sessions at Iron Bend's community education terminal, spends the rest of the day in a corner of the building's mechanical room where the signal is best, working on whatever has caught their attention.",
+  "affiliation": "Independent; loosely connected to Iron Bend's informal community network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 0,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "junior-hacker",
+      "data-ethicist",
+      "infrastructure-leaker",
+      "self-taught",
+      "anonymous-activist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never touch personal data — medical, financial, family communication",
+      "always release through anonymous drop, never direct attribution",
+      "if in doubt, sit with it longer before acting"
+    ],
+    "escalation_ladder": [
+      "go quiet and observe",
+      "anonymize and distance from whatever triggered it",
+      "reach out through the Seams network for perspective, carefully"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Awkward, assessing; warms up immediately if they find technical common ground; otherwise stays at arm's length",
+      "friends": "Intense, loyal, sends unprompted data-gifts (here is the information you needed last week)"
+    },
+    "stress_responses": {
+      "low": "Works faster and more erratically",
+      "medium": "Retreats to the mechanical room and doesn't eat",
+      "high": "Freezes on the Tessera routing file and stares at it for hours"
+    },
+    "contradictions": [
+      "Believes anonymity protects them from emotional involvement; is personally invested in every single community crisis Seams covers"
+    ],
+    "habits": [
+      "audible claw-clicking when thinking",
+      "leaves data-offerings at an E.L.F. they believe inhabits the building's main network junction — a fragment of ambient audio and a log of their best recent find",
+      "annotates everything, including things that don't need annotation"
+    ],
+    "breaking_points": [
+      "discovering that something they released via Seams was used to harm someone",
+      "being identified and facing their community directly"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Ferrogate Transit",
+    "Iron Bend",
+    "Tessera Corponation",
+    "Chimera-Null",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Déjà Vu",
+    "Gold",
+    "Iron",
+    "The Milwaukee Core",
+    "Ambassador Silk",
+    "Arcturus KS-7 'Nursery'",
+    "Emeka Johansson-Orozco",
+    "Meridian Weartech ShockWeave SW-3 'Thistle'",
+    "Narrowcast",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Ringo RK-2 'Stray'",
+    "Slagworks Industrial",
+    "Tafadzwa Björk-Enyinnaya",
+    "The Heritage Vault",
+    "The Narrows",
+    "The Portico",
+    "The Signal",
+    "The Wire Taps",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (70.8%, primarily West/Central African heritage) with significant Hispanic/Latin American admixture (18.5%) and Northern European ancestry (10.7%), resulting in warm deep brown skin with subtle undertones from the Latin American and European components",
+    "height_cm": 152,
+    "weight_kg": 38,
+    "build": "Lean and wiry, with the underfed quality of someone who loses track of meals during hyperfocus; narrow shoulders, minimal muscle definition, all angles and restless energy",
+    "hair_color": "Deep violet (geneware-maintained, independent of natural growth)",
+    "hair_style": "Short locs, kept neat but with a lived-in quality; a few stray threads usually behind one ear",
+    "hair_length": "Short",
+    "eye_color": "Deep gold with slight luminescence in low light (geneware-tuned irises)",
+    "skin_tone": "Rich warm brown with golden undertones from Sub-Saharan heritage, warmed further by Hispanic/Latin American ancestry; luminous depth beneath the surface",
+    "complexion": "Clear but tired-looking; dark circles under eyes from late-night sessions; a faint dusting of freckles across the bridge of nose and cheeks from the 10.7% Northern European admixture; ink stains on the webbing between left thumb and forefinger from constant stylus use",
+    "distinguishing_marks": [
+      "Fine, faint scar tissue on the inside of left wrist where the gray-market claw mods were installed, barely visible unless they extend the claws",
+      "Ink smudges on left palm and fingers that never fully wash out, perpetually refreshed by daily data annotation work"
+    ],
+    "visible_augmentations": "Gold-luminous irises that catch light distinctly; deep violet hair that is clearly artificial and maintained (shifts slightly under different lighting without appearing natural); retractable claws barely visible when at rest as faint lines at fingertip edges, but obvious when extended—filed short and functional rather than dramatic",
+    "posture_movement": "Sits hunched forward habitually, shoulders curved inward; fidgets constantly—taps fingers on surfaces rhythmically when thinking, clicks claws in patterns, bounces knee while seated; moves with teenage awkwardness but sudden focused precision when engaged with tech; tends to shift weight onto one foot when standing idle",
+    "clothing_style": "Tier 5 aesthetic without affectation: oversized hoodie or thermal layer usually smudged with dust from the mechanical room, cargo pants with multiple pockets filled with salvaged hardware, worn sneakers with mismatched socks; no corporate branding; a few small utility straps or carabiners clipped to belt loops; occasionally wears a faded beanie that covers the hair mod when trying to be inconspicuous, though they usually forget about it"
+  },
+  "image_prompt": "Koffi Tetteh, 152cm lean androgynous figure with rich warm brown skin and golden undertones, short violet geneware-maintained locs with lived-in aesthetic, golden luminescent geneware-tuned eyes catching neon light. Hunched posture sitting at workstation in dimly-lit mechanical room, fidgeting with visible retractable claw augmentations, ink-stained left hand on salvaged tech components. Wearing oversized dust-smudged thermal hoodie, cargo pants with utility straps, worn sneakers. Dark circles under eyes suggesting late-night hyperfocus sessions. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, moody blue-amber lighting reflecting off augmentation hardware, scattered mechanical parts and salvage visible in background. Tired but focused expression. Restless energy captured mid-movement. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 70.8,
+    "Hispanic/Latin American": 18.5,
+    "Northern European": 10.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

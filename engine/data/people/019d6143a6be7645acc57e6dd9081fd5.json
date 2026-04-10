@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a6be7645acc57e6dd9081fd5",
+  "type": "character",
+  "name": "Zephyr Haddad-Johansson-Chowdhury",
+  "aliases": [
+    "Pip"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "tunnel guide, age 14, Bore Rat born-under",
+  "age": 14,
+  "status": "active",
+  "location": "Abyssal Threshold transit tunnels, ranging to Deepwell Station, near sub-level access near Dearborn and Jackson",
+  "description": "Pip is small even for fourteen — wiry and quick, with a narrow face, enormous dark eyes adapted from birth to low-light environments, and a mop of hair they dye with bioluminescent mushroom paste in a stripe of vivid green that serves as both personal style and emergency light source. Their skin is medium brown with a faint warmth to it, and they have a long scar across their left palm from a ferrogate grate incident at age nine. No purchased augmentations — they were born underground and their body has simply adapted: exceptional night vision within human range, an instinctive spatial memory for tunnel architecture, and a sensitivity to air-pressure changes that surface people simply don't develop.\n\nPip has never been to the surface. They have seen photographs and once watched a thirty-second video of rain, which they found both beautiful and deeply suspicious. They guide people — Bore Rats moving between settlements, occasional surface-dwellers who need to travel without Ferrogate Transit records, journalists, the desperate — through a network of tunnels they have memorized the way other children memorize games. They are cheerful in a way that seems impossible given their circumstances, and the cheer is entirely genuine, which makes some adults profoundly uncomfortable.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.1,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being lost — not physically, which they are never, but the idea of not knowing where they belong",
+      "someone they guide dying because of a mistake they made"
+    ],
+    "core_desires": [
+      "to see the lake from above, just once",
+      "to be taken seriously as a professional, not treated as a curiosity or a mascot"
+    ],
+    "coping_mechanisms": [
+      "humor as deflection",
+      "hypercompetence — being so good at their job that there's no room to feel scared"
+    ],
+    "blind_spots": [
+      "does not fully register their own danger — risk assessment is calibrated to tunnel hazards, not to human malice"
+    ],
+    "secret": "They found a sealed maintenance room two years ago that has a functioning surface-link terminal — they visit it sometimes to watch weather feeds and have told no one, treating it as a private shrine to a world they might never reach."
+  },
+  "speech_patterns": {
+    "vocabulary": "tunnel slang mixed with surprisingly formal phrasing picked up from guiding educated clients — the combination is jarring and charming",
+    "cadence": "fast, enthusiastic, tends to talk while moving so sentences trail off as they turn corners",
+    "verbal_tics": [
+      "'easy-easy' (reassurance to nervous clients)",
+      "'mark it' (meaning 'remember this')"
+    ],
+    "example_lines": [
+      "'Easy-easy, the grinding noise is just the old Ferrogate spur — it's been doing that since before I was born, it's basically furniture at this point.'",
+      "'I charge flat rate, no haggling. You want haggling, find a surface guide. They'll also get you killed, so.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Pip's most recent client never came back out the far end of the route — and Pip is quietly, terrifyingly convinced it was their fault for missing a signal",
+    "Someone on the surface has identified Pip as a born-under adaptation case and wants to study them — the offer comes with money that would change their community's life, but the request is to come up"
+  ],
+  "narrative_function": "Indispensable guide for any party moving through the underworld; local color; moral complication (a child doing dangerous work in a world that has simply normalized it)",
+  "augmentations": "none purchased; born-under adaptations (low-light vision, pressure sensitivity) — not augmentations, just development",
+  "daily_life": "Sleeps in a hammock strung between two conduit pipes; wakes when they wake, which varies; takes jobs from the settlement board or from word-of-mouth referrals; spends downtime teaching younger children tunnel mnemonics and playing a card game they invented.",
+  "affiliation": "Bore Rat community, Abyssal Threshold settlement cluster",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Born-Under",
+      "Tunnel Guide",
+      "Spatial Savant",
+      "Child Laborer",
+      "Resilient"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the client's safety is the job — personal risk is acceptable, client risk is not",
+      "never reveal a route to anyone who hasn't paid for it — knowledge is the only currency that matters down here"
+    ],
+    "escalation_ladder": [
+      "cheerful deflection and re-routing",
+      "firm refusal and offer of refund",
+      "disappearing into a tunnel that clients cannot follow"
+    ],
+    "interpersonal_modes": {
+      "strangers": "immediately professional and charming — they are a guide, this is the performance, and they are good at it",
+      "friends": "drops the performance entirely, becomes quieter and oddly formal, as if they trust friends enough to stop entertaining them"
+    },
+    "stress_responses": {
+      "low": "talks faster and makes more jokes",
+      "medium": "goes completely silent and focuses with frightening intensity",
+      "high": "moves — cannot process fear while stationary, must be navigating something"
+    },
+    "contradictions": [
+      "presents as fearless and streetwise but keeps a small paper drawing of the surface sky tucked in their boot"
+    ],
+    "habits": [
+      "traces tunnel maps in the air with one finger while thinking",
+      "counts steps between landmarks habitually, even in places they know perfectly"
+    ],
+    "breaking_points": [
+      "a client's death they could have prevented",
+      "being physically prevented from moving through a space — claustrophobia not of small spaces but of locked doors"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Truth-Teller": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Abyssal Threshold",
+    "Deepwell Station",
+    "Threshold",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Packet Rats",
+    "Elena Vasquez-9",
+    "Amygdacet",
+    "Bore Rats",
+    "Ezio Kaboré-Malhotra",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Kenji Guerrero-Osei-Mensah",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "The Canopy",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East Asian-dominant mixed ancestry (47.8% East Asian, 43.0% Middle Eastern, 9.2% South Asian). Features reflect this genetic blend: slight epicanthic folds around the eyes, high cheekbones with gentle angularity, and warm olive undertones from the Middle Eastern and South Asian components.",
+    "height_cm": 148,
+    "weight_kg": 38,
+    "build": "Wiry and compact—lean muscle from constant tunnel navigation, no excess body fat, joints that seem slightly hypermobile from years of squeezing through tight passages",
+    "hair_color": "Natural dark brown with a vivid bioluminescent green stripe dyed with fermented mushroom paste",
+    "hair_style": "Shoulder-length mop, somewhat matted and tangled from tunnel dust, asymmetrically parted with the green stripe running through the left side",
+    "hair_length": "Medium",
+    "eye_color": "Very dark brown, pupils notably dilated even in normal light—adapted for low-light environments",
+    "skin_tone": "Warm olive-bronze with slight pallor from lifelong underground residence. The olive undertone comes from the blended East Asian-Middle Eastern-South Asian ancestry, creating a subtle golden warmth beneath the surface darkness.",
+    "complexion": "Round face with emerging sharp cheekbones; almond-shaped eyes with slight epicanthic folds reflecting East Asian heritage; clear skin with minor tunnel grime that never quite washes out; no facial hair; a slight perpetual squint-and-focus expression from reading tunnel shadows. Facial structure shows the warmth and angularity characteristic of the genetic blend.",
+    "distinguishing_marks": [
+      "Long pale scar across the entire left palm from a ferrogate grate incident at age nine, tissue slightly raised and lighter than surrounding skin",
+      "Minor calluses on fingertips and palms from rope work and climbing",
+      "Faint pressure marks on wrists and ankles from sleeping in a hammock strung between conduit pipes (not permanent, but visible after sleep)"
+    ],
+    "visible_augmentations": "None. Their adaptations are biological—born-under development, not chrome or implants. The bioluminescent hair stripe is cosmetic dye, not augmentation.",
+    "posture_movement": "Moves with unselfconscious grace through tight spaces; tendency to duck and turn sideways even in spacious areas. Sits in compact, folded positions. Hands are expressive and quick. Eyes constantly track air currents and acoustic shadows. Gait is quick and efficient, rarely wastes motion.",
+    "clothing_style": "Tier 5 born-under practical: layered oversized hand-me-downs from adult Bore Rats, mostly grays and blacks to hide tunnel dust. A patched synthetic jacket with multiple pockets. Rope belt holding up pants that don't quite fit. Bare feet or thick socks (no shoes—better tactile feedback for tunnel navigation). A necklace of polished ferrogate bolts salvaged from old passages. No brands, no status symbols, nothing that costs Φ."
+  },
+  "image_prompt": "Zephyr Haddad-Johansson-Chowdhury, a 148cm wiry 16-year-old with East Asian-Middle Eastern-South Asian heritage, warm olive-bronze skin with slight underground pallor, high sharp cheekbones, almond eyes with dilated pupils adapted to darkness, round face. Shoulder-length dark brown tangled hair with vivid bioluminescent green stripe running down left side. Long pale scar across left palm. Wearing oversized layered gray and black hand-me-downs, patched synthetic jacket with rope belt, bare feet, necklace of polished ferrogate bolts. Compact posture, moving gracefully through dimly lit cyberpunk tunnel passages of the 2226 Great Lakes Metropolitan Zone, walls lined with ferrogate pipes and conduits, soft bioluminescent fungal light casting shadows. Hands expressive, eyes tracking air currents. Gritty underground born-under aesthetic, moody cyan and amber accent lighting from old maintenance systems. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 47.8,
+    "Middle Eastern": 43.0,
+    "South Asian": 9.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

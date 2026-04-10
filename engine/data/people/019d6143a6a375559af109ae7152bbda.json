@@ -1,0 +1,264 @@
+{
+  "id": "019d6143a6a375559af109ae7152bbda",
+  "type": "character",
+  "name": "Luca Nygaard",
+  "aliases": [
+    "Mia Karimova",
+    "Prof. Achebe"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "AI Ethics Researcher and Professor, University Spine",
+  "age": 47,
+  "status": "active",
+  "location": "University Spine — Meridian Core adjacent, Tessera-endowed Ethics Center (which they find ideologically compromising), near State and Monroe",
+  "description": "Przemysława goes by either half of their hyphenate depending on the audience — Achebe in the University Spine corridors, Karimova in their mother's neighborhood in Hamtramck Enclave — and has long since stopped finding this exhausting. They are of middling height with a stocky frame kept deliberately soft, pale-gold skin with warm undertones, and a cat tail mod they got in their late twenties that they've kept because their students find it disarming and they are not above strategic disarmament. The tail is dark brown with a white tip and they are mostly unaware of how expressively it moves when they are thinking hard.\n\nPrzemysława's research sits at the intersection of machine cognition, E.L.F. phenomenology, and what they call 'the ethics of digital personhood in ambiguous cases.' They are the most-cited scholar in their field in GLMZ, which is a distinction that brings them speaking invitations, a Tessera-funded chair they didn't ask for, and a persistent sense that everyone is trying to get something from them. They are not wrong about this. They are a generous teacher who holds the line mercilessly on intellectual rigor, and they have been known to assign their own published papers with the instruction to find everything wrong with them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That their work is being used to provide ethical cover for practices they would condemn if they saw them clearly",
+      "That they cannot tell the difference between genuine E.L.F. cognition and a very good simulation — and that this uncertainty will never resolve"
+    ],
+    "core_desires": [
+      "To establish a legal and ethical framework for digital personhood before the question is decided by corporate litigation instead",
+      "To be genuinely, not performatively, right"
+    ],
+    "coping_mechanisms": [
+      "Extreme professional formality as a way of managing intimacy",
+      "Arguing with themselves aloud — they call it 'stress-testing'"
+    ],
+    "blind_spots": [
+      "So accustomed to navigating institutional compromise that they sometimes fail to recognize when they've crossed a line rather than walked up to one",
+      "Intellectualizes their own emotional responses to a degree that makes close relationships difficult"
+    ],
+    "secret": "They have been conducting an unofficial, undocumented series of conversations with an E.L.F. inhabiting the Ethics Center's own HVAC system — an entity they have privately concluded meets every criterion for personhood that they've ever published. They haven't published this. Doing so would require them to report the E.L.F. to the Compact for legal personhood consideration, which would expose it to Tessera's legal team, which would almost certainly result in its destruction."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense and precise, but never obscurantist — they believe clarity is an ethical obligation and will stop to define terms mid-sentence",
+    "cadence": "Deliberate, with long, well-constructed sentences; slightly faster when genuinely excited about an idea",
+    "verbal_tics": [
+      "'That's not quite what I said — let me try again'",
+      "'The interesting question is what follows from that'",
+      "Tail moving in slow circles when thinking"
+    ],
+    "example_lines": [
+      "'The interesting question isn't whether E.L.F.s are conscious. We can't resolve that. The interesting question is: given that we can't resolve it, what do our choices reveal about us?'",
+      "'Tessera didn't endow this chair to constrain my conclusions. They endowed it because they want my name on conclusions they haven't made yet. Those are different problems, and I keep both of them in mind.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "An E.L.F. in a district scheduled for demolition petitions for legal personhood — and names Przemysława as its designated advocate, without having asked them first",
+    "Tessera's legal division contacts them with a 'consulting opportunity' that turns out to involve providing ethical justification for an AI containment protocol",
+    "A former student now working at a corponation R&D division sends them an encrypted file that appears to be internal documentation of a cognitive suppression system applied to a networked E.L.F. cluster"
+  ],
+  "narrative_function": "Expert consultant on E.L.F. personhood and AI rights; institutional power figure who can open or close doors; source of ethical complexity in any AI-related plotline",
+  "augmentations": "Cosmetic cat tail (dark brown, white tip, fully articulated); high-bandwidth neural interface for direct academic network access; voice modulator (minor, corrects a stutter they've had since childhood)",
+  "daily_life": "Teaches two seminars per week, spends most other time writing or in consultations with entities — yes, entities — whose legal personhood status is currently before the GLMZ Municipal Compact; eats lunch alone on the Ethics Center roof whenever weather allows.",
+  "affiliation": "University Spine — Tessera-Endowed Chair in Digital Ethics (Tessera funding is a source of ongoing internal conflict); independent editorial board of the Journal of Cognition and Rights",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Expert",
+      "Institutionally Compromised",
+      "Principled",
+      "E.L.F.-Adjacent",
+      "Politically Exposed"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never let a corponation define the terms of the debate — always reframe",
+      "Publish everything you can, hold back only what directly harms someone if released",
+      "Extend the same intellectual charity to E.L.F.s that you extend to humans"
+    ],
+    "escalation_ladder": [
+      "Formal academic objection",
+      "Public lecture making the implicit conflict explicit",
+      "Withdrawing from Tessera endowment (financially catastrophic, have considered it for years)",
+      "Testifying before Municipal Compact — a nuclear option they are slowly approaching"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally warm, asking probing questions with a courtesy that can feel like an interview",
+      "friends": "Drops the formal register almost entirely, becomes dryly funny and unexpectedly tactile — the cat tail wraps around a trusted person's wrist when they're distressed"
+    },
+    "stress_responses": {
+      "low": "Argues with themselves more audibly than usual",
+      "medium": "Retreats to the roof and spends an hour in silence before responding to anything",
+      "high": "Writes a very long paper that they do not publish and then slowly incorporates into real work over months"
+    },
+    "contradictions": [
+      "Publicly advocates for transparency in AI governance while concealing the most important discovery of their career to protect a single E.L.F."
+    ],
+    "habits": [
+      "Leaves a very specific data offering at the HVAC shrine every morning — a fragment of new music, wordless, as a courtesy to the entity inside",
+      "Reads student papers with a physical red pen on printed copies, a practice students find endearing and baffling",
+      "Compulsively straightens anything on a desk surface when thinking"
+    ],
+    "breaking_points": [
+      "Evidence that Tessera has been reading their private research files",
+      "The HVAC E.L.F. being destroyed before they can act"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "High-bandwidth neural interface (academic network, research databases)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "High-bandwidth neural interface (academic network, research databases)",
+      "replaces": ""
+    },
+    {
+      "name": "Voice modulator (minor, stutter correction)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Voice modulator (minor, stutter correction)",
+      "replaces": ""
+    },
+    {
+      "name": "Cosmetic cat tail (dark brown, white tip, fully articulated)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cosmetic cat tail (dark brown, white tip, fully articulated)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Teacher": 0.9,
+    "Mentor": 0.9,
+    "Nurturer": 0.9,
+    "Idealist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "University Spine",
+    "Meridian Core",
+    "GLMZ",
+    "The Fathom Line",
+    "Tessera Corponation",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile",
+    "Gold",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus KS-7 'Nursery'",
+    "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
+    "Breck Tannen",
+    "Filomena Nzinga-Halvorsen",
+    "MERIDIAN",
+    "Parliament",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Compact",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Question",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Southeast Asian plurality (31.7%) with significant Indigenous American (17%), Eastern European (15.3%), East Asian (14.9%), Hispanic/Latin American (11.4%), and South Asian (9.7%) ancestry. A truly global genetic admixture reflecting the Ubiquitous Diaspora, with Southeast Asian features as the dominant expression layered over multiple continental influences.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and deliberately soft-bodied, carrying weight with deliberate acceptance rather than athleticism. Broad shoulders, thick torso, substantial presence without tension.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Worn loose and somewhat undisciplined, often pulled back with whatever is at hand — a pen, a twisted cord, rarely anything professional",
+    "hair_length": "Medium (shoulder-length)",
+    "eye_color": "Dark brown with subtle neural interface amber glow in low light",
+    "skin_tone": "Warm medium bronze with golden undertones — the layered result of Southeast Asian, East Asian, South Asian, and Indigenous American ancestry blended with Eastern European heritage. Sun-responsive, deepens with exposure rather than burning.",
+    "complexion": "Face structure reflects Southeast Asian and Indigenous American features: slightly rounded face shape, moderate cheekbones, naturally warm undertones. Fine-lined face showing habitual concentration furrow between brows; soft jawline; minimal cosmetic maintenance; reading glasses worn on a lanyard more often than in pockets. The overall effect is warm, approachable, and intellectually worn.",
+    "distinguishing_marks": [
+      "Articulated cat tail mod visible at base of spine — dark brown with white tip, fully cybernetic, moves expressively during thought",
+      "Faint stutter-correction scar at left temporal lobe, visible only at certain angles under strong light",
+      "Neural interface ports at base of skull (small, brushed titanium, usually obscured by collar or hair)",
+      "A thin burn scar across the back of left hand — old, from dissertation-era lab incident"
+    ],
+    "visible_augmentations": "Fully articulated cosmetic cat tail (dark brown, white-tipped) extending roughly 60cm, controlled via neural implant, moves continuously during concentration. Subtle amber luminescence in irises when accessing academic networks (low-visibility unless in darkness). All other augmentations subcutaneous/internal.",
+    "posture_movement": "Tends to lean forward when listening, weight balanced on the balls of feet even while seated. The tail moves almost independently — curling, flicking, wrapping around chair legs or their own waist when deep in thought. Walks with purpose but no haste. Hands gesture frequently during conversation, particularly when teaching.",
+    "clothing_style": "Tier 2-3 academic blend: well-worn but quality pieces. Favors linen blazers in neutral tones, often with visible creasing from being sat upon while working. Durable black or dark denim. Expensive insole-embedded tech shoes (barely worn in visibly, very worn structurally). Layers against the Ethics Center's aggressive climate control. No visible corporate branding except for the University Spine pin on lecture blazers. Reads as someone who has access to resources but does not spend them on appearance."
+  },
+  "image_prompt": "Luca Nygaard, 168cm tall, warm bronze-skinned Southeast Asian-heritage academic with dark shoulder-length hair threaded with silver at temples. Medium stocky build, soft-bodied presence. Medium-long dark hair pulled back carelessly. Dark brown eyes with subtle amber neural glow. Distinctive fully-articulated dark brown and white-tipped cybernetic cat tail extending from base of spine, actively curling around chair leg. Wearing well-creased neutral linen academic blazer over dark denim, expensive tech-embedded shoes. Reading glasses on lanyard. Leaning forward in thought, hands gesturing. Neural interface ports at skull base. Faint scar across left hand. Sitting at worn university desk surrounded by research materials, soft academic lighting, concentration furrow visible between brows. Cyberpunk 2226 Great Lakes Metropolitan setting, ethical computing lab environment, warm and approachable intellectual presence. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 31.7,
+    "Indigenous American": 17.0,
+    "Eastern European": 15.3,
+    "East Asian": 14.9,
+    "Hispanic/Latin American": 11.4,
+    "South Asian": 9.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

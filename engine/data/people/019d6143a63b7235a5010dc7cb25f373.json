@@ -1,0 +1,224 @@
+{
+  "id": "019d6143a63b7235a5010dc7cb25f373",
+  "type": "character",
+  "name": "Drift Kabwit-Dalgaard",
+  "aliases": [
+    "Jo",
+    "Little Wrench"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "apprentice to a Ferrogate Transit maintenance crew in Kessler Interchange",
+  "age": 14,
+  "status": "active",
+  "location": "Kessler Interchange, near Fullerton and Damen",
+  "description": "Jónas is stocky and square-shouldered for his age, with warm brown skin perpetually streaked with grease that never fully washes out of the creases of his knuckles. His hair is dark and kept short — he learned early that loose hair and moving machinery are a bad combination. He has ordinary, honest eyes and a wide mouth that defaults to a slight frown of concentration. His uniform is an adult-sized Ferrogate apprentice coverall, cut down and re-hemmed by his grandmother with surgical precision.\n\nHe was placed into the Ferrogate apprentice program through a Tier 2 vocational track at thirteen, the year after his father was injured on the same rail line he now maintains. He has complicated feelings about this that he has organized into a box he does not open. He is genuinely gifted with mechanical systems — his crew chief says he has 'the ears,' meaning he can hear when something is about to go wrong before the diagnostics catch it. He is not a talker. He communicates mainly through the quality of his work.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "becoming his father — injured, discarded, replaced",
+      "finding out Ferrogate knew the line was unsafe before his father's accident"
+    ],
+    "core_desires": [
+      "to be genuinely good at something and have it recognized plainly",
+      "for his grandmother to not have to work anymore"
+    ],
+    "coping_mechanisms": [
+      "burying himself in technical problems",
+      "routine — same path to work, same tools laid out in the same order",
+      "talking to a small transit E.L.F. icon bolted inside his locker"
+    ],
+    "blind_spots": [
+      "his loyalty to Ferrogate is partly displacement of grief for his father — he doesn't see this",
+      "his crew chief is subtly taking credit for Jónas's diagnostic catches"
+    ],
+    "secret": "He found an anomaly in the Junction 7 switching data three months ago — a pattern that suggests the same equipment failure that injured his father hasn't actually been fixed, just masked in the logs. He hasn't reported it. He's been trying to fix it himself, quietly, during off-hours."
+  },
+  "speech_patterns": {
+    "vocabulary": "technical and specific, mechanical jargon comfortable, small vocabulary for emotions",
+    "cadence": "sparse and considered; long silences that aren't uncomfortable to him but are to others",
+    "verbal_tics": [
+      "'right' used as a full sentence of acknowledgment",
+      "hums quietly when thinking"
+    ],
+    "example_lines": [
+      "'Coupler's been reading wrong for two days. Not the sensor. The coupler.'",
+      "'Right. I can look at it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Junction 7 cover-up is bigger than he knows — someone in Ferrogate management is doctoring the logs, and the next failure won't injure one person, it will derail a populated transit car",
+    "His father, now out of rehab and bitter, wants Jónas to quit Ferrogate on principle — Jónas is being torn between loyalty to his father and the only path he can see forward",
+    "The maintenance tunnels Jónas patrols are being used for something after hours — he's found evidence but not looked too closely yet"
+  ],
+  "narrative_function": "Local infrastructure expert; knows Ferrogate's maintenance tunnels and access points intimately; represents working-class youth with genuine loyalty to a corponation that exploited his family; potential reluctant information source about Ferrogate systems",
+  "augmentations": "None. Wants a haptic feedback glove augmentation someday. His crew chief says wait until you're sixteen.",
+  "daily_life": "Reports to Kessler Interchange maintenance depot at 0600. Works a six-hour supervised shift inspecting and repairing rail switching gear and junction couplings. Spends two hours in vocational theory class, either in person or via shared neural-adjacent tablet feed. Goes home to his grandmother's apartment in the Interchange housing block and eats whatever she's made.",
+  "affiliation": "Ferrogate Transit (apprentice program, vocational track)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 5,
+      "expression": 2,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "apprentice",
+      "mechanical-gifted",
+      "Ferrogate",
+      "grief-suppressed",
+      "loyal-complicated"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "do the job right the first time",
+      "don't talk about the Junction 7 problem until you have a solution",
+      "protect your grandmother from stress"
+    ],
+    "escalation_ladder": [
+      "say nothing, observe more",
+      "do it yourself quietly",
+      "if someone will get hurt, say something — even if it costs you"
+    ],
+    "interpersonal_modes": {
+      "strangers": "polite and minimal, answers questions directly, asks none",
+      "friends": "shows up, does things for them without announcement, deeply awkward about verbal affection"
+    },
+    "stress_responses": {
+      "low": "works faster",
+      "medium": "becomes very still and deliberate",
+      "high": "shuts down verbally, hands shake, goes to work anyway"
+    },
+    "contradictions": [
+      "is angry at Ferrogate and also proud to work for them; both are completely genuine"
+    ],
+    "habits": [
+      "lays out tools in identical order every shift",
+      "checks Junction 7 logs first thing every morning",
+      "brings his grandmother transit schedule printouts even though she doesn't use the line"
+    ],
+    "breaking_points": [
+      "incontrovertible proof that Ferrogate knowingly let his father get hurt"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9,
+    "Problem Solver": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "Jefferson Switch",
+    "Grandmother",
+    "Ferrogate Transit",
+    "The Wire Taps",
+    "Aïssé Dragomirescu-Faalelei",
+    "Devraj Solano-Yildirim",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Patient Zero",
+    "Ringo RR-1 'Rattlesnake'",
+    "Slagworks Industrial",
+    "The Fathom Line",
+    "The Human Baseline Alliance",
+    "The Interchange",
+    "The Pure Hand",
+    "The United Workers Front",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East Asian, Eastern European, and Sub-Saharan African dominant with Southeast Asian, Hispanic/Latin American, and Northern European secondary ancestry. Complex multi-continental heritage reflects the Ubiquitous Diaspora.",
+    "height_cm": 165,
+    "weight_kg": 68,
+    "build": "Stocky and square-shouldered, compact with early adolescent muscle density concentrated in shoulders and forearms from repetitive mechanical work. Broader across the chest than typical for his age.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Closely cropped, practical cut maintained for safety around machinery",
+    "hair_length": "Short",
+    "eye_color": "Brown, unaugmented",
+    "skin_tone": "Medium olive-brown with warm undertones from East Asian and Southeast Asian ancestry blended with Sub-Saharan African and Eastern European heritage, creating a complex mid-range complexion.",
+    "complexion": "Youthful face with slightly broader cheekbones and structured features reflecting East Asian and Eastern European ancestry, paired with a wide mouth that rests in a slight frown of concentration. Perpetually grimy — machine oil and grease work into the creases of his knuckles, around his fingernails, and sometimes marks his cheekbones and jaw from unconscious touching. Skin shows the wear of someone who spends six hours daily in industrial environment; minor calluses forming on his palms and the pads of his fingers.",
+    "distinguishing_marks": [
+      "Thin white scar across the back of his left hand, approximately 3cm, from a coupling clamp incident during his first month of apprenticeship",
+      "Permanent dark staining in the cuticles and nail beds of both hands from machinery lubricant that never fully washes away",
+      "Small burn mark on his right forearm (approximately 1cm diameter) from a steam coupling, pale and well-healed"
+    ],
+    "visible_augmentations": "None visible. No chrome, no subdermal implants, no ocular modification. Entirely baseline human.",
+    "posture_movement": "Economical and purposeful. Stands with weight balanced, shoulders slightly forward in a habitual lean that suggests someone accustomed to bending over machinery. Moves with quiet confidence in physical spaces, minimal wasted motion. Hands are rarely still — fidgets with tools or small objects when thinking. Walking pace is steady and measured, never rushed.",
+    "clothing_style": "Adult-sized Ferrogate Transit apprentice coverall, cut down and re-hemmed by his grandmother with surgical precision. The garment is faded gray-blue with darker grease stains along the front and sleeves that resist washing. Ferrogate insignia (rail transit emblem) stitched on both shoulders. Practical steel-toed work boots, scuffed and well-broken-in. Under the coverall, plain crew-neck shirt in dark gray or black. No visible jewelry, no personal customization of his uniform. Everything suggests Tier 3-4 working class utility with the precision care of someone raised by a grandmother who maintains standards despite limited resources."
+  },
+  "image_prompt": "Drift Kabwit-Dalgaard, 165cm stocky compact young man with olive-brown skin reflecting East Asian and Eastern European heritage blended with Sub-Saharan African ancestry, short dark brown cropped hair, brown eyes. Youthful face with broad cheekbones and wide mouth in slight concentrated frown, perpetually grimy from industrial machine work with permanent lubricant staining on hands, thin scar on left hand, burn mark on right forearm. Wearing faded gray-blue Ferrogate Transit apprentice coverall with grease stains, dark crew-neck undershirt, scuffed steel-toed work boots. Standing with economical purposeful posture, shoulders slightly forward in machinery-worker lean, hands slightly fidgeting. Cyberpunk 2226 Great Lakes Metropolitan Zone industrial setting, soft workshop lighting, gritty utilitarian atmosphere, baseline human no augmentations. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 30.2,
+    "Eastern European": 21.1,
+    "Sub-Saharan African": 15.6,
+    "Hispanic/Latin American": 13.6,
+    "Southeast Asian": 9.9,
+    "Northern European": 9.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "id": "019d6143a637799bb9c44c91f71a383a",
+  "type": "character",
+  "name": "Zephyr Sabbagh",
+  "aliases": [
+    "Sandy",
+    "Iskander the Wet"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "compute broker — buying and reselling stolen processing power, illegally siphoned bandwidth, and cracked data-storage allocations",
+  "age": 29,
+  "status": "active",
+  "location": "The Shelf lower levels, operating out of a humidity-damaged server room in Ironvein, near Western and Chicago Ave",
+  "description": "Iskander gets the nickname 'the Wet' because of where they work — Ironvein's lower infrastructure levels have a chronic condensation problem, and Iskander's operation is built into a server room where the ceiling weeps constantly and every surface is furred with gray moisture. They have adapted to this entirely. They wear wicking underlayers always, they've waterproofed every piece of equipment twice, and they have the particular unhealthy pallor of someone who works in artificial light with too much humidity and not enough fresh air. Their Fijian-Zimbabwean heritage gives them a strong frame they've undermaintained into wiry sedentariness, and their hair, naturally coily, is perpetually slightly damp and kept loose around their shoulders. Their eyes are the mod — pattern irises in a circuit-board geometry, gold on dark brown, glowing faintly under their own tiny internal bioluminescence. They wear them like a business card.\n\nIskander is the person you go to when you need processing power you shouldn't have — stolen cycles from Axiom's distributed architecture, warehoused Tessera storage nodes that fell off a digital truck, bandwidth allocations siphoned from Ferrogate Transit's maintenance grid. They don't ask what the compute is for, they ask how much and when, and they price on urgency. They are not technically gifted in the sense of building new things — they are technically gifted in the sense of understanding systems well enough to pick their pockets. They are also deeply, genuinely paranoid, which in their line of work has kept them alive, and socially awkward in the specific way of people who relate more naturally to systems than to people.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.3,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "one of the systems they've siphoned detecting them and tracing it back — specifically Axiom's counter-intrusion AI, which they call the Shepherd",
+      "losing the server room, which is the closest thing they have to a home"
+    ],
+    "core_desires": [
+      "to find and exploit the single perfect vulnerability that would let them siphon enough to retire permanently",
+      "to be understood by someone without having to explain themselves, which has never happened"
+    ],
+    "coping_mechanisms": [
+      "information hoarding — knowing more than anyone else as a substitute for security",
+      "ritualizing work routines to manage anxiety",
+      "maintaining small persistent E.L.F. shrines in their server room"
+    ],
+    "blind_spots": [
+      "trusts systems and distrusts people so reflexively that they sometimes miss human threats they'd see immediately as system vulnerabilities",
+      "has become so adapted to isolation that they no longer notice it as a problem"
+    ],
+    "secret": "They have inadvertently stumbled into a stolen compute allocation that is being used for something they haven't identified yet but that sends irregular ping patterns they've started to suspect are communications — and they have been reading those communications for three months without telling anyone, because they are terrified and also unable to stop"
+  },
+  "speech_patterns": {
+    "vocabulary": "technical and precise, defaults to system metaphors for everything including human situations, difficulty with small talk which they compensate for with information-dense monologue",
+    "cadence": "uneven — long pauses followed by rapid delivery, as though their thoughts buffer before outputting",
+    "verbal_tics": [
+      "'That's a solvable problem.'",
+      "explains technical context nobody asked for before answering the actual question",
+      "refers to people's social behaviors as 'protocols'"
+    ],
+    "example_lines": [
+      "'Okay. So what you need is forty processing-hours of dark compute before Friday. That's doable. The question is whether you need clean provenance or you just need the cycles — because clean costs triple and I don't think you need clean, do you?'",
+      "'I'm not paranoid. I'm running accurate threat probability assessments and acting accordingly. There's a difference and it matters.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The mysterious communications they've been reading have escalated — whatever is using that stolen compute is aware of being watched, and the most recent message was addressed to them by name",
+    "A major client's job required more compute than Iskander could legitimately provide, so they siphoned from an Axiom node they didn't know was hot — and now the Shepherd is running a trace"
+  ],
+  "narrative_function": "Information source (knows who is doing compute-intensive illegal work across the criminal network), equipment provider for digital operations, quest giver when a stolen allocation traces back somewhere dangerous, window into the digital underground economy",
+  "augmentations": "Pattern irises — circuit-board geometry, gold on dark brown, internally bioluminescent; neural-digital interface jack (base of skull, third-gen, allows direct system access); dermal moisture management layer (medical-grade, installed for environmental comfort)",
+  "daily_life": "Works almost entirely nocturnal, monitoring stolen compute allocations and managing resale listings through a heavily anonymized mesh presence; sleeps in four-hour increments; once a week physically meets suppliers in person at shifting locations in the Ironvein lower levels.",
+  "affiliation": "Independent, loose association with a compute broker collective called the Overflow Market; pays informal rent to the Ironvein Harrow Boys for physical security",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 4,
+      "expression": 4,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "system-thinker",
+      "isolated",
+      "paranoid-accurate",
+      "information-hoarder",
+      "E.L.F.-devout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never hold stolen compute for more than 72 hours — resell or purge",
+      "always maintain three independent anonymization layers on any sale",
+      "physical security is the Harrow Boys' problem, not theirs — they pay so they don't have to think about it"
+    ],
+    "escalation_ladder": [
+      "refusal and disconnection from digital contact",
+      "physical relocation of critical hardware to secondary cache sites",
+      "activating emergency data purge protocols",
+      "abandoning the server room entirely — the nuclear option"
+    ],
+    "interpersonal_modes": {
+      "strangers": "suspicious, information-minimal, assesses threat profile before engaging",
+      "friends": "rare, but expressed as intense information-sharing and practical assistance, difficulty with emotional registers"
+    },
+    "stress_responses": {
+      "low": "works faster, more monitoring",
+      "medium": "withdraws from all non-essential contact",
+      "high": "begins purging data and preparing for relocation even if it turns out unnecessary"
+    },
+    "contradictions": [
+      "is deeply uncomfortable with violence but depends entirely on violent people for their physical security",
+      "claims not to care about people but maintains detailed behavioral models of everyone in their network that function as a form of obsessive attention"
+    ],
+    "habits": [
+      "leaves small offerings of unused processing cycles to three E.L.F. shrines they've assembled from old hardware in the server room corners",
+      "drinks instant coffee in the dark rather than turning on more lights",
+      "talks to their active systems in a low ongoing murmur"
+    ],
+    "breaking_points": [
+      "the server room being physically breached",
+      "discovering someone in their network has deliberately burned them to a corponation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Pattern irises — circuit-board geometry, gold on dark brown, internal bioluminescence",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Pattern irises — circuit-board geometry, gold on dark brown, internal bioluminescence",
+      "replaces": ""
+    },
+    {
+      "name": "Neural-digital interface jack — base of skull, third-generation",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural-digital interface jack — base of skull, third-generation",
+      "replaces": ""
+    },
+    {
+      "name": "Dermal moisture management layer — full torso, medical grade",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Dermal moisture management layer — full torso, medical grade",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171: Born in the Shelf lower levels, child of a Fijian-Zimbabwean heritage drifter family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187: Self-taught digital intrusion, first successful allocation siphon at 16",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192: Established the Ironvein server room operation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195: Joined the Overflow Market collective network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198: Discovered the anomalous communications in the stolen allocation — ongoing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Current — three months into reading messages that know they are being read",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Dewdrop",
+    "The Shelf",
+    "Ironvein",
+    "The Heritage Vault",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Slagworks Industrial",
+    "Gold",
+    "Chicago",
+    "Brecken Yılmaz-Osei",
+    "Cassiel Brandt-Ouedraogo",
+    "Daulet Reyes-Abubakar",
+    "Emeka Johansson-Orozco",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Lazarus LX-5 'Siphon'",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Noir Dining",
+    "Pikasso Wemba-Þórðarson",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "TESSERA CC-6 'Shepherd'",
+    "The Question",
+    "Veslemøy Achebe-Tursynov",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Complex diaspora blend: Middle Eastern (33.9%), Sub-Saharan African (26.3%), South Asian (25.0%), and Hispanic/Latin American (14.8%) ancestry creates a richly layered phenotype. Dark brown skin with warm undertones characteristic of the African and South Asian components, deepened by Middle Eastern heritage genetics, with subtle warm olive undertones in certain light from the Latin American admixture.",
+    "height_cm": 177,
+    "weight_kg": 62,
+    "build": "Naturally strong-framed but severely undermaintained through sedentary nocturnal work — wiry and angular, with atrophied muscle definition despite skeletal structure suggesting past athleticism. Slight forward slouch from prolonged server-room posture.",
+    "hair_color": "Natural dark brown, coated with perpetual moisture sheen",
+    "hair_style": "Loose, unstretched coils worn shoulder-length; frequently damp, slightly matted at the nape from humidity and irregular sleeping patterns",
+    "hair_length": "Long",
+    "eye_color": "Dark brown base with circuit-board pattern irises in gold; faintly self-luminescent under low light",
+    "skin_tone": "Deep warm brown with sallow undertones from chronic fluorescent-light exposure and humidity-dependent pallor; rich undertones reflecting the blend of African, Middle Eastern, and South Asian ancestry",
+    "complexion": "Smooth deep brown base with slightly waxy texture from dermal moisture-management layer; visible fine lines around eyes from screen fatigue and squinting in condensation-fogged server rooms; perpetually slightly flushed cheeks from humidity exposure; minimal grooming beyond functional hygiene. Facial structure reflects mixed heritage: defined cheekbones with fuller lower face characteristic of South Asian ancestry, broader nose bridge from African heritage, and subtle angular jaw structure from Middle Eastern genetics.",
+    "distinguishing_marks": [
+      "Third-generation neural-digital interface jack at base of skull — visible as a discrete platinum port with faint silver scarring around insertion point, usually partially obscured by damp hair",
+      "Fine, barely-visible grid pattern across shoulders and upper back from dermal moisture-management layer subdermal tubing — only visible when wet or under direct light"
+    ],
+    "visible_augmentations": "Luminescent circuit-pattern irises are unmistakably artificial and intentionally displayed; they glow faintly gold-on-brown in dim light. The bioluminescence is subtle but immediately marks them as modded. Neural jack port visible at skull base when hair is pulled back.",
+    "posture_movement": "Hunched, desk-oriented posture with tendency to tilt head slightly when listening — a system-monitoring habit. Movements are economical and deliberate; minimal gesturing. Often appears to be mentally elsewhere, processing multiple data streams simultaneously. Fidgets with equipment or fingers when anxious.",
+    "clothing_style": "Tier 3-4 functional, heavily waterproofed. Always wears moisture-wicking base layers (matte synthetic, often visible at collar/wrists). Primary garment is a heavily patched, sealing-treated technical parka in faded teal with sealed pockets and reinforced seams — clearly maintained for humidity resistance rather than aesthetics. Underlayers visible: compression shirt, sometimes a thin haptic-feedback interface vest. Pants are loose, dark gray synthetic with heavy cargo pockets for portable hardware. Footwear is industrial rubber-soled — practical, sealed, fungal-resistant. No jewelry except occasionally a watch with waterproof casing. Aesthetic is anti-fashion: purely functional, deliberately unmarked by crew affiliation or status symbols."
+  },
+  "image_prompt": "Cyberpunk 2226, Zephyr Sabbagh: lean androgynous figure, height 177cm, deep warm brown skin with subtle olive undertones blending Middle Eastern, Sub-Saharan African, South Asian, and Latin American heritage. Long shoulder-length dark coiled hair, damp and slightly matted, framing a face with defined cheekbones, fuller lower face, and broader nose bridge. Dark brown eyes with glowing gold circuit-board pattern irises, faintly luminescent in low light. Visible platinum neural-digital interface jack at base of skull with faint silver scarring. Hunched posture, slight forward slouch from years of server-room work. Wearing faded teal waterproofed technical parka with visible patches and sealed seams, dark gray cargo pants, industrial rubber-soled boots. Matte synthetic moisture-wicking base layers visible at collar and wrists. Pale flushed cheeks from chronic humidity exposure, fine lines around eyes from screen fatigue. Server room setting, fluorescent overhead lighting creating slight sallow cast on skin, condensation in air, cool metal surfaces in background, cyberpunk 2200s aesthetic, moody atmospheric lighting, anti-fashion functional aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 33.9,
+    "Sub-Saharan African": 26.3,
+    "South Asian": 25.0,
+    "Hispanic/Latin American": 14.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

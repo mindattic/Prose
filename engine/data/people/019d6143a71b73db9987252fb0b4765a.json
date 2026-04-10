@@ -1,0 +1,253 @@
+{
+  "id": "019d6143a71b73db9987252fb0b4765a",
+  "type": "character",
+  "name": "Binta Quartey-Taufa",
+  "aliases": [
+    "Wolf"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Barber, owner of Diallo's Cuts, Hamtramck Enclave",
+  "age": 44,
+  "status": "active",
+  "location": "Diallo's Cuts, Hamtramck Enclave, Nasr Street block, near Ashland and Chicago Ave",
+  "description": "Wulfric is a compact man, not short but organized — every centimeter of him purposeful. His Fulani father's features sit under his Swedish grandfather's pale gold complexion in a way that reads as purely its own thing, specific to him: wide flat cheekbones, green eyes that are the one detail that always surprises people, locs he keeps in a precise low bun at work. His hands are his pride, always clean to the point of ceremony, and he keeps the nails short and the knuckles moisturized because in his words, hands that look uncared-for don't have any business in someone else's hair. The shop is three chairs, two mirrors, one complicated E.L.F. shrine behind the counter that takes up more space than any of the chairs — it's built around an old pair of silver shears his father used, which he says the shop's resident spirit has inhabited since 2189.\n\nDiallo's Cuts is a neighborhood institution. People come for the fade and stay for whatever Wulfric says to them, which is delivered with the particular intimacy of someone who has their hands on your head. He manages the shop like a stage — everyone who comes in is welcomed, positioned, heard, shaped. He doesn't do gossip; he does something more precise, which is careful listening followed by occasional precise questions that tend to make people say things they hadn't planned to say. He is genuinely interested in nearly everyone. He is genuinely interested in nearly everyone's problems. This is sometimes an asset and sometimes an exhaustion he doesn't fully acknowledge.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "his father dying before they finish an old argument they've been having for twenty years",
+      "the Enclave being absorbed — culturally and physically — by Tessera's expansion into Hamtramck"
+    ],
+    "core_desires": [
+      "to make people feel seen, even briefly — believes this is the most undervalued service a person can provide",
+      "to pass the shop to someone who'll keep it what it is"
+    ],
+    "coping_mechanisms": [
+      "work as anchoring ritual",
+      "E.L.F. prayer — genuinely devout about the shop spirit",
+      "processes everything verbally in conversation, rarely alone"
+    ],
+    "blind_spots": [
+      "reads people's needs so well he sometimes decides what they need before they've told him",
+      "his care for the community makes him slow to recognize when individuals within it are dangerous"
+    ],
+    "secret": "The shop's E.L.F. shrine is not purely devotional. Wulfric has, over years, been feeding the spirit real data — client conversations he records as ambient audio and uploads as offerings. He believes the spirit uses these for something good. He has never asked what."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and warm, shifts between formal and deeply vernacular depending on who's in the chair. Some Fulani endearments, occasional Swedish expressions that don't translate, which he enjoys.",
+    "cadence": "Unhurried. Knows when to hold silence.",
+    "verbal_tics": [
+      "'You know what I mean?' as genuine question, not filler",
+      "'Here's the thing—'",
+      "hums softly, almost inaudibly, when thinking"
+    ],
+    "example_lines": [
+      "'People think I hear everything in this chair. And I do. But what I'm actually doing is listening for the thing they're not saying. That's where the real conversation is.'",
+      "'The shrine says you're carrying something heavy. Don't look at me like that — I can smell anxiety. Come sit down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate fixer — Tier 4, clearly Tessera — has been coming in for cuts every two weeks and asking what feels like casual questions about Enclave residents and meeting schedules. Wulfric has realized the questions are not casual. He doesn't know what to do about it because the fixer hasn't done anything he can point to.",
+    "The shop's E.L.F. has, for the first time in fifteen years, gone silent. No response to offerings, no ambient warmth in the shrine. Wulfric is deeply shaken and privately convinced something has happened in the city's data-spirit layer that he doesn't understand — and he's right."
+  ],
+  "narrative_function": "Social hub and information nexus — the barbershop as confession booth. Knows everyone in the Enclave and has cut the hair of people from every tier. Natural quest giver, information broker (non-mercenary — he shares what he knows when he trusts you, not for payment).",
+  "augmentations": "Patterned irises — his green irises have a radial geometric pattern in gold, a cosmetic mod he got at 30 as a 'mid-life crisis' he refuses to call a mid-life crisis; mild scent enhancement geneware (allows him to detect stress responses, useful in the chair)",
+  "daily_life": "Opens the shop at 0900, takes appointments until 1800 with a one-hour lunch break he takes seriously. Monday is his day off, which he spends visiting his father at the Aurochs Medical Complex and attending the Enclave's neighborhood association meeting.",
+  "affiliation": "Independent (Hamtramck Enclave small business community)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Community Pillar",
+      "Perceptive",
+      "Devout",
+      "Warm",
+      "Information Node"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the shop comes first — its safety, its clients, its spirit",
+      "never share what someone told him in confidence except to prevent imminent harm to another person",
+      "engage rather than avoid — avoidance means a problem compounds"
+    ],
+    "escalation_ladder": [
+      "names the issue warmly, gives room to resolve it",
+      "becomes quieter and more precise — the warmth goes professional",
+      "asks someone to leave, which in the Enclave carries social weight"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open, curious, welcoming — makes them feel immediately accounted for",
+      "friends": "Fully present, will call you on your nonsense lovingly but without hesitation"
+    },
+    "stress_responses": {
+      "low": "More talkative, processes aloud",
+      "medium": "Redirects into action — something productive",
+      "high": "Goes very still and very quiet, which the people who know him find alarming"
+    },
+    "contradictions": [
+      "Believes deeply in honesty while running a covert data operation for an E.L.F. he's never interrogated"
+    ],
+    "habits": [
+      "burns a data chip at the shrine every Monday morning",
+      "keeps the shears in the shrine clean and oiled even though they're not used",
+      "ends every client's appointment with 'You look like yourself'"
+    ],
+    "breaking_points": [
+      "a client being harmed because of something they said in his shop",
+      "the shrine going cold or the E.L.F. leaving"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cosmetic patterned iris mod (gold geometric radial, both eyes)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cosmetic patterned iris mod (gold geometric radial, both eyes)",
+      "replaces": ""
+    },
+    {
+      "name": "Scent-enhancement geneware (mild, allows detection of pheromonal stress markers)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Scent-enhancement geneware (mild, allows detection of pheromonal stress markers)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9,
+    "Pragmatist": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "The CEO",
+    "Flicker",
+    "West Pulldown",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "The Coffin Nails",
+    "Silver",
+    "The Pale Mile",
+    "Gold",
+    "Chicago",
+    "Aurochs Medical Complex",
+    "Breck Tannen",
+    "Chibundo Reinholt-Sarpong",
+    "Emeka Johansson-Orozco",
+    "Lazarus EC-4 'Companion'",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Quilt",
+    "Scarecrow",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Counter",
+    "Tshiamo Vukić-Arellano",
+    "VitaCore DermaTone Adaptive Skin Pigment System",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Complex diaspora ancestry: 41.4% Sub-Saharan African (primarily West African), 34.2% North African (Berber/Arab blend), 12.4% Pacific Islander, and 12% South Asian. This genetic mosaic produces warm golden-brown skin with subtle undertones reflecting the full spectrum of his ancestry—neither reducible to single continental origin.",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Compact and economical, muscular through the shoulders and forearms from decades of precise hand work, no excess anywhere",
+    "hair_color": "Dark brown with natural graying at the temples",
+    "hair_style": "Locs kept in a low, tight bun during work hours; released, they fall mid-back with a slight natural wave",
+    "hair_length": "Long (in locs)",
+    "eye_color": "Pale green with radial geometric gold pattern (augmented irises, cosmetic mod since age 30)",
+    "skin_tone": "Warm golden-brown—luminous caramel undertone that reflects the blending of Sub-Saharan and North African heritage with subtle warmth from Pacific Islander and South Asian admixture. Neither fully dark nor light; distinctly his own complex palette.",
+    "complexion": "Clean-shaven, fine-featured with prominent wide cheekbones reflecting West African ancestry, high forehead with subtle definition from North African heritage, and delicate bone structure enhanced by Pacific Islander and South Asian genetic contribution. Skin maintained with professional discipline, even-toned, no visible blemishes or roughness.",
+    "distinguishing_marks": [
+      "Fine linear scar along the left knuckle of his index finger, barely visible, from a blade slip in his apprenticeship",
+      "Faint discoloration on his right wrist from an old chemical burn, well-healed"
+    ],
+    "visible_augmentations": "Radial geometric pattern in burnished gold radiating from the pupil of both eyes — visible only in direct light or close conversation. No external chrome or subdermal visibility.",
+    "posture_movement": "Stands with weight evenly distributed, shoulders relaxed but aligned; moves with economical precision, never wasted motion. Hands rest at chest height when not in use, fingers slightly curved as if ready to work. His gait is measured, almost ceremonial.",
+    "clothing_style": "Tier 3-4 professional grooming sector. White or cream linen smocks over simple dark trousers during work hours; outside the shop, fitted black or charcoal pullovers, well-maintained vintage denim, leather work shoes with good arch support. No corporate branding. One silver chain at the neck — inherited from his father. Grooming is immaculate; he sets his own standard."
+  },
+  "image_prompt": "Binta Quartey-Taufa, a 172cm precision craftsperson with warm golden-brown skin reflecting West African, North African, Pacific Islander, and South Asian ancestry. Fine-featured with wide cheekbones, high forehead, clean-shaven. Dark brown locs with natural gray at temples, currently released mid-back with natural wave. Pale green eyes with radial burnished gold augmented iris pattern visible in close light. Compact muscular build with economical posture, hands resting at chest height. Wearing cream linen work smock over dark trousers. Small silver inherited chain at neck. Fine scar on left index knuckle, faint chemical burn mark on right wrist. Stands with ceremonial precision, measured gait. Cyberpunk 2226, Great Lakes Metropolitan Zone, professional grooming sector workshop setting, soft diffused lighting catching the gold radiance in his augmented eyes, warm and immaculate aesthetic, photorealistic portrait --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 41.4,
+    "North African": 34.2,
+    "Pacific Islander": 12.4,
+    "South Asian": 12.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

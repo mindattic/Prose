@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a6d173bc966fb7de05376461",
+  "type": "character",
+  "name": "Sable Dalgaard",
+  "aliases": [
+    "Ósk",
+    "the Quiet One"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Climate refugee and expelled citizen, now a tent-city elder-without-title",
+  "age": 68,
+  "status": "active",
+  "location": "Grand Crossing Gate tent encampment, southern perimeter, near North Ave and Damen",
+  "description": "Ósk is small and deliberate, with the economy of movement that belongs to people who have learned to do everything with minimum waste. Their hair is silver-white and kept in tight braids close to their skull, and their skin — a warm brown-grey that the encampment children call 'river clay' — is mapped with sun damage and the faint patterning of old dermal inflammation, a souvenir of the chemical flooding that took their home city. They have a single geneware modification: their irises are a soft bioluminescent amber, given to them by a camp medic years ago when their natural eyes were damaged. They never asked for it but have made peace with the warm glow their face gives off in darkness.\n\nÓsk doesn't hold any formal position in the Grand Crossing Gate encampment, but they are the person people come to when the camp council fractures, when a child goes missing, when someone needs to negotiate with the checkpoint guards. They have an absolute, undemonstrative competence that operates below the level of authority — they simply handle things, without announcing they're doing it. They lost their citizenship in the upheaval of a climate-related territorial dispute that isn't over yet, and they have been stateless for eleven years. They have stopped expecting resolution and started building something livable inside the wait.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the encampment will be violently cleared before anyone has anywhere to go",
+      "That their long patience has been mistaken for acceptance"
+    ],
+    "core_desires": [
+      "A legal territory — not for themselves specifically, but for the community they've built",
+      "To see the younger members of the camp have something they didn't"
+    ],
+    "coping_mechanisms": [
+      "Pure pragmatism — focusing on the immediate, solvable problem instead of the unsolvable larger one",
+      "Quiet ritual — they have elaborate small daily ceremonies that are entirely private"
+    ],
+    "blind_spots": [
+      "They have stopped advocating for themselves individually; their own needs go completely unattended",
+      "They assume that quiet competence will always eventually be recognized, which is not always true"
+    ],
+    "secret": "Ósk was a civil engineer in their former life and still has — memorized, not written — the complete structural schematics of the Grand Crossing Gate checkpoint's load-bearing systems. They did the math years ago. They know exactly what it would take to bring down the checkpoint barriers. They have never told anyone and they pray they never have to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Careful and precise; uses the formal registers of someone educated in a language that no longer has a country; occasionally a word from their home dialect surfaces with no equivalent",
+    "cadence": "Slow, measured, never wasted — they say exactly as much as needed and then stop",
+    "verbal_tics": [
+      "Long pauses before speaking, as though weighing each word",
+      "Refers to the camp as 'here' rather than giving it a name"
+    ],
+    "example_lines": [
+      "'The checkpoint guard changed shifts last week. The new one takes bribes differently than the old one — not money, information. This is good to know.'",
+      "'You ask me if I am angry. I have been angry every day for eleven years. Anger is not the question. The question is what we do this morning.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Grand Crossing Gate encampment is about to be demolished for a Ferrogate Transit expansion — Ósk has three weeks to find a solution and has finally accepted they cannot do it alone",
+    "A young person in the camp has gone missing after talking to someone from a corponation labor recruitment office — Ósk suspects a labor-bond trap and needs someone with access to investigate"
+  ],
+  "narrative_function": "Moral center and community anchor; provides context for the refugee experience; can grant players access to the encampment's trust; functions as a quest-giver for community-level problems that lack obvious solutions",
+  "augmentations": "Bioluminescent amber irises (geneware, functional — replaced damaged natural eyes); basic hearing aid augment (very old, jury-rigged, unreliable)",
+  "daily_life": "Ósk rises before the encampment and does a circuit — checking on the oldest residents, assessing the camp's resource situation, speaking briefly with the checkpoint guards they've cultivated a working relationship with. The rest of the day is occupied by whoever needs them, which is always someone.",
+  "affiliation": "Grand Crossing Gate encampment community — unofficial mediator and practical organizer",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 6,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "climate refugee",
+      "stateless",
+      "community elder",
+      "pragmatist",
+      "former engineer",
+      "encampment anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Community need outweighs individual need, including their own",
+      "Never make an enemy of someone whose goodwill costs less than their hostility"
+    ],
+    "escalation_ladder": [
+      "Addresses conflict through calm direct conversation",
+      "Escalates to formal community mediation",
+      "As last resort, uses their knowledge of systems and structures to create leverage — very slowly, very deliberately"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses carefully and quietly; offers a cup of something warm and lets the stranger fill the silence",
+      "friends": "Completely reliable, occasionally exasperating in their refusal to be helped in return"
+    },
+    "stress_responses": {
+      "low": "Becomes extremely focused and task-oriented",
+      "medium": "Goes very still; thinking hard, saying little",
+      "high": "A brief, private rage that nobody sees, then back to the task"
+    },
+    "contradictions": [
+      "Preaches pragmatism over hope but keeps a carefully folded map of their home city in their coat — not to go back, just to remember it existed"
+    ],
+    "habits": [
+      "Makes tea for whoever is in their space as an automatic greeting ritual",
+      "Walks the camp perimeter at dusk — listening, not looking",
+      "Keeps a small ELF shrine made from salvaged electronics at their tent entrance"
+    ],
+    "breaking_points": [
+      "Violence against children in the camp — the only thing that breaks their deliberate composure completely"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Meridian Munitions Twin PDW MTP-2 'Gemini'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Meridian Munitions Twin PDW MTP-2 'Gemini'"
+  ],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Ferrogate Transit",
+    "Arcturus GE-1 'Garrison'",
+    "Grand Corridor",
+    "TESSERA ES-4 'Perimeter'",
+    "Souvenir",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Tibor Osei-Svanstrom",
+    "Clay",
+    "Nightlight",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus MX-1 'Cerberus'",
+    "Bogdan Achebe-Svanstrom",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "DEEP CURRENT",
+    "Korrath",
+    "MERIDIAN",
+    "Meridian Munitions Twin PDW MTP-2 'Gemini'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Ringo PD-1 'Citizen'",
+    "Somalex",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA TC-3 'Crucible'",
+    "TESSERA TK-4 'Hellhound'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Pure Hand",
+    "The Question",
+    "The Quiet Room",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Complex diaspora blend: Northern European pallor and bone structure (31.7%) mixed with South Asian warmth and facial features (27.7%), Pacific Islander robustness and skin depth (24.0%), and Eastern European angular definition (16.6%). The combination creates a unique phenotype—neither fully of any single region, but bearing traces of all four in subtle interplay across bone structure, skin undertones, and eye shape.",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Lean and compact, with the economical musculature of someone who has spent decades doing physically necessary work — no wasted mass, joints prominent, capable hands",
+    "hair_color": "Silver-white",
+    "hair_style": "Tight braids close to the skull, practical and deliberate",
+    "hair_length": "Short",
+    "eye_color": "Soft bioluminescent amber (geneware replacement; irises glow faintly in low light)",
+    "skin_tone": "Warm medium brown with subtle golden undertones from Pacific Islander ancestry, cooled slightly by Northern European genetics, creating a complex mid-range complexion with depth and dimension. Years of weathering have created uneven patina—darker sun-exposed zones contrasting with protected areas.",
+    "complexion": "Lined face reflecting 68 years and environmental hardship; faint patterning of old dermal scarring across cheeks and forehead from chemical exposure; minimal grooming beyond functionality; hands calloused and age-spotted. Facial structure shows broad cheekbones and defined jaw from blended ancestry, with subtle eye fold suggesting South and Pacific Islander heritage. Skin texture weathered but retaining underlying warmth.",
+    "distinguishing_marks": [
+      "Faint, irregular patterning of chemical burn scarring across both cheeks and upper forehead, discoloration lighter than surrounding skin",
+      "Small burn scar on left forearm, pale and thin, approximately 3cm long",
+      "Visible hearing aid augment behind right ear — old model, patched with wire and tape, clearly jury-rigged and unreliable"
+    ],
+    "visible_augmentations": "Bioluminescent amber irises that emit a soft warm glow in darkness or low light; aging jury-rigged hearing aid augment visible behind right ear (taped, repaired multiple times); no other visible chrome or implants",
+    "posture_movement": "Moves with deliberate efficiency and minimal gesture — no wasted motion, no performative energy. Stands at rest with weight balanced, ready. Hands often occupied with small tasks. Speaks infrequently but with absolute certainty. Eyes make contact without demand. Moves through the encampment like someone taking inventory of invisible things",
+    "clothing_style": "Tier 5 utilitarian: faded, multi-patched jacket from indeterminate origin, probably scavenged; layered long-sleeved shirts in muted greys and browns to protect from sun; practical cargo pants with visible repair patches; worn boots resoled multiple times; no jewelry or ornamentation; everything serviceable, nothing decorative. Clothing shows careful maintenance within severe resource constraints"
+  },
+  "image_prompt": "Sable Dalgaard, 158cm lean figure, 68-year-old woman with silver-white braids, medium-warm brown skin with golden undertones bearing faint chemical scarring on cheeks and forehead. Bioluminescent amber eyes glowing softly. Jury-rigged hearing aid visible behind right ear. Wearing heavily patched faded jacket, layered grey-brown long-sleeved shirts, worn cargo pants with repairs, resoled boots. Standing in stillness with deliberate posture, hands occupied with small task. Cyberpunk 2226 Great Lakes encampment setting, warm industrial lighting, weathered survivor aesthetic, complex diaspora features blending Northern European, South Asian, Pacific Islander, and Eastern European ancestry. Photorealistic, naturalistic skin tone with environmental weathering, authentic utilitarian aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 31.7,
+    "South Asian": 27.7,
+    "Pacific Islander": 24.0,
+    "Eastern European": 16.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

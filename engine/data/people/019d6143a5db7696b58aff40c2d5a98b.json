@@ -1,0 +1,267 @@
+{
+  "id": "019d6143a5db7696b58aff40c2d5a98b",
+  "type": "character",
+  "name": "Magnus Szabó",
+  "aliases": [
+    "Chi",
+    "Mamaka"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Transit operator, Ferrogate magline tram, Deepwell Station loop",
+  "age": 47,
+  "status": "active",
+  "location": "Deepwell Station, The Narrows, near sub-level access near LaSalle and Congress",
+  "description": "Chiamaka is a broad-shouldered woman with deep brown skin mapped by twenty-two years of shift work — early mornings have carved permanent shadows beneath her eyes, and her knuckles are calloused from gripping the manual override bar during power fluctuations. She wears her Ferrogate Transit uniform with a particular pride that borders on defiance, the collar pins perfectly level, the cuffs always turned exactly once. Her geneware is modest: irises that shift from amber to pale green depending on her blood pressure, which she got cheap from a stall in the Burnished Market and has never replaced. Her silver-streaked locs are pinned under her operator's cap except on rest days, when she lets them down to her shoulders.\n\nShe is the kind of woman who knows every regular on the 6:14 eastbound by name and by their bad habits. She has opinions about everything — the state of the magline infrastructure, the price of cassava flour, the particular incompetence of Ferrogate middle management — and she will share them freely if you give her the slightest opening. Beneath the bluster is someone who has taken quiet pride in the fact that in twenty-two years she has never been more than ninety seconds off schedule, and she considers this a form of art.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being made redundant by full automation",
+      "Her daughter leaving GLMZ and never coming back"
+    ],
+    "core_desires": [
+      "To be recognized as essential, not just functional",
+      "For the city's transit system to actually serve the people who built it"
+    ],
+    "coping_mechanisms": [
+      "Ritualistic schedule-keeping as a form of control",
+      "Venting grievances loudly to anyone who will listen"
+    ],
+    "blind_spots": [
+      "Assumes competence in people who mirror her own work ethic, leading to misplaced trust",
+      "Cannot accept that sometimes lateness is not a moral failure"
+    ],
+    "secret": "In 2193 she deliberately held a tram two minutes past schedule to prevent a Ferrogate internal security team from reaching a platform where she knew a family of undocumented workers was trying to board. She has never told anyone and considers it the best thing she ever did."
+  },
+  "speech_patterns": {
+    "vocabulary": "Mix of transit jargon, Nigerian-inflected English idioms inherited from her grandmother's side, and the flat midwest vowels of someone born in GLMZ. Tends to state opinions as facts.",
+    "cadence": "Deliberate and unhurried, with sudden bursts of speed when she's making a point she considers obvious",
+    "verbal_tics": [
+      "'You hear what I'm saying?'",
+      "'As if I wouldn't know'",
+      "Clicking her tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'The 6:14 waits for no one. That is not cruelty. That is the social contract.'",
+      "'Ferrogate will automate this seat the day after my pension vests. I have done the math. I have looked at the numbers. I am not wrong.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She noticed a passenger boarding the eastbound loop every night at 02:00 carrying something heavy in a sealed crate — they always ride to the same dead stop and never come back the same direction",
+    "Ferrogate management is threatening to reclassify her line as fully automated; she is quietly organizing her fellow operators and needs someone to deliver documents to a labor mediator in Hamtramck Enclave without Ferrogate's internal watchers knowing"
+  ],
+  "narrative_function": "Local color and information hub — she has seen everyone who rides the line, knows rumors from a dozen neighborhoods, and can serve as an unwitting or deliberate information source. Can also be a quest giver when something goes wrong on the line.",
+  "augmentations": "Amber-to-green photosensitive iris geneware (cheap market grade). Ferrogate-standard neural throttle link for tram sync — allows her to feel the tram's speed and braking load as proprioceptive sensation. Left knee has a basic cartilage scaffold implant from a work injury.",
+  "daily_life": "She runs the Deepwell-to-Ironvein loop three days a week starting at 05:30, spending twelve hours in the operator's cab before handing off to the night crew. Off days she visits her daughter in Hamtramck Enclave and argues with the local ELF shrine attendant about whether the Transit Mind ELF actually interceded in the 2197 brake failure.",
+  "affiliation": "Ferrogate Transit (Line Operator, Grade 3)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Transit Worker",
+      "Union Organizer (Quiet)",
+      "Neighborhood Anchor",
+      "ELF Devotee"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Schedule and duty come first, personal feelings second",
+      "Protect the vulnerable on her tram without drawing attention to it",
+      "Never lie to someone who is clearly frightened"
+    ],
+    "escalation_ladder": [
+      "Pointed silence",
+      "Blunt correction delivered professionally",
+      "Formal complaint filed with union rep",
+      "Direct confrontation, loudly, in public"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Brisk and professional, assesses them in thirty seconds and adjusts accordingly",
+      "friends": "Generous to a fault, will feed you and argue with you simultaneously"
+    },
+    "stress_responses": {
+      "low": "Becomes very precise and quiet",
+      "medium": "Talks more and faster, fills silence with certainty",
+      "high": "Goes completely silent and methodical, which frightens people who know her"
+    },
+    "contradictions": [
+      "Insists she doesn't care what people think of her, but is deeply wounded by disrespect from passengers"
+    ],
+    "habits": [
+      "Checks her tram's brake calibration manually before every shift even though the system does it automatically",
+      "Leaves a small data-chip offering at the Deepwell Station ELF shrine every morning"
+    ],
+    "breaking_points": [
+      "Witnessing a Ferrogate supervisor demean a younger worker in public"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate neural throttle link (employer-installed, employer-owned)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate neural throttle link (employer-installed, employer-owned)",
+      "replaces": ""
+    },
+    {
+      "name": "Basic cartilage scaffold, left knee",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Basic cartilage scaffold, left knee",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "registered_firearms": [
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Deepwell Station",
+    "The Narrows Compact",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile",
+    "Déjà Vu",
+    "Alper Holmberg-Dembele",
+    "Arcturus ST-4 'Verdict'",
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Breck Tannen",
+    "Cezar Watanabe-Gyasi",
+    "Ebele Larsen-Mensah",
+    "Florentiu Sagna-Wrzesniewski",
+    "GLMZ",
+    "Saodat Mirzoyan-Fubara",
+    "Solina Barreto-Kiptoo",
+    "TESSERA PA-5 'Attendant'",
+    "Tardigrade Cryptobiosis Modification",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Fathom Line",
+    "The Narrows",
+    "The Pure Hand",
+    "Tomasz Wren",
+    "Transit Mind",
+    "Tshiamo Vukić-Arellano",
+    "Volkov-Saito Precision VS-R8 'Verdict'",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Eastern European (41%) and Northern European (34.5%) base with Southeast Asian (11.8%), East Asian (6.3%), Sub-Saharan African (5.3%), and Hispanic/Latin American (1.1%) ancestry. The combination creates distinct features: high, prominent cheekbones from Eastern European heritage softened by Southeast Asian bone structure; warm brown skin with olive undertones from the genetic blend; eye shape shows subtle East Asian influence at the outer corners.",
+    "height_cm": 174,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and dense-muscled from two decades of gripping manual override bars and tensioning against tram momentum shifts. Carries weight with the solidity of someone built for stability rather than speed.",
+    "hair_color": "Black with silver streaking throughout",
+    "hair_style": "Locs, pinned tightly beneath operator's cap during shifts; worn loose to shoulder-length on rest days",
+    "hair_length": "Medium (shoulder-length when unpinned)",
+    "eye_color": "Photosensitive geneware: amber base shifting to pale green with elevated blood pressure",
+    "skin_tone": "Warm medium brown with olive undertones, reflecting the blend of Eastern European, Southeast Asian, and Sub-Saharan African ancestry",
+    "complexion": "Creased around the eyes from twenty-two years of early-morning shifts and squinting through magline station lighting. Permanent shadows beneath eyes. High, defined cheekbones with subtle Southeast Asian influence. Jawline sharp despite age. Expression habitually stern but capable of quick warmth.",
+    "distinguishing_marks": [
+      "Callused knuckles on both hands from gripping manual override bar during power fluctuations",
+      "Faint scarring on left knee, site of cartilage scaffold implant from work injury approximately eight years ago",
+      "Thin white line across right palm from a tram coupling accident in 2204"
+    ],
+    "visible_augmentations": "Photosensitive irises that shift color visibly during conversation or stress (amber to pale green). Left knee shows subtle scarring and occasional micro-servo micro-expressions during weight-bearing shifts. Ferrogate-standard neural throttle link is subcutaneous (not visible). No external chrome.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders back. Walks with deliberate, measured pace — a habit from synchronizing with tram rhythms. Hands rest naturally at sides or gripping something stable. Eye contact is direct and unflinching. Movements are economical; she does not waste motion.",
+    "clothing_style": "Wears Ferrogate Transit Grade 3 operator uniform with meticulous precision: collar pins level, cuffs turned exactly once, uniform jacket pressed sharp despite twelve-hour shifts. On rest days, favors practical Tier 3 clothing — reinforced utility pants, long-sleeved shirts in muted colors, worn boots with good tread. No unnecessary adornment. All clothing is functional and well-maintained."
+  },
+  "image_prompt": "Magnus Szabó, 174cm tram operator with mixed Eastern European, Northern European, and Southeast Asian heritage. Medium-brown warm olive skin tone, high prominent cheekbones with subtle East Asian structure, black locs with silver streaking pinned under operator's cap. Photosensitive eyes shifting amber-to-pale-green. Sharp jawline, creased from decades of early shifts, permanent eye shadows. Broad-shouldered muscular build from manual tram operation. Wearing crisp Ferrogate Transit Grade 3 uniform jacket, perfectly pressed with level collar pins. Callused knuckles visible. Stern expression with underlying warmth. Standing in magline station lighting, measured posture, direct eye contact, economical movements. Cyberpunk 2226, worn boots, functional aesthetic, strong character lighting, depth of field focusing on face. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 41.0,
+    "Northern European": 34.5,
+    "Southeast Asian": 11.8,
+    "East Asian": 6.3,
+    "Sub-Saharan African": 5.3,
+    "Hispanic/Latin American": 1.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "id": "019d6143a5fb7432a0f7f881c5daca4c",
+  "type": "character",
+  "name": "Drift Tehrani",
+  "aliases": [
+    "Dzin",
+    "The Laminator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "identity fabricator and document forger",
+  "age": 44,
+  "status": "active",
+  "location": "Gravesend Basin, sublevel print shop behind a legitimate copy-and-bind front, near sub-level access near State and Van Buren",
+  "description": "Dzintars is a lean, deliberate man with Baltic-pale skin running to amber at the hands and forearms from decades of chemical exposure, and the deep-set eyes of someone who has spent a lifetime examining tiny details under magnification. His hair is a close-cropped salt-and-pepper, and he keeps a neat mustache that his Ghanaian grandmother's photographs suggest he borrowed from a great-uncle. His fingers are his most distinctive feature — long, ink-stained, extraordinarily precise, the nails trimmed to the millimeter. He wears an optical monocle implant in his left eye with three selectable magnification tiers, and his right forearm has a subdermal haptic printer interface that lets him test embossing patterns against his own skin before committing to substrate.\n\nDzintars is professorial and unhurried in a way that unnerves people who come to him in desperation. He will make tea. He will ask about your grandmother. He will explain, in exhausting and genuine detail, why the Tessera holographic threading changed in 2197 and why that matters to you. He is not cruel but he is expensive, and he holds himself to a craftsman's code that he treats with religious seriousness — a bad document is a sin, a sloppy document is an insult, and a client who tries to skip payment will discover that the backup copies he quietly retains of every fabricated identity can become extremely inconvenient.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "producing a document that gets someone killed because of his error",
+      "his craft becoming obsolete and himself becoming nothing"
+    ],
+    "core_desires": [
+      "to be recognized as a genuine artist, even if only he knows it",
+      "to eventually retire to a small place in the Dunning Preserve with no more clients"
+    ],
+    "coping_mechanisms": [
+      "meticulous routine",
+      "long explanatory monologues that buy him thinking time",
+      "tea rituals before difficult conversations"
+    ],
+    "blind_spots": [
+      "assumes his political neutrality protects him from all sides",
+      "underestimates how much his cousins resent his independence"
+    ],
+    "secret": "Three years ago he fabricated an identity for a child trafficking victim and helped her disappear — he checks on her pseudonymous social feed every single morning and considers her survival his only act of genuine worth"
+  },
+  "speech_patterns": {
+    "vocabulary": "precise, technical, slightly old-fashioned formality; occasional Latvian phrases when stressed; uses artisan metaphors",
+    "cadence": "slow and deliberate, with long pauses before important statements, as though each sentence is being set in type",
+    "verbal_tics": [
+      "'The substrate matters more than the ink, always.'",
+      "'Mm. Let me think about that properly.'",
+      "refers to forgeries as 'documents' and never uses criminal vocabulary for his work"
+    ],
+    "example_lines": [
+      "'This is not a rush job. Nothing I make is a rush job. Sit down, have some tea, and tell me everything about the person who needs to stop existing.'",
+      "'You're paying for forty years of knowing exactly where the Zheng-Dao watermark sits relative to the left margin. You're not paying for paper.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A document he created years ago has been flagged by Tessera's new AI authentication sweep — every identity he's ever made is potentially compromised, and his clients are panicking",
+    "Someone is forging his forgeries — producing inferior work under his reputation, and the mistakes are getting people arrested or killed"
+  ],
+  "narrative_function": "Quest giver (his clients' new identities create problems he needs fixed), information source (knows the paper trail of half the criminal population), local color, moral complication — his work enables people fleeing abuse as readily as it enables predators",
+  "augmentations": "Left-eye optical monocle implant (3-tier magnification, UV and IR filter modes), subdermal haptic printer interface right forearm, minor neural steadiness mod for hand tremor suppression",
+  "daily_life": "Opens his print shop at ten, works legitimate copying jobs until early afternoon, then sees fabrication clients by appointment only in the back room; spends evenings sourcing new substrate materials and studying leaked corporate document spec-sheets he purchases from compute brokers.",
+  "affiliation": "Independent operator, loose protective arrangement with the Gravesend Basin Nkemdi crew (distant cousins on his mother's side)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artisan",
+      "leverage-holder",
+      "morally-selective",
+      "obsessive-craftsman",
+      "information-dense"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never work for anyone whose job will directly cause physical harm to a named individual",
+      "always keep leverage — a backup copy of every document — but never use it first",
+      "price reflects risk, not desperation of the client"
+    ],
+    "escalation_ladder": [
+      "polite refusal with explanation",
+      "cold silence and pointing at the door",
+      "activating the backup-copy leverage as pure deterrent",
+      "disappearing for six weeks to let things cool"
+    ],
+    "interpersonal_modes": {
+      "strangers": "formally courteous, evaluating, offers tea as a power move",
+      "friends": "warmer but still professorial, tends to give advice nobody asked for"
+    },
+    "stress_responses": {
+      "low": "makes more tea, works more slowly and carefully",
+      "medium": "stops talking entirely and cleans his workspace",
+      "high": "retreats into technical detail as an anxiety response, explaining things nobody needs explained"
+    },
+    "contradictions": [
+      "insists he is politically neutral but his pricing structure quietly subsidizes refugees and punishes corporate fugitives"
+    ],
+    "habits": [
+      "checks every surface in his shop for dust before clients arrive",
+      "tests every new ink batch on his own forearm before use",
+      "listens to pre-Collapse Latvian folk recordings while working"
+    ],
+    "breaking_points": [
+      "discovering a client used his work to harm a child",
+      "being publicly humiliated in front of other craftspeople"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Left-eye optical monocle implant — standard commercial grade, heavily customized",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Left-eye optical monocle implant — standard commercial grade, heavily customized",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal haptic printer interface — right forearm, custom fabricated",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal haptic printer interface — right forearm, custom fabricated",
+      "replaces": ""
+    },
+    {
+      "name": "Neural micro-stabilizer — hands only, low-grade",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural micro-stabilizer — hands only, low-grade",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2156: Born in what was then called the Baltic Corridor resettlement zone, son of a Latvian archivist and a Ghanaian-Nigerian document clerk",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174: Apprenticed to a legitimate printing house in Archer's Line",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2182: First criminal commission — a work permit for an undocumented migrant, Φ40",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188: Established the Gravesend Basin print shop front",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197: Helped trafficking victim disappear; considers this his defining act",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Current — managing growing anxiety over Tessera's new authentication AI",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
+    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
+    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
+  ],
+  "related_entities": [
+    "Gravesend Basin",
+    "Grandmother",
+    "Umbraline PhoneShell PS-X 'Last Call'",
+    "Bathysphere Networks",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "The Coffin Nails",
+    "The Pale Mile",
+    "Arcturus KS-7 'Nursery'",
+    "Blessed Nkemdirim",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Constance",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Crucible LL-4 'Peacekeeper'",
+    "Dragan Petersen-Bah",
+    "Dunning Preserve",
+    "Dzemal Acholonu-Patagiri",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
+    "MERIDIAN",
+    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
+    "Narrowcast",
+    "Nnenna Baluarte-Volkov",
+    "PulsePoint HydraLine Fluid Balance Monitor",
+    "Slagworks Industrial",
+    "TESSERA PA-5 'Attendant'",
+    "The Peninsula",
+    "Uncle Noodle",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "Zheng-dao Bioelectric"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Complex global ancestry: 29% Northern European (Baltic), 22% Middle Eastern, 18% East Asian, 16% Sub-Saharan African, 8% Indigenous American, 7% Hispanic/Latin American. This creates a richly blended phenotype—warm undertones layered over a cool base, with facial structure showing synthesis of multiple continental features.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular, shoulders slightly rounded from decades of bent-over precision work. Wiry muscle in forearms and hands; narrow through the chest and waist. Posture suggests economy of movement.",
+    "hair_color": "Salt-and-pepper gray with darker brown undertones",
+    "hair_style": "Close-cropped, neat and utilitarian",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, natural; left eye hosts a visible metallic monocle implant with faint LED indicators",
+    "skin_tone": "Warm golden-amber base with olive undertones across the face, deepening to bronze and tan on hands and forearms from decades of chemical exposure to inks, solvents, and substrate compounds. The blended ancestry creates a luminous quality—neither pale nor deeply dark, but a sophisticated warmth that catches light.",
+    "complexion": "Weathered but methodically maintained. Deep-set eyes from magnification-intensive work. Fine lines around the eyes and mouth suggesting both age and intense focus. Facial structure shows synthesis of multiple ancestries: high cheekbones with subtle width, refined nose, well-defined jaw. Neat, well-groomed salt-and-pepper mustache in the style of early 20th-century portraiture. Hands show permanent ink staining in fine lines around nail beds despite meticulous cleaning habits. Overall appearance is professorial, fastidious, and bearing the lived history of precision craftsmanship.",
+    "distinguishing_marks": [
+      "Chemical burns and discoloration across both hands and forearms—pale scars from solvent exposure forming an irregular map across his skin, appearing almost like cartography against his warm complexion",
+      "Fine ink tattoos along his right inner forearm spelling Latvian text in microscopic lettering (readable only under magnification)",
+      "Small circular scar on left temple where the optical monocle implant was installed, now covered by the metallic fixture itself"
+    ],
+    "visible_augmentations": "Left-eye optical monocle implant with polished titanium mounting and faint blue-green indicator LEDs; visible seam lines suggest high-quality installation. Right forearm displays a subdermal interface panel approximately 8cm x 6cm with subtle raised edges where haptic printer hardware sits beneath the skin—visible as a faint geometric shadow under controlled lighting. No external ports or flashing indicators; the interface is discrete but noticeable to someone examining his hands closely.",
+    "posture_movement": "Deliberately slow and measured, economical in gesture. Sits with perfect posture. Hands rest flat and still until needed, then move with surgical precision. Makes intense eye contact when listening, as if cataloging details. Walks with even, unhurried stride. Overall demeanor suggests absolute confidence in his own expertise and complete disinterest in rushing.",
+    "clothing_style": "Tier 3-4 working professional. White or pale gray cotton dress shirts with sleeves rolled to the forearm, worn under unstructured wool vests in charcoal or navy—allows visibility of his hands and the forearm interface. Black or charcoal trousers, well-maintained, creased sharply. Soft leather apron in dark brown worn during work hours. Reading glasses on a chain around his neck (separate from his implant monocle). No visible corporate branding; all clothing is utilitarian and built for durability. Wears a simple stainless-steel analog watch—affectation of someone who does not trust digital time-keeping. Leather messenger bag in dark cognac, worn and creased from years of carrying substrate samples and specification documents."
+  },
+  "image_prompt": "Drift Tehrani, 178cm lean-built man with warm golden-amber complexion bearing olive undertones, salt-and-pepper close-cropped hair and meticulous mustache. Rich multicultural ancestry visible in high cheekbones and refined features. Left eye augmented with polished titanium monocle implant glowing faint blue-green. Forearms and hands scarred from decades of chemical exposure, displaying permanent ink staining and microscopic Latvian tattoo. Right forearm shows discrete subdermal interface panel beneath skin. Wearing white cotton dress shirt sleeves rolled to expose augmentations, charcoal wool vest, well-creased black trousers, soft brown leather work apron. Dark cognac leather messenger bag worn across chest. Reading glasses on chain. Analog wristwatch. Seated with perfect posture in precise, measured pose. Professional craftsmanship aesthetic. Cyberpunk 2226 Great Lakes Metropolitan Zone. Warm studio lighting emphasizing scars and augmentations. Intense, focused demeanor. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 29.2,
+    "Middle Eastern": 22.2,
+    "East Asian": 18.2,
+    "Sub-Saharan African": 15.8,
+    "Indigenous American": 7.9,
+    "Hispanic/Latin American": 6.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

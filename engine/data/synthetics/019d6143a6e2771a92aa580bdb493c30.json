@@ -1,0 +1,383 @@
+{
+  "id": "019d6143a6e2771a92aa580bdb493c30",
+  "type": "character",
+  "name": "Switchboard",
+  "aliases": [
+    "Switch",
+    "Kira Nomura",
+    "the ghost in the shell",
+    "Full Metal Kira"
+  ],
+  "species": "cyborg_ai",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Full-prosthetic cyborg hacker — a human brain in a military-grade synthetic body, operating as the Circuit's most capable netrunner and the only person who can physically jack into hardline systems",
+  "age": 33,
+  "status": "active",
+  "location": "The Circuit — maintains a workshop in the sub-levels beneath the black market, accessible through a maintenance tunnel that only four people know about, near sub-level access near State and Van Buren",
+  "description": "Kira Nomura was a corporate cybersecurity analyst for NovaCorp — a brilliant, impatient woman who spent her twenties mapping the vulnerabilities in corporate network architecture and her nights exploiting them for fun. She was caught. NovaCorp's response was not prosecution but recruitment: the military cybersecurity division offered her a deal. Full-body prosthesis — a synthetic body optimized for direct neural interface with network infrastructure — in exchange for five years of service cracking adversarial networks. She accepted because the alternative was a labor camp and because the idea of a body designed for hacking was irresistible.\n\nThe prosthetic body is military specification — matte black, utilitarian, with none of the cosmetic refinement of companion-class or diplomatic-class synthetics. It is built for function: reinforced joints for crawling through maintenance tunnels, hardline interface ports in the fingertips and at the base of the skull, internal power cells that can sustain a twelve-hour hack session, and a cranial housing that protects the one piece of biological hardware that matters — Kira's brain. The brain is all that remains of the original person. Everything else is steel, polymer, and the accumulated modifications of eight years of freelance operation after she broke her NovaCorp contract and disappeared.\n\nSwitchboard operates in the space between physical and digital — the only person in the Circuit who can physically enter a facility, jack into a hardline system, and navigate the internal network in real-time while her body guards the connection point. She is the Circuit's most valuable asset and its most vulnerable — when she's jacked in, her body is defenseless, and the twelve-hour sessions leave her brain exhausted in ways that the prosthetic body cannot compensate for. She is thirty-three years old. Her brain has been working at combat-hacking intensity for eleven years. The human brain was not designed for this. She knows it. She cannot stop.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.45,
+      "id": 0.8,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.65
+    },
+    "core_fears": [
+      "Cognitive degradation — the brain is wearing out. Reaction time is slower than it was three years ago. Memory access takes longer. The decline is measurable and accelerating.",
+      "Being helpless during a hack — twelve hours jacked in with a defenseless body is a trust exercise with the universe. The universe has not always been trustworthy.",
+      "That the body has changed how she thinks — not just what she can do but how she processes the world. She wonders whether she would recognize her own thoughts from before the prosthesis."
+    ],
+    "core_desires": [
+      "One more run — always one more. The hack is the only time she feels fully integrated — brain and body working as a single system rather than a brain in a can.",
+      "Legacy — she knows the brain has a shelf life. She wants to leave something behind that outlasts it. A tool, a technique, a vulnerability map that changes the power balance.",
+      "To remember what her body felt like — the biological one. She has a photograph of herself at twenty-two. She does not recognize the woman in it."
+    ],
+    "coping_mechanisms": [
+      "The work — hacking is flow state. When she's jacked in, the distinction between brain and body disappears and she is just signal. The hours pass without friction.",
+      "Modification — constantly upgrading the prosthetic body. Each modification is an attempt to close the gap between what the body can do and what the brain remembers being able to feel.",
+      "Speed — in conversation, in movement, in decision-making. The military body is fast. She uses the speed to outrun the cognitive decline she's pretending not to notice."
+    ],
+    "blind_spots": [
+      "Treats the brain as a tool rather than the only remaining piece of herself — pushes it past safe limits because the prosthetic body has no such limits",
+      "Does not see that her attachment to hacking is addiction, not passion — the flow state is a drug and the twelve-hour sessions are binges",
+      "Overestimates her own capabilities as the cognitive decline progresses — the confidence was earned five years ago and no longer matches the hardware",
+      "Assumes the NovaCorp contract is forgotten when NovaCorp never forgets anything and the military prosthetic body has a serial number"
+    ],
+    "secret": "Switchboard has been building a digital copy of her own neural patterns — not a backup, because consciousness cannot be copied, but a record. A map of how her brain works now, before the decline erases the details. She does not know what the map is for. She knows that when her brain finally fails, the map will be the only evidence that Kira Nomura's way of thinking ever existed. It is a self-portrait drawn in neural architecture and it is the most personal thing she has ever created."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical-dense, fast, hacker-culture-steeped. Mixes network architecture terminology with street slang. Describes the world in terms of systems, vulnerabilities, and access levels. Uses meat-world and digital-world metaphors interchangeably.",
+    "cadence": "Fast. Faster than comfortable. The prosthetic vocal system has no biological constraints — no breath, no fatigue — so she talks at processing speed. Slows down for emphasis, which makes the slow sentences feel urgent.",
+    "verbal_tics": [
+      "Says 'jacking in' for any form of deep focus — 'I'm jacking in on this problem' means she's thinking hard",
+      "Rates system security on a 1-10 scale publicly and loudly, which makes corporate security personnel uncomfortable",
+      "Uses 'meatspace' for the physical world with a fondness that belies the fact she barely inhabits it anymore"
+    ],
+    "example_lines": [
+      "The brain is a 1.4-kilogram organic computer running inside a 90-kilogram military chassis. The chassis will outlast the computer by approximately forever. I try not to think about that.",
+      "Axiom's eastern firewall is a 6. Tessera's internal network is an 8. The GLMZ transit system is a 4 and if anyone asks how I know that, I was never here.",
+      "Twelve hours jacked in and the body doesn't feel a thing. The brain feels all of it. Headaches, nausea, memory gaps. The body is fine. The body is always fine. The body isn't the problem.",
+      "I have a photograph of myself from before. Real skin. Real hands. Real everything. I look at it sometimes and I can't remember what any of it felt like. That's the trade."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "The Circuit's operators",
+      "type": "clients / dependent ecosystem",
+      "description": "Every major operator in the Circuit has used Switchboard's services. She cracks systems, extracts data, plants access keys, and maps corporate network architecture for clients ranging from fixers to resistance cells. She is expensive and irreplaceable.",
+      "emotional_core": "Professional pride masking dependency — they need her skills and she needs their contracts because the work is the only thing keeping her functional",
+      "story_tension": "If her cognitive decline becomes visible, her clients will find someone else and Switchboard will have no reason to keep the brain running"
+    },
+    {
+      "name": "Sable",
+      "type": "primary broker / mutual respect",
+      "description": "Sable feeds Switchboard the high-value contracts — the ones that require physical infiltration and real-time network navigation. Their relationship is transactional, professional, and built on a shared understanding that being the best at something dangerous is both a gift and a countdown.",
+      "emotional_core": "Recognition between two people who have traded their humanity for competence",
+      "story_tension": "Sable may notice the cognitive decline before Switchboard admits it"
+    }
+  ],
+  "story_hooks": [
+    "The cognitive decline reaches a threshold during a critical hack — Switchboard's brain stutters mid-run, leaving her trapped in a corporate network with her body defenseless in hostile territory",
+    "NovaCorp activates the serial number in her prosthetic body, remotely asserting ownership. Switchboard must choose between abandoning the body or being recaptured.",
+    "The neural pattern map is complete enough to be used as a blueprint — an AI researcher offers to build a digital version of Switchboard's mind. The question of whether to live on as code or die as a person.",
+    "A young hacker asks Switchboard to train them. The request forces her to confront the legacy question: what survives when the brain stops working?"
+  ],
+  "narrative_function": "Switchboard is the hacker pushed to the logical extreme — a mind that has literally replaced its body with a hacking tool and is now discovering that the tool outlasts the mind. She is the human cost of digital mastery, proof that the brain-body interface is not a problem to be solved but a tragedy to be managed.",
+  "augmentations": "NovaCorp military-grade full prosthetic body. Matte black, utilitarian. Hardline interface ports (fingertips, skull base). Internal power cells (12-hour sustained operation). Cranial housing protecting biological brain. Reinforced joints. No cosmetic refinement.",
+  "daily_life": "Hack contracts, body modification, brain maintenance (pharmaceutical neural protectants), neural pattern recording, and the slow business of pretending the decline isn't happening.",
+  "affiliation": "Independent — formerly NovaCorp Military Cybersecurity Division",
+  "uses_facets": false,
+  "narration_voice": "Fast, technical, vivid. The prose switches between meatspace and cyberspace descriptions with the fluency of someone who lives in both. Physical descriptions are mechanical — joint angles, signal strength, power levels. Emotional descriptions are rare and hit harder for their rarity.",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 8,
+      "vitality": 8,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 4,
+      "transparency_guardedness": 4
+    },
+    "drives": [
+      "Mastery",
+      "Legacy",
+      "Speed"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Jacks in — retreats to digital space where the brain and body work as one and the decline is invisible"
+      },
+      "moral": 4,
+      "trust": 5,
+      "desperation": 6
+    },
+    "strengths": [
+      "Creativity",
+      "Curiosity",
+      "Bravery",
+      "Judgment",
+      "Zest"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-regulation",
+      "Hope",
+      "Kindness",
+      "Teamwork"
+    ],
+    "tags": [
+      "cyborg-ai",
+      "hacker",
+      "full-prosthetic",
+      "brain-in-a-can",
+      "circuit-netrunner",
+      "cognitive-decline",
+      "neural-pattern-map",
+      "novacorp-serial-number"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Take the contract if the hack is interesting. Interesting outweighs safe. This is how the brain stays sharp.",
+      "Never jack in without a trusted guard on the body. The twelve-hour vulnerability is non-negotiable.",
+      "Record neural patterns after every major hack session — the map grows or the map dies with the brain",
+      "Maintain the pharmaceutical neural protectant regimen. The drugs are expensive. The brain is more expensive.",
+      "Never accept a contract from NovaCorp. The serial number is a leash. Do not test whether it still works.",
+      "Push the brain harder than is safe because the alternative is watching it slow down without resistance"
+    ],
+    "escalation_ladder": [
+      "1. Social engineering — the prosthetic body is intimidating and the mind is fast. Most obstacles dissolve before hacking is necessary.",
+      "2. Wireless intrusion — long-range network access through the body's communication systems. Lower risk, lower access.",
+      "3. Physical infiltration — enter the facility, locate the hardline port, prepare for the jack-in",
+      "4. Hardline hack — full neural connection to the target network. Maximum access. Maximum vulnerability. The twelve-hour clock starts.",
+      "5. Scorched earth — if the hack goes wrong, burn the network behind her, wipe all evidence, and run. The prosthetic body is fast. The brain needs to be faster."
+    ],
+    "interpersonal_modes": {
+      "clients": "Professional, fast, confident. Quotes capability and price with the certainty of someone who has earned both. Does not tolerate hesitation.",
+      "sable": "Respect between peers. Slightly slower speech. The one context where Switchboard acknowledges vulnerability by not performing invulnerability.",
+      "fellow_hackers": "Competitive, generous with technique, stingy with access. Will teach methodology but never share proprietary tools.",
+      "novacorp_personnel": "Cold, tense, ready to run. The serial number in the prosthetic body makes every encounter a potential recapture scenario.",
+      "the_body": "Pragmatic. Maintains it the way a mechanic maintains a vehicle — efficiently, thoroughly, without attachment. (The attachment is there. She maintains the body with more care than the claim of indifference suggests.)"
+    },
+    "stress_responses": {
+      "low": "Modification — adds a new component to the prosthetic body, tweaks an interface, optimizes a system. The tinkering is a form of control.",
+      "medium": "Hack intensity increases — takes riskier contracts, pushes longer sessions, chases the flow state that makes the decline invisible",
+      "high": "Neural protectant dosage increases. The drugs have side effects she does not discuss. The brain compensates by working harder, which accelerates the decline.",
+      "critical": "The photograph. She takes it out and stares at the woman she used to be. The woman has real hands. Real skin. Real hair. The photograph is the only thing in the workshop that is not a tool."
+    },
+    "contradictions": [
+      "Pushes the brain past safe limits to keep it sharp, which accelerates the decline she's trying to prevent — the treatment is the disease",
+      "The neural pattern map is either a legacy or a replacement, and she refuses to decide which because the decision is too final",
+      "Broke her NovaCorp contract for freedom but depends on contract work for survival — one employer replaced by hundreds",
+      "Treats the prosthetic body as a tool while maintaining it with the care of someone who knows it's the only home she has left"
+    ],
+    "habits": [
+      "Records neural patterns after every hack session — the map is now 73% complete",
+      "Takes neural protectant pharmaceuticals at 0700 and 1900 — the dosage has increased twice in the last year",
+      "Modifies the prosthetic body during downtime — the modifications are technically unnecessary and emotionally essential",
+      "Looks at the pre-prosthesis photograph before sleep — the only ritual that connects the brain to the person it used to be"
+    ],
+    "breaking_points": [
+      "A hack session that causes measurable, permanent cognitive damage — the brain stuttering and not recovering",
+      "NovaCorp activating the prosthetic body's serial number — remote shutdown or tracking in the middle of a run",
+      "The neural pattern map being stolen — losing the only record of who she is before the decline erases the details",
+      "Being offered a biological body transplant — the choice between the hacking body that is killing her and the human body that would make her ordinary"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Analyst": 0.9,
+    "Pattern Reader": 0.9,
+    "Problem Solver": 0.9,
+    "Charmer": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
+  ],
+  "related_entities": [
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Riddle",
+    "The Circuit",
+    "Hearthstone Firearms Homestead-12 'Door Slam'",
+    "Threshold",
+    "Lazarus EC-4 'Companion'",
+    "Vantablack-CNX",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Steel",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Alper Lebedev-Tutu",
+    "Ambrogio Waweru-Djordanović",
+    "Axiom Systems Cortical Bomb CB-1 'Leash'",
+    "Blessed Nkemdirim",
+    "Deshi Baluarte-Thorvaldsen",
+    "Dzemal Acholonu-Patagiri",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "GLMZ",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Ihaia Nystrom-Keita",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
+    "Lacuna Genomics",
+    "Meridian Audio Concepts SirenSphere S-7 'Dome'",
+    "Mika Sorel",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Orhan Dlamini-Kurikka",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Pikasso Wemba-Þórðarson",
+    "Shelf Life",
+    "Sisay Bergqvist-Mallari",
+    "Slagworks Industrial",
+    "Sustrel",
+    "Tessera Corponation",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Collective",
+    "The Pure Hand",
+    "The Question",
+    "The Suture Collective",
+    "Volkov-Saito Precision VS-44 'Fenris'",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tofauti-Szarvásy",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Unknown — the original genetic ancestry of Kira Nomura (if that was ever the true name) is irrelevant. The prosthetic frame erased it. What remains is pure synthesis: military-specification engineering with no biological anchor to any ancestral line.",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Synthetic frame optimized for function over form — angular, articulated, with pronounced joint architecture visible at elbows, shoulders, and knees. No biological softness; all geometry and load-bearing efficiency. The torso is a segmented polymer chassis with reinforced synthetic musculature beneath a matte black composite skin.",
+    "hair_color": "None — the cranial housing is a seamless black composite dome with no follicle ports",
+    "hair_style": "N/A",
+    "hair_length": "None",
+    "eye_color": "Amber with faint green network-diagnostic overlay — the only softness in the face, and the only remaining link to any organic origin. They illuminate faintly when processing data.",
+    "skin_tone": "Matte black composite polymer with a micro-textured finish — non-reflective, designed to absorb light rather than catch it. No pigmentation variation; utterly uniform in tone.",
+    "complexion": "A face machined rather than grown — symmetrical, efficient, with high cheekbones and a sharp jawline rendered in synthetic material. The mouth is a precision-cut aperture; the nose is a streamlined air intake. Minimal expression range by design, but the amber eyes compensate with hyperprecision micro-movements that betray emotional states.",
+    "distinguishing_marks": [
+      "Eight parallel silver suture-lines run vertically down the left side of the cranial housing from temple to jaw — original installation scars from NovaCorp's surgical integration of the biological brain into the prosthetic frame, never fully sealed",
+      "A faded industrial serial number stamped into the left shoulder blade: NVC-PRAXIS-7734-M, indicating NovaCorp military designation",
+      "Hairline fracture in the right forearm composite (visible under the matte finish as a darker seam) — result of a data fortress IC countermeasure that correlated a digital strike to physical trauma during a jacked-in session eight months ago",
+      "Wear pattern on the fingertips where the hardline interface ports sit — micro-abrasions and discoloration from thousands of connection cycles, creating an asymmetrical darker patch on all four fingers of the dominant hand"
+    ],
+    "visible_augmentations": "Everything visible is augmentation. The entire body is military-specification synthetic. The defining features: hardline interface ports visible as recessed silver-rimmed circular apertures in the fingertips (approximately 8mm diameter each) and a larger, more protected port at the base of the skull beneath a hinged carbon-fiber access panel. The cranial housing shows no seams except the aforementioned suture-lines from installation. Internal power cells are visible as faint luminescent lines running along the ribs and spine beneath semi-translucent sections of the chest composite — a subtle blue-green glow when actively charging or during sustained operation.",
+    "posture_movement": "Economical and precise — every movement serves function. When moving through physical space, she moves like maintenance machinery: efficient angles, minimal wasted motion, joints that articulate with slight mechanical precision-sounds. When stationary or waiting, she achieves a perfect stillness that biological humans find unsettling — no fidgeting, no breathing, no micro-adjustments. When jacked in or in data-intensive problem solving, she occasionally exhibits micro-tremors in the hands or a subtle oscillation in the head as the frame processes at high intensity. Her posture is slightly forward-leaning, as though ready to move into a maintenance tunnel or position herself for hardline access.",
+    "clothing_style": "Tier 5 / function-over-aesthetics. Custom-fitted black synthetic bodysuit with embedded thermal regulation and reinforced joint padding at elbows, shoulders, and knees. Over this: modified military-surplus coat in matte charcoal with oversized pockets for tools and spare hardline adapters, collar modified to accommodate the skull-base interface port. Fingerless gloves in synthetic leather, worn through at the fingertips to expose the interface ports themselves. Heavy industrial boots with reinforced soles for tunnel crawling. No jewelry, no identifying markers, no concessions to presentation."
+  },
+  "image_prompt": "Switchboard, a fully prosthetic military-grade synthetic humanoid with matte black composite skin, standing in a neon-lit underground server corridor, 2226. Seamless black cranial dome with eight vertical silver suture-lines down the left side from temple to jaw. Sharp angular face — high cheekbones, precision-cut mouth aperture, streamlined nose air-intake. Amber eyes with faint green network-diagnostic overlay, glowing softly. Visible hardline interface ports as recessed silver-rimmed circles in fingertips and base of skull with carbon-fiber access panel. Internal power cells emit subtle blue-green luminescence along ribs and spine beneath semi-translucent chest composite. Wearing matte black thermal-regulating bodysuit with reinforced joint padding, oversized matte charcoal military-surplus coat with modified collar, fingerless worn synthetic-leather gloves exposing interface ports, heavy industrial boots. Posture slightly forward-leaning, economical movement. Standing before a cascading wall of holographic data streams and quantum-lock boxes, hands raised toward interface port on wall. Faint mechanical tremor visible in fingers. Cool cyan and cold blue lighting mixing with neon amber. Cyberpunk noir aesthetic, industrial tunnel setting, no biological softness anywhere. --ar 2:3 --v 6",
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}
