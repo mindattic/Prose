@@ -19,7 +19,7 @@ public class TextAnalysisService
     {
         var canonContext = BuildCanonContext(selectedText);
         var system = $"""
-            You are a lore consistency checker for a cyberpunk world called Meridian City.
+            You are a lore consistency checker for a near-future world called Meridian City.
             You have access to the following canon information:
 
             {canonContext}
@@ -36,7 +36,7 @@ public class TextAnalysisService
     public async Task<string> ClicheCheckAsync(string selectedText, CancellationToken ct = default)
     {
         var system = """
-            You are a literary quality checker for a cyberpunk novel. The story has strict prohibitions:
+            You are a literary quality checker for a neo-noir novel. The story has strict prohibitions:
             - No generic noir narration
             - No trailer lines or slogans
             - No katana as power fantasy (always a moral problem)
@@ -58,7 +58,7 @@ public class TextAnalysisService
     {
         var canonContext = BuildCanonContext(selectedText);
         var system = $"""
-            You are continuing a cyberpunk novel set in Meridian City. Maintain the exact same voice,
+            You are continuing a neo-noir novel set in Meridian City. Maintain the exact same voice,
             tone, and style. Follow these rules strictly:
             - Sentences max 25 words
             - Every paragraph: action, sensory detail, or a lie

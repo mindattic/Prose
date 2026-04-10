@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e877dea90c0006c75c973d",
   "type": "character",
-  "name": "Thora Mbekele",
+  "name": "Thandiwe Magnúsdóttir",
   "aliases": [
     "Taf",
     "Skinny"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Shallowgrave — sleeps in a shared squat off Burnside Pocket, runs routes through the market corridors, near Ashland and Division",
-  "description": "Tafadzwa is all limbs and nervous energy — tall for his age, still growing into his frame, with deep umber skin, a patchy attempt at a beard, and hair grown out in an uneven natural that he picks at when anxious. He has bioluminescent freckles across his cheekbones and nose, a common cosmetic mod he had done at sixteen that glows faint gold when his blood pressure rises, which means they're almost always lit up. His clothes are layered function-over-form: compression underlayer, two hooded shells, pockets everywhere. He moves fast and low and always knows where the exits are.\n\nTaf is fundamentally a kid who fell into the wrong orbit and hasn't yet figured out it's a closed loop. He's quick, funny in a self-deprecating way, and genuinely well-liked by the market vendors whose routes he runs — he remembers names, brings small gifts, actually listens when old women complain about their knees. The violence of his work sits uneasily on him. He's good at the intimidation part only because he's terrified of what happens if he isn't. He's saving money for something he won't name out loud.",
+  "description": "Thandiwe Magnúsdóttir is all limbs and nervous energy — tall for his age, still growing into his frame, with deep umber skin, a patchy attempt at a beard, and hair grown out in an uneven natural that he picks at when anxious. He has bioluminescent freckles across his cheekbones and nose, a common cosmetic mod he had done at sixteen that glows faint gold when his blood pressure rises, which means they're almost always lit up. His clothes are layered function-over-form: compression underlayer, two hooded shells, pockets everywhere. He moves fast and low and always knows where the exits are.\n\nTaf is fundamentally a kid who fell into the wrong orbit and hasn't yet figured out it's a closed loop. He's quick, funny in a self-deprecating way, and genuinely well-liked by the market vendors whose routes he runs — he remembers names, brings small gifts, actually listens when old women complain about their knees. The violence of his work sits uneasily on him. He's good at the intimidation part only because he's terrified of what happens if he isn't. He's saving money for something he won't name out loud.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -163,7 +163,7 @@
     "People Pleaser": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,41 +183,27 @@
     "Burnside Pocket",
     "Shallowgrave",
     "The Underlayer Collective",
+    "The Marrow Market",
+    "Pressure Drop",
     "Stratum",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Arcturus CK-5 'Bloodhound'",
     "Gold",
-    "Déjà Vu",
-    "Ambassador Silk",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Ferrogate Enforcer Cruiser",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Renzo Tuiaga-Łukasiewicz",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TK-4 'Hellhound'",
-    "The Bazaar",
-    "The Undertow",
-    "The Unfinished Theorem",
-    "Vantablack PD-8 'Whistle'"
+    "Déjà Vu"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed Sub-Saharan African (36.6%), Northern European (27.0%), Eastern European (20.1%), and North African (16.3%) — genetic ancestry reflects the Ubiquitous Diaspora. Features a complex blend: deep warm-toned skin with subtle golden undertones from North African heritage mixing with Sub-Saharan ancestry, high cheekbones with gentle width reflecting Eastern European genetics, and a nose structure showing Sub-Saharan prominence softened by Northern European influence.",
+    "heritage": "Mixed Southeast Asian (53.9%), Sub-Saharan African (30.3%), and Hispanic/Latin American (15.8%) ancestry creates a striking phenotype. Dominant Southeast Asian genetics shape his facial structure — prominent cheekbones, refined nose bridge, characteristic eye shape — while Sub-Saharan African heritage contributes depth to his skin tone and facial geometry. Hispanic/Latin American ancestry adds warmth and subtle fullness to his lips and facial contours. The genetic blend creates a luminous, rich complexion that reads as distinctly pan-diaspora.",
     "height_cm": 188,
     "weight_kg": 71,
     "build": "Lean and angular — all long limbs and knobby joints, still visibly growing into his frame. Chest narrow, shoulders beginning to broaden. Wiry rather than muscular, with the unfinished look of a teenager stretched tall too fast.",
+    "skin_tone": "Warm deep brown with golden and olive undertones — the result of Southeast Asian, Sub-Saharan African, and Hispanic/Latin American genetic blending. Rich and luminous across his frame, with subtle iridescence from the bioluminescent implants beneath.",
+    "eye_color": "Deep brown",
+    "complexion": "Clean-shaven except for a patchy, sparse attempt at a beard along his jawline — more cosmetic statement than grooming success. His face is angular and defined with high, prominent cheekbones reflecting Southeast Asian ancestry softened by Sub-Saharan fullness, a structured nose with refined bridge and subtle width from African heritage, full lips with natural definition, and facial geometry that blends all three ancestry groups. Skin is clear and unblemished except for the bioluminescent freckles.",
     "hair_color": "Dark brown, natural",
     "hair_style": "Uneven natural — grown out in loose coils, shoulder-length, picked at frequently when anxious. Left side occasionally tucked behind his ear; right side falls loose.",
     "hair_length": "Long",
-    "eye_color": "Deep brown",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of Sub-Saharan, North African, and Northern European genetic blending. Rich and even across his frame, with subtle luminescence from the bioluminescent implants beneath.",
-    "complexion": "Clean-shaven except for a patchy, sparse attempt at a beard along his jawline — more cosmetic statement than grooming success. His face is still softly rounded at the cheeks with an angular structure underneath, featuring a prominent nose with broad bridge, full lips, and high cheekbones showing the mixed ancestry heritage. Skin is clear and unblemished except for the bioluminescent freckles.",
     "distinguishing_marks": [
       "Bioluminescent freckles scattered across both cheekbones and the bridge of his nose, gold-spectrum, installed at age sixteen — glow brighter when his blood pressure rises (which is nearly constant, meaning they are almost always visibly lit).",
       "Fine white scar along his right jawline, approximately 3cm, from an adolescent street accident — barely noticeable but catches light when his augmentation lights activate."
@@ -226,15 +212,39 @@
     "posture_movement": "Moves fast and low — economy of motion learned young. Always aware of exits and sightlines; tends to position himself at angles to walls. Stands with weight forward on the balls of his feet. When anxious (frequent), his fingers fidget — picking at his hair, checking pocket seams, tapping rhythm patterns on his thighs. When nervous, he laughs too quickly and deflects with self-deprecation. Despite the outward confidence of gang affiliation, his body language reads as coiled tension rather than relaxation.",
     "clothing_style": "Layered function-over-form, Tier 4 (working-class, utilitarian). Base layer is a fitted compression underlayer (usually dark gray or black, visible at wrists and collar). Two hooded shells in muted colors — charcoal, slate, worn navy — worn open and loose for quick shedding. Cargo pants or reinforced denim with excessive pockets, many bearing the wear marks of constant use (folded Φ notes, burner comlinks, counting chips). Boots are scuffed and practical, broken in but not expensive. A thick canvas jacket with faded gang markings on the interior lining. Everything smells faintly of market grime and industrial coolant. No jewelry except a thin brass ring on his left index finger (his grandmother's, a secret talisman he never mentions)."
   },
-  "image_prompt": "Thora Mbekele, 188cm lean androgynous teenager with warm golden-brown skin and mixed Sub-Saharan, North African, and Northern European heritage. Long shoulder-length dark brown coiled hair, deep brown eyes, prominent nose, high cheekbones, soft rounded face. Glowing golden bioluminescent freckles across cheekbones and nose bridge, brighter with stress. Fine white scar on right jawline. Wearing layered utilitarian cyberpunk gear: dark compression underlayer visible at wrists, loose charcoal and navy hooded shells, worn cargo pants with many pockets, scuffed practical boots, thick canvas jacket with faded interior gang markings. Thin brass ring on left index finger. Posture coiled and tense, standing forward on balls of feet, aware of sightlines. Fidgeting fingers. Cyberpunk 2226 Great Lakes Metropolitan Zone, gritty urban setting, industrial coolant scent, market district lighting, neon accent glow from bioluminescent implants, low-angle composition emphasizing tension and readiness. --ar 2:3 --v 6",
+  "image_prompt": "Thandiwe Magnúsdóttir, 188cm tall lean neo-noir teenager with Southeast Asian-dominant mixed heritage (Sub-Saharan African and Hispanic/Latin American blend), warm deep brown skin with golden undertones, high angular cheekbones, refined nose bridge, full lips, deep brown eyes with characteristic Southeast Asian shape. Shoulder-length dark brown coiled hair, half tucked, half loose. Sparse patchy beard on jawline. Glowing golden bioluminescent freckles across cheekbones and nose bridge (augmented implants, brighter when stressed), white scar on right jawline catching light. Coiled, tense posture positioned at angle. Wearing layered utilitarian streetwear: dark compression base layer visible at collar, worn charcoal and slate hooded shells open and loose, cargo pants with bulging pockets, scuffed practical boots, faded canvas jacket with gang markings. Fidgeting fingers, anxious energy, low-economy movement. GLMZ Great Lakes Metropolitan Zone setting, neon-soaked industrial corner, cool cyan and warm amber mixed lighting emphasizing bioluminescent freckles, gritty market atmosphere with industrial coolant haze. Mood: coiled tension, constantly alert, wary. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.6,
-    "Northern European": 27.0,
-    "Eastern European": 20.1,
-    "North African": 16.3
+    "Southeast Asian": 53.9,
+    "Sub-Saharan African": 30.3,
+    "Hispanic/Latin American": 15.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 23.3
+      },
+      "Thai": {
+        "Thai": 22.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 7.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 14.2,
+        "South African": 16.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 11.3,
+        "Peruvian": 4.5
+      }
+    }
+  }
 }

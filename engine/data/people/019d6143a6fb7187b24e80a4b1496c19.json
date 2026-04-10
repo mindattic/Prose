@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fb7187b24e80a4b1496c19",
   "type": "character",
-  "name": "Sekou Ghorbani-Okonkwo",
+  "name": "Odalys Montalvo-Thorvaldsdóttir",
   "aliases": [
     "Graphite",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Tiare Nishi-Anim are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 27, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a counterintelligence specialist out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented counterintelligence specialist in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
+  "description": "Odalys Montalvo-Thorvaldsdóttir are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 27, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a counterintelligence specialist out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented counterintelligence specialist in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.53,
@@ -260,7 +260,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,31 +273,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Nearfield",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Brewer's Spine",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Middle Eastern / Sub-Saharan African / Pacific Islander blend with Southeast Asian and Hispanic undertones — a cosmopolitan genetic mosaic reflecting the Ubiquitous Diaspora. Strong angular features from Middle Eastern ancestry (35.9%) combined with Sub-Saharan African structure (22.6%), softened by Pacific Islander warmth (18.1%), with subtle Southeast Asian and Hispanic character lines.",
+    "heritage": "Northern European / Hispanic-Latin American / South Asian / Sub-Saharan African blend with East Asian undertones — a true cosmopolitan genetic mosaic reflecting the Ubiquitous Diaspora. Nordic structure (36.2%) provides angular bone architecture, tempered by Latin warmth (23.5%), enriched by South Asian (18.3%) and Sub-Saharan African (16.5%) depth, with subtle East Asian character lines (5.5%). Features suggest a Scandinavian-Iberian-Subcontinental-African synthesis.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Rawboned and efficient — long-limbed with minimal subcutaneous fat, musculature defined by function rather than aesthetics. The frame of someone who treats their body as equipment.",
@@ -305,8 +289,8 @@
     "hair_style": "Pulled back in a tight, utilitarian braid that runs down the spine, secured with a minimalist titanium clasp",
     "hair_length": "Medium (shoulder-length when unbound)",
     "eye_color": "Left eye: warm brown, natural; Right eye: sclera-black with amber iris-ring, cybernetic replacement with visible micro-lens array",
-    "skin_tone": "Warm deep brown with olive undertones — a rich blend reflecting Middle Eastern, Sub-Saharan African, and Pacific Islander ancestry, with subtle Southeast Asian warmth",
-    "complexion": "Sharp cheekbones with broad structure, angular jawline, high forehead. Strong nose with slightly flared bridge. Skin taut and maintenance-focused — minimal cosmetic scarring but bearing the careful grooming of someone who understands that appearance is data. Expression neutral at rest, eyes always tracking.",
+    "skin_tone": "Deep warm brown with golden undertones — a rich synthesis reflecting Northern European fairness darkened by South Asian, Sub-Saharan African, and Hispanic ancestry, creating luminous depth with olive-amber warmth",
+    "complexion": "Sharp cheekbones with Nordic height and breadth, angular jawline characteristic of Scandinavian structure, high forehead. Nose bridge refined with subtle flare reflecting South Asian and African heritage. Skin taut and maintenance-focused — minimal cosmetic scarring but bearing the careful grooming of someone who understands that appearance is data. Expression neutral at rest, eyes always tracking.",
     "distinguishing_marks": [
       "Surgical scarring along the right temple and behind the right ear where the cybernetic eye was installed — clean, healed white lines forming a subtle arc",
       "Move-by-wire interface points visible at the base of the skull, along the spine, and at major joints (shoulders, elbows, wrists, hips, knees, ankles) — small circular chrome ports under translucent skin, faintly luminescent",
@@ -316,17 +300,65 @@
     "posture_movement": "Posture rigid and economical — shoulders squared, spine straight, minimal wasted motion. Movement is precise and predatory, each gesture calculated. Gait is smooth but mechanical, betraying the move-by-wire's influence. Eyes scan rooms habitually, fixing on exit points, security feeds, and human behavior patterns. Resting expression is blank; smiles are rare and deliberate.",
     "clothing_style": "Tier 2-3 professional-tactical hybrid: fitted matte-black bodysuit with modular pockets and cable routing (likely a custom combat-grade model), reinforced with impact-absorbing weave. Over this, a charcoal-grey longline coat with articulated shoulder panels, suggesting range-of-motion optimization. Boots are heavy-duty tactical, soles designed for grip on urban surfaces. Minimal jewelry except for a subdued Φ-denominated credit band on left wrist. Everything is functional, nothing decorative. Clothing shows signs of regular maintenance but not newness — worn by someone who replaces gear when it fails, not when it's outdated."
   },
-  "image_prompt": "Sekou Ghorbani-Okonkwo, 188cm tall augmented operative in cyberpunk 2226, warm deep brown skin with olive undertones blending Middle Eastern and Sub-Saharan African heritage, sharp angular features with high cheekbones and broad structure. Natural warm brown left eye, right eye cybernetic with sclera-black and amber iris-ring with visible micro-lens array. Black hair with silver chrome threading, pulled back in tight braid with titanium clasp. Surgical scars along right temple and ear, chrome interface nodes glowing faintly at skull base and spine visible through translucent skin. Full move-by-wire augmentation with chrome ports at joints. Wearing fitted matte-black combat bodysuit with modular pockets, charcoal-grey articulated longline coat, heavy-duty tactical boots. Rigid economical posture, predatory precise movement, blank expression. Professional Φ-credit band on left wrist. Urban Great Lakes Metropolitan Zone environment, neon-dark lighting, geometric architectural brutalism in background, scanning the room with calculated awareness --ar 2:3 --v 6",
+  "image_prompt": "Odalys Montalvo-Thorvaldsdóttir, 188cm tall, rawboned efficient frame, neo-noir operative in 2226 Great Lakes Metropolitan Zone. Deep warm brown skin with golden undertones blending Nordic, Latin, South Asian, and Sub-Saharan African heritage. Sharp Nordic cheekbones and jawline, high forehead, refined nose with subtle African flare. Black hair with silver chrome threading pulled into tight braid secured with titanium clasp. Left eye warm brown natural, right eye cybernetic black sclera with amber iris-ring and visible micro-lens array. Visible chrome interface ports at skull base, spine, and joints, glowing faintly luminescent. Clean surgical scars along right temple from cybernetic installation. Pale burn scar along left collarbone. Rigid posture, squared shoulders, precise economical movement, predatory and mechanical. Wearing matte-black fitted combat bodysuit with modular pockets, charcoal-grey longline coat with articulated shoulders, heavy-duty tactical boots. Composite keratin-chrome fingernails. Neutral resting expression, scanning gaze fixed on security feeds and exit points. Professional-tactical aesthetic, worn functional gear showing maintenance history. Neo-noir atmosphere, cool blue and amber lighting, urban industrial setting, data streams and chrome glinting off skin. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 35.9,
-    "Sub-Saharan African": 22.6,
-    "Pacific Islander": 18.1,
-    "Hispanic/Latin American": 9.7,
-    "Southeast Asian": 8.3,
-    "Eastern European": 5.4
+    "Northern European": 36.2,
+    "Hispanic/Latin American": 23.5,
+    "South Asian": 18.3,
+    "Sub-Saharan African": 16.5,
+    "East Asian": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 13.5,
+        "German": 4.3
+      },
+      "Scandinavian": {
+        "Norwegian": 10.3,
+        "Icelandic": 8.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 15.3
+      },
+      "Mexican": {
+        "Mexican": 8.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 4.6,
+        "Tamil Sri Lankan": 1.8
+      },
+      "Nepali": {
+        "Nepali": 11.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 4.7,
+        "Rwandan": 2.1
+      },
+      "Southern African": {
+        "South African": 9.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.7
+      },
+      "Chinese": {
+        "Shanghainese": 0.4
+      },
+      "Korean": {
+        "Korean": 1.4
+      }
+    }
+  }
 }

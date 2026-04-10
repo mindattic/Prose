@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "The Canopy — operates from a rented booth in the Grainfort night market, near Lincoln and Addison",
-  "description": "Miroslav is the kind of person who makes you feel like you've met before, though you haven't — something in the quality of their attention, the way they lean slightly forward and hold whatever you're saying like it matters. They are medium height with the compact build of someone who sleeps irregularly and makes up for it in nervous energy. Their skin is a warm light brown and their eyes have patterned irises — concentric rings of amber and green, a mod they saved up for two years to afford — which they use shamelessly, letting people get lost in them while they listen. Their hair changes color with their moods via a geneware follicular mod: deep blue when calm, red-orange when excited, grey-green when they are hiding something.\n\nMiro came to dream interpretation sideways — they started as a chrome prayer workshop facilitator for a community center, teaching people to sync their implants to collective meditative states, and discovered they had an unsettling gift for identifying the symbolic architecture of other people's dreams. Their practice is syncretic: equal parts Jungian analysis, chrome prayer resonance mapping, and E.L.F. consultation. They charge Φ15 per session on a sliding scale and are perpetually behind on booth rent. Their notebook is the size of a brick and contains four years of other people's dreams, annotated in four different colored inks.",
+  "description": "Briar Kristjánsson is the kind of person who makes you feel like you've met before, though you haven't — something in the quality of their attention, the way they lean slightly forward and hold whatever you're saying like it matters. They are medium height with the compact build of someone who sleeps irregularly and makes up for it in nervous energy. Their skin is a warm light brown and their eyes have patterned irises — concentric rings of amber and green, a mod they saved up for two years to afford — which they use shamelessly, letting people get lost in them while they listen. Their hair changes color with their moods via a geneware follicular mod: deep blue when calm, red-orange when excited, grey-green when they are hiding something.\n\nMiro came to dream interpretation sideways — they started as a chrome prayer workshop facilitator for a community center, teaching people to sync their implants to collective meditative states, and discovered they had an unsettling gift for identifying the symbolic architecture of other people's dreams. Their practice is syncretic: equal parts Jungian analysis, chrome prayer resonance mapping, and E.L.F. consultation. They charge Φ15 per session on a sliding scale and are perpetually behind on booth rent. Their notebook is the size of a brick and contains four years of other people's dreams, annotated in four different colored inks.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -157,7 +157,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,6 +171,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
+    "Night Market Noodles",
     "The Meridian Compact for Economic Justice",
     "Canopy Station Nine",
     "The Resonance Communion",
@@ -178,31 +179,11 @@
     "Grainfort",
     "The Gradient Compact",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Adaeze Volkov-Tuilagi",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Miroljub Essilfie-Tuivaiti",
-    "Narrowcast",
-    "Night Market Noodles",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Praevex",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Roshan Kettlewell-Amadou",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
-    "TESSERA TN-1 'Cradle'",
-    "The Bazaar",
-    "The Canopy",
-    "The Compact",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Canopy"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Southeast Asian-dominant with significant East Asian and South Asian admixture, complemented by Northern European ancestry; the genetic combination produces striking angular features with warm, golden-brown undertones",
+    "heritage": "Southeast Asian-dominant ancestry (69.6%) forms the primary genetic foundation, blended with substantial Sub-Saharan African heritage (17.0%) that deepens skin tone and defines facial structure, complemented by Indigenous American (7.2%), Northern European (5.1%), and minor East Asian (1.1%) admixture; creates striking angular features with warm deep golden-brown skin enriched by reddish undertones, high cheekbone prominence characteristic of Southeast Asian genetics, and luminous depth from the complex melanin expression across these heritage groups",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Compact and wiry with the restless energy of chronic sleep debt; narrow shoulders, slight frame, no excess weight — the build of someone sustained by coffee and neural stimulants rather than meals",
@@ -210,8 +191,8 @@
     "hair_style": "Shoulder-length, often half-pinned or wrapped in a loose braid; slightly unkempt, suggesting 3 AM grooming habits",
     "hair_length": "Medium",
     "eye_color": "Augmented irises with concentric rings of amber and green; hypnotic patterning that draws sustained attention",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, reflecting the blended melanin expression of Southeast and South Asian ancestry with cool Northern European undertones creating luminous depth",
-    "complexion": "Sharp, angular facial features with high prominence across cheekbones reflecting Southeast Asian genetic expression; perpetually tired eyes with faint dark circles; smooth skin with no visible blemishes; defined jawline with subtle width at the angle; expression carries a quality of intense, almost unsettling attentiveness",
+    "skin_tone": "Deep warm golden-brown with reddish undertones, reflecting the dominant Southeast Asian heritage blended with the deeper melanin richness of Sub-Saharan African ancestry, subtly warmed by Indigenous American heritage and luminous depth from Northern European traces",
+    "complexion": "Sharp, angular facial features with pronounced high cheekbones reflecting Southeast Asian genetic expression; strong jawline with subtle structural width enhanced by Sub-Saharan African heritage; perpetually tired eyes with faint dark circles; smooth deep-toned skin with no visible blemishes; expression carries a quality of intense, almost unsettling attentiveness",
     "distinguishing_marks": [
       "Neural-haptic sync implant port visible at the base of the skull, subtle raised scar tissue in a small circular pattern behind the left ear",
       "Faint follicular scars along the scalp where geneware was installed, only visible when hair is wet or pulled back"
@@ -220,15 +201,67 @@
     "posture_movement": "Leans forward slightly when listening, as if physically drawing in what someone is saying; hands are expressive, moving constantly when speaking; restless fidgeting with notebook corners or pen when silent; moves with fluid efficiency despite sleep deprivation, no wasted motion; tends to maintain uncomfortable levels of direct eye contact",
     "clothing_style": "Tier 3-4 working class with bohemian undertones; worn vintage band t-shirts or modified surplus clothing; black cargo pants or faded jeans with multiple pockets for notes and pens; layered overshirts in muted earth tones; always carries the brick-sized dream notebook in a fabric messenger bag covered in worn patches and pins; wears minimal jewelry except for a silver-toned ring on left middle finger (possibly meaningful, possibly just habit); no corporate branding visible; overall aesthetic is 'perpetually between sleep and vision'"
   },
-  "image_prompt": "Briar Kristjánsson, 168cm wiry frame, golden-brown skin with olive undertones reflecting Southeast Asian-dominant heritage with East and South Asian admixture, sharp angular cheekbones, tired luminous dark eyes, augmented concentric amber-green iris implants with hypnotic patterning, shoulder-length mood-chromatic hair currently deep blue shifting slightly, neural-haptic port scar visible at base of skull, faint scalp follicular scars from geneware installation, intense direct gaze, leaning forward with restless energy, hands gesturing expressively, wearing worn vintage band tee layered under muted earth-tone overshirt, black cargo pants with multiple pockets, fabric messenger bag covered in patches and pins, silver ring on left middle finger, dark circles under eyes suggesting chronic sleep deprivation, smooth complexion, sharp attentive expression, cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-tinged lighting with cool blues and amber accents reflecting off implant technology, dreamlike atmosphere mixing sleep-deprived visionary with neural-augmented intensity, cinematic depth, --ar 2:3 --v 6",
+  "image_prompt": "Briar Kristjánsson, Southeast Asian-dominant neo-noir character with deep golden-brown skin enriched by Sub-Saharan African heritage, striking angular high cheekbones, perpetually tired intense gaze with augmented concentric amber-green irises, shoulder-length mood-chromatic blue hair currently in loose half-braid, faint dark circles under eyes, sharp jawline; wearing worn vintage band t-shirt layered under muted earth-tone overshirt, black cargo pants, fabric messenger bag covered in patches; silver ring on left middle finger; visible neural-haptic port scar at base of skull; leaning forward with restless, attentive posture; 3 AM energy, dream-state intensity; GLMZ Great Lakes Metropolitan Zone, neon glow reflecting off skin, moody atmospheric lighting, hyper-focused expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 41.7,
-    "East Asian": 29.0,
-    "South Asian": 15.4,
-    "Northern European": 13.9
+    "Southeast Asian": 69.6,
+    "Sub-Saharan African": 17,
+    "Indigenous American": 7.2,
+    "Northern European": 5.1,
+    "East Asian": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 24.5
+      },
+      "Indonesian": {
+        "Sumatran": 45.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 5.3,
+        "Zimbabwean": 5.9
+      },
+      "West African": {
+        "Malian": 3
+      },
+      "Central African": {
+        "Cameroonian": 2.8
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 3.1,
+        "Maya": 2.6
+      },
+      "Plains Nations": {
+        "Lakota": 0.9
+      },
+      "Great Lakes Nations": {
+        "Ho-Chunk": 0.6
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 1.9
+      },
+      "Germanic": {
+        "German": 1.3,
+        "Dutch": 0.6
+      },
+      "British Isles": {
+        "English": 1.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.1
+      }
+    }
+  }
 }

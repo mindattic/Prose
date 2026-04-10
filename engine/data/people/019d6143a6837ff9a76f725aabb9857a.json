@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6837ff9a76f725aabb9857a",
   "type": "character",
-  "name": "Arden Zaragoza",
+  "name": "Arden Mansour",
   "aliases": [
     "Tosi",
     "the Kid"
@@ -13,7 +13,7 @@
   "age": 14,
   "status": "active",
   "location": "Escanaba Gateway, subsection 4 informal settlement (tarp city under the freight elevation ramps), near Lake Shore and Wacker",
-  "description": "Tosi is small for fourteen, with the compact, quick-twitch build of someone who has spent years fitting into spaces adults cannot. His skin is deep brown with warm undertones, his hair a tight, untended cloud that he cuts himself with a found blade when it starts snagging on things. His eyes are dark and startlingly alert — the kind of eyes that have learned to read a room before the body commits to entering it. He has a small bioluminescent patch on his left collarbone, pale blue-green, that glows faintly when he's cold or frightened; he did not choose it, it came with a back-alley geneware injection someone gave him when he was nine 'for protection,' though he's never understood what it protects.\n\nTosi exists in no database. He was born to Q-zero parents and carries no digital identity — no UBC stipend, no medical record, no school enrollment, nothing. He is legally a ghost. He runs messages and small packages between the informal camps at Escanaba Gateway and the Waukegan Industrial Shelf for anyone who pays in food or warmth, and he has developed an almost supernatural talent for slipping past checkpoint scanners that would flag his absence of identity. He is funny, restless, and desperately trying to appear older and less scared than he is.",
+  "description": "Arden Mansour is small for fourteen, with the compact, quick-twitch build of someone who has spent years fitting into spaces adults cannot. His skin is deep brown with warm undertones, his hair a tight, untended cloud that he cuts himself with a found blade when it starts snagging on things. His eyes are dark and startlingly alert — the kind of eyes that have learned to read a room before the body commits to entering it. He has a small bioluminescent patch on his left collarbone, pale blue-green, that glows faintly when he's cold or frightened; he did not choose it, it came with a back-alley geneware injection someone gave him when he was nine 'for protection,' though he's never understood what it protects.\n\nArden Mansour exists in no database. He was born to Q-zero parents and carries no digital identity — no UBC stipend, no medical record, no school enrollment, nothing. He is legally a ghost. He runs messages and small packages between the informal camps at Escanaba Gateway and the Waukegan Industrial Shelf for anyone who pays in food or warmth, and he has developed an almost supernatural talent for slipping past checkpoint scanners that would flag his absence of identity. He is funny, restless, and desperately trying to appear older and less scared than he is.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -171,7 +171,7 @@
     "Ghost": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Escanaba Gateway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,31 +224,18 @@
     "The Waukegan Industrial Shelf",
     "Escanaba Gateway",
     "Helix Biosystems",
-    "The Meridian Compact for Economic Justice",
     "Unregistered",
+    "The Meridian Compact for Economic Justice",
+    "Elevation",
     "The Gradient Compact",
     "Axonal Stretch Resonance Lance",
-    "Elegy",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Pale Mile",
-    "Elena Vasquez-9",
-    "Brecken Yılmaz-Osei",
-    "Lazarus LX-2 'Lab Rat'",
-    "Marrowvault Cryogenics",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obafemi Szczypiński-Lautoa",
-    "The Burden Clause",
-    "The Compact",
-    "The Pure Hand",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "Yuki Nwosu-Petrenko"
+    "Elena Vasquez-9"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Latin American with Eastern European and East Asian ancestry blended through the Ubiquitous Diaspora. Mediterranean-adjacent complexion with subtle East Asian facial structure undertones and Eastern European bone architecture.",
+    "heritage": "Middle Eastern dominant (52.1%) with substantial Sub-Saharan African ancestry (25.3%), tempered by Eastern European (16.5%) and minor East Asian (6.1%) genetic contribution. The blend creates warm, deep tones with bone structure reflecting the confluence of these distinct ancestral regions—pronounced cheekbones and jawline from Middle Eastern heritage, nasal and orbital width balanced with Sub-Saharan African structure, subtle Eastern European refinement in the orbital ridge.",
     "height_cm": 155,
     "weight_kg": 42,
     "build": "Compact and wiry, with the compressed musculature of a runner bred from necessity rather than training. Narrow shoulders, quick-twitch proportions, minimal body fat. Moves like someone who has learned to take up less space than physics requires.",
@@ -256,8 +243,8 @@
     "hair_style": "Self-cut into an uneven, jagged cloud; shorter on the left side where he miscalculated with a salvaged blade",
     "hair_length": "Short",
     "eye_color": "Deep brown, almost black, with a wet-surface shine",
-    "skin_tone": "Medium to medium-deep brown with warm golden undertones; sun-darkened from outdoor exposure with paler patches from inconsistent sun coverage. The tone reflects Latin American heritage with subtle warmth from Eastern European ancestry influence, creating depth without harshness.",
-    "complexion": "Angular face with moderate cheekbones and a defined jaw suggesting mixed heritage structure. The facial architecture shows subtle East Asian influence around the eye placement and orbital structure, balanced with stronger Latin American and Eastern European bone definition. Skin shows minor scarring and old acne marks. Perpetual dark circles under eyes from chronic sleep deprivation. A thin scar runs along his right temple from an unnamed incident. His expression defaults to alertness bordering on anxiety.",
+    "skin_tone": "Deep warm brown with golden-amber undertones, enriched by natural sun exposure into a rich mahogany hue. The warmth reflects the dominant Middle Eastern and Sub-Saharan African ancestry. Paler patches from inconsistent sun coverage create subtle variation. The tone is luminous and deep rather than harsh—a living canvas of his outdoor existence.",
+    "complexion": "Angular face with prominent, well-defined cheekbones and strong jawline reflecting Middle Eastern bone structure. The orbital and nasal structure shows balanced influence from Sub-Saharan African width with Eastern European definition. Skin shows minor scarring and old acne marks. Perpetual dark circles under eyes from chronic sleep deprivation. A thin scar runs along his right temple from an unnamed incident. His expression defaults to alertness bordering on anxiety.",
     "distinguishing_marks": [
       "Bioluminescent patch on left collarbone: roughly 3cm across, pale blue-green, organic-looking with irregular borders; glows visibly under cold or emotional stress",
       "Thin white scar along right temple, approximately 2cm long, poorly healed",
@@ -268,14 +255,49 @@
     "posture_movement": "Moves with economical precision, never wasting motion. Favors low stances and hugs walls. Eyes scan continuously—doors, exits, potential threats, sources of warmth. Fidgets when stationary. When running, becomes almost fluid, finding angles through crowds that seem impossible. At rest, his body holds tension; he rarely fully relaxes.",
     "clothing_style": "Tier 5 scavenger aesthetic. Wears a layered patchwork of thermal underlayers (salvaged corporate gym wear), a oversized industrial shipping vest with frayed edges and missing seams, cargo pants held up with wire and improvised suspenders. One shoe is legitimate (grey synthetic leather, left foot), the other is a repaired construction boot wrapped in insulation tape. A frayed wool beanie (inherited, too large, worn low). No logos, no brands—everything is salvaged, traded, or found. Clothing is functional to the point of appearing accidental, designed for temperature regulation and quick movement rather than appearance."
   },
-  "image_prompt": "Arden Zaragoza, compact 155cm scavenger from GLMZ 2226, mixed Latin American and East Asian heritage with medium-deep warm brown skin, angular face with subtle East Asian bone structure, deep brown eyes. Self-cut black hair with grey dust undertones, uneven on left side. Wearing layered scavenger gear: oversized frayed industrial shipping vest over thermal underlayers, wire-held cargo pants, mismatched shoes (grey synthetic leather left, taped construction boot right), oversized frayed wool beanie. Visible bioluminescent pale blue-green patch on left collarbone pulsing faintly. Thin scar along right temple. Perpetual dark circles, alert anxious expression. Economical posture, wall-hugging stance, fidgeting hands. Cyberpunk 2200s dystopian scavenger aesthetic, neon-lit GLMZ alley setting with cold blue-green ambient light reflecting off wet industrial surfaces, shadows emphasizing lean frame and tense musculature. Mood: hypervigilant, exhausted resilience, continuously scanning environment. --ar 2:3 --v 6",
+  "image_prompt": "Arden Mansour, compact 155cm figure with deep mahogany skin and angular Middle Eastern-African-Eastern European heritage features, sharp cheekbones, dark intense eyes. Short jagged black hair with grey dust, worn low under oversized frayed wool beanie. Thin white scar along right temple. Wearing layered salvaged neo-noir scavenger gear: mismatched thermal layers under oversized industrial shipping vest with frayed edges, wire-held cargo pants, one grey synthetic shoe and one taped construction boot. Bioluminescent pale blue-green patch glowing faintly on left collarbone visible at neckline. Wiry, tense posture hugging shadows. Calloused hands. GLMZ Great Lakes Metropolitan Zone, moody neon-lit alley with cold blue-green lighting reflecting off wet surfaces, perpetual alertness in scanning eyes, atmospheric industrial setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 58.5,
-    "Eastern European": 21.7,
-    "East Asian": 19.8
+    "Middle Eastern": 52.1,
+    "Sub-Saharan African": 25.3,
+    "Eastern European": 16.5,
+    "East Asian": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 19.8,
+        "Kuwaiti": 0.6
+      },
+      "Kurdish": {
+        "Kurdish": 31.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 25.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 4.8,
+        "Czech": 11.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 2,
+        "Shanghainese": 0.4
+      },
+      "Japanese": {
+        "Japanese": 2.1
+      },
+      "Korean": {
+        "Korean": 1.6
+      }
+    }
+  }
 }

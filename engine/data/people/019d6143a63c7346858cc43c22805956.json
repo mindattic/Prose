@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63c7346858cc43c22805956",
   "type": "character",
-  "name": "Nova Huitzil",
+  "name": "Nova Achebe",
   "aliases": [
     "Lithium",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 39,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
-  "description": "Kadiatou Kobayashi-Appiah-Kubi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 39, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a smuggler out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Kadiatou Kobayashi-Appiah-Kubi agrees on two things: she is worth the fee, and she is terrible company at dinner.",
+  "description": "Nova Achebe is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 39, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a smuggler out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Nova Achebe agrees on two things: she is worth the fee, and she is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -260,7 +260,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,31 +275,14 @@
     "Tessera TK-9 Proteus 'Shapeshifter'"
   ],
   "related_entities": [
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
-    "Slagworks Industrial",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nika Svensson-Kone",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Burden Clause",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Skinners",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American (33%), East Asian (32%), South Asian (14%), Hispanic/Latin American (13%), Sub-Saharan African (7%) — a complex diaspora blend reflecting the Ubiquitous Diaspora. The genetic mixture creates a distinctive phenotype: Indigenous American facial structure with East Asian eye shape and cheekbone prominence, South Asian skin depth, and Sub-Saharan African melanin richness.",
+    "heritage": "Eastern European (49.3%), Sub-Saharan African (36.5%), South Asian (14.2%) — a striking diaspora blend. The genetic mixture creates a distinctive phenotype: Eastern European bone structure with Sub-Saharan African melanin richness and warmth, South Asian skin depth, creating a unified complexion with remarkable depth and warmth beneath the surface.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and heavily muscled — shoulders broad and dense, upper body strength evident. No visible fat; the weight is compact, functional. Forearms thick-boned and corded with scar tissue from years of handling hot equipment and restraint work.",
@@ -307,8 +290,8 @@
     "hair_style": "Pulled back into a tight, practical braid; often wrapped in a dark cloth when working",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Deep brown, natural — no chrome optics",
-    "skin_tone": "Rich brown with warm undertones — a complex blend of Indigenous American, East Asian, South Asian, and Sub-Saharan African melanin creating a unified, deep complexion with subtle warmth beneath the surface",
-    "complexion": "Weathered and angular — high cheekbones with East Asian prominence, broad jaw reflecting Indigenous American ancestry, a nose that has been broken and reset badly. Minimal cosmetic interest; skin bears the wear of chemical exposure and climate variance across districts. Small burn scars visible along her left temple from old augmentation work. Facial structure shows the distinctive blending of her genetic ancestry — wide-set eyes with slight epicanthic fold, prominent facial bones.",
+    "skin_tone": "Rich deep brown with warm golden undertones — a harmonious blend of Eastern European undertones, Sub-Saharan African melanin depth, and South Asian warmth creating a unified, dark complexion that glows with subtle richness beneath surface wear.",
+    "complexion": "Weathered and angular — high, prominent cheekbones reflecting Eastern European and Sub-Saharan heritage blend, strong defined jaw structure shaped by genetic mixing, a nose that has been broken and reset badly. Minimal cosmetic interest; skin bears the wear of chemical exposure and climate variance across districts. Small burn scars visible along her left temple from old augmentation work. Facial structure shows the distinctive blending of her genetic ancestry — wide-set eyes with natural depth and warmth, prominent facial bones with the pronounced architecture of both Eastern European and Sub-Saharan African heritage creating distinctive angular definition.",
     "distinguishing_marks": [
       "Pale surgical scar running vertically down the center of her chest, approximately 20cm long — marks the original synthetic lung installation",
       "Thin, raised scars crossing both forearms in parallel lines — evidence of restraint experience or early augmentation rejection",
@@ -319,16 +302,35 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, hands rarely still. Walks heel-first, a runner's gait. Often stands with weight on her back foot, body angled to keep her peripheral vision open. Her baseline expression is a slight frown; she smiles rarely and without warmth.",
     "clothing_style": "Tier 3-4 utilitarian — functional, not fashionable. Favors reinforced cargo pants (gray or dark blue, Raven Manufacturing), layered tops that allow for concealment of gear, and a heavy jacket of synthetic leather with internal pockets and burn-resistant lining. Steel-toed boots, scuffed and well-maintained. No jewelry or decoration. Clothing is frequently stained with machine oil or chemical residue; she replaces items only when they become unsafe."
   },
-  "image_prompt": "Nova Huitzil, stocky muscular woman with rich deep brown skin reflecting Indigenous American, East Asian, South Asian, and African heritage. High prominent cheekbones, deep-set dark brown eyes with subtle East Asian eye shape, strong broad jaw. Natural black hair with silver temples pulled back in tight practical braid. Weathered angular face, broken nose, minimal scarring visible. Worn cyberpunk 2226 worker in gray reinforced cargo pants and heavy synthetic leather jacket with burn marks, steel-toed boots. Pale vertical surgical scar visible on chest where synthetic lung was installed, faint metallic shimmer around sternum with microcircuitry patterns. Chrome plating distortion around nasal passages from chemical analyzer hardware. Chemical burn discoloration on right hand. Crude smuggler's mark tattoo on left inner wrist. Hands never still, economical precise movements, slight forward shoulder hunch, weight on back foot, baseline frown expression. Industrial cyberpunk setting, Great Lakes Metropolitan Zone warehouse lighting, moody atmospheric, gritty and functional, no decoration or warmth --ar 2:3 --v 6",
+  "image_prompt": "Nova Achebe, 2226 neo-noir, 168cm stocky muscular woman with rich deep brown skin and warm golden undertones blending Eastern European, Sub-Saharan African, and South Asian ancestry. Natural deep brown eyes, black hair with silver temples pulled into tight braid. Weathered angular face with prominent cheekbones, broken nose reset badly, high facial definition. Visible 20cm pale surgical scar down center of chest from synthetic lung installation, faint metallic sheen and microcircuitry visible around sternum. Small burn scars left temple. Chemical burn discoloration right hand lighter than skin tone. Crude smuggler's tattoo left inner wrist. Chrome plating visible around nasal passages from chemical analyzer augmentation. Muscular corded forearms with parallel restraint scars. Moves with economical precision, shoulders forward, slight frown baseline expression. Wearing reinforced gray cargo pants, layered utilitarian tops, heavy synthetic leather jacket with burn-resistant lining stained with machine oil, steel-toed scuffed boots. No jewelry. Standing in industrial facility with dramatic neon lighting, cool blues and oranges, mechanical whisper of synthetic lungs audible, peripheral vision open tactical stance, GLMZ 2200s gritty aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 33.3,
-    "East Asian": 31.6,
-    "South Asian": 14.4,
-    "Hispanic/Latin American": 13.3,
-    "Sub-Saharan African": 7.4
+    "Eastern European": 49.3,
+    "Sub-Saharan African": 36.5,
+    "South Asian": 14.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 4.5,
+        "Sorbian": 13.2
+      },
+      "Slavic South": {
+        "Bosnian": 31.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 36.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 14.2
+      }
+    }
+  }
 }

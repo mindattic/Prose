@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68b7486bd07c168a1fa6c5b",
   "type": "character",
-  "name": "Luca Karimi-Olofsson",
+  "name": "Luca Chakraborty-Moon",
   "aliases": [
     "Ozzy",
     "The Surgeon"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows, Ironvein, near Fullerton and Damen",
-  "description": "Osvaldo is lean and precise in the way of someone who learned early that stillness is a survival trait. He has his mother's Ghanaian cheekbones and his grandfather's Siberian jaw — a face that looks carved rather than grown, with close-cropped black hair going grey at his left temple from a nerve-burn incident he doesn't discuss. His eyes are both augmented: one a deep gold that tracks micro-expressions with unsettling accuracy, the other a surgical optic with a faint reticle visible when you catch him in certain light. His hands are his most notable feature — steady, long-fingered, kept meticulously clean in a way that clashes with the general atmosphere of his workspace, a narrow converted utility closet in the back of a Narrows electronics reseller. He dresses in neutral layers, nothing with obvious pockets, nothing that makes noise.\n\nOsvaldo operates in the gap between what people need and what licensed clinics will provide or what they can afford. He is not warm, exactly — he doesn't perform warmth — but he is genuinely careful with people in a clinical sense: he asks about allergies, he explains what he's doing, he refuses jobs that exceed his competency. He reads obsessively, mostly stolen Helix Biosystems technical manuals and bootleg surgical journals. He has a dry humor that surfaces only when he's comfortable, and he is rarely comfortable. The Narrows community regards him with a specific kind of respect usually reserved for dentists in pre-aug centuries — necessary, slightly dreaded, glad you have him.",
+  "description": "Luca Chakraborty-Moon is lean and precise in the way of someone who learned early that stillness is a survival trait. He has his mother's Ghanaian cheekbones and his grandfather's Siberian jaw — a face that looks carved rather than grown, with close-cropped black hair going grey at his left temple from a nerve-burn incident he doesn't discuss. His eyes are both augmented: one a deep gold that tracks micro-expressions with unsettling accuracy, the other a surgical optic with a faint reticle visible when you catch him in certain light. His hands are his most notable feature — steady, long-fingered, kept meticulously clean in a way that clashes with the general atmosphere of his workspace, a narrow converted utility closet in the back of a Narrows electronics reseller. He dresses in neutral layers, nothing with obvious pockets, nothing that makes noise.\n\nLuca Chakraborty-Moon operates in the gap between what people need and what licensed clinics will provide or what they can afford. He is not warm, exactly — he doesn't perform warmth — but he is genuinely careful with people in a clinical sense: he asks about allergies, he explains what he's doing, he refuses jobs that exceed his competency. He reads obsessively, mostly stolen Helix Biosystems technical manuals and bootleg surgical journals. He has a dry humor that surfaces only when he's comfortable, and he is rarely comfortable. The Narrows community regards him with a specific kind of respect usually reserved for dentists in pre-aug centuries — necessary, slightly dreaded, glad you have him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -200,7 +200,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,28 +254,15 @@
     "TESSERA PG-2 'Signature'",
     "Ironvein",
     "Lacuna Genomics",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "The Pure Hand",
-    "Nesting Doll",
-    "Gold",
     "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Lazarus IDP-1 'Teeth'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "The Heritage Vault",
-    "The Narrows",
-    "Tshiamo Vukić-Arellano",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Nesting Doll",
+    "The Pure Hand",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian (59.8%) with significant Middle Eastern (21.2%) and Sub-Saharan African (15.3%) ancestry, trace Northern European (3.7%). Phenotype reflects dominant East Asian bone structure with warm undertones from African and Middle Eastern genetics. High cheekbones with slightly broader nasal bridge characteristic of East Asian-Middle Eastern blend. Skin tone warm medium-brown with subtle golden undertones from the genetic convergence.",
+    "heritage": "Eastern European (32.1%), East Asian (32.0%), South Asian (27.0%), and Hispanic/Latin American (8.9%) ancestry. Phenotype reflects a balanced multinational blend: East Asian bone structure with Slavic angular geometry, South Asian warmth and depth enriched by Hispanic/Latin warmth. High cheekbones with Central Asian width, refined jawline with subtle softness from South Asian and Hispanic heritage. Eyes set with slight epicanthic fold from East Asian genetics. Skin tone medium warm-brown with olive undertones from the South Asian-Eastern European convergence, enriched by warm copper notes from Hispanic/Latin ancestry, creating subtle luminous complexity. Nasal structure shows refined bridge with moderate width reflecting South Asian heritage, with slight warmth from Hispanic genetics.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and economical, minimal wasted mass. Shoulders narrow but defined from precise, controlled movements rather than exercise. Frame suggests efficiency over strength.",
@@ -283,25 +270,55 @@
     "hair_style": "Close-cropped, military precision",
     "hair_length": "Short",
     "eye_color": "Left: deep gold with visible tracking crosshairs; Right: pale grey-blue surgical lens with faint reticle visible under direct light",
-    "skin_tone": "Warm medium-brown, golden undertones from East Asian-Middle Eastern-African genetic blend, creating luminous depth. Evenly toned with natural warmth.",
-    "complexion": "Angular face with prominent high cheekbones reflecting East Asian ancestry, slightly broader nasal structure from Middle Eastern genetics, refined jawline. No facial hair. Skin meticulously maintained and unmarked except for occupational detail. Expression defaults to neutral observation.",
+    "skin_tone": "Medium warm-brown with olive undertones and warm copper notes from the Eastern European-South Asian-East Asian-Hispanic genetic blend, creating subtle luminous complexity. Evenly toned with natural warmth.",
+    "complexion": "Angular face with prominent high cheekbones reflecting East Asian and Slavic ancestry blended with South Asian and Hispanic warmth, refined nasal structure showing South Asian refinement with Hispanic warmth, sharp jawline characteristic of Eastern European heritage with subtle softness from South Asian and Hispanic genetics. No facial hair. Skin meticulously maintained and unmarked except for occupational detail. Expression defaults to neutral observation. Faint scar tissue running vertically along left temple from hairline to jaw — nerve-burn incident, pale against his skin tone.",
+    "visible_augmentations": "Dual ocular implants immediately visible — left eye's gold color unnatural, right eye's surgical lens faintly catches light with a reticle pattern. No visible subdermal work; the finger-tip dispenser operates from within. Neural implants in wrists create only imperceptible micro-scarring.",
+    "posture_movement": "Economical and controlled. Stands still for long periods without restlessness. Moves with deliberate precision; no wasted motion, no fidgeting. Hands are his tell — they're always subtly active, fingers moving through micro-adjustments even at rest. Walking gait is quiet, even on metal flooring.",
+    "clothing_style": "Neutral layered aesthetic: matte grey undershirt, oversized black synthetic overshirt (medical-grade, easy to sterilize), dark charcoal cargo pants with minimal visible pockets, black polymer work shoes with reinforced soles. A faded copper armband bearing a discreet Ironvein Teeth mark on his right bicep — protection tax, not affiliation. No jewelry, no logos. All fabrics selected for silence and durability over aesthetics. Tier 4 functional — expensive in the right ways, invisible in all the wrong ones.",
     "distinguishing_marks": [
       "Faint scar tissue running vertically along left temple from hairline to jaw — nerve-burn incident, pale against his skin tone",
       "Micro-scarring on left wrist from neural steadiness implant installation, barely visible unless you know where to look"
-    ],
-    "visible_augmentations": "Dual ocular implants immediately visible — left eye's gold color unnatural, right eye's surgical lens faintly catches light with a reticle pattern. No visible subdermal work; the finger-tip dispenser operates from within. Neural implants in wrists create only imperceptible micro-scarring.",
-    "posture_movement": "Economical and controlled. Stands still for long periods without restlessness. Moves with deliberate precision; no wasted motion, no fidgeting. Hands are his tell — they're always subtly active, fingers moving through micro-adjustments even at rest. Walking gait is quiet, even on metal flooring.",
-    "clothing_style": "Neutral layered aesthetic: matte grey undershirt, oversized black synthetic overshirt (medical-grade, easy to sterilize), dark charcoal cargo pants with minimal visible pockets, black polymer work shoes with reinforced soles. A faded copper armband bearing a discreet Ironvein Teeth mark on his right bicep — protection tax, not affiliation. No jewelry, no logos. All fabrics selected for silence and durability over aesthetics. Tier 4 functional — expensive in the right ways, invisible in all the wrong ones."
+    ]
   },
-  "image_prompt": "Luca Karimi-Olofsson, cyberpunk 2226, 178cm lean frame with golden-toned warm brown skin reflecting East Asian-Middle Eastern-African ancestry. Sharp high cheekbones, angular face, military-precise black hair with grey at left temple. Left eye deep gold with visible tracking crosshairs, right eye surgical lens with subtle reticle—both implants catching neon light. Faint vertical scar along left temple. Wearing matte grey undershirt, oversized black medical-grade synthetic overshirt, charcoal cargo pants, reinforced black polymer shoes. Faded copper Ironvein armband on right bicep. Posture economical and controlled, fingers subtly active even at rest. Standing in Great Lakes Metropolitan Zone neon-lit corridor, cool blue and amber lighting casting precise shadows. Expression neutral observation. Micro-scarring visible on left wrist. No wasted motion, complete stillness interrupted only by precise hand movements. Cinematic, sharp focus, cyberpunk atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Luca Chakraborty-Moon, GLMZ, GLMZ operative. Lean 178cm frame with economical posture. Medium warm-brown skin with olive and copper undertones, angular face blending East Asian and Slavic geometry with South Asian refinement and Hispanic warmth. High cheekbones, sharp jawline, slight epicanthic fold. Black hair close-cropped with premature grey at left temple. Piercing cybernetic eyes: left deep gold with visible tracking crosshairs, right pale grey-blue surgical lens with reticle. Vertical scar tissue pale against skin running left temple to jaw. Matte grey undershirt, oversized black synthetic medical-grade overshirt, dark charcoal cargo pants, black polymer work shoes. Faded copper armband on right bicep with Ironvein Teeth mark. Hands subtly active, fingers in constant micro-adjustment. Neutral expression, watchful. Standing in shadow-lit industrial setting, cool neon accents reflecting off surgical lens. Meticulously maintained, silence-optimized wardrobe, Tier 4 functional. Neo-noir noir aesthetic, introspective tension, clinical precision. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 59.8,
-    "Middle Eastern": 21.2,
-    "Sub-Saharan African": 15.3,
-    "Northern European": 3.7
+    "Eastern European": 32.1,
+    "East Asian": 32,
+    "South Asian": 27,
+    "Hispanic/Latin American": 8.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 10.9,
+        "Russian": 21.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 32
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 21.3
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 5.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1.4
+      },
+      "Caribbean": {
+        "Dominican": 4.4,
+        "Cuban": 3.1
+      }
+    }
+  }
 }

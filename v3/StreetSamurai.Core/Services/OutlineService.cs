@@ -56,7 +56,7 @@ public class OutlineService
             """;
 
         var system = $"""
-            You are a story architect for cyberpunk literary fiction set in Meridian City.
+            You are a story architect for neo-noir literary fiction set in Meridian City.
             Design a complete story arc with act structure.
 
             CHARACTERS:

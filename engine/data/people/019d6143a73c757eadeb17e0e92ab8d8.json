@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73c757eadeb17e0e92ab8d8",
   "type": "character",
-  "name": "Mikhail Popescu",
+  "name": "Nyx Rahman",
   "aliases": [
     "Zub",
     "Haraldsson (only people trying to intimidate him)"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Fullerton and Damen",
-  "description": "Zuberi is young enough that it still shows — there's a looseness to him, an unresolved quality, like something that hasn't quite hardened into its final shape. He is tall, lean, with the dark skin and angular jaw of his Tanzanian grandfather and his Filipino grandmother's round cheeks, a combination that makes him look younger than he is and which he has mostly given up being frustrated about. His ears are tipped with small black cat-ear points — geneware done in a parlor on a dare when he was nineteen, which he now can't imagine removing. He keeps his hair mid-length and loose, usually damp, because he is always running slightly late.\n\nHe operates from three locations in rotation — a corner in the Narrows, a back table in a noodle shop in Blackpipe Corridor, and a patch near the old water reclamation junction on the Corridor's south end — and keeps no fixed stall because fixed stalls have fixed addresses. He knows more about pharmacology than most licensed clinicians, taught himself from pirated Helix Biosystems training modules and a mentor who has since retired. He is genuinely trying to help people who cannot afford clinical pricing — and he is also genuinely dealing recreational compounds for profit — and he holds both of these truths without significant cognitive dissonance, which either speaks to moral flexibility or a realistic understanding of how survival works.",
+  "description": "Nyx Rahman is young enough that it still shows — there's a looseness to him, an unresolved quality, like something that hasn't quite hardened into its final shape. He is tall, lean, with the dark skin and angular jaw of his Tanzanian grandfather and his Filipino grandmother's round cheeks, a combination that makes him look younger than he is and which he has mostly given up being frustrated about. His ears are tipped with small black cat-ear points — geneware done in a parlor on a dare when he was nineteen, which he now can't imagine removing. He keeps his hair mid-length and loose, usually damp, because he is always running slightly late.\n\nHe operates from three locations in rotation — a corner in the Narrows, a back table in a noodle shop in Blackpipe Corridor, and a patch near the old water reclamation junction on the Corridor's south end — and keeps no fixed stall because fixed stalls have fixed addresses. He knows more about pharmacology than most licensed clinicians, taught himself from pirated Helix Biosystems training modules and a mentor who has since retired. He is genuinely trying to help people who cannot afford clinical pricing — and he is also genuinely dealing recreational compounds for profit — and he holds both of these truths without significant cognitive dissonance, which either speaks to moral flexibility or a realistic understanding of how survival works.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -159,7 +159,7 @@
     "War Weary": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,29 +180,15 @@
     "The Reclamation Assembly",
     "The CEO",
     "Grandmother",
-    "Aslan Vasquez-Chatterjee",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Slagworks Industrial",
-    "Axolotl Regenerative Suite",
-    "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "NeuralPath VaultPay Subdermal Transaction Node",
     "Noir Dining",
-    "Ringo Popup Stall Trailer",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "TESSERA PA-5 'Attendant'",
-    "The Corridor",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Narrows",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "GLMZ",
+    "Corner Slice",
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European, East Asian, Sub-Saharan African, and Hispanic/Latin American mix. The genetic diaspora shows in his features: Slavic bone structure blended with East Asian facial geometry, Sub-Saharan African skin depth and warmth, with traces of Latin American heritage creating an unexpectedly harmonious complexity. He reads as visibly mixed-heritage, the kind of person whose ancestry can't be pinned to a single region.",
+    "heritage": "Predominantly East Asian with significant South Asian ancestry, complemented by Indigenous American heritage. The genetic diaspora creates striking feature harmony: East Asian facial geometry and bone structure form the foundation, enriched by South Asian skin depth and warmth, with subtle Indigenous American characteristics visible in cheekbone prominence and facial proportions. He reads as visibly mixed-heritage, features that reflect the Ubiquitous Diaspora rather than any single regional origin.",
     "height_cm": 188,
     "weight_kg": 71,
     "build": "Lean and angular, long-limbed with minimal body fat. The build of someone who forgets to eat regularly and moves constantly. Defined shoulders and chest, but no deliberate musculature — it's the leanness of motion, not training.",
@@ -210,8 +196,8 @@
     "hair_style": "Mid-length, loose waves, usually damp or freshly dried. Worn unstyled, parted vaguely in the center. Often falls across his face when he bends over his work.",
     "hair_length": "Medium",
     "eye_color": "Dark brown, tired",
-    "skin_tone": "Rich warm brown with complex undertones — the deep baseline of Sub-Saharan ancestry brightened by East Asian and Eastern European mixing, creating a skin tone that shifts slightly depending on light. Medium saturation, alive with warmth rather than cool undertones. Uneven from irregular sleep and sun exposure across multiple outdoor locations.",
-    "complexion": "Strong Slavic-influenced cheekbones and jawline softened by East Asian face geometry and Sub-Saharan fullness in the lower face. The combination reads younger than his 24 years. Perpetual dark circles under his eyes. A faint shadow of stubble most days — shaving is a luxury when you're running late. Minor acne scarring on his jaw from his late teens. Nose shows Eastern European structure with slight bridge prominence.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of East Asian and South Asian ancestry blending with Indigenous American heritage. Complex saturation that shifts with light, alive with warmth. Uneven from irregular sleep and sun exposure across multiple outdoor locations.",
+    "complexion": "Strong East Asian facial geometry softened by South Asian fullness in the lower face, with Indigenous American prominence in the cheekbones creating a distinctive angular-yet-rounded facial structure. The combination reads younger than his 24 years. Perpetual dark circles under his eyes. A faint shadow of stubble most days — shaving is a luxury when you're running late. Minor acne scarring on his jaw from his late teens. Nose shows East Asian structure with subtle bridge definition.",
     "distinguishing_marks": [
       "Small black cat-ear points grafted to the tips of both ears, angled backward slightly. The geneware is cosmetic, clean work but not high-tier. Done in a parlor on a dare at nineteen, now essential to how he sees himself.",
       "A thin white scar running horizontally across the inside of his left wrist, approximately 4cm long. A story he doesn't tell."
@@ -220,16 +206,39 @@
     "posture_movement": "Perpetually in motion, even when standing still. A slight forward lean as though always about to move somewhere more urgent. Fidgets with vials, capsules, or whatever's in his pockets. His hands are steady — a pharmacist's hands — but his overall energy is scattered, restless. When he focuses on a customer or a transaction, it's sudden and complete, like a cat's attention snapping to movement. Otherwise, he seems to be three locations ahead of where he actually is.",
     "clothing_style": "Tier 3-4 streetwear, practical and worn. Usually black or grey cargo pants with working pockets (essential for inventory rotation). Hoodies and layered thermal shirts, often partially unzipped. A particular affection for a faded teal windbreaker that's seen three years of Blackpipe Corridor weather. Worn sneakers, replaced frequently because he walks constantly. A small satchel he keeps close — genuine leather, worn soft, carries his rotation stock. No jewelry except for a simple steel ring on his right index finger (the hand he uses to dispense). Clothes are clean but unstudied, the uniform of someone who dresses in the dark or while already thinking about something else."
   },
-  "image_prompt": "Mikhail Popescu, 24-year-old male street pharmacist in cyberpunk 2226 Great Lakes Metropolitan Zone, mixed-heritage appearance blending Eastern European, East Asian, Sub-Saharan African, and Hispanic ancestry. Tall lean figure, 188cm, minimal body fat, defined angular features with strong cheekbones and Slavic jawline softened by East Asian geometry. Rich warm brown skin tone with complex undertones. Dark brown tired eyes with perpetual dark circles. Medium-length dark brown wavy hair partially obscuring his face. Black cosmetic cat-ear geneware grafted to ear tips, angled backward. Thin white scar on inside of left wrist. Wearing faded teal windbreaker over grey thermal layers, black cargo pants, worn sneakers. Fidgeting with pharmaceutical vials in pocket, restless energy, slight forward lean. Worn leather satchel close at body. Dimly-lit Blackpipe Corridor street setting, neon signs casting cool blue-green glow, wet pavement reflecting lights. Underground market stall aesthetic. Mood: scattered focus, perpetually distracted but capable. Cyberpunk noir lighting, gritty urban texture --ar 2:3 --v 6",
+  "image_prompt": "Nyx Rahman, 24-year-old neo-noir street pharmacist, East Asian-South Asian-Indigenous American mixed heritage with warm golden-brown skin tone. Dark tired eyes, dark brown hair mid-length waves partially obscuring face. Strong East Asian facial geometry softened by South Asian fullness, prominent Indigenous American cheekbones. Black cosmetic cat-ear geneware grafted to ear tips. Lean angular 188cm frame, restless energy even when still. Wearing faded teal windbreaker layered over grey thermal shirt, black cargo pants with working pockets, worn sneakers. Genuine leather satchel slung across body. Small white scar visible on inside of left wrist. Steel ring on right index finger. Perpetual dark circles, stubble shadow, minor jaw scarring. Forward-leaning posture as if always about to move. Neon-lit Blackpipe Corridor alleyway at dusk, pharmaceutical vials visible in jacket pockets, moody atmospheric lighting catching the warm undertones of his skin, GLMZ Great Lakes Metropolitan Zone setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 32.9,
-    "East Asian": 26.9,
-    "Sub-Saharan African": 22.4,
-    "Hispanic/Latin American": 14.9,
-    "Northern European": 2.9
+    "East Asian": 52.1,
+    "South Asian": 40,
+    "Indigenous American": 7.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 5.8,
+        "Shanghainese": 10.2
+      },
+      "Japanese": {
+        "Japanese": 3
+      },
+      "Korean": {
+        "Korean": 33.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 40
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 4.1,
+        "Mixtec": 3.8
+      }
+    }
+  }
 }

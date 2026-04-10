@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71574719af6a27215d9203c",
   "type": "character",
-  "name": "Tarn Tetteh",
+  "name": "Tarn Sigurdsson",
   "aliases": [
     "Thermite Lead",
     "The Architect",
@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "Milwaukee Core — operates from a rented office space disguised as an HVAC consulting firm",
-  "description": "Vesper Kade plans extractions the way other people play chess — five moves ahead, every contingency mapped, every variable assigned a probability. She spent twelve years as a logistics coordinator for Torii Security Group before the corp restructured her division and offered her a severance package worth less than her monthly augmentation maintenance. She walked out with her skills, her contacts, and a very detailed understanding of how corporate security systems fail.\n\nShe built the Thermite Collective from the ground up over six years, hand-picking operators who could execute clean work without the ego that gets people killed. The crew's reputation is their product — no collateral damage, no witnesses, no mess. Clients pay a premium because Vesper's plans work. When they don't, she has three backup plans that do.\n\nPhysically unremarkable by design. Medium height, brown hair kept short, clothes that say middle management. She could walk through any lobby in GLMZ without triggering a second glance. This is the most dangerous thing about her. The only augmentation visible is a faint dermal port behind her left ear — the rest is all internal, all quiet, all precise.",
+  "description": "Tarn Sigurdsson the way other people play chess — five moves ahead, every contingency mapped, every variable assigned a probability. She spent twelve years as a logistics coordinator for Torii Security Group before the corp restructured her division and offered her a severance package worth less than her monthly augmentation maintenance. She walked out with her skills, her contacts, and a very detailed understanding of how corporate security systems fail.\n\nShe built the Thermite Collective from the ground up over six years, hand-picking operators who could execute clean work without the ego that gets people killed. The crew's reputation is their product — no collateral damage, no witnesses, no mess. Clients pay a premium because Vesper's plans work. When they don't, she has three backup plans that do.\n\nPhysically unremarkable by design. Medium height, brown hair kept short, clothes that say middle management. She could walk through any lobby in GLMZ without triggering a second glance. This is the most dangerous thing about her. The only augmentation visible is a faint dermal port behind her left ear — the rest is all internal, all quiet, all precise.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -183,7 +183,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Milwaukee Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -200,48 +200,14 @@
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
   ],
   "related_entities": [
-    "GLMZ",
-    "Axiom Industries",
     "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Vesper",
+    "Axiom Industries",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Milwaukee Core",
-    "Alper Inoue-Aidoo",
-    "Alper Lebedev-Tutu",
-    "Ambassador Silk",
-    "Bioacoustic Communication Membrane",
-    "Bogdan Achebe-Svanstrom",
-    "Brecken Yılmaz-Osei",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Harlan Dray",
-    "Kamala Blomberg-Konadu",
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Kyle Ellen Corbin-Vasik",
-    "Lazarus LX-2 'Lab Rat'",
-    "Pirjo Asante-Ulukhan",
-    "Prophet",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Saodat Mirzoyan-Fubara",
-    "Solveig Tambadou-Kereselidze",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech VocalShift Laryngeal Tone Modulator",
-    "TESSERA ES-4 'Perimeter'",
-    "The Heritage Vault",
-    "The Portico",
-    "The Pure Hand",
-    "The Question",
-    "The Quiet Room",
-    "Vesna Kiptoo-Ravelonarison",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yannick Tofauti-Szarvásy",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian and Sub-Saharan African primary ancestry (84.7% combined), with secondary East Asian (12.1%) and Hispanic/Latin American (3.2%) heritage. The genetic mix produces warm, rich skin tones with subtle golden undertones and creates facial structure reflecting the diversity of the Indian subcontinent and African diaspora.",
+    "heritage": "Complex global ancestry: Northern European (37.6%) providing angular bone structure and cooler undertones, East Asian (26.0%) contributing defined cheekbones and eye shape, Eastern European (13.1%) adding facial angularity, South Asian (10.6%) softening features with fuller lips and rounded contours, Sub-Saharan African (6.7%) deepening skin warmth and lip fullness, Hispanic/Latin American (6.0%) contributing subtle warmth and feature blending. The synthesis creates a face that defies regional categorization—Northern European angularity tempered by warmer heritage softness, creating unexpected geometric harmony.",
     "height_cm": 167,
     "weight_kg": 62,
     "build": "Lean and economical — no excess mass, no theatrical musculature. The build of someone who runs three times a week because the schedule requires it, not for pleasure. Postural efficiency over presence.",
@@ -249,8 +215,8 @@
     "hair_style": "Cropped short, asymmetrical — longer on left side (covers the dermal port), severely angled. Styled for zero maintenance; takes four minutes to comb.",
     "hair_length": "Short",
     "eye_color": "Warm brown with faint amber undertones; no visible augmentation but lens clarity suggests subcutaneous optical overlay integration",
-    "skin_tone": "Rich, warm medium brown with subtle golden undertone — the blended result of South Asian and Sub-Saharan ancestry with minor East Asian influence. Even complexion, consistent across face and body.",
-    "complexion": "Minimal makeup, minimal grooming ostentation. Skin shows faint stress creases at the corners of eyes and mouth — not from age but from five-hour sleep cycles and constant low-level threat assessment. Facial structure reflects South Asian and African heritage: defined cheekbones, fuller lips, rounded jaw contours. Pale scar tissue on left knuckles (old injury, professionally healed). Light freckling across the bridge of nose.",
+    "skin_tone": "Warm medium brown with subtle golden undertones—the result of Northern European paleness blended with East Asian, South Asian, and Sub-Saharan African depth. Even complexion, consistent across face and body, neither cool nor warm but balanced between both.",
+    "complexion": "Minimal makeup, minimal grooming ostentation. Skin shows faint stress creases at corners of eyes and mouth—not from age but from five-hour sleep cycles and constant low-level threat assessment. High, defined cheekbones from East Asian and Northern European ancestry, fuller lips from South Asian and African heritage, angular jaw contours showing Northern European influence tempered by warmer heritage features creating unexpected softness. Light freckling across bridge of nose. Pale scar tissue on left knuckles (old injury, professionally healed).",
     "distinguishing_marks": [
       "Faint linear scar along left jawline, approximately 3cm long, running from ear toward chin — consistent with edged weapon contact, expertly sutured, barely visible unless caught in certain light",
       "Small dermal port scar behind left ear, roughly the size of a coin, with faint radiating microlaser scarring around perimeter indicating multiple implant revisions",
@@ -261,15 +227,73 @@
     "posture_movement": "Economical and controlled. Stands with weight slightly forward on balls of feet — never fully relaxed, always ready to move. Walks with minimal arm swing, gaze fixed two meters ahead and slightly elevated (tactical awareness pattern). Hands rest palms-down on thighs or table — never fidgeting, never crossing arms. Speaks quietly; makes people lean in. Makes eye contact deliberately, not reflexively — every glance is tactical.",
     "clothing_style": "Middle-management aggressively neutral. Blazers from corporate surplus retailers (Tier 3 brands like Prometheus Corp Fashions), usually in charcoal or navy. Under-blazer: clean white or gray t-shirts with no graphics or branding. Trousers: dark, tailored, pockets modified for discrete equipment carry. Shoes: black or charcoal, function-focused, worn-in enough to avoid attention. A single piece of jewelry — a watch, utilitarian, possibly with encrypted data access. Deliberately erases herself from memory; someone would struggle to describe her five minutes after meeting."
   },
-  "image_prompt": "Tarn Tetteh, a 167cm lean professional operative in cyberpunk 2226, rich warm medium-brown skin with golden undertones reflecting South Asian and Sub-Saharan African heritage, sharp cheekbones and defined facial structure. Short asymmetrical dark brown hair longer on left side covering dermal port, warm amber-toned brown eyes with subcutaneous optical overlay. Wearing charcoal corporate blazer over clean gray t-shirt, dark tailored trousers, black utilitarian shoes. Small coin-sized dermal port visible behind left ear with iridescent sheen. Faint 3cm scar along left jawline barely visible in light. Hands resting palms-down, showing callus formations from precision input work and thin white scar on back of left hand. Standing in neutral corporate office lighting with weight forward on balls of feet, gaze fixed ahead at two-meter distance, minimal arm swing posture. Tactical awareness evident in every controlled movement. Deliberately forgettable middle-management aesthetic designed to erase from memory. Cyberpunk 2200s professional ambiance, neon-lit corporate office setting, cool blue and gray lighting --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Tarn Sigurdsson, 167cm lean woman with warm medium-brown skin blending Northern European, East Asian, South Asian, and African ancestry. Dark brown hair cropped short and asymmetrical, longer on left side covering a subtle dermal port scar. High defined cheekbones, fuller lips, angular jaw, warm brown eyes with amber undertones. Faint stress creases around eyes, light freckling across nose bridge. Small linear scar along left jawline. Wearing charcoal Prometheus Corp blazer over clean white t-shirt, dark tailored trousers, black functional shoes. Minimalist silver watch. Standing with weight forward on balls of feet, hands resting palm-down, two-meter tactical gaze. GLMZ Great Lakes Metropolitan Zone, low ambient lighting, cool corporate office setting with subtle neon edge, hyper-realistic, intricate detail on scar tissue and port scarring, intense but controlled presence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 45.8,
-    "Sub-Saharan African": 38.9,
-    "East Asian": 12.1,
-    "Hispanic/Latin American": 3.2
+    "Northern European": 37.6,
+    "East Asian": 26,
+    "Eastern European": 13.1,
+    "South Asian": 10.6,
+    "Sub-Saharan African": 6.7,
+    "Hispanic/Latin American": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 24.6
+      },
+      "Scandinavian": {
+        "Icelandic": 1.3
+      },
+      "Germanic": {
+        "German": 7.1,
+        "Austrian": 4.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 26
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 3.6,
+        "Bulgarian": 9.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.5
+      },
+      "Pakistani": {
+        "Pashtun": 2.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 1.8,
+        "Ugandan": 0.2
+      },
+      "Central African": {
+        "Congolese": 0.3,
+        "Angolan": 0.6
+      },
+      "West African": {
+        "Ghanaian": 2.2,
+        "Nigerian": 1.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 2.1
+      },
+      "South American": {
+        "Brazilian": 1.6,
+        "Peruvian": 2.3
+      }
+    }
+  }
 }

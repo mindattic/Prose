@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ac73cd9b1a6ccfd8e53682",
   "type": "character",
-  "name": "Cleo Okonkwo-Nygaard",
+  "name": "Zuri Okonkwo-Nygaard",
   "aliases": [
     "Old Dou",
     "The Puppeteer of Hamtramck"
@@ -13,7 +13,7 @@
   "age": 68,
   "status": "active",
   "location": "Hamtramck Enclave, in a narrow shopfront on the market row near the Enclave's eastern water distribution point, near Ashland and Division",
-  "description": "Amadou is a small man who has become smaller with age, slightly stooped at the shoulders from sixty years of bending over workbenches, but his hands remain extraordinary — large, dexterous, with the kind of still precision that seems to defy his years. He is dark-skinned with deep-set eyes that are permanently amused, and his beard has gone fully white, which he maintains with careful grooming as though it is itself a costume element. He dresses simply — worn linen in greys and browns — but he always wears one item of intense color: a scarf, a hat, a single embroidered sleeve. He has no geneware or cosmetic augmentation; he considers his face and body sufficient material.\n\nHis puppets are not toys. They are articulated figures between thirty centimeters and human-sized, built from salvaged materials — circuit board lace, reclaimed myomer muscle fiber, repurposed drone casings — and each one contains a simple autonomous loop that gives it a persistent behavioral signature even when Amadou is not operating it. Children adore them. Adults find them quietly unsettling. He has been making them for forty years and has lost count of how many exist; many have been sold or given away and now drift through the city in owners' homes, continuing their small repetitive behaviors. He performs in the market three days a week, and his shows are ostensibly for children but are genuinely allegories of Hamtramck's political situation, delivered with such gentleness that the sharpness takes a moment to land.",
+  "description": "Zuri Okonkwo-Nygaard is a small man who has become smaller with age, slightly stooped at the shoulders from sixty years of bending over workbenches, but his hands remain extraordinary — large, dexterous, with the kind of still precision that seems to defy his years. He is dark-skinned with deep-set eyes that are permanently amused, and his beard has gone fully white, which he maintains with careful grooming as though it is itself a costume element. He dresses simply — worn linen in greys and browns — but he always wears one item of intense color: a scarf, a hat, a single embroidered sleeve. He has no geneware or cosmetic augmentation; he considers his face and body sufficient material.\n\nHis puppets are not toys. They are articulated figures between thirty centimeters and human-sized, built from salvaged materials — circuit board lace, reclaimed myomer muscle fiber, repurposed drone casings — and each one contains a simple autonomous loop that gives it a persistent behavioral signature even when Zuri Okonkwo-Nygaard is not operating it. Children adore them. Adults find them quietly unsettling. He has been making them for forty years and has lost count of how many exist; many have been sold or given away and now drift through the city in owners' homes, continuing their small repetitive behaviors. He performs in the market three days a week, and his shows are ostensibly for children but are genuinely allegories of Hamtramck's political situation, delivered with such gentleness that the sharpness takes a moment to land.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -156,7 +156,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,23 +170,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Hamtramck Enclave",
+    "The Marrow Market",
     "TESSERA PG-2 'Signature'",
+    "Circuit",
     "The Pure Hand",
-    "Déjà Vu",
-    "Immaculée Dalgaard-Nwosu",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Quilt",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Bazaar",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Drift",
+    "Déjà Vu"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (40.2%) with substantial East Asian (26.4%) ancestry, complemented by Eastern European (14.4%), Hispanic/Latin American (13.1%), and South Asian (5.9%) heritage—a complex genetic tapestry reflected in his warm deep brown skin tone with subtle golden undertones, warm eye color, and facial structure that blends broad cheekbones with refined bone structure across multiple continental traditions",
+    "heritage": "Predominantly Sub-Saharan African (54.3%) with meaningful secondary ancestries from Northern European (10.3%), Hispanic/Latin American (9.5%), East Asian (9.4%), North African (9.1%), and Southeast Asian (7.4%)—a genuinely global genetic blend visible in his warm deep brown skin with golden and reddish undertones, the refined bone structure that balances broad cheekbones with tapering chin, and dark brown eyes that carry warmth from multiple continental traditions",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Slight and diminished by age, shoulders rounded forward from decades of workbench posture, but with a wiry core strength that belies his years. His frame reads as deliberate economy of motion rather than frailty.",
@@ -194,8 +187,8 @@
     "hair_style": "Closely trimmed beard, meticulously groomed; sparse hair on crown, kept short",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm and perpetually creased at the corners from smiling",
-    "skin_tone": "Warm deep brown with golden undertones—the blended result of dominant Sub-Saharan African ancestry enriched by East Asian, South Asian, and Hispanic warmth, weathered but even across decades",
-    "complexion": "Face lined with age and expression—deep laugh lines around eyes and mouth dominate his features, with cheekbone structure reflecting the confluence of African, East Asian, and South Asian ancestry. Skin is clean and well-maintained; his hands show decades of minor cuts and stains from working with salvage materials. The white beard is his most striking grooming choice, maintained with visible care as a deliberate aesthetic statement.",
+    "skin_tone": "Warm deep brown with golden and reddish undertones—the blended result of dominant Sub-Saharan African ancestry (54.3%) enriched by North African warmth, Hispanic warmth, and subtle East Asian influence, weathered but even across decades",
+    "complexion": "Face lined with age and expression—deep laugh lines around eyes and mouth dominate his features, with cheekbone structure reflecting the confluence of Sub-Saharan, North African, Hispanic, and East Asian ancestry. Skin is clean and well-maintained; his hands show decades of minor cuts and stains from working with salvage materials. The white beard is his most striking grooming choice, maintained with visible care as a deliberate aesthetic statement.",
     "distinguishing_marks": [
       "Fine white scar across the back of his left hand, thin and precise as a wire, running from wrist toward knuckles—origin unclear, old",
       "Faint burn marks on the inside of both forearms, scattered and small, consistent with decades of soldering and hot-work proximity"
@@ -204,16 +197,65 @@
     "posture_movement": "Moves with careful deliberation despite his age—each gesture economical and precise, as though he is constantly aware of delicate mechanisms. His posture is slightly stooped but never collapsed; when seated at work, he straightens noticeably. His hands move with remarkable stillness and control, rarely fidgeting. He maintains steady eye contact and smiles frequently, but his default expression is one of mild, knowing amusement.",
     "clothing_style": "Tier 3-4 practical simplicity: worn linen shirts and trousers in greys and browns, faded from washing and age but scrupulously clean. Always layered with one element of intense, deliberate color—a deep indigo scarf, a rust-colored cap, a sleeve with hand-embroidered geometric patterns in reds and golds. His single concession to ornamentation is a thin silver ring on his left ring finger, worn smooth. No corporate branding. Shoes are practical, well-maintained, slightly scuffed."
   },
-  "image_prompt": "Cleo Okonkwo-Nygaard, elderly craftsperson with warm deep brown skin and golden undertones, precise white trimmed beard, dark warm eyes with deep laugh lines, 158cm slight build with careful deliberate posture. Seated at workbench in dim cyberpunk workshop, hands showing decades of solder burns and fine scars, no augmentations. Wearing faded grey linen shirt layered under rust-colored cap with hand-embroidered geometric patterns in reds and golds, thin worn silver ring visible. Background of salvage tech and vintage repair tools, warm amber worklight casting gentle shadows on weathered face. Cyberpunk 2226, GLMZ aesthetic, intimate and timeless, knowing expression. --ar 2:3 --v 6",
+  "image_prompt": "Zuri Okonkwo-Nygaard, elderly master technician of mixed global heritage, warm deep brown skin with golden undertones, weathered by decades of precision work, white closely-trimmed beard, short sparse white hair, dark warm brown eyes with deep laugh lines, slight frame with rounded shoulders from workbench posture, wiry strength in hands scarred from soldering and salvage work. Wearing worn grey linen shirt and brown trousers, layered with a rust-colored cap and deep indigo scarf, hand-embroidered sleeve details in reds and golds, thin smooth silver ring on left ring finger, practical scuffed shoes. Seated at worn salvage workbench surrounded by half-deconstructed cybernetic components, neon glow from diagnostics casting cyan and amber light across his weathered hands, calm knowing expression, steady eye contact, slight smile. GLMZ, Great Lakes Metropolitan Zone, intimate workshop lighting, technological yet organic, wise craftsman defying augmentation in an age of forced enhancement --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 40.2,
-    "East Asian": 26.4,
-    "Eastern European": 14.4,
-    "Hispanic/Latin American": 13.1,
-    "South Asian": 5.9
+    "Sub-Saharan African": 54.3,
+    "Northern European": 10.3,
+    "Hispanic/Latin American": 9.5,
+    "East Asian": 9.4,
+    "North African": 9.1,
+    "Southeast Asian": 7.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 54.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 6.3,
+        "Finnish": 2.1
+      },
+      "Germanic": {
+        "German": 1.6,
+        "Dutch": 0.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 7.3
+      },
+      "Central American": {
+        "Guatemalan": 0.5
+      },
+      "Caribbean": {
+        "Haitian": 1.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 3.2,
+        "Sichuanese": 6.2
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 2.6,
+        "Tuareg": 2.3
+      },
+      "Maghreb": {
+        "Moroccan": 4.2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 7.4
+      }
+    }
+  }
 }

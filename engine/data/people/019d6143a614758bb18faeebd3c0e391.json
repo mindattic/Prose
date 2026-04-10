@@ -1,7 +1,7 @@
 {
   "id": "019d6143a614758bb18faeebd3c0e391",
   "type": "character",
-  "name": "Soren Holm",
+  "name": "Soren Guerrero",
   "aliases": [
     "Fen",
     "The Curator",
@@ -14,7 +14,7 @@
   "age": 58,
   "status": "active",
   "location": "The Meridian Core, near State and Madison",
-  "description": "Fenwick is a tall, lean Nigerian-British man whose physical presence is dominated by an almost architectural stillness—he moves through rooms the way expensive furniture does, occupying space with an authority that has nothing to do with aggression. His hair is silver and kept close-cropped; his skin is deep brown and largely unlined in a way that suggests either good genetics or access to skin-maintenance procedures he would consider too vulgar to discuss. He dresses in understated, exquisitely tailored clothing in charcoal and navy, always with a physical notebook in a breast pocket, always with cufflinks that are slightly too interesting to be accidental. His eyes are warm brown with the faint reflective quality of high-end retinal overlays, and he has the practiced habit of looking at people as though they are the most interesting document he has encountered today.\n\nFenwick serves as Senior Archivist for the Meridian Core's largest private institutional repository—nominally a preservation and records management role, practically a position of extraordinary covert power. He has spent thirty years accumulating, organizing, and quietly leveraging information that powerful people would prefer did not exist in organized form. He does not blackmail. He considers blackmail crude and unstable. What he does instead is position himself as the person who can make problems go away, who knows where the inconvenient documentation lives, who has relationships on every floor of every tower in the Core. He is expensive to retain and priceless to cross.\n\nHe came to GLMZ from London at twenty-eight, trailing a first-class archival science degree and a deliberate decision to go where the information was least organized and therefore most powerful. He has outlasted six corporate administrations, two regime changes at the city level, and one assassination attempt he has never publicly acknowledged. He is not cruel, which people mistake for softness. He is not sentimental, which people mistake for coldness. He is, above all things, patient—and in a city that runs on speed, patience is the most dangerous thing you can be.",
+  "description": "Soren Guerrero is a tall, lean Nigerian-British man whose physical presence is dominated by an almost architectural stillness—he moves through rooms the way expensive furniture does, occupying space with an authority that has nothing to do with aggression. His hair is silver and kept close-cropped; his skin is deep brown and largely unlined in a way that suggests either good genetics or access to skin-maintenance procedures he would consider too vulgar to discuss. He dresses in understated, exquisitely tailored clothing in charcoal and navy, always with a physical notebook in a breast pocket, always with cufflinks that are slightly too interesting to be accidental. His eyes are warm brown with the faint reflective quality of high-end retinal overlays, and he has the practiced habit of looking at people as though they are the most interesting document he has encountered today.\n\nSoren Guerrero serves as Senior Archivist for the Meridian Core's largest private institutional repository—nominally a preservation and records management role, practically a position of extraordinary covert power. He has spent thirty years accumulating, organizing, and quietly leveraging information that powerful people would prefer did not exist in organized form. He does not blackmail. He considers blackmail crude and unstable. What he does instead is position himself as the person who can make problems go away, who knows where the inconvenient documentation lives, who has relationships on every floor of every tower in the Core. He is expensive to retain and priceless to cross.\n\nHe came to GLMZ from London at twenty-eight, trailing a first-class archival science degree and a deliberate decision to go where the information was least organized and therefore most powerful. He has outlasted six corporate administrations, two regime changes at the city level, and one assassination attempt he has never publicly acknowledged. He is not cruel, which people mistake for softness. He is not sentimental, which people mistake for coldness. He is, above all things, patient—and in a city that runs on speed, patience is the most dangerous thing you can be.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -235,7 +235,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,37 +250,18 @@
   "related_entities": [
     "The Meridian Core",
     "Meridian Core",
-    "GLMZ",
+    "The Accidental",
     "Fenwick Float",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "ARCHIVE",
-    "Lazarus LX-2 'Lab Rat'",
+    "Charcoal",
+    "Patience",
     "Silver",
-    "Bioacoustic Communication Membrane",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Emeka Johansson-Orozco",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Narrowcast",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Slagworks Industrial",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Archive",
-    "The Pure Hand",
-    "The Question",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yuki Nwosu-Petrenko",
-    "Zurab Ivanov-Appiah"
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Lazarus LX-2 'Lab Rat'",
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Complex Pan-Global ancestry: Sub-Saharan African (25.3%), East Asian (22.3%), South Asian (17.2%), Pacific Islander (15.6%), Hispanic/Latin American (13.1%), North African (6.5%). This combination produces warm medium-to-deep brown skin with subtle undertones from multiple lineages—hints of golden warmth from East and South Asian ancestry, enhanced depth from Sub-Saharan and North African heritage, with a barely-perceptible warm reddish cast from Pacific Islander and Hispanic ancestry. The result is a richly complex skin tone that shifts subtly in different lighting.",
+    "heritage": "Complex Pan-Global ancestry: Hispanic/Latin American (54.5%), Central Asian (23.4%), Sub-Saharan African (12.9%), South Asian (6.1%), Eastern European (3.1%). This combination produces warm medium-to-deep brown skin with subtle undertones from multiple lineages—golden warmth enhanced by Central Asian and South Asian ancestry, deepened by Sub-Saharan heritage, with a warm reddish-bronze cast from Hispanic/Latin American ancestry. The result is a richly complex skin tone that shifts subtly in different lighting, suggesting both Mediterranean and equatorial influences.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Lean and architecturally composed, with the long-limbed proportion of someone who has never needed to assert physicality. Minimal body fat, shoulders slightly narrow relative to height, suggesting a frame built for stillness rather than motion.",
@@ -288,8 +269,8 @@
     "hair_style": "Close-cropped, geometrically precise",
     "hair_length": "Short",
     "eye_color": "Warm brown with faint reflective grid-pattern quality in low light (retinal overlay signature)",
-    "skin_tone": "Warm medium-deep brown with subtle golden and reddish undertones from diverse ancestry blend",
-    "complexion": "Remarkably smooth with minimal creasing around eyes and mouth—consistent with either exceptional genetics or discreet dermatological maintenance. Facial structure reflects multi-continental heritage: subtle East Asian cheekbone definition, broader nasal bridge with Sub-Saharan and South Asian characteristics, warm brown tone enhanced by Pacific Islander and North African ancestry. No visible damage, no visible emotion. Expression is composed and observational. Grooming is immaculate without appearing effortful.",
+    "skin_tone": "Warm medium-deep bronze-brown with golden and reddish undertones from Hispanic/Latin American, Central Asian, and Sub-Saharan heritage blend",
+    "complexion": "Remarkably smooth with minimal creasing around eyes and mouth—consistent with either exceptional genetics or discreet dermatological maintenance. Facial structure reflects multi-continental heritage: subtle Central Asian cheekbone definition and eye shape, broader nasal bridge with Sub-Saharan and South Asian characteristics, warm bronzed-brown tone enhanced by Latin American and Mediterranean ancestry. No visible damage, no visible emotion. Expression is composed and observational. Grooming is immaculate without appearing effortful.",
     "distinguishing_marks": [
       "Faint linear scar on left temple, approximately 3cm, barely visible but suggests a healed impact wound from his early thirties",
       "Surgical scar along right jawline, minimal but present, possibly from corrective work or augmentation installation"
@@ -298,17 +279,63 @@
     "posture_movement": "Moves with deliberate economical precision—no wasted motion, no fidgeting, no postural restlessness. Occupies space with architectural authority rather than physical presence. Sits with composed spine, stands with hands at rest. Walks as though following an internal map. Default expression is attentive and slightly warm, with the quality of someone listening to information rather than people.",
     "clothing_style": "Understated Tier-1 corporate formalism: bespoke charcoal and navy tailoring, always perfectly fitted and made from expensive non-synthetic blends. Dress shirts in pale blue or white, worn with cufflinks that are subtly distinctive (vintage materials, unusual metalwork) without advertising themselves. Dark wool trousers with precise creasing. Leather shoes in black or dark brown, worn with the polish of religious maintenance. A physical leather notebook in his breast pocket, always. A wristwatch in brushed steel—functional, expensive, analog-digital hybrid. No unnecessary jewelry beyond the cufflinks. The overall effect is of someone who dresses for information acquisition rather than impression management, which paradoxically makes him memorable."
   },
-  "image_prompt": "Soren Holm, tall lean cyberpunk corporate executive with warm deep brown skin and subtle golden undertones from pan-global ancestry, silver close-cropped hair, composed expression. Wearing bespoke charcoal tailoring, pale blue dress shirt, brushed steel watch, leather notebook visible in breast pocket. Standing in sleek GLMZ corporate tower interior with floor-to-ceiling windows showing neon-lit Great Lakes skyline at dusk. Cool blue and amber lighting, architectural shadows emphasizing his precise posture. Faint grid-pattern reflection visible in his eyes suggesting retinal overlays. Immaculate grooming, no visible augmentations except subtle ocular tech. Analog-digital hybrid aesthetic. Atmospheric cyberpunk 2226 setting. --ar 2:3 --v 6",
+  "image_prompt": "Soren Guerrero, tall lean man with silver close-cropped hair, warm bronze-brown skin with multi-ethnic features reflecting Central Asian, Latin American, and Sub-Saharan African heritage, subtle facial scars on temple and jawline, wearing bespoke charcoal tailored suit with pale blue dress shirt and vintage cufflinks, brushed steel analog-digital wristwatch, physical leather notebook visible in breast pocket, dark leather shoes, immaculate grooming, composed posture, attentive expression, standing in minimalist corporate office with soft indirect lighting, faint retinal overlay grid-pattern visible in eyes under low light, GLMZ 2200s Great Lakes Metropolitan Zone, cool ambient lighting with warm skin undertones, professional and observational demeanor, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 25.3,
-    "East Asian": 22.3,
-    "South Asian": 17.2,
-    "Pacific Islander": 15.6,
-    "Hispanic/Latin American": 13.1,
-    "North African": 6.5
+    "Hispanic/Latin American": 54.5,
+    "Central Asian": 23.4,
+    "Sub-Saharan African": 12.9,
+    "South Asian": 6.1,
+    "Eastern European": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 27.7
+      },
+      "South American": {
+        "Venezuelan": 15.6,
+        "Colombian": 11.2
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Turkmen": 4
+      },
+      "Iranian Central": {
+        "Tajik": 9.6,
+        "Hazara": 5.1
+      },
+      "Mongolic": {
+        "Buryat": 3.1,
+        "Mongolian": 1.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 9.7,
+        "Ghanaian": 3.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 3
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1,
+        "Pashtun": 0.4
+      },
+      "Indian": {
+        "Punjabi": 1.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Slovenian": 3.1
+      }
+    }
+  }
 }

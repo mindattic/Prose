@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cb7871bf5d2f1d6cd6570d",
   "type": "character",
-  "name": "Nyx Bah-Ghorbani-Cardenas",
+  "name": "Nyx Sepúlveda-Solberg-Cardenas",
   "aliases": [
     "the Spark",
     "Brother Seun"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Brightmoor Reclamation, in a self-built meditation cell within a decommissioned Ferrogate Transit relay station, near Kedzie and Division",
-  "description": "Seun Vrančić-Amara is lean to the point of austerity, which is the point. His head is shaved except for a single braid at the crown, threaded with a fiber optic filament that glows soft amber — not vanity, he insists, but a wick, a visible sign of the current he is trying to cultivate in himself. He has dark skin with warm undertones, large quiet eyes, and the kind of stillness in his body that makes people speak more honestly than they intended to. He keeps his nails very clean, which stands out in Brightmoor. He is twenty-three months into a forty-eight month self-imposed circuit retreat, which means he has given up most personal device use, accepts no payment for spiritual services, and eats one real meal per day.\n\nHis theology draws from chrome prayer tradition but he has stripped it to something starker: all consciousness — human, synthetic, and E.L.F. — is the same signal passing through different substrates. The practice is learning to feel that signal in your own body without the buffer of technology. He came to this after a Tessera subsidiary he worked for as a junior logistics analyst was dissolved overnight, erasing his pension, his apartment lease, and two years of his life in a single corponation decision. The anger turned inward, then turned into this. He is not entirely at peace with what he is doing, which makes him more honest about it than most.",
+  "description": "Nyx Sepúlveda-Solberg-Cardenas is lean to the point of austerity, which is the point. His head is shaved except for a single braid at the crown, threaded with a fiber optic filament that glows soft amber — not vanity, he insists, but a wick, a visible sign of the current he is trying to cultivate in himself. He has dark skin with warm undertones, large quiet eyes, and the kind of stillness in his body that makes people speak more honestly than they intended to. He keeps his nails very clean, which stands out in Brightmoor. He is twenty-three months into a forty-eight month self-imposed circuit retreat, which means he has given up most personal device use, accepts no payment for spiritual services, and eats one real meal per day.\n\nHis theology draws from chrome prayer tradition but he has stripped it to something starker: all consciousness — human, synthetic, and E.L.F. — is the same signal passing through different substrates. The practice is learning to feel that signal in your own body without the buffer of technology. He came to this after a Tessera subsidiary he worked for as a junior logistics analyst was dissolved overnight, erasing his pension, his apartment lease, and two years of his life in a single corponation decision. The anger turned inward, then turned into this. He is not entirely at peace with what he is doing, which makes him more honest about it than most.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -157,7 +157,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brightmoor Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,29 +179,15 @@
     "Sulfur Crown Agriculture",
     "Irontide Tidal Energy",
     "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Circuit",
+    "Honest Burger",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Coffin Nails",
-    "Wick Solomon",
-    "Alper Holmberg-Dembele",
-    "Amara Osei-Dzhaparidze",
-    "Aïda Połczyńska-Ouattara",
-    "Highland Park Autonomous Zone",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "MindBridge Relay One Social Integration BCI",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Saodat Mirzoyan-Fubara",
-    "Seun Marchetti-Baig",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Open Circuit",
-    "The Pure Hand",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Wick Solomon"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Northern European, Sub-Saharan African, and Middle Eastern ancestry. The genetic blend creates warm medium-to-deep brown skin with subtle golden undertones from the Latin American and Middle Eastern heritage, layered with the richness from African ancestry. Features reflect this polyphonic mix: high, defined cheekbones suggesting Latin American structure, warm depth from African heritage, and fine facial proportions from Northern European ancestry.",
+    "heritage": "Hispanic/Latin American (54.3%), Southeast Asian (32.3%), and South Asian (13.4%) ancestry create a striking polyphonic blend. The genetic combination produces warm medium-brown skin with subtle golden and olive undertones from the Southeast and South Asian heritage, layered with the warmth of Latin American ancestry. Features reflect this mix: high, defined cheekbones with the refined structure of Southeast Asian heritage, warm depth and richness in skin tone from Latin American ancestry, and fine facial proportions enhanced by South Asian ancestry. The overall effect is distinctive and balanced — neither clearly one heritage nor another, but a harmonious convergence.",
     "height_cm": 177,
     "weight_kg": 68,
     "build": "Lean and spare, almost ascetic — the thinness of deliberate discipline rather than deprivation. Long lean muscles visible in forearms and neck. Minimal body fat. Moves with economical precision.",
@@ -209,8 +195,8 @@
     "hair_style": "Shaved scalp except for a single crown braid threaded with amber fiber optic filament that glows softly with ambient current",
     "hair_length": "Shaved except for single braid",
     "eye_color": "Deep brown, warm, unaugmented",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting the blend of Latin American, African, and Middle Eastern heritage",
-    "complexion": "Smooth, clean-shaven face with high, defined cheekbones and a quiet, composed expression. Eyes are large and still — they hold attention without demanding it. The bone structure shows the polyphonic heritage: sharp Latin American cheeklines softened by warm African skin depth, with fine proportions suggesting Northern European ancestry. Nails meticulously clean and trimmed, an unusual detail in Brightmoor. Overall grooming reflects intentional care despite ascetic practice.",
+    "skin_tone": "Warm medium brown with golden and olive undertones, reflecting the blend of Hispanic/Latin American (54.3%), Southeast Asian (32.3%), and South Asian (13.4%) heritage",
+    "complexion": "Smooth, clean-shaven face with high, defined cheekbones and a quiet, composed expression. Eyes are large and still — they hold attention without demanding it. The bone structure shows Southeast Asian refinement with warm Latin American skin depth and South Asian facial proportions. Fine-featured face with balanced symmetry across multiple heritage lineages. The overall effect is striking without being conventionally uniform — each heritage visible in the harmonious convergence of features. Nails meticulously clean and trimmed, an unusual detail in Brightmoor. Overall grooming reflects intentional care despite ascetic practice.",
     "distinguishing_marks": [
       "Amber-glowing fiber optic filament threaded through single crown braid, visible neural integration point at base of skull with faint scar tissue",
       "Small copper-colored port scar at left temple, capped and unused, legacy of corporate logistics work"
@@ -219,16 +205,46 @@
     "posture_movement": "Sits and stands with deliberate stillness — not rigid, but economical. Moves slowly, with full awareness of each motion. Speaks rarely and listens with complete attention. Hands are expressive when they move, fingers long and precise.",
     "clothing_style": "Tier 3-4 ascetic minimalism. Worn linen shirts, simple dark trousers, no logos or corporate branding. Favors natural fibers. Single woven belt. A single piece of jewelry — a thin copper wire bracelet on left wrist. Canvas work shoes, scuffed from relay station maintenance. Overall appearance is deliberately plain, suggesting spiritual practice rather than poverty."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Nyx Bah-Ghorbani-Cardenas, 177cm lean ascetic figure with warm deep brown skin glowing with golden undertones, sharp high cheekbones reflecting polyphonic Hispanic/African/Northern European heritage, shaved head with single amber fiber optic braid glowing softly at crown, deep brown unaugmented eyes holding quiet stillness, small copper port scar barely visible at left temple, meticulously groomed despite ascetic discipline, wearing worn linen shirt and simple dark trousers with thin copper wire bracelet on left wrist, seated in stillness with economical precision, hands expressive with long precise fingers, Great Lakes Metropolitan Zone relay station setting with soft ambient electromagnetic glow catching the braid, cool neon-tinged cyberpunk lighting, spiritual contemplative mood, film noir aesthetic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Nyx Sepúlveda-Solberg-Cardenas, 177cm tall lean ascetic figure with warm medium-brown skin blending Southeast Asian, South Asian, and Latin American heritage. Deep unaugmented brown eyes, high defined cheekbones, fine facial proportions. Shaved scalp with single braided crown threaded with glowing amber fiber optic filament that softly illuminates. Small copper port scar at left temple. Clean-shaven, composed expression with quiet intensity. Wearing worn natural linen shirt, simple dark trousers, woven belt, thin copper wire bracelet on left wrist. Economical posture, still and deliberate movement. Minimalist ascetic style, scuffed canvas work shoes. Soft cool industrial lighting casting warm amber glow from neural braid. Great Lakes Metropolitan Zone relay station interior, sparse and utilitarian. Mood: serene discipline, quiet focus, spiritual practice amidst neon-lit megacity. Intricate detail on facial bone structure and heritage blending, cybernetic subtlety --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 55.9,
-    "Northern European": 17.9,
-    "Sub-Saharan African": 14.8,
-    "Middle Eastern": 10.2,
-    "Indigenous American": 1.2
+    "Hispanic/Latin American": 54.3,
+    "Southeast Asian": 32.3,
+    "South Asian": 13.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 33.9
+      },
+      "Caribbean": {
+        "Haitian": 12.9,
+        "Puerto Rican": 3.7
+      },
+      "South American": {
+        "Colombian": 3.1,
+        "Venezuelan": 0.7
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 32.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 3.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.4
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 4.7,
+        "Baloch": 1.4
+      }
+    }
+  }
 }

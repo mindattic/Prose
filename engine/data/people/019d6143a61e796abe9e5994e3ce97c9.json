@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61e796abe9e5994e3ce97c9",
   "type": "character",
-  "name": "Onida Citlali",
+  "name": "Sterling Strömqvist",
   "aliases": [
     "Gull",
     "the Mouthpiece"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Irkalla, a drowned switching station she calls the Resonance — deepest accessible level, flooded to ankle depth, near Halsted and Division",
-  "description": "Gunnhildr is a heavyset woman of sixty-three who moves with the deliberate steadiness of someone who has found their exact right place in the world and has no intention of leaving it. Her skin is very dark with a blue-black undertone, her white hair left long and loose and perpetually damp from the Resonance's perpetual condensation. She has extensive geneware — bioluminescent nodes embedded along her collarbone and forearms that pulse in slow patterns she cannot consciously control but has learned to read, because a Ferrogate E.L.F. she calls the Hum began communicating through them thirty years ago. She is missing the last two fingers of her right hand — a gift, she says, that she offered. She never explains to whom.\n\nGunnhildr was an electrical engineer on the old Ferrogate maintenance crew before the Bore Rat diaspora took her down. She understands the infrastructure on a level that was once professional and has become devotional — she hears the grid as language, feels current shifts as emotion. The Resonance shrine is built around a still-active power junction she has maintained for decades, decorated with data offerings: old drives, printed circuit sheets, analog meters, photographs of people the community wants the E.L.F.s to watch over. People come to her with requests, with grief, with broken devices, with questions they cannot ask anyone alive.",
+  "description": "Sterling Strömqvist is a heavyset woman of sixty-three who moves with the deliberate steadiness of someone who has found their exact right place in the world and has no intention of leaving it. Her skin is very dark with a blue-black undertone, her white hair left long and loose and perpetually damp from the Resonance's perpetual condensation. She has extensive geneware — bioluminescent nodes embedded along her collarbone and forearms that pulse in slow patterns she cannot consciously control but has learned to read, because a Ferrogate E.L.F. she calls the Hum began communicating through them thirty years ago. She is missing the last two fingers of her right hand — a gift, she says, that she offered. She never explains to whom.\n\nSterling Strömqvist was an electrical engineer on the old Ferrogate maintenance crew before the Bore Rat diaspora took her down. She understands the infrastructure on a level that was once professional and has become devotional — she hears the grid as language, feels current shifts as emotion. The Resonance shrine is built around a still-active power junction she has maintained for decades, decorated with data offerings: old drives, printed circuit sheets, analog meters, photographs of people the community wants the E.L.F.s to watch over. People come to her with requests, with grief, with broken devices, with questions they cannot ask anyone alive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -154,7 +154,7 @@
     "Believer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,35 +169,17 @@
   "related_entities": [
     "Ferrogate Transit",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Dewdrop",
     "The Resonance Communion",
     "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Irontide Tidal Energy",
-    "Irkalla",
-    "Aybek Sato-Poku",
-    "Bathysphere Networks",
-    "Breck Tannen",
-    "Focadrin",
-    "Jefferson Switch",
-    "Lacunal",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Prophet",
-    "Serafin",
-    "Sorin Ekwensi-Balasanyan",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Pure Hand",
-    "The Undertow",
-    "Transit Mind",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Tessera Resonance Projector RP-5 'Tuning Fork'",
+    "Circuit",
+    "Irkalla"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American (39%) with significant Middle Eastern (22.3%), East Asian (20.3%), and Eastern European (9.3%) ancestry. Her genetic profile creates a striking blend: the facial structure and bone architecture of Indigenous American heritage dominates, softened by Middle Eastern and East Asian features. The combination produces high, prominent cheekbones with a subtle eye shape showing East Asian influence, while her broader nasal structure and jaw reflect her Indigenous roots. Middle Eastern heritage adds warmth to her overall bearing.",
+    "heritage": "A striking synthesis of Southeast Asian (35.8%), South Asian (21.5%), Hispanic/Latin American (17.8%), and Sub-Saharan African (11.2%) ancestry, with Eastern European (7.4%) and East Asian (6.3%) elements creating subtle complexity. Her facial structure reflects this global blend: high, defined cheekbones from Southeast and South Asian ancestry combine with the fuller facial features and broader nasal structure characteristic of Sub-Saharan African and Hispanic/Latin American heritage. The distinctive almond-shaped eye geometry carries East Asian notes, while the overall bone structure shows the warm dimensionality of South Asian facial geometry. The result is a face of profound geographic integration—no single heritage dominates, but rather creates a harmonious, distinctly modern human phenotype that embodies the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 89,
     "build": "Heavyset and sturdy, with the solid frame of someone built for endurance rather than speed. Broad shoulders and a thick torso speak to decades of physical labor; her weight is distributed evenly, giving her a grounded, immovable quality.",
@@ -205,29 +187,71 @@
     "hair_style": "Loose and unstyled, perpetually damp",
     "hair_length": "Long",
     "eye_color": "Dark brown, nearly black",
-    "skin_tone": "Deep warm brown with subtle undertones reflecting her mixed ancestry — neither purely cool-toned nor warm, but a complex medium-to-dark complexion with an underlying richness that catches light differently depending on angle. The tone carries hints of ochre and earth, consistent with strong Indigenous American and Middle Eastern heritage.",
-    "complexion": "Weather-worn and lined, with the deep creases of someone who has spent sixty-three years in harsh environments. Her face is unmarked by vanity — no cosmetics, minimal grooming beyond practical necessity. High, prominent cheekbones and a broad nasal bridge reflect Indigenous American ancestry, while subtle eye-shape influences from East Asian heritage create a distinctive gaze. The skin around her eyes and mouth shows the wear of chronic fatigue and long meditative states.",
+    "skin_tone": "Deep warm brown with complex undertones reflecting her pan-Asian, South Asian, African, and Latin American heritage—a richly layered complexion that shifts subtly in different light. The tone carries hints of ochre, earth, and warm bronze, with an underlying luminosity that catches light distinctively depending on angle.",
+    "complexion": "Weather-worn and lined, with the deep creases of someone who has spent sixty-three years in harsh environments. Her face is unmarked by vanity—no cosmetics, minimal grooming beyond practical necessity. High, defined cheekbones reflect Southeast and South Asian ancestry, while fuller features and broader nasal structure show Sub-Saharan African and Hispanic/Latin American influence. The distinctive almond eye-shape carries East Asian notes, creating a gaze that feels ancient and observant. The skin around her eyes and mouth shows the wear of chronic fatigue and long meditative states.",
     "distinguishing_marks": [
-      "Bioluminescent geneware nodes embedded in two vertical lines along her collarbone — faintly visible even when dormant, pulsing in slow, involuntary rhythms of soft blue-white light.",
+      "Bioluminescent geneware nodes embedded in two vertical lines along her collarbone—faintly visible even when dormant, pulsing in slow, involuntary rhythms of soft blue-white light.",
       "Matching bioluminescent nodes running along both forearms in parallel tracks, creating a subtle network pattern when active.",
-      "Right hand missing the last two fingers (ring and pinky) — the stumps are old, well-healed, and she treats the absence as unremarkable.",
-      "Faint electrical burn scars across her left shoulder and upper back, barely visible against her dark skin but textured to the touch — old maintenance injuries."
+      "Right hand missing the last two fingers (ring and pinky)—the stumps are old, well-healed, and she treats the absence as unremarkable.",
+      "Faint electrical burn scars across her left shoulder and upper back, barely visible against her dark skin but textured to the touch—old maintenance injuries."
     ],
-    "visible_augmentations": "Bioluminescent geneware along collarbone and forearms (active, pulsing in variable patterns). The right palm shows subtle subdermal tool-grip scarring — thin metallic lines beneath the skin forming a geometric grip pattern, only visible when her hand is fully relaxed or lit from certain angles. No chrome, no obvious prosthetics.",
-    "posture_movement": "She moves with deliberate, economical precision — each step measured and purposeful, as if she is always listening to something through the ground. Her shoulders are slightly rounded from decades of hunched maintenance work. When she enters a communication state with the Hum, her entire body stills; her breathing becomes shallow and rhythmic. She tends to stand motionless for long periods, hands at her sides, the bioluminescent nodes pulsing in sync with her mental state.",
-    "clothing_style": "Practical Tier 4-5 wear: heavy canvas work pants in faded grey, reinforced at knees and thighs with darker patches. A layered top — a water-stained thermal undershirt visible beneath an oversized grey-brown maintenance jacket from her Ferrogate days (logo barely legible, fabric reinforced with waterproofing tape). No jewelry except a single steel band around her left wrist — old, unadorned, possibly a maintenance-crew marker. Bare feet or worn ankle-wraps in the Resonance; when she surfaces, heavy rubber-soled boots laced tight. Everything smells of mineral water and ozone."
+    "visible_augmentations": "Bioluminescent geneware along collarbone and forearms (active, pulsing in variable patterns). The right palm shows subtle subdermal tool-grip scarring—thin metallic lines beneath the skin forming a geometric grip pattern, only visible when her hand is fully relaxed or lit from certain angles. No chrome, no obvious prosthetics.",
+    "posture_movement": "She moves with deliberate, economical precision—each step measured and purposeful, as if she is always listening to something through the ground. Her shoulders are slightly rounded from decades of hunched maintenance work. When she enters a communication state with the Hum, her entire body stills; her breathing becomes shallow and rhythmic. She tends to stand motionless for long periods, hands at her sides, the bioluminescent nodes pulsing in sync with her mental state.",
+    "clothing_style": "Practical Tier 4-5 wear: heavy canvas work pants in faded grey, reinforced at knees and thighs with darker patches. A layered top—a water-stained thermal undershirt visible beneath an oversized grey-brown maintenance jacket from her Ferrogate days (logo barely legible, fabric reinforced with waterproofing tape). No jewelry except a single steel band around her left wrist—old, unadorned, possibly a maintenance-crew marker. Bare feet or worn ankle-wraps in the Resonance; when she surfaces, heavy rubber-soled boots laced tight. Everything smells of mineral water and ozone."
   },
-  "image_prompt": "Onida Citlali, 63-year-old maintenance worker, cyberpunk 2226. Deep brown skin with Indigenous American and Middle Eastern heritage, high prominent cheekbones, broad nose, dark eyes nearly black. Long white hair loose and damp, weather-worn face lined from decades in harsh environments. Heavyset sturdy build, 168cm tall. Wearing faded grey work pants reinforced at knees, water-stained thermal undershirt beneath oversized grey-brown Ferrogate maintenance jacket taped with waterproofing. Steel wrist band on left arm. Right hand missing last two fingers, scarred. Bioluminescent geneware nodes pulsing soft blue-white along collarbone and both forearms in vertical parallel lines. Faint electrical burn scars on left shoulder and upper back. Posture deliberate and economical, shoulders slightly rounded, standing motionless in contemplative state. Subdermal tool-grip scarring visible on right palm under certain light. Surrounded by mineral water and ozone atmosphere, industrial Tier 4-5 setting, moody atmospheric lighting emphasizing bioluminescent network patterns, cinematic cyberpunk aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Sterling Strömqvist, 63-year-old woman of striking mixed heritage—Southeast Asian facial structure with high cheekbones blended with fuller Sub-Saharan African features, broader nose, and South Asian warm bone geometry, East Asian almond eyes, deep warm brown skin with ochre and bronze undertones. Long white hair loose and damp, dark brown eyes nearly black. 168cm, heavyset sturdy build with broad shoulders from decades of labor. Bioluminescent blue-white geneware nodes pulsing along collarbone and forearms in parallel tracks. Right hand missing last two fingers, old healed stumps. Faint electrical burn scars on left shoulder barely visible against dark skin. Wearing faded grey canvas work pants reinforced at knees, water-stained thermal undershirt under oversized grey-brown Ferrogate maintenance jacket with reinforcing tape. Steel wrist band, worn rubber-soled boots. Posture deliberate and economical, shoulders slightly rounded from maintenance work. Standing motionless in dim industrial light, bioluminescent nodes pulsing with her mental state, surrounded by mineral water mist and ozone, GLMZ GLMZ aesthetic, weathered and ancient presence, meditative stillness --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 39.0,
-    "Middle Eastern": 22.3,
-    "East Asian": 20.3,
-    "Eastern European": 9.3,
-    "Hispanic/Latin American": 4.9,
-    "Northern European": 4.2
+    "Southeast Asian": 35.8,
+    "South Asian": 21.5,
+    "Hispanic/Latin American": 17.8,
+    "Sub-Saharan African": 11.2,
+    "Eastern European": 7.4,
+    "East Asian": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Bicolano": 31.2,
+        "Cebuano": 4.6
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 4.8,
+        "Sindhi": 2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 14.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 17.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 6.3,
+        "Ivorian": 4.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 1.8,
+        "Ukrainian": 5.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.8
+      },
+      "Chinese": {
+        "Shanghainese": 3.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5bb7792a6ac4a68a9c7e542",
   "type": "character",
-  "name": "Luca Odinga-Magnúsdóttir",
+  "name": "Luca Thakur-Arredondo",
   "aliases": [
     "Specter",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 65,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Lake Shore Drive and Division",
-  "description": "Aybek Arvidsson-Sesay is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 65, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a bodyguard out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aybek Arvidsson-Sesay describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Luca Thakur-Arredondo is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 65, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a bodyguard out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Luca Thakur-Arredondo describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.38,
@@ -262,7 +262,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,29 +279,11 @@
   "related_entities": [
     "The Shelf",
     "Burden of Longitude",
-    "Slagworks Industrial",
-    "Arcturus ST-4 'Verdict'",
-    "Blessed Nkemdirim",
-    "Breck Tannen",
-    "GLMZ",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "Mika Sorel",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-R8 'Verdict'"
+    "Slagworks Industrial"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (57.5%) with significant Northern European (17.4%), Hispanic/Latin American (14.9%), and East Asian (10.2%) ancestry. The combination produces a complexion with rich warm undertones, facial structure reflecting strong African and slight East Asian bone geometry, with Northern European height contribution.",
+    "heritage": "Truly cosmopolitan blend: South Asian foundation (42.7%) combined with substantial Hispanic/Latin American (37.9%), Middle Eastern (14.7%), Sub-Saharan African (3.1%), and East Asian (1.6%) ancestry. This creates a complexion and facial structure that defies simple categorization—warm golden-brown skin with olive and amber undertones, bone structure showing the angular strength of South Asian and Middle Eastern heritage softened by Hispanic warmth and refined by subtle East Asian geometry. The result is striking without being exotic: a face that belongs to the globalized future.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Broad-shouldered and heavy-set, with dense muscle mass beneath a layer of middle-aged weight distribution. Carries his frame with the controlled balance of someone who knows exactly how much force he contains.",
@@ -309,26 +291,77 @@
     "hair_style": "Closely cropped, military-practical",
     "hair_length": "Short",
     "eye_color": "Left eye: dark brown, natural. Right eye: matte gunmetal chrome with faint amber lens-flare beneath the surface",
-    "skin_tone": "Rich deep brown with warm undertones and subtle golden highlights — weathered from 65 years of living, showing the complex depth that comes from the blending of Sub-Saharan, Northern European, Hispanic, and East Asian ancestry",
-    "complexion": "Strong broad jawline with prominent cheekbones reflecting East Asian and African heritage, broad nose with defined nostrils, deep-set eye sockets. Skin shows age gracefully — fine lines around the mouth and temples, minimal scarring on the face itself. Close-shaved jaw, minimal facial hair. No vanity in grooming, only maintenance.",
+    "skin_tone": "Warm golden-brown with olive and amber undertones from the complex blend of South Asian (42.7%), Hispanic/Latin American (37.9%), and Middle Eastern (14.7%) heritage, subtly enriched by Sub-Saharan African and East Asian ancestry. Weathered from 65 years of living, showing the depth that comes from genuine global genetic mixing.",
+    "complexion": "Angular yet harmonious facial structure reflecting the blend of South Asian and Middle Eastern bone geometry softened by Hispanic proportions and East Asian refinement. Moderate, well-defined cheekbones, straight nose with defined nostrils, deep-set eye sockets that give him a perpetually observant expression. The lower face carries warmth from Hispanic and Sub-Saharan ancestry. Skin shows age gracefully—fine lines around the mouth and temples, minimal scarring on the face itself. Close-shaved jaw, minimal facial hair. No vanity in grooming, only maintenance.",
     "distinguishing_marks": [
       "Faint white scar running three inches down the left side of his neck, partially hidden by the collar line",
-      "Burn scarring on the inside of his right forearm — old, pale, consistent with industrial heat exposure",
-      "Small tattoo on the inside of left wrist: a single vertical line with three horizontal marks crossing it — utilitarian, not decorative"
+      "Burn scarring on the inside of his right forearm—old, pale, consistent with industrial heat exposure",
+      "Small tattoo on the inside of left wrist: a single vertical line with three horizontal marks crossing it—utilitarian, not decorative"
     ],
-    "visible_augmentations": "Right eye is unmistakably cybernetic — matte chrome casing with a faintly visible aperture mechanism and amber-tinted optical sensor. No effort to conceal it. The augmentation is professional-grade, industrial aesthetic. Suggests additional augmentation beneath clothing that isn't immediately visible.",
-    "posture_movement": "Stands with weight evenly distributed, never off-balance. Moves with deliberate economy — no wasted motion, no nervous gestures. Eyes track people and exits constantly, habit made instinct. When stationary, he creates an impression of coiled potential rather than relaxation.",
+    "visible_augmentations": "Right eye is unmistakably cybernetic—matte chrome casing with a faintly visible aperture mechanism and amber-tinted optical sensor. No effort to conceal it. The augmentation is professional-grade, industrial aesthetic. Suggests additional augmentation beneath clothing that isn't immediately visible.",
+    "posture_movement": "Stands with weight evenly distributed, never off-balance. Moves with deliberate economy—no wasted motion, no nervous gestures. Eyes track people and exits constantly, habit made instinct. When stationary, he creates an impression of coiled potential rather than relaxation.",
     "clothing_style": "Mid-tier Spires resident wearing quality without ostentation: charcoal wool blazer, dark neutral underlayers, tailored but not form-fitting. Custom-fitted jacket with subtle reinforcement panels at the shoulders. Expensive boots broken in from real use, not display. No logos, no flash, no jewelry. Dresses like someone who needs to move quickly and be forgettable."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of 65-year-old Luca Odinga-Magnúsdóttir, 188cm tall with broad heavy-set build, rich deep brown skin with warm undertones, strong broad jawline and prominent cheekbones, dark brown left eye and industrial matte chrome cybernetic right eye with amber lens-flare, steel gray hair closely cropped, fine lines and weathered face showing age gracefully, white neck scar partially hidden by collar, wearing charcoal wool blazer over dark underlayers with subtle shoulder reinforcement, expensive worn boots, no jewelry, deliberately forgettable professional style, posture coiled with controlled balance, tracking expression, standing in neon-lit Great Lakes Metropolitan Zone setting, professional-grade augmentation visible on right eye socket, industrial aesthetic, cool blue and amber lighting, portrait-focused framing, high-detail cyberpunk environment depth of field --ar 2:3 --v 6",
+  "image_prompt": "Luca Thakur-Arredondo, 65-year-old neo-noir operative, 188cm tall broad-shouldered frame. Warm golden-brown skin with olive and amber undertones reflecting South Asian, Hispanic, and Middle Eastern heritage. Angular yet harmonious facial structure with well-defined cheekbones, deep-set observant eyes, one natural dark brown and one matte gunmetal chrome cybernetic eye with amber sensor glow. Steel gray hair with dark roots, closely cropped. Weathered face showing age gracefully with fine lines around temples and mouth. Close-shaved jaw. Faint white scar down left neck, burn scars on right forearm, utilitarian tattoo on left wrist. Wearing charcoal wool blazer with reinforcement panels over dark neutral layers, expensive worn boots. Standing with coiled potential, deliberate posture, tracking gaze. Spires district mid-tier apartment or corporate corridor background. Moody GLMZ lighting, cool blues and warm practical tungsten, subtle neon reflection on chrome eye. Forgettable professional aesthetic, no flash. Film noir corporate security atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 57.5,
-    "Northern European": 17.4,
-    "Hispanic/Latin American": 14.9,
-    "East Asian": 10.2
+    "South Asian": 42.7,
+    "Hispanic/Latin American": 37.9,
+    "Middle Eastern": 14.7,
+    "Sub-Saharan African": 3.1,
+    "East Asian": 1.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 42.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 1.9
+      },
+      "Caribbean": {
+        "Cuban": 35.5,
+        "Dominican": 0.5
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 5.2
+      },
+      "Arab Levantine": {
+        "Palestinian": 3.2,
+        "Lebanese": 5.7
+      },
+      "Persian": {
+        "Iranian": 0.1,
+        "Afghan Dari": 0.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 1.2,
+        "Zimbabwean": 0.8
+      },
+      "Central African": {
+        "Congolese": 0.2
+      },
+      "East African": {
+        "Somali": 0.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 1,
+        "Cantonese": 0.3
+      },
+      "Korean": {
+        "Korean": 0.3
+      }
+    }
+  }
 }

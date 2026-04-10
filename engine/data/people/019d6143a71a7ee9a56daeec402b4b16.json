@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71a7ee9a56daeec402b4b16",
   "type": "character",
-  "name": "Magnus Hossain-Björnsdóttir-Novotný",
+  "name": "Magnus Sigurdsson-Echeverría-Rhee",
   "aliases": [
     "Wren"
   ],
@@ -12,7 +12,7 @@
   "age": 13,
   "status": "active",
   "location": "Grainfort, Meridian Municipal Children's Residency Block 7 / Grainfort Artisan Foundry, near Fullerton and Damen",
-  "description": "Wren has the lean angular face of someone whose Senegalese and Samoan grandparents left them something architectural in the bone structure, wide-browed and sharp-chinned, with light brown skin that has taken on a faint iridescence from trace exposure to the foundry's vaporized mineral compounds — an unofficial and irreversible aesthetic byproduct that their supervisor Mister Achim calls 'an occupational gift.' Their hair is thick and natural, kept short on the sides, and they've woven in three copper wire coils that ring softly when they move. Their hands are already marked with the small pale scars of a working glassworker.\n\nWren was assigned to the Grainfort artisan apprenticeship lottery at eleven, which placed them at the Foundry three afternoons a week, and they took to it with a ferocity that surprised everyone. They are quiet in the way of someone who learned early that words carry cost; they observe everything and say only what needs saying. At the Residency Block they are known as the one who doesn't get involved in the house politics, which is both true and a deliberate strategy. They are saving every Φ of their apprentice stipend toward the day they can apply to leave the block system entirely.",
+  "description": "Magnus Sigurdsson-Echeverría-Rhee has the lean angular face of someone whose Senegalese and Samoan grandparents left them something architectural in the bone structure, wide-browed and sharp-chinned, with light brown skin that has taken on a faint iridescence from trace exposure to the foundry's vaporized mineral compounds — an unofficial and irreversible aesthetic byproduct that their supervisor Mister Achim calls 'an occupational gift.' Their hair is thick and natural, kept short on the sides, and they've woven in three copper wire coils that ring softly when they move. Their hands are already marked with the small pale scars of a working glassworker.\n\nMagnus Sigurdsson-Echeverría-Rhee was assigned to the Grainfort artisan apprenticeship lottery at eleven, which placed them at the Foundry three afternoons a week, and they took to it with a ferocity that surprised everyone. They are quiet in the way of someone who learned early that words carry cost; they observe everything and say only what needs saying. At the Residency Block they are known as the one who doesn't get involved in the house politics, which is both true and a deliberate strategy. They are saving every Φ of their apprentice stipend toward the day they can apply to leave the block system entirely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -153,7 +153,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grainfort",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -207,28 +207,16 @@
     "Grainfort",
     "Cinderblock Ai",
     "Ionic Thermoclastic Rifle ITR-5 'Ashmaker'",
-    "Crucible Industries CR-9 'Foundry'",
+    "The Foundry Kitchen",
     "Copper",
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pale Mile",
-    "Zheng-Dao Heavy Industries Dragon's Breath DB-8 'Kiln'",
-    "Breck Tannen",
-    "Iowan Behemoth — 'The Foundry'",
-    "Laleh Ondaatje-Garang",
-    "MERIDIAN",
-    "Narrowcast",
-    "Osvaldo Mensah-Kovalenko",
-    "Slagworks Industrial",
-    "The Heritage Vault",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VSX-7 'Strelok'",
-    "Yannick Tofauti-Szarvásy"
+    "Zheng-Dao Heavy Industries Dragon's Breath DB-8 'Kiln'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (Scandinavian/Baltic) dominant with significant South Asian heritage, complemented by Middle Eastern, Eastern European, and minor Sub-Saharan African ancestry. The genetic combination produces striking phenotypic contrast: high Northern European bone structure with warmth from South Asian and Middle Eastern pigmentation, creating a distinctive blend rarely seen in the pre-Diaspora era.",
+    "heritage": "Truly cosmopolitan genetic blend: Northern European ancestry (40.3%) provides foundational bone structure with high cheekbones and strong brow ridge, substantially modified by Hispanic/Latin American (23.7%) and East Asian (17.1%) ancestry that add midface width and warmth. Sub-Saharan African (14.2%) and South Asian (4.7%) heritage layers contribute luminous melanin distribution and subtle feature refinement. The result is a striking phenotypic synthesis: Nordic cheekbone prominence married to broader East Asian midface structure, warm golden-tan skin with complex undertones that shift in different light, and an appearance of genetic heterogeneity that transcends simple categorization.",
     "height_cm": 157,
     "weight_kg": 45,
     "build": "Lean and angular with architectural bone structure from Northern European genetics — narrow shoulders, long-limbed, minimal body fat from both genetic predisposition and the physical demands of glasswork apprenticeship",
@@ -236,8 +224,8 @@
     "hair_style": "Short on the sides with longer crown, swept back; three copper wire coils woven throughout that catch light and ring softly with movement",
     "hair_length": "Short to medium",
     "eye_color": "Dark brown with flecks of amber",
-    "skin_tone": "Warm tan with golden undertones — a nuanced blend of Northern European baseline warmed by South Asian melanin distribution and Middle Eastern pigmentation. Neither light nor deep, but luminous: the skin reads as naturally sun-kissed even in artificial light, with subtle warm ochre notes across cheekbones and temples",
-    "complexion": "High, prominent cheekbones with sharp jawline characteristic of Scandinavian-Baltic genetics, softened by fuller midface structure from South Asian ancestry. Wide-browed with strong brow ridge. Fine bone structure overall. Skin has developed a faint iridescent sheen across shoulders, neck, and forearms from chronic low-level exposure to vaporized mineral compounds in the foundry — an irreversible occupational patina that gives the skin a subtle pearlescent quality under certain light angles, shifting between pale blue-green and lavender. Skin is clean but shows the wear of early adolescent labor.",
+    "skin_tone": "Warm golden-tan with multidimensional undertones — a nuanced blend of Northern European baseline warmed by East Asian, Hispanic/Latin American, and Sub-Saharan African melanin distribution. Neither light nor deep, but luminous and complex: the skin reads as naturally sun-kissed even in artificial light, with subtle warm ochre and golden notes across cheekbones and temples that deepen slightly toward the jawline",
+    "complexion": "High, prominent cheekbones characteristic of Northern European and East Asian genetics, balanced by fuller midface structure from Hispanic/Latin American and South Asian ancestry. Wide-browed with strong brow ridge that softens toward the eyes. Fine bone structure overall with subtle width at the face. Skin has developed a faint iridescent sheen across shoulders, neck, and forearms from chronic low-level exposure to vaporized mineral compounds in the foundry — an irreversible occupational patina that gives the skin a subtle pearlescent quality under certain light angles, shifting between pale blue-green and lavender. Skin is clean but shows the wear of early adolescent labor.",
     "distinguishing_marks": [
       "Small pale linear scars across both palms and the backs of the hands — marks of a working glassworker, each a minor burn or cut from handling hot glass and sharp implements",
       "Faint mineral iridescence concentrated on forearms, shoulders, and neck — shifts between pale blue-green and lavender depending on light angle",
@@ -247,16 +235,74 @@
     "posture_movement": "Economical and composed — moves with the careful precision of someone who has learned to conserve energy and attention. Stands still more than shifts weight. Hands move with deliberate control, already developing the muscle memory of a craftsperson. Quiet in presence: doesn't take up more space than necessary",
     "clothing_style": "Tier 1-2 transitional institutional/apprentice hybrid. At the Residency: simple city-issued tunics or plain long-sleeved shirts in grey or muted blue, worn slightly oversize for durability and layering. At the Foundry: heat-resistant canvas apron dyed dark from foundry dust, reinforced cotton work shirt, sturdy boots with reinforced toes. Personal touches are minimal — the copper wire in their hair is a quiet act of autonomy. Everything is clean but well-worn, chosen for function over aesthetic."
   },
-  "image_prompt": "Portrait of Magnus Hossain-Björnsdóttir-Novotný, a lean 157cm figure with striking Nordic-South Asian mixed heritage; warm golden-tan skin with iridescent pearlescent sheen on neck and forearms shifting blue-green under light, high prominent cheekbones with sharp Nordic jawline, dark brown eyes with amber flecks, short dark brown hair with reddish undertones and three woven copper wire coils. Wearing heat-resistant foundry work shirt, canvas apron darkened by foundry dust, sturdy reinforced boots. Stands with economical precision, hands bearing fine linear scars from glasswork. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, industrial foundry lighting with neon accent glow catching mineral iridescence on skin, moody atmospheric fog, cool blue-green and lavender light play across features, professional character portrait style, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Magnus Sigurdsson-Echeverría-Rhee, lean 157cm androgynous adolescent with striking multiethnic features: high Nordic cheekbones blended with East Asian midface width, warm golden-tan luminous skin with subtle pearlescent iridescence on shoulders and neck shifting blue-green to lavender. Dark brown hair with reddish undertones, short sides swept back with three copper wire coils catching light. Dark brown eyes with amber flecks. Small pale scars on both hands from glassworking. Wearing grey oversized institutional tunic or dark heat-resistant canvas apron over reinforced cotton shirt, sturdy boots. Quiet, composed posture in GLMZ foundry or Residency setting. Economical movement, hands showing early craftsperson precision. Warm practical lighting emphasizing the mineral sheen on skin and oxidizing copper in hair. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 48.6,
-    "South Asian": 23.2,
-    "Middle Eastern": 13.8,
-    "Eastern European": 10.5,
-    "Sub-Saharan African": 3.9
+    "Northern European": 40.3,
+    "Hispanic/Latin American": 23.7,
+    "East Asian": 17.1,
+    "Sub-Saharan African": 14.2,
+    "South Asian": 4.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 16.7,
+        "Scottish": 9
+      },
+      "Scandinavian": {
+        "Danish": 0.3,
+        "Finnish": 14.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 10.6,
+        "Cuban": 5.2
+      },
+      "Mexican": {
+        "Mexican": 5.5
+      },
+      "South American": {
+        "Colombian": 2.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 3.9,
+        "Shanghainese": 0.4
+      },
+      "Japanese": {
+        "Japanese": 3.7
+      },
+      "Korean": {
+        "Korean": 9.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 1.1,
+        "Angolan": 4.4
+      },
+      "East African": {
+        "Ethiopian": 4
+      },
+      "Southern African": {
+        "Mozambican": 2.4,
+        "Zimbabwean": 2.3
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 3.1
+      },
+      "Pakistani": {
+        "Sindhi": 0.9,
+        "Baloch": 0.7
+      }
+    }
+  }
 }

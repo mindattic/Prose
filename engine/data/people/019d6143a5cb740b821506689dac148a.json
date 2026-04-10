@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cb740b821506689dac148a",
   "type": "character",
-  "name": "Onyx Cardenas-Mukherjee",
+  "name": "Onyx Cardenas-Tovar",
   "aliases": [
     "Overwatch",
     "Silence",
@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "Milwaukee Core — lives above the HVAC front office in a converted utility room he refuses to call an apartment",
-  "description": "Breck Tannen is the reason the Thermite Collective's communications never fail, their security bypasses never trigger alerts, and their extraction vehicles always start. He handles the digital infrastructure of every operation — camera loops, alarm suppression, communication encryption, vehicle systems, and the thousand invisible technical details that separate a clean extraction from a firefight. He is the quietest person in any room he enters, which is usually a server closet or the back of a van.\n\nBefore the Collective, Breck ran network security for a mid-tier GLMZ logistics company. The job was stable, boring, and slowly killing his soul. He started moonlighting as a gray-hat penetration tester — breaking into corporate security systems and selling the vulnerability reports back to the companies. It was technically illegal but morally defensible. Then a client turned out to be a front for a runner crew, and the vulnerability report was used to rob a pharmaceutical warehouse. Nobody got hurt, but Breck's legitimate career was over. Vesper found him three months later, living in the utility room above what would become the HVAC office, eating vending machine food and building signal jammers for cash.\n\nHe is lean, pale from too much screen time, with dark circles that are permanent features rather than symptoms. He wears the same rotation of three black t-shirts and cargo pants. His hands are always moving — tapping, adjusting, dismantling something. The only augmentation visible is a data jack port at the base of his skull, but his forearms are laced with subdermal antenna arrays that glow faintly blue under UV light.",
+  "description": "Onyx Cardenas-Tovar is the reason the Thermite Collective's communications never fail, their security bypasses never trigger alerts, and their extraction vehicles always start. He handles the digital infrastructure of every operation — camera loops, alarm suppression, communication encryption, vehicle systems, and the thousand invisible technical details that separate a clean extraction from a firefight. He is the quietest person in any room he enters, which is usually a server closet or the back of a van.\n\nBefore the Collective, Breck ran network security for a mid-tier GLMZ logistics company. The job was stable, boring, and slowly killing his soul. He started moonlighting as a gray-hat penetration tester — breaking into corporate security systems and selling the vulnerability reports back to the companies. It was technically illegal but morally defensible. Then a client turned out to be a front for a runner crew, and the vulnerability report was used to rob a pharmaceutical warehouse. Nobody got hurt, but Breck's legitimate career was over. Vesper found him three months later, living in the utility room above what would become the HVAC office, eating vending machine food and building signal jammers for cash.\n\nHe is lean, pale from too much screen time, with dark circles that are permanent features rather than symptoms. He wears the same rotation of three black t-shirts and cargo pants. His hands are always moving — tapping, adjusting, dismantling something. The only augmentation visible is a data jack port at the base of his skull, but his forearms are laced with subdermal antenna arrays that glow faintly blue under UV light.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -179,7 +179,7 @@
     "Improviser": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Milwaukee Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -195,52 +195,21 @@
   ],
   "related_entities": [
     "Dredge Mining Collective",
-    "GLMZ",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
     "Arcturus Defense Solutions CrisisNet BT-4 Battlefield Triage",
     "Lazarus LX-2 'Lab Rat'",
-    "Vesper",
+    "Cargo Tacos",
     "The Pure Hand",
+    "GLMZ",
     "The Pale Mile",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Nightlight",
-    "Déjà Vu",
-    "The Milwaukee Core",
-    "Alper Holmberg-Dembele",
-    "Altan Tanaka-Frimpong",
-    "Arcturus Exo-Runner Frame",
-    "Brecken Yılmaz-Osei",
-    "CLEAN SIGNAL",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Glenville Sound",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Irontide Tidal Energy",
-    "Kamala Blomberg-Konadu",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Ouroboros PG-2 'Blackout'",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "The Clock",
-    "The Collective",
-    "The Human Baseline Alliance",
-    "The Question",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "Yuki Nwosu-Petrenko",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Déjà Vu"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly South Asian (38.3%) with significant East Asian (26.5%), Hispanic/Latin American (21.3%), and Middle Eastern (13.9%) ancestry—the Ubiquitous Diaspora made manifest. Features reflect this complex blend: warm undertones from South Asian and Middle Eastern lineage, subtle eye shape influence from East Asian genetics, and warmth in cheekbone structure from Hispanic/Latin American heritage.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Indigenous American (31.9%), Hispanic/Latin American (30.4%), Northern European (14.0%), Middle Eastern (10.5%), Sub-Saharan African (9.2%), and Southeast Asian (4.0%). Features reflect this intricate genetic mosaic with warm medium-brown base skin tone carrying olive and subtle reddish undertones from Indigenous American and Hispanic/Latin American ancestry, grounded by Middle Eastern heritage influence in bone structure and brow ridge definition. High, prominent cheekbones characteristic of Indigenous American genetics, complemented by Hispanic/Latin American lineage's slightly wider facial plane. Eye shape reflects the rounder geometry of Indigenous American and African heritage rather than East Asian characteristics. Nose structure displays Middle Eastern definition with subtle bridge prominence. Overall facial geometry balances angular Indigenous American features with rounder contours from African ancestry and subtle Northern European influence in brow shape, creating striking, asymmetrical beauty.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, almost gaunt—years of irregular eating and sedentary technical work have hollowed his frame. Defined shoulders and forearms from repetitive hand work, minimal body fat, negligible muscle mass outside of functional wrist/finger strength.",
@@ -248,8 +217,8 @@
     "hair_style": "Kept short and unkempt, functional rather than groomed—swept back when it bothers him, otherwise ignored",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint digital artifacts at the periphery when augmented visual cortex is active—occasionally visible as subtle shimmer or overlay glitch",
-    "skin_tone": "Warm medium-brown with olive undertones, appearing slightly sallow from chronic lack of sunlight—extensive time in server rooms and vehicle interiors has muted the natural warmth, leaving a grayish cast",
-    "complexion": "Gaunt and angular features with high, defined cheekbones characteristic of South Asian and East Asian heritage blending. Narrow jaw with subtle width from Hispanic/Latin American genetics. Perpetual dark circles under eyes—deep enough to look like permanent bruising. Three-day stubble is his baseline; shaving is an afterthought. Skin condition shows minor neglect—dry patches at temples, occasional stress-related dermatitis on knuckles. Fine facial structure shows Middle Eastern influence in nose and brow definition.",
+    "skin_tone": "Warm medium-brown with olive and subtle reddish undertones, appearing slightly sallow from chronic lack of sunlight—extensive time in server rooms and vehicle interiors has muted the natural warmth, leaving a grayish cast that softens the underlying warm tones",
+    "complexion": "Gaunt and angular features with high, prominent cheekbones characteristic of Indigenous American heritage, complemented by Hispanic/Latin American and African ancestry's influence on facial width and contour. Narrow to medium jaw with subtle strength from African ancestry contribution. Perpetual dark circles under eyes—deep enough to look like permanent bruising. Three-day stubble is his baseline; shaving is an afterthought. Skin condition shows minor neglect—dry patches at temples, occasional stress-related dermatitis on knuckles. Fine facial structure shows Middle Eastern influence in nose bridge definition and brow architecture, subtly refined by Northern European genetics. Overall complexion reflects the warm-toned ancestry blend with cool undertones creating compelling contrast.",
     "distinguishing_marks": [
       "Military-grade data jack port at base of skull, slightly raised scar tissue around the installation site, barely concealed by collar when present",
       "Faint blue bioluminescent network lines visible on both forearms under UV light (subdermal antenna arrays), appearing as branching circuit-like patterns from wrist to elbow",
@@ -260,15 +229,86 @@
     "posture_movement": "Still and economical—minimal wasted motion. When seated, he is motionless except for hands, which are in constant micro-motion (tapping, adjusting, disassembling invisible components). When standing, he leans slightly forward, weight on balls of feet as if ready to move to the next task. Walks with purpose and no flourish. Rarely makes eye contact—eyes scan environments for network infrastructure, security cameras, signal sources. Nervous habit of touching the data jack port at the back of his neck when processing information.",
     "clothing_style": "Tier 3 utilitarian minimalist. Rotation of three identical black cotton t-shirts (loose fit, practical). Cargo pants in charcoal or black with multiple pockets—well-worn, never replaced until failure. Scuffed black steel-toed boots rated for industrial environments. No jewelry, no branding, no ornamentation. Occasional frayed patches on cargo pant legs repaired with black electrical tape rather than stitching. When operating in field, adds nondescript gray hoodie and a Faraday-lined fieldwork vest (unmarked, custom-built). Clothes smell faintly of solder flux and machine oil. Grooming is purely functional—haircuts only when vision is blocked."
   },
-  "image_prompt": "Cyberpunk 2226, Onyx Cardenas-Mukherjee, lean angular South Asian-East Asian-Hispanic-Middle Eastern man, height 178cm, warm medium-brown skin with olive undertones looking sallow from fluorescent light exposure, dark brown nearly-black short unkempt hair, dark brown eyes with subtle digital shimmer, high defined cheekbones, gaunt angular features, perpetual dark circles, three-day stubble, data jack port visible at base of skull with scarring barely concealed by collar, faint blue bioluminescent subdermal circuit patterns on forearms, burn scars on right fingertips, heavy calluses on hands, wearing loose black cotton t-shirt, well-worn black cargo pants with electrical tape patches, scuffed black steel-toed boots, leaning forward with hands in constant micro-motion, standing in dim server room with green and amber network indicator lights, hands poised near custom networking equipment, slightly forward posture ready to move, minimal eye contact, tense focused expression, industrial utilitarian aesthetic, cool color grading with tungsten overhead lighting and cold server room glow, hyper-detailed cyberpunk technical wear --ar 2:3 --v 6",
+  "image_prompt": "Onyx Cardenas-Tovar, 178cm lean angular neo-noir hacker, warm medium-brown skin with olive undertones and sallow pallor from server room isolation, high prominent Indigenous American cheekbones, dark brown eyes with subtle digital shimmer artifacts, three-day stubble, perpetual dark circles under eyes. Military-grade data jack port at base of skull visible on nape. Subdermal blue bioluminescent antenna array patterns glowing faintly on forearms. Wearing black loose-fit cotton t-shirt and charcoal cargo pants with electrical tape repairs, scuffed black steel-toed boots. Gaunt angular features reflect Complex Ubiquitous Diaspora blend: Indigenous American, Hispanic/Latin American, Northern European, Middle Eastern, Sub-Saharan African, Southeast Asian genetics. Motionless posture with hands in micro-motion, leaning slightly forward. Dark industrial setting with neon network infrastructure, moody blue-green lighting, GLMZ aesthetic, scanning expression, minimal emotion. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 38.3,
-    "East Asian": 26.5,
-    "Hispanic/Latin American": 21.3,
-    "Middle Eastern": 13.9
+    "Indigenous American": 31.9,
+    "Hispanic/Latin American": 30.4,
+    "Northern European": 14,
+    "Middle Eastern": 10.5,
+    "Sub-Saharan African": 9.2,
+    "Southeast Asian": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 14.8
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 3.5,
+        "Ho-Chunk": 5.5
+      },
+      "Andean": {
+        "Mapuche": 6.1,
+        "Aymara": 2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 16.4
+      },
+      "South American": {
+        "Brazilian": 14
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 1,
+        "Dutch": 1
+      },
+      "British Isles": {
+        "Welsh": 4.8,
+        "Irish": 6.6
+      },
+      "Scandinavian": {
+        "Swedish": 0.6
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 7.7
+      },
+      "Persian": {
+        "Tajik Persian": 2.4,
+        "Afghan Dari": 0.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 7
+      },
+      "West African": {
+        "Nigerian": 1.3
+      },
+      "Central African": {
+        "Congolese": 0.2,
+        "Gabonese": 0.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 1.6
+      },
+      "Filipino": {
+        "Tagalog": 0.6,
+        "Waray": 0.6
+      },
+      "Laotian": {
+        "Laotian": 1.2
+      }
+    }
+  }
 }

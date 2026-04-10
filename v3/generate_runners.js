@@ -239,7 +239,7 @@ const FEARS = [
 ];
 
 const DESIRES = [
-  "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+  "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
   "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
   "To find the person who burned them and make it educational",
   "A crew worth trusting — people who stay when the shooting starts",
@@ -363,7 +363,7 @@ function generateDescription(name, gender, pronouns, role, age, location, augDes
     `tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion`,
     `stocky and solid, with hands that look like they were built for breaking things and a face that confirms it`,
     `slight and easy to overlook, which is exactly the point`,
-    `athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic`
+    `athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic`
   ];
 
   const faces = [
@@ -384,7 +384,7 @@ function generateDescription(name, gender, pronouns, role, age, location, augDes
     `${name} ${is_} the kind of runner other runners tell stories about, though the stories vary depending on who ${they} burned${they === "they" ? "" : ""} last.`,
     `What ${name} lacks in subtlety, ${they} compensate${they === "they" ? "" : "s"} for in thoroughness. No loose ends, no unfinished business, no second chances.`,
     `${name} operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.`,
-    `${they} ${is_} not the most talented ${role} in Meridian 88, but ${they} might be the most stubborn, and in this city that's worth more.`,
+    `${they} ${is_} not the most talented ${role} in GLMZ, but ${they} might be the most stubborn, and in this city that's worth more.`,
     `Everyone who's worked with ${name} agrees on two things: ${they} ${is_} worth the fee, and ${they} ${is_} terrible company at dinner.`,
     `${name} ${has_} survived long enough in the runner game to be either very good or very lucky, and ${they} cultivate${they === "they" ? "" : "s"} ambiguity on the topic.`,
     `In a city full of people who talk about what they'll do, ${name} ${is_} one of the ones who actually does it.`
@@ -393,14 +393,14 @@ function generateDescription(name, gender, pronouns, role, age, location, augDes
   const backstoryFragments = [
     `${they} came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see ${them} surpass them`,
     `before the runner life, ${they} worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail`,
-    `${they} arrived in Meridian 88 six years ago with nothing but chrome and debts, and ${has_} been working off both ever since`,
+    `${they} arrived in GLMZ six years ago with nothing but chrome and debts, and ${has_} been working off both ever since`,
     `${they} grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose`,
     `military training — one of the private security corps that folded during the consolidation wars — left ${them} with skills and night terrors in equal measure`,
     `${they} taught ${them}self the trade through trial, error, and a pain tolerance that concerns the people who know ${them} best`,
     `${they} inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it`,
     `${their} entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid`,
     `${they} used to be somebody else, in another city, with another name — that person is officially dead, and ${name} plans to keep it that way`,
-    `born and raised in Meridian 88, third generation — ${they} ${has_} the city in ${their} blood, its rhythms in ${their} bones, its cruelty in ${their} expectations`
+    `born and raised in GLMZ, third generation — ${they} ${has_} the city in ${their} blood, its rhythms in ${their} bones, its cruelty in ${their} expectations`
   ];
 
   const build = pick(builds, rng);
@@ -499,11 +499,11 @@ function generateRunner(index) {
     `${fullName} is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc.`,
     `${fullName} has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet.`,
     `${fullName} has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone.`,
-    `${fullName} betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this.`,
+    `${fullName} betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this.`,
     `${fullName} maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy.`,
     `${fullName} is terrified of deep net diving but has built their reputation on it. Uses black-market AI to handle the heavy lifting while taking credit.`,
     `${fullName} murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt.`,
-    `${fullName} sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation.`
+    `${fullName} sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation.`
   ];
   const secret = pick(secretTemplates, rng);
 
@@ -684,7 +684,7 @@ function generateRunner(index) {
     `Someone is impersonating ${fullName} on jobs, and the impersonator is better at the work than the original`,
     `A dead drop ${fullName} maintains is found and cleaned out — whoever did it now has leverage`,
     `${fullName} discovers a job they completed last year was a setup for something much larger and much worse`,
-    `A crew member from ${fullName}'s past shows up in Meridian 88, carrying old grievances and new chrome`,
+    `A crew member from ${fullName}'s past shows up in GLMZ, carrying old grievances and new chrome`,
     `The fixer who handles ${fullName}'s contracts goes silent — dead, disappeared, or turned`,
     `${fullName} intercepts intelligence about a threat to their district and must decide between profit and protection`,
     `A corporate black site ${fullName} once infiltrated is being reopened, and the people inside know ${their} face`,
@@ -862,7 +862,7 @@ function generateRunner(index) {
 
   const strengthOptions = [
     "exceptional close-quarters combat", "network of reliable contacts", "pain tolerance beyond normal limits",
-    "encyclopedic knowledge of Meridian 88 infrastructure", "ability to remain calm under fire",
+    "encyclopedic knowledge of GLMZ infrastructure", "ability to remain calm under fire",
     "mechanical aptitude — can repair or modify almost anything", "photographic memory for faces and layouts",
     "multilingual — speaks 4+ languages fluently", "natural leadership presence", "physical endurance",
     "expert marksman", "social chameleon — adapts to any environment", "strategic thinking under pressure",

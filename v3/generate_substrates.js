@@ -111,7 +111,7 @@ function getExistingByCategory() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, year 2200. 200 years of materials science advancement. SNT (Synthetic Neural Tissue) — living neural matter that bridges organic and synthetic systems — has enabled entirely new categories of materials: bio-metal hybrids, living composites, neural-responsive substrates.
+const WORLD_CONTEXT = `Setting: GLMZ, year 2200. 200 years of materials science advancement. SNT (Synthetic Neural Tissue) — living neural matter that bridges organic and synthetic systems — has enabled entirely new categories of materials: bio-metal hybrids, living composites, neural-responsive substrates.
 
 Quantum-level manufacturing is available at Tier 4-5, enabling exotic alloys and materials impossible with conventional processes. Nano-assembly is routine. Self-healing and programmable matter exist but remain expensive.
 
@@ -124,47 +124,47 @@ const CATEGORIES = [
   {
     category: 'nano_material',
     count: 15,
-    prompt: `Generate {count} carbon nanotube variant materials for Meridian 88, year 2200. 200 years of CNT development has produced wildly diverse variants. Include: ultra-high tensile strength cables, flexible CNT meshes for armor, CNT-organic hybrids that bond with living tissue, conductive CNT weaves for electronics, CNT foam for insulation and impact absorption, transparent CNT sheets for displays, magnetic CNT composites, CNT-ceramic hybrids, and specialized variants for augment/cyberware construction. Each should have a distinct trade name and manufacturer. These are the steel and aluminum of 2200 — foundational materials everything is built from.`
+    prompt: `Generate {count} carbon nanotube variant materials for GLMZ, year 2200. 200 years of CNT development has produced wildly diverse variants. Include: ultra-high tensile strength cables, flexible CNT meshes for armor, CNT-organic hybrids that bond with living tissue, conductive CNT weaves for electronics, CNT foam for insulation and impact absorption, transparent CNT sheets for displays, magnetic CNT composites, CNT-ceramic hybrids, and specialized variants for augment/cyberware construction. Each should have a distinct trade name and manufacturer. These are the steel and aluminum of 2200 — foundational materials everything is built from.`
   },
   {
     category: 'composite',
     count: 10,
-    prompt: `Generate {count} graphene composite materials for Meridian 88. Graphene has had 200 years of development. Include: graphene-reinforced structural panels, flexible graphene electronics substrates, graphene thermal management layers, graphene filtration membranes (water purification in the Shelf), graphene-polymer armor laminates, graphene supercapacitor materials, and hybrid graphene-CNT composites. Each with distinct trade names, applications, and tier availability.`
+    prompt: `Generate {count} graphene composite materials for GLMZ. Graphene has had 200 years of development. Include: graphene-reinforced structural panels, flexible graphene electronics substrates, graphene thermal management layers, graphene filtration membranes (water purification in the Shelf), graphene-polymer armor laminates, graphene supercapacitor materials, and hybrid graphene-CNT composites. Each with distinct trade names, applications, and tier availability.`
   },
   {
     category: 'bio_hybrid',
     count: 15,
-    prompt: `Generate {count} bio-metal hybrid materials for Meridian 88. These are the revolutionary materials enabled by SNT and biotech — living metal, organic steel, tissue-bonded ceramics. Include: metals that heal like skin when damaged, ceramics that bond permanently with bone and grow with the body, alloys with embedded living neural pathways (they can transmit signals), bio-steel that strengthens in response to stress (like muscle), organic titanium that the immune system doesn't reject (critical for augments), living armor that repairs itself using the wearer's metabolic energy, and composite materials that blur the line between organism and material. These materials are WHY augments work as well as they do in 2200.`
+    prompt: `Generate {count} bio-metal hybrid materials for GLMZ. These are the revolutionary materials enabled by SNT and biotech — living metal, organic steel, tissue-bonded ceramics. Include: metals that heal like skin when damaged, ceramics that bond permanently with bone and grow with the body, alloys with embedded living neural pathways (they can transmit signals), bio-steel that strengthens in response to stress (like muscle), organic titanium that the immune system doesn't reject (critical for augments), living armor that repairs itself using the wearer's metabolic energy, and composite materials that blur the line between organism and material. These materials are WHY augments work as well as they do in 2200.`
   },
   {
     category: 'smart_material',
     count: 15,
-    prompt: `Generate {count} smart materials for Meridian 88. Materials that respond, adapt, and change. Include: shape-memory alloys that return to programmed forms when triggered, self-healing polymers that seal cracks and cuts automatically, programmable matter that can change shape on command (expensive, Tier 4-5), thermochromic materials that change color with temperature, piezoelectric substrates that generate power from movement, materials with programmable stiffness (rigid or flexible on command), acoustically active materials that can dampen or amplify sound, and phase-change materials for thermal regulation.`
+    prompt: `Generate {count} smart materials for GLMZ. Materials that respond, adapt, and change. Include: shape-memory alloys that return to programmed forms when triggered, self-healing polymers that seal cracks and cuts automatically, programmable matter that can change shape on command (expensive, Tier 4-5), thermochromic materials that change color with temperature, piezoelectric substrates that generate power from movement, materials with programmable stiffness (rigid or flexible on command), acoustically active materials that can dampen or amplify sound, and phase-change materials for thermal regulation.`
   },
   {
     category: 'exotic',
     count: 10,
-    prompt: `Generate {count} exotic alloy materials for Meridian 88. Materials only possible with quantum-level manufacturing — atomic-precision assembly that arranges matter atom by atom. Include: zero-expansion alloys (no thermal expansion at any temperature), metamaterials with negative refractive index (bending light around objects), superconducting alloys that work at room temperature, ultra-dense materials (small volume, enormous mass — used in counterweights and armor), perfectly elastic metals (100% energy return), and alloys with quantum properties exploitable at macro scale. These are Tier 4-5, extremely expensive, and represent the bleeding edge.`
+    prompt: `Generate {count} exotic alloy materials for GLMZ. Materials only possible with quantum-level manufacturing — atomic-precision assembly that arranges matter atom by atom. Include: zero-expansion alloys (no thermal expansion at any temperature), metamaterials with negative refractive index (bending light around objects), superconducting alloys that work at room temperature, ultra-dense materials (small volume, enormous mass — used in counterweights and armor), perfectly elastic metals (100% energy return), and alloys with quantum properties exploitable at macro scale. These are Tier 4-5, extremely expensive, and represent the bleeding edge.`
   },
   {
     category: 'ceramic',
     count: 10,
-    prompt: `Generate {count} ceramic and armor materials for Meridian 88. Include: transparent ceramics harder than diamond (used in windows and visors), reactive armor ceramics that ablate incoming kinetic energy, thermal ceramics for re-entry and extreme heat applications, bio-compatible ceramics for augment housings, piezoelectric ceramics for power generation, structural ceramics that replace steel in construction, and layered ceramic-composite armor systems. Each with trade names and specific applications.`
+    prompt: `Generate {count} ceramic and armor materials for GLMZ. Include: transparent ceramics harder than diamond (used in windows and visors), reactive armor ceramics that ablate incoming kinetic energy, thermal ceramics for re-entry and extreme heat applications, bio-compatible ceramics for augment housings, piezoelectric ceramics for power generation, structural ceramics that replace steel in construction, and layered ceramic-composite armor systems. Each with trade names and specific applications.`
   },
   {
     category: 'textile',
     count: 10,
-    prompt: `Generate {count} textile and fabric materials for Meridian 88. Include: ballistic cloth that stops projectiles while remaining flexible, chameleon fabric that changes color and pattern on command (BCI-linked for thought-controlled outfit changes), thermal-reactive clothing material that adjusts insulation based on temperature, self-cleaning fabrics, conductive thread for wearable electronics, radiation-shielding textiles (for Shelf areas near old reactors), stealth fabric that absorbs radar and IR, slash-resistant weaves, and smart-compression textiles for medical and athletic use.`
+    prompt: `Generate {count} textile and fabric materials for GLMZ. Include: ballistic cloth that stops projectiles while remaining flexible, chameleon fabric that changes color and pattern on command (BCI-linked for thought-controlled outfit changes), thermal-reactive clothing material that adjusts insulation based on temperature, self-cleaning fabrics, conductive thread for wearable electronics, radiation-shielding textiles (for Shelf areas near old reactors), stealth fabric that absorbs radar and IR, slash-resistant weaves, and smart-compression textiles for medical and athletic use.`
   },
   {
     category: 'organic',
     count: 10,
-    prompt: `Generate {count} organic substrate materials for Meridian 88. Grown, not manufactured. Include: fungal mycelium composites stronger than concrete, coral-derived structural calcium matrices, bacterial cellulose sheets with industrial strength, algae-based bioplastics, wood-analog grown in vats (since real forests are scarce), chitin-based armor plates grown from engineered insects, silk variants from modified organisms (spider silk cables), living building materials that photosynthesize and produce oxygen, and root-network structural foundations. These are cheaper and more sustainable than synthetic materials, popular in Tier 2-3 construction.`
+    prompt: `Generate {count} organic substrate materials for GLMZ. Grown, not manufactured. Include: fungal mycelium composites stronger than concrete, coral-derived structural calcium matrices, bacterial cellulose sheets with industrial strength, algae-based bioplastics, wood-analog grown in vats (since real forests are scarce), chitin-based armor plates grown from engineered insects, silk variants from modified organisms (spider silk cables), living building materials that photosynthesize and produce oxygen, and root-network structural foundations. These are cheaper and more sustainable than synthetic materials, popular in Tier 2-3 construction.`
   },
   {
     category: 'metal',
     count: 5,
-    prompt: `Generate {count} energy materials for Meridian 88. Materials specifically designed for power storage, generation, and transmission. Include: room-temperature superconductor cables, ultra-dense battery substrate materials (100x the energy density of 2024 lithium), thermoelectric conversion materials (turn any heat differential into power), wireless power transmission materials, and quantum-dot power storage matrices. These materials underpin M88's power infrastructure.`
+    prompt: `Generate {count} energy materials for GLMZ. Materials specifically designed for power storage, generation, and transmission. Include: room-temperature superconductor cables, ultra-dense battery substrate materials (100x the energy density of 2024 lithium), thermoelectric conversion materials (turn any heat differential into power), wireless power transmission materials, and quantum-dot power storage matrices. These materials underpin M88's power infrastructure.`
   },
 ];
 
@@ -192,7 +192,7 @@ async function generateCategory(catDef) {
 
     const filledPrompt = prompt.replace('{count}', batchSize);
 
-    const system = `You generate substrate/material entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} material objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate substrate/material entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} material objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ec7bbc95456b6f2710052d",
   "type": "character",
-  "name": "Khalil Sabbagh",
+  "name": "Kira Duong",
   "aliases": [
     "Rift",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Deniz Dahlberg-Boakye is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Deniz Dahlberg-Boakye is one of the ones who actually does it.",
+  "description": "Kira Duong is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Kira Duong is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.66,
@@ -259,7 +259,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,43 +276,15 @@
   "related_entities": [
     "Bioelectric Muscle Fiber",
     "The Narrows Compact",
-    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Cem Lund-Bangura",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Dzemal Acholonu-Patagiri",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Rongo Delgado-Opoku",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Cigarette' Pen Gun",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA TC-3 'Crucible'",
-    "The Narrows",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Suture Collective",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Middle Eastern (57.4%) with significant Pacific Islander (30.8%) and Southeast Asian (11.8%) ancestry — a striking blend resulting in warm, deep olive-bronze skin tone with subtle golden undertones. Features show the angular bone structure of Levantine heritage combined with the broader facial proportions and warmer complexion influenced by Pacific Islander genetics, with refinement from Southeast Asian ancestry.",
+    "heritage": "Southeast Asian (67%) with significant East Asian (30.6%) and minor Middle Eastern (2.4%) ancestry — a refined blend resulting in warm, light to medium olive skin tone with subtle golden undertones. Features show the defined bone structure characteristic of Southeast Asian and East Asian genetics, with slightly broader facial proportions balanced by the angular cheekbones of both lineages.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Wiry and lean with efficient musculature — the physique of someone who converts nervous energy into controlled motion. Synthetic muscle fiber in legs creates subtle asymmetries in calf definition.",
@@ -320,8 +292,8 @@
     "hair_style": "Short, pragmatic cut — minimal maintenance, pulled back slightly at crown",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and assessing",
-    "skin_tone": "Deep warm olive-bronze with golden undertones — the blended result of Middle Eastern, Pacific Islander, and Southeast Asian ancestry. Carries the pallor of someone who spends irregular hours indoors, creating subtle shadowing across cheekbones.",
-    "complexion": "Angular cheekbones and defined jaw with the broader nasal bridge characteristic of Pacific Islander heritage. Prominent brow structure from Middle Eastern ancestry. Weathered around the eyes from sustained focus work. Five o'clock shadow is his default state across the lower jaw and upper lip. No visible facial scars but the skin has a tightness suggesting old impact trauma healed cleanly.",
+    "skin_tone": "Warm light to medium olive with golden undertones — the blended result of Southeast Asian dominance (67%) with East Asian (30.6%) refinement and trace Middle Eastern (2.4%) warmth. Carries the pallor of someone who spends irregular hours indoors, creating subtle shadowing across cheekbones.",
+    "complexion": "Defined cheekbones and sharp jawline with the refined nasal structure characteristic of Southeast and East Asian heritage. Well-proportioned brow structure with the slightly broader facial width typical of Southeast Asian ancestry, refined by East Asian angular definition. Weathered around the eyes from sustained focus work. Five o'clock shadow is his default state across the lower jaw and upper lip. No visible facial scars but the skin has a tightness suggesting old impact trauma healed cleanly.",
     "distinguishing_marks": [
       "Cigarette burn scar on the inside of left wrist — thumb-sized, pale and old",
       "Linear scar along right temple extending into hairline — security training injury, precise suture work",
@@ -331,14 +303,47 @@
     "posture_movement": "Perpetually coiled — standing weight forward on the balls of feet. Movement is economical and sudden; he does not amble. Hands rarely still, often checking cuffs, adjusting jacket, touching the chrome at his ears. Eyes constantly tracking exits, angles, sight lines. Conversation posture is slightly angled — cyberears allow him to monitor peripheral audio.",
     "clothing_style": "Tier 3-4 utilitarian — durable synthweave in dark colors (charcoal, black, deep navy). Multi-pocket cargo jacket worn open over fitted base layers. Reinforced knuckle gloves, often not removed indoors. Durable boots with high ankle support rated for urban infiltration. A single piece of visible hardware: brushed steel chain on left wrist, practical rather than decorative. Everything functional, nothing that announces itself. No corporate logos or runner affectations — he dresses like someone whose appearance should be forgotten in two minutes."
   },
-  "image_prompt": "Khalil Sabbagh, 178cm lean cyberpunk operative with deep olive-bronze skin tone blending Middle Eastern, Pacific Islander, and Southeast Asian heritage. Angular cheekbones, defined jaw, dark alert eyes, short dark brown hair with silver threading at temples. Five o'clock shadow, weathered around eyes. Dark charcoal synthweave cargo jacket worn open over fitted base layers, reinforced knuckle gloves, high-ankle urban boots. Matte gunmetal synthetic muscle fiber prosthetics visible below both knees with seam lines. Chrome bezels around ears marking cyberear housing partially hidden by hair. Brushed steel chain on left wrist. Standing coiled and forward-weighted, perpetually assessing surroundings. Faded scar along right temple into hairline. Cigarette burn scar on inside of left wrist. Futuristic Great Lakes Metropolitan Zone setting, neon-lit urban environment, dim overhead lighting casting shadows across defined features, cyberpunk 2226 aesthetic, hyperrealistic detail --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Kira Duong, Southeast Asian-East Asian blend with olive skin and golden undertones, dark brown hair with silver at temples, sharp angular cheekbones, alert dark eyes weathered from focus work. 178cm tall, lean wiry build. Wearing dark charcoal synthweave cargo jacket over fitted base layer, reinforced knuckle gloves, high-ankle urban boots. Chrome bezels visible at ears from cyberear housing, matte gunmetal synthetic muscle fiber visible on calves below the knee. Brushed steel chain on left wrist. Five o'clock shadow, perpetually coiled posture with weight forward. Standing in dimly-lit industrial setting, neon accent lighting casting shadows across defined features, slightly angled conversation posture, eyes tracking exits. Atmospheric megacity environment, moody tungsten and cool blue lighting, forgotten-in-two-minutes aesthetic, functional and lethal. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 57.4,
-    "Pacific Islander": 30.8,
-    "Southeast Asian": 11.8
+    "Southeast Asian": 67,
+    "East Asian": 30.6,
+    "Middle Eastern": 2.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 29.1
+      },
+      "Cambodian": {
+        "Khmer": 17.7
+      },
+      "Laotian": {
+        "Laotian": 20.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 24.8
+      },
+      "Japanese": {
+        "Japanese": 3
+      },
+      "Korean": {
+        "Korean": 2.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 1.8
+      },
+      "Persian": {
+        "Iranian": 0.5,
+        "Tajik Persian": 0.1
+      }
+    }
+  }
 }

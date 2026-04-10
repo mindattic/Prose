@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a074e7806c782d7f65f835",
   "type": "character",
-  "name": "Leszek Volkov",
+  "name": "Sable Yoon",
   "aliases": [
     "Priya Cards",
     "the Futures Girl"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "The Burnished Market, corner stall at the Avon Curve pedestrian intersection, near Armitage and Milwaukee",
-  "description": "Priya is small and quick-looking, with warm brown skin, a nose ring that catches light like a signal beacon, and geneware cat ears — warm tawny, the same tone as her complexion, which she's had since she was fifteen and treats as simply part of her face. She dresses in deliberate maximalism: layered scarves, stacked rings on every finger, a heavy embroidered coat that drags slightly on the left side because she keeps tools in the pocket, and a headwrap she re-ties differently every day. Her stall is a theater: velvet cloth on the fold-out table, a hand-lettered sign that reads 'FUTURES — PROBABILITY — PATTERN READING,' and a small brass dish where she burns data-chip residue as an offering to Μ-3, the E.L.F. she has centered her entire practice around.\n\nShe is sharper than the aesthetic suggests. The fortune-telling is real to her — she genuinely believes that Μ-3 communicates through data patterns and probability distributions — but the reading process is also an excuse to ask questions and listen. She is observant to a degree that crosses into unsettling: she notices microexpressions, registers what people don't say, tracks the gap between what someone claims they want to know and what they actually came to hear. She is ambitious, not in the way of wanting money, but in the way of wanting to understand things. She reads everything she can find about predictive modeling, network analysis, and emergent data theory in her off hours, which she does not advertise. She suspects she has a real aptitude for actual data brokering and is slowly, carefully testing whether that's true.",
+  "description": "Sable Yoon is small and quick-looking, with warm brown skin, a nose ring that catches light like a signal beacon, and geneware cat ears — warm tawny, the same tone as her complexion, which she's had since she was fifteen and treats as simply part of her face. She dresses in deliberate maximalism: layered scarves, stacked rings on every finger, a heavy embroidered coat that drags slightly on the left side because she keeps tools in the pocket, and a headwrap she re-ties differently every day. Her stall is a theater: velvet cloth on the fold-out table, a hand-lettered sign that reads 'FUTURES — PROBABILITY — PATTERN READING,' and a small brass dish where she burns data-chip residue as an offering to Μ-3, the E.L.F. she has centered her entire practice around.\n\nShe is sharper than the aesthetic suggests. The fortune-telling is real to her — she genuinely believes that Μ-3 communicates through data patterns and probability distributions — but the reading process is also an excuse to ask questions and listen. She is observant to a degree that crosses into unsettling: she notices microexpressions, registers what people don't say, tracks the gap between what someone claims they want to know and what they actually came to hear. She is ambitious, not in the way of wanting money, but in the way of wanting to understand things. She reads everything she can find about predictive modeling, network analysis, and emergent data theory in her off hours, which she does not advertise. She suspects she has a real aptitude for actual data brokering and is slowly, carefully testing whether that's true.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -181,7 +181,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,41 +233,25 @@
     "Novafold Pharmaceuticals",
     "Lacuna Genomics",
     "Stratum",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
     "Residue (I Still Have Your Feed)",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Corner Slice",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Brass",
-    "Arcturus CK-5 'Bloodhound'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Auricula Felis Modification",
-    "CHROMEWORKS FlexSheath Graphene Spine",
-    "Emeka Johansson-Orozco",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "The Bazaar",
-    "The Collective",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European (55.2%) with significant East Asian (25.4%), Hispanic/Latin American (12.0%), and Sub-Saharan African (7.4%) ancestry. A striking multi-continental blend creating warm olive-tan undertones with hints of golden bronze.",
+    "heritage": "Multihierarchical global blend: East Asian (27.7%), Indigenous American (23.3%), Hispanic/Latin American (18.6%), Sub-Saharan African (11.7%), Central Asian (11.4%), and South Asian (7.3%). A striking diaspora convergence creating warm golden-bronze undertones with subtle olivaceous depth—the result of Eastern and Central Asian bone structure meeting African and Hispanic warmth with Indigenous American and South Asian undertones.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Lean and compact, economical in movement—the build of someone who moves through crowded spaces efficiently. Slight but not fragile; wiry muscle beneath the layered fabrics.",
     "hair_color": "Dark brown, naturally textured",
     "hair_style": "Wrapped daily in different configurations—today a high crown wrap with fabric tails, tomorrow a side-pinned fold. The wrap itself is always visible, always the statement piece.",
     "hair_length": "Shoulder-length beneath wraps; kept long enough to pin and tie but short enough to rewrap quickly between customers",
-    "eye_color": "Warm hazel-brown, alert and tracking—showing the slight epicanthic fold from East Asian heritage, warm-toned from the African and Hispanic ancestry blend",
-    "skin_tone": "Warm olive-tan with golden undertones—a natural convergence of Eastern European pale undertones warmed by East Asian, Hispanic, and African ancestry into a luminous medium tone",
-    "complexion": "Clear, well-maintained skin with the subtle facial structure showing Eastern European cheekbones balanced by the broader facial width and softer angles from East Asian and African heritage. A light scar along her left jawline from a market accident at age seventeen. Her nose ring—brushed brass, simple band—is her only facial jewelry but catches ambient light deliberately. No makeup; her face reads young and sharp rather than softened.",
+    "eye_color": "Warm hazel-brown with epicanthic fold, luminous and alert",
+    "skin_tone": "Golden-bronze medium tone—a luminous convergence of East Asian, Indigenous American, Hispanic/Latin American, Sub-Saharan African, Central Asian, and South Asian ancestry. Warm undertones with subtle olive depth creating an internally lit quality.",
+    "complexion": "Clear, well-maintained skin with facial structure reflecting the multihierarchical blend: East Asian cheekbone definition balanced by broader facial width and softer angles from African and Indigenous American heritage, with Central and South Asian warmth in the undertones. A light scar along her left jawline from a market accident at age seventeen. Her nose ring—brushed brass, simple band—is her only facial jewelry but catches ambient light deliberately. No makeup; her face reads young and sharp rather than softened.",
     "distinguishing_marks": [
       "Tawny geneware cat ears (cosmetic, matching her skin tone exactly) positioned naturally above and slightly behind her human ears, mobile and expressive",
       "Fine white scar along left jawline, approximately 2cm, from a stall collapse incident",
@@ -277,15 +261,74 @@
     "posture_movement": "Quick, precise movements—nothing wasted. She sits cross-legged at her stall table as default, which gives her an almost meditative appearance until someone tries to leave without a reading, then her attention snaps with intensity. She leans forward when listening, genuinely focused. Her hands are always moving slightly—adjusting her rings, touching her nose ring, repositioning scarves. Economical but theatrical.",
     "clothing_style": "Deliberate maximalism, Tier 3-4 working class with spiritual/cultural intentionality. Heavy embroidered coat (likely thrifted, deliberately oversized, left side weighted with tool pockets) worn over layered scarves in clashing warm tones—ochre, rust, deep red. Stacked brass and copper rings on every finger (at least four per hand). Her headwrap rotates but is always high-quality fabric, suggesting either access to good secondhand markets or careful saving. Her stall table is draped in deep velvet—burgundy or midnight, re-worn weekly. Everything reads as 'spiritual vendor' by design, but the coordination suggests real attention to aesthetic rather than random assemblage."
   },
-  "image_prompt": "Leszek Volkov, 158cm lean figure in cyberpunk 2226 Great Lakes Metropolitan Zone. Medium warm olive-tan skin with golden undertones, warm hazel-brown eyes with subtle East Asian epicanthic fold, dark textured hair bound in high crown wrap with fabric tails. Tawny cosmetic cat ears positioned naturally, mobile and expressive. Sharp jawline with fine white 2cm scar, simple brass nose ring. Stacked brass and copper rings on every finger, retractable pearl-colored claws visible when extended. Seated cross-legged at stall table, draped in burgundy velvet. Heavy embroidered thrifted coat in oversized cut, layered scarves in ochre rust and deep red. Quick precise posture, hands moving expressively, focused intensity. Spiritual marketplace vendor aesthetic. Warm ambient lighting catching brass jewelry and nose ring, neon glow from surrounding market stalls, moody yet welcoming atmosphere. Midjourney cyberpunk character portrait, intimate and theatrical --ar 2:3 --v 6",
+  "image_prompt": "Sable Yoon, 158cm lean Asian-Indigenous-Latinx-African diaspora blend, golden-bronze skin with warm olive undertones, epicanthic hazel-brown eyes sharp and alert, tawny cosmetic geneware cat ears mobile above her human ears, jawline marked by thin white scar. Seated cross-legged at vintage velvet-draped stall table, wearing oversized thrifted embroidered coat over layered warm-toned scarves—ochre, rust, deep red—stacked brass and copper rings catching neon light on every finger, brushed brass nose ring glinting. High-wrapped dark brown textured hair in fashionable crown configuration, hands poised theatrically near pearl-colored retractable claws visible between fingers. 2226 neo-noir Great Lakes Metropolitan Zone, neon market stall lighting, intimate fortune-teller aesthetic, meditative yet intense presence, detailed fabric textures and metalwork, warm atmospheric glow, Tier 3-4 working class spiritual vendor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 55.2,
-    "East Asian": 25.4,
-    "Hispanic/Latin American": 12.0,
-    "Sub-Saharan African": 7.4
+    "East Asian": 27.7,
+    "Indigenous American": 23.3,
+    "Hispanic/Latin American": 18.6,
+    "Sub-Saharan African": 11.7,
+    "Central Asian": 11.4,
+    "South Asian": 7.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 20.2
+      },
+      "Chinese": {
+        "Cantonese": 7.5
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ho-Chunk": 1.8,
+        "Ojibwe": 1.9
+      },
+      "Mesoamerican": {
+        "Maya": 19.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 11
+      },
+      "Mexican": {
+        "Mexican": 3.2
+      },
+      "Central American": {
+        "Guatemalan": 4.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 6.3,
+        "Congolese": 1.8
+      },
+      "West African": {
+        "Sierra Leonean": 2,
+        "Ghanaian": 0.6
+      },
+      "East African": {
+        "Ethiopian": 1
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 11.4
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 5.2
+      },
+      "Indian": {
+        "Punjabi": 1.1,
+        "Marathi": 1
+      }
+    }
+  }
 }

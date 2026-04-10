@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c27cc88deab1f70529fb33",
   "type": "character",
-  "name": "Samira Bouzid-Tehrani",
+  "name": "Marisol Lindström-Bustamante",
   "aliases": [
     "Chrome",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Chicago Ave",
-  "description": "Sagyn Osei-Petrov is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Marisol Lindström-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -262,7 +262,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,55 +276,77 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
-    "Slagworks Industrial",
     "Chicago",
-    "Breck Tannen",
-    "Glenville Sound",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "The Quiet Room",
-    "Tomasz Wren",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial",
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Mixed diaspora heritage: predominantly Middle Eastern (37.8%) with significant Hispanic/Latin American (24.8%) and North African (15.2%) ancestry, layered with East Asian (12.7%), Sub-Saharan African (5.2%), and Southeast Asian (4.3%) genetics. The combination creates warm bronze-golden skin tones with subtle regional feature blending—Middle Eastern bone structure softened by Latin American and North African warmth, with East Asian eye shape nuance and Sub-Saharan depth.",
+    "heritage": "Mixed diaspora heritage: predominantly Hispanic/Latin American (42.4%) with substantial East Asian (22.5%), Eastern European (17.6%), and Northern European (17.5%) ancestry. The combination creates warm bronze-golden skin tones with balanced feature blending—Latin American and East Asian bone structure creating angular cheekbones softened by Eastern European and Northern European warmth, with East Asian eye shape nuance and Latin American depth of features.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and long-limbed with minimal bulk, built for mobility rather than strength. Corded muscle from consistent physical conditioning; chest and torso show the angular geometry of someone who moves deliberately and efficiently.",
-    "hair_color": "Dark brown with a subtle grey undertone from neural stress",
+    "hair_color": "Dark brown with subtle grey undertone from neural stress",
     "hair_style": "Kept short and precise, faded sides with slightly longer crown; maintained for quick field grooming and minimal snag risk",
     "hair_length": "Short",
     "eye_color": "Dark brown with warm undertones, one iris shows faint silver threading at 8 o'clock from neural jack proximity",
-    "skin_tone": "Warm bronze-golden medium brown—Mediterranean and Middle Eastern warmth layered with North African depth and Latin American golden undertones, creating a rich, sun-responsive complexion",
-    "complexion": "Clean-shaven, lean-faced with strong Middle Eastern cheekbone structure softened by Latin American and North African features; pronounced jawline with warm-toned skin. Shows the subtle tightness of someone who lives under artificial light; small network of fine scars at temples from early augmentation work. Dark circles suggest chronic sleep deficit.",
+    "skin_tone": "Warm bronze-golden medium brown—Latin American and East Asian warmth with Eastern European coolness creating balanced, sun-responsive complexion that reads richer in natural light",
+    "complexion": "Clean-shaven, lean-faced with strong East Asian-influenced cheekbone structure softened by Latin American and Northern European features; pronounced jawline with warm-toned skin that shows the subtle tightness of someone who lives under artificial light. Small network of fine scars at temples from early augmentation work. Dark circles suggest chronic sleep deficit.",
     "distinguishing_marks": [
       "Surgical scar running 12cm vertically along the right side of ribcage, thick and pale — lung replacement incision, visible when shirtless",
       "Neural jack port at base of skull, visible when hair is pulled back: raised circular scar with faint chrome microport flange, approximately 1.5cm diameter",
       "Thin white burn line across left forearm (inner wrist to elbow) — old industrial accident or early runner mishap, almost invisible unless you know where to look",
       "Small tattoo on right collarbone: circuit-board pattern in dull silver ink, runner ID marker"
     ],
-    "visible_augmentations": "Synthetic lungs visible through translucent dermal panels on upper torso — faint blue bioluminescent indicators pulse with breathing rhythm. Chrome is intentional, not hidden: the filtration system shows as iridescent membrane visible through carefully maintained skin integrity. Neural interface jack at skull base creates a slight raised area at the nape, chrome microport gleaming under light. No facial chrome — he keeps the soft features as psychological asset.",
+    "visible_augmentations": "Synthetic lungs visible through translucent dermal panels on upper torso — faint blue bioluminescent indicators pulse with breathing rhythm. Chrome is intentional, not hidden: the filtration system shows as iridescent membrane visible through carefully maintained skin integrity. Neural interface jack at skull base creates a slight raised area at the nape, chrome microport gleaming under light. No facial chrome — kept soft-featured as psychological asset.",
     "posture_movement": "Moves with calculated precision, every motion economical and reversible. Stands with weight distributed evenly, ready to shift direction instantly. Head positioned to keep both ears clear — auditory awareness is tactical. Breathing patterns visible in chest movement due to synthetic lungs; no unconscious fidgeting, no wasted gesture. When at rest, appears coiled rather than relaxed.",
     "clothing_style": "Tier 3-4 runner aesthetic with corporate-side maintenance. Dark fitted synthweave jacket (matte grey, reinforced seams) over a black responsive-weave shirt that dampens biosignature. Custom cargo pants with sealed pockets and internal organizing webbing — urban grey. Nondescript ankle boots with grip soles and hidden reinforcement. Minimal jewelry except a worn silver signet ring (family, kept as talisman). No corporate logos or affiliations visible — deliberately nondescript. Clothes show signs of field use but meticulous maintenance. Small messenger bag (black leather-composite hybrid) worn crossbody, positioned for quick access and concealment."
   },
-  "image_prompt": "Samira Bouzid-Tehrani, 188cm lean runner in cyberpunk 2226, warm bronze-golden medium brown skin with Middle Eastern and North African bone structure, dark brown eyes with subtle silver neural threading. Short precise dark hair faded at sides. Clean-shaven angular face with high cheekbones, sharp jawline. Translucent dermal panels on upper torso revealing synthetic lungs with blue bioluminescent pulse indicators. Chrome neural jack port visible at skull base nape. Small silver circuit-board tattoo on right collarbone. Wearing matte grey reinforced synthweave jacket over black responsive biosignature-dampening shirt, sealed cargo pants in urban grey, nondescript reinforced boots. Black leather-composite messenger bag worn crossbody. Coiled posture, economical movement, weight distributed for tactical ready stance. Minimal jewelry—worn silver signet ring. Standing in Great Lakes Metropolitan Zone neon-lit corridor or darkened safehouse, dim warm overhead lighting catching the bioluminescent chest augmentations and chrome at nape. Deliberate nondescript field runner aesthetic, meticulous maintenance visible on worn tactical gear. Mood: focused, calculated, dangerous. Cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ runner portrait: Marisol Lindström-Bustamante, 188cm tall lean figure with warm bronze-golden medium brown skin blending Latin American and East Asian features with Northern and Eastern European softness. Dark brown hair with grey undertone, short faded sides with longer crown. Strong angular East Asian cheekbones softened by warm Latin American and European depth, clean-shaven with pronounced jawline. Dark brown eyes with silver threading, dark circles from sleep deficit, small scars at temples. Translucent dermal panels on upper torso revealing blue-glowing synthetic lungs with chrome filtration visible. Chrome neural jack at skull base. Wearing matte grey reinforced synthweave jacket over black biosignature-dampening shirt, grey cargo pants, dark ankle boots with reinforced soles. Silver signet ring. Corded muscle definition, coiled posture radiating calculated precision. Neon-lit urban environment with cool blue and warm neon glow casting shadows across taut features. Serious expression, tactical awareness. Black leather-composite messenger bag slung crossbody. Cinematic neo-noir lighting, gritty dystopian setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 37.8,
-    "Hispanic/Latin American": 24.8,
-    "North African": 15.2,
-    "East Asian": 12.7,
-    "Sub-Saharan African": 5.2,
-    "Southeast Asian": 4.3
+    "Hispanic/Latin American": 42.4,
+    "East Asian": 22.5,
+    "Eastern European": 17.6,
+    "Northern European": 17.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 20.1,
+        "Cuban": 3.4
+      },
+      "Central American": {
+        "Honduran": 4.8,
+        "Costa Rican": 2.5
+      },
+      "Mexican": {
+        "Mexican": 11.6
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 8.1
+      },
+      "Japanese": {
+        "Japanese": 12.7
+      },
+      "Korean": {
+        "Korean": 1.7
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 17.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 17.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5db76e5954a3e05ab230f92",
   "type": "character",
-  "name": "Tendai Zaragoza",
+  "name": "Tariq Mansour",
   "aliases": [
     "Null",
     "The Null"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Abyssal Threshold, mobile — no fixed residence, near sub-level access near LaSalle and Congress",
-  "description": "Chibundo Ferreira-Yupik has no legal existence. No biometric registration, no UBC account, no corponation employment history, no Ferrogate transit record. They erased themselves from GLMZ's surface datanet eleven years ago with painstaking, elegant precision, and they have spent every year since helping others do the same — for a fee, always for a fee. They are of middling height, slight, with warm sienna skin and close-cropped natural hair. Their most striking feature is what they've done to their biometric profile: geneware has altered their iris patterns every eighteen months for the last decade, and a subdermal signal-scatter mesh makes their face present differently to every facial recognition node they pass. To cameras, they are a continuous glitch. To people, they are vivid and specific — dark eyes that track everything, hands that are always moving, a smile that arrives half a second before it should, like they already knew the joke.\n\nThey operate out of the Abyssal Threshold transit corridors, never sleeping in the same cache twice. Their clients are people fleeing — debt collectors, abusive partnerships, corponation indenturement, the occasional actual criminal. Chibundo does not ask why. They ask for documentation of identity, ask for Φ40-200 depending on complexity, and they provide the tools of vanishing: signal-scatter protocols, route maps to communities that do not report to the surface grid, contacts within the Bore Rat communities who will accept someone new. They are not a forger exactly — they don't create false identities. They create absences.",
+  "description": "Tariq Mansour has no legal existence. No biometric registration, no UBC account, no corponation employment history, no Ferrogate transit record. They erased themselves from GLMZ's surface datanet eleven years ago with painstaking, elegant precision, and they have spent every year since helping others do the same — for a fee, always for a fee. They are of middling height, slight, with warm sienna skin and close-cropped natural hair. Their most striking feature is what they've done to their biometric profile: geneware has altered their iris patterns every eighteen months for the last decade, and a subdermal signal-scatter mesh makes their face present differently to every facial recognition node they pass. To cameras, they are a continuous glitch. To people, they are vivid and specific — dark eyes that track everything, hands that are always moving, a smile that arrives half a second before it should, like they already knew the joke.\n\nThey operate out of the Abyssal Threshold transit corridors, never sleeping in the same cache twice. Their clients are people fleeing — debt collectors, abusive partnerships, corponation indenturement, the occasional actual criminal. Chibundo does not ask why. They ask for documentation of identity, ask for Φ40-200 depending on complexity, and they provide the tools of vanishing: signal-scatter protocols, route maps to communities that do not report to the surface grid, contacts within the Bore Rat communities who will accept someone new. They are not a forger exactly — they don't create false identities. They create absences.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -187,7 +187,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Abyssal Threshold",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -252,35 +252,17 @@
   "related_entities": [
     "Ferrogate Transit",
     "Abyssal Threshold",
-    "GLMZ",
     "Threshold",
     "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
     "Big Rig",
-    "Street Custom 'Glass Garden' Caltrops",
     "Tessera Corponation",
+    "Street Custom 'Glass Garden' Caltrops",
     "The Pure Hand",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Irontide Tidal Energy",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Pikasso Wemba-Þórðarson",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo RB-1 'Judas Goat'",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "The Human Baseline Alliance",
-    "The Question",
-    "The Resonance Communion",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (36.4%), Hispanic/Latin American (27.8%), Pacific Islander (25.8%), East Asian (10.0%)—a genetic diaspora blend resulting in warm, multi-tonal features with African structure, Latin warmth, and Pacific Islander depth",
+    "heritage": "Middle Eastern (69.6%), Southeast Asian (16.5%), Northern European (13.9%)—a diaspora blend resulting in warm, olive-toned features with Levantine structure, Southeast Asian refinement, and Northern European subtle lightness in undertones",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and wiry, all sharp angles and efficient movement—no wasted mass, the frame of someone who has learned to take up minimal space",
@@ -288,8 +270,8 @@
     "hair_style": "Close-cropped, tapered at the sides, maintained with precision",
     "hair_length": "Short",
     "eye_color": "Deep violet with fractal ring patterns (geneware-modified, current iteration)",
-    "skin_tone": "Rich warm brown with golden-amber undertones, reflecting the depth of Sub-Saharan ancestry mellowed by Pacific Islander warmth and Hispanic golden tones; luminous in certain light",
-    "complexion": "Defined cheekbones with graceful curves rather than sharp angles; facial structure carries African refinement softened by Pacific Islander fullness in the cheeks and jaw; lips full and expressive; brow ridge subtle but present; expression constantly shifting between neutral and animated—never settling",
+    "skin_tone": "Warm olive-brown with golden undertones, reflecting the depth of Middle Eastern ancestry blended with Southeast Asian refinement and Northern European subtle warmth; luminous in certain light",
+    "complexion": "Defined cheekbones with graceful curves; facial structure carries Middle Eastern refinement with high, prominent cheekbones; eyes set with slight almond tilt from Southeast Asian ancestry; lips full and expressive; brow ridge defined but elegant; jawline strong and angular; expression constantly shifting between neutral and animated—never settling",
     "distinguishing_marks": [
       "Subdermal mesh patterns visible under skin as faint geometric scarring across cheekbones and temples when light hits at oblique angles",
       "Fingertips smooth and featureless from repeated fingerprint-ablation treatments, no ridge pattern visible"
@@ -298,15 +280,37 @@
     "posture_movement": "Economical, deliberate movements with minimal wasted motion; hands constantly occupied (adjusting, fidgeting, gesturing); head tilts slightly when listening, as if already parsing responses before they arrive; walks with weight distributed for quick directional changes; smiles arrive half a second early, before the joke lands",
     "clothing_style": "Tier 3-4 utilitarian: unmarked synth-weave jacket in charcoal or deep grey, multiple hidden pockets and sealed seams; form-fitting black pants with cargo utility; worn but maintained runner boots with reinforced soles for Abyssal Threshold terrain; no identifying marks, no corp logos, no personal ornamentation. Clothing selected for function and anonymity—replaceable, forgettable, never the same set twice in public."
   },
-  "image_prompt": "Tendai Zaragoza, 168cm lean frame in charcoal synth-weave jacket and black utility pants, runner boots with reinforced soles. Rich warm brown skin with golden-amber undertones, defined cheekbones softly sculpted, full expressive lips, close-cropped black hair with warm undertones. Deep violet cybernetic eyes with fractal ring patterns that shift with light. Subdermal luminescent mesh tracery visible on temples and cheekbones in low light, faint geometric scarring patterns. Featureless fingertips from ablation treatments. Economical poised stance ready for movement, hands fidgeting with quiet intent, half-smile arriving before the moment. Cyberpunk 2226, Great Lakes Metropolitan Zone, neon-touched shadows, gritty industrial backdrop with holographic glitch effects around face and hands—a figure designed to slip through surveillance unregistered. Mood: focused calm, perpetually parsing. --ar 2:3 --v 6",
+  "image_prompt": "Tariq Mansour, 168cm wiry neo-noir operative, 2226 GLMZ, warm olive-brown skin with golden undertones blending Middle Eastern and Southeast Asian features; high prominent cheekbones, slight almond-shaped eyes glowing deep violet with fractal ring patterns (geneware-modified), full expressive lips, strong angular jawline. Close-cropped black hair with warm undertones, precisely tapered sides. Subdermal luminescent mesh tracery visible under skin on temples and cheekbones in low light, creating faint geometric patterns. Fingertips unnaturally smooth without ridge patterns. Wearing unmarked charcoal synth-weave jacket with hidden pockets, form-fitting black cargo pants, reinforced runner boots. Economical, deliberate posture, hands slightly fidgeting. Neo-noir noir setting, moody blue-amber neon lighting casting oblique shadows, emphasizing subdermal augmentations. Expression neutral to animated, face that glitches in surveillance feeds. Atmospheric urban background, Abyssal Threshold terrain aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.4,
-    "Hispanic/Latin American": 27.8,
-    "Pacific Islander": 25.8,
-    "East Asian": 10.0
+    "Middle Eastern": 69.6,
+    "Southeast Asian": 16.5,
+    "Northern European": 13.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 21.9,
+        "Afghan Dari": 47.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 16.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 7.9,
+        "Finnish": 1.1
+      },
+      "British Isles": {
+        "Welsh": 4.2,
+        "Scottish": 0.7
+      }
+    }
+  }
 }

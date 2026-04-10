@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67371639a09ca6f1035ff26",
   "type": "character",
-  "name": "Amir Hosseini",
+  "name": "Mariposa Guerrero",
   "aliases": [
     "Obi",
     "Patchwork"
@@ -13,7 +13,7 @@
   "age": 11,
   "status": "active",
   "location": "The Shelf, Garfield Rack, near Ashland and Chicago Ave",
-  "description": "Obi is a scrawny, dark-skinned boy with close-cropped hair that he's attempted to dye in patches — copper at the temples, greenish-black at the crown — using stolen salon gel that only half-worked. His left eye has a cracked retinal overlay from a secondhand aug he installed himself using a cracked tutorial, giving that eye a faint grid shimmer when he's excited or scared. He wears a vest with too many pockets, each one holding something he's convinced will be useful someday: a dead ELF token, three different brand of protein tabs, a bent stylus. He moves like a sparrow — quick, diagonal, always watching exits.\n\nObi is relentlessly optimistic in the way only children who've had to practice it deliberately can be. He runs messages between market stalls, repair shops, and mid-tier residents who don't trust the corp relay networks, collecting Φ1-2 per run. He narrates his own life in his head as if he's a documentary subject, which makes him unexpectedly articulate about his circumstances when asked. He worships a minor ELF he calls 'Knuckle' that he believes lives in a cracked streetlight on his corner.",
+  "description": "Mariposa Guerrero is a scrawny, dark-skinned boy with close-cropped hair that he's attempted to dye in patches — copper at the temples, greenish-black at the crown — using stolen salon gel that only half-worked. His left eye has a cracked retinal overlay from a secondhand aug he installed himself using a cracked tutorial, giving that eye a faint grid shimmer when he's excited or scared. He wears a vest with too many pockets, each one holding something he's convinced will be useful someday: a dead ELF token, three different brand of protein tabs, a bent stylus. He moves like a sparrow — quick, diagonal, always watching exits.\n\nMariposa Guerrero is relentlessly optimistic in the way only children who've had to practice it deliberately can be. He runs messages between market stalls, repair shops, and mid-tier residents who don't trust the corp relay networks, collecting Φ1-2 per run. He narrates his own life in his head as if he's a documentary subject, which makes him unexpectedly articulate about his circumstances when asked. He worships a minor ELF he calls 'Knuckle' that he believes lives in a cracked streetlight on his corner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -170,7 +170,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -213,44 +213,30 @@
   "changelog": [],
   "related_entities": [
     "Garfield Rack",
+    "The Marrow Market",
     "Sulfur Crown Agriculture",
     "The Shelf",
     "Axiom Industries",
     "LifeWire LumiFace Bioluminescent Subdermal Accent",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Copper",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Exo-Runner Frame",
-    "Brecken Yılmaz-Osei",
-    "Isadora Vukić-Nambiar",
-    "Jemba Ulrich-Faafetai",
-    "Kenji Guerrero-Osei-Mensah",
-    "Mirabel Osei-Quispe",
-    "NeuralPath Conduit Everyday Neural Mesh",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Holmberg-Dembele",
-    "Sorin Ekwensi-Balasanyan",
-    "Tessera Corponation",
-    "The Bazaar",
-    "Veslemøy Achebe-Tursynov",
-    "Wren Okafor-Bjarnadóttir",
-    "Yannick Tofauti-Szarvásy"
+    "Copper",
+    "Corner Slice",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Middle Eastern dominant (47.7%) with significant Hispanic/Latin American (23.0%) and East Asian (18.6%) ancestry, combined with smaller contributions from Sub-Saharan African (5.9%), Southeast Asian (3.5%), and Eastern European (1.3%) heritage. This creates a phenotype with Middle Eastern facial structure and coloring as the primary framework, enriched by Latin American warmth and East Asian eye shape characteristics.",
+    "heritage": "Complex Pan-Global ancestry with balanced contributions across multiple continents. Hispanic/Latin American heritage (31.9%) forms the foundational phenotype, enriched by significant South Asian (18.5%), Sub-Saharan African (15.6%), East Asian (14.2%), North African (12.8%), and Southeast Asian (7.0%) components. This creates a distinctive phenotype: warm medium-brown skin with golden undertones and subtle reddish warmth, facial structure combining Latin American cheekbone prominence with South Asian and East Asian eye shape characteristics, and the fine facial proportions reflecting the balanced multi-regional blend.",
     "height_cm": 142,
     "weight_kg": 31,
     "build": "Scrawny and angular, all elbows and knees, with the lean musculature of a child who moves constantly. No subcutaneous fat; ribs slightly visible beneath warm brown skin.",
     "hair_color": "Natural black with intentional copper patches at temples and greenish-black at crown from partially-failed salon gel application",
     "hair_style": "Close-cropped with textured layers, unevenly dyed sections creating a patchy, DIY effect",
     "hair_length": "Short",
-    "eye_color": "Left eye: dark brown with faint visible grid pattern overlay shimmer and micro-glitches; right eye: natural dark brown with slight East Asian epicanthic fold characteristic",
-    "skin_tone": "Warm medium brown with golden undertones, reflecting the blend of Middle Eastern, Latin American, and East Asian ancestry",
-    "complexion": "Youthful face with sharp cheekbones and pointed chin showing Middle Eastern and East Asian structure. Skin unmarred except for minor scrapes and dust-dirt that seems permanent. Warm golden undertones across cheeks and bridge of nose. Bright, alert expression despite visible exhaustion around the eyes. Occasional grid-pattern light artifact visible in left eye when excited or frightened.",
+    "eye_color": "Left eye: dark brown with faint visible grid pattern overlay shimmer and micro-glitches; right eye: natural dark brown with characteristic East Asian epicanthic fold",
+    "skin_tone": "Warm medium brown with golden undertones and subtle reddish warmth, reflecting balanced Pan-Global ancestry distribution",
+    "complexion": "Youthful face with sharp cheekbones and defined facial structure reflecting the blend of Latin American, South Asian, and East Asian heritage. Warm golden tones across cheeks and nose bridge with subtle reddish warmth beneath the surface. Skin unmarred except for minor scrapes and dust-dirt that seems permanent. Bright, alert expression despite visible exhaustion around the eyes. Occasional grid-pattern light artifact visible in left eye when excited or frightened.",
     "distinguishing_marks": [
       "Faint scar tissue across left inner wrist from DIY retinal overlay installation attempt",
       "Small burn mark on right palm (protein tab mishap, approximately 2cm diameter)",
@@ -260,17 +246,64 @@
     "posture_movement": "Moves in quick, angular patterns — diagonal cuts rather than straight lines. Perpetually scanning for exits and sightlines. Feet always positioned for rapid direction changes. Sits with knees drawn up or legs folded, never fully relaxed. Speaks with hand gestures that punctuate his internal narration. Default resting expression is watchful but hopeful.",
     "clothing_style": "Oversized gray-brown utility vest with excessive pockets (Tier 4 salvage-market origin, original owner unknown), worn over faded synthetic long-sleeve shirt. Cargo pants with visible repair stitching at both knees. Mismatched socks. Worn synthetic sneakers with one loose sole. Small data-key lanyard around neck. Everything slightly too large, suggesting recent growth spurts or intentional oversizing for pocket capacity."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Amir, a scrawny 142cm tall young teenager with warm medium-brown skin reflecting Middle Eastern, Latin American, and East Asian heritage. Sharp cheekbones and pointed chin. Natural black close-cropped hair with intentional copper temple patches and greenish-black crown from failed salon work. Left eye shows visible cracked grid pattern AR overlay with micro-glitches; right eye natural dark brown. Faint scar tissue on left inner wrist, small burn mark on right palm, permanent dust-dirt on skin. Wearing oversized gray-brown salvage-market utility vest packed with pockets over faded synthetic long-sleeve shirt, cargo pants with knee repairs, mismatched socks, worn sneakers with loose sole. Data-key lanyard around neck. Angular, watchful posture positioned for rapid movement. Alert but exhausted expression. Great Lakes Metropolitan Zone neon-lit concrete backdrop, atmospheric haze, cool blue and amber lighting casting shadows across sharp features. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Mariposa Guerrero, 142cm tall scrawny child with warm golden-brown skin reflecting Pan-Global heritage. Youthful sharp cheekbones, alert dark brown eyes with left eye showing cracked AR grid overlay and periodic glitches. Short black hair with copper temple patches and greenish-black crown from failed salon dye. Small burn scar on right palm, threadbare stylus calluses. Angular posture, always scanning exits. Oversized gray-brown utility salvage vest with excessive pockets over faded synthetic shirt, cargo pants with repair stitching, mismatched socks, worn sneakers with loose sole. Data-key lanyard. Gritty urban GLMZ setting, neon industrial lighting casting golden and cool shadows, neo-noir urban aesthetic, hopeful but watchful expression, motion blur suggesting constant movement, high-tech low-resource aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 47.7,
-    "Hispanic/Latin American": 23.0,
-    "East Asian": 18.6,
-    "Sub-Saharan African": 5.9,
-    "Southeast Asian": 3.5,
-    "Eastern European": 1.3
+    "Hispanic/Latin American": 31.9,
+    "South Asian": 18.5,
+    "Sub-Saharan African": 15.6,
+    "East Asian": 14.2,
+    "North African": 12.8,
+    "Southeast Asian": 7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 31.9
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 10.7
+      },
+      "Nepali": {
+        "Nepali": 7.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 11.4,
+        "Ghanaian": 4.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.3
+      },
+      "Chinese": {
+        "Fujianese": 2.9,
+        "Sichuanese": 4.9
+      },
+      "Korean": {
+        "Korean": 3.1
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 8,
+        "Egyptian": 4.8
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 5.8
+      },
+      "Cambodian": {
+        "Khmer": 1.2
+      }
+    }
+  }
 }

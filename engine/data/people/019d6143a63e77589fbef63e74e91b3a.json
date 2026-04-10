@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63e77589fbef63e74e91b3a",
   "type": "character",
-  "name": "Frost Kabwit",
+  "name": "Frost Makwa",
   "aliases": [
     "Gravel",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Ashland and Chicago Ave",
-  "description": "Kamala Larsen-Mensah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a infiltrator out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Kamala Larsen-Mensah lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Frost Makwa is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a infiltrator out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Frost Makwa lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.54,
@@ -260,7 +260,7 @@
     "Brawler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Crucible Square",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,31 +279,13 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Nearfield",
-    "Slagworks Industrial",
     "Chicago",
-    "Arcturus BH-2 'Marrow'",
-    "Breck Tannen",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "Glenville Sound",
-    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Quiet Room"
+    "Frost",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multihethnic blend: 35.7% Sub-Saharan African (deep warm undertone foundation), 22.1% Hispanic/Latin American (warm and golden influences), 18.6% Northern European (cool undertone mixing), 14.1% East Asian (cheekbone and eye shape influence), 9.5% Southeast Asian (fine facial structure refinement). Result: complex warm-medium skin with subtle golden and olive undertones, facial architecture showing pronounced cheekbones with slight lateral eye-set from East/Southeast Asian ancestry, broad nose-bridge suggesting African heritage, overall feature blend creates striking angular appearance.",
+    "heritage": "Complex multihethnic blend dominated by Indigenous American ancestry (44.7%) — broad cheekbones, strong nose bridge, angular facial structure. South Asian heritage (27.1%) adds refined facial geometry and warm golden undertones. Hispanic/Latin American ancestry (16.6%) contributes warm, earthy richness. Central Asian (7.3%) enhances cheekbone prominence and facial angularity. East Asian (4.3%) provides subtle influence on eye-set and overall facial proportions. Result: warm medium-brown skin with golden, olive, and copper undertones creating luminous depth. Striking angular features with pronounced Indigenous American bone structure refined by South Asian and Central Asian cheekbone prominence.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Lean and angular, with the precise musculature of someone who trains systematically rather than for bulk. Long limbs suggest a runner's frame — efficient rather than imposing.",
@@ -311,8 +293,8 @@
     "hair_style": "Worn short and neat, military-regulation simple",
     "hair_length": "Short",
     "eye_color": "Hazel with slight amber undertone",
-    "skin_tone": "Warm medium brown with golden and olive undertones — multi-regional blend creating luminous depth. Reflects Sub-Saharan, Hispanic, and Southeast Asian warmth balanced by Northern European cool undertones.",
-    "complexion": "Sharp cheekbones with slight lateral prominence from East Asian ancestry, defined jawline. Nose bridge broad and straight. Skin is clear but bears the texture of someone who has spent time in rough conditions. Expression is controlled, rarely at rest. Fine lines around the eyes suggest squinting or sustained focus.",
+    "skin_tone": "Warm medium brown with golden, olive, and copper undertones — reflecting Indigenous American, South Asian, Hispanic, and Central Asian heritage warmth. Luminous depth from complex regional blend.",
+    "complexion": "Pronounced cheekbones and broad, straight nose bridge characteristic of Indigenous American ancestry, enhanced by Central Asian high-cheekbone prominence. Refined facial geometry from South Asian heritage. Defined jawline. Skin is clear but bears the texture of someone who has spent time in rough conditions. Expression is controlled, rarely at rest. Fine lines around the eyes suggest squinting or sustained focus.",
     "distinguishing_marks": [
       "Thin white scar along the left temple, barely visible unless light catches it at the right angle — old injury, professionally healed",
       "Burn scar on the right forearm (inner side, 8cm x 4cm) — pale and mottled, consistent with chemical or thermal contact",
@@ -322,16 +304,69 @@
     "posture_movement": "Moves with deliberate efficiency — no wasted motion, no fidgeting. Stands with weight balanced and slightly forward, ready to shift direction. Eyes track exits and sightlines constantly. Handshake is firm but brief. Speech is measured, with calculated pauses that suggest either precision or careful emotional suppression.",
     "clothing_style": "Favors Tier 3-4 pragmatism — durable synthetics in dark colors (black, charcoal, deep blue) that resist wear and staining. Typically wears a fitted longline jacket with internal pockets over a simple turtleneck. Pants are tactical cut with reinforced seams. Shoes are unmarked but expensive, chosen for quiet movement and ankle support. No visible branding or status markers — the opposite of advertising. When maintaining cover, adopts identical neutrality to avoid memorable details."
   },
-  "image_prompt": "Frost Kabwit, cyberpunk 2226 character portrait. Tall lean angular man, 188cm, medium-warm brown skin with golden undertones, striking sharp cheekbones showing East/Southeast Asian influence. Dark brown hair with silver at temples, cut short and neat. Hazel amber eyes, controlled expression with fine lines from focus. Exposed chrome titanium-alloy augmentation on right shoulder and upper chest with soft blue bioluminescent pulse lines. Visible surgical scar on right ribcage, burn scar on inner forearm, thin temple scar. Fitted dark charcoal longline jacket over black turtleneck, tactical reinforced pants, expensive unmarked shoes. Cool blue-grey cyberpunk urban setting with neon edge lighting casting shadows across his face. Posture rigid and efficient, eyes tracking exits. Cyberpunk noir atmosphere, precise and dangerous aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Frost Makwa, a striking 188cm tall neo-noir operative in the GLMZ, 2226. Lean angular build with warm medium-brown skin, golden and olive undertones reflecting Indigenous American, South Asian, and Central Asian heritage. Pronounced cheekbones, broad straight nose bridge, defined jawline. Dark brown hair with silver at temples, cut short and military-neat. Hazel eyes with amber undertone, expression controlled and intensely focused. Visible white scar along left temple, burn scar on inner right forearm. Chrome titanium plating with soft blue bioluminescent lines exposed across right shoulder and upper chest where drug synthesizer connects — intentional statement piece. Wearing fitted dark charcoal longline jacket with internal pockets over simple black turtleneck, tactical-cut reinforced pants, unmarked expensive dark shoes. Stands with balanced posture, weight slightly forward, ready to move. Cold neon-lit corporate corridor or dimly lit safe house setting. Neo-noir noir lighting with blue and amber neon reflecting off chrome augmentations. Mood: calculated precision, dangerous competence, emotional suppression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 35.7,
-    "Hispanic/Latin American": 22.1,
-    "Northern European": 18.6,
-    "East Asian": 14.1,
-    "Southeast Asian": 9.5
+    "Indigenous American": 44.7,
+    "South Asian": 27.1,
+    "Hispanic/Latin American": 16.6,
+    "Central Asian": 7.3,
+    "East Asian": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 44.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 0.8
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 5.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 8.9,
+        "Sinhalese": 12.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 10.5
+      },
+      "Central American": {
+        "Salvadoran": 5.5,
+        "Guatemalan": 0.6
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 2.5,
+        "Hazara": 0.3
+      },
+      "Mongolic": {
+        "Mongolian": 0.2,
+        "Buryat": 0.6
+      },
+      "Turkic": {
+        "Kazakh": 1.9,
+        "Kyrgyz": 1.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 2.1
+      },
+      "Japanese": {
+        "Japanese": 0.8
+      },
+      "Korean": {
+        "Korean": 1.4
+      }
+    }
+  }
 }

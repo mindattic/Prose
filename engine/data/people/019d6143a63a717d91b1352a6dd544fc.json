@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63a717d91b1352a6dd544fc",
   "type": "character",
-  "name": "Frost Nazari-Vaai-Olofsson",
+  "name": "Frost Nazari-Jaramillo-Sesay",
   "aliases": [
     "Splicer",
     "Doc Splice",
@@ -14,7 +14,7 @@
   "age": 28,
   "status": "active",
   "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Jin-seo Park was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Shelf.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
+  "description": "Frost Nazari-Jaramillo-Sesay was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Shelf.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -224,7 +224,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,28 +236,16 @@
     "Helix Biosystems",
     "The Shelf",
     "Big Rig",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "The Pure Hand",
-    "Slagworks Industrial",
     "Chicago",
-    "Aïssé Dragomirescu-Faalelei",
-    "Devraj Solano-Yildirim",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kyle Ellen Corbin-Vasik",
-    "MERIDIAN",
-    "Marcus Bellamy",
-    "Narrowcast",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo RR-1 'Rattlesnake'",
-    "Sable",
-    "Siosefa Bergqvist-Bah",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Frost",
+    "The Pure Hand",
+    "Cargo Tacos",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian-Middle Eastern-Eastern European-Pacific Islander blend with Sub-Saharan African undertones; complex diaspora ancestry reflected in warm olive-brown undertones with subtle golden and deeper mahogany gradations",
+    "heritage": "Ubiquitous Diaspora composite: Sub-Saharan African (22.2%), South Asian (18.9%), Middle Eastern (16.7%), Eastern European (14.9%), Hispanic/Latin American (14.7%), Southeast Asian (12.6%). This genetic mosaic creates a nuanced phenotype blending African warmth with South Asian and Middle Eastern bone structure, tempered by Eastern European undertones and Southeast Asian features. Facial geometry shows the angular cheekbones of South Asian ancestry, rounded slightly by Sub-Saharan African fullness, with the brow ridge characteristic of Eastern European genetics. Skin carries warm golden-mahogany undertones across a medium-brown base.",
     "height_cm": 172,
     "weight_kg": 64,
     "build": "Lean and wiry, shoulders slightly hunched from years bent over repair benches. Forearms show old scarring from chrome installation work; core is stronger than his frame suggests—muscle built through precision work rather than bulk.",
@@ -265,8 +253,8 @@
     "hair_style": "Undercut, longer on top (swept back), kept functional rather than styled. Often matted from sweat and workshop grime.",
     "hair_length": "Short to medium",
     "eye_color": "Dark brown, naturally alert—eyes are his most expressive feature, constantly processing detail",
-    "skin_tone": "Warm olive-brown complexion with golden undertones and deeper mahogany gradations; uneven pallor from months in The Shelf's industrial lighting creating contrast zones across face and forearms",
-    "complexion": "Angular face with prominent cheekbones reflecting Southeast Asian and Middle Eastern structure, softened slightly by Pacific Islander ancestry; dark circles under eyes from sleep deprivation and diagnostic work. Thin scar runs from left temple to jawline (workshop accident, year two). Perpetually exhausted look. Jaw usually clenched.",
+    "skin_tone": "Warm medium-brown complexion with golden-mahogany undertones reflecting the blend of Sub-Saharan African, South Asian, and Middle Eastern ancestry; uneven pallor from months in The Shelf's industrial lighting creating contrast zones across face and forearms. Skin shows the depth and richness of multiple ancestral melanin patterns.",
+    "complexion": "Angular face with prominent cheekbones reflecting South Asian and Middle Eastern bone structure, enriched by Sub-Saharan African fullness in lower face and lips; subtle Eastern European brow ridge visible above deep-set eyes. Dark circles under eyes from sleep deprivation and diagnostic work. Thin scar runs from left temple to jawline (workshop accident, year two). Perpetually exhausted look. Jaw usually clenched. Facial structure shows the interplay of multiple ancestry groups—no single dominant feature, but a cohesive blend.",
     "distinguishing_marks": [
       "Scar tissue around both wrists where surgical chrome interfaces with flesh—raw-looking, poorly healed, asymmetrical",
       "Thin white line running left temple to jawline from a chrome calibration tool accident",
@@ -277,16 +265,58 @@
     "posture_movement": "Hunched forward, shoulders curled inward—protective posture. Moves with deliberate precision, economical gestures. Uses his hands constantly while talking, making the mismatch deeply visible. Right hand (gripper) moves with heavier, more deliberate hydraulic lag; left hand twitches occasionally from miscalibration. When concentrating, completely still except for micro-adjustments.",
     "clothing_style": "Tier 4-5 working crew: grease-stained grey syndicate-knockoff maintenance jacket with rolled sleeves (showing wrist augmentation scars), cheap black thermostat undershirt with small tears. Cargo pants with multiple pockets filled with diagnostic tools and calibration leads. Steel-toe boots worn through at the heel. No jewelry. Wears a frayed Meridian Technical ID badge clipped to a lanyard despite no longer being a student—a ghost of who he was supposed to become."
   },
-  "image_prompt": "Frost Nazari-Vaai-Olofsson, lean 172cm cyberpunk technician with warm olive-brown skin tone and golden-mahogany undertones, sharp angular Southeast Asian-Middle Eastern features with prominent cheekbones, dark alert eyes, black hair with silver threading at temples in functional undercut swept back. Visibly exhausted expression, thin scar temple to jawline. Wears grease-stained grey maintenance jacket rolled at sleeves exposing mismatched prosthetic hands—delicate surgical chrome left hand with articulated fingers, heavy salvaged industrial gripper right hand with hydraulic actuators. Wrist interfaces show exposed cables and poor calibration marks. Cheap black undershirt, cargo pants with tools, worn steel-toe boots. Protective hunched posture, shoulders curled inward. Hands visibly shaking slightly at rest. Surrounded by The Shelf's industrial workshop lighting, harsh neon-blue and amber overhead panels casting uneven shadows across tired face. Gritty cyberpunk 2226 Great Lakes Metropolitan Zone maintenance bay setting, neon reflection on chrome hands, diagnostic tools scattered nearby, worn Meridian Technical ID badge visible on lanyard. Mood: exhausted precision, fractured diaspora identity, chrome and humanity in uncomfortable union. --ar 2:3 --v 6",
+  "image_prompt": "Frost Nazari-Jaramillo-Sesay, 172cm lean wiry frame, warm medium-brown skin with golden-mahogany undertones blending Sub-Saharan African, South Asian, Middle Eastern, Eastern European, and Southeast Asian features. Angular cheekbones with rounded lower face, dark alert eyes shadowed by exhaustion, thin scar temple to jaw. Black hair with silver threading, undercut style swept back, matted with workshop grime. Mismatched prosthetic hands: delicate surgical chrome left hand (too small, articulated fingers) and heavy industrial gripper right hand (too large, hydraulic). Hands shake slightly. Hunched protective posture, wearing grease-stained grey maintenance jacket with rolled sleeves exposing scarred wrist interfaces, cheap black undershirt with tears, cargo pants with tools, worn steel-toe boots. Frayed Meridian Technical ID badge. Industrial neo-noir workshop setting, cool fluorescent lighting casting shadows across uneven skin tone, detail-focused face processing diagnostic work, hands trembling at rest. Gritty, worn-down aesthetic. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 30.9,
-    "Middle Eastern": 23.2,
-    "Eastern European": 20.3,
-    "Pacific Islander": 16.7,
-    "Sub-Saharan African": 8.9
+    "Sub-Saharan African": 22.2,
+    "South Asian": 18.9,
+    "Middle Eastern": 16.7,
+    "Eastern European": 14.9,
+    "Hispanic/Latin American": 14.7,
+    "Southeast Asian": 12.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 22.2
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 13.7,
+        "Pashtun": 5.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 16.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 8
+      },
+      "Slavic South": {
+        "Croatian": 5.3
+      },
+      "Slavic East": {
+        "Russian": 1.1,
+        "Belarusian": 0.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 13.7,
+        "Nicaraguan": 1
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 12.6
+      }
+    }
+  }
 }

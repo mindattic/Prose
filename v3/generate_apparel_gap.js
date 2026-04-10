@@ -107,7 +107,7 @@ function getExistingNames() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88 (M88), year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (the symbol is \u03A6, representing QUANTA, not the Greek letter). Society is tiered:
+const WORLD_CONTEXT = `Setting: GLMZ (M88), year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (the symbol is \u03A6, representing QUANTA, not the Greek letter). Society is tiered:
 - Tier 1 "The Shelf" — poorest, most dangerous. Reclaimed industrial zones, acid rain, patched infrastructure.
 - Tier 2 "Circuit" — working class. Factory workers, transit operators, street vendors. Clean but functional.
 - Tier 3 — middle management, cubicle workers, small business owners.
@@ -128,37 +128,37 @@ const CATEGORIES = [
     tag: 'headwear',
     category: 'headwear',
     count: 30,
-    prompt: `Generate {count} HEADWEAR items for Meridian 88. Include a MIX of: tactical helmets, everyday hats and caps, hoods (standalone or detachable), masks (half-face, full-face, filter masks), visors (AR-enabled, welding, sun), neural-port covers and caps, AR glasses and smart eyewear, balaclavas, and head wraps. Spread across ALL tiers from Shelf scrap-metal face shields to Spire designer neural-port fascinators. Each must have a distinct brand/maker name. Some aug-compatible (accommodating neural ports, cranial chrome), some gene-compatible (horn cutouts, ear accommodation for animal ears).`
+    prompt: `Generate {count} HEADWEAR items for GLMZ. Include a MIX of: tactical helmets, everyday hats and caps, hoods (standalone or detachable), masks (half-face, full-face, filter masks), visors (AR-enabled, welding, sun), neural-port covers and caps, AR glasses and smart eyewear, balaclavas, and head wraps. Spread across ALL tiers from Shelf scrap-metal face shields to Spire designer neural-port fascinators. Each must have a distinct brand/maker name. Some aug-compatible (accommodating neural ports, cranial chrome), some gene-compatible (horn cutouts, ear accommodation for animal ears).`
   },
   {
     tag: 'gloves',
     category: 'gloves',
     count: 30,
-    prompt: `Generate {count} GLOVE items for Meridian 88. Include: tactical/combat gloves, work gloves (industrial, welding, chemical-resistant), fashion gloves (Spire galas, club wear), shock-resistant insulated gloves, augmentation-interface gloves (that connect to chrome forearms or hand augments), haptic feedback gloves, medical/surgical gloves, thief/infiltration gloves (grip-enhanced, print-masking), and cold/environmental gloves. Spread across tiers. Some designed to cover chrome hands cosmetically. Some with cutaway fingers for augmented digits.`
+    prompt: `Generate {count} GLOVE items for GLMZ. Include: tactical/combat gloves, work gloves (industrial, welding, chemical-resistant), fashion gloves (Spire galas, club wear), shock-resistant insulated gloves, augmentation-interface gloves (that connect to chrome forearms or hand augments), haptic feedback gloves, medical/surgical gloves, thief/infiltration gloves (grip-enhanced, print-masking), and cold/environmental gloves. Spread across tiers. Some designed to cover chrome hands cosmetically. Some with cutaway fingers for augmented digits.`
   },
   {
     tag: 'accessory',
     category: 'accessory',
     count: 30,
-    prompt: `Generate {count} ACCESSORY items for Meridian 88. Include: belts (utility, fashion, holster-integrated), holsters and harnesses (concealed, tactical, over-jacket), bags and packs (messenger, tactical sling, courier, duffel), watches and wrist devices (smart, analog-retro, aug-interface), functional jewelry (rings with embedded tools, necklaces with data chips, bracelets that double as comms), dog tags and ID markers, scarves and neck wraps, arm bands, and ankle monitors (both voluntary and court-ordered). Spread across all tiers.`
+    prompt: `Generate {count} ACCESSORY items for GLMZ. Include: belts (utility, fashion, holster-integrated), holsters and harnesses (concealed, tactical, over-jacket), bags and packs (messenger, tactical sling, courier, duffel), watches and wrist devices (smart, analog-retro, aug-interface), functional jewelry (rings with embedded tools, necklaces with data chips, bracelets that double as comms), dog tags and ID markers, scarves and neck wraps, arm bands, and ankle monitors (both voluntary and court-ordered). Spread across all tiers.`
   },
   {
     tag: 'base_layer',
     category: 'base_layer',
     count: 20,
-    prompt: `Generate {count} UNDERGARMENT/BASE LAYER items for Meridian 88. Include: thermal underlayers for Shelf cold, compression shirts and leggings (athletic, medical, tactical), smart-fabric base layers (biometric monitoring, temperature regulation), armor underlayers (soft ballistic weave worn under clothes), moisture-wicking tactical base layers, medical compression garments post-surgery, and aug-interface bodysuits (skin-tight layers that route power and data between chrome implants). Spread across tiers from Shelf hand-stitched thermals to Spire nano-fabric climate suits.`
+    prompt: `Generate {count} UNDERGARMENT/BASE LAYER items for GLMZ. Include: thermal underlayers for Shelf cold, compression shirts and leggings (athletic, medical, tactical), smart-fabric base layers (biometric monitoring, temperature regulation), armor underlayers (soft ballistic weave worn under clothes), moisture-wicking tactical base layers, medical compression garments post-surgery, and aug-interface bodysuits (skin-tight layers that route power and data between chrome implants). Spread across tiers from Shelf hand-stitched thermals to Spire nano-fabric climate suits.`
   },
   {
     tag: 'cultural',
     category: 'cultural',
     count: 30,
-    prompt: `Generate {count} CULTURAL/SUBCULTURAL apparel items for Meridian 88. Include: gang insignia wear (colors, patches, specific garment modifications that mark territory), runner gear (signature looks that build street rep), rave and club culture wear (reactive fabrics, LED-threaded, sound-reactive), Shelf DIY fashion (hand-painted, salvage-art, deliberately anti-corporate), Spire haute couture (one-of-a-kind statement pieces by named designers), religious/spiritual wear adapted for 2200, protest fashion (anti-corponation messaging, subversive designs), and synthetic identity fashion (clothes that declare synthetic personhood). These are garments that make a CULTURAL STATEMENT.`
+    prompt: `Generate {count} CULTURAL/SUBCULTURAL apparel items for GLMZ. Include: gang insignia wear (colors, patches, specific garment modifications that mark territory), runner gear (signature looks that build street rep), rave and club culture wear (reactive fabrics, LED-threaded, sound-reactive), Shelf DIY fashion (hand-painted, salvage-art, deliberately anti-corporate), Spire haute couture (one-of-a-kind statement pieces by named designers), religious/spiritual wear adapted for 2200, protest fashion (anti-corponation messaging, subversive designs), and synthetic identity fashion (clothes that declare synthetic personhood). These are garments that make a CULTURAL STATEMENT.`
   },
   {
     tag: 'protective',
     category: 'protective',
     count: 30,
-    prompt: `Generate {count} PROTECTIVE/WORK apparel items for Meridian 88. Include: hazmat suits and chemical protection, radiation suits (for reactor zones and contaminated Shelf areas), welding gear and forge aprons, mining and tunneling suits, cleanroom suits (for chip fab, biotech labs, geneware clinics), environmental suits (acid rain, toxic atmosphere, extreme cold), blast suits (bomb disposal), firefighting gear adapted for chemical fires, construction exoskeletons with integrated clothing, and decontamination coveralls. Spread across tiers. Industrial and dangerous-environment focused.`
+    prompt: `Generate {count} PROTECTIVE/WORK apparel items for GLMZ. Include: hazmat suits and chemical protection, radiation suits (for reactor zones and contaminated Shelf areas), welding gear and forge aprons, mining and tunneling suits, cleanroom suits (for chip fab, biotech labs, geneware clinics), environmental suits (acid rain, toxic atmosphere, extreme cold), blast suits (bomb disposal), firefighting gear adapted for chemical fires, construction exoskeletons with integrated clothing, and decontamination coveralls. Spread across tiers. Industrial and dangerous-environment focused.`
   },
   {
     tag: 'gap_outfit',
@@ -206,7 +206,7 @@ async function generateBatch(catDef) {
 
     const filledPrompt = prompt.replace('{count}', batchSize);
 
-    const system = `You generate apparel items for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate apparel items for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

@@ -12,8 +12,7 @@ public class FtpPublishServiceTests
         Directory.CreateDirectory(rootDir);
         try
         {
-            var settings = new SettingsService(rootDir);
-            // Clear the defaults for testing
+            using var settings = new SettingsService(rootDir);
             settings.FtpHost = "";
             var svc = new FtpPublishService(settings);
             Assert.That(svc.IsConfigured, Is.False);
@@ -28,7 +27,7 @@ public class FtpPublishServiceTests
         Directory.CreateDirectory(rootDir);
         try
         {
-            var settings = new SettingsService(rootDir);
+            using var settings = new SettingsService(rootDir);
             settings.FtpHost = "example.com";
             settings.FtpUsername = "user";
             var svc = new FtpPublishService(settings);
@@ -44,7 +43,7 @@ public class FtpPublishServiceTests
         Directory.CreateDirectory(rootDir);
         try
         {
-            var settings = new SettingsService(rootDir);
+            using var settings = new SettingsService(rootDir);
             settings.FtpHost = "example.com";
             settings.FtpUsername = "user";
             var svc = new FtpPublishService(settings);
@@ -62,7 +61,7 @@ public class FtpPublishServiceTests
         Directory.CreateDirectory(rootDir);
         try
         {
-            var settings = new SettingsService(rootDir);
+            using var settings = new SettingsService(rootDir);
             settings.FtpHost = "";
             var svc = new FtpPublishService(settings);
             var (ok, msg) = await svc.PublishAsync("/some/path");

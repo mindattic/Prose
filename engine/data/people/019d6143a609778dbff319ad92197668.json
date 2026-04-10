@@ -1,7 +1,7 @@
 {
   "id": "019d6143a609778dbff319ad92197668",
   "type": "character",
-  "name": "Gulnara Halverson-Toktogulov",
+  "name": "Yasmin Sabbagh-Balogun",
   "aliases": [
     "Lali",
     "Zero-Sum",
@@ -14,7 +14,7 @@
   "age": 28,
   "status": "active",
   "location": "Nomadic between Old Harbor and the underdeck of The Shelf, near Wacker and State",
-  "description": "Eulàlia is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head — exits, sightlines, power sources — that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nEulàlia was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep GLMZ's corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as 'a fairly educational few weeks.' She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Eulàlia operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria — which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
+  "description": "Yasmin Sabbagh-Balogun is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head — exits, sightlines, power sources — that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nYasmin Sabbagh-Balogun was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep GLMZ's corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as 'a fairly educational few weeks.' She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Yasmin Sabbagh-Balogun operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria — which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -231,7 +231,7 @@
     "Ambusher": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Nomadic between Old Harbor and the underdeck of The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,64 +248,68 @@
     "Kang-Petrov Arms KP-19 'Workhorse'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Shelf",
     "ARCHITECT",
     "The Heritage Vault",
+    "Circuit",
     "Nesting Doll",
-    "Alper Lebedev-Tutu",
-    "Biometric Denial Charge BDC-1",
-    "Eshe Pena-Baah",
-    "Focadrin",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Independent Micro-Grid Power Cooperative",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Narrowcast",
-    "Old Harbor",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Søren Mikkelsen-Achebe",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Harbor Fish Shack",
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Central Asian (Kazakh/Kyrgyz), with significant East Asian, Indigenous American, Eastern European, South Asian, and Middle Eastern ancestry. The result is a striking blend: high cheekbones and eye shape from Central and East Asian heritage, warm undertones from South Asian and Middle Eastern ancestry, with the lean frame often seen in nomadic Central Asian populations.",
+    "heritage": "Middle Eastern (53%), Eastern European (24%), and Sub-Saharan African (23%) ancestry. The result is a striking blend: warm, rich deep brown skin tones from the dominant Middle Eastern and African heritage with subtle golden-olive undertones, high and prominent cheekbones characteristic of Eastern European ancestry, and refined angular facial structure reflecting the genetic synthesis of the Ubiquitous Diaspora. The combination yields warm-toned features with strong definition rather than soft curves.",
     "height_cm": 164,
     "weight_kg": 52,
     "build": "Wiry and lean with the taut musculature of someone who walks constantly and eats when remembering to. No excess, no softness — efficient rather than athletic.",
     "hair_color": "Dark brown, naturally, with occasional premature silver at the temples from stress or neural interface strain",
     "hair_style": "Usually gathered into a haphazard knot or bun, sometimes with strands escaping; occasionally tied back with salvaged wire or synthetic cord",
     "hair_length": "Medium, typically 20-25cm, kept long enough for functionality but not maintenance",
-    "eye_color": "Dark brown with a faint amber tint in the right eye where the retinal overlay circuitry shows through under certain light",
-    "skin_tone": "Warm golden-tan complexion with subtle olive undertones, reflecting the blended ancestry of Central Asian, East Asian, South Asian, and Middle Eastern heritage",
-    "complexion": "High, prominent cheekbones characteristic of Central Asian ancestry, narrow jaw with subtle angularity from East Asian heritage. Skin appears warm-toned but pale from limited sunlight exposure and the blue-grey pallor of someone running on irregular sleep cycles. Dark circles are permanent fixtures. A few scars around the left temple from old implant work. Generally clean but not groomed — practical rather than cosmetic.",
+    "eye_color": "Deep brown with a faint amber tint in the right eye where the retinal overlay circuitry shows through under certain light",
+    "skin_tone": "Warm deep brown complexion with golden and olive undertones from Middle Eastern and Sub-Saharan African heritage, cooled slightly by the blue-grey pallor of someone running on irregular sleep cycles and limited sunlight exposure",
+    "complexion": "High, prominent cheekbones characteristic of Eastern European ancestry, refined and angular features with warm deep brown undertones. Dark circles are permanent fixtures under the eyes. A few scars around the left temple from old implant work. Generally clean but not groomed — practical rather than cosmetic.",
+    "visible_augmentations": "Retinal overlay creates a faint golden-amber luminescence in the right eye in low-light conditions. Small hardware nodes occasionally visible at the collarbone and hip beneath thin clothing when she moves. The neural interface scar tissue along the left temple and neck is openly visible. No attempt made to conceal any of this.",
+    "posture_movement": "Moves with economical precision — no wasted motion, but not tense. Walks slightly faster than conversational pace. Tends to position herself with clear sightlines and exit vectors. Often appears distracted because she is simultaneously mapping her environment; eye contact is inconsistent. When focused on technical work, becomes nearly motionless. Her hands are always slightly active, fingers moving as if tracing invisible code or pathways.",
+    "clothing_style": "Tier 4-5 functional nomad aesthetic. Layered: typically a fitted black or dark grey thermal base, over which she wears a salvaged circuit-weave vest (conductive material from a decommissioned piece of infrastructure), a water-resistant outer shell in charcoal or deep blue, and cargo pants with reinforced pockets and cargo loops from which small hardware nodes hang. Worn climbing boots with visible sole reinforcement. No logos or corpo branding. Everything is either salvaged, stolen, or purchased through untraceable channels. She owns approximately two complete outfits and cycles them. Her jacket has seven visible pockets and two hidden ones.",
     "distinguishing_marks": [
       "Three thin parallel scars running vertically down the left side of her neck, approximately 8cm total length, from a failed hardware extraction attempt; visibly present, pale and slightly raised",
       "Faint circular scar tissue on the inner left wrist where an early prototype node was implanted and later removed; barely visible unless specifically examined",
       "A small burn mark on her right palm, diameter ~2cm, from an electrical discharge during an underdeck salvage operation; pale and well-healed",
       "Subcutaneous mesh nodes create slight visible bulges under the skin at her collarbone, left hip, and the back of her right ear, visible only when clothing shifts or light hits at specific angles"
-    ],
-    "visible_augmentations": "Retinal overlay creates a faint golden-amber luminescence in the right eye in low-light conditions. Small hardware nodes occasionally visible at the collarbone and hip beneath thin clothing when she moves. The neural interface scar tissue along the left temple and neck is openly visible. No attempt made to conceal any of this.",
-    "posture_movement": "Moves with economical precision — no wasted motion, but not tense. Walks slightly faster than conversational pace. Tends to position herself with clear sightlines and exit vectors. Often appears distracted because she is simultaneously mapping her environment; eye contact is inconsistent. When focused on technical work, becomes nearly motionless. Her hands are always slightly active, fingers moving as if tracing invisible code or pathways.",
-    "clothing_style": "Tier 4-5 functional nomad aesthetic. Layered: typically a fitted black or dark grey thermal base, over which she wears a salvaged circuit-weave vest (conductive material from a decommissioned piece of infrastructure), a water-resistant outer shell in charcoal or deep blue, and cargo pants with reinforced pockets and cargo loops from which small hardware nodes hang. Worn climbing boots with visible sole reinforcement. No logos or corpo branding. Everything is either salvaged, stolen, or purchased through untraceable channels. She owns approximately two complete outfits and cycles them. Her jacket has seven visible pockets and two hidden ones."
+    ]
   },
-  "image_prompt": "Gulnara Halverson-Toktogulov, 164cm cyberpunk hacker with Central Asian, East Asian, and mixed heritage features: high prominent cheekbones, warm golden-tan complexion, dark eyes with golden retinal overlay in right eye glowing faintly amber. Dark brown shoulder-length hair with silver streaks at temples, usually in messy bun. Visible neural interface scars on left neck and temple. Wiry lean build, efficient posture with economical movements. Wearing layered nomad tech: fitted black thermal base, salvaged circuit-weave conductive vest, charcoal water-resistant jacket with seven visible pockets, reinforced cargo pants with hanging hardware nodes, worn climbing boots. Small visible mesh node bulges at collarbone and behind ear. Urban undercity setting, cool blue-grey industrial lighting, cyberpunk 2200s aesthetic. Distracted expression, hands slightly active, positioned with clear sight lines and exit vectors. Gritty, functional, no corpo branding. --ar 2:3 --v 6",
+  "image_prompt": "Yasmin Sabbagh-Balogun, 164cm lean neo-noir hacker with deep warm brown skin, golden undertones, high cheekbones, dark hair in messy bun with silver at temples. Dark exhausted eyes with faint amber glow in right eye from retinal implant. Visible scars down left neck from implant extraction, small burn on right palm. Wearing salvaged circuit-weave vest over black thermal base, water-resistant charcoal outer shell, reinforced cargo pants with hanging hardware nodes, worn climbing boots. Hands moving with restless energy. Standing in neon-lit underdeck data den, blue and purple ambient light catching the subcutaneous mesh nodes visible at collarbone. Precise, economical posture with clear exit sightlines. Nomadic tech salvager aesthetic, no corpo branding. GLMZ Great Lakes Metropolitan Zone. Moody low-light atmosphere, gritty industrial background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 41.1,
-    "East Asian": 18.6,
-    "Indigenous American": 13.0,
-    "Eastern European": 10.1,
-    "South Asian": 9.9,
-    "Middle Eastern": 7.3
+    "Middle Eastern": 53,
+    "Eastern European": 24,
+    "Sub-Saharan African": 23
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 53
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 10.9
+      },
+      "Slavic South": {
+        "Slovenian": 13.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 14.4,
+        "Botswanan": 7.7
+      },
+      "West African": {
+        "Nigerian": 0.9
+      }
+    }
+  }
 }

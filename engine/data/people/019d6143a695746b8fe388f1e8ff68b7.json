@@ -1,7 +1,7 @@
 {
   "id": "019d6143a695746b8fe388f1e8ff68b7",
   "type": "character",
-  "name": "Tarn Hachemi",
+  "name": "Tarn Hosseini",
   "aliases": [
     "Pemba Sot",
     "the needle"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Mexicantown Libre, near Western and Chicago Ave",
-  "description": "Pemba is slight and angular with Tibetan-Greek features that sit together in an arrangement people find either striking or unsettling depending on their capacity for complexity. Their hair is geneware-modified to shift between deep indigo and black depending on ambient temperature — it reads as almost purely black in the warm press of the city and flares deep blue in the rare cold outside. They keep it cropped on the left side and long on the right, which they braid with a ritual obsessiveness before court appearances. Their eyes are their natural dark brown; they have refused cosmetic iris work on the grounds that they don't want anything distracting when they're arguing.\n\nPemba runs a one-person legal aid operation out of a rented room above a taqueria in Mexicantown Libre, taking cases that established firms won't touch: wrongful deactivation suits on behalf of ELF-adjacent synthetic constructs, labor violations affecting tier-1 workers who can't afford filing fees, and the occasional housing case. They are brilliant, mercurial, fueled by a righteous fury they wear openly, and they win cases they should not win through a combination of research depth and a willingness to embarrass corporations in procedural hearings until they settle. They are also behind on rent and surviving on the UBC stipend plus whatever modest fees their rare paying clients provide.",
+  "description": "Tarn Hosseini is slight and angular with Tibetan-Greek features that sit together in an arrangement people find either striking or unsettling depending on their capacity for complexity. Their hair is geneware-modified to shift between deep indigo and black depending on ambient temperature — it reads as almost purely black in the warm press of the city and flares deep blue in the rare cold outside. They keep it cropped on the left side and long on the right, which they braid with a ritual obsessiveness before court appearances. Their eyes are their natural dark brown; they have refused cosmetic iris work on the grounds that they don't want anything distracting when they're arguing.\n\nTarn Hosseini runs a one-person legal aid operation out of a rented room above a taqueria in Mexicantown Libre, taking cases that established firms won't touch: wrongful deactivation suits on behalf of ELF-adjacent synthetic constructs, labor violations affecting tier-1 workers who can't afford filing fees, and the occasional housing case. They are brilliant, mercurial, fueled by a righteous fury they wear openly, and they win cases they should not win through a combination of research depth and a willingness to embarrass corporations in procedural hearings until they settle. They are also behind on rent and surviving on the UBC stipend plus whatever modest fees their rare paying clients provide.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -181,7 +181,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,30 +238,11 @@
   "related_entities": [
     "Mexicantown Libre",
     "Chicago",
-    "Arcturus HW-1 'Goliath'",
-    "Arcturus PG-3 'Aegis'",
-    "Arcturus ST-4 'Verdict'",
-    "Aïda Połczyńska-Ouattara",
-    "Chronicle",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "MERIDIAN",
-    "Patchwork Scooter",
-    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'",
-    "Street Custom 'Gallows' Recurve Bow",
-    "The Augmentation Rights Coalition",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vanta Ordnance Railgun Pistol RP-1 'Thumbtack'",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
-    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
-    "Zheng-dao Bioelectric"
+    "Indigo"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African, South Asian, Hispanic/Latin American, and Middle Eastern ancestry — a striking blend reflecting the Ubiquitous Diaspora. The combination produces warm, rich olive-bronze skin with subtle golden and amber undertones. Facial structure shows the influence of North African bone geometry with South Asian refinement: high, prominent cheekbones, a strong aquiline nose, and a defined jawline that carries both Mediterranean and Levantine character.",
+    "heritage": "Southeast Asian (43.1%), Middle Eastern (29.7%), Sub-Saharan African (15.6%), and East Asian (11.6%) ancestry — a striking blend reflecting the Ubiquitous Diaspora. The combination produces warm, rich bronze-mahogany skin with subtle golden and amber undertones. Facial structure shows the influence of Southeast Asian bone geometry with Middle Eastern and African refinement: high, prominent cheekbones, a strong nose with moderate bridge height and slight flare at nostrils reflecting African heritage, and a defined jawline that carries Southeast Asian, Levantine, and Sub-Saharan character.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Slight and angular, with lean musculature and minimal body fat. Long-limbed and graceful in movement, built more for endurance than physical strength — the frame of someone who moves through the world with precision rather than force.",
@@ -269,8 +250,8 @@
     "hair_style": "Asymmetrical undercut — left side cropped close to the scalp, right side grown long and typically braided with meticulous care",
     "hair_length": "Asymmetrical (short left / long right)",
     "eye_color": "Natural dark brown, unaugmented",
-    "skin_tone": "Warm olive-bronze with golden undertones, reflecting the dominant North African ancestry blended with South Asian, Hispanic/Latin American, and Middle Eastern heritage",
-    "complexion": "Fine-featured with high, prominent cheekbones, strong aquiline nose, and sharp jawline showing North African and Levantine influence. Minimal facial hair. Skin appears clear and well-maintained, marked by the exhaustion of chronic sleep deprivation — dark circles under eyes, occasional tension in facial muscles. Expression typically carries intensity and focus.",
+    "skin_tone": "Warm bronze-mahogany with golden and amber undertones, reflecting the dominant Southeast Asian ancestry (43.1%) blended with significant Middle Eastern (29.7%), Sub-Saharan African (15.6%), and East Asian (11.6%) heritage. Rich warmth with subtle depth.",
+    "complexion": "Fine-featured with high, prominent cheekbones, strong nose with slight nostril flare reflecting African heritage, and sharp jawline showing Southeast Asian and Levantine influence. Minimal facial hair. Skin appears clear and well-maintained, marked by the exhaustion of chronic sleep deprivation — dark circles under eyes, occasional tension in facial muscles. Expression typically carries intensity and focus.",
     "visible_augmentations": "None immediately obvious to casual observation. The geneware hair pigmentation is the only externally visible modification, and reads as natural color-shifting at first glance. The neural text buffer is subcutaneous and invisible.",
     "distinguishing_marks": [
       "Faint surgical scar along the left temple, barely visible, consistent with neural implant installation for the text buffer augment",
@@ -280,15 +261,59 @@
     "posture_movement": "Upright, controlled posture with minimal wasted motion. Moves with deliberate precision. Hands frequently gesture when speaking, particularly when making legal arguments — gestures are sharp and economical rather than expansive. When concentrating deeply, they tend to still completely. Their gaze is direct and unflinching; they make and hold eye contact as a deliberate tactic.",
     "clothing_style": "Tier 3–4 practical minimalism. Standard uniform consists of tailored but inexpensive black trousers, a clean but worn white or neutral linen shirt, and a charcoal or deep blue jacket that has been mended at the seams. Wears the same black synthetic-leather messenger bag daily, stuffed with legal files and a portable neural interface. Shoes are practical and worn — black canvas boots or minimalist running shoes. No jewelry beyond a simple digital watch and occasionally a thin silver bracelet (likely inherited or sentimental). Grooming is meticulous despite financial constraints: they keep their asymmetrical cut sharp, maintain clear skin through consistent routine, and always present themselves formally in court. Their clothes bear the signs of someone who cares about appearance but cannot afford replacement — precisely maintained, well-washed, showing strategic wear."
   },
-  "image_prompt": "Tarn Hachemi, cyberpunk 2226, portrait of a lean angular figure with warm olive-bronze skin and high prominent cheekbones reflecting North African, South Asian, and Middle Eastern heritage. Temperature-reactive indigo-to-black asymmetrical undercut hairstyle, right side long and braided, left side cropped close. Dark brown eyes with exhausted intensity, faint surgical scar visible at left temple. Sharp jawline, aquiline nose, minimal facial hair, clear skin with dark circles from sleep deprivation. Wearing tailored black trousers, worn white linen shirt, mended charcoal jacket, black synthetic-leather messenger bag across chest. Upright posture, direct unflinching gaze, hands gesturing with economical precision. Meticulous but worn grooming, practical black canvas boots. Neon-lit Great Lakes Metropolitan Zone interior, cool blue and amber cyberpunk lighting casting shadows across angular features, legal documents visible in messenger bag, minimalist aesthetic, focused and controlled presence --ar 2:3 --v 6",
+  "image_prompt": "Tarn Hosseini, a lean 168cm figure with warm bronze-mahogany skin and golden undertones reflecting Southeast Asian, Middle Eastern, Sub-Saharan African and East Asian heritage. High prominent cheekbones, strong nose, defined jawline. Dark brown eyes, intense and unaugmented. Temperature-reactive geneware hair: deep indigo asymmetrical cut, left side cropped close, right side long and braided. Faint surgical scar on left temple. Chronic sleep deprivation shadows under eyes. Upright, controlled posture. Wearing tailored black trousers, worn white linen shirt, mended charcoal jacket, black synthetic-leather messenger bag stuffed with legal files. Black canvas boots. Simple digital watch, thin silver bracelet. Meticulous grooming despite visible wear on clothes. Sharp, economical hand gestures. Direct gaze. Professional, minimalist aesthetic. GLMZ GLMZ setting, cool neon lighting casting slight blue-indigo glow on face and clothing. Legal district background, precise and formal. Mood: focused intensity, weariness, determination. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 59.1,
-    "South Asian": 14.7,
-    "Hispanic/Latin American": 14.0,
-    "Middle Eastern": 12.2
+    "Southeast Asian": 43.1,
+    "Middle Eastern": 29.7,
+    "Sub-Saharan African": 15.6,
+    "East Asian": 11.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 11.5
+      },
+      "Filipino": {
+        "Cebuano": 6.8,
+        "Tagalog": 1.6
+      },
+      "Thai": {
+        "Thai": 23.2
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 23.4
+      },
+      "Arab Gulf": {
+        "Yemeni": 1.1,
+        "Kuwaiti": 2.8
+      },
+      "Arab Levantine": {
+        "Palestinian": 2.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 1.5,
+        "Tanzanian": 0.3
+      },
+      "West African": {
+        "Ghanaian": 3.6
+      },
+      "Southern African": {
+        "South African": 5.2,
+        "Zambian": 5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 11.6
+      }
+    }
+  }
 }

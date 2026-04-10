@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a47fdf9b46a9d6fbe1a9ba",
   "type": "character",
-  "name": "Sterling Pathak-Haugen-Nwosu",
+  "name": "Sterling Holm-Venkatesh-Hernández",
   "aliases": [
     "Auntie Adwoa",
     "The Steam Lady"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave — basement unit beneath the Tivka-Roost residential stack, Calloway Sub-Level 2, near sub-level access near State and Van Buren",
-  "description": "Adwoa is a broad-shouldered woman whose hands are permanently reddened and faintly swollen from decades of hot water and industrial detergent — she calls them her 'honest hands' and displays them without self-consciousness. Her dark brown skin has a faint steam-softened quality around the jaw and cheeks, and her natural hair is wrapped in a perpetually damp indigo cloth. She has no cosmetic geneware, only a single practical augmentation: a thermal sensor strip embedded along her left forearm so she can gauge water temperature by touch. A small shrine to the E.L.F. she calls Sudsmother sits on a shelf above the agitators — a cracked porcelain bowl filled with soap slivers and the occasional data chip — and she pauses every morning to address it before opening.\n\nAdwoa is unhurried in a way that reads as confidence to some and stubbornness to others. She has raised three children in the enclave, buried one husband, and outlasted two landlords. She knows every tenant in the stack by their clothing habits — who bleeds, who weeps, who spends money they don't have on fabric they can't maintain — and she keeps all of it filed away with the careful discretion of a confessor. She is warm but not soft. Compliments cost her nothing; charity costs her something, and she gives it anyway.",
+  "description": "Sterling Holm-Venkatesh-Hernández is a broad-shouldered woman whose hands are permanently reddened and faintly swollen from decades of hot water and industrial detergent — she calls them her 'honest hands' and displays them without self-consciousness. Her dark brown skin has a faint steam-softened quality around the jaw and cheeks, and her natural hair is wrapped in a perpetually damp indigo cloth. She has no cosmetic geneware, only a single practical augmentation: a thermal sensor strip embedded along her left forearm so she can gauge water temperature by touch. A small shrine to the E.L.F. she calls Sudsmother sits on a shelf above the agitators — a cracked porcelain bowl filled with soap slivers and the occasional data chip — and she pauses every morning to address it before opening.\n\nSterling Holm-Venkatesh-Hernández is unhurried in a way that reads as confidence to some and stubbornness to others. She has raised three children in the enclave, buried one husband, and outlasted two landlords. She knows every tenant in the stack by their clothing habits — who bleeds, who weeps, who spends money they don't have on fabric they can't maintain — and she keeps all of it filed away with the careful discretion of a confessor. She is warm but not soft. Compliments cost her nothing; charity costs her something, and she gives it anyway.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -164,7 +164,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -206,35 +206,18 @@
     "Kang-Petrov Arms KPR-357 'Journeyman'"
   ],
   "related_entities": [
-    "Helix Biosystems",
     "Hamtramck Enclave",
-    "Porcelain",
+    "Helix Biosystems",
     "Vantablack Media Confessor Tap — 'The Booth'",
+    "Porcelain",
+    "Honest Burger",
+    "Indigo",
     "The Pure Hand",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ADM-10 'Overseer'",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Ezio Kaboré-Malhotra",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Obinna Czekalski-Fonoti",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Counter",
-    "The Heritage Vault",
-    "Timur Osei-Bjelke",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Peregrine Deck"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "South Asian (42.7%), Northern European (40.8%), Sub-Saharan African (16.5%) — a striking tri-continental blend. The warm deep brown of her skin carries undertones from all three ancestral regions: the richness of South Asian melanin, the subtle golden undertones sometimes present in Northern European ancestry when combined with darker pigmentation, and the warm depth of Sub-Saharan African heritage. Her features reflect this complexity — the bone structure shows Northern European influences in her jaw and brow ridge, while her eye shape and cheekbones carry South Asian characteristics, and her overall skin warmth and lip fullness reflect the Sub-Saharan component.",
+    "heritage": "A striking global blend: Northern European (34.0%), East Asian (23.2%), Hispanic/Latin American (20.8%), South Asian (16.3%), and Sub-Saharan African (5.7%). Her bone structure reflects this five-continent convergence — Northern European width in jaw and brow ridge combines with East Asian and South Asian eye shape and cheekbone prominence. Her skin tone is deep warm brown with complex luminous undertones: the richness of South Asian and Sub-Saharan melanin creates the foundation, while East Asian, Northern European, and Latin American ancestry contribute subtle golden and warm undertones that emerge in certain light. Her overall facial geometry speaks to unexpected global convergence, with a balanced integration of angular and rounded features across all ancestry groups.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and substantial, with the dense musculature of someone who has spent decades lifting wet fabric and moving industrial loads. Not fat — settled weight from years of steady work and living.",
@@ -242,8 +225,8 @@
     "hair_style": "Wrapped in a perpetually damp indigo cloth, secured with practical pins. When unwrapped, worn in thick natural locks pulled close to the scalp.",
     "hair_length": "Medium (shoulder-length beneath wrapping)",
     "eye_color": "Deep brown, slightly warm-toned",
-    "skin_tone": "Deep warm brown — a rich blend of South Asian and Sub-Saharan African undertones, with the subtle luminosity sometimes seen in Northern European ancestry expressing through a warm glow rather than pallor. Surface texture softened and slightly darkened by decades of steam exposure, creating a weathered patina that speaks to her labor.",
-    "complexion": "Face shows the wear of 58 years with dignity — fine lines around the eyes and mouth, jaw softened by steam and age, cheeks with a perpetual faint flush from heat work. The underlying bone structure reflects her mixed heritage: broad cheekbones with subtle width, a defined jaw, and an overall facial geometry that speaks to the convergence of three continents. Skin is clean and well-maintained despite the demanding environment. Expression defaults to calm assessment.",
+    "skin_tone": "Deep warm brown — a complex luminous blend of South Asian, Sub-Saharan African, East Asian, Northern European, and Hispanic/Latin American undertones. Surface texture softened and slightly darkened by decades of steam exposure, creating a weathered patina that speaks to her labor.",
+    "complexion": "Face shows the wear of 58 years with dignity — fine lines around the eyes and mouth, jaw softened by steam and age, cheeks with a perpetual faint flush from heat work. The underlying bone structure reflects her global mixed heritage: broad cheekbones with East Asian-South Asian width, defined jaw with Northern European prominence, subtle Latin American softness in the lower face, and overall facial geometry that integrates five continents. Skin is clean and well-maintained despite the demanding environment. Expression defaults to calm assessment.",
     "distinguishing_marks": [
       "Both hands chronically reddened and faintly swollen from caustic detergent and scalding water — the knuckles are prominent and the fingertips slightly thickened",
       "Thermal sensor strip running along the inner left forearm (2cm width, subtle silver-grey color, barely visible under work-worn skin), positioned for easy access to water-temperature gauging",
@@ -254,14 +237,72 @@
     "posture_movement": "Unhurried and grounded — she moves with the economy of someone who has optimized every gesture over decades. Her shoulders are slightly forward from leaning over wash tubs. She has a habit of resting her forearms on the counter edge, displaying her hands without defensiveness. Her gaze is direct and patient; she rarely seems rushed even when the shop is full. Her hands move with practiced precision when handling fabric.",
     "clothing_style": "Tier 4 working-class practicality. Wears a faded but clean indigo apron (the same color as her hair wrap — not accidental) over a layered cotton base (long-sleeved, thermal undershirt visible at the cuffs). The sleeves are pushed up past her elbows during work hours. Her pants are reinforced canvas, dark grey, with utility pockets. Footwear is industrial slip-resistant clog-style shoes, scuffed from daily water exposure. In colder months, a thick knit cardigan in dark grey or brown. A small silver pendant (a representation of the E.L.F. Sudsmother) hangs from a leather cord around her neck — worn, personal, not fashionable."
   },
-  "image_prompt": "Sterling Pathak-Haugen-Nwosu, 168cm tall, 58-year-old woman with rich deep warm brown skin blending South Asian, Northern European, and Sub-Saharan African heritage. Broad-shouldered, substantial build from decades of industrial laundry work. Natural dark brown hair with silver at temples, wrapped in indigo cloth secured with pins. Deep warm-toned brown eyes, dignified weathered face with fine lines, perpetual flush from steam exposure. Chronically reddened hands with prominent knuckles from caustic work. Faint silvery thermal sensor strip visible on left inner forearm. Old pale burn scar on right wrist. Worn gold wedding band. Posture slightly forward from years leaning over wash tubs, movements economical and grounded, direct patient gaze. Wearing faded indigo apron over layered cotton thermal base, sleeves pushed up, reinforced dark grey canvas pants, industrial slip-resistant clogs. Small silver E.L.F. Sudsmother pendant on leather cord. Background: Great Lakes Metropolitan laundry facility, 2226, soft warm steam lighting, water droplets catching light, worn utility counter, cyberpunk era worn-practicality aesthetic. Mood: calm competent dignity, patient presence. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Holm-Venkatesh-Hernández, 58-year-old woman with deep warm brown skin blending South Asian, Sub-Saharan African, East Asian, Northern European, and Latin American heritage. Broad-shouldered, substantial build from decades of industrial laundry work. Face shows dignified aging with fine lines, perpetual flush from steam exposure. Distinctive bone structure: broad East Asian-South Asian cheekbones, defined Northern European jaw, integrated global facial geometry. Naturally thick dark brown locks with silver at temples, wrapped in indigo cloth. Deep warm-brown eyes, direct calm gaze. Hands reddened and swollen from caustic work, showing prominent knuckles and slight thermal sensor strip visible on inner left forearm. Wearing faded indigo apron over thermal undershirt with pushed-up sleeves, dark grey reinforced canvas pants, industrial slip-resistant clogs. Small worn gold wedding band, silver pendant of E.L.F. Sudsmother on leather cord. Standing at counter edge in steamy laundry workspace, surrounded by damp fabric and industrial equipment. Weathered steam-darkened skin with luminous depth. Unhurried posture, hands at rest on counter. Warm industrial lighting from overhead fixtures reflecting off wet surfaces. GLMZ, Great Lakes Metropolitan Zone, Tier 4 working-class aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 42.7,
-    "Northern European": 40.8,
-    "Sub-Saharan African": 16.5
+    "Northern European": 34,
+    "East Asian": 23.2,
+    "Hispanic/Latin American": 20.8,
+    "South Asian": 16.3,
+    "Sub-Saharan African": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 17.6
+      },
+      "Germanic": {
+        "German": 3.4,
+        "Austrian": 1.6
+      },
+      "Scandinavian": {
+        "Norwegian": 4.5,
+        "Swedish": 6.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 0.2
+      },
+      "Japanese": {
+        "Japanese": 18.6
+      },
+      "Chinese": {
+        "Cantonese": 2.1,
+        "Hakka": 2.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 16.1
+      },
+      "South American": {
+        "Colombian": 1.7,
+        "Venezuelan": 0.5
+      },
+      "Mexican": {
+        "Mexican": 2.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 16.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 1.4,
+        "Tanzanian": 0.5
+      },
+      "Central African": {
+        "Gabonese": 1.3
+      },
+      "Southern African": {
+        "Mozambican": 2.5
+      }
+    }
+  }
 }

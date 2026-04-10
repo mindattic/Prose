@@ -13,7 +13,7 @@
   "age": 46,
   "status": "active",
   "location": "Geartown, operates from a licensed bay at the Kessler Interchange motor court, near Fullerton and Damen",
-  "description": "Ekundayo is a big man going soft at the middle, with his Nigerian father's broad forehead and his Norwegian mother's pale blue eyes that have always startled people in a face as dark and richly toned as his. He has retractable claw mods on his right hand — not for fighting, but because forty years ago his grandfather lost two fingers to a torque wrench and Dayo decided the human hand was simply not engineered for engine work. The claws give him precision grip on components that would take a standard hand twice as long. He smells perpetually of synthetic lubricant and a particular cedar-note cologne he has worn since he was twenty, and which he applies over the grease rather than instead of it.\n\nHis bay is controlled chaos — towers of salvaged parts catalogued in a system only he understands, three different radios playing simultaneously (one for news, one for music, one permanently tuned to a Geartown E.L.F. frequency that outputs as static but which Dayo insists contains diagnostic information), and a small shrine to the Wrench E.L.F. on the tool chest consisting of a disassembled carburetor arranged like a mandala. He is not a warm man in the Blessing sense — he does not offer food or ask about your feelings. But he is deeply, uncomplicatedly fair, charges exactly what the work costs, and has an allergic reaction to being lied to that is nearly physical in its intensity.",
+  "description": "Drift Haraldsen is a big man going soft at the middle, with his Nigerian father's broad forehead and his Norwegian mother's pale blue eyes that have always startled people in a face as dark and richly toned as his. He has retractable claw mods on his right hand — not for fighting, but because forty years ago his grandfather lost two fingers to a torque wrench and Dayo decided the human hand was simply not engineered for engine work. The claws give him precision grip on components that would take a standard hand twice as long. He smells perpetually of synthetic lubricant and a particular cedar-note cologne he has worn since he was twenty, and which he applies over the grease rather than instead of it.\n\nHis bay is controlled chaos — towers of salvaged parts catalogued in a system only he understands, three different radios playing simultaneously (one for news, one for music, one permanently tuned to a Geartown E.L.F. frequency that outputs as static but which Dayo insists contains diagnostic information), and a small shrine to the Wrench E.L.F. on the tool chest consisting of a disassembled carburetor arranged like a mandala. He is not a warm man in the Blessing sense — he does not offer food or ask about your feelings. But he is deeply, uncomplicatedly fair, charges exactly what the work costs, and has an allergic reaction to being lied to that is nearly physical in its intensity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -182,7 +182,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -198,43 +198,25 @@
     "Kessler Interchange",
     "The CEO",
     "Ferrogate Transit",
+    "Frequency",
     "Geartown",
-    "Static",
-    "The Pale Mile",
-    "Cedar",
-    "Ambrogio Waweru-Djordanović",
-    "Anatoliy Faye-Nkrumah",
     "Arcturus KS-7 'Nursery'",
-    "Aybek Alvarez-Okonkwo",
-    "Demyan Morozov",
-    "Devraj Solano-Yildirim",
-    "Emeka Johansson-Orozco",
-    "Gulliver Osei-Tarkhan",
-    "Marcus Bellamy",
-    "McKinley Flats",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Slagworks Industrial",
-    "The Burden Clause",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Question",
-    "Tomáš Ekwuosi-Ranginui"
+    "Drift",
+    "Cedar",
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (43.8%) with substantial East Asian (26.6%) and Southeast Asian (10.1%) ancestry, blended with Northern European (10.3%) and Sub-Saharan African (9.2%) heritage—a complex diaspora mix producing warm golden-brown skin with subtle regional feature blending",
+    "heritage": "Predominantly East Asian (54.9%) and Southeast Asian (41.1%) ancestry with Sub-Saharan African (4.0%) heritage—a Ubiquitous Diaspora blend producing warm bronze-brown skin with the characteristic facial structure of East and Southeast Asian genetics enriched by Sub-Saharan warmth",
     "height_cm": 188,
     "weight_kg": 102,
     "build": "Large-framed and broad-shouldered, with visible softness accumulating at the middle and chest; still carries the physical presence of a younger laborer, but gravity and years of standing at workbenches have added weight in his torso",
     "hair_color": "Dark brown, graying at temples and along the jawline",
     "hair_style": "Short, tight curls kept practical and low-maintenance; occasionally oil-stained despite regular washing",
     "hair_length": "Short",
-    "eye_color": "Deep brown, warm with subtle amber undertones; left eye shows faint iridescent silvery-purple ring from optical zoom implant when light hits it",
-    "skin_tone": "Warm golden-brown with olive undertones; richly pigmented with the subtle warmth characteristic of South Asian-East Asian blending, deepened by Sub-Saharan and Southeast Asian ancestry; luminous in certain light",
-    "complexion": "Weathered and practical—permanent creases around his eyes from forty-six years of squinting into engine bays; perpetual faint smell of synthetic lubricant embedded in his skin despite washing; small scars on his knuckles and forearms; jaw line still defined beneath a neat, close-trimmed beard flecked with gray; facial structure shows blended ancestry with subtle width at cheekbones and defined nose bridge",
+    "eye_color": "Deep brown; left eye shows faint iridescent silvery-purple ring from optical zoom implant when light hits it",
+    "skin_tone": "Warm bronze-brown with luminous depth—richly pigmented from the blending of East Asian, Southeast Asian, and Sub-Saharan ancestry, producing a complexion that glows with warm undertones in certain light",
+    "complexion": "Weathered and practical—permanent creases around his eyes from forty-six years of squinting into engine bays; perpetual faint smell of synthetic lubricant embedded in his skin despite washing; small scars on his knuckles and forearms; jaw line still defined beneath a neat, close-trimmed beard flecked with gray; facial structure shows East and Southeast Asian heritage with subtle width at cheekbones and characteristic definition, enhanced by the warm undertones of Sub-Saharan ancestry; slightly rounded face shape with defined nose bridge",
     "distinguishing_marks": [
       "Deep horizontal scar across the back of his right forearm, approximately 12 cm long, from a hydraulic line rupture at age 31",
       "Faint burn marks (three parallel lines) on the inner left forearm from contact with hot coolant, circa 2214",
@@ -244,16 +226,39 @@
     "posture_movement": "Stands with the weight-forward stance of someone who has spent decades leaning into work; moves deliberately and without wasted motion, with a mechanic's economy of gesture; right hand often held at chest level when idle, claws partially extended or twitching slightly as if restless; left eye occasionally focuses with an intensity disconnected from what he is actually looking at (optical zoom engaging). Despite his size, his movements are controlled and precise.",
     "clothing_style": "Tier 3 working-class practical: heavy-duty Ferrogate-branded coveralls (faded indigo, extensively patched at knees and elbows), worn over a simple gray tecnocotton undershirt; steel-toed workboots scuffed to near-matte finish; a worn leather jacket (dark brown, creased at the elbows, with the sleeves pushed up to his forearms) that he shrugs on when leaving the bay. Accessory: a thin silver chain around his neck disappearing into his shirt (contains a small photo of his grandfather). His clothing always smells faintly of cedar cologne underneath the synthetic lubricant—a stubborn refusal to smell entirely like his work."
   },
-  "image_prompt": "Drift Haraldsen, 188cm tall mechanic with warm golden-brown skin and blended diaspora heritage features, standing in a cyberpunk 2226 engine bay. Dark brown eyes with iridescent optical zoom implant ring in left eye. Short dark curls graying at temples, neat close-trimmed beard. Large-framed broad shoulders with accumulated torso weight from decades of workbench labor. Visible scars on forearms and knuckles; small wrench-and-sun tattoo on left wrist. Right hand replaced with five retractable precision steel claw mods, servo joints visible. Wearing faded indigo Ferrogate coveralls extensively patched at knees and elbows over gray tecnocotton shirt, sleeves rolled up showing augmentations and scars. Dark brown worn leather jacket pushed to elbows. Steel-toed workboots. Weight-forward mechanic stance, controlled precise movements. Faint smell of synthetic lubricant and cedar cologne. Engine bay lighting with warm practical work lights, slight grime on coveralls, tools scattered nearby. Cyberpunk 2200s industrial aesthetic, gritty working-class realism, introspective expression, hands occasionally twitching with implant restlessness. --ar 2:3 --v 6",
+  "image_prompt": "Drift Haraldsen, 46-year-old neo-noir mechanic, 188cm tall with broad muscular build and accumulated weight at torso. Warm bronze-brown skin with luminous East Asian-Southeast Asian-Sub-Saharan blend complexion. Deep brown eyes with silvery-purple iridescent cybernetic ring in left eye. Dark brown hair with gray at temples, styled in short tight curls. Weather-creased face from decades of engine work, defined jaw with close-trimmed graying beard. Right hand replaced with five retractable brushed-steel precision claws with servo mechanics visible. Deep scar across right forearm, faint burn marks on left forearm, wrench-and-sun tattoo on left wrist. Wearing faded indigo Ferrogate coveralls heavily patched at knees and elbows, gray tecnocotton undershirt, dark brown leather jacket with pushed-up sleeves showing augmentations and scars, scuffed steel-toed boots. Silver chain necklace visible at collar. Stands with weight-forward mechanic's stance, claws partially extended at chest level. Strong presence despite controlled precise movements. Industrial workshop or neo-noir maintenance bay setting, cool blue-green LED lighting mixing with warm practical work lights, oil and metal reflections on skin. Mood: tired, focused, determined. Neo-noir 2220s aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 43.8,
-    "East Asian": 26.6,
-    "Northern European": 10.3,
-    "Southeast Asian": 10.1,
-    "Sub-Saharan African": 9.2
+    "East Asian": 54.9,
+    "Southeast Asian": 41.1,
+    "Sub-Saharan African": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 1.3,
+        "Hakka": 22.7
+      },
+      "Japanese": {
+        "Japanese": 17.9
+      },
+      "Korean": {
+        "Korean": 13
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 41.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 2.9,
+        "Nigerian": 1.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f2755f84945e6d0e93aa6d",
   "type": "character",
-  "name": "Cleo Hachemi",
+  "name": "Cleo Zielinski",
   "aliases": [
     "Teito",
     "Patch",
@@ -14,7 +14,7 @@
   "age": 19,
   "status": "active",
   "location": "The Shelf, near Kedzie and Division",
-  "description": "Teo is slight and brown-skinned, with the kind of wiry build that comes from not eating enough rather than any athletic intention, and hands that are disproportionately steady for someone his age. His hair is cut close on the sides and left longer on top in a way that has grown out past its original shape, and he has a small scar through his left eyebrow from a job that went sideways when he was sixteen. He wears scrub-green cargo pants, a compression undershirt, and whatever outer layer is clean, with a reinforced medical bag that is older than his current career and significantly better maintained than anything else he owns.\n\nTeo grew up in The Shelf in the orbit of a street collective that needed someone who could handle wounds and didn't ask the kind of questions that brought attention. He taught himself from salvaged medical texts, stolen clinical AR modules, and two years of shadowing a defrocked surgeon named Orsolya who operated out of a back room in exchange for silence and supply runs. Orsolya disappeared when Teo was seventeen—he suspects she was picked up for an unlicensed practice sweep, but has no confirmation—and he inherited her equipment, her client list, and her reputation before he was old enough to have built his own.\n\nHe is genuinely gifted in ways he cannot fully articulate, with an intuitive grasp of trauma response that exceeds his formal training by a significant margin. He is also nineteen, which means he makes decisions with a speed and confidence that occasionally substitute for the judgment he has not yet developed. He charges what people can pay, refuses to let anyone die on his table for reasons of cost, and has a growing reputation in The Shelf as someone you can trust with your life in the most literal possible sense, which is a reputation that attracts exactly the kind of trouble a nineteen-year-old should not be navigating alone.",
+  "description": "Cleo Zielinski is slight and brown-skinned, with the kind of wiry build that comes from not eating enough rather than any athletic intention, and hands that are disproportionately steady for someone his age. His hair is cut close on the sides and left longer on top in a way that has grown out past its original shape, and he has a small scar through his left eyebrow from a job that went sideways when he was sixteen. He wears scrub-green cargo pants, a compression undershirt, and whatever outer layer is clean, with a reinforced medical bag that is older than his current career and significantly better maintained than anything else he owns.\n\nCleo Zielinski grew up in The Shelf in the orbit of a street collective that needed someone who could handle wounds and didn't ask the kind of questions that brought attention. He taught himself from salvaged medical texts, stolen clinical AR modules, and two years of shadowing a defrocked surgeon named Orsolya who operated out of a back room in exchange for silence and supply runs. Orsolya disappeared when Cleo Zielinski was seventeen—he suspects she was picked up for an unlicensed practice sweep, but has no confirmation—and he inherited her equipment, her client list, and her reputation before he was old enough to have built his own.\n\nHe is genuinely gifted in ways he cannot fully articulate, with an intuitive grasp of trauma response that exceeds his formal training by a significant margin. He is also nineteen, which means he makes decisions with a speed and confidence that occasionally substitute for the judgment he has not yet developed. He charges what people can pay, refuses to let anyone die on his table for reasons of cost, and has a growing reputation in The Shelf as someone you can trust with your life in the most literal possible sense, which is a reputation that attracts exactly the kind of trouble a nineteen-year-old should not be navigating alone.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -227,7 +227,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,46 +242,26 @@
   "related_entities": [
     "Meridian Core",
     "The Shelf",
+    "Plot 17",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "ShieldTech Enforcer DM-4 'Crossover'",
     "Irontide Tidal Energy",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pure Hand",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Crucible TR-7 'Triage'",
-    "Djeneba Park-Traore",
-    "Ferrogate Enforcer Cruiser",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Green Bay Community Table",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Gallows' Recurve Bow",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Collective",
-    "The Quiet Room",
-    "Tshiamo Vukić-Arellano",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Cargo Tacos"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian (59.1%) with significant North African (18.4%) and Northern European (16.1%) ancestry, plus Sub-Saharan African (6.4%) heritage. The genetic mix creates a striking phenotype: East Asian bone structure dominates (eye shape, cheekbone prominence, hair texture), warmed and enriched by North African and Sub-Saharan melanin contribution, with Northern European influence visible in eye color depth and skin undertones.",
+    "heritage": "Predominantly Eastern European (73.1%) with significant Indigenous American (16.3%) and Hispanic/Latin American (10.6%) ancestry. The genetic mix creates a striking phenotype: Eastern European bone structure dominates (high cheekbones, angular jaw, characteristic eye shape), enriched by Indigenous American and Hispanic contributions visible in warm golden-olive skin undertones, subtle broadening of cheek prominence, and hair texture showing slight wave. The combination produces a distinctly Central/Eastern European foundation with warmer, sun-adapted melanin from Americas ancestry—a phenotype suggesting Polish or Czech heritage blended with Andean and Mexican roots.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean from chronic undernourishment rather than fitness; narrow shoulders, visible rib definition, the kind of frame that looks fragile until you watch his hands work—then you see the dense, purposeful muscle underneath. No excess anywhere.",
     "hair_color": "Dark brown, natural",
     "hair_style": "Undercut grown out past regulation—short faded sides, longer crown falling forward, slightly unkempt from neglect rather than styling",
     "hair_length": "Medium (crown area)",
-    "eye_color": "Dark brown with warm undertones, right eye slightly hazed by AR interface hardware visible as faint luminescence in low light",
-    "skin_tone": "Medium warm brown with golden undertones from East Asian-North African blend; hands and forearms noticeably paler from chronic glove-wearing. Overall complexion suggests sun-adapted ancestry with subtle warmth in the midtones.",
-    "complexion": "Sharp, sculpted cheekbones characteristic of East Asian heritage, angular jaw softened slightly by North African bone structure contribution. Dark circles under eyes from irregular sleep. Skin is clean but shows minor scars from spill incidents and needle marks on inner elbows. No facial hair—either shaves meticulously or doesn't grow it easily. Faint freckling/uneven pigmentation in North African-influenced patches across nose bridge.",
+    "eye_color": "Dark brown with warm amber undertones, right eye slightly hazed by AR interface hardware visible as faint luminescence in low light",
+    "skin_tone": "Medium warm brown with golden-olive undertones; base medium Slavic tone enriched and warmed by Indigenous American and Hispanic genetic contribution. Hands and forearms noticeably paler from chronic glove-wearing. Overall complexion suggests Polish/Czech ancestry warmed by Andean and Mexican heritage—warm undertones concentrated on nose bridge, cheeks, and jawline.",
+    "complexion": "Sharp, sculpted cheekbones and angular jaw characteristic of Eastern European heritage, with subtle broadening and softening from Indigenous American bone structure contribution. Dark circles under eyes from irregular sleep. Skin is clean but shows minor scars from spill incidents and needle marks on inner elbows. No facial hair—either shaves meticulously or doesn't grow it easily. Golden-olive undertones across nose bridge, cheeks, and jawline reflecting the Americas genetic contribution. Subtle suggestion of broader facial width typical of Indigenous American ancestry balanced against distinctly Slavic angularity.",
     "distinguishing_marks": [
       "Thin white scar through left eyebrow, approximately 2cm, from blunt trauma at age 16—partially healed, slightly raised",
       "Faint track marks on left inner elbow from early experimental augmentation attempts (pre-Orsolya), mostly faded but visible under close inspection",
@@ -292,15 +272,41 @@
     "posture_movement": "Stands with weight slightly forward, shoulders rounded from hunching over surgical work. Moves with economical precision—no wasted motion, but not tense. Hands are his tells: constantly doing small fidgeting motions (tracing surgical patterns in air, checking imaginary sutures). When focused, becomes almost statue-still. Walks quickly but not urgently, maintaining low visibility in crowded spaces. Makes minimal eye contact with strangers but intense, analytical contact during medical assessment.",
     "clothing_style": "Tier 4 functionality over appearance. Scrub-green military-style cargo pants (reinforced knees, thigh pockets for supplies), worn but meticulously maintained. Compression undershirt in black or dark gray—medical-grade, helps with posture during long procedures. Outer layer varies (whatever is cleanest) but typically a Tier 3 surplus tactical jacket or canvas work coat, deliberately nondescript. Medical bag is his statement piece: vintage leather, heavy-duty canvas reinforcement, patches from salvaged medical suppliers, organized to military precision. Wears medical-grade work boots (black, scuffed, well-maintained). No jewelry except the mysterious wrist bracelet and a single silver chain around neck (hidden under shirt)—possibly holding a key or data chip."
   },
-  "image_prompt": "Cleo Hachemi, 168cm lean surgical specialist with East Asian-North African-Northern European ancestry; sharp sculpted cheekbones, dark warm brown eyes with AR interface shimmer in right eye, dark hair undercut with longer crown. Medium warm brown skin tone with golden undertones. Wears military-style scrub-green cargo pants, medical-grade black compression undershirt, worn tactical jacket over, vintage leather medical bag patched with supplier logos. Surgical scars on hands and knuckles, track marks on inner elbow, white scar through left eyebrow. Standing in dim cyberpunk clinic lighting, posture slightly forward from surgical work, hands performing fidgeting surgical motions, economical precision movement. Low-visibility profile in nondescript Tier 3-4 functionality clothing. Cyberpunk 2226, gritty medical underground aesthetic, cool surgical lighting casting shadows --ar 2:3 --v 6",
+  "image_prompt": "Cleo Zielinski, lean androgynous figure, Eastern European-Indigenous American-Hispanic mixed heritage, medium warm brown skin with golden-olive undertones, sharp cheekbones and angular jaw, dark brown eyes with amber warmth (right eye faintly augmented with AR interface LED shimmer), dark brown undercut hair with longer crown, height 168cm, wiry build. Visible surgical scars on knuckles and forearms, thin white scar through left eyebrow, faint track marks on inner elbow. Wearing scrub-green military cargo pants, dark compression undershirt, nondescript tactical jacket, worn medical-grade boots. Carrying heavy vintage leather medical bag with canvas reinforcement. Silver bracelet on left wrist, silver chain around neck. Posture forward-bent from surgical work, hands held with precision, minimal eye contact but analytical gaze. Standing in dimly lit underground clinic or salvage facility, GLMZ Great Lakes Metropolitan Zone aesthetic, cool blue-green lighting casting shadows on angular features, film noir surgical atmosphere, hands showing characteristic fidgeting stillness. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 59.1,
-    "North African": 18.4,
-    "Northern European": 16.1,
-    "Sub-Saharan African": 6.4
+    "Eastern European": 73.1,
+    "Indigenous American": 16.3,
+    "Hispanic/Latin American": 10.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 73.1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 3.9,
+        "Potawatomi": 5.2
+      },
+      "Plains Nations": {
+        "Cherokee": 7.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 1.6
+      },
+      "Central American": {
+        "Salvadoran": 4.9
+      },
+      "Mexican": {
+        "Mexican": 4.1
+      }
+    }
+  }
 }

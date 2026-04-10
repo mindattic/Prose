@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a37bc2aa6efd9aeb52753b",
   "type": "character",
-  "name": "Ioane Dlamini-Guerrero",
+  "name": "Olumide Dlamini-Guerrero",
   "aliases": [
     "Preem",
     "The Shelf Rat"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Shelf, Ironvein district — operates from a converted maintenance alcove beneath the mag-rail support struts, near Kedzie and Division",
-  "description": "Przemek is a sharp-faced young man with the kind of restless eyes that track every entrance and exit in a room simultaneously. He is wiry and pale-complexioned with his Hausa grandfather's high cheekbones and his Mexican grandmother's jaw, and he has cat ears — matte black, expensive enough to be the nicest thing he owns — that swivel independent of his attention, which unnerves people who don't know him. He keeps his dark hair in a short braid tucked under a hood most of the time and dresses in layered secondhand tech-worker castoffs that make him look like he belongs in a server room rather than a market alcove.\n\nHe is aggressively, exhaustingly clever — the kind of person who has already run seventeen versions of this conversation in his head before you finish your first sentence. He deals in media and data with the same practiced casualness that a much older person would deal in rumors, and he has a genuine passion for pre-Consolidation cinema that he disguises as ironic interest. He is afraid of exactly two things: boredom and being cornered, and he confuses both with death.",
+  "description": "Olumide Dlamini-Guerrero is a sharp-faced young man with the kind of restless eyes that track every entrance and exit in a room simultaneously. He is wiry and pale-complexioned with his Hausa grandfather's high cheekbones and his Mexican grandmother's jaw, and he has cat ears — matte black, expensive enough to be the nicest thing he owns — that swivel independent of his attention, which unnerves people who don't know him. He keeps his dark hair in a short braid tucked under a hood most of the time and dresses in layered secondhand tech-worker castoffs that make him look like he belongs in a server room rather than a market alcove.\n\nHe is aggressively, exhaustingly clever — the kind of person who has already run seventeen versions of this conversation in his head before you finish your first sentence. He deals in media and data with the same practiced casualness that a much older person would deal in rumors, and he has a genuine passion for pre-Consolidation cinema that he disguises as ironic interest. He is afraid of exactly two things: boredom and being cornered, and he confuses both with death.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -184,7 +184,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,36 +241,17 @@
   "related_entities": [
     "The CEO",
     "Grandmother",
-    "The Shelf",
     "ShieldTech SB-3 'Groundstrike'",
+    "The Shelf",
+    "Plot 17",
     "Ironvein",
     "Stratum",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile",
-    "Auricula Felis Modification",
-    "Emeka Johansson-Orozco",
-    "Idris Forsberg-Quaye",
-    "Irontide Tidal Energy",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obafemi Szczypiński-Lautoa",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Plot 17",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Corponation",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vuk Jorgensen-Toure",
-    "Waxwing Neuromedia",
-    "Zheng-dao Bioelectric"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (39.6%), Pacific Islander (31.5%), and Hispanic/Latin American (28.9%) — a striking tricontinent blend. His features reflect this complex ancestry: high, prominent cheekbones and facial structure from his African heritage, softened and broadened by Pacific Islander bone structure, with warmth and angularity from Latin American lineage. The genetic mix creates an unusual harmony of sharp and rounded features.",
+    "heritage": "Sub-Saharan African (63.0%), Hispanic/Latin American (15.3%), East Asian (14.3%), and Indigenous American (7.4%) — a striking four-continent genetic blend. His features reflect this complex ancestry: high, prominent cheekbones and strong facial structure from his African heritage, sharpened by East Asian bone structure, with warmth and angularity from Latin American lineage, and subtle refinement from Indigenous American ancestry. The genetic mix creates an unusual harmony of sharp angles and defined facial planes.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Wiry and angular, all elbows and sharp shoulders — the physique of someone who subsists on stimulant tabs and minimal nutrition rather than exercise. Tense musculature suggests constant readiness rather than strength.",
@@ -278,8 +259,8 @@
     "hair_style": "Short braid, typically tucked beneath a hood; when exposed, the braid runs down the nape of his neck",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and constantly tracking",
-    "skin_tone": "Deep warm bronze with golden undertones — a natural blend of melanin-rich African ancestry, Pacific Islander sun-adapted pigmentation, and Latin American warmth. The overall effect is a rich, lived-in brown that suggests both equatorial heritage and time spent under artificial light, creating subtle ashen undertones in certain angles.",
-    "complexion": "Sharp-featured face with high, prominent cheekbones from his African heritage, balanced by the broader, more angular jawline reflecting his Pacific Islander ancestry and strengthened by his Latin American lineage. His facial structure suggests someone built for both sharp precision and resilience. Facial hair is sparse and unkempt. Skin shows the minor wear of irregular sleep and poor nutrition — not scarred, but with a faint grayness that stimulant overuse brings, barely dulling the natural warmth beneath.",
+    "skin_tone": "Deep warm bronze with golden undertones — a rich, complex blend of melanin-rich Sub-Saharan African ancestry as the dominant genetic foundation, warmed by Latin American heritage, subtly enriched with East Asian undertones creating an olive-bronze cast, and Indigenous American sun-adapted pigmentation. The overall effect suggests equatorial and diverse continental heritage, with subtle ashen undertones in certain angles from stimulant overuse.",
+    "complexion": "Sharp-featured face with high, prominent cheekbones from African heritage, sharpened further by East Asian bone structure, balanced by angular jawline reflecting the interplay of Latin American and Indigenous American ancestry. Facial structure suggests someone built for precision and resilience. Facial hair is sparse and unkempt. Skin shows the minor wear of irregular sleep and poor nutrition — not scarred, but with a faint grayness that stimulant overuse brings, barely dulling the natural warmth beneath.",
     "visible_augmentations": "Matte black geneware cat ears mounted on his skull, capable of independent rotation — they swivel toward sound sources or movement without conscious input from him, creating an unsettling impression of divided attention. The ears are his most expensive possession and show meticulous maintenance despite his general disregard for appearance. Subdermal data-storage nodules are faintly visible as small ridges beneath the skin of his left forearm when his sleeve rides up, glinting dully under certain light.",
     "distinguishing_marks": [
       "Faint chemical burn on right forearm (reactive acid splash during early black-market data extraction attempt, poorly healed)",
@@ -288,14 +269,55 @@
     "posture_movement": "He moves with controlled, economical precision — no wasted motion, but a constant underlying tension suggesting he is never fully at rest. His eyes track entrances and exits habitually. When sitting, he positions himself with a clear sightline to exits and keeps his hands visible. His cat ears swivel independently of his gaze, creating a disquieting multiplicity of attention.",
     "clothing_style": "Layered secondhand tech-worker castoffs in muted grays, blacks, and industrial blues — oversized server-room wear salvaged from corporate recycling bins, now repurposed as street armor. A hood is almost always up. His jacket is a patchwork of thermal vests with exposed wiring at the sleeves (non-functional, purely aesthetic). His pants are cargo-style with reinforced pockets (for data cores and merchandise). Footwear is worn Tier 4 worker boots, resoled twice. Everything is functional, nothing is fashionable; he dresses for invisibility in tech spaces and operates on the principle that he should look like a maintenance worker who belongs in infrastructure rather than a street vendor. No visible jewelry except the cat ears."
   },
-  "image_prompt": "Ioane Dlamini-Guerrero, a lean 172cm mixed-heritage hacker in cyberpunk 2226: deep bronze skin with golden undertones blending Sub-Saharan, Pacific Islander, and Latin American ancestry, sharp high cheekbones and angular jaw, dark brown alert eyes constantly tracking. Matte black geneware cat ears mounted on skull swiveling independently. Sparse facial hair, faint chemical burn scar on right forearm, thin temple scar barely visible. Dark brown hair in short braid tucked under hood. Wearing oversized gray and black server-room castoffs layered for street armor, patchwork thermal vest jacket with exposed wiring at sleeves, reinforced cargo pants, worn Tier 4 worker boots. Posture tense and economical, positioned to see exits, hands visible. Moody neon-lit underground tech space or dimly lit infrastructure corridor, harsh LED lighting catching the dull glint of subdermal data-storage nodules in his left forearm. Cyberpunk aesthetic, gritty and lived-in, constant underlying danger --ar 2:3 --v 6",
+  "image_prompt": "Olumide Dlamini-Guerrero, GLMZ, wiry 172cm frame with deep warm bronze skin reflecting Sub-Saharan African, Hispanic, East Asian, and Indigenous American heritage. Sharp angular cheekbones, prominent facial structure, dark brown alert eyes. Matte black geneware cat ears mounted on skull, swiveling independently. Short dark brown braid tucked beneath gray hood. Layered secondhand tech-worker clothing in muted grays and blacks, oversized server castoffs, patched thermal vest jacket with exposed non-functional wiring, cargo pants, worn resoled boots. Subdermal data-storage nodules faintly visible on left forearm. Faint chemical burn on right arm, thin temple scar. Controlled posture, constant tension, tracking eyes. Neo-noir infrastructure setting, neon and industrial lighting, Great Lakes Metropolitan Zone, 2226. Digital noir aesthetic, gritty maintenance worker vibe, standing in shadow near server access point. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 39.6,
-    "Pacific Islander": 31.5,
-    "Hispanic/Latin American": 28.9
+    "Sub-Saharan African": 63,
+    "Hispanic/Latin American": 15.3,
+    "East Asian": 14.3,
+    "Indigenous American": 7.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 16.6,
+        "Gabonese": 7.5
+      },
+      "Southern African": {
+        "Mozambican": 31.1
+      },
+      "West African": {
+        "Ghanaian": 6,
+        "Nigerian": 1.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 9.9
+      },
+      "Central American": {
+        "Nicaraguan": 5.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 9.7
+      },
+      "Korean": {
+        "Korean": 4.6
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 1.9,
+        "Ho-Chunk": 0.9
+      },
+      "Mesoamerican": {
+        "Mixtec": 4.6
+      }
+    }
+  }
 }

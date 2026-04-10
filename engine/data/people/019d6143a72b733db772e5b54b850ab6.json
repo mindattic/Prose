@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72b733db772e5b54b850ab6",
   "type": "character",
-  "name": "Ruslan Baiseitov-Dalgaard-Arredondo",
+  "name": "Vivaan Deshpande-Nazari-Kovács",
   "aliases": [
     "Echo",
     "the Boy Who Listens"
@@ -13,7 +13,7 @@
   "age": 16,
   "status": "active",
   "location": "Irkalla, outer ring tunnel access, and ranging into the deep sub-levels below, near sub-level access near Dearborn and Jackson",
-  "description": "Yohannes is small for sixteen, with the kind of wiry build that can fold itself into spaces an adult would not consider. His skin is very dark and marked with a single pale scar running from the corner of his left eye to his jawline — earned at thirteen in a tunnel collapse he survived by being still for nine hours while the pipe above him groaned. He has cat ears: genetic modification from a street-market geneware stall three years ago, paid for in scavenged copper. They are not the neat, expensive kind — they're slightly asymmetrical, the left one sitting a centimeter higher than the right, which he claims actually helps his directionality. His eyes are naturally a rich amber, wide and roving, always scanning for structural movement. He is almost always eating something, the caloric urgency of a body that moves constantly through cold spaces.\n\nYohannes has the specific confidence of someone very young who has survived things that should have killed them and interpreted this as evidence of personal specialness rather than statistical chance. He is not foolish — he is methodical in his risk assessments and deeply knowledgeable about tunnel acoustics and ELF-behavior in enclosed systems — but he believes, with the sincere conviction of a sixteen-year-old who has not yet been wrong enough times, that he will know when something is too dangerous. He is usually right. The 'usually' is the problem. He is deeply attached to the fragments of ELF-signal he recovers, treating them as messages rather than noise, and has accumulated a collection of old devices and cracked tablets that he believes house weakened or fragmented ELF-presences — a menagerie of digital spirits he tends carefully.",
+  "description": "Vivaan Deshpande-Nazari-Kovács is small for sixteen, with the kind of wiry build that can fold itself into spaces an adult would not consider. His skin is very dark and marked with a single pale scar running from the corner of his left eye to his jawline — earned at thirteen in a tunnel collapse he survived by being still for nine hours while the pipe above him groaned. He has cat ears: genetic modification from a street-market geneware stall three years ago, paid for in scavenged copper. They are not the neat, expensive kind — they're slightly asymmetrical, the left one sitting a centimeter higher than the right, which he claims actually helps his directionality. His eyes are naturally a rich amber, wide and roving, always scanning for structural movement. He is almost always eating something, the caloric urgency of a body that moves constantly through cold spaces.\n\nVivaan Deshpande-Nazari-Kovács has the specific confidence of someone very young who has survived things that should have killed them and interpreted this as evidence of personal specialness rather than statistical chance. He is not foolish — he is methodical in his risk assessments and deeply knowledgeable about tunnel acoustics and ELF-behavior in enclosed systems — but he believes, with the sincere conviction of a sixteen-year-old who has not yet been wrong enough times, that he will know when something is too dangerous. He is usually right. The 'usually' is the problem. He is deeply attached to the fragments of ELF-signal he recovers, treating them as messages rather than noise, and has accumulated a collection of old devices and cracked tablets that he believes house weakened or fragmented ELF-presences — a menagerie of digital spirits he tends carefully.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -182,7 +182,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,41 +251,18 @@
     "Blackpipe Corridor",
     "Bathysphere Networks",
     "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+    "Dearborn Forge",
     "Irkalla",
+    "Corner Slice",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Tibor Osei-Svanstrom",
-    "The Pale Mile",
     "Déjà Vu",
-    "Elena Vasquez-9",
-    "Abyssal Threshold",
-    "Alper Lebedev-Tutu",
-    "Arcturus PX-1 'Phantom'",
-    "Auricula Felis Modification",
-    "Aïssé Dragomirescu-Faalelei",
-    "Irontide Tidal Energy",
-    "Narrowcast",
-    "NeuralPath Conduit Everyday Neural Mesh",
-    "NeuralPath HarmonicRoot Perfect Pitch Mod",
-    "Nnamdi Ostrowski-Faletolu",
-    "Réginald Asomaning-Čabarkapa",
-    "Sorin Ekwensi-Balasanyan",
-    "The Heidelberg Scar",
-    "The Resonance Communion",
-    "The Skinners",
-    "The Underlayer Collective",
-    "The Undertow",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
-    "WELLSPRING",
-    "Witness",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Frost Boudiaf",
+    "The Pale Mile",
+    "Elena Vasquez-9"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Central Asian (53.7%) with significant Hispanic/Latin American (29.6%) and Southeast Asian (16.7%) ancestry—a striking blend of Turkic, Andean, and Southeast Asian features. The Central Asian dominance shows in facial structure and bone prominence, while the Latin American heritage adds warmth to skin tone and the Southeast Asian ancestry contributes to eye shape and subtle features.",
+    "heritage": "South Asian (50.6%) with substantial Eastern European (26.3%) and Middle Eastern (23.1%) ancestry—a striking tripartite blend creating distinctive facial architecture. The South Asian dominance manifests in facial bone structure, eye placement and shape, and dark hair, while Eastern European heritage contributes angular cheekbone prominence and sharper nasal bridge definition. Middle Eastern ancestry adds warmth and slight softness to the overall facial proportions and contributes golden undertones to skin.",
     "height_cm": 162,
     "weight_kg": 48,
     "build": "Wiry and compact, almost feline in proportions — lean musculature from constant climbing and crawling through confined spaces, no excess fat, joints visible at wrists and elbows. Built for compression, not strength.",
@@ -293,24 +270,45 @@
     "hair_style": "Shoulder-length, often pulled back with wire or cloth scraps; perpetually dust-matted from tunnel work",
     "hair_length": "Medium",
     "eye_color": "Amber, natural — wide-set, reflective quality under low light",
-    "skin_tone": "Medium-dark brown with warm golden undertones from the blended Central Asian-Latin American ancestry; dust and mineral residue from tunnel work often visible in skin creases, giving an aged appearance despite youth",
-    "complexion": "Sharp, angular face with prominent high cheekbones characteristic of Central Asian heritage; the scar runs white and slightly puckered from left eye corner to jaw, creating an asymmetrical intensity to his expression. Skin otherwise clear but weathered with a subtle warm undertone. Fingers and palms callused and discolored from handling corroded metal. Perpetually eating — snack residue often visible at mouth corners.",
+    "skin_tone": "Medium-dark warm brown—the golden-olive result of blended South Asian, Eastern European, and Middle Eastern ancestry; dust and mineral residue from tunnel work often visible in skin creases, giving an aged appearance despite youth",
+    "complexion": "Angular face with prominent high cheekbones characteristic of the South Asian-Eastern European blend, with subtle warm undertones from Middle Eastern ancestry. The scar runs white and slightly puckered from left eye corner to jaw, creating asymmetrical intensity to expression. Skin otherwise clear but weathered. Fingers and palms callused and discolored from handling corroded metal. Perpetually eating—snack residue often visible at mouth corners.",
     "distinguishing_marks": [
       "Single pale scar running from the corner of his left eye diagonally to his lower jawline — thin but deeply etched, earned at age thirteen in a tunnel collapse",
-      "Asymmetrical black-furred genetic cat ears (left ear sits 1cm higher than right); ears are slightly ragged at edges, not the clean expensive kind, with visible hair loss in patches from heavy use of bone-conduction receiver placement"
+      "Asymmetrical black-furred genetic cat ears (left ear sits 1cm higher than right); ears slightly ragged at edges with visible hair loss in patches from heavy bone-conduction receiver placement"
     ],
-    "visible_augmentations": "Genetic cat ears, black-furred and functional, asymmetrical positioning visible especially in profile. Slight scarring and discoloration behind left ear where bone-conduction audio receiver is implanted subcutaneously — the implant itself is not visible but the surgical site remains slightly swollen and prone to irritation. No other visible augmentations.",
-    "posture_movement": "Moves with liquid economy — never wastes a gesture. Stands slightly forward-balanced, ready to shift weight instantly. Head often tilts slightly left when listening intently (bone-conduction receiver dominant side). Frequent reflexive ear-twitches when processing sound data. When eating, he focuses with single-minded intensity. Eyes constantly scan ceiling and walls for structural movement, a habit ingrained from survival.",
-    "clothing_style": "Tier 4-5 functional salvage aesthetic. Lightweight insulated vest over thermal underlayer (both salvaged, patched with mismatched fabric). Cargo pants with deep pockets, cuffs sealed with electrical tape to prevent dust infiltration. Climbing harness worn loose over hips even indoors. Boots are heavy, mismatched — one is genuine thermal-rated, the other is industrial rubber with added traction tape. Rope and carabiners clipped to belt. A cloth satchel (once someone's handbag, now repurposed) carries recording devices and food. Wears a faded, oversized hoodie (probably stolen from a Tier 3 laundry) in cooler months. No jewelry except a single copper wire wrapped around his left wrist as a talisman."
+    "visible_augmentations": "Genetic cat ears, black-furred and functional, asymmetrical positioning visible especially in profile. Slight scarring and discoloration behind left ear where bone-conduction audio receiver is implanted subcutaneously—implant not visible but surgical site remains slightly swollen and prone to irritation. No other visible augmentations.",
+    "posture_movement": "Moves with liquid economy—never wastes a gesture. Stands slightly forward-balanced, ready to shift weight instantly. Head often tilts slightly left when listening intently (bone-conduction receiver dominant side). Frequent reflexive ear-twitches when processing sound data. When eating, focuses with single-minded intensity. Eyes constantly scan ceiling and walls for structural movement, habit ingrained from survival.",
+    "clothing_style": "Tier 4-5 functional salvage aesthetic. Lightweight insulated vest over thermal underlayer (both salvaged, patched with mismatched fabric). Cargo pants with deep pockets, cuffs sealed with electrical tape to prevent dust infiltration. Climbing harness worn loose over hips even indoors. Boots heavy, mismatched—one genuine thermal-rated, the other industrial rubber with added traction tape. Rope and carabiners clipped to belt. Cloth satchel (once someone's handbag, now repurposed) carries recording devices and food. Faded oversized hoodie (probably stolen from Tier 3 laundry) worn in cooler months. Single copper wire wrapped around left wrist as talisman."
   },
-  "image_prompt": "Ruslan, a 162cm wiry tunnel-crawler with medium-dark warm brown skin and Central Asian-featured sharp cheekbones, amber reflective eyes, shoulder-length black hair pulled back, asymmetrical black genetic cat ears with one ragged-edged and slightly higher than the other. Thin diagonal scar from left eye to jawline. Wearing salvaged Tier 4 insulated vest over thermal layers, mismatched heavy boots, climbing harness loose over hips, carabiners at belt, cloth satchel. Scanning ceiling and walls with predatory focus, ears twitching slightly. Dusty, mineral-stained skin from tunnel work, callused hands, perpetually alert posture. Cyberpunk 2226 Great Lakes Metropolitan Zone underground setting, dim amber and blue biolume lighting, claustrophobic industrial background, gritty and weathered aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Vivaan Deshpande-Nazari-Kovács, 162cm wiry figure with angular South Asian-Eastern European-Middle Eastern blend features, medium-dark golden-brown skin, amber reflective eyes, shoulder-length black dust-matted hair. Asymmetrical black cat ears, thin white scar from left eye to jawline. Wearing salvaged thermal layers, cargo pants taped at cuffs, heavy mismatched boots, climbing harness, carrying rope and carabiners. Copper wire talisman on left wrist. Posture forward-balanced, perpetually scanning surroundings. GLMZ underground tunnel explorer aesthetic, low-light mineral dust environment, cool blue-green tungsten lighting highlighting scar and ear augmentation, gritty realism, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 53.7,
-    "Hispanic/Latin American": 29.6,
-    "Southeast Asian": 16.7
+    "South Asian": 50.6,
+    "Eastern European": 26.3,
+    "Middle Eastern": 23.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 50.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 23.7
+      },
+      "Slavic South": {
+        "Croatian": 1.3,
+        "Bulgarian": 1.3
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 23.1
+      }
+    }
+  }
 }

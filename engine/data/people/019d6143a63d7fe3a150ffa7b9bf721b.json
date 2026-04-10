@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63d7fe3a150ffa7b9bf721b",
   "type": "character",
-  "name": "Sol Kristjánsson-Kulkarni-Bergqvist",
+  "name": "Tendai Nkrumah-Kimura-Mbekele",
   "aliases": [
     "Husk",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Walton",
-  "description": "Kadiatou Lund-Bangura is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a combat medic out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Kadiatou Lund-Bangura lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Tendai Nkrumah-Kimura-Mbekele is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a combat medic out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Tendai Nkrumah-Kimura-Mbekele lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -263,7 +263,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,33 +282,14 @@
   "related_entities": [
     "Masquerade",
     "The Narrows Compact",
-    "GLMZ",
     "The Unfinished Theorem",
     "Burden of Longitude",
     "Slagworks Industrial",
-    "Aslan Blomberg-Konadu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works Suppression Collar SC-4",
-    "Crucible Industries Barrage-9 'Hornet'",
-    "Crucible Industries Storm Carbine SC-4 'Downpour'",
-    "Crucible RE-2 'Receptionist'",
-    "Glenville Sound",
-    "Quilt",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TD-3 'Hornet'",
-    "TESSERA WL-6 'Stacker'",
-    "The Narrows",
-    "The Quiet Room",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "South Asian dominant (39.8%), with significant Southeast Asian (24.6%) and East Asian (12.6%) ancestry, complemented by Hispanic/Latin American (12.9%) and Northern European (10.1%) heritage. This creates a complex phenotype: warm medium-to-dark skin with subtle golden and olive undertones from the South and Southeast Asian base, refined by East Asian bone structure influence, with modest Northern European contribution to overall coloration depth.",
+    "heritage": "Predominantly East Asian (46.7%) with substantial Sub-Saharan African ancestry (34.1%), complemented by Middle Eastern (7.7%), Hispanic/Latin American (6.1%), and South Asian (5.4%) heritage. This creates a striking diaspora phenotype: rich medium-to-dark brown skin with warm golden and olive undertones from the East Asian-African genetic base, yielding a complexion of considerable depth and complexity. Features reflect balanced admixture—East Asian bone structure and eye-set prominence combined with Sub-Saharan African facial breadth and jaw definition, enriched by South Asian cheekbone architecture and Middle Eastern nasal refinement. A truly cosmopolitan genetic signature, reading authentically as 2226-era Ubiquitous Diaspora.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Broad-shouldered and heavily muscled, carrying mass with deliberate density rather than softness. Chest and torso built like load-bearing architecture. Thickened at the waist but not soft — functional mass from decades of field work and controlled strength training.",
@@ -316,8 +297,8 @@
     "hair_style": "Close-cropped, military precision; kept short for practicality and rapid decontamination",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and assessing",
-    "skin_tone": "Warm medium brown with golden and olive undertones, weathered from exposure and age. The complexion reflects South Asian ancestry as primary driver, with Southeast Asian warmth and subtle East Asian undertones creating depth.",
-    "complexion": "Lined face with prominent jaw and high cheekbones characteristic of South and East Asian heritage blending. Skin has a leathery quality — sun exposure, field conditions, minor scarring from surgical work and combat. Minimal grooming vanity; clean but austere. Deep-set eyes that sit forward in an evaluative squint. Facial structure shows balanced influence: the bone prominence and eye-set from East Asian ancestry, the jaw definition and facial length from South Asian heritage.",
+    "skin_tone": "Rich medium-to-dark brown with warm golden and olive undertones, weathered from exposure and age. The complexion reflects the blending of East Asian warmth with Sub-Saharan African depth and South Asian luminosity, creating a complex, multidimensional coloration that reads distinctly and beautifully mixed-heritage.",
+    "complexion": "Lined face with prominent jaw and high cheekbones showing balanced influence from multiple ancestries: East Asian bone prominence and eye-set combined with Sub-Saharan African and South Asian facial breadth, plus subtle nasal refinement from Middle Eastern heritage. Skin has a leathery quality — sun exposure, field conditions, minor scarring from surgical work and combat. Minimal grooming vanity; clean but austere. Deep-set eyes that sit forward in an evaluative squint. The overall facial architecture reads as genuinely cosmopolitan, with no single heritage dominating the visual gestalt.",
     "distinguishing_marks": [
       "Surgical scar running vertically down the left side of his neck, approximately 8cm, from a field injury sustained in the Narrows circa 2204",
       "Thin white scar bisecting the left eyebrow, giving permanent slight asymmetry to his expression",
@@ -328,16 +309,68 @@
     "posture_movement": "Stands with weight distributed forward on the balls of his feet — a fighter's stance held as default. Moves with minimal wasted motion, economical and direct. The cybernetic arm hangs slightly lower than his left side would suggest, a compensated asymmetry. When at rest, he frequently rotates the chrome arm's wrist or fingers in small, deliberate circles — a maintenance check or a tell that he's processing.",
     "clothing_style": "Tier 3-4 working professional. Typically wears reinforced tactical cargo pants (black or dark grey, modular pocket system, Kevlar-lined seams), compression base layers under loose-fit utility shirts. Over this: a weathered leather jacket or reinforced nylon bomber in muted colors — browns, blacks, faded charcoal. No corporate branding, no affectation. All clothing is selected for durability, ease of cleaning (bloodstains), and rapid movement. Boots are heavy-soled tactical with grip sole for hospital or crime-scene work. A single piece of jewelry: a thin bracelet on the left wrist with embedded medical ID and encrypted contact protocols — functional, not decorative."
   },
-  "image_prompt": "Cyberpunk 2226 medical field operative, Sol Kristjánsson-Kulkarni-Bergqvist. 188cm tall, powerfully built South Asian-dominant mixed heritage man with golden-brown warm medium skin tone, deep-set dark eyes, prominent jaw and high cheekbones. Close-cropped dark brown hair with silver at temples. Severe lined face marked by surgical scar down left neck and white scar through left eyebrow. Webbed burn scarring on left forearm. Polished chrome full cybernetic right arm with visible articulation panels and heat-sink ribbing, deliberately synthetic. Wearing weathered black leather jacket over tactical cargo pants, heavy-soled boots. Medical caduceus tattoo with circuit-board latticing visible on right shoulder. Functional medical ID bracelet on left wrist. Standing in fighter's stance, minimal wasted motion. Harsh neon-blue and amber overhead lighting in sterile hospital corridor or crime scene. Grim, evaluative expression. Cyberpunk tech aesthetic, worn professional edge, 2226 GLMZ aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Tendai Nkrumah-Kimura-Mbekele, 188cm, mixed-heritage neo-noir field medic with rich medium-dark brown skin blending East Asian, Sub-Saharan African, South Asian, and Middle Eastern ancestry. Weathered, lined face with prominent jaw and high cheekbones, deep-set evaluative eyes, dark brown with alert squint. Dark brown hair with silver temples, close-cropped military-precision style. Prominent surgical scar down left neck, thin white scar bisecting left eyebrow, webbed burn scarring on left forearm. Full cybernetic chrome right arm with polished finish, articulation panels, heat-sink ribbing, no organic blending. Heavily muscled, broad-shouldered, functional density. Fighter's stance, weight forward. Wearing reinforced tactical cargo pants, compression base layer, loose-fit utility shirt, weathered leather jacket, heavy-soled tactical boots. Medical caduceus with circuit-board tattoo visible on right shoulder. Thin medical ID bracelet on left wrist. Neon-lit GLMZ hospital or crime-scene setting, cool blues and ambers, gritty industrial GLMZ, photorealistic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 39.8,
-    "Southeast Asian": 24.6,
-    "Hispanic/Latin American": 12.9,
-    "East Asian": 12.6,
-    "Northern European": 10.1
+    "East Asian": 46.7,
+    "Sub-Saharan African": 34.1,
+    "Middle Eastern": 7.7,
+    "Hispanic/Latin American": 6.1,
+    "South Asian": 5.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 39.8
+      },
+      "Chinese": {
+        "Cantonese": 5.1,
+        "Mandarin Northern": 1.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 14.4,
+        "Malian": 9.4
+      },
+      "Central African": {
+        "Gabonese": 10.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 3.4
+      },
+      "Kurdish": {
+        "Kurdish": 2.4
+      },
+      "Persian": {
+        "Tajik Persian": 1.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 0.9,
+        "Ecuadorian": 0.8
+      },
+      "Mexican": {
+        "Mexican": 3
+      },
+      "Caribbean": {
+        "Puerto Rican": 1.1,
+        "Dominican": 0.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 3.1
+      },
+      "Nepali": {
+        "Nepali": 2.3
+      }
+    }
+  }
 }

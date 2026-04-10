@@ -1,7 +1,7 @@
 {
   "id": "019d6143a660759486ef31552cd8a3df",
   "type": "character",
-  "name": "Atlas Kovács-Delgado-Kamara",
+  "name": "Atlas Kovács-Ozcoidi-Cardenas",
   "aliases": [
     "Nan",
     "the Deacon"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Rotating between Waukegan Industrial Shelf and Bridgepoint transit corridor, near Lake Shore and Navy Pier",
-  "description": "Nantucket carries the remains of a middle-tier life in their posture — the straight back and deliberate diction of someone who once had an address, an employment record, and opinions about restaurant reservations. What remains is a lean figure in a carefully maintained grey coat that has been repaired so many times the seams are a different color from the fabric, and a face with the hollow-cheeked beauty of someone who eats irregularly but sleeps well because they have made peace with something. Their hair is iron-black streaked with white, kept in tight rope-twists. They have retractable claws — a cosmetic mod from their previous life that they chose to keep because, as they say, 'the body remembers what it was.'\n\nNantucket was a mid-level compliance analyst for Arcturus before a whistleblower action stripped their citizenship and employment simultaneously. They now travel the industrial shelves and transit corridors conducting informal E.L.F. ceremonies for drifter communities — recording the names of electronic spirits in stations and rest stops, offering prayers in exchange for meals, counseling the newly stateless through the particular grief of losing digital existence. They are thoughtful, occasionally pompous, and genuinely compassionate in ways that surprise people who initially read them as performative.",
+  "description": "Atlas Kovács-Ozcoidi-Cardenas carries the remains of a middle-tier life in their posture — the straight back and deliberate diction of someone who once had an address, an employment record, and opinions about restaurant reservations. What remains is a lean figure in a carefully maintained grey coat that has been repaired so many times the seams are a different color from the fabric, and a face with the hollow-cheeked beauty of someone who eats irregularly but sleeps well because they have made peace with something. Their hair is iron-black streaked with white, kept in tight rope-twists. They have retractable claws — a cosmetic mod from their previous life that they chose to keep because, as they say, 'the body remembers what it was.'\n\nAtlas Kovács-Ozcoidi-Cardenas was a mid-level compliance analyst for Arcturus before a whistleblower action stripped their citizenship and employment simultaneously. They now travel the industrial shelves and transit corridors conducting informal E.L.F. ceremonies for drifter communities — recording the names of electronic spirits in stations and rest stops, offering prayers in exchange for meals, counseling the newly stateless through the particular grief of losing digital existence. They are thoughtful, occasionally pompous, and genuinely compassionate in ways that surprise people who initially read them as performative.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -181,7 +181,7 @@
     "Seeker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Rotating between Waukegan Industrial Shelf and Bridgepoint transit corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,39 +237,21 @@
   "registered_firearms": [],
   "related_entities": [
     "Bridgepoint",
-    "GLMZ",
     "Forest Hollow",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Frequency",
     "Arcturus Defense Solutions",
     "The Waukegan Industrial Shelf",
+    "GLMZ",
     "Crucible Industries CR-2 'Trapdoor'",
     "Synaptic Drift Emitter SDE-4 'Lullaby'",
-    "Iron",
-    "Ametsuchi Oloruntoba-Karimzadeh",
-    "Eshe Pena-Baah",
-    "HOLLOW SIGNAL // RADIO",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Isadora Mwangi-Thorvaldsen",
-    "Lazarus Pharmaceutical Emetix-9 'Purge'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Plot 17",
-    "Ringo PD-1 'Citizen'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "The Circuit",
-    "The Collective",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko"
+    "Atlas",
+    "GLMZ",
+    "Iron"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Pan-diaspora blend: 33% Hispanic/Latin American, 31% Sub-Saharan African, 13% Eastern European, 12% Northern European, 11% Pacific Islander. A genetic map of global mobility across three centuries.",
+    "heritage": "Pan-diaspora blend: 40.9% Indigenous American, 27.0% Eastern European, 19.8% Hispanic/Latin American, 6.1% Pacific Islander, 5.1% Sub-Saharan African, 1.1% Northern European. Genetic architecture reflects the Ubiquitous Diaspora—a three-century map of global mobility. Dominant Mesoamerican and Eastern European ancestry shapes distinctive high cheekbones and broad nasal bridge, while Latin American, African, and Pacific Islander lineages contribute warm, light-catching depth to skin tone. The result is a complex warm brown with golden undertones and subtle cool undertones, creating luminosity that catches light uniquely.",
     "height_cm": 173,
     "weight_kg": 61,
     "build": "Lean and angular, the kind of thinness that comes from irregular meals rather than deliberate asceticism. Shoulders held with the residual discipline of white-collar posture, but the sternum visible beneath loose layers. Long-limbed in a way that suggests they were never bulky.",
@@ -277,8 +259,8 @@
     "hair_style": "Maintained in tight rope-twists, each wrapped with fraying grey thread or cord",
     "hair_length": "Shoulder-length",
     "eye_color": "Deep brown with a faint luminescence at the edges — a subcutaneous neural node glow, barely perceptible in daylight",
-    "skin_tone": "Warm caramel-brown with subtle golden undertones, a rich blending of equatorial and temperate ancestries. Warm enough to catch light, deep enough to suggest both African and Pacific Islander heritage, with faint warmth from the Latin American and Eastern European components creating an unusual luminosity.",
-    "complexion": "Hollow-cheeked with prominent cheekbones shaped by the wider facial geometry of Sub-Saharan ancestry, softened by the Latin American heritage's gentler bone structure. Skin is clean but weathered — sun-exposure lines around the eyes, the kind of premature aging that comes from outdoor work and inconsistent hydration. The bridge of the nose shows the slight broadness common to African diaspora populations. No visible acne or dermatitis; they maintain personal hygiene carefully despite their circumstances.",
+    "skin_tone": "Warm deep brown with golden-bronze luminosity. The blend of dominant Indigenous American and Eastern European ancestry creates distinctive light-catching quality. Undertones suggest Sub-Saharan and Pacific Islander depth without dominance; subtle cool tones from Eastern European ancestry prevent purely tropical reading. Complex, multifaceted warmth that shifts in different lighting.",
+    "complexion": "High, prominent cheekbones shaped by Indigenous American ancestry's distinctive facial geometry, with the broader nasal bridge common to Mesoamerican populations. The face is angular and clean-lined, with sun-exposure lines around the eyes—the kind of premature aging that comes from outdoor work and inconsistent hydration. Eastern European heritage softens the overall angularity slightly, creating subtle asymmetry in the jawline. Skin is clean but weathered; they maintain personal hygiene carefully despite their circumstances. No visible acne or dermatitis.",
     "distinguishing_marks": [
       "Thin scar along the right temple, pale and old, roughly 3cm long — likely from a past industrial accident or assault",
       "Faint compliance tattoo on the inside of the left wrist: a small Arcturus corporate sigil, now partially faded, remnant of their previous employment",
@@ -288,16 +270,75 @@
     "posture_movement": "Walks with deliberate, economical steps — no wasted motion. Stands with spine straight, a ghost of middle-tier body discipline. Their hands move when they speak, and they speak clearly and slowly, as if translating their thoughts into a common language. They gesture toward people when listening, a sign of their pastoral work. When tired, they compress into themselves slightly, but never slouch.",
     "clothing_style": "A grey wool coat, repeatedly mended with visible stitching in darker grey and black thread — the garment itself is high-quality beneath the repairs, suggesting it was kept from their Tier 3 life. Underneath: layered thermal shirts in muted tones, worn through at the elbows. Practical cargo pants in faded black. Boots that are water-resistant but not new, well-maintained. A small leather satchel containing personal effects and ceremony materials. No visible corporate branding. Tier 5 presentation, but with the careful grooming of someone who hasn't given up on dignity."
   },
-  "image_prompt": "Portrait of Atlas Kovács-Delgado-Kamara, a lean 173cm figure with warm caramel-brown skin blending Sub-Saharan African, Hispanic, Eastern European, and Pacific Islander heritage. Sharp cheekbones, hollow-cheeked face weathered by sun and inconsistency, deep brown eyes with faint neural luminescence at the edges. Shoulder-length iron-black twists streaked with premature white, wrapped with fraying grey cord. Thin pale scar along right temple. Retractable pearl-grey chrome claws visible at the knuckles with bioluminescent edges. Wearing a mended grey wool coat over layered thermal shirts, faded black cargo pants, water-resistant boots. Small leather satchel across the chest. Posture straight and deliberate despite Tier 5 circumstances. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody indoor lighting casting shadows across weathered features, austere dignity evident in careful grooming and economical movement. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Kovács-Ozcoidi-Cardenas, 2226 neo-noir GLMZ streetscape. Lean 173cm figure in grey wool coat with visible mending, standing beneath neon-tinged rain. Deep warm brown skin with golden-bronze luminosity, high prominent Mesoamerican cheekbones softened by Eastern European ancestry, angular clean-lined face weathered by sun-exposure lines. Shoulder-length iron-black hair with white streaking, twisted into rope braids wrapped with grey cord. Deep brown eyes with faint bioluminescent edge glow from subcutaneous neural node. Deliberate, economical posture—spine straight, shoulders disciplined. Pearl-grey chrome-inlaid retractable claws visible at knuckles with faint bioluminescence. Thin pale scar along right temple. Dressed in layered muted thermals, faded black cargo pants, worn water-resistant boots, small leather satchel. Hands gesturing as they speak slowly and carefully. Urban decay setting, rain-slicked pavement, dim corporate neon, atmospheric lighting catching the luminosity of their skin. Tier 5 dignity despite poverty. Neo-noir naturalistic portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.3,
-    "Sub-Saharan African": 30.9,
-    "Eastern European": 12.7,
-    "Northern European": 12.5,
-    "Pacific Islander": 10.6
+    "Indigenous American": 40.9,
+    "Eastern European": 27,
+    "Hispanic/Latin American": 19.8,
+    "Pacific Islander": 6.1,
+    "Sub-Saharan African": 5.1,
+    "Northern European": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 23.3,
+        "Potawatomi": 3.5
+      },
+      "Plains Nations": {
+        "Cherokee": 7.1
+      },
+      "Mesoamerican": {
+        "Nahua": 4.3,
+        "Zapotec": 2.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 11.9,
+        "Hungarian": 7.2
+      },
+      "Slavic West": {
+        "Slovak": 7.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 19.8
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 4.9
+      },
+      "Melanesian": {
+        "Fijian": 1.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 0.6
+      },
+      "Southern African": {
+        "Mozambican": 2.9,
+        "Zimbabwean": 1.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 0.5
+      },
+      "Scandinavian": {
+        "Icelandic": 0.4
+      },
+      "British Isles": {
+        "Scottish": 0.1,
+        "Irish": 0.1
+      }
+    }
+  }
 }

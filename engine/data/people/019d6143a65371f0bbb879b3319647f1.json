@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65371f0bbb879b3319647f1",
   "type": "character",
-  "name": "Mika Magnúsdóttir-Tetteh",
+  "name": "Mika Ergashev-Tetteh",
   "aliases": [
     "Tungsten",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Malika Ivanov-Appiah is compact and densely muscled, built low to the ground like something designed to survive impacts. At 41, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nMalika Ivanov-Appiah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Mika Ergashev-Tetteh is compact and densely muscled, built low to the ground like something designed to survive impacts. At 41, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nMika Ergashev-Tetteh has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -261,7 +261,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,42 +275,22 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Canopy Station Nine",
     "The Nearfield",
     "Geartown",
     "The Gradient Compact",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Canopy",
     "Slagworks Industrial",
-    "Clover",
+    "Felix Roundtree",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Deku Barrientos-Osei",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Glenville Sound",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "O'Hare Sovereign",
-    "Prophet",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Cigarette' Pen Gun",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Canopy",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Southeast Asian, Hispanic/Latin American, and Sub-Saharan African blend — 44% Southeast Asian base with 42% Hispanic/Latin American and 14% Sub-Saharan African admixture. Phenotype shows the broad-faced structure and eye shape of Southeast Asian ancestry with warmer, deeper undertones from Hispanic and African heritage.",
+    "heritage": "Central Asian-dominant blend (44.5%) with substantial Sub-Saharan African (27.5%) and Southeast Asian (21.4%) admixture, rounded by East Asian (3.9%) and Hispanic/Latin American (2.7%) heritage. Phenotype reflects the broad facial structure characteristic of Central Asian ancestry, combined with the warm depth and skin saturation of Sub-Saharan African heritage, tempered by Southeast Asian facial geometry and undertones. The ancestral combination creates a distinctively warm, complex mid-to-deep complexion with golden-bronze luminosity.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and densely muscled, low center of gravity — shoulders broad relative to frame, core visibly defined. Built like a shock-absorber, all functional compression, no excess.",
@@ -318,8 +298,9 @@
     "hair_style": "Pulled back in a tight, practical braid; loose strands never tolerated",
     "hair_length": "Medium",
     "eye_color": "Amber-brown, natural",
-    "skin_tone": "Rich warm brown with golden-olive undertones — the blending of Southeast Asian warmth, Hispanic saturation, and Sub-Saharan depth creates a complex mid-to-deep tone that catches light distinctly",
-    "complexion": "Weathered but precise — skin unmarked by acne or negligence, suggests deliberate maintenance. Fine lines around eyes from squinting at screens. Broad Southeast Asian facial structure with pronounced cheekbones and defined jawline. Expression defaults to neutral observation.",
+    "skin_tone": "Rich warm brown with golden-bronze undertones. The Central Asian base combines with Sub-Saharan African depth and Southeast Asian saturation to create a complex mid-to-deep tone with distinctive warm radiance in natural light.",
+    "complexion": "Weathered but precisely maintained — skin unmarked by acne or negligence. Fine lines around eyes from squinting at screens. Moderate width facial structure with pronounced cheekbones and defined jawline reflecting Central Asian heritage blended with African facial contours. Expression defaults to neutral observation.",
+    "eye_shape": "Deep-set, moderate epicanthic character from Central and Southeast Asian heritage",
     "distinguishing_marks": [
       "Neural interface jack at base of skull — brushed steel, visible when hair is pulled back, slightly raised scar tissue around the port from six years of active use",
       "Thin white scar running from left temple to cheekbone, approximately 8cm — clean surgical precision, possibly from old augmentation work",
@@ -329,14 +310,62 @@
     "posture_movement": "Moves economically, no wasted motion. Sits with weight distributed low and centered — ready to move in any direction. Eyes constantly tracking exits and sightlines. Hands rest in lap or on table edge, never crossed or defensive. When standing, favors a slight forward lean — aggressive listening posture.",
     "clothing_style": "Tier 3-4 utilitarian: fitted black reinforced cargo pants with thigh pockets, grey or black synthetic tops under a weathered tan canvas jacket with internal rig pockets. Boots are corporate-surplus tactical grade, broken in to near-invisibility. No visible logos or affectation. Everything functional, nothing decorative. Carries a slim deck-rig in a shoulder holster, barely visible under jacket."
   },
-  "image_prompt": "Mika Magnúsdóttir-Tetteh, compact 158cm woman, rich warm brown skin with golden-olive undertones, Southeast Asian facial structure with broad face and defined cheekbones, amber-brown eyes. Dark brown hair shot through with premature grey, pulled back in tight practical braid. Neural interface jack visible at base of skull with scar tissue, thin surgical scar from temple to cheekbone, subtle burn mark on wrist. Reinforced fingernails catching light like polished metal. Wearing fitted black cargo pants, grey synthetic top, weathered tan canvas jacket with internal pockets, corporate-surplus tactical boots. Sits low and centered, economical movements, tracking exit lines. Cyberpunk 2226 GLMZ setting, dim neon-tinged lighting, neutral expression, sharp focus, professional yet dangerous presence. --ar 2:3 --v 6",
+  "image_prompt": "Mika Ergashev-Tetteh, 158cm compact frame with dense musculature, standing in aggressive listening posture with forward lean. Rich warm brown skin with golden-bronze undertones, reflecting Central Asian, Sub-Saharan African, and Southeast Asian heritage. Amber-brown natural eyes, deep-set with moderate epicanthic shape, constantly tracking sightlines. Dark brown hair with premature grey threading, pulled back in tight practical braid. Weathered complexion, pronounced cheekbones and defined jawline, fine lines around eyes from screen work. Brushed steel neural interface jack visible at base of skull with raised scar tissue. Thin white surgical scar from left temple to cheekbone. Reinforced fingernails with metallic sheen. Wearing black reinforced cargo pants, grey synthetic top under weathered tan canvas jacket with rig pockets, corporate-surplus tactical boots. Slim deck-rig in shoulder holster barely visible under jacket. Economical movement, hands resting in lap. GLMZ Great Lakes Metropolitan Zone, neon-lit corporate district, moody blue and amber lighting casting shadows on her features, gritty urban backdrop, professional hacker aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 44.3,
-    "Hispanic/Latin American": 42.0,
-    "Sub-Saharan African": 13.7
+    "Central Asian": 44.5,
+    "Sub-Saharan African": 27.5,
+    "Southeast Asian": 21.4,
+    "East Asian": 3.9,
+    "Hispanic/Latin American": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 38
+      },
+      "Turkic": {
+        "Kazakh": 2.2,
+        "Uyghur": 4.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 15.2
+      },
+      "East African": {
+        "Ethiopian": 7.6
+      },
+      "Central African": {
+        "Cameroonian": 4.7
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 3.6
+      },
+      "Thai": {
+        "Thai": 2.5
+      },
+      "Vietnamese": {
+        "Vietnamese": 15.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 2.1
+      },
+      "Central American": {
+        "Salvadoran": 0.6
+      }
+    }
+  }
 }

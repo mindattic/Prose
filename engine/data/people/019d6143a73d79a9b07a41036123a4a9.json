@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73d79a9b07a41036123a4a9",
   "type": "character",
-  "name": "Tarn Tlemcani",
+  "name": "Tarn Fredriksen",
   "aliases": [
     "Vector",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 55,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
-  "description": "Zurab Ivanov-Appiah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 55, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Zurab Ivanov-Appiah plans to keep it that way. She works as a extraction specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Zurab Ivanov-Appiah is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Tarn Fredriksen is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 55, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Tarn Fredriksen plans to keep it that way. She works as a extraction specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Tarn Fredriksen is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.92,
@@ -260,7 +260,7 @@
     "Improviser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,30 +273,13 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Lazarus LX-2 'Lab Rat'",
     "Burden of Longitude",
-    "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Blessed Nkemdirim",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Cem Lund-Bangura",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ilhan Sandstrom-Badu",
-    "Makena Johanssen-Diallo",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Quilt",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "The Fathom Line",
-    "Veslemøy Achebe-Tursynov",
-    "Yusra Ntambwe-Cakić"
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly East Asian (29.1%) with significant North African (18.4%), South Asian (18.4%), and Hispanic/Latin American (17.1%) ancestry, with Northern European (12.0%) and Indigenous American (5.0%) contributions. The genetic blend produces warm brown skin with subtle golden and olive undertones, distinctive eye geometry reflecting East and South Asian heritage, and facial structure showing North African and Indigenous influences.",
+    "heritage": "Indigenous American (43.9%) dominant with substantial Northern European (26.1%), East Asian (17.0%), South Asian (8.7%), and Middle Eastern (4.3%) ancestry. This blend produces warm medium-brown skin with golden and olive undertones, distinctive eye geometry reflecting East and South Asian heritage mixed with broader cheekbones and nose structure from Indigenous and Northern European ancestry, creating a uniquely blended facial structure that defies simple categorization.",
     "height_cm": 178,
     "weight_kg": 92,
     "build": "Broad-shouldered and heavy-set, muscular underneath a layer of accumulated weight that reads as density rather than softness. Thick through the torso and limbs — built like someone who absorbs punishment and stays upright.",
@@ -304,8 +287,8 @@
     "hair_style": "Pulled back in a tight, practical braid, no frills",
     "hair_length": "Medium",
     "eye_color": "Left eye: deep brown with warm undertones, natural. Right eye: chrome-housed cybernetic with visible LED targeting reticle, amber luminescence when active",
-    "skin_tone": "Warm medium brown with golden and olive undertones, weathered from exposure and chemical-laden Steamvent air. The tone reflects the blended ancestry — neither uniformly warm nor cool, but a complex mid-range bronze that catches light subtly.",
-    "complexion": "Deep laugh lines around the mouth, prominent cheekbones with slightly flared structure reflecting North African and Indigenous heritage, minimal grooming beyond functional maintenance. Scarring along the left temple fades into her hairline. Skin has a slight chemical sheen from geothermal district residue. Facial geometry shows East and South Asian eye placement with broader North African-influenced cheekbones and nose structure.",
+    "skin_tone": "Warm medium-bronze with golden and olive undertones, weathered from exposure and chemical-laden Steamvent air. The tone reflects the blended ancestry — complex mid-range bronze from Indigenous-Northern European base, subtly warmed by East and South Asian genetics, catching light with olive-shifted depth.",
+    "complexion": "Deep laugh lines around the mouth, prominent cheekbones with structure reflecting Indigenous and Northern European heritage balanced with East Asian-influenced eye placement and slight South Asian nasal bridge character. Minimal grooming beyond functional maintenance. Scarring along the left temple fades into her hairline. Skin has a slight chemical sheen from geothermal district residue. Facial geometry shows harmonious blend of broad Indigenous and Northern European features with narrower East and South Asian eye geometry.",
     "distinguishing_marks": [
       "Hydraulic port access points visible at elbows — chrome plating recessed into skin, servicing marks still readable",
       "Matching hydraulic knee assemblies visible when she moves or sits — chrome framework integrated with muscle, pressure lines etched into the metal",
@@ -317,17 +300,63 @@
     "posture_movement": "Moves with economical precision — every motion calculated for efficiency and minimal energy waste. Sits with weight distributed to absorb quick vertical movement. Favors her left side slightly when standing. Stance is wide, grounded. When at rest, she is truly still — no fidgeting, no nervous tells. When moving, the hydraulics whisper.",
     "clothing_style": "Tier 4 practicality — reinforced cargo pants with thigh pockets for tools or sidearm, tactical vest over a loose-fitting thermal base layer to accommodate augmentation cooling ports. Weather-resistant synthetic jacket with hood. Heavy boots with reinforced heel plating. No logos, no flash, no color beyond functional black and dark gray. Clothing shows wear and careful repair. No jewelry. All garments have concealment capability."
   },
-  "image_prompt": "Tarn Tlemcani, a 178cm heavily-built augmented operative with warm medium-brown skin blending East Asian, North African, South Asian, Hispanic, Northern European, and Indigenous ancestry. Deep-set brown left eye and chrome cybernetic right eye with amber LED glow. Steel-gray hair in tight braid. Exposed hydraulic chrome framework at elbows and knees. Weathered facial structure with prominent cheekbones, temple scarring, burn marks on right shoulder. Wearing all-black tactical gear: reinforced cargo pants, tactical vest, thermal base layer, weather-resistant jacket, heavy boots. Standing in low-light geothermal district with chemical haze. Posture economical and grounded, slight favoring of left side. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody atmospheric lighting catching chrome augmentations --ar 2:3 --v 6",
+  "image_prompt": "Tarn Fredriksen, 2226 neo-noir character, 178cm tall broad-shouldered muscular build. Warm bronze-toned skin blending Indigenous American, Northern European, East Asian, and South Asian heritage — medium-brown complexion with golden olive undertones. Deep brown left eye, chrome cybernetic right eye with amber LED reticle. Steel gray hair braided back. Prominent cheekbones, laugh lines, left temple scar fading into hairline. Exposed chrome hydraulic framework visible at elbows and knees integrated with muscle tissue. Old burn scarring on right shoulder and arm. Wearing black reinforced cargo tactical vest over thermal base layer, weather-resistant jacket with hood, heavy reinforced boots. Faded geometric tactical tattoo on left wrist. Grounded wide stance, economical movement. Geothermal Steamvent district setting, low industrial lighting casting amber and blue shadows, slight chemical atmospheric haze, chrome framework catching light. GLMZ 2200s aesthetic, utilitarian and worn but functional. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 29.1,
-    "North African": 18.4,
-    "South Asian": 18.4,
-    "Hispanic/Latin American": 17.1,
-    "Northern European": 12.0,
-    "Indigenous American": 5.0
+    "Indigenous American": 43.9,
+    "Northern European": 26.1,
+    "East Asian": 17,
+    "South Asian": 8.7,
+    "Middle Eastern": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 10,
+        "Maya": 18.8
+      },
+      "Andean": {
+        "Aymara": 15.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 7.7,
+        "Irish": 18.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 8.9,
+        "Sichuanese": 0.6
+      },
+      "Korean": {
+        "Korean": 1.2
+      },
+      "Japanese": {
+        "Japanese": 6.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.9
+      },
+      "Indian": {
+        "Marathi": 3.4,
+        "Telugu": 1.9
+      },
+      "Nepali": {
+        "Nepali": 0.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 2.5,
+        "Kuwaiti": 1.8
+      }
+    }
+  }
 }

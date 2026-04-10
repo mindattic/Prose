@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62b7d8d958111b3281be654",
   "type": "character",
-  "name": "Sigrid Hinojosa-Vestergaard",
+  "name": "Chidi Lahlou-Čabarkapa",
   "aliases": [
     "Brine",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Halsted and Chicago Ave",
-  "description": "Ihaia Mori-Sefa is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a data thief out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Ihaia Mori-Sefa is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Chidi Lahlou-Čabarkapa is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a data thief out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Chidi Lahlou-Čabarkapa is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.48,
@@ -258,7 +258,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,39 +273,19 @@
   "registered_firearms": [],
   "related_entities": [
     "The Unfinished Theorem",
-    "The Shelf",
     "The Nearfield",
+    "The Shelf",
     "Ashfield",
-    "Lazarus LX-2 'Lab Rat'",
-    "Burden of Longitude",
-    "Slagworks Industrial",
-    "Pellucid Systems",
     "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Lazarus IDP-1 'Teeth'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Prophet",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "TERMINUS",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "TESSERA CR-12 'Whisper'",
-    "The Burden Clause",
-    "The Quiet Room",
-    "Yusra Ntambwe-Cakić"
+    "Burden of Longitude",
+    "Neural Palate",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander (29.3%) with Northern European (24.3%), Hispanic/Latin American (23.9%), East Asian (16.1%), and Sub-Saharan African (6.4%) ancestry. This blend creates a striking polychromatic phenotype: warm golden-brown base skin with subtle olive undertones from the European and Latin American ancestry, enriched by the deeper warm tones from Pacific Islander and African heritage. High cheekbones and slightly angular facial structure reflect the East Asian component, balanced by the broader jaw and fuller features from Pacific Islander genetics.",
+    "heritage": "North African (28.3%), Sub-Saharan African (25.4%), South Asian (21.1%), Eastern European (19.1%), and Indigenous American (6.1%) ancestry. This complex genetic blend creates a striking phenotype: deep warm brown skin with layered undertones—golden warmth from North African and South Asian heritage, enriched by mahogany depth from Sub-Saharan African ancestry, with subtle olive complexity from Eastern European genetics. The Indigenous American component adds slight architectural width to the face. High cheekbones and angular structure from North African and South Asian lineages balance against a broader jaw from Sub-Saharan African genetics. The result is a face of considerable symmetry with pronounced bone structure.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Broad-shouldered and heavy, muscular without definition — the weight distributed across a frame built for impact absorption. Chest and shoulders dominate; legs are thick and rooted. Carries himself like someone used to absorbing punishment.",
@@ -313,8 +293,8 @@
     "hair_style": "Cropped close to scalp, functional, no styling. Salt-and-pepper stubble visible on the sides.",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm undertone",
-    "skin_tone": "Warm golden-brown with olive undertones, deepened by sun exposure and Ashfield's particulate air. The tone suggests multiple heritage layers: Pacific Islander warmth, Northern European golden undertones, and African depth. Weathered by age and industrial exposure, creating an ashy surface patina over the underlying richness.",
-    "complexion": "Face is broad and angular with high cheekbones, reflecting the East Asian and Pacific Islander components balanced against the heavier jaw from broader ancestry. Nose broken once and reset imperfectly. Weathered skin with acne scars across shoulders and chest. Mouth set in a neutral line. Eyes are sharp despite the tired creases around them — calculating, not kind.",
+    "skin_tone": "Deep warm brown with golden and copper undertones, weathered by sun exposure and Ashfield's particulate air. Rich underlying complexion layered with industrial patina—ashy surface over burnished depth beneath.",
+    "complexion": "Face is broad and angular with pronounced high cheekbones and strong bone definition reflecting the North African and South Asian components, balanced against a heavier, wider jaw from Sub-Saharan African and Indigenous American heritage. Nose broken once and reset imperfectly. Weathered skin with acne scars across shoulders and chest. Mouth set in a neutral line. Eyes are sharp despite the tired creases around them — calculating, not kind.",
     "distinguishing_marks": [
       "Surgical scar running 3 inches along the right temple where the neural dampener was installed — chrome visible beneath thin skin",
       "Burn scar across the left forearm, circa 5 inches, pale and old — third-degree, healed without grafting",
@@ -325,16 +305,58 @@
     "posture_movement": "Stands rooted, weight distributed evenly across both feet — a defensive stance become default. Moves economically, no wasted motion. Shoulders slightly forward, creating a compact silhouette. When sitting, he's coiled rather than relaxed. Turns his whole body to look at things rather than just his head — old habit, neural dampener limits certain directional vulnerabilities.",
     "clothing_style": "Tier 4-5 utilitarian: reinforced cargo pants in charcoal synth-cotton, pockets weighted with tools and dead drop keys. Worn synthetic leather jacket over a plain dark thermal shirt with the collar cut away to expose the neural dampener scar. Combat boots, scuffed, re-soled twice. No visible logos or corporate wear. Everything is maintenance-ready, replaceable, unremarkable — the uniform of someone who moves through ungoverned space and doesn't want to be remembered."
   },
-  "image_prompt": "A 188cm tall heavily-built man with warm golden-brown skin and subtle olive undertones, combining Pacific Islander, Northern European, Hispanic, East Asian, and African heritage. Short dark brown hair graying at temples with salt-and-pepper stubble. Broad angular face with high cheekbones, broken nose, dark warm brown eyes sharp with calculation. Visible chrome neural dampener scar at right temple catching light. Burn scar on left forearm, laceration scar on left eyebrow. Faded circuit board tattoo on chest. Standing in rooted defensive stance, compact shoulders slightly forward. Wearing charcoal reinforced cargo pants, worn synthetic leather jacket, dark thermal shirt with collar cut to expose neural dampener. Scuffed combat boots. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial setting with harsh neon and ambient particulate haze, dramatic side lighting emphasizing augmentation scarring, expression calculating and weathered, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, deep-skinned man of mixed global heritage with warm brown complexion and golden undertones, age-weathered face with high cheekbones and strong jaw structure, dark brown eyes with calculating gaze, short dark hair graying at temples with stubble. Surgical scar and chrome visible at right temple from neural dampener implant. Broad-shouldered muscular build, 188cm tall, rooted defensive posture. Wearing reinforced charcoal cargo pants and worn synthetic leather jacket over dark thermal shirt with cut collar exposing neural tech scar. Scuffed combat boots. Industrial burn scar on left forearm visible. Tattoo of circuit pattern on chest. Standing in dim industrial setting, particulate air around him, cool neon backlighting catching the chrome of his augmentations, moody and dangerous atmosphere. Neo-noir mercenary aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 29.3,
-    "Northern European": 24.3,
-    "Hispanic/Latin American": 23.9,
-    "East Asian": 16.1,
-    "Sub-Saharan African": 6.4
+    "North African": 28.3,
+    "Sub-Saharan African": 25.4,
+    "South Asian": 21.1,
+    "Eastern European": 19.1,
+    "Indigenous American": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Maghreb": {
+        "Algerian": 14.1,
+        "Tunisian": 4.6
+      },
+      "Amazigh": {
+        "Berber": 1.8
+      },
+      "Nile Valley": {
+        "Egyptian": 7.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 3.5
+      },
+      "East African": {
+        "Somali": 9.2,
+        "Kenyan": 9.4
+      },
+      "West African": {
+        "Sierra Leonean": 2.8,
+        "Nigerian": 0.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Malayali": 21.1
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 19.1
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 6.1
+      }
+    }
+  }
 }

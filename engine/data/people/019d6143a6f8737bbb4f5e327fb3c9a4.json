@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f8737bbb4f5e327fb3c9a4",
   "type": "character",
-  "name": "Nova Ixchel-Björnsdóttir",
+  "name": "Nova Haugen-Xayavong",
   "aliases": [
     "Stub",
     "The Frenchman (incorrectly — he finds this hilarious)"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Shelf, Ironvein, near Ashland and Division",
-  "description": "Thibault is lean in the way of someone who forgets to eat when a project absorbs him — not quite gaunt but close, with long clever fingers perpetually stained in a rotating cast of lubricants and oxidized metals. His skin is a deep warm brown, his head shaved close on the sides with a dense natural coil on top that he secures with whatever is nearest, usually a reclaimed wire clip. He has bioluminescent underlining along his collarbones — a pale green glow visible in low light, bought cheap from a Helix Biosystems knockoff clinic and slightly asymmetrical, which he considers character. His stall on The Shelf is a leaning tower of crates, sorted by a taxonomy he insists is logical and that no one else has ever decoded.\n\nHe is the kind of person whose enthusiasm for obscure things is genuinely infectious — he can talk for forty minutes about the degradation patterns of third-generation synthetic capacitors and make you care. He is also deeply, constitutionally disorganized in everything except his actual technical knowledge, which is encyclopedic. He has a habit of agreeing to things in the heat of excitement and then having no memory of agreeing. He is not dishonest — he is just running seventeen threads at once and most of them are internal.",
+  "description": "Nova Haugen-Xayavong is lean in the way of someone who forgets to eat when a project absorbs him — not quite gaunt but close, with long clever fingers perpetually stained in a rotating cast of lubricants and oxidized metals. His skin is a deep warm brown, his head shaved close on the sides with a dense natural coil on top that he secures with whatever is nearest, usually a reclaimed wire clip. He has bioluminescent underlining along his collarbones — a pale green glow visible in low light, bought cheap from a Helix Biosystems knockoff clinic and slightly asymmetrical, which he considers character. His stall on The Shelf is a leaning tower of crates, sorted by a taxonomy he insists is logical and that no one else has ever decoded.\n\nHe is the kind of person whose enthusiasm for obscure things is genuinely infectious — he can talk for forty minutes about the degradation patterns of third-generation synthetic capacitors and make you care. He is also deeply, constitutionally disorganized in everything except his actual technical knowledge, which is encyclopedic. He has a habit of agreeing to things in the heat of excitement and then having no memory of agreeing. He is not dishonest — he is just running seventeen threads at once and most of them are internal.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -158,7 +158,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,30 +173,19 @@
   "related_entities": [
     "Helix Biosystems",
     "The Shelf",
+    "Frequency",
+    "Plot 17",
     "Ironvein",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Tessera Corponation",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Gravimetric Collapse Charge GCC-9",
     "Slagworks Industrial",
     "The Pale Mile",
-    "Nightlight",
-    "Irontide Tidal Energy",
-    "Kadiatou Bergstrom-Konate",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Plot 17",
-    "Ringo PD-1 'Citizen'",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "The Bazaar",
-    "The Pure Hand",
-    "Tiare Nishi-Anim",
-    "Tomasz Wren",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American (74.1%) with Eastern European (13.4%) and East Asian (12.5%) ancestry, resulting in warm brown skin with subtle golden and olive undertones. High cheekbones and defined facial structure reflecting Mesoamerican heritage; eye shape and hair texture show East Asian influence; lighter complexion variation from Eastern European ancestry creates warm richness rather than uniformity.",
+    "heritage": "Southeast Asian (73.7%) with Middle Eastern (22.9%) and Sub-Saharan African (3.4%) ancestry. Warm golden-brown skin with subtle amber and olive undertones, rich with luminosity. High cheekbones and defined facial structure reflecting strong Southeast Asian heritage; the ancestral blend creates depth across the frame with warm complexion richness.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and wiry, the kind of thin that comes from sustained focus rather than deprivation — long-limbed with visible musculature in forearms and shoulders from years of disassembly work. Slight forward curve to his posture from hunching over workbenches.",
@@ -204,7 +193,7 @@
     "hair_style": "Close-shaved sides with a dense natural coil crown, roughly 8cm at the peak, usually secured with whatever reclaimed wire clip or metal fastener is within arm's reach — currently a stripped copper coupling.",
     "hair_length": "Short (sides) / Medium (crown)",
     "eye_color": "Deep brown with faint segmented patterning visible in the left iris from the retinal magnification implant; occasional slight misalignment in that eye.",
-    "skin_tone": "Warm golden-brown with olive undertones, consistent across frame — the blended result of Indigenous American, East Asian, and Eastern European ancestry creating depth and luminosity",
+    "skin_tone": "Warm golden-brown with olive undertones, consistent across frame — the blended result of Southeast Asian, Middle Eastern, and Sub-Saharan African ancestry creating depth and luminosity",
     "complexion": "Clean but perpetually marked — fingernails rimmed with oxidized metal dust and industrial lubricants (current palette: rust-red, graphite-gray, synthetic oil sheen). Fine lines around his eyes from squinting at small components. Strong cheekbones and defined jawline. No facial hair; appears to shave cleanly every 3-4 days based on current stubble pattern.",
     "distinguishing_marks": [
       "Pale green bioluminescent underlining along both collarbones, faintly asymmetrical — glows visibly in low-light conditions. Faint scarring where the implant site healed, slightly raised.",
@@ -216,14 +205,50 @@
     "posture_movement": "Habitually hunched forward, hands moving expressively when speaking about technical subjects — especially when explaining salvage taxonomy or component degradation patterns. Walks with purpose but distraction, often redirecting mid-step to examine something on the ground. Sits cross-legged even on proper chairs. Fidgets constantly with small objects — wire, fascia, components — while listening to others.",
     "clothing_style": "Tier 4 utilitarian scavenger aesthetic. Worn cargo vest or technician's coat (heavily patched, pockets stuffed with components in labeled or unlabeled pouches). Underneath: faded graphic tee or sleeveless shirt, usually bearing faint chemical stains. Industrial cargo pants with multiple thigh pockets, cuffs rolled or pinned. Steel-toed work boots, one sole held together with synthetic webbing. Fingerless work gloves, knuckles exposed. No jewelry except for whatever magnetic components he's borrowed from his own inventory and forgotten he's wearing. His clothing smells perpetually of mineral oil, solder flux, and rust-preventative."
   },
-  "image_prompt": "cyberpunk 2226, androgynous technician with warm golden-brown skin tone, high cheekbones reflecting Indigenous American and East Asian heritage, natural black short-shaved sides with dense coil crown, deep brown eyes with subtle augmentation artifact in left iris. Lean 178cm frame hunched forward from workbench focus, pale green bioluminescent tracery glowing faintly along exposed collarbones. Wearing heavily patched cargo vest over faded graphic tee, industrial cargo pants, fingerless work gloves with visible metal dust on hands, steel-toed work boots. Thin white scars visible on right hand and left forearm. Fidgeting with salvaged components, surrounded by dim workshop neon ambient lighting casting blue-green shadows, gritty GLMZ scrapyard aesthetic, moody concentrated expression. --ar 2:3 --v 6",
+  "image_prompt": "Nova Haugen-Xayavong, a 178cm lean Southeast Asian-Middle Eastern neo-noir salvage tech with warm golden-brown skin, strong cheekbones, and defined jawline. Natural black hair: close-shaved sides with dense coil crown (8cm, copper wire fastener), deep brown eyes with left-eye retinal implant segmentation. Bioluminescent pale green tracery glowing along collarbones, faint scars on right hand and left forearm. Perpetually stained fingers with industrial grime. Wearing worn cargo vest over stained graphic tee, industrial cargo pants with rolled cuffs, steel-toed work boots held together with webbing, fingerless work gloves. Hunched forward posture, hands fidgeting with salvage components. Standing in a dimly-lit scrapyard or workshop surrounded by reclaimed tech, neon glow reflecting off his skin, mineral oil and solder flux ambient. Neo-noir 2220s aesthetic, gritty and focused, concentrated expression studying a component. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 74.1,
-    "Eastern European": 13.4,
-    "East Asian": 12.5
+    "Southeast Asian": 73.7,
+    "Middle Eastern": 22.9,
+    "Sub-Saharan African": 3.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 29.7
+      },
+      "Laotian": {
+        "Laotian": 21.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 22.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 1.9,
+        "Jordanian": 2.3
+      },
+      "Arab Gulf": {
+        "Yemeni": 1.5,
+        "Kuwaiti": 1.7
+      },
+      "Kurdish": {
+        "Kurdish": 15.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 1.1,
+        "Nigerian": 0.7
+      },
+      "East African": {
+        "Ugandan": 0.3,
+        "Somali": 1.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c67fb9a3a42cecdec69ca2",
   "type": "character",
-  "name": "Nisha Sesay",
+  "name": "Phoenix Magnúsdóttir",
   "aliases": [
     "Last Resort"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -105,30 +105,20 @@
   "registered_firearms": [],
   "related_entities": [
     "The Shelf",
-    "Chicago",
-    "Bintou Halvorsen-Osei",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sorin Ekwensi-Balasanyan",
-    "Stainless Steel",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Underlayer Collective"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian (45%) / Sub-Saharan African (42.8%) / Hispanic/Latin American (6.3%) / Central Asian (5.9%) — a complex diaspora blend reflecting the Ubiquitous mixing of the 2220s. The genetic combination creates a richly layered phenotype: warm deep brown skin with both East African and South Asian undertones, with subtle warmth from the Hispanic and Central Asian ancestry woven through.",
+    "heritage": "East Asian (33.9%) / Northern European (25.5%) / Middle Eastern (17.2%) / Sub-Saharan African (14.9%) / Hispanic/Latin American (5.5%) / Eastern European (3.0%) — a truly global diaspora blend reflecting the Ubiquitous mixing of the 2220s. The genetic combination creates a richly complex phenotype: warm medium-deep brown skin with balanced undertones from East Asian, Middle Eastern, and Sub-Saharan African ancestry, subtle golden warmth from Hispanic heritage, anchored by Northern European and Eastern European genetic markers. The result is a unique, lived-in warmth that defies easy categorization.",
     "height_cm": 183,
     "weight_kg": 89,
     "build": "Lean and weathered, with the posture of someone who has absorbed decades of street tension. Shoulders still broad but slightly rounded from age. Forearms corded with veins and old scar tissue.",
     "hair_color": "Salt-and-pepper grey, natural with occasional white streaking",
     "hair_style": "Kept short, close-cropped, groomed but unpretentious",
     "hair_length": "Short",
-    "eye_color": "Warm amber-brown, fading slightly with age cataracts beginning at edges",
-    "skin_tone": "Deep warm brown with balanced undertones — the rich, lived-in complexion of someone carrying South Asian, Sub-Saharan African, and Central Asian heritage. Sun-darkened and weathered.",
-    "complexion": "Heavily lined face with deep grooves around eyes and mouth. Jaw still defined beneath the weathering. Three-day stubble most days. Skin shows sun damage and years of chemical exposure — slight pockmarking on left cheek and forehead. The bone structure reflects the South Asian and African ancestry blend, with strong cheekbones and a substantial jaw.",
+    "eye_color": "Warm amber-brown with faint neon-green circuit tracery visible around left iris in low light from subcutaneous neural relay, slight age cataracts beginning at edges",
+    "skin_tone": "Warm medium-deep brown with balanced East Asian, Middle Eastern, and Sub-Saharan undertones — the rich, lived-in complexion of someone carrying five continents in their genetics. Sun-darkened and weathered.",
+    "complexion": "Heavily lined face with deep grooves around eyes and mouth reflecting the complex ancestry blend: moderate cheekbones with subtle East Asian upper lid fold genetics, strong jaw with Middle Eastern and African heritage markers, substantial brow ridge. Jaw still defined beneath the weathering. Three-day stubble most days. Skin shows sun damage and years of chemical exposure — slight pockmarking on left cheek and forehead.",
     "distinguishing_marks": [
       "Burn scar running from left temple down to jawline, roughly 8cm long, silvery and puckered",
       "Faded tattoo on right forearm — Cyrillic characters partially covered by later scarring, circa 2190s gang mark he no longer acknowledges",
@@ -139,15 +129,76 @@
     "posture_movement": "Moves economically, never wasting motion. Slight limp favoring right knee on cold mornings. Sits with his back to walls. Hands rest open, not clenched — a sign of practiced calm. When he talks, his jaw moves slowly, deliberately. Chain-smokes synthetic cigarettes, the kind that leave no tar but taste like burnt plastic.",
     "clothing_style": "Tier 4-5 practicality. Worn charcoal long-coat with reinforced elbow patches, synthetic leather underneath. Black thermal underlayer visible at collar. Cargo pants with multiple pockets, Φ200 knockoff boots resoled twice. A faded Milwaukee Wolves sports cap from the 2180s he never removes. Single stainless steel ring on left hand — no identifying marks. Layers suggest someone always ready to move quickly."
   },
-  "image_prompt": "Nisha Sesay, weathered South Asian-Sub-Saharan African man in his late 60s, 183cm tall, deep warm brown skin with sun damage, salt-and-pepper grey close-cropped hair under faded Milwaukee Wolves cap. Heavy facial lines, amber-brown eyes with faint cataracts, silvery burn scar left temple to jaw. Left eye shows faint neon-green circuit tracery in low light. Chrome-capped knuckles on right hand. Wearing worn charcoal reinforced long-coat over black thermal layer, cargo pants, resoled boots. Three-day stubble, chain-smoking synthetic cigarette. Sitting with back to wall in dimly-lit 2226 cyberpunk Great Lakes location, calm but alert posture, economical movements. Industrial, weathered aesthetic. Moody neon and shadow lighting, gritty urban setting --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Phoenix Magnúsdóttir, 183cm tall, lean weathered build, warm medium-deep brown skin with balanced East Asian, Middle Eastern, Sub-Saharan African undertones. Salt-and-pepper grey short hair, faded Milwaukee Wolves cap worn low. Deep lined face with strong jaw, subtle Asian cheekbones, substantial brow ridge. Amber-brown eyes with faint neon-green circuit tracery around left iris. Silvery burn scar running from left temple to jawline. Three-day stubble, sun-damaged skin with slight pockmarking. Chrome-capped knuckles on right hand. Worn charcoal long-coat with reinforced elbows, black thermal collar visible, cargo pants. Stainless steel ring on left hand. Sits with back to wall, hands relaxed. Synthetic cigarette smoke curling. GLMZ, gritty Great Lakes Metropolitan Zone setting, cool neon and practical lighting, mood of practiced calm and street-worn experience. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 45.0,
-    "Sub-Saharan African": 42.8,
-    "Hispanic/Latin American": 6.3,
-    "Central Asian": 5.9
+    "East Asian": 33.9,
+    "Northern European": 25.5,
+    "Middle Eastern": 17.2,
+    "Sub-Saharan African": 14.9,
+    "Hispanic/Latin American": 5.5,
+    "Eastern European": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 24.8
+      },
+      "Chinese": {
+        "Sichuanese": 7.1,
+        "Cantonese": 2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 13.7
+      },
+      "Scandinavian": {
+        "Swedish": 2.1,
+        "Icelandic": 9.7
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Afghan Dari": 11.3,
+        "Tajik Persian": 0.6
+      },
+      "Kurdish": {
+        "Kurdish": 5.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 7.5,
+        "Ugandan": 0.8
+      },
+      "Southern African": {
+        "Mozambican": 2.2,
+        "South African": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 1,
+        "Cuban": 2.9
+      },
+      "Central American": {
+        "Guatemalan": 0.3
+      },
+      "Mexican": {
+        "Mexican": 1.3
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 2.6
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.4
+      }
+    }
+  }
 }

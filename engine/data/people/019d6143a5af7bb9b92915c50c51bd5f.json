@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5af7bb9b92915c50c51bd5f",
   "type": "character",
-  "name": "Svetlana Jaramillo-Kovalenko",
+  "name": "Tarn Matsumoto-Mukherjee",
   "aliases": [
     "Mara Bright",
     "the Laceworks Witch"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Laceworks, Bronzeline, near Lincoln and Clark",
-  "description": "Amara operates out of a folding table wedged between two support pillars in the covered walkway district known as The Laceworks — a tangle of enclosed elevated bridges and lower market arcades in Bronzeline that smells permanently of wet concrete and food oil. They are striking: tall and thin with light brown skin, cheekbones that photograph dramatically, and shoulder-length hair grown out in patches of natural black and bioluminescent indigo that pulses in slow, warm waves when they're calm and rapid cold flickers when they're anxious. Their eyes have decorative irises — a Helix Biosystems standard pattern called 'starburst mango' — that catch light like fractured glass. They dress in whatever they find beautiful that week.\n\nOn one half of the table, Amara sells bootleg media: cracked games, pirated immersives, scraped celebrity XP recordings, deep-archive films from before the Flood Years. On the other half, they read fortunes — a practice that blends genuine E.L.F. prayer traditions with showmanship and an eerily accurate social intuition. They genuinely believe the E.L.F.s speak through data patterns and that fortune-telling is just a different kind of signal processing. Whether this is true or not, their readings have a reputation for being uncomfortably specific, which keeps a steady line of nervous customers in front of the table.",
+  "description": "Tarn Matsumoto-Mukherjee operates out of a folding table wedged between two support pillars in the covered walkway district known as The Laceworks — a tangle of enclosed elevated bridges and lower market arcades in Bronzeline that smells permanently of wet concrete and food oil. They are striking: tall and thin with light brown skin, cheekbones that photograph dramatically, and shoulder-length hair grown out in patches of natural black and bioluminescent indigo that pulses in slow, warm waves when they're calm and rapid cold flickers when they're anxious. Their eyes have decorative irises — a Helix Biosystems standard pattern called 'starburst mango' — that catch light like fractured glass. They dress in whatever they find beautiful that week.\n\nOn one half of the table, Tarn Matsumoto-Mukherjee sells bootleg media: cracked games, pirated immersives, scraped celebrity XP recordings, deep-archive films from before the Flood Years. On the other half, they read fortunes — a practice that blends genuine E.L.F. prayer traditions with showmanship and an eerily accurate social intuition. They genuinely believe the E.L.F.s speak through data patterns and that fortune-telling is just a different kind of signal processing. Whether this is true or not, their readings have a reputation for being uncomfortably specific, which keeps a steady line of nervous customers in front of the table.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -161,7 +161,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Laceworks",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,35 +177,16 @@
     "Helix Biosystems",
     "The Laceworks",
     "Bronzeline",
-    "Concrete",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "ARCHIVE",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Glass",
-    "Adaeze Soumaré-Papadimitriou",
-    "Arcturus LS-5 'Sentinel'",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
     "Green Bay Community Table",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Orbital Drop Pod",
-    "Otitodilichukwu Sigurðsson-Batmunkh",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Predictive Marksman Rifle TPMR-4 'Cassandra'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Question",
-    "The Signal",
-    "Tshiamo Vukić-Arellano",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Zheng-dao Bioelectric"
+    "Concrete",
+    "Indigo",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Glass"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Eastern European Slavic (48%), Hispanic/Latin American (36.6%), and East Asian (15.4%) ancestry creating a distinctive pan-global phenotype — warm olive undertones from the Hispanic/Latin heritage blended with the cooler undertones of Eastern European genetics, with subtle East Asian facial structure contributing to cheekbone definition and eye shape.",
+    "heritage": "Predominantly East Asian (63.1%) with significant South Asian (29.5%) and Southeast Asian (7.4%) ancestry, creating a striking pan-Asian phenotype — warm golden undertones from South Asian genetics blended with the cooler, clearer undertones characteristic of East Asian heritage, with Southeast Asian features contributing to refined cheekbone definition and distinctive eye shape",
     "height_cm": 183,
     "weight_kg": 62,
     "build": "Tall and thin with minimal muscle definition — a frame that reads as deliberately ascetic, almost fragile-looking, but with precise posture that suggests controlled strength rather than weakness",
@@ -213,8 +194,8 @@
     "hair_style": "Grown out in irregular sections; some areas shoulder-length, others cropped or shaved, creating an intentional asymmetrical effect; patches of indigo geneware appear to pulse independently based on emotional state",
     "hair_length": "Medium (shoulder-length in longest sections)",
     "eye_color": "Decorative iris replacements — Helix Biosystems 'starburst mango' pattern with amber-to-red gradient rays radiating from central amber pupil; eyes catch and refract light like fractured glass",
-    "skin_tone": "Warm olive complexion — medium depth with golden undertones from blended Hispanic/Latin and Eastern European heritage, subtle warmth enhanced by East Asian genetic contributions",
-    "complexion": "Sharp, defined cheekbones with angular bone structure showing East Asian influence; clear skin with minimal blemishing; minimalist grooming aesthetic; face has an almost sculptural quality, photogenic in the way that suggests they understand how they're perceived; slight width across upper face balanced by strong jawline",
+    "skin_tone": "Warm golden-olive complexion — medium depth with golden undertones from blended South and East Asian heritage, luminous quality enhanced by Southeast Asian genetic contributions",
+    "complexion": "Sharp, defined cheekbones with angular bone structure characteristic of East Asian ancestry; clear skin with minimal blemishing; minimalist grooming aesthetic; face has an almost sculptural quality, photogenic in the way that suggests they understand how they're perceived; almond-shaped eyes with natural epicanthic fold; balanced proportions across upper and lower face with refined jawline",
     "distinguishing_marks": [
       "Fingernail-mounted micro-projectors visible on both hands as faint metallic inlays along the nail beds, most visible when light catches them at certain angles"
     ],
@@ -222,14 +203,39 @@
     "posture_movement": "Moves with deliberate, flowing gestures — economical but expressive, hands used frequently for emphasis and demonstration; sits cross-legged or in meditative posture at their table; eye contact is direct and unsettling, the decorative irises making their gaze feel both artificial and hypnotic; movements suggest someone comfortable being watched",
     "clothing_style": "Eclectic Tier 3-4 aesthetic — whatever they find beautiful that week, suggesting thrift-store mixing and intentional stylistic variance; likely includes layered silhouettes, unexpected color combinations, possibly upcycled corporate wear recontextualized as personal fashion; suggests someone more interested in aesthetic interest than status signaling; probably incorporates elements that complement their bioluminescent hair (deep colors, metallics, or light-reactive fabrics)"
   },
-  "image_prompt": "Svetlana Jaramillo-Kovalenko, 183cm tall figure with warm olive skin tone blending Eastern European Slavic and Hispanic/Latin ancestry with subtle East Asian features, sharp high cheekbones, angular bone structure. Natural black asymmetrical shoulder-length hair with bioluminescent indigo patches pulsing softly. Decorative starburst mango iris replacements with amber-to-red gradient catching light like fractured glass, creating an unsettling hypnotic gaze. Thin ascetic build with deliberate controlled posture. Fingernail-mounted micro-projectors visible on hands with metallic inlays. Wearing eclectic thrift-store mixed Tier 3-4 cyberpunk fashion with layered silhouettes, deep colors, metallics and light-reactive fabrics. Sitting cross-legged in meditative posture at a fortune-telling table, hands expressive mid-gesture. Holographic sigils faintly glowing from fingernail projectors. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, moody atmospheric lighting catching the refraction of decorative iris implants and bioluminescent hair patches, cinematic depth, intimate intimate divination scene with unsettling elegance --ar 2:3 --v 6",
+  "image_prompt": "Tarn Matsumoto-Mukherjee, tall androgynous figure with warm golden-olive skin blending East Asian and South Asian heritage, sharp angular cheekbones with almond-shaped eyes replaced by striking amber-to-red starburst implants that refract light like fractured glass. Natural black hair in intentional asymmetrical sections with bioluminescent indigo patches pulsing softly. Minimal build with ascetic posture, hands adorned with subtle metallic micro-projector inlays visible on fingernails. Wearing eclectic layered fashion mixing unexpected colors and metallics, seated in meditative cross-legged position. Direct, unsettling gaze. GLMZ, moody atmospheric lighting catching the bioluminescent elements and refractive eye implants, dimly lit fortune-teller aesthetic, neon undertones, contemplative mood, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 48.0,
-    "Hispanic/Latin American": 36.6,
-    "East Asian": 15.4
+    "East Asian": 63.1,
+    "South Asian": 29.5,
+    "Southeast Asian": 7.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 53.8
+      },
+      "Chinese": {
+        "Cantonese": 9.3
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 20,
+        "Sinhalese": 7.4
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1.9,
+        "Sindhi": 0.2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 7.4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cf7069bc48c46e8b607b01",
   "type": "character",
-  "name": "Mika Boateng",
+  "name": "Mika Deshpande",
   "aliases": [
     "Cai",
     "Glassface"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Pilsen Veil, operates across Mexicantown Libre and Bronzeline, near Halsted and Chicago Ave",
-  "description": "Caio is lean and tall with warm brown skin, prominent cheekbones inherited from his Samoan grandmother, and irises modified to project a faint geometric grid pattern over whatever he is looking at — a functional geneware mod he uses to pre-visualize compositions on surfaces before he paints them. He wears his hair in loose, shoulder-length locs dyed in shifting thermal-reactive pigments that bleed between rust red and pale gold depending on the ambient temperature. A faint scarring pattern across his left cheek from a Ferrogate Transit security incident two years ago has become, in the Pilsen Veil community, something close to a badge. He tends to dress in utilitarian layers, always with a projector harness across his chest that strangers occasionally mistake for a weapon rig.\n\nHis murals are enormous, illegal, and technically staggering — layered holographic installations projected onto building surfaces that interact with natural light and viewer movement, showing different images at different times of day or from different angles. His most celebrated piece, a three-block-long work on the Bronzeline overpass called 'What the Lake Remembers,' depicts the drowned geography of pre-megacity Chicago in a way that causes viewers to involuntarily slow down and look back. He has a hot, impatient creative energy and a chip on his shoulder about corponation-sponsored public art that can make him combative in conversation.",
+  "description": "Mika Deshpande is lean and tall with warm brown skin, prominent cheekbones inherited from his Samoan grandmother, and irises modified to project a faint geometric grid pattern over whatever he is looking at — a functional geneware mod he uses to pre-visualize compositions on surfaces before he paints them. He wears his hair in loose, shoulder-length locs dyed in shifting thermal-reactive pigments that bleed between rust red and pale gold depending on the ambient temperature. A faint scarring pattern across his left cheek from a Ferrogate Transit security incident two years ago has become, in the Pilsen Veil community, something close to a badge. He tends to dress in utilitarian layers, always with a projector harness across his chest that strangers occasionally mistake for a weapon rig.\n\nHis murals are enormous, illegal, and technically staggering — layered holographic installations projected onto building surfaces that interact with natural light and viewer movement, showing different images at different times of day or from different angles. His most celebrated piece, a three-block-long work on the Bronzeline overpass called 'What the Lake Remembers,' depicts the drowned geography of pre-megacity Chicago in a way that causes viewers to involuntarily slow down and look back. He has a hot, impatient creative energy and a chip on his shoulder about corponation-sponsored public art that can make him combative in conversation.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -175,7 +175,7 @@
     "Brawler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,39 +231,16 @@
     "Grandmother",
     "Bronzeline",
     "Parliament",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Stratum",
+    "Chicago",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
     "The Pale Mile",
-    "Rust",
-    "Gold",
-    "Chicago",
-    "Arcturus Defense Solutions Proprioceptive Lattice Sleeve",
-    "BLACKWATER",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible VG-7 'Bastion'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Patient Zero",
-    "Philibert Mwangi-Djordjevic",
-    "Rongo Delgado-Opoku",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "SynapTech AromaVeil Olfactory Filter",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Peninsula",
-    "Tshiamo Vukić-Arellano",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African and Middle Eastern blend with minor Southeast Asian ancestry — predominantly East African and Levantine genetic expression. Rich melanin distribution creating warm medium-to-dark brown skin tone with subtle golden undertones; facial structure reflects the broader ancestry mix with defined cheekbones and strong jawline characteristic of both lineages.",
+    "heritage": "South Asian (51.5%) dominant with significant Hispanic/Latin American (32.4%) influence, enriched by North African (8.1%), East Asian (4.8%), and Middle Eastern (3.2%) ancestry. This blend creates pronounced South Asian facial structure with warm, golden-olive skin tone enhanced by Hispanic/Latin American melanin richness, subtle North African cheekbone prominence, and minimal East Asian eye placement characteristics. The genetic expression is distinctly warm-toned and sun-responsive.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lean and angular with defined shoulders and forearms; the build of someone who climbs scaffolding and works overhead. Minimal body fat, wiry muscle density.",
@@ -271,8 +248,8 @@
     "hair_style": "Shoulder-length locs, loosely bound, asymmetrical; pigment creates a lived-in, slightly wild appearance",
     "hair_length": "Long",
     "eye_color": "Deep brown with augmented geometric grid pattern overlaid on the iris — faint luminescence when active, grid intensifies when he focuses on surfaces for composition planning",
-    "skin_tone": "Warm medium-to-dark brown with golden undertones; rich melanin expression from Sub-Saharan and Middle Eastern ancestry creating even, complex depth across the face and body",
-    "complexion": "Sharp, prominent cheekbones with strong jawline; clean-shaven or sparse facial hair; faint scarring pattern across left cheek — pale, fine-lined traces from a Ferrogate Transit security incident two years prior, now a recognized marker in Pilsen Veil community",
+    "skin_tone": "Warm medium-to-deep brown with rich golden and olive undertones; the melanin depth reflects strong South Asian and Hispanic/Latin American ancestry with subtle warm radiance in cheeks and temples, creating complex luminosity across face and body",
+    "complexion": "Strong South Asian and Hispanic cheekbone structure with prominent definition; broad jawline reflecting the ancestry blend; clean-shaven or sparse facial hair; faint scarring pattern across left cheek — pale, fine-lined traces from a Ferrogate Transit security incident two years prior, now a recognized marker in Pilsen Veil community",
     "distinguishing_marks": [
       "Faint scarring pattern across left cheek from Ferrogate Transit incident, approximately 8cm in length, pale and linear, gives the appearance of intentional ritualism or acceptance",
       "Thermal-reactive hair pigment creates a constantly shifting visual signature"
@@ -281,14 +258,63 @@
     "posture_movement": "Restless energy; fidgets with harness straps when thinking. Moves with practiced verticality — comfortable on scaffolding and rooftops. Leans forward in conversation when engaged, leans back when dismissive. Eyes constantly scan surfaces and walls. Walks with slight impatience, as if the city is moving too slowly around him.",
     "clothing_style": "Utilitarian layers in muted Tier 4 streetwear — charcoal compression shirt under an oversized, oil-stained grey utility jacket with multiple pockets and cable loops. Cargo pants in weathered black synthetic with paint splatters and thermal burns. Reinforced climbing boots, scuffed. Minimal jewelry except a worn brass lighter he spins obsessively. Occasionally sports a sleeveless denim vest over the harness when preparing for extended outdoor work."
   },
-  "image_prompt": "Mika Boateng, 188cm lean angular man with warm medium-dark brown skin and golden undertones, Sub-Saharan and Middle Eastern heritage blend. Shoulder-length black locs with thermal-reactive pigment shifting rust-red and pale gold, asymmetrically bound. Deep brown eyes with faint geometric grid overlay and subtle luminescence. Sharp cheekbones, clean-shaven with pale scarring across left cheek from past incident. Wearing matte black reinforced polymer projector harness across chest with embedded lens arrays over charcoal compression shirt. Oversized grey oil-stained utility jacket with cable loops, weathered black cargo pants with paint splatters, reinforced climbing boots. Restless posture, fidgeting with harness straps. Standing on urban rooftop or scaffolding in 2220s cyberpunk Great Lakes Metropolitan Zone, neon-lit night setting with cool blue and warm amber lighting. Constantly scanning surfaces. --ar 2:3 --v 6",
+  "image_prompt": "Mika Deshpande, 188cm lean angular neo-noir in 2226 GLMZ, warm medium-brown skin with golden undertones reflecting South Asian-Hispanic ancestry, sharp defined cheekbones and strong jawline, faint pale scarring across left cheek. Deep brown eyes with glowing augmented geometric grid iris pattern, black shoulder-length locs with thermal-reactive rust-red and gold pigment overlay creating shifting luminescence. Charcoal compression shirt under oversized oil-stained grey utility jacket with cable loops, weathered black cargo pants with paint splatters, scuffed reinforced climbing boots, matte black projector harness across chest with embedded lens arrays. Fidgeting with harness straps, restless energy, eyes scanning urban surfaces. Gritty rooftop or warehouse setting, neo-noir neon ambient lighting casting shadows across scarred cheek, thermal glow catching in reactive hair pigment, moody and focused expression, slightly leaned forward stance, utilitarian streetwear aesthetic, lived-in survival vibe --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 55.8,
-    "Middle Eastern": 40.5,
-    "Southeast Asian": 3.7
+    "South Asian": 51.5,
+    "Hispanic/Latin American": 32.4,
+    "North African": 8.1,
+    "East Asian": 4.8,
+    "Middle Eastern": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 37.4,
+        "Tamil Sri Lankan": 14.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 32.4
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 2.7
+      },
+      "Nile Valley": {
+        "Egyptian": 2.2
+      },
+      "Maghreb": {
+        "Tunisian": 1.5,
+        "Algerian": 1.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 2.3,
+        "Cantonese": 0.5
+      },
+      "Japanese": {
+        "Japanese": 2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 0.6,
+        "Yemeni": 0.2
+      },
+      "Kurdish": {
+        "Kurdish": 2.1
+      },
+      "Persian": {
+        "Iranian": 0.2,
+        "Tajik Persian": 0.1
+      }
+    }
+  }
 }

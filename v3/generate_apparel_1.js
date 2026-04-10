@@ -107,7 +107,7 @@ function randomHex(len) {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Φ — the QUANTA currency symbol, NOT the Greek letter). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle class), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Φ — the QUANTA currency symbol, NOT the Greek letter). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle class), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, wings that don't work). Most people have some degree of augmentation or geneware — clothing must accommodate these body modifications.
 

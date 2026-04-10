@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6297f59b5ee7f14ac3ea3e4",
   "type": "character",
-  "name": "Remi Castañeda-Magnúsdóttir",
+  "name": "Remi Traoré-Magnúsdóttir",
   "aliases": [
     "Ronke Volt",
     "The Candlemaker"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Lakeview Neon, studio above a defunct Ferrogate Transit substation, near Damen and Armitage",
-  "description": "Ibironke is a tall woman with the deliberate stillness of someone who has spent decades bending glass tubes in 2200-degree flame — her movements are economical, almost ceremonial. Her hands are a map of minor burns, the skin on her fingers puckered and shining, and she wears them openly, never covered. She has warm umber skin, close-cropped silver hair she grew out early and refused to dye, and irises she had modified to emit a soft amber glow so she can check tube color balance in the dark without a lamp. A single bioluminescent stripe runs down the left side of her jaw — a gift from her daughter, applied with a gene-brush on Ibironke's forty-first birthday against Ibironke's stated preferences, which softened the moment she saw it.\n\nShe is known in Lakeview Neon and the broader art underground as someone who makes sacred objects that happen to glow. Her installations are not decorative — they are theological arguments rendered in argon and mercury vapor. She has spent the last six years constructing a piece called The Unfinished Choir, a room-sized array of suspended neon tubes tuned to the resonant frequencies she believes correspond to six different E.L.F. signatures she has personally documented. Whether or not the E.L.F.s notice, visitors report feeling watched. She sells smaller pieces to pay rent and guards the Choir with a ferocity that borders on maternal.",
+  "description": "Remi Traoré-Magnúsdóttir is a tall woman with the deliberate stillness of someone who has spent decades bending glass tubes in 2200-degree flame — her movements are economical, almost ceremonial. Her hands are a map of minor burns, the skin on her fingers puckered and shining, and she wears them openly, never covered. She has warm umber skin, close-cropped silver hair she grew out early and refused to dye, and irises she had modified to emit a soft amber glow so she can check tube color balance in the dark without a lamp. A single bioluminescent stripe runs down the left side of her jaw — a gift from her daughter, applied with a gene-brush on Remi Traoré-Magnúsdóttir's forty-first birthday against Remi Traoré-Magnúsdóttir's stated preferences, which softened the moment she saw it.\n\nShe is known in Lakeview Neon and the broader art underground as someone who makes sacred objects that happen to glow. Her installations are not decorative — they are theological arguments rendered in argon and mercury vapor. She has spent the last six years constructing a piece called The Unfinished Choir, a room-sized array of suspended neon tubes tuned to the resonant frequencies she believes correspond to six different E.L.F. signatures she has personally documented. Whether or not the E.L.F.s notice, visitors report feeling watched. She sells smaller pieces to pay rent and guards the Choir with a ferocity that borders on maternal.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -154,7 +154,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,35 +174,20 @@
     "The Unfinished Theorem",
     "The Neon Choir",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Aslan Vasquez-Chatterjee",
+    "Noir Dining",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pure Hand",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Iron Choir",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Handed",
     "Glass",
-    "Nightlight",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Flicker",
-    "Kairos",
-    "Noir Dining",
-    "Pneumatic Transit Capsule",
-    "Slagworks Industrial",
-    "TESSERA TX-12 'Chorus'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Heritage Vault",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Moth & Flame",
+    "The Pure Hand",
+    "The Iron Choir",
+    "Nightlight"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (53%) with Southeast Asian (39.5%) and Eastern European (7.5%) ancestry — a striking blend creating warm olive-bronze undertones with subtle Southeast Asian facial structure softness combined with Latin American prominence in cheekbones and jaw definition",
+    "heritage": "East Asian (36.6%), Southeast Asian (27.2%), Sub-Saharan African (24.3%), and Hispanic/Latin American (11.9%) ancestry — a striking global blend. The East and Southeast Asian ancestry dominates her facial structure with angular cheekbones and deep-set eyes, while Sub-Saharan African heritage contributes pronounced jaw definition and facial width. The Hispanic/Latin American component enriches her overall skin depth and warmth.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Lean and sinewy, with the efficient musculature of someone who has spent four decades working overhead in controlled heat. Shoulders broad from repetitive precise movements; posture naturally upright from balancing glass tubes.",
@@ -210,8 +195,8 @@
     "hair_style": "Close-cropped, textured, with an asymmetrical fade on the left side that reveals the jaw augmentation",
     "hair_length": "Short",
     "eye_color": "Amber-glow modified irises; warm brown beneath the bioluminescent tint",
-    "skin_tone": "Warm olive-bronze, sun-deepened from studio work near high-temperature glass — the Southeast Asian and Hispanic blend creating a distinctive matte finish with subtle golden undertones",
-    "complexion": "Angular face with high pronounced cheekbones reflecting Southeast Asian structure, deep-set eyes, minimal grooming beyond essential cleanliness. Skin shows fine lines around eyes and mouth from decades of precision work and squinting into flame. No makeup. Expression often distant, as though listening to something others cannot hear.",
+    "skin_tone": "Deep warm bronze with golden undertones, richly melanated from both Sub-Saharan African and East/Southeast Asian ancestry, further sun-deepened from studio work near high-temperature glass — creating a matte finish with luminous warmth",
+    "complexion": "Angular face with high pronounced cheekbones reflecting East and Southeast Asian structure combined with broader facial width from Sub-Saharan African heritage, deep-set eyes, minimal grooming beyond essential cleanliness. Skin shows fine lines around eyes and mouth from decades of precision work and squinting into flame. No makeup. Expression often distant, as though listening to something others cannot hear.",
     "distinguishing_marks": [
       "Puckered burn scars across the dorsal surface of both hands, concentrated on fingertips and palms — the scars shine with a thin layer of heat-resistant dermis overlay, creating an uneven lustrous sheen.",
       "Thin bioluminescent stripe running from left cheekbone to left jawline, emitting a soft steady amber-white glow — approximately 3mm wide, applied via geneware.",
@@ -222,14 +207,55 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Hands held slightly forward, palms open, as though always ready to steady a tube or adjust a fixture. Head tilts often to the left, perhaps to better see with the glowing irises. When listening, she goes very still; when working, she enters a near-meditative state where her entire body becomes an instrument for precision. She rarely gestures when speaking.",
     "clothing_style": "Tier 3 working artist aesthetic. Usually wears fire-resistant canvas work aprons in charcoal gray or black over fitted long-sleeve shirts (synthfiber blend, dark colors to hide burns). Loose tapered trousers in natural cotton or canvas, cuffed at the ankles, with reinforced pockets. Worn leather steel-toed boots, scuffed and repaired many times. A single piece of jewelry: a thin bracelet of fused glass scraps from her early work, worn on the right wrist. No corporate branding. Occasionally a long linen coat in cream or gray over everything when traveling through Tier 1 areas — a concession to blending in, worn with obvious reluctance."
   },
-  "image_prompt": "Remi Castañeda-Magnúsdóttir, 183cm tall lean glasswork artist, olive-bronze skin with Southeast Asian cheekbone prominence and Hispanic warmth, silver-white close-cropped asymmetrical hair, cyberpunk 2226. Warm amber bioluminescent glowing irises with soft steady glow running from left cheekbone to jawline via geneware. Distinctive heat-resistant dermis overlay on both scarred hands with pearlescent sheen, puckered burn scars, deep calluses. Angular face with high cheekbones, fine lines from decades of precision work, distant expression. Wearing charcoal fire-resistant canvas work apron over dark synthfiber long-sleeve fitted shirt, loose tapered cuffed trousers in natural canvas, worn leather steel-toed boots. Fused glass scrap bracelet on right wrist. Posture upright and economical, hands slightly forward ready to work. Studio lighting reflecting off bioluminescent elements, Great Lakes Metropolitan Zone industrial glasswork studio setting, warm glow from flame-work nearby, contemplative meditative mood, cyberpunk aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Remi Traoré-Magnúsdóttir, 183cm tall lean artist with deep bronze skin and golden undertones blending East Asian, Southeast Asian, Sub-Saharan African, and Hispanic ancestry. Silver-white close-cropped asymmetrical hair revealing a thin glowing amber-white bioluminescent stripe running from left cheekbone to jawline. Angular face with high pronounced cheekbones, deep-set amber-glowing modified irises that emit soft bioluminescence in low light, fine lines around eyes from decades of precision glasswork. Puckered heat-resistant burn scars across both hands with lustrous pearlescent dermis overlay, smaller circular burn marks on forearms. Wears charcoal gray fire-resistant work apron over dark synthfiber long-sleeve shirt, loose tapered canvas trousers cuffed at ankles, worn leather steel-toed boots. Thin fused glass scrap bracelet on right wrist. Posture deliberate and economical, hands held slightly forward palms open, head tilted left, distant listening expression. GLMZ Great Lakes Metropolitan Zone, studio lighting casting warm amber light across scarred hands, precise and meditative mood, dark background emphasizing glowing irises and jaw stripe --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 53.0,
-    "Southeast Asian": 39.5,
-    "Eastern European": 7.5
+    "East Asian": 36.6,
+    "Southeast Asian": 27.2,
+    "Sub-Saharan African": 24.3,
+    "Hispanic/Latin American": 11.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 22.3
+      },
+      "Japanese": {
+        "Japanese": 14.3
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 19.2
+      },
+      "Filipino": {
+        "Waray": 2.9,
+        "Bicolano": 0.9
+      },
+      "Laotian": {
+        "Laotian": 4.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 24.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 0.1,
+        "Salvadoran": 8.7
+      },
+      "Mexican": {
+        "Mexican": 2.1
+      },
+      "Caribbean": {
+        "Dominican": 0.4,
+        "Cuban": 0.6
+      }
+    }
+  }
 }

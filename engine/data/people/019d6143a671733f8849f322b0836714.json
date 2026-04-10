@@ -1,7 +1,7 @@
 {
   "id": "019d6143a671733f8849f322b0836714",
   "type": "character",
-  "name": "Ifeanyi Olofsson-Karimov",
+  "name": "Wren Haddad-Mwangi",
   "aliases": [
     "Blight",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Chicago Ave",
-  "description": "Nurlan Vega-Acheampong is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 33, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Nurlan Vega-Acheampong describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Wren Haddad-Mwangi is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 33, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Wren Haddad-Mwangi describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.78,
@@ -261,7 +261,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,33 +281,13 @@
   "related_entities": [
     "Adaptive Camouflage Skin",
     "The Narrows Compact",
-    "Burden of Longitude",
-    "Slagworks Industrial",
     "Chicago",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Combat Falchion CF-5 'Cleaver'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Oumarou Svec-Ranginui",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Photonic Stress Fracture Pistol PSFP-3 'Cleaver'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "Volkov-Saito Precision VS-40 'Magistrate'"
+    "Burden of Longitude",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed Northern European, Sub-Saharan African, Central Asian, and South Asian ancestry (Ubiquitous Diaspora blend). Genetic markers show dominant Scandinavian and West African heritage with Central Asian and South Asian secondary contributions, creating a complex phenotype reflecting the name Olofsson-Karimov.",
+    "heritage": "Mixed Middle Eastern, East Asian, Hispanic/Latin American, and Sub-Saharan African ancestry (Ubiquitous Diaspora blend). Genetic markers show dominant Middle Eastern heritage (50.1%) with significant East Asian (21.8%), Hispanic/Latin American (14.8%), and Sub-Saharan African (13.3%) contributions. This combination creates a complex phenotype with warm, olive-brown skin carrying golden and amber undertones, facial structure marked by high cheekbones with subtle fullness from East Asian and Middle Eastern genetics, a defined nose bridge softened by East Asian structure, and a prominent jaw. The blend produces an even, warm complexion with deep undertone that reflects centuries of global mixing.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density — compact power rather than bulk. Developed through years of close-quarters combat training in confined spaces. No excess fat; functional mass.",
@@ -315,8 +295,8 @@
     "hair_style": "Practical fade, maintained every two weeks. No ornamentation.",
     "hair_length": "Short",
     "eye_color": "Augmented — chrome iris rings with dark pupils; thermal and low-light overlays visible as faint luminescent depth behind the iris",
-    "skin_tone": "Medium-toned warm brown with golden-tan undertones — the result of Northern European paleness tempered by robust Sub-Saharan and South Asian melanin inheritance, creating an even, warm complexion that neither burns nor ashen easily",
-    "complexion": "Strong, defined facial structure reflecting mixed ancestry: high cheekbones with subtle fullness from South Asian genetics, broad nose bridge characteristic of Northern European-African blend, prominent jaw. Clean, scarred face with minimal grooming beyond function — no cosmetics, no softening of features. Skin shows the wear of street work: fine white lines at the corners of eyes, a thin scar along left cheekbone (2cm, pale). Expression habitually neutral, controlled.",
+    "skin_tone": "Warm olive-brown with golden and amber undertones — the result of Middle Eastern and East Asian genetics blended with Hispanic/Latin American and Sub-Saharan African melanin inheritance, creating an even, deeply warm complexion with rich undertone that neither burns nor ashens easily",
+    "complexion": "Strong, defined facial structure reflecting mixed ancestry: high cheekbones with subtle fullness characteristic of East Asian and Middle Eastern genetics, defined nose bridge reflecting Middle Eastern heritage softened by East Asian structure, prominent jaw with subtle widening from Sub-Saharan African genetics. Clean, scarred face with minimal grooming beyond function — no cosmetics, no softening of features. Skin shows the wear of street work: fine white lines at the corners of eyes, a thin scar along left cheekbone (2cm, pale). Expression habitually neutral, controlled.",
     "distinguishing_marks": [
       "Thin white scar running from left cheekbone toward jawline (approximately 2cm), acquired during early street work",
       "Faint chromatic iridescence visible across shoulders and upper chest where dermal camouflage cells sit beneath skin — shifts subtly between deep blue and green under direct light",
@@ -326,15 +306,41 @@
     "posture_movement": "Economical, controlled. Stands with weight evenly distributed — ready to move in any direction without telegraph. Walks with purpose and minimal wasted motion. Eyes track threats constantly. Default expression is careful neutrality. Hands at rest, not fidgeting.",
     "clothing_style": "Tier 3-4 street samurai practical. Black tactical cargo pants with deep pockets and reinforced seams. Form-fitting black synthetic polymer shirt showing the chromatic shimmer of dermal augmentation. Over this, a charcoal-gray reinforced jacket with articulated panels and integrated ammunition storage — no corporate logos, clean lines, built for function. Steel-toed combat boots, well-maintained. Minimal jewelry — a chrome knuckle duster on right hand, functional rather than decorative."
   },
-  "image_prompt": "Ifeanyi Olofsson-Karimov, 178cm tall mixed-heritage street samurai in 2226 Great Lakes Metropolitan Zone. Medium-warm brown skin tone with golden undertones, strong defined cheekbones and broad nose, pale scar along left jawline, neutral controlled expression. Short dark brown fade haircut. Augmented chrome iris rings with faint luminescence. Dermal camouflage visible as subtle blue-green chromatic shimmer across shoulders, upper chest, forearms shifting with light. Muscular compact build, economical posture ready for movement. Wearing black tactical cargo pants, form-fitting black polymer shirt revealing dermal shimmer, charcoal-gray reinforced jacket with articulated panels, steel-toed combat boots. Chrome knuckle duster on right hand. Callused hands. Cyberpunk dystopian indoor setting, neon underglow lighting, shadows and cool light casting across face and augmentations. Photorealistic, street-level cyberpunk aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "GLMZ street samurai Wren Haddad-Mwangi, 178cm tall, heavily muscled compact frame. Warm olive-brown skin with golden amber undertones, reflecting blended Middle Eastern, East Asian, Hispanic, and Sub-Saharan African heritage. Strong defined cheekbones, defined nose bridge, prominent jaw. Short dark brown fade haircut. Augmented chrome iris rings with faint luminescent glow, visible thin white scar on left cheekbone. Chromatic dermal camouflage shimmer shifting blue-teal-green across shoulders and chest. Black tactical cargo pants, form-fitting black polymer shirt, charcoal-gray reinforced jacket with articulated panels, steel-toed combat boots. Chrome knuckle duster on right hand. Economical controlled posture, neutral expression, eyes tracking with street-honed awareness. Minimal wasted motion. Neon-lit urban alleyway, moody atmospheric lighting, gritty Great Lakes Metropolitan Zone setting, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 50.0,
-    "Sub-Saharan African": 23.5,
-    "Central Asian": 16.0,
-    "South Asian": 10.5
+    "Middle Eastern": 50.1,
+    "East Asian": 21.8,
+    "Hispanic/Latin American": 14.8,
+    "Sub-Saharan African": 13.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 50.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6
+      },
+      "Chinese": {
+        "Shanghainese": 15.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 12.4,
+        "Salvadoran": 2.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 13.3
+      }
+    }
+  }
 }

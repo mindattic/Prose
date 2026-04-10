@@ -115,7 +115,7 @@ async function callWithRetry(system, user, maxTokens, retries = 2) {
   }
 }
 
-const WORLD = `Setting: Meridian 88, year 2200. Great Lakes megacity corridor (Chicago-Milwaukee). Currency: Φ. The Diaspora (internet successor) is ubiquitous. Major corponations: Axiom Industries, Tessera Corporation, Sterling-Nakamura, Zheng-Dao Bioelectric, Arcturus Defense Solutions, Ringo Heavy Industries, Vespid Dynamics, Carrion Logistics, Helix Biosystems, Palladian Group, Ferrogate Security. E.L.F.s (Emergent Lifeforms, rogue AIs). Synthetic personhood is a civil rights issue. Multicultural future, names from everywhere globally. BCI technology ubiquitous. Tiers 1-5 socioeconomic strata. The Shelf is lowest, Old Harbor/Lakeshore mid-tier, the Spire is top.`;
+const WORLD = `Setting: GLMZ, year 2200. Great Lakes megacity corridor (Chicago-Milwaukee). Currency: Φ. The Diaspora (internet successor) is ubiquitous. Major corponations: Axiom Industries, Tessera Corporation, Sterling-Nakamura, Zheng-Dao Bioelectric, Arcturus Defense Solutions, Ringo Heavy Industries, Vespid Dynamics, Carrion Logistics, Helix Biosystems, Palladian Group, Ferrogate Security. E.L.F.s (Emergent Lifeforms, rogue AIs). Synthetic personhood is a civil rights issue. Multicultural future, names from everywhere globally. BCI technology ubiquitous. Tiers 1-5 socioeconomic strata. The Shelf is lowest, Old Harbor/Lakeshore mid-tier, the Spire is top.`;
 
 // ═══════════════════════════════════════════════════════════
 // GENERIC BATCH GENERATOR
@@ -172,7 +172,7 @@ const REPOS = {
     batchSize: 2,
     maxTokens: 6000,
     target: 100,
-    systemPrompt: (n) => `${WORLD}\n\nGenerate a JSON array of ${n} place entries. Schema:\n{"type":"place","name":"...","aliases":[2-3],"description":"2 paragraphs 100-200 words","atmosphere":{"sights":[3],"sounds":[3],"smells":[3],"feel":"2-3 sentences"},"demographics":"1-2 sentences","economy":"1-2 sentences","power_structure":"1-2 sentences","dangers":[3],"opportunities":[3],"story_hooks":[2 hooks, 2-3 sentences each],"frequented_by":[3-4],"notable_locations":[],"connections":{"adjacent_to":[2-3]},"coordinates":{"lat":42-43,"lng":-87 to -88}}\nMix: Meridian 88 neighborhoods, underworld levels, Lake Michigan locations, suburban ruins, industrial zones. Keep CONCISE.`,
+    systemPrompt: (n) => `${WORLD}\n\nGenerate a JSON array of ${n} place entries. Schema:\n{"type":"place","name":"...","aliases":[2-3],"description":"2 paragraphs 100-200 words","atmosphere":{"sights":[3],"sounds":[3],"smells":[3],"feel":"2-3 sentences"},"demographics":"1-2 sentences","economy":"1-2 sentences","power_structure":"1-2 sentences","dangers":[3],"opportunities":[3],"story_hooks":[2 hooks, 2-3 sentences each],"frequented_by":[3-4],"notable_locations":[],"connections":{"adjacent_to":[2-3]},"coordinates":{"lat":42-43,"lng":-87 to -88}}\nMix: GLMZ neighborhoods, underworld levels, Lake Michigan locations, suburban ruins, industrial zones. Keep CONCISE.`,
     userPromptFn: (existing, n) => `DO NOT duplicate: ${existing.slice(-60).join(', ')}\n\n${n} NEW places. ONLY JSON array.`
   },
 

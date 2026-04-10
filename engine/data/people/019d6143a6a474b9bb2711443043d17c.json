@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a474b9bb2711443043d17c",
   "type": "character",
-  "name": "Sterling Bautista",
+  "name": "Sterling Saechao",
   "aliases": [
     "Switchback Two",
     "The Wall",
@@ -14,7 +14,7 @@
   "age": 23,
   "status": "active",
   "location": "The Shelf — rents a room in a co-op housing block four buildings from Jinx's squat, near Halsted and Chicago Ave",
-  "description": "Puck Nygaard is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can't match Jinx's raw speed — nobody on the Shelf can — but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Shelf.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a Shelf seamstress who paid for his first augmentation — a basic reflex enhancer — by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn't cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier — six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid on the Shelf and into Milwaukee Core. His face is open, honest, and perpetually a little worried — the face of someone who sees the problems that the enthusiastic people don't.",
+  "description": "Sterling Saechao is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can't match Jinx's raw speed — nobody on the Shelf can — but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Shelf.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a Shelf seamstress who paid for his first augmentation — a basic reflex enhancer — by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn't cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier — six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid on the Shelf and into Milwaukee Core. His face is open, honest, and perpetually a little worried — the face of someone who sees the problems that the enthusiastic people don't.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -178,7 +178,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -192,45 +192,28 @@
   "registered_firearms": [],
   "related_entities": [
     "Lazarus Pharmaceuticals NeuroPrecision Surgical BCI",
+    "Switchback",
     "VitaCore SteadyField Precision Motor Implant",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
     "The Shelf",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Neuromorphic Pressure Cestus",
     "Ringo DV-4 'Courier'",
-    "The Milwaukee Core",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Exo-Runner Frame",
+    "VitaCore FlowGuard Hemodynamic Regulator",
     "Arcturus KS-7 'Nursery'",
-    "Brecken Yılmaz-Osei",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Mika Sorel",
-    "Narrowcast",
-    "NeuralPath ClearRun Focus Regulation Implant",
-    "Nnamdi Ostrowski-Faletolu",
-    "Prophet",
-    "Slagworks Industrial",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "TESSERA ES-4 'Perimeter'",
-    "The Pure Hand",
-    "Umbraline PhoneShell PS-X 'Last Call'",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Neuromorphic Pressure Cestus",
+    "Honest Burger"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed Latin American, Eastern European, and East Asian ancestry (49.8% Hispanic/Latin American, 22.4% Eastern European, 10.7% East Asian, 10.6% Indigenous American, 6.5% Northern European). The combination creates a complex phenotype: warm golden-brown undertones from Latin American and Indigenous ancestry blend with Eastern European bone structure and subtle East Asian eye shape, resulting in a distinctly cosmopolitan appearance rather than any single regional type.",
+    "heritage": "Predominantly Southeast Asian ancestry (70.8%) with significant Sub-Saharan African (12.2%) and smaller Northern European (6.8%), Middle Eastern (5.7%), Hispanic/Latin American (3.2%), and Eastern European (1.3%) admixture. The genetic combination creates warm medium-to-deep brown skin tones with subtle golden and reddish undertones reflecting the diverse ancestry mix. Southeast Asian facial structure dominates with defined cheekbones and jawline, enhanced by the Sub-Saharan African contribution which adds fullness to the lips and cheeks, warmth and richness to complexion. Northern European ancestry contributes subtle refinement to bone structure. Middle Eastern heritage adds depth to eye placement and brow definition. The overall phenotype is distinctly cosmopolitan, reflecting the Ubiquitous Diaspora rather than any single regional type.",
     "height_cm": 185,
     "weight_kg": 82,
     "build": "Tall and broad-shouldered with a runner's lean musculature. Chest and shoulders are developed from years of courier work; legs are particularly defined from high-impact running. Not bulky — built for endurance and distance rather than raw strength.",
     "hair_color": "Dark brown to nearly black, with subtle warm undertones, naturally lighter at the tips from sun exposure",
     "hair_style": "Kept short and practical — swept back from his face, low maintenance. Often has a slight tousle from helmet wear.",
     "hair_length": "Short",
-    "eye_color": "Deep brown with an alert, attentive quality",
-    "skin_tone": "Warm golden-brown base with even medium depth; sun-darkened on face and forearms from outdoor running routes. The complexion reflects Latin American and Indigenous ancestry with subtle Eastern European undertones in the deeper skin layers.",
-    "complexion": "Angular face with pronounced cheekbones and a defined jawline — features that blend Eastern European structure with Latin American and East Asian characteristics. Slight perpetual furrow between his eyebrows — the look of someone who worries about details others miss. Clean-shaven or with a day or two of stubble. Minimal scarring on the face; skin shows minor abrasions and healing marks from contact work.",
+    "eye_color": "Deep warm brown with an alert, attentive quality",
+    "skin_tone": "Warm medium-to-deep brown base with golden and reddish undertones reflecting Southeast Asian, Sub-Saharan African, and Middle Eastern ancestry; sun-darkened on face and forearms from outdoor running routes. Complexion has rich, warm undertones with subtle depth variation from layered genetic heritage.",
+    "complexion": "Angular face with pronounced cheekbones and full, defined jawline — Southeast Asian structure dominant with Sub-Saharan African fullness in cheeks and lip definition, creating warm, expressive features. Slight perpetual furrow between his eyebrows — the look of someone who worries about details others miss. Clean-shaven or with a day or two of stubble. Minimal scarring on the face; skin shows minor abrasions and healing marks from contact work.",
     "distinguishing_marks": [
       "Linear scar along his left temple, approximately 2cm long — impact wound from a surveillance pole during a route miscalculation at age 19",
       "Network of thin scars across both knees, clustered and radiating from the joint — surgical scarring from reinforcement installation and accumulated impact trauma",
@@ -241,16 +224,78 @@
     "posture_movement": "Stands with weight slightly forward, ready to move. Walks with economy of motion — no wasted energy. When running, his gait is rhythmic and measured rather than explosive; he moves like someone counting breaths. Hands are usually occupied — checking a device, reviewing routes, or fidgeting slightly. Makes direct eye contact but often glances away to think through logistics. Shoulders carry visible tension; jaw often slightly clenched.",
     "clothing_style": "Tier 4 working-class practicality. Wears reinforced cargo pants (usually dark gray or black synthetic blend) with multiple pockets for tools, route notes, and equipment. Base layers are durable — moisture-wicking synthetics in muted colors. Over-layers vary: lightweight running jacket with reflective trim for daytime runs; heavier insulated jacket for night work. Worn but maintained boots with good ankle support — scuffed leather or synthetic, well-broken-in. His gear is functional and replaced based on wear, not style. No corporate branding. A faded fabric band around his left wrist — possibly a crew identifier or personal keepsake."
   },
-  "image_prompt": "Sterling Bautista, mixed-heritage courier in cyberpunk 2226 Great Lakes Metropolitan Zone. 185cm tall, lean muscular build refined by years of distance running. Warm golden-brown skin tone, deep brown eyes with alert intensity, short dark brown hair swept back. Angular face with pronounced cheekbones blending Eastern European structure with Latin American and East Asian features. Linear temple scar, slight perpetual furrow between eyebrows. Subdermal blue-green route-mapping display glowing faintly on left forearm. Practical Tier 4 workwear: dark synthetic cargo pants with multiple pockets, moisture-wicking base layer, lightweight reflective running jacket, scuffed well-worn boots with ankle support. Faded fabric band around left wrist. Posture slightly forward, weight ready to move. Standing in neon-lit urban corridor of GLMZ with holographic route markers reflecting off wet pavement. Shoulders carry tension, expression shows focus and logistics-oriented intensity. Moody cyberpunk lighting with cool blues and warm amber accent glow from augmentations. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Saechao, lean tall courier with warm medium-deep brown skin, Southeast Asian and Sub-Saharan African features, defined cheekbones and jawline, deep warm brown alert eyes, short dark tousled hair with sun-lightened tips. Linear temple scar, faint burn marks on right knuckles, subdermal blue-green route-mapping grid glowing faintly on left forearm. Wearing dark reinforced cargo pants, moisture-wicking base layer, lightweight reflective running jacket, scuffed ankle boots. Standing forward-ready posture with visible shoulder tension, slight jaw clench. GLMZ Great Lakes Metropolitan Zone, neon-lit nighttime urban route, rain-slicked pavement, soft blue-green biolume accent lighting reflecting off wet surfaces, running between towering data-centers and transit infrastructure, motion blur suggesting speed, gritty realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 49.8,
-    "Eastern European": 22.4,
-    "East Asian": 10.7,
-    "Indigenous American": 10.6,
-    "Northern European": 6.5
+    "Southeast Asian": 70.8,
+    "Sub-Saharan African": 12.2,
+    "Northern European": 6.8,
+    "Middle Eastern": 5.7,
+    "Hispanic/Latin American": 3.2,
+    "Eastern European": 1.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 70.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 7.7,
+        "South African": 0.6
+      },
+      "East African": {
+        "Ethiopian": 0.7,
+        "Rwandan": 2.4
+      },
+      "Central African": {
+        "Congolese": 0.5,
+        "Cameroonian": 0.3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 3.6,
+        "Welsh": 0.9
+      },
+      "Scandinavian": {
+        "Swedish": 1.6
+      },
+      "Germanic": {
+        "German": 0.7
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 5.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 0.4
+      },
+      "South American": {
+        "Colombian": 1.3
+      },
+      "Mexican": {
+        "Mexican": 1.5
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 0.8
+      },
+      "Slavic East": {
+        "Russian": 0.1,
+        "Ukrainian": 0.1
+      },
+      "Slavic West": {
+        "Polish": 0.3
+      }
+    }
+  }
 }

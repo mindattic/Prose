@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b173aa8954b7f64f062c0e",
   "type": "character",
-  "name": "Thora Villalobos-Bergqvist",
+  "name": "Rowan Villalobos-Kimura",
   "aliases": [
     "Rev",
     "The Cartographer"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Milwaukee and Damen",
-  "description": "Revaz is a lean, angular man of Georgian and South Indian-Kenyan descent, with warm olive-brown skin, a sharp jaw perpetually shadowed with stubble, and dark eyes fitted with patterned irises — a helix of deep violet spiraling toward the pupil, which he claims help him read documents faster but which are mostly just something to look at when people are looking at him. He dresses in deliberately forgettable layers: grey over grey, muted enough to vanish in a crowd, with the one vanity of a handmade brass collar pin in the shape of a cartographer's compass. He keeps his data tools in a modified food vendor's tray he wheels through the Narrows, looking at a glance like a snack cart.\n\nRevaz is clever in the specific, anxious way of people who got out of a bad situation through intelligence alone and haven't yet decided whether they're safe. He is charming in short bursts, funny in a dry, deflecting way, and quietly reads every room for threat vectors before he's finished his first sentence. He takes professional pride in the quality of his forgeries — considers bad ID work a moral failing — and holds himself to a standard most of his customers couldn't distinguish from a real document.",
+  "description": "Rowan Villalobos-Kimura is a lean, angular man of Georgian and South Indian-Kenyan descent, with warm olive-brown skin, a sharp jaw perpetually shadowed with stubble, and dark eyes fitted with patterned irises — a helix of deep violet spiraling toward the pupil, which he claims help him read documents faster but which are mostly just something to look at when people are looking at him. He dresses in deliberately forgettable layers: grey over grey, muted enough to vanish in a crowd, with the one vanity of a handmade brass collar pin in the shape of a cartographer's compass. He keeps his data tools in a modified food vendor's tray he wheels through the Narrows, looking at a glance like a snack cart.\n\nRowan Villalobos-Kimura is clever in the specific, anxious way of people who got out of a bad situation through intelligence alone and haven't yet decided whether they're safe. He is charming in short bursts, funny in a dry, deflecting way, and quietly reads every room for threat vectors before he's finished his first sentence. He takes professional pride in the quality of his forgeries — considers bad ID work a moral failing — and holds himself to a standard most of his customers couldn't distinguish from a real document.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -194,7 +194,7 @@
     "Hustler": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,34 +246,14 @@
     "Cartographer",
     "The Narrows Compact",
     "Zheng-dao Bioelectric",
+    "GLMZ",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
-    "Brass",
-    "The Milwaukee Core",
-    "Chronicle",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Iowan Behemoth — 'Meridian 88'",
-    "Irontide Tidal Energy",
-    "Isadora Mwangi-Thorvaldsen",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "TESSERA TN-1 'Cradle'",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "The Undertow",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Brass"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed Northern European, Hispanic/Latin American, South Asian, East Asian, Pacific Islander, and North African ancestry creating a uniquely blended phenotype: warm honey-bronze skin with subtle golden undertones, suggesting the complex interplay of multiple continental lineages. The facial structure combines Northern European angularity with South Asian fine features and Pacific Islander warmth.",
+    "heritage": "Mixed East Asian (36.8%), Southeast Asian (33.3%), and Hispanic/Latin American (29.9%) ancestry creating a distinctly Pan-Pacific phenotype. The genetic blend produces warm golden-bronze skin with subtle amber undertones, combining East Asian bone structure and sharp facial geometry with Southeast Asian warmth and the softer contours of Hispanic/Latin American features in the lower face and jawline.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, with the economical musculature of someone who moves carefully and deliberately; no excess, all efficiency — a body built for precision work rather than physical presence",
@@ -281,8 +261,8 @@
     "hair_style": "Worn short and deliberately ungroomed, styled to blend rather than stand out",
     "hair_length": "Short",
     "eye_color": "Dark brown with augmented iris pattern: a deep violet helix spiraling inward toward the pupil",
-    "skin_tone": "Warm honey-bronze with golden undertones, the result of blended Northern European, Hispanic, South Asian, East Asian, and North African genetics; complexion suggests someone equally comfortable in temperate and equatorial climates",
-    "complexion": "Sharp, angular jaw perpetually shadowed with two-three days of dark stubble; fine-featured face with high cheekbones reflecting both South Asian and Northern European ancestry; skin condition is clean but pale from indoor work, with the slight strain around eyes of someone who reads extensively in poor light and sleeps poorly",
+    "skin_tone": "Warm golden-bronze with amber undertones, the balanced result of East Asian, Southeast Asian, and Hispanic/Latin American genetic admixture; even melanin distribution reflecting ancestral roots across multiple warm-climate regions, with indoor pallor from extended sedentary work",
+    "complexion": "Sharp, angular jaw with high cheekbones reflecting East and Southeast Asian ancestry, softened slightly through the lower face and chin by Hispanic/Latin American heritage; perpetually shadowed with two-three days of dark stubble. Skin is clean but pale from indoor work, with subtle strain around eyes from extensive reading in poor light and sleep deprivation.",
     "distinguishing_marks": [
       "Faint calluses on right hand fingertips from precision tool work and micro-tremor suppressor implant",
       "Nearly invisible scar along the left inner wrist — old, thin line approximately 3cm long, consistent with previous injury or intervention point for subdermal data-chip"
@@ -291,17 +271,32 @@
     "posture_movement": "Moves with deliberate control and minimal wasted motion; shoulders slightly forward in a habitual posture of guarded attention; head tilts slightly when listening, reading rooms for threat vectors; hands move with practiced precision even during casual gestures; overall carriage suggests someone perpetually aware of exits and sightlines, but performed subtly enough to avoid drawing attention",
     "clothing_style": "Deliberately forgettable layered neutrals: grey on grey, muted tones designed for invisibility in crowds. Worn but well-maintained synthetic blend fabrics typical of Tier 4 working-class wear. One deliberate vanity: a handmade brass collar pin in the shape of a cartographer's compass, suggesting both his care for craft and his need for a small marker of identity. Worn canvas messenger bag across chest, practical and nondescript. No visible gang colors, corporate logos, or tier markers."
   },
-  "image_prompt": "Thora Villalobos-Bergqvist, cyberpunk 2226, androgynous figure with honey-bronze blended ancestry complexion, sharp angular features, dark stubble, short dark brown hair worn deliberately messy. Deep brown eyes with bioluminescent violet helix iris augmentation. Lean 178cm frame with efficient, controlled posture. Wearing layered grey synthetic fabrics, nondescript working-class style, with single brass compass collar pin. Canvas messenger bag across chest. Hands showing micro-tremor suppressor precision work calluses. Standing under cool neon-filtered indoor lighting in Great Lakes Metropolitan Zone setting, subtle threat awareness in posture, minimal wasted movement, deliberate and calculating expression, soft shadows emphasizing angular jaw and high cheekbones. Cyberpunk noir aesthetic, professional infiltrator vibe, almost invisible in crowds. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Villalobos-Kimura, GLMZ, Pan-Asian-Hispanic male, 178cm lean angular frame, warm golden-bronze skin with amber undertones, sharp jawline with 2-day stubble, high cheekbones, dark brown eyes with deep violet helix augmentation pattern, short dark brown hair tousled and ungroomed. Positioned in dim industrial workspace, careful deliberate posture with shoulders slightly forward, hands with visible calluses poised over precision tools, faint scar visible on left inner wrist. Wearing layered grey-on-grey neutral synthetic fabrics, worn canvas messenger bag across chest, brass cartographer's compass collar pin catching sparse overhead light. Indoor fluorescent and cool blue accent lighting, cinematic shadow detail showing faint subcutaneous texture on left palm. Neo-noir neo-noir atmosphere, high-detail portraiture, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 31.8,
-    "Hispanic/Latin American": 19.5,
-    "South Asian": 18.0,
-    "East Asian": 12.1,
-    "Pacific Islander": 9.8,
-    "North African": 8.8
+    "East Asian": 36.8,
+    "Southeast Asian": 33.3,
+    "Hispanic/Latin American": 29.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 36.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 23.7,
+        "Cebuano": 9.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 29.9
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69573c0a9bd1a8c647854f5",
   "type": "character",
-  "name": "Zoya Larsdóttir-Holm-Banerjee",
+  "name": "Ignacio Sepúlveda-Guerrero-Ekwensi",
   "aliases": [
     "Cold Open"
   ],
@@ -87,7 +87,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,33 +103,20 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "The Milwaukee Core",
-    "Ambrosia Fekete-Waiyaki",
-    "Iowan Behemoth — 'Palisade'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA Widow Mk. III",
-    "The Gutter Prophets",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian dominant (48.7%) with East Asian (25.7%), Southeast Asian (13.1%), and Northern European (12.5%) ancestry. Features reflect the complex blend of Indian subcontinent bone structure and coloring with East and Southeast Asian eye shape and skin characteristics, tempered by minimal Northern European influence.",
+    "heritage": "Complex multiethnic ancestry with dominant Latin American and Sub-Saharan African components (37.8% and 24.6% respectively), substantially enriched by Indigenous American heritage (14.4%). North African (12.8%) and East Asian (10.4%) elements add subtle warmth and slight epicanthic variation. Features reflect a striking synthesis: broad Indigenous American facial structure and cheekbones, African-descended depth and projection in the brow ridge, Latin American refinement in overall proportions, with North African warmth in skin undertones and East Asian delicacy in eye shape. A genuinely multifaceted genetic expression with no single heritage dominating the visual result.",
     "height_cm": 183,
     "weight_kg": 79,
     "build": "Lean and angular with underlying muscle density. Years of stress and irregular sleep have carved definition into his frame rather than bulk.",
     "hair_color": "Salt-and-pepper grey, natural",
     "hair_style": "Pulled back into a tight, functional undercut. Sides faded to stubble.",
     "hair_length": "Short",
-    "eye_color": "Deep brown with warm undertones, characteristic of South and East Asian heritage",
-    "skin_tone": "Warm medium-deep olive-brown, reflecting South Asian and Southeast Asian ancestry with subtle East Asian undertones. Weathered by years in the Narrows.",
-    "complexion": "High, prominent cheekbones with East Asian angularity blended with South Asian facial structure. Gaunt face with deep-set eyes. Perpetual five o'clock shadow across a defined jawline. Deep lines around the eyes and mouth suggest constant calculation. Skin shows minor scarring along the left jawline.",
+    "eye_color": "Deep brown with warm undertones, slightly almond-shaped from East Asian ancestry",
+    "skin_tone": "Rich warm brown with olive undertones from blended Latin American, North African, and Indigenous American heritage, deepened by Sub-Saharan African ancestry. Weathered by years in the Narrows.",
+    "complexion": "Strikingly defined facial structure combining broad Indigenous American cheekbones with strong African-descended brow ridge and jaw projection. Latin American refinement softens the overall geometry. Prominent brow ridge with deep-set eyes showing subtle East Asian epicanthic fold. Perpetual five o'clock shadow across a defined jawline. Deep lines around the eyes and mouth suggest constant calculation. Skin shows minor scarring along the left jawline.",
     "distinguishing_marks": [
       "Three parallel burn scars running vertically down the inside of his right forearm, about 8cm long, faded to pale pink",
       "A thin surgical scar behind his left ear, hidden unless head is tilted — suggests subcutaneous implant",
@@ -139,15 +126,65 @@
     "posture_movement": "Economical and controlled. Rarely gestures broadly. Sits with his back to walls. Moves with the patience of someone who has learned that rushing in the Narrows is fatal. Hands remain visible and still when in neutral territory.",
     "clothing_style": "Tier 3-4 practical. Worn but well-maintained synthetic leather jacket over a muted grey thermoweave hoodie. Black cargo pants with reinforced pockets and a concealed thigh rig. Scuffed steel-toe boots. A thin chain bracelet of dull silver or recycled platinum on his left wrist — status marker among fixers. No flashy corpo logos, no gang colors. Dresses to move and to blend."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Zoya Larsdóttir-Holm-Banerjee, 183cm tall androgynous fixer with South Asian-dominant ancestry, warm olive-brown skin, deep-set brown eyes, high cheekbones, salt-and-pepper grey pulled back in tight undercut with faded stubble sides. Gaunt weathered face with deep lines, faint scars on left jaw. Wearing worn synthetic leather jacket over grey thermoweave hoodie, black reinforced cargo pants, scuffed steel-toe boots. Thin dull platinum chain bracelet on left wrist. Geometric black tattoos on knuckles. Subtle mechanical precision in right wrist movement. Economical posture, back against wall, hands visible and still. Dim neon-filtered indoor lighting casting sharp shadows across face. Mood: patient, calculating, dangerous. Great Lakes Metropolitan Zone 2226 setting, noir aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Ignacio Sepúlveda-Guerrero-Ekwensi, 183cm lean angular man with rich warm brown skin, deep-set dark eyes with subtle almond shape, prominent Indigenous American cheekbones and African brow ridge refined by Latin American ancestry. Salt-and-pepper hair pulled back in tight undercut, five o'clock shadow on strong jawline. Worn synthetic leather jacket over grey thermoweave hoodie, black reinforced cargo pants, scuffed steel-toe boots. Thin platinum chain bracelet on left wrist. Pale pink burn scars visible on right forearm. Economical posture, sitting with back to wall, GLMZ, Great Lakes Metropolitan Zone, Narrows district, moody neon-tinged shadows, cool blue and amber lighting, atmospheric noir-neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 48.7,
-    "East Asian": 25.7,
-    "Southeast Asian": 13.1,
-    "Northern European": 12.5
+    "Hispanic/Latin American": 37.8,
+    "Sub-Saharan African": 24.6,
+    "Indigenous American": 14.4,
+    "North African": 12.8,
+    "East Asian": 10.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 16.6,
+        "Dominican": 10.4
+      },
+      "Central American": {
+        "Nicaraguan": 9.7,
+        "Costa Rican": 1.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 24.6
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 8.2
+      },
+      "Mesoamerican": {
+        "Nahua": 2.6,
+        "Mixtec": 0.5
+      },
+      "Andean": {
+        "Quechua": 1.8,
+        "Mapuche": 1.3
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 6.7
+      },
+      "Amazigh": {
+        "Berber": 1.3,
+        "Kabyle": 1.4
+      },
+      "Maghreb": {
+        "Mauritanian": 3.2,
+        "Moroccan": 0.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 8.7,
+        "Fujianese": 1.7
+      }
+    }
+  }
 }

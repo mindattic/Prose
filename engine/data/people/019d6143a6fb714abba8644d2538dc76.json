@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fb714abba8644d2538dc76",
   "type": "character",
-  "name": "Juno Bergqvist-Haddad-Espinoza",
+  "name": "Juno Mukherjee-Raghavan-Quartey",
   "aliases": [
     "Moth",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Kedzie and Division",
-  "description": "Tiare Sjostrom-Kwarteng are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a getaway pilot out of Crucible Square, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Tiare Sjostrom-Kwarteng lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Juno Mukherjee-Raghavan-Quartey are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a getaway pilot out of Crucible Square, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Juno Mukherjee-Raghavan-Quartey lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.73,
@@ -260,7 +260,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Crucible Square",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,28 +273,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
-    "The Shelf",
     "The Nearfield",
-    "Brecken Yılmaz-Osei",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo Corponation Deniable Address Shard",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "The Shelf",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern with significant Southeast Asian admixture, complemented by Hispanic/Latin American heritage and minor Northern European ancestry. The genetic blend manifests in warm, sun-kissed olive undertones across warm mid-brown skin — a sophisticated warmth that reflects the Mediterranean and Levantine ancestry dominant in their genetic code.",
+    "heritage": "South Asian ancestry (70.8%) forms the genetic foundation with warm brown skin reflecting the diversity of the Indian subcontinent. Significantly blended with Sub-Saharan African heritage (21.6%) that deepens the complexion with rich warm undertones and contributes fuller facial structure and lip definition. East Asian ancestry (7.6%) adds subtle refinement to cheekbone prominence and eye shape. The genetic synthesis creates luminous warm brown skin with golden-amber undertones — a sophisticated depth where South Asian warmth meets African richness and East Asian contours.",
     "height_cm": 174,
     "weight_kg": 68,
     "build": "Athletic and lean with functional muscle density — dancer's grace married to fighter's economy of motion. Low body fat, defined shoulders and forearms where the subdermal weapon mounts create subtle ridge-lines beneath the skin.",
@@ -302,8 +288,8 @@
     "hair_style": "Practical undercut — longer on top (swept back), buzzed at sides and nape for helmet clearance",
     "hair_length": "Medium",
     "eye_color": "Warm dark brown, sharp and alert",
-    "skin_tone": "Warm olive-brown complexion with golden undertones, reflecting the dominant Middle Eastern and Southeast Asian ancestry blended with Hispanic warmth",
-    "complexion": "Smooth, prominent high cheekbones with subtle Southeast Asian contours, structured jawline tapering toward the point — a facial geometry that speaks to the Levantine and Southeast Asian mix. Minimal scarring on face — they don't survive mistakes long enough to accumulate visible wounds there. Faint calluses on hands and wrists.",
+    "skin_tone": "Rich warm brown complexion with golden-amber undertones, the result of dominant South Asian base enriched by Sub-Saharan African depth and East Asian luminosity",
+    "complexion": "Smooth with prominent high cheekbones shaped by South Asian and East Asian bone structure, strong defined jawline with additional fullness and depth from Sub-Saharan African heritage — facial geometry that clearly reads the three-way genetic synthesis. Minimal scarring on face — they don't survive mistakes long enough to accumulate visible wounds there. Faint calluses on hands and wrists.",
     "distinguishing_marks": [
       "Thin white scar running 3cm along left temple, barely visible unless light catches it",
       "Faint burn marks on both inner wrists where subdermal weapon mounts interface with skin",
@@ -313,15 +299,44 @@
     "posture_movement": "Economical, coiled. Never fully relaxed in public spaces — weight balanced on balls of feet, ready to move in any direction. Fluid wrist and hand movements, precise finger control. Eyes constantly tracking exits and sight lines. Movements suggest someone who has internalized violence as a tool, not an aberration.",
     "clothing_style": "High-tier functional — expensive tactical wear that doesn't announce itself. Black fitted flight jacket (Tier 1-2 grade, custom tailored) over neutral undershirt. Cargo pants with reinforced thigh pockets for tools and throwaway credchips. Composite boots rated for impact and heat. No jewelry except functional watch with chronometer and encrypted local mesh link. Gear is meticulously maintained, no fraying, no wear patterns — replaced before failure. Styling suggests someone who spends Φ on equipment, not status symbols."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait of Juno Bergqvist-Haddad-Espinoza, 174cm tall, lean athletic build with dancer's grace. Warm olive-brown skin with golden undertones reflecting Middle Eastern and Southeast Asian heritage. High cheekbones with subtle Southeast Asian contours, sharp warm dark brown eyes, dark brown hair with copper undertones in practical undercut style. Visible subdermal weapon mount lines on both forearms with faint metallic sheen, thin white scar along left temple, burn marks on inner wrists, geometric silver tattoo on right wrist. Wearing black fitted tactical flight jacket over neutral shirt, reinforced cargo pants, impact-rated composite boots. Economical, coiled posture with weight on balls of feet, hands showing evidence of medical intervention. Great Lakes Metropolitan Zone megacity neon-lit background, cool blue and amber lighting, atmospheric urban cyberpunk setting, professional character sheet illustration --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Juno Mukherjee-Raghavan-Quartey, a 174cm lean athletic operative with rich warm brown skin with golden-amber undertones reflecting South Asian, Sub-Saharan African, and East Asian heritage. Strong high cheekbones and defined jawline, warm dark brown alert eyes. Dark brown hair with copper undertones, practical undercut style. Wearing expensive black fitted tactical flight jacket over neutral undershirt, reinforced cargo pants, composite boots. Subdermal weapon mounts visible on forearms as subtle metallic lines. Posture coiled and ready, hands showing precise control. Faint scar on left temple barely visible. Silver geometric tattoo on inner right wrist. Cold neon-lit urban environment, dramatic side-lighting emphasizing the three-dimensional quality of facial structure and skin tone depth, neo-noir urban aesthetic, professional operative, high-tier gear, moody atmospheric lighting, sharp focused expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 58.1,
-    "Southeast Asian": 23.3,
-    "Hispanic/Latin American": 13.7,
-    "Northern European": 4.9
+    "South Asian": 70.8,
+    "Sub-Saharan African": 21.6,
+    "East Asian": 7.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 37.4
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 33.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 6.5,
+        "Malian": 2.8
+      },
+      "Central African": {
+        "Congolese": 9.9
+      },
+      "East African": {
+        "Tanzanian": 2.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 5.4
+      },
+      "Chinese": {
+        "Mandarin Northern": 2.2
+      }
+    }
+  }
 }

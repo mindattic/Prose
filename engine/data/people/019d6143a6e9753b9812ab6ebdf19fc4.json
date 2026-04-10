@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e9753b9812ab6ebdf19fc4",
   "type": "character",
-  "name": "Vega Balasanyan",
+  "name": "Vega Strömqvist",
   "aliases": [
     "Ghost Reel"
   ],
@@ -12,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "Highland Park Autonomous Zone, operates from a converted water tower studio called the Booth, near Michigan Ave and Walton",
-  "description": "Taini is lean and somewhat raccoon-eyed from chronic sleep debt, with warm medium-brown skin, close-cropped hair, and a habit of wearing a battered optical recording array mounted over his left ear that he has modified so many times it is no longer recognizably a consumer product. His right arm has a functional color-shifting skin mod — not cosmetic in origin, repurposed from a Helix Biosystems agricultural camouflage prototype he acquired through means he prefers not to specify — that he uses as an on-body production notes display. When he is thinking through a shot or a structural problem, patterns move up and down his forearm.\n\nHe makes films that are not quite films — immersive experiences designed to be entered via off-brand VR rigs, averaging forty minutes, built from recorded footage of real Highland Park Autonomous Zone life combined with interactive-adjacent decision points that he insists are not choices but pressure — moments where the viewer feels the weight of a real person's situation. His work has been passed around on physical data-chips in the HPAZ and has recently started moving through wider underground networks. He is terrified of and fascinated by his growing audience, whom he has never met.",
+  "description": "Vega Strömqvist is lean and somewhat raccoon-eyed from chronic sleep debt, with warm medium-brown skin, close-cropped hair, and a habit of wearing a battered optical recording array mounted over his left ear that he has modified so many times it is no longer recognizably a consumer product. His right arm has a functional color-shifting skin mod — not cosmetic in origin, repurposed from a Helix Biosystems agricultural camouflage prototype he acquired through means he prefers not to specify — that he uses as an on-body production notes display. When he is thinking through a shot or a structural problem, patterns move up and down his forearm.\n\nHe makes films that are not quite films — immersive experiences designed to be entered via off-brand VR rigs, averaging forty minutes, built from recorded footage of real Highland Park Autonomous Zone life combined with interactive-adjacent decision points that he insists are not choices but pressure — moments where the viewer feels the weight of a real person's situation. His work has been passed around on physical data-chips in the HPAZ and has recently started moving through wider underground networks. He is terrified of and fascinated by his growing audience, whom he has never met.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -152,7 +152,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -167,29 +167,18 @@
   "registered_firearms": [],
   "related_entities": [
     "Highland Park Autonomous Zone",
-    "Helix Biosystems",
     "Ferrogate Transit",
+    "Helix Biosystems",
     "The Burden Clause",
     "Hearthstone Firearms Homestead-12 'Door Slam'",
     "FOUNDATION",
     "Vantablack Media Confessor Tap — 'The Booth'",
-    "ARCHIVE",
-    "Chronicle",
-    "Ezio Kaboré-Malhotra",
-    "Fanta Hedlund-Diarra",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'",
-    "Free Assembly",
-    "Kairos",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Nneka Lindqvist-Okafor",
-    "Réginald Asomaning-Čabarkapa",
-    "The Accidental",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Pressure Drop",
+    "Origin"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "East Asian (47%), Middle Eastern (42%), Hispanic/Latin American (11%) — a striking blend creating warm olive-to-amber undertones with subtle depth. The combination yields high cheekbones with a defined structure, almond-shaped eye geometry, and features that suggest both Central Asian and Levantine ancestry.",
+    "heritage": "Northern European (73.5%) with Eastern European (18.2%) and Hispanic/Latin American (8.3%) ancestry — a cool-to-neutral palette creating fair skin with subtle warm olive undertones. The combination yields strong Scandinavian bone structure with defined cheekbones and straight eye geometry, enhanced by Slavic depth and minor Latin warmth in facial undertone.",
     "height_cm": 176,
     "weight_kg": 68,
     "build": "Lean and wiry, with minimal muscle definition — the physique of someone who forgets to eat regularly and moves constantly between recording sites and editing terminals. Slight forward hunch to shoulders from hours hunched over VR rig assembly.",
@@ -197,8 +186,8 @@
     "hair_style": "Close-cropped, maintained short for practical reasons; uneven in places where he's trimmed it himself between sleeping sessions",
     "hair_length": "Short",
     "eye_color": "Dark brown, naturally; often surrounded by pronounced dark circles and mild orbital puffiness",
-    "skin_tone": "Warm olive-amber, blended from East Asian and Middle Eastern ancestry, with subtle undertones that shift depending on light — cooler in artificial lighting, warmer in daylight. Sleep deprivation and poor hydration create additional gray undertones beneath the surface warmth.",
-    "complexion": "High, defined cheekbones characteristic of East Asian and Middle Eastern heritage; sharp jawline accentuated by weight loss and angular facial structure; dark shadows under eyes are permanent; sparse facial hair growth along jawline, often neglected for days then quickly shaved. Skin texture shows minor stress acne along jawline from sleep deprivation and poor nutrition. The overall face shape suggests a blend of East Asian geometry with Middle Eastern depth.",
+    "skin_tone": "Fair with cool undertones and subtle warm olive cast from mixed ancestry. Sleep deprivation and poor hydration create additional gray undertones. Cooler in artificial lighting, slightly warmer in daylight.",
+    "complexion": "Strong, defined cheekbones characteristic of Northern European and Eastern European heritage with subtle Latin warmth in undertone; sharp jawline accentuated by weight loss and angular facial structure; dark shadows under eyes are permanent; sparse facial hair growth along jawline, often neglected for days then quickly shaved. Skin texture shows minor stress acne along jawline from sleep deprivation and poor nutrition.",
     "distinguishing_marks": [
       "Faint burn scar on inner left wrist, approximately 3cm long, from an early VR rig power supply malfunction",
       "Series of three small scars on right palm and fingers from repeated cuts while disassembling and rewiring recording hardware",
@@ -206,16 +195,46 @@
     ],
     "visible_augmentations": "Left ear mounted with a heavily customized optical recording array that bears no resemblance to consumer hardware — multiple lenses in misaligned clusters, exposed wiring bundled with what appears to be duct tape and bioplastic, small LED indicators that cycle through colors based on recording mode. Right forearm displays a functional color-shift skin mod that ripples with iridescent patterns of blue, green, and violet when active — originally repurposed agricultural camouflage tech, now serving as a real-time visual note-taking system; patterns flow upward and downward depending on his cognitive state.",
     "posture_movement": "Habitually tense shoulders, economical movements with occasional jittery restlessness (caffeine-fueled). When thinking through a shot or structural problem, he stares into middle distance while his right arm moves unconsciously, watching the color patterns shift. Walks with purposeful but slightly distracted gait, often with recording equipment in one hand. Rarely makes sustained eye contact unless actively listening to a subject.",
-    "clothing_style": "Tier 4 utilitarian aesthetic — functional layers in muted grays, blacks, and olive; battered canvas cargo jacket with multiple inner pockets for data-chips and lens filters; worn synthetic-blend t-shirts with faded graphics from defunct streaming platforms or community events; reinforced work pants with tool-loop modifications. No branding beyond the accidental. Insulated wrist wraps (actual function unclear — possibly for carpal support, possibly just habit). Worn gel-sole boots with custom-fitted recording equipment mounts on one heel. Chronically ink-stained fingers. The overall impression is someone who has no time for aesthetics but whose gear choices reveal obsessive technical precision."
+    "clothing_style": "Tier 4 utilitarian aesthetic — functional layers in muted grays, blacks, and olive; battered canvas cargo jacket with multiple inner pockets for data-chips and lens filters; worn synthetic-blend t-shirts with faded graphics from defunct streaming platforms or community events; reinforced work pants with tool-loop modifications. No branding beyond the accidental. Insulated wrist wraps (actual function unclear — possibly for carpal support, possibly just habit). Worn gel-sole boots with custom-fitted recording equipment mounts on one heel. Chronically ink-stained fingers."
   },
-  "image_prompt": "Vega Balasanyan, cyberpunk 2226 visual documentarian, East Asian and Middle Eastern heritage with warm olive-amber skin tone, high defined cheekbones, sharp jawline, dark brown eyes with pronounced dark circles, close-cropped dark hair. Gaunt, lean 176cm frame hunched slightly forward. Left ear with custom misaligned optical recording array bristling with exposed wiring and LED indicators. Right forearm rippling with iridescent blue-green-violet color-shift skin mod. Battered gray and black utilitarian cargo jacket, worn synthetic t-shirt, reinforced work pants, gel-sole boots with recording mounts. Burn scar on left wrist, constellation of self-done ink dots on right forearm. Chronically ink-stained fingers, insulated wrist wraps. Habitually tense posture, distracted gait, jittery restlessness. Dark atmospheric GLMZ setting, neon-lit recording terminal backdrop, cool industrial lighting casting shadows across angular features, slight blue-green glow from active forearm augmentation. Mood: obsessive, sleep-deprived, technically precise. --ar 2:3 --v 6",
+  "image_prompt": "Vega Strömqvist, fair-skinned neo-noir documentarian with cool undertones and subtle olive warmth, dark brown close-cropped hair, pronounced dark circles under dark eyes. Lean 176cm frame hunched slightly forward. Left ear features heavily modified DIY optical recording array with misaligned lens clusters and exposed bundled wiring with LED indicators. Right forearm displays active iridescent color-shift skin mod rippling with blue-green-violet patterns. Faint burn scar on inner left wrist, self-done film-frame tattoo dots on right forearm. Worn cargo jacket in muted grays and blacks, layered utilitarian clothing, ink-stained fingers, reinforced work boots. Tense posture with jittery restless energy. Setting: dimly lit recording studio or street-level tech workspace, neon accent lighting catching the iridescent forearm mod. GLMZ, Great Lakes Metropolitan Zone aesthetic. Moody, focused, sleep-deprived intensity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 47.1,
-    "Middle Eastern": 42.1,
-    "Hispanic/Latin American": 10.8
+    "Northern European": 73.5,
+    "Eastern European": 18.2,
+    "Hispanic/Latin American": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 73.5
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 8.1
+      },
+      "Slavic East": {
+        "Russian": 4.1
+      },
+      "Slavic South": {
+        "Croatian": 6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1.5
+      },
+      "Central American": {
+        "Salvadoran": 5.2
+      },
+      "Caribbean": {
+        "Cuban": 1.3,
+        "Dominican": 0.3
+      }
+    }
+  }
 }

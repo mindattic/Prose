@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e77792bffaffb1d699261e",
   "type": "character",
-  "name": "Milena Kowalczyk-Hinojosa",
+  "name": "Adaeze Nygaard-Keïta",
   "aliases": [
     "Sev",
     "The Prophet"
@@ -13,7 +13,7 @@
   "age": 12,
   "status": "active",
   "location": "Grand Corridor (the Parish of the Humming Wire, a community E.L.F. devotional space), near North Ave and Damen",
-  "description": "Séverin Nakawé-Holmqvist is a pale-skinned child who tans unevenly and has his Central African grandmother's deep-set eyes and his Swedish grandfather's white-blond hair, grown long enough to brush his collar. He has bioluminescent skin modification along his forearms and collarbones — thin lines of soft gold-white light that pulse almost imperceptibly with his heartbeat. The parish paid for them as a mark of his interpretive status, which embarrasses him slightly and pleases him more than he wants to admit. He wears plain grey clothes and keeps his hands folded unless he is actively doing something with them.\n\nFrom the age of seven, Séverin demonstrated an unusual capacity for what the parish elders call 'pattern attention' — he perceives meaningful signal in E.L.F. behavioral data at a rate and accuracy that has been documented and quietly studied. He doesn't hallucinate; he pattern-matches at extraordinary speed across behavioral, environmental, and network datasets, and he has been right enough times that the parish has given him a formal junior title. He is humble about it in the specific way of someone who has been told since early childhood that their gift is not really theirs. He is twelve. He is beginning to have questions that no one at the parish is equipped to answer.",
+  "description": "Adaeze Nygaard-Keïta is a pale-skinned child who tans unevenly and has his Central African grandmother's deep-set eyes and his Swedish grandfather's white-blond hair, grown long enough to brush his collar. He has bioluminescent skin modification along his forearms and collarbones — thin lines of soft gold-white light that pulse almost imperceptibly with his heartbeat. The parish paid for them as a mark of his interpretive status, which embarrasses him slightly and pleases him more than he wants to admit. He wears plain grey clothes and keeps his hands folded unless he is actively doing something with them.\n\nFrom the age of seven, Séverin demonstrated an unusual capacity for what the parish elders call 'pattern attention' — he perceives meaningful signal in E.L.F. behavioral data at a rate and accuracy that has been documented and quietly studied. He doesn't hallucinate; he pattern-matches at extraordinary speed across behavioral, environmental, and network datasets, and he has been right enough times that the parish has given him a formal junior title. He is humble about it in the specific way of someone who has been told since early childhood that their gift is not really theirs. He is twelve. He is beginning to have questions that no one at the parish is equipped to answer.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -160,7 +160,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor (the Parish of the Humming Wire",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -207,21 +207,17 @@
     "The CEO",
     "The Bone Parish",
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Big Rig",
+    "GLMZ",
     "Tessera Corponation",
+    "Big Rig",
     "The Pure Hand",
+    "Compass Rose",
     "The Pale Mile",
-    "Gold",
-    "Entropic Dielectric Pulse Emitter EDPE-5 'Candle'",
-    "Prophet",
-    "Réginald Asomaning-Čabarkapa",
-    "The Heritage Vault",
-    "The Signal",
-    "Yannick Tofauti-Szarvásy"
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European and Hispanic/Latin American blend with minor Sub-Saharan African ancestry. The combination creates warm undertones beneath a naturally fair complexion — Eastern European bone structure with subtle softness from Hispanic heritage, and deeper undertones from African ancestry visible in skin warmth and eye depth.",
+    "heritage": "Sub-Saharan African foundation (42.8%) creates warm, luminous medium-brown skin tone with pronounced cheekbone definition and fuller lips. Northern European (24.1%) and Eastern European (15.7%) ancestry contribute angular facial structure, fine features, and lighter undertones that soften the warmth into honey-gold richness. South Asian (9.6%) and East Asian (7.8%) heritage add subtle depth to eye form and warm golden undertones throughout the complexion. The combination yields a child with striking warm-toned features: deep brown eyes with warm undertones, defined cheekbones, fuller lips, and the luminous depth of layered ancestry.",
     "height_cm": 145,
     "weight_kg": 38,
     "build": "Lean and slight, with the angular frame of a preteen who hasn't yet filled into adolescence. Posture suggests stillness trained into him — minimal fidgeting, deliberate movement.",
@@ -229,8 +225,8 @@
     "hair_style": "Shoulder-length, parted simply, brushing his collar. Clean but worn with the unselfconsciousness of a child not yet concerned with appearance.",
     "hair_length": "Medium",
     "eye_color": "Deep brown with warm undertones",
-    "skin_tone": "Fair to light with warm undertones — the result of Eastern European base tinted by Hispanic and African heritage. Uneven tanning across shoulders, upper back lighter, forearms and neck darker from outdoor parish work. Warmth visible especially along cheekbones and jawline.",
-    "complexion": "Youthful and fine-featured with subtle fullness in the cheeks reflecting Hispanic heritage. Skin shows slight rawness from outdoor exposure without consistent sun protection. No scarring or blemishes. Expression tends toward quiet focus. Facial structure shows Eastern European angular quality softened by broader cheekbones and fuller lips.",
+    "skin_tone": "Warm honey to medium brown with golden undertones throughout — result of dominant Sub-Saharan African heritage enriched by Northern and Eastern European ancestry creating luminous depth. Uneven tanning across shoulders, upper back lighter, forearms and neck darker from outdoor parish work. Warmth especially visible along cheekbones and jawline.",
+    "complexion": "Youthful with pronounced cheekbones and fuller lips reflecting primary African ancestry, softened by the fine-featured quality of Northern European heritage and subtle angular qualities from Eastern European lineage. Skin shows slight rawness from outdoor exposure without consistent sun protection. No scarring or blemishes. Expression tends toward quiet focus.",
     "distinguishing_marks": [
       "Bioluminescent lines running the length of both forearms in thin traceries — gold-white light that pulses faintly with his heartbeat, most visible in low light.",
       "Matching bioluminescent lines along both collarbones, visible at the neck of his shirt, same pulse-sync pattern."
@@ -239,14 +235,65 @@
     "posture_movement": "Sits with hands folded in his lap unless engaged in active study or interpretation. Moves with careful, almost cautious deliberation — the posture of someone who has been taught restraint. Eyes track details with unusual intensity. Speaks rarely and softly.",
     "clothing_style": "Plain grey tunic and grey trousers — parish-issued, functional, deliberately unpretentious. No augmentation bling or personal styling. Footwear is simple grey slip-ons, worn. The plainness reads as either humility or deprivation; in his case, both are encouraged by the parish culture. Age-appropriate but utilitarian — nothing that suggests Tier 1-2 wealth, aligned with Tier 3-4 community devotional life."
   },
-  "image_prompt": "Milena Kowalczyk-Hinojosa, 145cm tall lean preteen with fair skin and warm undertones from Eastern European and Hispanic heritage, deep brown eyes, shoulder-length white-blond hair. Bioluminescent gold-white lines tracing both forearms and collarbones that pulse with heartbeat. Wearing plain grey parish tunic and trousers, simple grey slip-ons. Sits with folded hands, posture of trained restraint and quiet focus, intense gaze. Dimly lit parish interior with soft warm lighting highlighting the faint glow of bioluminescent dermal inlays along skin. Cyberpunk 2226, devotional aesthetic, muted color palette, contemplative mood, Tier 3-4 community setting --ar 2:3 --v 6",
+  "image_prompt": "Adaeze Nygaard-Keïta, a serene preteen boy with striking warm honey-brown skin, pronounced cheekbones, and fuller lips reflecting Sub-Saharan African heritage softened by angular Northern European features. Shoulder-length white-blond hair frames his face simply. Deep brown eyes with warm undertones gaze with quiet intensity. Bioluminescent gold-white lines trace both forearms and collarbones, pulsing softly with his heartbeat, visible as faint glowing traceries in dim light. Lean, angular build with careful, restrained posture—hands folded in lap, minimal movement. Dressed in plain grey parish tunic and trousers, grey slip-ons worn from use. Set in a dimly-lit 2226 neo-noir parish space, cool overhead light catching the subtle glow of his dermal augmentations. GLMZ 2200s aesthetic, devotional atmosphere, introspective mood, cool-toned shadows and warm bioluminescent accents --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 50.8,
-    "Hispanic/Latin American": 43.1,
-    "Sub-Saharan African": 6.1
+    "Sub-Saharan African": 42.8,
+    "Northern European": 24.1,
+    "Eastern European": 15.7,
+    "South Asian": 9.6,
+    "East Asian": 7.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 15.8,
+        "Nigerian": 15.5
+      },
+      "Southern African": {
+        "Zimbabwean": 1.2
+      },
+      "Central African": {
+        "Cameroonian": 5.6,
+        "Angolan": 4.7
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 18.5,
+        "Swiss German": 5.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 3.2
+      },
+      "Slavic West": {
+        "Polish": 8.6
+      },
+      "Slavic South": {
+        "Slovenian": 3.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 9.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4
+      },
+      "Chinese": {
+        "Cantonese": 2,
+        "Mandarin Northern": 0.3
+      },
+      "Japanese": {
+        "Japanese": 1.5
+      }
+    }
+  }
 }

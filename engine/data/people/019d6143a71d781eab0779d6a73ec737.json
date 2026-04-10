@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71d781eab0779d6a73ec737",
   "type": "character",
-  "name": "Lars Hossain",
+  "name": "Santiago Quiñones",
   "aliases": [
     "Xim",
     "The Noodle Witch"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Kedzie and Division",
-  "description": "Ximena is a broad-shouldered woman with deep umber skin mapped in laugh lines and old burn scars along her left forearm from a cooking fire twenty years back. Her hair has been gene-dyed a permanent copper-gold that she wears in a thick plait down her back, and her eyes carry patterned irises — concentric rings of amber and dark brown, a cosmetic mod she saved three months of UBC stipend to afford when she was thirty. She runs her stall with the authority of a small general, keeping three pots going simultaneously, the steam rising around her like offerings to the market's resident E.L.F., whom she calls Grandpot and leaves a small data crystal near the burner each morning.\n\nXimena is warm to the point of disarming — she remembers what every regular ordered last time and will argue passionately that your body needs bone broth today, not the chili oil, she can tell by your eyes. But beneath the maternal bustle is a woman who has seen her neighborhood's character scraped away one Tessera rezoning at a time, and who keeps a detailed mental ledger of who is eating less than they used to. She is the social infrastructure of her corner of the market, whether she admits it or not.",
+  "description": "Santiago Quiñones is a broad-shouldered woman with deep umber skin mapped in laugh lines and old burn scars along her left forearm from a cooking fire twenty years back. Her hair has been gene-dyed a permanent copper-gold that she wears in a thick plait down her back, and her eyes carry patterned irises — concentric rings of amber and dark brown, a cosmetic mod she saved three months of UBC stipend to afford when she was thirty. She runs her stall with the authority of a small general, keeping three pots going simultaneously, the steam rising around her like offerings to the market's resident E.L.F., whom she calls Grandpot and leaves a small data crystal near the burner each morning.\n\nSantiago Quiñones is warm to the point of disarming — she remembers what every regular ordered last time and will argue passionately that your body needs bone broth today, not the chili oil, she can tell by your eyes. But beneath the maternal bustle is a woman who has seen her neighborhood's character scraped away one Tessera rezoning at a time, and who keeps a detailed mental ledger of who is eating less than they used to. She is the social infrastructure of her corner of the market, whether she admits it or not.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -153,7 +153,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,41 +173,20 @@
   "related_entities": [
     "The Oxidian Market",
     "The Reclamation Authority",
+    "The Marrow Market",
     "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
     "Geartown",
     "Tessera Corponation",
+    "Copper",
     "SynapTech IrisBloom Ocular Color Modulator",
     "TESSERA TK-4 'Hellhound'",
-    "Adaeze Chen-Hawkins",
-    "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Gold",
-    "Ablonite-KR",
-    "Anatoliy Faye-Nkrumah",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Ferrogate Transit",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Liora Mori-Sefa",
-    "MERIDIAN",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "The Bazaar",
-    "The Cutters Guild",
-    "The Ledger",
-    "The Pure Hand",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Volkov-Saito Precision VSR-20 'Partisan'"
+    "Haze Johansson",
+    "Corner Slice",
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian dominant (33.4%) with Northern European (24.2%), Sub-Saharan African (12.5%), Indigenous American (11.9%), Hispanic/Latin American (11.6%), and East Asian (6.4%) ancestry. Complex phenotype reflecting global diaspora mixing: warm brown skin with golden undertones from South Asian and African heritage, subtle warm mid-tone layering from European and Latin American mixing, slight eye shape variation from East Asian ancestry component.",
+    "heritage": "Hispanic/Latin American dominant (66.4%) with significant East Asian (23.8%) and Eastern European (9.8%) ancestry. Phenotype reflects the characteristic blending of Iberian, Indigenous American, and East Asian genetic influence — warm medium-brown skin with golden and olive undertones from the Latin American base, subtle depth from Eastern European ancestry, and refined facial structure with East Asian cheekbone prominence and eye shape variation.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscular through the arms and back from decades of repetitive lifting and stirring. Carries weight in her torso with the settled confidence of someone who has earned every kilogram through labor.",
@@ -215,8 +194,8 @@
     "hair_style": "Thick, tightly braided plait",
     "hair_length": "Long",
     "eye_color": "Concentric rings of amber and dark brown (cosmetic iris modification)",
-    "skin_tone": "Warm golden-brown with olive and amber undertones, reflecting South Asian and African heritage base with European and Latin American warmth layering",
-    "complexion": "Face mapped in laugh lines around the eyes and mouth, deep creases across the forehead from squinting over steam. Skin weathered but well-maintained. Nose moderate width with subtle bridge definition, features reflecting mixed ancestry — softened by age and expression. Cheekbones prominent from South and East Asian heritage components.",
+    "skin_tone": "Warm golden-brown with olive undertones, medium depth reflecting the dominant Hispanic/Latin American ancestry enriched by East Asian warmth and Eastern European subtle depth",
+    "complexion": "Face mapped in laugh lines around the eyes and mouth, deep creases across the forehead from squinting over steam. Skin weathered but well-maintained. Cheekbones prominent and well-defined from the East Asian heritage component, balanced with the characteristic breadth of Hispanic/Indigenous American ancestry. Nose moderate width with subtle bridge definition. Face shape shows the softening of age and expression layered over strong underlying structure.",
     "distinguishing_marks": [
       "Burn scar tissue along the entire left forearm, irregular white and darker patches from a cooking fire twenty years prior, prominent when she raises her arm.",
       "Fine network of heat-stress lines across her hands and wrists, discolored patches from repeated thermal exposure."
@@ -225,17 +204,35 @@
     "posture_movement": "Moves with economic efficiency — no wasted motion, but not hurried. Stands with weight balanced, ready to pivot between pots. Gestures are expressive and maternal, hands often open and welcoming. When focused on a task, her shoulders hunch slightly and her entire frame narrows into concentration.",
     "clothing_style": "Tier 3 working-class practical. Worn canvas apron in faded indigo, reinforced at stress points, stained with decades of broth splatter that she does not attempt to hide — they are badges. Underneath, simple long-sleeved thermal shirt in charcoal gray to protect from steam and heat. Loose-fitting linen pants in cream, cuffed at the ankle. Worn slip-on shoes with good grip, replaced annually. No jewelry except a thin brass ring on her right ring finger — old, dented, of unclear origin. She wears a faded Oxidian Market Vendors Guild pin on her apron."
   },
-  "image_prompt": "cyberpunk 2226, Lars Hossain, 168cm woman with warm golden-brown skin reflecting South Asian and African heritage mixed with European and Latin American warmth, prominent cheekbones, laugh lines and steam-creased forehead, cosmetic amber-brown concentric iris modification, long thick copper-gold braided plait, muscular broad-shouldered frame, burn scars on left forearm with white and dark patches, heat-stress lines on hands and wrists, wearing faded indigo canvas apron over charcoal thermal shirt, cream linen pants cuffed at ankles, worn slip-on shoes, thin brass ring, Oxidian Market Vendors Guild pin, subdermal thermometer scar visible on left palm, maternal expressive gestures, standing in kitchen market stall with steam rising, warm overhead lighting catching her iris modifications and scar tissue, focused efficient posture, badge-stained apron, cyberpunk gritty market district background --ar 2:3 --v 6",
+  "image_prompt": "Santiago Quiñones, 168cm tall, mid-fifties, warm golden-brown skin with olive undertones reflecting Hispanic-East Asian-Eastern European heritage blend. Prominent cheekbones and broad face shape, laugh lines and heat-weathered features. Copper-gold long braided hair, concentric amber-brown iris modification. Faded indigo canvas apron over charcoal thermal shirt, cream linen pants, worn practical shoes. Burn scars visible on left forearm, heat-stress lines on hands. Standing in Oxidian Market vendor stall, steam rising from broth pots behind her, focused and maternal expression, economic movements, brass ring on right finger. GLMZ Great Lakes Metropolitan Zone market setting, warm kitchen lighting mixed with neon market ambient glow, no-nonsense working-class dignity, age and labor visible but confident. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 33.4,
-    "Northern European": 24.2,
-    "Sub-Saharan African": 12.5,
-    "Indigenous American": 11.9,
-    "Hispanic/Latin American": 11.6,
-    "East Asian": 6.4
+    "Hispanic/Latin American": 66.4,
+    "East Asian": 23.8,
+    "Eastern European": 9.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 66.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 23.8
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 5.6
+      },
+      "Slavic South": {
+        "Bosnian": 2.3,
+        "Serbian": 1.9
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Dato Vikstrom-Asiedu is lean and angular, all sharp edges and visible tension. At 42, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a combat medic out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Dato Vikstrom-Asiedu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Zara Tovar is lean and angular, all sharp edges and visible tension. At 42, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a combat medic out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Zara Tovar agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -263,7 +263,7 @@
     "Tactician": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,36 +282,13 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Shelf",
-    "Slagworks Industrial",
-    "Pellucid Systems",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'",
-    "Breck Tannen",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "Ghost Protocol",
-    "Glenville Sound",
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "Sorin Ekwensi-Balasanyan",
-    "TERMINUS",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Veslemøy Achebe-Tursynov",
-    "Vesna Szymczak-Ranginui",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Slagworks Industrial",
+    "Pellucid Systems"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Cosmopolitan blend: Sub-Saharan African (35%), Hispanic/Latin American (20%), South Asian (18.9%), Middle Eastern (10%), East Asian (9.7%), Eastern European (6.4%). This ancestry mix creates striking phenotypic diversity — warm deep brown skin with complex undertones from multiple lineages, high architectural cheekbones reflecting South Asian and Middle Eastern features, subtle eye shape variation from East Asian genetics, and fine facial structure refined by Eastern European ancestry.",
+    "heritage": "Ubiquitous Diaspora blend: Hispanic/Latin American (49.3%), South Asian (20.6%), Sub-Saharan African (17.9%), Southeast Asian (12.2%). This genetic combination creates striking phenotypic diversity — warm deep brown skin with complex golden and olive undertones from the layered ancestry, high architectural cheekbones reflecting South Asian heritage, subtle eye shape variation from Southeast Asian genetics, and refined facial structure with warm melanin luminosity.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with visible musculature — no excess mass, optimized for field mobility and climbing. Wiry rather than bulky, with the kind of economical frame that suggests years of physical work rather than gym discipline.",
@@ -319,8 +296,8 @@
     "hair_style": "Short, practical, swept back. Minimal grooming — function over aesthetics.",
     "hair_length": "Short",
     "eye_color": "Left eye: dark brown, natural. Right eye: polished chrome with faint amber illumination behind the lens (cybernetic replacement with recording optics).",
-    "skin_tone": "Deep warm brown with complex undertones — rich melanin base from Sub-Saharan ancestry, warmed by Hispanic and Middle Eastern heritage, with subtle golden-red undertones from South Asian genetics. The overall effect is a luminous deep bronze that shifts in different lighting, darker in some areas, with warm olive-amber undertones across high cheekbones and jaw.",
-    "complexion": "Gaunt, weathered. Prominent high cheekbones with strong architectural definition reflecting diverse ancestry. Sharp, refined jaw. Perpetual tension in the facial muscles suggests chronic sleep deprivation or baseline stress. Skin is clear but sun-damaged in patches; minor scarring along the left temple and jaw from old trauma. No facial hair — kept clean and maintained with clinical precision.",
+    "skin_tone": "Deep warm brown with luminous golden-olive undertones — rich melanin base from Sub-Saharan and Hispanic heritage, warmed by South Asian genetics with subtle amber-bronze shifting in different lighting. High cheekbones and jaw catch light with warm bronze luminosity.",
+    "complexion": "Gaunt, weathered. Prominent high cheekbones with strong architectural definition from South Asian and Sub-Saharan ancestry. Sharp, refined jaw with warm-toned definition. Perpetual tension in the facial muscles suggests chronic sleep deprivation or baseline stress. Skin is clear but sun-damaged in patches; minor scarring along the left temple and jaw from old trauma. No facial hair — kept clean and maintained with clinical precision.",
     "distinguishing_marks": [
       "Surgical scar along the left temple, approximately 8cm, faded white — evidence of the cybernetic eye replacement procedure",
       "Thin white scar running from left collarbone to sternum (approximately 12cm) — old penetrating trauma, professionally sutured",
@@ -331,17 +308,51 @@
     "posture_movement": "Economical and precise. Moves with the kind of controlled tension that suggests combat training or years of high-stakes fieldwork. When still, there's a baseline readiness in the shoulders and hands — never fully relaxed. Climbs with unnatural ease due to gecko-grip augmentations, ascending vertical surfaces with spider-like efficiency. Hand movements are surgical-grade steady, even when sleep-deprived.",
     "clothing_style": "Tier 3-4 utilitarian. Dark technical fabrics (synthetic blends designed for low visibility and durability) — charcoal, black, deep blue. Cargo pants with reinforced thigh pockets for medical gear. Modular tactical vest over form-fitting base layer, often armored or padded in critical zones. Durable boots with traction-enhanced soles, scuffed and maintained rather than new. Minimal jewelry aside from functional gear. No corpo branding or status symbols — clothes serve survival and work, not identity. Carries medical pack on left shoulder, always accessible."
   },
-  "image_prompt": "Zara Tovar, a lean 178cm field operative with deep luminous bronze skin and striking high cheekbones reflecting Sub-Saharan African, South Asian, and Middle Eastern heritage. Dark brown hair swept back with silver threading at temples. Left eye dark brown, right eye cybernetic chrome with amber glow. Surgical scar on left temple, thin white scar across left collarbone. Chrome gecko-grip fingertip implants visible on both hands. Wiry muscular build optimized for mobility. Wearing dark technical tactical vest over form-fitting base layer, cargo pants with reinforced pockets, scuffed tactical boots. Medical pack on left shoulder. Posture shows controlled baseline readiness, surgical-steady hands despite evident sleep deprivation. Gaunt weathered complexion, clean-shaven, sun-damaged skin patches. Standing in low-light dockside environment, cyberpunk 2220s aesthetic, functional utilitarian equipment, no corpo branding. Moody neon-lit industrial setting, cool color temperature highlighting chrome augmentations. --ar 2:3 --v 6",
+  "image_prompt": "Zara Tovar, lean 178cm operative with deep warm brown skin bearing golden-olive undertones, gaunt weathered face with sharp architectural cheekbones and defined jaw catching bronze light. Dark brown hair with silver threading, swept back practical cut. Left eye natural dark brown, right eye chrome cybernetic with amber glow, faded temple scar visible. Muscular wiry build in dark charcoal tactical gear, reinforced cargo pants, modular armor vest over base layer. Chrome gecko-grip visible on both hands, burn scarring on right dorsal hand. Medical caduceus tattoo on left forearm. Poised with combat readiness, baseline tension in shoulders. Dockside industrial setting, moody cyan and amber neon lighting, shadows emphasizing angular features and chrome augmentations. GLMZ Great Lakes Metropolitan aesthetic, functional survivor not corporate asset. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 35.0,
-    "Hispanic/Latin American": 20.0,
-    "South Asian": 18.9,
-    "Middle Eastern": 10.0,
-    "East Asian": 9.7,
-    "Eastern European": 6.4
+    "Hispanic/Latin American": 49.3,
+    "South Asian": 20.6,
+    "Sub-Saharan African": 17.9,
+    "Southeast Asian": 12.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 31.2,
+        "Peruvian": 18.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 15.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 10.5
+      },
+      "Southern African": {
+        "South African": 7.4
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 2.8
+      },
+      "Filipino": {
+        "Tagalog": 4.5
+      },
+      "Indonesian": {
+        "Javanese": 2.2,
+        "Balinese": 2.7
+      }
+    }
+  }
 }

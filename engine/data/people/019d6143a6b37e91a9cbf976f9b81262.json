@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b37e91a9cbf976f9b81262",
   "type": "character",
-  "name": "Kai Huitzil-Strömqvist-Bergqvist",
+  "name": "Amir Cisneros-Tovar-Khorasani",
   "aliases": [
     "Roksa"
   ],
@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "The Loft — Tier 3 studio co-op in Edgewater Prism, near Lincoln and Addison",
-  "description": "Roksana has the particular exhaustion of someone who is moderately successful in a field that chews through people, and who has chosen to remain moderately successful rather than chase the tier above them where the real compromises happen. They are slight, with warm beige-brown skin and wavy dark hair streaked with bioluminescent threads — a geneware mod they designed themself, the threads pulsing faintly in complex patterns that shift based on their neural activity, functioning simultaneously as a status display, a creative tool, and an anxiety barometer. Their eyes are natural, dark, and deeply observant. They dress in expensive-looking clothing that is actually very carefully maintained secondhand.\n\nThey build VR experiences — full sensory immersive works that are not entertainment products in the Axiom or Ringo sense but something harder to categorize: art that happens to use corporate technology. Their most celebrated piece, 'Drowned Ward,' places the viewer inside a memory of the pre-GLMZ lakeshore as it was consumed by the city's construction. It has been exhibited seventeen times. They are also a meticulous, sometimes maddening collaborator — brilliant at synthesis but prone to scope-creep and to caring so intensely about the work that they forget other people have different pain tolerances for revision cycles.",
+  "description": "Amir Cisneros-Tovar-Khorasani has the particular exhaustion of someone who is moderately successful in a field that chews through people, and who has chosen to remain moderately successful rather than chase the tier above them where the real compromises happen. They are slight, with warm beige-brown skin and wavy dark hair streaked with bioluminescent threads — a geneware mod they designed themself, the threads pulsing faintly in complex patterns that shift based on their neural activity, functioning simultaneously as a status display, a creative tool, and an anxiety barometer. Their eyes are natural, dark, and deeply observant. They dress in expensive-looking clothing that is actually very carefully maintained secondhand.\n\nThey build VR experiences — full sensory immersive works that are not entertainment products in the Axiom or Ringo sense but something harder to categorize: art that happens to use corporate technology. Their most celebrated piece, 'Drowned Ward,' places the viewer inside a memory of the pre-GLMZ lakeshore as it was consumed by the city's construction. It has been exhibited seventeen times. They are also a meticulous, sometimes maddening collaborator — brilliant at synthesis but prone to scope-creep and to caring so intensely about the work that they forget other people have different pain tolerances for revision cycles.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -156,7 +156,7 @@
     "Beauty Seeker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Loft",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,37 +173,20 @@
   "related_entities": [
     "Hough Reclamation",
     "Edgewater Prism",
-    "The Reclamation Assembly",
     "Ringo Corponation EchoLimb PR-9 Proprioceptive Feedback Prosthetic Interface",
-    "GLMZ",
+    "The Reclamation Assembly",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Plot 17",
     "The Loft",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Neural Palate",
     "Slagworks Industrial",
     "Ringo Corponation",
-    "Alper Lebedev-Tutu",
-    "Crucible Industries Titan-500 'Earthquake'",
-    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
-    "Emeka Johansson-Orozco",
-    "Focadrin",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Narrowcast",
-    "Nurlan Morita-Antwi",
-    "Plot 17",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "TESSERA TC-3 'Crucible'",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Indigenous American (Mesoamerican and North American), with significant Southeast and East Asian ancestry, and a minor Northern European admixture. This combination creates distinctive features: warm copper-bronze undertones in the skin, prominent cheekbones with broader facial structure from Indigenous ancestry, and slightly epicanthic eye folds from the Asian heritage mix.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Hispanic/Latin American (30.6%), Middle Eastern (29.9%), Sub-Saharan African (18.5%), Central Asian (8.8%), Indigenous American (6.5%), and Pacific Islander (5.7%). This creates a striking warm-toned baseline with multiple overlapping features: golden-bronze skin enriched by African and Pacific Islander heritage, angular high-set cheekbones and broader mid-face structure from Indigenous and Middle Eastern ancestry, subtle warmth and depth from Central Asian and Hispanic elements. The overall effect is warm undertones with golden and amber richness throughout—a genuinely polychromatic blend where no single heritage dominates visually.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight, almost wiry — the kind of frame that suggests chronic undereating rather than discipline. Narrow shoulders, minimal muscle definition. Moves with a restless, unfocused energy that suggests their body is always catching up to their mind.",
@@ -211,8 +194,8 @@
     "hair_style": "Wavy, slightly tangled, often pinned or clipped back asymmetrically with whatever is within reach",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Natural dark brown — very still, very focused when observing",
-    "skin_tone": "Warm copper-bronze with golden undertones, reflecting the blend of Indigenous American, Southeast Asian, and East Asian ancestry",
-    "complexion": "Angular, high-set cheekbones with broader facial structure typical of Indigenous American ancestry, softened by slight Southeast Asian influence. Skin shows minor stress — dark circles under eyes, occasional tension creases between brows. Well-maintained but not groomed; face has the look of someone who forgets about it entirely for hours at a time.",
+    "skin_tone": "Warm golden-bronze with rich amber undertones. The tone reflects balanced contribution from Hispanic/Latin American and Central Asian warmth, deepened by Sub-Saharan African and Pacific Islander heritage, with subtle angular definition from Indigenous and Middle Eastern features.",
+    "complexion": "Angular, high-set cheekbones with broader facial structure from Indigenous and Middle Eastern ancestry. Mid-face width and subtle warmth from Sub-Saharan African heritage. Pacific Islander ancestry contributes to slight fullness in the lower face and soft facial contours. Overall bone structure is defined but delicate. Skin shows minor stress — dark circles under eyes, occasional tension creases between brows. Well-maintained but not groomed; face has the look of someone who forgets about it entirely for hours at a time.",
     "distinguishing_marks": [
       "Vestigial cat-ear modifications on the cartilage of both ears — small, feline-shaped, slightly translucent with faint internal circuitry visible when hair is pulled back",
       "Faint, thin scarring along the right temple from an early neural-haptic interface installation at age twenty-eight",
@@ -222,15 +205,82 @@
     "posture_movement": "Sits in odd positions — one leg curled, spine curved. Fidgets constantly with hands when thinking. When deep in work, becomes completely still and rigid. Walks with purpose when focused, but drifts when between tasks. Eyes track details compulsively — they're always looking at something.",
     "clothing_style": "High-quality secondhand — vintage tech-wear and archive pieces from the 2190s-2200s, carefully maintained. Fitted black technical pants (often with asymmetrical pockets or modified seams), oversized layered tops in muted colors (charcoal, deep teal, soft grey). Worn leather jacket from an unidentifiable era. Worn well but never pristine — there are always smudges of something on the sleeves (projection gel, render dust, tea). Jewelry is minimal and functional: a braided cord bracelet, sometimes a salvaged watch that doesn't work. Shoes are always expensive-looking but scuffed — current pair is reconstructed grey leather combat boots. Tier 3 aesthetic: deliberately curated poverty-chic that would read as lazy to anyone wealthier, but is actually a precise statement about resource allocation and values."
   },
-  "image_prompt": "Kai Huitzil-Strömqvist-Bergqvist, a wiry 168cm frame with copper-bronze skin and high Indigenous American cheekbones, sharp dark eyes with subtle epicanthic folds reflecting Southeast Asian heritage. Dark shoulder-length hair woven with pulsing bioluminescent threads in cyan, amber, and violet that shift in non-repeating patterns. Small feline-shaped ear modifications with visible circuitry when visible. Faint temple scar from neural interface. Wearing oversized charcoal tech-wear layered under a scuffed leather jacket, black fitted technical pants, grey reconstructed combat boots. Sitting in an odd posture with one leg curled, fidgeting hands, completely absorbed in focus. Geometric water-droplet tattoo visible on inner left wrist. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, moody neon-lit interior with render dust in air, projection gel smudges on sleeves, wearing a braided cord bracelet. Neural readout glowing softly from hair threads. Mood: restless, compulsively observant, caught between moments. Dramatic overhead lighting with cyan and violet neon reflections --ar 2:3 --v 6",
+  "image_prompt": "Amir Cisneros-Tovar-Khorasani, 168cm tall, wiry 58kg frame, angular high-set cheekbones with warm golden-bronze skin and rich amber undertones reflecting Hispanic/Latin American, Middle Eastern, Sub-Saharan African, Central Asian, Indigenous American, and Pacific Islander heritage. Dark brown eyes, very focused and still. Dark brown medium-length wavy hair with bioluminescent cyan-amber-violet threads pulsing through in complex patterns. Asymmetrically pinned back. Small translucent cat-ear mods visible on ears with faint circuitry. Faint scarring along right temple. Sitting in awkward position, one leg curled, spine curved, fidgeting with hands. Wearing oversized charcoal layered top under worn black leather jacket, fitted black technical pants, reconstructed grey leather combat boots. Smudges of projection gel on sleeves. Minor stress visible — dark circles under eyes, tension creases between brows. Restless unfocused energy caught between moments of complete stillness. GLMZ Great Lakes Metropolitan Zone, neon-lit workspace ambient lighting reflecting off bioluminescent hair threads, gritty archive aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 54.2,
-    "Southeast Asian": 17.7,
-    "East Asian": 15.3,
-    "Northern European": 12.8
+    "Hispanic/Latin American": 30.6,
+    "Middle Eastern": 29.9,
+    "Sub-Saharan African": 18.5,
+    "Central Asian": 8.8,
+    "Indigenous American": 6.5,
+    "Pacific Islander": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 12
+      },
+      "Caribbean": {
+        "Puerto Rican": 18.6
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 1.6,
+        "Afghan Dari": 28.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 14.6
+      },
+      "Southern African": {
+        "Zimbabwean": 0.6,
+        "Mozambican": 0.4
+      },
+      "West African": {
+        "Liberian": 1.7,
+        "Nigerian": 1.2
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 3.1,
+        "Uyghur": 1.3
+      },
+      "Iranian Central": {
+        "Tajik": 1.6,
+        "Hazara": 1
+      },
+      "Mongolic": {
+        "Mongolian": 0.7,
+        "Kalmyk": 1.1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 1.2,
+        "Menominee": 4
+      },
+      "Mesoamerican": {
+        "Maya": 0.6,
+        "Zapotec": 0.7
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 3
+      },
+      "Polynesian": {
+        "Tongan": 2.3
+      },
+      "Micronesian": {
+        "Kiribati": 0.2,
+        "Marshallese": 0.2
+      }
+    }
+  }
 }

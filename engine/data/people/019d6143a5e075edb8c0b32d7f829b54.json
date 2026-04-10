@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e075edb8c0b32d7f829b54",
   "type": "character",
-  "name": "Slate Zidane-Björnsdóttir",
+  "name": "Slate Cervantes-Echeverría",
   "aliases": [
     "The Gun",
     "RL-2",
@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "Western border — bunks at the farmstead but spends most of his time in the field",
-  "description": "Cutter Vane has killed more Behemoths than anyone currently operating on M88's western border. Not the most ever — that record belongs to a Gleaner named Doss who went out eleven years ago and did not return — but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don't die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter's count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge — the border communities where GLMZ's governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn't feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn't be. She trained him, kept him alive, and watched him become the most effective field operative she'd ever worked with. She also watched him become colder with each raid, and that's the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator — no wasted motion, constant awareness, an animal stillness when he's watching something. His eyes are the most unsettling thing about him — pale, steady, and focused in a way that makes people feel like terrain being assessed.",
+  "description": "Slate Cervantes-Echeverría has killed more Behemoths than anyone currently operating on M88's western border. Not the most ever — that record belongs to a Gleaner named Doss who went out eleven years ago and did not return — but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don't die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter's count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge — the border communities where GLMZ's governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn't feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn't be. She trained him, kept him alive, and watched him become the most effective field operative she'd ever worked with. She also watched him become colder with each raid, and that's the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator — no wasted motion, constant awareness, an animal stillness when he's watching something. His eyes are the most unsettling thing about him — pale, steady, and focused in a way that makes people feel like terrain being assessed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -178,7 +178,7 @@
     "Tactician": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Western border",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -196,47 +196,24 @@
     "Crucible Industries Talon-5 'Jackknife'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Eastline",
     "The Nearfield",
-    "Flicker",
+    "Plot 17",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+    "GLMZ",
     "The Gleaner Brigades",
     "Iowan Behemoth Agricultural Platform",
     "VitaCore FlowGuard Hemodynamic Regulator",
+    "Slate",
+    "GLMZ",
     "The Iowa Exclusion Zone",
     "The Pale Mile",
     "Elena Vasquez-9",
-    "Weathervane",
-    "Alper Holmberg-Dembele",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Combat Falchion CF-5 'Cleaver'",
-    "Arcturus HX-1 'Headsman'",
-    "Cem Watanabe-Amponsah",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Crucible RE-2 'Receptionist'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Kamala Mori-Sefa",
-    "Lazarus IDP-1 'Teeth'",
-    "Patient Zero",
-    "Photonic Stress Fracture Pistol PSFP-3 'Cleaver'",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy",
-    "Yolanda Dzhaksybekov-Ferreira"
+    "Weathervane"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "North African-Southeast Asian-Hispanic blend with Eastern European undertones. The mix produces warm, deep-toned skin with subtle golden undertones beneath a weathered surface. His facial structure reflects the broader cheekbones and softer angles of Southeast Asian ancestry combined with the pronounced bone structure of North African heritage, creating a face that is both sharp and rounded in unexpected places.",
+    "heritage": "Predominantly Hispanic/Latin American (55.1%) and Southeast Asian (36.6%) with Eastern European undertones (8.3%). This genetic combination produces warm, medium-to-deep brown skin with golden undertones. His facial structure reflects the broader, softer cheekbones characteristic of Southeast Asian ancestry blended with the defined bone structure and strong jaw of Hispanic heritage, creating balanced proportions—neither purely angular nor rounded. The Eastern European ancestry subtly influences bone density and facial width, contributing to his overall architectural harmony.",
     "height_cm": 182,
     "weight_kg": 74,
     "build": "Lean and angular with corded muscle concentrated in shoulders and forearms — the build of someone who carries weight efficiently and rarely carries excess. Decades of field work have stripped him down to functional mass.",
@@ -244,8 +221,8 @@
     "hair_style": "Pulled back tight or shaved short; utilitarian, never styled",
     "hair_length": "Short",
     "eye_color": "Deep brown with visible augmentation circuitry at the iris margins — targeting calculations flicker behind the pupil in low light",
-    "skin_tone": "Rich warm brown, sun-deepened to near mahogany across exposed areas. The undertone speaks of North African and Southeast Asian ancestry, with subtle golden highlights that catch in direct light. Weathered and textured from decades of exposure, but the base tone is distinctly warm rather than cool.",
-    "complexion": "Broad cheekbones with slightly softer angles than pure European stock, characteristic of Southeast Asian and North African blending. Sharp jawline with defined bone structure. Permanent squint lines radiate from the corners of his eyes. Several thin scars bracket his left eye and temple. His skin has the texture of someone who doesn't moisturize and spends too much time in wind. No facial hair — he shaves every morning without fail.",
+    "skin_tone": "Warm medium-to-deep brown, sun-deepened to mahogany across exposed areas. The undertone reflects the golden warmth of Southeast Asian and Hispanic ancestry blended with the subtle coolness of Eastern European genetics, creating a complex warm-neutral foundation. Weathered and textured from decades of exposure.",
+    "complexion": "Broad, defined cheekbones with balanced facial angles reflecting Southeast Asian and Hispanic blending, with subtle Eastern European influence in bone structure density. Strong, squared jawline with pronounced bone architecture. Permanent squint lines radiate from the corners of his eyes. Several thin scars bracket his left eye and temple. His skin has the texture of someone who doesn't moisturize and spends too much time in wind. No facial hair — he shaves every morning without fail.",
     "distinguishing_marks": [
       "Thin scar running from left temple to cheekbone, approximately 8cm, slightly lighter than surrounding skin — old knife wound from raid gone wrong",
       "Burn scars across the back of both hands — pale, irregular patches from Behemoth thermal discharge encounter",
@@ -254,17 +231,48 @@
     ],
     "visible_augmentations": "Faint silver circuitry visible at the outer corners of both eyes when light hits them at certain angles. When engaged in targeting, his pupils dilate unnaturally and a barely-perceptible luminescence traces patterns across his sclera. No external chrome — all augmentations are subcutaneous or internal. His arms and shoulders move with mechanical precision that reads as inhuman economy of motion rather than visible robotics.",
     "posture_movement": "Moves with absolute stillness when stationary — predator at rest. When mobile, every motion is economical and purposeful; no fidgeting, no nervous tics. He walks with his weight forward slightly, balanced for immediate action. His head moves constantly in small increments, scanning. When sitting, he positions himself facing entry points and with sightlines to exits. He does not relax.",
-    "clothing_style": "Tier 4 field operative standard — weathered reinforced canvas cargo pants, insulated tactical boots with good tread, layered synthetic underlayers. Over this: a faded Gleaner-issue grey-green combat jacket with reinforced shoulders and multiple weapon/tool attachment points. The jacket has been patched and re-patched. He wears a simple nylon neck gaiter for dust and sun protection. A worn black baseball cap, brim curved from years of wear. No jewelry, no status symbols, nothing that doesn't serve function. Everything is worn, maintained, and replaced only when it fails. His gear smells like gun oil, sweat, and prairie dust."
+    "clothing_style": "Tier 4 field operative standard — weathered reinforced canvas cargo pants, insulated tactical boots with good tread, layered synthetic underlayers. Over this: a faded Gleaner-issue grey-green combat jacket with reinforced shoulders and multiple weapon/tool attachment points. The jacket has been patched and re-patched. He wears a simple nylon neck gaiter for dust and sun protection. A worn black baseball cap, brim curved from years of wear. No jewelry, no status symbols, nothing that doesn't serve function. Everything is worn, maintained, and replaced only when it fails.",
+    "image_prompt": "Slate Cervantes-Echeverría, GLMZ, 182cm lean angular operative with warm mahogany skin and Southeast Asian-Hispanic blended features, strong defined cheekbones and squared jaw. Deep brown augmented eyes with silver circuitry at iris margins. Dusty brown hair sun-bleached blonde at tips, pulled back short. Weathered face with permanent squint lines and thin scars bracketing left eye, temple to cheekbone. Burn scars on back of hands. Wearing faded grey-green Gleaner combat jacket with reinforced shoulders and multiple attachment points, patched and re-patched, weathered cargo pants, tactical boots, worn black baseball cap, nylon neck gaiter. Gun oil and prairie dust. Predator stillness, economic movement, scanning head position. Low moody lighting, night industrial setting with sightlines to exits, cold blue and amber practical lighting, cinematic tactical environment, ultra-realistic detail, weathered and functional --ar 2:3 --v 6"
   },
-  "image_prompt": "Slate Zidane-Björnsdóttir, 182cm lean angular operative, deep warm mahogany-brown skin weathered and textured, broad cheekbones blending Southeast Asian and North African features with sharp Germanic jawline. Short dusty brown hair sun-bleached at tips, ice-blue eyes with visible silver augmentation circuitry at iris margins that flickers with targeting calculations. Thin scars bracket left temple and eye. Burn scars pale across back of both hands. Predatory stillness, head tilted in constant scanning micro-movements. Wearing faded grey-green Gleaner-issue combat jacket with reinforced shoulders, patched and worn from decades of field work, black baseball cap with curved brim, nylon neck gaiter, weathered reinforced cargo pants, insulated tactical boots. Gun oil and prairie dust smell practically visible. Industrial cyberpunk 2220s GLMZ setting, harsh neon lighting casting shadows across scarred hands and augmented eyes, positioned at exit sightline with complete tactical awareness. Cyberpunk 2200s, gritty realism, predator at rest --ar 2:3 --v 6",
+  "image_prompt": "Slate Cervantes-Echeverría, GLMZ, 182cm lean angular operative with warm mahogany skin and Southeast Asian-Hispanic blended features, strong defined cheekbones and squared jaw. Deep brown augmented eyes with silver circuitry at iris margins. Dusty brown hair sun-bleached blonde at tips, pulled back short. Weathered face with permanent squint lines and thin scars bracketing left eye, temple to cheekbone. Burn scars on back of hands. Wearing faded grey-green Gleaner combat jacket with reinforced shoulders and multiple attachment points, patched and re-patched, weathered cargo pants, tactical boots, worn black baseball cap, nylon neck gaiter. Gun oil and prairie dust. Predator stillness, economic movement, scanning head position. Low moody lighting, night industrial setting with sightlines to exits, cold blue and amber practical lighting, cinematic tactical environment, ultra-realistic detail, weathered and functional --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 38.3,
-    "Southeast Asian": 33.6,
-    "Hispanic/Latin American": 14.7,
-    "Eastern European": 13.4
+    "Hispanic/Latin American": 55.1,
+    "Southeast Asian": 36.6,
+    "Eastern European": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Chilean": 37
+      },
+      "Mexican": {
+        "Mexican": 18.1
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 21.7
+      },
+      "Vietnamese": {
+        "Vietnamese": 14.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 1.6,
+        "Belarusian": 0.2
+      },
+      "Magyar-Romanian": {
+        "Romanian": 2.1
+      },
+      "Slavic West": {
+        "Polish": 3.2,
+        "Czech": 1.2
+      }
+    }
+  }
 }

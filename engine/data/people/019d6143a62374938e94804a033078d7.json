@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62374938e94804a033078d7",
   "type": "character",
-  "name": "Zara Mbekele-Ingebrigtsen-Dalgaard",
+  "name": "Zara Bautista-Wójcik-Dlamini",
   "aliases": [
     "Yoke",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 59,
   "status": "active",
   "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
-  "description": "Halima Akerblom-Manu are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 59, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a data thief out of Burnside Corridor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHalima Akerblom-Manu operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Zara Bautista-Wójcik-Dlamini are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 59, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a data thief out of Burnside Corridor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nZara Bautista-Wójcik-Dlamini operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.81,
@@ -264,7 +264,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Burnside Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,37 +278,18 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
     "The Heritage Vault",
+    "Diaspora Table",
     "Burnside Pocket",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "GLMZ",
     "Stratum",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
+    "Circuit",
     "Compass Rose",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Isadora Mwangi-Thorvaldsen",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Prophet",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA CR-12 'Whisper'",
-    "The Narrows"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian dominant with significant East Asian and Sub-Saharan African ancestry — a complex genetic blend reflecting the Ubiquitous Diaspora. The result is a face and frame that resists easy categorization, drawing strength from three continental regions.",
+    "heritage": "Complex Pan-African, Eastern European, Hispanic/Latin American, Middle Eastern, and South Asian blend — 37.6% Sub-Saharan African ancestry dominates, with significant Eastern European (23.1%), Hispanic/Latin American (18.8%), and Middle Eastern (14.8%) heritage, rounded by 5.7% South Asian. The result is a face and frame that resists easy categorization, drawing strength from five continental regions in a distinctly Ubiquitous Diaspora combination.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Rawboned and lean — minimal body fat, long limbs built for speed rather than power. Decades of confined-space combat training have carved efficiency into every muscle. No wasted mass.",
@@ -316,8 +297,8 @@
     "hair_style": "Pulled back in a tight, practical braid secured with a steel cable tie",
     "hair_length": "Long",
     "eye_color": "Chrome iris rings with amber pupil dilation — cybernetic enhancement visible in lowlight",
-    "skin_tone": "Warm golden-brown with slight olive undertones — the complexion of someone who spends more time in artificial light than sunlight, carrying the blended warmth of Southeast and East Asian heritage with deeper shadows from Sub-Saharan ancestry",
-    "complexion": "Lean, angular face with prominent high cheekbones and a sharp, defined jaw. The bone structure reflects East and Southeast Asian ancestry with subtle broadening through the cheeks. Skin is weathered but clean — no cosmetic concern, only functional maintenance. Lines around the eyes from decades of focus, with the characteristic eye shape showing East Asian influence. The face resists easy categorization — distinctly their own.",
+    "skin_tone": "Warm golden-brown with subtle bronze and amber undertones — the complexion of someone who spends more time in artificial light than sunlight, carrying the blended warmth of Sub-Saharan and Hispanic/Latin American heritage with refined bone structure influenced by Eastern European ancestry and Middle Eastern warmth",
+    "complexion": "Lean, angular face with prominent high cheekbones and a sharp, defined jaw. The bone structure reflects the multi-continental ancestry — broad cheekbones and full lips characteristic of Sub-Saharan and Hispanic/Latin American heritage, refined by the angular features and tighter facial planes of Eastern European ancestry, with subtle Middle Eastern influence in the nose bridge prominence and eye placement. Warm bronze undertones beneath the golden-brown skin create depth and dimension. Skin is weathered but clean — no cosmetic concern, only functional maintenance. Lines around the eyes from decades of focus. The face resists easy categorization — distinctly their own.",
     "distinguishing_marks": [
       "Thin surgical scar running 4cm along the left temple, partially obscured by the hairline — old combat injury, professionally closed",
       "Series of three parallel burn marks across the right forearm, each 2-3cm long and faded to white — chemical splash from a failed extraction, circa 2211",
@@ -327,14 +308,69 @@
     "posture_movement": "Stands with shoulders slightly forward, weight balanced on the balls of the feet — never fully relaxed, always ready. Movements are economical and precise, no extraneous motion. Eyes scan environments methodically. When they move through space, it's with the calculated efficiency of someone trained in confined-space tactics.",
     "clothing_style": "Tier 4 pragmatist. Black or dark gray fitted synthetic bodysuit with modular cargo pockets — reinforced stitching, thermal-damping weave for stealth. Over this, a lightweight gray tech-jacket with reflective piping, minimal branding. Worn boots — expensive once, now broken in. No jewelry except the cable tie in their hair. Everything is functional, replaceable, and kept in good repair. Nothing screams wealth or poverty — calculated invisibility."
   },
-  "image_prompt": "Zara Mbekele-Ingebrigtsen-Dalgaard, 183cm tall mixed-heritage woman with Southeast Asian, East Asian, and Sub-Saharan African ancestry. Golden-brown skin with olive undertones, warm complexion weathered by decades of confined-space operations. Angular, sharp-featured face with high cheekbones and defined jawline. Chrome iris rings with amber pupils glowing faintly in thermal mode. Salt-and-pepper gray hair pulled back in tight practical braid with steel cable tie. Visible cybernetic reflex ports along both sides of neck as metallic nodes with faint blue bioluminescence. Thin surgical scar along left temple, white burn marks across right forearm, small gray compass rose tattoo at left wrist. Raw, lean 68kg build with minimal body fat, long limbs carved for speed. Black fitted synthetic bodysuit with modular cargo pockets, lightweight gray tech-jacket with reflective piping, worn-in expensive boots. Posture forward-balanced on balls of feet, shoulders slightly tense. Standing in neon-lit cyberpunk 2200s environment, scanning surroundings with methodical precision. Mood: calculated, dangerous, professional. Lighting: artificial low-light with thermal glow from augmentations. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Zara Bautista-Wójcik-Dlamini, lean 183cm frame with rawboned efficiency, warm golden-brown skin with bronze and amber undertones blending Sub-Saharan, Eastern European, Hispanic, Middle Eastern and South Asian heritage. Angular face with prominent high cheekbones, sharp jaw, broad cheekbones and full lips refined by Eastern European bone structure. Salt-and-pepper gray hair in tight practical braid secured with steel cable tie. Chrome iris rings with amber pupils, cybernetic implants glowing faintly. Wired reflex ports visible along neck as metallic nodes with blue bioluminescence. Surgical scar on left temple, three parallel white burn marks across right forearm, small compass rose tattoo on wrist. Black fitted synthetic bodysuit with thermal-damping weave, lightweight gray tech-jacket with reflective piping, worn expensive boots. Standing in alert posture with shoulders forward, weight on balls of feet. Calculating gaze scanning environment. Neo-noir neon lighting casting blue and amber shadows, slightly underlit to highlight augmentation glow. Mood: ready, efficient, dangerous. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 52.9,
-    "East Asian": 25.1,
-    "Sub-Saharan African": 22.0
+    "Sub-Saharan African": 37.6,
+    "Eastern European": 23.1,
+    "Hispanic/Latin American": 18.8,
+    "Middle Eastern": 14.8,
+    "South Asian": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 15.5
+      },
+      "Southern African": {
+        "South African": 8,
+        "Zimbabwean": 5.6
+      },
+      "East African": {
+        "Somali": 7.9,
+        "Ugandan": 0.6
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 18.1
+      },
+      "Slavic South": {
+        "Bulgarian": 2.6,
+        "Slovenian": 1.6
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 10
+      },
+      "Mexican": {
+        "Mexican": 4.7
+      },
+      "Caribbean": {
+        "Cuban": 3.4,
+        "Haitian": 0.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 14.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 3.5
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1.8,
+        "Tamil Sri Lankan": 0.4
+      }
+    }
+  }
 }

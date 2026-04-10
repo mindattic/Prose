@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fc70c6bdbf49fac370a55e",
   "type": "character",
-  "name": "Frost Deshpande",
+  "name": "Frost Boudiaf",
   "aliases": [
     "Old Harbor"
   ],
@@ -88,7 +88,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -102,7 +102,7 @@
   "registered_firearms": [],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant South Asian and Northern European ancestry, complemented by Hispanic/Latin American and Southeast Asian heritage. A striking genetic blend resulting in warm, complex features that reflect his truly global ancestry.",
+    "heritage": "A striking blend of East Asian (31.4%), Sub-Saharan African (28.1%), North African (24.3%), and Southeast Asian (16.2%) ancestry. The East Asian and Southeast Asian elements contribute angular cheekbones and a moderate nose bridge, while Sub-Saharan and North African heritage manifests in warm skin depth and prominent facial structure. Complex phenotype reflecting true cosmopolitan genetic signature of the Ubiquitous Diaspora—no single lineage dominates, creating balanced, multifaceted features.",
     "height_cm": 182,
     "weight_kg": 89,
     "build": "Broad-shouldered and sturdy, with the weathered muscularity of someone who spent decades on water. Slight thickening at the midsection from age and desk work, but core strength evident in posture.",
@@ -110,36 +110,63 @@
     "hair_style": "Slicked back and trimmed close at the sides, kept practical and functional",
     "hair_length": "Short",
     "eye_color": "Amber-brown with darker striations",
-    "skin_tone": "Warm medium-brown with golden and subtle reddish undertones from his diverse ancestry—sun-darkened and weathered from years of harbor exposure, creating a rich, complex complexion",
-    "complexion": "Weathered and lined, particularly around the eyes and forehead, with facial bone structure reflecting his South Asian and Sub-Saharan heritage—broad nose, defined cheekbones softened by age. Jaw remains sharp despite age. Three-day stubble is his default grooming state. Crow's feet suggest a history of squinting into glare off the water.",
+    "skin_tone": "Medium to medium-deep brown with warm golden undertones, reflecting the balanced blend of East Asian, Sub-Saharan, North African, and Southeast Asian heritage. Sun-darkened and weathered from years of harbor exposure, creating a rich, complex complexion with subtle warmth beneath.",
+    "complexion": "Weathered and lined, particularly around the eyes and forehead. Facial bone structure reflects the multilayered ancestry—prominent angular cheekbones, moderate nose bridge width characteristic of the genetic blend, subtle fullness balanced across the face. Jaw remains sharp despite weathering. Three-day stubble is his default grooming state. Crow's feet suggest a history of squinting into glare off the water.",
     "distinguishing_marks": [
       "Faded anchor tattoo on left forearm, ink bleeding slightly with age",
       "Surgical scar along left collarbone, approximately 8cm, from a dock accident in his thirties",
       "Burn scar on the back of right hand, irregular shape, consistent with coolant splash",
       "Deep vertical crease between eyebrows from decades of concentration and frowning"
     ],
-    "visible_augmentations": "None visible. Osei-Svanstrom favors invisibility in his work.",
+    "visible_augmentations": "None visible. Favors invisibility in his work.",
     "posture_movement": "Moves with measured deliberation, economical gestures. Stands with weight balanced, feet shoulder-width apart—a harbor man's stance. Hands often rest on table or lap. Direct eye contact. Minimal facial expression; communication relies on tone and word choice rather than animation.",
-    "clothing_style": "Tier 3-4 practical wear. Heavy canvas work jacket, navy or charcoal, with deep pockets and reinforced seams. Thermal undershirt. Worn denim or canvas trousers with tool loops. Steel-toed boots, scuffed and well-maintained. A simple titanium ring on his left ring finger—no wedding band, just a memorial marker. Occasionally wears a faded GLMZ Harbor Authority cap from a previous life. No visible corpo branding; his clothes are functional, durable, replaceable."
+    "clothing_style": "Tier 3-4 practical wear. Heavy canvas work jacket, navy or charcoal, with deep pockets and reinforced seams. Thermal undershirt. Worn denim or canvas trousers with tool loops. Steel-toed boots, scuffed and well-maintained. A simple titanium ring on his left ring finger—no wedding band, just a memorial marker. Occasionally wears a faded GLMZ Harbor Authority cap from a previous life. No visible corpo branding; clothes are functional, durable, replaceable."
   },
-  "image_prompt": "Frost Deshpande, cyberpunk 2226, weathered 50s man with warm golden-brown complexion reflecting global ancestry, sharp jaw softened by age, amber-brown eyes with intense gaze. Salt-and-pepper hair slicked back, close-trimmed sides. Faded anchor tattoo visible on left forearm, surgical scar along collarbone. Three-day stubble, deep concentration crease between brows. Wearing heavy navy canvas work jacket with reinforced seams, thermal undershirt, worn denim trousers, scuffed steel-toed boots. Simple titanium ring on left hand. Harbor-worker posture, economical stance, direct eye contact. Moody neon-lit harbor district setting, rain-slicked surfaces reflecting blue and amber cyberlights, vintage industrial backdrop. Serious expression, minimal animation. Film noir lighting with cold undertones. --ar 2:3 --v 6",
+  "image_prompt": "Frost Boudiaf, 182cm tall man with medium-deep warm brown skin blending East Asian, Sub-Saharan, North African and Southeast Asian heritage. Salt-and-pepper gray hair slicked back, short sides. Angular weathered face with prominent cheekbones, moderate nose bridge, amber-brown eyes with striations, deep frown crease between brows. Three-day stubble. Crow's feet from years of harbor work. Faded anchor tattoo on left forearm. Surgical scar on left collarbone visible at neckline. Wears heavy navy canvas work jacket, thermal undershirt, worn denim trousers, scuffed steel-toed boots. Simple titanium memorial ring on left ring finger. Broad-shouldered sturdy build with subtle age at midsection. Standing with balanced harbor worker's stance, hands relaxed. Direct gaze, minimal expression. Dim neon-lit harbor district setting, cool blues and amber dock lights reflecting off wet concrete. GLMZ, utilitarian aesthetic, measured deliberate presence. --ar 2:3 --v 6",
   "related_entities": [
-    "Anatoliy Faye-Nkrumah",
-    "GLMZ",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Old Harbor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Pure Hand"
+    "Harbor Fish Shack"
   ],
   "genetic_ancestry": {
-    "Sub-Saharan African": 34.4,
-    "South Asian": 24.5,
-    "Northern European": 22.6,
-    "Hispanic/Latin American": 10.7,
-    "Southeast Asian": 7.8
+    "East Asian": 31.4,
+    "Sub-Saharan African": 28.1,
+    "North African": 24.3,
+    "Southeast Asian": 16.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 31.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 8.1,
+        "Botswanan": 0.1
+      },
+      "Central African": {
+        "Cameroonian": 2.5
+      },
+      "West African": {
+        "Nigerian": 17.4
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 24.3
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 12.8
+      },
+      "Filipino": {
+        "Cebuano": 2.2,
+        "Tagalog": 1.2
+      }
+    }
+  }
 }

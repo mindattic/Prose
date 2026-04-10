@@ -1,19 +1,27 @@
 """
-Genetic Ancestry Generator
+Genetic Ancestry Generator — Three-tier system
 
-Assigns realistic genetic ancestry percentages to all characters based on
-demographic projections for a 2226 Great Lakes megacity. Each character gets
-a unique mix with randomized variation around population-level weights.
+Assigns three levels of ancestry to all characters:
+  genetic_ancestry  — broad regions (East Asian, Northern European, etc.)
+  ancestry_detail   — nested: region → sub-region → nationality with percentages
 
-Ancestry is INDEPENDENT of surname — a person named Szczypiński-Lautoa might
-be genetically 40% Hispanic and 30% East Asian. Surnames follow rarity-selection
-(rare names propagate), genetics follow demographic reality.
+Example output:
+  genetic_ancestry: { "Northern European": 45.0, "East Asian": 35.0 }
+  ancestry_detail: {
+    "Northern European": {
+      "Scandinavian": { "Norwegian": 25.0, "Swedish": 7.5 },
+      "Germanic": { "German": 12.5 }
+    },
+    "East Asian": {
+      "Chinese": { "Cantonese": 20.0, "Fujianese": 15.0 }
+    }
+  }
 
 Usage:
-  python gen_ancestry.py                  # Process all characters
-  python gen_ancestry.py --limit 10       # Test with 10
-  python gen_ancestry.py --dry-run        # Preview without writing
-  python gen_ancestry.py --force          # Overwrite existing ancestry
+  python generate_ancestry.py                  # Process all people
+  python generate_ancestry.py --limit 10       # Test with 10
+  python generate_ancestry.py --dry-run        # Preview without writing
+  python generate_ancestry.py --force          # Overwrite existing ancestry
 """
 
 import json
@@ -23,174 +31,383 @@ import os
 from pathlib import Path
 from constants import DATA_DIR, NON_HUMAN_SPECIES
 
-# ── Population-level ancestry weights for GLMZ 2226 ──────────────────────
-# Based on real projections:
-# - Chicago 2025: 32% White, 30% Hispanic, 27% Black, 7% Asian, 4% multi
-# - US 2060: No majority, Hispanic ~30%, multiracial doubling every generation
-# - Climate displacement by 2100: 2B refugees, mostly coastal Asia/Africa/Americas
-# - 200 years of intermarriage in compressed megacity housing
-# - Mass driver + high-speed rail makes intercontinental travel trivial,
-#   accelerating migration far beyond refugee patterns alone
-#
-# By 2226, everyone is mixed. These are the AVERAGE genetic contributions
-# across the population, with wide individual variation.
-# East Asian and Southeast Asian split into distinct cultural groups —
-# these are separate peoples who strongly identify as such.
+# ══════════════════════════════════════════════════════════════════
+# Tier 1: Broad regional weights (what % of GLMZ genetics)
+# ══════════════════════════════════════════════════════════════════
 
-ANCESTRY_WEIGHTS = {
-    "Sub-Saharan African":     0.20,  # Chicago's existing Black population + African climate refugees
-    "Hispanic/Latin American":  0.18,  # Chicago's 30% Hispanic base + Central/South American displacement
-    "South Asian":              0.12,  # Bangladeshi/Indian coastal refugees — massive displacement (raised from 9%)
-    "Northern European":        0.08,  # Existing Midwest populations, declining birth rates over 200 years
-    "Chinese":                  0.07,  # Largest single source — Shanghai/Guangzhou/Shenzhen coastal displacement
-    "Eastern European":         0.07,  # Economic migration, existing Great Lakes populations (Polish, Russian)
-    "Middle Eastern":           0.05,  # Climate and conflict displacement
-    "Vietnamese":               0.03,  # Major coastal displacement + HSR Pacific Rim corridor
-    "Indigenous American":      0.03,  # Canadian/Great Lakes First Nations + Latin American indigenous
-    "Korean":                   0.02,  # Smaller but highly mobile, tech-connected diaspora
-    "Japanese":                 0.02,  # Island nation displacement, strong cultural preservation
-    "Filipino":                 0.02,  # Archipelago — massive sea-level displacement
-    "Indonesian":               0.02,  # Largest SE Asian country, island chain displacement
-    "Pacific Islander":         0.02,  # Entire island nations displaced (small source populations)
-    "Central Asian":            0.02,  # Mass driver opens Silk Road migration corridor
-    "North African":            0.02,  # Mediterranean climate displacement
-    "Laotian":                  0.01,  # Mekong displacement + HSR connectivity
-    "Cambodian":                0.01,  # Mekong/coastal displacement + HSR connectivity
-    "Thai":                     0.01,  # Coastal displacement, Bangkok flooding
+REGION_WEIGHTS = {
+    "Sub-Saharan African":     0.20,
+    "Hispanic/Latin American":  0.18,
+    "South Asian":              0.12,
+    "East Asian":               0.11,
+    "Southeast Asian":          0.09,
+    "Northern European":        0.08,
+    "Eastern European":         0.07,
+    "Middle Eastern":           0.05,
+    "Indigenous American":      0.04,
+    "Pacific Islander":         0.02,
+    "Central Asian":            0.02,
+    "North African":            0.02,
 }
 
-# Verify weights sum to 1.0
-assert abs(sum(ANCESTRY_WEIGHTS.values()) - 1.0) < 0.001, f"Weights sum to {sum(ANCESTRY_WEIGHTS.values())}"
+assert abs(sum(REGION_WEIGHTS.values()) - 1.0) < 0.01
 
-# ── District demographic skew ─────────────────────────────────────────────
-# Even 200 years out, districts have settlement patterns. These multipliers
-# tilt the population weights slightly — not segregation, just statistical echoes
-# of who settled where first. After applying, weights are re-normalized to 1.0.
+# ══════════════════════════════════════════════════════════════════
+# Tier 2 → Tier 3: Sub-regions and their nationalities
+# Structure: region → { sub_region: { nationality: relative_weight } }
+# Weights are relative within each level (don't need to sum to 1.0,
+# they're normalized during generation)
+# ══════════════════════════════════════════════════════════════════
+
+ANCESTRY_TREE = {
+    "Sub-Saharan African": {
+        "West African": {
+            "Nigerian": 30, "Ghanaian": 20, "Senegalese": 15,
+            "Malian": 10, "Ivorian": 8, "Guinean": 7,
+            "Sierra Leonean": 5, "Liberian": 5,
+        },
+        "East African": {
+            "Ethiopian": 25, "Kenyan": 20, "Somali": 20,
+            "Tanzanian": 15, "Ugandan": 10, "Rwandan": 10,
+        },
+        "Southern African": {
+            "South African": 40, "Zimbabwean": 20, "Mozambican": 15,
+            "Zambian": 15, "Botswanan": 10,
+        },
+        "Central African": {
+            "Congolese": 40, "Cameroonian": 25, "Angolan": 20,
+            "Gabonese": 15,
+        },
+    },
+    "Hispanic/Latin American": {
+        "Mexican": {
+            "Mexican": 100,
+        },
+        "Central American": {
+            "Salvadoran": 30, "Guatemalan": 25, "Honduran": 20,
+            "Nicaraguan": 15, "Costa Rican": 10,
+        },
+        "Caribbean": {
+            "Puerto Rican": 35, "Cuban": 25, "Dominican": 25,
+            "Haitian": 15,
+        },
+        "South American": {
+            "Colombian": 25, "Peruvian": 20, "Brazilian": 20,
+            "Venezuelan": 15, "Ecuadorian": 10, "Chilean": 5,
+            "Argentine": 5,
+        },
+    },
+    "South Asian": {
+        "Indian": {
+            "Tamil": 15, "Bengali": 20, "Punjabi": 15,
+            "Gujarati": 12, "Marathi": 10, "Telugu": 10,
+            "Kannada": 8, "Malayali": 10,
+        },
+        "Bangladeshi": {
+            "Bangladeshi": 100,
+        },
+        "Pakistani": {
+            "Punjabi Pakistani": 40, "Sindhi": 25, "Pashtun": 20,
+            "Baloch": 15,
+        },
+        "Sri Lankan": {
+            "Sinhalese": 60, "Tamil Sri Lankan": 40,
+        },
+        "Nepali": {
+            "Nepali": 100,
+        },
+    },
+    "East Asian": {
+        "Chinese": {
+            "Cantonese": 25, "Fujianese": 15, "Shanghainese": 20,
+            "Mandarin Northern": 20, "Sichuanese": 10, "Hakka": 10,
+        },
+        "Korean": {
+            "Korean": 100,
+        },
+        "Japanese": {
+            "Japanese": 100,
+        },
+    },
+    "Southeast Asian": {
+        "Vietnamese": {
+            "Vietnamese": 100,
+        },
+        "Filipino": {
+            "Tagalog": 40, "Cebuano": 25, "Ilocano": 15,
+            "Bicolano": 10, "Waray": 10,
+        },
+        "Indonesian": {
+            "Javanese": 45, "Sundanese": 20, "Balinese": 15,
+            "Sumatran": 20,
+        },
+        "Thai": {
+            "Thai": 100,
+        },
+        "Laotian": {
+            "Laotian": 100,
+        },
+        "Cambodian": {
+            "Khmer": 100,
+        },
+    },
+    "Northern European": {
+        "Scandinavian": {
+            "Norwegian": 25, "Swedish": 30, "Danish": 20,
+            "Finnish": 15, "Icelandic": 10,
+        },
+        "Germanic": {
+            "German": 55, "Austrian": 20, "Swiss German": 15,
+            "Dutch": 10,
+        },
+        "British Isles": {
+            "English": 40, "Scottish": 20, "Irish": 25,
+            "Welsh": 15,
+        },
+    },
+    "Eastern European": {
+        "Slavic West": {
+            "Polish": 45, "Czech": 25, "Slovak": 15,
+            "Sorbian": 15,
+        },
+        "Slavic East": {
+            "Russian": 35, "Ukrainian": 35, "Belarusian": 30,
+        },
+        "Slavic South": {
+            "Serbian": 25, "Croatian": 25, "Bosnian": 20,
+            "Slovenian": 15, "Bulgarian": 15,
+        },
+        "Magyar-Romanian": {
+            "Hungarian": 50, "Romanian": 50,
+        },
+    },
+    "Middle Eastern": {
+        "Persian": {
+            "Iranian": 70, "Tajik Persian": 15, "Afghan Dari": 15,
+        },
+        "Arab Levantine": {
+            "Lebanese": 25, "Syrian": 25, "Palestinian": 25,
+            "Jordanian": 25,
+        },
+        "Arab Gulf": {
+            "Iraqi": 40, "Yemeni": 30, "Kuwaiti": 15,
+            "Emirati": 15,
+        },
+        "Kurdish": {
+            "Kurdish": 100,
+        },
+    },
+    "Indigenous American": {
+        "Great Lakes Nations": {
+            "Ojibwe": 35, "Potawatomi": 30, "Menominee": 20,
+            "Ho-Chunk": 15,
+        },
+        "Plains Nations": {
+            "Lakota": 35, "Cherokee": 30, "Choctaw": 20,
+            "Muscogee": 15,
+        },
+        "Mesoamerican": {
+            "Nahua": 40, "Maya": 35, "Zapotec": 15,
+            "Mixtec": 10,
+        },
+        "Andean": {
+            "Quechua": 50, "Aymara": 30, "Mapuche": 20,
+        },
+    },
+    "Pacific Islander": {
+        "Polynesian": {
+            "Samoan": 30, "Tongan": 25, "Hawaiian": 20,
+            "Tuvaluan": 15, "Tokelauan": 10,
+        },
+        "Melanesian": {
+            "Fijian": 50, "Papua New Guinean": 30, "Ni-Vanuatu": 20,
+        },
+        "Micronesian": {
+            "Marshallese": 35, "Kiribati": 35, "Palauan": 30,
+        },
+    },
+    "Central Asian": {
+        "Turkic": {
+            "Kazakh": 30, "Uzbek": 25, "Kyrgyz": 20,
+            "Turkmen": 15, "Uyghur": 10,
+        },
+        "Mongolic": {
+            "Mongolian": 60, "Buryat": 25, "Kalmyk": 15,
+        },
+        "Iranian Central": {
+            "Tajik": 60, "Hazara": 40,
+        },
+    },
+    "North African": {
+        "Maghreb": {
+            "Moroccan": 30, "Algerian": 25, "Tunisian": 20,
+            "Libyan": 10, "Mauritanian": 15,
+        },
+        "Nile Valley": {
+            "Egyptian": 60, "Sudanese": 40,
+        },
+        "Amazigh": {
+            "Berber": 50, "Tuareg": 30, "Kabyle": 20,
+        },
+    },
+}
+
+# ══════════════════════════════════════════════════════════════════
+# District demographic skew
+# ══════════════════════════════════════════════════════════════════
+
 DISTRICT_MODIFIERS = {
     "The Spires": {
-        # Corpo elite — overrepresents historically wealthy diaspora
-        "Northern European": 1.6, "Chinese": 1.4, "Japanese": 1.4,
-        "Korean": 1.3, "South Asian": 1.2,
-        # Underrepresents climate refugee descendants
+        "Northern European": 1.6, "East Asian": 1.4,
+        "South Asian": 1.2,
         "Sub-Saharan African": 0.7, "Pacific Islander": 0.6,
     },
     "Meridian Core": {
-        # Business center — similar to Spires but less extreme
-        "Northern European": 1.3, "Chinese": 1.2, "Japanese": 1.2,
+        "Northern European": 1.3, "East Asian": 1.2,
         "Eastern European": 1.1,
     },
     "The Circuit": {
-        # Tech district — overrepresents tech-connected diaspora
-        "Chinese": 1.3, "Korean": 1.4, "South Asian": 1.3,
-        "Japanese": 1.3, "Vietnamese": 1.2,
+        "East Asian": 1.4, "South Asian": 1.3,
+        "Southeast Asian": 1.2,
     },
     "The Shelf": {
-        # Working class — overrepresents climate refugee descendants
-        "South Asian": 1.3, "Vietnamese": 1.3, "Filipino": 1.3,
-        "Indonesian": 1.2, "Sub-Saharan African": 1.2,
-        "Laotian": 1.3, "Cambodian": 1.3, "Thai": 1.2,
-        # Underrepresents corpo groups
+        "South Asian": 1.3, "Southeast Asian": 1.3,
+        "Sub-Saharan African": 1.2,
         "Northern European": 0.8,
     },
     "The Laceworks": {
-        # Manufacturing/craft district
         "Eastern European": 1.3, "Hispanic/Latin American": 1.2,
-        "Chinese": 1.1, "Filipino": 1.2,
+        "East Asian": 1.1, "Southeast Asian": 1.2,
     },
     "Old Harbor": {
-        # Historic port — reflects waves of immigration history
         "Eastern European": 1.3, "Hispanic/Latin American": 1.2,
         "Sub-Saharan African": 1.1, "Middle Eastern": 1.2,
         "North African": 1.3,
     },
     "The Underworld": {
-        # Underground/marginalized communities
         "Hispanic/Latin American": 1.2, "Sub-Saharan African": 1.2,
         "Pacific Islander": 1.3, "Indigenous American": 1.3,
     },
-    "Nomadic": {
-        # No fixed district — maximally diverse, no skew
-    },
+    "Nomadic": {},
 }
 
 
-def generate_ancestry(seed_name: str, district: str = None) -> dict:
+def weighted_pick(items, rng, count=1):
+    """Pick count items from {name: weight} dict, weighted, no replacement."""
+    picked = []
+    avail = list(items.items())
+    for _ in range(min(count, len(avail))):
+        if not avail:
+            break
+        total = sum(w for _, w in avail)
+        r = rng.uniform(0, total)
+        cum = 0
+        for i, (name, w) in enumerate(avail):
+            cum += w
+            if r <= cum:
+                picked.append(name)
+                avail.pop(i)
+                break
+    return picked
+
+
+def distribute_percentage(pct, items, rng):
+    """Distribute a percentage among items using Dirichlet-like randomness."""
+    if len(items) == 1:
+        return {items[0]: pct}
+
+    raw = [rng.gammavariate(2.0, 1.0) for _ in items]
+    raw[0] *= rng.uniform(1.3, 2.0)
+    total = sum(raw)
+
+    result = {}
+    for item, rv in zip(items, raw):
+        result[item] = round(rv / total * pct, 1)
+
+    # Fix rounding
+    diff = round(pct - sum(result.values()), 1)
+    result[items[0]] = round(result[items[0]] + diff, 1)
+
+    return {k: v for k, v in result.items() if v > 0}
+
+
+def generate_ancestry(seed, district=None):
     """
-    Generate a realistic genetic ancestry mix for one character.
-    Uses the character's name as a random seed for deterministic results.
-    Optionally adjusts weights based on district demographics.
-
-    Each person gets 3-6 ancestry components (nobody is 19-way split evenly).
-    Components are drawn from the population weights but with significant
-    individual variation — some people are 60% one group, others are 20/20/20/20/20.
+    Generate three-tier ancestry for one character.
+    Returns (genetic_ancestry, ancestry_detail) tuple.
     """
-    rng = random.Random(seed_name)
+    rng = random.Random(seed)
 
-    # How many ancestry components this person has (3-6)
-    num_components = rng.randint(3, 6)
+    num_regions = rng.randint(3, 6)
 
-    # Apply district modifiers if applicable
-    base_weights = dict(ANCESTRY_WEIGHTS)
+    # Apply district modifiers
+    base_weights = dict(REGION_WEIGHTS)
     if district and district in DISTRICT_MODIFIERS:
-        modifiers = DISTRICT_MODIFIERS[district]
-        for group, mult in modifiers.items():
+        for group, mult in DISTRICT_MODIFIERS[district].items():
             if group in base_weights:
                 base_weights[group] *= mult
-        # Re-normalize to 1.0
         total_w = sum(base_weights.values())
         base_weights = {k: v / total_w for k, v in base_weights.items()}
 
-    # Select which groups appear — weighted by population frequency
-    groups = list(base_weights.keys())
-    weights = list(base_weights.values())
+    # Tier 1: Pick broad regions
+    selected_regions = weighted_pick(base_weights, rng, num_regions)
 
-    # Pick components without replacement, weighted
-    selected = []
-    remaining_groups = list(zip(groups, weights))
-    for _ in range(min(num_components, len(remaining_groups))):
-        total = sum(w for _, w in remaining_groups)
-        r = rng.uniform(0, total)
-        cumulative = 0
-        for i, (g, w) in enumerate(remaining_groups):
-            cumulative += w
-            if r <= cumulative:
-                selected.append(g)
-                remaining_groups.pop(i)
-                break
-
-    # Assign random percentages that sum to 100
-    # Use a Dirichlet-like distribution: generate random values, normalize
-    raw = [rng.gammavariate(2.0, 1.0) for _ in selected]
-
-    # Give the first 1-2 components extra weight (people tend to have
-    # 1-2 dominant ancestries, not an even spread)
+    # Assign percentages to regions
+    raw = [rng.gammavariate(2.0, 1.0) for _ in selected_regions]
     if len(raw) >= 2:
         raw[0] *= rng.uniform(1.5, 3.0)
         raw[1] *= rng.uniform(1.2, 2.0)
-
     total = sum(raw)
-    percentages = [round(r / total * 100, 1) for r in raw]
+    region_pcts = [round(r / total * 100, 1) for r in raw]
+    diff = round(100.0 - sum(region_pcts), 1)
+    region_pcts[0] = round(region_pcts[0] + diff, 1)
 
-    # Fix rounding to sum to exactly 100
-    diff = round(100.0 - sum(percentages), 1)
-    percentages[0] = round(percentages[0] + diff, 1)
-
-    # Build the result dict, sorted by percentage descending
-    ancestry = dict(sorted(
-        zip(selected, percentages),
+    broad = dict(sorted(
+        zip(selected_regions, region_pcts),
         key=lambda x: -x[1]
     ))
+    broad = {k: v for k, v in broad.items() if v > 0}
 
-    # Drop any that rounded to 0
-    ancestry = {k: v for k, v in ancestry.items() if v > 0}
+    # Tier 2 + 3: Break each region into sub-regions and nationalities
+    detail = {}
+    for region, region_pct in broad.items():
+        tree = ANCESTRY_TREE.get(region, {})
+        if not tree:
+            continue
 
-    return ancestry
+        # Pick 1-3 sub-regions from this region
+        sub_region_weights = {sr: sum(nats.values()) for sr, nats in tree.items()}
+        num_subs = min(rng.randint(1, 3), len(sub_region_weights))
+        selected_subs = weighted_pick(sub_region_weights, rng, num_subs)
+
+        # Distribute region percentage among sub-regions
+        sub_pcts = distribute_percentage(region_pct, selected_subs, rng)
+
+        region_detail = {}
+        for sub_region, sub_pct in sub_pcts.items():
+            nationalities = tree.get(sub_region, {})
+            if not nationalities:
+                continue
+
+            # Pick 1-2 nationalities from this sub-region
+            num_nats = min(rng.randint(1, 2), len(nationalities))
+            selected_nats = weighted_pick(nationalities, rng, num_nats)
+
+            # Distribute sub-region percentage among nationalities
+            nat_pcts = distribute_percentage(sub_pct, selected_nats, rng)
+
+            region_detail[sub_region] = nat_pcts
+
+        if region_detail:
+            detail[region] = region_detail
+
+    return broad, detail
 
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="Generate genetic ancestry for characters")
-    parser.add_argument("--limit", type=int, help="Limit number of characters")
+    parser = argparse.ArgumentParser(description="Generate genetic ancestry for people")
+    parser.add_argument("--limit", type=int, help="Limit number of people")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing")
     parser.add_argument("--force", action="store_true", help="Overwrite existing ancestry")
     args = parser.parse_args()
@@ -212,30 +429,34 @@ def main():
             if not isinstance(data, dict):
                 continue
 
-            # Skip non-human characters (AIs, androids, robots)
             species = data.get("species", "human").lower().strip()
             if species in NON_HUMAN_SPECIES:
                 skipped += 1
                 continue
 
-            # Skip if already has ancestry (unless --force)
-            if "genetic_ancestry" in data and data["genetic_ancestry"] and not args.force:
+            if "ancestry_detail" in data and data["ancestry_detail"] and not args.force:
                 skipped += 1
                 continue
 
             seed = data.get("id", data.get("name", os.path.basename(fp)))
             district = data.get("district", None)
-            ancestry = generate_ancestry(seed, district=district)
+            broad, detail = generate_ancestry(seed, district=district)
 
             if args.dry_run:
+                name = data.get("name", os.path.basename(fp))
                 print(f"{name}:")
-                for group, pct in ancestry.items():
-                    print(f"  {group}: {pct}%")
+                for region, pct in broad.items():
+                    print(f"  {region}: {pct}%")
+                    if region in detail:
+                        for sub, nats in detail[region].items():
+                            for nat, npct in nats.items():
+                                print(f"    {sub} > {nat}: {npct}%")
                 print()
                 updated += 1
                 continue
 
-            data["genetic_ancestry"] = ancestry
+            data["genetic_ancestry"] = broad
+            data["ancestry_detail"] = detail
 
             with open(fp, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
@@ -245,7 +466,7 @@ def main():
         except Exception as e:
             print(f"Error on {fp}: {e}")
 
-    print(f"\nDone: {updated} characters {'previewed' if args.dry_run else 'updated'}, {skipped} skipped (already had ancestry)")
+    print(f"\nDone: {updated} people {'previewed' if args.dry_run else 'updated'}, {skipped} skipped")
 
 
 if __name__ == "__main__":

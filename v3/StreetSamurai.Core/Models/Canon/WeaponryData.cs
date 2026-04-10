@@ -5,7 +5,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// A weapon or weapon system in the Meridian 88 world.
+/// A weapon or weapon system in the GLMZ world.
 /// Links back to base technologies that enable it.
 /// </summary>
 public class WeaponryData : ICanonEntity

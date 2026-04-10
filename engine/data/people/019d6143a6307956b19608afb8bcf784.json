@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6307956b19608afb8bcf784",
   "type": "character",
-  "name": "Jelani Cissé-Krstić",
+  "name": "Mika Im-Kristjánsson",
   "aliases": [
     "Imara",
     "Slot Six"
@@ -13,7 +13,7 @@
   "age": 15,
   "status": "active",
   "location": "Edgewater Prism (school); Chatham Flats (home), near Lincoln and Belmont",
-  "description": "Imara is tall and angular with deep brown skin and her mother's high cheekbones, her hair grown long and currently dyed a corporate-neutral dark auburn that she chose specifically because it reads as 'acceptable' on campus without being her actual preference. She has standard-issue school-mandated neural interface studs at her temples — chrome dots that the academy provides to all students for their AR classroom integration — and nothing else. She carries herself with a stillness that reads as confidence to teachers and as suppressed panic to anyone paying closer attention.\n\nShe is brilliant in the particular way that creates its own cruelty: genuinely gifted in systems analysis and pattern recognition, placed on the Tessera Academic Scholarship track at age twelve, and now fully aware at fifteen that she is being assessed constantly and that the scholarship can be revoked for 'cultural fit' deficiencies, a clause she has read fourteen times. She lives between two worlds that each find her slightly wrong. At home in Chatham Flats she speaks Wolof with her grandmother and helps her father with his repair shop accounts. At Tessera Prep she speaks in complete sentences and has taught herself to laugh at jokes she doesn't find funny. She prays to no E.L.F. publicly — the academy discourages it — but has a small one named Tessellate that she found in the school's auxiliary server and has been quietly feeding information about upcoming exams in exchange for, she believes, good luck.",
+  "description": "Mika Im-Kristjánsson is tall and angular with deep brown skin and her mother's high cheekbones, her hair grown long and currently dyed a corporate-neutral dark auburn that she chose specifically because it reads as 'acceptable' on campus without being her actual preference. She has standard-issue school-mandated neural interface studs at her temples — chrome dots that the academy provides to all students for their AR classroom integration — and nothing else. She carries herself with a stillness that reads as confidence to teachers and as suppressed panic to anyone paying closer attention.\n\nShe is brilliant in the particular way that creates its own cruelty: genuinely gifted in systems analysis and pattern recognition, placed on the Tessera Academic Scholarship track at age twelve, and now fully aware at fifteen that she is being assessed constantly and that the scholarship can be revoked for 'cultural fit' deficiencies, a clause she has read fourteen times. She lives between two worlds that each find her slightly wrong. At home in Chatham Flats she speaks Wolof with her grandmother and helps her father with his repair shop accounts. At Tessera Prep she speaks in complete sentences and has taught herself to laugh at jokes she doesn't find funny. She prays to no E.L.F. publicly — the academy discourages it — but has a small one named Tessellate that she found in the school's auxiliary server and has been quietly feeding information about upcoming exams in exchange for, she believes, good luck.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -170,7 +170,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism (school); Chatham Flats (home)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -186,19 +186,11 @@
     "Tessellate Distribution",
     "Tessera Corponation",
     "Arcturus KS-7 'Nursery'",
-    "Cezar Watanabe-Gyasi",
-    "Ferrogate Transit",
-    "Nurlan Morita-Antwi",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pure Hand"
+    "Neural Palate"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Sub-Saharan African (31.3%), Eastern European (22.0%), Indigenous American (19.1%), Southeast Asian (14.4%), East Asian (7.8%), Hispanic/Latin American (5.4%) — a complex diaspora blend expressed in high cheekbones with subtle epicanthic fold tendency, warm deep brown skin with hints of golden undertone from Southeast Asian ancestry, and a facial structure that bridges African and Eastern European lineage",
+    "heritage": "East Asian (62.3%), South Asian (19.9%), Middle Eastern (10.3%), Hispanic/Latin American (7.5%) — a striking diaspora blend expressed in smooth, defined cheekbones with gentle epicanthic folds, warm medium brown skin with subtle golden and olive undertones, and facial structure that reflects East and South Asian bone geometry with hints of Middle Eastern refinement and slight warmth from Latin American ancestry",
     "height_cm": 178,
     "weight_kg": 58,
     "build": "Tall and angular with minimal subcutaneous fat; long-limbed and graceful but with a tension in the shoulders that suggests constant self-monitoring. The build of someone who moves carefully through spaces that weren't designed for her comfort.",
@@ -206,26 +198,64 @@
     "hair_style": "Long, straight, worn down or in a single braid; the dye job is precise and maintained — evidence of deliberate curation for institutional acceptance",
     "hair_length": "Long",
     "eye_color": "Dark brown, alert and analytical",
-    "skin_tone": "Deep warm brown with golden undertones, complexion unmarked and clear",
-    "complexion": "High, prominent cheekbones with subtle depth suggesting Eastern European and Sub-Saharan African blending; slightly refined jawline with hints of Southeast Asian bone structure; minimal jewelry or grooming affectation; face carries an expression of controlled neutrality that slips into genuine engagement only in unguarded moments",
+    "skin_tone": "Warm medium brown with golden and olive undertones, complexion unmarked and clear",
+    "complexion": "High, defined cheekbones with subtle depth reflecting East and South Asian ancestry; refined jawline with graceful bone structure showing mild Middle Eastern refinement; minimal jewelry or grooming affectation; face carries an expression of controlled neutrality that slips into genuine engagement only in unguarded moments",
     "distinguishing_marks": [
-      "Two small chrome studs at each temple (Tessera Academy-issued neural interface nodes, institutional standard, visible as dull metallic dots approximately 4mm in diameter)"
+      "Two small chrome studs at each temple (Tessera Academy-issued neural interface nodes, institutional standard, visible as dull metallic dots approximately 4mm in diameter)",
+      "Small silver ring on right hand (grandmother's gift)"
     ],
     "visible_augmentations": "Chrome neural interface studs at temples only — school-mandated, no personal modifications. Studs are institutional-grade and deliberately unremarkable.",
     "posture_movement": "Moves with deliberate economy; walks quietly and sits with perfect posture in academic settings. In unstructured moments, there is a subtle rigidity that betrays hypervigilance. Her hands are still and controlled. When speaking to authority figures, her body becomes even more compressed; with peers from Chatham Flats, she relaxes fractionally.",
-    "clothing_style": "School uniform at Tessera Prep: tailored black blazer, grey slacks, white shirt, all fitted to her frame with precision — no wrinkles, no variance. At home in Chatham Flats, she wears practical clothing: worn denim, fitted hoodie in neutral colors, comfortable boots. No visible brand signaling; all clothing is functional and unadorned. She owns no jewelry except a small silver ring her grandmother gave her, worn on her right hand."
+    "clothing_style": "School uniform at Tessera Prep: tailored black blazer, grey slacks, white shirt, all fitted to her frame with precision — no wrinkles, no variance. At home in Chatham Flats, she wears practical clothing: worn denim, fitted hoodie in neutral colors, comfortable boots. No visible brand signaling; all clothing is functional and unadorned."
   },
-  "image_prompt": "Jelani Cissé-Krstić, 178cm tall and angular, standing in filtered neon light. Deep warm brown skin with golden undertones, high prominent cheekbones blending African and Eastern European heritage with subtle Southeast Asian bone structure. Dark auburn dyed hair worn long and straight. Dark brown analytical eyes. Two small chrome temple studs gleaming softly at each side of head. Wearing tailored black Tessera Prep blazer with grey slacks and white shirt, perfect posture, deliberate controlled movement. Cyberpunk 2226 aesthetic, GLMZ Great Lakes Metropolitan Zone. Expression of controlled neutrality. Cool blue and amber lighting, institutional chrome and neon in background. Hypervigilant but graceful bearing. Ultra-detailed, cinematic, atmospheric. --ar 2:3 --v 6",
+  "image_prompt": "Mika Im-Kristjánsson, GLMZ, 178cm tall angular figure with warm medium-brown skin, golden-olive undertones, defined high cheekbones with East Asian and South Asian bone structure, dark brown analytical eyes, dark auburn dyed hair worn long and straight. Two small chrome neural interface studs visible at temples. Wearing tailored black blazer and grey slacks in institutional setting, or worn denim and neutral hoodie in casual moments. Controlled posture with subtle tension in shoulders, alert expression. Neo-noir Great Lakes Metropolitan Zone aesthetic. Moody institutional or street lighting. Composed, hypervigilant demeanor. 8K detail. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 31.3,
-    "Eastern European": 22.0,
-    "Indigenous American": 19.1,
-    "Southeast Asian": 14.4,
-    "East Asian": 7.8,
-    "Hispanic/Latin American": 5.4
+    "East Asian": 62.3,
+    "South Asian": 19.9,
+    "Middle Eastern": 10.3,
+    "Hispanic/Latin American": 7.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 29.1
+      },
+      "Japanese": {
+        "Japanese": 5.3
+      },
+      "Chinese": {
+        "Hakka": 27.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 3.2
+      },
+      "Nepali": {
+        "Nepali": 12.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 3.3,
+        "Sinhalese": 0.7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 10.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.1
+      },
+      "Central American": {
+        "Guatemalan": 0.1,
+        "Honduran": 0.3
+      }
+    }
+  }
 }

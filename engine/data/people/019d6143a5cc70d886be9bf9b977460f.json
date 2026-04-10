@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cc70d886be9bf9b977460f",
   "type": "character",
-  "name": "Jabari Boateng",
+  "name": "Marek Szabó",
   "aliases": [
     "Brick"
   ],
@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "Kessler Interchange, The Shelf, near Halsted and Division",
-  "description": "Briseis stands a broad-shouldered 172cm with skin the color of dark amber and a jaw that looks like it was quarried rather than grown. Her left eye is a Ferrogate-issued surveillance implant — a flat pewter disc that logs everything without blinking — and she never bothers to disguise it with a cosmetic iris. Her hair is shaved close on the sides and locked into a tight crown on top, threaded through with copper wire she wound herself. Her uniform is transit authority grey, always pressed, always missing the top button she lost six months ago and never replaced.\n\nShe runs the Kessler checkpoint with the bored efficiency of someone who has seen every trick twice. She is not cruel but she is not kind either — she is precise. She knows every vendor, every regular, every face that belongs and every face that doesn't, and she catalogs them in the back of her head like a library nobody else can access. She leaves a small data-offering by the interchange's resident E.L.F. shrine every shift start — a compressed packet of the day's transit patterns — and genuinely believes the spirit watches the cameras better when it's well-fed.",
+  "description": "Marek Szabó stands a broad-shouldered 172cm with skin the color of dark amber and a jaw that looks like it was quarried rather than grown. Her left eye is a Ferrogate-issued surveillance implant — a flat pewter disc that logs everything without blinking — and she never bothers to disguise it with a cosmetic iris. Her hair is shaved close on the sides and locked into a tight crown on top, threaded through with copper wire she wound herself. Her uniform is transit authority grey, always pressed, always missing the top button she lost six months ago and never replaced.\n\nShe runs the Kessler checkpoint with the bored efficiency of someone who has seen every trick twice. She is not cruel but she is not kind either — she is precise. She knows every vendor, every regular, every face that belongs and every face that doesn't, and she catalogs them in the back of her head like a library nobody else can access. She leaves a small data-offering by the interchange's resident E.L.F. shrine every shift start — a compressed packet of the day's transit patterns — and genuinely believes the spirit watches the cameras better when it's well-fed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -192,7 +192,7 @@
     "Charmer": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -211,27 +211,12 @@
     "The Interchange",
     "Ferrogate Transit",
     "The Shelf",
-    "ARCHIVE",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Copper",
-    "Stalker",
     "Aphelion",
-    "Arcturus GE-1 'Garrison'",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "The Gate",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Copper"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (39.9%), with significant East Asian (25.1%), North African (21.3%), and Hispanic/Latin American (12.0%) ancestry. Minimal Northern European influence (1.7%). A striking multiethnic blend expressed through warm amber-brown skin with subtle golden undertones, angular facial structure reflecting African and North African heritage, and an understated East Asian influence in eye shape and cheekbone prominence.",
+    "heritage": "Predominantly Eastern European (61.9%), with significant East Asian (12.8%), Sub-Saharan African (9.5%), Northern European (7.8%), South Asian (6.2%), and minor Hispanic/Latin American (1.8%) ancestry. A complex multiethnic blend expressing through olive-tan skin with warm golden undertones, angular Slavic facial structure softened by East Asian cheekbone prominence, and Sub-Saharan African influence in lip fullness and nose bridge width. The genetic mix creates an understated but distinctive appearance — features that don't resolve into a single ethnic category.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscular without bulk — the build of someone who handles confrontation through presence rather than violence. Compact, efficient, built low and wide like ballast.",
@@ -239,8 +224,8 @@
     "hair_style": "Shaved close on the sides, locked crown on top threaded through with hand-wound copper wire that catches light when she turns her head",
     "hair_length": "Short (sides) / Medium (crown)",
     "eye_color": "Right eye: dark brown, natural. Left eye: flat pewter surveillance implant disc, non-blinking, expressionless",
-    "skin_tone": "Warm amber-brown with golden undertones, reflecting the blend of Sub-Saharan, North African, and East Asian heritage",
-    "complexion": "Strong angular jaw with high, prominent cheekbones — architecture that speaks to African and North African ancestry with subtle East Asian influence. Minimal facial hair. Skin is weathered but maintained — no scars on the face, suggesting careful hygiene and deliberate grooming despite the uniform neglect. Permanent slight furrow between brows from years of focused observation. Features carry understated multiethnic complexity rather than monoethnic clarity.",
+    "skin_tone": "Olive-tan with warm golden undertones, reflecting the dominant Eastern European base layered with East Asian and Sub-Saharan African warmth",
+    "complexion": "Angular Slavic jaw with high, prominent cheekbones sharpened by Northern European ancestry but widened by East Asian influence. Full lips reflecting Sub-Saharan African heritage. Broad nose bridge with subtle width characteristic of Sub-Saharan African ancestry. Minimal facial hair. Skin is weathered but maintained — no scars on the face, suggesting careful hygiene and deliberate grooming despite the uniform neglect. Permanent slight furrow between brows from years of focused observation. Features carry understated multiethnic complexity with a distinctly Eastern European foundation.",
     "distinguishing_marks": [
       "Left eye is a Ferrogate-issue surveillance ocular implant — a flat pewter disc replacing the natural eye, always visible, never cosmetically masked",
       "Subdermal ridge along the inside of right palm where ID scanner sits flush beneath skin, visible as a thin raised line when hand is open",
@@ -250,16 +235,56 @@
     "posture_movement": "Stands with shoulders back, weight balanced, head slightly forward in a stance that communicates alertness without aggression. Movements are economical and deliberate — no wasted motion. Her gaze is steady and scanning, a habitual checkpoint sweep. When still, she has the compressed readiness of a coiled spring.",
     "clothing_style": "Transit authority grey uniform, always pressed and maintained except for the deliberately unfixed missing top button from six months ago — a small act of controlled nonconformity within rigid structure. Utility belt with standard-issue restraint gear, scanner, and comm unit. Off-duty: practical grey and charcoal layers, minimal adornment except for the copper wire in her hair. Tier 3-4 functional aesthetic — not poor, not wealthy, entirely mission-focused."
   },
-  "image_prompt": "Jabari Boateng, a 172cm transit authority enforcement officer in the Great Lakes Metropolitan Zone, 2226. Warm amber-brown skin with golden undertones, reflecting Sub-Saharan African, North African, and East Asian heritage. Strong angular jawline and high cheekbones. Black hair shaved close on sides with locked crown threaded with hand-wound copper wire. Right eye natural dark brown; left eye a flat pewter Ferrogate surveillance implant disc that glows faintly in low light. Compact, solid build with broad shoulders. Wearing pressed grey transit authority uniform with one deliberately unfixed missing top button, utility belt with restraint gear and scanner visible. Subdermal ID scanner ridge visible on right palm. Standing in alert checkpoint posture with weight balanced, head slightly forward, economical movement. Serious expression with permanent slight furrow between brows. Cyberpunk 2200s aesthetic, functional and mission-focused. Cool neon-tinted station lighting casting shadows across her face, emphasizing the surveillance implant's faint glow. Professional, compressed readiness --ar 2:3 --v 6",
+  "image_prompt": "Marek Szabó, a 172cm transit authority officer in her grey uniform, olive-tan complexion with warm golden undertones blending Slavic angular features with East Asian cheekbone prominence and Sub-Saharan African lip fullness. Black hair shaved close on sides with locked crown threaded through copper wire catching neon light. Right eye dark brown and natural, left eye replaced by flat pewter Ferrogate surveillance implant disc that glows faintly in low light. Broad-shouldered, compact muscular build. Permanent furrow between brows from years of observation. Standing in controlled alert posture, weight balanced. Subdermal ID scanner ridge visible on right palm. Small faded burn scar on left forearm. Utility belt with restraint gear and comm unit. Missing top button on uniform — six months of deliberate nonconformity. GLMZ GLMZ checkpoint station, neon-lit corridor, cool blue and grey industrial lighting, motion blur suggesting constant vigilance. Stern, focused expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 39.9,
-    "East Asian": 25.1,
-    "North African": 21.3,
-    "Hispanic/Latin American": 12.0,
-    "Northern European": 1.7
+    "Eastern European": 61.9,
+    "East Asian": 12.8,
+    "Sub-Saharan African": 9.5,
+    "Northern European": 7.8,
+    "South Asian": 6.2,
+    "Hispanic/Latin American": 1.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 61.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 12.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 5.1,
+        "Cameroonian": 0.8
+      },
+      "Southern African": {
+        "Zimbabwean": 3.3,
+        "Botswanan": 0.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 7.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 2.2,
+        "Sindhi": 4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 0.3,
+        "Brazilian": 1.5
+      }
+    }
+  }
 }

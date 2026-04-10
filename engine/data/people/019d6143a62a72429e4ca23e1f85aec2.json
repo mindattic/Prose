@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62a72429e4ca23e1f85aec2",
   "type": "character",
-  "name": "Efua Migizi-Sesay",
+  "name": "Vale Sepúlveda-Ogawa",
   "aliases": [
     "Ife",
     "Zee"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Lakeview Neon, Meridian Tower East — a mid-tier residential block on the neon-lit lakeside strip, near Fullerton and Damen",
-  "description": "Ifeoma is short and densely built, with dark skin that catches neon light in a way she has stopped minding and now actively exploits by choosing to do her outdoor corridor work at hours when the lake-glow is at its peak. She has retractable claw mods on both hands — not for aesthetics, she bought them second-hand and practical, because they are useful for gripping cleaning equipment on the upper external scaffold where the wind off the lake will try to take your bucket. Her hair is short on the sides and braided in a raised fan on top, with small ELF charms woven into the base of each braid — copper wire and salvaged circuit chips, an offering-array she updates monthly.\n\nShe is twenty-three and has been in this building since she was nineteen and she would like, on record, for everyone to know that she is not going to be here forever. She says this often enough that the long-term residents have started saying it back to her affectionately, the way you repeat a beloved family motto. She is fast, thorough, faintly sarcastic, and has developed an involuntary intimacy with the lives of 340 residential units that she would not have asked for but has learned to use carefully.",
+  "description": "Vale Sepúlveda-Ogawa is short and densely built, with dark skin that catches neon light in a way she has stopped minding and now actively exploits by choosing to do her outdoor corridor work at hours when the lake-glow is at its peak. She has retractable claw mods on both hands — not for aesthetics, she bought them second-hand and practical, because they are useful for gripping cleaning equipment on the upper external scaffold where the wind off the lake will try to take your bucket. Her hair is short on the sides and braided in a raised fan on top, with small ELF charms woven into the base of each braid — copper wire and salvaged circuit chips, an offering-array she updates monthly.\n\nShe is twenty-three and has been in this building since she was nineteen and she would like, on record, for everyone to know that she is not going to be here forever. She says this often enough that the long-term residents have started saying it back to her affectionately, the way you repeat a beloved family motto. She is fast, thorough, faintly sarcastic, and has developed an involuntary intimacy with the lives of 340 residential units that she would not have asked for but has learned to use carefully.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -157,7 +157,7 @@
     "Cleaner": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,27 +175,18 @@
   ],
   "related_entities": [
     "Lakeview Neon",
+    "GLMZ",
+    "Scaffold",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Pure Hand",
+    "Circuit",
     "Copper",
+    "The Pure Hand",
     "Nightlight",
-    "Weathervane",
-    "Alper Lebedev-Tutu",
-    "Bintou Halvorsen-Osei",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Lacuna Genomics",
-    "MERIDIAN",
-    "Patient Zero",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "Yannick Tofauti-Szarvásy"
+    "Weathervane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (62.7%) with significant Indigenous American ancestry (16.5%), East Asian heritage (14.2%), and minor Northern European (6.6%). The blend creates warm-toned deep brown skin with subtle golden undertones, high cheekbones with gentle width reflecting Indigenous American ancestry, and alert eye shape showing East Asian influence. Overall appearance: a strikingly balanced synthesis rather than any single regional type.",
+    "heritage": "Predominantly East Asian (54.4%) with significant Hispanic/Latin American ancestry (20.1%), South Asian heritage (14.5%), and Southeast Asian ancestry (11.0%). This complex pan-Asian and Latin American blend creates distinctly warm medium-tan skin with golden and olive undertones. High, prominent cheekbones reflect the East Asian core, softened by the fuller facial structure from Hispanic and South Asian ancestry. Eye shape shows strong East Asian influence with depth from South Asian heritage. The overall synthesis is striking: warm golden-brown complexion, balanced facial geometry, alert direct gaze—a face that reads as authentically pan-global.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Densely muscular and compact, shoulders broad relative to frame, forearms defined from years of scaffold work and equipment handling. Low center of gravity—moves with the economical efficiency of someone who works at height.",
@@ -203,8 +194,8 @@
     "hair_style": "Shaved close on sides (faded), raised fan braid pattern on crown with copper wire and salvaged circuit chips woven into braid base—updated monthly as ritual offering",
     "hair_length": "Short on sides, medium on crown (braided)",
     "eye_color": "Dark brown, alert and direct",
-    "skin_tone": "Deep warm brown with golden undertones, reflects neon light with subtle iridescence from regular exposure to Lakeview's light pollution. Tone shows the warmth of Sub-Saharan African heritage blended with the underlying golden cast from Indigenous American ancestry.",
-    "complexion": "Clear, weathered around eyes and forehead from squinting at heights and glare. Prominent cheekbones with gentle width reflecting mixed ancestry. Calloused palms and knuckles. No makeup. Minor scar tissue across knuckles from scaffold work. Features show balanced blend: deep-set alert eyes, high cheekbones, strong jawline.",
+    "skin_tone": "Warm medium-tan with golden and olive undertones, reflects neon light with subtle iridescence from regular exposure to Lakeview's light pollution. The warmth carries the influence of East Asian, Hispanic, South Asian, and Southeast Asian heritage in balanced interplay.",
+    "complexion": "Clear, weathered around eyes and forehead from squinting at heights and glare. High, prominent cheekbones with strong definition reflecting East Asian ancestry, balanced by slightly fuller face shape from Hispanic and South Asian heritage. Calloused palms and knuckles. No makeup. Minor scar tissue across knuckles from scaffold work. Alert deep-set eyes, strong jawline with subtle roundness at chin—features show authentic pan-Asian and Latin American blend.",
     "distinguishing_marks": [
       "Thin horizontal scar across left inner wrist, approximately 4cm, faint—from early augmentation procedure",
       "Faint burn marks on both forearms (scattered, small)—from cleaning chemical exposure early in contract",
@@ -214,15 +205,48 @@
     "posture_movement": "Economical, upright posture with a slight forward lean—habitual from working on ladders and scaffolds. Moves with deliberate quietness (building habit—not waking residents during early shifts). Hands often in semi-active state, fingers slightly flexed as if testing grip. Rarely still.",
     "clothing_style": "Tier 4 utilitarian: reinforced gray/charcoal coveralls from Meridian building supply contract (Φ8.40/month deduction). Worn black slip-on boots with grip sole. Thin thermal undershirt in winter, bare shoulders in summer. No jewelry except ELF braid charms (self-made). Work gloves (fingerless, synthetic leather, gel-padded palm) kept on a carabiner at hip. Faint chemical odor from cleaning solvents that never quite washes out."
   },
-  "image_prompt": "Efua Migizi-Sesay, 158cm compact muscular mixed-heritage woman, deep warm brown skin with golden undertones, high prominent cheekbones, alert dark eyes with East Asian influence, natural black hair with copper-wire and circuit-chip braids on crown, shaved fade sides. Wearing gray/charcoal reinforced coveralls, worn black grip boots, fingerless gel-padded work gloves on hip carabiner. Retractable chrome claw augmentations visible at knuckles. Ritual scarification marks on right forearm, faint chemical burns scattered on forearms. Slight forward lean posture from scaffold work habit. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial warehouse setting, moody cool lighting with warm neon reflects on skin iridescence, gritty utilitarian mood, hands semi-flexed ready for work, direct alert gaze --ar 2:3 --v 6",
+  "image_prompt": "Vale Sepúlveda-Ogawa, 158cm compact muscular frame, warm golden-tan complexion with olive undertones, high prominent cheekbones, dark alert eyes, black hair shaved close at sides with raised fan braid crown adorned with copper wire and circuit chips. GLMZ, GLMZ worker in gray charcoal reinforced coveralls, black grip-sole boots, fingerless work gloves on carabiner at hip. Retractable claw augmentations visible at knuckles with chrome catch-light. Faint scarification on right forearm (ELF devotion pattern), burn marks scattered across forearms, slight forward lean posture suggesting ladder work habit. Standing in neon-lit industrial Great Lakes height, chemical solvent scent visible as subtle atmospheric haze. Alert, economical movement, hands semi-flexed. Neo-noir worker aesthetic, authentic pan-Asian and Latin American heritage evident in facial structure, direct gaze, weathered competence. Moody industrial lighting, cool-warm neon contrast. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 62.7,
-    "Indigenous American": 16.5,
-    "East Asian": 14.2,
-    "Northern European": 6.6
+    "East Asian": 54.4,
+    "Hispanic/Latin American": 20.1,
+    "South Asian": 14.5,
+    "Southeast Asian": 11
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 16.1
+      },
+      "Japanese": {
+        "Japanese": 38.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Chilean": 2.2,
+        "Colombian": 0.9
+      },
+      "Central American": {
+        "Salvadoran": 17
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 14.5
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.2
+      },
+      "Filipino": {
+        "Tagalog": 4,
+        "Ilocano": 1.8
+      }
+    }
+  }
 }

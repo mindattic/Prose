@@ -4,7 +4,7 @@ namespace StreetSamurai.Core.Models.Canon;
 
 public class ToneBibleData
 {
-    [JsonPropertyName("name")] public string Name { get; set; } = "Cyberpunk Tone Bible";
+    [JsonPropertyName("name")] public string Name { get; set; } = "Neo-noir Tone Bible";
     [JsonPropertyName("tone_rules")] public List<string> ToneRules { get; set; } = [];
     [JsonPropertyName("sensory_palette")] public SensoryPalette SensoryPalette { get; set; } = new();
     [JsonPropertyName("dialogue_rules")] public List<string> DialogueRules { get; set; } = [];

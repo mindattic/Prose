@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62873bda96a5d44a38ad689",
   "type": "character",
-  "name": "Quinn Haugen-Bangura",
+  "name": "Quinn Haugen-Villalobos",
   "aliases": [
     "Hov",
     "the numbers man"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Edgewater Prism — operates out of a rooftop monitoring station leased from a Helix Biosystems subsidiary, near Clark and Belmont",
-  "description": "Hovhannes is stocky and perpetually wind-chapped, with the particular squint of someone who spends significant time looking at horizons. His Armenian-Malian-Andean heritage shows in his broad build and the dark copper of his skin, and he grows a beard every winter that he shaves every spring in a ritual he connects to his modeling calendar. He has a prosthetic left hand he chose not to skin-match — it's matte grey and articulated, and he uses it to gesture when he talks, which is frequently. He has a bioluminescent patch on his right shoulder from a lab accident twelve years ago: a pale green glow, faint, that he has simply incorporated into his aesthetic.\n\nHe is the most accurate storm forecaster in GLMZ, a title he holds unofficially because the official title belongs to a Ferrogate Transit atmospheric AI he assisted in training and is not particularly bitter about. He is gregarious and funny and committed to translating his work into language that non-scientists can use to make decisions — he runs a free community forecast channel that Shelf residents and dockworkers depend on. Underneath the gregariousness is a man who has spent fifteen years watching models he hoped were wrong be proven exactly right.",
+  "description": "Quinn Haugen-Villalobos is stocky and perpetually wind-chapped, with the particular squint of someone who spends significant time looking at horizons. His Armenian-Malian-Andean heritage shows in his broad build and the dark copper of his skin, and he grows a beard every winter that he shaves every spring in a ritual he connects to his modeling calendar. He has a prosthetic left hand he chose not to skin-match — it's matte grey and articulated, and he uses it to gesture when he talks, which is frequently. He has a bioluminescent patch on his right shoulder from a lab accident twelve years ago: a pale green glow, faint, that he has simply incorporated into his aesthetic.\n\nHe is the most accurate storm forecaster in GLMZ, a title he holds unofficially because the official title belongs to a Ferrogate Transit atmospheric AI he assisted in training and is not particularly bitter about. He is gregarious and funny and committed to translating his work into language that non-scientists can use to make decisions — he runs a free community forecast channel that Shelf residents and dockworkers depend on. Underneath the gregariousness is a man who has spent fifteen years watching models he hoped were wrong be proven exactly right.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,33 +243,20 @@
     "Helix Biosystems",
     "Edgewater Prism",
     "Meridian Core",
-    "GLMZ",
     "The Heritage Vault",
-    "Aslan Vasquez-Chatterjee",
+    "Noir Dining",
+    "The Accidental",
     "Ash Calendar",
     "Copper",
+    "Cargo Tacos",
     "The Pale Mile",
+    "GLMZ",
     "Weathervane",
-    "Nightlight",
-    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
-    "Axolotl Regenerative Suite",
-    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Noir Dining",
-    "Nurlan Morita-Antwi",
-    "Plot 17",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "The Listener",
-    "University Spine",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "Nightlight"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (45%) with significant East Asian (15.9%), Hispanic/Latin American (14.3%), and Pacific Islander (14.3%) ancestry, with Middle Eastern (8.1%) and minimal Northern European (2.4%) heritage. Complex global diaspora ancestry reflected in warm deep brown tones, facial structure showing blended features across multiple continents.",
+    "heritage": "Balanced blend of Hispanic/Latin American (39.5%), Northern European (39.0%), and South Asian (20.3%) ancestry with minimal East Asian (1.2%) heritage. Features warm medium-to-deep brown tones with golden and olive undertones from the Latin American and South Asian mix, tempered by Northern European lighter complexion genetics. Facial structure reflects the fusion: broader cheekbones and defined jaw from South Asian ancestry, softer orbital structure from Northern European heritage, and warm coloring from Hispanic/Latin American genetics. The combination creates a distinctly cosmopolitan appearance characteristic of diaspora populations in the 2200s Great Lakes region.",
     "height_cm": 174,
     "weight_kg": 89,
     "build": "Stocky and solid, broad-shouldered with the weathered musculature of someone who maintains equipment outdoors. No excess fat; dense, functional frame.",
@@ -277,8 +264,8 @@
     "hair_style": "Full beard during winter months (October–March), meticulously shaved each spring; during bearded season, kept groomed and shaped; head hair kept short and practical",
     "hair_length": "Short on scalp; variable beard length (3–4 inches in winter)",
     "eye_color": "Dark brown, left iris displays subtle retinal implant shimmer visible only in direct light—faint geometric grid pattern overlaid on pupil",
-    "skin_tone": "Deep warm brown with copper undertones from Sub-Saharan, East Asian, and Pacific Islander heritage; weathered from chronic sun and wind exposure; darker along exposed zones (face, neck, forearms)",
-    "complexion": "Broad facial structure reflecting blended ancestry; permanent squint lines radiating from outer eyes; wind-chapped lips; sun damage on cheekbones and bridge of nose; clear skin otherwise, minimal scarring except around left wrist prosthetic junction. Horizontal crease across forehead from habitual expression of focus. Cheekbones and jaw structure show influence from East Asian and Pacific Islander heritage. No facial hair between spring shave and October regrowth.",
+    "skin_tone": "Warm medium-to-deep brown with golden and olive undertones; weathered from chronic sun and wind exposure; darker along exposed zones (face, neck, forearms). The tone reflects the blending of Latin American warmth with South Asian depth, balanced by Northern European undertones.",
+    "complexion": "Broad facial structure reflecting blended South Asian, Hispanic/Latin American, and Northern European ancestry; prominent cheekbones with South Asian fullness; jaw shows strong Hispanic/Latin American and Northern European influence creating angular definition. Permanent squint lines radiating from outer eyes; wind-chapped lips; sun damage on cheekbones and bridge of nose; clear skin otherwise, minimal scarring except around left wrist prosthetic junction. Horizontal crease across forehead from habitual expression of focus. No facial hair between spring shave and October regrowth.",
     "distinguishing_marks": [
       "Faint bioluminescent patch on right shoulder (upper trapezius), pale green, roughly 8cm diameter, glows subtly in darkness from lab accident twelve years prior—fully integrated into aesthetic, never covered",
       "Surgical scar along left wrist where prosthetic attaches, thin white line, well-healed",
@@ -288,17 +275,57 @@
     "posture_movement": "Stands with shoulders slightly forward, weight balanced toward balls of feet—habitual scanning stance. Moves with purposeful efficiency, no wasted motion. Gestures expansively with prosthetic hand when speaking, using it for emphasis and illustration. Walks with slight leftward tilt to compensate for prosthetic weight distribution. Frequently pauses mid-conversation to look toward windows or sky.",
     "clothing_style": "Tier 3–4 practical wear. Favors weatherproof field jackets (Helix-branded or generic teal/grey) over university polo when at monitoring station. Layers underneath: synthetic base layer, sometimes visible under rolled sleeves. Cargo pants or work jeans with reinforced knees and pockets heavy with tools/sensors. Steel-toed boots, scuffed and maintained. At university: casual button shirts, usually rolled to forearm, visible Φ500–800 range clothing. Minimal jewelry except functional watch (modified chronometer with barometric readout). Wears a faded wool scarf during winter that appears to be decades old—possible family heirloom."
   },
-  "image_prompt": "Quinn Haugen-Bangura, cyberpunk 2226 environmental technician, deep warm brown skin with copper undertones, broad shoulders, 174cm stocky build, short dark hair with silver at temples, dark brown eyes with subtle left retinal implant shimmer, weathered from sun exposure with squint lines. Full groomed beard (winter season). Distinctive matte grey high-articulation prosthetic left hand with segmented fingers, deliberately unmatched to skin. Faint pale green bioluminescent patch glowing on right shoulder. Worn weatherproof teal-grey field jacket over synthetic layers, cargo pants with heavy tool pockets, scuffed steel-toed boots. Faded wool winter scarf. Standing in monitoring station or outdoor weather station, shoulders forward in scanning stance, left hand gesturing expressively, looking toward sky or window. Moody cyberpunk lighting with subtle neon accent reflecting off prosthetic. Purposeful, weathered, integrated augmentations visible and unashamed. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Quinn Haugen-Villalobos, a 174cm stocky broad-shouldered man with warm medium-deep brown skin showing golden and olive undertones, weathered from sun exposure. Dark brown hair with silver threading at temples, short-cropped on scalp. Dark brown eyes with subtle retinal implant shimmer visible in left iris. Mixed heritage facial features: prominent South Asian cheekbones, strong jaw blending Hispanic/Latin and Northern European structure, permanent squint lines and sun damage on cheekbones. Winter season with full dark brown beard groomed and shaped, 3-4 inches long. Left arm is a high-articulation matte grey prosthetic with segmented visible joints, deliberately unmatched to skin tone, gesturing expressively. Faint pale green bioluminescent patch glowing subtly on right shoulder (upper trapezius). Weathered appearance with callused right hand. Wearing weatherproof teal-grey field jacket layered over synthetic base layer with rolled sleeves, reinforced cargo pants, scuffed steel-toed boots. Faded wool family heirloom scarf draped around neck. Standing in slight forward-lean scanning posture, looking toward window. GLMZ, Great Lakes Metropolitan Zone, professional field technician aesthetic, natural window lighting catching the bioluminescent shoulder glow and retinal implant shimmer. Mood: focused, purposeful, contemplative. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 45.0,
-    "East Asian": 15.9,
-    "Hispanic/Latin American": 14.3,
-    "Pacific Islander": 14.3,
-    "Middle Eastern": 8.1,
-    "Northern European": 2.4
+    "Hispanic/Latin American": 39.5,
+    "Northern European": 39,
+    "South Asian": 20.3,
+    "East Asian": 1.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 31.3
+      },
+      "Caribbean": {
+        "Cuban": 3.4
+      },
+      "Central American": {
+        "Salvadoran": 4.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 25.5
+      },
+      "Scandinavian": {
+        "Icelandic": 11.3
+      },
+      "British Isles": {
+        "Irish": 1.5,
+        "Welsh": 0.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Kannada": 8,
+        "Malayali": 8.5
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 3.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 0.4
+      },
+      "Korean": {
+        "Korean": 0.8
+      }
+    }
+  }
 }

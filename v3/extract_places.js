@@ -35,7 +35,7 @@ const KNOWN_LOCATIONS = [
   { name: "Detroit", lat: 42.3314, lng: -83.0458, tags: ["place", "outside", "city", "great-lakes"], desc: "Detroit, a sprawling industrial ruin and reclamation zone on the western shore of Lake Erie, with deep ties to the Great Lakes city-state network." },
   { name: "Milwaukee", lat: 43.0389, lng: -87.9065, aliases: ["The Milwaukee Core"], tags: ["place", "city", "great-lakes"], desc: "Milwaukee, a Great Lakes city-state on the western shore of Lake Michigan, known for its industrial output and brewing traditions that survived two centuries of upheaval." },
   { name: "Green Bay", lat: 44.5133, lng: -88.0133, tags: ["place", "city", "great-lakes"], desc: "Green Bay, a northern Great Lakes settlement at the mouth of the Fox River, serving as a gateway to the Wisconsin interior." },
-  { name: "Chicago", lat: 41.8781, lng: -87.6298, tags: ["place", "city", "great-lakes"], desc: "The geographic territory formerly known as Chicago, now the foundation upon which Meridian 88 was built." },
+  { name: "Chicago", lat: 41.8781, lng: -87.6298, tags: ["place", "city", "great-lakes"], desc: "The geographic territory formerly known as Chicago, now the foundation upon which GLMZ was built." },
   { name: "Indiana Dead Zone", lat: 39.7684, lng: -86.1581, aliases: ["Indiana"], tags: ["place", "outside", "dead-zone"], desc: "The Indiana Dead Zone, a vast depopulated region between the Great Lakes city-states and the southern territories, rendered uninhabitable by industrial contamination." },
   { name: "Wisconsin Quiet Zone", lat: 46.0, lng: -89.5, aliases: ["Quiet Zone"], tags: ["place", "outside", "quiet-zone"], desc: "The Wisconsin Quiet Zone, a region of northern Wisconsin where electromagnetic interference makes electronic communication unreliable, inhabited by communities that prefer it that way." },
   { name: "Lake Huron Signal", lat: 44.0, lng: -82.5, aliases: ["Huron Signal"], tags: ["place", "outside", "anomaly", "great-lakes"], desc: "The Lake Huron Signal, an unexplained electromagnetic phenomenon detected in the waters of Lake Huron that has resisted all attempts at identification or explanation." },
@@ -49,10 +49,10 @@ const KNOWN_LOCATIONS = [
   { name: "Iron Ring", lat: 43.1, lng: -87.0, tags: ["place", "lake-colony", "great-lakes"], desc: "Iron Ring, a deep-water floating colony east of Milwaukee, one of the more fortified and defensible settlements on Lake Michigan." },
   { name: "The Nursery", lat: 43.5, lng: -86.8, tags: ["place", "lake-colony", "great-lakes"], desc: "The Nursery, a mobile floating colony that drifts northward through Lake Michigan, known for its agricultural and biological research programs." },
 
-  // Meridian 88 Specific (mapped to Chicago geography)
+  // GLMZ Specific (mapped to Chicago geography)
   { name: "The Biomass", lat: 34.7, lng: -86.6, tags: ["place", "outside", "biomass", "ecological-hazard"], desc: "The Biomass, a massive zone of engineered vegetation that has consumed most of the former southeastern United States, advancing northward and consuming human infrastructure in its path." },
   { name: "Ridgepost", lat: 35.2, lng: -86.4, tags: ["place", "outside", "consumed", "biomass"], desc: "Ridgepost, a settlement consumed by the Biomass advance, now referenced only in historical records and cautionary tales about the vegetation front's relentless expansion." },
-  { name: "The Spine", lat: 41.5, lng: -87.6, tags: ["place", "corridor", "infrastructure"], desc: "The Spine, a major transit and infrastructure corridor running through Meridian 88, serving as the primary north-south artery of the city." },
+  { name: "The Spine", lat: 41.5, lng: -87.6, tags: ["place", "corridor", "infrastructure"], desc: "The Spine, a major transit and infrastructure corridor running through GLMZ, serving as the primary north-south artery of the city." },
 ];
 
 // ── Helper functions ───────────────────────────────────────────────────
@@ -211,7 +211,7 @@ function main() {
     const rel = path.relative(DATA_DIR, f);
     return !rel.startsWith('places') &&
            !rel.startsWith('chromadb') &&
-           !['cyberpunk_tone_bible.json', 'kyle.json', 'literary_rules.json',
+           !['neo-noir_tone_bible.json', 'kyle.json', 'literary_rules.json',
              'motifs.json', 'story_bible.json', 'trivia.json', 'tts_rules.json'].includes(path.basename(f));
   });
 

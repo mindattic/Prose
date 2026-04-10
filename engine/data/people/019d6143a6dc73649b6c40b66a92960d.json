@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6dc73649b6c40b66a92960d",
   "type": "character",
-  "name": "Olumide Kulkarni-Abdykadyrov",
+  "name": "Ibrahim Nazari-Castañeda",
   "aliases": [
     "Cinder",
     "the Tin Sparrow"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Escanaba Gateway — berth 14-C, a semi-permanent squat in an abandoned cargo inspection booth, near Michigan Ave South and Cermak",
-  "description": "Sorrel is lean and windburned in the way that only comes from years above the clouds, her face a patchwork of sun-damage and old freeze-scars along her left cheekbone where a hull breach caught her at altitude three winters ago. She keeps her hair in tight, practical knots wound with salvaged copper wire, and her eyes are the color of old engine oil — a deep amber-brown that catches light strangely. Her geneware is minimal and functional: slightly thickened fingernail beds that grip rigging better than baseline human fingers, and a subtle secondary eyelid, barely visible, that cuts glare on the lake surface. She is always in motion, even sitting still — fingers working knots, foot tapping hull rhythms, eyes cataloguing exits.\n\nShe is not unfriendly but she is economical. Every word she offers is either useful or a test. She grew up on the mid-lake freight routes between Escanaba and the Meridian docks, daughter of a cargo master who died when a Ferrogate Transit subcontractor cut safety corners on a lift-strut. She has never filed a formal complaint. She has never stopped being angry about it. She ferries messages, small packages, the occasional undocumented passenger — always for Quanta, always in cash, never logged.",
+  "description": "Ibrahim Nazari-Castañeda is lean and windburned in the way that only comes from years above the clouds, her face a patchwork of sun-damage and old freeze-scars along her left cheekbone where a hull breach caught her at altitude three winters ago. She keeps her hair in tight, practical knots wound with salvaged copper wire, and her eyes are the color of old engine oil — a deep amber-brown that catches light strangely. Her geneware is minimal and functional: slightly thickened fingernail beds that grip rigging better than baseline human fingers, and a subtle secondary eyelid, barely visible, that cuts glare on the lake surface. She is always in motion, even sitting still — fingers working knots, foot tapping hull rhythms, eyes cataloguing exits.\n\nShe is not unfriendly but she is economical. Every word she offers is either useful or a test. She grew up on the mid-lake freight routes between Escanaba and the Meridian docks, daughter of a cargo master who died when a Ferrogate Transit subcontractor cut safety corners on a lift-strut. She has never filed a formal complaint. She has never stopped being angry about it. She ferries messages, small packages, the occasional undocumented passenger — always for Quanta, always in cash, never logged.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -160,7 +160,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Escanaba Gateway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -221,32 +221,11 @@
     "The Human Baseline Alliance",
     "Tessera Corponation",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Alper Lebedev-Tutu",
-    "Ambassador Silk",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus NX-1 'Sandman'",
-    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
-    "Deku Barrientos-Osei",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "MERIDIAN",
-    "Meridian Core",
-    "NeuralPath ChromaLift Spectral Vision Mod",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obafemi Szczypiński-Lautoa",
-    "Slagworks Industrial",
-    "SynapTech GripTrue Palmar Adhesion Implant",
-    "Synaptic Drift Emitter SDE-4 'Lullaby'",
-    "The Meridian Core",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore SteadyThread Precision Motor Implant"
+    "Cargo Tacos"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "South Asian, Sub-Saharan African, Central Asian, and Hispanic/Latin American—a genomic diaspora reflection. Her phenotype blends warm deep brown skin from African and South Asian ancestry with the angular bone structure suggesting Central Asian heritage; the subtle warmth in her complexion hints at the minor Hispanic/Latin American contribution. She is a living map of the Ubiquitous Diaspora.",
+    "heritage": "Predominantly Middle Eastern (63.7%) with significant Hispanic/Latin American (26.1%) and Central Asian (10.2%) ancestry. Her phenotype reflects this mix: warm deep brown skin with olive undertones from the Middle Eastern-Hispanic blend, angular cheekbones and broad forehead from Central Asian influence, and the subtle warmth in her complexion showing the Latin American contribution. She is a genomic map of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and angular, muscled from years of rigging work — rope-handler's shoulders, forearms corded with tendon. No excess body fat; her frame is optimized for altitude and balance rather than strength.",
@@ -254,8 +233,8 @@
     "hair_style": "Worn in tight, utilitarian knots wound with salvaged copper wire; the wire oxidizes to green-blue patina. Practical, never decorative.",
     "hair_length": "Medium (shoulder-length when unbraided, but always constrained)",
     "eye_color": "Deep amber-brown, oil-dark, with a faint luminescence under certain light angles — a side effect of the nictitating membrane geneware",
-    "skin_tone": "Rich warm brown with pronounced sun-weathering; deeper along exposed surfaces (forearms, neck, the bridge of her nose). The underlying tone reflects the blend of African and South Asian ancestry, with subtle warmth from Hispanic/Latin American heritage.",
-    "complexion": "Windburned and scarred, with bone structure showing angular Central Asian influence. Her left cheekbone bears a ragged constellation of freeze-scars from a hull breach at altitude, pale and slightly depressed. Her face is lean, jaw prominent, forehead broad. Her skin has a leathery quality from chronic UV exposure and cold-wind damage. No cosmetic grooming; scars are unretouched.",
+    "skin_tone": "Warm deep brown with pronounced sun-weathering; deeper along exposed surfaces (forearms, neck, the bridge of her nose). The underlying tone reflects the Middle Eastern-dominant ancestry with olive warmth from Hispanic/Latin American heritage and subtle Central Asian influence.",
+    "complexion": "Windburned and scarred, with bone structure showing angular Central Asian cheekbones and Middle Eastern facial geometry. Her left cheekbone bears a ragged constellation of freeze-scars from a hull breach at altitude, pale and slightly depressed. Her face is lean, jaw prominent, forehead broad. Her skin has a leathery quality from chronic UV exposure and cold-wind damage. No cosmetic grooming; scars are unretouched.",
     "distinguishing_marks": [
       "Ragged freeze-scarring along her left cheekbone and temple, pale and slightly depressed, roughly 8cm in irregular pattern from a hull breach three winters ago",
       "Fine white scar tissue on both palms and inner forearms from years of rope-handling; no single dramatic scar, rather a crosshatch of old work-marks",
@@ -265,15 +244,38 @@
     "posture_movement": "Never still. Always in low-level motion—fingers working invisible knots, foot tapping against deck plates in rhythmic patterns (hull vibration frequencies memorized from years aloft), jaw working. When standing, her weight is distributed for instant balance, knees slightly bent. Her gaze is constantly mobile, cataloguing exits, assessing load-bearing points, reading wind in the set of hanging fabric. She moves like someone who has learned to trust her body in thin air.",
     "clothing_style": "Tier 4 (working class, worn and functional). Heavy-duty synth-weave cargo pants in faded charcoal, multiple pockets and anchor-points for carabiners. Steel-toed boots, scuffed and repaired twice. Thin merino base layer under a sleeveless technical vest—gray, salt-stained, with a faded patch from the Escanaba Freeborn Airmen insignia (three interlocking rings). Over that, a weathered insulated jacket, Lake Michigan Blue, with reflective striping on the sleeves and a torn internal liner she's never bothered to fix. One glove (left hand) with reinforced palm, worn through at the knuckles. A length of paracord looped through her belt. Her clothes smell like diesel, copper, and wind."
   },
-  "image_prompt": "Olumide Kulkarni-Abdykadyrov, 168cm lean rigging worker with rich warm deep brown skin blending South Asian and Sub-Saharan African ancestry with angular Central Asian facial structure. Dark naturally-textured hair wound in tight utilitarian knots with oxidized copper wire forming blue-green patina. Deep amber-brown oil-dark eyes with faint luminescence and barely-visible nictitating membrane gineware. Ragged freeze-scar constellation on left cheekbone and temple from hull breach, pale and depressed. Windburned, leathery complexion with fine white scar crosshatch on palms and forearms. Thickened amber-striated fingernails from grip geneware. Wearing faded charcoal cargo pants with carabiner anchor-points, scuffed steel-toed boots, thin merino base layer under gray salt-stained technical vest bearing faded Escanaba Freeborn Airmen insignia, weathered Lake Michigan blue insulated jacket with torn liner and reflective sleeve striping, single reinforced left glove worn at knuckles, paracord belt loop. Hyperalert posture with weight distributed for instant balance, knees bent, fingers working invisible knots, foot tapping deck-plate rhythms. Cyberpunk 2226 GLMZ rooftop or cargo-rigging platform at dusk, cold wind, diesel and copper smell, constant subtle motion, cataloguing exits and load-bearing points. Moody industrial lighting with lens flare catching faint eye luminescence. --ar 2:3 --v 6",
+  "image_prompt": "Ibrahim Nazari-Castañeda, 168cm lean rigger with deep warm brown skin blending Middle Eastern, Hispanic/Latin American, and Central Asian heritage, angular cheekbones, broad forehead. Dark textured hair bound in utilitarian copper-wire knots with green-blue patina. Deep amber-brown eyes with faint luminescence, subtle nictitating membrane visible at corner. Ragged pale freeze-scars across left cheekbone from hull breach, windburned complexion, rope-handler's scarred palms and forearms, thickened geneware fingernails. Wearing faded charcoal cargo pants, gray salt-stained technical vest with faded Escanaba insignia, weathered Lake Michigan Blue insulated jacket with reflective sleeves, one reinforced left glove, steel-toed boots. Paracord looped through belt. Posture coiled and balanced, constantly in motion, weight distributed for instant stability. GLMZ, Great Lakes Metropolitan Zone, moody industrial lighting, wind-worn airfield or dock setting, diesel and copper atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 36.7,
-    "Sub-Saharan African": 34.1,
-    "Central Asian": 19.8,
-    "Hispanic/Latin American": 9.4
+    "Middle Eastern": 63.7,
+    "Hispanic/Latin American": 26.1,
+    "Central Asian": 10.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Afghan Dari": 29.2
+      },
+      "Arab Gulf": {
+        "Yemeni": 34.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 18.7,
+        "Colombian": 7.4
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 8.7
+      },
+      "Turkic": {
+        "Kazakh": 1.5
+      }
+    }
+  }
 }

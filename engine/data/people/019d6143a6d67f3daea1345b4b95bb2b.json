@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d67f3daea1345b4b95bb2b",
   "type": "character",
-  "name": "Omid Balasanyan",
+  "name": "Emiliano Castañeda",
   "aliases": [
     "Soli",
     "The Bleeder"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Hamtramck Enclave, studio-squat above the Tallow Market, near Ashland and Division",
-  "description": "Solène is a short, densely built woman whose body is her portfolio and her manifesto. Her skin shifts through a slow chromatic cycle — deep amber at rest, bleeding into violet around her joints when her temperature rises — the result of bioluminescent dermal graft work she has performed largely on herself over seven years. Her scalp is shaved on the left and grows a thick coil of natural hair on the right, threaded with fiber-optic strands that pulse in sync with her heartbeat. Her face is calm to the point of unnerving, large dark eyes framed by subdermal ridge implants that give her brow a faintly architectural quality. She smells faintly of the enzyme baths she uses to prep her graft medium.\n\nSolène works at the edge of what the body can absorb and still call itself art. Her clients come to her not for decorative mods but for transformations — she specializes in grief work, helping people externalize trauma through bespoke biological alteration: scars that bloom into patterned keloid gardens, tear ducts rerouted to produce indigo pigment, fingernails replaced with translucent keratin windows through which capillaries are visible. She is meticulous, almost devotional in her craft, and utterly uninterested in anyone who cannot articulate exactly what they want to leave behind.",
+  "description": "Emiliano Castañeda is a short, densely built woman whose body is her portfolio and her manifesto. Her skin shifts through a slow chromatic cycle — deep amber at rest, bleeding into violet around her joints when her temperature rises — the result of bioluminescent dermal graft work she has performed largely on herself over seven years. Her scalp is shaved on the left and grows a thick coil of natural hair on the right, threaded with fiber-optic strands that pulse in sync with her heartbeat. Her face is calm to the point of unnerving, large dark eyes framed by subdermal ridge implants that give her brow a faintly architectural quality. She smells faintly of the enzyme baths she uses to prep her graft medium.\n\nEmiliano Castañeda works at the edge of what the body can absorb and still call itself art. Her clients come to her not for decorative mods but for transformations — she specializes in grief work, helping people externalize trauma through bespoke biological alteration: scars that bloom into patterned keloid gardens, tear ducts rerouted to produce indigo pigment, fingernails replaced with translucent keratin windows through which capillaries are visible. She is meticulous, almost devotional in her craft, and utterly uninterested in anyone who cannot articulate exactly what they want to leave behind.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -156,7 +156,7 @@
     "Diplomat": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,34 +169,17 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Helix Biosystems",
     "Hamtramck Enclave",
+    "Helix Biosystems",
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "TESSERA PG-2 'Signature'",
     "The Sluiceway",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Slagworks Industrial",
-    "Arcturus HX-1 'Headsman'",
-    "Breck Tannen",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Eshe Pena-Baah",
-    "Flicker",
-    "Kadiatou Bergstrom-Konate",
-    "Plot 17",
-    "Praevex",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "TESSERA PA-5 'Attendant'",
-    "The Human Baseline Alliance",
-    "The Loft",
-    "The Pure Hand",
-    "The Third Rail",
-    "VitaCore BloomFilter Olfactory Modulation Implant",
-    "Yannick Tambadou-Reinholt"
+    "Indigo",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern (36.5%) with significant Hispanic/Latin American (21.7%) and Eastern European (15.8%) ancestry, complemented by Sub-Saharan African (11.9%), Northern European (9.5%), and East Asian (4.6%) heritage. This creates a striking phenotype: warm amber-to-olive skin tones with subtle golden undertones from the Middle Eastern and Hispanic ancestry, refined by Eastern European bone structure, and deepened by African heritage that adds richness and warmth to complexion.",
+    "heritage": "Complex diaspora ancestry: Hispanic/Latin American (32.3%), Sub-Saharan African (20.3%), Indigenous American (19.4%), Eastern European (17.2%), and East Asian (10.8%). This creates a striking phenotype: warm bronze-to-olive skin tones with golden and reddish undertones from the blended Hispanic and Indigenous heritage, deepened and enriched by Sub-Saharan African ancestry, refined by Eastern European bone structure, and subtly informed by East Asian features in eye shape and facial proportion.",
     "height_cm": 157,
     "weight_kg": 62,
     "build": "Densely muscled and compact, with the controlled physicality of someone who has spent years holding still through long procedures. Shoulders broad relative to frame, forearms strong from precision work.",
@@ -204,9 +187,8 @@
     "hair_style": "Asymmetrical: left hemisphere shaved clean, right hemisphere grows thick natural coils threaded with luminescent fiber-optic strands",
     "hair_length": "Shaved left / Medium-long right",
     "eye_color": "Deep brown, natural, framed by the architectural geometry of subdermal brow ridge implants",
-    "skin_tone": "Warm medium-olive complexion with golden amber undertones — a rich blend of Middle Eastern warmth, Hispanic and African depth, and Eastern European refinement. Shifts through violet in joint regions due to bioluminescent dermal work.",
-    "complexion": "Calm, composed facial expression with refined bone structure reflecting Eastern European and Middle Eastern ancestry. Skin shows the deliberate marks of her craft: precise bioluminescent patterning across shoulders and chest, faint enzyme-bath scent clinging to her. No conventional makeup; her body is her aesthetic statement. Subtle definition across cheekbones and jawline.",
-    "eye_color_note": "Deep brown, natural",
+    "skin_tone": "Warm medium-bronze complexion with golden and subtle reddish undertones — a rich blend of Hispanic, Indigenous American, and Sub-Saharan African depth, refined by Eastern European bone structure and informed by East Asian heritage. Shifts through violet in joint regions due to bioluminescent dermal work.",
+    "complexion": "Calm, composed facial expression with refined bone structure reflecting the blended ancestry: strong cheekbones and defined jawline with subtle angular eye shape influenced by East Asian heritage, softened by the broader facial proportions of Indigenous and African heritage. Skin shows the deliberate marks of her craft: precise bioluminescent patterning across shoulders and chest, faint enzyme-bath scent clinging to her. No conventional makeup; her body is her aesthetic statement.",
     "distinguishing_marks": [
       "Bioluminescent biopatterning across shoulders, collarbone, and upper chest — slow chromatic cycles from deep amber to violet, most intense around joint areas",
       "Subdermal ridge implants creating faint architectural lines across her brow and temples, visible as subtle raised geometry",
@@ -217,17 +199,47 @@
     "posture_movement": "Still, deliberate, almost meditative in stillness. Moves with economical precision — no wasted motion. When she works, her hands become hyperfocused instruments. At rest, she has an unsettling calmness, the unblinking quality of someone comfortable with silence and observation.",
     "clothing_style": "Minimal, functional, emphasizing her body as art. Typically: sleeveless or mesh tank tops and fitted cargo pants in matte blacks or grays (Tier 3-4 quality, durable materials). Bare feet or wrapped in textile bindings. No jewelry beyond what serves function. Lab coat or heavy canvas apron during client work. Everything she wears serves to frame rather than cover her modifications."
   },
-  "image_prompt": "Portrait of Omid Balasanyan, a 157cm tall body modification artist with rich warm olive-amber skin and refined bone structure. Right side: thick natural black hair coils threaded with glowing fiber-optic strands pulsing softly with bioluminescence. Left side: completely shaved scalp, clean and unblemished. Deep brown eyes framed by subtle subdermal brow ridge implants creating geometric architectural lines across temples. Upper body bare or in mesh tank top, revealing full-body bioluminescent dermal grafts glowing in slow chromatic cycles from amber to violet, most intense around shoulders, collarbone, chest and joint regions. Compact, densely muscled build. Absolutely still, meditative posture. Faint scars around tear ducts. Cyberpunk 2226, Great Lakes Metropolitan Zone setting, cool neon studio lighting casting violet and amber hues across her bio-modified skin, emphasizing the intricate biopatterning. Her body as living art. Minimal, functional aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Emiliano Castañeda, 157cm compact figure with densely muscular build, warm bronze-olive skin glowing with bioluminescent dermal grafts in deep amber and violet hues across shoulders and chest. Asymmetrical hair: left scalp shaved smooth, right side thick black coils interwoven with pulsing fiber-optic strands. Deep brown eyes framed by subdermal brow ridge implants creating architectural geometry. Strong cheekbones and defined jawline reflecting blended Hispanic, Indigenous American, Sub-Saharan African, Eastern European, and East Asian heritage. Sleeveless mesh tank in matte black, fitted cargo pants, bare feet or textile wrappings. Indigo scarring visible around tear ducts. Utterly still, meditative posture with unblinking observation. GLMZ biolume body modification artist, minimal aesthetic, precision-focused, no chrome. Close-up portrait in cool neon lighting emphasizing the glowing dermal work, moody and introspective. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 36.5,
-    "Hispanic/Latin American": 21.7,
-    "Eastern European": 15.8,
-    "Sub-Saharan African": 11.9,
-    "Northern European": 9.5,
-    "East Asian": 4.6
+    "Hispanic/Latin American": 32.3,
+    "Sub-Saharan African": 20.3,
+    "Indigenous American": 19.4,
+    "Eastern European": 17.2,
+    "East Asian": 10.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 32.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 20.3
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 17.3,
+        "Lakota": 0.5
+      },
+      "Andean": {
+        "Mapuche": 1.6
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 17.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 10.8
+      }
+    }
+  }
 }

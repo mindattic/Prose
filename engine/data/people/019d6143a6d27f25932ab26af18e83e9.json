@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d27f25932ab26af18e83e9",
   "type": "character",
-  "name": "Delta Traoré-Popescu",
+  "name": "Delta Rentería-Subramaniam",
   "aliases": [
     "Soli",
     "Councilwoman"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Highland Park Autonomous Zone, Council Hall (a reclaimed gymnasium above a hydroponic market), near Michigan Ave and Walton",
-  "description": "Solange is a tall, stately woman with warm brown skin, deep-set eyes framed by pronounced crow's feet she treats as credentials, and silver-white locs piled into an architectural structure secured with copper wire and small enamel political pins from campaigns spanning forty years. She moves through Highland Park with the unhurried authority of someone who owns nothing but is trusted with everything. Her geneware is subtle: a faint cat-ear modification — velvet-tipped, tawny — that she got as a young woman and has never seen reason to remove; they swivel slightly when she's listening hard, which unsettles people who don't know to expect it.\n\nSolange has outlasted six Axiom zone managers, three rounds of 'redevelopment consultations,' two assassination attempts she refuses to characterize as such on the record, and one recall election she won by thirty-one votes. She does not call herself a radical. She calls herself a constitutionalist — meaning she holds the HPAZ's founding community charter as sacred and will use every procedural mechanism available to defend it. This makes her less exciting than firebrands and more dangerous than anyone gives her credit for.",
+  "description": "Delta Rentería-Subramaniam is a tall, stately woman with warm brown skin, deep-set eyes framed by pronounced crow's feet she treats as credentials, and silver-white locs piled into an architectural structure secured with copper wire and small enamel political pins from campaigns spanning forty years. She moves through Highland Park with the unhurried authority of someone who owns nothing but is trusted with everything. Her geneware is subtle: a faint cat-ear modification — velvet-tipped, tawny — that she got as a young woman and has never seen reason to remove; they swivel slightly when she's listening hard, which unsettles people who don't know to expect it.\n\nDelta Rentería-Subramaniam has outlasted six Axiom zone managers, three rounds of 'redevelopment consultations,' two assassination attempts she refuses to characterize as such on the record, and one recall election she won by thirty-one votes. She does not call herself a radical. She calls herself a constitutionalist — meaning she holds the HPAZ's founding community charter as sacred and will use every procedural mechanism available to defend it. This makes her less exciting than firebrands and more dangerous than anyone gives her credit for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -194,7 +194,7 @@
     "Judge": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -265,31 +265,13 @@
     "The Burden Clause",
     "Chronicle",
     "Palladian Construction",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
     "Silver",
     "Copper",
-    "Auricula Felis Modification",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Breck Tannen",
-    "Djeneba Magnusson-Camara",
-    "GLMZ",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "The Heritage Vault",
-    "Tomasz Wren",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Tessera Industries Memory Rounds MR-2 'Recall'"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Eastern European (51.1%) with significant Sub-Saharan African (18.3%), East Asian (16.3%), South Asian (10.9%), and Hispanic/Latin American (3.4%) ancestry. Complex multi-continental genetic blend creating distinctive phenotypic features.",
+    "heritage": "Complex multi-continental blend: South Asian (26.3%), Hispanic/Latin American (20.9%), Sub-Saharan African (18.7%), Northern European (11.8%), Indigenous American (11.2%), and Middle Eastern (11.1%). This genetic distribution creates a phenotype that transcends regional categorization—broad South Asian cheekbones balanced with Sub-Saharan African facial structure, Indigenous American bone geometry, and Middle Eastern nasal bridge width. The result is genuinely syncretic rather than dominantly rooted in any single continental origin.",
     "height_cm": 180,
     "weight_kg": 78,
     "build": "Tall and broad-shouldered with dignified carriage; strong frame that reads as presence rather than aggression. Carries weight with authority — the build of someone accustomed to labor and leadership in equal measure.",
@@ -297,8 +279,8 @@
     "hair_style": "Locs arranged in a sculptural updo, secured with copper wire threaded through enamel political pins spanning four decades",
     "hair_length": "Long (locs reach mid-back when loose)",
     "eye_color": "Deep brown, warm",
-    "skin_tone": "Medium-warm complexion reflecting Eastern European base with enriched depth from Sub-Saharan African, East Asian, and South Asian ancestry. Golden-amber undertones rather than pure golden.",
-    "complexion": "Broad facial structure with balanced proportions across European and African ancestry. Deep-set eyes framed by pronounced crow's feet; face shows four decades of outdoor sun exposure and expression. Strong, defined jawline with full mouth. Cheekbones prominent but not sharp. Skin texture is textured and weathered in a way that suggests work and time spent outdoors and in uncontrolled environments. Minimal makeup. No grooming affectations.",
+    "skin_tone": "Rich medium-deep complexion with golden-amber warmth and subtle reddish undertones. The tone reflects the convergence of South Asian (26.3%), Sub-Saharan African (18.7%), and Hispanic/Latin American (20.9%) ancestry, tempered by Northern European (11.8%) and Middle Eastern (11.1%) influences. Sun-weathered depth suggesting decades of outdoor exposure rather than any single regional phenotype.",
+    "complexion": "Facial structure shows balanced proportions across multiple ancestry groups—broad across cheekbones and temples with the pronounced definition characteristic of South Asian and Indigenous American heritage, combined with Sub-Saharan African and Hispanic/Latin American features. Deep-set eyes framed by pronounced crow's feet; face shows four decades of outdoor sun exposure and expression. Strong, defined jawline with full mouth. Cheekbones prominent but not sharp. Nose shows the bridge width and structure consistent with South Asian and Middle Eastern ancestry, with subtle flare at nostrils from Hispanic/Latin American and Indigenous American genetics. Skin texture weathered and textured in a way that suggests work and time spent outdoors. Minimal makeup. No grooming affectations.",
     "distinguishing_marks": [
       "Fine network of expression lines radiating from eyes — crow's feet she treats as credentials of forty years' engagement",
       "Barely-visible surgical scar along right collarbone (cardiac monitor implant, 2196 — only visible if she's wearing low-neckline clothing, which is rare)"
@@ -307,16 +289,73 @@
     "posture_movement": "Moves with unhurried authority — no wasted motion. Stands with shoulders back, weight distributed evenly. Walks slowly and deliberately through spaces she moves through as if she owns them through custodianship. Gestures are economical and purposeful. When seated in meetings, she leans slightly forward when listening, and her cat ears swivel visibly — an unconscious tell that unsettles people unfamiliar with the modification.",
     "clothing_style": "Tier 4 functional elegance. Favors high-quality, durable fabrics in muted earth tones — charcoal, ochre, deep teal. Standard uniform is tailored linen slacks, long-sleeve cotton or linen shirts (rolled to the elbow), and a vest or overshirt in heavier fabric. Wears leather sandals that have been repaired many times. Minimal jewelry beyond the copper wire and enamel pins in her hair and a simple steel wedding band. Clothing is scrupulously maintained but not expensive — chosen for longevity and practicality, not status. No corporate logos. No synthfiber."
   },
-  "image_prompt": "Delta Traoré-Popescu, 180cm tall woman with medium-warm golden-amber skin tone reflecting complex Eastern European, Sub-Saharan African, East Asian, and South Asian ancestry. Silver-white locs arranged in sculptural updo adorned with copper wire and enamel political pins. Tawny velvet-tipped functional cat-ear cybernetic modifications protruding from temples. Deep brown warm eyes with pronounced crow's feet, strong defined jawline, full mouth. Broad facial structure, weathered complexion from four decades of sun exposure. Wearing tailored charcoal linen slacks, rolled-sleeve cotton shirt in ochre, heavy teal overshirt vest. Repaired leather sandals. Steel wedding band. Unhurried authoritative posture, shoulders back, leaning forward with intent listening posture. Cyberpunk 2226 aesthetic, GLMZ setting. Dim ambient lighting in professional meeting space, prismatic optical overlay shimmer visible in document review. --ar 2:3 --v 6",
+  "image_prompt": "Delta Rentería-Subramaniam, 180cm tall woman with rich golden-brown skin tone reflecting South Asian, Sub-Saharan African, and Hispanic/Latin American ancestry. Silver-white locs in sculptural updo secured with copper wire and enamel political pins. Tawny velvet-tipped functional cat-ear augmentations protruding from temples, swiveling slightly. Deep brown eyes with pronounced crow's feet marking four decades of sun exposure. Broad cheekbones and strong jawline showing balanced multi-continental phenotype. Weathered skin texture, minimal makeup. Wearing charcoal linen slacks, rolled-sleeve cream linen shirt, deep teal overshirt vest. Simple steel wedding band. Repaired leather sandals. Standing with unhurried authority, shoulders back, weight evenly distributed. GLMZ Great Lakes Metropolitan Zone setting, warm indoor lighting with prismatic shimmer visible in her optical overlay as she reviews documents. Dignified presence, expression of deliberate engagement. No corporate logos. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 51.1,
-    "Sub-Saharan African": 18.3,
-    "East Asian": 16.3,
-    "South Asian": 10.9,
-    "Hispanic/Latin American": 3.4
+    "South Asian": 26.3,
+    "Hispanic/Latin American": 20.9,
+    "Sub-Saharan African": 18.7,
+    "Northern European": 11.8,
+    "Indigenous American": 11.2,
+    "Middle Eastern": 11.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 19.1
+      },
+      "Sri Lankan": {
+        "Sinhalese": 7.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 5
+      },
+      "Mexican": {
+        "Mexican": 15.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 8.1,
+        "Mozambican": 10.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 2.3,
+        "Scottish": 3.8
+      },
+      "Scandinavian": {
+        "Swedish": 0.3,
+        "Finnish": 0.6
+      },
+      "Germanic": {
+        "Austrian": 4.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 7.4,
+        "Mapuche": 1.3
+      },
+      "Plains Nations": {
+        "Lakota": 1.2,
+        "Cherokee": 1.3
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 8.3
+      },
+      "Arab Gulf": {
+        "Yemeni": 2,
+        "Iraqi": 0.8
+      }
+    }
+  }
 }

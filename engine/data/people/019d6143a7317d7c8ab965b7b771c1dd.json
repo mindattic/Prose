@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7317d7c8ab965b7b771c1dd",
   "type": "character",
-  "name": "Amara Sesay-Arredondo",
+  "name": "Zara Charoenphol-Haraldsen",
   "aliases": [
     "Yus",
     "The Wall"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Pulaski and Chicago Ave",
-  "description": "Yusra is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Metro Police LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Metro Police more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Shelf and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
+  "description": "Zara Charoenphol-Haraldsen is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Metro Police LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Metro Police more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Shelf and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -203,7 +203,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -262,42 +262,20 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
   "related_entities": [
-    "Fort Anchor",
     "The Circuit",
+    "Fort Anchor",
     "Grandmother",
     "The Shelf",
     "The Fathom Line",
     "Irontide Tidal Energy",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Nightlight",
+    "Circuit",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Arcturus Defense Solutions Hardened Communications Suite HCS-7",
-    "Arcturus KS-7 'Nursery'",
-    "Bogdan Achebe-Svanstrom",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Davi Ousseini-Brătianu",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "GLMZ",
-    "Grainfort",
-    "Hough Reclamation",
-    "MERIDIAN",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Sagyn Ogawa-Twumasi",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Counter",
-    "The Reclamation Assembly",
-    "Yannick Tofauti-Szarvásy"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (36.5%) with significant Hispanic/Latin American (29.8%) and South Asian (18.1%) ancestry, complemented by Eastern European (8.6%), Southeast Asian (5.0%), and East Asian (2.0%) heritage. This creates a striking phenotype blending West African bone structure with South Asian facial contours and Hispanic warm undertones.",
+    "heritage": "Predominantly Southeast Asian (54.8%) with significant Eastern European (43.0%) and minor South Asian (2.2%) ancestry. This creates a striking phenotype blending Southeast Asian facial structure with Eastern European bone structure and pale undertones, enriched by South Asian subtle warmth. The result is a unique cosmopolitan appearance reflecting the Ubiquitous Diaspora—high cheekbones and defined facial planes from Southeast Asian genetics, balanced by the broader facial proportions and cooler undertones of Eastern European heritage, with minimal golden warmth from South Asian ancestry.",
     "height_cm": 183,
     "weight_kg": 89,
     "build": "Powerfully built with exceptional upper body mass — broad shoulders and thick neck that taper to a solid waist. Deliberate posture of controlled presence; carries herself like ballast in motion.",
@@ -305,8 +283,8 @@
     "hair_style": "Cropped close to scalp with geometric fade lines on sides — practical, minimal maintenance",
     "hair_length": "Short",
     "eye_color": "Grey (augmented) with visible LIDAR ring overlay — amber luminescence when active",
-    "skin_tone": "Rich deep brown with warm undertones — melanin-rich complexion reflecting the dominant Sub-Saharan and Hispanic ancestry blend, with subtle golden warmth from South Asian genetics",
-    "complexion": "Strong facial structure combining West African bone prominence with South Asian cheekbone definition and Hispanic warmth. Minimal scarring on face, well-maintained despite work strain. Slight creasing around eyes from eleven years of squinting into crowd noise. No visible cosmetic grooming beyond functional grooming.",
+    "skin_tone": "Warm olive-bronze complexion — Southeast Asian base melanin creating warmth and depth, tempered by Eastern European coolness, with subtle golden undertones from minor South Asian genetics. Even-toned with natural warmth that shifts between golden and neutral depending on lighting.",
+    "complexion": "Strong facial structure combining Southeast Asian high cheekbone definition and bone prominence with Eastern European broader facial proportions. Minimal scarring on face, well-maintained despite work strain. Slight creasing around eyes from eleven years of squinting into crowd noise. No visible cosmetic grooming beyond functional grooming.",
     "distinguishing_marks": [
       "Left forearm carries a geometric Amazigh-style tattoo in dark indigo — a personal talisman from maternal lineage, spans from wrist to elbow with angular, interlocking patterns",
       "Subdermal armor plating along both forearms creates subtle ridge-lines visible beneath skin when she flexes or moves — gives her silhouette unnaturally sharp angles at the wrists and lower forearms",
@@ -316,17 +294,47 @@
     "posture_movement": "Economy of motion — every gesture is deliberate and measured. She stands with weight distributed evenly, shoulders back, creating an impression of immobile stability. When moving through crowds, she parts people by presence alone before physical contact becomes necessary. Off-duty, posture loosens slightly but never fully; muscle memory of tactical readiness is permanent.",
     "clothing_style": "On-duty: GLMZ Metro Police Riot Suppression kit — reinforced polymer bodysuit in slate grey with reflective striping, ceramic-composite armor panels, weighted utility belt with restraint loops and gas dispersal equipment. Boots are heavy-duty tactical with ankle reinforcement. Off-duty: practical Tier 3 clothing — fitted black synthetic-blend shirts, cargo pants with secure pockets, unmarked grey jacket with internal organization. No visible personal styling or affectation; functional over aesthetic. Occasionally wears an older Amazigh-pattern scarf around her neck when off-duty, gift from mother."
   },
-  "image_prompt": "Amara Sesay-Arredondo, 183cm tall powerfully built woman with rich deep brown skin and warm undertones reflecting Sub-Saharan African, Hispanic, and South Asian heritage blend. Cropped black hair with grey at temples and geometric fade lines. Strong facial structure with West African bone prominence and South Asian cheekbone definition. Augmented grey eyes with faint amber LIDAR ring overlay when active. Subdermal armor plating creates visible geometric ridging along forearms and clavicle under harsh lighting. Dark indigo Amazigh-style geometric tattoo spanning left forearm. In GLMZ Metro Police Riot Suppression kit: slate grey reinforced polymer bodysuit with reflective striping, ceramic-composite armor panels, weighted tactical utility belt, heavy-duty tactical boots. Standing with controlled presence and even weight distribution, shoulders back, exuding immobile stability. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon-lit street environment with harsh overhead lighting emphasizing subdermal plating ridges. Serious, focused expression. Professional tactical posture. Moody atmospheric lighting with shadows and neon reflections --ar 2:3 --v 6",
+  "image_prompt": "Zara Charoenphol-Haraldsen, 183cm tall powerfully built GLMZ Metro Police officer in 2226, warm olive-bronze skin tone blending Southeast Asian, Eastern European, and South Asian ancestry. High cheekbones with strong Southeast Asian facial definition, tempered by broader Eastern European facial proportions. Short black hair with grey at temples, cropped geometric fade sides. Augmented grey eyes with subtle amber LIDAR rings faintly visible. Visible subdermal geometric plating along forearms and clavicle creating subtle ridge-lines beneath skin, most apparent under harsh light. Dark indigo Amazigh tattoo covering left forearm in angular interlocking patterns. On-duty: slate grey reinforced polymer riot suppression bodysuit with reflective striping and ceramic armor panels, tactical boots, utility belt. Posture of immobile stability, weight distributed evenly, shoulders back. Standing in neon-lit GLMZ Metro station corridor, cool blue and amber neo-noir lighting, slight motion blur suggesting tactical readiness, crowd parting around her by presence alone. GLMZ 2200s aesthetic, gritty urban environment, professional and dangerous. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.5,
-    "Hispanic/Latin American": 29.8,
-    "South Asian": 18.1,
-    "Eastern European": 8.6,
-    "Southeast Asian": 5.0,
-    "East Asian": 2.0
+    "Southeast Asian": 54.8,
+    "Eastern European": 43,
+    "South Asian": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 23
+      },
+      "Cambodian": {
+        "Khmer": 22.1
+      },
+      "Indonesian": {
+        "Javanese": 9.7
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 21.9,
+        "Russian": 13.1
+      },
+      "Slavic West": {
+        "Sorbian": 8
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 0.1
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1.5
+      },
+      "Nepali": {
+        "Nepali": 0.6
+      }
+    }
+  }
 }

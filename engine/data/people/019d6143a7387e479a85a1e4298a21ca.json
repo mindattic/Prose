@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7387e479a85a1e4298a21ca",
   "type": "character",
-  "name": "Svetlana Popescu",
+  "name": "Zen Oh",
   "aliases": [
     "Zo"
   ],
@@ -12,7 +12,7 @@
   "age": 23,
   "status": "active",
   "location": "Brewer's Spine — operates their cart at the intersection of Copperline Alley and the Spine's main drag from 2000 to 0400, near Fullerton and Damen",
-  "description": "Zola is sharp-featured and built narrow, with Finnish-Hausa coloring that lands them somewhere between copper and cream depending on the light, and geneware they saved for two years — a tail, pale grey and black-tipped, that wraps around their ankles when they're focused on the wok. They keep their hair short and bleached at the tips, and they have a single line of bioluminescent text tattooed along their left forearm in Hausa script that reads, roughly, 'do not forget the sauce.' (This is a joke. It is also not a joke.) They work in a kind of controlled explosion: the cart is immaculate and the output is rapid and the motion between station and bowl is practiced to the point of choreography.\n\nZola is twenty-three and running a noodle cart at two in the morning and they have not decided yet if this is a detour or a destination. They are smart in the restless, underutilized way — too much processing power applied to too small a problem — and they cope with this by making the small problem perfect. Their broth is not famous yet. It will be. They know it the way you know something you can't say out loud because it sounds like arrogance before it becomes fact.",
+  "description": "Zen Oh is sharp-featured and built narrow, with Finnish-Hausa coloring that lands them somewhere between copper and cream depending on the light, and geneware they saved for two years — a tail, pale grey and black-tipped, that wraps around their ankles when they're focused on the wok. They keep their hair short and bleached at the tips, and they have a single line of bioluminescent text tattooed along their left forearm in Hausa script that reads, roughly, 'do not forget the sauce.' (This is a joke. It is also not a joke.) They work in a kind of controlled explosion: the cart is immaculate and the output is rapid and the motion between station and bowl is practiced to the point of choreography.\n\nZen Oh is twenty-three and running a noodle cart at two in the morning and they have not decided yet if this is a detour or a destination. They are smart in the restless, underutilized way — too much processing power applied to too small a problem — and they cope with this by making the small problem perfect. Their broth is not famous yet. It will be. They know it the way you know something you can't say out loud because it sounds like arrogance before it becomes fact.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -177,7 +177,7 @@
     "Generous Fool": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brewer's Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,36 +230,20 @@
     "Brewer's Spine",
     "Copper",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "The Pale Mile",
-    "University Spine",
-    "Arcturus KS-7 'Nursery'",
-    "Arcturus PX-1 'Phantom'",
-    "Devraj Solano-Yildirim",
-    "Dragan Asiedu-Kovalchuk",
-    "Narrowcast",
-    "Night Market Noodles",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Sulfur Crown Agriculture",
-    "Tafara Quiñones-Saarinen",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
-    "Zheng-dao Bioelectric"
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European, South Asian, and Northern European mixed ancestry — 41% Eastern European (Slavic features), 33% South Asian (warm undertones, eye shape), 26% Northern European (height, bone structure)",
+    "heritage": "Complex global diaspora blend — 32% East Asian (defined cheekbone structure, eye shape), 20.5% Southeast Asian (warm golden undertones, facial softness), 14.1% Hispanic/Latin American (slight broadening of facial structure), 13.5% Northern European (height and limb proportion), 12.8% Sub-Saharan African (skin depth and richness), 7.1% Eastern European (subtle angular features). Phenotype reflects substantial East and Southeast Asian ancestry with warm, luminous medium-deep complexion enhanced by African and warm Latin heritage components. Distinctly warm-toned rather than cool.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Narrow and wiry, built for efficiency rather than bulk. Long-limbed with defined musculature from repetitive kitchen work — shoulders and forearms show visible lean muscle. No excess body fat.",
     "hair_color": "Natural dark brown with bleached platinum tips",
     "hair_style": "Closely cropped, textured fade with intentional blonde highlights on the crown and sides",
     "hair_length": "Short",
-    "eye_color": "Deep brown with golden-green undertones, characteristic of South Asian heritage blended with Northern European ancestry",
-    "skin_tone": "Warm medium complexion — honey-to-amber undertones from South Asian and Eastern European blend, with subtle cool undertones from Northern European ancestry. Appears luminous in warm lighting, slightly warmer in cool light.",
-    "complexion": "High cheekbones and angular jaw reflecting Eastern European and South Asian features. Defined brow ridge and almond-shaped eye structure. Skin appears well-maintained despite nocturnal schedule — minimal visible acne, clear forehead. Faint laugh lines forming around the eyes. Expression defaults to focused intensity.",
+    "eye_color": "Deep warm brown with golden undertones",
+    "skin_tone": "Rich warm medium-deep complexion with golden-amber luminosity. Reflects the blended warmth of East Asian, Southeast Asian, and Sub-Saharan African ancestry (65.3% combined), creating a glowing appearance across all lighting conditions. Deeper and warmer than cool-toned complexions.",
+    "complexion": "High, defined cheekbones and angular jaw from East Asian heritage, softened by Southeast Asian and Latin American ancestry. Almond-shaped eye structure characteristic of East Asian genetics. Well-maintained skin despite nocturnal schedule — minimal visible acne, clear forehead. Faint laugh lines forming around the eyes. Expression defaults to focused intensity.",
     "distinguishing_marks": [
       "Single horizontal line of bioluminescent Hausa script tattooed along the entire length of the left forearm, reading 'do not forget the sauce' — glows faint cyan under low light",
       "Pale grey geneware tail with black tips, approximately 1.2 meters long, wraps around the left ankle when standing still or focused on detailed work"
@@ -268,14 +252,66 @@
     "posture_movement": "Moves with deliberate, practiced economy — every gesture minimized and efficient. When working the wok, becomes almost meditative, movements fluid and rhythmic. At rest or between customers, tends toward stillness rather than fidgeting. Tail mirrors emotional state, curling tighter when focused or stressed, relaxing when calm. Walks with a slight forward lean, ready-stance.",
     "clothing_style": "Tier 4 working-class functional. Typically wears heat-resistant synthetic apron over fitted dark utility clothes (usually black or charcoal). Loose-fitting pants with reinforced knee panels and cargo pockets, steel-toed slip-on work shoes. Favors oversized hoodies or tech-fiber jackets in muted tones (grey, dark green) for off-cart hours. Minimal jewelry — no accessories. Clothes show wear but are always clean; grease stains treated immediately. Aesthetic is practical-first, with subtle personal expression through color choices and a single well-maintained watch (used for timing broths)."
   },
-  "image_prompt": "Svetlana Popescu, 168cm mixed-heritage woman with warm honey-amber skin tone, deep brown eyes with golden undertones, short dark brown hair with platinum bleached tips. Eastern European and South Asian ancestry evident in angular high cheekbones and almond-shaped eyes. Pale grey geneware tail with black tips coiled around left ankle, bioluminescent cyan Hausa script glowing faintly on left forearm reading 'do not forget the sauce'. Narrow wiry build, defined lean musculature. Wearing heat-resistant black utility apron over dark charcoal cargo pants with reinforced knees, steel-toed work shoes, grey tech-fiber jacket. Meditative focused expression, deliberate economical posture in ready-stance. Standing in neon-lit cyberpunk kitchen cart setting, GLMZ 2226, warm overhead lighting, grease-stained but impeccably maintained work aesthetic, tail slightly coiled in concentration, moody cyberpunk atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Zen Oh, 168cm wiry street chef with luminous golden-warm medium-deep brown skin blending East Asian, Southeast Asian, and African heritage. Closely cropped dark brown hair with platinum blonde fade highlights. Deep warm brown almond-shaped eyes with focused intensity. High cheekbones, defined angular jaw, slight laugh lines. Wearing dark grey hoodie over black utility apron, steel-toed work shoes. 1.2-meter pale grey geneware tail with black tips coiled around left ankle, adorned with glowing cyan bioluminescent Hausa script forearm tattoo reading 'do not forget the sauce'. Standing at night market wok station, warm blue neon overhead lighting, GLMZ Great Lakes Metropolitan Zone. Meditative posture, practiced economy of movement, ready-stance. Realistic character study, cinematic lighting, neo-noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 41.1,
-    "South Asian": 32.9,
-    "Northern European": 26.0
+    "East Asian": 32,
+    "Southeast Asian": 20.5,
+    "Hispanic/Latin American": 14.1,
+    "Northern European": 13.5,
+    "Sub-Saharan African": 12.8,
+    "Eastern European": 7.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 32
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 19.4
+      },
+      "Filipino": {
+        "Ilocano": 0.8,
+        "Cebuano": 0.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 10.9,
+        "Dominican": 3.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 13.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 4.5,
+        "Liberian": 5.3
+      },
+      "East African": {
+        "Ethiopian": 1.8,
+        "Somali": 0.2
+      },
+      "Central African": {
+        "Angolan": 0.8,
+        "Gabonese": 0.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 5.8
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 1.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d77abe90e7d5a576d32ad8",
   "type": "character",
-  "name": "Nadira Matai",
+  "name": "Hana Kowalczyk",
   "aliases": [
     "Obsidian",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
-  "description": "Somadina Forsberg-Ofosu is lean and angular, all sharp edges and visible tension. At 38, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a extraction specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSomadina Forsberg-Ofosu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Hana Kowalczyk is lean and angular, all sharp edges and visible tension. At 38, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a extraction specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHana Kowalczyk is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.82,
@@ -262,7 +262,7 @@
     "Improviser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,58 +278,100 @@
     "Masquerade",
     "The Narrows Compact",
     "Ashfield",
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "Chicago",
-    "Adaptive Camouflage Skin",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Cem Lund-Bangura",
-    "Crucible RE-2 'Receptionist'",
-    "GLMZ",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Nika Svensson-Kone",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander and South Asian dominant (74%), with significant Sub-Saharan African and Middle Eastern influence (23%), and minor East Asian ancestry. This creates a phenotype of warm, deep brown tones with the broad facial structure and robust bone geometry of Pacific Islander heritage, combined with the defined cheekbones and angular features of South Asian ancestry, tempered by the warmer skin undertones and fuller lip structure of African and Middle Eastern genetics.",
+    "heritage": "Complex Ubiquitous Diaspora ancestry with South Asian (24.9%) and Middle Eastern (21.4%) as primary genetic components, balanced by Eastern European (18.9%), Hispanic/Latin American (17.5%), Sub-Saharan African (12.5%), and Southeast Asian (4.8%) heritage. This creates a phenotype of warm, medium-deep brown tones with refined facial geometry — South Asian definition in cheekbones and jawline structure enriched by Middle Eastern warmth and fuller lip architecture, with Sub-Saharan African influence adding richness to skin undertones and facial width. Hispanic/Latin American ancestry contributes subtle warmth to complexion and feature proportion, while Eastern European heritage provides angular refinement to the overall facial composition.",
     "height_cm": 182,
     "weight_kg": 74,
-    "build": "Lean and angular with visible muscular definition — wiry strength rather than bulk. The geneware muscle density treatment creates an almost unnaturally efficient frame, all compact power and minimal fat. His shoulders are broad but not wide; his limbs are long and precise.",
+    "build": "Lean and angular with visible muscular definition — wiry strength rather than bulk. The geneware muscle density treatment creates an almost unnaturally efficient frame, all compact power and minimal fat. Shoulders are broad but not wide; limbs are long and precise.",
     "hair_color": "Dark brown, graying at temples",
-    "hair_style": "Close-cropped, utilitarian. He doesn't style it — he cuts it short to reduce variables.",
+    "hair_style": "Close-cropped, utilitarian. Cut short to reduce variables.",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint chromatic iridescence around the pupils — subtle sign of the dermal camouflage system",
-    "skin_tone": "Rich warm brown with golden undertones, reflecting the dominant Pacific Islander and South Asian ancestry. The tone is deep and luminous despite nocturnal living, with no pallor — his melanin density prevents the pale quality that would mark full nocturnal adaptation.",
-    "complexion": "Strong, sculptural facial structure with high cheekbones and angular jaw typical of South Asian heritage, combined with the broader facial geometry and fuller features of Pacific Islander ancestry. His face is weathered but not aged; sleep deprivation and stress have carved fine lines around his eyes. Warm brown skin with subtle golden highlights that catch light, showing the characteristic sheen of someone with higher melanin content living under artificial lighting.",
+    "skin_tone": "Warm medium-deep brown with golden and olive undertones, luminous despite nocturnal living. The tone reflects balanced blending of South Asian, Middle Eastern, and Sub-Saharan African ancestry, with natural golden highlights that catch light — melanin density prevents pallor.",
+    "complexion": "Balanced facial structure combining South Asian cheekbone definition and jawline angularity with broader, fuller features from Middle Eastern and Sub-Saharan African genetics. Simultaneously sculpted and warm — neither overly angular nor soft. Sleep deprivation and stress have carved fine lines around the eyes. Warm brown skin with golden and olive undertones showing characteristic luminosity of melanin-rich genetics.",
     "distinguishing_marks": [
       "Augmentation scarring around both temples in faint straight lines where neural interface ports were installed — visible but faded",
-      "Augmentation scarring along the jawline on both sides where geneware muscle density treatment was layered into the facial structure — surgical precision but no attempt at cosmetic smoothing",
-      "A thin white scar across his left knuckle — old knife work, probably from the Narrows"
+      "Augmentation scarring along the jawline on both sides where geneware muscle density treatment was layered into facial structure — surgical precision, no cosmetic smoothing",
+      "Thin white scar across left knuckle — old knife work, probably from the Narrows"
     ],
-    "visible_augmentations": "Geneware muscle density treatment visible as subtle chrome sheen under the skin when he moves — tendons and muscle fibers catch light unnaturally during exertion. The chromatic skin pigment cells of his dermal camouflage create occasional iridescent shifts across his forearms and neck under certain lighting, particularly blue or ultraviolet. No external chrome limbs; all augmentations are integrated.",
-    "posture_movement": "He moves with economical precision — no wasted motion, every gesture purposeful. His default stance is loose but alert, weight distributed for immediate action. He doesn't fidget or relax into furniture; even sitting, there's coiled tension in his frame. His gaze is tracking, always reading the room. He speaks quietly and rarely, forcing others to lean in or strain to listen — a power dynamic he controls.",
-    "clothing_style": "Tier 4 utilitarian-technical aesthetic. Black tactical pants with reinforced seams and cargo pockets, fitted but not tight. Matte-finish synthetic shirt, usually dark gray or charcoal, with minimal branding — function over identity. A worn composite-weave jacket in slate gray with asymmetrical zipper placements and internal pockets for gear. Lightweight boots with non-reflective soles, broken in but maintained. No jewelry, no corporate logos, no status symbols. Everything is chosen for durability, silence, and low visibility. His clothes are clean but not new; they show professional wear, not poverty."
+    "visible_augmentations": "Geneware muscle density treatment visible as subtle chrome sheen under skin during movement — tendons and muscle fibers catch light unnaturally during exertion. Chromatic skin pigment cells of dermal camouflage create occasional iridescent shifts across forearms and neck under certain lighting, particularly blue or ultraviolet. No external chrome limbs; all augmentations integrated.",
+    "posture_movement": "Economical precision in movement — no wasted motion, every gesture purposeful. Default stance is loose but alert, weight distributed for immediate action. No fidgeting or relaxation into furniture; even sitting, coiled tension in frame. Tracking gaze, always reading the room. Speaks quietly and rarely, forcing others to lean in — controlled power dynamic.",
+    "clothing_style": "Tier 4 utilitarian-technical aesthetic. Black tactical pants with reinforced seams and cargo pockets, fitted but not tight. Matte-finish synthetic shirt in dark gray or charcoal, minimal branding. Worn composite-weave jacket in slate gray with asymmetrical zipper placements and internal gear pockets. Lightweight boots with non-reflective soles, broken in but maintained. No jewelry, corporate logos, or status symbols. Everything chosen for durability, silence, and low visibility. Clean but not new; professional wear, not poverty."
   },
-  "image_prompt": "Nadira Matai, a 182cm lean muscular man of Pacific Islander and South Asian heritage, rich deep warm brown skin with golden undertones. High angular cheekbones and defined jawline. Dark brown eyes with subtle chromatic iridescence. Dark brown hair graying at temples, close-cropped. Faded augmentation scarring visible at temples and jawline. Geneware muscle density showing as subtle chrome sheen under skin. Wearing matte dark gray synthetic shirt and slate gray composite jacket, black tactical pants, non-reflective boots. Economical posture, alert stance, quiet intensity. Nocturnal cyberpunk setting, cool blue and ultraviolet lighting catching iridescent shifts on forearms and neck. Low-key professional aesthetic, no status symbols, pure function. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial environment, shadows and synthetic light. Mood: controlled menace, coiled tension. Cinematographic lighting, sharp focus. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Hana Kowalczyk, lean 182cm tall angular figure with warm medium-deep brown skin with golden and olive undertones, dark brown hair graying at temples cut close and utilitarian. South Asian cheekbone definition merged with Middle Eastern fuller features and Sub-Saharan African warmth, sculpted jawline with surgical augmentation scarring visible along both sides. Dark brown eyes with faint chromatic iridescence, fine stress lines around eyes. Subtle chrome sheen visible under skin showing integrated geneware muscle density treatment, faint iridescent shifts on forearms and neck under blue light. Wearing matte charcoal synthetic shirt, slate gray composite-weave jacket with asymmetrical zippers, black tactical pants, non-reflective boots. Coiled tension in posture, tracking gaze, alert but economical stance. Nocturnal Great Lakes Metropolitan setting with cool blue-ultraviolet ambient lighting catching the iridescent dermal camouflage system, neon reflected in surfaces, minimal shadows emphasizing integrated augmentation details. Professional technical aesthetic, no chrome limbs visible, all augmentations seamlessly integrated into biological frame. Mood: controlled tension, quiet power, precise lethal capability --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 37.5,
-    "South Asian": 36.6,
-    "Sub-Saharan African": 11.7,
-    "Middle Eastern": 11.7,
-    "East Asian": 2.5
+    "South Asian": 24.9,
+    "Middle Eastern": 21.4,
+    "Eastern European": 18.9,
+    "Hispanic/Latin American": 17.5,
+    "Sub-Saharan African": 12.5,
+    "Southeast Asian": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 15.5,
+        "Pashtun": 9.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 7.2,
+        "Afghan Dari": 3.1
+      },
+      "Arab Gulf": {
+        "Yemeni": 6.8
+      },
+      "Arab Levantine": {
+        "Lebanese": 2.7,
+        "Jordanian": 1.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 16.2
+      },
+      "Slavic West": {
+        "Czech": 1.8,
+        "Polish": 0.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 3.4,
+        "Nicaraguan": 5.9
+      },
+      "Mexican": {
+        "Mexican": 8.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 8.6,
+        "Botswanan": 3.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 3.1
+      },
+      "Laotian": {
+        "Laotian": 1.1
+      },
+      "Indonesian": {
+        "Javanese": 0.3,
+        "Sundanese": 0.3
+      }
+    }
+  }
 }

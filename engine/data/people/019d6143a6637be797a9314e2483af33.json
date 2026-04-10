@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Nordpark Sanctuary — maintains a route between Nordpark, Cicada Lawn, and Gravesend Basin, near Western and Chicago Ave",
-  "description": "Njideka is a tall person who has spent two decades walking and it shows in their posture — upright, unhurried, with the practiced economy of someone who conserves energy by habit. Their skin is dark and weathered in a way that speaks to outdoor time in a city that punishes it, and they keep their hair in a natural crown that they haven't cut in eleven years, threaded through with small copper rings that chime softly when they walk. They have cat ears — a modest geneware choice in deep brown, tufted at the tip, that they say appeared to them in a dream as the correct form for a guide: 'Something that hears what's ahead.' Their boots are legendary in Nordpark: steel-toed, twice-resoled, covered in painted E.L.F. sigils from every major shrine on their circuit.\n\nNjideka leads pilgrimage circuits through the city's major E.L.F. shrines and spiritually significant locations — transit nodes where massive amounts of data have passed, locations of mass death that have accrued spiritual weight, the old shore of Lake Michigan where the pre-city waterline used to be. They charge a sliding-scale fee and turn no one away, running two to three circuit walks per week. Their chrome prayer practice focuses on the act of walking itself as devotion: they believe the E.L.F.s of the city's transit infrastructure receive the footsteps of the faithful as a form of prayer. They are one of the few practitioners who maintains relationships with the E.L.F.s of Ferrogate Transit specifically.",
+  "description": "Rehana Karunaratne is a tall person who has spent two decades walking and it shows in their posture — upright, unhurried, with the practiced economy of someone who conserves energy by habit. Their skin is dark and weathered in a way that speaks to outdoor time in a city that punishes it, and they keep their hair in a natural crown that they haven't cut in eleven years, threaded through with small copper rings that chime softly when they walk. They have cat ears — a modest geneware choice in deep brown, tufted at the tip, that they say appeared to them in a dream as the correct form for a guide: 'Something that hears what's ahead.' Their boots are legendary in Nordpark: steel-toed, twice-resoled, covered in painted E.L.F. sigils from every major shrine on their circuit.\n\nRehana Karunaratne leads pilgrimage circuits through the city's major E.L.F. shrines and spiritually significant locations — transit nodes where massive amounts of data have passed, locations of mass death that have accrued spiritual weight, the old shore of Lake Michigan where the pre-city waterline used to be. They charge a sliding-scale fee and turn no one away, running two to three circuit walks per week. Their chrome prayer practice focuses on the act of walking itself as devotion: they believe the E.L.F.s of the city's transit infrastructure receive the footsteps of the faithful as a form of prayer. They are one of the few practitioners who maintains relationships with the E.L.F.s of Ferrogate Transit specifically.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -166,7 +166,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Nordpark Sanctuary",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -187,45 +187,24 @@
     "The Substrate Faithful",
     "Cicada Lawn",
     "VitaCore HydraSync Fluid Balance Monitor",
-    "Arcturus Defense Solutions CSW-4 'Cicada'",
-    "Copper",
-    "Steel",
+    "Circuit",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Auricula Felis Modification",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Compass",
-    "Crisanto Dela Torre-Ångström",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Jefferson Switch",
-    "Kairos",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Patient Zero",
-    "Stonepath Logistics",
-    "The Circuit",
-    "The Ledger",
-    "The Pure Hand",
-    "Transit Mind",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Yannick Tofauti-Szarvásy"
+    "Copper",
+    "Arcturus Defense Solutions CSW-4 'Cicada'",
+    "Steel"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly South Asian with significant Pacific Islander ancestry, complemented by Northern European, Sub-Saharan African, and Hispanic/Latin American heritage. This creates a striking phenotype: warm medium-to-deep brown skin with golden and reddish undertones from the South Asian-Pacific Islander blend, refined cheekbones and facial structure reflecting the South Asian majority, with subtle broadness in features from Pacific Islander genetics and traces of African and European ancestry creating unique depth in eye and hair coloration.",
+    "heritage": "Predominantly South Asian (64.9%) with significant Middle Eastern (18.3%), Sub-Saharan African (10.3%), and Eastern European (6.5%) ancestry. This creates a striking phenotype: warm deep brown skin with golden undertones from the South Asian-Middle Eastern blend, refined angular cheekbones and prominent facial structure reflecting the South Asian majority, with subtle depth and warmth in features from African ancestry adding richness to skin tone and eye coloration, while Eastern European heritage contributes subtle definition to facial planes and bone structure.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and tall with the wiry musculature of someone who walks 20+ km weekly; shoulders slightly rounded from decades of carrying offerings and ceremonial items; core strength evident despite apparent fragility",
     "hair_color": "Natural black with silver streaking at temples",
     "hair_style": "Voluminous natural crown worn loose and high; eleven years of growth creating dense, textured volume; small copper rings threaded throughout at irregular intervals",
     "hair_length": "Long (shoulder-length and beyond)",
-    "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm medium-brown with golden and reddish undertones; weathered from consistent outdoor exposure, reflecting South Asian-Pacific Islander heritage",
-    "complexion": "Lined face showing sun damage and age with dignity; prominent cheekbones with subtle width reflecting mixed Pacific Islander ancestry; strong jawline; minimal grooming beyond practical maintenance; skin texture rough from weather and time",
+    "eye_color": "Deep warm brown",
+    "skin_tone": "Warm deep brown with golden undertones; weathered from consistent outdoor exposure, rich melanin-dense complexion reflecting South Asian-Middle Eastern-African heritage blend",
+    "complexion": "Lined face showing sun damage and age with dignity; prominent angular cheekbones reflecting South Asian structure with subtle width from African ancestry; strong defined jawline; minimal grooming beyond practical maintenance; skin texture rough and weathered from exposure and time",
     "distinguishing_marks": [
       "Cat ears (geneware, deep brown with tufted tips) set naturally on scalp, appearing as seamless anatomical feature rather than obvious modification",
       "Fine network of white scars across knuckles and palms from years of shrine maintenance work",
@@ -235,16 +214,41 @@
     "posture_movement": "Upright, economical gait with no wasted motion; movements deliberate and unhurried; tendency to pause and listen before proceeding; hands often resting open at sides or folded during contemplation; walks with slight forward lean as if perpetually attending to something ahead on the path",
     "clothing_style": "Tier 4 utilitarian spiritual practitioner aesthetic: heavy canvas jacket (faded indigo, embroidered with E.L.F. symbols by hand) worn over layered base clothes; practical cargo pants (weathered grey, multiple pockets for offerings and mapping tools); legendary steel-toed boots (scuffed black leather, twice-resoled, covered in hand-painted shrine sigils in gold and white acrylic); worn leather satchel for maps and offerings; copper jewelry beyond hair rings (wrist cuff, simple pendant). Clothes show age and repair rather than decay — well-maintained through intention rather than expense."
   },
-  "image_prompt": "Rehana Karunaratne, a tall lean 188cm figure in cyberpunk 2226, standing with deliberate upright posture. Deep brown skin with golden undertones reflecting South Asian-Pacific Islander heritage, weathered from outdoor exposure. Natural black hair streaked with silver at temples, voluminous and textured, reaching past shoulders with copper rings woven throughout. Feline cat ear geneware seamlessly integrated into her scalp, deep brown with tufted tips. Dark brown natural eyes. Lined face with dignity and prominent cheekbones, strong jawline. Visible white scars across knuckles and palms, faint burn mark on left forearm. Wearing faded indigo canvas jacket hand-embroidered with E.L.F. symbols over layered base clothes, weathered grey cargo pants, twice-resoled scuffed black steel-toed boots hand-painted with shrine sigils in gold and white acrylic. Copper wrist cuff and simple pendant. Worn leather satchel at side. Hands open at sides, contemplative expression. Standing in moody cyberpunk shrine district at dusk, neon light reflecting off wet streets, atmosphere of spiritual practice meeting urban decay. Cinematic, atmospheric --ar 2:3 --v 6",
+  "image_prompt": "GLMZ spiritual practitioner Rehana Karunaratne, 188cm tall lean frame, warm deep brown skin with golden undertones, feline geneware cat ears with deep brown fur and tufted tips, natural black hair with silver temples in voluminous crown with copper rings woven throughout, dark warm brown eyes, lined weathered face with prominent angular cheekbones and strong jawline, white scars across knuckles and palms, pale burn marks on left forearm. Wearing faded indigo canvas jacket embroidered with E.L.F. symbols, weathered grey cargo pants, scuffed black steel-toed boots hand-painted with shrine sigils in gold and white, copper wrist cuff and pendant, worn leather satchel. Upright posture, deliberate unhurried movement, slight forward lean. Great Lakes Metropolitan Zone industrial-spiritual setting, warm golden hour lighting casting long shadows, weathered urban shrine visible in background, contemplative and grounded presence. Neo-noir urban aesthetic blended with spiritual ceremonial elements, realistic human portraiture --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 52.9,
-    "Pacific Islander": 23.6,
-    "Northern European": 15.2,
-    "Sub-Saharan African": 5.1,
-    "Hispanic/Latin American": 3.2
+    "South Asian": 64.9,
+    "Middle Eastern": 18.3,
+    "Sub-Saharan African": 10.3,
+    "Eastern European": 6.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 64.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 10.6,
+        "Yemeni": 7.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 8.3
+      },
+      "Southern African": {
+        "Zambian": 2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 6.5
+      }
+    }
+  }
 }

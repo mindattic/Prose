@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6447a1aa5cab8c6fde20a47",
   "type": "character",
-  "name": "Tarn Johansson",
+  "name": "Tarn Tlemcani",
   "aliases": [
     "Kgomo",
     "The Old Engine"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Geartown — owns and operates Arriola's Bay, a three-bay garage on Ironvein Spur Street, near Milwaukee and Damen",
-  "description": "Kgomo is built like something that was designed to take a load and did. He's massive across the shoulders in the way of a man who has been lifting engines since before most people reading this were born, with a belly that has arrived in the last decade and which he regards with philosophical detachment. His Batswana-Norwegian heritage has given him dark brown skin sun-cured to near-black at the forearms, close-cropped white hair, and a beard he maintains with the same precision he applies to torque specifications. His right arm from the elbow down is industrial-grade chrome — a work accident at forty-three that he replaced with the best mechanical limb he could afford (not very, at the time) and has since upgraded three times. It is visibly mismatched: different grades of metal, a panel that's clearly from a different model year. He considers it charming.\n\nKgomo is not warm in the way of someone who performs warmth. He is warm in the way of a specific tool that has been exactly right for the job so many times that you trust it completely. He has opinions about everything, delivers them once, and does not repeat himself. He has been repairing vehicles in Geartown for thirty years and knows which machines can be saved and which are already gone — a judgment he applies, somewhat unsubtly, to people as well.",
+  "description": "Tarn Tlemcani is built like something that was designed to take a load and did. He's massive across the shoulders in the way of a man who has been lifting engines since before most people reading this were born, with a belly that has arrived in the last decade and which he regards with philosophical detachment. His Batswana-Norwegian heritage has given him dark brown skin sun-cured to near-black at the forearms, close-cropped white hair, and a beard he maintains with the same precision he applies to torque specifications. His right arm from the elbow down is industrial-grade chrome — a work accident at forty-three that he replaced with the best mechanical limb he could afford (not very, at the time) and has since upgraded three times. It is visibly mismatched: different grades of metal, a panel that's clearly from a different model year. He considers it charming.\n\nTarn Tlemcani is not warm in the way of someone who performs warmth. He is warm in the way of a specific tool that has been exactly right for the job so many times that you trust it completely. He has opinions about everything, delivers them once, and does not repeat himself. He has been repairing vehicles in Geartown for thirty years and knows which machines can be saved and which are already gone — a judgment he applies, somewhat unsubtly, to people as well.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -178,7 +178,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,32 +234,14 @@
   "registered_firearms": [],
   "related_entities": [
     "The Heritage Vault",
+    "The Accidental",
     "Geartown",
     "Ironvein",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Altan Tanaka-Frimpong",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Devraj Solano-Yildirim",
-    "Ferrogate Transit",
-    "Free Assembly",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Marcus Bellamy",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "TESSERA CR-12 'Whisper'",
-    "The Narrows",
-    "The Pure Hand",
-    "Toivo Diallo-Achebe",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Belly Full"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (63%), East Asian (25%), Pacific Islander (11%), with traces of Hispanic/Latin American heritage. A striking blend that manifests in his dark brown eyes, the robust bone structure of his face, and the particular distribution of muscle and weight across his frame—a combination that speaks to resilience across continents.",
+    "heritage": "A striking convergence of East Asian (31.7%), North African (26.9%), Hispanic/Latin American (22.3%), and South Asian (15.7%) ancestry, with minor Sub-Saharan African (2.7%) and Eastern European (0.7%) elements. This global blend manifests in the robust architecture of his face—high cheekbones from East Asian heritage, broad midface structure from North African ancestry, the rich deep undertones of his skin reflecting South Asian genetics, and the particular distribution of muscle and resilience that speaks to continental diversity.",
     "height_cm": 188,
     "weight_kg": 112,
     "build": "Massive across the shoulders and chest with the dense muscle of six decades of heavy labor; a prominent belly acquired in the last ten years that he carries without self-consciousness. Thick-limbed, substantial through the torso.",
@@ -267,8 +249,8 @@
     "hair_style": "Close-cropped, maintained with geometric precision",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Deep warm brown with strong melanin density; darkened to near-charcoal at the forearms and neck from decades of sun exposure; the torso retains richer, slightly lighter brown tones. The variation speaks to countless hours bent over engine work in harsh light.",
-    "complexion": "Weathered, lined face with deep creases around the eyes and mouth from four decades of squinting into engine bays. The facial structure shows the broad cheekbones and defined jawline characteristic of his Sub-Saharan and East Asian heritage, softened by age and the natural fullness that comes with his build. Beard maintained with the same precision as his work—even, salt-and-pepper transitioning to white, roughly 2cm in length. Skin shows old burn marks and grease stains that no amount of scrubbing fully removes.",
+    "skin_tone": "Deep warm brown with sun-weathered darkening to near-charcoal at the forearms and neck from decades of sun exposure; the torso retains richer, slightly lighter medium-brown tones. The variation speaks to countless hours bent over engine work in harsh light, layered across a genetic foundation of East Asian, North African, and South Asian heritage.",
+    "complexion": "Weathered, lined face with deep creases around the eyes and mouth from four decades of squinting into engine bays. The facial structure shows high cheekbones characteristic of East Asian heritage, broad at the midface from North African ancestry, with a defined jawline softened by age and natural fullness. The rich depth of his skin tone reflects South Asian heritage contributions. Beard maintained with the same precision as his work—even, salt-and-pepper transitioning to white, roughly 2cm in length. Skin shows old burn marks and grease stains that no amount of scrubbing fully removes.",
     "distinguishing_marks": [
       "Deep circular burn scar on the left forearm from an oil-bath incident in his thirties, roughly 8cm in diameter.",
       "Jagged scar running along the right side of the ribcage, visible when shirtless, from a vehicle shift accident at age 36.",
@@ -279,15 +261,91 @@
     "posture_movement": "Moves with the deliberate efficiency of someone who has learned to work around chronic pain. Stands with weight shifted to the left; favors his left leg slightly when stationary. When working, he settles into postures as if they are familiar chairs—economical, patient. Carries his right arm slightly lower than his left, as if its weight is a known constant. Does not fidget. Does not waste movement.",
     "clothing_style": "Tier 4 utilitarian. Workwear: reinforced canvas pants, usually dark grey or black, with multiple thigh pockets and a tool belt that has been his for fifteen years. His shirts are mechanics' shop-branded from various eras—some from corpo garages he worked for decades ago, some from local suppliers. A faded Ferrogate Transit polo from 1997 that he still wears despite the grudge, worn soft. In winter, a synthetic-wool lined jacket, patched at the elbows. His boots are steel-toed, resoled three times, the leather cracked and shaped exactly to his feet. A simple chrome wedding band on his left ring finger, worn thin. No jewelry beyond that. No visible corporate logos he chose voluntarily. Everything functional, nothing aspirational."
   },
-  "image_prompt": "Tarn Johansson, 188cm tall industrial mechanic in his sixties, deep warm brown skin darkened to charcoal at neck and forearms from decades of labor. Weathered angular face with broad cheekbones, deep creases around dark brown eyes, white close-cropped hair, salt-and-pepper beard. Massive broad-shouldered build with prominent belly, thick-limbed. Wearing faded shop-branded polo shirt and reinforced dark canvas work pants, tool belt worn fifteen years. Industrial-grade chrome prosthetic right arm from elbow down—brushed steel forearm, matte black hand with exposed hydraulic lines, multiple generations of metalwork visible at elbow joint. Bilateral knee bracing visible in asymmetrical gait. Old burn scar on left forearm, faded wrench-and-hammer tattoo on shoulder blade. Standing in dimly lit garage bay with warm overhead work lights, servo whisper audible as he shifts weight. Cyberpunk 2200s, hyper-realistic, weathered, functional, no wasted movement. --ar 2:3 --v 6",
+  "image_prompt": "Tarn Tlemcani, 188cm tall weathered mechanic with deep warm brown skin showing sun-darkened forearms and neck, high East Asian cheekbones, broad North African midface, defined jaw softened by age. White close-cropped hair and salt-and-pepper beard. Massive shoulders and chest with substantial belly, thick-limbed build. Right arm industrial chrome prosthetic from elbow down—brushed steel forearm, matte black hand with exposed hydraulic lines, visible multi-generational metalwork seams. Bilateral knee bracing. Deep burn scar left forearm, old occupational scars on hands, faded blue-grey tattoo of crossed wrench and hammer on shoulder blade. Worn chrome wedding band. Standing in mechanics' garage surrounded by engine parts, wearing faded Ferrogate Transit polo shirt patched at elbows, dark grey reinforced canvas pants, steel-toed boots, worn tool belt. Neutral expression, economical posture, weight shifted left. Cool fluorescent and amber workshop lighting casting industrial shadows. GLMZ 2200s blue-collar aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 63.0,
-    "East Asian": 25.0,
-    "Pacific Islander": 10.9,
-    "Hispanic/Latin American": 1.1
+    "East Asian": 31.7,
+    "North African": 26.9,
+    "Hispanic/Latin American": 22.3,
+    "South Asian": 15.7,
+    "Sub-Saharan African": 2.7,
+    "Eastern European": 0.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 27.7
+      },
+      "Chinese": {
+        "Sichuanese": 2.3,
+        "Shanghainese": 1.7
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Tunisian": 1.2,
+        "Mauritanian": 1.3
+      },
+      "Nile Valley": {
+        "Egyptian": 23.7
+      },
+      "Amazigh": {
+        "Berber": 0.6,
+        "Kabyle": 0.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 2.8,
+        "Colombian": 4.1
+      },
+      "Caribbean": {
+        "Cuban": 6.3,
+        "Puerto Rican": 1.4
+      },
+      "Mexican": {
+        "Mexican": 7.7
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 11.1
+      },
+      "Indian": {
+        "Gujarati": 0.4,
+        "Tamil": 2.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 1.8,
+        "Nigerian": 0.2
+      },
+      "Southern African": {
+        "Mozambican": 0.3
+      },
+      "East African": {
+        "Ethiopian": 0.2,
+        "Tanzanian": 0.2
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 0.1,
+        "Bosnian": 0.1
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.3
+      },
+      "Slavic East": {
+        "Ukrainian": 0.2
+      }
+    }
+  }
 }

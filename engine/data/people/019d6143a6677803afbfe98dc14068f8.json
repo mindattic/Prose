@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6677803afbfe98dc14068f8",
   "type": "character",
-  "name": "Abiodun Achebe-Tovar",
+  "name": "Echo Okada-Banerjee",
   "aliases": [
     "Old Scratch",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 78,
   "status": "active",
   "location": "Washburn Commons, Block 7 Community Hall, near Halsted and Division",
-  "description": "Nnamdi is a broad-shouldered man whose body still carries the architecture of someone who once commanded rooms — the squared posture, the deliberate occupation of space — though age has softened his silhouette into something more like a weathered monument than a weapon. His skin is deep brown and mapped with the creases of seven decades of expression, and he keeps his white hair cropped close to the scalp except for a single braid at the temple, a tradition from his Polynesian grandmother he has never explained to anyone who asked. His left arm from the elbow down is functional chrome — a Ferrogate industrial replacement from a coupling accident in '61 — and he polishes it every morning with the same cloth he uses on his shoes.\n\nHe speaks slowly and with enormous precision, as a man who learned early that imprecise words cost people their livelihoods. He has strong opinions about nearly everything and shares them freely but listens — genuinely listens — in a way that has become increasingly rare. Younger residents come to him with problems he cannot solve and leave feeling they have been given something anyway. He does not romanticize the past. He is one of the few people in Washburn Commons who will tell you, to your face, that the Corporate Wars were atrocities on all sides.",
+  "description": "Echo Okada-Banerjee is a broad-shouldered man whose body still carries the architecture of someone who once commanded rooms — the squared posture, the deliberate occupation of space — though age has softened his silhouette into something more like a weathered monument than a weapon. His skin is deep brown and mapped with the creases of seven decades of expression, and he keeps his white hair cropped close to the scalp except for a single braid at the temple, a tradition from his Polynesian grandmother he has never explained to anyone who asked. His left arm from the elbow down is functional chrome — a Ferrogate industrial replacement from a coupling accident in '61 — and he polishes it every morning with the same cloth he uses on his shoes.\n\nHe speaks slowly and with enormous precision, as a man who learned early that imprecise words cost people their livelihoods. He has strong opinions about nearly everything and shares them freely but listens — genuinely listens — in a way that has become increasingly rare. Younger residents come to him with problems he cannot solve and leave feeling they have been given something anyway. He does not romanticize the past. He is one of the few people in Washburn Commons who will tell you, to your face, that the Corporate Wars were atrocities on all sides.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -185,7 +185,7 @@
     "Mentor": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Washburn Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,33 +255,11 @@
     "Washburn Commons",
     "Grandmother",
     "Ferrogate Transit",
-    "Amara Osei-Dzhaparidze",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Brewer's Spine",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Ngaire Rojas-Yeboah",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Saodat Mirzoyan-Fubara",
-    "Solveig Tambadou-Kereselidze",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "The Burden Clause",
-    "The Ledger",
-    "The Shelf Commons",
-    "Tidewater Hall",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "The Accidental"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (45.2%), Hispanic/Latin American (31.9%), Northern European (22.9%) — resulting in rich warm brown skin with subtle golden undertones from the Latin American and Northern European ancestry blending with the deeper tones of West African heritage",
+    "heritage": "East Asian (29.4%), Eastern European (24.2%), South Asian (22.3%), Sub-Saharan African (16.3%), Middle Eastern (7.8%) — a complex multihued blend resulting in warm medium-to-deep brown skin with subtle olive and golden undertones from the convergence of East Asian, South Asian, and Middle Eastern ancestry layered with Eastern European and African heritage",
     "height_cm": 182,
     "weight_kg": 94,
     "build": "Broad-shouldered and deep-chested, with the residual musculature of manual labor work, now softened by age into a sturdy, monumental frame. Slight forward curve to the spine from decades of leaning into union negotiations and community work.",
@@ -289,8 +267,8 @@
     "hair_style": "Cropped close to scalp with a single braid at the left temple, approximately 20cm long, kept with dark thread wrapping",
     "hair_length": "Short (mostly) with one medium braid",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm deep brown with golden undertones, reflecting the blend of West African, Latin American, and Northern European ancestry",
-    "complexion": "Heavily lined face with deep laugh lines around the eyes and mouth; weathered but clean-shaven; skin texture shows sun exposure and age but maintains even warm tone across high cheekbones; expression lines suggest a lifetime of careful listening and deliberate speech; facial structure shows the broader features characteristic of Sub-Saharan African heritage blended with the angular definition from Northern European ancestry",
+    "skin_tone": "Warm medium-deep brown with olive and golden undertones, reflecting the balanced multihued blend of East Asian, South Asian, Eastern European, Sub-Saharan African, and Middle Eastern ancestry",
+    "complexion": "Heavily lined face with deep laugh lines around the eyes and mouth; weathered but clean-shaven; skin texture shows sun exposure and age but maintains even warm tone across high cheekbones with pronounced South Asian and East Asian angular definition; subtle Middle Eastern bridge structure; expression lines suggest a lifetime of careful listening and deliberate speech; facial structure synthesizes East Asian angularity, South Asian prominence, Middle Eastern definition, with warm undertones from Sub-Saharan African and Eastern European heritage",
     "distinguishing_marks": [
       "Deep linear scar along the inside of right forearm, pale and old, approximately 12cm long",
       "Burn scarring on the left shoulder blade, roughly 8cm across, pale and mottled — industrial accident related",
@@ -300,14 +278,61 @@
     "posture_movement": "Stands with squared shoulders and deliberate occupation of physical space, a learned posture of authority that has not diminished with age. Moves slowly and with precision — economical gestures, no wasted motion. Left hand (chrome) operates with mechanical smoothness; right hand moves with natural aging slowness. Tends to lean slightly forward when listening. Walks at a measured, steady pace regardless of weather or urgency.",
     "clothing_style": "Tier 3-4 working class, conservative and functional. Typically wears a dark button-up shirt (cotton blend, no logo) over a simple crew-neck undershirt; dark trousers with a heavy leather belt worn soft with age. Work boots — currently a pair of Consolidated Transit Authority issue from the 1990s, resoled twice. A grey wool long-coat in cold months. No jewelry except a faded union ring on his right ring finger. Clothing is clean, well-maintained, never flashy. The overall impression is of someone for whom fashion was never a priority, but dignity was."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Abiodun Achebe-Tovar, 182cm tall mature man with warm deep brown skin and golden undertones, close-cropped white hair with single dark-wrapped braid at left temple, heavy expression lines and laugh lines, clean-shaven weathered face. Dark brown natural eyes. Left arm polished chrome industrial prosthetic with visible servo joints and Ferrogate Transit Authority logo, right ear with discrete matte black cochlear amplifier module. Standing with squared authoritative posture, wearing dark cotton button-up shirt over crew-neck undershirt, dark trousers, worn leather belt, old Consolidated Transit Authority work boots. Grey wool long-coat. Faded union ring on right ring finger. Multiple scars visible: 12cm pale scar on right forearm inside, 8cm mottled burn scarring on left shoulder blade, 6cm white scar on left jawline. Deliberate economical movement, leaning slightly forward. Great Lakes Metropolitan Zone neon-lit background, cool industrial lighting with warm accent light catching chrome arm and facial features, dignified working-class atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Echo Okada-Banerjee, 182cm tall with broad shoulders and sturdy frame, warm medium-deep brown skin with olive and golden undertones blending East Asian, South Asian, Eastern European, Sub-Saharan African and Middle Eastern heritage. Weathered face with deep laugh lines, white hair cropped short with single temple braid wrapped in dark thread. Dark brown natural eyes. Clean-shaven with pronounced angular cheekbones and strong bone structure. Visibly aged, deeply lined expression of deliberate listening. Left arm from elbow down is polished mirror-finish industrial chrome prosthetic with servo joints and Ferrogate Transit Authority logo. Pale scars on right forearm (12cm), left shoulder blade (8cm burn), and left jawline (6cm). Small discrete matte-black cochlear amplifier on right ear. Dressed in dark button-up shirt over crew-neck undershirt, dark trousers, worn leather belt, weathered Consolidated Transit Authority work boots resoled twice, grey wool long-coat. Faded union ring on right ring finger. Stands with squared shoulders and authority, measured deliberate posture. 2226 GLMZ neo-noir urban aesthetic, industrial worker heritage, dignified conservative style, dim indoor lighting highlighting chrome augmentation, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 45.2,
-    "Hispanic/Latin American": 31.9,
-    "Northern European": 22.9
+    "East Asian": 29.4,
+    "Eastern European": 24.2,
+    "South Asian": 22.3,
+    "Sub-Saharan African": 16.3,
+    "Middle Eastern": 7.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 29.4
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 11.9
+      },
+      "Slavic South": {
+        "Bosnian": 5
+      },
+      "Slavic West": {
+        "Czech": 7.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 22.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 13.7
+      },
+      "Central African": {
+        "Cameroonian": 0.7,
+        "Gabonese": 0.2
+      },
+      "Southern African": {
+        "South African": 0.9,
+        "Mozambican": 0.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 3.2,
+        "Iraqi": 3
+      },
+      "Arab Levantine": {
+        "Jordanian": 1.6
+      }
+    }
+  }
 }

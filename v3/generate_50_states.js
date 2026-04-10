@@ -23,15 +23,15 @@ Compiled from traveler accounts, signal intelligence, satellite imagery, and rum
 
 --- GREAT LAKES / MIDWEST ---
 
-ILLINOIS. Contains Meridian 88 and the broader Great Lakes Metropolitan Zone. If you are reading this document, you are probably here. The known world for most residents. Population estimates range from 8 to 14 million depending on who is counting and whether they include the Understory. Governance compact intact. BCI infrastructure functional. This is the baseline. Everything else in this document is measured against the assumption that Illinois is normal. We are aware of the irony.
+ILLINOIS. Contains GLMZ and the broader Great Lakes Metropolitan Zone. If you are reading this document, you are probably here. The known world for most residents. Population estimates range from 8 to 14 million depending on who is counting and whether they include the Understory. Governance compact intact. BCI infrastructure functional. This is the baseline. Everything else in this document is measured against the assumption that Illinois is normal. We are aware of the irony.
 
 MICHIGAN. Part of the GLMZ. Detroit is a vertical ruin — upper floors inhabited, lower floors flooded since the lake level adjustments of 2158. Estimated 600,000 residents live above the waterline in what used to be the Renaissance Center and its surrounding towers. The lower twenty floors of most downtown structures are submerged. People boat between buildings. There is a functioning economy. There are children who have never touched dry ground. The western part of the state is agricultural and mostly stable. The Upper Peninsula sends a signal every eighteen months that translates to "still here." We believe them.
 
 WISCONSIN. Part of the GLMZ. Milwaukee functions. Madison functions. The Quiet Zone is expanding in the north — an area where BCI signals degrade, electronics malfunction, and people who enter too deep tend not to come back, or come back different. The Zone was forty square kilometers in 2210. It is now estimated at three hundred. Nobody has authorized an investigation. Three investigations have been proposed. All three proposal authors subsequently transferred to other divisions.
 
-INDIANA. Part of the GLMZ. The southern dead zone. Dust. The soil died first, then the vegetation, then the groundwater. The Indiana Dust settlement persists near what was Bloomington — approximately 2,000 people living in sealed structures, breathing filtered air, growing food hydroponically. They trade with Meridian 88 via the I-65 corridor, which is maintained by Arcturus Defense Solutions under a perpetual contract nobody remembers signing. The northern third of the state, near the GLMZ border, is functional. The middle third is transitional. The southern third is moon.
+INDIANA. Part of the GLMZ. The southern dead zone. Dust. The soil died first, then the vegetation, then the groundwater. The Indiana Dust settlement persists near what was Bloomington — approximately 2,000 people living in sealed structures, breathing filtered air, growing food hydroponically. They trade with GLMZ via the I-65 corridor, which is maintained by Arcturus Defense Solutions under a perpetual contract nobody remembers signing. The northern third of the state, near the GLMZ border, is functional. The middle third is transitional. The southern third is moon.
 
-OHIO. The Ohio Corridor is a fortified transit route running east from the GLMZ toward what used to be Pittsburgh. It is maintained, armed, and operational. The territory between cities is described in reports as "wrong" — a word that appears in seventeen separate field assessments without further elaboration. Columbus maintains a population. Cleveland maintains a population. Cincinnati sent its last transmission in 2203. A trader who claimed to have passed through Cincinnati in 2221 said the buildings were still standing but the streets were "rearranged." He could not explain what he meant. He became agitated when pressed. He left Meridian 88 three days later and did not return.
+OHIO. The Ohio Corridor is a fortified transit route running east from the GLMZ toward what used to be Pittsburgh. It is maintained, armed, and operational. The territory between cities is described in reports as "wrong" — a word that appears in seventeen separate field assessments without further elaboration. Columbus maintains a population. Cleveland maintains a population. Cincinnati sent its last transmission in 2203. A trader who claimed to have passed through Cincinnati in 2221 said the buildings were still standing but the streets were "rearranged." He could not explain what he meant. He became agitated when pressed. He left GLMZ three days later and did not return.
 
 MINNESOTA. Technically part of the GLMZ's extended influence sphere. Minneapolis-St. Paul is a functioning city-state with its own governance compact that they insist is not a governance compact. They trade grain, lumber, and fresh water. They do not trade information. Their BCI network is incompatible with ours. When asked why, their representatives change the subject. Population estimated at 1.2 million. Reliability: moderate.
 
@@ -45,13 +45,13 @@ KENTUCKY. All contact lost. Satellites show green. No structures. No heat signat
 
 TENNESSEE. Fragmented. Nashville is controlled by Meridian Sound, a media corponation that broadcasts music continuously on every available frequency. Memphis is underwater. Knoxville reportedly declared itself a "free city" in 2198 and has maintained that status through means that are unclear. The eastern mountains are Appalachian territory. See: Virginia, West Virginia, North Carolina.
 
-VIRGINIA. The Appalachian states went feral. This is the clinical term we use because the actual term — "reverted to a pre-industrial social structure organized around kinship networks, oral tradition, and territorial violence" — is too long for a briefing. Virginia's coastal areas are submerged. The interior mountains sustain an estimated 200,000 to 400,000 people living in ways that would be recognizable to someone from the 1800s and completely alien to someone from Meridian 88. They do not want contact. They have made this clear. Repeatedly.
+VIRGINIA. The Appalachian states went feral. This is the clinical term we use because the actual term — "reverted to a pre-industrial social structure organized around kinship networks, oral tradition, and territorial violence" — is too long for a briefing. Virginia's coastal areas are submerged. The interior mountains sustain an estimated 200,000 to 400,000 people living in ways that would be recognizable to someone from the 1800s and completely alien to someone from GLMZ. They do not want contact. They have made this clear. Repeatedly.
 
-WEST VIRGINIA. See Virginia, but more so. The last outside observer to enter West Virginia and return (2209) described "a functioning society that has decided, collectively and with complete conviction, that the 21st century was a mistake." They use no electronics. They have no BCI. They have dentistry, agriculture, and a legal system based on precedent going back to the 2090s. They are, by several metrics, healthier than the average Meridian 88 resident. This fact is omitted from most briefings.
+WEST VIRGINIA. See Virginia, but more so. The last outside observer to enter West Virginia and return (2209) described "a functioning society that has decided, collectively and with complete conviction, that the 21st century was a mistake." They use no electronics. They have no BCI. They have dentistry, agriculture, and a legal system based on precedent going back to the 2090s. They are, by several metrics, healthier than the average GLMZ resident. This fact is omitted from most briefings.
 
 NORTH CAROLINA. Coastal half submerged. Mountain half is Appalachian territory. The Research Triangle area — Durham, Raleigh, Chapel Hill — sends an automated signal that indicates functioning server farms. No human communication accompanies the signal. The servers appear to be running. What they are running is unknown. Reliability: low.
 
-SOUTH CAROLINA. Underwater south of Columbia. Interior status unknown. A trading vessel that made port in Meridian 88 in 2224 carried cargo marked with South Carolina tax stamps dated 2225. Either South Carolina has a functioning tax authority or someone is very good at forgery. We have not determined which.
+SOUTH CAROLINA. Underwater south of Columbia. Interior status unknown. A trading vessel that made port in GLMZ in 2224 carried cargo marked with South Carolina tax stamps dated 2225. Either South Carolina has a functioning tax authority or someone is very good at forgery. We have not determined which.
 
 GEORGIA. Atlanta is a corponation zone — Peachtree Meridian Holdings, a subsidiary of a subsidiary of something we cannot trace. They maintain a walled city with an estimated population of 300,000. They do not respond to diplomatic contact. They do respond to trade inquiries, but only via a specific frequency, only on Tuesdays, and only in a pidgin that mixes English, Mandarin, and something our linguists cannot identify. Southern Georgia is swamp. Savannah is a memory.
 
@@ -153,7 +153,7 @@ const doc = {
   classification: "restricted",
   description: description,
   related_entities: [
-    "Meridian 88",
+    "GLMZ",
     "Arcturus Defense Solutions",
     "Free Peoples Republic of Idaho",
     "New England Compact",
@@ -170,10 +170,10 @@ const doc = {
   credibility: "unconfirmed",
   story_hooks: [
     "A cartographer begins cross-referencing the Fifty States document with satellite imagery and finds that three states listed as uninhabitable show thermal signatures consistent with large populations. Either the document is wrong or the satellites are.",
-    "Someone arrives in Meridian 88 claiming to be from a state listed as 'no contact.' They have documentation. The documentation is authentic. The state is still listed as 'no contact.'",
-    "The Kentucky 23.4 Hz hum is detected inside Meridian 88 for eleven seconds during a routine BCI calibration. The technician who noticed it is now unable to stop hearing it.",
+    "Someone arrives in GLMZ claiming to be from a state listed as 'no contact.' They have documentation. The documentation is authentic. The state is still listed as 'no contact.'",
+    "The Kentucky 23.4 Hz hum is detected inside GLMZ for eleven seconds during a routine BCI calibration. The technician who noticed it is now unable to stop hearing it.",
     "A Behemoth from Kansas crosses into Missouri and does not stop at the water's edge. It walks into the flood. Sonar tracking shows it is still moving, underwater, heading south.",
-    "The Friday evening music broadcast from Montana stops for the first time in twenty years. It resumes the following Friday with a different song. The song is one that was popular in Meridian 88 last week. Nobody in Montana should know that."
+    "The Friday evening music broadcast from Montana stops for the first time in twenty years. It resumes the following Friday with a different song. The song is one that was popular in GLMZ last week. Nobody in Montana should know that."
   ],
   tags: [
     "document",

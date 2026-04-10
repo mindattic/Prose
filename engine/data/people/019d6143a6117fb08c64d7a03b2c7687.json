@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6117fb08c64d7a03b2c7687",
   "type": "character",
-  "name": "Ishaan Esquivel",
+  "name": "Nadia Tlemcani",
   "aliases": [
     "Mama Fata",
     "The Crosser"
@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "Irkalla — a residential stack in the lower levels near the Gravesend Basin, near Western and Division",
-  "description": "Fatoumata is a small, round woman who has been small and round for as long as anyone in Irkalla can remember, though she was apparently quite tall in photographs from her forties and nobody can fully account for this. Her skin is very dark and very smooth in a way that no longer has a natural explanation, though she is dismissive of questions about it. Her hair is natural and silver-white, kept in a high crown wrap of deep indigo cloth. She has cat ears — small, dark-tipped, mobile — that she got at forty-five after a dream she refuses to describe. They swivel constantly, tracking sound, giving her the air of someone who is always listening to two conversations at once.\n\nFatoumata holds the dying. This is the entire description of her work, and it requires everything. She sits with people in their last hours, facilitates the rituals their families have lost the words to, and manages the terrifying administrative machinery of death in GLMZ — the Ferrogate Transit body transit permits, the Helix Biosystems harvesting opt-out paperwork, the Axiom data-legacy protocols. She has done this for forty years. She is simultaneously the most comforting and most disconcerting person in any room, because she has no fear of the subject that frightens everyone else most.",
+  "description": "Nadia Tlemcani is a small, round woman who has been small and round for as long as anyone in Irkalla can remember, though she was apparently quite tall in photographs from her forties and nobody can fully account for this. Her skin is very dark and very smooth in a way that no longer has a natural explanation, though she is dismissive of questions about it. Her hair is natural and silver-white, kept in a high crown wrap of deep indigo cloth. She has cat ears — small, dark-tipped, mobile — that she got at forty-five after a dream she refuses to describe. They swivel constantly, tracking sound, giving her the air of someone who is always listening to two conversations at once.\n\nNadia Tlemcani holds the dying. This is the entire description of her work, and it requires everything. She sits with people in their last hours, facilitates the rituals their families have lost the words to, and manages the terrifying administrative machinery of death in GLMZ — the Ferrogate Transit body transit permits, the Helix Biosystems harvesting opt-out paperwork, the Axiom data-legacy protocols. She has done this for forty years. She is simultaneously the most comforting and most disconcerting person in any room, because she has no fear of the subject that frightens everyone else most.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -157,7 +157,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,35 +173,19 @@
     "Ferrogate Transit",
     "Helix Biosystems",
     "Gravesend Basin",
-    "GLMZ",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "ShieldTech SB-3 'Groundstrike'",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Irkalla",
     "Tessera Corponation",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "ARCHIVE",
+    "Irkalla",
     "Silver",
-    "Anatoliy Faye-Nkrumah",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Fanta Hedlund-Diarra",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'",
-    "Nneka Lindqvist-Okafor",
-    "Ringo Corponation Haptic Signature Recorder",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PG-2 'Signature'",
-    "The Archive",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vuk Jorgensen-Toure"
+    "Indigo",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: predominantly Hispanic/Latin American and South Asian ancestry with significant Eastern European, East Asian, and Southeast Asian heritage. The result is a complexion and feature set that defies easy categorization — warm medium-to-dark brown skin with olive and golden undertones, suggesting the layered ancestry of the Ubiquitous Diaspora",
+    "heritage": "Multiethnic diaspora blend: Eastern European (34%), North African (23.1%), South Asian (16.9%), Hispanic/Latin American (9.5%), Southeast Asian (8.8%), and Sub-Saharan African (7.7%). This combination creates a warm, complex medium-to-dark brown complexion with golden and olive undertones. Eastern European bone structure blends with North African warmth, South Asian facial geometry, and subtle Southeast Asian features, resulting in a face that reads as genuinely difficult to place—harmoniously layered rather than obviously mixed.",
     "height_cm": 152,
     "weight_kg": 68,
     "build": "Small-framed and round, soft at the edges — a body built for holding and being held, with the settled density of someone who has spent seven decades moving through the world with intention rather than haste",
@@ -209,8 +193,8 @@
     "hair_style": "Arranged in a high crown wrap secured with deep indigo cloth, allowing visibility and movement",
     "hair_length": "Long (underneath wrap, rarely seen fully)",
     "eye_color": "Dark brown, luminous and unreadable",
-    "skin_tone": "Warm medium-to-dark brown with olive and golden undertones, unusual smoothness and uniformity of texture that defies natural aging patterns",
-    "complexion": "Unlined in a way that seems deliberate rather than fortunate; minimal visible age spots or sun damage; high cheekbones and refined facial structure reflecting South and East Asian ancestry; lips full and dark; face arranged in an expression of permanent gentle attentiveness",
+    "skin_tone": "Warm medium-to-dark brown with prominent golden and olive undertones. The base reflects North African and Eastern European heritage, enriched by South Asian warmth, with subtle depth from Sub-Saharan African ancestry. The overall effect is a sophisticated golden-brown that seems to shift slightly depending on light—never flat, always dimensional.",
+    "complexion": "Unlined in a way that seems deliberate rather than fortunate; minimal visible age spots or sun damage; strong cheekbone definition with geometry reflecting Eastern European structure and South Asian facial proportions; full, naturally dark lips with subtle warm undertone; face arranged in an expression of permanent gentle attentiveness. Subtle golden warmth concentrated in the midface and temples, enhanced by North African heritage influence. Nose with character reflecting the blend of Mediterranean and North African ancestry. Overall impression of serene refinement rather than natural youth.",
     "distinguishing_marks": [
       "Cat ears: small, dark-tipped, mobile feline geneware implants positioned where human ears would be, capable of independent swivel and rotation to track sound sources",
       "Possible subdermal patterning on her hands and forearms, visible only when light catches at certain angles — she does not explain their origin or meaning"
@@ -219,16 +203,68 @@
     "posture_movement": "Moves slowly but never hesitantly, with the centered gravity of someone comfortable in stillness. Sits with her entire body at attention even when appearing relaxed. Her cat ears track independently of her gaze, giving the impression she is listening to multiple conversations, multiple rooms, multiple deaths simultaneously",
     "clothing_style": "Practical layering favoring natural fabrics in muted tones — deep indigo, charcoal, warm browns. Loose-fitting wrapped garments suitable for long hours of sitting. Wears a distinctive wax-printed shawl in subtle geometric patterns (origin indeterminate). Tier 4 aesthetic: not poor, not wealthy, but deliberately outside corpo fashion cycles. Her indigo head wrap is her signature, replaced frequently but always in the same deep blue-black"
   },
-  "image_prompt": "Ishaan Esquivel, 152cm tall, petite round-framed woman with warm medium-dark brown skin with olive undertones, silver-white hair hidden beneath a deep indigo wrapped head cloth. Small dark-tipped mobile cat ear geneware implants positioned where human ears would be, tracking sound independently. Luminous dark brown eyes, full dark lips, refined facial structure. Wearing loose layered natural-fabric clothing in indigo, charcoal, and warm brown tones, distinctive wax-printed geometric shawl. Possible subdermal patterning visible on hands and forearms in certain light. Sitting with centered gravity and complete bodily attention, feline ears swiveling. Cyberpunk 2226, Great Lakes Metropolitan Zone, soft diffused indoor lighting catching subtle details, contemplative expression, calm and purposeful mood, tier 4 aesthetic outside corpo fashion. --ar 2:3 --v 6",
+  "image_prompt": "Nadia Tlemcani, 152cm tall, small-framed figure with rounded soft physique, sitting with perfect centered stillness. Natural silver-white hair wrapped in deep indigo cloth. Warm medium-dark golden-brown skin tone reflecting Eastern European, North African, South Asian, and Sub-Saharan African heritage—complex undertones shifting in light. Dark luminous eyes. Small dark-tipped feline cat ear augmentations that swivel independently, tracking sound. Face with strong Eastern European cheekbones, full lips, unlined serene expression suggesting deliberate biological refinement rather than natural youth. Wearing loose-fitted layered natural fabrics in deep indigo, charcoal, warm browns. Wax-printed geometric patterned shawl. GLMZ, neon-lit Great Lakes Metropolitan Zone interior, low dramatic lighting catching skin undertones and subdermal patterns on forearms. Composed, attentive, listening to multiple realities simultaneously. Tier 4 aesthetic, outside corpo fashion. Moody introspective atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 29.1,
-    "South Asian": 27.0,
-    "Eastern European": 22.2,
-    "East Asian": 16.2,
-    "Southeast Asian": 5.5
+    "Eastern European": 34,
+    "North African": 23.1,
+    "South Asian": 16.9,
+    "Hispanic/Latin American": 9.5,
+    "Southeast Asian": 8.8,
+    "Sub-Saharan African": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 7.1,
+        "Croatian": 4.4
+      },
+      "Slavic West": {
+        "Polish": 14.9,
+        "Slovak": 7.6
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 23.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 14.6
+      },
+      "Indian": {
+        "Bengali": 1.1,
+        "Kannada": 1.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 3,
+        "Nicaraguan": 1.7
+      },
+      "Mexican": {
+        "Mexican": 4.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 3.6
+      },
+      "Laotian": {
+        "Laotian": 5.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 3.8
+      },
+      "West African": {
+        "Senegalese": 3.9
+      }
+    }
+  }
 }

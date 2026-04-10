@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61770a68a78ddd3f440a720",
   "type": "character",
-  "name": "Ananya Wickramasinghe",
+  "name": "Camila Kettani",
   "aliases": [
     "The Professor",
     "Flori"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Norwood Quiet — the second floor of a converted pre-Meridian row house they have lived in for thirty-one years, near North Ave and Damen",
-  "description": "Florinel is precisely the kind of person who looks exactly like what they are: a teacher. They are medium height and softly built, with warm brown skin, a crown of silver locs wound up in a complicated knot, and reading glasses that are always either on their face or lost somewhere on their body. Their geneware is minimal but characteristic — color-shifting irises that cycle through blues and greens as a cosmetic choice they made at forty and never bothered to reverse, and a small bioluminescent tattoo across their left collarbone in a geometric Ghanaian kente pattern that pulses faintly when they're excited about an idea. They dress in comfortable, slightly chaotic layers, always with at least one pocket overflowing with something — a physical book, printed lecture notes from years ago, data chips, sweets for the neighborhood children.\n\nFor thirty-two years Florinel taught history and civic literacy at a community school in Norwood Quiet, the last twelve as a union chapter leader fighting against Tessera Corporation's creeping acquisition of the public school data infrastructure. They lost most of those fights. They won a few. They retired with a modest Tessera-adjacent pension and a comprehensive knowledge of exactly how institutional power erodes communities from the inside, which they now use freely and without corporate constraint. They have strong opinions delivered with a professor's patience — they will give you time to be wrong before correcting you, but they will correct you.",
+  "description": "Camila Kettani is precisely the kind of person who looks exactly like what they are: a teacher. They are medium height and softly built, with warm brown skin, a crown of silver locs wound up in a complicated knot, and reading glasses that are always either on their face or lost somewhere on their body. Their geneware is minimal but characteristic — color-shifting irises that cycle through blues and greens as a cosmetic choice they made at forty and never bothered to reverse, and a small bioluminescent tattoo across their left collarbone in a geometric Ghanaian kente pattern that pulses faintly when they're excited about an idea. They dress in comfortable, slightly chaotic layers, always with at least one pocket overflowing with something — a physical book, printed lecture notes from years ago, data chips, sweets for the neighborhood children.\n\nFor thirty-two years Camila Kettani taught history and civic literacy at a community school in Norwood Quiet, the last twelve as a union chapter leader fighting against Tessera Corporation's creeping acquisition of the public school data infrastructure. They lost most of those fights. They won a few. They retired with a modest Tessera-adjacent pension and a comprehensive knowledge of exactly how institutional power erodes communities from the inside, which they now use freely and without corporate constraint. They have strong opinions delivered with a professor's patience — they will give you time to be wrong before correcting you, but they will correct you.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -188,7 +188,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,33 +251,19 @@
   "registered_firearms": [],
   "related_entities": [
     "Norwood Quiet",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
     "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Ringo Corponation",
-    "Alper Inoue-Aidoo",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Chronicle",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Solina Barreto-Kiptoo",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "The Augmentation Rights Coalition",
-    "The Heritage Vault",
-    "The Open Syllabus",
-    "The Pure Hand",
-    "Tobechukwu Papadimitriou-Vásárhelyi"
+    "Compass Rose"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "South Asian (39.3%) with substantial Northern European (15.3%), Sub-Saharan African (13.7%), Hispanic/Latin American (12.4%), Eastern European (10.6%), and East Asian (8.7%) ancestry; complex multiethnic blend creating warm mid-to-deep brown tones with golden and reddish undertones",
+    "heritage": "North African (30.8%) with substantial Hispanic/Latin American (28.9%), South Asian (17.4%), East Asian (14.1%), Middle Eastern (5.6%), and Sub-Saharan African (3.2%) ancestry; complex multiethnic blend creating warm medium-to-deep brown tones with golden and subtle reddish undertones",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Softly built, compact and rounded through the torso from decades of sedentary work; gentle posture without slouch; arms and legs retain subtle muscle tone beneath comfortable padding",
@@ -285,8 +271,8 @@
     "hair_style": "Locs wound into a complicated topknot, typically secured with worn fabric wraps or wooden pins; flyaways common",
     "hair_length": "Long (locs reach mid-back when unbound)",
     "eye_color": "Color-shifting cosmetic irises cycling through blue-green spectrum",
-    "skin_tone": "Warm deep brown with golden and reddish undertones; weathered and well-maintained, reflecting South Asian base with Northern European, African, and East Asian contributions creating rich complexity",
-    "complexion": "Open, expressive face lined with decades of teaching—laugh lines around eyes and mouth prominent; skin shows sun exposure around cheekbones and forehead with warm golden undertones; facial hair sparse and silver; minimal makeup; reading glasses frequently perched on crown or hanging from fabric cord around neck; facial structure reflects South Asian ancestry (broader face, defined cheekbones) with softening influence from other heritage groups",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones; weathered and well-maintained, reflecting the combined influence of North African, Hispanic/Latin American, South Asian, East Asian, Middle Eastern, and Sub-Saharan African heritage creating rich complexity",
+    "complexion": "Open, expressive face lined with decades of teaching—laugh lines around eyes and mouth prominent; warm golden-brown skin showing sun exposure around cheekbones and forehead; facial structure reflects balanced North African and South Asian ancestry (defined cheekbones, strong brow) with softening influence and subtle broadening from East Asian and Hispanic/Latin American heritage; sparse silver facial hair; minimal makeup; reading glasses frequently perched on crown or hanging from fabric cord around neck",
     "distinguishing_marks": [
       "Bioluminescent kente-pattern geometric tattoo across left collarbone in blues and golds, pulses faintly when animated or excited",
       "Fine age lines around eyes characteristic of constant reading and close observation",
@@ -296,17 +282,67 @@
     "posture_movement": "Stands with weight slightly forward, hands frequently gesturing while speaking; walks with deliberate pace, rarely rushed; tendency to tilt head while listening—professorial attention. Settles into chairs fully, taking up comfortable space. Movements efficient rather than elegant; no wasted motion.",
     "clothing_style": "Comfortable, layered Tier 3-4 casual: worn cotton cardigans or linen overshirts in earth tones, practical trousers with visible pockets stuffed with books/chips/sweets, worn canvas shoes. Fabrics show age but remain clean and carefully maintained. Personal accessories include old fabric bookmarks, reading glasses on cords, and a faded union pin from the 2210s. Overall effect: organized chaos of someone who has stopped performing for institutions."
   },
-  "image_prompt": "Ananya Wickramasinghe, 168cm tall, warm deep brown skin with golden undertones reflecting South Asian, Northern European, Sub-Saharan African, Hispanic, Eastern European and East Asian heritage. Silver-gray locs bound into intricate topknot with fabric wraps, flyaways catching light. Open expressive face with prominent laugh lines, sun-weathered cheekbones, sparse silver facial hair. Bioluminescent blue-gold kente geometric tattoo pulsing softly across left collarbone. Color-shifting cosmetic iris implant glinting blue-green. Reading glasses hanging from fabric cord. Softly rounded build in layered earth-tone linen and cotton, comfortable worn cardigans, practical pocket-laden trousers, canvas shoes. Hands gesturing expressively mid-speech. Settled posture, professorial attention. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, warm interior lighting, teaching environment or worn community space, organized chaos aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Camila Kettani, 168cm woman with warm deep brown skin with golden undertones, silver-gray locs gathered in topknot with wooden pins, expressive face lined with decades of teaching and laugh lines, color-shifting blue-green cosmetic irises glowing faintly, bioluminescent kente-pattern geometric tattoo pulsing faintly on left collarbone in blues and golds, soft rounded build from decades of sedentary work, wearing layered earth-tone linen overshirt and worn canvas shoes, standing with weight forward gesturing while speaking, professorial attention, reading glasses hanging from fabric cord around neck, union pin on chest, surrounded by books and worn fabric bookmarks, GLMZ 2226 near-future megacity setting, warm indoor library lighting catching the bioluminescence, detailed face showing weathered warmth and North African-South Asian-Hispanic-East Asian heritage blend, organized chaos aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 39.3,
-    "Northern European": 15.3,
-    "Sub-Saharan African": 13.7,
-    "Hispanic/Latin American": 12.4,
-    "Eastern European": 10.6,
-    "East Asian": 8.7
+    "North African": 30.8,
+    "Hispanic/Latin American": 28.9,
+    "South Asian": 17.4,
+    "East Asian": 14.1,
+    "Middle Eastern": 5.6,
+    "Sub-Saharan African": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Amazigh": {
+        "Berber": 30.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 0.4,
+        "Cuban": 1.8
+      },
+      "Central American": {
+        "Guatemalan": 11.6,
+        "Honduran": 5.7
+      },
+      "South American": {
+        "Peruvian": 9.4
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 14.5
+      },
+      "Indian": {
+        "Gujarati": 2.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 8.4
+      },
+      "Japanese": {
+        "Japanese": 1.5
+      },
+      "Korean": {
+        "Korean": 4.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 5.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 1.9,
+        "Congolese": 1.3
+      }
+    }
+  }
 }

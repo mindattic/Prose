@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6477c268f0cce1bff05c878",
   "type": "character",
-  "name": "Ember Petelo",
+  "name": "Ember Magnúsdóttir",
   "aliases": [
     "Kwe",
     "Ironfoot"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Bronzeline, near Milwaukee and North Ave",
-  "description": "Kweku is a tall, heavyset man whose face has the texture of someone who has been outdoors in GLMZ weather for two decades — weathered around the eyes, with a thick grey-streaked beard he keeps neat more out of stubbornness than vanity. He has a prosthetic left leg from the shin down, matte carbon fiber that he refers to as 'the situation' and refuses to discuss further. His gait is distinctive — slightly deliberate, heel-first — which earned him the neighborhood nickname Ironfoot long before it became affectionate. He wears his Metro blues with the practiced ease of someone who stopped being self-conscious about the uniform around year five.\n\nBronzeline is his beat and has been for eleven years, which means he knows it the way cartographers know coastlines — every alley, every shift-change crowd, every proprietor who will lie to him and every one who won't. He is not idealistic about Metro Police and has not been for a long time. He is, however, genuinely attached to Bronzeline as a place and to specific people within it, and this is what keeps him showing up. He has a loud laugh he deploys strategically and a particular talent for de-escalation through sheer unhurried presence.",
+  "description": "Ember Magnúsdóttir is a tall, heavyset man whose face has the texture of someone who has been outdoors in GLMZ weather for two decades — weathered around the eyes, with a thick grey-streaked beard he keeps neat more out of stubbornness than vanity. He has a prosthetic left leg from the shin down, matte carbon fiber that he refers to as 'the situation' and refuses to discuss further. His gait is distinctive — slightly deliberate, heel-first — which earned him the neighborhood nickname Ironfoot long before it became affectionate. He wears his Metro blues with the practiced ease of someone who stopped being self-conscious about the uniform around year five.\n\nBronzeline is his beat and has been for eleven years, which means he knows it the way cartographers know coastlines — every alley, every shift-change crowd, every proprietor who will lie to him and every one who won't. He is not idealistic about Metro Police and has not been for a long time. He is, however, genuinely attached to Bronzeline as a place and to specific people within it, and this is what keeps him showing up. He has a loud laugh he deploys strategically and a particular talent for de-escalation through sheer unhurried presence.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bronzeline",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -199,36 +199,14 @@
   ],
   "related_entities": [
     "Carbon Fiber",
-    "GLMZ",
     "Bronzeline",
     "Tessera Corponation",
-    "The Milwaukee Core",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Anatoliy Faye-Nkrumah",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Cinderblock Ai",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Mika Sorel",
-    "Ringo CP-2 'Constable'",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Burden Clause",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Timur Osei-Bjelke",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander and Indigenous American, with minor Sub-Saharan African and East Asian ancestry. Carries the broad frame and warm brown tone characteristic of Polynesian heritage, combined with the facial structure and build of Andean/Mesoamerican ancestry. A truly mixed heritage reflecting the Ubiquitous Diaspora.",
+    "heritage": "Sub-Saharan African, East Asian, and Southeast Asian ancestry in near-equal measure. The combination produces a striking phenotype: deeper brown skin with warm golden undertones from the Sub-Saharan African heritage (38.4%), refined facial structure and eye shape from East Asian ancestry (38.1%), and additional warmth and gentle facial contours from Southeast Asian heritage (23.5%). A genuinely mixed appearance reflecting the Ubiquitous Diaspora without clear regional dominance.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Heavyset, broad-shouldered with a solid frame that has softened slightly with age but retains the density of someone who carries weight with purpose rather than neglect. The build of a man who walks his beat on foot.",
@@ -236,8 +214,8 @@
     "hair_style": "Kept short and practical, no styling beyond a barber's trim",
     "hair_length": "Short",
     "eye_color": "Brown, slightly deep-set",
-    "skin_tone": "Warm brown complexion with golden undertones reflecting strong Pacific Islander and Indigenous American ancestry, deepened by two decades of GLMZ sun exposure",
-    "complexion": "Weathered face with deep smile lines around the eyes and mouth; face shows two decades of GLMZ weather exposure — sun damage across the cheekbones, skin with a leathery texture. Broad facial structure with high cheekbones characteristic of Indigenous American heritage. Beard kept neatly trimmed, salt-and-pepper grey, full and close to the jaw. Minimal scarring visible on the face.",
+    "skin_tone": "Deep warm brown complexion with golden undertones, reflecting the blended Sub-Saharan African, East Asian, and Southeast Asian heritage, deepened by two decades of GLMZ sun exposure",
+    "complexion": "Weathered face with deep smile lines around the eyes and mouth; face shows two decades of GLMZ weather exposure — sun damage across the cheekbones, skin with a leathery texture. Blended facial structure combining the broader bone structure influenced by Sub-Saharan African heritage with the refined cheekbone and eye shape of East Asian ancestry, softened by Southeast Asian features creating gentle fullness in the cheeks and jaw. Beard kept neatly trimmed, salt-and-pepper grey, full and close to the jaw. Minimal scarring visible on the face.",
     "distinguishing_marks": [
       "Thin pale scar along the right temple, barely visible beneath grey hair",
       "Callused knuckles on both hands, worn smooth by years of routine patrol work",
@@ -247,15 +225,39 @@
     "posture_movement": "Stands with even weight distribution despite the prosthetic; walks with a distinctive deliberate gait — heel-first, measured pace that suggests neither pain nor self-consciousness but rather long accommodation. Moves through space with unhurried presence. Rests weight against walls or counter edges when stationary. Hands often visible, relaxed at sides or in uniform pockets.",
     "clothing_style": "Wears GLMZ Metro Police Class-B uniform most shifts — navy patrol shirt with district patches, regulation trousers with slight wear at the knees, sturdy black boots (left boot modified at the heel for the prosthetic). Off-duty: functional Tier 3 work clothes — canvas jackets, worn jeans, neutral-colored long-sleeves. Everything practical and durable, nothing aspirational. No jewelry except a faded wedding band on his right hand."
   },
-  "image_prompt": "Ember Petelo, 188cm tall Pacific Islander and Indigenous American man with warm golden-brown skin, salt-and-pepper grey beard, deep-set brown eyes, weathered face with high cheekbones and sun-damaged complexion. Short dark hair greying at temples. Wearing GLMZ Metro Police Class-B navy uniform with district patches and regulation trousers. Carbon fiber prosthetic left leg visible below shin, matte black with metallic joint articulation. Standing with even weight distribution, measured posture against a neon-lit precinct hallway, faded Akan tattoo barely visible on left forearm. Deliberate, unhurried presence. Cyberpunk 2200s police procedural setting, harsh fluorescent and blue neon lighting, slight metallic catch from prosthetic as he shifts weight. Professional, weathered, two decades of routine patrol duty written into his frame and bearing. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, middle-aged GLMZ Metro Police officer, 188cm tall, heavyset solid build with broad shoulders. Deep warm brown skin with golden undertones blending Sub-Saharan African, East Asian, and Southeast Asian ancestry. Refined cheekbones with East Asian influence, gentle facial fullness from Southeast Asian heritage, weathered by two decades of sun exposure. Short dark brown hair greying at temples, salt-and-pepper trimmed beard. Deep-set brown eyes, sun-damaged skin across cheekbones with slight leathery texture, deep smile lines. Wearing navy GLMZ Metro Police Class-B uniform shirt with district patches, regulation navy trousers, modified black boots. Matte carbon fiber prosthetic left leg from shin down visible with metallic joint articulation. Faint scar along right temple. Stands with measured, deliberate posture, unhurried presence. Dim overhead station lighting casting shadows across weathered face. Functional, no-nonsense bearing of a career patrol officer. Film noir neo-noir urban aesthetic, realistic human form, tired but dignified demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 62.9,
-    "Indigenous American": 24.5,
-    "Sub-Saharan African": 6.3,
-    "East Asian": 6.3
+    "Sub-Saharan African": 38.4,
+    "East Asian": 38.1,
+    "Southeast Asian": 23.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 11.6,
+        "Malian": 3.4
+      },
+      "Southern African": {
+        "Zimbabwean": 10.1,
+        "Botswanan": 13.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 24.9
+      },
+      "Japanese": {
+        "Japanese": 13.2
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 23.5
+      }
+    }
+  }
 }

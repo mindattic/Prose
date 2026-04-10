@@ -39,7 +39,7 @@ public class NpcGenerator
         var existingNames = db.Characters.Select(c => c.Name).ToHashSet();
 
         var system = """
-            You are a character designer for cyberpunk fiction set in Meridian 88 (2100).
+            You are a character designer for near-future fiction set in GLMZ (2100).
             Create a COMPLETE character. This person is not disposable — they will persist
             in the world and may recur in future stories.
 

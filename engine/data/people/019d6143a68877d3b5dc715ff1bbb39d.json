@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68877d3b5dc715ff1bbb39d",
   "type": "character",
-  "name": "Hana Kjellberg",
+  "name": "Anjali Bhattacharya",
   "aliases": [
     "Osa",
     "the librarian"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "University Spine — the Sequence Conservatory, a climate-controlled archive building at the edge of the Grand Corridor, near Lincoln and Belmont",
-  "description": "Osazemen is wiry and deliberate, with the careful economy of movement that comes from decades of working with materials that cannot be replaced if dropped. Their Edo-Hungarian-Guinean heritage shows in their high cheekbones and the particular warm-dark tone of their skin, which they take careful care of in ways they don't advertise. They have cat ears — deep brown, slightly oversized, geneware — that they got at forty-five after a lifetime of thinking they weren't the sort of person who got geneware, and they are still quietly delighted by them. Their hair is silver and kept very short. They dress well, in old-fashioned tailored things that cost money and last decades, which is their idea of sustainability.\n\nThey are the conscience of any room they enter, not through force but through the quiet accumulation of inconvenient questions asked in calm voices. They have managed the gene-sequence heritage archive for twenty-two years and have, in that time, blocked sixteen attempts by corponations to access, purchase, or reclassify its contents. They are not adversarial by nature — they believe in dialogue and due process — but they are absolutely implacable once they have decided where a line is. Students find them intimidating at first and then deeply reassuring: here is someone who has thought carefully about what they owe the future.",
+  "description": "Anjali Bhattacharya is wiry and deliberate, with the careful economy of movement that comes from decades of working with materials that cannot be replaced if dropped. Their Edo-Hungarian-Guinean heritage shows in their high cheekbones and the particular warm-dark tone of their skin, which they take careful care of in ways they don't advertise. They have cat ears — deep brown, slightly oversized, geneware — that they got at forty-five after a lifetime of thinking they weren't the sort of person who got geneware, and they are still quietly delighted by them. Their hair is silver and kept very short. They dress well, in old-fashioned tailored things that cost money and last decades, which is their idea of sustainability.\n\nThey are the conscience of any room they enter, not through force but through the quiet accumulation of inconvenient questions asked in calm voices. They have managed the gene-sequence heritage archive for twenty-two years and have, in that time, blocked sixteen attempts by corponations to access, purchase, or reclassify its contents. They are not adversarial by nature — they believe in dialogue and due process — but they are absolutely implacable once they have decided where a line is. Students find them intimidating at first and then deeply reassuring: here is someone who has thought carefully about what they owe the future.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -185,7 +185,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,33 +249,14 @@
     "Grandmother",
     "The Heritage Vault",
     "The Sluiceway",
-    "ARCHIVE",
+    "GLMZ",
     "Silver",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Anatoliy Faye-Nkrumah",
-    "Auricula Felis Modification",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Emergency SMG ESM-1 'Breakglass'",
-    "Irontide Tidal Energy",
-    "Kairos",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Praevex",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Archive",
-    "The Pure Hand",
-    "The Question",
-    "Toivo Diallo-Achebe",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Levantine and East Asian blend with North African undertones—a striking combination of Middle Eastern, East Asian, and Maghrebi ancestry that manifests in subtle facial architecture and warm, complex skin tones",
+    "heritage": "South Asian dominant (56.7%) with significant Eastern European (19.8%), East Asian (12.0%), and Sub-Saharan African (11.5%) ancestry. The genetic blend creates distinctive facial architecture: South Asian bone structure softened by Eastern European angularity, East Asian eye shape subtlety, and Sub-Saharan African undertones deepening the overall complexion. Features a warm, luminous quality that shifts across multiple tonal registers.",
     "height_cm": 168,
     "weight_kg": 59,
     "build": "Wiry and lean, marked by six decades of precise, repetitive work. Minimal excess mass; posture shaped by archival labor — shoulders slightly forward, spine reinforced by medical geneware visible only under imaging.",
@@ -283,10 +264,10 @@
     "hair_style": "Cropped close to the scalp in a precise, geometric cut, maintained with evident care",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint iridescent micro-resolution scanner implant visible in low light — appears as a faint concentric ring pattern in the iris",
-    "skin_tone": "Warm olive-bronze complexion with golden undertones, reflecting the blend of Middle Eastern warmth, East Asian depth, and North African richness",
-    "complexion": "Fine-lined face reflecting age and deliberation; prominent cheekbones with the subtle angularity characteristic of Levantine and East Asian heritage; skin meticulously maintained with subtle, expensive treatments; minimal cosmetic enhancement but visible care in grooming; expression carries quiet authority without hardness",
+    "skin_tone": "Rich golden-brown with warm amber and deep undertones, reflecting South Asian warmth enriched by Eastern European paleness, East Asian luminosity, and Sub-Saharan African depth. Multidimensional complexion that shifts subtly across different lighting conditions.",
+    "complexion": "Fine-lined face reflecting age and deliberation; high, prominent cheekbones with the characteristic angularity of South Asian and Eastern European heritage, softened by gentle East Asian eye-area structure; warm, deep undertones in skin tone suggest African ancestry influence; skin meticulously maintained with subtle, expensive treatments; minimal cosmetic enhancement but visible care in grooming; expression carries quiet authority without hardness",
     "distinguishing_marks": [
-      "Mobile geneware cat ears (deep brown, slightly oversized, feline in structure) protruding from crown of head — genetic modification completed at age 45, fully functional and expressive",
+      "Mobile geneware cat ears (deep brown with warm undertones, slightly oversized, feline in structure) protruding from crown of head — genetic modification completed at age 45, fully functional and expressive",
       "Fine network of age lines around eyes suggesting decades of focused, close-distance work with archival materials",
       "Barely visible surgical scars along spine, concealed beneath clothing — result of bone-density reinforcement surgery performed occupationally"
     ],
@@ -294,14 +275,52 @@
     "posture_movement": "Deliberate and economical; movements carry the precision of someone who has handled irreplaceable materials for decades. Spine held carefully upright despite reinforcement work. Movements are unhurried, considered; hands move with particular care. Geneware ears track auditory input subtly — responsive to environmental sounds, occasionally rotating toward speakers or points of interest. Overall bearing suggests quiet authority tempered by accessibility.",
     "clothing_style": "Tier 1-2 professional archival aesthetics. Favors tailored, decades-old pieces in natural fibers (linen, wool, silk) in muted tones — charcoal, cream, slate blue, deep green. Garments show excellent construction and minimal wear despite age, suggesting investment in quality and active maintenance. No corporate branding. Typically wears fitted waistcoats or layered neutral tunics with precise tailoring. Practical low-heeled boots suitable for long archive walks. Overall appearance suggests someone who views clothing as long-term stewardship rather than trend consumption."
   },
-  "image_prompt": "Hana Kjellberg, a 168cm archive specialist in her sixties with silver cropped hair and warm olive-bronze skin reflecting Middle Eastern, East Asian, and North African heritage. Prominent cheekbones, fine age lines around dark brown eyes with subtle iridescent micro-scanner implants. Deep brown geneware cat ears with mobile musculature protrude from her crown. Wearing tailored charcoal linen waistcoat over cream silk tunic, paired with practical dark boots. Standing in a dimly lit archive corridor, shelves of data-crystalline materials behind her, warm amber archival lighting catching the metallic undertones of her skin and the fine details of her geneware augmentations. Expression reflects quiet authority and deliberate focus. Cyberpunk 2226, professional aesthetics, no chrome, integrated augmentations, cinematic depth of field. --ar 2:3 --v 6",
+  "image_prompt": "Anjali Bhattacharya, 60-year-old archivist in GLMZ Great Lakes Metropolitan Zone, portrayed with rich golden-brown skin tone blending South Asian, Eastern European, East Asian, and African ancestry. Sharp, high cheekbones with fine age lines around dark brown eyes containing subtle iridescent scanner implants. Distinctive deep brown feline geneware cat ears protrude from her silver hair, cropped geometrically close to scalp. Wiry, lean 168cm frame in tailored charcoal waistcoat and cream linen tunic, practical low-heeled boots. Posture deliberate and precise, refined by decades of archival work. Quiet authority in expression. Soft overhead lighting catches the multitonal warmth of her complexion and the subtle mobility of her functional cat ears. Minimalist professional aesthetic, no chrome or corporate branding. Archive interior or walking through climate-controlled storage corridors. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 47.8,
-    "East Asian": 38.8,
-    "North African": 13.4
+    "South Asian": 56.7,
+    "Eastern European": 19.8,
+    "East Asian": 12,
+    "Sub-Saharan African": 11.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 13.1
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 43.6
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 3.8,
+        "Serbian": 5.4
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 1.7,
+        "Romanian": 0.5
+      },
+      "Slavic West": {
+        "Czech": 4,
+        "Polish": 4.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 12
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 6.4
+      },
+      "East African": {
+        "Rwandan": 5.1
+      }
+    }
+  }
 }

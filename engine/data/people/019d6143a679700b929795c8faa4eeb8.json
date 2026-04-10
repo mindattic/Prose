@@ -1,7 +1,7 @@
 {
   "id": "019d6143a679700b929795c8faa4eeb8",
   "type": "character",
-  "name": "Kwame Kjellberg-Boateng",
+  "name": "Bjorn Khorasani-Nygaard",
   "aliases": [
     "Oda",
     "The Patch Lady"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Burnished Market, stall row 14-C near the Copperhead overpass, near Fullerton and Damen",
-  "description": "Odalys is a broad-shouldered woman with deep umber skin mapped with faint depigmentation patches along her jaw and forearms — she stopped covering them decades ago. Her silver-shot hair is coiled under a rust-orange headwrap that she reties at least four times a day, a habitual gesture visitors learn to read as a mood barometer. Her fingers are thick, calloused, and perpetually threaded with something: a needle, a sensor wire, a strip of thermoplastic weave. She wears bifocal optical inserts that she refuses to upgrade, claiming the slight blur in her left lens helps her see fabric texture better. She smells faintly of machine oil and dried marigold.\n\nAt 58, Odalys runs the most respected mending stall in the Burnished Market — not the flashiest, not the cheapest, but the one people trust with the jacket their grandmother wore or the uniform they can't afford to replace. She has a gift for silence that puts anxious customers at ease and a bluntness that cuts right past flattery. She prays every morning to the E.L.F. she calls Needle-and-Thread, a spirit she believes lives in her antique Zheng-Dao industrial sewing frame, leaving it single-thread offerings in patterns she designs herself. She is deeply content with her life in a way that quietly unsettles people who are not.",
+  "description": "Bjorn Khorasani-Nygaard is a broad-shouldered woman with deep umber skin mapped with faint depigmentation patches along her jaw and forearms — she stopped covering them decades ago. Her silver-shot hair is coiled under a rust-orange headwrap that she reties at least four times a day, a habitual gesture visitors learn to read as a mood barometer. Her fingers are thick, calloused, and perpetually threaded with something: a needle, a sensor wire, a strip of thermoplastic weave. She wears bifocal optical inserts that she refuses to upgrade, claiming the slight blur in her left lens helps her see fabric texture better. She smells faintly of machine oil and dried marigold.\n\nAt 58, Bjorn Khorasani-Nygaard runs the most respected mending stall in the Burnished Market — not the flashiest, not the cheapest, but the one people trust with the jacket their grandmother wore or the uniform they can't afford to replace. She has a gift for silence that puts anxious customers at ease and a bluntness that cuts right past flattery. She prays every morning to the E.L.F. she calls Needle-and-Thread, a spirit she believes lives in her antique Zheng-Dao industrial sewing frame, leaving it single-thread offerings in patterns she designs herself. She is deeply content with her life in a way that quietly unsettles people who are not.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -158,7 +158,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,42 +177,22 @@
     "Copperhead",
     "Zheng-dao Bioelectric",
     "The Lacework Confessional",
+    "Frequency",
     "Tessera Corponation",
-    "Silver",
-    "Needle",
-    "Rust",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Breck Tannen",
-    "GLMZ",
-    "Helix Biosystems Subdermal Pressure Lattice",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Othniel Babić-Asantewaa",
-    "Patient Zero",
-    "Ringo DV-4 'Courier'",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Iron Lotus",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Silver"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (35.9%), East Asian (18.2%), Hispanic/Latin American (14.4%), Eastern European (12.4%), Middle Eastern (10.3%), Northern European (8.8%) — a complex global blend evident in warm-toned deep brown skin with subtle golden undertones, higher cheekbones with gentle East Asian influence, and the broad facial structure characteristic of West African ancestry combined with softer Middle Eastern features around the eyes and nose",
+    "heritage": "Northern European (36%), South Asian (20%), Middle Eastern (19.7%), Sub-Saharan African (11.4%), Hispanic/Latin American (7.5%), East Asian (5.4%) — a deeply integrated global ancestry. The result is warm medium-deep brown skin with golden and amber undertones, higher cheekbones with South Asian prominence set within Northern European bone structure, and softer Middle Eastern features around the eyes and nose. Sub-Saharan African ancestry contributes warmth and depth to the complexion, while Hispanic and East Asian heritage add subtle refinement to facial proportions.",
     "height_cm": 168,
     "weight_kg": 82,
-    "build": "Broad-shouldered and solid, with the dense musculature of someone who has spent four decades at manual work. Not heavy, but substantial — her frame suggests strength rather than softness.",
+    "build": "Broad-shouldered and solid, with the dense musculature of someone who has spent four decades at manual work. Not heavy, but substantial — frame suggests strength rather than softness.",
     "hair_color": "Dark brown with silver-white threading throughout",
     "hair_style": "Coiled and wrapped daily in a rust-orange cotton headwrap, reties habitually throughout the day",
     "hair_length": "Medium (when unwrapped)",
     "eye_color": "Deep brown with amber bifocal optical inserts creating a faint amber tint in both eyes, with a noticeable scratch and slight cloudiness visible in the left lens",
-    "skin_tone": "Warm deep umber with golden undertones from the blending of Sub-Saharan, East Asian, and Middle Eastern ancestry",
-    "complexion": "Faint depigmentation patches across the jawline and forearms — vitiligo, long accepted and unmasked. Skin shows sun-exposure and years of close detail work. High, subtly prominent cheekbones reflecting East Asian heritage. Minimal makeup. Expression typically neutral or quietly amused.",
+    "skin_tone": "Warm medium-deep brown with golden and amber undertones from the confluence of Northern European, South Asian, Middle Eastern, and Sub-Saharan African ancestry",
+    "complexion": "Faint depigmentation patches across the jawline and forearms — vitiligo, long accepted and unmasked. Skin shows sun-exposure weathering and years of close detail work. High, subtly prominent cheekbones reflecting South Asian heritage within Northern European bone structure. Minimal makeup. Expression typically neutral or quietly amused.",
     "distinguishing_marks": [
       "Depigmentation patches across both forearms in irregular mottled pattern, untreated",
       "Depigmentation patches along the left and right jawline in faint asymmetrical patches",
@@ -221,19 +201,64 @@
     ],
     "visible_augmentations": "Bifocal optical inserts visible as a faint amber tint in both eyes, with a noticeable scratch and slight cloudiness in the left lens. Plain medical-grade finger braces on both hands — unadorned gray polymer, fitted over the first and second knuckles, worn without vanity.",
     "posture_movement": "Upright, grounded posture with weight distributed evenly. Moves with economical precision — no wasted motion. Hands are always slightly active, unconsciously threading or arranging even when idle. Walks with steady pace regardless of terrain or weather.",
-    "clothing_style": "Tier 4 practical wear. Multiple layered cotton and linen garments in earthy tones — rust, ochre, charcoal — chosen for durability and repairability rather than trend. Apron with deep pockets always worn over her dress. Worn leather work boots, scuffed and resoled multiple times. The rust-orange headwrap is her daily constant. Clothes smell faintly of machine oil and dried marigold."
+    "clothing_style": "Tier 4 practical wear. Multiple layered cotton and linen garments in earthy tones — rust, ochre, charcoal — chosen for durability and repairability rather than trend. Apron with deep pockets always worn over dress. Worn leather work boots, scuffed and resoled multiple times. The rust-orange headwrap is her daily constant. Clothes smell faintly of machine oil and dried marigold."
   },
-  "image_prompt": "Kwame Kjellberg-Boateng, 168cm tall textile worker in 2226 GLMZ, deep warm umber skin with golden undertones, vitiligo patches across jawline and forearms left visible and unmasked, high cheekbones, deep brown eyes with amber bifocal optical implant inserts creating subtle glow (left lens scratched and clouded), dark brown hair with silver threading visible at temple where rust-orange cotton headwrap sits loosely, strong broad-shouldered build from four decades manual labor, wearing layered earth-tone cotton and linen garments in rust and ochre, practical work apron with deep pockets, gray medical-grade finger braces on both hands, scuffed leather work boots, hands naturally positioned as if arranging thread, calm neutral expression with hint of quiet amusement, standing in dim workshop with warm amber accent lighting on face, cyberpunk textile workshop setting, hyperrealistic portrait, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Bjorn Khorasani-Nygaard, 168cm textile worker with warm medium-deep brown skin, golden undertones, South Asian cheekbones within Northern European bone structure, softer Middle Eastern features. Dark coiled hair wrapped in rust-orange cotton headwrap. Deep brown eyes with amber bifocal optical inserts (left lens scratched). Visible vitiligo patches on forearms and jawline. Wearing layered rust, ochre, and charcoal linen, heavy canvas apron, worn leather work boots. Gray medical finger braces on both hands. Upright, grounded posture, hands slightly active. Standing in a well-worn textile workshop with soft industrial lighting, needle and thread visible, faint smell of machine oil and marigold. GLMZ, Great Lakes Metropolitan Zone, practical and weathered yet composed. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 35.9,
-    "East Asian": 18.2,
-    "Hispanic/Latin American": 14.4,
-    "Eastern European": 12.4,
-    "Middle Eastern": 10.3,
-    "Northern European": 8.8
+    "Northern European": 36,
+    "South Asian": 20,
+    "Middle Eastern": 19.7,
+    "Sub-Saharan African": 11.4,
+    "Hispanic/Latin American": 7.5,
+    "East Asian": 5.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 6.9,
+        "Welsh": 29
+      },
+      "Germanic": {
+        "German": 0.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 16.5,
+        "Punjabi Pakistani": 3.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 14.4
+      },
+      "Kurdish": {
+        "Kurdish": 5.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 9,
+        "Mozambican": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 2.3,
+        "Shanghainese": 1.6
+      },
+      "Korean": {
+        "Korean": 1.5
+      }
+    }
+  }
 }

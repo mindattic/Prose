@@ -114,7 +114,7 @@ public class ValidationService
             return [];
 
         var systemPrompt = $"""
-            You are a canon validator for a cyberpunk fiction world. Check the GENERATED TEXT
+            You are a canon validator for a near-future fiction world. Check the GENERATED TEXT
             against the WORLD CONTEXT (canonical truth). Find contradictions — facts
             that conflict with established canon.
 
@@ -266,7 +266,7 @@ public class ValidationService
     public async Task<List<string>> GenerateAlternativesAsync(string storyText, string canonTruth, string fullContext, CancellationToken ct = default)
     {
         var system = $"""
-            You are rewriting a sentence from a cyberpunk story to fix a canon contradiction.
+            You are rewriting a sentence from a neo-noir story to fix a canon contradiction.
             The canon truth is: {canonTruth}
             The full story context: {fullContext}
 
@@ -295,7 +295,7 @@ public class ValidationService
     public async Task<List<string>> GenerateCanonFixesAsync(CanonIssue issue, CancellationToken ct = default)
     {
         var system = $"""
-            A cyberpunk story says: {issue.StoryText}
+            A neo-noir story says: {issue.StoryText}
             But canon says: {issue.CanonTruth}
             Entity involved: {issue.EntityName}
 
@@ -334,7 +334,7 @@ public class ValidationService
         var numberedFixes = string.Join("\n", fixes.Select((f, i) => $"  {i + 1}. {f}"));
 
         var system = $"""
-            You are judging {fixType} options for a canon contradiction in a cyberpunk story.
+            You are judging {fixType} options for a canon contradiction in a neo-noir story.
 
             STORY TEXT: {storyText}
             CANON TRUTH: {canonTruth}

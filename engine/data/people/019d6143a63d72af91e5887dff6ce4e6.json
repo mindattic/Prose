@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63d72af91e5887dff6ce4e6",
   "type": "character",
-  "name": "Luca Björnsdóttir-Chatterjee-Strömqvist",
+  "name": "Luca Nishimura-Chatterjee-Subramaniam",
   "aliases": [
     "Quill",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Kadiatou Reyes-Abubakar are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 44, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Kadiatou Reyes-Abubakar plans to keep it that way. They work as a courier out of Old Harbor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nKadiatou Reyes-Abubakar are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
+  "description": "Luca Nishimura-Chatterjee-Subramaniam are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 44, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Luca Nishimura-Chatterjee-Subramaniam plans to keep it that way. They work as a courier out of Old Harbor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nLuca Nishimura-Chatterjee-Subramaniam are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.81,
@@ -259,7 +259,7 @@
     "Improviser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,34 +274,14 @@
   "related_entities": [
     "Adaptive Camouflage Skin",
     "Ringo DV-4 'Courier'",
-    "Lazarus LX-2 'Lab Rat'",
     "Burden of Longitude",
-    "Pellucid Systems",
-    "Arcturus Exo-Runner Frame",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
-    "Crucible RE-2 'Receptionist'",
-    "Djeneba Park-Traore",
-    "GLMZ",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kairos",
-    "Kamala Mori-Sefa",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Meridian Core",
-    "Old Harbor",
-    "Ringo RT-4 'Oxcart'",
-    "Scarecrow",
-    "TESSERA CR-12 'Whisper'",
-    "The Fathom Line",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Harbor Fish Shack",
+    "Lazarus LX-2 'Lab Rat'",
+    "Pellucid Systems"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "East Asian-dominant heritage (38.3%) blended with substantial South Asian (22.5%), Pacific Islander (14.5%), and Northern European (15.1%) ancestry, with minor Sub-Saharan African (5.3%) and Eastern European (4.3%) contributions. The genetic mix produces a distinctive phenotype — the East Asian foundation shapes facial bone structure with high cheekbones and eye shape, while South Asian ancestry contributes warmth to skin undertones and facial fullness. Pacific Islander heritage adds broader frame structure and depth to features. Northern European ancestry introduces lighter undertones beneath the melanin.",
+    "heritage": "Intricate genetic blend where South Asian ancestry (37.4%) establishes the foundational phenotype with characteristic facial fullness and bone structure, layered with substantial Sub-Saharan African heritage (30.9%) that contributes rich melanin depth and warmth. East Asian ancestry (16.7%) refines eye shape and adds facial angularity, while Hispanic/Latin American (10.9%) and Middle Eastern (4.1%) components introduce subtle undertones and geometric complexity. The result is a striking, multifaceted appearance where no single ancestry dominates visually—instead they create sophisticated interplay across facial structure, skin tone, and feature definition.",
     "height_cm": 178,
     "weight_kg": 96,
     "build": "Broad-shouldered and heavy-set, muscular through the core and legs with density that reads as functional rather than aesthetic. Carries their mass with deliberate control — the bearing of someone who has learned their body is a tool and a weapon.",
@@ -309,29 +289,85 @@
     "hair_style": "Kept short, close to the scalp, practical and low-maintenance. Styled with precision despite the nocturnal lifestyle.",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint iridescence from subcutaneous neural enhancement",
-    "skin_tone": "Medium-toned with complex undertones — warm copper from South Asian heritage layered beneath, peachy-golden warmth from Pacific Islander ancestry, with cool undertones from Northern European genetics creating subtle interplay. Nocturnal pallor evident beneath the melanin from minimal sun exposure over years. Dermal camouflage cells create chromatic luminescence.",
-    "complexion": "Face is broad and symmetrical with angular features that contrast sharply with their physical presence — prominent high cheekbones shaped by East Asian ancestry, full lips suggesting South Asian heritage, wide mouth that rarely smiles. Eyes are almond-shaped with slight epicanthic fold. Skin surface has an unusual luminescence in low light, subtle color-shifting in the epidermis. No facial hair. Facial structure blends the geometric precision of East Asian features with the soft fullness of South Asian phenotype.",
-    "visible_augmentations": "Dermal camouflage cells create a distinctive luminescent quality to the skin, particularly visible on the upper body, neck, and face. The effect is subtle in bright light but unmistakable in shadows — skin appears to absorb and shift color minutely. The chromatic effect becomes pronounced under LED or neon lighting. No visible mechanical augmentations — the synthetic blood system and oxygen-carrying nanites are entirely subcutaneous.",
-    "posture_movement": "Moves with controlled weight, economical gestures. Never fidgets. Walks like someone counting exits and calculating trajectories. When seated, occupies space deliberately — shoulders back, spine straight. In conversation, maintains stillness until necessary movement. Eyes track constantly, a habit of someone whose survival has depended on noticing what others miss. Despite the heavy build, movement is fluid rather than ponderous.",
-    "clothing_style": "Tier 4-3 utilitarian noir — form-fitted tactile bodysuit in matte black synthweave with integrated cable routing and reinforced stress points. Over this, a loose-cut long coat in charcoal grey synthetic leather, oversized to accommodate gear and conceal the bulk of the augmentations, hits mid-thigh. Flat-soled tactical boots in unmarked black, practical for running and climbing. Minimal jewelry — a silver band on right middle finger, possibly a keepsake from a previous life. No logos or branding.",
+    "skin_tone": "Deep warm brown with sophisticated multi-layered undertones—rich melanin from Sub-Saharan African heritage as the base, warm copper and golden warmth from South Asian and Hispanic/Latin American ancestry interweaving, balanced by cool undertones from East Asian genetics. Creates a complex chromatic depth with nocturnal pallor evident beneath the melanin from years of minimal sun exposure. Dermal camouflage cells create subtle luminescence.",
+    "complexion": "Face is broad and symmetrical with commanding features—prominent high cheekbones shaped by South Asian ancestry, full lips characteristic of both South Asian and Sub-Saharan African heritage, wide mouth that rarely smiles. Eyes are dark and direct with distinctive almond shape refined by East Asian component. Facial geometry blends the angular strength and feature definition of Sub-Saharan African phenotype with the full-featured warmth of South Asian structure and the refined proportions of East Asian heritage. Skin surface has unusual luminescence in low light, subtle color-shifting in epidermis. No facial hair.",
+    "visible_augmentations": "Dermal camouflage cells create a distinctive luminescent quality to the skin, particularly visible on the upper body, neck, and face. The effect is subtle in bright light but unmistakable in shadows—skin appears to absorb and shift color minutely. The chromatic effect becomes pronounced under LED or neon lighting. No visible mechanical augmentations—the synthetic blood system and oxygen-carrying nanites are entirely subcutaneous.",
+    "posture_movement": "Moves with controlled weight, economical gestures. Never fidgets. Walks like someone counting exits and calculating trajectories. When seated, occupies space deliberately—shoulders back, spine straight. In conversation, maintains stillness until necessary movement. Eyes track constantly, a habit of someone whose survival has depended on noticing what others miss. Despite the heavy build, movement is fluid rather than ponderous.",
+    "clothing_style": "Tier 4-3 utilitarian noir—form-fitted tactile bodysuit in matte black synthweave with integrated cable routing and reinforced stress points. Over this, a loose-cut long coat in charcoal grey synthetic leather, oversized to accommodate gear and conceal the bulk of the augmentations, hits mid-thigh. Flat-soled tactical boots in unmarked black, practical for running and climbing. Minimal jewelry—a silver band on right middle finger, possibly a keepsake from a previous life. No logos or branding.",
     "distinguishing_marks": [
-      "Vertical scar along left jawline, approximately 8cm, pale silver against darker skin — clean cut, old, professionally healed",
+      "Vertical scar along left jawline, approximately 8cm, pale silver against darker skin—clean cut, old, professionally healed",
       "Network of faint linear scars across both shoulders in a pattern suggesting blade work or shrapnel, barely visible unless light catches them at specific angles",
-      "Burn scar on right forearm (inner wrist to elbow), textured and pink, roughly 12cm long — old but not as old as the jawline scar",
+      "Burn scar on right forearm (inner wrist to elbow), textured and pink, roughly 12cm long—old but not as old as the jawline scar",
       "Chromatic pigmentation pattern across upper chest and collarbone area where the dermal camouflage is densest, creating a subtle iridescent sheen that shifts from copper to violet depending on light and angle"
     ]
   },
-  "image_prompt": "Cyberpunk 2226 character portrait, Luca Björnsdóttir-Chatterjee-Strömqvist, 178cm tall broad-shouldered heavy-set Asian-South Asian-Pacific Islander mixed heritage, medium-toned skin with warm copper undertones and subtle luminescence, high prominent cheekbones, almond-shaped dark brown eyes with neural enhancement iridescence, full lips, short black hair with silver-grey at temples, no facial hair. Wearing matte black synthweave form-fitted bodysuit under oversized charcoal grey synthetic leather long coat reaching mid-thigh, black tactical boots. Silver band on right middle finger. Vertical pale scar on left jawline, faint shoulder blade scars, pink burn scar on right inner forearm. Chromatic iridescent sheen across upper chest and collarbone shifting copper to violet. Nocturnal pallor beneath melanin. Controlled posture, deliberate stillness, eyes tracking constantly. Standing in neon-lit cyberpunk urban environment, rain-slicked streets, LED glow casting highlights on skin luminescence, shadows emphasizing chromatic pigmentation. Cold atmospheric lighting, moody and calculated presence. --ar 2:3 --v 6",
+  "image_prompt": "Luca Nishimura-Chatterjee-Subramaniam, 2226 neo-noir operative, deep warm brown skin with iridescent chromatic sheen, broad symmetric face with prominent cheekbones and full lips, dark brown eyes with subtle almond shape, short black hair with silver threading at temples, heavy muscular build 178cm tall. Wearing matte black fitted synthweave bodysuit with cable routing under oversized charcoal grey synthetic leather long coat hitting mid-thigh, tactical black boots. Visible pale silver jawline scar and faint shoulder scars. Skin luminescence shifts copper to violet in neon light. Standing in dark GLMZ alleyway with LED advertising glow, nocturnal pallor contrasting with melanin-rich skin, controlled posture, calculating stillness, eyes tracking movement. Neo-noir noir aesthetic, nocturnal lighting, gritty futuristic Great Lakes setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 38.3,
-    "South Asian": 22.5,
-    "Northern European": 15.1,
-    "Pacific Islander": 14.5,
-    "Sub-Saharan African": 5.3,
-    "Eastern European": 4.3
+    "South Asian": 37.4,
+    "Sub-Saharan African": 30.9,
+    "East Asian": 16.7,
+    "Hispanic/Latin American": 10.9,
+    "Middle Eastern": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 12.4,
+        "Baloch": 7.5
+      },
+      "Indian": {
+        "Telugu": 3.8,
+        "Punjabi": 1.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 12.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 5.1
+      },
+      "Southern African": {
+        "South African": 5.9,
+        "Zimbabwean": 4.5
+      },
+      "Central African": {
+        "Congolese": 5.3,
+        "Cameroonian": 10.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 16.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 4.1
+      },
+      "Central American": {
+        "Honduran": 5.3
+      },
+      "South American": {
+        "Brazilian": 1.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 0.3,
+        "Kuwaiti": 0.3
+      },
+      "Arab Levantine": {
+        "Palestinian": 1.8
+      },
+      "Persian": {
+        "Iranian": 0.8,
+        "Tajik Persian": 0.9
+      }
+    }
+  }
 }

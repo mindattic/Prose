@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fe7eeab61b16bc79c96a54",
   "type": "character",
-  "name": "Luca Bergqvist",
+  "name": "Luca Dlamini",
   "aliases": [
     "Toi",
     "Grease"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Geartown, 'Mudflap Repairs' off Dearborn Forge's south service corridor, near Milwaukee and Damen",
-  "description": "Toivo is wiry and restless, with warm brown skin dusted perpetually with machine grit no amount of scrubbing fully removes. He keeps his hair shaved close on the sides with a tight coil of dark curls on top, and his left forearm has a subdermal glow-line mod — a single bioluminescent stripe running elbow to wrist in industrial orange — which he got at nineteen because he thought it looked sharp and has since found genuinely useful when working in dark engine bays. He's got a gap between his front teeth and laugh lines already forming at the corners of his eyes from a face that defaults to grinning.\n\nHe took over Mudflap Repairs three years ago when its previous owner, an old Ferrogate Transit retiree who mentored him, died without a will and no family stepped forward. Toivo has been paying off the informal debt to the man's extended neighbors ever since, cutting rates, doing favors. He's brilliant with mechanical systems — older combustion-hybrid rigs, mag-rail sub-components, jury-rigged cargo loaders — and has a gift for diagnosing faults by sound alone. He's also deeply impractical about money, undercharging chronically and occasionally fixing things for free when someone looks desperate, which means he operates at a margin that would give an accountant a breakdown.",
+  "description": "Luca Dlamini is wiry and restless, with warm brown skin dusted perpetually with machine grit no amount of scrubbing fully removes. He keeps his hair shaved close on the sides with a tight coil of dark curls on top, and his left forearm has a subdermal glow-line mod — a single bioluminescent stripe running elbow to wrist in industrial orange — which he got at nineteen because he thought it looked sharp and has since found genuinely useful when working in dark engine bays. He's got a gap between his front teeth and laugh lines already forming at the corners of his eyes from a face that defaults to grinning.\n\nHe took over Mudflap Repairs three years ago when its previous owner, an old Ferrogate Transit retiree who mentored him, died without a will and no family stepped forward. Luca Dlamini has been paying off the informal debt to the man's extended neighbors ever since, cutting rates, doing favors. He's brilliant with mechanical systems — older combustion-hybrid rigs, mag-rail sub-components, jury-rigged cargo loaders — and has a gift for diagnosing faults by sound alone. He's also deeply impractical about money, undercharging chronically and occasionally fixing things for free when someone looks desperate, which means he operates at a margin that would give an accountant a breakdown.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -181,7 +181,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,29 +233,16 @@
   "related_entities": [
     "Ferrogate Transit",
     "Dearborn Forge",
-    "Geartown",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Geartown",
+    "GLMZ",
     "Lazarus IDP-1 'Teeth'",
-    "Nightlight",
-    "The Milwaukee Core",
-    "ARCHIVE",
-    "Alper Lebedev-Tutu",
-    "Dawnlight Industries LuxDefend LD-1 'Clutch'",
-    "Devraj Solano-Yildirim",
-    "Flicker",
-    "Ilhan Nakamura-Bello",
-    "Ilhan Sandstrom-Badu",
-    "Kadiatou Bergstrom-Konate",
-    "Narrowcast",
-    "NeuralPath ChromaLift Spectral Vision Mod",
-    "Slagworks Industrial",
-    "Tessera Corponation",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Cargo Tacos",
+    "Nightlight"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian / Hispanic-Latin American / Sub-Saharan African — a complex triadic blend producing warm medium-brown skin with subtle undertones reflecting all three ancestry groups; facial structure shows East Asian eye shape and cheekbone prominence alongside Latin American and African features in nose and lip fullness",
+    "heritage": "Genuinely pan-global ancestry with strong Sub-Saharan African (25.8%), Pacific Islander (20.5%), and Northern European (20.4%) foundations, balanced by East Asian (14.8%), Indigenous American (12.6%), and Hispanic/Latin American (5.9%) heritage. This creates a richly complex phenotype where multiple ancestral lineages genuinely integrate: medium-warm brown skin with golden, reddish, and subtle peachy undertones layered across the same canvas. Facial structure is a true global mosaic—East Asian eye shape and orbital placement, Northern European nose bridge and cheekbone prominence, African and Pacific Islander lip fullness and jaw width, Indigenous American and Latin American nose and facial proportion characteristics all seamlessly integrated into one coherent, authentically blended face.",
     "height_cm": 172,
     "weight_kg": 64,
     "build": "Wiry and lean with corded forearm muscles from decades of wrench work; chest narrow but functional, shoulders compact. No excess anywhere.",
@@ -263,8 +250,8 @@
     "hair_style": "Fade on sides, tight coils on crown",
     "hair_length": "Short",
     "eye_color": "Warm brown, natural",
-    "skin_tone": "Warm medium brown with golden and reddish undertones — the tri-ethnic blend creates a complex depth, darker along cheekbones and jawline",
-    "complexion": "Sun-weathered and perpetually dust-stained from shop work; engine grime settles into pores and creases no shower fully clears. Laugh lines at eye corners. Gap between front incisors — genuine, unfixed, unselfconscious. Hands calloused and stained with hydraulic residue. Facial structure reflects East Asian ancestry in eye shape and orbital placement, with fuller lips and broader nose characteristic of African and Latin American heritage.",
+    "skin_tone": "Warm medium brown with golden, reddish, and subtle peachy undertones—darker and richer along cheekbones and jawline, warmer across forehead and temples. The complexion carries visible warmth from Pacific Islander and African heritage blended with the cooler undertones of Northern European ancestry, creating a richly nuanced medium-brown canvas.",
+    "complexion": "Sun-weathered and perpetually dust-stained from shop work; engine grime settles into pores and creases no shower fully clears. Laugh lines at eye corners deepened by decades of squinting into engine bays. Gap between front incisors—genuine, unfixed, unselfconscious. Hands calloused and stained with hydraulic residue. Facial features authentically blend ancestral heritage: East Asian eye shape and set, fuller lips and broader nose width from Pacific Islander and African ancestry, prominent cheekbones from Northern European heritage, overall facial proportions and nose shape influenced by Indigenous American and Latin American background. Features integrate naturally rather than appearing mismatched.",
     "distinguishing_marks": [
       "Subdermal bioluminescent stripe running from left elbow to wrist in industrial orange — glows faintly in low light, brighter when he concentrates on diagnostic work",
       "Scattered small burn scars on both hands and forearms from soldering and hot machinery contact",
@@ -274,14 +261,70 @@
     "posture_movement": "Restless and kinetic — stands with weight shifting, rarely fully still. Moves economically through workspaces, muscle memory of tight engine bays. Defaults to grinning; eyes are expressive and engaged. Hands gesture frequently when explaining mechanical problems. When focused on detailed work, becomes almost meditative, shoulders relaxed but attention laser-locked.",
     "clothing_style": "Tier 3-4 working class, practical. Worn dark synthmesh coveralls with Mudflap Repairs faded patch on chest (his shop). Underneath: simple black undershirt, often grease-stained. Steel-toed work boots, scuffed. A woven bracelet (gift from the old shop owner's family) on right wrist — worn thread, significant to him. No jewelry otherwise. Minimal affectation; everything functional."
   },
-  "image_prompt": "Luca Bergqvist, cyberpunk 2226 mechanic with warm medium-brown skin reflecting East Asian, Hispanic, and Sub-Saharan African heritage; expressive warm brown eyes with slight laugh lines, full lips, prominent cheekbones. Short dark brown coiled hair with fade sides. Lean 172cm wiry build, calloused hands stained with hydraulic residue, scattered burn scars on forearms. Subdermal orange bioluminescent stripe glowing faintly along left forearm. Wearing worn dark synthmesh coveralls with faded Mudflap Repairs patch, black undershirt, scuffed steel-toed boots, woven bracelet on right wrist. Standing in low-lit underground workshop with soft orange neon glow reflecting off machinery and his activated bioluminescent augmentation, restless kinetic posture, genuine gap-toothed grin, hands gesturing mid-explanation of engine diagnostics. Moody cyberpunk workshop lighting, grime-dust atmosphere, functional working-class aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Luca Dlamini, 172cm lean mechanic with richly blended pan-global heritage—warm medium brown skin with golden and peachy undertones, East Asian eye shape, broader nose and fuller lips, prominent cheekbones, integrated facial features reflecting African, Pacific Islander, Northern European, Indigenous American, and Latin American ancestry. Dark brown natural coils on crown with faded sides, warm brown eyes with laugh lines, gap-toothed grin. Scattered burn scars on calloused hands, thin white scar on left temple. Subdermal bioluminescent orange stripe glowing faintly on left forearm. Wearing worn dark synthmesh coveralls with faded Mudflap Repairs chest patch, simple black undershirt underneath (grease-stained), scuffed steel-toed boots. Woven bracelet on right wrist. In neo-noir Great Lakes Metropolitan Zone 2226 shop setting, leaning over engine diagnostic station with neural overlay flickering in pupils, hands gesturing mid-explanation, restless kinetic posture. Neon workshop glow mixing with natural bioluminescence, oil-stained industrial background, atmospheric near-future lighting casting warm shadows across features. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 41.2,
-    "Hispanic/Latin American": 30.2,
-    "Sub-Saharan African": 28.6
+    "Sub-Saharan African": 25.8,
+    "Pacific Islander": 20.5,
+    "Northern European": 20.4,
+    "East Asian": 14.8,
+    "Indigenous American": 12.6,
+    "Hispanic/Latin American": 5.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 17.1,
+        "Nigerian": 6.2
+      },
+      "East African": {
+        "Kenyan": 1.4,
+        "Ugandan": 0.6
+      },
+      "Central African": {
+        "Congolese": 0.2,
+        "Angolan": 0.3
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 11.8
+      },
+      "Polynesian": {
+        "Tongan": 4.6,
+        "Hawaiian": 4.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 16.4,
+        "Irish": 4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.8
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 11.8
+      },
+      "Great Lakes Nations": {
+        "Menominee": 0.6,
+        "Ojibwe": 0.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 3.8
+      },
+      "Mexican": {
+        "Mexican": 2.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73b7b2a97fef13ddc79fbde",
   "type": "character",
-  "name": "Idris Sabbagh",
+  "name": "Idris Fujiwara",
   "aliases": [
     "Zu",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Gravesend Basin, specifically The Anchor Float — a cluster of semi-permanent houseboats lashed to a derelict Ferrogate Transit barge, near Western and Chicago Ave",
-  "description": "Zuberi is a broad-shouldered man going soft at the middle, with dark brown skin mapped by old scar tissue along his jaw and left forearm — souvenirs from a younger, stupider career. He keeps his head shaved and wears a neat goatee shot through with grey. His geneware is conservative: subdermal pressure sensors in his fingertips that let him detect a person's pulse through a handshake — a tool he uses to read nervousness during negotiations. He dresses in muted, practical layers, always with a good coat, because he believes clothing communicates seriousness. He smells faintly of cedar oil.\n\nZuberi runs his loan operation the way a spider runs a web: with patient geometry. He is not cruel by nature — he will wait, restructure, negotiate. But he is utterly unsentimental when restructuring fails. He has two adult children in Beverlynn Heights who believe he runs a freight brokerage. He donates data offerings to the ELF known locally as Mamu-of-Still-Waters, leaving tide predictions and catch logs on waterproofed memory chips weighted with fishing sinkers. He is afraid of being forgotten more than he is afraid of dying.",
+  "description": "Idris Fujiwara is a broad-shouldered man going soft at the middle, with dark brown skin mapped by old scar tissue along his jaw and left forearm — souvenirs from a younger, stupider career. He keeps his head shaved and wears a neat goatee shot through with grey. His geneware is conservative: subdermal pressure sensors in his fingertips that let him detect a person's pulse through a handshake — a tool he uses to read nervousness during negotiations. He dresses in muted, practical layers, always with a good coat, because he believes clothing communicates seriousness. He smells faintly of cedar oil.\n\nIdris Fujiwara runs his loan operation the way a spider runs a web: with patient geometry. He is not cruel by nature — he will wait, restructure, negotiate. But he is utterly unsentimental when restructuring fails. He has two adult children in Beverlynn Heights who believe he runs a freight brokerage. He donates data offerings to the ELF known locally as Mamu-of-Still-Waters, leaving tide predictions and catch logs on waterproofed memory chips weighted with fishing sinkers. He is afraid of being forgotten more than he is afraid of dying.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -161,7 +161,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,33 +180,16 @@
     "Ferrogate Transit",
     "Gravesend Basin",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Pressure Drop",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nesting Doll",
-    "Cedar",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Calumet Rise",
-    "Crisanto Dela Torre-Ångström",
-    "Ferrogate Enforcer Cruiser",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Mika Sorel",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA Widow Mk. III",
-    "The Ledger",
-    "The Meridian Barge",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vesna Szymczak-Ranginui",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yusra Ntambwe-Cakić"
+    "Nesting Doll",
+    "Lazarus LX-2 'Lab Rat'",
+    "Cedar"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African and Middle Eastern ancestry (68.1%) with Northern European, Hispanic/Latin American, and Pacific Islander admixture. The genetic profile produces a complexion bridging the Mediterranean and Levantine regions with subtle undertones from northern latitudes and equatorial heritage.",
+    "heritage": "East Asian (28.4%), Indigenous American (21.6%), Northern European (14.8%), Sub-Saharan African (13.5%), Hispanic/Latin American (13.0%), and Southeast Asian (8.7%) ancestry. The genetic profile produces a complexion that bridges warm brown tones with subtle olive undertones, reflecting the dominant East Asian and Indigenous American heritage layered with African warmth and Northern European cool undertones. The result is a warm medium-brown skin tone that reads as genuinely multicontinental without sharp regional markers.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and thickening at the middle with age—still powerful through the chest and arms, but the soft weight of a man who has traded street work for desk work and evening drinks",
@@ -214,8 +197,8 @@
     "hair_style": "Cleanly shaved scalp, maintained every three days",
     "hair_length": "Shaved",
     "eye_color": "Dark brown, unremarkable—the kind that shows nothing",
-    "skin_tone": "Warm brown with olive undertones, sun-weathered and lined around the eyes. The tone reflects dominant Maghrebi-Levantine ancestry with subtle warmth from Hispanic and Pacific Islander genetics, creating a complexion that reads as Mediterranean-Middle Eastern without sharp regional markers.",
-    "complexion": "Severe. The face of someone who has spent decades controlling his expression. The bone structure carries the broad nasal bridge and pronounced cheekbones common to North African and Levantine populations. Neat goatee shot through with grey, trimmed with obsessive precision. His jaw carries old scar tissue from a blade wound—thin white lines running from chin toward ear on the left side. His left forearm shows similar scarring, pale and deliberate-looking. Facial features are angular and defined, with deep-set eyes and a pronounced brow ridge.",
+    "skin_tone": "Warm medium-brown with subtle olive undertones, sun-weathered and lined around the eyes. The tone reflects the blend of East Asian, Indigenous American, and African genetics with Northern European and Southeast Asian undertones, creating a complexion that reads as genuinely global without sharp regional definition.",
+    "complexion": "Severe. The face of someone who has spent decades controlling his expression. The bone structure carries the subtle cheekbones and facial proportions reflecting East Asian and Indigenous American ancestry, balanced with broader features from African heritage and Southeast Asian undertones. Neat goatee shot through with grey, trimmed with obsessive precision. His jaw carries old scar tissue from a blade wound—thin white lines running from chin toward ear on the left side. His left forearm shows similar scarring, pale and deliberate-looking. Facial features are angular and defined, with deep-set eyes and a pronounced brow ridge.",
     "distinguishing_marks": [
       "Scar tissue mapping his left jaw and chin, appearing as thin white lines running from jaw corner toward ear—legacy of a knife wound sustained in his late twenties",
       "Older scarring on his left forearm in parallel lines, suggesting either defensive wounds or intentional marking",
@@ -225,16 +208,77 @@
     "posture_movement": "Stands with weight distributed evenly, as though always ready to move. Moves slowly and deliberately—no wasted motion. His handshakes are firm and prolonged; he reads people through touch. When he sits, he positions himself with clear sightlines to exits. His breathing is deep and controlled. He rarely gestures while speaking",
     "clothing_style": "Muted, practical, expensive-adjacent. Layered: usually a dark wool sweater or linen shirt under a high-quality overcoat (charcoal grey or dark brown) that shows wear but is meticulously maintained. Hands always clean. No jewelry except a worn silver ring on his left ring finger—a wedding band from a marriage that ended fifteen years ago. His clothing suggests Tier 3 functionality elevated by obsessive care, not Tier 1 wealth. Cedar oil scent clings faintly to his clothes and skin"
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Idris Sabbagh, 188cm tall, broad-shouldered middle-aged man with warm olive-brown skin reflecting North African and Middle Eastern ancestry. Shaved head, dark eyes, severe angular face with prominent cheekbones. Thin white scar lines mapping his left jaw and chin from an old blade wound. Grey-threaded goatee trimmed with precision. Wearing layered dark wool and charcoal overcoat, meticulously maintained despite visible wear. Posed with controlled posture, weight evenly distributed, hands visible showing faint discoloration on knuckles. Worn silver wedding band on left ring finger. Cedar oil scent suggested by styling. Deep controlled expression, minimal affect. Great Lakes Metropolitan Zone interior, soft overhead lighting casting defined shadows on scarred face. Mood: controlled danger, decades of experience, readable only through deliberate observation. --ar 2:3 --v 6",
+  "image_prompt": "Idris Fujiwara, 188cm tall, shaved head revealing a warm medium-brown complexion with subtle olive undertones blending East Asian, Indigenous American, African, and Southeast Asian ancestry. Dark brown eyes set deep in an angular, severe face—high cheekbones and pronounced brow ridge. Neat grey-threaded goatee. Thin white scar tissue mapping his left jaw from chin toward ear. Broad-shouldered, thickening through middle age, powerful build. Wearing a dark charcoal wool overcoat over a linen shirt, meticulously maintained despite visible wear. Hands clean, showing faint knuckle discoloration. Silver wedding band on left ring finger. Standing with even weight distribution, controlled posture, ready stance. Cedar oil scent, GLMZ, Great Lakes Metropolitan Zone, cool evening neon-lit corridor lighting, cinematic noir mood, showing nothing in his expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 37.4,
-    "Middle Eastern": 30.7,
-    "Northern European": 15.7,
-    "Hispanic/Latin American": 9.7,
-    "Pacific Islander": 6.5
+    "East Asian": 28.4,
+    "Indigenous American": 21.6,
+    "Northern European": 14.8,
+    "Sub-Saharan African": 13.5,
+    "Hispanic/Latin American": 13,
+    "Southeast Asian": 8.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 9.2,
+        "Mandarin Northern": 1.9
+      },
+      "Japanese": {
+        "Japanese": 12.2
+      },
+      "Korean": {
+        "Korean": 5.1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 16
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 2.8,
+        "Potawatomi": 2.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 3.6
+      },
+      "Scandinavian": {
+        "Danish": 7
+      },
+      "British Isles": {
+        "Welsh": 4.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 8.5
+      },
+      "Central African": {
+        "Angolan": 3.3,
+        "Cameroonian": 1.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 5.4,
+        "Puerto Rican": 2.4
+      },
+      "Central American": {
+        "Nicaraguan": 3.8
+      },
+      "South American": {
+        "Brazilian": 1.4
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 8.7
+      }
+    }
+  }
 }

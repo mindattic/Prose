@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65f7f86b5e484cd7dd20cd2",
   "type": "character",
-  "name": "Wren Jaramillo",
+  "name": "Wren Árnason",
   "aliases": [
     "Namu",
     "Auntie Namu"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Montclare Quiet, the Montclare Quiet Community Council Hall — a converted transit authority substation she spent three years getting repurposed, near North Ave and Milwaukee",
-  "description": "Namuun Osei-Kristjánsdóttir does not look like a retired person. She looks like someone in the middle of approximately nine projects simultaneously, which is accurate. She is of medium height, Mongolian-Ghanaian-Icelandic in features, with warm amber-brown skin, high cheekbones, and striking pale grey eyes that she will tell you are entirely natural and that nobody believes because they are extraordinary. Her dark hair is cut practically short and she keeps it that way. She has geneware cat ears installed — a low-key set, dark brown, that lie close to her head when she's working — which she got on a whim for her sixtieth birthday and has found more expressive than she expected.\n\nShe spent twenty-six years as a senior tissue culture technician at Helix Biosystems' Meridian labs, doing the precise, patient work of growing organs and cultivating synthetic biological materials for medical use. She was not management, did not want to be management, and was extraordinarily good at her job. When Helix restructured in 2193 and offered early retirement packages to senior non-management staff, she took it and immediately started running for community council. She won by a large margin on a platform of 'I know what a budget is and I am not afraid to read it.' She is in her second term. She is exhausted by it and will run again.",
+  "description": "Wren Árnason a retired person. She looks like someone in the middle of approximately nine projects simultaneously, which is accurate. She is of medium height, Mongolian-Ghanaian-Icelandic in features, with warm amber-brown skin, high cheekbones, and striking pale grey eyes that she will tell you are entirely natural and that nobody believes because they are extraordinary. Her dark hair is cut practically short and she keeps it that way. She has geneware cat ears installed — a low-key set, dark brown, that lie close to her head when she's working — which she got on a whim for her sixtieth birthday and has found more expressive than she expected.\n\nShe spent twenty-six years as a senior tissue culture technician at Helix Biosystems' Meridian labs, doing the precise, patient work of growing organs and cultivating synthetic biological materials for medical use. She was not management, did not want to be management, and was extraordinarily good at her job. When Helix restructured in 2193 and offered early retirement packages to senior non-management staff, she took it and immediately started running for community council. She won by a large margin on a platform of 'I know what a budget is and I am not afraid to read it.' She is in her second term. She is exhausted by it and will run again.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Nostalgic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,33 +282,16 @@
     "Helix Biosystems",
     "Montclare Quiet",
     "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile",
     "Déjà Vu",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus PG-3 'Aegis'",
-    "Auricula Felis Modification",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Idris Forsberg-Quaye",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Patchwork Scooter",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'",
-    "The Collective",
-    "The Garden of Wires",
-    "The Pure Hand",
-    "Thessaly Oduya-Varga",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Compass Rose",
+    "The Pale Mile",
+    "Whim",
+    "Elena Vasquez-9"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: 26.3% Sub-Saharan African, 22.9% Hispanic/Latin American, 21.9% Indigenous American, 17.7% South Asian, 7.7% Middle Eastern, 3.5% Northern European. This combination creates a distinctive phenotype with warm brown skin tones, broad cheekbones from Indigenous and African ancestry, and subtle South Asian facial structure, enriched by the genetic diversity of the Ubiquitous Diaspora.",
+    "heritage": "Northern European dominant (48.6%) creates the base cool undertones and bone structure, substantially blended with South Asian ancestry (25%) contributing defined cheekbones and eye shape. Eastern European (16.3%) adds facial angularity and complexity. Sub-Saharan African (6.6%) and Hispanic/Latin American (3.5%) heritage warm the overall palette with golden and olive undertones. This creates a distinctive phenotype: cool-to-warm medium brown skin with golden highlights, almond-shaped eyes set in a fine-featured face with moderate, well-defined cheekbones that bridge Scandinavian linearity with South Asian structure.",
     "height_cm": 164,
     "weight_kg": 58,
     "build": "Lean and compact, with the efficient musculature of someone who has spent decades doing precise hand work. Posture suggests both care and wear — shoulders slightly forward from laboratory posture, but held with conscious straightness.",
@@ -316,8 +299,8 @@
     "hair_style": "Practical short crop, usually slightly tousled from running hands through it while thinking",
     "hair_length": "Short",
     "eye_color": "Pale grey, striking and luminous — entirely natural, though few believe it",
-    "skin_tone": "Warm deep brown with golden undertones, reflecting the blend of Sub-Saharan, Indigenous American, and South Asian ancestry with subtle warm highlights from Middle Eastern and Latin American heritage",
-    "complexion": "Broad, well-defined cheekbones characteristic of Indigenous American and Sub-Saharan ancestry. Fine-featured face lined with crow's feet from decades of close laboratory work and squinting at fine detail. Skin is well-maintained but shows age honestly — no cosmetic smoothing, minimal makeup. Expression defaults to focused and slightly preoccupied.",
+    "skin_tone": "Cool-to-warm medium brown with golden undertones, reflecting the blend of Northern European coolness with South Asian, Sub-Saharan African, and Latin American warmth",
+    "complexion": "Fine-featured face with moderate, well-defined cheekbones reflecting Northern/Eastern European and South Asian ancestry. Almond-shaped eye set characteristic of the South Asian and Northern European blend. Lined with crow's feet from decades of close laboratory work and squinting at fine detail. Skin is well-maintained but shows age honestly — no cosmetic smoothing, minimal makeup. Expression defaults to focused and slightly preoccupied.",
     "distinguishing_marks": [
       "Faint scars on both inner wrists from early precision haptic installation (age 35), pale and almost invisible unless specifically noted",
       "Calluses on fingertips and inner palms from decades of tissue culture work — still present in retirement",
@@ -327,17 +310,66 @@
     "posture_movement": "Moves with purpose and efficiency, economical gestures refined by laboratory precision work. When seated, hands rarely stay still — gesturing, holding a pen, rearranging objects on desk. Cat ears orient toward sound sources or toward whoever is speaking. Overall impression is of someone whose mind is already three steps ahead but whose body is still present.",
     "clothing_style": "Tier 3 practical — well-maintained but not fashionable. Usually wearing layered, neutral-toned clothing (greys, blacks, deep blues, browns) with good pockets and durability. Favors fitted but loose-cut pants, comfortable closed-toe shoes suitable for walking between council meetings, plain long-sleeved shirts or simple sweaters. Carries a worn canvas satchel with community council materials. Occasionally visible: old Helix Biosystems keyfob on belt loop, small enamel pin collection on collar or bag (biotech industry pins, community garden cooperative badge, one that says 'I READ THE BUDGET'). Jewelry minimal — functional watch, simple rings."
   },
-  "image_prompt": "Wren Jaramillo, 164cm tall lean biotech researcher in her 60s, warm deep brown skin with golden undertones reflecting African, Indigenous American, and South Asian heritage, broad cheekbones, pale luminous grey eyes, short dark brown tousled hair. Dark brown geneware cat ears at natural ear position, subtly visible and expressive. Faint luminescent haptic tracery visible under fingernail beds. Crow's feet from decades of precise laboratory work, honest age lines, minimal makeup. Wearing layered neutral-toned clothing in grey and black, fitted practical pants, long-sleeved shirt, worn canvas satchel with council materials. Small mitochondrion tattoo on left inner forearm. Enamel pins on collar. Posture efficient and purposeful, hands gesturing with laboratory precision. Cyberpunk 2226 Great Lakes Metropolitan setting, cool laboratory-influenced lighting with subtle warm amber undertones, focused preoccupied expression, council office or biotech facility background. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Wren Árnason, 164cm lean biotechnologist with distinctive pale grey eyes and dark brown short tousled hair. Medium brown skin with golden undertones reflecting mixed Northern European, South Asian, Eastern European, Sub-Saharan African and Latin American heritage. Fine-featured face with defined cheekbones, almond-shaped eyes, crow's feet from decades of precision lab work. Dark brown geneware cat ears visible above head, subtly expressive. Faint luminescent tracery visible under fingernail beds from haptic augmentation. Wearing layered neutral-toned practical clothing — grey long-sleeved shirt, dark fitted pants, worn canvas satchel with enamel pins on shoulder strap including mitochondrion pin. Posture precise and focused, hands mid-gesture. GLMZ GLMZ setting, cool laboratory-influenced lighting casting subtle shadows across defined cheekbones and augmented ears, concentrated expression suggesting mind three steps ahead. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 26.3,
-    "Hispanic/Latin American": 22.9,
-    "Indigenous American": 21.9,
-    "South Asian": 17.7,
-    "Middle Eastern": 7.7,
-    "Northern European": 3.5
+    "Northern European": 48.6,
+    "South Asian": 25,
+    "Eastern European": 16.3,
+    "Sub-Saharan African": 6.6,
+    "Hispanic/Latin American": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 18.2
+      },
+      "Scandinavian": {
+        "Swedish": 7.7
+      },
+      "British Isles": {
+        "Irish": 2.8,
+        "Scottish": 19.9
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 13,
+        "Kannada": 5.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.6
+      },
+      "Pakistani": {
+        "Pashtun": 4.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 8.5,
+        "Hungarian": 3.3
+      },
+      "Slavic West": {
+        "Polish": 1,
+        "Slovak": 0.3
+      },
+      "Slavic South": {
+        "Serbian": 3.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 2.8,
+        "Nigerian": 3.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 3.5
+      }
+    }
+  }
 }

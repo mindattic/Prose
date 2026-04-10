@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f87d59ab2d03e779c35fad",
   "type": "character",
-  "name": "Rajan Makwa",
+  "name": "Onyx Phommachanh",
   "aliases": [
     "Tib",
     "the Intern"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Aurochs Medical Complex, Helix Biosystems Research Annex — sublevel lab B, near sub-level access near State and Van Buren",
-  "description": "Thibault is slight and angular, with warm golden-brown skin that they've had partially threaded with bioluminescent capillaries along the collarbone and the backs of their hands — a soft blue-white glow that shows through their skin when they're excited or after prolonged interface work, which their supervisor has twice asked them to cover with a sleeve. They keep their dark hair very short on the sides and longer on top, often held back with a clip that has a small ELF-glyph stamped into it. They dress in Helix-issue lab kit that they've personalized just enough to suggest they know what personality is but are still figuring out how much of it is allowed.\n\nTibault is acutely observant and moderately terrified, which is a combination that produces, paradoxically, a very useful researcher. They notice things — small things, procedural inconsistencies, who looks at whom when a certain topic comes up — and they write everything down in a personal log encrypted with a key only they have. They are not sure yet whether they are writing it because they are a natural documentarian or because they think they might need it someday. They have been at Helix for seven months. They have already seen two things they are not sure they were supposed to see, and they are getting very good at looking like they saw nothing.",
+  "description": "Onyx Phommachanh is slight and angular, with warm golden-brown skin that they've had partially threaded with bioluminescent capillaries along the collarbone and the backs of their hands — a soft blue-white glow that shows through their skin when they're excited or after prolonged interface work, which their supervisor has twice asked them to cover with a sleeve. They keep their dark hair very short on the sides and longer on top, often held back with a clip that has a small ELF-glyph stamped into it. They dress in Helix-issue lab kit that they've personalized just enough to suggest they know what personality is but are still figuring out how much of it is allowed.\n\nTibault is acutely observant and moderately terrified, which is a combination that produces, paradoxically, a very useful researcher. They notice things — small things, procedural inconsistencies, who looks at whom when a certain topic comes up — and they write everything down in a personal log encrypted with a key only they have. They are not sure yet whether they are writing it because they are a natural documentarian or because they think they might need it someday. They have been at Helix for seven months. They have already seen two things they are not sure they were supposed to see, and they are getting very good at looking like they saw nothing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -182,7 +182,7 @@
     "Pragmatist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,24 +240,11 @@
     "Aurochs Medical Complex",
     "Helix Biosystems",
     "The Pure Hand",
-    "Nightlight",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Calumet Rise",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Carbon Machete 'Cane Cutter'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lumen",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "The Portico",
-    "The Underlayer Collective"
+    "Nightlight"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Indigenous American (45%) with significant South Asian (44.5%) ancestry, complemented by East Asian (6.3%) and Hispanic/Latin American (4.2%) heritage. Genetic mix produces warm, medium-toned complexion with subtle golden undertones characteristic of Andean-South Asian blending.",
+    "heritage": "Predominantly Southeast Asian (58.8%) with significant South Asian (20.0%), Sub-Saharan African (14.0%), and North African (7.2%) ancestry. This genetic combination produces warm, complex skin tones with golden and amber undertones characteristic of pan-Asian and African blending. Features reflect the Southeast Asian foundation with South Asian cheekbone definition, African facial structure breadth, and North African warmth in undertones—a striking pan-continental synthesis.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and angular, with the lean musculature of someone who moves carefully through space rather than taking up room. Narrow shoulders, long fingers, slight forward curve to the upper spine from hours hunched over lab stations.",
@@ -265,8 +252,8 @@
     "hair_style": "Short fade on the sides (approximately 3mm), longer on top (approximately 8cm) swept back and secured with a small clip bearing an ELF-glyph stamped into matte steel",
     "hair_length": "Asymmetrical short-to-medium",
     "eye_color": "Dark brown with warm undertones",
-    "skin_tone": "Warm medium brown with golden undertones, reflecting blended Indigenous American and South Asian ancestry with subtle East Asian influence",
-    "complexion": "Clear, youthful skin with fine-grained texture. Faint dark circles under the eyes from irregular sleep. Minimal facial hair. Cheekbones show subtle definition characteristic of Indigenous American and South Asian features. Expression tends toward watchful rather than relaxed.",
+    "skin_tone": "Warm medium-deep brown with golden and amber undertones, reflecting the complex blending of Southeast Asian, South Asian, Sub-Saharan African, and North African ancestry. Rich, multifaceted coloration with subtle warm highlights across cheekbones and brow.",
+    "complexion": "Clear, youthful skin with fine-grained texture. Faint dark circles under the eyes from irregular sleep. Minimal facial hair. Cheekbones show pronounced definition characteristic of Southeast Asian and South Asian features, with broader, more angular facial structure reflecting Sub-Saharan African and North African heritage. Expression tends toward watchful rather than relaxed.",
     "distinguishing_marks": [
       "Bioluminescent capillary threading along both collarbones in a delicate branching pattern, soft blue-white glow visible when excited or after extended neural interface use",
       "Bioluminescent capillary threading on the backs of both hands in thin web-like lines, same blue-white coloration, most visible in low light or when hands are active"
@@ -275,15 +262,61 @@
     "posture_movement": "Moves with economical precision—each gesture deliberate, few wasted motions. Tends to stand slightly compressed, shoulders slightly forward, as if trying to minimize physical presence. Hands move quickly and accurately when working. Maintains careful distance in group settings. Eyes frequently scan environments and track who is paying attention to whom.",
     "clothing_style": "Helix Biosystems-issue lab coat (white, slightly oversized to accommodate the data-capture interface hardware and to hide the bioluminescent threading when desired). Under the coat: dark gray or black fitted underlayer shirt, often from discount Tier 3-4 retailers (off-brand, functional). Dark stretch pants or slim-fit work trousers in black or charcoal. Practical low-profile sneakers (black, worn). Small personal modifications: clips, subtle pin badges from university orgs. Appearance suggests someone who is learning the rules of corporate dress code while still testing its boundaries."
   },
-  "image_prompt": "Rajan Makwa, 168cm lean angular frame, warm medium-brown skin with golden undertones blending Indigenous American and South Asian heritage, dark brown eyes. Short dark hair faded at sides with longer swept-back top secured by steel ELF-glyph clip. Wearing oversized white Helix Biosystems lab coat over dark fitted underlayer, black slim trousers, worn black sneakers. Subtle bioluminescent blue-white capillary threading visible along collarbones and backs of hands, glowing softly. Watchful expression, economical posture slightly forward-compressed. Standing in sleek 2226 corporate biotech lab with cool LED lighting, hands positioned near data interface. Cyberpunk aesthetic, near-future Great Lakes Metropolitan Zone setting, moody blue-tinted ambient light highlighting bioluminescent augmentations. Scanning room with careful deliberation. --ar 2:3 --v 6",
+  "image_prompt": "Onyx Phommachanh, 168cm tall lean angular frame, warm medium-deep brown skin with golden undertones blending Southeast Asian, South Asian, Sub-Saharan African, and North African heritage, dark brown eyes with watchful expression, dark nearly-black hair short-fade asymmetrical style swept back with steel clip. Fine-featured with pronounced cheekbones and broader angular facial structure. Wearing oversized white Helix Biosystems lab coat over dark fitted underlayer, black slim work trousers, worn black sneakers. Bioluminescent capillary threading visible as soft blue-white branching lines along collarbones and backs of hands. Economical, precise posture with slightly forward shoulders, standing in a neo-noir laboratory setting with soft neon accent lighting reflecting off bioluminescent geneware, cool blue-white glow contrasting warm skin tones, neural interface hardware suggested, atmospheric low-key sci-fi lighting, 2226 Great Lakes Metropolitan Zone aesthetic, contemplative and focused demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 45.0,
-    "South Asian": 44.5,
-    "East Asian": 6.3,
-    "Hispanic/Latin American": 4.2
+    "Southeast Asian": 58.8,
+    "South Asian": 20,
+    "Sub-Saharan African": 14,
+    "North African": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 29.7
+      },
+      "Filipino": {
+        "Cebuano": 10.3,
+        "Ilocano": 14.3
+      },
+      "Indonesian": {
+        "Balinese": 2.4,
+        "Javanese": 2.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 7.9,
+        "Punjabi Pakistani": 1.3
+      },
+      "Nepali": {
+        "Nepali": 10.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 6.8
+      },
+      "East African": {
+        "Ethiopian": 1.2,
+        "Rwandan": 0.2
+      },
+      "West African": {
+        "Liberian": 5.8
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Kabyle": 2.7,
+        "Tuareg": 0.6
+      },
+      "Nile Valley": {
+        "Sudanese": 2.9,
+        "Egyptian": 1
+      }
+    }
+  }
 }

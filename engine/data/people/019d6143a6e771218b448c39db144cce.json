@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Shallowgrave, operates from a converted cold-storage unit beneath the Midden Market, near Ashland and Division",
-  "description": "Sévérine is built compact and efficient, dark-skinned with close-cropped hair she dyes a deep arterial red — not geneware, just dye, because she likes having a choice about it. She has bioluminescent capillary lines mapped faintly across both forearms, a cosmetic mod she got at nineteen that she now finds embarrassing but can't afford to remove, which she will tell you about if you ask and sometimes if you don't. Her surgical augments are serious: stabilizer rigs in both hands, haptic-magnification implants behind her eyes, a subdermal sterile field generator she refers to as 'the bubble.'\n\nShe was two years into a Helix Biosystems surgical residency when she was caught diverting a cadaver organ to a patient who couldn't pay the licensing fees. She does not think she did anything wrong. She thinks Helix Biosystems is wrong, the organ licensing system is wrong, and the entire apparatus that let that patient die six weeks after her termination is wrong. She has constructed an entire ethical framework around her current work — she harvests from the willing (paid donors, usually desperate Tier 1s), she maintains sterile conditions that would shame most licensed clinics, and she charges sliding scale. She genuinely saves lives. She also genuinely sells kidneys to Axiom black-market med-brokers for Φ4,000 a unit. Both things are true.",
+  "description": "Atlas Árnason is built compact and efficient, dark-skinned with close-cropped hair she dyes a deep arterial red — not geneware, just dye, because she likes having a choice about it. She has bioluminescent capillary lines mapped faintly across both forearms, a cosmetic mod she got at nineteen that she now finds embarrassing but can't afford to remove, which she will tell you about if you ask and sometimes if you don't. Her surgical augments are serious: stabilizer rigs in both hands, haptic-magnification implants behind her eyes, a subdermal sterile field generator she refers to as 'the bubble.'\n\nShe was two years into a Helix Biosystems surgical residency when she was caught diverting a cadaver organ to a patient who couldn't pay the licensing fees. She does not think she did anything wrong. She thinks Helix Biosystems is wrong, the organ licensing system is wrong, and the entire apparatus that let that patient die six weeks after her termination is wrong. She has constructed an entire ethical framework around her current work — she harvests from the willing (paid donors, usually desperate Tier 1s), she maintains sterile conditions that would shame most licensed clinics, and she charges sliding scale. She genuinely saves lives. She also genuinely sells kidneys to Axiom black-market med-brokers for Φ4,000 a unit. Both things are true.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -200,7 +200,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -263,29 +263,12 @@
     "Irontide Tidal Energy",
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
     "Axiom Systems White Noise Bubble Generator WNB-1",
-    "The Pure Hand",
-    "Bintou Halvorsen-Osei",
-    "Carrion Defense Works Bone Saw BS-3 'Butcher'",
-    "Crucible TR-7 'Triage'",
-    "Hadiya Karlsen-Sow",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "LifeWire EvenKeel Mood Regulation Implant",
-    "Marrowvault Cryogenics",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo AX-12 'Harvester'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "The Calumet Sink",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+    "Atlas",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian / East Asian / Southeast Asian with Sub-Saharan African heritage. A complex blend yielding warm-to-neutral brown tones with subtle undertones from multiple ancestry groups — the South Asian and East Asian components dominate her phenotype, while Southeast Asian and African heritage contribute depth to her skin tone and facial structure.",
+    "heritage": "Middle Eastern dominant (58.5%) with significant South Asian (20.3%) and Northern European (21.2%) admixture. The Middle Eastern base creates warm olive undertones and defined facial structure, while South Asian ancestry deepens warmth and adds angularity to cheekbones and jawline. Northern European heritage lightens and cools the overall palette, creating a warm-neutral medium tone with golden undertones—balanced rather than warm-leaning, reflecting the tri-continental genetic inheritance.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and efficient, lean muscle beneath a frame built for precision rather than strength. Narrow shoulders, efficient posture. No wasted geometry.",
@@ -293,8 +276,8 @@
     "hair_style": "Close-cropped, precise fade on the sides, slightly longer on top — maintained with surgical attention to detail",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint silver neural-mapping scarring visible at the inner corners where haptic implants interface",
-    "skin_tone": "Warm medium-brown with neutral undertones, the even complexion of someone who spends most daylight hours underground. The tone reflects her South Asian and East Asian heritage with subtle African warmth beneath.",
-    "complexion": "Methodical grooming, hands kept obsessively clean despite the work. Fine-lined face suggesting chronic low-grade stress. High cheekbones with gentle structure characteristic of East and Southeast Asian heritage. Lips often chapped from breathing recirculated air in her cold-storage clinic. No cosmetic work beyond the regrettable neon tracery.",
+    "skin_tone": "Warm olive-tan medium tone with golden undertones. The base reflects dominant Middle Eastern heritage (58.5%) creating the olive foundation, enriched by South Asian ancestry (20.3%) that deepens and warms facial structure, while Northern European heritage (21.2%) provides subtle cooling and paleness beneath—resulting in a balanced warm-neutral complexion. Even tone characteristic of someone spending most daylight hours underground.",
+    "complexion": "Methodical grooming, hands kept obsessively clean despite the work. Fine-lined face suggesting chronic low-grade stress. Strong cheekbones and defined jawline characteristic of Middle Eastern and South Asian heritage, with the subtle softening from Northern European admixture. Lips often chapped from breathing recirculated air in her cold-storage clinic. No cosmetic work beyond the regrettable neon tracery.",
     "distinguishing_marks": [
       "Bioluminescent capillary tracery in faint neon-blue lines mapping across both forearms in vascular-system patterns, brightest at the wrists; a nineteen-year-old decision she now describes with embarrassment and defensive precision",
       "Thin white surgical scar along the base of her right thumb where early stabilizer-rig installation went septic and required remedial work",
@@ -304,15 +287,42 @@
     "posture_movement": "Economical and controlled. Hands move with surgical precision even when casual; she's learned not to make sudden gestures in clinical spaces. Stands with weight balanced forward slightly, ready to move. Rarely touches her own face. When focused on work, enters a state of almost meditative concentration — everything extraneous falls away.",
     "clothing_style": "Tier 3-4 utilitarian. Loose dark scrubs or surgical-grade clothing in charcoal or black, often with visible staining from work that she doesn't fully clean out because she'll just get more on them. Reinforced cargo pants with deep pockets for tools and supplies. A weathered synth-leather jacket (high-quality, probably five years old, maintained obsessively) for moving through Shallowgrave proper. No jewelry — too much contamination risk. Wears disposable nitrile gloves constantly, carries multiple pairs in jacket pockets."
   },
-  "image_prompt": "Atlas Árnason, 162cm lean compact frame, warm medium-brown skin with South Asian-East Asian-Southeast Asian heritage, short deep arterial red dyed hair in precise fade cut, dark brown eyes with faint silver neural scarring at inner corners. Standing in cyberpunk 2226 cold-storage clinic underground, wearing charcoal surgical scrubs stained from work, weathered synth-leather jacket, disposable nitrile gloves. Bioluminescent neon-blue capillary tracery glowing faintly across both forearms in vascular patterns. Hands showing subtle metallic stabilizer rigs at knuckles, posture economical and controlled, weight forward. Clinical overhead lighting casting sharp shadows, underground bunker aesthetic, precision-focused meditative concentration evident. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Árnason, a 162cm lean compact figure with warm olive-tan medium skin tone and golden undertones reflecting Middle Eastern, South Asian, and Northern European ancestry. Deep arterial red short hair with precise fade styling. Dark brown eyes with faint silver neural scarring at inner corners. Fine-lined face with strong cheekbones and defined jawline, surgical precision in posture. Bioluminescent neon-blue capillary tracery glowing across both forearms in vascular patterns, brightest at wrists. Metallic stabilizer rig articulation visible at knuckles and wrist joints. Wearing dark charcoal surgical-grade scrubs with work stains, reinforced cargo pants, weathered synth-leather jacket. Disposable nitrile gloves. Underground clinic lighting casting cool shadows across face. Meditative concentration, economical controlled movement. GLMZ, Great Lakes Metropolitan Zone, clinical precision meets augmented capability. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 43.8,
-    "East Asian": 36.7,
-    "Southeast Asian": 12.8,
-    "Sub-Saharan African": 6.7
+    "Middle Eastern": 58.5,
+    "Northern European": 21.2,
+    "South Asian": 20.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 58.5
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 5.9,
+        "Swiss German": 3.4
+      },
+      "British Isles": {
+        "Welsh": 11.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 5.7,
+        "Tamil Sri Lankan": 3.6
+      },
+      "Indian": {
+        "Bengali": 4.4
+      },
+      "Nepali": {
+        "Nepali": 6.6
+      }
+    }
+  }
 }

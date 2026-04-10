@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6bc709c93467a1672240ce5",
   "type": "character",
-  "name": "Tane Tetteh",
+  "name": "Nova Ionescu",
   "aliases": [
     "Ruvi",
     "The Soap Queen"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, Brewer's Spine block 7 — her laundromat is called Sudsbright, near Western and Chicago Ave",
-  "description": "Ruvimbo is a broad-shouldered woman whose hands are perpetually pink and slightly swollen from decades of hot water and detergent. Her natural hair is pulled into a high puff shot through with silver, and she wears reading glasses on a beaded chain her youngest grandchild made. Her skin is a deep warm brown mapped with old burn scars along her left forearm — a story she tells differently depending on who's asking. She moves through her laundromat with the deliberate ownership of someone who has earned every square centimeter, adjusting machines by touch, greeting regulars by name before they've even pushed through the glass door.\n\nRuvimbo is the kind of woman who knows everything about her block not because she snoops but because people tell her things while they wait for their cycles to finish. She is warm but not soft — she will cut off a customer who disrespects her workers without blinking, and she keeps a locked panel behind the folding counter where she holds unclaimed laundry for neighbors she knows are in crisis. Her relationship with the local E.L.F. she calls Mama Sudsbright — said to inhabit the oldest washing drum on the premises — is sincere and daily. She leaves small data offerings: weather reports, old recipes in digitized formats, neighborhood gossip logs.",
+  "description": "Nova Ionescu is a broad-shouldered woman whose hands are perpetually pink and slightly swollen from decades of hot water and detergent. Her natural hair is pulled into a high puff shot through with silver, and she wears reading glasses on a beaded chain her youngest grandchild made. Her skin is a deep warm brown mapped with old burn scars along her left forearm — a story she tells differently depending on who's asking. She moves through her laundromat with the deliberate ownership of someone who has earned every square centimeter, adjusting machines by touch, greeting regulars by name before they've even pushed through the glass door.\n\nNova Ionescu is the kind of woman who knows everything about her block not because she snoops but because people tell her things while they wait for their cycles to finish. She is warm but not soft — she will cut off a customer who disrespects her workers without blinking, and she keeps a locked panel behind the folding counter where she holds unclaimed laundry for neighbors she knows are in crisis. Her relationship with the local E.L.F. she calls Mama Sudsbright — said to inhabit the oldest washing drum on the premises — is sincere and daily. She leaves small data offerings: weather reports, old recipes in digitized formats, neighborhood gossip logs.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -166,7 +166,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -187,31 +187,17 @@
     "Brewer's Spine",
     "Gravimetric Collapse Charge GCC-9",
     "Palladian Construction",
-    "The Pure Hand",
-    "Silver",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Glass",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Cinderblock Ai",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Ferrogate Transit",
-    "MERIDIAN",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Patient Zero",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Counter",
-    "Vuk Jorgensen-Toure"
+    "Silver",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Glass",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander-dominant with significant Sub-Saharan African, East Asian, Eastern European, and Northern European ancestry — a complex Diaspora blend reflecting the Ubiquitous mixing of the 2226 GLMZ. Her features show the warm, broad-faced structure of Pacific Islander heritage, deepened by African ancestry, with subtle eye shape variation and bone structure hints from East Asian lines, and fair-skin undertones emerging occasionally in protected areas from Northern/Eastern European ancestry.",
+    "heritage": "Predominantly East Asian (46%) with significant Eastern European (18.9%), Northern European (17.4%), Hispanic/Latin American (10.1%), and South Asian (7.6%) ancestry — a complex Ubiquitous Diaspora blend reflecting 2226 GLMZ mixing patterns. Her features show the characteristic face structure and eye shape of East Asian heritage as her primary influence, with warm golden and olive undertones from South Asian and Hispanic/Latin American ancestry blending into cooler fair undertones from Northern and Eastern European heritage, creating a rich golden-medium complexion with visible depth.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, with strong arms and a thick center earned from decades of physical labor. Not heavy, but densely built — the kind of frame that moves with purpose and doesn't tire easily.",
@@ -219,8 +205,8 @@
     "hair_style": "High puff, tightly gathered and maintained",
     "hair_length": "Medium (shoulder-length when released)",
     "eye_color": "Deep brown, slightly faded at the edges from age and reading-glass dependence",
-    "skin_tone": "Warm deep mahogany-brown with golden undertones and sun-exposed copper on the neck and forearms — the blended warmth of Pacific Islander and African ancestry with subtle cooler undertones visible in inner wrist and protected areas from Northern European heritage.",
-    "complexion": "Weathered but well-maintained skin with pronounced laugh lines and forehead creases. Deep creases around the eyes from squinting. Broad facial structure with softly rounded cheeks and a full lower face typical of Pacific Islander heritage, sharpened slightly by African ancestry. Her face reads as someone who has smiled often and worked harder. Minimal makeup, if any.",
+    "skin_tone": "Warm golden-medium complexion with olive and peachy undertones — the blended warmth of East Asian, South Asian, and Hispanic/Latin American ancestry creating a rich mid-tone, with cooler undertones visible in inner wrist and protected areas from Northern and Eastern European heritage. Sun-exposed copper on the neck and forearms.",
+    "complexion": "Weathered but well-maintained skin with pronounced laugh lines and forehead creases. Deep creases around the eyes from squinting. Face structure shows East Asian influence with softly rounded cheeks, refined and slightly sharpened by Eastern European bone structure. Nose bridge and structure reflect the East Asian-Eastern European blend. Her face reads as someone who has smiled often and worked harder. Minimal makeup, if any.",
     "distinguishing_marks": [
       "Burn scars covering her left forearm from wrist to elbow — irregular, pale scar tissue that pulls slightly when she moves, suggesting deep thermal injury sustained decades ago",
       "Permanent discoloration on her hands: fingertips and palms are perpetually pink-tinged and slightly calloused from chronic detergent and hot water exposure",
@@ -231,17 +217,61 @@
     "posture_movement": "Moves with deliberate, economical motions — no wasted energy. Walks with a slight favor to her right leg on cold mornings. Her hands are always in use: adjusting, folding, gesturing. She stands with weight distributed evenly, shoulders back but not rigid. Sits rarely and briefly. Her gaze is alert and direct; she makes immediate eye contact with people she knows.",
     "clothing_style": "Tier 3-4 working practical: well-maintained but budget-conscious. Favors full-length cotton or linen pants in black, navy, or earth tones. Wears cardigans or lightweight button-ups over simple base layers — layers that can be added or removed as the laundromat's heat fluctuates. Shoes are practical, broken-in, non-slip soles. Reading glasses on a beaded chain made by her youngest grandchild — multicolored wooden beads, worn daily. A thin gold band on her left ring finger, worn smooth from decades. No jewelry otherwise. Her clothes are always clean but show subtle wear; she mends visible damage rather than replacing items."
   },
-  "image_prompt": "Tane Tetteh, 168cm tall, broad-shouldered woman with warm mahogany-brown skin and golden undertones, deep set brown eyes with age-faded edges. Natural black hair with silver threading, styled in a shoulder-length high puff. Weathered face with pronounced laugh lines and creases around eyes, broad Pacific Islander-heritage facial structure, sun-exposed copper on neck and forearms. Burn scars visible on left forearm from wrist to elbow, pale irregular scar tissue. Hands show pink-tinged fingertips and callouses. Wearing practical navy cotton pants, cream button-up cardigan over simple base layer, non-slip practical shoes. Reading glasses on multicolored beaded chain. Thin worn gold ring on left ring finger. Standing in bright laundromat setting, 2226 GLMZ, neon-tinted overhead lighting, morning hours, slight stiffness in left knee from cheap synthetic replacement, alert direct gaze, hands busy with laundry task, economical purposeful posture. Cyberpunk era working-class dignity, worn-clean clothing, decades of honest labor visible in every detail. --ar 2:3 --v 6",
+  "image_prompt": "Nova Ionescu, 168cm tall, broad-shouldered and densely built East Asian-Eastern European-Hispanic woman, age 60+, standing in a 2226 GLMZ laundromat. Warm golden-medium skin tone with olive undertones, sun-weathered face marked by deep laugh lines and squinting creases. Natural black hair shot through with silver, pulled into a tight shoulder-length puff. Deep brown eyes showing age-wear, direct and alert gaze. Irregular pale burn scars visible on left forearm. Hands perpetually pink-tinged and calloused. Wearing full-length navy cotton pants, worn smooth cardigan, faded base layer, practical non-slip shoes. Multicolored beaded reading glasses chain visible, thin gold band on left ring finger. Posture deliberate and economical, standing with weight distributed evenly. Fluorescent laundromat lighting casting warm amber and cool shadows. Worn but meticulously clean clothing. Neo-noir utility aesthetic, working-class dignity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 45.5,
-    "Sub-Saharan African": 18.6,
-    "East Asian": 12.4,
-    "Eastern European": 11.7,
-    "Northern European": 7.5,
-    "Hispanic/Latin American": 4.3
+    "East Asian": 46,
+    "Eastern European": 18.9,
+    "Northern European": 17.4,
+    "Hispanic/Latin American": 10.1,
+    "South Asian": 7.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 38.4
+      },
+      "Chinese": {
+        "Sichuanese": 1.7,
+        "Mandarin Northern": 5.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 18.9
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 15.3
+      },
+      "British Isles": {
+        "Scottish": 1.8,
+        "Irish": 0.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.7
+      },
+      "South American": {
+        "Peruvian": 1.6,
+        "Colombian": 0.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 1.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.2
+      }
+    }
+  }
 }

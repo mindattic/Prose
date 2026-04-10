@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6027db8a953a69e313c0500",
   "type": "character",
-  "name": "Sterling Raghavan-Bautista-Achebe",
+  "name": "Sterling Raghavan-Bergqvist-Magnúsdóttir",
   "aliases": [
     "Mil",
     "Professor Zub"
@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "Edgewater Prism — Sterling-Nakamura Lacustrine Research Facility, Lake Michigan interface level, near Clark and Belmont",
-  "description": "Emiliano Zubkov-Yirenkyiamah is a tall man gone slightly soft in the middle, with medium-brown skin, a neatly trimmed beard threaded with premature grey, and eyes he had refracted with a patterned iris modification years ago — they shift between amber and green depending on ambient light, something he originally got for vanity and now barely notices. He moves with the economical ease of someone who spent a decade doing field research in difficult conditions and still carries that competence in his body even when he's at a desk. His workspace at Edgewater Prism is a controlled chaos of physical samples, holographic lake-floor maps, and three different coffee vessels in varying states of consumption.\n\nHe is professionally optimistic and personally terrified, which gives his public presentations a motivational quality and his private conversations a rawness his colleagues find either refreshing or exhausting. He genuinely believes the lake can be saved — or saved enough — and this belief functions as his operating system. He is kind, a bit scattered, deeply committed to his students even though he's at a corporate R&D division now, and he has been lying to his employers about what his most recent deep-substrate analysis actually found for eight months.",
+  "description": "Sterling Raghavan-Bergqvist-Magnúsdóttir is a tall man gone slightly soft in the middle, with medium-brown skin, a neatly trimmed beard threaded with premature grey, and eyes he had refracted with a patterned iris modification years ago — they shift between amber and green depending on ambient light, something he originally got for vanity and now barely notices. He moves with the economical ease of someone who spent a decade doing field research in difficult conditions and still carries that competence in his body even when he's at a desk. His workspace at Edgewater Prism is a controlled chaos of physical samples, holographic lake-floor maps, and three different coffee vessels in varying states of consumption.\n\nHe is professionally optimistic and personally terrified, which gives his public presentations a motivational quality and his private conversations a rawness his colleagues find either refreshing or exhausting. He genuinely believes the lake can be saved — or saved enough — and this belief functions as his operating system. He is kind, a bit scattered, deeply committed to his students even though he's at a corporate R&D division now, and he has been lying to his employers about what his most recent deep-substrate analysis actually found for eight months.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -162,7 +162,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,28 +177,11 @@
   "registered_firearms": [],
   "related_entities": [
     "Edgewater Prism",
-    "Big Rig",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Anatoliy Faye-Nkrumah",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Mika Sorel",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nurlan Morita-Antwi",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Sustrel",
-    "The Pure Hand",
-    "The Threshold",
-    "University Spine",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vantablack Media Spectral Barrier Display System",
-    "Yannick Tambadou-Reinholt"
+    "Big Rig"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Northern European, Hispanic/Latin American, Sub-Saharan African, and South Asian mixed ancestry — a complex genetic blend resulting in warm medium-brown skin with golden undertones, refined facial structure showing influence from multiple continents, and the kind of adaptability that comes from truly global genetic heritage",
+    "heritage": "Northern European (41.9%), South Asian (29.3%), Southeast Asian (11.8%), Hispanic/Latin American (8.3%), Middle Eastern (8.1%), and Sub-Saharan African (0.6%) mixed ancestry — a genuinely global genetic blend producing warm medium-brown skin with subtle golden undertones, refined South Asian bone structure bridged with broader Northern European features, Southeast Asian cheekbone definition, and the complex pigmentation that comes from such diverse continental origins",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Tall and broad-shouldered, softening through the midsection from years of desk work and lab hours; still carries the lean-muscled efficiency of someone who did fieldwork in harsh conditions, but the shoulders have lost their edge",
@@ -206,8 +189,8 @@
     "hair_style": "Short, neatly combed back; beard kept trimmed to 1-2cm, well-maintained",
     "hair_length": "Short",
     "eye_color": "Patterned iris modification — shifts between amber and forest green depending on ambient light; the pattern resembles concentric rings of refracted color, visible as an intentional geometric alteration beneath the surface",
-    "skin_tone": "Warm medium brown with golden undertones from blended Northern European and Latin American heritage filtered through Sub-Saharan African and South Asian genetics; sun-exposed on the face and forearms from decades of field research",
-    "complexion": "Weathered around the eyes and mouth from squinting at instruments and concentrating; faint laugh lines; skin condition is healthy but lined; a few small scars on his hands from fieldwork accidents; facial structure shows the refined bone geometry characteristic of South Asian heritage with the broader features of his Northern European and African ancestry",
+    "skin_tone": "Warm medium brown with subtle golden undertones from the blending of Northern European pale genetics with South Asian warmth, Southeast Asian depth, and Hispanic/Latin American saturation; sun-exposed weathering on the face and forearms from decades of field research, creating visible tan contrast lines at the wrists and jawline",
+    "complexion": "Weathered around the eyes and mouth from squinting at instruments and concentrating; faint laugh lines; skin condition is healthy but lined; a few small scars on his hands from fieldwork accidents; facial structure shows refined South Asian bone geometry (prominent cheekbones, defined jaw) with the broader facial width of Northern European and Southeast Asian heritage, creating a distinctive angular-but-open face",
     "distinguishing_marks": [
       "Fine white scar along the inside of the right forearm (approximately 4cm), thin and barely visible, from the implant insertion site — now partially obscured by a faded tattoo of a lake cross-section profile in black ink",
       "Age spots on the back of both hands, barely noticeable",
@@ -217,15 +200,74 @@
     "posture_movement": "Moves with economical, deliberate gestures; walks slightly forward-leaning as if still listening to field instruments; sits with one hand always on a coffee cup or a data tablet; has the unconscious posture of someone used to explaining technical concepts to others — hands move often, shoulders open",
     "clothing_style": "Tier 2-3 blend: Sterling-Nakamura corporate field jacket (grey-green technical fabric with embedded sensor pockets) worn over a weathered henley or lab shirt; cargo pants with multiple utility pockets, some worn from use; expensive but scuffed field boots that have seen actual use; rarely wears the full Sterling-Nakamura corporate kit, preferring functional field wear. Accessories: a frayed paracord wristband, a water-resistant smartwatch, often a lanyard with a multifunction tool and research keycard. No jewelry except a plain titanium band on his left ring finger."
   },
-  "image_prompt": "Sterling Raghavan-Bautista-Achebe, 188cm tall man with warm medium-brown skin blending Northern European, Latin American, Sub-Saharan African, and South Asian heritage, dark brown hair with silver threading in trimmed beard, leaning forward with intense concentration, hands gesturing as if explaining research data. Distinctive patterned iris modification shifting amber-to-green in geometric concentric rings. Sterling-Nakamura grey-green field jacket over weathered henley, cargo pants, scuffed field boots. Faded lake cross-section tattoo visible on right forearm. Sitting at lab desk or field station with coffee cup and data tablet, cyberpunk 2226 Great Lakes Metropolitan setting, cool fluorescent and ambient neon lighting reflecting off his iridescent iris augmentations, weathered but focused expression, multiple decades of fieldwork evident in posture and wear, cinematic, ultra-detailed face, professional technical aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Sterling Raghavan-Bergqvist-Magnúsdóttir, 188cm tall mixed-heritage man with warm medium-brown skin and golden undertones, refined South Asian cheekbones and jawline softened by broader Northern European-Southeast Asian facial width. Dark brown hair with silver threading, neatly combed back with well-trimmed 1-2cm beard. Patterned iris modification shifting between amber and forest green with concentric ring geometry. Weathered complexion with sun-exposed tan lines at wrists and jaw, faint laugh lines, age spots on hands. Wearing Sterling-Nakamura grey-green technical field jacket over weathered henley, cargo pants with utility pockets, scuffed field boots. Frayed paracord wristband, smartwatch, research lanyard visible. Plain titanium band on left ring finger. Standing in dimly-lit corporate research facility or field lab setting, leaning slightly forward with hands open in explanation gesture, coffee cup nearby. GLMZ aesthetic, overhead neon-tinged lighting catching the iridescence of his modified eyes. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 39.1,
-    "Hispanic/Latin American": 31.3,
-    "Sub-Saharan African": 18.9,
-    "South Asian": 10.7
+    "Northern European": 41.9,
+    "South Asian": 29.3,
+    "Southeast Asian": 11.8,
+    "Hispanic/Latin American": 8.3,
+    "Middle Eastern": 8.1,
+    "Sub-Saharan African": 0.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 13.4,
+        "Norwegian": 7.6
+      },
+      "British Isles": {
+        "Irish": 11.5,
+        "English": 6.4
+      },
+      "Germanic": {
+        "Austrian": 0.5,
+        "German": 2.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Marathi": 10.6
+      },
+      "Nepali": {
+        "Nepali": 3.9
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 6.4,
+        "Baloch": 8.4
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 11.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 3.7
+      },
+      "South American": {
+        "Venezuelan": 3.5,
+        "Colombian": 1.1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 1.7,
+        "Syrian": 0.6
+      },
+      "Arab Gulf": {
+        "Emirati": 1.3,
+        "Iraqi": 4.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 0.6
+      }
+    }
+  }
 }

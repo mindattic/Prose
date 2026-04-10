@@ -12,7 +12,7 @@
   "age": 19,
   "status": "active",
   "location": "The Stockyard, operates from a leased bay in the Geartown industrial fringe, near Western and Chicago Ave",
-  "description": "Doru is nineteen years old and already has the hands of someone twice his age — scarred across the knuckles, always traced with grease that soap only partially removes, with a slight tremor in the left index finger from a pneumatic press accident last year that he never had properly treated. He is tall and lanky, still growing into himself, with warm brown skin, close-cropped natural hair, and a permanent squint from years of working under inadequate lighting. He has cat ear geneware — gray-tipped, slightly mobile — that he got at sixteen because all his friends were getting mods and it seemed like the thing to do; they're more expressive than he intends them to be, flattening when he's stressed in ways he can't control. He wears coveralls in various states of destruction and is almost always holding a tool.\n\nHe did not plan to be running a chop shop at nineteen. He planned to be doing legitimate Ferrogate maintenance, for which he has genuine talent, but the apprenticeship application was rejected twice — once for a juvie citation he got at fourteen, once for reasons that were given as 'candidate pool volume' and which he suspects have more to do with his address. The shop fell into his hands when its previous operator left GLMZ in a hurry and owed Doru's uncle a favor. He's good at the work. He's learning the business side faster than is comfortable. He is not yet sure if he's the kind of person who ends up staying in this life.",
+  "description": "Aarav Krishnamurthy is nineteen years old and already has the hands of someone twice his age — scarred across the knuckles, always traced with grease that soap only partially removes, with a slight tremor in the left index finger from a pneumatic press accident last year that he never had properly treated. He is tall and lanky, still growing into himself, with warm brown skin, close-cropped natural hair, and a permanent squint from years of working under inadequate lighting. He has cat ear geneware — gray-tipped, slightly mobile — that he got at sixteen because all his friends were getting mods and it seemed like the thing to do; they're more expressive than he intends them to be, flattening when he's stressed in ways he can't control. He wears coveralls in various states of destruction and is almost always holding a tool.\n\nHe did not plan to be running a chop shop at nineteen. He planned to be doing legitimate Ferrogate maintenance, for which he has genuine talent, but the apprenticeship application was rejected twice — once for a juvie citation he got at fourteen, once for reasons that were given as 'candidate pool volume' and which he suspects have more to do with his address. The shop fell into his hands when its previous operator left GLMZ in a hurry and owed Aarav Krishnamurthy's uncle a favor. He's good at the work. He's learning the business side faster than is comfortable. He is not yet sure if he's the kind of person who ends up staying in this life.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -177,7 +177,7 @@
     "Info Broker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -245,47 +245,28 @@
   "related_entities": [
     "Ferrogate Transit",
     "The Stockyard",
-    "GLMZ",
-    "Geartown",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Accidental",
+    "Geartown",
+    "Chicago",
     "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
     "The Pure Hand",
-    "Bashir Quansah-Mehrotra",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus LS-5 'Sentinel'",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Aïssé Dragomirescu-Faalelei",
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Devraj Solano-Yildirim",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Metro Bus",
-    "Free Assembly",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Lowline Press",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Drop",
-    "The Ledger",
-    "Uncle Noodle"
+    "Zara Bergqvist",
+    "Flux Strömqvist-Villalobos",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian, Southeast Asian, Northern European, Sub-Saharan African, and Middle Eastern blend; dominant South Asian and Southeast Asian features with minor Northern European and African ancestry contributing to overall complexion and facial structure",
+    "heritage": "Complex Ubiquitous Diaspora blend: South Asian dominant (38.9%) with strong Northern European (30.7%) and Eastern European (13.2%) contributions, supplemented by Sub-Saharan African (10.8%) and Middle Eastern (6.4%) ancestry. Results in warm medium-to-olive complexion with golden undertones, facial structure combining South Asian nose bridge and cheekbone definition with Northern European eye shape and brow structure, and Sub-Saharan African lip fullness creating a distinctly multicultural appearance characteristic of 23rd century genetic mixing",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lanky and still angular with the awkwardness of adolescent growth not yet settled into adult proportion; lean muscle across shoulders and forearms from years of repetitive work, minimal body fat, slight forward hunch from hunching over workbenches",
     "hair_color": "Natural dark brown, almost black",
     "hair_style": "Close-cropped, practical, maintained with clippers rather than scissors",
     "hair_length": "Short",
-    "eye_color": "Warm brown, slightly squinted at rest from chronic inadequate lighting exposure",
-    "skin_tone": "Warm medium brown with golden-amber undertones from South and Southeast Asian ancestry, deepened subtly by Sub-Saharan and Middle Eastern heritage",
-    "complexion": "Young face with premature wear around the eyes; permanent squint lines; acne scars on shoulders and upper back; perpetually grease-stained around the cuticles and under fingernails despite frequent washing; facial structure shows Southeast Asian cheekbone definition with South Asian nose bridge",
+    "eye_color": "Warm brown with amber undertones, slightly squinted at rest from chronic inadequate lighting exposure",
+    "skin_tone": "Warm olive-brown with golden-amber undertones; medium depth blending South Asian warmth with Northern European fairness, enriched by Sub-Saharan African and Middle Eastern contribution creating luminous, multi-layered undertone rather than single-origin appearance",
+    "complexion": "Young face with premature wear around the eyes; permanent squint lines; acne scars on shoulders and upper back; perpetually grease-stained around the cuticles and under fingernails despite frequent washing; facial structure shows blend of South Asian cheekbone prominence with widened nose bridge from Northern European ancestry, fuller lips reflecting Sub-Saharan African heritage, Eastern European brow structure, and warm Middle Eastern undertones creating harmonious cross-continental features",
     "distinguishing_marks": [
       "Pneumatic press scar across the dorsal surface of left hand between knuckles, jagged and poorly healed, approximately 4cm in length",
       "Scattered small burn marks on both forearms consistent with welding spatter and grinder discharge",
@@ -296,16 +277,64 @@
     "posture_movement": "Hunched posture from workbench hours; moves with functional efficiency rather than grace; left hand tremor noticeable when holding precision tools or during stress; cat ears twitch and flatten involuntarily during concentration or anxiety, betraying emotional state he may not otherwise show; default facial expression is a slight squint",
     "clothing_style": "Work-worn Tier 4-5 industrial aesthetic; heavily patched coveralls in faded blue or gray with custom pockets for tools, oil stains that won't wash out, burn holes from welding; plain synthetic t-shirt underneath, usually pit-stained; steel-toed boots scarred and scuffed from seven years of bay work; fingerless mechanics gloves held in back pocket or tucked into waistband; no jewelry or accessories beyond a battered analog wristwatch inherited from his uncle"
   },
-  "image_prompt": "Portrait of Aarav, a 188cm lean South Asian-Southeast Asian-European mixed heritage young man in cyberpunk 2226, medium golden-brown skin tone with prominent cheekbones, warm brown eyes with squint lines, short dark hair, expressive gray-tipped cat ear augmentations protruding from crown. Wearing faded oil-stained industrial coveralls with burn holes, plain synthetic undershirt, fingerless mechanic's gloves tucked in waistband, battered analog wristwatch. Visible pneumatic press scar on left hand dorsal surface, scattered burn marks on forearms, deep grease stains on knuckles. Hunched posture from workbench hours, slight forward slouch, chronic squint expression. Cat ears slightly flattened in concentration, hand tremor visible. Industrial workshop lighting casting hard shadows across scarred knuckles and faint subdermal scarring. Mood: exhausted, focused, ground down by repetitive labor. --ar 2:3 --v 6",
+  "image_prompt": "Aarav Krishnamurthy, 188cm tall lean androgynous young mechanic, warm olive-brown skin with golden undertones blending South Asian, Northern European, Eastern European, Sub-Saharan African and Middle Eastern ancestry, dark brown close-cropped hair, warm amber-brown squinted eyes, distinctive gray-tipped cat ears protruding from crown with feline expressiveness, angular multicultural facial features with prominent cheekbones and fuller lips, faint industrial scars on hands and forearms, perpetually grease-stained fingers, slight forward hunch from workbench posture, wearing heavily patched faded blue coveralls with oil stains and burn holes, plain stained synthetic shirt underneath, scarred steel-toed boots, fingerless mechanics gloves, battered analog wristwatch, tremor in left hand visible, hunched efficiency in movement, GLMZ industrial bay setting with harsh fluorescent and neon lighting casting shadows across work-weary features, gritty urban dystopian aesthetic, moody introspective expression with default squint, emotional state betrayed by twitching cat ears, highly detailed character study portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 38.0,
-    "Southeast Asian": 27.1,
-    "Northern European": 15.7,
-    "Sub-Saharan African": 11.5,
-    "Middle Eastern": 7.7
+    "South Asian": 38.9,
+    "Northern European": 30.7,
+    "Eastern European": 13.2,
+    "Sub-Saharan African": 10.8,
+    "Middle Eastern": 6.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 38.9
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 17.9
+      },
+      "Germanic": {
+        "German": 12.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 5.3,
+        "Czech": 4.1
+      },
+      "Slavic South": {
+        "Croatian": 1.9,
+        "Serbian": 1.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 0.7,
+        "Gabonese": 1
+      },
+      "East African": {
+        "Tanzanian": 0.3,
+        "Kenyan": 2.1
+      },
+      "Southern African": {
+        "Mozambican": 2.8,
+        "Zimbabwean": 3.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 3,
+        "Syrian": 0.7
+      },
+      "Kurdish": {
+        "Kurdish": 2.7
+      }
+    }
+  }
 }

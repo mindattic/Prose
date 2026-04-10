@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72c74b19097809b62868711",
   "type": "character",
-  "name": "Zara Tofauti",
+  "name": "Zara Zidane",
   "aliases": [
     "Yoli",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, Internal Affairs Division, Sub-Level 3",
-  "description": "Yolanda is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Metro Police plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nYolanda has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
+  "description": "Zara Zidane is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Metro Police plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nZara Zidane has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -181,7 +181,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,27 +239,15 @@
   "related_entities": [
     "Fort Anchor",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Ringo CP-2 'Constable'",
     "The Gradient Compact",
+    "Ringo CP-2 'Constable'",
     "Irontide Tidal Energy",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Corva Lam",
-    "GLMZ",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lockhaven North",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Pure Hand"
+    "SynapTech IrisBloom Ocular Color Modulator"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Southeast Asian with significant Pacific Islander ancestry, complemented by Middle Eastern, Sub-Saharan African, Eastern European, and Northern European heritage — a complex diaspora blend resulting in warm, rich undertones with subtle depth across multiple continental lineages",
+    "heritage": "Predominantly Eastern European (65.2%) with significant North African (16.3%) ancestry, complemented by East Asian (9.1%), Southeast Asian (6.6%), and Hispanic/Latin American (2.8%) heritage. This diaspora blend creates distinctive facial geometry: Eastern European bone structure anchors broad cheekbones and strong jawline; North African heritage adds warm depth and subtle nose bridge definition; East Asian ancestry refines eye shape and contributes to facial proportion balance; Southeast Asian and Hispanic/Latin American elements soften features with warmth and subtle golden undertones throughout.",
     "height_cm": 162,
     "weight_kg": 68,
     "build": "Compact and broad-shouldered with dense musculature — the build of someone who has maintained discipline through middle age. No softness; efficient.",
@@ -267,8 +255,8 @@
     "hair_style": "Close-cropped, parted slightly off-center, maintained with precision",
     "hair_length": "Short",
     "eye_color": "Augmented irises patterned in concentric rings of amber and dark brown, resembling tree rings — integrated microfilament sensors visible as fine metallic threading within the iris structure",
-    "skin_tone": "Warm amber-bronze with undertones reflecting Southeast Asian and Pacific Islander heritage, deepened by Sub-Saharan African ancestry, creating a rich honeyed complexion that holds light with depth",
-    "complexion": "Unlined for her age, minimal makeup, skin condition immaculate — suggests disciplined skincare regimen. Facial structure shows broader cheekbones and stronger jawline characteristic of Southeast Asian and Pacific Islander ancestry. Expression set in neutral default; smile does not reach augmented eyes.",
+    "skin_tone": "Warm olive-bronze with rich golden undertones. The complexion reflects the dominant Eastern European heritage (65.2%) warmed and deepened by North African ancestry (16.3%), with East Asian heritage (9.1%) adding luminosity and Southeast Asian warmth (6.6%) creating a complexion that holds light with understated radiance. The blend produces skin that reads as neither pale nor dark but distinctly warm—capable of holding both cool and warm cosmetics, naturally sun-receptive without harshness.",
+    "complexion": "Unlined for her age, minimal makeup, skin condition immaculate — suggests disciplined skincare regimen. Facial structure shows broad Eastern European cheekbones balanced with refined East Asian eye shape; slight North African nose bridge definition; warm, full lower face contours reflecting Southeast Asian and Hispanic/Latin American ancestry. Expression set in neutral default; smile does not reach augmented eyes.",
     "distinguishing_marks": [
       "Faint scar along left jawline, approximately 4cm, consistent with old blunt-force trauma — nearly invisible unless light hits at specific angle",
       "Subdermal data storage node visible as slightly raised rectangular outline at left inner wrist, approximately 2cm × 1cm, beneath skin but tactilely detectable"
@@ -277,17 +265,53 @@
     "posture_movement": "Moves with surgical efficiency — no wasted motion, no fidgeting. Shoulders squared, spine straight. Walks with measured pace. Hands remain still at rest. During conversation, maintains still facial expression while augmented eyes track micro-expressions in others with almost predatory focus.",
     "clothing_style": "Metro Police plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Φ800+ (tier 1 quality on tier 3 salary — indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
   },
-  "image_prompt": "Zara Tofauti, 162cm tall, compact powerful frame, silver close-cropped hair with precise part, warm amber-bronze skin tone reflecting Southeast Asian and Pacific Islander heritage with rich honeyed depth. Augmented tree-ring irises in amber and dark brown with visible microfilament threading. Sharp cheekbones, stronger jawline, faint scar barely visible on left jawline. Wearing pressed Metro Police plainclothes: tailored gray collar shirt, precise charcoal trousers with exact creases, premium leather shoes. Service chronometer visible. Standing in corporate office or precinct hallway, cool LED lighting casting subtle shadows across her face. Neutral expression, predatory focus in augmented eyes tracking others. Surgical posture, shoulders squared, surgical efficiency in every movement. No fidgeting, hands still at rest. Cyberpunk 2226, Great Lakes Metropolitan Zone, professional surveillance operative mood, dystopian government authority aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Zara Zidane, compact muscular woman of 162cm with silver close-cropped hair and warm olive-bronze skin reflecting Eastern European, North African, and East Asian heritage. Augmented eyes with concentric amber-brown rings and visible microfilament threading. Unlined complexion, broad cheekbones, refined East Asian eye shape, strong jawline. Faint scar along left jaw. Dressed in pressed Metro Police plainclothes: crisp gray collar shirt, perfectly creased trousers, expensive leather shoes. Surgical posture, squared shoulders, still hands, neutral expression. Service chronometer visible. GLMZ Great Lakes Metropolitan Zone setting, cool neon accent lighting catching the metallic threading in her augmented irises, sharp focus, professional portrait style, moody atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 41.2,
-    "Pacific Islander": 20.1,
-    "Middle Eastern": 15.0,
-    "Sub-Saharan African": 13.2,
-    "Eastern European": 5.7,
-    "Northern European": 4.8
+    "Eastern European": 65.2,
+    "North African": 16.3,
+    "East Asian": 9.1,
+    "Southeast Asian": 6.6,
+    "Hispanic/Latin American": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 53,
+        "Czech": 12.2
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Kabyle": 16.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.3
+      },
+      "Japanese": {
+        "Japanese": 1.8
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 6.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 1.5
+      },
+      "South American": {
+        "Ecuadorian": 0.5
+      },
+      "Mexican": {
+        "Mexican": 0.8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6657616bc7fe3471ee02c88",
   "type": "character",
-  "name": "Lark Cissé-Vaai",
+  "name": "Lark An-Sokolov",
   "aliases": [
     "Kem",
     "Uncle Kem"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Corner of Grainfort and Copperhead, operates the cart called 'Kem's Last Stop' under a permanent awning he put up without permission in 2187 and nobody has ever moved, near Milwaukee and Damen",
-  "description": "Nkemdirim Vasiljević-Tuiasosopo is a vast, gentle man — not fat exactly but large in the way of someone who has been cooking and eating well for forty years and considers this an achievement. His skin is deep brown with warm undertones, his hair gone fully silver and kept in loose shoulder-length locs he ties back with a strip of Polynesian-patterned cloth, his only vanity. He has no cosmetic augmentations. He has a subdermal temperature regulator in his left hand — a practical mod, pre-owned, bought used in 2178 to protect the hand from flash-burn when working open fire. He shows it off like a scar, not a status symbol.\n\nKem has occupied his corner for twenty-two years. His cart serves one broth — a long-simmered pork-and-tamarind base he calls his grandmother's recipe and which has evolved so far from any original source that it is entirely his own — in three sizes, with rotating toppings. He charges what people can pay and has never once written this policy down or discussed it openly. It simply occurs. He is sixty-one years old and has watched Grainfort go from a working industrial block to a half-empty corponation spillover zone, and he has a calm fury about this that surfaces unpredictably, usually when someone from outside the neighborhood tries to compliment the 'vibe.'",
+  "description": "Lark An-Sokolov is a vast, gentle man — not fat exactly but large in the way of someone who has been cooking and eating well for forty years and considers this an achievement. His skin is deep brown with warm undertones, his hair gone fully silver and kept in loose shoulder-length locs he ties back with a strip of Polynesian-patterned cloth, his only vanity. He has no cosmetic augmentations. He has a subdermal temperature regulator in his left hand — a practical mod, pre-owned, bought used in 2178 to protect the hand from flash-burn when working open fire. He shows it off like a scar, not a status symbol.\n\nKem has occupied his corner for twenty-two years. His cart serves one broth — a long-simmered pork-and-tamarind base he calls his grandmother's recipe and which has evolved so far from any original source that it is entirely his own — in three sizes, with rotating toppings. He charges what people can pay and has never once written this policy down or discussed it openly. It simply occurs. He is sixty-one years old and has watched Grainfort go from a working industrial block to a half-empty corponation spillover zone, and he has a calm fury about this that surfaces unpredictably, usually when someone from outside the neighborhood tries to compliment the 'vibe.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -171,7 +171,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Corner of Grainfort and Copperhead",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -191,33 +191,13 @@
     "Zheng-dao Bioelectric",
     "The Sluiceway",
     "NeuralPath VaultPay Subdermal Transaction Node",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
     "Silver",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Auntie Efe's Pot",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Irontide Tidal Energy",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech CLA-3 'Cascade'",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "Tafara Quiñones-Saarinen",
-    "The Burnished Market",
-    "The Gutter Prophets",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Witness"
+    "Corner Slice",
+    "IRONLIMB Spectre SV-4 Stealth Arm"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (29.1%), Central Asian (20.7%), Pacific Islander (17.1%), East Asian (14.7%), Northern European (14.4%), with Hispanic/Latin American ancestry (4.0%) — a complex global blend reflecting the Ubiquitous Diaspora. His features show the warmth of African heritage in his skin and eye structure, the broad bone structure influenced by Pacific Islander genetics, subtle Central Asian and East Asian facial characteristics in his cheekbones and eye shape, and Northern European contribution to his graying pattern and lighter undertones.",
+    "heritage": "East Asian (44.9%), Eastern European (28.8%), Middle Eastern (26.3%) — a striking blend from the Ubiquitous Diaspora reflecting deep heritage from across Eurasia. His features display the characteristic monolid eye shape and prominent cheekbones of East Asian ancestry, broadened and strengthened by Eastern European genetics in his jaw structure, with the warm golden undertones and subtle facial warmth influenced by Middle Eastern heritage. The combination creates a distinctive appearance that doesn't map to any single geographic origin — a living map of the Diaspora.",
     "height_cm": 188,
     "weight_kg": 112,
     "build": "Large-framed and broad-shouldered with substantial mass distributed evenly — soft thickness around the middle and chest from decades of tasting his own cooking, but strong-limbed beneath. Not sedentary; his forearms are visibly muscular from twenty-two years of repetitive cart work.",
@@ -225,8 +205,8 @@
     "hair_style": "Loose shoulder-length locs, tied back daily with a woven Polynesian-pattern cloth strip in blue and rust tones",
     "hair_length": "Long",
     "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Rich deep brown with complex warm undertones — the result of Sub-Saharan African, Central Asian, and Pacific Islander ancestry blending together. Weathered but supple from consistent sun exposure at the cart, with a slight golden undertone from his diverse genetic heritage.",
-    "complexion": "Lined face with deep creases around the eyes and mouth from decades of smiling and squinting into steam; facial structure shows the broad cheekbones and defined features influenced by his Pacific Islander and Central Asian ancestry combined with Sub-Saharan African heritage; a small scar on his left cheekbone from a burn sustained in the early 2190s; grooming is meticulous — he shaves his jaw clean twice weekly, maintains his locs carefully, no visible aging spots despite sun exposure",
+    "skin_tone": "Warm medium-tan with golden-amber undertones — the result of East Asian, Eastern European, and Middle Eastern ancestry blending together. Weathered but supple from consistent sun exposure at the cart, with a subtle richness and depth that speaks to his complex heritage.",
+    "complexion": "Lined face with deep creases around the eyes and mouth from decades of smiling and squinting into steam; facial structure shows the characteristic monolid eye placement and prominent cheekbones influenced by East Asian ancestry, broadened and strengthened by Eastern European genetics, warmed and softened by Middle Eastern heritage; a small scar on his left cheekbone from a burn sustained in the early 2190s; grooming is meticulous — he shaves his jaw clean twice weekly, maintains his locs carefully, no visible aging spots despite sun exposure",
     "distinguishing_marks": [
       "Burn scar on left cheekbone, silver-white, roughly 2cm long, angled downward — sustained during early cart operation",
       "Faint discoloration across the back of his left hand in a grid pattern, marking where the subdermal thermal regulator sits beneath the skin",
@@ -236,17 +216,44 @@
     "posture_movement": "Stands with the centered weight of someone rooted in place — his default is stillness at the cart, hands occupied with prep or serving. Moves slowly but with deliberation, never rushed. When he does move through the neighborhood, his gait is steady and authoritative; he owns his corner absolutely. His hands are expressive when he speaks, especially when discussing food or neighborhood change.",
     "clothing_style": "Tier 3 working-class practical: heavy cotton or canvas apron (rotates between 3-4, all stained with turmeric and tamarind residue) worn over loose linen shirts in muted colors — gray, tan, faded indigo. In cold months, a wool sweater he's owned for at least fifteen years. Kitchen clogs with reinforced soles, scuffed but well-maintained. No logos, no corp branding. A simple silver chain around his neck, twenty-two years old, a gift from someone he doesn't discuss. His only jewelry besides the chain is a worn brass ring on his right ring finger — origin unknown, never removed."
   },
-  "image_prompt": "Lark Cissé-Vaai, 188cm tall weathered man with rich deep brown skin and complex warm undertones from his Sub-Saharan African, Central Asian, and Pacific Islander heritage, silver-gray shoulder-length locs tied with blue and rust Polynesian cloth, dark brown observant eyes, lined face with decades of character creases and small burn scar on left cheekbone. Broad-shouldered muscular build softened by middle thickness, standing still and rooted at his food cart. Wearing faded indigo linen shirt under stained canvas apron with turmeric and tamarind discoloration, simple silver chain necklace, worn brass ring on right finger. Subdermal thermal regulator visible as subtle grid pattern on left hand dorsum. Kitchen clogs, meticulous grooming, expressive hands. Great Lakes Metropolitan Zone street-level setting, cyberpunk 2226, warm steam rising from cart, golden afternoon light catching his silver locs and weathered skin, moody atmospheric lighting, gritty urban backdrop with neon signage slightly blurred. Cyberpunk working-class aesthetic, no chrome augmentation visible, practical tier 3 worn dignity --ar 2:3 --v 6",
+  "image_prompt": "Lark An-Sokolov, 188cm tall broad-shouldered man with warm medium-tan golden-amber skin blending East Asian, Eastern European, and Middle Eastern heritage, monolid dark brown eyes, silver-white shoulder-length locs tied with blue and rust Polynesian cloth, aged weathered face with deep smile lines and small burn scar on left cheekbone, meticulous grooming, muscular forearms marked by years of cooking. Wearing faded indigo linen shirt under heavy stained cotton apron, worn kitchen clogs, simple silver chain necklace, brass ring on right hand showing faint grid pattern of subdermal thermal regulator. Standing centered and still at his food cart in the Great Lakes Metropolitan Zone, 2226, steam rising around him, golden afternoon light casting warm shadows across his face, surrounded by the glow of bioluminescent street markers, concentrated and present, hands ready to serve. GLMZ 2200s street food vendor, lived-in authenticity, no chrome, no corporate branding, complete presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 29.1,
-    "Central Asian": 20.7,
-    "Pacific Islander": 17.1,
-    "East Asian": 14.7,
-    "Northern European": 14.4,
-    "Hispanic/Latin American": 4.0
+    "East Asian": 44.9,
+    "Eastern European": 28.8,
+    "Middle Eastern": 26.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 44.9
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 13.4
+      },
+      "Slavic South": {
+        "Serbian": 8.3,
+        "Croatian": 7.1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 6.9,
+        "Palestinian": 5.6
+      },
+      "Persian": {
+        "Iranian": 2,
+        "Tajik Persian": 1.8
+      },
+      "Arab Gulf": {
+        "Iraqi": 6.6,
+        "Yemeni": 3.4
+      }
+    }
+  }
 }

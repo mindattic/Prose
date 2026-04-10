@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71c7f3f8f56093101c66611",
   "type": "character",
-  "name": "Kira Sigurdsson-Szczypiński",
+  "name": "Kira Hossain-Okonkwo",
   "aliases": [
     "Uplink",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Ximena Bautista-Nwosu are compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a bodyguard out of Old Harbor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nXimena Bautista-Nwosu have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
+  "description": "Kira Hossain-Okonkwo are compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a bodyguard out of Old Harbor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nKira Hossain-Okonkwo have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.17,
@@ -259,7 +259,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,37 +277,11 @@
     "Masquerade",
     "The Unfinished Theorem",
     "The Gradient Compact",
-    "Adaptive Camouflage Skin",
-    "Alper Lebedev-Tutu",
-    "Amara Osei-Dzhaparidze",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Ezio Kaboré-Malhotra",
-    "Flicker",
-    "GLMZ",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nnenna Vásquez-Kuosmanen",
-    "Old Harbor",
-    "Prophet",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "TERMINUS",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko"
+    "Harbor Fish Shack"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Eastern European (41.4%) with substantial South Asian (34.3%) and Northern European (22.1%) ancestry, plus minor Hispanic/Latin American (2.2%) — a complex genetic tapestry reflecting the Ubiquitous Diaspora. The result is a striking blend: warm medium-brown skin with subtle golden undertones, high cheekbones suggesting both Slavic and South Asian ancestry, and a bone structure that combines Eastern European angularity with South Asian facial geometry.",
+    "heritage": "Truly global ancestry: Hispanic/Latin American (29.1%), Sub-Saharan African (21.9%), South Asian (21.5%), Eastern European (16.4%), and East Asian (11.1%). A striking synthesis of multiple continental genetic signatures — warm medium-brown skin with golden undertones reflecting the blend of South Asian melanin and Latin American heritage, high cheekbones suggesting South Asian and Eastern European structure, angular jaw from Eastern European ancestry softened by the broader facial geometry of Sub-Saharan and South Asian lineages, and subtle East Asian influence in eye shape and cheekbone prominence.",
     "height_cm": 163,
     "weight_kg": 68,
     "build": "Compact and densely muscled, low center of gravity — every gram is functional mass. Shoulders broad relative to frame, legs thick and powerful. Built like someone engineered to absorb and deliver impact.",
@@ -315,8 +289,8 @@
     "hair_style": "Short, practical fade — easy to maintain between jobs, no loose ends to grab",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint luminescent flicker around the iris — subcutaneous optical enhancement, barely visible in daylight",
-    "skin_tone": "Warm medium brown — a blend of South Asian and Eastern European melanin profiles, with golden undertones. Complexion is even and clear across the frame, with a subtle luminescence from active dermal camouflage substrate beneath the epidermis.",
-    "complexion": "Angular face with high cheekbones and a squared jaw — the cheekbones carry South Asian prominence while the jaw line reflects Eastern European bone structure. Skin appears almost metallic in certain light due to active dermal camouflage layer beneath the epidermis. Small scar through left eyebrow from a blade. Minimal grooming beyond function — no jewelry, no cosmetics, no softening gestures.",
+    "skin_tone": "Warm medium brown — a rich blend of Sub-Saharan, South Asian, Hispanic/Latin American, and Eastern European melanin profiles, with golden undertones. Complexion is even and clear across the frame, with a subtle luminescence from active dermal camouflage substrate beneath the epidermis.",
+    "complexion": "Angular face with high, prominent cheekbones reflecting South Asian and East Asian ancestry, squared jaw from Eastern European lineage, and subtle broader facial geometry from Sub-Saharan heritage. Skin appears almost metallic in certain light due to active dermal camouflage layer beneath the epidermis. Small scar through left eyebrow from a blade. Minimal grooming beyond function — no jewelry, no cosmetics, no softening gestures.",
     "distinguishing_marks": [
       "Thin vertical scar through left eyebrow, approximately 3cm long, pale and old",
       "Faint chromatic patterning visible across shoulders and collarbone when dermal camouflage activates — hexagonal pixel-like arrays that ripple under skin",
@@ -326,15 +300,55 @@
     "posture_movement": "Moves with controlled economy — no wasted motion. Stands slightly off-center, weight favoring left leg, right side angled for quick access to forearm link. Head tracking is precise and methodical; they scan rooms like threat assessment is automatic. Default expression is neutral, almost serene, but eyes are always working. Handshake is firm but not aggressive. In motion, they move like something wound tight.",
     "clothing_style": "Tier 3-4 pragmatism: reinforced cargo pants (charcoal gray, multiple pockets, ballistic weave subtle), form-fitting undershirt (synthetic blend, heat-dissipating), modular overjacket (dark matte finish, removable sleeves, internal holster points). Boots are mil-spec, broken in, with steel toe caps. No corporate logos. No affectation. All clothing has concealment pockets and retention points. Between jobs, they wear nearly identical outfits in neutral tones — easier to maintain cover identity if you never change the pattern."
   },
-  "image_prompt": "Cyberpunk 2226, Kira Sigurdsson-Szczypiński — compact, muscular figure with warm medium-brown skin and golden undertones blending Eastern European and South Asian ancestry. High Slavic cheekbones with South Asian geometry. Dark eyes with faint luminescent enhancement. Short fade haircut with subtle chrome flecks. Thin old scar through left eyebrow. Dermal camouflage substrate glimmers iridescently across shoulders — hexagonal pixel patterns barely visible. Chrome smartgun link integration seamless at right wrist. Wearing charcoal cargo pants with ballistic weave, form-fitting synthetic undershirt, dark modular overjacket with removable sleeves. Mil-spec boots. Standing slightly off-center, weight favoring left leg, threat-assessment posture. Neutral serene expression but eyes constantly scanning. Great Lakes Metropolitan Zone night setting — cool neon reflections on dark matte clothing, dermal sheen catching cyan and violet light. Cinematic, tactical, precise. --ar 2:3 --v 6",
+  "image_prompt": "Kira Hossain-Okonkwo, 163cm compact athletic build, warm medium-brown skin with golden undertones blending Sub-Saharan, South Asian, Hispanic, Eastern European, and East Asian heritage. High cheekbones, angular squared jaw, subtle iridescent sheen on skin from active dermal camouflage layer. Thin pale scar through left eyebrow. Dark brown eyes with faint luminescent flicker. Short dark brown hair with chrome flecks. Standing off-center with weight favoring left leg, posture wound tight and controlled. Wearing charcoal reinforced cargo pants, heat-dissipating undershirt, dark matte modular overjacket with removable sleeves, mil-spec broken-in boots with steel toe caps. Visible chrome smartgun link integration at right wrist forearm. Professional mercenary operative in GLMZ. Neutral serene expression, precise head tracking, automatic threat assessment posture. Neon-lit industrial setting with moody blue-and-amber overhead lighting emphasizing the subtle iridescence of dermal camouflage. Cinematic, gritty, professional. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 41.4,
-    "South Asian": 34.3,
-    "Northern European": 22.1,
-    "Hispanic/Latin American": 2.2
+    "Hispanic/Latin American": 29.1,
+    "Sub-Saharan African": 21.9,
+    "South Asian": 21.5,
+    "Eastern European": 16.4,
+    "East Asian": 11.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 15.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 4.9,
+        "Cuban": 9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 18.7,
+        "Angolan": 3.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 13.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 11.2,
+        "Ukrainian": 5.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 6.6
+      },
+      "Japanese": {
+        "Japanese": 4.5
+      }
+    }
+  }
 }

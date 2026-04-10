@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62e7e7580848bb67a1f7b88",
   "type": "character",
-  "name": "Delta Kovács-Venkatesh-Kabwit",
+  "name": "Delta Petelo-Faalele-Tofauti",
   "aliases": [
     "Kinetic",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Division",
-  "description": "Ilhan Sandstrom-Badu is compact and densely muscled, built low to the ground like something designed to survive impacts. At 35, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a tech retriever out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Ilhan Sandstrom-Badu describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Delta Petelo-Faalele-Tofauti is compact and densely muscled, built low to the ground like something designed to survive impacts. At 35, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a tech retriever out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Delta Petelo-Faalele-Tofauti describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.48,
@@ -260,7 +260,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Rookery",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,30 +276,11 @@
     "The Nearfield",
     "The Gradient Compact",
     "Slagworks Industrial",
-    "Gravimetric Collapse Charge GCC-9",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Oumarou Svec-Ranginui",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Spire Light on Still Water",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: 34% Sub-Saharan African (warm undertones, defined bone structure), 23% Eastern European (angular features, fair undertone base), 18% Hispanic/Latin American (warm melanin distribution), 16% South Asian (eye shape, cheekbone prominence), 7% Northern European (jaw definition), 2% North African (skin warmth). Genetic ancestry creates rich medium-warm complexion with multiple undertone layers — olive-bronze fusion with warm golden undertones.",
+    "heritage": "Delta's ancestry is a striking Pacific Islander foundation (56.8%) creating warm, luminous melanin with golden undertones, substantially deepened by Sub-Saharan African heritage (9.9%) that adds richness and defined bone structure. South Asian ancestry (17.4%) contributes the prominent, high cheekbones and distinctive eye shape. Middle Eastern (9.9%) and Hispanic/Latin American (6.0%) heritage layer additional warmth and undertone complexity throughout. The result is a medium-to-deep warm complexion with bronze-gold fusion and sophisticated multi-layered undertones — distinctly Polynesian-influenced with South Asian definition and African depth.",
     "height_cm": 162,
     "weight_kg": 68,
     "build": "Compact and densely muscled, low center of gravity with broad shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach — every visible muscle has definition but not bulk.",
@@ -307,8 +288,8 @@
     "hair_style": "Pulled back in a tight, functional braid secured with steel wire",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Chrome iris rings surrounding dark brown natural eyes — thermal and low-light augmentation visible as faint LED glow in dim conditions",
-    "skin_tone": "Warm medium tone with olive-bronze fusion, richer melanin distribution reflecting Sub-Saharan and South Asian ancestry, subtle golden warmth from Hispanic/Latin heritage, cooler undertones at temples from Eastern European genetics. Jaw and neck show slightly lighter undertones from the European percentage blend.",
-    "complexion": "Striking, angular face with high, prominent cheekbones reflecting South Asian and Sub-Saharan ancestry, sharp jawline from Eastern European heritage, and warm undertone richness across the full face. The skin around the cybernetic eye sockets shows faint surgical lines and slight chrome seepage. Grooming is functional and precise — no jewelry, no cosmetics.",
+    "skin_tone": "Warm deep-medium tone with rich bronze-gold luminosity, substantial melanin depth from Pacific Islander and Sub-Saharan ancestry, golden undertones dominant throughout, South Asian warmth in the mid-face creating cheekbone radiance, subtle warmth from Hispanic/Latin heritage layering chromatic depth. Skin appears luminous and multitonal rather than matte.",
+    "complexion": "Striking, angular face with high, prominent cheekbones reflecting Pacific Islander, South Asian, and Sub-Saharan ancestry, strong defined jawline with warm undertones, and rich bronze-gold complexion across the full face. The skin around the cybernetic eye sockets shows faint surgical lines and subtle chrome seepage. Grooming is functional and precise — no jewelry, no cosmetics.",
     "distinguishing_marks": [
       "Thin surgical scar running from left temple to cheekbone where the cybernetic eye was installed.",
       "Network of fine white scars across the knuckles and backs of both hands — impact marks from years of combat training.",
@@ -319,17 +300,77 @@
     "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Stands with weight balanced on the balls of her feet, ready to shift instantly. Resting posture is coiled rather than relaxed. Eyes track targets with mechanical smoothness. When engaging, her movements are sharp and deliberate, powered by the hydraulic augmentations.",
     "clothing_style": "Tier 3-4 utilitarian: matte-black reinforced synth-weave tactical jacket with hidden pocket architecture, form-fitted to avoid snagging. Underneath, charcoal compression undershirt with integrated cooling channels. Cargo pants in dark gray with reinforced stitching and magnetic tool fasteners at the thighs. Steel-toed boots with grip-enhanced soles — no logos, all function. A single item of visible non-utility clothing: a faded silver pendant worn under the shirt, just visible at the neckline."
   },
-  "image_prompt": "Cyberpunk 2226 combat specialist Delta Kovács-Venkatesh-Kabwit, 162cm compact muscular frame, warm medium-toned skin with olive-bronze undertones reflecting Sub-Saharan, Eastern European, South Asian and Latin heritage fusion. Sharp angular face, high cheekbones, defined jawline, dark hair in tight steel-wire braid. Cybernetic chrome iris rings around brown natural eyes glowing faint blue-green. Surgical scar left temple to cheekbone, network of white scars on knuckles, burn scar forearm. Matte-black reinforced tactical synth-weave jacket, charcoal compression undershirt, dark gray reinforced cargo pants, steel-toed boots. Hydraulic joint articulation visible at elbows and knees with metallic threading. Coiled ready stance, weight on balls of feet, mechanical eye tracking. Silver pendant visible at neckline. Functional, economical posture, no flourish. Neon-lit industrial GLMZ setting, cool blue and amber light casting shadows on tactical gear, cyberpunk noir atmosphere. Frontal three-quarter view. --ar 2:3 --v 6",
+  "image_prompt": "Delta Petelo-Faalele-Tofauti, 162cm tall, compact and densely muscled figure with low center of gravity, broad shoulders tapering to narrow waist. Medium deep warm skin tone with rich bronze-gold luminosity and multi-layered undertones from Pacific Islander, South Asian, Sub-Saharan African, Middle Eastern and Hispanic heritage. Striking angular face with high prominent cheekbones, strong defined jawline, faint surgical scar from left temple to cheekbone, dark brown hair with copper undertones pulled back in tight functional steel-wire secured braid. Cybernetic eyes with chrome iris rings and faint blue-green LED glow. Visible metallic threading around elbows and knees from hydraulic joint augmentations. Dark tactical utilitarian clothing: matte-black reinforced synth-weave jacket, charcoal compression undershirt, dark gray cargo pants with magnetic tool fasteners, steel-toed boots. Faded silver pendant visible at neckline. Coiled posture, economical precise movement, weight balanced on balls of feet. GLMZ Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool blue and amber accent lighting, mechanical precision in every gesture, ready stance. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 34.1,
-    "Eastern European": 22.6,
-    "Hispanic/Latin American": 17.9,
-    "South Asian": 16.3,
-    "Northern European": 7.1,
-    "North African": 2.0
+    "Pacific Islander": 56.8,
+    "South Asian": 17.4,
+    "Sub-Saharan African": 9.9,
+    "Middle Eastern": 9.9,
+    "Hispanic/Latin American": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 11.5,
+        "Tongan": 8.1
+      },
+      "Melanesian": {
+        "Ni-Vanuatu": 27.9
+      },
+      "Micronesian": {
+        "Palauan": 7.5,
+        "Kiribati": 1.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 1.4,
+        "Sindhi": 3.3
+      },
+      "Indian": {
+        "Gujarati": 1.6,
+        "Punjabi": 8.6
+      },
+      "Nepali": {
+        "Nepali": 2.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 6.2
+      },
+      "Southern African": {
+        "Zimbabwean": 1.2,
+        "South African": 0.1
+      },
+      "Central African": {
+        "Gabonese": 1.2,
+        "Cameroonian": 1.2
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Afghan Dari": 5.9
+      },
+      "Arab Gulf": {
+        "Kuwaiti": 4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 4
+      },
+      "Mexican": {
+        "Mexican": 0.9
+      },
+      "South American": {
+        "Colombian": 0.7,
+        "Peruvian": 0.4
+      }
+    }
+  }
 }

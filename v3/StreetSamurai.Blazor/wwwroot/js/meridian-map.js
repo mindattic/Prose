@@ -1,4 +1,4 @@
-// Meridian 88 map — Google Maps JS API with SnazzyMaps style + district overlays
+// GLMZ map — Google Maps JS API with SnazzyMaps style + district overlays
 window.meridianMap = {
     map: null,
     scriptLoaded: false,
@@ -298,7 +298,7 @@ window.meridianMap = {
             });
             marker._labelText = city.label;
             marker.addListener('mouseover', function () {
-                infoWindow.setContent('<div style="font-family:Outfit,sans-serif;padding:4px;"><strong style="color:#dc3545;">' + city.label + '</strong><br><span style="font-size:11px;color:#666;">Urban core — Meridian 88 corridor</span></div>');
+                infoWindow.setContent('<div style="font-family:Outfit,sans-serif;padding:4px;"><strong style="color:#dc3545;">' + city.label + '</strong><br><span style="font-size:11px;color:#666;">Urban core — GLMZ corridor</span></div>');
                 infoWindow.open(map, marker);
             });
             marker.addListener('mouseout', function () { infoWindow.close(); });

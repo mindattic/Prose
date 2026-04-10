@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6477f1bab8ab0d4818d65f5",
   "type": "character",
-  "name": "Drift Erikstad",
+  "name": "Drift Salazar",
   "aliases": [
     "K-D",
     "The Connector"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "North Branch Commons, operating from a shared legal aid clinic called the Hinge, near Damen and Armitage",
-  "description": "Kwame is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires — no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair — a different enameled lapel pin each day, always depicting a figure in motion.\n\nKwame is not a licensed lawyer — they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons — E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as 'augmented property' rather than employees — a legal grey zone that corponations exploit with systematic brutality.",
+  "description": "Drift Salazar is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires — no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair — a different enameled lapel pin each day, always depicting a figure in motion.\n\nDrift Salazar is not a licensed lawyer — they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons — E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as 'augmented property' rather than employees — a legal grey zone that corponations exploit with systematic brutality.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -184,7 +184,7 @@
     "Problem Solver": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "North Branch Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,39 +251,21 @@
     "The Gradient Compact",
     "Tessera Corponation",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Compass Rose",
-    "Djeneba Park-Traore",
-    "Flicker",
-    "Free Assembly",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kairos",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Parveen Saab-Quiñones",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Solina Barreto-Kiptoo",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Toivo Diallo-Achebe",
-    "Tshiamo Vukić-Arellano"
+    "Drift",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Sub-Saharan African and North African ancestry, minor Hispanic/Latin American and Eastern European admixture. Phenotype reflects the majority East Asian genetic contribution with visible blending from African and Mediterranean lineages — warm-toned skin with subtle golden undertones characteristic of East Asian-African admixture, facial structure showing East Asian bone geometry with broader nasal base and fuller lip structure from African heritage.",
+    "heritage": "Richly mixed heritage reflecting the Ubiquitous Diaspora: 44.2% Hispanic/Latin American, 25.6% Sub-Saharan African, 12.5% Middle Eastern, 11.5% Southeast Asian, with minor South Asian and East Asian components. Phenotype shows striking synthesis — warm medium-brown skin with golden and olive undertones from the Latin American and Middle Eastern base, enriched by Sub-Saharan African warmth and depth. Facial structure blends Latin American and Southeast Asian bone geometry (moderate cheekbones, balanced proportions) with broader nasal base and fuller lip structure from African heritage, subtle eye shape influenced by Southeast Asian genetics. The overall effect is a harmonious warm-toned complexion that reads as genuinely pan-global rather than regionally locked.",
     "height_cm": 165,
     "weight_kg": 58,
     "build": "Compact and economical, lean muscle density without bulk. A frame built for precision rather than presence — narrow shoulders, defined but not dramatic musculature, the physiology of someone who moves efficiently.",
+    "skin_tone": "Warm medium brown with golden and olive undertones, consistent across body — complexion reflects the genuine blending of Latin American, African, Middle Eastern, and Southeast Asian genetics without phenotypic sorting. Luminous undertones from Sub-Saharan African heritage create subtle warmth depth.",
+    "complexion": "Clear skin, very minimal visible blemishes. Fastidious grooming — balanced facial structure with moderate cheekbones and warm-toned skin, broader nasal base from African heritage, well-defined jawline with subtle fullness in lower face from Latin American genetics. Slightly wider eye shape with slight epicanthic fold variation from Southeast Asian heritage. A calm, composed face that reads as neutral by default; expression emerges through slight eye movement and mouth position rather than broad gesturing.",
     "hair_color": "Natural black with intentional fade-out to grey at the sides",
     "hair_style": "Close-trimmed locs, meticulously maintained, faded undercut on sides and back",
     "hair_length": "Short to medium (approximately 8cm at crown)",
     "eye_color": "Amber with geometric lattice pattern — deep golden-orange base with black angular tessellations overlaid across iris, non-reflective augmented tissue",
-    "skin_tone": "Warm medium brown with golden undertones, consistent across body — complexion reflects the blended genetics of East Asian base with Sub-Saharan African warmth and North African sun-deepening without visible phenotypic sorting",
-    "complexion": "Clear skin, very minimal visible blemishes. Fastidious grooming — balanced facial structure with East Asian-influenced cheekbones and eye shape, broader nasal base from African heritage, well-defined jawline. A calm, composed face that reads as neutral by default; expression emerges through slight eye movement and mouth position rather than broad gesturing.",
     "distinguishing_marks": [
       "Faint surgical line barely visible at left temple, approximately 3cm, where neural implant interface was installed — nearly invisible unless in direct light",
       "Small, precise scar on right knuckle (index finger) — consistent with paper-cut or archive work injury, barely noticeable"
@@ -292,17 +274,74 @@
     "posture_movement": "Economical and precise. Sits with spine aligned but not stiff. Walks with even weight distribution, minimal wasted motion. Hands remain relatively still until actively engaged in task. Stillness is their default state — they appear to be listening even when silent. When speaking, movements are deliberate and calibrated to exact meaning.",
     "clothing_style": "Dark, clean-lined, purposefully minimal. Typically black or charcoal trousers (tailored, mid-tier synthesis fabric), crisp button-up shirts in white, grey, or pale blue. Minimal branding. Neat closed-toe shoes suitable for walking client-heavy neighborhoods. The single daily variation is an enameled lapel pin (approximately 2cm diameter) depicting figures in motion — geometric runners, dancers, turning bodies, reaching arms. Pins rotate daily and appear hand-collected. No jewelry beyond the pins. Functional tote or messenger bag in dark canvas. Tier 3 aesthetic: professional without claiming wealth, precise without performative minimalism."
   },
-  "image_prompt": "Drift Erikstad, a compact and lean 165cm figure with warm medium-brown skin with golden undertones reflecting East Asian-African-Mediterranean heritage blend. Close-trimmed black locs with grey fade at sides, faded undercut. Striking augmented eyes with geometric amber lattice pattern overlaid on deep golden irises. Balanced facial structure with East Asian cheekbone geometry and broader nasal base from African lineage, composed and neutral expression. Impeccably groomed, minimal visible scars barely noticeable. Wearing tailored charcoal trousers and crisp pale blue button-up shirt, dark canvas messenger bag, neat closed-toe shoes. Small enameled lapel pin depicting geometric figures in motion. Standing in a neon-lit Great Lakes Metropolitan Zone data district, cyberpunk 2226, cool atmospheric lighting catching the lattice patterns in augmented eyes. Posture economical and precise, stillness and quiet attentiveness. Professional, minimalist aesthetic without ostentation. Slight haze of synthesized rain, distant holographic signage casting blue-green light across face. --ar 2:3 --v 6",
+  "image_prompt": "Drift Salazar, 2226 neo-noir, compact 165cm figure with lean economical build, warm medium-brown skin with golden and olive undertones blending Latin American, African, Middle Eastern, and Southeast Asian heritage. Short black locs with grey fade at sides, precisely maintained undercut. Calm composed face with moderate cheekbones, broader nasal base, subtle Southeast Asian eye shape. Striking augmented amber eyes with geometric black lattice pattern tessellating across iris. Fastidious grooming, minimal visible augmentations aside from patterned irises. Wearing crisp white button-up shirt and charcoal tailored trousers, black closed-toe shoes, dark canvas messenger bag. Enameled lapel pin with geometric figures in motion. Posture perfectly aligned and economical, hands still and composed, expression neutral with quiet intensity. Standing in modern GLMZ district, cool neon-accented overhead lighting casting subtle shadows across face, emphasizing the geometric iris pattern. Minimalist professional aesthetic, precise without ostentation, listening posture despite stillness. GLMZ 2200s, corporate archive worker aesthetic, composed and efficient. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 59.4,
-    "Sub-Saharan African": 13.6,
-    "North African": 12.4,
-    "Hispanic/Latin American": 7.6,
-    "Eastern European": 5.6,
-    "Northern European": 1.4
+    "Hispanic/Latin American": 44.2,
+    "Sub-Saharan African": 25.6,
+    "Middle Eastern": 12.5,
+    "Southeast Asian": 11.5,
+    "South Asian": 3.5,
+    "East Asian": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 29.5
+      },
+      "Central American": {
+        "Honduran": 4.8,
+        "Nicaraguan": 1.5
+      },
+      "South American": {
+        "Colombian": 0.7,
+        "Brazilian": 7.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 13.2
+      },
+      "Central African": {
+        "Cameroonian": 2
+      },
+      "Southern African": {
+        "Mozambican": 10.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 11.7,
+        "Tajik Persian": 0.8
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 8.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 3.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.9,
+        "Sinhalese": 0.3
+      },
+      "Indian": {
+        "Marathi": 0.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 2.7
+      }
+    }
+  }
 }

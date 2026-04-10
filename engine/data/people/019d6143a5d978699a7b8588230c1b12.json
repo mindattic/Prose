@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d978699a7b8588230c1b12",
   "type": "character",
-  "name": "Bogdana Szabó",
+  "name": "Bogdana Ngo",
   "aliases": [
     "Thorn",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near LaSalle and Madison",
-  "description": "Chiamaka Arai-Ofori-Atta is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 43, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Meridian Station, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Chiamaka Arai-Ofori-Atta lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Bogdana Ngo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 43, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Meridian Station, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Bogdana Ngo lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.27,
@@ -261,7 +261,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,34 +275,15 @@
   "registered_firearms": [],
   "related_entities": [
     "The Unfinished Theorem",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Slagworks Industrial",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Oumarou Svec-Ranginui",
-    "Quilt",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA PA-5 'Attendant'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Skinners",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "South Asian and Eastern European with Northern European admixture — a striking blend producing warm golden-brown skin tones with subtle olive undertones characteristic of the Ubiquitous Diaspora. The genetic mix yields distinctive facial architecture.",
+    "heritage": "Complex global ancestry reflecting the Ubiquitous Diaspora: Southeast Asian (26%), Eastern European (18.5%), Northern European (17.4%), South Asian (17%), Middle Eastern (12.6%), and Sub-Saharan African (8.5%). This genetic confluence produces a striking phenotype — warm golden-brown skin with olive and amber undertones, wide-set eyes reflecting continental diversity, and facial architecture that blends Southeast Asian cheekbone prominence with Eastern European angularity and Middle Eastern nasal character. The Sub-Saharan African ancestry contributes subtle warmth and luminosity to the complexion.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Rawboned and lean — economical frame suggesting decades of calculated living rather than deprivation. Muscle definition visible in forearms and shoulders, but overall spare, efficient. The kind of body that moves without wasted motion.",
@@ -310,8 +291,8 @@
     "hair_style": "Cropped close to the skull, maintained with military precision",
     "hair_length": "Short",
     "eye_color": "Cybernetic — chrome iris rings surrounding dark pupils, capable of thermal overlay and low-light enhancement. The rings glow faintly amber when net-jacked",
-    "skin_tone": "Golden-brown with warm undertones — the product of South Asian dominance (46.7%) blended with Eastern European (39.3%) and Northern European (14.0%) ancestry, creating luminous skin that catches light distinctly",
-    "complexion": "Weathered without being aged. Strong cheekbones with subtle South Asian definition, sharp jawline with Eastern European angularity. Eyes are set wide, reflecting the ancestry mix. Minimal facial hair — kept to a precise shadow. Fine creases around the eyes and mouth suggest more scowling than smiling. Skin shows the wear of a life lived in transition, but maintains the inherent luminosity of the genetic blend.",
+    "skin_tone": "Warm golden-brown with amber and olive undertones — the luminous product of blended Southeast Asian, South Asian, and Sub-Saharan African genetics tempered by Northern and Eastern European ancestry. Creates a complexion that appears to absorb and reflect light distinctly, warm yet sophisticated.",
+    "complexion": "Weathered without being aged. Strong prominent cheekbones with architectural definition reflecting South and Southeast Asian heritage, sharp jawline with Eastern European angularity. Wide-set eyes positioned slightly deep, reflecting genetic diversity. Nose bridge shows subtle Middle Eastern character with slight curvature. Subtle warmth to the undertone from Sub-Saharan African ancestry visible in how light plays across the planes of the face. Minimal facial hair — kept to a precise shadow. Fine creases around the eyes and mouth suggest more scowling than smiling. Skin shows the wear of a life lived in transition, but maintains inherent luminosity.",
     "distinguishing_marks": [
       "Surgical scar at the base of his skull, barely concealed by cropped hair — the entry point for the neural interface jack, approximately 3cm in length, pale against his golden-brown skin tone",
       "Network of thin white scars across the inside of both forearms — old nerve damage from early augmentation rejection, barely visible unless examined closely",
@@ -321,14 +302,83 @@
     "posture_movement": "Moves with contained economy — no flourish, no wasted gesture. Stands with weight forward slightly, ready to shift direction. Keeps hands visible. Eye contact is deliberate and sustained, unsettling in its consistency. Speech is sparse; long silences don't make him uncomfortable. Breathing is steady and controlled even under stress.",
     "clothing_style": "Tier 3-4 pragmatism. Dark neutral colors — charcoal, matte black, dark gray. Modular jacket with reinforced shoulder panels and hidden pocket architecture. Cargo pants with subtle cargo pockets designed for quick access and discrete carry. Black composite-soled boots suitable for extended standing or rapid movement. Minimal branding — functional only. A single piece of jewelry: a worn silver ring on his right index finger, no visible inscription. Clothing is maintained but not pristine — the wear pattern of functional gear, not fashion."
   },
-  "image_prompt": "Bogdana Szabó, tall lean operator with golden-brown skin (South Asian-Eastern European blend), standing in shadow of neon-lit GLMZ corridor, year 2226. Dark cropped hair with gray at temples, military precision. Cybernetic chrome iris rings glowing faintly in shadowed face, sharp cheekbones, precise jaw shadow. Surgical scar visible at base of skull beneath cropped hair. Wearing dark charcoal modular jacket with reinforced shoulders, cargo pants, black composite boots. Worn silver ring on right index finger. Contained economy of movement, weight forward, direct unsettling eye contact. Pale surgical scars barely visible on forearms. Faded hand-shaped burn scar on right shoulder blade. Sparse presence, controlled breathing. Neon casting amber and cyan light across face, dramatic cyberpunk atmospheric lighting, no wasted motion. Net-jacked neural interface jack visible. Functional pragmatist gear worn but maintained. --ar 2:3 --v 6",
+  "image_prompt": "Bogdana Ngo, 188cm tall lean figure with warm golden-brown complexion and olive undertones, standing in GLMZ setting. Dark cropped hair with gray threading at temples. Striking wide-set cybernetic eyes with chrome iris rings glowing faintly amber. Strong Southeast Asian cheekbones with Eastern European angularity, subtle Middle Eastern nose character. Weathered face with fine creases, surgical scar barely visible at base of skull. Wearing dark charcoal modular jacket with reinforced shoulders, cargo pants, black composite boots. Silver ring on right index finger. Posed with contained economy of movement, weight forward, deliberate eye contact. Net-jacked neural interface visible. Dark urban environment with neon accent lighting catching the chrome iris rings. Professional operative aesthetic, no wasted motion. Moody atmospheric lighting, shadows across half the face. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 46.7,
-    "Eastern European": 39.3,
-    "Northern European": 14.0
+    "Southeast Asian": 26,
+    "Eastern European": 18.5,
+    "Northern European": 17.4,
+    "South Asian": 17,
+    "Middle Eastern": 12.6,
+    "Sub-Saharan African": 8.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 10.7
+      },
+      "Vietnamese": {
+        "Vietnamese": 10.8
+      },
+      "Indonesian": {
+        "Sundanese": 4.5
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 5.1
+      },
+      "Slavic East": {
+        "Ukrainian": 5.8
+      },
+      "Slavic West": {
+        "Polish": 7.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 1.7,
+        "English": 1
+      },
+      "Scandinavian": {
+        "Norwegian": 8.2,
+        "Swedish": 2.3
+      },
+      "Germanic": {
+        "Austrian": 4.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 14.7
+      },
+      "Pakistani": {
+        "Sindhi": 1.2,
+        "Baloch": 1.1
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 9.3
+      },
+      "Arab Gulf": {
+        "Yemeni": 1.3,
+        "Kuwaiti": 0.1
+      },
+      "Arab Levantine": {
+        "Lebanese": 1.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 2.6
+      },
+      "Central African": {
+        "Gabonese": 5.9
+      }
+    }
+  }
 }

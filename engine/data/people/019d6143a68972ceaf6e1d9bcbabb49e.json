@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68972ceaf6e1d9bcbabb49e",
   "type": "character",
-  "name": "Juno Fassi",
+  "name": "Juno Balogun",
   "aliases": [
     "Ozzie",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Gravesend Basin — operates from the back booth of a noodle stall called Mama Nkosi's Overflow, near Pulaski and Chicago Ave",
-  "description": "Ossian is a broad-shouldered man going soft around the middle, with dark Ewe-complexioned skin, a close-cropped silver beard, and the patient, unhurried eyes of someone who has learned that time is always on his side. His left hand is a prosthetic — matte-black carbon composite, articulated fingers that tap against tabletops in slow, deliberate rhythms when he's calculating. He dresses in well-maintained but unglamorous clothes: thick-weave trousers, a collared shirt perpetually rolled to the elbows, a canvas jacket with too many interior pockets. He smells faintly of cardamom tea and printer toner.\n\nOssian does not threaten. He explains. There is a profound difference, he will tell you, between a man who says 'pay me or else' and a man who lays out, with genuine sorrow, exactly what the mathematics of your situation require. He has a gift for making debt feel like a mutual inconvenience rather than a trap, right up until the moment it becomes inescapable. He is genuinely fond of his regulars and genuinely ruthless about his margins. He keeps meticulous paper ledgers — actual paper — because he doesn't trust any network he doesn't control.",
+  "description": "Juno Balogun is a broad-shouldered man going soft around the middle, with dark Ewe-complexioned skin, a close-cropped silver beard, and the patient, unhurried eyes of someone who has learned that time is always on his side. His left hand is a prosthetic — matte-black carbon composite, articulated fingers that tap against tabletops in slow, deliberate rhythms when he's calculating. He dresses in well-maintained but unglamorous clothes: thick-weave trousers, a collared shirt perpetually rolled to the elbows, a canvas jacket with too many interior pockets. He smells faintly of cardamom tea and printer toner.\n\nJuno Balogun does not threaten. He explains. There is a profound difference, he will tell you, between a man who says 'pay me or else' and a man who lays out, with genuine sorrow, exactly what the mathematics of your situation require. He has a gift for making debt feel like a mutual inconvenience rather than a trap, right up until the moment it becomes inescapable. He is genuinely fond of his regulars and genuinely ruthless about his margins. He keeps meticulous paper ledgers — actual paper — because he doesn't trust any network he doesn't control.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -176,7 +176,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,41 +237,15 @@
   "related_entities": [
     "Gravesend Basin",
     "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
-    "Adaeze Chen-Hawkins",
-    "Ossian",
-    "Silver",
-    "Palette",
-    "VitaCore DermaTone Adaptive Skin Pigment System",
     "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
-    "Arcturus GE-1 'Garrison'",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Cezar Watanabe-Gyasi",
-    "Chalk",
-    "Crucible Industries Garrison Rifle GR-5 'Rampart'",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Transit",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Single-20 'Farmhand'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kairos",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera Nexus Town Car",
-    "Tessera TKR-10 'Executor'",
-    "The Basin",
-    "The Ledger",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Silver",
+    "Haze Johansson",
+    "Ossian-B",
+    "VitaCore DermaTone Adaptive Skin Pigment System"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African with significant Hispanic/Latin American, Southeast Asian, and East Asian ancestry—a truly cosmopolitan genetic blend. His features reflect this diverse mix: warm amber-brown skin tone with golden undertones from the North African and Southeast Asian components, subtle angular cheekbones suggesting East Asian heritage, and the broader facial structure influenced by Hispanic/Latin American genetics.",
+    "heritage": "Sub-Saharan African (51.4%) with significant Eastern European (20.8%), Middle Eastern (15.4%), and Indigenous American (12.4%) ancestry. His features reflect this complex blend: deep rich brown skin with warm golden-amber undertones from the Sub-Saharan majority, Middle Eastern warmth, and Indigenous American heritage. Broad facial structure with pronounced cheekbones characteristic of African and Indigenous American lineage, combined with the defined jaw and brow structure inherited from Eastern European ancestry. The overall effect is a strikingly balanced face that shows the depth of global ancestry without favoring any single lineage.",
     "height_cm": 185,
     "weight_kg": 94,
     "build": "Broad-shouldered and muscular in youth, now softening through the middle with the settled weight of a man in his late forties who eats well and moves deliberately. Still imposing without effort.",
@@ -279,8 +253,8 @@
     "hair_style": "Close-cropped, meticulously maintained with electric clippers every four days",
     "hair_length": "Short",
     "eye_color": "Deep brown, patient and calculating",
-    "skin_tone": "Warm amber-brown with golden undertones, reflecting North African and Southeast Asian ancestry blended with Hispanic/Latin American warmth",
-    "complexion": "Clear, well-groomed skin showing minimal scarring with a subtle warm glow. A thin silver beard, closely trimmed, frames a wide jaw with slightly angular cheekbones. No visible blemishes or weathering — he takes care of himself. Expression typically neutral, mouth relaxed into something between a smile and a waiting silence.",
+    "skin_tone": "Deep warm brown with rich golden-amber undertones, reflecting the 51.4% Sub-Saharan African ancestry as the dominant heritage foundation, with subtle warmth from Middle Eastern (15.4%) and Indigenous American (12.4%) components, and the underlying cool undertones from Eastern European (20.8%) ancestry creating complexity in the overall tone",
+    "complexion": "Clear, well-groomed skin showing minimal scarring with a subtle warm glow and the suggestion of deeper undertones characteristic of mixed African-Eastern European heritage. A thin silver beard, closely trimmed, frames a wide jaw with broad, structured cheekbones that carry the width of African and Indigenous American ancestry balanced against the bone prominence of Eastern European lineage. No visible blemishes or weathering — he takes care of himself. Expression typically neutral, mouth relaxed into something between a smile and a waiting silence.",
     "distinguishing_marks": [
       "Thin white scar across the knuckles of his right hand, consistent with old financial disputes or industrial accident",
       "Faint chemical burns on his left inner wrist where the prosthetic interface meets skin — barely visible unless he rolls his sleeve",
@@ -290,15 +264,52 @@
     "posture_movement": "Sits more than he stands. When seated, he occupies space completely — elbows on the table, both hands visible (left hand tapping or folded), leaning slightly forward in full attention. When moving through Mama Nkosi's or making collection rounds, he walks slowly and with purpose, never hurrying, never looking rushed. His movements are economical — no wasted motion, everything calculated.",
     "clothing_style": "Tier 3-4 working professional, deliberately unglamorous. Thick-weave canvas trousers in charcoal or dark tan, often with a subtle stain near the hem from noodle-stall work. Collared shirts in muted colors (cream, pale blue, grey) rolled to mid-forearm to display both his natural hand and prosthetic in equal measure — a deliberate statement. Heavy canvas jackets with too many interior pockets, the kind a tradesman or accountant would wear. No logos, no chrome, no flash. Worn leather shoes with good soles, replaced annually. A small brass compass worn on a chain inside his shirt — not visible, but he touches it unconsciously when making decisions. Everything maintained, nothing fashionable."
   },
-  "image_prompt": "Juno Fassi, mid-forties, 185cm tall with a broad muscular frame softening at the middle, warm amber-brown skin with golden undertones, dark hair with silver threading worn close-cropped, deep patient brown eyes. Mixed North African and Southeast Asian features with angular cheekbones and broader facial structure. Sitting at a worn table in a noodle stall, leaning forward with both hands visible—left hand is matte-black carbon composite prosthetic with micro-joint seams and chrome wrist connector. Thin silver beard, neutral expression. Wearing rolled-forearm cream collared shirt and charcoal canvas trousers. Heavy canvas jacket with multiple pockets, worn leather shoes. Brass compass chain visible at neck. Dim warm ambient lighting from overhead neon signs, cyberpunk 2226 Great Lakes Metropolitan Zone setting, moody and deliberate atmosphere, slight tactile wear on his clothing. --ar 2:3 --v 6",
+  "image_prompt": "Juno Balogun, a contemplative man in his late forties of mixed global heritage with deep warm brown skin with golden-amber undertones, seated at a table in a GLMZ noodle stall circa 2226. Close-cropped dark hair with silver threading, thin silver beard framing a broad structured face. His left arm visible displays a matte-black carbon composite prosthetic hand with chrome wrist connector, articulated fingers ready for precise movement, seated beside his natural right hand. Wears a cream collared shirt rolled to mid-forearm, heavy canvas jacket with visible interior pockets, charcoal trousers showing subtle wear. Right hand knuckles bear a thin white scar, left inner wrist shows faint chemical burn marks at the prosthetic interface. Neutral expression, patient calculating gaze, elbows on table in full attention posture. Brass compass chain barely visible at shirt collar. Setting: dim neon-filtered lighting of Great Lakes Metropolitan Zone, condensation on windows behind him, the quiet tension of a man making important decisions. Mood: deliberate, calculated, economical movement. Neo-noir noir aesthetic, worn professional rather than chrome flash. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 34.3,
-    "Hispanic/Latin American": 23.4,
-    "Southeast Asian": 22.0,
-    "East Asian": 20.3
+    "Sub-Saharan African": 51.4,
+    "Eastern European": 20.8,
+    "Middle Eastern": 15.4,
+    "Indigenous American": 12.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 11.4,
+        "Guinean": 18.8
+      },
+      "Central African": {
+        "Congolese": 21.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 13.1
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 7.7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 5.8
+      },
+      "Arab Levantine": {
+        "Jordanian": 4.7
+      },
+      "Arab Gulf": {
+        "Emirati": 4.7,
+        "Yemeni": 0.2
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 10,
+        "Cherokee": 2.4
+      }
+    }
+  }
 }

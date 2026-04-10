@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63e731d9b4342c2d0364da8",
   "type": "character",
-  "name": "Zoya Kjellberg",
+  "name": "Hana Bhattacharya",
   "aliases": [
     "Xenon",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Kamala Fedorov-Ampofo are lean and angular, all sharp edges and visible tension. At 28, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a sniper out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Kamala Fedorov-Ampofo describe them as a precision instrument — point them at a problem and get out of the way.",
+  "description": "Hana Bhattacharya are lean and angular, all sharp edges and visible tension. At 28, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a sniper out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Hana Bhattacharya describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.46,
@@ -260,7 +260,7 @@
     "Ghost": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,30 +277,12 @@
     "The Unfinished Theorem",
     "Canopy Station Nine",
     "Geartown",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "GLMZ",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Lazarus LX-2 'Lab Rat'",
-    "Lazarus Pharmaceuticals",
-    "Malika Zhukov-Wiredu",
-    "Mika Sorel",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Prophet",
-    "Quilt",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "TESSERA CR-12 'Whisper'",
-    "The Canopy",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "Yusra Ntambwe-Cakić"
+    "Canopy",
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "East Asian (70.1%) with significant South Asian (25.7%) and minor Hispanic/Latin American (4.2%) ancestry — a complex diaspora blend resulting in distinctive facial structure and warm, nuanced skin tones",
+    "heritage": "South Asian foundation (78.3%) with significant Middle Eastern (13.4%), Indigenous American (6.2%), and minor Sub-Saharan African (2.1%) ancestry — a diaspora blend reflecting the genetic complexity of the 2226 Ubiquitous Diaspora. Strong South Asian facial structure with Middle Eastern warmth, subtle Indigenous American cheekbone prominence, and gentle depth from African ancestry creating complex, layered physiognomy.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Lean and angular with defined musculature — the physique of someone who trains obsessively. Minimal body fat, long limbs built for stillness and precision rather than raw power.",
@@ -308,8 +290,8 @@
     "hair_style": "Cropped close to scalp on sides, slightly longer on top — practical, minimal maintenance, exposes augmentation scarring deliberately",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Medium-warm complexion with golden-bronze undertones — the layered result of East Asian and South Asian heritage blended with subtle warmth from Hispanic/Latin American ancestry. Evenly textured, no redness or pallor.",
-    "complexion": "High, prominent cheekbones characteristic of East Asian ancestry, angular jaw with subtle definition from South Asian features, thin-lipped. Skin taut over bone structure. Minimal grooming beyond function — no cosmetics, no softening aesthetics. The face of someone who has optimized for efficiency.",
+    "skin_tone": "Medium-deep warm complexion with rich amber and golden undertones grounded in South Asian base, warmed by Middle Eastern influence, subtly deepened by Indigenous American and African ancestry. Evenly textured, luminous rather than matte.",
+    "complexion": "Strong, prominent cheekbones blending South Asian angularity with Indigenous American prominence, defined angular jaw characteristic of South Asian and Middle Eastern heritage, expressive mouth. Skin taut over bone. Minimal grooming beyond function — no cosmetics, no softening aesthetics. The face of someone who has optimized for efficiency.",
     "distinguishing_marks": [
       "Jagged silvered scar tissue spanning temples to jawline on both sides of skull — residual scarring from cortical bomb installation and subsequent removal by street doc, uneven and rough",
       "Fine white line running down center of sternum — surgical access point for synthetic blood integration",
@@ -319,14 +301,50 @@
     "posture_movement": "Stands with minimal wasted movement — shoulders slightly forward, weight balanced. Moves with deliberate precision, economical gestures. When still, they achieve an unsettling stillness — the kind trained shooters develop. Eyes constantly tracking distance and angles.",
     "clothing_style": "Tier 3-4 practical wear — fitted tactical pants with reinforced thigh panels and cargo pockets, layered synthetic long-sleeve tops in muted grays and blacks, a weathered synthetic leather overjacket without branding. No corpo logos. Boots are serious — heavy-duty treads, reinforced ankle support. Everything is maintenance-ready and durable over fashionable. Worn but meticulously clean."
   },
-  "image_prompt": "Zoya Kjellberg, 2226 cyberpunk operative, East Asian and South Asian heritage with golden-bronze warm skin tone, sharp angular features with high cheekbones, dark natural brown eyes. Short black hair cropped close on sides. Lean 172cm frame with minimal body fat and defined musculature. Jagged silvered scar tissue spanning both temples to jawline from cortical implant trauma, raw chrome augmentation points visible at temples and jaw. Fine white sternum scar. Faded burn mark on inner left forearm. Standing in deliberate stillness with shoulders slightly forward, weight balanced, eyes tracking angles. Wearing fitted gray tactical pants with reinforced panels, layered black synthetic long-sleeve top, weathered black synthetic leather jacket, heavy-duty reinforced boots. Minimal grooming, no cosmetics. Neon-lit industrial setting, cool blue and purple ambient light cutting across face, emphasizing scar tissue and chrome. Gritty, precise, efficient. --ar 2:3 --v 6",
+  "image_prompt": "Hana Bhattacharya, 2226 neo-noir operative, 172cm lean angular frame, medium-deep warm amber skin with South Asian cheekbones and subtle Indigenous American prominence, dark brown eyes tracking with predatory precision, short black hair cropped close on sides. Raw chrome augmentation interfaces visible at temples and jawline, jagged silvered scar tissue crossing both sides of skull from cortical implant removal. Minimal expression, taut skin over bone structure, unsettling stillness. Wearing muted gray layered synthetic tactical wear, weathered synthetic leather jacket, heavy-duty reinforced boots. Standing in neon-lit GLMZ alleyway, rain-slicked concrete, distant holographic ads casting blue and pink light across scarred face. Posture economical and controlled, shoulders slightly forward, the bearing of a trained operative at rest. Atmospheric neo-noir noir, cinematic lighting emphasizing augmentation points and scar tissue, focused and dangerous presence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 70.1,
-    "South Asian": 25.7,
-    "Hispanic/Latin American": 4.2
+    "South Asian": 78.3,
+    "Middle Eastern": 13.4,
+    "Indigenous American": 6.2,
+    "Sub-Saharan African": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 53.7,
+        "Tamil Sri Lankan": 24.6
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 5.7,
+        "Iranian": 7.7
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Mapuche": 0.7,
+        "Quechua": 0.3
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 5.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 0.9,
+        "Gabonese": 0.5
+      },
+      "East African": {
+        "Ethiopian": 0.5
+      },
+      "West African": {
+        "Ghanaian": 0.2
+      }
+    }
+  }
 }

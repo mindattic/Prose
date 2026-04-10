@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d17ada8562993bd8daa26c",
   "type": "character",
-  "name": "Vale Sigurdsson",
+  "name": "Vale Shirazi",
   "aliases": [
     "Cas",
     "The Tuner"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown, Gage Circuit, near Damen and Armitage",
-  "description": "Caspian is lean in the way of someone who forgets to eat, with warm brown skin, close-cropped dark hair, and irises that cycle through amber-to-green gradient depending on his mod's mood-reading settings — a gift from a client who couldn't pay in quanta. He dresses in soft, unthreatening fabrics (the neural calibration chair is already stressful enough) and keeps his workspace warm-lit and quiet, with small potted moss installations along the walls that patients are encouraged to touch. He has an almost preternatural ability to make people feel safe within minutes of meeting him.\n\nHe trained under Helix Biosystems' neural integration division but went independent when he realized corporate calibration protocols optimized for hardware performance rather than patient wellbeing — they wanted efficient augments, not healthy people. Now he runs a small private practice in Geartown, catering to working-class clients who've had cheap installs go wrong: phantom limb feedback, dream-layer bleed from neural laces, identity drift after major cognitive augmentation. He's part technician, part therapist, part grief counselor for people who don't recognize themselves anymore.",
+  "description": "Vale Shirazi is lean in the way of someone who forgets to eat, with warm brown skin, close-cropped dark hair, and irises that cycle through amber-to-green gradient depending on his mod's mood-reading settings — a gift from a client who couldn't pay in quanta. He dresses in soft, unthreatening fabrics (the neural calibration chair is already stressful enough) and keeps his workspace warm-lit and quiet, with small potted moss installations along the walls that patients are encouraged to touch. He has an almost preternatural ability to make people feel safe within minutes of meeting him.\n\nHe trained under Helix Biosystems' neural integration division but went independent when he realized corporate calibration protocols optimized for hardware performance rather than patient wellbeing — they wanted efficient augments, not healthy people. Now he runs a small private practice in Geartown, catering to working-class clients who've had cheap installs go wrong: phantom limb feedback, dream-layer bleed from neural laces, identity drift after major cognitive augmentation. He's part technician, part therapist, part grief counselor for people who don't recognize themselves anymore.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Diplomat": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,26 +249,16 @@
     "Void Ring VR-0 'Phantom Limb'",
     "Geartown",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Witness",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Circuit",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Neural Palate",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Amara Osei-Dzhaparidze",
-    "Arcturus PX-1 'Phantom'",
-    "Breck Tannen",
-    "Davi Ousseini-Brătianu",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Immaculée Dalgaard-Nwosu",
-    "Patient Zero",
-    "Phantom Limb",
-    "Philibert Mwangi-Djordjevic",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Drift"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant East Asian and Southeast Asian ancestry — a striking blend of West African and Southeast Asian phenotypes. Rich deep brown skin with warm undertones from the African heritage, refined by East Asian bone structure and subtle Southeast Asian features in facial geometry.",
+    "heritage": "Complex diaspora blend: 39.7% Middle Eastern and 39.6% Hispanic/Latin American form the foundation, with meaningful contributions from South Asian (7.6%), East Asian (7.5%), and Southeast Asian (5.6%) ancestry. This creates a warm, golden-brown complexion with the high cheekbones and angular structure characteristic of Middle Eastern and Hispanic heritage, softened by South Asian fullness through the lower face and subtle East/Southeast Asian eye shape. The result is a face that reads as genuinely pan-global — symmetrical, warmly toned, with dark expressive eyes that carry both Mediterranean intensity and East Asian depth.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and linear, almost ascetic — the body of someone whose nervous system consumes calories faster than his mouth remembers to eat. Slight forward shoulder curve from hours hunched over calibration interfaces.",
@@ -276,8 +266,8 @@
     "hair_style": "Close-cropped, precise fade maintained every three weeks at a Tier-3 barber on Milwaukee Ave",
     "hair_length": "Short",
     "eye_color": "Gradient mood-responsive: natural deep brown base cycling to amber-gold (calm), green (focused/engaged), or warm orange (stressed). Heterochromic effect increases under blue-spectrum light.",
-    "skin_tone": "Deep warm brown with golden undertones — rich complexion reflecting the 57% Sub-Saharan African ancestry, refined by the East and Southeast Asian heritage into a luminous, even tone across the face and body.",
-    "complexion": "Clean-shaven, minimal scarring except faint neural port scars at left temple (well-concealed unless he pulls his hair back). Slight caffeine-shadows under eyes. High cheekbones with subtle angularity from East Asian ancestry. Skin carries faint bioluminescent quality in dim light — barely perceptible blue-green glow in forearms and along jawline from experimental geneware.",
+    "skin_tone": "Warm golden-brown with honeyed undertones — the luminous result of Middle Eastern and Hispanic heritage blending with South Asian depth. Even tone across face and body, neither pale nor deeply dark, but richly warm with subtle golden radiance that catches light.",
+    "complexion": "Clean-shaven, minimal scarring except faint neural port scars at left temple (well-concealed unless he pulls his hair back). Slight caffeine-shadows under eyes. Strong angular cheekbones with warm depth reflecting the balanced Middle Eastern-Hispanic foundation, softened by South Asian fullness through the lower face and subtle East Asian eye geometry. Skin carries faint bioluminescent quality in dim light — barely perceptible blue-green glow in forearms and along jawline from experimental geneware.",
     "distinguishing_marks": [
       "Linear scar running 2cm behind left ear, surgical-clean, where first neural interface array was installed at age 22.",
       "Faint bioluminescence visible along both forearms in low-light conditions — no defined pattern, more like constellations of subcutaneous glow distributed along vein pathways.",
@@ -287,14 +277,61 @@
     "posture_movement": "Moves with deliberate slowness, as if perpetually conscious of not startling people in his chair. Sits forward slightly when listening, hands open and visible. Minimal fidgeting. Speaks in even, measured tone. Walks with careful, grounded steps — no wasted motion.",
     "clothing_style": "Tier-3 functional: soft linen and cotton blend tunics in warm neutrals (cream, sage, warm gray) layered over fitted undershirts. Loose-fitting canvas trousers in charcoal or navy. Worn leather ankle boots resoled three times. A single lab coat in natural cotton (not sterile white — warm off-white) hangs in his office. Minimal jewelry except a simple matte-black titanium bracelet worn over the bioluminescent forearm scar. Aesthetically communicates: 'I am not trying to impress you, I am trying to help you feel safe.'"
   },
-  "image_prompt": "Vale Sigurdsson, cyberpunk 2226, deep warm brown skin with golden undertones, high cheekbones reflecting East Asian ancestry, close-cropped black fade, gradient mood-responsive iris mod shifting between deep brown and amber-gold. Faint bioluminescent blue-green glow visible along forearms in dim lighting. Lean 178cm frame in soft cream linen tunic layered over fitted undershirt, loose charcoal canvas trousers, worn leather ankle boots. Matte-black titanium bracelet over bioluminescent scar. Clean-shaven with subtle neural port scars at left temple. Even, measured posture, hands visible and open, sitting forward slightly. Great Lakes Metropolitan Zone office setting, moody blue-spectrum lighting casting faint glow on skin augmentations, clinical but warm atmosphere, depth-of-field focus on his deliberate, calm presence. Cyberpunk minimalism, futuristic yet grounded aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Vale Shirazi, 178cm lean neo-noir technician with warm golden-brown skin reflecting Middle Eastern-Hispanic heritage blended with South Asian and East Asian ancestry. Deep brown eyes with artificial amber-gold gradient iris modification, visible under dim light. Clean-shaven angular face with high cheekbones and soft lower face structure. Black close-cropped fade haircut. Wearing soft cream linen tunic layered over fitted undershirt, charcoal canvas trousers, worn leather ankle boots. Matte-black titanium bracelet on wrist. Faint bioluminescent blue-green glow barely visible along forearms in low light. Subtle neural port scars at left temple. Posture is deliberate and grounded, hands visible and open. Setting: dimly-lit neural calibration clinic or tech workspace, cool blue-spectrum lighting revealing the subcutaneous bioluminescence. GLMZ, measured calm demeanor, professional care-giver aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 57.3,
-    "East Asian": 29.4,
-    "Southeast Asian": 13.3
+    "Middle Eastern": 39.7,
+    "Hispanic/Latin American": 39.6,
+    "South Asian": 7.6,
+    "East Asian": 7.5,
+    "Southeast Asian": 5.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 27.5,
+        "Jordanian": 12.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 33
+      },
+      "South American": {
+        "Colombian": 5.5,
+        "Ecuadorian": 1.1
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 0.5,
+        "Tamil Sri Lankan": 0.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.3
+      },
+      "Japanese": {
+        "Japanese": 2.3
+      },
+      "Chinese": {
+        "Hakka": 3.9
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 2.1
+      },
+      "Vietnamese": {
+        "Vietnamese": 3.5
+      }
+    }
+  }
 }

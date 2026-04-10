@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5de7ff7b7a030dfb0cfa2a3",
   "type": "character",
-  "name": "Chinwe Traoré",
+  "name": "Indigo Sisavath",
   "aliases": [
     "Old Constant",
     "Connie"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "The Shelf, Copperhead, near Western and Chicago Ave",
-  "description": "Constant is a large man gone thick through the middle, with the dark complexion and broad frame of his Zimbabwean lineage and his Bosnian grandfather's deep-set, heavy-lidded eyes that make him look perpetually half-asleep and perpetually unimpressed. His hair went white at forty and he has kept it cropped close ever since. He moves slowly on purpose — he has a fused vertebra from a freight accident in his fifties that he refuses to have properly treated because the surgery quote was insultingly high — and uses a custom cane he made himself from a Ferrogate Transit handrail he salvaged years ago. His shop on The Shelf is three connected units brimming with fifty years of accumulated objects: broken augmentations, pre-city antiques, industrial salvage, personal effects pawned in crisis moments, and a back room of things he has decided are not for sale regardless of price.\n\nConstant is one of those rare people who have become part of the architecture of a place. The Shelf without Constant's shop is not fully The Shelf. He has seen everything come and go — corporations, gangs, floods, market booms, building collapses — and he has the calm of someone who has been surprised by nothing for a very long time. He is not sentimental in any visible way, but he keeps things — objects that belonged to people who are gone — with a quiet fidelity that functions as memorial. He is honest about prices, blunt about valuations, and legendarily difficult to scam because he has already been scammed by everyone.",
+  "description": "Indigo Sisavath is a large man gone thick through the middle, with the dark complexion and broad frame of his Zimbabwean lineage and his Bosnian grandfather's deep-set, heavy-lidded eyes that make him look perpetually half-asleep and perpetually unimpressed. His hair went white at forty and he has kept it cropped close ever since. He moves slowly on purpose — he has a fused vertebra from a freight accident in his fifties that he refuses to have properly treated because the surgery quote was insultingly high — and uses a custom cane he made himself from a Ferrogate Transit handrail he salvaged years ago. His shop on The Shelf is three connected units brimming with fifty years of accumulated objects: broken augmentations, pre-city antiques, industrial salvage, personal effects pawned in crisis moments, and a back room of things he has decided are not for sale regardless of price.\n\nIndigo Sisavath is one of those rare people who have become part of the architecture of a place. The Shelf without Indigo Sisavath's shop is not fully The Shelf. He has seen everything come and go — corporations, gangs, floods, market booms, building collapses — and he has the calm of someone who has been surprised by nothing for a very long time. He is not sentimental in any visible way, but he keeps things — objects that belonged to people who are gone — with a quiet fidelity that functions as memorial. He is honest about prices, blunt about valuations, and legendarily difficult to scam because he has already been scammed by everyone.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -180,7 +180,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,30 +239,20 @@
     "The CEO",
     "Copperhead",
     "The Shelf",
-    "The Meridian Lock",
-    "Aslan Vasquez-Chatterjee",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Tessera Corponation",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Chicago",
-    "Isadora Mwangi-Thorvaldsen",
-    "Lazarus IDP-1 'Teeth'",
-    "NeuralPath FlowState Focus Regulator",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
+    "Lakefront Creamery",
     "Noir Dining",
-    "Sorin Ekwensi-Balasanyan",
-    "Stainless Steel",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "TESSERA PA-5 'Attendant'",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "Yannick Tofauti-Szarvásy"
+    "The Accidental",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "The Meridian Lock",
+    "Tessera Corponation",
+    "Chicago",
+    "Indigo",
+    "Honest Burger",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (36.9%), Sub-Saharan African (30.0%), Northern European (25.1%), East Asian (7.0%), and Hispanic/Latin American (1.0%) — a complex diaspora blend reflecting the Ubiquitous Mixing. His features show the confluence of Balkan, Central African, and Scandinavian ancestry with subtle East Asian undertones in his eye structure.",
+    "heritage": "Middle Eastern (35.5%), Southeast Asian (32.3%), Indigenous American (17.9%), South Asian (10.8%), and Sub-Saharan African (3.5%) — a complex diaspora blend reflecting the Ubiquitous Mixing. His features show the confluence of Levantine, Thai, Quechua, and Bengali ancestry with warm, golden undertones across his entire complexion, enriched by subtle Sub-Saharan warmth.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Large-framed and thick through the middle with age; broad shoulders and chest from decades of manual labor, now softened by advancing age and sedentary shop work. Carries weight low in his abdomen.",
@@ -270,8 +260,8 @@
     "hair_style": "Cropped close to the scalp, neatly maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown (natural); right eye shows faint amber luminescence from reading magnification implant during low-light use",
-    "skin_tone": "Medium-deep warm brown with golden undertones — a balanced blend of Sub-Saharan African and Northern European ancestry. Sun-weathered and marked from decades in The Shelf's industrial micro-climate, with visible age-related hyperpigmentation spots.",
-    "complexion": "Lined face with deep-set, slightly hooded eyes showing the influence of Eastern European and East Asian heritage — giving a perpetually thoughtful, measured expression. Broad nose with subtle width reflecting his African and Balkan ancestry. Jowls beginning to soften the jawline. Sparse stubble, salt-and-pepper in his beard shadow. Skin shows minor scars and age spots consistent with seven decades in heavy commerce.",
+    "skin_tone": "Warm deep brown with golden-olive undertones — a balanced blend of Middle Eastern, Southeast Asian, South Asian, and Indigenous American ancestry, enriched by Sub-Saharan warmth. Sun-weathered and marked from decades in The Shelf's industrial micro-climate, with visible age-related hyperpigmentation spots.",
+    "complexion": "Lined face with deep-set, slightly hooded eyes showing the influence of Middle Eastern and Southeast Asian heritage — giving a perpetually thoughtful, measured expression. Broad nose with rounded structure reflecting his Southeast Asian, South Asian, and Indigenous American ancestry. Prominent cheekbones with subtle width across the face characteristic of Andean heritage. Jowls beginning to soften the jawline. Sparse stubble, salt-and-pepper in his beard shadow. Skin shows minor scars and age spots consistent with seven decades in heavy commerce.",
     "distinguishing_marks": [
       "Thin horizontal scar along his lower left ribs, pale and well-healed, from the freight accident at fifty-five",
       "Burn scar across the back of his left forearm — dark, raised, roughly four inches long — from an industrial accident in his forties",
@@ -281,16 +271,62 @@
     "posture_movement": "Moves deliberately and slowly, with a slight forward lean compensating for his fused vertebra. Relies on a custom salvaged cane made from a Ferrogate Transit handrail — carries it in his left hand, uses it for both balance and punctuation when speaking. Despite the pain, his movements are economical and controlled, never rushed. Sits more often than stands. When stationary, his posture is a slouch of hard-earned rest.",
     "clothing_style": "Tier 3-4 working class, practical and worn. Typically wears heavy canvas work pants in dark gray or khaki, often with visible stains and patches. Shirt layers vary by season: sturdy cotton button-ups in muted colors (browns, grays, dark blues) or a thick wool sweater in winter. Over this, a custom heavy canvas apron with deep pockets, darkened with decades of grime and wear. Footwear is industrial-grade slip-on boots, scuffed and resoled multiple times. No jewelry except a simple stainless steel wrist compass on his left wrist — a relic from his grandfather. His clothing is never flashy, always functional, and repaired rather than replaced."
   },
-  "image_prompt": "An aging man of 188cm height in cyberpunk 2226, medium-deep warm golden-brown skin blending Eastern European, Sub-Saharan African, and Northern European heritage. Closely cropped white hair, weathered lined face with deep-set hooded eyes and broad nose, salt-and-pepper beard shadow. Right hand is a gunmetal cybernetic prosthetic with visible joint servos. Wearing heavy canvas work apron darkened with decades of grime over a muted brown cotton shirt, dark gray canvas work pants, and industrial-grade scuffed boots. Left hand grips a custom salvaged metal cane made from a transit handrail. Pale healed scar on lower left ribs visible, dark raised burn scar on left forearm, faint blue geometric tattoo on right inner forearm. Faint amber glow in right pupil. Slouched posture of hard rest, deliberate movement, in a dimly-lit industrial shop or Shelf district interior, cyberpunk neo-noir lighting, weathered and functional aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Indigo Sisavath, 188cm tall seventy-year-old man with warm deep brown skin bearing golden-olive undertones, blended Middle Eastern, Southeast Asian, South Asian, Indigenous American, and Sub-Saharan African heritage. Short white hair cropped close to scalp. Deep-set dark brown eyes with hooded lids, lined weathered face, broad rounded nose, prominent cheekbones, jowls softening strong jawline. Sun-weathered complexion with age spots and pale scar tissue on lower left ribs, dark raised burn scar across left forearm. Sparse salt-and-pepper beard shadow. Right hand is gunmetal cybernetic prosthetic with visible articulated servos and imperfect synthetic skin tone match. Faded blue geometric Zimbabwean tattoo on right inner forearm. Wearing faded dark gray canvas work pants with visible stains and patches, muted brown button-up shirt, decades-worn heavy canvas apron darkened with industrial grime, scuffed and resoled industrial boots. Carries custom salvaged handrail cane in left hand for balance and deliberate speech punctuation. Moves slowly and economically despite evident chronic pain and fused vertebra. Stainless steel wrist compass on left wrist. Standing in dim industrial workshop setting with warm practical lighting, posture showing comfortable slouch of hard-earned rest, expression perpetually thoughtful and measured. GLMZ 2200s Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 36.9,
-    "Sub-Saharan African": 30.0,
-    "Northern European": 25.1,
-    "East Asian": 7.0,
-    "Hispanic/Latin American": 1.0
+    "Middle Eastern": 35.5,
+    "Southeast Asian": 32.3,
+    "Indigenous American": 17.9,
+    "South Asian": 10.8,
+    "Sub-Saharan African": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 35.5
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 24.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 7.5
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 2.3,
+        "Zapotec": 1.4
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 14.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.9
+      },
+      "Pakistani": {
+        "Baloch": 0.4,
+        "Punjabi Pakistani": 1.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 1,
+        "Nigerian": 0.5
+      },
+      "East African": {
+        "Ugandan": 0.5,
+        "Ethiopian": 0.2
+      },
+      "Southern African": {
+        "South African": 1.3
+      }
+    }
+  }
 }

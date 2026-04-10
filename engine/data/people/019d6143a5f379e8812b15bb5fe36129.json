@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f379e8812b15bb5fe36129",
   "type": "character",
-  "name": "Youssef Cissé",
+  "name": "Farid Chakraborty",
   "aliases": [
     "Arsenal",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Pulaski and Chicago Ave",
-  "description": "Djeneba Orlov-Obeng is lean and angular, all sharp edges and visible tension. At 37, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a saboteur out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDjeneba Orlov-Obeng has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "description": "Farid Chakraborty is lean and angular, all sharp edges and visible tension. At 37, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a saboteur out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFarid Chakraborty has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.47,
@@ -261,7 +261,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Rookery",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,38 +275,22 @@
   "registered_firearms": [],
   "related_entities": [
     "The Shelf",
-    "Slagworks Industrial",
-    "Gravimetric Collapse Charge GCC-9",
     "Chicago",
-    "Arcturus MX-1 'Cerberus'",
-    "Breck Tannen",
-    "GLMZ",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Mika Sorel",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "TESSERA CR-12 'Whisper'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African Berber-Arab with significant Sub-Saharan African, East Asian, and Northern European ancestry. The combination produces distinctive features: warm brown skin with subtle golden undertones from North African heritage, angular facial structure reflecting East Asian admixture, and high cheekbones common to both North and Sub-Saharan African genetics. Facial geometry shows the bridge of mixed continental ancestry — defined but not sharp, with a complexity that defies simple categorization.",
+    "heritage": "Mixed global ancestry with South Asian plurality (40.3%), significant Northern European admixture (32.5%), complemented by Sub-Saharan African (14.3%), Middle Eastern (7.3%), and East Asian (5.6%) heritage. This genetic mosaic creates a phenotype of considerable complexity: warm medium-deep brown skin with golden undertones from the South Asian-Sub-Saharan foundation, enriched by Northern European influence that deepens rather than cools the overall tone. Facial structure reflects the angular definition of South Asian and East Asian bone geometry—high, prominent cheekbones, defined nasal bridge, eye-set that speaks to multiple continental sources—softened by the fuller features inherited from Sub-Saharan and Middle Eastern ancestry. The overall effect is a face that resists easy categorization, bearing the genetic signature of the Ubiquitous Diaspora.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and angular with visible muscle definition from geneware enhancement; low body fat, wiry strength rather than bulk. Chest and shoulders show the telltale density of chrome muscle treatment — they move with inhuman precision.",
     "hair_color": "Dark brown, naturally textured",
     "hair_style": "Kept short and tight, minimal styling. Pragmatic cut for his line of work.",
     "hair_length": "Short",
-    "eye_color": "Brown with faint amber undertone",
-    "skin_tone": "Warm medium-deep brown with golden undertones, slightly muted by nocturnal lifestyle but retaining the richness of North African-Sub-Saharan heritage. The nocturnal pallor sits beneath rather than displacing the natural warmth.",
-    "complexion": "Angular jawline and prominent cheekbones reflecting mixed North African and East Asian ancestry. Skin shows the strain of night-cycle living — faint dark circles beneath warm brown eyes, but clear and scar-free on the face. Grooming is meticulous and functional; no jewelry, no flash.",
+    "eye_color": "Warm brown with faint amber undertone",
+    "skin_tone": "Warm medium-deep brown with golden undertones, slightly muted by nocturnal lifestyle but retaining the richness of South Asian-Sub-Saharan heritage blended with Northern European influence. The nocturnal pallor sits beneath rather than displacing the natural warmth.",
+    "complexion": "Angular jawline and high, prominent cheekbones reflecting the South Asian-East Asian-Sub-Saharan ancestry blend, with subtle fullness in the lower face from Middle Eastern and Sub-Saharan heritage. Skin shows the strain of night-cycle living—faint dark circles beneath warm brown eyes—but is clear and scar-free on the face. Grooming is meticulous and functional; no jewelry, no flash.",
     "distinguishing_marks": [
       "Faint linear scarring along left collarbone and down the sternum — surgical markers from lung replacement procedure, visible when shirtless",
       "Pale burn marks across the inner right forearm in a grid pattern — old electrical accident, deliberate choice not to correct",
@@ -316,15 +300,62 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with slight forward lean, shoulders loose but alert. Natural state appears to be coiled tension; even at rest, his body reads as ready to move. Eyes track exits and structural weak points instinctively.",
     "clothing_style": "Tier 4-5 utilitarian. Dark-colored cargo pants with reinforced panels and hidden pockets for tools. Black or charcoal synthetic jacket with asymmetrical chest pockets and articulated shoulders — brands like Cerberus Tactical or unmarked knockoffs from the Shelf. Steel-toed work boots, scuffed and worn. No corpo branding, no gang colors. Clothing is chosen for function: durability, mobility, pockets for equipment. Everything fits close enough to move but loose enough to hide things."
   },
-  "image_prompt": "Youssef Cissé, 178cm lean cyberpunk saboteur with warm golden-brown skin and angular North African-East Asian features, short natural dark textured hair, brown eyes with amber undertones. Meticulous grooming, no facial scarring. Chrome geneware musculature visible under forearms and shoulders with subtle metallic sheen, moving with unnatural precision. Linear surgical scarring visible on left collarbone and sternum, pale grid burn marks on inner right forearm, minimalist tool-mark tattoos on wrists. Wearing dark charcoal Cerberus Tactical synthetic jacket with asymmetrical pockets and articulated shoulders, reinforced cargo pants, scuffed steel-toed work boots. Coiled posture, economical movement, eyes tracking exits. Nocturnal setting, cool blue and amber lighting, industrial warehouse background, cyberpunk 2226, utilitarian underground aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Farid Chakraborty, mixed-heritage saboteur, GLMZ. Warm medium-deep brown skin with golden undertones, angular South Asian-East Asian cheekbones softened by Sub-Saharan fullness, warm brown eyes tracking exits. Dark textured hair cropped short, sharp jawline. Lean 178cm frame with inhuman chrome geneware muscle definition visible under forearms and shoulders—metallic density betraying augmentation. Wearing black Cerberus Tactical cargo jacket with asymmetrical pockets, reinforced dark pants, scuffed steel-toed boots. Visible pale burn scars in grid pattern on inner right forearm, surgical scarring on sternum. Coiled posture, economical movement, alert stance. Great Lakes Metropolitan Zone neon-lit parking structure or rooftop at night, cool blue and amber lighting casting shadows across his face. Geneware musculature catching light with subtle metallic sheen. Mood: focused, dangerous precision, ready to move. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 44.5,
-    "Sub-Saharan African": 24.3,
-    "East Asian": 17.8,
-    "Northern European": 13.4
+    "South Asian": 40.3,
+    "Northern European": 32.5,
+    "Sub-Saharan African": 14.3,
+    "Middle Eastern": 7.3,
+    "East Asian": 5.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 16
+      },
+      "Nepali": {
+        "Nepali": 13
+      },
+      "Pakistani": {
+        "Sindhi": 11.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 15.2,
+        "Swiss German": 17.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 11.4
+      },
+      "East African": {
+        "Tanzanian": 1.8
+      },
+      "Southern African": {
+        "South African": 1.1
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 7.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 1
+      },
+      "Korean": {
+        "Korean": 1.5
+      },
+      "Chinese": {
+        "Hakka": 3.1
+      }
+    }
+  }
 }

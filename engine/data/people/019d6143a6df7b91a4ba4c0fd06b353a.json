@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6df7b91a4ba4c0fd06b353a",
   "type": "character",
-  "name": "Daniela Salazar",
+  "name": "Nayeli Thakur",
   "aliases": [
     "Forge",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Fullerton and Damen",
-  "description": "Suki Fujita-Mensah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a infiltrator out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSuki Fujita-Mensah is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Nayeli Thakur is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a infiltrator out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNayeli Thakur is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -260,7 +260,7 @@
     "Ghost": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,24 +277,11 @@
     "The Unfinished Theorem",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Glenville Sound",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Independent Micro-Grid Power Cooperative",
-    "Neuromorphic Pressure Cestus",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Quiet Room"
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multi-continental blend: 28.7% Sub-Saharan African, 22.8% Hispanic/Latin American, 21.7% Eastern European, 10.3% East Asian, 8.6% Northern European, 7.9% South Asian. Genetic mosaic reflected in warm-toned brown skin with subtle golden and olive undertones, facial structure showing prominent cheekbones and jawline typical of African and Eastern European heritage, with eye shape and hair texture influenced by East Asian ancestry.",
+    "heritage": "Multi-continental blend: 29.6% South Asian, 22.7% Indigenous American, 21.4% Hispanic/Latin American, 21.0% Northern European, 5.3% Eastern European. Genetic mosaic creates a uniquely mixed phenotype — the warmth of South Asian and Hispanic heritage combines with Indigenous American bone structure and Northern European undertones to produce a face that reads as genuinely transcontinental. Prominent cheekbones and strong jawline from Indigenous American and South Asian ancestry, with subtle facial geometry influenced by Northern European heritage, all unified by the warm-toned complexion.",
     "height_cm": 172,
     "weight_kg": 89,
     "build": "Stocky and dense, heavily muscled through the shoulders and core. Compact frame with no wasted space — built for leverage and durability rather than speed. Chest and forearms show pronounced musculature from years of physical work.",
@@ -302,8 +289,8 @@
     "hair_style": "Short, practical cut — no styling, functional only",
     "hair_length": "Short",
     "eye_color": "Dark brown, sharp and assessing",
-    "skin_tone": "Warm medium brown with golden and olive undertones, reflecting the blend of Sub-Saharan African, Hispanic/Latin American, Eastern European, and South Asian ancestry",
-    "complexion": "Weathered face with pronounced jaw, sharp cheekbones characteristic of mixed Eastern European and African heritage. Skin shows minor scarring and age lines concentrated around the eyes and mouth — the kind earned through years of tension and calculated expression. Clean-shaven or with minimal stubble. No visible acne or poor grooming — maintenance is part of discipline.",
+    "skin_tone": "Warm medium-to-deep brown with golden and subtle olive undertones, the balanced result of South Asian and Indigenous American genetic dominance tempered by Hispanic/Latin American warmth and Northern European undertones. Rich, complex undertone rather than purely red or purely yellow.",
+    "complexion": "Strong, geometric face with pronounced cheekbones and heavy jaw reflecting Indigenous American and South Asian ancestry. Skin shows minor scarring and deep age lines concentrated around the eyes and mouth — earned through years of tension and controlled expression. Clean-shaven or with minimal stubble. No visible acne or poor grooming — maintenance is part of discipline.",
     "distinguishing_marks": [
       "Jagged scar running 8cm down the left side of his jaw, pale and old, likely from edged weapon",
       "Burn scar on the back of his left hand, roughly 5cm across, discolored and slightly raised — chemical or thermal origin",
@@ -314,17 +301,65 @@
     "posture_movement": "Moves with controlled efficiency — no wasted motion. Stands slightly forward-balanced, weight on the balls of his feet even when stationary. Default facial expression is neutral to slightly guarded. Eyes track movement in his peripheral vision automatically. When he walks, the hydraulic joints produce a faint pneumatic hiss at each step — he's long since stopped trying to mask it, treats it as ambient.",
     "clothing_style": "Tier 4 working-class pragmatism. Dark colors — black or dark gray synthetic jacket (insulated, reinforced stitching, scorched at one shoulder). Underneath: plain black tech-weave shirt, lightweight and treated for chemical resistance. Cargo pants in dark charcoal with reinforced knees and extra pockets. Boots are scuffed work-grade synth-leather with steel toe caps. No visible corpo branding or luxury markers. Everything worn is functional, replaceable, and recently maintained. Occasional leather jacket when weather demands it — old, cracked at the seams, smells like synthetic oil and used territory."
   },
-  "image_prompt": "Daniela Salazar, 172cm tall stocky build with visible chrome hydraulic augmentations at elbows and knees, warm medium brown skin with golden undertones reflecting mixed Sub-Saharan African, Hispanic/Latin American, and Eastern European heritage, sharp cheekbones and prominent jaw, black hair graying at temples in short practical cut, dark brown assessing eyes, jagged scar down left jaw, burn scar on left hand, kanji tattoo on inner forearm, cyberpunk 2226 Great Lakes Metropolitan Zone, wearing dark gray insulated synthetic jacket with scorched shoulder, black tech-weave shirt, dark charcoal reinforced cargo pants, scuffed steel-toe work boots, forward-balanced posture, neutral guarded expression, chrome pistons visible at joint articulation points, faint pneumatic hiss aesthetic, industrial worker aesthetic, moody atmospheric lighting with neon edge lighting, cinematic depth, cyberpunk noir mood --ar 2:3 --v 6",
+  "image_prompt": "Nayeli Thakur, 172cm tall, stocky muscular build, warm deep brown skin with golden undertones reflecting South Asian and Indigenous American heritage, prominent cheekbones and strong jaw, dark brown sharp eyes, black hair graying at temples in short practical cut. Jagged pale scar down left jaw, burn scar on left hand, weathered knuckles. Exposed chrome hydraulic joint casings at elbows and knees, visible titanium-gray pistons and articulation plates. Black scorched synthetic jacket over black tech-weave shirt, dark charcoal reinforced cargo pants, scuffed steel-toed work boots. Standing forward-balanced with controlled posture, neutral guarded expression, pneumatic hiss faintly audible at joints. Gritty GLMZ industrial setting, cool blue and gray neon lighting, worn concrete and metal background, atmospheric haze, photorealistic, character portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 28.7,
-    "Hispanic/Latin American": 22.8,
-    "Eastern European": 21.7,
-    "East Asian": 10.3,
-    "Northern European": 8.6,
-    "South Asian": 7.9
+    "South Asian": 29.6,
+    "Indigenous American": 22.7,
+    "Hispanic/Latin American": 21.4,
+    "Northern European": 21,
+    "Eastern European": 5.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 29.6
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 2,
+        "Aymara": 6
+      },
+      "Mesoamerican": {
+        "Maya": 7.6
+      },
+      "Plains Nations": {
+        "Muscogee": 7.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 3.5,
+        "Nicaraguan": 2
+      },
+      "Mexican": {
+        "Mexican": 7.4
+      },
+      "South American": {
+        "Ecuadorian": 5.8,
+        "Venezuelan": 2.7
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 10.6
+      },
+      "Scandinavian": {
+        "Danish": 6
+      },
+      "Germanic": {
+        "German": 3.7,
+        "Austrian": 0.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 5.3
+      }
+    }
+  }
 }

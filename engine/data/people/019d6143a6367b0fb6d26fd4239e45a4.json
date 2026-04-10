@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6367b0fb6d26fd4239e45a4",
   "type": "character",
-  "name": "Thandiwe Makwa-Magnúsdóttir",
+  "name": "Beknur Karimov-Ergashev",
   "aliases": [
     "Isa",
     "The Correspondent"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Mexicantown Libre, GLMZ, near Pulaski and Chicago Ave",
-  "description": "Isadora has the kind of face that is easy to remember individually and hard to place in a crowd — broad nose, angular cheekbones, warm coppery-brown skin, and dark eyes that are always, always taking notes. She keeps her thick dark hair pulled back tightly and wears it down only when she is trying to go unnoticed, which is an inversion most people would not anticipate. She has a faint artificial shimmer to the skin of her forearms — a residual effect of a cheap bioluminescence mod she had installed and removed years ago, leaving this iridescent ghost behind.\n\nIsadora spent seven years at a mid-tier Zheng-Dao affiliated media outlet before she published a piece they hadn't approved and found herself without a desk, a salary, or a press credential. Now she freelances for a network of independent outlets under three different bylines and runs an encrypted communication service that connects corporate whistleblowers with journalists, lawyers, and occasionally mutual aid networks depending on what is needed. She is funny and genuinely charming at parties, which is a professional tool she is not always comfortable with. She keeps a running list of every piece that has been killed, delayed, or changed without her consent — it is very long, and she re-reads it when she needs to remember why she is doing this.",
+  "description": "Beknur Karimov-Ergashev has the kind of face that is easy to remember individually and hard to place in a crowd — broad nose, angular cheekbones, warm coppery-brown skin, and dark eyes that are always, always taking notes. She keeps her thick dark hair pulled back tightly and wears it down only when she is trying to go unnoticed, which is an inversion most people would not anticipate. She has a faint artificial shimmer to the skin of her forearms — a residual effect of a cheap bioluminescence mod she had installed and removed years ago, leaving this iridescent ghost behind.\n\nBeknur Karimov-Ergashev spent seven years at a mid-tier Zheng-Dao affiliated media outlet before she published a piece they hadn't approved and found herself without a desk, a salary, or a press credential. Now she freelances for a network of independent outlets under three different bylines and runs an encrypted communication service that connects corporate whistleblowers with journalists, lawyers, and occasionally mutual aid networks depending on what is needed. She is funny and genuinely charming at parties, which is a professional tool she is not always comfortable with. She keeps a running list of every piece that has been killed, delayed, or changed without her consent — it is very long, and she re-reads it when she needs to remember why she is doing this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -158,7 +158,7 @@
     "Diplomat": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,49 +176,26 @@
   ],
   "related_entities": [
     "Mexicantown Libre",
-    "GLMZ",
     "Zheng-dao Bioelectric",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Arcturus CK-5 'Bloodhound'",
     "Chicago",
-    "Alper Inoue-Aidoo",
-    "Bioacoustic Communication Membrane",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Ferrogate Transit",
-    "Folake Borg-Darko",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kamm's Landing",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Reuben Osei-Mukherjee-Żak",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Vuk Jorgensen-Toure"
+    "GLMZ",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (47.9%), Northern European (23.4%), Indigenous American (15.7%), East Asian (13.0%) — a striking pan-diaspora blend resulting in warm, deep brown skin with subtle golden undertones, slightly angular facial structure with high, prominent cheekbones, and a nose with gentle flare that bridges African and Indigenous American ancestry.",
+    "heritage": "Central Asian (51.7%) as dominant ancestry, blended with South Asian (24.9%), creating the foundation of warm medium-brown skin with golden and olive undertones. Hispanic/Latin American (14.5%) adds warmth and depth to complexion, while Middle Eastern (3.6%), Sub-Saharan African (3.0%), and Eastern European (2.3%) contribute subtle undertonal complexity and skin luminosity. This Ubiquitous Diaspora combination results in a warm, sun-kissed medium-brown tone with a distinctly Silk Road influence.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and wiry with subtle musculature; carries herself with the economical movement of someone who has learned to be unobtrusive. Long-limbed, narrow shoulders.",
     "hair_color": "Natural dark brown, nearly black",
     "hair_style": "Typically pulled back in a tight, functional bun or braid; worn down only as deliberate camouflage",
     "hair_length": "Long (to mid-back when loose)",
-    "eye_color": "Dark brown with warm undertone, slightly almond-shaped from East Asian ancestry blend",
-    "skin_tone": "Deep warm brown with golden undertones, luminous in certain light — the result of Sub-Saharan African (47.9%) as dominant with Northern European (23.4%) creating subtle warmth rather than pallor, and Indigenous American (15.7%) and East Asian (13.0%) contributing to refined bone structure and slight skin resilience",
-    "complexion": "Broad nose with gentle flare at nostrils, characteristic of Sub-Saharan African heritage; high, angular cheekbones with subtle width across face from Indigenous American ancestry; sharp jawline with slight softness at the chin from Northern European blend. Eyes sit slightly deeper-set with subtle epicanthal fold from East Asian component. Skin is clear and well-maintained but shows signs of chronic sleep debt — faint darkening beneath eyes. Expression tends toward observant stillness, mouth held in a slight, private half-smile.",
+    "eye_color": "Dark brown with warm undertone, slightly almond-shaped from Central and South Asian ancestry blend",
+    "skin_tone": "Warm medium brown with golden undertones and subtle olive notes — the result of Central Asian and South Asian dominance (76.6% combined) creating a sun-kissed base, enhanced by Hispanic/Latin American warmth and depth, with Middle Eastern luminosity and Sub-Saharan African richness adding complexity.",
+    "complexion": "Moderately prominent nose with gentle definition at bridge and nostrils, characteristic of Central and South Asian heritage; defined cheekbones with balanced width across face from Central Asian ancestry; sharp jawline with slight softness at the chin. Eyes sit at medium depth with subtle almond shape. Skin is clear and well-maintained but shows signs of chronic sleep debt — faint darkening beneath eyes. Expression tends toward observant stillness, mouth held in a slight, private half-smile.",
     "distinguishing_marks": [
       "Faint, iridescent shimmer visible across both forearms in certain light — residual artifact from removed bioluminescent mod, creating an almost oil-on-water effect that catches LED and natural light differently",
       "Thin scar along the left temple, approximately 2cm, barely visible unless light hits it directly — old injury, well-healed"
@@ -227,15 +204,77 @@
     "posture_movement": "Moves with deliberate, efficient economy — no wasted gestures. Sits with her body angled slightly away from direct confrontation, shoulders relaxed but spine straight. Makes sustained eye contact when listening; her gaze is the kind that people recognize as 'taking you in.' Often has a pen in her hand or tucked behind her ear. Habit of writing notes on her palm with a stylus.",
     "clothing_style": "Tier 3 professional-casual with deliberate understatement. Favors neutral colors (charcoal, deep teal, muted rust) and layered pieces that allow quick adaptation to different social contexts. Typically wears fitted but not fashionable trousers, long-sleeved shirts or fitted turtlenecks (covers the forearm shimmer in formal settings), and a worn leather jacket — vintage pre-2200, supple from use, bearing subtle scuffs and creases that suggest it has survived situations. Comfortable, quality shoes built for walking. Minimal jewelry: a thin silver ring on her right hand, a watch that is slightly too expensive for her current income (saved-for purchase). No corporate logos or brand signifiers. Clothes read as 'someone who needs mobility and anonymity,' not 'someone who needs to be noticed.'"
   },
-  "image_prompt": "Thandiwe Makwa-Magnúsdóttir, 2226 GLMZ, mixed-heritage woman with deep warm brown skin and refined angular features, dark eyes with slight almond shape, high cheekbones, early 30s. Long dark hair pulled into tight functional braid. Wearing fitted charcoal turtleneck and worn vintage leather jacket, neutral professional-casual style. Forearms catch faint iridescent shimmer in LED light. Sitting at angle in dimly lit neo-noir office setting, neon blues and deep shadows, holding stylus, expression of observant stillness, slight private smile. Careful, economical posture. Cyberpunk aesthetic, atmospheric lighting, moody and composed. --ar 2:3 --v 6",
+  "image_prompt": "Beknur Karimov-Ergashev, lean 168cm woman with warm medium-brown skin glowing with golden and olive undertones from Central Asian-South Asian-Hispanic blend heritage. Dark almond-shaped eyes, defined cheekbones, moderately prominent nose. Long dark brown hair pulled back in tight functional braid. Faint iridescent shimmer catches light on exposed forearms like oil-on-water; thin scar visible at left temple. Wearing layered neutral-toned neo-noir outfit: charcoal fitted turtleneck, vintage pre-2200 supple leather jacket with subtle creases, fitted trousers, quality walking shoes. Thin silver ring, expensive watch. Standing in neon-lit Great Lakes Metropolitan Zone 2226 street, cool LED light catching forearm shimmer. Posture economical and deliberate, body angled with observant expression, slight private half-smile. No wasted gesture. Background: megacityscape with hovering vehicles and holographic signage, moody and professional. Cinematic, character study, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 47.9,
-    "Northern European": 23.4,
-    "Indigenous American": 15.7,
-    "East Asian": 13.0
+    "Central Asian": 51.7,
+    "South Asian": 24.9,
+    "Hispanic/Latin American": 14.5,
+    "Middle Eastern": 3.6,
+    "Sub-Saharan African": 3,
+    "Eastern European": 2.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 18.8,
+        "Hazara": 22.5
+      },
+      "Turkic": {
+        "Kyrgyz": 5.3,
+        "Uzbek": 5.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 24.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 0.5,
+        "Puerto Rican": 8.9
+      },
+      "Mexican": {
+        "Mexican": 5.1
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 0.8
+      },
+      "Arab Levantine": {
+        "Jordanian": 2.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 0.5,
+        "Zimbabwean": 0.2
+      },
+      "East African": {
+        "Ethiopian": 0.4
+      },
+      "West African": {
+        "Ghanaian": 1.9
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Slovenian": 1.1,
+        "Serbian": 0.1
+      },
+      "Magyar-Romanian": {
+        "Romanian": 0.2,
+        "Hungarian": 0.3
+      },
+      "Slavic West": {
+        "Polish": 0.3,
+        "Czech": 0.3
+      }
+    }
+  }
 }

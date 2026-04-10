@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cf7ee9b438b2173f3c8126",
   "type": "character",
-  "name": "Luca Árnason",
+  "name": "Luca Horváth",
   "aliases": [
     "Vortex",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Michigan Ave and Roosevelt",
-  "description": "Sinan Vasquez-Chatterjee is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSinan Vasquez-Chatterjee has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Luca Horváth is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLuca Horváth has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.36,
@@ -262,7 +262,7 @@
     "Cockroach": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,41 +281,18 @@
   ],
   "related_entities": [
     "Bioelectric Muscle Fiber",
-    "GLMZ",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Clover",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Djeneba Park-Traore",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Independent Micro-Grid Power Cooperative",
-    "Inductive Thermal Lance",
-    "Kwabena Ilyich Ferreira-Sattout",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Prophet",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Northern European and Eastern European with Pacific Islander ancestry — Scandinavian-Slavic base with warm melanesian undertones creating a distinctive pale-to-medium complexion with golden undertones. The combination produces features that blend Nordic bone structure with subtle warmth in skin tone and a hint of broader facial proportions from Pacific Islander heritage.",
+    "heritage": "Multi-continental blend with Sub-Saharan African (34.7%), Eastern European (22.7%), and East Asian (20.8%) as dominant ancestries, supplemented by North African (12.2%), Hispanic/Latin American (7.0%), and Middle Eastern (2.6%) heritage. This creates a richly complex phenotype: warm deep brown skin tone with golden and amber undertones from the African, North African, and Latin American components, refined and sharpened by Eastern European and East Asian bone structure. The combination produces defined cheekbones with balanced width, a strong jawline with East Asian refinement, and a nose bridge reflecting the North African heritage blend. Warm undertones deepen with sun exposure, creating dimension across the face and body that speaks to the genetic diversity.",
     "height_cm": 178,
     "weight_kg": 92,
     "build": "Stocky and densely muscled, barrel-chested with thick shoulders. The synthetic muscle fiber in his legs creates a subtle asymmetry — the replacements are slightly more defined, almost too perfect compared to natural musculature. Carries himself with the squared-off posture of someone trained to absorb impact.",
@@ -323,8 +300,8 @@
     "hair_style": "Short, practical cut — military-tight on sides, slightly longer on top, no styling product. Maintained with efficiency, not vanity.",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint network of subcutaneous LED traces visible in low light around the orbital ridge — pain editor neural anchor points",
-    "skin_tone": "Pale to medium complexion with golden-warm undertones and weathered texture from lakeside exposure. The skin shows the characteristic blend of Nordic baseline with Pacific Islander warmth — not olive, but a pale tan with underlying golden hue that deepens in sun-exposed areas.",
-    "complexion": "Angular face with broader cheekbones reflecting Pacific Islander heritage, strong Nordic jawline, broken nose (healed, set slightly wrong), scar tissue above left eyebrow. Skin shows wear — lines around the eyes and mouth deeper than his age should warrant. Five o'clock shadow is his default state. Hands are calloused, knuckles scarred, with a faint chrome sheen visible at wrist joints where synthetic muscle fiber connects to natural tissue.",
+    "skin_tone": "Deep warm brown complexion with rich golden and amber undertones, weathered texture from lakeside exposure. The skin shows the characteristic richness of Sub-Saharan African, North African, East Asian, and Eastern European heritage blending — deep enough to show luminous warmth and dimension, with sun-exposed areas darkening to deeper mahogany brown. Genuinely warm and lived-in rather than ashen or olive.",
+    "complexion": "Angular face with well-defined cheekbones reflecting the East Asian and Sub-Saharan African heritage, strong jawline with Eastern European and North African structure, broken nose (healed, set slightly wrong), scar tissue above left eyebrow. Skin shows wear — lines around the eyes and mouth deeper than his age should warrant, weathering that speaks to outdoor exposure and pain management. Five o'clock shadow is his default state, darkening the jaw with dense charcoal-black stubble against warm brown skin. Hands are calloused, knuckles scarred, with a faint chrome sheen visible at wrist joints where synthetic muscle fiber connects to natural tissue.",
     "distinguishing_marks": [
       "Horizontal scar across left forearm, 8cm long, pale and old — pre-military training injury",
       "Burn scar on right palm, spiderweb pattern, darker than surrounding skin — equipment malfunction during early augmentation work",
@@ -335,14 +312,91 @@
     "posture_movement": "Walks with measured, controlled stride — economical movement drilled into muscle memory. Stands with weight balanced on the balls of his feet, ready to move. In conversation, he uses minimal hand gestures, speaks in clipped sentences. His movements are fast but not jittery — trained violence rather than nervous energy. Favors flat ground, moves down stairs with visible care. Holds tension in shoulders and neck — cost of the pain editor is constant low-level proprioceptive awareness.",
     "clothing_style": "Tier 3-4 pragmatist. Reinforced cargo pants in dark gray synthetic material with cargo pockets and loop attachments for gear. Fitted tactical shirt or hoodie in muted colors — blacks, grays, dark green — with internal armor grid visible as subtle ridges under fabric. Waterproof jacket with sealed pockets, Lake Michigan salt spray resistant. Worn boots with reinforced toe and ankle support. No brand logos visible. Everything functional, nothing decorative. Gear is maintained obsessively — each item serves a purpose. Wears a simple steel watch, military issue, kept precisely accurate."
   },
-  "image_prompt": "Luca Árnason, cyberpunk 2226, pale-golden skin with Nordic-Slavic-Pacific Islander blend, 178cm stocky muscular frame, dark brown hair graying at temples in military cut, cold dark eyes with faint subdermal LED traces around orbital ridge, angular Nordic face with weathered features and five o'clock shadow, broken nose, scar tissue above left eyebrow. Wearing dark gray reinforced tactical cargo pants and fitted dark tactical hoodie with visible internal armor grid ridges, waterproof sealed jacket, worn reinforced boots. Chrome-titanium augmentation integration points visible at ankles and hips where synthetic muscle fiber connects to natural leg tissue. Military posture, weight on balls of feet, minimal movement, controlled and trained. Standing in industrial Great Lakes zone setting, harsh LED lighting, salt-weathered environment, moody cyberpunk atmosphere, gritty and functional aesthetic, no decorative elements --ar 2:3 --v 6",
+  "image_prompt": "Luca Horváth, 178cm stocky cybernetic soldier, deep warm brown skin with golden undertones, dark brown hair with gray at temples, short military cut. Angular face with prominent cheekbones, strong jawline, broken nose, five o'clock charcoal stubble. Dark brown eyes with faint glowing LED traces around orbital ridge visible in shadow. Barrel-chested muscular build, chrome-titanium integration points gleaming at ankles and hips where synthetic muscle fiber meets natural tissue. Wearing dark gray reinforced tactical cargo pants, fitted black tactical hoodie with subtle armor grid ridges, waterproof sealed jacket. Calloused hands with visible scar tissue and faint chrome sheen at wrist joints. Standing on balls of feet in ready posture, tense shoulders. Faded blue Telugu script tattoo visible on left shoulder. Low-light near-future megacity setting, industrial Great Lakes warehouse district, moody neon reflected in wet concrete, cool blue and amber lighting highlighting the metallic augmentations and warm brown skin tone contrast. Gritty, worn, dangerous presence. Midjourney GLMZ aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 53.8,
-    "Eastern European": 32.0,
-    "Pacific Islander": 14.2
+    "Sub-Saharan African": 34.7,
+    "Eastern European": 22.7,
+    "East Asian": 20.8,
+    "North African": 12.2,
+    "Hispanic/Latin American": 7,
+    "Middle Eastern": 2.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 8.4,
+        "Zimbabwean": 10.4
+      },
+      "East African": {
+        "Ethiopian": 7.7
+      },
+      "West African": {
+        "Senegalese": 8.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 11.8
+      },
+      "Slavic South": {
+        "Bosnian": 2.3,
+        "Slovenian": 1.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 5.3,
+        "Romanian": 2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.8
+      },
+      "Korean": {
+        "Korean": 10.9
+      },
+      "Chinese": {
+        "Cantonese": 5.5,
+        "Shanghainese": 1.6
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Tunisian": 1.3,
+        "Algerian": 3.1
+      },
+      "Nile Valley": {
+        "Egyptian": 2.6
+      },
+      "Amazigh": {
+        "Berber": 2.9,
+        "Kabyle": 2.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 5.4
+      },
+      "South American": {
+        "Argentine": 1.1,
+        "Colombian": 0.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 0.2,
+        "Yemeni": 0.2
+      },
+      "Kurdish": {
+        "Kurdish": 1.5
+      },
+      "Arab Levantine": {
+        "Jordanian": 0.5,
+        "Palestinian": 0.2
+      }
+    }
+  }
 }

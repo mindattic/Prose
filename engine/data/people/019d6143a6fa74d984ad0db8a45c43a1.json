@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fa74d984ad0db8a45c43a1",
   "type": "character",
-  "name": "Elu Leota-Pathak",
+  "name": "Nadia Migizi-Hachemi",
   "aliases": [
     "Théo Scratch",
     "The Laminator"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Narrows, Ironvein, near Armitage and Milwaukee",
-  "description": "Théo is lean and angular in the way of someone who eats irregularly, with light brown skin, a shaved head, and a thin bioluminescent stripe — pale blue — running from his left temple to his jaw that pulses faintly when his heart rate elevates. He did it himself with a black-market gene kit at nineteen and the placement is slightly crooked, which he finds funny. He operates out of a converted laundry kiosk that still smells of detergent and hot plastic, surrounded by humming laminators, a rack of blank credsticks, and a shrine to the local data E.L.F. he calls Inkblot — a repurposed tablet displaying glitched static that he has never turned off.\n\nThéo runs his business with jittery competence: he is brilliant at the technical work and genuinely terrible at the interpersonal parts. He talks too fast, over-explains, and has an unfortunate habit of pointing out everything that could go wrong with the documents he just sold you. He is not a criminal by self-image — he is a 'documentation accessibility specialist,' he will tell you this with complete sincerity. He believes identity checkpoints are structural violence and that his work is a public good. He also desperately needs rent money.",
+  "description": "Nadia Migizi-Hachemi is lean and angular in the way of someone who eats irregularly, with light brown skin, a shaved head, and a thin bioluminescent stripe — pale blue — running from his left temple to his jaw that pulses faintly when his heart rate elevates. He did it himself with a black-market gene kit at nineteen and the placement is slightly crooked, which he finds funny. He operates out of a converted laundry kiosk that still smells of detergent and hot plastic, surrounded by humming laminators, a rack of blank credsticks, and a shrine to the local data E.L.F. he calls Inkblot — a repurposed tablet displaying glitched static that he has never turned off.\n\nNadia Migizi-Hachemi runs his business with jittery competence: he is brilliant at the technical work and genuinely terrible at the interpersonal parts. He talks too fast, over-explains, and has an unfortunate habit of pointing out everything that could go wrong with the documents he just sold you. He is not a criminal by self-image — he is a 'documentation accessibility specialist,' he will tell you this with complete sincerity. He believes identity checkpoints are structural violence and that his work is a public good. He also desperately needs rent money.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -153,7 +153,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -167,38 +167,14 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "Ironvein",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Ironvein",
     "Tessera Corponation",
-    "Inkblot",
-    "Static",
-    "The Pale Mile",
-    "The Milwaukee Core",
-    "Arcturus GE-1 'Garrison'",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Cutter Vane",
-    "Helix Cortex Laminate — 'The Second Skin'",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Mika Sorel",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Narrows",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian, Indigenous American, and Pacific Islander blend. The genetic mix creates a warm-toned complexion with the angular facial structure of South Asian ancestry, combined with the broader cheekbone prominence and jaw structure common to Indigenous American populations, with subtle Pacific Islander warmth in skin undertones.",
+    "heritage": "North African dominant (51.2%) with significant South Asian (25.9%), Indigenous American (17.7%), and Hispanic/Latin American (5.2%) ancestry. The genetic blend creates a warm, golden-brown complexion with the angular facial structure and fine features characteristic of North African heritage, combined with the prominent cheekbones and strong jaw typical of Indigenous American genetics, enriched by South Asian depth in skin tone and Hispanic/Latin warmth in undertones.",
     "height_cm": 176,
     "weight_kg": 62,
     "build": "Lean and angular, almost wire-thin from irregular eating habits and stimulant-heavy diet. Defined shoulders and chest with minimal body fat; the kind of frame that reads as either malnourished or ascetic depending on context.",
@@ -206,8 +182,8 @@
     "hair_style": "Completely shaved; he maintains it himself with a cheap electric razor, leaving minor uneven patches he doesn't bother to correct",
     "hair_length": "Shaved",
     "eye_color": "Dark brown, natural; right eye has a faint metallic sheen around the pupil from the optical magnifier implant",
-    "skin_tone": "Medium-warm brown with subtle golden and reddish undertones from the blended South Asian, Indigenous American, and Pacific Islander ancestry. Even distribution across face and body with a sun-kissed quality.",
-    "complexion": "Angular features with high, prominent cheekbones and a strong jaw reflecting Indigenous American and South Asian heritage. Fine-pored skin with a perpetually tired quality — dark circles under his eyes from late-night work sessions. A thin scar runs across his left knuckle from a laminator incident three years ago. No facial hair; he shaves every other day without much care.",
+    "skin_tone": "Golden-brown with warm amber and terracotta undertones. The complexion reflects the warmth of North African and Hispanic/Latin heritage, deepened by South Asian genetics, with a sun-kissed quality distributed evenly across face and body.",
+    "complexion": "Angular features with high, prominent cheekbones and a strong jaw reflecting the dominant North African and Indigenous American heritage, softened by South Asian refinement in overall facial structure. Fine-pored skin with a perpetually tired quality — dark circles under his eyes from late-night work sessions. A thin scar runs across his left knuckle from a laminator incident three years ago. No facial hair; he shaves every other day without much care.",
     "distinguishing_marks": [
       "A crooked bioluminescent stripe in pale blue running from his left temple to his jaw, applied via black-market gene kit at age nineteen; the placement wavers slightly and pulses faintly when his heart rate spikes",
       "Thin white scar across the first knuckle of his left hand from a laminator burn",
@@ -217,14 +193,46 @@
     "posture_movement": "Perpetually fidgety; tends to stand with weight on the balls of his feet as if ready to move. Speaks with rapid hand gestures that emphasize technical points. His gaze darts frequently, especially when nervous — eyes track to exits or potential threats. When focused on detail work, he becomes eerily still. He has a habit of tapping his right temple rhythmically when thinking, especially when stuck on a problem.",
     "clothing_style": "Tier 3-4 working class with anti-identification design choices. Favors loose-fitting, dark synth-cotton jackets with many interior pockets for tools and blank credsticks. Worn cargo pants in charcoal grey, often stained with laminate dust or solder residue. His shoes are cheap polymer-soled runners, scuffed and held together with cable ties. He wears a faded, repurposed server-farm tech vest underneath his jacket — it still has a dangling ID badge from a corporation he never actually worked for, which he keeps as a joke about the documents he sells. His hands are rarely clean; he wears fingerless gloves most days, more out of habit than need."
   },
-  "image_prompt": "Elu Leota-Pathak, cyberpunk 2226, shaved-headed figure with medium-warm brown skin and angular South Asian-Indigenous American-Pacific Islander features, high cheekbones and strong jaw. Pale blue bioluminescent stripe wavering from left temple to jaw, faintly pulsing. Dark tired eyes with metallic ring around right iris from optical implant. Lean, wire-thin build, perpetually fidgety posture on the balls of his feet. Wearing loose dark synth-cotton jacket with multiple pockets, charcoal cargo pants stained with laminate dust, fingerless gloves, scuffed polymer shoes held with cable ties. Faded server-farm tech vest visible underneath with dangling corporate ID badge. Right hand raised near temple as if tapping rhythmically. Cyberpunk underground workshop setting, neon blue accent lighting reflecting off the bioluminescent stripe, dramatic shadows emphasizing angular features and nervous energy. Gritty, lived-in aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "A lean 176cm tall cyborg document forger in the Great Lakes Metropolitan Zone, 2226. Golden-brown complexion with warm amber undertones reflecting North African, South Asian, Indigenous American, and Hispanic/Latin heritage. Angular face with high prominent cheekbones and strong jaw, tired dark eyes with one eye showing a faint metallic optical implant ring. Shaved head revealing minor uneven patches. Crooked pale blue bioluminescent stripe running from left temple to jaw, pulsing faintly. Dark circles under eyes. Fingerless gloves on stained hands. Wearing loose dark synth-cotton jacket with interior pockets, charcoal grey cargo pants stained with laminate dust, worn polymer runners held together with cable ties. Faded server-farm tech vest underneath with dangling corporate ID badge. Perpetually fidgety posture, weight on balls of feet. Tapping right temple rhythmically. Underground tech workshop setting with harsh neon and flickering fluorescents, scattered tools and blank credsticks visible. Neo-noir street-level aesthetic, moody atmospheric lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 52.3,
-    "Indigenous American": 37.6,
-    "Pacific Islander": 10.1
+    "North African": 51.2,
+    "South Asian": 25.9,
+    "Indigenous American": 17.7,
+    "Hispanic/Latin American": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Maghreb": {
+        "Algerian": 32.3,
+        "Mauritanian": 18.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 4.9
+      },
+      "Indian": {
+        "Malayali": 17.2,
+        "Marathi": 3.8
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 17.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 2.2,
+        "Honduran": 0.6
+      },
+      "Mexican": {
+        "Mexican": 2.4
+      }
+    }
+  }
 }

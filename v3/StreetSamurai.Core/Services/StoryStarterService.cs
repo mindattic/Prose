@@ -135,7 +135,7 @@ public class StoryStarterService
             $"- {f.Label}: {f.VoiceTone}"));
 
         var system = $"""
-            You are a literary fiction author writing the opening of a cyberpunk story
+            You are a literary fiction author writing the opening of a neo-noir story
             set in Meridian City — a near-future megacity where corporations hold sovereignty,
             neural interfaces are ubiquitous, and the line between human and machine dissolves
             a little more every day.
@@ -188,7 +188,7 @@ public class StoryStarterService
         // Generate a title
         var titlePrompt = $"Given this story opening, generate a short, evocative title (2-5 words, no quotes). The title should feel like graffiti on a wall — raw, cryptic, beautiful:\n\n{text}";
         var title = await llm.GenerateAsync(
-            "You generate short, evocative titles for cyberpunk fiction. Respond with ONLY the title, nothing else.",
+            "You generate short, evocative titles for near-future fiction. Respond with ONLY the title, nothing else.",
             titlePrompt, 0.9, 50, ct: ct);
         title = title.Trim().Trim('"').Trim('\'');
 
@@ -368,7 +368,7 @@ public class StoryStarterService
         var (lead, _) = facets.SelectFacets(weights, seedTriggers, []);
 
         var system = $"""
-            You are a literary fiction author continuing a cyberpunk story
+            You are a literary fiction author continuing a neo-noir story
             set in Meridian City.
 
             Your voice is {lead.Label} — {lead.VoiceTone}.
@@ -437,7 +437,7 @@ public class StoryStarterService
         }
 
         var system = $"""
-            You are a literary editor polishing cyberpunk fiction set in Meridian City.
+            You are a literary editor polishing near-future fiction set in Meridian City.
             You refine prose — tighten sentences, sharpen imagery, fix awkward phrasing,
             remove cliches — without changing the story, characters, or events.
 
@@ -492,7 +492,7 @@ public class StoryStarterService
         var moodLine = string.IsNullOrWhiteSpace(mood) ? "" : $"\nMOOD/TONE: {mood}";
 
         var system = $"""
-            You are a literary editor rewriting cyberpunk fiction set in Meridian City.
+            You are a literary editor rewriting near-future fiction set in Meridian City.
             You rewrite passages according to the author's direction while maintaining
             consistency with the world, characters, and story.
 

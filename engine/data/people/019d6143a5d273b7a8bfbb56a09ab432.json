@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d273b7a8bfbb56a09ab432",
   "type": "character",
-  "name": "Jabari Szabó-Magnúsdóttir-Kabwit",
+  "name": "Ivar Hong-Magnúsdóttir-Holm",
   "aliases": [
     "Haze",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Division",
-  "description": "Cassiel Kimura-Nkrumah are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 40, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a demolitions expert out of The Shelf, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Cassiel Kimura-Nkrumah are known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Ivar Hong-Magnúsdóttir-Holm are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 40, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a demolitions expert out of The Shelf, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Ivar Hong-Magnúsdóttir-Holm are known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.26,
@@ -262,7 +262,7 @@
     "Prepared": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,43 +279,15 @@
     "Bioelectric Muscle Fiber",
     "The Shelf",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
-    "Lazarus LX-2 'Lab Rat'",
     "Burden of Longitude",
-    "Pellucid Systems",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Glass Garden' Caltrops",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Glass Garden",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Underlayer Collective",
-    "Timur Osei-Bjelke",
-    "Witness",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Lazarus LX-2 'Lab Rat'",
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (37.6%), South Asian (23.1%), Eastern European (20.8%), Northern European (18.5%) — complex diaspora blend resulting in warm-toned skin with subtle undertones reflecting multiple continental ancestry",
+    "heritage": "Northern European (63.9%), East Asian (22.2%), South Asian (13.9%) — a balanced diaspora blend manifesting as medium-light skin with cool undertones from Nordic ancestry warmed by East and South Asian components. The genetic mix produces distinctly Nordic bone structure—high, prominent cheekbones and a broad brow ridge—softened by East Asian eye shape and South Asian fullness in the lower face and cheeks. Neither distinctly cool nor warm, the skin tone reflects all three ancestral regions equally.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density rather than bulk. Chest and torso built for stability and power; legs augmented with synthetic fiber and visibly denser than a baseline human frame.",
@@ -323,27 +295,44 @@
     "hair_style": "Cropped short and practical, maintained with military precision",
     "hair_length": "Short",
     "eye_color": "Dark brown, unremarkable without augmentation",
-    "skin_tone": "Warm medium brown with subtle golden and olive undertones from the blend of Sub-Saharan, South Asian, and Northern European ancestry. Deeper than purely European baseline, richer than singular African ancestry would suggest, with the characteristic warmth of mixed heritage.",
-    "complexion": "Structured face reflecting diverse heritage — high cheekbones and strong brow ridge suggesting Sub-Saharan ancestry, balanced by a jawline with subtle angularity from Eastern European genetics. Skin weathered but well-maintained. Fine scar tissue visible at the left temple and along the right side of the jaw — old impacts, professionally healed. Deep-set eyes, perpetually focused. Minimal grooming beyond functional maintenance.",
+    "skin_tone": "Medium-light with balanced undertones—cool-toned Nordic base enriched by warm East and South Asian midtones. Pale enough to reveal Northern European heritage clearly, yet the warmer undertones prevent starkness, creating a genuinely neutral complexion that reads as naturally diaspora-mixed rather than distinctly one region.",
+    "complexion": "Angular face reflecting precise genetic blend—prominent Nordic cheekbones and broad brow ridge balanced by softer East Asian eye shape (slight epicanthal fold, deeper-set eyes) and South Asian fullness in the cheeks and lower jaw. Jawline shows controlled angularity without severity. Skin weathered but well-maintained. Fine scar tissue visible at the left temple and along the right side of the jaw—old impacts, professionally healed. Deep-set eyes, perpetually focused. Minimal grooming beyond functional maintenance.",
     "distinguishing_marks": [
       "Thin scar running from left temple to the corner of the left eye, approximately 4cm, silvered with age",
       "Jagged scar along the right jawline from ear to chin, roughly 8cm, indicating impact or laceration trauma",
-      "Faded burn marks on both forearms — contact burns from ordnance work, pale against darker skin",
+      "Faded burn marks on both forearms—contact burns from ordnance work, pale against baseline skin tone",
       "A small anchor tattoo on the inside of the left wrist in black ink, barely visible unless pointed out"
     ],
-    "visible_augmentations": "Synthetic muscle fiber replacement visible in both legs from mid-thigh downward — chrome-gray biomechanical plating at the knee joints and along the anterior tibialis. The augmented legs have a distinctly different texture and sheen compared to baseline skin. Neural interface jack at the base of the skull is partially visible as a small raised port beneath short hair, with faint circuitry etching around it.",
-    "posture_movement": "Stands with weight slightly forward, shoulders squared, as if perpetually bracing against impact. Movement is economical and controlled — no wasted motion. When walking, the augmented legs move with mechanical precision that breaks the rhythm of natural gait, especially noticeable on stairs or uneven surfaces. At rest, their hands are still, fingers slightly flexed. Default expression is neutral to mildly skeptical.",
-    "clothing_style": "Tier 3-4 utilitarian: heavy reinforced cargo pants with internal thigh pockets, black or dark gray. Worn composite-fiber jacket with visible tool loops and gear attachment points. Steel-toed boots, maintained but scuffed. No jewelry or nonessential ornamentation. Clothing shows repair patches and wear consistent with field work. Layers suggest climate adaptation rather than fashion — undersuit visible at collar, likely temperature-regulating underlayer common to runners and demolitions workers."
+    "visible_augmentations": "Synthetic muscle fiber replacement visible in both legs from mid-thigh downward—chrome-gray biomechanical plating at the knee joints and along the anterior tibialis. The augmented legs have a distinctly different texture and sheen compared to baseline skin. Neural interface jack at the base of the skull is partially visible as a small raised port beneath short hair, with faint circuitry etching around it.",
+    "posture_movement": "Stands with weight slightly forward, shoulders squared, as if perpetually bracing against impact. Movement is economical and controlled—no wasted motion. When walking, the augmented legs move with mechanical precision that breaks the rhythm of natural gait, especially noticeable on stairs or uneven surfaces. At rest, their hands are still, fingers slightly flexed. Default expression is neutral to mildly skeptical.",
+    "clothing_style": "Tier 3-4 utilitarian: heavy reinforced cargo pants with internal thigh pockets, black or dark gray. Worn composite-fiber jacket with visible tool loops and gear attachment points. Steel-toed boots, maintained but scuffed. No jewelry or nonessential ornamentation. Clothing shows repair patches and wear consistent with field work. Layers suggest climate adaptation rather than fashion—undersuit visible at collar, likely temperature-regulating underlayer common to runners and demolitions workers."
   },
-  "image_prompt": "Jabari Szabó-Magnúsdóttir-Kabwit, cyberpunk 2226, GLMZ runner with mixed Sub-Saharan African, South Asian, Eastern European and Northern European heritage. Medium-warm brown skin with golden undertones, 178cm tall, broad muscular build. Dark brown hair graying at temples, cropped military-short. Deep-set dark brown eyes, weathered face with high cheekbones and strong jawline, silvered scar from temple to eye, jagged scar along right jawline. Chrome-gray biomechanical leg augmentations visible from mid-thigh down with exposed knee plating, synthetic muscle fiber replacement, neural interface port at base of skull. Wearing black reinforced cargo pants with tool loops, worn composite-fiber jacket with gear attachment points, steel-toed scuffed boots. Faded burn marks on forearms. Standing with shoulders squared, weight forward, neutral skeptical expression. Utilitarian field-work aesthetic, repair patches visible, temperature-regulating undersuit collar visible. Industrial dystopian warehouse setting, cool neon-tinged lighting, atmospheric haze. --ar 2:3 --v 6",
+  "image_prompt": "Ivar Hong-Magnúsdóttir-Holm, 2226 neo-noir operative, 178cm tall with broad muscular build. Medium-light warm-neutral skin tone reflecting Nordic, East Asian, and South Asian heritage. Dark brown hair graying at temples, cropped military-short. Angular face with high Nordic cheekbones softened by subtle East Asian eye shape and South Asian facial fullness. Deep-set dark brown eyes with neutral expression. Visible scars: 4cm silvered scar from left temple to eye corner, 8cm jagged scar along right jawline. Faded burn marks on forearms. Small anchor tattoo on inner left wrist. Chrome-gray biomechanical augmentations visible on both legs from mid-thigh down with plating at knee joints. Neural interface jack visible at base of skull. Wearing black reinforced cargo pants with gear pockets, worn composite-fiber jacket with tool loops, steel-toed boots. Temperature-regulating undersuit visible at collar. Stands with squared shoulders, weight forward, economical controlled posture. Dystopian industrial setting, cool neon lighting casting blue and gray shadows, depth-of-field background, cinematic intensity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 37.6,
-    "South Asian": 23.1,
-    "Eastern European": 20.8,
-    "Northern European": 18.5
+    "Northern European": 63.9,
+    "East Asian": 22.2,
+    "South Asian": 13.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "English": 14.7,
+        "Scottish": 49.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 22.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 13.9
+      }
+    }
+  }
 }

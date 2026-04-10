@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b97449b961f6af4beac28f",
   "type": "character",
-  "name": "Emiliano Fredriksen-Cervantes",
+  "name": "Onyx Mori-Konaté",
   "aliases": [
     "Dr. Nwobi",
     "the Resurrectionist"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Circuit, Deepwell Station sublevel archive, near sub-level access near LaSalle and Congress",
-  "description": "Aurelius is a tall, rangy man who looks like he was built for a climate that no longer exists — long-limbed, always slightly cold, wearing layered synthetic wool even in heated archive rooms. His hair is silver-white and kept in neat locs that he pins up while working; his dark skin shows the fine grid of an old subdermal data-lattice across the backs of both hands, installed in his thirties and only partially removed when it became obsolete. The residual chrome lines have faded to a faint blue-silver tracery he now considers part of his appearance. He has the slow, deliberate movements of someone who has spent decades in environments where sudden gestures cause data loss.\n\nHe is professionally famous in a narrow field and almost unknown outside it. His specialty — recovering and contextualizing fragmentary datasets from the pre-Collapse decades — requires equal parts computer forensics, historical linguistics, and patience that most researchers lack. He is gentle, deeply unhurried, and possessed of an almost geological sense of time. He finds other people's urgency faintly amusing. He is also quietly wrestling with the realization that one of the major datasets he recovered and published may have been deliberately corrupted before he found it — and his published interpretations therefore wrong.",
+  "description": "Onyx Mori-Konaté is a tall, rangy man who looks like he was built for a climate that no longer exists — long-limbed, always slightly cold, wearing layered synthetic wool even in heated archive rooms. His hair is silver-white and kept in neat locs that he pins up while working; his dark skin shows the fine grid of an old subdermal data-lattice across the backs of both hands, installed in his thirties and only partially removed when it became obsolete. The residual chrome lines have faded to a faint blue-silver tracery he now considers part of his appearance. He has the slow, deliberate movements of someone who has spent decades in environments where sudden gestures cause data loss.\n\nHe is professionally famous in a narrow field and almost unknown outside it. His specialty — recovering and contextualizing fragmentary datasets from the pre-Collapse decades — requires equal parts computer forensics, historical linguistics, and patience that most researchers lack. He is gentle, deeply unhurried, and possessed of an almost geological sense of time. He finds other people's urgency faintly amusing. He is also quietly wrestling with the realization that one of the major datasets he recovered and published may have been deliberately corrupted before he found it — and his published interpretations therefore wrong.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,42 +247,22 @@
   "registered_firearms": [],
   "related_entities": [
     "Deepwell Station",
-    "Tender Collapse",
+    "Rubble & Rye",
     "The Circuit",
     "Zheng-dao Bioelectric",
     "Graviton Compression Emitter GCE-3 'Flatline'",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Stratum",
-    "ARCHIVE",
+    "Circuit",
     "Silver",
     "The Pure Hand",
-    "Wool",
-    "Aybek Alvarez-Okonkwo",
-    "Boubacar Krstić-Amara",
-    "Breck Tannen",
-    "Chronicle",
-    "Djeneba Park-Traore",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kadiatou Bergstrom-Konate",
-    "Lowline Press",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "Ridgeline",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Archive",
-    "University Spine",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Wool"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European-dominant (39.8%), with significant Hispanic/Latin American (23.2%) and Northern European (22.3%) admixture; minor Middle Eastern (11.0%) and trace East Asian (3.7%) ancestry. Complex Ubiquitous Diaspora genetics expressed as warm-toned olive-brown skin with subtle Mediterranean and Central European undertones.",
+    "heritage": "Predominantly Sub-Saharan African (58.5%) with substantial East Asian (25.6%) and Eastern European (15.9%) admixture. This genetic combination produces a striking deep warm brown complexion with golden and reddish undertones characteristic of West/Central African ancestry, subtly enriched by East Asian warmth and cooled by Eastern European influence. The resulting skin tone is luminous and complex, shifting in depth across different lighting conditions.",
     "height_cm": 191,
     "weight_kg": 78,
     "build": "Tall and rangy with long limbs and narrow shoulders; lean muscle mass showing slight age-related atrophy in the upper arms. Built for economy of movement rather than strength — the frame of someone who has spent decades in stillness.",
@@ -290,8 +270,8 @@
     "hair_style": "Neat locs, typically pinned up in a professional bun or loose coil when working; occasionally left down past shoulder length on teaching days",
     "hair_length": "Long",
     "eye_color": "Dark brown with faint amber luminescence from ocular overlay in low-light conditions",
-    "skin_tone": "Warm olive-brown with golden undertones; deeper in areas with sun exposure, ashy in underexposed regions from extensive archive sublevel work. The blending of Eastern European, Hispanic, and Northern European ancestry creates a nuanced complexion that tans rather than deepens naturally.",
-    "complexion": "Fine-lined face with moderate cheekbones and defined jaw structure reflecting mixed Central/Eastern European and Hispanic features; skin condition is good but weathered, with crow's feet and forehead creases that deepen when concentrating. Closely groomed, minimal facial hair — a thin gray beard kept to a precise 2mm length.",
+    "skin_tone": "Deep warm brown with golden and reddish undertones. Rich in sun-exposed areas, slightly cooler in underexposed regions from extensive archive sublevel work. The blending of Sub-Saharan African warmth, East Asian mellowness, and Eastern European undertones creates a complex, luminous complexion that deepens naturally with exposure.",
+    "complexion": "Finely-lined face with moderate to high cheekbones and defined jaw structure reflecting Sub-Saharan African and East Asian features; skin condition is good but weathered, with crow's feet and forehead creases that deepen when concentrating. Closely groomed, minimal facial hair — a thin gray beard kept to a precise 2mm length.",
     "visible_augmentations": "Faint blue-silver subdermal lattice tracery on hands and forearms (non-functional but cosmetically retained). Ocular overlay visible as a hairline amber luminescence in the sclera under certain angles and low-light conditions. No external chrome or obvious prosthetics.",
     "distinguishing_marks": [
       "Faint blue-silver subdermal tracery forming a geometric grid pattern across the backs of both hands and extending up the inner forearms in parallel lines, remnants of a data-lattice implant installed in his thirties and partially removed two decades ago",
@@ -301,16 +281,35 @@
     "posture_movement": "Moves with deliberate, economical slowness — shoulders slightly hunched forward as if perpetually leaning toward a microscopic text. Hands held loosely at sides, rarely gesturing. Blinks infrequently and with purpose. When seated, he becomes nearly motionless for hours. His head tilts slightly when listening, as if processing at a different speed than the speaker.",
     "clothing_style": "Layered in synthetic wool and cotton blends even in warm spaces — cream, charcoal, and muted blues dominate. Favors high-necked thermal underlayers, loose cardigans, and tailored but worn slacks. Archive-appropriate: no loose fabrics, no static-prone synthetics, no jewelry except a simple titanium wedding band. Shoes are soft archival-safe slip-ons in matte black. On teaching days, adds a structured linen jacket from a mid-tier corpo tailor (suggesting Tier 2-3 University Spine affiliation). Everything is immaculate but slightly outdated — fashions from 5-10 years prior."
   },
-  "image_prompt": "Tall Eastern European-Hispanic man, 191cm, silver-locs pinned in professional bun, warm olive-brown complexion with golden undertones, age lines and crow's feet, minimal gray beard, dark brown eyes with subtle amber ocular overlay glow. Faint blue-silver subdermal geometric lattice tracery visible on hands and forearms. Dressed in layered archival-appropriate clothing: cream thermal underlayer, charcoal cardigan, tailored slacks, matte black soft slip-ons, simple titanium wedding band. Hunched posture, economical deliberate movement, slightly tilted head. Standing in climate-controlled archive sublevel environment, cool fluorescent lighting casting subtle shadows on geometric subdermal patterns. Immaculate but dated aesthetic, 2220s cyberpunk setting. Contemplative, professorial mood. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Onyx Mori-Konaté, a tall 191cm figure with deep warm brown skin bearing golden and reddish undertones reflecting Sub-Saharan African, East Asian, and Eastern European heritage. Silver-white hair in neat locs pinned in a professional bun, streaked with remnants of melanin. Dark brown eyes with faint amber luminescence from ocular overlay visible in shadow. Fine-lined weathered face with defined cheekbones and jaw, thin gray beard at 2mm. Faint blue-silver subdermal geometric lattice tracery across hands and forearms, barely visible scar from temple to jawline. Wearing cream thermal underlayer, charcoal cardigan, and muted blue tailored slacks, archival-safe styling. Shoulders slightly hunched forward, economical posture suggesting decades of stillness. Standing in soft archive sublevel lighting with subtle shadows emphasizing the complex depth of skin tone. GLMZ, archive aesthetic, contemplative mood, immaculate but slightly outdated 5-10 year old fashion. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 39.8,
-    "Hispanic/Latin American": 23.2,
-    "Northern European": 22.3,
-    "Middle Eastern": 11.0,
-    "East Asian": 3.7
+    "Sub-Saharan African": 58.5,
+    "East Asian": 25.6,
+    "Eastern European": 15.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 58.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 17.4
+      },
+      "Chinese": {
+        "Cantonese": 8.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 10.8,
+        "Ukrainian": 5.1
+      }
+    }
+  }
 }

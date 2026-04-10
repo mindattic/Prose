@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b3735999ccbd28384e9449",
   "type": "character",
-  "name": "Leszek Tamale-Rahman",
+  "name": "Malika Kulkarni-Sepúlveda",
   "aliases": [
     "Chop",
     "The Kid"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Shallowgrave, Geartown adjacent — a rented bay in a semi-collapsed parking structure called the Stack, near Western and Division",
-  "description": "Roko is nineteen and looks younger, which he has stopped minding because it means people underestimate what he can do to a Ferrogate Transit pod in forty minutes flat. He's wiry and long-limbed, Algerian-Māori heritage that gives him a face of striking angles — high forehead, strong jaw, a nose that's been broken once (proud of it), skin a warm tawny brown that's perpetually smudged with grease no matter how thoroughly he washes. His hair is dark and tight-curled, usually stuffed into a mechanical bandana that can project a heads-up schematic overlay. He has cat ears from a geneware package he bought secondhand at sixteen — mottled grey and black, fully functional for enhanced hearing, constantly swiveling toward sounds before he's consciously registered them.\n\nHe is relentlessly cheerful in a way that reads as naive until you notice he is also relentlessly competent. He can strip a Ferrogate pod, a Sterling-Nakamura delivery drone, or an Axiom security crawler down to useful components faster than anyone else in Shallowgrave, and he knows the resale value of every part to three decimal places. He has no interest in violence, considerable interest in engines, and a complicated relationship with the two older crew members who 'own' the bay he works out of and take sixty percent of what he earns.",
+  "description": "Malika Kulkarni-Sepúlveda is nineteen and looks younger, which he has stopped minding because it means people underestimate what he can do to a Ferrogate Transit pod in forty minutes flat. He's wiry and long-limbed, Algerian-Māori heritage that gives him a face of striking angles — high forehead, strong jaw, a nose that's been broken once (proud of it), skin a warm tawny brown that's perpetually smudged with grease no matter how thoroughly he washes. His hair is dark and tight-curled, usually stuffed into a mechanical bandana that can project a heads-up schematic overlay. He has cat ears from a geneware package he bought secondhand at sixteen — mottled grey and black, fully functional for enhanced hearing, constantly swiveling toward sounds before he's consciously registered them.\n\nHe is relentlessly cheerful in a way that reads as naive until you notice he is also relentlessly competent. He can strip a Ferrogate pod, a Sterling-Nakamura delivery drone, or an Axiom security crawler down to useful components faster than anyone else in Shallowgrave, and he knows the resale value of every part to three decimal places. He has no interest in violence, considerable interest in engines, and a complicated relationship with the two older crew members who 'own' the bay he works out of and take sixty percent of what he earns.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -191,7 +191,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -252,34 +252,16 @@
     "Ferrogate Transit",
     "Shallowgrave",
     "Tessera Corponation Palimpsest Identity Engine",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
     "The Heritage Vault",
     "Geartown",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
     "Vespid Dynamics Reconnaissance Beetle RB-2",
     "Slagworks Industrial",
-    "Arcturus CK-5 'Bloodhound'",
-    "Auricula Felis Modification",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Devraj Solano-Yildirim",
-    "Doru Fofana-Câmpeanu",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Idris Forsberg-Quaye",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Obinna Czekalski-Fonoti",
-    "Othniel Babić-Asantewaa",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Tessera Corponation",
-    "The Pure Hand",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Vuk Jorgensen-Toure"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Eastern European (Polish/Slavic) with significant Sub-Saharan African, South Asian, Hispanic, and Pacific Islander admixture; this creates a unique phenotype blending Northern and Equatorial traits — warm medium-brown skin with subtle olive undertones, angular Slavic bone structure softened by broader features from African and South Asian ancestry, dark hair texture showing both European and African characteristics",
+    "heritage": "Malika's genetic ancestry—34.3% Central Asian, 29.5% South Asian, 25.4% Hispanic/Latin American, and 10.8% Eastern European—creates a striking polychromatic phenotype. Central Asian and South Asian ancestry dominates her bone structure and coloring, with meaningful contributions from Latin American heritage visible in skin tone warmth and facial contours, while Eastern European ancestry adds angular definition to her features. The blend manifests as a dynamic interplay of rounded and angular: high, defined cheekbones and a strong jawline from Central Asian and Eastern European heritage softened by broader face proportions and fuller contours from South Asian ancestry. Her hair texture reflects this multifaceted heritage—naturally dark curls with variable strand thickness, neither uniformly fine nor coarse but richly textured.",
     "height_cm": 176,
     "weight_kg": 62,
     "build": "Wiry and long-limbed with corded forearms from years of precision mechanical work; lean muscle density, minimal body fat, functional rather than aesthetic physiology",
@@ -287,27 +269,71 @@
     "hair_style": "Tight natural curls, usually compressed under mechanical bandana",
     "hair_length": "Short (approximately 5cm when loose)",
     "eye_color": "Dark brown, alert and quick-moving",
-    "skin_tone": "Warm medium brown with subtle olive undertones, the result of Eastern European, African, South Asian, and Pacific Islander ancestry blended together; richer than pure tawny, with depth from multiple heritage sources",
-    "complexion": "Perpetually smudged with machinery grease despite frequent washing; bone structure reflects mixed ancestry — high forehead and strong jaw from Eastern European heritage, broader cheekbones and fuller facial contours from Sub-Saharan and South Asian ancestry, nose slightly off-center from old break (kept as is). Minimal facial hair. Youthful appearance — reads 17-18 despite being 19",
+    "skin_tone": "Warm medium brown with golden undertones from South Asian and Central Asian ancestry, enriched by the warmth of Hispanic/Latin American heritage, with subtle olive notes from the Eastern European admixture. The result is dimensionally rich and deep, appearing to shift slightly depending on light and angle—never flat, always luminous beneath surface.",
+    "complexion": "Perpetually smudged with machinery grease despite frequent washing; bone structure reflects balanced multihereditary influence—high, prominent cheekbones and defined jaw from Central Asian and Eastern European heritage, broader face width and fuller cheek and lip contours from South Asian ancestry, nose slightly off-center from old break. Minimal facial hair. Youthful appearance—reads 17-18 despite being 19.",
     "distinguishing_marks": [
-      "Faded scar along left knuckles from old mechanical injury, pale against his skin tone",
+      "Faded scar along left knuckles from old mechanical injury, pale against warm brown skin tone",
       "Grease stains under fingernails that resist cleaning, occupational marker",
       "Small burn mark on right wrist from soldering accident, approximately 2cm diameter, pale and healed"
     ],
-    "visible_augmentations": "Mottled grey-and-black geneware cat ears mounted on skull, fully functional with independent articulation — swivel and rotate consciously and reflexively toward sounds. Mechanical bandana worn constantly, woven composite with visible circuitry threading along edges, small holographic projector node at left temple",
-    "posture_movement": "Moves with economic precision — minimal wasted motion, fluid when working, tends to crouch or sit cross-legged rather than stand idle. Hands constantly active even at rest (sorting, measuring, fidgeting with small parts). Cat ears telegraph his attention before his eyes do; often appears to be listening to sounds others don't perceive. Carries himself with quiet confidence that reads as youth until you watch him work",
-    "clothing_style": "Tier 5 working-class functional: wear-stained synthmesh shop coat (charcoal grey, multiple pockets, reinforced at elbows and cuffs), layered with a faded band-logo tee underneath. Cargo pants in heavy cotton-blend with grease marks and repair patches, held up with a braided belt made from salvaged cable. Reinforced steel-toed boots, scuffed and worn. No jewelry except a thin wire-wrapped band around left wrist (handmade, possibly from parts). Bandana always in place; layers minimally beyond that. Clothing is maintained but clearly secondhand and well-used — everything chosen for durability over appearance"
+    "visible_augmentations": "Mottled grey-and-black geneware cat ears mounted on skull, fully functional with independent articulation—swivel and rotate consciously and reflexively toward sounds. Mechanical bandana worn constantly, woven composite with visible circuitry threading along edges, small holographic projector node at left temple",
+    "posture_movement": "Moves with economic precision—minimal wasted motion, fluid when working, tends to crouch or sit cross-legged rather than stand idle. Hands constantly active even at rest (sorting, measuring, fidgeting with small parts). Cat ears telegraph her attention before her eyes do; often appears to be listening to sounds others don't perceive. Carries herself with quiet confidence that reads as youth until you watch her work",
+    "clothing_style": "Tier 5 working-class functional: wear-stained synthmesh shop coat (charcoal grey, multiple pockets, reinforced at elbows and cuffs), layered with a faded band-logo tee underneath. Cargo pants in heavy cotton-blend with grease marks and repair patches, held up with a braided belt made from salvaged cable. Reinforced steel-toed boots, scuffed and worn. No jewelry except a thin wire-wrapped band around left wrist (handmade, possibly from parts). Bandana always in place; layers minimally beyond that. Clothing is maintained but clearly secondhand and well-used—everything chosen for durability over appearance"
   },
-  "image_prompt": "Leszek Tamale-Rahman, 19-year-old cyberpunk mechanic with warm medium-brown skin blending Eastern European, African, South Asian, and Pacific Islander ancestry; angular Slavic bone structure softened by broader cheekbones and fuller features from African and South Asian heritage. Short tight dark curls compressed under mechanical bandana with visible circuitry and holographic projector node at left temple. Functional grey-and-black geneware cat ears swivel independently on skull. Dark brown alert eyes, off-center nose from old break, perpetually grease-smudged complexion. Wiry lean build with corded forearms. Wearing worn charcoal synthmesh shop coat over faded band tee, patched cargo pants with grease marks, scuffed steel-toed boots, braided cable belt, thin wire-wrapped wrist band. Faded scar on left knuckles, small healed burn mark on right wrist. Crouching in a neon-lit GLMZ workshop, hands active with mechanical parts, cat ears angled toward distant sound, cyberpunk 2226 aesthetic, warm industrial lighting with cool blue-tinted neon glows, photorealistic with gritty texture, quiet confident youth energy despite looking mature when focused on technical work --ar 2:3 --v 6",
+  "image_prompt": "Malika Kulkarni-Sepúlveda, 19-year-old neo-noir mechanic, warm medium-brown skin with golden undertones, high cheekbones and defined jawline with broader face proportions, dark naturally-curled hair compressed under mechanical bandana with embedded circuitry. Mottled grey-and-black functional geneware cat ears mounted on skull, rotating toward distant sounds. Wiry 176cm frame, lean and corded from precision work, wearing wear-stained charcoal synthmesh shop coat with reinforced cuffs over faded band-logo tee. Heavy cargo pants with grease marks and patches, braided cable belt, scuffed steel-toed boots. Hands perpetually active, grease permanently under fingernails, faded scar on left knuckles, small pale burn mark on right wrist. Crouched in dim workshop with neon accent lighting catching the holographic projector node at left temple, industrial background, young but radiating quiet mechanical confidence, minimal wasted motion. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 36.8,
-    "Sub-Saharan African": 22.9,
-    "South Asian": 20.9,
-    "Hispanic/Latin American": 10.7,
-    "Pacific Islander": 8.7
+    "Central Asian": 34.3,
+    "South Asian": 29.5,
+    "Hispanic/Latin American": 25.4,
+    "Eastern European": 10.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 19.1
+      },
+      "Iranian Central": {
+        "Tajik": 6.7
+      },
+      "Mongolic": {
+        "Kalmyk": 3.4,
+        "Mongolian": 5.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 1.8,
+        "Kannada": 7.7
+      },
+      "Pakistani": {
+        "Pashtun": 6.5,
+        "Sindhi": 13.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.6
+      },
+      "South American": {
+        "Colombian": 12.9,
+        "Venezuelan": 7.9
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 2.1,
+        "Romanian": 4
+      },
+      "Slavic South": {
+        "Bulgarian": 0.5
+      },
+      "Slavic East": {
+        "Russian": 4.2
+      }
+    }
+  }
 }

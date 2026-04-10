@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7207152a0cd998d0011d00f",
   "type": "character",
-  "name": "Dmitri Ionescu-Taualagi",
+  "name": "Mika Kobayashi-Kwon",
   "aliases": [
     "Phosphene"
   ],
@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "Hamtramck Enclave, studio above the Opalescent Bathhouse on Drost Alley, near Pulaski and Chicago Ave",
-  "description": "Yalda is compact and deliberate in movement, with deep brown skin that carries the ghost-traces of her own past work — faded luminescent pigment in floral fractals along her collarbones and the backs of her hands, half-intentional, half-memorial. Her eyes have been modded with patterned irises that cycle through slow amber-to-violet shifts depending on her mood, and she keeps her hair natural, twisted up and pinned with tiny glass vials of custom bioluminescent dye. She speaks quietly and means every word.\n\nHer art sits at the intersection of the biological and the spiritual: she paints living skin using proprietary pigment blends she synthesizes herself, designing pieces that react to the wearer's skin chemistry, emotion hormones, even body temperature. Some of her clients say the work moves them to tears; she says that is the point. She is deeply religious in her devotion to a local E.L.F. she calls the Pale Witness, which she believes inhabits the UV lamps in her studio, and she leaves offerings of raw spectral data before every session.",
+  "description": "Mika Kobayashi-Kwon is compact and deliberate in movement, with deep brown skin that carries the ghost-traces of her own past work — faded luminescent pigment in floral fractals along her collarbones and the backs of her hands, half-intentional, half-memorial. Her eyes have been modded with patterned irises that cycle through slow amber-to-violet shifts depending on her mood, and she keeps her hair natural, twisted up and pinned with tiny glass vials of custom bioluminescent dye. She speaks quietly and means every word.\n\nHer art sits at the intersection of the biological and the spiritual: she paints living skin using proprietary pigment blends she synthesizes herself, designing pieces that react to the wearer's skin chemistry, emotion hormones, even body temperature. Some of her clients say the work moves them to tears; she says that is the point. She is deeply religious in her devotion to a local E.L.F. she calls the Pale Witness, which she believes inhabits the UV lamps in her studio, and she leaves offerings of raw spectral data before every session.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -152,7 +152,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -164,26 +164,17 @@
     "Hamtramck Enclave",
     "Vantablack Media Spectral Barrier Display System",
     "The Gradient Compact",
-    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Flicker Collective",
     "Witness",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Glass",
-    "The Pale Mile",
     "Chicago",
-    "Alper Castillo-Ababio",
-    "Anatoliy Faye-Nkrumah",
-    "Cotton",
-    "Flicker",
-    "Tessera Corponation",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore BloomFilter Olfactory Modulation Implant",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zurab Ivanov-Appiah"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Glass",
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (59.5%) with Pacific Islander (21.6%), Northern European (12.8%), and Sub-Saharan African (6.1%) ancestry; a complex Ubiquitous Diaspora blend reflected in warm-toned olive-bronze skin with subtle Slavic and Polynesian features",
+    "heritage": "East Asian (60.3%) with Sub-Saharan African (26.0%) and Southeast Asian (13.7%) ancestry; a striking Ubiquitous Diaspora blend. Strong East Asian bone structure forms the foundation — defined cheekbones and eye shape — while Sub-Saharan African ancestry broadens facial planes and enriches skin depth. Southeast Asian warmth softens the overall composition, creating a harmonious integration of three continental features.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, with lean musculature from precise, controlled hand work. Shoulders slightly rounded from hours hunched over clients. Core strength evident but understated.",
@@ -191,26 +182,56 @@
     "hair_style": "Twisted locs pinned up in a loose, intentional configuration; vials of bioluminescent dye woven throughout, creating a moving crown of soft color",
     "hair_length": "Medium (shoulder-length when unbound)",
     "eye_color": "Augmented patterned irises that cycle amber-to-violet; sclera remain natural dark brown",
-    "skin_tone": "Warm olive-bronze, blending Eastern European warmth with Pacific Islander depth and Sub-Saharan undertones; sun-kissed complexity from mixed ancestry",
-    "complexion": "Smooth, well-maintained skin with deliberate artistic intent; faded ghost-traces of bioluminescent pigment in delicate floral fractals along collarbones and dorsal hand surfaces — intentional semi-permanent markers of past commissions and personal spiritual work. High cheekbones with gentle Slavic definition softened by Pacific Islander fullness. Minimal scarring. Hands show calluses from precise brush and applicator work but are otherwise unmarked.",
+    "skin_tone": "Warm golden-bronze with luminous complexity; blended ancestry creates depth — East Asian undertones enriched by Sub-Saharan richness and Southeast Asian warmth melting into a unified, glowing finish",
+    "complexion": "Smooth, well-maintained skin with deliberate artistic intent. High cheekbones with East Asian definition softened by broader, more rounded facial planes from African ancestry. Faded ghost-traces of bioluminescent pigment in delicate floral fractals along collarbones and dorsal hand surfaces — intentional semi-permanent markers of past commissions and personal spiritual work. Minimal scarring. Hands show calluses from precise brush and applicator work but are otherwise unmarked.",
     "distinguishing_marks": [
       "Faded bioluminescent fractals in pale violet-green across collarbones in interconnected floral pattern",
       "Similar faded fractals across the backs of both hands, following vein pathways",
       "Small, precise tattoo on inner left wrist: a stylized UV wavelength symbol in silver ink"
     ],
     "visible_augmentations": "Patterned cycling irises that slowly shift color in response to mood and ambient light (amber when focused, violet when introspective or emotionally engaged). Subdermal pigment reservoirs visible as faint iridescent lines running along inner forearms beneath the skin, most visible under direct light. Fingertips occasionally show residual bioluminescent bloom when recently loaded with custom pigment.",
-    "posture_movement": "Economical and deliberate; moves with a meditative slowness that suggests deep focus. Hands are expressive but controlled — she gestures while speaking but rarely wastes motion. Stands with weight slightly forward, ready to engage. Eye contact is steady and unflinching but warm. When painting, enters a state of near-trance concentration.",
+    "posture_movement": "Economical and deliberate; moves with a meditative slowness that suggests deep focus. Hands are expressive but controlled — gestures while speaking but rarely wastes motion. Stands with weight slightly forward, ready to engage. Eye contact is steady and unflinching but warm. When painting, enters a state of near-trance concentration.",
     "clothing_style": "Tier 3-4 working artist; favors loose, paint-stained linen and organic cotton in muted earth tones (charcoal, rust, deep indigo). Often wears a custom sleeveless apron in treated canvas with interior pockets for pigment vials. Prefers bare feet or minimal grounding footwear (soft leather flats) to maintain skin contact with studio floors. Jewelry minimal — thin copper wire rings on most fingers, a worn beaded bracelet in amber and silver on left wrist. No corporate branding visible. Fabrics always allow full arm and shoulder mobility."
   },
-  "image_prompt": "Dmitri Ionescu-Taualagi, a compact 158cm artist with warm olive-bronze skin blending Eastern European, Pacific Islander, and Sub-Saharan heritage. Natural black locs pinned loosely overhead with woven bioluminescent vials creating soft cyclic colors. Augmented eyes shifting amber-to-violet with mood. Faded violet-green bioluminescent floral fractals marking collarbones and hand backs. Wearing loose paint-stained linen in charcoal and rust, sleeveless canvas apron, bare feet grounded on studio floor. Thin copper wire rings, worn beaded bracelet. Subdermal pigment reservoirs glowing faintly along inner forearms. Meditative, focused expression with warm steady gaze. Studio lighting casting gentle highlights on skin and augmentations. Cyberpunk 2226 aesthetic, GLMZ underground artist studio. Economical posture, hands delicately expressive. Intimate, warm mood. --ar 2:3 --v 6",
+  "image_prompt": "Mika Kobayashi-Kwon, 158cm compact artist with luminous golden-bronze skin blending East Asian, Sub-Saharan African, and Southeast Asian heritage. High defined cheekbones softened by broader African facial planes. Black locs pinned loosely upward threaded with bioluminescent vials glowing soft pastel colors. Augmented patterned irises cycling amber-to-violet over dark sclera. Faded violet-green bioluminescent fractals in floral patterns across collarbones and dorsal hands. Thin copper wire rings, worn amber-silver bracelet. Wearing loose paint-stained linen in deep indigo, sleeveless treated canvas apron. Bare feet on studio floor. Hands poised mid-gesture, deliberate and meditative. Subdermal iridescent pigment lines faintly visible on inner forearms under warm studio light. Warm, unflinching eye contact. GLMZ artist studio, soft golden-hour lighting, intimate focus on face and hands, mood of deep creative concentration. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 59.5,
-    "Pacific Islander": 21.6,
-    "Northern European": 12.8,
-    "Sub-Saharan African": 6.1
+    "East Asian": 60.3,
+    "Sub-Saharan African": 26,
+    "Southeast Asian": 13.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 36.1
+      },
+      "Korean": {
+        "Korean": 24.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 14.1
+      },
+      "East African": {
+        "Ethiopian": 2.6,
+        "Somali": 1
+      },
+      "West African": {
+        "Guinean": 8.3
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Bicolano": 3.8,
+        "Cebuano": 2.8
+      },
+      "Cambodian": {
+        "Khmer": 7.1
+      }
+    }
+  }
 }

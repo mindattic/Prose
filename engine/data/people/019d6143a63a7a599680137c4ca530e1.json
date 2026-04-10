@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63a7a599680137c4ca530e1",
   "type": "character",
-  "name": "Cleo Banerjee",
+  "name": "Cleo Achebe",
   "aliases": [
     "Switchback Lead",
     "Jinxie",
@@ -14,7 +14,7 @@
   "age": 22,
   "status": "active",
   "location": "The Shelf — operates from a rooftop squat above a defunct laundromat, near Ashland and Chicago Ave",
-  "description": "Jinx Alvarado runs packages across jurisdiction lines faster than anyone in GLMZ and has the shattered collarbone scars to prove it. Born on the Shelf, raised in the gap between governance tiers, she learned early that speed is the only resource the excluded have that the corps can't buy. She was running messages for local vendors at twelve, crossing into Milwaukee Core at fourteen, and by sixteen she'd built a reputation as the courier you call when the package absolutely has to cross three jurisdictions before the automated surveillance cycle resets.\n\nShe founded Switchback at nineteen with her two closest friends — not out of ambition, but because running alone was getting people killed. The Shelf's courier kids were being picked off by corporate security teams who treated them like vermin in the infrastructure. A crew meant backup, meant overlapping routes, meant someone noticed when you didn't come home. Three years later, Switchback is the Shelf's premier courier operation: small, fast, and just reckless enough to take jobs that the professional crews won't touch.\n\nJinx is small — five-three, wiry, built for rooftops and ventilation shafts. Her hair is cut asymmetrically and changes color with whatever dye is available. She moves constantly — pacing, climbing, balancing on railings. Stillness is an emergency state. Her augmentations are visible: the spring-loaded ankle joints catch light when she runs, and the grip pads on her palms leave faint marks on everything she touches.",
+  "description": "Cleo Achebe runs packages across jurisdiction lines faster than anyone in GLMZ and has the shattered collarbone scars to prove it. Born on the Shelf, raised in the gap between governance tiers, she learned early that speed is the only resource the excluded have that the corps can't buy. She was running messages for local vendors at twelve, crossing into Milwaukee Core at fourteen, and by sixteen she'd built a reputation as the courier you call when the package absolutely has to cross three jurisdictions before the automated surveillance cycle resets.\n\nShe founded Switchback at nineteen with her two closest friends — not out of ambition, but because running alone was getting people killed. The Shelf's courier kids were being picked off by corporate security teams who treated them like vermin in the infrastructure. A crew meant backup, meant overlapping routes, meant someone noticed when you didn't come home. Three years later, Switchback is the Shelf's premier courier operation: small, fast, and just reckless enough to take jobs that the professional crews won't touch.\n\nJinx is small — five-three, wiry, built for rooftops and ventilation shafts. Her hair is cut asymmetrically and changes color with whatever dye is available. She moves constantly — pacing, climbing, balancing on railings. Stillness is an emergency state. Her augmentations are visible: the spring-loaded ankle joints catch light when she runs, and the grip pads on her palms leave faint marks on everything she touches.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -178,7 +178,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -193,60 +193,19 @@
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
   ],
   "related_entities": [
-    "GLMZ",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Switchback",
     "Shelf Life",
     "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "SynapTech GripTrue Palmar Adhesion Implant",
     "Lacuna Genomics",
+    "SynapTech GripTrue Palmar Adhesion Implant",
     "Ringo DV-4 'Courier'",
-    "The Milwaukee Core",
     "Chicago",
-    "Alper Inoue-Aidoo",
-    "Amygdacet",
-    "Arcturus Exo-Runner Frame",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bintou Halvorsen-Osei",
-    "Bogdan Achebe-Svanstrom",
-    "Chen Wei-Lin",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emiljan Nzinga-Kovačević",
-    "Helix Biosystems DermRenew Cellular Renewal Lattice",
-    "Ilhan Sandstrom-Badu",
-    "Kairos",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Kyle Ellen Corbin-Vasik",
-    "Lazarus IDP-1 'Teeth'",
-    "MERIDIAN",
-    "Meridian Core",
-    "Narrowcast",
-    "NeuralPath ClearRun Focus Regulation Implant",
-    "Neuromorphic Pressure Cestus",
-    "Oxytrel",
-    "Patient Zero",
-    "Plot 17",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Street Custom 'Last Meal' Emergency Ration Fabricator",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Søren Mikkelsen-Achebe",
-    "The Burden Clause",
-    "The Fathom Line",
-    "The Gutter Prophets",
-    "The Iron Lotus",
-    "The Pure Hand",
-    "Thessaly Oduya-Varga",
-    "Uncle Jun's Synth-Noodle Window",
-    "Veslemøy Achebe-Tursynov",
-    "Yannick Tambadou-Reinholt",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian, Middle Eastern, and Sub-Saharan African blend (41.2% South Asian, 33.6% Middle Eastern, 25.2% Sub-Saharan African). Features reflect this complex tri-continental mix: warm deep brown skin with subtle golden and reddish undertones, sharp angular facial structure characteristic of Middle Eastern and South Asian heritage, with the fuller lip structure and bone density of Sub-Saharan ancestry. Dark eyes with warm brown tones.",
+    "heritage": "Sub-Saharan African majority (55.4%) blended with East Asian (22.1%), Eastern European (9.8%), Northern European (7.2%), and Hispanic/Latin American (5.5%) ancestry. Features reflect this global diaspora mix: deep warm brown skin with golden undertones from the dominant African heritage, brightened by East Asian ancestry contribution. Facial structure shows the angular cheekbones and defined jaw characteristic of East Asian heritage combined with the fuller lip structure and broader nose base of Sub-Saharan ancestry. Eyes warm dark brown, shaped with slight epicanthic fold from East Asian genetics. Overall complexion carries the warm melanin-rich tone of Sub-Saharan and East Asian blending, with the resilience and sun-responsiveness of multi-continental heritage.",
     "height_cm": 160,
     "weight_kg": 48,
     "build": "Wiry and lean with corded muscle from constant rooftop movement. Minimal body fat, defined shoulders and forearms from climbing and grip work. Chest slightly concave from years of navigating tight spaces. Frame built for speed and vertical displacement rather than mass.",
@@ -254,8 +213,8 @@
     "hair_style": "Asymmetrical undercut — left side shaved to scalp, right side longer and swept back. Dyed sections often braided or twisted to keep out of her face during movement.",
     "hair_length": "Short on left, medium on right",
     "eye_color": "Dark brown with persistent redness around sclera from dust and industrial particulates. No augmented optics visible.",
-    "skin_tone": "Deep warm brown with golden and reddish undertones, darkened by sun exposure and outdoor work. Reflects the blended melanin profile of South Asian, Middle Eastern, and Sub-Saharan ancestry.",
-    "complexion": "Angular facial structure with prominent cheekbones and defined jaw, reflecting South Asian and Middle Eastern heritage combined with Sub-Saharan bone structure. Small scar bisecting her left eyebrow (impact from a fall at age sixteen). Skin weathered and marked by minor burns, scrapes, and calluses — the wear of someone who climbs for a living. Minimal grooming beyond what's practical; occasionally wears dark eyeliner that doubles as grime camouflage.",
+    "skin_tone": "Deep warm brown with golden undertones, darkened by sun exposure and outdoor work. Reflects the blended melanin profile of Sub-Saharan African majority ancestry with East Asian, Eastern European, Northern European, and Hispanic/Latin American contributions.",
+    "complexion": "Angular facial structure with prominent cheekbones and defined jaw, blending East Asian sharpness with Sub-Saharan African bone density. Slight epicanthic fold to eyes from East Asian heritage. Small scar bisecting her left eyebrow (impact from a fall at age sixteen). Skin weathered and marked by minor burns, scrapes, and calluses — the wear of someone who climbs for a living. Minimal grooming beyond what's practical; occasionally wears dark eyeliner that doubles as grime camouflage.",
     "distinguishing_marks": [
       "Shattered collarbone scars across both shoulders and upper chest — white and irregular from multiple fractures and repairs, most prominent on left side",
       "Paired parallel scars along her left ribs (impact scar from a ledge fall at age seventeen, roughly 8cm long, slightly depressed tissue)",
@@ -267,14 +226,54 @@
     "posture_movement": "Never truly still — constant low-level motion: weight shifting, fingers tapping, eyes scanning. When standing, she balances on the balls of her feet as if ready to launch. Movement is economical and three-dimensional: she climbs walls as readily as she walks floors. Her gait is quick and choppy, with springy ankle articulation visible on each stride. In moments of genuine rest (rare), she curls into compact positions — crouched on heels, or folded into corners — minimizing her footprint.",
     "clothing_style": "Tier 4-5 street courier aesthetic. Base layer: fitted black or dark gray synthetic tank top or sleeveless shirt, designed for movement and thermal regulation. Mid-layer: sleeveless tactical vest with numerous pockets for packages, tools, and spare data drives (brands rotate: unlabeled knockoffs, repurposed corpo surplus, homemade patches). Pants: dark, reinforced synthetic cargo pants or climbing tights with grip-friendly surfaces and zip-off lower legs. Footwear: custom-modified sneakers with reinforced ankle collars and extra traction pads to complement her augmented joints. Jacket (worn): oversized surplus military-grade windbreaker with reflective strips removed to reduce visibility, covered in patches and crude graffiti tags from the Shelf. Accessories: minimalist — worn paracord wristband, encrypted thumb drive on a lanyard, no jewelry. Colors are muted and functional (blacks, grays, dark greens) with occasional neon accents (dyed hair, reflective patch work) for crew identification."
   },
-  "image_prompt": "Cleo Banerjee, 160cm tall street courier in cyberpunk 2226 GLMZ, wiry lean build with corded climbing muscle. Deep warm brown skin with golden undertones reflecting South Asian, Middle Eastern, and Sub-Saharan heritage. Angular face with prominent sharp cheekbones, dark brown eyes with dust-reddened sclera, small scar bisecting left eyebrow. Electric violet asymmetrical undercut — shaved left side, longer right side swept back with black roots visible. Fitted black sleeveless synthetic tank, dark reinforced cargo pants, oversized surplus military windbreaker covered in graffiti patches. Chrome-plated spring-loaded ankle augmentations visible at Achilles tendons, metallic-gray subdermal grip pads on palms. White irregular shattered collarbone scars across shoulders and upper chest, parallel scar along left ribs, burn scar on right palm. Minimalist accessories: paracord wristband, encrypted drive lanyard, route-map tattoo on inner right wrist. Crouched on rooftop ledge in neon-lit industrial warehouse district at night, motion-ready posture, cold blue and amber lighting reflecting off chrome augmentations and wet surfaces, urban grime and industrial decay in background, cyberpunk courier aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Cleo Achebe, a 160cm wiry street courier in the Great Lakes Metropolitan Zone, 2226. Deep warm brown skin with golden undertones blending Sub-Saharan African, East Asian, Eastern European, and Latin American heritage. Angular cheekbones and defined jaw with slight epicanthic fold eyes, warm dark brown with visible redness. Asymmetrical electric violet hair with black roots, left side shaved, right side swept back and braided. Lean muscular frame built for vertical movement. Wearing fitted black synthetic tank top, sleeveless tactical vest covered in patches, dark reinforced cargo pants, custom-modified sneakers with visible chrome ankle joint augmentations. Grip pads visible on palms and fingertips as metallic-gray subdermal mesh. Scarred shoulders, upper chest, and left ribs from climbing accidents. Small eyebrow scar, burn scar on right palm. Wearing oversized military windbreaker with graffiti tags, paracord wristband, encrypted thumb drive lanyard. Balanced on balls of feet in dynamic ready posture. Standing on neon-lit rooftop overlooking industrial sprawl, harsh neo-noir lighting casting sharp shadows, gritty urban atmosphere, rain-slicked surfaces reflecting neon. Mood: alert, coiled energy, street-ready. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 41.2,
-    "Middle Eastern": 33.6,
-    "Sub-Saharan African": 25.2
+    "Sub-Saharan African": 55.4,
+    "East Asian": 22.1,
+    "Eastern European": 9.8,
+    "Northern European": 7.2,
+    "Hispanic/Latin American": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 49.1,
+        "Cameroonian": 6.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 22.1
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 4.3,
+        "Belarusian": 0.2
+      },
+      "Magyar-Romanian": {
+        "Romanian": 5.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 7.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.6
+      },
+      "Central American": {
+        "Honduran": 0.2
+      },
+      "South American": {
+        "Ecuadorian": 0.7
+      }
+    }
+  }
 }

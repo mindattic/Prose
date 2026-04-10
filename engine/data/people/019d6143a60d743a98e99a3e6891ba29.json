@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60d743a98e99a3e6891ba29",
   "type": "character",
-  "name": "Kai Johansson",
+  "name": "Kai Migizi",
   "aliases": [
     "Iris",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
-  "description": "Fanta Ahlstrom-Quartey is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a broker out of Burnside Corridor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented broker in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Kai Migizi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a broker out of Burnside Corridor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented broker in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.39,
@@ -261,7 +261,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Burnside Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,44 +279,20 @@
     "Tessera TKR-10 'Executor'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Nearfield",
     "Burnside Pocket",
+    "GLMZ",
+    "Circuit",
     "The Pure Hand",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Emeka Johansson-Orozco",
-    "Fanta Dzhuraev-Mboyo",
-    "Fanta Popov-Adjei",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Hadiya Karlsen-Sow",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Narrowcast",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Prophet",
-    "Quilt",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
-    "Sulfur Crown Agriculture",
-    "TERMINUS",
-    "Tessera Corponation",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Tessera TKR-10 'Executor'",
-    "The Arrangement",
-    "The Fathom Line",
-    "Yusra Ntambwe-Cakić"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend — East Asian (27.6%), Hispanic/Latin American (22.6%), Sub-Saharan African (17.7%), Southeast Asian (15.1%), Eastern European (9.7%), Northern European (7.3%). Features reflect this complex ancestry: angular cheekbones with broader nose bridge, monolid-adjacent eye shape with warm undertones, wide-set eyes suggesting mixed ancestry, high cheekbones and defined jaw structure combining multiple heritage patterns.",
+    "heritage": "Ubiquitous Diaspora blend — Indigenous American (35.9%), Hispanic/Latin American (25.5%), East Asian (15.5%), Sub-Saharan African (13.3%), Central Asian (9.8%). The combination creates distinctive features: prominent high cheekbones with strong angular bone structure from Indigenous American and Central Asian heritage, broad nose bridge characteristic of Indigenous ancestry, warm brown eyes with subtle epicanthic folds from East Asian lineage. Skin carries warm golden and amber undertones from the synthesis of African, Hispanic, Indigenous, and Central Asian ancestry — a rich deep warm brown that speaks to this continental blend.",
     "height_cm": 167,
     "weight_kg": 78,
     "build": "Stocky and solid, muscular without bulk — the physiology of someone built for leverage and endurance rather than speed. Shoulders broad, core compact, legs thick. Hands oversized and scarred, knuckles flattened from impact training.",
@@ -324,8 +300,8 @@
     "hair_style": "Pulled back tight in a practical braid, no vanity in the arrangement",
     "hair_length": "Medium",
     "eye_color": "Warm brown with amber undertones, unremarkable until you notice they don't blink at normal intervals",
-    "skin_tone": "Deep warm brown with golden undertones — the result of Southeast Asian, East Asian, and African ancestry blending. Sun-weathered and uneven in texture from environmental exposure rather than heritage.",
-    "complexion": "Weathered face — lines around the eyes and mouth from stress and lack of sleep rather than age. Skin has the texture of someone who doesn't prioritize skincare. Prominent angular cheekbones characteristic of mixed East/Southeast Asian ancestry. Jaw is strong and defined, scarred along the angle where augmentation interfacing was installed.",
+    "skin_tone": "Deep warm brown with golden undertones — the result of Indigenous American, Hispanic/Latin American, East Asian, Sub-Saharan African, and Central Asian ancestry blending. Sun-weathered and uneven in texture from environmental exposure rather than heritage.",
+    "complexion": "Weathered face — lines around the eyes and mouth from stress and lack of sleep rather than age. Skin has the texture of someone who doesn't prioritize skincare. Prominent angular cheekbones characteristic of Indigenous American and Central Asian heritage. Jaw is strong and defined, scarred along the angle where augmentation interfacing was installed.",
     "distinguishing_marks": [
       "Surgical scarring along both temples, visible chrome integration points barely concealed by hair, roughly 4cm each side",
       "Jagged scar across her left knuckle from a fight or industrial accident, old and pale",
@@ -336,17 +312,60 @@
     "posture_movement": "Stands with weight distributed low and even, ready to move in any direction without telegraph. Movements economical and precise — no fidgeting, no nervous tics. When walking, she moves like a predator checking angles. Doesn't sit with her back to doors. Eyes track exits and threats constantly. Her default expression is flat, but small movements around her jaw suggest she's running constant calculations.",
     "clothing_style": "Tier 3-4 utilitarian — worn tech-weave pants in charcoal with reinforced thigh pockets, a fitted synthetic undershirt that moves with her augmentations, and a neutral-colored field jacket with too many pockets. Everything functional, nothing new. Boots are good quality but scuffed from real work. No jewelry except a worn paracord bracelet in matte black. She dresses like someone who might need to run or fight in the next five minutes."
   },
-  "image_prompt": "Kai Johansson, cyberpunk 2226, portrait of a 167cm multiethnic woman with deep warm brown skin with golden undertones, angular cheekbones, monolid-adjacent warm brown eyes with amber undertones that don't blink normally. Dark brown hair with silver threading pulled back in practical braid. Weathered face with stress lines, surgical scars visible at temples with chrome integration points, thin white scar running jawline to collarbone, chemical analyzer chrome visible in nasal passages with metallic gleam. Stocky muscular build, oversized scarred hands with flattened knuckles. Wearing charcoal tech-weave reinforced pants, fitted synthetic undershirt, neutral field jacket with multiple pockets, scuffed quality boots, matte black paracord bracelet. Move-by-wire augmented — movements precise and efficient, predatory posture, weight distributed low. Flat default expression. Cyberpunk utilitarian aesthetic, low-key lighting highlighting chrome augmentation details, neutral industrial setting, ready-for-combat stance. --ar 2:3 --v 6",
+  "image_prompt": "Kai Migizi, a 167cm stocky woman with deep warm brown skin and golden undertones reflecting Indigenous American, Hispanic, East Asian, Sub-Saharan African, and Central Asian ancestry. Prominent angular cheekbones, broad nose bridge, warm brown eyes with subtle epicanthic folds. Dark brown hair with silver threading pulled back in a tight braid. Weathered face with stress lines, surgical scarring at temples with visible chrome integration points, jagged scar on left knuckle, thin white knife wound scar along right jawline to collarbone. Chemical analyzer chrome visible in nasal passages. Move-by-wire augmentations betrayed by too-smooth, predatory movements. Wearing charcoal tech-weave utilitarian pants with reinforced pockets, fitted synthetic undershirt, neutral-colored field jacket with multiple pockets, scuffed quality boots, matte black paracord bracelet. Standing in low-ready stance with weight distributed evenly, eyes tracking threats, expression flat. GLMZ, Great Lakes Metropolitan Zone, neon-lit industrial setting, cool blue and amber lighting casting shadows across augmentation scars, gritty realism, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 27.6,
-    "Hispanic/Latin American": 22.6,
-    "Sub-Saharan African": 17.7,
-    "Southeast Asian": 15.1,
-    "Eastern European": 9.7,
-    "Northern European": 7.3
+    "Indigenous American": 35.9,
+    "Hispanic/Latin American": 25.5,
+    "East Asian": 15.5,
+    "Sub-Saharan African": 13.3,
+    "Central Asian": 9.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 16.6
+      },
+      "Mesoamerican": {
+        "Maya": 9.7
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 7.4,
+        "Ojibwe": 2.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 8.8
+      },
+      "Caribbean": {
+        "Dominican": 13.4
+      },
+      "Central American": {
+        "Honduran": 1.4,
+        "Salvadoran": 1.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 15.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3.1
+      },
+      "Central African": {
+        "Angolan": 10.2
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 9.8
+      }
+    }
+  }
 }

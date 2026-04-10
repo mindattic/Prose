@@ -285,6 +285,87 @@ SURNAME_POOLS = {
     ],
 }
 
+# Map specific cultures to their surname pool
+# Cultures that share a surname pool with their region or a sibling culture
+CULTURE_TO_SURNAME_POOL = {
+    # Sub-Saharan African sub-groups → shared pool
+    "Yoruba": "Sub-Saharan African", "Igbo": "Sub-Saharan African",
+    "Ghanaian": "Sub-Saharan African", "Ethiopian": "Sub-Saharan African",
+    "Kenyan": "Sub-Saharan African", "Somali": "Sub-Saharan African",
+    "Congolese": "Sub-Saharan African", "Senegalese": "Sub-Saharan African",
+    "South African": "Sub-Saharan African", "Tanzanian": "Sub-Saharan African",
+    "Ugandan": "Sub-Saharan African",
+    # Hispanic/Latin American sub-groups
+    "Mexican": "Hispanic/Latin American", "Puerto Rican": "Hispanic/Latin American",
+    "Colombian": "Hispanic/Latin American", "Salvadoran": "Hispanic/Latin American",
+    "Guatemalan": "Hispanic/Latin American", "Cuban": "Hispanic/Latin American",
+    "Dominican": "Hispanic/Latin American", "Peruvian": "Hispanic/Latin American",
+    "Brazilian": "Hispanic/Latin American", "Honduran": "Hispanic/Latin American",
+    "Venezuelan": "Hispanic/Latin American",
+    # South Asian sub-groups
+    "Bangladeshi": "South Asian", "Indian": "South Asian",
+    "Pakistani": "South Asian", "Sri Lankan": "South Asian",
+    "Nepali": "South Asian", "Bhutanese": "South Asian",
+    # East Asian → specific pools already exist
+    "Chinese": "Chinese", "Korean": "Korean", "Japanese": "Japanese",
+    # Northern European sub-groups
+    "Swedish": "Northern European", "Norwegian": "Northern European",
+    "Danish": "Northern European", "Finnish": "Northern European",
+    "Icelandic": "Northern European", "German": "Northern European",
+    "British": "Northern European", "Irish": "Northern European",
+    # Eastern European sub-groups
+    "Polish": "Eastern European", "Russian": "Eastern European",
+    "Ukrainian": "Eastern European", "Czech": "Eastern European",
+    "Hungarian": "Eastern European", "Romanian": "Eastern European",
+    "Serbian": "Eastern European", "Croatian": "Eastern European",
+    # Southeast Asian → specific pools already exist
+    "Vietnamese": "Vietnamese", "Filipino": "Filipino",
+    "Indonesian": "Indonesian", "Thai": "Thai",
+    "Laotian": "Laotian", "Cambodian": "Cambodian",
+    # Middle Eastern sub-groups
+    "Iranian": "Middle Eastern", "Iraqi": "Middle Eastern",
+    "Lebanese": "Middle Eastern", "Syrian": "Middle Eastern",
+    "Yemeni": "Middle Eastern", "Palestinian": "Middle Eastern",
+    "Jordanian": "Middle Eastern", "Kurdish": "Middle Eastern",
+    # Indigenous American sub-groups
+    "Ojibwe": "Indigenous American", "Potawatomi": "Indigenous American",
+    "Menominee": "Indigenous American", "Nahua": "Indigenous American",
+    "Maya": "Indigenous American", "Quechua": "Indigenous American",
+    "Lakota": "Indigenous American", "Cherokee": "Indigenous American",
+    # Pacific Islander sub-groups
+    "Samoan": "Pacific Islander", "Tongan": "Pacific Islander",
+    "Fijian": "Pacific Islander", "Hawaiian": "Pacific Islander",
+    "Tuvaluan": "Pacific Islander", "Marshallese": "Pacific Islander",
+    "Kiribati": "Pacific Islander",
+    # Central Asian sub-groups
+    "Kazakh": "Central Asian", "Uzbek": "Central Asian",
+    "Kyrgyz": "Central Asian", "Mongolian": "Central Asian",
+    "Tajik": "Central Asian", "Turkmen": "Central Asian",
+    # North African sub-groups
+    "Moroccan": "North African", "Algerian": "North African",
+    "Tunisian": "North African", "Libyan": "North African",
+    "Egyptian": "North African",
+}
+
+
+def get_surname_pool(group):
+    """Get the surname pool for a culture, walking up the hierarchy."""
+    # Direct match (e.g., "Chinese", "Vietnamese")
+    if group in SURNAME_POOLS:
+        return SURNAME_POOLS[group]
+    # Mapped match (e.g., "Nigerian" → "Sub-Saharan African")
+    mapped = CULTURE_TO_SURNAME_POOL.get(group, "")
+    if mapped and mapped in SURNAME_POOLS:
+        return SURNAME_POOLS[mapped]
+    # Walk the ancestry tree to find the region, then use its pool
+    from generate_ancestry import ANCESTRY_TREE
+    for region, subs in ANCESTRY_TREE.items():
+        for sub, nats in subs.items():
+            if group in nats or group == sub:
+                if region in SURNAME_POOLS:
+                    return SURNAME_POOLS[region]
+    return SURNAME_POOLS.get("Northern European", ["Unknown"])
+
 
 def regenerate_surnames(index, dry_run=False):
     """Regenerate character surnames based on genetic ancestry using rarity-weighted selection."""
@@ -308,31 +389,42 @@ def regenerate_surnames(index, dry_run=False):
             if old_name in SKIP_CHARACTERS:
                 continue
 
+            # Use ancestry_detail (specific cultures) for surname selection,
+            # fall back to genetic_ancestry (broad regions) if detail not available
+            detail = data.get("ancestry_detail", {})
             ancestry = data.get("genetic_ancestry", {})
-            if not ancestry:
+            if not detail and not ancestry:
                 continue
 
-            # Keep first name(s) — everything before the last hyphenated surname
-            # "Kyle Ellen Corbin-Vasik" → first_names="Kyle Ellen", surname="Corbin-Vasik"
-            # "Abdirizak Petrov-Tuivailala" → first_names="Abdirizak", surname="Petrov-Tuivailala"
-            parts = old_name.rsplit(" ", 1)
-            if len(parts) < 2:
+            # Flatten three-tier ancestry_detail to nationality → percentage
+            # e.g. {"East Asian": {"Chinese": {"Cantonese": 20.0}}} → {"Cantonese": 20.0}
+            source = {}
+            if detail:
+                for region, sub_regions in detail.items():
+                    if isinstance(sub_regions, dict):
+                        for sub_region, nationalities in sub_regions.items():
+                            if isinstance(nationalities, dict):
+                                for nat, pct in nationalities.items():
+                                    if isinstance(pct, (int, float)):
+                                        source[nat] = source.get(nat, 0) + pct
+                            elif isinstance(nationalities, (int, float)):
+                                source[sub_region] = source.get(sub_region, 0) + nationalities
+                    elif isinstance(sub_regions, (int, float)):
+                        source[region] = source.get(region, 0) + sub_regions
+            if not source:
+                source = ancestry if ancestry else {}
+            if not source:
                 continue
 
-            # Find where the surname starts — it's the last space-separated token
-            # But some have middle names: "Kyle Ellen Corbin-Vasik"
-            # The surname is always hyphenated or the last word
+            # Keep first name(s) — everything before the last space-separated token
             words = old_name.split()
-            if "-" in words[-1]:
-                first_names = " ".join(words[:-1])
-            elif len(words) >= 3 and "-" in words[-1]:
-                first_names = " ".join(words[:-1])
-            else:
-                first_names = " ".join(words[:-1])
+            if len(words) < 2:
+                continue
+            first_names = " ".join(words[:-1])
 
-            # Get ancestry groups sorted by percentage
-            sorted_ancestry = sorted(ancestry.items(), key=lambda x: -x[1])
-            if not sorted_ancestry:
+            # Get groups sorted by percentage
+            sorted_groups = sorted(source.items(), key=lambda x: -x[1])
+            if not sorted_groups:
                 continue
 
             rng = random.Random(data.get("id", old_name))
@@ -349,11 +441,10 @@ def regenerate_surnames(index, dry_run=False):
             else:
                 num_parts = 3
 
-            # Need at least as many ancestry groups as surname parts
-            num_parts = min(num_parts, len(sorted_ancestry))
+            num_parts = min(num_parts, len(sorted_groups))
 
-            # Pick surname from top ancestry groups, weighted by percentage
-            top_groups = sorted_ancestry[:min(num_parts + 1, len(sorted_ancestry))]
+            # Pick from top groups, weighted by percentage
+            top_groups = sorted_groups[:min(num_parts + 1, len(sorted_groups))]
             group_names = [g for g, _ in top_groups]
             group_weights = [p for _, p in top_groups]
 
@@ -379,9 +470,7 @@ def regenerate_surnames(index, dry_run=False):
             # Pick a random surname from each group's pool
             surname_parts = []
             for group in selected_groups:
-                pool = SURNAME_POOLS.get(group, [])
-                if not pool:
-                    pool = SURNAME_POOLS.get("Northern European", ["Unknown"])
+                pool = get_surname_pool(group)
                 surname_parts.append(rng.choice(pool))
 
             new_surname = "-".join(surname_parts)
@@ -559,8 +648,6 @@ def regenerate_first_names(index, dry_run=False):
 
             # Surname is the last token (possibly hyphenated)
             surname = words[-1]
-            # Everything before surname is first/middle names
-            old_first = " ".join(words[:-1])
 
             rng = random.Random(data.get("id", name) + "_first")
 
@@ -568,9 +655,8 @@ def regenerate_first_names(index, dry_run=False):
             if rng.random() < 0.50:
                 new_first = rng.choice(COSMOPOLITAN_NAMES)
             else:
-                # Pick from top ancestry group's name pool
+                # Pick from top broad ancestry group for first name pool
                 sorted_ancestry = sorted(ancestry.items(), key=lambda x: -x[1])
-                # Try top 2 groups, pick one weighted by percentage
                 top = sorted_ancestry[:min(2, len(sorted_ancestry))]
                 groups = [g for g, _ in top]
                 weights = [p for _, p in top]
@@ -618,6 +704,8 @@ def main():
     parser = argparse.ArgumentParser(description="Migrate references to GUIDs + regenerate surnames")
     parser.add_argument("--phase", type=str, default="all", choices=["1", "2", "3", "4", "all"])
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true", help="Force overwrite (accepted for pipeline compatibility)")
+    parser.add_argument("--limit", type=int, help="Limit number of characters (accepted for pipeline compatibility)")
     args = parser.parse_args()
 
     if args.phase in ("1", "all"):

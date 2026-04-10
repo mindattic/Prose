@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7127a98aaa035bdf65e86d2",
   "type": "character",
-  "name": "Arden Guerrero",
+  "name": "Arden Zielinski",
   "aliases": [
     "Vesna Static",
     "The Thorn"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Lake Shore Drive and Division",
-  "description": "Vesna is lean and angular, her dark brown skin carrying faint scarring from a childhood in Hough Reclamation where she learned to run before she learned to read. Her natural hair grows in a dense crown she keeps partially shaved on the left side, stenciled with a geometric pattern that shifts color with her mood — a cheap geneware dye mod she got at sixteen from a bodega-surgeon. Her eyes are sharp, always scanning exits and surfaces, evaluating wall textures the way other people evaluate faces. She has a small tattoo of an E.L.F. sigil behind her left ear, a prayer mark she touches when she's working at height.\n\nShe is furiously alive and furiously angry — not in a way that spills out constantly, but in the way a banked fire is still a fire. Her murals appear overnight on Axiom substation walls, on Ferrogate Transit pylons, on the blank faces of Tessera dormitory blocks: massive, bioluminescent compositions that reference pre-GLMZ Balkan folk patterns twisted into scathing corporate critique. She doesn't talk much about her Serbian grandmother or her Nigerian grandfather, but both live in her work. She is guarded with strangers and unexpectedly tender with people she trusts.",
+  "description": "Arden Zielinski is lean and angular, her dark brown skin carrying faint scarring from a childhood in Hough Reclamation where she learned to run before she learned to read. Her natural hair grows in a dense crown she keeps partially shaved on the left side, stenciled with a geometric pattern that shifts color with her mood — a cheap geneware dye mod she got at sixteen from a bodega-surgeon. Her eyes are sharp, always scanning exits and surfaces, evaluating wall textures the way other people evaluate faces. She has a small tattoo of an E.L.F. sigil behind her left ear, a prayer mark she touches when she's working at height.\n\nShe is furiously alive and furiously angry — not in a way that spills out constantly, but in the way a banked fire is still a fire. Her murals appear overnight on Axiom substation walls, on Ferrogate Transit pylons, on the blank faces of Tessera dormitory blocks: massive, bioluminescent compositions that reference pre-GLMZ Balkan folk patterns twisted into scathing corporate critique. She doesn't talk much about her Serbian grandmother or her Nigerian grandfather, but both live in her work. She is guarded with strangers and unexpectedly tender with people she trusts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -155,7 +155,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,39 +177,18 @@
     "Ferrogate Transit",
     "Dredge Mining Collective",
     "The Reclamation Assembly",
-    "GLMZ",
     "Grandmother",
     "The CEO",
     "Neurochemical Dispersal Grenade",
     "Tessera Corponation",
+    "Tenderloin",
     "Gravimetric Collapse Charge GCC-9",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Auricula Felis Modification",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bintou Halvorsen-Osei",
-    "Brecht Nkosi-Turvanen",
-    "Cem Osei-Petrov",
-    "Crucible Industries Boarding SMG BSM-6 'Cutlass'",
-    "Iowan Behemoth — 'Palisade'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "Tabula",
-    "Tenderloin",
-    "Tessera TK-7 Service Pistol 'Ticker'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Collective",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tambadou-Reinholt"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant South Asian influence, complemented by Northern European and East Asian ancestry. The genetic blend creates a warm, complex complexion with subtle undertones reflecting the diversity of this global mix.",
+    "heritage": "Sub-Saharan African dominant (47.1%) blended with Eastern European (39.1%) and Northern European (13.8%) ancestry. The genetic combination creates a rich, deep warm brown complexion with golden undertones from African heritage, subtly cooled by the paler undertones of Eastern and Northern European ancestry. The result is a luminous, warm-toned skin with sophisticated depth — neither purely cool nor purely warm, but a harmonious blend where golden radiance predominates.",
     "height_cm": 168,
     "weight_kg": 54,
     "build": "Lean and angular with defined musculature in shoulders and forearms from years of climbing and sustained overhead work. Low body fat, wiry rather than delicate.",
@@ -217,8 +196,8 @@
     "hair_style": "Dense natural crown worn in loose waves; left side shaved in a graduated pattern with geometric stencil marks (triangles, asymmetric lines) that catch light",
     "hair_length": "Medium (back), Shaved (left side)",
     "eye_color": "Dark brown, sharp and constantly mobile",
-    "skin_tone": "Warm medium-deep brown with golden and olive undertones — a nuanced complexion reflecting the interplay of Hispanic/Latin American, South Asian, Northern European, and East Asian heritage. Luminous quality beneath the surface.",
-    "complexion": "Fine-grained skin with minimal scarring except faint linear marks across knuckles and palms from childhood in Hough Reclamation. Prominent but refined cheekbones with subtle South Asian structure, angular jaw with slight Central/South American prominence. Minimal grooming — no makeup, skin kept clean but not pampered. A faint groove between eyebrows from chronic focus. Warm undertones enhance natural radiance despite minimal cosmetic maintenance.",
+    "skin_tone": "Deep warm brown with pronounced golden undertones — rich and luminous, reflecting the 47% Sub-Saharan African genetic dominance with subtle cool undertones from Eastern and Northern European heritage softening the warmth into sophisticated complexity",
+    "complexion": "Fine-grained skin with minimal scarring except faint linear marks across knuckles and palms from childhood in Hough Reclamation. Prominent, refined cheekbones with angular jaw structure characteristic of blended African and Eastern European heritage. Minimal grooming — no makeup, skin kept clean but not pampered. A faint groove between eyebrows from chronic focus. Golden radiance enhances natural skin luminosity despite minimal cosmetic maintenance.",
     "distinguishing_marks": [
       "Small E.L.F. sigil tattoo behind left ear in faded black ink — ritualistic prayer mark, touched compulsively during high-work",
       "Pressure-sensitive callus modifications across fingertips appearing as darker, slightly raised patches — barely visible unless examined closely",
@@ -228,15 +207,39 @@
     "posture_movement": "Economical, predatory grace — moves through spaces as if constantly evaluating verticality and exit vectors. Shoulders slightly forward. Hands often at rest but ready. Eyes scan surfaces and perimeters before engaging with people. Climbs with casual confidence, limbs moving independently. Sits with knees bent, ready to move. Speaks quietly; listeners lean in.",
     "clothing_style": "Tier 4-5 utilitarian: fitted charcoal cargo pants with excessive pockets (paint-stained, reinforced knees), steel-toed climbing boots (Apex brand, worn), oversized black or dark grey hoodie layered over form-fitting athletic tank. Fingerless gloves (often removed). Small pressure-sensitive pack worn cross-body. No corporate branding. Clothes chosen for function over aesthetics — climbing-ready, paint-resistant, dark enough for 03:00 work. Worn but intentionally maintained."
   },
-  "image_prompt": "Cyberpunk 2226, Arden Guerrero, 168cm lean climber with warm golden-olive deep brown skin reflecting Hispanic/Latin American and South Asian heritage. Dark brown eyes sharp and alert, dense waves of mood-reactive hair shifting indigo-copper-yellow, left side shaved with geometric triangular marks. Angular cheekbones, faint brow furrow, E.L.F. sigil tattoo behind left ear. Wearing oversized charcoal hoodie over black athletic tank, fitted paint-stained cargo pants, worn steel-toed Apex boots, fingerless gloves. Posture economical and predatory—ready to move, shoulders forward, scanning the environment. Small cross-body pressure pack. Standing in neon-lit industrial vertical space at 03:00, cool blue and amber lighting casting shadows across defined forearm musculature and callused fingertips. Geneware shimmer visible in shaved hair pattern. Mood: focused, alert, capable. Cyberpunk utilitarian aesthetic, no corporate chrome, function over flash. --ar 2:3 --v 6",
+  "image_prompt": "Arden Zielinski, 2226 neo-noir climber, 168cm lean angular build, deep warm golden-brown skin with luminous undertones reflecting Sub-Saharan African dominant ancestry tempered by Eastern European coolness. Dark brown eyes sharp and mobile, scanning surroundings. Dense natural waves on medium length hair with left side shaved in geometric stencil pattern (triangles, asymmetric lines), dark brown shifting to mood-reactive indigo. Faint E.L.F. sigil tattoo visible behind left ear, childhood burn scar on inner wrist. Utilitarian Tier 4-5 streetwear: oversized black hoodie over athletic tank, fitted charcoal cargo pants paint-stained and reinforced at knees, weathered Apex climbing boots, fingerless gloves, cross-body pressure pack. Economical predatory posture, shoulders forward, ready to move. Minimal grooming, fine-grained skin with no cosmetics. Neon-lit GLMZ urban environment, 03:00 industrial setting, moody cyan and orange lighting reflecting off wet metal surfaces, calm focus expression. GLMZ 2200s aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 42.7,
-    "South Asian": 25.1,
-    "Northern European": 18.2,
-    "East Asian": 14.0
+    "Sub-Saharan African": 47.1,
+    "Eastern European": 39.1,
+    "Northern European": 13.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 20.4
+      },
+      "East African": {
+        "Tanzanian": 8.7,
+        "Somali": 3.6
+      },
+      "West African": {
+        "Nigerian": 8.8,
+        "Malian": 5.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 39.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 13.8
+      }
+    }
+  }
 }

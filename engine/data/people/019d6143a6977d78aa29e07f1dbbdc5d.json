@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6977d78aa29e07f1dbbdc5d",
   "type": "character",
-  "name": "Briar Bergqvist",
+  "name": "Briar Mukherjee",
   "aliases": [
     "Petya",
     "Hardshell"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Axiom Corporate Campus, Gage Circuit — deployed to Grand Corridor and surrounding districts, near Damen and Armitage",
-  "description": "Perpetua is built like someone who decided early that their body was a professional tool and has maintained it with that framework ever since. She stands 178cm and carries a density of muscle that her Axiom tactical gear accommodates rather than conceals. Her heritage writes itself in a face that is simultaneously angular and broad — sharp Slavic cheekbones, deep Ghanaian skin, a wide nose her grandmother called distinguished. She has retractable subdermal armor plating along her forearms, a Helix Biosystems military-grade installation that she had done at 28 after taking a fragmentation hit that left scars she considers ugly, and a tail — a long, scaled, dark green cosmetic mod she added at 34 after her divorce, which she describes as the first thing she's ever done purely for herself.\n\nPerpetua is experienced enough to know that riot suppression is political work wearing tactical gear, and she has made her peace with this in the particular way of someone who has not actually made peace with it. She is professionally excellent — controlled, precise, decisive under pressure — and she drinks more than she should on days off and visits the ELF shrine at the Axiom campus entrance with a sincerity that her colleagues find slightly embarrassing. She is good at violence in a way that has never made her proud.",
+  "description": "Briar Mukherjee is built like someone who decided early that their body was a professional tool and has maintained it with that framework ever since. She stands 178cm and carries a density of muscle that her Axiom tactical gear accommodates rather than conceals. Her heritage writes itself in a face that is simultaneously angular and broad — sharp Slavic cheekbones, deep Ghanaian skin, a wide nose her grandmother called distinguished. She has retractable subdermal armor plating along her forearms, a Helix Biosystems military-grade installation that she had done at 28 after taking a fragmentation hit that left scars she considers ugly, and a tail — a long, scaled, dark green cosmetic mod she added at 34 after her divorce, which she describes as the first thing she's ever done purely for herself.\n\nBriar Mukherjee is experienced enough to know that riot suppression is political work wearing tactical gear, and she has made her peace with this in the particular way of someone who has not actually made peace with it. She is professionally excellent — controlled, precise, decisive under pressure — and she drinks more than she should on days off and visits the ELF shrine at the Axiom campus entrance with a sincerity that her colleagues find slightly embarrassing. She is good at violence in a way that has never made her proud.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -191,7 +191,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Axiom Corporate Campus",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -262,32 +262,17 @@
     "Highland Park Autonomous Zone",
     "Gage Circuit",
     "Grandmother",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "The Heritage Vault",
-    "Arcturus CK-5 'Bloodhound'",
-    "Anatoliy Faye-Nkrumah",
-    "Breccan Oluwafemi-Tsagaan",
-    "Ferrogate Enforcer Cruiser",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Patient Zero",
-    "ShieldTech CLA-3 'Cascade'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "TESSERA ES-4 'Perimeter'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Pressure Drop",
+    "GLMZ",
+    "Circuit",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Southeast Asian (70.7%) with significant East Asian (12.0%), Northern European (10.9%), Sub-Saharan African (3.4%), and Hispanic/Latin American (3.0%) ancestry. The blend creates warm golden-brown undertones characteristic of Southeast Asian heritage, with subtle cool undertones from Northern European genetics, and depth from African ancestry.",
+    "heritage": "Complex diaspora blend: 33% Hispanic/Latin American, 29.3% East Asian, 19.2% South Asian, 15.1% Sub-Saharan African, with minor Eastern European (2.1%) and Northern European (1.3%) ancestry. This creates a warm golden-bronze base with subtle olive undertones from the South Asian component, enriched depth and warmth from African ancestry, and the angular facial structure reflecting balanced East Asian and Hispanic elements. The combination produces a striking warm medium-deep complexion with golden luminosity.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Muscular and densely compact, with the functional geometry of someone who trains deliberately for force application. Broad shoulders, minimal body fat, forearms noticeably thickened by subdermal armor plating beneath the skin.",
@@ -295,8 +280,8 @@
     "hair_style": "Pulled back in a tight braid or high knot, practical and non-regulation-violating",
     "hair_length": "Medium (gathered)",
     "eye_color": "Deep brown",
-    "skin_tone": "Warm golden-brown characteristic of Southeast Asian heritage, with subtle cool undertones from Northern European ancestry and depth from Sub-Saharan African genetics. Medium-deep complexion with warm undertones.",
-    "complexion": "Sharp angular face with moderate cheekbones and straight nose typical of Southeast Asian phenotype. Minimal scarring on face (she keeps professional marks covered). Skin condition is clear but weathered by years of high-impact physical work and irregular sleep. Expression often neutral or controlled, eyes direct.",
+    "skin_tone": "Warm golden-bronze complexion with subtle olive undertones, medium-deep in depth. The blend of East Asian, South Asian, and Hispanic ancestry creates the golden base, enriched by Sub-Saharan African heritage into a warm, luminous tone.",
+    "complexion": "Angular face with high, defined cheekbones balancing East Asian and Hispanic features with South Asian bone structure. Straight nose with subtle bridge definition. Skin is clear but weathered by years of high-impact physical work and irregular sleep patterns. Expression often neutral or controlled, eyes direct and assessing.",
     "distinguishing_marks": [
       "Fragmentation scars across right shoulder and upper back (pre-2191, largely concealed by tactical gear and armor plating)",
       "Faint ritual marks on inner left forearm in Amharic script (ELF shrine practice, barely visible unless close)"
@@ -305,16 +290,64 @@
     "posture_movement": "Stands with centered weight distribution and visible postural awareness. Movements are controlled and economical, never wasted. Walks like someone who is assessing angles and exits in any room. In off-duty settings, posture loosens slightly but never fully relaxes. Hands at rest show slight tension in forearms.",
     "clothing_style": "On-duty: Axiom Security Division tactical gear — ballistic weave cargo pants, reinforced torso plating, modular utility vest in corporate grey-black. Understated Tier 2 corporate aesthetic. Off-duty: Dark fitted jackets that accommodate the tail, usually worn over simple neutral-toned clothing. Boots always practical and maintained to professional standards. Minimal jewelry except for small worn silver pendant (likely religious). Overall presentation is Tier 2 corporate — well-maintained, functional, without ornamentation."
   },
-  "image_prompt": "Briar Bergqvist, 178cm tall Southeast Asian-Northern European security operative with warm golden-brown skin tone, dark brown hair in a tight braid, deep brown eyes, sharp angular facial features. Muscular compact build, standing with centered postural awareness. Visible subdermal armor plating geometric lines on forearms. Dark green scaled opalescent cosmetic tail hanging from base of spine, approximately 90cm long, moving with predatory grace. Wearing Axiom Security Division tactical gear: ballistic weave cargo pants, reinforced torso plating, grey-black modular utility vest. Faint ritual Amharic marks on inner left forearm. Expression neutral and controlled, hands showing slight forearm tension. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, cool neon lighting casting shadows across tactical gear, professional corporate aesthetic, slight off-duty swagger despite disciplined posture. --ar 2:3 --v 6",
+  "image_prompt": "Briar Mukherjee, tall muscular security operative, warm golden-bronze skin with subtle olive undertones, angular face with high cheekbones, deep brown eyes, dark brown hair pulled back tightly, weathered complexion from years of tactical work. Visible geometric subdermal armor plating patterns on forearms. Dark green opalescent scaled tail hanging from spine, 90cm long, moves with predatory grace. Wearing Axiom Security Division tactical gear: grey-black ballistic weave cargo pants, reinforced torso plating, modular utility vest. Small worn silver pendant visible. Centered posture, controlled movements, assessing gaze. GLMZ 2200s Great Lakes Metropolitan Zone, tactical stance in corporate facility or urban setting, cool blue-grey ambient lighting, slight cybernetic aesthetic, professional and dangerous presence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 70.7,
-    "East Asian": 12.0,
-    "Northern European": 10.9,
-    "Sub-Saharan African": 3.4,
-    "Hispanic/Latin American": 3.0
+    "Hispanic/Latin American": 33,
+    "East Asian": 29.3,
+    "South Asian": 19.2,
+    "Sub-Saharan African": 15.1,
+    "Eastern European": 2.1,
+    "Northern European": 1.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 33
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 16.7
+      },
+      "Chinese": {
+        "Mandarin Northern": 3.9,
+        "Cantonese": 1.4
+      },
+      "Japanese": {
+        "Japanese": 7.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 19.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 15.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 0.7
+      },
+      "Magyar-Romanian": {
+        "Romanian": 0.2,
+        "Hungarian": 1.2
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 0.3,
+        "Austrian": 0.8
+      },
+      "Scandinavian": {
+        "Swedish": 0.2
+      }
+    }
+  }
 }

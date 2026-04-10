@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64272108da90c29768d4bda",
   "type": "character",
-  "name": "Reed Thorvaldsdóttir-Soriano",
+  "name": "Reed Thorvaldsdóttir-Petrović",
   "aliases": [
     "Conduit",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Addison",
-  "description": "Kenji Guerrero-Osei-Mensah is lean and angular, all sharp edges and visible tension. At 35, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a counterintelligence specialist out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKenji Guerrero-Osei-Mensah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Reed Thorvaldsdóttir-Petrović is lean and angular, all sharp edges and visible tension. At 35, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a counterintelligence specialist out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nReed Thorvaldsdóttir-Petrović has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.79,
@@ -261,7 +261,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,37 +274,18 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "Canopy Station Nine",
     "Geartown",
+    "Canopy",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Clover",
-    "Blessed Nkemdirim",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Independent Micro-Grid Power Cooperative",
-    "Kamala Blomberg-Konadu",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA ES-4 'Perimeter'",
-    "The Canopy",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Skinners",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "East Asian dominant (57.6%) with Eastern European (22.7%) and Hispanic/Latin American (19.7%) ancestry — a striking blend that manifests in her sharp features, warm undertones, and the particular geometry of her face. The East Asian heritage dominates her eye shape and cheekbone structure, while the Eastern European ancestry adds angular definition to her jaw, and the Hispanic/Latin ancestry brings warmth to her skin tone and subtle richness to her coloring.",
+    "heritage": "Predominantly East Asian (73.0%) with Eastern European (18.3%) and Middle Eastern (8.7%) ancestry — a striking blend that manifests in her sharp features and distinctive facial geometry. The East Asian heritage dominates her eye shape, cheekbone structure, and overall face proportions, while the Eastern European ancestry adds angular definition to her jaw and brow ridge. The Middle Eastern ancestry brings warmth and depth to her skin undertones, creating golden-honey and amber warmth rather than cool pink undertones.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and angular with visible muscle definition — a runner's physiology, all efficiency and no excess. Shoulders sharp, collarbone prominent, limbs suggest coiled potential rather than bulk.",
@@ -312,8 +293,8 @@
     "hair_style": "Pulled back in a functional braid, practical for work. A few loose strands always escape.",
     "hair_length": "Medium",
     "eye_color": "Deep brown with faint metallic threads visible in the iris — side effect of cranial implant integration",
-    "skin_tone": "Warm medium tan — the result of predominantly East Asian genetics with Eastern European and Hispanic/Latin American ancestry creating a golden-honey undertone rather than pink or red undertones",
-    "complexion": "Sharp, defined cheekbones with gentle East Asian eye geometry, angular jaw from Eastern European heritage. Minimal grooming beyond necessity. Skin shows the wear of irregular sleep and high stress — small lines around the eyes, a tightness at the mouth. Scar tissue along the right temple from surgical integration.",
+    "skin_tone": "Warm medium tone with golden-honey and amber undertones — the result of predominantly East Asian genetics (73%) with Eastern European and Middle Eastern ancestry blending to create a warm, luminous complexion rather than cool or neutral undertones",
+    "complexion": "Sharp, defined cheekbones with gentle monolid eye geometry characteristic of East Asian heritage, angular jaw and brow ridge from Eastern European ancestry, warm undertones from Middle Eastern ancestry. Minimal grooming beyond necessity. Skin shows the wear of irregular sleep and high stress — small lines around the eyes, a tightness at the mouth. Scar tissue along the right temple from surgical integration.",
     "distinguishing_marks": [
       "Surgical scar running from right temple to behind the ear — jagged and pale, approximately 8cm, marks the cranial bomb defuser implant entry point.",
       "Thin white line across left palm, inner wrist — old knife wound, healed unusually clean due to synthetic blood regeneration.",
@@ -324,14 +305,35 @@
     "posture_movement": "Stands with weight slightly forward, never fully relaxed. Moves economically, every gesture purposeful. Eyes scan environments automatically — a habit so ingrained it's unconscious. Hands rest near her body, always within rapid access distance. Speaks quietly, forcing others to pay attention rather than projecting. There's a coiled quality to her stillness, like a spring compressed.",
     "clothing_style": "Tier 3-4 practical: dark synthetic jacket with interior holster points, reinforced cargo pants with thigh pockets and gear loops, matte-black boots with responsive sole-tech for rapid movement. Wears a long-sleeved base layer even in warm weather — functional as armor and habit. Minimal jewelry except for a worn data-ring on her left index finger. No corporate logos or tier signifiers; her gear is battered, maintained, and deliberately anonymous. Everything chosen for access, movement, and the ability to disappear into Geartown crowds."
   },
-  "image_prompt": "Reed Thorvaldsdóttir-Soriano, cyberpunk 2226, woman with sharp East Asian-dominant features blended with Eastern European angles and warm Hispanic undertones, golden-honey skin tone, deep brown eyes with faint metallic implant threads, black hair with silver treatments pulled back in functional braid. Lean angular build, 168cm tall, runner's physiology. Right temple shows faint chrome shimmer of cranial implant with blue LED tracers. Surgical scar temple to ear, knife wound scar on inner wrist, burn scar on forearm. Wearing dark synthetic tactical jacket with interior holster points, reinforced cargo pants, matte-black responsive-sole boots, long-sleeved base layer, worn data-ring. Posture coiled and purposeful, economical movements, eyes constantly scanning. Standing in Geartown shadows, neon edge-lighting catching the implant shimmer, anonymous and deliberately invisible to corporate surveillance. Mood: controlled danger, compressed intensity, midnight vigilance. --ar 2:3 --v 6",
+  "image_prompt": "Reed Thorvaldsdóttir-Petrović, GLMZ, East Asian-dominant features with sharp cheekbones and monolid geometry, angular Eastern European jaw, warm honey-amber skin tone from Middle Eastern ancestry, 168cm lean angular build with visible muscle definition. Deep brown eyes with metallic threading from cranial implant. Black hair with silver undertones pulled in functional braid, loose strands escaping. Jagged surgical scar right temple to ear with subtle chrome shimmer and dark LED markers. Stress-worn face with fine lines around eyes. Wearing dark synthetic jacket with holster points, reinforced cargo pants, matte-black boots, long-sleeved base layer. Worn data-ring on left index finger. Posture coiled and economical, weight forward, eyes scanning. Standing in Geartown shadows, neon ambient lighting catching the implant's faint chrome, cool blue undertones in shadow, tired and dangerous. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 57.6,
-    "Eastern European": 22.7,
-    "Hispanic/Latin American": 19.7
+    "East Asian": 73,
+    "Eastern European": 18.3,
+    "Middle Eastern": 8.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 73
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 18.3
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 3.4,
+        "Afghan Dari": 1.5
+      },
+      "Arab Gulf": {
+        "Emirati": 3.8
+      }
+    }
+  }
 }

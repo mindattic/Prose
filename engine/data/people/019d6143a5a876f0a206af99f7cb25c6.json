@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a876f0a206af99f7cb25c6",
   "type": "character",
-  "name": "Vale Johansson-Björnsdóttir",
+  "name": "Vale Migizi-Thammasak",
   "aliases": [
     "Catalyst",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
-  "description": "Alper Inoue-Aidoo is compact and densely muscled, built low to the ground like something designed to survive impacts. At 30, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Alper Inoue-Aidoo is one of the ones who actually does it.",
+  "description": "Vale Migizi-Thammasak is compact and densely muscled, built low to the ground like something designed to survive impacts. At 30, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Vale Migizi-Thammasak is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -262,7 +262,7 @@
     "Improviser": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Rookery",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,35 +279,13 @@
     "Masquerade",
     "The Shelf",
     "The Gradient Compact",
-    "Slagworks Industrial",
-    "Gravimetric Collapse Charge GCC-9",
     "Chicago",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Coherent Radiation Scalpel CRS-7 'Suture'",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "GLMZ",
-    "Glenville Sound",
-    "Ihaia Nystrom-Keita",
-    "Ilhan Sandstrom-Badu",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Spire Light on Still Water",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
-    "TERMINUS",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian (68.6%) with East Asian (28.5%) and Sub-Saharan African (2.9%) ancestry. The dominant Southeast Asian heritage shows in facial structure and bone composition, with East Asian eye shape and hair characteristics, and subtle warmth in skin undertones from the African ancestry.",
+    "heritage": "Indigenous American (70.5%) with Southeast Asian (17.2%) and Northern European (12.3%) ancestry. The dominant Indigenous American heritage creates strong angular facial structure with prominent cheekbones, broad nose bridge, and solid bone composition. Southeast Asian ancestry refines the eye shape into slightly hooded lids with an alert, assessing quality, and adds definition to the lower face and jaw. Northern European ancestry introduces cooler undertones that create subtle tonal contrast—visible along the jawline and temples—modulating the warmer base into visual complexity.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Compact and densely muscled, low center of gravity. Wide shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach or speed. No wasted mass.",
@@ -315,27 +293,51 @@
     "hair_style": "Cropped close, military-clean, reveals the shape of his skull",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and assessing",
-    "skin_tone": "Warm medium brown with Southeast Asian golden undertones at the cheekbones, subtle olive cast at the jawline from East Asian heritage, deepened slightly by Sub-Saharan ancestry warmth",
-    "complexion": "Weathered and scarred. Severe grooming habits mask poor skin condition underneath. Dark circles under eyes from sleep debt and cycle stimulants. A thin white line runs from left temple to jaw — old blade work. Nose broken at least twice and set without professional care.",
+    "skin_tone": "Medium warm brown with golden-copper undertones from Indigenous American heritage. Southeast Asian ancestry adds subtle olive-jade cast throughout, particularly visible on cheekbones and across the bridge of the nose. Northern European ancestry introduces cooler undertones along the jawline and temples, creating warm-dominant tonal complexity with cool modulation.",
+    "complexion": "Weathered and scarred. Severe grooming habits mask poor skin condition underneath. Dark circles under eyes from sleep debt and cycle stimulants. A thin white line runs from left temple to jaw—old blade work. Nose broken at least twice and set without professional care.",
     "distinguishing_marks": [
-      "Pale scar tissue running from left temple to left jawline, approximately 12cm, thin and surgical-looking — contradicted by the jagged character of the surrounding skin",
+      "Pale scar tissue running from left temple to left jawline, approximately 12cm, thin and surgical-looking—contradicted by the jagged character of the surrounding skin",
       "Burn marks across the knuckles of both hands, old and faded to pale pink, consistent with repeated exposure to friction or thermal stress",
-      "Small circular scar on right forearm just below the elbow — intervention point for the subdermal blade mount, still visible as a faint raised line despite years of healing",
+      "Small circular scar on right forearm just below the elbow—intervention point for the subdermal blade mount, still visible as a faint raised line despite years of healing",
       "Matching circular scar on left forearm in identical location",
-      "White stress fracture lines visible under the skin of both forearms where geneware muscle density treatment has been applied — subtle rippling effect under normal lighting"
+      "White stress fracture lines visible under the skin of both forearms where geneware muscle density treatment has been applied—subtle rippling effect under normal lighting"
     ],
-    "visible_augmentations": "Subdermal weapon mounts in both forearms are visible as faint circular scarring and a subtle ridge of reinforced tissue running the length of each forearm. The chrome is deliberately exposed—no attempt to hide the blade deployment mechanisms. Geneware muscle density treatment is visible as unnatural muscle definition and a subtle shimmer or rippling effect under the skin of the arms and shoulders when he moves.",
+    "visible_augmentations": "Subdermal weapon mounts in both forearms are visible as faint circular scarring and a subtle ridge of reinforced tissue running the length of each forearm. Chrome deliberately exposed—no attempt to hide the blade deployment mechanisms. Geneware muscle density treatment visible as unnatural muscle definition and subtle shimmer or rippling effect under the skin of the arms and shoulders when he moves.",
     "posture_movement": "Economical and predatory. Moves from the hips and shoulders, not the limbs. No wasted motion. Stands with weight distributed on the balls of his feet, ready to shift in any direction instantly. Eyes track movement constantly. Default expression is neutral-to-hostile. When at rest, he's coiled rather than relaxed.",
-    "clothing_style": "Tier 4 utilitarian. Black reinforced work pants with cargo pockets and tool loops — worn, maintained, practical. Sleeveless compression undershirt showing off the augmented forearms deliberately. Matte-black tactical jacket with Velcro patch sections for identification — usually blank. Scuffed combat boots, steel-toed, broken in through heavy use. Everything is dark, everything is functional, nothing is decorative. His clothes are designed to survive contact with edges, heat, and blood. No corporate logos, no gang colors, no affiliation markers — deliberate neutrality."
+    "clothing_style": "Tier 4 utilitarian. Black reinforced work pants with cargo pockets and tool loops—worn, maintained, practical. Sleeveless compression undershirt showing off the augmented forearms deliberately. Matte-black tactical jacket with Velcro patch sections for identification—usually blank. Scuffed combat boots, steel-toed, broken in through heavy use. Everything is dark, everything is functional, nothing is decorative. Designed to survive contact with edges, heat, and blood. No corporate logos, no gang colors, no affiliation markers—deliberate neutrality."
   },
-  "image_prompt": "Vale Johansson-Björnsdóttir, Southeast Asian heritage (Vietnamese/Thai featured), 168cm compact muscular frame, dark brown eyes, black hair cropped military-short with silver at temples, warm medium brown skin with golden undertones. Cyberpunk 2226, GLMZ. Scarred face — 12cm pale scar temple to jaw, broken nose set rough, dark circles from stim cycle debt. Sleeveless compression shirt exposing augmented forearms with visible subdermal blade mounts (circular scarring, chrome deployment ridges), geneware muscle rippling shimmer. Burn scars on knuckles, forearm intervention scars. Black reinforced tactical jacket (matte, Velcro patch sections blank), cargo pants, steel-toed combat boots. Predatory coiled posture, weight on balls of feet, neutral-hostile expression, economical movement. No corporate logos, no gang colors. Neon-lit industrial GLMZ setting, cool blue-purple shadowplay, gritty rain-slicked urban backdrop, harsh cybernetic lighting revealing augmentation details. Mood: dangerous, professional, lethal calm. --ar 2:3 --v 6",
+  "image_prompt": "Vale Migizi-Thammasak, mixed-heritage neo-noir operative, 2226. Medium-brown skin with golden-copper Indigenous American base tone, olive-jade cheekbones from Southeast Asian heritage, cool undertones on jawline from Northern European ancestry. 168cm tall, compact muscular build, wide shoulders. Short black hair with silver temples, dark brown alert eyes, weathered complexion with blade scar running left temple to jaw, broken nose. Sleeveless black compression undershirt revealing augmented forearms with visible subdermal blade mount scarring and geneware muscle ripple shimmer. Matte-black tactical jacket, reinforced black cargo pants, steel-toed boots. Coiled predatory posture, weight on balls of feet, neutral-hostile expression. Dark gritty Great Lakes Metropolitan Zone interior, neon rim lighting casting cool shadows, industrial neo-noir urban aesthetic, moody tension --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 68.6,
-    "East Asian": 28.5,
-    "Sub-Saharan African": 2.9
+    "Indigenous American": 70.5,
+    "Southeast Asian": 17.2,
+    "Northern European": 12.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 59.4
+      },
+      "Plains Nations": {
+        "Cherokee": 11.1
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.5
+      },
+      "Thai": {
+        "Thai": 11.7
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 9.3,
+        "Norwegian": 3
+      }
+    }
+  }
 }

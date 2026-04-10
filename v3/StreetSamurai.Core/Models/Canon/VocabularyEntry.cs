@@ -4,7 +4,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// A slang term, phrase, or jargon entry from Meridian 88.
+/// A slang term, phrase, or jargon entry from GLMZ.
 /// The vocabulary of the GLM is a living document — each tier, faction,
 /// and district has its own dialect. Shelf Cant is different from Spire Speak.
 /// </summary>

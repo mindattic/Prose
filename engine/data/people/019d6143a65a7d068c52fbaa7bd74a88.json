@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65a7d068c52fbaa7bd74a88",
   "type": "character",
-  "name": "Sterling Tetteh",
+  "name": "Sterling Quiñones",
   "aliases": [
     "Miri",
     "The Needle"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, shop called 'Second Skin' on Brewer's Spine, near Western and Chicago Ave",
-  "description": "Mirela is a broad-shouldered woman whose hands tell the story of forty years of needlework — knuckles thick as bolts, fingertips calloused to near-insensitivity, but still capable of threading a two-micron filament in dim light without blinking. Her silver-streaked hair is always pinned up with what appear to be decorative sticks but are actually precision seam rippers. Her skin is deep brown with reddish undertones, and she wears a pair of magnifying lenses on a chain around her neck that she raises to her eyes with theatrical gravity when inspecting a fabric flaw. She has a single cosmetic mod — color-shifting irises that she bought thirty years ago and which now cycle slowly through amber and green, a fashion relic she's never seen reason to update.\n\nMirela runs Second Skin with the authority of someone who has outlasted three landlords, two corporate rezoning attempts, and a flooding incident she still blames on Ferrogate Transit's drainage rerouting. She is blunt, even harsh, with new customers — she will tell you your measurements, your problem areas, and her honest opinion of your fashion choices without invitation — but the neighborhood considers this honesty a form of affection. She prays to the local E.L.F. she calls 'the Loom,' leaving offerings of thread spools and pattern fragments on the small shrine bolted above her cutting table.",
+  "description": "Sterling Quiñones is a broad-shouldered woman whose hands tell the story of forty years of needlework — knuckles thick as bolts, fingertips calloused to near-insensitivity, but still capable of threading a two-micron filament in dim light without blinking. Her silver-streaked hair is always pinned up with what appear to be decorative sticks but are actually precision seam rippers. Her skin is deep brown with reddish undertones, and she wears a pair of magnifying lenses on a chain around her neck that she raises to her eyes with theatrical gravity when inspecting a fabric flaw. She has a single cosmetic mod — color-shifting irises that she bought thirty years ago and which now cycle slowly through amber and green, a fashion relic she's never seen reason to update.\n\nSterling Quiñones runs Second Skin with the authority of someone who has outlasted three landlords, two corporate rezoning attempts, and a flooding incident she still blames on Ferrogate Transit's drainage rerouting. She is blunt, even harsh, with new customers — she will tell you your measurements, your problem areas, and her honest opinion of your fashion choices without invitation — but the neighborhood considers this honesty a form of affection. She prays to the local E.L.F. she calls 'the Loom,' leaving offerings of thread spools and pattern fragments on the small shrine bolted above her cutting table.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -154,7 +154,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,30 +175,16 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Lacework Confessional",
     "The Skinners",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pure Hand",
-    "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Loom",
     "Chicago",
-    "Alper Holmberg-Dembele",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Dzemal Acholonu-Patagiri",
-    "Obafemi Szczypiński-Lautoa",
-    "Roshani Mvula-Atencio",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "The Compact",
-    "The Loom",
-    "Vantablack VS-3 'Skin Job'"
+    "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Honest Burger",
+    "The Pure Hand",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (59%) with significant Hispanic/Latin American (26.4%) admixture, complemented by South Asian (9.3%) and Eastern European (5.3%) ancestry. This genetic combination manifests in rich, warm-toned deep brown skin with subtle golden and reddish undertones from the African and Latin American heritage, enhanced by the warm complexion influence of South Asian genetics.",
+    "heritage": "Predominantly Hispanic/Latin American (52.2%) with significant Indigenous American (32.2%) ancestry, complemented by Sub-Saharan African (12.9%) and Northern European (2.7%) heritage. This genetic combination manifests in warm, medium-to-deep brown skin with golden and reddish undertones from the Latin American and Indigenous ancestry, enriched by the warmth and depth contributed by African genetics. The blend creates a complexion with subtle luminosity and warm character.",
     "height_cm": 167,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, with the compact, functional musculature of someone who spends eight hours daily hunched over a cutting table. Not soft, not lean — a body built for sustained precision work rather than display.",
@@ -206,8 +192,8 @@
     "hair_style": "Pinned upward in a tight, practical arrangement, secured with what appear to be decorative bone or wood sticks but are precision seam rippers",
     "hair_length": "Long, worn up",
     "eye_color": "Cosmetic mod: color-cycling irises that shift between amber and green on a slow loop (relic tech, installed ~30 years ago)",
-    "skin_tone": "Rich, warm deep brown with golden and reddish undertones, evenly pigmented across the face and body",
-    "complexion": "Unlined face with deep smile creases at the corners of her eyes and mouth. Facial structure reflects the blended ancestry — broad cheekbones characteristic of African heritage softened by the warmer, rounder contours influenced by Latin American and South Asian genetics. Skin shows sun-exposure history from working near windows. No visible tattoos or scarification. Grooming is minimal but deliberate — she does not fuss with appearance.",
+    "skin_tone": "Warm, medium-to-deep brown with golden, reddish, and subtle earthy undertones from blended Latin American, Indigenous American, and African ancestry, evenly pigmented across the face and body",
+    "complexion": "Unlined face with deep smile creases at the corners of her eyes and mouth. Facial structure reflects the blended ancestry — broad cheekbones and slightly angular features characteristic of Indigenous American heritage, softened by the warmer, fuller contours influenced by Latin American and African genetics. The bridge of her nose carries the defined structure of Indigenous ancestry, while her jawline shows the warmth of the combined heritage. Skin shows sun-exposure history from working near windows. No visible tattoos or scarification. Grooming is minimal but deliberate — she does not fuss with appearance.",
     "distinguishing_marks": [
       "Callused fingertips on both hands, worn smooth and thick from forty years of needlework, nearly insensitive to fine touch",
       "Knuckles thickened and slightly arthritic, particularly on index and middle fingers",
@@ -217,15 +203,50 @@
     "posture_movement": "Habitually forward-leaning from decades at the worktable, shoulders slightly rounded. Movements are economical and deliberate — no wasted motion. Hands are constantly in motion even when at rest, fingers flexing or mimicking stitching patterns. Stands with weight distributed evenly, grounded.",
     "clothing_style": "Tier 3-4 utilitarian aesthetic. Always wears a work apron over simple, well-maintained clothing — the apron is a patchwork of fabric samples, seams, and repaired tears, a walking advertisement for her skill. Prefers muted colors (grays, blacks, deep blues) with occasional bright accent fabrics pinned to her collar or cuff. Wears soft leather shoes with reinforced soles, broken in and comfortable. No jewelry except the magnifying lens chain. Grooming reflects tier 3 independence — clean, functional, not fashionable."
   },
-  "image_prompt": "Sterling Tetteh, a 167cm dark-skinned tailor with rich warm brown complexion and golden undertones, mid-50s, wearing a patchwork work apron covered in fabric swatches over utilitarian grays and blacks. Deep black hair with silver streaks pinned up with bone sticks. Slow color-cycling amber-green eyes (relic tech) framed by pronounced smile lines. Broad shoulders and solid build from decades of precision needlework. Magnifying lenses on chain around neck. Weathered, callused hands frozen mid-stitch gesture. Habitually forward-leaning posture. Soft leather work shoes. Standing near a cutting table in warm window light, shadows across industrial workshop. Cyberpunk 2226, Great Lakes Metropolitan Zone, tier 3 independent seamstress aesthetic, photorealistic, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Sterling Quiñones, a 167cm seamstress in the 2226 GLMZ, warm medium-deep brown skin with golden reddish undertones reflecting blended Latin American, Indigenous American, and African heritage, broad cheekbones and angular features softened by the warmth of her ancestry, deep black hair streaked with silver pinned up with precision seam rippers, color-cycling irises shifting amber-green from cosmetic mod, deep smile creases at eyes and mouth, callused hands with thickened knuckles from forty years of needlework, magnifying lenses on chain around neck, wearing patchwork utility apron over muted grays and blacks with bright accent fabrics pinned to collar, soft worn leather shoes, forward-leaning posture from decades at worktable, hands in constant motion, GLMZ 2200s utilitarian tier 3-4 aesthetic, standing in neon-lit workshop with fabric swatches and cutting tables in background, warm industrial lighting casting shadows on her face, exhausted but focused expression, cinematic mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 59.0,
-    "Hispanic/Latin American": 26.4,
-    "South Asian": 9.3,
-    "Eastern European": 5.3
+    "Hispanic/Latin American": 52.2,
+    "Indigenous American": 32.2,
+    "Sub-Saharan African": 12.9,
+    "Northern European": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 42.4,
+        "Guatemalan": 9.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 24.3,
+        "Aymara": 7.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 4.6,
+        "Guinean": 5.4
+      },
+      "East African": {
+        "Kenyan": 2.9
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 0.6,
+        "Dutch": 0.2
+      },
+      "British Isles": {
+        "Scottish": 1.4
+      },
+      "Scandinavian": {
+        "Swedish": 0.5
+      }
+    }
+  }
 }

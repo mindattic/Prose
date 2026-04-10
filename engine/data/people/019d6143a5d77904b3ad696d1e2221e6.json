@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d77904b3ad696d1e2221e6",
   "type": "character",
-  "name": "Cipher Amrani-Thorvaldsdóttir",
+  "name": "Zarina Abdykadyrov-Nakamura",
   "aliases": [
     "Talon",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Walton",
-  "description": "Cem Watanabe-Amponsah are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 54, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a sniper out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nCem Watanabe-Amponsah have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
+  "description": "Zarina Abdykadyrov-Nakamura are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 54, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a sniper out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nZarina Abdykadyrov-Nakamura have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -260,7 +260,7 @@
     "Ghost": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,27 +274,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Brecken Yılmaz-Osei",
-    "Djeneba Park-Traore",
-    "Focadrin",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly East Asian (58.4%) with significant North African (21.8%) ancestry, complemented by Northern European (14.2%) and Hispanic/Latin American (5.6%) heritage. The result is a striking pan-diaspora phenotype: East Asian bone structure softened by North African warmth, with subtle Northern European undertones",
+    "heritage": "Central Asian dominant (56.8%) with significant East Asian (17.5%), Middle Eastern (16.7%), and Sub-Saharan African (9.0%) ancestry. The result is a striking pan-diaspora phenotype: Central Asian bone structure with East Asian refinement, warmed by Middle Eastern and African depth, creating a uniquely balanced complexion and facial geometry",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Athletic and lean with controlled musculature — dancer's flexibility combined with fighter's core strength. No excess mass; every movement appears economical",
@@ -302,8 +286,8 @@
     "hair_style": "Pulled back tight, secured with a minimal clip",
     "hair_length": "Medium",
     "eye_color": "Dark brown, alert and constantly assessing",
-    "skin_tone": "Warm golden-bronze: East Asian undertones layered with North African depth, creating a luminous medium complexion that shifts subtly in different light",
-    "complexion": "Defined cheekbones and angular jaw reflecting East Asian structure, with the broader facial planes and fuller features influenced by North African ancestry. Skin is clear but weathered slightly around the eyes from squinting through scope work. Minimal grooming beyond functional maintenance — no jewelry, no ornamentation",
+    "skin_tone": "Warm caramel-bronze: Central Asian base enriched with East Asian luminosity and Middle Eastern warmth, layered with Sub-Saharan depth. Medium complexion with subtle golden undertones that shift in different light",
+    "complexion": "Balanced facial geometry reflecting Central Asian structure with refined high cheekbones, moderate facial planes informed by East Asian ancestry, and warmer undertones from Middle Eastern and African heritage. Skin is clear but weathered slightly around the eyes from squinting through scope work. Minimal grooming beyond functional maintenance — no jewelry, no ornamentation",
     "distinguishing_marks": [
       "Thin scar running horizontally across left cheekbone, approximately 3cm, faint but visible in certain light",
       "Older burn scar on right forearm, roughly 4x4cm, partially obscured by clothing",
@@ -313,15 +297,49 @@
     "posture_movement": "Spine straight but never rigid. Movements are fluid and minimal — nothing wasted. Eyes track constantly in a sniper's practiced scan. Default expression is neutral vigilance; smiles are rare and deployed strategically. Hands rest naturally, fingers loose, not tense",
     "clothing_style": "Tier 2-3 blend: well-maintained neutral tactical wear that functions as both cover identity and professional uniform. Black or charcoal synthetic pants with multiple pockets, tucked into matte-black boots (scuffed from use). Layered tops allowing quick adjustment — current preference is a fitted gray long-sleeve under an unbuttoned charcoal overshirt. No logos, no branding. A worn leather jacket (genuine, expensive, old) over everything. All fabrics are quiet — no swoosh, no rustle"
   },
-  "image_prompt": "Cipher Amrani-Thorvaldsdóttir, a 172cm lean athletic operative in cyberpunk 2226, medium warm golden-bronze skin blending East Asian and North African heritage, defined cheekbones and angular jaw, dark alert eyes. Black hair with salt-gray at temples pulled back tight. Thin horizontal scar across left cheekbone, older burn scar on right forearm. Chrome pain editor array along left temple and neck with subtle metallic-gray LED indicators. Dressed in layered tactical wear: fitted gray long-sleeve under charcoal overshirt, black synthetic pants, scuffed matte-black boots, worn genuine leather jacket. Monofilament whip subcutaneous webbing visible on left forearm under skin. Neutral vigilant expression, fluid controlled posture, sniper's constant eye scan, hands naturally rested. Standing in dim neon-lit industrial corridor, cool blue and amber light casting sharp shadows across her face, emphasizing scar tissue and augmentation chrome. Cyberpunk noir aesthetic, professional operative at rest, no wasted movement --ar 2:3 --v 6",
+  "image_prompt": "Zarina Abdykadyrov-Nakamura, 172cm tall professional operative, warm caramel-bronze skin with golden undertones reflecting Central Asian, East Asian, Middle Eastern, and Sub-Saharan African ancestry, dark alert eyes, black hair with salt-gray at temples pulled back tight, faint horizontal scar across left cheekbone, athletic lean build, chrome pain editor array visible along left temple with metallic-gray metallic finish, dressed in layered tactical wear - fitted gray long-sleeve under unbuttoned charcoal overshirt, matte-black scuffed boots, worn genuine leather jacket over all, standing in GLMZ neon-lit environment with neutral vigilant expression, sniper's practiced gaze, minimal wasted movement, noir atmospheric lighting casting sharp shadows, ultra-detailed near-future megacity setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 58.4,
-    "North African": 21.8,
-    "Northern European": 14.2,
-    "Hispanic/Latin American": 5.6
+    "Central Asian": 56.8,
+    "East Asian": 17.5,
+    "Middle Eastern": 16.7,
+    "Sub-Saharan African": 9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 31.9,
+        "Hazara": 24.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.9
+      },
+      "Korean": {
+        "Korean": 1.5
+      },
+      "Chinese": {
+        "Hakka": 0.3,
+        "Fujianese": 2.8
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 12.6,
+        "Tajik Persian": 0.9
+      },
+      "Arab Levantine": {
+        "Palestinian": 3.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 9
+      }
+    }
+  }
 }

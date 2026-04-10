@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7207e38b1370f331616de0a",
   "type": "character",
-  "name": "Luciana Kristjánsson-Lindström",
+  "name": "Luciana Ekwensi-Fredriksen",
   "aliases": [
     "Xochi",
     "The Broad",
@@ -14,7 +14,7 @@
   "age": 67,
   "status": "active",
   "location": "The Shelf, Block 14, near Western and Division",
-  "description": "Xochitl Adaeze Velarde-Okeke is a tall woman gone slightly stooped by a lower back injury she never had properly repaired, with close-cropped white hair, dark brown skin deeply lined around the eyes, and the hands of someone who has done physical labor across five decades. Her face is broad and expressive, capable of a warmth that arrives like weather and a coldness that does the same. She has a Oaxacan-Igbo heritage that she carries in her name and in the particular way she moves through spaces—with the deliberate economy of someone who learned long ago that being large and dark-skinned in certain rooms meant being watched, so she learned to make the watching cost nothing.\n\nShe spent twenty-two years as a security contractor for Spire-adjacent corporate interests, rising to senior threat assessment before an internal review—widely understood in the industry as a political purge following a change in executive leadership—stripped her clearances, voided her pension, and had her classified as a 'liability-tier former employee.' She was fifty-five. She appealed. She lost. She moved to The Shelf because the rent was what she could afford, and because she knew nobody there, which felt like a clean slate and also like dying slowly. Neither turned out to be entirely accurate.\n\nThe Shelf found uses for her. People with disputes come to her—tenancy disagreements, debt questions, situations that haven't yet become violent but are heading there. She arbitrates. She charges in food and favors and occasional hard currency. She has no formal authority and more actual authority than anyone on Block 14. She sleeps badly, eats well because her neighbors feed her, and is quietly furious almost all of the time. She does not perform this fury. She performs patience, which is harder.",
+  "description": "Luciana Ekwensi-Fredriksen is a tall woman gone slightly stooped by a lower back injury she never had properly repaired, with close-cropped white hair, dark brown skin deeply lined around the eyes, and the hands of someone who has done physical labor across five decades. Her face is broad and expressive, capable of a warmth that arrives like weather and a coldness that does the same. She has a Oaxacan-Igbo heritage that she carries in her name and in the particular way she moves through spaces—with the deliberate economy of someone who learned long ago that being large and dark-skinned in certain rooms meant being watched, so she learned to make the watching cost nothing.\n\nShe spent twenty-two years as a security contractor for Spire-adjacent corporate interests, rising to senior threat assessment before an internal review—widely understood in the industry as a political purge following a change in executive leadership—stripped her clearances, voided her pension, and had her classified as a 'liability-tier former employee.' She was fifty-five. She appealed. She lost. She moved to The Shelf because the rent was what she could afford, and because she knew nobody there, which felt like a clean slate and also like dying slowly. Neither turned out to be entirely accurate.\n\nThe Shelf found uses for her. People with disputes come to her—tenancy disagreements, debt questions, situations that haven't yet become violent but are heading there. She arbitrates. She charges in food and favors and occasional hard currency. She has no formal authority and more actual authority than anyone on Block 14. She sleeps badly, eats well because her neighbors feed her, and is quietly furious almost all of the time. She does not perform this fury. She performs patience, which is harder.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -235,7 +235,7 @@
     "Diplomat": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,39 +253,24 @@
     "Gage Circuit",
     "The Shelf",
     "The Heritage Vault",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "Chimera-Null",
     "The Pure Hand",
     "Lazarus Pharmaceutical Emetix-9 'Purge'",
-    "Aminata Vargas-Baffour",
-    "Brecken Yılmaz-Osei",
-    "Brewer's Spine",
-    "Cinderblock Ai",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "TESSERA ES-4 'Perimeter'",
-    "The Question",
-    "The Spire",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tambadou-Reinholt"
+    "Slate"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed East Asian (39%), Hispanic/Latin American (28%), Northern European (26%), and Central Asian (7%) ancestry. Her features reflect this complex blend: East Asian structure in her cheekbones and eye shape, Latin American warmth in her skin tone and facial proportions, Northern European elements in her bone structure and coloring, with subtle Central Asian influences in her broader facial geometry.",
+    "heritage": "Mixed Southeast Asian (44.8%), Hispanic/Latin American (34.1%), Sub-Saharan African (16.9%), and Middle Eastern (4.2%) ancestry. Her features reflect this complex blend: Southeast Asian structure in her cheekbones and eye shape, Sub-Saharan African warmth and depth in her skin tone and facial proportions, Latin American contours in her face geometry, with subtle Middle Eastern influences in her nose and orbital structure.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Tall and broad-shouldered, gone slightly stooped at the spine from untreated lower back injury. Still carries muscle density from decades of physical labor, but with the softening that comes with age and subsistence living. Hands are large, callused, capable—a laborer's hands that never fully retired.",
     "hair_color": "White",
     "hair_style": "Close-cropped, no styling beyond functional maintenance. Reveals the full architecture of her skull.",
     "hair_length": "Short",
-    "eye_color": "Dark brown with amber undertones (natural); left eye has faint luminescent quality in low light from retinal archive implant",
-    "skin_tone": "Warm deep brown with golden and olive undertones from her mixed ancestry—sun-darkened further by years in The Shelf's outdoor maintenance work. The East Asian and Central Asian elements create subtle warm undertones beneath the deeper melanin.",
-    "complexion": "Angular face with prominent, high cheekbones reflecting East Asian structure, softened by the broader bone structure of her Latin American heritage. Deeply lined around the eyes and mouth from sixty-seven years of expressive face-work and squinting into harsh light. Skin is weathered but well-maintained—cared for with intention. No makeup. A few age spots on her temples and jawline. Her resting expression defaults to neutrality, but warmth and coldness arrive in it like weather systems.",
+    "eye_color": "Dark brown (natural); left eye has faint luminescent quality in low light from retinal archive implant",
+    "skin_tone": "Rich deep brown with warm golden undertones from her Southeast Asian, Sub-Saharan African, and Latin American heritage—sun-darkened further by years in The Shelf's outdoor maintenance work. The layered ancestry creates complex warm undertones beneath the deeper melanin.",
+    "complexion": "Angular face with prominent, high cheekbones reflecting Southeast Asian structure, softened by the broader bone structure of her Sub-Saharan African and Latin American heritage. Deeply lined around the eyes and mouth from sixty-seven years of expressive face-work and squinting into harsh light. Skin is weathered but well-maintained—cared for with intention. No makeup. A few age spots on her temples and jawline. Her resting expression defaults to neutrality, but warmth and coldness arrive in it like weather systems.",
     "distinguishing_marks": [
       "Faint surgical scar at the base of her skull, barely visible beneath close-cropped hair, roughly 3cm long, from neural damper installation",
       "Small burn scar on the back of her left hand, shaped like a fingerprint, from a contractor-era incident she does not discuss",
@@ -296,15 +281,50 @@
     "posture_movement": "Moves with deliberate economy, each action measured and purposeful. Slight forward tilt in the shoulders from the spinal injury, but corrected through habit so it reads as attentiveness rather than pain. Her gait is steady, unhurried. She occupies space without claiming it—a learned skill from decades of being watched. When she sits, she settles completely, as if she has decided to be there. When she stands, there is always readiness beneath the stillness.",
     "clothing_style": "Tier 4 practical—durable synthetics and salvaged natural fibers that prioritize function over appearance. Dark colors (charcoal, deep grey, black) that hide stains and read as authority without aggression. Loose-fitting work pants with reinforced pockets, worn boots with good tread, neutral tank tops or long-sleeved shirts depending on season. A heavy canvas coat, patched but well-maintained, worn most days. No jewelry except a single thin silver band on her right index finger—a contractor's identification ring she never removed. Clothing is clean but not pristine. She dresses like someone who will work before the day is done."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Luciana, a 67-year-old woman of mixed East Asian, Latin American, Northern European, and Central Asian heritage. Warm deep brown skin with golden undertones, short white hair revealing sharp skull architecture. Angular high cheekbones with deep lines around eyes and mouth from decades of outdoor labor. Left eye with subtle silver threading from retinal implant, faintly luminescent. Dark brown natural eye color. Stooped posture from old spinal injury, still carrying laborer's muscle density. Weathered but intentionally maintained skin, age spots on temples. Wearing dark charcoal work clothes—loose synthetic pants, reinforced pockets, worn boots, heavy patched canvas coat. Single silver contractor's ring on right index finger. Faint surgical scar at base of skull. Measured, economical posture. Standing in industrial Great Lakes Metropolitan Zone setting with moody cyberpunk lighting, cool blue and amber neon casting shadows across her face. Atmospheric fog, worn maintenance facility background. Mood: quiet authority, contained intensity, decades of accumulated experience. Professional portrait lighting emphasizing her weathered dignity. --ar 2:3 --v 6",
+  "image_prompt": "Luciana Ekwenski-Fredriksen, 67-year-old woman, tall and broad-shouldered with slight forward spine curvature, GLMZ. Rich deep brown skin with warm golden undertones blending Southeast Asian, Sub-Saharan African, Latin American, and Middle Eastern heritage. Angular face with high prominent cheekbones, deeply lined around eyes and mouth, age spots on temples. White close-cropped hair revealing skull architecture. Dark brown natural eyes; left eye with subtle silver threading at iris margin from retinal archive implant that glows faintly in low light. Faint surgical scar at base of skull, small fingerprint burn scar on left hand back. Weathered skin showing decades of outdoor labor, well-maintained. Wearing dark charcoal practical synthetics, loose work pants with reinforced pockets, worn boots, long-sleeved neutral shirt, heavy patched canvas coat. Single thin silver contractor identification ring on right index finger. Posture deliberate and measured with slight attentiveness lean. Standing in indoor workspace with cool neon backlighting, casting shadows across lined face, calm neutral expression with underlying readiness. Great Lakes Metropolitan Zone aesthetic, industrial setting, soft ambient lighting with accent neon. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 39.0,
-    "Hispanic/Latin American": 28.1,
-    "Northern European": 25.7,
-    "Central Asian": 7.2
+    "Southeast Asian": 44.8,
+    "Hispanic/Latin American": 34.1,
+    "Sub-Saharan African": 16.9,
+    "Middle Eastern": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 34.4
+      },
+      "Indonesian": {
+        "Javanese": 1.2,
+        "Sundanese": 9.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Chilean": 27,
+        "Venezuelan": 7.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 16.9
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 2.1
+      },
+      "Arab Levantine": {
+        "Jordanian": 0.4,
+        "Palestinian": 0.4
+      },
+      "Arab Gulf": {
+        "Iraqi": 1,
+        "Yemeni": 0.3
+      }
+    }
+  }
 }

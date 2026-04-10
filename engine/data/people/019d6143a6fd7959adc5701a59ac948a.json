@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fd7959adc5701a59ac948a",
   "type": "character",
-  "name": "Echo Fredriksen",
+  "name": "Andrei Ly",
   "aliases": [
     "Tjeer",
     "The Dutchman"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Based out of Copperhead Station depot; lives in a capsule apartment in McKinley Flats, near Ashland and Division",
-  "description": "Tjeerd is lean in the way of someone who forgets to eat — not hungry, just elsewhere. He's got his father's Congolese height and his mother's Dutch pallor tipped toward olive in the fluorescent light of the transit cab, with a patchy beard he trims but never quite conquers and geneware cat ears — cream-colored, slightly moth-eaten at the tips — that he got at eighteen and has since half-regretted, because they go flat when he's tired and everyone can tell. His hands are calloused from the manual override controls he insists on using when the AI would do fine. His Ferrogate Transit uniform is worn to a specific softness at the collar.\n\nHe is the kind of person who is most himself when alone but does not enjoy being lonely — a contradiction he has not resolved. He loves the 7-Copperhead line with the quiet intensity some people reserve for religion: the rhythm of the stops, the specific quality of dawn light over McKinley Flats at 0512 when nothing else is moving. He treats passengers with mechanical courtesy that occasionally cracks open into genuine warmth for regulars. He has opinions about rail maintenance he will share at length if given the slightest opening.",
+  "description": "Andrei Ly is lean in the way of someone who forgets to eat — not hungry, just elsewhere. He's got his father's Congolese height and his mother's Dutch pallor tipped toward olive in the fluorescent light of the transit cab, with a patchy beard he trims but never quite conquers and geneware cat ears — cream-colored, slightly moth-eaten at the tips — that he got at eighteen and has since half-regretted, because they go flat when he's tired and everyone can tell. His hands are calloused from the manual override controls he insists on using when the AI would do fine. His Ferrogate Transit uniform is worn to a specific softness at the collar.\n\nHe is the kind of person who is most himself when alone but does not enjoy being lonely — a contradiction he has not resolved. He loves the 7-Copperhead line with the quiet intensity some people reserve for religion: the rhythm of the stops, the specific quality of dawn light over McKinley Flats at 0512 when nothing else is moving. He treats passengers with mechanical courtesy that occasionally cracks open into genuine warmth for regulars. He has opinions about rail maintenance he will share at length if given the slightest opening.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -177,7 +177,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Based out of Copperhead Station depot; lives in a capsule apartment in McKinley Flats",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,28 +232,15 @@
     "McKinley Flats",
     "Copperhead",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "GLMZ",
     "Big Rig",
-    "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Noodle Train",
-    "Oumarou Svec-Ranginui",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Stainless Steel",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Fathom Line",
-    "Tiare Sjostrom-Kwarteng",
-    "Yannick Tofauti-Szarvásy",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with secondary Hispanic/Latin American and North African ancestry. His features reflect a strong East Asian genetic foundation — high, prominent cheekbones characteristic of East Asian phenotypes, slightly downturned eye shape, and natural skin tone carrying warm olive undertones from the blended Hispanic and North African components. The combination creates a distinctly mixed-heritage appearance common to 23rd-century diaspora populations.",
+    "heritage": "Mixed Southeast Asian (45.5%), Eastern European (40.4%), Sub-Saharan African (9.9%), and Hispanic/Latin American (4.2%) ancestry. His features reflect a complex blend — Southeast Asian foundation evident in cheekbone structure and eye shape, tempered by Eastern European bone geometry and Sub-Saharan African warmth in skin undertones. The combination creates a distinctly diaspora appearance, with no single heritage dominating visually.",
     "height_cm": 188,
     "weight_kg": 71,
     "build": "Lean and lanky — the kind of height that comes from his father's side, with a runner's lack of bulk. His frame reads as someone perpetually in motion between places, muscle kept minimal by inattention rather than design.",
@@ -261,8 +248,8 @@
     "hair_style": "Short, slightly unkempt, with a tendency to stand up at the back where he runs his hand through it during concentration",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert despite fatigue",
-    "skin_tone": "Warm medium olive — the natural result of East Asian ancestry (83.2%) with warmth and slight golden undertones from Hispanic/Latin American (8.4%) and North African (8.4%) heritage. Yellowed-out under twelve hours of fluorescent transit cab lighting, skin carries the faint pallor of someone who sleeps during daylight.",
-    "complexion": "Distinctly East Asian-influenced facial structure with high, pronounced cheekbones and slight downturned eye shape. Smooth skin texture with fine lines around his eyes from squinting at control panels and dawn light. A patchy beard of dark and graying hair he trims but never fully eliminates, kept at roughly two-days growth. Skin slightly dehydrated.",
+    "skin_tone": "Medium warm bronze with golden undertones — the natural result of Southeast Asian (45.5%) and Eastern European (40.4%) base genetics enriched by warmth and depth from Sub-Saharan African (9.9%) and Hispanic/Latin American (4.2%) ancestry. Carries subtle golden and warm undertones. Yellowed-out under twelve hours of fluorescent transit cab lighting, skin carries the faint pallor of someone who sleeps during daylight.",
+    "complexion": "Southeast Asian and Eastern European facial structure with high, pronounced cheekbones balanced by broader Eastern European bone geometry. Slight downturned eye shape characteristic of Southeast Asian heritage, with warm brown irises. Smooth skin texture with fine lines around his eyes from squinting at control panels and dawn light. A patchy beard of dark and graying hair he trims but never fully eliminates, kept at roughly two-days growth. Skin slightly dehydrated.",
     "distinguishing_marks": [
       "Cream-colored geneware cat ears implanted at the base of his skull, slightly translucent at the edges, often visibly drooping when fatigued",
       "Calluses across his palms and inner fingers from years of gripping manual override controls",
@@ -272,14 +259,47 @@
     "posture_movement": "Upright but not rigid, with a slight forward lean as if always listening to something just beyond hearing. His movements are economical — no wasted motion in the cab. When standing still, he gravitates toward leaning against walls or railings. His hands move with precision when working controls, but his shoulders tend to hunch slightly when he's deep in thought about rail maintenance or the morning schedule.",
     "clothing_style": "Ferrogate Transit operator uniform — a worn navy jumpsuit with reflective trim and his name stitched above the left pocket, faded to a soft, comfortable state at collar and cuffs from twelve-hour shifts. The fabric has slight wear marks from repeated contact with cab controls. Under it, a plain gray thermals shirt. When off-duty, he wears durable working clothes: heavy canvas pants, unmarked gray or black hoodies, reinforced boots. Everything is Tier 3-4 utilitarian — functional, maintained, but not invested in. A Ferrogate ID badge on a lanyard. One stainless steel watch, regulation-issue, always set to depot time."
   },
-  "image_prompt": "Echo Fredriksen, 188cm East Asian-heritage transit operator with warm olive skin tone and high cheekbones, dark brown eyes with fine lines from fatigue, short dark hair graying at temples slightly unkempt. Cream-colored translucent geneware cat ears drooping at skull base from exhaustion. Two-day stubble, lean lanky build. Wearing faded navy Ferrogate jumpsuit with reflective trim, name patch visible, gray thermals underneath, stainless steel regulation watch. Standing in dimly-lit transit cab with forward lean posture, hands near control panels. Fluorescent yellow-green overhead lighting casting harsh shadows, cyberpunk 2226 Great Lakes Metropolitan Zone, morning pre-dawn atmosphere, tired but alert expression, economical movements --ar 2:3 --v 6",
+  "image_prompt": "Andrei Ly, 188cm lean transit operator with medium warm bronze skin, high cheekbones blending Southeast Asian and Eastern European features, slight downturned eye shape, dark brown alert eyes, patchy two-day beard. Cream-colored translucent geneware cat ears drooping slightly at base of skull. Wearing faded navy Ferrogate jumpsuit with reflective trim and worn collar, gray thermals underneath. Standing in fluorescent-lit transit cab with slight forward lean, economical posture. Dark brown hair graying at temples, slightly unkempt. GLMZ, Great Lakes Metropolitan Zone, tired but alert expression, hands with visible calluses near control panels. Stainless steel regulation watch. Neural port scar barely visible at base of skull. Moody transit station lighting, morning shift fatigue, dystopian infrastructure in background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 83.2,
-    "Hispanic/Latin American": 8.4,
-    "North African": 8.4
+    "Southeast Asian": 45.5,
+    "Eastern European": 40.4,
+    "Sub-Saharan African": 9.9,
+    "Hispanic/Latin American": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 45.5
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 15.6,
+        "Belarusian": 16.7
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 4.5
+      },
+      "Slavic South": {
+        "Serbian": 3.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 9.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 3.5
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.7
+      }
+    }
+  }
 }

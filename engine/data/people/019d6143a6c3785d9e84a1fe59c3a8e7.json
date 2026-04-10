@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c3785d9e84a1fe59c3a8e7",
   "type": "character",
-  "name": "Sage Karunaratne",
+  "name": "Sage Kovács",
   "aliases": [
     "The Threshold Woman",
     "Sami"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Irkalla district, operates out of a narrow apartment above a prosthetic repair shop, near Ashland and Chicago Ave",
-  "description": "Samineh has the kind of face that people describe afterward as calm, though in the moment of meeting her they're not sure why — she has sharp Malian cheekbones and Iranian eyes that are a pale amber, and her expression in repose is something between watchful and patient. Her hair is natural and grown large, threaded through with small copper discs that catch light and make a very soft sound when she moves quickly. She has no visible augmentations save for a faint color-shifting quality to her skin under direct light — a cosmetic geneware inheritance from her grandmother's generation, a barely-perceptible rainbow sheen that she has never tried to suppress.\n\nShe is one of the few certified death midwives in Irkalla, a district with a high mortality rate and historically poor access to formal end-of-life care. Her work involves sitting with the dying, helping families understand what is happening physiologically and spiritually, guiding the final upload or data-will processes for those who want them, and performing the closing rites of whatever tradition the dying person holds. She is also one of three guides who regularly leads pilgrimage walks through the city's memorial infrastructure — the ghost-bridges, the data shrines, the submerged neighborhood markers. She does not advertise. People find her when they need her.",
+  "description": "Sage Kovács has the kind of face that people describe afterward as calm, though in the moment of meeting her they're not sure why — she has sharp Malian cheekbones and Iranian eyes that are a pale amber, and her expression in repose is something between watchful and patient. Her hair is natural and grown large, threaded through with small copper discs that catch light and make a very soft sound when she moves quickly. She has no visible augmentations save for a faint color-shifting quality to her skin under direct light — a cosmetic geneware inheritance from her grandmother's generation, a barely-perceptible rainbow sheen that she has never tried to suppress.\n\nShe is one of the few certified death midwives in Irkalla, a district with a high mortality rate and historically poor access to formal end-of-life care. Her work involves sitting with the dying, helping families understand what is happening physiologically and spiritually, guiding the final upload or data-will processes for those who want them, and performing the closing rites of whatever tradition the dying person holds. She is also one of three guides who regularly leads pilgrimage walks through the city's memorial infrastructure — the ghost-bridges, the data shrines, the submerged neighborhood markers. She does not advertise. People find her when they need her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -170,7 +170,7 @@
     "Ghost": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla district",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,30 +231,15 @@
     "The Iron Lotus",
     "Sterling-Nakamura Photonic Disruptor SN-15 'Prism'",
     "Irkalla",
+    "Chicago",
+    "Copper",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Tessera Industries Data Spike DS-1 'Upload'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Copper",
-    "The Pale Mile",
-    "Chicago",
-    "Alper Castillo-Ababio",
-    "Anatoliy Faye-Nkrumah",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Helix Biosystems",
-    "Idris Forsberg-Quaye",
-    "Kairos",
-    "Narrowcast",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Pure Hand",
-    "The Question",
-    "The Remembrance Society",
-    "Warm Wire, Small Hand"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Middle Eastern (50%) with significant South Asian (30%) and Northern European (20%) ancestry — a blend that manifests in warm olive-bronze skin with subtle golden undertones, angular facial structure with prominent cheekbones, and the kind of genetic diversity that makes her appearance difficult to pin to any single region",
+    "heritage": "Hispanic/Latin American (35.2%) with substantial Eastern European (33.9%), South Asian (21.0%), and Middle Eastern (9.9%) ancestry — a striking genetic blend that manifests in warm medium-bronze skin with golden undertones, angular facial structure with prominent cheekbones, and features that reflect the confluence of Mediterranean, Central Asian, and subcontinental genetics",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and upright, with the kind of economy of movement that comes from decades of sitting vigil — no wasted motion, strong core despite minimal visible musculature",
@@ -262,8 +247,8 @@
     "hair_style": "Worn large and natural, threaded through with small hand-hammered copper discs that create soft percussion when she moves",
     "hair_length": "Long (shoulder-length when compressed, voluminous when full)",
     "eye_color": "Deep warm brown with subtle amber undertones",
-    "skin_tone": "Warm olive-bronze with golden undertones — the product of Middle Eastern and South Asian ancestry lightened slightly by Northern European genetics, creating a luminous medium-deep complexion",
-    "complexion": "Minimal grooming — unlined despite age, with the kind of clarity that comes from intentional living. Prominent angular cheekbones and defined facial structure. Faint cosmetic iridescence visible under direct or angled light: a barely-perceptible rainbow sheen inherited from geneware, never suppressed or hidden",
+    "skin_tone": "Warm medium-bronze with golden undertones — the product of blended Hispanic/Latin American, Eastern European, South Asian, and Middle Eastern ancestry creating a luminous, even complexion with natural depth",
+    "complexion": "Minimal grooming — unlined despite age, with the kind of clarity that comes from intentional living. Prominent angular cheekbones and defined facial structure reflecting Central European and South Asian bone structure. Faint cosmetic iridescence visible under direct or angled light: a barely-perceptible rainbow sheen inherited from geneware, never suppressed or hidden",
     "distinguishing_marks": [
       "Fine surgical scar along the inside of her left wrist, pale and deliberate-looking, approximately 8cm long — self-inflicted decades ago, kept as intentional reminder rather than removed"
     ],
@@ -271,14 +256,58 @@
     "posture_movement": "Moves with deliberate slowness even when unhurried — a practice of presence. Sits with perfect spinal alignment, knees slightly bent, hands visible and open. Her default expression is between watchful and patient, with the kind of calm that invites speech",
     "clothing_style": "Tier 3 functional — well-maintained second-hand or co-op linen and cotton, earth tones and deep blues. Loose layers that allow long sitting. Worn leather slip-ons for quick response calls. No jewelry except the copper discs in her hair and a thin steel band on her right ring finger — simple, nothing decorative. Her clothes smell faintly of incense and cleaning herbs"
   },
-  "image_prompt": "Sage Karunaratne, 168cm lean figure in loose earth-tone linen layers and deep blue, sitting with perfect spinal alignment and calm watchful presence. Voluminous natural black hair with silver at temples, threaded with small hand-hammered copper discs, creating soft percussion. Warm olive-bronze skin with golden undertones glowing faintly with inherited iridescent geneware shimmer under angled light. Deep warm brown eyes with subtle amber, unlined face, prominent angular cheekbones. Fine pale surgical scar visible on inside of left wrist. Thin steel ring on right hand. Hands visible and open. Worn leather slip-ons. Background: cyberpunk 2200s Great Lakes Metropolitan Zone interior, soft warm incense-tinged lighting, cinematic depth, patient and inviting aura. --ar 2:3 --v 6",
+  "image_prompt": "Sage Kovács, a serene woman with warm medium-bronze skin glowing with golden undertones, visible faint iridescent cosmetic geneware shimmer. Black hair with silver temples, voluminous and adorned with small copper discs. Deep warm brown eyes with amber flecks, angular cheekbones, unlined face with striking Central European and South Asian bone structure. Lean 168cm frame in loose-fitting earth-tone and deep blue linen layers, worn leather slip-ons visible. Thin steel ring on right hand, pale 8cm scar on inner left wrist. Perfect upright posture, watchful-patient expression, hands open and visible. GLMZ GLMZ setting, moody warm lighting catching the subtle color-shift of inherited geneware on her skin, incense smoke wisping in background, serene meditative atmosphere. Tier 3 functional aesthetic, second-hand co-op clothing. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 50.2,
-    "South Asian": 30.2,
-    "Northern European": 19.6
+    "Hispanic/Latin American": 35.2,
+    "Eastern European": 33.9,
+    "South Asian": 21,
+    "Middle Eastern": 9.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 20.4
+      },
+      "Caribbean": {
+        "Cuban": 4.6,
+        "Puerto Rican": 0.5
+      },
+      "Central American": {
+        "Salvadoran": 4.9,
+        "Guatemalan": 4.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 16.9,
+        "Bosnian": 17
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.3
+      },
+      "Pakistani": {
+        "Sindhi": 8.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 4.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 3.2
+      },
+      "Arab Gulf": {
+        "Iraqi": 4.2
+      },
+      "Arab Levantine": {
+        "Jordanian": 2.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71e7964a43dce5749d11546",
   "type": "character",
-  "name": "Atlas Taufa",
+  "name": "Atlas Echeverría",
   "aliases": [
     "Mena",
     "Wrench-Girl"
@@ -13,7 +13,7 @@
   "age": 13,
   "status": "active",
   "location": "Geartown, Dearborn Forge district, near Armitage and Milwaukee",
-  "description": "Ximena is compact and strong for her age, with deep reddish-brown skin perpetually smudged with lubricant and composite dust. She keeps her hair in two thick plaits that she tucks into her collar when working and her hands are already showing the slight callus-thickening of someone who has used tools since she was eight. She has a bioluminescent birthmark — a faint greenish patch along her right collarbone, natural, not modded — that glows slightly in low light and which her coworkers call her 'running light.' She wears salvaged Ferrogate Transit safety goggles pushed up on her forehead like a permanent crown.\n\nXimena is formally registered as an apprentice with the Geartown Forge Collective under a provision that technically requires parental consent, which her uncle signed for. She earns Φ40/month — supplement to her household's UBC — doing frame alignment, bolt torque checks, and increasingly complex hydraulic diagnostics that her supervisor Adebowale trusts her with because she makes fewer errors than the adult apprentices. She is serious about the work with a seriousness that occasionally breaks into a very young, loud laugh when something surprises her.",
+  "description": "Atlas Echeverría is compact and strong for her age, with deep reddish-brown skin perpetually smudged with lubricant and composite dust. She keeps her hair in two thick plaits that she tucks into her collar when working and her hands are already showing the slight callus-thickening of someone who has used tools since she was eight. She has a bioluminescent birthmark — a faint greenish patch along her right collarbone, natural, not modded — that glows slightly in low light and which her coworkers call her 'running light.' She wears salvaged Ferrogate Transit safety goggles pushed up on her forehead like a permanent crown.\n\nAtlas Echeverría is formally registered as an apprentice with the Geartown Forge Collective under a provision that technically requires parental consent, which her uncle signed for. She earns Φ40/month — supplement to her household's UBC — doing frame alignment, bolt torque checks, and increasingly complex hydraulic diagnostics that her supervisor Adebowale trusts her with because she makes fewer errors than the adult apprentices. She is serious about the work with a seriousness that occasionally breaks into a very young, loud laugh when something surprises her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -155,7 +155,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -168,28 +168,16 @@
     "Dredge Mining Collective",
     "Dearborn Forge",
     "Geartown",
+    "The Accidental",
     "Free Assembly",
     "The Gradient Compact",
+    "Atlas",
     "The Pure Hand",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Chronicle",
-    "Crucible Genomics",
-    "Devraj Solano-Yildirim",
-    "MERIDIAN",
-    "Marcus Bellamy",
-    "Marrowvault Cryogenics",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Tenderloin",
-    "The Collective",
-    "Uncle Noodle",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Flux Strömqvist-Villalobos"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: predominantly Sub-Saharan African (28.7%) and Pacific Islander (25.8%) with significant Hispanic/Latin American (16.2%), Indigenous American (13.7%), and East Asian (11.5%) heritage, creating a striking phenotype of warm, rich brown tones with subtle golden and reddish undertones. Northern European ancestry (4.1%) contributes minimal visible traits.",
+    "heritage": "Predominantly Indigenous American (48.1%) with significant Hispanic/Latin American (32.9%) and Southeast Asian (19.0%) ancestry. Features a striking phenotype blending warm, deep brown tones with golden undertones from the Indigenous American and Hispanic heritage, refined facial structure and eye shape influenced by Southeast Asian genetics, creating a distinctive multiethnic appearance characteristic of the Ubiquitous Diaspora.",
     "height_cm": 145,
     "weight_kg": 38,
     "build": "Compact and wiry with early muscle definition in shoulders and forearms from repetitive tool work; lean through the torso with the functional strength of someone who has labored since childhood",
@@ -197,8 +185,8 @@
     "hair_style": "Worn in two thick plaits, usually tucked into collar during work shifts",
     "hair_length": "Medium (shoulder-length when unplaited)",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm deep brown with golden and reddish undertones, reflecting the blend of Sub-Saharan African and Pacific Islander ancestry with subtle warmth from Latin American and Indigenous American heritage",
-    "complexion": "Youthful face with sharp, defined cheekbones and the refined facial structure reflecting Pacific Islander and East Asian heritage; perpetually smudged with machine lubricant, composite dust, and grease in the creases of her hands and around her fingernails; sun-weathered despite her age from outdoor work areas in the Forge district",
+    "skin_tone": "Warm deep brown with subtle golden undertones, the rich coloration reflecting Indigenous American base with Hispanic/Latin American warmth and Southeast Asian influence in undertone complexity",
+    "complexion": "Youthful face with sharp, defined cheekbones and refined facial structure showing blended Southeast Asian and Indigenous American features; perpetually smudged with machine lubricant, composite dust, and grease in the creases of her hands and around her fingernails; sun-weathered despite her age from outdoor work areas in the Forge district",
     "distinguishing_marks": [
       "Bioluminescent birthmark along right collarbone — a faint greenish patch approximately 3cm across that emits soft glow in low-light conditions, natural and unmodified",
       "Premature callus thickening on palms and fingers from eight years of tool use",
@@ -206,19 +194,39 @@
     ],
     "visible_augmentations": "Ferrogate-issued haptic feedback work glove on right hand, industrial-grade synthetic polymer with tactile sensor array visible along knuckles and palm; glove is slightly scuffed and non-regulation (logged as damaged, not returned). Safety goggles pushed up on forehead as permanent fixture — modified strap with added elastic to stay in place. No voluntary cybernetic augmentations.",
     "posture_movement": "Alert and efficient in movement; unconscious habit of keeping hands ready for work. Stands with slight forward lean from years hunching over machinery. Walks with purpose, economical gestures. Occasional explosive laugh punctuates otherwise serious demeanor.",
-    "clothing_style": "Salvaged Ferrogate Transit worker-tier clothing: reinforced synthetic pants with oil-resistant coating, multiple pockets worn smooth; oversized gray work shirt (likely handed down or scavenged) with sleeves rolled to elbows; heavy canvas apron with tools loops. Worn synthetic boots with steel toe reinforcement. No jewelry or decoration. Tier 4 working-class practical aesthetic — function over fashion, everything repurposed or work-issued."
+    "clothing_style": "Salvaged Ferrogate Transit worker-tier clothing: reinforced synthetic pants with oil-resistant coating, multiple pockets worn smooth; oversized gray work shirt (likely handed down or scavenged) with sleeves rolled to elbows; heavy canvas apron with tool loops. Worn synthetic boots with steel toe reinforcement. No jewelry or decoration. Tier 4 working-class practical aesthetic — function over fashion, everything repurposed or work-issued."
   },
-  "image_prompt": "Atlas Taufa, 145cm compact wiry frame, deep warm brown skin with golden reddish undertones, sharp defined cheekbones reflecting Pacific Islander and African heritage, dark brown eyes, shoulder-length dark brown hair with reddish tones in two thick plaits tucked into gray collar. Bioluminescent greenish birthmark glowing softly on right collarbone. Grease-smudged face and hands, callused palms from eight years tool work. Wearing oversized gray work shirt with rolled elbows, oil-resistant reinforced synthetic pants, heavy canvas apron with tool loops, worn steel-toed boots. Ferrogate-issued haptic feedback work glove on right hand with visible sensor array. Modified safety goggles pushed up on forehead. Alert posture with forward lean from machinery work. Cyberpunk 2226 GLMZ Forge district, industrial workshop setting with ambient neon lighting casting warm glow on skin, hydraulic fluid sheen on hands, tool-scarred work environment, gritty working-class aesthetic, serious expression with hint of explosive energy. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Echeverría, 145cm tall compact wiry young woman with warm deep brown skin and golden undertones, blended Indigenous American, Hispanic/Latin American, and Southeast Asian phenotype. Sharp defined cheekbones, refined facial structure, dark brown eyes. Dark brown hair with reddish undertones worn in two thick plaits tucked at collar. Bioluminescent greenish birthmark glowing softly on right collarbone. Hands stained with grease and lubricant, premature calluses visible. Wearing oversized gray work shirt with rolled sleeves, reinforced oil-resistant synthetic pants, heavy canvas work apron with tool loops, worn steel-toe boots. Ferrogate-issued haptic feedback work glove on right hand. Safety goggles pushed up on forehead. Alert posture with slight forward lean from machinery work. Standing in dim Forge district workshop with industrial lighting, machine parts and hydraulic equipment in background. GLMZ Great Lakes Metropolitan Zone aesthetic. Serious demeanor, functional worker-tier fashion. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 28.7,
-    "Pacific Islander": 25.8,
-    "Hispanic/Latin American": 16.2,
-    "Indigenous American": 13.7,
-    "East Asian": 11.5,
-    "Northern European": 4.1
+    "Indigenous American": 48.1,
+    "Hispanic/Latin American": 32.9,
+    "Southeast Asian": 19
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 48.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 6.6
+      },
+      "South American": {
+        "Peruvian": 4.2
+      },
+      "Mexican": {
+        "Mexican": 22.1
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 19
+      }
+    }
+  }
 }

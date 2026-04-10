@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ac74a19d2ee42027e5f12d",
   "type": "character",
-  "name": "Tarn Halverson-Lindström-Ionescu",
+  "name": "Ghita Halverson-Bouzid-Sigurdsson",
   "aliases": [
     "Professor Tóbi",
     "The Syntax Woman"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "University Spine — Department of Emergent Semiotics, with an office she describes as 'geologically layered', near Lincoln and Clark",
-  "description": "Amarachi is a tall woman who has allowed herself to age visibly and deliberately in a city that treats this as eccentricity. Her dark skin is mapped with fine lines she knows by name; she could afford reversal and has declined every consultation. She wears her white locs piled up with data-stick pins and the occasional actual pen, which she insists on using. Her geneware is minimal but considered: color-shifting irises she uses as a signaling system during lectures — green for questions, amber for processing, red when she has heard enough. Students have learned to read these with the same attention they give her words.\n\nShe is the foremost authority on E.L.F. communicative structures in GLMZ, possibly in the world, and carries this with the particular combination of confidence and loneliness that comes from working on something most of your colleagues consider marginal. She is not difficult to talk to, but she is not easy either — she listens with a completeness that some people find flattering and others find invasive, as if she is transcribing you. She has strong opinions about the ethics of treating E.L.F.s as research subjects rather than research participants.",
+  "description": "Ghita Halverson-Bouzid-Sigurdsson is a tall woman who has allowed herself to age visibly and deliberately in a city that treats this as eccentricity. Her dark skin is mapped with fine lines she knows by name; she could afford reversal and has declined every consultation. She wears her white locs piled up with data-stick pins and the occasional actual pen, which she insists on using. Her geneware is minimal but considered: color-shifting irises she uses as a signaling system during lectures — green for questions, amber for processing, red when she has heard enough. Students have learned to read these with the same attention they give her words.\n\nShe is the foremost authority on E.L.F. communicative structures in GLMZ, possibly in the world, and carries this with the particular combination of confidence and loneliness that comes from working on something most of your colleagues consider marginal. She is not difficult to talk to, but she is not easy either — she listens with a completeness that some people find flattering and others find invasive, as if she is transcribing you. She has strong opinions about the ethics of treating E.L.F.s as research subjects rather than research participants.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -185,7 +185,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,34 +240,18 @@
   "registered_firearms": [],
   "related_entities": [
     "University Spine",
-    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Witness",
     "Stratum",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "ShieldTech SB-3 'Groundstrike'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Alper Inoue-Aidoo",
-    "Ezio Kaboré-Malhotra",
-    "Helix Biosystems DermRenew Cellular Renewal Lattice",
-    "Kairos",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Solina Barreto-Kiptoo",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure",
-    "WELLSPRING",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Northern European dominant (51.6%) with substantial East Asian (28.5%) and Eastern European (19.9%) ancestry; the genetic blend creates striking feature integration—Northern European bone structure and stature with East Asian eye shape and skin undertones, Eastern European facial planes contributing to her sharp jawline",
+    "heritage": "Complex Pan-Global diaspora: East Asian (28.8%), North African (20.1%), Sub-Saharan African (18.9%), Southeast Asian (11.7%), Middle Eastern (11.3%), and Eastern European (9.2%). This rare combination creates a phenotype where no single ancestry dominates visually. The East and Southeast Asian genetics contribute monolid-leaning eye shapes and subtle epicanthal folds. North African and Sub-Saharan African heritage contributes warm deep coloring, full lip structure, and natural texture. Middle Eastern ancestry adds to the warm undertones and contributes to cheekbone prominence. Eastern European genetics manifest in sharp angular bone structure, the subtle ashy quality on extremities, and the precise jaw definition. The overall effect is a striking globally-integrated appearance—features read as cosmopolitan and geographically unmoored.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Lean and angular, with the posture of someone who has spent decades bent over transcription work; shoulders slightly rounded forward from habit, but she carries herself with deliberate straightness when teaching. Long-limbed, minimal body fat.",
@@ -275,8 +259,8 @@
     "hair_style": "Locs piled into a loose, high bun secured with data-stick pins and the occasional actual ballpoint pen; wisps escape constantly and she does not correct them",
     "hair_length": "Long (shoulder-length when unbound)",
     "eye_color": "Color-shifting irises — baseline warm brown with engineered chromatophores displaying controlled green (questions), amber (processing), red (boundary-setting); the shift is deliberate and visible mid-iris",
-    "skin_tone": "Warm medium-to-deep complexion reflecting the Northern European and East Asian blend; carries natural golden undertones from the East Asian heritage with the slight ashy quality across knuckles and shin bones from the Eastern European component",
-    "complexion": "Mapped with fine lines — crow's feet, forehead creases, a vertical line between her brows from decades of focused listening. She has refused cosmetic reversal. Her skin has the texture of someone who does not use heavy augmentation to mask age; slight dryness around the eyes. Her jaw is sharp and angular, characteristic of the Eastern European and Northern European blend. She wears minimal makeup — a deep burgundy lip stain, often half-worn away by afternoon.",
+    "skin_tone": "Deep warm brown with golden undertones from the combined East Asian, North African, and Sub-Saharan African heritage; carries subtle ashy quality across knuckles and shin bones from the Eastern European component",
+    "complexion": "Mapped with fine lines — crow's feet, forehead creases, a vertical line between her brows from decades of focused listening. She has refused cosmetic reversal. Her skin has the texture of someone who does not use heavy augmentation to mask age; slight dryness around the eyes. Her jaw is sharp and angular from the North African and Eastern European blend. Cheekbones are prominent, high-set, and defined. Full-structured lips with natural darker pigmentation. She wears minimal makeup — a deep burgundy lip stain, often half-worn away by afternoon.",
     "distinguishing_marks": [
       "Faint white scar across the back of her left wrist, barely visible, from a transcription accident in her thirties",
       "A small tattoo on her inner right forearm — three interlocking circles in black ink, barely the size of a thumbnail; personal significance unknown to colleagues",
@@ -286,14 +270,66 @@
     "posture_movement": "She sits with her full attention on the person speaking, rarely breaking eye contact; this intensity is her baseline. She moves deliberately, with minimal wasted motion — no fidgeting, no self-soothing gestures. When she walks, there is a slight favoring of her left side from old wrist strain. She uses her hands when speaking, but sparingly and with precision. Her default expression is neutral, almost severe, until she smiles — which transforms her face entirely and is therefore devastating when it happens.",
     "clothing_style": "Tier 1 academic uniform. Structured linen blazers in cream, grey, or black over simple high-necked shirts (often black, sometimes deep indigo). Tailored trousers in neutral tones. She owns a collection of vintage watches — mechanical, not neural — which she wears as functional jewelry. Her shoes are expensive, comfortable, and built to last; currently a pair of dark leather oxfords with worn heels. A single silver ring on her left middle finger, featureless and heavy. She carries a leather satchel that is probably older than her last three graduate students, scuffed and organized with obsessive precision. Her aesthetic reads as 'deliberately ageless' — not young, not performing youth, simply uninterested in the conversation."
   },
-  "image_prompt": "Tarn Halverson-Lindström-Ionescu, 183cm tall lean angular academic woman, warm medium-deep complexion with Northern European and East Asian heritage blend, sharp Eastern European jawline, white locs in high bun with data-stick pins, color-shifting engineered irises shifting warm brown baseline, fine lines across face from decades of focus, wearing structured grey linen blazer over high-necked black shirt, tailored neutral trousers, dark leather oxfords, mechanical vintage watch on wrist with faint subdermal reinforcement scars visible, silver featureless ring, carrying worn leather satchel, subtle iridescent cochlear overlay visible on left ear, sitting with intense focused posture, neutral severe expression, GLMZ 2226 academic office setting with soft warm architectural lighting, mid-conversation intensity, cyberpunk academia aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Ghita Halverson-Bouzid-Sigurdsson, 183cm tall lean angular academic woman with deep warm brown skin with golden undertones and ashy quality on extremities, sharp angular jaw and high prominent cheekbones, full lips with natural dark pigmentation, white locs piled in loose high bun with data-stick pins and escaped wisps, color-shifting engineered irises glowing warm brown baseline with visible green amber shifts, subtle epicanthal fold eye shape, fine lines and crow's feet across severe angular face, wearing cream structured linen blazer over high-necked black shirt and tailored grey trousers, dark leather oxfords with worn heels, vintage mechanical watch on wrist showing faint silvered subdermal reinforcement scarring, iridescent cochlear overlay barely visible along left ear, single heavy silver ring on left middle finger, leather satchel over shoulder, seated with intense forward-leaning posture and unwavering eye contact, minimal makeup with deep burgundy lip stain half-worn away, completely uninterested expression, GLMZ academic setting with soft overhead lighting catching the color-shift in her irises, minimalist neutral background, photorealistic portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 51.6,
-    "East Asian": 28.5,
-    "Eastern European": 19.9
+    "East Asian": 28.8,
+    "North African": 20.1,
+    "Sub-Saharan African": 18.9,
+    "Southeast Asian": 11.7,
+    "Middle Eastern": 11.3,
+    "Eastern European": 9.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 25.2
+      },
+      "Korean": {
+        "Korean": 3.6
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 16.3
+      },
+      "Maghreb": {
+        "Tunisian": 1.5,
+        "Algerian": 2.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 12.9,
+        "Nigerian": 3
+      },
+      "East African": {
+        "Rwandan": 2.1,
+        "Tanzanian": 0.9
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 11.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 4.1,
+        "Jordanian": 7.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 2.8,
+        "Belarusian": 1.5
+      },
+      "Slavic West": {
+        "Sorbian": 4.9
+      }
+    }
+  }
 }

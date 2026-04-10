@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6517a62ae8f6288909d4227",
   "type": "character",
-  "name": "Kavya Chakraborty",
+  "name": "Zuri Migizi",
   "aliases": [
     "Uncle Tobi",
     "Tobi-V"
@@ -13,7 +13,7 @@
   "age": 68,
   "status": "active",
   "location": "The Shelf, Block 14 — a three-room unit he shares with his grandchildren, near Western and Division",
-  "description": "Ọlọruntóbi is a man who was built for louder rooms than the one he currently occupies. He is tall and loose-limbed, with the kind of face that was clearly handsome and has aged into something more interesting — deep sienna complexion, heavy brow, a jaw that still juts when he is angry. He has cosmetic tiger-stripe bioluminescence on his arms and collarbone, a geneware mod he got in his forties to celebrate the Union's successful Ferrogate walkout of 2172, and which now glows a gentle amber when the building's lights go down. His natural hair has gone grey-silver and he wears it in short locs. A subvocal transceiver is implanted at his throat — old union infrastructure, technically still active.\n\nFor sixteen years Tobi was the loudest, most tenacious shop steward and eventually regional director the Ferrogate Transit Workers Union ever produced. He won three collective agreements, survived two corporate union-busting campaigns, and was personally blacklisted by two Ferrogate senior executives. Then his daughter Comfort died of an untreated pulmonary infection in 2194 — a death he attributes directly to Helix Biosystems' pharmaceutical pricing, which the union had been fighting for years — and left behind two children aged four and seven. Tobi took them without a moment's hesitation and quietly stopped being the man who changed things, because he was suddenly the man who made breakfast.",
+  "description": "Zuri Migizi is a man who was built for louder rooms than the one he currently occupies. He is tall and loose-limbed, with the kind of face that was clearly handsome and has aged into something more interesting — deep sienna complexion, heavy brow, a jaw that still juts when he is angry. He has cosmetic tiger-stripe bioluminescence on his arms and collarbone, a geneware mod he got in his forties to celebrate the Union's successful Ferrogate walkout of 2172, and which now glows a gentle amber when the building's lights go down. His natural hair has gone grey-silver and he wears it in short locs. A subvocal transceiver is implanted at his throat — old union infrastructure, technically still active.\n\nFor sixteen years Tobi was the loudest, most tenacious shop steward and eventually regional director the Ferrogate Transit Workers Union ever produced. He won three collective agreements, survived two corporate union-busting campaigns, and was personally blacklisted by two Ferrogate senior executives. Then his daughter Comfort died of an untreated pulmonary infection in 2194 — a death he attributes directly to Helix Biosystems' pharmaceutical pricing, which the union had been fighting for years — and left behind two children aged four and seven. Tobi took them without a moment's hesitation and quietly stopped being the man who changed things, because he was suddenly the man who made breakfast.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -181,7 +181,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -266,30 +266,12 @@
     "Ferrogate Transit",
     "Helix Biosystems",
     "The Shelf",
-    "Aminata Strand-Otieno",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver",
-    "Arcturus KS-7 'Nursery'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bioacoustic Communication Membrane",
-    "Block 19-South",
-    "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "Chronicle",
-    "Cinderblock Ai",
-    "Green Bay Community Table",
-    "Grosse Pointe Enclosure",
-    "Lazarus Pharmaceutical Emetix-9 'Purge'",
-    "Oluwatobi Czerwiński-Faleolo",
-    "Street Custom 'Gallows' Recurve Bow",
-    "The Ledger",
-    "The Pure Hand",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian (35.7%) with significant Indigenous American (26.1%) and Hispanic/Latin American (22.2%) ancestry, complemented by Northern European (11.8%) and Sub-Saharan African (4.2%) heritage. The genetic blend creates warm, complex skin tones with layered undertones from multiple continental populations.",
+    "heritage": "Sub-Saharan African (41.0%) and Indigenous American (37.9%) form the dominant genetic foundation, creating deep warm bronze-mahogany tones with golden undertones. Hispanic/Latin American (8.6%), Northern European (5.5%), Central Asian (3.6%), and Southeast Asian (3.4%) ancestry layer subtle complexity—warmth deepened by the diverse continental blend, producing luminous skin with rich depth and visual complexity across warm spectrums.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Tall and lean, still carrying the frame of a younger man despite age — long-limbed and loose-jointed, with the kind of structural efficiency that comes from decades of physical labor and deliberate movement. Slight forward curve to the shoulders from years hunched over union paperwork.",
@@ -297,8 +279,8 @@
     "hair_style": "Short locs, neat and well-maintained, threaded with a few dark fibers at the base",
     "hair_length": "Short",
     "eye_color": "Deep brown",
-    "skin_tone": "Rich warm bronze with reddish and golden undertones — a complex blend of South Asian depth, Indigenous American and Hispanic warmth, with subtle African undertones creating visual warmth and luminosity",
-    "complexion": "Weathered and lined — a face that has spent decades in fluorescent light and loud rooms. Strong, angular bone structure reflecting South Asian and Indigenous American heritage with a pronounced jaw and prominent cheekbones. Heavy brow ridge, strong jaw that still juts forward when concentrated or angry. Minimal grooming vanity; clean but not polished. Faint scarring on the left temple from a 2168 Ferrogate station incident.",
+    "skin_tone": "Deep mahogany-bronze with golden undertones—the rich luminosity of Sub-Saharan African and Indigenous American heritage blended with warmth from Hispanic/Latin American, Central Asian, and Southeast Asian ancestry. Weathered by decades but still visibly glowing.",
+    "complexion": "Weathered and lined—a face that has spent decades in fluorescent light and loud rooms. Strong, angular bone structure reflecting the Sub-Saharan African and Indigenous American heritage with prominent, high cheekbones and a pronounced, forward-thrusting jaw. Heavy brow ridge, substantial nose bridge with slight aquiline curve. Minimal grooming vanity; clean but not polished. Faint scarring on the left temple from a 2168 Ferrogate station incident.",
     "distinguishing_marks": [
       "Tiger-stripe bioluminescent geneware running across both forearms in amber-gold lines, glowing softly in low light — marks the 2172 Ferrogate walkout victory.",
       "Matching bioluminescent stripes across the collarbone and upper chest, visible above work shirt collar when unbuttoned.",
@@ -309,16 +291,86 @@
     "posture_movement": "Moves with economical precision despite his height — someone who learned to navigate crowded transit stations and union halls without wasting energy. Stands with weight slightly forward, shoulders relaxed but capable of sudden tension. When listening to younger people, his entire frame bends forward attentively. When angry or making a point, his jaw juts and his hands become very still — a union organizer's learned control.",
     "clothing_style": "Tier 4 utilitarian — well-worn but maintained. Favors loose grey or charcoal work shirts with FTW union emblems faded but still visible. Cargo pants in dark synthetic with reinforced pockets. Worn composite work boots that he repairs himself. A thin wool cardigan in deep blue, decades old, worn over everything. No jewelry except a simple platinum band on his left ring finger (his late husband's, worn since 2189). Clothing carries the faint smell of building maintenance — solvents, electrical compound, the particular dust of old transit infrastructure."
   },
-  "image_prompt": "Cyberpunk 2226, weathered 188cm tall union organizer with rich warm bronze skin blending South Asian, Indigenous American, and Hispanic heritage. Deep brown eyes, grey-silver short locs with dark undertones. Prominent angular cheekbones and strong jaw, faint scarring on left temple. Tiger-stripe amber-gold bioluminescent geneware glowing softly across both forearms and upper chest. Subvocal transceiver ridge visible on throat. Wearing faded grey FTW union work shirt, dark reinforced cargo pants, worn composite boots, deep blue wool cardigan draped over shoulders. Simple platinum wedding band. Economical posture, weight forward, relaxed but capable. Fluorescent union hall lighting casting shadows across weathered features. Mood: weary dignity, decades of labor, quiet resolve. Slight forward lean. Industrial background. --ar 2:3 --v 6",
+  "image_prompt": "Zuri Migizi, tall lean 188cm Black-Indigenous mixed heritage man in his 70s, deep mahogany-bronze skin with golden undertones, weathered angular face with prominent cheekbones and heavy brow, short grey-silver locs with amber undertones, deep brown eyes. Visible bioluminescent amber-gold tiger-stripe geneware glowing softly on both forearms and across upper chest, subvocal transceiver ridge visible on throat. Worn FTW union work shirt in faded grey, dark cargo pants, vintage deep blue wool cardigan, aged composite boots. Scars visible on left temple and left eyebrow, burn scar on right wrist. Posture bent slightly forward, listening intently. GLMZ Great Lakes Metropolitan Zone, fluorescent-lit union hall with vintage infrastructure, moody amber and cool blue lighting casting geneware glow into sharp relief, worn metal walls and old transit station aesthetics in background, intimate character study --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 35.7,
-    "Indigenous American": 26.1,
-    "Hispanic/Latin American": 22.2,
-    "Northern European": 11.8,
-    "Sub-Saharan African": 4.2
+    "Sub-Saharan African": 41,
+    "Indigenous American": 37.9,
+    "Hispanic/Latin American": 8.6,
+    "Northern European": 5.5,
+    "Central Asian": 3.6,
+    "Southeast Asian": 3.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 11.2,
+        "Botswanan": 5.7
+      },
+      "Central African": {
+        "Congolese": 13.6
+      },
+      "East African": {
+        "Kenyan": 5.6,
+        "Tanzanian": 4.9
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 13.6
+      },
+      "Andean": {
+        "Quechua": 21,
+        "Aymara": 3.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 1.5
+      },
+      "Central American": {
+        "Salvadoran": 5.1
+      },
+      "Mexican": {
+        "Mexican": 2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 3.2
+      },
+      "Germanic": {
+        "German": 2.2,
+        "Dutch": 0.1
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 1.4,
+        "Turkmen": 0.5
+      },
+      "Mongolic": {
+        "Mongolian": 0.5,
+        "Kalmyk": 0.1
+      },
+      "Iranian Central": {
+        "Tajik": 0.8,
+        "Hazara": 0.3
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 1.2
+      },
+      "Thai": {
+        "Thai": 0.6
+      },
+      "Cambodian": {
+        "Khmer": 1.6
+      }
+    }
+  }
 }

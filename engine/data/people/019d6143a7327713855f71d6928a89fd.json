@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7327713855f71d6928a89fd",
   "type": "character",
-  "name": "Reed Thakur",
+  "name": "Reed Salazar",
   "aliases": [
     "Z",
     "Zaza"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "The Ferment Quarter, The Specific Gravity bar on Menomonee Gulch, near Fullerton and Damen",
-  "description": "Zara is a tall young woman with very dark skin, high cheekbones, and hair that she has modded to shift color with her mood — when she's calm it's a deep forest green, when she's amused it goes warm amber, and when she's angry it bleeds to a red-orange that the regulars have learned to read as a weather warning. She has patterned irises, a starburst of copper and black, and retractable claws she got partly for safety and partly because she thinks they look devastating. She tends to lean on the bar when she talks to people, getting close — not aggressive, but engaged, like she's genuinely interested in what you have to say and will stop being interested the moment you bore her.\n\nZara has worked at The Specific Gravity for three years, which she considers a fact of her present life rather than a permanent state. She is saving for something she hasn't told anyone about and has a habit of reading people with an accuracy that is unsettling in someone who seems, on the surface, to be primarily concerned with looking effortlessly cool. She has a complicated relationship with the bar's E.L.F. — a data-spirit she's decided is called 'the Tab,' which she believes is actively judging the customers and occasionally agrees with it out loud.",
+  "description": "Reed Salazar is a tall young woman with very dark skin, high cheekbones, and hair that she has modded to shift color with her mood — when she's calm it's a deep forest green, when she's amused it goes warm amber, and when she's angry it bleeds to a red-orange that the regulars have learned to read as a weather warning. She has patterned irises, a starburst of copper and black, and retractable claws she got partly for safety and partly because she thinks they look devastating. She tends to lean on the bar when she talks to people, getting close — not aggressive, but engaged, like she's genuinely interested in what you have to say and will stop being interested the moment you bore her.\n\nReed Salazar has worked at The Specific Gravity for three years, which she considers a fact of her present life rather than a permanent state. She is saving for something she hasn't told anyone about and has a habit of reading people with an accuracy that is unsettling in someone who seems, on the surface, to be primarily concerned with looking effortlessly cool. She has a complicated relationship with the bar's E.L.F. — a data-spirit she's decided is called 'the Tab,' which she believes is actively judging the customers and occasionally agrees with it out loud.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -157,7 +157,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Ferment Quarter",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,24 +176,11 @@
     "Menomonee Gulch",
     "The Flood Register",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Copper",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Idris Forsberg-Quaye",
-    "Kairos",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "MERIDIAN",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Taxman",
-    "The Pure Hand",
-    "The Quiet Room"
+    "Copper"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pan-African diaspora with South Asian and Eastern European admixture; Sub-Saharan African foundation (59.2%) with secondary South Asian (18.6%), Eastern European (12.6%), and Hispanic/Latin American (9.6%) heritage creating a complex, warm-toned phenotype",
+    "heritage": "Southeast Asian foundation (60.7%) with significant Hispanic/Latin American (27.9%) and East Asian (11.4%) admixture. Phenotype reflects this blend: Southeast Asian facial bone structure serves as primary template, enriched by Latin American warmth and East Asian refinement. High cheekbones and facial width characteristic of Southeast Asian ancestry, softened by Latin American fullness in lower face, with East Asian eye placement and jawline definition.",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Lean and angular with long limbs; dancer's posture despite never having danced professionally. Shoulders broad but not heavily muscled. Moves with deliberate economy.",
@@ -201,8 +188,8 @@
     "hair_style": "Long, thick waves with slight natural texture; often tied back during shifts with metal clips or left loose depending on mood clarity",
     "hair_length": "Long (mid-back)",
     "eye_color": "Copper and black starburst pattern (patterned irises—augmented); high contrast, distinctive even at distance",
-    "skin_tone": "Rich warm mahogany brown with golden-copper undertones from Sub-Saharan heritage, subtly warmed by South Asian admixture; even, unmarked and well-maintained",
-    "complexion": "High, prominent cheekbones with gentle widening from South Asian ancestry. Sharp, defined jawline. Clear skin with natural warmth. Minimal makeup when working; occasionally wears copper or bronze liner to complement eye mods and honor ancestral warmth tones. No visible scarring or blemishes.",
+    "skin_tone": "Warm golden-bronze with honeyed undertones; the result of Southeast Asian base enriched by Hispanic/Latin warmth and East Asian luminosity. Even, unmarked and well-maintained.",
+    "complexion": "Southeast Asian facial structure with prominent high cheekbones and gentle width across midface, straight nose bridge, refined jawline softened by Southeast Asian roundness in lower face and Latin American fullness. East Asian influence visible in eye shape and placement, contributing to overall harmony of features. Clear skin with natural warm radiance. Minimal makeup when working; occasionally wears copper or bronze liner to complement eye mods and honor ancestral warmth tones. No visible scarring or blemishes.",
     "distinguishing_marks": [
       "Patterned irises: starburst radiating copper lines outward from black pupils—immediately recognizable and unsettling to strangers",
       "Retractable claws (geneware) on both hands—visible only when extended; filed to sharp points and kept immaculate; sometimes filed with subtle patterns"
@@ -211,15 +198,38 @@
     "posture_movement": "Habitually leans forward on the bar, elbows down, chin tilted slightly up—a posture that suggests genuine attention and confidence. Moves with minimal wasted motion; economical, cat-like. When standing still, weight favors one hip. Direct eye contact; doesn't look away first.",
     "clothing_style": "Tier 3-4 working class aesthetic with deliberate edge. Typically wears fitted black pants (synth-leather or heavy cotton), sleeveless or short-sleeved tops that show her forearms (emphasizes her presence). Layer with a oversized vintage denim jacket or tailored blazer depending on mood. Jewelry is minimal but intentional—copper rings, sometimes a silver chain. Boots are practical and worn in—Tier 3 work boots or sleeker ankle boots depending on shift. Her bar uniform is simple: black pants, black fitted shirt, silver name tag. Off-duty she dresses to be noticed without trying: all black, touches of copper or amber to echo her eye mods."
   },
-  "image_prompt": "Reed Thakur, 2226 cyberpunk bartender, tall lean androgenous figure with rich warm mahogany skin and golden undertones, mid-back length thick waves in deep forest green mood-responsive chromatic hair, dramatic augmented copper-and-black starburst patterned irises, high cheekbones and sharp jawline, wearing fitted black synth-leather pants and sleeveless black top showing forearms, oversized vintage denim jacket, copper rings and minimal jewelry, practical worn boots, leaning forward on bar with deliberate economy of movement and direct confident gaze, retracted geneware claws on hands, neon-lit dive bar setting with moody amber and copper accent lighting, cyberpunk aesthetic, intimate and unsettling presence, cinematic 2200s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Reed Salazar, 182cm lean angular figure, Southeast Asian-dominant mixed heritage with warm golden-bronze skin glowing in neon light. High prominent cheekbones with subtle Latin fullness in lower face, straight nose bridge, refined jaw. Striking augmented copper-starburst patterned irises with black pupils—immediate focal point. Mood-responsive deep forest green chromatic hair mod, long thick waves past mid-back, partially tied back with metal clips. Minimal makeup, copper liner accenting the starburst eyes. Black sleeveless fitted top showing forearms, vintage oversized denim jacket, fitted black synth-leather pants, practical worn ankle boots. Minimal copper and silver jewelry. Leaning forward on bar with elbows down, chin tilted up, direct intense gaze. Cat-like economical posture. GLMZ Great Lakes Metropolitan Zone setting, warm neon accent lighting reflecting off skin and eye augmentations, moody introspective atmosphere, bar interior with low ambient glow. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 59.2,
-    "South Asian": 18.6,
-    "Eastern European": 12.6,
-    "Hispanic/Latin American": 9.6
+    "Southeast Asian": 60.7,
+    "Hispanic/Latin American": 27.9,
+    "East Asian": 11.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 60.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 27.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 7.7
+      },
+      "Korean": {
+        "Korean": 1.6
+      },
+      "Chinese": {
+        "Cantonese": 1.9,
+        "Fujianese": 0.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ec703ab4b293bfc717a82a",
   "type": "character",
-  "name": "Paloma Thorvaldsdóttir-Lindström",
+  "name": "Ngozi Szczypiński-Petrović",
   "aliases": [
     "T.O.C.",
     "The Landlord",
@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "The Circuit, near North Ave and Damen",
-  "description": "Tavish Ohlendorf-Crane presents himself as the most boring man in GLMZ, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of GLMZ's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
+  "description": "Ngozi Szczypiński-Petrović the most boring man in GLMZ, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of GLMZ's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -230,7 +230,7 @@
     "Lone Wolf": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,43 +244,19 @@
   "registered_firearms": [],
   "related_entities": [
     "Meridian Core",
-    "GLMZ",
     "The Circuit",
+    "Frequency",
+    "Circuit",
     "Ringo DV-4 'Courier'",
-    "Adaeze Chen-Hawkins",
     "Nesting Doll",
+    "Haze Johansson",
     "Pellucid Systems",
-    "Crane",
-    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions Albedo Negation Shell",
-    "Bioacoustic Communication Membrane",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Orbital Elevator Graviton Assist",
-    "Emeka Johansson-Orozco",
-    "LifeWire EvenKeel Mood Regulation Implant",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "MindBridge Relay One Social Integration BCI",
-    "Narrowcast",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Augmented Reality Court System",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Arrangement",
-    "The Ledger",
-    "The Question",
-    "The Shelf"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Northern European (Scandinavian/Germanic) with significant Hispanic/Latin American ancestry, supplemented by Southeast Asian, Sub-Saharan African, Eastern European, and East Asian heritage. The combination creates a complexion with warm undertones beneath fair skin, subtle warmth in cheekbone structure, and eye color with depth beyond typical Northern European pale blue.",
+    "heritage": "Slavic Eastern European foundation (62.6%) with substantial West African (22.0%) and Hispanic/Latin American (15.4%) genetic contribution. The ancestry creates a distinctive phenotype: medium warm brown skin with subtle olive undertones from the Eastern European component, prominent high cheekbones reflecting both Slavic and West African ancestry, and facial structure showing the slight lower-face fullness characteristic of Hispanic/Latin American heritage. The genetic layering produces an appearance that reads as distinctly post-diaspora — unmistakably mixed without easy categorization.",
     "height_cm": 178,
     "weight_kg": 76,
     "build": "Medium, slightly lean — the build of someone who maintains himself out of routine rather than vanity. Shoulders narrow but not soft, posture habitually correct without appearing military.",
@@ -288,8 +264,8 @@
     "hair_style": "Neat, side-parted, cut every three weeks to the same length. The hair of someone who solved the problem and doesn't revisit the decision.",
     "hair_length": "Short",
     "eye_color": "Gray-blue with warm undertones and notable depth, unremarkable at first glance. The pupils occasionally show the faintest depth-of-field shimmer when his spatial memory implant is active.",
-    "skin_tone": "Fair with warm olive undertones — the even, carefully maintained complexion of someone who works indoors under consistent lighting, with no sun damage. The warmth suggests the blended heritage beneath the surface.",
-    "complexion": "Clean-shaven daily. Skin care is methodical and minimal. Face is symmetrical with subtle warmth in cheekbone structure and slight fullness in lower face that hints at the Hispanic and Southeast Asian heritage within. Entirely forgettable — no prominent features, no scars, no markers that would make him stand out in a crowd. This is deliberate.",
+    "skin_tone": "Medium warm brown with subtle olive undertones — the even, carefully maintained complexion of someone who works indoors under consistent lighting, with no sun damage. The tone reflects the balanced blend of Eastern European, West African, and Hispanic/Latin American heritage, creating a rich mid-range warmth.",
+    "complexion": "Clean-shaven daily. Skin care is methodical and minimal. Face is symmetrical with prominent high cheekbones reflecting Slavic and West African ancestry, warm-toned medium brown skin with olive undertones, and slight fullness in lower face suggesting Hispanic/Latin American heritage. Entirely forgettable — no prominent features, no scars, no markers that would make him stand out in a crowd. This is deliberate.",
     "distinguishing_marks": [
       "Faint surgical scar at the base of his skull, barely visible unless his hair is wet, approximately 3cm in length — site of spatial memory implant installation."
     ],
@@ -297,17 +273,37 @@
     "posture_movement": "Moves with measured efficiency. Never hurried, never lingering. Stands with weight balanced evenly on both feet. His head turns in controlled arcs rather than snapping attention. When he walks through a space, his eyes track in a systematic pattern — ceiling, walls, floor, fixtures — as if cataloguing. His smile appears at socially appropriate intervals and disappears at socially appropriate intervals. No fidgeting.",
     "clothing_style": "Expensive suits in neutral colors (charcoal, navy, warm gray) that read as 'appropriate' rather than 'statement.' Shirts in white or pale blue, always pressed. Ties in muted patterns or solid colors. Shoes are well-maintained leather in black or brown. A watch — mechanical, not smart, mid-tier brand, Swiss — on his left wrist. No jewelry beyond this. Jacket pockets contain: a pen, a small leather notebook, sometimes a lens fragment he's currently cataloguing. The overall effect is of a man who dressed himself once and then stopped thinking about clothing."
   },
-  "image_prompt": "Paloma Thorvaldsdóttir-Lindström, 178cm tall man with fair warm-olive skin tone and salt-and-pepper short brown hair, gray-blue eyes with subtle depth, clean-shaven symmetric face with warm undertones in cheekbones suggesting blended Scandinavian-Hispanic-Southeast Asian ancestry. Wearing expensive charcoal suit, pressed white shirt, muted tie, Swiss mechanical watch on left wrist. Standing with perfect postural balance, methodical gaze tracking systematically across environment. Indoor corporate or institutional setting, cool professional lighting, cyberpunk 2226 GLMZ, subtle spatial memory implant scar barely visible at skull base. Forgettable presence, deliberate anonymity, measured efficiency. Neutral expression, socially calibrated. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Ngozi Szczypiński-Petrović, a 178cm tall mixed-heritage man with warm medium brown skin and subtle olive undertones, high prominent cheekbones reflecting Slavic and West African ancestry, slight lower-face fullness from Hispanic/Latin American heritage. Short neat salt-and-pepper hair, side-parted. Gray-blue eyes with warm depth. Clean-shaven, symmetrical face, entirely unremarkable and forgettable by design. Wearing expensive charcoal suit, crisp white dress shirt, muted tie, black leather shoes. Mechanical Swiss watch on left wrist. Cold fluorescent indoor lighting. Measured posture, even weight distribution, systematic gaze tracking environment. Faint surgical scar at base of skull barely visible. GLMZ, corporate espionage agent aesthetic, professional and deliberately unmemorable. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 45.9,
-    "Hispanic/Latin American": 22.0,
-    "Southeast Asian": 10.8,
-    "Sub-Saharan African": 9.4,
-    "Eastern European": 6.8,
-    "East Asian": 5.1
+    "Eastern European": 62.6,
+    "Sub-Saharan African": 22,
+    "Hispanic/Latin American": 15.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 42.9
+      },
+      "Magyar-Romanian": {
+        "Romanian": 19.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 22
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 8.6
+      },
+      "Mexican": {
+        "Mexican": 6.8
+      }
+    }
+  }
 }

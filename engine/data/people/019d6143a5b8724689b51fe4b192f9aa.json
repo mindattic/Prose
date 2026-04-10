@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b8724689b51fe4b192f9aa",
   "type": "character",
-  "name": "Nyx Bautista-Volkov",
+  "name": "Nyx Bautista-Vestergaard",
   "aliases": [
     "Blackout",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 64,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Aslan Vasquez-Chatterjee is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 64, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a street samurai out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAslan Vasquez-Chatterjee has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Nyx Bautista-Vestergaard is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 64, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a street samurai out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNyx Bautista-Vestergaard has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -262,7 +262,7 @@
     "Code Keeper": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,67 +282,105 @@
   "related_entities": [
     "Geartown",
     "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Clover",
-    "The Milwaukee Core",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
-    "Crucible RE-2 'Receptionist'",
-    "Doru Fofana-Câmpeanu",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Inductive Thermal Lance",
-    "Iowan Behemoth — 'Palisade'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Oumarou Svec-Ranginui",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "TERMINUS",
-    "TESSERA TC-3 'Crucible'",
-    "Tapetum Lucidum Integration",
-    "The Fathom Line",
-    "The Gutter Prophets",
-    "The Quiet Room",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial",
+    "Felix Roundtree",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (38.7%), Eastern European (32.8%), East Asian (14.7%), and North African (13.8%) — a truly mixed phenotype reflecting the Ubiquitous Diaspora. His features carry Mediterranean warmth from Iberian and North African ancestry, Slavic bone structure and coloring from Eastern European lineage, and subtle East Asian characteristics in eye shape and cheekbone prominence.",
+    "heritage": "Northern European (31.1%), Hispanic/Latin American (28.7%), Sub-Saharan African (21.3%), East Asian (11.2%), Southeast Asian (6.9%), and South Asian (0.8%) — a truly global phenotype. His face reflects authentic admixture: broad nasal bridge and pronounced cheekbone width from Sub-Saharan African ancestry, subtle epicanthic eye shape and defined cheekbone structure from East Asian heritage, Mediterranean warmth and olive undertones from Hispanic and Northern European lines, with traces of Southeast Asian refinement in facial proportions. The result is a visage that resists reduction to any single ancestry — instead presenting as a lived example of humanity's genetic interconnection.",
     "height_cm": 177,
     "weight_kg": 68,
     "build": "Wiry and lean with corded forearm musculature — the build of someone who converts nervous energy into functional strength. Minimal body fat. Decades of street work have kept him spare rather than bulky.",
     "hair_color": "Salt-and-pepper gray with black undertones",
     "hair_style": "Kept short and practical, slicked back with a slight curl at the nape",
     "hair_length": "Short",
-    "eye_color": "Dark brown with subtle epicanthic fold characteristic of his East Asian ancestry, naturally warm but hardened by age and repeated trauma",
-    "skin_tone": "Medium olive-tan complexion with warmth from Hispanic and North African heritage, weathered by decades of industrial zone exposure. The tone carries subtle golden undertones from Mediterranean lineage balanced with the cooler undertones of Eastern European ancestry.",
-    "complexion": "Deeply lined face — forehead, around eyes, mouth corners — a roadmap of sixty-four years of squinting, grimacing, and stress. Stubble perpetually present (usually salt-and-pepper, two days' growth). High, prominent cheekbones reflecting East Asian ancestry structure. Skin has the texture of someone who doesn't prioritize skincare; minor acne scarring visible on cheekbones from earlier decades. Overall facial structure shows Slavic angularity balanced by Mediterranean fullness.",
+    "eye_color": "Dark brown with subtle epicanthic fold, naturally warm but hardened by age and repeated trauma",
+    "skin_tone": "Medium-rich brown complexion with golden-olive undertones — a genuine blend of Northern European warmth, Hispanic Mediterranean heritage, and Sub-Saharan African depth. The tone carries visible golden undertones from his mixed heritage without favoring any single lineage. Weathered by decades of industrial zone exposure, creating a lived-in patina that speaks to his age and experience.",
+    "complexion": "Deeply lined face — forehead, around eyes, mouth corners — a roadmap of sixty-four years of squinting, grimacing, and stress. Stubble perpetually present (usually salt-and-pepper, two days' growth). High, prominent cheekbones with width and structure reflecting Sub-Saharan African and East Asian ancestry. Nose shows broader bridge characteristic of Sub-Saharan African heritage with slight width across the bridge. Skin has the weathered texture of someone who doesn't prioritize skincare; minor acne scarring visible on cheekbones from earlier decades. Overall facial structure displays strong bone prominence balanced by heritage-derived variation in feature dimensions.",
+    "visible_augmentations": "Chrome-plated nasal duct analyzer — visible as a faint glint of polished metal at both nostrils when light hits correctly, most obvious in profile. The metal has a brushed-nickel finish and shows minor patina/scratching from field use. No visible signs of the bioware adrenaline regulator, which is subcutaneous.",
+    "posture_movement": "Restless and economical — no wasted motion, but constant small adjustments (weight shifting, hand repositioning). Sits at angles, never fully relaxing into a chair. Eyes track movement reflexively. When standing still, he appears coiled rather than relaxed. Walks with a slight forward lean, as though perpetually ready to sprint.",
+    "clothing_style": "Tier 3-4 utilitarian streetwear. Favors dark colors (blacks, grays, muted olives). Typically wears reinforced canvas tactical jackets with visible zipper pockets and stitched seams, showing wear and repair. Undershirts are plain synthetic blend or moisture-wicking synthetics. Cargo pants or modified jeans with strategic pockets and reinforced knees. Boots are worn tactical-grade — no logos, scuffed, replaced every 2-3 years. A long coat (leather or synthetic leather, weathered dark brown) over his working gear. Minimal jewelry — one silver ring on left hand, likely sentimental or lucky. No visible corpo branding. Everything is functional; nothing is fashionable.",
     "distinguishing_marks": [
       "Diagonal scar across left cheekbone, approximately 8cm, white and slightly puckered — knife work, old enough to be pale.",
       "Burn scar on right forearm (inner wrist to elbow) — thermal weapon discharge, irregular edges, darker tan against his base tone.",
       "Small crescent moon scar on his left temple, barely visible unless light catches it.",
       "Tattoo on right shoulder blade — faded geometric design in blue-black ink, pre-augmentation era, worn and blurred with age.",
       "Needle track marks on inner elbows (historical; no longer active substance use) — thin white lines, obvious to someone who knows what to look for."
-    ],
-    "visible_augmentations": "Chrome-plated nasal duct analyzer — visible as a faint glint of polished metal at both nostrils when light hits correctly, most obvious in profile. The metal has a brushed-nickel finish and shows minor patina/scratching from field use. No visible signs of the bioware adrenaline regulator, which is subcutaneous.",
-    "posture_movement": "Restless and economical — no wasted motion, but constant small adjustments (weight shifting, hand repositioning). Sits at angles, never fully relaxing into a chair. Eyes track movement reflexively. When standing still, he appears coiled rather than relaxed. Walks with a slight forward lean, as though perpetually ready to sprint.",
-    "clothing_style": "Tier 3-4 utilitarian streetwear. Favors dark colors (blacks, grays, muted olives). Typically wears reinforced canvas tactical jackets with visible zipper pockets and stitched seams, showing wear and repair. Undershirts are plain synthetic blend or moisture-wicking synthetics. Cargo pants or modified jeans with strategic pockets and reinforced knees. Boots are worn tactical-grade — no logos, scuffed, replaced every 2-3 years. A long coat (leather or synthetic leather, weathered dark brown) over his working gear. Minimal jewelry — one silver ring on left hand, likely sentimental or lucky. No visible corpo branding. Everything is functional; nothing is fashionable."
+    ]
   },
-  "image_prompt": "A weathered 64-year-old man with salt-and-pepper hair and deep-set dark brown eyes reflecting East Asian and Mediterranean ancestry, 177cm tall, lean muscular build. Medium olive-tan skin with golden undertones, deeply lined face with Slavic cheekbones. Diagonal scar across left cheekbone, burn marks on right forearm, subtle chrome nasal duct analyzer visible at nostrils catching light. Wearing dark tactical canvas jacket with visible wear, reinforced cargo pants, weathered dark brown leather coat, scuffed tactical boots. Silver ring on left hand. Restless posture, coiled energy. Standing in neon-lit GLMZ industrial zone at night, rain-slicked streets reflecting holographic signage, soft underlit mood, cyberpunk 2226 setting, atmospheric haze, cinematic noir lighting --ar 2:3 --v 6",
+  "image_prompt": "Nyx Bautista-Vestergaard, 64-year-old street operative, GLMZ, medium-rich brown skin with golden-olive undertones, broad Sub-Saharan African nasal bridge, prominent high cheekbones with East Asian structure, subtle epicanthic fold dark brown eyes, salt-and-pepper gray slicked-back short hair with two-day stubble. Deep facial lines and weathering, diagonal white scar across left cheekbone, crescent scar on left temple, chrome nasal duct analyzer glinting at nostrils. Wiry lean 177cm frame, corded forearms, minimal body fat. Wearing dark weathered tactical canvas jacket with zipper pockets, reinforced cargo pants, worn tactical boots, long dark leather coat, silver ring on left hand. Coiled restless posture, slight forward lean, eyes tracking movement. Industrial Great Lakes zone lighting, neon and sodium vapor ambiance, sitting at an angle in shadows, tense focused expression. Neo-noir near-future grit and wear throughout. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 38.7,
-    "Eastern European": 32.8,
-    "East Asian": 14.7,
-    "North African": 13.8
+    "Northern European": 31.1,
+    "Hispanic/Latin American": 28.7,
+    "Sub-Saharan African": 21.3,
+    "East Asian": 11.2,
+    "Southeast Asian": 6.9,
+    "South Asian": 0.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 18.3
+      },
+      "British Isles": {
+        "English": 8.6,
+        "Scottish": 4.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 21.3
+      },
+      "Caribbean": {
+        "Cuban": 7.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 12.3
+      },
+      "Central African": {
+        "Angolan": 7.8
+      },
+      "East African": {
+        "Kenyan": 0.8,
+        "Tanzanian": 0.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 11.2
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 0.5
+      },
+      "Indonesian": {
+        "Sundanese": 4
+      },
+      "Filipino": {
+        "Tagalog": 1.7,
+        "Ilocano": 0.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 0.3
+      },
+      "Indian": {
+        "Punjabi": 0.1,
+        "Kannada": 0.1
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.3
+      }
+    }
+  }
 }

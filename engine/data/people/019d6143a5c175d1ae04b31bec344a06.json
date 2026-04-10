@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c175d1ae04b31bec344a06",
   "type": "character",
-  "name": "Tarn Erikstad",
+  "name": "Tarn Thakur",
   "aliases": [
     "Benny Cutter",
     "the Cutter"
@@ -13,7 +13,7 @@
   "age": 48,
   "status": "active",
   "location": "The Stockyard, Bay 9 of the decommissioned Ferrogate Transit maintenance shed on Axle Row, near Western and Division",
-  "description": "Benedikt is a big man run slightly soft, with heavy forearms corded from decades of physical work, dark reddish-brown skin cross-hatched with old chemical burns on the backs of both hands, and a white-streaked beard he keeps trimmed close. He has geneware cat ears—tabby-patterned in brown and gray, a mod he got at thirty-five on a dare and kept because his grandchildren think they're wonderful. He wears the same style of heavy canvas coverall every day in rotating colors, always with the sleeves pushed up, always with at least one pocket tool he's forgotten to put away.\n\nBenedikt projects the easy authority of a man who has been competent at his work for a long time and knows it. He is not cruel, not dramatic, not particularly greedy—he runs his operation like a small business, because it is one. He is known in the Stockyard as fair: he pays what he says he'll pay, his cuts are clean, and he doesn't ask questions he doesn't want answered. What people underestimate is the quality of his memory and his willingness to call in patience as a debt. He has been waiting on one particular piece of unfinished business for six years.",
+  "description": "Tarn Thakur is a big man run slightly soft, with heavy forearms corded from decades of physical work, dark reddish-brown skin cross-hatched with old chemical burns on the backs of both hands, and a white-streaked beard he keeps trimmed close. He has geneware cat ears—tabby-patterned in brown and gray, a mod he got at thirty-five on a dare and kept because his grandchildren think they're wonderful. He wears the same style of heavy canvas coverall every day in rotating colors, always with the sleeves pushed up, always with at least one pocket tool he's forgotten to put away.\n\nTarn Thakur projects the easy authority of a man who has been competent at his work for a long time and knows it. He is not cruel, not dramatic, not particularly greedy—he runs his operation like a small business, because it is one. He is known in the Stockyard as fair: he pays what he says he'll pay, his cuts are clean, and he doesn't ask questions he doesn't want answered. What people underestimate is the quality of his memory and his willingness to call in patience as a debt. He has been waiting on one particular piece of unfinished business for six years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -188,7 +188,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,39 +250,13 @@
     "Ferrogate Transit",
     "The Stockyard",
     "The Unfinished Theorem",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "The Pure Hand",
-    "Palette",
-    "Ambrogio Waweru-Djordanović",
-    "Anatoliy Faye-Nkrumah",
-    "Archer's Line",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Auricula Felis Modification",
-    "Devraj Solano-Yildirim",
-    "Djeneba Park-Traore",
-    "Doru Fofana-Câmpeanu",
-    "Dragan Petersen-Bah",
-    "Ezio Kaboré-Malhotra",
-    "Flicker",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Helix Biosystems",
-    "Helix Biosystems Synaptic Throttle — 'The Governor'",
-    "Nkosi Tabares-Aanenson",
-    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
-    "Sagyn Ogawa-Twumasi",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Corponation",
-    "Tessera TK-20 Apex 'Mandate'",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Compact",
-    "the_meridian_office_park"
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European, Hispanic/Latin American, Eastern European, Middle Eastern, and Sub-Saharan African admixture. Northern European ancestry (34.6%) shows in bone structure and build; Hispanic/Latin American (24.7%) and Eastern European (19.5%) blend in facial features and coloration; Middle Eastern (13.9%) contributes to skin tone depth and eye shape; Sub-Saharan African (7.3%) adds warmth and texture to complexion.",
+    "heritage": "North African (28.7%), Eastern European (20.7%), Middle Eastern (19.8%), South Asian (18.1%), and Sub-Saharan African (12.7%) ancestry creates a striking multifaceted phenotype. North African heritage contributes angular bone structure and facial proportions; Eastern European ancestry shapes build and defines cheekbones; Middle Eastern ancestry structures eye placement and adds depth; South Asian heritage brings warmth and refinement to facial planes; Sub-Saharan African ancestry enriches skin undertones and texture. The synthesis is a cosmopolitan face bearing the genetic signature of the Ubiquitous Diaspora—a complex blend where no single ancestry dominates.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Broad-shouldered and heavy-limbed, softened through the middle from years of sedentary work interspersed with bursts of physical labor. Thick forearms remain corded and powerful despite the overall stockiness.",
@@ -290,8 +264,8 @@
     "hair_style": "Close-trimmed, kept neat but utilitarian",
     "hair_length": "Short",
     "eye_color": "Right eye: augmented with golden-amber optical overlay for magnification readout. Left eye: natural dark brown.",
-    "skin_tone": "Warm deep brown with reddish undertones—a complex blend reflecting Mediterranean, Middle Eastern, and African ancestry. Weathered and lined from decades in industrial environments, with an underlying olive-warm cast rather than pure red-brown.",
-    "complexion": "Strong, angular features shaped by the blend of Northern and Eastern European bone structure with Middle Eastern and African heritage contributing to fuller lips and broader nose bridge. Heavy-featured, serious expression. Face bears the texture of someone who has spent forty-eight years under fluorescent and arc-light work lamps. The chemical burns across his hands have not extended to his face, but his hands show the damage clearly—pale scar tissue cross-hatching the knuckles and dorsal surfaces in a fine lattice pattern that contrasts against the deeper skin tone.",
+    "skin_tone": "Deep warm brown with red-amber and olive undertones—a complex blend reflecting North African, Middle Eastern, South Asian, and Sub-Saharan African ancestry. Weathered and lined from decades in industrial environments, the skin carries warmth and depth that shifts subtly in different light.",
+    "complexion": "Strong, angular features shaped by North African and Eastern European bone structure with Middle Eastern and South Asian heritage contributing to fuller lips, prominent cheekbones, and broader nose bridge. Heavy-featured, serious expression carved by forty-eight years under fluorescent and arc-light work lamps. Chemical burns across his hands have not reached his face, but the knuckles and dorsal hand surfaces show pale scar tissue in fine cross-hatch patterns that contrast against the deeper skin tone.",
     "distinguishing_marks": [
       "Chemical burn scarring across the dorsal surfaces of both hands in a fine cross-hatch pattern, pale against darker skin, sustained from industrial solvent exposure approximately 30 years prior.",
       "Faint circular burn mark on left forearm, approximately 3cm diameter, consistent with welding spark contact.",
@@ -301,16 +275,60 @@
     "posture_movement": "Moves with deliberate efficiency, no wasted motion. Stands with weight balanced slightly forward, as if always ready to lean into work. Keeps his hands visible and in constant, purposeful motion—a man comfortable with tools. His gait is measured and confident, the movement pattern of someone who has never questioned his competence.",
     "clothing_style": "Heavy canvas coveralls in rotating solid colors (tan, slate gray, dark green, ochre)—always the same cut, always worn-in and bearing grease stains that no amount of washing fully removes. Sleeves perpetually rolled to mid-forearm. Pockets deliberately overstuffed with precision tools, small wrenches, calipers, and forgotten microchips. Steel-toed work boots, practical and scuffed. No jewelry except a simple band-style watch with a cracked crystal on his left wrist. Tier 3-4 working aesthetic—quality materials chosen for durability, not aesthetics."
   },
-  "image_prompt": "Tarn Erikstad, 188cm tall mixed-heritage industrial worker with deep warm brown skin and weathered features. Dark brown hair with white streaking, close-trimmed. Right eye glowing amber-gold with subtle readout flicker; left eye natural dark brown. Tabby-patterned geneware cat ears on skull. Broad-shouldered heavy build with corded forearms; middle softened from decades of work. Pale scar lattice pattern crossing dorsal hand surfaces from old chemical burns, mechanical assist brace over left hand ring and pinky fingers in brushed steel. Faint welding burn scar on left forearm, old laceration scar on right temple. Wearing rolled-sleeve tan canvas coveralls stained with grease, pockets bulging with precision tools, wrenches, calipers. Steel-toed scuffed work boots. Simple watch with cracked crystal. Deliberate, efficient posture; hands in constant purposeful motion. Cyberpunk 2226 Great Lakes Metropolitan Zone industrial setting, fluorescent workshop lighting casting sharp shadows, atmospheric particulate in air. Serious, competent expression. --ar 2:3 --v 6",
+  "image_prompt": "Tarn Thakur, 188cm industrial mechanic with deep warm brown skin bearing North African, Eastern European, Middle Eastern, South Asian, and Sub-Saharan African heritage. Heavy-featured angular face weathered from decades under work lamps, dark brown eyes with right eye augmented golden-amber optical overlay. Dark brown hair with white streaking, close-trimmed. Geneware tabby cat ears in brown-gray. Broad shoulders, stocky build with thick corded forearms. Chemical burn scarring visible on both hands in pale cross-hatch patterns against deeper skin. Left hand with brushed steel mechanical assist brace. Wearing worn tan canvas coveralls with rolled sleeves, pockets full of tools and calipers, steel-toed boots, cracked-crystal watch. Measured confident posture, hands visible and purposeful. Serious expression. GLMZ workshop setting, arc lighting and fluorescent work lamps casting warm and cool shadows, industrial environment with tool benches and machinery visible behind. Photorealistic, gritty industrial aesthetic, deep shadow and practical lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 34.6,
-    "Hispanic/Latin American": 24.7,
-    "Eastern European": 19.5,
-    "Middle Eastern": 13.9,
-    "Sub-Saharan African": 7.3
+    "North African": 28.7,
+    "Eastern European": 20.7,
+    "Middle Eastern": 19.8,
+    "South Asian": 18.1,
+    "Sub-Saharan African": 12.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 6.6,
+        "Sudanese": 13.8
+      },
+      "Maghreb": {
+        "Moroccan": 6.6,
+        "Tunisian": 1.7
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 8.9
+      },
+      "Slavic East": {
+        "Belarusian": 1.8
+      },
+      "Slavic South": {
+        "Bulgarian": 10
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 10.5
+      },
+      "Kurdish": {
+        "Kurdish": 9.3
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 18.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 10.2
+      },
+      "East African": {
+        "Ethiopian": 2.5
+      }
+    }
+  }
 }

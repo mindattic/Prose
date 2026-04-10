@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6df75a18203a682e7176960",
   "type": "character",
-  "name": "Reed Montalvo-Prempeh",
+  "name": "Reed Lewandowski-Hossain",
   "aliases": [
     "Osmium",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
-  "description": "Suki Ekberg-Asare is compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a tech retriever out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSuki Ekberg-Asare has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Reed Lewandowski-Hossain is compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a tech retriever out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nReed Lewandowski-Hossain has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -262,7 +262,7 @@
     "Pragmatist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,28 +279,13 @@
     "The Gradient Compact",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
+    "Felix Roundtree",
     "Pellucid Systems",
-    "Clover",
-    "The Milwaukee Core",
-    "Arcturus Exo-Runner Frame",
-    "Brecken Yılmaz-Osei",
-    "GLMZ",
-    "Ilhan Sandstrom-Badu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Prophet",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "TERMINUS",
-    "The Shelf",
-    "The Wire Taps",
-    "Yusra Ntambwe-Cakić"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant South Asian and Hispanic/Latin American ancestry — a striking blend creating warm, deep-toned features with layered ethnic markers. The Sub-Saharan African heritage dominates bone structure and skin tone, while South Asian ancestry contributes to facial proportions and eye depth, with Hispanic/Latin American elements adding warmth and dimension to overall appearance.",
+    "heritage": "Striking blend of Eastern European (40.4%), South Asian (37.4%), Northern European (18.1%), and Sub-Saharan African (4.1%) ancestry. Eastern European bone structure and base complexion provide foundational features, while substantial South Asian ancestry contributes warm undertones, eye depth, and facial proportions. Northern European elements create cool counterpoints and lighter overall tone. Trace Sub-Saharan African heritage adds subtle warmth and richness to skin undertones. The result is a sophisticated, balanced phenotype — warm medium brown with complex golden-olive undertones and cooler notes, neither pale nor deeply saturated.",
     "height_cm": 167,
     "weight_kg": 72,
     "build": "Compact and densely muscled, low center of gravity — built for impact absorption and explosive movement rather than reach. Shoulders broad relative to frame, legs thick and powerful.",
@@ -308,10 +293,10 @@
     "hair_style": "Closely cropped, functional, minimal styling",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Deep warm brown with rich undertones — the natural result of strong Sub-Saharan African ancestry blended with South Asian warmth and Latin American golden notes. Complexion ranges from mahogany to deep bronze depending on light, with an underlying radiance rather than olive cast.",
-    "complexion": "Strong, defined facial structure with prominent cheekbones and distinctive nose bridge showing South Asian influence. Skin shows weathering from chemical exposure in Steamvent Alley — slight discoloration around left temple and jawline from ambient pollution. Clean-shaven, minimal grooming beyond necessity.",
+    "skin_tone": "Medium warm brown with golden-olive and cool undertones — the natural result of Eastern European and Northern European base with significant South Asian warmth and trace Sub-Saharan African depth. Complexion ranges from light tan to warm bronze depending on light, carrying both golden and subtle cooler notes. Skin shows refined clarity typical of Eastern European heritage enhanced by South Asian depth.",
+    "complexion": "Strong, defined facial structure with prominent cheekbones and straight nose bridge showing Eastern European influence, balanced by South Asian eye depth and warm undertones. Facial contours carry subtle warmth from mixed ancestry. Skin shows weathering from chemical exposure in Steamvent Alley — slight discoloration around left temple and jawline from ambient pollution. Clean-shaven, minimal grooming beyond necessity.",
     "distinguishing_marks": [
-      "Faint chemical burn scars along left side of neck and upper chest — pale against dark skin, barely raised, from industrial accident or extraction gone wrong",
+      "Faint chemical burn scars along left side of neck and upper chest — pale against warm brown skin, barely raised, from industrial accident or extraction gone wrong",
       "Surgical scar tissue where right arm connects at shoulder — visible chrome interface point, slightly raised and darker than surrounding skin",
       "Small tattoo on inner left wrist — minimalist circuit pattern, functional marker rather than artistic statement"
     ],
@@ -319,14 +304,50 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands in slight forward lean, weight distributed low. Right arm hangs with subtle mechanical fluidity that marks him as augmented to anyone paying attention. Eyes track constantly, environmental awareness default state. When relaxed, tension never fully leaves his frame.",
     "clothing_style": "Tier 4 utilitarian — function over aesthetic. Reinforced synthweave jacket with chemical-resistant coating, worn gray. Cargo pants with deep pockets and cable management loops. Steel-toed work boots, scuffed and well-maintained. Under-layer is reactive mesh undershirt, barely visible at collar. No corporate logos, no team colors. Everything modular and replaceable. Weathered from Steamvent humidity and chemical exposure."
   },
-  "image_prompt": "Reed Montalvo-Prempeh, 2226 cyberpunk worker, deep warm brown skin with rich mahogany undertones, short black hair, dark intense eyes. Compact muscular build, 167cm tall. Full chrome right arm with visible articulation joints in brushed steel and gunmetal, shoulder interface scarring. Fine servo-assist lines visible at temples and neck. Adrenaline pump port on right collarbone. Faint chemical burn scars pale against dark skin on left neck and chest. Minimalist circuit tattoo on inner left wrist. Wearing worn gray chemical-resistant synthweave jacket, reinforced cargo pants with cable management, scuffed steel-toed boots. Reactive mesh undershirt at collar. Forward lean stance, economical movement, constant environmental awareness. Steamvent Alley industrial setting with chemical haze and neon glow. Moody cyberpunk lighting, wet surfaces reflecting red and cyan. Gritty, weathered, functional aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Reed Lewandowski-Hossain, compact muscular man with warm medium brown skin and golden-olive undertones, dark brown natural eyes. Eastern European bone structure with South Asian depth, prominent cheekbones, straight nose bridge. Short black closely-cropped hair. Right arm full brushed steel cybernetic replacement with visible chrome joints, servo-assist lines visible at temples and neck. Faint chemical burn scars on left neck and upper chest. Minimalist circuit tattoo on inner left wrist. Wearing reinforced gray synthweave jacket with chemical-resistant coating, cargo pants with cable loops, scuffed steel-toed boots. Reactive mesh undershirt visible at collar. Standing in economical forward lean, weight low, constant environmental awareness. Steamvent Alley industrial setting, humid air with chemical haze, neon glow reflecting off chrome augmentation. Moody neo-noir atmosphere, weathered and utilitarian. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 47.8,
-    "South Asian": 36.8,
-    "Hispanic/Latin American": 15.4
+    "Eastern European": 40.4,
+    "South Asian": 37.4,
+    "Northern European": 18.1,
+    "Sub-Saharan African": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 32.7
+      },
+      "Slavic West": {
+        "Czech": 7.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 37.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 2.3,
+        "Danish": 0.4
+      },
+      "Germanic": {
+        "Dutch": 4.6,
+        "Austrian": 0.6
+      },
+      "British Isles": {
+        "English": 5.3,
+        "Welsh": 4.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 3.3,
+        "Gabonese": 0.8
+      }
+    }
+  }
 }

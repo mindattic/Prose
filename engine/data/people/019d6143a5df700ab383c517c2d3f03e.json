@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5df700ab383c517c2d3f03e",
   "type": "character",
-  "name": "Reed Björnsdóttir-Fredriksen",
+  "name": "Reed Nishimura-Kovalenko",
   "aliases": [
     "Cris",
     "Nightcar"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Lives in a capsule flat in Bronzeline; works the tram route between Geartown depot and the Bronzeline terminus, near Milwaukee and Damen",
-  "description": "Crisanto is lean and long-limbed, with the particular posture of someone who has spent years in a driver's seat — slightly forward, shoulders loose, hands always finding something to rest near. He has his mother's Yoruba complexion, deep and warm, and his father's Scandinavian bone structure, which gives his face an angular elegance he is utterly unaware of. His hair is cut close on the sides and left natural on top, and he has geneware-modified irises that cycle slowly through amber, gold, and pale yellow — a cosmetic mod he saved up for at twenty-two and has never regretted. A faded scar bisects his left eyebrow from a childhood fall.\n\nHe is a fundamentally decent man who chose a fundamentally anonymous job and has found, to his mild surprise, that this suits him. He talks to his passengers — not intrusively, but gently, in the way of a good host — notices who boards tired, who boards scared, who needs the fare scanner to 'malfunction' because they're clearly two days from eating. His tram is clean. He plays low-frequency ambient music through the cabin speakers after midnight and thinks of it as a public service. He carries a notebook — actual paper — in which he sketches the faces of interesting passengers, never with names, never to share.",
+  "description": "Reed Nishimura-Kovalenko is lean and long-limbed, with the particular posture of someone who has spent years in a driver's seat — slightly forward, shoulders loose, hands always finding something to rest near. He has his mother's Yoruba complexion, deep and warm, and his father's Scandinavian bone structure, which gives his face an angular elegance he is utterly unaware of. His hair is cut close on the sides and left natural on top, and he has geneware-modified irises that cycle slowly through amber, gold, and pale yellow — a cosmetic mod he saved up for at twenty-two and has never regretted. A faded scar bisects his left eyebrow from a childhood fall.\n\nHe is a fundamentally decent man who chose a fundamentally anonymous job and has found, to his mild surprise, that this suits him. He talks to his passengers — not intrusively, but gently, in the way of a good host — notices who boards tired, who boards scared, who needs the fare scanner to 'malfunction' because they're clearly two days from eating. His tram is clean. He plays low-frequency ambient music through the cabin speakers after midnight and thinks of it as a public service. He carries a notebook — actual paper — in which he sketches the faces of interesting passengers, never with names, never to share.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Social Chameleon": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lives in a capsule flat in Bronzeline; works the tram route between Geartown depot and the Bronzeline terminus",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,41 +246,22 @@
     "Ferrogate Transit",
     "Lambeau Terminus",
     "Bronzeline",
+    "Frequency",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Midnight Gyros",
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
     "Geartown",
     "Crucible Industries CR-2 'Trapdoor'",
-    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Arcturus KS-7 'Nursery'",
     "SynapTech IrisBloom Ocular Color Modulator",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Slagworks Industrial",
     "The Pale Mile",
-    "Gold",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus BH-2 'Marrow'",
-    "Arcturus KS-7 'Nursery'",
-    "Arcturus ST-4 'Verdict'",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo RR-1 'Rattlesnake'",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Circuit",
-    "The Heritage Vault",
-    "The Sluiceway",
-    "Tomasz Wren",
-    "VitaCore LinguaSync Real-Time Translation Implant",
-    "Vuk Jorgensen-Toure"
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (Scandinavian), Southeast Asian, North African, Middle Eastern, Sub-Saharan African, and East Asian—a complex diaspora blend. The result is a face that resists simple categorization: high, prominent cheekbones and defined jawline from Northern European ancestry, warm medium-brown skin tone with subtle golden undertones reflecting the Southeast Asian and North African components, eye shape showing slight epicanthic variation from East Asian heritage, and overall facial structure carrying the angular elegance of Northern European genetics tempered by the warmer, broader features of Southeast and North African lineage.",
+    "heritage": "Eastern European Slavic (40%), East Asian (35.3%), Middle Eastern (15.8%), and Northern European (8.9%)—a seamless diaspora blend. High, prominent cheekbones and defined jawline from Eastern European and Northern European ancestry are balanced by the warmer, subtly broader facial planes of East Asian and Middle Eastern heritage. Slight epicanthic eye shape variation from East Asian genetics, with overall structure carrying Slavic angular elegance tempered by the fuller, rounder features characteristic of Middle Eastern lineage.",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Lean and long-limbed with the subtle forward cant of someone accustomed to a driver's seat. Shoulders loose and mobile, minimal upper body bulk, efficient frame built for sustained posture rather than strength.",
@@ -288,8 +269,8 @@
     "hair_style": "Close-cropped fade on sides, natural texture left full on top",
     "hair_length": "Short (approximately 4-5cm on crown)",
     "eye_color": "Geneware-modified irises cycling amber → gold → pale yellow in slow rotation",
-    "skin_tone": "Medium-warm brown with golden-amber undertones, reflecting the blend of Southeast Asian, North African, and Northern European ancestry",
-    "complexion": "Angular facial structure with prominent cheekbones and a defined jawline shaped by Northern European genetics, softened by the warmer, fuller facial proportions of Southeast Asian and North African heritage. Skin well-maintained but not cosmetically treated. A faded linear scar bisects his left eyebrow from childhood, barely noticeable but present under direct light.",
+    "skin_tone": "Medium-warm brown with golden-amber undertones, reflecting the dominant Eastern European Slavic (40%), East Asian (35.3%), and Middle Eastern (15.8%) ancestry blend",
+    "complexion": "Angular facial structure with prominent cheekbones and defined jawline shaped by Eastern European and Northern European genetics, balanced by the warmer, subtly fuller facial proportions of East Asian and Middle Eastern heritage. Skin well-maintained but not cosmetically treated. A faded linear scar bisects his left eyebrow from childhood, barely noticeable but present under direct light.",
     "distinguishing_marks": [
       "Faded scar bisecting left eyebrow, approximately 2cm long, pale against skin from a childhood fall."
     ],
@@ -297,17 +278,47 @@
     "posture_movement": "Naturally forward-leaning, as if perpetually attentive to an instrument or passenger. Hands gesture with deliberate economy, often finding something to rest near — a railing, a pocket edge, the back of a seat. Movement is efficient and unhurried. Eyes track his surroundings with quiet attention.",
     "clothing_style": "Ferrogate Transit Tier 2 uniform consisting of charcoal grey poly-cotton blend shirt with reflective piping, navy trousers with reinforced seams, and regulation non-slip boots. Off-shift: worn synthetic bomber jacket (charcoal grey, Ferrogate branded), plain dark t-shirts, practical cargo pants with adequate pockets, and utilitarian footwear. Minimal jewelry — a subdermal clock on wrist. Carries a battered paper notebook and mechanical pencil daily. Overall appearance is unpretentious, deliberately anonymous, maintained with quiet care."
   },
-  "image_prompt": "Reed Björnsdóttir-Fredriksen, a mixed-heritage transit operator in the Great Lakes Metropolitan Zone, 2226. 182cm lean frame in a worn charcoal Ferrogate bomber jacket over regulation grey poly-cotton uniform shirt with reflective piping. Medium-warm brown skin with golden undertones, angular cheekbones and defined jawline, short black hair faded on sides. Signature cybernetic eyes slowly cycling amber-to-gold-to-pale-yellow, creating an eerie chromatic glow. Faded scar bisecting left eyebrow. Naturally forward-leaning posture suggesting habitual driver attentiveness. Carrying a battered paper notebook and mechanical pencil. Standing in a dimly lit transit station or tram cabin with cool neon and industrial lighting casting shadows across his face. Quiet, unpretentious, deliberately anonymous demeanor. Cyberpunk noir aesthetic, atmospheric, moody. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Reed Nishimura-Kovalenko, 182cm lean transit operator with medium-warm golden-brown skin, faded scar bisecting left eyebrow. Angular cheekbones and defined jawline with subtle broader East Asian-Middle Eastern facial planes. Natural black short hair, close-cropped fade sides. Geneware-modified irises cycling slowly through amber-gold-pale yellow. Wearing charcoal grey Ferrogate Transit uniform with reflective piping and navy reinforced trousers, worn synthetic bomber jacket draped over shoulders. Standing in tram cabin under cool LED lighting, forward-leaning posture, quiet attentive expression, tracking surroundings with subtle intensity. Battered notebook and mechanical pencil visible in cargo pocket. GLMZ Great Lakes Metropolitan Zone, moody transit interior lighting casting cool whites and amber accents across features. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 33.9,
-    "Southeast Asian": 32.5,
-    "North African": 15.4,
-    "Middle Eastern": 10.4,
-    "Sub-Saharan African": 4.1,
-    "East Asian": 3.7
+    "Eastern European": 40,
+    "East Asian": 35.3,
+    "Middle Eastern": 15.8,
+    "Northern European": 8.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 25.7
+      },
+      "Slavic South": {
+        "Croatian": 14.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 18.7
+      },
+      "Chinese": {
+        "Fujianese": 10.8,
+        "Shanghainese": 5.8
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Afghan Dari": 15.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 3.4
+      },
+      "Germanic": {
+        "Austrian": 5.5
+      }
+    }
+  }
 }

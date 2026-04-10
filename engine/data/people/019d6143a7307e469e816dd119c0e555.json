@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7307e469e816dd119c0e555",
   "type": "character",
-  "name": "Ahanu Ixchel-Strömqvist",
+  "name": "Alejandro Owusu-Castañeda",
   "aliases": [
     "Digital"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,19 +103,12 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "The Milwaukee Core",
-    "Free Assembly",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Circuit",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Indigenous American (47.1%) with significant Southeast Asian (29.0%), Sub-Saharan African (12.2%), and Northern European (11.7%) ancestry. The combination creates a striking phenotype: warm deep brown skin with subtle golden and olive undertones, high prominent cheekbones with gentle angularity characteristic of Indigenous American heritage, and almond-shaped eyes reflecting Southeast Asian genetics. The overall facial structure carries the angular strength of mixed heritage, with warm undertones from African ancestry creating depth in skin tone.",
+    "heritage": "Hispanic/Latin American (53.3%) with substantial Sub-Saharan African (33.8%) ancestry, creating a striking warm phenotype. Central Asian (5.2%), South Asian (3.0%), East Asian (2.5%), and Middle Eastern (2.2%) heritage add subtle complexity to facial structure and feature expression. The dominant Latin-African blend produces deep warm brown skin with golden and reddish undertones. Facial structure shows strength across multiple heritage expressions: high prominent cheekbones and angular definition reflect both Latin American and African ancestry, while Central and South Asian components contribute subtle variations in eye shape and facial proportion. Overall appearance carries rich warmth and visual depth from the harmonious genetic blend.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and angular, with defined musculature from street work and parkour. Minimal body fat, wiry strength in shoulders and forearms.",
@@ -123,8 +116,8 @@
     "hair_style": "Pulled back in a tight Dutch braid, practical and minimal",
     "hair_length": "Medium",
     "eye_color": "Dark brown with faint cyan circuitry visible around the iris (neural interface marker)",
-    "skin_tone": "Deep warm brown with golden and olive undertones, reflecting the blend of Indigenous American, Southeast Asian, and Sub-Saharan African ancestry",
-    "complexion": "Clear skin with warm undertones and subtle depth from mixed heritage. Sharp facial features with high prominent cheekbones and gentle angularity. A few thin scars on the left cheekbone and jawline — old street marks. Minimal makeup. Focused, alert expression.",
+    "skin_tone": "Deep warm brown with golden and reddish undertones, reflecting the dominant Hispanic/Latin American and Sub-Saharan African genetic blend with subtle complexity from Central and South Asian heritage",
+    "complexion": "Clear skin with warm golden-reddish undertones and substantial depth from mixed heritage. Sharp facial features with high prominent cheekbones and angular definition reflecting African and Latin American ancestry. A few thin scars on the left cheekbone and jawline — old street marks. Minimal makeup. Focused, alert expression.",
     "visible_augmentations": "Faint luminescent circuitry visible around both eyes during low-light conditions. Right wrist shows a thin chrome jack port beneath the skin — partially visible as a slight metallic sheen. No obvious limb replacements; augmentations are primarily neural and sensory.",
     "posture_movement": "Moves with controlled precision — no wasted motion. Stands at an oblique angle when talking, always positioning herself with an exit in mind. Eyes scan rooms automatically. Hands rest near her body, ready to move. Walks with a measured stride, balanced on the balls of her feet.",
     "clothing_style": "Tier 3 street-functional aesthetic. Black reinforced synthweave tactical jacket with asymmetrical pockets and a micro-LED wrist display panel. Fitted charcoal cargo pants with integrated knee pads. Steel-toed combat boots, scuffed and practical. Wears a lightweight mesh undershirt visible at the collar — acts as a secondary armor layer. Accessorizes with a worn leather wrist cuff on her right arm and a silver chain with a small pendant (possibly a key or data token). No corpo logos; all gear is modular and purpose-built.",
@@ -134,15 +127,62 @@
       "Subdermal geometric tattoo on left temple — three interlocking circles in white ink, Free Assembly symbol"
     ]
   },
-  "image_prompt": "Cyberpunk 2226, Ahanu Ixchel-Strömqvist, lean 168cm female figure, deep warm brown skin with golden undertones, high sharp cheekbones, dark brown eyes with subtle cyan neural circuitry glow, black hair with silver LED fiber streaks pulled back in tight Dutch braid. Thin white scar on left cheekbone, focused alert expression. Black reinforced tactical synthweave jacket with asymmetrical pockets, micro-LED wrist display, charcoal cargo pants with knee pads, steel-toed scuffed combat boots. Mesh undershirt visible at collar, worn leather wrist cuff, silver pendant chain. Subdermal white geometric tattoo (three interlocking circles) on left temple. Neural implant scarring visible on right inner wrist. Controlled precise posture, positioned for exit strategy, hands ready. Urban neon-lit setting, low cyan glow from neural interface, cinematic lighting with street shadows, mood tense and watchful. Cybernetic augmentations subtly visible. --ar 2:3 --v 6",
+  "image_prompt": "Alejandro Owusu-Castañeda, mixed-heritage neo-noir operative, deep warm brown skin with golden undertones, high angular cheekbones, dark brown eyes with faint cyan neural circuitry, black hair with silver LED streaks pulled back in tight Dutch braid. Thin scar along left cheekbone, white subdermal geometric tattoo on temple. Lean muscular build, 168cm tall. Wearing black reinforced tactical synthweave jacket with asymmetrical pockets, fitted charcoal cargo pants with knee pads, steel-toed combat boots. Mesh undershirt visible at collar, worn leather wrist cuff, silver chain pendant. Faint luminescent circuitry visible around eyes, chrome jack port visible beneath right wrist skin. Posture alert and controlled, scanning environment. Low-light neo-noir street setting, neon reflections on wet pavement, moody atmospheric lighting, Great Lakes Metropolitan Zone 2226. Street-functional, dangerous precision, ready for action. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 47.1,
-    "Southeast Asian": 29.0,
-    "Sub-Saharan African": 12.2,
-    "Northern European": 11.7
+    "Hispanic/Latin American": 53.3,
+    "Sub-Saharan African": 33.8,
+    "Central Asian": 5.2,
+    "South Asian": 3,
+    "East Asian": 2.5,
+    "Middle Eastern": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 18.7
+      },
+      "Caribbean": {
+        "Haitian": 34.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 33.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 3.3,
+        "Buryat": 1.9
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 1.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 2.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 1.3
+      },
+      "Arab Gulf": {
+        "Yemeni": 0.6
+      },
+      "Kurdish": {
+        "Kurdish": 0.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ba7a94b5856e27ef9e5dae",
   "type": "character",
-  "name": "Frost Olofsson",
+  "name": "Ama Cissé",
   "aliases": [
     "Static",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Kedzie and Division",
-  "description": "Aybek Alvarez-Okonkwo is average height but with a presence that fills more space than the body accounts for. At 26, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a wheelman out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAybek Alvarez-Okonkwo has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Ama Cissé is average height but with a presence that fills more space than the body accounts for. At 26, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a wheelman out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAma Cissé has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.13,
@@ -260,7 +260,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,29 +275,15 @@
   "related_entities": [
     "Adaptive Camouflage Skin",
     "Ironveil Canopy",
-    "GLMZ",
     "The Unfinished Theorem",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Clover",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Quilt",
-    "Sorin Ekwensi-Balasanyan",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian, Northern European, Middle Eastern, and Hispanic/Latin American blend — sharp features from East Asian and Northern European ancestry with warmer undertones from Middle Eastern and Latin American heritage. High cheekbones and defined jawline reflect the East Asian and Northern European mix, while skin warmth comes from the Middle Eastern and Hispanic components.",
+    "heritage": "Ubiquitous Diaspora blend of Sub-Saharan African (39.4%), Hispanic/Latin American (29.9%), Southeast Asian (24.0%), and Eastern European (6.7%) ancestry. The genetic combination creates a distinctive warm-deep complexion with golden undertones — the dominant African and Latin American heritage establishing the rich skin depth and full lip structure, while Southeast Asian ancestry contributes refined cheekbone prominence and Eastern European genetics add angular jawline definition. The interplay of these four regional heritages produces balanced facial proportions with strength-endurance ancestry markers.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and economical — muscle distributed for endurance and precision rather than bulk. Wiry forearms from constant grip work on vehicle controls. Shoulders slightly forward, the posture of someone who spends hours hunched over a steering interface.",
@@ -305,8 +291,8 @@
     "hair_style": "Pulled back tight into a single high braid, practical and exposing the neck and ears — deliberate choice to showcase augmentations",
     "hair_length": "Long",
     "eye_color": "Dark brown, alert and constantly tracking — pupils dial slightly faster than baseline human response",
-    "skin_tone": "Warm medium-golden brown with peachy undertones — the complex interplay of East Asian, Northern European, Middle Eastern, and Latin American ancestry creating a distinctive warm-neutral complexion",
-    "complexion": "Sharp cheekbones and defined jawline reflecting East Asian structure with Northern European angularity, warmed by Middle Eastern and Latin American heritage. Minimal grooming beyond function. Skin bears the faint shimmer of active chromatic pigment cells — patches across her collarbone, temple, and the inner forearms appear to shift between deep purple and gunmetal grey depending on ambient light and her conscious control. Small scar through her left eyebrow, white and old. Perpetual dark circles from sleep debt and stimulant use.",
+    "skin_tone": "Rich deep brown with warm golden undertones — the result of Sub-Saharan African, Hispanic/Latin American, Southeast Asian, and Eastern European ancestry creating a complex warm-toned complexion with natural depth and luminosity",
+    "complexion": "High, prominent cheekbones with refined structure from Southeast Asian ancestry and defined jawline sharpened by Eastern European genetics, balanced by full cheek and lip volume from Sub-Saharan African and Hispanic/Latin American heritage. Minimal grooming beyond function. Skin bears the faint shimmer of active chromatic pigment cells — patches across collarbone, temple, and inner forearms appear to shift between deep purple and gunmetal grey depending on ambient light and conscious control. Small scar through left eyebrow, white and old. Perpetual dark circles from sleep debt and stimulant use.",
     "distinguishing_marks": [
       "Thin white scar bisecting left eyebrow — impact injury, 4+ years old",
       "Faint burn scarring along right inner wrist — subcutaneous circuitry installation scar, surgical but imperfectly healed",
@@ -317,15 +303,54 @@
     "posture_movement": "Economical and precise — no wasted motion. Sits slightly forward, weight balanced on the balls of her feet even when stationary, ready for rapid position shift. Hands rest near her body, fingers loose but not relaxed. Eyes move before her head does. In conversation, she has a habit of tilting her head slightly when listening — the cyberears directional array at work. Walks with a controlled stride, shoulders level, weight distributed for quick lateral movement.",
     "clothing_style": "Tier 3-4 utilitarian with runner undertones. Black or charcoal synthetic cargo pants with reinforced seams and deep pockets — fit snug at the waist, loose through the thigh. Layered tops: a thin grey compression shirt under a black tactical mesh overshirt with asymmetrical pockets and wrist cuffs that can seal. Worn black synthetic bomber jacket — the kind that sheds water and projectile debris, with no corporate logos but visible wear marks where patches have been removed and reattached. Boots are heavy-duty, laced military-style, soles worn from thousands of hours of pedal work. Minimal jewelry — a thin silver wire wrapped around her left wrist, functional rather than decorative. Everything fits close, nothing flares or drags."
   },
-  "image_prompt": "Frost Olofsson, 168cm lean runner build, warm golden-brown skin with East Asian-Northern European-Middle Eastern-Hispanic ancestry blend. High sharp cheekbones, defined jawline, dark brown alert eyes with fast-tracking pupils. Long black hair in tight high braid. Visible chromatic pigment cell augmentation shimmering purple-to-grey across collarbones, temples, inner forearms. Subtle metallic cyberear augmentation at ear canals. Old white scar bisecting left eyebrow, dark circles from stimulant use. Black tactical mesh overshirt layered over grey compression shirt, worn black water-resistant bomber jacket, charcoal cargo pants, heavy military-style boots. Silver wire wrapped around left wrist. Three interlocking circle tattoo on inner left wrist. Forward-leaning posture, economical movement, fingers loose near body. Cyberpunk 2226 runner aesthetic, neon-lit urban setting with rain-slicked surfaces, moody blue-purple lighting reflecting off wet pavement, slight chromatic glow around augmented skin. Film noir atmosphere, vigilant expression, ready stance. --ar 2:3 --v 6",
+  "image_prompt": "Ama Cissé, 168cm lean runner build, rich deep brown skin with warm golden undertones and iridescent chromatic pigment cells shimmering purple-grey across collarbones and temples. High prominent cheekbones, angular jawline, full lips, alert dark brown eyes with white scar through left eyebrow. Long black hair pulled tight in high braid exposing augmented ears with metallic gleam. Wearing black tactical mesh overshirt and worn bomber jacket over grey compression shirt, snug charcoal cargo pants, heavy military-laced boots. Silver wire wrapped left wrist, three-circle tattoo visible inside wrist. Cyberear tilted slightly in listening posture, weight balanced forward on balls of feet. Minimal dark circles, stimulant-sharp presence. GLMZ Great Lakes Metropolitan Zone, moody neon-filtered industrial lighting, rain-slicked concrete backdrop, ready and precise. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 33.7,
-    "Northern European": 30.8,
-    "Middle Eastern": 18.1,
-    "Hispanic/Latin American": 17.4
+    "Sub-Saharan African": 39.4,
+    "Hispanic/Latin American": 29.9,
+    "Southeast Asian": 24,
+    "Eastern European": 6.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 39.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.8
+      },
+      "Central American": {
+        "Nicaraguan": 2.9,
+        "Guatemalan": 14.3
+      },
+      "South American": {
+        "Peruvian": 7.9
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 11.3
+      },
+      "Laotian": {
+        "Laotian": 2.6
+      },
+      "Vietnamese": {
+        "Vietnamese": 10.1
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 2.5
+      },
+      "Slavic South": {
+        "Serbian": 2.3,
+        "Slovenian": 1.9
+      }
+    }
+  }
 }

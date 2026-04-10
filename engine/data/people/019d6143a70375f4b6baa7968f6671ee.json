@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70375f4b6baa7968f6671ee",
   "type": "character",
-  "name": "Drift Ibarra",
+  "name": "Drift Huitzil",
   "aliases": [
     "Tommo",
     "The Mint"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Shelf, Lower Level 9 — rents a two-room unit in the Blackpipe Corridor that doubles as his print shop, near Pulaski and Chicago Ave",
-  "description": "Tomislav is whip-thin with a restless, bird-quick way of moving — he is always slightly in motion, tapping, shifting, scanning the room. He has his father's Croatian bone structure and his Malian grandmother's complexion, a warm dark brown, and he grows a patchy beard he refuses to admit is patchy. His geneware is expressive: color-shifting hair he keeps cycling through ambers and deep reds, and patterned irises that he updates seasonally through a subscription service — currently sporting a fine hexagonal grid in pale gold. He looks younger than 22 and has learned to use this strategically.\n\nHe came to counterfeiting through graphic design — he was genuinely talented, got a Tessera scholarship to an applied arts program, washed out in the second year when he couldn't keep up with the social and academic debt load, and discovered that the skills transferred perfectly to a more immediately lucrative application. He is not violent, not particularly brave, and deeply aware that he is one forensic audit away from a serious corporate jurisdiction charge. He manages this anxiety through manic productivity and a carefully cultivated reputation for quality. His work is, genuinely, exceptional. He talks about it the way a craftsman talks about joinery.",
+  "description": "Drift Huitzil is whip-thin with a restless, bird-quick way of moving — he is always slightly in motion, tapping, shifting, scanning the room. He has his father's Croatian bone structure and his Malian grandmother's complexion, a warm dark brown, and he grows a patchy beard he refuses to admit is patchy. His geneware is expressive: color-shifting hair he keeps cycling through ambers and deep reds, and patterned irises that he updates seasonally through a subscription service — currently sporting a fine hexagonal grid in pale gold. He looks younger than 22 and has learned to use this strategically.\n\nHe came to counterfeiting through graphic design — he was genuinely talented, got a Tessera scholarship to an applied arts program, washed out in the second year when he couldn't keep up with the social and academic debt load, and discovered that the skills transferred perfectly to a more immediately lucrative application. He is not violent, not particularly brave, and deeply aware that he is one forensic audit away from a serious corporate jurisdiction charge. He manages this anxiety through manic productivity and a carefully cultivated reputation for quality. His work is, genuinely, exceptional. He talks about it the way a craftsman talks about joinery.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -162,7 +162,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,34 +180,18 @@
     "Grandmother",
     "The Shelf",
     "The Quiet Room",
+    "GLMZ",
     "Tessera Corponation",
+    "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
+    "Drift",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Pale Mile",
-    "Gold",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Devraj Solano-Yildirim",
-    "Dragan Petersen-Bah",
-    "Last Word",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Narrowcast",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Sagyn Ibarra-Prempeh",
-    "Slagworks Industrial",
-    "TESSERA WL-6 'Stacker'",
-    "The Corridor",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tambadou-Reinholt",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Pacific Islander ancestry, blended with North African, Sub-Saharan African, and Northern European heritage. This genetic mix manifests in warm golden-brown skin with subtle warm undertones, angular facial structure with prominent cheekbones, and a lean, efficient frame.",
+    "heritage": "Complex diaspora blend dominated by South Asian (42.3%) and Indigenous American (28.1%) ancestry, with significant East Asian (16.6%), Hispanic/Latin American (11.0%), and trace Sub-Saharan African (2.0%) heritage. This genetic constellation produces warm medium-brown skin with subtle golden and olive undertones, angular facial structure reflecting Indigenous American and South Asian features—pronounced cheekbones and defined jawline—with the eye shape and facial proportions showing East Asian influence. The overall appearance is a striking synthesis of these lineages rather than any single dominant heritage.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Whip-thin and wiry with minimal muscle mass; the frame of someone who subsists on noodles and nervous energy rather than deliberate fitness. All restless angles.",
@@ -215,8 +199,8 @@
     "hair_style": "Medium length, deliberately tousled; styled to emphasize the color-shift subscription effect as a subtle flex",
     "hair_length": "Medium",
     "eye_color": "Patterned irises displaying fine hexagonal grid in pale gold (cosmetic augmentation, seasonal subscription)",
-    "skin_tone": "Warm golden-brown complexion with subtle olive undertones, reflecting the blend of Hispanic/Latin American, Pacific Islander, and North African ancestry",
-    "complexion": "Angular face with pronounced cheekbones and narrow jawline. Chronically sleep-shifted — mild dark circles under eyes. Patchy facial hair growth that he maintains despite being aware of its patchiness; gives him a deliberately careless appearance that reads younger than his 22 years.",
+    "skin_tone": "Warm medium-brown complexion with golden and subtle olive undertones, the result of South Asian primary ancestry (42.3%) blended with Indigenous American (28.1%), East Asian (16.6%), Hispanic/Latin American (11.0%), and trace Sub-Saharan African (2.0%) heritage",
+    "complexion": "Angular face with pronounced cheekbones and narrow jawline reflecting the South Asian and Indigenous American heritage blend. Eye shape shows East Asian influence with warm medium-brown skin creating a striking synthesis. Chronically sleep-shifted — mild dark circles under eyes. Patchy facial hair growth that he maintains despite being aware of its patchiness; gives him a deliberately careless appearance that reads younger than his 22 years.",
     "distinguishing_marks": [
       "Faint scar tissue on the pad and first knuckle of his dominant right index finger from early geneware installation procedure for haptic enhancement",
       "Minor chemical burn marks on his left forearm (two small pale spots) from an early counterfeiting run gone wrong with solvent exposure"
@@ -225,16 +209,55 @@
     "posture_movement": "Perpetually in low-level motion — tapping fingers, shifting weight, scanning rooms with quick bird-like head turns. When seated at work, becomes hyperfocused and nearly motionless. When walking, moves with quick, economical steps. Nervous tics are self-aware and sometimes deliberately performed.",
     "clothing_style": "Tier 4 utilitarian with deliberate thrift-store layering. Favors oversized hoodies and worn mesh tank tops that expose the arm scars. Black synthetic pants with multiple pockets and visible tool loops, most pockets actually empty. Worn Neo-Keds or unlaced boots. Occasionally wears a faded Tessera program hoodie as a deliberate reminder/irony piece. No corporate branding. Accessories are functional: phone tether, worn carabiner, sometimes a grease pencil tucked behind his ear."
   },
-  "image_prompt": "Drift Ibarra, 22-year-old cyberpunk character in the Great Lakes Metropolitan Zone, 2226. Whip-thin 172cm frame with warm golden-brown skin reflecting Latin American, Pacific Islander, and North African heritage. Angular face with pronounced cheekbones, narrow jawline, patchy facial hair, dark circles under eyes with hexagonal-grid augmented irises glowing pale gold. Color-shifting amber and crimson geneware hair, medium length and tousled. Wearing oversized black utilitarian hoodie over worn mesh tank top exposing faint chemical burn marks on left forearm and scar tissue on right hand knuckles. Black pockets-heavy synthetic pants, unlaced worn boots. Nervous restless posture, fingers tapping. Low neon lighting casting cool shadows across face, cyberpunk indoor setting with visible tech overlay. Mood: edgy, sleep-deprived, self-aware. --ar 2:3 --v 6",
+  "image_prompt": "Drift Huitzil, 22-year-old neo-noir netrunner in the GLMZ 2226, medium build 172cm tall, wiry frame. Warm medium-brown skin with golden undertones reflecting South Asian and Indigenous American heritage blend, angular face with pronounced cheekbones and East Asian-influenced eye shape. Color-shifting geneware hair in amber and crimson cycles, medium length and deliberately tousled. Eyes display hexagonal grid pattern in pale gold (cosmetic augmentation). Patchy facial hair, sleep-shifted dark circles. Worn oversized hoodie over mesh tank top revealing minor chemical burn scars on left forearm. Black utilitarian synthetic pants with multiple pockets, unlaced boots. Tapping fingers nervously, perpetual low-level motion. Dark moody interior setting with neon accents and scattered tech equipment. Neo-noir urban aesthetic, atmospheric lighting with blue-purple glow. Character exudes restless energy and deliberate carelessness. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 62.0,
-    "Pacific Islander": 19.9,
-    "North African": 11.3,
-    "Sub-Saharan African": 3.4,
-    "Northern European": 3.4
+    "South Asian": 42.3,
+    "Indigenous American": 28.1,
+    "East Asian": 16.6,
+    "Hispanic/Latin American": 11,
+    "Sub-Saharan African": 2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 42.3
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 23.5,
+        "Aymara": 4.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.1
+      },
+      "Korean": {
+        "Korean": 2.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 3.2,
+        "Colombian": 3.2
+      },
+      "Caribbean": {
+        "Cuban": 1.6
+      },
+      "Mexican": {
+        "Mexican": 3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 1.6,
+        "Liberian": 0.4
+      }
+    }
+  }
 }

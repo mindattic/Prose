@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67c7797ab53b3d8af9cf0f9",
   "type": "character",
-  "name": "Tendai Bangura",
+  "name": "Aditya Sengupta",
   "aliases": [
     "Fee",
     "The Seam Doc"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "The Narrows — Blackpipe Corridor, Container Row 7, near Fullerton and Damen",
-  "description": "Ofeibea is a broad-shouldered woman with close-cropped silver-threaded locs and deep brown skin mapped with old surgical scars on both forearms — the kind you get from learning on the job rather than a simulator. Her left eye is a pale surgical prosthetic, off-brand Helix issue, that sometimes lags a half-second behind her right when she blinks. She wears a permanently stained canvas apron over layered thermal underlayers, and her hands are always immaculately clean no matter what the rest of her looks like. She speaks with a blunt, exhausted authority that makes people feel safe and slightly afraid at the same time.\n\nShe ran a legitimate trauma practice at Aurochs Medical Complex for eleven years before her license was pulled in a billing dispute that she insists — credibly — was a setup by a Helix Biosystems administrator she refused to bribe. Now she stitches up stabbing victims, sets broken bones, and removes black-market cyberware for whoever can pay in Quanta or barter. She has a fierce, almost maternal protectiveness over her regulars, and a cold professionalism toward everyone else. She prays daily to a small E.L.F. she calls Catgut that has allegedly inhabited her surgical lamp for six years.",
+  "description": "Aditya Sengupta is a broad-shouldered woman with close-cropped silver-threaded locs and deep brown skin mapped with old surgical scars on both forearms — the kind you get from learning on the job rather than a simulator. Her left eye is a pale surgical prosthetic, off-brand Helix issue, that sometimes lags a half-second behind her right when she blinks. She wears a permanently stained canvas apron over layered thermal underlayers, and her hands are always immaculately clean no matter what the rest of her looks like. She speaks with a blunt, exhausted authority that makes people feel safe and slightly afraid at the same time.\n\nShe ran a legitimate trauma practice at Aurochs Medical Complex for eleven years before her license was pulled in a billing dispute that she insists — credibly — was a setup by a Helix Biosystems administrator she refused to bribe. Now she stitches up stabbing victims, sets broken bones, and removes black-market cyberware for whoever can pay in Quanta or barter. She has a fierce, almost maternal protectiveness over her regulars, and a cold professionalism toward everyone else. She prays daily to a small E.L.F. she calls Catgut that has allegedly inhabited her surgical lamp for six years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -176,7 +176,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,31 +239,16 @@
     "Blackpipe Corridor",
     "Helix Biosystems",
     "The Narrows Compact",
+    "GLMZ",
     "Stratum",
     "Silver",
-    "Palette",
     "The Pure Hand",
     "The Pale Mile",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Crucible TR-7 'Triage'",
-    "Fanta Hedlund-Diarra",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nneka Lindqvist-Okafor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "The Burden Clause",
-    "The Narrows",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy"
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (55.6%) with significant East Asian (20.1%), Hispanic/Latin American (13.2%), and Eastern European (11.1%) ancestry. The genetic mix creates a striking phenotype: deep brown skin with warm undertones characteristic of Sub-Saharan African heritage, with subtle eye shape and cheekbone structure influenced by East Asian ancestry, and fine facial proportions suggesting Latin American and Eastern European contributions.",
+    "heritage": "Predominantly South Asian (67.7%) with significant Northern European (11.5%), Indigenous American (8.4%), Sub-Saharan African (8.4%), and Hispanic/Latin American (4.0%) ancestry. The genetic blend creates a striking, complex phenotype: warm deep brown skin with golden undertones characteristic of South Asian heritage, subtly brightened by Northern European ancestry contributions, with facial structure shaped by Indigenous American bone prominence and Sub-Saharan African features, refined by Latin American proportional influences. The result is a distinctive face that reads as globally mixed, immediately marking her as product of the Ubiquitous Diaspora.",
     "height_cm": 174,
     "weight_kg": 78,
     "build": "Broad-shouldered and thick through the torso, muscular without being athletic — the build of someone who stands for twelve hours at a time and moves with deliberate economy. Her frame carries the weight of two decades of physical labor.",
@@ -271,8 +256,8 @@
     "hair_style": "Close-cropped locs, tightly maintained, approximately 5-7cm length",
     "hair_length": "Short",
     "eye_color": "Right eye: deep brown. Left eye: pale surgical prosthetic with faint Helix Biosystems branding visible at the iris edge, occasionally catching light with a subtle lag",
-    "skin_tone": "Deep warm brown with rich undertones and subtle golden undertones from East Asian ancestry, sun-weathered around the eyes and neck",
-    "complexion": "Strong facial structure with high, prominent cheekbones shaped by the East Asian component of her ancestry, broad nose characteristic of Sub-Saharan African heritage. Skin is weathered but meticulously maintained. Fine creases around the eyes and mouth from exhaustion and concentration. No makeup. Expression defaults to attentive and slightly stern. Facial planes show the angular precision of mixed heritage bone structure.",
+    "skin_tone": "Warm deep brown with rich golden undertones, sun-weathered around the eyes and neck from decades of focused work, complexion deepened by strong South Asian and Sub-Saharan African heritage with subtle warm highlights from Northern European ancestry",
+    "complexion": "Strong, angular facial structure with defined cheekbones, prominent nose bridge, and broad nose reflecting the diverse ancestry blend — South Asian prominence married to Indigenous American angularity and Sub-Saharan African fullness. Facial planes show precise geometric quality. Skin is weathered but meticulously maintained. Fine creases around the eyes and mouth from exhaustion and concentration. No makeup. Expression defaults to attentive and slightly stern.",
     "distinguishing_marks": [
       "Bilateral surgical scarring on both forearms — dense, pale, crisscrossing patterns from the wrist to mid-forearm, evidence of repeated subcutaneous work and self-teaching",
       "Thin white scar running from left temple to cheekbone, approximately 4cm, barely visible unless light catches it",
@@ -282,15 +267,59 @@
     "posture_movement": "Stands with weight distributed evenly, shoulders slightly forward from years hunched over surgical tables. Moves with controlled precision — no wasted motion. Hands are steady and deliberate. When focusing, her left eye occasionally halts a fraction of a second behind her right, a tell she's learned to live with. Overall bearing conveys exhausted authority.",
     "clothing_style": "Permanently stained canvas surgical apron (originally grey, now mottled with old bloodstains and disinfectant bleaching) worn over layered thermal underlayers in dark greys and blacks. Beneath: practical cargo pants with reinforced pockets, black polymer boots with non-slip soles. No jewelry except a worn metal ring on her right ring finger — possibly a wedding band, worn smooth. Clothing is Tier 4 practical — function over aesthetics, maintained but not pristine. The apron is the only distinctive element, marking her role immediately."
   },
-  "image_prompt": "Tendai Bangura, a 174cm surgical engineer with deep warm brown skin bearing the mixed heritage of Sub-Saharan African, East Asian, and Eastern European ancestry. Close-cropped silver-threaded locs frame her sharp, high-cheekboned face. Her right eye is deep brown; her left is a pale surgical prosthetic with faint Helix Biosystems branding that catches light with subtle lag. Bilateral pale surgical scars crisscross both forearms. She wears a permanently stained grey canvas surgical apron over dark thermal layers, cargo pants, and black polymer boots. Her hands are obsessively clean, showing faint subdermal haptic feedback interface patterning. Posture is shoulders-forward, weight evenly distributed, bearing exhausted authority. Standing in a dimly-lit surgical workspace, neon blue and violet ambient lighting reflecting off her prosthetic eye. Cyberpunk 2220s aesthetic, realistic portraiture, weathered but commanding presence. --ar 2:3 --v 6",
+  "image_prompt": "Aditya Sengupta, 174cm tall biotech street surgeon with warm deep brown skin and golden undertones reflecting South Asian, Northern European, Indigenous American, Sub-Saharan African, and Latin American heritage. Deep brown right eye, surgical prosthetic left eye with pale luminescence. Short tight locs with silver threading, defined angular cheekbones, prominent nose bridge. Dense pale surgical scars crisscrossing both forearms, thin white scar from left temple to cheekbone. Worn grey canvas surgical apron stained with old blood and disinfectant, dark thermal underlayers, reinforced cargo pants, black polymer boots. Subdermal haptic interface patterns visible on back of hands under light. Standing with controlled posture in dimly-lit underground clinic, shoulders slightly forward, hands steady and deliberate. Exhausted authority, stern focused expression. GLMZ, neon accent lighting catching prosthetic eye, atmospheric surgical setting, photorealistic, gritty and weathered aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 55.6,
-    "East Asian": 20.1,
-    "Hispanic/Latin American": 13.2,
-    "Eastern European": 11.1
+    "South Asian": 67.7,
+    "Northern European": 11.5,
+    "Indigenous American": 8.4,
+    "Sub-Saharan African": 8.4,
+    "Hispanic/Latin American": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 13.8
+      },
+      "Pakistani": {
+        "Sindhi": 18.5,
+        "Punjabi Pakistani": 35.4
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 5.6,
+        "Scottish": 5.9
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 7.7,
+        "Nahua": 0.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 3.5
+      },
+      "East African": {
+        "Kenyan": 1.7
+      },
+      "Southern African": {
+        "South African": 3.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 1,
+        "Salvadoran": 0.1
+      },
+      "Mexican": {
+        "Mexican": 2.9
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f97ef1b74797f050bdc4f1",
   "type": "character",
-  "name": "Adaeze Bergqvist-Tamale-Szabó",
+  "name": "Ananya Bautista-Kulkarni-Traoré",
   "aliases": [
     "Patchwork",
     "Brother Patch"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Drifts between Irkalla and Blackpipe Corridor; sleeps at the Conduit House monk collective, near Ashland and Division",
-  "description": "Thibault is lanky and perpetually underfed-looking, with the kind of restless energy that makes him seem taller than he is. His heritage shows in the warm amber undertone of his skin and the tight curl of his close-cropped hair, and he has spent his modest earnings on a single cosmetic mod: bioluminescent patches along his collarbones and the backs of his hands that pulse with slow blue-gold light, patterned like circuit traces. He says they are his vows made visible. His robes are actually a patchwork of reclaimed materials — a Tessera maintenance jacket, thermal underlayers from a surplus stall, a sash of hand-embroidered data symbols — and he carries a battered canvas bag full of cracked screens and salvaged drives that he uses for his readings.\n\nHe became a circuit monk at nineteen after a near-death experience during a transit system failure left him trapped in a stalled Ferrogate car for eleven hours, during which he claims the car's E.L.F. spoke to him continuously. He is earnest to the point of vulnerability, prone to enthusiasms he cannot always sustain, and genuinely delighted by complexity. He performs data divination by reading the corruption patterns in old storage media — finding, he says, the shape of probable futures in the way data degrades. He is wrong often enough to be humble about it and right often enough to have regulars.",
+  "description": "Ananya Bautista-Kulkarni-Traoré is lanky and perpetually underfed-looking, with the kind of restless energy that makes him seem taller than he is. His heritage shows in the warm amber undertone of his skin and the tight curl of his close-cropped hair, and he has spent his modest earnings on a single cosmetic mod: bioluminescent patches along his collarbones and the backs of his hands that pulse with slow blue-gold light, patterned like circuit traces. He says they are his vows made visible. His robes are actually a patchwork of reclaimed materials — a Tessera maintenance jacket, thermal underlayers from a surplus stall, a sash of hand-embroidered data symbols — and he carries a battered canvas bag full of cracked screens and salvaged drives that he uses for his readings.\n\nHe became a circuit monk at nineteen after a near-death experience during a transit system failure left him trapped in a stalled Ferrogate car for eleven hours, during which he claims the car's E.L.F. spoke to him continuously. He is earnest to the point of vulnerability, prone to enthusiasms he cannot always sustain, and genuinely delighted by complexity. He performs data divination by reading the corruption patterns in old storage media — finding, he says, the shape of probable futures in the way data degrades. He is wrong often enough to be humble about it and right often enough to have regulars.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -177,7 +177,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Drifts between Irkalla and Blackpipe Corridor; sleeps at the Conduit House monk collective",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -195,26 +195,16 @@
     "Ferrogate Transit",
     "The Heritage Vault",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "GLMZ",
     "Tessera Corponation",
+    "Circuit",
     "Irkalla",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand",
-    "Palette",
-    "Gold",
-    "Altan Salazar-Quansah",
-    "Emeka Johansson-Orozco",
-    "Kenji Guerrero-Osei-Mensah",
-    "Narrowcast",
-    "Obafemi Szczypiński-Lautoa",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Sustrel",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Yannick Tofauti-Szarvásy"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-Asian-African with Eastern European admixture; Southeast Asian, Sub-Saharan African, and Eastern European ancestry form the dominant genetic markers, with secondary contributions from East Asian and South Asian lineages, creating a complex phenotype with blended facial structure and skin tone",
+    "heritage": "Complex multiethnic phenotype dominated by Hispanic/Latin American (41.1%) and South Asian (31.8%) ancestry, with significant Sub-Saharan African (14.3%), Southeast Asian (8.6%), and Indigenous American (4.2%) contributions. Facial structure blends South Asian bone prominence with West African depth, Latin American warmth, and Indigenous American undertones. High cheekbones and refined nose bridge reflect South Asian heritage; expressive eye set and subtle epicanthic fold suggest Southeast Asian admixture; warm golden skin undertones bridge the entire genetic spectrum.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Lanky and lean with the stretched look of someone who moves constantly and eats irregularly; long-limbed, narrow-shouldered, minimal body fat",
@@ -222,8 +212,8 @@
     "hair_style": "Close-cropped, neatly maintained despite poverty",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm ochre-amber undertone with subtle bronze and gold reflectivity; medium-dark complexion bridging Southeast Asian and Sub-Saharan African phenotypes",
-    "complexion": "Angular facial structure with moderate-to-high cheekbones reflecting East Asian and Southeast Asian ancestry; expressive deep-set eyes with slight epicanthic fold; refined nose bridge; skin is clear but shows the pallor of someone who spends time indoors reading corrupted media; no facial hair; subtle warm undertones visible in natural light",
+    "skin_tone": "Warm caramel-bronze complexion with golden undertones; medium-dark depth reflecting balanced South Asian, Hispanic/Latin, and Sub-Saharan African ancestry, brightened by Southeast Asian luminosity and Indigenous American warmth",
+    "complexion": "Angular facial structure with high, prominent cheekbones reflecting South Asian and West African ancestry; expressive deep-set eyes with subtle epicanthic fold; straight refined nose bridge with slight nostril flare; clear skin with warm golden undertones creating natural luminosity that amplifies bioluminescent augmentations; no facial hair",
     "distinguishing_marks": [
       "Bioluminescent patches along both collarbones in circuit-trace patterns, glowing slow blue-gold",
       "Bioluminescent patches on the backs of both hands in matching circuit-trace patterns, visible when hands are exposed",
@@ -233,17 +223,52 @@
     "posture_movement": "Restless and fidgety at rest, constantly adjusting his patchwork robes or touching the worn canvas bag; walks with a purposeful lope, slightly uneven gait as if his mind is always ahead of his body; hands gesture frequently when speaking, and his bioluminescent patches brighten with animated discussion; eyes have a distant, inward quality when he's concentrating on readings",
     "clothing_style": "Tier 4 utilitarian ascetic — a Tessera maintenance jacket (faded grey, patched at elbows), thermal underlayers visible at the neckline and wrists, a hand-embroidered sash of data symbols wrapped around his waist (blues and golds matching his bioluminescence), worn cargo pants with multiple pockets, soft-soled slip-on shoes. Everything is clean but worn. He carries a battered canvas messenger bag stuffed with cracked screens, salvaged drives, and data readers, and a small cloth pouch containing divination materials."
   },
-  "image_prompt": "Tall 183cm lanky man with warm ochre-bronze medium-dark skin tone, angular face with moderate cheekbones and deep-set dark eyes, close-cropped tightly curled black hair, no facial hair. Cyberpunk 2226. Wearing faded grey Tessera maintenance jacket with elbow patches, visible thermal underlayer, hand-embroidered blue-gold data symbol sash, worn cargo pants, soft slip-ons. Bioluminescent circuit-trace patterns glowing slow blue-gold across both collarbones and hand backs, matching the blue-gold embroidery. Subtle raised scar visible at base of skull behind right ear with faint metallic threading. Restless posture, hands gesturing expressively, patches brightening with concentration. Carrying battered canvas messenger bag stuffed with salvaged tech. Indoors in dim lighting with warm ambient glow that highlights the bioluminescence and bronze skin undertones. Southeast Asian-African-Eastern European phenotype blend. Cyberpunk aesthetic, poor maintenance worker, tech-literate, introspective expression --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, androgynous figure with warm caramel-bronze skin, high sharp cheekbones, deep-set dark brown eyes with subtle epicanthic fold, black tightly curled close-cropped hair. Tall lean build (183cm), restless posture. Wearing faded grey Tessera maintenance jacket with elbow patches, visible thermal layers, hand-embroidered data-symbol sash in blues and golds, worn cargo pants. Bioluminescent circuit-trace patterns glow soft blue-gold across collarbones and backs of hands, pulsing with neural activity. Small surgical scar visible at base of skull behind right ear. Carrying battered canvas messenger bag bulging with salvaged tech. Indoor neon-lit setting, warm practical lighting highlighting the bioluminescent augmentations and golden skin undertones. Fidgety, inward-focused expression suggesting active neural engagement. Neo-noir ascetic hacker aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 30.1,
-    "Sub-Saharan African": 23.0,
-    "Eastern European": 22.4,
-    "East Asian": 15.2,
-    "South Asian": 6.9,
-    "Hispanic/Latin American": 2.4
+    "Hispanic/Latin American": 41.1,
+    "South Asian": 31.8,
+    "Sub-Saharan African": 14.3,
+    "Southeast Asian": 8.6,
+    "Indigenous American": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 41.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 31.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 3,
+        "Somali": 11.3
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 7.6
+      },
+      "Filipino": {
+        "Bicolano": 0.7,
+        "Cebuano": 0.3
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 2.2,
+        "Ho-Chunk": 1.4
+      },
+      "Mesoamerican": {
+        "Zapotec": 0.6
+      }
+    }
+  }
 }

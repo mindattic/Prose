@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c4718691cc7692088b6e1a",
   "type": "character",
-  "name": "Wren Villalobos",
+  "name": "Wren Subramaniam",
   "aliases": [
     "Bless",
     "The Soap Saint"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, runs Suds & Sanctity laundromat on Corvin Passage, near Pulaski and Chicago Ave",
-  "description": "Blessing is a broad-shouldered woman with deep umber skin and silver-streaked hair she keeps in elaborate Ghanaian-style wraps that she sews herself from scraps brought in by customers. Her hands are permanently reddened and slightly swollen from decades of hot water and industrial detergent, but they move with practiced grace — folding a shirt, blessing a stranger's head, passing a bowl of pepper soup, all with the same unhurried authority. She has no cosmetic mods, but her eyes are warm amber with natural flecks of gold that catch the laundromat's overhead strips and make people feel seen. A small printed icon of the Soap E.L.F. — locally called Mama Lye — is mounted above every machine, garlanded with dryer-warm fabric strips and small tokens of phosphorescent soap left as offerings.\n\nBlessing has run Suds & Sanctity for twenty-three years, outlasting three Tessera rezoning attempts and one attempted arson. She knows everyone's laundry secrets — the bloodstained shirts, the infant onesies that appear before any pregnancy announcement, the uniforms of three competing corponation contractors she washes without comment. She speaks Twi, Portuguese, and a rough pidgin Akan-Slavic that she invented to communicate with the neighborhood's Hamtramck old-timers. Her warmth is genuine but her memory is long, and the occasional word she drops in the right ear has redirected more neighborhood trouble than any security node.",
+  "description": "Wren Subramaniam is a broad-shouldered woman with deep umber skin and silver-streaked hair she keeps in elaborate Ghanaian-style wraps that she sews herself from scraps brought in by customers. Her hands are permanently reddened and slightly swollen from decades of hot water and industrial detergent, but they move with practiced grace — folding a shirt, blessing a stranger's head, passing a bowl of pepper soup, all with the same unhurried authority. She has no cosmetic mods, but her eyes are warm amber with natural flecks of gold that catch the laundromat's overhead strips and make people feel seen. A small printed icon of the Soap E.L.F. — locally called Mama Lye — is mounted above every machine, garlanded with dryer-warm fabric strips and small tokens of phosphorescent soap left as offerings.\n\nWren Subramaniam has run Suds & Sanctity for twenty-three years, outlasting three Tessera rezoning attempts and one attempted arson. She knows everyone's laundry secrets — the bloodstained shirts, the infant onesies that appear before any pregnancy announcement, the uniforms of three competing corponation contractors she washes without comment. She speaks Twi, Portuguese, and a rough pidgin Akan-Slavic that she invented to communicate with the neighborhood's Hamtramck old-timers. Her warmth is genuine but her memory is long, and the occasional word she drops in the right ear has redirected more neighborhood trouble than any security node.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -162,7 +162,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -182,32 +182,14 @@
     "Hamtramck Enclave",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "Tessera Corponation",
+    "Chicago",
     "Silver",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Gold",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus ST-4 'Verdict'",
-    "Axiom Hovercraft (Lake Patrol)",
-    "Breck Tannen",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Emeka Johansson-Orozco",
-    "Gravimetric Collapse Charge GCC-9",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "MERIDIAN",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Tessera Adaptive Platform TAP-5 'Chameleon'",
-    "The Bleach Boys",
-    "The Burden Clause",
-    "The Counter",
-    "The Ledger",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant East Asian, Middle Eastern, and South Asian admixture, with smaller Northern European ancestry. A complex blend of Mediterranean, Levantine, Indo-Aryan, and East Asian features creating a uniquely cosmopolitan phenotype.",
+    "heritage": "Rich multihemispheric blend with South Asian ancestry (36.5%) as the primary genetic foundation, creating Indo-Aryan structural features enhanced by substantial Sub-Saharan African (21.6%) and Hispanic/Latin American (22.3%) ancestry. Northern European (10.9%), North African (5.5%), and East Asian (3.2%) elements create subtle refinements in facial geometry and feature proportions. The synthesis produces a warm bronze complexion with golden undertones, prominent cheekbones with both South Asian definition and West African width, and a dignified nose carrying North African character. Her face reflects a truly cosmopolitan genetic heritage—phenotypically complex and belonging simultaneously to multiple continents.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and solid, carrying weight with the grounded stability of someone who has spent decades on their feet. Muscular forearms and shoulders from repetitive lifting and wringing; slight softness at the midsection that speaks to comfort with her own body.",
@@ -215,8 +197,8 @@
     "hair_style": "Elaborate Ghanaian-style wraps (adire cloth and hand-sewn fabric scraps) changed three to four times weekly; intricate patterns and color combinations reflect both tradition and resourcefulness",
     "hair_length": "Worn wrapped; natural hair length underneath estimated medium to long",
     "eye_color": "Warm amber with natural golden flecks",
-    "skin_tone": "Warm olive-bronze with golden undertones—a blend of Mediterranean and East Asian warmth with subtle Levantine depth. Sun-exposed areas slightly darker from years of standing near laundromat windows.",
-    "complexion": "Face lined with expression—smile lines around eyes and mouth are prominent. Cheekbones suggest East Asian heritage blended with broader Mediterranean structure; nose carries Middle Eastern and South Asian ancestry with warm, dignified proportions. Skin is clear but weathered from humidity exposure. No makeup worn.",
+    "skin_tone": "Rich warm bronze with golden undertones—a harmonious blend of South Asian base warmth, Sub-Saharan African depth, Hispanic/Latin American richness, and subtle North African Mediterranean character. Sun-exposed areas noticeably darker from 23 years of standing near laundromat windows.",
+    "complexion": "Face lined with expression—smile lines around eyes and mouth are prominent. Cheekbones high and defined with the combined width of Sub-Saharan African and Latin American ancestry refined by South Asian structure; nose strong and dignified with warm proportions carrying South Asian and North African character. Skin is clear but weathered from humidity exposure and years of chemical contact. No makeup worn.",
     "distinguishing_marks": [
       "Chronic redness and slight swelling across both hands and forearms from 23 years of hot water and industrial detergent exposure",
       "Small calluses on fingers and palms from repetitive wringing and folding",
@@ -226,16 +208,68 @@
     "posture_movement": "Moves with unhurried authority and practiced grace. Stands with weight evenly distributed, shoulders back but not rigid. Movements economical and purposeful—every gesture serves a function. When folding or working, she enters a near-meditative state. When at rest, she often stands with one hand resting on the counter or against her hip. She makes direct eye contact and holds it without challenge. Her pace is steady; she does not rush.",
     "clothing_style": "Simple, practical, and worn with intention. Typically: a cotton print dress or modest wrap-skirt (often in vibrant Ghanaian-inspired colors or traditional patterns) paired with a linen apron (usually indigo or earth-toned, stained with bleach marks and soap residue from years of use). A light cardigan or shawl draped over her shoulders in cooler months. Comfortable flat shoes or traditional sandals—never heels. A simple beaded bracelet or two on her wrists, often gifts from customers or family. No jewelry beyond these; no corporate logo wear. Her clothing is Tier 4 practical—not fashionable, but clean, mended with visible stitching, and clearly cared for. The overall impression is of someone who dresses for function and modest dignity, not display."
   },
-  "image_prompt": "Wren Villalobos, a 168cm woman with warm olive-bronze skin blending Mediterranean, East Asian, Middle Eastern, and South Asian heritage, standing in a 2226 laundromat with patient dignity. Black hair with 40% natural silver streaking, wrapped in intricate adire cloth in vibrant earth tones. Warm amber eyes with golden flecks, weathered face lined with expression and smile lines. Broad shoulders, solid build, muscular forearms marked with chronic redness from detergent exposure and a pale burn scar on left wrist. Wearing a vibrant Ghanaian-inspired cotton wrap-skirt and indigo linen apron stained with bleach marks, light cardigan draped over shoulders, simple beaded bracelets. Standing with economical grace, hand resting on counter, weight evenly distributed. Soft neon glow from laundromat fluorescents mixing with warm ambient light. Meditative, grounded presence. 2200s cyberpunk aesthetic with zero augmentation, pure natural humanity. --ar 2:3 --v 6",
+  "image_prompt": "Wren Subramaniam, 168cm tall woman with rich warm bronze skin and golden undertones, standing in a 2226 laundromat. Elaborate Ghanaian-style fabric wraps in her black hair with silver streaking. High defined cheekbones reflecting South Asian, Sub-Saharan African, and Latin American heritage. Warm amber eyes with golden flecks. Wearing a vibrant patterned cotton wrap-skirt, indigo linen apron stained with bleach marks, light cardigan over shoulders. Simple beaded bracelets on wrists. Weathered hands with chronic redness from decades of hot water work, small burn scar visible on left wrist. Standing with unhurried authority and practiced grace, weight distributed evenly, hand resting on counter hip. Expression lined with smile creases, no makeup. Soft warm lighting from laundromat windows casting golden glow on her face. GLMZ 2200s aesthetic, lived-in dignity, quiet strength. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 40.5,
-    "East Asian": 18.6,
-    "Middle Eastern": 17.4,
-    "South Asian": 12.8,
-    "Northern European": 10.7
+    "South Asian": 36.5,
+    "Hispanic/Latin American": 22.3,
+    "Sub-Saharan African": 21.6,
+    "Northern European": 10.9,
+    "North African": 5.5,
+    "East Asian": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Malayali": 16.5,
+        "Tamil": 8.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.4,
+        "Tamil Sri Lankan": 5.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 7.6,
+        "Costa Rican": 14.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 13.8,
+        "Ghanaian": 7.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 3.2,
+        "Danish": 2.7
+      },
+      "Germanic": {
+        "Dutch": 2.7,
+        "German": 2.3
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 5.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 1.4
+      },
+      "Chinese": {
+        "Shanghainese": 0.4,
+        "Mandarin Northern": 0.3
+      },
+      "Korean": {
+        "Korean": 1.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5bc738a9e5ec7a2c19ba976",
   "type": "character",
-  "name": "Zen Ionescu",
+  "name": "Zen Truong",
   "aliases": [
     "Patch",
     "The Girl With the Cart"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Shelf, Brightmoor Reclamation, near Ashland and Chicago Ave",
-  "description": "Aïcha is small and fast-moving, with the wiry physicality of someone who has spent years climbing through reclamation sites. Her skin is warm brown with a reddish undertone, her eyes a vivid amber with a starburst pattern that's natural — she's been offered money to sell them twice and refused both times. She has cat ears, small and dark brown, the geneware obviously budget-tier — one of them doesn't track sound as naturally as the other and occasionally flicks at random — but she wears them without apology. Her clothes are layered, practical, and assembled from different sources: a Ferrogate Transit worker vest over a Palladian-logo shirt with the logo melted off, cargo pants with pockets she has modified herself.\n\nAïcha pushes a heavily loaded magnetic-suspension cart through Brightmoor Reclamation's scrap corridors with the territorial confidence of someone who knows every crack in every wall. She's young enough that some people underestimate her and old enough that she's used to it. She has a fast and somewhat overwhelming personality — she talks in compressed bursts, bounces between topics, and has an almost savant-level ability to identify the value and origin of electronic components by sight. She will argue prices with a ferocity completely disproportionate to the amounts involved. She has never been robbed twice by the same person.",
+  "description": "Zen Truong is small and fast-moving, with the wiry physicality of someone who has spent years climbing through reclamation sites. Her skin is warm brown with a reddish undertone, her eyes a vivid amber with a starburst pattern that's natural — she's been offered money to sell them twice and refused both times. She has cat ears, small and dark brown, the geneware obviously budget-tier — one of them doesn't track sound as naturally as the other and occasionally flicks at random — but she wears them without apology. Her clothes are layered, practical, and assembled from different sources: a Ferrogate Transit worker vest over a Palladian-logo shirt with the logo melted off, cargo pants with pockets she has modified herself.\n\nZen Truong pushes a heavily loaded magnetic-suspension cart through Brightmoor Reclamation's scrap corridors with the territorial confidence of someone who knows every crack in every wall. She's young enough that some people underestimate her and old enough that she's used to it. She has a fast and somewhat overwhelming personality — she talks in compressed bursts, bounces between topics, and has an almost savant-level ability to identify the value and origin of electronic components by sight. She will argue prices with a ferocity completely disproportionate to the amounts involved. She has never been robbed twice by the same person.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -162,7 +162,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -182,31 +182,17 @@
     "Palladian Construction",
     "The Shelf",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Pressure Drop",
     "Stratum",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Tin Man",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Chicago",
-    "Auricula Felis Modification",
-    "Bathysphere Networks",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech GripTrue Palmar Adhesion Implant",
-    "Tafara Quiñones-Saarinen",
-    "Tessera Corponation",
-    "The Collective",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Origin",
+    "Cargo Tacos",
+    "Tin Man",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (predominant Slavic ancestry from Romania/Eastern regions) with South Asian and Northern European admixture — resulting in warm, olive-toned complexion with subtle undertones reflecting the genetic blend",
+    "heritage": "Sub-Saharan African (44.1%), Southeast Asian (30.5%), and East Asian (25.4%) ancestry — a rich tricontinent genetic blend resulting in deep warm brown skin with golden undertones, distinctive Southeast Asian facial structure with East Asian eye shape, and the lean athletic frame characteristic of her mixed heritage",
     "height_cm": 157,
     "weight_kg": 48,
     "build": "Wiry and compact, all lean muscle and efficient movement from years of climbing through reclamation sites. No excess — her frame is built for speed and climbing, not strength",
@@ -214,10 +200,10 @@
     "hair_style": "Short, practical cut with asymmetrical undercut on one side; often pulled back with salvaged wire or fabric strips to keep it clear of her face during work",
     "hair_length": "Short",
     "eye_color": "Vivid amber with natural starburst pattern radiating from the pupil — no augmentation, genetically distinctive",
-    "skin_tone": "Warm olive-brown with subtle golden undertones, sun-darkened on forearms and neck from outdoor reclamation work. The warm undertone reflects both Eastern European and South Asian ancestry, creating a unified warm complexion rather than contrasting tones",
-    "complexion": "Sharp, alert features with high cheekbones characteristic of Slavic heritage; minimal grooming — practical rather than aesthetic. Small scars on her knuckles and fingers from handling sharp metal. Her face moves quickly, expressing thoughts before she speaks them. Perpetually wind-blown appearance",
+    "skin_tone": "Deep warm brown with golden undertones, sun-darkened on forearms and neck from outdoor reclamation work. The rich melanin saturation reflects her Sub-Saharan and Southeast Asian ancestry, creating luminous depth in direct light",
+    "complexion": "Angular, alert features with high cheekbones, slightly rounded face structure, and balanced proportions reflecting her tricontinent ancestry; minimal grooming — practical rather than aesthetic. Small scars on her knuckles and fingers from handling sharp metal. Her face moves quickly, expressing thoughts before she speaks them. Perpetually wind-blown appearance",
     "distinguishing_marks": [
-      "Thin scar across her left palm from a sheet-metal edge (3cm, pale white)",
+      "Thin scar across her left palm from a sheet-metal edge (3cm, pale white against deep skin)",
       "Burn marks on her right forearm from contact with a live circuit board (cluster of small circular marks, faded pink)",
       "No tattoos — she considers them permanent and wasteful of credits"
     ],
@@ -225,14 +211,46 @@
     "posture_movement": "Constantly in motion — bouncing weight from foot to foot even when standing still. Moves with economy and speed, able to slip through tight spaces. Her hands gesture rapidly when talking, punctuating compressed bursts of speech. Climbs and balances with cat-like confidence. Eyes dart constantly, cataloguing her surroundings",
     "clothing_style": "Tier 4-5 (working class/sub-grade salvage worker). Layered, patched, and modified: Ferrogate Transit worker vest (high-visibility orange, worn from use) worn over a Palladian-logo shirt with the logo deliberately melted off with a soldering iron. Military-surplus cargo pants with custom-welded pockets and reinforced seams. Worn climbing boots with metal caps. A salvaged leather tool belt. Gloves are fingerless, revealing the grip-pads. No jewelry except a bent aluminum ring she uses as a gripper tool"
   },
-  "image_prompt": "Zen Ionescu, a 157cm wiry East European salvage worker in cyberpunk 2226, olive-brown warm complexion with amber starburst eyes, short asymmetrical black hair with reddish undertones, malfunctioning brown cat-ear geneware. Wearing worn Ferrogate orange high-vis vest over melted-logo shirt, military cargo pants with welded pockets, fingerless gloves revealing subdermal grip-pad scarring. Perpetually wind-blown, sharp alert features, small scars on knuckles. Standing in dynamic climbing pose on derelict industrial metalwork, neon light casting harsh shadows, concentrated focus cataloguing salvage around her. Great Lakes Metropolitan Zone reclamation site backdrop, 2226 tech aesthetic, gritty texture, morning industrial light. --ar 2:3 --v 6",
+  "image_prompt": "Zen Truong, 157cm wiry salvage worker with deep warm brown skin and golden undertones, narrow angular face with high cheekbones and Southeast Asian structure, vivid amber eyes with starburst pattern, short black hair with reddish tones in undercut style. Small malfunctioning dark brown geneware cat ears. Visible scar on left palm, burn marks on right forearm. Wearing worn high-visibility orange Ferrogate vest over melted-logo shirt, military cargo pants, climbing boots with metal caps, fingerless gloves revealing geometric grip-pad scarring. Bent aluminum tool ring. Perpetually alert posture, wind-blown appearance, constantly moving. Standing in neon-lit GLMZ reclamation yard at dusk, surrounded by stacked salvage metal, atmospheric fog and industrial lighting casting shadows across her deep brown skin, GLMZ aesthetic, photorealistic, dramatic lighting, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 83.2,
-    "South Asian": 9.6,
-    "Northern European": 7.2
+    "Sub-Saharan African": 44.1,
+    "Southeast Asian": 30.5,
+    "East Asian": 25.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 28.8
+      },
+      "Southern African": {
+        "Zambian": 1.5,
+        "South African": 1.2
+      },
+      "Central African": {
+        "Cameroonian": 2.8,
+        "Gabonese": 9.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 30.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 5.8,
+        "Hakka": 7.5
+      },
+      "Korean": {
+        "Korean": 9.4
+      },
+      "Japanese": {
+        "Japanese": 2.7
+      }
+    }
+  }
 }

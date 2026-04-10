@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7277e03bfe3a9dd50bf1053",
   "type": "character",
-  "name": "Siddharth Chowdhury",
+  "name": "Kalani Sefanaia",
   "aliases": [
     "Tunde",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin — she operates from a converted barge-office called the Saltbox, moored at Pier 7-C, near Wacker and State",
-  "description": "Yetunde Přibyl-Gasimova is a broad-shouldered woman whose posture conveys the absolute certainty that she will outlast everyone in any given room. Her skin is deep umber and her hair has been geneware-treated to hold a permanent silver-white that she wears pulled tight to her skull — no styling, no vanity, just function. A thin horizontal scar runs beneath her left eye, faded but deliberate. She dresses in water-resistant industrial layers even indoors, always smelling faintly of lake brine and the cedar-smoke incense she burns for the E.L.F. she calls 'the Creditor' — a digital spirit she believes inhabits her accounting tablet and blesses debts that will be repaid.\n\nShe is not a violent woman by preference, but she employs two enforcers precisely so she can remain calm when others are not. Yetunde speaks in measured, affectless sentences and has a habit of writing numbers in a physical ledger with a real ink stylus while people talk to her, which most find deeply unsettling. She genuinely believes she provides a community service — institutional credit is inaccessible to Tier 1 and 2 residents, and she fills that gap. The fact that her interest rates are predatory and her consequences severe is, to her, simply the cost of doing business in a city that offers no alternatives.",
+  "description": "Kalani Sefanaia is a broad-shouldered woman whose posture conveys the absolute certainty that she will outlast everyone in any given room. Her skin is deep umber and her hair has been geneware-treated to hold a permanent silver-white that she wears pulled tight to her skull — no styling, no vanity, just function. A thin horizontal scar runs beneath her left eye, faded but deliberate. She dresses in water-resistant industrial layers even indoors, always smelling faintly of lake brine and the cedar-smoke incense she burns for the E.L.F. she calls 'the Creditor' — a digital spirit she believes inhabits her accounting tablet and blesses debts that will be repaid.\n\nShe is not a violent woman by preference, but she employs two enforcers precisely so she can remain calm when others are not. Yetunde speaks in measured, affectless sentences and has a habit of writing numbers in a physical ledger with a real ink stylus while people talk to her, which most find deeply unsettling. She genuinely believes she provides a community service — institutional credit is inaccessible to Tier 1 and 2 residents, and she fills that gap. The fact that her interest rates are predatory and her consequences severe is, to her, simply the cost of doing business in a city that offers no alternatives.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Brawler": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -198,34 +198,16 @@
   "related_entities": [
     "Gravesend Basin",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Clearpath",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Adaeze Chen-Hawkins",
+    "Clearpath",
     "Silver",
     "Nesting Doll",
-    "Cedar",
-    "Blessing Acheampong-Ferreira",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Ferrogate Transit",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Ihaia Mori-Sefa",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "Tender Collapse",
-    "The Ledger",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Haze Johansson",
+    "Cedar"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "South Asian (30.7%), Sub-Saharan African (25.4%), Central Asian (23.3%), Eastern European (11.0%), North African (4.9%), Northern European (4.7%) — a complex diaspora blend resulting in warm-toned deep brown skin with subtle golden undertones, facial structure reflecting the convergence of South Asian and African ancestry with secondary Eastern European bone structure, and phenotypic features that resist simple categorization",
+    "heritage": "Pacific Islander (52.2%), South Asian (18.6%), Eastern European (9.9%), Sub-Saharan African (9.4%), North African (5.2%), Northern European (4.7%) — a diaspora blend centered in Pacific Islander ancestry with substantial South Asian admixture, resulting in deep warm brown skin with golden undertones, facial structure reflecting the convergence of Pacific Islander and South Asian features with secondary African bone structure, and phenotypic features that resist simple categorization",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial without softness — muscular across the back and upper arms, suggesting decades of physical labor or deliberate conditioning. Her frame conveys functional strength rather than aesthetic bulk.",
@@ -233,8 +215,8 @@
     "hair_style": "Pulled tight to the skull in a severe, functional style — no braids, no ornament, no deviation",
     "hair_length": "Short (approximately 2-3 cm)",
     "eye_color": "Dark brown with faint retinal overlay (subtle amber shimmer visible only in direct light)",
-    "skin_tone": "Deep warm brown — rich umber with golden undertones reflecting the blended heritage, darker in complexion with the warmth characteristic of combined South Asian, Sub-Saharan African, and Central Asian ancestry",
-    "complexion": "Weathered and lined around the eyes with the sun-etched texture of someone who works outdoors; strong cheekbones and defined jawline reflecting the bone structure of her ancestry blend; minimal grooming beyond cleanliness; the faded horizontal scar beneath her left eye is the dominant facial feature — thin, deliberate, and approximately 8 cm in length",
+    "skin_tone": "Deep warm brown — rich umber with golden undertones reflecting Pacific Islander and South Asian ancestry, darker in complexion with the warmth characteristic of combined tropical and subtropical heritage",
+    "complexion": "Weathered and lined around the eyes with the sun-etched texture of someone who works outdoors; strong cheekbones and defined jawline reflecting Pacific Islander and South Asian bone structure; broad nose with subtle flare at the nostrils characteristic of the ancestry blend; minimal grooming beyond cleanliness; the faded horizontal scar beneath her left eye is the dominant facial feature — thin, deliberate, and approximately 8 cm in length",
     "distinguishing_marks": [
       "Thin horizontal scar beneath left eye, faded but deliberate, suggesting either surgical precision or ritualistic intent",
       "Subdermal transaction nodes in both palms visible as faint circular impressions or slight raised areas beneath the skin when her hands are open"
@@ -243,17 +225,82 @@
     "posture_movement": "Sits and stands with absolute postural certainty — shoulders back, spine straight, head level. Moves deliberately and economically, no wasted motion. Maintains direct eye contact. Her hands are steady and deliberate, often occupied with physical ledger-writing. Overall impression of someone who has no doubt she will outlast the room.",
     "clothing_style": "Water-resistant industrial layers worn indoors and outdoors — heavy-duty synthetic fabrics in grays, blacks, and deep blues. Appears to favor cargo vests, reinforced shirts, and water-shedding outer shells consistent with dock work or maritime environments. Tier 3-4 utilitarian aesthetic — function over presentation, but maintained with precision. No logos or branded wear. Always carries a physical ledger and real ink stylus. Faint persistent smell of lake brine and cedar-smoke incense."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Siddharth Chowdhury, a 178cm muscular-framed figure with deep warm brown skin and golden undertones reflecting South Asian, Sub-Saharan African, Central Asian, Eastern European, and North African heritage. Silver-white geneware-modified hair pulled severely tight to the skull, short length. Dark brown eyes with subtle amber retinal shimmer visible in direct lighting. Faint deliberate horizontal scar beneath left eye. Weathered sun-etched complexion with strong cheekbones and defined jawline. Minimal visible cybernetics — barely perceptible subdermal transaction nodes in palms. Wearing water-resistant industrial layers: gray, black, and deep blue heavy-duty synthetic cargo vest over reinforced shirt. Carrying physical ledger and ink stylus. Seated with perfect postural certainty, shoulders back, spine straight, head level. Direct gaze. Lake brine and cedar-smoke atmosphere. Great Lakes harbor setting with moody blue-gray lighting, subtle chrome reflections. Cyberpunk functional aesthetic, no cosmetic augmentation, worn maritime utility aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "A 178cm woman of Pacific Islander, South Asian, and mixed African heritage, deep warm brown skin with golden undertones, silver-white cropped hair pulled tight, dark eyes with subtle amber retinal overlay glint. Weathered sun-etched face with strong cheekbones, defined jawline, broad nose. Faint 8cm horizontal scar beneath left eye. Broad-shouldered muscular build, substantial without softness. Wearing gray and black water-resistant industrial cargo vest and reinforced synthetic shirt, outdoors on a Great Lakes dock at dusk, GLMZ, cool blue-gray lighting reflecting off water, holding a physical leather ledger and ink stylus, posture absolutely certain and deliberate, direct gaze, minimal visible cybernetics, faint smell of lake brine and cedar smoke, functional strength, no wasted motion --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 30.7,
-    "Sub-Saharan African": 25.4,
-    "Central Asian": 23.3,
-    "Eastern European": 11.0,
-    "North African": 4.9,
+    "Pacific Islander": 52.2,
+    "South Asian": 18.6,
+    "Eastern European": 9.9,
+    "Sub-Saharan African": 9.4,
+    "North African": 5.2,
     "Northern European": 4.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Micronesian": {
+        "Palauan": 33.2
+      },
+      "Melanesian": {
+        "Fijian": 4.9
+      },
+      "Polynesian": {
+        "Samoan": 14.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 1.8
+      },
+      "Sri Lankan": {
+        "Sinhalese": 4.4
+      },
+      "Pakistani": {
+        "Sindhi": 9.9,
+        "Punjabi Pakistani": 2.5
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 3.3,
+        "Slovenian": 0.8
+      },
+      "Slavic West": {
+        "Polish": 3.9,
+        "Czech": 1.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 3.1
+      },
+      "West African": {
+        "Nigerian": 4
+      },
+      "Central African": {
+        "Congolese": 2,
+        "Angolan": 0.3
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Moroccan": 2.7,
+        "Tunisian": 2.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 1.8
+      },
+      "British Isles": {
+        "Irish": 0.5,
+        "Scottish": 0.4
+      },
+      "Germanic": {
+        "Austrian": 2
+      }
+    }
+  }
 }

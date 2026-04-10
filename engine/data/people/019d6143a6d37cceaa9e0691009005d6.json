@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d37cceaa9e0691009005d6",
   "type": "character",
-  "name": "Arden Fredriksen",
+  "name": "Arden Citlali",
   "aliases": [
     "Soli",
     "Pins"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "The Alban Souk, Calumet Rise, near Western and Division",
-  "description": "Solina is a small, bright-eyed young woman with color-changing hair — a geneware mod she got as a gift from her older sister that cycles through her moods in deep jewel tones, though she has learned to override it manually for professional situations and keeps it a steady ochre during business hours. She has dark skin and the compact, efficient movements of someone who grew up in a small space, and her personal style is a rotating argument: today structured and architectural, tomorrow soft and layered, always intentional. Her stall is hung with pieces she has made, altered, sourced, and curated — everything labeled with a hand-written tag in her small careful script explaining its origin, its material, and what she thinks it's for.\n\nSolina is ambitious in the specific way of someone young enough to still believe in the direct line between work and outcome. She is making things. She believes in what she is making. She has not yet been defeated by the market in any permanent way, and this gives her an energy that is simultaneously infectious and occasionally exhausting to people who have been at it longer. She is genuinely talented — the pieces she designs herself have started drawing buyers from Beverlynn Heights who come slumming in Calumet Rise specifically for her work — and she is beginning to understand, with some anxiety, what that attention might mean.",
+  "description": "Arden Citlali is a small, bright-eyed young woman with color-changing hair — a geneware mod she got as a gift from her older sister that cycles through her moods in deep jewel tones, though she has learned to override it manually for professional situations and keeps it a steady ochre during business hours. She has dark skin and the compact, efficient movements of someone who grew up in a small space, and her personal style is a rotating argument: today structured and architectural, tomorrow soft and layered, always intentional. Her stall is hung with pieces she has made, altered, sourced, and curated — everything labeled with a hand-written tag in her small careful script explaining its origin, its material, and what she thinks it's for.\n\nArden Citlali is ambitious in the specific way of someone young enough to still believe in the direct line between work and outcome. She is making things. She believes in what she is making. She has not yet been defeated by the market in any permanent way, and this gives her an energy that is simultaneously infectious and occasionally exhausting to people who have been at it longer. She is genuinely talented — the pieces she designs herself have started drawing buyers from Beverlynn Heights who come slumming in Calumet Rise specifically for her work — and she is beginning to understand, with some anxiety, what that attention might mean.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Generous Fool": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,30 +231,16 @@
     "The Alban Souk",
     "Calumet Rise",
     "The Meridian Compact for Economic Justice",
+    "The Marrow Market",
     "The Gradient Compact",
-    "VitaCore FlowGuard Hemodynamic Regulator",
     "Stratum",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Holmberg-Dembele",
-    "Alper Lebedev-Tutu",
-    "Dzemal Acholonu-Patagiri",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Idris Forsberg-Quaye",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "Tessera Corponation",
-    "Tessera Industries Reality Anchor Projector RAP-1",
-    "The Bazaar",
-    "The Collective",
-    "The Compact",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Thermobaric Pressure Cestus TPC-2 'Smother'"
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Origin",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Northern European (55.4%) with substantial Sub-Saharan African (17.5%), South Asian (10.4%), Hispanic/Latin American (9.1%), and East Asian (7.6%) ancestry. This creates a complex phenotype: medium-warm brown skin with golden and olive undertones from the South Asian and Hispanic components blending with the deeper African heritage. Features show Northern European bone structure softened by African and South Asian characteristics.",
+    "heritage": "Indigenous American (40.9%) with significant Southeast Asian (18.6%), Sub-Saharan African (15.5%), East Asian (13.5%), and Northern European (11.5%) ancestry. This creates a striking phenotype where warm medium-brown skin with golden undertones harmonizes Southeast Asian and Indigenous American components with Sub-Saharan African richness and Northern European refinement. Facial features reflect this complex mix: moderate cheekbone prominence with Southeast Asian sharpness, refined nose bridge with African structure, eye shape carrying Southeast Asian influence, bone architecture balancing Indigenous American strength with Northern European delicacy.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Compact and efficient, lean-muscled through shoulders and forearms from years of handwork. No wasted space — the build of someone who grew up moving deliberately in small quarters.",
@@ -262,8 +248,8 @@
     "hair_style": "Worn in a loose, shoulder-length weave with textured crown; often pinned back during work with fabric scraps or salvaged clips; side-swept fringe",
     "hair_length": "Medium",
     "eye_color": "Deep brown, alert and observant",
-    "skin_tone": "Medium-warm brown with golden and subtle olive undertones from the blended ancestry — richer than typical Northern European baseline but warmer than purely Sub-Saharan African heritage, suggesting the harmonious mixing of African, South Asian, and Latino genetic components",
-    "complexion": "Clear skin with minimal scarring; well-maintained despite long hours. Facial features show a balanced blend: wider cheekbones with subtle prominence from African and South Asian ancestry, refined nose bridge from Northern European heritage. Hands show minor chemical stains from dye work and thread handling. Fingertips on dominant hand slightly calloused from needlework.",
+    "skin_tone": "Warm medium brown with golden undertones and subtle olive notes—a harmonious blend reflecting Indigenous American, Southeast Asian, and Sub-Saharan African heritage, elevated by Northern European heritage's influence on fine skin texture and luminosity",
+    "complexion": "Clear skin with minimal scarring; well-maintained despite long hours. Facial features show balanced ancestry: moderate cheekbone prominence with Southeast Asian sharpness and Indigenous American structure, refined nose bridge with African influence, balanced brow ridge. Hands show minor chemical stains from dye work and thread handling. Fingertips on dominant hand slightly calloused from needlework.",
     "distinguishing_marks": [
       "Faint linear scarring across both inner wrists (approximately 3cm each) — childhood burns from a clothing press, now pale and barely visible",
       "Micro-abrasion marks on fingertips of both hands from constant textile handling and the micro-filament enhancement mod",
@@ -273,16 +259,62 @@
     "posture_movement": "Economical and precise movement — minimal wasted gesture. Stands with weight slightly forward, hands active and expressive when speaking about textiles. When working, enters a state of intense focus with reduced peripheral awareness. Walks quickly with purpose, often gesturing while thinking.",
     "clothing_style": "Rotating personal style — intentional and experimental. Today: structured oversized linen jacket (natural undyed, vintage early-2100s) layered over a fitted turtleneck in deep ochre (her own design, geneware-adaptive weave). High-waisted cargo pants in neutral grey canvas (pockets clearly important) with rolled cuffs. Feet bare or in minimal sandals even during cooler months. Accessories: hand-braided cord belt, several textile scraps clipped to sleeve cuffs as 'inspiration swatches,' mismatched silver rings on most fingers. Tier 3-4 aesthetic — quality materials and skilled construction, but assembled from secondhand, salvaged, and self-made pieces. No corpo branding. Everything carries visible seams, alterations, or hand-written labels as design statements."
   },
-  "image_prompt": "Arden Fredriksen, 158cm petite figure with medium-warm golden-brown skin and balanced facial features blending Northern European, Sub-Saharan African, and South Asian heritage. Shoulder-length naturally dark brown hair with geneware cycles visible at scalp, currently overridden to steady ochre tone, worn in loose textured weave with side-swept fringe. Deep brown observant eyes. Wearing oversized natural linen vintage jacket over fitted deep ochre turtleneck, high-waisted grey canvas cargo pants with rolled cuffs, barefoot. Hand-braided cord belt, mismatched silver rings, textile scraps clipped to sleeve as inspiration swatches. Faint pale scars on inner wrists. Hands show minor dye stains and micro-abrasion marks from textile work. Standing with weight forward, economical posture, hands expressive. Cyberpunk 2226 GLMZ setting, warm studio lighting on workspace, fabric and thread visible in background, subtle bioluminescent geometric patterns faintly glowing on collarbones, tier 3-4 aesthetic, artisanal salvage aesthetic, no corpo chrome. Detailed character portrait --ar 2:3 --v 6",
+  "image_prompt": "Arden Citlali, 158cm tall, compact lean frame, warm medium-brown skin with golden undertones and olive notes from Indigenous American, Southeast Asian, Sub-Saharan African, and Northern European blend. Deep brown alert eyes, shoulder-length dark brown weave with textured crown pinned back with fabric scraps, side-swept fringe. Currently wearing oversized natural linen jacket layered over fitted deep ochre turtleneck, high-waisted grey canvas cargo pants with rolled cuffs, barefoot, hand-braided cord belt, mismatched silver rings, textile swatches clipped to sleeves. Hands show minor chemical stains and calloused fingertips from textile work. Precise economical posture, weight slightly forward, hands active and expressive. Faint wrist scarring visible. GLMZ GLMZ setting, warm studio lighting highlighting skin tone and layered textiles, artistic fiber artist aesthetic, focused and deliberate energy, no corpo branding, salvaged and self-made design statements visible on clothing --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 55.4,
-    "Sub-Saharan African": 17.5,
-    "South Asian": 10.4,
-    "Hispanic/Latin American": 9.1,
-    "East Asian": 7.6
+    "Indigenous American": 40.9,
+    "Southeast Asian": 18.6,
+    "Sub-Saharan African": 15.5,
+    "East Asian": 13.5,
+    "Northern European": 11.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 21.2,
+        "Cherokee": 6.9
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 12.8
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 0.9
+      },
+      "Cambodian": {
+        "Khmer": 17.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 0.1,
+        "Zambian": 2.2
+      },
+      "Central African": {
+        "Congolese": 5.3
+      },
+      "East African": {
+        "Tanzanian": 1.7,
+        "Somali": 6.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 13.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 9.1
+      },
+      "British Isles": {
+        "Scottish": 1,
+        "English": 1.4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7287bb792c4e77a0a11c4d9",
   "type": "character",
-  "name": "Kai Agyemang",
+  "name": "Kai Ixchel",
   "aliases": [
     "Yewa",
     "The Spice Mother"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Western and Chicago Ave",
-  "description": "Yewande is a broad-shouldered woman with deep umber skin cross-hatched with old burn scars on her forearms — legacies of thirty years over open burners. Her hair is grown out in thick silver locs she pins back with repurposed copper data-clips, and her irises have been modded to a slowly shifting amber-to-saffron gradient that she claims helps her read the color of spices in low light. She wears an industrial apron over layered cotton wraps in earthy burgundy and ochre, always faintly dusted with ground fenugreek and smoked chili.\n\nShe runs her stall — two deep cauldrons, a flatgrill, and a hanging rack of dried aromatics — with the authority of someone who has never once questioned whether she belongs anywhere. She calls regulars by the names of their grandparents if she knows them, corrects strangers' orders without apology, and offers the first meal free to anyone who looks like they haven't eaten in two days. She prays loudly to the E.L.F. she calls Ember-Who-Remembers, leaving charred spice bundles at the corner of her stall each morning, believing it keeps her flames even and her customers loyal.",
+  "description": "Kai Ixchel is a broad-shouldered woman with deep umber skin cross-hatched with old burn scars on her forearms — legacies of thirty years over open burners. Her hair is grown out in thick silver locs she pins back with repurposed copper data-clips, and her irises have been modded to a slowly shifting amber-to-saffron gradient that she claims helps her read the color of spices in low light. She wears an industrial apron over layered cotton wraps in earthy burgundy and ochre, always faintly dusted with ground fenugreek and smoked chili.\n\nShe runs her stall — two deep cauldrons, a flatgrill, and a hanging rack of dried aromatics — with the authority of someone who has never once questioned whether she belongs anywhere. She calls regulars by the names of their grandparents if she knows them, corrects strangers' orders without apology, and offers the first meal free to anyone who looks like they haven't eaten in two days. She prays loudly to the E.L.F. she calls Ember-Who-Remembers, leaving charred spice bundles at the corner of her stall each morning, believing it keeps her flames even and her customers loyal.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -159,7 +159,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,44 +179,21 @@
     "The Oxidian Market",
     "The Reclamation Authority",
     "The Cutters Guild",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Geartown",
     "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
-    "Arcturus Defense Solutions Particle Lance PL-4 'Scalpel'",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Stratum",
+    "Arcturus Defense Solutions Particle Lance PL-4 'Scalpel'",
+    "Chicago",
     "Silver",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Cotton",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Djeneba Park-Traore",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Emeka Johansson-Orozco",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Patient Zero",
-    "Solina Barreto-Kiptoo",
-    "Tessera Corponation",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Alban Souk",
-    "The Bazaar",
-    "The Crucible",
-    "The Ledger",
-    "The Pure Hand",
-    "VitaCore ClearCourse Addiction Suppressor",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Witness",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Corner Slice"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African and North African ancestry, with notable South Asian and East Asian contributions. This genetic blend creates a rich, complex phenotype reflecting the Ubiquitous Diaspora.",
+    "heritage": "Predominantly Sub-Saharan African (51.1%) with significant Middle Eastern (28.3%) and Indigenous American (20.6%) ancestry. This genetic blend creates a striking phenotype — the warm, deep umber tones and facial structure reflect the primary Sub-Saharan heritage, while the Middle Eastern ancestry contributes to the angular cheekbones and distinctive nose structure, and Indigenous American ancestry adds subtle dimensionality to the overall facial geometry and bone structure. A true child of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and sturdy, built for sustained physical labor. Muscular forearms and shoulders from three decades of lifting heavy cauldrons and stirring thick broths. Slight softness at the waist and hips — the frame of someone who tastes her own cooking.",
@@ -224,10 +201,10 @@
     "hair_style": "Thick locs pinned back with repurposed copper data-clips",
     "hair_length": "Long",
     "eye_color": "Gradient modification: amber-to-saffron shifting",
-    "skin_tone": "Rich warm bronze with deep underlying warmth — a harmonious blend of Sub-Saharan, North African, and Latin American ancestry creating a luminous umber that catches light with subtle golden undertones",
-    "complexion": "Weathered and lined from decades of heat exposure and sun. Forehead and temples show permanent creasing. Minimal makeup. Strong defined jaw with subtle angular character from South Asian ancestry, broad nose with full nostrils, full expressive lips. High cheekbones with graceful contours. Calloused hands with darkened nail beds from spice staining.",
+    "skin_tone": "Deep warm umber with rich golden-bronze undertones — luminous bronze from the dominant Sub-Saharan and Middle Eastern ancestry, with subtle warmth from the Indigenous American component, catching light with luminescence across the cheekbones and brow ridge",
+    "complexion": "Weathered and lined from decades of heat exposure and sun. Forehead and temples show permanent creasing. Minimal makeup. Strong defined jaw with angular character from Middle Eastern ancestry, broad nose with full flared nostrils characteristic of Sub-Saharan heritage blended with the subtler nasal bridge characteristic of Indigenous American ancestry, full expressive lips. High prominent cheekbones with graceful contours shaped by the genetic confluence. Calloused hands with darkened nail beds from spice staining.",
     "distinguishing_marks": [
-      "Old burn scars cross-hatching both forearms in a dense lattice pattern — pale lines against warm bronze skin, legacy of three decades of open-flame cooking",
+      "Old burn scars cross-hatching both forearms in a dense lattice pattern — pale lines against warm umber skin, legacy of three decades of open-flame cooking",
       "Thin burn scar along her right temple, partially hidden by her locs, circa 15 years old",
       "Small ritual scars on the inner wrists — two parallel lines on each side, self-inflicted in her thirties as part of personal spiritual practice"
     ],
@@ -235,16 +212,40 @@
     "posture_movement": "Stands with weight planted firmly, one hand often on a hip or gripping a wooden spoon. Moves with deliberate economy — no wasted motion. Her gaze is steady and assessing. When speaking to regulars, she leans in slightly. Her hands are rarely still, even at rest — fingers tapping rhythms or gesturing with spoon or ladle.",
     "clothing_style": "Industrial apron (reinforced canvas, heat-stained) worn over layered cotton wraps in earthy burgundy and ochre tones. Worn leather sandals with reinforced soles. Simple brass bangles on both wrists — functional and decorative. Tier 4 working-class aesthetic — practical, durable, unmaintained by corporate standards. Always faintly dusted with ground spices."
   },
-  "image_prompt": "Kai Agyemang, a 168cm weathered cook in the GLMZ 2226, warm bronze skin with rich golden undertones blending Hispanic, African, and South Asian heritage, silver-white locs pinned with copper data-clips, angular defined cheekbones and strong jaw, amber-to-saffron shifting cyborg eyes glowing subtly, dense pale burn scars latticing both forearms against dark skin with iridescent heat-resistant dermal plating, ritual scars on inner wrists, wearing heat-stained reinforced canvas apron over burgundy and ochre cotton wraps, brass bangles, worn leather sandals, standing firm with wooden spoon in hand, fingers tapping unconsciously, faint spice dust on skin and clothing, steady assessing gaze, cyberpunk kitchen setting with warm industrial lighting catching the iridescence of her augmentations, moody amber and shadow ambiance, hyper-detailed portraiture --ar 2:3 --v 6",
+  "image_prompt": "Kai Ixchel, a 168cm sturdy woman with deep warm umber skin glowing with golden-bronze undertones, standing in a dimly lit neo-noir kitchen circa 2226. Silver-white locs pinned back with copper data-clips frame her weathered face marked by fine lines and old burn scars. Angular cheekbones and broad flared nose reflect her Sub-Saharan African and Middle Eastern heritage with subtle Indigenous American bone structure. Amber-to-saffron gradient cybernetic eyes shimmer in the warm light. Her forearms display a lattice of pale burn scars over iridescent heat-resistant dermal plating. Wearing a heat-stained reinforced canvas apron over burgundy and ochre cotton wraps, brass bangles on both wrists. Calloused hands grip a wooden spoon, dusted with ground spices. Grounded posture, steady assessing gaze, kitchen steam and spice haze surrounding her. Neon glow from distant signs filtering through industrial windows. Cinematic, character-focused, depth of field. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.2,
-    "Sub-Saharan African": 28.2,
-    "North African": 15.9,
-    "South Asian": 10.2,
-    "East Asian": 6.5
+    "Sub-Saharan African": 51.1,
+    "Middle Eastern": 28.3,
+    "Indigenous American": 20.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 2.5,
+        "South African": 22.7
+      },
+      "East African": {
+        "Kenyan": 15.7,
+        "Tanzanian": 3.8
+      },
+      "Central African": {
+        "Angolan": 6.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 19.6,
+        "Tajik Persian": 8.7
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 20.6
+      }
+    }
+  }
 }

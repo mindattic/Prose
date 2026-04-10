@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Kessler Interchange, Ferrogate Transit Gate Four Checkpoint, near Fullerton and Damen",
-  "description": "Tibault is tall and lanky with a Burkinabe-Serbian face that defaults to a pleasantly vacant expression he has cultivated deliberately — people underestimate him, which at a checkpoint is occasionally useful. His hair is grown out in loose curls he keeps pulled back during shifts, and he has cosmetic bioluminescent freckles across his cheekbones that pulse very faintly blue when his heart rate elevates, a mod he got at nineteen and now somewhat regrets for professional reasons. He wears the clay-gray Ferrogate uniform with the resigned precision of someone who has stopped fighting the dress code but has also stopped caring if the collar sits quite right.\n\nTibault is fundamentally a curious person trapped in a job that rewards incuriosity. He has developed the checkpoint operator's paradoxical skill: appearing bored while processing enormous amounts of information simultaneously. He catalogues the thousands of faces that pass his station daily in a private mental taxonomy — regulars, anomalies, the ones who are lying about something innocuous, the rarer ones who are lying about something that matters. He has not decided what to do with this skill. He talks to his ELF shrine — a small figure he keeps under his console — before each shift, asking the transit spirits for patience, which he receives in uneven quantities.",
+  "description": "Cleo Kjellberg is tall and lanky with a Burkinabe-Serbian face that defaults to a pleasantly vacant expression he has cultivated deliberately — people underestimate him, which at a checkpoint is occasionally useful. His hair is grown out in loose curls he keeps pulled back during shifts, and he has cosmetic bioluminescent freckles across his cheekbones that pulse very faintly blue when his heart rate elevates, a mod he got at nineteen and now somewhat regrets for professional reasons. He wears the clay-gray Ferrogate uniform with the resigned precision of someone who has stopped fighting the dress code but has also stopped caring if the collar sits quite right.\n\nCleo Kjellberg is fundamentally a curious person trapped in a job that rewards incuriosity. He has developed the checkpoint operator's paradoxical skill: appearing bored while processing enormous amounts of information simultaneously. He catalogues the thousands of faces that pass his station daily in a private mental taxonomy — regulars, anomalies, the ones who are lying about something innocuous, the rarer ones who are lying about something that matters. He has not decided what to do with this skill. He talks to his ELF shrine — a small figure he keeps under his console — before each shift, asking the transit spirits for patience, which he receives in uneven quantities.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,28 +234,14 @@
     "Ferrogate Transit",
     "Arcturus GE-1 'Garrison'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Frequency",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Clay",
-    "Avon Curve",
-    "Biometric Denial Charge BDC-1",
-    "Bogdan Achebe-Svanstrom",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Independent Darknet Node Architecture",
-    "MERIDIAN",
-    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
-    "Slagworks Industrial",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "The Heritage Vault",
-    "The Listener",
-    "The Pure Hand"
+    "Patience",
+    "Clay"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly East Asian (32%) and Southeast Asian (30.6%) with significant Sub-Saharan African (14.7%), Central Asian (13.2%), and minor Northern European (8%) ancestry — a complex pan-Asian-African genetic blend reflecting the Ubiquitous Diaspora",
+    "heritage": "Nordic-East Asian-Latin genetic blend (62% Northern European, 24.8% East Asian, 13.2% Hispanic/Latin American). Fair Northern European base enriched by East Asian bone structure and Latin warmth — high cheekbones with subtle monolid softness, warm golden-bronze undertones creating balanced medium complexion",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lanky and lean, long-limbed with minimal upper body mass. The build of someone who doesn't actively resist his own height but doesn't cultivate it either — posture slightly collapsed forward at the shoulders.",
@@ -263,8 +249,8 @@
     "hair_style": "Loose, shoulder-length curls, typically pulled back into a low knot or ponytail during work shifts. Some intentional looseness — not fastidious about maintenance.",
     "hair_length": "Long",
     "eye_color": "Dark brown (right eye fitted with faint chrome-ringed retinal scanner overlay — visible as a hairline circuit pattern on the iris under direct light)",
-    "skin_tone": "Warm medium-tan with golden undertones, blending East and Southeast Asian warmth with Sub-Saharan depth — complexion reflects the fusion of multiple equatorial and subtropical ancestries",
-    "complexion": "Clean-shaven or very light stubble. High, prominent cheekbones with subtle East Asian angularity softened by broader African facial geometry. Faint cosmetic bioluminescent freckles in a constellation pattern across both cheekbones — they emit a dull blue glow that pulses subtly with elevated heart rate. Expression defaults to a vague, pleasantly blank stare that masks constant low-level observation.",
+    "skin_tone": "Warm medium bronze with golden undertones — balanced blend of Northern European fairness, East Asian warmth, and Latin depth creating rich complex complexion",
+    "complexion": "Clean-shaven or very light stubble. High, prominent cheekbones with Nordic angularity softened by East Asian structure and subtle Latin features. Faint cosmetic bioluminescent freckles in a constellation pattern across both cheekbones — they emit a dull blue glow that pulses subtly with elevated heart rate. Expression defaults to a vague, pleasantly blank stare that masks constant low-level observation.",
     "distinguishing_marks": [
       "Cosmetic bioluminescent freckles across cheekbones (blue, pulse-reactive to cardiac rhythm, installed at age 19)",
       "Faint scar tissue on the inside of right forearm (approximately 8cm, likely from retinal scanner implantation or unrelated old injury)"
@@ -273,17 +259,40 @@
     "posture_movement": "Slightly slouched standing posture, as if perpetually tired but alert. Movements are efficient and minimal — checkpoint operator economy of motion. Hands rest on the console or in lap during routine processing. Eye contact is deliberate and selective, used as a tool rather than a default. When bored, he rocks very slightly in his chair.",
     "clothing_style": "Clay-gray Ferrogate Transit Security uniform worn with resigned precision — the collar frequently sits slightly askew, and the fit is loose enough to suggest he has stopped caring about minor grooming standards. The uniform is clean but shows wear. Off-shift clothing is understated: neutral-toned second-hand synthetics, practical boots, no visible branding or tier markers. Avon Curve resident aesthetic — cheap, functional, deliberately non-distinct."
   },
-  "image_prompt": "Cleo Kjellberg, tall lean figure with warm medium-tan skin and high cheekbones blending East Asian and African features. Dark brown shoulder-length curls pulled back into a low knot. Right eye marked with faint chrome retinal scanner circuitry visible on the iris. Dull blue bioluminescent freckles pulsing softly across both cheekbones in constellation pattern. Clean-shaven with subtle stubble. Wearing clay-gray Ferrogate Transit Security uniform, collar slightly askew, shown slouched in a checkpoint operator's chair with minimal efficient posture. Faint scar on inside of right forearm. Pleasantly blank expression masking constant observation. Cyberpunk 2226, Great Lakes Metropolitan Zone checkpoint station, cool industrial lighting with neon accent, tired but alert demeanor. --ar 2:3 --v 6",
+  "image_prompt": "Cleo Kjellberg, 188cm tall lean neo-noir checkpoint operator, dark shoulder-length curls in loose ponytail, warm medium bronze skin with Nordic-East Asian-Latin mixed features, high prominent cheekbones softened by subtle East Asian structure, dark brown eyes with chrome-ringed retinal scanner overlay visible on right iris, faint blue bioluminescent freckles across cheekbones pulsing gently, clean-shaven or light stubble, slightly slouched posture suggesting tired alertness, wearing clay-gray Ferrogate Transit Security uniform with askew collar and worn fit, resigned expression with blank observant stare, minimal efficient movements, GLMZ Great Lakes Metropolitan Zone, fluorescent checkpoint lighting casting cool blue shadows, cinematic noir mood, medium shot from waist up, professional security personnel aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 32.0,
-    "Southeast Asian": 30.6,
-    "Sub-Saharan African": 14.7,
-    "Central Asian": 13.2,
-    "Northern European": 8.0,
-    "Indigenous American": 1.5
+    "Northern European": 62,
+    "East Asian": 24.8,
+    "Hispanic/Latin American": 13.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 26.1,
+        "Irish": 35.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 10.4
+      },
+      "Chinese": {
+        "Fujianese": 2.9,
+        "Shanghainese": 11.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 4.3,
+        "Haitian": 4.5
+      },
+      "Mexican": {
+        "Mexican": 4.4
+      }
+    }
+  }
 }

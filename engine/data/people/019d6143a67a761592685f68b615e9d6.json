@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67a761592685f68b615e9d6",
   "type": "character",
-  "name": "Vale Dalgaard-Sokolov",
+  "name": "Tallulah Wójcik-Migizi",
   "aliases": [
     "Dess",
     "The Lamplighter",
@@ -14,7 +14,7 @@
   "age": 54,
   "status": "active",
   "location": "Old Harbor, Slip 9 Tenements, near Lake Shore and Wacker",
-  "description": "Odessa Falk-Nwofor is a broad-shouldered woman whose face carries the topography of a hard life: a jaw that juts slightly from a badly reset fracture, deep-set eyes the color of weathered teak, and a scar that traces from her left temple to her earlobe like a river on an old map. Her hair is cut close on the sides and left natural on top, shot through with white that she refuses to dye. She dresses in layered secondhand scrubs over thermal underlayers, her coat pockets sagging with vials, patches, and a battered tablet she uses to track patient histories. A single augmented right hand—matte carbon and copper-banded—contrasts with her otherwise un-augmented body, which she considers a point of quiet pride.\n\nShe runs a basement clinic out of Slip 9 that operates on a sliding scale payment system she invented herself: food, labor, information, or whatever someone can spare. The neighborhood knows her as the person you go to when the corporate med-kiosks have locked your insurance tier and you're bleeding. She has delivered children, amputated gangrenous limbs by headlamp, and talked down three overdoses in a single night. The Meridian Core's Health Compliance Division has cited her practice seventeen times. She has paid none of the fines.\n\nWhat the neighborhood does not know is that Odessa's medical knowledge came partly from a decade working as a trauma specialist for a mid-tier logistics corp that dumped toxic waste in Old Harbor—the same contamination that killed her younger brother, Emeka, twelve years ago. She left the corp, got herself deliberately delisted from licensed practitioner registries to avoid their reach, and turned her skills entirely toward the community that corp helped destroy. The guilt is structural, load-bearing. She will not let herself rest.",
+  "description": "Tallulah Wójcik-Migizi is a broad-shouldered woman whose face carries the topography of a hard life: a jaw that juts slightly from a badly reset fracture, deep-set eyes the color of weathered teak, and a scar that traces from her left temple to her earlobe like a river on an old map. Her hair is cut close on the sides and left natural on top, shot through with white that she refuses to dye. She dresses in layered secondhand scrubs over thermal underlayers, her coat pockets sagging with vials, patches, and a battered tablet she uses to track patient histories. A single augmented right hand—matte carbon and copper-banded—contrasts with her otherwise un-augmented body, which she considers a point of quiet pride.\n\nShe runs a basement clinic out of Slip 9 that operates on a sliding scale payment system she invented herself: food, labor, information, or whatever someone can spare. The neighborhood knows her as the person you go to when the corporate med-kiosks have locked your insurance tier and you're bleeding. She has delivered children, amputated gangrenous limbs by headlamp, and talked down three overdoses in a single night. The Meridian Core's Health Compliance Division has cited her practice seventeen times. She has paid none of the fines.\n\nWhat the neighborhood does not know is that Odessa's medical knowledge came partly from a decade working as a trauma specialist for a mid-tier logistics corp that dumped toxic waste in Old Harbor—the same contamination that killed her younger brother, Emeka, twelve years ago. She left the corp, got herself deliberately delisted from licensed practitioner registries to avoid their reach, and turned her skills entirely toward the community that corp helped destroy. The guilt is structural, load-bearing. She will not let herself rest.",
   "psychology": {
     "facet_weights": {
       "wound": 0.85,
@@ -236,7 +236,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,43 +254,26 @@
     "The Meridian Core",
     "Meridian Core",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Plot 17",
     "Axiom Industries",
     "Stratum",
     "Copper",
+    "Harbor Fish Shack",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Teak",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Emile Nakamura-Osei",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ihaia Nystrom-Keita",
-    "Lazarus LX-5 'Siphon'",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Plot 17",
-    "PulsePoint MoodGlyph Affective Display Implant",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Burden Clause",
-    "The Ledger"
+    "Teak"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Southeast Asian (40.6%) with significant Eastern European (20.1%) and Northern European (14.7%) ancestry, combined with East Asian (10.7%), Sub-Saharan African (10.1%), and South Asian (3.8%) heritage. This creates a richly mixed phenotype reflecting the Ubiquitous Diaspora.",
+    "heritage": "Predominantly Indigenous American (53.8%) with significant Eastern European (23.5%) ancestry, combined with South Asian (12.0%), Central Asian (7.7%), and Southeast Asian (2.6%) heritage. This creates a richly mixed phenotype reflecting the Ubiquitous Diaspora—strong Indigenous American bone structure and facial geometry blended with Eastern European angular features, South Asian facial proportions, and Central/Southeast Asian eye shape characteristics. The combination produces distinctive high, prominent cheekbones, a broad nasal bridge with slight flare, and eye shape reflecting the Southeast and Central Asian components.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid without excess softness; muscular across the chest and forearms from decades of manual medical work. Carries weight with functional density rather than bulk.",
     "hair_color": "Natural dark brown with prominent white threading throughout",
     "hair_style": "Fade on the sides, natural texture on top, worn unstyled and practical",
     "hair_length": "Short",
-    "eye_color": "Deep brown with warm amber undertones—weathered appearance from strain and age",
-    "skin_tone": "Medium golden-brown with olive undertones, reflecting the Southeast Asian and Eastern European blend, deepened by chronic sleep deprivation and environmental exposure",
-    "complexion": "Lined and deeply mapped by hard work and stress; angular facial structure reflecting mixed Asian and European heritage. A prominent jagged scar traces from left temple to earlobe like a scar road. Jaw shows slight asymmetry from an old fracture reset imperfectly—healed but visible when she speaks. Cheekbones defined and prominent. Minimal grooming beyond function; no makeup, skin often marked by small calluses and old burn scars on fingertips.",
+    "eye_color": "Deep brown with warm amber undertones and slight epicanthic fold reflecting Southeast and Central Asian heritage—weathered appearance from strain and age",
+    "skin_tone": "Medium warm bronze with golden undertones, reflecting the dominant Indigenous American ancestry with warmth from South Asian heritage and depth from chronic sleep deprivation and environmental exposure. The tone carries the characteristic richness of blended Indigenous American and South Asian pigmentation.",
+    "complexion": "Lined and deeply mapped by hard work and stress; prominent Indigenous American facial structure with defined high cheekbones and broad nasal bridge, refined by Eastern European angular prominence and South Asian facial proportions creating distinctive bone geometry. Eyes show slight epicanthic fold characteristic of Central and Southeast Asian ancestry. A prominent jagged scar traces from left temple to earlobe like a scar road. Jaw shows slight asymmetry from an old fracture reset imperfectly—healed but visible when she speaks. Cheekbones defined and prominent. Minimal grooming beyond function; no makeup, skin often marked by small calluses and old burn scars on fingertips.",
     "distinguishing_marks": [
       "Jagged scar running from left temple along the hairline to earlobe, approximately 12cm, pale and old",
       "Slight lateral deviation of lower jaw from improperly healed fracture, creates asymmetrical profile",
@@ -301,17 +284,68 @@
     "posture_movement": "Stands with weight balanced slightly forward, shoulders perpetually tense as if bracing against unseen pressure. Moves with economical efficiency—no wasted motion. Her augmented right hand moves with mechanical precision when performing detailed work, but she favors her organic left for casual gestures, suggesting conscious preference for the human touch. When tired (which is often), her head tilts slightly forward and her jaw tightens.",
     "clothing_style": "Utilitarian and tier-4 worn: layered secondhand medical scrubs in faded teal and slate gray over thermal base layers. A heavy insulated coat from a defunct logistics company (its branding half-removed) with oversized pockets visibly bulging with vials, patch kits, and a battered ruggedized tablet. Steel-toed boots, resoled multiple times. A surgical mask hangs around her neck even when not in use. No jewelry except for a thin silver band on her left ring finger—worn through at spots from constant wear."
   },
-  "image_prompt": "Vale Dalgaard-Sokolov, 172cm tall, mixed-heritage woman with Southeast Asian, Eastern European, and African ancestry reflected in medium golden-brown skin with olive undertones. Deep brown eyes with amber warmth, dark hair with white threading, short fade sides. Weathered, lined face with defined cheekbones and asymmetrical jaw from old injury. Prominent jagged scar from left temple to ear. Muscular, broad-shouldered build from decades of medical work. Augmented right hand is matte carbon-composite with copper sensor bands, contrasts with organic left hand bearing old burn scars and medical caduceus tattoo on inner wrist. Wearing faded teal and gray secondhand medical scrubs layered under heavy insulated logistics coat with bulging pockets, steel-toed boots resoled multiple times. Surgical mask around neck. Silver ring worn thin on left ring finger. Stands with forward-balanced posture, shoulders tense. Cyberpunk 2226 Great Lakes Metropolitan Zone, clinical lighting, tired but focused expression, in a makeshift medical space. Dark moody atmosphere, neon accents in background, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Tallulah Wójcik-Migizi, 172cm tall woman with medium warm bronze skin reflecting Indigenous American, Eastern European, and South Asian heritage. Prominent high cheekbones, broad nasal bridge, deep brown eyes with amber undertones and subtle epicanthic fold. Short dark brown hair with white threading, faded on sides with natural texture on top. Jagged 12cm scar running from left temple to earlobe. Slight jaw asymmetry from old healed fracture. Weathered, lined face mapped by decades of hard work. Muscular, broad-shouldered build with functional density. Wearing faded teal and slate gray medical scrubs layered over thermal base layers, heavy insulated logistics company coat with bulging pockets, steel-toed resoled boots. Matte carbon-composite prosthetic right hand with copper sensor bands contrasting against organic left hand. Surgical mask hanging at neck. Thin silver ring worn through on left ring finger. Stands with weight forward, shoulders tense, economical movements. Small round burn scars visible on fingertips. Faded medical caduceus tattoo on inner left wrist. GLMZ medical underground worker in Great Lakes Metropolitan Zone, tired but vigilant expression, overhead neon-tinged clinical lighting casting sharp shadows across weathered features, gritty industrial medical setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 40.6,
-    "Eastern European": 20.1,
-    "Northern European": 14.7,
-    "East Asian": 10.7,
-    "Sub-Saharan African": 10.1,
-    "South Asian": 3.8
+    "Indigenous American": 53.8,
+    "Eastern European": 23.5,
+    "South Asian": 12,
+    "Central Asian": 7.7,
+    "Southeast Asian": 2.6,
+    "Hispanic/Latin American": 0.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 3.8,
+        "Potawatomi": 5.3
+      },
+      "Mesoamerican": {
+        "Maya": 24.3,
+        "Nahua": 20.4
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 14.3,
+        "Ukrainian": 3.7
+      },
+      "Slavic West": {
+        "Polish": 2.9
+      },
+      "Slavic South": {
+        "Bosnian": 2.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 10.8
+      },
+      "Indian": {
+        "Gujarati": 1.1,
+        "Bengali": 0.1
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 7.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 0.1
+      },
+      "Caribbean": {
+        "Haitian": 0.3
+      }
+    }
+  }
 }

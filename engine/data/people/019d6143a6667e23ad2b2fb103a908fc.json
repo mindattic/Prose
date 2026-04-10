@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6667e23ad2b2fb103a908fc",
   "type": "character",
-  "name": "Santiago Dalgaard-Arredondo",
+  "name": "Reza Kulkarni-Tehrani",
   "aliases": [
     "Kiru",
     "the Shelf Whisperer"
@@ -13,7 +13,7 @@
   "age": 39,
   "status": "active",
   "location": "Hough Reclamation — maintains a small field office in a converted community center, travels frequently, near Ashland and Chicago Ave",
-  "description": "Nkiruka grew up in the Shelf and got out through scholarships, then spent the next decade and a half choosing to go back — a decision her university colleagues find alternately admirable and baffling. She is a medium-height woman with deep brown skin, natural hair that she usually keeps wrapped, and geneware cat ears she got as a teenager that she has never removed, treating them as simply part of her face. The ears are dark brown and mobile, which means her emotional state is often broadcast before her expression catches up — they flatten when she is frustrated, perk forward when she is genuinely interested. She carries herself with the particular ease of someone who is comfortable in rooms that make other academics nervous.\n\nShe has a reputation in the university system as difficult — meaning she publishes findings that are politically inconvenient, refuses to anonymize her data in ways that would make it easier to misuse, and has twice written public responses to policy papers that cited her work incorrectly. On the Shelf, her reputation is more complicated: some communities trust her completely, others view her with the appropriate suspicion reserved for someone with institutional credentials who wants to study you. She navigates this with unusual self-awareness, asking permission, attributing community knowledge, and taking twice as long on studies as her department thinks necessary. She is warm and quick-laughing in person, and implacably persistent in writing.",
+  "description": "Reza Kulkarni-Tehrani in the Shelf and got out through scholarships, then spent the next decade and a half choosing to go back — a decision her university colleagues find alternately admirable and baffling. She is a medium-height woman with deep brown skin, natural hair that she usually keeps wrapped, and geneware cat ears she got as a teenager that she has never removed, treating them as simply part of her face. The ears are dark brown and mobile, which means her emotional state is often broadcast before her expression catches up — they flatten when she is frustrated, perk forward when she is genuinely interested. She carries herself with the particular ease of someone who is comfortable in rooms that make other academics nervous.\n\nShe has a reputation in the university system as difficult — meaning she publishes findings that are politically inconvenient, refuses to anonymize her data in ways that would make it easier to misuse, and has twice written public responses to policy papers that cited her work incorrectly. On the Shelf, her reputation is more complicated: some communities trust her completely, others view her with the appropriate suspicion reserved for someone with institutional credentials who wants to study you. She navigates this with unusual self-awareness, asking permission, attributing community knowledge, and taking twice as long on studies as her department thinks necessary. She is warm and quick-laughing in person, and implacably persistent in writing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -169,7 +169,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,24 +230,12 @@
     "The Shelf",
     "The Wire Taps",
     "Tessera Corponation",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Chicago",
-    "Aphelion",
-    "Arcturus HW-1 'Goliath'",
-    "Auricula Felis Modification",
-    "Highland Park Autonomous Zone",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "University Spine",
-    "Vuk Jorgensen-Toure",
-    "Witness"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian (46%) with significant Hispanic/Latin American (38.4%), Sub-Saharan African (9%), and South Asian (6.6%) ancestry; the genetic blend creates a distinctive phenotype with East Asian bone structure softened by Latin American and African warmth, South Asian undertones subtly present in complexion depth",
+    "heritage": "South Asian (42.7%), Middle Eastern (41.4%), and Southeast Asian (15.9%) ancestry create a striking multiregional phenotype; the dominant South Asian and Middle Eastern heritage produces warm, golden-olive to deep brown skin with luminous undertones, while Southeast Asian ancestry subtly influences facial structure and eye shape; bone structure reflects the convergence—Southeast Asian cheekbone prominence combined with South Asian facial proportions and Middle Eastern warmth in overall facial contours",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and functional, shoulders slightly broadened from years of fieldwork and carrying recording equipment; moves with economical grace rather than studied elegance",
@@ -255,27 +243,61 @@
     "hair_style": "Typically wrapped in indigo or earth-tone cloth; when unwrapped, worn in neat locs past shoulder length",
     "hair_length": "Long",
     "eye_color": "Deep brown, warm and observant",
-    "skin_tone": "Warm medium to deep brown; the East Asian-dominant ancestry creates a slightly golden undertone, enriched by the Latin American and African heritage components; sun-weathered warmth at temples and jawline",
-    "complexion": "Clear skin with minimal makeup; the blend of East Asian cheekbone structure with broader facial proportions from African and Latin American ancestry; sun-weathered at the temples and jawline from outdoor fieldwork; thoughtful expression lines around the eyes; a small scar at the corner of her left jaw from a street incident at age 22",
+    "skin_tone": "Luminous golden-olive to deep warm brown; the dominant South Asian and Middle Eastern ancestry creates rich, glowing complexion with honeyed undertones that deepen substantially in sunlight; sun-weathered warmth visible at temples and jawline from consistent outdoor fieldwork",
+    "complexion": "Clear skin with minimal makeup; prominent Southeast Asian-influenced cheekbones paired with South Asian facial proportions and the warmer, broader facial structure from Middle Eastern ancestry; sun-weathered texture at temples and jawline from outdoor fieldwork; thoughtful expression lines around eyes; small scar at left jaw corner from street incident at age 22",
     "distinguishing_marks": [
-      "Geneware cat ears surgically affixed to the top of her skull — dark brown, furred, naturally mobile and expressive; they flatten when frustrated, rotate toward sound or interest, and are visually stunning in the right light",
-      "A thin white scar along her left jawline (approximately 3cm), barely visible except in side profile or harsh sunlight",
-      "A small tattoo on the inside of her left wrist — a stylized Igbo mask in black ink, done at university",
-      "Faint burn marks on her right forearm (from a cooking accident in her 20s); almost imperceptible unless she tenses her arm"
+      "Geneware cat ears surgically affixed to skull crown—dark brown furred, naturally mobile and expressive; flatten when frustrated, rotate toward sound or interest",
+      "Thin white scar along left jawline (approximately 3cm), barely visible except in side profile or harsh sunlight",
+      "Small tattoo on inside of left wrist—stylized Igbo mask in black ink, done at university",
+      "Faint burn marks on right forearm (cooking accident in 20s); almost imperceptible unless arm tensed"
     ],
-    "visible_augmentations": "Geneware cat ears are immediately obvious and striking; a small bioluminescent indicator light (pale green, the size of a lentil) positioned at the base of her right ear that glows softly when her subdermal recorder implant is active — this is intentional and non-negotiable for her ethics",
-    "posture_movement": "Sits and stands with relaxed attention; leans forward when genuinely interested in someone's words; has a habit of tilting her head slightly when listening, which makes her ear movements more pronounced and readable; walks with purpose but not hurry; laughs easily and often, full-bodied",
-    "clothing_style": "Tier 3-4 practical; favors well-worn canvas work jackets (usually indigo or charcoal), sturdy boots rated for urban reclamation zones, fitted but functional pants with multiple pockets; layers with simple knit sweaters in earth tones; carries a battered synthetic leather messenger bag that holds field notebooks, recording equipment, and always at least one snack to share; wears a simple silver ring on her left middle finger and a beaded bracelet of indigo and silver on her right wrist; minimal jewelry otherwise — nothing that jangles or distracts during interviews; her wraps are beautiful and intentional, suggesting cultural pride without performed exoticism"
+    "visible_augmentations": "Geneware cat ears immediately obvious and striking; small bioluminescent indicator light (pale green, lentil-sized) positioned at base of right ear glowing softly when subdermal recorder implant is active—intentional ethical transparency marker",
+    "posture_movement": "Sits and stands with relaxed attention; leans forward when genuinely interested; tilts head slightly when listening, making ear movements pronounced and readable; walks with purpose but not hurry; laughs easily and often, full-bodied",
+    "clothing_style": "Tier 3-4 practical; favors well-worn canvas work jackets in indigo or charcoal, sturdy boots rated for urban reclamation zones, fitted but functional pants with multiple pockets; layers with simple knit sweaters in earth tones; carries battered synthetic leather messenger bag holding field notebooks, recording equipment, and snacks to share; wears simple silver ring on left middle finger and beaded bracelet of indigo and silver on right wrist; minimal other jewelry; beautifully intentional wraps suggesting cultural pride"
   },
-  "image_prompt": "Santiago Dalgaard-Arredondo, 168cm lean frame, warm medium-deep brown skin with golden undertones from East Asian-dominant mixed ancestry (46% East Asian, 38% Hispanic, 9% African, 6.6% South Asian), sun-weathered temples, thoughtful expression lines, striking geneware dark brown cat ears with natural mobility perched atop her head, small pale green bioluminescent indicator glowing softly at base of right ear, neat shoulder-length locs wrapped in indigo cloth, deep observant brown eyes, relaxed posture leaning forward with interest, wearing well-worn charcoal canvas work jacket over earth-tone knit sweater, sturdy urban boots, multiple pockets, carries battered synthetic leather messenger bag, silver ring on left middle finger, indigo and silver beaded bracelet, faint 3cm scar on left jawline barely visible, small Igbo mask tattoo on left wrist, full-bodied easy expression, cyberpunk 2226 Great Lakes Metropolitan Zone, moody urban reclamation zone lighting with cool neon accents, documentary fieldwork aesthetic, authentic and unhurried presence --ar 2:3 --v 6",
+  "image_prompt": "Reza Kulkarni-Tehrani, GLMZ, Golden-olive to deep warm brown skin with honeyed undertones, luminous complexion sun-weathered at temples. Deep brown observant eyes, prominent Southeast Asian cheekbones with South Asian facial proportions and Middle Eastern warmth. Long deep brown locs wrapped in indigo cloth, geneware dark brown cat ears affixed to skull crown, mobile and expressive, rotating attentively. Lean 168cm figure in well-worn indigo canvas work jacket, sturdy urban boots, fitted functional pants with pockets, earth-tone knit layers. Battered synthetic leather messenger bag across chest. Simple silver ring on left hand, indigo and silver beaded bracelet. Pale green bioluminescent lentil-sized indicator light glowing at base of right ear. Relaxed attentive posture, head tilted in listening position, genuine warm expression. Urban reclamation zone setting, neon accent lighting catching the luminosity of skin and the mobile ears, documentary field recorder aesthetic, warm intimate mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 46.0,
-    "Hispanic/Latin American": 38.4,
-    "Sub-Saharan African": 9.0,
-    "South Asian": 6.6
+    "South Asian": 42.7,
+    "Middle Eastern": 41.4,
+    "Southeast Asian": 15.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Bengali": 27.1,
+        "Punjabi": 9.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 5.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 6.3,
+        "Syrian": 4.6
+      },
+      "Persian": {
+        "Iranian": 5.9,
+        "Tajik Persian": 1.8
+      },
+      "Kurdish": {
+        "Kurdish": 22.8
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 6.9
+      },
+      "Cambodian": {
+        "Khmer": 4.9
+      },
+      "Thai": {
+        "Thai": 4.1
+      }
+    }
+  }
 }

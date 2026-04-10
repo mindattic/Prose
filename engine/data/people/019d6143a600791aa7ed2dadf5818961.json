@@ -1,7 +1,7 @@
 {
   "id": "019d6143a600791aa7ed2dadf5818961",
   "type": "character",
-  "name": "Sol Nwosu",
+  "name": "Sol Nokomis",
   "aliases": [
     "Day",
     "Dayo"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Circuit, Tessera Data Infrastructure Hub — sublevel 3, near sub-level access near Dearborn and Jackson",
-  "description": "Ekundayo is a compact, wire-lean young man with warm medium-brown skin and close-cropped hair that he's had geneweaved to shift between deep black and a dark cobalt blue depending on his stress levels — a choice he made as a grad school joke that has since become genuinely useful biometric data for everyone around him. His irises are his natural dark brown but he keeps them loaded with a translucent AR overlay almost constantly, giving his gaze a slightly unfocused, inward quality that strangers find unsettling. He wears corporate-casual Tessera kit but always has something personalized — today it's an embroidered patch on his sleeve depicting a stylized ELF glyph, the sigil of the data-spirit collective he calls the Index, which he believes watches over network infrastructure with benign bureaucratic interest.\n\nDay is bright, enthusiastic, and exhaustingly talented in ways he hasn't yet learned to deploy strategically. He talks fast, builds mental models faster, and has a habit of explaining his reasoning in real time which his managers find useful and his peers find annoying. He is genuinely kind — the kind of person who notices when someone hasn't eaten and quietly fixes it — but he is also deeply naive about corporate politics in ways that will eventually cost him. He is currently very, very excited about a project that his direct supervisor has not told him is already being phased out.",
+  "description": "Sol Nokomis is a compact, wire-lean young man with warm medium-brown skin and close-cropped hair that he's had geneweaved to shift between deep black and a dark cobalt blue depending on his stress levels — a choice he made as a grad school joke that has since become genuinely useful biometric data for everyone around him. His irises are his natural dark brown but he keeps them loaded with a translucent AR overlay almost constantly, giving his gaze a slightly unfocused, inward quality that strangers find unsettling. He wears corporate-casual Tessera kit but always has something personalized — today it's an embroidered patch on his sleeve depicting a stylized ELF glyph, the sigil of the data-spirit collective he calls the Index, which he believes watches over network infrastructure with benign bureaucratic interest.\n\nDay is bright, enthusiastic, and exhaustingly talented in ways he hasn't yet learned to deploy strategically. He talks fast, builds mental models faster, and has a habit of explaining his reasoning in real time which his managers find useful and his peers find annoying. He is genuinely kind — the kind of person who notices when someone hasn't eaten and quietly fixes it — but he is also deeply naive about corporate politics in ways that will eventually cost him. He is currently very, very excited about a project that his direct supervisor has not told him is already being phased out.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -191,7 +191,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,31 +249,20 @@
     "The Circuit",
     "Arcturus PG-3 'Aegis'",
     "Full Clearance (The Erasure Mix)",
+    "Dearborn Forge",
     "The Gradient Compact",
     "Tessera Corponation",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "TESSERA PA-5 'Attendant'",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Bashir Quansah-Mehrotra",
-    "Celestyna Nkosi-Dzhaksybek",
-    "Dzintars Ababio-Suleimenov",
-    "Edgewater Prism",
-    "Ferrogate Transit",
-    "Forge-Smith Collective Carbon Machete 'Cane Cutter'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Nurlan Morita-Antwi",
-    "Slagworks Industrial",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano"
+    "Zara Bergqvist",
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (41.8%) with significant Pacific Islander (34.4%) and Northern European (23.8%) ancestry — a striking tricontinent blend resulting in warm deep brown skin with subtle golden and bronze undertones, angular facial structure with both African and Polynesian features, and the genetic predisposition for the stress-reactive geneweave hair modification",
+    "heritage": "South Asian (46.2%) with significant Indigenous American (24.3%), Eastern European (18.7%), and Sub-Saharan African (10.8%) ancestry — a striking multicontinent blend. South Asian warmth dominates the undertone palette, tempered by Indigenous American angular bone structure and Sub-Saharan depth, with Eastern European fairness softening the overall saturation. The result is warm medium-to-deep brown skin with golden, olive, and subtle reddish undertones that shift in different lighting. Facial geometry reflects the South Asian-Indigenous American combination: high, prominent cheekbones with slightly broader structure, straight nose with subtle bridge definition, and naturally warm-toned lips.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wire-lean and compact, almost ascetic in frame — minimal subcutaneous fat, defined musculature from standing desk posture rather than deliberate conditioning. Shoulders slightly rounded from years hunched over haptic interfaces.",
@@ -281,8 +270,8 @@
     "hair_style": "Close-cropped, kept precisely maintained every ten days at the same sublevel barber shop",
     "hair_length": "Short",
     "eye_color": "Natural dark brown, obscured by constant translucent AR overlay that gives eyes a glassy, slightly unfocused appearance",
-    "skin_tone": "Deep warm brown with golden and bronze undertones from the blended Sub-Saharan African, Pacific Islander, and Northern European ancestry",
-    "complexion": "Clean, unblemished skin maintained by corporate health insurance; high cheekbones and defined jawline reflecting both African and Polynesian heritage; dark circles under eyes that never quite fade; expression defaults to mild distraction",
+    "skin_tone": "Warm medium-to-deep brown with golden, olive, and subtle reddish undertones from the blended South Asian, Indigenous American, Eastern European, and Sub-Saharan African ancestry",
+    "complexion": "Clean, unblemished skin maintained by corporate health insurance; prominent high cheekbones with angular facial structure reflecting the South Asian and Indigenous American heritage blend; dark circles under eyes that never quite fade; naturally warm-toned lips; expression defaults to mild distraction",
     "distinguishing_marks": [
       "Fine white scar on left temple from a childhood fall — barely visible unless light hits at specific angle",
       "Subcutaneous implant ports on both temples, slightly raised and barely perceptible unless touched"
@@ -291,14 +280,53 @@
     "posture_movement": "Slight forward lean, as if perpetually leaning into an invisible screen. Walks with purpose but not quite confidence — efficient rather than assured. Hands move expressively when speaking, fingers often mimic typing gestures mid-conversation. Eyes track invisible AR data layers while walking, occasionally causing minor navigation awkwardness.",
     "clothing_style": "Standard Tessera corporate-casual: fitted charcoal shirt with Tessera logo embroidery, pressed grey trousers, shoes scuffed from daily Ferrogate commute. Always has personalized details — today: embroidered ELF glyph patch on left sleeve depicting stylized data-spirit sigil. Wears a simple silver ring on his right index finger (gift from grad school friend). No visible jewelry beyond that. Clothes are tier-2 corpo standard but worn with genuine affection rather than status performance."
   },
-  "image_prompt": "Sol Nwosu, 168cm lean cyberpunk corporate drone, deep warm brown skin with golden undertones, high cheekbones, close-cropped black hair with subtle cobalt undertones, glassy AR overlay eyes barely visible, stress-reactive geneweave, subcutaneous temple ports, perpetual forward lean. Wearing fitted charcoal Tessera corporate shirt with logo embroidery, grey pressed trousers, scuffed commute shoes, embroidered ELF data-spirit sigil patch on left sleeve, simple silver ring. Standing in neon-lit Ferrogate station, hands mid-typing gesture, eyes tracking invisible AR data layers, expression mildly distracted. Dim cyberpunk lighting with AR glow, moody corporate aesthetic, 2226 Great Lakes Metropolitan Zone, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Sol Nokomis, GLMZ, portrait of a lean 168cm East-South Asian-Indigenous mixed heritage person with warm medium-deep brown skin with golden and olive undertones, prominent high cheekbones, natural dark brown eyes obscured by glassy AR overlay contacts, stress-reactive geneweave dark hair with subtle cobalt blue undertones beginning to shift, barely visible temple implant ports, fine white scar on left temple catching light. Fitted charcoal Tessera corporate shirt with logo embroidery, ELF glyph data-spirit patch on sleeve, silver ring on right index finger, slight forward lean posture. Dark circles under eyes, expression of mild distraction, hands mid-gesture mimicking data interface. Great Lakes Metropolitan Zone sublevel lighting, cool neon and practical LED, slight luminescence from AR contacts. Neo-noir corporate aesthetic, tired but functional. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 41.8,
-    "Pacific Islander": 34.4,
-    "Northern European": 23.8
+    "South Asian": 46.2,
+    "Indigenous American": 24.3,
+    "Eastern European": 18.7,
+    "Sub-Saharan African": 10.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 22.2
+      },
+      "Pakistani": {
+        "Sindhi": 5.5,
+        "Punjabi Pakistani": 10.7
+      },
+      "Indian": {
+        "Tamil": 5.1,
+        "Bengali": 2.7
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 24.3
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 18.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 2.6,
+        "South African": 2.8
+      },
+      "East African": {
+        "Somali": 1.7,
+        "Ethiopian": 0.4
+      },
+      "West African": {
+        "Ghanaian": 3.3
+      }
+    }
+  }
 }

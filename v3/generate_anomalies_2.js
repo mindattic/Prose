@@ -35,7 +35,7 @@ const documents = [
   {
     name: "The Globsters",
     document_type: "incident_report",
-    author: "Meridian 88 Waterfront Hazmat Division, Team Lead Kofi Asante-Yamamoto",
+    author: "GLMZ Waterfront Hazmat Division, Team Lead Kofi Asante-Yamamoto",
     date: "2213-09-04",
     classification: "restricted",
     description: `The first one came ashore at Pier 19 in the lower Shelf during the September tides. Approximately 2,400 kilograms of biological material, pale and fibrous, smelling faintly of ozone and copper. Waterfront cleanup assumed it was a decomposed lake organism — sturgeon, possibly, or a colony of invasive jellyfish compacted by current. They tagged it for removal. By morning there were three more.
@@ -45,7 +45,7 @@ DNA sequencing returned results that the lab initially attributed to contaminati
 The masses continue to wash ashore at a rate of roughly one per week. They do not decompose at any measurable rate. They are not alive by any standard biological definition, but tissue samples placed in growth medium exhibit coordinated cellular behavior that resembles, but is not, mitosis. The cells divide into structures that serve no identifiable biological function. The masses are warm to the touch regardless of ambient temperature. Their internal temperature is a constant 33.7 degrees Celsius.
 
 We have seventeen of them now, stored in a repurposed cold dock on the lower waterfront. They are growing. Not individually — we measure them daily and they remain the same size. But their combined mass has increased by 11% since collection began. The scale is calibrated. The dock is sealed. Nothing is being added.`,
-    related_entities: ["The Shelf", "Meridian 88", "Lake Michigan"],
+    related_entities: ["The Shelf", "GLMZ", "Lake Michigan"],
     credibility: "verified",
     story_hooks: [
       "What organism produces nucleotides unknown to terrestrial biology?",
@@ -67,7 +67,7 @@ When threatened — and we use the word loosely, as our interactions have includ
 Samples removed from the colony die within hours. No exception. The organism cannot survive separation from the main body. In situ, it appears to be effectively immortal. We have found no upper limit to its reversal capacity. The basal layer — the oldest part of the colony — shows no senescence markers. It is, by every measure we can apply, the same age it was when we first sampled it six years ago.
 
 Dr. Amara Johansson-Diallo has proposed that the organism does not experience time in a linear fashion. This is not a scientific statement. She knows this. She put it in the report anyway.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "How was the colony growing on a dry structure decades before flooding?",
@@ -101,7 +101,7 @@ Field Team 7 has documented fourteen coordinated events in Sector E-14 over the 
   {
     name: "The Overtoun Walkway",
     document_type: "incident_report",
-    author: "Meridian 88 Animal Control Division, Senior Officer Lena Tsukuda-Obi",
+    author: "GLMZ Animal Control Division, Senior Officer Lena Tsukuda-Obi",
     date: "2214-01-19",
     classification: "restricted",
     description: `The elevated walkway connecting Residential Block 12 to the Commercial Tier in the Laceworks has been killing animals for seventy years. The documentation is unambiguous. Municipal records show the first reported incident in 2144 — a domestic cat leapt from the walkway railing and fell nine stories. Since then, the Animal Control Division has logged 847 animal deaths at this location. Dogs, cats, birds that land on the railing and then walk off it. The behavior is consistent: the animal approaches the railing at a specific section — a 15-meter stretch on the east side, between structural supports 7 and 9 — and jumps.
@@ -111,7 +111,7 @@ The section has been modified twelve times. Railings raised, enclosed, fitted wi
 We installed full-spectrum monitoring equipment along the 15-meter stretch in 2208. Electromagnetic, acoustic, chemical, thermal, barometric. Six years of continuous data. There is nothing anomalous about the section. The air is the same. The light is the same. The sound is the same. The materials are standard municipal construction, replaced twice in the monitoring period. The phenomenon persists across every material, every configuration, every modification. It is not the walkway. It is the location.
 
 I have submitted eleven formal requests for the walkway section to be demolished entirely. Each has been denied on the grounds that no causal mechanism has been identified and demolition would not constitute a evidence-based intervention. In the time it took to process my eleventh request, four more animals died.`,
-    related_entities: ["Laceworks", "Meridian 88"],
+    related_entities: ["Laceworks", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What is it about this specific 15-meter section that compels animals?",
@@ -148,14 +148,14 @@ We have quietly expanded our monitoring to include all 1,400 former Block 9 resi
     author: "GLMZ Perimeter Aerial Survey Division",
     date: "2210-04-22",
     classification: "classified",
-    description: `The wilderness between Meridian 88 and the Milwaukee Sprawl — colloquially the Reclaimed Zone — was first flagged by satellite imaging in 2203. Vegetation patterns visible at altitude do not conform to any natural growth model. They are geometric. Not approximately geometric in the way river deltas or crystal structures suggest mathematical regularity. Geometric in the way a circuit board is geometric. Precise. Intentional. Repeating.
+    description: `The wilderness between GLMZ and the Milwaukee Sprawl — colloquially the Reclaimed Zone — was first flagged by satellite imaging in 2203. Vegetation patterns visible at altitude do not conform to any natural growth model. They are geometric. Not approximately geometric in the way river deltas or crystal structures suggest mathematical regularity. Geometric in the way a circuit board is geometric. Precise. Intentional. Repeating.
 
 The dominant pattern is a Fibonacci spiral. Not one — hundreds, nested and overlapping, ranging from three meters to 1.2 kilometers in diameter. The spirals are composed of different plant species occupying precise positions within the pattern. Prairie grass forms the background. Wildflowers — species-specific, never mixed — trace the spiral arms. Trees mark the vertices of secondary geometric structures that overlay the spirals: hexagons, pentagons, and shapes that our topology consultant, Dr. Idris Kowalski-Bah, describes as "regular polygons that shouldn't tile a plane but do."
 
 The plants were not placed. Root system analysis confirms natural germination and growth. Soil composition is uniform across the patterned areas — there is no chemical or mineral variation that could template the growth. Seed dispersal modeling cannot account for the precision. Wind, animal activity, and water flow do not produce Fibonacci spirals at kilometer scale. Nothing produces Fibonacci spirals at kilometer scale. The patterns are growing. New spirals appear at the edges of the existing formation at a rate of approximately 40 meters per year, expanding outward from a central point that corresponds to no known landmark, structure, or geological feature.
 
 We have not released the satellite imagery. The patterns are visible from commercial orbital platforms, and it is only a matter of time before someone outside the survey division notices them. I do not know what we will say when they do.`,
-    related_entities: ["Reclaimed Zone", "Meridian 88", "Milwaukee Sprawl"],
+    related_entities: ["Reclaimed Zone", "GLMZ", "Milwaukee Sprawl"],
     credibility: "verified",
     story_hooks: [
       "What is at the central point of the spiral formation?",
@@ -167,7 +167,7 @@ We have not released the satellite imagery. The patterns are visible from commer
   {
     name: "The Cold Fusion Paradox",
     document_type: "investigation",
-    author: "Meridian 88 Energy Regulatory Commission, Investigator Dante Johansson-Abara",
+    author: "GLMZ Energy Regulatory Commission, Investigator Dante Johansson-Abara",
     date: "2213-02-14",
     classification: "leaked",
     description: `On January 3rd, 2213, a man named Prosper Achebe-Lindqvist, a basement-level electrical tinkerer with no formal education beyond secondary school, achieved sustained nuclear fusion at room temperature using equipment valued at approximately 400 quanta. His apparatus consists of a modified water heater, a salvaged capacitor bank from a decommissioned transit car, copper wire, and a ceramic containment vessel he made himself from clay sourced from the lakefront. It produces a stable 2.3 kilowatts of excess energy with no radiation, no plasma confinement, and no input fuel beyond tap water. It has been running continuously for forty-one days.
@@ -177,7 +177,7 @@ We have documented the apparatus exhaustively. Every component has been cataloge
 The paradox deepened in February when we received reports of three additional basement fusion devices in the lower Shelf and Underworld. All built independently. All by individuals with no engineering credentials and minimal resources. All functional. All irreplicable by credentialed researchers with adequate funding. We sent a team from the Meridian Energy Institute — twelve physicists, budget of 2.4 million quanta — to build a fusion device under controlled laboratory conditions using the best available materials and instrumentation. They produced nothing. Prosper watched their attempt. He said they were trying too hard. He was not being philosophical. He appeared genuinely confused by their failure.
 
 I do not have an explanation. The devices work. The physics does not permit them to work. They work anyway. Funding and expertise appear to be inversely correlated with success. I am filing this report because it is my job to file reports. I do not expect anyone to act on it.`,
-    related_entities: ["Meridian 88", "The Shelf", "Underworld"],
+    related_entities: ["GLMZ", "The Shelf", "Underworld"],
     credibility: "disputed",
     story_hooks: [
       "Is intention or belief a variable that physics has not accounted for?",
@@ -189,7 +189,7 @@ I do not have an explanation. The devices work. The physics does not permit them
   {
     name: "The Mpemba Inversion",
     document_type: "field_report",
-    author: "Meridian 88 Municipal Water Authority, Quality Assurance Lab",
+    author: "GLMZ Municipal Water Authority, Quality Assurance Lab",
     date: "2211-12-03",
     classification: "restricted",
     description: `The Mpemba effect — the observation that hot water can freeze faster than cold water under certain conditions — has been debated for centuries. What we are observing is not the Mpemba effect. What we are observing is water freezing from the inside out.
@@ -199,7 +199,7 @@ The first documented case occurred during routine quality testing of a municipal
 Since that first observation, we have documented 340 inversion events across 12,000 batches tested over two years. Approximately 2.8% of batches invert. The batches are chemically identical — same source, same treatment, same storage conditions. We have tested for trace contaminants, isotope ratios, dissolved gas content, mineral variation, microbial presence, and electromagnetic exposure history. Every variable we can measure is identical between inverting and non-inverting batches. No predictive model achieves accuracy better than chance.
 
 The inversions are becoming more frequent. The 2.8% rate is an average. In the first six months, the rate was 1.1%. In the most recent quarter, it is 4.6%. The trend is linear and shows no sign of plateauing. Lab Director Ingrid Mutombo-Svensson has requested that this data not be included in the public water quality report. I am including it in this internal report because someone should be paying attention to the fact that our water is forgetting how to freeze.`,
-    related_entities: ["Laceworks", "Meridian 88"],
+    related_entities: ["Laceworks", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Is the inversion rate increase connected to other anomalous trends in the GLMZ?",
@@ -211,7 +211,7 @@ The inversions are becoming more frequent. The 2.8% rate is an average. In the f
   {
     name: "The Mass Hysteria of Block 7",
     document_type: "incident_report",
-    author: "Meridian 88 Emergency Services, Incident Commander Raul Nakamura-Osei",
+    author: "GLMZ Emergency Services, Incident Commander Raul Nakamura-Osei",
     date: "2214-03-08",
     classification: "suppressed",
     description: `At 22:17 on March 6th, 2214, Emergency Services received 43 calls within a 90-second window from residents of Block 7 in the upper Shelf. All callers reported the same thing: a building had appeared. Not a projection, not a holographic advertisement, not an AR overlay — a physical structure, visible to the naked eye, occupying the vacant lot at the intersection of Tier 3 and Radial 9. By the time the first responder unit arrived at 22:31, the building was not there. The lot was empty. It has been empty since 2198.
@@ -221,7 +221,7 @@ We interviewed 214 witnesses over the following 72 hours. Every account is consi
 Nineteen witnesses claim to have approached the building. Seven claim to have touched it. The surface was described as smooth, cold, and slightly damp. Three witnesses — Elif Johansson-Achebe, Marco Diallo-Park, and a teenager who provided only the name "Switch" — claim to have found an entrance on the building's north face and entered a lobby. They describe a large, empty room with a stone floor and a single elevator with no call button. The elevator door was open. They did not enter the elevator. They left. When they exited, the building was gone. They were standing in the vacant lot. Their feet were wet.
 
 Block 7 residents have submitted a petition requesting 24-hour monitoring of the vacant lot. I am recommending approval, though I do not know what we expect to capture.`,
-    related_entities: ["The Shelf", "Meridian 88", "Block 7"],
+    related_entities: ["The Shelf", "GLMZ", "Block 7"],
     credibility: "suppressed",
     story_hooks: [
       "What floor does the elevator in the phantom building go to?",
@@ -236,14 +236,14 @@ Block 7 residents have submitted a petition requesting 24-hour monitoring of the
     author: "GLMZ Meteorological Authority, Incident Analyst Suki Okonkwo-Lindberg",
     date: "2214-07-12",
     classification: "restricted",
-    description: `On July 10th, 2214, at approximately 16:45, fish began falling from the sky over the Industrial Corridor between Meridian 88 and the Gary Exclusion Zone. The event lasted eleven minutes. Approximately 12,000 fish fell over a 3-kilometer stretch of highway and adjacent industrial rooftops. The fish were alive when they hit the ground. Most died on impact. Some survived. The species was exclusively alewife — Alosa pseudoharengus — a freshwater fish native to Lake Michigan, found at depths of 20 to 60 meters.
+    description: `On July 10th, 2214, at approximately 16:45, fish began falling from the sky over the Industrial Corridor between GLMZ and the Gary Exclusion Zone. The event lasted eleven minutes. Approximately 12,000 fish fell over a 3-kilometer stretch of highway and adjacent industrial rooftops. The fish were alive when they hit the ground. Most died on impact. Some survived. The species was exclusively alewife — Alosa pseudoharengus — a freshwater fish native to Lake Michigan, found at depths of 20 to 60 meters.
 
 There was no storm. There was no waterspout. The sky was clear with scattered cirrus clouds at 8,000 meters. Wind speed at ground level was 6 km/h, and upper atmosphere conditions were stable across all monitored altitudes. The Meteorological Authority has reviewed satellite imagery, radar data, and atmospheric sensor readings from every monitoring station within 200 kilometers. There is no mechanism by which 12,000 fish could have been lifted from Lake Michigan and deposited over the Industrial Corridor. The fish did not fall from any detectable altitude — radar showed no objects above the corridor prior to the event. They appeared at approximately 400 meters and fell.
 
 This is not the first fish rain documented in the GLMZ. Municipal records reference events in 2187, 2193, 2201, and 2209. Each event occurred over the Industrial Corridor. Each involved exclusively alewife. Each occurred in clear weather with no meteorological explanation. The intervals are not regular — 6 years, 8 years, 8 years, 5 years — but the event parameters are identical. Same species. Same corridor. Same impossible delivery.
 
 The fish from the July 10th event have been preserved for analysis. They are healthy specimens. Their stomach contents indicate they were feeding normally in deep water approximately 2 to 4 hours before the event. Their stress hormone levels are minimal. Whatever moved them from the lake to the sky did so without alarming them.`,
-    related_entities: ["Industrial Corridor", "Meridian 88", "Gary Exclusion Zone", "Lake Michigan"],
+    related_entities: ["Industrial Corridor", "GLMZ", "Gary Exclusion Zone", "Lake Michigan"],
     credibility: "verified",
     story_hooks: [
       "What is the connection between the Industrial Corridor and the fish rain events?",
@@ -313,7 +313,7 @@ Building 4120 was constructed in 2134. The display was present during the origin
 We attempted to remove it in 2208. The wall was cut around the display and the section was extracted. Behind the display there is nothing — no housing, no circuit board, no mechanism. The display is a flat surface, approximately 3 millimeters thick, fused to the concrete. The concrete behind it is solid and undisturbed. The display continued counting during extraction. It continued counting when the wall section was placed in a shielded container. It continued counting when the container was placed in a Faraday cage. It is counting now, in a storage facility in the lower Shelf, removed from the building it occupied for eight decades. It has not lost a beat.
 
 What it counts is unknown. We have correlated the count against population data, traffic flow, network packets, heartbeats within a radius, births, deaths, transactions, and seventeen other metrics. None correlate. It counts something. We do not know what.`,
-    related_entities: ["Old Harbor", "Meridian 88", "The Shelf"],
+    related_entities: ["Old Harbor", "GLMZ", "The Shelf"],
     credibility: "verified",
     story_hooks: [
       "What is the Counter counting, and what happens when it stops?",
@@ -357,7 +357,7 @@ The device is a box. Flat black, 60 centimeters square, 20 centimeters tall. It 
 The text on the pages is dense, consistent, and written in no language that any member of my team or any consultant we have engaged can identify. It is not a cipher — the character frequency distribution does not match any known language encrypted or otherwise. It is not random — there are clear syntactic structures, recurring symbols, and what appear to be paragraph breaks and section headings. The character set contains approximately 4,000 unique symbols. The text changes — no two pages are identical. Whatever this device is writing, it is writing a lot of it, and it has been writing continuously for centuries.
 
 I brought three pages to the surface. Within six hours, the text on two of them had changed. Not faded — changed. Different characters in different arrangements on the same paper. The third page remains stable. I do not know why. I have sealed it in an airtight container and I am trying not to think about it.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What language is the Printer writing in, and who can read it?",
@@ -425,7 +425,7 @@ The surface reflects the chamber. It does not reflect the chamber it is in. The 
 The furniture moves. Not while observed — we have maintained continuous visual monitoring for 72 hours and nothing has changed in the direct field of view. But the objects shift between observations. A chair that faced east at 14:00 faces north at 14:05, during a period when the monitoring camera's view was unobstructed and recorded no movement. The objects in the reflection move without moving. They are in different positions despite never having been observed changing position.
 
 Team member Adaeze Strand-Petrov placed her hand against the surface. She reported that it was warm and that she could feel vibration — a low, slow pulse approximately once every four seconds. She also reported that the reflection of her hand appeared in the mirror approximately 0.5 seconds after she placed it. Every other reflection — the team, the equipment, the chamber — appears instantaneously. Only living tissue has a delay. We do not understand the significance of this. We do not understand any of this.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What room is the mirror reflecting, and where is it?",
@@ -459,7 +459,7 @@ Instruments placed on the stone return different readings than identical instrum
   {
     name: "The Archive",
     document_type: "classified_briefing",
-    author: "Meridian 88 Tunnel Authority, Director of Expansion, [REDACTED]",
+    author: "GLMZ Tunnel Authority, Director of Expansion, [REDACTED]",
     date: "2214-01-03",
     classification: "classified",
     description: `This briefing is classified at the highest level available to the Tunnel Authority. Distribution is restricted to the Director's office and the three section chiefs present at the discovery. What follows is an account of what Expansion Team 14 found during the southern bore extension on December 28th, 2213.
@@ -471,7 +471,7 @@ The data shards are standard-format optical crystals compatible with current GLM
 The people in the records do not exist. We have cross-referenced every name, every biometric marker, every address against the full municipal database. No matches. Birth dates in the records range from 2230 to 2290. The people described in these shards have not been born yet. The records describe their lives in detail — careers, illnesses, marriages, children, deaths. One record describes a woman who will be born in 2247 and die in 2319, survived by three children whose records are also in the archive. Her cause of death is listed. Her final address is a building that does not yet exist, on a street that has not yet been named, in a district that has not yet been zoned.
 
 I do not know what to do with this information. I am not certain anyone does. The chamber has been sealed and the bore route has been diverted. I am recommending that this remain classified indefinitely.`,
-    related_entities: ["Underworld", "Meridian 88", "Tunnel Authority"],
+    related_entities: ["Underworld", "GLMZ", "Tunnel Authority"],
     credibility: "classified",
     story_hooks: [
       "Who built the Archive, and how did they know the future?",
@@ -490,14 +490,14 @@ I do not know what to do with this information. I am not certain anyone does. Th
     author: "GLMZ Inter-City Transit Authority, Dead Zone Survey Division",
     date: "2212-03-15",
     classification: "restricted",
-    description: `The zone occupies approximately 40 square kilometers of wasteland between Meridian 88 and the Milwaukee Sprawl, centered on coordinates that correspond to no historical structure, settlement, or geological feature. It is flat. It is empty. It is wrong.
+    description: `The zone occupies approximately 40 square kilometers of wasteland between GLMZ and the Milwaukee Sprawl, centered on coordinates that correspond to no historical structure, settlement, or geological feature. It is flat. It is empty. It is wrong.
 
 Radio communication ceases within the zone's boundary. Not gradually — a hard cutoff. One meter outside the perimeter, signals are strong and clear. One meter inside, silence. Every frequency. Every modulation. Every protocol. Military-grade encrypted burst transmissions, low-frequency ground-penetrating radar, even simple AM broadcast — all gone. Compasses spin continuously within the zone. GPS receivers show location data that drifts in patterns our navigation team describes as "geometrically coherent but physically meaningless" — the receivers believe they are moving through a space that does not correspond to the ground they occupy.
 
 Drones lose contact at the boundary and fly in wide spirals until their batteries die. We have lost fourteen drones. The flight recordings, recovered from crash sites, show instruments that disagree with each other — altitude sensors and accelerometers reporting different values than barometric pressure and visual odometry. The drones are not malfunctioning. Their instruments are each measuring accurately. They are simply measuring different realities.
 
 Meteorites land in the zone at a rate approximately 400 times the statistical average for an area this size. We have cataloged 89 impact sites in three years of observation. The meteorites are unremarkable — ordinary chondrites, standard composition, nothing unusual except their improbable concentration. Research teams that enter the zone and return report no physical symptoms. They report a psychological change they struggle to articulate. They come back quieter. Not traumatized. Not afraid. Quiet in a way that suggests they heard something in the silence that the rest of us cannot.`,
-    related_entities: ["Reclaimed Zone", "Meridian 88", "Milwaukee Sprawl"],
+    related_entities: ["Reclaimed Zone", "GLMZ", "Milwaukee Sprawl"],
     credibility: "verified",
     story_hooks: [
       "What is at the center of the Zone of Silence?",
@@ -512,14 +512,14 @@ Meteorites land in the zone at a rate approximately 400 times the statistical av
     author: "GLMZ Perimeter Observation Network, Station 14 Commander Anika Diallo-Strand",
     date: "2211-11-09",
     classification: "restricted",
-    description: `The lights appear every night. They have appeared every night for as long as anyone has maintained continuous observation of the corridor between Meridian 88 and the Gary Exclusion Zone — a minimum of 90 years based on the earliest Perimeter Observation logs. They appear after full dark, between 21:00 and 23:00, and persist until dawn. They are visible to the naked eye from observation stations at distances up to 30 kilometers.
+    description: `The lights appear every night. They have appeared every night for as long as anyone has maintained continuous observation of the corridor between GLMZ and the Gary Exclusion Zone — a minimum of 90 years based on the earliest Perimeter Observation logs. They appear after full dark, between 21:00 and 23:00, and persist until dawn. They are visible to the naked eye from observation stations at distances up to 30 kilometers.
 
 They are spherical, approximately 1 to 3 meters in diameter, and emit light across a spectrum that shifts over time — amber to blue to white to green and back. They move at altitudes between 5 and 200 meters, at speeds ranging from stationary to approximately 80 km/h. They split. A single light will divide into two, three, or seven smaller lights that move independently before merging back into one. They merge. Two lights of different colors will combine into a single light of a third color that is not an additive product of the first two. They respond to observation — when tracked by targeting radar, they accelerate. When observed through telescopic optics, they hold position. When approached by ground vehicle, they retreat at a speed precisely matching the vehicle's approach speed.
 
 They are not plasma. They are not ball lightning. They are not bioluminescence. They are not swamp gas, vehicle headlights, refracted starlight, or military flares. They have been investigated by seventeen research teams over five decades. No team has produced an explanation. Three teams have produced data that contradicts their own hypotheses so thoroughly that they withdrew their findings.
 
 The lights predate every structure in the corridor. They predate the cities they appear between. Indigenous oral histories reference them. Colonial survey maps mark them. They are older than us. They are not interested in us. They are not uninterested either. They are doing something out there in the dead land, every night, and they have been doing it for a very long time.`,
-    related_entities: ["Industrial Corridor", "Meridian 88", "Gary Exclusion Zone"],
+    related_entities: ["Industrial Corridor", "GLMZ", "Gary Exclusion Zone"],
     credibility: "verified",
     story_hooks: [
       "What are the lights doing every night in the corridor?",
@@ -531,7 +531,7 @@ The lights predate every structure in the corridor. They predate the cities they
   {
     name: "St. Elmo's Cold Fire",
     document_type: "incident_report",
-    author: "Meridian 88 Electrical Safety Authority, Inspector Nikolai Okafor-Bjorn",
+    author: "GLMZ Electrical Safety Authority, Inspector Nikolai Okafor-Bjorn",
     date: "2213-08-22",
     classification: "restricted",
     description: `Corona discharge — St. Elmo's fire — is a well-understood phenomenon. Ionized air near electrically charged objects produces a visible glow, typically blue or violet. It occurs during thunderstorms, near high-voltage equipment, and on pointed structures that concentrate electrical fields. It requires a strong electric field. It requires an atmosphere capable of ionization. It requires, fundamentally, electricity.
@@ -541,7 +541,7 @@ The discharge events documented in this report occur in sealed, grounded, electr
 Since February, we have documented 31 identical events across 14 locations — all sealed, all grounded, all electrically dead. Engine rooms, pump houses, transformer vaults, generator bays. All infrastructure that once carried or generated significant electrical power and now carries none. The discharge burns cold and blue on surfaces that have no reason to discharge. Our electromagnetic monitoring detects nothing before, during, or after the events. There is no charge. There is no field. There is no mechanism.
 
 The events are increasing in frequency. February: 2 events. March: 4. April: 7. July: 11. The glow is also intensifying — early events were faint, barely visible to sensors. Recent events are bright enough to be seen through sealed doorways by maintenance personnel in adjacent corridors. Engine Room 7, where it started, now glows almost continuously. I have standing orders to keep that door closed.`,
-    related_entities: ["Lakewall", "Meridian 88"],
+    related_entities: ["Lakewall", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Why only in spaces that once carried electricity?",
@@ -575,7 +575,7 @@ We subsequently tested whether objects responded to specific observers. They do.
   {
     name: "The Taos Acoustic Zone",
     document_type: "field_report",
-    author: "Meridian 88 Environmental Health Division, Acoustics Unit",
+    author: "GLMZ Environmental Health Division, Acoustics Unit",
     date: "2211-04-18",
     classification: "restricted",
     description: `The zone encompasses a six-block radius in the lower Laceworks, centered on the intersection of Cascade Row and Pipe Street. Within this radius, sound behaves in ways that violate every acoustic model we have applied. The effect is permanent, consistent, and bounded by a hard perimeter that does not correspond to any physical structure, material boundary, or atmospheric condition.
@@ -585,7 +585,7 @@ Inside the zone, a whisper carries. A person speaking at conversational volume i
 Conversely, loud sounds do not propagate. A gunshot within the zone is inaudible beyond 3 meters. We have tested this with controlled detonations — a firecracker at the zone's center registered 0 decibels at 4 meters. The sound is not absorbed. The energy does not convert to heat. The sound simply stops. The boundary between propagation and non-propagation is absolute. There is no gradient. At 3 meters, a gunshot is deafening. At 3.1 meters, silence.
 
 The perimeter of the zone is equally sharp. One step inside and you hear everything — every conversation, every footstep, every breath within six blocks. One step outside and normal acoustics resume. Residents have adapted. The Taos Zone, as they call it, is one of the quietest neighborhoods in the Laceworks despite being one of the most densely populated. Everyone speaks softly. Everyone has learned. The few who haven't — new arrivals, visitors, people having bad days — learn quickly that their raised voices carry to every ear in six blocks while the ambient noise of the city outside the zone is entirely absent. It is an island of whispers in a city of noise, and no one built it.`,
-    related_entities: ["Laceworks", "Meridian 88"],
+    related_entities: ["Laceworks", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What created the acoustic inversion zone?",
@@ -607,7 +607,7 @@ We installed professional monitoring equipment. Over six weeks, we documented 47
 The critical observation: the events occur only when Obinna is present and not attempting to cause them. When he tries to demonstrate the effect for observers, nothing happens. When he is working on something else — repairing a motor, sorting scrap — objects move. We set up a protocol: Obinna works normally, ignoring the monitoring equipment, while we observe from an adjacent room via camera. Events occur. When we enter the room and ask him to reproduce what just happened, events cease. Every time.
 
 Obinna is not doing this. His biometrics show no anomalous readings. His BCI — a standard model, three years old — shows no unusual activity. His brain scans are normal. He is not telekinetic. He is not generating fields. He is a 54-year-old scrap dealer with bad knees and a fondness for Earl Grey tea. The events happen around him. They do not happen because of him. They happen in spite of observation. They are shy.`,
-    related_entities: ["The Shelf", "Meridian 88"],
+    related_entities: ["The Shelf", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Why does intention prevent the effect?",
@@ -626,7 +626,7 @@ Obinna is not doing this. His biometrics show no anomalous readings. His BCI —
 
 The patrol team, located 40 kilometers northwest of the Milwaukee Sprawl, reported an unfamiliar starscape with approximately twice the visible star density of normal sky. They described "rivers of light" connecting star clusters in patterns they had never seen. Their team astronomer, Lieutenant Keiko Achebe-Strand, stated that the positions were not consistent with any orientation of Earth's night sky at any time of year, from any location on the planet's surface. The salvage crew, 200 kilometers north, reported the same sky. The refugees, 160 kilometers southeast, reported the same sky. Three groups. Three locations. Same alien starscape. Same 40-minute window.
 
-Satellite data for the event window shows normal sky conditions. Orbital telescopes recorded standard star positions. The anomalous sky was visible only from ground level in the Wisconsin wilderness. It was not visible from Meridian 88, 60 kilometers to the south. It was not visible from the Milwaukee Sprawl, 40 kilometers to the east. The witnesses were standing under a sky that no instrument recorded and no one outside the affected area could see.
+Satellite data for the event window shows normal sky conditions. Orbital telescopes recorded standard star positions. The anomalous sky was visible only from ground level in the Wisconsin wilderness. It was not visible from GLMZ, 60 kilometers to the south. It was not visible from the Milwaukee Sprawl, 40 kilometers to the east. The witnesses were standing under a sky that no instrument recorded and no one outside the affected area could see.
 
 All three groups report that the transition was instantaneous. Normal sky, then wrong sky, then normal sky. No fade, no shimmer, no distortion. Lieutenant Achebe-Strand took 14 photographs during the event. The photographs show normal sky. Her eyes saw one thing. Her camera saw another. She is certain of what she saw. I have no reason to doubt her. I have no framework for believing her either.`,
     related_entities: ["Wisconsin Wilderness", "Milwaukee Sprawl", "GLMZ Perimeter"],
@@ -668,7 +668,7 @@ The returned are different. Their families know it. Their friends know it. The B
     classification: "restricted",
     description: `At 11:23 on September 29th, 2214, fish began falling from a clear sky over the eastern perimeter transport corridor, approximately 8 kilometers south of the former Cleveland boundary. The event lasted seven minutes. An estimated 8,000 fish fell over a 1.5-kilometer stretch of road and adjacent scrubland. The fish were alewife — Alosa pseudoharengus — the same species documented in every GLMZ fish rain event on record.
 
-This is the second fish rain of 2214. The first occurred on July 10th over the Industrial Corridor west of Meridian 88. That event was attributed — informally, without evidence — to some unidentified atmospheric transport mechanism originating in Lake Michigan. This event occurred 400 kilometers east, over terrain adjacent to Lake Erie, not Lake Michigan. The fish, however, are from Lake Michigan. Isotope analysis of tissue samples confirms a Lake Michigan origin, consistent with the western basin's chemical signature. Fish from Lake Michigan fell from the sky above Lake Erie.
+This is the second fish rain of 2214. The first occurred on July 10th over the Industrial Corridor west of GLMZ. That event was attributed — informally, without evidence — to some unidentified atmospheric transport mechanism originating in Lake Michigan. This event occurred 400 kilometers east, over terrain adjacent to Lake Erie, not Lake Michigan. The fish, however, are from Lake Michigan. Isotope analysis of tissue samples confirms a Lake Michigan origin, consistent with the western basin's chemical signature. Fish from Lake Michigan fell from the sky above Lake Erie.
 
 The fish were alive. Witnesses — three perimeter patrol officers and a transit convoy of eleven vehicles — describe the fish as "confused but swimming." They fell in a dispersed pattern consistent with objects dropped from a moderate height, struck the ground, and those that survived the impact thrashed on the road surface. 72% of recovered specimens were alive at impact. Their stress markers, as in previous events, were minimal. They were not distressed by the experience of being transported 400 kilometers through the air and dropped from the sky. They were distressed by being on a road instead of in water.
 
@@ -685,7 +685,7 @@ Weather Station 9 recorded no anomalous atmospheric conditions. Clear sky, 12 km
   {
     name: "The Dance of Industrial Park 9",
     document_type: "incident_report",
-    author: "Meridian 88 Emergency Medical Services, Chief Paramedic Olufemi Kowalski-Strand",
+    author: "GLMZ Emergency Medical Services, Chief Paramedic Olufemi Kowalski-Strand",
     date: "2213-04-19",
     classification: "suppressed",
     description: `The call came in at 06:14 on April 17th as a report of multiple casualties at the abandoned Industrial Park 9 on the southern perimeter. The caller, a security contractor named Yusuf Lindqvist-Osei, reported that workers had been found "dancing" in the main assembly hall of Building C. He requested ambulances. We dispatched four units.
@@ -695,7 +695,7 @@ What we found was 34 people dancing. Not in the colloquial sense — not celebra
 All 34 subjects had entered the building within the preceding 12 hours. They were scavengers, squatters, and salvage workers — the usual population of abandoned industrial sites. They had no connection to each other. They were not part of a group. They had entered individually or in pairs and at some point had begun to dance. None could stop. We attempted physical restraint. Restrained subjects continued involuntary movement even when held — muscles firing in the same rhythmic patterns against the restraints. Sedation was partially effective. Heavy sedation reduced the movement to tremors. Light sedation had no effect.
 
 Seven of the 34 were dead when we arrived. Cause of death: cardiac arrest secondary to exhaustion. Their feet were bloody. The concrete had abraded through their shoes and then through their skin. Based on foot abrasion and blood loss estimates, the longest-duration dancers had been moving for approximately 18 to 22 hours without pause. The survivors were transported to Meridian General. Fourteen have recovered. Thirteen remain in care with persistent involuntary movement disorders. None can explain why they started dancing. None remember choosing to. Several remember trying to stop and being unable to. One survivor, Ines Nakamura-Diallo, said only: "The floor wanted it." No BCI involvement was detected. No neural interference. No toxicology findings. Pure biological compulsion from no identifiable source.`,
-    related_entities: ["Industrial Park 9", "Meridian 88"],
+    related_entities: ["Industrial Park 9", "GLMZ"],
     credibility: "suppressed",
     story_hooks: [
       "What about Building C triggers choreomanic episodes?",
@@ -711,7 +711,7 @@ Seven of the 34 were dead when we arrived. Cause of death: cardiac arrest second
   {
     name: "The Double Slit Surveillance",
     document_type: "classified_briefing",
-    author: "Meridian 88 Security Infrastructure Division, [REDACTED]",
+    author: "GLMZ Security Infrastructure Division, [REDACTED]",
     date: "2214-02-20",
     classification: "classified",
     description: `This briefing concerns surveillance array M88-SEC-4407, a standard municipal monitoring installation covering the Cascade Row commercial district in the Laceworks. The array has been operational since 2201. It is not malfunctioning. It is doing something worse.
@@ -721,7 +721,7 @@ The anomaly was identified during a routine audit in January 2214. Auditor Kenji
 We expanded the audit. Every camera in the M88-SEC-4407 array exhibits the same behavior. The live feed and the recorded feed are technically identical — same data stream, same storage, same encoding. But the data changes between observation and review. Watched: one version of events. Reviewed later: another. The data files are identical at the bit level. We have compared them byte by byte. They are the same file. They show different things.
 
 I am not going to speculate about what this means in terms of observer-dependent reality or quantum measurement analogies. I am going to state the operational problem: we can no longer trust surveillance data. If the content of a recording changes based on whether it is observed in real-time or reviewed after the fact, then surveillance footage is not a reliable record of events. It is a record of something, but we cannot be certain that something is what happened. I am recommending that all M88-SEC-4407 data be flagged as unreliable pending resolution. I do not expect resolution.`,
-    related_entities: ["Laceworks", "Meridian 88", "Cascade Row"],
+    related_entities: ["Laceworks", "GLMZ", "Cascade Row"],
     credibility: "classified",
     story_hooks: [
       "Who are the five additional people visible only in recorded footage?",
@@ -743,7 +743,7 @@ Both drones deviated from their programmed routes in the same direction: 0.003 d
 We ran the flights again. Same deviation. We swapped the drones' routes. Same deviation. We replaced the drones entirely. Same deviation. We replaced the GPS modules, the inertial navigation units, the flight computers. Same deviation. We flew the routes with a manned vehicle using independent navigation equipment. Same deviation. 0.003 degrees north-northeast. Every flight. Every vehicle. Every instrument.
 
 Something in the southern perimeter is pulling every navigation system 0.003 degrees north-northeast. It is not magnetic — our magnetometers show normal field values. It is not gravitational — our gravimeters show normal readings. It is not a GPS error — the GPS satellites are verified accurate from other locations. The deviation exists only in the southern perimeter, only in the north-northeast direction, and it is exact to six decimal places. Every model we build to account for it introduces new errors. The deviation is simpler than our explanations. It simply is.`,
-    related_entities: ["GLMZ Southern Perimeter", "Meridian 88"],
+    related_entities: ["GLMZ Southern Perimeter", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What is at the north-northeast terminus of the drift vector?",
@@ -765,7 +765,7 @@ The room is accessed through a standard interior fire door on the east corridor.
 The room is not a renovation. It is not an installation. It is not preserved or maintained. It is simply old in a way the surrounding building is not. The wallpaper shows wear consistent with 200 years of habitation. The parquet shows foot traffic patterns worn into the wood over generations. The plaster has hairline cracks from centuries of thermal cycling. The room has existed for approximately 200 years inside a building that was constructed in 2072.
 
 We tested the building materials at the boundary. Modern concrete floor plate transitions to hand-laid stone at the room's threshold, with no joint, no seam, no construction boundary. The materials merge as if they grew together. Core samples show the stone extending approximately 1 meter into the modern structure before giving way to concrete. The stone is limestone, consistent with 18th-century European quarry sources. It is 3,000 kilometers and 300 years from where it should be.`,
-    related_entities: ["Lakeshore District", "Meridian 88"],
+    related_entities: ["Lakeshore District", "GLMZ"],
     credibility: "disputed",
     story_hooks: [
       "How does a room from the 18th century exist inside a 21st-century building?",
@@ -777,7 +777,7 @@ We tested the building materials at the boundary. Modern concrete floor plate tr
   {
     name: "The Phantom Floor",
     document_type: "investigation",
-    author: "Meridian 88 Building Commission, Structural Analyst Ravi Johansson-Igwe",
+    author: "GLMZ Building Commission, Structural Analyst Ravi Johansson-Igwe",
     date: "2213-07-09",
     classification: "restricted",
     description: `Tower 7 in the Laceworks is a 40-story mixed-use building constructed in 2178. It has 40 floors. The architectural plans show 40 floors. The structural engineering documents describe 40 floors. The elevator system services 40 floors. But the elevator panel has 41 buttons, and the 23rd floor does not exist.
@@ -787,7 +787,7 @@ The button is there. It is labeled "23." It is between "22" and "24," which is w
 The stairwell tells a different story. Between the 22nd and 24th floor landings, there is a door. It is a standard fire door, labeled "23," with a functioning handle. The handle turns. The latch releases. The door opens onto a blank wall. Solid concrete, smooth, unpainted, with no indication that there was ever an opening behind it. The concrete is continuous with the building's structural core — core samples confirm it is original construction material, poured in 2178, undisturbed.
 
 Maintenance worker Ekundayo Strand-Petrov claims to have exited the elevator on the 23rd floor on November 4th, 2212. He states that he pressed the 23 button as he did every day — out of habit, not expectation — and the elevator stopped. The doors opened onto a hallway. He stepped out. The hallway was long, featureless, and lit by an even, sourceless light. It had no end. He could see the hallway extending in both directions to a vanishing point. There were no doors, no intersections, no features of any kind. He re-entered the elevator. The doors closed. He pressed 22 and arrived at the 22nd floor. He has pressed 23 every day since. The elevator has never stopped there again.`,
-    related_entities: ["Laceworks", "Meridian 88", "Tower 7"],
+    related_entities: ["Laceworks", "GLMZ", "Tower 7"],
     credibility: "unconfirmed",
     story_hooks: [
       "What is the 23rd floor, and where does the endless hallway lead?",
@@ -799,17 +799,17 @@ Maintenance worker Ekundayo Strand-Petrov claims to have exited the elevator on 
   {
     name: "The Warm Pipes",
     document_type: "field_report",
-    author: "Meridian 88 Utility Commission, Underground Infrastructure Team",
+    author: "GLMZ Utility Commission, Underground Infrastructure Team",
     date: "2210-07-14",
     classification: "restricted",
-    description: `During a routine maintenance survey of the sub-grade utility corridors beneath Meridian 88's central axis, our team identified a set of pipes that do not appear in any infrastructure plan, utility map, or construction record. The pipes are 15 centimeters in diameter, constructed of a smooth, dark material that resists identification — it is not steel, not copper, not PVC, not any composite in our materials database. They run beneath the primary axis for approximately 4 kilometers, from a point beneath the Lakewall to a terminus beneath the Meridian central exchange, at a depth of 30 meters.
+    description: `During a routine maintenance survey of the sub-grade utility corridors beneath GLMZ's central axis, our team identified a set of pipes that do not appear in any infrastructure plan, utility map, or construction record. The pipes are 15 centimeters in diameter, constructed of a smooth, dark material that resists identification — it is not steel, not copper, not PVC, not any composite in our materials database. They run beneath the primary axis for approximately 4 kilometers, from a point beneath the Lakewall to a terminus beneath the Meridian central exchange, at a depth of 30 meters.
 
 The pipes carry fluid. The fluid is warm — approximately 37 degrees Celsius, consistent across the entire length. The fluid flows upward, from the Lakewall terminus to the central exchange, against a grade of 12 meters. There is no pump. There is no pressure differential that our instruments can detect. The fluid flows uphill, steadily, at a rate of approximately 2 liters per minute, with no apparent motive force.
 
 No utility company claims the pipes. No construction firm has records of installing them. The surrounding infrastructure was built in 2156, and the pipes are embedded in the original concrete pour — they were present before the concrete was placed. The concrete was not modified to accommodate them. They are simply there, enclosed in concrete that was poured around them, in a utility corridor that was designed with no knowledge of their existence.
 
 We extracted a fluid sample. The first analysis identified it as a saline solution with organic compounds — broadly similar to blood plasma. The second analysis, performed on the same sample twelve hours later, identified it as a mineral-rich geothermal brine. The third analysis found a polymer suspension with no biological markers. Every analysis returns different results. The sample is sealed, temperature-controlled, and untampered. It is the same fluid. It is not the same fluid. It is whatever it wants to be when we look at it.`,
-    related_entities: ["Meridian 88", "Lakewall", "Meridian Central Exchange"],
+    related_entities: ["GLMZ", "Lakewall", "Meridian Central Exchange"],
     credibility: "verified",
     story_hooks: [
       "What is the fluid, and why does it resist consistent analysis?",
@@ -821,7 +821,7 @@ We extracted a fluid sample. The first analysis identified it as a saline soluti
   {
     name: "The Singing Vents",
     document_type: "incident_report",
-    author: "Meridian 88 Environmental Systems Division, HVAC Specialist Ayo Petrov-Nakamura",
+    author: "GLMZ Environmental Systems Division, HVAC Specialist Ayo Petrov-Nakamura",
     date: "2212-11-28",
     classification: "restricted",
     description: `The ventilation shafts in the Shelf's residential blocks produce sound at approximately 03:00 every night. This has been occurring for at least four years — the earliest resident complaint in our files dates to 2208, though several long-term residents claim it has been happening longer. The sound emerges from standard HVAC ductwork, through ceiling and wall vents, in residential units across a 12-block area of the upper Shelf.
@@ -831,7 +831,7 @@ The sound is not wind. Wind produces broadband noise — hiss, whistle, roar —
 The ventilation system is passive in the affected blocks — no fans, no blowers, no moving parts. The ductwork is sealed. We have physically blocked vents, sealed ducts, and disconnected entire sections of the system. The sound persists. It does not come from the ducts. It comes through the ducts. The ducts are a medium, not a source. We placed microphones inside sealed duct sections with no external opening. The microphones recorded the same music at the same time as the vents in occupied apartments.
 
 The source is not in the duct system. The source is not in the building. The source is somewhere else, using the ductwork as an instrument. It plays for approximately 40 minutes each night, always beginning between 02:55 and 03:05. Residents have adapted to it. Most find it calming. Some find it beautiful. None find it frightening, which is perhaps the strangest thing about it. Something unseen plays music through their walls every night, and they have simply accepted it. Several residents have told us they sleep better since it started.`,
-    related_entities: ["The Shelf", "Meridian 88"],
+    related_entities: ["The Shelf", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Who or what is composing music and playing it through the ventilation system?",
@@ -843,17 +843,17 @@ The source is not in the duct system. The source is not in the building. The sou
   {
     name: "The Gravity Well of Sub-Level 4",
     document_type: "field_report",
-    author: "Meridian 88 Tunnel Authority, Physics Liaison Dr. Isadora Chen-Obi",
+    author: "GLMZ Tunnel Authority, Physics Liaison Dr. Isadora Chen-Obi",
     date: "2214-05-11",
     classification: "classified",
-    description: `The anomaly is located in Corridor 4-7 of Sub-Level 4 in the Meridian 88 Underworld tunnel system, a 30-meter stretch of passage between Junction 4-North and Maintenance Bay 12. The corridor is unremarkable in every observable respect — standard tunnel construction, standard dimensions, standard materials. Objects dropped in Corridor 4-7 fall slower than they should.
+    description: `The anomaly is located in Corridor 4-7 of Sub-Level 4 in the GLMZ Underworld tunnel system, a 30-meter stretch of passage between Junction 4-North and Maintenance Bay 12. The corridor is unremarkable in every observable respect — standard tunnel construction, standard dimensions, standard materials. Objects dropped in Corridor 4-7 fall slower than they should.
 
 The effect is not visible to the naked eye. A ball dropped from hand height reaches the floor in the same apparent time as anywhere else. But it doesn't. Precision timing equipment reveals that objects in Corridor 4-7 fall approximately 0.7% slower than predicted by local gravitational acceleration. This is a tiny deviation — a ball dropped from 1.5 meters takes 0.553 seconds instead of 0.549 seconds. Four milliseconds. Invisible. Measurable. Real.
 
 We have been measuring the effect continuously since its identification in 2210. It is strengthening. In 2210, the deviation was 0.4%. In 2212, 0.55%. In 2214, 0.7%. The increase is linear — approximately 0.075% per year. At this rate, the deviation will reach 1% by 2218 and 5% by approximately 2270. Extrapolation beyond that produces figures that I am not comfortable including in an official report, because a 100% deviation — objects that do not fall — would occur at approximately the year 3500. This is, of course, absurd. Linear extrapolation of anomalous phenomena is not science. But the data is linear. Four years of continuous measurement, zero deviation from a straight line.
 
 The effect is spatially bounded. It begins at a sharp boundary 2 meters past Junction 4-North and ends at a sharp boundary 1 meter before Maintenance Bay 12. Outside the boundaries, gravity is normal. Inside, it is 0.7% less than it should be. The corridor floor, walls, and ceiling show no material difference from adjacent sections. There is no mass anomaly below, above, or beside the corridor. There is no energy source, no field, no detectable cause. Gravity in Corridor 4-7 is simply — slightly, measurably, increasingly — less.`,
-    related_entities: ["Underworld", "Meridian 88", "Sub-Level 4"],
+    related_entities: ["Underworld", "GLMZ", "Sub-Level 4"],
     credibility: "verified",
     story_hooks: [
       "What is reducing gravity in Corridor 4-7, and why is the effect strengthening?",
@@ -875,7 +875,7 @@ The first image showed two people arguing in the tunnel — a man and a woman, r
 Since that discovery, we have systematically wetted tunnel walls across a 2-kilometer survey area. Approximately 15% of concrete surfaces produce images when wet. The images depict events that occurred in proximity to the wall — conversations, maintenance work, people walking, accidents. The images are temporally jumbled — a wall might display an event from last week adjacent to an event from three years ago. The images fade as the concrete dries, typically within 20 minutes. They are not projections, not chemical reactions, not biological growth. The concrete itself contains the images. Cross-section analysis shows that the pigment variation extends 2 to 3 millimeters into the concrete matrix. The images are in the material.
 
 The images are accurate. In every case we have been able to verify — 34 of 41 images cross-referenced against security footage or witness testimony — the concrete's record matches the actual event. We have found images dating back at least 15 years based on identifiable individuals and clothing styles. The concrete remembers everything that happens near it. It has been watching, and when you add water, it shows you what it saw.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Could the Memory Concrete be used as an investigative tool for unsolved crimes?",
@@ -897,7 +897,7 @@ We drained the room. Six hours later, it was full again. We drained it again and
 There is no body of water on Earth with a tidal period of 24.8 hours. The ocean tides cycle at approximately 12.42 hours, driven by lunar gravity. A 24.8-hour cycle would correspond to a gravitational influence with roughly half the orbital frequency of the Moon. No such influence exists in our solar system.
 
 We have since identified eleven tidal rooms in the deep Underworld, all in sealed chambers with no water access. All cycle at 24.8 hours. All are synchronized — they flood and drain in unison. The water appears from and disappears into solid rock. We have placed sensors in the walls and floor. The rock is dry. The water does not pass through it. It is not there, and then it is. It fills the room as if rising from the floor, but the floor is dry until the water is already above it. It drains as if sinking into the floor, but the floor is dry the moment the water level passes below any given point. The water comes from nowhere. It goes to nowhere. It follows a tide that belongs to no moon we know.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What gravitational body produces a 24.8-hour tidal cycle?",
@@ -909,20 +909,20 @@ We have since identified eleven tidal rooms in the deep Underworld, all in seale
   {
     name: "The Foundation Sound",
     document_type: "investigation",
-    author: "Meridian 88 Structural Monitoring Division, Acoustic Engineer Sven Okafor-Reis",
+    author: "GLMZ Structural Monitoring Division, Acoustic Engineer Sven Okafor-Reis",
     date: "2214-08-15",
     classification: "restricted",
-    description: `Press your ear to the foundation wall of any building in Meridian 88. Any building. Any wall that makes contact with the foundation slab. You will hear it. A low, rhythmic sound, barely above the threshold of perception. It sounds like breathing.
+    description: `Press your ear to the foundation wall of any building in GLMZ. Any building. Any wall that makes contact with the foundation slab. You will hear it. A low, rhythmic sound, barely above the threshold of perception. It sounds like breathing.
 
-I have now personally verified this in 74 buildings across every district in Meridian 88 — from the Shelf to the Laceworks, from the Circuit to the Lakewall, from street level to sub-level 8 of the Underworld. The sound is present in every foundation wall I have tested. It is not mechanical vibration from HVAC systems, traffic, or industrial equipment. We have tested in buildings with no active mechanical systems. The sound persists. It is not geological — seismic monitoring equipment at the same locations detects nothing. The sound exists only in the audible range, transmitted through the concrete of the city's foundation slab, and it is everywhere.
+I have now personally verified this in 74 buildings across every district in GLMZ — from the Shelf to the Laceworks, from the Circuit to the Lakewall, from street level to sub-level 8 of the Underworld. The sound is present in every foundation wall I have tested. It is not mechanical vibration from HVAC systems, traffic, or industrial equipment. We have tested in buildings with no active mechanical systems. The sound persists. It is not geological — seismic monitoring equipment at the same locations detects nothing. The sound exists only in the audible range, transmitted through the concrete of the city's foundation slab, and it is everywhere.
 
 The rhythm is consistent: approximately 12 cycles per minute, each cycle consisting of a low-frequency rise (inhalation) and fall (exhalation) with a brief pause between cycles. This matches the respiratory rate of a large mammal at rest. The analogy is imprecise but unavoidable — the sound is breathing, in the same way that a heartbeat is beating. It has the cadence, the rhythm, the organic irregularity of biological respiration. No two breaths are exactly the same length. The variation is small — milliseconds — but it is the variation of a living process, not a mechanical one.
 
-The sound does not originate from any single point. It is distributed uniformly across the entire foundation slab of Meridian 88, which covers approximately 200 square kilometers. Every point in the foundation produces the same sound at the same amplitude at the same moment. It is synchronized to the millisecond across the entire city. Whatever is breathing beneath Meridian 88, it is not small. It is not in one place. It is everywhere the city touches the ground. The city is built on something that breathes, and if you put your ear to the wall and listen, you can hear it. Most people never do. I wish I hadn't.`,
-    related_entities: ["Meridian 88"],
+The sound does not originate from any single point. It is distributed uniformly across the entire foundation slab of GLMZ, which covers approximately 200 square kilometers. Every point in the foundation produces the same sound at the same amplitude at the same moment. It is synchronized to the millisecond across the entire city. Whatever is breathing beneath GLMZ, it is not small. It is not in one place. It is everywhere the city touches the ground. The city is built on something that breathes, and if you put your ear to the wall and listen, you can hear it. Most people never do. I wish I hadn't.`,
+    related_entities: ["GLMZ"],
     credibility: "verified",
     story_hooks: [
-      "What is breathing beneath the foundation of Meridian 88?",
+      "What is breathing beneath the foundation of GLMZ?",
       "Has the breathing rate changed over time — is it speeding up, slowing down, or stable?",
       "What happens if the breathing stops?"
     ],

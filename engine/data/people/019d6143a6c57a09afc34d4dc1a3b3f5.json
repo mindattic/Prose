@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c57a09afc34d4dc1a3b3f5",
   "type": "character",
-  "name": "Sione Taualagi-Kristjánsson",
+  "name": "Yemi Okafor-Petelo",
   "aliases": [
     "Pitch",
     "the Hollow Woman"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Abyssal Threshold, sub-level junctions between Irkalla and the Blackpipe Corridor, near sub-level access near Dearborn and Jackson",
-  "description": "Saoirse moves like something that has learned to exist in the spaces between things — narrow-shouldered, deliberate, with the uncanny stillness of a person who has spent years being invisible. Her skin carries the faint blue-green bioluminescence of an old cosmetic mod she can no longer afford to maintain, patchy now, blooming mostly along her collarbones and the backs of her hands like dying foxfire. Her eyes are mismatched: one natural dark brown, one replaced with a salvaged optical implant that glows a dim amber, its resolution degraded enough that she sometimes tilts her head like a bird trying to focus. She keeps her hair cropped close, the regrowth uneven. There are no identifying tattoos, no scars she didn't put there herself. That is intentional.\n\nShe is not warm — warmth is something you perform for people who can afford to trust you — but she is precise. She quotes prices once. She explains routes once. She does not repeat herself and she does not forgive carelessness, because carelessness underground kills. People who have been guided by Pitch describe a woman who seems to know the tunnels the way you know the inside of your own mouth: not by thinking about it, but by the body remembering. She was once someone else entirely, with a registered identity, a surface address, a job. She almost never thinks about that person anymore.",
+  "description": "Yemi Okafor-Petelo moves like something that has learned to exist in the spaces between things — narrow-shouldered, deliberate, with the uncanny stillness of a person who has spent years being invisible. Her skin carries the faint blue-green bioluminescence of an old cosmetic mod she can no longer afford to maintain, patchy now, blooming mostly along her collarbones and the backs of her hands like dying foxfire. Her eyes are mismatched: one natural dark brown, one replaced with a salvaged optical implant that glows a dim amber, its resolution degraded enough that she sometimes tilts her head like a bird trying to focus. She keeps her hair cropped close, the regrowth uneven. There are no identifying tattoos, no scars she didn't put there herself. That is intentional.\n\nShe is not warm — warmth is something you perform for people who can afford to trust you — but she is precise. She quotes prices once. She explains routes once. She does not repeat herself and she does not forgive carelessness, because carelessness underground kills. People who have been guided by Pitch describe a woman who seems to know the tunnels the way you know the inside of your own mouth: not by thinking about it, but by the body remembering. She was once someone else entirely, with a registered identity, a surface address, a job. She almost never thinks about that person anymore.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -176,7 +176,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Abyssal Threshold",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -222,29 +222,14 @@
     "Ferrogate Transit",
     "Abyssal Threshold",
     "Threshold",
+    "GLMZ",
+    "Dearborn Forge",
     "Irkalla",
-    "Foxfire",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Axolotl Regenerative Suite",
-    "Bathysphere Networks",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Deepwell Station",
-    "Last Word",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Pirjo Asante-Ulukhan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Undertow",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore BloomFilter Olfactory Modulation Implant"
+    "The Pure Hand"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Northern European (50.1%) with significant Pacific Islander (39.1%) and Eastern European (10.8%) ancestry. The blend creates a striking phenotype: Scandinavian bone structure refined by Pacific Islander warmth, with subtle Eastern European angular features in the jaw and brow.",
+    "heritage": "Indigenous American (32.3%), Sub-Saharan African (28.2%), and Pacific Islander (24.8%) ancestry form the dominant genetic foundation, blended with Northern European (8.9%) and South Asian (5.8%) contributions. This creates a striking polychromatic phenotype: warm medium-brown skin with golden, reddish, and subtle bronze undertones reflecting the rich complexity of her ancestry. Broad facial structure with prominent cheekbones and rounded jawline reflects Indigenous American and African heritage, softened by Pacific Islander warmth and refined by subtle Northern European bone definition and South Asian facial geometry. The overall effect is striking and distinctly multi-continental.",
     "height_cm": 164,
     "weight_kg": 52,
     "build": "Narrow-shouldered and lean, almost wiry, with the compressed musculature of someone who navigates confined spaces regularly. Her frame suggests years of deliberate minimization — moving through gaps, staying unnoticed.",
@@ -252,8 +237,8 @@
     "hair_style": "Cropped close to the scalp, deliberately asymmetrical, maintenance-free",
     "hair_length": "Short",
     "eye_color": "Left eye: natural dark brown. Right eye: salvaged optical implant glowing dim amber with visible degradation artifacts",
-    "skin_tone": "Warm medium brown with subtle olive undertones — the result of Northern European paleness tempered by Pacific Islander and Eastern European pigmentation. The base carries faint blue-green bioluminescent tracery.",
-    "complexion": "High, prominent cheekbones reflecting Scandinavian ancestry; sharp jawline with subtle Eastern European angularity. Warm undertone prevents severity. Skin is weathered but meticulously unmarked — no identifying scars, no tattoos. The bioluminescent mod bleeds patchily across collarbones and the backs of her hands like dying phosphorescence, fading in erratic zones where the implant is failing.",
+    "skin_tone": "Warm medium to deep brown with golden, reddish, and subtle bronze undertones — the rich result of Indigenous American, Sub-Saharan African, and Pacific Islander ancestry tempered by Northern European and South Asian heritage. The base carries faint blue-green bioluminescent tracery.",
+    "complexion": "Broad cheekbones reflecting Indigenous American and African heritage; rounded jawline softened by Pacific Islander warmth and refined by South Asian and Northern European subtlety. Warm golden undertone prevents severity. Skin is weathered but meticulously unmarked — no identifying scars, no tattoos. The bioluminescent mod bleeds patchily across collarbones and the backs of her hands like dying phosphorescence, fading in erratic zones where the implant is failing.",
     "distinguishing_marks": [
       "Faint blue-green bioluminescent tracery across both collarbones, degraded and patchy",
       "Bioluminescent bloom across the backs of both hands, brightest at knuckles, dimming toward wrists",
@@ -263,14 +248,69 @@
     "posture_movement": "Moves with preternatural stillness — economical, deliberate, never wasted motion. Her gait is silent despite concrete and metal surfaces; her shoulders remain locked in a posture of minimal presence. When she focuses, her head tilts bird-like, compensating for her degraded right eye's poor resolution. She does not gesture when speaking. Her hands remain open and visible.",
     "clothing_style": "Tier 5 utilitarian — modified caving gear showing multiple repair generations. Black reinforced canvas pants with welded cargo pockets and carabiner attachment points. Loose layered top in faded grey synthetic, sleeveless to show her bioluminescent mod (whether for navigation or identification is unclear). Worn magnetic boots with hand-soldered sole plates. A tattered reflective vest salvaged from maintenance crews, worn unbuttoned. No jewelry. No identifying markers. Clothes smell of mineral water, rust, and old electrical burn."
   },
-  "image_prompt": "A lean, 164cm tall woman of mixed Northern European, Pacific Islander, and Eastern European descent in 2226 cyberpunk setting. Warm medium-brown skin with olive undertones. High prominent cheekbones, sharp jaw. Left eye dark brown, right eye a degraded amber-glowing salvaged optical implant with visible internal fractures. Asymmetrical dark brown short cropped hair with uneven regrowth. Shirtless upper body revealing patchy blue-green bioluminescent skin mod tracery across collarbones and hands, fading and non-functional in erratic zones. Thin surgical scar at right temple. Gaunt, preternatural stillness. Wearing faded grey synthetic sleeveless top, black reinforced canvas cargo pants, worn magnetic boots with hand-soldered soles, tattered reflective maintenance vest. Hands open and visible, pressure-sensitive nodes at fingertips showing faint luminous tracery. Underground cavern lighting: cool blue-grey industrial concrete, mineral water ambiance, dim amber glow from dying implant, mysterious vulnerability mixed with dangerous expertise. Silent, economical movement frozen mid-frame. Cyberpunk 2200s aesthetic, moody atmospheric lighting. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Yemi Okafor-Petelo: lean 164cm figure with narrow shoulders, wiry frame honed by years of confined-space navigation. Warm medium-deep brown skin with golden and reddish undertones reflecting Indigenous American, Sub-Saharan African, and Pacific Islander heritage. Broad prominent cheekbones, rounded jawline, dark intelligent gaze from natural left eye; right eye a degraded amber optical implant glowing dimly with visible microfractures and internal artifacts. Cropped dark brown asymmetrical hair, close to scalp. Patchy blue-green bioluminescent tracery fading across collarbones and backs of hands, implant failing. Worn black reinforced canvas cargo pants, faded grey sleeveless synthetic top showing luminescent mod, tattered reflective maintenance vest unbuttoned, soldered magnetic boots. Surgical scarring visible at right temple. Preternatural stillness, bird-like posture, economical movements. Industrial underground setting with concrete and metal, cool blue-amber lighting emphasizing optical implant glow and dying bioluminescence, mineral water and rust scents in air. Mood: watchful, minimalist, non-human grace --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 50.1,
-    "Pacific Islander": 39.1,
-    "Eastern European": 10.8
+    "Indigenous American": 32.3,
+    "Sub-Saharan African": 28.2,
+    "Pacific Islander": 24.8,
+    "Northern European": 8.9,
+    "South Asian": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 4.9
+      },
+      "Mesoamerican": {
+        "Nahua": 3.7,
+        "Zapotec": 9.4
+      },
+      "Andean": {
+        "Quechua": 7.6,
+        "Aymara": 6.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 2.8,
+        "Ghanaian": 9.2
+      },
+      "East African": {
+        "Tanzanian": 12.9
+      },
+      "Central African": {
+        "Congolese": 3.3
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 24.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 3.2,
+        "Danish": 4.2
+      },
+      "Germanic": {
+        "German": 1.4,
+        "Austrian": 0.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 3.1
+      },
+      "Nepali": {
+        "Nepali": 2.4
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.3
+      }
+    }
+  }
 }

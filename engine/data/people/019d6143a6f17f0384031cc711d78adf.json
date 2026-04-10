@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f17f0384031cc711d78adf",
   "type": "character",
-  "name": "Aarav Mukherjee",
+  "name": "Odalys Bautista",
   "aliases": [
     "Onyx",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Tenzin Nakamura-Bello is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Tenzin Nakamura-Bello is one of the ones who actually does it.",
+  "description": "Odalys Bautista is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Odalys Bautista is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -261,7 +261,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,40 +275,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Arcturus PG-3 'Aegis'",
-    "Breck Tannen",
-    "Cem Lund-Bangura",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Independent Micro-Grid Power Cooperative",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Stainless Steel",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Heritage Vault",
-    "Vanta Ordnance Phalanx VO-8 'Centurion'"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "South Asian (28.5%) with Eastern European (25%), Hispanic/Latin American (22.6%), Southeast Asian (13.6%), and Northern European (10.3%) ancestry — a complex diaspora blend creating warm medium-to-olive undertones with subtle golden depth. Features reflect this multi-continental mix: defined cheekbones with slight width across the face, dark expressive eyes with warm brown base, and naturally dark hair with premature silver threading.",
+    "heritage": "Multi-continental diaspora: Hispanic/Latin American (39.5%), Sub-Saharan African (33.5%), Northern European (15.4%), and North African (11.6%). This genetic blend creates striking physical presence — warm, richly layered skin undertones with golden-honey and earthy depth. The combination produces defined facial architecture with balanced proportions: strong cheekbones from African and Latin heritage, refined bone structure and slight facial width from North African and Northern European ancestry, creating a uniquely sculpted appearance.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Athletic and lean with defined musculature — dancer's precision combined with fighter's density. No excess weight; every kilogram serves function. Shoulders broad and squared from years of extraction work.",
@@ -316,8 +290,8 @@
     "hair_style": "Pulled back in a tight, functional braid; practical for work, never loose",
     "hair_length": "Long (below shoulder blades)",
     "eye_color": "Dark brown with subtle amber undertones",
-    "skin_tone": "Warm olive-brown — the layered ancestry creates richness in undertone, shifting between golden and earthy depending on light. Medium depth with natural luminosity.",
-    "complexion": "Sharp cheekbones showing the blend of South Asian and Eastern European features, angular jawline softened only slightly by age. The Southeast Asian heritage visible in slight width across upper face and eye shape. Minimal makeup; skin shows work-related wear but excellent condition. A faint network of surgical scars visible around temples and along jawline where chrome integration sites remain slightly raised.",
+    "skin_tone": "Deep golden-brown with warm, honey-amber undertones shifting to earthy richness depending on light. Medium-deep saturation with natural luminosity reflecting the layered Sub-Saharan African, Latin American, North African, and Northern European heritage blend.",
+    "complexion": "Sculpted facial structure with strong, pronounced cheekbones and angular jawline — the African and Latin heritage creating definitive bone prominence, while North African and Northern European ancestry contributes refined upper-facial structure and cheek width. Natural facial symmetry with inherent architectural strength. Minimal makeup; skin shows work-related wear but excellent condition. A faint network of surgical scars visible around temples and along jawline where chrome integration sites remain slightly raised.",
     "distinguishing_marks": [
       "Surgical scarring along both temples in a precise geometric pattern where neural interface ports were installed — visible chrome edges catch light",
       "Linear scarring along the right jawline extending toward ear, roughly 8cm long, where air filtration system was integrated",
@@ -328,16 +302,56 @@
     "posture_movement": "Economical and precise — never wasted motion. Stands with weight distributed for immediate movement in any direction. When moving through space, she's fluid but controlled, the way someone moves when they've trained to clear rooms and extract targets. Rarely still; fingers often drum patterns on surfaces or flex unconsciously. Her breathing is slightly audible at rest — a subtle mechanical whisper beneath natural respiration.",
     "clothing_style": "Functional Tier-2 hybrid aesthetic — form-fitting synthetic fiber tactical pants in matte grey-black with reinforced seams and utility pockets; lightweight responsive-fabric compression shirt under a fitted, cropped jacket in charcoal with subtle reflective threading. High-grade boots (Aegis-brand, military-spec) with memory-foam soles for silent movement. Minimal jewelry except a worn stainless steel bracelet (likely sentimental from her mentor). When undercover in civilian life, she shifts to unmarked streetwear that still reads as 'prepared' — dark colors, functional silhouettes, nothing that draws attention but nothing that advertises vulnerability."
   },
-  "image_prompt": "Aarav Mukherjee, 172cm lean athletic extraction specialist, cyberpunk 2226. Warm olive-brown skin with South Asian-Eastern European-Southeast Asian heritage visible in sharp cheekbones and expressive dark brown eyes. Black hair in tight functional braid, silver threading at temples. Chrome neural interface ports flanking temples with visible titanium flanges and surgical scarring. Linear scar along right jawline. Matte black kanji tattoo on inner left wrist. Wearing form-fitting grey-black tactical pants and charcoal cropped jacket with reflective threading, high-grade military-spec boots. Economical posture, hand-drums surface absently. Faint mechanical whisper of augmented breathing audible. Cool neon-lit corridor or extraction site, moody blue-violet ambient lighting catching chrome augmentation points. Precise, controlled, dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Odalys Bautista, 172cm athletic frame, deep golden-brown skin with warm amber undertones, sculpted cheekbones and angular jawline reflecting African and Latin heritage with refined Northern European and North African structure. Dark brown eyes with amber glint. Black hair with silver threading pulled tight in functional braid. Chrome neural interface ports visible at temples with brushed titanium flanges, surgical scars along jawline and temples. Small burn scar on left forearm, kanji tattoo on inner wrist. Wearing charcoal tactical jacket over compression shirt, matte grey-black tactical pants, military-spec boots. Precise, economical posture ready for extraction. GLMZ, noir extraction operative, moody neon-lit industrial setting with overhead lighting catching chrome augmentations, gritty Great Lakes Metropolitan Zone dystopian environment, cinematic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 28.5,
-    "Eastern European": 25.0,
-    "Hispanic/Latin American": 22.6,
-    "Southeast Asian": 13.6,
-    "Northern European": 10.3
+    "Hispanic/Latin American": 39.5,
+    "Sub-Saharan African": 33.5,
+    "Northern European": 15.4,
+    "North African": 11.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 32.9
+      },
+      "Central American": {
+        "Costa Rican": 6.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 8.1,
+        "Ethiopian": 3.6
+      },
+      "Southern African": {
+        "Zambian": 19.6
+      },
+      "Central African": {
+        "Gabonese": 2.1,
+        "Congolese": 0.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 0.4,
+        "English": 0.3
+      },
+      "Germanic": {
+        "Austrian": 2.6
+      },
+      "Scandinavian": {
+        "Swedish": 12.1
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 9.2,
+        "Egyptian": 2.4
+      }
+    }
+  }
 }

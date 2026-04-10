@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70f725280105dc5baff3dfd",
   "type": "character",
-  "name": "Soren Kristjánsson",
+  "name": "Koda Makwa",
   "aliases": [
     "Vash",
     "The Ethics Brick Wall"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Meridian Core — University Spine satellite office, Gage Circuit policy district, near State and Madison",
-  "description": "Vashti Orellana-Makhosetive has the physical presence of someone who has been in adversarial rooms for thirty years and learned exactly how to take up space. She is lean and angular, with dark brown skin, close-cropped natural hair gone fully white, and no cosmetic modifications of any kind — a choice she has made repeatedly and publicly, which reads differently depending on who is in the room. She dresses expensively and simply: clean lines, quality materials, nothing that could be read as soft. She carries a single physical notebook that she has maintained for the last decade, a practice her Helix Biosystems consulting clients find charming and her colleagues at University Spine find unsettling.\n\nVashti is formidably intelligent and has spent long enough in both academia and policy environments that she has developed a controlled, almost surgical quality in conversation — she asks questions she already knows the answer to in order to understand how the person being asked will lie. She is not warm, exactly, but she is fair in ways that are rare enough to be remarkable. She has survived the field long enough to have watched three generations of AI systems she evaluated go wrong in ways she predicted in writing, which has given her a weariness she covers with precision. She genuinely believes that most people in power are not malicious — they are incurious, which she finds almost harder to forgive.",
+  "description": "Koda Makwa has the physical presence of someone who has been in adversarial rooms for thirty years and learned exactly how to take up space. She is lean and angular, with dark brown skin, close-cropped natural hair gone fully white, and no cosmetic modifications of any kind — a choice she has made repeatedly and publicly, which reads differently depending on who is in the room. She dresses expensively and simply: clean lines, quality materials, nothing that could be read as soft. She carries a single physical notebook that she has maintained for the last decade, a practice her Helix Biosystems consulting clients find charming and her colleagues at University Spine find unsettling.\n\nVashti is formidably intelligent and has spent long enough in both academia and policy environments that she has developed a controlled, almost surgical quality in conversation — she asks questions she already knows the answer to in order to understand how the person being asked will lie. She is not warm, exactly, but she is fair in ways that are rare enough to be remarkable. She has survived the field long enough to have watched three generations of AI systems she evaluated go wrong in ways she predicted in writing, which has given her a weariness she covers with precision. She genuinely believes that most people in power are not malicious — they are incurious, which she finds almost harder to forgive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -165,7 +165,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -184,24 +184,14 @@
     "Gage Circuit",
     "The Nearfield",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Quiet Room",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "MERIDIAN",
-    "Patient Zero",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "The Burden Clause",
-    "The Question",
-    "Vuk Jorgensen-Toure"
+    "Circuit",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Northern European and Sub-Saharan African with Eastern European ancestry—a striking genetic blend that manifests in warm-toned deep brown skin with subtle golden undertones, the bone structure of Scandinavian descent refined through African heritage, and the resilient frame of Eastern European stock.",
+    "heritage": "Predominantly Indigenous American (61.5%) with significant Hispanic/Latin American (20%) and Northern European (18.5%) ancestry. This genetic combination produces warm medium-brown skin with subtle copper and golden undertones, the prominent cheekbones and defined facial structure characteristic of Indigenous American descent, refined through Hispanic/Latin American heritage expression, and tempered by Northern European genetic contribution. The result is a striking, high-cheekboned face with warm undertones that seem to glow from within.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular, with the careful musculature of someone who has maintained discipline through decades rather than intensity. No softness; each movement economical.",
@@ -209,8 +199,8 @@
     "hair_style": "Close-cropped, precision cut, maintained weekly",
     "hair_length": "Short",
     "eye_color": "Dark brown, unmodified",
-    "skin_tone": "Deep warm brown with golden undertones—the luminous richness that emerges from Northern European fairness genetics layered beneath Sub-Saharan African melanin expression, creating an even, naturally radiant complexion.",
-    "complexion": "Minimal grooming vanity — no cosmetic procedures, no age-reduction treatments. Fine lines around the eyes and mouth from thirty years of controlled expression. Skin well-maintained but not manicured. No visible scarring beyond the deliberate mark on her left jawline.",
+    "skin_tone": "Warm medium brown with subtle copper and golden undertones—the naturally radiant complexion that emerges from the dominant Indigenous American heritage enriched with Hispanic/Latin American warmth and Northern European refinement, creating an even, luminous finish with depth.",
+    "complexion": "Minimal grooming vanity — no cosmetic procedures, no age-reduction treatments. Fine lines around the eyes and mouth from thirty years of controlled expression. Skin well-maintained but not manicured. High, defined cheekbones characteristic of Indigenous American ancestry. No visible scarring beyond the deliberate mark on her left jawline.",
     "distinguishing_marks": [
       "A thin, pale scar running approximately 2cm along her left jawline, barely visible unless light catches it directly — origin unknown, never discussed."
     ],
@@ -218,14 +208,40 @@
     "posture_movement": "Spine straight, shoulders back without rigidity. Movements are minimal and purposeful — no flourish, no unconscious fidgeting. When sitting, she occupies exactly the space her body requires. When standing, she has learned to be still in ways that command attention without appearing to demand it.",
     "clothing_style": "Expensive minimalism. Neutral palette: charcoal, black, cream, dark grey. Tailored wool trousers, linen shirts, fitted blazers from mid-tier corpo brands that signal competence without ostentation. Quality leather belt, no visible jewelry except a thin silver watch (analog, mechanical — another deliberate choice). Her single physical notebook is leather-bound, worn, carried in a canvas messenger bag. Every choice reads as either principle or long habit — the distinction is intentionally unclear."
   },
-  "image_prompt": "Soren Kristjánsson, a lean 172cm figure in cyberpunk 2226, with luminous deep warm brown skin and high Nordic cheekbones, short white hair, dark unmodified eyes. Wearing tailored charcoal wool trousers, cream linen shirt, fitted black blazer, analog silver watch. Standing with perfect posture, minimal movement, utterly still and commanding. Canvas messenger bag at her side with worn leather notebook. Fine lines around eyes and mouth, thin pale scar barely visible along left jawline. No augmentations, no chrome—deliberate unmodification. Minimal jewelry. Cool corporate lobby lighting casting subtle shadows across her face, emphasizing bone structure. Mood: disciplined, controlled, untouchable. Great Lakes Metropolitan Zone corporate tier setting. Photography-realistic, dignified, thirty years of controlled expression visible in her stillness. --ar 2:3 --v 6",
+  "image_prompt": "Koda Makwa, a striking woman of 172cm lean build with warm medium-brown skin and subtle copper undertones, high Indigenous American cheekbones refined by Hispanic and Northern European heritage, dark brown unmodified eyes, short white hair with natural dark roots, precise and close-cropped. Thin pale scar barely visible along left jawline. Wearing tailored charcoal wool trousers, cream linen shirt, fitted black blazer from mid-tier corpo brand, quality leather belt, analog silver mechanical watch. No augmentations, no chrome. Posture perfectly straight, economical movements, sitting with exact precision. Leather-bound notebook in worn canvas messenger bag. Minimal expression, thirty years of controlled emotion visible in fine lines around eyes and mouth. GLMZ, Great Lakes Metropolitan Zone, Tier 1-2 corporate space, cool overhead lighting casting subtle shadows across her face, emphasizing cheekbone structure and scar, professional and composed demeanor, principle and habit indistinguishable --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 48.2,
-    "Sub-Saharan African": 41.3,
-    "Eastern European": 10.5
+    "Indigenous American": 61.5,
+    "Hispanic/Latin American": 20,
+    "Northern European": 18.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 38.9,
+        "Potawatomi": 2.6
+      },
+      "Andean": {
+        "Aymara": 20
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 20
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 3.9,
+        "German": 8.5
+      },
+      "British Isles": {
+        "Welsh": 3,
+        "English": 3.1
+      }
+    }
+  }
 }

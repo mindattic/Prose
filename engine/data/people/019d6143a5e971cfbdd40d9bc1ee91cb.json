@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Pulaski and Chicago Ave",
-  "description": "Davor Hedberg-Owusu-Ansah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 36, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bounty hunter out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Axel Nygaard is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 36, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bounty hunter out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -261,7 +261,7 @@
     "Ambusher": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Crucible Square",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,34 +275,13 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
-    "Slagworks Industrial",
     "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Glenville Sound",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Irontide Tidal Energy",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Oumarou Svec-Ranginui",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Prophet",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Timur Osei-Bjelke",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Slagworks Industrial",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European, East Asian, Sub-Saharan African, and Pacific Islander blend — 40% Scandinavian ancestry visible in bone structure and pallor; 30% East Asian ancestry in eye shape and facial proportions; 22% Sub-Saharan African heritage in skin richness and hair texture; 7% Pacific Islander ancestry in subtle warm undertones",
+    "heritage": "Northern European, Sub-Saharan African, and South Asian blend — 44.8% Northern European ancestry visible in bone structure and cool undertones; 36.1% Sub-Saharan African heritage in skin richness, depth, and natural hair texture; 19.1% South Asian ancestry contributing to facial proportions and warm undertones that create a complex, luminous medium brown skin tone with balanced cool and warm layers",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Athletic and lean with defined musculature — swimmer's shoulders, runner's legs. No excess weight. The body of someone who trains daily and treats their frame as a tool.",
@@ -310,8 +289,8 @@
     "hair_style": "Pulled back in a tight, practical braid. Styled for function, not aesthetics.",
     "hair_length": "Long",
     "eye_color": "Hazel with amber flecks",
-    "skin_tone": "Rich warm medium brown — the product of blended ancestry creating depth, with underlying cool undertones from Northern European heritage and warmth from Sub-Saharan and Pacific Islander lineage. Slight pallor from irregular sunlight exposure visible beneath the natural richness",
-    "complexion": "Angular facial structure reflecting blended heritage: high cheekbones and strong jaw characteristic of Northern European ancestry, refined by East Asian facial proportions and softened by Sub-Saharan and Pacific Islander warmth. Minimal grooming beyond the practical — no makeup, well-maintained scar tissue around left eyebrow. Skin shows the wear of someone who spends time outdoors and doesn't prioritize cosmetic upkeep.",
+    "skin_tone": "Medium warm brown with balanced undertones — the result of 44.8% Northern European cool ancestry layering beneath 36.1% Sub-Saharan African richness and 19.1% South Asian warmth. The blend creates a luminous, complex depth with neither cool nor warm dominating. Slight pallor from irregular sunlight exposure visible beneath the natural richness, particularly around the eyes and temples.",
+    "complexion": "Angular facial structure reflecting blended heritage: high cheekbones and strong jaw with refined proportions characteristic of the three-way ancestry blend. The face shows balanced feature contribution across all three heritages without dominance from any single line. Minimal grooming beyond the practical — no makeup, well-maintained scar tissue around left eyebrow. Skin shows the wear of someone who spends time outdoors and doesn't prioritize cosmetic upkeep.",
     "distinguishing_marks": [
       "Thin scar running from left temple to cheekbone — approximately 8cm, likely from a blade or broken glass, healed without professional correction",
       "Burn mark on right inner forearm — roughly 4cm diameter, circular, consistent with contact burn from industrial equipment or old bioware calibration scar",
@@ -322,15 +301,35 @@
     "posture_movement": "Stands with weight distributed between both feet, never fully relaxed. Movement is economical and fluid — dancer-like footwork combined with fighter's awareness. Eyes track everything in her visual field. Resting face is neutral, almost flat affect, but the micro-expressions suggest constant threat assessment. Walks like someone who expects trouble at any moment and has trained to respond in under half a second.",
     "clothing_style": "Practical Tier 3-4 runner's uniform: matte black tactical jacket with internal webbing for equipment, reinforced at stress points. Underneath, a fitted gray shirt treated for stain and damage resistance. Black cargo pants with utility pockets and concealed thigh holster. Worn boots with good traction and ankle support — scuffed, maintained but not replaced until necessary. One piece of jewelry: a silver chain bracelet with a flat credit token. No logos, no flash. Everything chosen for function. Overall aesthetic is 'someone you don't want to meet in an alley' — not because of style, but because of how the clothes hang on the frame and the scars visible at the wrists and neck."
   },
-  "image_prompt": "Cyberpunk 2226 street operative named Axel Nygaard, 172cm tall athletic lean frame, rich warm medium-brown skin with blended East Asian and Northern European features, high cheekbones strong jaw, hazel amber-flecked eyes with constant threat-assessment focus. Dark brown hair with reddish undertones pulled in tight practical braid, long. Long scar from left temple to cheekbone, burn mark on right forearm, black geometric tattoo on left wrist. Bioware adrenaline regulator visible as subdermal ridge on left neck with pale scar tissue, metallic spinal interface line at back of neck, knuckle scars from combat training. Matte black tactical jacket with internal webbing, reinforced gray fitted shirt, black utility cargo pants, worn scuffed boots. Silver chain bracelet with credit token. Neutral flat affect but micro-expressions showing threat assessment, economical fluid movement, weight balanced ready-stance. Dark cyberpunk alley setting, neon glow reflecting off wet pavement, cool blue and amber lighting emphasizing augmentations and scars, moody atmospheric. --ar 2:3 --v 6",
+  "image_prompt": "Axel Nygaard, a 172cm street runner with athletic lean build and dark brown hair in a tight braid, stands in GLMZ GLMZ environment. Medium warm brown complexion blending Northern European, Sub-Saharan African, and South Asian heritage with luminous depth. Hazel amber-flecked eyes showing constant threat assessment. Visible augmentation scars on neck including bioware adrenaline regulator ridge and spinal interface port. Thin blade scar running left temple to cheekbone, burn mark on inner forearm, knuckle boxer scars. Wears practical black tactical jacket, gray fitted shirt, black cargo pants, scuffed ankle boots. Silver chain bracelet with credit token. Neutral flat affect with micro-expressions suggesting fighter's awareness. Standing economical and fluid in half-light of neon-soaked alley with rain-slicked pavement, tracking surroundings with predatory focus. Film noir neo-noir lighting, cool neon blues and warm streetlight ambers emphasizing skin tone complexity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 40.4,
-    "East Asian": 30.5,
-    "Sub-Saharan African": 22.4,
-    "Pacific Islander": 6.7
+    "Northern European": 44.8,
+    "Sub-Saharan African": 36.1,
+    "South Asian": 19.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 40.6
+      },
+      "British Isles": {
+        "Irish": 4.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 36.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Malayali": 14.7,
+        "Punjabi": 4.4
+      }
+    }
+  }
 }

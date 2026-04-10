@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a375559af109ae7152bbda",
   "type": "character",
-  "name": "Luca Nygaard",
+  "name": "Luca Matai",
   "aliases": [
     "Mia Karimova",
     "Prof. Achebe"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "University Spine — Meridian Core adjacent, Tessera-endowed Ethics Center (which they find ideologically compromising), near State and Monroe",
-  "description": "Przemysława goes by either half of their hyphenate depending on the audience — Achebe in the University Spine corridors, Karimova in their mother's neighborhood in Hamtramck Enclave — and has long since stopped finding this exhausting. They are of middling height with a stocky frame kept deliberately soft, pale-gold skin with warm undertones, and a cat tail mod they got in their late twenties that they've kept because their students find it disarming and they are not above strategic disarmament. The tail is dark brown with a white tip and they are mostly unaware of how expressively it moves when they are thinking hard.\n\nPrzemysława's research sits at the intersection of machine cognition, E.L.F. phenomenology, and what they call 'the ethics of digital personhood in ambiguous cases.' They are the most-cited scholar in their field in GLMZ, which is a distinction that brings them speaking invitations, a Tessera-funded chair they didn't ask for, and a persistent sense that everyone is trying to get something from them. They are not wrong about this. They are a generous teacher who holds the line mercilessly on intellectual rigor, and they have been known to assign their own published papers with the instruction to find everything wrong with them.",
+  "description": "Luca Matai goes by either half of their hyphenate depending on the audience — Achebe in the University Spine corridors, Karimova in their mother's neighborhood in Hamtramck Enclave — and has long since stopped finding this exhausting. They are of middling height with a stocky frame kept deliberately soft, pale-gold skin with warm undertones, and a cat tail mod they got in their late twenties that they've kept because their students find it disarming and they are not above strategic disarmament. The tail is dark brown with a white tip and they are mostly unaware of how expressively it moves when they are thinking hard.\n\nLuca Matai's research sits at the intersection of machine cognition, E.L.F. phenomenology, and what they call 'the ethics of digital personhood in ambiguous cases.' They are the most-cited scholar in their field in GLMZ, which is a distinction that brings them speaking invitations, a Tessera-funded chair they didn't ask for, and a persistent sense that everyone is trying to get something from them. They are not wrong about this. They are a generous teacher who holds the line mercilessly on intellectual rigor, and they have been known to assign their own published papers with the instruction to find everything wrong with them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -192,7 +192,7 @@
     "Idealist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -204,31 +204,18 @@
     "Hamtramck Enclave",
     "University Spine",
     "Meridian Core",
-    "GLMZ",
     "The Fathom Line",
     "Tessera Corponation",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Arcturus KS-7 'Nursery'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "The Pale Mile",
-    "Gold",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus KS-7 'Nursery'",
-    "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
-    "Breck Tannen",
-    "Filomena Nzinga-Halvorsen",
-    "MERIDIAN",
-    "Parliament",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Compact",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Question",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ",
+    "Gold"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Southeast Asian plurality (31.7%) with significant Indigenous American (17%), Eastern European (15.3%), East Asian (14.9%), Hispanic/Latin American (11.4%), and South Asian (9.7%) ancestry. A truly global genetic admixture reflecting the Ubiquitous Diaspora, with Southeast Asian features as the dominant expression layered over multiple continental influences.",
+    "heritage": "Pacific Islander plurality (51.1%) as dominant genetic expression, with substantial layering from Hispanic/Latin American (20.0%), Sub-Saharan African (15.2%), and Southeast Asian (13.7%) ancestry. The genetic blend creates a striking warm-toned phenotype: Pacific Islander bone structure and facial proportions form the base, enriched by the broader cheekbone prominence and facial width patterns of Sub-Saharan African ancestry, with Southeast Asian eye shape and skin texture refinement, and Hispanic/Latin American warmth in overall coloration. A genuinely global admixture reflecting the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and deliberately soft-bodied, carrying weight with deliberate acceptance rather than athleticism. Broad shoulders, thick torso, substantial presence without tension.",
@@ -236,8 +223,8 @@
     "hair_style": "Worn loose and somewhat undisciplined, often pulled back with whatever is at hand — a pen, a twisted cord, rarely anything professional",
     "hair_length": "Medium (shoulder-length)",
     "eye_color": "Dark brown with subtle neural interface amber glow in low light",
-    "skin_tone": "Warm medium bronze with golden undertones — the layered result of Southeast Asian, East Asian, South Asian, and Indigenous American ancestry blended with Eastern European heritage. Sun-responsive, deepens with exposure rather than burning.",
-    "complexion": "Face structure reflects Southeast Asian and Indigenous American features: slightly rounded face shape, moderate cheekbones, naturally warm undertones. Fine-lined face showing habitual concentration furrow between brows; soft jawline; minimal cosmetic maintenance; reading glasses worn on a lanyard more often than in pockets. The overall effect is warm, approachable, and intellectually worn.",
+    "skin_tone": "Warm deep bronze with golden undertones — the result of Pacific Islander, Hispanic/Latin American, Sub-Saharan African, and Southeast Asian genetic blending. Rich warmth that catches light with subtle luminosity. Sun-responsive, deepens with exposure rather than burning.",
+    "complexion": "Face structure reflects Pacific Islander and Southeast Asian features layered with Sub-Saharan African richness: rounded face shape with broad width, moderately prominent cheekbones with warm fullness, naturally warm undertones with substantial depth and subtle radiance. Fine-lined face showing habitual concentration furrow between brows; soft jawline; minimal cosmetic maintenance; reading glasses worn on a lanyard more often than in pockets. The overall effect is warm, approachable, intellectually present, and distinctly non-homogenous.",
     "distinguishing_marks": [
       "Articulated cat tail mod visible at base of spine — dark brown with white tip, fully cybernetic, moves expressively during thought",
       "Faint stutter-correction scar at left temporal lobe, visible only at certain angles under strong light",
@@ -248,17 +235,51 @@
     "posture_movement": "Tends to lean forward when listening, weight balanced on the balls of feet even while seated. The tail moves almost independently — curling, flicking, wrapping around chair legs or their own waist when deep in thought. Walks with purpose but no haste. Hands gesture frequently during conversation, particularly when teaching.",
     "clothing_style": "Tier 2-3 academic blend: well-worn but quality pieces. Favors linen blazers in neutral tones, often with visible creasing from being sat upon while working. Durable black or dark denim. Expensive insole-embedded tech shoes (barely worn in visibly, very worn structurally). Layers against the Ethics Center's aggressive climate control. No visible corporate branding except for the University Spine pin on lecture blazers. Reads as someone who has access to resources but does not spend them on appearance."
   },
-  "image_prompt": "Luca Nygaard, 168cm tall, warm bronze-skinned Southeast Asian-heritage academic with dark shoulder-length hair threaded with silver at temples. Medium stocky build, soft-bodied presence. Medium-long dark hair pulled back carelessly. Dark brown eyes with subtle amber neural glow. Distinctive fully-articulated dark brown and white-tipped cybernetic cat tail extending from base of spine, actively curling around chair leg. Wearing well-creased neutral linen academic blazer over dark denim, expensive tech-embedded shoes. Reading glasses on lanyard. Leaning forward in thought, hands gesturing. Neural interface ports at skull base. Faint scar across left hand. Sitting at worn university desk surrounded by research materials, soft academic lighting, concentration furrow visible between brows. Cyberpunk 2226 Great Lakes Metropolitan setting, ethical computing lab environment, warm and approachable intellectual presence. --ar 2:3 --v 6",
+  "image_prompt": "Luca Matai, 2226 neo-noir academia, warm deep bronze skin with golden undertones from Pacific Islander, Hispanic/Latin American, Sub-Saharan African, and Southeast Asian heritage blend. Rounded face with broad cheekbones, dark brown eyes with subtle amber glow, shoulder-length dark brown hair with silver threads at temples, worn loose and undisciplined. Stocky build with broad shoulders and soft presence. Fully articulated dark brown cybernetic cat tail with white tip extending from base of spine, moving expressively. Worn linen blazer in neutral tone over layered clothing, dark denim, expensive tech-embedded shoes. Leaning forward in concentration, hands gesturing mid-thought, tail curling around chair leg. Neural interface ports visible at base of skull. Great Lakes Metropolitan Zone Ethics Center setting, cool climate-controlled ambient lighting, scholarly intensity, neo-noir minimalism, intellectually present expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 31.7,
-    "Indigenous American": 17.0,
-    "Eastern European": 15.3,
-    "East Asian": 14.9,
-    "Hispanic/Latin American": 11.4,
-    "South Asian": 9.7
+    "Pacific Islander": 51.1,
+    "Hispanic/Latin American": 20,
+    "Sub-Saharan African": 15.2,
+    "Southeast Asian": 13.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 30.5
+      },
+      "Polynesian": {
+        "Samoan": 1.9,
+        "Tongan": 3.8
+      },
+      "Melanesian": {
+        "Fijian": 14.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 10.7,
+        "Colombian": 9.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 15.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 7.2
+      },
+      "Laotian": {
+        "Laotian": 0.7
+      },
+      "Indonesian": {
+        "Sundanese": 5.8
+      }
+    }
+  }
 }

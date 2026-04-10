@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b77fc788ec309585a1fc80",
   "type": "character",
-  "name": "Lars Kristjánsson",
+  "name": "Mika Song",
   "aliases": [
     "Roz",
     "Professor Roz"
@@ -13,7 +13,7 @@
   "age": 72,
   "status": "active",
   "location": "Avalon Quiet, Unit 3B; teaches informal story sessions at the Avalon Community Hearth, near Lincoln and Addison",
-  "description": "Rosamund Fofana-Çelik is the kind of woman who makes a room feel both smaller and more significant simply by being present — she has that particular gravity of someone who spent decades at the front of a classroom demanding attention and getting it. She's medium height, brown-skinned, with warm undertones and a face built for expression, every emotion living near the surface and making no apologies. She wears her silver hair in elaborate braided wraps she learned from her Guinean grandmother and has continued perfecting for sixty years. Her only augmentation is cosmetic: her fingernails are geneware, growing in shifting blues and greens, a retirement gift she gave herself after twenty-eight years of being professionally 'appropriate.'\n\nShe is the best storyteller in Avalon Quiet, possibly in any of the Quiet districts, and she knows it without it making her insufferable — she treats it as a responsibility rather than a distinction. On the third evening of every month she holds sessions at the Community Hearth where she tells stories: sometimes history, sometimes myth, sometimes thinly veiled accounts of things that actually happened to people in the room who gave her permission. Children come because they're brought. Adults come because they keep coming back. She has never repeated a session in eleven years.",
+  "description": "Mika Song is the kind of woman who makes a room feel both smaller and more significant simply by being present — she has that particular gravity of someone who spent decades at the front of a classroom demanding attention and getting it. She's medium height, brown-skinned, with warm undertones and a face built for expression, every emotion living near the surface and making no apologies. She wears her silver hair in elaborate braided wraps she learned from her Guinean grandmother and has continued perfecting for sixty years. Her only augmentation is cosmetic: her fingernails are geneware, growing in shifting blues and greens, a retirement gift she gave herself after twenty-eight years of being professionally 'appropriate.'\n\nShe is the best storyteller in Avalon Quiet, possibly in any of the Quiet districts, and she knows it without it making her insufferable — she treats it as a responsibility rather than a distinction. On the third evening of every month she holds sessions at the Community Hearth where she tells stories: sometimes history, sometimes myth, sometimes thinly veiled accounts of things that actually happened to people in the room who gave her permission. Children come because they're brought. Adults come because they keep coming back. She has never repeated a session in eleven years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -176,7 +176,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Avalon Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,37 +242,23 @@
     "Grandmother",
     "The United Workers Front",
     "The Quiet Room",
-    "Crucible HS-2 'Hearth'",
     "Silver",
+    "Crucible HS-2 'Hearth'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Arcturus Defense Solutions",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "GLMZ",
-    "Kang Athletics KA-900 'Sensei'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Oumarou Svec-Ranginui",
-    "The Heritage Vault",
-    "The Open Syllabus",
-    "The Pure Hand",
-    "The Warm Wall",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Northern European (Scandinavian dominant) with significant Middle Eastern and Eastern European ancestry, resulting in a distinctive Mediterranean-Northern blend. Fair to light olive skin tone with warm undertones from the Middle Eastern and Eastern European components, complemented by the cooler undertones of Nordic heritage.",
+    "heritage": "East Asian dominant (50.5%) with significant Southeast Asian (25.2%), Sub-Saharan African (15.4%), and Hispanic/Latin American (8.9%) ancestry. This creates a rich, multifaceted phenotype: the East Asian foundation provides characteristic facial structure and eye shape, warmed and deepened by Southeast Asian and African components, with subtle warmth from Latin American heritage.",
     "height_cm": 163,
     "weight_kg": 68,
     "build": "Compact and proportional, neither frail nor heavy — the build of someone who walks daily and carries her years without apology. Shoulders still squared from decades of classroom presence.",
     "hair_color": "Silver-gray, naturally grayed over decades",
     "hair_style": "Elaborate braided wraps in intricate patterns, each braid reinforced and arranged with deliberate artistry, some adorned with small brass or ceramic beads passed down from her grandmother's collection",
     "hair_length": "Medium (wrapped close to scalp in braids extending to mid-shoulder when unwrapped)",
-    "eye_color": "Warm hazel-brown with subtle green-gold flecks, characteristic of Northern European and Middle Eastern blending, with the slight creasing at the corners that comes from seventy-two years of animated expression",
-    "skin_tone": "Light olive with warm golden undertones—the distinctive result of Scandinavian fairness modulated by Middle Eastern and Eastern European warmth. Neither purely pale nor deeply toned, but a harmonious warm-neutral that catches light beautifully.",
-    "complexion": "Smooth with dignified age lines—particularly pronounced around her eyes and mouth from decades of teaching and smiling. Fine, delicate facial structure reflecting Nordic heritage softened by the warmer, rounder features of Middle Eastern ancestry. Skin well-maintained, no visible scarring or blemishing. Expression naturally animated even in repose.",
+    "eye_color": "Deep warm brown with subtle amber undertones, characteristic of East and Southeast Asian heritage enriched by African ancestry, with the slight creasing at the corners that comes from seventy-two years of animated expression",
+    "skin_tone": "Warm medium golden-brown — the harmonious blend of East Asian warmth with deeper Sub-Saharan African and Southeast Asian tones, creating a luminous complexion that catches light beautifully with golden and amber undertones.",
+    "complexion": "Smooth with dignified age lines—particularly pronounced around her eyes and mouth from decades of teaching and smiling. Facial structure reflects East Asian heritage (softer cheekbones, gentle eye shape) enriched by the fuller features characteristic of Southeast Asian and African ancestry. Skin well-maintained, no visible scarring or blemishing. Expression naturally animated even in repose.",
     "distinguishing_marks": [
       "Faint surgical scar along left wrist (appendectomy, 2178) — barely visible unless examined closely",
       "Small burn scar on right forearm (cooking accident, 2195) — pale and largely faded"
@@ -281,14 +267,52 @@
     "posture_movement": "Upright and grounded, with the natural authority of someone accustomed to commanding a room. She moves deliberately rather than quickly, each gesture economical and purposeful. When speaking, her hands are never still — they illustrate, emphasize, and invite listeners into the narrative. Sits with perfect spinal alignment.",
     "clothing_style": "Tier 3-4 working class, but with evident personal style and dignity. Favors well-fitted linen and cotton blends in earth tones (ochre, rust, deep greens) — practical for warm GLMZ summers but elevated by careful tailoring and layering. Often wears a patterned wrap or kente-inspired shawl over her shoulders. Simple jewelry: a plain gold wedding band (worn since 2174), small ceramic earrings she makes herself, occasionally a brooch of brass or natural stone. Comfortable, supportive shoes suitable for daily walking. Nothing nouveau-riche or ostentatiously modified; everything speaks to intentionality and long wear."
   },
-  "image_prompt": "A seventy-two-year-old woman of Nordic-Mediterranean heritage, 163cm tall, compact build with squared shoulders. Light olive skin with golden undertones, warm hazel-brown eyes with subtle green-gold flecks. Silver-gray hair arranged in elaborate braided patterns adorned with brass beads, wrapped close to the scalp. Fine facial features with dignified age lines around eyes and mouth, expressive and animated expression. Wearing earth-tone linen and cotton blend clothing in ochre and rust, draped with a patterned kente-inspired wrap. Simple gold wedding band, handmade ceramic earrings. Iridescent blue-green geneware fingernails visible as hands gesture expressively. Upright posture, grounded presence. Warm lighting casting soft shadows on her olive complexion. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, interior classroom or community space, dignified and authoritative presence. --ar 2:3 --v 6",
+  "image_prompt": "Mika Song, 72-year-old woman with warm golden-brown complexion reflecting East Asian, Southeast Asian, Sub-Saharan African, and Hispanic ancestry. Silver-gray hair arranged in intricate braids adorned with brass and ceramic beads, wrapped close to scalp. Deep warm brown eyes with amber undertones and creases from decades of animated expression. Compact 163cm frame with squared shoulders and upright, grounded posture. Wearing well-fitted ochre linen shirt layered beneath a patterned kente-inspired shawl in rust and deep green tones. Plain gold wedding band, handmade ceramic earrings, faint iridescent blue-green geneware fingernails visible as she gestures expressively. Dignified age lines around eyes and mouth, smooth warm complexion catching light beautifully. Classroom mentor aesthetic, deliberately purposeful movement, natural authority. GLMZ 2200s Great Lakes Metropolitan Zone, warm afternoon indoor lighting, soft shadows emphasizing character and warmth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 55.1,
-    "Middle Eastern": 34.7,
-    "Eastern European": 10.2
+    "East Asian": 50.5,
+    "Southeast Asian": 25.2,
+    "Sub-Saharan African": 15.4,
+    "Hispanic/Latin American": 8.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 36.4
+      },
+      "Japanese": {
+        "Japanese": 14.1
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 10.6
+      },
+      "Cambodian": {
+        "Khmer": 12.5
+      },
+      "Indonesian": {
+        "Javanese": 2.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 5.5,
+        "Ethiopian": 3.3
+      },
+      "Central African": {
+        "Congolese": 4.6,
+        "Cameroonian": 2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 2.5,
+        "Colombian": 6.4
+      }
+    }
+  }
 }

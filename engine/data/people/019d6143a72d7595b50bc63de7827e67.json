@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72d7595b50bc63de7827e67",
   "type": "character",
-  "name": "Mateo Esquivel",
+  "name": "Pavel Sokolov",
   "aliases": [
     "Tía Ysa",
     "The Widow"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Montclare Quiet, third-floor walkup apartment above a synthetic food cooperative, near Milwaukee and North Ave",
-  "description": "Ysabel is a compact, kinetic woman who moves like someone with a permanent to-do list she is racing against. Her heritage is Kazakh and Congolese on one side, Basque and Filipina on the other, and she has inherited a particular combination of high cheekbones, deep-set dark eyes, and a complexion the color of strong tea that she has never once thought about because there has always been something more pressing to think about. Her hair is natural black with silver threading through it, worn in a practical knot held by whatever is nearby — today a stylus, yesterday a fork. She has a small blue bioluminescent patch on her left collarbone, a cosmetic genemod she got when her daughter was still alive and the two of them went together; she has never removed it.\n\nShe worked for Axiom Corp for twenty-one years as an administrative coordinator, which is a title that means she was the person who actually made things function while people with better titles collected the credit. She retired at 58 when her daughter and son-in-law were killed in a transit accident — the same Ferrogate collapse that took Dragomir Achebe-Qalashani's leg, though they have never met — and she became the primary caregiver for her grandchildren Kojo, now 11, and Amara, now 8. Her pension from Axiom is tier-2 and she is meticulous about budgeting it, but every time she gets a small surplus she spends it on the children's education supplements rather than herself. She is holding together so completely on the outside that almost no one has noticed she has not fully processed her daughter's death.",
+  "description": "Pavel Sokolov is a compact, kinetic woman who moves like someone with a permanent to-do list she is racing against. Her heritage is Kazakh and Congolese on one side, Basque and Filipina on the other, and she has inherited a particular combination of high cheekbones, deep-set dark eyes, and a complexion the color of strong tea that she has never once thought about because there has always been something more pressing to think about. Her hair is natural black with silver threading through it, worn in a practical knot held by whatever is nearby — today a stylus, yesterday a fork. She has a small blue bioluminescent patch on her left collarbone, a cosmetic genemod she got when her daughter was still alive and the two of them went together; she has never removed it.\n\nShe worked for Axiom Corp for twenty-one years as an administrative coordinator, which is a title that means she was the person who actually made things function while people with better titles collected the credit. She retired at 58 when her daughter and son-in-law were killed in a transit accident — the same Ferrogate collapse that took Dragomir Achebe-Qalashani's leg, though they have never met — and she became the primary caregiver for her grandchildren Kojo, now 11, and Amara, now 8. Her pension from Axiom is tier-2 and she is meticulous about budgeting it, but every time she gets a small surplus she spends it on the children's education supplements rather than herself. She is holding together so completely on the outside that almost no one has noticed she has not fully processed her daughter's death.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -179,7 +179,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,60 +243,65 @@
   "related_entities": [
     "Montclare Quiet",
     "Ferrogate Transit",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Heritage Vault",
+    "The Accidental",
     "The Gradient Compact",
     "Silver",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus Defense Solutions ETF-3 'Mantis'",
-    "The Milwaukee Core",
-    "Ambrogio Waweru-Djordanović",
-    "Anatoliy Faye-Nkrumah",
-    "Dragomir Achebe-Qalashani",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Ilhan Sandstrom-Badu",
-    "Patient Zero",
-    "Praevex",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Nexus Town Car",
-    "The Coffin Nails",
-    "The Pure Hand",
-    "Thessaly Oduya-Varga",
-    "Vuk Jorgensen-Toure"
+    "Compass Rose",
+    "Arcturus Defense Solutions ETF-3 'Mantis'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Eastern European (73.6%) with significant Hispanic/Latin American (11.4%), Northern European (7.9%), and Pacific Islander (7.1%) ancestry. The genetic mix creates a unique phenotype: the solid bone structure and lighter undertones of Eastern European heritage blend with warmer olive tones from Hispanic and Pacific Islander ancestry, resulting in a complexion that shifts between cool and warm depending on light.",
+    "heritage": "Pavel Sokolov carries a striking tricontinent blend: 47.4% Hispanic/Latin American ancestry provides warm olive undertones and prominent cheekbones; 27.3% Eastern European heritage contributes angular bone structure, a defined jawline, and cooler undertones; 25.3% East Asian ancestry shapes eye geometry, cheekbone prominence, and facial proportions. The result is a complexion that shifts between warm golden-olive and cool slate depending on light, with subtle bronze reflectivity—a sophisticated interplay of three distinct genetic traditions.",
     "height_cm": 158,
     "weight_kg": 52,
-    "build": "Compact and wiry, with the lean musculature of someone who moves constantly and eats efficiently. No excess, no softness — her body is a functional tool she has never prioritized maintaining.",
+    "build": "Compact and wiry, with the lean musculature of someone who moves constantly and eats efficiently. No excess, no softness — the body is a functional tool never prioritized for maintenance.",
     "hair_color": "Natural black with silver threading",
     "hair_style": "Worn in a practical knot, secured with whatever is at hand (pen, stylus, fork, chopstick)",
     "hair_length": "Medium to long, always pinned up",
     "eye_color": "Deep brown, natural; left eye contains a faint corrective lens implant visible only under direct light",
-    "skin_tone": "Warm olive-beige, the color of honey with slate undertones — a sophisticated blend of Eastern European coolness and Hispanic/Pacific Islander warmth. Medium depth with slight golden reflectivity in natural light.",
-    "complexion": "Minimal grooming, weathered by 21 years of corporate work and 5 years of single-parent grandparenting. Fine lines around her eyes and mouth. Her face is expressive but rarely at rest — always slightly tensed toward the next task. Subtle warmth in cheekbones reflects Pacific Islander and Hispanic ancestry; angular Eastern European bone structure shapes her face. Hands show minor calluses from food cooperative work. Nails kept short and practical.",
+    "skin_tone": "Warm golden-olive with slate undertones — a sophisticated medium-deep blend reflecting the tricontinent ancestry mix. Subtle bronze reflectivity in natural light.",
+    "complexion": "Minimal grooming, weathered by decades of corporate work and caregiving. Fine lines around eyes and mouth. Face is expressive but rarely at rest—always slightly tensed toward the next task. Prominent cheekbones reflect Hispanic and East Asian ancestry; angular Eastern European bone structure shapes jawline and brow ridge. Hands show minor calluses from food cooperative work. Nails kept short and practical.",
     "distinguishing_marks": [
-      "Small bioluminescent blue patch on left collarbone, roughly the size of a coin, faintly glowing in low light — a cosmetic genemod she received with her late daughter decades ago",
+      "Small bioluminescent blue patch on left collarbone, roughly the size of a coin, faintly glowing in low light — a cosmetic genemod received decades ago",
       "Faint scar on right palm, thin and old, consistent with minor kitchen burn or accident from years past",
-      "Thin stress lines across her forehead that deepen when she is concentrating on budget calculations"
+      "Thin stress lines across forehead that deepen when concentrating on budget calculations"
     ],
-    "visible_augmentations": "The bioluminescent patch on her collarbone is the only visible augmentation; it glows faintly in dim light. The reading lens implant in her left eye is invisible unless examined closely. No chrome, no obvious modifications — her augmentations are practical and decades old, chosen for function, not aesthetics.",
-    "posture_movement": "She moves with constant, economical motion — never still, always oriented toward the next task. Her posture is upright but not rigid, shoulders slightly forward as if she is always leaning into the day ahead. She walks quickly, even when not rushing. When seated, she is rarely fully relaxed; her hands are usually occupied — folding, organizing, calculating. Her default expression is focused, slightly furrowed, with an undercurrent of exhaustion she does not acknowledge.",
-    "clothing_style": "Tier 3-4 practical: well-maintained but worn synthetic fabrics in neutral colors (charcoal, dark blue, gray, black). Her work uniform at the food cooperative is a green apron over simple tech-blend clothing. Off-duty she wears durable pants (often with multiple pockets for carrying children's things), simple long-sleeved shirts to cover the bioluminescent patch (habit, not intention), and flat, worn shoes suitable for standing all day. No jewelry except a simple band on her left ring finger — her late husband's. No personal style flourishes; everything is chosen for durability and washing instructions. Her clothing smells faintly of synthetic food base and the detergent from the cooperative's washing station."
+    "visible_augmentations": "The bioluminescent patch on collarbone is the only visible augmentation; it glows faintly in dim light. The reading lens implant in left eye is invisible unless examined closely. No chrome, no obvious modifications—augmentations are practical and decades old, chosen for function, not aesthetics.",
+    "posture_movement": "Constant, economical motion—never still, always oriented toward the next task. Upright but not rigid posture, shoulders slightly forward as if leaning into the day ahead. Quick walk, even when not rushing. When seated, rarely fully relaxed; hands usually occupied—folding, organizing, calculating. Default expression is focused, slightly furrowed, with undercurrent of exhaustion.",
+    "clothing_style": "Tier 3-4 practical: well-maintained but worn synthetic fabrics in neutral colors (charcoal, dark blue, gray, black). Work uniform at food cooperative is green apron over simple tech-blend clothing. Off-duty: durable pants with multiple pockets, simple long-sleeved shirts to cover the bioluminescent patch, flat worn shoes suitable for standing all day. Simple band on left ring finger—late spouse's. No jewelry or personal style flourishes; everything chosen for durability. Clothing smells faintly of synthetic food base and cooperative washing station detergent."
   },
-  "image_prompt": "Mateo Esquivel, 158cm tall, compact wiry build, cyberpunk 2226 Great Lakes setting. Woman with natural black hair streaked with silver, worn in practical upknot, deep brown eyes with faint corrective implant. Warm olive-beige skin with Eastern European bone structure and Pacific Islander warmth in cheekbones. Faint bioluminescent blue patch glowing softly on left collarbone beneath charcoal long-sleeved shirt. Fine stress lines around eyes, focused expression. Wearing durable gray tech-blend pants with multiple pockets, worn flat shoes, simple practical clothing, tired but driven posture leaning into next task. Hands showing minor calluses, short practical nails. Left ring finger bears simple band. Minimalist aesthetic, functional augmentations only, no chrome. Setting: dimly lit food cooperative or modest apartment, cool neon light catching the faint glow of her bioluminescent patch, exhausted but determined expression. Cyberpunk 2200s atmosphere, practical and worn, enduring and economical. --ar 2:3 --v 6",
+  "image_prompt": "A weathered woman in her 60s with striking tricontinent features: warm golden-olive skin with cool slate undertones, prominent cheekbones blending Hispanic and East Asian ancestry with angular Eastern European bone structure. Natural black hair with silver threading pulled into a practical knot secured with a pen. Deep brown eyes showing faint lines of concentration. Lean, compact build. Wearing worn charcoal synthetic shirt with long sleeves covering a faintly glowing bioluminescent blue patch on her collarbone. Simple wedding band visible. Standing in a dimly-lit food cooperative warehouse, fluorescent overhead lights casting cool shadows across her focused, slightly-furrowed expression. Hands showing minor calluses, posture slightly forward-leaning. GLMZ, realistic portrait, weathered but dignified, functional augmentations, worn but well-maintained clothing, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 73.6,
-    "Hispanic/Latin American": 11.4,
-    "Northern European": 7.9,
-    "Pacific Islander": 7.1
+    "Hispanic/Latin American": 47.4,
+    "Eastern European": 27.3,
+    "East Asian": 25.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 11.4,
+        "Argentine": 4.4
+      },
+      "Mexican": {
+        "Mexican": 31.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 27.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 25.3
+      }
+    }
+  }
 }

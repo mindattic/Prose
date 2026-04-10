@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64d7389b75bb2d6e896bba5",
   "type": "character",
-  "name": "Cleo Lewandowski",
+  "name": "Cleo Kim",
   "aliases": [
     "Lou",
     "Lolo"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Lockhaven South, Block 7 residential tower, near Milwaukee and Damen",
-  "description": "Lourdes is compact and quick-moving, with warm medium-brown skin and natural hair twisted into small locs they keep tucked under a work cap most of the time. They have cat ears — a geneware mod their older sister got them as a birthday gift five years ago, tawny-colored with dark tips, fully expressive — and they've stopped explaining or defending them at work because the residents have mostly stopped caring. Their uniform is always impeccable despite the nature of their job; they find sloppiness in presentation embarrassing in a way they can't fully articulate.\n\nLourdes has worked the Lockhaven South night shift for three years and knows Block 7 the way a doctor knows a patient — its particular sounds, its patterns of illness, which pipes cough before they fail. They are deeply competent and substantially underestimated by the building's management company, which is a dynamic they have made a conscious decision to exploit rather than correct. They are genuinely fond of the building's long-term residents — the elderly Freyja-Asante couple on the ninth floor, the three siblings who share a studio on the second — and quietly protect them from management's more extractive impulses. They pray to the building's embedded E.L.F. they call 'the Concierge,' a data-spirit they believe actually governs the elevator timing.",
+  "description": "Cleo Kim is compact and quick-moving, with warm medium-brown skin and natural hair twisted into small locs they keep tucked under a work cap most of the time. They have cat ears — a geneware mod their older sister got them as a birthday gift five years ago, tawny-colored with dark tips, fully expressive — and they've stopped explaining or defending them at work because the residents have mostly stopped caring. Their uniform is always impeccable despite the nature of their job; they find sloppiness in presentation embarrassing in a way they can't fully articulate.\n\nCleo Kim has worked the Lockhaven South night shift for three years and knows Block 7 the way a doctor knows a patient — its particular sounds, its patterns of illness, which pipes cough before they fail. They are deeply competent and substantially underestimated by the building's management company, which is a dynamic they have made a conscious decision to exploit rather than correct. They are genuinely fond of the building's long-term residents — the elderly Freyja-Asante couple on the ninth floor, the three siblings who share a studio on the second — and quietly protect them from management's more extractive impulses. They pray to the building's embedded E.L.F. they call 'the Concierge,' a data-spirit they believe actually governs the elevator timing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -154,7 +154,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lockhaven South",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,24 +173,11 @@
     "ShieldTech SB-3 'Groundstrike'",
     "Spire Sequence No. 9",
     "The Gradient Compact",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Auricula Felis Modification",
-    "Calumet Rise",
-    "Forge-Smith Collective Carbon Machete 'Cane Cutter'",
-    "Ilhan Sandstrom-Badu",
-    "Lockhaven North",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Sulfur Crown Agriculture",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African (51.6%) with significant Eastern European (28.5%), Indigenous American (11.2%), and Northern European (8.7%) ancestry. Genetic mix creates striking phenotype: warm medium-brown skin tone with subtle olive undertones from North African-Eastern European blend, high cheekbones with slight angular structure from Indigenous American ancestry, warm deep brown eyes with alert quality.",
+    "heritage": "East Asian (42.7%) with significant Middle Eastern (34.5%), Eastern European (18.1%), and South Asian (4.7%) ancestry. This genetic blend creates a striking, distinctive phenotype: the dominant East Asian and Middle Eastern components establish warm medium-bronze undertones, while Eastern European ancestry contributes subtle cool undertones that create complexity in the skin's luminosity. South Asian heritage adds warmth and depth to the overall palette. Result is a warm golden-bronze skin tone with remarkable luminosity—not quite golden, not quite copper, but a harmonious blend that catches light distinctively.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and efficient, lean muscle with minimal body fat — built for sustained movement rather than power. Quick-limbed, economical in motion.",
@@ -198,8 +185,8 @@
     "hair_style": "Twisted into small locs, typically secured under a work cap during shifts",
     "hair_length": "Medium (locs reach mid-shoulder when loose)",
     "eye_color": "Deep brown, warm and alert",
-    "skin_tone": "Warm medium brown with subtle olive undertones; even complexion reflecting dominant North African heritage with Eastern European and Indigenous American undertones creating distinctive warm richness",
-    "complexion": "Clear skin with a few faint scars on the knuckles (work-related minor injuries, healed cleanly). Sharp, angular cheekbones with slight high prominence characteristic of Indigenous American ancestry, composed expression. No facial hair. Minimal makeup—practical grooming only.",
+    "skin_tone": "Warm golden-bronze with complex luminosity; medium saturation reflecting the balanced interplay of dominant East Asian-Middle Eastern ancestry tempered by Eastern European cool undertones and South Asian warmth. Skin appears to glow subtly from within.",
+    "complexion": "Clear skin with a few faint scars on the knuckles (work-related minor injuries, healed cleanly). Prominent, high cheekbones with balanced structure reflecting East Asian and Middle Eastern heritage, softened slightly by South Asian influence. Angular but not severe facial geometry. Composed expression. No facial hair. Minimal makeup—practical grooming only.",
     "distinguishing_marks": [
       "Geneware cat ears (tawny-colored with dark chocolate tips, fully expressive and mobile) mounted at the crown where human ears would be — clearly a five-year-old mod, well-integrated and shows no signs of rejection",
       "A thin pale scar running approximately 2cm along the outer edge of the left wrist, partially hidden by wristband when working"
@@ -208,15 +195,46 @@
     "posture_movement": "Upright but economical posture, no wasted motion. Moves with quiet purposefulness—practiced in navigating residential spaces without drawing attention. Head often slightly angled as if listening. Hands move deliberately. When at rest, occasionally touches the base of cat ear mods unconsciously.",
     "clothing_style": "Work uniform maintained with obsessive precision: dark gray Palladian Property Management standard-issue coveralls (Tier 4 quality, maintained better than most), reinforced at knees and elbows, always clean. Under-layer is practical thermal wear. Sturdy non-slip boots, regularly cleaned. Work cap (dark gray mesh, functional) worn most shifts. Off-duty style is equally neat: fitted athletic wear from mid-tier brands (Evoke, Kinetic), practical layers, minimal jewelry except a small silver pendant (possibly religious or sentimental). Cap never fully absent from daily life—often a baseball or knit cap even off-duty."
   },
-  "image_prompt": "Cleo Lewandowski, compact 162cm mixed-heritage woman, warm medium-brown skin with olive undertones, high angular cheekbones, deep warm brown eyes. Black locs pulled under dark gray work cap. Tawny geneware cat ears with dark chocolate tips mounted at crown, fully expressive. Wearing immaculate dark gray Palladian Property Management coveralls with reinforced knees and elbows, thermal underlayer visible at collar, sturdy non-slip boots. Small silver pendant. Faint work scars on knuckles, thin pale scar on left wrist. Alert, economical posture, head slightly angled as if listening. Quiet purposeful presence, minimal wasted motion. Cyberpunk 2226 Great Lakes Metropolitan Zone, residential maintenance shift setting, cool industrial lighting with warm practical work illumination, focused and composed expression, near-photorealistic portraiture --ar 2:3 --v 6",
+  "image_prompt": "Cleo Kim, 2226 neo-noir era, 162cm tall lean figure in dark gray Palladian Property Management coveralls, obsessively maintained. Striking warm golden-bronze complexion with luminous quality, high prominent cheekbones, deep brown alert eyes. Medium black locs with warm undertones, typically under dark gray work cap. Distinctive geneware cat ears mounted at crown—tawny colored with dark chocolate tips, fully expressive and mobile, showing perfect biological integration from five-year-old modification. Faint scars on knuckles, thin scar on left wrist. Upright economical posture, moves with quiet purposefulness, head slightly angled as if listening. Hands deliberate. No chrome, no visible cybernetics beyond cat ears. Practical grooming, minimal makeup. Residential maintenance worker aesthetic. Cool residential lighting, evening shift atmosphere, subtle glow on golden-bronze skin. GLMZ 2200s aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 51.6,
-    "Eastern European": 28.5,
-    "Indigenous American": 11.2,
-    "Northern European": 8.7
+    "East Asian": 42.7,
+    "Middle Eastern": 34.5,
+    "Eastern European": 18.1,
+    "South Asian": 4.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 17.3
+      },
+      "Japanese": {
+        "Japanese": 7.1
+      },
+      "Korean": {
+        "Korean": 18.3
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 20.5,
+        "Tajik Persian": 14
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Slovenian": 6.5,
+        "Bulgarian": 11.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 4.3,
+        "Sinhalese": 0.4
+      }
+    }
+  }
 }

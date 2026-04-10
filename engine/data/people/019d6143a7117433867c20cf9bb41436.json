@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7117433867c20cf9bb41436",
   "type": "character",
-  "name": "Mariposa Ingebrigtsen",
+  "name": "Yasmin Bangura",
   "aliases": [
     "Vez",
     "The Calibrator"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown — Ironvein Augmentation Clinic, Level 2 Bay, near North Ave and Milwaukee",
-  "description": "Vesimir is slight and precise, with warm amber skin, shaved temples, and a crown of loose dark curls that they dye in shifting gradients — currently deep violet fading to copper. Their irises are calibration-patterned, concentric rings of grey and gold that pulse faintly when they're running a neural diagnostic, a mod they had installed as both a professional tool and an aesthetic statement. They wear clean white clinical uniforms with a single personal touch: a small embroidered patch of their home district stitched to the shoulder. Their hands are rarely still — they tap rhythms on surfaces when thinking, flex their fingers between sessions.\n\nVesimir is the person who sees patients after the glamorous augmentation surgery is done and the reality sets in — the migraines, the dissociation, the body-horror of a new sense that the brain doesn't yet recognize as self. They are enormously patient in a way that reads almost inhuman until you catch the flash of genuine distress behind their eyes when a patient is struggling. They have opinions about augmentation culture that they mostly keep to themselves, believing that the industry sells transformation without adequately preparing people for the grief that sometimes accompanies it.",
+  "description": "Yasmin Bangura is slight and precise, with warm amber skin, shaved temples, and a crown of loose dark curls that they dye in shifting gradients — currently deep violet fading to copper. Their irises are calibration-patterned, concentric rings of grey and gold that pulse faintly when they're running a neural diagnostic, a mod they had installed as both a professional tool and an aesthetic statement. They wear clean white clinical uniforms with a single personal touch: a small embroidered patch of their home district stitched to the shoulder. Their hands are rarely still — they tap rhythms on surfaces when thinking, flex their fingers between sessions.\n\nYasmin Bangura is the person who sees patients after the glamorous augmentation surgery is done and the reality sets in — the migraines, the dissociation, the body-horror of a new sense that the brain doesn't yet recognize as self. They are enormously patient in a way that reads almost inhuman until you catch the flash of genuine distress behind their eyes when a patient is struggling. They have opinions about augmentation culture that they mostly keep to themselves, believing that the industry sells transformation without adequately preparing people for the grief that sometimes accompanies it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -187,7 +187,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,24 +246,17 @@
     "Tessera Phased Array Disruptor PAD-3 'Sunspot'",
     "Geartown",
     "Ironvein",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Neural Palate",
     "The Pure Hand",
+    "Compass Rose",
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Gold",
-    "The Milwaukee Core",
-    "Calumet Rise",
-    "Ferrogate Transit",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pan-diaspora blend: primarily Hispanic/Latin American (37.7%) and Northern European (33.4%), with significant North African (17.1%) and Southeast Asian (11.8%) ancestry. The combination yields a distinctive phenotype — warm olive-bronze skin with subtle golden undertones, angular facial structure bridging Mediterranean and Latin features, with Southeast Asian influence visible in eye shape and cheekbone prominence.",
+    "heritage": "Pan-diaspora blend: primarily South Asian (45.4%) with significant Hispanic/Latin American (24.7%), Sub-Saharan African (20.5%), East Asian (6.3%), and Eastern European (3.1%) ancestry. The combination yields a distinctive phenotype — warm deep caramel to bronze skin with golden and amber undertones, facial structure bridging South Asian prominence with Latin softness, cheekbones naturally high and defined from Sub-Saharan African heritage, eye shape subtly shaped by East Asian ancestry, skin texture refined and even. The overall effect is a harmonious blend where no single heritage dominates the appearance, creating a uniquely multivalent beauty.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and lean, almost ascetic — wiry muscle from standing eight hours daily, minimal body fat, the economical posture of someone who's learned to exist in tight spaces",
@@ -271,8 +264,8 @@
     "hair_style": "Crown of loose dark curls swept back from shaved temples, asymmetrical and deliberately maintained",
     "hair_length": "Medium (3-4 inches at crown, faded to stubble at sides)",
     "eye_color": "Concentric calibration rings of grey and gold, pulsing faintly during diagnostic activity",
-    "skin_tone": "Warm olive-bronze with golden undertones, mid-depth complexion reflecting the blend of Hispanic, Northern European, North African, and Southeast Asian ancestry",
-    "complexion": "Clean, minimal makeup, professionally groomed. High angular cheekbones with subtle width reflecting Southeast Asian heritage, sharp jawline softened by relative youth and Latin features. Skin shows no visible damage — rigorously maintained, likely a professional habit. Expression typically neutral until engagement, then animated with quiet intensity.",
+    "skin_tone": "Warm deep caramel to bronze with golden and amber undertones, mid-to-deep complexion reflecting the balanced blend of South Asian, Hispanic/Latin American, Sub-Saharan African, East Asian, and Eastern European ancestry",
+    "complexion": "Clean, minimal makeup, professionally groomed. High angular cheekbones with natural fullness reflecting South Asian and Sub-Saharan African heritage, sharp jawline softened by Latin warmth and relative youth. Eyes have subtle epicanthic shape from East Asian ancestry. Skin shows no visible damage — rigorously maintained, likely a professional habit. Expression typically neutral until engagement, then animated with quiet intensity.",
     "distinguishing_marks": [
       "Faint bioluminescent tracery along both forearms — delicate, constellated patterns that glow pale blue-white in low light, done at age 19",
       "Subdermal neural interface port visible at the base of the skull as a small raised scar with faint circuitry tattoo markers around it"
@@ -281,15 +274,57 @@
     "posture_movement": "Precise and economical — minimal wasted motion. Hands in near-constant subtle movement (finger flexing, rhythm-tapping on surfaces) when thinking or between patients. Stands slightly forward-leaning when listening, suggesting active engagement. Movements are deliberate, unhurried, almost meditative.",
     "clothing_style": "Clean white clinical uniform as standard work attire, well-maintained but not expensive. Single personal embellishment: small embroidered patch of home district on shoulder. Off-shift: Tier 3 casual — functional layers, muted colors, minimal branding. Footwear practical (clinic clogs at work, transit-grade shoes commuting). Jewelry sparse: possibly a single thin ring or wrist cuff with subtle circuitry aesthetic."
   },
-  "image_prompt": "Mariposa Ingebrigtsen, 168cm lean clinical professional, warm olive-bronze skin with golden undertones, high angular cheekbones, sharp jawline. Deep violet-to-copper ombre hair, asymmetrical cut with shaved temples and loose curls at crown. Cybernetic eyes: concentric grey-gold calibration rings pulsing softly. Bioluminescent pale blue-white constellation tracery visible on both forearms. Subdermal neural port visible at skull base with circuitry tattoo markers. White clinical uniform, professional grooming, neutral expression. Hands in subtle motion, forward-leaning posture suggesting active listening. Cyberpunk 2226, Great Lakes Metropolitan Zone clinic setting, clinical LED lighting casting cool white-blue over warm skin tones, diagnostic moment, meditative intensity. --ar 2:3 --v 6",
+  "image_prompt": "Yasmin Bangura, 168cm lean clinical professional in GLMZ, warm caramel-bronze skin with golden undertones reflecting blended South Asian, Hispanic, Sub-Saharan African, East Asian and Eastern European heritage. High defined cheekbones, sharp jawline softened by Latin warmth, subtle East Asian eye shape. Asymmetrical hairstyle: deep violet fading to copper curls at crown, shaved temples. Pulsing grey-gold calibration-ring irises with diagnostic glow. Pale blue-white bioluminescent constellation patterns on bare forearms. White clinical uniform, neutral expression, precise meditative posture. Neural interface port scar visible at skull base. Minimalist professional aesthetic, muted colors, clinical lighting emphasizing skin tone and bioluminescent tracery. GLMZ 2200s clinic setting, quiet intensity, forward-leaning engaged posture. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 37.7,
-    "Northern European": 33.4,
-    "North African": 17.1,
-    "Southeast Asian": 11.8
+    "South Asian": 45.4,
+    "Hispanic/Latin American": 24.7,
+    "Sub-Saharan African": 20.5,
+    "East Asian": 6.3,
+    "Eastern European": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 16.5
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 28.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 12.3
+      },
+      "Caribbean": {
+        "Dominican": 4.1,
+        "Puerto Rican": 8.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 20.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 4.9
+      },
+      "Korean": {
+        "Korean": 1.4
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 0.9,
+        "Romanian": 1.6
+      },
+      "Slavic East": {
+        "Ukrainian": 0.6
+      }
+    }
+  }
 }

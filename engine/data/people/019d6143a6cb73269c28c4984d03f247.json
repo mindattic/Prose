@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cb73269c28c4984d03f247",
   "type": "character",
-  "name": "Jabari Haugen",
+  "name": "Ivar Haugen",
   "aliases": [
     "Sev",
     "The Lamplighter"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Kenosha Crossing transit underbelly, rotating between hyperlane rest stops, near sub-level access near LaSalle and Congress",
-  "description": "Severino is a broad-shouldered man whose body tells the story of thirty years on the road — a jaw broken and reset crooked, fingers thickened by cold and labor, dark brown skin weathered to a kind of polished leather. He wears a patched greatcoat lined with sewn pockets, each containing a different flavor of unlicensed data chip wrapped in cloth to prevent scanning. His left eye has a cataract that caught and never got fixed; it gives him a milky, unsettling gaze that strangers can't quite look away from. He has no geneware — he considers it a tracking vector — but he does have a small ELF shrine stitched into the coat's inner lining: a cluster of dead LEDs arranged around a copper disc, an offering to whatever spirit keeps travelers from vanishing on the hyperlanes.\n\nSeverino exists in the cracks of GLMZ's data systems as thoroughly as any person can. He has no registered identity, no Quanta account, no biometric profile on file with any corponation. He trades in physical data chips, handwritten information, oral news, and favors — a walking information economy that predates the networks. He is not paranoid so much as methodical; he made a decision decades ago and has honored it every day since. He tells stories the way other people breathe, compulsively and without quite being able to stop.",
+  "description": "Ivar Haugen is a broad-shouldered man whose body tells the story of thirty years on the road — a jaw broken and reset crooked, fingers thickened by cold and labor, dark brown skin weathered to a kind of polished leather. He wears a patched greatcoat lined with sewn pockets, each containing a different flavor of unlicensed data chip wrapped in cloth to prevent scanning. His left eye has a cataract that caught and never got fixed; it gives him a milky, unsettling gaze that strangers can't quite look away from. He has no geneware — he considers it a tracking vector — but he does have a small ELF shrine stitched into the coat's inner lining: a cluster of dead LEDs arranged around a copper disc, an offering to whatever spirit keeps travelers from vanishing on the hyperlanes.\n\nIvar Haugen exists in the cracks of GLMZ's data systems as thoroughly as any person can. He has no registered identity, no Quanta account, no biometric profile on file with any corponation. He trades in physical data chips, handwritten information, oral news, and favors — a walking information economy that predates the networks. He is not paranoid so much as methodical; he made a decision decades ago and has honored it every day since. He tells stories the way other people breathe, compulsively and without quite being able to stop.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -156,7 +156,7 @@
     "Info Broker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenosha Crossing transit underbelly",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,38 +175,16 @@
   ],
   "related_entities": [
     "Kenosha Crossing",
-    "GLMZ",
     "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Leather",
-    "ARCHIVE",
-    "SynapTech ReadRoom Social Cue Enhancer",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Copper",
-    "Arcturus Defense Solutions Hardened Communications Suite HCS-7",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Corneal Piezoelectric Delamination Pistol",
-    "Devraj Solano-Yildirim",
-    "Emeka Johansson-Orozco",
-    "Fanta Popov-Adjei",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Independent Micro-Grid Power Cooperative",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Quilt",
-    "Slagworks Industrial",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Distributed Echo Mesh Kit",
-    "Vuk Jorgensen-Toure",
-    "Zurab Ivanov-Appiah"
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African, East Asian, and Northern European in roughly equal measure—a diaspora blend that manifests in warm deep brown skin with subtle golden undertones, almond-shaped eye set, and the angular bone structure of mixed ancestry. His features carry the breadth of Sub-Saharan African heritage through his jaw and nose, East Asian cheekbones and eye shape, and Northern European height and broad shoulder span.",
+    "heritage": "Northern European (47.3%) provides the foundational tall frame and broad shoulders with angular bone structure. Eastern European (18.2%) contributes depth to facial architecture and complexion richness. Pacific Islander (17.0%) and Sub-Saharan African (13.3%) blend together to create warm medium-brown skin with golden undertones and substantial depth—the Pacific Islander component adds the warmth and golden cast, while the Sub-Saharan African ancestry deepens the base tone and contributes to facial feature definition. East Asian (4.2%) refines eye shape and cheekbone prominence. The synthesis is a distinctly diaspora phenotype: Northern European height and shoulder span anchoring a face with defined, prominent cheekbones shaped by the East Asian and Sub-Saharan African components, warm bronze-brown skin with golden undertones from the Pacific Islander blend, and eye shape reflecting both the Pacific Islander and East Asian heritage.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick through the torso, softened slightly by age but retaining the muscularity of decades of physical labor and constant movement. Hands are large and gnarled, fingers swollen at the knuckles from cold exposure and years gripping handholds on hyperlane vehicles.",
@@ -214,8 +192,8 @@
     "hair_style": "Shoulder-length, typically braided back or wound into a loose knot with whatever cord is available; maintained out of necessity rather than vanity",
     "hair_length": "Medium",
     "eye_color": "Left eye: natural dark brown; right eye: cataract-occluded, milky white with faint gray swirls",
-    "skin_tone": "Warm deep brown with subtle golden undertones, weathered to a burnished leather appearance by decades of exposure to transit hub heat differentials and hyperlane radiation",
-    "complexion": "Deeply lined face, particularly around the eyes and forehead; jaw visibly reset from a break that healed crooked, giving his smile an asymmetrical quality. Stubble perpetually at three-day growth. Skin texture coarse but healthy, with a network of small scars across the backs of his hands and forearms. High cheekbones reflecting East Asian ancestry structure beneath the weathering.",
+    "skin_tone": "Warm medium-bronze brown with golden undertones, weathered to a burnished leather appearance by decades of exposure to transit hub heat differentials and hyperlane radiation",
+    "complexion": "Deeply lined face, particularly around the eyes and forehead; jaw visibly reset from a break that healed crooked, giving his smile an asymmetrical quality. Stubble perpetually at three-day growth. Skin texture coarse but healthy, with a network of small scars across the backs of his hands and forearms. Prominent, well-defined cheekbones reflecting the blend of ancestry structures beneath the weathering.",
     "distinguishing_marks": [
       "Crooked jaw from an old break, reset unevenly, creating a slight cant to his lower face",
       "Cataract in right eye causing permanent milky opacity",
@@ -227,14 +205,66 @@
     "posture_movement": "Moves with deliberate economy, never rushed or sudden. Shoulders slightly forward, weight distributed evenly for balance on moving platforms. Walks like someone accustomed to unstable surfaces. His gaze is direct but his one functional eye often drifts slightly due to the cataract, making his attention feel unfocused even when intensely present.",
     "clothing_style": "Patched greatcoat in faded charcoal, lined with dozens of handstitched pockets containing wrapped data chips; the pockets are secured with cord and small brass clasps to prevent accidental opening. Under the coat: layered thermal shirts in grays and blacks, worn thin but meticulously maintained. Canvas work pants with grease stains that never fully wash out. Boots that are resoled repeatedly, leather cracked but oiled regularly. A thin copper chain around his neck, attached to nothing visible. No visible branding; clothing is purely functional, Tier 5 salvage mixed with careful repair work."
   },
-  "image_prompt": "Jabari Haugen, 188cm tall weathered man with warm deep brown skin and golden undertones, gray shoulder-length braided hair, asymmetrical healed jaw break, one functional dark brown eye and one milky white cataract-clouded eye. High Asian cheekbones beneath decades of weathering, deeply lined face, three-day stubble. Network of white scars on knuckles and forearms, small raised burn scar on left temple. Wearing faded charcoal patched greatcoat with dozens of stitched pockets and brass clasps, layered gray thermal shirts, canvas work pants with grease stains, repeatedly resoled leather boots, thin copper neck chain. Deliberate economy of movement, shoulders forward, standing with balance-ready posture. Cyberpunk 2226 Great Lakes Metropolitan Zone, transit hub environment with warm industrial lighting, neon-edge shadows. Natural unaugmented weathered human, Tier 5 salvage aesthetic, functional survivor style. --ar 2:3 --v 6",
+  "image_prompt": "Ivar Haugen, 188cm tall weathered man with broad shoulders and thick torso, warm bronze-brown skin with golden undertones, deeply lined face from decades of exposure. Iron gray hair shoulder-length, braided or knotted back. Left eye dark brown and intense, right eye milky white with cataract. Crooked jaw from old break, asymmetrical smile. Gnarled hands with swollen knuckles covered in fine white scars. Three-day stubble, prominent cheekbones. Wearing faded charcoal patched greatcoat lined with countless handstitched pockets and brass clasps, layered thermal shirts underneath, canvas work pants with grease stains, repeatedly resoled leather boots. Thin copper chain around neck. Standing with deliberate posture on an unstable hyperlane transit platform, industrial heat shimmer and radiation glow in background, dim amber and cyan neo-noir lighting, year 2226, no augmentations visible, entirely natural weathering and scars, gaze direct but slightly unfocused, economy of movement, functional Tier 5 salvage aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.5,
-    "East Asian": 32.3,
-    "Northern European": 31.2
+    "Northern European": 47.3,
+    "Eastern European": 18.2,
+    "Pacific Islander": 17,
+    "Sub-Saharan African": 13.3,
+    "East Asian": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 13.7,
+        "Austrian": 27
+      },
+      "Scandinavian": {
+        "Norwegian": 6.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 4,
+        "Slovak": 2.8
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 2.6,
+        "Romanian": 6
+      },
+      "Slavic East": {
+        "Russian": 2.8
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 12.7
+      },
+      "Melanesian": {
+        "Papua New Guinean": 4.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 10.2,
+        "Rwandan": 3.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.6
+      },
+      "Japanese": {
+        "Japanese": 1.3
+      },
+      "Chinese": {
+        "Fujianese": 0.4,
+        "Cantonese": 0.9
+      }
+    }
+  }
 }

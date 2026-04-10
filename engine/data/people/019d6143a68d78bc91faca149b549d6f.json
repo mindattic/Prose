@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68d78bc91faca149b549d6f",
   "type": "character",
-  "name": "Reed Solberg",
+  "name": "Aiyana Solberg",
   "aliases": [
     "Gris",
     "The Paste Man"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, stall row near the Bronzeline tram stop, near Western and Chicago Ave",
-  "description": "Oumar is a broad-shouldered man whose face has been carved into a topographic map of a hard life — deep creases around the eyes, a nose that was broken twice and never properly reset, earlobes stretched by old gauge piercings long since abandoned. His skin is a warm dark brown, and he moves with the unhurried gravity of someone who has learned that rushing accomplishes nothing in a market that opens before dawn and closes after midnight. His left forearm bears a faded Oxidian Market vendors guild tattoo, and above his cooking station he has mounted a small copper shrine to Ε-7, an E.L.F. he swears protects the fermentation cultures he started eighteen years ago. He talks to it every morning before lighting his burners.\n\nHe is not a warm man exactly, but he is a fair one. Regular customers get a finger-width more paste. New customers get the same measured scoop and a look that assesses whether they're the kind of person who tips or the kind who complains. He remembers faces better than names, has strong opinions about spice ratios, and will argue with you for ten minutes about fermentation temperature as genuine joy. What looks like stubbornness is mostly just accumulated certainty — he has been doing this exact thing since he was forty and knows it better than most people know anything.",
+  "description": "Aiyana Solberg is a broad-shouldered man whose face has been carved into a topographic map of a hard life — deep creases around the eyes, a nose that was broken twice and never properly reset, earlobes stretched by old gauge piercings long since abandoned. His skin is a warm dark brown, and he moves with the unhurried gravity of someone who has learned that rushing accomplishes nothing in a market that opens before dawn and closes after midnight. His left forearm bears a faded Oxidian Market vendors guild tattoo, and above his cooking station he has mounted a small copper shrine to Ε-7, an E.L.F. he swears protects the fermentation cultures he started eighteen years ago. He talks to it every morning before lighting his burners.\n\nHe is not a warm man exactly, but he is a fair one. Regular customers get a finger-width more paste. New customers get the same measured scoop and a look that assesses whether they're the kind of person who tips or the kind who complains. He remembers faces better than names, has strong opinions about spice ratios, and will argue with you for ten minutes about fermentation temperature as genuine joy. What looks like stubbornness is mostly just accumulated certainty — he has been doing this exact thing since he was forty and knows it better than most people know anything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -171,7 +171,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,45 +224,28 @@
     "The Oxidian Market",
     "Bronzeline",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Midnight Gyros",
     "Big Rig",
-    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
     "Tessera Corponation",
-    "Copper",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus CK-5 'Bloodhound'",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "DEEP CURRENT",
-    "MERIDIAN",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Slagworks Industrial",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "TESSERA Widow Mk. III",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Bazaar",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Yannick Tofauti-Szarvásy"
+    "Copper",
+    "The Paste Bar",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-Asian and Pacific Islander heritage with significant Southeast Asian (33.4%), East Asian (20.4%), and Central Asian (19.0%) ancestry, combined with Pacific Islander (17.3%) and Sub-Saharan African (8.0%) lineage. Genetic ancestry reflects the Ubiquitous Diaspora rather than colonial-era categorization.",
+    "heritage": "Ubiquitous Diaspora blend: Northern European (37.6%), Indigenous American (23.3%), Sub-Saharan African (17.3%), Southeast Asian (9.4%), East Asian (8.1%), Middle Eastern (4.3%). This genetic combination creates distinctive features—broad cheekbones and defined jaw from Northern European and Indigenous American ancestry, warm deep bronze skin with subtle olive undertones from African and Middle Eastern heritage, and slightly almond-shaped eye set reflecting East and Southeast Asian lineage. The integration produces a face of balanced, understated exoticism.",
     "height_cm": 183,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick-limbed with the solid mass of someone who has lifted heavy cooking vessels and fermentation vats for nearly two decades. Not fat, but substantial — the build of labor rather than gym work.",
     "hair_color": "Iron gray with hints of original black",
     "hair_style": "Cropped short, practical, swept back from forehead",
     "hair_length": "Short",
-    "eye_color": "Dark brown, slightly yellowed at the sclera from decades of market-stall smoke and steam",
-    "skin_tone": "Warm medium-deep bronze with olive undertones reflecting the blending of Southeast Asian, East Asian, and Pacific Islander ancestry, enriched by Sub-Saharan African and Central Asian heritage",
-    "complexion": "Heavily lined face mapped with deep creases radiating from the eyes and running from nose to mouth corners. Weathered texture from constant exposure to steam and thermal fluctuation. Slight epicanthic fold suggestion in eye structure consistent with East and Southeast Asian heritage. Stubbled jaw, grooming practical rather than refined. Lines around eyes suggest frequent squinting in bright morning prep light. Facial bone structure shows balanced blend of continental ancestry.",
+    "eye_color": "Dark brown with slight almond tilt from East Asian heritage, yellowed at the sclera from decades of market-stall smoke and steam",
+    "skin_tone": "Warm deep bronze with olive-green undertones, the result of African and Middle Eastern heritage tempering Northern European base. Appears almost burnished from sun exposure and thermal work.",
+    "complexion": "Heavily lined face mapped with deep creases radiating from the eyes and running from nose to mouth corners. Weathered texture from constant exposure to steam and thermal fluctuation. Broad cheekbones show Northern European and Indigenous American bone structure; defined jaw reflects African heritage. Lower face slightly wider through the cheeks—characteristic of mixed Indigenous American and sub-Saharan ancestry. Stubbled jaw, grooming practical rather than refined. Lines around eyes suggest frequent squinting in bright morning prep light.",
     "distinguishing_marks": [
       "Faded Oxidian Market Vendors Guild tattoo on left forearm — stylized oxide-red symbol, approximately 8cm tall, bleeding slightly at edges from age and repeated sun exposure",
       "Deep scar tissue on bridge of nose from old breaks, creating slight deviation to the left",
@@ -274,17 +257,78 @@
     "posture_movement": "Moves with deliberate economy of motion — no wasted gesture. Stands with weight distributed evenly, shoulders slightly forward from decades bent over cooking stations. Walks slowly, with the patience of someone who has learned that haste causes spills. Hands are never still when thinking — constantly adjusting, measuring, gesturing with precision.",
     "clothing_style": "Tier 4 utilitarian market vendor. Wears heat-resistant canvas aprons (cream-colored, stained with fermentation residue and grain dust) over simple dark synthetic shirts. Cargo pants with reinforced pockets for scale weights and coin storage. Worn Veldskoen-style slip-ons (fake leather, comfortable for 18-hour shifts). No visible jewelry except a corroded copper band on left ring finger — a shrine token, not a wedding ring. Clothes are maintained but worn thin; no logos or corporate branding."
   },
-  "image_prompt": "Cyberpunk 2226, Reed Solberg, tall broad-shouldered pan-Asian man with deep bronze skin and olive undertones, iron-gray cropped hair swept back, dark weathered eyes with yellowed sclera, heavily lined face from decades of steam and heat exposure, faded red oxidian market guild tattoo on left forearm, subtle thermal implant visible as silver circuitry on right palm, burn scars on inner wrist, deviated nose bridge, stubbled jaw, practical grooming. Wearing cream heat-resistant canvas apron stained with fermentation residue over dark synthetic shirt, reinforced cargo pants, worn fake leather slip-ons. Steady deliberate posture, hands gesturing with precision, weight evenly distributed. Standing in Great Lakes Metropolitan market stall at dawn, thermal steam rising, warm amber prep light casting deep shadows across weathered features, cyberpunk era grit, utilitarian tier-4 vendor aesthetic, patient and economical movement. --ar 2:3 --v 6",
+  "image_prompt": "Aiyana Solberg, 183cm tall, broad-shouldered laborer in her 60s, warm deep bronze skin with olive undertones reflecting mixed Northern European, Indigenous American, African, and Asian heritage. Defined cheekbones, almond-shaped dark brown eyes yellowed from decades of market work, weathered face deeply lined from steam exposure. Short iron-gray hair swept back. Wearing cream heat-resistant canvas apron stained with fermentation residue over dark synthetic shirt, cargo pants, worn fake-leather slip-ons. Faded oxide-red guild tattoo on left forearm, scar tissue on nose bridge, stretched earlobes, thermal implant circuitry faintly visible on right palm. Standing with patient posture, hands active and precise. GLMZ marketplace setting, morning light catching her thermal implant, thermal steam rising around fermentation vats, weathered and lived-in Tier 4 market vendor stall environment, gritty utilitarian aesthetic, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 33.4,
-    "East Asian": 20.4,
-    "Central Asian": 19.0,
-    "Pacific Islander": 17.3,
-    "Sub-Saharan African": 8.0,
-    "Hispanic/Latin American": 1.9
+    "Northern European": 37.6,
+    "Indigenous American": 23.3,
+    "Sub-Saharan African": 17.3,
+    "Southeast Asian": 9.4,
+    "East Asian": 8.1,
+    "Middle Eastern": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 25.8
+      },
+      "British Isles": {
+        "Irish": 0.7,
+        "Welsh": 0.6
+      },
+      "Scandinavian": {
+        "Danish": 6.4,
+        "Norwegian": 4.1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 23.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 6.3
+      },
+      "Southern African": {
+        "South African": 8.7
+      },
+      "Central African": {
+        "Cameroonian": 1.8,
+        "Congolese": 0.5
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 4.4
+      },
+      "Cambodian": {
+        "Khmer": 5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 1.4,
+        "Mandarin Northern": 0.3
+      },
+      "Japanese": {
+        "Japanese": 6.4
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 0.5
+      },
+      "Arab Levantine": {
+        "Jordanian": 1.2,
+        "Lebanese": 1.9
+      },
+      "Persian": {
+        "Afghan Dari": 0.7
+      }
+    }
+  }
 }

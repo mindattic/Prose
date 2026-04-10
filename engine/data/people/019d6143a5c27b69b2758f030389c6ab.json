@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c27b69b2758f030389c6ab",
   "type": "character",
-  "name": "Daniela Bautista",
+  "name": "Daniela Mbekele",
   "aliases": [
     "Bert",
     "the Prosthetics Man"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Geartown, Little Furnace, near Milwaukee and North Ave",
-  "description": "Bertilak is a big man gone soft at the middle, with dark brown skin, a white-streaked beard he keeps neatly shaped, and deep-set amber eyes behind magnification lenses permanently clipped to his face like a second pair. His right arm from the elbow down is his own oldest prototype — a functional prosthetic he built thirty years ago and has upgraded piece by piece ever since, currently somewhere around its fourteenth major revision. He finds this funny. He calls it his 'living resume.' His workshop smells of industrial lubricant and warm solder and the dried herbs he burns as offerings to the shelf-mounted E.L.F. shrine in the corner.\n\nHe is patient, unhurried, and has a gift for understanding what a client actually needs from a prosthetic as opposed to what they say they want. He asks about their job, their hobbies, whether they have a partner who touches their hands, what they're afraid they won't be able to do anymore. He fits accordingly. He doesn't stock the highest-end components and doesn't pretend to — his clients are Tier 1 and 2 workers who need something durable and honest, not something that impresses people at a corporate mixer. He is deeply proud of this.",
+  "description": "Daniela Mbekele is a big man gone soft at the middle, with dark brown skin, a white-streaked beard he keeps neatly shaped, and deep-set amber eyes behind magnification lenses permanently clipped to his face like a second pair. His right arm from the elbow down is his own oldest prototype — a functional prosthetic he built thirty years ago and has upgraded piece by piece ever since, currently somewhere around its fourteenth major revision. He finds this funny. He calls it his 'living resume.' His workshop smells of industrial lubricant and warm solder and the dried herbs he burns as offerings to the shelf-mounted E.L.F. shrine in the corner.\n\nHe is patient, unhurried, and has a gift for understanding what a client actually needs from a prosthetic as opposed to what they say they want. He asks about their job, their hobbies, whether they have a partner who touches their hands, what they're afraid they won't be able to do anymore. He fits accordingly. He doesn't stock the highest-end components and doesn't pretend to — his clients are Tier 1 and 2 workers who need something durable and honest, not something that impresses people at a corporate mixer. He is deeply proud of this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -193,7 +193,7 @@
     "Mentor": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,24 +244,14 @@
     "The Shelf",
     "Geartown",
     "Crucible Industries Furnace CF-15 'Meltdown'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Corner Slice",
+    "Honest Burger",
     "The Pure Hand",
-    "The Milwaukee Core",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Free Assembly",
-    "Kang Athletics KA-200 'Padwork'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "The Peninsula",
-    "Vuk Jorgensen-Toure",
-    "Witness"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (43.5%) with significant Middle Eastern (22.5%) and Pacific Islander (22.2%) ancestry, creating a rich blend of Mediterranean, Levantine, and Oceanic features. Minor contributions from Sub-Saharan African (4.5%), Northern European (4.3%), and Eastern European (3.0%) lineages add subtle complexity to his phenotype.",
+    "heritage": "Predominantly Hispanic/Latin American (60.9%) with significant Sub-Saharan African (29.0%) and South Asian (10.1%) ancestry, creating a rich blend of Afro-Latin and South Asian features. This genetic mix produces deep warm brown skin with complex undertones—the reddish warmth of West African heritage, the golden undertones of South Asian ancestry, and the sun-weathered patina of three decades under industrial lights. Facial structure reflects the high cheekbones and angular strength of Sub-Saharan and South Asian ancestry, softened by the warmth inherent to Hispanic/Latin American genetic contribution.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and barrel-chested, softened at the middle with age and sedentary work — the physique of a once-powerful man who has spent three decades bent over a workbench. Thick arms and large hands (left biological, right prosthetic). No longer lean but not yet frail.",
@@ -269,10 +259,10 @@
     "hair_style": "Full, neatly shaped beard kept at medium length; head hair receding at crown, worn close-cropped",
     "hair_length": "Short",
     "eye_color": "Deep brown with warm amber undertones, naturally deep-set",
-    "skin_tone": "Medium-deep olive-brown with warm Mediterranean undertones, weathered by three decades under industrial lights. The tone reflects his blended Latin American and Middle Eastern heritage with subtle Pacific Islander warmth.",
-    "complexion": "Lined face suggesting both smile-creases and concentration-furrows, with the angular features characteristic of Mediterranean and Levantine ancestry softened by Pacific Islander roundness in the cheeks. Skin shows old burn scarring on the left side of his neck (solder splash, circa 2196). Hands heavily calloused on the biological left; right prosthetic shows micro-wear patterns consistent with thirty years of iterative upgrades.",
+    "skin_tone": "Deep rich brown with reddish-golden undertones—the characteristic depth of Afro-Latin heritage enriched by South Asian warmth. Weathered by three decades under industrial lights, the skin carries the patina of lived work and exposure.",
+    "complexion": "Lined face with strong cheekbone structure characteristic of Sub-Saharan African and South Asian ancestry, balanced by the warm fullness of Hispanic/Latin American heritage. Skin shows old burn scarring on the left side of his neck (solder splash, circa 2196). Hands heavily calloused on the biological left; right prosthetic shows micro-wear patterns consistent with thirty years of iterative upgrades.",
     "distinguishing_marks": [
-      "Linear scar along left side of neck from shoulder to jaw — pale against olive-brown skin, thin and clean from old thermal burn",
+      "Linear scar along left side of neck from shoulder to jaw — pale against deep brown skin, thin and clean from old thermal burn",
       "Multiple small circular burn scars across the backs of his hands and forearms — occupational marks from solder work",
       "A faded tattoo on the inside of his biological left wrist: a three-line symbol (E.L.F. shrine motif) in indigo, applied approximately forty years ago"
     ],
@@ -280,17 +270,39 @@
     "posture_movement": "Moves with deliberate, economical grace — no wasted motion. Stands slightly forward-leaning as if habitually bending toward work. His right prosthetic arm moves with precise, measured control; he favors his biological left for fine work. Speaks with his hands when engaged. Tends to remove his magnification lenses and clean them while listening to clients — a meditative gesture.",
     "clothing_style": "Tier 3-4 working professional: weathered canvas shop apron in charcoal over a long-sleeved cotton undershirt (sleeves rolled to mid-forearm), worn to soften the appearance of the prosthetic. Dark durable pants with reinforced pockets. Slip-on boots with oil-resistant soles, scuffed and practical. A worn linen jacket hangs on a hook for when he leaves the workshop — Geartown-made, unpretentious. No jewelry except for a small bronze E.L.F. charm on a simple cord around his neck (worn under his shirt). His clothing is clean but never new; everything is maintained rather than replaced."
   },
-  "image_prompt": "Portrait of Daniela Bautista, 188cm tall master technician in GLMZ 2226, olive-brown Mediterranean-Levantine complexion with warm undertones, deep brown eyes with amber warmth, dark streaked beard, receding hair close-cropped. Weathered face with concentration-furrows and smile-creases reflecting decades of precision work. Linear pale scar on left neck from shoulder to jaw. Wearing charcoal canvas shop apron over long-sleeved cotton undershirt with rolled sleeves, dark reinforced pants, oil-resistant boots. Brass-framed magnification lens clips mounted on face. Right arm black reinforced polymer prosthetic with aluminum joints, visible wear and re-welds, modular grip with tool-interface ports. Retractable claw extensions visible as subdermal ridging on biological left hand. Multiple small burn scars on hands and forearms. Bronze E.L.F. charm cord visible at neck. Standing in workshop with deliberate posture, slightly forward-leaning, hands expressive mid-gesture. Industrial workshop lighting with warm overhead floods casting detailed shadows on weathered features. Cyberpunk 2200s aesthetic, worn professional competence. --ar 2:3 --v 6",
+  "image_prompt": "Daniela Mbekele, tall broad-shouldered man with deep rich brown skin carrying reddish-golden undertones, strong angular cheekbones from Afro-Latin and South Asian heritage. Dark brown hair with white at temples and full medium beard, naturally deep-set amber-brown eyes. Worn workshop setting under industrial fluorescent lights, 2226. Face lined from decades of precision work, visible pale linear scar on left neck. Left hand shows fine retractable claw extensions and old burn scars; right arm is matte-black weathered prosthetic with aluminum joints and tool-interface ports, visibly patched and re-welded. Brass-framed magnification lenses clip across face. Wearing charcoal canvas apron over long-sleeved rolled cotton shirt, dark reinforced pants, oil-resistant boots. Leans forward habitually. Standing near workbench, hands ready for fine work, quiet concentration. GLMZ 2200s, gritty Geartown workshop aesthetic, practical and precise. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 43.5,
-    "Middle Eastern": 22.5,
-    "Pacific Islander": 22.2,
-    "Sub-Saharan African": 4.5,
-    "Northern European": 4.3,
-    "Eastern European": 3.0
+    "Hispanic/Latin American": 60.9,
+    "Sub-Saharan African": 29,
+    "South Asian": 10.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 16.5
+      },
+      "Central American": {
+        "Salvadoran": 2,
+        "Honduran": 13.5
+      },
+      "South American": {
+        "Peruvian": 28.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 29
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 5.9,
+        "Marathi": 4.2
+      }
+    }
+  }
 }

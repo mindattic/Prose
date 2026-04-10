@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f177698cb172b0fb3ea91d",
   "type": "character",
-  "name": "Quinn Cervantes-Venkatesh",
+  "name": "Quinn Krishnamurthy-Montalvo",
   "aliases": [
     "Dr. Dieynaba",
     "The Quiet Knife"
@@ -13,7 +13,7 @@
   "age": 46,
   "status": "active",
   "location": "Aurochs Medical Complex — lives in Bronzeline, thirty-minute transit from the hospital, near North Ave and Damen",
-  "description": "Dieynaba is the kind of person who becomes invisible until she is suddenly the most important person in the room. Tall, narrow, with close-cropped silver hair she started growing out at thirty-five after a particularly bad run of nights, she moves through the hospital corridors with a quality of compression — everything pulled inward and efficient. Her face is angular and striking, her skin deep brown, and she has no cosmetic augmentations whatsoever, a quiet statement in an environment where most of her colleagues wear at least a tailored iris or a dermal accent. Her only concession is a thin prosthetic ring finger on her right hand — a replacement she had done after a surgical injury, fitted in matte medical ceramic, which she has never bothered to have skinned over.\n\nShe has operated on more gunshot wounds, industrial trauma cases, and augmentation rejection cascades than she can count, and she has developed the particular flat affect of a surgeon who has learned that feeling during surgery means slowing down. Off the table she is dry, acerbically funny in small doses, and possessed of a privacy so total that colleagues who have worked alongside her for years know almost nothing about her life outside the hospital. She is not cruel. She is simply rigorous in the application of her attention, and most things do not meet her threshold.",
+  "description": "Quinn Krishnamurthy-Montalvo is the kind of person who becomes invisible until she is suddenly the most important person in the room. Tall, narrow, with close-cropped silver hair she started growing out at thirty-five after a particularly bad run of nights, she moves through the hospital corridors with a quality of compression — everything pulled inward and efficient. Her face is angular and striking, her skin deep brown, and she has no cosmetic augmentations whatsoever, a quiet statement in an environment where most of her colleagues wear at least a tailored iris or a dermal accent. Her only concession is a thin prosthetic ring finger on her right hand — a replacement she had done after a surgical injury, fitted in matte medical ceramic, which she has never bothered to have skinned over.\n\nShe has operated on more gunshot wounds, industrial trauma cases, and augmentation rejection cascades than she can count, and she has developed the particular flat affect of a surgeon who has learned that feeling during surgery means slowing down. Off the table she is dry, acerbically funny in small doses, and possessed of a privacy so total that colleagues who have worked alongside her for years know almost nothing about her life outside the hospital. She is not cruel. She is simply rigorous in the application of her attention, and most things do not meet her threshold.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -188,7 +188,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,31 +238,17 @@
     "The Narrows Compact",
     "Bronzeline",
     "WELLSPRING",
+    "Green Bay Community Table",
     "Threshold",
     "TESSERA PG-2 'Signature'",
     "The Quiet Room",
     "Silver",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
-    "Breck Tannen",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Crucible TR-7 'Triage'",
-    "Green Bay Community Table",
-    "Isadora Vukić-Nambiar",
-    "Last Word",
-    "Narrowcast",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tapetum Lucidum Integration",
-    "The Narrows",
-    "The Pure Hand",
-    "Vanta Ordnance Phalanx VO-8 'Centurion'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (38.9%) with significant South Asian (30.6%) ancestry, blended with North African (13.3%), Northern European (9.1%), and Sub-Saharan African (8.1%) heritage. The result is warm, complex skin tone reflecting the interplay of Mediterranean, Levantine, and tropical sun exposure across multiple ancestral lines.",
+    "heritage": "South Asian (36.8%), Indigenous American (30.6%), Hispanic/Latin American (27.5%), and Sub-Saharan African (5.1%) ancestry. The genetic blend creates a striking warm-toned complexion that bridges multiple continental origins — South Asian bone structure meets Indigenous American facial geometry with the warm undertones of tropical Latin American heritage, enriched by Sub-Saharan African warmth in the skin's depth and radiance.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Tall and narrow, almost ascetic — lean muscle without bulk, shoulders slightly forward from decades of surgical posture. A body optimized for precision rather than presence.",
@@ -270,8 +256,8 @@
     "hair_style": "Close-cropped, grown out since age 35, worn with no styling products or attention — severe and functional",
     "hair_length": "Short",
     "eye_color": "Deep brown (natural); left eye fitted with surgical magnification implant (subtle, detectable only on close inspection)",
-    "skin_tone": "Warm golden-brown with subtle amber undertones, reflecting the blend of Hispanic/Latin, South Asian, and North African ancestry, deepened by the ashy fatigue pallor of chronic surgical work",
-    "complexion": "Angular facial structure with high, prominent cheekbones characteristic of South Asian and Latin heritage, strong jawline. Warm bronze undertones across the nose and cheekbones. Minimal grooming — no makeup, no dermal treatments. Fine lines around the eyes and mouth from squinting under surgical lights. Hands show surgical calluses and minor scars from decades of precision work.",
+    "skin_tone": "Deep golden-bronze with warm copper undertones throughout, reflecting the balanced blend of South Asian, Indigenous American, and Hispanic/Latin American ancestry with enriching warmth from Sub-Saharan African heritage. The overall effect is a luminous warm brown deepened by chronic surgical work pallor — a complexion that suggests both indoor medical precision and ancestral sun exposure.",
+    "complexion": "Angular facial structure combining South Asian prominence with Indigenous American high cheekbones and strong jaw definition, enhanced by the warm bronze undertones characteristic of Hispanic/Latin American heritage. The nose shows the refined bridge common to South Asian genetics, while the cheekbone and jaw geometry reflects Indigenous American ancestry. Skin texture is smooth but lined around eyes and mouth from surgical squinting. No makeup or dermal treatments. Hands show surgical calluses and minor scars from decades of precision work.",
     "distinguishing_marks": [
       "Thin surgical scar running along the inside of her right forearm, approximately 8cm, faded to silver",
       "Small burn scar on the dorsal surface of her left hand, roughly 1cm diameter, from a cauterization incident during residency",
@@ -281,16 +267,50 @@
     "posture_movement": "Moves with economical precision — no wasted motion, shoulders slightly hunched from surgical habit. Hands are still except when in motion, then they move with the exact deliberation of someone who has trained every micro-movement. Eyes often slightly narrowed, as if permanently in magnification mode. Stands or sits in compressed positions, gathering herself inward rather than taking up space.",
     "clothing_style": "Tier 3-4 functional: surgical scrubs under a well-maintained but worn charcoal wool coat (likely fifteen years old). Off-duty favors dark, unremarkable clothing — matte fabrics, no logos, minimal color variation. Flat-soled shoes worn for comfort and durability, not aesthetics. Watches a basic chronometer on a utilitarian band. No jewelry except a simple platinum wedding band on her left ring finger and a threadbare fabric wristband (origin and significance undisclosed) on her right wrist above the prosthetic. Everything about her wardrobe suggests someone who dresses to disappear."
   },
-  "image_prompt": "Quinn Cervantes-Venkatesh, tall angular figure 183cm, warm golden-brown skin with amber undertones reflecting mixed Hispanic-Latin, South Asian, and North African heritage, silver-grey close-cropped hair, deep brown natural eyes with left eye subtle surgical magnification implant. Ashy fatigue pallor, high cheekbones and strong jawline, fine surgical-work lines around eyes. Matte ceramic prosthetic ring finger on right hand, visible surgical seams on both wrists. Lean ascetic build, shoulders slightly hunched from decades of precision work. Worn charcoal wool coat over surgical scrubs, flat utilitarian shoes, simple platinum wedding band, threadbare wristband on right wrist above prosthetic. Moves with economical micro-precision, slightly narrowed eyes. Cyberpunk 2226 GLMZ, medical-professional aesthetic, cool surgical lighting, minimalist composition emphasizing surgical precision and fatigue, matte color palette, worn textures, --ar 2:3 --v 6",
+  "image_prompt": "Quinn Krishnamurthy-Montalvo, tall lean surgical precision specialist, deep golden-bronze skin with warm copper undertones reflecting South Asian, Indigenous American, and Hispanic/Latin American ancestry. Angular face with high prominent cheekbones, strong jawline, refined nose bridge, deep brown natural eyes with left eye bearing subtle magnification implant. Short silver-grey close-cropped hair. Visible medical-ceramic prosthetic ring finger on right hand (unskinned, matte finish), surgical scars on forearm and hand, faint stabilization brace seams at wrists. Wearing worn charcoal wool coat over surgical scrubs, flat utilitarian shoes, platinum wedding band, threadbare fabric wristband on right wrist. Posture economical and precise, shoulders slightly hunched, hands deliberate and still. GLMZ, Great Lakes Metropolitan Zone, cool surgical lighting casting shadows across angular features, tired brilliance in gaze, minimalist aesthetic, disappearing into matte darkness, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 38.9,
-    "South Asian": 30.6,
-    "North African": 13.3,
-    "Northern European": 9.1,
-    "Sub-Saharan African": 8.1
+    "South Asian": 36.8,
+    "Indigenous American": 30.6,
+    "Hispanic/Latin American": 27.5,
+    "Sub-Saharan African": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 26.6
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 10.2
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 16.5
+      },
+      "Plains Nations": {
+        "Choctaw": 14.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 27.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 1.3,
+        "Ugandan": 0.9
+      },
+      "Central African": {
+        "Congolese": 0.7
+      },
+      "West African": {
+        "Senegalese": 2.2
+      }
+    }
+  }
 }

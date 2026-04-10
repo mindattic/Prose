@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62d7980b3a595dbf5194acf",
   "type": "character",
-  "name": "Leila Mukherjee",
+  "name": "Leila Bautista",
   "aliases": [
     "Ratchet",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near LaSalle and Madison",
-  "description": "Ilhan Nakamura-Bello are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 29, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Ilhan Nakamura-Bello plans to keep it that way. They work as a cleaner out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Ilhan Nakamura-Bello agrees on two things: they are worth the fee, and they are terrible company at dinner.",
+  "description": "Leila Bautista are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 29, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Leila Bautista plans to keep it that way. They work as a cleaner out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Leila Bautista agrees on two things: they are worth the fee, and they are terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.56,
@@ -258,7 +258,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -271,36 +271,13 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Nearfield",
     "Burden of Longitude",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Quilt",
-    "Scarecrow",
-    "Slagworks Industrial",
-    "The Bleach Boys",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Shelf",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "South Asian dominant (26.8%) with substantial Middle Eastern (20.7%) and Sub-Saharan African (17.7%) ancestry, enriched by Eastern European (13.5%), Northern European (11.4%), and Southeast Asian (9.9%) heritage. A truly mixed diaspora lineage with no single geographic claim.",
+    "heritage": "Hispanic/Latin American dominant (46.7%) with substantial Middle Eastern (31.3%) and Southeast Asian (22.0%) ancestry. A truly mixed diaspora lineage reflecting the Ubiquitous Diaspora — Latin American warmth and structure, Middle Eastern refinement, Southeast Asian grace blended into one cohesive genetic expression.",
     "height_cm": 182,
     "weight_kg": 94,
     "build": "Broad-shouldered and heavy, muscular without definition — weight distributed across a frame built for durability rather than speed. Chest and shoulders dominate; carries themselves like someone accustomed to absorbing impact.",
@@ -308,8 +285,8 @@
     "hair_style": "Cropped close to the scalp, practical, no styling",
     "hair_length": "Short",
     "eye_color": "Dark brown — steady, unblinking gaze",
-    "skin_tone": "Deep warm brown with complex undertones — South Asian and Sub-Saharan African base enriched by Middle Eastern and Southeast Asian warmth, cooled slightly by Eastern and Northern European heritage. Rich, layered complexity without a single dominant cast.",
-    "complexion": "Weathered and composed. No visible scarring on the face — they're careful about that. Skin has a matte quality from subcutaneous treatments. Facial structure reflects South Asian bone structure softened by broader African heritage, with finer features hinting at Southeast Asian ancestry. Expression is habitually neutral, jaw set in a way that suggests constant restraint.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones — Latin American richness and depth enriched by Middle Eastern warmth and Southeast Asian luminescence. A harmonious blend without harsh contrasts, suggesting sun exposure and genetic mixing across three major world regions.",
+    "complexion": "Weathered and composed. No visible scarring on the face — they're careful about that. Skin has a matte quality from subcutaneous treatments. Facial structure reflects Latin American bone architecture softened by Southeast Asian delicacy, with Middle Eastern definition in the cheekbones and nose. Expression is habitually neutral, jaw set in a way that suggests constant restraint.",
     "distinguishing_marks": [
       "Faint linear scar across the left knuckle — old knife work, deliberately left unhealed smooth",
       "Twin parallel marks on the inner right wrist — augmentation seams, visible when forearms flex"
@@ -318,17 +295,46 @@
     "posture_movement": "Moves with controlled efficiency — no wasted motion, no restlessness. Stands with weight slightly forward, ready to shift. Hands stay visible and relaxed; someone who understands threat assessment. Default expression reads as patient, but there's tension underneath. They don't fidget, don't look away, don't apologize for existing.",
     "clothing_style": "Tier 3-4 utilitarian. Dark synthetic fabrics — charcoal, midnight blue, matte black. Reinforced jacket with internal pockets (equipment, tools, cash). Cargo pants with tactical weave. Boots are functional and scuffed. No jewelry, no insignia, no markers of affiliation. Everything is designed to be forgettable and cleanable. Operates in clothes they can bleach."
   },
-  "image_prompt": "Leila Mukherjee, tall broad-shouldered operative, deep warm brown skin with complex ancestral undertones, black hair cropped short with silver at temples, dark steady eyes. Subdermal chrome weapon mounts visible along both forearms glinting under light. Weathered, composed expression, habitually neutral. Wearing dark charcoal utilitarian jacket with internal pockets, tactical cargo pants, scuffed functional boots. Controlled posture, weight forward, hands visible and relaxed. Matte skin quality from bioware integration. 2226 cyberpunk aesthetic, professional operative framing, neon-edged shadows, cool industrial lighting catching chrome augmentation seams, atmospheric urban setting, photorealistic detail, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Leila Bautista, 182cm tall broad-shouldered operative with warm medium-deep brown skin blending Hispanic, Middle Eastern, and Southeast Asian heritage. Short black hair with silver at temples, dark steady gaze, neutral expression. Angular facial structure with prominent cheekbones, weathered matte complexion. Subdermal chrome weapon mounts visible beneath forearms, augmentation seams glowing faintly at wrists. Wearing dark tactical jacket and cargo pants, scuffed boots, hands relaxed but ready. Controlled posture, weight forward, standing in shadow-lit industrial corridor. GLMZ GLMZ setting, neon light catching chrome implants, tension and patient danger in stillness. Cinematic, gritty, professional operative aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 26.8,
-    "Middle Eastern": 20.7,
-    "Sub-Saharan African": 17.7,
-    "Eastern European": 13.5,
-    "Northern European": 11.4,
-    "Southeast Asian": 9.9
+    "Hispanic/Latin American": 46.7,
+    "Middle Eastern": 31.3,
+    "Southeast Asian": 22
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 24.5,
+        "Guatemalan": 13.9
+      },
+      "Mexican": {
+        "Mexican": 8.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 12.2
+      },
+      "Arab Gulf": {
+        "Iraqi": 3.1,
+        "Yemeni": 0.8
+      },
+      "Persian": {
+        "Afghan Dari": 15.2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 18.1
+      },
+      "Indonesian": {
+        "Sumatran": 2.1,
+        "Javanese": 1.8
+      }
+    }
+  }
 }

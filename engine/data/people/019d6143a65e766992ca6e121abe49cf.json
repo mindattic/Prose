@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65e766992ca6e121abe49cf",
   "type": "character",
-  "name": "Diego Johansson",
+  "name": "Diego Esquivel",
   "aliases": [
     "Spore"
   ],
@@ -12,7 +12,7 @@
   "age": 52,
   "status": "active",
   "location": "Irkalla, sub-level fungal warrens beneath Deepwell Station, near sub-level access near LaSalle and Congress",
-  "description": "Moswen is a broad-shouldered woman with skin the color of dark river clay, her face mapped by deep laugh lines and a permanent stain of blue-black around her fingernails from decades of handling bioluminescent mycelium. Her geneware is old and half-degraded — color-shifting hair that now only cycles between a dim amber and a washed-out grey depending on her mood, installed in her thirties when she still had money for upkeep. She wears a patchwork coat of heat-cured mushroom leather, stitched with dozens of pockets holding spore vials, dried caps, and small fungal compresses. She smells faintly of earth, wet stone, and something fermented.\n\nMoswen came down in 2178 after her Axiom maintenance contract evaporated and she couldn't surface her debt. She built her farm over seven years — tiered shelves of inoculated substrate carved from old ferrogate sleeper beams, lit by her own bioluminescent cultures. She knows forty-three species by taste and can diagnose infections, parse poisons, and brew painkillers that rival surface pharmacy stock for a fraction of the cost. She is neither warm nor cold — she is practical, like the organisms she cultivates, and she extends exactly as much care as the situation requires.",
+  "description": "Diego Esquivel is a broad-shouldered woman with skin the color of dark river clay, her face mapped by deep laugh lines and a permanent stain of blue-black around her fingernails from decades of handling bioluminescent mycelium. Her geneware is old and half-degraded — color-shifting hair that now only cycles between a dim amber and a washed-out grey depending on her mood, installed in her thirties when she still had money for upkeep. She wears a patchwork coat of heat-cured mushroom leather, stitched with dozens of pockets holding spore vials, dried caps, and small fungal compresses. She smells faintly of earth, wet stone, and something fermented.\n\nDiego Esquivel came down in 2178 after her Axiom maintenance contract evaporated and she couldn't surface her debt. She built her farm over seven years — tiered shelves of inoculated substrate carved from old ferrogate sleeper beams, lit by her own bioluminescent cultures. She knows forty-three species by taste and can diagnose infections, parse poisons, and brew painkillers that rival surface pharmacy stock for a fraction of the cost. She is neither warm nor cold — she is practical, like the organisms she cultivates, and she extends exactly as much care as the situation requires.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -153,7 +153,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -167,48 +167,18 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Deepwell Station",
     "Mushroom Leather",
+    "Deepwell Station",
     "Ferrogate Transit",
-    "Imara Solís-Khatgal",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "Irkalla",
     "Leather",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
     "Chimera-Null",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Clay",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Blackmarket",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Constance",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Djeneba Park-Traore",
-    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
-    "Iskander Mbeki-Ó'Treasaigh",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Meridian Weartech ShockWeave SW-3 'Thistle'",
-    "Narrowcast",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Obafemi Szczypiński-Lautoa",
-    "Ossolo Przenysław-Faatoafe",
-    "PulsePoint HydraLine Fluid Balance Monitor",
-    "Slagworks Industrial",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "The Burden Clause",
-    "The Coffin Nails",
-    "The Pure Hand",
-    "Tooth Fairy",
-    "Transit Mind",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure"
+    "Irkalla",
+    "Clay"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Southeast Asian, Hispanic/Latin American, and Sub-Saharan African ancestry — a deep blend resulting in warm, rich brown tones with complex undertones. Her features carry the broad facial structure and pronounced cheekbones of Southeast Asian heritage, the warm golden undertones of Latin American ancestry, and the deeper melanin concentration of Sub-Saharan African lineage.",
+    "heritage": "Predominantly Hispanic/Latin American (69%) with significant South Asian (13%), East Asian (9.7%), and Sub-Saharan African (8.3%) ancestry. This creates a striking blend: warm golden-brown base tones from Latin American heritage enriched by deeper melanin concentration from African ancestry, with subtle eye shape and cheekbone structure influenced by South and East Asian genetics. The result is complex warm-deep brown skin with golden undertones and exceptional depth.",
     "height_cm": 172,
     "weight_kg": 82,
     "build": "Broad-shouldered and thick-limbed, muscular from decades of manual labor in the tunnels — not lean, but functional. Her frame carries the weight of survival without excess softness.",
@@ -216,8 +186,8 @@
     "hair_style": "Pulled back in a practical, loose braid; wisps escape constantly",
     "hair_length": "Medium",
     "eye_color": "Dark brown, tired",
-    "skin_tone": "Warm deep brown with golden undertones — rich and complex, reflecting the blend of Southeast Asian, Latin American, and Sub-Saharan African ancestry. Despite years underground, the tone maintains natural warmth and depth rather than pallor.",
-    "complexion": "Face mapped by deep laugh lines radiating from the corners of her eyes and mouth. Permanent stain of blue-black discoloration around fingernails from decades of handling bioluminescent mycelium. Skin is weathered but not damaged — the texture of someone who works with their hands in damp conditions. Cheekbones are pronounced and angular. A few scattered age spots on her forearms.",
+    "skin_tone": "Warm deep brown with golden undertones — rich and complex, reflecting the dominant Latin American heritage (69%) enhanced by Sub-Saharan African (8.3%), South Asian (13%), and East Asian (9.7%) ancestry. The blend creates warm-toned melanin-rich skin with golden radiance and exceptional depth. Despite years underground, the tone maintains natural warmth and dimensional complexity rather than pallor.",
+    "complexion": "Face mapped by deep laugh lines radiating from the corners of her eyes and mouth. Pronounced and angular cheekbones with the structured geometry reflecting South Asian and East Asian genetic influence. Warm brown skin with subtle golden undertones across cheekbones and bridge of nose. Permanent stain of blue-black discoloration around fingernails from decades of handling bioluminescent mycelium. Skin is weathered but not damaged — the texture of someone who works with their hands in damp conditions. A few scattered age spots on her forearms.",
     "distinguishing_marks": [
       "Blue-black mycelium stains permanent on all fingertips and under nails, darkest on index and middle fingers",
       "Faint lattice of old burn scars on both forearms from ferrogate handling, barely visible unless you know to look",
@@ -228,14 +198,58 @@
     "posture_movement": "She moves with deliberate economy — no wasted motion. Stands with a slight forward lean, as if always listening for the hum of mycelium growth or the drip of water. Her hands are in constant motion when she talks, gesturing as if explaining the logic of fungal networks. Her gaze is direct and assessing; she watches people the way she watches cultures — for signs of decline or vitality.",
     "clothing_style": "A patchwork coat of heat-cured mushroom leather, visibly worn and stitched dozens of times with salvaged thread and synthetic cord. The coat is studded with oversized pockets holding spore vials, dried caps, small fungal compresses, and tools. Beneath it, stained thermal layers (Tier 5, utilitarian) — dark grey or black to hide the constant patina of substrate dust and mineral deposits. Loose cargo pants with reinforced knees, pockets worn thin from repeated use. Boots are her only recent investment: sturdy fungus-resistant synthetic leather, laced tight. No jewelry, no affectation. Everything smells faintly of earth, wet stone, and fermented matter."
   },
-  "image_prompt": "A woman in her 60s with warm deep brown skin and Southeast Asian-Latin American-African heritage, standing in a cyberpunk 2226 underground fungal cultivation facility. She wears a patchwork heat-cured mushroom-leather coat covered in pockets of spore vials and tools, over dark grey thermal layers stained with substrate dust. Her medium-length hair is pulled back in a practical braid with color-shifting geneware cycling between amber and grey. Her face is weathered with deep laugh lines, pronounced cheekbones, and tired dark brown eyes. Blue-black mycelium stains mark her fingertips and nail beds. Old burn scars trace her forearms; a thin white scar runs her left temple to jawline. She stands with deliberate posture, leaning slightly forward in an attitude of attentive listening. Bioluminescent fungal growth glows softly behind her in dimly-lit caverns. Cinematic, gritty, atmospheric lighting with earth tones and cool blue-green bioluminescence. --ar 2:3 --v 6",
+  "image_prompt": "Diego Esquivel, a weathered mycologist in the Great Lakes Metropolitan Zone, 2226. Warm deep brown skin with golden undertones reflecting Latin American, South Asian, East Asian, and African heritage—complex melanin-rich complexion with pronounced angular cheekbones. Dark tired eyes framed by deep laugh lines. Medium-length braided hair with degraded amber-grey color-shifting geneware cycling faintly. 172cm tall, broad-shouldered and muscular build. Wearing a heavily patched heat-cured mushroom leather coat studded with spore vial pockets, dark thermal layers underneath, reinforced cargo pants, and fungus-resistant synthetic boots. Blue-black mycelium stains visible on fingertips. Old burn scars faintly latticing both forearms, thin scar along left temple-to-jaw. Stands with slight forward lean, hands mid-gesture explaining fungal networks. Underground tunnel laboratory setting with bioluminescent fungal cultures glowing softly in the background, damp stone walls, mineral deposits visible. Cinematic neo-noir underground aesthetic, moody cool-warm lighting emphasizing weathered features and stained hands. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 43.9,
-    "Hispanic/Latin American": 33.8,
-    "Sub-Saharan African": 22.3
+    "Hispanic/Latin American": 69,
+    "South Asian": 13,
+    "East Asian": 9.7,
+    "Sub-Saharan African": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 37.5
+      },
+      "Central American": {
+        "Salvadoran": 18.3,
+        "Honduran": 13.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.4
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 7.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 6.3
+      },
+      "Japanese": {
+        "Japanese": 1.8
+      },
+      "Chinese": {
+        "Fujianese": 1,
+        "Cantonese": 0.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 3.1,
+        "Botswanan": 0.4
+      },
+      "East African": {
+        "Tanzanian": 1.8
+      },
+      "West African": {
+        "Nigerian": 3
+      }
+    }
+  }
 }

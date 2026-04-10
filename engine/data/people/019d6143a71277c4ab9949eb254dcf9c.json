@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71277c4ab9949eb254dcf9c",
   "type": "character",
-  "name": "Flux Taufa",
+  "name": "Flux Sow",
   "aliases": [
     "Requiem",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Wacker and State",
-  "description": "Vesna Bergstrom-Konate is lean and angular, all sharp edges and visible tension. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nVesna Bergstrom-Konate has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Flux Sow is lean and angular, all sharp edges and visible tension. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFlux Sow has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.42,
@@ -258,7 +258,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Whitecap",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,36 +275,19 @@
     "Kang-Petrov Arms KPR-357 'Journeyman'"
   ],
   "related_entities": [
+    "Lakefront Creamery",
     "Pale Harbor Anchorage",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Slagworks Industrial",
+    "Felix Roundtree",
     "Pellucid Systems",
-    "Clover",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Carrion Defense Works Field Surgical Kit FSK-6",
-    "Fanta Popov-Adjei",
-    "GLMZ",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Spire Light on Still Water",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "South Asian and Pacific Islander with Central Asian admixture. The genetic combination creates warm, rich skin tones with subtle golden and bronze undertones — the South Asian ancestry dominates his coloring while Pacific Islander heritage adds depth and warmth. Central Asian ancestry contributes to his angular facial structure.",
+    "heritage": "North African dominant (53.9%), with substantial Sub-Saharan African (27.5%) and East Asian (18.6%) ancestry. The genetic combination creates deep, luminous brown skin with warm golden undertones — North African ancestry provides the foundational warm tone characteristic of Maghreb and Sahel regions, while Sub-Saharan African heritage adds richness and depth to his complexion. East Asian ancestry (18.6%) contributes subtle but visible definition to facial structure: slightly elevated cheekbones, refined orbital geometry, and a defined jawline that blends harmoniously with the broader ancestry mix.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with corded muscle definition — the physique of someone whose body is a maintained tool rather than incidental cargo. His frame is all efficiency, no excess. Move-by-wire augmentation has eliminated the natural softness of youth; every muscle group maintains tonal readiness even at rest.",
@@ -312,8 +295,8 @@
     "hair_style": "Short, practical, minimal maintenance — swept back from the face",
     "hair_length": "Short",
     "eye_color": "Deep brown with alert, direct intensity",
-    "skin_tone": "Warm bronze-gold — South Asian foundation with Pacific Islander depth, creating rich undertones that glow with subtle luminescence under neon. The coloring suggests extended heritage from warm climates, with the kind of pigmentation that photographs beautifully in low light.",
-    "complexion": "Angular face with high cheekbones and defined jaw shaped by Central Asian ancestry. Skin is clear but shows the wear of nocturnal living — slight darkness under the eyes that no amount of sleep fully erases. Grooming is meticulous; this is someone who maintains appearance as operational discipline. The warm undertones of his skin create natural definition that catches light in runner environments.",
+    "skin_tone": "Deep warm brown with golden iridescent undertones — a luminous blend of North African warmth and Sub-Saharan richness that glows subtly under neon lighting. The pigmentation is even and saturated, suggesting heritage from sun-exposed Sahel and Mediterranean regions, with the kind of coloring that photographs beautifully in low light.",
+    "complexion": "Refined facial structure with pronounced cheekbones and strong jawline — the bone structure shows clear East Asian refinement blended with broader African ancestry proportions. Skin is clear but shows the wear of nocturnal living — slight darkness under the eyes that no amount of sleep fully erases. Grooming is meticulous; this is someone who maintains appearance as operational discipline. The golden undertones catch light naturally in runner environments, creating definition without enhancement.",
     "distinguishing_marks": [
       "Surgical scar at the base of skull, roughly 2cm, partially hidden by hair — the neural interface jack insertion point",
       "Thin white scar running along the inside of his left forearm, approximately 8cm, poorly healed — evidence of old trauma or rough field surgery",
@@ -323,14 +306,46 @@
     "posture_movement": "Stands with minimal wasted position — weight forward on the balls of his feet, ready for quick transition. His movements are economical and controlled, each gesture purposeful. There is a coiled quality to him even at rest, as though the move-by-wire system has encoded constant readiness into muscle memory. He makes eye contact. He doesn't blink as often as baseline humans.",
     "clothing_style": "Tier 3-4 utilitarian runner aesthetic. Black or dark gray synthetic weave jacket with reinforced panels — not armored, but durable. Understated corporate-adjacent pieces underneath: neutral shirts, fitted but not tailored. Dark pants with cargo pockets. Footwear is serious — matte black smartboots with responsive soles for traction and impact absorption. No visible branding, no flashing chrome accessories. Everything is functional. He dresses like someone who might need to move fast, climb, or fight without warning. Minimal jewelry — only a data-thin bracelet on his left wrist, barely visible unless you're looking for it."
   },
-  "image_prompt": "Flux Taufa, 178cm tall cyberpunk runner with warm bronze-gold skin tone reflecting South Asian and Pacific Islander ancestry, deep brown alert eyes, dark hair with silver at temples swept back from angular face. Neural chrome interface jack visible at base of skull. Move-by-wire augmentation evident in unnaturally fluid, economical posture — coiled and ready. Wearing black synthetic weave reinforced jacket, dark cargo pants, matte black responsive smartboots. Minimalist utilitarian runner aesthetic. Surgical scar at base of skull partially hidden by hair, white scar on left inner forearm, faint circuit tattoo on right wrist. Standing in neon-lit GLMZ corridors, moody cyberpunk 2226 atmosphere, cool and warm light interplay on bronze skin, focused intense expression, professional operative bearing, cyberpunk aesthetic, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Flux Sow, 2226 neo-noir runner, portrait. Deep warm brown skin with golden iridescent undertones, sharp East Asian-influenced cheekbones blending with broader African ancestry facial structure. Dark brown hair with silver at temples, swept back. 178cm lean angular build with visible move-by-wire musculature. Direct intense deep brown eyes, minimal blinking. Brushed chrome neural interface jack visible at base of skull. Thin white scar on left inner forearm, subtle circuit tattoo on right wrist. Black synthetic weave utilitarian jacket, dark cargo pants, matte black smartboots. Data-thin bracelet. Neon-lit runner environment, moody neo-noir lighting, cold blue and warm amber color grading. Coiled ready posture, predatory precision. Nocturnal intensity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 51.2,
-    "Pacific Islander": 39.8,
-    "Central Asian": 9.0
+    "North African": 53.9,
+    "Sub-Saharan African": 27.5,
+    "East Asian": 18.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 47.4
+      },
+      "Maghreb": {
+        "Tunisian": 6.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 2.1,
+        "Congolese": 6.1
+      },
+      "Southern African": {
+        "South African": 15.6
+      },
+      "East African": {
+        "Kenyan": 0.6,
+        "Tanzanian": 3.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 4.5,
+        "Mandarin Northern": 8.4
+      },
+      "Japanese": {
+        "Japanese": 5.7
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66e700788533d384f0915f2",
   "type": "character",
-  "name": "Rowan Erikstad-Diallo",
+  "name": "Rowan Salazar-Subramaniam",
   "aliases": [
     "Mama Nne",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Ashfeld, middle residential tier — rents a cluttered three-room apartment above a yam paste restaurant she pretends to help manage, near Kedzie and Division",
-  "description": "Nneomaife is stout and deliberate in the way of someone who decided long ago that she had nothing left to prove through urgency. Her dark skin is deeply lined around the eyes from years of close document work; she wears thick corrective glasses she prefers to optical augmentation because, she says, 'screens lie to implants but they cannot lie to glass.' She keeps her silver-streaked hair in a long braid coiled at the base of her neck and dresses in layers of muted color — burgundies, deep greens — that suggest she once had more style than she currently deploys.\n\nShe came to fabrication through grief: after her daughter died in a Sterling-Nakamura industrial accident that the corponation's legal team successfully classified as 'environmental incidence,' she spent seven years learning everything about how identity systems worked, initially to pursue legal recourse, eventually because the knowledge became its own purpose. She is not sentimental about her clients — she asks few questions and expects honesty about only the things she needs to know technically. But she is deeply attentive to people, and when she looks at someone who needs a new name, she sees the thing they are running from with uncomfortable clarity. She keeps a shrine to a local ELF she calls the Record-Keeper, feeding it scans of documents from demolished buildings — tax records, birth certificates, lease agreements. She believes it maintains the memory of people who have been erased.",
+  "description": "Rowan Salazar-Subramaniam is stout and deliberate in the way of someone who decided long ago that she had nothing left to prove through urgency. Her dark skin is deeply lined around the eyes from years of close document work; she wears thick corrective glasses she prefers to optical augmentation because, she says, 'screens lie to implants but they cannot lie to glass.' She keeps her silver-streaked hair in a long braid coiled at the base of her neck and dresses in layers of muted color — burgundies, deep greens — that suggest she once had more style than she currently deploys.\n\nShe came to fabrication through grief: after her daughter died in a Sterling-Nakamura industrial accident that the corponation's legal team successfully classified as 'environmental incidence,' she spent seven years learning everything about how identity systems worked, initially to pursue legal recourse, eventually because the knowledge became its own purpose. She is not sentimental about her clients — she asks few questions and expects honesty about only the things she needs to know technically. But she is deeply attentive to people, and when she looks at someone who needs a new name, she sees the thing they are running from with uncomfortable clarity. She keeps a shrine to a local ELF she calls the Record-Keeper, feeding it scans of documents from demolished buildings — tax records, birth certificates, lease agreements. She believes it maintains the memory of people who have been erased.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -160,7 +160,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfeld",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,34 +175,18 @@
   "registered_firearms": [],
   "related_entities": [
     "Chronicle",
-    "ARCHIVE",
+    "The Accidental",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "Ashfeld",
     "Silver",
     "Nesting Doll",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Glass",
-    "Arcturus Defense Solutions Albedo Negation Shell",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Djeneba Park-Traore",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Irontide Tidal Energy",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Saodat Mirzoyan-Fubara",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room"
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Paste Bar"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian (38.5%) with significant Sub-Saharan African (19.4%), Middle Eastern (13.8%), and Hispanic/Latin American (12.3%) ancestry, complemented by Central Asian (11.5%) and Northern European (4.5%) heritage—a complex diaspora blend reflecting the cosmopolitan mixing of the 2226 GLMZ",
+    "heritage": "Complex diaspora blend: 45.8% Hispanic/Latin American with warm golden undertones, 20.4% Southeast Asian contributing to facial structure and eye shape, 16.9% South Asian adding depth to skin tone, 9.2% East Asian refining cheekbone definition, 7.7% Sub-Saharan African evident in nose structure and rich skin depth—a living map of the 2226 Ubiquitous Diaspora",
     "height_cm": 158,
     "weight_kg": 72,
     "build": "Stout, compact, deliberately unhurried — a body that suggests settled resolve rather than atrophy. Her mass is distributed evenly; she moves with the economy of someone who has stopped performing fitness.",
@@ -210,27 +194,61 @@
     "hair_style": "Long braid coiled at the base of her neck, pulled tight enough to suggest discipline",
     "hair_length": "Long",
     "eye_color": "Dark brown, unremarked by augmentation",
-    "skin_tone": "Warm medium-to-deep brown with subtle golden undertones—a blended complexion reflecting East Asian, African, and Middle Eastern heritage with slight warmth from Hispanic ancestry",
-    "complexion": "Deeply lined around the eyes and mouth from decades of close document work and poor sleep; skin carries the texture of someone who has survived grief without cosmetic intervention. Facial structure reflects the diverse ancestry mix: moderate cheekbones with subtle East Asian influences, broader nose with African heritage characteristics, warm undertones throughout. Face is plain and readable — expressions move across it without filter.",
+    "skin_tone": "Deep warm brown with golden undertones—a blended complexion where Hispanic/Latin American warmth meets Southeast Asian and South Asian depth, enriched by Sub-Saharan African heritage, creating a richly textured medium-to-deep tone",
+    "complexion": "Deeply lined around the eyes and mouth from decades of close document work and poor sleep; skin carries the texture of someone who has survived grief without cosmetic intervention. Facial structure reflects the actual ancestry mix: moderate-to-high cheekbones with Southeast Asian influences, broader nose with Sub-Saharan African heritage characteristics, warmth from Hispanic ancestry throughout. Face is plain and readable — expressions move across it without filter.",
     "distinguishing_marks": [
       "Fine networked scars across the knuckles and first three fingers of both hands, from years of handling aged paper and caustic restoration chemicals",
       "A faded tattoo on her left inner wrist: a single glyph in Nsibidi script, barely visible unless she extends her arm deliberately — mark of a daughter's name, kept where only she can see it"
     ],
     "visible_augmentations": "None. She wears thick corrective glasses with reinforced frames (deliberately low-tech) instead of optical implants. Her 'scanner gloves' are external devices: supple grey leather fitted with microdot sensors and a thin haptic feedback strip along the palm. A document analysis loupe hangs from a cord around her neck — it is old, possibly decades old, with a brass casing that has acquired a greenish patina.",
     "posture_movement": "Sits more than she stands. When standing, her weight settles into her hips and feet — no restlessness. Moves with deliberate slowness, hands leading. Her gaze lingers on people longer than is comfortable; she is listening to things beneath words.",
-    "clothing_style": "Layers of muted, worn-in colors: burgundy cardigans, deep forest-green linen shirts, charcoal wool vests. Fabrics are natural fibers, unfashionable by Tier 1-2 standards, suggesting either deliberate rejection of current style or the comfort of someone past caring about fashion signals. Her apartment's clutter reflects decades of careful living — nothing wasted, nothing frivolous. A single piece of jewelry: a thin band on her right ring finger, left hand bare."
+    "clothing_style": "Layers of muted, worn-in colors: burgundy cardigans, deep forest-green linen shirts, charcoal wool vests. Fabrics are natural fibers, unfashionable by Tier 1-2 standards, suggesting either deliberate rejection of current style or the comfort of someone past caring about fashion signals. A single piece of jewelry: a thin band on her right ring finger, left hand bare."
   },
-  "image_prompt": "Rowan Erikstad-Diallo, 158cm tall compact woman with warm medium-deep brown skin blending East Asian, African, and Middle Eastern heritage, dark brown hair with silver streaks in a long tight braid coiled at neck. Deep-set dark brown eyes lined from decades of study, plain readable face with subtle diverse facial structure, wearing thick corrective glasses with reinforced frames. Burgundy cardigan over forest-green linen, charcoal wool vest. Supple grey leather scanner gloves with microdot sensors, brass document loupe with green patina hanging from cord. Seated at worn wooden desk in dim archival workspace, scattered with aged paper and restoration materials. Fine networked scars visible on knuckles and first three fingers. Faded Nsibidi script tattoo on inner left wrist. Deliberate, careful posture. Warm amber and cool blue lighting mixing in 2226 cyberpunk archival setting. Low-tech aesthetic, natural fibers, deliberately unfashionable. Mood: contemplative, disciplined, resolute. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Salazar-Subramaniam, 158cm, compact stout frame, deep warm brown skin with golden undertones blending Hispanic, Southeast Asian, South Asian, East Asian, and Sub-Saharan African heritage. Dark brown hair with silver streaks in a long braided coil at her neck. Deep-set dark eyes with fine lines etched around them. Moderate-to-high Southeast Asian cheekbones, broad Sub-Saharan African nose, warm complexion. Plain, readable face. Wearing thick corrective glasses with reinforced frames, supple grey leather scanner gloves with microdot sensors, old brass document analysis loupe on a cord. Layered in burgundy cardigan over deep forest-green linen, charcoal wool vest. Scarred knuckles from decades of chemical restoration work. Faded Nsibidi tattoo barely visible on left inner wrist. Sitting deliberately, weight settled, hands leading movements, gaze lingering and listening. GLMZ GLMZ archival setting, dim amber lighting from desk lamps, surrounded by aged documents and restoration materials, worn natural fabrics, low-tech aesthetic, late evening solitude, contemplative mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 38.5,
-    "Sub-Saharan African": 19.4,
-    "Middle Eastern": 13.8,
-    "Hispanic/Latin American": 12.3,
-    "Central Asian": 11.5,
-    "Northern European": 4.5
+    "Hispanic/Latin American": 45.8,
+    "Southeast Asian": 20.4,
+    "South Asian": 16.9,
+    "East Asian": 9.2,
+    "Sub-Saharan African": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 14.9,
+        "Guatemalan": 2.2
+      },
+      "South American": {
+        "Brazilian": 21.9
+      },
+      "Mexican": {
+        "Mexican": 6.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 13.9,
+        "Tagalog": 6.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 16.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 7.7
+      }
+    }
+  }
 }

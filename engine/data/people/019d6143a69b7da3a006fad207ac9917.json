@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69b7da3a006fad207ac9917",
   "type": "character",
-  "name": "Arden Mbekele",
+  "name": "Arden Sefanaia",
   "aliases": [
     "Driftwood",
     "Pik"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "The Shelf lower levels, primarily between Blackpipe Corridor and Burnside Pocket, near Ashland and Chicago Ave",
-  "description": "Pikoi is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Shelf's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
+  "description": "Arden Sefanaia is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Shelf's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,31 +241,16 @@
     "Grandmother",
     "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "GLMZ",
+    "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
     "NeuralPath Cascade Standard Feed BCI",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Cezar Watanabe-Gyasi",
-    "Crucible UB-2 'Umbrella'",
-    "Dayo Adeyemi",
-    "Lazarus LX-2 'Lab Rat'",
-    "Neuromorphic Pressure Cestus",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Ringo DV-4 'Courier'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Synaptrel",
-    "The Render",
-    "The Underlayer Collective",
-    "The Wire Taps",
-    "Tooth Fairy"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: Sub-Saharan African base (32%) with substantial Pacific Islander (23%), Northern European (21%), and significant North African, Hispanic/Latin American, and Southeast Asian contributions. Reflects the Ubiquitous Diaspora — genetic heritage independent of surname.",
+    "heritage": "Pacific Islander dominant (50.8%) with substantial Hispanic/Latin American (26.3%) and Sub-Saharan African (22.9%) ancestry. The combination creates a striking phenotype: broad facial structure and warm undertones from Pacific Islander genetics, refined by the angular cheekbones and defined facial geometry of Latin American heritage, enriched by deeper skin undertones and textural qualities from Sub-Saharan African ancestry. A true Ubiquitous Diaspora blend creating warm, sun-kissed luminosity with bold, distinctive features.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and wiry, all lean muscle and angles — the build of someone who runs rather than fights, with minimal fat and functional strength concentrated in his legs and core",
@@ -273,8 +258,8 @@
     "hair_style": "Chaotic, unmaintained halo of coils; often falls into his eyes",
     "hair_length": "Medium",
     "eye_color": "Tide-pattern modded: base brown with concentric rings of blue-green that ripple outward slowly in programmed cycles",
-    "skin_tone": "Medium-deep warm brown with complex undertones — the Sub-Saharan base enriched by olive and amber notes from North African ancestry, with subtle warm undertones from Pacific Islander and Southeast Asian genetics creating a nuanced, sun-kissed depth",
-    "complexion": "Angular face with broad jaw and wide-set eyes showing Pacific Islander structure refined by Northern European cheekbones and Southeast Asian eye shape. The blend creates sharp, distinctive features. Clear skin with the worn appearance of someone who sleeps poorly and eats inconsistently. Thin scar crossing left eyebrow, slightly raised and pale against his skin tone.",
+    "skin_tone": "Medium-deep warm brown with golden and amber undertones — Pacific Islander warmth blended with Sub-Saharan depth and Latin American richness creates a luminous, sun-kissed complexion that catches light beautifully",
+    "complexion": "Broad, angular face with wide-set eyes showing strong Pacific Islander structure combined with refined, high cheekbones from Hispanic/Latin American heritage and warm textural depth from Sub-Saharan African genetics. Bold, distinctive features with strong jaw definition. Clear skin with the worn appearance of someone who sleeps poorly and eats inconsistently. Thin scar crossing left eyebrow, slightly raised and pale against his skin tone.",
     "distinguishing_marks": [
       "Thin scar crossing left eyebrow, approximately 3cm, pale and slightly raised, origin undiscussed"
     ],
@@ -282,17 +267,39 @@
     "posture_movement": "Moves with economical grace through crowds and corridors, weight balanced on the balls of his feet as if perpetually ready to change direction. Habitually scans rooms for exits and sight lines. Fast twitchy movements when nervous or in transit; can appear jittery under pressure. Favors doorways and wall positions in conversation.",
     "clothing_style": "Tier 4 casual: worn synthweave jacket in charcoal gray with internal pockets for slips and currency bundles, loose thermal underlayer, cargo pants with reinforced pockets, scuffed low-profile runners. Nothing that marks him as wealthy or corpo — everything is functional, easily replaceable, designed not to snag or impede movement. Carries a messenger bag, nondescript dark fabric, worn soft from use."
   },
-  "image_prompt": "Arden Mbekele, 168cm lean wiry figure with medium chaotic black coils, medium-deep warm brown skin with olive and amber undertones. Angular face, broad jaw, wide-set eyes with rippling blue-green tide-pattern cybernetic iris mods cycling slowly. Pale scar crossing left eyebrow. Worn charcoal synthweave jacket, thermal underlayer, cargo pants, scuffed runners, dark messenger bag. Standing in doorway of neon-lit GLMZ corridor, weight balanced on balls of feet, economical posture, habitually scanning room. Cyberpunk 2226, atmospheric volumetric lighting, reflective wet pavement, cool blue-green neon contrast with warm ambient sodium vapor. Mood: perpetually alert, ready to move. --ar 2:3 --v 6",
+  "image_prompt": "Arden Sefanaia, lean 168cm wiry frame, medium-deep warm brown skin with golden undertones, broad angular face with high cheekbones and wide-set eyes, natural black coiled hair in medium chaotic halo falling across forehead, pale scar crossing left eyebrow, distinctive tide-pattern iris mods with rippling blue-green rings in brown eyes, thin facial structure showing Pacific Islander, Latin American and Sub-Saharan African blend, worn appearance from poor sleep, charcoal gray synthweave jacket with internal pockets, loose thermal underlayer, reinforced cargo pants, scuffed runners, nondescript dark messenger bag, weight balanced on balls of feet in alert posture, scanning room nervously, positioned near doorway in shadows, GLMZ Great Lakes Metropolitan Zone, moody blue-green neon backlighting catching his skin tone and eye augmentations, gritty urban corridor setting, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 31.9,
-    "Pacific Islander": 23.2,
-    "Northern European": 20.8,
-    "Hispanic/Latin American": 10.8,
-    "North African": 7.9,
-    "Southeast Asian": 5.4
+    "Pacific Islander": 50.8,
+    "Hispanic/Latin American": 26.3,
+    "Sub-Saharan African": 22.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 50.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 14.3
+      },
+      "Mexican": {
+        "Mexican": 5.5
+      },
+      "Caribbean": {
+        "Haitian": 3.4,
+        "Puerto Rican": 3.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 18.9,
+        "Zambian": 4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e2726da40d0377d486a188",
   "type": "character",
-  "name": "Odalys Prempeh",
+  "name": "Gunnar Haraldsen",
   "aliases": [
     "Dan",
     "Fig"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Vantage Meridian Corporate Campus, Helix Biosystems Applied Genomics Division",
-  "description": "Dantonio is slight and perpetually underdressed for the climate-controlled precision of the Helix campus — he runs hot, sweats through everything, and has given up on looking composed. He has his grandmother's broad nose and his grandfather's sharp jaw, warm brown skin scattered with vitiligo patches that he has never treated because he thinks they're interesting, and he grew cat ears last year as a sixteenth-birthday gift to himself that he thought would make him look confident and now mostly make him look like he's always slightly startled, which is accurate. He's twenty-three, brilliant in a narrow and genuinely useful way, and deeply, structurally exhausted.\n\nHe grew up Tier 2 on UBC-adjacent support in Grainfort, won a Helix merit scholarship that turned out to have seventeen pages of intellectual property clauses buried in the terms, and is now doing the work of three people for intern stipend. He is not cynical yet — that's the most notable thing about him. He still gets excited. He still sends enthusiastic research summaries to supervisors who don't read them. He still believes, against mounting evidence, that if he is good enough at his job someone will notice.",
+  "description": "Gunnar Haraldsen is slight and perpetually underdressed for the climate-controlled precision of the Helix campus — he runs hot, sweats through everything, and has given up on looking composed. He has his grandmother's broad nose and his grandfather's sharp jaw, warm brown skin scattered with vitiligo patches that he has never treated because he thinks they're interesting, and he grew cat ears last year as a sixteenth-birthday gift to himself that he thought would make him look confident and now mostly make him look like he's always slightly startled, which is accurate. He's twenty-three, brilliant in a narrow and genuinely useful way, and deeply, structurally exhausted.\n\nHe grew up Tier 2 on UBC-adjacent support in Grainfort, won a Helix merit scholarship that turned out to have seventeen pages of intellectual property clauses buried in the terms, and is now doing the work of three people for intern stipend. He is not cynical yet — that's the most notable thing about him. He still gets excited. He still sends enthusiastic research summaries to supervisors who don't read them. He still believes, against mounting evidence, that if he is good enough at his job someone will notice.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -170,7 +170,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Vantage Meridian Corporate Campus",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -222,22 +222,13 @@
     "Grandmother",
     "The CEO",
     "Grainfort",
-    "CRUCIBLE Vantage Artisan Precision Hand",
-    "Arcturus CK-5 'Bloodhound'",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Hydewood",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
     "Plot 17",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+    "CRUCIBLE Vantage Artisan Precision Hand",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (63.3%) with significant Hispanic/Latin American (21.7%), East Asian (9.0%), and Southeast Asian (6.0%) ancestry. This genetic blend manifests in warm deep brown skin tones with subtle golden undertones, facial structure reflecting the broader bone structure common to African ancestry mixed with the finer features from East and Southeast Asian heritage, and natural dark brown hair with a slightly different texture profile than either parent ancestry alone.",
+    "heritage": "Predominantly East Asian (45.6%) with significant Northern European (39.3%), Hispanic/Latin American (9.2%), and Eastern European (5.9%) ancestry. This genetic blend manifests in warm medium tan skin with golden undertones, a facial structure that balances Northern European bone prominence with refined East Asian features, creating high cheekbones and a defined jawline with subtle softness around the eyes typical of mixed heritage. Natural dark brown hair with slight texture variation from the blended genetic background.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Slight and lean, almost wiry — the build of someone who forgets to eat and runs hot. Narrow shoulders, long-limbed, no visible muscle definition. Looks perpetually underfed despite eating regularly.",
@@ -245,8 +236,8 @@
     "hair_style": "Shoulder-length, often pulled back with whatever is nearest — lab clips, rubber bands, once a pipette tip. Disheveled by default.",
     "hair_length": "Medium",
     "eye_color": "Warm brown with basic student-tier neural link interface visible as faint amber circuitry at the outer canthi when active",
-    "skin_tone": "Deep warm brown with golden undertones, featuring irregular cream-colored vitiligo patches across shoulders, neck, and left cheekbone — untreated, visible, accepted without vanity",
-    "complexion": "Broad-featured with strong bone structure reflecting African heritage, softened by finer detailing from East and Southeast Asian ancestry. High cheekbones, defined jaw. Perpetually tired around the eyes. Prone to flushing when embarrassed or overheated. Often has lab residue under fingernails or on clothing.",
+    "skin_tone": "Warm medium tan with golden undertones, featuring irregular cream-colored vitiligo patches across shoulders, neck, and left cheekbone — untreated, visible, accepted without vanity",
+    "complexion": "Balanced facial structure reflecting the East Asian-Northern European genetic blend — moderately prominent bone structure with refined features, high cheekbones with subtle fullness, defined jawline softened by the East Asian heritage influence. Perpetually tired around the eyes with a tendency toward flushing when embarrassed or overheated. Often has lab residue under fingernails or on clothing.",
     "distinguishing_marks": [
       "Pale gold cosmetic cat ears (self-grown via geneware, approximately 8cm tall, positioned naturally on skull, slightly pointed) — present for approximately one year",
       "Irregular cream-colored vitiligo patches across shoulders, upper arms, neck, and left cheekbone",
@@ -256,15 +247,51 @@
     "posture_movement": "Hunches slightly when focused, fidgets with objects (pens, lab equipment, his own sleeves). Moves with nervous energy rather than confidence. Frequently touches his cat ears unconsciously when thinking or anxious. Walks quickly between tasks. Makes intense eye contact when excited about research, avoids it when uncertain.",
     "clothing_style": "Tier 2 functionality-first aesthetic. Standard-issue Helix intern polo (pale gray, usually sweat-stained, often wearing it unbuttoned over a worn band t-shirt). Cargo pants with multiple pockets for lab notebooks and dataslates. Worn athletic shoes. Campus access badge on a frayed lanyard. No jewelry. Clothing is always slightly too warm for his body temperature; he is perpetually underdressed for his own thermal needs and overdressed for the climate."
   },
-  "image_prompt": "Odalys Prempeh, 2226 GLMZ cyberpunk setting. Deep warm brown-skinned young intern with golden undertones, slender wiry frame, shoulder-length dark brown disheveled hair. Distinctive pale gold geneware cat ears (8cm, naturally positioned on skull). Cream-colored vitiligo patches visible on neck, shoulders, left cheekbone. Warm brown eyes with faint amber neural link circuitry visible at outer corners. Nervous posture, hunched slightly over lab work, unconsciously touching cat ear. Wearing standard-issue pale gray Helix intern polo (sweat-stained, unbuttoned over worn band t-shirt), cargo pants, worn athletic shoes, frayed lanyard with campus badge. Fine scar barely visible on right wrist. Lab residue under fingernails. Tired but focused expression. Fluorescent lab lighting with soft neon glow from neural interface. Cyberpunk near-future aesthetic, functional minimalist environment. Focused intensity mixed with underlying nervous energy. --ar 2:3 --v 6",
+  "image_prompt": "Gunnar Haraldsen, GLMZ, thin wiry 172cm lean lab intern with warm medium tan skin and golden undertones, irregular cream vitiligo patches on shoulders and neck, dark brown shoulder-length disheveled hair, warm brown eyes with faint amber neural interface circuitry visible at eye corners, pale gold cosmetic cat ears 8cm tall naturally positioned on skull, refined mixed East Asian-Northern European facial features with high cheekbones and defined jaw, tired expression around eyes. Pale gray sweat-stained Helix intern polo unbuttoned over worn band t-shirt, cargo pants with multiple pockets, worn athletic shoes, frayed lanyard with campus badge. Hunched posture, nervous fidgeting energy, standing in a Great Lakes Metropolitan Zone research lab with bioluminescent panels and holographic displays, cool blue-white LED lighting casting subtle shadows, concentrated focused expression, touching cat ear unconsciously, lab equipment visible in blurred background, neo-noir urban aesthetic with subtle bioluminescent accents, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 63.3,
-    "Hispanic/Latin American": 21.7,
-    "East Asian": 9.0,
-    "Southeast Asian": 6.0
+    "East Asian": 45.6,
+    "Northern European": 39.3,
+    "Hispanic/Latin American": 9.2,
+    "Eastern European": 5.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 25.4
+      },
+      "Chinese": {
+        "Hakka": 11.6,
+        "Shanghainese": 8.6
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 35.1,
+        "Danish": 4.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 6.3
+      },
+      "Central American": {
+        "Salvadoran": 2.9
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 3.5
+      },
+      "Slavic East": {
+        "Ukrainian": 1
+      },
+      "Slavic South": {
+        "Bosnian": 1.4
+      }
+    }
+  }
 }

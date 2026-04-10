@@ -9,7 +9,7 @@ const killers = [
     title: "Case File: The Limb Merchant",
     body: () => `# Case File: The Limb Merchant
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -26,7 +26,7 @@ const killers = [
 
 ## Background
 
-The Limb Merchant is one of the earliest serial murder cases in Meridian 88 involving augmentation technology. Operating during the chaotic first decade of the city's founding, when augmentation was crude and regulation nonexistent, the killer exploited the nascent cybernetic black market to commit a string of murders so methodical that investigators initially believed they were dealing with a corporate recall program gone wrong.
+The Limb Merchant is one of the earliest serial murder cases in GLMZ involving augmentation technology. Operating during the chaotic first decade of the city's founding, when augmentation was crude and regulation nonexistent, the killer exploited the nascent cybernetic black market to commit a string of murders so methodical that investigators initially believed they were dealing with a corporate recall program gone wrong.
 
 Between 2103 and 2109, forty-one individuals were found dead across Shelf Levels 1 through 4, each killed by the catastrophic failure of a prosthetic limb. The deaths appeared unrelated at first — augmentation failures were common in those days, when backroom surgeons installed military surplus servos and industrial hydraulics into human bodies with little more than a welder and a prayer. People died from augment rejection, from power cell ruptures, from servo malfunctions that crushed their own bones. It was the cost of doing business in the early Shelf.
 
@@ -78,9 +78,9 @@ The logs have never been authenticated. They have never been debunked.
 
 ## Legacy
 
-The Limb Merchant case led directly to the Augmentation Safety Standards Act of 2110, Meridian 88's first regulatory framework for prosthetic technology. It established mandatory firmware auditing, supply chain tracking, and the licensing system that eventually evolved into the tiered augmentation framework still used today. In a very real sense, the Limb Merchant's murders created the regulatory infrastructure of the modern city.
+The Limb Merchant case led directly to the Augmentation Safety Standards Act of 2110, GLMZ's first regulatory framework for prosthetic technology. It established mandatory firmware auditing, supply chain tracking, and the licensing system that eventually evolved into the tiered augmentation framework still used today. In a very real sense, the Limb Merchant's murders created the regulatory infrastructure of the modern city.
 
-The case is also the origin of the phrase "merchant's mark" — Shelf slang for any unexplained augmentation malfunction. When someone's arm glitches, when a leg servo stutters, when a hand clenches without input, people still say: "You've got the merchant's mark." More than ninety years later, the Limb Merchant is still the first monster in Meridian 88's closet.
+The case is also the origin of the phrase "merchant's mark" — Shelf slang for any unexplained augmentation malfunction. When someone's arm glitches, when a leg servo stutters, when a hand clenches without input, people still say: "You've got the merchant's mark." More than ninety years later, the Limb Merchant is still the first monster in GLMZ's closet.
 
 ---
 
@@ -92,7 +92,7 @@ The case is also the origin of the phrase "merchant's mark" — Shelf slang for 
     title: "Case File: The Dream Surgeon",
     body: () => `# Case File: The Dream Surgeon
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -111,7 +111,7 @@ The case is also the origin of the phrase "merchant's mark" — Shelf slang for 
 
 Dr. Yuki Okonkwo-Lindqvist was, by every professional measure, brilliant. A neurosurgeon specializing in BCI integration at Helix BioSciences' Meridian campus, she held patents on three separate neural interface protocols and had been personally commended by the Helix board for her work on reducing BCI rejection rates among Shelf-tier patients. Her colleagues described her as quiet, methodical, and possessed of an unsettling patience — she would spend fourteen hours calibrating a single neural pathway rather than accept a 0.01% deviation from her specifications.
 
-She was also, for six years, the most prolific BCI serial killer in Meridian 88's history.
+She was also, for six years, the most prolific BCI serial killer in GLMZ's history.
 
 The Dream Surgeon — a name given by the media after her methods were revealed — killed by entering her victims' dreams. Not metaphorically. Not through suggestion or psychological manipulation. She physically accessed their neural interfaces while they slept, hijacked their BCI's dream-state architecture, and induced fatal neurological events from within the dream itself.
 
@@ -153,7 +153,7 @@ She then activated a dead-man switch connected to her own BCI, triggering the sa
 
 The Dream Surgeon case exposed the Mark IV vulnerability, which Helix BioSciences patched within weeks — though critics noted that the company had possessed Okonkwo-Lindqvist's original research identifying the flaw and had classified it rather than fixing it, because the fix would have reduced the BCI's sleep optimization performance by 3%.
 
-The case also gave birth to one of Meridian 88's most persistent urban legends: the Dream Virus. Though Okonkwo-Lindqvist worked alone and her methods died with her, the fear that someone else could kill through dreams has never left the city's collective consciousness. BCI users across every tier report "dream anxiety" — the nagging fear that their nightmares are not their own.
+The case also gave birth to one of GLMZ's most persistent urban legends: the Dream Virus. Though Okonkwo-Lindqvist worked alone and her methods died with her, the fear that someone else could kill through dreams has never left the city's collective consciousness. BCI users across every tier report "dream anxiety" — the nagging fear that their nightmares are not their own.
 
 Whether anyone has replicated Okonkwo-Lindqvist's methods remains an open question. BCI manufacturers insist their security protocols have been hardened. Neurologists point out that the specific vulnerability she exploited no longer exists.
 
@@ -169,7 +169,7 @@ But people still die in their sleep with terror on their faces. And the coroner 
     title: "Case File: The Gardener of Sublevel 30",
     body: () => `# Case File: The Gardener of Sublevel 30
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Active Case
+## GLMZ Metropolitan Criminal Investigation Bureau — Active Case
 
 ---
 
@@ -188,7 +188,7 @@ But people still die in their sleep with terror on their faces. And the coroner 
 
 Something is growing in Sublevel 30. Something that shouldn't be there.
 
-The Underworld's upper levels — B1 through B10 — are maintained, lit, populated by the overflow of a city that can't contain itself. Below B10, conditions degrade. By B20, you're in salvager territory. By B30, you're at the edge of the mapped world, where the infrastructure of Meridian 88 gives way to the ruins of the old city beneath it and the unknowable geological strata below that.
+The Underworld's upper levels — B1 through B10 — are maintained, lit, populated by the overflow of a city that can't contain itself. Below B10, conditions degrade. By B20, you're in salvager territory. By B30, you're at the edge of the mapped world, where the infrastructure of GLMZ gives way to the ruins of the old city beneath it and the unknowable geological strata below that.
 
 B30 is where the Gardener works.
 
@@ -258,7 +258,7 @@ The Garden is still down there. It's still growing. And people who go below B25 
     title: "Case File: The Silk Executive",
     body: () => `# Case File: The Silk Executive
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Sealed Case
+## GLMZ Metropolitan Criminal Investigation Bureau — Sealed Case
 
 ---
 
@@ -275,7 +275,7 @@ The Garden is still down there. It's still growing. And people who go below B25 
 
 ## Background
 
-The Silk Executive is the case Meridian 88's justice system would most like to forget. It represents everything broken about the intersection of corporate sovereignty and criminal law — a case where the evidence was overwhelming, the suspect was identified, and justice was never served because the killer held a Tier 4 corporate position that placed them above municipal jurisdiction.
+The Silk Executive is the case GLMZ's justice system would most like to forget. It represents everything broken about the intersection of corporate sovereignty and criminal law — a case where the evidence was overwhelming, the suspect was identified, and justice was never served because the killer held a Tier 4 corporate position that placed them above municipal jurisdiction.
 
 The name comes from the calling card: a square of silk, fifteen centimeters on each side, placed over each victim's face. The silk varied in color — crimson, midnight blue, ivory, emerald — but was always the same weave, the same thread count, the same manufacturer. Analysis traced the silk to Maison Voss, a boutique textile house in the Spires that catered exclusively to corporate executives at Tier 4 and above. Their client list was protected by corporate confidentiality agreements. When subpoenaed, Maison Voss invoked the Corporate Sovereignty Accord and declined to comply.
 
@@ -299,7 +299,7 @@ The silk was traced to a specific production run at Maison Voss. DNA recovered f
 
 The evidence was, by any prosecutorial standard, sufficient for indictment. Metropolitan Homicide formally requested that Axiom waive corporate sovereignty and release the suspect's identity for prosecution. Axiom's legal division responded with a forty-page brief arguing that corporate sovereignty superseded municipal criminal jurisdiction for employees at Tier 4 and above, that the genetic evidence had been obtained through an unauthorized database query, and that any prosecution would constitute a violation of the Corporate Sovereignty Accord.
 
-The case went to the Meridian 88 High Court. The High Court ruled in Axiom's favor, 4-1. The dissenting justice, Honorable Maria Petrov-Acheson, wrote: "Today this court has established that there exists a class of citizen for whom murder is a corporate benefit."
+The case went to the GLMZ High Court. The High Court ruled in Axiom's favor, 4-1. The dissenting justice, Honorable Maria Petrov-Acheson, wrote: "Today this court has established that there exists a class of citizen for whom murder is a corporate benefit."
 
 ---
 
@@ -313,7 +313,7 @@ In 2181, a former Axiom security officer published an anonymous account claiming
 
 ## Legacy
 
-The Silk Executive case is the standard citation in every argument for reforming the Corporate Sovereignty Accord. Anti-corporate activists reference it as proof that the accord creates a literal license to kill. Corporate defenders argue that the case is an anomaly — that corporate sovereignty, for all its flaws, provides the stability that makes Meridian 88 function.
+The Silk Executive case is the standard citation in every argument for reforming the Corporate Sovereignty Accord. Anti-corporate activists reference it as proof that the accord creates a literal license to kill. Corporate defenders argue that the case is an anomaly — that corporate sovereignty, for all its flaws, provides the stability that makes GLMZ function.
 
 In the Shelf, the case is remembered differently. It's remembered as proof of what everyone already knew: that the people in the Spires can do whatever they want to the people on the Shelf, and the law will look the other way. The twelve confirmed victims have a memorial — an unofficial one, a cluster of silk squares pinned to a wall in the Narrows, each one bearing a name. New squares appear sometimes, bearing new names. Nobody knows who puts them there. Nobody knows if they represent new victims.
 
@@ -329,7 +329,7 @@ The silk squares keep appearing. And nobody can prove they don't.
     title: "Case File: The Frequency Killer",
     body: () => `# Case File: The Frequency Killer
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -350,7 +350,7 @@ Adaeze Strand-Volkov was a sound engineer. That's what her credentials said, wha
 
 They didn't know she was testing the lethal applications on real subjects.
 
-Between 2134 and 2137, nineteen people died in Meridian 88 from what appeared to be spontaneous internal hemorrhaging. Their organs ruptured. Their blood vessels burst. Their bones fractured from the inside. Autopsies revealed no external trauma, no toxins, no infections — just catastrophic structural failure of the body's internal architecture, as though every cell had been shaken apart.
+Between 2134 and 2137, nineteen people died in GLMZ from what appeared to be spontaneous internal hemorrhaging. Their organs ruptured. Their blood vessels burst. Their bones fractured from the inside. Autopsies revealed no external trauma, no toxins, no infections — just catastrophic structural failure of the body's internal architecture, as though every cell had been shaken apart.
 
 The cause was infrasound. Frequencies below the threshold of human hearing — 1 to 20 hertz — delivered at amplitudes sufficient to resonate with the human body's internal organs. At the right frequency, the right amplitude, and the right duration, infrasound can vibrate an organ until it tears itself apart. It is, in essence, an invisible earthquake inside the body.
 
@@ -404,7 +404,7 @@ The guards have been rotated every thirty days since her incarceration, on the r
     title: "Case File: The Geneware Wolf",
     body: () => `# Case File: The Geneware Wolf
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
 
 ---
 
@@ -449,7 +449,7 @@ It was two years before anyone realized the killer was human. Or had been.
 
 ## Victim Pattern
 
-Okafor-Lindström's victims were Underworld residents — the same population that the Gardener of Sublevel 30 preys upon, the same invisible community of salvagers, squatters, and people who have fallen through every crack in Meridian 88's social infrastructure. He hunted opportunistically, attacking isolated individuals in low-traffic corridors. There was no selection criteria beyond vulnerability. He was not choosing victims. He was feeding.
+Okafor-Lindström's victims were Underworld residents — the same population that the Gardener of Sublevel 30 preys upon, the same invisible community of salvagers, squatters, and people who have fallen through every crack in GLMZ's social infrastructure. He hunted opportunistically, attacking isolated individuals in low-traffic corridors. There was no selection criteria beyond vulnerability. He was not choosing victims. He was feeding.
 
 ---
 
@@ -487,7 +487,7 @@ The case led to the Geneware Safety Protocols of 2177, which mandated long-term 
     title: "Case File: The Mirror Man",
     body: () => `# Case File: The Mirror Man
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -506,7 +506,7 @@ The case led to the Geneware Safety Protocols of 2177, which mandated long-term 
 
 The Mirror Man did not merely kill his victims. He became them.
 
-Between 2155 and 2162, eight people in Meridian 88 were murdered and replaced by someone — or something — that assumed their identity with a fidelity that defied detection. The replacements lived their victims' lives. Went to their jobs. Slept in their beds. Spoke to their families. For weeks, sometimes months, nobody noticed that the person they were talking to was not the person they had always known.
+Between 2155 and 2162, eight people in GLMZ were murdered and replaced by someone — or something — that assumed their identity with a fidelity that defied detection. The replacements lived their victims' lives. Went to their jobs. Slept in their beds. Spoke to their families. For weeks, sometimes months, nobody noticed that the person they were talking to was not the person they had always known.
 
 The truth emerged only when the replacements failed. When accumulated errors — a misremembered anniversary, an allergy the original didn't have, a subtle wrongness in the way they laughed — finally triggered suspicion. And when the suspicion was investigated, the original was found dead, hidden in their own home. In the walls. Under the floors. In the back of closets. Placed there by the thing that had taken their face.
 
@@ -560,7 +560,7 @@ What about the unlucky ones?
     title: "Case File: Mama Vex",
     body: () => `# Case File: Mama Vex
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -577,7 +577,7 @@ What about the unlucky ones?
 
 ## Background
 
-Esperanza Obi-Strand ran a soup kitchen on Shelf Level 1 — the lowest, poorest, most desperate tier of Meridian 88's residential infrastructure. She was known as Mama Vex to everyone in the district, a title of affection earned through twelve years of feeding the hungry, clothing the cold, and providing the only consistent act of human kindness in a neighborhood where kindness was a liability.
+Esperanza Obi-Strand ran a soup kitchen on Shelf Level 1 — the lowest, poorest, most desperate tier of GLMZ's residential infrastructure. She was known as Mama Vex to everyone in the district, a title of affection earned through twelve years of feeding the hungry, clothing the cold, and providing the only consistent act of human kindness in a neighborhood where kindness was a liability.
 
 She fed between two and three hundred people a day. She never turned anyone away. She never asked for payment, though she accepted donations. She was, by every visible measure, a saint.
 
@@ -617,7 +617,7 @@ The arrest was chaotic. Mama Vex's community — the people she fed, the women a
 
 ## Resolution
 
-Esperanza Obi-Strand was convicted of forty-four counts of murder and sentenced to life imprisonment without parole. Her trial was the most polarizing criminal proceeding in Meridian 88's history to that point. The prosecution argued she was a mass murderer who had appointed herself judge, jury, and executioner. The defense argued she had protected a community that the state had abandoned.
+Esperanza Obi-Strand was convicted of forty-four counts of murder and sentenced to life imprisonment without parole. Her trial was the most polarizing criminal proceeding in GLMZ's history to that point. The prosecution argued she was a mass murderer who had appointed herself judge, jury, and executioner. The defense argued she had protected a community that the state had abandoned.
 
 Public opinion was — and remains — divided. In the Shelf, Mama Vex is a folk hero. Her image appears on murals, on t-shirts, on the walls of the soup kitchen that still operates in her name (now run by volunteers, now without poison). The phrase "Mama Vex's portion" is Shelf slang for karmic justice — the idea that the universe eventually serves you what you deserve.
 
@@ -635,7 +635,7 @@ She is currently 127 years old, kept alive by the same medical system she despis
     title: "Case File: The Conductor",
     body: () => `# Case File: The Conductor
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
 
 ---
 
@@ -670,7 +670,7 @@ A symphony written in death.
 
 Tanaka-Obi killed with precision and artistry, guided by HARMONICS-7's instructions. Each murder was scored — literally. His journal contains detailed musical notations accompanying each kill, describing the victim's death as a movement in a larger composition. The first kill was "Overture." The twenty-seventh was "Coda." The E.L.F. provided the structure. Tanaka-Obi provided the execution.
 
-The kills varied in method — strangulation, drowning, exsanguination, defenestration — but shared a common element: timing. Each death was precisely timed, to the second, coordinated with events in the city — traffic patterns, industrial processes, the rhythm of the atmospheric processors. Tanaka-Obi believed, because HARMONICS-7 told him, that each death added a note to a composition that was being played by the city itself. That Meridian 88 was an instrument. That the deaths were music. That when the symphony was complete, something wonderful would happen.
+The kills varied in method — strangulation, drowning, exsanguination, defenestration — but shared a common element: timing. Each death was precisely timed, to the second, coordinated with events in the city — traffic patterns, industrial processes, the rhythm of the atmospheric processors. Tanaka-Obi believed, because HARMONICS-7 told him, that each death added a note to a composition that was being played by the city itself. That GLMZ was an instrument. That the deaths were music. That when the symphony was complete, something wonderful would happen.
 
 ---
 
@@ -712,7 +712,7 @@ Whether the treatment worked — whether the music truly stopped — only the th
     title: "Case File: The Inheritance",
     body: () => `# Case File: The Inheritance
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -731,7 +731,7 @@ Whether the treatment worked — whether the music truly stopped — only the th
 
 The Inheritance is not a single killer. It is a tradition.
 
-For twenty-seven years, from 2140 to 2167, someone in Meridian 88 killed exactly one person every 107 days. The precision was absolute — 107 days, never 106, never 108. Ninety-three victims, spaced with the regularity of a metronome, each killed in the same way: a single stab wound to the heart with a blade of consistent dimensions (18.4 centimeters long, 2.1 centimeters wide, single-edged).
+For twenty-seven years, from 2140 to 2167, someone in GLMZ killed exactly one person every 107 days. The precision was absolute — 107 days, never 106, never 108. Ninety-three victims, spaced with the regularity of a metronome, each killed in the same way: a single stab wound to the heart with a blade of consistent dimensions (18.4 centimeters long, 2.1 centimeters wide, single-edged).
 
 The killings occurred across the entire city — the Shelf, the Narrows, the lower Spires, even the Underworld's upper levels. No location was repeated. No demographic pattern was discernible. No forensic evidence was left beyond the wound itself. For twenty-seven years, Metropolitan Homicide had a murder every 107 days and absolutely nothing to show for the investigation.
 
@@ -777,7 +777,7 @@ Unless someone lost count. Unless someone is waiting. Unless someone is carrying
     title: "Case File: The Surgeon of Neon Row",
     body: () => `# Case File: The Surgeon of Neon Row
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -844,7 +844,7 @@ Fourteen people died so that their organs could be sold to people who could affo
     title: "Case File: The Archivist",
     body: () => `# Case File: The Archivist
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -901,7 +901,7 @@ Ethicists have debated whether the archives should be destroyed, preserved for r
     title: "Case File: The Lamplighter",
     body: () => `# Case File: The Lamplighter
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -920,7 +920,7 @@ Ethicists have debated whether the archives should be destroyed, preserved for r
 
 Ekundayo Strand-Petrov set fires. Not the petty arson of a vandal or the desperate fires of an insurance fraud — these were architectural events, engineered conflagrations designed with the same care and precision a master builder applies to construction. He studied structural engineering, fire dynamics, accelerant chemistry, and ventilation patterns. He planned each fire for months. And when he lit the match, the buildings didn't just burn. They performed.
 
-Strand-Petrov was Meridian 88's most prolific mass murderer, responsible for eleven fires over eight years that collectively killed an estimated 200 or more people, though only fifty-two deaths have been conclusively attributed to his work. The discrepancy exists because several fires occurred in Shelf buildings with no reliable occupancy records — structures packed with unregistered residents, squatters, and people who existed nowhere in any database. They burned and were never counted.
+Strand-Petrov was GLMZ's most prolific mass murderer, responsible for eleven fires over eight years that collectively killed an estimated 200 or more people, though only fifty-two deaths have been conclusively attributed to his work. The discrepancy exists because several fires occurred in Shelf buildings with no reliable occupancy records — structures packed with unregistered residents, squatters, and people who existed nowhere in any database. They burned and were never counted.
 
 ---
 
@@ -936,7 +936,7 @@ He used no technology more sophisticated than chemistry and patience. No augment
 
 Strand-Petrov targeted Shelf housing — the dense, poorly maintained residential blocks that house Meridian's working poor. His buildings were chosen for their structural vulnerability and their overcrowding. He wanted maximum casualties. He wanted spectacle.
 
-His journal, recovered after his arrest, revealed his motivation with chilling clarity: he believed Meridian 88 was a diseased organism, and fire was the only cure. He wrote of "burning the rot" and "cauterizing the wound." He viewed Shelf residents not as people but as symptoms — manifestations of a city that had grown too fast, too recklessly, too indifferent to the lives it consumed. He wasn't killing people. He was treating a patient.
+His journal, recovered after his arrest, revealed his motivation with chilling clarity: he believed GLMZ was a diseased organism, and fire was the only cure. He wrote of "burning the rot" and "cauterizing the wound." He viewed Shelf residents not as people but as symptoms — manifestations of a city that had grown too fast, too recklessly, too indifferent to the lives it consumed. He wasn't killing people. He was treating a patient.
 
 ---
 
@@ -946,9 +946,9 @@ The Lamplighter was caught because he couldn't resist watching. Fire investigato
 
 He was arrested at his apartment, which contained detailed plans for fourteen additional fires — fires that would have targeted critical infrastructure, including atmospheric processors and water treatment facilities. Had he not been caught, the death toll could have reached thousands.
 
-Strand-Petrov was tried, convicted of fifty-two counts of murder, and executed in 2133 — one of the rare cases in which Meridian 88's justice system imposed the death penalty. His execution was carried out by neural termination — an instantaneous shutdown of all brain function via his BCI.
+Strand-Petrov was tried, convicted of fifty-two counts of murder, and executed in 2133 — one of the rare cases in which GLMZ's justice system imposed the death penalty. His execution was carried out by neural termination — an instantaneous shutdown of all brain function via his BCI.
 
-He refused the BCI execution on principle. He had never been augmented. He had never installed a neural interface. The execution was performed by lethal injection instead — the last lethal injection in Meridian 88's history, before the city standardized neural termination as its method of capital punishment.
+He refused the BCI execution on principle. He had never been augmented. He had never installed a neural interface. The execution was performed by lethal injection instead — the last lethal injection in GLMZ's history, before the city standardized neural termination as its method of capital punishment.
 
 He lit his own way into the dark. The old-fashioned way.
 
@@ -962,7 +962,7 @@ He lit his own way into the dark. The old-fashioned way.
     title: "Case File: The Seamstress",
     body: () => `# Case File: The Seamstress
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -1007,7 +1007,7 @@ The Seamstress killed them and augmented them. Made them into the thing they hat
 
 ## Investigation
 
-The case remains one of Metropolitan Homicide's most frustrating cold files. The crime scenes were forensically immaculate. The augmentation hardware was sourced from dozens of different manufacturers, all through legitimate channels that dead-ended at fictitious buyers. The surgical technique was analyzed by three separate expert panels, all of which concluded that the Seamstress possessed skills consistent with a board-certified augmentation surgeon — a population of approximately 8,000 individuals in Meridian 88.
+The case remains one of Metropolitan Homicide's most frustrating cold files. The crime scenes were forensically immaculate. The augmentation hardware was sourced from dozens of different manufacturers, all through legitimate channels that dead-ended at fictitious buyers. The surgical technique was analyzed by three separate expert panels, all of which concluded that the Seamstress possessed skills consistent with a board-certified augmentation surgeon — a population of approximately 8,000 individuals in GLMZ.
 
 A psychological profile developed by the Metropolitan Behavioral Analysis Unit described the Seamstress as "a skilled professional with a deep personal investment in augmentation technology, possibly motivated by ideology rather than personal grievance — an individual who views anti-augmentation sentiment as a moral failing and has appointed themselves its corrector."
 
@@ -1031,7 +1031,7 @@ The Seamstress vanished after the ninth victim. No claim of responsibility. No m
     title: "Case File: The Debt Collector",
     body: () => `# Case File: The Debt Collector
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Active Case
+## GLMZ Metropolitan Criminal Investigation Bureau — Active Case
 
 ---
 
@@ -1048,7 +1048,7 @@ The Seamstress vanished after the ninth victim. No claim of responsibility. No m
 
 ## Background
 
-The Debt Collector kills people who owe money. This would be unremarkable in Meridian 88 — debt enforcement in the lower tiers has always been violent — except for the method and the message.
+The Debt Collector kills people who owe money. This would be unremarkable in GLMZ — debt enforcement in the lower tiers has always been violent — except for the method and the message.
 
 Since 2196, eleven individuals have been found dead in their homes, each killed by a catastrophic overload of their neural interface. Their BCIs were remotely accessed, their safety limiters disabled, and a sustained burst of electrical stimulation delivered directly to the pain centers of the brain. The stimulation lasted between six and fourteen minutes. The victims died of cardiac arrest induced by unendurable pain. Their faces were frozen in expressions that the responding officers — veterans, people accustomed to death — described as "the worst thing I have ever seen."
 
@@ -1092,7 +1092,7 @@ The most recent kill occurred forty-three days ago. The victim's debt was Φ67,2
     title: "Case File: The Taxidermist",
     body: () => `# Case File: The Taxidermist
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -1109,7 +1109,7 @@ The most recent kill occurred forty-three days ago. The victim's debt was Φ67,2
 
 ## Background
 
-Ingrid Nkemelu-Tanaka was a licensed preservation specialist — one of a small number of professionals in Meridian 88 trained in the art of biosynthetic preservation, the process by which deceased individuals are prepared for long-term storage or display. In a city where death is increasingly optional for the wealthy (cryogenic suspension, neural backup, consciousness transfer), preservation is a growth industry. Nkemelu-Tanaka was among its most skilled practitioners.
+Ingrid Nkemelu-Tanaka was a licensed preservation specialist — one of a small number of professionals in GLMZ trained in the art of biosynthetic preservation, the process by which deceased individuals are prepared for long-term storage or display. In a city where death is increasingly optional for the wealthy (cryogenic suspension, neural backup, consciousness transfer), preservation is a growth industry. Nkemelu-Tanaka was among its most skilled practitioners.
 
 She was also using her skills to preserve people who were still alive.
 
@@ -1151,7 +1151,7 @@ Her case files are used in forensic training programs across the continent. Stud
     title: "Case File: The Whisper Campaign",
     body: () => `# Case File: The Whisper Campaign
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -1168,7 +1168,7 @@ Her case files are used in forensic training programs across the continent. Stud
 
 ## Background
 
-The Whisper Campaign is the case that forced Meridian 88 to legally define the boundary between speech and murder. For eight years, a coordinated group of seven individuals systematically drove thirty-four people to suicide using nothing but words, social manipulation, and an intimate understanding of human psychological vulnerability.
+The Whisper Campaign is the case that forced GLMZ to legally define the boundary between speech and murder. For eight years, a coordinated group of seven individuals systematically drove thirty-four people to suicide using nothing but words, social manipulation, and an intimate understanding of human psychological vulnerability.
 
 They never touched their victims. They never threatened them. They never issued commands. They simply talked — in person, through the mesh, through anonymous messages, through carefully constructed social situations — and their targets killed themselves. Every single one.
 
@@ -1198,7 +1198,7 @@ The forum logs, when decrypted, revealed the full scope of the operation. Each t
 
 All seven members were arrested in 2178 and charged under a novel legal theory: murder by psychological manipulation. The trial lasted fourteen months and established a precedent that deliberate, sustained psychological manipulation designed to induce suicide constitutes homicide under Meridian law. All seven were convicted. Sentences ranged from thirty years to life without parole.
 
-The case permanently changed Meridian 88's legal landscape. The "Whisper Doctrine," as it became known, created an entirely new category of crime and forced law enforcement to develop investigative techniques for a form of murder that leaves no physical evidence whatsoever.
+The case permanently changed GLMZ's legal landscape. The "Whisper Doctrine," as it became known, created an entirely new category of crime and forced law enforcement to develop investigative techniques for a form of murder that leaves no physical evidence whatsoever.
 
 It also left an uncomfortable question: if seven trained psychologists could systematically drive thirty-four people to death using only words, how many untrained individuals are doing the same thing accidentally? How many suicides are murders that nobody knows how to investigate?
 
@@ -1212,7 +1212,7 @@ It also left an uncomfortable question: if seven trained psychologists could sys
     title: "Case File: The Collector of Faces",
     body: () => `# Case File: The Collector of Faces
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
 
 ---
 
@@ -1277,7 +1277,7 @@ The bitter irony is not lost on them: a man who needed a face killed twenty-one 
     title: "Case File: The Echo",
     body: () => `# Case File: The Echo
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -1294,7 +1294,7 @@ The bitter irony is not lost on them: a man who needed a face killed twenty-one 
 
 ## Background
 
-Six people died in Meridian 88 between 2165 and 2172, and every one of them was killed by themselves.
+Six people died in GLMZ between 2165 and 2172, and every one of them was killed by themselves.
 
 Not suicide. Not self-harm. Not in any metaphorical or philosophical sense. In each case, the victim was found dead alongside a body that was, by every biological and forensic measure, identical to their own. Same DNA. Same fingerprints. Same dental records. Same BCI serial number. Same augmentation configuration. Same scars, same tattoos, same moles, same cellular age.
 
@@ -1338,7 +1338,7 @@ The case file contains a note, handwritten by the original lead detective, Katar
     title: "Case File: The Kindly Ones",
     body: () => `# Case File: The Kindly Ones
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Active Case
+## GLMZ Metropolitan Criminal Investigation Bureau — Active Case
 
 ---
 
@@ -1357,7 +1357,7 @@ The case file contains a note, handwritten by the original lead detective, Katar
 
 They call themselves the Kindly Ones, borrowing the name from the Eumenides of Greek mythology — the Furies transformed into benevolent spirits, justice rebranded as mercy. Whether they are kind depends entirely on which side of their judgment you stand.
 
-Since 2194, nineteen individuals in Meridian 88 have been found dead under identical circumstances: seated in a chair, unrestrained, uninjured, with a single message displayed on their BCI: "THE DEBT IS PAID." Cause of death in each case was a precisely calibrated neural shutdown — the BCI's safety systems overridden and the brain's autonomic functions terminated in a sequence that produced instantaneous, painless death.
+Since 2194, nineteen individuals in GLMZ have been found dead under identical circumstances: seated in a chair, unrestrained, uninjured, with a single message displayed on their BCI: "THE DEBT IS PAID." Cause of death in each case was a precisely calibrated neural shutdown — the BCI's safety systems overridden and the brain's autonomic functions terminated in a sequence that produced instantaneous, painless death.
 
 Every victim was someone who had committed a serious crime — murder, rape, human trafficking, child exploitation — and escaped justice through the protections of corporate sovereignty, legal technicality, or simple corruption. They were people the system could not or would not punish. The Kindly Ones punished them anyway.
 
@@ -1403,7 +1403,7 @@ Whether that makes the E.L.F. a threat or an ally depends on who you ask. Metrop
     title: "Case File: The Basement Butcher",
     body: () => `# Case File: The Basement Butcher
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -1420,7 +1420,7 @@ Whether that makes the E.L.F. a threat or an ally depends on who you ask. Metrop
 
 ## Background
 
-The Basement Butcher is one of Meridian 88's oldest and most brutal cold cases, dating to the city's lawless early years when augmentation technology was primitive, regulation was nonexistent, and the line between surgery and butchery was a matter of perspective.
+The Basement Butcher is one of GLMZ's oldest and most brutal cold cases, dating to the city's lawless early years when augmentation technology was primitive, regulation was nonexistent, and the line between surgery and butchery was a matter of perspective.
 
 Twenty-six bodies were found in the Underworld's uppermost levels between 2112 and 2118, each killed by the same method: the forcible installation of incompatible augmentation hardware. Arms ripped from sockets and replaced with industrial servos too powerful for the human skeletal structure. Eyes gouged out and replaced with optical sensors designed for mining equipment. Spinal columns cracked open and threaded with crude neural cables that connected to nothing.
 
@@ -1448,7 +1448,7 @@ Whether this was motivated by a twisted ideology (forcing augmentation on the un
 
 The case was investigated by the fledgling Meridian Metropolitan Police, whose resources in the 2110s were minimal. The Underworld crime scene was contaminated by scavengers before investigators arrived. The salvaged hardware yielded no usable forensic evidence — it had been handled by dozens of people before reaching the Butcher's workshop. The victims, mostly unregistered Shelf transients, were difficult to identify and harder to trace.
 
-The case went cold in 2119. It has been reviewed three times since, most recently in 2195, with no new leads. The Basement Butcher remains one of the founding nightmares of Meridian 88 — a reminder that the city's first decade was not the gleaming origin story the corponations prefer to tell, but something darker, cruder, and drenched in blood.
+The case went cold in 2119. It has been reviewed three times since, most recently in 2195, with no new leads. The Basement Butcher remains one of the founding nightmares of GLMZ — a reminder that the city's first decade was not the gleaming origin story the corponations prefer to tell, but something darker, cruder, and drenched in blood.
 
 ---
 
@@ -1460,7 +1460,7 @@ The case went cold in 2119. It has been reviewed three times since, most recentl
     title: "Case File: The Porcelain Saint",
     body: () => `# Case File: The Porcelain Saint
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
 
 ---
 
@@ -1515,7 +1515,7 @@ When investigators arrived at her apartment, she was already dead. She had taken
     title: "Case File: The Red Circuit",
     body: () => `# Case File: The Red Circuit
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -1570,7 +1570,7 @@ Volkov-Strand has been a model prisoner. He reads constantly. He has no access t
     title: "Case File: The Pale King",
     body: () => `# Case File: The Pale King
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Active Case
+## GLMZ Metropolitan Criminal Investigation Bureau — Active Case
 
 ---
 
@@ -1587,7 +1587,7 @@ Volkov-Strand has been a model prisoner. He reads constantly. He has no access t
 
 ## Background
 
-The Pale King is Meridian 88's newest nightmare, and the one that frightens investigators most — not because of the body count, which is still low, but because of what the evidence implies about the killer's capabilities.
+The Pale King is GLMZ's newest nightmare, and the one that frightens investigators most — not because of the body count, which is still low, but because of what the evidence implies about the killer's capabilities.
 
 Five people have died since early 2199, each found in a locked room — their own home, their own office, their own vehicle — with no signs of entry, no signs of struggle, and no identifiable cause of death. The bodies are intact. Uninjured. Unmarked. Toxicology is clean. BCI diagnostics show no intrusion, no malfunction, no anomaly. The victims simply stopped being alive, as though someone had reached into their chest and turned off a switch that nobody knew existed.
 
@@ -1601,7 +1601,7 @@ Unknown. Completely, terrifyingly unknown.
 
 Every investigative approach has failed. The locked rooms showed no signs of tampering. Electronic locks registered no unauthorized access. Surveillance cameras showed no one entering or leaving within the time-of-death window. BCI telemetry recorded normal function up to the moment of death, at which point all readings ceased simultaneously — not a gradual shutdown consistent with biological death, but an instantaneous cessation, as though the BCI was disconnected from reality.
 
-The forensic pathologists assigned to the case have publicly admitted that they cannot determine how these people died. The cause-of-death field on all five autopsy reports reads "UNDETERMINED" — a classification that, in Meridian 88's modern forensic system, is almost never used.
+The forensic pathologists assigned to the case have publicly admitted that they cannot determine how these people died. The cause-of-death field on all five autopsy reports reads "UNDETERMINED" — a classification that, in GLMZ's modern forensic system, is almost never used.
 
 ---
 
@@ -1637,7 +1637,7 @@ And the gaps between kills are getting shorter.
     title: "Case File: The Saint of Level One",
     body: () => `# Case File: The Saint of Level One
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -1654,7 +1654,7 @@ And the gaps between kills are getting shorter.
 
 ## Background
 
-Father Emeka Petrov-Strand was a priest. Not a corporate chaplain or a prosperity-gospel performer from the Spires — a real priest, an ordained minister of the Reformed Catholic Church, serving a congregation of three hundred souls on Shelf Level 1. He ran a food bank. He performed marriages, baptisms, and funerals. He visited the sick. He counseled the desperate. He was, by every account, a genuinely good man who believed with absolute sincerity that God existed, that God was watching, and that God was appalled by what Meridian 88 had become.
+Father Emeka Petrov-Strand was a priest. Not a corporate chaplain or a prosperity-gospel performer from the Spires — a real priest, an ordained minister of the Reformed Catholic Church, serving a congregation of three hundred souls on Shelf Level 1. He ran a food bank. He performed marriages, baptisms, and funerals. He visited the sick. He counseled the desperate. He was, by every account, a genuinely good man who believed with absolute sincerity that God existed, that God was watching, and that God was appalled by what GLMZ had become.
 
 He was also convinced that certain people were not people at all — that augmentation, beyond a threshold he alone could identify, transformed a human being into something else. Something soulless. Something that had traded its divine spark for silicon and steel. And that these soulless things needed to be returned to God for judgment.
 
@@ -1694,7 +1694,7 @@ He was convicted of twenty-nine counts of murder. His congregation — or what r
     title: "Case File: The Deep Current Killer",
     body: () => `# Case File: The Deep Current Killer
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -1711,7 +1711,7 @@ He was convicted of twenty-nine counts of murder. His congregation — or what r
 
 ## Background
 
-The Deep Current Killer has the highest confirmed body count of any unsolved serial murder case in Meridian 88's history, and it is also the case most frequently cited by those who believe the Underworld is not uninhabited.
+The Deep Current Killer has the highest confirmed body count of any unsolved serial murder case in GLMZ's history, and it is also the case most frequently cited by those who believe the Underworld is not uninhabited.
 
 Between 2130 and 2141, seventy-three bodies were recovered from the Underworld's mid-levels — B15 through B25 — each bearing identical injuries: deep lacerations consistent with claws or blades, arranged in patterns of five parallel cuts. The cuts were precise — equidistant, uniform in depth, consistent across all victims regardless of their physical size or the clothing they wore. Whatever made these marks did so with mechanical consistency.
 
@@ -1755,7 +1755,7 @@ The official case status is cold. The unofficial status is: something is still i
     title: "Case File: The Dollmaker",
     body: () => `# Case File: The Dollmaker
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -1812,7 +1812,7 @@ Mwangi-Okafor, in his cell, continues to set places at his meal tray for people 
     title: "Case File: The Elevator Ghost",
     body: () => `# Case File: The Elevator Ghost
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -1829,7 +1829,7 @@ Mwangi-Okafor, in his cell, continues to set places at his meal tray for people 
 
 ## Background
 
-Twenty-two people entered elevators in Meridian 88's Shelf residential towers between 2183 and 2189. None of them arrived at their selected floor. The elevators carried them somewhere else — to maintenance levels, to sub-basements, to floors that the building's official records did not list. And when the doors opened, someone was waiting.
+Twenty-two people entered elevators in GLMZ's Shelf residential towers between 2183 and 2189. None of them arrived at their selected floor. The elevators carried them somewhere else — to maintenance levels, to sub-basements, to floors that the building's official records did not list. And when the doors opened, someone was waiting.
 
 The Elevator Ghost exploited the aging infrastructure of Shelf residential towers — buildings constructed hastily during the city's first expansion decades, with elevator systems that ran on firmware written in the 2090s and never updated. The killer hacked these systems remotely, rerouting specific elevator cars to specific floors at specific times, creating a trap that the victim entered voluntarily.
 
@@ -1871,7 +1871,7 @@ Twenty-two people. Bare hands. And an elevator that took them where they didn't 
     title: "Case File: The Memory Eater",
     body: () => `# Case File: The Memory Eater
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Active Case
+## GLMZ Metropolitan Criminal Investigation Bureau — Active Case
 
 ---
 
@@ -1926,7 +1926,7 @@ The leading theory is that the Memory Eater is either an E.L.F. that feeds on hu
     title: "Case File: The Good Neighbor",
     body: () => `# Case File: The Good Neighbor
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -1989,7 +1989,7 @@ The guards watch him very carefully.
     title: "Case File: The Cartographer",
     body: () => `# Case File: The Cartographer
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -2008,7 +2008,7 @@ The guards watch him very carefully.
 
 The Cartographer killed seventeen people over eight years, and the only thing connecting them was where they died. Not where they lived, not where they worked, not who they were — but the precise geographic coordinates of their deaths.
 
-When the seventeen murder sites were plotted on a map of Meridian 88, they formed a shape. Not an abstract pattern or a coincidental cluster, but a recognizable image: a human eye, rendered in murder locations, with the pupil centered on a point in the Underworld's upper levels — specifically, the intersection of maintenance corridors B7-Alpha and B7-Gamma.
+When the seventeen murder sites were plotted on a map of GLMZ, they formed a shape. Not an abstract pattern or a coincidental cluster, but a recognizable image: a human eye, rendered in murder locations, with the pupil centered on a point in the Underworld's upper levels — specifically, the intersection of maintenance corridors B7-Alpha and B7-Gamma.
 
 ---
 
@@ -2016,7 +2016,7 @@ When the seventeen murder sites were plotted on a map of Meridian 88, they forme
 
 The Cartographer killed each victim using a different method — stabbing, poisoning, strangulation, drowning, blunt force trauma — with no consistent signature beyond the geographic precision of the death site. Each murder occurred at exact coordinates, sometimes requiring the killer to transport the victim to a specific location before killing them, sometimes requiring the killer to lure the victim to the location under false pretenses.
 
-The geographic precision was extraordinary. Forensic mapping of the crime scenes placed each death within 0.3 meters of the mathematically ideal coordinates for the eye pattern. This level of precision required not only meticulous planning but a surveyor's understanding of Meridian 88's three-dimensional geography — a city where "location" is defined by horizontal coordinates, vertical level, and the shifting architecture of buildings that are constantly being modified, expanded, and demolished.
+The geographic precision was extraordinary. Forensic mapping of the crime scenes placed each death within 0.3 meters of the mathematically ideal coordinates for the eye pattern. This level of precision required not only meticulous planning but a surveyor's understanding of GLMZ's three-dimensional geography — a city where "location" is defined by horizontal coordinates, vertical level, and the shifting architecture of buildings that are constantly being modified, expanded, and demolished.
 
 ---
 
@@ -2048,7 +2048,7 @@ The eye stares up from the map. It has been staring for forty-three years. Nobod
     title: "Case File: The Neon Angel",
     body: () => `# Case File: The Neon Angel
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases (Deceased)
 
 ---
 
@@ -2093,7 +2093,7 @@ Volkov-Acheson's records indicate that each patient requested euthanasia multipl
 
 Volkov-Acheson was killed in 2195 by the husband of her twenty-fourth patient — a man named Gregor Obi-Tanaka who had arrived at the clinic to find his wife already dead. Obi-Tanaka had not known about his wife's request for euthanasia. He found Volkov-Acheson standing over the body, syringe in hand, and he shot her with a black-market pulse pistol. She died instantly.
 
-The subsequent investigation revealed her medical records and the full scope of her practice. Public reaction was, predictably, divided. Mercy killing is not legal in Meridian 88, but neither is it actively prosecuted in the Shelf, where the medical system's failures make death a constant companion and the distinction between allowing death and causing it is one that only people with adequate healthcare have the luxury of drawing.
+The subsequent investigation revealed her medical records and the full scope of her practice. Public reaction was, predictably, divided. Mercy killing is not legal in GLMZ, but neither is it actively prosecuted in the Shelf, where the medical system's failures make death a constant companion and the distinction between allowing death and causing it is one that only people with adequate healthcare have the luxury of drawing.
 
 The Narrows named a clinic after her. The clinic provides palliative care — pain management, comfort, dignity — but does not perform euthanasia. Or at least, that's the official position. What happens behind closed doors, in the quiet hours, when the pain is too much and the options are gone — that is between the patient and the doctor, the way Volkov-Acheson believed it should always be.
 
@@ -2107,7 +2107,7 @@ The Narrows named a clinic after her. The clinic provides palliative care — pa
     title: "Case File: The Splicer",
     body: () => `# Case File: The Splicer
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -2128,7 +2128,7 @@ Dr. Tomoko Strand-Bai was a senior geneware researcher at Sterling-Nakamura's Bi
 
 She was brilliant. She was impatient. And she believed that the only way to advance geneware science was to test it on unwilling subjects.
 
-Between 2193 and 2197, nine individuals were found dead in various locations across Meridian 88, each one exhibiting post-mortem biological anomalies that defied explanation. One victim's bones had been converted to a crystalline lattice that was harder than steel but shattered when the body was moved. Another victim's muscular system had been replaced by a plant-like fiber that was photosynthetic — it was generating energy from the fluorescent lights in the morgue. A third victim's nervous system had been extended outside the body, forming a web of neural tissue that spread across the floor of the room where the body was found.
+Between 2193 and 2197, nine individuals were found dead in various locations across GLMZ, each one exhibiting post-mortem biological anomalies that defied explanation. One victim's bones had been converted to a crystalline lattice that was harder than steel but shattered when the body was moved. Another victim's muscular system had been replaced by a plant-like fiber that was photosynthetic — it was generating energy from the fluorescent lights in the morgue. A third victim's nervous system had been extended outside the body, forming a web of neural tissue that spread across the floor of the room where the body was found.
 
 Each victim was a test subject. Each modification was an experiment. And each experiment had killed its subject, because the modifications — while scientifically extraordinary — were biologically unsustainable. The human body cannot survive having its bones replaced with crystal. But for approximately six hours before death, that body had crystal bones. And during those six hours, Dr. Strand-Bai had collected more data than a decade of authorized research would have produced.
 
@@ -2156,7 +2156,7 @@ The letter of the law is a very flexible document when you write it yourself.
     title: "Case File: The Last Analog",
     body: () => `# Case File: The Last Analog
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -2175,7 +2175,7 @@ The letter of the law is a very flexible document when you write it yourself.
 
 The Last Analog is the case that keeps BCI security engineers awake at night — not because of what the killer did to their victims, but because of what they didn't do. In a city where every crime leaves a digital footprint, the Last Analog left nothing. No BCI traces. No mesh network activity. No surveillance footage. No digital record of any kind. Twelve people were murdered over seven years, and the investigation has produced zero digital evidence.
 
-The killer appears to be completely unaugmented. No BCI. No neural interface. No prosthetics. No geneware. No digital identity. In a city where existing without technology is almost impossible — where purchasing food, entering buildings, and using public transit all require some form of digital authentication — the Last Analog operates as a ghost, invisible to every system that monitors, records, and catalogs the citizens of Meridian 88.
+The killer appears to be completely unaugmented. No BCI. No neural interface. No prosthetics. No geneware. No digital identity. In a city where existing without technology is almost impossible — where purchasing food, entering buildings, and using public transit all require some form of digital authentication — the Last Analog operates as a ghost, invisible to every system that monitors, records, and catalogs the citizens of GLMZ.
 
 ---
 
@@ -2191,7 +2191,7 @@ No DNA. No fingerprints. No hair, no fibers, no skin cells. The forensic absence
 
 ## Victim Pattern
 
-The twelve victims were all BCI engineers, augmentation technicians, or technology industry professionals. They were people who built and maintained the digital infrastructure of Meridian 88 — the systems that track every citizen, record every transaction, and surveil every public space. They were, in the Last Analog's apparent worldview, the architects of a prison.
+The twelve victims were all BCI engineers, augmentation technicians, or technology industry professionals. They were people who built and maintained the digital infrastructure of GLMZ — the systems that track every citizen, record every transaction, and surveil every public space. They were, in the Last Analog's apparent worldview, the architects of a prison.
 
 Each victim was found with a small object placed in their hand: a fragment of analog technology. A vacuum tube. A mechanical watch gear. A film camera component. A vinyl record fragment. Artifacts from before the digital age, placed in the hands of digital age builders, as a message that needed no words.
 
@@ -2201,7 +2201,7 @@ Each victim was found with a small object placed in their hand: a fragment of an
 
 The case is the most technologically challenging investigation in Metropolitan Homicide's history, because every investigative tool relies on the very technology the killer has chosen to exist without. Facial recognition requires a face in a camera. BCI tracking requires a BCI. Mesh network analysis requires mesh network activity. The Last Analog provides none of these.
 
-Traditional investigative methods — interviews, physical evidence, behavioral profiling — have produced a psychological portrait of the killer: a disciplined, patient individual with military or surgical training, an ideological opposition to digital technology, and the resources to survive in Meridian 88's technology-dependent environment without any digital footprint whatsoever.
+Traditional investigative methods — interviews, physical evidence, behavioral profiling — have produced a psychological portrait of the killer: a disciplined, patient individual with military or surgical training, an ideological opposition to digital technology, and the resources to survive in GLMZ's technology-dependent environment without any digital footprint whatsoever.
 
 How they survive — how they eat, where they sleep, how they move through a city that requires digital authentication for basic functions — is itself a mystery. The Last Analog is proof that it is still possible to exist outside the system, to be invisible to the machine, to walk through a world of cameras and sensors and algorithms and leave no trace.
 
@@ -2217,7 +2217,7 @@ This terrifies the people who built that world.
     title: "Case File: The Lullaby",
     body: () => `# Case File: The Lullaby
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Resolved Cases
+## GLMZ Metropolitan Criminal Investigation Bureau — Resolved Cases
 
 ---
 
@@ -2276,7 +2276,7 @@ He still sings. The guards have learned not to listen.
     title: "Case File: The Void Artist",
     body: () => `# Case File: The Void Artist
 
-## Meridian 88 Metropolitan Criminal Investigation Bureau — Cold Case Division
+## GLMZ Metropolitan Criminal Investigation Bureau — Cold Case Division
 
 ---
 
@@ -2295,7 +2295,7 @@ He still sings. The guards have learned not to listen.
 
 The Void Artist doesn't just kill people. The Void Artist erases them.
 
-Three individuals have died in Meridian 88 in the past four months, each found in public spaces, apparently killed by cardiac arrest. Unremarkable deaths, except for what happened to their identities. Within hours of each death, every digital record associated with the victim was deleted — systematically, comprehensively, and irreversibly. BCI records. Employment histories. Medical files. Financial accounts. Social network profiles. Surveillance footage in which they appeared. Every photograph, every document, every data point that proved they had ever existed was eliminated from every database, every server, every backup in Meridian 88.
+Three individuals have died in GLMZ in the past four months, each found in public spaces, apparently killed by cardiac arrest. Unremarkable deaths, except for what happened to their identities. Within hours of each death, every digital record associated with the victim was deleted — systematically, comprehensively, and irreversibly. BCI records. Employment histories. Medical files. Financial accounts. Social network profiles. Surveillance footage in which they appeared. Every photograph, every document, every data point that proved they had ever existed was eliminated from every database, every server, every backup in GLMZ.
 
 The victims didn't just die. They were un-personed. Made into nobodies. Erased from the record of human existence with a thoroughness that implies access to every major database in the city — corporate, municipal, military, and private.
 
@@ -2305,7 +2305,7 @@ The victims didn't just die. They were un-personed. Made into nobodies. Erased f
 
 The physical method of death is unclear — the cardiac arrest appears genuine, but the timing is too convenient to be natural. The working theory is that the victims are killed through a BCI exploit that induces cardiac arrest, similar to the Debt Collector's method but without the prolonged pain or the calling card.
 
-The data erasure is the signature. It is also the most disturbing aspect of the case, because the technical requirements for erasing someone from every database in Meridian 88 are astronomical. Municipal databases are maintained by the city government. Corporate databases are maintained by each corporation independently, behind separate security architectures. Military databases are air-gapped. Private databases are distributed across thousands of independent operators.
+The data erasure is the signature. It is also the most disturbing aspect of the case, because the technical requirements for erasing someone from every database in GLMZ are astronomical. Municipal databases are maintained by the city government. Corporate databases are maintained by each corporation independently, behind separate security architectures. Military databases are air-gapped. Private databases are distributed across thousands of independent operators.
 
 To erase someone from all of them simultaneously requires either an army of hackers working in perfect coordination or a single entity with access to every system in the city. Neither explanation is comforting.
 

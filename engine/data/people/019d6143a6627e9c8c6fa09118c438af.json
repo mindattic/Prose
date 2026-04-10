@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6627e9c8c6fa09118c438af",
   "type": "character",
-  "name": "Luciana Espinoza-Kovács",
+  "name": "Nneka Balogun-Arredondo",
   "aliases": [
     "Mantis",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
-  "description": "Ngaire Rojas-Yeboah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a data thief out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Ngaire Rojas-Yeboah is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Nneka Balogun-Arredondo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a data thief out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Nneka Balogun-Arredondo is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -262,7 +262,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,32 +275,17 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
+    "Harbor Fish Shack",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Brecken Yılmaz-Osei",
-    "Ilhan Sandstrom-Badu",
-    "Irontide Tidal Energy",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Street Custom 'Cigarette' Pen Gun",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Shelf",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Mixed Caribbean-Latin American and Sub-Saharan African with Eastern European ancestry. The genetic blend creates a striking phenotype: warm deep brown skin with subtle olive and golden undertones characteristic of West African and Latin American heritage, combined with the bone structure and facial proportions influenced by Eastern European genetics. Rich, complex ancestry expressed through warm-toned skin, prominent cheekbones, and strong jaw architecture.",
+    "heritage": "Ubiquitous diaspora blend of Sub-Saharan African (37.1%), Hispanic/Latin American (15.3%), South Asian (14.3%), North African (14.2%), East Asian (11.0%), and Northern European (8.1%) ancestry. This complex genetic mosaic creates a striking phenotype: warm deep brown skin with golden, olive, and subtle copper undertones from the African and North African heritage, enriched by South Asian warmth. Bone structure reflects the blend—prominent cheekbones and high orbital ridges from Sub-Saharan ancestry, squared jaw from Northern European genetics, with subtle epicanthal variation suggesting East Asian contribution. The overall effect is of someone whose ancestry defies easy categorization, each region's traits harmonizing into a distinctive whole.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and densely muscled, built like someone who trains methodically. Shoulders broad and forward-set. Forearms thick with functional muscle, hands large-knuckled and calloused from years of physical work and gear maintenance.",
@@ -308,8 +293,8 @@
     "hair_style": "Pulled back tight in a functional braid, practical rather than styled",
     "hair_length": "Long",
     "eye_color": "Cybernetic — chrome iris rings surrounding deep brown biological pupils. Thermal overlay visible as faint amber warming beneath the metallic surface.",
-    "skin_tone": "Deep warm brown with golden and olive undertones, reflecting the blend of Sub-Saharan African, Hispanic/Latin American, and Eastern European ancestry",
-    "complexion": "Weathered and clean. Minimal makeup. A small scar bisects her left eyebrow — old, well-healed. Jaw is squared and prominent with strong Eastern European influence in the bone structure. Expression rests in neutral watchfulness, lips thin and rarely smiling. High cheekbones suggest West African heritage.",
+    "skin_tone": "Deep warm brown with golden, olive, and subtle copper undertones, reflecting the layered blend of Sub-Saharan African, North African, South Asian, Hispanic/Latin American, East Asian, and Northern European ancestry",
+    "complexion": "Weathered and clean. Minimal makeup. A small scar bisects her left eyebrow — old, well-healed. Jaw is squared and prominent with Northern European influence in the bone structure. High cheekbones and pronounced orbital ridges suggest Sub-Saharan African heritage. Subtle eye shape variation hints at East Asian genetics. Expression rests in neutral watchfulness, lips thin and rarely smiling.",
     "distinguishing_marks": [
       "Linear scar running vertically through her left eyebrow, approximately 2cm long, pale against darker skin",
       "Burn scar on the inside of her right wrist — roughly 4cm diameter, circular, silvered and old",
@@ -319,14 +304,73 @@
     "posture_movement": "Stands with weight slightly forward on the balls of her feet — ready posture. Movements are economical and deliberate, no wasted motion. Hands are usually occupied with something — a tool, a device, a cigarette — rarely at rest. When still, she maintains 360-degree awareness, head turning in measured sweeps.",
     "clothing_style": "Tier 3-4 functional aesthetic. Dark-colored utility jacket with reinforced panels and too many pockets — well-worn and maintained. Tactical cargo pants with cargo webbing. Worn steel-toed boots, laced tight. Layers underneath that can be added or removed. A subdermal armor plate is visible along her collarbone where jacket neckline sits — burnished steel panel. No corporate branding, no unnecessary jewelry. A single silver ring on her left ring finger — worn thin, possibly inherited."
   },
-  "image_prompt": "Luciana Espinoza-Kovács, 168cm stocky muscular woman with deep warm brown skin and golden undertones, dark braided hair with silver at temples, cybernetic chrome iris eyes with thermal overlay, sharp cheekbones and squared jaw with old eyebrow scar. Standing in ready posture in neon-lit industrial cyberpunk 2226 setting, wearing dark weathered utility jacket with reinforced panels, tactical cargo pants, steel-toed boots. Subdermal burnished steel armor plate visible at collarbone. Hands occupied with tools. Neutral watchful expression. Hard-worn professional fixer aesthetic. Night cycle lighting, cool neon blues and ambers reflecting off chrome eyes. Gritty Great Lakes Metropolitan Zone warehouse or maintenance bay background. Cinematic, hyper-detailed, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Nneka Balogun-Arredondo, 168cm tall, stocky muscular build, deep warm brown skin with golden and olive undertones, prominent cheekbones and high orbital ridges blending Sub-Saharan African and North African heritage with East Asian eye shape variation and squared Nordic jaw. Dark brown hair with silver temples pulled tight in functional braid. Cybernetic chrome iris rings with amber thermal overlay surrounding deep brown pupils, intense watchful gaze. Thin lips, linear scar through left eyebrow, old burn scar on inner right wrist. Economical posture, weight forward on balls of feet, ready stance. Dark utility jacket with reinforced panels and burnished steel subdermal armor plate visible at collarbone, tactical cargo pants, worn steel-toed boots. Worn silver ring on left ring finger. Minimal makeup, weathered complexion. GLMZ, Great Lakes Metropolitan Zone, industrial urban setting, cool neon-tinged lighting casting shadows across her augmented eyes, moody and alert, technical and functional aesthetic, no unnecessary ornamentation --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 44.0,
-    "Sub-Saharan African": 33.4,
-    "Eastern European": 22.6
+    "Sub-Saharan African": 37.1,
+    "Hispanic/Latin American": 15.3,
+    "South Asian": 14.3,
+    "North African": 14.2,
+    "East Asian": 11,
+    "Northern European": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 6.6,
+        "Ghanaian": 18.4
+      },
+      "Southern African": {
+        "Zimbabwean": 12.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 10.9
+      },
+      "South American": {
+        "Argentine": 3.8,
+        "Ecuadorian": 0.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8
+      },
+      "Pakistani": {
+        "Baloch": 1.8,
+        "Sindhi": 1.3
+      },
+      "Indian": {
+        "Kannada": 3.2
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Moroccan": 6.3
+      },
+      "Nile Valley": {
+        "Egyptian": 7.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 8.8
+      },
+      "Japanese": {
+        "Japanese": 1.3
+      },
+      "Korean": {
+        "Korean": 0.9
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 8.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ee706cb1d8bf9a386d09a8",
   "type": "character",
-  "name": "Nova Ekwensi-Wójcik",
+  "name": "Nova Petrović-Nkrumah",
   "aliases": [
     "Temi",
     "the Finder"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Bronzeline, GLMZ, near North Ave and Milwaukee",
-  "description": "Temitán Asabere-Zubkov is a Yoruba-Russian study in deliberate inconspicuousness that fails at close range. At a distance they are simply a medium-height person in well-maintained practical clothing, moving through Bronzeline's market corridors with the unhurried confidence of someone who knows exactly where they are going. Up close: alert dark eyes, natural hair twisted and pinned up in a way that adds two centimeters of height, a slight iridescence at the temples where their cosmetic geneware — subdermal bioluminescent flecks, amber, barely visible in daylight — marks a past self they haven't fully left behind. They carry a retractable ceramic baton on their left hip and a legal skip-trace rig in a shoulder bag that looks like a courier's kit.\n\nClearpath Recovery Associates is a licensed bounty compliance firm — they don't call it bounty hunting, because the licensing board doesn't call it that, and Temitán doesn't call it that either, though they're not particularly bothered by the word in private. They find people. They bring them to the compliance checkpoint. They try very hard not to find people who shouldn't be found, which is harder than it sounds in a city where the warrant database has four different incompatible update cycles and two of them lag by forty-eight hours. They have a rule: verify the warrant, verify the person, verify that the person and the warrant match. It has saved them from three significant mistakes. They don't know about the fourth.",
+  "description": "Nova Petrović-Nkrumah is a Yoruba-Russian study in deliberate inconspicuousness that fails at close range. At a distance they are simply a medium-height person in well-maintained practical clothing, moving through Bronzeline's market corridors with the unhurried confidence of someone who knows exactly where they are going. Up close: alert dark eyes, natural hair twisted and pinned up in a way that adds two centimeters of height, a slight iridescence at the temples where their cosmetic geneware — subdermal bioluminescent flecks, amber, barely visible in daylight — marks a past self they haven't fully left behind. They carry a retractable ceramic baton on their left hip and a legal skip-trace rig in a shoulder bag that looks like a courier's kit.\n\nClearpath Recovery Associates is a licensed bounty compliance firm — they don't call it bounty hunting, because the licensing board doesn't call it that, and Temitán doesn't call it that either, though they're not particularly bothered by the word in private. They find people. They bring them to the compliance checkpoint. They try very hard not to find people who shouldn't be found, which is harder than it sounds in a city where the warrant database has four different incompatible update cycles and two of them lag by forty-eight hours. They have a rule: verify the warrant, verify the person, verify that the person and the warrant match. It has saved them from three significant mistakes. They don't know about the fourth.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -162,7 +162,7 @@
     "Tactician": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bronzeline",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,31 +179,16 @@
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
   "related_entities": [
-    "GLMZ",
     "Bronzeline",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Clearpath",
     "Ringo DV-4 'Courier'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Milwaukee Core",
-    "Bioacoustic Communication Membrane",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Kwabena Ilyich Ferreira-Sattout",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Nnenna Baluarte-Volkov",
-    "Réginald Asomaning-Čabarkapa",
-    "Somalex",
-    "Soraya Nkemdirim-Halvorsdóttir",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Ledger",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (36.2%), Southeast Asian (35.3%), Eastern European (20.9%), Hispanic/Latin American (7.6%) — a complex blend reflected in warm, olive-toned skin with subtle golden undertones; facial structure shows the wider cheekbones and defined jawline of Southeast Asian ancestry, softened by the fuller lips and nose bridge characteristic of West African genetics, with finer facial proportions influenced by Eastern European lineage.",
+    "heritage": "Eastern European (35.5%), East Asian (32.2%), Pacific Islander (14.6%), Sub-Saharan African (11.5%), South Asian (6.2%) — a striking global blend. Warm medium-brown skin with olive and golden undertones forms the foundation. Facial structure reflects the dominant ancestry blend: defined cheekbones and almond-shaped eyes from East Asian genetics, fuller lips and slightly broader nose bridge from Sub-Saharan African heritage, fine bone structure proportions from Eastern European lineage, and warmer skin depth from Pacific Islander ancestry. The South Asian component adds subtle warmth and dimension to overall tone.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and compact, with the controlled musculature of someone who moves deliberately through crowded spaces. Shoulders slightly narrower than average, core visibly strong beneath fitted clothing. Built for endurance rather than explosive power.",
@@ -211,26 +196,55 @@
     "hair_style": "Twisted into a high, tight crown, pinned with metal clips; styled to add perceived height",
     "hair_length": "Medium (shoulder-length when untwisted)",
     "eye_color": "Dark brown, natural; pupils occasionally reflect faint amber when bioluminescent temple flecks activate in low light",
-    "skin_tone": "Warm medium brown with olive and golden undertones, the result of blended Sub-Saharan African, Southeast Asian, and Eastern European ancestry",
-    "complexion": "Clear, minimal visible scarring except a thin white line along the left jawline (old injury, well-healed). Skin shows even tone with subtle warmth; minimal cosmetic work beyond the temple flecks. Facial structure reflects Southeast Asian and African features: defined cheekbones, fuller lips, balanced nose. Grooming is meticulous but understated—no jewelry, minimal makeup.",
+    "skin_tone": "Warm medium brown with olive and golden undertones, reflecting the balanced blend of Eastern European, East Asian, Pacific Islander, Sub-Saharan African, and South Asian ancestry",
+    "complexion": "Clear, even tone with subtle warmth. Thin white scar running 3cm along left jawline angling toward the ear (old blunt-force trauma, well-healed). Facial features show East Asian influence in eye shape and cheekbone definition, Sub-Saharan African heritage in fuller lips and nose bridge structure, with fine bone proportions from Eastern European genetics. Grooming is meticulous but understated—no jewelry, minimal makeup.",
     "distinguishing_marks": [
       "Subdermal bioluminescent flecks at both temples (amber glow, visible only in dim light or when activated—barely noticeable in daylight)",
       "Thin white scar running 3cm along the left jawline, angling toward the ear (old blunt-force trauma, professional medical closure)",
       "Faint contact-lens mounting points visible only in extreme close range or bright direct light"
     ],
-    "visible_augmentations": "Contact lenses for facial recognition overlay (barely noticeable unless direct eye contact and strong light). Subvocal comms unit (no visible external hardware—neural interface only). Temple bioluminescence only visible in low-light conditions. Retractable ceramic baton mounted on left hip in a quick-release holster (licensed equipment, institutional gray). Everything else is deliberately unremarkable.",
+    "visible_augmentations": "Contact lenses for facial recognition overlay (barely noticeable unless direct eye contact and strong light). Subvocal comms unit (no visible external hardware—neural interface only). Temple bioluminescence only visible in low-light conditions. Retractable ceramic baton mounted on left hip in a quick-release holster (licensed equipment, institutional gray).",
     "posture_movement": "Moves with deliberate economy—no wasted motion, slight forward lean when walking, shoulders loose but alert. Eyes are always working (warrant verification habit), scanning faces in crowded spaces. Stands with weight balanced over both feet, ready to move in any direction. Resting expression is neutrally attentive; rarely smiles, but not unfriendly. Handshake is firm and brief.",
-    "clothing_style": "Tier 3-4 working professional: well-maintained synthetic blend pants (dark gray or black, multiple utility pockets), layered tops in muted colors (charcoal, olive, deep blue), reinforced courier jacket or unbadged Clearpath windbreaker. Boots are practical (ankle-height, scuff-resistant, good grip). A shoulder bag made to look like a messenger kit for the skip-trace rig. No visible logos, no affectations. Everything is functional, nothing is flashy. Clothing shows signs of regular maintenance and repair—not new, not worn out."
+    "clothing_style": "Tier 3-4 working professional: well-maintained synthetic blend pants (dark gray or black, multiple utility pockets), layered tops in muted colors (charcoal, olive, deep blue), reinforced courier jacket or unbadged Clearpath windbreaker. Boots are practical (ankle-height, scuff-resistant, good grip). A shoulder bag made to look like a messenger kit for the skip-trace rig. No visible logos, no affectations. Everything is functional, nothing is flashy."
   },
-  "image_prompt": "Nova Ekwensi-Wójcik, warrant officer in 2226 Great Lakes Metropolitan Zone. Medium-height lean woman, 168cm, warm olive-toned skin blending Sub-Saharan African and Southeast Asian heritage with Eastern European refinement. Defined cheekbones, fuller lips, balanced nose structure. Dark brown eyes with barely-visible contact lens mounts. Natural black hair twisted into high tight crown pinned with metal clips. Thin white scar along left jawline. Subdermal amber bioluminescent temple flecks (faintly glowing in shadow). Dark gray synthetic pants, layered charcoal and olive tops, reinforced Clearpath jacket. Practical ankle boots. Ceramic baton holster on hip. Shoulder messenger bag. Neutral expression, alert scanning gaze, economical posture. Urban cyberpunk indoor lighting—neon glow reflecting off rain-wet pavement or dim institutional corridor. Professional, functional, unremarkable. Mood: focused, wary, competent. --ar 2:3 --v 6",
+  "image_prompt": "Nova Petrović-Nkrumah, 168cm tall, lean and compact frame with controlled musculature. Warm medium-brown skin with olive and golden undertones blending Eastern European, East Asian, Pacific Islander, Sub-Saharan African, and South Asian heritage. Dark almond-shaped eyes reflecting amber bioluminescence at temples in low light, defined cheekbones, fuller lips, slightly broader nose bridge. Natural black hair with reddish undertones twisted into high tight crown with metal clips. Thin white scar along left jawline. Dressed in dark gray synthetic pants with utility pockets, muted olive layered top, reinforced Clearpath windbreaker, ankle-height scuff-resistant boots, messenger shoulder bag. Posture alert and balanced, eyes scanning, moving with deliberate economy. GLMZ, Great Lakes Metropolitan Zone, neon-lit urban street at dusk, dramatic side-lighting casting temple bioluminescence in subtle amber glow, professional warrant verification atmosphere, moody and focused --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.2,
-    "Southeast Asian": 35.3,
-    "Eastern European": 20.9,
-    "Hispanic/Latin American": 7.6
+    "Eastern European": 35.5,
+    "East Asian": 32.2,
+    "Pacific Islander": 14.6,
+    "Sub-Saharan African": 11.5,
+    "South Asian": 6.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 35.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 32.2
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 5.6,
+        "Tongan": 9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 11.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 6.2
+      }
+    }
+  }
 }

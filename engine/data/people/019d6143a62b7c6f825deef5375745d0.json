@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62b7c6f825deef5375745d0",
   "type": "character",
-  "name": "Nikhil Čabarkapa-Bhattacharya",
+  "name": "Olumide Adeyemi-Asomaning",
   "aliases": [
     "Iggy",
     "the Flush"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Aurochs Medical Complex, Sub-Level 3 bio-waste processing facility, near sub-level access near LaSalle and Congress",
-  "description": "Ignác is compact and wiry, with golden-brown skin and a face that is younger than his eyes. His hair is kept shaved close out of practical necessity — long hair and bio-waste processing are a bad combination — but he has an elaborate bioluminescent tattoo that runs from behind his left ear down his neck, pulsing a cool blue-green that he can modulate with concentration. He wears standard Aurochs disposal coveralls with his name stenciled in block letters on the chest pocket, and he smells faintly of industrial enzymatic cleaner no matter what else he does.\n\nHe has an unexpected gift for observation that he's never quite known what to do with. Twelve hours a day in the bowels of a major medical complex means Ignác sees what gets thrown away, and a remarkable amount can be understood about a hospital's actual business by paying attention to its waste stream. He's cheerful in the gallows-humor way of people who work deeply unglamorous jobs, freely self-deprecating, and genuinely curious about people in a way that disarms them before they realize he's been listening very carefully.",
+  "description": "Olumide Adeyemi-Asomaning is compact and wiry, with golden-brown skin and a face that is younger than his eyes. His hair is kept shaved close out of practical necessity — long hair and bio-waste processing are a bad combination — but he has an elaborate bioluminescent tattoo that runs from behind his left ear down his neck, pulsing a cool blue-green that he can modulate with concentration. He wears standard Aurochs disposal coveralls with his name stenciled in block letters on the chest pocket, and he smells faintly of industrial enzymatic cleaner no matter what else he does.\n\nHe has an unexpected gift for observation that he's never quite known what to do with. Twelve hours a day in the bowels of a major medical complex means Olumide Adeyemi-Asomaning sees what gets thrown away, and a remarkable amount can be understood about a hospital's actual business by paying attention to its waste stream. He's cheerful in the gallows-humor way of people who work deeply unglamorous jobs, freely self-deprecating, and genuinely curious about people in a way that disarms them before they realize he's been listening very carefully.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -177,7 +177,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,36 +226,22 @@
   "related_entities": [
     "Aurochs Medical Complex",
     "The Gradient Compact",
+    "Kel Adeyemi-Strand",
     "Street Custom 'Gallows' Recurve Bow",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Aminata Vîlcu-Faaleolo",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Dragan Petersen-Bah",
-    "Ezio Kaboré-Malhotra",
-    "Ferrogate Transit",
-    "MERIDIAN",
-    "Meridian Munitions Street PDW MSP-7 'Alleycat'",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Rongo Delgado-Opoku",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "IRONLIMB Spectre SV-4 Stealth Arm"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "South Asian / Eastern European / East Asian blend with sub-Saharan African and Hispanic/Latin American ancestry—a genetic mosaic reflecting the Ubiquitous Diaspora. Dominant South Asian bone structure (41.7%) creates angular cheekbones and jawline, modified by Eastern European (36.5%) phenotypic contribution to skin undertone and eye depth. East Asian (9.7%) heritage visible in eye shape and hair texture. Sub-Saharan African (6.7%) and Hispanic/Latin American (5.4%) ancestry contribute to warm skin undertones and overall complexion richness.",
+    "heritage": "Predominantly Sub-Saharan African (66.6%) ancestry with significant South Asian (19.9%) and Hispanic/Latin American (13.5%) genetic contribution—a genetic mosaic reflecting the Ubiquitous Diaspora. Sub-Saharan African heritage dominates bone structure and phenotypic expression, creating warm, rich skin depth. South Asian ancestry contributes angular cheekbones and defined jawline structure. Hispanic/Latin American heritage adds warmth and complexity to overall complexion. The combination creates a distinctly African-descended appearance with secondary angular facial geometry and warm undertones.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Compact and wiry, with the lean musculature of someone who moves constantly through tight industrial spaces. Shoulders slightly narrower than average, no excess fat. Moves with practiced economy of motion.",
     "hair_color": "Dark brown, nearly black",
     "hair_style": "Shaved close to scalp in a practical buzz cut, maintenance-minimal",
     "hair_length": "Shaved",
-    "eye_color": "Warm brown with a tired, intelligent depth",
-    "skin_tone": "Warm golden-bronze with subtle olive undertones—the result of South Asian dominant ancestry blended with Eastern European and sub-Saharan African heritage. Rich, complex coloration that catches light with a faint luminescence from constant industrial humidity exposure.",
-    "complexion": "Youthful features shaped by South Asian and Eastern European ancestry—sharp cheekbones, angular jawline—undercut by the eyes of someone who has seen too many shift cycles. Slight permanent crease between eyebrows from concentration. Skin has a faint sheen from constant exposure to industrial humidity and enzymatic cleaner residue. Clean-shaven, pragmatic grooming. East Asian heritage subtle in eye-set; Sub-Saharan African ancestry contributes to warm depth of skin.",
+    "eye_color": "Deep warm brown with intelligent depth",
+    "skin_tone": "Rich warm brown with golden undertones—the result of Sub-Saharan African dominant ancestry blended with South Asian and Hispanic/Latin American heritage. Deep, complex coloration that catches light with a faint luminescence from constant industrial humidity exposure.",
+    "complexion": "Strong facial structure shaped by Sub-Saharan African ancestry—defined cheekbones, prominent jawline with slight forward projection. South Asian genetic contribution refines facial angularity and creates high, sculpted cheekbone placement. Hispanic/Latin American ancestry adds warmth and depth to the overall complexion, softening the angularity slightly. Eyes reflect intelligence hardened by too many shift cycles, with a slight permanent crease between eyebrows from concentration. Skin has a faint sheen from constant exposure to industrial humidity and enzymatic cleaner residue. Clean-shaven, pragmatic grooming. The overall effect is a striking blend—strong African-descended features with angular definition and warm, complex skin depth.",
     "distinguishing_marks": [
       "Elaborate bioluminescent tattoo running from behind left ear down the left side of neck, depicting fractal branching patterns in cool blue-green that pulses softly and can be modulated by conscious effort",
       "Faint chemical burns on the knuckles of both hands—thin white lines, occupational hazard from early career mistakes with caustic waste"
@@ -264,16 +250,43 @@
     "posture_movement": "Shoulders slightly forward from habitually moving through cramped sub-level corridors. Movements are efficient and deliberate, with minimal wasted energy. Often stands with weight on one leg, the other slightly bent—the posture of someone used to long shifts. Head tilts slightly when listening, giving the impression of genuine attention.",
     "clothing_style": "Standard Aurochs Medical Complex disposal coveralls in high-visibility orange with reflective piping, name 'IGNÁC' stenciled across left chest in utilitarian block letters. Underneath, practical undershirt (currently charcoal gray, sweat-stained at collar). Steel-toed composite boots, scuffed and worn. Heavy-duty nitrile glove cuff folded at left wrist. Pervasive faint smell of industrial enzymatic cleaner—the scent signature of his work."
   },
-  "image_prompt": "Nikhil Čabarkapa-Bhattacharya, 168cm compact wiry frame, genetic mosaic of South Asian, Eastern European, East Asian, Sub-Saharan African and Hispanic ancestry. Warm golden-bronze skin with olive undertones, sharp angular cheekbones, intelligent warm brown eyes with fatigue, close-shaved dark hair. Elaborate bioluminescent fractal tattoo running left neck in cool blue-green glow. Faint chemical burn scars on both hands. Wearing high-visibility orange Aurochs Medical Complex disposal coveralls with 'IGNÁC' stenciled across chest, charcoal gray undershirt sweat-stained at collar, scuffed steel-toed composite boots. Slightly forward-hunched shoulders, efficient deliberate movement, weight balanced on one leg. Industrial sub-level lighting, blue-green neck tattoo glowing softly against orange coveralls. Cyberpunk 2226 GLMZ worker, tired but attentive expression. Pervasive hint of enzymatic cleaner. Gritty industrial medical waste facility aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Olumide Adeyemi-Asomaning, compact wiry build, 168cm tall, rich warm brown skin with golden undertones blending Sub-Saharan African, South Asian, and Hispanic/Latin American heritage. Strong defined cheekbones and jawline, deep intelligent brown eyes with concentration crease between brows. Shaved dark brown hair, clean-shaven face. Elaborate bioluminescent fractal tattoo glowing cool blue-green running from behind left ear down neck. Faint white chemical burns on knuckles. Wearing high-visibility orange disposal coveralls with 'IGNÁC' stenciled on chest, charcoal gray undershirt sweat-stained at collar, scuffed steel-toed boots. Industrial filter cartridge visible in pocket. Slight forward shoulder posture from confined workspace movement. Head tilted slightly, attentive expression. Blue-green bioluminescent glow illuminating left side of face and neck in dim industrial sub-level lighting. GLMZ GLMZ industrial worker, utilitarian aesthetic, moody humidity-soaked atmosphere, metallic and chemical environment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 41.7,
-    "Eastern European": 36.5,
-    "East Asian": 9.7,
-    "Sub-Saharan African": 6.7,
-    "Hispanic/Latin American": 5.4
+    "Sub-Saharan African": 66.6,
+    "South Asian": 19.9,
+    "Hispanic/Latin American": 13.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 7.9,
+        "Angolan": 27.9
+      },
+      "East African": {
+        "Ugandan": 21.7,
+        "Ethiopian": 9.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 8.1
+      },
+      "Sri Lankan": {
+        "Sinhalese": 11.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 3.8
+      },
+      "Caribbean": {
+        "Puerto Rican": 1.1,
+        "Dominican": 8.6
+      }
+    }
+  }
 }

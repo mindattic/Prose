@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Fort Anchor, Metro Police Central Evidence Repository, near Halsted and Division",
-  "description": "Erzsébet is a sturdy, meticulous woman with iron-grey locs she keeps pinned up during work hours and lets down everywhere else, and deep brown skin that has picked up the particular pallor of someone who spends most of their life under artificial light. Her hands are always gloved when she is working and bare when she isn't — a transition she makes with a deliberateness that people who know her recognize as the boundary between Erzsébet the professional and Erzsébet the person. She has no cosmetic modifications and regards them with neither judgment nor interest; the question simply never came up for her.\n\nShe has worked Metro's Central Evidence Repository at Fort Anchor for twenty-three years and has survived five departmental reorganizations, three chiefs of police, two corruption purges, and one literal flood that compromised fourteen meters of archival shelving. She knows the repository the way surgeons know bodies — its logic, its failures, its places where things disappear and where they don't. She is the person Metro detectives call when they need to know if something was ever there. She is also, quietly, the person who notices when something that should be there isn't, and she keeps her own records because she stopped trusting Metro's in her eighth year.",
+  "description": "Ash Lindström is a sturdy, meticulous woman with iron-grey locs she keeps pinned up during work hours and lets down everywhere else, and deep brown skin that has picked up the particular pallor of someone who spends most of their life under artificial light. Her hands are always gloved when she is working and bare when she isn't — a transition she makes with a deliberateness that people who know her recognize as the boundary between Ash Lindström the professional and Ash Lindström the person. She has no cosmetic modifications and regards them with neither judgment nor interest; the question simply never came up for her.\n\nShe has worked Metro's Central Evidence Repository at Fort Anchor for twenty-three years and has survived five departmental reorganizations, three chiefs of police, two corruption purges, and one literal flood that compromised fourteen meters of archival shelving. She knows the repository the way surgeons know bodies — its logic, its failures, its places where things disappear and where they don't. She is the person Metro detectives call when they need to know if something was ever there. She is also, quietly, the person who notices when something that should be there isn't, and she keeps her own records because she stopped trusting Metro's in her eighth year.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -177,7 +177,7 @@
     "Idealist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -193,47 +193,25 @@
   ],
   "related_entities": [
     "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
-    "Riddle",
     "Fort Anchor",
     "Full Clearance (The Erasure Mix)",
+    "Plot 17",
     "Chimera-Null",
     "The Pure Hand",
-    "Iron",
-    "Alper Inoue-Aidoo",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Cezar Watanabe-Gyasi",
-    "Chronicle",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "GLMZ",
-    "Grainfort",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "TESSERA Widow Mk. III",
-    "The Ledger",
-    "The Question",
-    "Vuk Jorgensen-Toure",
-    "Witness",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Iron"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Cosmopolitan blend of Northern European (29%), Eastern European (24%), Hispanic/Latin American (22%), Sub-Saharan African (20%), and Southeast Asian (5%) ancestry—a typical product of the Ubiquitous Diaspora. This genetic mix manifests in warm deep brown skin with subtle golden undertones, sharp angular cheekbones, and the distinctive eye shape showing Southeast Asian influence alongside African heritage depth.",
+    "heritage": "Predominantly Southeast Asian (71.9%) with significant Hispanic/Latin American (20.2%) and Sub-Saharan African (7.9%) ancestry—a product of the Ubiquitous Diaspora. This genetic mix manifests in warm medium-to-deep brown skin with subtle golden undertones, sharp angular cheekbones showing Southeast Asian structure, and the distinctive eye shape with slight epicanthic fold characteristic of Southeast Asian heritage, enriched by the depth and warmth from African and Hispanic ancestry contributions.",
     "height_cm": 168,
     "weight_kg": 74,
     "build": "Sturdy and compact, with the solid frame of someone who moves deliberately and carries weight without bulk. Broad shoulders, strong forearms from two decades of careful handling work.",
     "hair_color": "Iron-grey with natural dark undertones",
     "hair_style": "Thick locs, typically pinned up in a tight, functional crown during work hours; worn loose and full outside the repository",
     "hair_length": "Long (to mid-back when unbound)",
-    "eye_color": "Deep brown, warm, with slight epicanthic fold suggesting Southeast Asian genetic contribution",
-    "skin_tone": "Warm deep brown with golden undertones, displaying the characteristic rich melanin distribution of mixed African and European heritage; pallid undertone from prolonged exposure to artificial lighting; the quality suggests years spent indoors under LEDs",
-    "complexion": "Unlined face for her age; sharp, angular cheekbones with the defined structure common to Eastern European and Hispanic ancestry; minimal makeup; fastidiously groomed but without vanity. The interplay of her mixed heritage creates subtle warmth in her features despite the cool indoor pallor. Hands are her most distinctive feature—calloused at the fingertips and joints, with precise, economical movements.",
+    "eye_color": "Deep brown, warm, with slight epicanthic fold suggesting dominant Southeast Asian genetic contribution",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, displaying the characteristic melanin distribution of Southeast Asian, Hispanic, and African heritage; pallid undertone from prolonged exposure to artificial lighting; the quality suggests years spent indoors under LEDs",
+    "complexion": "Unlined face for her age; sharp, angular cheekbones with the defined structure common to Southeast Asian facial architecture, enhanced by Hispanic and African heritage; minimal makeup; fastidiously groomed but without vanity. The interplay of her mixed heritage creates warm, balanced features despite the cool indoor pallor. Hands are her most distinctive feature—calloused at the fingertips and joints, with precise, economical movements.",
     "distinguishing_marks": [
       "Small, pale scar on the inside of her left wrist, barely visible, consistent with early-career injury or implant installation site"
     ],
@@ -241,16 +219,38 @@
     "posture_movement": "Stands with precise posture; moves with minimal wasted motion, each gesture intentional and economical. Her hands are her most expressive feature—they move with surgical precision during work. Off-duty, she carries herself with quiet authority but no apparent tension.",
     "clothing_style": "Professional but worn-in: grey or navy trousers with deep pockets, button-up shirts in neutral tones (charcoal, cream, pale blue), sensible non-slip shoes with reinforced arches. A Metro Police ID lanyard worn outside her shirt, worn and familiar with her. No jewelry. Off-duty: the same practical aesthetic, comfortable black jeans, well-maintained leather jacket (scuffed, vintage, cared-for). She dresses like someone who doesn't think about clothes but respects the tool-like function of fabric."
   },
-  "image_prompt": "Ash Lindström, 168cm tall with sturdy compact build, deep warm brown skin with golden undertones from mixed Northern European, Eastern European, Hispanic, African, and Southeast Asian ancestry. Sharp angular cheekbones, deep brown eyes with slight epicanthic fold, unlined face. Iron-grey locs with dark undertones pinned in tight functional crown atop her head. Pale LED-indoor pallor contrasting with rich melanin tones. Wearing charcoal button-up shirt and grey trousers with Metro Police ID lanyard, sensible non-slip shoes. Calloused hands with precise movements, small faint scar on left wrist. Professional posture, quiet authority, minimal wasted motion. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool blue-grey evidence repository lighting or off-duty scene, vintage scuffed leather jacket visible. Clinical precision in bearing, economical grace. Midjourney cyberpunk aesthetic, cool tones, professional dignity --ar 2:3 --v 6",
+  "image_prompt": "Ash Lindström, 168cm tall, sturdy compact frame with broad shoulders, standing in precise posture. Southeast Asian-dominant mixed heritage face with sharp angular cheekbones, deep warm brown eyes with epicanthic fold, warm medium-deep brown skin with golden undertones and pallid LED-exposure cast. Iron-grey locs with dark undertones, thick and full, pinned in tight crown. Calloused hands with surgical precision. Wearing charcoal button-up shirt, grey trousers with deep pockets, sensible shoes, Metro Police ID lanyard worn outside shirt. Minimal makeup, fastidiously groomed. Small pale scar inside left wrist. Faint crystalline shimmer visible at corner of right eye. Professional neo-noir evidence handler aesthetic. Cool indoor lighting, focus on hands and intent expression. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 28.8,
-    "Eastern European": 24.1,
-    "Hispanic/Latin American": 21.5,
-    "Sub-Saharan African": 20.3,
-    "Southeast Asian": 5.3
+    "Southeast Asian": 71.9,
+    "Hispanic/Latin American": 20.2,
+    "Sub-Saharan African": 7.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 71.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 20.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 2.2,
+        "Gabonese": 3
+      },
+      "West African": {
+        "Liberian": 1.4
+      },
+      "Southern African": {
+        "Mozambican": 1.3
+      }
+    }
+  }
 }

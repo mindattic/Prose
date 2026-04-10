@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a2776b9d0203917a5ff256",
   "type": "character",
-  "name": "Rehana Krishnamurthy",
+  "name": "Aleksei Solberg",
   "aliases": [
     "Dot",
     "The Needle Woman"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Alban Souk, permanent pitch near the eastern water cisterns, near Pulaski and Chicago Ave",
-  "description": "Adaora is a broad-shouldered woman with dark amber skin weathered by decades of outdoor market life, her natural hair tucked under a wide-brimmed plastene hat strung with dried medicinal herbs and small glass vials. Her eyes are warm brown with cosmetic irises that shift between a deep violet and copper-gold depending on the light — a cheap mod she got thirty years ago that she's never bothered to remove. Her hands are her most striking feature: enormous, steady, and perpetually stained with pigment from the botanical pastes she grinds fresh every morning.\n\nShe occupies a peculiar moral middle ground in the Souk — selling everything from genuine herbal supplements and unlicensed over-the-counter analogs to mild synth-narcotics she insists are 'medicinal.' She's not cruel, but she's not naive either. She mothers the young addicts who come to her while simultaneously keeping them coming back, a contradiction she rarely examines. Her stall is famous for a handwritten sign that reads: 'No judgment. No refunds. Ancestors watching.' She burns incense for the local E.L.F. that she calls Mama Cistern every morning before opening.",
+  "description": "Aleksei Solberg is a broad-shouldered woman with dark amber skin weathered by decades of outdoor market life, her natural hair tucked under a wide-brimmed plastene hat strung with dried medicinal herbs and small glass vials. Her eyes are warm brown with cosmetic irises that shift between a deep violet and copper-gold depending on the light — a cheap mod she got thirty years ago that she's never bothered to remove. Her hands are her most striking feature: enormous, steady, and perpetually stained with pigment from the botanical pastes she grinds fresh every morning.\n\nShe occupies a peculiar moral middle ground in the Souk — selling everything from genuine herbal supplements and unlicensed over-the-counter analogs to mild synth-narcotics she insists are 'medicinal.' She's not cruel, but she's not naive either. She mothers the young addicts who come to her while simultaneously keeping them coming back, a contradiction she rarely examines. Her stall is famous for a handwritten sign that reads: 'No judgment. No refunds. Ancestors watching.' She burns incense for the local E.L.F. that she calls Mama Cistern every morning before opening.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,31 +231,20 @@
   "related_entities": [
     "Aurochs Medical Complex",
     "The Alban Souk",
+    "The Botanical",
     "The Portico",
+    "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Glass",
     "The Pure Hand",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Glass",
-    "Gold",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Pirjo Asante-Ulukhan",
-    "Street Custom 'Rosary' Bead Garrote",
-    "The Botanical",
-    "The Oxidian Market",
-    "The Root",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yuliya Morozova"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian (Thai/Vietnamese/Indonesian) dominant with significant South Asian (Indian/Sri Lankan) ancestry, complemented by East Asian, Sub-Saharan African, Pacific Islander, and Hispanic/Latin American heritage. A striking genetic tapestry reflecting the Ubiquitous Diaspora.",
+    "heritage": "A striking genetic tapestry of the Ubiquitous Diaspora — Eastern European foundation (39.9%) providing strong bone structure and baseline complexion, substantially enriched by East Asian (19.9%) and Southeast Asian (17.7%) features creating distinctive facial geometry. Hispanic/Latin American (14.8%), Sub-Saharan African (5.9%), and Indigenous American (1.8%) ancestry layer warm golden and bronze undertones throughout. Her ancestry is written in her face: high Slavic cheekbones, monolid eye shapes from East Asian genetics, broader nose bridge and face width from Southeast Asian heritage, with warm saturated undertones from her Latin American and African heritage creating a sun-weathered bronze that shifts between olive and rich copper depending on light.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and sturdy, with the dense musculature of someone who has stood at a market stall for thirty years grinding compounds by hand. Not heavy, but solid — carries weight with authority rather than bulk.",
@@ -263,11 +252,11 @@
     "hair_style": "Wrapped tightly and tucked beneath a wide-brimmed hat; when exposed, worn in neat locs past shoulder length",
     "hair_length": "Long (typically covered)",
     "eye_color": "Warm brown iris with cosmetic shift-mod that cycles between deep violet and copper-gold depending on ambient light and angle",
-    "skin_tone": "Warm golden-bronze complexion with medium saturation, sun-weathered and rich — characteristic of Southeast Asian and South Asian ancestry with subtle warm undertones",
-    "complexion": "Face creased from fifty-two years of outdoor work and genuine smiling; laugh lines around eyes are prominent. Skin is clear but textured, with faint burn scars on her cheekbones from a market fire in her thirties. Her features blend Southeast Asian bone structure with South Asian cheekbones and nose shape — a striking, asymmetrical beauty reflecting her diverse ancestry.",
+    "skin_tone": "Warm bronze-olive complexion with rich saturation — a harmonious blend of Eastern European paleness lifted by East Asian yellow undertones, Southeast Asian golden warmth, and deeper bronze notes from Sub-Saharan and Indigenous American heritage, creating a sun-weathered richness that speaks of decades outdoors across multiple climates",
+    "complexion": "Face creased from fifty-two years of outdoor work and genuine smiling; laugh lines around eyes are prominent. Skin is clear but textured, with faint burn scars on her cheekbones from a market fire in her thirties. Her features blend Slavic high cheekbones with East Asian monolid eye shapes and Southeast Asian nose bridge — a striking asymmetrical beauty reflecting her diverse genetic inheritance, warmed throughout by deep bronze undertones from her Latin American, Sub-Saharan, and Indigenous American heritage.",
     "distinguishing_marks": [
       "Pale burn scar tissue runs across both cheekbones in a starburst pattern, legacy of a propane fire at the Souk in 1998",
-      "Deep indigo tattoo on her left inner forearm: a Adinkra symbol (Sankofa) inked by a street artist twenty years ago",
+      "Deep indigo tattoo on her left inner forearm: an Adinkra symbol (Sankofa) inked by a street artist twenty years ago",
       "Chronic dark staining on her palms and fingers from botanical compounds — pigment embedded so deeply it's nearly permanent despite daily scrubbing",
       "Small raised scar on her right temple where an early-model iris mod was crudely installed"
     ],
@@ -275,17 +264,67 @@
     "posture_movement": "She stands rooted at her stall like a tree — weight evenly distributed, shoulders back, head slightly forward as if always listening. Her movements are economical and deliberate; she doesn't fidget or waste motion. When she walks, she moves slowly but with purpose, her broad frame parting crowds without aggression. Her hands are always moving: grinding, measuring, reaching, gesturing. She speaks with her whole body.",
     "clothing_style": "Tier 3-4 practical wear layered for all weather. A loose linen shirt (faded indigo, handwashed) tucked into wide canvas trousers with multiple pockets and reinforced seams. Over this, a heavy canvas apron stained with decades of botanical residue — reds, yellows, browns, blacks. Her wide-brimmed plastene hat (cream-colored, weathered to gray-tan) is strung with dried medicinal herbs, prayer beads, and small glass vials of her most popular compounds. She wears a heavy cloth wrap — currently rust-colored — tied loosely around her shoulders. Her shoes are practical market boots, scuffed and resoled multiple times. No jewelry except for a single silver ring on her right ring finger, unmarked. Everything about her dress screams 'I am here to work, not to impress.'"
   },
-  "image_prompt": "Rehana Krishnamurthy, 52-year-old market vendor in cyberpunk 2226 Great Lakes Metropolitan Zone, Southeast Asian and South Asian ancestry with warm golden-bronze skin and deep sun-weathered complexion. Stands rooted at market stall wearing faded indigo linen shirt tucked into canvas trousers, heavy cream-colored wide-brimmed plastene hat strung with dried herbs and glass vials, rust-colored cloth wrap around broad shoulders. Dark brown hair with silver at temples in locs, warm brown eyes with shifting violet-copper cosmetic iris mod visible under direct light. Facial features show asymmetrical beauty with faint starburst burn scars across cheekbones, prominent laugh lines, weathered texture from decades of outdoor work. Strong hands showing chronic dark staining from botanical compounds, moving with unnatural precision from thermal regulator augmentation. Deep indigo Sankofa tattoo on left inner forearm. Market setting with botanical compound stains on apron in reds, yellows, browns, blacks. Economical deliberate posture, rooted stance. Cyberpunk aesthetic, realistic lighting, weathered authenticity --ar 2:3 --v 6",
+  "image_prompt": "Aleksei Solberg, 52-year-old market herbalist, warm bronze-olive complexion blending Eastern European, East Asian, and Southeast Asian features with Latin American and African warmth. High Slavic cheekbones, monolid East Asian eyes with violet-copper shift-mod cycling in warm light, Southeast Asian nose bridge. Sun-weathered face creased from decades of outdoor work, prominent laugh lines, pale starburst burn scars across both cheekbones from old propane fire. Dark brown hair with silver threading, long locs tucked under weathered cream-tan wide-brimmed hat strung with dried herbs and glass vials. Indigo Sankofa tattoo visible on left inner forearm, hands stained deep from botanical compounds. Broad-shouldered sturdy build, standing rooted at her market stall. Wearing faded indigo linen shirt, wide canvas trousers with reinforced pockets, heavy botanical-stained apron, rust-colored cloth wrap around shoulders, practical worn market boots. Single silver ring on right ring finger. Economical posture, hands always moving with precision. Neo-noir 2220s marketplace, neon and warm market lighting casting shadows across her weathered face, botanical compounds glowing faintly in glass containers around her stall, atmospheric steam and spice haze, gritty and authentic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 47.8,
-    "South Asian": 35.1,
-    "East Asian": 6.1,
-    "Sub-Saharan African": 4.0,
-    "Pacific Islander": 3.6,
-    "Hispanic/Latin American": 3.4
+    "Eastern European": 39.9,
+    "East Asian": 19.9,
+    "Southeast Asian": 17.7,
+    "Hispanic/Latin American": 14.8,
+    "Sub-Saharan African": 5.9,
+    "Indigenous American": 1.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 39.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 19.9
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 1.3,
+        "Sumatran": 0.9
+      },
+      "Vietnamese": {
+        "Vietnamese": 15.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 3.5
+      },
+      "Caribbean": {
+        "Dominican": 5.4
+      },
+      "Mexican": {
+        "Mexican": 5.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 4.1,
+        "Angolan": 0.6
+      },
+      "East African": {
+        "Ethiopian": 1,
+        "Somali": 0.2
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 0.2
+      },
+      "Plains Nations": {
+        "Cherokee": 1.6
+      }
+    }
+  }
 }

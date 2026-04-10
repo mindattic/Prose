@@ -90,11 +90,11 @@ const d1 = {
   file_name: "the_document_that_was_never_written",
   title: "The Document That Was Never Written",
   category: "Municipal Anomaly",
-  body: "# The Document That Was Never Written\n\nFound in the Meridian 88 municipal archive, correctly filed under Municipal Charters, subsection 7.4.1 (Founding Documents), between the water rights compact and the tier residency framework. Seven pages. Acid-free paper. Black ink, machine-printed in a font that matches no known municipal typeface. Dated 2076. No author listed. No department stamp. No filing signature.\n\nThe document describes the founding charter of Meridian 88 in precise, specific, and legally coherent detail. It references meetings that occurred, quotes individuals who were present, and cites resolutions that are verified in other records. It is, by every measure, an authentic founding document — except that no one wrote it, no one filed it, and no one in any department that has been consulted has any record of its creation or submission.\n\nThe language is clinical until page 4, where the tier system is described not as a governance framework but as \"population management.\" Page 5 refers to Shelf residents not as citizens but as \"managed inventory.\" Page 6 outlines resource allocation formulas that, when checked against current distribution patterns, are accurate to within 2%.\n\nThe archive has attempted to remove the document three times. Each time, it reappears within 48 hours, correctly filed, in the same location, with no record of who returned it. Security cameras show nothing. Access logs show no entry.\n\nPage 7 mentions a \"Phase 2\" that was never implemented. The paragraph describes something built beneath the city — infrastructure that predates the Underworld, deeper than any mapped tunnel, designed for a purpose that the document begins to describe in a sentence that",
+  body: "# The Document That Was Never Written\n\nFound in the GLMZ municipal archive, correctly filed under Municipal Charters, subsection 7.4.1 (Founding Documents), between the water rights compact and the tier residency framework. Seven pages. Acid-free paper. Black ink, machine-printed in a font that matches no known municipal typeface. Dated 2076. No author listed. No department stamp. No filing signature.\n\nThe document describes the founding charter of GLMZ in precise, specific, and legally coherent detail. It references meetings that occurred, quotes individuals who were present, and cites resolutions that are verified in other records. It is, by every measure, an authentic founding document — except that no one wrote it, no one filed it, and no one in any department that has been consulted has any record of its creation or submission.\n\nThe language is clinical until page 4, where the tier system is described not as a governance framework but as \"population management.\" Page 5 refers to Shelf residents not as citizens but as \"managed inventory.\" Page 6 outlines resource allocation formulas that, when checked against current distribution patterns, are accurate to within 2%.\n\nThe archive has attempted to remove the document three times. Each time, it reappears within 48 hours, correctly filed, in the same location, with no record of who returned it. Security cameras show nothing. Access logs show no entry.\n\nPage 7 mentions a \"Phase 2\" that was never implemented. The paragraph describes something built beneath the city — infrastructure that predates the Underworld, deeper than any mapped tunnel, designed for a purpose that the document begins to describe in a sentence that",
   line_count: 7,
   headings: ["The Document That Was Never Written"],
   tags: ["document", "anomaly", "municipal", "founding", "charter", "meridian", "new_weird", "phase_2", "underworld", "population_management", "shelf", "classified"],
-  related_entities: ["Meridian 88", "The Shelf", "The Underworld", "The Cartographers"]
+  related_entities: ["GLMZ", "The Shelf", "The Underworld", "The Cartographers"]
 };
 if (writeEntity('documents', d1)) count++;
 
@@ -106,7 +106,7 @@ const e1 = {
   category: "music",
   subcategory: "traditional / anomalous",
   aliases: ["The Shelf Song", "The Hum", "The Five Notes"],
-  description: "Every child in the Shelf knows it. No one wrote it. No one can identify when it began. The Shelf Lullaby is a five-note melody that every Shelf parent teaches their children at bedtime, and that every Shelf child can hum by the age of three. Neurological studies have confirmed that the melody triggers a measurable BCI relaxation response — a 40% reduction in cortisol-analogous neural activity — that matches no known therapeutic frequency and was not designed by any BCI manufacturer.\n\nThe melody matches no known musical tradition. Ethnomusicologists have compared it to lullabies from every culture represented in Meridian 88's diaspora population. It resembles none of them. It is not pentatonic. It is not diatonic. It uses a five-note interval pattern that does not appear in any catalogued musical system.\n\nThe lyrics change by neighborhood. In Block 7, the lullaby is about a bird that flies below the city. In Block 12, it is about a river that runs upward. In the Narrows, there are no words — only the melody. But the melody is identical everywhere, to the microtonal level.\n\nThird-generation BCI users hum it without being taught. Children who have never heard it sung will hum it in their sleep. The melody appears in ghost weight residual patterning — the faint traces left in a BCI after its user dies.\n\nA musician named Soledad Achebe-Kowalski traced the earliest known recording to 2131 — a maintenance worker in the Underworld transcribing a sound. She asked him what he was transcribing. He said it was the sound the walls were making.\n\nThe walls were humming the lullaby.",
+  description: "Every child in the Shelf knows it. No one wrote it. No one can identify when it began. The Shelf Lullaby is a five-note melody that every Shelf parent teaches their children at bedtime, and that every Shelf child can hum by the age of three. Neurological studies have confirmed that the melody triggers a measurable BCI relaxation response — a 40% reduction in cortisol-analogous neural activity — that matches no known therapeutic frequency and was not designed by any BCI manufacturer.\n\nThe melody matches no known musical tradition. Ethnomusicologists have compared it to lullabies from every culture represented in GLMZ's diaspora population. It resembles none of them. It is not pentatonic. It is not diatonic. It uses a five-note interval pattern that does not appear in any catalogued musical system.\n\nThe lyrics change by neighborhood. In Block 7, the lullaby is about a bird that flies below the city. In Block 12, it is about a river that runs upward. In the Narrows, there are no words — only the melody. But the melody is identical everywhere, to the microtonal level.\n\nThird-generation BCI users hum it without being taught. Children who have never heard it sung will hum it in their sleep. The melody appears in ghost weight residual patterning — the faint traces left in a BCI after its user dies.\n\nA musician named Soledad Achebe-Kowalski traced the earliest known recording to 2131 — a maintenance worker in the Underworld transcribing a sound. She asked him what he was transcribing. He said it was the sound the walls were making.\n\nThe walls were humming the lullaby.",
   creator: "",
   distributor: "",
   tier_availability: "Tier 1",
@@ -172,7 +172,7 @@ const c1 = {
   specifications: "{\"occurrence_rate\":\"~1 per 50,000 BCI users per year\",\"duration\":\"~3 months\",\"language\":\"user's native thought-language\",\"detection\":\"undetectable by standard diagnostic\",\"manufacturer\":\"none\"}",
   side_effects: ["Temporary sense of being accompanied", "Grief when the voice departs"],
   cultural_context: "In the Shelf, being 'heard' is a mark of quiet distinction. The heard do not boast about it. They mention it the way you'd mention having survived a flood — with gratitude and a residual awe that something larger than you briefly turned its attention your way.",
-  known_users: ["~200 new cases per year across Meridian 88 (estimated from BCI population of ~10 million)"],
+  known_users: ["~200 new cases per year across GLMZ (estimated from BCI population of ~10 million)"],
   story_hooks: [
     "A player character's BCI begins whispering. The advice is good. The advice is getting more urgent. The voice sounds afraid.",
     "Two people who were 'heard' at the same time compare notes. The voice said the same things to both of them — word for word. They live in different districts and have never met.",
@@ -243,7 +243,7 @@ const m1 = {
   tier_availability: "Unavailable (Underworld black market only)",
   cost: "\u03A612,000+ per kilogram",
   story_hooks: [
-    "A piece of Mnemic Clay forms a shape no one recognizes — a building that doesn't exist, in a style that predates Meridian 88. The Cartographers are very interested.",
+    "A piece of Mnemic Clay forms a shape no one recognizes — a building that doesn't exist, in a style that predates GLMZ. The Cartographers are very interested.",
     "Someone is selling fake Mnemic Clay in the Shelf. The real thing finds this offensive. Real samples near the fakes have begun forming images of the forger's face."
   ],
   tags: ["substrate", "material", "anomaly", "underworld", "memory", "new_weird", "rare", "trade", "grief"]
@@ -257,7 +257,7 @@ const f1 = {
   name: "The Cartographers",
   aliases: ["The Mappers", "Atlas Keepers", "The Irregulars"],
   motto: "Do not interfere. Anomalies are load-bearing.",
-  description: "Approximately 80 people who have dedicated themselves to mapping every anomaly in Meridian 88. They maintain the Atlas of Irregularities — a hand-drawn, continuously updated collection of maps, notes, measurements, and observations documenting the city's inexplicable phenomena.\n\nThe Atlas is kept on paper. This is not nostalgia. Digital systems alter anomaly data. Photographs of anomalous locations show different things depending on the device used. GPS coordinates of documented anomalies drift over time in digital storage. Text descriptions of anomalies, stored electronically, have been found altered — words changed, sentences added, meanings shifted. Paper does not change. Ink does not rewrite itself. The Atlas is drawn by hand, in ink, on acid-free paper, and stored in a leather case carried by the Keeper.\n\nThe Cartographers have one rule: do not interfere. Anomalies are observed, measured, described, and mapped. They are never touched, tested, provoked, or removed. The Cartographers believe — based on two decades of careful observation — that the anomalies are \"load-bearing.\" They are structural. Remove one and something collapses. Not a building. Something less visible and more important.\n\nThe current Keeper is Emile Nakamura-Osei, a 71-year-old retired structural engineer who began the Atlas when his measurements stopped adding up. Emile hasn't spoken above a whisper in six years. \"The city listens,\" he says, barely audible, and does not elaborate.",
+  description: "Approximately 80 people who have dedicated themselves to mapping every anomaly in GLMZ. They maintain the Atlas of Irregularities — a hand-drawn, continuously updated collection of maps, notes, measurements, and observations documenting the city's inexplicable phenomena.\n\nThe Atlas is kept on paper. This is not nostalgia. Digital systems alter anomaly data. Photographs of anomalous locations show different things depending on the device used. GPS coordinates of documented anomalies drift over time in digital storage. Text descriptions of anomalies, stored electronically, have been found altered — words changed, sentences added, meanings shifted. Paper does not change. Ink does not rewrite itself. The Atlas is drawn by hand, in ink, on acid-free paper, and stored in a leather case carried by the Keeper.\n\nThe Cartographers have one rule: do not interfere. Anomalies are observed, measured, described, and mapped. They are never touched, tested, provoked, or removed. The Cartographers believe — based on two decades of careful observation — that the anomalies are \"load-bearing.\" They are structural. Remove one and something collapses. Not a building. Something less visible and more important.\n\nThe current Keeper is Emile Nakamura-Osei, a 71-year-old retired structural engineer who began the Atlas when his measurements stopped adding up. Emile hasn't spoken above a whisper in six years. \"The city listens,\" he says, barely audible, and does not elaborate.",
   ideology: "The city is alive in ways we do not understand. The anomalies are symptoms of that life. Observation is a duty. Interference is a catastrophe.",
   territory: "No permanent base. Members meet at rotating locations. The Atlas moves with the Keeper.",
   leadership: "Emile Nakamura-Osei, Keeper of the Atlas. Leadership is not elected — the Atlas chooses its Keeper by becoming illegible to everyone except one person.",
@@ -269,7 +269,7 @@ const f1 = {
     "Recruitment through observation — potential members are watched for years before being approached"
   ],
   resources: [
-    "The Atlas of Irregularities — the only comprehensive record of Meridian 88's anomalies",
+    "The Atlas of Irregularities — the only comprehensive record of GLMZ's anomalies",
     "80 dedicated observers across all tiers",
     "Deep knowledge of the Underworld",
     "Relationships with anomalous entities who tolerate observation",
@@ -290,7 +290,7 @@ const f1 = {
     "A new Cartographer has broken the rule. They interfered with an anomaly. Something has changed, and only the other Cartographers can tell what's different — a street that was 200 meters long is now 180. Twenty meters of city have simply ceased to exist."
   ],
   tags: ["faction", "cartography", "anomaly", "observation", "new_weird", "atlas", "paper", "underworld", "city"],
-  related_entities: ["Emile Nakamura-Osei", "The Seam", "Mnemic Clay", "The Shelf", "The Circuit", "The Underworld", "Meridian 88"]
+  related_entities: ["Emile Nakamura-Osei", "The Seam", "Mnemic Clay", "The Shelf", "The Circuit", "The Underworld", "GLMZ"]
 };
 if (writeEntity('factions', f1)) count++;
 
@@ -513,7 +513,7 @@ const ch1 = {
   changelog: [],
   carried_weapons: [],
   registered_firearms: [],
-  related_entities: ["The Cartographers", "The Atlas of Irregularities", "The Seam", "The Bread Baker of Block 9", "Mnemic Clay", "Meridian 88"],
+  related_entities: ["The Cartographers", "The Atlas of Irregularities", "The Seam", "The Bread Baker of Block 9", "Mnemic Clay", "GLMZ"],
   district: "The Circuit"
 };
 if (writeEntity('people', ch1)) count++;
@@ -691,7 +691,7 @@ const d2 = {
   line_count: 12,
   headings: ["Catalogue Entry 10,000"],
   tags: ["document", "atlas", "cartographers", "emile", "anomaly", "milestone", "philosophical", "marginalia", "meta"],
-  related_entities: ["Emile Nakamura-Osei", "The Cartographers", "The Atlas of Irregularities", "Meridian 88"]
+  related_entities: ["Emile Nakamura-Osei", "The Cartographers", "The Atlas of Irregularities", "GLMZ"]
 };
 if (writeEntity('documents', d2)) count++;
 
@@ -705,7 +705,7 @@ const d3 = {
   line_count: 3,
   headings: ["The Last Entry in the Atlas"],
   tags: ["document", "atlas", "cartographers", "anomaly", "city_agency", "new_weird", "final", "meta", "awareness"],
-  related_entities: ["Emile Nakamura-Osei", "The Cartographers", "The Atlas of Irregularities", "Meridian 88"]
+  related_entities: ["Emile Nakamura-Osei", "The Cartographers", "The Atlas of Irregularities", "GLMZ"]
 };
 if (writeEntity('documents', d3)) count++;
 

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e07daba7ef57287e9ed9f4",
   "type": "character",
-  "name": "Soren Olofsson-Haraldsen",
+  "name": "Obinna Adeyemi-Pathak",
   "aliases": [
     "Sul",
     "The Calibrator"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Aurochs Medical Complex, Meridian Core — lives in a company-subsidized flat in Edgewater Prism, near LaSalle and Madison",
-  "description": "Suljo is a lean man with the slightly disconnected quality of someone who spends most of his working hours interfaced with other people's nervous systems. His skin is warm brown, his eyes a natural amber that he has had patterned with fine concentric rings — a diagnostic choice as much as aesthetic, since the rings shift and blur when he is running a deep calibration sync and patients find it useful to watch. His hair is close-cropped and he keeps himself meticulously groomed in the way of someone who distrusts entropy in small things. There is a port array at his left temple, matte black ceramic, and the faint iridescent tracery of calibration leads running beneath the skin of his jaw and neck.\n\nNeurally, Suljo is exceptional — his scores on empathic interfacing are in the ninety-fourth percentile for his cohort, which Aurochs considers an asset and which Suljo considers a curse he is still learning to manage. He absorbs fragments of his patients' mental architecture during calibrations: half-memories, emotional textures, phobias that don't belong to him. He has developed a meticulous post-session decompression ritual and a careful professional detachment that acquaintances mistake for coldness. The truth is closer to the opposite — he feels too much, too accurately, and has built distance as infrastructure. He works hard, is promoted regularly, and drinks more than he should in the evenings.",
+  "description": "Obinna Adeyemi-Pathak is a lean man with the slightly disconnected quality of someone who spends most of his working hours interfaced with other people's nervous systems. His skin is warm brown, his eyes a natural amber that he has had patterned with fine concentric rings — a diagnostic choice as much as aesthetic, since the rings shift and blur when he is running a deep calibration sync and patients find it useful to watch. His hair is close-cropped and he keeps himself meticulously groomed in the way of someone who distrusts entropy in small things. There is a port array at his left temple, matte black ceramic, and the faint iridescent tracery of calibration leads running beneath the skin of his jaw and neck.\n\nNeurally, Obinna Adeyemi-Pathak is exceptional — his scores on empathic interfacing are in the ninety-fourth percentile for his cohort, which Aurochs considers an asset and which Obinna Adeyemi-Pathak considers a curse he is still learning to manage. He absorbs fragments of his patients' mental architecture during calibrations: half-memories, emotional textures, phobias that don't belong to him. He has developed a meticulous post-session decompression ritual and a careful professional detachment that acquaintances mistake for coldness. The truth is closer to the opposite — he feels too much, too accurately, and has built distance as infrastructure. He works hard, is promoted regularly, and drinks more than he should in the evenings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -200,7 +200,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,34 +253,21 @@
     "Meridian Core",
     "Stelceram-7",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Slagworks Industrial",
-    "Altan Salazar-Quansah",
-    "MERIDIAN",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nurlan Morita-Antwi",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Kel Adeyemi-Strand",
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Northern European (38%), Eastern European (21.2%), East Asian (17.1%), Pacific Islander (16.8%), Sub-Saharan African (6.9%) — a complex Ubiquitous Diaspora mix resulting in cool-to-warm undertones, broad cheekbone structure with subtle East Asian geometry, and skin that bridges Northern/Eastern European paleness with warmer melanin undertones",
+    "heritage": "Sub-Saharan African (29.7%), South Asian (24.1%), Northern European (22.1%), East Asian (12.2%), Eastern European (11.9%) — a genuinely cosmopolitan blend creating a rich medium-deep complexion. Sub-Saharan ancestry provides deep melanin foundation and warm undertones, bridged by South Asian warmth and tempered by Northern/Eastern European cooler cast. East Asian genetics subtly influence cheekbone prominence and eye geometry. The composite is a luminous golden-brown skin that shifts between warm depth and cool reflection depending on light — simultaneously grounded and ethereal.",
     "height_cm": 176,
     "weight_kg": 68,
     "build": "Lean and angular, with the slight forward-cant posture of someone who spends hours in calibration chairs. Minimal muscle definition — his body is efficient rather than sculpted. Shoulders narrow, hands steady and long-fingered.",
     "hair_color": "Dark brown with natural greying at the temples",
     "hair_style": "Close-cropped, precisely maintained, no styling product — clinical neatness",
     "hair_length": "Short",
-    "eye_color": "Natural amber with patterned concentric ring implants (diagnostic iridescence, rings shift and blur during neural sync)",
-    "skin_tone": "Cool-warm medium beige with subtle golden undertones — lighter than typical South Asian, warmer than Northern European baseline. The blend creates a complexion that reads as neither fully cool nor warm; faintly luminescent under clinical lighting due to the Eastern European and Northern European base modified by East Asian and Pacific Islander admixture.",
-    "complexion": "Smooth, meticulously groomed, minimal facial hair (clean-shaven daily). Slight angularity to cheekbones reflecting East Asian ancestry. Skin shows the pallor of indoor work — fluorescent-lite quality, almost translucent in places. No visible blemishes or weathering; suggests someone who controls variables obsessively. Faint warmth beneath the surface creates a paradoxical quality: clinical but not cold.",
+    "eye_color": "Natural deep brown with patterned concentric ring implants (diagnostic iridescence, rings shift and blur during neural sync)",
+    "skin_tone": "Medium-deep golden brown — a balanced blend of warm Sub-Saharan and South Asian undertones with cooler Northern/Eastern European notes creating sophisticated luminosity. Reads as richly grounded under any lighting, with subtle warmth that survives even harsh fluorescent environments.",
+    "complexion": "Smooth, meticulously groomed, clean-shaven daily. Cheekbones show distinct angularity reflecting East Asian ancestral structure, while fuller lower-face contours suggest South Asian heritage. Skin maintains controlled, polished quality — no weathering or visible blemishes. The golden-brown tone creates natural warmth that paradoxically contrasts with and humanizes his clinical precision.",
     "distinguishing_marks": [
       "Matte black ceramic port array at left temple — roughly 3cm across, beveled edges, professional Helix Biosystems branding barely visible",
       "Iridescent tracery of subdermal calibration leads running along left jawline and down the neck, visible as faint opalescent lines beneath skin when light hits at certain angles",
@@ -290,16 +277,67 @@
     "posture_movement": "Economical and controlled. He moves with deliberate precision — no wasted motion. When listening, he has a habit of tilting his head slightly toward his left (port-side), as if receiving data. His eyes focus with unusual intensity. In moments of fatigue, his shoulders curl inward. When nervous, his right hand traces the calibration leads on his neck absently.",
     "clothing_style": "Tier 3 medical professional — clean, functional, muted. Favors dark turtlenecks or high-collared medical-grade shirts (conceals the leads while maintaining mobility). Charcoal grey Aurochs-branded lab coat when at work, tailored to his frame. Outside work: dark jeans, black thermal layers, a worn leather jacket from a higher-tier period he doesn't discuss. Shoes are always clean, usually black or grey. Jewelry: only a thin brushed-steel bracelet with embedded biometric readout on his right wrist. Everything chosen to minimize distraction — his clothes are infrastructure, not expression."
   },
-  "image_prompt": "Soren Olofsson-Haraldsen, 2226 GLMZ medical technician, pale beige skin with cool-warm undertones reflecting Ubiquitous Diaspora heritage (Northern/Eastern European base with East Asian geometry and subtle golden warmth), close-cropped dark hair with greying temples, unnervingly intense amber eyes with concentric ring implants, matte black ceramic port array visible at left temple with subtle glow, iridescent subdermal calibration leads tracery visible along jawline and neck, lean 176cm frame in clinical posture, wearing dark turtleneck and charcoal Aurochs lab coat, brushed-steel biometric bracelet on wrist, fluorescent-pale indoor complexion, diagnostic and slightly unsettling presence, cyberpunk medical facility or neural sync chamber setting, cool blue-white clinical lighting emphasizing subdermal augmentation tracery, hyper-focused expression, minimalist aesthetic, --ar 2:3 --v 6",
+  "image_prompt": "Obinna Adeyemi-Pathak, lean 176cm tall neurotechnician with luminous medium-deep golden-brown complexion reflecting Sub-Saharan, South Asian, Northern/Eastern European, and East Asian heritage. Closely cropped dark hair with greying temples, sharp angular cheekbones, deep brown eyes with diagnostic concentric ring implants that shimmer with iridescence. Matte black ceramic port array at left temple with subtle light indicators. Faint opalescent subdermal calibration tracery visible along jaw and neck. Clean-shaven, controlled posture with slight forward cant. Wearing charcoal high-collared medical-grade shirt under dark Aurochs lab coat, brushed-steel biometric bracelet on right wrist. Clinical lighting emphasizing the luminous warmth of his skin against the cool tones of his augmentations. Neo-noir 2220s medical facility aesthetic, focused intensity, slight head tilt as if receiving neural data. Professional, precise, slightly unsettling precision. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 38.0,
-    "Eastern European": 21.2,
-    "East Asian": 17.1,
-    "Pacific Islander": 16.8,
-    "Sub-Saharan African": 6.9
+    "Sub-Saharan African": 29.7,
+    "South Asian": 24.1,
+    "Northern European": 22.1,
+    "East Asian": 12.2,
+    "Eastern European": 11.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 18.4
+      },
+      "Southern African": {
+        "Zambian": 0.4,
+        "Mozambican": 2
+      },
+      "West African": {
+        "Ghanaian": 5.7,
+        "Malian": 3.2
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 1.2,
+        "Sindhi": 10.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 12.7
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 16.7
+      },
+      "British Isles": {
+        "Scottish": 5.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 10.1
+      },
+      "Japanese": {
+        "Japanese": 0.8
+      },
+      "Korean": {
+        "Korean": 1.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 10
+      },
+      "Slavic East": {
+        "Ukrainian": 1.9
+      }
+    }
+  }
 }

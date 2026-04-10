@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c17b9592f34933b791bdd9",
   "type": "character",
-  "name": "Drift Wickramasinghe",
+  "name": "Drift Ingebrigtsen",
   "aliases": [
     "Zinc",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
-  "description": "Sagyn Brandt-Ouedraogo is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a face out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSagyn Brandt-Ouedraogo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Drift Ingebrigtsen is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a face out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDrift Ingebrigtsen operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.94,
@@ -256,7 +256,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -270,47 +270,18 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Shelf",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
+    "Drift",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Pneumatic Gauntlet PG-1 'Pile Driver'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Brewer's Spine",
-    "Constance",
-    "Crucible Industries CT-X 'Gauntlet'",
-    "Crucible Industries Kinetic Knuckles KK-3 'Jackhammer'",
-    "Crucible LL-4 'Peacekeeper'",
-    "Ezio Kaboré-Malhotra",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Pikasso Wemba-Þórðarson",
-    "Stainless Steel",
-    "Street Custom 'Cigarette' Pen Gun",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TERMINUS",
-    "The Fathom Line",
-    "The Heidelberg Scar",
-    "Tshiamo Vukić-Arellano",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Latin American-South Asian-African diaspora mix with Southeast Asian and Northern European admixture. The result is a striking phenotype: warm golden-brown skin with subtle red undertones from the Latin American and South Asian ancestry, deepened by Sub-Saharan African heritage. High, prominent cheekbones suggest South Asian ancestry; the sharp jawline and lean facial structure reflect the Southeast Asian component. Eye shape and brow structure show blended traits across all five ancestry groups.",
+    "heritage": "Middle Eastern-East Asian-Southeast Asian diaspora blend. The result is a striking phenotype: warm bronze-gold skin with subtle golden undertones from the dominant East Asian and Southeast Asian ancestry (56.5% combined), enriched and deepened by the substantial Middle Eastern component (43.5%). High, prominent cheekbones and sharp jawline reflect the combined East Asian and Middle Eastern bone structure. Eye shape shows blended traits across all three ancestry groups, with the characteristic depth and dark intensity of Middle Eastern heritage combined with the East Asian eye geometry and Southeast Asian warmth. The overall effect is an angular, high-definition face with warm, sun-responsive skin that reads as distinctly pan-Asian with Mediterranean depth.",
     "height_cm": 178,
     "weight_kg": 76,
     "build": "Athletic and lean — muscular without bulk, the functional frame of someone who trains for speed and endurance rather than mass. Defined shoulders and forearms suggest years of precision work; core is visibly tight.",
@@ -318,8 +289,8 @@
     "hair_style": "Kept short and practical, swept back from the face with minimal product — a style that doesn't require maintenance mid-job",
     "hair_length": "Short",
     "eye_color": "Dark brown with amber flecks; alert, constantly reading micro-expressions",
-    "skin_tone": "Warm golden-brown complexion with subtle red undertones — the result of blended Latin American, South Asian, and Sub-Saharan African ancestry. Deepens noticeably with sun exposure.",
-    "complexion": "Lean facial structure with high, prominent cheekbones and sharp jawline. Skin is scarred but not deeply — the kind of minor damage that comes from close-quarters work. Light stubble usually present; grooming is functional, not aesthetic. Crow's feet around the eyes from squinting and stress.",
+    "skin_tone": "Warm bronze-gold complexion — the result of blended East Asian, Southeast Asian, and Middle Eastern ancestry. The East Asian and Southeast Asian components (56.5% combined) provide the warm golden base, while the Middle Eastern ancestry (43.5%) deepens the tone to bronze. Deepens noticeably with sun exposure.",
+    "complexion": "Angular facial structure with high, prominent cheekbones and sharp jawline characteristic of East Asian and Middle Eastern heritage, softened by Southeast Asian warmth. Skin is scarred but not deeply — the kind of minor damage that comes from close-quarters work. Light stubble usually present; grooming is functional, not aesthetic. Crow's feet around the eyes from squinting and stress.",
     "distinguishing_marks": [
       "Circular scar tissue pattern on the right temple and extending behind the ear — site of cortical bomb removal, approximately 4cm diameter, pale and matte against surrounding skin",
       "Thin white scar across the left knuckle ridge, old and faded",
@@ -329,16 +300,48 @@
     "posture_movement": "Moves with economical grace — no wasted motion, every gesture calibrated. Stands with weight distributed for rapid directional change. Eyes track exits and sight lines automatically. When sitting, shoulders remain loose but alert; when speaking to targets, he leans in slightly, voice controlled and measured. Right hand moves slightly slower than left (old injury accommodation). Breathes from the diaphragm — boxer's breathing, controlled and deep.",
     "clothing_style": "Tier 3-4 streetwear with corporate-adjacent polish. Favors fitted charcoal or dark gray tactical jackets with subtle armor weave — visible stitching patterns indicate high-end fabrication. Underneath: clean, well-fitted shirts in neutral colors, often with subtle data-port access panels at the wrists. Dark fitted trousers with reinforced seams and concealed pockets. Chrome or matte black boots, expensive but worn in. Accessories minimal: worn leather cuff on left wrist (covers augmentation port), stainless steel watch with analog face (no wireless vulnerability), encrypted data chip on a thin chain under his shirt. No jewelry. The overall effect is 'expensive enough to be credible, unremarkable enough to move through Tier 3-4 spaces unnoticed.'"
   },
-  "image_prompt": "Drift Wickramasinghe, 178cm tall lean athletic runner, warm golden-brown skin with subtle red undertones, high prominent cheekbones and sharp jawline, dark brown eyes with amber flecks, short dark hair with silver at temples, pale circular cortical bomb scar visible on right temple behind ear. Wearing fitted charcoal tactical jacket with armor weave stitching, neutral gray shirt, dark reinforced trousers, matte black boots. Stainless steel watch, worn leather cuff on left wrist. Stands in economical ready posture, alert with eyes tracking sight lines. Cyberpunk 2226, Great Lakes Metropolitan Zone, Tier 3-4 urban setting, neon-lit night environment, cool blue and amber lighting, rain-slicked concrete behind, neutral expression, disciplined presence. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Drift Ingebrigtsen, 178cm lean athletic runner, warm bronze-gold skin with golden undertones from East Asian Southeast Asian Middle Eastern diaspora blend, high sharp cheekbones, sharp jawline, dark brown hair with silver at temples swept back, dark brown eyes with amber flecks alert and intense, light stubble, crow's feet from stress, pale circular scar tissue on right temple from cortical bomb removal 4cm diameter, thin white scar on left knuckles, burn mark on inner right wrist. Wearing charcoal tactical jacket with armor weave, neutral fitted shirt with data-port panels, dark fitted reinforced trousers, chrome boots, worn leather cuff on left wrist, stainless steel analog watch, encrypted data chip on thin chain under shirt. Posture economical and alert, weight distributed for rapid movement, shoulders loose but ready, eyes tracking exits. Neon-lit Great Lakes Metropolitan Zone night setting, Tier 3-4 corporate-adjacent streetwear aesthetic, professional fixer vibe, moody cinematic lighting, high contrast shadows, gritty urban neo-noir atmosphere, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 32.1,
-    "South Asian": 24.3,
-    "Sub-Saharan African": 17.7,
-    "Southeast Asian": 15.0,
-    "Northern European": 10.9
+    "Middle Eastern": 43.5,
+    "East Asian": 41.3,
+    "Southeast Asian": 15.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 12.3,
+        "Iranian": 4.8
+      },
+      "Arab Levantine": {
+        "Jordanian": 7,
+        "Syrian": 8.8
+      },
+      "Kurdish": {
+        "Kurdish": 10.6
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 15.1,
+        "Mandarin Northern": 26.2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 3.8,
+        "Bicolano": 0.6
+      },
+      "Thai": {
+        "Thai": 5.7
+      },
+      "Indonesian": {
+        "Sundanese": 3.7,
+        "Javanese": 1.4
+      }
+    }
+  }
 }

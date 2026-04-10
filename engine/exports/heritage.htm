@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genetic Ancestry Heatmap</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="export.css">
+</head>
+<body id="top">
+<button class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
+<nav class="sidebar" id="sidebar">
+<div class="sidebar-header"><a href="index.htm" class="sidebar-brand">Street Samurai</a></div>
+<input type="text" class="sidebar-search" id="globalSearch" placeholder="Search all..." onkeydown="if(event.key==='Enter')globalSearchGo()" />
+<ul class="sidebar-nav">
+<li class="nav-group-header">Characters</li>
+<li><a href="people.htm"><i class="bi bi-people" style="margin-right:6px;"></i><span>People</span><span class="nav-count">1187</span></a></li>
+<li><a href="synthetics.htm"><i class="bi bi-cpu" style="margin-right:6px;"></i><span>Synthetics</span><span class="nav-count">321</span></a></li>
+<li><a href="archetypes.htm"><i class="bi bi-person-bounding-box" style="margin-right:6px;"></i><span>Archetypes</span><span class="nav-count">550</span></a></li>
+<li class="nav-group-header">Organizations</li>
+<li><a href="corponations.htm"><i class="bi bi-building" style="margin-right:6px;"></i><span>Corponations</span><span class="nav-count">66</span></a></li>
+<li><a href="subsidiaries.htm"><i class="bi bi-diagram-3" style="margin-right:6px;"></i><span>Subsidiaries</span><span class="nav-count">350</span></a></li>
+<li><a href="factions.htm"><i class="bi bi-shield-exclamation" style="margin-right:6px;"></i><span>Factions</span><span class="nav-count">154</span></a></li>
+<li><a href="contracts.htm"><i class="bi bi-clipboard-check" style="margin-right:6px;"></i><span>Contracts</span><span class="nav-count">10</span></a></li>
+<li class="nav-group-header">Gear</li>
+<li><a href="weaponry.htm"><i class="bi bi-crosshair" style="margin-right:6px;"></i><span>Weaponry</span><span class="nav-count">670</span></a></li>
+<li><a href="ammunition.htm"><i class="bi bi-bullseye" style="margin-right:6px;"></i><span>Ammunition</span><span class="nav-count">31</span></a></li>
+<li><a href="cyberware.htm"><i class="bi bi-motherboard" style="margin-right:6px;"></i><span>Cyberware</span><span class="nav-count">327</span></a></li>
+<li><a href="equipment.htm"><i class="bi bi-shield-shaded" style="margin-right:6px;"></i><span>Equipment</span><span class="nav-count">201</span></a></li>
+<li><a href="apparel.htm"><i class="bi bi-handbag" style="margin-right:6px;"></i><span>Apparel</span><span class="nav-count">1000</span></a></li>
+<li><a href="genemods.htm"><i class="bi bi-virus" style="margin-right:6px;"></i><span>Genemods</span><span class="nav-count">105</span></a></li>
+<li><a href="pharmaceuticals.htm"><i class="bi bi-capsule" style="margin-right:6px;"></i><span>Pharmaceuticals</span><span class="nav-count">40</span></a></li>
+<li class="nav-group-header">World</li>
+<li><a href="places.htm"><i class="bi bi-geo-alt" style="margin-right:6px;"></i><span>Places</span><span class="nav-count">583</span></a></li>
+<li><a href="transportation.htm"><i class="bi bi-truck" style="margin-right:6px;"></i><span>Transportation</span><span class="nav-count">100</span></a></li>
+<li><a href="materials.htm"><i class="bi bi-gem" style="margin-right:6px;"></i><span>Materials</span><span class="nav-count">277</span></a></li>
+<li><a href="technology.htm"><i class="bi bi-cpu" style="margin-right:6px;"></i><span>Technology</span><span class="nav-count">218</span></a></li>
+<li><a href="automata.htm"><i class="bi bi-robot" style="margin-right:6px;"></i><span>Automata</span><span class="nav-count">148</span></a></li>
+<li class="nav-group-header">Culture</li>
+<li><a href="documents.htm"><i class="bi bi-file-earmark-text" style="margin-right:6px;"></i><span>Documents</span><span class="nav-count">1017</span></a></li>
+<li><a href="quotes.htm"><i class="bi bi-quote" style="margin-right:6px;"></i><span>Quotes</span><span class="nav-count">574</span></a></li>
+<li><a href="vocabulary.htm"><i class="bi bi-chat-quote" style="margin-right:6px;"></i><span>Vocabulary</span><span class="nav-count">664</span></a></li>
+<li><a href="news.htm"><i class="bi bi-newspaper" style="margin-right:6px;"></i><span>News</span><span class="nav-count">100</span></a></li>
+<li><a href="entertainment.htm"><i class="bi bi-film" style="margin-right:6px;"></i><span>Entertainment</span><span class="nav-count">996</span></a></li>
+<li><a href="consumer_goods.htm"><i class="bi bi-basket" style="margin-right:6px;"></i><span>Consumer Goods</span><span class="nav-count">389</span></a></li>
+<li><a href="map.htm"><i class="bi bi-folder" style="margin-right:6px;"></i><span>Map</span><span class="nav-count">0</span></a></li>
+</ul>
+</nav>
+
+<main class="content" id="mainContent">
+<div class="page-header">
+<h1>Genetic Ancestry Heatmap</h1>
+</div>
+
+
+<p class="text-muted" style="color:#8b949e;margin-bottom:16px;">23andMe-style genetic ancestry across 1,187 people in the GLMZ. Click a region to drill down into sub-groups.</p>
+<div class="badge-row" style="margin-bottom:12px;">
+    <span style="background:#30363d;color:#e6edf3;padding:3px 10px;border-radius:12px;font-size:12px;">1,187 people</span>
+    <span style="background:#30363d;color:#e6edf3;padding:3px 10px;border-radius:12px;font-size:12px;">12 ancestry groups</span>
+</div>
+<div id="heritage-treemap" style="width:100%;min-height:500px;background:#161b22;border-radius:8px;border:1px solid #30363d;"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+var heritageData = [
+{"name":"Sub-Saharan African","value":19770,"pct":"16.7","subGroups":[{"name":"East African","value":5049,"pct":"4.3","subGroups":[{"name":"Somali","value":1184,"pct":"1.0"},{"name":"Ethiopian","value":1173,"pct":"1.0"},{"name":"Kenyan","value":1016,"pct":"0.9"},{"name":"Tanzanian","value":790,"pct":"0.7"},{"name":"Rwandan","value":459,"pct":"0.4"},{"name":"Ugandan","value":426,"pct":"0.4"}]},{"name":"Central African","value":4998,"pct":"4.2","subGroups":[{"name":"Congolese","value":1804,"pct":"1.5"},{"name":"Cameroonian","value":1256,"pct":"1.1"},{"name":"Angolan","value":973,"pct":"0.8"},{"name":"Gabonese","value":964,"pct":"0.8"}]},{"name":"West African","value":4922,"pct":"4.1","subGroups":[{"name":"Nigerian","value":1391,"pct":"1.2"},{"name":"Ghanaian","value":1005,"pct":"0.8"},{"name":"Senegalese","value":790,"pct":"0.7"},{"name":"Guinean","value":446,"pct":"0.4"},{"name":"Malian","value":422,"pct":"0.4"},{"name":"Ivorian","value":398,"pct":"0.3"},{"name":"Sierra Leonean","value":247,"pct":"0.2"},{"name":"Liberian","value":223,"pct":"0.2"}]},{"name":"Southern African","value":4800,"pct":"4.0","subGroups":[{"name":"South African","value":1644,"pct":"1.4"},{"name":"Zimbabwean","value":1255,"pct":"1.1"},{"name":"Botswanan","value":669,"pct":"0.6"},{"name":"Zambian","value":660,"pct":"0.6"},{"name":"Mozambican","value":573,"pct":"0.5"}]}]},
+{"name":"Hispanic/Latin American","value":18135,"pct":"15.3","subGroups":[{"name":"Mexican","value":4737,"pct":"4.0","subGroups":[]},{"name":"Caribbean","value":4604,"pct":"3.9","subGroups":[{"name":"Puerto Rican","value":1499,"pct":"1.3"},{"name":"Cuban","value":1252,"pct":"1.1"},{"name":"Dominican","value":1116,"pct":"0.9"},{"name":"Haitian","value":737,"pct":"0.6"}]},{"name":"Central American","value":4502,"pct":"3.8","subGroups":[{"name":"Guatemalan","value":1214,"pct":"1.0"},{"name":"Salvadoran","value":1144,"pct":"1.0"},{"name":"Honduran","value":1038,"pct":"0.9"},{"name":"Nicaraguan","value":757,"pct":"0.6"},{"name":"Costa Rican","value":349,"pct":"0.3"}]},{"name":"South American","value":4292,"pct":"3.6","subGroups":[{"name":"Colombian","value":1172,"pct":"1.0"},{"name":"Brazilian","value":789,"pct":"0.7"},{"name":"Peruvian","value":732,"pct":"0.6"},{"name":"Venezuelan","value":725,"pct":"0.6"},{"name":"Ecuadorian","value":439,"pct":"0.4"},{"name":"Argentine","value":224,"pct":"0.2"},{"name":"Chilean","value":210,"pct":"0.2"}]}]},
+{"name":"South Asian","value":15701,"pct":"13.2","subGroups":[{"name":"Nepali","value":3533,"pct":"3.0","subGroups":[]},{"name":"Pakistani","value":3319,"pct":"2.8","subGroups":[{"name":"Punjabi Pakistani","value":1189,"pct":"1.0"},{"name":"Sindhi","value":996,"pct":"0.8"},{"name":"Pashtun","value":611,"pct":"0.5"},{"name":"Baloch","value":523,"pct":"0.4"}]},{"name":"Indian","value":3083,"pct":"2.6","subGroups":[{"name":"Punjabi","value":498,"pct":"0.4"},{"name":"Tamil","value":494,"pct":"0.4"},{"name":"Bengali","value":484,"pct":"0.4"},{"name":"Gujarati","value":459,"pct":"0.4"},{"name":"Malayali","value":455,"pct":"0.4"},{"name":"Telugu","value":283,"pct":"0.2"},{"name":"Marathi","value":213,"pct":"0.2"},{"name":"Kannada","value":198,"pct":"0.2"}]},{"name":"Sri Lankan","value":2944,"pct":"2.5","subGroups":[{"name":"Sinhalese","value":1677,"pct":"1.4"},{"name":"Tamil Sri Lankan","value":1267,"pct":"1.1"}]},{"name":"Bangladeshi","value":2822,"pct":"2.4","subGroups":[]}]},
+{"name":"East Asian","value":13553,"pct":"11.4","subGroups":[{"name":"Korean","value":4682,"pct":"3.9","subGroups":[]},{"name":"Chinese","value":4622,"pct":"3.9","subGroups":[{"name":"Cantonese","value":1137,"pct":"1.0"},{"name":"Mandarin Northern","value":885,"pct":"0.7"},{"name":"Shanghainese","value":839,"pct":"0.7"},{"name":"Fujianese","value":682,"pct":"0.6"},{"name":"Hakka","value":635,"pct":"0.5"},{"name":"Sichuanese","value":444,"pct":"0.4"}]},{"name":"Japanese","value":4249,"pct":"3.6","subGroups":[]}]},
+{"name":"Southeast Asian","value":12236,"pct":"10.3","subGroups":[{"name":"Indonesian","value":2476,"pct":"2.1","subGroups":[{"name":"Javanese","value":973,"pct":"0.8"},{"name":"Sumatran","value":621,"pct":"0.5"},{"name":"Sundanese","value":461,"pct":"0.4"},{"name":"Balinese","value":422,"pct":"0.4"}]},{"name":"Cambodian","value":2264,"pct":"1.9","subGroups":[]},{"name":"Vietnamese","value":2091,"pct":"1.8","subGroups":[]},{"name":"Filipino","value":1871,"pct":"1.6","subGroups":[{"name":"Tagalog","value":753,"pct":"0.6"},{"name":"Cebuano","value":468,"pct":"0.4"},{"name":"Waray","value":253,"pct":"0.2"},{"name":"Ilocano","value":199,"pct":"0.2"},{"name":"Bicolano","value":197,"pct":"0.2"}]},{"name":"Thai","value":1843,"pct":"1.6","subGroups":[]},{"name":"Laotian","value":1691,"pct":"1.4","subGroups":[]}]},
+{"name":"Northern European","value":10028,"pct":"8.4","subGroups":[{"name":"Germanic","value":3690,"pct":"3.1","subGroups":[{"name":"German","value":1811,"pct":"1.5"},{"name":"Austrian","value":765,"pct":"0.6"},{"name":"Swiss German","value":681,"pct":"0.6"},{"name":"Dutch","value":432,"pct":"0.4"}]},{"name":"British Isles","value":3194,"pct":"2.7","subGroups":[{"name":"English","value":1089,"pct":"0.9"},{"name":"Irish","value":881,"pct":"0.7"},{"name":"Welsh","value":673,"pct":"0.6"},{"name":"Scottish","value":552,"pct":"0.5"}]},{"name":"Scandinavian","value":3144,"pct":"2.6","subGroups":[{"name":"Norwegian","value":944,"pct":"0.8"},{"name":"Swedish","value":889,"pct":"0.7"},{"name":"Finnish","value":590,"pct":"0.5"},{"name":"Danish","value":535,"pct":"0.5"},{"name":"Icelandic","value":187,"pct":"0.2"}]}]},
+{"name":"Eastern European","value":9261,"pct":"7.8","subGroups":[{"name":"Slavic West","value":2339,"pct":"2.0","subGroups":[{"name":"Polish","value":942,"pct":"0.8"},{"name":"Czech","value":494,"pct":"0.4"},{"name":"Slovak","value":469,"pct":"0.4"},{"name":"Sorbian","value":435,"pct":"0.4"}]},{"name":"Slavic East","value":2337,"pct":"2.0","subGroups":[{"name":"Ukrainian","value":896,"pct":"0.8"},{"name":"Russian","value":740,"pct":"0.6"},{"name":"Belarusian","value":702,"pct":"0.6"}]},{"name":"Slavic South","value":2303,"pct":"1.9","subGroups":[{"name":"Croatian","value":566,"pct":"0.5"},{"name":"Bosnian","value":546,"pct":"0.5"},{"name":"Serbian","value":504,"pct":"0.4"},{"name":"Bulgarian","value":417,"pct":"0.4"},{"name":"Slovenian","value":269,"pct":"0.2"}]},{"name":"Magyar-Romanian","value":2283,"pct":"1.9","subGroups":[{"name":"Hungarian","value":1242,"pct":"1.0"},{"name":"Romanian","value":1040,"pct":"0.9"}]}]},
+{"name":"Middle Eastern","value":6907,"pct":"5.8","subGroups":[{"name":"Persian","value":1936,"pct":"1.6","subGroups":[{"name":"Iranian","value":1130,"pct":"1.0"},{"name":"Afghan Dari","value":465,"pct":"0.4"},{"name":"Tajik Persian","value":342,"pct":"0.3"}]},{"name":"Arab Gulf","value":1801,"pct":"1.5","subGroups":[{"name":"Iraqi","value":579,"pct":"0.5"},{"name":"Yemeni","value":518,"pct":"0.4"},{"name":"Emirati","value":406,"pct":"0.3"},{"name":"Kuwaiti","value":297,"pct":"0.3"}]},{"name":"Kurdish","value":1632,"pct":"1.4","subGroups":[]},{"name":"Arab Levantine","value":1538,"pct":"1.3","subGroups":[{"name":"Lebanese","value":489,"pct":"0.4"},{"name":"Palestinian","value":362,"pct":"0.3"},{"name":"Jordanian","value":350,"pct":"0.3"},{"name":"Syrian","value":336,"pct":"0.3"}]}]},
+{"name":"Indigenous American","value":5111,"pct":"4.3","subGroups":[{"name":"Mesoamerican","value":1429,"pct":"1.2","subGroups":[{"name":"Maya","value":537,"pct":"0.5"},{"name":"Nahua","value":495,"pct":"0.4"},{"name":"Zapotec","value":216,"pct":"0.2"},{"name":"Mixtec","value":181,"pct":"0.2"}]},{"name":"Plains Nations","value":1376,"pct":"1.2","subGroups":[{"name":"Lakota","value":384,"pct":"0.3"},{"name":"Cherokee","value":380,"pct":"0.3"},{"name":"Choctaw","value":320,"pct":"0.3"},{"name":"Muscogee","value":292,"pct":"0.2"}]},{"name":"Andean","value":1190,"pct":"1.0","subGroups":[{"name":"Quechua","value":665,"pct":"0.6"},{"name":"Aymara","value":333,"pct":"0.3"},{"name":"Mapuche","value":192,"pct":"0.2"}]},{"name":"Great Lakes Nations","value":1116,"pct":"0.9","subGroups":[{"name":"Ojibwe","value":461,"pct":"0.4"},{"name":"Menominee","value":266,"pct":"0.2"},{"name":"Potawatomi","value":251,"pct":"0.2"},{"name":"Ho-Chunk","value":138,"pct":"0.1"}]}]},
+{"name":"Central Asian","value":3057,"pct":"2.6","subGroups":[{"name":"Iranian Central","value":1034,"pct":"0.9","subGroups":[{"name":"Tajik","value":674,"pct":"0.6"},{"name":"Hazara","value":360,"pct":"0.3"}]},{"name":"Mongolic","value":1029,"pct":"0.9","subGroups":[{"name":"Mongolian","value":411,"pct":"0.3"},{"name":"Buryat","value":368,"pct":"0.3"},{"name":"Kalmyk","value":251,"pct":"0.2"}]},{"name":"Turkic","value":994,"pct":"0.8","subGroups":[{"name":"Kazakh","value":368,"pct":"0.3"},{"name":"Uzbek","value":254,"pct":"0.2"},{"name":"Turkmen","value":190,"pct":"0.2"},{"name":"Kyrgyz","value":124,"pct":"0.1"},{"name":"Uyghur","value":57,"pct":"0.0"}]}]},
+{"name":"Pacific Islander","value":2631,"pct":"2.2","subGroups":[{"name":"Polynesian","value":1009,"pct":"0.9","subGroups":[{"name":"Samoan","value":326,"pct":"0.3"},{"name":"Tongan","value":239,"pct":"0.2"},{"name":"Hawaiian","value":234,"pct":"0.2"},{"name":"Tokelauan","value":112,"pct":"0.1"},{"name":"Tuvaluan","value":98,"pct":"0.1"}]},{"name":"Melanesian","value":936,"pct":"0.8","subGroups":[{"name":"Fijian","value":533,"pct":"0.4"},{"name":"Papua New Guinean","value":255,"pct":"0.2"},{"name":"Ni-Vanuatu","value":148,"pct":"0.1"}]},{"name":"Micronesian","value":686,"pct":"0.6","subGroups":[{"name":"Marshallese","value":282,"pct":"0.2"},{"name":"Palauan","value":217,"pct":"0.2"},{"name":"Kiribati","value":188,"pct":"0.2"}]}]},
+{"name":"North African","value":2311,"pct":"1.9","subGroups":[{"name":"Nile Valley","value":862,"pct":"0.7","subGroups":[{"name":"Egyptian","value":460,"pct":"0.4"},{"name":"Sudanese","value":402,"pct":"0.3"}]},{"name":"Maghreb","value":769,"pct":"0.6","subGroups":[{"name":"Algerian","value":282,"pct":"0.2"},{"name":"Moroccan","value":212,"pct":"0.2"},{"name":"Tunisian","value":163,"pct":"0.1"},{"name":"Mauritanian","value":70,"pct":"0.1"},{"name":"Libyan","value":41,"pct":"0.0"}]},{"name":"Amazigh","value":680,"pct":"0.6","subGroups":[{"name":"Berber","value":392,"pct":"0.3"},{"name":"Tuareg","value":159,"pct":"0.1"},{"name":"Kabyle","value":129,"pct":"0.1"}]}]}]
+;
+
+window.heritageTreemap = {
+    render: function(elementId, data) {
+        var container = document.getElementById(elementId);
+        if (!container) return;
+        container.innerHTML = '';
+        var width = container.clientWidth || 900;
+        var height = Math.max(500, width * 0.6);
+        var colorScale = d3.scaleOrdinal().range([
+            '#dc3545','#e85d6c','#f0883e','#d2a8ff','#58a6ff','#3fb950','#7ee787','#f778ba',
+            '#79c0ff','#6e40c9','#ffc107','#e6edf3','#8b949e','#ff6b6b','#4ecdc4','#45b7d1',
+            '#f9ca24','#6c5ce7','#a29bfe','#fd79a8','#00cec9','#fdcb6e','#e17055','#74b9ff'
+        ]);
+        var tooltip = d3.select('body').selectAll('.heritage-tooltip').data([0]).join('div')
+            .attr('class','heritage-tooltip')
+            .style('display','none').style('position','absolute').style('background','#1c2128')
+            .style('border','1px solid #30363d').style('border-radius','6px').style('padding','8px 12px')
+            .style('font-size','12px').style('color','#e6edf3').style('pointer-events','none')
+            .style('z-index','10000').style('font-family','Outfit,sans-serif');
+
+        function renderLevel(items, breadcrumb) {
+            container.innerHTML = '';
+            if (breadcrumb) {
+                var bar = document.createElement('div');
+                bar.style.cssText = 'padding:8px 12px;background:#1c2128;border-bottom:1px solid #30363d;display:flex;align-items:center;gap:8px;cursor:pointer;';
+                bar.innerHTML = '<span style="color:#58a6ff;font-size:14px;">&#8592; Back</span><span style="color:#8b949e;"> | </span><span style="color:#e6edf3;font-weight:600;">' + breadcrumb + '</span>';
+                bar.onclick = function() { renderLevel(data, null); };
+                container.appendChild(bar);
+            }
+            var h = breadcrumb ? height - 40 : height;
+            var root = d3.hierarchy({name:'root',children:items}).sum(function(d){return d.value||0;}).sort(function(a,b){return b.value-a.value;});
+            d3.treemap().size([width,h]).padding(2).round(true)(root);
+            var svg = d3.select(container).append('svg').attr('width',width).attr('height',h).style('font-family','Outfit,sans-serif');
+            var leaf = svg.selectAll('g').data(root.leaves()).join('g').attr('transform',function(d){return 'translate('+d.x0+','+d.y0+')';});
+            leaf.append('rect').attr('width',function(d){return d.x1-d.x0;}).attr('height',function(d){return d.y1-d.y0;})
+                .attr('fill',function(d){return colorScale(d.data.name);}).attr('fill-opacity',0.85)
+                .attr('stroke','#0d1117').attr('rx',3).style('cursor','pointer')
+                .on('mouseover',function(event,d){
+                    d3.select(this).attr('fill-opacity',1).attr('stroke','#e6edf3').attr('stroke-width',2);
+                    var has=d.data.subGroups&&d.data.subGroups.length>0;
+                    var html='<strong>'+d.data.name+'</strong><br>'+d.data.value+' refs ('+d.data.pct+'%)';
+                    if(has)html+='<br><span style="color:#58a6ff;font-size:11px;">Click to drill down</span>';
+                    tooltip.style('display','block').html(html).style('left',(event.pageX+12)+'px').style('top',(event.pageY-28)+'px');
+                })
+                .on('mousemove',function(event){tooltip.style('left',(event.pageX+12)+'px').style('top',(event.pageY-28)+'px');})
+                .on('mouseout',function(){d3.select(this).attr('fill-opacity',0.85).attr('stroke','#0d1117').attr('stroke-width',1);tooltip.style('display','none');})
+                .on('click',function(event,d){
+                    tooltip.style('display','none');
+                    if(d.data.subGroups&&d.data.subGroups.length>0){
+                        var sub=d.data.subGroups.reduce(function(s,c){return s+c.value;},0);
+                        var cd=d.data.subGroups.map(function(c){return{name:c.name,value:c.value,pct:sub>0?(c.value*100/sub).toFixed(1):'0',subGroups:c.subGroups||[]};});
+                        renderLevel(cd,d.data.name+' ('+d.data.pct+'% of GLMZ)');
+                    }
+                });
+            leaf.append('text').attr('x',6).attr('y',16).attr('fill','#0d1117')
+                .attr('font-size',function(d){var w=d.x1-d.x0,h=d.y1-d.y0;if(w<60||h<20)return '0px';return w<100?'9px':'11px';})
+                .attr('font-weight',600).text(function(d){var w=d.x1-d.x0;if(w<60)return '';return w<100&&d.data.name.length>10?d.data.name.substring(0,8)+'..':d.data.name;});
+            leaf.append('text').attr('x',6).attr('y',30).attr('fill','#0d1117')
+                .attr('font-size',function(d){var w=d.x1-d.x0,h=d.y1-d.y0;return(w<60||h<35)?'0px':'9px';})
+                .attr('opacity',0.7).text(function(d){return(d.x1-d.x0)<60?'':d.data.value+' ('+d.data.pct+'%)';});
+            leaf.append('text').attr('x',6).attr('y',44).attr('fill','#58a6ff')
+                .attr('font-size',function(d){var w=d.x1-d.x0,h=d.y1-d.y0;return(w<80||h<50||!d.data.subGroups||!d.data.subGroups.length)?'0px':'9px';})
+                .text(function(d){return(!d.data.subGroups||!d.data.subGroups.length)?'':d.data.subGroups.length+' sub-groups \u25B6';});
+        }
+        renderLevel(data, null);
+    }
+};
+heritageTreemap.render('heritage-treemap', heritageData);
+</script>
+<footer class="export-footer">Exported from StreetSamurai Canon Engine — 2026-04-09 09:26:58PM</footer>
+</main>
+<button class="scroll-top" id="scrollTop" onclick="document.getElementById('mainContent').scrollTo({top:0,behavior:'smooth'})" title="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+<script src="export.js"></script>
+</body>
+</html>

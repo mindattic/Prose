@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65d794e8189977791ade32a",
   "type": "character",
-  "name": "Tumelo Mbekele-Halverson-Lahlou",
+  "name": "Tuva Bergqvist-Phommasack-Lahlou",
   "aliases": [
     "Mira",
     "The Widow"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "Meridian Core, near State and Madison",
-  "description": "Miroslava has spent thirty years inside corporate security and carries every one of them. She is silver-haired and sharp-boned, with the kind of angular face that photographs well and intimidates in person. Her skin is brown-olive, sun-dark from an outdoor assignment in her thirties that she doesn't discuss. Her only augmentation is an olfactory enhancement implant — a professional tool she had installed at fifty when she decided she was done letting people lie to her face without confirmation. She dresses in Axiom's internal affairs charcoal and moves through the company's glass corridors with a particular gravity, as if her mass has been increased by everything she knows.\n\nShe is not cruel. This surprises people. They expect internal affairs to be punitive and she is not — she is surgical. She distinguishes between malice and incompetence, between corruption and desperation, and she applies different responses accordingly. What she will not tolerate is the lie, and she is very good at finding it. She prays to no E.L.F. and observes no rituals — she regards them as a structural bias in investigative thinking, a way of surrendering agency to the unprovable. She is wrong about this, and somewhere in herself she suspects it, which is why she's so pointed about it. She has outlasted four Axiom Security Directors, and the current one is afraid of her, which she considers a reasonable and appropriate state of affairs.",
+  "description": "Tuva Bergqvist-Phommasack-Lahlou has spent thirty years inside corporate security and carries every one of them. She is silver-haired and sharp-boned, with the kind of angular face that photographs well and intimidates in person. Her skin is brown-olive, sun-dark from an outdoor assignment in her thirties that she doesn't discuss. Her only augmentation is an olfactory enhancement implant — a professional tool she had installed at fifty when she decided she was done letting people lie to her face without confirmation. She dresses in Axiom's internal affairs charcoal and moves through the company's glass corridors with a particular gravity, as if her mass has been increased by everything she knows.\n\nShe is not cruel. This surprises people. They expect internal affairs to be punitive and she is not — she is surgical. She distinguishes between malice and incompetence, between corruption and desperation, and she applies different responses accordingly. What she will not tolerate is the lie, and she is very good at finding it. She prays to no E.L.F. and observes no rituals — she regards them as a structural bias in investigative thinking, a way of surrendering agency to the unprovable. She is wrong about this, and somewhere in herself she suspects it, which is why she's so pointed about it. She has outlasted four Axiom Security Directors, and the current one is afraid of her, which she considers a reasonable and appropriate state of affairs.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -173,7 +173,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,37 +243,15 @@
     "The Undertow",
     "Copperhead",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Charcoal",
     "Irontide Tidal Energy",
     "Witness",
     "Silver",
-    "Glass",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Breck Tannen",
-    "Brewer's Spine",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Green Bay Community Table",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Liora Mori-Sefa",
-    "MERIDIAN",
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Sterling Voss",
-    "Street Custom 'Cigarette' Pen Gun",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA TC-3 'Crucible'",
-    "The Nearfield",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Spire",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Glass"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Sub-Saharan African (44.9%), North African (27.0%), Northern European (15.0%), and Hispanic/Latin American (13.1%) — a complex, geographically dispersed ancestry that manifests as warm brown tones with Berber and Bantu features blended with subtle Northern European structure and Latin American warmth in her complexion",
+    "heritage": "Northern European (51.6%), Southeast Asian (25.8%), North African (16.3%), and Sub-Saharan African (6.3%) — a striking blend that manifests as warm medium-tan tones with Scandinavian bone structure refined by Southeast Asian cheekbone prominence and North African facial geometry, with Sub-Saharan African warmth deepening her skin undertones. The combination creates sharp, angular geometry softened by golden-warm undertones that shift with light.",
     "height_cm": 174,
     "weight_kg": 68,
     "build": "Lean and angular, with the controlled posture of someone who has spent three decades in offices and interrogation rooms. No softness; muscle definition visible in forearms and neck. Carries herself as if her skeleton is the most honest thing about her.",
@@ -281,8 +259,8 @@
     "hair_style": "Pulled back in a tight, practical bun at the nape of her neck. No loose strands. Never loose strands.",
     "hair_length": "Long",
     "eye_color": "Dark brown, clear and direct",
-    "skin_tone": "Warm medium brown with golden-honey undertones, deeper at the shoulders and upper chest from sun exposure during field years. The pigmentation shows the natural variation of Sub-Saharan and North African genetics — richer in some areas, with a subtle warmth that catches light differently depending on angle.",
-    "complexion": "Angular face with sharp, high cheekbones characteristic of North African and Bantu heritage. Jaw defined and squared. Nose with subtle width at the bridge, shaped by her diverse ancestry. Minimal makeup — a matte lipstick in neutral brown, nothing else. Fine lines around her eyes and mouth that deepen when she listens. Her skin shows the texture of someone who has not prioritized cosmetic treatments; small surgical scars are faintly visible at her temples (implant access ports, old and well-healed).",
+    "skin_tone": "Warm medium tan with golden undertones and subtle deeper saturation from Sub-Saharan and North African heritage, darker at the shoulders and upper chest from sun exposure during field years. The pigmentation shows the blended genetics with luminous quality in certain light, with subtle variation in depth that catches differently depending on angle—golden-warm rather than cool.",
+    "complexion": "Angular face with high, prominent cheekbones characteristic of Northern European and Southeast Asian heritage, softened by warmer pigmentation from North African and Sub-Saharan ancestry. Jaw defined and squared. Nose straight with subtle bridge width, shaped by her mixed ancestry. Minimal makeup — a matte lipstick in warm neutral brown, nothing else. Fine lines around her eyes and mouth that deepen when she listens. Her skin shows the texture of someone who has not prioritized cosmetic treatments; small surgical scars are faintly visible at her temples (implant access ports, old and well-healed).",
     "distinguishing_marks": [
       "Thin horizontal scar across the base of her left wrist, approximately 4cm long, white and old — a knife wound from a field assignment in her thirties that she never discusses.",
       "Faint grid-pattern scarring at her right temple, where the olfactory enhancement implant was installed fourteen years ago; the scarring is thin and pale, professionally done.",
@@ -292,15 +270,51 @@
     "posture_movement": "She moves with deliberate, economical grace. Her weight shifts before she steps. She sits very still, feet flat on the floor or crossed at the ankle — never slouched. When she listens, her entire body becomes still, as if she is using all available sensory input. Her hands rest on the table or in her lap, never fidgeting. She does not smile easily, but when she does, the entire structure of her face changes; the sharpness softens into something almost gentle. She has learned to use this.",
     "clothing_style": "Axiom Internal Affairs standard: tailored charcoal blazer (always brushed and pressed), white or pale gray under-shirt with no visible corporate branding, dark trousers with a crisp crease, flat black leather shoes (practical, not fashionable, but expensive in their austerity). A thin silver watch on her left wrist — no smart functions, analog only. A small silver pendant on a thin chain, visible only sometimes: a small religious icon she does not discuss. A leather document folder she carries everywhere, worn and well-used. Tier 2 quality throughout — not ostentatious, but the kind of clothing that signals 'I have authority and comfort in this building.'"
   },
-  "image_prompt": "Tumelo Mbekele-Halverson-Lahlou, 174cm tall woman, warm medium brown skin with golden undertones, sharp high cheekbones of North African and Bantu heritage, dark brown penetrating eyes, silver-white hair pulled back in severe bun, angular face with deep-set lines around eyes from three decades of interrogation rooms. Wearing tailored charcoal blazer, white under-shirt, dark trousers, flat black leather shoes. Thin silver analog watch on left wrist, small religious pendant barely visible at neckline. Faint temple scarring visible from olfactory implant. Sitting with perfect posture, feet flat, hands still in lap, body radiating controlled intensity. Lean muscular build, no softness. Formal Axiom Internal Affairs office setting, cool overhead lighting casting sharp shadows on her face, emphasizing the architectural quality of her features. Worn leather document folder on desk beside her. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, bureaucratic authority, silent intensity. --ar 2:3 --v 6",
+  "image_prompt": "Tuva Bergqvist-Phommasack-Lahlou, 174cm tall woman with lean angular build, silver-white hair in tight bun, warm medium-tan skin with golden undertones reflecting North African and Southeast Asian heritage, sharp Scandinavian cheekbones, dark brown penetrating eyes, fine lines around eyes and mouth. Faint grid-pattern scar at right temple from implant. Wearing tailored charcoal blazer, white undershirt, dark trousers, flat black leather shoes, thin analog silver watch, worn leather document folder. Standing in sterile corporate interrogation room or Axiom Internal Affairs office with cool fluorescent lighting, posture rigid and controlled, hands at rest, expression stern and direct. GLMZ, dystopian corporate aesthetic, Tier 2 professional authority, no visible augmentations, scent of metal and recycled air, atmospheric depth with geometric shadows --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 44.9,
-    "North African": 27.0,
-    "Northern European": 15.0,
-    "Hispanic/Latin American": 13.1
+    "Northern European": 51.6,
+    "Southeast Asian": 25.8,
+    "North African": 16.3,
+    "Sub-Saharan African": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 3.6,
+        "Welsh": 12.2
+      },
+      "Germanic": {
+        "German": 7.4,
+        "Swiss German": 28.4
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 2.2,
+        "Javanese": 3.8
+      },
+      "Filipino": {
+        "Tagalog": 1.3,
+        "Bicolano": 7.5
+      },
+      "Laotian": {
+        "Laotian": 11
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Moroccan": 11.8,
+        "Tunisian": 4.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 6.3
+      }
+    }
+  }
 }

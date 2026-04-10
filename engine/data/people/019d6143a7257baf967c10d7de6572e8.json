@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7257baf967c10d7de6572e8",
   "type": "character",
-  "name": "Zephyr Balogun-Khorasani",
+  "name": "Zephyr Balogun-Petrović",
   "aliases": [
     "Yetty",
     "The Wall"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Fort Anchor, near Halsted and Chicago Ave",
-  "description": "Yetunde is built like a cargo container — broad-shouldered, thick-necked, standing just under two meters with a physicality that makes precinct hallways feel narrower. Her skin is deep umber, her hair a close-cropped natural coil threaded through with copper-toned bioluminescent filaments that pulse faintly when her heart rate elevates — a side effect of a medical implant she never bothered to have aesthetically corrected. A long diagonal scar runs from her left jaw to her collarbone, courtesy of a monofilament accident during the Calumet Rise food riots eight years ago. She keeps it unrepaired on purpose.\n\nOn the job she projects a professional blankness — not coldness exactly, but the studied calm of someone who has seen a crowd turn to a mob and back again more times than she can count. Off-duty she is unexpectedly gentle, the kind of person who stops to help strangers find their way and remembers the names of the Ferrogate transit workers at Fort Anchor's break room. She is deeply suspicious of anyone who seems too eager to hurt people, including some of her own squad.",
+  "description": "Zephyr Balogun-Petrović is built like a cargo container — broad-shouldered, thick-necked, standing just under two meters with a physicality that makes precinct hallways feel narrower. Her skin is deep umber, her hair a close-cropped natural coil threaded through with copper-toned bioluminescent filaments that pulse faintly when her heart rate elevates — a side effect of a medical implant she never bothered to have aesthetically corrected. A long diagonal scar runs from her left jaw to her collarbone, courtesy of a monofilament accident during the Calumet Rise food riots eight years ago. She keeps it unrepaired on purpose.\n\nOn the job she projects a professional blankness — not coldness exactly, but the studied calm of someone who has seen a crowd turn to a mob and back again more times than she can count. Off-duty she is unexpectedly gentle, the kind of person who stops to help strangers find their way and remembers the names of the Ferrogate transit workers at Fort Anchor's break room. She is deeply suspicious of anyone who seems too eager to hurt people, including some of her own squad.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -194,7 +194,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,27 +246,16 @@
     "Calumet Rise",
     "Fort Anchor",
     "The Filament",
-    "Copper",
-    "Déjà Vu",
+    "The Accidental",
+    "Pressure Drop",
     "Chicago",
-    "Alper Holmberg-Dembele",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "GLMZ",
-    "Grainfort",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kadiatou Bergstrom-Konate",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "The Human Baseline Alliance",
-    "WELLSPRING",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Copper",
+    "Cargo Tacos",
+    "Déjà Vu"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (49.5%) with substantial Middle Eastern ancestry (38.2%) and Hispanic/Latin American heritage (12.3%) creating a striking tri-continental phenotype. The African and Middle Eastern blend produces warm deep brown skin with subtle golden undertones, while the Latin American ancestry adds dimension to facial structure and a slight warmth to overall coloring.",
+    "heritage": "Sub-Saharan African dominant (66.9%) with substantial Eastern European ancestry (21.0%) and Hispanic/Latin American heritage (12.1%) creating a striking tri-continental phenotype. The African and Eastern European blend produces deep rich brown skin with subtle warm undertones, while the Latin American ancestry adds dimension to facial structure and refinement to overall bone structure.",
     "height_cm": 198,
     "weight_kg": 112,
     "build": "Imposing columnar frame — broad shoulders and thick neck with dense muscle layered over a large skeletal structure. Built for absorbing and distributing force rather than speed. No excess fat; functional mass.",
@@ -274,8 +263,8 @@
     "hair_style": "Close-cropped natural coils with visible threading of glowing filaments along crown and temples",
     "hair_length": "Short",
     "eye_color": "Deep brown",
-    "skin_tone": "Rich deep brown with warm golden undertones — the distinctive coloring of sub-Saharan and Middle Eastern ancestry blending, suggesting heritage from both the Horn of Africa and Levantine regions. Sun-deepened from field exposure.",
-    "complexion": "Clean-shaven face, minimal grooming vanity. Facial structure shows the blended phenotype of tri-continental ancestry — prominent cheekbones and defined jawline characteristic of both African and Middle Eastern heritage, with subtle angularity from Latin American ancestry. Skin shows the weathering of sun exposure and sustained stress — not lined heavily, but with a baseline tiredness around the eyes that suggests years of irregular sleep cycles.",
+    "skin_tone": "Rich deep brown with warm undertones — the distinctive coloring of sub-Saharan African heritage blended with Eastern European ancestry, creating a complexion of substance and depth. Sun-deepened from field exposure.",
+    "complexion": "Clean-shaven face, minimal grooming vanity. Facial structure shows the blended phenotype of tri-continental ancestry — prominent cheekbones and defined jawline characteristic of sub-Saharan African heritage, with subtle angularity and structure from Eastern European ancestry, refined by Latin American genetic influence. Skin shows the weathering of sun exposure and sustained stress — not lined heavily, but with a baseline tiredness around the eyes that suggests years of irregular sleep cycles.",
     "distinguishing_marks": [
       "Long diagonal scar running from left jaw to collarbone, deliberate unrepaired monofilament wound from Calumet Rise riots eight years prior — silvered and keloidal with visible depth.",
       "Faint luminescent glow visible at temples and crown where neural pacing implant's bioluminescent filaments approach surface — copper-colored, pulses subtly with elevated heart rate."
@@ -284,14 +273,35 @@
     "posture_movement": "Stands with a balanced, weight-centered stance — the physical grammar of someone trained to absorb impacts from multiple directions. Moves with deliberate economy; no wasted motion. When at rest has a subtle forward neck posture from years of riot gear and helmet wear. Despite her size, footfalls are controlled and quiet. When she walks through a crowded space, people instinctively clear a path without her needing to command it.",
     "clothing_style": "On duty: GLMZ Metro Police riot suppression uniform — ballistic polymer tactical pants, reinforced boots with good ankle support, modular torso rig over standard-issue impact shirt. Off-duty in Ironhaven: utilitarian Tier 3 casual wear — worn denim or cargo pants, neutral-colored oversized t-shirts or thermal layers, practical jackets. No corporate branding. Favors grey and black. Personal gear shows signs of actual use and repair rather than replacement."
   },
-  "image_prompt": "Zephyr Balogun-Khorasani, 198cm imposing figure, deep rich brown skin with golden undertones blending sub-Saharan African and Middle Eastern heritage, close-cropped black coils with copper bioluminescent filaments threading at temples glowing softly, deep brown eyes, strong prominent jawline, diagonal keloidal scar running left jaw to collarbone from past riot suppression injury, subtle geometric subdermal mesh visible on neck under tactical lighting. GLMZ Metro Police riot suppression uniform — ballistic polymer tactical gear, reinforced boots, modular torso rig. Standing with balanced weight-centered stance, forward neck posture from years of riot work, quiet controlled presence. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody tactical lighting emphasizing copper bioluminescence and scar tissue, industrial warehouse or precinct setting, photorealistic gritty aesthetic, --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Balogun-Petrović, 198cm tall imposing figure, rich deep brown skin with warm undertones from tri-continental African-Eastern European-Latin American ancestry, prominent cheekbones and defined jawline, deep brown eyes with baseline tiredness. Close-cropped natural coils with copper-toned bioluminescent filaments threading crown and temples that pulse faintly. Long diagonal silvered scar from left jaw to collarbone. Subdermal geometric mesh pattern visible on neck and shoulders. Standing in balanced weight-centered riot suppression stance, GLMZ Metro Police tactical gear — ballistic polymer pants, reinforced boots, modular torso rig over impact shirt. Deliberate controlled posture, quiet presence. GLMZ 2200s, neon-lit Great Lakes Metropolitan Zone, moody atmospheric lighting catching copper filament glow, gritty urban tactical aesthetics, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 49.5,
-    "Middle Eastern": 38.2,
-    "Hispanic/Latin American": 12.3
+    "Sub-Saharan African": 66.9,
+    "Eastern European": 21,
+    "Hispanic/Latin American": 12.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 52.1
+      },
+      "Central African": {
+        "Angolan": 14.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 21
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 1.8,
+        "Peruvian": 10.3
+      }
+    }
+  }
 }

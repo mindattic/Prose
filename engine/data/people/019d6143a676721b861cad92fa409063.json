@@ -1,7 +1,7 @@
 {
   "id": "019d6143a676721b861cad92fa409063",
   "type": "character",
-  "name": "Phoenix Horváth",
+  "name": "Phoenix Árnason",
   "aliases": [
     "Knock"
   ],
@@ -12,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "Abyssal Threshold, ranging into Black Corridor spurs and pre-collapse Undertow sectors, near sub-level access near State and Van Buren",
-  "description": "Knock is a compact, densely muscled man with deep brown skin and a face that would be handsome if it weren't always bruised somewhere. He has a retractable claw modification on both hands — not the delicate cosmetic kind, but a heavy-gauge industrial variant originally designed for pipe work, the chrome yellowed and scratched, the mechanism loud. His right eye is a replacement after a cave-in in 2196: matte black sclera, amber iris, depth-perception assist — he got it from a tunnel-market vendor and it's slightly misaligned, which gives him a permanent squint on that side. His hair is cut very close and he has a habit of pressing his palms flat against walls, feeling for vibration, that people find either impressive or unsettling depending on whether they understand what he's doing.\n\nEcho hunting is exactly what it sounds like: you go into places that have broken and you listen for what's still there. Structural resonance, water movement, the ping of metal under pressure — Knock reads these sounds the way others read text. He extracts ferrogate rail segments, copper bundling, intact conduit, old hardware sealed in collapsed rooms — anything the surface market will buy or the underground can use. It is extremely dangerous work with an average career length of about four years. Knock has been doing it for nine. He attributes this to skill. Everyone who knows him also attributes it to a specific kind of recklessness that looks like skill from the outside.",
+  "description": "Phoenix Árnason is a compact, densely muscled man with deep brown skin and a face that would be handsome if it weren't always bruised somewhere. He has a retractable claw modification on both hands — not the delicate cosmetic kind, but a heavy-gauge industrial variant originally designed for pipe work, the chrome yellowed and scratched, the mechanism loud. His right eye is a replacement after a cave-in in 2196: matte black sclera, amber iris, depth-perception assist — he got it from a tunnel-market vendor and it's slightly misaligned, which gives him a permanent squint on that side. His hair is cut very close and he has a habit of pressing his palms flat against walls, feeling for vibration, that people find either impressive or unsettling depending on whether they understand what he's doing.\n\nEcho hunting is exactly what it sounds like: you go into places that have broken and you listen for what's still there. Structural resonance, water movement, the ping of metal under pressure — Phoenix Árnason reads these sounds the way others read text. He extracts ferrogate rail segments, copper bundling, intact conduit, old hardware sealed in collapsed rooms — anything the surface market will buy or the underground can use. It is extremely dangerous work with an average career length of about four years. Phoenix Árnason has been doing it for nine. He attributes this to skill. Everyone who knows him also attributes it to a specific kind of recklessness that looks like skill from the outside.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -155,7 +155,7 @@
     "Hustler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Abyssal Threshold",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,34 +177,20 @@
     "The Resonance Communion",
     "Ferrogate Transit",
     "Threshold",
-    "ARCTURUS DEFENSE Echolocator MK-IV Sonar Array",
+    "Pressure Drop",
+    "GLMZ",
     "The Gradient Compact",
+    "ARCTURUS DEFENSE Echolocator MK-IV Sonar Array",
+    "Underground Phoenix",
     "Witness",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
+    "The Pure Hand",
     "Palladian Construction MagRail Spur MRS-17 Elevated Micro-Transit Chassis",
-    "Elena Vasquez-9",
-    "Glenville Sound",
-    "Kenji Guerrero-Osei-Mensah",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Retractable Claw Modification",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Tessera Corponation",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Peninsula",
-    "The Undertow",
-    "Vantablack-CNX",
-    "Veslemøy Achebe-Tursynov",
-    "Yannick Tofauti-Szarvásy"
+    "Elena Vasquez-9"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European (Slavic/Central European, 53.7%) with significant East Asian ancestry (36.7%) and Sub-Saharan African (9.6%), resulting in a striking mixed phenotype. The Eastern European base provides strong bone structure and fair undertones, blended with East Asian features and warm melanin from African ancestry. Genetic expression leans toward angular cheekbones and a defined jawline with slightly almond-shaped eye geometry, warm olive-brown complexion with golden undertones.",
+    "heritage": "Mixed diaspora ancestry with Northern European (34.8%), Hispanic/Latin American (25.6%), East Asian (19.9%), Sub-Saharan African (14.5%), and Southeast Asian (5.2%) components. This genetic blend produces a striking multifaceted phenotype: Northern European bone structure and fair undertones intricately woven with East Asian facial geometry, warm melanin deposits from African and Latin American ancestry, and subtle Southeast Asian softness in feature planes. The result is angular cheekbones and defined jawline with almond-shaped eye geometry, skin undertones that shift between warm olive, bronze, and burnished copper depending on light exposure and angle.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Compact and densely muscled, built for tight spaces and sustained leverage work. Broad shoulders tapering to a narrow waist, forearms disproportionately developed from years of pulling and climbing. No excess fat; every visible muscle is functional.",
@@ -212,8 +198,8 @@
     "hair_style": "Clippered close to the scalp, military-neat",
     "hair_length": "Short",
     "eye_color": "Right eye: matte black sclera with amber iris (augmented, slightly misaligned causing permanent squint); Left eye: dark brown natural",
-    "skin_tone": "Warm olive-brown with golden undertones, sun-darkened despite time underground. The blend of Eastern European fairness with East Asian and African ancestry creates a complex warm tone that reads as burnished bronze in certain light.",
-    "complexion": "Face would be conventionally attractive if not perpetually bruised—currently shows faint yellowing contusion on left cheekbone and fresh scabbing along right temple. Jaw is squared and prominent with slight East Asian angularity. High, defined cheekbones. Skin is weathered but unblemished otherwise; calluses on palms and fingers from equipment work. Stubble grows in thick and fast; he shaves every other day. The blend of ancestries creates subtle feature asymmetry typical of mixed heritage.",
+    "skin_tone": "Warm bronze-olive with golden and copper undertones, sun-darkened despite time underground. The blend of Northern European fairness with East Asian, African, and Latin American ancestry creates a complex warm tone that reads as burnished copper in bright light, with subtle warm brown depth in shadow. Subtle warm undertone variation across face reflecting the layered genetic heritage.",
+    "complexion": "Face would be conventionally attractive if not perpetually bruised—currently shows faint yellowing contusion on left cheekbone and fresh scabbing along right temple. Jaw is squared and prominent with East Asian angularity tempered by Northern European definition. High, defined cheekbones characteristic of mixed Northern European and East Asian heritage, with warm depth and subtle roundness from African and Latin American components. Skin is weathered but unblemished otherwise; calluses on palms and fingers from equipment work. Stubble grows in thick and fast; he shaves every other day. The blend of ancestries creates subtle feature asymmetry: slightly higher cheekbones on left influenced by East Asian ancestry, stronger jaw definition from Northern European component, with warmth, dimension, and subtle feature softness from African, Latin American, and Southeast Asian heritage.",
     "distinguishing_marks": [
       "Scar tissue along right eye socket from the 2196 cave-in, visible as a pale ridge during healing phases",
       "Burn marks across dorsal side of right hand from a conduit extraction gone wrong in 2223, pink and raised",
@@ -224,14 +210,70 @@
     "posture_movement": "Moves with economical precision—no wasted motion. Habitually presses palms flat against walls and structural surfaces, fingers splayed, feeling for vibration resonance through his tactile sense. Leans forward when listening intently. When stationary, shifts weight frequently between feet as if ready to move. Hands are rarely completely relaxed; fingers unconsciously test surfaces, tap rhythms, check for give. His right eye squint causes him to tilt his head slightly when focusing on detail work. Walks with a careful, measured gait in confined spaces; moves quickly and directly in open areas.",
     "clothing_style": "Tier 4 utilitarian salvage worker. Standard-issue tactical rig in faded grey-green with multiple sealed pockets for tools and findings. Worn Iroquois-brand work boots, scuffed and re-soled twice. Long-sleeve compression shirt (black, brands the seams to reduce snag risk) worn under an open grey vest rigged with carabiners and rope loops. Fingerless gloves on both hands (the claws retract through reinforced openings). A canvas satchel, oil-stained and patched, carries maps and smaller finds. No corporate logos. No chrome jewelry. Everything is functional, secondhand, and well-maintained. Clothing bears the embedded dirt of the Abyssal Threshold: a fine grey dust that never fully washes out."
   },
-  "image_prompt": "Phoenix Horváth, mixed-heritage (Eastern European-East Asian-African) salvage worker in cyberpunk 2226, 168cm compact muscular build, warm olive-bronze skin with gold undertones, short black clippered hair. Defined angular East Asian-influenced cheekbones, squared jaw, faint yellowing bruise on left cheekbone, fresh scabs on right temple. Right eye matte-black sclera with amber iris (visibly augmented, permanent squint), left eye natural dark brown. Heavy industrial yellow-worn retractable chrome claws on both hands, matte-black impact-absorption plating on forearms with stress fractures, scars visible on right hand and left forearm. Wears faded grey-green tactical salvage rig, black compression long-sleeves, open grey vest with carabiners, fingerless gloves, worn Iroquois boots, oil-stained canvas satchel. Posture economical and precise, habitually pressing palms flat against surfaces, ready stance. Industrial underground aesthetic with grey Abyssal Threshold dust embedded in clothing. Moody subterranean lighting, damp tunnel ambience, slight forward lean, focused expression. Cyberpunk 2200s gear gritty aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Phoenix Árnason, 168cm mixed-heritage male salvage worker in GLMZ, multiethnic features blending Northern European bone structure with East Asian angularity, African and Latin American warm bronze-olive skin tone with golden undertones, dark brown left eye and augmented black-sclera amber-iris right eye with permanent squint. Short black clippered hair, stubbled jaw, faint yellow bruises on left cheekbone, fresh scabs along right temple. Compact densely-muscled build, 78kg. Wearing faded grey-green tactical rig, black compression long-sleeve shirt, open grey vest with carabiners, fingerless gloves revealing retractable yellowed chrome claws. Impact-absorption matte-black composite forearm plating with visible stress fractures. Visible scars: pale ridge right eye socket, pink burn marks right hand dorsal, white laceration 8cm down left forearm. Iroquois work boots, oil-stained canvas satchel. Posture economical and precise, hands testing surfaces, leaning forward. Abyssal Threshold grey dust embedded in clothing. Underground industrial lighting, hard shadows, neo-noir salvage tunnel setting, gritty and weathered aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 53.7,
-    "East Asian": 36.7,
-    "Sub-Saharan African": 9.6
+    "Northern European": 34.8,
+    "Hispanic/Latin American": 25.6,
+    "East Asian": 19.9,
+    "Sub-Saharan African": 14.5,
+    "Southeast Asian": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 17.4
+      },
+      "British Isles": {
+        "English": 17.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 5.8,
+        "Dominican": 1.5
+      },
+      "Central American": {
+        "Salvadoran": 2.8,
+        "Nicaraguan": 4
+      },
+      "Mexican": {
+        "Mexican": 11.5
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 8.8
+      },
+      "Japanese": {
+        "Japanese": 8.5
+      },
+      "Chinese": {
+        "Hakka": 2.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 4.4,
+        "Ghanaian": 5
+      },
+      "Central African": {
+        "Cameroonian": 2.1
+      },
+      "Southern African": {
+        "South African": 3
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 4.7
+      },
+      "Laotian": {
+        "Laotian": 0.5
+      }
+    }
+  }
 }

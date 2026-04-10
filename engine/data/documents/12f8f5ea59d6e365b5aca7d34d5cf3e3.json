@@ -8,18 +8,17 @@
   "classification": "public",
   "description": "The Quanta validation network is controlled by entities with direct financial interest in the outcomes of the transactions they validate. This is not a conspiracy theory. It is the published architecture. Of the 8.4 million EDN nodes that verify every Quanta transaction on Earth, approximately 5.2 million are operated by the twelve corponations that sit on the QFIC board. Sterling-Nakamura alone operates 1.4 million nodes — 16.7% of the global network. The entity that designed the currency, that chairs the committee that governs it, and that profits most from its operation also runs the infrastructure that verifies whether transactions are legitimate. The question is not whether this creates a conflict of interest. The question is whether the conflict has ever been exploited, and the answer is: we do not know, because we cannot audit what we cannot see.\n\nValidation consensus operates through Entanglement Verification Consensus (EVC), which requires a majority of entangled nodes to confirm transaction coherence. In standard configuration, 4 of 7 nodes must agree. The protocol selects verification nodes pseudo-randomly from the pool of nodes geographically proximate to the transaction. \"Pseudo-randomly\" is doing significant work in that sentence. The selection algorithm — proprietary to Sterling-Nakamura, never independently audited, classified as trade secret under QFIC charter Article 12 — determines which nodes verify which transactions. If the algorithm preferentially routes certain transactions to corponation-controlled nodes, the corponations would have effective veto power over those transactions. They could delay, flag, or block transfers without violating the protocol's technical specifications. They would simply need to ensure that their nodes report decoherence — a measurement that, by the nature of quantum mechanics, cannot be independently verified after the fact.\n\nIndependent operators — the 23% of nodes not controlled by QFIC members — serve as the theoretical check on corponation control. If Sterling-Nakamura's nodes reported false decoherence on a transaction, independent nodes entangled with the same state would report coherence, creating a consensus conflict that would trigger a full audit. This is the system working as designed. The problem is statistical: in any given verification cluster, the probability that a majority of nodes are independently operated is approximately 18%. For 82% of all transactions on Earth, the verification majority consists entirely of corponation-controlled nodes. The safeguard exists. It applies to fewer than one in five transactions.\n\nThe licensed independent operators who run the remaining 1.9 million nodes are not, strictly speaking, independent. Licensing requires QFIC certification, which requires purchasing quantum hardware from QFIC-approved manufacturers (all of which are subsidiaries of QFIC member corponations), passing annual compliance audits conducted by QFIC-appointed inspectors, and maintaining connectivity standards that effectively require purchasing bandwidth from corponation-owned telecommunications infrastructure. An \"independent\" node operator is independent in the way that a franchisee is independent of the franchisor: technically separate, functionally subordinate. The nodes they operate verify transactions honestly because they are designed to and because cheating would be detected. But the question of who they answer to, when the protocol is ambiguous and the audit trail is quantum-ephemeral, remains unanswered and, under current QFIC charter provisions, unanswerable.",
   "related_entities": [
-    "Yelena Okafor-Chen",
-    "Riddle",
-    "Alper Lebedev-Tutu",
+    "Nova Malhotra",
+    "Slate Wójcik-Malhotra",
+    "Provisions",
     "Hearthstone Firearms Homestead-12 'Door Slam'",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Tessera TAR-12 'Consensus'",
-    "Idris Forsberg-Quaye",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Zara Inoue",
     "Irontide Tidal Energy",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Question"
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
   "credibility": "disputed",
   "story_hooks": [

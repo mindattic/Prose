@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62e7d83b5b38bef5cba3a9b",
   "type": "character",
-  "name": "Nisha Szczypiński",
+  "name": "Chidi Tran",
   "aliases": [
     "Mak",
     "Imacula"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Garret, Edgewater Prism — studio apartment doubling as a server-farm edit suite, near Lincoln and Addison",
-  "description": "Imaculada has the look of someone who has spent twenty years in dim rooms making worlds: slightly stooped, with the particular forward tilt of someone perpetually leaning toward a screen. Their heritage shows in striking combinations — their mother was Senegalese-Portuguese, their father Turkish-Kazakh — and the result is a face of remarkable planes and angles, currently framed by color-shifting hair they keep at chin length and set to a slow cycle of deep indigo fading to rust. They have bioluminescent patches on the back of both hands, faint constellations they got at thirty as a deadline gift to themselves, and wear them with the unselfconsciousness of someone who forgets they're there until someone asks.\n\nThey are known in the underground circuit as the person who makes VR experiences that feel like memories — not entertainment, but something more troubling and intimate. Their last piece, an unlicensed work called 'Grandmother's House Is Underwater Now,' circulated through pirate distribution nodes for six months before a Tessera subsidiary attempted to acquire it. Imaculada refused and disappeared the masters. They are professionally warm and personally evasive, with the quality of someone who asks questions far more interesting than anything they're willing to say about themselves.",
+  "description": "Chidi Tran has the look of someone who has spent twenty years in dim rooms making worlds: slightly stooped, with the particular forward tilt of someone perpetually leaning toward a screen. Their heritage shows in striking combinations — their mother was Senegalese-Portuguese, their father Turkish-Kazakh — and the result is a face of remarkable planes and angles, currently framed by color-shifting hair they keep at chin length and set to a slow cycle of deep indigo fading to rust. They have bioluminescent patches on the back of both hands, faint constellations they got at thirty as a deadline gift to themselves, and wear them with the unselfconsciousness of someone who forgets they're there until someone asks.\n\nThey are known in the underground circuit as the person who makes VR experiences that feel like memories — not entertainment, but something more troubling and intimate. Their last piece, an unlicensed work called 'Grandmother's House Is Underwater Now,' circulated through pirate distribution nodes for six months before a Tessera subsidiary attempted to acquire it. Chidi Tran refused and disappeared the masters. They are professionally warm and personally evasive, with the quality of someone who asks questions far more interesting than anything they're willing to say about themselves.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -164,7 +164,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,25 +224,17 @@
     "The Garret",
     "The Heritage Vault",
     "Tessera Corponation",
+    "Circuit",
+    "Arcturus KS-7 'Nursery'",
+    "Indigo",
+    "Neural Palate",
     "The Pure Hand",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Rust",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Altan Tanaka-Frimpong",
-    "Arcturus KS-7 'Nursery'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nnenna Baluarte-Volkov",
-    "Nurlan Morita-Antwi",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Zheng-dao Bioelectric"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Eastern European (Polish/Slavic) dominant with significant South Asian, Sub-Saharan African, East Asian, and Hispanic/Latin American admixture. Complex phenotype reflecting the Ubiquitous Diaspora: high cheekbones and angular jaw from Eastern European ancestry, warm golden-brown skin tone from the South Asian and African components, slight epicanthal fold suggestion from East Asian genetics, creating a strikingly cosmopolitan appearance.",
+    "heritage": "Southeast Asian dominant (55.2%) with significant Sub-Saharan African (27.7%) and Hispanic/Latin American (17.1%) ancestry. Complex phenotype reflecting the Ubiquitous Diaspora: warm medium to deep brown skin tone with golden and reddish undertones from the blending of Southeast Asian, African, and Latin American genetics; facial structure combines Southeast Asian cheekbone prominence with broader African facial geometry and Latin American features, creating a striking cosmopolitan appearance. The particular pallor of someone who works in low light creates a muted overlay on the underlying warmth.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and slightly stooped, with the particular forward curve of someone who has spent decades hunched over interfaces. Narrow shoulders, long fingers adapted to precision work, minimal muscle definition but wiry rather than frail.",
@@ -250,27 +242,51 @@
     "hair_style": "Chin-length, straight to slightly wavy, often pulled to one side or tucked behind ear; slightly disheveled from constant contact with VR headsets and headphones",
     "hair_length": "Medium",
     "eye_color": "Dark brown with slight amber undertone; alert and abstracted",
-    "skin_tone": "Warm golden-brown complexion with subtle olive undertones from the Eastern European-South Asian-African genetic blend; the particular pallor of someone who works in low light creates a muted, slightly ashen overlay on the underlying warmth",
-    "complexion": "Fine-boned face with high, pronounced cheekbones and an angular jaw shaped by Slavic and South Asian ancestry; smooth skin with minimal grooming vanity evident; dark circles under eyes are nearly permanent; subtle variation in tone across the face reflecting the genetic mosaic",
+    "skin_tone": "Warm medium to deep brown complexion with golden and reddish undertones, reflecting the rich blend of Southeast Asian, Sub-Saharan African, and Hispanic/Latin American ancestry; the particular pallor of someone who works in low light creates a muted, slightly ashen overlay on the underlying warmth",
+    "complexion": "Fine-boned face with high, pronounced cheekbones blended with slightly broader nasal structure and fuller lips reflecting African and Latin American heritage; angular jaw shaped by Southeast Asian and African ancestry; smooth skin with minimal grooming vanity evident; dark circles under eyes are nearly permanent; subtle variation in tone across the face reflecting the genetic mosaic",
+    "visible_augmentations": "Neural jack at left temple (visible as a flush port beneath skin, approximately 8mm diameter, dark metallic rim); bioluminescent hand patches glow faintly in low-light environments; subtle micro-LED indicators sometimes visible in eye whites during VR interface sessions (trace artifacts of the neural feed)",
+    "posture_movement": "Habitually leans forward, as if perpetually reaching toward a screen just beyond arm's reach. Moves with economy — no wasted motion, but also no particular grace. Hands are restless, often making subtle gesture-commands from muscle memory of VR interface work. Makes sustained eye contact when engaged but frequently drifts into middle-distance staring. Sits cross-legged or in asymmetrical positions; rarely uses furniture as intended.",
+    "clothing_style": "Tier 3-4 functional minimalism with deliberate anti-fashion sensibility. Standard uniform: loose, worn black or charcoal tech-weave shirt (Tanaka brand, mid-tier); fitted grey cargo pants with numerous pockets holding cables, drives, haptic gloves; battered Edgewater-district knockoff AR glasses pushed up in hair; worn leather jacket (secondhand, at least five years old, faded to soft grey-brown). Feet typically bare at the studio, but wears scuffed matte-black neural-reactive sneakers (Vesper brand) when outside. No jewelry except the bioluminescent hand patches. Favors anything with multiple pockets and minimal fasteners. Clothes show evidence of being slept in during edit marathons.",
     "distinguishing_marks": [
       "Bioluminescent patches on the dorsal surface of both hands in faint constellation patterns (Cassiopeia on left hand, Orion on right), visible only in dim light as soft blue-white glow",
       "Small circular scar at left temple where neural jack port is embedded — slightly raised, discolored to pale white",
       "Faint caffeine stains on fingers from years of gripping hot cups during edit sessions"
-    ],
-    "visible_augmentations": "Neural jack at left temple (visible as a flush port beneath skin, approximately 8mm diameter, dark metallic rim); bioluminescent hand patches glow faintly in low-light environments; subtle micro-LED indicators sometimes visible in eye whites during VR interface sessions (trace artifacts of the neural feed)",
-    "posture_movement": "Habitually leans forward, as if perpetually reaching toward a screen just beyond arm's reach. Moves with economy — no wasted motion, but also no particular grace. Hands are restless, often making subtle gesture-commands from muscle memory of VR interface work. Makes sustained eye contact when engaged but frequently drifts into middle-distance staring. Sits cross-legged or in asymmetrical positions; rarely uses furniture as intended.",
-    "clothing_style": "Tier 3-4 functional minimalism with deliberate anti-fashion sensibility. Standard uniform: loose, worn black or charcoal tech-weave shirt (Tanaka brand, mid-tier); fitted grey cargo pants with numerous pockets holding cables, drives, haptic gloves; battered Edgewater-district knockoff AR glasses pushed up in hair; worn leather jacket (secondhand, at least five years old, faded to soft grey-brown). Feet typically bare at the studio, but wears scuffed matte-black neural-reactive sneakers (Vesper brand) when outside. No jewelry except the bioluminescent hand patches. Favors anything with multiple pockets and minimal fasteners. Clothes show evidence of being slept in during edit marathons."
+    ]
   },
-  "image_prompt": "Nisha Szczypiński, cyberpunk 2226, mixed-heritage woman with golden-brown skin and high angular cheekbones, chin-length indigo-to-rust color-shifting hair slightly disheveled, dark eyes with permanent dark circles reflecting endless studio hours. Leaning forward in habitually forward posture, wearing worn black tech-weave shirt and grey cargo pants covered in pockets, secondhand grey-brown leather jacket, matte-black neural-reactive sneakers. Neural jack port visible at left temple with metallic rim, bioluminescent constellation patterns faintly glowing on dorsal hands in low light (Cassiopeia and Orion), small pale scar at temple. Hands restless with muscle memory gestures, AR glasses pushed up in disheveled hair, surrounded by faint blue-white bioluminescent hand glow. Low-light cyberpunk studio environment, moody atmospheric lighting, tired but intensely focused expression, suggesting deep immersion in VR interface work. Cinematic, photorealistic, gritty cyberpunk aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Chidi Tran, a lean 168cm tall person of mixed Southeast Asian, Sub-Saharan African, and Hispanic/Latin American heritage, skin deep warm brown with golden undertones, dark circles under eyes, fine-boned face with high cheekbones and angular jaw blended with broader African features. Color-shifting chin-length hair cycling between deep indigo and rust-copper. Hunched forward posture as if reaching toward hidden screen. Wearing loose worn black tech-weave shirt, grey cargo pants, faded grey-brown leather jacket, battered AR glasses pushed up in hair. Neural jack visible as dark metallic port at left temple. Bioluminescent constellation patterns glowing softly on dorsal hands (Cassiopeia and Orion) in low studio lighting. Restless hands making subtle gesture-commands. Dark dystopian GLMZ studio environment with low ambient light, tech clutter, glow of interface artifacts. Cinematic noir aesthetic with blue-white bioluminescence accent lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 42.3,
-    "South Asian": 25.7,
-    "Sub-Saharan African": 12.0,
-    "East Asian": 10.9,
-    "Hispanic/Latin American": 9.1
+    "Southeast Asian": 55.2,
+    "Sub-Saharan African": 27.7,
+    "Hispanic/Latin American": 17.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 55.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 10.1
+      },
+      "East African": {
+        "Kenyan": 17.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 10
+      },
+      "Caribbean": {
+        "Dominican": 3.9
+      },
+      "Central American": {
+        "Salvadoran": 3.2
+      }
+    }
+  }
 }

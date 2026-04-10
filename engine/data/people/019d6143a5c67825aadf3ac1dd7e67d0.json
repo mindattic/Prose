@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c67825aadf3ac1dd7e67d0",
   "type": "character",
-  "name": "Briar Möller",
+  "name": "Alisher Saidov",
   "aliases": [
     "Bog",
     "The Collector"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, Brewer's Spine district, operates city-wide, near Halsted and Division",
-  "description": "Bogdan is a big man — not tall exactly, but densely constructed, with broad shoulders and a solidity of posture that suggests he has been hit by things and remained. His skin is a deep brown-black, his head shaved close on the sides with a thick braid of salt-and-pepper hair down the back. He has bioluminescent skin patterning along his collarbone and upper arms — soft blue-white that pulses faintly when his heart rate is elevated, which happens more than he'd prefer. His right hand is partially chrome: three fingers replaced with precision manipulation hardware after an incident he describes simply as 'an argument with a door.' He dresses in Tier 2 practical — nothing corporate, nothing cheap.\n\nBogdan has been doing compliance recovery for eleven years under a Metro-issued bounty license that he has had suspended twice and restored once. He is not violent by preference — he is expensive, which is more useful. He has a reputation for bringing in difficult skips without additional incident, which he maintains through a combination of genuine negotiating skill, an exhaustive pre-approach research process, and a willingness to wait in a vehicle for a very long time. He is tired in a way that feels structural rather than temporary. He prays to three different E.L.F.s before any recovery — superstition or genuine devotion, he won't say.",
+  "description": "Alisher Saidov is a big man — not tall exactly, but densely constructed, with broad shoulders and a solidity of posture that suggests he has been hit by things and remained. His skin is a deep brown-black, his head shaved close on the sides with a thick braid of salt-and-pepper hair down the back. He has bioluminescent skin patterning along his collarbone and upper arms — soft blue-white that pulses faintly when his heart rate is elevated, which happens more than he'd prefer. His right hand is partially chrome: three fingers replaced with precision manipulation hardware after an incident he describes simply as 'an argument with a door.' He dresses in Tier 2 practical — nothing corporate, nothing cheap.\n\nAlisher Saidov has been doing compliance recovery for eleven years under a Metro-issued bounty license that he has had suspended twice and restored once. He is not violent by preference — he is expensive, which is more useful. He has a reputation for bringing in difficult skips without additional incident, which he maintains through a combination of genuine negotiating skill, an exhaustive pre-approach research process, and a willingness to wait in a vehicle for a very long time. He is tired in a way that feels structural rather than temporary. He prays to three different E.L.F.s before any recovery — superstition or genuine devotion, he won't say.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -195,7 +195,7 @@
     "Grudge Holder": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,38 +273,11 @@
     "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
     "Fort Anchor",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "ARCHITECT",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus DM-1 'Pallbearer'",
-    "Bogdan Achebe-Svanstrom",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Davi Ousseini-Brătianu",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Grainfort",
-    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nnenna Baluarte-Volkov",
-    "Patient Zero",
-    "Slagworks Industrial",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "The Burden Clause",
-    "The Question",
-    "Vuk Jorgensen-Toure",
-    "Warden",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East and Southeast Asian with substantial Pacific Islander ancestry, creating warm-toned brown skin with subtle golden undertones. Minor contributions from Eastern European, Hispanic/Latin American, and Sub-Saharan African heritage create complexity in his facial structure and warmth distribution across his features.",
+    "heritage": "Predominantly Central Asian (62%) with substantial Hispanic/Latin American (17%), South Asian (14%), and Eastern European (7%) admixture. Strong Turkic-Iranian phenotype forms the foundation—angular cheekbones, defined jaw, and eye shape characteristic of Central Asian populations. Hispanic and South Asian heritage broadens the mid-face, adds warmth to bone structure, and softens sharp angles. Eastern European ancestry introduces subtle coolness to undertones and refined nose bridge. The result is a distinctive face that reads as Central Asian-rooted but with visible global ancestry reflected in balanced proportions.",
     "height_cm": 178,
     "weight_kg": 104,
     "build": "Densely constructed, broad-shouldered, compact musculature without obvious bulk. Built like someone who absorbs impact rather than generates it. Eleven years of recovery work has given him a settled, grounded presence.",
@@ -312,8 +285,8 @@
     "hair_style": "Close-shaved on sides; thick braid down the back",
     "hair_length": "Medium (braid)",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-brown with golden undertones, rich depth from East Asian and Southeast Asian heritage blended with Pacific Islander warmth. Clear and even across his face and body.",
-    "complexion": "Clean-shaven with angular facial structure reflecting East/Southeast Asian heritage mixed with broader features from Pacific Islander ancestry. Weathered around the eyes from sustained focus work and outdoor approach operations. Skin is clear but marked by time. Expression settles into tired patience.",
+    "skin_tone": "Warm medium-tan with golden-olive undertones. Central Asian base provides depth and structure; Hispanic and South Asian heritage adds warmth and richness. Complexion appears sun-touched with subtle warmth concentrated in cheeks, temples, and across the bridge of nose.",
+    "complexion": "Clean-shaven with prominent angular cheekbones and strong jawline from Central Asian heritage, broadened and softened through the mid-face by South Asian and Hispanic admixture creating balanced proportions. Weathered around the eyes from sustained focus work and outdoor approach operations. Skin is clear but marked by time and experience. Expression settles into tired patience.",
     "distinguishing_marks": [
       "Bioluminescent skin patterning across collarbone and upper arms — soft blue-white that pulses visibly with elevated heart rate. Cosmetic mod that has become involuntarily diagnostic of his stress state.",
       "Old burn scar on right shoulder, faded but visible, roughly palm-sized.",
@@ -323,17 +296,63 @@
     "posture_movement": "Economical, grounded stance. Moves with deliberate weight distribution — a man who has learned to manage his own mass and the mass of others without aggression. No fidgeting. Sits in vehicles for extended periods with genuine stillness. When he walks, his pace is moderate and his gaze is soft but constant — reading environment.",
     "clothing_style": "Tier 2 practical. Dark, muted colors: charcoal, slate, black. Durable synthetic-blend tactical jacket with internal pockets for files and documentation. Fitted but not tailored — cut for movement and weather. Boots are scuffed but maintained. No logos, no corpo marks. Watch is functional, not fashionable. Clothing shows wear but no neglect — he takes care of what lasts."
   },
-  "image_prompt": "Briar Möller, 178cm tall man of East and Southeast Asian heritage with Pacific Islander warmth, golden-brown skin tone, standing in cyberpunk 2226 setting. Salt-and-pepper braided hair down back with shaved sides. Dark brown eyes, angular face with weathered focus lines around eyes. Clean-shaven. Right hand shows matte-black precision manipulation hardware on three fingers with visible chrome wear. Bioluminescent blue-white skin patterning pulses softly across collarbone and upper arms. Old palm-sized burn scar on right shoulder. Economical, grounded posture with slight forward cant from spinal augmentation. Wearing dark charcoal tactical jacket with internal pockets, fitted for movement, scuffed boots, functional watch. No corpo marks. Standing in rain-slicked urban corridor with neon edge-lighting, soft ambient glow catching the bioluminescence. Expression of tired patience. Moody, contemplative. --ar 2:3 --v 6",
+  "image_prompt": "Alisher Saidov, 178cm Central Asian-Hispanic-South Asian man with warm olive-tan skin, angular Central Asian cheekbones softened by broader mid-face structure, dark brown eyes weathered by focus work. Salt-and-pepper black hair close-shaved on sides with thick braid down back. Clean-shaven, tired patient expression. Right hand has black precision augmentation on three fingers with visible chrome wear. Bioluminescent blue-white skin patterning pulses across collarbone and upper arms. Old burn scar visible on right shoulder. Wears dark charcoal tactical jacket, fitted but practical, scuffed maintained boots. Economical posture, grounded stance, slight forward cant from spinal reinforcement. Soft constant gaze. GLMZ Great Lakes Metropolitan Zone, cool industrial lighting, sitting in vehicle interior or urban corridor, no wasted motion, expression of tired competence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 37.7,
-    "Southeast Asian": 26.6,
-    "Pacific Islander": 18.2,
-    "Eastern European": 6.7,
-    "Hispanic/Latin American": 5.6,
-    "Sub-Saharan African": 5.2
+    "Central Asian": 62.1,
+    "Hispanic/Latin American": 17.2,
+    "South Asian": 13.5,
+    "Eastern European": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 48
+      },
+      "Turkic": {
+        "Turkmen": 12.7,
+        "Uzbek": 1.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 4.7,
+        "Dominican": 4.3
+      },
+      "South American": {
+        "Colombian": 1.8,
+        "Brazilian": 1.9
+      },
+      "Mexican": {
+        "Mexican": 4.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 6,
+        "Telugu": 1.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.6
+      },
+      "Pakistani": {
+        "Sindhi": 2.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 1.2,
+        "Romanian": 2.7
+      },
+      "Slavic East": {
+        "Russian": 1.4
+      },
+      "Slavic South": {
+        "Slovenian": 1.9
+      }
+    }
+  }
 }

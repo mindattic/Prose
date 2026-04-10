@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69c7f3abe09dda3fb20dd5d",
   "type": "character",
-  "name": "Rune Kovalenko-Espinoza",
+  "name": "Rune Ingebrigtsen-Bautista",
   "aliases": [
     "Pili",
     "the Milk Cart"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "The Narrows, Morgan's Ridge pedestrian strip — cart position at the corner of Gage Circuit and the lower Morgan overpass, near Milwaukee and Damen",
-  "description": "Pilar is of middling height and seemingly made of angles — sharp elbows, pointed chin, quick gesturing hands that are in constant motion whether they're cooking or talking or just existing. Their hair is kept in two braids that they tuck into a wide-brimmed thermal hat while working, the hat so old and worn it has achieved a kind of structural sentience. Their skin is a warm medium brown and they have color-changing hair — shifts between dark auburn and a deep teal depending on temperature — which they got years ago and now mainly use as a weather forecaster. Cold mornings read deep teal; the regulars check it before deciding whether to add broth.\n\nPilar has operated their cart on Morgan's Ridge for six years. The noodle setup is compact and professional — a heated two-burner system, four base broths rotating by season, and a laminated menu written in three languages including Tamazight which nobody has ordered in but they keep it because it was their grandmother's language and this is non-negotiable. The unlicensed childcare element evolved organically: shift workers in the Narrows needed somewhere for children between school let-out and evening shifts, and Pilar's cart became the default station. Now they run an informal afternoon program, four to seven children most days, doing homework near the cart while they cook. It violates three municipal codes. The local code inspector is a regular.",
+  "description": "Rune Ingebrigtsen-Bautista is of middling height and seemingly made of angles — sharp elbows, pointed chin, quick gesturing hands that are in constant motion whether they're cooking or talking or just existing. Their hair is kept in two braids that they tuck into a wide-brimmed thermal hat while working, the hat so old and worn it has achieved a kind of structural sentience. Their skin is a warm medium brown and they have color-changing hair — shifts between dark auburn and a deep teal depending on temperature — which they got years ago and now mainly use as a weather forecaster. Cold mornings read deep teal; the regulars check it before deciding whether to add broth.\n\nRune Ingebrigtsen-Bautista has operated their cart on Morgan's Ridge for six years. The noodle setup is compact and professional — a heated two-burner system, four base broths rotating by season, and a laminated menu written in three languages including Tamazight which nobody has ordered in but they keep it because it was their grandmother's language and this is non-negotiable. The unlicensed childcare element evolved organically: shift workers in the Narrows needed somewhere for children between school let-out and evening shifts, and Rune Ingebrigtsen-Bautista's cart became the default station. Now they run an informal afternoon program, four to seven children most days, doing homework near the cart while they cook. It violates three municipal codes. The local code inspector is a regular.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -167,7 +167,7 @@
     "People Pleaser": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -185,32 +185,15 @@
     "The Narrows Compact",
     "Grandmother",
     "The Gradient Compact",
+    "Circuit",
     "TESSERA TK-4 'Hellhound'",
-    "The Pure Hand",
+    "Corner Slice",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Beverlynn Heights",
-    "Brecken Yılmaz-Osei",
-    "Devraj Solano-Yildirim",
-    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
-    "Lazarus IDP-1 'Teeth'",
-    "MERIDIAN",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech PolyGlot Live Translation Implant",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TD-3 'Hornet'",
-    "Tafara Quiñones-Saarinen",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Ghost Ronin",
-    "The Heritage Vault",
-    "The Narrows",
-    "Witness",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "The Pure Hand"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Vibrant genetic mosaic: Hispanic/Latin American (30.4%), Sub-Saharan African (23.8%), Eastern European (14.6%), Pacific Islander (12.6%), East Asian (10.7%), Northern European (7.9%). This blend manifests in warm, rich medium-brown skin with subtle olive and golden undertones, sharp facial architecture with West African bone structure influence, and the adaptability of the Pacific Islander genetic contribution",
+    "heritage": "Genetic blend of Hispanic/Latin American (50.7%), Northern European (42.7%), and Sub-Saharan African (6.6%) ancestry. This combination creates warm, rich medium-brown skin with golden and olive undertones, sharp facial architecture with defined cheekbones, and an overall warm complexion that bridges the genetic contributions seamlessly",
     "height_cm": 165,
     "weight_kg": 58,
     "build": "Angular and economical — lean muscle distributed across a frame made of sharp planes. Elbows and collarbones prominent. No wasted mass; built for twelve-hour days on feet",
@@ -218,8 +201,8 @@
     "hair_style": "Two tight braids, each pinned with worn copper rings. Usually tucked into a wide-brimmed thermal hat during cart operations",
     "hair_length": "Long (shoulder-length when unbraided, though rarely seen that way)",
     "eye_color": "Dark brown, alert and quick-moving",
-    "skin_tone": "Warm rich medium brown with golden and olive undertones, reflecting the depth of Sub-Saharan African and Hispanic/Latin American ancestry, brightened by Northern European and Pacific Islander genetic contribution",
-    "complexion": "Sharp-featured with high, defined cheekbones shaped by West African ancestry. Pointed chin. Expression frequently animated during speech. Subtle warmth in undertones suggesting the Hispanic/Latin American and Pacific Islander heritage. Hands calloused from years of cart work and constant motion. Minor steam burns on inner forearms, faded to pale scars",
+    "skin_tone": "Warm rich medium brown with golden and olive undertones, reflecting the warmth of Hispanic/Latin American ancestry (50.7%) with the lighter complexion influence of Northern European heritage (42.7%), and depth added by Sub-Saharan African contribution (6.6%)",
+    "complexion": "Sharp-featured with high, defined cheekbones and pointed chin. Warm undertones throughout with the slightly fuller lower face and fuller lip structure reflecting Hispanic/Latin American ancestry, balanced by the angular Northern European bone structure. Expression frequently animated during speech. Hands calloused from years of cart work and constant motion. Minor steam burns on inner forearms, faded to pale scars",
     "distinguishing_marks": [
       "Fine linear scar along the left temple, approximately 3cm, sustained six years ago during early cart setup accident",
       "Cluster of three small circular burn scars on the dorsal surface of the right hand (broth splash incidents), white and faded",
@@ -229,17 +212,41 @@
     "posture_movement": "Rarely still. Moves in quick, efficient gestures — hands constantly in motion whether stirring, gesturing while speaking, or reorganizing cart elements. Leans forward slightly when engaging with customers or children. Stands with weight favoring one leg while cooking, shifting periodically. Walks with purpose and speed",
     "clothing_style": "Tier 4 working-class practical wear. Standard-issue food service apron (grease-stained, many pockets) worn over layers. Long-sleeved thermal undershirt for warmth during morning shifts, rolled up during afternoon. Worn jeans with cargo pockets and reinforced knees. Steel-toed boots (required for cart work, old but maintained). Wide-brimmed thermal hat, synthetic material, faded grey with visible wear and patched seams — described as having 'achieved structural sentience.' No jewelry except the copper rings in their braids. Jacket varies by season — synthetic thermal in winter, lightweight cotton blend in summer. Everything functional, nothing decorative"
   },
-  "image_prompt": "Rune Kovalenko-Espinoza, 165cm lean angular frame, warm rich medium-brown skin with golden undertones, sharp high cheekbones, pointed chin, dark brown alert eyes. Two tight braids pinned with worn copper rings, thermochromic geneware hair shifting deep teal in cool light. Visible secondhand hearing aid in left ear with green indicator. Faded linear scar on left temple, circular burn scars on right hand dorsal surface. Hands constantly in motion, stirring steam-rising broth in a cyberpunk food cart, wearing grease-stained service apron over thermal layers, rolled-up sleeves revealing heat-scarred inner forearms, worn cargo jeans, steel-toed boots. Faded grey patched thermal hat. Leaning forward with animated expression toward customer. GLMZ 2226 evening neon glow, warm amber cart lighting against cool blue-grey urban backdrop, steam rising, cyberpunk gritty food service aesthetic. Quick efficient movement captured mid-gesture. --ar 2:3 --v 6",
+  "image_prompt": "Rune Ingebrigtsen-Bautista, a 165cm lean angular figure in GLMZ, warm rich medium-brown skin with golden and olive undertones, sharp high cheekbones and pointed chin reflecting blended Hispanic/Latin American and Northern European heritage. Dark brown alert eyes. Two tight braids pinned with worn copper rings, thermochromic geneware hair showing deep teal base shifting toward dark auburn. Visible secondhand hearing aid with green indicator light in left ear. Wearing stained food service apron over thermal layers, rolled-up sleeves revealing faded steam burn scars and calloused hands, worn jeans with reinforced knees, steel-toed boots, faded grey wide-brimmed thermal hat with patches. Fine scar along left temple. Hands constantly in motion. Standing at food cart in Great Lakes Metropolitan Zone, warm amber cart lighting against cool evening haze, steam rising from burners, purposeful and quick-moving, practical and worn but maintained. Neo-noir street food vendor aesthetic, gritty and hardworking. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.4,
-    "Sub-Saharan African": 23.8,
-    "Eastern European": 14.6,
-    "Pacific Islander": 12.6,
-    "East Asian": 10.7,
-    "Northern European": 7.9
+    "Hispanic/Latin American": 50.7,
+    "Northern European": 42.7,
+    "Sub-Saharan African": 6.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 4.1,
+        "Colombian": 46.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 6.3,
+        "Scottish": 4.2
+      },
+      "Germanic": {
+        "German": 22.6,
+        "Dutch": 9.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 1.8
+      },
+      "Southern African": {
+        "South African": 3.6,
+        "Zimbabwean": 1.2
+      }
+    }
+  }
 }

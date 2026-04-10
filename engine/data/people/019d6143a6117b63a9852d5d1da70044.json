@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6117b63a9852d5d1da70044",
   "type": "character",
-  "name": "Tumelo Asomaning",
+  "name": "Maui Moala",
   "aliases": [
     "Glitch",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near North Ave and Milwaukee",
-  "description": "Fatoumata Delgado-Opoku is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 42, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a demolitions expert out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFatoumata Delgado-Opoku operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Maui Moala is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 42, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a demolitions expert out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nMaui Moala operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.86,
@@ -262,7 +262,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,42 +277,26 @@
   "registered_firearms": [],
   "related_entities": [
     "The Unfinished Theorem",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Slagworks Industrial",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Glenville Sound",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Ilhan Sandstrom-Badu",
-    "Kamala Mori-Sefa",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "TERMINUS",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Compass Rose",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (48.8%) with significant East Asian (35.7%) and Hispanic/Latin American (15.5%) admixture. The combination creates a striking phenotype: the bone structure and facial geometry lean East Asian, the skin tone and hair texture reflect African heritage, with warm undertones from Latin American ancestry.",
+    "heritage": "Pacific Islander (50.6%) forms the primary ancestry base, creating broad facial structure and natural bone geometry. Significant Hispanic/Latin American (32.6%) ancestry adds warmth and fullness to facial features. Indigenous American (11.5%) ancestry contributes to cheekbone prominence and hair texture characteristics. Sub-Saharan African (5.3%) ancestry enriches skin undertones and adds subtle depth to overall coloration. The combination creates a striking phenotype: broad, well-defined facial structure with fullness through the face and jaw, warm golden-amber skin tone with reddish undertones that luminously blend all ancestral components, and natural wave and thickness in hair texture reflecting Pacific and Indigenous heritage.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean with defined musculature — ropy rather than bulky. Shoulders slightly asymmetrical from years of carrying heavy ordnance loads. Center of gravity naturally low, built for agility rather than raw power.",
     "hair_color": "Natural black with silvered streaks at temples",
     "hair_style": "Pulled back in a tight, functional braid. Rarely loose. Practical to the point of severity.",
     "hair_length": "Medium (shoulder-length when unbraided)",
-    "eye_color": "Warm brown with subtle monolid East Asian geometry, slightly hooded at the outer corners",
-    "skin_tone": "Rich warm bronze — deep Sub-Saharan undertones with olive-amber warmth from East Asian and Latin American heritage. Sun-darkened from outdoor work into a lustrous mahogany-bronze.",
-    "complexion": "High, prominent cheekbones with East Asian geometry softened by fuller facial structure from African ancestry. Angular jaw with subtle width through the mandible. Minimal grooming beyond functionality — a faint scar at the left temple from shrapnel. Crow's feet pronounced for her age from squinting at precise work. Lips full and usually pressed into a neutral line. Skin weathered but not damaged, marked by chemical burns on the inside of her left forearm (acid exposure from early ordnance work). Nose straight and moderate-width, reflecting the ancestry blend.",
+    "eye_color": "Warm brown, deep and clear",
+    "skin_tone": "Medium warm bronze with golden-amber undertones — the blend of Pacific Islander, Hispanic/Latin American, Indigenous American, and Sub-Saharan African heritage creates a luminous, sun-kissed finish. Darkened from outdoor work into a rich caramel-bronze with subtle reddish undertones in direct light.",
+    "complexion": "Broad, well-defined cheekbones characteristic of Pacific Islander and Indigenous American ancestry, with fullness through the face and jaw. Angular mandible softened by the structural width of Pacific Islander heritage. Minimal grooming beyond functionality — a faint scar at the left temple from shrapnel. Crow's feet pronounced for her age from squinting at precise work. Lips full and usually pressed into a neutral line. Skin weathered but not damaged, marked by chemical burns on the inside of her left forearm (acid exposure from early ordnance work). Nose broad and straight, reflecting the diverse ancestry blend.",
     "distinguishing_marks": [
       "Shrapnel scar at left temple, approximately 3cm, pale and slightly depressed into the skin",
       "Chemical burn marks on inner left forearm — discolored patches of lighter skin, concentrated around wrist and medial arm",
@@ -323,14 +307,56 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight distributed toward the balls of her feet, ready to pivot or bolt. Head slightly forward, eyes tracking. Resting jaw tension suggests active calculation. When still, her fingers tap an irregular rhythm against her thigh — a kinetic stim that never quite stops. Walks fast even when there's no hurry.",
     "clothing_style": "Tier 3-4 practical runner aesthetic. Reinforced charcoal synthcotton cargo pants with multiple pockets (keys, detonators, encrypted data spools). Steel-toed boots, scuffed and re-sealed. Loose-fit dark jacket in cracked-finish ballistic nylon — oversized to conceal ordnance-related lumps and allow arm mobility. Under-layer is a fitted black compression shirt with cooling channels printed into the fabric. No logos or corp affiliation. Jewelry limited to a worn steel wrist-cuff (custom-made, likely houses a micro-timer or range-finder tool). Her entire wardrobe reads as someone who prioritizes function over fashion, maintenance over aesthetics."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Tumelo Asomaning, a lean 168cm tall ordnance specialist with rich mahogany-bronze skin blending Sub-Saharan, East Asian, and Latin American heritage. High angular cheekbones with East Asian geometry, warm brown eyes with subtle monolids, sharp jawline. Black hair with silver temples pulled back in tight functional braid. Visible chrome neural jack at base of skull between braid sections, hydraulic joint servos gleaming faintly at elbows and knees. Chemical burn scars on left inner forearm, shrapnel scar at left temple, detonator tattoo on right shoulder blade. Wearing loose charcoal ballistic nylon jacket over black fitted compression shirt, cargo pants with multiple pockets, scuffed steel-toed boots. Steel wrist-cuff tool. Posture economical and precise, fingers tapping irregular rhythm against thigh, weight forward on balls of feet. Industrial neon lighting, cool blue and amber shadows casting across weathered features. Kinetic tension in every line. Runner aesthetic, practical and dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Maui Moala, 168cm lean wiry woman with caramel-bronze skin, rich warm undertones from Pacific Islander and Latin American ancestry, broad defined cheekbones, natural black hair braided tight with silver streaks at temples. Deep warm brown eyes, full lips, faint shrapnel scar at left temple, chemical burn marks on inner left forearm. Chrome neural jack visible at base of skull between braid sections. Wearing charcoal cargo pants, steel-toed boots, oversized cracked-finish ballistic nylon jacket over fitted black compression shirt. Steel wrist-cuff. Posture economical and precise, weight forward on balls of feet, head slightly forward with tracking gaze. GLMZ setting, industrial warehouse or underground runner safehouse, moody neon and fluorescent lighting, rain-slicked surfaces, quiet tension before action. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 48.8,
-    "East Asian": 35.7,
-    "Hispanic/Latin American": 15.5
+    "Pacific Islander": 50.6,
+    "Hispanic/Latin American": 32.6,
+    "Indigenous American": 11.5,
+    "Sub-Saharan African": 5.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Melanesian": {
+        "Ni-Vanuatu": 16.8,
+        "Fijian": 25.8
+      },
+      "Polynesian": {
+        "Hawaiian": 8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 6.9
+      },
+      "Central American": {
+        "Guatemalan": 12.9
+      },
+      "Caribbean": {
+        "Dominican": 9.8,
+        "Puerto Rican": 3
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 11.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 1.6,
+        "Congolese": 3
+      },
+      "East African": {
+        "Tanzanian": 0.5
+      },
+      "Southern African": {
+        "South African": 0.1,
+        "Mozambican": 0.1
+      }
+    }
+  }
 }

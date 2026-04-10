@@ -6,7 +6,9 @@
   "date": "unknown",
   "classification": "classified",
   "description": "Patient file with most fields redacted. Visible: Age: 9. Condition: [REDACTED]. Treatment: [REDACTED]. Notes: \"Patient demonstrates cognitive function consistent with [REDACTED] years of age. Neural architecture shows patterns of [REDACTED]. Recommend transfer to [REDACTED] facility. DO NOT discharge to general population.\"",
-  "related_entities": [],
+  "related_entities": [
+    "Neural Palate"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What cognitive age does this 9-year-old demonstrate?",

@@ -209,7 +209,7 @@ public class DatabaseService : IDatabaseService
     public string GetToneBiblePrompt()
     {
         var tb = ToneBible;
-        var lines = new List<string> { "CYBERPUNK TONE — THESE DEFINE HOW THE STORY FEELS:" };
+        var lines = new List<string> { "NARRATIVE TONE — THESE DEFINE HOW THE STORY FEELS:" };
         foreach (var rule in tb.ToneRules.Take(8))
             lines.Add($"  - {rule}");
         if (tb.DialogueRules.Any())

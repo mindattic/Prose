@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6197d8e83ab9cf34f679571",
   "type": "character",
-  "name": "Echo Krishnamurthy-Mbekele",
+  "name": "Echo Hoang-Saechao",
   "aliases": [
     "Gav",
     "Old Bristle"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Lockhaven South, GLMZ, near Milwaukee and North Ave",
-  "description": "Gavril is a lean, permanently greasy man — Ghanaian and Polish ancestry that shows itself in his dark complexion, his wide jaw, and the pale grey eyes that his tenants find unsettling until they realize that unsettling is not the same as unkind. He has a grey-streaked bristle of beard he trims with terrifying exactitude every four days, a set of retractable utility fingers on his left hand (a practical augmentation he paid for in installments over eight years, not cosmetic — he had three fingers crushed in a compactor accident when he was younger), and he moves through the building's maintenance corridors with the confident proprietary air of a man who knows every pipe's history.\n\nGavril has been superintendent of the Lockhaven South Block 7 residential tower for nineteen years. He knows the building the way a doctor knows a patient — its histories, its weaknesses, its bad habits. He also knows its 340 residents the way a general practitioner knows a small town: too much, and without the distance that would make it comfortable. He is not a friendly man in the conventional sense but he is a reliable one, which in Lockhaven South is worth significantly more.",
+  "description": "Echo Hoang-Saechao is a lean, permanently greasy man — Ghanaian and Polish ancestry that shows itself in his dark complexion, his wide jaw, and the pale grey eyes that his tenants find unsettling until they realize that unsettling is not the same as unkind. He has a grey-streaked bristle of beard he trims with terrifying exactitude every four days, a set of retractable utility fingers on his left hand (a practical augmentation he paid for in installments over eight years, not cosmetic — he had three fingers crushed in a compactor accident when he was younger), and he moves through the building's maintenance corridors with the confident proprietary air of a man who knows every pipe's history.\n\nEcho Hoang-Saechao has been superintendent of the Lockhaven South Block 7 residential tower for nineteen years. He knows the building the way a doctor knows a patient — its histories, its weaknesses, its bad habits. He also knows its 340 residents the way a general practitioner knows a small town: too much, and without the distance that would make it comfortable. He is not a friendly man in the conventional sense but he is a reliable one, which in Lockhaven South is worth significantly more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -155,7 +155,7 @@
     "Scholar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lockhaven South",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,32 +170,17 @@
   "related_entities": [
     "Lockhaven South",
     "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "GLMZ",
-    "Palladian Construction",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Pale Mile",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
     "Aphelion",
-    "Devraj Solano-Yildirim",
-    "Free Assembly",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Sisay Bergqvist-Mallari",
-    "The Pure Hand",
-    "The Reclamation Assembly",
-    "Tshiamo Vukić-Arellano",
-    "Tympanic Membrane Galvanic Rupture Carbine"
+    "Palladian Construction",
+    "The Accidental",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Compass Rose",
+    "The Pale Mile",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African (45.3%) with South Asian (28.0%) and Sub-Saharan African (26.7%) ancestry, creating a rich blended phenotype. The combination produces warm, deep brown skin tones with subtle undertones reflecting the tri-continental mix.",
+    "heritage": "Southeast Asian (51.1%) forms the primary genetic foundation, creating warm olive-golden undertones enhanced by East Asian (11.6%) and South Asian (10.8%) ancestry. Eastern European (15.8%) and Northern European (10.1%) contributions add subtle depth and cooler undertones to the complexion, while trace Sub-Saharan African (0.6%) ancestry adds warmth to the overall phenotype. This blended ancestry creates a distinctive warm tan to golden-olive skin tone with character lines shaped by Southeast and South Asian genetic patterns.",
     "height_cm": 176,
     "weight_kg": 68,
     "build": "Lean and ropy, with visible forearm musculature from decades of manual work. Shoulders rounded slightly forward from years hunched over maintenance panels. Core remains functionally strong despite age.",
@@ -203,8 +188,8 @@
     "hair_style": "Short, practical crew cut, never fashionable but consistently maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown, slightly rheumy at the corners",
-    "skin_tone": "Deep warm brown with golden and reddish undertones from the North African-South Asian-Sub-Saharan African blend, weathered and lined from decades of exposure and labor",
-    "complexion": "Deeply lined face, particularly around eyes and forehead with characteristic creasing from the North African and South Asian genetic contributions. Permanent grease stains on hands and forearms despite frequent washing. Jaw is wide and heavy with the architectural strength common to Sub-Saharan and North African ancestry. Beard maintained at 2mm bristle length with geometric precision — trimmed every four days, showing natural dark coloring with grey threading. Numerous small scars on knuckles and hands from industrial work.",
+    "skin_tone": "Warm golden-olive complexion with subtle peachy undertones from the blended Southeast Asian, South Asian, and Northern European ancestry. Weathered and lined from decades of exposure and labor, with the characteristic creasing patterns of Southeast and South Asian genetics.",
+    "complexion": "Lined face with Southeast and South Asian genetic features: pronounced eye-corner creasing, moderate orbital depth, and refined angular jawline. Moderate-width nasal bridge with slightly flared nostrils typical of South and Southeast Asian ancestry. Cheekbones subtly prominent from East Asian genetic contribution. Permanent grease stains on hands and forearms despite frequent washing. Beard maintained at 2mm bristle length with geometric precision — trimmed every four days, showing natural dark coloring with grey threading. Numerous small scars on knuckles and hands from industrial work.",
     "distinguishing_marks": [
       "Thin white scar running 8cm along the inside of his right forearm from a pipe burst",
       "Older burn scar on left shoulder, pale and roughly circular, approximately 4cm diameter",
@@ -215,14 +200,71 @@
     "posture_movement": "Walks with efficient, economical movements — no wasted motion. Slight forward lean from his spinal posture. Hands often at rest in his pockets or held at chest level. When working, movements are deliberate and practiced, muscle memory precise. Eye contact is direct and held slightly too long, which reads as either contemplative or vaguely threatening depending on the observer.",
     "clothing_style": "Tier 3 utilitarian — grey or brown Carhartt-adjacent work shirts with multiple chest pockets, usually half-unbuttoned and layered with a faded thermal underneath. Matching work pants with tool belt worn at hip level. Steel-toed boots scuffed and re-sealed multiple times. A heavy canvas jacket for outside work, patched at the elbows. No jewelry. Clothing perpetually carries faint scent of machine oil, solder flux, and building decay."
   },
-  "image_prompt": "Echo Krishnamurthy-Mbekele, 50s, lean muscular man with deep warm brown skin blending North African, South Asian, and Sub-Saharan African heritage. Dark hair with grey threading, close crew cut. Deeply lined face, wide jaw, dark brown eyes with direct penetrating gaze. Left hand retrofitted with retractable chrome utility finger assembly showing age and use. Weathered industrial scars on forearms and hands. Wearing half-unbuttoned grey work shirt over thermal, faded work pants, heavy canvas jacket patched at elbows, steel-toed boots. Standing in dimly lit GLMZ maintenance corridor, fluorescent overhead casting harsh shadows. Posture slightly forward-leaning from spinal wear. Machine oil and solder flux scent implicit. Cyberpunk 2226, gritty maintenance worker aesthetic, utilitarian worn functionality, contemplative or vaguely threatening expression, dim industrial lighting with neon accent --ar 2:3 --v 6",
+  "image_prompt": "Echo Hoang-Saechao, 176cm lean middle-aged male with warm golden-olive Southeast Asian complexion, weathered face with deep character lines around eyes and forehead, dark brown hair salt-greyed at temples in short crew cut, dark rheumy eyes with direct intense gaze, precisely-maintained 2mm dark beard with grey threading, angular refined jawline blending Southeast and East Asian features. Left hand features retractable chrome-steel utility finger multi-tool with visible articulated seams and aged engineering gaps. Heavy industrial scars on knuckles, forearms showing white pipe-burst scar and burn mark on shoulder. Wearing half-unbuttoned faded grey work shirt layered over thermal, matching worn work pants with tool belt, scuffed steel-toed boots, patched canvas jacket. Economical posture with slight forward lean, hands at chest level. GLMZ 2200s Great Lakes Metropolitan Zone setting, industrial maintenance dock with warm amber overhead lighting casting deep shadows, machine oil and decay atmosphere, moody and contemplative expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 45.3,
-    "South Asian": 28.0,
-    "Sub-Saharan African": 26.7
+    "Southeast Asian": 51.1,
+    "Eastern European": 15.8,
+    "East Asian": 11.6,
+    "South Asian": 10.8,
+    "Northern European": 10.1,
+    "Sub-Saharan African": 0.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 12.1
+      },
+      "Thai": {
+        "Thai": 26.2
+      },
+      "Vietnamese": {
+        "Vietnamese": 12.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 6,
+        "Croatian": 7.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 2,
+        "Romanian": 0.5
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 11.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.8
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 0.8
+      },
+      "Indian": {
+        "Bengali": 0.4,
+        "Telugu": 3.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 10.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 0.4
+      },
+      "West African": {
+        "Ivorian": 0.1,
+        "Nigerian": 0.1
+      }
+    }
+  }
 }

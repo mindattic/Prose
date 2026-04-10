@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66a7973ba8ac6edadbfc3bd",
   "type": "character",
-  "name": "Driss Čabarkapa",
+  "name": "Sibusiso Pham",
   "aliases": [
     "Aunt Nneka",
     "The Shelf Mother"
@@ -13,7 +13,7 @@
   "age": 46,
   "status": "active",
   "location": "The Narrows, operates from the third floor of a residential block in Archer's Line, near Armitage and Milwaukee",
-  "description": "Nneka Polat-Sabadell is the kind of woman who walks into a room and the room notices without being able to say exactly why. She is heavyset and deliberate in her movements, with deep black skin, natural hair worn up and held with a carved wooden pick that has been with her for twenty years, and eyes that are dark brown and absolutely still. She has retractable claw augmentations — a practical modification she got at thirty, not cosmetic — and a lattice of subdermal reinforcement along her forearms that makes the skin there look subtly different under harsh light. She dresses practically: good boots, layered clothing, never anything that would impede movement. She smells faintly of the palm oil soap she makes herself as a hobby.\n\nShe has run protection in the Narrows for thirteen years. Before that she enforced for other people. Before that she was seventeen and making decisions she tries not to think about with too much clarity. The neighborhood where she operates is genuinely safer because of her — she takes tribute from the businesses on six blocks, and those six blocks have significantly lower rates of random street violence than the surrounding areas, because she is not interested in chaos and has the means to discourage it. She sees no contradiction between this and what she is. She is providing a service. The fact that the alternative to purchasing the service is something unpleasant is, in her view, no different from any other contract in GLMZ.",
+  "description": "Sibusiso Pham is the kind of woman who walks into a room and the room notices without being able to say exactly why. She is heavyset and deliberate in her movements, with deep black skin, natural hair worn up and held with a carved wooden pick that has been with her for twenty years, and eyes that are dark brown and absolutely still. She has retractable claw augmentations — a practical modification she got at thirty, not cosmetic — and a lattice of subdermal reinforcement along her forearms that makes the skin there look subtly different under harsh light. She dresses practically: good boots, layered clothing, never anything that would impede movement. She smells faintly of the palm oil soap she makes herself as a hobby.\n\nShe has run protection in the Narrows for thirteen years. Before that she enforced for other people. Before that she was seventeen and making decisions she tries not to think about with too much clarity. The neighborhood where she operates is genuinely safer because of her — she takes tribute from the businesses on six blocks, and those six blocks have significantly lower rates of random street violence than the surrounding areas, because she is not interested in chaos and has the means to discourage it. She sees no contradiction between this and what she is. She is providing a service. The fact that the alternative to purchasing the service is something unpleasant is, in her view, no different from any other contract in GLMZ.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -187,7 +187,7 @@
     "Muscle": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,37 +253,17 @@
   "related_entities": [
     "Archer's Line",
     "The Narrows Compact",
-    "GLMZ",
+    "Plot 17",
     "The Quiet Room",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "Stratum",
-    "The Milwaukee Core",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Arcturus Exo-Runner Frame",
-    "Auburn Grist",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Corva Lam",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Djeneba Park-Traore",
-    "Ferrogate Enforcer Cruiser",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Meridian Core",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Pikasso Wemba-Þórðarson",
-    "Plot 17",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA TC-3 'Crucible'",
-    "The Arrangement",
-    "The Narrows",
-    "The Pure Hand",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Palm Leaf",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European-North African-Pacific Islander blend with South Asian and Hispanic influences. The genetic mix creates a striking phenotype: Eastern European bone structure and build foundation, North African and Pacific Islander warmth in skin tone and facial features, with subtle South Asian undertones in eye shape and complexion depth.",
+    "heritage": "Southeast Asian-Sub-Saharan African-South Asian blend. The genetic foundation is predominantly Southeast Asian (62.2%), creating a phenotype with Southeast Asian bone structure and facial features, enriched by Sub-Saharan African warmth in skin tone and facial depth (19.8%), and South Asian undertones in complexion richness and eye characteristics (18.0%). This tri-continental ancestry creates a striking, harmonious phenotype with slightly broader facial structure than typical Southeast Asian features, deeper skin luminosity from the Sub-Saharan African component, and the refined complexion depth characteristic of South Asian genetics.",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Heavyset and solid, with substantial muscle mass beneath a layer of deliberate bulk. Broad shoulders, thick through the core, legs like load-bearing columns. No softness — every kilogram appears intentional.",
@@ -291,8 +271,8 @@
     "hair_style": "Worn up in a tight, sculpted arrangement, secured with a weathered carved wooden pick (same implement for twenty years)",
     "hair_length": "Long (worn pinned)",
     "eye_color": "Dark brown, nearly black",
-    "skin_tone": "Warm medium-brown complexion with olive and golden undertones, reflecting the convergence of Eastern European, North African, and Pacific Islander ancestry. Uniform and well-maintained with a subtle luminosity.",
-    "complexion": "Broad face with high, pronounced cheekbones and a squared jaw showing Eastern European structure softened by North African and Pacific Islander features. Skin shows minimal scarring but bears the subtle discoloration of subdermal latticing visible beneath the surface of her forearms under harsh light. Grooming is austere and functional — no cosmetics, no jewelry except the wooden pick. A faint scent of palm oil soap clings to her.",
+    "skin_tone": "Warm medium-brown complexion with golden and reddish undertones, reflecting the convergence of Southeast Asian, Sub-Saharan African, and South Asian ancestry. Uniform and well-maintained with a subtle luminosity and depth characteristic of the tri-continental blend.",
+    "complexion": "Broad face with Southeast Asian bone structure — moderately high cheekbones, strong defined jawline softened by Sub-Saharan African facial warmth and enriched by South Asian complexion depth. Eyes set with slight epicanthic fold characteristic of Southeast Asian ancestry, framed by the deeper eye socket structure reflecting Sub-Saharan African phenotype. Skin shows minimal scarring but bears the subtle discoloration of subdermal latticing visible beneath the surface of her forearms under harsh light. Grooming is austere and functional — no cosmetics, no jewelry except the wooden pick. A faint scent of palm oil soap clings to her.",
     "distinguishing_marks": [
       "Fine, almost imperceptible grid-pattern scarring across both forearms from subdermal reinforcement installation, visible only under direct harsh lighting",
       "Small, pale crescent scar on the knuckle of her right index finger (origin: retractable claw calibration incident, age 31)",
@@ -302,16 +282,44 @@
     "posture_movement": "Moves with deliberate, economical precision — nothing wasted, nothing hurried. Her weight is always centered and ready to shift. When seated, she occupies space without apology. When standing, her feet are planted shoulder-width apart. Her stillness is her most unsettling feature: her eyes lock onto conversation partners with minimal blinking, and her facial expressions remain controlled and minimal. She doesn't fidget or gesture unnecessarily.",
     "clothing_style": "Tier 4 practical — functional and durable without ostentation. Well-maintained but worn boots (good tread, reinforced toe caps), layered clothing that allows free movement (usually a linen undershirt, a loose canvas overshirt, cargo trousers with multiple pockets). Fabrics are matte, colored in deep grays, blacks, and earth tones. Everything is fitted to allow unrestricted movement. No jewelry, no logos, no affectation. The overall impression is of someone who dresses for work, not appearance."
   },
-  "image_prompt": "Driss Čabarkapa, 178cm tall, heavyset with powerful musculature, warm medium-brown skin with olive undertones, high cheekbones, squared jaw. Natural black hair worn long and pinned up with wooden pick. Dark brown eyes, minimal expression, controlled stillness. Subdermal skeletal reinforcement visible as subtle texture changes on forearms under harsh light. Retractable ceramic claw augmentations on fingers (not extended). Wearing practical layered clothing: linen undershirt, loose canvas overshirt, cargo trousers with multiple pockets, well-worn reinforced boots. Matte fabrics in deep grays and blacks. Cyberpunk 2226, Great Lakes Metropolitan Zone, indoor industrial setting with harsh overhead lighting casting shadows across her austere face. Seated with centered posture, hands visible showing faint grid-pattern scarring. Utterly composed, minimal affect, economical stillness. --ar 2:3 --v 6",
+  "image_prompt": "Sibusiso Pham, 178cm tall solidly-built figure with warm medium-brown skin tone reflecting Southeast Asian, Sub-Saharan African, and South Asian heritage. Broad face with high cheekbones and strong jawline, dark nearly-black eyes with slight epicanthic fold, natural black hair worn long and pinned up with a weathered wooden pick. Minimalist aesthetic in matte gray, black, and earth-tone practical clothing — linen undershirt, loose canvas overshirt, cargo trousers, worn reinforced boots. Standing with centered posture, feet shoulder-width apart, expression controlled and watchful. Subdermal reinforcement latticing subtly visible on forearms under harsh lighting. GLMZ, neon-lit Great Lakes Metropolitan Zone, professional security operative aesthetic, economical and ready, no augmentation visible but presence unmistakable, moody atmospheric lighting emphasizing her mechanical enhancements, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 34.9,
-    "North African": 26.1,
-    "Pacific Islander": 17.0,
-    "South Asian": 11.6,
-    "Hispanic/Latin American": 10.4
+    "Southeast Asian": 62.2,
+    "Sub-Saharan African": 19.8,
+    "South Asian": 18
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Bicolano": 17.3
+      },
+      "Indonesian": {
+        "Sumatran": 24
+      },
+      "Vietnamese": {
+        "Vietnamese": 20.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 8.3,
+        "South African": 11.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 9.3
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.1
+      },
+      "Indian": {
+        "Bengali": 3.6
+      }
+    }
+  }
 }

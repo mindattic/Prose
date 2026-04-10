@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6bd7927bc61412de1394674",
   "type": "character",
-  "name": "Chidi Sigurdsson",
+  "name": "Samira Seo",
   "aliases": [
     "Red",
     "Réa"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Mexicantown Libre, Grand Corridor, near Pulaski and Chicago Ave",
-  "description": "Réamonn is wiry and restless, with warm copper-tan skin, a gap between his front teeth, and a mop of deep red hair that is entirely natural and has been a source of commentary his entire life. He's of average height but seems taller when he performs — something about how he uses his body changes when he has a puppet on his arm. His hands are his most distinctive feature: long-fingered, constantly moving, stained with the paints and solvents he uses to build his puppets. He has retractable cat-claw mods on both hands, which he uses practically for puppet construction rather than any aesthetic reason.\n\nRéamonn builds elaborate articulated puppet figures from salvage — recycled plastic, old circuit boards, scraps of fabric from Mexicantown's textile markets — and performs at the intersection of Grand Corridor and the Libre's main plaza most afternoons. He's been doing this since he was fifteen, unlicensed, subsisting on tips and the UBC stipend. His performances are satirical, political, and often about things happening in the specific neighborhood that day, which means he has a dedicated local following and has twice been asked by Ferrogate Transit security to 'move along.' He always does. He always comes back. He is young enough to believe this is sustainable and old enough to know it might not be.",
+  "description": "Samira Seo is wiry and restless, with warm copper-tan skin, a gap between his front teeth, and a mop of deep red hair that is entirely natural and has been a source of commentary his entire life. He's of average height but seems taller when he performs — something about how he uses his body changes when he has a puppet on his arm. His hands are his most distinctive feature: long-fingered, constantly moving, stained with the paints and solvents he uses to build his puppets. He has retractable cat-claw mods on both hands, which he uses practically for puppet construction rather than any aesthetic reason.\n\nSamira Seo builds elaborate articulated puppet figures from salvage — recycled plastic, old circuit boards, scraps of fabric from Mexicantown's textile markets — and performs at the intersection of Grand Corridor and the Libre's main plaza most afternoons. He's been doing this since he was fifteen, unlicensed, subsisting on tips and the UBC stipend. His performances are satirical, political, and often about things happening in the specific neighborhood that day, which means he has a dedicated local following and has twice been asked by Ferrogate Transit security to 'move along.' He always does. He always comes back. He is young enough to believe this is sustainable and old enough to know it might not be.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -201,27 +201,18 @@
     "Ferrogate Transit",
     "Mexicantown Libre",
     "Grand Corridor",
+    "GLMZ",
+    "Circuit",
     "Red Circuit RC-Pit 'Dogfighter'",
-    "Copper",
-    "Lazarus IDP-1 'Teeth'",
-    "The Pure Hand",
     "Chicago",
-    "Amara Osei-Dzhaparidze",
-    "Aïssé Dragomirescu-Faalelei",
-    "Irontide Tidal Energy",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tapetum Lucidum Integration",
-    "Tessera Corponation",
-    "Tessera Neural Assault System TNAS-1 'Puppeteer'",
-    "Yannick Tambadou-Reinholt",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Copper",
+    "Origin",
+    "Lazarus IDP-1 'Teeth'",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (47.7%) with substantial Northern European (33.9%) and Middle Eastern (18.4%) ancestry, creating a complex phenotype with rich warm undertones and moderate feature blending",
+    "heritage": "Predominantly Middle Eastern (57.0%) with substantial East Asian (26.3%) and Eastern European (16.7%) ancestry. The genetic blend creates striking angular facial geometry with the strong cheekbones and defined jawline characteristic of Levantine heritage, softened and refined by East Asian features, and lightened slightly by Eastern European admixture. This combination produces a unique phenotype that reads as visibly mixed-heritage with warm, luminous undertones.",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Wiry and lean, with the tensile strength of someone who works with their hands constantly. Visible muscle definition in forearms and shoulders from puppet manipulation and construction work, but no bulk. Restless energy visible even at rest.",
@@ -229,25 +220,59 @@
     "hair_style": "Shoulder-length, often tied back loosely with scrap fabric or wire, perpetually mussed from constant hand-running and puppet work",
     "hair_length": "Long",
     "eye_color": "Warm brown with amber flecks",
-    "skin_tone": "Rich warm bronze with golden undertones — the result of African melanin dominance tempered by Northern European and Middle Eastern heritage, creating a luminous depth without strong freckling",
-    "complexion": "Defined facial structure with prominent cheekbones and a strong jawline reflecting African ancestry, softened by Northern European and Middle Eastern influences. Gap between upper front teeth (distinctive, never corrected). Skin shows minor scarring on knuckles and fingers from solvents and construction. Hands perpetually stained with acrylic paint residue in blues, blacks, and metallics that doesn't fully wash out.",
+    "skin_tone": "Warm golden-bronze with honeyed undertones—the result of blended Middle Eastern, East Asian, and Eastern European ancestry creating luminous depth with subtle golden radiance and balanced warmth across the spectrum.",
+    "complexion": "Angular facial structure with prominent cheekbones and strong geometric planes reflecting the Middle Eastern and East Asian ancestry blend. Defined jawline. Gap between upper front teeth (distinctive, never corrected). Skin shows minor scarring on knuckles and fingers from solvents and construction. Hands perpetually stained with acrylic paint residue in blues, blacks, and metallics that doesn't fully wash out.",
     "distinguishing_marks": [
       "Fine white scars across both palms from repeated contact with circuit board edges during puppet construction",
       "Paint stains under fingernails, primarily deep blue and charcoal, a semi-permanent occupational mark",
       "Small burn scar on right inner forearm from soldering iron mishap at age sixteen, roughly 3cm in length"
     ],
-    "visible_augmentations": "Retractable cat-claw mods on both hands — visible as faint seams at the base of each fingernail when retracted, creating a subtle metallic glint under direct light. Claws are brushed steel, kept functional but unadorned. No visible evidence of color-shifting geneware when hair is in its natural red state.",
-    "posture_movement": "Hunched slightly forward when walking, shoulders mobile and expressive. Hands are almost never still — fidgeting, gesturing, unconsciously mimicking puppet movements. When performing, posture elongates and becomes theatrical; he seems to grow taller as he inhabits the space. Moves with the precision of a marionettist even in mundane tasks.",
-    "clothing_style": "Tier 4 working-class with salvage-chic aesthetic. Favors loose cargo pants in faded black or charcoal with multiple pockets for tools and paint supplies. Layers thrifted oversized shirts or vests over fitted tank tops, often modified or repaired visibly. Wears a long coat of indeterminate origin — patchworked denim and canvas, lined with interior pockets for puppet storage. Scuffed synthleather boots, well-maintained. Accessories include wire bracelets, fabric wrist cuffs stained with work, and a woven bag slung across his chest containing current puppet builds."
+    "visible_augmentations": "Retractable cat-claw mods on both hands—visible as faint seams at the base of each fingernail when retracted, creating a subtle metallic glint under direct light. Claws are brushed steel, kept functional but unadorned.",
+    "posture_movement": "Hunched slightly forward when walking, shoulders mobile and expressive. Hands are almost never still—fidgeting, gesturing, unconsciously mimicking puppet movements. When performing, posture elongates and becomes theatrical; seems to grow taller as he inhabits the space. Moves with the precision of a marionettist even in mundane tasks.",
+    "clothing_style": "Tier 4 working-class with salvage-chic aesthetic. Favors loose cargo pants in faded black or charcoal with multiple pockets for tools and paint supplies. Layers thrifted oversized shirts or vests over fitted tank tops, often modified or repaired visibly. Wears a long coat of indeterminate origin—patchworked denim and canvas, lined with interior pockets for puppet storage. Scuffed synthleather boots, well-maintained. Accessories include wire bracelets, fabric wrist cuffs stained with work, and a woven bag slung across his chest containing current puppet builds."
   },
-  "image_prompt": "Chidi Sigurdsson, a lean 173cm tall puppeteer-artist in cyberpunk 2226, with rich warm bronze skin reflecting deep Sub-Saharan African heritage blended with Northern European and Middle Eastern ancestry, creating luminous golden undertones. Shoulder-length deep red hair with copper glints, loosely tied back with scrap fabric. Warm brown eyes with amber flecks, distinctive gap-toothed smile. Sharp defined cheekbones and strong jawline. Hands bear fine white scars and permanent paint stains in deep blues and charcoal from obsessive puppet construction work. Retractable cat-claw augmentations visible as metallic seams at fingernail bases. Wears patchworked denim and canvas long coat over layered thrifted clothing, multiple pockets stuffed with tools, loose charcoal cargo pants, scuffed synthleather boots. Wire bracelets and paint-stained fabric cuffs on wrists. Posture slightly hunched forward, shoulders expressive, hands perpetually fidgeting with theatrical precision. Standing in a dim workshop space with blue and black puppet frames visible in background, neon workshop lighting casting golden highlights across his skin, surrounded by paint cans and half-finished marionette builds. Cyberpunk dystopian Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Samira Seo, mixed-heritage neo-noir marionettist, 173cm lean build, shoulder-length deep red copper hair loosely tied back, warm golden-bronze luminous skin with honeyed undertones, angular face with prominent cheekbones and gap-toothed smile, warm brown eyes with amber flecks, gap between front teeth. Hands show blue and black paint stains, fine white scars on palms, retractable steel cat-claw augmentations visible at fingernail seams with metallic glint. Wearing patchworked denim and canvas long coat, faded black cargo pants with multiple pockets, oversized thrifted layers, scuffed synthleather boots. Wire bracelets and paint-stained fabric wrist cuffs. Woven bag across chest. Posture slightly hunched with restless, fidgeting hands. In dimly-lit salvage workshop surrounded by puppet constructs, neon signs reflecting off work surfaces, theatrical mood, intense focused expression, GLMZ, volumetric lighting catching the metallic glint of augmentations, gritty working-class aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 47.7,
-    "Northern European": 33.9,
-    "Middle Eastern": 18.4
+    "Middle Eastern": 57,
+    "East Asian": 26.3,
+    "Eastern European": 16.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 43.2
+      },
+      "Arab Gulf": {
+        "Iraqi": 7.7
+      },
+      "Arab Levantine": {
+        "Syrian": 4.3,
+        "Lebanese": 1.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 5.6
+      },
+      "Korean": {
+        "Korean": 13.6
+      },
+      "Japanese": {
+        "Japanese": 7.1
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 12.4
+      },
+      "Slavic South": {
+        "Serbian": 2.4,
+        "Slovenian": 1.9
+      }
+    }
+  }
 }

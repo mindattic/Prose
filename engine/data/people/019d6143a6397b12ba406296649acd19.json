@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6397b12ba406296649acd19",
   "type": "character",
-  "name": "Liv Prempeh",
+  "name": "Liv Sigurdsson",
   "aliases": [
     "Iz",
     "Fizz"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "The Ferment Quarter — works at a bar called Undertow, near North Ave and Milwaukee",
-  "description": "Izel is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware — it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand — not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone's illicit smoke, and Izel moves through it with the calm authority of someone who has memorized every regular's drink and every stranger's threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don't catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt — not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar's ancient refrigeration unit, leaving it data packets of good music.",
+  "description": "Liv Sigurdsson is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware — it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand — not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone's illicit smoke, and Liv Sigurdsson moves through it with the calm authority of someone who has memorized every regular's drink and every stranger's threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don't catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt — not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar's ancient refrigeration unit, leaving it data packets of good music.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -185,7 +185,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Ferment Quarter",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,28 +246,11 @@
     "Silver",
     "Ringo Corponation",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kadiatou Bergstrom-Konate",
-    "Narrowcast",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Piezoelectric Synaptic Disruption Gauntlet",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Listener",
-    "The Quiet Room",
-    "The Shelf",
-    "Tooth Fairy",
-    "Tshiamo Vukić-Arellano",
-    "Whispermouth"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (32.5%) with significant Northern European (24.1%), Eastern European (20.3%), and Southeast Asian (18.7%) ancestry, creating a rich polychromatic genetic blend. A minor Hispanic/Latin American component (4.4%) completes a truly global heritage.",
+    "heritage": "Northern European dominant (57.7%) with substantial East Asian (22.3%) and South Asian (20.0%) ancestry, creating a striking cross-continental blend. Northern European bone structure combines with warmth and subtle complexity from East Asian and South Asian heritage lines—evident in both facial geometry and skin undertones.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and angular, with narrow shoulders and long limbs that move with economical precision. No excess weight; muscle definition shows through the wrists and forearms from years of bar work.",
@@ -275,8 +258,8 @@
     "hair_style": "Shoulder-length, loosely layered, often pulled back with a clip or cord during shifts",
     "hair_length": "Medium",
     "eye_color": "Augmented: concentric rings of silver (outer) and violet (inner), natural pupil at center",
-    "skin_tone": "Deep warm brown with subtle golden undertones, reflecting the complex blend of Sub-Saharan African, Northern European, Eastern European, and Southeast Asian ancestry. The tone is rich and even, with warm radiance beneath the surface.",
-    "complexion": "Striking facial structure with prominent, sculptural cheekbones and angular jawline reflecting African heritage characteristics. Skin is clear and well-maintained, though marked by the pallor of someone who sleeps through daylight. Minimal grooming — functional rather than elaborate. A faint scar traces the inside of the right wrist from an early implant installation. Subtle eye shape showing Southeast Asian influence around the orbital area.",
+    "skin_tone": "Warm ivory to light tan with golden and subtle warm peachy undertones, reflecting the Northern European base enriched by East and South Asian heritage warmth. Even tone with luminous quality beneath the surface.",
+    "complexion": "Striking facial structure blending Northern European definition with East Asian subtlety. Defined, sculptural cheekbones and angular jawline characteristic of Northern European ancestry, refined by the softer contours and slightly broader face shape from East and South Asian heritage. Orbital eye shape shows clear East Asian influence; facial proportions reflect the entire genetic mix rather than any single ancestry. Skin is clear and well-maintained, though marked by the pallor of someone who sleeps through daylight. Minimal grooming — functional rather than elaborate. A faint scar traces the inside of the right wrist from an early implant installation.",
     "distinguishing_marks": [
       "Faint surgical scar on the inside of the right wrist, approximately 3 cm long, marking the installation site of the retractable claw implant.",
       "Small, deliberate tattoo on the left inner elbow — a minimalist line drawing of a refrigeration coil, done in silver ink that catches light.",
@@ -286,16 +269,46 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Stands with weight slightly forward, ready to move. Leans against the bar when not actively working, shoulders relaxed but eyes constantly tracking the room. Hand gestures are minimal but precise. Walks with a measured pace, never hurried, conveying calm authority.",
     "clothing_style": "Mid-grade Ferment Quarter practical: fitted black synthetic shirt or turtleneck (sweat-resistant), dark cargo pants or tailored utility trousers with deep pockets. Shoes are black non-slip service footwear. A lightweight overshirt in charcoal or deep blue worn open during shifts. Jewelry is minimal — a simple silver ring on the left hand, possibly a family piece. No corporate branding or status signifiers; clothing prioritizes function and neutrality. Budget appears to be around 800-1200 Φ total outfit value."
   },
-  "image_prompt": "Liv Prempeh, 2226 cyberpunk bartender in the Great Lakes Metropolitan Zone. Deep warm brown skin with sculptural cheekbones and angular jawline. Shoulder-length hair shifting through chromatic geneware colors—teal, burgundy, bone white gradient. Augmented eyes with concentric silver and violet rings. Lean, precise build standing behind a dimly lit bar counter. Wearing fitted black synthetic turtleneck, dark utility cargo pants, lightweight charcoal overshirt worn open. Chrome retractable claw implant visible on right hand knuckles. Silver tattoo of refrigeration coil on left inner elbow. Deliberate posture, minimal jewelry—simple silver ring. Pale complexion from nocturnal schedule. Moody atmospheric cyberpunk bar setting, neon accent lighting reflecting off augmented eyes and color-cycling hair, cool color grading, shallow depth of field focusing on face and hands, cinematic introspection --ar 2:3 --v 6",
+  "image_prompt": "Liv Sigurdsson, 168cm lean bartender with striking multiethnic features blending Northern European and Asian heritage—defined cheekbones, angular jawline softened by broader face shape, warm ivory-tan skin with golden undertones. Shoulder-length hair in chromatic geneware shifting between teal and burgundy. Augmented violet-and-silver concentric ring eyes with penetrating gaze. Dressed in fitted black synthetic turtleneck, dark utility cargo pants, charcoal overshirt worn open. Chrome-finished retractable claw implant visible along right hand knuckles. Silver minimalist refrigeration coil tattoo on left inner elbow. Standing behind a dimly-lit neo-noir bar in 2226, leaning against counter with economical posture, eyes tracking the room. Moody neon-tinged lighting, cool blues and warm amber from behind the bar. Calm, professional authority. GLMZ 2200s atmosphere, Ferment Quarter setting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 32.5,
-    "Northern European": 24.1,
-    "Eastern European": 20.3,
-    "Southeast Asian": 18.7,
-    "Hispanic/Latin American": 4.4
+    "Northern European": 57.7,
+    "East Asian": 22.3,
+    "South Asian": 20
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 39,
+        "Danish": 18.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 17.7
+      },
+      "Korean": {
+        "Korean": 0.9
+      },
+      "Chinese": {
+        "Sichuanese": 1.7,
+        "Fujianese": 2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 7.9
+      },
+      "Pakistani": {
+        "Pashtun": 0.7,
+        "Sindhi": 8.2
+      },
+      "Nepali": {
+        "Nepali": 3.2
+      }
+    }
+  }
 }

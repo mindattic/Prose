@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6437f79a2b859a23c5377e9",
   "type": "character",
-  "name": "Atlas Thakur",
+  "name": "Atlas Salazar",
   "aliases": [
     "The Closer",
     "Oz",
@@ -14,7 +14,7 @@
   "age": 43,
   "status": "active",
   "location": "Meridian Core — rents a workshop apartment in a light-industrial building. Half living space, half equipment cache., near State and Jackson",
-  "description": "Kev Ostrowski is the person who turns Sterling's plans into physical reality. When a server needs to be accessed, a facility breached, a person extracted, or an operation cleaned up — Kev does the work that happens between the strategy and the result. He spent sixteen years in corporate security for three different firms, working his way up from physical site security to executive protection to the classified tier where corporate security and corporate espionage share a hallway. He left when the fourth firm tried to recruit him — not because of ethics, but because he was tired of being a tool that changed hands.\n\nSterling found Kev working solo freelance jobs — competent work, badly priced, with no client management skills. Sterling provided the business architecture; Kev provided the operational capability. The partnership works because it's complementary and because neither man pretends to be something he isn't. Sterling is the mind; Kev is the hands. Kev accepts this because he's not interested in strategic thinking, and Sterling accepts Kev because he's not interested in getting his own hands dirty.\n\nKev is stocky, broad, with the thick hands of someone who has spent decades handling security equipment and the careful movement of someone who knows exactly how much damage he can do and chooses not to. He keeps his hair short, his clothes practical, and his equipment immaculate. He is the least corporate-looking member of the Margin Call, which makes him the crew member who operates outside the corporate ecosystem — the service entrance, the server room, the parking garage.",
+  "description": "Atlas Salazar is the person who turns Sterling's plans into physical reality. When a server needs to be accessed, a facility breached, a person extracted, or an operation cleaned up — Kev does the work that happens between the strategy and the result. He spent sixteen years in corporate security for three different firms, working his way up from physical site security to executive protection to the classified tier where corporate security and corporate espionage share a hallway. He left when the fourth firm tried to recruit him — not because of ethics, but because he was tired of being a tool that changed hands.\n\nSterling found Kev working solo freelance jobs — competent work, badly priced, with no client management skills. Sterling provided the business architecture; Kev provided the operational capability. The partnership works because it's complementary and because neither man pretends to be something he isn't. Sterling is the mind; Kev is the hands. Kev accepts this because he's not interested in strategic thinking, and Sterling accepts Kev because he's not interested in getting his own hands dirty.\n\nKev is stocky, broad, with the thick hands of someone who has spent decades handling security equipment and the careful movement of someone who knows exactly how much damage he can do and chooses not to. He keeps his hair short, his clothes practical, and his equipment immaculate. He is the least corporate-looking member of the Margin Call, which makes him the crew member who operates outside the corporate ecosystem — the service entrance, the server room, the parking garage.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -179,7 +179,7 @@
     "Risk Taker": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -198,39 +198,13 @@
     "WELLSPRING",
     "Kang-Petrov Arms KPS-410 'Hallway'",
     "Chimera-Null",
+    "Atlas",
     "The Pure Hand",
-    "Slagworks Industrial",
-    "Anatoliy Faye-Nkrumah",
-    "Aphelion",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Idris Forsberg-Quaye",
-    "Kairos Blunt",
-    "MERIDIAN",
-    "NeuralPath FlowState Focus Regulator",
-    "NeuralPath LinkGuard Secure Civic Identity BCI",
-    "Neuromorphic Pressure Cestus",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Rongo Delgado-Opoku",
-    "Shelf Life",
-    "Solveig Tambadou-Kereselidze",
-    "TESSERA TC-3 'Crucible'",
-    "The Clock",
-    "The Fathom Line",
-    "The Peninsula",
-    "The Question",
-    "The Signal",
-    "Umbraline PhoneShell PS-X 'Last Call'",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "South Asian (48.1%) with substantial Sub-Saharan African (26.8%) and Northern European (25.1%) ancestry. The blend creates a distinctly mixed phenotype: warm undertones from South Asian and African heritage mixing with cooler Northern European genetics, resulting in unique feature combinations not typical of any single regional population.",
+    "heritage": "Hispanic/Latin American (44.4%) with substantial Southeast Asian (30.0%), Sub-Saharan African (17.3%), and Indigenous American (8.3%) ancestry. The blend creates a distinctly mixed phenotype: warm undertones from Latin American and African heritage mixing with Southeast Asian bone structure, resulting in unique feature combinations not typical of any single regional population.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Stocky and broad-shouldered with dense musculature developed through decades of functional strength work rather than aesthetics. Thick forearms and capable hands. No visible fat, but substantial mass — the build of someone who prioritizes utility over lean appearance.",
@@ -238,8 +212,8 @@
     "hair_style": "Military-short, neat, practical",
     "hair_length": "Short",
     "eye_color": "Dark brown with alert intensity",
-    "skin_tone": "Medium warm brown — a complex blend where South Asian and African ancestry create warm, rich undertones with the weathered cast of someone who spends time outdoors during reconnaissance work. Sun exposure has deepened natural melanin rather than creating the pallor of fair skin.",
-    "complexion": "Strong facial structure reflecting mixed ancestry: defined cheekbones and jawline with the broader facial proportions common to African heritage, balanced by the distinctive nose and eye placement influenced by South Asian genetics. Deep-set alert eyes, rich brown in color. Minimal facial hair — cleanly shaved or maintained at stubble. Skin bears the texture of age and sun exposure without vanity about it. The overall effect is striking and memorable rather than conventionally 'European' — a face shaped by the Ubiquitous Diaspora.",
+    "skin_tone": "Medium-deep warm brown — a complex blend where Hispanic/Latin American, African, and Southeast Asian ancestry create rich golden and amber undertones. Sun exposure from outdoor reconnaissance work has deepened natural melanin into a deep bronze-brown patina with warm radiance rather than creating pallor.",
+    "complexion": "Strong facial structure reflecting Pan-American and Asian heritage: defined cheekbones and jawline shaped by African and Indigenous American ancestry, balanced by higher cheekbone prominence and eye placement influenced by Southeast Asian genetics. Deep-set alert dark brown eyes. Minimal facial hair — cleanly shaved or maintained at stubble. Skin bears the texture of age and environmental exposure without vanity. The overall effect is striking and memorable — a face shaped by the Ubiquitous Diaspora, with warm golden-brown undertones and the weathered character of someone who operates in field conditions.",
     "distinguishing_marks": [
       "Thin white scar along the left jaw line, approximately 8cm, from a corporate security incident in his thirties",
       "Faint burn marks on the right inner forearm — contact burns from security equipment maintenance, barely visible unless close",
@@ -249,14 +223,56 @@
     "posture_movement": "Economical, controlled movement with minimal wasted motion. Stands with weight balanced, ready to shift. Walks with the measured stride of someone who has trained extensively in tactical scenarios. Hands at rest; never fidgets. Head on a swivel during reconnaissance — the default paranoia of someone whose job involves threat assessment. When focused on a task, complete stillness and concentration.",
     "clothing_style": "Tier 4 practical utilitarian. Heavy-duty cargo pants in charcoal or black from industrial suppliers, multiple pockets worn and organized. Steel-toed boots, scuffed, meticulously maintained. Layered tops — usually a fitted technical base layer under a tactical vest or canvas work jacket. No corporate branding. No fashion. Everything is chosen for function: pocket placement, durability, ease of movement, gear integration. His watch is a military-spec digital. No jewelry. Minimal personal color — he blends into service corridors and mechanical spaces intentionally."
   },
-  "image_prompt": "cyberpunk 2226, medium brown-skinned man with mixed South Asian-African-Northern European heritage, age 50s, 178cm tall, stocky powerful build, military-short dark brown hair graying at temples, alert dark brown eyes, strong defined jawline with faint scar along left jaw, minimal facial hair, weathered skin from sun exposure, standing in industrial service corridor with cool blue neon lighting, wearing charcoal cargo pants and tactical vest over technical base layer, steel-toed boots, subtle metallic glints at fingertips from haptic implants, economical controlled posture, alert head-on-swivel surveillance stance, photorealistic cyberpunk aesthetic, moody industrial lighting, threat assessment expression --ar 2:3 --v 6",
+  "image_prompt": "Atlas Salazar, 178cm tall stocky broad-shouldered corporate security specialist, deep golden-brown skin tone blending Hispanic, Southeast Asian, African, and Indigenous American heritage, defined cheekbones and strong jawline with alert dark brown eyes, thin white scar along left jaw, gray-streaked dark brown military-short hair, clean-shaven with weathered face. Subtle metallic fingerprint augmentations, subdermal forearm plating visible under skin. Wearing charcoal tactical cargo pants, steel-toed boots, fitted technical base layer under black canvas work jacket, military-spec digital watch. Standing with economical controlled posture, weight balanced, alert and ready. GLMZ Great Lakes Metropolitan Zone, industrial service corridor setting, cool blue-tinted overhead lighting casting shadows across augmentation points, dystopian utilitarian aesthetic, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 48.1,
-    "Sub-Saharan African": 26.8,
-    "Northern European": 25.1
+    "Hispanic/Latin American": 44.4,
+    "Southeast Asian": 30,
+    "Sub-Saharan African": 17.3,
+    "Indigenous American": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 44.4
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 15.6
+      },
+      "Cambodian": {
+        "Khmer": 5.8
+      },
+      "Filipino": {
+        "Ilocano": 4.4,
+        "Cebuano": 4.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 4.6,
+        "Somali": 2.3
+      },
+      "Central African": {
+        "Angolan": 3,
+        "Cameroonian": 0.5
+      },
+      "West African": {
+        "Malian": 6.9
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Mapuche": 1.1,
+        "Quechua": 3.7
+      },
+      "Mesoamerican": {
+        "Maya": 3.5
+      }
+    }
+  }
 }

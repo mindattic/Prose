@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72f7f3a9974f2e32d5b6ed8",
   "type": "character",
-  "name": "Nikhil Sengupta",
+  "name": "Olumide Touré",
   "aliases": [
     "Moth"
   ],
@@ -12,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "Lakeview Neon, workshop above a defunct surge-relay station, near North Ave and Damen",
-  "description": "Ysolde is lean and angular, with bioluminescent ink tattooed in asymmetric moth-wing patterns across their collarbones and outer arms — an advertisement and a love letter to their own work. Their hair is cropped close on one side and falls in thick, silver-dyed locks on the other, often pinned back with a scavenged neon tube stub they carry for luck. Their eyes have patterned irises in concentric rings of amber and pale green, cheap mods bought secondhand when they were nineteen. There's a restless precision about them: they'll measure a space by eye without thinking, tilt their head at a light source the way a bird clocks distance.\n\nYsolde talks too fast when excited and barely at all when hurt, which most people misread as aloofness. They came up through street installation work — unlicensed, unsigned, frequently scrubbed by Ferrogate Transit enforcement — and still view any commission from a corponation as a moral compromise even as they quietly covet the stability. Their art obsesses over threshold spaces: the edges of things, where neon bleeds into dark, where the city's light hits water and becomes something that doesn't belong to either.",
+  "description": "Olumide Touré is lean and angular, with bioluminescent ink tattooed in asymmetric moth-wing patterns across their collarbones and outer arms — an advertisement and a love letter to their own work. Their hair is cropped close on one side and falls in thick, silver-dyed locks on the other, often pinned back with a scavenged neon tube stub they carry for luck. Their eyes have patterned irises in concentric rings of amber and pale green, cheap mods bought secondhand when they were nineteen. There's a restless precision about them: they'll measure a space by eye without thinking, tilt their head at a light source the way a bird clocks distance.\n\nOlumide Touré talks too fast when excited and barely at all when hurt, which most people misread as aloofness. They came up through street installation work — unlicensed, unsigned, frequently scrubbed by Ferrogate Transit enforcement — and still view any commission from a corponation as a moral compromise even as they quietly covet the stability. Their art obsesses over threshold spaces: the edges of things, where neon bleeds into dark, where the city's light hits water and becomes something that doesn't belong to either.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -161,7 +161,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,67 +177,67 @@
   "related_entities": [
     "Ferrogate Transit",
     "Lakeview Neon",
-    "Threshold",
     "Omro Relay",
+    "Threshold",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Compass Rose",
     "The Pale Mile",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Arcturus PG-3 'Aegis'",
-    "Bintou Halvorsen-Osei",
-    "Dragan Petersen-Bah",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Iowan Behemoth — 'Palisade'",
-    "Irontide Tidal Energy",
-    "MindBridge Relay One Social Integration BCI",
-    "Pneumatic Transit Capsule",
-    "Praevex",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA PG-2 'Signature'",
-    "Tenderloin",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Third Rail",
-    "Thibault Achebe-Sørensen",
-    "Tiare Nishi-Anim",
-    "Tiare Sjostrom-Kwarteng"
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "South Asian (68.8% — primarily Indian subcontinent ancestry) blended with Indigenous American (20.5%) and Northern European (10.7%) ancestry. The combination produces warm medium-brown skin with subtle golden undertones, angular facial structure with defined cheekbones and sharp jawline characteristic of South Asian phenotypes, and dark naturally black hair. The Indigenous American and Northern European ancestry contributes subtle variations in facial geometry and eye structure.",
+    "heritage": "Primarily Central Asian (59.2% — Turkic and Iranian plateau ancestry) with significant Sub-Saharan African (35.1%) and minor East Asian (5.7%) admixture. This blend produces warm medium-brown skin with golden and reddish undertones. Central Asian ancestry dominates facial structure with angular cheekbones and defined jawline, while Sub-Saharan African ancestry contributes subtle variations in nose structure and facial geometry. East Asian ancestry adds refinement to eye shape and orbital structure. The combination creates a distinctly multicontinental appearance characteristic of the Ubiquitous Diaspora.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular, almost wiry — the physique of someone who moves through tight spaces and climbs. Minimal excess mass; defined shoulders and forearms from years of hands-on installation work. No visible musculature, but functional strength in the wrists and fingers.",
+    "skin_tone": "Warm medium brown with golden and reddish undertones, reflecting the blended ancestry of Central Asian, Sub-Saharan African, and East Asian heritage",
+    "complexion": "Angular face with high cheekbones and sharp jawline characteristic of Central Asian heritage, refined by Sub-Saharan African and East Asian ancestry. Clear skin with minimal scarring from chemical burns on the knuckles (from old solvent work). Minor discoloration around the temples from old neural implant rejection — faint purple bruising that never fully faded. Grooming is minimal and intentional; they rarely wear makeup except occasionally darkening the area around their modified eyes for contrast.",
     "hair_color": "Natural black with silver-dyed locks on dominant side",
     "hair_style": "Asymmetric undercut: closely cropped fade on one side (left), thick waist-length silver-dyed locks on the other (right), often pinned back with a scavenged neon tube stub or industrial clip",
     "hair_length": "Asymmetric — Short on one side, Long on the other",
     "eye_color": "Patterned irises: concentric rings of amber (outer) and pale green (inner); secondhand optical mod with slight luminescence in low light",
-    "skin_tone": "Warm medium brown with golden undertone, reflecting South Asian ancestry (68.8%) with subtle warmth from Indigenous American and Northern European mixing",
-    "complexion": "Angular face with high cheekbones and sharp jawline characteristic of South Asian heritage. Clear skin with minimal scarring from chemical burns on the knuckles (from old solvent work). Minor discoloration around the temples from old neural implant rejection — faint purple bruising that never fully faded. Grooming is minimal and intentional; they rarely wear makeup except occasionally darkening the area around their modified eyes for contrast.",
+    "visible_augmentations": "Patterned irises with slight luminescent quality when in darkness or near electrical fields. Bioluminescent tattoos across chest and arms that glow faintly in low light. Subdermal haptic grid visible only as faint geometric scar lines on fingertips under close inspection — more functional than visible. No obvious chrome or external augmentation; the mods are subtle and intentionally low-profile.",
     "distinguishing_marks": [
       "Bioluminescent moth-wing tattoos in asymmetric patterns across collarbones and outer arms — visible in darkness, faintly glowing in low light; the ink contains engineered luminophores that fade and brighten with electrical current nearby",
       "Faint chemical burn scars on the inner right wrist from early salvage work — pale and crosshatched",
       "Small circular scar on left temple from a failed subcutaneous neural implant attempt at age 21 (rejected after six months)",
       "Faint UV-burn pattern on hands and forearms in a crosshatch from unshielded work with plasma conduits — visible only under blacklight"
     ],
-    "visible_augmentations": "Patterned irises with slight luminescent quality when in darkness or near electrical fields. Bioluminescent tattoos across chest and arms that glow faintly in low light. Subdermal haptic grid visible only as faint geometric scar lines on fingertips under close inspection — more functional than visible. No obvious chrome or external augmentation; the mods are subtle and intentionally low-profile.",
     "posture_movement": "Restless and precise. Often tilts their head at light sources as if triangulating distance or quality. Moves through space with an installer's economy — no wasted motion, but constant micro-adjustments to balance and angle. Hands rarely still; fingers drum on surfaces or trace patterns in the air when thinking. Eyes track light sources unconsciously. When excited about work, movements become rapid and jerky; when hurt or defensive, they go very still and quiet, barely moving at all.",
     "clothing_style": "Tier 3-4 working artist; salvage-influenced but intentional. Usually wears close-fitting, durable garments in muted colors (charcoal, dark blue, black) with high visibility trim on one side — reflective piping along the left arm or chest. Favors cargo pants or reinforced work jeans with multiple pockets for tools and salvage. Tops are typically sleeveless or short-sleeved to show off the bioluminescent tattoos. Wears a well-worn synth-leather jacket (dark grey, scuffed, patched with reflective tape) over everything. Footwear is practical: reinforced work boots with good ankle support, usually graphite or black. Accessories include a utility belt with salvage tools, carrying carabiners, and always a small pouch containing spare neon tube stubs and electrical components. A silver chain around the neck (inherited, not augmented) with a small glass vial of dead neon gas — a personal talisman. No corporate branding visible; any logos have been deliberately obscured or removed."
   },
-  "image_prompt": "Nikhil Sengupta, South Asian heritage (68.8%), lean 172cm wiry technician with warm medium-brown golden-undertoned skin and sharp angular features. Asymmetric black and silver hair — short fade one side, long silver locks other side pinned with neon tube. Patterned amber-green concentric irises with faint luminescence. Bioluminescent moth-wing tattoos glowing faintly across bare shoulders and arms in low light, with chemical burn scars on wrists. Cyberpunk 2226, wearing sleeveless dark charcoal top showing bioluminescent ink, reinforced cargo pants, well-worn dark grey synth-leather jacket with reflective piping, work boots, utility belt with salvage tools and silver chain with neon gas vial. Intense restless posture, hands mid-gesture. Near electrical equipment or neon-lit workspace, atmospheric moody lighting casting shadows and revealing faint UV-burn patterns. Gritty, intentional aesthetic. Cyberpunk Great Lakes Metropolitan Zone 2226 --ar 2:3 --v 6",
+  "image_prompt": "Olumide Touré, 172cm lean angular installer with warm medium-brown skin with golden undertones, high cheekbones and sharp jawline. Natural black hair asymmetric cut — short fade on left side, long waist-length silver-dyed locks on right pinned back with neon tube stub. Patterned iris eyes amber outer ring pale green inner with subtle luminescence. Bioluminescent moth-wing tattoos glowing faintly across collarbones and arms in darkness. Minimal visible scarring on wrists and temple. Sleeveless dark charcoal top showing tattoos, reinforced black cargo pants with reflective piping on left side, well-worn dark grey synth-leather jacket patched with reflective tape, reinforced black work boots. Silver chain necklace with glass vial of dead neon. Restless precise posture, hands active and expressive. GLMZ GLMZ setting, low neon-lit warehouse environment with electrical fields nearby causing tattoos to glow brighter, dramatic shadows and cool blue-green lighting, hands working with salvage components, technical and focused mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 68.8,
-    "Indigenous American": 20.5,
-    "Northern European": 10.7
+    "Central Asian": 59.2,
+    "Sub-Saharan African": 35.1,
+    "East Asian": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Uzbek": 17.6,
+        "Kazakh": 13.7
+      },
+      "Iranian Central": {
+        "Tajik": 17.9,
+        "Hazara": 10
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 35.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 5.7
+      }
+    }
+  }
 }

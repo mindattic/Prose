@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ef7c5385b6cf6fe8a1e574",
   "type": "character",
-  "name": "Gunnar Holm-Ghorbani",
+  "name": "Delta Pathak-Cervantes",
   "aliases": [
     "Tendi",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 13,
   "status": "active",
   "location": "Hough Reclamation, Blessed Continuance Residential Home (independent charitable orphanage), near Western and Chicago Ave",
-  "description": "Tendai is compact and deliberate, with warm rust-brown skin, close-set eyes behind thick-lensed secondhand glasses — actual physical lenses, not overlays, which they treasure and refuse to replace with anything 'smart' — and hair that grows in a crown they've never cut, dense and elaborate, tucked under scarves of different colors depending on their mood. They move slowly on purpose, with a quality of observation that adults find either comforting or unnerving. They have no augmentations and are specifically, vocally opposed to them, on grounds that are partly philosophical and partly practical: they don't trust anything injected or installed.\n\nTendai has appointed themselves the historian of Hough Reclamation. They carry a physical notebook — increasingly rare — and fill it with observations, overheard conversations, sketches of building facades before they're demolished, names of people who've died or moved on. They believe, with the gravity of someone much older, that if no one writes it down then it didn't happen, and that megacity memory belongs to whoever has the recording infrastructure — which means the corporations. They are quiet, serious, and occasionally devastatingly perceptive about the adults around them. They also cry at sunsets, which they'd deny.",
+  "description": "Delta Pathak-Cervantes is compact and deliberate, with warm rust-brown skin, close-set eyes behind thick-lensed secondhand glasses — actual physical lenses, not overlays, which they treasure and refuse to replace with anything 'smart' — and hair that grows in a crown they've never cut, dense and elaborate, tucked under scarves of different colors depending on their mood. They move slowly on purpose, with a quality of observation that adults find either comforting or unnerving. They have no augmentations and are specifically, vocally opposed to them, on grounds that are partly philosophical and partly practical: they don't trust anything injected or installed.\n\nDelta Pathak-Cervantes has appointed themselves the historian of Hough Reclamation. They carry a physical notebook — increasingly rare — and fill it with observations, overheard conversations, sketches of building facades before they're demolished, names of people who've died or moved on. They believe, with the gravity of someone much older, that if no one writes it down then it didn't happen, and that megacity memory belongs to whoever has the recording infrastructure — which means the corporations. They are quiet, serious, and occasionally devastatingly perceptive about the adults around them. They also cry at sunsets, which they'd deny.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -172,7 +172,7 @@
     "Scavenger": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -219,27 +219,13 @@
     "The Reclamation Assembly",
     "Palladian Construction",
     "The Gradient Compact",
-    "ARCHIVE",
-    "Gravimetric Collapse Charge GCC-9",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Rust",
     "Chicago",
-    "Brewer's Spine",
-    "Cinderblock Ai",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Réginald Asomaning-Čabarkapa",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Archive",
-    "The Pure Hand",
-    "The Undertow"
+    "Gravimetric Collapse Charge GCC-9",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed heritage: 33% Middle Eastern, 25% Northern European, 24% South Asian, 18% Hispanic/Latin American. The combination creates warm, olive-toned skin with subtle golden undertones — a nuanced blend where Mediterranean and South Asian features meet Northern European genetics.",
+    "heritage": "Mixed heritage: 41% Hispanic/Latin American, 31.6% East Asian, 27.4% South Asian. The combination creates warm, golden-brown skin with subtle olive undertones — a nuanced blend where Latin American warmth meets East and South Asian features, creating a distinctly pan-diasporic appearance.",
     "height_cm": 152,
     "weight_kg": 38,
     "build": "Compact and slight, with the wiry compactness of a naturally small frame rather than malnourishment. Shoulders narrow, posture deliberately upright despite their youth.",
@@ -247,8 +233,8 @@
     "hair_style": "Uncut crown, dense and elaborately textured, typically bound under colored scarves that rotate based on mood or day",
     "hair_length": "Long (shoulder-length when unbound)",
     "eye_color": "Deep brown, close-set, magnified slightly behind thick physical lenses",
-    "skin_tone": "Warm olive-gold with golden undertones; even complexion reflecting the blend of Middle Eastern, South Asian, and Mediterranean heritage",
-    "complexion": "Smooth, unblemished skin typical of youth. Clean grooming maintained through orphanage routine. Face carries unusual gravity for age — expression often distant or intensely focused. Dark circles beneath eyes from note-taking and reading late. Subtle warmth in cheekbones and jawline reflects the multi-regional ancestry.",
+    "skin_tone": "Warm golden-brown with subtle olive undertones; even complexion reflecting the blend of Hispanic/Latin American, East Asian, and South Asian heritage",
+    "complexion": "Smooth, unblemished skin typical of youth. Clean grooming maintained through orphanage routine. Face carries unusual gravity for age — expression often distant or intensely focused. Dark circles beneath eyes from note-taking and reading late. Cheekbones and jawline reflect multi-regional ancestry: softer, slightly broader facial structure characteristic of East Asian genetic contribution; warm undertones and fuller lips from Hispanic/Latin American ancestry; refined nose bridge and defined cheekbones influenced by South Asian heritage. Overall: a balanced, harmonious blend of all three regions without dominance of any single group.",
     "distinguishing_marks": [
       "Faint callus on right middle finger from constant pen use",
       "Ink smudges on inner wrists from carrying pens and rubbing eyes while writing",
@@ -258,15 +244,34 @@
     "posture_movement": "Moves slowly and deliberately, not from limitation but from intentional observation. Often pauses mid-stride to look at something. Sits hunched over notebooks. When walking through Hough, their pace is methodical, almost archival. Hands are expressive when writing but still otherwise. Rarely makes eye contact unless speaking about their documentation.",
     "clothing_style": "Tier 4/5 orphanage-supplied basics: worn but clean secondhand clothing, neutral tones. Favors layers — oversized sweaters, hand-knit cardigans donated to the home. Always wears at least one scarf, rotated by mood (grey = contemplative, rust = observant, deep blue = grieving, vibrant orange = rare good mood). Carries a canvas satchel that holds their primary notebook, secondary notebooks organized by district, writing implements, and sketching supplies. Shoes are scuffed practical sneakers, re-soled twice."
   },
-  "image_prompt": "Gunnar Holm-Ghorbani, 152cm tall, compact slight build, warm olive-gold skin with golden undertones reflecting Middle Eastern-South Asian-Northern European-Hispanic heritage blend. Deep brown eyes magnified behind thick secondhand plastic-framed glasses with permanent nose bridge indent. Long deep brown hair with warm undertones, unbound past shoulders, dense textured. Wearing layered neutral-toned secondhand clothing, oversized hand-knit cardigan, vibrant rust-colored mood scarf wrapped around head/neck, scuffed practical sneakers. Canvas satchel across chest. Ink-stained wrists, pen callus on right middle finger visible. Hunched thoughtful posture, paused mid-stride in contemplation, expression distant and intensely focused, dark circles beneath eyes. Standing in GLMZ Hough district at dusk, neon signs casting cool blue-purple light, rain-slicked streets, archival documentation atmosphere, cyberpunk 2226 urban decay aesthetic, methodical observer energy --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Delta Pathak-Cervantes, 152cm tall, compact slight build with narrow shoulders. Warm golden-brown skin with olive undertones blending Hispanic, East Asian, and South Asian heritage. Deep brown eyes magnified behind thick secondhand plastic-framed glasses, with permanent nose bridge indent. Unbound shoulder-length deep brown hair with natural warm undertones, often pulled up. Youthful face with unusual gravity, dark circles from late reading, soft East Asian-influenced facial structure balanced with warm cheekbone definition and fuller lips from Hispanic ancestry, refined nose bridge from South Asian heritage. Faint pen callus on right middle finger, ink smudges on inner wrists. Wearing worn neutral-toned secondhand layers: oversized sweater, hand-knit cardigan, rotating mood-scarf (rust-colored for observant), scuffed re-soled sneakers. Carrying worn canvas satchel. Posture deliberately upright but hunched when writing in notebook. Expression distant and intensely focused, methodical and archival in movement. Great Lakes Metropolitan Zone, 2226, neo-noir era. Soft indoor orphanage lighting, warm amber tones, sitting at desk surrounded by notebooks and writing supplies. Documentary realism, character study portraiture. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 33.4,
-    "Northern European": 24.6,
-    "South Asian": 24.0,
-    "Hispanic/Latin American": 18.0
+    "Hispanic/Latin American": 41,
+    "East Asian": 31.6,
+    "South Asian": 27.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 41
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 13.5
+      },
+      "Korean": {
+        "Korean": 18.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 27.4
+      }
+    }
+  }
 }

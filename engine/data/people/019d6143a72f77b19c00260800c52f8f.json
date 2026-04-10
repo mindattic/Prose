@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72f77b19c00260800c52f8f",
   "type": "character",
-  "name": "Kofi Nygaard-Novotný",
+  "name": "Erik Delgado-Strömqvist",
   "aliases": [
     "Ysol",
     "The Wax Prophet"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Hamtramck Enclave, workshop-apartment above a recycled plastics dealer, near Kedzie and Division",
-  "description": "Ysolde is a broad-shouldered woman with a Kalenjin-Portuguese lineage written visibly across her face — wide-set amber eyes, a jaw that could cut glass, skin the color of aged teak that she's had treated with a bioluminescent dermal wash so her forearms and collarbones pulse with slow amber light when she's working in the dark. Her hair is locked into dense ropes she's threaded with segments of defunct fiber-optic cable, catching available light and scattering it in dim halos. She is perpetually dusted with neon-tube sealant and smells faintly of ozone and solder.\n\nShe is methodical to the point of social frustration — she will stop mid-sentence to study how a lamp casts shadows on a stranger's coat, and she expects people to wait for her. Her neon sculptures are famous in the Enclave for their devotional quality: glowing saints with too many eyes, ELF shrines that flicker in irregular rhythms meant to mimic the breathing of sleeping machines. She does not consider herself religious but treats the ELFs she depicts with a reverence that feels devotional whether she admits it or not.",
+  "description": "Erik Delgado-Strömqvist is a broad-shouldered woman with a Kalenjin-Portuguese lineage written visibly across her face — wide-set amber eyes, a jaw that could cut glass, skin the color of aged teak that she's had treated with a bioluminescent dermal wash so her forearms and collarbones pulse with slow amber light when she's working in the dark. Her hair is locked into dense ropes she's threaded with segments of defunct fiber-optic cable, catching available light and scattering it in dim halos. She is perpetually dusted with neon-tube sealant and smells faintly of ozone and solder.\n\nShe is methodical to the point of social frustration — she will stop mid-sentence to study how a lamp casts shadows on a stranger's coat, and she expects people to wait for her. Her neon sculptures are famous in the Enclave for their devotional quality: glowing saints with too many eyes, ELF shrines that flicker in irregular rhythms meant to mimic the breathing of sleeping machines. She does not consider herself religious but treats the ELFs she depicts with a reverence that feels devotional whether she admits it or not.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -165,7 +165,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -214,64 +214,100 @@
     "Hamtramck Enclave",
     "The Drowned Commission",
     "Lakeview Neon",
-    "The Chorus of David Park",
     "Palladian Construction",
-    "Aslan Vasquez-Chatterjee",
+    "The Chorus of David Park",
+    "Noir Dining",
+    "The Flicker Collective",
     "The Voltage Saints",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Glass",
     "Gravimetric Collapse Charge GCC-9",
     "Tessera Adaptive Marksman Platform TAMP-5 'Mimic'",
-    "Glass",
-    "Teak",
-    "Aybek Sato-Poku",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Flicker",
-    "Last Word",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Mika Sorel",
-    "Noir Dining",
-    "Slagworks Industrial",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Unfinished Theorem"
+    "Teak"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (44.4%, including Bantu and other Central/Southern African ancestry) with significant Eastern European (24.6%) and Northern European (17.9%) admixture, plus smaller contributions from Southeast Asian (6.3%), Hispanic/Latin American (4.3%), and East Asian (2.5%) heritage. This creates a rich, complex phenotype reflecting the Ubiquitous Diaspora.",
+    "heritage": "Complex multiethnic ancestry reflecting the Ubiquitous Diaspora: predominantly Northern European (49.4%, Scandinavian and Germanic base) with substantial Hispanic/Latin American (23.6%) admixture, meaningful East Asian (13.7%), Middle Eastern (5.9%), Sub-Saharan African (4.1%), and Southeast Asian (3.3%) heritage. This creates a striking, harmoniously blended phenotype — fair to light warm beige skin with luminous golden-honey and olive undertones, angular Northern European bone structure softened by rounder, warmer contours from Latin American and Southeast Asian ancestry, with subtle depth and character from Middle Eastern and African heritage contributions to facial structure and eye warmth.",
     "height_cm": 178,
     "weight_kg": 72,
-    "build": "Broad-shouldered and strong-limbed, with the dense musculature of someone who works with heavy glass and metal. Not athletic in the conventional sense — her strength is functional, built from years of precise physical labor. Her torso is substantial without being heavy.",
+    "build": "Broad-shouldered and strong-limbed, with the dense musculature of someone who works with heavy glass and metal. Not athletic in the conventional sense — strength is functional, built from years of precise physical labor. Torso is substantial without being heavy.",
     "hair_color": "Deep brown-black, naturally dark",
     "hair_style": "Locked into dense, tight rope braids; threaded throughout with segments of defunct fiber-optic cable that catch and scatter ambient light in subtle halos",
     "hair_length": "Long (mid-back length)",
-    "eye_color": "Amber (natural), left eye contains visible magnification implant with faint reticle grid visible at certain angles",
-    "skin_tone": "Deep warm brown with complex undertones — the rich darkness of Sub-Saharan ancestry dominates, warmed further by the golden-amber tones inherited from Eastern and Northern European admixture, creating a polished mahogany effect. The Southeast Asian ancestry adds subtle warmth to the midtones.",
-    "complexion": "Sharp, angular features with wide-set eyes, prominent jaw, and high cheekbones reflecting her diverse ancestry. The facial structure shows the broad nasal base and full lip definition characteristic of her Sub-Saharan ancestry, balanced with the stronger jawline from Eastern European heritage. Skin is clear but perpetually dusted with microscopic neon-tube sealant particles that give it a faint crystalline sheen. No visible scarring on the face. Grooming is minimal; she prioritizes function over presentation.",
+    "eye_color": "Warm amber (natural), left eye contains visible magnification implant with faint reticle grid visible at certain angles",
+    "skin_tone": "Fair to light warm beige with luminous golden-honey and olive undertones. The Northern European base is enriched by warm peachy-golden tones from Hispanic/Latin American heritage, subtle olive depth from East Asian and Middle Eastern ancestry, and warm amber undertones from Sub-Saharan African heritage, creating a radiant, warm-complexioned appearance with soft peachy warmth concentrated in cheeks and across the bridge of nose.",
+    "complexion": "Angular features reflecting diverse ancestry: wide-set warm amber eyes, prominent high cheekbones with gentle curves, defined jawline with subtle softness. Northern European bone structure (strong brow ridge, defined cheekbones) is beautifully balanced with warmer, rounder facial contours from Latin American, East Asian, and Southeast Asian heritage; subtle depth and character in the nasal bridge and eye socket structure from Middle Eastern and African ancestry. Skin is clear but perpetually dusted with microscopic neon-tube sealant particles that give it a faint crystalline sheen. No visible scarring on the face. Grooming is minimal; prioritizes function over presentation.",
     "distinguishing_marks": [
       "Bioluminescent dermal wash coating both forearms from wrist to elbow, glowing soft amber when activated during dark-hours work",
-      "Matching bioluminescent wash across both collarbones and upper chest, pulsing slowly in sync with her work rhythm",
+      "Matching bioluminescent wash across both collarbones and upper chest, pulsing slowly in sync with work rhythm",
       "Fine acid burn scars across the backs of both hands (white, thin lines), souvenirs from early tube-sealing experiments",
       "Callused fingertips and palms, darkened from solder contact and heat exposure"
     ],
-    "visible_augmentations": "Left eye contains a magnification implant visible as a faint prismatic shimmer in the iris; a delicate reticle grid is sometimes visible when light hits it directly. Both forearms and collarbones glow with slow-pulsing amber bioluminescence when she works in darkness. The fiber-optic cable woven through her hair is not an augmentation but salvaged tech that catches light.",
-    "posture_movement": "Deliberately slow and methodical; she moves with the precision of someone used to handling fragile, dangerous materials. Her head tilts frequently — she studies people and objects with the intensity of someone cataloging light sources. When focused on work, she becomes nearly motionless, all energy concentrated in her hands. In conversation, she will abruptly pause mid-sentence to stare at something in the environment, apparently unconcerned about social awkwardness.",
-    "clothing_style": "Tier 2 practicality with artistic individualism. She typically wears heavy-duty canvas work aprons over fitted black or charcoal long-sleeve shirts (heat and solder protection). Her pants are reinforced denim or hemp-canvas, darkly stained with sealant and solder residue. Her footwear is always steel-toed: black utilitarian boots or work shoes. Over this, she wears a loose oversized linen coat (cream or light gray) that she removes when welding. A pair of heavy welding gloves dangles from her apron pocket at all times. Jewelry is minimal — a single silver ring on her right ring finger, hand-forged. No makeup. She smells of ozone, solder, and faintly of the bioluminescent dermal wash (a metallic-floral scent)."
+    "visible_augmentations": "Left eye contains a magnification implant visible as a faint prismatic shimmer in the iris; a delicate reticle grid is sometimes visible when light hits it directly. Both forearms and collarbones glow with slow-pulsing amber bioluminescence when working in darkness. Fiber-optic cable woven through hair is salvaged tech that catches light.",
+    "posture_movement": "Deliberately slow and methodical; moves with the precision of someone used to handling fragile, dangerous materials. Head tilts frequently — studies people and objects with the intensity of someone cataloging light sources. When focused on work, becomes nearly motionless, all energy concentrated in hands. In conversation, abruptly pauses mid-sentence to stare at something in the environment, apparently unconcerned about social awkwardness.",
+    "clothing_style": "Tier 2 practicality with artistic individualism. Typically wears heavy-duty canvas work aprons over fitted black or charcoal long-sleeve shirts (heat and solder protection). Pants are reinforced denim or hemp-canvas, darkly stained with sealant and solder residue. Footwear is always steel-toed: black utilitarian boots or work shoes. Over this, wears a loose oversized linen coat (cream or light gray) removed when welding. Heavy welding gloves dangle from apron pocket at all times. Jewelry is minimal — single silver ring on right ring finger, hand-forged. No makeup. Smells of ozone, solder, and faintly of bioluminescent dermal wash (metallic-floral scent)."
   },
-  "image_prompt": "Kofi Nygaard-Novotný, a 178cm tall mixed-heritage woman of Sub-Saharan, Eastern European, and Northern European descent, standing in a cyberpunk workshop lit by neon blues and ambers. Her skin is deep mahogany brown with warm golden undertones, her angular face featuring wide-set amber eyes (left eye showing a faint prismatic magnification implant), high cheekbones, and a prominent jaw. Her hair is locked into tight rope braids threaded with fiber-optic cable that scatters light in subtle halos, falling mid-back. She wears a heavy-duty dark canvas work apron over a black long-sleeve shirt, reinforced denim stained with solder residue, and black steel-toed work boots. A cream-colored oversized linen coat hangs loosely over her frame. Her forearms and upper chest glow with soft pulsing amber bioluminescence, and fine white acid scars cross the backs of her hands. She stands in methodical, focused posture amid glass-sealing and neon-tube equipment, her gaze fixed on a light source. The atmosphere is industrial, precise, and tinged with ozone and metallic-floral scent. Cyberpunk 2226, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Erik Delgado-Strömqvist, 178cm tall lean muscular mixed-heritage craftsperson with fair warm beige skin with golden-olive undertones, angular Nordic features softened by rounder Latin and East Asian contours, warm amber eyes with left eye containing visible magnification implant. Long deep brown-black hair locked in tight rope braids threaded with defunct fiber-optic cable that catches light in halos. Work-worn hands with fine white acid scars, calloused fingertips darkened from solder. Wearing heavy-duty canvas work apron over fitted charcoal long-sleeve shirt, reinforced hemp-canvas pants stained with sealant residue, black steel-toed utilitarian boots, loose cream linen coat draped casually. Forearms and collarbones glow with soft amber bioluminescent dermal wash (active, pulsing). Single hand-forged silver ring on right ring finger. Dust of microscopic neon-tube sealant particles creating faint crystalline sheen on skin. Posture is deliberately slow and methodical, head tilted studying something in the environment with intense, cataloging focus. Dark workshop lit by amber and blue neon tubes casting colored shadows across face and augmented left eye reticle. Ozone and solder smell in the air. Neo-noir urban aesthetic, functional artisan, 2200s tech integration --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 44.4,
-    "Eastern European": 24.6,
-    "Northern European": 17.9,
-    "Southeast Asian": 6.3,
-    "Hispanic/Latin American": 4.3,
-    "East Asian": 2.5
+    "Northern European": 49.4,
+    "Hispanic/Latin American": 23.6,
+    "East Asian": 13.7,
+    "Middle Eastern": 5.9,
+    "Sub-Saharan African": 4.1,
+    "Southeast Asian": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 29.1
+      },
+      "Germanic": {
+        "Austrian": 17.4,
+        "German": 2.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 15.1,
+        "Dominican": 8.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 6.9,
+        "Fujianese": 0.8
+      },
+      "Korean": {
+        "Korean": 0.9
+      },
+      "Japanese": {
+        "Japanese": 5.1
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 5.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 3.8
+      },
+      "West African": {
+        "Nigerian": 0.3
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 2.8
+      },
+      "Filipino": {
+        "Tagalog": 0.4,
+        "Waray": 0.1
+      }
+    }
+  }
 }

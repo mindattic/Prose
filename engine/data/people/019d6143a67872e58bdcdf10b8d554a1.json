@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67872e58bdcdf10b8d554a1",
   "type": "character",
-  "name": "Chinwe Ibarra-Vestergaard",
+  "name": "Chinwe Kjellberg-Phongsavath",
   "aliases": [
     "The Old Projector",
     "Soren"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "Pilsen Veil, operating across Mexicantown Libre and Lakeview Neon, near Ashland and Chicago Ave",
-  "description": "Obinna is a broad-shouldered man going soft at the middle, with dark skin mapped by fifty years of lake wind and workshop dust. His beard is full and shot through with silver he has dyed in rotating chromatic bands — currently a deep violet fading to copper — a vanity he accepts without embarrassment. He moves with the deliberate economy of someone who has been on his feet for three decades and has stopped pretending urgency. His hands are enormous and scarred across the knuckles from old hardware accidents, and he keeps them in constant motion even when he's sitting still.\n\nHe projects illegal holo-murals onto corporate architecture using a rig of his own design: a backpack-mounted emitter disguised as an air filtration unit. The murals last twenty minutes before building defense systems scrub them — sometimes longer in Pilsen Veil where the buildings remember him fondly, or so he says. He talks constantly and with tremendous warmth, the kind of person who makes strangers feel immediately known and slightly exposed. He has been arrested fourteen times and considers this a reasonable professional overhead.",
+  "description": "Chinwe Kjellberg-Phongsavath is a broad-shouldered man going soft at the middle, with dark skin mapped by fifty years of lake wind and workshop dust. His beard is full and shot through with silver he has dyed in rotating chromatic bands — currently a deep violet fading to copper — a vanity he accepts without embarrassment. He moves with the deliberate economy of someone who has been on his feet for three decades and has stopped pretending urgency. His hands are enormous and scarred across the knuckles from old hardware accidents, and he keeps them in constant motion even when he's sitting still.\n\nHe projects illegal holo-murals onto corporate architecture using a rig of his own design: a backpack-mounted emitter disguised as an air filtration unit. The murals last twenty minutes before building defense systems scrub them — sometimes longer in Pilsen Veil where the buildings remember him fondly, or so he says. He talks constantly and with tremendous warmth, the kind of person who makes strangers feel immediately known and slightly exposed. He has been arrested fourteen times and considers this a reasonable professional overhead.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -180,7 +180,7 @@
     "Opportunist": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,33 +247,19 @@
     "Mexicantown Libre",
     "Lakeview Neon",
     "Pilsen Veil",
-    "GLMZ",
     "Zheng-dao Bioelectric",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "Chicago",
     "Silver",
     "Copper",
     "The Pure Hand",
-    "Weathervane",
-    "Chicago",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Emeka Johansson-Orozco",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Makena Johanssen-Diallo",
-    "Neuromorphic Pressure Cestus",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Ringo Corponation",
-    "SynapTech AromaVeil Olfactory Filter",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tomasz Wren",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "GLMZ",
+    "Weathervane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African heritage and minor Northern European ancestry. This blend manifests in warm, richly pigmented skin with undertones reflecting the full spectrum of his mixed ancestry—the deep warmth of African heritage combined with the olive-golden undertones common in Latin American populations, with subtle coolness from European ancestry visible in undertone complexity.",
+    "heritage": "Southeast Asian dominant (53.4%) with substantial Sub-Saharan African heritage (27.3%), Indigenous American (13.5%), and Hispanic/Latin American (5.8%) ancestry. This genetic constellation manifests in warm, deeply pigmented skin with complex undertones—the rich mahogany-brown base from blended African and Southeast Asian ancestry, layered with golden-bronze warmth and subtle olive cast. Facial structure reflects the full ancestry: Southeast Asian cheekbone prominence and eye shape, African heritage in nose width and lip fullness, Indigenous American and Hispanic undertones in overall bone structure and complexion depth.",
     "height_cm": 183,
     "weight_kg": 92,
     "build": "Broad-shouldered and barrel-chested, softening through the middle with age but still carrying the frame of someone who's spent decades on his feet. Forearms remain ropey with muscle memory.",
@@ -281,8 +267,8 @@
     "hair_style": "Full, well-maintained beard worn long and styled with deliberate care",
     "hair_length": "Medium (beard); head hair kept close to scalp",
     "eye_color": "Dark brown; left eye has a subtle luminescent targeting reticle visible when ambient light hits it at certain angles",
-    "skin_tone": "Rich warm brown with golden-bronze undertones, sun-darkened from decades of outdoor work, reflecting the blended warmth of Latin American and African ancestry with subtle olive cast",
-    "complexion": "Heavily lined face—creases around eyes and mouth from constant talking and laughter. Skin texture roughened by workshop dust and lake wind exposure. Facial structure shows the broader nose and fuller lips characteristic of African heritage, balanced with the cheekbone definition common in Latin American populations. Grooming is meticulous despite worn appearance; beard is regularly conditioned.",
+    "skin_tone": "Deep warm mahogany-brown with golden-bronze undertones and subtle olive cast, sun-darkened from decades of outdoor work, reflecting the layered warmth of Southeast Asian, African, Indigenous American, and Hispanic ancestry blended into rich, complex pigmentation",
+    "complexion": "Heavily lined face—creases around eyes and mouth from constant talking and laughter. Skin texture roughened by workshop dust and lake wind exposure. Facial structure shows Southeast Asian cheekbone definition balanced with African heritage width in nose and lip fullness, with Indigenous American and Hispanic ancestry contributing to overall bone prominence. Grooming is meticulous despite worn appearance; beard is regularly conditioned.",
     "distinguishing_marks": [
       "Old burn scar across right forearm from early rig accident—deliberately left unrepaired, pale and mottled against darker skin, approximately 12cm long running from wrist toward elbow",
       "Multiple thin scars across knuckles of both hands, white against darker skin, from decades of hardware work and accidents",
@@ -292,14 +278,52 @@
     "posture_movement": "Moves with deliberate, economical grace born of three decades on his feet—no wasted motion, but never rushed. Hands are in constant subtle motion even when seated, gesturing while speaking, fidgeting with small objects. Head tilts forward slightly when listening intently. Carries himself with the unselfconscious confidence of someone long comfortable in his own skin.",
     "clothing_style": "Tier 3-4 functional with deliberate artistic flair. Favors layered, weathered utilitarian pieces: worn canvas work pants, thermal base layers visible at collar and wrists, oversized linen or hemp overshirts in muted earth tones. Often wears a long coat of synthetic leather that's seen better days but is carefully maintained. Work boots that are scuffed but well-oiled. Jewelry is minimal but intentional—a silver ring on one hand, possibly hand-made. No visible corporate branding; aesthetic is deliberately anti-corpo while remaining accessible to working-class spaces he frequents."
   },
-  "image_prompt": "A weathered 60-something male figure with rich warm brown skin and golden undertones, standing in cyberpunk 2226 setting. He has close-cropped black hair with gray, a long full beard in striking chromatic bands of deep violet fading to copper. Dark brown eyes with one bearing a subtle luminescent targeting reticle overlay. Broad-shouldered build, 183cm tall, heavily lined face showing lifetime of outdoor work. Visible pale burn scar across right forearm, scars on knuckles. Wears layered utilitarian clothing: worn canvas work pants, thermal base layer visible at collar, oversized muted earth-tone hemp overshirt, weathered synthetic leather long coat, well-oiled scuffed work boots. Minimal silver jewelry. Hands in subtle motion, posture economical and graceful. Backpack-mounted holo-emitter disguised as air filtration unit. Standing in industrial workshop or Great Lakes Metropolitan Zone street setting with warm practical lighting catching his eye augmentation at certain angles. Anti-corpo aesthetic, working-class accessibility. Cyberpunk 2200s, film noir meets functional utility wear. --ar 2:3 --v 6",
+  "image_prompt": "Chinwe Kjellberg-Phongsavath, tall broad-shouldered man with deep mahogany-brown skin and golden-bronze undertones, Southeast Asian cheekbones with African heritage fullness in lips and nose width. Close-cropped black hair with natural gray, long beard dyed in rotating bands of violet fading to copper. Dark brown eyes with subtle cybernetic targeting reticle visible in left eye. Heavily lined face from decades of laughter and outdoor work, mottled burn scar across right forearm, white scars across knuckles. Wearing layered utilitarian GLMZ fashion: worn canvas work pants, thermal base layers, oversized muted earth-tone linen overshirt, long synthetic leather coat weathered and carefully maintained, scuffed but oiled work boots. Silver hand-made ring. Standing in Great Lakes workshop interior with neon glow, cool blue and amber lighting catching the cybernetic eye enhancement. Economical posture, hands in subtle motion, unselfconscious confidence. Anti-corpo aesthetic. Cinematic, photorealistic GLMZ 2200s --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 67.4,
-    "Sub-Saharan African": 21.7,
-    "Northern European": 10.9
+    "Southeast Asian": 53.4,
+    "Sub-Saharan African": 27.3,
+    "Indigenous American": 13.5,
+    "Hispanic/Latin American": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 17.5,
+        "Javanese": 9.6
+      },
+      "Laotian": {
+        "Laotian": 13.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 13
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 10.2
+      },
+      "Southern African": {
+        "Botswanan": 17.1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 10.9,
+        "Ho-Chunk": 2.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 3.9
+      },
+      "South American": {
+        "Brazilian": 1.4,
+        "Argentine": 0.5
+      }
+    }
+  }
 }

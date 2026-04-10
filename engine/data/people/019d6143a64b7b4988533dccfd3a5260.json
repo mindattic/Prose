@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Armitage and Milwaukee",
-  "description": "Liora Mori-Sefa is slight and easy to overlook, which is exactly the point. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a cleaner out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLiora Mori-Sefa operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Flux Thorvaldsdóttir is slight and easy to overlook, which is exactly the point. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a cleaner out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFlux Thorvaldsdóttir operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -257,7 +257,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -271,35 +271,16 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "The Milwaukee Core",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Prophet",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Narrows",
-    "Vantablack Media Parasocial Carrier Mask"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European dominant (48.1%) with significant Hispanic/Latin American (23.2%) and Sub-Saharan African (15.0%) ancestry, plus smaller admixtures of Central Asian (7.3%), East Asian (3.4%), and North African (3.0%). The result is a phenotype that defies easy categorization — Northern European bone structure tempered by Latin American warmth and African undertones, creating a genuinely mixed-heritage appearance that reflects the Ubiquitous Diaspora.",
+    "heritage": "Predominantly East Asian (50.9%) with substantial Middle Eastern (36.0%) and notable Sub-Saharan African (13.1%) ancestry. The result is a phenotype that blends East Asian bone structure with Middle Eastern depth and African warmth — a genuinely mixed-heritage appearance reflecting the Ubiquitous Diaspora. Features carry the precision of East Asian genetics tempered by the richness of Middle Eastern and African undertones.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and economical, deceptively compact. Geneware muscle density treatment gives his frame a corded, efficient quality — no excess, all functional. Moves like someone who has learned to take impact without broadcasting it.",
@@ -307,8 +288,8 @@
     "hair_style": "Pulled back tight, practical. Kept short enough not to interfere with work.",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and measuring",
-    "skin_tone": "Warm mid-to-golden brown with complex undertones — Northern European paleness blended with Latin American and African warmth creating an even, sophisticated tone without harsh contrasts",
-    "complexion": "Fine-featured, angular face with high cheekbones and a narrow jaw reflecting Northern European structure softened by broader features inherited from Latin American and African ancestry. Skin is weathered but meticulously maintained — the grooming of someone who understands that invisibility requires not looking neglected. No facial hair. Small white scar through left eyebrow, clean edge. Two thin parallel scars on right cheekbone, deliberately preserved rather than removed.",
+    "skin_tone": "Deep warm golden-brown — East Asian undertones enriched by Middle Eastern depth and African warmth creating a sophisticated, even tone with subtle luminosity. Not pale, not dark, but a complex blending that reads as naturally intermediate.",
+    "complexion": "Angular face with defined cheekbones and precise jawline reflecting East Asian structure deepened by Middle Eastern and African features. Eyes set with characteristic East Asian geometry but warmed by broader facial proportions. Skin is weathered but meticulously maintained — the grooming of someone who understands that invisibility requires not looking neglected. No facial hair. Small white scar through left eyebrow, clean edge. Two thin parallel scars on right cheekbone, deliberately preserved rather than removed.",
     "distinguishing_marks": [
       "White surgical scar running through left eyebrow, approximately 2cm, edge clean",
       "Two parallel scars on right cheekbone beneath eye, each roughly 1.5cm, deliberate preservation suggests they serve as personal marks or reminders",
@@ -317,19 +298,48 @@
     ],
     "visible_augmentations": "Smartgun link in right forearm — visible as a raised port array beneath the skin with faint neural interface scarring. The chrome is polished stainless, no attempt to conceal it. Geneware muscle density treatment is invisible but evident in the way muscle definition appears without obvious bulk — functional rather than aesthetic augmentation.",
     "posture_movement": "Still. Conserves motion. Walks with minimal upper body movement, lets hips lead. Stands in corners when stationary, back always positioned with sightline control. Doesn't fidget. His stillness is his primary invisibility asset — easier to overlook someone who isn't performing visibility.",
-    "clothing_style": "Tier 3-4 utilitarian. Charcoal gray tech-weave utility jacket with reinforced forearm panels — practical, worn enough to be invisible but maintained. Black cargo pants with custom pockets. Steel-toed boots, scuffed but functional. Thin high-neck undershirt in black, covers any subdermal scarring. No branding visible. Everything selected for silence — no rustling fabrics, muted colors, nothing that broadcasts presence. The overall effect is someone designed to be forgotten."
+    "clothing_style": "Tier 3-4 utilitarian. Charcoal gray tech-weave utility jacket with reinforced forearm panels — practical, worn enough to be invisible but maintained. Black cargo pants with custom pockets. Steel-toed boots, scuffed but functional. Thin high-neck undershirt in black, covers any subdermal scarring. No branding visible. Everything selected for silence — no rustling fabrics, muted colors, nothing that broadcasts presence."
   },
-  "image_prompt": "Flux Thorvaldsdóttir, 168cm lean mixed-heritage operative, warm golden-brown skin with Northern European bone structure and Latin/African undertones, dark brown eyes alert and measuring, dark brown hair with silver temples pulled back tight. Angular high-cheekbones face, surgical scar through left eyebrow, two parallel scars on right cheekbone. Wears charcoal gray reinforced tech-weave utility jacket, black high-neck undershirt, black cargo pants, scuffed steel-toed boots. Polished stainless smartgun link port visible on right forearm. Perfectly still posture, minimal movement, stands in corner with sightline control. Cyberpunk 2226, Great Lakes Metropolitan Zone, neon-lit industrial setting with cool blue and amber lighting, ultra-minimalist presence, designed to be forgotten, utilitarian noir aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Flux Thorvaldsdóttir, androgynous operative with mixed East Asian, Middle Eastern, and Sub-Saharan African heritage, deep warm golden-brown skin tone with angular cheekbones and precise jawline. Dark brown eyes with alert, measuring gaze. Dark brown hair with silver at temples, pulled back tight. Visible smartgun link port array in right forearm with polished stainless chrome. White scar through left eyebrow, two parallel scars on right cheekbone. Lean 168cm frame with corded muscle definition from geneware enhancement. Wearing charcoal gray tech-weave utility jacket with reinforced forearm panels, black cargo pants, scuffed steel-toed boots, high-neck black undershirt. Standing in corner with minimal posture, back to wall, sightline control position. GLMZ Great Lakes Metropolitan Zone setting, neon-lit industrial backdrop, moody shadows, cool blue-gray lighting with accent highlights on augmentation ports. Expression neutral and measured. Silent operative aesthetic, invisible in plainness, functional over flashy. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 48.1,
-    "Hispanic/Latin American": 23.2,
-    "Sub-Saharan African": 15.0,
-    "Central Asian": 7.3,
-    "East Asian": 3.4,
-    "North African": 3.0
+    "East Asian": 50.9,
+    "Middle Eastern": 36,
+    "Sub-Saharan African": 13.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 50.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 4.8,
+        "Syrian": 2.7
+      },
+      "Persian": {
+        "Tajik Persian": 5.5,
+        "Iranian": 5.8
+      },
+      "Kurdish": {
+        "Kurdish": 17.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 7
+      },
+      "Central African": {
+        "Cameroonian": 5.4
+      },
+      "East African": {
+        "Tanzanian": 0.6,
+        "Kenyan": 0.1
+      }
+    }
+  }
 }

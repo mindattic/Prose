@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60877239f8a3e5a097d07bf",
   "type": "character",
-  "name": "Soren Szabó",
+  "name": "Soren Nanthawat",
   "aliases": [
     "Doxie",
     "Lady Static"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Garret, permanent residency at a club called The Lowering Bar, near North Ave and Damen",
-  "description": "Eudoxia is a broad, comfortable-looking woman who weaponizes the appearance of comfort. She has silver-threaded locs piled architecturally on her head, a wardrobe of brightly patterned structural jackets, and reading glasses she doesn't actually need that she takes on and off during performances for punctuation. Her eyes have patterned irises — a gift to herself for her fiftieth birthday, concentric rings of amber and dark blue that make her gaze feel like a diagnostic tool. She laughs loudly and often and the laugh is the first thing anyone mentions when describing her.\n\nEudoxia has been performing in GLMZ for thirty-one years. She has watched the city transform from positions closer and closer to the ground, and her comedy is a decades-long document of that transformation — who got squeezed out, who moved up, what the corponations promised and what they delivered. She is ferociously funny. She is also the sharpest political satirist working in The Garret, possibly in the city, and she does it standing in front of a microphone with a drink in her hand so everyone can pretend it's just jokes. Three Axiom corporate communications officers have individually tried to have her 'scheduled away' from prominent venues. She considers this her Φ120 UBC bonus.",
+  "description": "Soren Nanthawat is a broad, comfortable-looking woman who weaponizes the appearance of comfort. She has silver-threaded locs piled architecturally on her head, a wardrobe of brightly patterned structural jackets, and reading glasses she doesn't actually need that she takes on and off during performances for punctuation. Her eyes have patterned irises — a gift to herself for her fiftieth birthday, concentric rings of amber and dark blue that make her gaze feel like a diagnostic tool. She laughs loudly and often and the laugh is the first thing anyone mentions when describing her.\n\nSoren Nanthawat has been performing in GLMZ for thirty-one years. She has watched the city transform from positions closer and closer to the ground, and her comedy is a decades-long document of that transformation — who got squeezed out, who moved up, what the corponations promised and what they delivered. She is ferociously funny. She is also the sharpest political satirist working in The Garret, possibly in the city, and she does it standing in front of a microphone with a drink in her hand so everyone can pretend it's just jokes. Three Axiom corporate communications officers have individually tried to have her 'scheduled away' from prominent venues. She considers this her Φ120 UBC bonus.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -184,7 +184,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -201,40 +201,17 @@
     "Crucible Industries Cerberus-357 'Hellhound'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Garret",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus MX-1 'Cerberus'",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Cerberus-357 'Hellhound'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
-    "Dzemal Acholonu-Patagiri",
-    "Eshe Pena-Baah",
-    "Fanta Popov-Adjei",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Highland Park Autonomous Zone",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TK-4 'Hellhound'",
-    "The Heritage Vault",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-dao Bioelectric"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian (45.6%) with significant Eastern European (40%) and Hispanic/Latin American (14.4%) ancestry — a striking blend evident in facial structure showing East Asian bone geometry softened by Eastern European features, with warm undertones from Latin heritage throughout",
+    "heritage": "Southeast Asian (45.2%) with significant East Asian (39.3%), South Asian (7.9%), and Sub-Saharan African (7.6%) ancestry — a striking pan-Asian blend enriched by African depth. Southeast Asian cheekbones and eye placement combine with East Asian facial geometry, warmed by South Asian undertones and deepened by Sub-Saharan heritage throughout facial structure and bone prominence.",
     "height_cm": 172,
     "weight_kg": 89,
     "build": "Broad-shouldered and substantial, carried with deliberate comfort — the kind of presence that takes up space and owns it. Strong core, generous in frame but not soft; built for durability and impact.",
@@ -242,8 +219,8 @@
     "hair_style": "Locs piled and pinned into an elaborate architectural structure, often adorned with small brass or copper fixtures that catch stage light",
     "hair_length": "Long (locs reach mid-back when unbound)",
     "eye_color": "Augmented: concentric rings of amber (outer) and dark blue (inner), creating a hypnotic diagnostic quality",
-    "skin_tone": "Warm golden-olive complexion with subtle peachy undertones — the blend of East Asian, Eastern European, and Latin heritage creating a luminous mid-to-deep tone that catches light with natural warmth",
-    "complexion": "Weathered and expressive — laugh lines deeply etched around eyes and mouth, skin well-maintained but showing fifty-eight years of stage work and smoke exposure. East Asian facial structure evident in cheekbones and eye placement, softened by broader Eastern European features. Minimal makeup, usually just dark liner. Carries herself with the confidence of someone who has earned every line.",
+    "skin_tone": "Deep warm bronze complexion with luminous golden undertones — the blend of Southeast Asian, East Asian, South Asian, and Sub-Saharan African heritage creating a sun-kissed richness that deepens toward amber in certain light, with warm undertones throughout",
+    "complexion": "Weathered and expressive — laugh lines deeply etched around eyes and mouth, skin well-maintained but showing fifty-eight years of stage work and smoke exposure. Strong Southeast Asian cheekbones and eye placement refined by East Asian geometry, with facial structure depth and bone prominence from Sub-Saharan heritage. South Asian warmth evident in skin undertones. Minimal makeup, usually just dark liner. Carries herself with the confidence of someone who has earned every line.",
     "distinguishing_marks": [
       "Faint scar tissue on throat, barely visible unless lit from certain angles — legacy of the polyp removal and laryngeal work",
       "Small constellation of old burns on her left forearm (three distinct marks) from a kitchen accident in her thirties, now pale against her skin"
@@ -252,14 +229,51 @@
     "posture_movement": "Commands space even while standing still. Moves with theatrical precision — every gesture deliberate, whether she's raising a hand to adjust her reading glasses or leaning into the microphone. Her laugh initiates from the diaphragm; her whole body participates. Walks with confidence bordering on swagger, despite her age.",
     "clothing_style": "Bright, structured jackets with complex geometric or pattern work — Tier 3-4 quality, independent designer sources, never corporate. Prefers fabrics with weight and texture. Underneath: dark, simple base layers (black or charcoal), well-fitted jeans or smart trousers. Practical shoes suited for standing all night. Reading glasses (non-prescription) worn on a cord, used as a prop during performances. Minimal jewelry beyond small brass ear weights. Her style signals: I am not trying to be young, I am not trying to disappear, I am here on purpose."
   },
-  "image_prompt": "Soren Szabó, 58-year-old cyberpunk performer, East Asian and Eastern European heritage with warm golden-olive skin tone, augmented eyes with striking amber and blue concentric rings. Dark brown locs with silver threading pinned into architectural structure adorned with brass fixtures. Broad-shouldered, 172cm tall, confident posture. Wearing bright geometric-patterned structured jacket over charcoal base layer, dark smart trousers, reading glasses on brass cord. Minor throat scarring visible, pale burn marks on left forearm. Stage lighting catching her eye augmentations and hair fixtures, theatrical presence, commanding space with deliberate precision. Cyberpunk 2226 Great Lakes setting, moody amber and blue lighting, performance venue atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Soren Nanthawat, 58-year-old performer with deep bronze skin and golden undertones, strong Southeast Asian cheekbones and East Asian geometry enriched by Sub-Saharan facial depth. Dark brown hair with silver threading pinned into elaborate locs adorned with brass fixtures. Augmented eyes: amber outer rings with dark blue inner diagnostic centers. Theatrical posture, commanding presence. Wearing a bright geometric-patterned structured jacket over dark base layer, well-fitted dark trousers, practical stage shoes. Reading glasses on cord. Faint throat scars visible in harsh stage lighting. Weathered laugh lines, confident expression. GLMZ Great Lakes Metropolitan Zone, stage or performance space with atmospheric lighting casting shadows across face, moody neon undertones, intimate and commanding presence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 45.6,
-    "Eastern European": 40.0,
-    "Hispanic/Latin American": 14.4
+    "Southeast Asian": 45.2,
+    "East Asian": 39.3,
+    "South Asian": 7.9,
+    "Sub-Saharan African": 7.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 39.1
+      },
+      "Cambodian": {
+        "Khmer": 6.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 39.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5.3
+      },
+      "Nepali": {
+        "Nepali": 2.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 0.5,
+        "Botswanan": 0.7
+      },
+      "East African": {
+        "Ethiopian": 4.8
+      },
+      "West African": {
+        "Nigerian": 1.4,
+        "Senegalese": 0.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73e7db79af725046eb7534d",
   "type": "character",
-  "name": "Soledad Trujillo-Baiseitov-Sigurdsson",
+  "name": "Efua Dalgaard-Shirazi-Magnúsdóttir",
   "aliases": [
     "Zuzu",
     "Z"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows; lives in the basement unit of the building they manage at Benton Divide 14-C, near Milwaukee and Damen",
-  "description": "Zuzanna Osei-Reinholt is compact and relentlessly practical — they move through the world like someone who has calculated exactly how much space they need and taken only that. Their Ghanaian father's warm brown complexion and their Polish-Danish mother's angular features produce a face that people describe as striking without being able to say exactly why. Their hair is kept short and color-changing — a mod they got at eighteen and still use, though these days they mostly leave it set to a flat, unassuming dark. On bad days it shifts citrus-orange without conscious input. They've stopped fighting it.\n\nZuzu manages a forty-unit residential block in the Narrows that should not still be standing, technically, and keeps it standing through a combination of improvised engineering, favors owed by every tradesperson in a six-block radius, and the iron conviction that their sixty-three residents deserve heat, water pressure, and working lifts even if the absentee landlord has no intention of providing any of these things. They are the person people knock on at 02:00 when a pipe fails and the person people find already awake at 02:00 because they heard the pipe before it failed. Their tool roll is their most prized possession. They would be offended to hear it called sentimental.",
+  "description": "Efua Dalgaard-Shirazi-Magnúsdóttir is compact and relentlessly practical — they move through the world like someone who has calculated exactly how much space they need and taken only that. Their Ghanaian father's warm brown complexion and their Polish-Danish mother's angular features produce a face that people describe as striking without being able to say exactly why. Their hair is kept short and color-changing — a mod they got at eighteen and still use, though these days they mostly leave it set to a flat, unassuming dark. On bad days it shifts citrus-orange without conscious input. They've stopped fighting it.\n\nZuzu manages a forty-unit residential block in the Narrows that should not still be standing, technically, and keeps it standing through a combination of improvised engineering, favors owed by every tradesperson in a six-block radius, and the iron conviction that their sixty-three residents deserve heat, water pressure, and working lifts even if the absentee landlord has no intention of providing any of these things. They are the person people knock on at 02:00 when a pipe fails and the person people find already awake at 02:00 because they heard the pipe before it failed. Their tool roll is their most prized possession. They would be offended to hear it called sentimental.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -171,7 +171,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows; lives in the basement unit of the building they manage at Benton Divide 14-C",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -189,37 +189,18 @@
     "The Narrows Compact",
     "Warm Wire, Small Hand",
     "Palladian Construction",
-    "Blackpipe Corridor",
-    "Big Rig",
     "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+    "Pressure Drop",
+    "Blackpipe Corridor",
+    "GLMZ",
     "The Gradient Compact",
-    "Iron",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
+    "Big Rig",
     "Arcturus KS-7 'Nursery'",
-    "Cinderblock Ai",
-    "Devraj Solano-Yildirim",
-    "Dragan Tuiasau-Kwofie",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Iowan Behemoth — 'Palisade'",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "NeuralPath Conduit Everyday Neural Mesh",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Gallows' Recurve Bow",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "The Corridor",
-    "The Gutter Prophets",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Zuwena Calixto-Magnúsdóttir"
+    "Iron"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (73.2%) with significant Central Asian (13.3%), Southeast Asian (7.4%), and Northern European (6.1%) ancestry; the genetic blend produces warm olive-bronze skin with subtle golden and warm undertones, angular facial structure reflecting the diverse heritage mix",
+    "heritage": "Northern European (49.6%), Sub-Saharan African (25.4%), and Middle Eastern (25.0%) ancestry; the genetic blend produces rich warm brown skin with golden undertones, high-definition bone structure reflecting balanced mixing of Northern European, African, and Middle Eastern features",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and wiry with functional muscle; shoulders slightly broad from manual work, no wasted mass — the frame of someone who moves efficiently through tight spaces",
@@ -227,8 +208,8 @@
     "hair_style": "Cropped close to scalp, practical and low-maintenance; mod circuitry barely visible at the nape",
     "hair_length": "Short",
     "eye_color": "Left eye augmented with warm amber LED glow during low-light optical engagement; right eye natural warm brown",
-    "skin_tone": "Warm olive-bronze complexion with golden and peachy undertones reflecting the Latin American majority heritage blended with Central and Southeast Asian ancestry, slightly paler on forearms from work gloves",
-    "complexion": "Angular facial structure with high cheekbones and a square jaw reflecting diverse ancestry; minimal facial hair; skin shows minor scarring on knuckles and one faint burn mark on left temple from early electrical work; minimal grooming beyond practical necessity",
+    "skin_tone": "Rich warm brown complexion with golden undertones, reflecting balanced Northern European, Sub-Saharan African, and Middle Eastern heritage blend; slightly paler on forearms from work gloves",
+    "complexion": "Defined facial structure with prominent cheekbones and strong jawline reflecting diverse ancestry; minimal facial hair; skin shows minor scarring on knuckles and one faint burn mark on left temple from early electrical work; minimal grooming beyond practical necessity",
     "distinguishing_marks": [
       "Faint horizontal burn scar on left temple, approximately 3cm, pale against skin tone",
       "Callused knuckles on both hands with embedded tool-work scarring",
@@ -239,15 +220,40 @@
     "posture_movement": "Moves with economical precision, minimal wasted motion; often stands with hands ready or already engaged with tools; leans against walls and doorframes in conversation as if calculating load-bearing; rarely sits fully — perches or stands, ready to respond to building needs",
     "clothing_style": "Tier 4 utilitarian wear with visible wear and repair patches; canvas cargo pants with tool loops and grease stains; sleeveless or short-sleeved tops layered over a faded thermal shirt; steel-toed work boots, left one with visible duct tape repair; a heavy canvas apron in charcoal, pockets worn soft from constant tool access; durable polymer watch with illuminated face; no jewelry beyond a worn steel ring on left middle finger (functional — doubles as a nut key)"
   },
-  "image_prompt": "Soledad Trujillo-Baiseitov-Sigurdsson, 162cm compact wiry frame, warm olive-bronze skin with golden undertones, angular face with high cheekbones and square jaw reflecting Latin American-Central Asian-Southeast Asian ancestry blend. Cropped dark brown hair with barely-visible mod circuitry at nape. Left eye glowing warm amber LED, right eye natural warm brown. Faint 3cm burn scar on left temple, calloused scarred knuckles, thin white forearm scar, dark birthmark on left collarbone. Wearing worn Tier 4 utilitarian work gear: sleeveless top over faded thermal, canvas cargo pants with grease stains and tool loops, charcoal apron with soft-worn pockets, duct-taped steel-toed boots, illuminated polymer watch, worn steel ring. Standing with economical posture in a dimly-lit industrial GLMZ maintenance corridor, hands ready, leaning slightly against reinforced wall, ready for immediate response. Cyberpunk 2226 Great Lakes Metropolitan Zone. Moody amber and cool blue industrial lighting. Low-light ambiance. --ar 2:3 --v 6",
+  "image_prompt": "Efua Dalgaard-Shirazi-Magnúsdóttir, compact 162cm tall maintenance technician in 2226 GLMZ, rich warm brown skin with golden undertones reflecting Northern European, Sub-Saharan African, and Middle Eastern ancestry blend, defined cheekbones and strong jawline, short matte-charcoal cropped hair with visible silver circuitry at nape, left eye glowing with warm amber LED during low-light engagement, right eye natural warm brown. Faint 3cm burn scar on left temple, callused knuckles, white scar along right forearm, small dark birthmark on left collarbone. Wearing worn Tier 4 utilitarian canvas cargo pants with tool loops and grease stains, sleeveless over faded thermal, heavy charcoal canvas apron with worn soft pockets, steel-toed work boots with duct tape repair, durable polymer watch, functional steel ring on left middle finger. Standing with economical precision, hands ready near tools, leaning against maintenance corridor wall in industrial lighting, GLMZ 2200s Great Lakes Metropolitan Zone, moody work-site ambiance, calculating and ready --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 73.2,
-    "Central Asian": 13.3,
-    "Southeast Asian": 7.4,
-    "Northern European": 6.1
+    "Northern European": 49.6,
+    "Sub-Saharan African": 25.4,
+    "Middle Eastern": 25
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 30.5,
+        "Swedish": 19.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 2.5,
+        "Ethiopian": 6.5
+      },
+      "Central African": {
+        "Angolan": 3.9
+      },
+      "Southern African": {
+        "South African": 4.8,
+        "Mozambican": 7.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 25
+      }
+    }
+  }
 }

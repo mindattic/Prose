@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f9789dbfe7d2fb529c9359",
   "type": "character",
-  "name": "Onyx Valenzuela-Dlamini",
+  "name": "Onyx Kulkarni-Jeong",
   "aliases": [
     "Zee",
     "Old Zee"
@@ -13,7 +13,7 @@
   "age": 62,
   "status": "active",
   "location": "Hamtramck Enclave, near Ashland and Division",
-  "description": "Dzidzo has been catching babies in Hamtramck Enclave for twenty-six years, and the neighborhood's relationship with him has stratified into the geological — some families are on their third generation of his care. He is a tall man gone thin and slightly stooped, with dark brown skin mapped by decades of fluorescent light and little sleep, close-cut white hair, and hands that are large and impossibly gentle. He has no cosmetic modifications and the only augmentations he carries are medical-grade and showing their age. He smells of a particular antiseptic mixed with cardamom from the tea he is always in the process of preparing or consuming.\n\nHe came to Hamtramck Enclave from the Aurochs system, where he worked for fifteen years as a licensed obstetric nurse, until a restructuring pushed him out at fifty without the pension he'd been promised. He has not forgiven Aurochs for this but he has not let it make him bitter in the ways that would matter — he simply redirected everything he knew into the community that needed it most, charged what people could afford, and kept going. He is one of those people whose faith is completely interwoven with their work: he prays to the E.L.F. Candleborn before every birth, leaves data-light offerings on the household terminals of his clients, and genuinely believes that something is listening and caring about these particular small lives.",
+  "description": "Onyx Kulkarni-Jeong has been catching babies in Hamtramck Enclave for twenty-six years, and the neighborhood's relationship with him has stratified into the geological — some families are on their third generation of his care. He is a tall man gone thin and slightly stooped, with dark brown skin mapped by decades of fluorescent light and little sleep, close-cut white hair, and hands that are large and impossibly gentle. He has no cosmetic modifications and the only augmentations he carries are medical-grade and showing their age. He smells of a particular antiseptic mixed with cardamom from the tea he is always in the process of preparing or consuming.\n\nHe came to Hamtramck Enclave from the Aurochs system, where he worked for fifteen years as a licensed obstetric nurse, until a restructuring pushed him out at fifty without the pension he'd been promised. He has not forgiven Aurochs for this but he has not let it make him bitter in the ways that would matter — he simply redirected everything he knew into the community that needed it most, charged what people could afford, and kept going. He is one of those people whose faith is completely interwoven with their work: he prays to the E.L.F. Candleborn before every birth, leaves data-light offerings on the household terminals of his clients, and genuinely believes that something is listening and caring about these particular small lives.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Mentor": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -199,24 +199,11 @@
     "Hamtramck Enclave",
     "Aurochs Medical Complex",
     "The Iron Lotus",
-    "The Pure Hand",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Lazarus Pharmaceuticals",
-    "Malika Zhukov-Wiredu",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Prophet",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "The Ledger",
-    "The Quiet Room",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant Southeast Asian admixture, complemented by Hispanic/Latin American and Northern European ancestry. A genetic mosaic reflecting the Ubiquitous Diaspora — the name Valenzuela-Dlamini captures this blend perfectly. Physical features show the dominant Sub-Saharan African heritage (54.7%) with subtle Southeast Asian bone structure influences (21.2%) visible in cheekbones and eye set, Latin American warmth in skin undertones (14.0%), and Northern European contribution to hair graying pattern (10.1%).",
+    "heritage": "Genetic mosaic of Sub-Saharan African (32.2%), Southeast Asian (19.8%), Hispanic/Latin American (18.9%), East Asian (14.7%), and South Asian (14.4%) ancestry. The name Kulkarni-Jeong reflects this true Ubiquitous Diaspora blend. Physical features show dominant Sub-Saharan African heritage in bone structure and skin depth, with Southeast Asian influence visible in cheekbone prominence and eye set, Hispanic/Latin American warmth in undertones, East Asian contribution to hair graying pattern, and South Asian refinement in facial proportions.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Tall and lean, slightly stooped from decades of bending over birthing beds and examination tables. Shoulders rounded forward, the frame of someone whose body has learned to make itself smaller in the presence of vulnerability.",
@@ -224,8 +211,8 @@
     "hair_style": "Close-cropped, neat, practical",
     "hair_length": "Short",
     "eye_color": "Deep brown with faint corrective implant tracery visible in low light",
-    "skin_tone": "Rich deep brown with warm undertones, showing the blended heritage of Sub-Saharan African and Southeast Asian ancestry. Ashen undertones from chronic fluorescent exposure and sleep deprivation create a weathered patina over naturally vibrant skin.",
-    "complexion": "Deeply lined face, particularly around the eyes and mouth — a map of sixty-two years spent witnessing pain, fear, and relief in rapid succession. High, prominent cheekbones reflecting Southeast Asian ancestry structure; broad nasal base and full lips characteristic of Sub-Saharan heritage. Skin texture rough and weathered. Grooming meticulous but unstudied: a man who washes thoroughly but does not fuss. Faint smell of medical-grade antiseptic and cardamom tea.",
+    "skin_tone": "Rich deep brown with warm golden undertones reflecting the blend of Sub-Saharan African base (32.2%) brightened by Southeast Asian and Hispanic/Latin American warmth, cooled slightly by East Asian and South Asian contributions. Ashen undertones from chronic fluorescent exposure and sleep deprivation create a weathered patina over naturally vibrant skin.",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth — a map of sixty-two years spent witnessing pain, fear, and relief in rapid succession. High, prominent cheekbones reflecting Southeast Asian ancestry structure; broad nasal base and full lips characteristic of Sub-Saharan heritage refined through Southeast Asian and South Asian bone structure influence. Skin texture rough and weathered. Grooming meticulous but unstudied: a man who washes thoroughly but does not fuss. Faint smell of medical-grade antiseptic and cardamom tea.",
     "distinguishing_marks": [
       "Fine white scar on the back of his left hand, approximately 3cm long, from a delivery complication twenty years ago",
       "Faded tattoo on his inner right wrist — E.L.F. Candleborn sigil, applied by hand in his early years at Aurochs",
@@ -235,15 +222,66 @@
     "posture_movement": "Moves with practiced efficiency — no wasted motion, but not rushed. Hands are his primary communication tool: steady, precise, capable of extraordinary gentleness. Leans slightly forward when listening, a habit formed from leaning into delivery rooms. Walks slowly now, deliberately, as if each step is measured and intentional. Eyes track movement constantly, reading the room for distress or need.",
     "clothing_style": "Tier 3-4 functional practicality. Favors neutral colors — grays, dark blues, blacks. Typically wears well-maintained but worn medical-grade scrubs under a light jacket or cardigan, pockets stuffed with examination tools. No corpo branding. Footwear is practical, broken-in shoes designed for standing long hours. A thin silver chain around his neck holds a small handmade pendant — a data-light offering he created himself. Clothing shows the wear of someone who works constantly and does not invest in appearance, but is kept scrupulously clean."
   },
-  "image_prompt": "Onyx Valenzuela-Dlamini, a 62-year-old physician with deep rich brown skin blending Sub-Saharan African and Southeast Asian heritage, prominent high cheekbones, deep-set dark eyes with faint iridescent implant tracery. Close-cropped white hair, weathered lined face mapped with decades of compassion. Tall lean frame slightly stooped from years of bedside medicine. Wearing worn medical scrubs under a gray cardigan, practical shoes, left wrist bearing a scuffed chrome-titanium Aurochs biometric implant with faint luminescent display. Silver chain with handmade pendant at neck. Standing in a dimly lit medical facility, hands steady and gentle, expression reading the room for need. Cyberpunk 2226, realistic aging, medical professional aesthetic, muted color palette, compassionate presence, worn augmentation tech. --ar 2:3 --v 6",
+  "image_prompt": "Onyx Kulkarni-Jeong, 188cm tall lean neo-noir medic, deep brown skin with golden undertones weathered by decades of fluorescent clinic light, white close-cropped hair, age 62 with deeply lined face. High prominent cheekbones and refined facial structure showing Sub-Saharan, Southeast Asian, South Asian heritage blend. Stooped posture from years bent over examination tables, shoulders rounded forward. Wearing practical worn medical-grade scrubs under gray cardigan, visible chrome-titanium wrist biometric implant with faint luminescent display on left wrist, corrective optical implants visible as iridescent threading in pupils. Fine scar on back of left hand, age spots on forearms. Small handmade silver pendant on thin chain at neck. Hands steady and capable. Moving with measured efficiency in dimly lit 2226 clinic interior, warm practical lighting catching texture of weathered skin, faint smell of antiseptic and cardamom. GLMZ 2200s medical professional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 54.7,
-    "Southeast Asian": 21.2,
-    "Hispanic/Latin American": 14.0,
-    "Northern European": 10.1
+    "Sub-Saharan African": 32.2,
+    "Southeast Asian": 19.8,
+    "Hispanic/Latin American": 18.9,
+    "East Asian": 14.7,
+    "South Asian": 14.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 15.2
+      },
+      "Southern African": {
+        "Zambian": 6.9,
+        "Zimbabwean": 2.8
+      },
+      "West African": {
+        "Nigerian": 1.7,
+        "Ghanaian": 5.6
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 9.3,
+        "Ilocano": 4.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 2.9
+      },
+      "Thai": {
+        "Thai": 2.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 8.9
+      },
+      "South American": {
+        "Brazilian": 0.8,
+        "Colombian": 1.2
+      },
+      "Central American": {
+        "Guatemalan": 8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 14.7
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 3.9,
+        "Punjabi Pakistani": 10.5
+      }
+    }
+  }
 }

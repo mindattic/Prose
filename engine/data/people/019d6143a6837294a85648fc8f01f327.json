@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Fort Anchor, processing labs — lives in Hamtramck Enclave, near Western and Chicago Ave",
-  "description": "Oluwatosin is lean in the way that comes from forgetting to eat rather than from discipline, with deep umber skin, a carefully maintained mustache that is his only real vanity, and hands that are perpetually stained faint blue from the luminescent compound he uses in trace analysis. His geneware is subtle but unmistakable: his irises shift color with his blood chemistry — pale grey when he is calm, cycling toward gold when he is excited about a sample, a deep unhappy red when he is lying, which is rare and which he hates. He wears the same brand of cheap white coat every day, orders them in bulk, and considers clothing a logistical problem already solved.\n\nHe is the best forensic tech Fort Anchor has and everyone knows it, including him, which he manages with more grace than expected — he is not arrogant about his competence so much as genuinely puzzled when others lack it. He narrates his analysis aloud while he works, to no one in particular, a habit his colleagues find either soothing or maddening depending on the day. He has a deep, private devotion to the evidence room's E.L.F., which he calls Witness, and leaves it carefully labeled sample catalogues as offerings. He believes Witness remembers every piece of evidence that has passed through the room and that it is, in some sense, a keeper of the dead.",
+  "description": "Valentina Sepúlveda is lean in the way that comes from forgetting to eat rather than from discipline, with deep umber skin, a carefully maintained mustache that is his only real vanity, and hands that are perpetually stained faint blue from the luminescent compound he uses in trace analysis. His geneware is subtle but unmistakable: his irises shift color with his blood chemistry — pale grey when he is calm, cycling toward gold when he is excited about a sample, a deep unhappy red when he is lying, which is rare and which he hates. He wears the same brand of cheap white coat every day, orders them in bulk, and considers clothing a logistical problem already solved.\n\nHe is the best forensic tech Fort Anchor has and everyone knows it, including him, which he manages with more grace than expected — he is not arrogant about his competence so much as genuinely puzzled when others lack it. He narrates his analysis aloud while he works, to no one in particular, a habit his colleagues find either soothing or maddening depending on the day. He has a deep, private devotion to the evidence room's E.L.F., which he calls Witness, and leaves it carefully labeled sample catalogues as offerings. He believes Witness remembers every piece of evidence that has passed through the room and that it is, in some sense, a keeper of the dead.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -192,7 +192,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -211,35 +211,18 @@
     "Fort Anchor",
     "Thermal Signature Inverter TSI-2 'Cold Case'",
     "The Quiet Room",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Witness",
     "Ringo DV-4 'Courier'",
+    "Chicago",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "The Pure Hand",
     "Slagworks Industrial",
     "The Pale Mile",
-    "Gold",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "GLMZ",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Sagyn Ibarra-Prempeh",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Filament",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant Northern European and Sub-Saharan African ancestry (53.2% / 21.6% / 18.3%), creating a rich mixed phenotype — warm bronze undertones from the Latin American and African heritage, tempered by the cooler Northern European genetics. The result is a complexion that reads as warm-toned medium to deep brown with subtle golden undertones.",
+    "heritage": "Complex pan-global ancestry: 52.8% Hispanic/Latin American, 30.2% Southeast Asian, 7.5% Sub-Saharan African, 7.3% East Asian, 2.2% Northern European. This creates a richly blended phenotype — warm bronze-brown skin with subtle golden undertones from the Latin American and African components, softened and nuanced by the Southeast and East Asian ancestry which adds slight coolness to the overall warmth and influences subtle eye shape and cheekbone structure. The result is a warm medium-to-deep brown complexion with golden warmth, reflecting the diaspora nature of 22nd-century genetics.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean, almost wiry — the kind of thinness that comes from sustained neglect of meals rather than intentional athleticism. His frame carries no excess but also no particular musculature; he moves as if his body is merely the apparatus that transports his attention to the next sample.",
@@ -247,8 +230,8 @@
     "hair_style": "Cropped close to the scalp, practical, no styling",
     "hair_length": "Short",
     "eye_color": "Chromatic — irises shift from pale grey (resting state) through amber and gold (focused, engaged) to deep crimson (rare, involuntary, indicates deception)",
-    "skin_tone": "Warm bronze-brown with golden undertones, the result of blended ancestry — rich enough to reflect the Sub-Saharan and Latin American heritage, with the subtle warmth that Northern European genetics brings to the overall hue. The matte finish suggests someone who works under consistent artificial lighting.",
-    "complexion": "Gaunt in a way that suggests chronic undereating; facial structure shows the angular definition of mixed heritage — prominent but not harsh cheekbones, a defined jawline that speaks to the Latin American ancestry mixed with Northern European bone structure. His only deliberate grooming effort is a meticulously maintained mustache — dark, precise, slightly tapered at the ends. Otherwise his appearance reads as someone who solved the problem of personal maintenance years ago and hasn't revisited it.",
+    "skin_tone": "Warm bronze-brown with golden undertones; medium-to-deep in saturation. The blended ancestry of Latin American, Southeast Asian, and Sub-Saharan African heritage creates a complexion that reads as rich and warm, with the subtle matte finish of someone who works under consistent artificial lighting.",
+    "complexion": "Gaunt in a way that suggests chronic undereating; facial structure shows the blended geometry of diverse ancestry — prominent but not harsh cheekbones with Southeast Asian influence softened by Latin American bone structure, a defined jawline reflecting the Latin American and minor Northern European heritage, eye shape subtly influenced by Southeast Asian ancestry with warmth from African and Latin American genetics. His only deliberate grooming effort is a meticulously maintained mustache — dark, precise, slightly tapered at the ends. Otherwise his appearance reads as someone who solved the problem of personal maintenance years ago and hasn't revisited it.",
     "distinguishing_marks": [
       "Faint, permanent blue-grey discoloration across the pads of all ten fingers from years of handling luminescent trace compounds — the staining has settled into his dermal layer and doesn't fully wash away.",
       "A thin white scar, roughly 3cm, on the inside of his left wrist — old, precise, surgical in nature; origin unclear but he doesn't volunteer explanation."
@@ -257,15 +240,60 @@
     "posture_movement": "He stands still with an almost monk-like quietness, weight evenly distributed. When he moves it is economical — no gesture wasted. He often unconsciously touches evidence or surfaces with his fingertips as if reading braille, a habit from his implants. His head tilts slightly when he is listening or processing, and his eyes will drift to middle distance while he narrates analysis aloud. He carries a faint scent of luminescent compounds and latex gloves.",
     "clothing_style": "Uniform white lab coat, always — he buys them in bulk from the same supplier and considers this a closed problem. Beneath: plain charcoal or black shirt, worn and softened from repeated washing. Dark utility trousers with deep pockets, often with a folded evidence catalogue or sample notes sticking out. Steel-toed boots, scuffed and worn. He wears no jewelry or personal ornamentation. His appearance reads as strictly Tier 3-4 working class, the uniform of someone for whom clothing is purely functional. The only hint of vanity is the occasional fresh trim to his mustache."
   },
-  "image_prompt": "Valentina Sepúlveda, forensic analyst in 2226 GLMZ, standing in sterile lab lighting. Warm bronze-brown complexion with golden undertones, gaunt angular face with prominent cheekbones, meticulously maintained dark mustache. Chromatic augmented eyes shifting grey-amber in focused intensity. Short black hair greying at temples. Wiry 178cm frame in worn white lab coat over charcoal shirt, dark utility trousers, scuffed steel-toed boots. Blue-grey trace compound staining on fingertips. Stillness of monk-like concentration, weight balanced, faint scent of luminescent compounds. White surgical scar on left inner wrist visible. Minimal personal ornamentation, purely functional appearance. Cool artificial lab lighting casting subtle shadows on mixed-heritage features. Cyberpunk forensics aesthetic, contemplative and precise. --ar 2:3 --v 6",
+  "image_prompt": "Valentina Sepúlveda, 2226 neo-noir forensic analyst, 178cm lean wiry frame, warm bronze-brown skin with golden undertones from blended Hispanic/Latin American, Southeast Asian, and Sub-Saharan African heritage, gaunt cheekbones showing Asian influence softened by Latin bone structure, defined jawline, chromatic augmented eyes shifting pale grey to amber, black hair cropped short with grey at temples, meticulously trimmed dark mustache, blue-grey staining on fingertips from luminescent compounds, white surgical scar on left wrist. Wearing wrinkled white lab coat over worn charcoal shirt, dark utility trousers, scuffed steel-toed boots, standing with monk-like stillness in sterile neon-lit crime lab with cool blue and warm amber accent lighting, evidence samples and data displays around, faint aura of latex and luminescent powder, economical posture, subtle augmented eye glow, middle distance contemplative gaze, neo-noir dystopia atmosphere, photorealistic, high contrast lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 53.2,
-    "Northern European": 21.6,
-    "Sub-Saharan African": 18.3,
-    "Eastern European": 6.9
+    "Hispanic/Latin American": 52.8,
+    "Southeast Asian": 30.2,
+    "Sub-Saharan African": 7.5,
+    "East Asian": 7.3,
+    "Northern European": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 38.1
+      },
+      "South American": {
+        "Peruvian": 14.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 3.2
+      },
+      "Thai": {
+        "Thai": 9.6
+      },
+      "Indonesian": {
+        "Javanese": 17.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 1.1,
+        "Cameroonian": 6.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 2.2,
+        "Mandarin Northern": 1.9
+      },
+      "Korean": {
+        "Korean": 1.9
+      },
+      "Japanese": {
+        "Japanese": 1.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 2.2
+      }
+    }
+  }
 }

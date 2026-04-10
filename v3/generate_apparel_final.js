@@ -104,7 +104,7 @@ const headwear = [
   {
     name: "Harrow & Finch Ventilated Patrol Cap",
     category: "headwear",
-    description: "A structured patrol cap with micro-ventilation channels woven into the crown, designed for long-duration outdoor wear in Meridian 88's variable climate. The brim contains a rigid insert for shape retention and the inner band uses moisture-wicking synth-fabric. No electronics, no smart-fabric — just well-made headwear.\n\nStandard issue for several private security firms and popular with anyone who spends extended hours on foot in sun or rain. The cap comes in neutral tones — slate, sand, olive — and resists both UV degradation and the kind of grime that accumulates in lower-tier streets.",
+    description: "A structured patrol cap with micro-ventilation channels woven into the crown, designed for long-duration outdoor wear in GLMZ's variable climate. The brim contains a rigid insert for shape retention and the inner band uses moisture-wicking synth-fabric. No electronics, no smart-fabric — just well-made headwear.\n\nStandard issue for several private security firms and popular with anyone who spends extended hours on foot in sun or rain. The cap comes in neutral tones — slate, sand, olive — and resists both UV degradation and the kind of grime that accumulates in lower-tier streets.",
     tier_association: "Tier 2",
     materials: ["ventilated weave", "moisture-wicking synth-fabric", "rigid brim insert"],
     functionality: "Sun protection, ventilation, moisture management",
@@ -312,7 +312,7 @@ const headwear = [
   {
     name: "Prometheus Medical Cranial Stabilizer",
     category: "headwear",
-    description: "A rigid, adjustable headframe designed for post-operative neural augmentation patients. The stabilizer holds the skull in precise alignment while healing nano-sutures complete their work on cranial surgical sites. It looks clinical and uncomfortable because it is both of those things.\n\nWearing a Cranial Stabilizer in public announces that you've recently undergone significant cranial augmentation — which in Meridian 88 can mean anything from voluntary enhancement to court-ordered implantation. The device draws stares in every tier.",
+    description: "A rigid, adjustable headframe designed for post-operative neural augmentation patients. The stabilizer holds the skull in precise alignment while healing nano-sutures complete their work on cranial surgical sites. It looks clinical and uncomfortable because it is both of those things.\n\nWearing a Cranial Stabilizer in public announces that you've recently undergone significant cranial augmentation — which in GLMZ can mean anything from voluntary enhancement to court-ordered implantation. The device draws stares in every tier.",
     tier_association: "Tier 3",
     materials: ["medical-grade titanium", "adjustable polymer struts", "nano-suture monitoring sensors"],
     functionality: "Post-surgical cranial stabilization, healing monitoring, alignment maintenance",
@@ -445,7 +445,7 @@ const gloves = [
   {
     name: "Apex Dynamics Grip-Lock Climbing Gloves",
     category: "gloves",
-    description: "Climbing gloves with micro-suction pads on the palm and fingertips that activate on pressure, providing gecko-like adhesion to smooth surfaces. The grip engages only during a firm press and releases cleanly during normal hand movement. The back of the hand is flexible mesh for ventilation.\n\nOriginally developed for maintenance crews working on Spire exterior surfaces, the Grip-Locks have become essential equipment for runners who move vertically through Meridian 88's layered architecture.",
+    description: "Climbing gloves with micro-suction pads on the palm and fingertips that activate on pressure, providing gecko-like adhesion to smooth surfaces. The grip engages only during a firm press and releases cleanly during normal hand movement. The back of the hand is flexible mesh for ventilation.\n\nOriginally developed for maintenance crews working on Spire exterior surfaces, the Grip-Locks have become essential equipment for runners who move vertically through GLMZ's layered architecture.",
     tier_association: "Tier 2",
     materials: ["micro-suction pads", "flexible mesh backing", "pressure-activated adhesion surface"],
     functionality: "Gecko-adhesion climbing, pressure-activated grip, clean release",
@@ -589,7 +589,7 @@ const gloves = [
   {
     name: "Drake Industrial Rivet-Grip Work Gloves",
     category: "gloves",
-    description: "Heavy-duty work gloves with rubberized palm coating and reinforced thumb saddles, built to survive daily use in construction, demolition, and salvage operations. The gloves feature a quick-release wrist strap that lets the wearer shed them in under a second — important when gloves get caught in machinery.\n\nThe most common work glove in Meridian 88's lower tiers. They cost almost nothing, they last about three months of hard use, and they're available at every supply depot and street market in the city.",
+    description: "Heavy-duty work gloves with rubberized palm coating and reinforced thumb saddles, built to survive daily use in construction, demolition, and salvage operations. The gloves feature a quick-release wrist strap that lets the wearer shed them in under a second — important when gloves get caught in machinery.\n\nThe most common work glove in GLMZ's lower tiers. They cost almost nothing, they last about three months of hard use, and they're available at every supply depot and street market in the city.",
     tier_association: "Tier 1",
     materials: ["rubberized palm coating", "reinforced thumb saddle", "quick-release wrist strap"],
     functionality: "Grip enhancement, basic hand protection, emergency quick-release",
@@ -637,7 +637,7 @@ const gloves = [
   {
     name: "Nomura Streetwear Touch-Tag Graffiti Gloves",
     category: "gloves",
-    description: "Fingerless gloves with reservoirs built into each fingertip cap that dispense color-coded conductive ink through pressure-activated micro-nozzles. The wearer can tag surfaces with marks visible only under UV light or to AR-equipped observers. Each glove holds six hours of continuous use.\n\nThe preferred tool of Meridian 88's digital graffiti artists, who layer invisible messages across the city's surfaces. The marks persist for weeks and can contain encoded data readable by the right AR software — turning walls into message boards that only the initiated can see.",
+    description: "Fingerless gloves with reservoirs built into each fingertip cap that dispense color-coded conductive ink through pressure-activated micro-nozzles. The wearer can tag surfaces with marks visible only under UV light or to AR-equipped observers. Each glove holds six hours of continuous use.\n\nThe preferred tool of GLMZ's digital graffiti artists, who layer invisible messages across the city's surfaces. The marks persist for weeks and can contain encoded data readable by the right AR software — turning walls into message boards that only the initiated can see.",
     tier_association: "Tier 1",
     materials: ["conductive ink reservoirs", "pressure-activated micro-nozzles", "UV-reactive pigments"],
     functionality: "Invisible UV/AR-visible tagging, encoded data marking, 6-hour reservoir capacity",
@@ -706,7 +706,7 @@ const accessories = [
   {
     name: "Chronotek Meridian Standard Wristwatch",
     category: "accessory",
-    description: "An analog wristwatch with mechanical movement, built in Meridian 88 using locally machined components. No wireless connectivity, no smart features, no data logging. The face shows hours, minutes, seconds, and the date. The case is brushed stainless steel; the band is genuine leather — one of the few leather products still available at this price point.\n\nIn a world saturated with connected devices, wearing a purely mechanical watch is a deliberate statement about what information you're willing to share with the network. The Meridian Standard tells time and nothing else, and that's exactly the point.",
+    description: "An analog wristwatch with mechanical movement, built in GLMZ using locally machined components. No wireless connectivity, no smart features, no data logging. The face shows hours, minutes, seconds, and the date. The case is brushed stainless steel; the band is genuine leather — one of the few leather products still available at this price point.\n\nIn a world saturated with connected devices, wearing a purely mechanical watch is a deliberate statement about what information you're willing to share with the network. The Meridian Standard tells time and nothing else, and that's exactly the point.",
     tier_association: "Tier 3",
     materials: ["brushed stainless steel", "mechanical movement", "genuine leather band"],
     functionality: "Timekeeping (analog, no wireless, no data)",
@@ -1127,7 +1127,7 @@ const baseLayers = [
   {
     name: "Drake Industrial Moisture-Wick Work Layer",
     category: "base_layer",
-    description: "The cheapest functional base layer available in Meridian 88. A single-layer moisture-wicking shirt and legging set that pulls sweat away from the skin and dries within minutes. No smart features, no armor, no sensors — just dry comfort for people who work hard enough to need it.\n\nSold in packs of three at every supply depot and street market in the lower tiers. The Moisture-Wick Work Layer is the one garment that transcends social boundaries — everyone sweats, and this is the cheapest way to manage it.",
+    description: "The cheapest functional base layer available in GLMZ. A single-layer moisture-wicking shirt and legging set that pulls sweat away from the skin and dries within minutes. No smart features, no armor, no sensors — just dry comfort for people who work hard enough to need it.\n\nSold in packs of three at every supply depot and street market in the lower tiers. The Moisture-Wick Work Layer is the one garment that transcends social boundaries — everyone sweats, and this is the cheapest way to manage it.",
     tier_association: "Tier 1",
     materials: ["single-layer moisture-wicking synthetic"],
     functionality: "Sweat management, quick-dry, basic comfort",
@@ -1303,7 +1303,7 @@ const baseLayers = [
   {
     name: "Apex Dynamics Electrostatic Dissipation Bodysuit",
     category: "base_layer",
-    description: "A full-body base layer woven with carbon-nanotube threads that continuously dissipate static charge across the entire skin surface, preventing localized buildup. The suit grounds through conductive foot pads and maintains a neutral electrical state regardless of the environment — critical for workers in low-humidity manufacturing environments where a single spark can destroy product worth millions.\n\nThe ESD Bodysuit is the invisible foundation under every cleanroom smock and assembly-floor uniform in Meridian 88's electronics manufacturing. Workers forget they are wearing it until the day they forget to put it on, and a static discharge ruins a wafer batch worth more than their annual salary.",
+    description: "A full-body base layer woven with carbon-nanotube threads that continuously dissipate static charge across the entire skin surface, preventing localized buildup. The suit grounds through conductive foot pads and maintains a neutral electrical state regardless of the environment — critical for workers in low-humidity manufacturing environments where a single spark can destroy product worth millions.\n\nThe ESD Bodysuit is the invisible foundation under every cleanroom smock and assembly-floor uniform in GLMZ's electronics manufacturing. Workers forget they are wearing it until the day they forget to put it on, and a static discharge ruins a wafer batch worth more than their annual salary.",
     tier_association: "Tier 2",
     materials: ["carbon-nanotube threads", "conductive foot pads", "anti-static weave"],
     functionality: "Continuous static dissipation, full-body grounding, spark prevention",
@@ -1340,7 +1340,7 @@ const protective = [
   {
     name: "Helion Manufacturing Radiation Exposure Suit",
     category: "protective",
-    description: "A lead-composite layered suit designed for work in environments with elevated ionizing radiation. The suit incorporates dosimetry sensors at twelve body points that provide real-time exposure tracking. When cumulative dose approaches safe limits, the suit's collar-mounted indicator changes from green to amber to red.\n\nUsed in reactor maintenance, medical imaging equipment servicing, and the cleanup of sites where radioactive materials have been improperly stored or dumped — which in Meridian 88's lower tiers happens more often than any authority acknowledges.",
+    description: "A lead-composite layered suit designed for work in environments with elevated ionizing radiation. The suit incorporates dosimetry sensors at twelve body points that provide real-time exposure tracking. When cumulative dose approaches safe limits, the suit's collar-mounted indicator changes from green to amber to red.\n\nUsed in reactor maintenance, medical imaging equipment servicing, and the cleanup of sites where radioactive materials have been improperly stored or dumped — which in GLMZ's lower tiers happens more often than any authority acknowledges.",
     tier_association: "Tier 2",
     materials: ["lead-composite layers", "dosimetry sensor array", "sealed joint gaskets"],
     functionality: "Ionizing radiation shielding, real-time dose tracking, exposure limit warnings",
@@ -1484,7 +1484,7 @@ const protective = [
   {
     name: "Helion Manufacturing High-Voltage Insulation Suit",
     category: "protective",
-    description: "A full-body suit made from layered dielectric rubber over an inner comfort shell, rated for live-line work on electrical systems up to 500kV. The suit creates a complete insulation envelope — the wearer can touch energized conductors without current passing through their body. Mandatory testing before every use.\n\nLive-line electrical work is among the most dangerous occupations in Meridian 88. The insulation suit makes it possible; it does not make it safe. Every suit carries a testing log, and workers who discover a failed test during pre-work checks owe their lives to the three minutes they spent verifying their equipment.",
+    description: "A full-body suit made from layered dielectric rubber over an inner comfort shell, rated for live-line work on electrical systems up to 500kV. The suit creates a complete insulation envelope — the wearer can touch energized conductors without current passing through their body. Mandatory testing before every use.\n\nLive-line electrical work is among the most dangerous occupations in GLMZ. The insulation suit makes it possible; it does not make it safe. Every suit carries a testing log, and workers who discover a failed test during pre-work checks owe their lives to the three minutes they spent verifying their equipment.",
     tier_association: "Tier 2",
     materials: ["layered dielectric rubber", "inner comfort shell", "sealed joint boots"],
     functionality: "500kV electrical insulation, full-body dielectric barrier, mandatory test ports",
@@ -1500,7 +1500,7 @@ const protective = [
   {
     name: "Drake Industrial Falling-Object Protection Vest",
     category: "protective",
-    description: "A heavy vest with rigid plates on the shoulders and upper back, designed to protect against falling debris in construction and demolition environments. The vest distributes impact force across a wide area and includes a high-visibility reflective panel on the back. A built-in collar extension protects the neck from vertical impacts.\n\nMandatory in every construction zone in Meridian 88 — not because regulations require it, but because insurance policies do. The vest is uncomfortable, heavy, and saves about forty lives per year in the city's construction sector.",
+    description: "A heavy vest with rigid plates on the shoulders and upper back, designed to protect against falling debris in construction and demolition environments. The vest distributes impact force across a wide area and includes a high-visibility reflective panel on the back. A built-in collar extension protects the neck from vertical impacts.\n\nMandatory in every construction zone in GLMZ — not because regulations require it, but because insurance policies do. The vest is uncomfortable, heavy, and saves about forty lives per year in the city's construction sector.",
     tier_association: "Tier 1",
     materials: ["rigid plate inserts", "impact-distribution shell", "high-visibility reflective panel"],
     functionality: "Overhead impact protection, debris deflection, high-visibility marking",
@@ -1516,7 +1516,7 @@ const protective = [
   {
     name: "Korvain Dynamics Ballistic Assault Suit",
     category: "protective",
-    description: "A full-body armored suit rated for Level IIIA ballistic protection with ceramic plate inserts at vital zones that upgrade protection to Level IV. The suit covers torso, arms, and legs with articulated armor panels that allow combat mobility. An integrated communications suite and helmet mounting system complete the platform.\n\nIssued to high-threat response teams — corponation asset recovery, facility breach response, and the kind of private military operations that exist in legal grey zones. The Assault Suit costs more than a year's wages for most Meridian 88 residents and is worth every quanta to the organizations that field it.",
+    description: "A full-body armored suit rated for Level IIIA ballistic protection with ceramic plate inserts at vital zones that upgrade protection to Level IV. The suit covers torso, arms, and legs with articulated armor panels that allow combat mobility. An integrated communications suite and helmet mounting system complete the platform.\n\nIssued to high-threat response teams — corponation asset recovery, facility breach response, and the kind of private military operations that exist in legal grey zones. The Assault Suit costs more than a year's wages for most GLMZ residents and is worth every quanta to the organizations that field it.",
     tier_association: "Tier 4",
     materials: ["Level IIIA ballistic fabric", "Level IV ceramic plate inserts", "articulated armor panels"],
     functionality: "Full-body ballistic protection, modular plate system, integrated comms, combat mobility",
@@ -1564,7 +1564,7 @@ const protective = [
   {
     name: "Pinnacle Security Crowd-Suppression Exoframe",
     category: "protective",
-    description: "A powered exoskeletal frame worn over standard riot gear that amplifies the wearer's strength by a factor of three and provides full-body hardpoint armor coverage. The exoframe runs on a 4-hour fuel cell and features integrated crowd-control deployables — sonic emitters, chemical dispensers, and a riot shield mount.\n\nThe most aggressive crowd-control equipment legally deployable in Meridian 88. A single officer in a Crowd-Suppression Exoframe can hold a corridor against a hundred people. The psychological effect of seeing one deployed frequently ends confrontations before they begin. When it doesn't, the results are documented in injury reports that run to hundreds of pages.",
+    description: "A powered exoskeletal frame worn over standard riot gear that amplifies the wearer's strength by a factor of three and provides full-body hardpoint armor coverage. The exoframe runs on a 4-hour fuel cell and features integrated crowd-control deployables — sonic emitters, chemical dispensers, and a riot shield mount.\n\nThe most aggressive crowd-control equipment legally deployable in GLMZ. A single officer in a Crowd-Suppression Exoframe can hold a corridor against a hundred people. The psychological effect of seeing one deployed frequently ends confrontations before they begin. When it doesn't, the results are documented in injury reports that run to hundreds of pages.",
     tier_association: "Tier 5",
     materials: ["powered exoskeletal frame", "hardpoint armor plates", "4-hour fuel cell"],
     functionality: "3x strength amplification, integrated crowd-control systems, full armor coverage",
@@ -1601,7 +1601,7 @@ const cultural = [
   {
     name: "Neon Drift Rave Harness",
     category: "cultural",
-    description: "A body harness made from electroluminescent strips that pulse in sync with ambient music through an integrated beat-detection module. The harness wraps the torso, shoulders, and arms in geometric patterns that glow in programmable colors. A small controller on the hip lets the wearer switch between reactive modes — beat-sync, color cycle, breathing pulse, and static.\n\nThe uniform of Meridian 88's underground rave culture, where abandoned industrial spaces become temporary temples of sound and light. The harness identifies the wearer as part of the scene — someone who knows where the events are and how to get in.",
+    description: "A body harness made from electroluminescent strips that pulse in sync with ambient music through an integrated beat-detection module. The harness wraps the torso, shoulders, and arms in geometric patterns that glow in programmable colors. A small controller on the hip lets the wearer switch between reactive modes — beat-sync, color cycle, breathing pulse, and static.\n\nThe uniform of GLMZ's underground rave culture, where abandoned industrial spaces become temporary temples of sound and light. The harness identifies the wearer as part of the scene — someone who knows where the events are and how to get in.",
     tier_association: "Tier 2",
     materials: ["electroluminescent strips", "beat-detection module", "flexible harness webbing"],
     functionality: "Music-reactive lighting, programmable color display, beat synchronization",
@@ -1649,7 +1649,7 @@ const cultural = [
   {
     name: "Meridian Underground Runner's Mark Bandana",
     category: "cultural",
-    description: "A simple bandana worn in specific configurations that communicate the wearer's role and reliability within Meridian 88's runner network. Color indicates specialization — black for data, red for physical cargo, blue for personnel extraction. The way it's tied indicates current availability. Specific folds signal danger or compromised status.\n\nThe bandana system is not written down anywhere. It's transmitted person to person within trusted networks. Wearing a runner's bandana without understanding the code marks you as an outsider immediately — and in runner culture, outsiders who pretend to belong are treated as threats.",
+    description: "A simple bandana worn in specific configurations that communicate the wearer's role and reliability within GLMZ's runner network. Color indicates specialization — black for data, red for physical cargo, blue for personnel extraction. The way it's tied indicates current availability. Specific folds signal danger or compromised status.\n\nThe bandana system is not written down anywhere. It's transmitted person to person within trusted networks. Wearing a runner's bandana without understanding the code marks you as an outsider immediately — and in runner culture, outsiders who pretend to belong are treated as threats.",
     tier_association: "Tier 2",
     materials: ["standard cotton bandana"],
     functionality: "Role signaling, availability status, danger communication, network identification",
@@ -1729,7 +1729,7 @@ const cultural = [
   {
     name: "Voltage District Club Collar",
     category: "cultural",
-    description: "A wide, rigid collar made from electroluminescent panels and chrome hardware, worn tight around the neck as a fashion statement in Meridian 88's Voltage District club scene. The collar pulses with programmed light patterns and can display text messages or simple animations across its surface. Some feature integrated shock modules that deliver a mild jolt at the wearer's command — a club-scene dare that functions as social currency.\n\nThe Voltage Collar walks the line between fashion and self-imposed restraint. In a scene that values extremity, wearing a collar signals willingness to push boundaries — the tighter and more visible, the more committed the wearer.",
+    description: "A wide, rigid collar made from electroluminescent panels and chrome hardware, worn tight around the neck as a fashion statement in GLMZ's Voltage District club scene. The collar pulses with programmed light patterns and can display text messages or simple animations across its surface. Some feature integrated shock modules that deliver a mild jolt at the wearer's command — a club-scene dare that functions as social currency.\n\nThe Voltage Collar walks the line between fashion and self-imposed restraint. In a scene that values extremity, wearing a collar signals willingness to push boundaries — the tighter and more visible, the more committed the wearer.",
     tier_association: "Tier 2",
     materials: ["electroluminescent panels", "chrome hardware", "optional shock module"],
     functionality: "Light display, text messaging, optional electrical stimulation",
@@ -1745,7 +1745,7 @@ const cultural = [
   {
     name: "Corponation Loyalty Lanyard",
     category: "cultural",
-    description: "A neck lanyard in corponation-specific colors carrying an employee ID badge, access cards, and a small RFID token. Every corponation in Meridian 88 issues their own variant — Crucible's is copper and charcoal, Sentinel's is steel blue, Cascade's is white and green. The lanyard is technically just a badge holder. In practice, it is the most visible indicator of who you belong to.\n\nWearing your lanyard outside work hours signals that your identity and your employment are the same thing. Some employees never take them off. Some discard them the instant they leave the building. The choice says everything about the wearer's relationship with their employer.",
+    description: "A neck lanyard in corponation-specific colors carrying an employee ID badge, access cards, and a small RFID token. Every corponation in GLMZ issues their own variant — Crucible's is copper and charcoal, Sentinel's is steel blue, Cascade's is white and green. The lanyard is technically just a badge holder. In practice, it is the most visible indicator of who you belong to.\n\nWearing your lanyard outside work hours signals that your identity and your employment are the same thing. Some employees never take them off. Some discard them the instant they leave the building. The choice says everything about the wearer's relationship with their employer.",
     tier_association: "Tier 2",
     materials: ["polyester webbing", "metal badge clip", "RFID token holder"],
     functionality: "Employee identification, access control, corponation affiliation display",
@@ -1809,7 +1809,7 @@ const cultural = [
   {
     name: "Burnout Racing Circuit Flame Suit",
     category: "cultural",
-    description: "A fire-resistant racing suit covered in sponsor logos — most of which are for businesses that don't officially exist. The suit is cut for mobility rather than maximum protection, allowing the wearer to bail from a vehicle at speed if necessary. Burn marks and patched tears are left visible as badges of honor.\n\nThe Burnout Circuit is Meridian 88's illegal street-racing scene, where modified vehicles run through lower-tier corridors at speeds that treat pedestrian safety as an abstract concept. The flame suit's sponsor logos are the circuit's economy made visible — everyone who profits from the races has their name on someone's chest.",
+    description: "A fire-resistant racing suit covered in sponsor logos — most of which are for businesses that don't officially exist. The suit is cut for mobility rather than maximum protection, allowing the wearer to bail from a vehicle at speed if necessary. Burn marks and patched tears are left visible as badges of honor.\n\nThe Burnout Circuit is GLMZ's illegal street-racing scene, where modified vehicles run through lower-tier corridors at speeds that treat pedestrian safety as an abstract concept. The flame suit's sponsor logos are the circuit's economy made visible — everyone who profits from the races has their name on someone's chest.",
     tier_association: "Tier 2",
     materials: ["fire-resistant fabric", "mobility-cut panels", "sponsor logo patches"],
     functionality: "Fire resistance, high-speed bail-out capability, sponsor display",
@@ -1825,7 +1825,7 @@ const cultural = [
   {
     name: "Last Light Hospice Comfort Gown",
     category: "cultural",
-    description: "A soft, weighted gown provided to terminal patients at Last Light Hospice facilities. The gown's weighted fabric provides gentle, distributed pressure — similar to a weighted blanket but wearable — designed to reduce anxiety and provide physical comfort during end-of-life care. Each gown is embroidered with the patient's chosen word or phrase on the interior collar, visible only to the wearer.\n\nThe Comfort Gown is the last garment many Meridian 88 residents ever wear. The tradition of the hidden embroidery began when a nurse noticed patients tracing the word on their collar with their fingers during their final hours — a private conversation between the wearer and the garment that holds them.",
+    description: "A soft, weighted gown provided to terminal patients at Last Light Hospice facilities. The gown's weighted fabric provides gentle, distributed pressure — similar to a weighted blanket but wearable — designed to reduce anxiety and provide physical comfort during end-of-life care. Each gown is embroidered with the patient's chosen word or phrase on the interior collar, visible only to the wearer.\n\nThe Comfort Gown is the last garment many GLMZ residents ever wear. The tradition of the hidden embroidery began when a nurse noticed patients tracing the word on their collar with their fingers during their final hours — a private conversation between the wearer and the garment that holds them.",
     tier_association: "Tier 2",
     materials: ["weighted comfort fabric", "anxiety-reducing pressure distribution", "personalized embroidery"],
     functionality: "Anxiety reduction, comfort care, personal memorialization",

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a628798b91fe8e322eb86aee",
   "type": "character",
-  "name": "Renata Guerrero",
+  "name": "Ishaan Pathak",
   "aliases": [
     "Madame Catastrophe"
   ],
@@ -12,7 +12,7 @@
   "age": 47,
   "status": "active",
   "location": "The Ferment Quarter, resident performer at the Lye & Lampblack club on Sutter Mews, near Armitage and Milwaukee",
-  "description": "Hripsimé is medium height, broad-shouldered, and has the physical presence of someone who learned early that a room either belongs to you or it doesn't. Her hair is deep red — natural color, she will tell you, with a straight face, for about four seconds — and she wears it long and somewhat chaotic. Her skin is warm tawny-olive and she has laugh lines that could double as topographic maps. Her only mod is a tail, cat-model, rust-colored, which she uses as a prop during performances with expert comic timing; she has had it since she was twenty-three and considers it a co-author.\n\nHer comedy is vicious, structural, and deeply personal — she excavates class rage, corponation absurdity, and the specific indignities of Tier 2 civilian life with the precision of someone who has lived every joke. She has been banned from two Axiom-affiliated venues and has a standing invitation to return to both that she declines publicly and enthusiastically. At the Lye & Lampblack she is an institution: four nights a week, two sets, and an after-set period where she sits at the bar and is notoriously unapproachable unless you buy her a specific brand of fermented grain drink and ask her about something she actually cares about.",
+  "description": "Ishaan Pathak is medium height, broad-shouldered, and has the physical presence of someone who learned early that a room either belongs to you or it doesn't. Her hair is deep red — natural color, she will tell you, with a straight face, for about four seconds — and she wears it long and somewhat chaotic. Her skin is warm tawny-olive and she has laugh lines that could double as topographic maps. Her only mod is a tail, cat-model, rust-colored, which she uses as a prop during performances with expert comic timing; she has had it since she was twenty-three and considers it a co-author.\n\nHer comedy is vicious, structural, and deeply personal — she excavates class rage, corponation absurdity, and the specific indignities of Tier 2 civilian life with the precision of someone who has lived every joke. She has been banned from two Axiom-affiliated venues and has a standing invitation to return to both that she declines publicly and enthusiastically. At the Lye & Lampblack she is an institution: four nights a week, two sets, and an after-set period where she sits at the bar and is notoriously unapproachable unless you buy her a specific brand of fermented grain drink and ask her about something she actually cares about.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -153,7 +153,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Ferment Quarter",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,31 +173,11 @@
     "The Ferment Quarter",
     "Dawnlight Industries LuxDefend LD-1 'Clutch'",
     "Ringo Corponation",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Rust",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions CSW-4 'Cicada'",
-    "Arcturus Exo-Runner Frame",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "GLMZ",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Korrath",
-    "Noir Dining",
-    "Rongo Delgado-Opoku",
-    "Scarecrow",
-    "Sterling-Nakamura Augmented Reality Court System",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA TC-3 'Crucible'",
-    "The Resonance Communion",
-    "Toivo Diallo-Achebe",
-    "Vuk Jorgensen-Toure",
-    "Zheng-dao Bioelectric"
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora blend: primarily Hispanic/Latin American with substantial Central Asian and Northern European ancestry, complemented by Sub-Saharan African and South Asian genetic contribution. Genetic ancestry produces a distinctly multicultural phenotype that resists singular categorization.",
+    "heritage": "Predominantly South Asian ancestry (66.1%) with significant East Asian heritage (17.6%), complemented by Indigenous American (8.3%) and Eastern European (8.0%) genetic contribution. This blend produces a distinctly multicultural phenotype—warm, rich South Asian undertones mixed with East Asian angular bone structure, softened and deepened by Indigenous American genetic expression and Eastern European facial geometry. A diaspora face that defies singular categorization, with layered ancestry visible in the interplay of cheekbone structure, eye shape, and skin luminosity.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Broad-shouldered and substantial without heaviness; the physique of someone who takes up space intentionally. Strong core, defined arms from years of gesturing on stage, carries weight with deliberate presence rather than bulk.",
@@ -205,8 +185,8 @@
     "hair_style": "Long, deliberately somewhat chaotic—styled to look unstyled, with volume that reads as either artistic or disheveled depending on the hour",
     "hair_length": "Long",
     "eye_color": "Dark brown, sharp and assessing",
-    "skin_tone": "Warm golden-bronze with subtle olive undertones, reflecting the blended warmth of Hispanic/Latin American and South Asian ancestry tempered by Central Asian and Northern European lightness, with Sub-Saharan African depth adding richness to mid-tone complexion",
-    "complexion": "Heavily lined face—deep laugh lines branching from eyes and mouth that map decades of expression work. Minimal makeup, occasionally dramatic for performances. Skin texture weathered from smoke-filled venues and inconsistent sleep. Subtle warmth and slight golden cast to skin. No visible acne or blemishes; skin has the quality of someone who stopped worrying about minor imperfections years ago.",
+    "skin_tone": "Warm medium to deep golden-brown complexion with sophisticated multi-dimensional undertones: South Asian warmth as the foundational base, enriched by East Asian depth and subtle cool undertones, brightened by Indigenous American luminosity, with delicate olive notes from Eastern European genetics creating a complex, radiant tone that shifts subtly in different lighting",
+    "complexion": "Heavily lined face—deep laugh lines branching from eyes and mouth that map decades of expression work. Minimal makeup, occasionally dramatic for performances. Skin texture weathered from smoke-filled venues and inconsistent sleep. Facial structure shows South Asian softness in lower face and cheekbone fullness, blended with East Asian angularity in eye shape, temple definition, and upper cheekbone prominence. Indigenous American influence visible in subtle cheekbone width and facial proportion balance. No visible acne or blemishes; skin has the quality of someone who stopped worrying about minor imperfections years ago.",
     "distinguishing_marks": [
       "Topographic laugh lines radiating from outer corners of both eyes, deepest and most pronounced on the right side",
       "Asymmetrical smile line on left side of mouth, slightly higher than right, creates permanent micro-expression of skepticism",
@@ -217,16 +197,52 @@
     "posture_movement": "Commands space without aggression. Stands with weight slightly forward, shoulders back, ready to lean into a punchline or a confrontation with equal ease. Sits sprawled—takes up bar stools and booth seats like she owns them. Gestures are economical but emphatic; every movement is deliberate. Tail moves independently during performance with practiced comic timing; in repose, it curls beneath or around chair legs. Eye contact is sustained and evaluative. Moves through rooms like she's scanning for structural weaknesses.",
     "clothing_style": "Tier 2 civilian aesthetic with deliberate anti-polish. Typically wears fitted dark jeans or tactical pants (pockets matter), vintage band shirts or well-worn linen, layered with oversized jackets—leather, denim, or canvas, always well-worn and scuffed. On performance nights, slightly more put-together but maintaining the aesthetic of someone who got dressed in the dark and doesn't care: dark lipstick occasionally, jewelry kept minimal and functional (watch, single ring, no bangles). Boots always—worn combat style or engineer boots, broken in. Fabrics are practical rather than fashionable. No visible corpo branding. Entire wardrobe reads as Tier 2 working-class with intellectual pretensions and zero interest in appearing aspirational."
   },
-  "image_prompt": "Renata Guerrero, cyberpunk 2226, 168cm tall woman with warm golden-bronze skin and olive undertones reflecting multicultural diaspora heritage. Deep red dyed hair long and deliberately chaotic, dark brown sharp assessing eyes with pronounced laugh lines mapping decades of expression. Rust-colored feline cat tail extending from lower spine with conscious articulation. Wearing fitted dark tactical pants, worn vintage band shirt, oversized scuffed leather jacket. Combat boots broken in and weathered. Standing with deliberate forward weight, commanding presence without aggression. Minimal jewelry—functional watch and single ring. Dark lipstick. Smoke-filled underground venue atmosphere, neon glow casting shadows across weathered features, stage lighting creating depth in facial lines. Cyberpunk lower-tier aesthetic, intellectual and unpolished, takes up space intentionally. --ar 2:3 --v 6",
+  "image_prompt": "Ishaan Pathak, 168cm tall performer with warm golden-brown complexion reflecting South Asian, East Asian, Indigenous American and Eastern European ancestry blend. Deep red shoulder-length hair styled deliberately chaotic, dark sharp eyes with pronounced laugh lines mapping years of expression work. Asymmetrical smile with subtle left eyebrow scar. Rust-colored feline cat tail extending from lower spine with practiced control. Broad shoulders, substantial build, sitting sprawled in bar stool, commanding presence without aggression. Wearing fitted dark tactical pants, vintage band tee layered under well-worn leather jacket, engineer boots broken in. Minimal jewelry—single ring and practical watch. Tier 2 neo-noir working-class aesthetic, zero corpo branding. Intimate smoke-filled venue lighting, moody atmospheric background, intense eye contact evaluating the room. 2226 GLMZ diaspora face, neon-touched shadows, gritty authenticity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.7,
-    "Central Asian": 26.6,
-    "Northern European": 22.6,
-    "Sub-Saharan African": 8.6,
-    "South Asian": 8.5
+    "South Asian": 66.1,
+    "East Asian": 17.6,
+    "Indigenous American": 8.3,
+    "Eastern European": 8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 35.6
+      },
+      "Indian": {
+        "Punjabi": 30.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.3
+      },
+      "Korean": {
+        "Korean": 5.3
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 0.7,
+        "Cherokee": 0.5
+      },
+      "Andean": {
+        "Aymara": 5.7,
+        "Quechua": 0.7
+      },
+      "Mesoamerican": {
+        "Nahua": 0.7
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 7.3,
+        "Czech": 0.7
+      }
+    }
+  }
 }

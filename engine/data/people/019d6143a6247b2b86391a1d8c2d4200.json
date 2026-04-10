@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6247b2b86391a1d8c2d4200",
   "type": "character",
-  "name": "Elsa Sigurdsson",
+  "name": "Orion Sigurdsson",
   "aliases": [
     "Vertex",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
-  "description": "Halima Gutierrez-Asante is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHalima Gutierrez-Asante operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Orion Sigurdsson is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nOrion Sigurdsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.77,
@@ -260,7 +260,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,34 +273,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nika Svensson-Kone",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (51%), Northern European (29%), East Asian (20%) — a striking blend producing warm medium-brown skin with subtle golden undertones. High cheekbones and defined facial structure reflect East Asian ancestry, while the lean, efficient build and lighter skin depth show Northern European influence. The overall effect is a warm-toned complexion with minimal contrast between face and body.",
+    "heritage": "Northern European (40.6%), Southeast Asian (18.2%), East Asian (15.9%), South Asian (10.8%), Hispanic/Latin American (7.6%), Indigenous American (6.9%) — a truly global blend creating warm medium-brown skin with subtle golden undertones and hints of olive. High cheekbones and defined facial structure reflect East and Southeast Asian ancestry, while lean efficient build shows Northern European influence. The mix produces a unified warm-toned complexion with minimal contrast, carrying undertones from multiple continental sources. Facial proportions blend Northern European angularity with Southeast and East Asian features, while the warm undertones reflect South Asian and Latin American heritage.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Tall and rawboned — lean and efficient rather than undernourished. Long muscle definition in arms and legs suggests functional strength over bulk. Angular shoulders, narrow through the hips. The kind of frame that moves well in confined spaces.",
@@ -308,8 +288,8 @@
     "hair_style": "Pulled back tight, usually in a single braid or wrapped close to the scalp for practical reasons",
     "hair_length": "Medium — shoulder-length when unbound, but habitually restrained",
     "eye_color": "Dark brown, natural — no visible augmentation",
-    "skin_tone": "Warm medium brown with golden undertones — the blend of South Asian, Northern European, and East Asian ancestry creates a unified complexion without sharp contrast between lighter and darker areas. Even sun exposure and underlying tone work in harmony.",
-    "complexion": "Angular face with high cheekbones and sharp jawline, showing the influence of East Asian ancestry. Skin is clear but bears minor marks of hard living — small scars on chin and left temple, perpetually tired around the eyes. Minimal grooming beyond function: no makeup, no jewelry except a simple steel ear stud on left ear.",
+    "skin_tone": "Warm medium brown with golden and subtle olive undertones — the blend of Northern European, Southeast Asian, East Asian, and South Asian ancestry creates a unified complexion with depth. The golden warmth is prominent, with slight olive undertones reflecting the South Asian and Latin American components. No sharp contrast between lighter and darker areas.",
+    "complexion": "Angular face with high cheekbones and sharp jawline, showing influence of East and Southeast Asian ancestry layered over Northern European bone structure. Warm medium-brown complexion with golden undertones. Skin is clear but bears minor marks of hard living — small scars on chin and left temple, perpetually tired around the eyes. Minimal grooming beyond function: no makeup, no jewelry except a simple steel ear stud on left ear.",
     "distinguishing_marks": [
       "Linear scar across left temple, approximately 4cm, white and surgical-looking — old injury, well-healed",
       "Small puncture-mark scarring at base of skull where neural jack integrates, dark red and slightly raised",
@@ -320,14 +300,75 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, head level. Walk is steady and low-center-gravity, weight distributed for balance. In repose, jaw is slightly tight, eyes tracking. Default state suggests controlled readiness rather than relaxation. Hands rest with fingers naturally curled, never fully open.",
     "clothing_style": "Tier 3-4 utilitarian. Favors dark technical fabrics — black or dark grey cargo pants with reinforced pockets and subdermal-compatible sleeve design. Fitted long-sleeve compression shirts or modified jackets that don't restrict forearm mobility. Steel-toed boots with good ankle support, laces kept tight. Outer layers are functional: a worn grey synth-leather jacket or industrial coveralls depending on the work. No corpo logos. No bright colors. Everything is built for movement and work, not presentation. Wears a battered smartwatch on left wrist — vintage model, clearly maintained, no display of Φ status."
   },
-  "image_prompt": "Elsa Sigurdsson, 178cm tall, lean muscular frame with angular shoulders. Warm medium-brown skin with golden undertones blending South Asian, Northern European, and East Asian features. Sharp cheekbones, dark brown natural eyes, clear complexion with small surgical scars on temple and cheekbone, tired gaze. Black hair pulled tight in braid. Subdermal weapon mount chrome visible in forearms as geometric patterns under tensed skin. Dark red neural jack port at base of skull. Wearing fitted black compression shirt under worn grey synth-leather jacket, dark cargo pants with reinforced pockets, steel-toed boots. Vintage smartwatch on left wrist. Posture economical and ready, shoulders forward, jaw tight. Standing in neon-lit industrial warehouse or maintenance corridor, cyberpunk 2226, cool blue and amber lighting cutting across the scene. Moody and focused expression, no expression of status, functional utilitarian equipment, gritty atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Orion Sigurdsson, tall lean mixed-heritage operative in GLMZ, warm medium-brown skin with golden undertones, high cheekbones and angular features blending East Asian and Northern European ancestry, dark brown eyes with tired intensity, black hair pulled back tight in a braid. Visible subdermal chrome weapon mounts in both forearms glinting beneath skin, dark red neural jack port at base of skull, thin white scar on right cheekbone. Wearing black cargo pants and fitted dark compression shirt with grey worn synth-leather jacket, steel-toed boots, vintage smartwatch. Posture economical and precise, shoulders slightly forward, standing in industrial low-light neo-noir corridor with neon reflecting off metal surfaces, hands at ready, controlled expression, no emotion, cinematic noir lighting with cool shadows and warm accent light catching the subdermal chrome, 2200s dystopian setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 51.0,
-    "Northern European": 29.1,
-    "East Asian": 19.9
+    "Northern European": 40.6,
+    "Southeast Asian": 18.2,
+    "East Asian": 15.9,
+    "South Asian": 10.8,
+    "Hispanic/Latin American": 7.6,
+    "Indigenous American": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 13.2,
+        "English": 1.5
+      },
+      "Scandinavian": {
+        "Danish": 4.1,
+        "Icelandic": 8.7
+      },
+      "Germanic": {
+        "German": 6,
+        "Swiss German": 7.1
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 18.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 11.4
+      },
+      "Korean": {
+        "Korean": 4.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 2,
+        "Punjabi Pakistani": 2.2
+      },
+      "Nepali": {
+        "Nepali": 6.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 1.9,
+        "Guatemalan": 3.6
+      },
+      "Mexican": {
+        "Mexican": 2.1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 2.9
+      },
+      "Mesoamerican": {
+        "Maya": 3.6
+      },
+      "Andean": {
+        "Quechua": 0.4
+      }
+    }
+  }
 }

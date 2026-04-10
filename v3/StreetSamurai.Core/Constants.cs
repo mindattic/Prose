@@ -123,4 +123,30 @@ public static class Constants
     {
         public const string Id = "id";
     }
+
+    /// <summary>
+    /// Logical grouping of data repos under parent categories.
+    /// Repos stay flat on disk — this is for UI navigation and organization only.
+    /// </summary>
+    public static class RepoGroups
+    {
+        public static readonly (string Group, string[] Repos)[] All =
+        [
+            ("Characters", ["people", "synthetics", "archetypes", "facets"]),
+            ("Organizations", ["corponations", "subsidiaries", "factions", "contracts"]),
+            ("Gear", ["weaponry", "ammunition", "cyberware", "equipment", "apparel", "genemods", "pharmaceuticals"]),
+            ("World", ["places", "transportation", "materials", "technology", "automata"]),
+            ("Culture", ["documents", "quotes", "vocabulary", "news", "entertainment", "consumer_goods", "motifs"]),
+            ("Story", ["stories"]),
+        ];
+
+        /// <summary>Look up which group a repo belongs to.</summary>
+        public static string? GroupFor(string repoName)
+        {
+            foreach (var (group, repos) in All)
+                if (repos.Contains(repoName, StringComparer.OrdinalIgnoreCase))
+                    return group;
+            return null;
+        }
+    }
 }

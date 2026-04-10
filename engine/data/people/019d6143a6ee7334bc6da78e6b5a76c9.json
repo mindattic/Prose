@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ee7334bc6da78e6b5a76c9",
   "type": "character",
-  "name": "Arjun Deshpande-Nokomis",
+  "name": "Erik Deshpande-Sigurdsson",
   "aliases": [
     "Tope",
     "Static"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Shelf — operates out of a sub-basement print node in Garfield Rack, near Pulaski and Chicago Ave",
-  "description": "Temitope is wiry and perpetually underslept, with warm brown skin that flickers faintly at the cheekbones — a bioluminescent mod he got at nineteen that he now considers an identifying liability but refuses to remove on principle. His hair is cut close on the sides and left to grow into an untidy crown on top, frequently dusted with the toner residue of the print machines he maintains. He dresses in layers of things that belong to other people, or so it seems — every item slightly too large or too small, pockets everywhere.\n\nHe runs Groundswell, a semi-weekly zine distributed physically through a network of forty-seven dead drops across Tiers 1 and 2, and digitally through a rotating series of anonymous mirrors. The print edition he considers sacramental: 'You can't delete paper.' He is funny, caustic, and dangerously charming, with an anger that runs so clean and hot it can read as joy until you follow where it points. He believes in the press with religious fervor and distrusts organizations almost as much as he distrusts corporations, which has kept him free and largely friendless.",
+  "description": "Erik Deshpande-Sigurdsson is wiry and perpetually underslept, with warm brown skin that flickers faintly at the cheekbones — a bioluminescent mod he got at nineteen that he now considers an identifying liability but refuses to remove on principle. His hair is cut close on the sides and left to grow into an untidy crown on top, frequently dusted with the toner residue of the print machines he maintains. He dresses in layers of things that belong to other people, or so it seems — every item slightly too large or too small, pockets everywhere.\n\nHe runs Groundswell, a semi-weekly zine distributed physically through a network of forty-seven dead drops across Tiers 1 and 2, and digitally through a rotating series of anonymous mirrors. The print edition he considers sacramental: 'You can't delete paper.' He is funny, caustic, and dangerously charming, with an anger that runs so clean and hot it can read as joy until you follow where it points. He believes in the press with religious fervor and distrusts organizations almost as much as he distrusts corporations, which has kept him free and largely friendless.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -160,7 +160,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,39 +179,18 @@
   ],
   "related_entities": [
     "Garfield Rack",
+    "Uncle Jun's Synth-Noodle Window",
     "Graviton Compression Emitter GCE-3 'Flatline'",
     "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Residue (I Still Have Your Feed)",
-    "VitaCore DermaTone Adaptive Skin Pigment System",
-    "Nesting Doll",
-    "Stalker",
     "Chicago",
-    "Arcturus Defense Solutions",
-    "Arcturus LS-5 'Sentinel'",
-    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
-    "Axiom Systems Neural Dead Drop NDD-2",
-    "Chatham Flats",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
-    "Gwenaëlle Osei-Diallo",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Idris Forsberg-Quaye",
-    "Irkalla",
-    "Isadora Mwangi-Thorvaldsen",
-    "Lowline Press",
-    "Mexicantown Libre",
-    "Narrowcast",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Uncle Jun's Synth-Noodle Window",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vuk Jorgensen-Toure",
-    "WELLSPRING"
+    "Nesting Doll",
+    "VitaCore DermaTone Adaptive Skin Pigment System"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian, South Asian, and Indigenous American blend — 40.5% Southeast Asian (cheekbone structure, eye shape), 30.9% South Asian (warm skin undertones, facial proportions), 28.6% Indigenous American (broad nasal bridge, high cheekbones, hair texture). The combination creates a distinctly multicultural phenotype with warm medium-bronze skin, angular facial geometry, and naturally dark hair with subtle wave.",
+    "heritage": "Complex diaspora blend — 34.4% Sub-Saharan African (warm deep undertones, facial structure depth, cheekbone prominence), 25.2% Northern European (angular bone structure, sharp jawline definition), 23.9% South Asian (facial proportions, skin warmth and richness), 9.7% Hispanic/Latin American (subtle feature softening), 6.8% Southeast Asian (high cheekbone architecture, eye shape). The combination creates a distinctly multicultural phenotype where warm deep-bronze skin with golden undertones reflects the synergy of Sub-Saharan and South Asian heritage, balanced by Northern European angularity and refined by the full diaspora mix. Features reflect genuine genetic blending rather than single-region ancestry.",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Wiry and lean with minimal muscle definition — the physiology of chronic sleep deprivation and sparse nutrition. Shoulders narrow, chest sunken slightly, movements efficient and nervous.",
@@ -219,8 +198,8 @@
     "hair_style": "Undercut fade on sides and back; crown grown out into an unruly, textured mass that sits at odd angles. Frequently matted with toner dust and printer residue.",
     "hair_length": "Medium (crown) / Short (sides)",
     "eye_color": "Dark brown, naturally warm",
-    "skin_tone": "Warm medium-bronze with subtle golden undertones across cheekbones and brow ridge — deeper and richer than East Asian alone, warmed by South Asian heritage, with the undertone complexity of Indigenous American ancestry.",
-    "complexion": "Angular, fine-featured face with prominent high cheekbones (Southeast/Indigenous American heritage), sharp jawline, and broad nasal bridge. Dark circles endemic under both eyes. Skin appears slightly dehydrated but unmarked by acne or major scarring. Faint stubble most days — shaving is low priority. Cheekbone prominence creates natural shadowing across the face.",
+    "skin_tone": "Warm deep-bronze with golden undertones across cheekbones and brow ridge — rich and luminous from the blending of Sub-Saharan African warmth (34.4%), South Asian depth (23.9%), Northern European clarity, and subtle warmth from Hispanic/Latin American (9.7%) and Southeast Asian (6.8%) ancestry. The result is a complex warm-toned bronze that reads as neither any single heritage nor artificially blended, but naturally integrated.",
+    "complexion": "Angular, fine-featured face with prominently sculpted high cheekbones and sharp jawline reflecting the full ancestral blend. The cheekbone prominence creates natural shadowing across the face that the bioluminescent implants subtly illuminate from within. Dark circles endemic under both eyes. Skin appears slightly dehydrated but unmarked by acne or major scarring. Faint stubble most days — shaving is low priority.",
     "distinguishing_marks": [
       "Bilateral bioluminescent implants at cheekbones that emit a faint cool-blue-white glow in low light, brightest when his heart rate elevates or when he's animated in conversation. The implants are recessed slightly beneath the skin, giving his cheeks a subtle luminous quality rather than obvious prosthetic appearance.",
       "Printer toner stains — permanent discoloration on the inner joints of both hands from years of maintaining Risograph machinery; dark gray-black dust embedded in the creases of his palms."
@@ -229,14 +208,52 @@
     "posture_movement": "Perpetually hunched forward as though listening intently or about to make a point. Hands in constant motion — gesturing, fidgeting with pockets, adjusting sleeves. Eyes dart frequently, habitually scanning spaces for exits and threats. When seated at his work, he becomes perfectly still, hyperfocused. His movements are quick and economical, with a nervous energy that reads as coiled rather than relaxed.",
     "clothing_style": "Deliberately ill-fitting layers that create an impression of borrowed or salvaged wardrobe — oversized linen button-ups worn loose over fitted undershirts, jacket sleeves always slightly too long. Cargo pants and modified work trousers with multiple pocket modifications (added zippers, reinforced seams). Worn canvas sneakers or steel-toed boots depending on the day's distribution route. Everything in muted grays, blacks, dark blues, and earth tones. Occasionally wears a leather messenger bag worn shiny from years of use, filled with paper stock and dead-drop supplies. No corporate branding visible — Tier 5 aesthetic worn as principle rather than circumstance."
   },
-  "image_prompt": "Portrait of Arjun Deshpande-Nokomis, cyberpunk 2226, lean 173cm Southeast Asian-South Asian-Indigenous American man with sharp angular cheekbones, warm bronze-medium skin tone, dark brown eyes, dark textured hair with undercut fade. Bilateral bioluminescent blue-white implants glowing faintly across high cheekbones in low light. Dark circles under eyes, faint stubble, gaunt focused expression. Wearing oversized muted gray linen shirt layered over dark undershirt, cargo pants with reinforced pockets, worn leather messenger bag. Hands showing permanent printer toner stains in palm creases. Hunched forward posture, nervous coiled energy, eyes darting. Cyberpunk underground workspace with cool blue-white glow from cheekbone implants casting subtle shadows across angular face. Dim neon and ambient light. Film noir meets tech underground aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Erik Deshpande-Sigurdsson, lean wiry 173cm man with warm deep-bronze skin and golden undertones reflecting diaspora ancestry (Sub-Saharan African, Northern European, South Asian, Southeast Asian, Hispanic blend). Angular face with prominently sculpted high cheekbones, sharp jawline, dark brown eyes with dark circles. Dark brown undercut with textured crown matted with toner dust. Faint stubble, slightly dehydrated skin. Bilateral bioluminescent cheekbone implants glowing cool blue-white in dim light. Printer toner stains on inner hand joints. Perpetually hunched posture, nervous energy. Wearing oversized linen button-up over fitted undershirt, cargo pants with modified pockets, worn canvas sneakers, shiny leather messenger bag. GLMZ GLMZ setting, underground print distribution workspace, cool bioluminescent lighting illuminating face implants, muted color palette, tense focused expression, hands in motion. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 40.5,
-    "South Asian": 30.9,
-    "Indigenous American": 28.6
+    "Sub-Saharan African": 34.4,
+    "Northern European": 25.2,
+    "South Asian": 23.9,
+    "Hispanic/Latin American": 9.7,
+    "Southeast Asian": 6.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 34.4
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 8.9
+      },
+      "Scandinavian": {
+        "Danish": 16.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 23.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 3.1
+      },
+      "Mexican": {
+        "Mexican": 5.9
+      },
+      "South American": {
+        "Colombian": 0.7
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 6.8
+      }
+    }
+  }
 }

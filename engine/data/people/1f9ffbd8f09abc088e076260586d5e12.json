@@ -1,13 +1,13 @@
 {
   "id": "1f9ffbd8f09abc088e076260586d5e12",
-  "name": "Kai Tovar-Vestergaard",
+  "name": "Kai Vestergaard-Bergqvist",
   "type": "character",
   "aliases": [
     "The Neuromancer",
     "Brainprint"
   ],
   "role": "Private Investigator",
-  "description": "Ravi Eriksson-Mensah is one of perhaps thirty certified BCI forensic examiners in GLMZ, and one of the best. His work sits at the intersection of neuroscience, data analysis, and detective work — he reads the data that brain-computer interfaces record, voluntarily or involuntarily, and uses it to reconstruct events, prove identity, establish timelines, and occasionally recover memories the subject themselves has forgotten.\n\nBorn to a Swedish-Indian father and Ghanaian mother, Ravi was a neuroscience researcher at the Axiom Institute before the ethical constraints of corporate research drove him into private practice. He discovered that academic rigor applied to investigative work produced results that neither pure scientists nor pure investigators could match. His testimony has been accepted in corporate arbitration courts across Tiers 2-4, and his findings have both convicted and exonerated subjects in cases ranging from theft to murder.\n\nThe darkness of his work is cumulative. Every deep scan means spending hours inside someone else's most intimate neural experiences — their fears, their pleasures, their traumas. Ravi has experienced more of other people's lives than most people experience of their own, and it has made him simultaneously more empathetic and more withdrawn. He knows what people are really thinking because he has literally been inside thousands of heads, and that knowledge has made genuine human connection almost impossible for him.",
+  "description": "Kai Vestergaard-Bergqvist is one of perhaps thirty certified BCI forensic examiners in GLMZ, and one of the best. His work sits at the intersection of neuroscience, data analysis, and detective work — he reads the data that brain-computer interfaces record, voluntarily or involuntarily, and uses it to reconstruct events, prove identity, establish timelines, and occasionally recover memories the subject themselves has forgotten.\n\nBorn to a Swedish-Indian father and Ghanaian mother, Ravi was a neuroscience researcher at the Axiom Institute before the ethical constraints of corporate research drove him into private practice. He discovered that academic rigor applied to investigative work produced results that neither pure scientists nor pure investigators could match. His testimony has been accepted in corporate arbitration courts across Tiers 2-4, and his findings have both convicted and exonerated subjects in cases ranging from theft to murder.\n\nThe darkness of his work is cumulative. Every deep scan means spending hours inside someone else's most intimate neural experiences — their fears, their pleasures, their traumas. Ravi has experienced more of other people's lives than most people experience of their own, and it has made him simultaneously more empathetic and more withdrawn. He knows what people are really thinking because he has literally been inside thousands of heads, and that knowledge has made genuine human connection almost impossible for him.",
   "affiliation": "Independent — certified BCI forensic examiner, court-recognized expert",
   "tier": "Tier 3",
   "location": "A sterile clinic-office hybrid on Kessler Row, equipped with neural scanning equipment that costs more than most apartments, near Halsted and Chicago Ave",
@@ -65,32 +65,27 @@
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
   "related_entities": [
-    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Tessera Industries Deep Scan Penetrating Radar DSR-1",
     "Chimera-Null",
-    "Déjà Vu",
     "Chicago",
     "Arcturus KS-7 'Nursery'",
-    "Deniz Salazar-Quansah",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "The Heritage Vault",
-    "Vuk Jorgensen-Toure"
+    "Neural Palate",
+    "GLMZ",
+    "Déjà Vu"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European base with significant Hispanic/Latin American warmth, enriched by South Asian and Pacific Islander undertones, with subtle sub-Saharan African complexity in skin depth and feature definition",
+    "heritage": "Predominantly Northern European (92.2%) with subtle phenotypic contributions from Indigenous American (6.3%) and sub-Saharan African (1.5%) ancestry. Northern European base provides cool undertones and angular bone structure, while secondary ancestries introduce gentle warmth and slight complexity to skin and eye coloration. The blend results in a distinctly Nordic appearance with barely perceptible depth—warmth visible primarily in natural light or at close proximity.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and composed, with the posture of someone who spends most of their time seated at high-resolution neural imaging consoles. Shoulders slightly rounded from years hunched over data. Wiry rather than muscular, with the controlled efficiency of movement that comes from minimal wasted gesture.",
     "hair_color": "Dark brown with silver threading at the temples",
     "hair_style": "Swept back neatly, kept short at the sides. Precision-groomed, no affectation",
     "hair_length": "Short",
-    "eye_color": "Warm brown with faint amber undertones",
-    "skin_tone": "Warm medium brown with golden undertones, blending Scandinavian fairness with Latin American and South Asian richness, deepened subtly by sub-Saharan African undertones that add warmth and dimension",
-    "complexion": "Clean-shaven with refined, slightly angular features reflecting Northern European bone structure softened by South Asian and Hispanic fullness. Faint lines around the eyes from years of close work and concentration. Skin maintains warm, even tone despite clinic-bound pallor. Expression tends toward neutral observation rather than warmth.",
+    "eye_color": "Cool gray-blue with subtle warm-brown undertones from ancestry blend",
+    "skin_tone": "Fair to light Nordic base with barely-detectable golden warmth beneath the surface, most evident in natural daylight. Indoor pallor dominates his clinic-bound complexion, but the skin maintains slight luminosity rather than true pallor—a quality imparted by the ancestral warmth beneath fair Northern European epidermis.",
+    "complexion": "Clean-shaven with refined, slightly angular features reflecting Northern European bone structure softened minutely by secondary ancestry—cheekbones carry subtle definition rather than sharp prominence. Faint lines around the eyes from years of close work and concentration. Skin maintains even, fair tone with the faintest golden undertone visible in certain light. Expression tends toward neutral observation rather than warmth.",
     "distinguishing_marks": [
       "Faint surgical scar on the left temple, approximately 3cm long, where a diagnostic neural interface was installed during his Axiom Institute years — barely visible unless light catches at certain angles",
       "Thin white line across the inner left wrist, partially obscured by his watch, from a research-era accident with equipment"
@@ -99,13 +94,34 @@
     "posture_movement": "Precise, measured movements. He walks with purpose but without aggression. Sits very still during interviews — rarely fidgets, rarely blinks noticeably. Tends to hold eye contact slightly longer than social convention, an occupational habit from reading micro-expressions. Speaks in measured tones with minimal hand gestures.",
     "clothing_style": "Tier 2-3 functional minimalism. Favors high-end athleistic wear in muted grays, blacks, and deep blues — brands like Helios and Kasper that advertise durability and precision over ostentation. Wears well-fitted compression shirts under open jackets, functional clothing that suggests athletic maintenance without athletic pretension. His watch is an expensive Swiss-analog piece, a deliberate rejection of smart devices. Minimal jewelry — a simple silver band on his right ring finger, no other adornment. Everything about his appearance is calibrated to project competence and impartiality rather than personality."
   },
-  "image_prompt": "Portrait of Kai Tovar-Vestergaard, 2226 cyberpunk neural diagnostician. Warm medium-brown skin with golden undertones, blended Northern European and South Asian features, sharp angular bone structure. Dark brown hair with silver at temples, swept back neatly. Warm amber-brown eyes with slight intensity from years reading micro-expressions. Clean-shaven, faint lines around eyes. Wearing muted gray compression shirt under open black minimalist jacket. Discrete matte-black neural readout band on left wrist. Faint temple scar barely visible in cool clinical lighting. Neutral, composed expression. Precise posture. Soft clinic fluorescent lighting with slight blue accent. Professional, detached demeanor. Cyberpunk 2220s aesthetic. High resolution, sharp focus on face. --ar 2:3 --v 6",
+  "image_prompt": "Kai Vestergaard-Bergqvist, Nordic-featured man in GLMZ GLMZ clinic setting, 178cm lean frame, dark brown hair with silver temples swept back short, cool gray-blue eyes with warm undertones, fair complexion with subtle golden warmth, angular Nordic features, clean-shaven. Wearing muted charcoal compression shirt under black Helios jacket, expensive Swiss analog watch on left wrist with discrete matte-black neural readout band, silver ring on right hand. Seated with precise posture at high-resolution neural imaging console, surrounded by holographic data displays in cool blues and grays. Faint surgical scar visible on left temple in side-lighting. Expression neutral and observant. Clinical, minimalist aesthetic. Cool LED lighting casting sharp shadows. Professional, impartial demeanor. Neo-noir tech-noir atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 43.2,
-    "Hispanic/Latin American": 23.8,
-    "South Asian": 15.2,
-    "Pacific Islander": 11.3,
-    "Sub-Saharan African": 6.5
+    "Northern European": 92.2,
+    "Indigenous American": 6.3,
+    "Sub-Saharan African": 1.5
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 49,
+        "Swiss German": 43.2
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 5.4,
+        "Ho-Chunk": 0.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 1.3,
+        "Congolese": 0.2
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A sterile clinic-office hybrid on Kessler Row"
+  }
 }

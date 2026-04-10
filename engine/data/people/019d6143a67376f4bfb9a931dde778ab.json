@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67376f4bfb9a931dde778ab",
   "type": "character",
-  "name": "Luciana Quiñones-Boudiaf",
+  "name": "Meera Hossain-Kulkarni",
   "aliases": [
     "Femi Q",
     "The Mouth"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Pilsen Veil, rotating between a shared squat above a protein noodle stall and whatever venue will have him, near Western and Chicago Ave",
-  "description": "Femi Q is lean and restless, built like someone who burns through calories via nervous energy rather than exercise. His Yoruba-Polish-Azerbaijani ancestry gives him a face of striking contradictions — high Slavic cheekbones, the warm brown skin and broad nose of his father's Lagos line, and his Azerbaijani grandmother's dramatically hooded eyes that he's chosen to highlight with geneware iris mods that shift through patterns of concentric gold rings when he's performing. His hair is kept very short on the sides and erupts into a soft irregular cloud on top, usually unwashed. He dresses in layers of secondhand everything — three collars, mismatched sleeves — that somehow cohere into something that reads as intentional.\n\nHe is one of the fastest talkers in Pilsen Veil and possibly the most dangerous, because he deploys his speed to bury the sharpest observations inside barrages of absurdity before anyone can quite register they've been cut. He performs at whatever unlicensed venue will book him — back rooms, open drain channels with an audience of forty, once the cargo bay of a stationary Ferrogate car. His material cycles obsessively through class anxiety, the theater of corponation loyalty, and the specific humiliations of being young and broke in a city that sells young and broke as aesthetic. He is genuinely funny. He is also genuinely angry, and the seam between the two is where his best work lives.",
+  "description": "Meera Hossain-Kulkarni is lean and restless, built like someone who burns through calories via nervous energy rather than exercise. His Yoruba-Polish-Azerbaijani ancestry gives him a face of striking contradictions — high Slavic cheekbones, the warm brown skin and broad nose of his father's Lagos line, and his Azerbaijani grandmother's dramatically hooded eyes that he's chosen to highlight with geneware iris mods that shift through patterns of concentric gold rings when he's performing. His hair is kept very short on the sides and erupts into a soft irregular cloud on top, usually unwashed. He dresses in layers of secondhand everything — three collars, mismatched sleeves — that somehow cohere into something that reads as intentional.\n\nHe is one of the fastest talkers in Pilsen Veil and possibly the most dangerous, because he deploys his speed to bury the sharpest observations inside barrages of absurdity before anyone can quite register they've been cut. He performs at whatever unlicensed venue will book him — back rooms, open drain channels with an audience of forty, once the cargo bay of a stationary Ferrogate car. His material cycles obsessively through class anxiety, the theater of corponation loyalty, and the specific humiliations of being young and broke in a city that sells young and broke as aesthetic. He is genuinely funny. He is also genuinely angry, and the seam between the two is where his best work lives.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -177,7 +177,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,66 +226,67 @@
     "Pilsen Veil",
     "Grandmother",
     "Ferrogate Transit",
+    "Chicago",
     "Nesting Doll",
+    "Cargo Tacos",
     "Ringo Corponation",
     "Arcturus CK-5 'Bloodhound'",
-    "Gold",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Arcturus KS-7 'Nursery'",
-    "Cryogenic Fracture Disbursement Mine CFDM-4",
-    "Dzemal Acholonu-Patagiri",
-    "Ilhan Sandstrom-Badu",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Korrath",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Obafemi Adeyinka-Cruces",
-    "Ringo RK-2 'Stray'",
-    "Seun Marchetti-Baig",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech AromaVeil Olfactory Filter",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Seam",
-    "The Undertow",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant North African and Middle Eastern ancestry, complemented by Northern European and East Asian heritage. A striking blend resulting in warm, sun-touched skin with subtle complexity — the Latin American warmth mixing with North African depth and Levantine features, with hints of Scandinavian bone structure and East Asian eye shape.",
+    "heritage": "Predominantly South Asian (78.8%) with significant Southeast Asian (13.4%) and Sub-Saharan African (7.8%) ancestry. This creates a striking phenotype: deep warm brown skin with golden undertones characteristic of South Asian complexions, enriched by the warmer, slightly more amber tones from Southeast Asian ancestry and the deeper richness from African heritage. The blend produces luminous, sun-lived skin with exceptional depth and warmth.",
     "height_cm": 174,
     "weight_kg": 62,
     "build": "Lean and wiry, all restless kinetic energy. Narrow shoulders that seem to vibrate slightly even at rest. The kind of body that suggests perpetual motion rather than strength.",
     "hair_color": "Dark brown, natural with occasional premature graying at the temples",
     "hair_style": "Undercut fade — shaved close on sides and back, erupting into a soft, irregular 5-8cm cloud on top, deliberately unkempt",
     "hair_length": "Short on sides, medium-long on crown",
-    "eye_color": "Warm brown (base), modified with active geneware iris pattern of concentric gold rings that shimmer and shift during performance states",
-    "skin_tone": "Warm golden-brown with subtle olive undertones from North African and Middle Eastern ancestry, sun-warmed and alive with latent energy",
-    "complexion": "High, angular cheekbones suggesting Northern European influence, balanced by a broad, expressive nose and full lips characteristic of Latin American and North African heritage. Face is broad with strong jaw. Skin shows the wear of late nights and inconsistent hydration — slight tension around the eyes, a few premature lines radiating from the corners of his mouth. Clean-shaven or sporting a day or two of scruff depending on venue availability. The eye shape carries subtle East Asian influence, giving the warm brown gaze an intensity that cuts through crowds.",
+    "eye_color": "Warm deep brown (base), modified with active geneware iris pattern of concentric gold rings that shimmer and shift during performance states",
+    "skin_tone": "Deep luminous brown with warm golden undertones. The South Asian base (78.8%) provides the foundational warm richness, enhanced by Southeast Asian amber warmth (13.4%) and deepened by Sub-Saharan depth (7.8%). Sun-lived and alive with latent energy.",
+    "complexion": "High, prominent cheekbones balanced by a broad, expressive nose and full lips characteristic of South Asian-Southeast Asian blending. Face is broad with strong jaw. Skin shows the wear of late nights and inconsistent hydration — slight tension around the eyes, a few premature lines radiating from the corners of his mouth. Clean-shaven or sporting a day or two of scruff depending on venue availability. The eye shape carries sharp, cutting intensity. African ancestry contributes subtle breadth and warmth to facial structure.",
     "distinguishing_marks": [
       "Faint scar tissue along the right side of his jaw, approximately 3cm long, from a childhood incident — barely visible unless he angles his head into certain light",
       "Small burn mark on the inside of his right forearm near his wrist, roughly 1.5cm diameter, from a stray plasma cutter during a gig economy delivery job gone wrong"
     ],
     "visible_augmentations": "The only immediately visible augmentation is his iris modification — the concentric gold ring pattern becomes spectacularly active during performance, cycling and shifting in response to adrenaline. The subdermal rhythm implant is not externally visible but creates a subtle pulsing beneath the skin of his right forearm if observed closely during intense concentration. No visible chrome, no cybernetic limbs.",
     "posture_movement": "Constantly in motion even when still — weight shifting from foot to foot, fingers tapping, shoulders rolling. When speaking, his hands are always already moving, ahead of his mouth. He has the nervous energy of someone who's learned to weaponize his inability to stand still. His default expression is a half-smile, eyes wide and scanning. Moves through space with the precision of someone used to small venues and tight crowds — economical, angular, weaving.",
-    "clothing_style": "Intentional chaos dressed as accident. Layers of secondhand everything: vintage band tees under partially unbuttoned overshirts, three visible collars at once, mismatched sleeves of different fabrics (one worn denim, one synthetic mesh, one linen). Pants are usually loose-fitted cargo or vintage tech-weave, pockets loaded with crumpled notes and voice recorder modules. Shoes are worn but functional — affordable gig-worker boots that can handle Pilsen's broken streets. A faded, oversized jacket that might have been corporate-issue once, now bearing a constellation of small pins and hand-stitched patches from venues and collectives. Accessories are minimal but deliberate: a frayed wristband in his crew colors, a borrowed chronometer he keeps forgetting to return. Everything worn just slightly inside-out or backwards, a visual manifestation of his material's logic."
+    "clothing_style": "Intentional chaos dressed as accident. Layers of secondhand everything: vintage band tees under partially unbuttoned overshirts, three visible collars at once, mismatched sleeves of different fabrics (one worn denim, one synthetic mesh, one linen). Pants are usually loose-fitted cargo or vintage tech-weave, pockets loaded with crumpled notes and voice recorder modules. Shoes are worn but functional — affordable gig-worker boots that can handle city's broken streets. A faded, oversized jacket that might have been corporate-issue once, now bearing a constellation of small pins and hand-stitched patches from venues and collectives. Accessories are minimal but deliberate: a frayed wristband in crew colors, a borrowed chronometer he keeps forgetting to return. Everything worn just slightly inside-out or backwards, a visual manifestation of his material's logic."
   },
-  "image_prompt": "Luciana Quiñones-Boudiaf, 174cm lean wiry performer with warm golden-brown skin and subtle olive undertones, narrow shoulders that vibrate with restless energy. Dark brown hair with premature graying, undercut fade with short sides and irregular 5-8cm cloud on crown. Warm brown eyes modified with active concentric gold rings that shimmer and shift, slight scar along jaw, full lips, angular cheekbones. Dressed in intentional chaos — vintage band tees under unbuttoned overshirts, three collars visible, mismatched sleeves (denim, synthetic mesh, linen), loose cargo pants loaded with pockets, worn gig-worker boots, oversized faded jacket covered in pins and patches. Constantly in motion, half-smile, fingers already moving ahead of mouth. Cyberpunk 2226 Great Lakes Metropolitan Zone venue setting, neon-lit underground club or street performance space, tight crowd atmosphere, sweat-slicked skin catching performance lighting, subdermal rhythm implant subtly pulsing on right forearm, gold iris patterns activating with performance intensity. Cinematic documentary realism, kinetic energy frozen in frame, late-night gig culture aesthetic, worn tech-weave materials catching light. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Meera Hossain-Kulkarni, 174cm lean wiry performer with restless kinetic energy. Deep luminous brown skin with warm golden undertones, blend of South Asian, Southeast Asian, and Sub-Saharan heritage. Dark brown hair with premature graying, undercut fade style with soft unkempt crown. Warm deep brown eyes with active geneware iris modification showing concentric shifting gold rings. High prominent cheekbones, broad expressive nose, full lips, strong jaw, faint scar on right jaw in certain light. Nervous energy radiating from shoulders and hands. Half-smile, eyes wide and scanning. Wearing intentional chaos layering: vintage band tee, partially unbuttoned overshirt, mismatched sleeves (denim, synthetic mesh, linen), loose cargo pants, worn gig-worker boots, oversized faded jacket with pins and patches. Frayed wristband, borrowed chronometer. Hands already moving ahead of words. Standing in tight concert venue lighting, neon glow catching the gold shimmer in his modified irises. Urban grit backdrop, late-night performance ready. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 38.5,
-    "North African": 22.6,
-    "Middle Eastern": 18.5,
-    "Northern European": 12.8,
-    "East Asian": 7.6
+    "South Asian": 78.8,
+    "Southeast Asian": 13.4,
+    "Sub-Saharan African": 7.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 21.2,
+        "Tamil Sri Lankan": 5.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 17.5,
+        "Baloch": 4.6
+      },
+      "Indian": {
+        "Tamil": 8.6,
+        "Bengali": 21.2
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 13.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 7.8
+      }
+    }
+  }
 }

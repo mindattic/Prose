@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d87e99b908764abf75fab5",
   "type": "character",
-  "name": "Nova Villanueva",
+  "name": "Nova Möller",
   "aliases": [
     "Jumper",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Fullerton and Damen",
-  "description": "Chiamaka Aguilar-Annan are lean and angular, all sharp edges and visible tension. At 43, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a saboteur out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Chiamaka Aguilar-Annan are one of the ones who actually does it.",
+  "description": "Nova Möller are lean and angular, all sharp edges and visible tension. At 43, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a saboteur out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Nova Möller are one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -258,7 +258,7 @@
     "Arsonist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,33 +274,12 @@
   "related_entities": [
     "The Circuit",
     "The Shelf",
-    "Pellucid Systems",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Dragan Petersen-Bah",
-    "GLMZ",
-    "Ilhan Sandstrom-Badu",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Old Harbor",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Circuit",
+    "Pellucid Systems"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Globally blended ancestry — 30% Hispanic/Latin American, 18% East Asian, 16% Sub-Saharan African, 14% Northern European, 14% Middle Eastern, and 9% Pacific Islander. This creates a striking polychromatic phenotype: warm undertones from Latin heritage, subtle epicanthic eye structure from East Asian ancestry, deeper melanin saturation from African descent, and fine facial geometry from Northern European and Middle Eastern lineage. No single ancestry dominates; instead, they present as radically mixed-heritage, visibly defying geographic categorization.",
+    "heritage": "Complex polychromatic blend: 51% Northern European foundation provides cool undertones and fine facial geometry, while 18% Middle Eastern heritage adds warmth and angular structure. 16% East Asian ancestry introduces subtle eye shape refinement and skin saturation, with 14% Eastern European heritage contributing additional cool undertones. The result is a genuinely mixed phenotype where no single ancestry dominates visually—sophisticated interplay of cool Northern/Eastern European undertones with warm Middle Eastern and East Asian saturation, creating a dynamic medium complexion that shifts subtly in different light.",
     "height_cm": 174,
     "weight_kg": 62,
     "build": "Lean and angular with visible musculature — wiry rather than bulky, all efficiency. No excess mass; every pound serves function. Posture suggests coiled readiness.",
@@ -308,28 +287,59 @@
     "hair_style": "Short, practical undercut — left side shaved to the scalp, longer on top, always pulled back or gelled. Maintenance takes 5 minutes.",
     "hair_length": "Short",
     "eye_color": "Warm brown, alert and calculating",
-    "skin_tone": "Complex polychromatic complexion — warm-rich undertones with subtle golden-amber saturation, darker in some areas from African ancestry, with cooler undertones in the cheekbones suggesting Northern European and Middle Eastern heritage. The overall effect is a sophisticated warm-medium tone that shifts in different light, neither purely cool nor purely warm, but dynamically blended.",
-    "complexion": "Sharp cheekbones with high prominence from multiple ancestry lines, angular jawline with subtle width suggesting East Asian heritage. Eye shape shows slight epicanthic fold from East Asian genetics. Minimal facial hair — they keep clean-shaven or with a precise 2-day stubble. Skin bears the wear of stress: fine lines around the eyes, slight tension in the jaw. No cosmetic work; they've never cared enough to hide age.",
+    "skin_tone": "Medium complexion with balanced cool-to-warm undertones—Northern European coolness and Eastern European pallor tempered by warm saturation from Middle Eastern and East Asian heritage. Complex, shifting subtly in different light, neither purely cool nor warm but dynamically blended.",
+    "complexion": "Sharp, prominent cheekbones from Northern European and Middle Eastern lineage, angular jawline with subtle width reflecting East Asian genetics. Slight epicanthic fold visible in eye shape from East Asian ancestry contribution. Minimal facial hair—clean-shaven or precise 2-day stubble. Skin bears the wear of stress: fine lines around the eyes, slight tension in the jaw. No cosmetic work; they've never cared enough to hide age.",
     "visible_augmentations": "Wired reflex system — visible chrome threading at the wrists and neck. Thin metallic ports gleam beneath the skin at the base of the skull. Adrenaline pump injection sites visible as small silvered nodules along the collarbone. When they move quickly, there's an audible faint mechanical hum from the spinal column augmentation. They make zero effort to conceal any of it.",
     "distinguishing_marks": [
       "Surgical scars at the base of the skull, barely visible under short hair — chrome reflex rig entry points, thin white lines running down the back of the neck.",
-      "Thin linear scars on both inner wrists — not self-harm; equipment interface scarring from early augmentation work, deliberately kept visible.",
+      "Thin linear scars on both inner wrists — equipment interface scarring from early augmentation work, deliberately kept visible.",
       "Burn scar on left shoulder blade, about 3cm across — chemical solvent from a job gone wrong, pale and mottled against their skin tone."
     ],
     "posture_movement": "Moves with controlled precision — no wasted motion. Sits slightly forward, weight balanced on the balls of their feet. When still, there's visible tension in the shoulders and hands. They have a habit of flexing their fingers in rapid sequences, testing the chrome's response. Eye contact is direct and unwavering. Breathing is shallow and controlled, even at rest.",
-    "clothing_style": "Tier 4 utilitarian — practical, durable, dark. Black synthweave cargo pants with reinforced knees and thigh pockets. Fitted charcoal compression shirts designed for augmentation visibility and concealment (they choose visibility). Worn leather jacket over everything, pre-collapse era or good knockoff, treated with hydrophobic coating. Scuffed tactical boots with grip soles. No jewelry except a simple matte-black band on the right index finger (a talisman or reference point they don't discuss). Clothing shows wear but is always maintained — they understand that gear failure kills you."
+    "clothing_style": "Tier 4 utilitarian — practical, durable, dark. Black synthweave cargo pants with reinforced knees and thigh pockets. Fitted charcoal compression shirts designed for augmentation visibility and concealment (they choose visibility). Worn leather jacket over everything, pre-collapse era or good knockoff, treated with hydrophobic coating. Scuffed tactical boots with grip soles. No jewelry except a simple matte-black band on the right index finger. Clothing shows wear but is always maintained."
   },
-  "image_prompt": "Nova Villanueva, cyberpunk 2226, radically mixed-heritage face with warm-amber brown skin, sharp cheekbones blending multiple continents, subtle epicanthic eye structure, warm alert brown eyes. Short dark hair with silver streaks, left side shaved undercut, right side gelled back. 174cm lean angular frame, visible chrome wrist threading and metallic ports at base of skull gleaming beneath skin. White surgical scars barely visible under hair, thin interface scars on inner wrists deliberately exposed. Pale burn scar on left shoulder blade. Sits coiled forward on balls of feet, fingers flexing in precise sequences testing augmentation response. Direct unwavering eye contact, controlled shallow breathing. Worn black synthweave cargo pants, charcoal compression shirt showing chrome augmentation, pre-collapse leather jacket with hydrophobic coating, scuffed tactical boots. Simple matte-black band on right index finger. Dark utilitarian aesthetic, neon-lit GLMZ interior, cool blue and amber light hitting chiseled angular face, augmentation ports catching sharp highlights. Gear maintenance visible, every piece functional. Mood: coiled readiness, mechanical precision, stress-worn alertness. Cyberpunk noir, gritty materiality. --ar 2:3 --v 6",
+  "image_prompt": "Nova Möller, GLMZ, lean 174cm augmented operative with mixed Northern European-Middle Eastern-East Asian-Eastern European heritage. Medium warm-cool complexion, sharp cheekbones, subtle epicanthic eye shape, warm brown alert eyes. Dark brown hair with silver streaks, shaved left undercut. Visible chrome threading at wrists and neck, silvered nodules along collarbone, surgical scars at base of skull. Pale burn scar on left shoulder blade. Dark utilitarian: black cargo pants, fitted charcoal compression shirt revealing augmentation, worn leather jacket, scuffed tactical boots. Simple matte-black band on right index finger. Posture coiled, controlled precision, shallow breathing, direct unwavering gaze. Neon-lit Great Lakes Metropolitan Zone interior, cool blue-amber lighting catching chrome ports, shadows emphasizing angular features and augmentation marks, mood: dangerous calm focus --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.3,
-    "East Asian": 17.6,
-    "Sub-Saharan African": 15.6,
-    "Northern European": 14.0,
-    "Middle Eastern": 13.8,
-    "Pacific Islander": 8.7
+    "Northern European": 51.3,
+    "Middle Eastern": 18.1,
+    "East Asian": 16.2,
+    "Eastern European": 14.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 23.5,
+        "German": 11.1
+      },
+      "British Isles": {
+        "English": 13.8,
+        "Scottish": 2.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 5.3,
+        "Jordanian": 0.6
+      },
+      "Persian": {
+        "Tajik Persian": 6.7,
+        "Iranian": 5.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 16.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 11.9,
+        "Belarusian": 2.5
+      }
+    }
+  }
 }

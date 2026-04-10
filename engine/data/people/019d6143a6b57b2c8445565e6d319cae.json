@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b57b2c8445565e6d319cae",
   "type": "character",
-  "name": "Siddharth Kulkarni-Nkrumah",
+  "name": "Obinna Tamale-Nazari",
   "aliases": [
     "Havoc",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near North Ave and Damen",
-  "description": "Rongo Delgado-Opoku is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 28, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Rongo Delgado-Opoku plans to keep it that way. She works as a courier out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Rongo Delgado-Opoku is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Obinna Tamale-Nazari is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 28, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Obinna Tamale-Nazari plans to keep it that way. She works as a courier out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Obinna Tamale-Nazari is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.37,
@@ -261,7 +261,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,41 +277,17 @@
     "The Narrows Compact",
     "The Nearfield",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
     "Ringo DV-4 'Courier'",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
-    "Dzemal Acholonu-Patagiri",
-    "Ezio Kaboré-Malhotra",
-    "Flicker",
-    "GLMZ",
-    "Last Word",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Réginald Asomaning-Čabarkapa",
-    "Scarecrow",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Fathom Line",
-    "The Narrows",
-    "The Pure Hand",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (Indian subcontinent) with significant Sub-Saharan African and minor East Asian ancestry — a striking blend of South Indian and West African features creating sharp, distinctive facial geometry. The combination produces warm, deep brown skin with subtle golden undertones.",
+    "heritage": "Pan-continental blend of Sub-Saharan African (27.4%), Central Asian (27.3%), Middle Eastern (22.1%), East Asian (13.6%), and Hispanic/Latin American (9.6%) ancestry. The genetic mix produces a striking fusion: prominent high cheekbones and angular facial geometry from Sub-Saharan and Central Asian lineages, warm golden undertones from Middle Eastern heritage, subtle eye shape influence from East Asian ancestry, and slight softness in the lower face from Hispanic/Latin American contribution. The result is a uniquely defined face with geometric precision that reads as intentionally ambiguous — no single heritage dominates, instead creating a cohesive warm-toned complexion that shifts between deep clay and polished copper.",
     "height_cm": 183,
     "weight_kg": 62,
     "build": "Rawboned and angular — lean muscle without softness, the frame of someone who burns calories faster than she replaces them. Shoulders broad but lack bulk; visible muscle definition in forearms and legs suggests constant movement rather than gym discipline.",
@@ -319,25 +295,75 @@
     "hair_style": "Pulled back in a utilitarian braid, sometimes left loose. Practical, never decorative.",
     "hair_length": "Long — reaches mid-back when unbraided, but worn tied up 90% of the time",
     "eye_color": "Dark brown, alert and flat — the kind of stare that suggests she's already calculated your threat assessment",
-    "skin_tone": "Warm deep brown complexion with golden undertones, the blend of South Asian and Sub-Saharan African heritage creating a tone that shifts between burnished bronze and rich clay depending on light and rest levels",
-    "complexion": "Angular face with prominent high cheekbones, strong defined jawline, and refined facial structure characteristic of South Indian features blended with West African bone structure. Minimal grooming — no cosmetics, scars left unsmoothed. Skin shows the wear of irregular sleep and constant low-grade stress; slight dark circles are permanent fixtures. Lips well-defined, mouth set in a default neutral line.",
+    "skin_tone": "Rich burnished bronze with warm golden undertones — the result of layered Sub-Saharan, Central Asian, and Middle Eastern ancestry creating a complexion that shifts between deep clay and polished copper depending on light and exertion. No single heritage dominates; instead they blend into a cohesive warm-dark tone that reads as intentionally ambiguous.",
+    "complexion": "Angular face with prominent high cheekbones, strong defined jawline, and refined facial structure blending Sub-Saharan bone prominence with Central Asian angular precision and Middle Eastern warmth, softened slightly by Hispanic/Latin American heritage. Minimal grooming — no cosmetics, scars left unsmoothed. Skin shows the wear of irregular sleep and constant low-grade stress; slight dark circles are permanent fixtures. Lips well-defined, mouth set in a default neutral line. Subtle East Asian eye shape carries slight epicanthic fold influence without dominating her phenotype.",
     "distinguishing_marks": [
       "Thin white scar along her left jawline, approximately 6cm, running from ear toward chin — looks like a blade wound, old enough to have faded but too precise to be accidental",
       "Cluster of small burns on the inside of her right wrist, faint and somewhat hidden by her sleeve line — appears to be chemical or thermal in origin, deliberate-looking but not decorative",
       "Tattoo on her left collarbone area, partially visible: a minimalist geometric pattern suggesting a stylized bird in flight, done in black ink — runner culture marker"
     ],
-    "visible_augmentations": "Chrome visible along both forearms in the form of reinforced wiring and interface ports — synthetic silver-grey metal work visible at wrist and elbow joints, practical rather than ornamental. Neural port at the base of her skull, behind her left ear, marked by a small raised seam and a faint shimmer of subdermal circuitry. Her eyes themselves don't glow, but there's an almost imperceptible flicker when she's processing data or making threat assessments — tells if you know what to look for. The adrenaline pump augmentation creates a subtle tension in her chest and shoulders, a readiness that never fully relaxes.",
+    "visible_augmentations": "Chrome visible along both forearms in the form of reinforced wiring and interface ports — synthetic silver-grey metal work visible at wrist and elbow joints, practical rather than ornamental. Neural port at the base of her skull, behind her left ear, marked by a small raised seam and a faint shimmer of subdermal circuitry. Eyes don't glow, but there's an almost imperceptible flicker when processing data or making threat assessments. The adrenaline pump augmentation creates subtle tension in chest and shoulders, a readiness that never fully relaxes.",
     "posture_movement": "Moves with the efficiency of someone who's trained out of her natural grace — controlled, minimal wasted motion, weight balanced on the balls of her feet even when standing still. Shoulders slightly forward, head slightly cocked, as if always half-turning toward potential threats. Her hands rest naturally at her sides but are never truly still — fingers move in small patterns, testing tension, checking gear. She doesn't fidget; she calibrates.",
-    "clothing_style": "Tier 3 working-class courier aesthetic — function over fashion, but not poverty-coded. Black synthetic leather jacket (weathered, multiple repair patches, burn mark on the right sleeve), reinforced cargo pants in slate grey with pockets positioned for quick access and gear distribution, worn commuter boots with grippy soles. Thin base layer under the jacket, visible collarbone area for neural port accessibility. No visible jewelry except a thin bracelet on her right wrist — likely serves a functional purpose (timepiece, data interface, or reminder). Bag is a tactical sling pack, dark fabric, custom-modified with hidden compartments and signal-blocking lining. Clothing deliberately unremarkable — designed not to catch attention, to blend into runner infrastructure."
+    "clothing_style": "Tier 3 working-class courier aesthetic — function over fashion, but not poverty-coded. Black synthetic leather jacket (weathered, multiple repair patches, burn mark on the right sleeve), reinforced cargo pants in slate grey with pockets positioned for quick access and gear distribution, worn commuter boots with grippy soles. Thin base layer under the jacket, visible collarbone area for neural port accessibility. No visible jewelry except a thin bracelet on her right wrist — likely serves a functional purpose (timepiece, data interface, or reminder). Bag is a tactical sling pack, dark fabric, custom-modified with hidden compartments and signal-blocking lining."
   },
-  "image_prompt": "Siddharth Kulkarni-Nkrumah, a 183cm tall lean androgynous courier with warm deep brown skin and golden undertones blending South Indian and West African heritage. Sharp angular features with prominent cheekbones and strong jawline, dark alert eyes with a cold analytical stare. Long dark brown hair pulled back in a tight utilitarian braid, reaching mid-back. Faint blade scar running along left jawline, chemical burn marks visible on inside of right wrist. Minimalist geometric bird tattoo on left collarbone area in black ink. Chrome augmentation ports visible along both forearms at wrist and elbow joints — silvery-grey synthetic metal work. Neural port at base of skull behind left ear with subdermal circuitry shimmer. Wearing weathered black synthetic leather jacket with repair patches and burn mark on right sleeve, reinforced slate grey cargo pants with tactical pockets, worn commuter boots. Thin base layer visible at collarbone. Dark tactical sling pack with custom modifications across chest. Posture alert and controlled, weight balanced on balls of feet, shoulders slightly forward. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon-lit urban corridor with rain-slicked surfaces, dramatic side-lighting casting shadows across angular features, moody atmospheric haze. Runner culture aesthetic, dangerous and efficient. --ar 2:3 --v 6",
+  "image_prompt": "Obinna Tamale-Nazari, neo-noir courier in Great Lakes Metropolitan Zone 2226, lean angular frame 183cm tall, rich burnished bronze skin with warm golden undertones blending Sub-Saharan, Central Asian, and Middle Eastern heritage, prominent high cheekbones and strong jawline, dark brown alert eyes, long deep brown hair pulled back in utilitarian braid. Thin white scar along left jawline, faint burn marks on right wrist, minimalist geometric bird tattoo on left collarbone. Chrome reinforced wiring visible on both forearms at wrist and elbow joints, neural port behind left ear with subdermal circuitry shimmer, subtle eye flicker when processing. Weathered black synthetic leather jacket with burn mark and patches, slate grey reinforced cargo pants, worn commuter boots, thin base layer. Tactical sling pack dark fabric. Posture efficient and controlled, weight balanced on balls of feet, shoulders slightly forward, fingers calibrating constantly. Neon-lit urban interior with low-grade ambient light casting cool shadows across angular face, conveying readiness and threat assessment capability. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 81.5,
-    "Sub-Saharan African": 15.5,
-    "East Asian": 3.0
+    "Sub-Saharan African": 27.4,
+    "Central Asian": 27.3,
+    "Middle Eastern": 22.1,
+    "East Asian": 13.6,
+    "Hispanic/Latin American": 9.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 15.7,
+        "Zambian": 6.8
+      },
+      "East African": {
+        "Tanzanian": 4.9
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 11.5,
+        "Uzbek": 2.7
+      },
+      "Iranian Central": {
+        "Tajik": 6.4,
+        "Hazara": 6.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 12.2
+      },
+      "Kurdish": {
+        "Kurdish": 9.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.2
+      },
+      "Japanese": {
+        "Japanese": 5
+      },
+      "Chinese": {
+        "Mandarin Northern": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.9
+      },
+      "Caribbean": {
+        "Haitian": 3.7
+      }
+    }
+  }
 }

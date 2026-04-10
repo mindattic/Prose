@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d171f9a73eb620d89993a9",
   "type": "character",
-  "name": "Sage Ghorbani",
+  "name": "Sage Tofauti",
   "aliases": [
     "Soky",
     "The Moth"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Gravesend Basin, operates out of a water-damaged apartment above the Pelican Fry stall on Sump Row, near Halsted and Division",
-  "description": "Sokołów has the patient, watchful quality of someone who has learned to make herself invisible. She is medium height, with deep amber skin, close-cropped natural hair she dyes a muted copper, and wide-set eyes fitted with patterned irises—concentric rings of gold and black that she uses deliberately to unsettle people when she removes her tinted contacts in negotiation. Her hands are always busy: folding receipts, tapping rhythm on surfaces, smoothing the worn edges of her data chips. She dresses in forgettable browns and grays, functional layers that carry no corporate logo and make no statement. She could be a transit worker, a clinic scheduler, a nobody. That is entirely the point.\n\nSokołów is methodical and almost affectless in conversation, communicating through implication rather than declaration. She has a talent for making people feel that confessing to her is the only rational choice, and she genuinely believes she provides a service—she rarely destroys anyone, preferring the sustainable income of ongoing compliance. She has a private moral line: she will not leverage people over things that could get them killed or trafficked. She's broken that rule once, and she knows it, and it follows her.",
+  "description": "Sage Tofauti has the patient, watchful quality of someone who has learned to make herself invisible. She is medium height, with deep amber skin, close-cropped natural hair she dyes a muted copper, and wide-set eyes fitted with patterned irises—concentric rings of gold and black that she uses deliberately to unsettle people when she removes her tinted contacts in negotiation. Her hands are always busy: folding receipts, tapping rhythm on surfaces, smoothing the worn edges of her data chips. She dresses in forgettable browns and grays, functional layers that carry no corporate logo and make no statement. She could be a transit worker, a clinic scheduler, a nobody. That is entirely the point.\n\nSage Tofauti is methodical and almost affectless in conversation, communicating through implication rather than declaration. She has a talent for making people feel that confessing to her is the only rational choice, and she genuinely believes she provides a service—she rarely destroys anyone, preferring the sustainable income of ongoing compliance. She has a private moral line: she will not leverage people over things that could get them killed or trafficked. She's broken that rule once, and she knows it, and it follows her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -189,7 +189,7 @@
     "Diplomat": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,34 +241,15 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Irontide Tidal Energy",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
-    "The Pure Hand",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
-    "Gold",
-    "Arcturus KS-7 'Nursery'",
-    "BLACKWATER",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Immaculée Dalgaard-Nwosu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Narrowcast",
-    "Ngaire Kuznetsov-Adu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Seydou Papadopoulos-Mataagi",
-    "Sisay Bergqvist-Mallari",
-    "Street Custom 'Cigarette' Pen Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Basin",
-    "The Sump",
-    "Tshiamo Vukić-Arellano"
+    "The Pure Hand",
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander (Polynesian dominant, 57.2%), Middle Eastern (38.5%), and Sub-Saharan African (4.3%) ancestry. The blend manifests in warm, deep amber-bronze skin with underlying richness, high prominent cheekbones characteristic of Polynesian lineage, and refined facial structure showing Middle Eastern heritage. Features are fine-boned and economical.",
+    "heritage": "Pacific Islander dominant (52.9%, primarily Polynesian), Southeast Asian (24.1%), Sub-Saharan African (14.3%), East Asian (5.4%), and Hispanic/Latin American (3.3%) ancestry. The blend manifests in warm deep bronze skin with golden undertones, high prominent cheekbones characteristic of Polynesian lineage, refined facial structure showing Southeast Asian and East Asian heritage influences, and elegant angularity from the full ancestral combination. Features are fine-boned and economical.",
     "height_cm": 165,
     "weight_kg": 58,
     "build": "Lean and compact, economical in movement. Shoulders slightly narrow, core tight from decades of controlled posture. No visible musculature, but the kind of wiry endurance that comes from constant low-level motion rather than deliberate conditioning.",
@@ -276,8 +257,8 @@
     "hair_style": "Close-cropped, faded at temples, kept very short to minimize grooming maintenance and avoid being grabbed",
     "hair_length": "Short",
     "eye_color": "Augmented: concentric rings of deep gold and obsidian black (cosmetic iris implants). Natural color unknown—hazel beneath the modification",
-    "skin_tone": "Deep warm amber-bronze with golden undertones, sun-darkened from years in the Basin's outdoor markets. The tone carries the richness of blended Pacific Islander and Middle Eastern ancestry, creating a luminous depth rather than flat darkness.",
-    "complexion": "Fine-featured with high prominent cheekbones inherited from Polynesian ancestry, refined by Middle Eastern heritage. Skin is clear but weathered—not from sun damage but from low-grade environmental stress, early stress lines around the eyes from constant surveillance work. Minimal makeup. A very slight asymmetry to her left jaw from an old break that healed without proper setting. Facial structure shows the elegant angularity characteristic of her combined ancestry.",
+    "skin_tone": "Warm deep bronze with golden undertones, sun-darkened from years in the Basin's outdoor markets. The tone carries the richness of Pacific Islander, Southeast Asian, and Sub-Saharan African ancestry blended together, creating luminous depth with subtle warm radiance rather than flat darkness.",
+    "complexion": "Fine-featured with high prominent cheekbones inherited from Polynesian ancestry, refined by Southeast and East Asian heritage influences creating elegant angularity. The facial bone structure shows the subtle blending characteristic of Pacific Islander-Southeast Asian heritage with refined undertones from East Asian genetics. Skin is clear but weathered—not from sun damage but from low-grade environmental stress, early stress lines around the eyes from constant surveillance work. Minimal makeup. A very slight asymmetry to her left jaw from an old break that healed without proper setting.",
     "distinguishing_marks": [
       "Small burn scar on the inner right wrist, roughly 2cm diameter, shaped like a cigarette cherry—received during interrogation in 2219, deliberately inflicted, deliberately visible as a reminder",
       "Three thin parallel scars running vertically along the left forearm below the elbow, barely visible unless she extends her arm in certain light—surgical marks from data node installation, partially healed with cosmetic sealant",
@@ -287,14 +268,63 @@
     "posture_movement": "Sits with her spine straight but not rigid, hands always occupied—folding, tapping, smoothing. Her gaze moves constantly but without the jerky quality of anxiety; it's methodical, cataloging. She moves through spaces with minimal energy expenditure, taking up as little room as possible. When she walks, her feet land heel-to-toe in an almost silent pattern. Speaks quietly, requiring people to lean in slightly to hear her, which puts them off-balance.",
     "clothing_style": "Tier 4–5 working class, deliberately forgettable. Worn earth tones: taupe, warm gray, faded olive. Layered functional pieces—a thin jacket over a long-sleeved shirt, often with an unbuttoned overshirt for weather adaptability. Everything is from discount chain retailers or secondhand markets, nothing with visible branding. Her clothing carries the minor stains and repairs of someone who prioritizes durability over appearance. Worn sneakers or practical boots, always lace-up for quick escape. No jewelry except a battered data chip on a thin steel chain around her neck—the 'insurance copy,' kept close."
   },
-  "image_prompt": "Sage Ghorbani, a lean 165cm woman of Pacific Islander, Middle Eastern, and Sub-Saharan African ancestry, stands in the shadows of a Great Lakes Metropolitan Zone underground market, 2226. Deep warm amber-bronze skin glowing subtly under neon strips. Close-cropped copper-dyed hair, fine-boned face with high prominent cheekbones, barely visible stress lines around her eyes. Augmented irises gleaming with concentric rings of deep gold and obsidian black—the only bright thing about her. Wearing layered, forgettable earth-tone clothing: faded olive overshirt, worn taupe undershirt, practical lace-up boots. Data chip on thin steel chain visible at her neck. Posture perfectly still, hands occupied, feet positioned for silent escape. Methodical gaze cataloging everything. Cyberpunk aesthetic, moody blue-and-amber lighting, foreground slightly out of focus market stalls behind her. Hyperrealistic portrait. --ar 2:3 --v 6",
+  "image_prompt": "Sage Tofauti, GLMZ, half-length portrait. 165cm lean compact figure, copper-dyed close-cropped hair with temple fade over natural black. Warm deep bronze skin with golden undertones, luminous radiance reflecting Pacific Islander, Southeast Asian, and Sub-Saharan African heritage blend. High prominent Polynesian cheekbones, refined angularity from East Asian influences, fine-boned elegant facial structure. Augmented irises with concentric rings of deep gold and obsidian black creating unsettling cosmetic intensity. Slight jaw asymmetry from old healed break. Faint surgical scars visible on left forearm below elbow. Small burn scar on inner right wrist. Barely-visible Polynesian geometric tattoo on nape of neck hidden beneath short hair. Wearing taupe layered functional clothing—long-sleeved shirt under thin jacket, unbuttoned overshirt, worn lace-up boots. Battered data chip on thin steel chain around neck. Posture perfectly straight but not rigid, methodical gaze, seated with hands occupied—folding, tapping. Quiet intensity, minimal presence. Indoor setting, cool neon-tinged overhead lighting mixing with warm practical work lights. Neo-noir market district atmosphere, surveillance-aware composition, slightly desaturated palette with warm bronze skin luminescence standing out. Mood: controlled, observant, dangerous calm. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 57.2,
-    "Middle Eastern": 38.5,
-    "Sub-Saharan African": 4.3
+    "Pacific Islander": 52.9,
+    "Southeast Asian": 24.1,
+    "Sub-Saharan African": 14.3,
+    "East Asian": 5.4,
+    "Hispanic/Latin American": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 13.5,
+        "Fijian": 6.4
+      },
+      "Polynesian": {
+        "Samoan": 19.6,
+        "Tokelauan": 9.7
+      },
+      "Micronesian": {
+        "Marshallese": 3.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 21.6,
+        "Balinese": 1.6
+      },
+      "Filipino": {
+        "Cebuano": 0.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 9.4
+      },
+      "West African": {
+        "Nigerian": 1.5
+      },
+      "Central African": {
+        "Congolese": 2.6,
+        "Cameroonian": 0.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 5.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 1.2,
+        "Salvadoran": 2.1
+      }
+    }
+  }
 }

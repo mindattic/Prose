@@ -171,7 +171,7 @@
     "Ambusher": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Unknown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -191,37 +191,15 @@
   "related_entities": [
     "The Weft Arrangement",
     "Parliament",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "TESSERA CORPONATION Anima Vox Consciousness Expansion Suite",
+    "Patience",
     "Lazarus LX-2 'Lab Rat'",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Aphelion",
-    "Bathysphere Networks",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Ihaia Nystrom-Keita",
-    "Kang Athletics KA-900 'Sensei'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Orhan Dlamini-Kurikka",
-    "Pikasso Wemba-Þórðarson",
-    "Prophet",
-    "Pullman Works",
-    "Quilt",
-    "Slagworks Industrial",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "The Arrangement",
-    "The Collective",
-    "The Ghost Ronin",
-    "The Question",
-    "The Quiet Room",
-    "Tomasz Wren",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Predominantly East Asian (57.1%) with significant Northern European (25.7%) and Hispanic/Latin American (17.2%) ancestry — the Ubiquitous Diaspora made visible. Features reflect the East Asian majority with secondary Northern European bone structure refinement and subtle warm undertones from Latin American heritage.",
+    "heritage": "Deeply mixed global ancestry: East Asian (42.3%) forms the dominant genetic expression through bone structure, complemented by South Asian (28.9%) warmth in skin undertones, Hispanic/Latin American (15.9%) contributing midface width and fullness, Southeast Asian (6.7%) refining eye shape and orbital structure, Sub-Saharan African (6.2%) adding depth and complexity to skin tone. The Ubiquitous Diaspora made visible in seamless layering — East Asian foundation in cheekbones and jawline, South Asian golden warmth beneath the surface, Latin American generosity through the center of the face, Southeast Asian almond-shaped eyes, African undertones creating luminous depth.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean, almost ascetic — the build of someone who forgets to eat during deep work. Minimal muscle mass, efficient frame, suggests long periods of immobility interrupted by brief, precise movement.",
@@ -229,8 +207,8 @@
     "hair_style": "Pulled back severely, functional rather than aesthetic — no ornamentation, minimal maintenance",
     "hair_length": "Medium, typically secured",
     "eye_color": "Dark brown, possibly augmented with neural interface hardware (pupil response inconsistent under certain lighting)",
-    "skin_tone": "Pale with warm undertones — cool base from Northern European ancestry tempered by subtle golden warmth from East Asian and Latin American heritage. Consistent with minimal sun exposure and extended periods in shielded environments.",
-    "complexion": "Smooth, unmarked face suggesting either exceptional genetics or medical-grade dermal maintenance. East Asian bone structure dominates: high, defined cheekbones, sharp jawline refined by Northern European ancestry, subtle width through midface reflecting Latin American heritage. Minimal expression lines despite age — either Botox-grade intervention or someone who doesn't move her face much. Features that read as deliberately neutral.",
+    "skin_tone": "Warm medium with golden-amber undertones — the harmonious blending of East Asian, South Asian, Hispanic/Latin American, Southeast Asian, and Sub-Saharan African heritage creating luminous depth. Natural melanin distribution suggests minimal sun exposure and extended periods in shielded environments. Skin reads as radiant rather than pale, with the sophisticated complexity that multi-regional ancestry provides.",
+    "complexion": "Smooth, unmarked face suggesting either exceptional genetics or medical-grade dermal maintenance. East Asian bone structure dominates with high, defined cheekbones, sharp jawline refined by the blended heritage. South Asian fullness through the midface combines with Latin American width creating balanced proportions. Southeast Asian influence evident in slightly wider-set, almond-shaped eyes with refined orbital structure. Sub-Saharan African heritage adds depth to skin undertones and subtle dimension to facial planes. Minimal expression lines despite age — either intervention or someone who doesn't move her face much. Features read as deliberately neutral, a complexity that comes from multiple ancestry streams harmonizing into one coherent whole.",
     "distinguishing_marks": [
       "Faint scarring at left temple, roughly 3cm in length, consistent with surgical intervention — location suggests neural port installation or removal",
       "Linear burn mark on inner right wrist, thin and precise, suggests accidental contact with industrial equipment or intentional marking"
@@ -239,14 +217,50 @@
     "posture_movement": "When present: extremely economical movement. Minimal fidgeting, minimal gesturing. Sits in positions that suggest long hours of immobility are normal. When forced to move, motion is fluid and precise — no wasted energy. Default resting state appears to be mild dissociation or deep focus.",
     "clothing_style": "Tier 2-3 functional minimalism: dark hoodies (Nyx-brand, military-grade synthetic fabric), charcoal grey or black utilities. Clothing designed for quick removal or concealment of hardware. No branding beyond utilitarian logos. Footwear: matte-finish tactical boots, kept in pristine condition. One consistent accessory: a faded wrist cuff (origin unknown) with worn embroidery — only personal item ever mentioned. The overall effect is someone dressing for operations, not for visibility."
   },
-  "image_prompt": "Specter, 2226 cyberpunk operative, full body portrait. East Asian-dominant mixed heritage: high sharp cheekbones, warm-pale complexion, dark brown eyes with suspected neural augmentation (inconsistent pupil response), black hair with silver temples pulled back severely. Lean ascetic build, 168cm. Dark Nyx-brand tactical hoodie and charcoal utilities. Matte tactical boots, faded embroidered wrist cuff. Faint 3cm scar at left temple, linear burn mark on inner right wrist. Minimal expression, economical posture suggesting deep focus or dissociation. Subtle thermal-masking aesthetic, counter-surveillance operative. Cyberpunk 2200s, minimalist functionality, cool blue-grey neon lighting casting sharp shadows, shielded environment. Mood: presence, precision, ghost-like invisibility. --ar 2:3 --v 6",
+  "image_prompt": "Specter, a 168cm lean-framed figure in GLMZ, luminous golden-amber skin blending East Asian, South Asian, Hispanic, Southeast Asian, and African heritage. High defined cheekbones, sharp jawline, almond-shaped dark eyes with inconsistent pupil response suggesting neural augmentation. Black hair with silver temples pulled back severely. Faint 3cm scar at left temple (neural port). Linear burn mark on inner right wrist. Wearing military-grade Nyx-brand dark hoodie, charcoal utilities, pristine matte-finish tactical boots. Minimal expression, dissociative gaze, economical posture. Faded embroidered wrist cuff. Cold fluorescent lighting in shielded facility or dark interior space. No visible chrome, emphasis on concealed augmentation. Moody, focused, operationally prepared. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 57.1,
-    "Northern European": 25.7,
-    "Hispanic/Latin American": 17.2
+    "East Asian": 42.3,
+    "South Asian": 28.9,
+    "Hispanic/Latin American": 15.9,
+    "Southeast Asian": 6.7,
+    "Sub-Saharan African": 6.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 42.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 28.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 13.3
+      },
+      "South American": {
+        "Peruvian": 2.6
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 6.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 3,
+        "Tanzanian": 1.9
+      },
+      "Central African": {
+        "Congolese": 1.3
+      }
+    }
+  }
 }

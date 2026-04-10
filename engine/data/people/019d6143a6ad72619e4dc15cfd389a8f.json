@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ad72619e4dc15cfd389a8f",
   "type": "character",
-  "name": "Indigo Erikstad-Asomaning",
+  "name": "Indigo Salazar-Khorasani",
   "aliases": [
     "Echoes",
     "Rat-King-Minor"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Blackpipe Corridor, sub-levels beneath Copperhead, near sub-level access near Dearborn and Jackson",
-  "description": "Rashaad Tumelo-Koskinen is nineteen years old and has the kind of energy that fills a tunnel before he enters it. He is short and compact, with medium-brown skin, a wide gap-toothed grin, and ears that have been modified with geneware into something remarkable: larger than baseline, with delicate internal structures visible as subtle ridges beneath the skin, and the ability to tilt and orient like a fennec's. He doesn't try to hide them — they're the most important tool he has. His hair is a wild cloud of tight curls that he refuses to cut because he claims it helps with acoustic dampening of background resonance, which is almost certainly not true but also might be slightly true.\n\nEcho hunters are a Bore Rat tradition with practical roots: someone has to map the sounds of the tunnels, track structural changes by acoustic signature, find water sources by vibration, locate other communities by the echo-fingerprint of their settlements. Rashaad learned from his grandmother, who learned from hers. But where the tradition is usually patient, methodical work, Rashaad treats it like sport. He runs the tunnels, pressing his palms to walls, pressing his ear-tips to pipes, cataloguing resonances in a battered voice-recorder he wears on a cord around his neck. He has found three collapsed chambers the Bore Rat community didn't know existed, a buried pre-Meridian transit car still containing cargo, and what he is increasingly convinced is a second, non-human acoustic presence in the deep tunnels below Sub-Level 11 — a rhythmic pulse he cannot explain.",
+  "description": "Indigo Salazar-Khorasani is nineteen years old and has the kind of energy that fills a tunnel before he enters it. He is short and compact, with medium-brown skin, a wide gap-toothed grin, and ears that have been modified with geneware into something remarkable: larger than baseline, with delicate internal structures visible as subtle ridges beneath the skin, and the ability to tilt and orient like a fennec's. He doesn't try to hide them — they're the most important tool he has. His hair is a wild cloud of tight curls that he refuses to cut because he claims it helps with acoustic dampening of background resonance, which is almost certainly not true but also might be slightly true.\n\nEcho hunters are a Bore Rat tradition with practical roots: someone has to map the sounds of the tunnels, track structural changes by acoustic signature, find water sources by vibration, locate other communities by the echo-fingerprint of their settlements. Rashaad learned from his grandmother, who learned from hers. But where the tradition is usually patient, methodical work, Rashaad treats it like sport. He runs the tunnels, pressing his palms to walls, pressing his ear-tips to pipes, cataloguing resonances in a battered voice-recorder he wears on a cord around his neck. He has found three collapsed chambers the Bore Rat community didn't know existed, a buried pre-Meridian transit car still containing cargo, and what he is increasingly convinced is a second, non-human acoustic presence in the deep tunnels below Sub-Level 11 — a rhythmic pulse he cannot explain.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -175,7 +175,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Blackpipe Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,42 +243,24 @@
     "Copperhead",
     "The Resonance Communion",
     "TESSERA PG-2 'Signature'",
+    "Frequency",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
     "The Human Baseline Alliance",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
     "Bathysphere Networks",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "GLMZ",
+    "Dearborn Forge",
     "The Gradient Compact",
+    "Indigo",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Tibor Osei-Svanstrom",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Bore Rats",
-    "Breck Tannen",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Ilhan Sandstrom-Badu",
-    "Last Word",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sisay Bergqvist-Mallari",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Heritage Vault",
-    "The Packet Rats",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Resonance Chamber",
-    "The Underlayer Collective",
-    "Tsveta Nwosu-Karlsdóttir",
-    "Undertow",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Cargo Tacos",
+    "Frost Boudiaf",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (74.4%) with significant Northern European (9.6%), Middle Eastern (6.8%), and Hispanic/Latin American (5.3%) ancestry; trace Pacific Islander and Eastern European heritage",
+    "heritage": "Genetically diverse with nearly equal contributions from Sub-Saharan African (27.7%), Middle Eastern (24.3%), and Northern European (23.7%) ancestry, balanced by Hispanic/Latin American (21.2%) and trace South Asian (3.1%) heritage; this Ubiquitous Diaspora blend creates a striking phenotype with warm-toned skin, prominent facial structure from African and Middle Eastern lineage, and subtle Northern European and Latin American features that manifest in bone structure and feature blending",
     "height_cm": 163,
     "weight_kg": 58,
     "build": "Compact and wiry with lean muscle from constant tunnel running; chest and shoulders developed from pressing against walls and pipes; core strength evident in posture",
@@ -286,8 +268,8 @@
     "hair_style": "Uncut, deliberately maintained wild cloud of tight curls; no styling beyond occasional finger-combing",
     "hair_length": "Long (shoulder-length when compressed)",
     "eye_color": "Dark brown, alert and constantly moving",
-    "skin_tone": "Rich deep brown with warm undertones from dominant Sub-Saharan African heritage, subtly warmed by Middle Eastern and Hispanic ancestry",
-    "complexion": "Young face with prominent high cheekbones and strong facial structure reflecting African heritage; gap-toothed grin is default expression; skin shows minor scrapes and calluses from tunnel work but generally healthy; no facial hair; slight warm undertone variation across face from mixed ancestry",
+    "skin_tone": "Medium-deep warm brown with golden undertones, reflecting the balanced blend of Sub-Saharan African warmth, Middle Eastern richness, Northern European influence, and Hispanic/Latin American coloration; creates a luminous quality that shifts subtly across the face",
+    "complexion": "Young face with prominent high cheekbones and strong facial structure; features show the synthesis of African prominence and Middle Eastern angularity balanced with Northern European and Latin American characteristics; gap-toothed grin is default expression; skin shows minor scrapes and calluses from tunnel work but generally healthy; no facial hair; warm undertone variation across face shifts subtly with light, creating dimension from the four-way ancestry blend",
     "distinguishing_marks": [
       "Geneware-modified ears: enlarged beyond baseline human proportion, with visible delicate ridge patterns beneath skin surface suggesting internal structural enhancement; ears capable of independent tilting and orientation; ear tissue slightly paler than surrounding skin where modification is most prominent",
       "Callused palms and fingertips from repeated wall-contact during echo mapping",
@@ -297,17 +279,61 @@
     "posture_movement": "Restless and kinetic; rarely still; frequently tilts head to angle ears toward sound sources; moves with a runner's efficiency through spaces; hands gesture expressively when talking; leans in close when listening intently; moves through environments with practiced familiarity suggesting deep spatial memory",
     "clothing_style": "Tier 5 practical wear: reinforced canvas utility pants with multiple pockets (some containing audio equipment); worn thermal underlayer; heavy canvas jacket with reflective patches; sturdy scuffed boots with good traction. Clothing shows regular wear and minor repairs but is well-maintained. Carries frequency analyzer and voice-recorder as constant accessories."
   },
-  "image_prompt": "Indigo Erikstad-Asomaning, 163cm tall wiry figure with rich deep brown skin, tight shoulder-length curls with reddish undertones, dark alert eyes constantly scanning. High prominent cheekbones, gap-toothed grin, youthful animated face. Distinctive geneware-modified ears oversized and orientable with visible internal ridge patterns, slightly paler at modification sites. Left forearm shows small 3cm burn scar. Wearing worn canvas utility jacket with reflective patches, reinforced canvas pants with multiple pockets, scuffed boots. Battered voice-recorder hangs on frayed fabric cord around neck. Hands show callused palms from echo mapping work. Posture restless and kinetic, head tilted to angle ears toward sound. Cyberpunk 2226 tunnel runner aesthetic. Dimly lit underground setting with pipes and metal surfaces. Moody atmospheric lighting with cyan and amber accents. High kinetic energy, focused attentive expression, runner's efficiency. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Salazar-Khorasani, GLMZ, compact wiry figure 163cm tall with lean tunnel-runner muscle. Medium-deep warm brown skin with golden luminous undertones from Sub-Saharan African, Middle Eastern, Northern European, and Hispanic/Latin American ancestry blend. Young face with prominent high cheekbones, strong angular features, gap-toothed grin. Long dark brown hair with reddish undertones in wild shoulder-length tight curls. Dark brown alert eyes. Distinctive enlarged geneware-modified ears with visible internal ridge patterns, slightly paler tissue, tilted in active listening position. Small burn scar on left forearm. Restless kinetic posture, head tilted toward sound. Wearing reinforced canvas utility pants with multiple pockets, worn thermal underlayer, heavy canvas jacket with reflective patches, scuffed boots. Battered voice-recorder on frayed fabric cord around neck. Industrial tunnel setting with moody cyan and amber lighting, pipes and metal surfaces. Neo-noir urban aesthetic, realistic portraiture, candid moment of intense focus --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 74.4,
-    "Northern European": 9.6,
-    "Middle Eastern": 6.8,
-    "Hispanic/Latin American": 5.3,
-    "Eastern European": 2.5,
-    "Pacific Islander": 1.4
+    "Sub-Saharan African": 27.7,
+    "Middle Eastern": 24.3,
+    "Northern European": 23.7,
+    "Hispanic/Latin American": 21.2,
+    "South Asian": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 9.4,
+        "Botswanan": 7.6
+      },
+      "East African": {
+        "Ethiopian": 5.9
+      },
+      "Central African": {
+        "Cameroonian": 4.8
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 24.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 18.6
+      },
+      "British Isles": {
+        "English": 5.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 13.5,
+        "Brazilian": 7.7
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 0.9,
+        "Tamil Sri Lankan": 0.8
+      },
+      "Indian": {
+        "Marathi": 0.2
+      },
+      "Pakistani": {
+        "Sindhi": 1.2
+      }
+    }
+  }
 }

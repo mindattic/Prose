@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e47a54aa5d2795981e8ad4",
   "type": "character",
-  "name": "Beknur Ergashev",
+  "name": "Cipher Magnúsdóttir",
   "aliases": [
     "Daz",
     "Old Daz"
@@ -13,7 +13,7 @@
   "age": 56,
   "status": "active",
   "location": "Lincoln Spear",
-  "description": "Dariusz looks like he was designed as a warning. He is tall, slightly stooped now at fifty-six, with deep-lined dark skin, close-cut silver hair going white at the crown, and eyes so perpetually tired they have taken on a philosophical quality — not bored, but comprehensively unshocked. He has no cosmetic mods and no geneware. He has a retinal information overlay that is Metro standard and a hip replacement he refuses to acknowledge. He dresses in the same rotation of well-maintained dark suits that have been in his wardrobe for fifteen years, and he smells of the same soap he's used since his second wife bought it for him on their anniversary in 2181.\n\nHe has investigated Metro Police internal corruption for nineteen years and this has done specific things to him. He does not romanticize the institution, does not hate it, and does not believe the people in it are substantially different from the people outside it. He has a reputation for being impossible to manipulate and nearly as impossible to work with, because he will follow an investigation to a conclusion even when — especially when — the conclusion is uncomfortable. He is not cruel. He is thorough. He collects small ceramic animals and arranges them on his desk in configurations that subordinates have spent years trying to decode. He has been threatened, transferred, demoted and reinstated twice. He is still here.",
+  "description": "Cipher Magnúsdóttir looks like he was designed as a warning. He is tall, slightly stooped now at fifty-six, with deep-lined dark skin, close-cut silver hair going white at the crown, and eyes so perpetually tired they have taken on a philosophical quality — not bored, but comprehensively unshocked. He has no cosmetic mods and no geneware. He has a retinal information overlay that is Metro standard and a hip replacement he refuses to acknowledge. He dresses in the same rotation of well-maintained dark suits that have been in his wardrobe for fifteen years, and he smells of the same soap he's used since his second wife bought it for him on their anniversary in 2181.\n\nHe has investigated Metro Police internal corruption for nineteen years and this has done specific things to him. He does not romanticize the institution, does not hate it, and does not believe the people in it are substantially different from the people outside it. He has a reputation for being impossible to manipulate and nearly as impossible to work with, because he will follow an investigation to a conclusion even when — especially when — the conclusion is uncomfortable. He is not cruel. He is thorough. He collects small ceramic animals and arranges them on his desk in configurations that subordinates have spent years trying to decode. He has been threatened, transferred, demoted and reinstated twice. He is still here.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -184,7 +184,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lincoln Spear",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -256,25 +256,11 @@
     "Irontide Tidal Energy",
     "Witness",
     "Silver",
-    "Stalker",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Breck Tannen",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Nnamdi Ostrowski-Faletolu",
-    "TESSERA PA-5 'Attendant'",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Pure Hand",
-    "The Undertow",
-    "Yannick Tofauti-Szarvásy"
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Central Asian (50%) with significant Northern European (22.5%), Sub-Saharan African (13.6%), and Hispanic/Latin American (12.6%) ancestry. Genetic blend creates distinctive phenotype: warm deep brown skin tone with subtle olive undertones from Central Asian heritage, refined by African ancestry warmth and Latin American complexity. Facial structure shows Central Asian bone geometry—slightly wider cheekbones, fuller face shape—balanced with Northern European eye placement and brow ridge. Genetic admixture visible in skin undertones: not purely African, not purely European, but a complex warm-bronze that shifts in different lighting.",
+    "heritage": "Complex global admixture: East Asian (25.1%), Middle Eastern (25.0%), Eastern European (16.3%), Northern European (15.2%), Sub-Saharan African (13.6%), Hispanic/Latin American (4.8%). Genetic blend creates distinctive phenotype with warm deep bronze-brown skin tone enriched by golden, olive, and mahogany undertones. Facial structure synthesizes multiple ancestries: prominent East Asian cheekbones and eye placement, refined Middle Eastern nose bridge and brow definition, Northern European eye depth, Eastern European jaw strength, and Sub-Saharan African warmth throughout complexion. Skin undertones shift between burnished bronze, warm olive, and rich mahogany depending on lighting—a visual record of truly global genetic heritage.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Tall and lean with slight forward stoop developed over decades of desk work and exhaustion. Shoulders rounded inward. Still carries underlying frame of disciplined posture underneath the wear.",
@@ -282,8 +268,8 @@
     "hair_style": "Close-cropped, military precision, no styling product",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural. Retinal overlay visible as faint amber grid pattern in low light.",
-    "skin_tone": "Warm deep bronze-brown reflecting Central Asian-African-Hispanic genetic blend. Weathered from fifty-six years and nineteen years of exhaustion. Undertones shift from warm olive to rich mahogany depending on light angle.",
-    "complexion": "Heavily lined face, particularly around eyes and mouth. Deep nasolabial folds. Permanent horizontal creases across forehead. No cosmetic work, no fillers — face reads as a archive of worn decisions. Perpetual shadow of stubble, not groomed but not neglected. Skin texture slightly papery from dehydration and age. Facial structure reflects Central Asian ancestry in cheekbone prominence and jaw width, refined by multi-ancestry genetics into distinctive weathered features.",
+    "skin_tone": "Warm deep bronze-brown with golden, olive, and mahogany undertones reflecting balanced East Asian, Middle Eastern, and Sub-Saharan African heritage. Weathered from fifty-six years of exhaustion. Undertones shift fluidly depending on light angle—cool olive in shadow, burnished gold in warm light, rich mahogany in transition zones.",
+    "complexion": "Heavily lined face with deep nasolabial folds and permanent horizontal creases across forehead. Perpetual shadow of stubble. Papery skin texture from dehydration and age. Facial features reflect multi-ancestry blend: East Asian cheekbone prominence, refined Middle Eastern brow and nose structure, Northern European eye set and depth, Eastern European jaw definition—all unified by warm golden-bronze complexion of the complete genetic mix.",
     "distinguishing_marks": [
       "Network of fine scars across knuckles of both hands — old, faded, likely from pre-Metro years",
       "Thin pale scar along left temple running into hairline — approximately 3cm, surgical or trauma origin unclear",
@@ -293,16 +279,73 @@
     "posture_movement": "Walks with deliberate, measured pace. Slight limp when tired (hip replacement). Sits with spine curved into desk chair as though he and furniture have merged over years. Hands move with precision — no wasted gesture. Eye contact is unflinching and uncomfortable; he does not break gaze first. When thinking, tilts head slightly back and to the left. No nervous habits, no fidgeting.",
     "clothing_style": "Dark suits in rotation of same five designs (charcoal, navy, black variants), tailored fifteen years ago and maintained by a tailor who knows his exact measurements. Suits are well-made but dated — not aspirational, not fashionable. White or light gray dress shirts, no logos. Simple dark ties. Black leather shoes polished to military shine. Wedding ring, gold, worn thin. No jewelry beyond ring and Metro credentials. Entire wardrobe reads as Tier 3 government employee: solid, functional, deliberately unmarked by trend or status signal."
   },
-  "image_prompt": "Beknur Ergashev, 56-year-old Central Asian-African-European-Hispanic mixed heritage man, 188cm tall, lean build with decade-worn posture. Deep warm bronze-brown skin with olive undertones, heavily lined face with nasolabial folds and forehead creases. Silver-white short military-cropped hair. Dark brown eyes with subtle amber retinal overlay grid visible in shadows. Faded scars on knuckles, thin scar along left temple. Wearing charcoal suit tailored 15 years ago, white dress shirt, simple dark tie, polished black leather shoes. Gold wedding ring worn thin. Sitting at desk in low amber-gray GLMZ government office lighting, cyberpunk 2226. Posture curved into furniture from exhaustion. Direct unflinching gaze. No augmentation visible except retinal tech. Deliberate, measured presence. Mood: bureaucratic endurance, worn by system, unbroken. 2200s dystopian government worker aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "A 56-year-old man with warm bronze-brown skin carrying golden and mahogany undertones, reflecting East Asian, Middle Eastern, and Sub-Saharan African heritage. Short silver hair with white at crown in military cut. Dark brown eyes with subtle amber retinal grid visible in shadows. Heavily lined face with deep nasolabial folds, prominent East Asian cheekbones, refined Middle Eastern nose structure, Northern European eye depth, and Eastern European jaw strength. Perpetual five-o'clock shadow. Wearing a charcoal suit, white dress shirt, simple dark tie, polished black leather shoes. Gold wedding ring worn thin. Standing in dimly lit government office, fluorescent overhead lights casting cool shadows across face while warm desk lamp creates burnished gold highlights on skin. Posture shows slight forward stoop, hands at rest with precision. Fine network scars visible on knuckles. Expression impassive, unflinching eye contact. GLMZ 2200s, minimalist augmentation aesthetic, tired determination, 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 50.0,
-    "Northern European": 22.5,
+    "East Asian": 25.1,
+    "Middle Eastern": 25,
+    "Eastern European": 16.3,
+    "Northern European": 15.2,
     "Sub-Saharan African": 13.6,
-    "Hispanic/Latin American": 12.6,
-    "South Asian": 1.3
+    "Hispanic/Latin American": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 2
+      },
+      "Chinese": {
+        "Cantonese": 14.3,
+        "Sichuanese": 0.8
+      },
+      "Japanese": {
+        "Japanese": 8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 8.8,
+        "Iraqi": 16.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 1.9,
+        "Romanian": 1.3
+      },
+      "Slavic West": {
+        "Polish": 5,
+        "Czech": 8.1
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 1.7,
+        "Swiss German": 0.5
+      },
+      "Scandinavian": {
+        "Swedish": 13
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 8.3
+      },
+      "West African": {
+        "Ghanaian": 0.5,
+        "Nigerian": 1
+      },
+      "Southern African": {
+        "Zimbabwean": 3.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.8
+      }
+    }
+  }
 }

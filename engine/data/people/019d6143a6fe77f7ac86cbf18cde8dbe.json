@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fe77f7ac86cbf18cde8dbe",
   "type": "character",
-  "name": "Kai Subramaniam-Halverson",
+  "name": "Kai Amrani-Halverson",
   "aliases": [
     "Tobi Pap",
     "the Book"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Narrows, running between Chatham Flats and Grand Crossing Gate, near Ashland and Division",
-  "description": "Tobi is young in a way that still surprises people when they see the operation he runs — twenty-two with the face of someone seventeen if he's relaxed and thirty if he's working, a long-limbed Igbo-Greek-Hungarian mix with deep brown skin, an expressive mouth that defaults to a salesperson's easy grin, and eyes that are doing financial calculations behind whatever expression he's performing. He keeps his hair grown out into a soft cloud that he touches when thinking, and he has purely cosmetic cat ears in deep amber — a mod he got at sixteen and still maintains because they genuinely help him gauge crowd mood at events (they swivel toward sound, a secondary function the modder threw in for free). He dresses up — always, even when it's unnecessary, because he understood early that clothes are information.\n\nTobi runs numbers for the Chatham Flats syndicate and manages his own secondary book on the side, a fact the syndicate suspects but hasn't confirmed. He is fast — fast with numbers, fast with people, fast with exits — and he has the particular gift of making everyone feel like his most valued client while simultaneously extracting the maximum from them. He is not cynical about this; he genuinely likes people, the way a card player likes cards. He is also genuinely frightened, most of the time, because he is twenty-two and running credit for people who will break his hands if the math goes wrong, and the math going wrong is always one bad fight result away.",
+  "description": "Kai Amrani-Halverson is young in a way that still surprises people when they see the operation he runs — twenty-two with the face of someone seventeen if he's relaxed and thirty if he's working, a long-limbed Igbo-Greek-Hungarian mix with deep brown skin, an expressive mouth that defaults to a salesperson's easy grin, and eyes that are doing financial calculations behind whatever expression he's performing. He keeps his hair grown out into a soft cloud that he touches when thinking, and he has purely cosmetic cat ears in deep amber — a mod he got at sixteen and still maintains because they genuinely help him gauge crowd mood at events (they swivel toward sound, a secondary function the modder threw in for free). He dresses up — always, even when it's unnecessary, because he understood early that clothes are information.\n\nKai Amrani-Halverson runs numbers for the Chatham Flats syndicate and manages his own secondary book on the side, a fact the syndicate suspects but hasn't confirmed. He is fast — fast with numbers, fast with people, fast with exits — and he has the particular gift of making everyone feel like his most valued client while simultaneously extracting the maximum from them. He is not cynical about this; he genuinely likes people, the way a card player likes cards. He is also genuinely frightened, most of the time, because he is twenty-two and running credit for people who will break his hands if the math goes wrong, and the math going wrong is always one bad fight result away.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -192,7 +192,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,38 +250,13 @@
     "Chatham Flats",
     "The Blackout Syndicate",
     "The Narrows Compact",
-    "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pure Hand",
-    "Amygdacet",
-    "Auricula Felis Modification",
-    "Aïssé Dragomirescu-Faalelei",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Corva Lam",
-    "Ezio Kaboré-Malhotra",
-    "Flicker",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lazarus LX-2 'Lab Rat'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Mika Sorel",
-    "NeuralPath CalcCore Arithmetic Co-Processor",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oluwatobi Czerwiński-Faleolo",
-    "Pirjo Asante-Ulukhan",
     "Plot 17",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Slagworks Industrial",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Skinners"
+    "Tessera Corponation",
+    "The Pure Hand"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "South Asian (predominantly Tamil/Telugu with Punjabi influence) and Southeast Asian (Vietnamese/Thai blend); the genetic mixture creates a striking intermediate phenotype — warm brown skin with subtle golden undertones characteristic of the Indian subcontinent meeting the softer facial geometry of Southeast Asia",
+    "heritage": "Kaleidoscopic diaspora blend: Southeast Asian (34.6%) forms the foundational phenotype with soft facial geometry and warm undertones; North African (24.1%) adds sharp definition to the jawline and prominent cheekbone structure; Hispanic/Latin American (22.3%) contributes golden warmth and luminosity throughout the complexion; Northern European (19.0%) provides fine-featured balance and lighter undertones that create subtle complexity in skin depth. The result is a warm medium-to-deep brown with honey-to-amber shifts depending on light — a truly global phenotype that reads as 'everywhere and nowhere' simultaneously.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Long-limbed and lean with minimal muscle definition; the physique of someone who moves constantly but doesn't lift — all angles and nervous energy, built for speed and slipping through crowds rather than standing ground",
@@ -289,8 +264,8 @@
     "hair_style": "Soft, voluminous natural cloud; kept deliberately untamed, often touched unconsciously when concentrating or calculating",
     "hair_length": "Medium (8-10cm when fully grown out)",
     "eye_color": "Deep brown with faint retinal display overlay visible as subtle iridescent shimmer in bright light",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones; the blended result of South Asian and Southeast Asian heritage creating a complexion that shifts subtly between amber and honey depending on light angle",
-    "complexion": "Youthful face with slightly softer cheekbone structure (characteristic of Southeast Asian ancestry) balanced by the defined jawline from South Asian heritage; expressive mouth and bright, calculating eyes; skin clear and well-maintained (grooming is part of his professional presentation); a softness around the eyes that contradicts the calculating sharpness behind them when he's working",
+    "skin_tone": "Warm medium-to-deep brown with honey-to-amber undertones; the luminous complexion shifts subtly with light angle, reflecting the sophisticated blend of Southeast Asian base, North African definition, Latin warmth, and Northern European fine detailing",
+    "complexion": "Youthful face with balanced structure — soft cheekbone geometry (Southeast Asian influence) counterbalanced by sharp, defined jawline (North African and Latin heritage); fine features with slight width through the face (Northern European trace); expressive mouth and bright, calculating eyes; skin clear and well-maintained; a softness around the eyes that contradicts the calculating sharpness behind them when working",
     "distinguishing_marks": [
       "Cosmetic amber cat ears mounted subdermal at temples, fully articulated and sound-reactive; they swivel independently toward noise sources",
       "Faint scar tissue along left inner wrist from early implant installation (subdermal quick-calc), barely visible but noticeable up close"
@@ -299,14 +274,54 @@
     "posture_movement": "Constantly in motion — fidgeting, weight shifting, fingers moving through rapid counting gestures even when empty-handed. When relaxed, he appears seventeen: slouched, open-faced, boyish. When working, his spine straightens, his expression hardens into focused calculation, and he appears five to ten years older. His movements are fluid and economical; he never wastes motion but creates the impression of casual ease.",
     "clothing_style": "High-tier Chatham Flats casual: tailored but not formal. Recent Φ2,400-3,200 investment pieces — smart-fabric shirts that shift subtle iridescence, fitted synthlinen slacks in charcoal or deep blue, vintage leather blazers from early-2200s stock (a status marker in the Narrows). Always wears a chain bracelet of mixed metals (gold, silver, chrome) — a gift from his first major score, never removed. Shoes are always pristine: current rotation is high-end synth-leather street runners in black or deep gray. The overall effect is carefully curated to signal: young, successful, trustworthy, and smart enough to know how much to spend without looking desperate."
   },
-  "image_prompt": "Kai Subramaniam-Halverson, 183cm lean cyberpunk hacker in mid-2220s, warm golden-brown South Asian-Southeast Asian complexion, natural dark brown voluminous hair, deep brown eyes with subtle retinal display shimmer, articulated amber cat ears mounted at temples swiveling alertly. Wearing tailored smart-fabric iridescent shirt, charcoal synthlinen slacks, vintage early-2200s leather blazer, pristine black synth-leather runners, mixed-metal chain bracelet. Boyish relaxed posture transitioning to sharp calculating focus, fidgeting hands, nervous energy barely contained. High-end Narrows aesthetic, Great Lakes Metropolitan Zone neon-lit evening, moody cyan and amber ambient lighting catching skin tone warmth and ear luminescence, sitting at sleek terminal workstation, professional but youthful and approachable, cyberpunk 2226 --ar 2:3 --v 6",
+  "image_prompt": "Kai Amrani-Halverson, 183cm tall lean neo-noir figure with warm medium-deep brown skin with honey-amber undertones, soft Southeast Asian facial geometry balanced with sharp North African jawline definition, expressive deep brown eyes with faint retinal display shimmer, natural dark brown voluminous cloud hair with reddish undertone. Articulated amber cat ears mounted at temples, sound-reactive and swiveling. Wearing tailored smart-fabric shirt with subtle iridescence, charcoal synthlinen slacks, vintage early-2200s leather blazer, pristine black synth-leather runners, mixed-metal chain bracelet. Fidgeting posture with nervous energy, fingers making rapid counting gestures, boyish open expression. Chatham Flats setting, neon-lit urban environment, GLMZ Great Lakes Metropolitan Zone, moody evening lighting with accent light catching iridescent details and cat ear articulation, confident young hacker aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 46.9,
-    "South Asian": 45.8,
-    "East Asian": 7.3
+    "Southeast Asian": 34.6,
+    "North African": 24.1,
+    "Hispanic/Latin American": 22.3,
+    "Northern European": 19
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 5.6,
+        "Bicolano": 0.5
+      },
+      "Cambodian": {
+        "Khmer": 24.9
+      },
+      "Vietnamese": {
+        "Vietnamese": 3.6
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 12
+      },
+      "Amazigh": {
+        "Berber": 12.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 10.2
+      },
+      "Central American": {
+        "Guatemalan": 10.6,
+        "Salvadoran": 1.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 7.4
+      },
+      "Scandinavian": {
+        "Swedish": 11.6
+      }
+    }
+  }
 }

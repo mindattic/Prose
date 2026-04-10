@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6587b8ca19e5b6b113f39d2",
   "type": "character",
-  "name": "Zephyr Masoe-Kristjánsson",
+  "name": "Zephyr Trujillo-Novotný",
   "aliases": [
     "Mik",
     "Barber Mik"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Narrows, Calumet Rise edge, transit shelter B-14, near North Ave and Milwaukee",
-  "description": "Mikael is compact and precise in their movements, the kind of person who never knocks anything over and whose workspace is always exactly as arranged. They are Guinean and Ukrainian by a generation's remove — their mother's dark skin and their father's pale Baltic coloring met in them to produce something warm and olive, with deep brown eyes that carry a faint natural luminescence from a geneware treatment they got a decade ago and have never stopped loving. Their own hair is extraordinary: they change the color weekly using pigment-shifting geneware, and it currently runs from midnight black at the roots to a saturated coral at the tips. They dress in clean, minimal clothes that would not look out of place in Tier 3 if not for the strategic patching at the knees.\n\nTransit shelter B-14 was decommissioned nine years ago when Ferrogate rerouted the Calumet spur, and Mikael moved in six months later with a salvaged chair, a folding table, a UV sterilizer, and no license they did not eventually obtain through creative persistence. The shop is famous in a three-block radius as a place where the cut is always precise and the conversation is always optional. Mikael listens with a quality of attention that is rarer than most people recognize — they do not offer advice, do not judge, do not share what they hear. They are a confession booth with good acoustics and sharp scissors.",
+  "description": "Zephyr Trujillo-Novotný is compact and precise in their movements, the kind of person who never knocks anything over and whose workspace is always exactly as arranged. They are Guinean and Ukrainian by a generation's remove — their mother's dark skin and their father's pale Baltic coloring met in them to produce something warm and olive, with deep brown eyes that carry a faint natural luminescence from a geneware treatment they got a decade ago and have never stopped loving. Their own hair is extraordinary: they change the color weekly using pigment-shifting geneware, and it currently runs from midnight black at the roots to a saturated coral at the tips. They dress in clean, minimal clothes that would not look out of place in Tier 3 if not for the strategic patching at the knees.\n\nTransit shelter B-14 was decommissioned nine years ago when Ferrogate rerouted the Calumet spur, and Zephyr Trujillo-Novotný moved in six months later with a salvaged chair, a folding table, a UV sterilizer, and no license they did not eventually obtain through creative persistence. The shop is famous in a three-block radius as a place where the cut is always precise and the conversation is always optional. Zephyr Trujillo-Novotný listens with a quality of attention that is rarer than most people recognize — they do not offer advice, do not judge, do not share what they hear. They are a confession booth with good acoustics and sharp scissors.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -186,7 +186,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,38 +236,18 @@
     "Calumet Rise",
     "The Narrows Compact",
     "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "Midnight Gyros",
     "The Gradient Compact",
     "Arcturus Defense Solutions Particle Lance PL-4 'Scalpel'",
-    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
-    "The Pale Mile",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
     "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus EC-4 'Companion'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Tessera Corponation",
-    "Tessera Industries Sensory Overload Grenade SOG-3 'Flashbang Plus'",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Skinners",
-    "Tooth Fairy",
-    "VitaCore ClearCourse Addiction Suppressor",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
+    "Compass Rose",
+    "The Pale Mile",
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Cosmopolitan blend: Northern European (31.5%, Scandinavian-Baltic baseline), Pacific Islander (25.3%, warm undertones and bone structure), East Asian (15.9%, subtle facial geometry), Hispanic/Latin American (11.3%, warmth and texture), Sub-Saharan African (9.7%, depth and richness), Southeast Asian (6.3%, refinement of features). The result is a warm, balanced complexion that reads as genuinely multicontinental rather than any single region.",
+    "heritage": "Ubiquitous blend reflecting the Diaspora: Hispanic/Latin American (49.0%, dominant warmth and bone structure), Eastern European (32.5%, fair undertones and angular refinement), South Asian (5.8%, subtle depth to complexion), East Asian (5.4%, gentle geometry in facial features), Sub-Saharan African (3.8%, richness in skin depth), Southeast Asian (3.5%, refinement of features). The result is a warm, balanced complexion that reads as genuinely multicontinental—Latin American warmth tempered by Eastern European fairness, with subtle Asian and African depth creating genuine equilibrium rather than any single regional dominance.",
     "height_cm": 163,
     "weight_kg": 58,
     "build": "Compact and wiry, economical in frame with visible lean muscle in forearms and shoulders from years of precise handwork. No excess movement, no wasted space.",
@@ -275,8 +255,8 @@
     "hair_style": "Shoulder-length, layered and meticulously maintained, often pulled back with a single clip during work",
     "hair_length": "Medium",
     "eye_color": "Deep brown with faint natural amber bioluminescence, most visible in low-light conditions",
-    "skin_tone": "Warm caramel-bronze complexion with subtle golden undertones, reflecting the blend of Pacific Islander warmth, Southeast Asian refinement, Northern European fairness, and Sub-Saharan depth. Neither pale nor dark, but richly balanced—skin that catches light with a subtle glow.",
-    "complexion": "Clean-shaven or minimally groomed, skin well-maintained and unblemished except for two thin scars along the left cheekbone (old, faded). Facial structure shows balanced ancestry: moderate cheekbones with gentle prominence, straight nose with slightly broader bridge suggesting Pacific Islander and East Asian heritage, full but defined jawline. Expression is neutral-to-observant, eyes rarely leave their work.",
+    "skin_tone": "Warm golden-bronze complexion with subtle olive undertones, reflecting the dominant Hispanic/Latin American ancestry blended with Eastern European fairness and enriched by South and East Asian heritage. Medium depth with golden luminosity—skin that catches light with warm radiance.",
+    "complexion": "Clean-shaven or minimally groomed, skin well-maintained and unblemished except for two thin scars along the left cheekbone (old, faded). Facial structure shows balanced Latin American and Eastern European features: moderate cheekbones with gentle prominence, straight nose with slightly defined bridge, full but defined jawline with subtle warmth from South Asian and African heritage depth. Expression is neutral-to-observant, eyes rarely leave their work.",
     "distinguishing_marks": [
       "Two parallel surgical scars along left cheekbone, each approximately 3cm, very faint from age and skilled healing",
       "Faint hairline tattoo along both wrists marking the surgical insertion points of steady-hand implants — thin black lines, deliberate and precise"
@@ -285,17 +265,63 @@
     "posture_movement": "Stands with shoulders relaxed but spine straight, economy of motion in all gestures. Hands are always still when not working, and move with surgical precision during cuts. They do not fidget. When listening, they maintain steady eye contact but never hold a stare long enough to unsettle. Their gait is quiet and measured.",
     "clothing_style": "Clean, minimal aesthetic verging on ascetic — simple fitted pants (usually black or dark gray), long-sleeved shirts in neutral tones, open work aprons with multiple pockets. Strategic patching at the knees in contrasting thread (sometimes deliberate, sometimes functional repair). No jewelry except a thin steel ring on the left ring finger. Footwear is practical and worn but well-maintained. The overall impression is Tier 3-4 working class with a hint of intentional restraint — someone who could afford more but chooses not to."
   },
-  "image_prompt": "Zephyr Masoe-Kristjánsson, 2226 cyberpunk: compact 163cm figure with warm caramel-bronze skin and balanced multicontinental features. Shoulder-length black-to-coral gradient hair pulled back with precision. Deep brown eyes with subtle amber bioluminescence glowing faintly in dim light. Wearing minimal aesthetic: fitted black pants, neutral long-sleeved shirt, open work apron, well-worn practical boots with deliberate knee patches. Faint surgical scars visible on left cheekbone, hairline wrist scars marking steady-hand implant insertion. Posture perfectly aligned, hands still and composed. Standing in neon-lit workshop or sterile clinic setting, cool blue-green overhead lighting catching the golden undertones of skin and the bioluminescent glow of augmented eyes. Expression neutral and observant, focused. Cyberpunk 2200s aesthetic, working-class precision, technological subtlety over flash. --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Trujillo-Novotný, 163cm compact frame with wiry lean muscle, warm golden-bronze skin with subtle olive undertones reflecting Latin American, Eastern European, South Asian, East Asian, and African heritage blend. Shoulder-length hair with midnight black roots fading to saturated coral tips, meticulously layered. Deep brown eyes with subtle amber bioluminescence in dim light. Two faint parallel scars along left cheekbone. Minimal facial hair, neutral observant expression. Wearing simple black fitted pants, neutral long-sleeved shirt, open work apron with multiple pockets, worn practical footwear, thin steel ring on left ring finger. Hairline tattoos visible at both wrists marking steady-hand implant insertion points. Standing with relaxed shoulders and straight spine, still hands, quiet measured presence. GLMZ Great Lakes Metropolitan Zone setting, industrial workshop or precision work environment, warm ambient lighting catching the golden luminosity of skin and subtle bioluminescence of eyes, moody atmospheric depth, professional precision-worker aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 31.5,
-    "Pacific Islander": 25.3,
-    "East Asian": 15.9,
-    "Hispanic/Latin American": 11.3,
-    "Sub-Saharan African": 9.7,
-    "Southeast Asian": 6.3
+    "Hispanic/Latin American": 49,
+    "Eastern European": 32.5,
+    "South Asian": 5.8,
+    "East Asian": 5.4,
+    "Sub-Saharan African": 3.8,
+    "Southeast Asian": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 49
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 14.2,
+        "Czech": 2.3
+      },
+      "Slavic South": {
+        "Bulgarian": 16
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 5.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.3
+      },
+      "Chinese": {
+        "Mandarin Northern": 1.2,
+        "Fujianese": 0.6
+      },
+      "Korean": {
+        "Korean": 1.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 3.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.4
+      },
+      "Laotian": {
+        "Laotian": 1.1
+      }
+    }
+  }
 }

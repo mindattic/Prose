@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67277a58e6e2a15dcb9c5f0",
   "type": "character",
-  "name": "Nyx Lindström-Montalvo",
+  "name": "Nyx Najjar-Khorasani",
   "aliases": [
     "Nzu",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Bay View Docks, GLMZ, near Michigan Ave South and Cermak",
-  "description": "Nzubechukwu is a broad-shouldered man whose body carries the evidence of three decades of physical labor — thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything — the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
+  "description": "Nyx Najjar-Khorasani is a broad-shouldered man whose body carries the evidence of three decades of physical labor — thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything — the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -155,7 +155,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bay View Docks",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,39 +175,18 @@
     "Ferrogate Transit",
     "Bay View Docks",
     "TESSERA Widow Mk. III",
-    "GLMZ",
     "The CEO",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "The Pure Hand",
+    "The Accidental",
+    "Patience",
     "Silver",
+    "The Pure Hand",
     "Slagworks Industrial",
-    "Crane",
     "Déjà Vu",
-    "Anatoliy Faye-Nkrumah",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Brewer's Spine",
-    "Chronicle",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Grand Corridor",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Lowline Press",
-    "MERIDIAN",
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "Tenderloin",
-    "The Collective",
-    "The Ledger",
-    "The Undertow",
-    "The Wire Taps"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Southeast Asian (51.1%) with significant Pacific Islander ancestry (24.6%), combined with Hispanic/Latin American (16.6%), Northern European (4.1%), and Sub-Saharan African (3.6%) heritage—a striking multi-continental blend reflected in warm golden-brown skin tones with subtle olive undertones",
+    "heritage": "Middle Eastern (44.4%) and North African (25.4%) ancestry forms the primary genetic foundation, combined with Hispanic/Latin American (17.3%) and Sub-Saharan African (12.9%) heritage—a striking multi-continental blend. The result is warm olive-bronze skin with golden undertones characteristic of Levantine and Maghrebi regions, enriched by warmer amber tones from Latin American ancestry and deeper warmth from Sub-Saharan African genetics, creating a complex burnished complexion unique to this particular genetic mosaic.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and barrel-chested with the dense musculature of three decades of dock work; forearms and hands are thick-knuckled and scarred from manual labor; slight forward lean to his posture from spinal fusion",
@@ -215,8 +194,8 @@
     "hair_style": "Tight locs, shoulder-length, pinned back with a carved bone toggle",
     "hair_length": "Long",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with weathered patina from years of sun exposure on the water; undertones reflecting Southeast Asian and Pacific Islander heritage blend with subtle olive hints from Hispanic ancestry",
-    "complexion": "Weathered face with moderate bone structure softened by ancestral blending; deep-set eyes; numerous fine lines around mouth and eyes from squinting into Lake Michigan winds; calloused, rope-scarred hands; salt-and-pepper stubble on jawline most days",
+    "skin_tone": "Warm olive-bronze with weathered patina from years of sun exposure on the water; complex undertone blending Levantine olive, North African amber, Hispanic golden warmth, and Sub-Saharan African richness into a unified burnished bronze",
+    "complexion": "Weathered face with strong angular bone structure balancing Levantine features with softened edges from multi-continental heritage; deep-set dark eyes; prominent brow ridge; aquiline nose with moderate width reflecting the blend of Middle Eastern and broader ancestry; numerous fine lines around mouth and eyes from squinting into Lake Michigan winds; calloused, rope-scarred hands; salt-and-pepper stubble on jawline most days",
     "distinguishing_marks": [
       "Faint surgical scar along the spine (visible when shirtless), approximately 12cm in length along L4-L5 vertebrae from crane accident fusion",
       "Network of thin white scars across both knuckles and dorsum of hands from decades of dock work",
@@ -227,16 +206,56 @@
     "posture_movement": "Deliberate and economical in movement; walks with a slight forward cant due to spinal fusion; moves with the careful precision of a man managing chronic pain; settles into stillness rather than fidgeting; nods slowly when listening; speaks with long measured pauses; hands stay relatively still when not making a specific point",
     "clothing_style": "Worn Ferrogate Transit coveralls (Tier 3-4 workwear, faded navy blue with company patch deliberately scratched out and replaced with a hand-stitched wave emblem in white thread); thermal undershirt beneath; steel-toed work boots scuffed and resoled multiple times; brass union pin on coverall chest; wool watch cap (charcoal) worn most mornings; no jewelry except grandfather's bone toggle in hair and a simple steel wedding band"
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Nyx Lindström-Montalvo, a 188cm dock worker in his fifties with Southeast Asian and Pacific Islander heritage evident in warm golden-brown skin with weathered sun patina. Black locs with silver streaking, shoulder-length, pinned back with carved bone toggle. Deep-set dark brown eyes, pronounced weathered features with fine lines from decades of Lake Michigan wind exposure. Broad barrel-chest visible beneath faded Ferrogate Transit navy coveralls with hand-stitched white wave emblem, thermal undershirt, brass union pin. Calloused hands and forearms marked with white rope-burn scars and work scars. Steel-toed boots, charcoal wool watch cap. Subtle metallic ridge along spine from fusion implant visible when leaning forward. Subdermal contact patch on left forearm barely catching light. Deliberate posture with slight forward cant. Dock setting with industrial Great Lakes background, cool morning light, weathered and utilitarian aesthetic, no cosmetic augmentations, functional only. --ar 2:3 --v 6",
+  "image_prompt": "Nyx Najjar-Khorasani, a weathered 188cm dock worker in his sixties with burnished olive-bronze skin reflecting Middle Eastern, North African, Latin American, and Sub-Saharan African heritage. Black hair with silver streaks pulled into shoulder-length locs pinned with a carved bone toggle. Deep-set dark brown eyes, strong angular features, aquiline nose. Wearing faded navy Ferrogate Transit coveralls with hand-stitched white wave emblem, brass union pin, thermal undershirt, scuffed steel-toed boots. Hands scarred and calloused from decades of labor. Moves with deliberate precision, slight forward cant from spinal fusion. Subtle metallic ridge visible along spine. Setting: Great Lakes Metropolitan Zone dockside, late afternoon light catching rope-scarred forearms and subdermal contact patch on left arm. GLMZ, gritty industrial atmosphere, weathered and functional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 51.1,
-    "Pacific Islander": 24.6,
-    "Hispanic/Latin American": 16.6,
-    "Northern European": 4.1,
-    "Sub-Saharan African": 3.6
+    "Middle Eastern": 44.4,
+    "North African": 25.4,
+    "Hispanic/Latin American": 17.3,
+    "Sub-Saharan African": 12.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 17.3
+      },
+      "Arab Gulf": {
+        "Yemeni": 11,
+        "Kuwaiti": 16.1
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 7.9
+      },
+      "Maghreb": {
+        "Moroccan": 1.8,
+        "Algerian": 0.1
+      },
+      "Nile Valley": {
+        "Sudanese": 15.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 17.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 5.2
+      },
+      "West African": {
+        "Ghanaian": 0.1,
+        "Senegalese": 0.6
+      },
+      "Central African": {
+        "Congolese": 3.1,
+        "Cameroonian": 3.9
+      }
+    }
+  }
 }

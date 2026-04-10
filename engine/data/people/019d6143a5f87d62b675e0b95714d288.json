@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f87d62b675e0b95714d288",
   "type": "character",
-  "name": "Kira Hinojosa",
+  "name": "Kira Raghavan",
   "aliases": [
     "Dulce the Dig",
     "D"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Shelf, Iron Bend, near Western and Division",
-  "description": "Dulce is compact and always in motion — hands sorting, eyes moving, weight shifting from foot to foot like they're perpetually about to leave and perpetually deciding to stay a moment longer. They have warm brown skin dusted with machine oil that never fully washes out, and they've had their irises modded to display a soft rotating amber pattern — not for aesthetics, they'll insist, but because the magnification function built into the mod helps them assess components quickly. Their hair is kept close on the sides and loose on top, usually tucked under a battered Arcturus surplus cap they claim to have pulled from a scrap pile (probably true). A retractable data-spike sits behind their right ear like a utilitarian earring.\n\nDulce has the particular confidence of someone who knows the value of things no one else bothers to look at closely. They can identify a component's manufacture decade, likely origin corponation, and current gray-market value in about fifteen seconds of handling. What they lack is patience for people who haggle without knowing what they're haggling about — they'll educate you once, briefly, and if you keep playing dumb they'll simply box the item back up and turn away. They are not unkind but they have no interest in performing warmth for people who don't deserve it.",
+  "description": "Kira Raghavan is compact and always in motion — hands sorting, eyes moving, weight shifting from foot to foot like they're perpetually about to leave and perpetually deciding to stay a moment longer. They have warm brown skin dusted with machine oil that never fully washes out, and they've had their irises modded to display a soft rotating amber pattern — not for aesthetics, they'll insist, but because the magnification function built into the mod helps them assess components quickly. Their hair is kept close on the sides and loose on top, usually tucked under a battered Arcturus surplus cap they claim to have pulled from a scrap pile (probably true). A retractable data-spike sits behind their right ear like a utilitarian earring.\n\nKira Raghavan has the particular confidence of someone who knows the value of things no one else bothers to look at closely. They can identify a component's manufacture decade, likely origin corponation, and current gray-market value in about fifteen seconds of handling. What they lack is patience for people who haggle without knowing what they're haggling about — they'll educate you once, briefly, and if you keep playing dumb they'll simply box the item back up and turn away. They are not unkind but they have no interest in performing warmth for people who don't deserve it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -191,7 +191,7 @@
     "Hustler": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,33 +238,22 @@
   "registered_firearms": [],
   "related_entities": [
     "Ferrogate Transit",
-    "The Shelf",
     "Iron Bend",
+    "The Shelf",
     "Arcturus Defense Solutions",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
+    "GLMZ",
     "The Gradient Compact",
     "Irontide Tidal Energy",
     "SynapTech IrisBloom Ocular Color Modulator",
+    "Origin",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Tin Man",
-    "Iron",
-    "Alper Lebedev-Tutu",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Ilhan Sandstrom-Badu",
-    "Piper",
-    "Sable",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Tessera Corponation",
-    "The Scrap Barons",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Iron"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian, Hispanic/Latin American, and South Asian blend; the combination creates warm, honey-toned skin with subtle undertones reflecting the diverse genetic heritage. Facial structure shows influence from all three ancestry groups — defined cheekbones with slightly broader face structure, almond-shaped eyes characteristic of East Asian ancestry combined with fuller features typical of Hispanic/Latin American genetics, with refined bone structure from South Asian heritage.",
+    "heritage": "South Asian (62.5%), Sub-Saharan African (25.4%), with lesser contributions from Hispanic/Latin American (4.9%), Central Asian (4.5%), and Indigenous American (2.7%) ancestry. The combination creates deep warm brown skin with complex undertones — rich earth tones from South Asian heritage, deepened and warmed by Sub-Saharan African ancestry, creating a luminous, multi-layered complexion. Facial structure reflects this blend: defined cheekbones and refined bone structure characteristic of South Asian heritage, with broader face structure and fuller features from Sub-Saharan African genetics, creating striking angular-yet-rounded proportions.",
     "height_cm": 163,
     "weight_kg": 58,
     "build": "Compact and wiry with lean musculature from constant movement and salvage work; shoulders slightly squared from repetitive handling and lifting. No excess mass — economy of form.",
@@ -272,8 +261,8 @@
     "hair_style": "Fade on sides, longer textured crown; typically concealed under a weathered Arcturus surplus cap with frayed stitching",
     "hair_length": "Short on sides, medium on top",
     "eye_color": "Amber with soft rotating luminescent pattern (iris mod); natural warm brown iris underneath",
-    "skin_tone": "Warm honey-brown, a luminous blend of East Asian, Hispanic/Latin American, and South Asian heritage; rich golden undertones that catch light distinctly",
-    "complexion": "Face lean and angular with defined cheekbones and refined structure; skin weathered by exposure and constant low-level machine oil exposure that creates a persistent subtle sheen. Minimal grooming — functional rather than aesthetic. Callused knuckles and fingertips visibly reinforced with pale subdermal plating.",
+    "skin_tone": "Deep warm brown with rich golden and copper undertones from the South Asian and Sub-Saharan African blend; luminous and catches light with distinctive warmth, showing the complexity of multiple heritage layers",
+    "complexion": "Face lean and angular with defined cheekbones and refined bone structure showing South Asian influence, balanced by slightly fuller face proportions from Sub-Saharan African heritage; skin weathered by exposure and constant low-level machine oil exposure that creates a persistent subtle sheen. Minimal grooming — functional rather than aesthetic. Callused knuckles and fingertips visibly reinforced with pale subdermal plating.",
     "distinguishing_marks": [
       "Thin horizontal scar across the back of right hand, approximately 3cm, from a sheet metal edge during early salvage work",
       "Machine oil stains permanent in skin creases of palms and under fingernails despite regular cleaning attempts",
@@ -283,14 +272,59 @@
     "posture_movement": "Perpetually kinetic — weight shifting between feet, hands in constant subtle motion even at rest. Movements economical and precise; reaches and grabs with practiced efficiency. Tends to stand at 45-degree angles rather than square-on, poised as if ready to pivot away. When examining components, goes completely still with intense focus.",
     "clothing_style": "Tier 4 utilitarian scrap-worker aesthetic. Worn Arcturus surplus cap (faded grey canvas, frayed). Layered oversized grey workshirt with oil-stained cuffs and multiple deep pockets, worn open over a fitted black undershirt. Cargo pants in faded charcoal with reinforced seams and numerous patch pockets containing tools and components. Worn composite-toe work boots with makeshift repairs. Fingerless work gloves often hanging from back pocket or tucked into waistband. No jewelry beyond functional accessories — data-spike and occasionally a magnetic cable tied to belt loop."
   },
-  "image_prompt": "Kira Hinojosa, petite and wiry salvage worker, 163cm tall, wearing weathered Arcturus surplus grey cap and oil-stained grey workshirt layered over black undershirt. Honey-brown skin with East Asian and Hispanic/Latin American and South Asian heritage features, lean angular face with defined cheekbones. Augmented amber rotating irises with magnification function, visibly cybernetic. Subdermal finger plating on callused hands. Perpetually kinetic posture, weight shifted, 45-degree stance. Faded charcoal cargo pants with patch pockets, worn composite-toe work boots. Fingerless work gloves tucked at waistband. Scars on right hand, faint chemical burns on left forearm visible. Oil stains persistent in skin creases. Cyberpunk 2226 GLMZ scrapyard setting, cool industrial lighting casting shadows on weathered face, examining salvaged components with intense focus, gritty urban dystopian atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Kira Raghavan, 163cm tall scrap salvager in GLMZ 2226, compact wiry build with deep warm brown skin showing golden and copper undertones from South Asian-Sub-Saharan African heritage blend. Angular face with defined cheekbones and fuller proportions, weathered complexion with machine oil sheen. Amber rotating luminescent iris mods with visible magnification focus. Short dark hair on sides, textured longer crown, mostly hidden under faded grey Arcturus surplus cap with frayed stitching. Wearing oversized oil-stained grey workshirt over fitted black undershirt, faded charcoal cargo pants with reinforced seams, worn composite-toe work boots. Fingerless work gloves at waist. Subdermal pale plating visible on callused fingertips. Thin scar on right hand, faint chemical burn marks on left forearm. Perpetually kinetic posture, weight shifted, hands in subtle motion. Standing at 45-degree angle, poised and ready. Neon-lit salvage yard at dusk with scattered metal components and warm atmospheric haze. Intense focused mood, surrounded by tech debris and dim industrial lighting. Neo-noir gritty realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 43.2,
-    "Hispanic/Latin American": 40.1,
-    "South Asian": 16.7
+    "South Asian": 62.5,
+    "Sub-Saharan African": 25.4,
+    "Hispanic/Latin American": 4.9,
+    "Central Asian": 4.5,
+    "Indigenous American": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 62.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 6.6,
+        "Cameroonian": 3.1
+      },
+      "Southern African": {
+        "South African": 4.4,
+        "Botswanan": 6.4
+      },
+      "East African": {
+        "Kenyan": 4.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.9
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Uzbek": 3.9
+      },
+      "Mongolic": {
+        "Buryat": 0.2,
+        "Mongolian": 0.4
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 0.4
+      },
+      "Andean": {
+        "Mapuche": 1.6,
+        "Quechua": 0.7
+      }
+    }
+  }
 }

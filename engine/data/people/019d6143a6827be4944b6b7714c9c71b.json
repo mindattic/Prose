@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6827be4944b6b7714c9c71b",
   "type": "character",
-  "name": "Erik Magnúsdóttir",
+  "name": "Alejandro Arredondo",
   "aliases": [
     "Tobi",
     "The Fixer"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "The Narrows, beneath Ferrogate Transit overpass junction 14-C, near North Ave and Milwaukee",
-  "description": "Oluwatobi is a broad-shouldered man with deep umber skin that carries the scattered shine of old bioluminescent ink — a cosmetic mod from his twenties that has faded unevenly, leaving constellations of dim gold light across his forearms and collarbone. His hair is close-cropped and salted at the temples, and he wears magnifying lenses that flip down over his eyes during procedures, giving him the look of a very calm insect. He smells perpetually of antiseptic and bitter karité tea. His hands are impossibly steady.\n\nTobi trained two years of a proper surgical residency at Aurochs Medical Complex before a licensing dispute with Helix Biosystems — they claimed he used proprietary gene-threading techniques without a corporate contract — ended his formal career. He does not speak of this with bitterness anymore, at least not where anyone can hear. He is meticulous, unhurried, and prone to explaining exactly what he is doing and why, as though every patient is also a student. He charges what people can pay and writes the rest off in a ledger he keeps but never balances.",
+  "description": "Alejandro Arredondo is a broad-shouldered man with deep umber skin that carries the scattered shine of old bioluminescent ink — a cosmetic mod from his twenties that has faded unevenly, leaving constellations of dim gold light across his forearms and collarbone. His hair is close-cropped and salted at the temples, and he wears magnifying lenses that flip down over his eyes during procedures, giving him the look of a very calm insect. He smells perpetually of antiseptic and bitter karité tea. His hands are impossibly steady.\n\nTobi trained two years of a proper surgical residency at Aurochs Medical Complex before a licensing dispute with Helix Biosystems — they claimed he used proprietary gene-threading techniques without a corporate contract — ended his formal career. He does not speak of this with bitterness anymore, at least not where anyone can hear. He is meticulous, unhurried, and prone to explaining exactly what he is doing and why, as though every patient is also a student. He charges what people can pay and writes the rest off in a ledger he keeps but never balances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -166,7 +166,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -215,36 +215,19 @@
   "registered_firearms": [],
   "related_entities": [
     "Aurochs Medical Complex",
-    "Helix Biosystems",
     "Ferrogate Transit",
+    "Helix Biosystems",
     "The Narrows Compact",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Adaeze Chen-Hawkins",
+    "Haze Johansson",
     "The Pure Hand",
-    "Gold",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Highland Park Autonomous Zone",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Ngaire Rojas-Yeboah",
-    "Oluwatobi Czerwiński-Faleolo",
-    "Réginald Asomaning-Čabarkapa",
-    "Serafin",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Narrows",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore SteadyField Precision Motor Implant",
-    "West Town Upside"
+    "Compass Rose",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European / Middle Eastern / East Asian blend with Sub-Saharan African undertones. A striking pan-diaspora mix reflecting the Ubiquitous Diaspora—primarily Scandinavian and Levantine ancestry with secondary East and Southeast Asian heritage creating distinct phenotypic layering",
+    "heritage": "Hispanic/Latin American foundation (60.8%) with substantial East Asian (20.2%) and Central Asian (19.0%) ancestry. A striking Ubiquitous Diaspora mix—primarily Spanish and indigenous Mesoamerican heritage blended with significant Han Chinese and Mongolian ancestry, creating distinct phenotypic layering. The combination manifests as strong cheekbone prominence and slightly flattened nasal bridge from East/Central Asian ancestry, balanced against broader facial structure from Mesoamerican heritage. Subtle epicanthic fold presence evident in eye shape.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and thickset through the chest and upper back, with the density of someone who has done manual work most of his life. His frame has softened slightly with age but retains functional strength; his hands and forearms are disproportionately muscular from decades of precision surgical work.",
@@ -252,8 +235,8 @@
     "hair_style": "Close-cropped, military-neat, no styling product",
     "hair_length": "Short",
     "eye_color": "Dark brown with warm undertone; pupils often dilated behind the flip-down magnifying lenses he wears",
-    "skin_tone": "Warm tan-olive with golden undertones—a natural result of Northern European baseline warmed by significant Middle Eastern heritage and subtle Sub-Saharan depth. The complexion reads neither pale nor deep, but luminous and sun-weathered",
-    "complexion": "Well-maintained but weathered by chemical exposure and years of close work under harsh clinic lighting. Fine creases around the eyes and mouth suggest more smiling than scowling. Clean-shaven daily, methodical grooming as a form of professional ritual. Faint chemical smell lingers on the skin. Subtle warmth across the cheekbones and bridge of nose reflecting Middle Eastern heritage structure; slight epicanthic fold presence from East Asian ancestry barely perceptible but evident in eye shape",
+    "skin_tone": "Warm bronze-olive with golden undertones—a luminous blend reflecting deep Hispanic/Mesoamerican baseline enriched by East and Central Asian heritage. The complexion reads sun-weathered and richly warm throughout, neither pale nor deeply dark.",
+    "complexion": "Well-maintained but weathered by chemical exposure and years of close work under harsh clinic lighting. Fine creases around the eyes and mouth suggest more smiling than scowling. Clean-shaven daily, methodical grooming as a form of professional ritual. Faint chemical smell lingers on the skin. Strong cheekbone prominence and slightly flattened nasal bridge reflecting East and Central Asian ancestry blend seamlessly with broader facial contours from Mesoamerican heritage.",
     "distinguishing_marks": [
       "Faded bioluminescent ink constellations scattered across both forearms and across the collarbone—geometric patterns in dim gold that glow faintly under black light, applied in his twenties and now patchy from years of exposure",
       "Thin surgical scar running along the inside of his left wrist where the steady-hand servo implant was installed, nearly invisible but palpable to the touch",
@@ -263,17 +246,38 @@
     "posture_movement": "Moves with deliberate, economical gestures. Stands with weight evenly distributed, ready for long hours of work. His hands are almost preternaturally steady—he does not fidget or adjust his clothing compulsively. Speaks slowly, often pausing mid-sentence to demonstrate or clarify a point. When focused on a procedure, his entire body quiets into absolute stillness.",
     "clothing_style": "Tier 3-4 working professional. Wears a heavy canvas work apron over plain grey or navy scrubs—the apron pocketed and stained with antiseptic, iodine, and trace amounts of blood. Under the apron, usually a long-sleeved undershirt in grey or cream to cover the augmentation scars. Worn but well-maintained leather work boots with good grip. A faded tactical vest in charcoal (original purpose unknown, repurposed as storage) worn on cooler days. No visible corpo branding or luxury items; everything is functional and replaceable. Wears a single piece of jewelry: a worn bronze ring on his right ring finger, unmarked and very old."
   },
-  "image_prompt": "Tall surgical specialist Erik Magnúsdóttir, 188cm, warm olive-tan skin with golden undertones blending Northern European and Middle Eastern heritage, dark brown hair greying at temples, close-cropped military style. Dark warm-brown eyes behind flip-down magnifying lenses hanging at neck. Weathered face with laugh-lines, meticulously clean-shaven. Faded bioluminescent gold constellation ink on forearms glowing faintly. Wearing stained grey canvas surgical apron over navy scrubs, long grey undershirt, worn leather work boots, faded charcoal tactical vest. Faint surgical scars on both wrists. Steady posture, economical movement, bronze ring on right hand. Cyberpunk 2226 clinic setting, harsh fluorescent overhead lighting casting subtle shadows on tan complexion, chemical antiseptic atmosphere, precise and calm demeanor --ar 2:3 --v 6",
+  "image_prompt": "Alejandro Arredondo, 188cm tall surgeon with warm bronze-olive skin reflecting Hispanic/Mesoamerican-East Asian-Central Asian heritage blend, prominent cheekbones and slightly flattened nasal bridge, dark brown eyes with warm undertone. Salt-grey at temples, close-cropped dark brown hair, clean-shaven. Wears grey scrubs under worn canvas work apron stained with iodine and antiseptic, faded charcoal tactical vest, leather work boots. Flip-down magnifying lens goggles around neck, scratched and taped. Faded gold bioluminescent ink constellation tattoos visible on forearms and collarbone, patchy from age. Worn bronze ring on right ring finger. Posture deliberate and steady, hands preternaturally still. Standing in dim clinic lighting, surgical precision and weathered professionalism evident. GLMZ setting, gritty medical underground aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 47.2,
-    "Middle Eastern": 30.5,
-    "East Asian": 8.6,
-    "Sub-Saharan African": 6.7,
-    "Southeast Asian": 5.2,
-    "South Asian": 1.8
+    "Hispanic/Latin American": 60.8,
+    "East Asian": 20.2,
+    "Central Asian": 19
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 60.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 15.2
+      },
+      "Chinese": {
+        "Shanghainese": 4.1
+      },
+      "Korean": {
+        "Korean": 0.9
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kyrgyz": 9.1,
+        "Kazakh": 9.9
+      }
+    }
+  }
 }

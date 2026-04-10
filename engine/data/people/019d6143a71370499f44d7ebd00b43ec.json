@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71370499f44d7ebd00b43ec",
   "type": "character",
-  "name": "Tarn Kovalenko",
+  "name": "Tarn Mbekele",
   "aliases": [
     "Ves",
     "Comb"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Edgewater Prism, near Lincoln and Addison",
-  "description": "Vesna works in a small private suite on the upper floor of a mixed-use building in Edgewater Prism — the kind of space that looks aggressively minimal until you notice that every surface is soft, that the lighting has been calibrated to eliminate harsh angles, that the ambient sound is doing something very subtle to your nervous system the moment you walk in. They are slight, angular, with skin the color of dark amber and hair grown out into a voluminous natural that they've had threaded with color-shifting filaments — today it's cycling slowly from indigo to copper. Their irises are patterned: geometric, concentric, a geneware modification they got to better demonstrate what they're describing to clients when they explain neural architecture. They wear clothing that is expensive in the way that looks cheap to people who don't know what to look for.\n\nVesna calibrates neural interfaces: the cognitive augmentations, the emotion-regulating implants, the sensory overlays, the wetware that sits between a person's mind and everything else. It is precise, intimate work, and they are very good at it. They were trained at Helix Biosystems, left under circumstances they describe as 'philosophical differences' and which were actually a whistleblower complaint that went nowhere, and built their own practice from the ground up. They have a reputation for being uncanny — for knowing what's wrong with someone's head before they've finished describing it. Their clients include a significant number of Tier 3 and Tier 4 people who would rather not have their neural states on a Helix server.",
+  "description": "Tarn Mbekele works in a small private suite on the upper floor of a mixed-use building in Edgewater Prism — the kind of space that looks aggressively minimal until you notice that every surface is soft, that the lighting has been calibrated to eliminate harsh angles, that the ambient sound is doing something very subtle to your nervous system the moment you walk in. They are slight, angular, with skin the color of dark amber and hair grown out into a voluminous natural that they've had threaded with color-shifting filaments — today it's cycling slowly from indigo to copper. Their irises are patterned: geometric, concentric, a geneware modification they got to better demonstrate what they're describing to clients when they explain neural architecture. They wear clothing that is expensive in the way that looks cheap to people who don't know what to look for.\n\nTarn Mbekele calibrates neural interfaces: the cognitive augmentations, the emotion-regulating implants, the sensory overlays, the wetware that sits between a person's mind and everything else. It is precise, intimate work, and they are very good at it. They were trained at Helix Biosystems, left under circumstances they describe as 'philosophical differences' and which were actually a whistleblower complaint that went nowhere, and built their own practice from the ground up. They have a reputation for being uncanny — for knowing what's wrong with someone's head before they've finished describing it. Their clients include a significant number of Tier 3 and Tier 4 people who would rather not have their neural states on a Helix server.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -202,7 +202,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -220,31 +220,16 @@
     "Helix Biosystems",
     "Edgewater Prism",
     "The Filament",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Slagworks Industrial",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Indigo",
     "Copper",
-    "Pellucid Systems",
-    "Alper Inoue-Aidoo",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
-    "Counter-Personnel Loiter Munition CPLM-7 'Patience'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Irontide Tidal Energy",
-    "Jukebox",
-    "Kairos",
-    "Mika Sorel",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nurlan Morita-Antwi",
-    "TESSERA TC-3 'Crucible'",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Neural Palate",
+    "Slagworks Industrial",
+    "Pellucid Systems"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Complex diaspora mix: South Asian foundation (35.8%) with significant Eastern European (23.0%) and Northern European (21.8%) ancestry, complemented by Sub-Saharan African (11.7%) and Hispanic/Latin American (7.7%) heritage. Features reflect this multifaceted genetic blend.",
+    "heritage": "Dominant Sub-Saharan African ancestry (58.7%) forms the foundational warmth and depth, enriched by significant Pacific Islander heritage (17.0%) that broadens facial structure and adds luminosity. Southeast Asian ancestry (16.2%) refines features with elegant proportions, while Hispanic/Latin American heritage (8.1%) weaves golden warmth throughout. The combination creates striking facial geometry: strong cheekbones and defined jawline from African ancestry, widened by Pacific Islander generosity, sharpened by Southeast Asian refinement, with warm golden undertones distributed across the entire palette.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Slight and angular with long limbs; the kind of frame that reads as delicate until you notice the precise musculature of someone who moves with intention",
@@ -252,8 +237,8 @@
     "hair_style": "Voluminous natural, threaded with filaments, worn loose and full around the face",
     "hair_length": "Long",
     "eye_color": "Deep brown with geometric concentric geneware patterns in silver and gold overlay",
-    "skin_tone": "Warm medium-bronze with golden undertones; the South Asian base creates warmth while the Sub-Saharan and Northern European ancestry adds depth and complexity to the overall tone",
-    "complexion": "High-angled cheekbones with balanced width suggesting South Asian ancestry; sharp jawline with subtle definition from mixed heritage. Skin is clear and well-maintained with an almost luminous quality; the warmth of South Asian genetics blends with the clarity associated with Northern European ancestry. Expression tends toward composed watchfulness.",
+    "skin_tone": "Rich deep bronze with warm golden undertones; Sub-Saharan African genetics create depth and radiance, enhanced by Pacific Islander luminosity and Southeast Asian translucence, with Latin American golden warmth distributed throughout",
+    "complexion": "Prominent high cheekbones with generous width from Sub-Saharan African and Pacific Islander ancestry; strong defined jawline refined by Southeast Asian bone structure with subtle elegant contours. Skin is clear and well-maintained with luminous, iridescent quality in certain light. The depth of African genetics combines with radiant Pacific Islander warmth and the refined proportions of Southeast Asian heritage. Expression tends toward composed watchfulness.",
     "distinguishing_marks": [
       "Concentric geometric geneware patterns visible in both irises, appearing as nested polygons and rings in metallic silver and gold",
       "Faint linear scarring along both inner wrists (approximately 8cm each, horizontal, subtle but deliberate-looking) — location suggests old interface insertion points"
@@ -262,16 +247,57 @@
     "posture_movement": "Moves with economical precision; stands with weight balanced, minimal wasted motion. Hands are often still or moving in slow, deliberate gestures. Maintains unusual eye contact — the geneware patterns make their gaze feel analytical even when relaxed. Overall impression is of someone listening to something others can't hear.",
     "clothing_style": "Expensive minimalism: fitted black or deep indigo technical fabrics, usually with subtle tonal seaming. Layered tanks and cropped overshirts in natural fibers (linen, silk-synthetic blend). Tier 2 level pieces from boutique makers — the kind that cost Φ800 but look like they cost Φ80. No visible branding. Favors jewelry that's either completely absent or precisely minimal (single ring, sometimes a thin bracelet with embedded haptic feedback). In evening/DJ context, switches to sleeker silhouettes but maintains the same color palette and price-point philosophy."
   },
-  "image_prompt": "Tarn Kovalenko, 168cm tall lean androgynous figure, warm bronze-gold skin tone reflecting South Asian, Eastern European and Sub-Saharan African heritage blend. Voluminous long black natural hair with iridescent copper-indigo color-shifting filaments, framing high-angled cheekbones and sharp jawline. Deep brown eyes with striking geometric silver and gold geneware concentric polygon patterns. Subtle horizontal scarring on inner wrists from interface ports. Wearing fitted black technical fabric cropped overshirt with natural fiber layering, minimal jewelry. Stands with precise balanced posture, hands still with deliberate grace. Geneware iris patterns visible, analytical composed expression. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon-rimmed interior, haptic interface awareness evident in micro-movements. Cool blue-tinted ambient lighting catching the metallic eye patterns and color-shifting hair filaments. Mood: focused, networked, listening to augmented reality layers beneath ordinary perception. --ar 2:3 --v 6",
+  "image_prompt": "Tarn Mbekele, 168cm androgynous figure with precise musculature, deep bronze skin with golden undertones blending Sub-Saharan African, Pacific Islander, and Southeast Asian ancestry. Voluminous natural black hair threaded with iridescent indigo-copper filaments falling loosely around angular face. Striking high cheekbones, defined jawline, deep brown eyes with geometric silver-gold concentric geneware patterns. Minimalist style: fitted black technical crop top, deep indigo layered overshirt, natural fiber blend fabrics. Single thin haptic feedback bracelet. Composed watchful expression, economical precise posture. Faint linear scarring on inner wrists visible. GLMZ, GLMZ aesthetic. Moody cool lighting, slight iridescent shimmer on skin and hair filaments. Listening posture, hands still or in deliberate micro-gestures. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 35.8,
-    "Eastern European": 23.0,
-    "Northern European": 21.8,
-    "Sub-Saharan African": 11.7,
-    "Hispanic/Latin American": 7.7
+    "Sub-Saharan African": 58.7,
+    "Pacific Islander": 17,
+    "Southeast Asian": 16.2,
+    "Hispanic/Latin American": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 16.6
+      },
+      "West African": {
+        "Ghanaian": 35.5
+      },
+      "Central African": {
+        "Congolese": 6.6
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 1.6,
+        "Hawaiian": 1.5
+      },
+      "Melanesian": {
+        "Ni-Vanuatu": 2.8,
+        "Papua New Guinean": 2.5
+      },
+      "Micronesian": {
+        "Marshallese": 8.6
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 16.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 3.7
+      },
+      "Mexican": {
+        "Mexican": 3.5
+      },
+      "South American": {
+        "Chilean": 0.9
+      }
+    }
+  }
 }

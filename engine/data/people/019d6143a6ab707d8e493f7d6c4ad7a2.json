@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ab707d8e493f7d6c4ad7a2",
   "type": "character",
-  "name": "Daria Wójcik",
+  "name": "Rowan Dalgaard",
   "aliases": [
     "Ragni",
     "The Keeper"
@@ -13,7 +13,7 @@
   "age": 78,
   "status": "active",
   "location": "Avalon Quiet — the Threadbare Library, a community reading room she maintains in her ground-floor apartment, near Lincoln and Belmont",
-  "description": "Ragnheiður is a small, densely built woman whose spine has curved gently forward over decades of leaning over data terminals and physical books alike. Her skin is deep brown with a warm undertone, mapped with the fine silver lines of old dermal-display augments she no longer powers — they lie dormant beneath the surface like river tributaries seen from altitude. Her hair is cropped close and gone entirely white, and she keeps a pair of thick-framed optical magnifiers pushed up on her forehead even when she doesn't need them. Her hands are extraordinary: thick-fingered, steady, always moving — sorting, stacking, smoothing the spines of physical books she has accumulated over sixty years.\n\nShe is the kind of person who listens to you finish your sentence before she begins speaking, and when she speaks it is with the unhurried authority of someone who has outlasted several governments and two corponation collapses. She does not suffer careless people, but she will give a careful stranger every hour they need. Her apartment smells of binding glue, pressed fern, and the particular ozone of very old data stacks running warm.",
+  "description": "Rowan Dalgaard is a small, densely built woman whose spine has curved gently forward over decades of leaning over data terminals and physical books alike. Her skin is deep brown with a warm undertone, mapped with the fine silver lines of old dermal-display augments she no longer powers — they lie dormant beneath the surface like river tributaries seen from altitude. Her hair is cropped close and gone entirely white, and she keeps a pair of thick-framed optical magnifiers pushed up on her forehead even when she doesn't need them. Her hands are extraordinary: thick-fingered, steady, always moving — sorting, stacking, smoothing the spines of physical books she has accumulated over sixty years.\n\nShe is the kind of person who listens to you finish your sentence before she begins speaking, and when she speaks it is with the unhurried authority of someone who has outlasted several governments and two corponation collapses. She does not suffer careless people, but she will give a careful stranger every hour they need. Her apartment smells of binding glue, pressed fern, and the particular ozone of very old data stacks running warm.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -157,7 +157,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Avalon Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -168,29 +168,15 @@
   "related_entities": [
     "Avalon Quiet",
     "Tessera Corponation",
+    "Silver",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Silver",
     "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Anatoliy Faye-Nkrumah",
-    "Aybek Sato-Poku",
-    "Breck Tannen",
-    "Brewer's Spine",
-    "Chronicle",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Djeneba Park-Traore",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Isadora Vukić-Nambiar",
-    "The Heritage Vault",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-dao Bioelectric"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Eastern European (Polish/Baltic) with significant Northern European ancestry, blended with Hispanic/Latin American, Pacific Islander, and Indigenous American heritage—resulting in a complexion that bridges Northern and Southern European tones with subtle warm undertones from the admixed ancestries",
+    "heritage": "Rowan's genetic ancestry is a complex global blend: Southeast Asian (37.3%) and South Asian (31.6%) form the dominant heritage, combined with significant Sub-Saharan African ancestry (20.0%), with minor contributions from Hispanic/Latin American (6.7%) and East Asian (4.4%) lineages. This creates warm, richly complex medium-brown skin with golden and reddish undertones, broad facial structure, and the characteristic features of this diverse genetic synthesis.",
     "height_cm": 152,
     "weight_kg": 58,
     "build": "Densely compact, upper spine curved forward in a gentle kyphosis from seven decades of terminal work and manuscript study; broad shoulders and thick forearms retain surprising strength despite age",
@@ -198,28 +184,72 @@
     "hair_style": "Cropped close to the scalp in a utilitarian cut, no styling",
     "hair_length": "Short",
     "eye_color": "Deep brown (natural); left eye shows faint metallic sheen from embedded reading-assist optical overlay",
-    "skin_tone": "Warm medium-tan with olive undertones—a blend of Eastern European base with subtle warmth from Hispanic/Latin American, Pacific Islander, and Indigenous American ancestry; hands and forearms show age-related darkening creating an ombré effect",
-    "complexion": "Weathered but well-maintained; fine wrinkles concentrated around eyes and mouth from decades of squinting at small text; skin shows age spots on hands and forearms with slightly deeper pigmentation consistent with mixed heritage; careful grooming despite minimal cosmetic attention",
+    "skin_tone": "Warm medium-brown with golden and subtle reddish undertones reflecting the Southeast Asian, South Asian, and Sub-Saharan African heritage blend; hands and forearms show age-related darkening and weathering creating natural depth variations across the base pigmentation",
+    "complexion": "Weathered but well-maintained; fine wrinkles concentrated around eyes and mouth from decades of squinting at small text; skin displays warm golden undertones with the characteristic slight depth and richness of the ancestry blend; age spots on hands and forearms blend naturally with base pigmentation; facial structure shows broader features and slightly rounded contours reflecting diverse ancestry; careful grooming despite minimal cosmetic attention",
     "distinguishing_marks": [
       "Fine silver tracery visible beneath skin across both forearms and neck — dormant subdermal dermal-display lattice creating a river-tributary pattern",
       "Thin white scar along left temple, approximately 3cm, consistent with old data-terminal interface injury",
-      "Age spots across the backs of both hands, darker brown against base skin tone",
+      "Age spots across the backs of both hands, deeper brown against base skin tone",
       "Calluses on thumb and forefinger of both hands from six decades of handling paper and binding materials"
     ],
     "visible_augmentations": "Thick-framed optical magnifiers (vintage style, real glass, not smart-glass) pushed up on forehead; faint metallic gleam in left eye pupil indicating reading-assist overlay; dormant subdermal display lattice visible as silvery tributary patterns beneath skin on forearms and neck; slight external port scar behind left ear (cochlear amplifier, older model)",
     "posture_movement": "Moves with deliberate economy; slight forward lean to spine; hands in constant subtle motion even at rest — sorting, smoothing, organizing invisible objects; walks slowly but with clear purpose, never shuffling; sits with excellent posture once settled",
     "clothing_style": "Tier 4 practical: hand-mended linen button-shirts in cream or soft gray, wool cardigans in dark charcoal or navy (decades-old, impeccably maintained), loose-fitting work pants in durable cotton or canvas. Reading glasses on a beaded chain. Canvas apron with deep pockets when working. No corpo branding, no chrome, no affectation — clothing chosen purely for durability and function. Shoes: comfortable, broken-in leather slip-ons."
   },
-  "image_prompt": "Daria Wójcik, elderly woman of mixed Eastern European and Pacific Islander heritage, petite 152cm frame with warm olive-tan complexion and age spots on weathered hands. Cropped pure white hair, deep brown eyes with faint optical overlay gleam. Silver subdermal lattice patterns visible on forearms and neck like river tributaries. Vintage thick-framed glass magnifiers pushed up on forehead. Wearing hand-mended cream linen shirt and dark charcoal wool cardigan, decades-old and impeccably maintained. Beaded reading glasses chain. Canvas work apron. Deliberate, economical movements; hands in subtle constant motion. Sitting in a cluttered archival workspace surrounded by manuscripts and paper—soft warm library lighting casting shadows across her weathered face and the silvery tracery beneath her skin. Cyberpunk 2226, worn practical aesthetic, no chrome or affectation, timeless quality. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Dalgaard, 152cm tall elderly scholar with warm golden-brown skin reflecting Southeast Asian, South Asian, and Sub-Saharan African heritage, pure white close-cropped hair, deep brown natural eyes with subtle metallic left pupil from reading-assist overlay. Weathered complexion with fine wrinkles and age spots, broad facial structure. Wearing cream linen shirt under charcoal wool cardigan, canvas work apron, vintage thick-framed reading glasses on beaded chain. Subdermal silver tributary patterns faintly visible on neck and forearms. Slight forward spine curve, hands in subtle organizing motion. Seated at worn wooden desk surrounded by paper manuscripts and binding materials, soft amber task lighting, GLMZ archival setting, muted color palette, intricate detail on aged clothing and skin texture, contemplative focus, dystopian knowledge-keeper aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 49.5,
-    "Northern European": 26.0,
-    "Hispanic/Latin American": 9.2,
-    "Pacific Islander": 7.8,
-    "Indigenous American": 7.5
+    "Southeast Asian": 37.3,
+    "South Asian": 31.6,
+    "Sub-Saharan African": 20,
+    "Hispanic/Latin American": 6.7,
+    "East Asian": 4.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 37.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 29.9
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 5.1,
+        "Zambian": 3.1
+      },
+      "Central African": {
+        "Congolese": 4
+      },
+      "West African": {
+        "Ivorian": 7.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.8
+      },
+      "Caribbean": {
+        "Cuban": 1.3,
+        "Haitian": 0.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.8
+      },
+      "Korean": {
+        "Korean": 1.6
+      }
+    }
+  }
 }

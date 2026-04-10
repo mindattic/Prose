@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cc7281a2e2b86958430913",
   "type": "character",
-  "name": "Remi Villalobos-Fredriksen-Magnúsdóttir",
+  "name": "Remi Kovács-Masoe-Sato",
   "aliases": [
     "Bren",
     "Two-Stop"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Kessler Interchange, GLMZ, near North Ave and Damen",
-  "description": "Brennus is a broad-shouldered young man, Ghanaian-Croatian in the specific way that produced his particular amber skin tone, tight dark curls, and a jaw that looks like it was designed to take a punch and was then tested extensively. He wears the Ferrogate Transit Security uniform with the particular posture of someone who chose this job over something better and has spent two years finding peace with that choice. His cosmetic geneware is subtle: bioluminescent freckles across his cheekbones that pulse a faint amber when he's calm and edge toward orange-red when his heart rate climbs — a mod he got at eighteen that he now considers a professional liability and is saving to have adjusted. His colleagues call him Two-Stop because he has never, in two years of duty at Kessler Interchange, needed more than two stops on the escalating force protocol before a situation resolved.\n\nKessler is a brutal posting — five rail lines converging in a subterranean cavern full of vending shrines, checkpoint queues, and the particular desperation of people who missed the last platform-credit subsidy. Brennus has developed a talent for the moment just before things escalate, which he deploys through an almost theatrical calm and a habit of learning names. He knows the regulars by face, knows which unhoused people shelter in which alcoves, knows which Ferrogate checkpoint operators skim scanning fees. He has not reported the last thing. He is thinking about reporting it.",
+  "description": "Remi Kovács-Masoe-Sato is a broad-shouldered young man, Ghanaian-Croatian in the specific way that produced his particular amber skin tone, tight dark curls, and a jaw that looks like it was designed to take a punch and was then tested extensively. He wears the Ferrogate Transit Security uniform with the particular posture of someone who chose this job over something better and has spent two years finding peace with that choice. His cosmetic geneware is subtle: bioluminescent freckles across his cheekbones that pulse a faint amber when he's calm and edge toward orange-red when his heart rate climbs — a mod he got at eighteen that he now considers a professional liability and is saving to have adjusted. His colleagues call him Two-Stop because he has never, in two years of duty at Kessler Interchange, needed more than two stops on the escalating force protocol before a situation resolved.\n\nKessler is a brutal posting — five rail lines converging in a subterranean cavern full of vending shrines, checkpoint queues, and the particular desperation of people who missed the last platform-credit subsidy. Remi Kovács-Masoe-Sato has developed a talent for the moment just before things escalate, which he deploys through an almost theatrical calm and a habit of learning names. He knows the regulars by face, knows which unhoused people shelter in which alcoves, knows which Ferrogate checkpoint operators skim scanning fees. He has not reported the last thing. He is thinking about reporting it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -160,7 +160,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,37 +180,23 @@
     "Kessler Interchange",
     "Ferrogate Transit",
     "Arcturus GE-1 'Garrison'",
-    "GLMZ",
+    "The Accidental",
     "Big Rig",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Bioacoustic Communication Membrane",
-    "Kairos",
-    "Kwabena Ilyich Ferreira-Sattout",
-    "MERIDIAN",
-    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PA-5 'Attendant'",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Human Baseline Alliance",
-    "The Pure Hand"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European (51.5%, primarily Polish/Czech/Slovak ancestry) with significant Northern European (24.7%, Scandinavian) admixture, East Asian (13.1%, likely Korean or Mongolian), Hispanic/Latin American (8.0%), and minor Sub-Saharan African (2.7%) ancestry. The combination produces a phenotype with Slavic bone structure, East Asian eye shape and cheekbone prominence, and warm undertones from the admixed heritage.",
+    "heritage": "Southeast Asian (28.5%, dominant), East Asian (21.1%), Pacific Islander (15.2%), Eastern European (14.0%), South Asian (11.0%), and Middle Eastern (10.2%). This creates a distinctive Pan-Asian phenotype with Pacific Islander robustness: prominent, slightly high-set cheekbones from East/Southeast Asian ancestry; angular, strong jaw showing Slavic structural influence; warm golden-bronze skin tone from the blended Southeast Asian, East Asian, and Pacific Islander majority, enriched by South Asian warmth and Middle Eastern undertones. Eye shape and set reflect East/Southeast Asian dominance with alert, direct gaze. Overall facial structure balances angular Eastern European bone structure with the softer, rounder influence of Pacific Islander heritage.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and solid without excess mass—built like someone who moves through crowded spaces with deliberate intent. Chest and shoulders carry visible musculature; waist tapers cleanly. The build of a man who chose physical work over desk jobs.",
     "hair_color": "Dark brown, nearly black",
     "hair_style": "Neat, close-cropped fade with natural texture; kept regulation-short but not aggressively military",
     "hair_length": "Short",
-    "eye_color": "Dark brown with slight epicanthic fold from East Asian ancestry, alert and direct",
-    "skin_tone": "Medium-warm complexion with subtle golden undertones—the result of Eastern European base with East Asian, Hispanic, and African admixture creating a distinctive mid-range tone with warmth rather than coolness. Not pale; not deep; distinctly mixed-heritage warm.",
-    "complexion": "Clear, well-maintained skin with a scattering of bioluminescent freckles across both cheekbones. Cheekbones are prominent and slightly high-set, reflecting East Asian ancestry components. Jaw is angular and prominent, showing the wear of professional calm and the subtle bruising of someone who has absorbed impact. Five o'clock shadow typical by evening shift. No visible acne or skin conditions; the freckles glow faintly amber at rest.",
+    "eye_color": "Dark brown with slight epicanthic fold from East and Southeast Asian ancestry, alert and direct",
+    "skin_tone": "Warm golden-bronze complexion—the distinctive result of Southeast Asian, East Asian, and Pacific Islander ancestry dominance (64.8% combined), with undertones enriched by South Asian and Middle Eastern components. Medium-deep, with evident warmth and luminosity rather than pallor or cool undertones. Distinctly Pan-Asian warm heritage with Pacific Islander depth.",
+    "complexion": "Clear, well-maintained skin with a scattering of bioluminescent freckles across both cheekbones. Cheekbones are prominent and slightly high-set, reflecting dominant East and Southeast Asian ancestry. Jaw is angular and prominent with subtle Slavic structure, showing the wear of professional calm and the subtle bruising of someone who has absorbed impact. Five o'clock shadow typical by evening shift. No visible acne or skin conditions; the freckles glow faintly amber at rest.",
     "distinguishing_marks": [
       "Bioluminescent freckles across both cheekbones (cosmetic geneware, amber baseline, shift toward orange-red under stress or elevated heart rate)",
       "Thin scar along left knuckle ridge (professional wear, partially concealed by reinforced plating)",
@@ -220,16 +206,60 @@
     "posture_movement": "Stands with shoulders square and weight distributed evenly—the posture of someone trained to respond quickly but not presently threatened. Moves through crowded spaces with economical precision, never rushed. Hands rest naturally at sides or loosely clasped, knuckle plating giving them a slightly industrial appearance. Eye contact is direct and held slightly longer than average—a deliberate choice to establish calm authority. When walking a platform or moving through checkpoint areas, his gaze sweeps in practiced patterns without seeming mechanical.",
     "clothing_style": "Wears Ferrogate Transit Security uniform as standard: fitted dark-gray polymer blend shirt with FTS insignia on left chest, tactical-cut to allow arm mobility. Black reinforced cargo pants with regulation belt carrying comm unit, flex-cuffs, and incident log tablet. Steel-toed boots (scuffed, well-maintained). Off-duty: simple athletic wear, earth-tone hoodies, worn denim. Tier 3-4 worker clothing—functional, durable, not flashy. No jewelry except a faded cloth wristband (frayed, looks like it's been retied many times) in dark blue."
   },
-  "image_prompt": "Remi, a 188cm transit security officer with mixed Eastern European, Scandinavian, East Asian, and Hispanic ancestry, standing in a GLMZ checkpoint corridor under industrial LED lighting. Medium-warm skin tone, high cheekbones with faint bioluminescent amber freckles that glow softly in the low light, dark brown eyes with subtle epicanthic fold, close-cropped dark hair. Wearing FTS dark-gray tactical uniform shirt and black reinforced cargo pants, steel-toed boots scuffed from patrol work. Matte black synthetic bone knuckle plating visible on both hands. Direct, alert posture with economical stance. Faded dark-blue cloth wristband on left wrist. Cyberpunk 2220s transit hub setting, cool industrial LED lighting casting slight shadows across high cheekbones and knuckle plating, slight five o'clock shadow, calm but watchful expression. --ar 2:3 --v 6",
+  "image_prompt": "Remi Kovács-Masoe-Sato, 188cm tall broad-shouldered transit security officer in GLMZ, warm golden-bronze Pan-Asian complexion with prominent high cheekbones and angular Slavic-influenced jaw, dark brown eyes with epicanthic fold and direct alert gaze, scattered bioluminescent amber freckles across cheekbones glowing softly, short dark brown nearly-black hair in neat close-cropped fade, five o'clock shadow, muscular athletic build. Wearing fitted dark-gray FTS polymer blend tactical shirt with security insignia, black reinforced cargo pants, steel-toed boots. Matte black synthetic bone composite knuckle plating visible on both hands. Standing in a Great Lakes transit station with neon ambient lighting casting blue and orange tones, posture square and composed, direct eye contact, economical movement, faded dark blue cloth wristband worn multiple times. Professional security bearing. Neo-noir neon atmosphere, chrome and concrete architecture behind. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 51.5,
-    "Northern European": 24.7,
-    "East Asian": 13.1,
-    "Hispanic/Latin American": 8.0,
-    "Sub-Saharan African": 2.7
+    "Southeast Asian": 28.5,
+    "East Asian": 21.1,
+    "Pacific Islander": 15.2,
+    "Eastern European": 14,
+    "South Asian": 11,
+    "Middle Eastern": 10.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 28.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.4
+      },
+      "Korean": {
+        "Korean": 6.7
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 15.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 12.6
+      },
+      "Slavic West": {
+        "Sorbian": 1.4
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 1.9,
+        "Baloch": 1.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 7.8,
+        "Palestinian": 2.4
+      }
+    }
+  }
 }

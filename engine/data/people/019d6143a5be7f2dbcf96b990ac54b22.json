@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5be7f2dbcf96b990ac54b22",
   "type": "character",
-  "name": "Elsa Holm-Strömqvist-Anang",
+  "name": "Cleo Hachemi-Strömqvist-Kettani",
   "aliases": [
     "Bako the Bone",
     "Bone"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Geartown, permanent pitch under the Kessler Interchange overpass, near North Ave and Milwaukee",
-  "description": "Bako is the kind of man who looks like he was assembled from spare parts — which, in a meaningful sense, he was. His left arm from the elbow down is a mismatched stack of salvaged cyberware components that he has maintained, replaced, and modified over forty years: the hand is Axiom manufacture circa 2160, the wrist joint is something he stripped from a Ferrogate maintenance bot, and the forearm housing is a custom shell he hammered out himself from transit-grade aluminum. His face is weathered to the texture of old boot leather, his right eye is natural and sharp, his left eye is a salvage-market optical he bought from Zibby Ousséni-Palakiko three years ago and only mostly trusts.\n\nHis pitch under the Kessler Interchange overpass is a cathedral of beautiful junk: sorted bins of neural connectors, towers of chassis plating, a refrigerated unit full of organic-synthetic interface components that need to stay cold, hand-lettered signs advertising prices in chalk on a board he updates daily. He has a dog — a large, scruffy animal with bioluminescent patches along its spine from some backyard genemod experiment — named Inventory. Bako has a scholar's knowledge of two generations of augmentation hardware, can identify a component by touch in the dark, and has opinions about manufacturing tolerances that can fill an evening if you let him. He is also missing significant chunks of his past that he doesn't discuss.",
+  "description": "Cleo Hachemi-Strömqvist-Kettani is the kind of man who looks like he was assembled from spare parts — which, in a meaningful sense, he was. His left arm from the elbow down is a mismatched stack of salvaged cyberware components that he has maintained, replaced, and modified over forty years: the hand is Axiom manufacture circa 2160, the wrist joint is something he stripped from a Ferrogate maintenance bot, and the forearm housing is a custom shell he hammered out himself from transit-grade aluminum. His face is weathered to the texture of old boot leather, his right eye is natural and sharp, his left eye is a salvage-market optical he bought from Zibby Ousséni-Palakiko three years ago and only mostly trusts.\n\nHis pitch under the Kessler Interchange overpass is a cathedral of beautiful junk: sorted bins of neural connectors, towers of chassis plating, a refrigerated unit full of organic-synthetic interface components that need to stay cold, hand-lettered signs advertising prices in chalk on a board he updates daily. He has a dog — a large, scruffy animal with bioluminescent patches along its spine from some backyard genemod experiment — named Inventory. Cleo Hachemi-Strömqvist-Kettani has a scholar's knowledge of two generations of augmentation hardware, can identify a component by touch in the dark, and has opinions about manufacturing tolerances that can fill an evening if you let him. He is also missing significant chunks of his past that he doesn't discuss.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -157,7 +157,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,48 +173,20 @@
     "Kessler Interchange",
     "Ferrogate Transit",
     "Iowan Behemoth — 'Cathedral'",
+    "Backyard BBQ",
+    "Noir Dining",
     "Geartown",
     "NeuralPath VaultPay Subdermal Transaction Node",
-    "Aslan Vasquez-Chatterjee",
     "Aluminum",
     "Leather",
+    "Neural Palate",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Dzemal Acholonu-Patagiri",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Free Assembly",
-    "GLMZ",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Helix Biosystems",
-    "Idris Forsberg-Quaye",
-    "Junkyard Dog",
-    "Korrath",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Pirjo Asante-Ulukhan",
-    "Praevex",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "SynapTech VocalShift Laryngeal Tone Modulator",
-    "TESSERA ES-4 'Perimeter'",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Zibby Ousséni-Palakiko"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (primarily Scandinavian) with significant Hispanic/Latin American and Indigenous American ancestry, with minor East Asian heritage. The combination produces a distinctive phenotype: pale to medium tan undertones from Northern European genetics tempered by the darker pigmentation from Latin American and Indigenous ancestry, creating an olive-influenced complexion. High cheekbones and slightly prominent nasal structure reflect the Indigenous American and Northern European mix.",
+    "heritage": "North African (64.1%), East Asian (20.5%), and Southeast Asian (15.4%) ancestry. The dominant North African genetics establish deep warm brown undertones and broader facial structure, while East Asian ancestry contributes high, defined cheekbones and a refined nasal bridge. Southeast Asian influence adds warmth to midtones and subtle facial angularity. The combination creates a distinctly warm-toned complexion with North African depth, sharpened by East and Southeast Asian bone structure.",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Heavyset and broad-shouldered despite age, with a slight forward stoop from decades of bench work. Thick through the torso, calloused hands, the musculature of someone who has done manual labor his entire life but is now running on momentum and habit rather than strength.",
@@ -222,8 +194,8 @@
     "hair_style": "Short, brushed back, slightly unkempt. Hasn't been to a proper barber in years.",
     "hair_length": "Short",
     "eye_color": "Right eye: dark brown, sharp and calculating. Left eye: LED-modified salvage-market optical with a faint amber glow, the pupil sometimes drifting slightly out of sync.",
-    "skin_tone": "Olive-tan complexion from blended Northern European, Hispanic/Latin American, and Indigenous American ancestry, further weathered by sixty-three years of sun exposure and industrial work. Deeper pigmentation in the lower face and neck from cumulative heritage.",
-    "complexion": "Deeply lined face like cracked leather, jaw dusted with silver stubble, a prominent nose with high bridge reflecting Indigenous and Northern European ancestry, broken at least twice. Permanent squint lines around the eyes. A few old chemical burns on the right side of his neck, faded to white scars.",
+    "skin_tone": "Deep warm brown with rich golden undertones from North African and Southeast Asian heritage, enhanced by East Asian ancestry. Further weathered by sixty-three years of sun exposure and industrial work throughout the GLMZ, creating a lived-in patina across bronzed skin.",
+    "complexion": "Deeply lined face like cracked leather, jaw dusted with silver stubble, a prominent nose with high bridge and slightly flared nostrils reflecting East and Southeast Asian ancestry, broken at least twice. Permanent squint lines around the eyes. A few old chemical burns on the right side of his neck, faded to white scars. Deep facial bone structure emphasizes high cheekbones and strong jaw, characteristic of the ancestral blend.",
     "distinguishing_marks": [
       "Burn scar running from right collarbone to mid-chest, pale and flat, approximately 12cm long — from a circuit fire in 2187",
       "Ragged scar across the back of right hand, webbed and puckered, circa 2190",
@@ -234,15 +206,42 @@
     "posture_movement": "Moves with the careful deliberation of someone managing chronic pain from old injuries. Favors his right side slightly. Stands with hands often occupied — sorting, gesturing, demonstrating components. His movements are economical and practiced, no wasted motion. Speaks with his hands, especially when explaining augmentation tolerances or component lineage. Often adjusts his left eye manually, like an old habit.",
     "clothing_style": "Tier 3-4 Geartown worker aesthetic, deeply functional and worn. Heavy canvas work pants with a dozen cargo pockets, all visibly utilized. A faded company shirt from some defunct shipping corporation, sleeves rolled or cut off to accommodate his left arm. A thick gray insulated vest over top, patched in multiple places. Steel-toed work boots, scuffed and re-resoled at least twice. A pair of cut-off leather gloves hanging from his back pocket. No jewelry except a pale band of skin on his ring finger where something used to be. Everything smells of mineral oil, solder flux, and the dust of a thousand disassembled machines."
   },
-  "image_prompt": "Weathered Scandinavian-heritage male, 63 years old, 178cm tall, olive-tan skin with deep facial lines and prominent nose, steel-gray hair, dark right eye contrasting with amber LED-modified left eye. Heavyset broad-shouldered build showing decades of manual labor. Visible burn scars on right side of neck and chest, extensive forearm scarring. Left arm completely augmented with mismatched industrial cyberware: dull aluminum shell with seam lines, repurposed heavy machinery wrist joint, worn Axiom hand. Worn Geartown worker aesthetic: faded shipping company shirt with rolled sleeves, thick patched gray insulation vest, heavy canvas cargo pants, steel-toed boots. Moves carefully with economical motion, favoring right side. Standing in industrial workshop setting, soft overhead lighting casting shadows on weathered features and augmented limbs, slight forward stoop, hands active and gesturing. Cyberpunk 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Weathered North African-East Asian-Southeast Asian man, 63 years old, deep warm bronze skin with golden undertones, high cheekbones, prominent broken nose, steel gray short hair brushed back unkempt. Right eye dark brown and sharp, left eye amber LED optical implant with faint glow. Deeply lined face, silver stubble, permanent squint lines. Left arm prosthetic from elbow down—mismatched aluminum and industrial cyberware with visible seams and dents, Axiom hand with worn contact pads. Burn scar across right collarbone-chest, network of thin scars on forearms. 178cm tall, heavyset broad-shouldered build, slight forward stoop. Wearing faded defunct corporation shirt with rolled sleeves, thick gray patched insulation vest, heavy canvas cargo work pants, scuffed steel-toed boots. Geartown mechanic in industrial workshop, warm tungsten lighting casting shadows on weathered features and augmented limb, GLMZ, hands gesturing over scattered components, mood: experienced, worn, deliberate, practical --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 66.6,
-    "Hispanic/Latin American": 17.7,
-    "Indigenous American": 11.0,
-    "East Asian": 4.7
+    "North African": 64.1,
+    "East Asian": 20.5,
+    "Southeast Asian": 15.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Maghreb": {
+        "Tunisian": 29.6,
+        "Moroccan": 33.4
+      },
+      "Nile Valley": {
+        "Egyptian": 0.9,
+        "Sudanese": 0.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6.3
+      },
+      "Chinese": {
+        "Shanghainese": 9.8
+      },
+      "Korean": {
+        "Korean": 4.4
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 15.4
+      }
+    }
+  }
 }

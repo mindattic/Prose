@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64675a0aba789c3ab4647c3",
   "type": "character",
-  "name": "Zephyr Espinoza-Nygaard",
+  "name": "Vivaan Espinoza-Deshpande",
   "aliases": [
     "Kwa",
     "Gridkid"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Highland Park Autonomous Zone, works out of a shared fabrication space called The Burrow, near Michigan Ave and Walton",
-  "description": "Kwabena is lanky and perpetually underslept, with the golden-brown skin of his Ghanaian father's family and the sharp Armenian nose he got from his grandmother Tamar, which he has decorated with a small bioluminescent stud that pulses faintly blue when he is in deep concentration — a mod he got at sixteen from a friend rather than a professional, which is both charming and slightly crooked. He moves through The Burrow at a half-jog, always carrying something, often mid-sentence with someone across the room. His hair is shaped into two neat puffs that he maintains with obsessive regularity even when the rest of his presentation is in chaos.\n\nHe has been making VR experiences since he was fourteen — at first pure technical curiosity, then something more urgent. His work is formally experimental and politically raw: his best-known piece, a forty-minute experience called Φ0.00 that simulates one month of existence at rock-bottom UBC stipend with every sensory detail rendered at maximum fidelity, has been downloaded approximately eighty thousand times across underground distribution channels and has been cited in three separate GLMZ social policy arguments. He did not intend it to be a policy document. He made it because he and his mother lived it for six months when he was twelve and he wanted to know if he could make someone else understand. The answer, apparently, was yes.",
+  "description": "Vivaan Espinoza-Deshpande is lanky and perpetually underslept, with the golden-brown skin of his Ghanaian father's family and the sharp Armenian nose he got from his grandmother Tamar, which he has decorated with a small bioluminescent stud that pulses faintly blue when he is in deep concentration — a mod he got at sixteen from a friend rather than a professional, which is both charming and slightly crooked. He moves through The Burrow at a half-jog, always carrying something, often mid-sentence with someone across the room. His hair is shaped into two neat puffs that he maintains with obsessive regularity even when the rest of his presentation is in chaos.\n\nHe has been making VR experiences since he was fourteen — at first pure technical curiosity, then something more urgent. His work is formally experimental and politically raw: his best-known piece, a forty-minute experience called Φ0.00 that simulates one month of existence at rock-bottom UBC stipend with every sensory detail rendered at maximum fidelity, has been downloaded approximately eighty thousand times across underground distribution channels and has been cited in three separate GLMZ social policy arguments. He did not intend it to be a policy document. He made it because he and his mother lived it for six months when he was twelve and he wanted to know if he could make someone else understand. The answer, apparently, was yes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -156,7 +156,7 @@
     "Romantic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,66 +172,78 @@
   "registered_firearms": [],
   "related_entities": [
     "Highland Park Autonomous Zone",
-    "GLMZ",
     "Grandmother",
-    "The Quiet Room",
     "Arcturus Defense Solutions",
+    "The Quiet Room",
     "Street Custom 'Spider Hole' Concealed Position Kit",
+    "Arcturus KS-7 'Nursery'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Slagworks Industrial",
-    "Arcturus CK-5 'Bloodhound'",
-    "Arcturus HX-1 'Headsman'",
-    "Arcturus KS-7 'Nursery'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Hadiya Karlsen-Sow",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Solveig Tambadou-Kereselidze",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Collective",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Transfer",
-    "Yolanda Dzhaksybekov-Ferreira"
+    "GLMZ",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Hispanic/Latin American dominant (42.6%) with significant East Asian (18.4%), Middle Eastern (15.5%), and Indigenous American (10.7%) ancestry, with smaller Sub-Saharan African (6.5%) and Northern European (6.3%) components. Complex pan-global genetic signature reflecting the Ubiquitous Diaspora.",
+    "heritage": "Triethnic blend: Hispanic/Latin American (43.8%), South Asian (41.3%), and Sub-Saharan African (14.9%). Features reflect balanced contribution across all three ancestries—South Asian facial structure layered with Hispanic and African warmth. Pan-Diaspora genetic signature.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Lanky and angular, with the restless physique of someone who forgets to eat and moves in bursts of frantic energy rather than deliberate stride. Narrow shoulders, long limbs, minimal muscle definition.",
     "hair_color": "Dark brown, natural",
     "hair_style": "Two neat puffs maintained with obsessive care, cleanly shaped",
     "hair_length": "Medium",
-    "eye_color": "Dark brown, with faint retinal display overlay grid visible in both irises under direct light",
-    "skin_tone": "Warm medium-tan complexion with olive undertones from blended Hispanic/Latin American, East Asian, and Middle Eastern ancestry, with subtle depth from Sub-Saharan African heritage.",
-    "complexion": "Angular face with pronounced cheekbones reflecting East Asian and Indigenous American structure, moderately defined jawline. Nose with subtle Middle Eastern bridge prominence, slightly crooked from informal augmentation application. Perpetually underslept with dark under-eye circles. Minimal grooming elsewhere; contrast between obsessive hair maintenance and general dishevelment. Subtle warm undertones across face from Hispanic/Latin American and African ancestry blend.",
+    "eye_color": "Deep brown, with faint retinal display overlay grid visible in both irises under direct light",
+    "skin_tone": "Rich warm medium-brown with golden-bronze undertones—the blend of warm Hispanic and African tones layered over South Asian base creates saturated, dimensional complexion. Deep and luminous rather than olive.",
+    "complexion": "Angular face with pronounced cheekbones reflecting South Asian structure softened by broader African heritage influence. Moderately defined jawline with subtle warmth. Nose with South Asian bridge prominence, slightly crooked from informal augmentation application. Perpetually underslept with dark under-eye circles. Warm golden undertones across face intensified by the triethnic blend, with rich depth from Sub-Saharan African heritage creating dimensional, glowing quality. Minimal grooming elsewhere; stark contrast between obsessive hair maintenance and general dishevelment.",
     "distinguishing_marks": [
-      "Small bioluminescent nose stud (right nostril) that pulses soft blue when in deep focus or concentration — geneware mod applied informally at age 16, noticeably crooked"
+      "Small bioluminescent nose stud (right nostril) that pulses soft blue when in deep focus or concentration—geneware mod applied informally at age 16, noticeably crooked"
     ],
-    "visible_augmentations": "Bioluminescent nose stud (active, blue-pulsing). Retinal display overlays visible as faint grid patterns in both eyes when lit from certain angles or during eye contact — occasionally flickers with notifications from previous owner's ghost accounts. Both modifications appear salvaged or informally installed rather than corp-grade.",
-    "posture_movement": "Moves in half-jogs through spaces, always carrying something (tablet, prototype, wiring), perpetually mid-gesture mid-sentence. Rarely still — fidgets with hands when stationary. Leans in intensely during conversation. Body language broadcasts simultaneous excitement and sleep deprivation.",
+    "visible_augmentations": "Bioluminescent nose stud (active, blue-pulsing). Retinal display overlays visible as faint grid patterns in both eyes when lit from certain angles or during eye contact—occasionally flickers with notifications from previous owner's ghost accounts. Both modifications appear salvaged or informally installed rather than corp-grade.",
+    "posture_movement": "Moves in half-jogs through spaces, always carrying something (tablet, prototype, wiring), perpetually mid-gesture mid-sentence. Rarely still—fidgets with hands when stationary. Leans in intensely during conversation. Body language broadcasts simultaneous excitement and sleep deprivation.",
     "clothing_style": "Tier 4 working-collective aesthetic: hand-patched oversized hoodies (often with The Burrow's mark or indie media distribution logos), cargo pants with multiple pockets for tools and drives, worn synth-leather boots. Layers suggest he pulls on whatever is nearest. Occasional color clashes. No corporate branding. Functional rather than fashionable, but with intentional anti-establishment edge. Wears a single faded wristband (possibly handmade, possibly from an old VR collective)."
   },
-  "image_prompt": "Cyberpunk 2226 character Zephyr, 178cm tall lean angular body with restless energy, warm medium-tan skin with olive undertones blending Hispanic, East Asian, Middle Eastern, and Indigenous features. Sharp angular cheekbones, slightly prominent nose bridge with crooked bioluminescent blue-pulsing stud in right nostril glowing softly. Dark brown eyes with faint retinal display grid overlay visible under light, dark under-eye circles from sleep deprivation. Dark brown hair styled in two neat maintained puffs. Wearing oversized hand-patched hoodie with indie logos, cargo pants with tool pockets, worn synth-leather boots, faded wristband. Mid-motion pose leaning forward intensely, fidgeting hands, clutching tablet and wiring. Tier 4 working-collective aesthetic, anti-establishment vibe. Neon-lit underground collective space, blue and amber cybernetic glow illuminating angular face and retinal overlays. Frantic energetic mood, simultaneous excitement and exhaustion. High-contrast cyberpunk lighting --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Vivaan Espinoza-Deshpande: lanky 178cm tall mixed-heritage man with rich warm medium-brown skin, glowing golden undertones, angular South Asian-influenced cheekbones and facial structure. Dark brown eyes with barely-visible retinal display grid overlay. Two neat dark brown puffs, obsessively maintained. Right nostril: softly blue-pulsing bioluminescent nose stud, slightly crooked. Perpetually sleep-deprived with dark under-eye circles. Wearing oversized patched hoodie, cargo pants, worn synth-leather boots. Blue-black neon ambient lighting reflects off skin and stud. Mid-gesture, intense eye contact, fidgety energy captured mid-motion. Great Lakes Metropolitan Zone corporate undercity background, dim industrial glow. Thin frame, restless posture, wired aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 42.6,
-    "East Asian": 18.4,
-    "Middle Eastern": 15.5,
-    "Indigenous American": 10.7,
-    "Sub-Saharan African": 6.5,
-    "Northern European": 6.3
+    "Hispanic/Latin American": 43.8,
+    "South Asian": 41.3,
+    "Sub-Saharan African": 14.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 17.3,
+        "Brazilian": 6.2
+      },
+      "Central American": {
+        "Guatemalan": 5.4,
+        "Salvadoran": 1.9
+      },
+      "Mexican": {
+        "Mexican": 13
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 24.8
+      },
+      "Sri Lankan": {
+        "Sinhalese": 16.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 2.3
+      },
+      "West African": {
+        "Senegalese": 7.5,
+        "Ivorian": 1.3
+      },
+      "Central African": {
+        "Cameroonian": 3.8
+      }
+    }
+  }
 }

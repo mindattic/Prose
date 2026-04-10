@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e975e18f8bbed9da857353",
   "type": "character",
-  "name": "Soren Shirazi-Makwa-Ekwensi",
+  "name": "Soren Bui-Thakur-Huitzil",
   "aliases": [
     "Tali",
     "the Fixer's Kid"
@@ -13,7 +13,7 @@
   "age": 16,
   "status": "active",
   "location": "Geartown, near North Ave and Milwaukee",
-  "description": "Talitha has her Ghanaian father's hands — wide palmed, strong fingered — and her Armenian mother's persistent stubbornness, and she has inherited both as though they were made for her profession. She works at Manda's Salvage & Fine Repair on Geartown's third industrial terrace, where she has been an apprentice since she was twelve and where she can now diagnose a failing servo actuator by sound alone. She is medium height and solidly built, with close-cropped natural hair and grease that occupies the permanent geography under her fingernails regardless of how hard she scrubs. She has one voluntary augmentation — a subdermal haptic feedback implant in her right hand that lets her feel electromagnetic field variations, technically a diagnostic tool, practically the best thing she has ever purchased with eight months of saved stipend. She also has bioluminescent skin mods along her forearms: soft amber pulses that track her heart rate, which she got at fourteen because she thought they looked good and still does.\n\nShe is cheerful in the easy, unself-conscious way of someone who genuinely likes their work and genuinely likes most people, with a bedrock practicality underneath the warmth that keeps her from being naive about either. She has strong opinions about proper tool storage, the ethics of selling salvage that still has someone's personal data on it, and which E.L.F.s are worth propitiating before a complex repair job. She argues with Manda constantly and would be devastated if Manda retired.",
+  "description": "Soren Bui-Thakur-Huitzil has her Ghanaian father's hands — wide palmed, strong fingered — and her Armenian mother's persistent stubbornness, and she has inherited both as though they were made for her profession. She works at Manda's Salvage & Fine Repair on Geartown's third industrial terrace, where she has been an apprentice since she was twelve and where she can now diagnose a failing servo actuator by sound alone. She is medium height and solidly built, with close-cropped natural hair and grease that occupies the permanent geography under her fingernails regardless of how hard she scrubs. She has one voluntary augmentation — a subdermal haptic feedback implant in her right hand that lets her feel electromagnetic field variations, technically a diagnostic tool, practically the best thing she has ever purchased with eight months of saved stipend. She also has bioluminescent skin mods along her forearms: soft amber pulses that track her heart rate, which she got at fourteen because she thought they looked good and still does.\n\nShe is cheerful in the easy, unself-conscious way of someone who genuinely likes their work and genuinely likes most people, with a bedrock practicality underneath the warmth that keeps her from being naive about either. She has strong opinions about proper tool storage, the ethics of selling salvage that still has someone's personal data on it, and which E.L.F.s are worth propitiating before a complex repair job. She argues with Manda constantly and would be devastated if Manda retired.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -168,7 +168,7 @@
     "Mentor": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -184,45 +184,25 @@
   "registered_firearms": [],
   "related_entities": [
     "Ferrogate Transit",
-    "Tessera Suppression Lattice SL-3 'Quilt'",
     "Geartown",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Arcturus KS-7 'Nursery'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Crucible Industries Arc Mace AM-2 'Thunderhead'",
-    "Crucible Industries Emergency SMG ESM-1 'Breakglass'",
-    "Devraj Solano-Yildirim",
-    "Ezio Kaboré-Malhotra",
-    "Helix Biosystems",
-    "Iowan Behemoth — 'Thunderhead'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tambadou-Reinholt"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Iranian-Jewish / Anishinaabe-Ojibwe / Bengali / Yoruba with trace Eastern European ancestry; a complex diaspora blend reflecting the Ubiquitous Diaspora. Predominantly Middle Eastern phenotype (53%) with warmth from South Asian (12.4%) and Sub-Saharan African (11.6%) ancestry, tempered by Indigenous American (14.5%) and Eastern European (7%) heritage.",
+    "heritage": "Southeast Asian (30.6%) / South Asian (28.4%) / East Asian (18.6%) / Indigenous American (14.0%) / Sub-Saharan African (8.4%) — a true Ubiquitous Diaspora blend. Her phenotype reflects this complex interweaving: Southeast Asian and South Asian ancestry create the foundation of her facial structure with warm, golden-honey undertones, East Asian heritage adds subtle refinement to her eye shape and cheekbone definition with characteristic almond eyes, Indigenous American ancestry contributes distinctive bone structure and broader facial proportions, and Sub-Saharan African ancestry enriches the warmth and depth of her skin tone with bronze undertones that shift across light spectrums.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Solidly built with functional muscularity in shoulders and forearms from years of hands-on repair work; no excess, no fragility. Wide-palmed hands with long, dexterous fingers — inherited from her father's lineage and perfectly suited to her profession.",
     "hair_color": "Natural dark brown, almost black",
     "hair_style": "Close-cropped, maintenance-minimal, occasionally uneven where she cuts it herself between paying for professional trims",
     "hair_length": "Short",
-    "eye_color": "Deep brown with warm undertones",
-    "skin_tone": "Warm tan with subtle olive undertones from the dominant Middle Eastern heritage, enriched by the warmth of South Asian and Sub-Saharan African ancestry. Displays a complex warm-golden cast that shifts in different lighting — neither purely warm nor cool, but harmoniously both.",
-    "complexion": "Clear and practical — minimal makeup, sun-worn in places from workshop lighting and the occasional rooftop diagnostic run. Perpetual traces of grease under fingernails and in the creases of her palms despite obsessive scrubbing. Small scar on left cheekbone from a tool slip at age thirteen. Facial structure reflects her blended heritage: slightly angular cheekbones with full cheeks, straight nose with subtle width, full lips.",
+    "eye_color": "Deep brown with warm undertones, subtly almond-shaped from East Asian heritage contribution",
+    "skin_tone": "Warm bronze with golden undertones, reflecting the rich interplay of Southeast Asian, South Asian, Sub-Saharan African, and Indigenous American ancestry. The tone is neither purely warm nor cool, but a harmonious blend that shifts subtly in different lighting — warm honey in daylight, deeper bronze under amber workshop lights, almost copper in neon. Slight sun-weathering on cheekbones and bridge of nose.",
+    "complexion": "Clear and practical — minimal makeup, workshop-worn in places from diagnostic lighting and rooftop work. Perpetual traces of grease under fingernails and in the creases of her palms despite obsessive scrubbing. Small scar on left cheekbone from a tool slip at age thirteen. Facial structure reflects her blended heritage: moderately angular cheekbones with balanced fullness characteristic of Southeast and South Asian ancestry, straight nose with subtle width, full lips, eyes with almond shape from East Asian heritage, and broader facial planes from Indigenous American ancestry.",
     "distinguishing_marks": [
       "Bioluminescent skin mods along both forearms in soft amber that pulse gently in rhythm with her heart rate; most visible in low light or darkness, creating a subtle rhythm effect on her skin",
       "Fine line scar on left cheekbone near temple, approximately 3cm, pale and barely visible in direct light",
@@ -232,17 +212,64 @@
     "posture_movement": "Confident and economical in movement; stands with slight forward lean as if perpetually about to lean over a workbench. Hands move with precision and purpose. Fidgets with small objects — wrenches, diagnostic tools, circuit fragments — when thinking. Makes direct eye contact. Walks quickly between tasks, rarely leisures.",
     "clothing_style": "Tier 3-4 working class with practical, salvage-conscious aesthetics. Favors reinforced work pants with multiple pockets (usually Blackwell brand or salvaged surplus), steel-toed boots scuffed and re-sealed multiple times, oversized work shirts or tank tops under a canvas apron with tools. Off-shift: plain fitted tees or salvaged vintage band shirts, same work pants, same boots. A vintage leather jacket from her mother that she's had patched and resealed twice. No corporate branding. One piece of jewelry: a small brass hex wrench on a steel chain around her neck — her father's first apprenticeship gift to her at age twelve. Grease and workshop dust are her default perfume."
   },
-  "image_prompt": "Soren Shirazi-Makwa-Ekwensi, 168cm tall, cyberpunk 2226, warm tan complexion with subtle olive undertones, short dark brown hair, deep warm brown eyes. Solidly muscular shoulders and forearms from repair work. Bioluminescent amber tracers pulsing along both forearms in low workshop light. Visible faint scar on left cheekbone. Practical Tier 3-4 working-class aesthetic: reinforced work pants, steel-toed scuffed boots, oversized tank top under canvas tool apron, vintage patched leather jacket. Brass hex wrench on steel chain around neck. Grease-stained hands with visible calluses and burn marks. Direct confident gaze, economical posture as if leaning over workbench. Standing in dimly-lit tech workshop surrounded by diagnostic equipment, neon workshop signs casting blue-amber glow. Cyberpunk industrial setting, confident repair technician, professional and weathered --ar 2:3 --v 6",
+  "image_prompt": "Soren Bui-Thakur-Huitzil, 168cm tall mixed-heritage woman with warm bronze skin and golden undertones, Southeast Asian-South Asian-East Asian-Indigenous American-African ancestry blend. Short dark brown hair, close-cropped and slightly uneven. Deep brown almond-shaped eyes with warm undertones. Moderately angular cheekbones, full lips, straight nose. Solidly muscular build from repair work, wide palms with long dexterous fingers. Small pale scar on left cheekbone. Bioluminescent amber tracers pulsing gently along both forearms in rhythm with heartbeat, most visible in low light. Wearing oversized reinforced work shirt under canvas apron with tools, work pants with multiple pockets, scuffed steel-toed boots. Vintage patched leather jacket. Small brass hex wrench on steel chain at neck. Slight forward lean as if about to lean over workbench. Confident direct gaze. Workshop setting with ambient amber and neon lighting, subtle glow from forearm mods casting soft light on skin, grease and tool marks on hands, GLMZ Great Lakes Metropolitan Zone aesthetic, professional hands-on engineer, low-key chrome-free augmentation style, practical salvage-conscious clothing, atmospheric workshop mood lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 53.0,
-    "Indigenous American": 14.5,
-    "South Asian": 12.4,
-    "Sub-Saharan African": 11.6,
-    "Eastern European": 7.0,
-    "Northern European": 1.5
+    "Southeast Asian": 30.6,
+    "South Asian": 28.4,
+    "East Asian": 18.6,
+    "Indigenous American": 14,
+    "Sub-Saharan African": 8.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 30.6
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 19.4,
+        "Pashtun": 2.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 13.7
+      },
+      "Japanese": {
+        "Japanese": 4.9
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 7.6,
+        "Maya": 1.6
+      },
+      "Andean": {
+        "Aymara": 0.7
+      },
+      "Plains Nations": {
+        "Choctaw": 4.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 2.9
+      },
+      "West African": {
+        "Malian": 0.8,
+        "Ghanaian": 1.3
+      },
+      "Central African": {
+        "Cameroonian": 3.4
+      }
+    }
+  }
 }

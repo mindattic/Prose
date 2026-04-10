@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b07ebcbdc0e28f8f3774b9",
   "type": "character",
-  "name": "Mika Valenzuela",
+  "name": "Mika Dalgaard",
   "aliases": [
     "Crowbar"
   ],
@@ -87,7 +87,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -100,21 +100,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Geartown",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Emeka Johansson-Orozco",
-    "Halima Gutierrez-Asante",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Saoirse Tambadou-Nystr��m",
-    "TESSERA PA-5 'Attendant'",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Geartown"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: predominantly Hispanic/Latin American (37.5%) with significant Eastern European (21.6%), Middle Eastern (18.3%), Sub-Saharan African (11.9%), and East Asian (10.7%) ancestry. The combination produces a complexion and facial structure that defies singular regional categorization—a living example of the Ubiquitous Diaspora.",
+    "heritage": "Scandinavian-Southeast Asian-East Asian blend: Northern European foundation (49.5%) with significant Southeast Asian (25.8%) and East Asian (24.7%) ancestry creating a striking pan-diaspora phenotype. The genetic mix produces warm-toned fair skin, prominent angular cheekbones with subtle monolid characteristics, and the geometric facial structure of multi-continental heritage—a living embodiment of the Ubiquitous Diaspora.",
     "height_cm": 182,
     "weight_kg": 89,
     "build": "Athletic and broad-shouldered with lean musculature; carries himself with the economical movement of someone used to confined spaces and quick exits",
@@ -122,8 +112,8 @@
     "hair_style": "Closely cropped fade with defined lines, maintained weekly",
     "hair_length": "Short",
     "eye_color": "Deep brown with slight amber undertone",
-    "skin_tone": "Warm medium complexion with subtle golden and olive undertones—the layered result of Latin American, Eastern European, Middle Eastern, Sub-Saharan, and East Asian heritage blending into a cohesive warm-tan hue that shifts in different lighting",
-    "complexion": "Sharp cheekbones with subtle width suggesting East Asian ancestry, strong defined jawline reflecting both Latin and Eastern European heritage. Facial structure carries the geometric precision common to Middle Eastern genetics. Five o'clock shadow is his default state. No facial hair beyond stubble. Small scar tissue above right eyebrow from old break. Skin shows the weathering of someone in his forties, though he's only 37—premature aging from stress and poor sleep cycles.",
+    "skin_tone": "Luminous warm beige—Scandinavian fairness tempered and enriched by Southeast and East Asian genetics into a neutral-warm complexion that shifts between cool and warm across his features depending on light. Higher cheekbones warm more intensely; jaw and forehead retain cooler undertones. No single descriptor fits; the blend is the point.",
+    "complexion": "High, prominent angular cheekbones with subtle but distinct epicanthic fold marking Southeast and East Asian ancestry. Strong, defined jawline reflecting Northern European heritage. Facial structure carries geometric precision across the bridge—high planes at cheekbones softening toward a squared jaw. Five o'clock shadow is his default state. No facial hair beyond dark stubble. Small scar tissue above right eyebrow from old break. Skin shows weathering of someone in his forties—premature aging from stress and poor sleep cycles—despite being only 37.",
     "distinguishing_marks": [
       "Surgical scar running 8cm along right inner forearm, pale and old—consistent with augmentation removal or installation",
       "Faded tattoo on left wrist: circuit board pattern in deep blue, partially covered by a newer overlay of Cyrillic characters (family name in his mother's script)",
@@ -133,16 +123,43 @@
     "posture_movement": "Moves with deliberate economy—never wasted motion. Tends to keep his hands visible and relaxed, a practiced tell of someone used to tense negotiations. Favors his left side slightly. Leans against walls rather than sitting; always positions himself with sightlines to exits.",
     "clothing_style": "Tier 3-4 pragmatist. Favors dark-colored utility jackets from mid-tier manufacturers (Kessler, Vertex) with reinforced pockets and hidden compartments. Wears matte-black tactical pants with cargo thigh pockets. Steel-toed boots, scuffed and practical. A worn leather jacket over everything—old money, inherited piece that's been repaired more than once. No jewelry except a simple titanium ring on his right ring finger (no wedding band). Clothes smell faintly of machine oil and cold tobacco."
   },
-  "image_prompt": "Mika Valenzuela, 37-year-old multiethnic man in cyberpunk 2226, standing in shadow against a warehouse wall. Warm medium-tan skin tone with subtle golden undertones, sharp cheekbones and strong jawline, deep brown eyes with amber glint. Dark brown hair with silver at temples, closely cropped. Weathered face suggesting stress and poor sleep, small scar above right eyebrow, perpetual five o'clock stubble. Wearing dark Kessler utility jacket over matte-black tactical pants, scuffed steel-toed boots, inherited worn leather jacket layered over top. Subdermal silver knuckle plating barely visible on relaxed hands held at sides. Positioned with deliberate economy, favoring left side, positioned to see exit routes. Neural interface scarring visible at base of skull. Faint burn scar on left knuckles, circuit board tattoo with Cyrillic overlay on left wrist. Titanium ring on right ring finger. Tense, practiced calm demeanor. Neon rim lighting in cool blues and oranges, gritty industrial background, atmospheric haze, cinematic noir-cyberpunk aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Mika Dalgaard, 37-year-old neo-noir operative with mixed Northern European-Southeast Asian heritage. Warm beige skin with subtle monolid eyes and high prominent cheekbones blending Scandinavian and East Asian genetics. Dark brown hair with silver threading, closely cropped fade. Deep brown eyes with amber undertone. Five o'clock shadow, weathered face with surgical scar above right eyebrow. Athletic build, 182cm tall. Wears dark matte-black tactical pants, steel-toed scuffed boots, reinforced utility jacket, worn inherited leather jacket layered over top. Hands show faint subdermal silver plating across knuckles, burn scar on left knuckles, circuit board tattoo on wrist with Cyrillic overlay. Posture tense and economical—leaning against wall, positioned toward exit sightline. Faint neural interface scarring visible at base of skull. Dimly lit neo-noir setting, cool and warm lighting playing across his features. GLMZ, Great Lakes Metropolitan Zone. Film noir atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 37.5,
-    "Eastern European": 21.6,
-    "Middle Eastern": 18.3,
-    "Sub-Saharan African": 11.9,
-    "East Asian": 10.7
+    "Northern European": 49.5,
+    "Southeast Asian": 25.8,
+    "East Asian": 24.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 10.9,
+        "Austrian": 30.8
+      },
+      "British Isles": {
+        "Scottish": 3,
+        "English": 4.8
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 10.8
+      },
+      "Cambodian": {
+        "Khmer": 11.7
+      },
+      "Indonesian": {
+        "Javanese": 1.5,
+        "Balinese": 1.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 24.7
+      }
+    }
+  }
 }

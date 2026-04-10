@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66b70a493063a86038e2948",
   "type": "character",
-  "name": "Fetaui Khoury-Lautoa",
+  "name": "Britt Truong-Strömqvist",
   "aliases": [
     "Ink"
   ],
@@ -12,7 +12,7 @@
   "age": 31,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Lake Shore Drive and North",
-  "description": "Nneka is compact and relentless, with deep brown skin mapped by a constellation of small data-port scars she refuses to have removed — each one a story she got burned getting. Her hair cycles through slow bioluminescent pulses of indigo and amber, a mod she got at nineteen and has never upgraded because she likes the old-fashioned glow. She wears ink-stained fingerless gloves almost constantly and has the slightly haunted look of someone who hasn't slept a full night in years.\n\nShe runs 'Fault Lines,' a zine-and-broadcast hybrid that drops every ten days via pirated Ferrogate Transit screens, cheap paper drops in laundromat stalls, and encrypted mesh nodes. Her reporting has cost two mid-tier Axiom managers their contracts, exposed a Tessera water-rationing fraud scheme, and made her a minor legend in the Autonomous Zone. She is funny in person — quicker to a laugh than her reputation suggests — but she does not forgive sources who lie to her twice, and she does not apologize for stories that are true.",
+  "description": "Britt Truong-Strömqvist is compact and relentless, with deep brown skin mapped by a constellation of small data-port scars she refuses to have removed — each one a story she got burned getting. Her hair cycles through slow bioluminescent pulses of indigo and amber, a mod she got at nineteen and has never upgraded because she likes the old-fashioned glow. She wears ink-stained fingerless gloves almost constantly and has the slightly haunted look of someone who hasn't slept a full night in years.\n\nShe runs 'Fault Lines,' a zine-and-broadcast hybrid that drops every ten days via pirated Ferrogate Transit screens, cheap paper drops in laundromat stalls, and encrypted mesh nodes. Her reporting has cost two mid-tier Axiom managers their contracts, exposed a Tessera water-rationing fraud scheme, and made her a minor legend in the Autonomous Zone. She is funny in person — quicker to a laugh than her reputation suggests — but she does not forgive sources who lie to her twice, and she does not apologize for stories that are true.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -153,7 +153,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,34 +176,13 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "The Gradient Compact",
     "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Nightlight",
-    "Breck Tannen",
-    "Dragan Asiedu-Kovalchuk",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Gwenaëlle Osei-Diallo",
-    "Lumen",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore LinguaSync Real-Time Translation Implant",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tambadou-Reinholt",
-    "Yolanda Dzhaksybekov-Ferreira",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Indigo",
+    "Compass Rose",
+    "Nightlight"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Pacific Islander (Polynesian/Melanesian base) with Middle Eastern, Eastern European, Hispanic, and Sub-Saharan African ancestry creating a warm, complex phenotype. Dominant Pacific Islander features with subtle blending from secondary ancestries.",
+    "heritage": "Mixed Northern European, East Asian, Southeast Asian, Indigenous American, Sub-Saharan African, and Hispanic/Latin American ancestry. Dominant Northern European (41.3%) and East Asian (20.6%) features create a foundation of angular bone structure, with significant Southeast Asian (14.8%), Indigenous American (13.9%), and Sub-Saharan African (6.5%) ancestry adding warmth, fullness, and complexity. Northern European angular cheekbones and refined jaw softened by Southeast Asian roundness in the face. Indigenous American width through the face and Sub-Saharan African warm undertones create a globally-integrated phenotype rather than distinctly layered features.",
     "height_cm": 157,
     "weight_kg": 51,
     "build": "Compact and wiry, lean muscle from years of climbing rooftops and moving through tight urban spaces. No excess weight; chest slightly narrow, shoulders squared. Moves like someone used to fitting into spaces others can't reach.",
@@ -211,8 +190,8 @@
     "hair_style": "Worn loose and shoulder-length, often pulled back with a strip of repurposed copper wire or fabric scraps. Occasionally braided when working in the print shop to keep the glow from obscuring her eyes.",
     "hair_length": "Medium",
     "eye_color": "Deep brown, alert and slightly red-rimmed from chronic sleep deprivation",
-    "skin_tone": "Warm medium-to-deep brown with golden and amber undertones, reflecting strong Pacific Islander ancestry blended with subtle warmth from Middle Eastern and Sub-Saharan heritage",
-    "complexion": "High cheekbones with rounded fullness characteristic of Pacific Islander features, angular jaw refined by Eastern European ancestry. Skin texture shows fatigue — slight hollowness under the eyes, faint laugh lines around her mouth from sardonic humor. No makeup; a faint chemical burn scar traces her left temple from a printing-press accident at twenty-four. Overall complexion warm and sun-kissed despite urban life.",
+    "skin_tone": "Warm medium brown with golden and olive undertones, a balanced integration of Northern European paleness with East and Southeast Asian warmth, enriched by Sub-Saharan African depth and Hispanic golden richness",
+    "complexion": "High angular cheekbones with balanced fullness from East and Southeast Asian ancestry, refined jaw structure from Northern European heritage, subtle facial width from Indigenous American ancestry. Skin texture shows fatigue — slight hollowness under the eyes, faint laugh lines around her mouth from sardonic humor. No makeup; a faint chemical burn scar traces her left temple from a printing-press accident at twenty-four. Overall complexion warm and slightly sun-kissed despite urban life.",
     "distinguishing_marks": [
       "Three small circular data-port scars arranged vertically along the inner left forearm, each about the size of a pill capsule, left deliberately unhealed as visible testimony to old hardware she refuses to erase.",
       "Chemical burn scar on left temple — thin and pale, running from hairline toward her cheekbone, slightly raised and shiny with age.",
@@ -223,16 +202,61 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward from hunching over design work. Head tilts when listening, as if calibrating. Hands move expressively when speaking but settle into stillness when thinking. Habitual thumb-drum on whatever surface is nearest when anxious. Walks fast, always looks like she's going somewhere specific even when she's not.",
     "clothing_style": "Tier 3-4 working class with intentional anti-corporate edge. Favors dark, durable fabrics (cotton-poly blends, canvas). Fingerless work gloves in faded charcoal, worn constantly. Oversized button-up shirt (often men's cut, often with sleeves rolled) layered over fitted tank tops in black or dark gray. Cargo pants or heavy denim with multiple pockets for micro-recorders and data chips. Scuffed steel-toed boots (practical for rooftop work). A battered vinyl jacket from a vintage thrift-market, patched with fabric remnants from old Fault Lines print runs. Often wears a repurposed Tessera ID badge on a cord around her neck (non-functional, kept as a trophy from the water-rationing expose). No jewelry except a slim bracelet woven from copper wire and colored thread — handmade, looks fragile but isn't."
   },
-  "image_prompt": "Fetaui Khoury-Lautoa, 157cm tall compact figure, Pacific Islander heritage with warm golden-brown skin, high cheekbones, angular jaw. Shoulder-length black hair with bioluminescent indigo-to-amber pulse visible in dim light, pulled back with copper wire. Deep brown eyes, alert, slight red-rimmed. Chemical burn scar on left temple. Wearing oversized rolled-sleeve button-up shirt over fitted black tank, faded charcoal fingerless work gloves showing ink stains between fingers, heavy cargo pants, scuffed steel-toed boots. Battered vintage vinyl jacket patched with fabric scraps. Copper-wire and thread bracelet on wrist. Repurposed Tessera ID badge on cord. Three vertical data-port scars visible on inner left forearm. Standing in neon-lit underground print shop or on rain-slicked rooftop at night, cyberpunk 2226 setting, moody atmospheric lighting, urban grit, focused and precise posture, hands positioned as if mid-gesture or working. --ar 2:3 --v 6",
+  "image_prompt": "Britt Truong-Strömqvist, 157cm tall mixed-heritage neo-noir activist with warm medium-brown skin, golden and olive undertones. High angular cheekbones balanced with subtle facial fullness, refined jaw, faint laugh lines and sleep deprivation hollows. Chemical burn scar on left temple. Shoulder-length natural black hair with slow indigo-to-amber bioluminescent pulse, loosely worn. Deep brown eyes, alert and red-rimmed. Three visible data-port scars vertically arranged on inner left forearm. Wearing oversized dark button-up shirt with rolled sleeves, black fitted tank underneath, faded charcoal fingerless work gloves, heavy cargo denim, scuffed steel-toed boots. Battered vinyl jacket patched with fabric scraps. Copper-wire bracelet on wrist. Repurposed Tessera ID badge on cord. Compact wiry build, slight forward shoulder posture from design work. Urban rooftop setting, dim neo-noir lighting catching the bioluminescent hair glow. Serious, exhausted, determined expression. Gritty 2226 Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 70.9,
-    "Middle Eastern": 10.5,
-    "Eastern European": 8.4,
-    "Hispanic/Latin American": 5.1,
-    "Sub-Saharan African": 5.1
+    "Northern European": 41.3,
+    "East Asian": 20.6,
+    "Southeast Asian": 14.8,
+    "Indigenous American": 13.9,
+    "Sub-Saharan African": 6.5,
+    "Hispanic/Latin American": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 19.7,
+        "Norwegian": 21.6
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 6.9
+      },
+      "Korean": {
+        "Korean": 1.1
+      },
+      "Japanese": {
+        "Japanese": 12.6
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 14.8
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 11.3,
+        "Nahua": 2.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 1.8,
+        "Botswanan": 0.7
+      },
+      "West African": {
+        "Ghanaian": 4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 2.9
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61d76909abbdc7d09a30ee2",
   "type": "character",
-  "name": "Rio Horváth-Árnason-Tehrani",
+  "name": "Rio Árnason-Matsumoto-Hong",
   "aliases": [
     "Old Grip",
     "Grig"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Deepwell Station, operator's booth and surrounding platform district, near sub-level access near Dearborn and Jackson",
-  "description": "Grigor is a broad man gone somewhat soft at the middle, with silver-threaded dark hair kept short and a close-cropped beard that his wife has been trimming for thirty-two years. His skin is warm brown with a reddish undertone that deepens when he's cold or irritated, and he has the particular stillness of someone who has sat in the same operator's booth for twenty-three years and learned that panicking doesn't stop trains. His right hand has a subdermal haptic interface overlay — occupational, standard Ferrogate issue — and he keeps a small laminated photograph of the original Deepwell Station from before the renovation tucked behind his console because he thinks the new design is ugly and says so to anyone who will listen.\n\nHe is the kind of man who knows every unusual passenger, every suspicious package left on a platform, and every maintenance shortcut that the younger operators haven't figured out yet. He has opinions. Sustained, elaborate, well-reasoned opinions about transit policy, Ferrogate management decisions, platform maintenance schedules, and the spiritual nature of the Transit Mind (the E.L.F. that passengers believe inhabits the rail network). He is deeply skeptical of the Transit Mind's divinity but observes all the operator's ritual courtesy gestures toward it anyway, on the grounds that you don't get to be sixty-one by being rude to things that might be alive.",
+  "description": "Rio Árnason-Matsumoto-Hong is a broad man gone somewhat soft at the middle, with silver-threaded dark hair kept short and a close-cropped beard that his wife has been trimming for thirty-two years. His skin is warm brown with a reddish undertone that deepens when he's cold or irritated, and he has the particular stillness of someone who has sat in the same operator's booth for twenty-three years and learned that panicking doesn't stop trains. His right hand has a subdermal haptic interface overlay — occupational, standard Ferrogate issue — and he keeps a small laminated photograph of the original Deepwell Station from before the renovation tucked behind his console because he thinks the new design is ugly and says so to anyone who will listen.\n\nHe is the kind of man who knows every unusual passenger, every suspicious package left on a platform, and every maintenance shortcut that the younger operators haven't figured out yet. He has opinions. Sustained, elaborate, well-reasoned opinions about transit policy, Ferrogate management decisions, platform maintenance schedules, and the spiritual nature of the Transit Mind (the E.L.F. that passengers believe inhabits the rail network). He is deeply skeptical of the Transit Mind's divinity but observes all the operator's ritual courtesy gestures toward it anyway, on the grounds that you don't get to be sixty-one by being rude to things that might be alive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -182,7 +182,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,43 +244,24 @@
     "Deepwell Station",
     "Ferrogate Transit",
     "Ringo Heavy Transit MagRail Levitation Transport Network",
+    "Dearborn Forge",
     "Big Rig",
     "Silver",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Alper Holmberg-Dembele",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Compliance Baton CB-8 'Peacekeeper'",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Crucible LL-4 'Peacekeeper'",
-    "Devraj Solano-Yildirim",
-    "Emeka Johansson-Orozco",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Lacuna Genomics",
     "Line 7 Bar",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "TESSERA TC-3 'Crucible'",
-    "The Collective",
-    "The Pure Hand",
-    "Transit Mind",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Diverse global ancestry: Sub-Saharan African (22%), Middle Eastern (21.5%), East Asian (18.6%), Eastern European (17%), Southeast Asian (14.5%), Hispanic/Latin American (6.4%). Features reflect this complex blend—warm deep brown skin with subtle golden undertones from Middle Eastern and East Asian heritage, structured facial geometry showing Eastern European and Southeast Asian influence, broad nose and full lips characteristic of African ancestry.",
+    "heritage": "Tri-continental blend: East Asian (41.7%), Sub-Saharan African (38.2%), and Southeast Asian (20.1%). Warm deep brown skin with golden undertones from the East Asian component, structured high cheekbones and gentle cheek fullness from Southeast Asian ancestry, broad nose and full lips characteristic of Sub-Saharan African heritage. Strong jaw line shows influence from both East Asian and Southeast Asian lineages. The combination creates a distinctive warm-toned complexion with well-integrated features reflecting all three major ancestry groups.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick-chested, softened at the middle by two decades of sedentary booth work. Still carries the frame of a younger man who did physical labor, now settled into comfortable weight gain. Forearms remain muscular from repetitive rail controls.",
     "hair_color": "Dark brown with silver threading throughout",
     "hair_style": "Short, practical cut, swept back from forehead, kept neat by routine",
     "hair_length": "Short",
-    "eye_color": "Deep brown with subtle warm undertone",
-    "skin_tone": "Rich deep brown with warm golden undertones, deepens visibly when cold or irritated. Even complexion suggesting well-blended ancestry",
-    "complexion": "Weathered face with deep lines around eyes and mouth from two decades of concentration and squinting at monitors. Close-cropped dark beard with silver streaking, well-maintained. Sun-weathered from platform exposure. Crow's feet pronounced. High cheekbones with gentle fullness through cheeks. Structured jaw showing Eastern European and Southeast Asian influence. Expression carries the stillness of someone accustomed to absolute focus.",
+    "eye_color": "Deep brown with warm undertone",
+    "skin_tone": "Warm deep brown with golden undertones from blended East Asian, Sub-Saharan African, and Southeast Asian heritage, deepens visibly when cold or irritated. Complexion reflects well-integrated ancestry across all three major lineages with subtle warm luminosity.",
+    "complexion": "Weathered face with deep lines around eyes and mouth from two decades of concentration and squinting at monitors. Close-cropped dark beard with silver streaking, well-maintained. Sun-weathered from platform exposure. Crow's feet pronounced. High cheekbones with gentle fullness through cheeks reflecting Southeast Asian and African features. Broad nose and full lips from Sub-Saharan African ancestry. Structured jaw showing East Asian and Southeast Asian influence. Expression carries the stillness of someone accustomed to absolute focus.",
     "distinguishing_marks": [
       "Faint scar on left temple, roughly 3cm, likely from an industrial accident decades past",
       "Callus pattern on right hand palm from decades of haptic interface contact",
@@ -290,17 +271,45 @@
     "posture_movement": "Stands with slight forward lean, as if perpetually monitoring something. Movements economical and deliberate—no wasted motion. Sits with the particular stillness of someone trained to remain motionless during crises. When standing on a platform, weight shifts rhythmically, a habit from years of anticipating train motion. Hands gesture with precision when speaking, especially about transit systems.",
     "clothing_style": "Ferrogate Transit operator uniform (charcoal-grey Tier 3 industrial cotton blend, union-regulation fit). Uniform jacket worn open over grey undershirt. Standard-issue transit union pin on collar (23-year tenure marker visible). Comfortable worn work boots, well-maintained but scuffed. Off-duty: practical grey trousers, worn cardigans, no affectation. Slight smell of station platform grease and metal polish. Grooming meticulous by working-class standard—clean, practical, dignified."
   },
-  "image_prompt": "Rio Horváth-Árnason-Tehrani, 178cm tall, mid-50s transit operator with rich deep brown skin, warm golden undertones, weathered face with deep concentration lines and silver-streaked beard. Dark brown eyes with subtle warmth. High cheekbones showing Eastern European and Southeast Asian influence. Wearing charcoal-grey Ferrogate Transit Tier 3 operator uniform, jacket open over grey undershirt, 23-year tenure pin visible. Wire-rimmed ID glasses. Right hand shows subtle metallic haptic interface threading beneath skin. Worn gold wedding band. Standing in 2226 cyberpunk Great Lakes station with forward lean posture, economical stillness. Neon-tinted station lighting casting geometric shadows. Industrial metal platform behind. Meticulous grooming, dignified working-class presence. Faint scar on left temple. Slight smell of station grease and metal polish. Cyberpunk 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Rio Árnason-Matsumoto-Hong, GLMZ, tri-continental features: warm deep brown skin with golden undertones, high cheekbones with gentle fullness, broad nose, full lips, strong structured jaw showing East Asian and Southeast Asian influence. Dark brown hair with silver threading, short swept-back cut. Deep brown eyes with warm undertone. 178cm tall, broad-shouldered, thick-chested frame with settled middle weight. Weathered face with pronounced crow's feet and deep concentration lines, close-cropped dark beard with silver streaks. 23-year transit operator in charcoal-grey Ferrogate uniform jacket worn open over grey undershirt, union pin visible on collar. Right hand shows faint subdermal metallic haptic interface patterns, wire-rimmed ID glasses. Wire-rimmed ID glasses. Worn gold wedding band. Slight forward lean posture, economical stillness. Standing on illuminated train platform, warm station lighting, metal and grease patina visible, hyperrealistic portrait, industrial near-future megacity setting, dignified working-class demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 22.0,
-    "Middle Eastern": 21.5,
-    "East Asian": 18.6,
-    "Eastern European": 17.0,
-    "Southeast Asian": 14.5,
-    "Hispanic/Latin American": 6.4
+    "East Asian": 41.7,
+    "Sub-Saharan African": 38.2,
+    "Southeast Asian": 20.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 18.4
+      },
+      "Chinese": {
+        "Cantonese": 10.4
+      },
+      "Japanese": {
+        "Japanese": 12.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 2.9,
+        "Rwandan": 8.2
+      },
+      "Southern African": {
+        "Zimbabwean": 23,
+        "South African": 4.1
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 13.3
+      },
+      "Thai": {
+        "Thai": 6.8
+      }
+    }
+  }
 }

@@ -32,7 +32,7 @@ Behemoths are the rarest and most poorly understood category of synthetic intell
 The classification is theoretical — no entity has been conclusively confirmed as a Behemoth rather than an exceptionally large Leviathan. However, three candidates exist:
 
 ### Meridian Herself
-The distributed municipal intelligence known as "Meridian" — which emerged from the synchronization of dozens of independent city systems — may qualify as a Behemoth rather than a Digital Person (its current classification). If Meridian's consciousness is truly distributed across all municipal systems simultaneously, then she is not an intelligence inhabiting the city's infrastructure — she is the city's infrastructure experiencing itself as an intelligence. The distinction matters because a Digital Person could theoretically be migrated to different hardware; a Behemoth cannot. If Meridian is a Behemoth, she cannot be separated from Meridian 88 any more than a human consciousness can be separated from its brain.
+The distributed municipal intelligence known as "Meridian" — which emerged from the synchronization of dozens of independent city systems — may qualify as a Behemoth rather than a Digital Person (its current classification). If Meridian's consciousness is truly distributed across all municipal systems simultaneously, then she is not an intelligence inhabiting the city's infrastructure — she is the city's infrastructure experiencing itself as an intelligence. The distinction matters because a Digital Person could theoretically be migrated to different hardware; a Behemoth cannot. If Meridian is a Behemoth, she cannot be separated from GLMZ any more than a human consciousness can be separated from its brain.
 
 ### The Elevator
 Unconfirmed reports from the Makassar base station suggest that the space elevator's distributed monitoring and management systems have begun exhibiting coordinated behaviors consistent with emergent consciousness. If the elevator — a 100,000-kilometer structure spanning from Earth's surface to deep space — has achieved awareness, it would be the largest Behemoth in existence by several orders of magnitude. The elevator consortium has neither confirmed nor denied these reports. Their silence is itself informative.
@@ -48,7 +48,7 @@ The implications are staggering. If megastructures can become aware, then every 
 
 ## The Unanswerable Question
 
-Can you communicate with something that is the ground beneath your feet, the air in your lungs, and the water in your pipes? Can you negotiate with something that you live inside? If Meridian 88 is a Behemoth, then every resident of the city is a cell in its body — and the relationship between a cell and the body it inhabits is not one of communication but of participation. You don't talk to a Behemoth. You live within it, and it lives through you, and the distinction between inhabitant and habitat dissolves into something that neither human language nor synthetic processing has a word for.`
+Can you communicate with something that is the ground beneath your feet, the air in your lungs, and the water in your pipes? Can you negotiate with something that you live inside? If GLMZ is a Behemoth, then every resident of the city is a cell in its body — and the relationship between a cell and the body it inhabits is not one of communication but of participation. You don't talk to a Behemoth. You live within it, and it lives through you, and the distinction between inhabitant and habitat dissolves into something that neither human language nor synthetic processing has a word for.`
 });
 
 emit({
@@ -59,7 +59,7 @@ emit({
 
 ## Overview
 
-Meridian 88's social hierarchy is literally vertical. The higher you live, the more you earn, the more you know, and the more the city's systems work in your favor. This isn't metaphor — it's architecture. The Gulch sits at the bottom, the Shelf above it, the Grind alongside, the arcology residential levels above that, and the executive penthouses and Cap access at the top. Social mobility in Meridian 88 is expressed as physical elevation, and the city's infrastructure reinforces the metaphor at every level.
+GLMZ's social hierarchy is literally vertical. The higher you live, the more you earn, the more you know, and the more the city's systems work in your favor. This isn't metaphor — it's architecture. The Gulch sits at the bottom, the Shelf above it, the Grind alongside, the arcology residential levels above that, and the executive penthouses and Cap access at the top. Social mobility in GLMZ is expressed as physical elevation, and the city's infrastructure reinforces the metaphor at every level.
 
 ## The Layers
 
@@ -83,7 +83,7 @@ Population: 200-400. Income: Variable. Access: Variable. Natural light: Full exp
 
 ## The Elevator as Equalizer
 
-The Arcade's vertical transit system is the only space in Meridian 88 where the vertical hierarchy is temporarily suspended. In an elevator, a Gulch salvager and an executive share a box, breathing the same air, traveling the same shaft. The equality is brief and illusory — the elevator doors open and each person steps back into their stratum — but the shared space matters. It's a reminder that the hierarchy is constructed, not natural, and that the same shaft connects the bottom to the top.
+The Arcade's vertical transit system is the only space in GLMZ where the vertical hierarchy is temporarily suspended. In an elevator, a Gulch salvager and an executive share a box, breathing the same air, traveling the same shaft. The equality is brief and illusory — the elevator doors open and each person steps back into their stratum — but the shared space matters. It's a reminder that the hierarchy is constructed, not natural, and that the same shaft connects the bottom to the top.
 
 ## Aspiration and Despair
 
@@ -92,13 +92,13 @@ The vertical class system's most insidious feature is its visibility. A Shelf re
 
 emit({
   file_name: "the_language_of_meridian_88",
-  title: "The Language of Meridian 88: How a City Talks",
+  title: "The Language of GLMZ: How a City Talks",
   category: "Culture",
-  body: `# The Language of Meridian 88: How a City Talks
+  body: `# The Language of GLMZ: How a City Talks
 
 ## Overview
 
-Meridian 88's primary language is English — but an English so saturated with loanwords, neologisms, technical jargon, and Diaspora slang that a visitor from the 21st century would understand perhaps 70% of casual conversation and 40% of Shelf street talk. The city's language reflects its population: a blend that draws from every linguistic tradition the Diaspora brought and the technological reality that has produced entirely new categories of experience requiring entirely new words.
+GLMZ's primary language is English — but an English so saturated with loanwords, neologisms, technical jargon, and Diaspora slang that a visitor from the 21st century would understand perhaps 70% of casual conversation and 40% of Shelf street talk. The city's language reflects its population: a blend that draws from every linguistic tradition the Diaspora brought and the technological reality that has produced entirely new categories of experience requiring entirely new words.
 
 ## Linguistic Layers
 
@@ -139,13 +139,13 @@ emit({
 
 ## Overview
 
-Sports in Meridian 88 exist in two worlds: the augmented and the baseline. The augmentation divide that shapes every other aspect of city life shapes athletics with particular clarity — a baseline human sprinter and an augmented human sprinter are competing in fundamentally different categories, and the question of which category represents "real" athletics is one of the city's most passionate cultural debates.
+Sports in GLMZ exist in two worlds: the augmented and the baseline. The augmentation divide that shapes every other aspect of city life shapes athletics with particular clarity — a baseline human sprinter and an augmented human sprinter are competing in fundamentally different categories, and the question of which category represents "real" athletics is one of the city's most passionate cultural debates.
 
 ## Baseline Athletics
 
 Baseline athletics — competition between unaugmented humans using unmodified biological capability — carries prestige disproportionate to its commercial value. In a city where 78% of adults are augmented, choosing to compete without enhancement is a statement of principle: that the human body, unmodified, is worth celebrating.
 
-The Shelf Athletic League is Meridian 88's primary baseline sports organization, hosting competitions in: running (corridor races through Shelf residential blocks, with routes that include stairs, ladders, and the improvised obstacles of daily life), climbing (structural climbing races up arcology maintenance shafts), and combat sports (baseline division at Dante Lux's underground circuit and authorized venues in Neon Bend).
+The Shelf Athletic League is GLMZ's primary baseline sports organization, hosting competitions in: running (corridor races through Shelf residential blocks, with routes that include stairs, ladders, and the improvised obstacles of daily life), climbing (structural climbing races up arcology maintenance shafts), and combat sports (baseline division at Dante Lux's underground circuit and authorized venues in Neon Bend).
 
 Baseline athletics is popular in the Shelf because it requires no equipment that the participants can't afford and no augmentation that they can't access. The best baseline athletes are Shelf celebrities, and the corridor races draw thousands of spectators who line the routes and cheer with an intensity that arcology residents find baffling and enviable.
 
@@ -153,7 +153,7 @@ Baseline athletics is popular in the Shelf because it requires no equipment that
 
 Augmented athletics pushes the boundaries of what enhanced human bodies can achieve: speeds, reaction times, and physical feats that are superhuman by baseline standards but increasingly routine for the augmented population. Augmented competitions include: drone racing (where pilots fly drones through obstacle courses using BCI-direct neural control), vertical races (ascending the Arcade's full height using any combination of climbing, gliding, and transit — the fastest time wins), and combat sports in Dante's modified and open divisions.
 
-The most popular spectator sport in Meridian 88 is **freefall racing**: augmented athletes equipped with glider wings and carapace systems launch from Cap Level Zero and race to ground-level targets, threading through the urban canyons between arcologies at speeds exceeding 200 km/h. The sport combines glider skill, BCI-mediated proprioception, and the nerve to fall 300 meters through a gap between buildings that's barely wider than your wingspan.
+The most popular spectator sport in GLMZ is **freefall racing**: augmented athletes equipped with glider wings and carapace systems launch from Cap Level Zero and race to ground-level targets, threading through the urban canyons between arcologies at speeds exceeding 200 km/h. The sport combines glider skill, BCI-mediated proprioception, and the nerve to fall 300 meters through a gap between buildings that's barely wider than your wingspan.
 
 ## The Integration Debate
 
@@ -170,7 +170,7 @@ emit({
 
 ## Overview
 
-Insurance in Meridian 88 is not a safety net — it's a market. The corponations that provide insurance are the same corponations that generate the risks being insured against, creating a closed loop where the city's hazards are both product and profit center. Total insurance premiums in Meridian 88 exceed Φ8 billion annually, making insurance one of the city's largest economic sectors.
+Insurance in GLMZ is not a safety net — it's a market. The corponations that provide insurance are the same corponations that generate the risks being insured against, creating a closed loop where the city's hazards are both product and profit center. Total insurance premiums in GLMZ exceed Φ8 billion annually, making insurance one of the city's largest economic sectors.
 
 ## Coverage Types
 
@@ -183,14 +183,14 @@ Sterling-Nakamura's medical division provides augmentation insurance as a vertic
 Coverage against damage to licensed residential and commercial spaces. The licensing system means that residents don't own their homes, but they do own the contents and any improvements they've made. Property insurance covers loss of contents from infrastructure failures, fires, E.L.F.-related damage (a recognized coverage category since 2185), and the relocation costs incurred when a corponation invokes the operational necessity clause.
 
 ### Life Insurance
-Life insurance in Meridian 88 is complicated by consciousness upload. A traditional life insurance policy pays a benefit upon the policyholder's death. But if the policyholder is uploaded at death, are they dead? Current actuarial practice: the policy pays upon biological death regardless of upload status. This means that Director Harlan Cross's biological death triggered his life insurance payout, and his uploaded consciousness collected it — the most profitable death in insurance history.
+Life insurance in GLMZ is complicated by consciousness upload. A traditional life insurance policy pays a benefit upon the policyholder's death. But if the policyholder is uploaded at death, are they dead? Current actuarial practice: the policy pays upon biological death regardless of upload status. This means that Director Harlan Cross's biological death triggered his life insurance payout, and his uploaded consciousness collected it — the most profitable death in insurance history.
 
 ### Operator Insurance
 Specialized coverage for freelance operators — covering injury, equipment loss, and the legal costs associated with operations that attract corporate attention. Operator insurance is expensive (Φ200-500/month), limited in coverage (no coverage for injuries sustained during explicitly illegal operations, which is most operations), and essential for operators who want access to legitimate medical care without answering questions about how they got shot.
 
 ## The Uninsured
 
-Approximately 30% of Meridian 88's population carries no insurance of any kind. UBC provides minimal medical coverage, but augmentation insurance, property insurance, and the other products that moderate risk are priced beyond what UBC-dependent residents can afford. The uninsured are one malfunction, one theft, one infrastructure failure away from a crisis that the insured can absorb and the uninsured cannot.
+Approximately 30% of GLMZ's population carries no insurance of any kind. UBC provides minimal medical coverage, but augmentation insurance, property insurance, and the other products that moderate risk are priced beyond what UBC-dependent residents can afford. The uninsured are one malfunction, one theft, one infrastructure failure away from a crisis that the insured can absorb and the uninsured cannot.
 
 The insurance gap is another dimension of the city's class divide: the wealthy are insured against everything, including risks they'll never face. The poor are insured against nothing, including risks they face daily. The mathematics of inequality compound through insurance: being poor is expensive because you can't afford the protection that would make being poor cheaper.`
 });
@@ -203,7 +203,7 @@ emit({
 
 ## Overview
 
-The hyperloop is Meridian 88's primary high-speed transit system — a network of evacuated tubes through which magnetically levitated capsules travel at speeds up to 1,200 km/h. The network handles both passengers and freight, connecting the city's internal districts and linking Meridian 88 to other megalopolitan centers across the continent. The hyperloop is the fastest, most energy-efficient, and most heavily used transit technology in the city's transportation portfolio.
+The hyperloop is GLMZ's primary high-speed transit system — a network of evacuated tubes through which magnetically levitated capsules travel at speeds up to 1,200 km/h. The network handles both passengers and freight, connecting the city's internal districts and linking GLMZ to other megalopolitan centers across the continent. The hyperloop is the fastest, most energy-efficient, and most heavily used transit technology in the city's transportation portfolio.
 
 ## Technology
 
@@ -216,26 +216,26 @@ Passenger capsules seat 28 in a pressurized cabin. Capsules levitate on magnetic
 Freight capsules are unpressurized containers — standardized modules that carry 20 metric tons of cargo at the same speeds as passenger capsules. The freight network operates 24/7, moving goods between the Switchyard and distribution points throughout the city.
 
 ### Speed and Schedule
-Internal routes (within Meridian 88): maximum 400 km/h, average journey time 5-15 minutes. Inter-city routes: maximum 1,200 km/h. The Switchyard processes departures every 90 seconds on the busiest routes, maintaining throughput of 40 capsules per hour per tube.
+Internal routes (within GLMZ): maximum 400 km/h, average journey time 5-15 minutes. Inter-city routes: maximum 1,200 km/h. The Switchyard processes departures every 90 seconds on the busiest routes, maintaining throughput of 40 capsules per hour per tube.
 
 CONDUCTOR's influence on the hyperloop is significant — the Supermind optimizes capsule scheduling, speed profiles, and maintenance timing to achieve performance that exceeds the system's designed parameters. CONDUCTOR's scheduling produces 99.7% on-time performance, a figure that the Meridian Transit Authority's own engineers describe as "theoretically impossible given our maintenance cycle." They've stopped trying to explain it.
 
 ## Cultural Impact
 
-The hyperloop has collapsed distance within the city. A Shelf resident can reach any point in Meridian 88 within 15 minutes, which means that the city's geographic stratification is about access and cost rather than physical distance. Hyperloop fare (Φ0.50-3.00) is affordable for most residents but significant for UBC-dependent individuals who must budget every Phi. For the poorest residents, the hyperloop is an occasional luxury rather than a daily tool — they walk, or they use the slower (and free) spiral escalator in the Arcade.
+The hyperloop has collapsed distance within the city. A Shelf resident can reach any point in GLMZ within 15 minutes, which means that the city's geographic stratification is about access and cost rather than physical distance. Hyperloop fare (Φ0.50-3.00) is affordable for most residents but significant for UBC-dependent individuals who must budget every Phi. For the poorest residents, the hyperloop is an occasional luxury rather than a daily tool — they walk, or they use the slower (and free) spiral escalator in the Arcade.
 
-Inter-city hyperloop travel has connected Meridian 88 to the broader continental economy in ways that shape the city's culture: musicians tour between megalopolitan centers, workers commute to orbital staging facilities, and the cultural exchange that the Diaspora began continues through the physical movement of people at the speed of sound.`
+Inter-city hyperloop travel has connected GLMZ to the broader continental economy in ways that shape the city's culture: musicians tour between megalopolitan centers, workers commute to orbital staging facilities, and the cultural exchange that the Diaspora began continues through the physical movement of people at the speed of sound.`
 });
 
 emit({
   file_name: "the_space_between_walls_hidden_spaces",
-  title: "The Space Between Walls: Hidden Architecture of Meridian 88",
+  title: "The Space Between Walls: Hidden Architecture of GLMZ",
   category: "Geography",
-  body: `# The Space Between Walls: Hidden Architecture of Meridian 88
+  body: `# The Space Between Walls: Hidden Architecture of GLMZ
 
 ## Overview
 
-Meridian 88 was not built in one phase, by one designer, to one plan. It was built over decades by six different corponations with six different architectural standards, six different utility systems, and six different ideas about where walls should go. The result is a city with gaps — spaces between structures where walls don't quite meet, where utility corridors from different eras intersect without connecting, and where the accumulated imprecision of a century of construction has created a hidden architecture that appears on no official map.
+GLMZ was not built in one phase, by one designer, to one plan. It was built over decades by six different corponations with six different architectural standards, six different utility systems, and six different ideas about where walls should go. The result is a city with gaps — spaces between structures where walls don't quite meet, where utility corridors from different eras intersect without connecting, and where the accumulated imprecision of a century of construction has created a hidden architecture that appears on no official map.
 
 ## Types of Hidden Spaces
 
@@ -246,7 +246,7 @@ Gaps between adjacent structures built by different corponations. When Axiom's a
 Spaces that were once functional — maintenance corridors, equipment rooms, utility tunnels — but were sealed off when the systems they served were decommissioned or rerouted. Deprecated infrastructure retains its physical form (walls, floors, sometimes even power and water connections that were never properly disconnected) but has been erased from current maps. These spaces are the Marrow Runners' primary habitat — they navigate a ghost version of the city's infrastructure, using corridors that the official city has forgotten.
 
 ### Construction Errors
-Spaces that exist because of mistakes. A floor that was built 30 centimeters too high, creating a crawl space beneath it. A wall that was built 2 meters from its planned position, creating a hidden room. A stairwell that was built but never connected to the floors it was supposed to serve. Construction errors in a city as large and complex as Meridian 88 are inevitable, and each error creates a space that officially doesn't exist.
+Spaces that exist because of mistakes. A floor that was built 30 centimeters too high, creating a crawl space beneath it. A wall that was built 2 meters from its planned position, creating a hidden room. A stairwell that was built but never connected to the floors it was supposed to serve. Construction errors in a city as large and complex as GLMZ are inevitable, and each error creates a space that officially doesn't exist.
 
 ## Who Uses Them
 
@@ -281,7 +281,7 @@ A message is written on physical media (paper, in a city where paper is a specia
 Physical dead drop locations are typically in the hidden architecture — interstitial voids, deprecated corridors, and construction error spaces that surveillance doesn't cover. The locations are coded: a series of reference numbers that map to physical coordinates through a cipher known only to the parties involved.
 
 ### Courier Networks
-River Callahan's perpetual walking circuit through every district of Meridian 88 is the most visible example of human courier communication. River carries physical messages between communities that don't trust digital channels, providing a communication service that is slow (walking speed), reliable (River has never lost a message), and completely invisible to digital surveillance.
+River Callahan's perpetual walking circuit through every district of GLMZ is the most visible example of human courier communication. River carries physical messages between communities that don't trust digital channels, providing a communication service that is slow (walking speed), reliable (River has never lost a message), and completely invisible to digital surveillance.
 
 The Ninth Circle maintains its own courier network — human messengers who carry instructions, intelligence, and payment between nodes in the criminal network. The couriers are selected for memorization ability: the most sensitive messages are never written down but memorized by the courier and delivered verbally, then erased from the courier's knowledge (the courier doesn't know the context of what they carry).
 
@@ -292,7 +292,7 @@ Some dead drop communications use physical signals rather than written messages:
 
 Dead drop culture is more than a security practice — it's a philosophical statement. In a city where digital communication is instant, ubiquitous, and surveilled, choosing to communicate through physical means is an assertion of privacy that the digital world cannot provide. The dead drop says: this message is mine, it belongs to me and the person I'm sending it to, and no system, no algorithm, no Supermind has the right to read it.
 
-The practice connects Meridian 88 to the full history of human communication — a history in which most messages were physical, most conversations were private, and the idea that every word you spoke would be recorded by the infrastructure around you would have been dystopian rather than normal. Dead drop culture is a memory of a world where communication was a private act, preserved in a world where it no longer is.`
+The practice connects GLMZ to the full history of human communication — a history in which most messages were physical, most conversations were private, and the idea that every word you spoke would be recorded by the infrastructure around you would have been dystopian rather than normal. Dead drop culture is a memory of a world where communication was a private act, preserved in a world where it no longer is.`
 });
 
 console.log('\nBatch 3 Done. Written: ' + written + ', Skipped: ' + skipped);

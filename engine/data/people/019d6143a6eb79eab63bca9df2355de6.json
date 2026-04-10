@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6eb79eab63bca9df2355de6",
   "type": "character",
-  "name": "Diego Zaragoza-Kettani",
+  "name": "Diego Zaragoza-Anang",
   "aliases": [
     "TQ",
     "the Kid"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "Highland Park Autonomous Zone, sleeps at his aunt's flat, near Michigan Ave and Walton",
-  "description": "Tarquin is all elbows and velocity — a tall, wiry teenager with dark brown skin, a close-cut fade, and his father's Ghanaian cheekbones softened by his mother's Bolivian jaw. He has a single cosmetic mod he saved for three months to afford: a cat tail in iridescent black that he swishes when he's thinking and tucks carefully into his waistband when his aunt is home. His fingers are permanently stained with aerosolized pigment in colors that shift weekly. He carries a battered recording rig everywhere — a shoulder-mounted camera array he built from three broken units cannibalized at the Brightmoor Reclamation salvage markets.\n\nTarquin is the kind of talented that hasn't yet been shaped by knowing it, which makes his work both raw and startling — he films while he sprays, combines the visual and the documentary without quite understanding that's an unusual thing to do, and the result is a growing archive of HPAZ street art that is also an accidental ethnography of a community holding itself together. He is cocky in the way of someone who knows they're good but hasn't been tested, and genuinely kind in the way of someone raised by people who expected it. He is currently engaged in a low-grade obsessive competition with another writer whose tag, 'Çukur,' keeps appearing over or beside his own work — he hasn't decided yet if it's a rivalry or a conversation.",
+  "description": "Diego Zaragoza-Anang is all elbows and velocity — a tall, wiry teenager with dark brown skin, a close-cut fade, and his father's Ghanaian cheekbones softened by his mother's Bolivian jaw. He has a single cosmetic mod he saved for three months to afford: a cat tail in iridescent black that he swishes when he's thinking and tucks carefully into his waistband when his aunt is home. His fingers are permanently stained with aerosolized pigment in colors that shift weekly. He carries a battered recording rig everywhere — a shoulder-mounted camera array he built from three broken units cannibalized at the Brightmoor Reclamation salvage markets.\n\nDiego Zaragoza-Anang is the kind of talented that hasn't yet been shaped by knowing it, which makes his work both raw and startling — he films while he sprays, combines the visual and the documentary without quite understanding that's an unusual thing to do, and the result is a growing archive of HPAZ street art that is also an accidental ethnography of a community holding itself together. He is cocky in the way of someone who knows they're good but hasn't been tested, and genuinely kind in the way of someone raised by people who expected it. He is currently engaged in a low-grade obsessive competition with another writer whose tag, 'Çukur,' keeps appearing over or beside his own work — he hasn't decided yet if it's a rivalry or a conversation.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -171,7 +171,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,25 +228,15 @@
     "Highland Park Autonomous Zone",
     "Brightmoor Reclamation",
     "The Reclamation Assembly",
-    "ARCHIVE",
+    "The Accidental",
+    "Arcturus KS-7 'Nursery'",
     "Ringo Corponation",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Arcturus KS-7 'Nursery'",
-    "Aybek Yamamoto-Darko",
-    "Bintou Halvorsen-Osei",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Plot 17",
-    "Ringo DV-4 'Courier'",
-    "Slagworks Industrial",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "Veslemøy Achebe-Tursynov"
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (68.4%) with significant East Asian (21.9%) and North African (9.7%) ancestry. The genetic blend creates a striking fusion: warm medium-brown skin with subtle golden undertones from the Latin American base, enhanced by the East Asian cheekbone structure and the North African depth to his complexion. His features reflect this diaspora mix — angular and defined from multiple ancestry lines converging.",
+    "heritage": "Multi-continental diaspora blend: Hispanic/Latin American (32.7%), Sub-Saharan African (27.8%), Indigenous American (22.9%), Eastern European (9.4%), Northern European (7.2%). This five-way genetic convergence creates striking complexity — warm medium-brown skin with golden and subtle reddish undertones from the Latin American and Indigenous American base, deepened and enriched by Sub-Saharan African heritage. His features reflect this fusion: prominent, sculpted cheekbones with strong definition, a broad jawline showing African and Indigenous ancestry, angular structure balanced by full-featured warmth. Eyes set deep with the characteristic depth of African heritage. The overall effect is unmistakably rooted in multiple continents simultaneously.",
     "height_cm": 185,
     "weight_kg": 68,
     "build": "Wiry and angular — all lean muscle and restless energy, the build of someone who climbs and runs and rarely sits still. Long limbs, sharp shoulders, minimal body fat.",
@@ -254,25 +244,80 @@
     "hair_style": "Close-cut fade with precise geometric lines, maintained weekly; no styling products, let it air-dry into clean definition",
     "hair_length": "Short",
     "eye_color": "Deep brown, almost black",
-    "skin_tone": "Medium-warm brown with golden undertones; sun-darkened from outdoor work, showing the blended warmth of Latin American and East Asian ancestry with North African depth. Not evenly tanned — darker on exposed areas from consistent outdoor climbing and spray-painting work.",
-    "complexion": "Clear skin with a sparse scatter of acne across his upper back and shoulders from summer heat and outdoor sweating. Strong cheekbones reflecting East Asian-Latin American blend, balanced by a warm jawline. No facial hair — too young, or keeps it shaved. Permanent pigment staining on his fingertips and cuticles in shifting colors: current palette shows traces of cadmium yellow, metallic silver, and hot pink beneath the embedded aerosol dust.",
-    "visible_augmentations": "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with an opalescent sheen that shifts blue-green-purple in certain light; he keeps it tucked into his waistband or cargo pockets when indoors with his aunt, but wears it loose when working. Recording rig (shoulder-mounted camera array, three separate units cannibalized and rewired) is an external accessory carried constantly — weathered, held together with epoxy and electrical tape, covered in stickers and worn paint.",
+    "skin_tone": "Rich medium-warm brown with golden undertones and subtle reddish warmth; sun-darkened from outdoor work, showing the blended warmth of Latin American and Indigenous American heritage enriched by Sub-Saharan African depth. Uneven tanning — darker on exposed areas from consistent outdoor climbing and spray-painting work.",
+    "complexion": "Clear skin with sparse acne scatter across upper back and shoulders from summer heat and outdoor sweating. Strong, sculpted cheekbones reflecting the multi-continental blend, balanced by a warm, broad jawline characteristic of African and Indigenous ancestry. No facial hair — maintains clean-shaven appearance. Permanent pigment staining on fingertips and cuticles in shifting colors: cadmium yellow, metallic silver, and hot pink traces beneath embedded aerosol dust.",
+    "visible_augmentations": "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with opalescent sheen that shifts blue-green-purple in certain light; typically tucked into waistband indoors but worn loose during work. Recording rig (shoulder-mounted camera array, three cannibalized and rewired units) carried constantly — weathered, epoxy and electrical tape construction, covered in stickers and worn paint.",
     "distinguishing_marks": [
-      "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with an opalescent sheen that shifts blue-green-purple in certain light; moves independently with mood and cognition",
-      "Small burn scar on his left forearm (5cm, linear) from a salvage yard accident two years ago with a hot flux capacitor; faded but visible",
-      "Faint scarring on both knuckles from spray-can pressure cuts and small lacerations from concrete climbing"
+      "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with opalescent sheen that shifts blue-green-purple in certain light; moves independently with mood and cognition",
+      "Small burn scar on left forearm (5cm, linear) from salvage yard accident two years ago with hot flux capacitor; faded but visible",
+      "Faint scarring on both knuckles from spray-can pressure cuts and concrete climbing lacerations"
     ],
-    "posture_movement": "Perpetually in motion — fidgeting, shifting weight, bouncing on the balls of his feet. When focused on work (spraying, filming, editing), he goes still with an almost meditative intensity. Climbs and moves through three-dimensional space with practiced ease; comfortable on fire escapes, ledges, scaffolding. His tail moves in counterpoint to his body language: swishing when excited or thinking, tucking when anxious. Walks with a slight forward lean, as if always heading somewhere interesting.",
-    "clothing_style": "Tier 4 working-class aesthetics with art-scene individualism. Favors oversized hoodies (often paint-stained, deliberately or accidentally), slim cargo pants with deep pockets for supplies, reinforced tactical boots scuffed and weathered from climbing. Wears a canvas satchel across his chest (cannibalized from a courier bag, patched with fabric tape) that holds spray cans, tools, and backup recording media. His aunt bought him a Brightmoor reclamation puffer vest last winter; he wears it unzipped over hoodies. No expensive brands; everything is either salvaged, thrifted, or bought secondhand at the Highland Park market stalls. His color palette mirrors his spray-paint choices — one week heavy on grays and blacks, the next unexpected pops of neon through a thrifted windbreaker. All his clothes show evidence of his work: paint spatters, singe marks, dust from climbing."
+    "posture_movement": "Perpetually in motion — fidgeting, shifting weight, bouncing on balls of feet. When focused on work (spraying, filming, editing), goes still with meditative intensity. Climbs and moves through three-dimensional space with practiced ease; comfortable on fire escapes, ledges, scaffolding. Tail moves in counterpoint to body language: swishing when excited or thinking, tucking when anxious. Walks with slight forward lean, as if always heading somewhere interesting.",
+    "clothing_style": "Tier 4 working-class aesthetics with art-scene individualism. Oversized hoodies (paint-stained, deliberately or accidentally), slim cargo pants with deep pockets for supplies, reinforced tactical boots scuffed and weathered from climbing. Canvas satchel across chest (cannibalized courier bag, patched with fabric tape) holding spray cans, tools, backup recording media. Brightmoor reclamation puffer vest worn unzipped over hoodies. No expensive brands — salvaged, thrifted, or secondhand Highland Park market purchases. Color palette mirrors spray-paint choices — grays and blacks alternating with neon pops through thrifted windbreakers. All clothing shows work evidence: paint spatters, singe marks, climbing dust."
   },
-  "image_prompt": "Diego Zaragoza-Kettani, 185cm tall wiry East Asian-Hispanic-North African mixed heritage young man with medium-warm golden-brown skin, deep black eyes, and short geometric fade haircut. Iridescent opalescent black cat tail with fine fur emerging from spine, swishing with kinetic energy. Paint-stained oversized hoodie over cargo pants, weathered tactical boots, canvas satchel covered in stickers and tape, shoulder-mounted camera rig held together with epoxy and electrical tape. Small linear burn scar on left forearm, pigment stains on fingertips in cadmium yellow and metallic silver. Perpetually in motion, slight forward lean, bouncing on balls of feet, fidgeting hands. Standing on urban fire escape or climbing scaffold in Great Lakes Metropolitan Zone, neon graffiti-filled background, cyberpunk 2226 setting, golden hour lighting casting shadows across his tail creating blue-green-purple iridescent shimmer, atmospheric urban haze, film grain aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Diego Zaragoza-Anang, 185cm lean angular wiry build, rich medium-warm brown skin with golden undertones sun-darkened from outdoor work, sculpted cheekbones and broad jawline, deep brown almost-black eyes, short black fade haircut with geometric precision. Multi-continental features reflecting Hispanic/Latin American, Sub-Saharan African, and Indigenous American ancestry. Iridescent black opalescent cat tail (40cm, living geneware) emerging from base of spine, shifting blue-green-purple in light, partially tucked into oversized paint-stained hoodie. Shoulder-mounted weathered recording camera rig (three cannibalized units, epoxy and tape construction) covered in stickers. Canvas satchel across chest. Slim cargo pants, reinforced tactical boots scuffed from climbing. Pigment-stained fingertips showing cadmium yellow and metallic silver. Faint burn scar on left forearm. Perpetual forward lean posture, fidgeting energy. Standing on urban fire escape or rooftop in Great Lakes Metropolitan Zone, GLMZ, neon-lit evening atmosphere with iridescent tail catching light, spray cans visible in satchel, authentic gritty street art environment, moody cool lighting with warm skin tone contrast --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 68.4,
-    "East Asian": 21.9,
-    "North African": 9.7
+    "Hispanic/Latin American": 32.7,
+    "Sub-Saharan African": 27.8,
+    "Indigenous American": 22.9,
+    "Eastern European": 9.4,
+    "Northern European": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 18.5
+      },
+      "Mexican": {
+        "Mexican": 3
+      },
+      "South American": {
+        "Chilean": 8.1,
+        "Colombian": 3.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 8.7
+      },
+      "Southern African": {
+        "Zambian": 0.8,
+        "South African": 0.9
+      },
+      "West African": {
+        "Guinean": 17.4
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 3.4
+      },
+      "Plains Nations": {
+        "Choctaw": 1.5,
+        "Cherokee": 1.7
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 10.7,
+        "Menominee": 5.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 9.4
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 3.3,
+        "English": 0.7
+      },
+      "Scandinavian": {
+        "Icelandic": 3.2
+      }
+    }
+  }
 }

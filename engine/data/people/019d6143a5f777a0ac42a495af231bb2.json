@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f777a0ac42a495af231bb2",
   "type": "character",
-  "name": "Rajan Banerjee-Nwosu-Árnason",
+  "name": "Axel Lindström-Vasquez-Alfarsi-Matsumoto",
   "aliases": [
     "Zero",
     "the Ghost"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Rotating — Blackpipe Corridor, Grand Crossing Gate, and the Grindstone Shore encampment, near Armitage and Milwaukee",
-  "description": "Dukuray is a tall man gone thin in the way of long deprivation, but there is nothing fragile about him — he carries himself with the measured deliberateness of someone who has learned that drawing attention costs more than it's worth. His skin is very dark, deep blue-black in low light, and he has grown his locs long enough to wrap and tuck under a weathered hood. His eyes are baseline human but striking — very pale grey-green against his complexion, an inheritance from a great-grandmother he never met. He has no augmentations of any kind: no chrome, no geneware, no embedded chips. This is not poverty; it is survival. Every augmentation is a signal, a trackable node. He is deliberately blank.\n\nHe was a mid-tier Axiom logistics analyst until twelve years ago, when he witnessed something in a data batch that was not meant to be witnessed, and the most effective response available to him was to stop existing. His original identity — Kofi-Samuel Nansen-Mbiti, employee number 7-Alpha-3391 — was formally declared deceased by Axiom internal records eighteen months after his disappearance. He knows things about Axiom's supply chain architecture that would be worth significant Quanta to competitors, but he has never sold them. Not from loyalty. From the calculation that the moment he proves he exists, he is already dead.",
+  "description": "Axel Lindström-Vasquez-Alfarsi-Matsumoto is a tall man gone thin in the way of long deprivation, but there is nothing fragile about him — he carries himself with the measured deliberateness of someone who has learned that drawing attention costs more than it's worth. His skin is very dark, deep blue-black in low light, and he has grown his locs long enough to wrap and tuck under a weathered hood. His eyes are baseline human but striking — very pale grey-green against his complexion, an inheritance from a great-grandmother he never met. He has no augmentations of any kind: no chrome, no geneware, no embedded chips. This is not poverty; it is survival. Every augmentation is a signal, a trackable node. He is deliberately blank.\n\nHe was a mid-tier Axiom logistics analyst until twelve years ago, when he witnessed something in a data batch that was not meant to be witnessed, and the most effective response available to him was to stop existing. His original identity — Kofi-Samuel Nansen-Mbiti, employee number 7-Alpha-3391 — was formally declared deceased by Axiom internal records eighteen months after his disappearance. He knows things about Axiom's supply chain architecture that would be worth significant Quanta to competitors, but he has never sold them. Not from loyalty. From the calculation that the moment he proves he exists, he is already dead.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -161,7 +161,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Rotating",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,25 +234,15 @@
     "Grandmother",
     "TESSERA PG-2 'Signature'",
     "The Human Baseline Alliance",
+    "GLMZ",
     "Big Rig",
     "Fenris Ballistics Packmaster FB-12 'Alpha'",
-    "The Pale Mile",
     "Déjà Vu",
-    "The Milwaukee Core",
-    "Biometric Denial Charge BDC-1",
-    "GLMZ",
-    "Hippocampal Density Augmentation",
-    "Irontide Tidal Energy",
-    "Kairos",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "TESSERA PA-5 'Attendant'",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "The Pale Mile"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Multiheritiage diaspora: South Asian (36.8%), Hispanic/Latin American (28.5%), Sub-Saharan African (23.2%), Southeast Asian (6.6%), Central Asian (3.4%), Northern European (1.5%). His features reflect this complex global ancestry — warm brown undertones beneath deeper skin, facial structure carrying South Asian width through the cheekbones and jawline, African heritage in bone prominence and lip fullness, Latin American warmth in overall complexion, with subtle Southeast Asian character in eye shape and Central Asian resilience in his bearing",
+    "heritage": "Ubiquitous Diaspora blend: Southeast Asian (42.8%) and Northern European (38.2%) form his dominant genetic architecture, with secondary influence from Middle Eastern (13.3%) and East Asian (5.7%) ancestry. His features synthesize these lineages into a deliberately unplaceable face: Southeast Asian bone structure—high, prominent cheekbones and eye set—modulated by Northern European angularity in his jaw and brow ridge. His nose bridge carries Middle Eastern definition and strength, while East Asian ancestry contributes subtle refinement to his eye shape. The result is warm golden-brown skin with balanced, complex undertones that shift between amber and honey depending on light, creating a luminous quality that reads as genuinely mixed rather than exoticized. His pale grey-green eyes create striking contrast against this warm-toned base—a recessive Northern European trait surfacing against Southeast Asian-dominant coloring",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lean and economical — muscle retained from sustained manual labor, but carved down by years of minimal caloric surplus. Wiry rather than athletic; the build of someone who moves efficiently because waste costs",
@@ -260,8 +250,8 @@
     "hair_style": "Locs, wrapped and tucked beneath a weathered hood most hours; when loose, they fall past his shoulders",
     "hair_length": "Long",
     "eye_color": "Pale grey-green, striking against his skin tone — baseline human, unmodified",
-    "skin_tone": "Rich warm brown, deeper in shadow, luminous amber undertones in direct light — the blended result of South Asian, African, and Latin American ancestry creating complex depth",
-    "complexion": "Weathered but maintained — no vanity, but deliberate cleanliness. Jaw defined with warm brown undertones, cheekbones prominent from lean years carrying the high structure of South Asian heritage. Nose broad with soft bridge reflecting multi-regional ancestry. Beard kept close-trimmed, salt-and-pepper stubble most days. His face carries the precision of someone who has learned to be forgettable; it does not invite conversation",
+    "skin_tone": "Warm golden-brown with balanced amber and honey undertones from Southeast Asian-Northern European genetic dominance, luminous in direct light, deeper burnt amber in shadow. The result of genuine genetic mixing: neither pale nor deeply saturated, but complex and shifting",
+    "complexion": "Weathered but maintained — no vanity, but deliberate cleanliness. Jaw defined with warm undertones, cheekbones high and prominent carrying equal architectural weight from Southeast Asian and Northern European heritage. Nose bridge angular with soft, elegant definition reflecting Middle Eastern ancestry. Face structure reads as lean, carved by years of minimal surplus. Beard kept close-trimmed, salt-and-pepper stubble most days. His face carries the precision of someone who has learned to be forgettable; it does not invite conversation",
     "distinguishing_marks": [
       "Thin white scar along his left jawline, approximately 4cm, likely from pre-disappearance life",
       "Faded dark marks on his inner left wrist — remnants of what may have been a removal, deliberately obscured now by time and fading",
@@ -271,17 +261,48 @@
     "posture_movement": "Measured, economical gait — no wasted motion. Stands with slight forward lean, weight distributed to balls of feet as if ready to shift direction. Keeps his hands visible and low. His eye contact is selective; he looks at people long enough to know them, not long enough to be remembered. Moves like someone navigating a space where being noticed is dangerous",
     "clothing_style": "Tier 4-5 functionality. Weathered grey-black canvas work jacket with multiple pockets (for carrying physical Quanta, tools, necessities — not for augmentation ports). Thermal-lined hoodie beneath, faded black. Workpants with reinforced knees, scuffed synthetic leather boots. No corporate branding, no fashion markers, no status indicators. Everything is worn past the point of style into pure utility. A weathered grey scarf, wrapped loose around his neck, that can serve as hood or face cover. His hood is always accessible"
   },
-  "image_prompt": "Cyberpunk 2226, a tall lean man of mixed South Asian, African, Hispanic, and Southeast Asian heritage, rich warm brown skin with amber undertones catching neon light, high prominent cheekbones, defined jawline with close-trimmed salt-pepper stubble, pale grey-green unmodified eyes, long black locs with grey threading wrapped beneath weathered hood. Deliberately unaugmented, no visible chrome or implants. Wearing layered utilitarian clothing: grey-black weathered canvas work jacket over faded black thermal hoodie, reinforced workpants, scuffed boots, grey scarf accessible as face cover. Measured posture, economical movement, standing ready to shift, hands visible and low. Urban dock setting, Great Lakes Metropolitan Zone, industrial shadows and cool overhead lighting, atmospheric steam rising, foreground slightly out of focus to emphasize his presence as unremarkable and forgettable. Mood: deliberate erasure, dangerous competence, navigating space where being noticed is risk. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Axel Lindström-Vasquez-Alfarsi-Matsumoto, a lean 188cm man with genuinely mixed Southeast Asian and Northern European heritage reflected in warm golden-brown skin with complex amber undertones, high prominent cheekbones, angular jaw with Middle Eastern definition, pale grey-green unaugmented eyes striking against warm skin. Black locs with grey threading, past-shoulder length, partially wrapped and tucked. Close-trimmed salt-and-pepper stubble. Weathered but deliberate, unplaceable features. Wearing faded grey-black canvas work jacket, thermal-lined black hoodie, reinforced workpants, scuffed synthetic boots, grey weathered scarf. Thin white scar along left jawline. No visible augmentation—conspicuously chrome-free. Posture measured and economical, weight forward on balls of feet, hands visible and low. Expression neutral, selective eye contact. Standing in shadow and neon, Great Lakes Metropolitan Zone dock sector, utilitarian functionality, deliberately forgettable presence, atmospheric industrial lighting, moody and reserved demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 36.8,
-    "Hispanic/Latin American": 28.5,
-    "Sub-Saharan African": 23.2,
-    "Southeast Asian": 6.6,
-    "Central Asian": 3.4,
-    "Northern European": 1.5
+    "Southeast Asian": 42.8,
+    "Northern European": 38.2,
+    "Middle Eastern": 13.3,
+    "East Asian": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 29.9,
+        "Javanese": 5.2
+      },
+      "Laotian": {
+        "Laotian": 2.9
+      },
+      "Vietnamese": {
+        "Vietnamese": 4.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 38.2
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 7.9
+      },
+      "Arab Levantine": {
+        "Lebanese": 4.1,
+        "Palestinian": 1.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 5.7
+      }
+    }
+  }
 }

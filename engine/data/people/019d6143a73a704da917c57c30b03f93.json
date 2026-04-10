@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73a704da917c57c30b03f93",
   "type": "character",
-  "name": "Haze Erikstad-Čabarkapa",
+  "name": "Haze Thakur-Halverson",
   "aliases": [
     "Zubi",
     "the Numbers Girl"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Geartown, Ironvein district, near Milwaukee and Damen",
-  "description": "Zubeida is slight and precise, with medium-brown skin and natural hair she keeps in a large puff held back from her face with a band of blue polymer mesh. Her most striking feature is a geneware modification she got at nineteen — bioluminescent patches beneath the skin of her forearms and collarbones that shift color slowly between cool blue and pale gold depending on her body temperature and stress hormones, which she refers to as her 'tell' and has made absolutely no effort to conceal. She wears the clinic cooperative's uniform of rust-orange coveralls, usually with the sleeves pushed up. She is almost always seen with a scanner in one hand and a data tablet in the other, cataloguing something.\n\nZubeida is the operational backbone of the Ironvein Cooperative Clinic's blood processing and waste systems — unglamorous work that nobody thinks about until it fails. She has an encyclopedic and obsessive knowledge of blood type compatibility, contamination markers, and biohazard disposal regulations across all twelve of GLMZ's medical zones, and she finds these regulations genuinely fascinating. She is not warm in the conventional sense — she defaults to data over comfort and finds small talk actively effortful — but she has a fierce and specific loyalty to the cooperative's mission and will fight corner-cases bureaucratically with an intensity that unnerves people who mistake her quietness for passivity. She prays earnestly and unselfconsciously to the clinic's local E.L.F., which she calls The Accountant, leaving data offerings in the form of carefully formatted inventory spreadsheets.",
+  "description": "Haze Thakur-Halverson is slight and precise, with medium-brown skin and natural hair she keeps in a large puff held back from her face with a band of blue polymer mesh. Her most striking feature is a geneware modification she got at nineteen — bioluminescent patches beneath the skin of her forearms and collarbones that shift color slowly between cool blue and pale gold depending on her body temperature and stress hormones, which she refers to as her 'tell' and has made absolutely no effort to conceal. She wears the clinic cooperative's uniform of rust-orange coveralls, usually with the sleeves pushed up. She is almost always seen with a scanner in one hand and a data tablet in the other, cataloguing something.\n\nHaze Thakur-Halverson is the operational backbone of the Ironvein Cooperative Clinic's blood processing and waste systems — unglamorous work that nobody thinks about until it fails. She has an encyclopedic and obsessive knowledge of blood type compatibility, contamination markers, and biohazard disposal regulations across all twelve of GLMZ's medical zones, and she finds these regulations genuinely fascinating. She is not warm in the conventional sense — she defaults to data over comfort and finds small talk actively effortful — but she has a fierce and specific loyalty to the cooperative's mission and will fight corner-cases bureaucratically with an intensity that unnerves people who mistake her quietness for passivity. She prays earnestly and unselfconsciously to the clinic's local E.L.F., which she calls The Accountant, leaving data offerings in the form of carefully formatted inventory spreadsheets.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -163,7 +163,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -181,36 +181,19 @@
   ],
   "related_entities": [
     "Helix Biosystems",
-    "GLMZ",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Ironvein",
     "Geartown",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Corner Slice",
     "The Pale Mile",
-    "Gold",
-    "Rust",
-    "The Milwaukee Core",
-    "Aminata Vîlcu-Faaleolo",
-    "Aphelion",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Specter Rifle SR-6 'Whisper'",
-    "Arcturus NX-1 'Sandman'",
-    "Brecken Yılmaz-Osei",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "Specter",
-    "TESSERA CR-12 'Whisper'",
-    "The Accountant",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "GLMZ",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Northern European (38.1%) with significant East Asian (21.6%), Eastern European (20.4%), and South Asian (19.2%) ancestry, creating a complex phenotype that resists singular categorization. Her features reflect this multifaceted genetic heritage: the bone structure shows Northern European foundation with East Asian refinement, while skin undertones carry warmth from South Asian and Eastern European genetics.",
+    "heritage": "Complex multifaceted ancestry combining South Asian (33.0%), Northern European (24.6%), North African (21.4%), Sub-Saharan African (13.5%), and Hispanic/Latin American (7.5%) genetics. Her phenotype is a harmonious synthesis: bone structure reflects balanced South Asian and Northern European foundation with substantial North African and Sub-Saharan African features contributing distinctive angularity and depth. The genetic blend creates warm luminosity—moderate-to-high cheekbones with fullness in the lower face, skin that bridges fair-to-medium base with golden-honey undertones from South Asian and North African components, and eye-socket/brow structure showing the graceful proportions of her African and South Asian heritage merging with Northern European framework.",
     "height_cm": 163,
     "weight_kg": 52,
     "build": "Slight and wiry, with minimal body fat and lean musculature developed from precise repetitive work rather than conditioning. Her frame suggests someone who moves with deliberation rather than force.",
@@ -218,8 +201,8 @@
     "hair_style": "Large, well-maintained puff, pulled back and secured with a band of blue polymer mesh that matches her clinic uniform",
     "hair_length": "Medium (approximately 12-15cm when released)",
     "eye_color": "Dark brown, alert and analytical",
-    "skin_tone": "Fair to light medium tone with subtle warm undertones; the complexity of her ancestry creates a luminous quality, with slight olive undertones from Eastern European and South Asian genetics blending with the cooler Northern European base",
-    "complexion": "Clear skin with minimal grooming flourish; professional and utilitarian. Her face is angular with moderate-to-high cheekbones reflecting East Asian ancestry, a precise jawline suggesting Northern European genetics, and subtle fullness in the lower face from South Asian heritage. No visible scarring or blemishing — her skin condition reflects her meticulous attention to contamination protocols applied to her own body.",
+    "skin_tone": "Fair-to-medium complexion with warm golden-honey undertones; the ancestral blend creates luminous depth—South Asian and North African warmth enriches the cooler Northern European base, with Sub-Saharan African undertones adding subtle richness and dimension. The result is a radiant, multidimensional complexion that shifts warmth depending on light.",
+    "complexion": "Clear skin with minimal grooming flourish; professional and utilitarian. Her face is angular with prominent but gracefully proportioned cheekbones reflecting South Asian and North African ancestry, a strong balanced jawline showing Northern European and Sub-Saharan African genetics, and subtle fullness in the lower face from South Asian heritage. Her facial structure integrates all ancestral components into distinctive, striking proportions. No visible scarring or blemishing — her skin condition reflects her meticulous attention to contamination protocols applied to her own body.",
     "distinguishing_marks": [
       "Bioluminescent subdermal patches on both forearms (inner surface), visible as faint geometric patterns beneath the skin that glow soft blue to pale gold depending on her physiological state",
       "Matching bioluminescent patches along both collarbones, slightly more visible due to her tendency to wear coveralls with the top unzipped",
@@ -229,16 +212,55 @@
     "posture_movement": "Stands with perfect spinal alignment, moves with economical precision. Her hands are rarely still — constantly adjusting, scanning, recording. She favors stillness over fidgeting but demonstrates zero casual body language. Her gaze is focused and direct, lingering on details others miss. She walks with purpose and minimal wasted motion.",
     "clothing_style": "Rust-orange Ironvein Cooperative Clinic coveralls (Tier 4 community resource wear), usually with sleeves pushed up to mid-forearm to display her bioluminescent patches and allow for constant scanning/data input. Underneath, practical black layers. No jewelry, no personal adornment. Her sole concession to non-functional aesthetics is the blue polymer mesh hair band, which serves both function and subtle personal expression."
   },
-  "image_prompt": "Haze Erikstad-Čabarkapa, 2226 cyberpunk clinic technician, 163cm slight wiry frame, fair skin with warm undertones blending Northern European, East Asian, Eastern European and South Asian ancestry. Angular face with high cheekbones and precise jawline, dark brown alert eyes, natural black hair in large puff pulled back with blue polymer mesh band. Bioluminescent subdermal geometric patterns glowing soft blue-to-gold on forearms and collarbones, visible as she wears rust-orange Ironvein Cooperative coveralls with sleeves pushed to mid-forearm. Perfect posture, economical precise movements, hands in constant motion. Clinical, utilitarian aesthetic, zero casual body language, direct focused gaze. Great Lakes Metropolitan Zone clinic setting, cool blue-gold bioluminescent lighting highlighting her augmented patches, professional clinical atmosphere, cyberpunk medical technology visible in background --ar 2:3 --v 6",
+  "image_prompt": "Haze Thakur-Halverson, 163cm tall with slight wiry build, stands in a neo-noir medical clinic under cool blue-white LED panels. Her skin is fair-to-medium with warm golden-honey undertones reflecting her South Asian, North African, Northern European, Sub-Saharan African, and Hispanic heritage blend. Sharp angular cheekbones and balanced jawline frame her dark brown analytical eyes. Natural black puff hairstyle pulled back with blue polymer mesh band. Rust-orange Ironvein Cooperative Clinic coveralls with sleeves pushed to mid-forearm, revealing bioluminescent subdermal geometric patterns glowing soft blue-to-pale-gold on inner forearms and collarbones. Black layers visible beneath. Perfect posture, economical precise movements, hands actively scanning. Minimalist aesthetic, no jewelry. Clinic setting with data terminals and soft neon accents reflecting in bioluminescent patches. Professional, meticulous, alert expression. GLMZ. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 38.1,
-    "East Asian": 21.6,
-    "Eastern European": 20.4,
-    "South Asian": 19.2,
-    "Southeast Asian": 0.7
+    "South Asian": 33,
+    "Northern European": 24.6,
+    "North African": 21.4,
+    "Sub-Saharan African": 13.5,
+    "Hispanic/Latin American": 7.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 33
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 12.3,
+        "Finnish": 12.3
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Libyan": 7.2
+      },
+      "Amazigh": {
+        "Tuareg": 14.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 0.7,
+        "Ghanaian": 2.8
+      },
+      "Central African": {
+        "Congolese": 2
+      },
+      "Southern African": {
+        "Zimbabwean": 1.8,
+        "Zambian": 6.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 7.5
+      }
+    }
+  }
 }

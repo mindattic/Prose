@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5dc7dd98503721185e77b17",
   "type": "character",
-  "name": "Magnus Ingebrigtsen-Krishnamurthy",
+  "name": "Tendai Mensah-Konaté",
   "aliases": [
     "Chibu",
     "The Fixer"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Burnished Market, Ironvein, near North Ave and Damen",
-  "description": "Chibundo is a lean, precise man of medium height with dark brown skin and close-cropped silver hair that went grey early and which he has never dyed because he thinks it gives him authority. His eyes have patterned irises — a cosmetic mod from his twenties, pale amber with a geometric ring detail — and he wears thin-framed magnifier lenses clipped over them when appraising merchandise, which is most of the time. He dresses in clean, practical layers: collared shirts buttoned to the throat, a long vest with a dozen interior pockets, and boots with magnetic clasps. His pawn shop, MERIDIAN RECLAMATION SERVICES, occupies a narrow storefront in the Burnished Market with every centimeter of wall space covered in shelving. He has a system for everything and will tell you, unprompted, why the system is correct.\n\nChibundo is smart in a way that costs him socially — he is always the most prepared person in the room and he knows it and he cannot fully hide that he knows it. He is not cruel, but he is exact: he will tell you the precise market value of your grandmother's jewelry and he will not soften it. His secondary business, data brokering, operates through a handshake network of regular clients who pay him for access to local information — property transfer records, employment movement, minor corporate scheduling leaks. He is not political. He does not care who buys the data as long as they pay and do not bring violence to his door.",
+  "description": "Tendai Mensah-Konaté is a lean, precise man of medium height with dark brown skin and close-cropped silver hair that went grey early and which he has never dyed because he thinks it gives him authority. His eyes have patterned irises — a cosmetic mod from his twenties, pale amber with a geometric ring detail — and he wears thin-framed magnifier lenses clipped over them when appraising merchandise, which is most of the time. He dresses in clean, practical layers: collared shirts buttoned to the throat, a long vest with a dozen interior pockets, and boots with magnetic clasps. His pawn shop, MERIDIAN RECLAMATION SERVICES, occupies a narrow storefront in the Burnished Market with every centimeter of wall space covered in shelving. He has a system for everything and will tell you, unprompted, why the system is correct.\n\nTendai Mensah-Konaté is smart in a way that costs him socially — he is always the most prepared person in the room and he knows it and he cannot fully hide that he knows it. He is not cruel, but he is exact: he will tell you the precise market value of your grandmother's jewelry and he will not soften it. His secondary business, data brokering, operates through a handshake network of regular clients who pay him for access to local information — property transfer records, employment movement, minor corporate scheduling leaks. He is not political. He does not care who buys the data as long as they pay and do not bring violence to his door.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -184,7 +184,7 @@
     "People Pleaser": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,44 +242,22 @@
     "The Reclamation Assembly",
     "The Narrows Compact",
     "Grandmother",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "The Marrow Market",
     "Zheng-dao Bioelectric",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "The Quiet Room",
     "Ironvein",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Compass Rose",
     "The Pale Mile",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Alper Lebedev-Tutu",
-    "Bogdan Achebe-Svanstrom",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Cutter Vane",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Transit",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Narrowcast",
-    "Praevex",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "The Bazaar",
-    "The Counter",
-    "The Cutters Guild",
-    "The Ledger",
-    "The Narrows",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: Northern European (Scandinavian/Germanic 40%), Hispanic/Latin American (26%), South Asian (18%), East Asian (13%), with minor Sub-Saharan African heritage (3%). This produces a warm, golden-brown complexion with subtle warmth variations — the Southern European and Latin American ancestry gives him olive undertones, while Northern European ancestry lightens and cools the base tone slightly. South Asian heritage contributes to the richness of his skin depth and eye shape, East Asian ancestry visible in subtle epicanthal fold and cheekbone structure.",
+    "heritage": "Ubiquitous Diaspora ancestry: Predominantly Sub-Saharan African (61.8%), with significant Northern European (30.5%) and Southeast Asian (7.7%) heritage. The Sub-Saharan African foundation provides deep warm brown tone and defined bone structure. Northern European ancestry introduces subtle cool undertones and lighter skin depth variation. Southeast Asian heritage contributes to facial structure refinement, particularly high cheekbones and eye shape. The combination creates a rich mid-deep brown complexion with warm base notes, harmonious feature integration across multiple continental lineages.",
     "height_cm": 174,
     "weight_kg": 68,
     "build": "Lean and economical, with the wiry musculature of someone who moves with precision rather than force. Minimal body fat, shoulders slightly rounded from decades of hunching over appraisal work.",
@@ -287,8 +265,8 @@
     "hair_style": "Close-cropped, razor-lined edges, maintained with military regularity",
     "hair_length": "Short",
     "eye_color": "Pale amber with geometric ring patterning (cosmetic modification)",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, medium depth with slight ashen cast from years in fluorescent-lit interior spaces. The tone blends Nordic coolness with Latin warmth and South Asian richness into a harmonious mid-range brown.",
-    "complexion": "Neat and austere. Fine lines around the eyes from squinting at merchandise under magnification. High, defined cheekbones with a hint of South Asian angularity. Clean-shaven, skin slightly weathered but well-maintained. No visible scarring on the face. Subtle warmth in the undertone despite the ashen surface quality from prolonged indoor work.",
+    "skin_tone": "Deep warm brown with subtle cool undertones, medium-to-rich depth. The warmth is characteristic of Sub-Saharan African ancestry while cool notes from Northern European heritage create complexity in varying light. Slightly ashen cast from years in fluorescent-lit interior spaces, but underlying warmth remains consistent.",
+    "complexion": "Neat and austere. Fine lines around the eyes from squinting at merchandise under magnification. High, defined cheekbones with structural influence from Southeast Asian ancestry blended into Sub-Saharan African bone structure. Clean-shaven, skin slightly weathered but well-maintained. No visible scarring on the face. Complexion carries warm undertone despite ashen surface quality from prolonged indoor work.",
     "distinguishing_marks": [
       "Fine white scar along the inside of his left forearm, approximately 8cm long, consistent with an old cutting accident — barely visible unless skin is directly inspected",
       "Faint burn mark on the back of his right hand near the thumb, roughly coin-sized, from a soldering iron accident in his thirties"
@@ -297,16 +275,43 @@
     "posture_movement": "Upright, economical, and deliberate. Moves with the careful precision of someone appraising every centimeter of space. Hands are restless when not actively working — fingers tap rhythmically or adjust objects compulsively. Does not fidget nervously; this is organizational energy. When listening, his head tilts slightly, as if calibrating.",
     "clothing_style": "Tier 3 practical-professional. Collared shirts in neutral tones (grey, off-white, pale blue) buttoned to the throat, always crisp and unwrinkled. Long tactical vest in charcoal or black synthetic with visible interior pockets and reinforced seams — worn over the shirt. Cargo trousers in dark denim or synthetic blend, fitted but not fashionable. Boots with magnetic clasps in matte black, scuffed from regular use but maintained. A thin chain bracelet in brushed steel on his left wrist — functional aesthetic, no jewelry beyond this. No visible branding. Everything chosen for durability and function, not status."
   },
-  "image_prompt": "Cyberpunk 2226, Magnus Ingebrigtsen-Krishnamurthy, 174cm lean man with warm golden-brown skin and olive undertones, high cheekbones with subtle South Asian angularity, short silver-grey close-cropped hair with razor edges, pale amber eyes with geometric ring patterns modified cosmetically, thin magnifier lenses clipped over eyes. Wearing crisp neutral-toned collared shirt (pale blue) buttoned to throat under charcoal tactical vest with visible pockets, dark cargo trousers, matte black magnetic-clasp boots scuffed from use. Fine white scar visible on inside left forearm, faint coin-sized burn mark on right hand near thumb. Brushed steel chain bracelet on left wrist. Upright economical posture, restless precise hand movements, subtle head tilt. Standing in fluorescent-lit appraisal workspace with merchandise-laden shelves, cool overhead lighting casting fine shadows on his defined face. Austere professional focus, decades of careful work etched in fine lines around his eyes. Functional aesthetic, no status symbols, organized energy radiating from careful deliberate movements. --ar 2:3 --v 6",
+  "image_prompt": "Tendai Mensah-Konaté, 174cm lean frame, deep warm brown skin with cool undertones, silver-grey close-cropped hair with razor-lined edges. High defined cheekbones, fine lines around eyes, pale amber eyes with geometric ring patterning behind thin magnifier lenses clipped to face. Clean-shaven, austere appearance. Wearing crisp grey collared shirt buttoned to throat under charcoal tactical vest with visible interior pockets. Dark cargo trousers, matte black magnetic-clasp boots scuffed from use. Brushed steel chain bracelet on left wrist. Posture upright and deliberate, hands slightly restless. Standing in fluorescent-lit interior space, GLMZ Great Lakes Metropolitan Zone. Cool ambient lighting catching the geometric patterns in his modified amber irises. Mood focused and methodical. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 40.3,
-    "Hispanic/Latin American": 26.3,
-    "South Asian": 18.3,
-    "East Asian": 12.5,
-    "Sub-Saharan African": 2.6
+    "Sub-Saharan African": 61.8,
+    "Northern European": 30.5,
+    "Southeast Asian": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 32.4
+      },
+      "East African": {
+        "Ethiopian": 29.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 11.8,
+        "Norwegian": 6.2
+      },
+      "Germanic": {
+        "Dutch": 2.8,
+        "Austrian": 9.7
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 4.4,
+        "Cebuano": 1.1
+      },
+      "Vietnamese": {
+        "Vietnamese": 2.2
+      }
+    }
+  }
 }

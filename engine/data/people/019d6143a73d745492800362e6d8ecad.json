@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73d745492800362e6d8ecad",
   "type": "character",
-  "name": "Jabari Cisneros",
+  "name": "Anya Horváth",
   "aliases": [
     "Zuzu",
     "The Bone Painter"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Hamtramck Enclave, back parlor of a converted auto-parts shop called Skin & Signal, near Pulaski and Chicago Ave",
-  "description": "Zuwena is a tall woman with a swimmer's build gone slightly soft at the edges, her dark brown skin mapped with her own work — geometric Swahili coastline patterns interlocked with Icelandic knotwork, running up her arms and across her collarbones in bioluminescent ink that shifts from amber to violet depending on her mood. Her left eye is natural; her right has a patterned iris she designed herself, a spiraling nautilus in burnt orange and cream. She keeps her hair short on the sides and piled high in natural coils threaded with fiber-optic wire she swaps out by season. There is a precision to her hands that borders on the ceremonial — she cleans her needle rigs the way other people pray.\n\nShe is unhurried in a city that never stops moving, which either calms people or unsettles them. Her reputation is built on gene-mod integration work — she doesn't just tattoo skin, she counsels clients on how their cosmetic geneware will interact with pigment, how bioluminescent patches will behave under different lights, what subdermal LED placements will survive ten years versus two. She charges accordingly. She has opinions she will share exactly once, then never again, which gives conversations with her the quality of a single clean bell strike.",
+  "description": "Anya Horváth is a tall woman with a swimmer's build gone slightly soft at the edges, her dark brown skin mapped with her own work — geometric Swahili coastline patterns interlocked with Icelandic knotwork, running up her arms and across her collarbones in bioluminescent ink that shifts from amber to violet depending on her mood. Her left eye is natural; her right has a patterned iris she designed herself, a spiraling nautilus in burnt orange and cream. She keeps her hair short on the sides and piled high in natural coils threaded with fiber-optic wire she swaps out by season. There is a precision to her hands that borders on the ceremonial — she cleans her needle rigs the way other people pray.\n\nShe is unhurried in a city that never stops moving, which either calms people or unsettles them. Her reputation is built on gene-mod integration work — she doesn't just tattoo skin, she counsels clients on how their cosmetic geneware will interact with pigment, how bioluminescent patches will behave under different lights, what subdermal LED placements will survive ten years versus two. She charges accordingly. She has opinions she will share exactly once, then never again, which gives conversations with her the quality of a single clean bell strike.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -166,7 +166,7 @@
     "Romantic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -215,37 +215,22 @@
     "Hamtramck Enclave",
     "Gravesend Basin",
     "Dredge Mining Collective",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pure Hand",
-    "Needle",
-    "Déjà Vu",
     "Chicago",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Last Word",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Photonic Pressure Lace Emitter PPLE-3 'Needlepoint'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "The Collective",
-    "Yannick Tambadou-Reinholt",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "The Pure Hand",
+    "Déjà Vu"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African ancestry, complemented by East Asian, North African, and trace Northern European heritage—a genetic tapestry reflecting the Ubiquitous Diaspora. This blend creates warm, complex skin undertones with features influenced by multiple continental traditions.",
+    "heritage": "A genetic tapestry of the Ubiquitous Diaspora: 27.8% Sub-Saharan African, 26.9% Eastern European, 21.4% Northern European, 15.2% South Asian, and 8.7% Hispanic/Latin American. This complex blend creates a striking synthesis where Sub-Saharan African depth and warmth form the foundation, Eastern European cheekbone prominence and facial structure provide definition, Northern European refinement softens the overall composition, South Asian subtle eye geometry and bone delicacy adds dimension, and Hispanic/Latin American warmth enriches the undertones. The result is a beautifully balanced multifaceted presence shaped by four continents.",
     "height_cm": 183,
     "weight_kg": 72,
     "build": "Tall and athletically lean with the shoulders and chest of a former swimmer; subtle softening at the midsection suggesting her late thirties, but with muscular definition preserved in her forearms and core from precision handwork",
     "hair_color": "Natural dark brown with fiber-optic threading in rotating seasonal colors",
     "hair_style": "High natural coils piled and secured; sides faded short and clean",
     "hair_length": "Medium to long on top, short on sides",
-    "eye_color": "Left eye: natural dark brown. Right eye: custom-designed patterned iris featuring a spiraling nautilus in burnt orange and cream with programmable micro-LEDs",
-    "skin_tone": "Deep warm brown with rich golden and red undertones from the blending of Hispanic, Sub-Saharan African, and East Asian heritage; unmarred except where deliberately modified",
-    "complexion": "Flawlessly maintained; meticulous grooming habits evident in nail care and skin conditioning. Fine lines around her eyes suggest chronic focus work. Expression typically neutral or thoughtful; rare smile carries weight. Facial structure reflects the broad cheekbones and defined bone structure of her mixed ancestry.",
+    "eye_color": "Left eye: natural dark brown with warm amber undertones. Right eye: custom-designed patterned iris featuring a spiraling nautilus in burnt orange and cream with programmable micro-LEDs",
+    "skin_tone": "Deep warm brown with golden, amber, and subtle copper undertones—a harmonious blend where Sub-Saharan African warmth dominates, enriched by Eastern European and South Asian undertones, with Hispanic/Latin American radiance adding complexity; unmarred except where deliberately modified",
+    "complexion": "Flawlessly maintained; meticulous grooming habits evident in nail care and skin conditioning. Fine lines around her eyes suggest chronic focus work. Expression typically neutral or thoughtful; rare smile carries weight. Facial structure reflects the distinctive confluence of Sub-Saharan African full lips and cheekbone depth, Eastern European high and defined cheekbones, South Asian subtle epicanthic eye shape and refined bone structure, with Northern European delicacy in the bridge and temples.",
     "distinguishing_marks": [
       "Full-sleeve bioluminescent tattoos on both arms: geometric Swahili coastline patterns interlocked with Icelandic knotwork, shifting from amber to violet based on bioelectric response and mood state",
       "Bioluminescent continuation across collarbones and upper chest in the same hybrid pattern language",
@@ -255,16 +240,72 @@
     "posture_movement": "Unhurried and deliberate; moves with the economic precision of someone trained in fine motor control. Standing posture is grounded and centered. Hands are expressive but economical — fingers rarely fidget. Maintains unusual stillness in conversation, which creates an unsettling calm in fast-paced environments. Eye contact is direct and sustained",
     "clothing_style": "Tier 3-4 independent artisan aesthetic: fitted graphene-weave tank tops or sleeveless pieces to showcase arm work; tailored dark utility pants with deep pockets; worn-in but well-maintained leather apron when working, bearing the stains of precision inks and gene-mod suspension solutions. Minimal jewelry — prefers clean lines. Occasionally wears a Hamtramck Enclave Artists' Collective badge on a thin chain. Footwear: practical minimalist shoes broken in from years of standing. Overall presentation prioritizes function and intentionality over trend"
   },
-  "image_prompt": "Jabari Cisneros, a tall lean woman with deep warm brown skin reflecting Hispanic, African, and East Asian heritage, stands in a dimly lit artist's workshop in the GLMZ 2226. Her natural dark coils are piled high with glowing fiber-optic threads, sides faded short. Full-sleeve bioluminescent tattoos in amber and violet glow across muscular forearms and shoulders—Swahili coastline patterns interwoven with Icelandic knotwork. Her right eye features a striking custom nautilus iris in burnt orange and cream, luminous with micro-LEDs. Subdermal haptic scars visible on her fingertips. She wears a fitted sleeveless graphene-weave top showcasing her arm work, dark tailored utility pants, and a worn leather apron bearing ink stains. Her posture is grounded and centered, hands poised with deliberate precision. Direct gaze, neutral expression. Ambient workshop lighting catches the bioluminescent patterns across her chest and arms, creating a subtle ethereal glow. Cyberpunk artisan aesthetic, moody and intentional. --ar 2:3 --v 6",
+  "image_prompt": "Anya Horváth, a tall athletic woman of mixed global heritage with deep warm brown skin, standing in a dimly lit maker's studio in 2226. Her natural dark brown coils are piled high with sides faded short, threaded with fiber-optic fibers catching light in rotating seasonal colors. Her striking right eye glows softly with a custom nautilus iris in burnt orange and cream; her left eye is warm natural dark brown. Full-sleeve bioluminescent tattoos glow subtly in amber-to-violet hues across both arms and chest—intricate Swahili coastline patterns interlocked with Icelandic knotwork. High defined cheekbones, refined jawline, subtle eye geometry reflect her complex ancestry. She wears a sleeveless graphene-weave tank showcasing her arm augmentations, tailored dark utility pants, and a worn leather apron stained with precision inks. Her hands rest with deliberate stillness, subdermal haptic sensor scarring faintly visible on fingertips. Pose is grounded and centered, expression neutral and focused. Studio lighting reflects off bioluminescent patterns and fiber-optic threads. GLMZ 2200s aesthetic, functional artisan aesthetic, moody atmospheric lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 45.4,
-    "Sub-Saharan African": 31.8,
-    "East Asian": 15.6,
-    "North African": 5.7,
-    "Northern European": 1.5
+    "Sub-Saharan African": 27.8,
+    "Eastern European": 26.9,
+    "Northern European": 21.4,
+    "South Asian": 15.2,
+    "Hispanic/Latin American": 8.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 10.9
+      },
+      "Central African": {
+        "Angolan": 6.4,
+        "Congolese": 1.6
+      },
+      "East African": {
+        "Ethiopian": 8.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 21
+      },
+      "Slavic West": {
+        "Czech": 5.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 4.1,
+        "Welsh": 5.1
+      },
+      "Germanic": {
+        "Dutch": 7.2,
+        "German": 1.4
+      },
+      "Scandinavian": {
+        "Swedish": 1,
+        "Norwegian": 2.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 12.4
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 4.1,
+        "Brazilian": 0.8
+      },
+      "Mexican": {
+        "Mexican": 2.1
+      },
+      "Central American": {
+        "Salvadoran": 1.7
+      }
+    }
+  }
 }

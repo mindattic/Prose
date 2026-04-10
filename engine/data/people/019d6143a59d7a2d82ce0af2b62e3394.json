@@ -1,7 +1,7 @@
 {
   "id": "019d6143a59d7a2d82ce0af2b62e3394",
   "type": "character",
-  "name": "Chidi Popescu-Vestergaard",
+  "name": "Tatiana Popescu-Yoon",
   "aliases": [
     "Bayo",
     "The Admiral"
@@ -13,7 +13,7 @@
   "age": 79,
   "status": "active",
   "location": "Washburn Commons, Building 7, Unit 412 — near the canal-facing benches, near Halsted and Chicago Ave",
-  "description": "Abayomi is a barrel-chested man slowly collapsing inward on himself, the way old warships list before they go under. His skin is deep umber with a web of pale scarring across his left jaw and neck — plasma burns from the Siege of Kenosha Crossing, 2161. He keeps his white hair cropped close and his posture militarily straight even when the arthritis in his spine screams otherwise. He has geneware eyes — replacement optical implants that glow a faint amber in low light, given to him by Sterling-Nakamura after the originals were destroyed in combat. He wears the same three shirts in rotation and everyone in the building knows which day it is by the color.\n\nBayo is the kind of man who speaks slowly because he means every word, and who listens in a way that makes people feel heard down to their bones. He was a petty officer aboard a Ferrogate Transit escort frigate during the Corporate Wars and saw things he has never described to anyone still living. He spends his afternoons on the canal bench feeding data-pigeons and watching the water, and his evenings hosting an informal gathering he calls 'The Muster' — eight to twenty neighbors sitting in his unit sharing food and grievances. He is not a wise man in any mystical sense. He is simply someone who has outlived enough catastrophes to have excellent perspective.",
+  "description": "Tatiana Popescu-Yoon is a barrel-chested man slowly collapsing inward on himself, the way old warships list before they go under. His skin is deep umber with a web of pale scarring across his left jaw and neck — plasma burns from the Siege of Kenosha Crossing, 2161. He keeps his white hair cropped close and his posture militarily straight even when the arthritis in his spine screams otherwise. He has geneware eyes — replacement optical implants that glow a faint amber in low light, given to him by Sterling-Nakamura after the originals were destroyed in combat. He wears the same three shirts in rotation and everyone in the building knows which day it is by the color.\n\nBayo is the kind of man who speaks slowly because he means every word, and who listens in a way that makes people feel heard down to their bones. He was a petty officer aboard a Ferrogate Transit escort frigate during the Corporate Wars and saw things he has never described to anyone still living. He spends his afternoons on the canal bench feeding data-pigeons and watching the water, and his evenings hosting an informal gathering he calls 'The Muster' — eight to twenty neighbors sitting in his unit sharing food and grievances. He is not a wise man in any mystical sense. He is simply someone who has outlived enough catastrophes to have excellent perspective.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -191,7 +191,7 @@
     "War Weary": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Washburn Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -258,45 +258,20 @@
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
   "related_entities": [
-    "Kenosha Crossing",
     "Ferrogate Transit",
+    "Kenosha Crossing",
     "Washburn Commons",
     "Tessera Corponation",
     "Lacuna Genomics",
+    "Chicago",
     "Crucible Industries Siege-12 'Battering Ram'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pale Mile",
-    "Nightlight",
-    "Chicago",
-    "Ambrogio Waweru-Djordanović",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Fanta Popov-Adjei",
-    "Idris Forsberg-Quaye",
-    "Iowan Behemoth — 'Palisade'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Pikoi Gundersen-Acheampong",
-    "Piper",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Bench",
-    "The Gutter Prophets",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-dao Bioelectric"
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European / Sub-Saharan African / East Asian / Pacific Islander blend. Genetic ancestry predominantly Eastern European (34.5%) and Sub-Saharan African (32.1%), with significant East Asian (27.7%) and Pacific Islander (5.7%) contributions. This creates a complex phenotype: deep umber skin with warm undertones from the African ancestry, with subtle bone structure refinement from East Asian heritage and a certain structural solidity from Eastern European and Pacific Islander genetics.",
+    "heritage": "Eastern European / Hispanic-Latin American / East Asian blend. Genetic ancestry predominantly Eastern European (68.3%), with significant Hispanic-Latin American (22.2%) and East Asian (9.5%) contributions. This creates a distinctive phenotype combining the pale, cool undertones of Eastern European ancestry with warm golden tones from Hispanic heritage and subtle bone structure refinement from East Asian genetics. The result is a warm olive complexion with golden-bronze depth.",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Barrel-chested but contracted with age; broad shoulders beginning to curve inward, musculature atrophied but still dense from decades of military bearing. Moves like a ship listing — compensating for internal structural fatigue.",
@@ -304,26 +279,49 @@
     "hair_style": "Close-cropped military cut, immaculately maintained",
     "hair_length": "Short",
     "eye_color": "Amber (geneware replacement), faint bioluminescent glow in low light",
-    "skin_tone": "Deep umber with warm undertones, undertones reflecting the blend of Sub-Saharan African and Eastern European ancestry with subtle East Asian and Pacific Islander influences creating slight golden undertones in certain light",
-    "complexion": "Deep creases around eyes and mouth; heavy scarring on left jaw and neck (pale, keloid-raised plasma burns radiating from ear to collarbone, textured like cooled slag). Facial structure shows blended ancestry — higher cheekbones with subtle East Asian influence, strong jaw with Eastern European robustness, broad nasal base consistent with African heritage. Skin weathered but clean, fingernails trimmed short. Jaw set with quiet attention.",
+    "skin_tone": "Warm olive-bronze with golden undertones; the pale cool base of 68.3% Eastern European ancestry surfaces as slight ashen undertones in shadowed areas, while 22.2% Hispanic-Latin American heritage provides sustained warmth and bronzing capacity. The 9.5% East Asian contribution refines the overall tone into a harmonious warm olive that deepens noticeably in natural light.",
+    "complexion": "Deep creases around eyes and mouth; heavy scarring on left jaw and neck (pale, keloid-raised plasma burns radiating from ear to collarbone, textured like cooled slag, creating stark contrast against warm olive-bronze skin). Facial structure shows blended ancestry — moderately high cheekbones with subtle East Asian influence, strong pronounced jaw with Eastern European prominence, defined nasal bridge reflecting mixed heritage. Skin weathered but clean, fingernails trimmed short. Jaw set with quiet attention.",
     "distinguishing_marks": [
-      "Extensive keloid scarring across left jaw, neck, and upper shoulder — pale against umber skin, plasma-burn pattern consistent with high-heat energy weapon exposure (Siege of Kenosha Crossing, 2161)",
+      "Extensive keloid scarring across left jaw, neck, and upper shoulder — pale against warm olive-bronze skin, plasma-burn pattern consistent with high-heat energy weapon exposure (Siege of Kenosha Crossing, 2161)",
       "Surgical scar along spine, visible when bending forward, indicating exoframe anchor points",
-      "Left knee shows slight chromatic mismatch — ceramic prosthetic joint approximately 2 shades lighter than surrounding skin tone, visible when sitting or standing in thin pants"
+      "Left knee shows slight chromatic mismatch — ceramic prosthetic joint approximately 2 shades lighter than surrounding warm olive-bronze skin tone, visible when sitting or standing in thin pants"
     ],
     "visible_augmentations": "Amber iris glow in both eyes (replacement optical implants, Sterling-Nakamura combat-grade); carbon-fiber exoframe visible at spine under loose-fitting shirts; left leg prosthetic knee joint with visible mismatched skin tone at contact point; relies on carved driftwood-pattern carbon-fiber cane for mobility support.",
     "posture_movement": "Stands and walks with deliberate military rigidity despite visible pain; spine held straight through exoframe support and pure discipline. Moves slowly, economically — each step deliberate. Sits with both feet flat. Hands at rest in lap, rarely gestural. Eyes track movement with the attention of someone who spent a lifetime reading tactical situations. Breathing is shallow and controlled.",
     "clothing_style": "Three rotating shirts in different solid colors (charcoal, slate, rust — all Tier 4 utilitarian cotton blends, well-maintained but faded from washing). Dark service-weight trousers with deep pockets and visible cargo seams. Worn black canvas shoes with reinforced soles for cane-walking. A single faded Meridian Veterans Compact pin on collar. No jewelry except a scratched chronometer on left wrist (military-issue, pre-Collapse model). Dresses for function and memory, not fashion."
   },
-  "image_prompt": "Chidi Popescu-Vestergaard, Eastern European-African-East Asian-Pacific Islander ancestry male, age 70s, standing with military discipline despite exoframe support, 178cm tall, broad-shouldered but contracted frame. Deep umber skin with warm golden undertones, white close-cropped hair, striking amber bioluminescent cybernetic eyes glowing softly. Left side of face and neck marked by pale keloid plasma scarring in vertical streaks from ear to collarbone, creating texture contrast against dark skin. Wearing faded charcoal utilitarian cotton-blend shirt, dark cargo trousers, worn black canvas shoes. Leans on carved driftwood-pattern carbon-fiber cane. Visible chrome exoframe support at spine, ceramic prosthetic knee joint slightly lighter than surrounding skin tone at contact point. Scratched military-issue chronometer on left wrist. Single faded Meridian Veterans Compact pin on collar. Eyes sharp, tracking, tactical. Posture rigid, movement economical and deliberate. Standing in moody cyberpunk setting, neon shadows, gritty 2200s Great Lakes Metropolitan environment, cool blue and warm amber light casting contrast across scarred profile. Mood: weathered, disciplined, haunted. --ar 2:3 --v 6",
+  "image_prompt": "Tatiana Popescu-Yoon, weathered neo-noir veteran, 178cm tall, standing with military rigidity despite age and pain. Warm olive-bronze skin with golden undertones, visible particularly in natural light. Extensive pale keloid scarring across left jaw, neck, and shoulder from plasma burns, creating dramatic contrast. White close-cropped military hair, steely amber bioluminescent geneware eyes glowing faintly. High cheekbones with East Asian refinement, strong Eastern European jaw, defined features marked by decades of service. Wearing faded charcoal utilitarian cotton shirt, dark service-weight trousers with cargo seams, worn black reinforced canvas shoes. Carbon-fiber exoframe visible at spine under loose shirt, left knee prosthetic with slight skin tone mismatch. Relies on carved driftwood-pattern carbon-fiber cane. Hands rest in lap, posture economical and controlled. Shallow focused breathing. Shallow focused breathing. Single faded Meridian Veterans Compact pin on collar, scratched military chronometer on wrist. Great Lakes Metropolitan Zone, 2226, neo-noir era. Natural indoor lighting emphasizing warm olive skin tone and pale scar tissue contrast. Atmosphere of quiet discipline and tactical awareness. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 34.5,
-    "Sub-Saharan African": 32.1,
-    "East Asian": 27.7,
-    "Pacific Islander": 5.7
+    "Eastern European": 68.3,
+    "Hispanic/Latin American": 22.2,
+    "East Asian": 9.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 68.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 10.3
+      },
+      "Caribbean": {
+        "Haitian": 3,
+        "Dominican": 2.5
+      },
+      "Central American": {
+        "Salvadoran": 6.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.5
+      }
+    }
+  }
 }

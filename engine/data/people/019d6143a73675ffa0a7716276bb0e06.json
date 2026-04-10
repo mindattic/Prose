@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73675ffa0a7716276bb0e06",
   "type": "character",
-  "name": "Khalil Magnúsdóttir",
+  "name": "Diego Arredondo",
   "aliases": [
     "Zin",
     "No-Face"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Irkalla (sleeps rough; known to haunt the edges of Grand Crossing Gate), near Halsted and Division",
-  "description": "Zinnia exists in GLMZ the way a smudge exists on glass — present, visible up close, invisible to systems. They are slight and quick, with a narrow face, very dark skin, and hair grown out in a dense, unpruned natural that they've threaded through with copper wire salvaged from old conduit — not for aesthetics exactly, more the way a bird lines a nest. Their eyes are a striking honey-amber with natural starburst patterning in the irises, one of the few things about them that seems to invite attention. They move in a permanent half-crouch, not from fear exactly but from a lifetime habit of occupying less space than they're entitled to. They wear whatever fits and whatever doesn't show stains and have no particular relationship with color or style.\n\nZinnia was born to parents who were themselves Q-zeros — Nigerien refugees who crossed the corponation registration wall and chose invisibility over the terms of citizenship. They have never had a digital footprint, a Quanta account, a biometric record, or a registered name. Legally they do not exist. In practice they are extraordinarily good at existing anyway, navigating the city by a combination of spatial memory, social mimicry, and a preternatural ability to read who in any given space has power and who doesn't. They are not ideological about their status — being Q-zero isn't a choice or a statement, it's just what they are. They are however deeply pragmatic, deeply suspicious of anyone who seems too interested in them, and quietly desperate for something they can't name.",
+  "description": "Diego Arredondo in GLMZ the way a smudge exists on glass — present, visible up close, invisible to systems. They are slight and quick, with a narrow face, very dark skin, and hair grown out in a dense, unpruned natural that they've threaded through with copper wire salvaged from old conduit — not for aesthetics exactly, more the way a bird lines a nest. Their eyes are a striking honey-amber with natural starburst patterning in the irises, one of the few things about them that seems to invite attention. They move in a permanent half-crouch, not from fear exactly but from a lifetime habit of occupying less space than they're entitled to. They wear whatever fits and whatever doesn't show stains and have no particular relationship with color or style.\n\nZinnia was born to parents who were themselves Q-zeros — Nigerien refugees who crossed the corponation registration wall and chose invisibility over the terms of citizenship. They have never had a digital footprint, a Quanta account, a biometric record, or a registered name. Legally they do not exist. In practice they are extraordinarily good at existing anyway, navigating the city by a combination of spatial memory, social mimicry, and a preternatural ability to read who in any given space has power and who doesn't. They are not ideological about their status — being Q-zero isn't a choice or a statement, it's just what they are. They are however deeply pragmatic, deeply suspicious of anyone who seems too interested in them, and quietly desperate for something they can't name.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -159,7 +159,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla (sleeps rough; known to haunt the edges of Grand Crossing Gate)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -209,33 +209,18 @@
   "related_entities": [
     "Grand Crossing Gate",
     "Escanaba Gateway",
-    "GLMZ",
     "Irkalla",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Gravimetric Collapse Charge GCC-9",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Glass",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Null",
-    "Breck Tannen",
-    "Chibundo Ferreira-Yupik",
-    "Independent Darknet Node Architecture",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Kenji Guerrero-Osei-Mensah",
-    "MERIDIAN",
-    "Narrowcast",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Patient Zero",
-    "Solveig Tambadou-Kereselidze",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Yuki Nwosu-Petrenko"
+    "Gravimetric Collapse Charge GCC-9",
+    "GLMZ",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Striking genetic mosaic: Northern European (33.7%) and Eastern European (12.2%) ancestry blended with Middle Eastern (30.9%), South Asian (18.5%), and Hispanic/Latin American (4.7%) heritage. This combination produces warm, olive-toned brown skin with subtle golden undertones, featuring the finer bone structure often seen in Mediterranean and Middle Eastern populations, tempered by the broader facial proportions sometimes found in Northern European ancestry.",
+    "heritage": "Complex genetic mosaic: Southeast Asian (38.3%), Hispanic/Latin American (36.4%), and Pacific Islander (25.3%) ancestry creates a striking phenotype. The blend produces warm bronze-brown skin with golden and peachy undertones; bone structure combines Southeast Asian angularity with Pacific Islander robustness, creating defined cheekbones and a slightly broader facial geometry. Features reflect the diverse beauty of pan-Pacific and Latinx heritage—delicate in some planes, sturdy in others.",
     "height_cm": 162,
     "weight_kg": 48,
     "build": "Slight and wiry, with minimal muscle definition — the build of someone who moves efficiently rather than powerfully, all lean angles and economical motion",
@@ -243,8 +228,8 @@
     "hair_style": "Dense, unpruned natural grown long; copper salvage wire woven throughout in loose, organic patterns like a bird's nest",
     "hair_length": "Long (shoulder-length and beyond)",
     "eye_color": "Striking honey-amber with natural starburst patterning in the irises",
-    "skin_tone": "Warm olive-brown, rich with golden undertones from the blended ancestry; deeper in some areas, more golden in others, creating subtle natural variation across the face and body",
-    "complexion": "Angular face with sharp, defined cheekbones reflecting Middle Eastern and South Asian heritage; fine, delicate features with a slightly broader facial structure suggesting Northern European ancestry; skin shows the wear of rough living but is otherwise clear; minimal grooming beyond necessity; expression often reads as guarded or calculating",
+    "skin_tone": "Warm bronze-brown with golden and peachy undertones; the coloration reflects Southeast Asian, Pacific Islander, and Hispanic/Latin American heritage, creating natural variation across the face and body that deepens slightly in sun-exposed areas",
+    "complexion": "Angular face with sharp, defined cheekbones reflecting Southeast Asian heritage; features show the blend of delicate and robust bone structure from Pacific Islander ancestry; skin shows the wear of rough living but is otherwise clear; minimal grooming beyond necessity; expression often reads as guarded or calculating",
     "distinguishing_marks": [
       "Natural starburst patterning visible in both irises — a genetic variation that makes eye contact distinctive and memorable",
       "Hands show signs of day labor: calluses on palms and fingers, occasional minor cuts and scrapes in various stages of healing",
@@ -254,16 +239,42 @@
     "posture_movement": "Permanent half-crouch stance, even when standing still; moves with quick, efficient economy of motion; shoulders slightly inward as if occupying less space than physically present; head often angled to observe without seeming to; never fully relaxed in open spaces",
     "clothing_style": "Practical Tier 4-5 layering: worn cargo pants or salvaged work trousers with multiple pockets (for scavenging); oversized or ill-fitting jackets and hoodies in neutral grays and blacks; no logos or identifiable branding; clothing selected for function (pockets, durability, lack of stains) rather than style; footwear is worn sneakers or boots held together with improvised repairs; no accessories except the copper wire and whatever they're currently carrying"
   },
-  "image_prompt": "Portrait of Khalil, a 162cm wiry scavenger in the year 2226, standing in a half-crouch against neon-lit industrial ruins. Warm olive-brown skin with golden undertones, sharp cheekbones, angular face. Striking honey-amber eyes with natural starburst irises, gazing sideways with guarded intensity. Long shoulder-length black hair woven with salvaged copper wire in organic bird's nest patterns. Worn gray and black layered clothing, oversized jacket, multiple cargo pockets, patched boots. Calloused hands visible. No augmentations. Cyberpunk Great Lakes Metropolitan Zone atmosphere, dim purple and blue neon backlighting, gritty industrial setting, atmospheric haze, cool color grading, efficient and watchful posture. Cyberpunk 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Diego Arredondo, 162cm slight wiry frame, warm bronze-brown skin with golden undertones blending Southeast Asian, Hispanic/Latin American, and Pacific Islander heritage. Sharp defined cheekbones with robust Pacific Islander bone structure, angular face showing delicate and sturdy features. Striking honey-amber eyes with natural starburst irises. Long shoulder-length black hair with copper salvage wire woven organically throughout like a bird's nest. Guarded expression, permanent half-crouch stance, moves with economical efficiency. Worn gray hoodie, oversized jacket, salvaged work cargo pants with multiple pockets, worn boots held together with improvised repairs. Calloused hands showing day labor wear. Zero visible augmentations, skin unmarked. GLMZ Great Lakes Metropolitan Zone, dimly lit industrial scavenging site, neon glints off copper wire in hair, gritty atmospheric lighting, observant pose suggesting caution and calculation --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 33.7,
-    "Middle Eastern": 30.9,
-    "South Asian": 18.5,
-    "Eastern European": 12.2,
-    "Hispanic/Latin American": 4.7
+    "Southeast Asian": 38.3,
+    "Hispanic/Latin American": 36.4,
+    "Pacific Islander": 25.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 14.7
+      },
+      "Filipino": {
+        "Cebuano": 12.5
+      },
+      "Laotian": {
+        "Laotian": 11.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 8.9,
+        "Cuban": 26.5
+      },
+      "South American": {
+        "Ecuadorian": 0.9,
+        "Brazilian": 0.1
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 25.3
+      }
+    }
+  }
 }

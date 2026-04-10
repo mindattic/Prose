@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6af7888b51e6e5d4271c9ea",
   "type": "character",
-  "name": "Szymon Ionescu",
+  "name": "Obinna Tetteh",
   "aliases": [
     "Rekkit",
     "The Boy"
@@ -13,7 +13,7 @@
   "age": 14,
   "status": "active",
   "location": "Currently at Grand Crossing Gate, attached to a small goods caravan making its way toward Waukegan Industrial Shelf, near Wacker and State",
-  "description": "Rek Samatov-Ahouli is small for fourteen — compact and wiry, with reddish-brown skin, close-cropped dark hair, and large dark eyes that are the color of river silt and always slightly too serious for his face. He has small retractable claws on his right hand only, a partial geneware expression from his father's side that came in asymmetrically and never finished; the left hand is completely smooth. The claws are useful for climbing and he uses them unconsciously, hooking into cargo netting and wall grilles without thinking. He has a habit of wearing too many layers of clothing — every piece he owns, at all times — because he has no bag that is safe to leave anywhere and no fixed space to store anything.\n\nHe has been alone for two years. Before that he was with his uncle's caravan, before that he was with his mother, before that he doesn't discuss. He is not a traumatized child in the way fiction usually depicts — he is practical, resourceful, alert, and occasionally frightening in how clearly he sees people's motivations. He has learned to be useful before anyone asks him to leave. He runs messages, he holds cargo, he identifies which adults are safe and which aren't with an accuracy that should not exist in someone his age. He has a private ELF he calls the Ratchet, which he believes lives in the click of mechanical locks and loose chain-links, and he prays to it by running his thumbnail along chain-link fences.",
+  "description": "Obinna Tetteh is small for fourteen — compact and wiry, with reddish-brown skin, close-cropped dark hair, and large dark eyes that are the color of river silt and always slightly too serious for his face. He has small retractable claws on his right hand only, a partial geneware expression from his father's side that came in asymmetrically and never finished; the left hand is completely smooth. The claws are useful for climbing and he uses them unconsciously, hooking into cargo netting and wall grilles without thinking. He has a habit of wearing too many layers of clothing — every piece he owns, at all times — because he has no bag that is safe to leave anywhere and no fixed space to store anything.\n\nHe has been alone for two years. Before that he was with his uncle's caravan, before that he was with his mother, before that he doesn't discuss. He is not a traumatized child in the way fiction usually depicts — he is practical, resourceful, alert, and occasionally frightening in how clearly he sees people's motivations. He has learned to be useful before anyone asks him to leave. He runs messages, he holds cargo, he identifies which adults are safe and which aren't with an accuracy that should not exist in someone his age. He has a private ELF he calls the Ratchet, which he believes lives in the click of mechanical locks and loose chain-links, and he prays to it by running his thumbnail along chain-link fences.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -159,7 +159,7 @@
     "Dreamer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Currently at Grand Crossing Gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -210,26 +210,18 @@
   "changelog": [],
   "related_entities": [
     "Grand Crossing Gate",
-    "GLMZ",
     "The Waukegan Industrial Shelf",
     "The Gradient Compact",
     "Nesting Doll",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Arcturus KS-7 'Nursery'",
-    "Cezar Watanabe-Gyasi",
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Ilhan Nakamura-Bello",
-    "Jemba Ulrich-Faafetai",
-    "Lazarus LX-2 'Lab Rat'",
-    "Synaptic Drift Emitter SDE-4 'Lullaby'",
-    "TESSERA ES-4 'Perimeter'",
-    "Uncle Noodle",
-    "Vagrant",
-    "Veslemøy Achebe-Tursynov"
+    "Cargo Tacos",
+    "Flux Strömqvist-Villalobos",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "GLMZ"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Complex diaspora blend: Southeast Asian (26.5%) forms the base warm undertone and eye structure, with Eastern European (24.8%) and Hispanic/Latin American (18.2%) contributing to facial angularity and skin tone depth. Central Asian (13.7%) and Northern European (11.6%) add structural variation to jaw and brow, while Middle Eastern (5.2%) influences cheekbone prominence. The result is a face that reads as globally mixed rather than regionally specific—difficult to place at a glance.",
+    "heritage": "Predominantly Sub-Saharan African ancestry (89.7%) forms the core of his appearance, with meaningful but subtle South Asian (7.4%) and Hispanic/Latin American (2.9%) genetic contributions. His facial structure, skin tone depth, and eye character reflect strong West African genetic expression. South Asian ancestry manifests as warm undertones in his skin and an intensity in his gaze; Hispanic/Latin American heritage adds minor angularity to his cheekbone and jaw definition. The result is a distinctly African-diaspora face with barely-visible global complexity—rooted and geographically authentic rather than ambiguously mixed.",
     "height_cm": 152,
     "weight_kg": 38,
     "build": "Wiry and compact, with visible lean muscle in shoulders and forearms from climbing and cargo work. No subcutaneous fat; his frame is efficient rather than fragile.",
@@ -237,8 +229,8 @@
     "hair_style": "Close-cropped, practical, grown out just enough to avoid attention",
     "hair_length": "Short",
     "eye_color": "Dark brown, river-silt tone with minimal light reflection",
-    "skin_tone": "Warm olive-bronze, a nuanced blend where Southeast Asian warmth combines with Eastern European and Hispanic depth. Sun-darkened with golden undertones, appearing almost burned by exposure.",
-    "complexion": "Weathered for his age; sun-darkened with faint golden cast to cheekbones from Southeast Asian ancestry. No adolescent softness. Clean but not groomed—practical face with prominent angular jaw typical of Eastern European and Hispanic genetic contribution, prominent cheekbones from Middle Eastern ancestry influence. Eyes appear older than his years, with the direct, alert quality of someone who has learned to read threats.",
+    "skin_tone": "Deep mahogany brown with warm golden undertones, sun-darkened from labor and exposure. High cheekbones show bronze-gold burnishing characteristic of equatorial sun exposure combined with South Asian warmth in the undertone.",
+    "complexion": "Weathered for his age; deep mahogany skin burnished golden-bronze on high cheekbones from chronic sun exposure. No adolescent softness. Clean but ungroomed—practical face with prominent angular jaw and strong cheekbone definition from Sub-Saharan African ancestry, with minor sharpening from Hispanic/Latin American genetic contribution. Eyes carry age beyond years, with the direct, alert quality of someone trained to read threats. Facial bone structure shows West African characteristics with subtle enhancement from South Asian intensity.",
     "distinguishing_marks": [
       "Right hand only: four retractable geneware claws on fingers two through five, approximately 3cm when extended, naturally pigmented darker than surrounding skin, showing faint scarring at the base where the expression came in asymmetrically during early adolescence",
       "Left hand: completely smooth, unmarked, no claw expression",
@@ -249,17 +241,47 @@
     "posture_movement": "Alert and economical. Moves without wasted motion — when climbing or loading, his right hand hooks unconsciously into available grilles and netting using the claws. When stationary, he favors positions with clear sightlines and exit routes. His gaze tracks faces and hand positions automatically. Minimal fidgeting; he sits very still for long periods.",
     "clothing_style": "Layered, every piece he owns worn simultaneously: a gray long-sleeved undershirt (Tier 4 synthetic blend), a stained green cargo vest with deep pockets over that, a worn brown overshirt (once belonged to an older person), a too-large quilted jacket in faded black as the outer layer. All pieces are functional, none are new. No logos or brands visible; everything is salvaged or transit-hub generic. Heavy canvas work pants patched at the knees. Worn synthetic boots laced tight. No accessories except a length of chain-link cut into a loop he sometimes carries in his jacket pocket for his prayers to the Ratchet."
   },
-  "image_prompt": "Portrait of Szymon Ionescu, a 152cm compact teenager with warm olive-bronze skin blending Southeast Asian, Eastern European, and Hispanic ancestry. Dark brown nearly-black close-cropped hair, sharp angular jawline, prominent high cheekbones, dark soulful eyes that look older than his years. Asymmetrical right hand with four dark retractable geneware claws extended, left hand smooth and unmarked. Small circular burn scar on left forearm. Wearing layered salvaged clothing: gray synthetic undershirt, stained green cargo vest, worn brown overshirt, oversized faded black quilted jacket, patched canvas work pants, worn boots. Alert, economical posture. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, industrial transit hub lighting, moody blue-amber ambient light catching the claw details and scars. Gritty, real, no glamour—the face of someone who has survived. --ar 2:3 --v 6",
+  "image_prompt": "Obinna Tetteh, 152cm wiry frame, deep mahogany skin with golden-bronze cheekbone burnish, dark river-silt eyes, close-cropped near-black hair. Angular Sub-Saharan African facial structure with South Asian warmth in undertone and minor Hispanic/Latin American jawline sharpening. Weathered face, alert gaze. Right hand shows four dark retractable geneware claws extended 3cm; left hand unmarked. Small circular burn scar on left forearm. Wears layered salvage clothing: gray synthetic undershirt, green cargo vest, brown overshirt, oversized faded black quilted jacket, patched canvas work pants, worn synthetic boots laced tight. Standing in GLMZ industrial cargo zone, body language economical and threat-aware, posture favoring sightlines and exits. Neon-filtered warehouse lighting casting cool shadows across mahogany skin and dark fabric layers. Gritty, authentically poor, no chrome augmentation. GLMZ 2200s aesthetic, lived-in dystopia --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 26.5,
-    "Eastern European": 24.8,
-    "Hispanic/Latin American": 18.2,
-    "Central Asian": 13.7,
-    "Northern European": 11.6,
-    "Middle Eastern": 5.2
+    "Sub-Saharan African": 89.7,
+    "South Asian": 7.4,
+    "Hispanic/Latin American": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 8.4,
+        "South African": 3.7
+      },
+      "West African": {
+        "Senegalese": 44.1,
+        "Ghanaian": 33.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 6
+      },
+      "Indian": {
+        "Punjabi": 1,
+        "Marathi": 0.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 0.9
+      },
+      "Central American": {
+        "Guatemalan": 0.8,
+        "Salvadoran": 0.6
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.6
+      }
+    }
+  }
 }

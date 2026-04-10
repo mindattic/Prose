@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5be7de8bf83f4f11e392812",
   "type": "character",
-  "name": "Idris Prempeh",
+  "name": "Luciana Prempeh",
   "aliases": [
     "Brother Bart",
     "The Snail"
@@ -13,7 +13,7 @@
   "age": 72,
   "status": "active",
   "location": "Rotating — can be found at any of seven shrines between Edgewater Prism and Deepwell Station; sleeps in pilgrim hostels or is offered floor space by shrine keepers, near sub-level access near State and Van Buren",
-  "description": "Bartholomeu is a small, durable man who looks like he was carved out of something weather-resistant — compact and slightly bowed at the shoulders from decades of walking with a pack, his skin the warm brown of Kenyan earth and Andean clay mixed together, deeply lined around the eyes and mouth in ways that read as more expressive than aged. He walks with a slight limp from an old injury to his right knee that he refused to have properly treated on the grounds that suffering without purpose is a waste but suffering with attention teaches. He wears a circuit monk's traditional long grey coat covered in hand-sewn patches from every shrine he has ever visited — there are over two hundred patches; the coat is extremely heavy. His head is shaved. His hands are large and calloused and he uses them constantly when he speaks.\n\nHe is genuinely one of the happiest people in GLMZ, which makes people instinctively suspicious of him. He navigates this with patience and amusement. The circuit monk tradition holds that the city itself is sacred — that the ELF network is its nervous system, that the shrines are its organs, and that walking the routes between them is an act of devotion to the living city. Bartholomeu has been walking this circuit for thirty-one years. He has guided somewhere between three and four hundred pilgrims along sections of it — people in grief, people making decisions, people running away from things, people who just wanted someone to walk with. He asks almost nothing of them except that they pay attention.",
+  "description": "Luciana Prempeh is a small, durable man who looks like he was carved out of something weather-resistant — compact and slightly bowed at the shoulders from decades of walking with a pack, his skin the warm brown of Kenyan earth and Andean clay mixed together, deeply lined around the eyes and mouth in ways that read as more expressive than aged. He walks with a slight limp from an old injury to his right knee that he refused to have properly treated on the grounds that suffering without purpose is a waste but suffering with attention teaches. He wears a circuit monk's traditional long grey coat covered in hand-sewn patches from every shrine he has ever visited — there are over two hundred patches; the coat is extremely heavy. His head is shaved. His hands are large and calloused and he uses them constantly when he speaks.\n\nHe is genuinely one of the happiest people in GLMZ, which makes people instinctively suspicious of him. He navigates this with patience and amusement. The circuit monk tradition holds that the city itself is sacred — that the ELF network is its nervous system, that the shrines are its organs, and that walking the routes between them is an act of devotion to the living city. Luciana Prempeh has been walking this circuit for thirty-one years. He has guided somewhere between three and four hundred pilgrims along sections of it — people in grief, people making decisions, people running away from things, people who just wanted someone to walk with. He asks almost nothing of them except that they pay attention.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -160,7 +160,7 @@
     "Mystic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Rotating",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -217,29 +217,19 @@
   "related_entities": [
     "Deepwell Station",
     "Edgewater Prism",
-    "GLMZ",
     "The Circuit",
     "Kang Athletics KA-200 'Padwork'",
     "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "The Gradient Compact",
+    "Circuit",
     "The Pure Hand",
-    "Clay",
-    "Auricula Felis Modification",
-    "Celestyna Nkosi-Dzhaksybek",
-    "Ferrogate Transit",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Nurlan Morita-Antwi",
-    "Patient Zero",
-    "Ringo DV-4 'Courier'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "TESSERA PG-2 'Signature'"
+    "GLMZ",
+    "Clay"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Complex diaspora blend: Sub-Saharan African (37.3%, primary) with significant Southeast Asian (30.7%) and South Asian (21.6%) ancestry, minor Northern European (10.4%). Features reflect this tri-continental mix—warm medium-to-deep brown skin with subtle golden undertones from Southeast Asian ancestry, facial structure showing both African and Southeast Asian characteristics, eye shape reflecting the blended heritage.",
+    "heritage": "Complex diaspora blend: Sub-Saharan African (37.9%, primary) with significant Hispanic/Latin American (31.6%) and Pacific Islander (24.9%) ancestry, minor Northern European (5.6%). Features reflect this multi-continental mix—warm deep brown skin with golden undertones and subtle warm reddish highlights from the layered African, Hispanic/Latin American, and Pacific Islander genetic contributions. Facial structure shows the blended influence of all three primary ancestry groups, creating prominent, defined cheekbones characteristic of Sub-Saharan African and Pacific Islander heritage, combined with the slightly broader facial geometry common in Hispanic/Latin American ancestry. The overall effect is a distinctively warm, sun-responsive complexion that deepens with exposure.",
     "height_cm": 163,
     "weight_kg": 68,
     "build": "Compact and wiry, slightly bowed at the shoulders from three decades of pack-carrying. Muscular in forearms and calves from constant walking; minimal body fat. Frame suggests durability rather than strength.",
@@ -247,9 +237,9 @@
     "hair_style": "Cleanly shaved",
     "hair_length": "Shaved",
     "eye_color": "Dark brown, warm and expressive",
-    "skin_tone": "Warm medium brown with golden undertones—the blended result of Sub-Saharan, Southeast Asian, and South Asian heritage, weathered from decades of outdoor exposure into a rich, earth-toned patina",
-    "complexion": "Deeply lined face with prominent creases around eyes and mouth suggesting constant expression and emotion. Skin shows deep weathering from decades of exposure, with texture reflecting the sun-exposure patterns of equatorial and tropical regions. Clean, well-maintained despite obvious age. Cheekbones and facial structure show the influence of Southeast Asian and South Asian ancestry alongside African features. No facial hair.",
-    "eye_shape": "Naturally warm, expressive dark brown; slight epicanthic fold influence from Southeast Asian ancestry",
+    "skin_tone": "Warm deep brown with golden undertones and subtle warm reddish highlights—the blended result of Sub-Saharan African (37.9%), Hispanic/Latin American (31.6%), and Pacific Islander (24.9%) heritage, weathered from decades of outdoor exposure into a rich, burnished earth-toned patina",
+    "complexion": "Deeply lined face with prominent creases around eyes and mouth suggesting constant expression and emotion. Skin shows deep weathering from decades of equatorial and tropical exposure, with texture reflecting sun-exposure patterns across multiple climate zones. Well-maintained despite obvious age. Cheekbones are prominent and defined, reflecting the blended African and Pacific Islander ancestry. Facial bone structure shows the broader geometry characteristic of Hispanic/Latin American ancestry combined with the angular definition of Sub-Saharan African features. No facial hair.",
+    "eye_shape": "Naturally warm, expressive dark brown with the rounded, slightly almond eye shape characteristic of African and Pacific Islander heritage blended with the broader eye placement of Hispanic/Latin American ancestry",
     "distinguishing_marks": [
       "Extensive network of fine white scar tissue across both palms and fingers, consistent with decades of manual labor and handling rope/fabric",
       "Geneware cat ears — furred, pointed, pale grey with darker inner edges, positioned naturally on the skull where human ears would be. Constantly mobile and responsive to sound and emotion",
@@ -259,15 +249,56 @@
     "posture_movement": "Walks with a distinct right-side limp, slight hitch in gait from old knee injury. Moves slowly but with obvious purpose and efficiency—no wasted motion. Shoulders slightly rounded forward from pack-carrying habit. Hands constantly in motion when speaking—expressive, gestural, used to emphasize and illustrate. Stands with weight balanced on balls of feet, as if always ready to continue walking. Despite age and limp, movement conveys patience rather than pain.",
     "clothing_style": "Signature circuit monk's long grey wool coat, heavy and worn, covered entirely with hand-sewn cloth patches (200+ individual patches from shrine visits). Coat is visibly weathered but meticulously maintained. Beneath: simple undyed linen shirt and grey canvas trousers, both well-mended. Worn leather walking boots, heavily patched at heels and toes. A single small canvas rucksack with repair patches. No jewelry. No brands or tier markers—clothing suggests Tier 4-5 by material, but kept with such care it transcends economic status. Appearance reads as 'monastic choice' rather than 'poverty.'"
   },
-  "image_prompt": "Idris Prempeh, 163cm tall weathered circuit monk with rich warm brown skin blending Sub-Saharan African, Southeast Asian, and South Asian heritage. Shaved scalp, deeply lined expressive face, dark warm eyes. Striking geneware pale grey cat ears with dark inner edges, alert and mobile. Extensive white scar tissue on palms and fingers. Right knee surgical scar visible. Walking with purposeful limp, slightly forward-hunched shoulders from decades of pack-carrying. Wearing iconic heavy grey wool circuit monk coat covered in 200+ hand-sewn cloth patches, undyed linen shirt, grey canvas trousers, heavily patched leather walking boots. Small canvas rucksack. No chrome augmentation, no jewelry. Standing in cyberpunk 2226 GLMZ setting, golden hour light catching weathered features and patch-covered coat. Monastic, patient, durable presence. Cyberpunk 2200s. --ar 2:3 --v 6",
+  "image_prompt": "Luciana Prempeh, a weathered 163cm woman in her 60s with warm deep brown skin with golden undertones, shaved scalp, and expressive dark brown eyes. African-Hispanic-Pacific Islander diaspora heritage visible in prominent cheekbones and facial geometry. Geneware cat ears, pale grey and furred, positioned where human ears would be. Extensive fine white scar tissue across both palms from decades of manual labor. Walks with a deliberate right-side limp. Wears a heavy, meticulously-maintained grey wool monastic coat covered in 200+ hand-sewn cloth patches from shrine visits, undyed linen shirt, grey canvas trousers, heavily-patched leather boots. Compact, wiry build from decades of walking. Deeply lined face with warm, patient expression. Standing in soft golden-hour light in a GLMZ Great Lakes Metropolitan Zone street shrine, hands gesturing expressively. No chrome augmentations, conspicuously unaugmented. Cinematic, contemplative mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 37.3,
-    "Southeast Asian": 30.7,
-    "South Asian": 21.6,
-    "Northern European": 10.4
+    "Sub-Saharan African": 37.9,
+    "Hispanic/Latin American": 31.6,
+    "Pacific Islander": 24.9,
+    "Northern European": 5.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 37.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 7.7,
+        "Chilean": 3.7
+      },
+      "Central American": {
+        "Guatemalan": 14
+      },
+      "Mexican": {
+        "Mexican": 6.2
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 10.1,
+        "Samoan": 3.6
+      },
+      "Melanesian": {
+        "Papua New Guinean": 7.8,
+        "Fijian": 3.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 3.3
+      },
+      "Germanic": {
+        "Swiss German": 1.6
+      },
+      "British Isles": {
+        "English": 0.4,
+        "Irish": 0.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e37c8f909f03ba50542984",
   "type": "character",
-  "name": "Nisha Baiseitov-Pathak-Migizi",
+  "name": "Nisha Deshpande-Björnsdóttir-Holm",
   "aliases": [
     "Dow",
     "Checkpoint Dow"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Kessler Interchange, GLMZ, near Milwaukee and Damen",
-  "description": "Daouda is built wide and compact, the kind of body that came from years of adolescent labor before it settled into something functional and calm. His complexion is a warm chestnut brown, his hair worn in tight, close-cut coils shot through with bioluminescent blue threading — a cheap genemod he got at a Mexicantown Libre parlor for his twenty-fifth birthday that he's maintained ever since because his daughter said it made him look like a hero. He has the patient, half-attentive expression of someone who has processed thirty thousand faces through a chokepoint and is no longer surprised by the human shape, but his eyes quicken when something actually breaks pattern.\n\nHe's not corrupt, which at Kessler Interchange makes him something of an oddity. He takes Φ12 under the table maybe twice a year when someone's biometric is glitching and they're going to miss a hospital appointment, and he has decided that this is what his moral flexibility budget allows. He has a small shrine to the Interchange E.L.F. — locally called 'the Turnstile' — affixed to the inside of his booth, decorated with expired transit tokens and a photo of his daughter printed on glossy plastic. He believes the Turnstile has kept three serious incidents off his shift in three years, and he's probably right that something has.",
+  "description": "Nisha Deshpande-Björnsdóttir-Holm is built wide and compact, the kind of body that came from years of adolescent labor before it settled into something functional and calm. His complexion is a warm chestnut brown, his hair worn in tight, close-cut coils shot through with bioluminescent blue threading — a cheap genemod he got at a Mexicantown Libre parlor for his twenty-fifth birthday that he's maintained ever since because his daughter said it made him look like a hero. He has the patient, half-attentive expression of someone who has processed thirty thousand faces through a chokepoint and is no longer surprised by the human shape, but his eyes quicken when something actually breaks pattern.\n\nHe's not corrupt, which at Kessler Interchange makes him something of an oddity. He takes Φ12 under the table maybe twice a year when someone's biometric is glitching and they're going to miss a hospital appointment, and he has decided that this is what his moral flexibility budget allows. He has a small shrine to the Interchange E.L.F. — locally called 'the Turnstile' — affixed to the inside of his booth, decorated with expired transit tokens and a photo of his daughter printed on glossy plastic. He believes the Turnstile has kept three serious incidents off his shift in three years, and he's probably right that something has.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -177,7 +177,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,32 +239,16 @@
     "Mexicantown Libre",
     "The Interchange",
     "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'",
-    "GLMZ",
     "Ferrogate Transit",
+    "Green Bay Community Table",
     "Turnstile",
     "The Gradient Compact",
-    "The Milwaukee Core",
-    "Arcturus GE-1 'Garrison'",
-    "Breck Tannen",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Wire Taps",
-    "Tobechukwu Papadimitriou-Vásárhelyi",
-    "Vantablack Media Confessor Tap — 'The Booth'"
+    "Cargo Tacos",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly South Asian with significant Central Asian and Indigenous American ancestry, complemented by Middle Eastern and Northern European heritage. The genetic blend creates a striking phenotype: deep South Asian bone structure and features, with Central Asian warmth in the skin tone and Indigenous American undertones in facial geometry and eye shape.",
+    "heritage": "Genuinely pan-global ancestry with Northern European (47%) as primary contributor, balanced by significant South Asian (18%), Sub-Saharan African (15%), and meaningful East Asian (8%), Indigenous American (7%), and Hispanic/Latin American (5%) heritage. This creates a genuinely mixed phenotype: Northern European bone structure foundation with South Asian warmth in skin dimensionality, Sub-Saharan African richness in skin depth and lip fullness, Indigenous American geometry in cheekbones and eye shape, East Asian subtle eyelid variation, and Latin American warmth in overall tone.",
     "height_cm": 172,
     "weight_kg": 89,
     "build": "Wide-set and compact, shoulders broad from old labor, chest and torso solid without heaviness. Functional rather than athletic — built to endure, not sprint.",
@@ -272,8 +256,8 @@
     "hair_style": "Tight coils, close-cropped, evenly maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Deep warm amber-brown, with subtle olive undertones from Central Asian and Middle Eastern ancestry blending with South Asian base. Skin has a naturally rich, dimensional quality rather than uniform tone.",
-    "complexion": "Clean-shaven, face weathered lightly by thirty-one years and shift work. Prominent cheekbones reflecting South Asian and Indigenous American ancestry, with slightly broader nasal structure. Crow's lines around eyes from sustained focus. Expression usually neutral, patient — the face of someone who has absorbed tens of thousands of strangers without judgment.",
+    "skin_tone": "Rich warm amber-brown with complex undertones: deep enough to reflect Sub-Saharan African and South Asian heritage, with subtle olive warming from Northern European and East Asian blending, and golden Latin American warmth. Naturally dimensional rather than uniform, catching light differently across cheekbones and jawline.",
+    "complexion": "Clean-shaven, face weathered lightly by thirty-one years and shift work. Prominent, slightly angular cheekbones reflecting Northern European and Indigenous American ancestry, with broader nasal structure from Sub-Saharan African and South Asian heritage. Fuller lips with distinct definition. Crow's lines around eyes from sustained focus. Expression usually neutral, patient — the face of someone who has absorbed tens of thousands of strangers without judgment.",
     "distinguishing_marks": [
       "Small, faded burn scar on left forearm (adolescent labor accident, barely visible)"
     ],
@@ -281,16 +265,69 @@
     "posture_movement": "Settled and economical. Stands with weight evenly distributed, shoulders relaxed. Moves with deliberate efficiency — no wasted motion from years at the checkpoint. Head often tilted slightly forward, eyes in a state of passive pattern-matching. Quickens noticeably when something breaks routine.",
     "clothing_style": "Ferrogate Transit Security uniform (Tier 3 standard): charcoal gray regulation shirt with reflective piping, black cargo pants with utility pockets, steel-toed boots maintained but not polished. On cool shifts, a company-issued navy windbreaker. Off-duty: practical, worn jeans, faded band t-shirts, a blue Ferrogate jacket he wears for his daughter. No jewelry except a thin silver band on his left ring finger."
   },
-  "image_prompt": "Nisha Baiseitov-Pathak-Migizi, thirty-one-year-old transit security officer, cyberpunk 2226. Deep warm amber-brown skin with subtle olive undertones, South Asian bone structure with Indigenous American facial geometry, prominent cheekbones, dark observant eyes with crow's lines. Black hair in tight close-cropped coils with bioluminescent blue threading that glows faintly. Wide-set, compact build from labor, broad shoulders, functional posture. Wearing Ferrogate Transit Security uniform: charcoal gray shirt with reflective piping, black utility cargo pants, steel-toed boots. Right palm shows faint geometric subcutaneous grid pattern from biometric scanner. Clean-shaven, weathered face, neutral patient expression. Standing in low-light checkpoint corridor, passive pattern-matching gaze, economical posture with weight evenly distributed. Subtle sci-fi aesthetic with cyberpunk security detail. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Nisha Deshpande-Björnsdóttir-Holm, 172cm tall, mixed-heritage man with rich amber-brown skin with complex olive and golden undertones reflecting Northern European, South Asian, Sub-Saharan African, East Asian, Indigenous American, and Latin American ancestry. Prominent angular cheekbones, broader nasal structure, fuller defined lips, dark warm eyes with crow's lines. Short tight-coil black hair with bioluminescent blue threading that glows softly. Compact, wide-set build from years of labor. Ferrogate Transit Security uniform: charcoal gray shirt with reflective piping, black cargo pants, steel-toed boots. Settled posture, economical movement, neutral patient expression. Right palm shows faint subcutaneous grid pattern of Ferrogate biometric scanner. Thin silver ring on left ring finger. Subtle weathering from thirty-one years and shift work. Checkpoint station background with soft neon ambient lighting catching the bioluminescent threading in his hair, reflective piping glinting. Professional, observant, reliable. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 60.2,
-    "Central Asian": 12.6,
-    "Indigenous American": 11.9,
-    "Middle Eastern": 9.5,
-    "Northern European": 5.8
+    "Northern European": 46.9,
+    "South Asian": 17.6,
+    "Sub-Saharan African": 14.9,
+    "East Asian": 7.9,
+    "Indigenous American": 7.4,
+    "Hispanic/Latin American": 5.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 18.9
+      },
+      "British Isles": {
+        "English": 18
+      },
+      "Scandinavian": {
+        "Danish": 2.4,
+        "Norwegian": 7.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 17.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 7.1
+      },
+      "East African": {
+        "Ethiopian": 2.7
+      },
+      "Southern African": {
+        "South African": 5.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.6
+      },
+      "Japanese": {
+        "Japanese": 4.3
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ho-Chunk": 5
+      },
+      "Mesoamerican": {
+        "Nahua": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 1.5,
+        "Venezuelan": 3.8
+      }
+    }
+  }
 }

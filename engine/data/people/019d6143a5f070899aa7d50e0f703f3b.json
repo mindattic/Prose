@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f070899aa7d50e0f703f3b",
   "type": "character",
-  "name": "Orion Wójcik-Olofsson",
+  "name": "Orion Dalgaard-Okada",
   "aliases": [
     "Piston",
     "Pissy",
@@ -14,7 +14,7 @@
   "age": 27,
   "status": "active",
   "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Devante Marshall is the crew's pretty boy and he knows it. Before the Prologue he had matching Arcturus Defense Solutions Type-4 combat prosthetics — the nicest hardware anyone in the lower docks had ever seen. He stole them from a corporate shipment. Kyle removed the right one by driving the katana through the shoulder actuator and twisting. Devante now has a Tier 1 replacement that is three shades lighter than his skin and makes a grinding noise. He paints it to match. It keeps chipping.\n\nDevante grew up in the Spire. His family had money — his mother was a Tessera marketing executive, his father a corporate attorney. Devante was supposed to be Tier 4. He was expelled from Meridian Academy at sixteen for stealing augment components from the school's biotech lab. His family cut him off. He fell five tiers in two years. He joined Marcus's crew because it was the only place where his stolen hardware made him somebody.\n\nHe has a younger brother, Kofi, who is still in the Spire, still in the family, still on track. They don't speak. Devante watches Kofi's social feeds obsessively. Kofi just got engaged to a Helix BioSystems junior executive. Devante was not invited.",
+  "description": "Orion Dalgaard-Okada is the crew's pretty boy and he knows it. Before the Prologue he had matching Arcturus Defense Solutions Type-4 combat prosthetics — the nicest hardware anyone in the lower docks had ever seen. He stole them from a corporate shipment. Kyle removed the right one by driving the katana through the shoulder actuator and twisting. Devante now has a Tier 1 replacement that is three shades lighter than his skin and makes a grinding noise. He paints it to match. It keeps chipping.\n\nDevante grew up in the Spire. His family had money — his mother was a Tessera marketing executive, his father a corporate attorney. Devante was supposed to be Tier 4. He was expelled from Meridian Academy at sixteen for stealing augment components from the school's biotech lab. His family cut him off. He fell five tiers in two years. He joined Marcus's crew because it was the only place where his stolen hardware made him somebody.\n\nHe has a younger brother, Kofi, who is still in the Spire, still in the family, still on track. They don't speak. Devante watches Kofi's social feeds obsessively. Kofi just got engaged to a Helix BioSystems junior executive. Devante was not invited.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -220,7 +220,7 @@
     "Tactician": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,33 +244,13 @@
     "The Spire",
     "The Shelf",
     "Tessera Corponation",
-    "Marcus Okafor-7",
     "Chicago",
     "Arcturus KS-7 'Nursery'",
-    "Arcturus LS-5 'Sentinel'",
-    "Aslan Granlund-Tawiah",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bintou Halvorsen-Osei",
-    "Blessed Nkemdirim",
-    "Breck Tannen",
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kyle Ellen Corbin-Vasik",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Patient Zero",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA WL-6 'Stacker'",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yannick Tambadou-Reinholt"
+    "Marcus Okafor-7"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Eastern European with significant East Asian, Hispanic/Latin American, Sub-Saharan African, and Pacific Islander ancestry. Reflects a complex global genetic blend showing Eastern European bone structure layered with East Asian and African features, with warm undertones from Latin American and Pacific Islander heritage.",
+    "heritage": "Predominantly East Asian (61.5%) with significant Sub-Saharan African (22.1%) and South Asian (16.4%) ancestry. A striking genetic blend showcasing East Asian bone structure layered with African facial features and South Asian warmth undertones. High cheekbones and almond-shaped eyes from East Asian heritage combine with a broader nasal structure and fuller lips from Sub-Saharan African ancestry, balanced by a defined jawline reflecting South Asian genetic influence.",
     "height_cm": 182,
     "weight_kg": 78,
     "build": "Athletic and lean, muscle definition visible but not bulky. Carries himself with the easy confidence of someone who was once assured of his place. Recent weight loss suggests stress and reduced caloric intake.",
@@ -278,8 +258,8 @@
     "hair_style": "Kept short and precise, freshly cut when he can afford it — a vanity holdover from the Spire",
     "hair_length": "Short",
     "eye_color": "Deep brown",
-    "skin_tone": "Warm medium-golden brown with olive undertones, reflecting the blend of Eastern European, East Asian, and Sub-Saharan African ancestry with warm highlights from Latin American heritage",
-    "complexion": "Clear skin showing early signs of strain — dark circles under eyes, a tightness around the mouth. High, defined cheekbones reflecting East Asian ancestry mixed with stronger jaw contours from Eastern European lineage. Eyes set with characteristic slight almond shape from East Asian heritage. Facial hair kept neatly trimmed or shaved clean.",
+    "skin_tone": "Warm medium-golden brown with rich undertones, reflecting the blend of East Asian, Sub-Saharan African, and South Asian ancestry with luminous warmth in natural light",
+    "complexion": "Clear skin showing early signs of strain — dark circles under eyes, a tightness around the mouth. High, defined cheekbones reflecting East Asian ancestry, broader nose and fuller lips from Sub-Saharan African heritage, balanced jawline from South Asian ancestry. Eyes set with characteristic almond shape from East Asian heritage. Facial hair kept neatly trimmed or shaved clean.",
     "distinguishing_marks": [
       "Surgical scar running across the right shoulder joint where the Type-4 arm was severed, pale and still slightly inflamed",
       "Small burn scar on left forearm from a dock accident, thin and faded",
@@ -289,16 +269,45 @@
     "posture_movement": "Moves with fluid grace, favoring his left side unconsciously. Leans against things often — walls, tables, other people — as if he needs physical anchoring. Eyes frequently drift downward to his right arm. When he speaks, his left hand gestures expressively while his right hangs stiffly at his side.",
     "clothing_style": "Hodgepodge Tier 4-5 salvage: faded neon-stripe tank top or loose synthetic shirt worn open over a thermal undershirt, industrial cargo pants with multiple pockets (most empty), worn-out neo-leather boots. A hand-stitched Arcturus Defense patch sewn onto his jacket sleeve — a bitter joke. Sometimes wears a long coat to hide the mismatched arms. Cheap jewelry: a chain necklace, a ring with a cracked stone. Everything clean but worn."
   },
-  "image_prompt": "Orion Wójcik-Olofsson, 182cm athletic lean male with warm golden-brown skin, Eastern European and East Asian mixed heritage visible in defined cheekbones and almond-shaped eyes, short dark brown hair. Wearing faded neon-stripe tank top over thermal undershirt, industrial cargo pants, worn neo-leather boots. Mismatched prosthetic arms: sleek matte-black Arcturus Type-4 with blue LED tracery on left, clunky gray plastic Tier 1 prosthetic on right. Surgical scar across right shoulder, minimalist Φ tattoo on inner left wrist. Dark circles under eyes, posture favoring left side, leaning against grimy metal wall. Cyberpunk 2226 GLMZ, neon-lit undercity setting, dim cool blue and amber lighting, gritty industrial aesthetic, moody and introspective expression. --ar 2:3 --v 6",
+  "image_prompt": "Orion Dalgaard-Okada, GLMZ, mixed-heritage male with East Asian-dominant features (61.5% East Asian, 22.1% Sub-Saharan African, 16.4% South Asian). Warm golden-brown skin, high cheekbones, almond-shaped deep brown eyes, fuller lips, defined jawline. Athletic lean build, 182cm tall. Short dark brown hair. Left arm: sleek matte-black Arcturus Type-4 combat prosthetic with blue LED tracery and articulation joints. Right arm: worn gray-plastic Tier 1 surplus prosthetic, chipped and cracked. Shoulder scar visible. Wearing faded neon-stripe tank top over thermal undershirt, industrial cargo pants, worn neo-leather boots. Chain necklace, cracked-stone ring. Dark circles under eyes, tightness around mouth showing strain. Leaning against industrial wall, favoring left side. Expression weary but composed. Moody neo-noir dock setting, neon glow and shadow contrast, gritty atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 35.4,
-    "East Asian": 19.7,
-    "Hispanic/Latin American": 19.6,
-    "Sub-Saharan African": 12.9,
-    "Pacific Islander": 12.4
+    "East Asian": 61.5,
+    "Sub-Saharan African": 22.1,
+    "South Asian": 16.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 11.5
+      },
+      "Japanese": {
+        "Japanese": 14.6
+      },
+      "Chinese": {
+        "Sichuanese": 27,
+        "Cantonese": 8.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 10.2
+      },
+      "Southern African": {
+        "South African": 11.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 0.9,
+        "Tamil Sri Lankan": 6.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 9.4
+      }
+    }
+  }
 }

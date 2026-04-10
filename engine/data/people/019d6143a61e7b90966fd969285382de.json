@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61e7b90966fd969285382de",
   "type": "character",
-  "name": "Cleo Larsdóttir",
+  "name": "Elsa Rahman",
   "aliases": [
     "The Midwife"
   ],
@@ -90,7 +90,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -104,17 +104,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Shelf",
-    "Chicago",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "The Pure Hand",
-    "The Third Rail",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Witness"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian (37.4%) with East Asian (31.5%), Eastern European (14.2%), North African (10.4%), and South Asian (6.5%) ancestry; a striking blend reflecting the Ubiquitous Diaspora with high cheekbones and almond-shaped eyes from Central/East Asian heritage, warm medium-brown skin with subtle golden undertones from North African and South Asian admixture, and fine facial structure influenced by Eastern European genetics",
+    "heritage": "Predominantly East Asian (34.2%) with substantial Northern European (23.5%), South Asian (14.9%), Southeast Asian (14.9%), and Middle Eastern (12.5%) ancestry; a striking global blend reflecting the Ubiquitous Diaspora with almond-shaped eyes and high cheekbones from East and Southeast Asian heritage, warm medium-brown skin with subtle golden and olive undertones from the South Asian and Middle Eastern admixture, and refined facial structure influenced by Northern European genetics",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Athletic and lean with defined shoulders from decades of precise manual work; carries herself with the economical posture of someone who has learned to move without wasting energy",
@@ -122,8 +116,8 @@
     "hair_style": "Pulled back in a tight, practical braid that loops at the nape of her neck; the style emphasizes sharp cheekbones",
     "hair_length": "Medium",
     "eye_color": "Light hazel with amber flecks",
-    "skin_tone": "Medium warm brown with golden-amber undertones; a luminous quality from the blend of Central Asian, East Asian, and North African ancestry",
-    "complexion": "Weathered but maintained; fine lines around the eyes from years of concentration; minimal cosmetics; skin shows the wear of chemical exposure and years navigating The Shelf's environmental hazards; high, prominent cheekbones characteristic of Central and East Asian heritage; subtle warmth to the face that catches light",
+    "skin_tone": "Medium warm brown with golden-olive undertones; luminous quality from the multifaceted blend of East Asian, South Asian, Southeast Asian, and Middle Eastern ancestry creating subtle warm and cool undertones in the complexion",
+    "complexion": "Weathered but maintained; fine lines around the eyes from years of concentration; minimal cosmetics; skin shows the wear of chemical exposure and years navigating The Shelf's environmental hazards; high, prominent cheekbones characteristic of East and Southeast Asian heritage blended with the softer facial contours influenced by South Asian genetics; subtle warmth to the face that catches light, enhanced by the warm undertones of her mixed ancestry",
     "distinguishing_marks": [
       "Thin white scar running from the corner of her right eye to her cheekbone, sustained during a black-market surgery extraction gone wrong circa 2203",
       "Faded tattoo on her left inner forearm: a stylized caduceus wrapped in circuit lines, marking her allegiance to the underground medical collective",
@@ -133,16 +127,64 @@
     "posture_movement": "Moves with deliberate, economical grace; hands are always slightly active, fingers twitching through practiced gestures even at rest; maintains steady eye contact; speaks in measured tones with minimal wasted breath; carries tension in her shoulders that only releases when she's focused on a task",
     "clothing_style": "Tier 3-4 utilitarian: reinforced gray synthetic jacket with internal pockets for tools and implant diagnostics; dark cargo pants with utility webbing; worn leather fingerless gloves over her left hand only; steel-toed boots with custom orthotic inserts for standing through long procedures; a medical-grade respirator hangs loose around her neck (air quality on The Shelf is unreliable); no corporate branding, but visible wear patterns suggest expensive maintenance; a single piece of jewelry: a Scandinavian silver ring on her right index finger (her augmented hand), family heirloom"
   },
-  "image_prompt": "Cyberpunk 2226, Cleo Larsdóttir, 172cm tall surgical operative with striking Central and East Asian features—high prominent cheekbones, almond-shaped amber-hazel eyes, medium warm golden-brown skin with subtle undertones. Dark brown hair streaked silver at temples, pulled back in tight practical braid. White scar from right eye to cheekbone. Wearing reinforced gray synthetic jacket over dark cargo utility pants, steel-toed boots, medical respirator hanging at neck. Right hand augmented with chromatic precision fingers, left hand in worn leather fingerless gloves. Silver family ring catches light on augmented index finger. Faint subcutaneous bioluminescent network visible in right forearm. Economical posture, hands slightly active, steady focused expression. Underground medical collective aesthetic. Dim The Shelf lighting, cool neon accents, worn industrial interior setting. Tension in shoulders, concentrated gaze. Ultra-detailed cyberpunk surgical operative portrait. --ar 2:3 --v 6",
+  "image_prompt": "Elsa Rahman, 172cm tall, athletic lean build, GLMZ, portrait of a biracial East Asian-Northern European-South Asian woman with warm medium-brown skin, golden-olive undertones, almond eyes with light hazel iris and amber flecks, high cheekbones, dark brown hair with silver at temples pulled in tight practical braid, weathered complexion with fine lines, thin white scar from right eye corner to cheekbone, faded circuit-caduceus tattoo on left forearm, three-point burn scar on right hand. Right hand augmented with chromatic precision fingers and micro-articulated joints. Subtle neural interface port at skull base concealed by braid. Faint bioluminescent network visible under right forearm skin. Wearing reinforced gray synthetic utility jacket, dark cargo pants with webbing, worn leather fingerless gloves on left hand only, steel-toed boots, medical-grade respirator around neck, Scandinavian silver ring on right index finger. Posture deliberate and economical, hands active with practiced gestures, tension in shoulders, steady gaze. Low-light surgical setting with cool blue and warm amber industrial lighting, worn workshop environment, moody atmospheric neo-noir urban aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 37.4,
-    "East Asian": 31.5,
-    "Eastern European": 14.2,
-    "North African": 10.4,
-    "South Asian": 6.5
+    "East Asian": 34.2,
+    "Northern European": 23.5,
+    "South Asian": 14.9,
+    "Southeast Asian": 14.9,
+    "Middle Eastern": 12.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 34.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 10.3
+      },
+      "Germanic": {
+        "German": 5.6
+      },
+      "Scandinavian": {
+        "Danish": 5.5,
+        "Finnish": 2.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 10.8
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.3,
+        "Tamil Sri Lankan": 1.1
+      },
+      "Nepali": {
+        "Nepali": 2.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 6.6
+      },
+      "Laotian": {
+        "Laotian": 8.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 4.2,
+        "Jordanian": 3.8
+      },
+      "Kurdish": {
+        "Kurdish": 4.5
+      }
+    }
+  }
 }

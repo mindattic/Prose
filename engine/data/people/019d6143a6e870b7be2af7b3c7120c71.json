@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e870b7be2af7b3c7120c71",
   "type": "character",
-  "name": "Atlas Bustamante-Volkov",
+  "name": "Atlas Wickramasinghe-Calvillo",
   "aliases": [
     "Teacher Tade",
     "The Chalk Man"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Montclare Quiet, Terrace Row Housing Unit 14, near Milwaukee and Damen",
-  "description": "Tadewos Villanueva-Khatri is a slender, slightly stooped man who still dresses as though he is going to stand in front of a classroom — collared shirt, pressed, one color of ink on his pocket, chalk residue on his left hand even though he hasn't taught in four years, because he cannot stop teaching things to whoever is nearby. His hair is gone except for a precise white beard he maintains with what his grandchildren call 'weird dedication.' He has cat ears — a geneware choice from his mid-forties, the soft grey kind with slight tabby markings, that he got because his students loved them and he never had them reversed. They fold slightly when he is embarrassed, which he finds mortifying because it cannot be hidden.\n\nHe is raising Amara, 9, and Deshi, 12, his daughter Priya's children, since Priya's disappearance into a Helix Biosystems labor contract three years ago that has not produced reliable contact in eighteen months. He does not use the word 'disappeared' in front of the children. He is calm about it in public and wakes at 3 AM about it in private. His pension from the GLMZ Municipal Education Authority does not cover three people adequately, and he has begun supplementing it by tutoring neighborhood children for small fees, which the MEA has quietly informed him may technically violate his pension terms. He is currently ignoring this letter.",
+  "description": "Atlas Wickramasinghe-Calvillo is a slender, slightly stooped man who still dresses as though he is going to stand in front of a classroom — collared shirt, pressed, one color of ink on his pocket, chalk residue on his left hand even though he hasn't taught in four years, because he cannot stop teaching things to whoever is nearby. His hair is gone except for a precise white beard he maintains with what his grandchildren call 'weird dedication.' He has cat ears — a geneware choice from his mid-forties, the soft grey kind with slight tabby markings, that he got because his students loved them and he never had them reversed. They fold slightly when he is embarrassed, which he finds mortifying because it cannot be hidden.\n\nHe is raising Amara, 9, and Deshi, 12, his daughter Priya's children, since Priya's disappearance into a Helix Biosystems labor contract three years ago that has not produced reliable contact in eighteen months. He does not use the word 'disappeared' in front of the children. He is calm about it in public and wakes at 3 AM about it in private. His pension from the GLMZ Municipal Education Authority does not cover three people adequately, and he has begun supplementing it by tutoring neighborhood children for small fees, which the MEA has quietly informed him may technically violate his pension terms. He is currently ignoring this letter.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -169,7 +169,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,39 +242,28 @@
   "related_entities": [
     "Helix Biosystems",
     "Montclare Quiet",
-    "GLMZ",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Big Rig",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
     "Residue (I Still Have Your Feed)",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Arcturus KS-7 'Nursery'",
+    "Atlas",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Milwaukee Core",
-    "Acoustic Marrow Shear Rifle AMSR-6 'Tutor'",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
-    "Lazarus IDP-1 'Teeth'",
-    "Nkosi Tabares-Aanenson",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "The Lantern Room",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Eastern European (55.6%) with significant Hispanic/Latin American heritage (38.0%) and minor Sub-Saharan African ancestry (6.4%). Features reflect this Eastern European-dominant mix: moderate bone structure with slight Slavic characteristics, warm tan-olive skin tone from blended heritage, and naturally brown eyes.",
+    "heritage": "Predominantly South Asian (44.5%) with significant Hispanic/Latin American heritage (25.4%), complemented by Northern European (9.8%), East Asian (8.9%), Sub-Saharan African (8.8%), and Southeast Asian (2.6%) ancestry. This complex global ancestry creates a distinctive phenotype: South Asian facial structure forms the foundation, with the warmth and cheekbone definition of Hispanic and African heritage, subtle eye shape variations from East and Southeast Asian contributions, and fair-skin recessive traits from Northern European ancestry creating subtle undertones.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Slender and slightly stooped with age, shoulders rounded forward from decades of leaning over student desks. Wiry frame shows defined muscle structure but lacks bulk — the build of someone who has never prioritized physical conditioning.",
     "hair_color": "White",
     "hair_style": "Completely bald scalp; precise white beard maintained with meticulous care, trimmed to approximately 2cm length",
     "hair_length": "Shaved",
-    "eye_color": "Deep brown, warm and patient",
-    "skin_tone": "Warm tan-olive with golden-peachy undertones from Eastern European-Hispanic blend, weathered by age and consistent sun exposure through decades of outdoor supervision duty",
-    "complexion": "Fine lines around eyes and mouth from smiling, slight age spots on forehead and temples, skin texture slightly papery but healthy. Permanent chalk dust embedded in creases of left palm and fingernails despite four years of retirement. Subtle golden warmth throughout from Latin American heritage contribution.",
+    "eye_color": "Deep warm brown with subtle golden undertones, patient and observant",
+    "skin_tone": "Warm medium-deep brown with golden undertones — a harmonious blend reflecting South Asian dominance tempered by the warmth of Hispanic and African heritage, with subtle cooler undertones from Northern European ancestry. Rich and sun-weathered from decades of outdoor duty.",
+    "complexion": "Fine lines around eyes and mouth from smiling, slight age spots on forehead and temples, skin texture slightly papery but healthy. Facial structure shows South Asian proportions with wider cheekbones and face shape influenced by African and Hispanic heritage, subtle eye-fold characteristic of East Asian contribution. Golden warmth throughout from the blended ancestry. Permanent chalk dust embedded in creases of left palm and fingernails despite four years of retirement.",
     "distinguishing_marks": [
       "Pair of functional grey tabby geneware cat ears protruding from top of skull, with realistic fur texture and slight natural tabby striping; ears fold backward slightly when embarrassed or stressed",
       "Small ink stain on left shirt pocket from decades of pen use — same location, same pattern, replaced regularly",
@@ -284,14 +273,56 @@
     "posture_movement": "Walks with slight forward lean from spinal compression, movements deliberate and economical. Tends to stand with hands clasped or one hand resting on a surface for stability. Frequently pauses mid-conversation to consider phrasing — a teacher's habit. Ears fold noticeably when embarrassed or uncertain, which he finds involuntarily revealing.",
     "clothing_style": "Tier 4 (working class, careful). Wears pressed collared shirts in neutral colors (white, pale blue, tan) with visible wear at collar and cuffs — garments mended carefully rather than replaced. Dark trousers, always clean, slightly bagged at the knees. Worn leather shoes, resoled twice. A cardigan sweater, grey wool, over everything in cool months. No visible corporate affiliation or status markers. Clothing suggests a man maintaining personal dignity on a fixed and inadequate income."
   },
-  "image_prompt": "An elderly man of Eastern European-Hispanic ancestry in the cyberpunk 2226 Great Lakes Metropolitan Zone, 172cm tall with slender build slightly stooped from age. Deep brown eyes, white trimmed beard, bald scalp. Warm tan-olive weathered skin with golden undertones. Notable grey tabby geneware cat ears with realistic fur and tabby striping protruding from skull, ears folded back slightly. Wire-rimmed vintage reading glasses. Wearing a pressed pale blue collared shirt with visible careful mending at cuffs, dark trousers bagged at knees, grey wool cardigan over top. Worn leather shoes. Standing with deliberate posture, hands clasped, chalk dust visible on left palm. Fine facial lines showing decades of patient teaching. Small ink stain on left shirt pocket. White scar visible on right wrist. Neutral, dignified expression in modest indoor setting with warm atmospheric lighting, muted color palette, suggesting a life of quiet dignity on limited means. Cyberpunk 2220s aesthetic with analog details. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Atlas Wickramasinghe-Calvillo, 172cm tall elderly man with warm medium-deep brown skin blending South Asian, Hispanic, and African heritage. Bald head with meticulously trimmed white beard, 2cm length. Functional grey tabby geneware cat ears with realistic fur and tabby markings protruding from skull. Deep warm brown eyes, patient and contemplative. Slight forward spinal lean, dignified posture. Wearing pressed pale blue collared shirt with careful mending at cuffs, dark trousers with visible wear at knees, grey wool cardigan over shoulders. Wire-rimmed reading glasses. Fine white scar on right wrist. Standing in soft indoor lighting suggesting a modest apartment or library setting. GLMZ, working-class aesthetic, quiet dignity, warm atmospheric lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 55.6,
-    "Hispanic/Latin American": 38.0,
-    "Sub-Saharan African": 6.4
+    "South Asian": 44.5,
+    "Hispanic/Latin American": 25.4,
+    "Northern European": 9.8,
+    "East Asian": 8.9,
+    "Sub-Saharan African": 8.8,
+    "Southeast Asian": 2.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 44.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 12.1
+      },
+      "South American": {
+        "Venezuelan": 13.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 2.4,
+        "Norwegian": 1.1
+      },
+      "Germanic": {
+        "Swiss German": 6.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 8.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 8.8
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 2.6
+      }
+    }
+  }
 }

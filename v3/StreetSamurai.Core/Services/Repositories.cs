@@ -190,7 +190,7 @@ public class QuoteRepository : JsonDirectoryRepository<QuoteData>
 public class ToneBibleRepository : JsonSingletonRepository<ToneBibleData>
 {
     public ToneBibleRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "cyberpunk_tone_bible.json")) { }
+        : base(Path.Combine(paths.EngineDataDir, "neo-noir_tone_bible.json")) { }
 }
 
 public class StoryBibleRepository : JsonSingletonRepository<StoryBibleData>

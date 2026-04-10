@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Brightmoor Reclamation — Soil & Signal Community School, a converted warehouse building, near Ashland and Division",
-  "description": "Arjun is a middle-height man with warm bronze-brown skin, an unruly beard he loses the war against on a weekly basis, and deep-set eyes that are perpetually slightly too interested in whatever is happening. His only geneware is a bioluminescent patch behind his left ear — pale blue-green, about the size of a thumb — that he got as a young man and has since forgotten to maintain, so it flickers unpredictably in low light like a lamp with a loose connection. He dresses in layers of mismatched professional clothing that suggests someone who used to care about presentation and has reached an accommodation with reality.\n\nSoil & Signal serves eighty-odd children from Brightmoor Reclamation's patchwork communities and operates on donated equipment, community Quanta subscriptions, and the collective will of eight staff members who could all earn more elsewhere. Arjun teaches the seven-to-ten cohort: mathematics, civic systems, and what the curriculum calls Environmental Literacy, which in practice means explaining to children why some parts of the city are poisoned and who made that decision. He is a genuinely gifted teacher — patient, inventive, unafraid to say 'I don't know' — who has let the demands of the school hollow out most of the rest of his life without quite noticing.",
+  "description": "Santiago Soriano is a middle-height man with warm bronze-brown skin, an unruly beard he loses the war against on a weekly basis, and deep-set eyes that are perpetually slightly too interested in whatever is happening. His only geneware is a bioluminescent patch behind his left ear — pale blue-green, about the size of a thumb — that he got as a young man and has since forgotten to maintain, so it flickers unpredictably in low light like a lamp with a loose connection. He dresses in layers of mismatched professional clothing that suggests someone who used to care about presentation and has reached an accommodation with reality.\n\nSoil & Signal serves eighty-odd children from Brightmoor Reclamation's patchwork communities and operates on donated equipment, community Quanta subscriptions, and the collective will of eight staff members who could all earn more elsewhere. Santiago Soriano teaches the seven-to-ten cohort: mathematics, civic systems, and what the curriculum calls Environmental Literacy, which in practice means explaining to children why some parts of the city are poisoned and who made that decision. He is a genuinely gifted teacher — patient, inventive, unafraid to say 'I don't know' — who has let the demands of the school hollow out most of the rest of his life without quite noticing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -166,7 +166,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brightmoor Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,26 +235,11 @@
     "Palladian Construction",
     "Bronze",
     "Nesting Doll",
-    "The Pale Mile",
-    "Adaeze Soumaré-Papadimitriou",
-    "Alper Lebedev-Tutu",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Eshe Pena-Baah",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Obafemi Szczypiński-Lautoa",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "TESSERA PA-5 'Attendant'",
-    "Tessera Corponation",
-    "The Collective",
-    "The Pure Hand",
-    "The Question",
-    "Veslemøy Achebe-Tursynov"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed ancestry from Hispanic/Latin American (35%), Sub-Saharan African (25%), East Asian (16%), North African (10%), Southeast Asian (10%), and Middle Eastern (4%) heritage. This genetic combination creates a complex phenotype with warm brown undertones, subtle epicanthic features, and facial structure reflecting multiple continental influences.",
+    "heritage": "Mixed ancestry from Hispanic/Latin American (59.1%), Sub-Saharan African (20.8%), and South Asian (20.1%) heritage. This genetic combination creates a distinctive phenotype: the Latin American and African ancestry contributes warm deep brown tones and broader facial structure, while the South Asian component adds subtle cheekbone prominence and refined facial proportions. The result is a rich, complex complexion with golden-bronze warmth throughout.",
     "height_cm": 172,
     "weight_kg": 71,
     "build": "Lean, slightly slouched from years of bending over student desks. Shoulders rounded forward. Wiry rather than muscular, with the kind of frame that suggests he forgets to eat regularly.",
@@ -262,8 +247,8 @@
     "hair_style": "Tousled, often swept back with one hand during teaching. Usually has a few strands falling forward across his forehead.",
     "hair_length": "Medium",
     "eye_color": "Deep brown, warm but tired",
-    "skin_tone": "Warm bronze-brown with golden undertones reflecting the blended ancestry. Rich melanin content creates depth, with olive-golden warmth from Latin American and North African heritage mixing with the darker brown from Sub-Saharan African ancestry.",
-    "complexion": "Weathered in a way that suggests years of living in a lower-tier neighborhood. Facial structure shows subtle East Asian influence in bone structure around cheekbones and eyes, combined with broader features reflecting African and Latin American heritage. Persistent shadow of stubble; the unruly beard he mentions losing the weekly war against. Fine lines around his eyes and mouth from constant expression — smiling, frowning, concentrating. Skin is clear but not particularly cared-for; no visible scarring.",
+    "skin_tone": "Deep warm bronze-brown with golden undertones. Rich melanin content from the African and Latin American ancestry creates depth and warmth, while South Asian heritage adds subtle radiance to the complexion. Consistent warm richness across the face and body.",
+    "complexion": "Weathered in a way that suggests years of living in a lower-tier neighborhood. Facial structure shows broader features reflecting African and Latin American heritage, with cheekbone prominence and refined proportions visible from South Asian ancestry. Persistent shadow of stubble; the unruly beard he mentions losing the weekly war against. Fine lines around his eyes and mouth from constant expression — smiling, frowning, concentrating. Skin is clear but not particularly cared-for; no visible scarring.",
     "distinguishing_marks": [
       "Bioluminescent geneware patch behind left ear, approximately 3cm diameter, pale blue-green coloration, flickering irregularly due to poor maintenance — visible as a faint glow in low light, sometimes dims completely for several seconds"
     ],
@@ -271,17 +256,44 @@
     "posture_movement": "Perpetually leaning slightly forward, as if genuinely interested in whatever is in front of him — or listening intently. Hands move frequently when talking; gestures are open and encouraging. Movements are efficient but not rushed; he moves like someone who has learned to be present in a room rather than urgent.",
     "clothing_style": "Layers of mismatched professional clothing suggesting abandoned formality. Usually wears a neutral-colored button-up shirt (often wrinkled, sometimes with chalk dust or food stains) under a cardigan or blazer from three different decades, paired with casual trousers. Occasionally wears a vest. Shoes are worn but functional — school-safe, not fashionable. Nothing matches intentionally. Overall appearance reads as 'used to care about presentation, has made peace with that not being possible anymore.' Tier 4 clothing — functional, donated, assembled without aesthetic concern."
   },
-  "image_prompt": "Santiago Soriano, a 172cm lean male teacher with warm bronze-brown skin and subtle East Asian-African-Latin American mixed heritage phenotype, deep brown tired eyes, dark hair graying at temples, tousled and swept back. Slight forward slouch from years teaching. Weathered complexion with fine expression lines, persistent stubble, unshaven. Wearing mismatched layers: wrinkled neutral button-up shirt under vintage cardigan, casual trousers, worn functional shoes. Faint bioluminescent geneware patch glowing pale blue-green behind left ear. Hands gesturing openly, leaning forward with engaged posture. Cyberpunk 2226 Great Lakes Metropolitan Zone, Tier 4 urban school setting, fluorescent classroom lighting casting shadows across tired face, worn educational background. Realistic, character study, --ar 2:3 --v 6",
+  "image_prompt": "Santiago Soriano, a 172cm lean neo-noir educator with deep warm bronze-brown skin with golden undertones, blending Hispanic/Latin American, Sub-Saharan African, and South Asian ancestry. Dark brown hair graying at temples, tousled and swept back. Deep warm brown eyes, weathered and tired. Broader facial features with prominent cheekbones, persistent stubble, fine lines around eyes and mouth. Leaning slightly forward in an attentive pose. Wearing mismatched layers: wrinkled neutral button-up shirt under a faded cardigan from decades past, casual trousers, worn shoes. Bioluminescent geneware patch glowing faintly behind left ear in pale blue-green. Dim classroom lighting, dust motes in air. Hands gesturing openly. GLMZ, GLMZ tier 4 setting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 34.8,
-    "Sub-Saharan African": 25.3,
-    "East Asian": 16.3,
-    "North African": 10.4,
-    "Southeast Asian": 9.7,
-    "Middle Eastern": 3.5
+    "Hispanic/Latin American": 59.1,
+    "Sub-Saharan African": 20.8,
+    "South Asian": 20.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 22.4
+      },
+      "Central American": {
+        "Honduran": 4.2
+      },
+      "South American": {
+        "Peruvian": 32.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 10
+      },
+      "East African": {
+        "Tanzanian": 1.5,
+        "Kenyan": 0.7
+      },
+      "Southern African": {
+        "Mozambican": 8.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 20.1
+      }
+    }
+  }
 }

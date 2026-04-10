@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68878a08f9ba8722c9dad81",
   "type": "character",
-  "name": "Rowan Adeyemi",
+  "name": "Rowan Thammasak",
   "aliases": [
     "Spetch",
     "The Cartographer",
@@ -14,7 +14,7 @@
   "age": 19,
   "status": "active",
   "location": "Old Harbor (primary), The Circuit (work), near Michigan Ave and Roosevelt",
-  "description": "Orvyn Specht is nineteen years old and looks sixteen and has survived this discrepancy by being faster than people expect and more useful than people intend. He is slight, pale-skinned with a spray of freckles across dark circles, with hair that grows in three directions regardless of what he does to it. He moves through Old Harbor like a person who has memorized every exit, which he has—not as a paranoid exercise but as an intellectual one. He maps things. Streets, social networks, grudge lines, debt relationships, who owes what to whom and who is lying about it. He sells this information in small, carefully portioned pieces to people who don't know how much of the whole picture he's already holding.\n\nOrvyn grew up in the informal settlement layers of Old Harbor, raised by an older sister who left when he was twelve and a rotating cast of neighbors who fed him when they remembered to. He is not bitter about this. He is, in a way that sometimes unnerves people who probe it, genuinely cheerful—a relentless, low-grade delight in the texture of information itself, in the way a rumor travels and changes, in the gap between what people say and what the map of their behavior reveals. He keeps physical notebooks filled with hand-drawn cartography: not just geography but social topology, annotated in a cramped personal shorthand no one else can read.\n\nHe operates out of a specific corner booth in a noodle shop called Haecht's in Old Harbor, where he has an informal arrangement with the owner, and from a secondary position near the transit interchange in The Circuit where he sells low-grade data to mid-tier runners and fixers. He has no bodyguard, no crew, no weapon beyond a short blade he has used exactly once. His protection is that he knows too much about too many people for any single actor to find his disappearance profitable, and he has made sure that enough of them know this.",
+  "description": "Rowan Thammasak is nineteen years old and looks sixteen and has survived this discrepancy by being faster than people expect and more useful than people intend. He is slight, pale-skinned with a spray of freckles across dark circles, with hair that grows in three directions regardless of what he does to it. He moves through Old Harbor like a person who has memorized every exit, which he has—not as a paranoid exercise but as an intellectual one. He maps things. Streets, social networks, grudge lines, debt relationships, who owes what to whom and who is lying about it. He sells this information in small, carefully portioned pieces to people who don't know how much of the whole picture he's already holding.\n\nOrvyn grew up in the informal settlement layers of Old Harbor, raised by an older sister who left when he was twelve and a rotating cast of neighbors who fed him when they remembered to. He is not bitter about this. He is, in a way that sometimes unnerves people who probe it, genuinely cheerful—a relentless, low-grade delight in the texture of information itself, in the way a rumor travels and changes, in the gap between what people say and what the map of their behavior reveals. He keeps physical notebooks filled with hand-drawn cartography: not just geography but social topology, annotated in a cramped personal shorthand no one else can read.\n\nHe operates out of a specific corner booth in a noodle shop called Haecht's in Old Harbor, where he has an informal arrangement with the owner, and from a secondary position near the transit interchange in The Circuit where he sells low-grade data to mid-tier runners and fixers. He has no bodyguard, no crew, no weapon beyond a short blade he has used exactly once. His protection is that he knows too much about too many people for any single actor to find his disappearance profitable, and he has made sure that enough of them know this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -231,7 +231,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor (primary)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,34 +253,15 @@
     "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Lacuna Genomics",
+    "Circuit",
+    "Harbor Fish Shack",
     "Nesting Doll",
-    "The Pale Mile",
-    "Ambrosia Fekete-Waiyaki",
-    "Axonal Stretch Resonance Lance",
-    "Aïssé Dragomirescu-Faalelei",
-    "Brecken Yılmaz-Osei",
-    "Dzemal Acholonu-Patagiri",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Hepatic Glycogen Depletion Projector",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Pikasso Wemba-Þórðarson",
-    "Praevex",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Tenderloin",
-    "The Pure Hand",
-    "The Question",
-    "The Wire Taps"
+    "Corner Slice",
+    "The Pale Mile"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (66.7%) with significant Southeast Asian (23.7%) and Northern European (9.6%) ancestry. The genetic blend manifests in warm-toned skin with underlying richness, facial structure reflecting the Sub-Saharan and Southeast Asian majority, with subtle Northern European features softening the overall appearance.",
+    "heritage": "Predominantly Southeast Asian (66.1%) with significant East Asian (12.3%), Middle Eastern (12.9%), and Sub-Saharan African (8.2%) ancestry. The genetic blend creates warm medium-toned skin with golden undertones, facial structure reflecting the Southeast Asian and East Asian majority combined with Sub-Saharan African features—defined cheekbones, fuller lips, slightly broader nose base characteristic of the blend.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and slight, almost adolescent-thin with minimal muscle definition. Moves with economical precision—no wasted motion, shoulders slightly hunched as if perpetually ready to slip through a gap",
@@ -288,8 +269,8 @@
     "hair_style": "Deliberately unkempt, grows in three distinct directions regardless of intervention. Often falls across one eye",
     "hair_length": "Medium (shoulder-length, though the chaotic growth pattern makes length deceptive)",
     "eye_color": "Left eye: warm brown (natural); Right eye: cybernetic with faint LED ring around pupil (secondhand optical unit, occasionally glitches to bright cyan activation)",
-    "skin_tone": "Medium-warm with golden undertones, displaying the rich depth of Sub-Saharan and Southeast Asian heritage beneath a sun-deprived indoor pallor. Warm rather than cool despite limited sunlight exposure.",
-    "complexion": "Youthful but worn. Deep dark circles under both eyes suggesting chronic sleep irregularity. Faint constellation of freckles across bridge of nose and cheekbones blending with natural skin variation. Skin has the papery quality of someone malnourished in childhood, now stable but not thriving. Clean but not fastidious—no acne, good hygiene maintained out of practical necessity rather than vanity. Facial structure reflects Southeast Asian and Sub-Saharan features: defined cheekbones, slightly broader nose base, full lips.",
+    "skin_tone": "Medium-warm with golden undertones, displaying the rich depth of Southeast Asian and East Asian heritage blended with Sub-Saharan African warmth beneath a sun-deprived indoor pallor.",
+    "complexion": "Youthful but worn. Deep dark circles under both eyes suggesting chronic sleep irregularity. Faint constellation of freckles across bridge of nose and cheekbones blending with natural skin variation. Skin has the papery quality of someone malnourished in childhood, now stable but not thriving. Clean but not fastidious—no acne, good hygiene maintained out of practical necessity rather than vanity. Facial structure reflects Southeast Asian, East Asian, and Sub-Saharan features: defined cheekbones, slightly broader nose base, full lips.",
     "distinguishing_marks": [
       "Thin white scar along right forearm (approximately 8cm long, near wrist)—from the one time he used his blade, three years ago",
       "Tattoo on inside left wrist: personal cartographic shorthand symbol resembling a stylized map grid, done in black ink, approximately 2cm across",
@@ -299,14 +280,51 @@
     "posture_movement": "Moves with unusual fluidity for his age—gliding rather than walking, shoulders loose but spine alert. Sits sideways in chairs to maintain sightline of exits. Hands are rarely still; fidgets with pen, notebook spine, or the edge of whatever surface is available. Eyes scan constantly, cataloging. When speaking, maintains deliberate eye contact despite slight self-consciousness about the glitching eye",
     "clothing_style": "Tier 4 (working class, with deliberate anti-status signaling). Favors loose-fitting dark cargo pants with excessive pockets (function over style), worn synthetic fiber jackets in grays or blacks. Undershirts are faded band tees or salvaged corporate promotional wear. Shoes are practical and worn—walking boots resoled multiple times. No jewelry except the wrist tattoo. Clothes are clean but deliberately unmemorable; he owns perhaps four outfits in rotation. No visible QUANTA-sponsored branding; actively avoids corpo-aesthetic"
   },
-  "image_prompt": "Rowan Adeyemi, wiry 168cm figure with warm medium-brown skin tone and golden undertones reflecting Sub-Saharan African and Southeast Asian heritage. Mousy brown shoulder-length hair with reddish undertones falling chaotically across face. Left eye warm brown, right eye cybernetic with amber-to-cyan LED ring and scratched lens showing wear. Sharp defined cheekbones, full lips, deep dark circles from chronic sleep deprivation. Thin white scar on right forearm, black map grid tattoo on left wrist. Wearing worn dark cargo pants and gray synthetic jacket over faded band tee, practical walking boots. Hunched posture, fidgeting hands, constantly scanning eyes. Cyberpunk 2226 GLMZ underground setting, neon glow casting amber and cyan light across angular face, sitting sideways in chair toward exit. Moody, alert, economical movement frozen mid-frame. Deliberately unmemorable working-class aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Thammasak, 2226 neo-noir character, 168cm wiry build, Southeast Asian-dominant mixed heritage with warm medium-toned golden-undertoned skin, defined cheekbones, fuller lips, slightly broader nose base. Youthful face with deep dark circles, faint freckles across nose and cheekbones. Left eye warm brown, right eye glitching cybernetic replacement with amber-to-cyan LED ring, visible orbital seam, scratched lens. Mousy brown reddish-tinted medium shoulder-length hair unkempt and chaotic. White scar on right forearm near wrist, black cartographic tattoo inside left wrist. Wearing faded band tee undershirt, loose-fitting dark cargo pants with excessive pockets, worn gray synthetic jacket, practical walking boots resoled multiple times. Sitting sideways in chair scanning surroundings with alert posture, hands fidgeting, no jewelry, Tier 4 working-class aesthetic. Indoor neon-lit setting with moody neo-noir atmosphere, slight sensory overload suggested by eye-twitch tension. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 66.7,
-    "Southeast Asian": 23.7,
-    "Northern European": 9.6
+    "Southeast Asian": 66.1,
+    "Middle Eastern": 12.9,
+    "East Asian": 12.3,
+    "Sub-Saharan African": 8.2,
+    "Central Asian": 0.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 66.1
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 2.1,
+        "Afghan Dari": 10.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 6.9
+      },
+      "Southern African": {
+        "Mozambican": 1.3
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 0.2,
+        "Mongolian": 0.2
+      },
+      "Turkic": {
+        "Kazakh": 0.1
+      }
+    }
+  }
 }

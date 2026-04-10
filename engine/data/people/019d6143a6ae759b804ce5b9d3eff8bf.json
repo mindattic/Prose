@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ae759b804ce5b9d3eff8bf",
   "type": "character",
-  "name": "Bjorn Ingebrigtsen",
+  "name": "Mateo Madrigal",
   "aliases": [
     "Flash",
     "The Kid"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "North Branch Commons, near North Ave and Damen",
-  "description": "Rashid is tall and still growing, with a loose-limbed energy that makes him seem like he might trip over himself until suddenly he doesn't — he moves fast when he needs to and knows every rooftop, alley, and maintenance corridor in the North Branch Commons with the intimacy of someone who has been running since he was twelve. His skin is a rich brown, and he has retractable claw mods on his right hand that he got on a dare at sixteen and has kept because they're useful for scaling drainage pipes. His left cheekbone has a hairline fracture that healed imperfectly — a reminder from a Palladian security response at a demonstration last year.\n\nHe coordinates direct actions — marches, blockades, projection vandalism, the occasional coordinated work disruption in Palladian-adjacent supply lines — with a tactical instinct that belies his age and an absolute inability to sit through a long meeting without his knee bouncing audibly. He is not strategic in the way older activists mean it. He is strategic in the way a game player is: fast pattern recognition, good in chaos, bad at long timelines. The elders in the movement find him alternately inspiring and exhausting. He finds them slow.",
+  "description": "Mateo Madrigal is tall and still growing, with a loose-limbed energy that makes him seem like he might trip over himself until suddenly he doesn't — he moves fast when he needs to and knows every rooftop, alley, and maintenance corridor in the North Branch Commons with the intimacy of someone who has been running since he was twelve. His skin is a rich brown, and he has retractable claw mods on his right hand that he got on a dare at sixteen and has kept because they're useful for scaling drainage pipes. His left cheekbone has a hairline fracture that healed imperfectly — a reminder from a Palladian security response at a demonstration last year.\n\nHe coordinates direct actions — marches, blockades, projection vandalism, the occasional coordinated work disruption in Palladian-adjacent supply lines — with a tactical instinct that belies his age and an absolute inability to sit through a long meeting without his knee bouncing audibly. He is not strategic in the way older activists mean it. He is strategic in the way a game player is: fast pattern recognition, good in chaos, bad at long timelines. The elders in the movement find him alternately inspiring and exhausting. He finds them slow.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -155,7 +155,7 @@
     "Code Keeper": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "North Branch Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,30 +172,15 @@
   "related_entities": [
     "North Branch Commons",
     "Palladian Construction",
+    "GLMZ",
     "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Compass Rose",
-    "Aïssé Dragomirescu-Faalelei",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Ihaia Nystrom-Keita",
-    "Ilhan Sandstrom-Badu",
-    "Irontide Tidal Energy",
-    "Kairos",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "TESSERA CR-12 'Whisper'",
-    "The Heritage Vault",
-    "The Portico",
-    "The Shelf Commons",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (Scandinavian) predominant with significant Hispanic/Latin American, Sub-Saharan African, and East Asian ancestry. Predominantly Nordic genetics with warm-toned complexion from ancestral diversity across multiple continents.",
+    "heritage": "Complex diaspora blend: predominantly Hispanic/Latin American (62.9%) providing warm base tones and facial structure, with significant Sub-Saharan African (13.4%) contributing fuller lips and broader nasal bridge, Southeast Asian (12.1%) adding subtle eye shape and cheekbone definition, and Eastern European (11.6%) visible in high cheekbone prominence and slight pallor undertones. The combination creates a warm caramel complexion with layered depth—sun-responsive warmth layered over cooler undertones.",
     "height_cm": 188,
     "weight_kg": 71,
     "build": "Lanky and angular with lean muscle from constant movement and rooftop running. Long-limbed with visible definition in shoulders and forearms from scaling work. Chest slightly concave from years of irregular eating.",
@@ -203,27 +188,57 @@
     "hair_style": "Short fade, kept practical and low-maintenance. Often uneven from self-cutting or scissor work done in apartments between actions.",
     "hair_length": "Short",
     "eye_color": "Dark brown, naturally warm",
-    "skin_tone": "Medium to medium-deep complexion with warm honey and golden undertones from Nordic-Hispanic-African genetic blend. Neither pale nor deeply dark—a balanced fusion showing sun-responsiveness and warm olive undertones from Latin American ancestry, enriched by Sub-Saharan African heritage.",
-    "complexion": "Sharp facial structure with high cheekbones characteristic of Nordic ancestry, softened by slightly broader nasal bridge and fuller lips from Hispanic and African heritage. Left cheekbone shows a subtle but visible irregularity — hairline fracture scar that healed slightly misaligned, creating a minor asymmetry. Perpetually tired eyes with dark circles. Minimal facial hair grooming, often a few days of stubble. Skin otherwise clear but marked by minor scrapes and rope burns from regular climbing.",
+    "skin_tone": "Warm caramel to golden-brown complexion with balanced fusion of warm and cool undertones—the caramel-gold warmth from Hispanic/Latin American and Sub-Saharan African ancestry tempered by subtle olive-grey undertones from Eastern European and Southeast Asian heritage. Sun-responsive with even warmth distribution. Mid-depth tone showing neither pallor nor deep saturation—a harmonious blend.",
+    "complexion": "Facial structure combining high, prominent cheekbones from Eastern European ancestry with fuller lips and broader nasal bridge from Hispanic and Sub-Saharan African heritage. Subtle eye shape refinement from Southeast Asian ancestry. Left cheekbone shows a visible irregularity—hairline fracture scar approximately 4cm long, healed slightly lighter against warm caramel skin with minor misalignment creating asymmetry. Perpetually tired eyes with pronounced dark circles. Minimal facial hair grooming, often a few days of stubble. Skin otherwise clear but marked by minor scrapes and rope burns from regular climbing.",
     "distinguishing_marks": [
-      "Hairline fracture scar on left cheekbone with visible misalignment, approximately 4cm long, healed pale against medium-toned skin",
+      "Hairline fracture scar on left cheekbone with visible misalignment, approximately 4cm long, healed slightly lighter against warm caramel skin",
       "Multiple thin rope-burn scars across both palms and inner forearms, acquired from climbing and rigging work",
       "Three-dot tattoo on right inner wrist (North Branch Commons solidarity mark), done with hand-poke tools",
       "Small burn scar on left shoulder blade from an incendiary round grazing his jacket during a security response"
     ],
-    "visible_augmentations": "Right hand shows retractable claw mods — five metallic prongs (approximately 8cm extended length) housed beneath knuckle-skin integration points. Chrome is scuffed and shows street-grade fabrication. Reinforced kneecaps visible as slight hardening/discoloration along the patellar tendons. Mesh-broadcast node at base of neck beneath collar line — visible as a small raised bump when neck is exposed, slight LED indicator glow underneath skin in low light.",
-    "posture_movement": "Operates in constant motion — fidgeting, bouncing knee when stationary, fingers twitching. Walks with a loping gait optimized for speed and momentum. Descends stairs and ladders with surprising grace despite lanky frame. Shoulders naturally hunched from hours hunched over encrypted devices. When focused, becomes almost unnaturally still before sudden explosive movement. Rests in coiled positions — crouched rather than seated.",
-    "clothing_style": "Tier 4/5 transitional — salvaged and repurposed. Cargo pants patched multiple times with different fabrics, pockets stuffed with climbing gear and encrypted comms. Oversized hoodies (usually black or dark gray, logo-faded) layered over fitted athletic shirts. Worn Goretex jacket with modified pockets for quick access. No corporate branding. Scuffed climbing shoes, preferring grip over comfort. Reusable equipment bag made from salvaged tarp material slung over one shoulder. Mesh node embedded in base of neck creates subtle bulge under high collars. Clothing functional and designed for movement, showing heavy wear and multiple repairs."
+    "visible_augmentations": "Right hand shows retractable claw mods—five metallic prongs (approximately 8cm extended length) housed beneath knuckle-skin integration points. Chrome is scuffed and shows street-grade fabrication. Reinforced kneecaps visible as slight hardening/discoloration along the patellar tendons. Mesh-broadcast node at base of neck beneath collar line—visible as a small raised bump when neck is exposed, slight LED indicator glow underneath skin in low light.",
+    "posture_movement": "Operates in constant motion—fidgeting, bouncing knee when stationary, fingers twitching. Walks with a loping gait optimized for speed and momentum. Descends stairs and ladders with surprising grace despite lanky frame. Shoulders naturally hunched from hours hunched over encrypted devices. When focused, becomes almost unnaturally still before sudden explosive movement. Rests in coiled positions—crouched rather than seated.",
+    "clothing_style": "Tier 4/5 transitional—salvaged and repurposed. Cargo pants patched multiple times with different fabrics, pockets stuffed with climbing gear and encrypted comms. Oversized hoodies (usually black or dark gray, logo-faded) layered over fitted athletic shirts. Worn Goretex jacket with modified pockets for quick access. No corporate branding. Scuffed climbing shoes, preferring grip over comfort. Reusable equipment bag made from salvaged tarp material slung over one shoulder. Mesh node embedded in base of neck creates subtle bulge under high collars. Clothing functional and designed for movement, showing heavy wear and multiple repairs."
   },
-  "image_prompt": "Bjorn Ingebrigtsen, 188cm tall lean angular rooftop runner, medium warm-toned complexion from Nordic-Hispanic-African heritage blend, dark brown naturally warm eyes, short black fade haircut, perpetually tired expression with days of stubble. Sharp Nordic cheekbones with visible hairline fracture scar on left cheek. Retractable metallic claw augmentations on right hand, chrome scuffed street-grade. Multiple rope-burn scars on palms and forearms. Mesh-broadcast neck node with subtle LED glow. Hunched posture in coiled crouch position. Wearing oversized faded black hoodie over fitted athletic shirt, heavily patched cargo pants, worn Goretex jacket with modified pockets, scuffed climbing shoes. Equipment bag from salvaged tarp slung across shoulder. Dark urban cyberpunk setting, low neon lighting casting shadows, rooftop or abandoned infrastructure background, tense ready-for-motion stance, dystopian 2226 Great Lakes Metropolitan Zone atmosphere, gritty realism --ar 2:3 --v 6",
+  "image_prompt": "Mateo Madrigal, 188cm lean-muscled parkour runner with warm caramel complexion blending Hispanic, Sub-Saharan African, Southeast Asian, and Eastern European heritage. Sharp high cheekbones, full lips, dark brown eyes shadowed with exhaustion, prominent scar crossing left cheekbone. Black short-fade hair, stubbled jaw. Right hand features retractable metallic claw augmentations with scuffed chrome. Rope-burn scars visible on forearms. Wearing oversized black hoodie layered over athletic shirt, heavily patched cargo pants, worn climbing shoes. Mesh-broadcast node visible at neck under high collar. Coiled posture, shoulder hunched, fingers twitching with restless energy. Dark urban rooftop setting, neon glow from city below, rain-slicked surfaces, cool neo-noir lighting casting shadows across angular features. Cinematic GLMZ, street-tier transhumanist aesthetics, gritty and hyperaware mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 66.2,
-    "Hispanic/Latin American": 16.8,
-    "Sub-Saharan African": 12.5,
-    "East Asian": 4.5
+    "Hispanic/Latin American": 62.9,
+    "Sub-Saharan African": 13.4,
+    "Southeast Asian": 12.1,
+    "Eastern European": 11.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 62.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 11.3,
+        "Senegalese": 2.1
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 7.7
+      },
+      "Cambodian": {
+        "Khmer": 0.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 3.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 5.2,
+        "Romanian": 6.4
+      }
+    }
+  }
 }

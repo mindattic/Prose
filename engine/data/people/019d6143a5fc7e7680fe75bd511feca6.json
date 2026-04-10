@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5fc7e7680fe75bd511feca6",
   "type": "character",
-  "name": "Lark Karunaratne-Espinoza",
+  "name": "Lark Kovács-Čabarkapa",
   "aliases": [
     "Dáithí the Brief",
     "Phantom Papers"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Narrows, sublevel 4 print den beneath a Ferrogate Transit ventilation shaft, near sub-level access near Dearborn and Jackson",
-  "description": "Dáithí looks younger than twenty-two, which has been both a professional liability and an asset. He's tall and lanky with warm brown skin, freckles scattered densely across his nose and cheeks from his Irish-Malian heritage, and hair that shifts color on a slow cycle — deep brown to auburn to near-black over the course of four hours. It's cheap geneware, the kind you get at a market stall, but he's adjusted the cycle timing himself and is unreasonably proud of this. He has ink under his fingernails permanently and smells faintly of solvent and the ozone of active print-heads.\n\nHe fell into forgery through genuine talent — he could copy letterforms by hand at age fourteen in a way that made teachers uncomfortable — and through necessity, since a Tier 1 upbringing in the Narrows offers limited other uses for that talent. He is extraordinarily good at what he does and knows it with a confidence that occasionally crosses into recklessness. He treats every document like a puzzle: the deep-substrate security threads of a Zheng-Dao transit pass, the layered biometric encoding on a Sterling-Nakamura contractor credential. He keeps a gallery of his best work photographed and stored on a dead-drop server like a portfolio. He would show it to people if he could. He is desperate to be recognized as an artist.",
+  "description": "Lark Kovács-Čabarkapa looks younger than twenty-two, which has been both a professional liability and an asset. He's tall and lanky with warm brown skin, freckles scattered densely across his nose and cheeks from his Irish-Malian heritage, and hair that shifts color on a slow cycle — deep brown to auburn to near-black over the course of four hours. It's cheap geneware, the kind you get at a market stall, but he's adjusted the cycle timing himself and is unreasonably proud of this. He has ink under his fingernails permanently and smells faintly of solvent and the ozone of active print-heads.\n\nHe fell into forgery through genuine talent — he could copy letterforms by hand at age fourteen in a way that made teachers uncomfortable — and through necessity, since a Tier 1 upbringing in the Narrows offers limited other uses for that talent. He is extraordinarily good at what he does and knows it with a confidence that occasionally crosses into recklessness. He treats every document like a puzzle: the deep-substrate security threads of a Zheng-Dao transit pass, the layered biometric encoding on a Sterling-Nakamura contractor credential. He keeps a gallery of his best work photographed and stored on a dead-drop server like a portfolio. He would show it to people if he could. He is desperate to be recognized as an artist.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -191,7 +191,7 @@
     "Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,33 +253,15 @@
     "TESSERA PG-2 'Signature'",
     "The Heritage Vault",
     "Bathysphere Networks",
+    "Dearborn Forge",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Stratum",
     "Ringo Corponation",
-    "Arcturus CK-5 'Bloodhound'",
-    "Arcturus ST-4 'Verdict'",
-    "Aybek Sato-Poku",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dragan Petersen-Bah",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Gwenaëlle Osei-Diallo",
-    "Idris Forsberg-Quaye",
-    "Ihaia Nystrom-Keita",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "The Bleach Boys",
-    "The Narrows",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly South Asian with significant Sub-Saharan African ancestry, complemented by Hispanic/Latin American, Eastern European, and minor East Asian heritage. The genetic blend creates warm, rich brown tones with complex undertones reflecting the confluence of these diverse regions.",
+    "heritage": "Predominantly Eastern European (70.8%) with significant Hispanic/Latin American ancestry (18.4%), complemented by minor East Asian (7.2%) and Northern European (3.6%) heritage. This genetic blend creates a warm, medium-to-olive complexion with golden undertones characteristic of the Slavic-Iberian confluence, with subtle East Asian features softening the angular Eastern European bone structure.",
     "height_cm": 188,
     "weight_kg": 71,
     "build": "Tall and lanky with minimal muscle definition; the posture of someone hunched over precision work for extended periods. Shoulders rounded slightly forward. Long-limbed and angular.",
@@ -287,8 +269,8 @@
     "hair_style": "Deliberately unkempt, shoulder-length, often pulled back with whatever is at hand (wire, fabric scraps, sometimes print-ribbon)",
     "hair_length": "Long",
     "eye_color": "Warm brown with faint iridescent shimmer at pupil edges from retinal micro-focus implants",
-    "skin_tone": "Deep warm brown with golden and olive undertones from the South Asian-African-Hispanic blend, creating a rich, complex complexion that shifts subtly in different light",
-    "complexion": "Youthful face with pronounced freckles densely scattered across nose, cheeks, and upper eyelids—a striking feature from the genetic interplay of multiple heritage lines. Perpetually exhausted expression; dark circles. Fine lines around eyes from squinting at close detail work. Skin otherwise clear but marked by chronic ink stains and solvent exposure — slight dermatitis around fingertips.",
+    "skin_tone": "Warm olive-brown with golden undertones, reflecting the Eastern European-Hispanic genetic blend. Medium depth with subtle warmth that shifts between golden and earthy in different lighting—distinctly Slavic-Iberian fusion.",
+    "complexion": "Youthful face with light freckling scattered across nose and cheeks—a feature prominent in Eastern European-Hispanic ancestry. Subtle East Asian influence visible in slightly softer facial structure around cheekbones and eye shape. Perpetually exhausted expression; dark circles. Fine lines around eyes from squinting at close detail work. Skin otherwise clear but marked by chronic ink stains and solvent exposure—slight dermatitis around fingertips.",
     "distinguishing_marks": [
       "Permanent ink staining under all fingernails, arranged in layers of different pigments reflecting current and past projects",
       "Fine chemical burn scar across the back of right hand from early geneware implant application, mostly healed but visible under certain light",
@@ -296,18 +278,62 @@
     ],
     "visible_augmentations": "Retinal micro-focus implants visible as a faint prismatic distortion in direct light when pupils dilate. Faint subdermal grid-pattern scarring on fingertips (temperature-control implants beneath). Otherwise augmentations are subtle or subcutaneous.",
     "posture_movement": "Moves with the economical precision of someone accustomed to close work; careful hand placement, minimal wasted motion. When standing still, weight shifts to the balls of feet. Tendency to examine objects (walls, signage, other people's credentials) with forensic intensity. Nervous habit of rotating fingers individually as if checking for fine tremor.",
-    "clothing_style": "Tier 4-5 Narrows aesthetic: cheap, deliberately maintained chaos. Oversized grey cotton hoodie with bleach stains and solvent discoloration; patches of lighter fabric where ink has been cleaned off. Black cargo pants with reinforced pockets weighted by tools and dead-storage drives. Scuffed leather boots resoled at least twice. Wears a modified welder's apron over everything during work — pockets filled with micro-tools, color samples, reference prints. No jewelry; one fraying paracord bracelet (salvaged). Carries a battered leather satchel (salvaged from a corpo dumpsite) containing reference materials, proof prints, and dead-drop credentials."
+    "clothing_style": "Tier 4-5 Narrows aesthetic: cheap, deliberately maintained chaos. Oversized grey cotton hoodie with bleach stains and solvent discoloration; patches of lighter fabric where ink has been cleaned off. Black cargo pants with reinforced pockets weighted by tools and dead-storage drives. Scuffed leather boots resoled at least twice. Wears a modified welder's apron over everything during work—pockets filled with micro-tools, color samples, reference prints. No jewelry; one fraying paracord bracelet (salvaged). Carries a battered leather satchel (salvaged from a corpo dumpsite) containing reference materials, proof prints, and dead-drop credentials."
   },
-  "image_prompt": "Lark Karunaratne-Espinoza, a tall lanky figure in cyberpunk 2226, deep warm brown skin with golden undertones and scattered freckles across nose and cheeks, youthful face marked by dark circles and exhaustion lines. Shoulder-length geneware-cycled hair in auburn-brown transitioning tones, deliberately unkempt and tied back. Wearing oversized bleach-stained grey hoodie and black reinforced cargo pants, scuffed boots. Modified welder's apron layered over clothing filled with micro-tools and color samples. Battered salvaged leather satchel across torso. Hands stained with layers of ink pigments, fine chemical burn scar visible on right hand. Retinal micro-focus implants creating subtle prismatic distortion in pupils. Precise, economical posture with weight on balls of feet. Examining something with forensic intensity. Great Lakes Metropolitan Zone Narrows setting, dim amber and cool blue neon lighting, industrial workspace aesthetic, gritty and cyberpunk. --ar 2:3 --v 6",
+  "image_prompt": "Lark Kovács-Čabarkapa, 188cm tall lanky neo-noir character with warm olive-brown skin (Eastern European-Hispanic blend), light freckling across nose and cheeks, warm brown eyes with subtle iridescent implant shimmer. Shoulder-length geneware-cycled hair currently auburn, pulled back haphazardly. Exhausted expression with dark circles, fine lines from precision work. Hunched posture from years of detail work, rounded shoulders. Wearing oversized grey hoodie with bleach and solvent stains, black reinforced cargo pants, scuffed twice-resoled leather boots, modified welder's apron covered in micro-tools and color samples. Battered salvaged leather satchel. Permanent ink staining visible under fingernails in multiple pigment layers. Chemical burn scar visible on back of right hand. Nervous precision in hand placement, weight on balls of feet. Dark Narrows warehouse setting with harsh overhead lighting casting shadows across tired face, prismatic retinal implant glints visible. Gritty GLMZ aesthetic, exhausted underground artist vibe, precision and chaos in equal measure --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 47.0,
-    "Sub-Saharan African": 26.4,
-    "Hispanic/Latin American": 11.1,
-    "Eastern European": 10.9,
-    "East Asian": 4.6
+    "Eastern European": 70.8,
+    "Hispanic/Latin American": 18.4,
+    "East Asian": 7.2,
+    "Northern European": 3.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 17.3,
+        "Russian": 9.5
+      },
+      "Slavic West": {
+        "Czech": 0.7,
+        "Polish": 5.4
+      },
+      "Slavic South": {
+        "Bosnian": 28.6,
+        "Serbian": 9.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 3.8
+      },
+      "Mexican": {
+        "Mexican": 4.4
+      },
+      "Caribbean": {
+        "Cuban": 4.1,
+        "Puerto Rican": 6.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 1.7,
+        "Irish": 0.4
+      },
+      "Germanic": {
+        "German": 0.9
+      },
+      "Scandinavian": {
+        "Danish": 0.6
+      }
+    }
+  }
 }

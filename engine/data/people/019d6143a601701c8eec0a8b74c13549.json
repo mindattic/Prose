@@ -1,7 +1,7 @@
 {
   "id": "019d6143a601701c8eec0a8b74c13549",
   "type": "character",
-  "name": "Lyric Castañeda",
+  "name": "Lyric Balasanyan",
   "aliases": [
     "El",
     "The Calculator"
@@ -13,7 +13,7 @@
   "age": 16,
   "status": "active",
   "location": "Hamtramck Enclave, near Ashland and Chicago Ave",
-  "description": "Elowen is tall with her mother's angular Vestergaard frame and her father's deep brown Galadima complexion, with thick natural hair she keeps in two buns that are usually listing sideways by midday. She has bioluminescent freckles across her nose and cheeks — a cosmetic geneware mod she saved for and chose herself, pale blue-white, they glow faintly in low light — and an intense, forward-leaning way of occupying space that makes her seem like she's always about to say something. Her bedroom wall is covered in printed diagrams and color-coded network maps she drew by hand because she says she thinks better when the data is physical.\n\nElowen is a self-taught junior hacker — not a runner, not employed by anyone, just a sixteen-year-old who figured out that the building management system for her Hamtramck block had a publicly accessible API that was never properly secured, and then kept pulling that thread. She has never done anything she considers harmful: she reroutes heating credits to elderly residents on her floor, flags maintenance requests that get ignored, and has developed a working model of the Enclave's data traffic patterns. She knows she is very good at this. She does not know how good, or what that means, or what happens to people in GLMZ who are this good and don't have protection.",
+  "description": "Lyric Balasanyan is tall with her mother's angular Vestergaard frame and her father's deep brown Galadima complexion, with thick natural hair she keeps in two buns that are usually listing sideways by midday. She has bioluminescent freckles across her nose and cheeks — a cosmetic geneware mod she saved for and chose herself, pale blue-white, they glow faintly in low light — and an intense, forward-leaning way of occupying space that makes her seem like she's always about to say something. Her bedroom wall is covered in printed diagrams and color-coded network maps she drew by hand because she says she thinks better when the data is physical.\n\nLyric Balasanyan is a self-taught junior hacker — not a runner, not employed by anyone, just a sixteen-year-old who figured out that the building management system for her Hamtramck block had a publicly accessible API that was never properly secured, and then kept pulling that thread. She has never done anything she considers harmful: she reroutes heating credits to elderly residents on her floor, flags maintenance requests that get ignored, and has developed a working model of the Enclave's data traffic patterns. She knows she is very good at this. She does not know how good, or what that means, or what happens to people in GLMZ who are this good and don't have protection.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -171,7 +171,7 @@
     "Mentor": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -189,35 +189,19 @@
   ],
   "related_entities": [
     "Hamtramck Enclave",
-    "GLMZ",
     "Zheng-dao Bioelectric",
+    "Chicago",
+    "Arcturus KS-7 'Nursery'",
     "Lazarus LX-2 'Lab Rat'",
     "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
-    "Nightlight",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Chicago",
-    "Adaora Sørensen-Jabłońska",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Crucible HS-2 'Hearth'",
-    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Praevex",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Riverbottom",
-    "Slagworks Industrial",
-    "TESSERA ES-4 'Perimeter'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Whispermouth",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (86%) with South Asian (7.4%) and Northern European (6.6%) ancestry, creating warm golden-brown tones with subtle complexity in facial structure",
+    "heritage": "Sub-Saharan African (32.2%), Middle Eastern (24.4%), Northern European (17.9%), Hispanic/Latin American (13.6%), Southeast Asian (11.0%), and South Asian (0.9%) ancestry creates a striking multivalent phenotype. Deep warm brown skin with golden and olive undertones from the blended heritage, featuring prominent high cheekbones from African ancestry, a defined jawline with subtle widening through the lower face suggesting South Asian influence, and delicate nasal structure reflecting Middle Eastern heritage. The combination yields sharp, angular facial architecture with warm depth.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Lean and angular, tall-limbed with wiry muscle from youth; no visible bulk but capable posture",
@@ -225,8 +209,8 @@
     "hair_style": "Two buns, usually uneven and listing by afternoon — hastily secured, sometimes with pen or stylus stuck through them",
     "hair_length": "Medium (shoulder-length when down)",
     "eye_color": "Dark brown, sharp and focused",
-    "skin_tone": "Warm golden-brown with subtle olive undertones from the blended heritage mix, clear and even",
-    "complexion": "Smooth skin with strong defined facial structure — high cheekbones, defined jawline with slight broadening through the lower face suggesting South Asian ancestry. Sharp, forward-facing expression. The bioluminescent freckles across her nose and cheeks are pale blue-white, faintly luminous in low light; they create a distinctive scattered pattern that she paid for and chose herself.",
+    "skin_tone": "Deep warm brown with golden and olive undertones, even and clear",
+    "complexion": "Smooth skin with strong defined facial structure — high prominent cheekbones, defined jawline with slight broadening through the lower face, and refined nose structure. Sharp, forward-facing expression. The bioluminescent freckles across her nose and cheeks are pale blue-white, faintly luminous in low light; they create a distinctive scattered pattern that she paid for and chose herself.",
     "distinguishing_marks": [
       "Bioluminescent freckles across nose and upper cheeks in pale blue-white geneware, visible especially in dim lighting",
       "Callus on right index and middle finger from prolonged stylus use",
@@ -236,14 +220,78 @@
     "posture_movement": "Forward-leaning, intense. She sits at the edge of chairs. Moves with purposeful directness, not graceful but efficient. Fidgets with her hands constantly — tapping, tracing patterns, fingers moving as if typing invisible code. Eyes sharp and tracking, always seems about to interrupt or explain something",
     "clothing_style": "Tier 2 casual — clean but worn synthetic fabrics, oversized hoodies and fitted black pants, scuffed tactical-style boots. Usually wearing a graphene-lined jacket her parents bought her last winter. Clothing is secondary to comfort and functionality; she'll wear the same hoodie four days in a row without noticing. No corporate branding, no status symbols. Practical school uniform underneath on weekdays"
   },
-  "image_prompt": "Lyric Castañeda, 16-year-old girl with warm golden-brown skin and mixed Hispanic-South Asian-Northern European features, high sharp cheekbones, defined jawline. Dark brown eyes intense and focused. Shoulder-length natural black hair in two uneven buns with stylus stuck through one. Pale blue-white bioluminescent freckles glowing faintly across nose and cheeks. Wearing oversized dark hoodie and fitted black pants, scuffed tactical boots, black polymer neural interface headset over ears. Lean angular build, fidgeting hands with ink stains. Sitting forward-leaning at edge of chair in cyberpunk 2226 bedroom-slash-workspace with dim neon-tinted lighting, scattered datapads and hand-drawn network diagrams on surfaces. Intense forward expression, about to explain something. Cyberpunk 2200s aesthetic, intimate moody lighting with hints of bioluminescence, realistic detailed portrait --ar 2:3 --v 6",
+  "image_prompt": "Lyric Balasanyan, 178cm tall lean neo-noir teenager with deep warm brown skin, golden and olive undertones, prominent high cheekbones, defined jawline, sharp angular facial structure. Natural dark brown hair in uneven shoulder-length two buns with pen stuck through. Dark brown focused eyes. Pale blue-white bioluminescent freckles glowing across nose and cheeks in low light. Wearing oversized black hoodie, fitted black pants, scuffed tactical boots, graphene-lined jacket. Black polymer neural interface headset over ears. Forward-leaning intense posture, hands fidgeting mid-gesture. Ink-stained left palm, stylus calluses visible. GLMZ neon-lit interior, dim ambient lighting emphasizing bioluminescent geneware, GLMZ aesthetic, realistic portraiture --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 86.0,
-    "South Asian": 7.4,
-    "Northern European": 6.6
+    "Sub-Saharan African": 32.2,
+    "Middle Eastern": 24.4,
+    "Northern European": 17.9,
+    "Hispanic/Latin American": 13.6,
+    "Southeast Asian": 11,
+    "South Asian": 0.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 8.9,
+        "Angolan": 1.8
+      },
+      "West African": {
+        "Malian": 6.8
+      },
+      "Southern African": {
+        "Zambian": 6.2,
+        "Zimbabwean": 8.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 10.8,
+        "Kuwaiti": 1.7
+      },
+      "Kurdish": {
+        "Kurdish": 4.5
+      },
+      "Persian": {
+        "Iranian": 1.6,
+        "Tajik Persian": 5.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 13,
+        "Dutch": 2.4
+      },
+      "Scandinavian": {
+        "Swedish": 2.1,
+        "Danish": 0.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 10,
+        "Cuban": 3.6
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 0.3,
+        "Sundanese": 10.7
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 0.4
+      },
+      "Indian": {
+        "Kannada": 0.2
+      },
+      "Pakistani": {
+        "Sindhi": 0.3
+      }
+    }
+  }
 }

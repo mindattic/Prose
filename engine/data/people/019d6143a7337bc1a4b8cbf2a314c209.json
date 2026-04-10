@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7337bc1a4b8cbf2a314c209",
   "type": "character",
-  "name": "Moana Tuiloma",
+  "name": "Katarzyna Zielinski",
   "aliases": [
     "Z",
     "Starstitch"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Laceworks, Lakeview Neon, near Clark and Belmont",
-  "description": "Zara is conspicuously beautiful and entirely aware of it, in the way of someone who has learned to use aesthetics as both shield and spear. They are tall and slender with rich dark brown skin and a shaved head except for a dramatic crest of natural coils dyed rotating gradient colors — currently deep violet fading to copper — achieved through cosmetic geneware that responds to their mood chemistry and can be overridden manually. Their eyes have iris mods: six-pointed geometric patterns in pale gold. They dress in their own designs, always, which are architectural and theatrical — structured silhouettes, integrated LED piping, reactive fabrics that shift pattern based on environment or wearer biometrics. Their stall at The Laceworks is less a stall and more an installation: draped fabric, soft indirect lighting, a rack of finished pieces and a consultation corner where they sketch.\n\nZara makes clothes that do things. Not just look extraordinary — though they do — but interface: garments with embedded health monitoring, reactive armor weaving for Tier 1 clients who can't afford body modification, emotive pattern-shift fabrics, wearable communication arrays. Their clientele spans Tier 1 to Tier 3, which is unusual. They do charity commissions for people in genuine hardship and charge Tier 3 clients appropriately to balance it, which their accountant — if they had one — would find alarming. They are deeply, almost dangerously idealistic about fashion as democratic technology: the idea that a piece of clothing could give a street-poor person capabilities that a corporate executive buys as augmentation. They are also twenty-two thousand quanta in informal debt to a materials supplier and trying not to think about it.",
+  "description": "Katarzyna Zielinski is conspicuously beautiful and entirely aware of it, in the way of someone who has learned to use aesthetics as both shield and spear. They are tall and slender with rich dark brown skin and a shaved head except for a dramatic crest of natural coils dyed rotating gradient colors — currently deep violet fading to copper — achieved through cosmetic geneware that responds to their mood chemistry and can be overridden manually. Their eyes have iris mods: six-pointed geometric patterns in pale gold. They dress in their own designs, always, which are architectural and theatrical — structured silhouettes, integrated LED piping, reactive fabrics that shift pattern based on environment or wearer biometrics. Their stall at The Laceworks is less a stall and more an installation: draped fabric, soft indirect lighting, a rack of finished pieces and a consultation corner where they sketch.\n\nKatarzyna Zielinski makes clothes that do things. Not just look extraordinary — though they do — but interface: garments with embedded health monitoring, reactive armor weaving for Tier 1 clients who can't afford body modification, emotive pattern-shift fabrics, wearable communication arrays. Their clientele spans Tier 1 to Tier 3, which is unusual. They do charity commissions for people in genuine hardship and charge Tier 3 clients appropriately to balance it, which their accountant — if they had one — would find alarming. They are deeply, almost dangerously idealistic about fashion as democratic technology: the idea that a piece of clothing could give a street-poor person capabilities that a corporate executive buys as augmentation. They are also twenty-two thousand quanta in informal debt to a materials supplier and trying not to think about it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -174,7 +174,7 @@
     "Face": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Laceworks",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,29 +234,15 @@
     "Lakeview Neon",
     "Chromeworks Silhouette-S Ghost Walker Leg",
     "Palladian Construction",
+    "Frequency",
     "Copper",
+    "Corner Slice",
     "The Pale Mile",
-    "Gold",
-    "Alper Lebedev-Tutu",
-    "Bintou Halvorsen-Osei",
-    "Cryogenic Fracture Disbursement Mine CFDM-4",
-    "Helix Biosystems",
-    "Idris Forsberg-Quaye",
-    "Irontide Tidal Energy",
-    "Nodar Kuznetsov-Adu",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Collective",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Pure Hand",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Volkov-Saito Precision VSX-7 'Strelok'",
-    "WELLSPRING"
+    "Gold"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Pacific Islander (Polynesian/Melanesian) with Hispanic/Latin American and Sub-Saharan African ancestry; a striking blend of warm-toned melanin expression with genetic markers from three continents creating rich brown skin with complex undertones",
+    "heritage": "Predominantly Eastern European (47.7%) and South Asian (36.5%) ancestry with secondary Northern European (10.9%), Southeast Asian (2.8%), and Indigenous American (2.1%) admixture. This genetic combination creates a striking phenotype: warm golden-brown skin with subtle olive and warm undertones characteristic of Eastern European-South Asian blending. Facial structure combines the broader bone structure and angular definition of Eastern European ancestry with the fuller face shape and almond eye geometry influenced by South Asian heritage. The Southeast Asian and Indigenous American components add warmth and slight variation to the overall complexion depth. A genuinely cosmopolitan genetic signature reflecting the Ubiquitous Diaspora.",
     "height_cm": 183,
     "weight_kg": 62,
     "build": "Tall and slender with minimal body fat; angular shoulders and defined collarbones. Long-limbed and graceful, built for precision work rather than bulk. Almost deliberately ascetic in frame.",
@@ -264,24 +250,72 @@
     "hair_style": "Shaved head except for dramatic architectural crest of natural coils, approximately 8-10cm tall, precisely maintained",
     "hair_length": "Shaved (with crest exception)",
     "eye_color": "Natural warm brown base with gold iris mods: six-pointed geometric patterns in pale gold creating a mandala-like effect across the iris",
-    "skin_tone": "Deep warm brown with golden and reddish undertones from Pacific Islander, Hispanic, and African ancestry blended; luminous quality from regular skincare and internal bioluminescent enhancements",
-    "complexion": "Broad facial structure with strong cheekbones characteristic of Pacific Islander ancestry, full expressive features, sharp jawline. Skin is clear and meticulously maintained—no visible acne or blemishes. Grooming is intentional and artistic; they are conspicuously beautiful and carry themselves with full awareness of it.",
+    "skin_tone": "Warm golden-brown with olive and honey undertones, luminous quality from regular skincare and internal bioluminescent enhancements. The tone reflects the Eastern European-South Asian genetic dominance balanced with Northern European undertones and warmth from Southeast Asian and Indigenous American heritage components.",
+    "complexion": "Angular facial structure with high, defined cheekbones and sharp jawline reflecting Eastern European ancestry, softened and warmed by the fuller face shape and wider cheekbone placement influenced by South Asian genetics. Eyes are distinctly almond-shaped with subtle epicanthic fold characteristic of East and South Asian heritage. Skin is clear and meticulously maintained—no visible acne or blemishes. Grooming is intentional and artistic; they are conspicuously beautiful and carry themselves with full awareness of it.",
     "distinguishing_marks": [
       "Fine precision-work calluses on fingertips from detailed textile manipulation, barely visible but present on index through ring fingers of both hands",
       "Faint chemical stains—dyes, reactive fabric compounds—around the cuticles and occasional spots on inner wrists from materials handling"
     ],
     "visible_augmentations": "Geometric gold iris mods creating six-pointed star patterns. Cosmetic geneware hair crest with active color-shift capability (currently violet-to-copper gradient). Fingertip precision enhancement implants visible as subtle metallic tracery at the base of fingernails under close inspection. No visible heavy chrome or external cybernetics.",
     "posture_movement": "Moves with deliberate grace and economical precision—every gesture is purposeful. Stands with weight balanced, ready to shift; hands often animated when speaking about design. Posture is confident but not aggressive; they occupy space thoughtfully. There is a quality of constant creative assessment—eyes track fabrics, patterns, light reflections on surfaces.",
-    "clothing_style": "Always wears their own designs: architectural, theatrical garments with integrated LED piping, reactive smart fabrics that shift patterns based on environment or biometric response. Current uniform: asymmetrical structured jacket in a dark base color with LED thread highlights (currently amber/copper to match hair crest), fitted reactive trousers that shift from charcoal to deep blue under different lighting, custom modular shirt with embedded monitoring nodes visible as subtle geometric seams. Accessories: precision tools worn on a custom leather utility belt; statement jewelry that doubles as diagnostic tools. Tier 2-3 materials quality—expensive but not ostentatiously so. Footwear: custom modular boots with integrated grip and sensor nodes. Overall effect: high-fashion cyberpunk artisan, intentionally designed personal brand."
+    "clothing_style": "Always wears their own designs: architectural, theatrical garments with integrated LED piping, reactive smart fabrics that shift patterns based on environment or biometric response. Current uniform: asymmetrical structured jacket in a dark base color with LED thread highlights (currently amber/copper to match hair crest), fitted reactive trousers that shift from charcoal to deep blue under different lighting, custom modular shirt with embedded monitoring nodes visible as subtle geometric seams. Accessories: precision tools worn on a custom leather utility belt; statement jewelry that doubles as diagnostic tools. Tier 2-3 materials quality—expensive but not ostentatiously so. Footwear: custom modular boots with integrated grip and sensor nodes. Overall effect: high-fashion neo-noir artisan, intentionally designed personal brand."
   },
-  "image_prompt": "Moana Tuiloma, tall slender figure with deep warm brown skin blending Pacific Islander, Hispanic, and African heritage, shaved head with dramatic architectural crest of natural black coils, gold geometric iris mods forming six-pointed stars, natural brown eyes with pale gold patterns. Wears asymmetrical structured jacket with amber LED piping matching violet-to-copper hair gradient, fitted reactive smart trousers shifting charcoal to deep blue, custom modular shirt with geometric seams and monitoring nodes. Custom leather utility belt with precision tools, statement diagnostic jewelry, modular boots with sensor nodes. Deliberate graceful posture, hands animated, creative gaze. Cyberpunk 2226 Great Lakes Metropolitan Zone, high-fashion artisan aesthetic, dramatic moody lighting emphasizing gold accents and LED highlights, theatrical architectural clothing design --ar 2:3 --v 6",
+  "image_prompt": "Katarzyna Zielinski, tall androgynous figure 183cm, warm golden-brown skin with olive undertones, standing in neon-lit neo-noir workshop 2226. Sharp-featured face with high defined cheekbones reflecting Eastern European structure softened by fuller face shape from South Asian heritage, almond-shaped eyes with gold six-pointed mandala iris mods glowing softly. Shaved head with dramatic architectural crest of natural deep black coils fading to violet-copper gradient, 8-10cm tall. Wearing asymmetrical structured dark jacket with amber LED piping, fitted reactive charcoal-to-blue trousers, custom geometric seam shirt. Precise movements, graceful posture, hands animated near custom leather utility belt. Bioluminescent skin glow catching ambient LED workshop light. High-fashion neo-noir artisan aesthetic, intentional creative presence. Dramatic theatrical lighting, neon amber and cool blue color cast, shallow depth of field on face. Mood: confident, thoughtful, perpetually assessing. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 58.6,
-    "Hispanic/Latin American": 27.7,
-    "Sub-Saharan African": 13.7
+    "Eastern European": 47.7,
+    "South Asian": 36.5,
+    "Northern European": 10.9,
+    "Southeast Asian": 2.8,
+    "Indigenous American": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 28.8,
+        "Czech": 3.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 1.8,
+        "Romanian": 13.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.2
+      },
+      "Indian": {
+        "Punjabi": 21.8,
+        "Bengali": 9.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 2.4,
+        "Irish": 5.7
+      },
+      "Scandinavian": {
+        "Danish": 1.1,
+        "Icelandic": 1.7
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 2.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 1,
+        "Aymara": 0.6
+      },
+      "Plains Nations": {
+        "Muscogee": 0.3,
+        "Cherokee": 0.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69f73e4af1c80c53a5a619e",
   "type": "character",
-  "name": "Lyric Árnason-Tuiloma",
+  "name": "Lyric Shin-Mwangi",
   "aliases": [
     "Prisca",
     "The Folding Lady"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, runs a small laundry-and-mend shop called Sudswarm off a condensation-wet alley near the Enclave's eastern transit stop, near Halsted and Chicago Ave",
-  "description": "Priscila is a broad-shouldered woman whose posture is permanently curved forward from decades of hunching over washing drums and hand-stitching by bad light. Her skin is deep amber-brown, mapped with the kind of fine lines that come from steam and cold water alternating across a lifetime. Her hair is silver-white, pulled into a tall wrapped style she refreshes each morning with practiced ritual — the one vanity she allows herself. Her eyes are dark and deeply set, and she has the habit of assessing every person she meets the way a seamstress assesses fabric: checking for weak seams, worn patches, where the structure is likely to give. She has no cosmetic mods and wears her lack of augmentation with quiet dignity, though her fingers bear a set of micro-needle thimbles permanently bonded to her right hand — not quite augmentation, not quite tool, but something in between.\n\nPrisca is slow to warm and quick to notice. She has been in the Enclave for thirty-one years and has watched three generations of families pass through her door. She calls regulars by their mother's name, not their own — a habit from her grandmother she's never examined. She speaks very little about herself, deflecting personal questions with practical ones: is your coat holding up? Did the dye run again? She is not unkind, but she draws a clean line between involvement and sentiment, and she patrols that line with vigilance. Underneath this, she carries a deep and specific loneliness that she has almost entirely metabolized into work.",
+  "description": "Lyric Shin-Mwangi is a broad-shouldered woman whose posture is permanently curved forward from decades of hunching over washing drums and hand-stitching by bad light. Her skin is deep amber-brown, mapped with the kind of fine lines that come from steam and cold water alternating across a lifetime. Her hair is silver-white, pulled into a tall wrapped style she refreshes each morning with practiced ritual — the one vanity she allows herself. Her eyes are dark and deeply set, and she has the habit of assessing every person she meets the way a seamstress assesses fabric: checking for weak seams, worn patches, where the structure is likely to give. She has no cosmetic mods and wears her lack of augmentation with quiet dignity, though her fingers bear a set of micro-needle thimbles permanently bonded to her right hand — not quite augmentation, not quite tool, but something in between.\n\nPrisca is slow to warm and quick to notice. She has been in the Enclave for thirty-one years and has watched three generations of families pass through her door. She calls regulars by their mother's name, not their own — a habit from her grandmother she's never examined. She speaks very little about herself, deflecting personal questions with practical ones: is your coat holding up? Did the dye run again? She is not unkind, but she draws a clean line between involvement and sentiment, and she patrols that line with vigilance. Underneath this, she carries a deep and specific loneliness that she has almost entirely metabolized into work.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -180,7 +180,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,48 +232,17 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Dredge Mining Collective",
-    "Dewdrop",
     "Grandmother",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Silver",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Needle",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Déjà Vu",
     "Chicago",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus GE-1 'Garrison'",
+    "Silver",
     "Arcturus KS-7 'Nursery'",
-    "Ballistic Resonance Carbine BRC-6 'Kettledrum'",
-    "Breck Tannen",
-    "CHROMEWORKS FlexSheath Graphene Spine",
-    "Cinderblock Ai",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Garrison Rifle GR-5 'Rampart'",
-    "Grosse Pointe Enclosure",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Patient Zero",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "The Collective",
-    "The Counter",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Déjà Vu"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Primarily East Asian (32.1%) and Pacific Islander (25.3%), with significant Sub-Saharan African (17.1%), Indigenous American (13.3%), and Southeast Asian (10.0%) ancestry. Complex phenotype reflecting deep global mixing: warm amber-brown skin with subtle golden undertones characteristic of East Asian-Pacific Islander blending, combined with the warmth and depth from African and Indigenous American heritage.",
+    "heritage": "East Asian (41.9%), Sub-Saharan African (20.4%), Hispanic/Latin American (16.1%), Middle Eastern (15.4%), and South Asian (6.2%). Complex phenotype reflecting deep global mixing: dominant East Asian bone structure with pronounced cheekbones and eye set, enriched by Sub-Saharan African depth and warmth in skin tone, Latin American facial breadth, Middle Eastern nose and brow definition, and South Asian contributions to eye intensity and orbital depth.",
     "height_cm": 163,
     "weight_kg": 78,
     "build": "Broad-shouldered and substantial, with a forward-curved spine from decades of hunching over drums and detail work. Legs remain sturdy but upper back rounds permanently inward. Strong, work-worn frame without excess soft tissue.",
@@ -281,8 +250,8 @@
     "hair_style": "Tall wrapped style, refreshed each morning with ritual precision. The wrap itself is usually a faded cotton print or neutral linen, secured with a single bone or metal pin.",
     "hair_length": "Long, worn up",
     "eye_color": "Deep brown, nearly black",
-    "skin_tone": "Warm amber-bronze with golden undertones, reflecting the convergence of East Asian, Pacific Islander, Sub-Saharan African, and Indigenous American heritage. Depth and warmth characteristic of complex admixture.",
-    "complexion": "Extensively mapped with fine lines radiating from eyes and mouth — crow's feet are pronounced. Skin shows the permanent effects of alternating steam and cold water exposure: uneven texture, some areas slightly leathered. Facial structure reflects mixed ancestry: subtle eye shape suggesting East Asian heritage, broad facial proportions from Pacific Islander and Indigenous American lines, and warm undertone depth from Sub-Saharan African ancestry. Minimal makeup. Expression naturally serious, eyes deeply set and assessing. No visible cosmetic modifications.",
+    "skin_tone": "Warm amber-bronze with subtle golden-bronze undertones. The base reflects the East Asian dominant genetic contribution, deepened and enriched by Sub-Saharan African warmth, with slight reddish undertones from Hispanic/Latin American heritage and the golden-olive complexity from Middle Eastern ancestry. Medium-to-deep saturation across cheeks and forehead, slightly warmer at temples.",
+    "complexion": "Extensively mapped with fine lines radiating from eyes and mouth — crow's feet are pronounced. Skin shows the permanent effects of alternating steam and cold water exposure: uneven texture, some areas slightly leathered. Facial structure reflects the genetic hierarchy: prominent East Asian cheekbone architecture with slight upward eye cant, warm mid-tone depth from Sub-Saharan African ancestry, broad facial planes reflecting Latin American heritage, defined brow ridge and nose bridge from Middle Eastern genetics, and South Asian contributions to orbital depth and eye intensity. Minimal makeup. Expression naturally serious, eyes deeply set and assessing. No visible cosmetic modifications.",
     "distinguishing_marks": [
       "Fine linear scarring across both palms and inner fingers from decades of needlework and minor cuts.",
       "Callused patches on fingertips, particularly the right hand, from thimble use and hand-stitching.",
@@ -292,17 +261,59 @@
     "posture_movement": "Perpetually forward-leaning from waist up, shoulders rounded inward. Moves slowly but with absolute purpose — no wasted motion. Hands move with the precision of someone who has spent fifty years reading fabric. When sitting, favors low chairs and leans back rarely. Eyes constantly scan surroundings the way a seamstress reads a garment for stress points.",
     "clothing_style": "Practical Tier 3-4 working wear. Long-sleeved cotton or linen shirts (often faded or hand-mended, showing the repairs she would never charge a customer for). Heavy canvas apron, usually damp at the hem, worn over loose trousers in neutral tones. Feet are always in sturdy slip-on shoes with worn soles — nothing requiring lacing. She owns one good cardigan for stepping outside the shop in winter. No jewelry except the bone pin in her hair. Clothing shows signs of careful mending and decades of wear, maintained through sheer discipline rather than vanity."
   },
-  "image_prompt": "Lyric Árnason-Tuiloma, 163cm tall mixed-heritage woman with warm amber-bronze skin, silver-white hair wrapped tall with a linen print, deep brown eyes. Aged seamstress with pronounced crow's feet, rounded shoulders from decades of needlework, permanently forward-leaning posture. Right hand shows metallic micro-thimble array bonded to fingertips. Fine scars across palms, callused fingers. Wearing faded long-sleeved linen shirt and heavy damp canvas apron over neutral trousers, worn slip-on shoes. Cyberpunk 2226, cluttered tailoring shop interior with warm incandescent lighting reflecting off fabric bolts, steam rising. Serious expression, hands at rest showing work-worn detail. Realistic texture, atmospheric depth, contemplative mood. --ar 2:3 --v 6",
+  "image_prompt": "Lyric Shin-Mwangi, 163cm tall, 50-something seamstress in GLMZ Great Lakes Metropolitan Zone. Warm amber-bronze skin with golden undertones reflecting complex East Asian-dominant heritage blended with Sub-Saharan African, Latin American, Middle Eastern, and South Asian ancestry. Deep brown nearly-black eyes set deep in face, pronounced crow's feet, serious assessing expression. Prominent East Asian cheekbones, broad facial planes, defined brow ridge. Natural silver-white hair wrapped in tall style with faded cotton print wrap and bone pin. Forward-hunched posture from decades of needlework, rounded shoulders. Right hand shows five metallic micro-needle thimbles bonded to fingertips, scarred palms, callused fingertips. Faint steam burn marks on left forearm. Wearing faded long-sleeved linen shirt (hand-mended), heavy canvas apron damp at hem, loose neutral trousers, worn slip-on shoes. Shop interior setting with fabric bolts, warm practical lighting, hands poised over textile work. Neo-noir utility aesthetic meets artisan craftsmanship. Weathered skin texture from steam and cold water exposure. No makeup, no vanity — pure professional dignity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 32.1,
-    "Pacific Islander": 25.3,
-    "Sub-Saharan African": 17.1,
-    "Indigenous American": 13.3,
-    "Southeast Asian": 10.0,
-    "Hispanic/Latin American": 2.2
+    "East Asian": 41.9,
+    "Sub-Saharan African": 20.4,
+    "Hispanic/Latin American": 16.1,
+    "Middle Eastern": 15.4,
+    "South Asian": 6.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 12
+      },
+      "Korean": {
+        "Korean": 20.1
+      },
+      "Japanese": {
+        "Japanese": 9.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 14.5,
+        "Congolese": 5.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 8.1,
+        "Nicaraguan": 8
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 8.5
+      },
+      "Persian": {
+        "Iranian": 1.2,
+        "Afghan Dari": 0.8
+      },
+      "Arab Gulf": {
+        "Yemeni": 3.1,
+        "Iraqi": 1.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 6.2
+      }
+    }
+  }
 }

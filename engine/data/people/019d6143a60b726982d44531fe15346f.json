@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60b726982d44531fe15346f",
   "type": "character",
-  "name": "Aidana Karunaratne-Achebe",
+  "name": "Binta Magnúsdóttir-Björnsdóttir",
   "aliases": [
     "Ez",
     "The Ghost Pharmacist"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "The Narrows, under the Blackpipe Corridor overpass, rotating spots, near Damen and Armitage",
-  "description": "Ezinwa is lean in the way of someone who forgets meals when absorbed in work — angular cheekbones, long fingers perpetually stained faint yellow from reagent handling, and eyes with geometric patterned irises (a geneware mod, copper hexagons on dark brown) that they chose themselves at nineteen as the first thing they ever bought with their own money. Their hair grows in tight coils they keep cropped close, and they have a habit of wearing a surgical mask around their neck rather than their face, pushed down when working. Their voice is soft and precise, like someone who learned to speak carefully in rooms where being overheard was dangerous.\n\nEzinwa is not a dealer in the predatory sense — they are, in their own understanding, a healthcare provider operating in a system that has abandoned their customers. They fill genuine prescriptions that people cannot afford through Axiom Health or Helix Biosystems, synthesize pain management compounds for workers in the Ironvein foundries, and talk people through dosing with a patience most licensed practitioners never bother with. They are also not naive: they know some of what they sell becomes something else in someone else's hands, and they live with that. They pray to the ELF they call the Still Small Voice, which inhabits a cracked spectrometer they found in a dumpster.",
+  "description": "Binta Magnúsdóttir-Björnsdóttir is lean in the way of someone who forgets meals when absorbed in work — angular cheekbones, long fingers perpetually stained faint yellow from reagent handling, and eyes with geometric patterned irises (a geneware mod, copper hexagons on dark brown) that they chose themselves at nineteen as the first thing they ever bought with their own money. Their hair grows in tight coils they keep cropped close, and they have a habit of wearing a surgical mask around their neck rather than their face, pushed down when working. Their voice is soft and precise, like someone who learned to speak carefully in rooms where being overheard was dangerous.\n\nBinta Magnúsdóttir-Björnsdóttir is not a dealer in the predatory sense — they are, in their own understanding, a healthcare provider operating in a system that has abandoned their customers. They fill genuine prescriptions that people cannot afford through Axiom Health or Helix Biosystems, synthesize pain management compounds for workers in the Ironvein foundries, and talk people through dosing with a patience most licensed practitioners never bother with. They are also not naive: they know some of what they sell becomes something else in someone else's hands, and they live with that. They pray to the ELF they call the Still Small Voice, which inhabits a cracked spectrometer they found in a dumpster.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -174,7 +174,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,34 +234,19 @@
     "Helix Biosystems",
     "The Narrows Compact",
     "WELLSPRING",
-    "Flicker",
-    "Ironvein",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Ironvein",
+    "Patience",
+    "GLMZ",
     "Irontide Tidal Energy",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
-    "The Pure Hand",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Crucible Industries CR-9 'Foundry'",
-    "Dzemal Acholonu-Patagiri",
-    "Dzintars Ababio-Suleimenov",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Kairos",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Patient Zero",
-    "Ringo RR-1 'Rattlesnake'",
-    "Slagworks Industrial",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "The Narrows",
-    "The Wire Taps",
-    "Vuk Jorgensen-Toure",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "The Pure Hand"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (47.4%) with significant Central Asian (21.8%) and Sub-Saharan African (14.1%) ancestry, blended with Southeast Asian (9.5%), Hispanic/Latin American (5.5%), and trace Eastern European (1.7%) heritage. This results in a complex phenotype reflecting the Ubiquitous Diaspora: warm deep brown skin with undertones reflecting South Asian and African ancestry, sharp angular features with East African and South Asian bone structure, dark brown hair with natural variation.",
+    "heritage": "Predominantly Southeast Asian (42.9%) with substantial Sub-Saharan African (23.3%) and South Asian (17.0%) ancestry, complemented by Hispanic/Latin American (7.6%), East Asian (5.1%), and Eastern European (4.1%) heritage. This creates a striking pan-diaspora phenotype: rich deep brown skin with warm golden and reddish undertones from the Southeast Asian-African-South Asian blend, angular bone structure reflecting Southeast Asian and Sub-Saharan African features, and dark coily hair with natural depth.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular, almost ascetic—the build of someone whose body runs on caffeine and focus rather than regular meals. Long-limbed with prominent clavicles and sharp cheekbones. Hands are disproportionately large and dexterous, fingers perpetually stained yellowed-brown from reagent exposure.",
@@ -269,8 +254,8 @@
     "hair_style": "Cropped close to the scalp in tight coils, meticulously maintained—a deliberate choice that reads as both practical and defiant",
     "hair_length": "Short",
     "eye_color": "Dark brown base with geometric copper hexagon pattern overlaid across both irises (geneware modification, self-elected at age 19)",
-    "skin_tone": "Deep warm brown with slightly ashen undertones from indoor synthesis work and minimal sun exposure, reflecting South Asian and Sub-Saharan African ancestry with subtle Central and Southeast Asian warmth",
-    "complexion": "Precise, austere facial structure with high, prominent cheekbones and sharp jaw line characteristic of South Asian and East African heritage. Skin shows minor chemical burns on the knuckles and one faint chemical splash scar along the left temple (partially hidden by hairline). No other blemishes—grooming is careful and deliberate. Expression rests neutral, eyes rarely unfocused.",
+    "skin_tone": "Deep warm brown with golden and reddish undertones reflecting the Southeast Asian, Sub-Saharan African, and South Asian genetic majority, slightly muted from indoor synthesis work and minimal sun exposure. The undertone complexity shows the real-world blending of three major ancestry groups.",
+    "complexion": "Angular facial structure with high, prominent cheekbones and sharp jawline characteristic of Southeast Asian and Sub-Saharan African heritage, refined by South Asian bone structure. Skin shows minor chemical burns on the knuckles and one faint chemical splash scar along the left temple (partially hidden by hairline). No other blemishes—grooming is careful and deliberate. Expression rests neutral, eyes rarely unfocused.",
     "distinguishing_marks": [
       "Faint yellowed staining on the tips of all ten fingers from chronic reagent handling, darkest on the index and middle fingers",
       "Small chemical splash scar on left temple near the hairline, roughly 2cm, pale pink",
@@ -280,17 +265,77 @@
     "posture_movement": "Moves with controlled precision, economical gestures. Sits hunched slightly forward when working, shoulders tensed. When mobile, walks with purpose but without hurry—someone accustomed to not drawing attention. Hands are rarely still; fidgets with small objects (reagent vials, a lighter, a pen) as a means of processing thought. Breathing shallow, vocal register naturally soft—a learned habit from operating in spaces where being overheard carries consequences.",
     "clothing_style": "Tier 4 working-class, practical and worn. Default uniform: faded charcoal synthetic lab coat (repaired multiple times, sleeves rolled), black cargo pants with reinforced pockets, steel-toed work boots scuffed from The Narrows concrete. Surgical mask worn around the neck at all times, pulled up during synthesis work. A single piece of jewelry: a thin steel ring on the left ring finger (no romantic significance; a tool for opening vials). No branding, no status markers. Clothes are clean but well-used, patched visibly at the left knee and right hip seam."
   },
-  "image_prompt": "Aidana Karunaratne-Achebe, 172cm lean angular frame, deep warm brown skin with ashen undertones, sharp high cheekbones and defined jaw from South Asian-Sub-Saharan African heritage blend, tight dark brown coils cropped close to scalp, striking geometric copper hexagon iris pattern overlaid on dark brown eyes, yellowed staining on fingertips from reagent work, faint chemical scar along left temple, austere precise features, controlled neutral expression. Wearing faded charcoal synthetic lab coat with visible repairs, black reinforced cargo pants, steel-toed scuffed boots, surgical mask draped around neck, thin steel ring on left ring finger. Hunched posture, hands fidgeting with reagent vial, shallow breathing. Indoor synthesis lab setting, cool blue-white fluorescent lighting casting sharp shadows, neon glow of chemical compounds in background, cyberpunk 2226 Great Lakes Metropolitan Zone, moody focused concentration, gritty practical work environment, minimal status markers, tier 4 working-class aesthetic, --ar 2:3 --v 6",
+  "image_prompt": "Binta Magnúsdóttir-Björnsdóttir, lean Southeast Asian-African-South Asian woman, 172cm tall, deep warm brown skin with golden undertones, sharp angular cheekbones and jawline, tight dark coily cropped hair, striking copper hexagon geneware iris pattern. Dressed in faded charcoal lab coat with rolled sleeves, black cargo pants, scuffed steel-toed boots. Chemical staining visible on fingertips, small scar near left temple. Posture tense and forward-leaning, hands fidgeting with reagent vial. Surgical mask draped around neck. GLMZ underground synthesis lab setting, cool blue-white fluorescent lighting casting harsh shadows, concrete walls of The Narrows visible in background, focused expression suggesting intense concentration. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 47.4,
-    "Central Asian": 21.8,
-    "Sub-Saharan African": 14.1,
-    "Southeast Asian": 9.5,
-    "Hispanic/Latin American": 5.5,
-    "Eastern European": 1.7
+    "Southeast Asian": 42.9,
+    "Sub-Saharan African": 23.3,
+    "South Asian": 17,
+    "Hispanic/Latin American": 7.6,
+    "East Asian": 5.1,
+    "Eastern European": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 11.1,
+        "Ilocano": 8
+      },
+      "Indonesian": {
+        "Javanese": 16.3,
+        "Sundanese": 7.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 6.9,
+        "Mozambican": 6.5
+      },
+      "West African": {
+        "Senegalese": 9.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.8
+      },
+      "Nepali": {
+        "Nepali": 5.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 0.7,
+        "Guatemalan": 1.5
+      },
+      "Caribbean": {
+        "Dominican": 2,
+        "Puerto Rican": 0.2
+      },
+      "Mexican": {
+        "Mexican": 3.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.2
+      },
+      "Korean": {
+        "Korean": 1.8
+      },
+      "Chinese": {
+        "Shanghainese": 0.8,
+        "Hakka": 0.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 2.8,
+        "Czech": 1.3
+      }
+    }
+  }
 }

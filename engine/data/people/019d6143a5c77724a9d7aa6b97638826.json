@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c77724a9d7aa6b97638826",
   "type": "character",
-  "name": "Valentina Rentería",
+  "name": "Zara Kim",
   "aliases": [
     "Bogey",
     "The Receipt"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Shelf, Deepwell Station, near sub-level access near State and Van Buren",
-  "description": "Bogumił is a heavyset man with pale Polish-Armenian complexion gone ruddy at the cheeks from years of Deepwell Station's recycled air, a close-cropped head of dark hair shot through with early gray, and a mustache he maintains with a precision that is otherwise entirely absent from his personal presentation. He wears the same rotation of three utilitarian jackets and always has a data-chip case on his belt that holds sixty to eighty chips in organized categories only he understands. His stall at The Shelf is a folding table with a locked case on top and a handwritten placard reading 'MEDIA / INFORMATION / REASONABLE RATES.' Behind it he keeps a battered terminal and a cup of something hot that he refills compulsively from a thermos.\n\nBogumił has the careful, watchful energy of a man who has heard a lot of things he wasn't meant to and survived by being boring about it. He is dry-humored and unhurried, speaks with precise economy, and will sell you bootleg Axiom entertainment packages and Tessera corporate gossip compilations with the same mild demeanor. He does not volunteer what he knows, but ask him the right question and pay the right amount and the depth of his archive is quietly staggering. His specialty is organizational intelligence — who works for whom, who owes what, which corponation is about to restructure which subsidiary — sourced from document leaks, intercepted internal newsletters, and a network of low-level administrative workers who trade gossip for data access.",
+  "description": "Zara Kim is a heavyset man with pale Polish-Armenian complexion gone ruddy at the cheeks from years of Deepwell Station's recycled air, a close-cropped head of dark hair shot through with early gray, and a mustache he maintains with a precision that is otherwise entirely absent from his personal presentation. He wears the same rotation of three utilitarian jackets and always has a data-chip case on his belt that holds sixty to eighty chips in organized categories only he understands. His stall at The Shelf is a folding table with a locked case on top and a handwritten placard reading 'MEDIA / INFORMATION / REASONABLE RATES.' Behind it he keeps a battered terminal and a cup of something hot that he refills compulsively from a thermos.\n\nZara Kim has the careful, watchful energy of a man who has heard a lot of things he wasn't meant to and survived by being boring about it. He is dry-humored and unhurried, speaks with precise economy, and will sell you bootleg Axiom entertainment packages and Tessera corporate gossip compilations with the same mild demeanor. He does not volunteer what he knows, but ask him the right question and pay the right amount and the depth of his archive is quietly staggering. His specialty is organizational intelligence — who works for whom, who owes what, which corponation is about to restructure which subsidiary — sourced from document leaks, intercepted internal newsletters, and a network of low-level administrative workers who trade gossip for data access.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -179,7 +179,7 @@
     "Info Broker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,35 +235,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Deepwell Station",
-    "The Shelf",
     "Zheng-dao Bioelectric",
+    "The Shelf",
     "BLACKWATER",
     "Tessera Corponation",
-    "ARCHIVE",
     "Slagworks Industrial",
-    "The Pale Mile",
-    "Axiom Systems Neural Dead Drop NDD-2",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Dzintars Ababio-Suleimenov",
-    "Emeka Johansson-Orozco",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus EC-4 'Companion'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo RB-1 'Judas Goat'",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Archive",
-    "The Sump",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure"
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Hispanic/Latin American and Sub-Saharan African with South Asian admixture; a blend evident in warm medium-to-deep brown skin tones, textured hair, and facial structure reflecting the African diaspora and Caribbean/Central American ancestry, with subtle South Asian features in bone structure and eye shape.",
+    "heritage": "Complex Pan-Asian, South Asian, and Middle Eastern blend with Sub-Saharan African admixture. East Asian ancestry (42.3%) defines facial structure and eye shape, substantially enriched by South Asian (23%), Southeast Asian (13.7%), and Middle Eastern (12.5%) heritage, with Sub-Saharan African (8.5%) contributing warmth and depth. A striking synthesis of multiple continental features: warm deep brown skin with golden and olive undertones, angular cheekbones with subtle fullness, monolid and hooded eye shapes, fuller lips from South Asian influence, and facial proportions reflecting the intersection of East, South, and Southeast Asian genetics tempered by Middle Eastern width.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Heavyset, solid through the shoulders and chest, soft around the midsection from years of sedentary work and institutional food. Thick-limbed but not athletic.",
@@ -271,8 +252,8 @@
     "hair_style": "Close-cropped, military-precision cut, maintained weekly at a sub-level barber",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and observant",
-    "skin_tone": "Warm medium-to-deep brown complexion with chronic reddening across cheeks and nose from Deepwell Station's recycled air and irregular ventilation systems; undertones reflecting Sub-Saharan African and Hispanic heritage blending.",
-    "complexion": "Weathered by decades of sub-level lighting; fine lines around the eyes from constant squinting at data terminals; a deep vertical crease between the brows from concentration. Cheeks permanently flushed. Facial structure shows blended ancestry—broader nose, fuller lips, defined cheekbones. His mustache is meticulously groomed—dark, full, kept to precise dimensions—in stark contrast to the neglect elsewhere in his appearance.",
+    "skin_tone": "Warm deep brown with golden and olive undertones, reflecting the dominant East Asian (42.3%) and South Asian (23%) ancestry blended with Southeast Asian and Middle Eastern warmth; the Sub-Saharan African heritage (8.5%) adds depth and richness. Chronic reddening across cheeks and nose from Deepwell Station's recycled air and irregular ventilation systems overlays the base tone.",
+    "complexion": "Weathered by decades of sub-level lighting; fine lines around the eyes from constant squinting at data terminals; deep vertical crease between the brows from concentration. Cheeks permanently flushed. Facial structure distinctly pan-Asian with South Asian and Middle Eastern influence—prominent but not broad nose with slight bulbousness reflecting South Asian genetics, fuller lips from South Asian admixture, defined angular cheekbones characteristic of East Asian ancestry, with subtle width through the face reflecting Middle Eastern proportion. Monolid eye shape with slight hooding. Meticulously groomed dark, full mustache in stark contrast to the weathered neglect elsewhere. Complexion carries the depth and richness of blended continental ancestry.",
     "distinguishing_marks": [
       "Faint surgical scar on the left wrist where subdermal data port was installed, approximately 3cm long, now nearly invisible",
       "Nicotine stains on the index and middle fingers of his right hand from years of handling cheap synthetic cigarettes"
@@ -281,14 +262,56 @@
     "posture_movement": "Hunched shoulders from hours seated at a folding table; moves with deliberate, economical motions—no wasted energy. Sits with his spine against the chair back, feet flat on the floor, always positioned to see approaches from multiple angles. Stillness is his default state; when he moves, it is purposeful and measured.",
     "clothing_style": "Tier 4 utilitarian. Three interchangeable synthetic-blend jackets in muted colors (charcoal, dark green, navy) worn in rotation, all showing seams at the elbows and collar stains from years of Deepwell grime. Underneath: plain long-sleeved thermal shirts, worn but clean. Practical cargo pants with multiple pockets. Heavy boots resoled twice. A worn canvas belt with a reinforced data-chip case containing 60-80 organized chips. No jewelry except a functional analog wristwatch. Everything smells faintly of recycled air, old coffee, and industrial cleaner."
   },
-  "image_prompt": "Valentina Rentería, 2226 cyberpunk, medium-deep brown skin with reddened cheeks from years underground, dark brown alert eyes, close-cropped dark hair with gray threading at temples, meticulously groomed dark full mustache, heavyset build with soft midsection, weathered face with deep concentration lines, faint scar on left wrist, nicotine-stained fingers. Wearing worn charcoal synthetic-blend jacket, long-sleeved thermal shirt, practical cargo pants, heavy boots, canvas belt with data-chip case. Seated in deliberate posture against chair back, feet flat, positioned to see multiple angles. Hunched shoulders, still and measured demeanor. Sub-level lighting, recycled air atmosphere, worn folding table, faint smell of old coffee and industrial cleaner. Cyberpunk aesthetic, 2200s Great Lakes Metropolitan Zone, Deepwell Station grime and decay. --ar 2:3 --v 6",
+  "image_prompt": "Zara Kim, 178cm heavyset figure with warm deep brown skin carrying golden and olive undertones, pan-Asian facial structure with fuller South Asian lips and angular East Asian cheekbones, monolid dark brown eyes beneath hooded lids, weathered face marked by decades under artificial light with permanent flush across cheeks, meticulous dark mustache contrasting neglected appearance, short military-cropped dark brown hair with gray at temples. Hunched posture at worn folding table in dimly-lit Deepwell Station sub-level, wearing charcoal synthetic-blend jacket over thermal shirt, cargo pants, heavy resoled boots, worn canvas belt with data-chip case, functional analog wristwatch. Tier 4 utilitarian aesthetic, grime-stained collar, deliberate stillness, observant alert gaze, surrounded by recycled air haze and industrial shadow. GLMZ, Great Lakes Metropolitan Zone infrastructure. Moody sub-level lighting casting long shadows. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 52.1,
-    "Sub-Saharan African": 39.8,
-    "South Asian": 8.1
+    "East Asian": 42.3,
+    "South Asian": 23,
+    "Southeast Asian": 13.7,
+    "Middle Eastern": 12.5,
+    "Sub-Saharan African": 8.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 42.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 7.5
+      },
+      "Nepali": {
+        "Nepali": 15.5
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 13.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 3.2
+      },
+      "Persian": {
+        "Afghan Dari": 2.4,
+        "Iranian": 0.6
+      },
+      "Kurdish": {
+        "Kurdish": 6.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 4.4
+      },
+      "West African": {
+        "Guinean": 4.1
+      }
+    }
+  }
 }

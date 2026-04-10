@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Irkalla, in a small rented room above a medical recycling depot on the district's outer ring, near Pulaski and Chicago Ave",
-  "description": "Zola Nkemezi-Faalogo chose her neighborhood because of what its name means, which is everything you need to know about how she approaches her work. She is a medium-height woman with natural hair that she keeps wrapped in white cloth during active work — white for threshold, she says, not for any religion specifically, though she moves through many of them with easy fluency. Her skin is blue-black and very clear. She has a retractable claw mod on her left hand only, three claws, which she got not for any practical reason but because a dying man she sat with once said he could see something animal in her and she decided to honor the observation. They are silver and she keeps them very sharp.\n\nDeath midwifery in GLMZ exists in a complicated legal gray space — it is not medical practice, not counseling, not clergy work, though it borrows from all three. Zola's practice is to be present. She sits with the dying, prepares the room according to whatever tradition the dying person follows or once followed, helps families understand what they are watching so it is not only terror, and afterward conducts whatever threshold ritual the family needs to feel that something has been marked. She has sat with Tier 1 deaths in Irkalla where the family had no money and she accepted nothing, and she has been called into Grosse Pointe Enclosure twice for clients who paid her very well and whom she found no more or less deserving of a good death.",
+  "description": "Echo Ibarra chose her neighborhood because of what its name means, which is everything you need to know about how she approaches her work. She is a medium-height woman with natural hair that she keeps wrapped in white cloth during active work — white for threshold, she says, not for any religion specifically, though she moves through many of them with easy fluency. Her skin is blue-black and very clear. She has a retractable claw mod on her left hand only, three claws, which she got not for any practical reason but because a dying man she sat with once said he could see something animal in her and she decided to honor the observation. They are silver and she keeps them very sharp.\n\nDeath midwifery in GLMZ exists in a complicated legal gray space — it is not medical practice, not counseling, not clergy work, though it borrows from all three. Zola's practice is to be present. She sits with the dying, prepares the room according to whatever tradition the dying person follows or once followed, helps families understand what they are watching so it is not only terror, and afterward conducts whatever threshold ritual the family needs to feel that something has been marked. She has sat with Tier 1 deaths in Irkalla where the family had no money and she accepted nothing, and she has been called into Grosse Pointe Enclosure twice for clients who paid her very well and whom she found no more or less deserving of a good death.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -156,7 +156,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,45 +172,28 @@
     "Grosse Pointe Enclosure",
     "Aurochs Medical Complex",
     "The Threshold",
-    "GLMZ",
     "The Iron Lotus",
     "Threshold",
     "The Quiet Room",
     "Chrome Don't Cry (It Conducts)",
     "Irkalla",
-    "Pellucid Systems",
-    "Silver",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Kairos",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Saodat Mirzoyan-Fubara",
-    "Solveig Tambadou-Kereselidze",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Peninsula",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Silver",
+    "Pellucid Systems",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed ancestry: primarily Hispanic/Latin American (39.1%), with significant Eastern European (21.3%), Southeast Asian (19.8%), and Northern European (19.8%) heritage. This creates a complex phenotype blending warm Mediterranean and Latin features with cooler Eastern European bone structure and Southeast Asian eye shape and skin undertones.",
+    "heritage": "Mixed ancestry: primarily Hispanic/Latin American (49.5%), with significant Southeast Asian (25.7%), South Asian (12.5%), Sub-Saharan African (7.1%), and Indigenous American (5.2%) heritage. This creates a phenotype blending warm Latin features with Southeast Asian bone structure, South Asian skin depth, and African undertones—a rich, complex fusion reflecting the Ubiquitous Diaspora.",
     "height_cm": 165,
     "weight_kg": 68,
     "build": "Solid and grounded, neither lean nor heavy — a body built for stillness and presence rather than speed. Strong shoulders, steady core, hands that look capable of holding someone's weight.",
     "hair_color": "Natural black",
     "hair_style": "Kept long and naturally textured; wrapped in white cloth during active work, otherwise worn loose or in simple braids",
     "hair_length": "Long",
-    "eye_color": "Deep brown with slight warm undertone, alert and observant",
-    "skin_tone": "Warm deep brown with golden undertones — a rich, complex tone reflecting Latin American and Southeast Asian ancestry blended with Northern European paleness, creating an even, luminous medium-to-deep brown without extreme darkness",
-    "complexion": "Face marked by absolute clarity — minimal scarring, good skin condition despite Irkalla's air quality. Strong cheekbones with subtle width suggesting Eastern European influence, wide-set eyes with slight epicanthal fold from Southeast Asian heritage, a mouth that settles into a neutral expression of listening. No makeup. Early lines around the eyes from years of close watching. Warm undertones across the face.",
+    "eye_color": "Deep brown with warm undertone, alert and observant",
+    "skin_tone": "Warm deep brown with golden undertones — a luminous medium-to-deep brown reflecting the blend of Latin American, Southeast Asian, South Asian, Indigenous American, and Sub-Saharan African ancestry. Rich and even in tone without extreme darkness.",
+    "complexion": "Face marked by absolute clarity — minimal scarring, good skin condition despite Irkalla's air quality. Strong, defined cheekbones with subtle width from diverse ancestry, wide-set eyes with slight epicanthal fold reflecting Southeast Asian heritage, a mouth that settles into a neutral expression of listening. No makeup. Early lines around the eyes from years of close watching. Warm golden undertones across the face.",
     "distinguishing_marks": [
       "Faint bioluminescent gold pigmentation around collarbone area, visible under certain light angles, natural geneware cosmetic present since age 22",
       "Left hand bears three retractable silver claws (geneware-mechanical hybrid), kept polished to mirror brightness, normally retracted but visible as slight metallic tracery beneath skin"
@@ -219,15 +202,59 @@
     "posture_movement": "She moves with deliberate, economical grace — nothing wasted. Her default posture is slightly forward-leaning, as if listening intently. Her hands are often open and visible, palms sometimes facing up in a gesture of receptiveness. She has learned to move quietly, and speaks only when necessary; her presence has a gravitational quality, pulling attention without demanding it.",
     "clothing_style": "Tier 3-4 practical elegance. Worn vintage linen and cotton — earth tones, grays, blacks, whites. A long indigo wrap she wears over her shoulders like a shawl, faded from years of use. No logos, no corporate affiliation marks. Comfortable, washable clothing suitable for sitting vigil — clothes that age well and don't announce themselves. During active work, the white head wrap is non-negotiable. Off-duty, she favors loose pants and long-sleeved shirts despite Irkalla's climate. Worn boots with good grip. She owns almost nothing decorative; what she owns has been chosen and kept with intention."
   },
-  "image_prompt": "Echo Ibarra, 165cm tall woman with warm deep brown skin and mixed Latin American, Eastern European, and Southeast Asian heritage, long black naturally textured hair in loose braids, strong shoulders and grounded presence, wearing faded indigo wrap over long-sleeved earth-tone linen shirt and worn practical boots, subtle bioluminescent gold geneware around collarbone glowing faintly in low light, retractable silver claws visible as faint chrome tracery on left hand, sitting in listening posture with palms open, peaceful and observant expression with early eye lines, cyberpunk 2226 Great Lakes Metropolitan Zone, intimate low-light setting with neon ambient glow catching her golden augmentations, cinematic character portrait, contemplative mood, gritty realistic 2200s aesthetic, no corporate logos, worn vintage aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Echo Ibarra, a woman of mixed Hispanic-Latin American, Southeast Asian, South Asian, Sub-Saharan African, and Indigenous American heritage, 165cm tall with warm deep brown skin glowing with golden undertones. Strong defined cheekbones, wide-set brown eyes with subtle epicanthal fold, natural black long hair wrapped in white cloth. Wearing faded earth-tone linen and vintage cotton, long indigo shawl, worn boots. Faint bioluminescent gold tracery visible around collarbone under low light. Silver claw augmentation tracery on left hand. Standing in thoughtful forward-lean posture, hands open and visible, alert observant expression. GLMZ 2200s Great Lakes Metropolitan Zone, dim neon-tinged industrial lighting, minimalist practical elegance, quiet presence, gravitational stillness --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.1,
-    "Eastern European": 21.3,
-    "Southeast Asian": 19.8,
-    "Northern European": 19.8
+    "Hispanic/Latin American": 49.5,
+    "Southeast Asian": 25.7,
+    "South Asian": 12.5,
+    "Sub-Saharan African": 7.1,
+    "Indigenous American": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 30.9
+      },
+      "Mexican": {
+        "Mexican": 12.4
+      },
+      "Central American": {
+        "Guatemalan": 6.2
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 12.7
+      },
+      "Cambodian": {
+        "Khmer": 13
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 12.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 4.7
+      },
+      "East African": {
+        "Kenyan": 2.4
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 2.1,
+        "Lakota": 1.5
+      },
+      "Andean": {
+        "Quechua": 1.6
+      }
+    }
+  }
 }

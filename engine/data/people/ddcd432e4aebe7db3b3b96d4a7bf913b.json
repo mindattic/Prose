@@ -1,13 +1,13 @@
 {
   "id": "ddcd432e4aebe7db3b3b96d4a7bf913b",
-  "name": "Nova Tehrani-Kristjánsson",
+  "name": "Kofi Karunaratne-Appiah",
   "type": "character",
   "aliases": [
     "The Adjuster",
     "Numbers"
   ],
   "role": "Private Investigator",
-  "description": "Cezar Watanabe-Gyasi is the PI that fraud investigators dream of and fraudsters have nightmares about — a methodical, meticulous, mathematically minded investigator who specializes in the art of proving that the numbers don't lie, even when people do.\n\nHis professional life is insurance fraud. He works on retainer for three of GLMZ's largest insurance underwriters and two corporate risk assessment firms, investigating claims that statistical analysis has flagged as potentially fraudulent. His cases range from individual claimants faking cyberware injuries to elaborate multi-year fraud operations involving dozens of participants and millions of Quanta. He approaches every case with the same patient methodology: gather the numbers, analyze the patterns, find the anomaly, prove the fraud.\n\nThe mundanity of his work is his greatest asset. Nobody pays attention to the insurance investigator. He moves through corporate offices, medical facilities, repair shops, and financial institutions with the invisibility of someone who belongs everywhere and nowhere. His interviews are so bland that subjects relax and contradict themselves. His reports are so thorough that legal challenges are futile. He is not exciting, not dramatic, and not interested in being either. He is simply very, very good at mathematics, and in a city built on financial transactions, mathematics is power.",
+  "description": "Kofi Karunaratne-Appiah is the PI that fraud investigators dream of and fraudsters have nightmares about — a methodical, meticulous, mathematically minded investigator who specializes in the art of proving that the numbers don't lie, even when people do.\n\nHis professional life is insurance fraud. He works on retainer for three of GLMZ's largest insurance underwriters and two corporate risk assessment firms, investigating claims that statistical analysis has flagged as potentially fraudulent. His cases range from individual claimants faking cyberware injuries to elaborate multi-year fraud operations involving dozens of participants and millions of Quanta. He approaches every case with the same patient methodology: gather the numbers, analyze the patterns, find the anomaly, prove the fraud.\n\nThe mundanity of his work is his greatest asset. Nobody pays attention to the insurance investigator. He moves through corporate offices, medical facilities, repair shops, and financial institutions with the invisibility of someone who belongs everywhere and nowhere. His interviews are so bland that subjects relax and contradict themselves. His reports are so thorough that legal challenges are futile. He is not exciting, not dramatic, and not interested in being either. He is simply very, very good at mathematics, and in a city built on financial transactions, mathematics is power.",
   "affiliation": "Retained by three insurance underwriters and two corporate risk assessment firms",
   "tier": "Tier 3",
   "location": "A boring office in Glassway designed to be forgettable — beige walls, standard furniture, nothing that reveals personality, near Milwaukee and North Ave",
@@ -65,23 +65,13 @@
   "registered_firearms": [],
   "related_entities": [
     "Ghostbridge Island",
-    "GLMZ",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Brecken Yılmaz-Osei",
-    "Kang-Petrov Arms KPS-12D 'Typhoon'",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Specter",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation",
-    "Tessera TK-11 Specter 'Whisper'",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Middle Eastern, East Asian, Southeast Asian, and South Asian mixed ancestry with minor Hispanic/Latin American heritage. The combination creates distinctive features: dark eyes with subtle epicanthic variation, warm brown skin with complex olive and golden undertones from the Middle Eastern and South Asian blend, and facial structure reflecting the diverse genetic makeup across multiple continental populations.",
+    "heritage": "South Asian (49%), Sub-Saharan African (35.5%), and Southeast Asian (15.5%) mixed ancestry. The dominant South Asian heritage provides warm undertones and refined facial structure; substantial Sub-Saharan African ancestry contributes rich skin depth, prominent cheekbone geometry, and facial bone structure; Southeast Asian heritage adds subtle eye shape characteristics and softer facial contours. The combination creates a complex warm medium-brown complexion with golden-amber undertones, well-defined cheekbones with strong definition, and balanced facial proportions that reflect this tri-continental blend.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and angular, with the posture of someone who spends twelve hours a day hunched over terminals. Shoulders slightly forward, minimal musculature — functional rather than maintained.",
@@ -89,8 +79,8 @@
     "hair_style": "Short, neatly parted, maintained with professional precision",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium brown with golden and olive undertones, reflecting the blend of Middle Eastern, South Asian, and Southeast Asian ancestry",
-    "complexion": "Clean-shaven, minimal facial hair. Skin shows slight pallor from indoor work with warm undertones beneath. Facial features show the blended heritage: moderate cheekbones, straight nose with subtle bridge definition, and eye shape reflecting East and Southeast Asian genetics. No visible scars or marks except the characteristic jawline scar. Expression resting at neutral — the face of someone who has learned not to show reactions.",
+    "skin_tone": "Warm medium-brown with golden-amber undertones, reflecting the balanced blend of South Asian, Sub-Saharan African, and Southeast Asian ancestry",
+    "complexion": "Clean-shaven, minimal facial hair. Skin shows slight pallor from indoor work with warm golden undertones beneath. Facial features reflect the ancestry blend: strong, well-defined cheekbones from African heritage providing structure and prominence, straight nose with refined bridge showing South Asian influence, and eye shape displaying Southeast Asian genetic characteristics with slightly wider-set placement. No visible scars or marks except the characteristic jawline scar. Expression resting at neutral — the face of someone who has learned not to show reactions.",
     "distinguishing_marks": [
       "Thin white scar along left jawline, approximately 3cm, from a childhood accident — barely visible unless light hits at specific angle",
       "Faint calluses on fingers and the side of his right hand from years of handwritten note-taking and stylus work"
@@ -99,13 +89,38 @@
     "posture_movement": "Deliberate and economical. Moves with minimal wasted motion. Sits with perfect posture at a terminal but slouches slightly when walking, as if conserving energy for thought. Hands move with precision when gesturing — no flourish, no emphasis, just necessary communication.",
     "clothing_style": "Aggressively forgettable. Gray or navy slacks, white or light blue dress shirts, dark blazers from mid-tier retailers (Nexus Professional, Meridian). No logos, no chrome accents, no smart-fabric displays. Shoes are black leather, well-maintained but unremarkable. Watch is a simple digital with no AR functions — practical, not status-signaling. Dresses for Tier 3 corporate environments deliberately, never standing out."
   },
-  "image_prompt": "Nova Tehrani-Kristjánsson, 178cm tall cyberpunk financier with mixed Middle Eastern, East Asian, Southeast Asian, and South Asian heritage. Warm medium brown skin with golden undertones, dark eyes, black hair with silver temples, precisely parted short style. Clean-shaven face with strong cheekbones and straight nose, subtle scar on left jawline barely visible. Lean angular build from terminal work, shoulders slightly forward. Wearing unremarkable navy slacks, crisp light blue dress shirt, and dark mid-tier blazer with perfect corporate neutrality. Black leather shoes, simple digital watch. Sitting at a holographic terminal in a dimly-lit Tier 3 corporate office, cool blue-white light from screens casting shadows across face. Neutral expression, deliberate posture, minimal wasted motion. Cyberpunk 2226, Great Lakes Metropolitan Zone. Professional, forgettable, controlled. --ar 2:3 --v 6",
+  "image_prompt": "Kofi Karunaratne-Appiah, a lean 178cm neo-noir corporate analyst in 2226, warm medium-brown skin with golden undertones blending South Asian, Sub-Saharan African, and Southeast Asian heritage. Sharp, well-defined cheekbones, refined straight nose, dark brown eyes with subtle Southeast Asian eye shape. Black hair with silver at temples, clean-shaven, neutral expression. Wearing crisp light blue dress shirt and dark navy blazer from Nexus Professional, simple digital watch. Seated at a holographic terminal in a Tier 3 corporate office, cool blue-gray lighting casting subtle shadows on his face. Posture perfect but tense, shoulders slightly forward. Minimal augmentation visible. Background shows floor-to-ceiling windows overlooking the Great Lakes Metropolitan Zone skyline at dusk, neon-tinged clouds. Mood: focused, guarded, unremarkable. GLMZ 2200s aesthetic, corporate noir lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 28.8,
-    "East Asian": 23.7,
-    "Southeast Asian": 21.5,
-    "South Asian": 21.3,
-    "Hispanic/Latin American": 4.7
+    "South Asian": 49,
+    "Sub-Saharan African": 35.5,
+    "Southeast Asian": 15.5
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 49
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 21.7
+      },
+      "Southern African": {
+        "Zimbabwean": 13.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 7.9,
+        "Bicolano": 2.1
+      },
+      "Cambodian": {
+        "Khmer": 5.5
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A boring office in Glassway designed to be forgettable"
+  }
 }

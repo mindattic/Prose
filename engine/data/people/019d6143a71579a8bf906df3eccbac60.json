@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71579a8bf906df3eccbac60",
   "type": "character",
-  "name": "Sione Björnsdóttir",
+  "name": "Mateo Venkatesh",
   "aliases": [
     "Ves"
   ],
@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows, Pillar Block 7 — residential stack managed by an Arcturus-subsidiary property company, near North Ave and Damen",
-  "description": "Vestin is wiry and medium height, with warm light-brown skin, close-cut dark hair with a single streak of color-changing dye that they toggle between indigo and copper depending on mood, and clever dark eyes set under expressive brows that do most of their communicating for them. They have a tool harness they wear as a second skin — a custom-fitted rig of loops, mag-clips, and repurposed Ferrogate equipment pouches that they have spent years personalizing, and their hands carry the calluses and minor scars of someone who takes things apart constantly and puts them back together mostly correctly. They have a neural interface stud behind their right ear for reading building management systems directly — standard for a super but theirs is modified past factory spec in ways that technically violate their work contract.\n\nVestin is pragmatic to a fault, profoundly competent, and operates on the principle that anything broken can be fixed and anything fixed can be made to work better than it originally did. They have an uneasy relationship with the Arcturus-subsidiary management company that technically employs them, because they've learned that management's definition of 'fixed' means 'back to minimum acceptable function' and their definition means 'actually good.' They are not warm in the conventional sense — they don't small-talk and they're uncomfortable with gratitude — but they will be at your door within twenty minutes of a maintenance request if they're in the building, which they almost always are.",
+  "description": "Mateo Venkatesh is wiry and medium height, with warm light-brown skin, close-cut dark hair with a single streak of color-changing dye that they toggle between indigo and copper depending on mood, and clever dark eyes set under expressive brows that do most of their communicating for them. They have a tool harness they wear as a second skin — a custom-fitted rig of loops, mag-clips, and repurposed Ferrogate equipment pouches that they have spent years personalizing, and their hands carry the calluses and minor scars of someone who takes things apart constantly and puts them back together mostly correctly. They have a neural interface stud behind their right ear for reading building management systems directly — standard for a super but theirs is modified past factory spec in ways that technically violate their work contract.\n\nMateo Venkatesh is pragmatic to a fault, profoundly competent, and operates on the principle that anything broken can be fixed and anything fixed can be made to work better than it originally did. They have an uneasy relationship with the Arcturus-subsidiary management company that technically employs them, because they've learned that management's definition of 'fixed' means 'back to minimum acceptable function' and their definition means 'actually good.' They are not warm in the conventional sense — they don't small-talk and they're uncomfortable with gratitude — but they will be at your door within twenty minutes of a maintenance request if they're in the building, which they almost always are.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -175,7 +175,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,25 +238,15 @@
     "Arcturus Defense Solutions",
     "Independent Micro-Grid Power Cooperative",
     "Irontide Tidal Energy",
+    "Indigo",
     "Copper",
+    "Neural Palate",
     "The Pure Hand",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Nodar Kuznetsov-Adu",
-    "Ouroboros Energy Thermal Regulation Core",
-    "Sisay Bergqvist-Mallari",
-    "Solveig Tambadou-Kereselidze",
-    "TESSERA TC-3 'Crucible'",
-    "The Narrows",
-    "Vantablack VS-3 'Skin Job'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Pacific Islander, Sub-Saharan African, and Central Asian ancestry — a striking blend that produces warm golden-bronze skin with subtle undertones from multiple continental lineages. The genetic mix creates distinctive facial structure: slightly wider cheekbones from East Asian ancestry, broader nose and fuller lips from African heritage, and the angular jaw definition characteristic of Central Asian lineages",
+    "heritage": "Dominant South Asian (36.2%) blended with strong Hispanic/Latin American (29.9%) and Southeast Asian (21.8%) ancestry, with meaningful contributions from Sub-Saharan African (7.6%) and Eastern European (4.5%) heritage. This creates a distinctly warm, multi-tonal complexion: medium bronze base with olive undertones from South Asian ancestry, amber warmth from Hispanic/Latin American lineage, and subtle golden-brown deepening from Southeast Asian and Sub-Saharan African mix. Facial structure is beautifully blended—moderate, defined cheekbones characteristic of South Asian features, a strong nose bridge with slight flare from Hispanic heritage, angular jaw and high facial structure from Southeast Asian ancestry, and subtle fullness in the lips enriched by Sub-Saharan African and Hispanic contributions. The overall effect is a warm, luminous complexion with striking multicontinental harmony.",
     "height_cm": 172,
     "weight_kg": 63,
     "build": "Wiry and compact, all lean muscle and efficient movement — the frame of someone who climbs maintenance ladders and carries tools for a living, with minimal excess mass",
@@ -264,8 +254,8 @@
     "hair_style": "Close-cropped, functional, with the dyed streak running vertically along the left side near the temple",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and focused",
-    "skin_tone": "Warm golden-bronze with amber undertones, reflecting the East Asian and Pacific Islander dominance in their genetic ancestry, deepened by Sub-Saharan African heritage",
-    "complexion": "Clear skin with a faint network of fine lines around the eyes from squinting at circuitry and LED diagnostics; the warmth of their blended heritage creates a subtle luminosity. Minimal grooming beyond functionality — no cosmetics, no jewelry except the neural interface stud",
+    "skin_tone": "Warm medium-bronze with olive and golden-amber undertones, reflecting the balanced multicontinental blend of South Asian, Hispanic/Latin American, Southeast Asian, Sub-Saharan African, and Eastern European ancestry",
+    "complexion": "Clear skin with a faint network of fine lines around the eyes from squinting at circuitry and LED diagnostics; the rich warmth of their blended heritage creates a subtle natural luminosity. Minimal grooming beyond functionality — no cosmetics, no jewelry except the neural interface stud. The interplay of heritage tones creates natural depth and warmth across the face.",
     "distinguishing_marks": [
       "Pale crescent-shaped scar on the back of their left hand from a sharp edge during early repair work",
       "Faint burn marks (thermal scars) across the knuckles of both hands in an irregular pattern, legacy of contact with heated circuit boards",
@@ -275,15 +265,61 @@
     "posture_movement": "Economical and precise — they move through space like someone mapping it constantly. Slight forward lean when at rest, as if already calculating the next task. Hands often in motion even when standing still, fingers fidgeting with or organizing nearby objects. Direct eye contact but infrequent blinking, which can read as intense. They gesture minimally when speaking; communication happens mostly through facial expression, especially the brows.",
     "clothing_style": "Tier 3-4 utilitarian: wearing a custom-fitted tool harness as their primary silhouette — a repurposed military-grade Ferrogate equipment rig modified with additional mag-clips, loops, and personalized pouches in various states of organization. Usually under a lightweight, oil-stained synthetic work shirt in muted gray or charcoal, sleeves rolled or pushed up. Cargo pants in reinforced polymer blend with tool pockets, knees worn darker from kneeling on concrete. Worn synthetic boots with reinforced toe caps. The overall effect is 'person for whom clothes are containers for tools' rather than self-expression — function-forward, durable, minimally maintained."
   },
-  "image_prompt": "Cyberpunk 2226, East Asian-Pacific Islander-African heritage mixed-race technician Sione, golden-bronze warm skin with amber undertones, close-cropped dark hair with indigo-to-copper mood-reactive streak on left temple, dark focused eyes, wiry compact build 172cm tall. Wearing oil-stained gray synthetic work shirt under repurposed military Ferrogate equipment harness with mag-clips and tool pouches, reinforced cargo pants with worn knees, scuffed synthetic boots. Pale scar on left hand, thermal burn marks on knuckles, callused fingers. Matte-black neural interface stud behind right ear. Slight forward lean, economical precise posture, intense direct gaze, minimal blinking. Industrial maintenance setting with LED diagnostic glow, neon accent lighting casting warm amber and cool blue shadows across weathered features and worn tool rig. Cyberpunk grit, functional aesthetic, determined expression --ar 2:3 --v 6",
+  "image_prompt": "Mateo Venkatesh, a 172cm wiry maintenance tech in 2226, warm medium-bronze skin with olive and golden undertones reflecting South Asian, Hispanic/Latin American, Southeast Asian, and Sub-Saharan African heritage. Dark brown alert eyes, short dark hair with an indigo-to-copper color-shifting streak on left temple. Precise, economical posture with slight forward lean. Wearing custom military-grade tool harness over oil-stained gray synthetic work shirt, reinforced polymer cargo pants, worn synthetic boots. Matte-black oversized neural interface stud behind right ear. Callused hands with thermal scars on knuckles, crescent scar on left hand. Direct gaze, minimal expression, hands restless. Neo-noir maintenance worker aesthetic, functional and efficient, standing in dim LED-lit maintenance corridor or workshop with tool racks and circuit diagnostics glowing softly in background. Cool overhead lighting casting subtle shadows across warm-toned face. Mood: focused, alert, methodical. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 44.5,
-    "Pacific Islander": 22.1,
-    "Sub-Saharan African": 18.8,
-    "Central Asian": 14.6
+    "South Asian": 36.2,
+    "Hispanic/Latin American": 29.9,
+    "Southeast Asian": 21.8,
+    "Sub-Saharan African": 7.6,
+    "Eastern European": 4.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 36.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Chilean": 29.9
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 4.9
+      },
+      "Thai": {
+        "Thai": 8.4
+      },
+      "Cambodian": {
+        "Khmer": 8.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 1.9,
+        "Ethiopian": 0.5
+      },
+      "Southern African": {
+        "Botswanan": 5.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 1.3
+      },
+      "Slavic East": {
+        "Belarusian": 0.8,
+        "Ukrainian": 0.2
+      },
+      "Slavic West": {
+        "Sorbian": 1.8,
+        "Polish": 0.4
+      }
+    }
+  }
 }

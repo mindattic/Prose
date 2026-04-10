@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6327a6e8ea242b7ba18da18",
   "type": "character",
-  "name": "Zara Árnason",
+  "name": "Zara Keomanivong",
   "aliases": [
     "Nessie",
     "The Skin Cartographer"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Mexicantown Libre, shop called Dermis Atlas, near Western and Division",
-  "description": "Inessa is compact and restless, with the kind of energy that makes a small room feel occupied. She has Polynesian-Hungarian heritage written clearly across her features — broad cheekbones, dark eyes with a slight upward tilt, medium-brown skin covered from collarbones to wrists in her own work, a living portfolio that shifts slowly across the seasons because half her ink is bioluminescent and the other half is geneware-reactive, changing saturation with her mood. Her hair is close-cropped on the sides and grown long on top, currently dyed a deep oxidized copper that she changes every three months. A single cosmetic cat ear — just one, the left — sits atop her head, rose-gold and slightly translucent, a signature affectation she has maintained since she was nineteen.\n\nShe runs Dermis Atlas out of a converted ground-floor space in Mexicantown Libre, its walls covered in design sketches and photographs of completed work. Her specialty is narrative tattooing — pieces that tell a client's specific story using symbols drawn from their actual heritage, their personal mythology, their body's own geneware reactions. She refuses flash designs entirely and has a six-month waitlist she refuses to shorten for money. She is warm to clients in a professional way, genuinely curious about their lives, and fiercely opinionated about the difference between body art and body modification as commodity — a distinction she will explain at length to anyone who triggers it.",
+  "description": "Zara Keomanivong is compact and restless, with the kind of energy that makes a small room feel occupied. She has Polynesian-Hungarian heritage written clearly across her features — broad cheekbones, dark eyes with a slight upward tilt, medium-brown skin covered from collarbones to wrists in her own work, a living portfolio that shifts slowly across the seasons because half her ink is bioluminescent and the other half is geneware-reactive, changing saturation with her mood. Her hair is close-cropped on the sides and grown long on top, currently dyed a deep oxidized copper that she changes every three months. A single cosmetic cat ear — just one, the left — sits atop her head, rose-gold and slightly translucent, a signature affectation she has maintained since she was nineteen.\n\nShe runs Dermis Atlas out of a converted ground-floor space in Mexicantown Libre, its walls covered in design sketches and photographs of completed work. Her specialty is narrative tattooing — pieces that tell a client's specific story using symbols drawn from their actual heritage, their personal mythology, their body's own geneware reactions. She refuses flash designs entirely and has a six-month waitlist she refuses to shorten for money. She is warm to clients in a professional way, genuinely curious about their lives, and fiercely opinionated about the difference between body art and body modification as commodity — a distinction she will explain at length to anyone who triggers it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -181,7 +181,7 @@
     "Judge": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,22 +243,13 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "The Gradient Compact",
     "Copper",
-    "Jerome Atlas",
+    "Atlas",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Gold",
-    "Brecken Yılmaz-Osei",
-    "Ilhan Sandstrom-Badu",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Quilt",
-    "Slagworks Industrial",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pure Hand",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian (48.8%) and Southeast Asian (34.1%) with Northern European admixture (17.1%). The combination produces warm medium-brown skin with subtle golden undertones, almond-shaped eyes with natural depth, and fine facial structure reflecting the blended ancestry. Higher cheekbones and defined jawline from South Asian genetics; slightly broader face structure from Southeast Asian heritage; fine-boned delicacy enhanced by Northern European ancestry.",
+    "heritage": "Predominantly Sub-Saharan African (39.5%) with significant Southeast Asian (22.8%) and South Asian (17.1%) ancestry, complemented by Northern European (10.3%) and Hispanic/Latin American (10.3%) admixture. This rare combination produces rich warm brown skin with golden and subtle reddish undertones, creating a complex and luminous complexion. The blending produces a striking synthesis: broader facial structure and fuller features from Sub-Saharan African genetics; almond-shaped eyes with Southeast Asian characteristics; high, defined cheekbones from South Asian ancestry; fine bone structure refined by Northern European contribution; and warm undertones enhanced by Hispanic/Latin American heritage.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, with the coiled restlessness of someone who rarely sits still. Defined shoulders and forearms from years of precision handiwork; minimal body fat; posture suggests contained kinetic energy.",
@@ -266,8 +257,8 @@
     "hair_style": "Undercut: close-cropped shaved sides with longer growth on crown, typically styled swept to one side or pulled back loosely",
     "hair_length": "Medium (long on top, short on sides)",
     "eye_color": "Color-shifting irises: purple-to-gold spectrum, reactive to emotional state and lighting conditions",
-    "skin_tone": "Warm medium brown with golden undertones, reflecting the dominant South and Southeast Asian ancestry with cool undertones from Northern European contribution",
-    "complexion": "Clear, even skin with a lived-in quality. High, defined cheekbones characteristic of South Asian genetics; almond-shaped eyes with natural slight upward tilt; fine facial bone structure. Face shows focus and intensity; minimal cosmetic grooming beyond functional maintenance. Calm resting expression with quick, sharp micro-expressions when engaged.",
+    "skin_tone": "Rich warm brown with golden and subtle reddish undertones, reflecting the dominant Sub-Saharan African ancestry beautifully blended with Southeast Asian and South Asian warmth, tempered by cool Northern European undertones",
+    "complexion": "Clear, even skin with a lived-in quality. Fuller facial structure with high, defined cheekbones; almond-shaped eyes with natural slight upward tilt; broader nose bridge from African heritage; fine but substantial facial bone structure synthesizing multiple ancestral lines. Face shows focus and intensity; minimal cosmetic grooming beyond functional maintenance. Calm resting expression with quick, sharp micro-expressions when engaged.",
     "distinguishing_marks": [
       "Extensive bioluminescent tattoo coverage across collarbone, chest, shoulders, and both forearms — intricate narrative designs in blues, greens, and purples that glow faintly in low light",
       "Geneware-reactive tattoo work across ribs and left flank that shifts saturation based on mood and body temperature",
@@ -278,14 +269,58 @@
     "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves with economic precision — no wasted motion, but with visible restlessness in hands and fingers when focused. Eyes track detail obsessively. Physical affection minimal with strangers, warm but boundaried with clients. Paces while talking when designing; sits perfectly still while working.",
     "clothing_style": "Tier 3 functional aesthetic with personal expression. Typically wears fitted, dark, high-quality basics (charcoal, black, deep navy) that showcase her tattoo work — sleeveless or short-sleeved tops in summer, fitted long sleeves (often custom, possibly her own dyework) in winter. Comfortable, durable pants (carbon-weave, reinforced at joints) in neutral tones. Worn leather apron in the studio, always stained with ink but maintained with care. No corporate logos or status markers; all accessories are handmade or sourced from Tier 5 makers. Wears a thin silver band on her right ring finger — possibly a commitment to her art or a private meaningful symbol."
   },
-  "image_prompt": "Zara Árnason, compact wiry frame, 158cm tall, warm golden-brown skin blending South Asian and Southeast Asian heritage with fine Northern European features. High defined cheekbones, almond-shaped eyes with color-shifting purple-to-gold irises glowing faintly. Deep oxidized copper undercut hair (dyed, naturally black), longer on crown swept to side. Extensive bioluminescent tattoos glowing blue-green-purple across collarbone, chest, shoulders, forearms in intricate narrative patterns. Rose-gold translucent cat ear augmentation on left side with LED matrix. Fitted sleeveless charcoal top showcasing full tattoo portfolio. Carbon-weave reinforced dark pants. Thin silver ring on right ring finger. Sits forward with contained kinetic energy, precise economical movements, hands with haptic pads showing faint scar tissue. Studio environment, soft neon overhead lighting catching tattoo bioluminescence, ink-stained leather apron visible nearby, cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, calm intense focus, detail-oriented craftswoman at work --ar 2:3 --v 6",
+  "image_prompt": "Zara Keomanivong, petite compact frame, 158cm tall, rich warm brown skin with golden undertones, almond-shaped eyes with purple-to-gold color-shifting iris augmentations, high defined cheekbones, broader nose bridge, intense focused expression. Deep oxidized copper hair undercut with shaved sides and longer crown swept to one side. Extensive bioluminescent blue-green-purple tattoos glowing faintly across collarbone, chest, shoulders, forearms with geometric patterns on wrists and hands. Single translucent rose-gold cat ear augmentation on left side with visible LED matrix. Wearing fitted sleeveless black top showcasing tattoo work, carbon-weave dark pants, worn leather apron stained with ink. Precision haptic fingertip augmentations visible on hands. Seated forward in chair with coiled restless posture, hands showing contained kinetic energy. Studio setting with low ambient lighting emphasizing bioluminescent tattoo glow. GLMZ, GLMZ aesthetic, functional tier 3 style, calm but intense demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 48.8,
-    "Southeast Asian": 34.1,
-    "Northern European": 17.1
+    "Sub-Saharan African": 39.5,
+    "Southeast Asian": 22.8,
+    "South Asian": 17.1,
+    "Northern European": 10.3,
+    "Hispanic/Latin American": 10.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 39.5
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 22.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 7.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 2.2,
+        "Baloch": 1.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 9.2,
+        "Norwegian": 1.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 3.4,
+        "Brazilian": 0.8
+      },
+      "Mexican": {
+        "Mexican": 3.7
+      },
+      "Caribbean": {
+        "Cuban": 2.4
+      }
+    }
+  }
 }

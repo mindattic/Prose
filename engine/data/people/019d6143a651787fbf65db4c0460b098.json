@@ -1,7 +1,7 @@
 {
   "id": "019d6143a651787fbf65db4c0460b098",
   "type": "character",
-  "name": "Nyx Árnason-Fredriksen-Tetteh",
+  "name": "Esteban Jaramillo-Ionescu-Ozcoidi",
   "aliases": [
     "The Madre",
     "Red Lantern Lead",
@@ -14,7 +14,7 @@
   "age": 51,
   "status": "active",
   "location": "Western border of GLMZ — operates from a fortified farmstead that serves as Red Lantern's staging area",
-  "description": "Madre Solis has been raiding Iowa for food for twenty-three years. She was one of the first Gleaner Brigade volunteers when the agricultural collapse turned the breadbasket into contested territory — a landscape of mega-scale automated farms defended by corporate security and increasingly hostile Behemoth fauna that emerged from the ecological disruption. She survived because she learned to read the land the way her grandmother read weather: patterns in the soil, in the animal movement, in the electromagnetic signatures that Behemoths leave before they surface.\n\nShe built Red Lantern from other long-term Gleaners — the ones who'd survived enough raids to develop the institutional knowledge that keeps you alive in Behemoth territory. The crew runs two to three deep raids per month, crossing the western jurisdictional boundary into the Iowa wastes to harvest, scavenge, or trade with the scattered farming settlements that still exist between corporate zones. Every raid is a survival operation. The Behemoths are not hypothetical. The corporate security drones are not hypothetical. The food they bring back feeds communities on M88's western edge that would otherwise starve.\n\nMadre is stocky, sun-darkened, with deep lines around eyes that have spent two decades squinting against prairie wind and scanning horizons for Behemoth sign. Her hair is gray-streaked and kept in a practical braid. She moves with the rolling gait of someone who has walked more miles than she has ridden, and her hands are calloused from farm tools as much as from weapons. She is called Madre because she has buried more young Gleaners than she can count and because she feeds the people who can't feed themselves.",
+  "description": "Esteban Jaramillo-Ionescu-Ozcoidi has been raiding Iowa for food for twenty-three years. She was one of the first Gleaner Brigade volunteers when the agricultural collapse turned the breadbasket into contested territory — a landscape of mega-scale automated farms defended by corporate security and increasingly hostile Behemoth fauna that emerged from the ecological disruption. She survived because she learned to read the land the way her grandmother read weather: patterns in the soil, in the animal movement, in the electromagnetic signatures that Behemoths leave before they surface.\n\nShe built Red Lantern from other long-term Gleaners — the ones who'd survived enough raids to develop the institutional knowledge that keeps you alive in Behemoth territory. The crew runs two to three deep raids per month, crossing the western jurisdictional boundary into the Iowa wastes to harvest, scavenge, or trade with the scattered farming settlements that still exist between corporate zones. Every raid is a survival operation. The Behemoths are not hypothetical. The corporate security drones are not hypothetical. The food they bring back feeds communities on M88's western edge that would otherwise starve.\n\nMadre is stocky, sun-darkened, with deep lines around eyes that have spent two decades squinting against prairie wind and scanning horizons for Behemoth sign. Her hair is gray-streaked and kept in a practical braid. She moves with the rolling gait of someone who has walked more miles than she has ridden, and her hands are calloused from farm tools as much as from weapons. She is called Madre because she has buried more young Gleaners than she can count and because she feeds the people who can't feed themselves.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -180,7 +180,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Western border of GLMZ",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -198,43 +198,19 @@
   ],
   "related_entities": [
     "The Iowa Exclusion Zone",
-    "GLMZ",
     "Grandmother",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Iowan Behemoth Agricultural Platform",
     "The Gleaner Brigades",
+    "The Lantern Room",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
     "The Pure Hand",
-    "Weathervane",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
-    "Arcturus Exo-Runner Frame",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Green Bay Community Table",
-    "Kamala Mori-Sefa",
-    "NeuralPath Horizon Standard Neural Mesh",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Patient Zero",
-    "Slagworks Industrial",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA Widow Mk. III",
-    "Tenderloin",
-    "Tessera Adaptive Platform TAP-5 'Chameleon'",
-    "Tessera Autonomous Rifle Platform TARP-3 'Delegate'",
-    "Tessera Corponation",
-    "The Eastline",
-    "The Nearfield",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "GLMZ",
+    "Weathervane"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Predominantly East Asian (36.5%) with significant Sub-Saharan African (22.7%), South Asian (16.7%), and Southeast Asian (11.6%) ancestry, complemented by Hispanic/Latin American (8.4%) and Indigenous American (4.1%) heritage. A truly global genetic mosaic reflected in warm-toned deep brown skin with subtle golden undertones, facial structure showing East Asian cheekbone prominence blended with broader African and South Asian features, and warm brown eyes with East and Southeast Asian epicanthal characteristics.",
+    "heritage": "Complex global ancestry reflecting the Ubiquitous Diaspora: 40.6% Hispanic/Latin American, 21.5% Eastern European, 17.8% Indigenous American, 17.2% Sub-Saharan African, and 2.9% Southeast Asian. This genetic combination produces deep warm brown skin with golden undertones, facial structure showing a harmonious blend of Indigenous American cheekbone prominence with broader Sub-Saharan African features and Eastern European bone structure, softened by Southeast Asian ancestry. The result is a uniquely multicontinental appearance—strong, weathered, and unmistakably marked by decades of exposure.",
     "height_cm": 162,
     "weight_kg": 71,
     "build": "Stocky and dense, muscular without bulk — the physique of someone who carries loads across difficult terrain rather than lifting in a gym. Broad shoulders, thick core, legs that show decades of walking. No excess weight; everything functional.",
@@ -242,8 +218,8 @@
     "hair_style": "Single practical braid running down the center of her back, often wrapped with cord or leather to keep it secure during work",
     "hair_length": "Long (past shoulders when unbraided), but always bound",
     "eye_color": "Warm brown, naturally bright but appearing darker due to sun damage and the permanent squint lines around them",
-    "skin_tone": "Deep warm brown with golden undertones, heavily weathered and sun-darkened from two decades of prairie exposure, reflecting the blended melanin of her global ancestry",
-    "complexion": "Face carved by wind and sun — deep crow's feet radiating from eyes, permanent creases between brows from scanning horizons, weathered lips. Skin texture is rough, not lined so much as etched. Cheekbones prominent with East Asian definition softened by broader Sub-Saharan and South Asian facial structure. No cosmetic grooming; functional only. A thin white scar runs from her right cheekbone to jawline.",
+    "skin_tone": "Deep warm brown with golden undertones, heavily weathered and sun-darkened from two decades of prairie exposure, reflecting the rich melanin blend of Indigenous American, Hispanic/Latin American, Sub-Saharan African, and Eastern European ancestry",
+    "complexion": "Face carved by wind and sun — deep crow's feet radiating from eyes, permanent creases between brows from scanning horizons, weathered lips. Skin texture is rough, not lined so much as etched. Cheekbones show Indigenous American and Eastern European prominence softened by broader Sub-Saharan African facial structure, with subtle Southeast Asian influence in eye shape and orbital structure. No cosmetic grooming; functional only. A thin white scar runs from her right cheekbone to jawline.",
     "distinguishing_marks": [
       "Deep linear scar on right cheekbone to jawline, approximately 8cm, from a Behemoth encounter or shrapnel — pale and old",
       "Callus formations across both palms and all fingers, with old burn scars on the heel of her left hand",
@@ -253,17 +229,61 @@
     "posture_movement": "Moves with a rolling, economical gait — weight distributed low, knees slightly bent in a stance that allows rapid directional shift. Never stands fully upright; always poised for movement. Hands rest naturally at her sides or near her belt. Head moves before eyes when scanning — rotates deliberately, reading angles rather than glancing. She walks with the ground-sense of someone reading vibrations through her feet; occasionally pauses mid-step as if listening to something through her soles.",
     "clothing_style": "Tier 4 functional: heavy-duty canvas and treated leather, designed for durability and repair rather than replacement. Olive-drab cargo pants with reinforced knees and thigh pockets filled with practical gear. Weathered brown leather belt with a worn holster. Boots are expensive tactical-grade, maintained obsessively. Top layer is usually a canvas work jacket in tan or dark gray, sleeves rolled or pushed up. Underneath: simple long-sleeve synthetic shirt designed for temperature regulation and quick-dry properties. No jewelry except a simple silver band on her left ring finger — not decorative, worn from years of labor. A red cloth lantern-shaped pendant hangs from a cord around her neck, hand-sewn, worn soft by handling."
   },
-  "image_prompt": "Nyx Árnason-Fredriksen-Tetteh, 162cm compact muscular woman with deep warm golden-brown skin reflecting East Asian, Sub-Saharan African, South Asian, and Hispanic ancestry, prominent cheekbones blended with broader facial structure, warm brown eyes with permanent squint lines, dark brown hair with silver-gray streaking bound in tight braid down back. Face weathered by decades of prairie wind—deep crow's feet, etched creases, white scar running right cheekbone to jawline. Hands calloused, wearing faded tan canvas work jacket, olive cargo pants, expensive tactical boots, simple silver ring on left hand. Red lantern pendant on cord at neck. Standing in low economical stance, weight forward, head rotated to scan horizon. Cyberpunk 2200s prairie scout, ground-sense posture, visible memorial tattoo on right forearm—red lantern symbol with names spiraled around it. Moody amber lighting, dust particles in air, dystopian weathered aesthetic, solo figure ready for movement. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Esteban Jaramillo-Ionescu-Ozcoidi, a 162cm stocky weathered woman with deep warm brown skin and golden undertones, standing in GLMZ Great Lakes Metropolitan Zone. Dark brown hair with silver streaking braided down her back, bound with cord. Warm brown eyes with deep crow's feet, permanent squint lines from decades of prairie scanning. Strong cheekbones showing Indigenous American and Eastern European prominence softened by broader Sub-Saharan features. Thin white scar running from right cheekbone to jawline. Face etched by wind and sun, weathered lips, rough texture. Wearing olive-drab reinforced cargo pants, weathered brown leather belt, tan canvas work jacket with sleeves rolled, long-sleeve synthetic shirt underneath. Expensive tactical boots. Callused hands, dark Red Lantern tattoo visible on inside of right forearm with spiral of names. Silver band on left ring finger, red cloth lantern pendant on cord around neck. Posture poised and economical, weight distributed low. Neo-noir urban industrial background, moody overhead lighting emphasizing weathered features and subsurface augmentation ridge at nape of neck. Gritty, functional, ground-sense energy. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 36.5,
-    "Sub-Saharan African": 22.7,
-    "South Asian": 16.7,
-    "Southeast Asian": 11.6,
-    "Hispanic/Latin American": 8.4,
-    "Indigenous American": 4.1
+    "Hispanic/Latin American": 40.6,
+    "Eastern European": 21.5,
+    "Indigenous American": 17.8,
+    "Sub-Saharan African": 17.2,
+    "Southeast Asian": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 19.9,
+        "Honduran": 10.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 6.3,
+        "Cuban": 4.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 8.6,
+        "Belarusian": 2.8
+      },
+      "Slavic West": {
+        "Sorbian": 10.1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 17.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 7.6,
+        "Malian": 3.2
+      },
+      "East African": {
+        "Somali": 2.9,
+        "Kenyan": 0.6
+      },
+      "Central African": {
+        "Cameroonian": 2.5,
+        "Angolan": 0.4
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 2.9
+      }
+    }
+  }
 }

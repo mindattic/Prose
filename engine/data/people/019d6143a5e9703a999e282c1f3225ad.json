@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e9703a999e282c1f3225ad",
   "type": "character",
-  "name": "Echo Kjellberg",
+  "name": "Echo Huitzil",
   "aliases": [
     "Static Davi",
     "the Kid"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Highland Park Autonomous Zone, sleeping in a rotating series of squats; works primarily along the Blackpipe Corridor, near Michigan Ave and Walton",
-  "description": "Davi is slight and quick, the kind of person who seems to occupy less space than his dimensions suggest — useful when you're tagging corponation infrastructure at three in the morning. He has his mother's Nigerien cheekbones and his father's Romanian pallor, a combination that gives his face an angular quality that reads differently in different lights. His hair is grown out into a soft cloud he's bleached pale gold; he's got cat ears installed — small, tufted, matte black — that he paid for with three months of odd jobs and wears with the slightly self-conscious pride of someone whose first big purchase was purely for joy. His clothes are perpetually paint-stained in colors that don't match what he's currently working on.",
+  "description": "Echo Huitzil is slight and quick, the kind of person who seems to occupy less space than his dimensions suggest — useful when you're tagging corponation infrastructure at three in the morning. He has his mother's Nigerien cheekbones and his father's Romanian pallor, a combination that gives his face an angular quality that reads differently in different lights. His hair is grown out into a soft cloud he's bleached pale gold; he's got cat ears installed — small, tufted, matte black — that he paid for with three months of odd jobs and wears with the slightly self-conscious pride of someone whose first big purchase was purely for joy. His clothes are perpetually paint-stained in colors that don't match what he's currently working on.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -153,7 +153,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -209,35 +209,17 @@
   "related_entities": [
     "Highland Park Autonomous Zone",
     "Blackpipe Corridor",
+    "GLMZ",
     "Tessera Corponation",
-    "Slagworks Industrial",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Pale Mile",
-    "Gold",
     "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Bintou Halvorsen-Osei",
-    "Dragan Petersen-Bah",
-    "Fanta Kato-Adomako",
-    "Ferrogate Transit",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hydrolytic Dispersion Charge HDC-2 'Saltflat'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lakeview Neon",
-    "Menomonee Gulch",
-    "Narrowcast",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Sulfur Crown Agriculture",
-    "TESSERA PG-2 'Signature'",
-    "The Corridor",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Slagworks Industrial",
+    "The Pale Mile",
+    "Gold"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (42.3%) with significant Northern European (18.8%), East Asian (17.9%), and Eastern European (11.9%) ancestry, creating a complex multi-continental blend. Minor Hispanic/Latin American (6.0%) and Pacific Islander (3.1%) contributions add subtle undertones to overall phenotype.",
+    "heritage": "Complex multi-continental blend dominated by Indigenous American ancestry (44.3%) with substantial South Asian (25.3%) and Sub-Saharan African (14.6%) contributions, creating a striking phenotype. The Indigenous American base provides broad facial structure and bone density, while South Asian heritage adds refined facial contours and warm undertones. Sub-Saharan African ancestry contributes depth and luminosity to skin tone. Eastern European (5.6%), Hispanic/Latin American (5.1%), and East Asian (5.1%) heritage add subtle refinement to cheekbones and eye shape.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and wiry, almost delicate-boned; minimal muscle mass but dense and efficient rather than frail. Moves with the economy of someone who climbs, squeezes through spaces, and runs",
@@ -245,8 +227,8 @@
     "hair_style": "Soft, voluminous cloud; textured and deliberately unkempt, styled for visual impact rather than grooming",
     "hair_length": "Medium (shoulder-length when fully grown out)",
     "eye_color": "Dark brown with amber undertones",
-    "skin_tone": "Warm-toned deep brown with subtle golden undertones — the dominant Sub-Saharan African heritage creates a rich base, tempered by Northern European pallor and East Asian softness, resulting in a luminous, complex complexion that shifts in different lighting",
-    "complexion": "Angular, fine-featured face with high, prominent cheekbones characteristic of East and Sub-Saharan African ancestry. Fine-pored skin bearing the weathering of street life: minor acne scars, small cuts and scratches in various stages of healing, faint chemical burns on knuckles and forearms from spray paint exposure. Dark circles from nocturnal schedule are chronic. Facial structure reflects the multi-heritage blend: broader bone structure from African ancestry balanced by finer features from East Asian heritage",
+    "skin_tone": "Warm-toned deep brown with golden undertones — the dominant Indigenous American heritage creates a rich, earthy base enriched by South Asian warmth and Sub-Saharan African depth, resulting in a luminous complexion that shifts between copper and mahogany in different lighting",
+    "complexion": "Angular, fine-featured face with high, prominent cheekbones reflecting the blend of Indigenous American breadth and South Asian refinement. Bone structure shows balanced proportions from multi-heritage ancestry: broader Indigenous American features softened by finer contours from South Asian and East Asian heritage, creating distinctive mid-facial width. Fine-pored skin bearing the weathering of street life: minor acne scars, small cuts and scratches in various stages of healing, faint chemical burns on knuckles and forearms from spray paint exposure. Dark circles from nocturnal schedule are chronic.",
     "distinguishing_marks": [
       "Small constellation of three spray-paint chemical burns on the back of his right hand, faint and silvery",
       "Thin scar along his left jawline (approximately 2cm), pale against skin, likely from a fall or altercation",
@@ -256,17 +238,66 @@
     "posture_movement": "Moves with deliberate lightness, economical gestures. Frequently hunches shoulders as if ready to slip through narrow spaces. Makes eye contact rarely and only with people he trusts. Has a habit of tilting his head slightly upward when listening, ears repositioning unconsciously. Restless hands — fidgets with paint caps, spray nozzles, markers when stationary",
     "clothing_style": "Tier 4-5 street aesthetic: paint-stained cargo pants in faded black or grey, mismatched layers including at least one oversized hoodie (currently rotating between a faded navy that might once have been corpo merch and a charcoal tech-wear knockoff). Worn canvas sneakers with rubber reinforced at the toes. A long, patched denim jacket covered in embroidered patches, pins, and hand-stitched designs — each one a project or crew marker. Fingerless gloves in cool months (paint-stained). A bandana or balaclava always accessible. Jewelry is minimal: a thin silver chain (possibly stolen, possibly salvaged) and a single brass knuckle ring on his right index finger. Everything smells faintly of solvent and spray paint"
   },
-  "image_prompt": "Echo Kjellberg, 168cm wiry street artist with rich warm brown skin and bleached pale gold voluminous textured hair at shoulder-length. Angular face with high cheekbones, dark brown eyes with amber flecks, bearing faint paint splatters and chemical burn scars from spray work. Wearing paint-stained cargo pants, oversized charcoal hoodie, patched denim jacket covered in crew pins and embroidered markers, worn canvas sneakers. Matte black articulated cat ear augmentations mounted on crown, moving subtly. Brass knuckle ring on right index finger, silver chain necklace. Thin silver scar along left jawline. Standing in moody cyberpunk alley at dusk with neon ambient lighting casting warm and cool shadows across his complex multiethnic features. Economy of movement, shoulders slightly hunched, restless hands. Solvent and spray paint faint in air around him. Cyberpunk 2226, street-tier aesthetic, luminous warm brown complexion glowing under city lights. --ar 2:3 --v 6",
+  "image_prompt": "Echo Huitzil, 168cm wiry street artist in GLMZ, warm deep brown skin with golden copper undertones from Indigenous American, South Asian, and Sub-Saharan African heritage, angular fine-featured face with prominent high cheekbones, dark brown eyes with amber flecks, shoulder-length pale gold textured hair in soft cloud style, matte black articulated cat ears on subdermal posts. Paint-stained faded cargo pants, oversized charcoal hoodie, worn canvas sneakers, long patched denim jacket covered in hand-stitched patches and pins, fingerless paint-stained gloves, thin silver chain, brass knuckle ring. Faint chemical burns on knuckles, silvery scar along left jawline, chronic dark circles, paint splatters on ears and hairline. Posture hunched and light, restless fidgeting hands, economic movements. Urban rooftop setting with neon glow, spray paint cans scattered, street art murals in background, cool synthetic lighting casting warm shadows on skin, solvent and spray paint atmosphere, neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 42.3,
-    "Northern European": 18.8,
-    "East Asian": 17.9,
-    "Eastern European": 11.9,
-    "Hispanic/Latin American": 6.0,
-    "Pacific Islander": 3.1
+    "Indigenous American": 44.3,
+    "South Asian": 25.3,
+    "Sub-Saharan African": 14.6,
+    "Eastern European": 5.6,
+    "Hispanic/Latin American": 5.1,
+    "East Asian": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Mapuche": 14.3
+      },
+      "Plains Nations": {
+        "Muscogee": 30
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 13
+      },
+      "Pakistani": {
+        "Pashtun": 12.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 3.1
+      },
+      "Central African": {
+        "Congolese": 7.7
+      },
+      "East African": {
+        "Somali": 3.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 5.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 2.8,
+        "Venezuelan": 1.7
+      },
+      "Mexican": {
+        "Mexican": 0.6
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 3.1,
+        "Mandarin Northern": 2
+      }
+    }
+  }
 }

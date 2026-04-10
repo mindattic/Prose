@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6db7f69b32d45786c7460e0",
   "type": "character",
-  "name": "Indigo Soriano",
+  "name": "Indigo Nguyen",
   "aliases": [
     "Flint",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 65,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Division",
-  "description": "Soren Lindqvist-Okafor is slight and easy to overlook, which is exactly the point. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a breacher out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Soren Lindqvist-Okafor agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Indigo Nguyen is slight and easy to overlook, which is exactly the point. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a breacher out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Indigo Nguyen agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.88,
@@ -263,7 +263,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -280,47 +280,25 @@
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Shelf",
+    "Indigo",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Alper Lebedev-Tutu",
-    "Ambassador Silk",
-    "Ambrogio Waweru-Djordanović",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obinna Sørensen-Kaleka",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Réginald Asomaning-Čabarkapa",
-    "The Fathom Line",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic blend: 42% Hispanic/Latin American (warm olive undertones), 20% Northern European (cool pallor), 20% South Asian (cheekbone and eye structure), 11% Middle Eastern (aquiline nose features), 6% Sub-Saharan African (textural elements) — resulting in warm-toned olive complexion with subtle layering of diverse ancestral features",
+    "heritage": "Complex multiethnic blend with Southeast Asian as primary ancestry (42.7%), combined with significant South Asian (16.5%), Indigenous American (15.7%), Middle Eastern (15.0%), and Sub-Saharan African (8.7%) heritage. This creates a distinctive phenotype: warm golden-brown skin tone with olive undertones, high and prominent cheekbones from Southeast Asian and South Asian ancestry structure, darker brown eyes, and facial geometry reflecting the layering of multiple ancestral features across the face.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and wiry, muscle definition visible through minimal body fat — built for explosive movement rather than sustained strength. Age-appropriate atrophy offset by obsessive physical training. Moves like someone who has spent decades conditioning their body as a tool.",
     "hair_color": "Steel gray with residual blonde undertones",
     "hair_style": "Cropped short, military-efficient, minimal styling",
     "hair_length": "Short",
-    "eye_color": "Pale blue, unaugmented",
-    "skin_tone": "Warm olive with sun-weathered golden-brown undertones — the blend of Latin American, South Asian, and Middle Eastern ancestry creating a natural warm base, further darkened by years of outdoor exposure. Underlying cool Northern European pallor visible in shadowed areas.",
-    "complexion": "Weathered, lined face with deep creases around eyes and mouth from squinting and grimacing. High, prominent cheekbones reflecting South Asian and Middle Eastern ancestry structure. Aquiline nose with character lines. Sparse salt-and-pepper stubble. Visible chrome scarring bracketing both temples in thin, jagged lines where cortical hardware was extracted. Nasal passage chrome visible as a faint metallic sheen around nostrils and upper septum. Overall grooming is functional — clean but not maintained for appearance.",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Golden-brown complexion with warm olive undertones, deepened by years of sun exposure into a weathered patina. The tone reflects the blending of Southeast Asian warmth with South Asian depth, Middle Eastern golden richness, and Sub-Saharan African undertones — creating a cohesive warm spectrum without cool undertones.",
+    "complexion": "Weathered, lined face with deep creases around eyes and mouth from squinting and grimacing. High, prominent cheekbones with strong definition reflecting Southeast Asian and South Asian ancestry. Aquiline nose with character lines showing both Middle Eastern and Indigenous American influence. Sparse salt-and-pepper stubble. Visible chrome scarring bracketing both temples in thin, jagged lines where cortical hardware was extracted. Nasal passage chrome visible as a faint metallic sheen around nostrils and upper septum. Overall grooming is functional — clean but not maintained for appearance.",
     "distinguishing_marks": [
       "Cortical bomb extraction scar tissue visible as irregular puckering across left temple and extending toward the hairline, approximately 8cm in length",
       "Chemical analyzer installation scarring around nostrils and the bridge of the nose — faint but noticeable under certain lighting, giving the appearance of old burn marks",
@@ -331,16 +309,72 @@
     "posture_movement": "Stands with weight distributed low and centered, ready to move. Movements are economical and precise — no wasted motion. Walks with a slight forward lean, shoulders loose. Eyes are constantly scanning. Sits in corners or positions allowing full room visibility. Rarely touches his face or adjusts his appearance — self-awareness is minimal.",
     "clothing_style": "Tier 4 utilitarian — black synthetic fiber jacket with multiple reinforced pockets, worn combat boots (well-maintained but scuffed), dark gray cargo pants with strategic padding at knees and hips. No visible corporate branding or luxury goods. Clothing is chosen for function: reinforced seams, tear-resistant material, pockets sized for tools and equipment. Wears the same style repeatedly. No jewelry, no status symbols. A single worn silver bracelet of unclear origin on his left wrist — possibly the only non-functional item he owns."
   },
-  "image_prompt": "Indigo Soriano, 168cm lean muscular frame, warm olive-brown skin with sun weathering, high prominent cheekbones, aquiline nose with metallic chrome scarring around septum, pale blue eyes sharp and scanning, steel gray cropped hair with blonde undertones, salt-pepper stubble. Cortical extraction scars jagged across left temple. Dressed in reinforced black synthetic jacket, dark gray tactical cargo pants, worn combat boots. Standing in corner surveillance posture, weight centered and low, shoulders loose. Neon-lit GLMZ alley, cyberpunk 2226, moody shadows with cool blue and warm orange lighting, weathered chrome augmentation details catching ambient light, functional and dangerous presence, no wasted movement. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Nguyen, 168cm lean neo-noir operative in 2226 GLMZ, golden-brown complexion with warm olive undertones and weathered facial structure. High prominent cheekbones, aquiline nose, dark brown unaugmented eyes, deep facial creases. Steel gray cropped hair. Visible chrome scarring at left temple from cortical extraction, metallic sheen around nostrils from chemical analyzer implant. Thin pale scar on left forearm. Sparse salt-and-pepper stubble. Wearing black reinforced synthetic jacket, dark gray cargo pants with knee padding, worn combat boots. Single worn silver bracelet on left wrist. Posture low and centered, economical movement, eyes scanning. Standing in dimly lit neon-soaked corner, utilitarian neo-noir urban aesthetic, moody atmospheric lighting, gritty urban 2226 setting, cinematic noir tone --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 42.3,
-    "Northern European": 20.5,
-    "South Asian": 20.1,
-    "Middle Eastern": 11.1,
-    "Sub-Saharan African": 6.0
+    "Southeast Asian": 42.7,
+    "South Asian": 16.5,
+    "Indigenous American": 15.7,
+    "Middle Eastern": 15,
+    "Sub-Saharan African": 8.7,
+    "Hispanic/Latin American": 1.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 31.4
+      },
+      "Cambodian": {
+        "Khmer": 11.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 4.7
+      },
+      "Nepali": {
+        "Nepali": 9.8
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 14.8
+      },
+      "Mesoamerican": {
+        "Nahua": 0.9
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 9.5
+      },
+      "Arab Gulf": {
+        "Iraqi": 0.2,
+        "Emirati": 2.4
+      },
+      "Persian": {
+        "Tajik Persian": 1.1,
+        "Afghan Dari": 1.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 7.9
+      },
+      "Central African": {
+        "Gabonese": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 1.4
+      }
+    }
+  }
 }

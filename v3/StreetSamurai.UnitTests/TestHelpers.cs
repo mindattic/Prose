@@ -49,3 +49,44 @@ public class TestPathProviderWithRoot : IPathProvider
     public string ExportDir => Path.Combine(root, "exports");
     public string ArchiveDir => Path.Combine(root, "archives");
 }
+
+public static class TestDatabaseFactory
+{
+    public static (StreetSamurai.Core.Services.DatabaseService db, TestPathProviderWithRoot paths, string rootDir) Create()
+    {
+        var rootDir = Path.Combine(Path.GetTempPath(), $"ss_test_{Guid.NewGuid():N}");
+        var engDir = Path.Combine(rootDir, "engine_data");
+        foreach (var dir in new[] { "people", "corponations", "factions", "places",
+            "technology", "weaponry", "equipment", "cyberware", "ammunition",
+            "synthetics", "genemods", "transportation", "quotes", "contracts",
+            "news", "archetypes", "materials", "pharmaceuticals", "consumer_goods",
+            "automata", "apparel", "subsidiaries", "entertainment", "vocabulary",
+            "documents", "facets", "motifs", "tone_bible", "story_bible",
+            "character_profile", "literary_rules", "graph" })
+        {
+            Directory.CreateDirectory(Path.Combine(engDir, dir));
+        }
+        Directory.CreateDirectory(Path.Combine(rootDir, "worldbuilding"));
+        Directory.CreateDirectory(Path.Combine(rootDir, "stories"));
+
+        var paths = new TestPathProviderWithRoot(rootDir);
+        var db = new StreetSamurai.Core.Services.DatabaseService(
+            new StreetSamurai.Core.Services.CharacterRepository(paths),
+            new StreetSamurai.Core.Services.FacetRepository(paths),
+            new StreetSamurai.Core.Services.DistrictRepository(paths),
+            new StreetSamurai.Core.Services.FactionRepository(paths),
+            new StreetSamurai.Core.Services.CorponationRepository(paths),
+            new StreetSamurai.Core.Services.WorldbuildingDocRepository(paths),
+            new StreetSamurai.Core.Services.WeaponryRepository(paths),
+            new StreetSamurai.Core.Services.EquipmentRepository(paths),
+            new StreetSamurai.Core.Services.TechnologyRepository(paths),
+            new StreetSamurai.Core.Services.StoryBibleRepository(paths),
+            new StreetSamurai.Core.Services.LiteraryRulesRepository(paths),
+            new StreetSamurai.Core.Services.MotifRepository(paths),
+            new StreetSamurai.Core.Services.CharacterProfileRepository(paths),
+            new StreetSamurai.Core.Services.ToneBibleRepository(paths)
+        );
+
+        return (db, paths, rootDir);
+    }
+}

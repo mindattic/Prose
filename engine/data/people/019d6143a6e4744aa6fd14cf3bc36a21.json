@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e4744aa6fd14cf3bc36a21",
   "type": "character",
-  "name": "Amara Ekwensi",
+  "name": "Katarzyna Petrović",
   "aliases": [
     "Sandy",
     "Checkpoint Sandy"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Grand Corridor, Axiom Regional Security Post 7, near Milwaukee and North Ave",
-  "description": "Søndra is twenty-two and looks it — wide-eyed in a way she is actively trying to train out of herself, with warm brown skin, a small spray of geneware freckles across her nose and cheeks that pulse faintly orange under stress (she did not know they would do that when she bought the mod and finds it professionally embarrassing), and her dark hair pulled back in the mandatory Axiom security bun. She is 168cm in boots she is still breaking in. Her uniform fits well because she had it tailored with three months of saved UBC supplement — she wanted at least one thing to look like she belonged.\n\nShe is nine months into her first real job and has not yet decided who she wants to be inside it. She follows the rulebook with the anxious precision of someone who has read it twice and is afraid of what happens if she gets something wrong. She is genuinely friendly to the researchers and admin staff who pass her post, has learned most of their names, and does small considerate things like remembering who takes the late elevator and propping the side door for the cleaning crew. She has not yet been asked to do anything she found troubling. She is waiting, in the back of her head, for that to change.",
+  "description": "Katarzyna Petrović is twenty-two and looks it — wide-eyed in a way she is actively trying to train out of herself, with warm brown skin, a small spray of geneware freckles across her nose and cheeks that pulse faintly orange under stress (she did not know they would do that when she bought the mod and finds it professionally embarrassing), and her dark hair pulled back in the mandatory Axiom security bun. She is 168cm in boots she is still breaking in. Her uniform fits well because she had it tailored with three months of saved UBC supplement — she wanted at least one thing to look like she belonged.\n\nShe is nine months into her first real job and has not yet decided who she wants to be inside it. She follows the rulebook with the anxious precision of someone who has read it twice and is afraid of what happens if she gets something wrong. She is genuinely friendly to the researchers and admin staff who pass her post, has learned most of their names, and does small considerate things like remembering who takes the late elevator and propping the side door for the cleaning crew. She has not yet been asked to do anything she found troubling. She is waiting, in the back of her head, for that to change.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -182,7 +182,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -200,28 +200,15 @@
     "Grand Corridor",
     "The Spire",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "GLMZ",
     "SynapTech ReadRoom Social Cue Enhancer",
+    "Compass Rose",
     "Arcturus CK-5 'Bloodhound'",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Ambassador Silk",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sentinel-Guard-88",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Sulfur Crown Agriculture",
-    "The Human Baseline Alliance",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed Sub-Saharan African, South Asian, Eastern European, Pacific Islander, and Northern European ancestry—a striking blend reflected in her warm brown skin with golden undertones, the subtle interplay of features that speak to unexpected global combinations typical of the Ubiquitous Diaspora.",
+    "heritage": "Predominantly Eastern European ancestry (71.9%) with significant Southeast Asian (19.9%) and South Asian (8.2%) genetic heritage—a striking blend creating warm medium-brown skin with golden undertones. Eastern European bone structure balanced with the subtle luminosity characteristic of Southeast and South Asian genetics, creating distinctive high cheekbones and gently defined facial planes.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and athletic with functional muscle definition from recent gym discipline; posture still settling into confidence. Not quite filling out her frame yet — the appearance of someone still growing into adulthood.",
@@ -229,8 +216,8 @@
     "hair_style": "Pulled back in a tight regulation bun, pulled so firmly it creates a slight lift at the crown",
     "hair_length": "Medium (shoulder-length when down)",
     "eye_color": "Warm brown",
-    "skin_tone": "Medium-warm brown with golden undertones, enhanced by the complex genetic blend—deeper warmth from Sub-Saharan ancestry balanced with the subtle luminosity of South Asian heritage and cool undertones from Eastern European genetics.",
-    "complexion": "Clear skin with a distinctive scatter of geneware freckles across the bridge of nose and upper cheeks in warm orange pigmentation that intensifies visibly under stress or elevated cortisol. Freckles are still slightly raised, a tell that the modification is recent (within the past 18 months). Facial structure reflects her mixed ancestry—defined cheekbones with warmth, gentle jawline, minimal expression lines. Grooming fastidious and precise.",
+    "skin_tone": "Medium-warm brown with golden undertones—warm depth from Southeast and South Asian heritage balanced with the cooler, luminous quality of Eastern European genetics creating a nuanced, complex tone.",
+    "complexion": "Clear skin with a distinctive scatter of geneware freckles across the bridge of nose and upper cheeks in warm orange pigmentation that intensifies visibly under stress or elevated cortisol. Freckles are still slightly raised, a tell that the modification is recent (within the past 18 months). Facial structure reflects Eastern European dominance with refined cheekbones and gentle jawline softened by Southeast Asian influence, minimal expression lines. Grooming fastidious and precise.",
     "distinguishing_marks": [
       "Geneware freckles across nose and cheeks in warm orange tone, stress-reactive and faintly luminescent under tension",
       "Small vaccination scar on left deltoid, pale and unremarkable",
@@ -240,16 +227,46 @@
     "posture_movement": "Stands with deliberate military-trained posture — shoulders back, spine straight, weight evenly distributed — but the rigidity suggests conscious effort rather than habit. Moves with careful precision, steps measured. When not performing her role, a slight tendency to slouch creeps back in. Direct eye contact maintained almost obsessively, as if she learned that looking away reads as suspicious.",
     "clothing_style": "Axiom Security Division regulation uniform: charcoal grey tactical bodysuit with reinforced polymer panels at shoulders and forearms, black duty belt with holstered nonlethal deterrent (compliance taser), black steel-toed boots (still visibly new, creasing at the ankles). Uniform tailored professionally — fit is precise across shoulders and torso, indicating she invested personal funds for alterations. Hair kept to regulation length and styling. Accessories limited to: Axiom ID badge (clipped to left chest pocket), wristwatch (cheap digital, civilian-grade), no jewelry."
   },
-  "image_prompt": "Amara Ekwensi, 168cm tall lean athletic security officer in cyberpunk 2226, medium-warm brown skin with golden undertones reflecting mixed Sub-Saharan African, South Asian, and Eastern European heritage, warm brown eyes, dark brown hair in tight regulation bun. Stress-reactive geneware freckles glowing faintly orange across nose and cheeks. Axiom Security Division charcoal grey tactical bodysuit with reinforced polymer shoulder and forearm panels, black duty belt with compliance taser, black steel-toed boots. Comm bead in right ear with subtle LED. Military posture—shoulders back, spine straight, deliberate precision in stance. Direct, almost obsessive eye contact. Fastidious grooming. Youthful features still growing into adulthood. Professional tailored fit uniform. Moody cyberpunk precinct or checkpoint setting, cool neon lighting casting slight shadows, emphasizing the geneware freckles' luminescence under tension. Cinematic, gritty, professional security portrait aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Katarzyna Petrović, 168cm tall lean athletic woman in charcoal grey Axiom Security Division tactical bodysuit with reinforced polymer shoulder and forearm panels, black duty belt with compliance taser holster, black steel-toed boots. Medium-warm brown skin with golden undertones blending Eastern European, Southeast Asian, and South Asian genetics. High cheekbones, refined jawline, clear complexion with distinctive warm orange stress-reactive geneware freckles scattered across bridge of nose and upper cheeks, faintly luminescent. Warm brown eyes. Dark brown hair pulled back in tight regulation bun with slight crown lift. Black polymer comm bead embedded in right ear with subtle LED. Military-trained posture, shoulders back, spine straight, measured deliberate movements, direct intense gaze. Fastidious grooming, precise professional appearance. Axiom ID badge on left chest pocket, cheap digital wristwatch. GLMZ, Great Lakes Metropolitan Zone security division officer, confident but still settling into adulthood, neon-lit facility or urban precinct setting with cool blue-grey ambient lighting highlighting skin tone and stress-reactive freckles --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 32.0,
-    "South Asian": 29.1,
-    "Eastern European": 23.9,
-    "Pacific Islander": 7.7,
-    "Northern European": 7.3
+    "Eastern European": 71.9,
+    "Southeast Asian": 19.9,
+    "South Asian": 8.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 32.7,
+        "Slovenian": 27.7
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 11.5
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 11.4,
+        "Ilocano": 8
+      },
+      "Thai": {
+        "Thai": 0.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.5
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.1
+      },
+      "Indian": {
+        "Tamil": 2.4,
+        "Kannada": 0.2
+      }
+    }
+  }
 }

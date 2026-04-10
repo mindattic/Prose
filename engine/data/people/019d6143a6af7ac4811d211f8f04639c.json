@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6af7ac4811d211f8f04639c",
   "type": "character",
-  "name": "Lyric Huitzil",
+  "name": "Lyric Bhattacharya",
   "aliases": [
     "The Anchor",
     "Rec",
@@ -14,7 +14,7 @@
   "age": 67,
   "status": "active",
   "location": "The Shelf, near Halsted and Chicago Ave",
-  "description": "Rector Hollowell is a large man gone soft at the edges, with the posture of someone who once commanded rooms and has since chosen not to. His skin is the pale ochre of long indoor living, his hands enormous and steady, his white hair kept short and his beard grown out in the way of a man who has stopped performing for an audience that no longer exists. He wears the same rotation of practical clothes—heavy canvas, worn but clean—and carries a battered medical kit that is more capable than it looks because he has modified it himself over eleven years of field use in The Shelf.\n\nRector spent twenty-two years as Director of Bioethical Compliance at Vantara BioSystems, one of The Spire's three major augmentation conglomerates. He was the man who signed off on clinical trial parameters, who sat across from regulators and explained why the variance in adverse outcome data was within acceptable bounds, who used the language of ethics as a procedural instrument. He was not unintelligent about what he was doing. He did it anyway. The specific incident that ended his career is documented in sealed corporate arbitration records: a neural augmentation trial in the lower districts in which forty-three participants experienced cascading cognitive degradation, eighteen of whom died. Rector had flagged the risk internally fourteen months prior. The flag was overruled. He signed the continuation anyway.\n\nHe was not prosecuted. He was quietly exited, his Spire access revoked, his identity scrubbed from Vantara's public materials. He went to The Shelf because he didn't know where else to go, and he stayed because someone needed stitches and he was the only one there with the knowledge. That was eleven years ago. He has since become the closest thing The Shelf has to a neighborhood doctor, working from a converted storage unit he calls the Surgery, accepting payment in food, labor, or nothing. He does not talk about his past. Everyone in The Shelf knows anyway.",
+  "description": "Lyric Bhattacharya is a large man gone soft at the edges, with the posture of someone who once commanded rooms and has since chosen not to. His skin is the pale ochre of long indoor living, his hands enormous and steady, his white hair kept short and his beard grown out in the way of a man who has stopped performing for an audience that no longer exists. He wears the same rotation of practical clothes—heavy canvas, worn but clean—and carries a battered medical kit that is more capable than it looks because he has modified it himself over eleven years of field use in The Shelf.\n\nRector spent twenty-two years as Director of Bioethical Compliance at Vantara BioSystems, one of The Spire's three major augmentation conglomerates. He was the man who signed off on clinical trial parameters, who sat across from regulators and explained why the variance in adverse outcome data was within acceptable bounds, who used the language of ethics as a procedural instrument. He was not unintelligent about what he was doing. He did it anyway. The specific incident that ended his career is documented in sealed corporate arbitration records: a neural augmentation trial in the lower districts in which forty-three participants experienced cascading cognitive degradation, eighteen of whom died. Rector had flagged the risk internally fourteen months prior. The flag was overruled. He signed the continuation anyway.\n\nHe was not prosecuted. He was quietly exited, his Spire access revoked, his identity scrubbed from Vantara's public materials. He went to The Shelf because he didn't know where else to go, and he stayed because someone needed stitches and he was the only one there with the knowledge. That was eleven years ago. He has since become the closest thing The Shelf has to a neighborhood doctor, working from a converted storage unit he calls the Surgery, accepting payment in food, labor, or nothing. He does not talk about his past. Everyone in The Shelf knows anyway.",
   "psychology": {
     "facet_weights": {
       "wound": 0.95,
@@ -229,7 +229,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,31 +248,16 @@
     "The Spire",
     "Threshold",
     "Big Rig",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "The Pure Hand",
-    "Palette",
-    "The Pale Mile",
-    "Déjà Vu",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "GLMZ",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Lacunal",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "The Burden Clause",
-    "The Circuit",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko",
-    "Zurab Ivanov-Appiah"
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Neural Palate",
+    "The Pure Hand",
+    "Déjà Vu",
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed ancestry reflecting the Ubiquitous Diaspora: predominantly Indigenous American (34.7%) with significant Sub-Saharan African heritage (29.6%), substantial South Asian ancestry (17.0%), Middle Eastern lineage (14.5%), and Pacific Islander heritage (4.2%). This combination produces warm undertones beneath weathered skin, with facial structure reflecting the blend of multiple continental features.",
+    "heritage": "Mixed ancestry reflecting the Ubiquitous Diaspora: predominantly South Asian (61.5%) with substantial Central Asian heritage (30.7%), smaller contributions from Sub-Saharan African (4.5%) and East Asian (3.3%) lineages. This combination creates warm, deep undertones with complexity—the rich brown of South Asian genetics enriched by Central Asian warmth, with subtle warmth from African ancestry and slight narrowing of the eye shape from East Asian contribution. Facial structure is distinctly blended: high, prominent cheekbones from Central Asian heritage balanced by fuller lips and broader nasal bridge from South Asian genetics, with slightly wider-set eyes reflecting the East Asian element, creating a face that carries the geography of multiple continents.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large-framed, broad-shouldered, gone soft with age—muscle beneath a layer of settled flesh. Not obese, but carries his seventy years heavily. His bulk is functional rather than maintained; a man built for moving through the world, now moving through it less.",
@@ -280,8 +265,8 @@
     "hair_style": "Closely cropped, utilitarian",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber undertones, slightly rheumy at the corners",
-    "skin_tone": "Warm ochre-bronze with deep undertones, the complexion of someone who has spent two decades under fluorescent light and eleven years under industrial overcast. The baseline carries the rich warmth of blended Indigenous American, Sub-Saharan, and South Asian ancestry, weathered and darkened by time and exposure.",
-    "complexion": "Weathered but clean. Deep lines around the eyes and mouth—not smile lines, but the creases of a man who has spent years calculating consequences. His beard is white, full, and deliberately unkempt, grown without vanity. Facial structure reflects the blend of his ancestry: broader cheekbones with slight angularity, fuller lips, wide-set eyes. His face carries the geography of multiple continents. Hands are enormous, with long fingers and calluses along the palms and inner knuckles from surgical work.",
+    "skin_tone": "Rich warm brown with golden undertones—the baseline blend of South Asian and Central Asian ancestry deepened and weathered by two decades under fluorescent light and eleven years under industrial overcast. The skin carries warmth from all four ancestry components, creating a complex mid-to-deep brown that reads as genuinely lived-in rather than affected.",
+    "complexion": "Weathered but clean. Deep lines around the eyes and mouth—not smile lines, but the creases of a man who has spent years calculating consequences. His beard is white, full, and deliberately unkempt, grown without vanity. Facial structure reflects his ancestry: high, prominent cheekbones with Central Asian angularity balanced by fuller lips and softer jawline from South Asian heritage, wide-set eyes positioned above those distinctive cheekbones with subtle shape from East Asian ancestry. His face carries the geography of multiple continents blended into one. Hands are enormous, with long fingers and calluses along the palms and inner knuckles from surgical work.",
     "distinguishing_marks": [
       "Thin surgical scar running along the inner left forearm, approximately 12 cm, faded to silver—from an early augmentation installation procedure",
       "Faint Vantara corporate tattoo on the inside of his right wrist, a stylized helix in gray ink, forty millimeters tall—nearly invisible unless he extends his hand palm-up",
@@ -292,16 +277,47 @@
     "posture_movement": "Stands with the residual posture of command—shoulders back, weight centered—but has relaxed into it, no longer performing. Moves deliberately, economically, with the practiced precision of someone who has spent a lifetime working with their hands. When listening to someone, he inclines his head slightly and is still. He does not fidget. His movements carry the implicit message that he is not in a hurry, which is either comforting or unsettling depending on who is watching.",
     "clothing_style": "Rotation of heavy canvas work clothes—natural denim, olive field jackets, canvas pants in cream and charcoal. Everything worn but meticulously maintained and clean. No synthetic fabrics; everything is durable natural fiber. Boots are scuffed leather, resoled twice. He wears a canvas apron over his clothes when working, with deep pockets for supplies. No jewelry except a faded rubber surgical band on his left wrist, worn out of habit. His medical kit is battered leather, modified with custom strap placement and internal organization of his own design. Tier 4-5 aesthetic by choice, though his hands and the precision of his kit suggest access to higher-tier resources in the past."
   },
-  "image_prompt": "Seventy-year-old male surgeon, warm ochre-bronze skin tone reflecting Indigenous American, Sub-Saharan African, South Asian, and Middle Eastern ancestry. Deep brown eyes with amber undertones, full white beard, closely cropped white hair. Broad-featured face lined with age and consequence, prominent cheekbones, wide-set eyes. Large frame, 188cm tall, broad shoulders softened by age but still commanding presence. Hands enormous with visible surgical scars and faint iridescence from haptic implants under fingernails. Wearing heavy canvas work clothes—cream canvas pants, olive field jacket, scuffed leather boots. Battered leather medical kit at side. Stands with relaxed command posture, deliberate economical movement. Faded rubber surgical band on left wrist. Cyberpunk 2226, Great Lakes Metropolitan Zone industrial setting, fluorescent and amber overhead lighting casting shadows across weathered features, medical facility background, --ar 2:3 --v 6",
+  "image_prompt": "Lyric Bhattacharya, seventy-year-old man with rich warm brown skin blending South Asian, Central Asian, African, and East Asian heritage, weathered and golden-undertoned. White close-cropped hair, full white beard, deliberately unkempt. Deep-set brown eyes with amber undertones, slightly rheumy. High Central Asian cheekbones balanced with fuller South Asian lips and softer jawline. Enormous hands with surgical scars and age spots, faint iridescent augmentation marks visible under fingernails. Deep facial lines from years of calculation. Large frame, broad-shouldered, muscular beneath settled flesh from seventy years of living. Wearing natural-fiber canvas work clothes—cream and charcoal canvas pants, olive field jacket, scuffed leather boots. Worn medical kit in custom battered leather visible. Faded surgical band on left wrist. Posture of residual command, deliberate economical movement. Standing in industrial near-future megacity setting, fluorescent and overcast lighting, worn medical workspace or field clinic in Great Lakes Metropolitan Zone, 2226. Professional, weathered, precise, calm presence. Cinematic photorealism, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 34.7,
-    "Sub-Saharan African": 29.6,
-    "South Asian": 17.0,
-    "Middle Eastern": 14.5,
-    "Pacific Islander": 4.2
+    "South Asian": 61.5,
+    "Central Asian": 30.7,
+    "Sub-Saharan African": 4.5,
+    "East Asian": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Malayali": 61.5
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 19
+      },
+      "Iranian Central": {
+        "Tajik": 11.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 0.1
+      },
+      "East African": {
+        "Tanzanian": 3.1
+      },
+      "West African": {
+        "Guinean": 1,
+        "Senegalese": 0.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a47ef0997353b6c82c9dba",
   "type": "character",
-  "name": "Reed Castañeda",
+  "name": "Reed Traoré",
   "aliases": [
     "Adisa No-Brand",
     "Disa"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "The Shelf, mobile between the lower walkways of the Blackpipe Corridor residential stack, near Pulaski and Chicago Ave",
-  "description": "Adisa operates from a modified infant carrier worn across her chest — not an infant but a temperature-controlled case packed with labeled vials, blister packs, and small sealed pouches organized with the precision of someone who takes mistakes personally. She is small and quick-moving with deep brown skin and natural hair pulled back under a technical-grade headband that monitors ambient particulate levels — practical, not cosmetic. Her geneware is a set of retractable claws, kept short and clean, which she uses for seal-breaking and sorting and occasionally for emphasis in an argument. Her irises are solid silver — a cheaply done cosmetic mod from a no-brand gene clinic that she's kept because she's used to it now.\n\nShe describes herself as a 'community pharmaceutical consultant' with the deadpan of someone who has said it so often it has lost all irony. She has a genuine background in pharmacology — two years of a Zheng-Dao sponsored certification program before the sponsorship was restructured out of existence — and she takes her work seriously in a way that would surprise people who assume the opposite. She knows drug interactions, contraindications, and proper dosing. She will not sell to someone who is visibly in crisis without first talking to them for ten minutes. She has a waiting list for her nootropic compounds among the Shelf's night-shift factory workers. She has a different list, kept in her head only, for the harder work.",
+  "description": "Reed Traoré operates from a modified infant carrier worn across her chest — not an infant but a temperature-controlled case packed with labeled vials, blister packs, and small sealed pouches organized with the precision of someone who takes mistakes personally. She is small and quick-moving with deep brown skin and natural hair pulled back under a technical-grade headband that monitors ambient particulate levels — practical, not cosmetic. Her geneware is a set of retractable claws, kept short and clean, which she uses for seal-breaking and sorting and occasionally for emphasis in an argument. Her irises are solid silver — a cheaply done cosmetic mod from a no-brand gene clinic that she's kept because she's used to it now.\n\nShe describes herself as a 'community pharmaceutical consultant' with the deadpan of someone who has said it so often it has lost all irony. She has a genuine background in pharmacology — two years of a Zheng-Dao sponsored certification program before the sponsorship was restructured out of existence — and she takes her work seriously in a way that would surprise people who assume the opposite. She knows drug interactions, contraindications, and proper dosing. She will not sell to someone who is visibly in crisis without first talking to them for ten minutes. She has a waiting list for her nootropic compounds among the Shelf's night-shift factory workers. She has a different list, kept in her head only, for the harder work.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -160,7 +160,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,32 +179,19 @@
     "GLMZ",
     "Zheng-dao Bioelectric",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+    "GLMZ",
     "Crucible Industries CR-2 'Trapdoor'",
     "Dielectric Hemorrhage Emitter DHE-4 'Blister'",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Chicago",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Kang Athletics KA-200 'Padwork'",
-    "Kenji Guerrero-Osei-Mensah",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Patient Zero",
-    "ShieldTech CLA-3 'Cascade'",
-    "Slagworks Industrial",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "The Corridor",
-    "The Pure Hand",
-    "Toivo Diallo-Achebe",
-    "Veslemøy Achebe-Tursynov"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (36.1%), Southeast Asian (33.1%), Indigenous American (17.2%), Sub-Saharan African (13.6%) — a striking blend creating warm-toned brown skin with subtle golden undertones. Features reflect the mix: angular cheekbones and nose bridge from Southeast Asian ancestry, full lips and facial structure influenced by Latin American and African heritage, dark eyes naturally complemented by slight epicanthic fold variation.",
+    "heritage": "Sub-Saharan African (37.2%), Hispanic/Latin American (22.5%), Southeast Asian (18.1%), South Asian (13.7%), Middle Eastern (8.5%) — a striking polychromatic blend creating deep warm-toned brown skin with subtle golden and reddish undertones. Features reflect this complex mix: angular cheekbones and slight epicanthic fold variation from Southeast Asian ancestry, full lips and facial structure influenced by Latin American and Sub-Saharan African heritage, high-set eyes naturally complemented by South Asian bone structure, with warmth amplified by Middle Eastern undertones in skin depth.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Lean and compact, dense muscle beneath minimal fat — built for climbing walkways and moving quickly through crowded corridors. Quick, efficient movements without wasted motion.",
@@ -212,8 +199,8 @@
     "hair_style": "Pulled back tight into a practical braid or knot, kept away from her face and hands for work",
     "hair_length": "Medium",
     "eye_color": "Solid silver (cosmetic genemod)",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of blended Southeast Asian, Hispanic, Indigenous, and Sub-Saharan ancestry creating luminous depth",
-    "complexion": "Clear, unblemished skin maintained with methodical care — someone who works with chemicals and respects contamination. Small network of faint laugh lines around her eyes. No makeup. Sharp, angular cheekbones with slight fullness in lower face reflecting diverse heritage. Precise, expressive facial features.",
+    "skin_tone": "Deep warm brown with golden-reddish undertones — the result of dominant Sub-Saharan African ancestry richly layered with Hispanic, Southeast Asian, South Asian, and Middle Eastern heritage creating luminous, multidimensional depth",
+    "complexion": "Clear, unblemished skin maintained with methodical care — someone who works with chemicals and respects contamination. Small network of faint laugh lines around her eyes. No makeup. High, prominent cheekbones with fullness in lower face reflecting diverse heritage with Sub-Saharan African influence creating facial structure softness. Slight Southeast Asian epicanthic variation blending with South Asian nose bridge definition and Latin American fuller lip structure.",
     "distinguishing_marks": [
       "Fine surgical scars along the inside of both wrists where temperature read implants were inserted into fingertips — barely visible unless she extends her hands",
       "A small burn scar on her left forearm from a spill during her Zheng-Dao certification program, roughly the size of a coin",
@@ -223,15 +210,51 @@
     "posture_movement": "Economical and upright — she moves like someone comfortable in vertical spaces. Her hands are always slightly active, repositioning things, checking seals, organizing. When still, she's completely still. Direct eye contact, no unnecessary gestures.",
     "clothing_style": "Tier 3-4 practical. Moisture-wicking layered wear in grays and deep blues. A reinforced canvas work vest with custom-sewn pockets sized for vials (designed herself). Flat, grip-soled boots suitable for metal walkways. A worn but well-maintained technical jacket with sealed pockets. No jewelry except a faded woven bracelet (personal, not corporate). The modified infant carrier is worn across her chest like a bandolier — pale gray canvas, meticulously organized, treated as professional equipment."
   },
-  "image_prompt": "Reed Castañeda, 158cm lean woman of mixed heritage—Southeast Asian, Hispanic/Latin American, Indigenous, and Sub-Saharan African ancestry creating warm golden-brown skin with striking angular features. Natural black hair in tight practical braid, solid silver cosmetic-modded irises. Surgical scars on wrists barely visible, small coin-sized burn scar left forearm. Retractable claws with silver iridescence at nail beds. Technical headband with LED particulate monitor across forehead. Wearing moisture-wicking gray-blue layered work clothes, reinforced canvas vest with custom vial pockets, sealed technical jacket, grip-soled boots. Pale gray canvas infant carrier worn bandolier-style across chest, meticulously organized. Faded woven bracelet. Economical upright posture, completely still when motionless. Cyberpunk 2226 Great Lakes Metropolitan Zone, vertical corridor setting with metal walkways and harsh LED lighting creating contrast on her angular face and warm skin tone. Professional, methodical presence. --ar 2:3 --v 6",
+  "image_prompt": "Reed Traoré, compact 158cm figure with lean muscular build, deep warm brown skin with golden-reddish undertones reflecting Sub-Saharan African, Hispanic, Southeast Asian, South Asian, and Middle Eastern ancestry. High prominent cheekbones, full lips, slight epicanthic fold variation, South Asian nose bridge definition. Natural black hair pulled tight in practical braid. Striking solid silver cosmetic genemod irises. Fine surgical scars on inner wrists, small coin-sized burn scar on left forearm, silver-iridescent retractable claws trimmed short. Technical-grade headband across forehead with LED particulate monitoring indicator. Wearing moisture-wicking layered grays and deep blues, reinforced canvas work vest with custom pockets, sealed technical jacket, grip-soled boots, faded woven bracelet, pale gray canvas infant carrier worn bandolier-style across chest. Economical upright posture, hands slightly active, direct gaze. GLMZ Great Lakes Metropolitan Zone, vertical industrial corridor setting, cool LED and neon ambient lighting, focused and methodical mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 36.1,
-    "Southeast Asian": 33.1,
-    "Indigenous American": 17.2,
-    "Sub-Saharan African": 13.6
+    "Sub-Saharan African": 37.2,
+    "Hispanic/Latin American": 22.5,
+    "Southeast Asian": 18.1,
+    "South Asian": 13.7,
+    "Middle Eastern": 8.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 32.8,
+        "Cameroonian": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 22.5
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Waray": 18.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.9
+      },
+      "Pakistani": {
+        "Sindhi": 1.8
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 5.6,
+        "Kuwaiti": 2.9
+      }
+    }
+  }
 }

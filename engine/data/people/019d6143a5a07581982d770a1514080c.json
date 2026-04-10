@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a07581982d770a1514080c",
   "type": "character",
-  "name": "Tumelo Vaai-Lewandowski-Jaramillo",
+  "name": "Imran Árnason-Haugen-Kittichai",
   "aliases": [
     "Sal",
     "The Correspondent"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Highland Park Autonomous Zone, a building called The Garret, near Michigan Ave and Walton",
-  "description": "Absalom is a large man gone soft in the middle with age, with dark Angolan-coastal brown skin, a magnificent silver beard he keeps carefully trimmed, and the slow, deliberate movements of someone whose joints have opinions about weather. He wears reading glasses constantly — actual optical glass, not augmented, which people under forty find inexplicably eccentric — and almost always has ink on his left hand from the manual press he uses to print the zine. He smells of paper and strong tea and the particular solvents used in his printing process. His hair is cut short on top and he has a habit of rubbing the back of his head when thinking.\n\nAbsalom has been publishing The Correspondent — a physical printed zine, hand-distributed through The Garret and a network of trusted drop points across Highland Park and beyond — for twenty-two years. It covers neighborhood politics, corponation overreach, ELF theology, community obituaries, fiction, and occasionally poetry, all in dense columns on pages he prints himself on a press that is sixty years old and temperamental as a person. He was a corporate communications writer for Ringo for fifteen years before he quit at forty-five and came to Highland Park. He does not discuss those fifteen years unless specifically asked, and even then, only the version of events he has chosen.",
+  "description": "Imran Árnason-Haugen-Kittichai is a large man gone soft in the middle with age, with dark Angolan-coastal brown skin, a magnificent silver beard he keeps carefully trimmed, and the slow, deliberate movements of someone whose joints have opinions about weather. He wears reading glasses constantly — actual optical glass, not augmented, which people under forty find inexplicably eccentric — and almost always has ink on his left hand from the manual press he uses to print the zine. He smells of paper and strong tea and the particular solvents used in his printing process. His hair is cut short on top and he has a habit of rubbing the back of his head when thinking.\n\nImran Árnason-Haugen-Kittichai has been publishing The Correspondent — a physical printed zine, hand-distributed through The Garret and a network of trusted drop points across Highland Park and beyond — for twenty-two years. It covers neighborhood politics, corponation overreach, ELF theology, community obituaries, fiction, and occasionally poetry, all in dense columns on pages he prints himself on a press that is sixty years old and temperamental as a person. He was a corporate communications writer for Ringo for fifteen years before he quit at forty-five and came to Highland Park. He does not discuss those fifteen years unless specifically asked, and even then, only the version of events he has chosen.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -164,7 +164,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,28 +183,13 @@
     "WELLSPRING",
     "Ironvein",
     "Silver",
-    "Gravimetric Collapse Charge GCC-9",
-    "Ringo Corponation",
     "Glass",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Breck Tannen",
-    "Chronicle",
-    "Lowline Press",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "TESSERA PG-2 'Signature'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure",
-    "Zurab Ivanov-Appiah"
+    "Gravimetric Collapse Charge GCC-9",
+    "Ringo Corponation"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (37.7%), with significant Pacific Islander ancestry (32.1%), Eastern European (18.2%), Hispanic/Latin American (7.3%), and East Asian (4.7%) heritage—a genetic diaspora reflecting the Ubiquitous mixing of 2226",
+    "heritage": "Complex diaspora ancestry: South Asian dominant (41.6%) providing warm undertone and facial bone structure, Southeast Asian (31.0%) contributing to cheekbone definition and eye shape, Northern European (22.3%) lightening and softening features, with trace Middle Eastern (5.1%) influence. Seventy years of genetic blending visible in his weathered frame.",
     "height_cm": 188,
     "weight_kg": 92,
     "build": "Large-framed man with softened middle age; broad shoulders and chest still carrying strength, but belly has claimed its share of seventy years. Thick-limbed without being muscular. Moves with the careful deliberation of someone negotiating with his own skeleton.",
@@ -212,8 +197,8 @@
     "hair_style": "Short cropped on top, closely trimmed sides, thinning at crown",
     "hair_length": "Short",
     "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm deep brown with golden undertones—the blend of Sub-Saharan and Pacific Islander ancestry creating a complex, sun-weathered richness across his frame, with age spots freckling shoulders and forearms",
-    "complexion": "Weathered, lined face with deep creases around eyes from sixty-seven years of reading and squinting at small print. Facial bone structure carries the broader cheekbones and nose bridge from Pacific Islander heritage mixed with Sub-Saharan features. Careful grooming—the beard is signature-quality, trimmed sharp with evident ritual. Skin is dry, prone to flaking near temples. Reading glasses worn constantly, perched on nose or hanging from a cord around his neck.",
+    "skin_tone": "Warm golden-brown with olive undertones across his frame—the layered result of South and Southeast Asian warmth tempered by Northern European lightening, creating a complex mid-range brown that catches differently in light. Age spots freckling shoulders and forearms in irregular clusters.",
+    "complexion": "Weathered, deeply lined face with pronounced creases around eyes from sixty-seven years of reading and squinting at small print. Strong facial bone structure carries prominent cheekbones and defined nose bridge from South and Southeast Asian heritage, softened by age and the broader facial planes inherited from Northern European ancestry. Jaw line less angular than purely South Asian, more substantial than purely Northern European. The blend creates warm mid-brown undertones across face and neck, with slightly lighter areas around eyes and mouth from fair Northern European ancestry. Careful grooming—the beard is signature-quality, trimmed sharp with evident ritual, silvered and dense. Skin is dry, prone to flaking near temples. Reading glasses worn constantly, perched on nose or hanging from a cord around his neck.",
     "distinguishing_marks": [
       "Chronic ink stains on left hand (fingers, palm, web between thumb and forefinger) from manual printing press work, darkest in creases",
       "Faint scar tissue on right wrist, circa 3cm long, pale against skin tone—old, deliberate looking",
@@ -224,16 +209,63 @@
     "posture_movement": "Walks slowly, deliberately, with weight favoring left side slightly. Often touches the back of his head (thumb and fingers rubbing scalp) when thinking. Sits with full body commitment—settles into chairs rather than perching. Hands are expressive, particularly when talking about community or writing. Breathing audible in quiet spaces.",
     "clothing_style": "Tier 4 working-class intellectual aesthetic: worn-soft cotton button-ups (cream, grey, faded blue), often with sleeves rolled despite season. Charcoal or black canvas trousers with ink stains. A 30-year-old leather jacket he wears like armor. Comfortable walking shoes, frequently scuffed. No visible branding. Smells of paper, strong black tea, and industrial printing solvents (particularly kerosene-based inks). Everything about him reads 'I own my own press and do not care what you smell.'"
   },
-  "image_prompt": "Tumelo Vaai-Lewandowski-Jaramillo, 188cm tall, sixty-seven-year-old man with deep warm brown skin blending Sub-Saharan African and Pacific Islander heritage, weathered lined face with broad cheekbones, silver-grey short-cropped hair thinning at crown, dark brown unaugmented eyes behind constant reading glasses on cord, ink-stained left hand from decades of manual printing press work, pale scar on right wrist, age spots on shoulders, carefully trimmed beard, wearing faded cream cotton button-up with rolled sleeves and charcoal canvas trousers stained with ink, worn leather jacket, scuffed comfortable shoes, sitting heavily in a chair with deliberate posture, hand touching scalp thoughtfully, cyberpunk 2226 Great Lakes Metropolitan Zone, warm studio lighting highlighting the depth of his skin tone and weathered features, analog aesthetic rejecting augmentation, surrounded by faint smell of paper and industrial printing solvents, documentary realism, --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Imran, 70-year-old man with warm golden-brown skin blending South and Southeast Asian heritage with Northern European lightening, standing in his printing press workshop, 2226. Silver-grey cropped hair, deeply weathered face with prominent cheekbones and defined nose, dark unaugmented eyes, trimmed silver beard. Wearing faded cream cotton button-up with rolled sleeves revealing ink-stained left hand, charcoal canvas trousers, worn 30-year-old leather jacket. Optical glass reading glasses on cord around neck. Industrial workspace around him with paper, vintage letterpress equipment, soft warm tungsten lighting catching the grain of his weathered skin. Analog aesthetic, no cybernetic augmentations. Posture deliberate and settled, hands expressive. Smells of paper and printing solvents evident in atmosphere. GLMZ, working-class intellectual, rejection of corporate tech culture. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 37.7,
-    "Pacific Islander": 32.1,
-    "Eastern European": 18.2,
-    "Hispanic/Latin American": 7.3,
-    "East Asian": 4.7
+    "South Asian": 41.6,
+    "Southeast Asian": 31,
+    "Northern European": 22.3,
+    "Middle Eastern": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 19.4
+      },
+      "Indian": {
+        "Gujarati": 7.1,
+        "Tamil": 3.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 7.2,
+        "Tamil Sri Lankan": 4.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 17.5
+      },
+      "Cambodian": {
+        "Khmer": 13.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 13.3
+      },
+      "Germanic": {
+        "Austrian": 2.2,
+        "German": 0.7
+      },
+      "Scandinavian": {
+        "Norwegian": 3.2,
+        "Danish": 2.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 2.9
+      },
+      "Kurdish": {
+        "Kurdish": 0.6
+      },
+      "Arab Gulf": {
+        "Kuwaiti": 1.3,
+        "Iraqi": 0.3
+      }
+    }
+  }
 }

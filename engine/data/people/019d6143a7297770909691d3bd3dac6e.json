@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7297770909691d3bd3dac6e",
   "type": "character",
-  "name": "Chenoa Malhotra-Ixchel-Karimi",
+  "name": "Mikhail Malhotra-Lewandowski-Rakhimov",
   "aliases": [
     "Yewa",
     "Bright"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Hamtramck Enclave — lives in the workers' residential block adjacent to the transit depot, near Kedzie and Division",
-  "description": "Yewande is short and powerfully built, with deep-black skin, a wide smile she deploys like a weapon, and hair that changes color weekly via geneware pigment — currently a warm copper that catches the depot lights when she's working the night shift. She has cat ears, soft and dark, from a geneware package she got at twenty-two with her first real paycheck because she'd wanted them since she was a child; they swivel and flatten expressively and have become so central to reading her mood that her coworkers watch them more than her face. She works the same maintenance shifts as the people she organizes, which is not a tactic — it is simply who she is.\n\nYewande came to organizing through a specific grievance: the death of her uncle in a preventable depot accident when she was twenty-eight, which Ferrogate Transit successfully attributed to 'operator error' via a claims process so thoroughly stacked against workers that a labor attorney later told her it was the most technically perfect suppression mechanism they'd ever seen. She is warm, ferociously funny, and contains a specific and highly refined fury that she has spent five years learning to direct rather than discharge. She has built a unit of 340 members from a starting group of eleven. She knows their names. All of them.",
+  "description": "Mikhail Malhotra-Lewandowski-Rakhimov is short and powerfully built, with deep-black skin, a wide smile she deploys like a weapon, and hair that changes color weekly via geneware pigment — currently a warm copper that catches the depot lights when she's working the night shift. She has cat ears, soft and dark, from a geneware package she got at twenty-two with her first real paycheck because she'd wanted them since she was a child; they swivel and flatten expressively and have become so central to reading her mood that her coworkers watch them more than her face. She works the same maintenance shifts as the people she organizes, which is not a tactic — it is simply who she is.\n\nMikhail Malhotra-Lewandowski-Rakhimov came to organizing through a specific grievance: the death of her uncle in a preventable depot accident when she was twenty-eight, which Ferrogate Transit successfully attributed to 'operator error' via a claims process so thoroughly stacked against workers that a labor attorney later told her it was the most technically perfect suppression mechanism they'd ever seen. She is warm, ferociously funny, and contains a specific and highly refined fury that she has spent five years learning to direct rather than discharge. She has built a unit of 340 members from a starting group of eleven. She knows their names. All of them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -159,7 +159,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,34 +179,15 @@
   "related_entities": [
     "Ferrogate Transit",
     "Hamtramck Enclave",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Accidental",
     "Copper",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Slagworks Industrial",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Bohuslav Enyinnaya-Čermák",
-    "Cezar Watanabe-Gyasi",
-    "Devraj Solano-Yildirim",
-    "Dragan Asiedu-Kovalchuk",
-    "Dragan Petersen-Bah",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Hearthstone Firearms Homestead-12 'Door Slam'",
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "MERIDIAN",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "The Collective",
-    "The Pure Hand",
-    "Uncle Noodle",
-    "Yannick Tofauti-Szarvásy"
+    "Flux Strömqvist-Villalobos"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American (primarily), with South Asian and Middle Eastern ancestry — a striking blend that shows in warm-bronze undertones beneath dark skin, angular cheekbones with South Asian prominence, and the particular eye shape and facial structure of her Indigenous heritage. Her features carry the geometric precision of her mixed ancestry.",
+    "heritage": "Mikhail carries the genetic signature of the Ubiquitous Diaspora: 37.6% Eastern European, 35.1% South Asian, and 27.3% Central Asian ancestry. This tri-regional blend creates distinctive features—the angular bone structure and fair undertones of Eastern Europe layer with the prominent cheekbones and warm depth of South Asian genetics, while Central Asian heritage contributes facial resilience and a particular geometric strength to her jawline. The result is a face that reads as unmistakably mixed, with warm-bronze skin that glows with golden undertones, eyes that hold both Eastern European directness and South Asian luminosity, and facial proportions that speak to movement across three distinct geographic populations.",
     "height_cm": 158,
     "weight_kg": 68,
     "build": "Powerfully compact — muscular through the shoulders and core from fifteen years of maintenance work, with the dense physical presence of someone who moves through the world with purpose. Not lean; functionally strong.",
@@ -214,8 +195,8 @@
     "hair_style": "Worn natural, shoulder-length, often pulled back with whatever industrial clip or tie is at hand",
     "hair_length": "Medium",
     "eye_color": "Dark brown, alert and direct",
-    "skin_tone": "Deep warm bronze with golden undertones — the result of Indigenous American, South Asian, and Middle Eastern ancestry creating rich, luminous depth",
-    "complexion": "Clear, weathered hands with calluses and old grease stains that don't fully wash out; face is expressive and animated with angular cheekbones and strong jaw structure reflecting her South Asian and Indigenous heritage; lines around eyes from laughing and squinting under depot fluorescents; no makeup, practical grooming",
+    "skin_tone": "Deep warm bronze with golden undertones—the luminous result of Eastern European fairness, South Asian warmth, and Central Asian resilience blending into rich, complex depth that catches light",
+    "complexion": "Clear, weathered hands with calluses and old grease stains that don't fully wash out; face is expressive and animated with prominent South Asian cheekbones balanced by strong Eastern European jaw structure; lines around eyes from laughing and squinting under depot fluorescents; no makeup, practical grooming",
     "distinguishing_marks": [
       "Thin white scar along right temple from a depot collision at age twenty-eight",
       "Faint chemical burn marks on both forearms from transit solvent exposure, pale against warm-bronze skin",
@@ -225,14 +206,45 @@
     "posture_movement": "Economical, grounded stance — weight distributed low, ready to move laterally or lift. Walks with the particular balance of someone who's spent years navigating moving vehicles and uneven depot floors. Ears move before her head does; they telegraph attention and emotion. Her smile is wide and deployed consciously — a tool she's learned to use.",
     "clothing_style": "Tier 3-4 working-class practical. Transit authority maintenance coveralls (navy with TWSU patch roughly stitched over the Ferrogate logo) worn open over a fitted black synthetic shirt. Steel-toed boots, scuffed and maintained. A heavy Cordura jacket with union pins clustered on the left shoulder — accumulated over five years of grievance work. No jewelry except a plain steel band on her right index finger (personal, not augmentation). Off-shift: same boots, dark jeans, union hoodies in rotation. Clothes are functional, worn until they're unwearable, then replaced with identical pieces."
   },
-  "image_prompt": "Chenoa Malhotra-Ixchel-Karimi, a 158cm worker in her mid-forties with warm bronze skin and angular Indigenous American features blended with South Asian cheekbones, dark eyes alert and direct. Copper-toned geneware-modified hair shoulder-length and pulled back. Distinctive feline ears (dark geneware) mounted where human ears sit, swiveling with attention. Small white scar along right temple, faint pale burn marks on both forearms against bronze skin. Wearing navy transit authority maintenance coveralls open over fitted black synthetic shirt, steel-toed scuffed boots, heavy Cordura jacket with union pins on left shoulder. Muscular, compact build from fifteen years maintenance work. Economical stance, weight low and grounded. Setting: Great Lakes Metropolitan Zone depot, 2226, fluorescent-lit industrial environment, cyberpunk aesthetic. Mood: alert, direct, purposeful presence. Lighting: harsh depot fluorescents creating definition on angular features, highlighting warm undertones of bronze skin --ar 2:3 --v 6",
+  "image_prompt": "Mikhail Malhotra-Lewandowski-Rakhimov, 2226 Great Lakes Metropolitan Zone. A 158cm woman with powerfully compact build, deep warm-bronze skin with golden undertones from tri-regional Eastern European, South Asian, and Central Asian ancestry. Sharp prominent cheekbones, strong jawline, dark brown alert eyes. Copper geneware-modified shoulder-length hair pulled back casually. Feline geneware ears mounted where human ears would be, copper-colored and responsive. Visible white scar along right temple, faint chemical burn marks on forearms, small wrench-and-fist tattoo on inner wrist. Wearing navy transit authority maintenance coveralls open over fitted black synthetic shirt, scuffed steel-toed boots, heavy Cordura jacket covered in union pins. Economical grounded posture, the balanced stance of someone who works moving vehicles and depot floors. Weathered hands with calluses. No makeup, practical grooming. Subtle subcutaneous work-reinforced knees. Neo-noir depot setting, fluorescent and neon lighting, industrial background, mood of competent union worker—alert, direct, consciously deployed smile. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 59.4,
-    "South Asian": 24.7,
-    "Middle Eastern": 15.9
+    "Eastern European": 37.6,
+    "South Asian": 35.1,
+    "Central Asian": 27.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 37.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 15.3
+      },
+      "Nepali": {
+        "Nepali": 4
+      },
+      "Pakistani": {
+        "Pashtun": 15.8
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 5,
+        "Tajik": 2
+      },
+      "Mongolic": {
+        "Kalmyk": 7.7,
+        "Mongolian": 1.8
+      },
+      "Turkic": {
+        "Turkmen": 10.8
+      }
+    }
+  }
 }

@@ -117,7 +117,7 @@ function getExistingByCategory() {
 }
 
 // ── World Context (shared across all prompts) ──
-const WORLD_CONTEXT = `Setting: Meridian 88, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Φ). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Φ). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 CRITICAL FLAVOR CONTEXT — Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. There is no "ethnic food" — all food is everyone's food. Tamarind-cardamom is as common as vanilla was in 2024. Gochujang-lime is a standard chip flavor. Ube-coconut is mainstream ice cream. Hibiscus-mango soda outsells cola. The flavor palette is GLOBAL — no single cuisine dominates. Flavor mashups cross every culinary tradition freely: West African + East Asian, South American + Middle Eastern, Nordic + Southeast Asian. "Exotic" has no meaning when everything is heritage.
 
@@ -132,87 +132,87 @@ const CATEGORIES = [
   {
     category: 'soda',
     count: 90,
-    prompt: `Generate {count} sodas/soft drinks for Meridian 88, ranked {rankStart} to {rankEnd} within the soda category (1 = most popular, the Coca-Cola equivalent of M88). Include: tamarind, hibiscus, yuzu, guava, ube, lychee, horchata, baobab, sorrel, passionfruit, mate, bissap flavors and many more global mashups. Some synth-flavored (cheaper, Tier 1-2), some real-extract (expensive, Tier 3-4). Brand names should sound futuristic but natural — real brand energy, not parody. Mix corporate mega-brands (#1-10) with mid-tier players (#11-40) and niche/street brands (#41-80). Prices range from Φ0.50 (cheapest synth) to Φ15 (premium real-extract).`
+    prompt: `Generate {count} sodas/soft drinks for GLMZ, ranked {rankStart} to {rankEnd} within the soda category (1 = most popular, the Coca-Cola equivalent of M88). Include: tamarind, hibiscus, yuzu, guava, ube, lychee, horchata, baobab, sorrel, passionfruit, mate, bissap flavors and many more global mashups. Some synth-flavored (cheaper, Tier 1-2), some real-extract (expensive, Tier 3-4). Brand names should sound futuristic but natural — real brand energy, not parody. Mix corporate mega-brands (#1-10) with mid-tier players (#11-40) and niche/street brands (#41-80). Prices range from Φ0.50 (cheapest synth) to Φ15 (premium real-extract).`
   },
   {
     category: 'candy',
     count: 80,
-    prompt: `Generate {count} candy/sweets for Meridian 88, ranked {rankStart} to {rankEnd}. Include: gummies, hard candy, chocolate analogs (real cocoa is rare/expensive), synth-chews, stim-candy (mild stimulant effect), mood-candy (mild emotional modulation via bioactive compounds). Global flavor mashups: matcha-tahini, ube-coconut, tamarind-chili, cardamom-rose, yuzu-ginger, mango-habanero, black sesame-honey. Mix massive brands with street-level candy makers. Prices from Φ0.25 (single synth candy) to Φ45 (real chocolate bar).`
+    prompt: `Generate {count} candy/sweets for GLMZ, ranked {rankStart} to {rankEnd}. Include: gummies, hard candy, chocolate analogs (real cocoa is rare/expensive), synth-chews, stim-candy (mild stimulant effect), mood-candy (mild emotional modulation via bioactive compounds). Global flavor mashups: matcha-tahini, ube-coconut, tamarind-chili, cardamom-rose, yuzu-ginger, mango-habanero, black sesame-honey. Mix massive brands with street-level candy makers. Prices from Φ0.25 (single synth candy) to Φ45 (real chocolate bar).`
   },
   {
     category: 'snack',
     count: 80,
-    prompt: `Generate {count} snacks/chips for Meridian 88, ranked {rankStart} to {rankEnd}. Include: crisps, puffs, bars, jerky (synth-meat and real), nuts, dried fruit, protein blocks. Flavors: berbere, gochujang, sumac, za'atar, miso, jerk seasoning, chimichurri, furikake, harissa, dukkah, shichimi, adobo, curry leaf, pandan. Street brands vs corporate brands. Some are nutrition-dense protein snacks for workers, others are pure junk. Prices from Φ0.75 to Φ25.`
+    prompt: `Generate {count} snacks/chips for GLMZ, ranked {rankStart} to {rankEnd}. Include: crisps, puffs, bars, jerky (synth-meat and real), nuts, dried fruit, protein blocks. Flavors: berbere, gochujang, sumac, za'atar, miso, jerk seasoning, chimichurri, furikake, harissa, dukkah, shichimi, adobo, curry leaf, pandan. Street brands vs corporate brands. Some are nutrition-dense protein snacks for workers, others are pure junk. Prices from Φ0.75 to Φ25.`
   },
   {
     category: 'meal',
     count: 90,
-    prompt: `Generate {count} prepared meals/fast food products for Meridian 88, ranked {rankStart} to {rankEnd}. These are the instant ramen, frozen dinners, street food cart standards of 2200. Include: synth-protein bowls, nutrient paste tubes (Tier 1 — cheapest), flash-heated meal kits (Tier 2-3), premium real-ingredient meals (Tier 4-5). Flavor profiles span every global tradition: jollof-inspired, pho-style, tikka masala, rendang, mole, tagine, bibimbap, pierogi, empanada. Some are branded street cart standards, some are corporate meal replacement. Prices from Φ1.50 (nutrient paste) to Φ80 (real-ingredient premium).`
+    prompt: `Generate {count} prepared meals/fast food products for GLMZ, ranked {rankStart} to {rankEnd}. These are the instant ramen, frozen dinners, street food cart standards of 2200. Include: synth-protein bowls, nutrient paste tubes (Tier 1 — cheapest), flash-heated meal kits (Tier 2-3), premium real-ingredient meals (Tier 4-5). Flavor profiles span every global tradition: jollof-inspired, pho-style, tikka masala, rendang, mole, tagine, bibimbap, pierogi, empanada. Some are branded street cart standards, some are corporate meal replacement. Prices from Φ1.50 (nutrient paste) to Φ80 (real-ingredient premium).`
   },
   {
     category: 'stimulant',
     count: 55,
-    prompt: `Generate {count} stimulants for Meridian 88, ranked {rankStart} to {rankEnd}. The caffeine landscape of 2200 is varied and potent. Include: coffee analogs (synth and real), stim-tabs, focus gum, energy drinks, nootropic beverages, crash-tabs (come-down aids), concentration drops, endurance patches. Real coffee is luxury (Φ15-40/cup). Synth-caffeine products are everywhere. Some interact with BCI for enhanced focus. Street-level stims are stronger but rougher. Corporate stims are smoother but weaker. Prices from Φ0.50 (basic stim-tab) to Φ45 (real coffee blend).`
+    prompt: `Generate {count} stimulants for GLMZ, ranked {rankStart} to {rankEnd}. The caffeine landscape of 2200 is varied and potent. Include: coffee analogs (synth and real), stim-tabs, focus gum, energy drinks, nootropic beverages, crash-tabs (come-down aids), concentration drops, endurance patches. Real coffee is luxury (Φ15-40/cup). Synth-caffeine products are everywhere. Some interact with BCI for enhanced focus. Street-level stims are stronger but rougher. Corporate stims are smoother but weaker. Prices from Φ0.50 (basic stim-tab) to Φ45 (real coffee blend).`
   },
   {
     category: 'alcohol',
     count: 65,
-    prompt: `Generate {count} alcoholic beverages for Meridian 88, ranked {rankStart} to {rankEnd}. Include: synth-spirits (cheap, precise intoxication curves — you choose your drunk), real-brewed beer (craft, expensive), rice wine variants, palm wine, mead, agave spirits, fermented mare's milk, sake-soju hybrids, cocktail premixes, BCI-interactive drinks (the buzz syncs with your neural interface). Shelf bars serve cheap synth. Spire lounges serve real-aged spirits. Street vendors sell unlicensed homebrew. Prices from Φ2 (synth shot) to Φ200+ (real aged whiskey).`
+    prompt: `Generate {count} alcoholic beverages for GLMZ, ranked {rankStart} to {rankEnd}. Include: synth-spirits (cheap, precise intoxication curves — you choose your drunk), real-brewed beer (craft, expensive), rice wine variants, palm wine, mead, agave spirits, fermented mare's milk, sake-soju hybrids, cocktail premixes, BCI-interactive drinks (the buzz syncs with your neural interface). Shelf bars serve cheap synth. Spire lounges serve real-aged spirits. Street vendors sell unlicensed homebrew. Prices from Φ2 (synth shot) to Φ200+ (real aged whiskey).`
   },
   {
     category: 'hygiene',
     count: 65,
-    prompt: `Generate {count} hygiene/personal care products for Meridian 88, ranked {rankStart} to {rankEnd}. Include: soap, shampoo (for natural AND synthetic hair/fur from geneware), augment polish, chrome cleaner, dermal patch deodorant, geneware-compatible skincare, tail conditioner (for people with geneware tails), bio-luminescent skin moisturizer, anti-rejection dermal cream (for augment sites), neural port sanitizer, scale conditioner (for reptilian geneware). Must account for the full diversity of human modification. Prices from Φ1 to Φ60.`
+    prompt: `Generate {count} hygiene/personal care products for GLMZ, ranked {rankStart} to {rankEnd}. Include: soap, shampoo (for natural AND synthetic hair/fur from geneware), augment polish, chrome cleaner, dermal patch deodorant, geneware-compatible skincare, tail conditioner (for people with geneware tails), bio-luminescent skin moisturizer, anti-rejection dermal cream (for augment sites), neural port sanitizer, scale conditioner (for reptilian geneware). Must account for the full diversity of human modification. Prices from Φ1 to Φ60.`
   },
   {
     category: 'cleaning',
     count: 45,
-    prompt: `Generate {count} cleaning products for Meridian 88, ranked {rankStart} to {rankEnd}. Include: surface cleaners, air recycler filters, water purification tabs (critical for Tier 1-2), mold inhibitors (critical in Old Harbor district), rust prevention for chrome/augments, drone maintenance spray, hab-unit sanitizers, synth-fabric fresheners, grease cutters for street food prep, industrial decontaminants. The Shelf has different cleaning needs than the Spire. Prices from Φ0.75 to Φ35.`
+    prompt: `Generate {count} cleaning products for GLMZ, ranked {rankStart} to {rankEnd}. Include: surface cleaners, air recycler filters, water purification tabs (critical for Tier 1-2), mold inhibitors (critical in Old Harbor district), rust prevention for chrome/augments, drone maintenance spray, hab-unit sanitizers, synth-fabric fresheners, grease cutters for street food prep, industrial decontaminants. The Shelf has different cleaning needs than the Spire. Prices from Φ0.75 to Φ35.`
   },
   {
     category: 'tobacco',
     count: 45,
-    prompt: `Generate {count} tobacco/vapor products for Meridian 88, ranked {rankStart} to {rankEnd}. Real tobacco is rare and expensive. Include: synth-nicotine vaporizers, herbal blends, stim-smoke (stimulant-laced), focus-vapor, calm-vapor, neural-vapor (interacts with BCI for enhanced effect — legally gray), ritual smoke blends, social vapor (designed for sharing at bars). Street blends are unregulated. Corporate vapor is precise-dosed. Prices from Φ1.50 to Φ75.`
+    prompt: `Generate {count} tobacco/vapor products for GLMZ, ranked {rankStart} to {rankEnd}. Real tobacco is rare and expensive. Include: synth-nicotine vaporizers, herbal blends, stim-smoke (stimulant-laced), focus-vapor, calm-vapor, neural-vapor (interacts with BCI for enhanced effect — legally gray), ritual smoke blends, social vapor (designed for sharing at bars). Street blends are unregulated. Corporate vapor is precise-dosed. Prices from Φ1.50 to Φ75.`
   },
   {
     category: 'clothing',
     count: 65,
-    prompt: `Generate {count} clothing brands/products for Meridian 88, ranked {rankStart} to {rankEnd}. Include: street fashion labels, corporate uniforms, aug-compatible clothing (openings/channels for chrome augments), geneware-friendly (tail holes, horn clearance, extra-wide backs for non-functional wings), weatherproof for the Shelf (acid rain resistant), self-repairing fabric, temperature-regulating weave, privacy-fabric (blocks scanning). Mix street style with corporate minimalism with Spire luxury. Prices from Φ5 (basic synth-fabric) to Φ500+ (designer aug-wear).`
+    prompt: `Generate {count} clothing brands/products for GLMZ, ranked {rankStart} to {rankEnd}. Include: street fashion labels, corporate uniforms, aug-compatible clothing (openings/channels for chrome augments), geneware-friendly (tail holes, horn clearance, extra-wide backs for non-functional wings), weatherproof for the Shelf (acid rain resistant), self-repairing fabric, temperature-regulating weave, privacy-fabric (blocks scanning). Mix street style with corporate minimalism with Spire luxury. Prices from Φ5 (basic synth-fabric) to Φ500+ (designer aug-wear).`
   },
   {
     category: 'medicine_otc',
     count: 55,
-    prompt: `Generate {count} OTC medicines for Meridian 88, ranked {rankStart} to {rankEnd}. Include: pain relief, stim-crash recovery, augment rejection suppressors (critical for chrome users), neural headache relief (BCI overuse), sleep aids, anti-nausea for mass driver/transit riders, hangover cures, geneware expression stabilizers (prevents geneware from drifting), anti-inflammatory for augment sites, mood stabilizers (OTC grade), immune boosters for Shelf conditions. Prices from Φ2 to Φ50.`
+    prompt: `Generate {count} OTC medicines for GLMZ, ranked {rankStart} to {rankEnd}. Include: pain relief, stim-crash recovery, augment rejection suppressors (critical for chrome users), neural headache relief (BCI overuse), sleep aids, anti-nausea for mass driver/transit riders, hangover cures, geneware expression stabilizers (prevents geneware from drifting), anti-inflammatory for augment sites, mood stabilizers (OTC grade), immune boosters for Shelf conditions. Prices from Φ2 to Φ50.`
   },
   {
     category: 'pet_food',
     count: 35,
-    prompt: `Generate {count} pet products for Meridian 88, ranked {rankStart} to {rankEnd}. Pets in 2200 include gene-modded animals: bioluminescent fish, miniature big cats, synthetic-fur companions, augmented dogs with basic BCI. Include: bioluminescent fish food (maintains glow), synthetic fur conditioner, augmented-pet firmware update treats (nano-delivery nutrients that update pet aug firmware), gene-stabilizer pet food, exotic pet nutrients, companion animal mood supplements, pet chrome polish. Prices from Φ3 to Φ45.`
+    prompt: `Generate {count} pet products for GLMZ, ranked {rankStart} to {rankEnd}. Pets in 2200 include gene-modded animals: bioluminescent fish, miniature big cats, synthetic-fur companions, augmented dogs with basic BCI. Include: bioluminescent fish food (maintains glow), synthetic fur conditioner, augmented-pet firmware update treats (nano-delivery nutrients that update pet aug firmware), gene-stabilizer pet food, exotic pet nutrients, companion animal mood supplements, pet chrome polish. Prices from Φ3 to Φ45.`
   },
   {
     category: 'electronics',
     count: 65,
-    prompt: `Generate {count} consumer electronics/gadgets for Meridian 88, ranked {rankStart} to {rankEnd}. Include: cheap data pads (the smartphones of 2200), disposable comm devices (burner phones), entertainment chips (slot into BCI for immersive media), holographic toys, privacy screens (blocks visual scanning), signal boosters, BCI accessories (decorative neural port covers, signal enhancers, comfort pads), augment cosmetic covers (snap-on shells that change your chrome's appearance), portable power cells. Prices from Φ2 to Φ300.`
+    prompt: `Generate {count} consumer electronics/gadgets for GLMZ, ranked {rankStart} to {rankEnd}. Include: cheap data pads (the smartphones of 2200), disposable comm devices (burner phones), entertainment chips (slot into BCI for immersive media), holographic toys, privacy screens (blocks visual scanning), signal boosters, BCI accessories (decorative neural port covers, signal enhancers, comfort pads), augment cosmetic covers (snap-on shells that change your chrome's appearance), portable power cells. Prices from Φ2 to Φ300.`
   },
   {
     category: 'cosmetic',
     count: 55,
-    prompt: `Generate {count} cosmetics for Meridian 88, ranked {rankStart} to {rankEnd}. Makeup and cosmetics for EVERY skin tone (which is every skin tone, since humanity is fully interbred). Include: chrome accent paint (decorative paint for augments), bioluminescent nail polish, synthetic-skin compatible foundation, fur dye for geneware users, horn polish and decorative horn paint, scale gloss, dermal pattern applicators (temporary skin patterns), augment-site concealer, neural port jewelry adhesive, eye-mod color enhancers. Prices from Φ3 to Φ80.`
+    prompt: `Generate {count} cosmetics for GLMZ, ranked {rankStart} to {rankEnd}. Makeup and cosmetics for EVERY skin tone (which is every skin tone, since humanity is fully interbred). Include: chrome accent paint (decorative paint for augments), bioluminescent nail polish, synthetic-skin compatible foundation, fur dye for geneware users, horn polish and decorative horn paint, scale gloss, dermal pattern applicators (temporary skin patterns), augment-site concealer, neural port jewelry adhesive, eye-mod color enhancers. Prices from Φ3 to Φ80.`
   },
   {
     category: 'synth_food_base',
     count: 50,
-    prompt: `Generate {count} synth-food base products for Meridian 88, ranked {rankStart} to {rankEnd}. These are the raw synth-protein and nutrient bases that most Tier 1-2 food is made from, plus flavoring packets that transform them. Include: plain nutrient paste blocks, protein slurry concentrates, flavor packets (turn paste into "chicken tikka masala" or "jollof rice" or "pho" or "mole negro"), texture modulators (make paste crunchy, chewy, or silky), nutrient fortifiers, calorie boosters for heavy labor, vitamin infusion drops. This is the foundation of how most people eat. Prices from Φ0.25 to Φ12.`
+    prompt: `Generate {count} synth-food base products for GLMZ, ranked {rankStart} to {rankEnd}. These are the raw synth-protein and nutrient bases that most Tier 1-2 food is made from, plus flavoring packets that transform them. Include: plain nutrient paste blocks, protein slurry concentrates, flavor packets (turn paste into "chicken tikka masala" or "jollof rice" or "pho" or "mole negro"), texture modulators (make paste crunchy, chewy, or silky), nutrient fortifiers, calorie boosters for heavy labor, vitamin infusion drops. This is the foundation of how most people eat. Prices from Φ0.25 to Φ12.`
   },
   {
     category: 'stationery',
     count: 40,
-    prompt: `Generate {count} stationery/analog products for Meridian 88, ranked {rankStart} to {rankEnd}. Paper is rare, expensive, and fetishized by some. Writing by hand is a status symbol on the Shelf — it means you have thoughts worth hiding from your BCI. Include: actual paper (various grades), pens (some with bio-ink that only the writer can read), physical notebooks (a major status symbol), drawing supplies, calligraphy tools, ink (including privacy ink — invisible to cameras), sketchpads, journaling kits. Prices from Φ8 (basic recycled notepad) to Φ200+ (premium bound journal with real paper).`
+    prompt: `Generate {count} stationery/analog products for GLMZ, ranked {rankStart} to {rankEnd}. Paper is rare, expensive, and fetishized by some. Writing by hand is a status symbol on the Shelf — it means you have thoughts worth hiding from your BCI. Include: actual paper (various grades), pens (some with bio-ink that only the writer can read), physical notebooks (a major status symbol), drawing supplies, calligraphy tools, ink (including privacy ink — invisible to cameras), sketchpads, journaling kits. Prices from Φ8 (basic recycled notepad) to Φ200+ (premium bound journal with real paper).`
   },
   {
     category: 'luxury',
     count: 44,
-    prompt: `Generate {count} luxury items for Meridian 88, ranked {rankStart} to {rankEnd}. These are items that were ordinary in 2024 but precious in 2200 because real originals are rare. Include: real chocolate (actual cacao), real coffee beans, real leather goods, real paper books (physical novels, hand-bound), real cotton clothing, real wood furniture pieces, real honey, real vanilla extract, real olive oil, heritage seeds, analog watches, vinyl records. These are status symbols of authenticity in a synthetic world. Prices from Φ50 to Φ2000+.`
+    prompt: `Generate {count} luxury items for GLMZ, ranked {rankStart} to {rankEnd}. These are items that were ordinary in 2024 but precious in 2200 because real originals are rare. Include: real chocolate (actual cacao), real coffee beans, real leather goods, real paper books (physical novels, hand-bound), real cotton clothing, real wood furniture pieces, real honey, real vanilla extract, real olive oil, heritage seeds, analog watches, vinyl records. These are status symbols of authenticity in a synthetic world. Prices from Φ50 to Φ2000+.`
   },
 ];
 
@@ -248,7 +248,7 @@ async function generateCategory(catDef, existingNames) {
       .replace('{rankStart}', rankStart)
       .replace('{rankEnd}', rankEnd);
 
-    const system = `You generate consumer product entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} product objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate consumer product entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} product objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

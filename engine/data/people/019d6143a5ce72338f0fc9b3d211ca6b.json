@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ce72338f0fc9b3d211ca6b",
   "type": "character",
-  "name": "Arc Ozcoidi-Bergqvist",
+  "name": "Arc Fredriksen-Valenzuela",
   "aliases": [
     "Femi Static",
     "The Static King"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Pilsen Veil, back-room residency at a venue called The Underscore, near Pulaski and Chicago Ave",
-  "description": "Femi is a tall man whose body has softened comfortably into middle age, broad through the shoulders and belly, moving through space with the unhurried certainty of someone who has never needed to perform urgency. His face is deeply lined around the eyes and mouth from decades of late nights and genuine laughter, dark brown skin pocked with the small silvery scars of an old electrical accident he considers formative. His hair is cut close except for a strip of white that runs from his left temple to the back of his skull — natural, not dyed, arrived when he was thirty-two and which he refused to touch. He wears functional clothes exclusively: work boots, cargo trousers, a rotating selection of worn linen shirts. His only concession to ornamentation is a pair of custom cochlear amplifiers threaded with copper wire that catch the light when he tilts his head.\n\nFemi does not play music so much as construct environments. His sets move over four to six hours through tidal cycles of sub-bass and silence, incorporating field recordings he makes throughout the city — the Ferrogate Transit harmonic at Deepwell Station, the hydraulic breath of the Kilimanjaro Mass Driver, rain on the lake filtration membranes. Audiences don't dance to Femi's sets so much as dissolve into them. He has turned down three Axiom-sponsored residencies and one Ringo content contract, a fact he mentions rarely but accurately.",
+  "description": "Arc Fredriksen-Valenzuela is a tall man whose body has softened comfortably into middle age, broad through the shoulders and belly, moving through space with the unhurried certainty of someone who has never needed to perform urgency. His face is deeply lined around the eyes and mouth from decades of late nights and genuine laughter, dark brown skin pocked with the small silvery scars of an old electrical accident he considers formative. His hair is cut close except for a strip of white that runs from his left temple to the back of his skull — natural, not dyed, arrived when he was thirty-two and which he refused to touch. He wears functional clothes exclusively: work boots, cargo trousers, a rotating selection of worn linen shirts. His only concession to ornamentation is a pair of custom cochlear amplifiers threaded with copper wire that catch the light when he tilts his head.\n\nArc Fredriksen-Valenzuela does not play music so much as construct environments. His sets move over four to six hours through tidal cycles of sub-bass and silence, incorporating field recordings he makes throughout the city — the Ferrogate Transit harmonic at Deepwell Station, the hydraulic breath of the Kilimanjaro Mass Driver, rain on the lake filtration membranes. Audiences don't dance to Arc Fredriksen-Valenzuela's sets so much as dissolve into them. He has turned down three Axiom-sponsored residencies and one Ringo content contract, a fact he mentions rarely but accurately.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -158,7 +158,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,31 +179,20 @@
     "Zheng-Dao Heavy Industries Mass Driver Turret MDT-6 'Trebuchet'",
     "Pilsen Veil",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Accidental",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Chicago",
     "Copper",
+    "Belly Full",
+    "Cargo Tacos",
     "Gravitic Shear Pistol GSP-7 'Tidal'",
     "Ringo Corponation",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus BH-2 'Marrow'",
-    "Breck Tannen",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Emeka Johansson-Orozco",
-    "Idris Forsberg-Quaye",
-    "Jefferson Switch",
-    "Mika Sorel",
-    "Obafemi Adeyinka-Cruces",
-    "Slagworks Industrial",
-    "SynapTech AromaVeil Olfactory Filter",
-    "The Quiet Room",
-    "Vuk Jorgensen-Toure"
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American (Mesoamerican/North American), Southeast Asian, and East Asian ancestry—a striking blend evident in his bone structure, warm brown skin tone, and the particular set to his eyes. The combination creates a distinctive facial architecture: higher cheekbones characteristic of Indigenous American heritage, slightly angled eyes reflecting Southeast and East Asian ancestry, with the warm undertones and facial proportions typical of Mesoamerican populations.",
+    "heritage": "Mixed ancestry from Hispanic/Latin American (50%), Southeast Asian (30%), Northern European (11%), and Sub-Saharan African (9%) heritage—a striking blend evident in his bone structure, warm medium-to-deep brown skin tone, and distinctive facial architecture. The combination creates high, prominent cheekbones characteristic of Indigenous Mesoamerican heritage, slightly angled eyes reflecting Southeast Asian ancestry, rich warm golden-amber undertones from the Latin American and African components balanced with cooler undertones from Northern European ancestry, with facial proportions that show the integrated blending of all four ancestral regions.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and substantial through the torso, carrying comfortable middle-age weight with no apparent self-consciousness. Soft rather than muscular, the body of someone who moves deliberately rather than quickly.",
@@ -211,8 +200,8 @@
     "hair_style": "Cut close to the scalp with a distinctive natural white streak running from left temple to the back of the skull, maintained but unadorned",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium brown with golden undertones—the particular saturation that emerges from Indigenous American and Southeast Asian ancestry blending, weathered by decades of sun exposure and night work into a rich, lived-in hue",
-    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of late nights and genuine expression. Small silvery electrical burn scars scattered across the face and neck—visible remnants of an accident he views as formative rather than traumatic. Weathered but animated features with the distinctive facial structure of his mixed heritage: prominent cheekbones, warm skin that catches light evenly across the planes of his face.",
+    "skin_tone": "Warm medium-to-deep brown with golden-amber undertones—the result of Hispanic/Latin American, Southeast Asian, Sub-Saharan African, and Northern European ancestry blending together, weathered by decades of sun exposure and night work into a rich, lived-in hue with subtle depth and even tone across facial planes",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of late nights and genuine expression. Small silvery electrical burn scars scattered across the face and neck—visible remnants of an accident he views as formative rather than traumatic. Weathered but animated features with the distinctive facial structure of his mixed heritage: high, prominent cheekbones, warm skin that catches light evenly across the planes of his face, slightly angled eyes reflecting Southeast Asian influence, the bone structure showing the integrated effect of his multiple ancestral regions.",
     "distinguishing_marks": [
       "Network of small silvery scars across left side of face and neck from an electrical accident in his twenties",
       "Fine creases radiating from the corners of his eyes and around his mouth from sustained expression and years of night work"
@@ -221,14 +210,50 @@
     "posture_movement": "Moves with unhurried certainty and substantial presence. No wasted motion. Frequently tilts his head slightly—a habitual gesture that catches light on his amplifier wiring. Comfortable in silence and stillness. When he does move, there is ground-level control and deliberation.",
     "clothing_style": "Exclusively functional, Tier 4 working aesthetic. Worn work boots (scuffed, re-soled multiple times), cargo trousers in neutral tones with deep pockets for recording equipment, a rotating selection of lightweight linen shirts in off-white, gray, or pale blue—the uniform of someone indifferent to fashion but attentive to comfort and durability. No logos, no status markers. Everything is visibly broken in and maintained rather than replaced."
   },
-  "image_prompt": "Arc Ozcoidi-Bergqvist, a 188cm tall middle-aged man with warm golden-brown skin blending Indigenous American and Southeast Asian heritage, stands with unhurried certainty. Dark brown hair with a distinctive natural white stripe from temple to back of skull, deeply lined face weathered from decades of night work, with small silvery electrical burn scars across left face and neck. Dark brown eyes, prominent cheekbones. Custom copper-threaded cochlear amplifiers visible in both ears catch light as he tilts his head. Broad-shouldered, soft-built frame in worn functional clothing: scuffed work boots, neutral cargo trousers, pale blue linen shirt. Subdermal thermal gradients visible under skin in direct light. Ground-level control and deliberate movement. Cyberpunk 2226 Great Lakes Metropolitan setting, moody amber and blue neon lighting, night work environment, the presence of someone who exists comfortably in silence. --ar 2:3 --v 6",
+  "image_prompt": "Arc Fredriksen-Valenzuela, 188cm tall mixed-heritage man with warm deep brown skin blending Hispanic/Latin American, Southeast Asian, Northern European, and Sub-Saharan African ancestry. Close-cropped dark brown hair with striking natural white stripe from left temple to back of skull. Deep-set dark brown eyes, high prominent cheekbones, weathered face lined from decades of night work, small silvery electrical burn scars scattered across left side of face and neck. Copper-threaded custom cochlear amplifiers visible in both ears. Broad-shouldered, substantial build, soft middle-age physique. Wearing scuffed work boots, neutral cargo trousers with deep pockets, pale blue linen shirt. Standing with unhurried certainty, subtle head tilt catching amplifier light. GLMZ Great Lakes Metropolitan Zone, moody neon-filtered night setting with cool blue and warm amber lighting, industrial urban background, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 50.8,
-    "Southeast Asian": 34.7,
-    "East Asian": 14.5
+    "Hispanic/Latin American": 50.1,
+    "Southeast Asian": 29.5,
+    "Northern European": 11.1,
+    "Sub-Saharan African": 9.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 28.1
+      },
+      "Mexican": {
+        "Mexican": 22
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 29.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 6.7,
+        "Swedish": 1.4
+      },
+      "Germanic": {
+        "Dutch": 2.2,
+        "Austrian": 0.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 1.9,
+        "Ghanaian": 2
+      },
+      "East African": {
+        "Tanzanian": 2.8,
+        "Somali": 2.6
+      }
+    }
+  }
 }

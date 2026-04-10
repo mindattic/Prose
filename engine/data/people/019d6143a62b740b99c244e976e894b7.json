@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62b740b99c244e976e894b7",
   "type": "character",
-  "name": "Vega Fassi-Kowalczyk",
+  "name": "Vega Jaramillo-Sabbagh",
   "aliases": [
     "Bonebreaker Ife",
     "BCO Nzinga"
@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "Bridgepoint, GLMZ, near Damen and Armitage",
-  "description": "Ife is the kind of person a room notices before they understand why. They're medium height with a runner's build that belies the considerable strength in their frame, skin a deep blue-black with a faint natural luminescence that comes from a bioluminescent gene sequence that runs in their Congolese maternal line — not a modification, just ancestry, which they find both amusing and a little irritating when people ask. Their hair is natural, enormous, worn in a compressed crown of twist-outs that they maintain with obsessive care. Their eyes are custom: vertical pupils in bright gold, a modification they got at twenty-five after their first successful high-value compliance and haven't regretted.\n\nIfe works for Tessera's Compliance Bureau tracking down debt defaulters, contract violators, and the occasional individual who has genuinely done something Tessera considers criminal — a distinction that gets blurry in ways they've learned not to look at too closely. They are not violent by preference but are extremely capable of it and have strong opinions about doing it correctly. They carry a practiced informality that puts subjects at ease right up until it doesn't need to anymore. Off-hours they are genuinely warm and sociable, a regular at a Bridgepoint bar called the Gradual, where they know the bartender's children's names and argue about transit football with strangers. The split between these two selves is not a wound — they've made their peace with it — but it is wide.",
+  "description": "Vega Jaramillo-Sabbagh is the kind of person a room notices before they understand why. They're medium height with a runner's build that belies the considerable strength in their frame, skin a deep blue-black with a faint natural luminescence that comes from a bioluminescent gene sequence that runs in their Congolese maternal line — not a modification, just ancestry, which they find both amusing and a little irritating when people ask. Their hair is natural, enormous, worn in a compressed crown of twist-outs that they maintain with obsessive care. Their eyes are custom: vertical pupils in bright gold, a modification they got at twenty-five after their first successful high-value compliance and haven't regretted.\n\nVega Jaramillo-Sabbagh works for Tessera's Compliance Bureau tracking down debt defaulters, contract violators, and the occasional individual who has genuinely done something Tessera considers criminal — a distinction that gets blurry in ways they've learned not to look at too closely. They are not violent by preference but are extremely capable of it and have strong opinions about doing it correctly. They carry a practiced informality that puts subjects at ease right up until it doesn't need to anymore. Off-hours they are genuinely warm and sociable, a regular at a Bridgepoint bar called the Gradual, where they know the bartender's children's names and argue about transit football with strangers. The split between these two selves is not a wound — they've made their peace with it — but it is wide.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -186,7 +186,7 @@
     "Grudge Holder": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bridgepoint",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,32 +251,20 @@
   ],
   "related_entities": [
     "Bridgepoint",
-    "GLMZ",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Irkalla",
     "Volkov-Saito Precision VS-10 Match 'Deadlock'",
     "Tessera Corponation",
     "Lazarus LX-2 'Lab Rat'",
+    "Arcturus KS-7 'Nursery'",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Gold",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Castling",
-    "Crucible Industries CR-9 'Foundry'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Quilt",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TESSERA PG-2 'Signature'",
-    "The Nearfield",
-    "Tiare Nishi-Anim",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Yelena Okafor-Chen"
+    "GLMZ",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "North African (predominantly Maghrebi/Levantine) with Eastern European and Northern European admixture — a striking blend resulting in warm-toned deep brown skin with subtle undertones from the multicultural genetic mix",
+    "heritage": "Middle Eastern (32.7%), South Asian (26.1%), Hispanic/Latin American (22.3%), Sub-Saharan African (12.4%), and North African (6.5%) ancestry — a striking polycultural blend creating warm-toned deep brown skin with complex golden and amber undertones reflecting this diverse genetic heritage across equatorial, subtropical, and arid-region ancestries",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and muscular with the functional strength of a distance runner — compact frame with defined shoulders and forearms, no excess mass, built for sustained physical capability rather than explosive power",
@@ -284,8 +272,8 @@
     "hair_style": "Compressed crown of twist-outs, meticulously maintained with visible sectioning and consistent tension",
     "hair_length": "Medium (approximately 15cm length when uncompressed)",
     "eye_color": "Custom vertical-pupil irises in bright gold with enhanced low-light sensitivity",
-    "skin_tone": "Warm deep brown with olive undertones — the result of predominant North African ancestry blended with Eastern European pigmentation, creating a rich, multi-dimensional complexion that shifts subtly between warm and cool tones depending on lighting",
-    "complexion": "Smooth, well-maintained skin with minimal scarring; sharp cheekbones and a defined jawline reflecting North African bone structure; eyebrows kept neat and natural; warm undertones most apparent along the cheekbones and bridge of nose, with slight golden warmth at the temples",
+    "skin_tone": "Warm deep brown with prominent golden and amber undertones — the result of dominant Middle Eastern and South Asian ancestry (58.8%) blended with Latin American (22.3%), Sub-Saharan African (12.4%), and North African (6.5%) heritage, creating a rich, multi-dimensional complexion that shifts subtly between warm bronze and deeper mahogany depending on lighting",
+    "complexion": "Smooth, well-maintained skin with minimal scarring; strong cheekbones and defined jawline reflecting South Asian and Middle Eastern bone structure; eyebrows kept neat and natural; warm golden undertones most apparent along the cheekbones, bridge of nose, and temples; broad nose and fuller lips reflecting the Sub-Saharan African and Latin American components of ancestry; skin carries the warmth and depth of equatorial, subtropical, and Mediterranean ancestry blended together",
     "distinguishing_marks": [
       "Small scar along the left temple, approximately 2cm, consistent with old blunt-force trauma — barely visible due to skin tone",
       "Faint linear scarring on both palms and inner forearms from shock-capable grip enhancement installation sites, now mostly healed but perceptible under direct light"
@@ -294,14 +282,57 @@
     "posture_movement": "Composed and economical in movement; they carry themselves with the relaxed alertness of someone trained in physical compliance work — shoulders slightly back, weight balanced on the balls of their feet even when standing still; their gait is measured and controlled but not rigid; when engaging socially they lean in slightly and their posture softens noticeably",
     "clothing_style": "Tier 3 professional-casual with clear compliance bureau identity: fitted charcoal or black tactical trousers with reinforced seams and cargo pockets; fitted synthetic blend shirts in muted tones (navy, graphite, deep green) that accommodate the subdermal implants without restriction; a worn leather or synthetic-leather jacket in black as their signature piece; boots are practical and broken in, typically combat-style or reinforced work boots; minimal jewelry beyond a singular band on the right index finger (Tessera brass, agency marking); grooming is impeccable despite the utilitarian aesthetic — they take care of their appearance as a form of self-respect"
   },
-  "image_prompt": "Vega Fassi-Kowalczyk, cyberpunk 2226, compliance officer in professional-casual tactical wear. Striking subject with warm deep brown skin featuring subtle olive and golden undertones, sharp cheekbones and defined jawline. Medium-length natural black hair with auburn hints worn in meticulously maintained twist-outs. Most distinctive: custom vertical-pupil gold irises with enhanced luminescence. Lean, muscular 172cm frame with composed, alert posture — weight balanced on the balls of their feet. Wearing fitted charcoal tactical trousers, muted synthetic shirt (navy or graphite), and signature worn black leather jacket. Reinforced combat boots. Minor scarring visible on temples and inner forearms from augmentation installation. Minimal jewelry: single Tessera brass band on right index finger. Cool ambient lighting of GLMZ urban setting, subtle shadows emphasizing cheekbones and eye augmentations. Impeccable grooming despite utilitarian aesthetic. Professional yet relaxed expression, slight forward lean suggesting engagement and attentiveness. Cyberpunk metropolitan background with neon accents, rain-slicked streets, holographic advertisements. --ar 2:3 --v 6",
+  "image_prompt": "Vega Jaramillo-Sabbagh, 172cm lean muscular frame, warm deep mahogany-bronze skin with golden undertones blending Middle Eastern, South Asian, Latin American, Sub-Saharan African, and North African heritage. Strong defined cheekbones and jawline, broad nose, fuller lips, black twist-outs hair medium length with auburn gloss. Most distinctive feature: vertical-pupil bright gold cybernetic eyes with enhanced low-light sensitivity. Faint 2cm scar on left temple, barely visible. Wearing fitted charcoal tactical trousers with reinforced seams, navy synthetic-blend shirt fitted close to body, signature worn black leather jacket. Practical combat-style boots, Tessera brass band on right index finger. Composed posture with relaxed alertness, weight balanced on balls of feet. GLMZ Great Lakes Metropolitan Zone, professional compliance bureau agent, standing in neon-lit urban interior with cool blue-green ambient lighting casting warm highlights across their golden-brown complexion and illuminating the striking gold irises. Moody, composed, controlled demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 62.0,
-    "Eastern European": 28.2,
-    "Northern European": 9.8
+    "Middle Eastern": 32.7,
+    "South Asian": 26.1,
+    "Hispanic/Latin American": 22.3,
+    "Sub-Saharan African": 12.4,
+    "North African": 6.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 15.4,
+        "Afghan Dari": 1.1
+      },
+      "Kurdish": {
+        "Kurdish": 6.1
+      },
+      "Arab Gulf": {
+        "Yemeni": 9.4,
+        "Kuwaiti": 0.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 15.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.3
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 5.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 22.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 12.4
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Algerian": 6.5
+      }
+    }
+  }
 }

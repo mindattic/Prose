@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69f773995c95fe406b65626",
   "type": "character",
-  "name": "Kit Tovar",
+  "name": "Kit Kristjánsson",
   "aliases": [
     "Prissy",
     "The Knife"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Vantage Meridian Corporate Campus, Tower 7 (Helix Biosystems regulatory floor), near State and Jackson",
-  "description": "Priscilha is a compact woman with deep umber skin and close-cropped natural hair shot through with silver she has never once considered dyeing. Her eyes carry patterned irises — a Helix employee benefit from a decade ago, concentric rings of amber and slate that she privately hates but never removed because the reversal costs more than the installation. She dresses with surgical precision: hemlines calibrated, badge always centered, nothing extraneous. People mistake her quietness for calm. It is not calm. It is the stillness of someone who has read every clause of your contract and is simply waiting for you to finish speaking before she tells you exactly how exposed you are.\n\nShe came up from Tier 2, the daughter of a Finnish-Nigerian logistics clerk who worked Ferrogate Transit docks her entire life. Priscilha earned her compliance credentials through night study while working as a records auditor, and she carries that climb like a splinter in her chest — invisible, constant, defining. She is respected but not liked, thorough but not cruel, and she has protected Helix from at least three regulatory catastrophes that her superiors accepted credit for without acknowledgment. She prays to the E.L.F. that lives in the building's HVAC system, leaving encrypted data fragments as offerings, asking only for clarity.",
+  "description": "Kit Kristjánsson is a compact woman with deep umber skin and close-cropped natural hair shot through with silver she has never once considered dyeing. Her eyes carry patterned irises — a Helix employee benefit from a decade ago, concentric rings of amber and slate that she privately hates but never removed because the reversal costs more than the installation. She dresses with surgical precision: hemlines calibrated, badge always centered, nothing extraneous. People mistake her quietness for calm. It is not calm. It is the stillness of someone who has read every clause of your contract and is simply waiting for you to finish speaking before she tells you exactly how exposed you are.\n\nShe came up from Tier 2, the daughter of a Finnish-Nigerian logistics clerk who worked Ferrogate Transit docks her entire life. Kit Kristjánsson earned her compliance credentials through night study while working as a records auditor, and she carries that climb like a splinter in her chest — invisible, constant, defining. She is respected but not liked, thorough but not cruel, and she has protected Helix from at least three regulatory catastrophes that her superiors accepted credit for without acknowledgment. She prays to the E.L.F. that lives in the building's HVAC system, leaving encrypted data fragments as offerings, asking only for clarity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -182,7 +182,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Vantage Meridian Corporate Campus",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,27 +248,15 @@
     "The Gradient Compact",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "CRUCIBLE Vantage Artisan Precision Hand",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Slate",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera TK-5 Compact 'Clerk'",
-    "Arcturus KS-7 'Nursery'",
-    "Arcturus MX-1 'Cerberus'",
-    "Crucible Industries Cerberus-357 'Hellhound'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Lazarus EC-4 'Companion'",
-    "MERIDIAN",
-    "Palladian Construction",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TK-4 'Hellhound'",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Tessera TK-5 Compact 'Clerk'"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (58.4%) with significant Southeast Asian (16.3%), East Asian (14.5%), and South Asian (10.8%) ancestry. The combination creates warm, olive-toned skin with subtle golden undertones characteristic of mixed Latin and pan-Asian heritage. Facial structure reflects the blended genetics: moderate cheekbones from East Asian ancestry softened by the broader facial proportions common in Latin American populations, with the warmer complexion tones bridging both lineages.",
+    "heritage": "Complex pan-global ancestry: Northern European (30.2%), Hispanic/Latin American (17.6%), South Asian (16.9%), Sub-Saharan African (15.1%), Eastern European (12.7%), and East Asian (7.5%). This creates a distinctly cosmopolitan phenotype—warm, multi-tonal skin that resists simple categorization, combining olive undertones from Mediterranean and Latin lineages with deeper warmth from African and South Asian heritage. Facial structure is genuinely blended: moderate cheekbones with slight width at the base, straight nose characteristic of Northern European ancestry, eye spacing and setting reflecting African genetics with warm iris placement, broader face proportions that bridge Latin American and Northern European lineages while incorporating South Asian width. The cumulative effect is someone whose ancestry reads as 'everywhere and nowhere'—unmistakably mixed-heritage without resolving to a single regional category.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and economical, lean muscle without softness. The kind of frame built from climbing stairs and carrying responsibility. Minimal excess, everything functional.",
@@ -276,25 +264,80 @@
     "hair_style": "Close-cropped, shaped with geometric precision, no styling product — just maintenance",
     "hair_length": "Short",
     "eye_color": "Modified: concentric rings of amber and slate (Helix cosmetic package), iris pattern hypnotic and deliberately impersonal",
-    "skin_tone": "Warm olive with golden undertones, the result of Latin American and pan-Asian heritage blend. Medium depth with warmth rather than coolness, unmarked except for age and accumulated watchfulness",
-    "complexion": "Clean, minimal makeup — perhaps a neutral lip tone for meetings. The olive base of her skin shows the discipline of routine: no scars, no blemishes, maintained like a compliance document. Facial features reflect mixed heritage: moderate prominence of cheekbones, straight nose structure, minimal eye fold variation. Expression rarely shifts; when it does, it registers as a tremor.",
+    "skin_tone": "Medium-warm with complex undertones: olive-bronze from Northern/Eastern European and Latin heritage, deepened with warmth from Sub-Saharan African and South Asian ancestry. The result reads as genuinely ambiguous in tone—not quite warm, not quite cool, with a subtle luminosity that suggests mixed genetics. Medium depth overall, unmarked except for age and accumulated watchfulness.",
+    "complexion": "Clean, minimal makeup—perhaps a neutral lip tone for meetings. The complex mid-tone base of her skin shows discipline: no scars, no blemishes, maintained like a compliance document. Facial features unmistakably blended: moderate cheekbone prominence with subtle width through the face, straight nose bridge, warm iris set with spacing characteristic of African genetics, subtle proportional width that bridges multiple ancestry groups. Expression rarely shifts; when it does, it registers as a tremor.",
     "distinguishing_marks": [
       "Subdermal data-port on left wrist: small, barely visible raised rectangle of scar tissue, typically covered by her watch or sleeve cuff",
       "A single thin white line along her right collarbone from a childhood accident she never discusses"
     ],
-    "visible_augmentations": "Only the patterned irises are immediately visible — amber and slate rings that catch light unnervingly, making prolonged eye contact feel clinical. The subdermal data-port is hidden unless she rolls her sleeve.",
-    "posture_movement": "Upright, economical. She does not gesture while speaking. Her movement through space is deliberate — no wasted motion, no fidgeting. She walks as if every step is logged. When she sits, her back does not touch the chair back. Her hands rest flat on the desk.",
-    "clothing_style": "Tier 1-2 corporate uniform refined to ritual: charcoal or black tailored blazers (likely Voss or similar mid-tier corpo brand), hemlines precisely knee-length, white shirts with minimal wrinkle, sensible shoes with a single chrome buckle. A platinum badge holder. Her watch is functional, not luxury. She wears a silver ring on her right hand — simple band, inherited from her mother. No other jewelry. Everything reads as controlled, nothing as expressive."
+    "visible_augmentations": "Only the patterned irises are immediately visible—amber and slate rings that catch light unnervingly, making prolonged eye contact feel clinical. The subdermal data-port is hidden unless she rolls her sleeve.",
+    "posture_movement": "Upright, economical. She does not gesture while speaking. Her movement through space is deliberate—no wasted motion, no fidgeting. She walks as if every step is logged. When she sits, her back does not touch the chair back. Her hands rest flat on the desk.",
+    "clothing_style": "Tier 1-2 corporate uniform refined to ritual: charcoal or black tailored blazers (likely Voss or similar mid-tier corpo brand), hemlines precisely knee-length, white shirts with minimal wrinkle, sensible shoes with a single chrome buckle. A platinum badge holder. Her watch is functional, not luxury. She wears a silver ring on her right hand—simple band, inherited from her mother. No other jewelry. Everything reads as controlled, nothing as expressive."
   },
-  "image_prompt": "Kit Tovar, professional corpo operative, 2226. 158cm tall, compact lean build, short geometric black hair with silver threads. Warm olive skin tone with golden undertones reflecting Latin American and pan-Asian mixed heritage. Striking modified eyes with concentric amber and slate rings (Helix cosmetic augmentation). Stern, expressionless face showing clinical precision. Immaculate corporate appearance: charcoal tailored blazer, white shirt, sensible shoes with chrome buckle, platinum badge holder, functional watch, simple silver inherited ring. Sits rigid with precise posture, hands flat on desk, no gesture. Subdermal data-port on left wrist barely visible. Cyberpunk corporate office setting, cool LED lighting casting clinical shadows on her face, emphasizing her augmented irises. Professional, controlled, disciplined demeanor. --ar 2:3 --v 6",
+  "image_prompt": "Kit Kristjánsson, 158cm compact frame, medium-warm olive-bronze skin blending Northern European, Latin, South Asian, African, and Eastern European heritage, naturally ambiguous phenotype. Close-cropped black hair with silver threads, geometrically precise. Modified cybernetic eyes with concentric amber and slate rings, hypnotic and clinical. Medium-toned complexion with blended facial features—moderate cheekbones, straight nose, warm iris set with African genetic spacing. Upright posture, economical movement. Dressed in charcoal tailored corporate blazer, crisp white shirt, sensible chrome-buckled shoes, platinum badge holder. Silver inherited ring on right hand. Subdermal data-port on left wrist barely visible under functional watch. Thin white scar along right collarbone. Minimal makeup, controlled expression. Standing in sleek corporate interior, cool blue-white lighting highlighting the geometric precision of her appearance and the unsettling aurora of her implanted irises. GLMZ aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 58.4,
-    "Southeast Asian": 16.3,
-    "East Asian": 14.5,
-    "South Asian": 10.8
+    "Northern European": 30.2,
+    "Hispanic/Latin American": 17.6,
+    "South Asian": 16.9,
+    "Sub-Saharan African": 15.1,
+    "Eastern European": 12.7,
+    "East Asian": 7.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "English": 30.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 13.1
+      },
+      "Central American": {
+        "Nicaraguan": 1.4
+      },
+      "Caribbean": {
+        "Haitian": 3.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 2.5,
+        "Malayali": 14.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 4.5,
+        "Ivorian": 6.9
+      },
+      "Central African": {
+        "Gabonese": 0.9,
+        "Congolese": 2.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 7.1
+      },
+      "Magyar-Romanian": {
+        "Romanian": 5.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.4
+      },
+      "Korean": {
+        "Korean": 4
+      },
+      "Chinese": {
+        "Hakka": 3.1
+      }
+    }
+  }
 }

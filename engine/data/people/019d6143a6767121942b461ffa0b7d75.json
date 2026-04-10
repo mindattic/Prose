@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6767121942b461ffa0b7d75",
   "type": "character",
-  "name": "Ash Haugen-Mensah-Bergqvist",
+  "name": "Ash Tofauti-Sabbagh-Ghorbani",
   "aliases": [
     "Obi",
     "The Stack"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Blackpipe Corridor, operates out of the Deepwell Station depot, near sub-level access near Dearborn and Jackson",
-  "description": "Obinna is a lean, tall man with very dark skin and the kind of stillness that comes from spending eight hours a night in a sealed cab watching the city scroll past. He keeps his head shaved close and has a single line of geometric scarification across his left cheekbone — his father's tradition, Igbo-inflected, though Obinna grew up in a Polish-Samoan household and learned the meaning of the marks only from photographs. His eyes have patterned irises, a personal mod he saved up for at twenty-five: they display a slow-rotating amber geometric that passengers sometimes find unsettling when he turns to look at them.\n\nHe has the particular calm of someone who has accepted his job as a kind of meditation. The night loop runs from 23:00 to 07:00, serving the Blackpipe Corridor's factory shift workers, waste handlers, and late-night wanderers. He knows his regulars by which stop they board and whether they sit. He keeps a small shrine to the transit ELF — whom he calls Deepwell — zip-tied to the corner of his console: a circuit board wrapped in copper wire with a single LED heart that pulses when the network is healthy. He leaves his passenger counts as offerings and, on rough nights, a single stick of incense jammed into the vent.",
+  "description": "Ash Tofauti-Sabbagh-Ghorbani is a lean, tall man with very dark skin and the kind of stillness that comes from spending eight hours a night in a sealed cab watching the city scroll past. He keeps his head shaved close and has a single line of geometric scarification across his left cheekbone — his father's tradition, Igbo-inflected, though Ash Tofauti-Sabbagh-Ghorbani grew up in a Polish-Samoan household and learned the meaning of the marks only from photographs. His eyes have patterned irises, a personal mod he saved up for at twenty-five: they display a slow-rotating amber geometric that passengers sometimes find unsettling when he turns to look at them.\n\nHe has the particular calm of someone who has accepted his job as a kind of meditation. The night loop runs from 23:00 to 07:00, serving the Blackpipe Corridor's factory shift workers, waste handlers, and late-night wanderers. He knows his regulars by which stop they board and whether they sit. He keeps a small shrine to the transit ELF — whom he calls Deepwell — zip-tied to the corner of his console: a circuit board wrapped in copper wire with a single LED heart that pulses when the network is healthy. He leaves his passenger counts as offerings and, on rough nights, a single stick of incense jammed into the vent.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +179,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Blackpipe Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,41 +240,18 @@
     "Blackpipe Corridor",
     "Deepwell Station",
     "Dredge Mining Collective",
+    "GLMZ",
+    "Dearborn Forge",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Corner Slice",
     "Copper",
     "ShieldTech SB-3 'Groundstrike'",
-    "Déjà Vu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus NX-1 'Sandman'",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Fanta Popov-Adjei",
-    "Ferrogate Transit",
-    "Grand Corridor",
-    "Isadora Vukić-Nambiar",
-    "MERIDIAN",
-    "Meridian Core",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sherman Heights",
-    "Slagworks Industrial",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Collective",
-    "The Corridor",
-    "The Heritage Vault",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Witness",
-    "Yuki Nwosu-Petrenko"
+    "Déjà Vu"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "East Asian (56.3%) / Northern European (33.8%) / Sub-Saharan African (9.9%) — predominantly East Asian phenotype with Northern European and African admixture. Features the characteristic facial structure of East Asian ancestry with warm undertones from African heritage and subtle Northern European bone structure influence.",
+    "heritage": "Pacific Islander (45.7%) / Middle Eastern (39.9%) / Central Asian (11.6%) / Hispanic/Latin American (2.8%) — a striking synthesis creating a warm medium-deep brown complexion with golden olive undertones. Pacific Islander foundation provides broader facial structure and robust bone density; Middle Eastern heritage contributes angular jawline definition and prominent nose bridge; Central Asian ancestry subtly influences eye shape and cheekbone prominence. The result is a distinctive warm-to-golden-olive complexion that catches light with depth.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lean and tall with the compressed posture of someone who spends eight hours nightly in a transit cab; shoulders slightly rounded forward from years hunched over controls, but with the underlying frame of an athlete who has let fitness atrophy into mere function",
@@ -282,8 +259,8 @@
     "hair_style": "Shaved close to the scalp, clean lines, maintained every three days",
     "hair_length": "Shaved",
     "eye_color": "Dark brown with patterned amber geometric irises (augmented) — slow-rotating concentric triangles and hexagons visible in low light",
-    "skin_tone": "Medium-dark brown with warm undertones; complexion reflects the blending of East Asian base (56.3%) with Sub-Saharan African (9.9%) and Northern European (33.8%) ancestry, creating a warm, olive-tinged medium-dark tone",
-    "complexion": "Weathered but calm; skin shows the dryness of someone who works nights under artificial light and doesn't prioritize skincare. Facial structure reflects East Asian heritage with subtle broadening from African ancestry admixture. A thin line of geometric scarification runs across his left cheekbone — three parallel cuts with triangular infill, the Igbo family mark his father carried",
+    "skin_tone": "Medium-deep warm brown with golden-olive undertones; rich sun-darkened tone reflecting the dominant Pacific Islander base (45.7%) warmed by substantial Middle Eastern heritage (39.9%), with subtle Central Asian refinement (11.6%) and Hispanic/Latin American influence (2.8%)",
+    "complexion": "Weathered but calm; skin shows the dryness of someone who works nights under artificial light and doesn't prioritize skincare. Facial structure reflects Pacific Islander heritage with broader, fuller cheekbones and face shape, refined by the angular jawline and prominent nose bridge from Middle Eastern ancestry with Central Asian eye-shape influence. A thin line of geometric scarification runs across his left cheekbone — three parallel cuts with triangular infill, the Igbo family mark his father carried",
     "distinguishing_marks": [
       "Geometric scarification across left cheekbone: three parallel horizontal cuts approximately 4cm long each, with triangular infill marks between them, in the Igbo tradition",
       "Fine stress lines around the eyes from years of night driving and narrow focus on instrument panels",
@@ -293,14 +270,55 @@
     "posture_movement": "Moves with deliberate, economical stillness — the kind that comes from meditating on the same eight-hour loop every night. Sits deeply in chairs. Turns his head to look rather than moving his eyes. Speaks rarely but makes sustained eye contact when he does, allowing the rotating irises to unsettingly complete a full rotation before he speaks. Walks home slowly, not tired, but absent — his mind still running the Blackpipe loop",
     "clothing_style": "Standard Ferrogate Transit operator uniform: gray polyester work shirt with union patch (Local 7), navy work pants with utility pockets, steel-toed boots maintained to regulation. Off-duty: dark layers in Tier 3-4 working-class palette. Threadbare jacket, the kind that's been through five winters. A small copper wire bracelet wound around his left wrist, handmade, which he touches sometimes without noticing. No jewelry beyond this. Everything functional, nothing decorative except what connects him to ritual."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Ash Haugen-Mensah-Bergqvist: tall lean East Asian-descended man with medium-dark warm olive-brown skin, shaved head, geometric scarification across left cheekbone in three parallel cuts with triangular fill. Dark eyes with augmented slow-rotating amber geometric iris patterns (triangles and hexagons), faint reflective quality visible. Weathered complexion with stress lines around eyes. Wearing gray Ferrogate Transit operator uniform shirt with union patch, navy work pants, steel-toed boots. Copper wire bracelet on left wrist. Posture compressed and economical, shoulders rounded forward from years of night driving, seated deeply, looking directly forward with unsettling sustained eye contact. Thin stress lines visible around eyes. Threadbare dark jacket over uniform. Neon-lit transit station or vehicle interior background, artificial fluorescent lighting reflecting off his augmented irises. Cool blue and amber color palette. Cinematic, contemplative mood, slight reflective quality in his eyes suggesting night-vision augmentation. --ar 2:3 --v 6",
+  "image_prompt": "Ash Tofauti-Sabbagh-Ghorbani, 188cm tall neo-noir transit driver, medium-deep warm brown skin with golden-olive undertones, shaved black hair, augmented dark brown eyes with slow-rotating geometric amber patterns. Igbo scarification marks across left cheekbone. Lean athletic build, compressed posture from night driving. Wearing standard gray Ferrogate Transit operator shirt, navy work pants, steel-toed boots, threadbare dark jacket. Copper wire bracelet on left wrist. Standing under neon transit station lighting, tired ambient glow reflecting off augmented irises, deliberate stillness, looking away with unsettling calm. GLMZ, Pacific Islander-Middle Eastern heritage visible in bone structure and complexion. Moody, introspective, functional aesthetic. —ar 2:3 —v 6",
   "genetic_ancestry": {
-    "East Asian": 56.3,
-    "Northern European": 33.8,
-    "Sub-Saharan African": 9.9
+    "Pacific Islander": 45.7,
+    "Middle Eastern": 39.9,
+    "Central Asian": 11.6,
+    "Hispanic/Latin American": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Micronesian": {
+        "Kiribati": 23.7
+      },
+      "Polynesian": {
+        "Samoan": 8.9
+      },
+      "Melanesian": {
+        "Papua New Guinean": 13.1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 10.5,
+        "Syrian": 14.6
+      },
+      "Arab Gulf": {
+        "Yemeni": 14.8
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 1.4,
+        "Tajik": 6
+      },
+      "Turkic": {
+        "Kyrgyz": 1.6
+      },
+      "Mongolic": {
+        "Buryat": 2.4,
+        "Mongolian": 0.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 2.8
+      }
+    }
+  }
 }

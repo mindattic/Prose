@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ab72138133a24ea8ff1cd1",
   "type": "character",
-  "name": "Azamat Karimov",
+  "name": "Kiran Kariuki",
   "aliases": [
     "Ragni",
     "Saltwind"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Grand Crossing Gate, temporary migrant processing zone, third holding section, near North Ave and Damen",
-  "description": "Ragnheiður is tall and angular, with pale skin that has burned and recovered enough times to have a permanent rosy-raw quality at her cheekbones and nose. Her hair is a natural deep auburn, grown out in a manner suggesting she has not had access to a proper cutting implement in months, pulled back in a knot held by what appears to be a sharpened stylus. Her eyes are grey-green and extremely direct — she has the look of someone who stopped performing social softness some time ago because it cost too much energy. She carries everything she owns in a single large waterproof pack with a broken clasp, fixed shut with cable ties. On her left wrist is a tattoo of a coastline — the actual coastline of the settlement she grew up in, measured and mapped by her own hand before the water took it — and she will show it to anyone who asks, with the precision of a cartographer or a mourner.\n\nShe is not the kind of refugee who presents with visible despair, which sometimes means aid workers overlook her in favor of more legible suffering. What she has instead is a particular flat-affect efficiency: she needs a specific set of things, she is working to acquire them through the specific channels available to her, and she would prefer not to waste either her time or anyone else's on anything peripheral to that. She was a coastal agricultural cooperative manager before her settlement was inundated — a competent, practical person with professional expertise that is almost entirely inapplicable to an urban megacity. She is learning this in real time and finds it enraging.",
+  "description": "Kiran Kariuki is tall and angular, with pale skin that has burned and recovered enough times to have a permanent rosy-raw quality at her cheekbones and nose. Her hair is a natural deep auburn, grown out in a manner suggesting she has not had access to a proper cutting implement in months, pulled back in a knot held by what appears to be a sharpened stylus. Her eyes are grey-green and extremely direct — she has the look of someone who stopped performing social softness some time ago because it cost too much energy. She carries everything she owns in a single large waterproof pack with a broken clasp, fixed shut with cable ties. On her left wrist is a tattoo of a coastline — the actual coastline of the settlement she grew up in, measured and mapped by her own hand before the water took it — and she will show it to anyone who asks, with the precision of a cartographer or a mourner.\n\nShe is not the kind of refugee who presents with visible despair, which sometimes means aid workers overlook her in favor of more legible suffering. What she has instead is a particular flat-affect efficiency: she needs a specific set of things, she is working to acquire them through the specific channels available to her, and she would prefer not to waste either her time or anyone else's on anything peripheral to that. She was a coastal agricultural cooperative manager before her settlement was inundated — a competent, practical person with professional expertise that is almost entirely inapplicable to an urban megacity. She is learning this in real time and finds it enraging.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -161,7 +161,7 @@
     "Cockroach": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Crossing Gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,24 +179,16 @@
     "Hearthstone Firearms Homestead-12 'Door Slam'",
     "Zheng-dao Bioelectric",
     "The Waukegan Industrial Shelf",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Tessera TX-13 'Mourner'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Origin",
+    "Compass Rose",
     "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
-    "Ambrosia Fekete-Waiyaki",
-    "Aphelion",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Grand Corridor",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "TESSERA ES-4 'Perimeter'",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Central Asian, South Asian, and Sub-Saharan African primary ancestry with Eastern European and Hispanic admixture. The combination produces warm medium-brown skin with subtle golden undertones, a facial structure that bridges Central Asian and South Asian features with broader cheekbones and a defined jawline, and eyes that carry both depth and intensity from the diverse genetic blend.",
+    "heritage": "South Asian (38%), Sub-Saharan African (28.9%), and Pacific Islander (15.8%) ancestry form the core of Kiran's genetic profile, with Northern European (13.2%) and Southeast Asian (4.1%) contributions creating subtle complexity. This ancestry blend produces warm medium-brown skin with golden undertones, a facial structure combining South Asian bone structure with broader African features—prominent cheekbones, defined jawline, and a fuller lower face—tempered by the softer features of Pacific Islander heritage. The genetic depth creates warm, soulful dark brown eyes.",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Tall and angular with minimal body fat, suggesting sustained physical labor and inadequate nutrition over months. Shoulders and forearms show lean muscle definition from repetitive work.",
@@ -204,8 +196,8 @@
     "hair_style": "Roughly knotted at the nape, unstyled, held with a sharpened stylus serving as makeshift pin",
     "hair_length": "Long",
     "eye_color": "Dark brown with warm amber inner rim",
-    "skin_tone": "Warm medium brown with golden undertones, weathered and uneven from months of sun and salt exposure",
-    "complexion": "Permanent sun-darkened quality at cheekbones and nose bridge from repeated exposure and healing. No makeup. Skin shows dryness and minor sun damage characteristic of extended outdoor labor. Face structured with prominent cheekbones reflecting Central and South Asian heritage, direct features, minimal expression lines but deep-set eyes that suggest exhaustion beneath steady gaze.",
+    "skin_tone": "Warm medium-brown with golden undertones, weathered and uneven from months of sun and salt exposure. Rich melanin concentration reflecting South Asian and Sub-Saharan African heritage, deepened further at cheekbones, nose bridge, and temple by sun-darkening and healing patterns.",
+    "complexion": "Face structured with prominent cheekbones and defined jawline characteristic of Sub-Saharan African and South Asian heritage blend, softened by Pacific Islander influence. Skin shows darker pigmentation concentration at cheekbones, nose bridge, and temples from repeated sun exposure and healing. No makeup. Skin shows dryness and minor sun damage characteristic of extended outdoor labor. Deep-set eyes suggest exhaustion beneath steady gaze, with minimal expression lines despite weathering.",
     "distinguishing_marks": [
       "Tattoo on left wrist: precise cartographic line rendering an actual coastal settlement perimeter, executed with technical accuracy in dark ink, approximately 8cm long"
     ],
@@ -213,17 +205,59 @@
     "posture_movement": "Stands with vertical spine and minimal wasted movement. Walks with purpose and economic efficiency—no idle gesturing. Her gaze is unflinching and direct, scanning environments for practical information rather than threat. She holds herself with the bearing of someone rationing emotional energy.",
     "clothing_style": "Tier 5 migrant-grade practicality. Worn synthetic work pants with multiple pockets, reinforced at knees and thighs. Faded long-sleeve thermal shirt under a water-resistant outer jacket missing one functional zipper. Waterproof pack with visible cable-tie repairs securing a broken clasp. No jewelry except the wrist tattoo. Shoes are scuffed utility boots, maintained but aged. All clothing shows signs of extended wear and salt-water exposure. No corporate branding or tier markers."
   },
-  "image_prompt": "Azamat Karimov, a 182cm tall woman with warm medium-brown skin with golden undertones, weathered from months of sun and salt exposure. Deep auburn hair sun-faded at the ends, long and roughly knotted at the nape with a sharpened stylus pin. Dark brown eyes with amber inner rim, deep-set and exhausted but unflinching. Facial structure reflects Central Asian and South Asian heritage with prominent cheekbones and defined jawline. Wrist tattoo: precise dark cartographic line of a coastal settlement perimeter, 8cm long. Wearing tier 5 migrant-grade clothing: worn synthetic work pants with reinforced knees, faded long-sleeve thermal under water-resistant jacket with broken zipper, aged utility boots. Waterproof pack with cable-tie repairs. Standing with vertical spine, economical posture, direct gaze. Cyberpunk 2226 GLMZ setting, weathered industrial docks or makeshift settlement, overcast natural lighting, photorealistic character study --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Kiran Kariuki, 182cm tall angular build with minimal body fat, warm medium-brown skin with golden undertones weathered by sun and salt exposure, darker pigmentation at cheekbones and nose bridge from healing patterns, prominent cheekbones and defined jawline reflecting South Asian and Sub-Saharan African heritage with Pacific Islander softness, dark brown eyes with amber inner rim showing exhaustion and steady focus, long deep auburn hair sun-faded at ends roughly knotted at nape with stylus pin, cartographic line tattoo on left wrist, wearing faded long-sleeve thermal shirt under water-resistant jacket with missing zipper, worn reinforced synthetic work pants, scuffed aged utility boots, waterproof pack with cable-tie repairs, no visible augmentations, posture upright and economical, direct unflinching gaze, tier 5 migrant aesthetic, Great Lakes Metropolitan Zone coastal setting, gray overcast lighting with salt-spray haze, standing with purpose and minimal wasted movement --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 27.6,
-    "South Asian": 23.9,
-    "Sub-Saharan African": 15.5,
-    "Eastern European": 14.4,
-    "Hispanic/Latin American": 11.4,
-    "Northern European": 7.2
+    "South Asian": 38,
+    "Sub-Saharan African": 28.9,
+    "Pacific Islander": 15.8,
+    "Northern European": 13.2,
+    "Southeast Asian": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 8.5
+      },
+      "Indian": {
+        "Malayali": 20.2,
+        "Tamil": 9.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 28.9
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Kiribati": 9.9,
+        "Marshallese": 5.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 2.3
+      },
+      "Germanic": {
+        "German": 5.3,
+        "Swiss German": 0.8
+      },
+      "Scandinavian": {
+        "Swedish": 4.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2
+      },
+      "Indonesian": {
+        "Sundanese": 0.2,
+        "Javanese": 1.9
+      }
+    }
+  }
 }

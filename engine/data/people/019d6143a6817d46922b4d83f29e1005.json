@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6817d46922b4d83f29e1005",
   "type": "character",
-  "name": "Zen Cervantes-Banerjee",
+  "name": "Binta Cervantes-Banerjee",
   "aliases": [
     "Gbemi",
     "Ghost Frequency"
@@ -13,7 +13,7 @@
   "age": 62,
   "status": "active",
   "location": "The Ferment Quarter, permanent residency above a venue called The Sump, near North Ave and Milwaukee",
-  "description": "Gbemi is sixty-two and looks it without apology — her face is deeply lined from years of working in smoky underground spaces, her natural hair gone fully silver and kept in long locs that brush her shoulder blades and are threaded with small ceramic beads she's collected from forty years of touring. She is a large woman with a large physical presence and the extraordinary stillness of someone who has learned that stillness is its own kind of power. Her only augmentation is a set of cochlear audio enhancers she got at thirty-five when early hearing loss threatened to end her career; she treats them with the same maintenance religiosity a surgeon gives their instruments.\n\nShe was a significant figure in the GLMZ underground sound scene in the 2170s and is now something the scene has very complicated feelings about: a legend who is still alive, still working, and not particularly interested in being a legend. Her sound sculptures are physical installations — transducer arrays that make space itself vibrate, music that you feel in your sternum before your ears register it. Her DJ sets are rarer now, maybe four or five a year, but the room fills six hours before doors for each one. She has seen the scene reinvent itself four times and has opinions about all of it.",
+  "description": "Binta Cervantes-Banerjee is sixty-two and looks it without apology — her face is deeply lined from years of working in smoky underground spaces, her natural hair gone fully silver and kept in long locs that brush her shoulder blades and are threaded with small ceramic beads she's collected from forty years of touring. She is a large woman with a large physical presence and the extraordinary stillness of someone who has learned that stillness is its own kind of power. Her only augmentation is a set of cochlear audio enhancers she got at thirty-five when early hearing loss threatened to end her career; she treats them with the same maintenance religiosity a surgeon gives their instruments.\n\nShe was a significant figure in the GLMZ underground sound scene in the 2170s and is now something the scene has very complicated feelings about: a legend who is still alive, still working, and not particularly interested in being a legend. Her sound sculptures are physical installations — transducer arrays that make space itself vibrate, music that you feel in your sternum before your ears register it. Her DJ sets are rarer now, maybe four or five a year, but the room fills six hours before doors for each one. She has seen the scene reinvent itself four times and has opinions about all of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -168,7 +168,7 @@
     "Mentor": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Ferment Quarter",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -219,62 +219,93 @@
   "changelog": [],
   "related_entities": [
     "The Ferment Quarter",
-    "GLMZ",
+    "Frequency",
     "Periscope",
     "The Quiet Room",
     "South Deering Sump",
-    "Switchblade Alley",
     "Silver",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Ezio Kaboré-Malhotra",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "Lacunal",
-    "Ringo Corponation",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tenderloin",
-    "The Gesture",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Sump"
+    "Switchblade Alley",
+    "Compass Rose",
+    "GLMZ",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic blend: Hispanic/Latin American (32.5%), East Asian (19.7%), South Asian (14.5%), Middle Eastern (14.3%), Sub-Saharan African (13.9%), Eastern European (5.1%). This creates a distinctive phenotype—warm-toned skin with subtle golden and olive undertones, eye shape influenced by East and South Asian ancestry, facial structure reflecting the Latin American and African components, with Eastern European bone structure contributing to strong definition.",
+    "heritage": "Dominant Hispanic/Latin American (54.8%) ancestry with substantial Sub-Saharan African (28.6%) contribution, blended with South Asian (14.4%) and East Asian (2.2%) heritage. This creates a striking phenotype with warm, rich medium-brown skin displaying golden and olive undertones. Facial structure reflects the strong Latin American and African components—defined, angular cheekbones and prominent jawline balanced with subtle eye shape variation from South Asian ancestry. The overall appearance is dimensionally warm, bearing the depth of tropical, equatorial, and subcontinental heritage.",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Large-framed and solid without softness; broad shoulders and deep chest that reads as powerful rather than heavy. Decades of standing in studios and behind turntables have given her the posture of someone who owns her space.",
     "hair_color": "Silver-white, natural",
     "hair_style": "Long locs, shoulder-blade length, threaded throughout with small ceramic beads in earth tones and jewel colors collected across forty years of touring and living",
     "hair_length": "Long",
-    "eye_color": "Deep brown with subtle warm undertones, alert and assessing",
-    "skin_tone": "Warm medium brown with golden-olive undertones, reflecting the complex blend of Hispanic/Latin, East Asian, South Asian, Middle Eastern, and African ancestry",
-    "complexion": "Deeply lined face that tells a story of smoke-filled rooms, late nights, and four decades of intensity without regret. Laugh lines around her eyes are pronounced. Skin is well-maintained but unadorned — no cosmetic modifications, no attempt to smooth away age. High, defined cheekbones with slight prominence reflecting East Asian ancestry. Strong, angular jaw. Subtle epicanthic fold variation. Grooming is precise and minimal.",
+    "eye_color": "Deep brown with warm undertones, alert and assessing",
+    "skin_tone": "Warm medium-brown with golden-olive undertones, rich and dimensional from the blend of Hispanic/Latin American, Sub-Saharan African, South Asian, and East Asian ancestry",
+    "complexion": "Deeply lined face that tells a story of smoke-filled rooms, late nights, and four decades of intensity without regret. Pronounced laugh lines around her eyes. Skin is well-maintained but unadorned—no cosmetic modifications, no attempt to smooth away age. High, defined cheekbones with sharp prominence reflecting Latin American and African ancestry. Strong, angular jaw with subtle definition from South Asian heritage contributing to facial geometry. Skin shows the depth and warmth of her multifaceted mixed heritage. Grooming is precise and minimal.",
     "distinguishing_marks": [
       "Fine scar tissue along the left temple, barely visible, from a venue accident in 2181",
       "Small burn mark on the inside of her right wrist from a soldering iron incident while building early transducer arrays",
       "Faint tattoo on her inner left forearm in Yoruba script, done in 2154, now softened by age but still readable"
     ],
-    "visible_augmentations": "Bilateral cochlear implants visible behind her ears when hair is pulled back — medical-grade chrome housings with subtle LED indicator lights (active when in use). She doesn't hide them and treats them as professional tools, not cosmetic concerns. No other visible augmentation.",
-    "posture_movement": "Moves with deliberate economy. Her stillness is remarkable — she can stand or sit motionless for extended periods while observing a room or listening to a mix. When she does move, it's purposeful and grounded. Her hands move with precision when working; she gestures sparingly when speaking, but when she does, the gesture carries weight.",
-    "clothing_style": "Tier 3-4 working artist aesthetic refined by age and confidence. Favors dark, durable fabrics (technical cotton blends, industrial weave) in blacks, deep grays, and charcoal. Usually wears fitted but unadorned vests or sleeveless high-neck shirts to show the cochlear implants without fanfare. Functional pants or cargo-style bottoms with enough pockets for tools and cables. Worn leather boots (same pair rebuilt three times). A single piece of jewelry: a thin silver band on her right ring finger, nothing ornate. When DJing, adds a long dark overshirt in some technical fabric. No logos, no brand signaling — clothes are tools.",
+    "visible_augmentations": "Bilateral cochlear implants visible behind her ears when hair is pulled back—medical-grade chrome housings with subtle LED indicator lights (active when in use). She doesn't hide them and treats them as professional tools, not cosmetic concerns. No other visible augmentation.",
+    "posture_movement": "Moves with deliberate economy. Her stillness is remarkable—she can stand or sit motionless for extended periods while observing a room or listening to a mix. When she does move, it's purposeful and grounded. Her hands move with precision when working; she gestures sparingly when speaking, but when she does, the gesture carries weight.",
+    "clothing_style": "Tier 3-4 working artist aesthetic refined by age and confidence. Favors dark, durable fabrics (technical cotton blends, industrial weave) in blacks, deep grays, and charcoal. Usually wears fitted but unadorned vests or sleeveless high-neck shirts to show the cochlear implants without fanfare. Functional pants or cargo-style bottoms with enough pockets for tools and cables. Worn leather boots (same pair rebuilt three times). A single piece of jewelry: a thin silver band on her right ring finger, nothing ornate. When DJing, adds a long dark overshirt in some technical fabric. No logos, no brand signaling—clothes are tools.",
     "affectations": "Constant low awareness of sound in any space; her head tilts slightly when listening to ambient noise. Habit of tapping finger patterns on surfaces (muscle memory from decades of beatmaking). Eyes track speakers and sound sources automatically."
   },
-  "image_prompt": "Zen Cervantes-Banerjee, 178cm tall, 40-year veteran DJ with warm medium-brown skin with golden-olive undertones reflecting multiethnic heritage (Latin American, East Asian, South Asian, Middle Eastern, African). Silver-white long locs adorned with earth-tone and jewel-colored ceramic beads shoulder-blade length. Deep brown alert eyes with pronounced laugh lines, high defined cheekbones, strong angular jaw. Visible bilateral chrome cochlear implants behind ears with subtle blue LED indicators. Wearing fitted dark charcoal sleeveless high-neck technical fabric shirt exposing implants, dark cargo pants with tool pockets, rebuilt worn leather boots. Thin silver band on right ring finger. Standing motionless in a 2226 neo-noir studio space with ambient sound visualization waves visible in air, cyberpunk atmospheric lighting—cool neon blues and warm amber from equipment, subtle holographic waveforms reflecting off her implants, cigarette smoke curling through shaft of light. Expression calm, observant, listening. Professional studio equipment blurred in background. Cyberpunk 2200s aesthetic. Shot from waist up. Mood: seasoned, grounded, present. --ar 2:3 --v 6",
+  "image_prompt": "Binta Cervantes-Banerjee, 178cm tall powerful woman with warm medium-brown skin with golden-olive undertones reflecting mixed Hispanic/Latin American, Sub-Saharan African, South Asian, and East Asian heritage. Silver-white long locs with ceramic beads, shoulder-blade length. Deep brown eyes with warm undertones, alert gaze. Deeply lined face with pronounced laugh lines and high defined cheekbones, angular jaw, unadorned skin showing four decades of intensity. Bilateral chrome cochlear implants visible behind ears with subtle LED indicators. Wearing fitted sleeveless high-neck charcoal technical fabric shirt, dark industrial cargo pants, worn leather boots. Single thin silver ring on right ring finger. Standing motionless in dimly lit studio space with soft blue and amber lighting reflecting off mixing equipment. Precise posture, stillness radiating quiet authority. GLMZ, studio aesthetic, her hands positioned near sound equipment. Fine scar on left temple barely visible, tattoo in Yoruba script on inner left forearm softened by age. Professional, grounded, observant presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 32.5,
-    "East Asian": 19.7,
-    "South Asian": 14.5,
-    "Middle Eastern": 14.3,
-    "Sub-Saharan African": 13.9,
-    "Eastern European": 5.1
+    "Hispanic/Latin American": 54.8,
+    "Sub-Saharan African": 28.6,
+    "South Asian": 14.4,
+    "East Asian": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 5.4,
+        "Costa Rican": 32.7
+      },
+      "South American": {
+        "Brazilian": 11.8
+      },
+      "Mexican": {
+        "Mexican": 4.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 8.4
+      },
+      "Southern African": {
+        "Mozambican": 6.8
+      },
+      "West African": {
+        "Liberian": 7.5,
+        "Ghanaian": 5.9
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 11
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 0.2,
+        "Fujianese": 0.6
+      },
+      "Japanese": {
+        "Japanese": 1.4
+      }
+    }
+  }
 }

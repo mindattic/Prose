@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e67dd68cb941f4c35fa725",
   "type": "character",
-  "name": "Atlas Kristjánsson-Chakraborty",
+  "name": "Atlas Cissé-Krishnamurthy",
   "aliases": [
     "Sev",
     "Grievous"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Hamtramck Enclave, rotating between basement venues and a rented room above a tea house on Brezinski Circuit, near Western and Chicago Ave",
-  "description": "Séverin is compact and restless, built like someone who is always about to stand up from a chair — shoulders slightly forward, weight on the balls of their feet, dark brown skin luminous under stage lights they have spent years learning to use as a weapon. They have their mother's wide Congolese forehead and their grandmother's pale Volga eyes, a combination that strangers find disconcerting and that Séverin has weaponized into an entire chunk of material. Their hair is grown out in a soft natural cloud and color-shifted to cycling deep blue at the roots fading to copper at the tips — they change it seasonally, the way other people change their jackets.\n\nSéverin is possibly the funniest person in Hamtramck Enclave and is the only person in Hamtramck Enclave who would not say so, though they would say it about themselves at three in the morning having had too much fermented buckwheat tea. Their comedy is structurally precise and politically incendiary — a routine will appear to be about, say, the indignity of renewing one's UBC stipend, and then thirty seconds before the end the floor opens up and there is something about complicity and grief underneath. Audiences often report laughing and then feeling like they should not have. Séverin considers this the correct response.",
+  "description": "Atlas Cissé-Krishnamurthy is compact and restless, built like someone who is always about to stand up from a chair — shoulders slightly forward, weight on the balls of their feet, dark brown skin luminous under stage lights they have spent years learning to use as a weapon. They have their mother's wide Congolese forehead and their grandmother's pale Volga eyes, a combination that strangers find disconcerting and that Atlas Cissé-Krishnamurthy has weaponized into an entire chunk of material. Their hair is grown out in a soft natural cloud and color-shifted to cycling deep blue at the roots fading to copper at the tips — they change it seasonally, the way other people change their jackets.\n\nAtlas Cissé-Krishnamurthy is possibly the funniest person in Hamtramck Enclave and is the only person in Hamtramck Enclave who would not say so, though they would say it about themselves at three in the morning having had too much fermented buckwheat tea. Their comedy is structurally precise and politically incendiary — a routine will appear to be about, say, the indignity of renewing one's UBC stipend, and then thirty seconds before the end the floor opens up and there is something about complicity and grief underneath. Audiences often report laughing and then feeling like they should not have. Atlas Cissé-Krishnamurthy considers this the correct response.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -154,7 +154,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,39 +171,28 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Grandmother",
+    "Pressure Drop",
     "The Gradient Compact",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Copper",
-    "The Pale Mile",
+    "Circuit",
     "Chicago",
-    "Alper Lebedev-Tutu",
     "Arcturus KS-7 'Nursery'",
-    "Bioacoustic Communication Membrane",
-    "Breck Tannen",
-    "Idris Forsberg-Quaye",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Slagworks Industrial",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
-    "Vuk Jorgensen-Toure"
+    "Copper",
+    "Atlas",
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European (Icelandic/Scandinavian) and South Asian (Bengali) with significant Sub-Saharan African and Hispanic/Latin American ancestry. A striking genetic blend resulting in warm deep brown skin with subtle golden undertones, sharp Northern European bone structure, and the distinctive eye coloration from Nordic heritage.",
+    "heritage": "Multi-continental ancestry: Sub-Saharan African (40.2%), South Asian (27.5%), Middle Eastern (13.3%), Southeast Asian (10.8%), and East Asian (8.2%). The dominant Sub-Saharan and South Asian heritage creates a striking warm deep brown complexion with golden undertones. South Asian and Southeast Asian features contribute softer facial contours balanced by angular cheekbones. Middle Eastern ancestry adds warmth to the overall tone, while East Asian ancestry subtly influences eye shape and bone structure. A living genetic mosaic reflecting generations of global movement.",
     "height_cm": 163,
     "weight_kg": 58,
     "build": "Compact and wiry, muscular through the shoulders and core from years of pacing and restless movement. Light-boned but dense, built for quick shifts of weight and sudden stillness.",
     "hair_color": "Color-shifted: deep blue at roots fading to copper at tips (seasonal rotation)",
     "hair_style": "Soft natural cloud, deliberately unsculpted, maintained at shoulder length",
     "hair_length": "Long",
-    "eye_color": "Pale gray-green (inherited Northern European ancestry), distinctive against deep warm skin",
-    "skin_tone": "Deep warm brown with golden undertones, luminous quality under direct light. Reflects the balanced blend of Northern European, South Asian, African, and Latin American heritage in a rich, multitonal complexion.",
-    "complexion": "Sharp, defined cheekbones and structured forehead from Northern European ancestry, softened by the warmth and fullness characteristic of South Asian features. Clear skin with minimal scarring. Expressive micro-movements around eyes and mouth from years of performance. Dark circles common from poor sleep.",
+    "eye_color": "Dark brown with warm amber undertones, reflecting the dominance of Sub-Saharan and South Asian ancestry, distinctive in their expressiveness and clarity",
+    "skin_tone": "Deep warm brown with golden undertones, luminous quality under direct light. Rich multitonal complexion reflecting the balanced blend of Sub-Saharan African (40.2%) and South Asian (27.5%) heritage as primary influences, with Middle Eastern warmth and Southeast Asian softness creating a harmonious, glowing depth.",
+    "complexion": "Facial structure shows characteristic South Asian softness around the jawline and cheeks balanced with Sub-Saharan-influenced angular cheekbones and defined bone structure. Warm golden and amber undertones across the face from the combination of Sub-Saharan, South Asian, and Middle Eastern ancestry. Subtle almond-shaped eye set influenced by Southeast Asian and East Asian heritage. Clear skin with minimal scarring. Expressive micro-movements around eyes and mouth from years of performance. Dark circles common from poor sleep.",
     "distinguishing_marks": [
       "Small circular scar on left inner wrist (subvocal mic implant entry point, thin and pale)",
       "Faint burn mark across right palm (childhood accident, nearly invisible)",
@@ -213,15 +202,63 @@
     "posture_movement": "Habitually forward-leaning, shoulders slightly tensed as if about to stand. Weight perpetually on the balls of their feet. Moves with compressed energy — pacing rather than strolling. Hands active and precise, often in conversation with their words. On stage, transforms into a coiled spring with calculated stillness; off-stage, the restlessness is always visible.",
     "clothing_style": "Tier 3-4 working class with intentional counter-culture edge. Favors oversized cardigans and vintage-fitted trousers. Worn canvas high-tops. Layers that suggest they dress for movement rather than appearance. Tea-stained sleeves are a signature. No corporate branding; prefers thrift-store finds and handmade pieces from Hamtramck artisans. Jewelry minimal — a functional watch, rarely anything else."
   },
-  "image_prompt": "Atlas Kristjánsson-Chakraborty, 163cm tall, compact wiry build with dense muscular shoulders. Deep warm brown skin with golden luminous undertones, sharp defined cheekbones and structured forehead, pale gray-green eyes striking against dark complexion. Shoulder-length soft natural cloud of hair shifting from deep blue at roots to copper at tips. Expressive face with habitual dark circles, faint scar on left inner wrist. Wearing oversized vintage cardigan layered over fitted trousers, worn canvas high-tops. Tea-stained sleeves. Minimal jewelry—functional watch only. Posture forward-leaning, weight on balls of feet, compressed restless energy. Hands active and precise. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, intimate performance space or dimly-lit underground venue. Moody atmospheric lighting catching the luminous quality of skin and color-shifted hair. Off-stage restlessness visible in body tension. Counter-culture aesthetic, working-class authenticity. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Cissé-Krishnamurthy, 163cm tall compact wiry figure, deep warm golden-brown skin with Sub-Saharan and South Asian heritage visible in angular cheekbones and soft jawline, dark brown eyes with amber warmth, shoulder-length soft cloud hair in color-shifted deep blue fading to copper. Wearing oversized cardigan layered over tea-stained vintage clothing, worn canvas high-tops, minimal jewelry with functional watch. Forward-leaning posture with compressed restless energy, hands expressive mid-gesture. GLMZ 2200s Great Lakes Metropolitan Zone setting, moody underground venue lighting with neon glow catching the golden undertones of skin, intimate performance space, atmospheric haze, intimate character study portrait. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 40.4,
-    "South Asian": 34.9,
-    "Sub-Saharan African": 16.1,
-    "Hispanic/Latin American": 8.6
+    "Sub-Saharan African": 40.2,
+    "South Asian": 27.5,
+    "Middle Eastern": 13.3,
+    "Southeast Asian": 10.8,
+    "East Asian": 8.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 37.2,
+        "Ethiopian": 3
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 20
+      },
+      "Indian": {
+        "Bengali": 4.6
+      },
+      "Nepali": {
+        "Nepali": 2.9
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 5.6
+      },
+      "Arab Gulf": {
+        "Yemeni": 7.7
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 8.6
+      },
+      "Vietnamese": {
+        "Vietnamese": 2.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.3
+      },
+      "Korean": {
+        "Korean": 2.7
+      },
+      "Chinese": {
+        "Mandarin Northern": 1.8,
+        "Shanghainese": 0.4
+      }
+    }
+  }
 }

@@ -141,7 +141,7 @@ function getExistingNames() {
 }
 
 // -- World Context --
-const WORLD_CONTEXT = `Meridian 88, year 2200. Great Lakes megacity. Currency: \u03A6 (QUANTA). Tiers: 1 (Shelf/poorest) to 5 (Spire/elite). Ubiquitous Diaspora: fully interbred humanity, default to mixed heritage from unexpected global combinations. Iowan Behemoths are autonomous machines, NOT synthetic life.
+const WORLD_CONTEXT = `GLMZ, year 2200. Great Lakes megacity. Currency: \u03A6 (QUANTA). Tiers: 1 (Shelf/poorest) to 5 (Spire/elite). Ubiquitous Diaspora: fully interbred humanity, default to mixed heritage from unexpected global combinations. Iowan Behemoths are autonomous machines, NOT synthetic life.
 
 Cyberlimb Manufacturers:
 - CHROMEWORKS: Premium cyberlimbs, sleek chrome aesthetics, known for seamless neural integration. The "Apple" of limbs.
@@ -300,7 +300,7 @@ async function generateCategory(catDef) {
     const allExisting = getExistingNames();
     const existingShort = allExisting.slice(-80).map(n => n.replace(/[^a-zA-Z0-9 ]/g, '').substring(0, 40));
 
-    const system = `You generate cyberlimb and cyberware entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} cyberware objects. No explanation, no markdown fencing, just the raw JSON array.
+    const system = `You generate cyberlimb and cyberware entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} cyberware objects. No explanation, no markdown fencing, just the raw JSON array.
 
 ${WORLD_CONTEXT}
 

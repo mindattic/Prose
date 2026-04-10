@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d57ffa896eb2d423e2ca26",
   "type": "character",
-  "name": "Nova Hossain-Odinga",
+  "name": "Nova Quiñones-Mazurek",
   "aliases": [
     "Stel",
     "The Auditor"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Edgewater Prism, operating out of a rented fourth-floor office above a bioluminescence parlor, near Clark and Addison",
-  "description": "Celestyna has the kind of face that is hard to describe and easy to underestimate — medium height, medium build, skin the color of strong tea, hair they wear in a practical wrap that they change the color of weekly using a basic tint-shift geneware package: this week aubergine, last week copper, before that a grey so pale it looked like moonlight. Their eyes are their most arresting feature, fitted with layered irises that shift between amber and deep violet depending on light. They move through spaces like someone calculating angles, always near walls, always facing entrances.\n\nCelestyna ran corporate surveillance for Tessera for six years before going freelance, and the institutional habits have never fully left — they still document everything, still default to the camera's frame of reference. What they gained in freedom they lost in certainty: the cases are messier now, the clients are messier, and there is no compliance department to tell them when they have gone too far. They have an E.L.F. devotion that is pragmatic rather than spiritual — they treat the digital spirits of Edgewater Prism's infrastructure like informants, leaving data offerings and occasionally getting inexplicable pieces of useful information in return. Whether this is genuine ELF favor or pattern recognition in noise, they have stopped trying to determine.",
+  "description": "Nova Quiñones-Mazurek has the kind of face that is hard to describe and easy to underestimate — medium height, medium build, skin the color of strong tea, hair they wear in a practical wrap that they change the color of weekly using a basic tint-shift geneware package: this week aubergine, last week copper, before that a grey so pale it looked like moonlight. Their eyes are their most arresting feature, fitted with layered irises that shift between amber and deep violet depending on light. They move through spaces like someone calculating angles, always near walls, always facing entrances.\n\nNova Quiñones-Mazurek ran corporate surveillance for Tessera for six years before going freelance, and the institutional habits have never fully left — they still document everything, still default to the camera's frame of reference. What they gained in freedom they lost in certainty: the cases are messier now, the clients are messier, and there is no compliance department to tell them when they have gone too far. They have an E.L.F. devotion that is pragmatic rather than spiritual — they treat the digital spirits of Edgewater Prism's infrastructure like informants, leaving data offerings and occasionally getting inexplicable pieces of useful information in return. Whether this is genuine ELF favor or pattern recognition in noise, they have stopped trying to determine.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -203,7 +203,7 @@
     "Face": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -223,32 +223,14 @@
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Tessera Corponation",
     "Stratum",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Pellucid Systems",
-    "The Pale Mile",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Morita-Antwi",
-    "Réginald Asomaning-Čabarkapa",
-    "Solina Barreto-Kiptoo",
-    "Stainless Steel",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Gallows' Recurve Bow",
-    "SynapTech Prism AR Personal Neural Interface",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yuki Nwosu-Petrenko"
+    "The Pale Mile"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Complex diaspora blend: predominantly Hispanic/Latin American (48.6%) with substantial South Asian (33.2%) and Sub-Saharan African (18.2%) ancestry. The result is a warm, nuanced brown tone with subtle golden undertones — facial structure shows the broad cheekbones and defined jawline of Latin American heritage, softened by the gentler eye shape and nose bridge of South Asian ancestry, with the overall richness of skin tone and textural depth from African lineage. Features suggest the Ubiquitous Diaspora mixing that defines 2226 GLMZ demographics.",
+    "heritage": "Complex diaspora blend: predominantly Eastern European (40.1%) with substantial East Asian (31.1%), South Asian (14.8%), and Hispanic/Latin American (14.0%) ancestry. The result is a striking interplay of features — the higher cheekbones and eye shape characteristic of Eastern European and East Asian heritage create sharp angular definition, softened by the gentler nose bridge and fuller facial proportions of South Asian ancestry, while the Latin American component adds warmth and dimension to skin tone. Skin displays a luminous mid-tone with olive-golden undertones, the product of Slavic, East Asian, and South Asian melanin blending with Latin American depth. The overall effect is someone whose features resist easy categorization — precisely the genetic signature of the Ubiquitous Diaspora that defines 2226 GLMZ.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean, economical — the build of someone who moves deliberately rather than expansively. Minimal body fat, defined shoulders and forearms from years of fieldwork. No wasted mass.",
@@ -256,8 +238,8 @@
     "hair_style": "Practical wrap worn tight against the scalp, secured with minimalist titanium pins. Weekly color rotation. Clean, maintained, functional rather than decorative.",
     "hair_length": "Medium (wrapped appearance shortens visual profile)",
     "eye_color": "Layered shift-iris implants: dominant amber with deep violet undertones, responsive to light conditions. The shift is smooth and noticeable — a signature feature.",
-    "skin_tone": "Warm mid-to-deep brown — rich golden-amber undertone characteristic of Latin American and South Asian blending, with the deeper richness of Sub-Saharan heritage creating an even, luminous tone. Consistent across the body, suggesting both sun exposure and genetic predisposition to even melanin distribution.",
-    "complexion": "Clean, minimal scarring. Skin texture is even with a subtle warm glow. They favor minimal cosmetics — occasional lip tint, no foundation. A small, precise scar runs through their left eyebrow (surveillance incident, 2219). Fine lines around the eyes from sustained focus work. Expression default is neutral-analytical.",
+    "skin_tone": "Luminous mid-tone olive-gold — the result of Eastern European paleness complexity blended with East Asian and South Asian warmth, enriched by Latin American depth. Even melanin distribution creates a consistent, almost luminescent quality across the body, suggesting both ancestral genetic predisposition and sustained environmental exposure.",
+    "complexion": "Clean, minimal scarring. Skin texture is even with a subtle warm glow. They favor minimal cosmetics — occasional lip tint, no foundation. A small, precise scar runs through their left eyebrow (surveillance incident, 2219). Fine lines around the eyes from sustained focus work. Expression default is neutral-analytical. High cheekbones catch light distinctly, a feature enhanced by the East Asian and Eastern European heritage blend. Nose bridge proportioned to South Asian ancestry, creating refined symmetry.",
     "distinguishing_marks": [
       "Thin scar through left eyebrow, approximately 2cm, pale and well-healed, suggesting precision rather than trauma",
       "Faint grid pattern of subcutaneous LED markers along the inside of both wrists (retinal overlay calibration points, barely visible unless specifically lit)",
@@ -267,14 +249,58 @@
     "posture_movement": "Economical, angled. They move along walls and edges of spaces, rarely cutting through the center. Always positioning themselves to face exits and approaching figures. Their head tracks with precision — eyes moving independently from neck rotation, a quirk of the augmented irises. When still, they appear coiled rather than relaxed. When moving, they move like someone reading a room constantly.",
     "clothing_style": "Tier 3-4 working class investigator aesthetic. Black or dark grey utility wear: reinforced canvas pants with multiple pockets, fitted long-sleeve thermal shirts (often sleeveless overshirt in Edgewater's variable temperatures). Practical footwear — usually low-key tactical boots, nothing flashy. A worn synthetic leather jacket, nameless brand, with internal organization pockets for recording equipment. No corpo branding, no flashy tech. Everything functional, nothing conspicuous. Minimal jewelry: a single stainless steel signet ring on their right hand (personal rather than professional). Weather-appropriate layers. The overall effect is 'someone who doesn't want to be remembered in detail.'"
   },
-  "image_prompt": "Nova Hossain-Odinga, cyberpunk investigator, 2226 GLMZ. Lean 168cm figure with warm golden-brown skin tone reflecting Latin American, South Asian, and Sub-Saharan African heritage. Aubergine-wrapped hair tight against scalp with titanium pins, natural dark brown visible at temples with silver threading. Striking amber-violet shift-iris implants that glow responsively in moody light. Clean complexion with precise pale scar bisecting left eyebrow from 2219 incident. Angular, coiled posture suggesting constant environmental awareness. Wearing dark grey utility canvas pants with multiple pockets, fitted long-sleeve thermal shirt, worn synthetic leather jacket with internal tech pockets. Low-key tactical boots. Single stainless steel signet ring. Positioned at edge of shadows, body angled toward exit, head tracking with inhuman precision. Subdued Edgewater lighting — neon-wash alley or dimly-lit hab-block corridor, cool tungsten and violet ambience. Mood: dangerous neutrality, analytical watchfulness. Minimal decoration, maximum function. --ar 2:3 --v 6",
+  "image_prompt": "Nova Quiñones-Mazurek, 2226 neo-noir investigator, mid-30s with lean muscular build, luminous olive-gold skin blending Eastern European, East Asian, and South Asian heritage. Aubergine-wrapped hair pulled tight with titanium pins, silver threads at temples. Sharp high cheekbones, neutral analytical expression, pale scar through left eyebrow. Distinctive amber-to-violet shift iris implants that glow subtly. Dark utility wear: fitted thermal shirt, reinforced canvas pants, worn synthetic leather jacket. Stainless steel signet ring. Positioned against urban wall edge in GLMZ Edgewater at dusk, neon-filtered light casting shadows. Economical posture, eyes tracking independently. Cold blue and warm amber lighting reflecting off implants. Film noir investigation aesthetic. GLMZ 2200s atmosphere, hyperurban density visible in background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 48.6,
-    "South Asian": 33.2,
-    "Sub-Saharan African": 18.2
+    "Eastern European": 40.1,
+    "East Asian": 31.1,
+    "South Asian": 14.8,
+    "Hispanic/Latin American": 14
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 9,
+        "Hungarian": 6.3
+      },
+      "Slavic South": {
+        "Serbian": 6.3
+      },
+      "Slavic West": {
+        "Czech": 11.2,
+        "Polish": 7.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 15.9
+      },
+      "Chinese": {
+        "Cantonese": 9.3
+      },
+      "Korean": {
+        "Korean": 5.9
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.8
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.9
+      },
+      "Pakistani": {
+        "Pashtun": 2.2,
+        "Baloch": 2.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 14
+      }
+    }
+  }
 }

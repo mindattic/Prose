@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d0744db53868bba99643ef",
   "type": "character",
-  "name": "Delta Cervantes-Okonkwo",
+  "name": "Delta Cervantes-Thorvaldsdóttir",
   "aliases": [
     "Cav",
     "Cavi"
@@ -13,7 +13,7 @@
   "age": 57,
   "status": "active",
   "location": "Vantage Meridian Corporate Campus, Ringo Tower — Floor 58, corner office, near State and Madison",
-  "description": "Caoimhe Abubakar-Sigurðsson is a tall woman of sixty-ish who has made deliberate choices about how she ages. Her skin is dark and luminous — the bioluminescent dermal layer she had installed at forty is subtle, a warmth under the surface that catches in low light like embers, and she has never adjusted it toward anything flashier. Her hair is entirely white and kept in a long braid she wears forward over one shoulder. She has retractable claw mods on both hands, filed short enough that most people don't notice them, installed not for aesthetics but because she found them useful and has never felt the need to explain that. She dresses in a palette of black, ivory, and deep wine, always expensively, never ostentatiously.\n\nCaoimhe has been acquiring companies for Ringo for over two decades, and she is very good at it in the way that a certain kind of intelligence becomes: by being completely honest about what it wants while everyone else is still pretending they don't want anything. She is charming in the formal register, devastating in the negotiating room, and has a quality of stillness that makes people feel simultaneously seen and examined. She grew up in a Tier 4 household in what was then New Windsor, the daughter of a Ringo logistics executive, and has spent her entire career at the same corponation — a loyalty she's never examined too closely.",
+  "description": "Delta Cervantes-Thorvaldsdóttir is a tall woman of sixty-ish who has made deliberate choices about how she ages. Her skin is dark and luminous — the bioluminescent dermal layer she had installed at forty is subtle, a warmth under the surface that catches in low light like embers, and she has never adjusted it toward anything flashier. Her hair is entirely white and kept in a long braid she wears forward over one shoulder. She has retractable claw mods on both hands, filed short enough that most people don't notice them, installed not for aesthetics but because she found them useful and has never felt the need to explain that. She dresses in a palette of black, ivory, and deep wine, always expensively, never ostentatiously.\n\nCaoimhe has been acquiring companies for Ringo for over two decades, and she is very good at it in the way that a certain kind of intelligence becomes: by being completely honest about what it wants while everyone else is still pretending they don't want anything. She is charming in the formal register, devastating in the negotiating room, and has a quality of stillness that makes people feel simultaneously seen and examined. She grew up in a Tier 4 household in what was then New Windsor, the daughter of a Ringo logistics executive, and has spent her entire career at the same corponation — a loyalty she's never examined too closely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -197,7 +197,7 @@
     "Charmer": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Vantage Meridian Corporate Campus",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -263,31 +263,14 @@
     "the_meridian_office_park",
     "Pilsen Veil",
     "CRUCIBLE Vantage Artisan Precision Hand",
-    "Palette",
+    "Honest Burger",
+    "Corner Slice",
     "The Pure Hand",
-    "Ringo Corponation",
-    "Alper Lebedev-Tutu",
-    "Ambrogio Waweru-Djordanović",
-    "Breck Tannen",
-    "Emeka Johansson-Orozco",
-    "Eshe Pena-Baah",
-    "Ferrogate Transit",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Otitodilichukwu Sigurðsson-Batmunkh",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech AromaVeil Olfactory Filter",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy"
+    "Ringo Corponation"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African and Southeast Asian ancestry, creating a rich blend of warm brown tones with subtle golden undertones. The genetic mix produces refined, high-set cheekbones characteristic of Latin American and Southeast Asian lineages, paired with the strong jaw and facial geometry of West African heritage.",
+    "heritage": "Complex pan-global ancestry: 35% Hispanic/Latin American, 32% East Asian, 23% South Asian, and 10% Sub-Saharan African. This rare combination creates striking facial geometry—high, prominent cheekbones from East Asian and Latin American lineage blend with the strong, defined jaw and facial structure of Sub-Saharan African heritage. South Asian ancestry contributes refined facial proportions and subtle warmth to skin undertones. The result is a face of unusual symmetry and presence, with features that harmonize across multiple continental traditions into something distinctly her own.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Lean and composed, maintained through decades of disciplined gym routine. Long-limbed with a careful posture that projects control without tension. Shoulders back, spine aligned — the bearing of someone who has trained her body to be an instrument of intention.",
@@ -295,8 +278,8 @@
     "hair_style": "Long braid worn forward over left shoulder, immaculate and precise",
     "hair_length": "Long",
     "eye_color": "Deep brown, unaugmented",
-    "skin_tone": "Warm deep brown with golden undertones, enriched by the bioluminescent layer beneath the skin",
-    "complexion": "Luminous in low light with a faint ember glow visible at the jawline and temples — the bioluminescent dermal layer integrated at forty is barely perceptible in daylight but unmistakable in evening settings. Skin texture is refined and well-maintained; minimal visible aging, though the geometry of her face shows fifty-seven years with dignity. High cheekbones reflecting Southeast Asian and Latin American ancestry blend with a strong, defined jaw characteristic of West African heritage. Measured expression, eyes that assess and comprehend.",
+    "skin_tone": "Deep warm brown with golden and amber undertones, the harmonious result of blended ancestry across multiple continents. East Asian and Latin American heritage contribute warm golden notes; South Asian ancestry adds refined warmth and depth; Sub-Saharan African genetics provide the rich, deep foundation. The tone is luminous and carries subtle radiance from the integrated bioluminescent dermal layer.",
+    "complexion": "Luminous in low light with a faint ember glow visible at the jawline and temples — the bioluminescent dermal layer integrated at forty is barely perceptible in daylight but unmistakable in evening settings. Skin texture is refined and well-maintained; minimal visible aging, though the geometry of her face shows fifty-seven years with dignity. High, sculpted cheekbones reflect the East Asian and Latin American portions of her ancestry, flowing seamlessly into the strong, defined jaw characteristic of her Sub-Saharan African heritage, with refined proportions influenced by South Asian genetics. The overall effect is a face of striking geometric precision that transcends simple categorization. Measured expression, eyes that assess and comprehend.",
     "distinguishing_marks": [
       "Very faint surgical scars at both wrists where claw mods were installed, barely visible unless examined closely.",
       "No visible tattoos; she considers them imprecise."
@@ -305,14 +288,60 @@
     "posture_movement": "Stillness is her default state. She moves with economy and intention — no wasted gesture, no nervous tics. Walks with weight centered, deliberately unhurried. In meetings, she sits back slightly, watching more than performing. Her gaze is steady and complete; she looks at people in a way that makes them feel simultaneously heard and assessed. Handshakes are firm; she does not fidget.",
     "clothing_style": "Tier 1 corporate formal with personal restraint: black wool trousers (tailored), ivory silk blouses (always long-sleeved to mid-forearm, where the claw scars sit), wine-colored merino or cashmere layers. Minimal jewelry — one wedding band (platinum, understated), occasionally a paired brooch of modernist design in silver or black onyx. Shoes are always excellent and always black. Fabrics are matte or subtly textured; nothing shiny or obvious. The effect is of someone who spent real money to look exactly like she looks: composed, expensive, and completely uninterested in drawing attention."
   },
-  "image_prompt": "Delta Cervantes-Okonkwo, 57-year-old woman with deep warm brown skin and golden undertones, white hair in a long immaculate braid draped over left shoulder, deep brown unaugmented eyes. Mixed Hispanic-Latin American, Sub-Saharan African, and Southeast Asian heritage reflected in high cheekbones and strong defined jaw. 183cm tall, lean muscular build maintained through discipline. Subtle bioluminescent dermal layer creates faint warm ember glow visible at jawline and temples in low light. Retractable claw modifications on both hands, barely visible. Wearing black tailored wool trousers, ivory silk long-sleeved blouse (sleeve ending at mid-forearm concealing faint wrist scars), wine-colored cashmere layer. Platinum wedding band. Posture is perfectly aligned, composed and controlled. Expression measured and assessing. Cyberpunk 2200s Great Lakes Metropolitan Zone, corporate setting with ambient neon in background, cool blue and warm amber accent lighting emphasizing the subtle bioluminescence beneath her skin. Sophisticated, expensive, deliberately understated, power held in stillness. --ar 2:3 --v 6",
+  "image_prompt": "Delta Cervantes-Thorvaldsdóttir, 183cm tall, fifty-seven year old corporate executive in GLMZ 2226. Deep warm brown skin with golden amber undertones, luminescent ember glow visible at jawline in low light from integrated bioluminescent dermal layer. Striking geometric face: high sculpted cheekbones from East Asian and Latin American heritage blending with strong defined jaw from Sub-Saharan African ancestry, refined proportions from South Asian genetics. Deep brown unaugmented eyes, steady and assessing gaze. Pure white long hair in immaculate single braid draped over left shoulder. Lean composed build, impeccable posture, centered weight. Wearing tailored black wool trousers, long-sleeved ivory silk blouse (sleeves to mid-forearm covering faint surgical scars from claw mods), wine-colored merino layer. Platinum wedding band, black polished shoes. Minimalist modernist silver brooch. Stillness and intention in every movement, corporate boardroom setting with subtle evening lighting highlighting bioluminescent undertones, composed and uninterested in drawing attention, the bearing of someone whose body is an instrument of intention, GLMZ 2200s aesthetic, professional corporate environment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 68.5,
-    "Sub-Saharan African": 17.1,
-    "Southeast Asian": 14.4
+    "Hispanic/Latin American": 35.1,
+    "East Asian": 31.9,
+    "South Asian": 23.1,
+    "Sub-Saharan African": 9.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 28.3
+      },
+      "Caribbean": {
+        "Cuban": 2.6,
+        "Puerto Rican": 4.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6.9
+      },
+      "Chinese": {
+        "Cantonese": 15.6,
+        "Mandarin Northern": 8.2
+      },
+      "Korean": {
+        "Korean": 1.2
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 0.5,
+        "Sindhi": 4.8
+      },
+      "Nepali": {
+        "Nepali": 14
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 2.4,
+        "Ethiopian": 1.9
+      },
+      "Central African": {
+        "Congolese": 2.6,
+        "Angolan": 3
+      }
+    }
+  }
 }

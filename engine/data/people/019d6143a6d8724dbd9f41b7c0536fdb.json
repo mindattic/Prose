@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d8724dbd9f41b7c0536fdb",
   "type": "character",
-  "name": "Onyx Sigurdsson",
+  "name": "Onyx Shirazi",
   "aliases": [
     "Turbine",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Somadina Karlsen-Sow are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a combat medic out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Somadina Karlsen-Sow are known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Onyx Shirazi are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a combat medic out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Onyx Shirazi are known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.13,
@@ -264,7 +264,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,33 +282,14 @@
     "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'"
   ],
   "related_entities": [
-    "GLMZ",
     "Geartown",
     "Lazarus LX-2 'Lab Rat'",
-    "The Milwaukee Core",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Doru Fofana-Câmpeanu",
-    "Ghost Protocol",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Neuromorphic Pressure Cestus",
-    "Osmotic Pressure Blade",
-    "Prophet",
-    "Sorin Ekwensi-Balasanyan",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA WL-6 'Stacker'",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VSX-7 'Strelok'",
-    "Yusra Ntambwe-Cakić"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European dominant (58%) with significant Hispanic/Latin American (14%), North African (11%), Eastern European (10%), and Pacific Islander (8%) ancestry. The genetic blend creates striking features: Northern European bone structure with warm Mediterranean and Latin undertones, accented by North African skin depth and Pacific Islander subtle features in facial proportions.",
+    "heritage": "Pan-global genetic mosaic: Middle Eastern (31.1%) and South Asian (22.4%) form the dominant base, creating warm olive undertones and defined bone structure. Southeast Asian (20.9%) adds subtle softness to facial proportions and eye shape. Northern European (14.6%) contributes angular cheekbones and jawline definition. Sub-Saharan African (6.1%) enriches skin depth and adds warmth to overall tone. Hispanic/Latin American (4.9%) provides subtle complexity to feature definition. The result is a striking, non-categorical phenotype: strong angular architecture softened by rounded mid-facial proportions, warm medium-deep skin with golden undertones, and eyes that reflect the blend of their full ancestry.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and angular, with long limbs and minimal body fat. Muscular definition visible in shoulders and core from years of combat training and surgical precision work. No wasted mass.",
@@ -316,8 +297,8 @@
     "hair_style": "Kept short and practical, often slicked back or pulled into a tight braid for work",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and assessing",
-    "skin_tone": "Warm tan with Mediterranean and subtle golden undertones from North African ancestry, weathered by stress and environmental exposure. Medium depth with natural warm richness.",
-    "complexion": "Sharp jawline and high cheekbones with warm Mediterranean definition. Subtle Pacific Islander influence visible in slightly broader facial proportions and softer cheek structure balanced against Northern European angularity. Minimal grooming beyond functional maintenance—no cosmetics. Skin shows minor scarring from old burns and repeated medical procedures. Expression habitually composed, rarely shows emotion.",
+    "skin_tone": "Warm golden-olive, medium-deep tone. The base warmth derives from dominant Middle Eastern and South Asian ancestry, enriched by Sub-Saharan depth and subtle Hispanic complexity. Golden undertones catch light. Weathered by stress and environmental exposure.",
+    "complexion": "Strong defined jawline and high cheekbones from Middle Eastern and Northern European ancestry, balanced by slightly broader mid-face and rounder features from Southeast and South Asian heritage. Nose shows subtle width consistent with South Asian and Sub-Saharan ancestry. Eyes set with gentle epicanthic folds reflecting Southeast Asian component. Overall expression combines angular precision with warmer, more rounded proportions—a true global blend. Minimal grooming beyond functional maintenance. Skin shows minor scarring from old burns and repeated medical procedures.",
     "distinguishing_marks": [
       "Thick surgical scar running down the left side of the neck from cortical implant removal, pale and raised tissue",
       "Smaller scars across knuckles and forearms from field work and training",
@@ -327,16 +308,70 @@
     "posture_movement": "Stands with weight balanced, shoulders level. Moves with deliberate efficiency—no wasted motion. Hands are still when not in use. When working or under stress, movements become even more economical and precise. Makes eye contact but without aggression; gaze is clinical and assessing.",
     "clothing_style": "Tier 3-4 functional wear. Black synth-weave cargo pants with multiple pockets for equipment. Form-fitting gray undershirt beneath a reinforced tactical vest with medical patches and subtle armor plating. Worn black boots with non-slip soles rated for surgical environments and rough terrain. A long neutral-colored coat—often leather-effect synthetic—that allows concealment of medical kit and provides some ballistic resistance. Minimal jewelry; a simple wrist display for job communications. Everything is well-maintained but shows functional wear, not fashion concern."
   },
-  "image_prompt": "Portrait of Onyx Sigurdsson, a 188cm lean cybernetic surgeon, cyberpunk 2226. Warm tan Mediterranean skin with North African depth, sharp Northern European jawline and high cheekbones. Dark brown alert eyes, short black hair with gray at temples, slicked back. Pale surgical scar down left neck from cortical implant removal. Right arm full brushed chrome cybernetic replacement with visible pneumatic actuators, no aesthetic plating—purely functional. Wearing black synth-weave cargo pants, gray undershirt, reinforced tactical vest with medical patches, worn black boots, long neutral leather-effect synthetic coat. Composed expression, clinical gaze, standing balanced with economical posture. Faint burn scars visible on left shoulder. Great Lakes Metropolitan Zone indoor clinical lighting, cool neon accents. Professional surgical suite or safe house setting. Cinematic cyberpunk atmosphere, clinical precision aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Onyx Shirazi, pan-global neo-noir operative, 2226. Tall lean figure (188cm) with striking warm golden-olive complexion reflecting Middle Eastern, South Asian, and Sub-Saharan heritage softened by Southeast Asian and Northern European features. Strong angular jawline and high cheekbones, slightly broad mid-face, dark brown assessing eyes with subtle epicanthic folds. Black hair with temple gray, slicked back. Full brushed chrome cybernetic right arm with visible pneumatic actuators. Thick pale surgical scar down left neck, minor burn marks visible. Wearing black synth-weave cargo pants, gray undershirt, reinforced tactical vest with medical patches, long neutral synthetic-leather coat, worn black tactical boots. Posture is balanced and efficient, gaze clinical. Standing in neon-lit surgical bay or dimly lit job briefing space, cool blue and amber lighting highlighting metallic arm and warm skin tones. GLMZ 2200s aesthetic, functional and weathered. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 58.2,
-    "Hispanic/Latin American": 13.6,
-    "North African": 10.5,
-    "Eastern European": 9.5,
-    "Pacific Islander": 8.2
+    "Middle Eastern": 31.1,
+    "South Asian": 22.4,
+    "Southeast Asian": 20.9,
+    "Northern European": 14.6,
+    "Sub-Saharan African": 6.1,
+    "Hispanic/Latin American": 4.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 22.5,
+        "Palestinian": 8.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.2
+      },
+      "Nepali": {
+        "Nepali": 16.4
+      },
+      "Indian": {
+        "Bengali": 3.8
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 16.4
+      },
+      "Vietnamese": {
+        "Vietnamese": 4.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 5.1,
+        "Icelandic": 2.6
+      },
+      "British Isles": {
+        "Irish": 3.8
+      },
+      "Germanic": {
+        "German": 3.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 5.3
+      },
+      "Southern African": {
+        "Zimbabwean": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 3.6,
+        "Ecuadorian": 1.3
+      }
+    }
+  }
 }

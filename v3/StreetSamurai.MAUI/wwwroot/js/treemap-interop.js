@@ -39,6 +39,8 @@ window.heritageTreemap = {
         function renderLevel(items, breadcrumb) {
             container.innerHTML = '';
             currentLevel = items;
+            // Debug: log first item to see serialized property names
+            if (items.length > 0) console.log('Heritage treemap data sample:', JSON.stringify(items[0]));
 
             // Breadcrumb bar
             if (breadcrumb) {
@@ -114,7 +116,7 @@ window.heritageTreemap = {
                                 name: c.name,
                                 value: c.value,
                                 pct: subTotal > 0 ? (c.value * 100.0 / subTotal).toFixed(1) : '0',
-                                subGroups: []
+                                subGroups: c.subGroups || []
                             };
                         });
                         renderLevel(childData, d.data.name + ' (' + d.data.pct + '% of GLMZ)');

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a27e56a4dc425127d726e4",
   "type": "character",
-  "name": "Drift Olofsson-Matai-Solberg",
+  "name": "Liv Olofsson-Tamale-Mensah",
   "aliases": [
     "Ada",
     "the Calculator"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "Edgewater Prism, Palladian Foundation Secondary Institute, near Lincoln and Clark",
-  "description": "Adaora is seventeen and already exhausted with being called gifted. She has her Nigerian mother's face — broad and expressive and deep brown — and her Danish-Polish father's height, and she moves through the corridors of Palladian's scholarship wing like she is calculating the structural load of every floor she walks on. Her geneware is minimal and chosen with clear deliberate aesthetic logic: color-shifting irises that she's set to cycle through cool blues and greens on a slow daily rhythm, which she chose specifically because it gave her something visually interesting to do during lectures where the material moves too slowly.\n\nShe holds a full Palladian Foundation scholarship, which is rare and comes with teeth — quarterly review, mandatory participation in Palladian's youth development pipeline, and an unspoken assumption that she will join the Palladian corporate track upon graduation. She has not yet decided whether she wants this, which is itself unusual; most scholarship students at her level have been coached into certainty. She is brilliant at applied mathematics and systems modeling and is currently running unsanctioned predictive models of GLMZ's district resource allocation, trying to prove something she suspects about how Tier 1 zones are being deliberately undernourished. She hasn't told anyone what she's found.",
+  "description": "Liv Olofsson-Tamale-Mensah is seventeen and already exhausted with being called gifted. She has her Nigerian mother's face — broad and expressive and deep brown — and her Danish-Polish father's height, and she moves through the corridors of Palladian's scholarship wing like she is calculating the structural load of every floor she walks on. Her geneware is minimal and chosen with clear deliberate aesthetic logic: color-shifting irises that she's set to cycle through cool blues and greens on a slow daily rhythm, which she chose specifically because it gave her something visually interesting to do during lectures where the material moves too slowly.\n\nShe holds a full Palladian Foundation scholarship, which is rare and comes with teeth — quarterly review, mandatory participation in Palladian's youth development pipeline, and an unspoken assumption that she will join the Palladian corporate track upon graduation. She has not yet decided whether she wants this, which is itself unusual; most scholarship students at her level have been coached into certainty. She is brilliant at applied mathematics and systems modeling and is currently running unsanctioned predictive models of GLMZ's district resource allocation, trying to prove something she suspects about how Tier 1 zones are being deliberately undernourished. She hasn't told anyone what she's found.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -165,7 +165,7 @@
     "Perpetual Student": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -217,33 +217,21 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Edgewater Prism",
-    "GLMZ",
-    "FOUNDATION",
     "Palladian Construction",
+    "FOUNDATION",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Plot 17",
+    "GLMZ",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Arcturus KS-7 'Nursery'",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Pellucid Systems",
     "Lazarus IDP-1 'Teeth'",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Morita-Antwi",
-    "Osvaldo Mensah-Kovalenko",
-    "Plot 17",
-    "Pullman Works",
-    "Ringo RT-4 'Oxcart'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "East Asian (41.5%), Northern European (28.9%), Pacific Islander (21.0%), and Central Asian (8.6%) ancestry creates a striking blend—monolingual features from her East Asian heritage form the foundation, softened and broadened by Northern European bone structure and Pacific Islander warmth. Her genetic mix produces an ambiguous beauty that resists easy categorization.",
+    "heritage": "Northern European (46.2%), Sub-Saharan African (24.6%), Hispanic/Latin American (17.6%), and Eastern European (11.6%) ancestry creates a striking blend of features. Her genetic mix produces warm, golden-bronze skin with nuanced depth—broader cheekbones and fuller lips from African heritage, balanced by Northern European bone structure and angular jaw definition, enriched by Hispanic/Latin American warmth and Eastern European eye shape. Her appearance resists easy categorization, reading as luminously in-between rather than anchored to any single ancestry.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Tall and lean with minimal excess mass; her frame reads as economical—posture that speaks to long hours seated at workstations, shoulders slightly rounded forward from habit. Swimmer's length without the bulk.",
@@ -251,8 +239,8 @@
     "hair_style": "Worn in a loose, pragmatic braid down her back; a few strands always escaping. No visible styling effort—functional rather than aesthetic.",
     "hair_length": "Long",
     "eye_color": "Augmented color-shifting irises cycling cool blues to greens on a slow daily rhythm; unusual luminescence at certain angles suggesting subdermal LED integration",
-    "skin_tone": "Warm medium brown—a balanced blend of East Asian undertones with Pacific Islander warmth and Northern European influence creating a sun-kissed golden-bronze that reads neither pale nor deep, but luminously in-between",
-    "complexion": "Clean-skinned with the faint luminosity of someone who spends most daylight hours indoors under institutional lighting. Facial structure reflects her genetic blend—slightly rounded cheekbones from East Asian heritage, balanced by broader bone structure from Northern European ancestry, with full lips and wide-set eyes that suggest Pacific Islander influence. No visible acne or blemishes; her maintenance routine is efficient, not indulgent.",
+    "skin_tone": "Warm golden-bronze with slight luminosity—a balanced blend reflecting the interplay of Northern European paleness, Sub-Saharan African richness, Hispanic/Latin American sun-kissed warmth, and Eastern European undertones. Medium depth, glowing subtly under artificial light with an almost living quality.",
+    "complexion": "Clean-skinned with the faint luminosity of someone who spends most daylight hours indoors under institutional lighting. Facial structure reflects her genetic blend—broader cheekbones and fuller features from African heritage, balanced by Northern European bone definition and Eastern European eye placement, with generous lips and well-defined facial planes. Her nose shows balanced influence of African and Hispanic heritage. No visible acne or blemishes; her maintenance routine is efficient, not indulgent.",
     "distinguishing_marks": [
       "Faint linear scar on her left inner wrist, approximately 4cm, from a childhood accident—barely visible unless light catches it directly",
       "Subdermal outline of haptic study interface visible on left forearm as a subtle geometric grid pattern under skin, approximately 8cm × 6cm, most visible when her arm is relaxed"
@@ -261,15 +249,56 @@
     "posture_movement": "Moves with efficient, economical motion—no wasted energy. When walking, her gaze is often unfocused, indicating active mental processing. Sits with legs folded under her or feet planted firmly; fidgets minimally but precisely. Her hands move when she's thinking through a problem, fingers tracing invisible patterns in the air. There's a slight tension in her shoulders that suggests constant low-level stress.",
     "clothing_style": "Tier 2 scholarship uniform aesthetic: tailored but understated. Prefers dark colors (charcoal, black, deep navy) for functionality and to minimize laundry overhead. Wears Palladian Foundation-issued compression smart-fabric jacket over plain fitted shirts; the jacket has minimal branding but precise technical seaming. Her shoes are expensive but worn—practical lab-grade grip soles from a corpo supplier. No jewelry except a simple black smart-band on her wrist (likely tracking her academic metrics). Everything is maintained but not precious; her wardrobe reads as chosen by someone with better things to think about than aesthetics."
   },
-  "image_prompt": "Drift Olofsson-Matai-Solberg, 178cm tall lean figure, warm golden-bronze skin blending East Asian, Northern European, and Pacific Islander heritage, dark brown braid with escaping strands, augmented color-shifting irises glowing cool blue-green, subdermal haptic grid visible on left forearm, minimal expression of concentration. Wearing dark charcoal Palladian Foundation smart-fabric compression jacket over fitted black shirt, lab-grade shoes, simple black smart-band. Seated at workstation in institutional lighting, shoulders slightly forward, hands mid-gesture tracing invisible patterns in air. Cyberpunk 2226 GLMZ setting, subtle LED iris glow catching overhead light, efficient posture radiating quiet intellectual intensity, cool blue-green accent lighting, cinematic depth of field --ar 2:3 --v 6",
+  "image_prompt": "Liv Olofsson-Tamale-Mensah, tall lean neo-noir scholar, 178cm, golden-bronze skin with warm luminous undertones blending Northern European, Sub-Saharan African, Hispanic, and Eastern European heritage. Broad cheekbones with fuller lips and defined facial planes, dark brown hair in long loose pragmatic braid, color-shifting augmented irises cycling blues and greens with subtle LED luminescence. Clean complexion, institutional indoor pallor with living glow. Subdermal haptic grid interface visible on left forearm under skin. Wearing dark Palladian Foundation compression smart-fabric jacket over plain fitted black shirt, expensive worn lab-grade shoes, simple black smart-band. Efficient economical posture, slight forward shoulder curve from workstation hours. Cool institutional lighting, GLMZ 2226 setting, neo-noir urban aesthetic, focused introspective expression, hands moving in thinking gesture, faint childhood scar barely visible on left wrist. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 41.5,
-    "Northern European": 28.9,
-    "Pacific Islander": 21.0,
-    "Central Asian": 8.6
+    "Northern European": 46.2,
+    "Sub-Saharan African": 24.6,
+    "Hispanic/Latin American": 17.6,
+    "Eastern European": 11.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 28.2,
+        "Dutch": 11.9
+      },
+      "Scandinavian": {
+        "Swedish": 6.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 14.1,
+        "Malian": 10.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 6.3
+      },
+      "South American": {
+        "Peruvian": 3,
+        "Colombian": 6.8
+      },
+      "Central American": {
+        "Honduran": 1.5
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 7.7,
+        "Ukrainian": 0.7
+      },
+      "Slavic South": {
+        "Bosnian": 1.9
+      },
+      "Slavic West": {
+        "Polish": 1.3
+      }
+    }
+  }
 }

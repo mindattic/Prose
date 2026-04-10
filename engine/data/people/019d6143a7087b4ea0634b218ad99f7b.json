@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Mobile through the Blackpipe Corridor, Irkalla, and the sub-levels beneath Brewer's Spine, near sub-level access near State and Van Buren",
-  "description": "Tsveta is thin and quick and almost always in motion, her energy giving the impression of something wound very tight and vibrating at a frequency just above human hearing. She has a cat-ear mod — large, mobile, dark charcoal grey — which she got not for aesthetics but for the genuine audio advantage they provide in tunnel environments; they swivel and tilt when she's listening hard, which is most of the time. Her face is narrow and expressive beneath a band of freckles across the nose and cheeks, and her eyes have patterned irises: concentric rings of amber and black that look like a sound-wave rendered in color. Her hands are nearly always occupied — she's either holding recording equipment, taking it apart, or making something new from pieces of things that used to be other things.\n\nShe is twenty-two and carries it with both the swagger of someone who has survived the deep tunnels young and the restlessness of someone who hasn't yet figured out what she's for. Her profession is strange and specific: the tunnel networks of GLMZ have peculiar acoustic properties, and certain deep junctions resonate with decades of accumulated sound — not intelligibly, not like recordings, but as dense textural phenomena. Tsveta hunts these resonance points, captures the audio with rigs she builds herself, and processes the captures into something she sells to surface archivists, experimental composers, and ELF shrine-keepers who believe the resonances carry spiritual data. She believes none of the spiritual dimension of this work and all of the beauty of it.",
+  "description": "Rafael Cervantes is thin and quick and almost always in motion, her energy giving the impression of something wound very tight and vibrating at a frequency just above human hearing. She has a cat-ear mod — large, mobile, dark charcoal grey — which she got not for aesthetics but for the genuine audio advantage they provide in tunnel environments; they swivel and tilt when she's listening hard, which is most of the time. Her face is narrow and expressive beneath a band of freckles across the nose and cheeks, and her eyes have patterned irises: concentric rings of amber and black that look like a sound-wave rendered in color. Her hands are nearly always occupied — she's either holding recording equipment, taking it apart, or making something new from pieces of things that used to be other things.\n\nShe is twenty-two and carries it with both the swagger of someone who has survived the deep tunnels young and the restlessness of someone who hasn't yet figured out what she's for. Her profession is strange and specific: the tunnel networks of GLMZ have peculiar acoustic properties, and certain deep junctions resonate with decades of accumulated sound — not intelligibly, not like recordings, but as dense textural phenomena. Rafael Cervantes hunts these resonance points, captures the audio with rigs she builds herself, and processes the captures into something she sells to surface archivists, experimental composers, and ELF shrine-keepers who believe the resonances carry spiritual data. She believes none of the spiritual dimension of this work and all of the beauty of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -165,7 +165,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mobile through the Blackpipe Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -214,50 +214,27 @@
   "registered_firearms": [],
   "related_entities": [
     "Blackpipe Corridor",
-    "Brewer's Spine",
     "Ringo Corponation Haptic Signature Recorder",
+    "Brewer's Spine",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "GLMZ",
     "The Resonance Communion",
+    "Frequency",
+    "Charcoal",
     "Bathysphere Networks",
+    "GLMZ",
     "Irkalla",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Pure Hand",
     "Gravimetric Collapse Charge GCC-9",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Arcturus CK-5 'Bloodhound'",
-    "Ambassador Silk",
-    "Ambrogio Waweru-Djordanović",
-    "Auricula Felis Modification",
-    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Glenville Sound",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Ilhan Sandstrom-Badu",
-    "Iowan Behemoth — 'Palisade'",
-    "Isadora Vukić-Nambiar",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "Narrowcast",
-    "NeuralPath HarmonicRoot Perfect Pitch Mod",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo FB-1 'Earworm'",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TESSERA TX-0 'Mimic'",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov"
+    "GLMZ",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Mixed diaspora ancestry: primarily Hispanic/Latin American (31.6%) with significant Eastern European (26.3%), Southeast Asian (22.3%), and Sub-Saharan African (18.9%) genetic contribution. Features a complex phenotype reflecting this global blend—warm medium-brown skin with olive undertones, high cheekbones suggesting Eastern European ancestry, and fine facial structure with characteristics common across her diverse heritage mix.",
+    "heritage": "Complex global diaspora: Hispanic/Latin American (33.8%) foundation blended with significant Indigenous American (18.7%), North African (18.7%), Northern European (15.0%), Sub-Saharan African (10.6%), and East Asian (3.2%) ancestry. This creates a genuinely multifaceted phenotype—warm medium-brown skin enriched by golden and olive undertones, high cheekbones with refined but slightly widened facial structure, and warm-toned complexion that reflects the convergence of Latin American, African, and Mediterranean genetics. The Indigenous American ancestry contributes subtle width across the face and strong cheekbone prominence; North African heritage adds warmth and slightly deeper undertones; Northern European ancestry refines the bone structure; African heritage contributes to warm undertones and lip fullness; East Asian ancestry adds subtle refinement to eye shape.",
     "height_cm": 164,
     "weight_kg": 52,
     "build": "Wiry and angular, all sharp joints and economical muscle; built for crawling through tight spaces and sustained motion rather than strength. Her frame suggests someone who subsists on irregular meals and constant kinetic activity.",
@@ -265,8 +242,8 @@
     "hair_style": "Pulled back in a tight, practical braid or bun; loose strands frequently escape and frame her narrow face",
     "hair_length": "Medium",
     "eye_color": "Patterned irises: concentric rings of amber and obsidian black, resembling a sound-wave visualization or a vinyl record. Sclera clear and alert.",
-    "skin_tone": "Warm medium-brown with olive undertones, scattered with freckles across the bridge of her nose, cheeks, and shoulders—a dense freckle constellation that serves as a defining feature",
-    "complexion": "Fine-featured, narrow face with high cheekbones and a sharp jawline reflecting her mixed heritage. Frequently wind-burned or dust-stained from tunnel work. Expressive—eyebrows mobile, mouth quick to animate. No makeup; her augmented irises serve as sufficient aesthetic mark.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones, scattered with freckles across the bridge of her nose, cheeks, and shoulders—a dense freckle constellation that serves as a defining feature",
+    "complexion": "Fine-featured with a slightly broader face reflecting Indigenous American and North African ancestry, high cheekbones and sharp jawline showing Northern European refinement blended with fuller lip structure from African heritage. Frequently wind-burned or dust-stained from tunnel work. Expressive—eyebrows mobile, mouth quick to animate. No makeup; her augmented irises serve as sufficient aesthetic mark.",
     "distinguishing_marks": [
       "Faint scars across her knuckles and the backs of both hands from handling rough salvage materials and broken recording equipment",
       "A thin, pale burn scar along her left forearm (about 8cm long) from a close call with electrical equipment early in her career",
@@ -276,16 +253,79 @@
     "posture_movement": "Perpetually coiled and alert, moving with quick, economical gestures. She fidgets constantly—adjusting equipment, tapping her fingers against recording apparatus, her ears rotating toward sounds others can't consciously hear. When stationary, she's rarely still; weight shifts, fingers work, eyes track. When moving through tunnels, she's fluid and low, using knees and hands as much as feet. Her energy reads as barely contained—vibrating at a frequency just slightly above rest.",
     "clothing_style": "Tier 4/5 utilitarian: salvaged work pants (grey, patched at the knees and thighs) held up with a utility belt carrying tools, batteries, and recording media. A layered top system—usually a thin, faded synthetic shirt under a sleeveless vest (black, reinforced canvas, countless pockets) that doubles as her equipment harness attachment point. Worn boots with reinforced soles (tunnel-ready). No jewelry. A heavy coat or cloak for sub-level work, threadbare but functional. Clothing is functional over aesthetic; stains and repairs are visible and accepted as part of the job."
   },
-  "image_prompt": "Rafael Cervantes, a 164cm wiry figure with warm medium-brown skin scattered with freckles across nose and shoulders, dark brown hair pulled back in a practical braid with loose strands escaping. Mixed-heritage East Asian, Southeast Asian, Eastern European, and Sub-Saharan African features reflected in high cheekbones and fine facial structure. Augmented charcoal-grey cat ears rotating independently. Custom DIY acoustic recording rig visible across chest and back with salvaged metallic components and exposed wiring. Wearing patched grey work pants, faded synthetic undershirt, reinforced black canvas sleeveless vest, worn tunnel-ready boots. Narrow face wind-burned from sub-level work, expressive features animated. Scars visible on knuckles and left forearm. Perpetually coiled posture, barely contained kinetic energy. Underground tunnel setting, dim neon and industrial lighting, cyberpunk 2226, gritty and functional, motion blur suggesting constant movement --ar 2:3 --v 6",
+  "image_prompt": "Rafael Cervantes, androgynous tunnel salvager with warm medium-brown skin, golden-olive undertones, dense freckle constellation across nose and cheeks. Sharp jawline, high prominent cheekbones, narrow angular face. Patterned cybernetic eyes with amber and obsidian concentric rings. Dark brown hair pulled back in practical braid with loose strands framing face. Charcoal-grey functional cat ears (fully mobile, twitching toward sound). Wiry 164cm frame, 52kg, coiled and alert posture. Wearing patched grey salvage work pants, thin synthetic undershirt, black reinforced canvas sleeveless vest with countless pockets serving as equipment harness attachment. DIY acoustic recording rig visible across chest and back—salvaged metal components, exposed wiring, sensor nodes, metallic patches. Worn reinforced tunnel boots. Faint electrical burn scar on left forearm. Wind-burned complexion, constantly fidgeting with equipment. GLMZ, Great Lakes Metropolitan Zone, underground tunnel setting, cool blue-grey lighting with amber equipment glow, dust and industrial atmosphere, movement blur suggesting kinetic energy, documentary photography aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 31.6,
-    "Eastern European": 26.3,
-    "Southeast Asian": 22.3,
-    "Sub-Saharan African": 18.9,
-    "East Asian": 0.9
+    "Hispanic/Latin American": 33.8,
+    "Indigenous American": 18.7,
+    "North African": 18.7,
+    "Northern European": 15,
+    "Sub-Saharan African": 10.6,
+    "East Asian": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 29.7,
+        "Puerto Rican": 4.1
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Mixtec": 7.8,
+        "Maya": 4.5
+      },
+      "Andean": {
+        "Mapuche": 6.4
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 2.6,
+        "Berber": 0.2
+      },
+      "Nile Valley": {
+        "Sudanese": 11.7,
+        "Egyptian": 1.5
+      },
+      "Maghreb": {
+        "Moroccan": 2.6,
+        "Libyan": 0.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 7.6,
+        "Finnish": 7.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 1.3
+      },
+      "Southern African": {
+        "Zimbabwean": 1.4,
+        "South African": 0.6
+      },
+      "East African": {
+        "Kenyan": 4.4,
+        "Ethiopian": 2.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 1.3,
+        "Fujianese": 0.2
+      },
+      "Korean": {
+        "Korean": 1.1
+      },
+      "Japanese": {
+        "Japanese": 0.6
+      }
+    }
+  }
 }

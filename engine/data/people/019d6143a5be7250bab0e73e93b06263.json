@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5be7250bab0e73e93b06263",
   "type": "character",
-  "name": "Delta Bustamante",
+  "name": "Delta Haraldsen",
   "aliases": [
     "Father Bart",
     "The Old Frequency"
@@ -13,7 +13,7 @@
   "age": 79,
   "status": "active",
   "location": "Edgewater Prism, the Church of the Unbroken Signal — a former lakeshore antenna building converted to a place of worship, near Clark and Addison",
-  "description": "Bartholomeus is a large man gone soft with age, with big hands that still remember physical labor and a face deeply lined by decades of lake wind. His Guinean-Polynesian heritage is legible in his size and in the traditional tatau that cover his forearms and neck — old work from his father's tradition, geometric and immaculately preserved, now supplemented by chrome prayer circuits inked over the same skin in metallic pigment that complete the patterns in a new vocabulary. He is mostly bald, with close-cropped white at the temples, and he keeps a koa wood cross at his belt alongside a small E.L.F. offering dish he has carried for forty years.\n\nFather Bart runs the largest syncretic congregation in Edgewater Prism, about three hundred people who come to him for a faith that takes both the old sacraments and the new realities seriously at once. He has buried children of people he baptized. He has presided over deaths during power failures by the light of bioluminescent congregation members. He is theologically sophisticated and genuinely unconcerned about whether this makes him orthodox — he says God arrived in GLMZ the same as everyone else, carrying everything from before and adapting. He has a notable temper that he has mostly but not entirely conquered, and a laugh that fills a room.",
+  "description": "Delta Haraldsen is a large man gone soft with age, with big hands that still remember physical labor and a face deeply lined by decades of lake wind. His Guinean-Polynesian heritage is legible in his size and in the traditional tatau that cover his forearms and neck — old work from his father's tradition, geometric and immaculately preserved, now supplemented by chrome prayer circuits inked over the same skin in metallic pigment that complete the patterns in a new vocabulary. He is mostly bald, with close-cropped white at the temples, and he keeps a koa wood cross at his belt alongside a small E.L.F. offering dish he has carried for forty years.\n\nFather Bart runs the largest syncretic congregation in Edgewater Prism, about three hundred people who come to him for a faith that takes both the old sacraments and the new realities seriously at once. He has buried children of people he baptized. He has presided over deaths during power failures by the light of bioluminescent congregation members. He is theologically sophisticated and genuinely unconcerned about whether this makes him orthodox — he says God arrived in GLMZ the same as everyone else, carrying everything from before and adapting. He has a notable temper that he has mostly but not entirely conquered, and a laugh that fills a room.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -180,7 +180,7 @@
     "Commander": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,30 +237,16 @@
     "The Bone Parish",
     "Edgewater Prism",
     "CONGREGATION",
-    "GLMZ",
     "Iowan Behemoth — 'Cathedral'",
-    "The Heritage Vault",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Heritage Vault",
     "The Pure Hand",
-    "Weathervane",
-    "Ambrogio Waweru-Djordanović",
-    "Bartholomew Siosaia-Przybyszewski",
-    "Breck Tannen",
-    "Calumet Rise",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Idris Forsberg-Quaye",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sulfur Crown Agriculture",
-    "The Congregation",
-    "The Signal"
+    "GLMZ",
+    "Weathervane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "North African (25.2%), Hispanic/Latin American (20.4%), East Asian (17.1%), Eastern European (16.3%), Sub-Saharan African (14.4%), Northern European (6.6%) — a complex global tapestry reflecting the Ubiquitous Diaspora. The genetic blend presents as warm medium-brown skin with subtle golden undertones from East Asian ancestry, deepened by North African and Sub-Saharan African heritage. Facial structure shows the broad cheekbones and slightly angular features characteristic of East Asian genetics, softened by the fuller lip shape and wider nose bridge from African ancestry groups. The overall impression is of someone whose ancestry cannot be traced to a single continental origin.",
+    "heritage": "Northern European (30.7%), Sub-Saharan African (26.0%), Southeast Asian (20.1%), Pacific Islander (8.3%), East Asian (8.2%), South Asian (6.7%) — a complex global tapestry reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm medium-brown skin with golden and reddish undertones. Facial structure shows broad cheekbones characteristic of Southeast and East Asian genetics, balanced by fuller lips and wider nose bridge from Sub-Saharan African heritage, with the bone prominence and brow structure of Northern European ancestry creating an overall harmonious blend that resists singular continental categorization.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Large-framed and broad-shouldered, softened by age and gravity into a barrel-chested heaviness. Still carries the muscularity of someone who spent decades doing physical labor, but now rounded at the middle and loose in the neck. Moves with deliberate slowness that suggests both dignity and the mechanical accommodation of an aging heart.",
@@ -268,8 +254,8 @@
     "hair_style": "Close-cropped, worn very short at the crown with slightly longer tufts at the temples",
     "hair_length": "Short",
     "eye_color": "Deep brown, slightly clouded with cataracts at the edges",
-    "skin_tone": "Warm medium-brown with golden undertones and faint reddish weathering from decades of lake wind exposure; deepened to rich mahogany across the face and neck",
-    "complexion": "Deeply lined forehead and around the eyes; pronounced nasolabial folds; loose skin at the jowls; age spots across the temples and scalp. The bone structure shows the broad cheekbones and angular features of East Asian ancestry, balanced by the fuller lips and wider nose from African heritage. Grooming is meticulous despite age—clean-shaven, skin well-maintained, suggests daily ritual care.",
+    "skin_tone": "Warm medium-brown with golden and reddish undertones, richly mahogany across face and neck from decades of lake wind exposure and the blended Sub-Saharan and Southeast Asian ancestry components",
+    "complexion": "Deeply lined forehead and around the eyes; pronounced nasolabial folds; loose skin at the jowls; age spots across the temples and scalp. Broad cheekbones and balanced proportions reflecting East Asian and Southeast Asian heritage harmonized with fuller lips and wider nose from Sub-Saharan African ancestry, with Northern European bone prominence in brow and jaw. Meticulous grooming despite age—clean-shaven, skin well-maintained.",
     "distinguishing_marks": [
       "Traditional tatau covering both forearms in geometric patterns of black ink—Polynesian ancestral work, perfectly preserved and symmetrical",
       "Chrome prayer circuits in metallic pigment overlaid across the tatau, forming new geometric completions and liturgical symbols that shimmer faintly under light",
@@ -277,21 +263,73 @@
       "A thin surgical scar along the left collarbone, approximately 8cm long, from cardiac implant installation—faded to pale pink",
       "Weathered creases across the backs of both hands, consistent with decades of manual work and age spots emerging on the knuckles"
     ],
-    "visible_augmentations": "Chrome prayer circuits in metallic pigment on forearms and neck—not cybernetic but cosmetic-devotional, meant to be visible. The cardiac support implant is subcutaneous and invisible. No visible chrome limbs, LED optics, or external mechanical augmentation.",
-    "posture_movement": "Stands with a slight forward hunch, shoulders perpetually braced as though against lake wind. Moves deliberately, with careful weight distribution suggesting awareness of cardiac limitation. Hands gesture expansively when animated or passionate; these gestures are precise and sometimes theatrical. When listening, his entire body settles into stillness. Walking pace is measured; no rushing.",
-    "clothing_style": "Wears a black wool cassock of older manufacture, well-maintained but not pristine—faint wear at the cuffs and hem. Over it, a handwoven stole in red and white geometric pattern (Polynesian weaving, family work). At his belt: a carved koa wood cross on a leather cord, and a small polished aluminum E.L.F. offering dish, both worn smooth by forty years of handling. Underneath, simple cotton shirts in white or cream. No jewelry except a worn silver ring on his left ring finger. Footwear is black leather shoes, resoled multiple times. Tier 4 aesthetic—functionally dressed, resistant to status markers, but invested in quality and meaning rather than cheap replacement."
+    "visible_augmentations": "Chrome prayer circuits in metallic pigment on forearms and neck—not cybernetic but cosmetic-devotional, meant to be visible. The cardiac support implant is subcutaneous and invisible.",
+    "posture_movement": "Stands with a slight forward hunch, shoulders perpetually braced as though against lake wind. Moves deliberately, with careful weight distribution suggesting awareness of cardiac limitation. Hands gesture expansively when animated or passionate; these gestures are precise and sometimes theatrical. When listening, entire body settles into stillness. Walking pace is measured; no rushing.",
+    "clothing_style": "Black wool cassock of older manufacture, well-maintained but not pristine—faint wear at cuffs and hem. Over it, a handwoven stole in red and white geometric pattern (Polynesian weaving, family work). At his belt: a carved koa wood cross on a leather cord and a small polished aluminum E.L.F. offering dish, both worn smooth by forty years of handling. Underneath, simple cotton shirts in white or cream. No jewelry except a worn silver ring on left ring finger. Black leather shoes, resoled multiple times. Tier 4 aesthetic—functionally dressed, resistant to status markers, invested in quality and meaning."
   },
-  "image_prompt": "Delta Bustamante, 188cm tall, warm medium-brown skin with golden undertones weathered to mahogany across face and neck, white close-cropped hair with tufts at temples, deep brown eyes clouded with age. Large-framed barrel-chested build softened by decades, moving with measured deliberation. Deeply lined face with pronounced nasolabial folds, age spots, meticulous grooming. East Asian cheekbones balanced with fuller African ancestry features. Wearing black wool cassock with red and white Polynesian geometric stole. Forearms and neck covered in black tatau geometric patterns overlaid with shimmering chrome prayer circuits forming liturgical symbols. Surgical scar pale along left collarbone. Koa wood cross and aluminum offering dish at belt, worn smooth. Hands weathered and age-spotted from decades of labor. Standing with slight forward hunch, shoulders braced against invisible wind. Black leather shoes resoled many times. Cyberpunk 2226 Great Lakes Metropolitan Zone, warm ambient indoor lighting, contemplative spiritual mood, Tier 4 aesthetic, dignity and cardiac awareness in posture. --ar 2:3 --v 6",
+  "image_prompt": "A distinguished elderly man of mixed global ancestry, warm medium-brown skin with mahogany tones, white close-cropped hair, deep brown eyes clouded slightly with age. Large-framed, broad-shouldered with barrel chest, carrying dignified heaviness of decades. Face shows deep lines, broad cheekbones blending East Asian structure with fuller lips and wide nose from African heritage, Northern European brow prominence. Meticulous grooming, clean-shaven. Forearms and neck covered in black geometric Polynesian tatau work with overlaid shimmering chrome prayer circuits that catch the light. Wears a black wool cassock with handwoven red and white Polynesian geometric stole. Carved koa wood cross hangs from leather cord at his belt. Stands with slight forward hunch, hands relaxed but expressive. Weathered hands show age spots and creases from decades of labor. Faint surgical scar visible on left collarbone. Setting: Great Lakes Metropolitan Zone interior, soft natural light filtering through windows, GLMZ era. Mood: contemplative, dignified, spiritually grounded despite advanced age and cardiac augmentation. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 25.2,
-    "Hispanic/Latin American": 20.4,
-    "East Asian": 17.1,
-    "Eastern European": 16.3,
-    "Sub-Saharan African": 14.4,
-    "Northern European": 6.6
+    "Northern European": 30.7,
+    "Sub-Saharan African": 26,
+    "Southeast Asian": 20.1,
+    "Pacific Islander": 8.3,
+    "East Asian": 8.2,
+    "South Asian": 6.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 30.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 9.7
+      },
+      "East African": {
+        "Rwandan": 3.7
+      },
+      "Central African": {
+        "Congolese": 7.3,
+        "Angolan": 5.3
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 3.4
+      },
+      "Vietnamese": {
+        "Vietnamese": 8.5
+      },
+      "Filipino": {
+        "Tagalog": 8.2
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Ni-Vanuatu": 8.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.9
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      },
+      "Chinese": {
+        "Shanghainese": 2.1
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 2.4,
+        "Tamil Sri Lankan": 4.3
+      }
+    }
+  }
 }

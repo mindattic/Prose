@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68c77ed9636cd21b7f7a2c0",
   "type": "character",
-  "name": "Flux Cissé",
+  "name": "Renata Calvillo",
   "aliases": [
     "Niel",
     "Scratch"
@@ -13,7 +13,7 @@
   "age": 15,
   "status": "active",
   "location": "Edgewater Prism (Tessera Meridian Preparatory Academy campus), near Clark and Addison",
-  "description": "Othniel is tall for fifteen, lanky in the way of someone who grew fast and hasn't filled out yet, with close-cropped hair and the kind of face that looks younger when he smiles and older when he doesn't. His skin is deep brown, his eyes have cosmetic patterned irises — concentric gold rings on dark brown, a birthday gift from his aunt that he told his academy supervisors was a medical device — and he wears the Tessera prep uniform with the collar perpetually half-popped because it chafes. He carries a Tessera-issued study tablet everywhere and a personally modified secondary deck stuffed inside his uniform jacket that he calls 'the Argument.'\n\nOn paper, Othniel Babić-Asantewaa is a model scholarship student: strong grades in systems architecture and applied logic, quiet in class, respectful to faculty. Off paper, he's been quietly mapping the academy's internal network for six months for reasons he tells himself are purely intellectual curiosity. He grew up in Benton Divide, tier one, and the scholarship changed everything — new clothes, new address, new vocabulary — but the kids at Edgewater Prism can smell where he came from, and the faculty treat him like a project. He hacks because it is the one place he is genuinely better than the people around him and they will never know it.",
+  "description": "Renata Calvillo is tall for fifteen, lanky in the way of someone who grew fast and hasn't filled out yet, with close-cropped hair and the kind of face that looks younger when he smiles and older when he doesn't. His skin is deep brown, his eyes have cosmetic patterned irises — concentric gold rings on dark brown, a birthday gift from his aunt that he told his academy supervisors was a medical device — and he wears the Tessera prep uniform with the collar perpetually half-popped because it chafes. He carries a Tessera-issued study tablet everywhere and a personally modified secondary deck stuffed inside his uniform jacket that he calls 'the Argument.'\n\nOn paper, Renata Calvillo Babić-Asantewaa is a model scholarship student: strong grades in systems architecture and applied logic, quiet in class, respectful to faculty. Off paper, he's been quietly mapping the academy's internal network for six months for reasons he tells himself are purely intellectual curiosity. He grew up in Benton Divide, tier one, and the scholarship changed everything — new clothes, new address, new vocabulary — but the kids at Edgewater Prism can smell where he came from, and the faculty treat him like a project. He hacks because it is the one place he is genuinely better than the people around him and they will never know it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -169,7 +169,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism (Tessera Meridian Preparatory Academy campus)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -220,21 +220,11 @@
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Gold",
-    "Aphelion",
-    "Deku Barrientos-Osei",
-    "MERIDIAN",
-    "Narrowcast",
-    "Nurlan Morita-Antwi",
-    "Osvaldo Mensah-Kovalenko",
-    "Praevex",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Open Syllabus",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Gold"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Southeast Asian (39.7%) with significant Sub-Saharan African (26.0%), Central Asian (13.7%), Indigenous American (10.9%), and Hispanic/Latin American (9.7%) ancestry. Complex multiethnic heritage creating distinctive blended features.",
+    "heritage": "Hispanic/Latin American (68.4%) with significant Eastern European (17.0%) and East Asian (14.6%) ancestry. The dominant Latin American warmth creates a golden-brown foundation, enriched by Eastern European bone structure that sharpens his features and East Asian ancestry contributing to distinctive eye shape and cheekbone prominence. The blend reads as warm-toned with subtle complexity—neither fully aligned with any single heritage but distinctly of their synthesis.",
     "height_cm": 185,
     "weight_kg": 68,
     "build": "Lanky and still-growing, with long limbs that don't quite coordinate yet. Narrow chest and shoulders, minimal muscle definition — the frame of a teenager on the edge of his physical potential but not there yet.",
@@ -242,26 +232,55 @@
     "hair_style": "Close-cropped, precise fade on the sides, kept neat despite a tendency to run his hand through it when thinking",
     "hair_length": "Short",
     "eye_color": "Augmented: deep brown iris with concentric gold rings, cosmetic patterning, bright and deliberate-looking",
-    "skin_tone": "Medium-deep brown with warm undertones and subtle golden undertones from Southeast Asian ancestry mixed with Sub-Saharan African depth",
-    "complexion": "Young face with sharp cheekbones and a narrow jaw showing Southeast Asian and Central Asian influences blended with Sub-Saharan African features. Clear skin, no blemishes. Expression tends toward seriousness or neutrality; his smile transforms him into someone younger, which he's learned to use. Small scar on his left eyebrow — a childhood injury from Benton Divide days he doesn't talk about.",
+    "skin_tone": "Medium-warm golden brown with honey undertones reflecting his dominant Hispanic/Latin American heritage. The Eastern European and East Asian ancestry creates subtle warmth layering and depth rather than cool pallor—a rich, complex medium tone that catches light warmly.",
+    "complexion": "Young face with sharp, prominent cheekbones and narrow jaw showing strong Eastern European bone structure influence combined with the warm coloring of Hispanic/Latin American heritage and the eye shape characteristic of East Asian ancestry. Clear skin, no blemishes. Expression tends toward seriousness or neutrality; his smile transforms him into someone younger, which he's learned to use. Small scar on his left eyebrow — a childhood injury from Benton Divide days he doesn't talk about.",
     "distinguishing_marks": [
-      "Thin scar on the left eyebrow, roughly 2cm, pale against his skin tone",
+      "Thin scar on the left eyebrow, roughly 2cm, pale against his golden-brown skin tone",
       "The augmented eyes are immediately noticeable — gold concentric rings on dark brown, clearly not natural, catching light when he looks directly at someone"
     ],
     "visible_augmentations": "Cosmetic patterned irises with concentric gold rings. No visible cyber hardware; he keeps everything internal or hidden.",
     "posture_movement": "Tall and slightly self-conscious about it. He tends to hunch slightly in group settings, as if trying not to take up too much space. When focused on a problem, he goes very still. Moves with quiet precision — no wasted motion, minimal drawing of attention. Fidgets with tablet edges or his uniform collar when anxious.",
     "clothing_style": "Tessera Meridian Preparatory Academy uniform: pressed navy blazer with school crest, white oxford shirt worn with the collar perpetually half-popped (a small rebellion and because it chafes), charcoal trousers tailored to accommodate his height, dark shoes. Over everything, a fitted grey pullover hoodie (non-regulation, worn in down-time). The uniform fits well but looks like it's worn by someone who grew up in a different tier — the fit is too precise, too new, like he's aware he's playing a role. Always carries a Tessera-issued study tablet visibly; the secondary deck called 'the Argument' stays hidden in his jacket."
   },
-  "image_prompt": "Flux Cissé, 185cm tall teenage boy with medium-deep warm brown skin blending Southeast Asian and Sub-Saharan African heritage, sharp cheekbones, narrow jaw. Black close-cropped hair with precise fade. STRIKING FEATURE: Augmented deep brown eyes with concentric gold rings catching light deliberately. Thin pale scar on left eyebrow. Wearing Tessera Meridian navy blazer over white oxford (collar half-popped), charcoal trousers, dark shoes, fitted grey hoodie over top. Lanky build, long limbs, narrow shoulders, minimal muscle. Posture slightly hunched despite height, quiet precise movement. Holding Tessera tablet. Serious neutral expression in 2226 cyberpunk academy setting, neon accent lighting catching his augmented eyes, sleek modern interior with holographic displays, cool blue-grey atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Renata Calvillo, 185cm tall lean teenage figure in Tessera Meridian Preparatory Academy navy blazer and charcoal trousers, grey regulation-breaking pullover hoodie, GLMZ. Medium-warm golden-brown skin tone with honey undertones reflecting blended Hispanic/Latin American, Eastern European, and East Asian ancestry. Sharp Eastern European cheekbones, warm complexion, distinctive eye shape from East Asian heritage. Augmented eyes with deep brown iris and concentric gold rings catching light. Short black precise fade haircut. Thin pale scar on left eyebrow. Lanky build, narrow shoulders, minimalist movement. Half-popped white oxford collar, study tablet visible. Self-conscious slight hunch, quiet precision, serious expression. Great Lakes Metropolitan Zone interior lighting, neon accents, contemplative mood, slightly out of place in elite academy setting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 39.7,
-    "Sub-Saharan African": 26.0,
-    "Central Asian": 13.7,
-    "Indigenous American": 10.9,
-    "Hispanic/Latin American": 9.7
+    "Hispanic/Latin American": 68.4,
+    "Eastern European": 17,
+    "East Asian": 14.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 12.8,
+        "Haitian": 33.2
+      },
+      "Mexican": {
+        "Mexican": 22.4
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 2.9
+      },
+      "Slavic West": {
+        "Czech": 4.9
+      },
+      "Slavic East": {
+        "Russian": 5.3,
+        "Ukrainian": 3.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.5
+      },
+      "Chinese": {
+        "Sichuanese": 0.1
+      }
+    }
+  }
 }

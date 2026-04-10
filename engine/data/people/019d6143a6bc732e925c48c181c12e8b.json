@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6bc732e925c48c181c12e8b",
   "type": "character",
-  "name": "Cleo Benali",
+  "name": "Cleo Olofsson",
   "aliases": [
     "Rory Needles",
     "The Pharmacist"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows, Irkalla district — operates from a converted laundry kiosk two blocks from the Deepwell Station entrance, near sub-level access near Dearborn and Jackson",
-  "description": "Rúairí Bello-Nazarov has the kind of face that makes people feel immediately like he already knows what they need, which is either a gift or a vulnerability depending on the day. He is lean and medium-height, olive-skinned with his Uzbek grandmother's dark eyes and his Nigerian grandfather's wide mouth, with natural color-changing hair he keeps in tight curls that shift from blue-black to deep copper depending on his mood — an older geneware modification that he got cheap and has grown fond of. He wears clean clothes, which is notable in the Narrows, and keeps his hands conspicuously steady at all times, which is also notable.\n\nHe is the thing people need him to be when they come to him, which is not the same as being dishonest — he is genuinely trying to help. He believes harm reduction is a moral act and that the people who have criminalized it are the ones who should be ashamed. He has a rigorous self-taught pharmacological education that would probably have qualified him for a Helix Biosystems lab position if he had the citizenship grade. He prays to the Deepwell E.L.F. — a transit spirit he's come to think of as his silent partner — and leaves small offerings of stabilized compound residue in its shrine nook every time he passes.",
+  "description": "Cleo Olofsson has the kind of face that makes people feel immediately like he already knows what they need, which is either a gift or a vulnerability depending on the day. He is lean and medium-height, olive-skinned with his Uzbek grandmother's dark eyes and his Nigerian grandfather's wide mouth, with natural color-changing hair he keeps in tight curls that shift from blue-black to deep copper depending on his mood — an older geneware modification that he got cheap and has grown fond of. He wears clean clothes, which is notable in the Narrows, and keeps his hands conspicuously steady at all times, which is also notable.\n\nHe is the thing people need him to be when they come to him, which is not the same as being dishonest — he is genuinely trying to help. He believes harm reduction is a moral act and that the people who have criminalized it are the ones who should be ashamed. He has a rigorous self-taught pharmacological education that would probably have qualified him for a Helix Biosystems lab position if he had the citizenship grade. He prays to the Deepwell E.L.F. — a transit spirit he's come to think of as his silent partner — and leaves small offerings of stabilized compound residue in its shrine nook every time he passes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -171,7 +171,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,56 +243,103 @@
     "Grandmother",
     "The CEO",
     "Palladian Construction",
-    "Irkalla",
-    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Dearborn Forge",
     "Residue (I Still Have Your Feed)",
-    "ARCHIVE",
+    "Irkalla",
     "Copper",
-    "The Pure Hand",
-    "Arcturus MX-1 'Cerberus'",
-    "Crucible Industries Cerberus-357 'Hellhound'",
-    "Ezio Kaboré-Malhotra",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo Corponation",
-    "Slagworks Industrial",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TK-4 'Hellhound'",
-    "The Heritage Vault",
-    "The Narrows"
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly East Asian and North African with significant Central Asian, Hispanic/Latin American, and Sub-Saharan African ancestry. The combination creates distinctive features: East Asian bone structure and eye shape blended with North African and Sub-Saharan warmth in skin tone and facial proportions. Central Asian heritage visible in cheekbone prominence and eye-set. A truly global genetic tapestry.",
+    "heritage": "Ubiquitous Diaspora genetic synthesis: Southeast Asian foundation (24.6%) provides bone structure and characteristic eye-set, layered with nearly equal Central Asian (23.3%) and Northern European (23.6%) ancestry creating prominent cheekbones and subtle undertone variation. Indigenous American (16.1%), Hispanic/Latin American (6.9%), and Sub-Saharan African (5.5%) heritage blend warmth into the midface and mouth structure. The result is a genuinely cosmopolitan phenotype where no single ancestry dominates—instead creating dimensional complexity across facial planes.",
     "height_cm": 173,
     "weight_kg": 68,
     "build": "Lean and economical — the kind of wiry frame that comes from insufficient calories and constant movement. No excess, no bulk. Shoulders narrow but held with conscious control.",
     "hair_color": "Mood-responsive geneware: oscillates between deep blue-black and copper-bronze depending on emotional state and ambient biochemistry",
     "hair_style": "Tight, well-maintained curls worn close to the scalp",
     "hair_length": "Short",
-    "eye_color": "Dark brown, nearly black with the characteristic monolid crease of East Asian heritage, set deep and alert",
-    "skin_tone": "Warm golden-bronze complexion with subtle red and ochre undertones — the result of East Asian base genetics warmed by North African and Sub-Saharan heritage. The skin holds light differently across planes of the face, creating subtle dimensional depth.",
-    "complexion": "Angular face with moderate-width cheekbones characteristic of Central Asian ancestry, softened by the fuller mouth structure reflecting North African and Sub-Saharan lineage. Slightly gaunt quality suggests chronic sleep deprivation and careful nutrition. Skin is clean and well-maintained despite his Tier 5 location — an anomaly that signals discipline. Faint dark circles under eyes are permanent fixtures. Hands are notably steady, fingers long and dexterous.",
+    "eye_color": "Dark brown, nearly black with characteristic Southeast Asian eye-set, set deep and alert",
+    "skin_tone": "Warm golden-bronze with olive undertones—Southeast Asian base enriched by Central Asian prominence and warmed further by Sub-Saharan and Hispanic heritage. Skin holds light with dimensional subtlety across facial planes, appearing almost luminous in certain angles.",
+    "complexion": "Angular face with prominent Central Asian cheekbones balanced by fuller mouth structure reflecting Sub-Saharan and Hispanic lineage. Southeast Asian eye-shape and eye-set form the perceptual anchor. Warm ochre and terra undertones create midface depth. Slightly gaunt quality suggests chronic sleep deprivation and careful nutrition. Skin is clean and well-maintained despite Tier 5 location—an anomaly signaling discipline. Faint dark circles under eyes are permanent fixtures. Hands are notably steady, fingers long and dexterous.",
     "distinguishing_marks": [
       "Small ritual burn scar on inside of right wrist, deliberately placed and healed well — marker of a private spiritual practice",
       "Three thin white lines running horizontally across the knuckles of his left hand, old defensive scars from unspecified violence",
       "Faint chemical staining (slight discoloration) on the tips of his index and middle fingers from compound handling and testing"
     ],
-    "visible_augmentations": "Hair geneware is obvious — the mood-responsive color shifts are distinctive and recognizable to repeat customers. The olfactory augmentation is not visibly obvious but his frequent subtle sniffing and the faint red irritation around his right nostril hint at its presence. No chrome, no obvious external hardware.",
+    "visible_augmentations": "Hair geneware is obvious — the mood-responsive color shifts between blue-black and copper-bronze are distinctive and recognizable to repeat customers. The olfactory augmentation is not visibly obvious but his frequent subtle sniffing and the faint red irritation around his right nostril hint at its presence. No chrome, no obvious external hardware.",
     "posture_movement": "Stands with economical stillness — hands kept visible and low, movements deliberate and non-threatening. His steadiness is cultivated; he moves like someone who has learned that trembling hands inspire distrust in a pharmacist. When listening to a customer, he leans in slightly with genuine focus. Gait is quick but unhurried.",
     "clothing_style": "Clean clothes in a district where cleanliness is conspicuous — worn synthetics in muted colors (grey, charcoal, deep olive), well-maintained but visibly cheap. A long-sleeved shirt or thin jacket worn even in warm weather, covering his ritual scar. No corporate branding. Practical pockets. Footwear is functional and worn but not falling apart. Overall appearance: someone who respects himself and his customers despite operating in a Tier 5 location. His cleanliness reads as both a choice and a quiet act of resistance."
   },
-  "image_prompt": "Cyberpunk 2226: Cleo Benali, a 173cm lean figure with warm golden-bronze skin reflecting East Asian, North African, Central Asian, and Sub-Saharan African heritage. Dark brown eyes with characteristic East Asian monolid, sharp cheekbones, full mouth. Short tight curls that shift between deep blue-black and copper-bronze (mood-responsive geneware). Faint dark circles, gaunt but disciplined appearance. Wearing muted grey synthetics and long sleeves despite warmth, hiding a ritual scar on right wrist. Hands steady and visible, showing old defensive scars on left knuckles and chemical staining on fingertips. Clean, well-maintained appearance striking against gritty Tier 5 environment. Economic stillness, focused posture, standing in dim neon-lit narrow corridor with rain-slicked surfaces. Moody cyberpunk lighting, atmospheric mist, professional pharmacist bearing. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Cleo Olofsson, 173cm lean wiry pharmacist with mood-responsive copper-bronze to blue-black geneware curls, dark brown alert eyes with Southeast Asian eye-set, angular face with prominent Central Asian cheekbones softened by warm golden-bronze skin tone with olive undertones blending Sub-Saharan and Hispanic warmth, gaunt focused expression with permanent dark circles, ritual burn scar on right wrist, chemical-stained fingertips, steady hands, long dexterous fingers, muted grey-charcoal long-sleeved synthetic shirt, practical worn but maintained footwear, standing with economical stillness in Tier 5 location pharmacy interior, faint red irritation around nostril hint of olfactory augmentation, neon-dim overhead lighting casting shadows on angular features, cinematic depth of field, moody atmospheric ambiance, defiant cleanliness in gritty environment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 32.3,
-    "North African": 31.6,
-    "Central Asian": 15.7,
-    "Hispanic/Latin American": 11.5,
-    "Sub-Saharan African": 8.9
+    "Southeast Asian": 24.6,
+    "Northern European": 23.6,
+    "Central Asian": 23.3,
+    "Indigenous American": 16.1,
+    "Hispanic/Latin American": 6.9,
+    "Sub-Saharan African": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 17.2,
+        "Tagalog": 7.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 0.7,
+        "Norwegian": 2
+      },
+      "Germanic": {
+        "German": 10.8,
+        "Austrian": 2
+      },
+      "British Isles": {
+        "Scottish": 8.1
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 4.5,
+        "Hazara": 5.3
+      },
+      "Turkic": {
+        "Uyghur": 9.3,
+        "Kazakh": 2
+      },
+      "Mongolic": {
+        "Kalmyk": 2.2
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 7.7,
+        "Nahua": 3.7
+      },
+      "Plains Nations": {
+        "Lakota": 4.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 3.9
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.3,
+        "Dominican": 2.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 4.3,
+        "Kenyan": 1.2
+      }
+    }
+  }
 }

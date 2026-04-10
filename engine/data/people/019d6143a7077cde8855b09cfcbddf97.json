@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7077cde8855b09cfcbddf97",
   "type": "character",
-  "name": "Vikram Kariuki-Chatterjee-Szczypiński",
+  "name": "Arden Kariuki-Chatterjee-Somchai",
   "aliases": [
     "Chip",
     "The Butcher's Boy"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Undertow, operating out of a submerged-level cold storage unit beneath the Menomonee Gulch flood barriers, near Armitage and Milwaukee",
-  "description": "Tshiamo is lean in the way people get when they've been hungry enough times that the body learns to run efficient. His Tswana-Botswanan heritage shows in his cheekbones and dark complexion; his Croatian-Mexican grandmother gave him an incongruous surname and a slight curl to his black hair, worn short and without product. He has bioluminescent striping across his collarbones — a cheap modification he got at sixteen from a back-alley geneware parlor, blue-white lines that glow faintly through the neckline of his shirts. He keeps his hands very clean. This is the thing people notice: immaculate nails, no blood under them, even when he's come directly from work.\n\nTshiamo did not choose this profession romantically or willingly. He slid into it at nineteen when a hospital orderly job at the Aurochs Medical Complex auxiliary was his only income and a mid-level harvesting crew offered him Φ200 to look the other way on a body that came through post-mortem. Now he is the one sourcing, and he maintains a tight internal logic about it: he doesn't harvest from the living, he doesn't touch people who haven't already been declared dead by someone else first, and he tells himself that line is the only one that matters. He is wrong about how solid that line is, and some part of him knows it.",
+  "description": "Arden Kariuki-Chatterjee-Somchai is lean in the way people get when they've been hungry enough times that the body learns to run efficient. His Tswana-Botswanan heritage shows in his cheekbones and dark complexion; his Croatian-Mexican grandmother gave him an incongruous surname and a slight curl to his black hair, worn short and without product. He has bioluminescent striping across his collarbones — a cheap modification he got at sixteen from a back-alley geneware parlor, blue-white lines that glow faintly through the neckline of his shirts. He keeps his hands very clean. This is the thing people notice: immaculate nails, no blood under them, even when he's come directly from work.\n\nArden Kariuki-Chatterjee-Somchai did not choose this profession romantically or willingly. He slid into it at nineteen when a hospital orderly job at the Aurochs Medical Complex auxiliary was his only income and a mid-level harvesting crew offered him Φ200 to look the other way on a body that came through post-mortem. Now he is the one sourcing, and he maintains a tight internal logic about it: he doesn't harvest from the living, he doesn't touch people who haven't already been declared dead by someone else first, and he tells himself that line is the only one that matters. He is wrong about how solid that line is, and some part of him knows it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -178,7 +178,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Undertow",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,39 +244,20 @@
     "The Pure Hand",
     "The Coffin Nails",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Nightlight",
-    "The Milwaukee Core",
-    "Arcturus BH-2 'Marrow'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Emeka Johansson-Orozco",
-    "Fanta Popov-Adjei",
-    "Grosse Pointe Enclosure",
-    "Jefferson Switch",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Meridian Weartech ShockWeave SW-3 'Thistle'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Ringo AX-12 'Harvester'",
-    "SentryGuard PepperShot PS-1 'Sting'",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Fathom Line",
-    "The Human Baseline Alliance"
+    "Nightlight"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (Bantu-region) dominant with South Asian, Hispanic/Latin American, and Eastern European admixture—a striking genetic tapestry reflecting the Ubiquitous Diaspora. Predominantly Sub-Saharan African features with secondary influences: warm brown undertones from South Asian heritage, subtle warmth from Hispanic/Latin American ancestry, and minor Eastern European bone structure contribution creating a uniquely blended phenotype.",
+    "heritage": "Complex Pan-Global admixture reflecting the Ubiquitous Diaspora: Sub-Saharan African dominance (37.5%) forms the primary phenotypic foundation, with significant Southeast Asian (19.0%) and South Asian (15.7%) secondary influences, East Asian (14.5%) tertiary contribution, Hispanic/Latin American (10.7%) warmth, and minimal Northern European (2.6%) refinement. This genetic tapestry creates a uniquely blended phenotype: strong Sub-Saharan African facial structure and bone prominence paired with Southeast Asian angularity, South Asian skin undertones and contours, East Asian eye shape characteristics and luminosity, and subtle Latin American warmth in overall coloration.",
     "height_cm": 175,
     "weight_kg": 62,
     "build": "Lean and efficient—the kind of thin that comes from sustained scarcity rather than choice. Minimal muscle definition, but wiry rather than fragile. His frame suggests someone who has learned to run on less.",
     "hair_color": "Black with slight natural curl",
     "hair_style": "Short, unstyled, no product—functional rather than intentional",
     "hair_length": "Short",
-    "eye_color": "Dark brown, alert and measuring",
-    "skin_tone": "Warm deep brown complexion with rich undertones—the result of strong Sub-Saharan African heritage blended with South Asian warmth and Latin American depth. Slight ashen quality from time spent in cold storage environments, but underlying warmth remains visible.",
-    "complexion": "Prominent cheekbones with strong Sub-Saharan African definition, angular jawline with subtle South Asian contours. Broad nasal bridge with refined proportions reflecting mixed ancestry. Skin is clear but shows faint fatigue lines around the eyes. Clean-shaven, meticulous grooming—no scarring on face.",
+    "eye_color": "Dark brown with slight epicanthic fold influence, alert and measuring",
+    "skin_tone": "Rich warm deep brown with complex multi-layered undertones: strong Sub-Saharan African base luminosity enhanced by South Asian golden warmth, Southeast Asian depth, East Asian radiance, and Latin American warmth creating nuanced chromatic complexity. Slight ashen quality from time spent in cold storage environments, but underlying warmth remains visible beneath surface pallor.",
+    "complexion": "Prominent high cheekbones with strong Sub-Saharan African definition blended with Southeast Asian angularity and South Asian facial contours. Angular jawline shows East Asian bone structure influence. Broad nasal bridge with refined proportions reflecting Pan-Asian heritage contributions. Eyes show slight epicanthic fold influence from East and Southeast Asian ancestry. Skin is clear but shows faint fatigue lines around the eyes. Clean-shaven, meticulous grooming—no scarring on face.",
     "distinguishing_marks": [
       "Bioluminescent blue-white subdermal striping across both collarbones and upper chest, visible through thin fabric—lines run roughly parallel to the clavicle and glow faintly in low light, giving off an eerie quality when illuminated",
       "No visible scars or tattoos; hands are notably clean with well-maintained nails and no discoloration or calluses despite the nature of his work"
@@ -285,15 +266,70 @@
     "posture_movement": "Moves with deliberate, economical precision—no wasted motion. Posture is slightly forward-bent, shoulders rounded as if perpetually hunching against cold. Hands rest still and flat; he does not gesture. His gaze is constant and measuring, the look of someone pricing things.",
     "clothing_style": "Tier 4-5 utilitarian: thermal-lined base layers visible at the neck and wrists, dark grey or black long-sleeve undershirt, heavy insulated jacket (synthetic fabric, no branding, multiple interior pockets), cargo pants with reinforced thigh pockets and heavy zippers. Worn black slip-on boots with good tread—practical for wet subterranean work. No jewelry. Clothes are clean but aged, maintained rather than replaced. Small evidence of stains carefully treated out."
   },
-  "image_prompt": "Vikram Kariuki-Chatterjee-Szczypiński, lean 175cm cyberpunk operative with deep warm brown complexion reflecting Sub-Saharan African, South Asian, and Latin American heritage. Sharp defined cheekbones, angular jawline, dark alert eyes. Short black naturally-curled hair, clean-shaven. Wearing dark grey thermal base layers and heavy black insulated jacket, cargo pants, worn black boots. Faint bioluminescent blue-white subdermal striping glowing across collarbones and upper chest visible at neckline. Posture hunched slightly forward, economical movement, measuring gaze. Standing in dimly-lit subterranean corridor or cold storage facility, neon blue augmentation striping casting eerie glow against dark clothing and wet concrete walls. Cyberpunk 2226, moody atmospheric lighting, cold color palette with glowing accents. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Arden Kariuki-Chatterjee-Somchai: lean 175cm man with rich warm deep brown skin blending Sub-Saharan African, Southeast Asian, South Asian, East Asian, and Latin American heritage. Prominent high cheekbones with angular jawline, dark brown eyes with subtle epicanthic folds, short black curled hair. Clean-shaven with alert, measuring gaze and faint fatigue lines. Wears dark grey thermal base layers under heavy insulated black jacket, cargo pants with reinforced pockets, worn black boots. Bioluminescent blue-white subdermal striping glows faintly across collarbones and upper chest visible at neckline. Posture slightly forward-bent, shoulders rounded, hands still and flat. Cold storage facility ambient lighting, eerie glow from bioluminescent implants in low light, wet subterranean setting. Meticulous grooming despite lean efficiency. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 62.4,
-    "South Asian": 17.8,
-    "Hispanic/Latin American": 15.2,
-    "Eastern European": 4.6
+    "Sub-Saharan African": 37.5,
+    "Southeast Asian": 19,
+    "South Asian": 15.7,
+    "East Asian": 14.5,
+    "Hispanic/Latin American": 10.7,
+    "Northern European": 2.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 33.7
+      },
+      "East African": {
+        "Somali": 3.8
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 9.1
+      },
+      "Indonesian": {
+        "Javanese": 9.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 15.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.9
+      },
+      "Japanese": {
+        "Japanese": 1.6
+      },
+      "Chinese": {
+        "Fujianese": 4.7,
+        "Mandarin Northern": 4.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 6.1
+      },
+      "South American": {
+        "Ecuadorian": 3.8,
+        "Colombian": 0.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 1.8
+      },
+      "Germanic": {
+        "German": 0.7,
+        "Austrian": 0.1
+      }
+    }
+  }
 }

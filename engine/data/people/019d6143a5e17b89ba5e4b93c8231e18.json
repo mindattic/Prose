@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e17b89ba5e4b93c8231e18",
   "type": "character",
-  "name": "Noor Ghorbani-Tovar",
+  "name": "Elu Tofauti-Morimoto",
   "aliases": [
     "Ced",
     "Ghost Shift"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Meridian Core (works), lives in Calumet Rise, near State and Monroe",
-  "description": "Cédric is medium-height and angular, with warm brown skin, high cheekbones, and the kind of face that is easy to forget in a crowd — something they have cultivated deliberately. Their hair is kept very short and they have no cosmetic mods, no visible augments, nothing that catches the eye. They wear the grey uniform of the Meridian Core cleaning contract with an invisibility that is almost architectural. In twenty years of night-shift cleaning, they have become functionally transparent to the Tier 3 and 4 workers who pass them in corridors, and they have decided this is power rather than humiliation, though on some nights that decision costs them.\n\nCédric is Congolese-Norwegian by heritage and grew up in Calumet Rise speaking three languages and learning a fourth (Lingala, from recordings of a grandmother they never met). They are precise, observant, and privately very funny — their humor lives entirely in their head and comes out only in the cleaning-crew group chat, where their running commentary on the things they find in corporate trash has become legendary among their colleagues. They have a small shrine to the building ELF — whom they call the Hum — built into their cleaning cart from salvaged parts: a reflective panel, a coil of copper, and a tiny speaker that plays white noise.",
+  "description": "Elu Tofauti-Morimoto is medium-height and angular, with warm brown skin, high cheekbones, and the kind of face that is easy to forget in a crowd — something they have cultivated deliberately. Their hair is kept very short and they have no cosmetic mods, no visible augments, nothing that catches the eye. They wear the grey uniform of the Meridian Core cleaning contract with an invisibility that is almost architectural. In twenty years of night-shift cleaning, they have become functionally transparent to the Tier 3 and 4 workers who pass them in corridors, and they have decided this is power rather than humiliation, though on some nights that decision costs them.\n\nElu Tofauti-Morimoto is Congolese-Norwegian by heritage and grew up in Calumet Rise speaking three languages and learning a fourth (Lingala, from recordings of a grandmother they never met). They are precise, observant, and privately very funny — their humor lives entirely in their head and comes out only in the cleaning-crew group chat, where their running commentary on the things they find in corporate trash has become legendary among their colleagues. They have a small shrine to the building ELF — whom they call the Hum — built into their cleaning cart from salvaged parts: a reflective panel, a coil of copper, and a tiny speaker that plays white noise.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -173,7 +173,7 @@
     "Social Chameleon": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core (works)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,42 +233,24 @@
     "Meridian Core",
     "Calumet Rise",
     "Grandmother",
-    "Static",
     "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
     "The Heritage Vault",
+    "Tessera Resonance Projector RP-5 'Tuning Fork'",
     "Copper",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Ezio Kaboré-Malhotra",
-    "Ferrogate Transit",
-    "Kadiatou Bergstrom-Konate",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Makena Johanssen-Diallo",
-    "Meridian Weartech ShockWeave SW-3 'Thistle'",
-    "Palladian Construction",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo RB-1 'Judas Goat'",
-    "Tafara Quiñones-Saarinen",
-    "Tessera Nexus Town Car",
-    "The Human Baseline Alliance",
-    "Transit Mind",
-    "Tshiamo Vukić-Arellano"
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern with significant Northern European admixture, supplemented by Hispanic/Latin American and Sub-Saharan African ancestry—a product of the Ubiquitous Diaspora. The genetic blend creates a warm, complex phenotype that resists singular categorization.",
+    "heritage": "Predominantly Indigenous American (45.7%) with significant East Asian (27.8%) and Pacific Islander (23.2%) admixture, plus minor Sub-Saharan African ancestry (3.3%)—a product of the Ubiquitous Diaspora. The genetic blend creates a warm, complex phenotype with strong Amerindian bone structure enhanced by East Asian facial geometry, Pacific Islander skin richness, and Sub-Saharan undertones that resist singular categorization. A truly multihemispheric face.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Angular and lean, with long limbs and minimal body fat; the build of someone who moves efficiently through space and doesn't waste energy",
     "hair_color": "Natural dark brown, nearly black",
     "hair_style": "Cropped close to the scalp in a practical, maintenance-minimal cut",
     "hair_length": "Short",
-    "eye_color": "Warm brown with slight amber undertones",
-    "skin_tone": "Warm medium brown with golden undertones—a subtle blend of Middle Eastern and Northern European heritage with deeper notes from Sub-Saharan African ancestry, creating a nuanced tan that shifts in different light",
-    "complexion": "High, prominent cheekbones with a slightly broader facial structure reflecting Middle Eastern heritage; clean-shaven; minimal grooming beyond functionality; skin shows the early signs of age—faint lines around the eyes from two decades of night-shift fluorescent lighting, but otherwise well-maintained and unblemished",
+    "eye_color": "Deep brown with warm amber undertones",
+    "skin_tone": "Warm medium-tan brown with golden and subtle reddish undertones—a rich, complex blend reflecting strong Indigenous American and Pacific Islander heritage, East Asian influence, and warm Sub-Saharan depth, creating a nuanced complexion that shifts between golden and bronze in different light",
+    "complexion": "High, prominent cheekbones with slightly broader facial structure reflecting Indigenous American heritage; straight nose with subtle bridge definition characteristic of Pacific Islander and Amerindian ancestry blended with East Asian refinement; faint Sub-Saharan warmth in undertones around the temples; clean-shaven; minimal grooming beyond functionality; skin shows the early signs of age—faint lines around the eyes from two decades of night-shift fluorescent lighting, but otherwise well-maintained and unblemished",
     "distinguishing_marks": [
       "Small scar on the left knuckle, thin and white, from a cleaning equipment accident in their early twenties"
     ],
@@ -276,15 +258,62 @@
     "posture_movement": "Upright but relaxed, with a tendency to move close to walls and perimeters rather than through open space. Their movements are economical and quiet—two decades of night-shift work have taught them to be nearly silent. They have the posture of someone who has learned to be looked through.",
     "clothing_style": "Invariably the standard-issue grey uniform of Meridian Core's cleaning contract—functional grey overshirt and trousers, both slightly faded from repeated washing. Practical steel-toed boots, union-approved. A faded grey cap when working. Off-shift, they wear similar neutral colors: greys, blacks, muted blues. Tier 4 working-class baseline, nothing that marks them as trying to climb or stand out. Everything is clean but worn."
   },
-  "image_prompt": "Noor Ghorbani-Tovar, a 172cm lean angular figure with warm golden-brown skin reflecting Middle Eastern and Northern European heritage. Dark hair cropped close to scalp, warm brown eyes with amber undertones, high prominent cheekbones, clean-shaven with faint lines from years of night shifts. Wearing faded standard-issue grey uniform—overshirt and trousers, steel-toed boots, a worn grey cap. Standing in a dimly-lit industrial corridor, fluorescent strips casting cool light across their face. Posture relaxed but alert, positioned near a wall. Subtle scar on left knuckle visible. Cyberpunk 2226 Great Lakes Metropolitan Zone, gritty and utilitarian, mood of quiet efficiency and deliberate invisibility. --ar 2:3 --v 6",
+  "image_prompt": "Elu Tofauti-Morimoto, mixed-heritage East Asian-Indigenous American-Pacific Islander facial features, warm medium-tan complexion with golden undertones, high cheekbones, deep brown eyes with amber warmth, short dark hair cropped close, angular lean build 172cm tall, wearing faded grey Meridian Core cleaning uniform and steel-toed boots, standing near industrial wall in dim fluorescent lighting, relaxed but alert posture, slight frown lines from two decades of night shifts, no augmentations visible, GLMZ Great Lakes Metropolitan Zone, moody cool blues and greys, early morning before dawn shift, photorealistic, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 58.4,
-    "Northern European": 28.5,
-    "Hispanic/Latin American": 6.6,
-    "Sub-Saharan African": 6.5
+    "Indigenous American": 45.7,
+    "East Asian": 27.8,
+    "Pacific Islander": 23.2,
+    "Sub-Saharan African": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 4.5,
+        "Ojibwe": 25.3
+      },
+      "Mesoamerican": {
+        "Maya": 1.4,
+        "Mixtec": 5.9
+      },
+      "Plains Nations": {
+        "Muscogee": 7.1,
+        "Lakota": 1.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 5.5,
+        "Hakka": 3.7
+      },
+      "Korean": {
+        "Korean": 5.5
+      },
+      "Japanese": {
+        "Japanese": 13.1
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 15.2
+      },
+      "Polynesian": {
+        "Tokelauan": 4.6,
+        "Samoan": 3.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 1.1,
+        "Tanzanian": 1.1
+      },
+      "Southern African": {
+        "South African": 0.7,
+        "Zambian": 0.4
+      }
+    }
+  }
 }

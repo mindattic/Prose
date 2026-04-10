@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f770bfa9e89b3053961073",
   "type": "character",
-  "name": "Atlas Balogun",
+  "name": "Atlas Balasanyan",
   "aliases": [
     "Thess",
     "Vox"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Meridian Core, Gage Circuit research cluster, near State and Monroe",
-  "description": "Thessaly has a face that people describe as 'always mid-thought' — slightly parted lips, eyes that track something no one else can see, a faint frown of concentration that strangers sometimes misread as disapproval. They are medium height, with warm brown skin, natural hair worn in a large puff that they absentmindedly touch when thinking, and bioluminescent patches along their jaw and temples that shift between soft green and pale gold depending on their mood — geneware they got at twenty-two as a kind of bold declaration and now simply live with. They dress practically: cargo layers, good shoes, always a secondary input device clipped somewhere on their person.\n\nThessaly is intellectually volcanic. They generate hypotheses the way some people generate small talk — constantly, involuntarily, often before they've said hello. Their field is formally classified as xenolinguistics, but what they actually do is build interpretive frameworks for E.L.F. communication, a pursuit that most of their colleagues consider either brilliant or unhinged. They believe E.L.F.s have a form of language that predates human digital infrastructure by conceptual millennia. They have partial evidence for this. The partial-ness keeps them awake.",
+  "description": "Atlas Balasanyan has a face that people describe as 'always mid-thought' — slightly parted lips, eyes that track something no one else can see, a faint frown of concentration that strangers sometimes misread as disapproval. They are medium height, with warm brown skin, natural hair worn in a large puff that they absentmindedly touch when thinking, and bioluminescent patches along their jaw and temples that shift between soft green and pale gold depending on their mood — geneware they got at twenty-two as a kind of bold declaration and now simply live with. They dress practically: cargo layers, good shoes, always a secondary input device clipped somewhere on their person.\n\nAtlas Balasanyan is intellectually volcanic. They generate hypotheses the way some people generate small talk — constantly, involuntarily, often before they've said hello. Their field is formally classified as xenolinguistics, but what they actually do is build interpretive frameworks for E.L.F. communication, a pursuit that most of their colleagues consider either brilliant or unhinged. They believe E.L.F.s have a form of language that predates human digital infrastructure by conceptual millennia. They have partial evidence for this. The partial-ness keeps them awake.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -192,7 +192,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,27 +251,16 @@
     "Pullman Works",
     "the_meridian_office_park",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Circuit",
     "Nesting Doll",
+    "Atlas",
+    "Cargo Tacos",
     "The Pale Mile",
-    "Gold",
-    "Bioacoustic Communication Membrane",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Praevex",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Temur Achebe-Lindqvist",
-    "The Fathom Line",
-    "The Question",
-    "University Spine",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Gold"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Primarily Sub-Saharan African with significant Indigenous American and East Asian ancestry, complemented by Pacific Islander heritage. Complex multi-continental genetic expression creating distinctive phenotypic blending.",
+    "heritage": "Predominantly Middle Eastern ancestry (52.7%) with substantial Southeast Asian (21.7%) and South Asian (13.9%) genetic contributions, complemented by Northern European (9.6%) and minor Hispanic/Latin American (2.1%) ancestry. This multi-continental blend creates distinctive phenotypic characteristics: the angular facial structure and darker coloring of Middle Eastern heritage combine with the slightly rounder facial contours and warm skin tones from Southeast and South Asian ancestry, tempered by the lighter undertones from Northern European admixture. The result is a uniquely blended appearance reflecting the Ubiquitous Diaspora aesthetic.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and wiry, with the posture of someone who forgets to eat during work — all angles and restless energy, shoulders slightly rounded from hunching over displays",
@@ -279,8 +268,8 @@
     "hair_style": "Large, well-maintained puff with visible texture; frequently touched and adjusted while thinking or speaking, sometimes compressed against one side from prolonged headset wear",
     "hair_length": "Medium (approximately 12-15cm natural crown height)",
     "eye_color": "Deep brown, alert and mobile — eyes habitually scan as if reading text in the air",
-    "skin_tone": "Warm deep brown with subtle golden and olive undertones from the convergence of Sub-Saharan African, Indigenous American, East Asian, and Pacific Islander ancestry",
-    "complexion": "Clean-shaven face with defined cheekbones showing mixed ancestry features, slightly parted lips (resting state), forehead often creased with concentration lines. Warm-toned skin is well-maintained but shows signs of irregular sleep — occasional darkness under eyes. Minor tension marks between brows from frequent frowning during analysis. Facial structure reflects the blended heritage with subtle epicanthal variation and high cheekbone prominence.",
+    "skin_tone": "Warm golden-brown with subtle olive undertones, reflecting the dominant Middle Eastern heritage blended with the warmer tones of Southeast and South Asian ancestry, with delicate cooling from Northern European admixture creating a complexion that shifts in different lighting",
+    "complexion": "Clean-shaven face with defined cheekbones showing characteristic Middle Eastern-Southeast Asian blending, slightly parted lips (resting state), forehead often creased with concentration lines. The facial structure displays strong Middle Eastern angularity in the nose and cheekbone prominence, softened by slightly rounder contours and fuller facial proportions from Southeast and South Asian heritage. Eyes are set with the alert intensity common across the ancestry blend. Skin shows signs of irregular sleep — occasional darkness under eyes and minor tension marks between brows from frequent frowning during analysis. Complexion is well-maintained but reveals the wear of extended computing sessions.",
     "distinguishing_marks": [
       "Bioluminescent subcutaneous patches along jawline and temples, currently displaying soft green/pale gold mood-reactive coloration — most visible in low-light conditions",
       "Fine silvery scar along left temple (approximately 3cm), partially obscured by bioluminescence but visible in profile — likely from early geneware installation procedure at age 22"
@@ -289,15 +278,62 @@
     "posture_movement": "Habitually leans forward when listening or thinking, weight distributed unevenly as if ready to pivot toward a terminal. Frequent hand gestures during speech — fingers often mime typing or drawing patterns in air. Movement is efficient but somewhat abstracted, as if part of their attention is always elsewhere. When deeply focused, becomes nearly motionless except for eyes and lips (subvocal pattern recognition)",
     "clothing_style": "Tier 3 practical-academic aesthetic with Tier 2 quality components. Favors cargo jackets and vests in muted tones (grey, dark blue, black) with multiple pockets and reinforced stress points. Wears layered synthetic blends designed for temperature regulation during long computing sessions. Good athletic shoes (understated brands like Meridian Standard Issue or recycled synthetics) kept in excellent condition. Always has secondary input device — usually a wrist-mounted haptic pad or neural stylus — clipped to belt or vest pocket. Minimal jewelry except for a faint silver band on left ring finger (possibly symbolic rather than romantic). Generally appears as someone who thinks about clothing as functional architecture rather than expression, yet manages to appear intellectually purposeful rather than disheveled"
   },
-  "image_prompt": "Atlas Balogun, 168cm lean-framed data analyst in 2226 Great Lakes Metropolitan Zone, warm deep brown skin with golden-olive undertones reflecting Sub-Saharan African, Indigenous American, East Asian and Pacific Islander heritage. Well-maintained medium puff of natural black hair. Sharp cheekbones, alert deep brown eyes scanning habitually. Soft bioluminescent green-gold patches glowing along jawline and temples, faint silvery scar on left temple. Wearing muted grey cargo jacket with reinforced stress points and multiple pockets over layered synthetic blend, black haptic input gloves with neural-interface nodules at wrists, understated athletic shoes. Leaning forward with hand gestures mid-motion, fingers miming input patterns in air. Minimal silver ring on left ring finger. Low-light cyberpunk office setting with subtle neon ambient glow catching bioluminescent facial augmentation. Intellectual, purposeful, abstracted focus. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Balasanyan, 2226 neo-noir character, 168cm lean build, medium natural black puff hair with texture. Warm golden-brown complexion with olive undertones reflecting Middle Eastern, Southeast Asian, and South Asian heritage blend. Deep brown alert eyes. Clean-shaven defined cheekbones. Bioluminescent green-gold patches glowing along jawline and temples in soft ambient lighting. Fine silvery scar visible on left temple in profile. Wearing layered grey cargo jacket with reinforced pockets and synthetic blend layers, dark athletic shoes, black haptic input gloves with neural interface nodules at wrists. Silver band on left ring finger. Leaning forward with absorbed focus, hands gesturing in mid-air as if typing. Subvocal concentration, slightly rounded shoulders from terminal work. Dim office environment with neon accent lighting catching bioluminescence. GLMZ 2200s aesthetic, intellectual purposeful bearing, efficient movement. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 35.7,
-    "Indigenous American": 27.3,
-    "East Asian": 22.6,
-    "Pacific Islander": 14.4
+    "Middle Eastern": 52.7,
+    "Southeast Asian": 21.7,
+    "South Asian": 13.9,
+    "Northern European": 9.6,
+    "Hispanic/Latin American": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 39.2
+      },
+      "Kurdish": {
+        "Kurdish": 13.5
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 21.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.3
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 5.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 4.8
+      },
+      "Germanic": {
+        "Austrian": 1.1
+      },
+      "British Isles": {
+        "Irish": 2.5,
+        "English": 1.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 1.5
+      },
+      "South American": {
+        "Venezuelan": 0.6
+      }
+    }
+  }
 }

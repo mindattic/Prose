@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7347e178fe5bef243515793",
   "type": "character",
-  "name": "Binta Appiah-Kristjánsson",
+  "name": "Aidana Baiseitov-Zaragoza",
   "aliases": [
     "Zephy",
     "The Eel"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Kessler Interchange, operates between Kessler and Deepwell Station, near sub-level access near State and Van Buren",
-  "description": "Zephyrine is a broad-shouldered woman with deep umber skin and close-cropped silver-threaded locs she keeps pinned under her Ferrogate operator's cap during shifts. Her left eye is a corporate-issue Ferrogate transit mod — pale grey iris with a subtle amber ring that pulses when she's interfacing with the train's systems — but the right eye is her mother's: dark brown and very still, the kind of eye that misses nothing. She moves through the crowded interchange with the particular grace of someone who has learned to navigate bodies in motion, always finding the gap, always half a step ahead of the surge. A small shrine to the Transit Mind E.L.F. hangs from her cab dashboard — a looped wire figure she wound herself, hung with data chips from old passes.\n\nShe is patient in the way that long experience makes you patient, not the soft kind but the kind with iron underneath. Passengers who give her grief get exactly one warning, delivered in a voice so level it takes a moment to realize it was a threat. On slow runs through the Blackpipe Corridor at 0300, she sometimes hums old Ghanaian highlife her grandmother used to play — her Danish side never gave her music, only punctuality, which she also kept.",
+  "description": "Aidana Baiseitov-Zaragoza is a broad-shouldered woman with deep umber skin and close-cropped silver-threaded locs she keeps pinned under her Ferrogate operator's cap during shifts. Her left eye is a corporate-issue Ferrogate transit mod — pale grey iris with a subtle amber ring that pulses when she's interfacing with the train's systems — but the right eye is her mother's: dark brown and very still, the kind of eye that misses nothing. She moves through the crowded interchange with the particular grace of someone who has learned to navigate bodies in motion, always finding the gap, always half a step ahead of the surge. A small shrine to the Transit Mind E.L.F. hangs from her cab dashboard — a looped wire figure she wound herself, hung with data chips from old passes.\n\nShe is patient in the way that long experience makes you patient, not the soft kind but the kind with iron underneath. Passengers who give her grief get exactly one warning, delivered in a voice so level it takes a moment to realize it was a threat. On slow runs through the Blackpipe Corridor at 0300, she sometimes hums old Ghanaian highlife her grandmother used to play — her Danish side never gave her music, only punctuality, which she also kept.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -179,7 +179,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -202,33 +202,21 @@
     "Hamtramck Enclave",
     "Deepwell Station",
     "Grandmother",
+    "Noodle Train",
     "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "GLMZ",
     "Meridian Core",
     "Lacuna Genomics",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus KS-7 'Nursery'",
+    "Line 7 Bar",
     "The Pale Mile",
     "Iron",
-    "Déjà Vu",
-    "Arcturus KS-7 'Nursery'",
-    "Bogdan Achebe-Svanstrom",
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Lazarus Pharmaceuticals Adrenal Phantom Graft — 'The Surge'",
-    "Line 7 Bar",
-    "Noodle Train",
-    "Slagworks Industrial",
-    "Switchback",
-    "The Interchange",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Transit Mind",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+    "Déjà Vu"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Multiheric blend: Sub-Saharan African (23.4%), East Asian (21.8%), Pacific Islander (21.4%), Eastern European (21.2%), Hispanic/Latin American (12.2%). The genetic mosaic produces a complexion that defies singular categorization—deep warm umber with subtle golden undertones that shift in different light, informed by the African and Pacific Islander ancestry dominant in her genetic profile, with the Eastern European contribution adding slight cool undertones to her undertone palette.",
+    "heritage": "Central Asian-dominant ancestry (62.8%) forms the foundation of her genetic makeup, enriched by substantial Sub-Saharan African heritage (24.5%), with meaningful Hispanic/Latin American admixture (11.1%) and minimal Eastern European traces (1.6%). This genetic combination produces striking facial geometry—the high, prominent cheekbones and eye-set of Central Asian ancestry harmonized with the broader facial planes and full features characteristic of African heritage, while Hispanic ancestry adds warmth and subtle roundness to her overall structure. Her appearance reflects the Ubiquitous Diaspora's genetic reality: a seamless synthesis rather than distinct traits.",
     "height_cm": 178,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid without heaviness; muscular through the torso and arms from years of gripping transit controls and moving through crowded stations. Carries herself with economical strength.",
@@ -236,8 +224,8 @@
     "hair_style": "Close-cropped locs, typically pinned under Ferrogate operator's cap during shifts",
     "hair_length": "Short",
     "eye_color": "Left eye: pale grey with amber ring (corporate-issue transit mod); Right eye: dark brown, natural",
-    "skin_tone": "Deep umber with warm golden undertones, subtly enriched by East Asian and Pacific Islander ancestry; slight cool undertone complexity from Eastern European heritage creates a multidimensional complexion that reads differently under fluorescent versus natural light",
-    "complexion": "Weathered in the way of someone who has spent 41 years in controlled environments and fluorescent light. Minimal makeup. Skin is clear with refined bone structure—cheekbones prominent but not severe, suggesting the blended ancestry's facial geometry. Jaw defined with subtle fullness in the cheeks. Expression habitually composed and observant. Small horizontal creases between her brows suggest years of focused concentration. Facial features carry the symmetric balance of her mixed heritage: neither distinctly African nor Asian nor European, but a harmonious genetic synthesis.",
+    "skin_tone": "Deep warm brown with rich golden undertones—the result of Central Asian ancestry as primary heritage blended with Sub-Saharan African warmth and Latin American depth. Complexion has natural luminosity that shifts subtly across light spectrums: deepens to burnished mahogany in lower light, brightens to warm honey-gold under fluorescent station lighting, develops subtle bronze warmth in natural daylight.",
+    "complexion": "Weathered by 41 years in controlled environments and fluorescent light, yet skin maintains clarity and refined definition. Minimal makeup. Bone structure is striking: high, prominent cheekbones characteristic of Central Asian ancestry, balanced by the broader facial planes and fuller cheeks from African heritage. Jaw is defined with subtle natural fullness. Expression habitually composed and observant. Small horizontal creases between brows mark decades of focused concentration. Facial features reflect harmonious genetic synthesis across her mixed Central Asian, Sub-Saharan African, and Hispanic lineage.",
     "distinguishing_marks": [
       "Small burn scar on the inside of her right wrist, thin and precise, from early transit training accident with hot cooling line.",
       "Faint linear scarring on her left temple, barely visible, likely from old interface calibration procedure with the ocular mod.",
@@ -247,16 +235,45 @@
     "posture_movement": "Moves with practiced grace through crowded spaces, always finding gaps in foot traffic half a step ahead of surge patterns. Stands with weight balanced, shoulders back but not rigid. Hands rest naturally at sides or on transit controls. Her right eye (natural) is in constant micro-motion, scanning; her left eye (augmented) occasionally goes distant when processing system data. Walks with purpose, never hesitates in her chosen path.",
     "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit operator uniform: charcoal grey regulation shirt with embroidered company patch, darker grey trousers with reinforced knees, steel-toed boots scuffed from station platform work. Off-duty: practical layers appropriate to Bronzeline tier housing; worn denim, maintenance-grade synthetic jackets in greys and blacks, functional rather than fashionable. Always wears a small wire E.L.F. transit shrine pendant or keeps similar talisman accessible."
   },
-  "image_prompt": "Binta Appiah-Kristjánsson, 178cm tall transit operator, deep umber skin with golden undertones, close-cropped black locs pinned under grey operator's cap, defined jawline and prominent cheekbones reflecting multiheric East Asian-Pacific Islander-African-Eastern European ancestry blend. Left eye augmented with pale grey iris and pulsing amber ring, right eye dark brown natural. Titanium cochlear port barely visible behind left ear. Muscular torso in charcoal grey Ferrogate regulation shirt with company patch, darker grey reinforced trousers, scuffed steel-toed boots. Small E.L.F. transit shrine pendant at neck. Thin precise burn scar visible on right inner wrist, faint linear temple scarring. Posture balanced and purposeful, hands at sides, expression composed and observant. Standing in fluorescent-lit transit station with soft blue emergency lighting, mild grain from security camera aesthetic. Cyberpunk 2226 Great Lakes Metropolitan Zone. Cinematic, photorealistic, atmospheric --ar 2:3 --v 6",
+  "image_prompt": "Aidana Baiseitov-Zaragoza, 41-year-old Ferrogate transit operator, standing in neon-lit station corridor, GLMZ. Tall athletic woman with deep warm brown skin with golden undertones, striking high cheekbones and refined facial features blending Central Asian geometry with broader African heritage planes, dark eyes with left eye showing pale grey cybernetic iris with amber pulsing ring. Close-cropped black locs with silver threading pinned under grey operator's cap. Charcoal Ferrogate uniform shirt, dark grey reinforced trousers, scuffed steel-toed boots. Small titanium cochlear port visible behind left ear. Composed expression, weight balanced in practiced stance. Fluorescent and neon lighting reflecting off her luminous skin tone, creating warm golden highlights. Subtle burn scar visible on right wrist. Background: crowded transit platform with blur of movement, holographic transit displays, cool blue-grey station architecture with warm neon accents. Mood: alert, professional, observant. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 23.4,
-    "East Asian": 21.8,
-    "Pacific Islander": 21.4,
-    "Eastern European": 21.2,
-    "Hispanic/Latin American": 12.2
+    "Central Asian": 62.8,
+    "Sub-Saharan African": 24.5,
+    "Hispanic/Latin American": 11.1,
+    "Eastern European": 1.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 62.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 10.8,
+        "Congolese": 1.5
+      },
+      "East African": {
+        "Ethiopian": 10.7,
+        "Tanzanian": 1.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 11.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 1.5
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.1
+      }
+    }
+  }
 }

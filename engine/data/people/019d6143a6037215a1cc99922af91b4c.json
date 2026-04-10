@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6037215a1cc99922af91b4c",
   "type": "character",
-  "name": "Vale Mwangi-Jaramillo",
+  "name": "Vale Kang-Shirazi",
   "aliases": [
     "Exo",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Kedzie and Division",
-  "description": "Erkin Inoue-Aidoo is compact and densely muscled, built low to the ground like something designed to survive impacts. At 37, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a fixer out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nErkin Inoue-Aidoo has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
+  "description": "Vale Kang-Shirazi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 37, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a fixer out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVale Kang-Shirazi has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.39,
@@ -262,7 +262,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,33 +278,12 @@
     "The Narrows Compact",
     "Ashfield",
     "The Gradient Compact",
-    "Slagworks Industrial",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
-    "Arcturus Exo-Runner Frame",
-    "Bioelectric Muscle Fiber",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Dzemal Acholonu-Patagiri",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nkechi Alvarado-Ostrowski",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (69.5%) with significant Hispanic/Latin American (27.4%) and minor Central Asian (3.1%) ancestry. Complex phenotype reflecting East African and West African roots blended with Caribbean/Latin American genetics, with subtle Central Asian bone structure influence.",
+    "heritage": "Predominantly East Asian (41.9%) with substantial Pacific Islander (19.0%) and Sub-Saharan African (16.8%) ancestry, layered with Middle Eastern (9.8%), Southeast Asian (8.5%), and South Asian (4.0%) heritage. The phenotype is distinctly hybrid — East Asian bone structure and eye geometry enriched by African facial depth and warmth, Pacific Islander robustness and sun-darkened undertones, with subtle Middle Eastern olive notes and South Asian width through the face creating a luminous, complex appearance that reflects true global mixing.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and densely muscled, low center of gravity — built for confined spaces and vertical movement. Shoulders broad relative to frame, legs thick with visible synthetic fiber bundling beneath skin.",
@@ -312,8 +291,8 @@
     "hair_style": "Pulled back tight, military-practical",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and unreadable",
-    "skin_tone": "Deep warm brown with reddish-golden undertones, reflecting the blend of Sub-Saharan African depth with Hispanic/Latin American warmth and subtle Central Asian influence visible in cheekbone structure",
-    "complexion": "Weathered but not aged — high, defined cheekbones with slight Central Asian flare. Broad nose with deep nasal bridge characteristic of Sub-Saharan ancestry. Full lips with natural darker pigmentation. Scars on knuckles and forearms show use rather than decay. Minimal makeup. Jaw set in habitual neutrality. No soft edges.",
+    "skin_tone": "Rich warm bronze — the luminous interplay of East Asian golden undertones deepened by African and Pacific Islander sun-responsiveness, with subtle Middle Eastern olive and South Asian warmth creating a mid-to-deep complexion with distinctive catch-light properties.",
+    "complexion": "High, defined cheekbones with East Asian structure broadened and softened by African and Pacific Islander heritage. Varied epicanthic fold reflecting mixed ancestry across both eyes. Broad nose with substantial nasal bridge from African and South Asian heritage, moderate flare at base. Full lips with natural darker pigmentation from multiple ancestry lines. Monolid variation across eyelids showing East Asian and African genetic contribution. Scars on knuckles and forearms show use rather than decay. Minimal makeup. Jaw set in habitual neutrality. No soft edges.",
     "distinguishing_marks": [
       "Parallel burn scars on left ribs, faint but visible when unclothed — old thermal damage, Narrows incident",
       "Three-stitch scar along right eyebrow, silvered from age",
@@ -323,14 +302,71 @@
     "posture_movement": "Economical and precise. Stands with weight distributed low. Moves without wasted motion — every step calibrated. Eyes track exits and high ground automatically. Hands rest open, fingers slightly curved as if ready to grip or climb. When still, she's genuinely still.",
     "clothing_style": "Tier 3-4 practical: reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, soft-soled boots with aggressive treads. No logos or corp affiliation. Neutral colors. Everything fitted for movement. One worn leather carry pouch on hip. No jewelry. A smart-linked watch on left wrist — old model, functional, not flash."
   },
-  "image_prompt": "Vale Mwangi-Jaramillo, compact athletic woman of mixed Sub-Saharan African and Hispanic/Latin American heritage, 158cm tall, deep warm brown skin with golden undertones, high defined cheekbones, strong broad nose, dark alert eyes. Black hair pulled back tight with silver threading at temples. Visible chrome gecko-grip implants on fingertips catching light. Scarred hands, three-stitch scar along right eyebrow. Wearing worn charcoal reinforced cargo pants, microflex jacket with reflective threading, aggressive-tread boots. Leather carry pouch on hip, old smart-linked watch. Standing with economical precision, weight low, hands open and ready. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool neon lighting, industrial urban setting, atmosphere of controlled tension and quiet competence. --ar 2:3 --v 6",
+  "image_prompt": "Vale Kang-Shirazi, 158cm compact muscular frame, rich bronze skin with warm golden-brown undertones, high defined cheekbones blending East Asian structure with African and Pacific Islander heritage, varied monolids, broad nose with substantial bridge, full darker lips, dark alert eyes. Black hair pulled back tight with silver at temples. Visible chrome gecko-grip implants on fingertips, chrome ankle seam-work, scars on knuckles and webbed between thumbs. Wearing reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, aggressive-tread boots. Old functional smart-linked watch. Economical posture, low center of gravity, hands curved ready to grip. GLMZ Great Lakes Metropolitan Zone, neon-lit urban vertical space, caught mid-movement against industrial architecture, moody blue and amber lighting, gritty tactical aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 69.5,
-    "Hispanic/Latin American": 27.4,
-    "Central Asian": 3.1
+    "East Asian": 41.9,
+    "Pacific Islander": 19,
+    "Sub-Saharan African": 16.8,
+    "Middle Eastern": 9.8,
+    "Southeast Asian": 8.5,
+    "South Asian": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 41.9
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Palauan": 4.2,
+        "Marshallese": 4.1
+      },
+      "Melanesian": {
+        "Fijian": 6.2,
+        "Papua New Guinean": 4.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 2,
+        "Nigerian": 4.8
+      },
+      "Southern African": {
+        "South African": 4.5,
+        "Mozambican": 1.8
+      },
+      "East African": {
+        "Ugandan": 3.7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 9.8
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 1.7
+      },
+      "Indonesian": {
+        "Balinese": 2.5
+      },
+      "Vietnamese": {
+        "Vietnamese": 4.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 2.5
+      },
+      "Nepali": {
+        "Nepali": 1.5
+      }
+    }
+  }
 }

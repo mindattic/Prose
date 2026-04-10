@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6107aab9d5893dd85b6aa74",
   "type": "character",
-  "name": "Sterling Salazar",
+  "name": "Sterling Thakur",
   "aliases": [
     "Dusk",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Fatoumata Baranov-Fosu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Sterling Thakur is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.46,
@@ -264,7 +264,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,33 +278,15 @@
   "registered_firearms": [],
   "related_entities": [
     "Ironveil Canopy",
-    "GLMZ",
     "The Unfinished Theorem",
+    "Chicago",
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Cem Lund-Bangura",
-    "Crucible RE-2 'Receptionist'",
-    "Irontide Tidal Energy",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Glass Garden' Caltrops",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Glass Garden",
-    "The Heritage Vault"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (38.3%) / Hispanic-Latin American (34.2%) / East Asian (27.5%) — a tri-continental genetic blend. Rich melanin expression with warm undertones, facial structure reflecting the synthesis of West African, Iberian-Indigenous, and East Asian ancestry. High cheekbones and defined jawline from African and Asian heritage, with broader nose bridge characteristic of Sub-Saharan genetics softened by East Asian eye structure.",
+    "heritage": "South Asian (26.3%) / Hispanic-Latin American (24.0%) / Northern European (19.9%) / Southeast Asian (18.6%) / Sub-Saharan African (11.2%) — a true global genetic synthesis. Warm-toned melanin expression across a complexion that bridges continents, with facial structure reflecting South Asian bone prominence, Latin American warmth, Southeast Asian eye geometry, and Sub-Saharan African depth softened by Northern European cooler undertones. High, defined cheekbones from South Asian heritage, balanced jawline with subtle width from Hispanic ancestry, almond-shaped eye structure from Southeast Asian genetics, and rich melanin undertones from Sub-Saharan ancestry creating a uniquely integrated appearance.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Athletic and lean with defined musculature — dancer's flexibility combined with fighter's efficiency. No wasted mass. Shoulders broad but not bulky, core visibly tight.",
@@ -312,8 +294,8 @@
     "hair_style": "Pulled back in a practical high bun or tight cornrows; styled for function, not aesthetics",
     "hair_length": "Medium (when down), typically secured",
     "eye_color": "Deep brown, alert and calculating",
-    "skin_tone": "Rich warm brown with golden undertones — smooth melanin-dense complexion reflecting the warmth of Sub-Saharan and Latin American ancestry balanced by the cooler porcelain undertones of East Asian genetics, creating a luminous mid-tone that catches light distinctly",
-    "complexion": "High, prominent cheekbones shaped by African and East Asian ancestry, defined jawline with subtle width characteristic of Hispanic heritage. Skin well-maintained but not pampered — minimal scarring on face, suggesting professional discretion. A thin white line runs from left temple toward ear (old blade wound, poorly healed). Her expression defaults to neutral assessment. Facial structure shows the beautiful synthesis of three continental lineages — neither fully one nor the other, but wholly integrated.",
+    "skin_tone": "Warm caramel-bronze with golden and deep undertones — melanin-rich complexion reflecting the warmth of South Asian, Hispanic, and Sub-Saharan ancestry balanced with cooler porcelain notes of Northern European and Southeast Asian genetics, creating a luminous mid-to-deep tone that catches light distinctly",
+    "complexion": "High, prominent cheekbones shaped by South Asian and Southeast Asian ancestry, defined jawline with subtle width characteristic of Hispanic heritage, eye shape reflecting Southeast Asian genetics with the depth and warmth of South Asian and Sub-Saharan pigmentation. Skin well-maintained but not pampered — minimal scarring on face, suggesting professional discretion. A thin white line runs from left temple toward ear (old blade wound, poorly healed). Her expression defaults to neutral assessment. Facial structure shows the beautiful synthesis of five continental lineages — neither fully one nor the other, but wholly integrated.",
     "distinguishing_marks": [
       "Thin white scar running from left temple toward ear — approximately 4cm, from a blade encounter",
       "Tattoo on right forearm: three interlocking circles in black ink (memorial to her disappeared mentor)",
@@ -323,14 +305,67 @@
     "posture_movement": "Stands with weight balanced, ready to move in any direction. Movement is economical and fluid — no wasted motion, no flourish. Eyes constantly scanning, cataloging exits and threats. She moves like someone who has learned that survival is a series of micro-decisions made at speed.",
     "clothing_style": "Tier 3-4 practical: reinforced synthetic-leather jacket (charcoal grey, well-maintained), fitted tactical pants with cargo pockets, heavy-duty boots with grip-soles. Minimal jewelry except a worn silver ring on her right hand (inherited from mentor). Gear is always accessible, always ready. Fabrics are functional — nothing that catches or restricts. She dresses for the job, not the social tier."
   },
-  "image_prompt": "Sterling Salazar, 172cm athletic woman with luminous warm-brown skin blending Sub-Saharan, Latin American, and East Asian heritage. High cheekbones, defined jawline, deep brown alert eyes. Dark hair pulled back in tight cornrows. Thin white scar from left temple toward ear. Charcoal grey reinforced synthetic-leather jacket, tactical cargo pants, heavy-duty boots. Chrome reflex booster ports visible at base of skull, glowing faint warm amber. Three interlocking circle tattoo on right forearm in black ink. Worn silver ring. Posture balanced and ready, movement economical and fluid. Eyes constantly scanning. Cyberpunk 2226, neon-lit Great Lakes Metropolitan Zone, industrial interior with cool blue and amber lighting, shadows and contrast emphasizing her ready stance. Professional operative at rest, threat assessment mode. Cinematic, high contrast, moody. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Thakur, GLMZ, 172cm athletic lean woman with warm caramel-bronze skin blending South Asian, Hispanic, Southeast Asian, Northern European, and Sub-Saharan African heritage. High prominent cheekbones, almond-shaped deep brown eyes, defined jawline, dark brown hair pulled into tight high bun. Thin white scar from left temple to ear. Charcoal grey reinforced synthetic-leather jacket, fitted tactical pants, heavy-duty grip-sole boots. Chrome reflex booster ports visible at base of skull glowing faintly amber. Three interlocking circle tattoo on right forearm. Worn silver ring on right hand. Standing balanced and alert in dimly-lit GLMZ corridor or rooftop, ready stance, constant threat-assessment scanning expression. Economical posture, fluid movement ready. Neon and industrial lighting catching the luminescence of her augmentation ports. Gritty neo-noir atmosphere, function over form aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 38.3,
-    "Hispanic/Latin American": 34.2,
-    "East Asian": 27.5
+    "South Asian": 26.3,
+    "Hispanic/Latin American": 24,
+    "Northern European": 19.9,
+    "Southeast Asian": 18.6,
+    "Sub-Saharan African": 11.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 26.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 12.9
+      },
+      "Mexican": {
+        "Mexican": 11.1
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 9.2,
+        "Dutch": 2.9
+      },
+      "British Isles": {
+        "Scottish": 3.9,
+        "Irish": 1.2
+      },
+      "Scandinavian": {
+        "Norwegian": 2.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 10.7
+      },
+      "Cambodian": {
+        "Khmer": 6.7
+      },
+      "Thai": {
+        "Thai": 1.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 7.3
+      },
+      "East African": {
+        "Kenyan": 1
+      },
+      "West African": {
+        "Sierra Leonean": 2.2,
+        "Liberian": 0.7
+      }
+    }
+  }
 }

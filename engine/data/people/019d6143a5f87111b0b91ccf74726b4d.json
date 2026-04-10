@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f87111b0b91ccf74726b4d",
   "type": "character",
-  "name": "Pavel Bouzid",
+  "name": "Kwame Okafor",
   "aliases": [
     "Seam",
     "The Tailor"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows — a cramped workshop above a noodle stall on Fistula Passage, near the Blackpipe Corridor junction, near Damen and Armitage",
-  "description": "Dzemal is slight and precise in the way of someone who has learned that carelessness is fatal. He stands just under average height, with warm brown skin, a narrow jaw perpetually shadowed with stubble he never quite shaves, and long fingers that move with the focused economy of a surgeon. His hair is cropped to an undifferentiated fuzz. The only cosmetic mod he's invested in is a bioluminescent pigment woven into the skin of his forearms — pale blue-white lines that trace the paths of his veins, which he uses as his own light source when working in the dark. He smells faintly of solder and the particular chemical tang of biosynthetic epidermal overlay.\n\nHe has an almost pathological need to be underestimated. He cultivates a nervous, apologetic manner — averted eyes, self-deprecating half-laughs, reflexive deference — that causes people to discount him immediately. In reality he is one of the finest identity fabricators working below Tier 3, capable of producing documents and biometric overlays that pass Axiom checkpoint scanners. He finds deep, quiet satisfaction in the craft of making someone new — he thinks of it as giving people second chances, even when the people paying are not looking for redemption.",
+  "description": "Kwame Okafor is slight and precise in the way of someone who has learned that carelessness is fatal. He stands just under average height, with warm brown skin, a narrow jaw perpetually shadowed with stubble he never quite shaves, and long fingers that move with the focused economy of a surgeon. His hair is cropped to an undifferentiated fuzz. The only cosmetic mod he's invested in is a bioluminescent pigment woven into the skin of his forearms — pale blue-white lines that trace the paths of his veins, which he uses as his own light source when working in the dark. He smells faintly of solder and the particular chemical tang of biosynthetic epidermal overlay.\n\nHe has an almost pathological need to be underestimated. He cultivates a nervous, apologetic manner — averted eyes, self-deprecating half-laughs, reflexive deference — that causes people to discount him immediately. In reality he is one of the finest identity fabricators working below Tier 3, capable of producing documents and biometric overlays that pass Axiom checkpoint scanners. He finds deep, quiet satisfaction in the craft of making someone new — he thinks of it as giving people second chances, even when the people paying are not looking for redemption.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -193,7 +193,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -209,39 +209,16 @@
     "Blackpipe Corridor",
     "The Narrows Compact",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Aslan Vasquez-Chatterjee",
-    "Tibor Osei-Svanstrom",
+    "Noir Dining",
+    "GLMZ",
+    "Frost Boudiaf",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Pale Mile",
-    "ARCHIVE",
-    "Alper Lebedev-Tutu",
-    "Axonal Stretch Resonance Lance",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bogdan Achebe-Svanstrom",
-    "Bryndís Kouyaté-Semenenko",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Renzo Tuiaga-Łukasiewicz",
-    "Slagworks Industrial",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PA-5 'Attendant'",
-    "The Narrows",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Seam",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vuk Jorgensen-Toure"
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "North African (Maghrebi) dominant with Eastern European (Polish/Czech) secondary heritage, minor Hispanic and Southeast Asian admixture. The combination produces warm medium-brown skin with subtle golden undertones from the North African ancestry, fine facial structure reflecting both Mediterranean and Slavic features.",
+    "heritage": "A rare Ubiquitous Diaspora blend: South Asian (35.9%), Sub-Saharan African (32.0%), Middle Eastern (19.3%), and Indigenous American (12.8%). This genetic confluence creates a complex warm-deep brown complexion where South Asian warmth enriches Sub-Saharan depth, tempered by Middle Eastern definition and Indigenous American earthiness. The result is a harmonious mid-to-deep brown tone that doesn't segregate by feature but blends continuously across his face and frame.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and wiry, with the precise musculature of someone who spends sixteen hours a night hunched over fine work. No excess — everything efficient, nothing wasted.",
@@ -249,8 +226,8 @@
     "hair_style": "Cropped to uniform fuzz, maintained with electric clippers every few days. Deliberately undifferentiated.",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint luminescent overlay grid visible in certain light — a retinal augmentation for magnification",
-    "skin_tone": "Warm medium brown with golden-amber undertones characteristic of North African heritage, cooled slightly by Eastern European pallor from nocturnal living patterns. The blending creates an even, warm complexion without sharp contrasts.",
-    "complexion": "Angular face with high cheekbones and a narrow jaw reflecting both Maghrebi and Eastern European structure. Perpetually shadowed with three-day stubble he allows to accumulate without fully committing to a beard. Skin shows the particular pallor of someone who sleeps through daylight — fine-grained, unblemished except for minor calluses on his fingertips from years of precision work.",
+    "skin_tone": "Warm-deep brown with golden, terracotta, and earthy ochre undertones from balanced South Asian-African-Middle Eastern-Indigenous American ancestry. The complexion is even and unified, deepened by nocturnal living but retaining inherent warmth. No sharp regional clustering — the warmth distributes continuously.",
+    "complexion": "Well-proportioned facial structure with defined cheekbones and strong jawline that reflects the harmonious blending of South Asian, Sub-Saharan African, Middle Eastern, and Indigenous American features. Perpetually shadowed with three-day stubble he allows to accumulate without fully committing to a beard. Skin shows the particular depth of someone who sleeps through daylight — fine-grained, unblemished except for minor calluses on his fingertips from years of precision work.",
     "distinguishing_marks": [
       "Bioluminescent tracery in pale blue-white running along both forearms following the paths of his veins — faintly glowing even in daylight, distinctly visible in darkness",
       "Fine linear scars on the pads of all ten fingertips from micro-haptic implant installation, each barely visible unless examined closely"
@@ -259,15 +236,48 @@
     "posture_movement": "Habitually apologetic and self-effacing — shoulders slightly rounded, head often tilted in a listening posture, averted eyes that dart upward only when addressed directly. Movements are economical and precise, with no wasted motion. His hands move with surgical deliberation when working, but twitch slightly with nervous energy when in conversation or waiting.",
     "clothing_style": "Tier 4 utilitarian wear favoring dark colors and loose fit. Black or charcoal thermal underlayers, often visible at the cuffs. A worn synthetic jacket from a generic corpo supplier (faded Axiom logistics branding, pockets modified for tool storage). Loose-fitting cargo pants with multiple sealed pockets. No jewelry except a scratched titanium watch with a cracked face that he never bothers to repair. Shoes are generic black synthetics, scuffed and comfortable. Everything is maintained but not maintained — clean enough, but with the patina of constant use."
   },
-  "image_prompt": "Pavel Bouzid, cyberpunk 2226, lean 172cm male with warm medium-brown North African-Eastern European complexion and golden undertones. Cropped dark brown hair, three-day stubble on angular jaw, dark eyes with faint luminescent retinal grid. Bioluminescent pale blue-white tracery glowing along both forearms following vein patterns. Wearing faded Axiom logistics synthetics jacket over black thermal underlayer, loose cargo pants, scuffed black shoes. Hands with micro-haptic implant scars on fingertips, twitching with nervous energy. Hunched posture, averted gaze, economical movements. Seated at workbench in dimly lit underground hab-space, blue-white bioluminescence casting shadows on worn tools and circuit components. Neon accent lighting reflecting off cracked titanium watch face. Cyberpunk noir atmosphere, deep focus on precise, exhausted concentration. --ar 2:3 --v 6",
+  "image_prompt": "Kwame Okafor, a mixed-heritage neo-noir technician from GLMZ 2226. Deep warm-brown complexion with golden and earthy undertones reflecting South Asian, Sub-Saharan African, Middle Eastern, and Indigenous American ancestry blended seamlessly. Dark eyes with faint luminescent grid overlay visible under direct light. Bioluminescent blue-white tracery glowing along both forearms, illuminating vein pathways. Short dark brown hair cropped to uniform fuzz, perpetual three-day stubble darkening his defined jawline. Lean, wiry frame hunched in apologetic posture. Wearing black thermal underlayer visible at cuffs, worn faded Axiom logistics synthetic jacket with modified tool pockets, dark cargo pants, scuffed black shoes. Scratched titanium watch with cracked face. Standing under neon workshop lighting, caught mid-fine-work with precise hand positioning. Nervous energy in his twitching fingers. Nocturnal pallor despite warm heritage complexion. Neo-noir 2220s aesthetic, gritty industrial setting, moody cool-blue and warm-amber lighting casting his bioluminescent arms in sharp relief. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 56.0,
-    "Eastern European": 32.4,
-    "Hispanic/Latin American": 7.0,
-    "Southeast Asian": 4.6
+    "South Asian": 35.9,
+    "Sub-Saharan African": 32,
+    "Middle Eastern": 19.3,
+    "Indigenous American": 12.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 26.4
+      },
+      "Nepali": {
+        "Nepali": 9.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 32
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Afghan Dari": 0.4,
+        "Iranian": 0.6
+      },
+      "Arab Levantine": {
+        "Palestinian": 7.8
+      },
+      "Kurdish": {
+        "Kurdish": 10.5
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 2.2,
+        "Maya": 10.6
+      }
+    }
+  }
 }

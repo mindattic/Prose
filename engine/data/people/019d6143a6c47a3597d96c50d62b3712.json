@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c47a3597d96c50d62b3712",
   "type": "character",
-  "name": "Sage Árnason",
+  "name": "Sage Kamara",
   "aliases": [
     "Saz"
   ],
@@ -12,7 +12,7 @@
   "age": 36,
   "status": "active",
   "location": "Pilsen Veil, runs a studio called Dermis & Ghost out of a converted freight container, near Halsted and Division",
-  "description": "Saoirse is compact and deliberate in movement, with dark olive skin covered from throat to ankle in her own accumulated work — a living portfolio in bioluminescent pigment, dermal sculpture, and chromatic scale-pattern geneware that shifts between copper and deep teal depending on her body temperature. Her canines are cosmetically elongated and slightly iridescent, a piece she did on herself at twenty-two that she now considers slightly embarrassing but has kept because removal would leave scars. Her hair is a complex architectural shape, natural black at the root and heat-reactive at the tips, changing from rust to amber when she's working close to the pigment-heating instruments.\n\nSaoirse's reputation in Pilsen Veil is built on what regulars call 'the consultation' — a two-hour process before any work begins, in which she asks questions about the client's life that seem invasive until the finished piece makes them make sense. She treats body modification as a form of autobiography, and she will refuse work she finds dishonest or purely decorative. This makes her difficult and expensive and perpetually booked three months out. She is also a quiet authority on geneware interactions and has more practical knowledge of mod-compatibility than most licensed Helix Biosystems techs.",
+  "description": "Sage Kamara is compact and deliberate in movement, with dark olive skin covered from throat to ankle in her own accumulated work — a living portfolio in bioluminescent pigment, dermal sculpture, and chromatic scale-pattern geneware that shifts between copper and deep teal depending on her body temperature. Her canines are cosmetically elongated and slightly iridescent, a piece she did on herself at twenty-two that she now considers slightly embarrassing but has kept because removal would leave scars. Her hair is a complex architectural shape, natural black at the root and heat-reactive at the tips, changing from rust to amber when she's working close to the pigment-heating instruments.\n\nSage Kamara's reputation in Pilsen Veil is built on what regulars call 'the consultation' — a two-hour process before any work begins, in which she asks questions about the client's life that seem invasive until the finished piece makes them make sense. She treats body modification as a form of autobiography, and she will refuse work she finds dishonest or purely decorative. This makes her difficult and expensive and perpetually booked three months out. She is also a quiet authority on geneware interactions and has more practical knowledge of mod-compatibility than most licensed Helix Biosystems techs.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -161,7 +161,7 @@
     "Judge": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,24 +178,14 @@
   "related_entities": [
     "Helix Biosystems",
     "Pilsen Veil",
-    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "The Root",
     "The Gradient Compact",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Rust",
-    "Alper Inoue-Aidoo",
-    "Arcturus PX-1 'Phantom'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Slagworks Industrial",
-    "SynapTech AromaVeil Olfactory Filter",
-    "The Pure Hand",
-    "The Root",
-    "Veslemøy Achebe-Tursynov"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (40.8%) with East Asian (20.7%), Indigenous American (14.9%), Sub-Saharan African (13.8%), and Eastern European (9.8%) ancestry—a striking global blend resulting in warm-toned warm golden-brown skin with subtle olive undertones and warm depth from multiple continents",
+    "heritage": "South Asian dominant (43.6%) with significant Sub-Saharan African (35.2%), East Asian (14.7%), and Northern European (6.5%) ancestry—a striking global blend resulting in warm deep brown skin with subtle warm undertones from the interplay of South Asian richness, African depth, and East Asian luminosity",
     "height_cm": 162,
     "weight_kg": 54,
     "build": "Compact and wiry, muscular in the forearms and hands from precision work; minimal body fat; economical posture suggesting years of hunching over detail work",
@@ -203,8 +193,8 @@
     "hair_style": "Architectural; shaved on one side, longer on the other in an asymmetric cut that frames her left temple; styled to expose the nape",
     "hair_length": "Medium (left) to short (right)",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm golden-brown with subtle olive undertones; the blending of Southeast Asian warmth, East Asian luminosity, Indigenous American depth, and Sub-Saharan richness creates a complexion that shifts visibly in different light, neither fully olive nor fully golden but harmoniously both",
-    "complexion": "Skin condition excellent despite heavy pigmentation work; minimal scarring from professional technique; features blend multiple heritages—high, defined cheekbones characteristic of East and Southeast Asian ancestry combined with a sharp, prominent jawline reflecting Sub-Saharan and Indigenous American structure; expression habitually focused and evaluative",
+    "skin_tone": "Warm deep brown with rich undertones; the blending of South Asian warmth, Sub-Saharan depth, East Asian luminosity, and Northern European undertones creates a complexion that shifts visibly in different light—neither fully cool nor fully golden but a harmonious warm richness that glows in low light",
+    "complexion": "Skin condition excellent despite heavy pigmentation work; minimal scarring from professional technique; features blend multiple heritages—high, defined cheekbones characteristic of East Asian ancestry combined with a strong, prominent jawline reflecting Sub-Saharan structure and fuller facial proportions from South Asian heritage; expression habitually focused and evaluative",
     "visible_augmentations": "Full-body bioluminescent pigment system (glows faintly in low light, pulses subtly with body temperature); chromatic scale-pattern geneware across shoulders and ribs that shifts color based on thermal state; elongated iridescent canines visible when she smiles or speaks; heat-reactive hair tips that change color during work; subdermal portfolio display on left forearm (faintly visible beneath skin as geometric thumbnail shapes)",
     "distinguishing_marks": [
       "Bioluminescent pigment work covers throat to ankle in intricate layered designs—personal portfolio spanning fifteen years of accumulated pieces",
@@ -216,16 +206,46 @@
     "posture_movement": "Precise and economical; sits still for long periods with perfect spinal alignment; hand movements are deliberate and controlled, occasionally self-soothing—fingers tracing her own pigment work when thinking; walks with a slight forward lean, as if always moving toward the next task; makes direct eye contact during consultations, studies people rather than observing them",
     "clothing_style": "Tier 3 working-class with deliberate aesthetic choices; typically wears modified lab coat or sleeveless technician vest (charcoal or deep indigo) over fitted black thermals to showcase her visible augmentations; practical cargo pants or modified denim with reinforced pockets for tools; worn leather work boots (Latvian-made if she can source them); silver ring on every finger—some homemade, some antique; no unnecessary jewelry beyond functional pieces; always wears a small cooling rig on one wrist (barely visible, aesthetic-conscious about hiding it); clothes are stained with pigments in ways she doesn't try to hide"
   },
-  "image_prompt": "Sage Árnason, 162cm compact wiry technician, cyberpunk 2226, warm golden-brown skin with olive undertones reflecting Southeast Asian-East Asian-Indigenous American-Sub-Saharan-Eastern European ancestry blend. Asymmetric black hair shaved on right side, longer on left framing temples, heat-reactive rust-amber tips glowing subtly. Dark brown natural eyes, angular high cheekbones and sharp jawline, focused evaluative expression. Full-body bioluminescent pigment portfolio glowing faintly in low light covering throat to ankles in intricate layered designs. Copper-to-deep-teal temperature-reactive iridescent scale-pattern geneware across shoulders and ribcage. Elongated iridescent canines visible. Subdermal portfolio thumbnails faintly visible on left inner forearm beneath skin. Wearing charcoal sleeveless technician vest over black thermals showcasing augmentations, reinforced cargo pants, worn leather work boots, silver rings on every finger. Cooling rig barely visible on wrist. Pigment-stained clothes. Precise economical posture, hand gestures traced over own geneware. Precision workshop setting with soft bioluminescent ambient light, cool color palette with warm skin tones contrasting, cyberpunk aesthetic, concentrated workshop mood --ar 2:3 --v 6",
+  "image_prompt": "Sage Kamara, 162cm compact wiry geneware artist, warm deep brown skin glowing faintly with bioluminescent pigment work covering throat to ankle in intricate layered designs; high defined cheekbones blending East Asian and Sub-Saharan features with prominent jawline and fuller South Asian facial proportions; dark brown natural eyes, direct and evaluative gaze; asymmetric black hair (medium left, short right) with rust-amber heat-reactive tips; elongated iridescent canines visible in slight smile; copper-to-deep-teal temperature-reactive chromatic scale-pattern geneware across bare shoulders and ribcage; subdermal portfolio display geometric thumbnails faintly visible on inner left forearm; charcoal sleeveless technician vest over fitted black thermals showcasing augmentations, stained with pigments; reinforced cargo pants, worn leather work boots, silver rings on every finger; precise posture leaning slightly forward, hands poised with deliberate control; GLMZ GLMZ underground geneware workshop, cool blue-green neon lighting casting subtle bioluminescent glow across skin, wet industrial workspace, shallow depth of field focusing on her hands near delicate design work, moody atmospheric lighting with warm shadows --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 40.8,
-    "East Asian": 20.7,
-    "Indigenous American": 14.9,
-    "Sub-Saharan African": 13.8,
-    "Eastern European": 9.8
+    "South Asian": 43.6,
+    "Sub-Saharan African": 35.2,
+    "East Asian": 14.7,
+    "Northern European": 6.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 30.7
+      },
+      "Pakistani": {
+        "Sindhi": 12.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 8,
+        "Ugandan": 13.1
+      },
+      "Central African": {
+        "Cameroonian": 14.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 7.5,
+        "Shanghainese": 7.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 3.3,
+        "Irish": 3.2
+      }
+    }
+  }
 }

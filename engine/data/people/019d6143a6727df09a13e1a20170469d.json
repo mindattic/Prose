@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6727df09a13e1a20170469d",
   "type": "character",
-  "name": "Rio Makwa-Nygaard",
+  "name": "Rio Erikstad-Delgado",
   "aliases": [
     "Nwanna",
     "The Printer"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Michigan Ave and Chicago Ave",
-  "description": "Nwanneka is a compact woman with deep brown skin and close-cropped natural hair threaded with silver at the temples, the result of stress and two decades of poor sleep, not age. Her left forearm bears a patterned tattoo in the Samoan pe'a tradition adapted with Igbo uli motifs — a gift from her late father who claimed the two traditions were 'both about surviving what the sea throws at you.' She keeps her fingers ink-stained by habit even though her press is almost entirely digital, pressing them deliberately against old-fashioned carbon paper before important meetings. Her eyes are sharp and perpetually evaluating. She smells faintly of ozone and machine oil.\n\nShe runs The Lateral, a hyperlocal underground news feed distributed through ELF-prayer nodes embedded in public shrines throughout Highland Park. She is meticulous, funny in private and grave in public, and carries a quiet contempt for anyone who mistakes volume for courage. She has been arrested seven times and convicted twice for 'unauthorized signal propagation.' Both convictions she wears as credentials.",
+  "description": "Rio Erikstad-Delgado is a compact woman with deep brown skin and close-cropped natural hair threaded with silver at the temples, the result of stress and two decades of poor sleep, not age. Her left forearm bears a patterned tattoo in the Samoan pe'a tradition adapted with Igbo uli motifs — a gift from her late father who claimed the two traditions were 'both about surviving what the sea throws at you.' She keeps her fingers ink-stained by habit even though her press is almost entirely digital, pressing them deliberately against old-fashioned carbon paper before important meetings. Her eyes are sharp and perpetually evaluating. She smells faintly of ozone and machine oil.\n\nShe runs The Lateral, a hyperlocal underground news feed distributed through ELF-prayer nodes embedded in public shrines throughout Highland Park. She is meticulous, funny in private and grave in public, and carries a quiet contempt for anyone who mistakes volume for courage. She has been arrested seven times and convicted twice for 'unauthorized signal propagation.' Both convictions she wears as credentials.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,33 +241,13 @@
   "related_entities": [
     "Highland Park Autonomous Zone",
     "The Gradient Compact",
-    "Silver",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Chicago",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Aybek Sato-Poku",
-    "Breck Tannen",
-    "Chronicle",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Green Bay Community Table",
-    "MERIDIAN",
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Gallows' Recurve Bow",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Indigenous American (34%) with significant East Asian (27.3%) and South Asian (12.7%) ancestry, blended with Sub-Saharan African (11.6%), Hispanic/Latin American (10.7%), and Pacific Islander (3.7%) heritage. The genetic combination produces warm brown skin with complex undertones—earthy from Indigenous roots, enriched by East and South Asian melanin patterns, and deepened by African ancestry. Facial structure reflects the blend: higher cheekbones with broader nasal bridge characteristic of Indigenous American and East Asian genetics, eye shape influenced by East Asian ancestry, and overall bone structure suggesting the resilience of mixed diaspora heritage.",
+    "heritage": "Mixed diaspora ancestry reflecting the Ubiquitous Diaspora: Hispanic/Latin American (26.8%), Northern European (26.3%), South Asian (24.2%), East Asian (12.2%), and Sub-Saharan African (10.5%). This genetic combination produces warm brown skin with complex, shifting undertones—golden warmth from South Asian and Hispanic ancestry, olive richness from Northern European admixture, deepened and enriched by Sub-Saharan African heritage. Facial structure reflects the blend: high cheekbones characteristic of East and South Asian genetics, broader nasal bridge from Hispanic and African ancestry, eye shape showing East Asian influence, and overall bone structure suggesting the adaptability of global mixed heritage.",
     "height_cm": 158,
     "weight_kg": 61,
     "build": "Compact and wiry, muscular through the shoulders and forearms from two decades of manual press work and repetitive typing. Low body fat, dense frame suggesting functional strength rather than bulk.",
@@ -275,8 +255,8 @@
     "hair_style": "Close-cropped natural hair, deliberately unadorned, threaded silver strands left uncolored",
     "hair_length": "Short",
     "eye_color": "Deep brown, sharp and evaluative",
-    "skin_tone": "Warm brown with golden and olive undertones from the blend of Indigenous American, East Asian, and South Asian ancestry, deepened by Sub-Saharan African heritage. Complex, multitonal complexion that shifts subtly in different light.",
-    "complexion": "Angular face with prominent high cheekbones shaped by Indigenous American and East Asian genetics, slightly broader nasal structure. Perpetually alert expression. Habitual frown lines between brows from decades of editorial scrutiny. Skin shows wear from poor sleep cycles and chronic ozone exposure—faint discoloration under eyes, occasional small stress-related blemishes. Habitually stained fingertips from pressing carbon paper despite digital workflow.",
+    "skin_tone": "Warm brown with golden, olive, and amber undertones from the blend of South Asian, Hispanic/Latin American, Northern European, and East Asian ancestry, deepened and enriched by Sub-Saharan African heritage. Complex, multitonal complexion that shifts subtly in different light.",
+    "complexion": "Angular face with prominent high cheekbones from East and South Asian genetics, broader nasal structure from Hispanic and African ancestry. Perpetually alert expression. Habitual frown lines between brows from decades of editorial scrutiny. Skin shows wear from poor sleep cycles and chronic ozone exposure—faint discoloration under eyes, occasional small stress-related blemishes. Habitually stained fingertips from pressing carbon paper despite digital workflow.",
     "distinguishing_marks": [
       "Left forearm bears a full pe'a-inspired tattoo in deep indigo and black, fusing traditional Samoan geometric patterns with Igbo uli motifs—covers from wrist to elbow in interlocking lines and symbolic marks representing resilience and ancestral survival",
       "Faint burn scars across knuckles of right hand from early press work accident, barely noticeable but tactile",
@@ -286,17 +266,57 @@
     "posture_movement": "Sits coiled, ready. Moves with economical precision—no wasted motion. Hands are expressive during private conversation but deliberately still during public speaking. When listening, she leans forward slightly, eyes narrowing. Walks with the gait of someone who has moved through hostile territory for decades and never quite stopped.",
     "clothing_style": "Tier 3-4 utilitarian. Favors dark, durable fabrics: charcoal wool trousers, black compression shirts under oversized linen or canvas overshirts in cream or grey. Wears a battered leather satchel—actual leather, pre-collapse vintage—across her chest. No logos, no corpo branding. Keeps a faded red wool cap in her satchel, pulls it down low when moving through monitored zones. Boots are practical, resoled multiple times, broken in to near-silence. No jewelry except a plain steel ring on her left ring finger—her father's, resized."
   },
-  "image_prompt": "Rio Makwa-Nygaard, compact and wiry 158cm woman with warm brown skin holding complex undertones from Indigenous American, East Asian, and South Asian ancestry. Angular face with high prominent cheekbones, deep brown evaluative eyes with faint crystalline retinal overlay visible in light, sharp frown lines between brows from decades of work. Natural deep brown close-cropped hair with silver threading at temples. Full pe'a and Igbo-fusion indigo-black tattoo covering left forearm from wrist to elbow with geometric and symbolic patterns. Faint burn scars on right hand knuckles, pale scar above left eyebrow. Wearing dark utilitarian clothing: charcoal wool trousers, black compression shirt under oversized cream canvas overshirt, worn leather satchel across chest, practical resoled boots. Coiled posture, economical movement. Low light cyberpunk office or archive setting, muted color palette, ozone-tinged air, 2226 Great Lakes Metropolitan Zone aesthetic. Film noir editorial mood, focused intensity --ar 2:3 --v 6",
+  "image_prompt": "Rio Erikstad-Delgado, 158cm compact wiry frame, warm deep brown skin with golden olive undertones, angular face with high cheekbones and broader nasal bridge, sharp evaluative deep brown eyes, close-cropped natural dark brown hair with silver threading at temples, perpetual frown lines between brows. Left forearm covered in indigo and black pe'a-inspired tattoo with Igbo uli motifs from wrist to elbow, faint burn scars on right knuckles, thin scar above left eyebrow. Wearing charcoal wool trousers, black compression shirt under oversized cream linen overshirt, battered pre-collapse leather satchel across chest, practical worn boots. Plain steel ring on left ring finger. Sitting coiled and ready in dim GLMZ underground space, ozone-tinged air, faint crystalline retinal sheen visible in harsh light, hands deliberately still, alert posture, no visible chrome or flashy augmentations, utilitarian and worn aesthetic, cinematic noir lighting, gritty Great Lakes Metropolitan Zone atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 34.0,
-    "East Asian": 27.3,
-    "South Asian": 12.7,
-    "Sub-Saharan African": 11.6,
-    "Hispanic/Latin American": 10.7,
-    "Pacific Islander": 3.7
+    "Hispanic/Latin American": 26.8,
+    "Northern European": 26.3,
+    "South Asian": 24.2,
+    "East Asian": 12.2,
+    "Sub-Saharan African": 10.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 22.7
+      },
+      "Mexican": {
+        "Mexican": 0.4
+      },
+      "Central American": {
+        "Guatemalan": 2.4,
+        "Salvadoran": 1.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 23.4
+      },
+      "British Isles": {
+        "Welsh": 2.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 15.6
+      },
+      "Indian": {
+        "Marathi": 8.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 9.6,
+        "Ethiopian": 0.9
+      }
+    }
+  }
 }

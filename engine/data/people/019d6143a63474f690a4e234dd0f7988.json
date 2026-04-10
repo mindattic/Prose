@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63474f690a4e234dd0f7988",
   "type": "character",
-  "name": "Mariposa Rakhimov-Kamara",
+  "name": "Taslima Chakraborty-Ogawa",
   "aliases": [
     "Captain Drăghici",
     "The Old Man of Fort Anchor"
@@ -13,7 +13,7 @@
   "age": 88,
   "status": "active",
   "location": "Fort Anchor — the veterans' residential block called the Barracks, Room 12, ground floor for mobility reasons, near Western and Chicago Ave",
-  "description": "Iosefa Drăghici-Oduya is ninety years old if you ask him, eighty-eight if you read his records, and older than all of it if you sit with him for an hour. He is enormous in the way very old men who were once genuinely large sometimes remain: not strong now, but big-boned, wide, with hands that look like they were made for a larger task than holding a cane. His skin is mid-brown and deeply grooved, and the left side of his face is reconstructed — Axiom field surgery, circa 2155, visible as a slight smoothness on the cheekbone where the graft never quite matched. His eyes are a startling pale green, a Yoruba-Romanian inheritance he is vain about. He walks with a cane he has named, though he doesn't tell people the name.\n\nHe is a storyteller in the full and serious sense: he cannot stop and has no desire to. He will tell you what the Dearborn Forge smelled like in 2149, what his commanding officer said before an action that turned out to be wrong, what the first E.L.F. he ever saw looked like materializing in a battlefield comms array in the middle of a firefight. Some of his stories contradict earlier versions of themselves. He is aware of this and considers it the nature of memory rather than a flaw. He has strong opinions about everything and shares them freely, but he is not unkind — he is genuinely curious about the present and treats young people as interesting rather than bewildering.",
+  "description": "Taslima Chakraborty-Ogawa is ninety years old if you ask him, eighty-eight if you read his records, and older than all of it if you sit with him for an hour. He is enormous in the way very old men who were once genuinely large sometimes remain: not strong now, but big-boned, wide, with hands that look like they were made for a larger task than holding a cane. His skin is mid-brown and deeply grooved, and the left side of his face is reconstructed — Axiom field surgery, circa 2155, visible as a slight smoothness on the cheekbone where the graft never quite matched. His eyes are a startling pale green, a Yoruba-Romanian inheritance he is vain about. He walks with a cane he has named, though he doesn't tell people the name.\n\nHe is a storyteller in the full and serious sense: he cannot stop and has no desire to. He will tell you what the Dearborn Forge smelled like in 2149, what his commanding officer said before an action that turned out to be wrong, what the first E.L.F. he ever saw looked like materializing in a battlefield comms array in the middle of a firefight. Some of his stories contradict earlier versions of themselves. He is aware of this and considers it the nature of memory rather than a flaw. He has strong opinions about everything and shares them freely, but he is not unkind — he is genuinely curious about the present and treats young people as interesting rather than bewildering.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -157,7 +157,7 @@
     "War Weary": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,33 +170,16 @@
     "Carrion Defense Works Field Surgical Kit FSK-6",
     "Riverbottom",
     "Sentinel-Guard-88",
-    "Fort Anchor",
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Flicker",
-    "The Pure Hand",
-    "The Pale Mile",
+    "Fort Anchor",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dzemal Acholonu-Patagiri",
-    "Fenwick Oduya-Marsh",
-    "Grainfort",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Lazarus Pharmaceutical Emetix-9 'Purge'",
-    "Mika Sorel",
-    "Montclare Quiet",
-    "Patient Zero",
-    "SafeStep Promenade Defender PD-2 'Elderwood'",
-    "Shelf Chairlift",
-    "SynapTech GripTrue Palmar Adhesion Implant",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Seam",
-    "Vuk Jorgensen-Toure"
+    "The Pure Hand",
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Central Asian, Sub-Saharan African, and East Asian blend; the genetic mix produces warm mid-to-deep brown skin with subtle golden and reddish undertones. Central Asian and East Asian ancestry visible in slight epicanthic fold variation and cheekbone prominence; Hispanic/Latin American heritage in the warm complexion and facial structure; Sub-Saharan African ancestry in the broad nasal bridge, full lips, and rich melanin distribution.",
+    "heritage": "South Asian (62.3%), East Asian (21.6%), and Hispanic/Latin American (16.1%) genetic blend. The dominant South Asian ancestry establishes the foundational warm deep brown skin tone with golden undertones, enriched by East Asian influence visible in the subtle epicanthic fold variation and high, prominent cheekbones, and Hispanic/Latin American ancestry contributing to the warmth and fuller facial structure. This is a man whose genetic mix creates a striking warm-toned complexion with strong defined features across multiple ancestral traditions.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large-framed and broad-shouldered despite advanced age; skeletal muscle atrophy visible in forearms and neck, but the underlying bone structure remains imposing. Moves as a man who was once genuinely powerful and has not fully accepted the reduction.",
@@ -204,8 +187,8 @@
     "hair_style": "Kept short and brushed back; thinning at crown but full at sides",
     "hair_length": "Short",
     "eye_color": "Deep brown, striking and alert; left eye contains faint geometric targeting reticle visible only in certain light",
-    "skin_tone": "Warm deep brown complexion with golden-reddish undertones from the genetic blend; weathered and paper-thin quality of extreme age with sun damage across shoulders and forearms; slight ashy cast in creases from decades of wear",
-    "complexion": "Deeply lined face with prominent high cheekbones characteristic of Central Asian ancestry; strong nasal bridge and full lips reflecting Sub-Saharan African heritage. Left side of face shows subtle smoothness and slight discoloration where Axiom field graft was applied circa 2155, the seam barely visible but present. Jaw still angular and defined. Hands are large, liver-spotted with deeper pigmentation variation, prominent knuckles and the grip-strength worn into the palm lines of a man who held weapons for decades.",
+    "skin_tone": "Warm deep brown complexion with golden undertones from the dominant South Asian ancestry blended with East Asian and Hispanic/Latin American genetics; weathered and paper-thin quality of extreme age with sun damage across shoulders and forearms; slight ashy cast in creases from decades of wear",
+    "complexion": "Deeply lined face with prominent high cheekbones characteristic of the East Asian and South Asian genetic blend; strong defined nasal bridge and structured facial planes reflecting South Asian dominance with East Asian angularity. Warm undertone throughout despite age-related weathering. Left side of face shows subtle smoothness and slight discoloration where Axiom field graft was applied circa 2155, the seam barely visible but present. Jaw still angular and defined. Hands are large, liver-spotted with deeper pigmentation variation reflecting natural age-related melanin clustering, prominent knuckles and the grip-strength worn into the palm lines of a man who held weapons for decades.",
     "distinguishing_marks": [
       "Axiom facial reconstruction plate visible as a faint smoothness and slight color variance across left cheekbone and upper jaw, extending toward temple.",
       "Thin white scar running from left collarbone toward sternum, partially obscured by shirt collar.",
@@ -216,15 +199,49 @@
     "posture_movement": "Moves deliberately and with deliberate weight distribution; favors right leg, relies on cane (which he has named, though he won't say the name to strangers). Sits deep in chairs, settling with visible relief. Hands gesture frequently when speaking, still capable of surprising dexterity. Head tilts slightly to compensate for the long-dead targeting overlay in his left eye. When stationary, he assumes the posture of a man on guard — shoulders back, chin forward — an old military habit.",
     "clothing_style": "Tier 3 veteran practical: loose gray utility shirts with deep pockets, dark cargo pants with reinforced seams, worn boots with orthopedic soles. Axiom corporate jacket from the 2150s — still maintained, worn most days despite its age. No visible chrome or aesthetic augmentation mods; his augmentations are functional and old enough to predate fashionability. Wears a faded veteran's armband on his right wrist. The cane is polished wood and worn steel — not decorative, truly used."
   },
-  "image_prompt": "Cyberpunk 2226, aging veteran soldier Mariposa Rakhimov-Kamara, 188cm tall, deep warm brown skin with golden undertones, high prominent cheekbones from Central Asian heritage, strong broad nose and full lips from African ancestry, deeply lined weathered face, steel gray short hair thinning at crown, dark brown alert eyes with faint geometric targeting reticle visible in left eye. Left cheekbone shows faint Axiom facial reconstruction plate seam. Large liver-spotted hands, visible musculature atrophy in forearms, moves with deliberate weight distribution favoring right leg, leaning on polished wood and steel cane. Wearing loose gray utility shirt, dark reinforced cargo pants, worn orthopedic boots, faded Axiom corporate jacket from 2150s, veteran's armband on right wrist. Segmented metal spinal support frame visible under shirt as he moves. Standing in gritty Great Lakes Metropolitan Zone street, neon lighting casting shadows across his weathered face, posture of a man on guard, shoulders back, chin forward. Film grain, cinematic lighting, --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, elderly veteran man with warm deep brown skin with golden undertones, prominent high cheekbones from mixed South Asian, East Asian, and Hispanic heritage, steel gray short hair brushed back, deeply lined weathered face, striking dark brown eyes with faint targeting reticle in left eye, large imposing frame with visible muscle atrophy, standing with deliberate posture favoring right leg, leaning on polished wood and steel cane. Wearing loose gray utility shirt, dark reinforced cargo pants, worn orthopedic boots, faded Axiom corporate jacket from 2150s, veteran armband on right wrist. Faint white scar from collarbone toward sternum, faded Axiom tattoo on right forearm, subtle smoothness and discoloration on left cheek from old facial reconstruction graft. Segmented metal spinal support harness visible under clothing. Hands large with liver spots and prominent knuckles. Dim neon-lit corridor background, cool blue and amber shadows, atmospheric haze, depth of field emphasizing his weathered features and cybernetic implants, photorealistic, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 36.5,
-    "Central Asian": 27.5,
-    "Sub-Saharan African": 25.2,
-    "East Asian": 10.8
+    "South Asian": 62.3,
+    "East Asian": 21.6,
+    "Hispanic/Latin American": 16.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 41.9
+      },
+      "Sri Lankan": {
+        "Sinhalese": 8,
+        "Tamil Sri Lankan": 12.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 8,
+        "Shanghainese": 2.3
+      },
+      "Korean": {
+        "Korean": 1.8
+      },
+      "Japanese": {
+        "Japanese": 9.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 3.7,
+        "Puerto Rican": 3.3
+      },
+      "Mexican": {
+        "Mexican": 4.3
+      },
+      "Central American": {
+        "Salvadoran": 4.8
+      }
+    }
+  }
 }

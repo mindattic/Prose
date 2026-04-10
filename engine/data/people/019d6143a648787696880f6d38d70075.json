@@ -112,7 +112,7 @@
     "posture_movement": "Still when standing, efficient when moving. No wasted motion. Walks like someone who learned to navigate spaces where being noticed gets you killed. Hands stay loose and low. When he enters a room, his eyes track the corners before the people.",
     "clothing_style": "Dark, functional, layered. Worn leather jacket over ballistic-weave underlayer. Cargo pants with reinforced knees. Boots that have been resoled three times. Nothing branded, nothing new. The katana rides across his back in a matte-black friction sheath."
   },
-  "image_prompt": "Cyberpunk male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, cyberpunk 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
+  "image_prompt": "Neo-noir male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, GLMZ 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
   "narrative_function": "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented. His central contradiction: the facility made him a weapon, but he uses that weapon to protect the vulnerable.",
   "augmentations": "Experimental NeoCortex Program Atlas array — 32,768 electrodes, 256 threads, 8x standard density. Degrading firmware. Gives cognitive speed, reaction time, fragmentary sensory access.",
   "daily_life": "Freelance enforcement, retrieval, problem-solving for the excluded. Maintains hardware with salvaged tools.",
@@ -292,7 +292,7 @@
     "Duelist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -354,64 +354,46 @@
   "related_entities": [
     "The Shelf",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Static",
-    "Slagworks Industrial",
-    "Jerome Atlas",
-    "Chicago",
-    "ARCHIVE",
-    "Alper Inoue-Aidoo",
-    "Anatoliy Faye-Nkrumah",
     "Aphelion",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Arcturus KS-7 'Nursery'",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Cargo Bicycle",
-    "Chen Wei-Lin",
-    "Coherent Radiation Scalpel CRS-7 'Suture'",
-    "Djeneba Magnusson-Camara",
-    "Ferrogate Enforcer Cruiser",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Jemba Ulrich-Faafetai",
-    "Kairos",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Korrath",
-    "Narrowcast",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nnenna Vásquez-Kuosmanen",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Philibert Mwangi-Djordjevic",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech ReadRoom Pro Social Cue Implant",
-    "Søren Mikkelsen-Achebe",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA PA-5 'Attendant'",
-    "The Ghost Ronin",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Question",
-    "The Quiet Room",
-    "The Signal",
-    "The Underlayer Collective",
-    "Transit Mind",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Chicago",
+    "Neural Palate",
+    "Atlas",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "genetic_ancestry": {
-    "East Asian": 38.0,
-    "Sub-Saharan African": 19.8,
-    "South Asian": 18.2,
-    "Hispanic/Latin American": 14.4,
-    "Central Asian": 9.6
+    "East Asian": 43.6,
+    "Northern European": 39.9,
+    "Eastern European": 16.5
   },
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 11.3
+      },
+      "Chinese": {
+        "Cantonese": 28.3,
+        "Shanghainese": 4
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 12.6
+      },
+      "Scandinavian": {
+        "Swedish": 10.9
+      },
+      "British Isles": {
+        "Welsh": 16.4
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 16.5
+      }
+    }
+  }
 }

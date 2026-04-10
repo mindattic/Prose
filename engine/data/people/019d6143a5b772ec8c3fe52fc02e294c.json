@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b772ec8c3fe52fc02e294c",
   "type": "character",
-  "name": "Luca Kabwit-Hernández",
+  "name": "Luca Kabwit-Okonkwo",
   "aliases": [
     "Deadbolt",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Aslan Ekman-Danso is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAslan Ekman-Danso operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Luca Kabwit-Okonkwo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLuca Kabwit-Okonkwo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.92,
@@ -262,7 +262,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,36 +276,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Shelf",
+    "Chicago",
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial",
-    "Chicago",
-    "Breck Tannen",
-    "Deku Barrientos-Osei",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Mika Sorel",
-    "Mireille Fontaine-Obi",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Prophet",
-    "Solveig Tambadou-Kereselidze",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Fathom Line",
-    "The Glass Garden",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (51.6%) with significant Hispanic/Latin American (22.7%) and Northern European (19.3%) ancestry, with minor East Asian (6.4%) influence. A complex genetic blend resulting in warm, rich tones with layered undertones.",
+    "heritage": "Predominantly Sub-Saharan African (60.3%) with substantial South Asian (27.0%) influence, creating a striking genetic blend. Minor Eastern European (6.4%) and Middle Eastern (6.3%) ancestry add subtle undertones. The combination produces warm, deep tones with layered complexity — African richness interwoven with South Asian warmth and faint Mediterranean undertones.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Rawboned and lean, with a wiry musculature that reads as either ascetic discipline or chronic malnutrition. Broad shoulders tapered to a narrow waist — a frame built for speed and endurance rather than power.",
@@ -313,8 +292,8 @@
     "hair_style": "Kept short and functional, no styling. Shaved at the sides, longer on top — practical rather than aesthetic.",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Rich warm brown with underlying golden and reddish undertones — the result of Sub-Saharan African dominance blended with Hispanic/Latin American warmth and a subtle Northern European undertone. Weathered by years in industrial districts, creating a matte complexion that catches light unevenly.",
-    "complexion": "Angular face with sharp cheekbones and a prominent jawline showing the influence of both African and Hispanic ancestry — strong bone structure with subtle width through the face. Skin heavily scarred — thin white and pale pink lines crossing forehead, left cheek, and chin in what appears to be impact and blade work. Perpetual stubble, dark circles under eyes. No cosmetic care evident.",
+    "skin_tone": "Deep warm brown with underlying golden undertones — the result of Sub-Saharan African dominance (60.3%) blended with South Asian warmth (27.0%), creating a rich complexity. The tone carries subtle warmth from South Asian ancestry without losing the deep saturation of African heritage. Weathered by years in industrial districts, the matte complexion catches light unevenly, with faint warm reflections in direct sun.",
+    "complexion": "Angular face with sharp cheekbones and strong, prominent jawline — bone structure reflecting the robust Sub-Saharan African heritage balanced with South Asian facial proportions, creating refined upper face structure with characteristic fullness through the lower face and around the mouth. Skin heavily scarred — thin white and pale pink lines crossing forehead, left cheek, and chin in what appears to be impact and blade work. Perpetual stubble, dark circles under eyes. No cosmetic care evident.",
     "distinguishing_marks": [
       "Three parallel burn scars running down the right side of his neck — old thermal damage, possibly electrical.",
       "A long diagonal scar crossing his left cheekbone to jaw — appears surgical or from combat blade work.",
@@ -326,15 +305,47 @@
     "posture_movement": "Moves with controlled economy of motion — no wasted gesture. Carries tension in his shoulders even at rest. His head has a slight forward cant, as if perpetually listening. When standing still, he shifts weight frequently between feet. Movement is fluid but mechanical in precision; the reflex boosters lend an uncanny quickness to reactions. His gaze is direct and unwavering.",
     "clothing_style": "Tier 4 utilitarian — function over fashion. Black synthetic reinforced jacket with multiple pockets, burn-resistant weave, faded to charcoal gray in places. Underneath, a dark grey compression shirt that doubles as an undershirt for equipment vests. Black cargo pants with reinforced thigh pockets and a tool belt holding deck interfaces, jacks, and small modular tech. Steel-toed boots, scuffed and well-maintained. A pair of fingerless gloves with grip pads on the palms — for equipment handling and climbing. No visible jewelry or decorative elements. Everything is maintenance-worn and functional."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait of Luca Kabwit-Hernández, a 188cm lean and rawboned man with rich warm brown skin bearing golden undertones from complex Sub-Saharan African, Hispanic, and Northern European ancestry. Sharp angular features with prominent cheekbones and jawline. Dark brown alert eyes, short dark brown hair shaved at sides. Face covered in white and pink impact scars across forehead and left cheek, perpetual stubble, dark under-eye circles. Three parallel burn scars down right neck. Visible chrome spinal reflex booster hardware at base of skull with amber indicator lights, brushed titanium joint augmentations at elbows and knees. Wearing black burn-resistant jacket faded to charcoal, dark gray compression shirt, reinforced black cargo pants, steel-toed scuffed boots, fingerless grip-pad gloves. Tension in shoulders, forward head cant, direct unwavering gaze. Industrial cyberpunk setting with neon reflected off chrome augmentations, moody blue-amber lighting, mechanical precision in posture. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Luca Kabwit-Okonkwo, tall lean man with deep warm brown skin blending Sub-Saharan African and South Asian features, sharp angular cheekbones and strong jawline, dark brown eyes alert and calculating. Short dark hair shaved at sides, longer on top. Face heavily scarred with white and pale pink lines on forehead, left cheek, chin, diagonal scar across left cheekbone to jaw. Perpetual dark stubble, dark circles under eyes. Visible silver and gunmetal gray chrome spinal reflex booster hardware running down neck and upper back with amber indicator lights, brushed titanium augmentations at elbows and knees. Wearing black synthetic reinforced jacket faded to charcoal gray, dark grey compression shirt, black reinforced cargo pants with tool belt, steel-toed boots, fingerless grip gloves. Tense posture with forward head cant, controlled precise movement. Dark utilitarian neo-noir urban aesthetic, industrial setting with neon rim lighting casting amber glow on scar tissue and metallic augmentations, cold harsh overhead light emphasizing weathered features and mechanical enhancements, gritty Great Lakes Metropolitan Zone atmosphere, 2226 tech aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 51.6,
-    "Hispanic/Latin American": 22.7,
-    "Northern European": 19.3,
-    "East Asian": 6.4
+    "Sub-Saharan African": 60.3,
+    "South Asian": 27,
+    "Eastern European": 6.4,
+    "Middle Eastern": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 38.2,
+        "Kenyan": 22.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 19.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 5.7,
+        "Pashtun": 1.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 4.4,
+        "Polish": 0.7
+      },
+      "Slavic South": {
+        "Bulgarian": 1.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 2.8,
+        "Kuwaiti": 3.5
+      }
+    }
+  }
 }

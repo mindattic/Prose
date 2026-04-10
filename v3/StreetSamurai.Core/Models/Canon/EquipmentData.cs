@@ -5,7 +5,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// Equipment, gear, augmentations, implants, and devices in the Meridian 88 world.
+/// Equipment, gear, augmentations, implants, and devices in the GLMZ world.
 /// Distinct from weaponry — covers tools, augments, armor, and utility gear.
 /// </summary>
 public class EquipmentData : ICanonEntity

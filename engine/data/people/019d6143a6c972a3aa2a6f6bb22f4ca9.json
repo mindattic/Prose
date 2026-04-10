@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c972a3aa2a6f6bb22f4ca9",
   "type": "character",
-  "name": "Astrid Cardenas",
+  "name": "Yasmin Volkov",
   "aliases": [
     "Fino",
     "The Kid"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Michigan Ave and Oak",
-  "description": "Serafino is all elbows and forward momentum — tall for his age, still growing into his frame, with his father's Ghanaian cheekbones and his mother's Kazakh coloring, a combination that makes people stare in the way he's learned to read as either threat or opportunity. His hair is natural and large, often containing flecks of spray paint he missed when cleaning up. He has cat ears — a cheap geneware addition he saved up for at fifteen, dusty brown tipped with darker brown, that he can flatten against his skull when trying to look serious, which mostly does the opposite.\n\nHis work is enormous, aggressive, and surprisingly sophisticated for someone his age — he works primarily in layered aerosol with reactive topcoats that change appearance under different light conditions, hiding secondary images in plain sight. The pieces he puts up in Highland Park are community-coded: specific symbols, colors, and figures that carry meaning to residents about safety corridors, enforcement patterns, and food distribution points. He treats this as art. It is also infrastructure. He is cocky in the way of someone who is right often enough to have earned some of it, but the cockiness has a hard floor under it — he knows what happens to kids in the Zone who miscalculate.",
+  "description": "Yasmin Volkov is all elbows and forward momentum — tall for his age, still growing into his frame, with his father's Ghanaian cheekbones and his mother's Kazakh coloring, a combination that makes people stare in the way he's learned to read as either threat or opportunity. His hair is natural and large, often containing flecks of spray paint he missed when cleaning up. He has cat ears — a cheap geneware addition he saved up for at fifteen, dusty brown tipped with darker brown, that he can flatten against his skull when trying to look serious, which mostly does the opposite.\n\nHis work is enormous, aggressive, and surprisingly sophisticated for someone his age — he works primarily in layered aerosol with reactive topcoats that change appearance under different light conditions, hiding secondary images in plain sight. The pieces he puts up in Highland Park are community-coded: specific symbols, colors, and figures that carry meaning to residents about safety corridors, enforcement patterns, and food distribution points. He treats this as art. It is also infrastructure. He is cocky in the way of someone who is right often enough to have earned some of it, but the cockiness has a hard floor under it — he knows what happens to kids in the Zone who miscalculate.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -156,7 +156,7 @@
     "Beauty Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,29 +170,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Highland Park Autonomous Zone",
+    "GLMZ",
     "Tessera Corponation",
     "Stratum",
-    "Slagworks Industrial",
-    "Sweeper-11",
     "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Dragan Petersen-Bah",
-    "Dzemal Acholonu-Patagiri",
-    "GLMZ",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Immaculée Dalgaard-Nwosu",
-    "Narrowcast",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Collective",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure"
+    "Sweeper-11",
+    "Slagworks Industrial"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Cosmopolitan blend: Hispanic/Latin American (35%), Northern European (24%), East Asian (24%), and Sub-Saharan African (18%). Ancestry manifests in warm medium-brown skin with subtle golden undertones, high cheekbones from African heritage, slight eye shape variation suggesting East Asian lineage, and an overall phenotype that defies singular geographic origin—quintessentially Ubiquitous Diaspora.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Middle Eastern (37.1%), Northern European (17.4%), Indigenous American (16.8%), Eastern European (16.5%), and South Asian (12.2%). Ancestry manifests in warm olive-bronze skin with subtle golden undertones, bone structure showing strong Middle Eastern and Indigenous American influence, dark expressive eyes reflecting South Asian ancestry, and an overall phenotype that seamlessly integrates multiple continental lineages—truly representative of the mixed-heritage 22nd century.",
     "height_cm": 188,
     "weight_kg": 68,
     "build": "Lean and angular, still lengthening — all limbs and sharp corners, the kind of frame that looks perpetually mid-motion. Ropey muscle definition in forearms and shoulders from years of overhead spray work. Chest and torso still narrow, not yet filled out.",
@@ -200,8 +187,8 @@
     "hair_style": "Worn large and unbounded, deliberately uncontrolled — a crown of volume that reads as both artistic statement and practical neglect",
     "hair_length": "Medium (shoulder length when loose)",
     "eye_color": "Deep brown with amber undertone",
-    "skin_tone": "Warm medium brown with golden undertones, reflecting the blend of Hispanic/Latin, Northern European, East Asian, and African ancestry—lighter than pure Sub-Saharan phenotypes, warmer than pure Northern European, with subtle warmth that shifts in different light",
-    "complexion": "Angular face with high cheekbones, slightly prominent nose with subtle bridge width variation, defined jawline. Eye shape suggests East Asian ancestry while bone structure reflects African and Latin heritage. Skin is generally clear but shows minor paint scars and chemical burns from careless solvent handling. Small scar on left temple (spray can accident at age 13). Perpetually tired eyes with dark circles — late-night painting schedule. Fingernails are permanently stained with multiple paint colors, especially reds and silvers.",
+    "skin_tone": "Warm olive-bronze with golden undertones—a rich, complex blend reflecting dominant Middle Eastern ancestry harmonized with Northern European paleness, Indigenous American depth, Eastern European cool undertones, and South Asian warmth. Shifts between warm amber-gold in direct light and deeper olive-bronze in shadow.",
+    "complexion": "Angular face with prominent cheekbones showing strong Middle Eastern and Indigenous American bone structure, straight nose with defined bridge, defined jawline with subtle South Asian softness. Eye shape and depth reflect South Asian and Middle Eastern ancestry while broader face geometry and high cheekbone placement show Indigenous American influence. Skin is generally clear but shows minor paint scars and chemical burns from careless solvent handling. Small scar on left temple (spray can accident at age 13). Perpetually tired eyes with dark circles — late-night painting schedule. Fingernails are permanently stained with multiple paint colors, especially reds and silvers.",
     "distinguishing_marks": [
       "Surgical-line scar on left temple, pale and thin, approximately 2cm long — spray can ricochet injury",
       "Scattered micro-burns on knuckles and first two fingers of right hand from solvent exposure — appear as faint white speckles against skin",
@@ -212,15 +199,53 @@
     "posture_movement": "Moves with restless forward momentum — leans into direction of travel. Hands constantly gesture, rearranging invisible space, fingers twitching as if holding spray cans. When standing still, shifts weight frequently. When concentrating (looking at a wall, assessing a surface), head tilts and ears swivel toward object of focus — an unconscious tell that reveals attention. Cocky stride with slight shoulder roll, but this deflates quickly when genuinely threatened. Eyes dart — reading exits, sight lines, enforcement patterns.",
     "clothing_style": "Tier 4-5 functional wear: oversized thermal hoodie (faded black, GLMZ Autonomous Transport logo faintly visible on back from thrift store), cargo pants with reinforced thigh pockets (spray cans and tools), scuffed low-top zero-G composite sneakers with one lace missing. Backpack is military surplus olive green, heavy with aerosol cans and sketchbooks. Fingers and sleeves stained with permanent paint. One wrist wraps in salvaged athletic tape (support for repetitive strain). No jewelry except the hand-done tattoo. Clothes fit loosely — either thrifted oversized or grown into the spaces. Everything smells faintly of propellant and acetone."
   },
-  "image_prompt": "Astrid Cardenas, 188cm lean angular figure with warm medium-brown skin and golden undertones reflecting Hispanic-Latin, Northern European, East Asian, and African diaspora ancestry. High cheekbones, defined jawline, deep brown eyes with amber flecks. Shoulder-length dark textured hair worn large and uncontrolled, matted with paint residue. Articulated brown cat ears with darker tips protruding from skull. Faded black oversized thermal hoodie, cargo pants, scuffed sneakers, military olive backpack heavy with spray cans. Paint-stained fingers wrapped in tape. Small pale scar on left temple, perpetually tired dark-circled eyes. Restless posture, hands gesturing mid-motion. Cyberpunk 2226, late-night industrial district, neon reflected on wet concrete, fluorescent lighting casting green-blue shadows. Mood: focused, cocky, street artist at work. Propellant smell in the air. --ar 2:3 --v 6",
+  "image_prompt": "Yasmin Volkov, 188cm lean angular street artist in GLMZ, warm olive-bronze skin with golden undertones blending Middle Eastern, Northern European, Indigenous American, Eastern European and South Asian ancestry. Angular face with high prominent cheekbones, deep brown eyes with amber undertone, dark naturally-textured shoulder-length hair matted with dried spray paint. Geneware cat ears protruding from crown, dusty brown with darker tips, slightly furry and articulated. Faint surgical scar on left temple from spray can accident, perpetual dark circles under eyes from late-night painting. Paint-stained fingers and sleeves. Wearing oversized faded black thermal hoodie with GLMZ logo, cargo pants with reinforced pockets, scuffed low-top zero-G composite sneakers, military surplus olive green backpack heavy with aerosol cans. Restless forward-leaning posture, hands gesturing as if holding spray cans. Standing in moody neon-lit urban environment, neo-noir warehouse or alleyway backdrop, cool blue and warm amber lighting interplay emphasizing mixed heritage warmth against cool shadows. Focused intense expression, eyes darting with street awareness. GLMZ 2200s aesthetic, atmospheric grain, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 34.9,
-    "Northern European": 23.8,
-    "East Asian": 23.7,
-    "Sub-Saharan African": 17.6
+    "Middle Eastern": 37.1,
+    "Northern European": 17.4,
+    "Indigenous American": 16.8,
+    "Eastern European": 16.5,
+    "South Asian": 12.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 5.2,
+        "Kuwaiti": 5.3
+      },
+      "Arab Levantine": {
+        "Lebanese": 5,
+        "Jordanian": 6.1
+      },
+      "Persian": {
+        "Iranian": 15.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 12.4,
+        "Swedish": 5
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 16.8
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 16.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 5.7,
+        "Malayali": 6.5
+      }
+    }
+  }
 }

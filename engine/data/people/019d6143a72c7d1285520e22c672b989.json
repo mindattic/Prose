@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72c7d1285520e22c672b989",
   "type": "character",
-  "name": "Kai Haddad-Ekwensi",
+  "name": "Kai Petrović-Khoury",
   "aliases": [
     "Yola",
     "The Knife Lady (local children's nickname)"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Old Harbor, Stitch Row — a narrow commercial street off the Grindstone Shore waterfront, near Lake Shore and Navy Pier",
-  "description": "Yolanda is tall and narrow-shouldered with very dark skin, close-shaved temples, and a cloud of natural hair she wears differently every day — sometimes pinned, sometimes free, occasionally containing small objects she's tucked in absentmindedly (a seam ripper, a rolled-up measurement tape, once a small wrench she was holding for someone). Her forearms have retractable micro-filament guides — a geneware mod she had installed specifically for this work, allowing her to feel tension in fabric the way a surgeon feels tissue. Her irises are a vivid violet that is very obviously engineered and that she picked because, as she says, if you're going to do it you might as well commit.\n\nShe runs a small shop — Stitch Row No. 4 — that does everything from emergency repairs to full commission builds, with a specialty in structural garments: clothes with hidden pockets, sealed linings, insulated layers, things that need to function as well as look good. She is quick and funny and gives blunt assessments of what will and won't work on a person's body with the cheerful directness of someone who has long since stopped worrying about whether people find her charming. She has a loyal client base that includes everyone from dock workers needing reinforced work gear to people who have heard about her discreet interior construction and want to know what she can do with a coat lining.",
+  "description": "Kai Petrović-Khoury is tall and narrow-shouldered with very dark skin, close-shaved temples, and a cloud of natural hair she wears differently every day — sometimes pinned, sometimes free, occasionally containing small objects she's tucked in absentmindedly (a seam ripper, a rolled-up measurement tape, once a small wrench she was holding for someone). Her forearms have retractable micro-filament guides — a geneware mod she had installed specifically for this work, allowing her to feel tension in fabric the way a surgeon feels tissue. Her irises are a vivid violet that is very obviously engineered and that she picked because, as she says, if you're going to do it you might as well commit.\n\nShe runs a small shop — Stitch Row No. 4 — that does everything from emergency repairs to full commission builds, with a specialty in structural garments: clothes with hidden pockets, sealed linings, insulated layers, things that need to function as well as look good. She is quick and funny and gives blunt assessments of what will and won't work on a person's body with the cheerful directness of someone who has long since stopped worrying about whether people find her charming. She has a loyal client base that includes everyone from dock workers needing reinforced work gear to people who have heard about her discreet interior construction and want to know what she can do with a coat lining.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -182,7 +182,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,31 +241,13 @@
     "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Holmberg-Dembele",
     "Arcturus KS-7 'Nursery'",
-    "Axonal Stretch Resonance Lance",
-    "Breck Tannen",
-    "Burnside Pocket",
-    "Dzemal Acholonu-Patagiri",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Narrowcast",
-    "Nkechi Alvarado-Ostrowski",
-    "Old Harbor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Slagworks Industrial",
-    "Street Custom 'Gallows' Recurve Bow",
-    "TESSERA PG-2 'Signature'",
-    "The Counter",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Skinners"
+    "Harbor Fish Shack",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Sub-Saharan African / Middle Eastern with Northern European and Hispanic/Latin American admixture. Complexion reflects the warm, rich tones of deep African and Levantine ancestry, with subtle undertones from Northern European heritage creating warm-brown depth rather than cool tones.",
+    "heritage": "Middle Eastern primary ancestry (45.1%) with substantial Eastern European heritage (32.1%), complemented by Hispanic/Latin American (14.7%) and Sub-Saharan African (8.1%) admixture. This creates a complex phenotype: warm golden-brown skin with luminous depth, facial structure combining defined cheekbones with fuller contours, broad nose bridge with Mediterranean character, and rich warm undertones across the entire complexion.",
     "height_cm": 182,
     "weight_kg": 61,
     "build": "Tall and narrow-shouldered with long, lean limbs; posture suggests years of leaning over work tables. Wiry muscle definition in forearms from precise, repetitive hand work.",
@@ -273,8 +255,8 @@
     "hair_style": "Worn variably — sometimes pinned up, sometimes loose and cloud-like; temples closely shaved on rotating sides; frequently contains small objects tucked absentmindedly (seam rippers, measurement tape coils, tools)",
     "hair_length": "Medium to Long, with regularly maintained short sides",
     "eye_color": "Vivid engineered violet — striking, obviously geneware, unwavering in intensity",
-    "skin_tone": "Deep warm brown with golden undertones characteristic of Sub-Saharan and Middle Eastern heritage, rich and luminous with no gray cast",
-    "complexion": "Clear, work-marked skin with calluses on fingertips and the heel of her dominant hand; minimal grooming pretension; face carries the relaxed directness of someone past the age of performing charm. Facial structure reflects the blend of Sub-Saharan, Middle Eastern, and Northern European ancestry — defined cheekbones, broad nose bridge, and warm-toned skin creating distinctive character.",
+    "skin_tone": "Warm golden-brown with rich luminous quality reflecting the balanced blend of Middle Eastern (45.1%) and Eastern European (32.1%) ancestry, warmed further by Sub-Saharan (8.1%) and Hispanic/Latin American (14.7%) heritage. No gray or cool cast; skin carries the depth of multiple warm-toned ancestral contributions.",
+    "complexion": "Clear, work-marked skin with calluses on fingertips and the heel of her dominant hand; minimal grooming pretension. Facial structure reflects multi-regional ancestry: defined cheekbones characteristic of Eastern European and Middle Eastern heritage, slightly fuller cheek and jaw structure from Hispanic/Latin American admixture, broad nose bridge with subtle Mediterranean character, warm-toned complexion creating distinctive character throughout. Face carries the relaxed directness of someone past the age of performing charm.",
     "visible_augmentations": "Retractable micro-filament sensory guides running along inner forearms and fingertips — visible as faint metallic threading beneath skin when active, resembling delicate subcutaneous circuitry. Engineered violet irises with no pupil dilation lag, clearly artificial but not crude. No visible chrome or external hardware.",
     "posture_movement": "Naturally leans forward slightly, shoulders curled inward from work-table hours. Hands move with surgical precision even when idle; fingers occasionally twitch or flex unconsciously. When standing still, weight shifts to balls of feet — ready-stance of someone who works standing. Walks with economical, purposeful strides.",
     "clothing_style": "Tier 3-4 utilitarian with a craftsperson's signature: well-maintained work apron worn over modified clothes; layered basics in neutral tones (charcoal, cream, deep navy); visible stitching and seaming details that are clearly intentional personal modifications. Frequently wears her own designs — fitted vests with hidden pockets, reinforced shoulder pieces, sealed linings. Sensible footwear, broken in. No jewelry except occasionally a thimble on her thumb. Sleeves often rolled to forearms, exposing the faint augmentation scarring.",
@@ -284,15 +266,52 @@
       "A small burn mark on her left wrist (pale, old) in the shape of a seam ripper handle"
     ]
   },
-  "image_prompt": "Kai Haddad-Ekwensi, 2226 cyberpunk craftsperson with deep golden-brown skin and striking engineered violet eyes, 182cm tall and lean with surgical precision in her hands. Wearing practical work apron over layered neutral clothing with intentional stitch detailing, sleeves rolled to expose faint metallic micro-filament sensory guides beneath her skin on forearms. Black hair with gray threads, sometimes pinned, temples closely shaved. Standing in focus at her work table, leaning forward with characteristic posture from decades of precise hand-sewing. Visible needle-prick scars on fingers and palms. Cool workshop lighting casting sharp shadows across her face and work surface, neon glow from distant GLMZ spires visible through windows. Mood: focused, efficient, timeless mastery of craft. Cyberpunk 2200s aesthetic, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Kai Petrović-Khoury, tall lean woman with warm golden-brown skin reflecting Middle Eastern, Eastern European, Sub-Saharan and Hispanic heritage, natural black hair with gray threads worn in cloud-like medium length with closely shaved rotating temple sides, striking engineered violet irises, defined cheekbones with fuller contours, broad nose bridge, work-marked complexion with callused fingertips. Worn forward-leaning posture, hands with surgical precision. Dressed in tier 3-4 utilitarian craftswear: well-maintained work apron over charcoal and cream layered basics, fitted vest with hidden pockets, sleeves rolled exposing fine white augmentation scars on inner forearms and subcutaneous metallic filament threading. Sensible broken-in footwear. Standing in neon-lit neo-noir workshop, 2226 GLMZ, cool blue-green workshop lighting casting shadows across her warm complexion, tools and fabric visible in background, atmospheric depth-of-field, cinematic mood, hyper-realistic detail on skin texture and scars, GLMZ 2200s aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 39.7,
-    "Middle Eastern": 34.3,
-    "Northern European": 20.7,
-    "Hispanic/Latin American": 5.3
+    "Middle Eastern": 45.1,
+    "Eastern European": 32.1,
+    "Hispanic/Latin American": 14.7,
+    "Sub-Saharan African": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 45.1
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 32.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.4
+      },
+      "South American": {
+        "Colombian": 0.9,
+        "Ecuadorian": 8.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.2,
+        "Haitian": 1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 0.2
+      },
+      "Central African": {
+        "Congolese": 1.9,
+        "Gabonese": 1.1
+      },
+      "East African": {
+        "Kenyan": 4.9
+      }
+    }
+  }
 }

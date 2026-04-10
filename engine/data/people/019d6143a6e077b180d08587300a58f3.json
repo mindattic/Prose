@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e077b180d08587300a58f3",
   "type": "character",
-  "name": "Imran Ingebrigtsen-Mbekele",
+  "name": "Tumelo Kovalenko-Mazurek",
   "aliases": [
     "Undertaker",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Western and Chicago Ave",
-  "description": "Suki Sorokin-Gyasi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 38, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a poisoner out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Suki Sorokin-Gyasi is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Tumelo Kovalenko-Mazurek is compact and densely muscled, built low to the ground like something designed to survive impacts. At 38, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a poisoner out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Tumelo Kovalenko-Mazurek is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.82,
@@ -260,7 +260,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Crucible Square",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,42 +277,15 @@
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Gradient Compact",
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible Industries Suppressed Compact SC-2 'Murmur'",
-    "Crucible RE-2 'Receptionist'",
-    "Daulet Reyes-Abubakar",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Oumarou Svec-Ranginui",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vespid Dynamics Swarm Canister SC-2 'Hornets'",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Cosmopolitan blend of Northern European, South Asian, Sub-Saharan African, and Eastern European ancestry. The mix creates distinctive facial geometry — sharp cheekbones and angular jaw from Northern European and Eastern European lineage, softened by South Asian and Sub-Saharan African features. High cheekbones with moderate projection, warm undertones from South Asian heritage layered beneath the cooler pallor of Eastern European genetics.",
+    "heritage": "True cosmopolitan blend of Eastern European (36.1%), Sub-Saharan African (35.5%), Southeast Asian (16.7%), Hispanic/Latin American (7.4%), and South Asian (4.3%) ancestry. The genetic mix creates a distinctively balanced facial geometry — sharp cheekbones and angular jaw from Eastern European lineage, modulated by the warmer, fuller contours of Sub-Saharan African and Southeast Asian features. High cheekbones with moderate projection, warm mid-tone undertones that reflect the equal weight of African and Eastern European genetics, layered with subtle Southeast Asian eye shape influence and a hint of Latin warmth in the skin's natural saturation.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Compact and densely muscled, built low to the ground with a center of gravity designed for impact absorption. Shoulders broad relative to frame, legs powerful and coiled. No excess body fat — efficient rather than imposing.",
@@ -320,8 +293,8 @@
     "hair_style": "Closely cropped, military-precise, easy to maintain between identities",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and constantly assessing",
-    "skin_tone": "Medium-warm golden-bronze complexion — the synthesis of Northern European baseline with South Asian warmth, darkened and richened by Sub-Saharan African ancestry, creating an even, non-monolithic tone that reads as genuinely multicontinental",
-    "complexion": "Sharp cheekbones with moderate projection, angular jaw, a face that photographs memorably and therefore rarely does. The bone structure reflects the mixed heritage — Eastern European angularity softened by warmer, rounder contours from South Asian and African genetics. Minimal facial hair — he shaves meticulously. Skin shows minor chemical scarring along the left temple (old lab accident or deliberate alteration). Otherwise clean complexion with warm undertones except for the attentiveness in his expression.",
+    "skin_tone": "Rich warm bronze complexion — the balanced synthesis of Eastern European and Sub-Saharan African genetics creating depth and even saturation, brightened by Southeast Asian warmth and a subtle golden undertone from Latin heritage. Not monolithic, but genuinely multicontinental in its warm-medium range.",
+    "complexion": "Sharp cheekbones with moderate projection, angular jaw softened by fuller lower face contours from Sub-Saharan African and Southeast Asian genetics. Bone structure reads as authentically mixed — the Eastern European angularity tempered by rounder cheek placement and broader nasal bridge width characteristic of African and Southeast Asian ancestry. Eyes show slight epicanthic fold influence from Southeast Asian heritage. Minimal facial hair — meticulously shaved. Skin shows minor chemical scarring along the left temple (old lab accident or deliberate alteration). Otherwise clean complexion with consistent warm undertones throughout.",
     "distinguishing_marks": [
       "Hairline scar along left temple, approximately 3cm, pale and deliberately left unaugmented",
       "Burn scarring on inner right forearm (palm-side), small scattered marks consistent with chemical splash, deliberately left visible",
@@ -331,15 +304,61 @@
     "posture_movement": "Balanced, economical movement — no wasted motion. Stands with weight distributed forward on the balls of his feet, ready to move in any direction instantly. Hands rest naturally at his sides or in his lap, fingers slightly curled as if about to grip something. Eyes track exits and visual obstacles reflexively. When stationary, he radiates the controlled stillness of something coiled rather than relaxed.",
     "clothing_style": "Tier 2-3 hybrid — functional but not flashy. Dark fitted compression shirt (black or dark grey, moisture-wicking synthetic), reinforced cargo pants with multiple pockets (worn black, tactical cuts), sturdy ankle boots (steel-toed, matte finish). A lightweight jacket in neutral color (charcoal, olive, or faded black) with internal pockets — worn open most of the time. No branding visible — corporate logos removed or never present. Clothing is utilitarian, replaceable, designed for movement and concealment of equipment. The overall effect is 'unremarkable tradesperson' or 'maintenance worker' — deliberately invisible."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of a compact, athletically muscled man in his 30s-40s, height 168cm. Medium-warm golden-bronze skin tone reflecting mixed Northern European, South Asian, Sub-Saharan African, and Eastern European heritage. Sharp cheekbones and angular jaw softened by warm contours, dark brown alert eyes. Dark brown hair with silver at temples, closely cropped military style. Visible pale 3cm scar on left temple. Chemical burn scars on right inner forearm, deliberately visible. Chrome threading visible along neck and shoulders (wired reflexes substrate). Small darkened chrome nodule visible behind right ear (adrenaline pump). Chrome-black shimmer on fingertips from gecko-grip implants. Wearing dark fitted compression shirt and reinforced black tactical cargo pants, steel-toed matte black boots, lightweight neutral-colored jacket worn open. Balanced, coiled posture, weight forward on balls of feet, hands at sides slightly curled. Controlled stillness, alert expression, eyes tracking environment. Industrial cyberpunk setting, neon ambient lighting with warm and cool tones, gritty urban backdrop, professional introspective mood. Deliberately unremarkable, maintenance worker aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Tumelo Kovalenko-Mazurek, 168cm compact muscular male, rich warm bronze skin tone reflecting Eastern European-Sub-Saharan African-Southeast Asian blend, sharp cheekbones softened by fuller lower face contours, slight epicanthic fold eyes, dark brown alert gaze. Dark brown hair with silver at temples, closely cropped military-style. Pale 3cm hairline scar on left temple. Visible chrome threading along neck and shoulders from wired reflexes, small darkened chrome nodule behind right ear from adrenaline pump. Chemical burn scars on inner right forearm. Wearing functional tactical gear: black moisture-wicking compression shirt, reinforced black cargo pants, steel-toed matte boots, open charcoal/olive jacket. Balanced posture with weight forward on balls of feet, hands relaxed at sides with fingers slightly curled. Standing in dimly-lit industrial corridor of Great Lakes Metropolitan Zone, neon glow casting shadows across features, GLMZ aesthetic, deliberately unremarkable tradesperson appearance, controlled coiled stillness --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 32.0,
-    "South Asian": 29.6,
-    "Sub-Saharan African": 21.9,
-    "Eastern European": 16.5
+    "Eastern European": 36.1,
+    "Sub-Saharan African": 35.5,
+    "Southeast Asian": 16.7,
+    "Hispanic/Latin American": 7.4,
+    "South Asian": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 11.3
+      },
+      "Slavic South": {
+        "Serbian": 23.4,
+        "Slovenian": 1.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 16.5
+      },
+      "West African": {
+        "Malian": 9.5,
+        "Senegalese": 7.1
+      },
+      "Southern African": {
+        "Zambian": 2.4
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 7.1
+      },
+      "Indonesian": {
+        "Sundanese": 3.8
+      },
+      "Thai": {
+        "Thai": 5.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 1.9,
+        "Peruvian": 5.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.3
+      }
+    }
+  }
 }

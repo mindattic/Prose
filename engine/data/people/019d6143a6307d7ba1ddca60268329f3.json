@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6307d7ba1ddca60268329f3",
   "type": "character",
-  "name": "Siddharth Villanueva-Deshpande",
+  "name": "Siddharth Sengupta-Cisneros",
   "aliases": [
     "Glasshouse"
   ],
@@ -88,7 +88,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -102,21 +102,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "The Milwaukee Core",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Kamala Mori-Sefa",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "Tiare Nishi-Anim",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Latin American (56.5%), South Asian (32.4%), Sub-Saharan African (6.6%), Northern European (4.5%)—a striking blend resulting in warm medium-brown skin with olive undertones, strong defined facial structure, and naturally textured deep black hair with subtle rust highlights",
+    "heritage": "Predominantly South Asian (55.3%) with significant Sub-Saharan African (17.3%), Hispanic/Latin American (11.8%), Northern European (10.9%), and Southeast Asian (4.7%) ancestry—creating a striking multicontinental blend with warm medium-brown skin featuring golden and olive undertones, strong defined facial structure with prominent cheekbones characteristic of both South Asian and Sub-Saharan African heritage, and naturally textured deep black hair with subtle rust undertones",
     "height_cm": 171,
     "weight_kg": 62,
     "build": "Athletic and lean with defined musculature; carries herself with economic efficiency—every movement purposeful. Long-limbed, suggesting endurance work rather than bulk.",
@@ -124,8 +114,8 @@
     "hair_style": "Worn in a high, tight cornrow crown that transitions to shaved sides; practical and distinctive",
     "hair_length": "Medium (crown) / Shaved (sides)",
     "eye_color": "Warm brown with faint amber striations in direct light",
-    "skin_tone": "Warm medium brown with olive undertones—the blended result of her Latin American, South Asian, and Sub-Saharan ancestry",
-    "complexion": "Clear, unmarked face; minimal grooming beyond essential maintenance. Strong cheekbones and slightly squared jawline reflecting South Asian and Latin American heritage. Small scar tissue visible at left temple hairline.",
+    "skin_tone": "Warm medium brown with golden and olive undertones—the blended result of her predominantly South Asian heritage combined with Sub-Saharan African, Hispanic/Latin American, Northern European, and Southeast Asian ancestry. The tone carries warmth and depth from the African and Latin American components while maintaining the clarity associated with South Asian genetics.",
+    "complexion": "Clear, unmarked face; minimal grooming beyond essential maintenance. Strong, prominent cheekbones and slightly squared jawline reflecting the convergence of South Asian structure with Sub-Saharan African bone architecture. Small scar tissue visible at left temple hairline. Facial features show balanced integration of her ancestry—warmer undertones enhanced by the Sub-Saharan African and Latin American components, while maintaining the definition characteristic of South Asian heritage.",
     "distinguishing_marks": [
       "Thin white scar line running from left temple to just above the cheekbone, approximately 4cm long—consistent with old blade work or shrapnel.",
       "Cluster of three small circular burn scars on the inside of her right wrist, arranged in a triangle—deliberate marks, possibly from test procedures.",
@@ -135,15 +125,59 @@
     "posture_movement": "Moves with predatory stillness—minimal wasted motion. Stands with weight distributed evenly, ready to shift direction. Eyes track with analytical precision. Tends to keep her hands visible and relaxed; a tell of someone who deals in dangerous work.",
     "clothing_style": "Tier 3-4 practical wear: form-fitting matte-black synth-leather jacket with reinforced seams and hidden pockets. Graphite compression shirt underneath. Cargo pants in dark grey with cargo pockets and thigh straps. Worn military-grade boots with reactive soles. No logos; all clothing is functional, durable, and designed for mobility. Wears a small wrist-mounted data terminal on her right forearm."
   },
-  "image_prompt": "Siddharth Villanueva-Deshpande, 171cm athletic lean frame, warm medium-brown skin with olive undertones reflecting Latin American-South Asian-Sub-Saharan African heritage, strong cheekbones and squared jawline, deep black hair with rust undertones in tight cornrow crown transitioning to shaved sides, warm brown eyes with amber striations, thin 4cm scar running left temple to cheekbone, three small circular burn scars on right inner wrist, faint tattooed circuit pattern on collarbone, chrome-silver subdermal fingernail enhancements on left hand, bioluminescent optical substrate traces in pupils, form-fitting matte-black synth-leather jacket with reinforced seams, graphite compression shirt, dark grey cargo pants with thigh straps, military-grade boots with reactive soles, wrist-mounted data terminal, predatory stillness, minimal wasted motion, analytical gaze, hands visibly relaxed, cyberpunk 2226, neon-lit Great Lakes Metropolitan Zone, low-angle dramatic lighting with cool blue and amber neon, moody atmospheric haze, noir aesthetic, professional operative aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Siddharth Sengupta-Cisneros, 171cm athletic lean figure, warm medium-brown skin with golden and olive undertones, strong prominent cheekbones and squared jawline reflecting South Asian and Sub-Saharan African heritage blend. Deep black hair with rust undertones styled in tight cornrow crown fading to shaved sides. Warm brown eyes with amber striations. Thin white scar from left temple to cheekbone. Chrome-silver fingernail caps on left hand, faint bioluminescence in pupils. Wears form-fitting matte-black synth-leather jacket, graphite compression shirt, dark grey cargo pants with thigh straps, military-grade reactive boots. Wrist-mounted data terminal. Predatory stillness, purposeful economy of movement, analytical gaze. GLMZ GLMZ setting, neon-lit urban environment, moody cool lighting with accent highlights on metallic augmentations, cinematic depth, professional operative aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 56.5,
-    "South Asian": 32.4,
-    "Sub-Saharan African": 6.6,
-    "Northern European": 4.5
+    "South Asian": 55.3,
+    "Sub-Saharan African": 17.3,
+    "Hispanic/Latin American": 11.8,
+    "Northern European": 10.9,
+    "Southeast Asian": 4.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 55.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 9.9
+      },
+      "East African": {
+        "Somali": 2
+      },
+      "West African": {
+        "Senegalese": 5.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9.1
+      },
+      "Caribbean": {
+        "Haitian": 2.7
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 7.2,
+        "English": 3.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.5
+      },
+      "Indonesian": {
+        "Balinese": 0.9
+      },
+      "Cambodian": {
+        "Khmer": 1.3
+      }
+    }
+  }
 }

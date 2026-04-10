@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66179a0bd06a381c6e4e385",
   "type": "character",
-  "name": "Remi Árnason-Novotný",
+  "name": "Remi Horváth-Castañeda",
   "aliases": [
     "Rogue",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Division",
-  "description": "Nenad Vargas-Baffour are compact and densely muscled, built low to the ground like something designed to survive impacts. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a breacher out of The Shelf, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Nenad Vargas-Baffour describe them as a precision instrument — point them at a problem and get out of the way.",
+  "description": "Remi Horváth-Castañeda are compact and densely muscled, built low to the ground like something designed to survive impacts. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a breacher out of The Shelf, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Remi Horváth-Castañeda describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.85,
@@ -261,7 +261,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,67 +278,101 @@
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
   ],
   "related_entities": [
-    "The Shelf",
     "The Nearfield",
+    "The Shelf",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "The Gradient Compact",
     "Stratum",
-    "Pellucid Systems",
-    "Arcturus BH-2 'Marrow'",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus LS-5 'Sentinel'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Oumarou Svec-Ranginui",
-    "Quilt",
-    "Slagworks Industrial",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA WL-6 'Stacker'",
-    "The Fathom Line",
-    "The Peninsula",
-    "The Quiet Room",
-    "Veslemøy Achebe-Tursynov"
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (primarily Czech/Slovak with Polish influence), East Asian, Indigenous American, Hispanic/Latin American, and Sub-Saharan African blend. The genetic mix creates a distinctive appearance: moderate olive-brown skin with warm undertones from the Eastern European and Sub-Saharan African components, with subtle epicanthic eye shape and slightly broader cheekbones from the East Asian ancestry (25%). Indigenous American heritage contributes to facial structure and bone density. The combination produces someone who reads as difficult to place at first glance—distinctly mixed without clear dominant features.",
+    "heritage": "Sub-Saharan African (34.4%), Indigenous American (19.3%), Hispanic/Latin American (18.4%), Eastern European (14.5%), East Asian (9.7%), and Southeast Asian (3.7%) blend. The dominant Sub-Saharan African and Indigenous American ancestry creates prominent high cheekbones, strong angular jaw structure, and naturally dense bone density. The East Asian and Southeast Asian components (13.4% combined) contribute a subtle epicanthic eye fold influence and moderate facial width. Hispanic/Latin American heritage adds warmth and golden undertones throughout. Eastern European ancestry provides slight facial width balance. The combination produces someone striking and genuinely mixed—a cosmopolitan appearance where no single ancestry dominates, reflecting the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, legs powerful and proportional. No excess mass — every kilogram serves function.",
     "hair_color": "Dark brown, naturally, with premature silver threading at temples",
     "hair_style": "Pulled back tight, practical, minimal styling. Kept short enough to prevent grab points.",
     "hair_length": "Short",
-    "eye_color": "Dark brown with subtle epicanthic fold influence and amber undertones",
-    "skin_tone": "Warm olive-brown with honeyed undertones, reflecting the Eastern European-East Asian-Sub-Saharan African genetic blend",
-    "complexion": "Weathered for 36 — sun damage from nocturnal work cycles causing occasional hyperpigmentation on cheekbones. High, slightly prominent cheekbones with subtle East Asian influence, squared jaw, a nose that has been broken and reset professionally. Facial structure shows blended ancestry: moderate width across the face with defined bone structure. Facial hair kept to stubble, deliberate maintenance.",
+    "eye_color": "Deep dark brown with subtle epicanthic fold influence and warm amber undertones",
+    "skin_tone": "Rich warm brown with golden undertones, a complex blend reflecting Sub-Saharan African, Indigenous American, and Hispanic/Latin American heritage with Eastern European and East Asian modulation",
+    "complexion": "Weathered for 36—sun damage from nocturnal work cycles causing occasional hyperpigmentation on cheekbones. Prominent, high cheekbones with strong definition from Sub-Saharan African and Indigenous American heritage. Squared jaw with angular structure shows East Asian facial width influence. Nose professionally reset after break, bridge slightly asymmetrical. Facial structure displays strong bone architecture: medium-width face with defined planes and natural prominence. Subtle eye fold characteristic of East and Southeast Asian ancestry. Facial hair kept to stubble, deliberate maintenance.",
     "distinguishing_marks": [
-      "Jagged scar along left temple, 4cm, running toward the hairline — blunt force impact",
-      "Burn scarring across right shoulder and upper chest in a crescent pattern, faded but visible — old thermal damage",
+      "Jagged scar along left temple, 4cm, running toward the hairline—blunt force impact",
+      "Burn scarring across right shoulder and upper chest in a crescent pattern, faded but visible—old thermal damage",
       "Thin white scar bisecting the left eyebrow",
       "Tattoo on left inner forearm: a geometric circuit pattern in black ink, 8cm tall, functional aesthetic"
     ],
-    "visible_augmentations": "Full cybernetic right arm from shoulder replacement — polished gunmetal chrome with visible articulation joints and servo lines. The arm is noticeably stronger in profile, with angular plating and a distinctly non-organic aesthetic. No attempt to pass it off as skin. Nasal augmentation barely visible — faint discoloration around the nostrils where the chemical analyzer interfaces with living tissue.",
-    "posture_movement": "Economy of motion. Stands with weight distributed across both legs, knees slightly bent, ready to shift. Moves without excess. The chrome arm hangs naturally but with a subtle mechanical precision to its rest position. Eyes are always tracking, cataloging. Nocturnal adaptation — slight squint in bright light, but in dim conditions moves with predatory comfort.",
-    "clothing_style": "Tier 4 utilitarian — function over fashion. Black reinforced cargo pants with utility pockets and articulated knee panels. Steel-toe boots, scuffed and worn but maintained. Layered tops: a fitted grey undershirt and a black tactical vest with integrated armor plating and tool loops. A worn synthetic leather jacket in charcoal, sized to accommodate the chrome arm without binding. No corporate branding. All materials are durable and matte — nothing that catches light. Minimal jewelry: a simple steel ring on left hand, a wrist-mounted chronometer in brushed steel."
+    "visible_augmentations": "Full cybernetic right arm from shoulder replacement—polished gunmetal chrome with visible articulation joints and servo lines. The arm is noticeably stronger in profile, with angular plating and a distinctly non-organic aesthetic. No attempt to pass it off as skin. Nasal augmentation barely visible—faint discoloration around the nostrils where the chemical analyzer interfaces with living tissue.",
+    "posture_movement": "Economy of motion. Stands with weight distributed across both legs, knees slightly bent, ready to shift. Moves without excess. The chrome arm hangs naturally but with a subtle mechanical precision to its rest position. Eyes are always tracking, cataloging. Nocturnal adaptation—slight squint in bright light, but in dim conditions moves with predatory comfort.",
+    "clothing_style": "Tier 4 utilitarian—function over fashion. Black reinforced cargo pants with utility pockets and articulated knee panels. Steel-toe boots, scuffed and worn but maintained. Layered tops: a fitted grey undershirt and a black tactical vest with integrated armor plating and tool loops. A worn synthetic leather jacket in charcoal, sized to accommodate the chrome arm without binding. No corporate branding. All materials are durable and matte—nothing that catches light. Minimal jewelry: a simple steel ring on left hand, a wrist-mounted chronometer in brushed steel."
   },
-  "image_prompt": "Remi Árnason-Novotný, 168cm compact mixed-heritage cyberpunk operative, warm olive-brown skin with East Asian and Sub-Saharan African features, dark brown eyes with amber undertones, short dark hair with silver at temples. Jagged left temple scar, burn scarring across right shoulder, full gunmetal chrome cybernetic right arm with visible servo joints and articulation, chemical analyzer augmentation at nose. Wearing black reinforced tactical cargo pants, steel-toe boots, fitted grey undershirt, black armor-plated tactical vest, worn charcoal synthetic leather jacket. Standing in nocturnal urban setting, dim neon-lit alley, weight distributed ready stance, chrome arm hanging naturally, predatory gaze tracking. Matte dark professional aesthetic, no corporate branding, steel ring on left hand, brushed steel chronometer visible. Cyberpunk 2226 Great Lakes Metropolitan Zone, dramatic side-lighting, cinematic noir atmosphere, hyper-realistic detail on augmentations and scars, economy of motion captured, no excess, functional aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Remi Horváth-Castañeda, 36-year-old neo-noir operative, mixed heritage with prominent high cheekbones and angular jaw, warm rich brown skin with golden undertones, deep brown eyes with subtle Asian fold influence. Short dark brown hair with silver at temples, pulled back tight. 168cm compact densely muscled build. Full cybernetic gunmetal chrome right arm with visible joints and servo lines. Jagged scar on left temple, thin scar through left eyebrow, faded crescent burn scarring on right shoulder. Black facial stubble. Wearing black reinforced tactical cargo pants, grey fitted undershirt, black armor-plated tactical vest, worn charcoal synthetic leather jacket. Steel-toe boots. Wrist chronometer, simple steel ring. Geometric circuit tattoo visible on left forearm. Standing in dim industrial setting, weight distributed, knees bent, predatory stillness. Nocturnal lighting, cool shadows, slight squint. Matte non-reflective utilitarian aesthetic. GLMZ, GLMZ aesthetic. Photorealistic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 46.4,
-    "East Asian": 25.0,
-    "Indigenous American": 11.6,
-    "Hispanic/Latin American": 10.8,
-    "Sub-Saharan African": 6.2
+    "Sub-Saharan African": 34.4,
+    "Indigenous American": 19.3,
+    "Hispanic/Latin American": 18.4,
+    "Eastern European": 14.5,
+    "East Asian": 9.7,
+    "Southeast Asian": 3.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 13.3,
+        "Zimbabwean": 3.7
+      },
+      "Central African": {
+        "Congolese": 3.8,
+        "Angolan": 1
+      },
+      "West African": {
+        "Malian": 6.6,
+        "Liberian": 6
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 5.8,
+        "Nahua": 6.5
+      },
+      "Andean": {
+        "Quechua": 7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 18.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 10.9
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 3.6
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 4.6
+      },
+      "Japanese": {
+        "Japanese": 1.5
+      },
+      "Korean": {
+        "Korean": 3.6
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 3.7
+      }
+    }
+  }
 }

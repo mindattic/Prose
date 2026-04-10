@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70e7fd9bb5505def347c60b",
   "type": "character",
-  "name": "Vale Tlemcani",
+  "name": "Vale Johansson",
   "aliases": [
     "Varya",
     "the Ghost Doc"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Edgewater Prism, a quiet practice on the fourteenth floor of a residential-commercial tower called the Tidal, near Clark and Belmont",
-  "description": "Varvara is a person who seems to occupy less space than their physical form suggests. Medium height, medium build, with pale olive skin and eyes the color of old circuit boards — a flat grey-green that catches light strangely. Their hair is silver-white, grown out from a former shave, and they wear it pulled back with an absolute minimum of effort. They have one notable modification: a patterned iris overlay (concentric rings, very fine, in copper) that they use as a focal point tool during calibration sessions. When they activate it, the rings rotate slowly, which is designed to be grounding rather than hypnotic, though clients sometimes report it can be both.\n\nThey are one of the few neural calibrators in GLMZ who specializes in the psychological dimension of augmentation integration rather than purely the technical one — working with clients who have received significant neural or sensory augmentation and lost, in some meaningful way, their sense of who they are. Their methods are partially technical, partially conversational, and partially something they don't have a clean name for. They are calm in a way that is not passive — there is something very present and very watchful in them that clients find either profoundly safe or deeply unsettling. They have never tried to fix this response.",
+  "description": "Vale Johansson is a person who seems to occupy less space than their physical form suggests. Medium height, medium build, with pale olive skin and eyes the color of old circuit boards — a flat grey-green that catches light strangely. Their hair is silver-white, grown out from a former shave, and they wear it pulled back with an absolute minimum of effort. They have one notable modification: a patterned iris overlay (concentric rings, very fine, in copper) that they use as a focal point tool during calibration sessions. When they activate it, the rings rotate slowly, which is designed to be grounding rather than hypnotic, though clients sometimes report it can be both.\n\nThey are one of the few neural calibrators in GLMZ who specializes in the psychological dimension of augmentation integration rather than purely the technical one — working with clients who have received significant neural or sensory augmentation and lost, in some meaningful way, their sense of who they are. Their methods are partially technical, partially conversational, and partially something they don't have a clean name for. They are calm in a way that is not passive — there is something very present and very watchful in them that clients find either profoundly safe or deeply unsettling. They have never tried to fix this response.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -191,7 +191,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,33 +249,21 @@
   "related_entities": [
     "Helix Biosystems",
     "Edgewater Prism",
-    "GLMZ",
     "Tidal Meridian",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Circuit",
     "Silver",
     "Copper",
+    "Neural Palate",
     "CHROMEWORKS Auris Focal Directional Hearing Suite",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Gravitic Shear Pistol GSP-7 'Tidal'",
     "The Pale Mile",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus ST-4 'Verdict'",
-    "BLACKWATER",
-    "Bioacoustic Communication Membrane",
-    "Breck Tannen",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nurlan Morita-Antwi",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TERMINUS",
-    "The Pure Hand",
-    "The Question",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "North African, Southeast Asian, Sub-Saharan African, Northern European, South Asian, and Central Asian blend; a complex phenotype reflecting the Ubiquitous Diaspora. The combination produces warm-toned skin with subtle depth, facial structure showing Southeast Asian and North African influence, with undertones from South Asian and Central Asian ancestry creating a distinctive, difficult-to-categorize appearance.",
+    "heritage": "Southeast Asian dominant (58.3%) with substantial Hispanic/Latin American (21.2%), South Asian (13.0%), and Pacific Islander (7.5%) ancestry. This combination produces a striking phenotype: warm golden-brown skin with Southeast Asian facial structure—slightly elevated cheekbones, refined nose—deepened by South Asian richness and Pacific Islander warmth. The overall effect is a luminous, even complexion with subtle golden radiance that shifts under different lighting.",
     "height_cm": 171,
     "weight_kg": 62,
     "build": "Lean, almost ascetic; minimal muscle definition but not fragile. A body that seems to have been pared down to functional essentials. Shoulders slightly rounded from years of leaning forward during sessions.",
@@ -283,8 +271,8 @@
     "hair_style": "Pulled back severely, usually in a loose braid or secured with a single metal clip; minimal styling, maximum control",
     "hair_length": "Long — reaching mid-shoulder blade when unbound",
     "eye_color": "Deep brown with amber undertones, base color; overlaid with a fine copper concentric-ring pattern that rotates when activated",
-    "skin_tone": "Warm medium-tan — a sophisticated blend of North African golden undertones, Southeast Asian warmth, and Sub-Saharan depth, tempered by Northern European paleness and South Asian richness. The resulting complexion is luminous and even, with subtle warmth that shifts under different light sources.",
-    "complexion": "Minimal grooming or vanity; clean but not adorned. Fine lines around the eyes and mouth suggesting decades of careful listening. No visible skin damage. Hands show slight tremor at rest — occupational, from neural work. Facial structure shows blended heritage with slightly higher cheekbones and a refined nose reflecting Southeast Asian and North African ancestry.",
+    "skin_tone": "Warm golden-brown — a sophisticated blend where Southeast Asian warmth dominates, enriched by South Asian depth, Hispanic/Latin undertones, and Pacific Islander luminosity. Even, radiant complexion that glows subtly under different light sources.",
+    "complexion": "Minimal grooming or vanity; clean but not adorned. Fine lines around the eyes and mouth suggesting decades of careful listening. No visible skin damage. Hands show slight tremor at rest — occupational, from neural work. Facial structure reflects Southeast Asian heritage with slightly elevated cheekbones and refined nose, warmth enhanced by South Asian and Pacific Islander ancestry.",
     "distinguishing_marks": [
       "Thin pale scar running from left temple to cheekbone, approximately 8cm, sustained during early neural interface training",
       "Small burn mark on the inner right wrist (1cm diameter), accidental contact with calibration equipment, scar tissue faintly visible",
@@ -294,17 +282,51 @@
     "posture_movement": "Still. Economical. They move with deliberate slowness, as if each gesture has been pre-calculated. When walking, they occupy minimal space in a room — a quality clients describe as almost disappearing. When seated across from someone, they are perfectly present but somehow not demanding. Hands rest open in lap or on armrests. They blink slowly. Their head tilts slightly when listening, a gesture that has become habitual.",
     "clothing_style": "Tier 2/3 boundary — expensive but austere. Fitted black or grey wool pants, usually. Long-sleeved shirts in muted tones (charcoal, slate, cream) under an unstructured linen or wool jacket in similar palette. Minimal jewelry: one silver ring on left ring finger (old, weathered). Comfortable, unremarkable shoes suited for standing during sessions. Clothes fit precisely but seem almost incidental to them — they could be wearing anything and project the same quiet presence. No logos, no status markers, no corpo branding."
   },
-  "image_prompt": "Vale Tlemcani, a 171cm lean figure with warm medium-tan skin blending North African, Southeast Asian, Sub-Saharan African, Northern European, South Asian and Central Asian heritage. Long silver-white hair pulled back in a severe braid. Dark brown eyes with rotating copper concentric-ring augmentation overlay. Fine facial structure with high cheekbones, thin pale temple scar, minimal expression. Wearing charcoal long-sleeved shirt beneath unstructured grey wool jacket, black fitted pants, simple silver ring. Still, economical posture, hands at rest. Standing in soft diffused light, cyberpunk 2226, neural interface anchor points faintly visible at hairline, quiet presence, austere Tier 2/3 aesthetic, almost disappearing into background, perfectly present but undemanding. --ar 2:3 --v 6",
+  "image_prompt": "Vale Johansson, 171cm tall, lean ascetic build, GLMZ. Warm golden-brown skin with luminous Southeast Asian-dominant features softened by South Asian depth and Pacific Islander warmth. Severe silver-white hair pulled back in loose braid, mid-shoulder length. Deep brown eyes with subtle rotating copper concentric rings visible when activated. Pale thin scar from left temple to cheekbone. Faint subdermal neural interface anchor points at base of skull. Still, economical posture, perfectly present but occupying minimal space. Wearing fitted charcoal wool pants, muted slate long-sleeve shirt under unstructured linen jacket, weathered silver ring. Hands slightly trembling at rest. Slow, deliberate movements suggesting pre-calculated gestures. Quiet dignity and neural-trained precision. Minimal augmentation visible, high-tier austere style. Neo-Tokyo corporate consulting office, soft overhead lighting with subtle shadows emphasizing fine lines and scar tissue, moody atmospheric render, photorealistic detail --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 31.2,
-    "Southeast Asian": 19.9,
-    "Sub-Saharan African": 15.4,
-    "Northern European": 14.9,
-    "South Asian": 10.7,
-    "Central Asian": 7.9
+    "Southeast Asian": 58.3,
+    "Hispanic/Latin American": 21.2,
+    "South Asian": 13,
+    "Pacific Islander": 7.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 58.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 14.5
+      },
+      "South American": {
+        "Venezuelan": 6.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.9
+      },
+      "Pakistani": {
+        "Sindhi": 8.1
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 4.1
+      },
+      "Micronesian": {
+        "Palauan": 0.6,
+        "Marshallese": 1.4
+      },
+      "Polynesian": {
+        "Samoan": 0.9,
+        "Tokelauan": 0.5
+      }
+    }
+  }
 }

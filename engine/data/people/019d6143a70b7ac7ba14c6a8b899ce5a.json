@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70b7ac7ba14c6a8b899ce5a",
   "type": "character",
-  "name": "Lark Ibarra-Fredriksen-Sefanaia",
+  "name": "Lark Taualagi-Fredriksen-Mbekele",
   "aliases": [
     "Temi",
     "TM16"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Hamtramck Enclave — works out of a studio called 'Derma' on the Enclave's main commercial strip, near Halsted and Chicago Ave",
-  "description": "Tèmítọpẹ is nineteen and operates at the velocity of someone who knows they are good and cannot wait for the world to confirm it. She is compact and energetic, her dark skin extensively modified with her own work: bioluminescent subcutaneous patterns run from her collarbones to her wrists in interlocking Yoruba adinkra symbols and Polynesian wave-forms, her Māori grandfather's heritage made literal on her body, the two visual languages coexisting in something that is recognizably neither and entirely her own. She has retractable claw mods on her right hand — practical for fine-work and also, she admits, because they look excellent — and her irises are modified to display the Enclave's coordinates in tiny glowing text, a joke that is also a statement of belonging.\n\nShe apprenticed at Derma at fifteen, doing cleanup and equipment sterilization. By seventeen she was doing bioluminescent pattern work. Now she is the reason people come to Derma specifically — her reputation spreading through the Hamtramck Enclave's dense social networks faster than she can accommodate the demand. She is brash and funny and has opinions about everything, delivered with the cheerful certainty of someone who has not yet been wrong enough times to become cautious. She is also, underneath the performance of confidence, deeply serious about her craft in a way she rarely lets people see directly.",
+  "description": "Lark Taualagi-Fredriksen-Mbekele is nineteen and operates at the velocity of someone who knows they are good and cannot wait for the world to confirm it. She is compact and energetic, her dark skin extensively modified with her own work: bioluminescent subcutaneous patterns run from her collarbones to her wrists in interlocking Yoruba adinkra symbols and Polynesian wave-forms, her Māori grandfather's heritage made literal on her body, the two visual languages coexisting in something that is recognizably neither and entirely her own. She has retractable claw mods on her right hand — practical for fine-work and also, she admits, because they look excellent — and her irises are modified to display the Enclave's coordinates in tiny glowing text, a joke that is also a statement of belonging.\n\nShe apprenticed at Derma at fifteen, doing cleanup and equipment sterilization. By seventeen she was doing bioluminescent pattern work. Now she is the reason people come to Derma specifically — her reputation spreading through the Hamtramck Enclave's dense social networks faster than she can accommodate the demand. She is brash and funny and has opinions about everything, delivered with the cheerful certainty of someone who has not yet been wrong enough times to become cautious. She is also, underneath the performance of confidence, deeply serious about her craft in a way she rarely lets people see directly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -155,7 +155,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,41 +172,28 @@
     "Helix Biosystems",
     "The CEO",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Heritage Vault",
+    "Plot 17",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Heritage Vault",
     "The Gradient Compact",
     "Chimera-Null",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Carrion Defense Works",
-    "Gravimetric Collapse Charge GCC-9",
-    "Slagworks Industrial",
     "Chicago",
-    "Aybek Sato-Poku",
-    "Dragan Petersen-Bah",
-    "GLMZ",
-    "Orhan Dlamini-Kurikka",
-    "Philibert Mwangi-Djordjevic",
-    "Plot 17",
-    "PulsePoint MoodGlyph Affective Display Implant",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "Temitán Asabere-Zubkov",
-    "The Flood Register",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Gravimetric Collapse Charge GCC-9",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (41.1%) with East Asian (27.1%), Pacific Islander (16.8%), Northern European (7.7%), and Middle Eastern (7.3%) ancestry. Genetic mosaic creates warm-toned skin with subtle golden undertones and a youthful, open expression. Features blend high cheekbones and almond-shaped eyes from East Asian heritage with broader nose bridge and fuller lips from Latin American and Pacific Islander mix. Overall phenotype: warm-brown complexion with balanced feature proportions reflecting the dominant but diverse ancestry.",
+    "heritage": "Pacific Islander (41.5%) with Southeast Asian (19.4%), Sub-Saharan African (12.5%), Hispanic/Latin American (10.7%), South Asian (9.3%), and Middle Eastern (6.6%) ancestry. Genetic mosaic creates warm deep-brown skin with golden, reddish, and olive undertones. Features blend the broader facial structure and fuller lips from Pacific Islander and Sub-Saharan African heritage with Southeast Asian eye shape and bone structure, South Asian cheekbone prominence, and Middle Eastern warmth. Overall phenotype: luminous deep warm-brown complexion with balanced, expressive features reflecting complex global ancestry.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, muscle definition visible in forearms and shoulders from precision handwork. Low body fat. Moves with economical grace — no wasted motion.",
     "hair_color": "Natural black with deep indigo undertones, color-shifted by bioluminescent pattern bleed",
     "hair_style": "Closely braided in geometric patterns; often worn in a high crown with loose synthetic extensions threaded through",
     "hair_length": "Medium (braids reach mid-back)",
-    "eye_color": "Dark brown base with embedded coordinate display — tiny cyan glowing numerals (latitude/longitude) visible in iris under low light",
-    "skin_tone": "Warm medium-brown with golden and olive undertones reflecting the blended ancestry of Latin American, East Asian, and Pacific Islander heritage",
-    "complexion": "Clear, youthful. High cheekbones with gentle width across face from diverse ancestry. Skin has a faint luminescent quality from subcutaneous work. Minimal scarring. Expression typically animated — eyebrows mobile, smile quick. Eyes have subtle epicanthic fold from East Asian component. Hands show fine calluses and occasional minor chemical burns from geneware handling.",
+    "eye_color": "Deep dark brown base with embedded coordinate display — tiny cyan glowing numerals (latitude/longitude) visible in iris under low light",
+    "skin_tone": "Deep warm brown with golden, reddish, and olive undertones. Rich luminosity from subcutaneous bioluminescent work, creating iridescent sheen at certain angles.",
+    "complexion": "Clear, youthful. Fuller cheekbones and broader facial structure from Pacific Islander and Sub-Saharan African heritage. Almond-shaped eyes with subtle epicanthic fold from Southeast Asian component. Wider nose bridge with full, expressive lips. Warm, animated expression — eyebrows mobile, smile quick and genuine. Hands show fine calluses and occasional minor chemical burns from geneware handling.",
     "visible_augmentations": "Retractable claw mods on right hand (4cm bone-white carbide tips, housed under normal nail beds; extends with visible finger joint articulation). Coordinate-display irises visible only under direct light or eye contact. Subcutaneous bioluminescent patterns visible across exposed skin — active in low light, dormant in bright daylight. Faint iridescent sheen to skin under certain angles from pigment suspension.",
     "distinguishing_marks": [
       "Extensive bioluminescent subcutaneous patterns across collarbones, shoulders, and both wrists in interlocking Yoruba adinkra symbols (wisdom knots, strength glyphs) and Polynesian wave-forms in pale cyan and deep indigo that glow softly in darkness",
@@ -216,16 +203,76 @@
     "posture_movement": "Stands and sits slightly forward-leaning, as if always mid-thought. Hand gestures precise and economical. Right hand frequently unconsciously extends/retracts claws during conversation. Walks with quick, confident stride. Eyes track details obsessively — color palettes, symmetry, proportion.",
     "clothing_style": "Tier 3-4 hybrid. Favors sleeveless or minimal-sleeve tops to showcase arm work (often custom-fitted, tailored pieces from Enclave makers). High-waisted cargo pants or modified coveralls in matte synthetics with visible utility pockets and tool loops. Reinforced leather gloves for client work, often removed and worn loose around wrists. Heavy-soled boots suitable for standing 8+ hours. Minimal jewelry — her body is her ornament. Occasional Helix Biosystems branded gear (hoodies, base layers) worn ironically. Scent is distinctive: rain-ozone-metal baseline from scent gland mod, often overlaid with bioluminescent pigment solvent."
   },
-  "image_prompt": "Lark Ibarra-Fredriksen-Sefanaia, cyberpunk 2226, compact 158cm wiry frame with warm golden-brown skin blending Hispanic, East Asian, and Pacific Islander heritage. Natural black hair with indigo shift in geometric braids worn in high crown. Dark brown eyes with glowing cyan coordinate display visible in low light. Sleeveless custom top showcasing extensive bioluminescent subcutaneous patterns in cyan and indigo — interlocking wisdom knots and wave-forms across collarbones, shoulders, wrists. Right hand with retractable bone-white carbide claws extended mid-gesture. High-waisted cargo pants, reinforced boots, minimal jewelry. Hands show fine calluses and chemical burn marks from geneware work. Forward-leaning posture, precise economical movements. Faint iridescent skin sheen in moody cyberpunk workspace lighting — neon ambient with shadows emphasizing bioluminescent patterns. Rain-ozone-metal scent suggested by atmospheric mist. Helix Biosystems aesthetic. Youthful animated expression, observant gaze. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Lark, a 158cm compact geneware technician in GLMZ, shot in low-light studio setting. Deep warm brown skin with golden and reddish undertones glowing softly. Pacific Islander and Sub-Saharan African broader facial structure with Southeast Asian almond eyes displaying tiny cyan coordinate glyphs in irises. Wider nose bridge, full expressive lips. Black hair with indigo undertones in tight geometric braids pulled into high crown with synthetic extensions. Sleeveless fitted top showcasing bioluminescent Yoruba adinkra symbols and Polynesian wave-forms glowing pale cyan and indigo across collarbones, shoulders, and wrists. Visible right hand extended with bone-white retractable carbide claw mods. Subcutaneous bioluminescent patterns create faint iridescent sheen across skin. Quick, genuine expression. Minimalist utilitarian aesthetic. Rain-ozone-metal atmospheric scent suggested by composed, precise posture. Neo-noir futurism meets genetic artistry. High contrast lighting emphasizing bioluminescence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 41.1,
-    "East Asian": 27.1,
-    "Pacific Islander": 16.8,
-    "Northern European": 7.7,
-    "Middle Eastern": 7.3
+    "Pacific Islander": 41.5,
+    "Southeast Asian": 19.4,
+    "Sub-Saharan African": 12.5,
+    "Hispanic/Latin American": 10.7,
+    "South Asian": 9.3,
+    "Middle Eastern": 6.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 41.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 19.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 1.3,
+        "Kenyan": 6
+      },
+      "West African": {
+        "Nigerian": 2.3,
+        "Ivorian": 1.1
+      },
+      "Southern African": {
+        "Zambian": 1.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 2.9
+      },
+      "Mexican": {
+        "Mexican": 5.3
+      },
+      "South American": {
+        "Chilean": 2.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 0.3
+      },
+      "Sri Lankan": {
+        "Sinhalese": 6.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1.3,
+        "Sindhi": 1
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 5.9
+      },
+      "Arab Levantine": {
+        "Palestinian": 0.5
+      },
+      "Arab Gulf": {
+        "Iraqi": 0.2
+      }
+    }
+  }
 }

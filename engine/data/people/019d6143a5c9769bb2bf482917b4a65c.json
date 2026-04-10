@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c9769bb2bf482917b4a65c",
   "type": "character",
-  "name": "Rune Diallo-Nygaard",
+  "name": "Rune Phommasack-Delgado",
   "aliases": [
     "Broke Branko",
     "The Optimist"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Shelf, Harrowgate Industrial Plateau, near Halsted and Division",
-  "description": "Branko is a stocky, perpetually grease-smudged man whose Indonesian-Ethiopian features have been weathered by twenty years of Harrowgate's industrial air into something that looks carved rather than grown. He has a magnificent mustache he tends with more care than anything else in his life, and his left eye is a salvaged optical implant three generations out of date that gives everything a faint amber tint and occasionally displays error codes in his peripheral vision that he's learned to ignore. His hands are enormous and scarred, and he can identify a component by touch alone in the dark. His stall is a magnificent catastrophe: towers of sorted scrap in a system only he understands, with handwritten price tags that rarely match what he actually charges.\n\nBranko is irrepressibly cheerful in the way that only someone who has completely stopped expecting things to go well can be. He finds everything slightly funny, including disasters, including his own. He narrates his life as if it's a story he's telling to someone who will appreciate it later. He genuinely loves salvage — not for profit, which is good because he's terrible at profit, but because every broken thing is a puzzle and he likes puzzles. He has an encyclopedic knowledge of augmentation components from five different decades and will talk about them at length to anyone who doesn't flee quickly enough. He is not stupid. He is simply constitutionally incapable of prioritizing money over curiosity.",
+  "description": "Rune Phommasack-Delgado is a stocky, perpetually grease-smudged man whose Indonesian-Ethiopian features have been weathered by twenty years of Harrowgate's industrial air into something that looks carved rather than grown. He has a magnificent mustache he tends with more care than anything else in his life, and his left eye is a salvaged optical implant three generations out of date that gives everything a faint amber tint and occasionally displays error codes in his peripheral vision that he's learned to ignore. His hands are enormous and scarred, and he can identify a component by touch alone in the dark. His stall is a magnificent catastrophe: towers of sorted scrap in a system only he understands, with handwritten price tags that rarely match what he actually charges.\n\nRune Phommasack-Delgado is irrepressibly cheerful in the way that only someone who has completely stopped expecting things to go well can be. He finds everything slightly funny, including disasters, including his own. He narrates his life as if it's a story he's telling to someone who will appreciate it later. He genuinely loves salvage — not for profit, which is good because he's terrible at profit, but because every broken thing is a puzzle and he likes puzzles. He has an encyclopedic knowledge of augmentation components from five different decades and will talk about them at length to anyone who doesn't flee quickly enough. He is not stupid. He is simply constitutionally incapable of prioritizing money over curiosity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -162,7 +162,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,32 +177,17 @@
   "registered_firearms": [],
   "related_entities": [
     "Harrowgate Industrial Plateau",
+    "The Marrow Market",
     "The Shelf",
-    "Aslan Vasquez-Chatterjee",
-    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
-    "Chimera-Null",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pure Hand",
-    "Tin Man",
-    "Abeke Soriano-Dlamini",
-    "Arcturus Defense Solutions",
-    "Devraj Solano-Yildirim",
-    "Emeka Johansson-Orozco",
-    "Idris Forsberg-Quaye",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
     "Noir Dining",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Pirjo Asante-Ulukhan",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "The Bazaar",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vuk Jorgensen-Toure"
+    "Chimera-Null",
+    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
+    "The Pure Hand",
+    "Tin Man"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian (46%) with significant Sub-Saharan African (24.9%) and Northern European (22.8%) ancestry, with minor Middle Eastern (6.3%) heritage. His features reflect this complex blend: warm undertones from East Asian and African ancestry tempered by Northern European bone structure and coloration patterns.",
+    "heritage": "Ubiquitous Diaspora ancestry: 37% Hispanic/Latin American, 33.5% Sub-Saharan African, 12.7% Southeast Asian, 8.3% East Asian, 5.8% North African, and 2.7% South Asian. His features reflect this intricate blend: warm deep bronze skin with golden and reddish undertones from the combined African, Latin American, and Southeast Asian heritage; broad cheekbones and defined facial structure from East Asian and Southeast Asian ancestry; facial proportions that echo Latin American and North African lineage. The result is a richly textured phenotype marked by warm, complex undertones rather than a single dominant heritage.",
     "height_cm": 172,
     "weight_kg": 94,
     "build": "Stocky and broad-shouldered with the dense musculature of someone who's spent two decades hauling salvage. His frame carries weight low and solid, without softness — functional rather than cultivated.",
@@ -210,8 +195,8 @@
     "hair_style": "Short and unkempt, rarely combed, often matted with industrial dust and machine oil",
     "hair_length": "Short",
     "eye_color": "Left eye: salvaged optical implant with amber lens displaying faint error glitches; Right eye: natural dark brown",
-    "skin_tone": "Warm deep bronze with underlying golden undertones from his East Asian and African heritage, dulled by years of Harrowgate industrial particulates; weathered and lined with a visible ashiness from chronic exposure to rust-laden air",
-    "complexion": "Heavily weathered face with the broad cheekbones and defined structure characteristic of East Asian ancestry, sharpened by two decades of exposure to grinding industrial air. Deep nasolabial folds, crow's feet from constant squinting at small components. His most striking feature is his mustache — thick, well-waxed, jet-black with silver threading, meticulously groomed and curled at the ends, a cultural grooming choice he's maintained through decades of salvage work. His face is perpetually smudged with grease and calibration dust.",
+    "skin_tone": "Warm deep bronze with golden and reddish undertones reflecting the blend of Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry; dulled by years of Harrowgate industrial particulates; weathered and lined with visible ashiness from chronic exposure to rust-laden air",
+    "complexion": "Heavily weathered face with broad cheekbones and defined structure reflecting Southeast Asian and East Asian heritage, warmed by Sub-Saharan African and Latin American ancestry. Deep nasolabial folds, crow's feet from constant squinting at small components. His most striking feature is his mustache — thick, well-waxed, jet-black with silver threading, meticulously groomed and curled at the ends, a cultural grooming choice he's maintained through decades of salvage work. His face is perpetually smudged with grease and calibration dust.",
     "distinguishing_marks": [
       "Extensive scar tissue across both knuckles and the backs of both hands from repeated cuts, burns, and puncture wounds during salvage work",
       "A thin burn scar running from his left temple down to his jaw — industrial accident from fifteen years ago, partially obscured by his mustache",
@@ -222,15 +207,74 @@
     "posture_movement": "He moves with a careful, economical shuffle — the gait of someone who's learned to navigate tight spaces between salvage towers without wasting energy. His hands are always in motion, turning things over, testing weight, running fingers across surfaces. When standing still, he leans slightly forward as if perpetually about to lean into a new puzzle. His left eye often clicks audibly as it refocuses.",
     "clothing_style": "Tier 4-5 salvage worker aesthetic. Layers of worn canvas work shirts, usually unbuttoned over a faded thermal, both stained with grease that has become part of the fabric's character. Heavy reinforced work pants with cargo pockets, each one containing unidentifiable components and tools. A patched canvas coat from perhaps three different garments, stitched together with visible wire. Steel-toed boots held together by duct tape and stubbornness. He wears a harness with loose chains and carabiners for hauling salvage. No corporate branding, no pretense — everything is utility and history."
   },
-  "image_prompt": "Rune Diallo-Nygaard, 172cm salvage worker with warm bronze skin and broad East Asian-derived cheekbones weathered by industrial exposure, dark brown hair peppered grey and matted with machine oil, thick jet-black mustache with silver threading meticulously curled at ends. Left eye is older-generation optical implant with amber lens and green error code flicker, right eye natural dark brown. Extensive scar tissue on knuckles and hands, burn scar running temple to jaw. Both hands reinforced with dull chrome knuckle plating welded over metacarpals. Stocky broad-shouldered build, dense functional musculature. Wearing layered worn canvas work shirts stained with grease, faded thermal underneath, heavy reinforced cargo work pants, patched canvas coat stitched from multiple garments, steel-toed duct-taped boots. Harness with loose chains and carabiners. Perpetually leaning forward in careful economical posture, hands in motion. Harrowgate industrial zone setting, neon-tinged shadows and rust-laden air, ambient glow on metal surfaces and error code text in his optical implant, cyberpunk 2226 GLMZ, gritty salvage tower environment --ar 2:3 --v 6",
+  "image_prompt": "Rune Phommasack-Delgado, 172cm salvage worker in the Great Lakes Metropolitan Zone, 2226. Stocky broad-shouldered build with warm deep bronze skin glowing with golden and reddish undertones, reflecting Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry. Weather-beaten face with broad cheekbones, deep nasolabial folds, crow's feet; defined structure showing East Asian influence. Striking thick black mustache with silver threading, meticulously waxed and curled at ends. Left eye is a mechanical optical implant with amber lens and green error glitches; right eye natural dark brown. Dark brown hair peppered with grey, short and matted with industrial dust. Extensive scarring on knuckles and hand backs; thin burn scar from left temple to jaw partially hidden by mustache. Grease-stained, oil-weathered complexion. Wearing layered worn canvas work shirts over faded thermal, heavily stained, reinforced work pants with cargo pockets, patched coat from multiple garments stitched with wire, steel-toed boots held together with duct tape. Harness with chains and carabiners. Reinforced chrome and steel knuckle plating on both hands. Moving with economical shuffle in tight salvage tower space, hands in constant motion examining salvage components. Industrial particulate-dulled skin. Neo-noir salvage aesthetic, functional and unpretentious. Harsh neon and rust-orange industrial lighting, shadows from massive salvage machinery. Gritty, worn, authentic post-industrial worker. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 46.0,
-    "Sub-Saharan African": 24.9,
-    "Northern European": 22.8,
-    "Middle Eastern": 6.3
+    "Hispanic/Latin American": 37,
+    "Sub-Saharan African": 33.5,
+    "Southeast Asian": 12.7,
+    "East Asian": 8.3,
+    "North African": 5.8,
+    "South Asian": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 22.7
+      },
+      "Mexican": {
+        "Mexican": 6.8
+      },
+      "Caribbean": {
+        "Puerto Rican": 7.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 11.5
+      },
+      "Central African": {
+        "Congolese": 9.1,
+        "Cameroonian": 6.3
+      },
+      "East African": {
+        "Tanzanian": 6.6
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 12.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.7
+      },
+      "Japanese": {
+        "Japanese": 0.6
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 2.4,
+        "Sudanese": 0.6
+      },
+      "Amazigh": {
+        "Berber": 0.4,
+        "Tuareg": 0.3
+      },
+      "Maghreb": {
+        "Moroccan": 1.4,
+        "Algerian": 0.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.7
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6bf7fa3af7c066c37b6bb9f",
   "type": "character",
-  "name": "Vega Bergqvist-Krishnamurthy",
+  "name": "Vega Vasquez-Alfarsi-Ixchel",
   "aliases": [
     "Ro",
     "Rón"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Ironvein Station, with a rented bunk in the Ferrogate Transit crew dormitory at Jefferson Switch, near Fullerton and Damen",
-  "description": "Rónán is lean and angular with East Slavic cheekbones and deep brown skin, his hair grown into loose, shaggy locs that he pins back with a battered Ferrogate Transit cap that has seen better years. He has geneware irises — rings of luminous amber that shift slightly in low light, a cheap mod he got at nineteen that he now considers a mistake but can't afford to reverse. A long procedural scar runs from his left jaw to his collarbone, the souvenir of a platform incident three years ago that Ferrogate classified as 'operator error' and he knows was not.\n\nHe is naturally funny in the wry, sideways way of someone who has processed a lot of institutional disappointment. He knows every regular on the 0430 Ironvein run by face if not by name, and he has opinions about all of them. He is the kind of person who is beloved by strangers and slightly maddening to people close to him, because he extends his easy warmth to everyone equally and it can feel, to the people who want more of him, like he is giving nothing specific at all.",
+  "description": "Vega Vasquez-Alfarsi-Ixchel is lean and angular with East Slavic cheekbones and deep brown skin, his hair grown into loose, shaggy locs that he pins back with a battered Ferrogate Transit cap that has seen better years. He has geneware irises — rings of luminous amber that shift slightly in low light, a cheap mod he got at nineteen that he now considers a mistake but can't afford to reverse. A long procedural scar runs from his left jaw to his collarbone, the souvenir of a platform incident three years ago that Ferrogate classified as 'operator error' and he knows was not.\n\nHe is naturally funny in the wry, sideways way of someone who has processed a lot of institutional disappointment. He knows every regular on the 0430 Ironvein run by face if not by name, and he has opinions about all of them. He is the kind of person who is beloved by strangers and slightly maddening to people close to him, because he extends his easy warmth to everyone equally and it can feel, to the people who want more of him, like he is giving nothing specific at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -180,7 +180,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ironvein Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,42 +249,26 @@
   "related_entities": [
     "Ferrogate Transit",
     "Jefferson Switch",
-    "Ironvein",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Ironvein",
     "Souvenir",
     "Tessera Corponation",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Alper Holmberg-Dembele",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Myofibril Lash",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Kang-Petrov Arms KPM-6 'Equalizer'",
-    "Narrowcast",
-    "Plasmatic Induction Whip PIW-4 'Threadbare'",
-    "Solina Barreto-Kiptoo",
-    "Switchback",
-    "The Last Frequency Radio",
-    "The Pure Hand",
-    "The Underlayer Collective",
-    "Tshiamo Vukić-Arellano"
+    "Neural Palate"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian and South Asian blend with minor East Asian features. Strong Southeast Asian phenotype (49.8%) dominates—warm golden-brown undertones, slightly rounded facial structure with defined cheekbones. South Asian ancestry (42.9%) contributes darker pigmentation depth and subtle eye shape. East Asian ancestry (7.3%) adds mild epicanthic fold tendency and slight nose bridge refinement.",
+    "heritage": "Complex diaspora blend: South Asian (23.2%), Middle Eastern (22.7%), Hispanic/Latin American (22.1%), Indigenous American (21.5%), and Sub-Saharan African (10.5%). Phenotypically rich mosaic reflecting the near-equal distribution of four major ancestry groups. Facial structure shows Indigenous American angular definition combined with South Asian refinement and Middle Eastern depth. Skin tone complexity arises from the warm undertones of all five heritage streams—bronze base with golden-amber warmth from South and Middle Eastern ancestry, subtle reddish undertones from Hispanic and Indigenous heritage, and warm depth from African ancestry. Eyes carry the luminous quality enhanced by South Asian genetic contribution.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, defined by years of shift work and irregular meals. Shoulders slightly hunched from operating posture. No excess fat; muscle is functional rather than developed.",
     "hair_color": "Dark brown, natural",
     "hair_style": "Loose locs, shoulder-length, usually pinned back with a worn Ferrogate Transit cap",
     "hair_length": "Long",
-    "eye_color": "Luminous amber with subtle geneware rings that shift in low light",
-    "skin_tone": "Warm golden-brown, blending Southeast Asian and South Asian ancestry. Rich mid-to-deep tone with subtle golden undertones characteristic of Southeast Asian heritage.",
-    "complexion": "Broad, slightly rounded facial structure with defined cheekbones and full jawline typical of Southeast Asian ancestry, refined by South Asian heritage. Fine-lined around eyes from squinting at screens and platform lighting. Stubble often visible; grooming is functional rather than fastidious. Tired but alert expression.",
+    "eye_color": "Deep warm brown with luminescent amber geneware rings that shift in low light",
+    "skin_tone": "Deep warm bronze with golden-amber and subtle reddish undertones. Mid-to-deep tone with luminous warmth throughout, reflecting the balanced blend of South Asian, Middle Eastern, Hispanic/Latin American, Indigenous American, and Sub-Saharan African ancestry. Rich complexity with natural glow.",
+    "complexion": "Angular facial structure with defined high cheekbones and strong jawline balancing Indigenous American and Hispanic definition with refined South Asian bone structure and warm Middle Eastern features. Fine lines around eyes from squinting at screens and platform lighting. Warm depth and subtle tonal complexity characteristic of diverse ancestry. Stubble often visible; grooming is functional rather than fastidious. Tired but alert expression.",
     "distinguishing_marks": [
       "Long procedural scar running from left jaw to left collarbone, pale and raised, approximately 12cm in length — result of a classified platform incident three years prior",
       "Minor calluses on right palm and fingers from tram control grips"
@@ -293,14 +277,65 @@
     "posture_movement": "Economical movements, slight forward lean from occupational posture. Walks with purpose but not aggression. Hands gesture frequently when speaking — expressive despite reserved demeanor. Often glances at surroundings with operator's habit of threat assessment.",
     "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit uniform (navy shirt with faded logo, grey trousers, worn) worn during shifts. Off-duty: layered practical wear — thermal underlayer, durable grey or brown jacket (synth-leather, scuffed), jeans patched at one knee. Battered Ferrogate cap, always. Worn transit-issue boots. No jewelry except a small E.L.F. token on a cord around his neck. Everything functional, nothing decorative."
   },
-  "image_prompt": "Vega Bergqvist-Krishnamurthy, androgynous Southeast and South Asian blend, warm golden-brown skin, 178cm lean angular build, shoulder-length dark locs pinned under worn Ferrogate Transit cap, luminous amber geneware eyes with subtle glow rings, defined cheekbones, tired alert expression, pale raised scar from jaw to collarbone, stubbled jaw. Wearing faded navy transit uniform shirt and grey trousers, scuffed synth-leather brown jacket, patched jeans, worn boots. Slight forward occupational lean, hands expressive mid-gesture. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial platform lighting, dim neon-lit transit station background, threat-assessment gaze, utilitarian worker aesthetic, moody atmospheric evening setting, --ar 2:3 --v 6",
+  "image_prompt": "Vega Vasquez-Alfarsi-Ixchel, lean 178cm tall transit operator with deep warm bronze skin and golden-amber undertones, angular Indigenous-influenced cheekbones refined by South Asian features, dark shoulder-length locs pinned under worn Ferrogate Transit cap. Deep brown eyes with faint luminescent amber geneware rings glowing subtly in dim light. Pale raised scar from jaw to collarbone. Wearing faded navy Ferrogate Transit uniform, synth-leather jacket, patched jeans, worn boots. Small E.L.F. token on cord. Slight forward lean from years at tram controls. Tired alert expression, hands mid-gesture, threat-assessment glance. GLMZ Great Lakes Metropolitan Zone platform at dusk, neon transit signs reflecting off wet metal, moody cool-warm lighting highlighting skin tone complexity, urban industrial background, photorealistic, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 49.8,
-    "South Asian": 42.9,
-    "East Asian": 7.3
+    "South Asian": 23.2,
+    "Middle Eastern": 22.7,
+    "Hispanic/Latin American": 22.1,
+    "Indigenous American": 21.5,
+    "Sub-Saharan African": 10.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 10.9,
+        "Tamil Sri Lankan": 0.3
+      },
+      "Pakistani": {
+        "Sindhi": 8.7,
+        "Punjabi Pakistani": 2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.3
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Afghan Dari": 22.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 13.6
+      },
+      "South American": {
+        "Brazilian": 7.1
+      },
+      "Central American": {
+        "Salvadoran": 0.3,
+        "Guatemalan": 1.1
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 13.7
+      },
+      "Plains Nations": {
+        "Cherokee": 7.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 3.2
+      },
+      "Southern African": {
+        "Zimbabwean": 5.5,
+        "Botswanan": 1.8
+      }
+    }
+  }
 }

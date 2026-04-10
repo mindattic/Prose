@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73475a1aa8e3e9bc0f09e3e",
   "type": "character",
-  "name": "Sterling Touré-Johansson",
+  "name": "Sterling Villanueva-Rakhimov",
   "aliases": [
     "Zef",
     "Zeroday"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "Hough Reclamation, near Ashland and Chicago Ave",
-  "description": "Zephyros is built like someone who forgets to eat when he's working — which is often — with a lanky frame, warm medium-brown skin, and his Kovalenko grandmother's sharp nose and high cheekbones. He has cat ears, the affordable kind, a dusty silver-grey that he chose because they were on discount and he has never once admitted this; his hair grows in loose natural coils that he keeps at a medium length and approximately never combs. His eyes are standard-issue brown except for a ring of self-installed retinal AR overlay that occasionally renders visible UI elements at the corner of his vision, which gives him the habit of twitching his gaze sideways to dismiss notifications mid-conversation.\n\nHe is the person in Hough Reclamation that people come to when the community mesh goes down, when their devices are compromised, when someone needs a data trail cleaned or a locked terminal reopened. He does not charge money — he charges favors and information, which he considers more valuable. He is genuinely ideological about this: he believes the mesh belongs to the community and his skills are a form of maintenance, like fixing a pipe. He is also seventeen and sometimes insufferably certain he is the smartest person present, which he often is and which helps no one.",
+  "description": "Sterling Villanueva-Rakhimov is built like someone who forgets to eat when he's working — which is often — with a lanky frame, warm medium-brown skin, and his Kovalenko grandmother's sharp nose and high cheekbones. He has cat ears, the affordable kind, a dusty silver-grey that he chose because they were on discount and he has never once admitted this; his hair grows in loose natural coils that he keeps at a medium length and approximately never combs. His eyes are standard-issue brown except for a ring of self-installed retinal AR overlay that occasionally renders visible UI elements at the corner of his vision, which gives him the habit of twitching his gaze sideways to dismiss notifications mid-conversation.\n\nHe is the person in Hough Reclamation that people come to when the community mesh goes down, when their devices are compromised, when someone needs a data trail cleaned or a locked terminal reopened. He does not charge money — he charges favors and information, which he considers more valuable. He is genuinely ideological about this: he believes the mesh belongs to the community and his skills are a form of maintenance, like fixing a pipe. He is also seventeen and sometimes insufferably certain he is the smartest person present, which he often is and which helps no one.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -165,7 +165,7 @@
     "Analyst": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -181,30 +181,18 @@
     "Hough Reclamation",
     "The Reclamation Assembly",
     "Grandmother",
-    "Vespid Dynamics Reconnaissance Beetle RB-2",
-    "Silver",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Sweeper-11",
-    "Arcturus CK-5 'Bloodhound'",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Ambrosia Fekete-Waiyaki",
-    "Auricula Felis Modification",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Axonal Stretch Resonance Lance",
-    "Aybek Alvarez-Okonkwo",
-    "Idris Forsberg-Quaye",
-    "Patient Zero",
     "Plot 17",
-    "Praevex",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Witness"
+    "Vespid Dynamics Reconnaissance Beetle RB-2",
+    "Chicago",
+    "Silver",
+    "Corner Slice",
+    "Sweeper-11",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian / East Asian / Sub-Saharan African blend (50.2% Southeast Asian, 25.9% East Asian, 23.9% Sub-Saharan African); phenotype reflects strong Southeast Asian foundation with East Asian refinement and Sub-Saharan African warmth",
+    "heritage": "Complex South and Central Asian foundation (52.2%) with significant Southeast Asian and Pacific Islander warmth (27.7%), anchored by Hispanic-Latin American features (17.3%) and minor East Asian influence (2.8%); phenotype reflects genuine diaspora ancestry with South Asian skeletal structure, Central Asian cheekbone definition, Southeast Asian and Pacific Islander skin warmth, and Hispanic-Latin American facial proportions creating a distinctly global appearance",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lanky and angular, the lean frame of someone who prioritizes screens over meals; visible rib definition, long limbs with minimal muscle development, slight forward slouch from hours hunched over equipment",
@@ -212,8 +200,8 @@
     "hair_style": "Loose natural coils, shoulder-length, intentionally unkempt and frequently pushed out of his face with whatever is nearest (fingers, wire, ear)",
     "hair_length": "Medium",
     "eye_color": "Medium brown (natural) with faint circular retinal overlay circuitry visible under direct light",
-    "skin_tone": "Warm medium-deep brown with golden undertones, the result of Southeast Asian base with East Asian and Sub-Saharan African warmth; slightly paler around the eyes from extended indoor time",
-    "complexion": "Defined cheekbones with Southeast Asian structure; youthful and unlined except for the faint dark circles that are his baseline state; minimal grooming routine, skin otherwise clear; complexion reflects blended ancestry with warm, even tone",
+    "skin_tone": "Warm medium-deep brown with golden-bronze undertones; the layered result of South Asian and Central Asian base melanin, enriched by Southeast Asian and Pacific Islander depth; slight warm flush across cheekbones; paler around eyes from extended indoor time but maintains inherent warmth",
+    "complexion": "Blended diaspora facial structure: prominent cheekbones with Central Asian angularity, slight aquiline nose with South Asian character, Pacific Islander-influenced rounded jawline softening Hispanic-Latin American definition; youthful and unlined except for faint dark circles that are his baseline state; minimal grooming routine, skin otherwise clear; warm even tone with subtle depth across all regions",
     "distinguishing_marks": [
       "Fine network of scar tissue on both inner wrists from self-installing the retinal overlay, approximately 3cm each, partially hidden by the wrist cuff of whatever he's wearing",
       "Occasional static discharge marks (small burns, healed) on his fingertips from working with unshielded components, barely visible unless closely examined"
@@ -222,14 +210,76 @@
     "posture_movement": "Typically hunched or folded into whatever surface he occupies; walks with economical, slightly distracted gait; hands are always in motion — fidgeting, gesturing, unconsciously mimicking typing; makes frequent micro-adjustments to his cat ears when thinking; prone to freezing mid-conversation when processing notifications only he can see",
     "clothing_style": "Tier 4-5 practical utility: layered synthetic base layers (thermal regulation, often mismatched), oversized hoodies or canvas jackets with asymmetrical pocket configurations for tools and worn devices, cargo pants with evidence of improvised reinforcement at stress points, footwear is functional and held together with apparent stubbornness; no corporate branding; everything worn into softness; occasional patch of medical tape holding something together"
   },
-  "image_prompt": "Sterling Touré-Johansson, mixed Southeast Asian/East Asian/Sub-Saharan African heritage, 172cm lean angular frame, warm medium-deep brown skin with golden undertones, dark brown coiled hair shoulder-length unkempt, medium brown eyes with visible faint retinal AR overlay circuitry, sharp defined cheekbones, youthful face with dark circles, silver-grey matte geneware cat ears positioned slightly too high, self-installed. Dressed in mismatched layered synthetic base layers, oversized worn canvas jacket, reinforced cargo pants, functional weathered footwear, medical tape repairs visible. Hunched posture, hands in constant motion fidgeting, micro-adjusting cat ears, lost in thought. Seated in neon-lit GLMZ hacker den, cyan UI glitch elements flickering at edge of vision, dim ambient lighting casting shadows across defined features, cyberpunk 2226 aesthetic, moody introspective moment, gritty functional environment --ar 2:3 --v 6",
+  "image_prompt": "Sterling Villanueva-Rakhimov, 2226 neo-noir hacker: lean 172cm angular build, warm medium-deep brown skin with golden undertones reflecting South Asian, Central Asian, Southeast Asian and Pacific Islander ancestry, sharp Central Asian cheekbones, slight aquiline nose, natural dark brown shoulder-length coils constantly pushed from face, medium brown eyes with faint cyan retinal circuitry overlay glitching, self-installed silver-grey matte cat ears positioned too high on skull, dark circles baseline exhaustion. Wearing mismatched thermal layers under oversized canvas jacket, cargo pants with improvised reinforcement, functional worn footwear held together stubbornly. Hunched posture in dimly-lit underground server room, hands fidgeting near salvaged components, micro-expressions twitching from AR notifications only he sees, ambient cyan and amber neon glow reflecting off skin and metal augmentations, GLMZ 2200s aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 50.2,
-    "East Asian": 25.9,
-    "Sub-Saharan African": 23.9
+    "South Asian": 26.6,
+    "Central Asian": 25.6,
+    "Hispanic/Latin American": 17.3,
+    "Southeast Asian": 16.5,
+    "Pacific Islander": 11.2,
+    "East Asian": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Tamil": 26.6
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 25.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 2.6
+      },
+      "Central American": {
+        "Honduran": 7.9,
+        "Salvadoran": 0.4
+      },
+      "Caribbean": {
+        "Puerto Rican": 6.4
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 5.1,
+        "Balinese": 3.9
+      },
+      "Vietnamese": {
+        "Vietnamese": 7.5
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 0.6,
+        "Hawaiian": 1.9
+      },
+      "Melanesian": {
+        "Fijian": 0.5,
+        "Ni-Vanuatu": 1.1
+      },
+      "Micronesian": {
+        "Palauan": 4.9,
+        "Kiribati": 2.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.3
+      },
+      "Japanese": {
+        "Japanese": 0.5
+      },
+      "Chinese": {
+        "Shanghainese": 0.4,
+        "Cantonese": 0.6
+      }
+    }
+  }
 }

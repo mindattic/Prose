@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d674c48e009c826653218d",
   "type": "character",
-  "name": "Olumide Shirazi-Abdykadyrov-Odinga",
+  "name": "Olumide Horváth-Adeyemi-Salazar",
   "aliases": [
     "Sol",
     "Sweetwater"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Freestone, GLMZ, near Armitage and Milwaukee",
-  "description": "Solène is the kind of woman who makes a room feel smaller in a good way — Japanese-South African ancestry that gives her a mid-height, angular frame, warm brown skin, and thick dark hair she wears loose or pinned with what appears to be a hex driver (it is a hex driver). Her bioluminescent skin mod runs in thin lines along her collarbones and inner wrists — a soft gold-green that brightens almost imperceptibly when her mood shifts, which is either wonderful or terrible depending on how well you know her. She has the particular physical fluency of career bartenders: reading posture from across a room, tracking three conversations, and never putting a glass down noisily.\n\nThe Freestone Tap is a narrow, low-ceilinged establishment on the ground floor of an Irkalla-adjacent block that has been serving Freestone workers for fifty years under various names and owners. Solène bought a 40% stake three years ago with a loan from her mother and an uncomfortable arrangement with the previous owner. The bar is not glamorous; it has a long-running policy of extremely cheap prices during the first two hours of any shift change, a rotating shrine to three different E.L.F.s behind the bar that she maintains with meticulous neutrality, and a back room that she rents to the neighborhood tenant collective for their meetings. She knows when to pour and when to put the bottle away, and she is never wrong about which one a given person needs.",
+  "description": "Olumide Horváth-Adeyemi-Salazar is the kind of woman who makes a room feel smaller in a good way — Japanese-South African ancestry that gives her a mid-height, angular frame, warm brown skin, and thick dark hair she wears loose or pinned with what appears to be a hex driver (it is a hex driver). Her bioluminescent skin mod runs in thin lines along her collarbones and inner wrists — a soft gold-green that brightens almost imperceptibly when her mood shifts, which is either wonderful or terrible depending on how well you know her. She has the particular physical fluency of career bartenders: reading posture from across a room, tracking three conversations, and never putting a glass down noisily.\n\nThe Freestone Tap is a narrow, low-ceilinged establishment on the ground floor of an Irkalla-adjacent block that has been serving Freestone workers for fifty years under various names and owners. Olumide Horváth-Adeyemi-Salazar bought a 40% stake three years ago with a loan from her mother and an uncomfortable arrangement with the previous owner. The bar is not glamorous; it has a long-running policy of extremely cheap prices during the first two hours of any shift change, a rotating shrine to three different E.L.F.s behind the bar that she maintains with meticulous neutrality, and a back room that she rents to the neighborhood tenant collective for their meetings. She knows when to pour and when to put the bottle away, and she is never wrong about which one a given person needs.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -154,7 +154,7 @@
     "Mystic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Freestone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -168,35 +168,19 @@
   "registered_firearms": [],
   "related_entities": [
     "Riverbottom",
-    "GLMZ",
     "Freestone",
-    "Flicker",
     "ShieldTech SB-3 'Groundstrike'",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+    "Kel Adeyemi-Strand",
     "Irkalla",
-    "Glass",
-    "Gold",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
     "Arcturus KS-7 'Nursery'",
-    "Aïda Połczyńska-Ouattara",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Palladian Construction",
-    "Patient Zero",
-    "Pikasso Wemba-Þórðarson",
-    "Slagworks Industrial",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "The Bazaar",
-    "The Collective",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "The Unfinished Theorem",
-    "Yannick Tambadou-Reinholt"
+    "Glass",
+    "GLMZ",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed ancestry from Sub-Saharan Africa (43.7%), Central Asia (19.1%), Northern Europe (15.0%), Middle East (10.7%), Pacific Islander (8.3%), and South Asia (3.2%). The genetic blend creates distinctive features: warm deep brown skin with subtle golden undertones from African ancestry, high prominent cheekbones with slight Central Asian angularity, and the warm eye shape reflecting the diverse heritage. Her phenotype represents the true cosmopolitan mix of the 2226 Ubiquitous Diaspora.",
+    "heritage": "Mixed ancestry from Sub-Saharan Africa (43.1%), Eastern Europe (16.4%), North Africa (12.9%), Southeast Asia (12.6%), Hispanic/Latin America (11.1%), and East Asia (3.9%). The genetic blend creates distinctive features: warm deep brown skin with golden undertones from the African and North African ancestry, high prominent cheekbones with subtle angularity from Eastern European and Southeast Asian heritage, and warm dark eyes reflecting the diverse global mix. Her phenotype represents the true cosmopolitan blend of the 2226 Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Angular and lean with defined shoulders — the economical musculature of someone who moves deliberately and rarely wastes motion. No softness; everything about her frame suggests efficiency.",
@@ -204,8 +188,8 @@
     "hair_style": "Worn loose in soft waves or pinned up asymmetrically with what is literally a hex driver instead of a traditional hair stick",
     "hair_length": "Long (shoulder-blade length when down)",
     "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Deep warm brown with golden undertones — the result of African, Central Asian, and Pacific Islander ancestry blending to create a rich, luminous complexion that catches light beautifully",
-    "complexion": "Clean, minimal makeup (perhaps dark liner on long shifts), skin well-maintained but not pampered. High prominent cheekbones reflecting Central Asian ancestry, warm brown tone with subtle golden undertones. Fine lines around eyes from years of focused attention and late-night work. Expression rarely neutral — always reading the room.",
+    "skin_tone": "Deep warm brown with golden undertones — the result of Sub-Saharan African, North African, and Eastern European ancestry blending to create a rich, luminous complexion that catches light beautifully",
+    "complexion": "Clean, minimal makeup (perhaps dark liner on long shifts), skin well-maintained but not pampered. High prominent cheekbones reflecting Eastern European and Southeast Asian ancestry, warm brown tone with subtle golden undertones from African heritage. Fine lines around eyes from years of focused attention and late-night work. Expression rarely neutral — always reading the room.",
     "visible_augmentations": "Bioluminescent skin mod (collarbones and inner wrists) — the primary visible augmentation. The enhanced auditory filter is subcutaneous; no external hardware visible, though close observation might catch slight asymmetry in her ear canal or a faint scar. She wears no external tech jewelry or interface displays.",
     "distinguishing_marks": [
       "Bioluminescent subcutaneous lines running along both collarbones in a delicate branching pattern, emitting soft gold-green light that intensifies with mood shifts",
@@ -215,17 +199,68 @@
     "posture_movement": "Upright and centered, weight balanced like someone constantly ready to move in any direction. Her movements are economical and precise — no wasted gesture. She reads a room by standing still and observing; when she moves, it's always with purpose. Behind the bar, she has the particular grace of someone who has poured ten thousand drinks without breaking a glass. Her gaze tracks multiple focal points simultaneously. When listening intently, her bioluminescent lines brighten almost imperceptibly — a tell she didn't anticipate when she got the mod.",
     "clothing_style": "Tier 3-4 working class with personal style. Typically: dark fitted long-sleeve shirt (often vintage or second-hand, well-tailored) or a durable tank top under a thin cardigan, dark trousers or fitted jeans with reinforced seams, comfortable non-slip work boots (scuffed, well-maintained). Sometimes a half-apron with pockets for bar tools. No corporate branding. One or two pieces of jewelry — usually understated (a thin silver chain, a simple ring). Clothes are clean and intentional, not fashionable, selected for durability and movement. On rare days off, she dresses similarly but slightly less utilitarian. Nothing suggests she shops on the Tier 1-2 corporate strip."
   },
-  "image_prompt": "Olumide, a 168cm lean-muscled woman with deep warm brown skin and high cheekbones reflecting mixed Sub-Saharan African, Central Asian, and Pacific Islander heritage. Long natural black hair with warm undertones, worn loose in soft waves. Dark observant eyes. Bioluminescent gold-green branching lines trace her collarbones and inner wrists, glowing softly. Wearing a dark fitted long-sleeve vintage shirt, dark fitted jeans with reinforced seams, and scuffed non-slip work boots. A thin silver chain at her neck. Standing upright and centered behind a cyberpunk bar in the GLMZ, 2226. Ambient neon-blue and purple lighting reflects off her bioluminescent skin mod. Her expression is direct and observant, reading the room. Precise, economical posture suggesting quiet competence. Soft fine lines around her eyes from years of focused work. No corporate branding. Intricate, lived-in aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Olumide Horváth-Adeyemi-Salazar, 168cm tall, angular lean build with defined shoulders, deep warm brown skin with golden undertones, high prominent cheekbones, dark observant eyes. Long natural black hair with warm undertones worn loose in soft waves. Bioluminescent gold-green branching lines glowing softly along collarbones and inner wrists, faint circular scar on left temple. Wearing dark fitted long-sleeve shirt, dark reinforced jeans, scuffed non-slip work boots, thin silver chain necklace. Standing behind a dimly-lit neo-noir bar counter, upright and centered posture, economical precise movements, reading the room with intense focus. Bioluminescent augmentations casting subtle light across skin. GLMZ Great Lakes Metropolitan Zone aesthetic, neon ambient lighting, moody atmospheric depth-of-field, photorealistic character study --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 43.7,
-    "Central Asian": 19.1,
-    "Northern European": 15.0,
-    "Middle Eastern": 10.7,
-    "Pacific Islander": 8.3,
-    "South Asian": 3.2
+    "Sub-Saharan African": 43.1,
+    "Eastern European": 16.4,
+    "North African": 12.9,
+    "Southeast Asian": 12.6,
+    "Hispanic/Latin American": 11.1,
+    "East Asian": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 39.4,
+        "Angolan": 3.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 6.4,
+        "Romanian": 5.2
+      },
+      "Slavic East": {
+        "Belarusian": 3.3
+      },
+      "Slavic South": {
+        "Croatian": 1.5
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 3.3
+      },
+      "Amazigh": {
+        "Berber": 5,
+        "Tuareg": 2.4
+      },
+      "Maghreb": {
+        "Moroccan": 2.2
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.4
+      },
+      "Filipino": {
+        "Cebuano": 7.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 3.1,
+        "Cuban": 8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.9
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66f71cdaee2931577e3dfc3",
   "type": "character",
-  "name": "Onyx Mensah-Björnsdóttir",
+  "name": "Onyx Mensah-Diallo",
   "aliases": [
     "Silhouette",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Nodar Kuznetsov-Adu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Nodar Kuznetsov-Adu lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Onyx Mensah-Diallo is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Onyx Mensah-Diallo lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -260,7 +260,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,39 +273,23 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "Slagworks Industrial",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Djeneba Park-Traore",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "Oumarou Svec-Ranginui",
-    "Quilt",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "East Asian (37.7%) / Sub-Saharan African (34.0%) / Eastern European (28.3%) — a genuine tripartite blend. Facial structure reflects the East Asian and African ancestry with slight Slavic angularity, creating features that resist easy categorization.",
+    "heritage": "Sub-Saharan African (85.2%) / East Asian (7.7%) / Hispanic/Latin American (7.1%) — predominantly West African ancestry with minor East Asian and Latin American admixture. Facial structure reflects strong Sub-Saharan features with subtle East Asian influence softening the overall geometry. The genetic blend creates a distinctive phenotype where warm golden undertones and defined bone structure dominate, with the East Asian contribution visible in eye shape and skin texture refinement.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Lean and ropey — long muscle without bulk, the physiology of someone who trains for precision rather than power. Shoulders slightly elevated from years of controlled tension.",
     "hair_color": "Dark grey-brown with natural silver threading at temples",
     "hair_style": "Pulled back in a tight, functional braid that exposes the base of her skull — no vanity, pure practicality",
     "hair_length": "Long",
-    "eye_color": "Pale grey with faint amber undertones — natural, unaugmented, but unnervingly steady",
-    "skin_tone": "Deep warm brown with subtle golden undertones — the result of East Asian and Sub-Saharan African heritage blending, with Eastern European influence creating slight complexity in undertone. Rich and even, neither ashy nor ruddy.",
-    "complexion": "High, defined cheekbones with broader underlying structure reflecting East Asian and African ancestry. Narrow jaw with softer angle than pure Nordic features. Full lips — a characteristic of Sub-Saharan heritage — balanced by the precision of her expression. Skin weathered but maintained — not soft, not brutalized, somewhere in between. A scar cuts through her left eyebrow, thin and precise as a surgical line.",
-    "eye_shape": "Slight epicanthic fold reflecting East Asian ancestry, almond-shaped, creating an alert and penetrating gaze",
+    "eye_color": "Deep brown with subtle amber undertones — natural, unaugmented, but unnervingly steady",
+    "skin_tone": "Deep warm brown with rich golden undertones — the result of predominantly Sub-Saharan African ancestry with minor East Asian warmth and slight Latin American influence deepening the saturation. Complexion is even and luminous, neither ashy nor ruddy, with underlying warmth that speaks to equatorial and tropical heritage.",
+    "complexion": "High, defined cheekbones with broader underlying structure reflecting Sub-Saharan African ancestry. Full lips — characteristic of African heritage — balanced by the precision of her expression. Nose proportionally wider at bridge, blending naturally into refined tip with subtle tapering from East Asian admixture. Skin weathered but maintained — not soft, not brutalized, somewhere in between. A scar cuts through her left eyebrow, thin and precise as a surgical line.",
+    "eye_shape": "Almond-shaped with subtle upper lid definition reflecting East Asian influence, set within the alert roundness characteristic of Sub-Saharan African ancestry, creating an intensely penetrating gaze. The combination produces an unusually striking eye geometry.",
     "distinguishing_marks": [
       "Surgical-precise scar through left eyebrow, 3cm length, pale against skin",
       "Faint chemical burn marks on inner right forearm — constellation of small white discolorations, professional hazard",
@@ -315,14 +299,35 @@
     "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion, no fidgeting. When standing still, she's unnervingly motionless. When walking, each step is placed with intent. Her head rotates rather than her eyes — a habit born from directional microphone awareness. Rarely blinks for extended periods.",
     "clothing_style": "Tier 3-4 utilitarian. Favors dark, neutral colors — grey, black, deep blue. Clothes are well-maintained but unremarkable: polymer-blend tactical trousers, fitted long-sleeved shirts in reinforced synth-cotton, a worn matte-black jacket with internal pockets and secure fasteners. No logos, no chrome trim, nothing to catch light or memory. Functional waterproof boots rated for chemical exposure. Gloves at most times — thin synthetic material, dexterous, designed for precision work."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Onyx Mensah-Björnsdóttir: deep warm brown-skinned woman with almond-shaped pale grey eyes, high defined cheekbones, full lips, dark grey-brown hair with silver threads pulled into tight braid exposing skull. Surgical scar through left eyebrow. Flush-mounted titanium-chrome cyberears with visible microphone arrays. Recessed neural jack at base of skull. Wearing matte-black tactical jacket, reinforced synth-cotton shirt, thin synthetic gloves. Lean ropey musculature, 183cm tall. Motionless posture, unnervingly still. Deep shadow cyberpunk lighting, cool blue-grey tones, slight rim light catching chrome augmentations. Atmospheric industrial interior, neutral palette, no vanity, pure function. --ar 2:3 --v 6",
+  "image_prompt": "Onyx Mensah-Diallo, a lean 183cm figure of precise efficiency, standing in overhead neon-lit industrial warehouse, year 2226. Deep warm brown skin with golden undertones, high defined cheekbones and full lips characteristic of West African ancestry with subtle East Asian refinement in almond eye shape. Deep brown eyes with amber flecks, unnervingly alert. Dark grey-brown hair pulled back in tight functional braid exposing base of skull and titanium-chrome cyberears with visible microphone arrays. Surgical scar cutting through left eyebrow. Wearing dark grey reinforced synth-cotton fitted long-sleeve shirt, matte-black tactical jacket, polymer-blend trousers, waterproof boots. Thin synthetic precision gloves. Motionless posture, economical stance, zero fidgeting. Faint chemical burn marks visible on inner right forearm. Cybernetic neural interface port at base of skull. Neo-noir urban aesthetic, cold blue-purple neon lighting casting sharp shadows, industrial background with metallic surfaces, film noir mood, professional and lethal precision. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 37.7,
-    "Sub-Saharan African": 34.0,
-    "Eastern European": 28.3
+    "Sub-Saharan African": 85.2,
+    "East Asian": 7.7,
+    "Hispanic/Latin American": 7.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 33.5,
+        "Somali": 15.7
+      },
+      "West African": {
+        "Nigerian": 36
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 7.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 7.1
+      }
+    }
+  }
 }

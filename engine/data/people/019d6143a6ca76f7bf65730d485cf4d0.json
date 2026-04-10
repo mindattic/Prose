@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ca76f7bf65730d485cf4d0",
   "type": "character",
-  "name": "Vale Sepúlveda-Okonkwo-Wickramasinghe",
+  "name": "Vale Sow-Haraldsen-Thorvaldsdóttir",
   "aliases": [
     "Seri",
     "Patch"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "University Spine, Helix Biosystems adjacent research annex, Ironvein district, near Lincoln and Clark",
-  "description": "Serefina is slight and quick-moving, with the compact energy of someone who grew up in small spaces. Her heritage reads clearly in her face — wide cheekbones from her Polynesian grandmother, the long straight nose of her Polish grandfather, warm olive-brown skin that tans fast. She has patterned irises: a deep violet with sunburst fractures she chose at nineteen to look dramatic and has since decided look professional, which is a different thing. Her most notable feature is a series of bioluminescent freckles across her nose and cheeks — not cosmetic geneware but a side effect of an experimental UV-response modification she accepted as a research subject during her undergrad and which no one has been able to reverse without more side effects.\n\nShe is the youngest person in her department and is painfully aware of it, which expresses as over-preparation rather than insecurity — she is always the most thoroughly sourced person in any meeting. Her work is the painstaking recovery and contextualization of biological sequence data from pre-Collapse biospheres: species that no longer exist, gene-lines that were never catalogued before they disappeared, the molecular record of a world being assembled from fragments. She finds it beautiful and devastating in equal measure, and has developed a personality that can hold both without collapsing.",
+  "description": "Vale Sow-Haraldsen-Thorvaldsdóttir is slight and quick-moving, with the compact energy of someone who grew up in small spaces. Her heritage reads clearly in her face — wide cheekbones from her Polynesian grandmother, the long straight nose of her Polish grandfather, warm olive-brown skin that tans fast. She has patterned irises: a deep violet with sunburst fractures she chose at nineteen to look dramatic and has since decided look professional, which is a different thing. Her most notable feature is a series of bioluminescent freckles across her nose and cheeks — not cosmetic geneware but a side effect of an experimental UV-response modification she accepted as a research subject during her undergrad and which no one has been able to reverse without more side effects.\n\nShe is the youngest person in her department and is painfully aware of it, which expresses as over-preparation rather than insecurity — she is always the most thoroughly sourced person in any meeting. Her work is the painstaking recovery and contextualization of biological sequence data from pre-Collapse biospheres: species that no longer exist, gene-lines that were never catalogued before they disappeared, the molecular record of a world being assembled from fragments. She finds it beautiful and devastating in equal measure, and has developed a personality that can hold both without collapsing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -206,7 +206,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,30 +276,18 @@
     "Grandmother",
     "The CEO",
     "The Heritage Vault",
-    "Ironvein",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Ironvein",
     "The Gradient Compact",
     "Irontide Tidal Energy",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "ARCHIVE",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus CK-5 'Bloodhound'",
-    "Arcturus ST-4 'Verdict'",
-    "Chronicle",
-    "GLMZ",
-    "Ihaia Nystrom-Keita",
-    "LifeWire EvenKeel Mood Regulation Implant",
-    "Nnamdi Ostrowski-Faletolu",
-    "The Archive",
-    "The Compact",
-    "The Pure Hand",
-    "The Transparency Mandate",
-    "Volkov-Saito Precision VS-R8 'Verdict'"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (54.1%) with significant Hispanic/Latin American (35.9%) and South Asian (10.0%) ancestry, creating a rich blend of West African, Central African, Latin American, and South Asian features",
+    "heritage": "Northern European (41.8%) blended with Sub-Saharan African (24.7%), Southeast Asian (17.4%), Eastern European (12.7%), and East Asian (3.4%) ancestry, creating a striking multitonal phenotype. The mixture produces Scandinavian bone structure softened by African feature warmth, Southeast Asian eye shape delicacy, and Eastern European angular definition—a genuinely integrated genetic blend rather than distinct layers.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Slight and compact, lean muscle from precise repetitive work rather than athletics. Economy of movement suggests someone built for small spaces and lab benches.",
@@ -307,25 +295,77 @@
     "hair_style": "Practical, usually worn in a low bun or secured with lab clips; occasionally loose to shoulder length",
     "hair_length": "Medium",
     "eye_color": "Deep violet with radial sunburst fracture patterns (chosen cosmetic iris modification at age 19)",
-    "skin_tone": "Rich warm brown with golden undertones, reflecting the blend of Sub-Saharan African heritage with Latin American and South Asian warmth. Tan-prone with the even complexion of someone careful about UV exposure",
-    "complexion": "Angular face with high, prominent cheekbones characteristic of African ancestry, paired with the warm, sculpted features influenced by Latin American and South Asian genetics. Straight nose with subtle bridge definition. Skin is clear and well-maintained. Distinctive pattern of bioluminescent freckles across nose and cheekbones — faint warm blue-green glow visible in low light, remnant of unreverted UV-response genetic modification.",
+    "skin_tone": "Warm medium brown with golden undertones—balanced blend of Northern European base tempered by Sub-Saharan African richness, further warmed by Southeast Asian and Eastern European genetics. Tan-prone with even complexion from careful UV management.",
+    "complexion": "Angular face with high, sculpted cheekbones reflecting Northern European and Eastern European bone structure, softened by Sub-Saharan African feature warmth. Straight nose with subtle bridge definition influenced by Southeast Asian genetics. Skin is clear and well-maintained. Distinctive constellation of bioluminescent freckles across nose and upper cheekbones—faint warm blue-green glow visible in low light, remnant of experimental UV-response genetic modification.",
     "distinguishing_marks": [
       "Bioluminescent freckle constellation across nose and upper cheekbones, glows faintly in ambient darkness (side effect of experimental research modification)",
       "Faint scarring on inside of left wrist from biosample filtration implant installation",
       "Small precision-work calluses on fingertips of both hands"
     ],
-    "visible_augmentations": "Patterned violet iris modifications clearly visible. Bioluminescent freckles glow subtly in low light. No visible chrome or external hardware — all augmentations are subcutaneous or cosmetic.",
+    "visible_augmentations": "Patterned violet iris modifications clearly visible. Bioluminescent freckles glow subtly in low light. No visible chrome or external hardware—all augmentations are subcutaneous or cosmetic.",
     "posture_movement": "Precise, economical movements with focus in the hands. When standing, slight forward lean as if about to move to the next task. When concentrating, becomes very still. Quick and efficient gait, rarely wastes motion.",
     "clothing_style": "Tier 2-3 practical elegance. Lab coat (University Spine branded, well-maintained) worn over neutral base layers. Favors dark colors and breathable fabrics suitable for long lab hours. Wears a thin ceramic-composite bracelet (heritage piece or personal memento, worn constantly). Minimal jewelry beyond augmented irises. Footwear is quiet and grip-focused (lab safety + personal preference). Overall appearance reads as 'seriously competent twenty-something academic who has made peace with her own intensity.'"
   },
-  "image_prompt": "Vale Sepúlveda-Okonkwo-Wickramasinghe, a 158cm petite twenty-something bioscientist with rich warm brown skin glowing with golden undertones, high prominent cheekbones, and a straight nose. Dark brown hair with auburn undertones styled in a low practical bun. Most striking are her cosmetic violet iris modifications with radial sunburst fracture patterns, and a subtle bioluminescent freckle constellation across her nose and cheekbones emitting faint blue-green light in the lab's ambient darkness. Wearing a crisp University Spine lab coat over dark neutral base layers, ceramic-composite heritage bracelet visible on wrist. Precise posture leaning slightly forward, economical movements concentrated in her hands as she works at a lab bench. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, soft warm lab lighting casting gentle shadows across her face, with the bioluminescent freckles subtly glowing. Serious, focused, competent intensity. --ar 2:3 --v 6",
+  "image_prompt": "Vale Sow-Haraldsen-Thorvaldsdóttir, 158cm lean multiethnic woman with warm medium-brown skin, high sculpted cheekbones, straight nose, bioluminescent blue-green freckles glowing faintly across nose and cheekbones in low light. Deep violet cosmetic iris with radial fracture patterns. Dark brown hair with auburn undertones, pulled into practical lab bun. Wearing pristine University Spine branded lab coat over dark neutral layers, ceramic-composite heritage bracelet visible on wrist. Precision calluses on fingertips. Standing in GLMZ research laboratory with soft neon ambient lighting, slight forward lean, economical posture, focused intensity. Warm gel lighting emphasizing her bioluminescent freckles. GLMZ 2200s aesthetic, academic intensity, competent and composed. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 54.1,
-    "Hispanic/Latin American": 35.9,
-    "South Asian": 10.0
+    "Northern European": 41.8,
+    "Sub-Saharan African": 24.7,
+    "Southeast Asian": 17.4,
+    "Eastern European": 12.7,
+    "East Asian": 3.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 27,
+        "Finnish": 14.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 11.2
+      },
+      "Central African": {
+        "Cameroonian": 6.1,
+        "Congolese": 7.4
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 7.6
+      },
+      "Indonesian": {
+        "Javanese": 6.3,
+        "Sumatran": 3.5
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 6.8
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 2.1,
+        "Romanian": 2.4
+      },
+      "Slavic South": {
+        "Bulgarian": 1.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 1.1
+      },
+      "Chinese": {
+        "Mandarin Northern": 0.7,
+        "Shanghainese": 0.3
+      },
+      "Korean": {
+        "Korean": 1.3
+      }
+    }
+  }
 }

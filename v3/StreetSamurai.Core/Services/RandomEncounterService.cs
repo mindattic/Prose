@@ -7,7 +7,7 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Generates random street-level encounters that can be injected between story beats.
-/// Meridian 88 is dangerous — random crime, corporate sweeps, augment malfunctions,
+/// GLMZ is dangerous — random crime, corporate sweeps, augment malfunctions,
 /// and territorial disputes happen constantly. These interruptions keep the world
 /// feeling alive and unpredictable.
 /// </summary>
@@ -52,7 +52,7 @@ public class RandomEncounterService
         var dangerLevel = currentTension < 4 ? "low" : currentTension < 7 ? "medium" : "high";
 
         var system = $"""
-            You are generating a random street encounter for cyberpunk fiction in Meridian 88.
+            You are generating a random street encounter for near-future fiction in GLMZ.
             This interrupts the current scene — it should feel sudden, organic, and have
             consequences even if the protagonists choose to walk away.
 

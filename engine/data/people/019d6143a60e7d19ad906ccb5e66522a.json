@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60e7d19ad906ccb5e66522a",
   "type": "character",
-  "name": "Katarzyna Tuivailala-Kuznetsov",
+  "name": "Kaya Kimura-Waboose",
   "aliases": [
     "Voltage",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Halsted and Division",
-  "description": "Fanta Kato-Adomako is slight and easy to overlook, which is exactly the point. At 28, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Fanta Kato-Adomako plans to keep it that way. She works as a fixer out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Fanta Kato-Adomako lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Kaya Kimura-Waboose is slight and easy to overlook, which is exactly the point. At 28, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Kaya Kimura-Waboose plans to keep it that way. She works as a fixer out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Kaya Kimura-Waboose lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.61,
@@ -261,7 +261,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,30 +277,13 @@
     "Ironveil Canopy",
     "The Unfinished Theorem",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
-    "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Fanta Dzhuraev-Mboyo",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Prophet",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Fathom Line",
-    "The Shelf",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European dominant (52.9%) with significant Pacific Islander ancestry (32.4%), complemented by South Asian (7.3%), Sub-Saharan African (4.9%), and Hispanic/Latin American (2.5%) — a striking Ubiquitous Diaspora blend resulting in warm-toned, sun-kissed features with Slavic bone structure",
+    "heritage": "Ubiquitous Diaspora blend with Indigenous American plurality (30.8%) anchoring warm, earth-toned features, complemented by significant South Asian (16.6%), East Asian (14.1%), Hispanic/Latin American (13.6%), and North African (13.6%) ancestry with Sub-Saharan African (11.3%) deepening undertones — resulting in a complex warm bronze complexion with golden and reddish undertones across multiple ancestry groups, creating dimensional warmth throughout the face and body",
     "height_cm": 162,
     "weight_kg": 51,
     "build": "Lean and wiry — deceptively fragile-looking, but muscular in the shoulders and forearms from years of fieldwork. Low body fat, efficient frame designed for movement rather than presence.",
@@ -308,8 +291,8 @@
     "hair_style": "Pulled back in a tight, practical braid when working; loose shoulder-length when civilian",
     "hair_length": "Medium",
     "eye_color": "Dark brown with subtle amber undertones",
-    "skin_tone": "Warm golden-bronze — the blended result of Eastern European base with Pacific Islander warmth, creating a sun-kissed complexion with underlying golden undertones",
-    "complexion": "Angular face with high, prominent cheekbones and sharp jawline reflecting Slavic heritage, softened by the broader facial structure and warmer pigmentation from Pacific Islander ancestry. Skin maintains an even, warm tone with minimal blemishes, though faint lines around the eyes betray irregular sleep and high-stress work. Lips thin and often set in neutral expression.",
+    "skin_tone": "Warm earth-bronze with golden-reddish undertones — richly dimensional complexion reflecting the blend of Indigenous American (30.8%), South Asian (16.6%), North African (13.6%), and Sub-Saharan African (11.3%) ancestry, naturally radiant with warm depth throughout",
+    "complexion": "Angular face with high, prominent cheekbones and sharp jawline reflecting East Asian and Indigenous American heritage, balanced by warmer pigmentation and slightly broader structure from South Asian and Hispanic ancestry. Skin maintains an even, warm tone with minimal blemishes, though faint lines around the eyes betray irregular sleep and high-stress work. Lips full and often set in neutral expression. Subtle warmth variations across face—golden highlights in cheeks, deeper undertones in hollows—suggesting complex six-way genetic blending across continents.",
     "distinguishing_marks": [
       "Three parallel horizontal scars on right inner forearm, white and thin — surgical or deliberate, roughly 8cm each, spaced 2cm apart",
       "Faint burn scar across left shoulder blade, roughly 4cm diameter, slightly raised and lighter than surrounding skin",
@@ -319,16 +302,75 @@
     "posture_movement": "Economical and controlled — she moves with purpose, never wasted motion. Slight forward lean in the shoulders, as if perpetually ready to move. Eyes track exits and sightlines instinctively. In civilian mode, deliberately adopts a more rounded posture and relaxed gait to avoid drawing attention.",
     "clothing_style": "Off-duty: neutral Tier 4 basics — fitted dark grey or black synthetic-weave pants, unmarked hoodies or fitted long-sleeves, minimal branding. Worn work boots with good tread. A grey canvas messenger bag, overstuffed and practical. During contracts: reinforced jacket with internal pockets, tactical harness beneath outer layer, gloves. Everything muted, functional, forgettable."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Katarzyna, 162cm lean wiry frame with warm golden-bronze skin from mixed Eastern European-Pacific Islander heritage, sharp high cheekbones and angular Slavic jawline, dark brown eyes with amber glints, shoulder-length black hair pulled tight, barely visible chrome neural jack at base of skull, geometric tattoo on right wrist, three thin white scars on inner forearm, faint burn mark on shoulder blade, wearing fitted black synthetic hoodie and grey canvas messenger bag, economical posture leaning forward, tired lines around eyes, minimal jewelry, cool underground lab lighting with neon accents, focused and alert expression, GLMZ corporate tower district in soft focus background, cinematic depth, --ar 2:3 --v 6",
+  "image_prompt": "Kaya Kimura-Waboose, GLMZ, portrait of a 162cm lean East-Indigenous-South Asian mixed-heritage woman with warm bronze skin, golden-reddish undertones, high cheekbones, sharp jawline, dark brown eyes with amber flecks, shoulder-length black hair with dark undertones. Three thin white scars visible on right forearm, small geometric tattoo on right wrist. Chrome neural interface jack at base of skull, silvered and visible. Dark fitted clothing, grey canvas messenger bag, practical worn boots. Slight forward lean, economical posture, tracking eyes. High-stress work lines around eyes. Neutral expression. Neo-noir urban aesthetic, moody urban lighting, shallow depth of field, 2226 neural augmentation technology visible. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 52.9,
-    "Pacific Islander": 32.4,
-    "South Asian": 7.3,
-    "Sub-Saharan African": 4.9,
-    "Hispanic/Latin American": 2.5
+    "Indigenous American": 30.8,
+    "South Asian": 16.6,
+    "East Asian": 14.1,
+    "Hispanic/Latin American": 13.6,
+    "North African": 13.6,
+    "Sub-Saharan African": 11.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 17.9,
+        "Maya": 7.5
+      },
+      "Great Lakes Nations": {
+        "Ho-Chunk": 5.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 10.3
+      },
+      "Nepali": {
+        "Nepali": 5.8
+      },
+      "Pakistani": {
+        "Sindhi": 0.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 5.3
+      },
+      "Caribbean": {
+        "Cuban": 7.3
+      },
+      "Mexican": {
+        "Mexican": 1
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 4.8
+      },
+      "Maghreb": {
+        "Libyan": 0.2
+      },
+      "Amazigh": {
+        "Tuareg": 8.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 3.7,
+        "Sierra Leonean": 5.1
+      },
+      "East African": {
+        "Somali": 2.5
+      }
+    }
+  }
 }

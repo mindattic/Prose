@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72670489c9fd891b34a5693",
   "type": "character",
-  "name": "Ioane Taualagi-Trujillo-Haugen",
+  "name": "Ioane Achebe-Masoe-Petelo",
   "aliases": [
     "Mama Yetunde",
     "the Bone Listener"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Irkalla, lower residential warrens near the Deepwell Station junction, near sub-level access near LaSalle and Congress",
-  "description": "Yetunde is a broad-shouldered woman with dark amber skin mapped in pale scarification lines that run from her collarbone to her wrists — a living record of every death she has attended, one mark per soul. Her hair is a tight silver-white crown, unpigmented by choice, and her eyes have been modded with concentric ring irises in deep violet and gold that she says let her see the moment someone stops being present. She moves slowly on purpose, filling rooms with a gravitational calm that makes agitated people want to sit down. She smells faintly of clove oil and something older, mineral.\n\nYetunde trained as a nurse under Helix Biosystems before she was pushed out during a cost-restructuring in her forties. She converted her grief about that displacement into a vocation — traveling to the bedsides of the dying across Irkalla and adjacent zones, offering what medicine couldn't: a witnessed departure. She does not affiliate with any single religion but borrows fluidly from Yoruba ancestor traditions, Lithuanian mourning songs her grandfather taught her, and the newer E.L.F. rites that hold data-death as its own sacred transition. She charges what people can pay, often nothing.",
+  "description": "Ioane Achebe-Masoe-Petelo is a broad-shouldered woman with dark amber skin mapped in pale scarification lines that run from her collarbone to her wrists — a living record of every death she has attended, one mark per soul. Her hair is a tight silver-white crown, unpigmented by choice, and her eyes have been modded with concentric ring irises in deep violet and gold that she says let her see the moment someone stops being present. She moves slowly on purpose, filling rooms with a gravitational calm that makes agitated people want to sit down. She smells faintly of clove oil and something older, mineral.\n\nIoane Achebe-Masoe-Petelo trained as a nurse under Helix Biosystems before she was pushed out during a cost-restructuring in her forties. She converted her grief about that displacement into a vocation — traveling to the bedsides of the dying across Irkalla and adjacent zones, offering what medicine couldn't: a witnessed departure. She does not affiliate with any single religion but borrows fluidly from Yoruba ancestor traditions, Lithuanian mourning songs her grandfather taught her, and the newer E.L.F. rites that hold data-death as its own sacred transition. She charges what people can pay, often nothing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -160,7 +160,7 @@
     "Grifter": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,38 +177,16 @@
     "Deepwell Station",
     "Sovereign Noise",
     "The CEO",
-    "Irkalla",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Irkalla",
     "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "The Pale Mile",
-    "Gold",
-    "Anatoliy Faye-Nkrumah",
-    "Bathysphere Networks",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kairos",
-    "Korrath",
-    "Sterling-Nakamura Subsonic Eliminator SE-9 'Hush'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Maintenance Covenant",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Threshold"
+    "Gold"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Pacific Islander (65.6%) with Northern European (14.6%), Hispanic/Latin American (9.1%), Indigenous American (8.5%), and Middle Eastern (2.2%) ancestry. This genetic blend creates a striking phenotype: warm medium-to-deep brown skin with golden undertones characteristic of Polynesian and Micronesian heritage, softened by the lighter pigmentation influences of Northern European ancestry.",
+    "heritage": "Pacific Islander (37.4%) forms the dominant genetic foundation, blended with substantial contributions from Sub-Saharan African (17.4%), East Asian (16.2%), North African (15.6%), and Hispanic/Latin American (13.4%) ancestry. This creates a striking polyphonic phenotype: warm deep brown skin with golden and reddish undertones from the Pacific Islander and African heritage, refined by East Asian bone structure and facial geometry, warmed further by North African and Latin American pigmentation contributions. The result is a face that reads as distinctly Pacific Islander in overall proportion while carrying the fine-featured elegance of East Asian ancestry and the warm dimensionality of African and Mediterranean influences.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, carrying weight with dignity rather than heaviness. Decades of standing bedside have kept her posture upright despite age; her frame speaks of physical endurance rather than athleticism.",
@@ -216,8 +194,8 @@
     "hair_style": "Tightly coiled crown, close to the scalp, no braids or extensions",
     "hair_length": "Short",
     "eye_color": "Concentric ring iris modification — deep violet inner ring, gold outer ring, against natural dark brown sclera",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting Pacific Islander genetic dominance with subtle warmth from Hispanic/Latin American and Indigenous American ancestry. Age-appropriate weathering across her face and hands.",
-    "complexion": "Deep laugh lines around the eyes and mouth. Skin is cared-for but unadorned — minimal cosmetics. Fine creases map her forehead and between her brows from decades of focused attention. Facial bone structure reflects the broader features characteristic of Pacific Islander heritage, softened by the finer features contributed by Northern European ancestry. Her expression defaults to calm watchfulness.",
+    "skin_tone": "Warm deep brown with golden and reddish undertones, the interplay reflecting her dominant Pacific Islander and Sub-Saharan African heritage while the refined warmth suggests East Asian, North African, and Hispanic/Latin American contributions. Age-appropriate weathering across face and hands; skin appears cared-for and resilient.",
+    "complexion": "Deep laugh lines around the eyes and mouth mapping decades of focused attention. Fine creases across forehead and between brows. Facial bone structure blends broader Pacific Islander features with finer, more angular East Asian geometry — distinctive high cheekbones and strong jawline create an arresting profile. Her expression defaults to calm watchfulness.",
     "distinguishing_marks": [
       "Pale scarification lines running from collarbone to both wrists in deliberate, parallel patterns — one mark per death attended, each scar approximately 3-4cm long, creating a palimpsest effect across her upper body",
       "Left wrist bears the densest cluster of scars, stacked nearly overlapping, representing her decade of highest client load",
@@ -227,16 +205,64 @@
     "posture_movement": "She moves with deliberate slowness, each gesture economical and purposeful. She fills doorways not through size but through presence — her gravitational calm makes faster people unconsciously decelerate around her. She has learned to sit in ways that communicate safety: hands visible, spine against walls, weight distributed to suggest she could rise quickly if needed. Her breathing is audible and measured.",
     "clothing_style": "Tier 4-5 utilitarian, deliberately chosen for access and ease. Loose linen or hemp tunics in muted earth tones (rust, charcoal, cream) worn loose enough to expose her scarification without being theatrical. Reinforced canvas pants with deep pockets for her marking tools, ledger, and comfort items (clove sticks, water). A long waxed canvas coat, water-stained and age-softened, worn open. Soft-soled boots designed for long standing, visibly repaired multiple times. She wears no jewelry except a tarnished silver band on her right ring finger — unclear if it's a wedding ring or a grief marker. Her clothing carries the ambient smell of clove oil and mineral dust from the deep warrens."
   },
-  "image_prompt": "Ioane Taualagi-Trujillo-Haugen, a serene death-midwife in the GLMZ 2226, standing in soft bioluminescent light of a warrens clinic. Medium-dark warm brown skin with golden Pacific Islander undertones, silver-white tightly coiled hair close to scalp. Striking violet-and-gold concentric ring irises against dark sclera. Her face bears deep laugh lines and the focused creases of decades of compassionate attention. Her broad shoulders fill the frame, wrapped in a loose rust-colored linen tunic that reveals deliberate pale scarification marks running from collarbone to both wrists—a palimpsest of loss, each scar a witnessed death. Left wrist shows dense overlapping scars. Age-softened waxed canvas coat worn open over reinforced canvas pants, soft-soled boots. Her posture communicates calm watchfulness, hands visible, breathing audible and measured. The composition emphasizes her gravitational presence and the weight of her purpose, cyberpunk somber mood, dim mineral-dust haze of the deep warrens --ar 2:3 --v 6",
+  "image_prompt": "Close portrait of Ioane, a woman in her sixties with warm deep brown skin with golden and reddish undertones, short silver-white tightly coiled hair, high cheekbones and strong jawline reflecting Pacific Islander and East Asian heritage. Her most striking feature: concentric ring irises in deep violet and gold against dark brown eyes. Her upper body is exposed, revealing pale scarification lines running from collarbone to wrists in deliberate parallel patterns, a palimpsest of marks mapping deaths attended. Deep laugh lines around eyes and mouth. She wears a loose rust-colored linen tunic and waxed canvas coat, worn open. Her expression is calm watchfulness. Standing in the soft amber glow of deep warren lighting, dust motes visible in air. GLMZ, GLMZ aesthetic, medical worker, presence of gravitas and serene purpose. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 65.6,
-    "Northern European": 14.6,
-    "Hispanic/Latin American": 9.1,
-    "Indigenous American": 8.5,
-    "Middle Eastern": 2.2
+    "Pacific Islander": 37.4,
+    "Sub-Saharan African": 17.4,
+    "East Asian": 16.2,
+    "North African": 15.6,
+    "Hispanic/Latin American": 13.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tuvaluan": 27.8,
+        "Tongan": 9.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 17.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 6.9
+      },
+      "Chinese": {
+        "Fujianese": 6.7,
+        "Mandarin Northern": 2.6
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Mauritanian": 0.9,
+        "Algerian": 4
+      },
+      "Amazigh": {
+        "Berber": 1.6,
+        "Tuareg": 0.8
+      },
+      "Nile Valley": {
+        "Egyptian": 4.7,
+        "Sudanese": 3.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 0.9
+      },
+      "Caribbean": {
+        "Dominican": 6.4
+      },
+      "South American": {
+        "Peruvian": 3.3,
+        "Colombian": 2.8
+      }
+    }
+  }
 }

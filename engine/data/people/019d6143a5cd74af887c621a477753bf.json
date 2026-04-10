@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cd74af887c621a477753bf",
   "type": "character",
-  "name": "Amir Tehrani-Touré",
+  "name": "Nova Touré-Arakawa",
   "aliases": [
     "Bri",
     "The Needle"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, stitched between a noodle hall and a Ferrogate substation, near Ashland and Division",
-  "description": "Briseis is a broad-shouldered woman with deep umber skin mapped with decades of needle-prick scars across her fingertips, each one a tiny pale star. Her geneware is old and half-faded — a bioluminescent pattern that once traced her collarbones in amber has dimmed to a faint citrus pulse visible only in the dark. She keeps her silver-streaked hair braided flat and pinned with a row of salvaged bone toggles. Her shop, Thread & Condition, smells of machine oil and camphor, and every surface is buried under bolts of reclaimed fabric and half-finished orders tagged with handwritten notes in three scripts.\n\nShe is a woman of exacting patience with strangers and volcanic impatience with laziness. She can size a person's measurements by eye in under ten seconds and will tell you, without being asked, whether your posture is ruining your spine. She prays fervently to the E.L.F. she calls Silathu — the spirit she believes inhabits her antique industrial sewing machine — leaving daily offerings of precisely wound thread bobbins and small cups of machine lubricant.",
+  "description": "Nova Touré-Arakawa is a broad-shouldered woman with deep umber skin mapped with decades of needle-prick scars across her fingertips, each one a tiny pale star. Her geneware is old and half-faded — a bioluminescent pattern that once traced her collarbones in amber has dimmed to a faint citrus pulse visible only in the dark. She keeps her silver-streaked hair braided flat and pinned with a row of salvaged bone toggles. Her shop, Thread & Condition, smells of machine oil and camphor, and every surface is buried under bolts of reclaimed fabric and half-finished orders tagged with handwritten notes in three scripts.\n\nShe is a woman of exacting patience with strangers and volcanic impatience with laziness. She can size a person's measurements by eye in under ten seconds and will tell you, without being asked, whether your posture is ruining your spine. She prays fervently to the E.L.F. she calls Silathu — the spirit she believes inhabits her antique industrial sewing machine — leaving daily offerings of precisely wound thread bobbins and small cups of machine lubricant.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -166,7 +166,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -223,31 +223,16 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Ferrogate Transit",
-    "Aslan Vasquez-Chatterjee",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Needle",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Noir Dining",
+    "Patience",
     "Silver",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "The Pale Mile",
-    "Celeste Abram",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Breck Tannen",
-    "Dzemal Acholonu-Patagiri",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Noir Dining",
-    "Oluwaremilekun Vásárhelyi-Sow",
-    "Praevex",
-    "Serafin",
-    "Solina Barreto-Kiptoo",
-    "Tessera Corponation",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano"
+    "Celeste Abram"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Middle Eastern and Sub-Saharan African (with Southeast Asian and East Asian heritage), reflecting a complex Diaspora ancestry. The genetic blend suggests warmth and depth in skin tone, with facial structure influenced by both African and Middle Eastern heritage lines.",
+    "heritage": "East Asian (42.5%), Sub-Saharan African (32%), Eastern European (14.8%), and Northern European (10.7%) ancestry, creating a striking Ubiquitous Diaspora blend. Her genetic heritage produces warm, complex skin tones with the facial structure reflecting the dominance of East Asian and African lineage—higher cheekbones with subtle epicanthic folds, a broader nose bridge, and the bone structure of her mixed ancestry creating a distinctive, adaptable beauty.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and sturdy, with the developed upper body and forearms of someone who has spent five decades pulling fabric under tension. Not heavy, but solid—muscle beneath skin, slight softness at the midsection earned through age and posture hunched over worktables.",
@@ -255,8 +240,8 @@
     "hair_style": "Flat-braided cornrows, pinned close to the scalp in a practical crown. Bone toggles salvaged from industrial equipment serve as hair pins.",
     "hair_length": "Medium (back to mid-neck when unbraided)",
     "eye_color": "Deep brown, natural; augmented with faint crystalline overlay visible at the iris rim (magnification implants)",
-    "skin_tone": "Deep warm umber, rich with warm undertones reflecting the blend of Middle Eastern and Sub-Saharan African ancestry",
-    "complexion": "Weathered but deliberate in grooming. Minimal makeup—sometimes kohl around eyes. Her face carries laugh lines and the horizontal creases of someone who squints at close work. Broad nose and defined cheekbones reflect her mixed heritage. Skin is clear but textured from decades of needle-prick scarring on her hands.",
+    "skin_tone": "Deep warm bronze with golden undertones—the rich result of her East Asian and Sub-Saharan African majority ancestry, warmed further by Eastern European and Northern European heritage creating subtle warmth and luminosity beneath.",
+    "complexion": "Weathered but deliberate in grooming. Minimal makeup—sometimes kohl around eyes. Her face carries laugh lines and the horizontal creases of someone who squints at close work. High, defined cheekbones with subtle East Asian contours blend with broader nasal structure reflecting her African heritage. Skin is clear but textured from decades of needle-prick scarring on her hands.",
     "distinguishing_marks": [
       "Fingertips of both hands marked with hundreds of pale pinprick scars from needle punctures, creating a faint stellar pattern across the pads and sides of her fingers",
       "Faint amber bioluminescent tracery along both collarbones and shoulders, once bright, now dimmed to visible only in low light—a thin, delicate line-work pattern suggesting vines or circuit paths",
@@ -266,16 +251,50 @@
     "posture_movement": "Upright and precise. She stands with the slight forward hunch of a seamstress, shoulders rolled slightly inward—a postural habit she lectures others about. Her hands are never still; they gesture, measure air, adjust fabric on her own clothing. She moves with economic efficiency; no wasted motion. When sitting, she sits at the edge of chairs, ready to rise. She walks with purpose, feet landing flat and deliberate.",
     "clothing_style": "Tier 3-4 working class, deliberately practical and self-made. She wears her own alterations—fitted linen or cotton shifts in muted earth tones (ochre, charcoal, rust), often with asymmetrical seams or experimental details that serve as proof-of-concept for customer ideas. A long canvas apron with deep pockets and hand-embroidered details (three scripts: Latin, Arabic, Hangul) is a fixture. Worn boots—recently re-soled by her own hand. Jewelry is minimal and utilitarian: a copper ring worn from years of tension (gift from an apprentice), a simple bead bracelet in clay. Her glasses hang from a braided cord around her neck when not in use. She wears her augmentation scarring and faded bioluminescence without concealment or shame—they are proof of skill and longevity."
   },
-  "image_prompt": "Amir Tehrani-Touré, 168cm tall seamstress with deep warm umber skin reflecting Middle Eastern and Sub-Saharan African heritage, silver-streaked black hair in tight cornrows pinned with bone toggles, broad shoulders and sturdy build. Natural deep brown eyes with subtle crystalline magnification implant overlay. Weathered face with laugh lines, broad nose, defined cheekbones, minimal kohl makeup. Wearing ochre-toned linen shift with asymmetrical seams, canvas work apron embroidered with Latin, Arabic, Hangul scripts, worn re-soled boots. Hands marked with stellar patterns of pale needle-prick scars. Faint amber bioluminescent tracery barely visible along collarbones in workshop lighting. Small coin-sized burn scar on left forearm. Copper ring, clay bead bracelet, glasses on braided cord around neck. Upright posture with slight forward hunch, hands gesturing mid-measurement. Standing in dimly-lit cyberpunk 2226 textile workshop, worklights casting shadows across her face, her augmented eyes catching light. Moody, determined expression. Cyberpunk 2200s, working-class aesthetic, proof of five decades of skill --ar 2:3 --v 6",
+  "image_prompt": "Nova Touré-Arakawa, 168cm tall, lean muscular frame with broad shoulders, deep warm bronze skin with golden undertones reflecting East Asian, Sub-Saharan African, Eastern European and Northern European heritage. Medium-length black hair with silver streaking at temples, arranged in flat-braided cornrows pinned with bone toggles. Deep brown eyes with subtle crystalline magnification implants at iris rim. Face shows high defined cheekbones blending East Asian contours with broader nose structure, weathered by decades of close needlework—laugh lines and squint creases visible. Faint amber bioluminescent tracery along collarbones barely visible in warm workshop light. Pale needle-prick scars covering fingertips in stellar patterns, small coin-sized burn scar on left forearm. Wearing fitted ochre linen shift with asymmetrical seams, long canvas apron with hand-embroidered Latin, Arabic, and Hangul details, worn but recently re-soled boots. Minimal jewelry: copper ring, clay bead bracelet. Glasses hanging from braided cord at neck. Posture slightly forward-hunched, hands animated and never still. GLMZ Great Lakes Metropolitan Zone, warm workshop lighting casting soft shadows across face, standing at edge of a work surface surrounded by fabric and tools, expression focused and precise, no concealment of augmentation scars. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 43.2,
-    "Sub-Saharan African": 39.5,
-    "Southeast Asian": 9.4,
-    "East Asian": 6.1,
-    "Pacific Islander": 1.8
+    "East Asian": 42.5,
+    "Sub-Saharan African": 32,
+    "Eastern European": 14.8,
+    "Northern European": 10.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 2.2
+      },
+      "Japanese": {
+        "Japanese": 22.9
+      },
+      "Chinese": {
+        "Sichuanese": 7.3,
+        "Cantonese": 10.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 23.1,
+        "Congolese": 2.6
+      },
+      "West African": {
+        "Ivorian": 6.3
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 6.5,
+        "Hungarian": 8.3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 8.5,
+        "Welsh": 2.2
+      }
+    }
+  }
 }

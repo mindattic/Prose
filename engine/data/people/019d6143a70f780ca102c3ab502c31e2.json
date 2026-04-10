@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70f780ca102c3ab502c31e2",
   "type": "character",
-  "name": "Tarn Popescu",
+  "name": "Tarn Zaragoza",
   "aliases": [
     "Vash",
     "Stamp"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Shelf lower levels, sub-level 4 of the Benton Divide stack, workshop behind a legitimate print repair kiosk, near sub-level access near Dearborn and Jackson",
-  "description": "Vashti is lean and angular with very dark skin and locs dyed in a gradient from deep black at the roots to a vivid bioluminescent green at the tips—a subtle geneware modification that makes their hair glow softly under UV or in low light. They have an elongated neck they tend to hold with unconscious elegance, and hands that are startlingly precise: watching Vashti work is like watching someone perform surgery on a miniature scale. They dress in the kind of clothes that photograph poorly—muted mid-tones, no reflective surfaces, nothing that catches the eye of automated recognition systems.\n\nVashti is young for their reputation and knows it, which produces a studied performance of cool competence that mostly succeeds. They are genuinely brilliant at their craft—particularly the psychographic layering of false identities, building people who have plausible digital histories and ELF-approved shadow records. They have a fanatic reverence for documentation quality that tips into art-critical condescension when they see bad work. Underneath the performance is someone who came from nothing and is building something, and has not yet decided what kind of person they are going to be when the building is done.",
+  "description": "Tarn Zaragoza is lean and angular with very dark skin and locs dyed in a gradient from deep black at the roots to a vivid bioluminescent green at the tips—a subtle geneware modification that makes their hair glow softly under UV or in low light. They have an elongated neck they tend to hold with unconscious elegance, and hands that are startlingly precise: watching Tarn Zaragoza work is like watching someone perform surgery on a miniature scale. They dress in the kind of clothes that photograph poorly—muted mid-tones, no reflective surfaces, nothing that catches the eye of automated recognition systems.\n\nTarn Zaragoza is young for their reputation and knows it, which produces a studied performance of cool competence that mostly succeeds. They are genuinely brilliant at their craft—particularly the psychographic layering of false identities, building people who have plausible digital histories and ELF-approved shadow records. They have a fanatic reverence for documentation quality that tips into art-critical condescension when they see bad work. Underneath the performance is someone who came from nothing and is building something, and has not yet decided what kind of person they are going to be when the building is done.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -189,7 +189,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,45 +240,23 @@
     "Benton Divide",
     "Palladian Construction",
     "The Shelf",
+    "Dearborn Forge",
     "TESSERA PA-5 'Attendant'",
     "The Pure Hand",
-    "Nightlight",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Emeka Johansson-Orozco",
-    "Gwenaëlle Osei-Diallo",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "Makena Johanssen-Diallo",
-    "Ngaire Rojas-Yeboah",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "The Basin",
-    "The Collective",
-    "The Third Rail",
-    "Vesna Čolić-Strand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Nightlight"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European dominant (39.8%) with significant East Asian (16.0%), South Asian (12.5%), and Hispanic/Latin American (11.9%) ancestry, complemented by Sub-Saharan African (11.5%) and Northern European (8.3%) heritage. The result is a striking polychromatic phenotype: warm mid-brown undertones from Eastern European-South Asian blending, enhanced by Sub-Saharan African depth and East Asian eye structure, with subtle Hispanic/Latin warmth in cheekbone and jaw architecture.",
+    "heritage": "North African dominant (39%) with substantial Hispanic/Latin American (23.1%), Sub-Saharan African (15.5%), Northern European (11.6%), Southeast Asian (7.9%), and East Asian (2.9%) ancestry. The polychromatic blend creates a striking phenotype: warm golden-bronze skin with amber undertones from the North African-Hispanic-Southeast Asian convergence, deepened and enriched by Sub-Saharan African heritage. High, prominent cheekbones with refined Southeast Asian structure, strong angular North African jawline softened by Latin warmth. Eyes show subtle epicanthic influence. Overall impression is of carefully balanced contrasts—warm earth tones meeting cool structural elegance.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Lean and angular with elongated limbs; minimal body fat, almost skeletal in the shoulders and hips. Built for precision work rather than physical exertion.",
     "hair_color": "Deep black roots fading to vivid bioluminescent green at the tips",
     "hair_style": "Thick locs, each strand dyed in gradient. Worn loose, often falling past the shoulders. Glow is subtle in daylight, pronounced in low-light environments or under UV.",
     "hair_length": "Long (past shoulder blades)",
-    "eye_color": "Dark brown with East Asian epicanthic fold influence, enhanced with faint retinal HUD overlay visible as a thin amber circuitry pattern in direct light",
-    "skin_tone": "Warm mid-brown with golden undertones from Eastern European-South Asian-Hispanic blending, deepened by Sub-Saharan African heritage, with subtle luminous quality from bioluminescent hair reflection",
-    "complexion": "Flawless and maintained with precision; high cheekbones with East Asian structure softened by Latin contours, strong angular jawline characteristic of Eastern European ancestry, softened by elongated neck. Minimal facial hair. Expression typically composed and evaluative.",
+    "eye_color": "Dark brown with enhanced retinal HUD overlay visible as a thin amber circuitry pattern in direct light",
+    "skin_tone": "Warm golden-bronze with rich amber undertones, the interplay of North African warmth, Sub-Saharan depth, Hispanic luminosity, and Southeast Asian refinement. Subtle iridescent quality from bioluminescent hair reflection.",
+    "complexion": "Flawless and maintained with precision. High cheekbones with refined North African-Southeast Asian structure, strong angular jawline characteristic of North African ancestry softened by Latin contours. Minimal facial hair. Expression typically composed and evaluative.",
     "distinguishing_marks": [
       "Micro-scarring along the inside of both wrists in a grid pattern—old tremor-dampener installation sites, now barely visible",
       "Faint UV-reactive tattoo on the inside of the left forearm: a series of nested document frames, only visible under UV light"
@@ -287,17 +265,77 @@
     "posture_movement": "Holds themselves with unconscious elegance, particularly the elongated neck—slight forward tilt when concentrating. Hands move with surgical precision; fingers rarely fidget. Walking gait is economical, minimal wasted motion. Tendency to make direct eye contact while listening, assessing.",
     "clothing_style": "Deliberately unremarkable: muted mid-tones (grays, dark beiges, charcoal), soft fabrics that don't reflect light. No logos, no chrome accents, nothing that triggers automated recognition systems. Practical Tier 4 workwear—reinforced cargo pants, fitted undershirts, neutral layering jacket. Cheap, durable synthleather gloves worn during fine work. No jewelry except a thin steel ring on the right middle finger (document fabricator's calling card among the underground)."
   },
-  "image_prompt": "Tarn Popescu, 2226 cyberpunk operative in the Great Lakes Metropolitan Zone. Lean, angular 178cm frame with warm mid-brown skin featuring golden undertones and Eastern European-South Asian-Hispanic-African polychromatic heritage blend. Long thick locs in bioluminescent gradient from deep black roots to vivid neon green tips, glowing softly in low light. Dark brown eyes with East Asian structure enhanced by amber retinal HUD circuitry visible in bright light. High cheekbones, sharp angular jawline, elongated elegant neck. Hands moving with surgical precision, micro-tremor dampeners at work. Dressed in deliberately unremarkable muted tones—charcoal layering jacket, gray cargo pants, fitted dark undershirt, cheap synthleather gloves. Thin steel ring on right middle finger. Composed, evaluative expression. Direct eye contact. Standing in shadow with subtle UV-reactive tattoo barely visible on left forearm (nested document frames). Minimal ambient light, neon glow reflecting off bioluminescent hair. Underground data fabricator aesthetic. Cyberpunk 2200s. --ar 2:3 --v 6",
+  "image_prompt": "Tarn Zaragoza, 2226 GLMZ underground operative, lean angular frame 178cm tall, warm golden-bronze skin with amber undertones reflecting polychromatic North African-Hispanic-Sub-Saharan-Southeast Asian heritage. High refined cheekbones, strong jawline, direct assessing gaze. Dark brown eyes with barely visible amber HUD circuitry. Hair: long thick locs past shoulders, deep black roots fading to bioluminescent green tips glowing softly in shadow. Minimal facial hair, composed expression. Wearing muted gray synthleather jacket over dark cargo tactical wear, cheap synthleather gloves, thin steel ring on right middle finger. Posture precise and economical, elongated neck held with unconscious elegance. Subtle micro-scarring visible on wrists, UV-reactive tattoo on left forearm. GLMZ 2200s aesthetic, moody underground setting, cool blue-amber lighting emphasizing the bioluminescent hair gradient and subtle retinal HUD, photorealistic digital art, highly detailed facial features --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 39.8,
-    "East Asian": 16.0,
-    "South Asian": 12.5,
-    "Hispanic/Latin American": 11.9,
-    "Sub-Saharan African": 11.5,
-    "Northern European": 8.3
+    "North African": 39,
+    "Hispanic/Latin American": 23.1,
+    "Sub-Saharan African": 15.5,
+    "Northern European": 11.6,
+    "Southeast Asian": 7.9,
+    "East Asian": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 9.6,
+        "Egyptian": 7.9
+      },
+      "Maghreb": {
+        "Libyan": 4.6,
+        "Algerian": 5.3
+      },
+      "Amazigh": {
+        "Berber": 11.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 12.1
+      },
+      "South American": {
+        "Colombian": 11
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 14
+      },
+      "West African": {
+        "Senegalese": 1.5
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 11.6
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 1.2
+      },
+      "Indonesian": {
+        "Javanese": 3.2,
+        "Balinese": 0.1
+      },
+      "Filipino": {
+        "Tagalog": 3.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 0.5,
+        "Mandarin Northern": 0.6
+      },
+      "Korean": {
+        "Korean": 0.1
+      },
+      "Japanese": {
+        "Japanese": 1.7
+      }
+    }
+  }
 }

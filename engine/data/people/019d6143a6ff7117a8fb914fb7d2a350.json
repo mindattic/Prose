@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ff7117a8fb914fb7d2a350",
   "type": "character",
-  "name": "Aiyana Ixchel",
+  "name": "Leilani Haugen",
   "aliases": [
     "Deadpan"
   ],
@@ -87,7 +87,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -101,13 +101,12 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "The Milwaukee Core",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "The Heritage Vault"
+    "Circuit",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Indigenous American, Southeast Asian, Central Asian, Sub-Saharan African, Pacific Islander, and Hispanic/Latin American — a complex diaspora blend reflecting the Ubiquitous mixing of the 2220s. Features suggest high cheekbone prominence and broad facial structure from Indigenous American ancestry (26.8%), warm undertones from Southeast Asian heritage (22.6%), and depth from Central Asian genetics (21.3%), balanced with Sub-Saharan African warmth (12.6%), Pacific Islander solidity (8.9%), and Latin American regional characteristics (7.8%).",
+    "heritage": "Pacific Islander (43%) dominant, with substantial Northern European (27.4%) contribution creating a warm-to-medium complexion. Southeast Asian (11.5%), Hispanic/Latin American (9.2%), Central Asian (5.7%), and South Asian (3.2%) heritage layer warmth and dimensional undertones throughout. The result is a harmoniously blended phenotype: strong Pacific Islander bone structure paired with Northern European fairness modulated by tropical and continental warmth. Features reflect this primary-secondary-tertiary blending rather than discrete heritage markers.",
     "height_cm": 182,
     "weight_kg": 78,
     "build": "Athletic, slightly lean with broad shoulders — the physique of someone who maintains discipline without obsession. Minimal body fat, suggesting regular calibration work or structured exercise.",
@@ -115,27 +114,75 @@
     "hair_style": "Neat, cropped fade with subtle texture; groomed to project competence and authority",
     "hair_length": "Short",
     "eye_color": "Dark brown with slight amber undertone in certain light",
-    "skin_tone": "Rich, warm brown with golden and amber undertones — the result of multiple heritage layers. Neither pale nor deeply saturated, but a harmonious medium-deep tone that catches light with subtle variation, characteristic of Indigenous American and Southeast Asian blending with Sub-Saharan warmth.",
-    "complexion": "Clean, well-maintained skin with minimal scarring. Fine lines around the eyes suggesting years of intense focus and negotiation. High, defined cheekbones from Indigenous ancestry. Broad, well-proportioned nose bridge. No visible blemishes or cosmetic damage. Expression carries practiced neutrality.",
+    "skin_tone": "Medium warm tan — balanced fusion of Pacific Islander warmth and Northern European lightness. Golden-bronze undertones from Southeast Asian and South Asian components create subtle luminosity. Not saturated or deeply tanned, but a sophisticated medium tone with warm dimensionality across the face and body.",
+    "complexion": "Clean, well-maintained skin with minimal scarring. Fine lines around the eyes suggesting years of intense focus and negotiation. Moderately defined cheekbones from Pacific Islander ancestry with subtle width across the face. Broad, well-proportioned nose bridge reflecting mixed Pacific and Northern European structure. No visible blemishes or cosmetic damage. Expression carries practiced neutrality.",
     "distinguishing_marks": [
       "Thin scar running 3cm along the left temple, barely visible unless backlit — consistent with old trauma, pre-augmentation era",
       "Small, faded tattoo on inner right wrist: three vertical lines in an abstract geometric pattern, possibly Indigenous or personal significance"
     ],
-    "visible_augmentations": "None visible. Aiyana presents as unaugmented — likely carries subcutaneous neural arrays or internal augmentations for secure communications. Age and independent status suggest pre-visibility-as-status era origins.",
+    "visible_augmentations": "None visible. Presents as unaugmented — likely carries subcutaneous neural arrays or internal augmentations for secure communications. Age and independent status suggest pre-visibility-as-status era origins.",
     "posture_movement": "Upright, measured gait with deliberate hand placement. Minimal wasted motion. Sits with one leg slightly extended, suggesting old injury or favored stance during negotiations. Makes direct eye contact. Speaks with pauses — calculated, not nervous.",
     "clothing_style": "Tier 2-3 professional: tailored charcoal wool coat (vintage, maintained), crisp white compression shirt underneath with discrete side pockets for tools or devices. Dark grey neo-denim with reinforced seams. Worn leather ankle boots — scuffed but functional. Minimal jewelry: single matte-black band on left ring finger. No visible logos or corporate markers."
   },
-  "image_prompt": "Portrait of Aiyana Ixchel, a 182cm athletic woman with rich warm brown skin blending Indigenous American, Southeast Asian, Central Asian, and African heritage. High prominent cheekbones, dark brown eyes with amber undertones, salt-and-pepper grey cropped fade haircut. Wearing tailored charcoal wool coat over white compression shirt, dark grey reinforced neo-denim, worn leather boots. Faint 3cm scar on left temple visible in side-lighting. Matte-black ring on left finger. Measured posture, direct gaze, practiced neutrality. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool neon ambient lighting, professional/negotiator setting, subtle depth-of-field. --ar 2:3 --v 6",
+  "image_prompt": "Leilani Haugen, 182cm tall athletic build, medium warm tan skin with golden undertones blending Pacific Islander and Northern European heritage, salt-and-pepper cropped fade hair, dark brown eyes with amber glint. Sharp cheekbones, broad nose bridge. Thin temple scar barely visible. Wrist tattoo: three geometric lines. Wearing vintage tailored charcoal wool coat over crisp white compression shirt, dark reinforced neo-denim, scuffed leather ankle boots. Matte-black ring on left hand. Upright posture, measured and controlled. Neutral expression with practiced calm. GLMZ GLMZ setting, dim corporate office lighting casting shadows across face, subtle neon glow reflecting off coat fabric, moody professional atmosphere. Direct eye contact, calculated presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 26.8,
-    "Southeast Asian": 22.6,
-    "Central Asian": 21.3,
-    "Sub-Saharan African": 12.6,
-    "Pacific Islander": 8.9,
-    "Hispanic/Latin American": 7.8
+    "Pacific Islander": 43,
+    "Northern European": 27.4,
+    "Southeast Asian": 11.5,
+    "Hispanic/Latin American": 9.2,
+    "Central Asian": 5.7,
+    "South Asian": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 3,
+        "Kiribati": 15.2
+      },
+      "Polynesian": {
+        "Samoan": 7.7,
+        "Tuvaluan": 0.4
+      },
+      "Melanesian": {
+        "Papua New Guinean": 1.4,
+        "Fijian": 15.3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 27.4
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 11.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 9.2
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 5.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 1.7
+      },
+      "Pakistani": {
+        "Baloch": 0.9,
+        "Sindhi": 0.2
+      },
+      "Indian": {
+        "Gujarati": 0.4
+      }
+    }
+  }
 }

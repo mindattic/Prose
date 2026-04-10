@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65572e2ac898393d5c7c383",
   "type": "character",
-  "name": "Vale Hinojosa-Thorvaldsdóttir-Petrović",
+  "name": "Vale Chatterjee-Banerjee-Vongphasouk",
   "aliases": [
     "Sel",
     "Grandmother Brush"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Mexicantown Libre, a rent-controlled studio apartment she has occupied for 41 years, near Pulaski and Chicago Ave",
-  "description": "Marisela is a small woman who has become smaller with age — she was never tall, and seven decades of life in Mexicantown Libre have given her the compact density of someone who has survived by taking up exactly the necessary amount of space and no more. Her heritage is Burkinabé and Dutch-Caribbean, and her face carries both in its lines: sun-worn dark skin, a wide mouth that defaults to an expression of amused assessment, silver hair worn in a short practical wave. Her hands are permanently stained — cadmium, ochre, a blue that hasn't faded in three years of scrubbing. She wears the stains as others wear jewelry.\n\nHer paintings are photographic in precision and devastating in selection: every canvas is a building that has since been demolished, a street corner that no longer exists, a face of someone who has since been displaced. She keeps records that the city doesn't. She has never sought gallery representation and has refused it twice. Her work circulates through Mexicantown Libre's community centers, kitchen walls, and the digital archives of three different historical preservation meshes. She is opinionated, dry, unhurried, and absolutely certain about what she is doing and why. Younger artists treat her with a reverence she finds slightly embarrassing and mostly ignores.",
+  "description": "Vale Chatterjee-Banerjee-Vongphasouk is a small woman who has become smaller with age — she was never tall, and seven decades of life in Mexicantown Libre have given her the compact density of someone who has survived by taking up exactly the necessary amount of space and no more. Her heritage is Burkinabé and Dutch-Caribbean, and her face carries both in its lines: sun-worn dark skin, a wide mouth that defaults to an expression of amused assessment, silver hair worn in a short practical wave. Her hands are permanently stained — cadmium, ochre, a blue that hasn't faded in three years of scrubbing. She wears the stains as others wear jewelry.\n\nHer paintings are photographic in precision and devastating in selection: every canvas is a building that has since been demolished, a street corner that no longer exists, a face of someone who has since been displaced. She keeps records that the city doesn't. She has never sought gallery representation and has refused it twice. Her work circulates through Mexicantown Libre's community centers, kitchen walls, and the digital archives of three different historical preservation meshes. She is opinionated, dry, unhurried, and absolutely certain about what she is doing and why. Younger artists treat her with a reverence she finds slightly embarrassing and mostly ignores.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -168,7 +168,7 @@
     "Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -223,29 +223,14 @@
     "The Heritage Vault",
     "The Gradient Compact",
     "Tessera Corponation",
-    "Silver",
-    "The Pure Hand",
-    "Palette",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Bathysphere Networks",
-    "Chronicle",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Archive",
-    "The Compact",
-    "The Unfinished Theorem",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Silver",
+    "Corner Slice",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (65.7%) with significant Southeast Asian (15.7%) and Eastern European (11.8%) ancestry, complemented by Indigenous American (6.1%) and South Asian (0.7%) heritage. This creates a warm, blended phenotype with pan-Asian and Iberian-influenced features.",
+    "heritage": "Predominantly South Asian (84.8%) with meaningful Southeast Asian (7.4%) and Hispanic/Latin American (7.8%) ancestry. This creates a warm, rich phenotype combining South Asian facial structure with Southeast Asian and Latin American features, resulting in deep warm brown tones with golden undertones and a subtle complexity from the tri-regional blend.",
     "height_cm": 152,
     "weight_kg": 48,
     "build": "Compact and dense, diminished frame that suggests lifelong economy of movement rather than frailty. Narrow shoulders, slight stoop developed over decades of studio work. Wiry forearms with prominent tendons.",
@@ -253,8 +238,8 @@
     "hair_style": "Practical wave set close to the scalp",
     "hair_length": "Short",
     "eye_color": "Dark brown with subtle iridescent overlay from retinal enhancement unit",
-    "skin_tone": "Medium warm brown with golden undertones characteristic of Hispanic and Southeast Asian blending, deepened by decades of sun exposure and studio work. The complexion reflects mixed Iberian, Indigenous American, and Southeast Asian heritage with natural warmth rather than ashy tones.",
-    "complexion": "Heavily sun-weathered face marked by deep smile lines and the creases of someone who squints constantly at light and detail. Cheekbones remain prominent with subtle Southeast Asian structure. Wide mouth with fuller lips. Eyes set with a gentle epicanthic fold reflecting Southeast Asian ancestry. Skin texture papery but not fragile. No makeup.",
+    "skin_tone": "Deep warm brown with golden undertones, characteristic of South Asian heritage enriched by Southeast Asian and Hispanic/Latin American blending. Deepened by decades of sun exposure and studio work. Natural warmth and richness throughout, without ashy tones.",
+    "complexion": "Heavily sun-weathered face marked by deep smile lines and the creases of someone who squints constantly at light and detail. Prominent cheekbones with South Asian structure, softened by Southeast Asian and Latin American features. Wide mouth with fuller lips. Eyes set with a gentle epicanthic fold reflecting Southeast Asian ancestry. Skin texture papery but not fragile. No makeup.",
     "distinguishing_marks": [
       "Paint stains on both hands — cadmium yellows and oranges permanent in skin creases, ochre ingrained under fingernails, a stubborn deep blue discoloration on the inner left forearm from three years of contact with a particular pigment",
       "Fine network of scars on the back of the left hand, consistent with a long-ago kitchen accident or workshop injury, barely visible",
@@ -264,16 +249,45 @@
     "posture_movement": "Economical, deliberate movement without rush. Stands with weight balanced on the balls of her feet. Turns her whole head rather than just moving her eyes — a habit from concentrating on detail work. Hands still and controlled until engaged in conversation or work, then expressive. Her gait is slow but steady, unhurried by time pressure.",
     "clothing_style": "Tier 2 working artist. Paint-stained cotton shirts and worn linen trousers in muted colors — grays, taupes, faded indigo. A heavy canvas apron worn most days, its pockets filled with brushes, pigment samples, measuring tools. Leather sandals or soft canvas shoes. A decades-old cardigan in charcoal wool, unraveling at one cuff, which she pulls on against studio cold. No jewelry except a simple copper watch with a failing battery she refuses to replace. Clothing is clean but visibly worn; she mends rather than replaces."
   },
-  "image_prompt": "Vale Hinojosa-Thorvaldsdóttir-Petrović, a 152cm compact artist woman with warm medium brown skin blending Hispanic, Southeast Asian and Indigenous heritage, silver-gray hair cut short and practical, age-weathered face with prominent cheekbones and wise dark eyes enhanced with subtle crystalline retinal augmentation that catches light with faint iridescence. Fine epicanthic eye structure, deep smile lines, sun-creased skin. Paint-stained hands with permanent cadmium and ochre marks, old kitchen scars barely visible, faint burn mark on inner right wrist. Wearing worn muted-color linen and cotton studio clothes, faded indigo trousers, paint-splattered apron with tools, charcoal wool cardigan unraveling at cuff, soft canvas shoes. Standing with economical posture, weight on balls of feet, hands expressive mid-gesture. Cyberpunk 2226 artist studio setting, warm tungsten and LED work lights creating pools of illumination across her face and stained hands, studio materials blurred in background, moody introspective expression, documentary realism, --ar 2:3 --v 6",
+  "image_prompt": "Vale Chatterjee-Banerjee-Vongphasouk, 152cm tall petite South Asian-dominant artist with 84.8% South Asian, 7.4% Southeast Asian, 7.8% Hispanic/Latin American ancestry. Deep warm brown skin with golden undertones from decades of sun exposure. Silver-gray hair cut short in practical waves. Dark brown eyes with subtle iridescent retinal enhancement visible at outer corners. Prominent South Asian cheekbones softened by Southeast Asian features, wide fuller lips, gentle epicanthic fold. Heavily weathered face with deep smile lines and squint creases. Paint-stained hands with cadmium yellow, orange and deep blue pigment permanent in skin creases, fine scars on left hand, faint coin-sized burn scar on right wrist. Wearing paint-stained cotton shirt in muted taupe, worn faded indigo linen trousers, heavy canvas apron pockets bulging with brushes and pigments, charcoal cardigan unraveling at cuff, leather sandals, simple copper watch with failing battery. Standing in studio light, economical posture balanced on balls of feet, whole-body concentrated attention. GLMZ Great Lakes Metropolitan Zone. Warm studio lighting catching crystalline retinal enhancement. Contemplative mood. 2200s retrofuturist working-class artist aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 65.7,
-    "Southeast Asian": 15.7,
-    "Eastern European": 11.8,
-    "Indigenous American": 6.1,
-    "South Asian": 0.7
+    "South Asian": 84.8,
+    "Hispanic/Latin American": 7.8,
+    "Southeast Asian": 7.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 24.7,
+        "Baloch": 7.9
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 52.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 5.5
+      },
+      "South American": {
+        "Venezuelan": 0.3,
+        "Argentine": 0.2
+      },
+      "Mexican": {
+        "Mexican": 1.8
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 7
+      },
+      "Thai": {
+        "Thai": 0.4
+      }
+    }
+  }
 }

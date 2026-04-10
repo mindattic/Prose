@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b979898d4ed633bbe4b36c",
   "type": "character",
-  "name": "Lyric Lindström-Espinoza",
+  "name": "Lyric Petrović-Balogun",
   "aliases": [
     "Rudo the Loud",
     "Councilor Rudo (sarcastically used by opponents)"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Mexicantown Libre — sleeps in the back of the Ferrogate Transit Workers' Local 9 hall, near Western and Division",
-  "description": "Rudo is compact and kinetic, rarely fully still, with medium-brown skin and a geneware tail — a long, expressive black cat tail they got at seventeen — that broadcasts their mood with embarrassing accuracy. Their hair is dyed in shifting bands of amber and copper, and they have the kind of face that looks younger than it is, which they've learned to use strategically: people underestimate them exactly once. There are calluses on their hands from six months working actual transit maintenance before they moved into organizing full-time, and they consider those calluses a credential.\n\nRudo has been with Transit Workers' Local 9 for three years and is, depending on who you ask, either the most effective junior organizer the local has seen in a decade or an absolute disaster waiting to happen. Both assessments are probably true. They have an instinct for crowd dynamics and an appetite for confrontation that their more experienced colleagues find alternately inspiring and terrifying. They believe completely in the workers they represent and are only beginning to understand the gap between belief and strategy.",
+  "description": "Lyric Petrović-Balogun is compact and kinetic, rarely fully still, with medium-brown skin and a geneware tail — a long, expressive black cat tail they got at seventeen — that broadcasts their mood with embarrassing accuracy. Their hair is dyed in shifting bands of amber and copper, and they have the kind of face that looks younger than it is, which they've learned to use strategically: people underestimate them exactly once. There are calluses on their hands from six months working actual transit maintenance before they moved into organizing full-time, and they consider those calluses a credential.\n\nLyric Petrović-Balogun has been with Transit Workers' Local 9 for three years and is, depending on who you ask, either the most effective junior organizer the local has seen in a decade or an absolute disaster waiting to happen. Both assessments are probably true. They have an instinct for crowd dynamics and an appetite for confrontation that their more experienced colleagues find alternately inspiring and terrifying. They believe completely in the workers they represent and are only beginning to understand the gap between belief and strategy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -159,7 +159,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,35 +179,17 @@
     "Mexicantown Libre",
     "Ferrogate Transit",
     "ShieldTech SB-3 'Groundstrike'",
+    "Plot 17",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Big Rig",
     "The Gradient Compact",
     "Lacuna Genomics",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Big Rig",
     "Copper",
-    "The Pure Hand",
-    "Alper Inoue-Aidoo",
-    "Arcturus NX-1 'Sandman'",
-    "Bioacoustic Communication Membrane",
-    "Brewer's Spine",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Ilhan Sandstrom-Badu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "Sterling-Nakamura Augmented Reality Court System",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Question",
-    "Timur Osei-Bjelke",
-    "Yannick Tambadou-Reinholt",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-diaspora blend: Hispanic/Latin American (31.5%), Southeast Asian (21.7%), East Asian (21.6%), Indigenous American (19.3%), Eastern European (5.9%). Features a striking mix of warm olive and golden undertones with subtle East and Southeast Asian eye and cheekbone structure, Latin American jaw and mouth shape, and Indigenous American facial proportions.",
+    "heritage": "Pan-diaspora blend: Sub-Saharan African (50%), Hispanic/Latin American (30.1%), Eastern European (15.6%), Southeast Asian (4.3%). Features a striking mix of warm deep brown and golden undertones with Sub-Saharan African bone structure and facial proportions, Latin American jaw and mouth shape, Eastern European subtle cheekbone definition, and Southeast Asian eye characteristics. Rich melanin expression with warm undertones.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and wiry, high muscle density from transit maintenance work. Restless kinetic energy evident even at rest — shoulders often slightly raised, weight constantly shifting between feet.",
@@ -215,11 +197,11 @@
     "hair_style": "Shoulder-length, deliberately unkempt, often pulled back with whatever's at hand — wire, fabric scraps, union pins",
     "hair_length": "Medium",
     "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Warm olive-gold complexion reflecting the blend of Latin American, Southeast Asian, East Asian, and Indigenous ancestry — medium depth with golden and honey undertones",
-    "complexion": "Angular-faced with high, pronounced cheekbones reflecting East and Southeast Asian ancestry, combined with a fuller lower face and wide mouth showing Latin American and Indigenous heritage. Youthful features that read younger than 24. Skin shows sun exposure and stress — occasional breakouts along the jaw from inconsistent sleep. Minimal grooming beyond necessity; calluses on palms and finger pads from six months of maintenance work and constant document handling.",
+    "skin_tone": "Deep warm brown complexion with golden and honey undertones, reflecting the dominant Sub-Saharan African ancestry blended with Latin American and Eastern European warmth — rich melanin expression, medium-to-deep depth",
+    "complexion": "Strong-boned face with prominent cheekbones and defined jaw reflecting Sub-Saharan African ancestry, combined with Latin American fullness in the lower face and wide mouth, Eastern European subtle structure. Youthful features that read younger than 24. Skin shows sun exposure and stress — occasional breakouts along the jaw from inconsistent sleep. Minimal grooming beyond necessity; calluses on palms and finger pads from six months of maintenance work and constant document handling.",
     "distinguishing_marks": [
       "Subvocal mic implant visible as a small silvered node at the base of the throat, faintly luminescent when active",
-      "Geneware cat tail: sleek black, feline structure, approximately 60cm long, extends from base of spine with full articulation and fur texture. Ears remain human. The tail moves independently of conscious control, broadcasting emotional states with visibility that Rudo finds simultaneously useful and mortifying.",
+      "Geneware cat tail: sleek black, feline structure, approximately 60cm long, extends from base of spine with full articulation and fur texture. Ears remain human. The tail moves independently of conscious control, broadcasting emotional states with visibility that Lyric finds simultaneously useful and mortifying.",
       "Callused palms and finger pads, deeply grooved from six months of transit maintenance",
       "A faint scar on the left knuckle from a tool slip during early maintenance work"
     ],
@@ -227,16 +209,60 @@
     "posture_movement": "Never fully still. Weight rocks side to side while standing. Hands gesture constantly — punctuating speech, organizing space around them, fidgeting with union pins, fabric, document edges. When focused in conversation, they lean forward with intense eye contact. When agitated or thinking, the tail lashes in tight circles. When confident, the tail arcs high and relaxed. Moves quickly through spaces with purposeful efficiency, rarely walks when they can move with intention.",
     "clothing_style": "Tier 4 working-class practical with protest aesthetics. Black cargo pants with multiple pockets and frayed cuffs, scuffed steel-toed boots. Oversized union-branded windbreaker or worn flannel shirt layered over cheap synthetic tank tops. Visible union pins, hand-drawn protest patch clusters on jacket sleeves. Wears a faded 'Ferrogate Transit Local 9' baseball cap backward when working public actions. Jewelry minimal: a simple cord bracelet with metal beads made by fellow organizers, clip-on comms earpiece (basic model, visible). No grooming for aesthetics — appearance reflects time scarcity and tier reality."
   },
-  "image_prompt": "Lyric Lindström-Espinoza, 162cm tall, compact wiry frame, warm olive-gold skin with golden undertones, high cheekbones blending East Asian structure with Latin American fullness, dark brown alert eyes, youthful 24-year-old face with stress-line breakouts on jaw. Medium-length natural dark brown hair with amber and copper dye bands, deliberately unkempt, pulled back with fabric scraps and union pins. Black articulated feline geneware tail extending from spine, constantly moving with emotional states. Subvocal mic implant at throat base, subtle silvered luminescent node. Callused hands, knuckle scar. Wearing black cargo pants with frayed cuffs, scuffed steel-toed boots, oversized union-branded windbreaker over synthetic tank top, visible union pins and hand-drawn protest patches on sleeves, backward 'Ferrogate Transit Local 9' baseball cap, simple cord bracelet with metal beads, basic clip-on comms earpiece. Never fully still, weight shifting constantly, tail lashing in tight circles. Cyberpunk 2226, Great Lakes Metropolitan Zone, transit maintenance worker aesthetic, gritty industrial setting, neon transit station lighting, restless kinetic energy, protest movement atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Lyric Petrović-Balogun, compact 162cm figure with deep warm brown skin and golden undertones, dark brown alert eyes, shoulder-length dark hair with amber and copper dye bands pulled back with wire. Strong Sub-Saharan African bone structure with Latin American jaw fullness and Eastern European subtle definition. Wiry build, restless kinetic posture. Black articulated feline geneware tail extending from spine, constantly moving. Subvocal mic node visible at throat, faintly luminescent. Wearing scuffed steel-toed boots, black frayed cargo pants, oversized union-branded windbreaker over synthetic tank, visible union pins and hand-drawn protest patches on sleeves. Backward 'Ferrogate Transit Local 9' baseball cap. Cord bracelet with metal beads, basic comms earpiece. Hands mid-gesture. Intense eye contact. GLMZ Great Lakes Metropolitan Zone, gritty transit hub setting, neon-reflected wet concrete, harsh overhead lighting catching the luminescence of the implant, motion blur suggesting constant movement, blue-purple ambient light from transit systems --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 31.5,
-    "Southeast Asian": 21.7,
-    "East Asian": 21.6,
-    "Indigenous American": 19.3,
-    "Eastern European": 5.9
+    "Sub-Saharan African": 50,
+    "Hispanic/Latin American": 30.1,
+    "Eastern European": 15.6,
+    "Southeast Asian": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 9.3,
+        "Senegalese": 10.3
+      },
+      "East African": {
+        "Tanzanian": 6.6,
+        "Ethiopian": 1.3
+      },
+      "Southern African": {
+        "Zambian": 5.5,
+        "South African": 17
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 8.8,
+        "Puerto Rican": 1.1
+      },
+      "Mexican": {
+        "Mexican": 11.1
+      },
+      "South American": {
+        "Colombian": 9.1
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 15.6
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Waray": 0.7
+      },
+      "Laotian": {
+        "Laotian": 1.9
+      },
+      "Indonesian": {
+        "Sumatran": 1.3,
+        "Sundanese": 0.4
+      }
+    }
+  }
 }

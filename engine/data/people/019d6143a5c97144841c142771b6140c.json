@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c97144841c142771b6140c",
   "type": "character",
-  "name": "Cruz Björnsdóttir-Soriano",
+  "name": "Slate Björnsdóttir-Kwon",
   "aliases": [
     "Bouba",
     "The Major"
@@ -13,7 +13,7 @@
   "age": 68,
   "status": "active",
   "location": "The Shelf, Block 7, stall 7-F (lives in a converted shipping container unit), near Halsted and Division",
-  "description": "Boubacar is a lean, angular man with close-cropped grey hair and the particular economy of movement that marks people trained to conserve energy over long distances. His skin is dark brown with pronounced keloid scarring across his right shoulder and clavicle — he does not cover it and does not explain it to strangers. He has cosmetic geneware: a cat's tail, russet-orange with a dark tip, that he got as a joke in 2168 when his unit was celebrating surviving the Kessler Corridor engagement. He has kept it because it amuses him that it annoys people who expect a veteran to be more serious. His left hand has a visible subdermal port on the back where a tactical datalink was removed — the flesh around it never quite healed smooth.\n\nBoubacar served twelve years as an Axiom ground contractor during the Corporate Wars, and he came back from them with a pension that covers his container unit on The Shelf, two meals a day if he is careful, and nothing else. He is not bitter about this in the operatic way — he is bitter in the quiet, functional way of someone who made his peace with it and is now simply watching to see what happens next. He runs a small informal counseling operation for other veterans on The Shelf, not because anyone asked him to or pays him to, but because he watched two friends die from nothing that could have been prevented if anyone had been paying attention. He has no license, no credentials, and a long waiting list.",
+  "description": "Slate Björnsdóttir-Kwon is a lean, angular man with close-cropped grey hair and the particular economy of movement that marks people trained to conserve energy over long distances. His skin is dark brown with pronounced keloid scarring across his right shoulder and clavicle — he does not cover it and does not explain it to strangers. He has cosmetic geneware: a cat's tail, russet-orange with a dark tip, that he got as a joke in 2168 when his unit was celebrating surviving the Kessler Corridor engagement. He has kept it because it amuses him that it annoys people who expect a veteran to be more serious. His left hand has a visible subdermal port on the back where a tactical datalink was removed — the flesh around it never quite healed smooth.\n\nSlate Björnsdóttir-Kwon served twelve years as an Axiom ground contractor during the Corporate Wars, and he came back from them with a pension that covers his container unit on The Shelf, two meals a day if he is careful, and nothing else. He is not bitter about this in the operatic way — he is bitter in the quiet, functional way of someone who made his peace with it and is now simply watching to see what happens next. He runs a small informal counseling operation for other veterans on The Shelf, not because anyone asked him to or pays him to, but because he watched two friends die from nothing that could have been prevented if anyone had been paying attention. He has no license, no credentials, and a long waiting list.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -192,7 +192,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -260,43 +260,22 @@
   ],
   "related_entities": [
     "The Shelf",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Arcturus LS-5 'Sentinel'",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Idris Forsberg-Quaye",
-    "Ilhan Sandstrom-Badu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kamala Mori-Sefa",
-    "Nnamdi Ostrowski-Faletolu",
-    "Othniel Babić-Asantewaa",
-    "Oumarou Svec-Ranginui",
-    "Ouroboros Energy Power Distribution Trunk Network",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Gallows' Recurve Bow",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA ES-4 'Perimeter'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vuk Jorgensen-Toure",
-    "Warden"
+    "GLMZ",
+    "Slate",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (50%), Northern European (18%), East Asian (18%), Middle Eastern (11%), Sub-Saharan African (3%) — a complex diaspora blend resulting in warm medium-brown skin tone with subtle golden and olive undertones. The ancestry creates a striking phenotype: angular cheekbones with slight East Asian fold characteristics, broad nose bridge reflecting Latin American and Middle Eastern heritage, and deep-set eyes with warm hazel-brown coloration.",
+    "heritage": "East Asian (45.6%), Sub-Saharan African (22.8%), Northern European (18.2%), Southeast Asian (9.1%), Indigenous American (4.3%) — a striking diaspora blend. High angular cheekbones with East Asian characteristics blend with a broad nose bridge reflecting African and Southeast Asian heritage. Deep-set warm brown eyes with amber undertones sit in a face shaped by Northern European jawline structure and subtle Indigenous American features. The overall phenotype is distinctive: warm medium-brown skin with golden undertones and subtle depth, creating a cohesive complexity that defies any single regional classification.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, the kind of thin that comes from decades of controlled caloric intake and purposeful movement rather than deprivation. Corded forearms and minimal body fat; shoulders narrower than his height might suggest, giving him a slightly canted posture.",
     "hair_color": "Grey",
     "hair_style": "Close-cropped, military cut maintained with precision, no styling product",
     "hair_length": "Short",
-    "eye_color": "Warm hazel-brown, dark with amber undertones",
-    "skin_tone": "Medium-warm brown with golden and subtle olive undertones, reflecting the blended ancestry of Latin American, East Asian, and Northern European genetics with traces of Middle Eastern depth",
-    "complexion": "Weather-worn, with deep lines around the eyes and mouth from decades of sun exposure and controlled expression. The facial structure shows blended heritage: angular cheekbones with slight East Asian characteristics, broad nose bridge, and a jawline that suggests Latin American and Northern European ancestry. Skin has the particular texture of someone who was trained to suppress micro-expressions; his face rarely moves except when he chooses it to. Clean-shaven, methodical grooming despite resource scarcity.",
+    "eye_color": "Deep brown with warm amber undertones",
+    "skin_tone": "Warm medium-brown with golden undertones, the result of East Asian, Sub-Saharan African, Southeast Asian, Northern European, and Indigenous American genetic blend",
+    "complexion": "Weather-worn with deep lines around eyes and mouth from decades of sun exposure and controlled expression. High angular cheekbones with East Asian characteristics dominate upper facial structure, balanced by a broad nose bridge reflecting African and Southeast Asian heritage. Jawline suggests Northern European ancestry with subtle Indigenous American refinement. Skin texture shows the particular quality of someone trained to suppress micro-expressions; face rarely moves except when consciously chosen. Clean-shaven with methodical grooming despite resource scarcity.",
     "distinguishing_marks": [
       "Pronounced keloid scarring across right shoulder and clavicle in a radiating pattern consistent with blast trauma or shrapnel wound, left deliberately uncovered",
       "Faint puncture-scar pattern on left temple suggesting old subcutaneous port removal",
@@ -306,16 +285,64 @@
     "posture_movement": "Economy of motion ingrained to the point of unconscious habit. Walks with measured pace, never rushed. Stands with weight balanced slightly forward on the balls of his feet as if ready to move. Hands rarely gesture; communication is primarily facial and postural. Moves through space as someone aware of sightlines and exits, a reconnaissance habit he cannot disable.",
     "clothing_style": "Tier 4 functional — worn but maintained Axiom-era fatigue pants, deep grey with reinforced pockets; layered shirts in muted colors (charcoal, slate, dark green) that show careful mending. A long coat from the 2190s, still waterproofed, with internal pockets used for tools and small repair items. Worn synthetic boots with good tread, resoled multiple times. A single piece of jewelry: a thin braided wire bracelet on his right wrist, knotted with small loops he fidgets with during counseling sessions. No visible branding or corpo affiliations — all markings have been removed or faded."
   },
-  "image_prompt": "A 178cm lean, angular man with medium-warm brown skin, golden undertones, and mixed diaspora heritage visible in his sharp cheekbones and broad nose bridge. Grey close-cropped military-cut hair, deep-set hazel-brown eyes with amber undertones, weather-worn face etched with decades of controlled expression. Pronounced keloid scarring across right shoulder and clavicle left deliberately exposed. An animate russet-orange cat tail with dark tip articulates from base of spine. Wearing faded deep grey reinforced fatigue pants, layered muted charcoal and slate shirts with careful mending, a waterproofed long coat from the 2190s. Worn and resoled synthetic boots. Thin braided wire bracelet on right wrist. Standing with weight balanced forward on balls of feet, aware of sightlines, hands still, posture economical and measured. Cyberpunk 2226 setting, Great Lakes Metropolitan Zone, low ambient neon light casting shadows across worn features, moody and introspective atmosphere, slight tension in frame suggesting reconnaissance training never fully disabled --ar 2:3 --v 6",
+  "image_prompt": "Slate Björnsdóttir-Kwon, lean 178cm mixed-heritage neo-noir operative, warm medium-brown skin with golden undertones, high angular cheekbones blending East Asian characteristics with broad African heritage nose bridge, deep brown eyes with amber warmth, grey close-cropped military cut hair, clean-shaven weather-worn face etched with decades of controlled expression. Pronounced radiating keloid scarring across right shoulder and clavicle left deliberately visible, animate russet-orange cat tail with dark tip extending from base of spine, subdermal port scar on left hand. Wearing faded Axiom-era deep grey fatigue pants with reinforced pockets, layered muted-color shirts showing careful mending, long waterproofed 2190s coat, worn synthetic boots. Thin braided wire bracelet on right wrist. Standing with weight balanced on balls of feet, economy of motion, aware of sightlines. GLMZ Great Lakes Metropolitan Zone aesthetic. Cool neon-tinged overhead lighting casting subtle shadows across weathered features, industrial background with faded corporate signage, meditative isolated mood, gritty realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 50.1,
+    "East Asian": 45.6,
+    "Sub-Saharan African": 22.8,
     "Northern European": 18.2,
-    "East Asian": 17.6,
-    "Middle Eastern": 11.4,
-    "Sub-Saharan African": 2.7
+    "Southeast Asian": 9.1,
+    "Indigenous American": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 18.9
+      },
+      "Japanese": {
+        "Japanese": 8.5
+      },
+      "Korean": {
+        "Korean": 18.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 22.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 2.7,
+        "Icelandic": 4.5
+      },
+      "Germanic": {
+        "Austrian": 11
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 8.8
+      },
+      "Thai": {
+        "Thai": 0.3
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 2.9
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 0.1,
+        "Potawatomi": 0.1
+      },
+      "Andean": {
+        "Aymara": 0.6,
+        "Quechua": 0.6
+      }
+    }
+  }
 }

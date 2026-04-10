@@ -1,13 +1,13 @@
 {
   "id": "2b8d638aedc627fcf9aaf8f021079ccc",
-  "name": "Zephyr Olofsson-Sesay",
+  "name": "Zephyr Tovar-Olofsson",
   "type": "character",
   "aliases": [
     "Byline",
     "The Reporter"
   ],
   "role": "Private Investigator",
-  "description": "Folake Borg-Darko used to be the name that corporations feared seeing in a byline. For fifteen years she was an investigative journalist of extraordinary tenacity, breaking stories about corporate malfeasance, environmental crimes, and systemic exploitation that earned her industry recognition and corporate enemies in equal measure. Then she went after Zheng-Dao's pharmaceutical division, and Zheng-Dao went after her.\n\nThe details are public record: a coordinated defamation campaign that discredited her sources, questioned her methods, and ultimately got her blacklisted from every major media outlet in GLMZ. The story was true. The sources were real. None of that mattered once the corporate legal machinery engaged. She lost her career, her credibility in mainstream media, and two years of her life fighting legal battles she couldn't afford.\n\nShe survived by becoming a private investigator, applying the same skills to individual cases instead of public stories. She is arguably more effective now than she was as a journalist because she's no longer constrained by editorial oversight, publication schedules, or the pretense of objectivity. Her investigations are thorough to the point of obsession, her source protection is absolute, and her case reports are so detailed and well-constructed that they've been accepted as evidence in corporate arbitration without additional verification. She is still a journalist at heart, and every case is a story she's reporting — just for an audience of one.",
+  "description": "Zephyr Tovar-Olofsson used to be the name that corporations feared seeing in a byline. For fifteen years she was an investigative journalist of extraordinary tenacity, breaking stories about corporate malfeasance, environmental crimes, and systemic exploitation that earned her industry recognition and corporate enemies in equal measure. Then she went after Zheng-Dao's pharmaceutical division, and Zheng-Dao went after her.\n\nThe details are public record: a coordinated defamation campaign that discredited her sources, questioned her methods, and ultimately got her blacklisted from every major media outlet in GLMZ. The story was true. The sources were real. None of that mattered once the corporate legal machinery engaged. She lost her career, her credibility in mainstream media, and two years of her life fighting legal battles she couldn't afford.\n\nShe survived by becoming a private investigator, applying the same skills to individual cases instead of public stories. She is arguably more effective now than she was as a journalist because she's no longer constrained by editorial oversight, publication schedules, or the pretense of objectivity. Her investigations are thorough to the point of obsession, her source protection is absolute, and her case reports are so detailed and well-constructed that they've been accepted as evidence in corporate arbitration without additional verification. She is still a journalist at heart, and every case is a story she's reporting — just for an audience of one.",
   "affiliation": "Independent — still maintains journalism contacts despite being blacklisted from every major outlet",
   "tier": "Tier 2",
   "location": "A cramped space in the Rookery that serves as office, archive, and occasionally bedroom — walls covered with printed articles and investigation boards, near Western and Division",
@@ -67,20 +67,14 @@
     "Kang-Petrov Arms KPS-3M 'Mongrel'"
   ],
   "related_entities": [
-    "GLMZ",
     "Zheng-dao Bioelectric",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "ARCHIVE",
     "Déjà Vu",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Street Custom 'Cigarette' Pen Gun",
-    "The Pure Hand",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed heritage reflecting Sub-Saharan African (38.8%), Northern European (35.6%), East Asian (13.1%), and Hispanic/Latin American (12.5%) ancestry. This creates a distinctive phenotype: medium-warm brown skin with subtle golden undertones from the African and Latin American ancestry, balanced by the cooler Nordic pallor from Northern European genetics. East Asian ancestry contributes to slightly higher cheekbones and a refined facial structure. The overall effect is someone whose features don't clearly signal a single geographic origin — a true product of the Ubiquitous Diaspora.",
+    "heritage": "Mixed heritage reflecting Northern European (43.8%), Hispanic/Latin American (33.3%), South Asian (8.6%), East Asian (8.2%), Middle Eastern (3.2%), and Southeast Asian (2.9%) ancestry. This creates a distinctive phenotype: warm medium-brown skin with golden and olive undertones from the Latin American and South Asian ancestry, balanced by cooler Northern European genetics. East Asian and South Asian ancestry contribute to slightly higher, more defined cheekbones and refined facial structure. Middle Eastern and Southeast Asian ancestry adds subtle depth to facial contours. The overall effect is someone whose features blend multiple continental origins seamlessly — a true product of the Ubiquitous Diaspora.",
     "height_cm": 172,
     "weight_kg": 64,
     "build": "Lean and angular, all economical muscle with minimal body fat — the physique of someone who runs on coffee and obsession rather than gym discipline. Shoulders slightly hunched from years bent over research terminals.",
@@ -88,8 +82,8 @@
     "hair_style": "Pulled back in a loose, practical braid or knot; often escaping strands that she doesn't bother retucking",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Brown with amber undertones",
-    "skin_tone": "Medium warm brown with golden undertones — the complexion of someone who spends more time indoors under screens than in natural light. The warmth comes from African and Latin American ancestry, tempered by Northern European genetics creating a subtle richness rather than deep saturation.",
-    "complexion": "Sharp cheekbones and refined jawline with subtle East Asian influence; perpetually tired creases under the eyes; minimal makeup, weathered expression that reads as focused intensity rather than hostility. Skin has the slightly sallow quality of someone who forgets to eat during investigations. The interplay of warm and cool undertones creates a complex, layered appearance.",
+    "skin_tone": "Warm medium brown with golden and olive undertones — the complexion of someone who spends more time indoors under screens than in natural light. The warmth comes from Latin American and South Asian ancestry, enriched by Middle Eastern genetics, tempered by Northern European genetics creating a subtle, layered richness rather than deep saturation.",
+    "complexion": "Sharp, defined cheekbones and refined jawline with South Asian and East Asian influence; perpetually tired creases under the eyes; minimal makeup, weathered expression that reads as focused intensity rather than hostility. Skin has the slightly sallow quality of someone who forgets to eat during investigations. The interplay of warm golden and cooler undertones creates a complex, multitonal appearance.",
     "distinguishing_marks": [
       "A thin scar along the left temple, approximately 4cm, from a thrown drink glass during a Zheng-Dao intimidation encounter in 2223",
       "Faded burn mark on the inside of the right wrist (roughly 2cm diameter) from an old apartment fire in Tier 5 housing, pre-corporate career",
@@ -100,12 +94,78 @@
     "posture_movement": "Moves with economical precision; sits hunched forward when concentrating; has a habit of tapping fingers rhythmically on surfaces while thinking. Walks with purpose, always looking slightly distracted — processing multiple threads of information simultaneously. Direct eye contact, rarely smiles, maintains minimal physical distance comfort zone.",
     "clothing_style": "Tier 3 working professional aesthetic: well-worn synthetic-leather jacket over layered shirts, practical dark pants with reinforced pockets for recording devices and notepads, steel-toed boots scuffed from years of field work. Favors muted colors (grays, blacks, dark browns) and function over fashion. No visible jewelry or corporate branding. Jacket has coffee stains and the faint smell of cigarette smoke from interviews. Everything is utilitarian and replaceable — nothing so valuable it would make her a target if seized by corporate security."
   },
-  "image_prompt": "Zephyr Olofsson-Sesay, mixed-heritage private investigator in cyberpunk 2226 GLMZ, medium-warm brown skin with golden undertones, dark brown hair with silver at temples pulled into practical braid, sharp cheekbones and refined jawline, perpetually tired amber-brown eyes, lean angular build 172cm, weathered focused expression. Wearing scuffed synthetic-leather jacket over layered dark shirts, reinforced dark pants, steel-toed boots. Thin scar visible on left temple. Hunched posture over research terminal, tapping fingers on desk, surrounded by holographic data streams and physical case files, dim neon-filtered office lighting casting blue and amber shadows, tired intensity, professional paranoia, cyberpunk noir atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Tovar-Olofsson, 2226 neo-noir private investigator, warm medium-brown skin with golden olive undertones, sharp defined cheekbones, brown eyes with amber flecks, tired intensity etched into face. Dark brown hair with silver threads at temples, shoulder-length pulled into loose practical braid with escaping wisps. Lean angular 172cm frame, economical movements, slightly hunched posture. Worn synthetic-leather jacket layered over dark shirts, practical reinforced pants, scuffed steel-toed boots. Thin 4cm scar visible on left temple. Cold neon-lit apartment or interview setting, harsh blue and amber accent lighting catching the warm undertones of skin. Cigarette smoke visible in light, coffee cup nearby, scattered datapads on worn desk. Direct unsmiling gaze, processing multiple information threads simultaneously. GLMZ 2200s detective aesthetic, utilitarian and street-worn, no visible chrome augmentations. Moody, focused, uncompromising. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 38.8,
-    "Northern European": 35.6,
-    "East Asian": 13.1,
-    "Hispanic/Latin American": 12.5
+    "Northern European": 43.8,
+    "Hispanic/Latin American": 33.3,
+    "South Asian": 8.6,
+    "East Asian": 8.2,
+    "Middle Eastern": 3.2,
+    "Southeast Asian": 2.9
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 16.4
+      },
+      "Germanic": {
+        "Swiss German": 10.3
+      },
+      "British Isles": {
+        "English": 3.4,
+        "Scottish": 13.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 15.1
+      },
+      "Central American": {
+        "Salvadoran": 7.2,
+        "Guatemalan": 2.9
+      },
+      "South American": {
+        "Chilean": 3.1,
+        "Peruvian": 5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 8.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.5
+      },
+      "Korean": {
+        "Korean": 3.4
+      },
+      "Chinese": {
+        "Fujianese": 1.6,
+        "Mandarin Northern": 0.7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 2
+      },
+      "Arab Levantine": {
+        "Lebanese": 1.2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 0.9,
+        "Cebuano": 1.6
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.4
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A cramped space in the Rookery that serves as office"
+  }
 }

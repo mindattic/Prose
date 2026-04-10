@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61c759f99916525b6d89729",
   "type": "character",
-  "name": "Sigrid Erikstad",
+  "name": "Marisol Salazar",
   "aliases": [
     "Goddie",
     "the Chemist"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Undertow — a converted flood-control maintenance suite beneath the Blackpipe Corridor infrastructure level, near Fullerton and Damen",
-  "description": "Godfrey is a tall, thin man with very dark skin, close-cropped natural hair going gray at the temples earlier than he'd like, and the particular posture of someone who spends most of his time in low-ceilinged spaces — a slight forward hunch, head naturally inclined downward. He has round eyeglasses with an amber tint — not augmented, just glass, just preference — and long-fingered hands that he keeps very still when he's thinking, which is always. He has one geneware modification: his fingertips emit a faint violet bioluminescence when he's working in the dark, something he had done for practical reasons and has found he cannot imagine working without. He dresses neatly for someone who lives underground; he irons things.\n\nGodfrey was a legitimate pharmaceutical technician for Helix Biosystems for eleven years, and it shows. His lab is cleaner than it has any right to be. His product — a synthetic serotonin modulator he calls 'Vesper,' along with two variants he's developed iteratively over seven years — is consistent, dosed accurately, and free of the adulterants that make cheap compounds dangerous. He has customers who have been with him since the beginning, people from the Undertow and Blackpipe Corridor who cannot afford Helix's licensed version of essentially the same compound, and he regards this as his primary moral justification. He carries this justification the way a man carries something heavy — not lightly, but he carries it.",
+  "description": "Marisol Salazar is a tall, thin man with very dark skin, close-cropped natural hair going gray at the temples earlier than he'd like, and the particular posture of someone who spends most of his time in low-ceilinged spaces — a slight forward hunch, head naturally inclined downward. He has round eyeglasses with an amber tint — not augmented, just glass, just preference — and long-fingered hands that he keeps very still when he's thinking, which is always. He has one geneware modification: his fingertips emit a faint violet bioluminescence when he's working in the dark, something he had done for practical reasons and has found he cannot imagine working without. He dresses neatly for someone who lives underground; he irons things.\n\nMarisol Salazar was a legitimate pharmaceutical technician for Helix Biosystems for eleven years, and it shows. His lab is cleaner than it has any right to be. His product — a synthetic serotonin modulator he calls 'Vesper,' along with two variants he's developed iteratively over seven years — is consistent, dosed accurately, and free of the adulterants that make cheap compounds dangerous. He has customers who have been with him since the beginning, people from the Undertow and Blackpipe Corridor who cannot afford Helix's licensed version of essentially the same compound, and he regards this as his primary moral justification. He carries this justification the way a man carries something heavy — not lightly, but he carries it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -176,7 +176,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Undertow",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,29 +241,15 @@
     "Blackpipe Corridor",
     "Helix Biosystems",
     "The Undertow",
-    "Aslan Vasquez-Chatterjee",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pure Hand",
-    "Vesper",
-    "Glass",
-    "Breck Tannen",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
     "Noir Dining",
-    "Slagworks Industrial",
-    "Street Custom 'Glass Garden' Caltrops",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Collective",
-    "The Glass Garden",
-    "The Third Rail",
-    "UNDERTOW PASTORAL",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Glass",
+    "The Pure Hand"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Northern European dominant (50%) with significant East Asian (17.4%), Sub-Saharan African (13.5%), and Hispanic/Latin American (13.5%) ancestry, with minor South Asian and Central Asian contributions. The genetic blend produces a complexion that bridges multiple continental regions—warm deep brown with subtle undertones reflecting the East Asian and South Asian components.",
+    "heritage": "Rich multi-continental phenotype born from dominant Hispanic/Latin American ancestry (49.8%) interwoven with substantial Sub-Saharan African (12.9%), Southeast Asian (10.5%), Central Asian (9.2%), Indigenous American (9.0%), and East Asian (8.6%) heritage. This genetic tapestry produces a distinctive warm brown complexion—deep golden-brown base enriched by the warmth of African heritage, brightened by Southeast Asian undertones, with subtle Central and East Asian influences creating an unusually harmonious blend that defies singular continental categorization.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Tall and lean, almost ascetic — the build of someone who forgets to eat during focus work. Long limbs, narrow shoulders, minimal musculature. Posture dominated by a habitual forward hunch from years in low-ceilinged laboratory spaces.",
@@ -271,8 +257,8 @@
     "hair_style": "Close-cropped, neatly maintained, precisely edged",
     "hair_length": "Short",
     "eye_color": "Dark brown, obscured behind amber-tinted optical glass",
-    "skin_tone": "Deep warm brown with golden and olive undertones—a rich blend reflecting the Northern European, East Asian, Sub-Saharan African, and Hispanic/Latin American ancestry. Uniform tone with subtle warmth rather than the cooler darkness of single-region ancestry.",
-    "complexion": "Clean-shaven, meticulous grooming despite underground living. Skin shows minimal weathering; fine lines around eyes from concentration squinting. Facial structure shows the subtle blend of ancestry—defined cheekbones with slight angularity from Northern European heritage, almond eye shape suggesting East Asian genetics, and warm undertones across the bridge of nose and cheeks. Hands show callus-work from glass beakers and precision pipetting — palms and inner fingers slightly rougher than the rest of frame.",
+    "skin_tone": "Deep warm golden-brown with harmonious layering of Latin American warmth, Sub-Saharan African richness, and Southeast Asian brightness. Subtle golden-olive undertones reflect the multi-regional genetic blend. Uniform, unblemished tone suggesting careful life management.",
+    "complexion": "Clean-shaven, meticulous grooming despite underground living. Skin shows minimal weathering; fine lines around eyes from concentration squinting. Facial structure reveals multi-continental ancestry—moderately defined cheekbones with warm depth, subtle almond-shaped eye apertures from Southeast and East Asian genetics, broad nasal bridge with warm undertones characteristic of Latin American and African heritage, and overall warm golden cast throughout. Hands show callus-work from glass beakers and precision pipetting — palms and inner fingers slightly rougher than rest of frame.",
     "distinguishing_marks": [
       "Fingertip pads emit faint violet bioluminescence during fine motor tasks or in total darkness — a geneware modification visible as thin luminous halos around thumb through ring finger when active.",
       "Thin surgical scar along inside of left wrist, pale and old, approximately 4cm in length — legacy of early pharmaceutical training accident."
@@ -281,17 +267,73 @@
     "posture_movement": "Habitual forward hunch from low-ceiling laboratory work. Movements are slow, deliberate, economical — nothing wasted. Hands remain still when thinking, fingers precisely arced when working. Walks with slight downward head inclination. Overall carriage suggests sustained focus and nervous energy held in abeyance.",
     "clothing_style": "Tier 4 working-class practical with exceptional maintenance discipline. Typically wears dark denim trousers (pressed), dark fitted shirts or lab coats in good condition, steel-toed safety shoes (practical for laboratory environment). No logos or status markers. Everything is clean, wrinkle-free, clearly ironed regularly. A cardigan or unadorned jacket for transit. No jewelry except a simple metal watch (non-augmented). Clothing choices suggest a man who maintains standards of order as a form of personal sovereignty."
   },
-  "image_prompt": "Sigrid Erikstad, tall lean cyberpunk scientist (188cm) with deep warm brown skin blending Northern European, East Asian, Sub-Saharan African, and Hispanic heritage. Close-cropped black hair with gray temples. Clean-shaven with fine focus-lines around eyes, wearing amber-tinted optical glasses. Dark pressed denim and fitted dark lab coat, steel-toed shoes. Hands with faint violet bioluminescent fingertips glowing softly. Habitual forward hunch from laboratory work, slow deliberate movements. Standing in dimly-lit underground laboratory with cool blue-green lighting reflecting off glass beakers and equipment. Violet geneware glow illuminating precision work surfaces. Meticulous, focused, exhausted concentration. GLMZ 2226 cyberpunk aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Marisol Salazar, tall lean neo-noir scientist with deep warm golden-brown skin reflecting multi-continental ancestry—Latin American, Sub-Saharan African, and Southeast Asian heritage blended in his complexion. Close-cropped black hair with silver threading at temples, meticulous grooming. Wearing dark pressed denim and fitted dark shirt, steel-toed safety shoes. Amber-tinted optical glasses obscure dark brown eyes. Habitual forward hunch, slow deliberate movements. Faint violet bioluminescence halos glow around fingertips during fine motor work. Thin pale surgical scar visible on inside left wrist. Underground laboratory setting, cool neon-tinged lighting, 2226 Great Lakes Metropolitan Zone, neo-noir urban aesthetic, concentrated focus, economical posture --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 50.0,
-    "East Asian": 17.4,
-    "Sub-Saharan African": 13.5,
-    "Hispanic/Latin American": 13.5,
-    "South Asian": 3.1,
-    "Central Asian": 2.5
+    "Hispanic/Latin American": 49.8,
+    "Sub-Saharan African": 12.9,
+    "Southeast Asian": 10.5,
+    "Central Asian": 9.2,
+    "Indigenous American": 9,
+    "East Asian": 8.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 21.3
+      },
+      "South American": {
+        "Ecuadorian": 1.4,
+        "Argentine": 1
+      },
+      "Mexican": {
+        "Mexican": 26.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 6
+      },
+      "West African": {
+        "Senegalese": 2.2,
+        "Nigerian": 1.4
+      },
+      "Central African": {
+        "Congolese": 2.9,
+        "Cameroonian": 0.4
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 4.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 1.1
+      },
+      "Filipino": {
+        "Tagalog": 4.6
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 9.2
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 5.1
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 3.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 8.6
+      }
+    }
+  }
 }

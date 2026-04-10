@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61774b0a42f65c66d1053bd",
   "type": "character",
-  "name": "Sable Čabarkapa-Delgado",
+  "name": "Sable Najjar-Adeyemi",
   "aliases": [
     "Flo",
     "Bloodbank Flo"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Narrows, Ironvein, near North Ave and Damen",
-  "description": "Florinel has a face built for reassurance — broad cheekbones, dark warm eyes, a gap-toothed smile they deploy like a tool. Their skin is medium brown with the slightly brighter flush along the jaw that comes from their bioluminescent geneware activating when their temperature rises. They keep their black hair in tight braids coiled at the nape of their neck and wear the same style of sturdy dark apron every day, pockets stuffed with color-coded tube caps and a laminated prayer card to the Ironvein E.L.F. known locally as the Quiet Pump.\n\nThe Ironvein Community Blood Cooperative is one of the few non-corporate blood banks in GLMZ, and Florinel has kept it running for eleven years through a combination of logistical genius, community trust, and an encyclopedic knowledge of geneware interactions with blood typing. They track thousands of donors across the Narrows, coordinate with street docs like Yewande, and have personally matched blood for procedures in conditions that would make a hospital administrator weep. They find genuine joy in the organizational complexity of their work and are the kind of person who talks about supply chain logistics the way other people talk about sport.",
+  "description": "Sable Najjar-Adeyemi has a face built for reassurance — broad cheekbones, dark warm eyes, a gap-toothed smile they deploy like a tool. Their skin is medium brown with the slightly brighter flush along the jaw that comes from their bioluminescent geneware activating when their temperature rises. They keep their black hair in tight braids coiled at the nape of their neck and wear the same style of sturdy dark apron every day, pockets stuffed with color-coded tube caps and a laminated prayer card to the Ironvein E.L.F. known locally as the Quiet Pump.\n\nThe Ironvein Community Blood Cooperative is one of the few non-corporate blood banks in GLMZ, and Sable Najjar-Adeyemi has kept it running for eleven years through a combination of logistical genius, community trust, and an encyclopedic knowledge of geneware interactions with blood typing. They track thousands of donors across the Narrows, coordinate with street docs like Yewande, and have personally matched blood for procedures in conditions that would make a hospital administrator weep. They find genuine joy in the organizational complexity of their work and are the kind of person who talks about supply chain logistics the way other people talk about sport.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,40 +232,25 @@
   "related_entities": [
     "The Narrows Compact",
     "The Gauze",
-    "GLMZ",
     "Ironvein",
+    "Kel Adeyemi-Strand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Crucible Industries Titan-500 'Earthquake'",
-    "Helix Biosystems",
-    "Oumarou Svec-Ranginui",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Ledger",
-    "The Narrows",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multi-continental ancestry: 43% Hispanic/Latin American, 16% Eastern European, 16% Sub-Saharan African, 13% Southeast Asian, 8% East Asian, 4% South Asian. Genetic mixing evident in warm medium-brown skin with subtle golden undertones, facial structure reflecting Latin American and Southeast Asian bone geometry with Sub-Saharan warmth, and dark brown eyes with Southeast Asian epicanthic variation.",
+    "heritage": "Multi-continental ancestry: 40.5% Middle Eastern, 32.8% Hispanic/Latin American, 26.7% Sub-Saharan African. The genetic blend is visibly evident in warm medium-brown skin with golden and olive undertones, creating a complexion that bridges three continents. Facial structure reflects this mix distinctly: prominent cheekbones with Middle Eastern geometry, strong jawline characteristic of Latin American heritage, and warm undertone richness from Sub-Saharan genetics. Features are neither sharply angular nor softly rounded, but rather a harmonious synthesis of these ancestral lines.",
     "height_cm": 168,
     "weight_kg": 71,
     "build": "Solid, practical frame — neither lean nor heavy, built for standing twelve-hour shifts. Shoulders slightly rounded from years hunched over blood typing workstations. Core strength evident in posture despite desk work.",
     "hair_color": "Black, natural",
     "hair_style": "Tight braids coiled and pinned at the nape of the neck in a compact bun",
     "hair_length": "Long (braided and secured)",
-    "eye_color": "Dark brown, warm with subtle epicanthic folds reflecting Southeast Asian ancestry",
-    "skin_tone": "Warm medium brown with golden undertones from Latin American and Sub-Saharan ancestry, enhanced by bioluminescent geneware",
-    "complexion": "Blended facial structure: broad cheekbones with subtle Southeast Asian prominence, strong jawline reflecting Eastern European ancestry, warm undertone from Sub-Saharan genetics. Gap-toothed smile with visible charm, well-maintained skin. Along the jawline and upper cheekbones, a soft luminescent flush visible under the skin — pale blue-green undertone that glows faintly when body temperature rises. Expression defaults to measured friendliness; creases around the eyes from years of focused precision work.",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Warm medium brown with golden and olive undertones, the golden notes suggesting Middle Eastern and Hispanic/Latin American heritage while olive undertones reflect Sub-Saharan ancestry. Bioluminescent geneware adds a subtle pale blue-green luminescence beneath the surface.",
+    "complexion": "Blended facial features reflecting true genetic ancestry: broad, prominent cheekbones with Middle Eastern geometry paired with a strong, defined jawline characteristic of Hispanic/Latin American heritage, while warm undertones throughout reflect Sub-Saharan genetics. Gap-toothed smile with visible charm and well-maintained skin. Along the jawline and upper cheekbones, a soft luminescent flush visible under the skin—pale blue-green undertone that glows faintly when body temperature rises. Expression defaults to measured friendliness; creases around the eyes from years of focused precision work.",
     "distinguishing_marks": [
       "Faint subcutaneous luminescence along the jawline and high cheekbones (bioluminescent geneware, pale blue-green, most visible when warm)",
       "Small, nearly imperceptible RFID reader port scar on the inner right thumb pad — barely visible unless pointed out"
@@ -274,17 +259,43 @@
     "posture_movement": "Upright, deliberate, economical. Moves with practiced efficiency — no wasted motion. Hands are steady and purposeful; occasionally taps fingers rhythmically when thinking through logistics problems. Calm, unhurried bearing even under pressure. Natural tendency to stand closer to conversation partners, reading their comfort carefully.",
     "clothing_style": "Tier 3-4 working class, cooperative-standard. Dark, sturdy apron worn daily over plain dark slacks and a simple long-sleeved shirt (usually deep blue or grey). The apron pockets are customized with hand-sewn organizers for color-coded tube caps, marker pens, and notepads. Practical boots suitable for concrete floors and possible fluid spills. A laminated prayer card to the Ironvein E.L.F. (the Quiet Pump) hangs from a beaded cord around their neck — visible, worn, clearly meaningful. No jewelry beyond functional organizational tools."
   },
-  "image_prompt": "Portrait of Sable Čabarkapa-Delgado, 168cm tall laboratory technician in GLMZ 2226, warm medium-brown skin with golden undertones, blended Southeast Asian-Latin American-Sub-Saharan facial structure, dark brown eyes with subtle epicanthic folds, black braids coiled in nape bun. Faint bioluminescent blue-green glow visible under skin along jawline and high cheekbones. Wearing dark cooperative-standard apron over grey long-sleeved shirt, laminated prayer card on beaded cord visible at neck, practical boots. Upright posture, steady hands, measured friendly expression with characteristic gap-toothed smile. Subtle creases around eyes from precision work. Subcutaneous geneware augmentations glowing softly. Cyberpunk medical cooperative setting, cool laboratory lighting with warm practical overhead work lights, professional and calm bearing. --ar 2:3 --v 6",
+  "image_prompt": "Sable Najjar-Adeyemi, 168cm tall lab worker in 2226 near-future megacity setting, warm medium-brown skin with golden and olive undertones reflecting Middle Eastern, Hispanic/Latin American, and Sub-Saharan African ancestry, prominent cheekbones with strong jawline, dark warm brown eyes, black hair in tight braids coiled into a compact bun. Wearing dark sturdy work apron over deep blue long-sleeved shirt and dark slacks, practical boots, laminated prayer card on beaded cord visible at neck. Subcutaneous pale blue-green bioluminescence glowing faintly along jawline and cheekbones. Upright posture, steady hands, calm measured expression with creases around eyes from precision work. Standing in a cooperative medical facility under cool LED lighting, fluorescent tubes casting shadows across organized workspace. Photorealistic, professional technical atmosphere, subtle neo-noir geneware augmentation visible, documentary realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 43.2,
-    "Eastern European": 15.8,
-    "Sub-Saharan African": 15.7,
-    "Southeast Asian": 13.3,
-    "East Asian": 7.7,
-    "South Asian": 4.3
+    "Middle Eastern": 40.5,
+    "Hispanic/Latin American": 32.8,
+    "Sub-Saharan African": 26.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 18.8,
+        "Tajik Persian": 11.3
+      },
+      "Arab Gulf": {
+        "Yemeni": 4.1
+      },
+      "Kurdish": {
+        "Kurdish": 6.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 13.4,
+        "Salvadoran": 1.1
+      },
+      "Mexican": {
+        "Mexican": 18.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 19.9,
+        "Cameroonian": 6.8
+      }
+    }
+  }
 }

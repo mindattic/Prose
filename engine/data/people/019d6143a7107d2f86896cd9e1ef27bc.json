@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7107d2f86896cd9e1ef27bc",
   "type": "character",
-  "name": "Imani Sesay",
+  "name": "Solveig Vestergaard",
   "aliases": [
     "Vel",
     "The Seamstress"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Shallowgrave, operates from a legitimate alterations shop called Secondskin, near Ashland and Division",
-  "description": "Velislava presents as the most ordinary woman imaginable, which is her primary professional qualification. She is medium height, medium build, with Samoan-Slavic features that read as ambiguous in any database — a long jaw softened by her Armenian grandmother's cheekbones, dark eyes behind plain-glass frames she doesn't need but wears to give her face something to remember that isn't her face. Her hair is dark brown with a natural wave, cut to exactly jaw length, never different. She wears the same four outfits on a rotation. She has no mods, no geneware, nothing that would tag her biometrically beyond baseline. This is not poverty — it is discipline.\n\nSecondhand clothes hang in the windows of Secondskin and Velislava does genuinely good alteration work; she has a waiting list of neighborhood clients who would be devastated to lose her. They have no idea that the back room behind the ironing press contains one of the finest document fabrication setups in the Shallowgrave district — not the flashiest, not the most expensive, but the most meticulous. Vel specializes in the boring and bulletproof: employment histories, medical records, transit passes, residential registrations. Not spectacular new identities for runners. Clean paper for desperate people. She tells herself this distinction matters morally. Some days she believes it.",
+  "description": "Solveig Vestergaard the most ordinary woman imaginable, which is her primary professional qualification. She is medium height, medium build, with Samoan-Slavic features that read as ambiguous in any database — a long jaw softened by her Armenian grandmother's cheekbones, dark eyes behind plain-glass frames she doesn't need but wears to give her face something to remember that isn't her face. Her hair is dark brown with a natural wave, cut to exactly jaw length, never different. She wears the same four outfits on a rotation. She has no mods, no geneware, nothing that would tag her biometrically beyond baseline. This is not poverty — it is discipline.\n\nSecondhand clothes hang in the windows of Secondskin and Velislava does genuinely good alteration work; she has a waiting list of neighborhood clients who would be devastated to lose her. They have no idea that the back room behind the ironing press contains one of the finest document fabrication setups in the Shallowgrave district — not the flashiest, not the most expensive, but the most meticulous. Vel specializes in the boring and bulletproof: employment histories, medical records, transit passes, residential registrations. Not spectacular new identities for runners. Clean paper for desperate people. She tells herself this distinction matters morally. Some days she believes it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -172,7 +172,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,23 +239,14 @@
     "Grandmother",
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
     "ShieldTech CLA-3 'Cascade'",
-    "The Human Baseline Alliance",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Human Baseline Alliance",
     "Glass",
-    "Arcturus KS-7 'Nursery'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obafemi Szczypiński-Lautoa",
-    "Slagworks Industrial",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuliya Morozova"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (65.4%) with significant North African (27.7%) ancestry, creating a rich blend of West and East African heritage. Minor Hispanic/Latin American (4.9%) and Northern European (2.0%) admixture adds subtle complexity to her phenotype.",
+    "heritage": "Northern European (39.6%) and Sub-Saharan African (37.1%) ancestry form the dominant genetic expression, creating warm, golden-brown skin tones balanced by Indigenous American (16.4%), Eastern European (4.1%), and Southeast Asian (2.8%) heritage. This global blend manifests in features that reflect genuine ancestral diversity: moderate bone structure with balanced proportions, warm undertones throughout, and a phenotype that resists singular continental categorization.",
     "height_cm": 165,
     "weight_kg": 58,
     "build": "Medium, lean without being thin — the build of someone who moves efficiently and doesn't waste energy. No visible musculature, no softness. Practical.",
@@ -263,8 +254,8 @@
     "hair_style": "Blunt, chin-length cut with natural wave. Never layered, never styled differently. Cut every 6 weeks with identical precision.",
     "hair_length": "Medium",
     "eye_color": "Dark brown, natural (right eye contains unregistered optical enhancement — imperceptible to casual observation)",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting her predominantly Sub-Saharan African ancestry blended with North African richness. The tone is even and luminous without appearing ashy or red-toned.",
-    "complexion": "Clear, unblemished skin with minimal makeup — concealer under the eyes only, applied with discipline rather than artistry. Strong, defined cheekbones characteristic of West African heritage, with a gently tapered jawline. Broad nasal structure, full lips. Minor laugh lines at the corners of her eyes. Her features are optimized for forgetting, methodically groomed, with no distinguishing marks by design.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting balanced Northern and Sub-Saharan African ancestry with subtle influences from Indigenous American heritage. The tone is even and luminous, neither ashy nor red-toned.",
+    "complexion": "Clear, unblemished skin with minimal makeup — concealer under the eyes only, applied with discipline rather than artistry. Moderate cheekbones with balanced jawline. Moderately broad nasal structure reflecting ancestral diversity, full lips. Minor laugh lines at the corners of her eyes. Features are methodically groomed with no distinguishing marks by design.",
     "distinguishing_marks": [
       "Small linear scar on the inside of her right wrist, roughly 2cm long, positioned where a medical injection would logically sit — from the unregistered optical implant surgery, partially obscured by her watch",
       "No visible tattoos, no birthmarks, no piercings beyond baseline ear lobes which she does not use"
@@ -273,15 +264,59 @@
     "posture_movement": "Economical, unremarkable. She moves through space without drawing attention. Her shoulders are relaxed. She does not fidget, does not gesture expansively, does not occupy more space than necessary. Her gait is steady and consistent. She looks down slightly when walking — not suspicious, just someone lost in mundane thought.",
     "clothing_style": "Four identical outfits on rotation: dark grey or charcoal wool trousers (mid-tier tailoring, good fit, unremarkable), neutral long-sleeved top (cream, grey, or muted taupe), simple grey or black overshirt or cardigan, closed-toe black shoes (practical, comfortable, worn daily without affectation). All clothing is intentionally forgettable — mid-tier quality, Tier 3-4 aesthetic, no logos or visual markers. She dresses like someone's concerned mother, which is precisely the point. Her watch is an old mechanical piece, unremarkable."
   },
-  "image_prompt": "A woman of Sub-Saharan and North African descent, age 35-40, standing in a 2226 Great Lakes Metropolitan Zone transit hub bathed in cool overhead lighting. 165cm tall, lean build, deep warm brown skin with golden undertones, strong cheekbones, full lips, natural dark brown chin-length blunt hair with soft waves. Wearing charcoal wool trousers, grey long-sleeved top, and simple black cardigan. Plain-glass frames on her face. Her expression is neutral and forgettable, posture economical and unremarkable. She stands slightly turned, looking downward as if lost in mundane thought. Cyberpunk 2200s aesthetic with retro-futurist elements. Soft fluorescent and neon rim lighting casting cool shadows. Deliberately ordinary, designed to be forgotten. --ar 2:3 --v 6",
+  "image_prompt": "Solveig Vestergaard, woman of mixed Northern European and Sub-Saharan African heritage with warm golden-brown skin, dark brown natural wave hair in blunt chin-length cut, dark eyes behind plain glass frames. Medium build, 165cm tall, lean and economical in posture. Clear skin, defined cheekbones, full lips, minor laugh lines. Wearing charcoal wool trousers, cream long-sleeved top, grey cardigan, black practical shoes. Old mechanical watch on wrist. GLMZ, Great Lakes Metropolitan Zone, cool indoor lighting, neutral expression, walking through corporate corridor with unremarkable presence, forgettable aesthetic, Tier 3-4 quality clothing, mood of quiet purpose and intentional invisibility, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 65.4,
-    "North African": 27.7,
-    "Hispanic/Latin American": 4.9,
-    "Northern European": 2.0
+    "Northern European": 39.6,
+    "Sub-Saharan African": 37.1,
+    "Indigenous American": 16.4,
+    "Eastern European": 4.1,
+    "Southeast Asian": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 32.5
+      },
+      "Germanic": {
+        "Austrian": 7.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 3.1,
+        "Congolese": 5.7
+      },
+      "West African": {
+        "Malian": 10.7,
+        "Ghanaian": 17.6
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 13,
+        "Nahua": 3.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 3.7,
+        "Sorbian": 0.4
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 1.2
+      },
+      "Filipino": {
+        "Tagalog": 0.2
+      },
+      "Indonesian": {
+        "Javanese": 1.4
+      }
+    }
+  }
 }

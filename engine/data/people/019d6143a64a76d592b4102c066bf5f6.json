@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64a76d592b4102c066bf5f6",
   "type": "character",
-  "name": "Chidi Kamara",
+  "name": "Tatiana Volkov",
   "aliases": [
     "the Weatherman"
   ],
@@ -12,7 +12,7 @@
   "age": 63,
   "status": "active",
   "location": "Edgewater Prism — a converted monitoring station that serves as both apartment and field lab, directly on the lake-facing edge, near Clark and Addison",
-  "description": "Levan is a tall man gone broad in the shoulders and soft around the middle, with dark brown skin weathered by decades of outdoor fieldwork and close-cropped white hair that he keeps because it makes him look distinguished and he is not above vanity. His eyes are natural — a warm, medium brown — which is unusual enough in his social circles that people sometimes comment on it, which he finds mildly funny. He has a prosthetic left hand from a fieldwork accident in 2181 that he has declined to upgrade past basic functionality because he likes the old model and refuses to explain this to anyone.\n\nHe spent twenty-two years as Arcturus's senior climate modeler before his models started showing lake-system instabilities that Arcturus's infrastructure division did not want modeled, at which point his funding was quietly restructured and his team was dissolved. He now works alone out of Edgewater Prism, maintaining a network of self-built sensor buoys across the lake, and publishes through whatever venue will take him. He is not bitter in an active way — bitterness requires energy he'd rather spend — but he has a very clear view of exactly what happened and exactly who made which decision and why, and this clarity gives him a quality that people find alternately comforting and unsettling, like someone who has already done the math on the worst outcome.",
+  "description": "Tatiana Volkov is a tall man gone broad in the shoulders and soft around the middle, with dark brown skin weathered by decades of outdoor fieldwork and close-cropped white hair that he keeps because it makes him look distinguished and he is not above vanity. His eyes are natural — a warm, medium brown — which is unusual enough in his social circles that people sometimes comment on it, which he finds mildly funny. He has a prosthetic left hand from a fieldwork accident in 2181 that he has declined to upgrade past basic functionality because he likes the old model and refuses to explain this to anyone.\n\nHe spent twenty-two years as Arcturus's senior climate modeler before his models started showing lake-system instabilities that Arcturus's infrastructure division did not want modeled, at which point his funding was quietly restructured and his team was dissolved. He now works alone out of Edgewater Prism, maintaining a network of self-built sensor buoys across the lake, and publishes through whatever venue will take him. He is not bitter in an active way — bitterness requires energy he'd rather spend — but he has a very clear view of exactly what happened and exactly who made which decision and why, and this clarity gives him a quality that people find alternately comforting and unsettling, like someone who has already done the math on the worst outcome.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -191,7 +191,7 @@
     "Innovator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -207,34 +207,16 @@
   ],
   "related_entities": [
     "Edgewater Prism",
-    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
     "Arcturus Defense Solutions",
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "The Accidental",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Anatoliy Faye-Nkrumah",
-    "Biometric Denial Charge BDC-1",
-    "DEEP CURRENT",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kamm's Landing",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Lowline Press",
-    "Nurlan Morita-Antwi",
-    "Ouroboros Energy Tidal Frequency Dead Drop",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "University Spine",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Pellucid Systems"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with East Asian and Eastern European ancestry, creating a rich genetic blend that manifests in his deep brown skin tone, strong facial structure, and distinctive features reflecting his diverse heritage",
+    "heritage": "Predominantly Eastern European (59.7%) with substantial South Asian (17.2%) and Southeast Asian (8.3%) ancestry, creating a warm, complex phenotype. Hispanic/Latin American (8.1%), Sub-Saharan African (4.0%), and East Asian (2.7%) heritage add subtle depth and variation. The Eastern European foundation provides bone structure and initial fair skin potential, substantially warmed and enriched by South and Southeast Asian contributions that shift skin tone toward warm olive-brown, refine cheekbone structure, and shape eye characteristics. The smaller ancestry percentages create nuanced facial feature blending rather than stark distinctions.",
     "height_cm": 188,
     "weight_kg": 92,
     "build": "Broad-shouldered and solid, thickened through the torso from six decades of field seasons and desk work, but still carrying the frame of someone who spent his thirties doing physical labor in harsh conditions",
@@ -242,9 +224,8 @@
     "hair_style": "Close-cropped, neat, deliberately maintained",
     "hair_length": "Short",
     "eye_color": "Medium brown, natural",
-    "skin_tone": "Deep mahogany brown with uneven weathering — deeper tan on face and forearms from decades of selective sun exposure during fieldwork, lighter across the chest and upper back; the underlying warmth of his Sub-Saharan African heritage visible even through sun damage",
-    "complexion": "Heavily lined face, particularly around the eyes and mouth from decades of squinting into weather; sun-damaged areas show faint evidence of dermal repair work (slight textural smoothing on cheeks and nose bridge); strong jawline still visible beneath age-softening with the geometric definition characteristic of his ancestral heritage; maintained grooming but not fastidious",
-    "eye_color_note": "Medium brown, natural",
+    "skin_tone": "Warm medium brown with olive undertones throughout, reflecting the dominant Eastern European base substantially warmed and deepened by South Asian and Southeast Asian ancestry. Deeper tan on face and forearms from decades of selective sun exposure during fieldwork, lighter across chest and upper back; the underlying warmth unified across all areas, creating cohesive warm complexion rather than stark contrast.",
+    "complexion": "Heavily lined face, particularly around the eyes and mouth from decades of squinting into weather; sun-damaged areas show faint evidence of dermal repair work (slight textural smoothing on cheeks and nose bridge); facial structure reflects Eastern European geometry modified by South and Southeast Asian influence in cheekbone prominence, eye shape, and jaw definition; maintained grooming but not fastidious.",
     "distinguishing_marks": [
       "Network of fine age lines across forehead and between eyebrows from sixty years of concentration and field observation",
       "Deep laugh lines extending from outer corners of eyes",
@@ -256,14 +237,70 @@
     "clothing_style": "Tier 3-4 practical. Favors heavy thermal layering even in moderate weather — old Arcturus field jackets (now patched, still bearing faded company branding he has not bothered to remove), functional waterproof pants in dark blue or black, work boots maintained obsessively. Wears a weathered wool watch cap indoors sometimes. No affectation, no brand-signaling beyond the utility of things that last.",
     "jewelry_accessories": "Scratched titanium ring on right ring finger and a woven cordage bracelet on right wrist made from research buoys' mooring line, made by one of his University Spine mentees"
   },
-  "image_prompt": "Chidi Kamara, 188cm weathered man with deep mahogany brown skin, white close-cropped hair, standing in cyberpunk 2226 Great Lakes Metropolitan Zone. Deep brown natural eyes with prominent crow's feet from decades of field observation, heavily lined face showing sun damage and dermal repair work, strong jawline. Visible thin scar along left temple. Left arm is an older prosthetic with visible mechanical joints in darker synthetic material, slightly mismatched to skin tone. Faint barometric implant scar behind left ear. Wearing patched Arcturus field jacket over thermal layers, dark waterproof pants, obsessively maintained work boots. Titanium ring on right hand, woven mooring line bracelet on right wrist. Stands with slight forward lean, looking middle-distance as if scanning weather patterns. Deliberate, economical movements. Weathered wool watch cap. Industrial setting with rain-slicked metal surfaces, neon glow catching on his prosthetic hand, atmospheric moisture suggesting barometric sensitivity. Cinematic lighting emphasizing facial weathering and scars, cool blue and amber tones. --ar 2:3 --v 6",
+  "image_prompt": "Tatiana Volkov, 188cm tall weathered man with warm medium-brown skin and olive undertones reflecting Eastern European, South Asian, and Southeast Asian heritage. White close-cropped hair, medium brown natural eyes, deeply lined face from decades of fieldwork. Visible older prosthetic left hand with mechanical joints in dark synthetic material. Scarred left temple partially hidden by hairline. Solar keratoses on ears and shoulders. Standing with slight forward lean, eyes in middle-distance focus. Wearing patched Arcturus field jacket with faded branding, dark waterproof pants, work boots, weathered wool watch cap. Titanium ring and woven cordage bracelet. GLMZ, Great Lakes Metropolitan Zone research station setting, cool fluorescent and ambient lighting, utilitarian aesthetic, no affectation --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 80.1,
-    "East Asian": 13.0,
-    "Eastern European": 6.9
+    "Eastern European": 59.7,
+    "South Asian": 17.2,
+    "Southeast Asian": 8.3,
+    "Hispanic/Latin American": 8.1,
+    "Sub-Saharan African": 4,
+    "East Asian": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 10.7,
+        "Croatian": 7.4
+      },
+      "Slavic East": {
+        "Belarusian": 18.2
+      },
+      "Magyar-Romanian": {
+        "Romanian": 9.6,
+        "Hungarian": 13.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 17.2
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 8.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 8.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 1.6
+      },
+      "Southern African": {
+        "Zambian": 0.4,
+        "Mozambican": 0.3
+      },
+      "East African": {
+        "Ethiopian": 1.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 1
+      },
+      "Chinese": {
+        "Sichuanese": 0.7
+      },
+      "Korean": {
+        "Korean": 1
+      }
+    }
+  }
 }

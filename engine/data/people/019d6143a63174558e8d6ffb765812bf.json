@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63174558e8d6ffb765812bf",
   "type": "character",
-  "name": "Phoenix Echeverría",
+  "name": "Phoenix Truong",
   "aliases": [
     "Immy",
     "The Shelf Whisperer"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "University Spine, Calumet Rise satellite office, near Lincoln and Addison",
-  "description": "Imogen is a compact woman with close-cropped natural hair shot through with thin copper-dyed streaks she's had since her doctorate — a cosmetic mod she's never updated because she likes that it's dated. Her skin is deep brown, her eyes augmented with patterned irises in concentric amber rings that she tells students are 'functional, not decorative' though they are purely decorative. She carries a battered fieldwork satchel covered in data-patch stickers from Tier 1 and 2 communities she's embedded with, and she smells faintly of the Shelf's characteristic mix of fry oil and ozone.\n\nImogen is warm in the field and terse at faculty meetings, a distinction colleagues find jarring. She is deeply respected by her research subjects in ways the university administration finds uncomfortable — she's been known to halt publication of her own papers when community members asked her to, citing ethics over career. Her laugh is sudden and loud, her criticism precise and unwelcome. She genuinely loves the people she studies, which some of her peers consider a methodological problem.",
+  "description": "Phoenix Truong is a compact woman with close-cropped natural hair shot through with thin copper-dyed streaks she's had since her doctorate — a cosmetic mod she's never updated because she likes that it's dated. Her skin is deep brown, her eyes augmented with patterned irises in concentric amber rings that she tells students are 'functional, not decorative' though they are purely decorative. She carries a battered fieldwork satchel covered in data-patch stickers from Tier 1 and 2 communities she's embedded with, and she smells faintly of the Shelf's characteristic mix of fry oil and ozone.\n\nPhoenix Truong is warm in the field and terse at faculty meetings, a distinction colleagues find jarring. She is deeply respected by her research subjects in ways the university administration finds uncomfortable — she's been known to halt publication of her own papers when community members asked her to, citing ethics over career. Her laugh is sudden and loud, her criticism precise and unwelcome. She genuinely loves the people she studies, which some of her peers consider a methodological problem.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -182,7 +182,7 @@
     "Scholar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,26 +241,20 @@
     "Ferrogate Transit",
     "University Spine",
     "Calumet Rise",
-    "The Shelf",
     "The Nearfield",
+    "The Shelf",
+    "Pressure Drop",
     "The Gradient Compact",
+    "Underground Phoenix",
     "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Aybek Sato-Poku",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
-    "MERIDIAN",
-    "Pikasso Wemba-Þórðarson",
-    "The Pure Hand",
-    "Wool"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Pan-American mestiza with significant Indigenous ancestry, enriched by African, Southeast Asian, and Eastern European heritage. The combination creates warm-toned brown skin with subtle golden undertones. Her features reflect the Indigenous American and Hispanic/Latin American majority (76.8%), with minor contributions from African and Asian ancestry visible in facial structure and texture.",
+    "heritage": "Southeast Asian plurality (42.3%) blended with significant South Asian (31.1%) and Eastern European (26.6%) ancestry. The genetic combination creates warm medium-brown skin with golden and subtle olive undertones. Her features reflect the Southeast Asian plurality—angular cheekbones, slightly almond-shaped eye structure—enriched by South Asian facial architecture and reinforced by Eastern European bone structure. Cheekbones are notably angular with slight Southeast Asian tapering, while underlying jaw and brow structure shows the broader Eastern European skeletal geometry. The blend is distinctly cosmopolitan, marking her as product of the Ubiquitous Diaspora.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, with the hard-earned musculature of someone who walks fieldwork routes on foot three days a week. Shoulders slightly rounded from years of carrying a heavy satchel. No excess body fat.",
@@ -268,8 +262,8 @@
     "hair_style": "Close-cropped, textured, deliberately undyed since doctoral work — the copper streaks are faded and intentionally maintained",
     "hair_length": "Short",
     "eye_color": "Augmented: patterned irises in concentric amber rings with natural dark brown sclera",
-    "skin_tone": "Warm brown complexion with golden undertones, reflecting the blend of Indigenous American, Hispanic/Latin American, and Sub-Saharan African ancestry",
-    "complexion": "Weathered from consistent fieldwork exposure. Strong cheekbones and slightly broad facial structure reflecting Indigenous heritage. Few lines around eyes and mouth from frequent intense smiling and concentration. Minimal makeup. Hands callused from note-taking and satchel carrying.",
+    "skin_tone": "Warm medium brown with golden and subtle olive undertones, reflecting the blend of Southeast Asian, South Asian, and Eastern European ancestry",
+    "complexion": "Weathered from consistent fieldwork exposure. Angular cheekbones and tapered facial structure reflecting Southeast and South Asian heritage, with broader Eastern European bone structure underlying the midface and jaw. Few lines around eyes and mouth from frequent intense smiling and concentration. Minimal makeup. Hands callused from note-taking and satchel carrying.",
     "distinguishing_marks": [
       "Faint linear scar on left forearm where sub-dermal field recorder was installed, approximately 4cm long, partially obscured by casual sleeve wear",
       "Small burn scar on right inner wrist from fieldwork accident in a Shelf kitchen approximately 8 years ago — she considers it a badge"
@@ -278,17 +272,41 @@
     "posture_movement": "Moves with economical efficiency but without rigidity. Sits forward in conversations, leaning slightly toward interlocutors. Stands with weight shifted to one leg, often touching her left forearm unconsciously when discussing field data. Her walk is purposeful and ground-covering; she's always going somewhere specific.",
     "clothing_style": "Tier 2 academic-adjacent: worn high-quality field gear aged into softness. Carhartt canvas work pants, vintage merino wool sweaters, sturdy walking boots (currently scuffed, several years old). The battered fieldwork satchel is non-negotiable — canvas with leather trim, covered in data-patch stickers from communities she's embedded with. Minimal jewelry. No corporate branding. Her style reads as 'too invested in the work to care about fashion,' which is partly true and partly carefully maintained."
   },
-  "image_prompt": "Phoenix Echeverría, a 158cm mestiza researcher with warm golden-brown skin and short textured deep brown hair with faded copper streaks. Indigenous American and Hispanic heritage visible in strong cheekbones and facial structure. Augmented concentric amber ring irises with dark brown sclera. Compact, wiry build from fieldwork. Wearing aged Carhartt canvas work pants and vintage merino wool sweater, scuffed walking boots. Carrying battered canvas satchel with leather trim and community data patches. Faint 4cm scar visible on left forearm, burn scar on right inner wrist. Standing with weight on one leg, hand unconsciously touching left arm. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, moody fieldwork lighting, worn academic aesthetic, everything about her suggests dedication to embedded research over personal fashion. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Phoenix Truong, a 158cm Southeast Asian-South Asian-Eastern European mixed heritage woman in her 30s, GLMZ. Warm medium-brown skin with golden olive undertones, angular Southeast Asian cheekbones tapering into broader Eastern European bone structure. Short textured deep brown hair with faded copper streaks. Her most striking feature: augmented concentric amber ring irises against dark brown sclera, unnaturally patterned and immediately noticeable. Weathered complexion from fieldwork, few lines around intense eyes. Compact wiry build, slight shoulder rounding from years of heavy satchel carrying. Wearing aged high-quality Carhartt work pants, soft merino wool sweater, scuffed sturdy walking boots. Battered canvas fieldwork satchel with leather trim covered in community data-patch stickers visible over one shoulder. Faint linear scar visible on left forearm. No makeup. Economical posture, leaning forward slightly, unconsciously touching left forearm. Purpose-driven movement captured mid-stride. Great Lakes Metropolitan Zone industrial architecture and neon grid lighting in soft focus background. Documentary realism meets neo-noir urban aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.1,
-    "Indigenous American": 37.7,
-    "Sub-Saharan African": 10.6,
-    "Eastern European": 5.1,
-    "Southeast Asian": 4.8,
-    "North African": 2.7
+    "Southeast Asian": 42.3,
+    "South Asian": 31.1,
+    "Eastern European": 26.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Waray": 9.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 33
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 31.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 6.9,
+        "Serbian": 10.7
+      },
+      "Slavic West": {
+        "Czech": 2.9
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 6.1
+      }
+    }
+  }
 }

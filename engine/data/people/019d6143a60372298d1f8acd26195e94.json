@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60372298d1f8acd26195e94",
   "type": "character",
-  "name": "Ximena Holm-Johansson-Trujillo",
+  "name": "Leila Hachemi-Tlemcani-Popescu",
   "aliases": [
     "Mil",
     "Coach"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "Geartown, Ironvein district — works at a gym called Foundry Fitness, a no-frills facility above a machine shop, near Damen and Armitage",
-  "description": "Emiljan is built like a question mark — once a very large man, now a large man who has aged into something more deliberate. He carries the muscle of his competitive years but it's softened at the edges, and his shoulders have the slight forward curve of someone who has spent too much time bent over injured people and broken equipment. He keeps a short beard, keeps his head shaved, and has a retractable-claw geneware mod on his right hand that he got as a young man when it seemed cool and now views with mild embarrassment — he keeps the claws trimmed short and rarely mentions them. His face is deeply expressive, heavy eyebrows doing most of the work.\n\nEmiljan ran as a competitive strength athlete in his twenties under a Ringo corponation sports sponsorship, which ended badly when he refused to take a Helix-manufactured performance modifier ahead of a sanctioned event and got quietly dropped from the roster. He's been training civilians and amateur athletes at Foundry for eleven years and genuinely loves the work — the slow process of watching someone find out what their body can do. He is patient to a fault in professional contexts and has almost no patience for bullshit in personal ones. He carries a specific, articulated bitterness toward corporate sports sponsorship that he will tell you about if you give him even a half-opening.",
+  "description": "Leila Hachemi-Tlemcani-Popescu is built like a question mark — once a very large man, now a large man who has aged into something more deliberate. He carries the muscle of his competitive years but it's softened at the edges, and his shoulders have the slight forward curve of someone who has spent too much time bent over injured people and broken equipment. He keeps a short beard, keeps his head shaved, and has a retractable-claw geneware mod on his right hand that he got as a young man when it seemed cool and now views with mild embarrassment — he keeps the claws trimmed short and rarely mentions them. His face is deeply expressive, heavy eyebrows doing most of the work.\n\nLeila Hachemi-Tlemcani-Popescu ran as a competitive strength athlete in his twenties under a Ringo corponation sports sponsorship, which ended badly when he refused to take a Helix-manufactured performance modifier ahead of a sanctioned event and got quietly dropped from the roster. He's been training civilians and amateur athletes at Foundry for eleven years and genuinely loves the work — the slow process of watching someone find out what their body can do. He is patient to a fault in professional contexts and has almost no patience for bullshit in personal ones. He carries a specific, articulated bitterness toward corporate sports sponsorship that he will tell you about if you give him even a half-opening.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -175,7 +175,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -189,27 +189,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Ringo Corponation",
+    "Patience",
     "Geartown",
     "Ironvein",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Crucible Industries CR-9 'Foundry'",
+    "The Foundry Kitchen",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Aphelion",
-    "Davi Ousseini-Brătianu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Noir Dining",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (46.5%), Hispanic/Latin American (26.7%), Southeast Asian (14.2%), and Sub-Saharan African (12.6%) — a complex global blend creating warm medium-brown skin with golden and olive undertones. The combination produces soft, rounded facial geometry with some angular features, creating distinctive multicultural presence.",
+    "heritage": "North African (43.5%), Middle Eastern (31.2%), and Eastern European (25.3%) — a Mediterranean-Levantine blend creating warm medium-brown skin with subtle olive and golden undertones. The combination produces balanced facial geometry with stronger angular features, a distinctive Maghrebi-Levantine presence with Eastern European bone structure depth.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Heavy, muscular frame with softened edges — the physique of a former elite strength athlete now in his early forties. Broad shoulders with a slight forward curve from years of coaching and equipment work. Chest and upper back still heavily muscled; lower body shows proportional but less defined mass. No visible fat deposit, but the sharp definition of his competitive years has mellowed into solid, functional density.",
@@ -217,8 +206,8 @@
     "hair_style": "Shaved head, maintained with precision",
     "hair_length": "Shaved",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium brown with golden and olive undertones — weathered and sun-exposed from years of outdoor training and work. The multicultural ancestry creates subtle depth and warmth across the complexion.",
-    "complexion": "Expressive face with balanced geometry — fuller cheekbones from Southeast Asian and Hispanic heritage, stronger jawline from Northern European ancestry. Thick, pronounced eyebrows set low over deep-set dark brown eyes. Close-trimmed salt-and-pepper beard kept at roughly 5mm, darkening the lower face. Skin shows the texture of someone who has spent decades in physical labor and outdoor conditions — not scarred, but weathered with character. Three faint horizontal lines across his forehead from years of intense concentration during lifts and coaching.",
+    "skin_tone": "Warm medium brown with olive undertones — weathered and sun-exposed from years of outdoor training and work. The North African and Middle Eastern ancestry creates natural depth and richness across the complexion, with Eastern European ancestry contributing subtle cool undertones in facial structure.",
+    "complexion": "Expressive face with balanced angular geometry — prominent cheekbones and defined jawline characteristic of Maghrebi and Levantine heritage, refined by Eastern European bone structure creating classical depth. Thick, pronounced eyebrows set low over deep-set dark brown eyes. Close-trimmed salt-and-pepper beard kept at roughly 5mm, darkening the lower face. Skin shows the texture of someone who has spent decades in physical labor and outdoor conditions — not scarred, but weathered with character. Three faint horizontal lines across his forehead from years of intense concentration during lifts and coaching.",
     "distinguishing_marks": [
       "Burn scar across the top of his left shoulder blade — pale, roughly 8cm in width, from a failed equipment calibration during a Ringo sponsorship event in his twenties.",
       "Surgical scar running vertically along his lower spine, approximately 12cm, from microbrace insertion — barely visible beneath his shirt line.",
@@ -229,15 +218,56 @@
     "posture_movement": "Moves with deliberate efficiency — economical, no wasted motion. Standing posture shows the slight forward shoulder curve from decades of loaded lifting and coaching posture. When focused on another person (coaching or listening), his entire body angles toward them; his eyebrows do most of his emotional communication. Walks flat-footed, grounded. Hands often at rest at his sides or engaged in small, precise movements (adjusting equipment, demonstrating form). Rarely fidgets. When tired, the forward curve becomes more pronounced.",
     "clothing_style": "Strictly functional, Tier 3-4 practical. Black or dark gray athletic wear — worn Foundry Fitness hoodies (faded logo), plain t-shirts, reinforced cargo pants with heavy pockets. Worn leather work belt. Old training shoes (usually Ringo-era branded athletic footwear he's kept from his sponsorship days, now resoled multiple times). No jewelry, no visible personal grooming beyond maintenance. Clothes show honest wear — stains from equipment oil, fraying at cuffs — but are clean and maintained. Everything is built to survive heavy work."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Ximena Holm-Johansson-Trujillo — 188cm tall, powerfully muscled strength athlete in his early forties with warm medium-brown skin, golden undertones, multicultural features: rounded cheekbones, strong jaw, thick low eyebrows, deep-set dark brown eyes. Shaved head, close-trimmed salt-and-pepper beard at 5mm. Weathered complexion, controlled posture with forward shoulder curve. Wearing faded black Foundry Fitness hoodie, reinforced cargo pants, worn resoled training shoes. Visible faint scar on left shoulder blade, callused hands with retractable claw geneware. Standing in industrial gym facility with heavy lifting equipment, neon accent lighting casting shadows across his face, deliberate grounded stance, hands at sides, intense focused expression. Honest wear on clothing, industrial aesthetic, late-night gym atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Leila Hachemi-Tlemcani-Popescu, 188cm tall muscular male coach in his early forties, shaved head, dark brown eyes, warm medium-brown skin with olive undertones blending North African, Middle Eastern, and Eastern European heritage. Salt-and-pepper trimmed beard, weathered face with prominent cheekbones and deep-set eyes. Worn black Foundry Fitness hoodie over plain t-shirt, reinforced cargo pants, old resoled training shoes. Standing in industrial gym setting with equipment visible, slight forward shoulder curve from decades of lifting, economical posture, callused hands at rest. Faint burn scar visible on left shoulder. GLMZ industrial facility lighting, moody and focused, real texture and honest wear on clothing. Morning light through warehouse windows. Serious, composed expression. Cinematic, character portrait style. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 46.5,
-    "Hispanic/Latin American": 26.7,
-    "Southeast Asian": 14.2,
-    "Sub-Saharan African": 12.6
+    "North African": 43.5,
+    "Middle Eastern": 31.2,
+    "Eastern European": 25.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Maghreb": {
+        "Algerian": 3.1,
+        "Moroccan": 8.9
+      },
+      "Amazigh": {
+        "Tuareg": 12.2,
+        "Berber": 3
+      },
+      "Nile Valley": {
+        "Egyptian": 16.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 4.6,
+        "Lebanese": 7.7
+      },
+      "Kurdish": {
+        "Kurdish": 12.5
+      },
+      "Arab Gulf": {
+        "Emirati": 3.2,
+        "Iraqi": 3.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 9.8,
+        "Slovak": 12.3
+      },
+      "Slavic South": {
+        "Bosnian": 0.4,
+        "Slovenian": 0.3
+      },
+      "Slavic East": {
+        "Belarusian": 0.3,
+        "Ukrainian": 2.2
+      }
+    }
+  }
 }

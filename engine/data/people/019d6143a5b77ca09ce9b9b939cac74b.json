@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b77ca09ce9b9b939cac74b",
   "type": "character",
-  "name": "Odina Erikstad",
+  "name": "Rowan Cho",
   "aliases": [
     "Phantom",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Fullerton and Damen",
-  "description": "Arseniy Granlund-Tawiah is lean and angular, all sharp edges and visible tension. At 29, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a counterintelligence specialist out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nArseniy Granlund-Tawiah has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
+  "description": "Rowan Cho is lean and angular, all sharp edges and visible tension. At 29, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a counterintelligence specialist out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nRowan Cho has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.58,
@@ -261,7 +261,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,30 +274,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
     "The Nearfield",
+    "The Shelf",
     "Geartown",
     "Neuromorphic Pressure Cestus",
-    "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Doru Fofana-Câmpeanu",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Narrowcast",
-    "Oumarou Svec-Ranginui",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Pure Hand",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Southeast Asian with significant Indigenous American ancestry, minor Northern European and Hispanic/Latin American influences. The combination creates warm medium brown skin with subtle golden undertones characteristic of Southeast Asian heritage, refined by the angular facial structure and high cheekbones influenced by Indigenous American genetics. Northern European ancestry visible in eye color and early greying pattern.",
+    "heritage": "Predominantly South Asian (49%) with substantial East Asian (37.2%) and Southeast Asian (13.8%) ancestry. This genetic combination produces warm medium-to-deep brown skin with golden and honey undertones characteristic of South Asian heritage, refined by the sharp angular features and high prominent cheekbones from East Asian genetics. The Southeast Asian component contributes refined bone structure, subtle warmth depth, and the integrated aesthetic that bridges the other ancestries seamlessly.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with visible musculature — low body fat, wiry frame built for speed and endurance rather than strength. Shoulders slightly asymmetrical from old injury or chronic tension.",
@@ -305,8 +290,8 @@
     "hair_style": "Pulled back in a tight, functional braid — no ornamentation",
     "hair_length": "Long",
     "eye_color": "Deep brown with pale grey-blue rim and faint stress lines radiating outward — unusual dual-tone coloration suggesting genetic complexity or subtle cybernetic enhancement",
-    "skin_tone": "Warm medium brown with golden undertones — Southeast Asian base with subtle red-brown notes from Indigenous American ancestry",
-    "complexion": "Weathered for her age. High, prominent cheekbones with sharp facial planes characteristic of Southeast Asian and Indigenous American features. Extensive scarring across left cheekbone (three parallel lines, old blade work), smaller scar tissue along right temple (impact), faint burn mark along jawline. Minimal makeup, meticulous grooming despite working lifestyle.",
+    "skin_tone": "Warm deep brown with golden and honey undertones — South Asian base harmoniously blended with East and Southeast Asian heritage creating rich, unified depth across face and body",
+    "complexion": "Weathered for her age. High, prominent cheekbones with sharp, refined facial planes characteristic of the South and East Asian genetic blend. Extensive scarring across left cheekbone (three parallel lines, old blade work), smaller scar tissue along right temple (impact), faint burn mark along jawline. Minimal makeup, meticulous grooming despite working lifestyle.",
     "distinguishing_marks": [
       "Three parallel blade scars running diagonally across left cheekbone, approximately 8cm total length, white and well-healed",
       "Impact scar on right temple just above hairline, crescent-shaped, approximately 2cm, silvered tissue",
@@ -317,15 +302,34 @@
     "posture_movement": "Economical and precise — minimal wasted motion. Walks with weight on balls of feet, ready to shift direction. Sits with back to wall and clear sightlines. Hands rest within 15cm of body. Eyes track movement constantly. Overall impression: coiled spring.",
     "clothing_style": "Tier 4 utilitarian — function over aesthetics. Dark textiles (charcoal, black, deep blue) in durable synthetics and treated canvas. Reinforced cargo pants with custom thigh holster rig. Fitted tactical jacket (matte black, multiple pockets, cable management built in). Worn Geartown-manufacture climbing boots with custom grip soles. No logos or visible branding. Jewelry: only a scratched chronometer on left wrist, military-grade, probably scavenged. Overall aesthetic: prepared for immediate action, zero flash."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait of Odina Erikstad, a lean 172cm Southeast Asian-Indigenous American woman with warm golden-brown skin and high sharp cheekbones. Dark hair pulled back in tight braid showing silver at temples. Deep brown eyes with unusual pale rim, weathered angular face scarred from blade work and impact trauma. Visible chrome reflex booster nodes running down spine with luminescent tracery, gecko-grip geometric patterns visible on fingertips. Wearing matte black tactical jacket with cable management, reinforced dark cargo pants, worn climbing boots. Scratched military chronometer on left wrist. Posture tense and coiled, sitting with back to wall, hands close to body, ready for action. Minimal makeup, meticulous grooming. Gritty industrial cyberpunk setting with neon accents and cool LED lighting highlighting augmentation hardware. Low-angle cinematic lighting. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Cho, 172cm lean angular frame, warm deep brown skin with golden honey undertones blending South Asian, East Asian, and Southeast Asian heritage. Sharp high prominent cheekbones, weathered complexion. Long dark brown hair with silver threading pulled in tight functional braid. Deep brown eyes with pale grey-blue rim. Three parallel blade scars on left cheekbone, crescent scar on right temple, faint burn mark along jawline, surgical scar on left wrist. Chrome reflex booster nodes visible along spine with luminescent tracery, gecko-grip geometric patterning on fingertips. Wearing dark utilitarian tactical jacket, reinforced cargo pants with thigh holster, worn climbing boots. Coiled posture, economical movement, weight on balls of feet. GLMZ GLMZ operative. Neon-lit industrial setting, cool blue and amber lighting, ready stance against blurred urban backdrop, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 65.6,
-    "Indigenous American": 16.1,
-    "Northern European": 10.6,
-    "Hispanic/Latin American": 7.7
+    "South Asian": 49,
+    "East Asian": 37.2,
+    "Southeast Asian": 13.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 49
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 37.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 4.8
+      },
+      "Cambodian": {
+        "Khmer": 9
+      }
+    }
+  }
 }

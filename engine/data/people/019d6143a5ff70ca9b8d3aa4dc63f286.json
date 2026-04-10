@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ff70ca9b8d3aa4dc63f286",
   "type": "character",
-  "name": "Tuva Ghorbani",
+  "name": "Tumelo Konaté",
   "aliases": [
     "Kat Static",
     "the Broker"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Undertow, operates from a mobile setup cycling between three rented server closets, near Fullerton and Damen",
-  "description": "Ekaterina is slight and precise, with light brown skin and eyes that have been modded with patterned irises — hexagonal tessellations in gold and copper, visual markers of their compute affiliation that double as status symbols in The Undertow's informal tech hierarchy. Their hair is worn short on the sides and long on top, typically tucked under a cap. They dress in tech-functional layers — pockets where pockets make sense, nothing that catches on equipment racks — and carry three devices on their person at all times that they will not fully explain.\n\nThey broker illegal compute access: surplus processing cycles stripped from compromised Axiom and Zheng-Dao infrastructure, sold to people who need to run processes they cannot run through licensed channels — drug synthesis modeling, genomic fabrication, untraceable communications rendering. They are deeply embedded in the E.L.F. devotional culture of the tech underground, and their relationship with the digital spirits that inhabit their equipment is not performative. They leave regular data offerings — curated packets of interesting network traffic, annotated — and consult their primary device's E.L.F. before major transactions. They call her Vera, and they have genuine theological opinions about her nature that they will share at length if given any opening.",
+  "description": "Tumelo Konaté is slight and precise, with light brown skin and eyes that have been modded with patterned irises — hexagonal tessellations in gold and copper, visual markers of their compute affiliation that double as status symbols in The Undertow's informal tech hierarchy. Their hair is worn short on the sides and long on top, typically tucked under a cap. They dress in tech-functional layers — pockets where pockets make sense, nothing that catches on equipment racks — and carry three devices on their person at all times that they will not fully explain.\n\nThey broker illegal compute access: surplus processing cycles stripped from compromised Axiom and Zheng-Dao infrastructure, sold to people who need to run processes they cannot run through licensed channels — drug synthesis modeling, genomic fabrication, untraceable communications rendering. They are deeply embedded in the E.L.F. devotional culture of the tech underground, and their relationship with the digital spirits that inhabit their equipment is not performative. They leave regular data offerings — curated packets of interesting network traffic, annotated — and consult their primary device's E.L.F. before major transactions. They call her Vera, and they have genuine theological opinions about her nature that they will share at length if given any opening.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -192,7 +192,7 @@
     "Cockroach": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Undertow",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,29 +255,11 @@
     "Nesting Doll",
     "Déjà Vu",
     "Gold",
-    "Vera Castellan",
-    "Anatoliy Faye-Nkrumah",
-    "Aybek Alvarez-Okonkwo",
-    "Bioacoustic Communication Membrane",
-    "Emeka Johansson-Orozco",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Collective",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Question",
-    "Timur Osei-Bjelke",
-    "Tshiamo Vukić-Arellano",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Vera Castellan"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Cosmopolitan mix: Middle Eastern (Persian/Anatolian core at 28%), Northern European (Scandinavian/Baltic at 23%), Hispanic/Latin American (17%), Sub-Saharan African (13%), South Asian (12%), with East Asian undertones (7%). Features a striking blend of Mediterranean angularity, West African warmth, and subtle South Asian definition.",
+    "heritage": "Complex global diaspora blend: Sub-Saharan African (40.2%) forms the foundational warmth and bone structure, Indigenous American (20.3%) contributes subtle facial geometry and skin undertones, Eastern European (19.0%) adds definition and cooler midtones, Southeast Asian (13.0%) refines eye shape and cheekbone prominence, Hispanic/Latin American (7.5%) bridges warmth and undertone complexity. Result: rich deep-to-medium brown skin with warm amber and subtle reddish undertones, high defined cheekbones with both African generosity and Southeast Asian refinement, eye shape showing Southeast Asian influence nested within African eye proportions, jaw structure carrying East European angularity softened by Sub-Saharan warmth.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and wiry, all efficiency — minimal excess mass, the physiology of someone who lives in server closets and transit cars. Posture suggests constant low-level tension, shoulders slightly forward.",
@@ -285,8 +267,8 @@
     "hair_style": "Undercut; sides clipped to 8mm, top grown long and typically swept back or tucked under a black or steel-gray utility cap",
     "hair_length": "Mixed (short/medium)",
     "eye_color": "Augmented: hexagonal tessellation pattern in gold and copper over hazel base. Irises refract light distinctly; pupils remain functional but nested within the geometric overlay.",
-    "skin_tone": "Warm medium tan with olive and amber undertones — a complex blend of Persian warmth, Northern European fairness, and Sub-Saharan richness, creating a sun-touched caramel complexion that shifts in different light",
-    "complexion": "Clean, minimal grooming beyond function — no visible scars or blemishes on face. High cheekbones with subtle definition from diverse heritage; jaw structure carries both Mediterranean angularity and African warmth. Slight tension in the jaw. Eyes carry a quality of intense focus, almost meditative when not actively engaged.",
+    "skin_tone": "Deep warm brown with rich amber and subtle reddish undertones — the complex result of significant Sub-Saharan African heritage (40.2%) blended with Indigenous American warmth, Eastern European cool definition, and Southeast Asian refinement. Creates a luminous, multi-dimensional complexion that shifts from deep caramel to warm bronze depending on light and angle.",
+    "complexion": "Clean, minimal grooming beyond function — no visible scars or blemishes on face. High, prominent cheekbones with refined definition reflecting African structure and Southeast Asian prominence; jaw carries both Eastern European angularity and African warmth, creating balanced facial geometry. Slight tension in the jaw. Eyes carry a quality of intense focus, almost meditative when not actively engaged.",
     "distinguishing_marks": [
       "Hexagonal tessellation pattern across both irises in gold and copper — visible at arm's length, unmistakable at close range",
       "Thin white scar (2cm) on left inner wrist, old and deliberate-looking, likely ceremonial or significant to E.L.F. practice"
@@ -295,17 +277,57 @@
     "posture_movement": "Economical. Moves between transit seats and server racks with practiced efficiency — no wasted motion, no fidgeting beyond occasional finger-flexing near devices. When stationary, favors positions that allow monitoring of three vectors at once. Hands are almost always in use: adjusting equipment, checking devices, or resting near the three personal devices they carry.",
     "clothing_style": "Tier 3-4 functional tech: reinforced black utility pants with redundant pockets and cable loops, fitted charcoal or matte-black layering tops in technical fabrics (breathable, anti-static), a modular vest or jacket with tool pockets and magnetic clips. Feet in dark running shoes with reinforced soles. Worn cap (logo faded, deliberately nondescript). Everything is dark, fitted, and designed to not catch on rack edges or server equipment. No jewelry beyond a small data-offering vessel worn on a thin chain (brass, always kept near the collar)."
   },
-  "image_prompt": "Tuva Ghorbani, cyberpunk 2226, portrait of a wiry 168cm hacker with warm caramel-tan skin blending Persian, Northern European, Latin, and African heritage. Medium-length deep brown hair with reddish undertone, undercut style, worn under faded utility cap. Striking augmented eyes with hexagonal gold and copper tessellation pattern over hazel base. High defined cheekbones, focused expression, slight jaw tension. Wearing fitted black technical fabrics, charcoal layering top, reinforced utility pants with cable loops, dark reinforced running shoes. Small brass data-offering vessel on thin chain at collar. Posture economical and alert, hands near personal devices. Sitting in dimly-lit server room or transit car interior, cool neon accent lighting catching the geometric iris implants. Cinematic cyberpunk atmosphere, intense focus, neural latency aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Tumelo Konaté, GLMZ, deep warm brown skin with amber and reddish undertones reflecting Sub-Saharan African and Indigenous American heritage blended with Eastern European and Southeast Asian refinement. High defined cheekbones, balanced angular jaw. Striking augmented eyes with hexagonal gold and copper tessellation pattern over hazel irises, intense focused gaze. Deep brown hair with reddish undertone, undercut style with long swept-back top partially hidden under faded black utility cap. Wiry 168cm frame in fitted black technical clothing: reinforced utility pants with cable loops, matte-black breathable layering top, modular tool-pocket vest. Dark running shoes with reinforced soles. Small brass data-offering vessel on thin chain near collar. Thin white ceremonial scar on left inner wrist. Economical posture, seated in server rack environment or transit pod, hands near personal devices, neo-noir tech-noir aesthetic, cool blue and amber server lighting, intimate moment of focus and meditation, gritty urban underground setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 28.1,
-    "Northern European": 22.7,
-    "Hispanic/Latin American": 17.3,
-    "Sub-Saharan African": 12.9,
-    "South Asian": 12.4,
-    "East Asian": 6.6
+    "Sub-Saharan African": 40.2,
+    "Indigenous American": 20.3,
+    "Eastern European": 19,
+    "Southeast Asian": 13,
+    "Hispanic/Latin American": 7.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 40.2
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 10.9,
+        "Mapuche": 9.4
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 1.4,
+        "Ukrainian": 0.2
+      },
+      "Magyar-Romanian": {
+        "Romanian": 9.1
+      },
+      "Slavic South": {
+        "Croatian": 8.3
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 0.9
+      },
+      "Thai": {
+        "Thai": 7.7
+      },
+      "Cambodian": {
+        "Khmer": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.5
+      }
+    }
+  }
 }

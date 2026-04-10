@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6097f41a98b8cff89d11bf5",
   "type": "character",
-  "name": "Atlas Ionescu",
+  "name": "Atlas Tetteh",
   "aliases": [
     "Auntie Phemie",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 79,
   "status": "active",
   "location": "Washburn Commons, Sublevel 3 — a converted water-reclamation office she calls 'the stacks', near sub-level access near LaSalle and Congress",
-  "description": "Euphemia is a small, dense woman whose spine has curved slightly forward from decades hunched over data terminals, giving her a permanent posture of concentration, as though she is always about to read something important. Her skin is a deep warm brown crossed with the faint silver tracery of old dermal-display ports that were never fully removed — Tessera's ghost still written on her body. Her hair is cropped close and entirely white, and she wears oversized yellow-tinted spectacle frames that magnify her eyes to an owlish size. On her left wrist she keeps a manual ink stamp shaped like a tree, which she presses onto anything she considers worth remembering.\n\nPhemie speaks slowly, with the deliberateness of someone who has spent seventy years deciding which words are worth keeping. She does not suffer careless language or sloppy thinking, but she is genuinely warm to anyone who shows curiosity. She has memorized the names, birth-years, and approximate fates of over four thousand Washburn Commons residents across six decades, and can recite lineages like folk songs. Her secret terror is that the neighborhood will forget itself — that without her, the community's history will dissolve into corporate data-ghosts and corporate-approved revisions.",
+  "description": "Atlas Tetteh is a small, dense woman whose spine has curved slightly forward from decades hunched over data terminals, giving her a permanent posture of concentration, as though she is always about to read something important. Her skin is a deep warm brown crossed with the faint silver tracery of old dermal-display ports that were never fully removed — Tessera's ghost still written on her body. Her hair is cropped close and entirely white, and she wears oversized yellow-tinted spectacle frames that magnify her eyes to an owlish size. On her left wrist she keeps a manual ink stamp shaped like a tree, which she presses onto anything she considers worth remembering.\n\nPhemie speaks slowly, with the deliberateness of someone who has spent seventy years deciding which words are worth keeping. She does not suffer careless language or sloppy thinking, but she is genuinely warm to anyone who shows curiosity. She has memorized the names, birth-years, and approximate fates of over four thousand Washburn Commons residents across six decades, and can recite lineages like folk songs. Her secret terror is that the neighborhood will forget itself — that without her, the community's history will dissolve into corporate data-ghosts and corporate-approved revisions.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -179,7 +179,7 @@
     "Lone Wolf": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Washburn Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,25 +246,15 @@
     "The Amber Stacks",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Tessera Corponation",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
-    "ARCHIVE",
-    "Gravimetric Collapse Charge GCC-9",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Silver",
-    "Adaeze Soumaré-Papadimitriou",
-    "Arcturus Defense Solutions Albedo Negation Shell",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Last Word",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "The Peninsula",
-    "The Shelf Commons",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Warm Wire, Small Hand"
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Atlas",
+    "Gravimetric Collapse Charge GCC-9",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European / Central Asian / Northern European (Polish-Russian / Kazakh-Kyrgyz / Scandinavian blend). The genetic mix produces a distinctive phenotype: Eastern European bone structure with Central Asian facial proportions and Northern European fairness muted by the darker ancestry. Her ancestry explains her pure white hair as premature or naturally occurring silvering common in Eastern European genetics.",
+    "heritage": "Sub-Saharan African dominant (50.4%) with significant Hispanic/Latin American (19.5%), Southeast Asian (17.2%), Pacific Islander (9.0%), and East Asian (3.9%) ancestry. The genetic mix produces a rich, complex phenotype: deep warm brown skin with golden undertones from the African and Latin American heritage, refined by Southeast Asian and Pacific Islander bone structure and facial features. Her pure white hair creates striking contrast against her darker complexion—a natural occurrence sometimes seen across African diaspora genetics, enhanced by decades of terminal work and aging.",
     "height_cm": 152,
     "weight_kg": 48,
     "build": "Small and dense, almost birdlike; decades of terminal work have created a slight forward curve to her spine, giving her a perpetual posture of attentive reading. Wiry rather than frail, with visible corded forearms.",
@@ -272,10 +262,10 @@
     "hair_style": "Cropped close to the scalp in a utilitarian cut, no styling",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber luminescence in low light (ocular implant glow)",
-    "skin_tone": "Medium-warm olive with slight peachy undertone; the result of Eastern European base with Central Asian and Northern European admixture creating a complexion that catches light subtly differently than pure regional ancestry would suggest",
-    "complexion": "Lined face with pronounced smile creases and crow's feet; skin shows age with dignity and no attempt at rejuvenation. Moderate cheekbone prominence reflecting Central Asian ancestry mixed with Eastern European facial structure. Sharp, attentive expression. Meticulously groomed despite her age and tier status.",
+    "skin_tone": "Deep warm brown with golden undertones; the result of strong Sub-Saharan African ancestry enriched by Hispanic/Latin American warmth and Southeast Asian refinement, creating a complexion that catches light with natural depth and radiance",
+    "complexion": "Lined face with pronounced smile creases and crow's feet; skin shows age with dignity and no attempt at rejuvenation. High, defined cheekbone prominence reflecting the blended African, Southeast Asian, and Pacific Islander facial structure. Sharp, attentive expression with a refined nose bridge. Meticulously groomed despite her age and tier status.",
     "distinguishing_marks": [
-      "Faint silver tracery of dermal-display ports running along her left forearm in branching patterns, no longer functional but visible beneath the skin like circuit scars",
+      "Faint silver tracery of dermal-display ports running along her left forearm in branching patterns, no longer functional but visible beneath the dark skin like circuit scars",
       "Fine network of age lines radiating from the corners of her eyes",
       "Small permanent calluses on the middle and ring fingers of her right hand from decades of handwriting"
     ],
@@ -283,14 +273,62 @@
     "posture_movement": "Habitually bent slightly forward, shoulders rounded inward as though perpetually leaning toward text. Movements are slow and deliberate, economical; no wasted motion. When listening, her entire body goes still and her eyes focus with unsettling intensity. She walks with careful, measured steps.",
     "clothing_style": "Tier 4 practical: well-maintained but clearly secondhand clothing in muted earth tones and grays. Oversized cardigans layered over simple cotton shirts. Comfortable, worn trousers with deep pockets always filled with notebooks and pens. Worn canvas shoes with reinforced soles. A faded canvas satchel, handmade, covered in small hand-sewn patches commemorating residents and dates. On her left wrist: a manual ink stamp carved in the shape of a tree, which she wears on a cord of braided thread."
   },
-  "image_prompt": "Atlas Ionescu, a 152cm petite elderly woman with pure white cropped hair and olive-medium skin tone reflecting Eastern European-Central Asian-Northern European ancestry. She wears yellow-tinted spectacles that magnify owlish eyes with subtle amber ocular implant glow. Her lined face carries deep crow's feet and smile creases, sharp and attentive expression. Bent posture from decades of terminal work, corded forearms visible with faint silver circuit scars from inactive dermal ports. Dressed in muted earth-tone oversized cardigan over cotton shirt, worn trousers, canvas shoes. Faded handmade satchel with sewn patches. Braided thread cord with carved tree-stamp stamp on left wrist. Slow, deliberate movement. Cyberpunk 2226 Great Lakes Metropolitan zone, dim indoor lighting catching her white hair, focused intensity in her gaze, worn Tier 4 aesthetic, hand-drawn patches showing community care. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Tetteh, a 152cm petite elderly woman with deep warm brown skin and cropped pure white hair, seated in a dim neo-noir apartment c.2226. Her mixed Sub-Saharan African, Hispanic, Southeast Asian, and Pacific Islander heritage visible in her refined cheekbones and warm golden skin tone. Wearing oversized gray cardigan over faded cotton shirt, yellow-tinted spectacles magnifying her eyes and revealing faint amber ocular implant glow. Faint silver circuit-scar tracery visible on left forearm from inactive dermal ports. Hunched forward with intense, focused expression, weathered hands holding a worn notebook, surrounded by scattered handwritten notes and patches-covered canvas satchel. Candlelit warm overhead lighting casting shadows across her lined, dignified face. Neo-noir nomadic scholar aesthetic, Terminal worker, low-tier reality. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 47.8,
-    "Central Asian": 34.3,
-    "Northern European": 17.9
+    "Sub-Saharan African": 50.4,
+    "Hispanic/Latin American": 19.5,
+    "Southeast Asian": 17.2,
+    "Pacific Islander": 9,
+    "East Asian": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 17.5,
+        "Congolese": 10.5
+      },
+      "East African": {
+        "Kenyan": 12.1
+      },
+      "Southern African": {
+        "Zimbabwean": 10.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 8.6,
+        "Haitian": 10.9
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 9.8
+      },
+      "Cambodian": {
+        "Khmer": 4.2
+      },
+      "Indonesian": {
+        "Sundanese": 1.7,
+        "Javanese": 1.5
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 1.9,
+        "Palauan": 0.8
+      },
+      "Polynesian": {
+        "Tongan": 6.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.9
+      }
+    }
+  }
 }

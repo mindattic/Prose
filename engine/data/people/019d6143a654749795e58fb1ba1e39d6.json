@@ -1,7 +1,7 @@
 {
   "id": "019d6143a654749795e58fb1ba1e39d6",
   "type": "character",
-  "name": "Emiliano Adeyemi",
+  "name": "Efua Čabarkapa",
   "aliases": [
     "Greta Null",
     "The Grandmother of the Loft"
@@ -13,7 +13,7 @@
   "age": 68,
   "status": "active",
   "location": "The Garret, a small apartment above a tea house in Edgewater Prism, near Lincoln and Belmont",
-  "description": "Margarethe is a small, upright woman with Namibian-Peruvian heritage evident in her high forehead, deep brown skin, and strong jaw — a face that was striking at thirty and has become architectural at sixty-eight. She wears her white hair pulled back severely and dresses in layers of dark fabric regardless of the season, and the only augmentation visible on her is the faint silver tracery of an old neural text-interface along her left temple, a model so outdated it hasn't been manufactured in thirty years. She moves slowly and deliberately and has the particular stillness of someone who learned long ago that most things do not require urgent response.\n\nShe has published eleven collections of poetry and three novels over forty years, all of them in small runs through independent presses, all of them still in print. She is considered by the underground literary community of GLMZ to be among the most significant living writers in the city — a distinction that has brought her no money and considerable quiet satisfaction. She teaches informal writing workshops at The Loft twice weekly, charges nothing, accepts voluntary contributions of food and tea, and is ferociously exacting with her students. She has strong opinions about nearly everything and shares them precisely once per conversation, then considers the matter closed.",
+  "description": "Efua Čabarkapa is a small, upright woman with Namibian-Peruvian heritage evident in her high forehead, deep brown skin, and strong jaw — a face that was striking at thirty and has become architectural at sixty-eight. She wears her white hair pulled back severely and dresses in layers of dark fabric regardless of the season, and the only augmentation visible on her is the faint silver tracery of an old neural text-interface along her left temple, a model so outdated it hasn't been manufactured in thirty years. She moves slowly and deliberately and has the particular stillness of someone who learned long ago that most things do not require urgent response.\n\nShe has published eleven collections of poetry and three novels over forty years, all of them in small runs through independent presses, all of them still in print. She is considered by the underground literary community of GLMZ to be among the most significant living writers in the city — a distinction that has brought her no money and considerable quiet satisfaction. She teaches informal writing workshops at The Loft twice weekly, charges nothing, accepts voluntary contributions of food and tea, and is ferociously exacting with her students. She has strong opinions about nearly everything and shares them precisely once per conversation, then considers the matter closed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -169,7 +169,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,30 +234,18 @@
     "The Third Rail",
     "Edgewater Prism",
     "The Witnesses of the Last Upload",
-    "GLMZ",
     "The Garret",
     "The Heritage Vault",
     "The Loft",
     "Nesting Doll",
     "Silver",
+    "Neural Palate",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Breck Tannen",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Idris Forsberg-Quaye",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Morita-Antwi",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tobechukwu Papadimitriou-Vásárhelyi",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Sub-Saharan African (45.1%), Hispanic/Latin American (31.1%), Northern European (23.8%) — a striking triracial blend evident in warm-deep skin tone, facial architecture combining broad cheekbones with fine-boned structure, and the subtle undertones that mark complex ancestry",
+    "heritage": "Eastern European (54.9%), Sub-Saharan African (31.4%), Hispanic/Latin American (13.7%) — a striking polyphonic blend evident in deep warm-brown skin with golden and bronze undertones, facial architecture combining strong Eastern European bone structure with broader, more prominent cheekbones reflecting Sub-Saharan African ancestry, warm-toned complexion enriched by Hispanic/Latin American genetic contribution creating a luminous quality that shifts across warm and deep spectrums",
     "height_cm": 157,
     "weight_kg": 52,
     "build": "Small-framed and upright with the spare musculature of someone who moves deliberately and economically; no excess weight, posture maintained through discipline rather than youth",
@@ -265,23 +253,50 @@
     "hair_style": "Pulled back severely, likely secured with a simple clasp or tie",
     "hair_length": "Long",
     "eye_color": "Deep brown",
-    "skin_tone": "Rich warm-brown with golden undertones from the blended ancestry — deeper from the substantial Sub-Saharan African heritage, warmed by Hispanic/Latin American and Northern European admixture creating a distinctive luminous quality",
-    "complexion": "Architectural face reflecting triracial heritage: high, prominent forehead; strong angular jaw; pronounced cheekbones with subtle breadth suggesting African ancestry; refined bridge and eye placement reflecting European influence; skin shows age honestly — fine lines mapping decades of thought and expression; minimal cosmetic maintenance; dignified rather than polished",
+    "skin_tone": "Deep warm-brown with golden and bronze undertones — the substantial Eastern European and Sub-Saharan African heritage creates a rich, saturated base warmed and deepened by Hispanic/Latin American admixture, producing a distinctive luminous quality that catches light with warm reflections",
+    "complexion": "Architectural face reflecting polyphonic ancestry: high, prominent forehead; strong angular jaw characteristic of Eastern European lineage; broad, defined cheekbones with width and projection reflecting Sub-Saharan African heritage; refined eye placement; skin shows age honestly — fine lines mapping decades of thought and expression; minimal cosmetic maintenance; dignified rather than polished",
+    "visible_augmentations": "Only the legacy neural text-interface on left temple; no chrome, no LEDs, no subdermal armor — deliberately minimal modification",
     "distinguishing_marks": [
       "Faint silver tracery of neural text-interface running along left temple in an outdated geometric pattern, approximately 8 centimeters in length, barely visible unless light catches it directly"
     ],
-    "visible_augmentations": "Only the legacy neural text-interface on left temple; no chrome, no LEDs, no subdermal armor — deliberately minimal modification",
     "posture_movement": "Moves slowly and deliberately with the economy of motion belonging to someone past sixty who has learned that urgency is rarely justified; carries herself with unshakeable verticality; her stillness is intentional and grounded, suggesting patience rather than stiffness",
     "clothing_style": "Layers of dark fabric regardless of season — charcoal, deep gray, black; likely natural fibers (cotton, linen, wool) worn for texture and durability rather than status; structured but not fashionable; Tier 3-4 practicality with an intellectual's indifference to trend; age-appropriate without concession to diminishment; small silver jewelry, if any"
   },
-  "image_prompt": "Portrait of Emiliano Adeyemi, a dignified woman in her sixties with striking triracial features: rich warm-brown skin with golden undertones, high architectural cheekbones, angular jaw, deep-set brown eyes. White hair pulled back severely. Small-framed, 157cm tall, impeccable posture. Wearing layered dark charcoal and black natural-fiber clothing. Faint silver neural text-interface tracery visible on left temple. Minimalist aesthetic, no chrome augmentation. Set in a cyberpunk 2226 interior — soft diffuse lighting catching the neural interface, contemplative expression. GLMZ architectural background, cool tones, intellectual atmosphere. Dignified, thoughtful, deliberately minimal. --ar 2:3 --v 6",
+  "image_prompt": "Efua Čabarkapa, 157cm petite elderly woman with deep warm-brown skin with golden bronze undertones, white hair pulled back severely, high forehead and strong angular jaw with broad prominent cheekbones reflecting Eastern European and Sub-Saharan African heritage, deep brown eyes, fine lines mapping decades, faint silver neural interface tracery on left temple, dignified expression. Wearing layered dark charcoal and black natural fiber clothing, small silver jewelry. Standing with intentional stillness and unshakeable verticality, slow deliberate movement. GLMZ Great Lakes Metropolitan Zone, cool-toned atmospheric lighting with warm sidelighting catching skin undertones and temple neural tracery, intellectual atmosphere, minimal augmentation aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 45.1,
-    "Hispanic/Latin American": 31.1,
-    "Northern European": 23.8
+    "Eastern European": 54.9,
+    "Sub-Saharan African": 31.4,
+    "Hispanic/Latin American": 13.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 34.3,
+        "Romanian": 20.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 17.5,
+        "Zimbabwean": 4.9
+      },
+      "Central African": {
+        "Congolese": 5.6,
+        "Angolan": 3.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 5.2
+      },
+      "South American": {
+        "Peruvian": 1.9,
+        "Colombian": 6.6
+      }
+    }
+  }
 }

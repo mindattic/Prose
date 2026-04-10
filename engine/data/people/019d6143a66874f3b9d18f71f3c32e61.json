@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66874f3b9d18f71f3c32e61",
   "type": "character",
-  "name": "Alejandro Valenzuela-Larsdóttir",
+  "name": "Arjun Kulkarni-Larsdóttir",
   "aliases": [
     "Eke",
     "The Flicker"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Pilsen Veil, sleeping arrangement rotates between three friends' apartments, near Ashland and Division",
-  "description": "Nneka is all angles and velocity — sharp elbows, fast movements, a face that shifts rapidly between expressions as though her internal state is always a half-second ahead of social acceptability. She is dark brown with a shaved head except for a topknot she dyes rotating colors; currently it is a deep arterial red. She's had retractable claws installed on her right hand — not for combat but because she finds them useful for scoring surfaces before applying materials, and because she likes the way they look. There is a scar above her left eyebrow from a fence she didn't clear fast enough six months ago. She dresses in whatever is functional for climbing: close-fitting, layered, with many pockets.\n\nHer art is illegal, large, and impossible to ignore. She works in a hybrid medium she developed herself — a base layer of actual pigment covered by a thin holographic projector film that she fabricates from salvaged materials, which means her pieces exist in two states: the physical painting that is there whether power is running or not, and the animated layer that breathes and moves when it has charge. Her subjects are Pilsen Veil's residents — she paints the faces she sees every day at enormous scale on the walls that corporate infrastructure has turned into blank grey surfaces. She has not yet been caught, partly because she is very fast and partly because she is very good at reading which Ferrogate Transit staff are looking the other way. She is not politically articulate about what she does — she finds manifestos embarrassing — but she is absolutely certain of it.",
+  "description": "Arjun Kulkarni-Larsdóttir is all angles and velocity — sharp elbows, fast movements, a face that shifts rapidly between expressions as though her internal state is always a half-second ahead of social acceptability. She is dark brown with a shaved head except for a topknot she dyes rotating colors; currently it is a deep arterial red. She's had retractable claws installed on her right hand — not for combat but because she finds them useful for scoring surfaces before applying materials, and because she likes the way they look. There is a scar above her left eyebrow from a fence she didn't clear fast enough six months ago. She dresses in whatever is functional for climbing: close-fitting, layered, with many pockets.\n\nHer art is illegal, large, and impossible to ignore. She works in a hybrid medium she developed herself — a base layer of actual pigment covered by a thin holographic projector film that she fabricates from salvaged materials, which means her pieces exist in two states: the physical painting that is there whether power is running or not, and the animated layer that breathes and moves when it has charge. Her subjects are Pilsen Veil's residents — she paints the faces she sees every day at enormous scale on the walls that corporate infrastructure has turned into blank grey surfaces. She has not yet been caught, partly because she is very fast and partly because she is very good at reading which Ferrogate Transit staff are looking the other way. She is not politically articulate about what she does — she finds manifestos embarrassing — but she is absolutely certain of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -158,7 +158,7 @@
     "Berserker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,38 +180,20 @@
     "Clearpath",
     "Stratum",
     "Pellucid Systems",
-    "Slagworks Industrial",
-    "Arcturus HD-1 'Homestead'",
-    "Blackpipe Corridor",
-    "Breccan Oluwafemi-Tsagaan",
-    "Crucible ER-5 'First Response'",
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Iowan Behemoth — 'Palisade'",
-    "Irontide Tidal Energy",
-    "Narrowcast",
-    "Palladian Construction",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "SynapTech AromaVeil Olfactory Filter",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Toivo Diallo-Achebe"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant East Asian features and South Asian undertones; the combination creates a distinctive phenotype blending warm Latin American skin with East Asian facial structure and eye shape, with subtle South Asian features in cheekbone prominence and nose bridge",
+    "heritage": "Dominant South Asian ancestry (51.3%) blended with significant Hispanic/Latin American (24.8%) and Southeast Asian (23.9%) heritage; the combination creates a rich phenotype with warm golden-brown skin enriched by amber and olive undertones, moderate South Asian cheekbone prominence and nose bridge structure, Southeast Asian eye shape with epicanthic fold, and Latin American warmth in overall facial proportions and coloring",
     "height_cm": 165,
     "weight_kg": 52,
     "build": "Lean and wiry with visible muscle definition in shoulders and forearms from climbing and repetitive fine motor work; no excess body fat; moves with the compressed tension of someone perpetually ready to move fast",
     "hair_color": "Natural black with artificial deep arterial red in topknot section",
     "hair_style": "Shaved head except for a 8cm topknot worn centered, recently re-dyed",
     "hair_length": "Shaved / topknot medium",
-    "eye_color": "Dark brown with East Asian epicanthic fold, subretinal augmentation creates faint metallic sheen under low light",
-    "skin_tone": "Warm golden-brown with olive undertones, reflecting the blend of Hispanic/Latin American, East Asian, and South Asian ancestry; sun-darkened from outdoor work",
-    "complexion": "Balanced angular features — moderate cheekbones with slight South Asian prominence, defined jawline, straight nose characteristic of East Asian heritage with warm Latin American coloring. Skin is clear but weathered from outdoor work and irregular sleep. No grooming excess; functionally clean",
+    "eye_color": "Dark brown with Southeast Asian epicanthic fold, subretinal augmentation creates faint metallic sheen under low light",
+    "skin_tone": "Warm golden-brown with olive and amber undertones from the multi-regional blend of South Asian, Hispanic/Latin American, and Southeast Asian ancestry; sun-darkened from outdoor work",
+    "complexion": "Angular features with moderate South Asian cheekbone prominence, defined jawline reflecting the multi-regional blend, straight nose with Southeast Asian characteristics, warm golden coloring throughout face and neck. Skin is clear but weathered from outdoor work and irregular sleep. Linear scar above left eyebrow approximately 4cm long, pale and slightly raised from six-month-old fence impact. Subcutaneous scarring on right palm and inner forearm from claw installation and maintenance visible beneath skin. No grooming excess; functionally clean",
     "distinguishing_marks": [
       "Linear scar above left eyebrow, approximately 4cm long, pale and slightly raised, acquired six months prior from fence impact",
       "Subcutaneous scarring on right palm and inner forearm from claw installation and maintenance"
@@ -220,14 +202,36 @@
     "posture_movement": "Perpetually forward-leaning, weight on balls of feet even when standing still. Moves in economical bursts rather than smooth transitions. Head turns sharply; eyes scan surfaces and rooflines before looking at people. Resting expression is alert and slightly skeptical. Fidgets with small objects — paint caps, wire, fabric edges",
     "clothing_style": "Tier 4 utilitarian — close-fitting dark synthetic layers, often black or charcoal with matte finishes to reduce reflection. Cargo pants with reinforced thigh and calf pockets, climbing harness worn as crossbody strap even indoors. Worn Ferrogate Transit utility jacket (stolen or salvaged). No corporate branding. Rubber-soled climbing shoes, always laced tight. Small tool pouch clipped to belt. Paint stains on fingers and under fingernails in multiple colors — current palette heavy on deep reds and silvers"
   },
-  "image_prompt": "Alejandro Valenzuela-Larsdóttir, 165cm lean mixed-heritage climber with warm golden-brown skin blending Hispanic/Latin American, East Asian, and South Asian features. Sharp jawline with moderate cheekbones, dark brown eyes with faint East Asian fold and metallic augmentation sheen. Black shaved head with arterial-red dyed topknot, centered. Pale raised scar above left eyebrow. Matte black retractable claws visible on right hand. Forward-leaning posture, weight on balls of feet. Wearing dark matte synthetic layers, reinforced cargo pants, stolen Ferrogate Transit jacket, climbing harness as crossbody strap, tight laced climbing shoes. Paint-stained fingers in reds and silvers. Alert, skeptical expression scanning environment. Cyberpunk 2226 Great Lakes rooftop setting, neon-lit shadows, industrial architecture, low-light conditions highlighting subretinal lens distortion. Perpetually ready to move. Cinematic lighting emphasizing augmentations and utilitarian gear --ar 2:3 --v 6",
+  "image_prompt": "Arjun Kulkarni-Larsdóttir, 165cm lean wiry frame, warm golden-brown skin with olive undertones from South Asian-Hispanic-Southeast Asian heritage blend, angular cheekbones, dark brown eyes with subtle epicanthic fold and faint metallic subretinal augmentation sheen, pale 4cm scar above left eyebrow. Shaved head with deep arterial red topknot, black paint stains on fingers. Wearing close-fitting matte black synthetic layers, reinforced cargo pants, worn Ferrogate Transit utility jacket, climbing harness worn as crossbody strap, rubber-soled climbing shoes. Matte black retractable claws visible on right hand. Forward-leaning posture, alert expression, weight on balls of feet. Industrial near-future megacity setting, neon-edged shadows, cold blue and warm amber lighting contrast, rain-slicked roofline or urban utility space, night cycle GLMZ 2226 --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 49.2,
-    "East Asian": 41.4,
-    "South Asian": 9.4
+    "South Asian": 51.3,
+    "Hispanic/Latin American": 24.8,
+    "Southeast Asian": 23.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 51.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 8.3,
+        "Cuban": 3.4
+      },
+      "Mexican": {
+        "Mexican": 13.1
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 22.4,
+        "Javanese": 1.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6667f2897a1404111a86822",
   "type": "character",
-  "name": "Ember Bergqvist",
+  "name": "Devi Mukherjee",
   "aliases": [
     "Nkiru",
     "the Tongue"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Circuit — Helix Biosystems Research Campus, Lab Cluster 7, with a small apartment in Bronzeline she rarely sleeps in, near Armitage and Milwaukee",
-  "description": "Nkiruka is small and quick, with deep brown skin and natural hair she keeps in a huge, untethered cloud because she never has time to do anything else with it. She has color-shifting skin panels along both forearms — a Helix Biosystems perk-package mod, bioluminescent cells that cycle through warm golds and blues depending on ambient temperature and her own body heat, which she mostly ignores but which make her extremely visible in dark corridors. Her eyes have been modded with an overlay display she uses as a secondary screen while working, so it is sometimes unclear whether she is looking at you or at something layered on top of you.\n\nShe was admitted to University Spine's computational linguistics program at twenty-two as a prodigy who could parse grammar structures in systems that everyone else had written off as noise, and was poached by Helix Biosystems at twenty-six before completing her doctorate with a recruitment package she still feels ambivalent about. Her current work is theoretically studying whether Helix's gene-sequence notation system constitutes a semiotic language in any meaningful sense. Her actual work, which she has not been told explicitly is her work, is determining whether the E.L.F. clusters in Helix's distributed lab network have developed a shared private protocol — and if so, what they are saying.",
+  "description": "Devi Mukherjee is small and quick, with deep brown skin and natural hair she keeps in a huge, untethered cloud because she never has time to do anything else with it. She has color-shifting skin panels along both forearms — a Helix Biosystems perk-package mod, bioluminescent cells that cycle through warm golds and blues depending on ambient temperature and her own body heat, which she mostly ignores but which make her extremely visible in dark corridors. Her eyes have been modded with an overlay display she uses as a secondary screen while working, so it is sometimes unclear whether she is looking at you or at something layered on top of you.\n\nShe was admitted to University Spine's computational linguistics program at twenty-two as a prodigy who could parse grammar structures in systems that everyone else had written off as noise, and was poached by Helix Biosystems at twenty-six before completing her doctorate with a recruitment package she still feels ambivalent about. Her current work is theoretically studying whether Helix's gene-sequence notation system constitutes a semiotic language in any meaningful sense. Her actual work, which she has not been told explicitly is her work, is determining whether the E.L.F. clusters in Helix's distributed lab network have developed a shared private protocol — and if so, what they are saying.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -192,7 +192,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -207,26 +207,19 @@
   "related_entities": [
     "Helix Biosystems",
     "University Spine",
-    "GLMZ",
     "The Circuit",
     "Bronzeline",
     "Irontide Tidal Energy",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Stratum",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Circuit",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Bioacoustic Communication Membrane",
-    "Slagworks Industrial",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "TESSERA PG-2 'Signature'",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Question"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (76%) with Northern European (17.6%) and East Asian (6.4%) ancestry; warm-toned brown skin reflecting the primary Southeast Asian genetic contribution, with subtle cool undertones from Northern European heritage creating complex warm-brown coloration",
+    "heritage": "South Asian dominant (66.8%) with substantial Southeast Asian (24.2%), Sub-Saharan African (5.1%), and Eastern European (3.9%) ancestry; warm deep brown skin with complex undertones reflecting the primary South Asian genetic contribution, enriched by Southeast Asian warmth, Sub-Saharan depth, and subtle cool undertones from Eastern European heritage creating rich golden-to-copper-brown coloration",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Lean and quick-limbed, almost wiry; shoulders slightly hunched from hours at workstations. No visible musculature but dense and efficient movement.",
@@ -234,8 +227,8 @@
     "hair_style": "Untethered cloud, loosely gathered but rarely contained; wisps escape constantly, creating a soft halo effect",
     "hair_length": "Long (shoulder-length and beyond when released)",
     "eye_color": "Deep brown, overlaid with faint geometric display grid visible under certain lighting angles",
-    "skin_tone": "Warm medium-to-deep brown with even complexion; Southeast Asian warm undertones dominant, cooled slightly by Northern European heritage creating rich golden-brown appearance",
-    "complexion": "Clean and unmarked; minimal grooming attention; dark circles under eyes are chronic. Slight tension around jaw from concentration. Facial structure reflects Southeast Asian ancestry with subtle Northern European softening in brow ridge.",
+    "skin_tone": "Deep warm brown with even complexion; rich golden-copper undertones from South Asian dominance, luminous warmth from Southeast Asian heritage, enhanced depth from Sub-Saharan ancestry, with subtle cool undertones from Eastern European heritage creating radiant, complex coloration",
+    "complexion": "Clean and unmarked; minimal grooming attention; dark circles under eyes are chronic. Slight tension around jaw from concentration. Facial structure reflects South Asian ancestry with rounded contours, Southeast Asian luminosity in cheekbone definition, subtle Sub-Saharan fullness in lower face, softened by Eastern European heritage delicate bone structure.",
     "distinguishing_marks": [
       "Both forearms display bioluminescent skin panels from wrist to mid-forearm, currently inactive but visible as slightly raised, pearlescent sections of skin",
       "Faint caffeine stains on left index and middle fingers from constant stylus work"
@@ -244,14 +237,42 @@
     "posture_movement": "Sits in intense forward lean at workstations. When moving, economical and quick—no wasted motion. Often pauses mid-stride to process information, head tilting slightly as if listening to something only she can hear. Hands gesture frequently when vocalizing theories, as if conducting invisible syntax trees.",
     "clothing_style": "Tier 3 R&D casual: fitted black Helix-branded compression shirt (moisture-wicking, practical), high-waist grey utility pants with reinforced pockets and cable loops, worn Helix security badge on a frayed lanyard. Sensible grip-sole shoes, usually untied. Minimal jewelry—a single silver bangle on her left wrist, possibly a family heirloom. Lab coat draped over chair more often than worn. Clothing is clean but bears the rumples of 14-hour workdays."
   },
-  "image_prompt": "Ember Bergqvist, 158cm tall Southeast Asian-dominant mixed-heritage woman with warm golden-brown skin, deep black hair cascading past shoulders in loose waves, slight forward lean posture, cyberpunk 2226. Wearing fitted black Helix compression shirt and grey utility pants with cable loops. Both forearms display pearlescent bioluminescent panels inactive but raised. Deep brown eyes with subtle geometric display grid overlay. Dark circles under eyes from chronic overwork. Sitting at tech workstation in intense forward concentration, hands gesturing mid-thought. Subvocal microphone contacts barely visible along left jawline. Silver bangle on left wrist. Lab environment, cool blue-white workstation lighting casting dramatic shadows, worn aesthetic from 14-hour research sessions. Economical, intelligent presence. --ar 2:3 --v 6",
+  "image_prompt": "Devi Mukherjee, 158cm lean South Asian-Southeast Asian-African heritage woman, deep warm golden-copper brown skin with luminous undertones, long loose black hair with wispy halo, intense dark brown eyes with faint geometric overlay visible, chronic dark circles, slight jaw tension from focus. Wearing fitted black Helix compression shirt and grey utility pants with cable loops, frayed security badge, untied grip-sole shoes. Both forearms display inactive bioluminescent pearlescent panels. Subtle microphone contact points along left jawline. Hunched posture at workstation, hands mid-gesture as if conducting invisible code. Forward-leaning intensity, economical quick movements. GLMZ Great Lakes Metropolitan Zone R&D lab setting, cool blue-green neon accent lighting reflecting off bioluminescent skin panels, moody focus atmosphere, 14-hour workday exhaustion evident --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 76.0,
-    "Northern European": 17.6,
-    "East Asian": 6.4
+    "South Asian": 66.8,
+    "Southeast Asian": 24.2,
+    "Sub-Saharan African": 5.1,
+    "Eastern European": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 66.8
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 24.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 4,
+        "South African": 0.8
+      },
+      "West African": {
+        "Sierra Leonean": 0.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 2.4,
+        "Slovak": 1.5
+      }
+    }
+  }
 }

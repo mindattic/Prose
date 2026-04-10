@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a17195a392256456e6918a",
   "type": "character",
-  "name": "Axel Vestergaard",
+  "name": "Aponi Cardenas",
   "aliases": [
     "Threadneedle",
     "The Auditor",
@@ -14,7 +14,7 @@
   "age": 41,
   "status": "active",
   "location": "The Meridian Core (works), The Spire (residence, mid-tier floor), near Michigan Ave and Chicago Ave",
-  "description": "Priya Subramaniam-Vogt is a woman of precisely calibrated appearances — Tamil and German heritage rendered in sharp cheekbones, close-cropped silver-threaded black hair, and eyes that carry the particular exhaustion of someone who has seen too many spreadsheets hiding atrocities. She dresses in muted corporate palettes, charcoal and slate, never anything that might be remembered at a crime scene or a board meeting. Her augmentations are invisible by design: subdermal haptic interfaces along her fingertips, a retinal overlay for data parsing, and a cochlear implant that filters ambient sound into prioritized signal streams. She moves through rooms like a calculation being solved.\n\nPriya has spent sixteen years as an internal investigator for Solenne-Hardt Consolidated, one of the Meridian Core's mid-tier financial conglomerates — not powerful enough to write law, powerful enough to bury people. Her job is nominally compliance: finding fraud, plugging leaks, flagging irregularities. In practice she is the person the company calls when something needs to disappear without leaving fingerprints on the company itself. She has shut down whistleblowers, engineered quiet terminations, and authored reports that exonerated executives whose guilt she documented with her own hands. She is very good at her job and has not slept well in four years.\n\nWhat distinguishes Priya from the purely corrupt is a ledger she keeps — encrypted, air-gapped, stored on a physical drive she wears against her sternum. Every suppressed case, every buried name, every victim whose file she closed. She does not know yet what she intends to do with it. She tells herself it is insurance. She suspects it is penance she hasn't figured out how to pay.",
+  "description": "Aponi Cardenas is a woman of precisely calibrated appearances — Tamil and German heritage rendered in sharp cheekbones, close-cropped silver-threaded black hair, and eyes that carry the particular exhaustion of someone who has seen too many spreadsheets hiding atrocities. She dresses in muted corporate palettes, charcoal and slate, never anything that might be remembered at a crime scene or a board meeting. Her augmentations are invisible by design: subdermal haptic interfaces along her fingertips, a retinal overlay for data parsing, and a cochlear implant that filters ambient sound into prioritized signal streams. She moves through rooms like a calculation being solved.\n\nPriya has spent sixteen years as an internal investigator for Solenne-Hardt Consolidated, one of the Meridian Core's mid-tier financial conglomerates — not powerful enough to write law, powerful enough to bury people. Her job is nominally compliance: finding fraud, plugging leaks, flagging irregularities. In practice she is the person the company calls when something needs to disappear without leaving fingerprints on the company itself. She has shut down whistleblowers, engineered quiet terminations, and authored reports that exonerated executives whose guilt she documented with her own hands. She is very good at her job and has not slept well in four years.\n\nWhat distinguishes Priya from the purely corrupt is a ledger she keeps — encrypted, air-gapped, stored on a physical drive she wears against her sternum. Every suppressed case, every buried name, every victim whose file she closed. She does not know yet what she intends to do with it. She tells herself it is insurance. She suspects it is penance she hasn't figured out how to pay.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -236,7 +236,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Meridian Core (works)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -257,41 +257,21 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Shelf",
     "The Spire",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Heritage Vault",
-    "Adaeze Chen-Hawkins",
+    "Charcoal",
+    "Chicago",
     "Silver",
+    "Haze Johansson",
+    "Slate",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pure Hand",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Crucible Industries Electrostatic Whip EW-3 'Live Wire'",
-    "Crucible Industries Suppressed Compact SC-2 'Murmur'",
-    "Cutter Vane",
-    "Daulet Reyes-Abubakar",
-    "Focadrin",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Kairos",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA TC-3 'Crucible'",
-    "The Ledger",
-    "Vanta Ordnance Phalanx VO-8 'Centurion'",
-    "Vespid Dynamics Swarm Canister SC-2 'Hornets'",
-    "Yannick Tofauti-Szarvásy"
+    "Slagworks Industrial"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly Northern European with significant Sub-Saharan African, Middle Eastern, and Southeast Asian ancestry. The genetic combination produces a striking phenotype: Northern European bone structure and height genetics tempered by warmth and dimension from African and Asian heritage.",
+    "heritage": "Truly global ancestry: Hispanic/Latin American (23.9%), Indigenous American (17.9%), East Asian (16.1%), Sub-Saharan African (15.8%), South Asian (13.2%), and Northern European (13.1%) in genuinely balanced measure. This creates a complex phenotype that resists easy categorization—warm medium-brown skin with subtle golden undertones, facial bone structure that blends multiple continental influences: moderate cheekbones with definition from East and South Asian ancestry, balanced by slightly broader face width from Indigenous American and African heritage. The overall effect is harmonious and distinctive rather than dominated by any single regional ancestry.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean, efficiently compact — the build of someone who treats her body as a tool that must not malfunction. Minimal excess, precise musculature from disciplined exercise rather than displays of strength.",
@@ -299,27 +279,86 @@
     "hair_style": "Close-cropped, razor-precise lines, styled to frame rather than soften her face",
     "hair_length": "Short",
     "eye_color": "Dark brown, with faint iridescent shimmer at the pupil edge (retinal overlay)",
-    "skin_tone": "Warm honey-tan with subtle underlying golden undertones — the result of Northern European base enriched by African, Middle Eastern, and Southeast Asian melanin distribution. Even complexion with warmth concentrated in the cheeks and temples.",
-    "complexion": "High, sharp cheekbones with subtle contoured dimension. Clean-shaven face with no visible blemish or neglect — grooming as a form of control. Fine lines around her eyes and mouth that map sixteen years of contained tension. Her expression defaults to neutral observation, rarely allows visibility of fatigue despite her sleep deficit. Subtle warmth in skin tone prevents severity; features read as composed rather than cold.",
+    "skin_tone": "Warm medium brown with golden undertones—the result of balanced ancestry across multiple continents. The warmth is distributed evenly rather than concentrated, creating an appearance of balanced depth and richness. Melanin distribution reflects her genuinely global heritage without dominance from any single region.",
+    "complexion": "Balanced facial structure reflecting her plural ancestry: moderate, defined cheekbones with subtle contoured dimension from the interplay of East Asian, South Asian, Indigenous American, and African features. Clean-shaven face with no visible blemish or neglect—grooming as a form of control. Fine lines around her eyes and mouth that map sixteen years of contained tension. Her expression defaults to neutral observation, rarely allows visibility of fatigue despite her sleep deficit. The warmth in skin tone prevents severity; features read as composed rather than cold.",
     "distinguishing_marks": [
-      "Faint linear scar along her left temple, barely visible, consistent with old impact injury or surgical site — likely augmentation-related, never discussed.",
-      "Almost imperceptible raised nodule at the base of her skull beneath the hairline — cochlear implant installation point, carefully hidden.",
+      "Faint linear scar along her left temple, barely visible, consistent with old impact injury or surgical site—likely augmentation-related, never discussed.",
+      "Almost imperceptible raised nodule at the base of her skull beneath the hairline—cochlear implant installation point, carefully hidden.",
       "Callus patterns on her fingertips (index through middle) from repeated interface with haptic surfaces, visible only on close inspection."
     ],
     "visible_augmentations": "None visible. All augmentations are subdermal or internal by deliberate design. The only visual tell is the faint shimmer in her pupils under certain light and the microexpression precision that suggests ocular overlays.",
-    "posture_movement": "Economical, controlled. She occupies space without claiming it. Walks with deliberate gait — no wasted motion, no flourish. When seated, she sits upright but not rigidly, hands usually folded or resting on armrests with palms down. Her movements carry the quality of someone who has learned to make herself unmemorable. When she listens, she does not nod; she absorbs. Periodically, her fingers make micro-contact with the space beneath her sternum — touching the drive without being aware she is doing it.",
-    "clothing_style": "Exclusively muted corporate palette: charcoal, slate grey, off-white, dark navy. High-quality tailoring, always pressed. No logos, no brand signifiers, nothing deliberately decorative. Typically wears layered button-down shirts or slim turtlenecks beneath structured blazers. Trousers are tailored and dark. Her only visible jewelry is a thin silver bracelet on her left wrist — minimalist, never removed, no engraving. Her shoes are practical corporate: leather flats or low heels, always polished black. Everything about her clothing is designed to be forgotten the moment she leaves a room. Her tier-status reads as high-functioning mid-tier professional: secure enough in her position that she doesn't need to perform wealth, strategic enough to avoid appearing threatening to those above her."
+    "posture_movement": "Economical, controlled. She occupies space without claiming it. Walks with deliberate gait—no wasted motion, no flourish. When seated, she sits upright but not rigidly, hands usually folded or resting on armrests with palms down. Her movements carry the quality of someone who has learned to make herself unmemorable. When she listens, she does not nod; she absorbs. Periodically, her fingers make micro-contact with the space beneath her sternum—touching the drive without being aware she is doing it.",
+    "clothing_style": "Exclusively muted corporate palette: charcoal, slate grey, off-white, dark navy. High-quality tailoring, always pressed. No logos, no brand signifiers, nothing deliberately decorative. Typically wears layered button-down shirts or slim turtlenecks beneath structured blazers. Trousers are tailored and dark. Her only visible jewelry is a thin silver bracelet on her left wrist—minimalist, never removed, no engraving. Her shoes are practical corporate: leather flats or low heels, always polished black. Everything about her clothing is designed to be forgotten the moment she leaves a room. Her tier-status reads as high-functioning mid-tier professional: secure enough in her position that she doesn't need to perform wealth, strategic enough to avoid appearing threatening to those above her."
   },
-  "image_prompt": "Axel Vestergaard, cyberpunk 2226, 168cm lean woman with warm honey-tan complexion and subtle golden undertones, high cheekbones, short black hair with silver threading, dark brown eyes with faint iridescent retinal overlay shimmer. Clean-shaven, composed expression with fine tension lines around eyes and mouth. Wearing charcoal tailored blazer over slate grey turtleneck, dark navy trousers, polished black leather flats. Thin silver bracelet on left wrist. Posture economical and controlled, standing in corporate office with soft ambient lighting, faint scar visible at left temple under harsh edge lighting. Minimalist aesthetic, deliberately unmemorable yet commanding presence. Subdermal augmentations hidden, only the pupils revealing technological enhancement. Mood: contained professionalism, tactical awareness, corporate noir, 2200s futurism --ar 2:3 --v 6",
+  "image_prompt": "Aponi Cardenas, 168cm lean woman with warm medium-brown skin and golden undertones reflecting balanced global ancestry—Hispanic/Latin American, Indigenous American, East Asian, Sub-Saharan African, South Asian, and Northern European. Close-cropped black hair with silver threading, dark brown eyes with subtle iridescent pupil shimmer from retinal overlay. Moderate defined cheekbones blending multiple continental features, faint linear scar on left temple, composed neutral expression with fine lines mapping contained tension. Wearing tailored charcoal blazer over slate grey turtleneck, dark navy trousers, polished black leather flats. Thin silver bracelet on left wrist. Economical controlled posture, professional mid-tier corporate aesthetic. GLMZ Great Lakes Metropolitan Zone, cool corporate office lighting, cool color temperature, photorealistic character portrait, professional headshot style, sharp focus on face, neutral background, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 78.4,
-    "Sub-Saharan African": 8.1,
-    "Middle Eastern": 6.2,
-    "Southeast Asian": 5.9,
-    "Hispanic/Latin American": 1.4
+    "Hispanic/Latin American": 23.9,
+    "Indigenous American": 17.9,
+    "East Asian": 16.1,
+    "Sub-Saharan African": 15.8,
+    "South Asian": 13.2,
+    "Northern European": 13.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 18.2
+      },
+      "Central American": {
+        "Salvadoran": 3.3,
+        "Honduran": 0.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 2.2
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ho-Chunk": 11.2
+      },
+      "Plains Nations": {
+        "Muscogee": 3.5,
+        "Lakota": 0.6
+      },
+      "Mesoamerican": {
+        "Zapotec": 2.4,
+        "Maya": 0.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 4.2
+      },
+      "Japanese": {
+        "Japanese": 11.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 9.1,
+        "Ethiopian": 0.8
+      },
+      "Southern African": {
+        "South African": 1.9,
+        "Zimbabwean": 0.6
+      },
+      "West African": {
+        "Ghanaian": 3.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 13.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 13.1
+      }
+    }
+  }
 }

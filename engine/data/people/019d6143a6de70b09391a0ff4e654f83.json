@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6de70b09391a0ff4e654f83",
   "type": "character",
-  "name": "Marek Petrović",
+  "name": "Aditya Ekwensi",
   "aliases": [
     "The Director",
     "Mr. Voss",
@@ -14,7 +14,7 @@
   "age": 47,
   "status": "active",
   "location": "Meridian Core — maintains an office suite in a mid-tier commercial building under a shell consulting company, near State and Monroe",
-  "description": "Sterling Voss left Veridian Health Sciences five years ago as a Senior Director of Competitive Intelligence. The title meant he ran the division that stole other corporations' secrets. He was exceptional at it — methodical, patient, and possessed of an institutional understanding of corporate psychology that no street runner can replicate. When Veridian's internal politics turned and his division was restructured (a euphemism for purged), Sterling walked out with his knowledge, his augmentations, and the understanding that the corporate world would eventually need him again, but on his terms.\n\nThe Margin Call operates as a freelance corporate intelligence unit — three ex-corpo operators who conduct espionage, counter-espionage, and strategic disruption for clients who want corporate-quality work without corporate-traceable assets. They dress like executives, think like executives, and deploy tradecraft that was developed in corporate intelligence labs rather than learned on the streets. This makes them simultaneously more effective and more alien than traditional runner crews.\n\nSterling is tall, lean, immaculately groomed, with silver at the temples that he maintains because it communicates authority. He wears tailored suits in every operational context — the suit is the cover identity, the operational tool, and the psychological armor. His face is pleasant, forgettable, and optimized — subtle dermal work that makes him the platonic ideal of a trustworthy executive. He has the handshake of a man who has closed billion-credit deals and the eyes of a man who has destroyed careers for strategic advantage.",
+  "description": "Aditya Ekwensi a Senior Director of Competitive Intelligence. The title meant he ran the division that stole other corporations' secrets. He was exceptional at it — methodical, patient, and possessed of an institutional understanding of corporate psychology that no street runner can replicate. When Veridian's internal politics turned and his division was restructured (a euphemism for purged), Sterling walked out with his knowledge, his augmentations, and the understanding that the corporate world would eventually need him again, but on his terms.\n\nThe Margin Call operates as a freelance corporate intelligence unit — three ex-corpo operators who conduct espionage, counter-espionage, and strategic disruption for clients who want corporate-quality work without corporate-traceable assets. They dress like executives, think like executives, and deploy tradecraft that was developed in corporate intelligence labs rather than learned on the streets. This makes them simultaneously more effective and more alien than traditional runner crews.\n\nSterling is tall, lean, immaculately groomed, with silver at the temples that he maintains because it communicates authority. He wears tailored suits in every operational context — the suit is the cover identity, the operational tool, and the psychological armor. His face is pleasant, forgettable, and optimized — subtle dermal work that makes him the platonic ideal of a trustworthy executive. He has the handshake of a man who has closed billion-credit deals and the eyes of a man who has destroyed careers for strategic advantage.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -176,7 +176,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -200,36 +200,11 @@
     "Vantablack VS-3 'Skin Job'",
     "Lazarus LX-2 'Lab Rat'",
     "Silver",
-    "Déjà Vu",
-    "VOSS",
-    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Constance",
-    "Counter-Personnel Loiter Munition CPLM-7 'Patience'",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Felix Drum",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Idris Forsberg-Quaye",
-    "Kairos",
-    "Lacuna Genomics",
-    "MERIDIAN",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "The Bazaar",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Nearfield",
-    "Warden"
+    "Déjà Vu"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Mestizo-Eastern European-Levantine blend — Hispanic/Latin American (36.9%) dominant with significant Eastern European (31.0%) and Middle Eastern (27.3%) ancestry, minor South Asian admixture (4.8%). The result is warm-toned Mediterranean-adjacent features with Slavic bone structure and Latin American skin undertones.",
+    "heritage": "Pan-diaspora blend dominated by Sub-Saharan African (37.3%) genetics creating strong bone structure and depth, substantially enriched by South Asian (24.5%) heritage adding refined facial proportions and mid-face fullness, with significant Southeast Asian (18.2%) contribution softening features and adding warm golden undertones. Middle Eastern ancestry (12.2%) defines jawline strength and contributes warm amber tones, while Eastern European (5.1%) and Hispanic/Latin American (2.7%) heritage add subtle complexity to overall phenotype. The result is striking genetic diversity — deep African structural foundation layered with South and Southeast Asian softness, warm Middle Eastern definition, and subtle cool undertones from Eastern European ancestry.",
     "height_cm": 188,
     "weight_kg": 79,
     "build": "Lean and naturally tall with deliberate postural control — no excess muscle mass, but the kind of structured fitness that comes from discipline rather than vanity. Shoulders held level, core engaged at rest.",
@@ -237,8 +212,8 @@
     "hair_style": "Conservative executive cut — precisely maintained, parted, no product visible. The silver is never dyed out; it's strategically maintained as a trust signal.",
     "hair_length": "Short",
     "eye_color": "Deep warm brown with subtle neural interface points at the iris periphery — visible only under direct light",
-    "skin_tone": "Warm medium to medium-deep tone — olive-bronzed complexion reflecting the blended Hispanic, Eastern European, and Middle Eastern ancestry; subtle golden undertones from Latin American heritage",
-    "complexion": "Facially symmetrical in a way that reads as subtly artificial — dermal optimization has removed minor asymmetries and optimized for the Halo effect. Strong Slavic-Mediterranean jawline with fuller features characteristic of Middle Eastern heritage. Skin is clear, moisturized, unmarred. The overall effect is 'trustworthy executive' rather than 'handsome'; memorable for professionalism, not appearance.",
+    "skin_tone": "Rich medium-deep mahogany-bronze complexion with warm golden undertones — the depth reflecting substantial Sub-Saharan and South Asian ancestry, the golden warmth from Middle Eastern and Southeast Asian heritage blending seamlessly. Skin has natural radiance, even luminosity, and striking visual depth from authentic genetic diversity rather than optimization.",
+    "complexion": "Facially symmetrical in a way that reads as subtly artificial — dermal optimization has refined minor asymmetries while preserving authentic genetic character. Strong, defined bone structure characteristic of African heritage with the refined facial proportions of South Asian ancestry. Fuller mid-face from Southeast Asian genetics, strong jawline accentuated by Middle Eastern heritage. Skin is clear, moisturized, unmarred. The subtle over-symmetry of optimization is evident only to trained eyes, while the authentic genetic complexity of his mixed heritage remains visually striking — creating memorable professionalism layered with genuine human diversity.",
     "distinguishing_marks": [
       "A thin, pale scar runs along the left clavicle — approximately 8cm long, consistent with surgical access or combat knife work from 15+ years prior",
       "Nearly invisible microinjection ports along the interior of both wrists, partially concealed by custom cufflinks"
@@ -247,15 +222,70 @@
     "posture_movement": "Moves with the economy of someone who has trained to control every gesture. No fidgeting, no wasted motion. When seated, perfectly still — the kind of stillness that suggests internal processing rather than relaxation. Handshake is firm, duration exactly 2-3 seconds, grip pressure calibrated. Eye contact is constant but not aggressive. Speech is measured, with deliberate pauses that communicate confidence and control.",
     "clothing_style": "Tailored suits in charcoal, navy, and dark gray — custom fit, likely Tier 1-2 corpo clothiers. Shirts are white, cream, or pale blue, always pressed to knife-edge precision. Ties are muted, expensive, subtle. Shoes are Italian leather, polished to mirror finish. Watches are understated — either vintage Rolex or modern minimalist design. Cufflinks in brushed steel or gold. The overall presentation is 'senior director who has moved between three multinational corporations' — the uniform of legitimate power. Even when conducting street operations, the suit remains; it is his camouflage and his weapon."
   },
-  "image_prompt": "Marek Petrović, 47-year-old mixed-heritage executive, cyberpunk 2226. Warm olive-bronze complexion, dark brown hair with silver temples, deep warm brown eyes. Tall lean build at 188cm, standing with perfect postural control. Wearing a charcoal tailored custom suit, white dress shirt, muted tie, polished Italian leather shoes. Subtle dermal optimization visible in flawless symmetrical features, strong Slavic-Mediterranean jawline. Thin pale surgical scar along left clavicle visible above neckline. Neural interface points visible at iris periphery under cool overhead lighting. Brushed steel cufflinks catch ambient light revealing circular ports. Corporate boardroom setting, cool blue-gray neon lighting, floor-to-ceiling windows overlooking Great Lakes Metropolitan Zone nightscape. Perfectly still posture, constant controlled eye contact, air of calculated authority. Mirror-polished surfaces reflect geometric shadows. Cyberpunk atmosphere of controlled power and hidden augmentation. --ar 2:3 --v 6",
+  "image_prompt": "Aditya Ekwensi, 47-year-old senior corporate executive, 188cm tall, lean athletic build. Rich mahogany-bronze skin with warm golden undertones reflecting Sub-Saharan African, South Asian, Southeast Asian, Middle Eastern, and Eastern European heritage. Strong defined African bone structure refined by South Asian proportions, fuller mid-face from Southeast Asian genetics, strong jawline from Middle Eastern heritage. Deep warm brown eyes with barely visible neural interface points. Dark brown hair with distinguished silver at temples, conservative executive cut. Perfectly symmetrical face suggesting subtle dermal optimization. Thin pale 8cm scar along left clavicle. Wearing custom tailored charcoal suit, white pressed shirt, muted expensive tie, brushed steel cufflinks concealing microinjection ports. Italian leather shoes polished to mirror finish. Seated in high-rise office with floor-to-ceiling windows, city lights glowing at dusk beyond. Posture perfectly still, completely controlled. Neutral professional expression. Cool corporate lighting with slight warm amber from city glow. GLMZ, Great Lakes Metropolitan Zone. Photograph quality, photorealistic, cinematic, professional corporate portraiture --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 36.9,
-    "Eastern European": 31.0,
-    "Middle Eastern": 27.3,
-    "South Asian": 4.8
+    "Sub-Saharan African": 37.3,
+    "South Asian": 24.5,
+    "Southeast Asian": 18.2,
+    "Middle Eastern": 12.2,
+    "Eastern European": 5.1,
+    "Hispanic/Latin American": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 28.8
+      },
+      "Southern African": {
+        "South African": 3.5,
+        "Zambian": 1.6
+      },
+      "Central African": {
+        "Angolan": 2.2,
+        "Gabonese": 1.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 17.4
+      },
+      "Sri Lankan": {
+        "Sinhalese": 7.1
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 9.2,
+        "Tagalog": 9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 4.5
+      },
+      "Kurdish": {
+        "Kurdish": 7.7
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 5.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 0.8
+      },
+      "South American": {
+        "Peruvian": 1.4
+      },
+      "Mexican": {
+        "Mexican": 0.5
+      }
+    }
+  }
 }

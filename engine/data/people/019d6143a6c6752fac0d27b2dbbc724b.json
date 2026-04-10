@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c6752fac0d27b2dbbc724b",
   "type": "character",
-  "name": "Nneka Ekwensi",
+  "name": "Noor Khorasani",
   "aliases": [
     "Scalpel",
     "the Quiet"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "South Deering Sump — a decommissioned water treatment substation retrofitted as a surgical suite, near Armitage and Milwaukee",
-  "description": "Saoirse is lean and angular, with Congolese-Norwegian features that settle into an expression of studied neutrality — not cold, precisely, but thoroughly trained not to leak. They have bioluminescent sub-dermal streaking along their forearms and collarbone, soft blue-green, which they got originally as cosmetic work and now find useful as ambient surgical lighting during power fluctuations. Their hands are their most notable physical feature: surgeon's hands, long-fingered and impossibly still, kept scrupulously clean and maintained with a care that borders on ritual.\n\nSaoirse was, at some point, a trained medical technician — the knowledge is unmistakable in how they work, how they speak about anatomy, how they look at people and see systems rather than persons. They have constructed an elaborate ethical architecture around what they do: they only take from people who consent (under financial duress, but consent), they use proper anesthetic, they follow sterile protocol, and they charge fair prices by the market's standards. This architecture is both sincere and obviously insufficient, and somewhere under the professional calm they know it. They are not cruel. They are, perhaps more troublingly, kind.",
+  "description": "Noor Khorasani is lean and angular, with Congolese-Norwegian features that settle into an expression of studied neutrality — not cold, precisely, but thoroughly trained not to leak. They have bioluminescent sub-dermal streaking along their forearms and collarbone, soft blue-green, which they got originally as cosmetic work and now find useful as ambient surgical lighting during power fluctuations. Their hands are their most notable physical feature: surgeon's hands, long-fingered and impossibly still, kept scrupulously clean and maintained with a care that borders on ritual.\n\nNoor Khorasani was, at some point, a trained medical technician — the knowledge is unmistakable in how they work, how they speak about anatomy, how they look at people and see systems rather than persons. They have constructed an elaborate ethical architecture around what they do: they only take from people who consent (under financial duress, but consent), they use proper anesthetic, they follow sterile protocol, and they charge fair prices by the market's standards. This architecture is both sincere and obviously insufficient, and somewhere under the professional calm they know it. They are not cruel. They are, perhaps more troublingly, kind.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -189,7 +189,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "South Deering Sump",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,40 +248,12 @@
   ],
   "related_entities": [
     "South Deering Sump",
-    "The Pure Hand",
-    "Stalker",
-    "The Milwaukee Core",
-    "Alper Holmberg-Dembele",
-    "Alper Inoue-Aidoo",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible CN-1 'Cradle'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Djeneba Magnusson-Camara",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "NeuralPath EasePoint Chronic Pain Implant",
-    "Ringo AX-12 'Harvester'",
-    "Ringo EV-3 'Watcher'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Nexus Town Car",
-    "The Bazaar",
-    "The Heritage Vault",
-    "The Sump",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+    "The Marrow Market",
+    "The Pure Hand"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (51.9%) with significant Pacific Islander ancestry (33.2%) and East Asian genetic influence (14.9%). The combination yields warm medium-brown skin with subtle golden and olive undertones, high cheekbones with gentle width across the face, and dark eyes with warm amber flecks. Hair texture and eye shape reflect the Pacific Islander and East Asian components.",
+    "heritage": "Middle Eastern (46.5%) with significant Hispanic/Latin American (27.0%) and Pacific Islander (26.5%) ancestry. The genetic blend creates warm medium-brown skin with golden undertones and subtle olive depth, high and defined cheekbones with gentle facial width characteristic of the three ancestry groups' combined phenotype, and dark brown eyes with warm amber flecks. Refined bone structure with balanced, symmetrical features reflecting the ancestral diversity.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Lean and angular with minimal subcutaneous fat; the build of someone who moves with economy and precision. Long-limbed, almost rangy, with the kind of posture that suggests both discipline and chronic tension held in the shoulders.",
@@ -289,7 +261,7 @@
     "hair_style": "Pulled back in a tight, functional braid or wrapped in a surgical cap during work hours; when loose, falls past shoulder blades",
     "hair_length": "Long",
     "eye_color": "Dark brown with flecks of amber near the iris",
-    "skin_tone": "Medium warm brown with golden and subtle olive undertones — the blended phenotype of sub-Saharan African, Pacific Islander, and East Asian ancestry",
+    "skin_tone": "Medium warm brown with golden undertones and subtle olive depth — the blended phenotype of Middle Eastern, Hispanic/Latin American, and Pacific Islander ancestry",
     "complexion": "High, defined cheekbones with gentle facial width; narrow jaw with refined bone structure. Skin kept meticulous and unblemished, almost clinically clean. Fine lines around the eyes suggest either age or habitually narrow focus. Their expression defaults to professional neutrality — the trained blankness of someone who has learned to keep their face a non-response.",
     "distinguishing_marks": [
       "Bioluminescent subdermal streaking in soft blue-green running the length of both forearms in delicate branching patterns, visible under skin as if veins had been replaced with fiber-optic filament",
@@ -301,14 +273,35 @@
     "posture_movement": "Moves with surgical precision — economical, controlled, zero wasted motion. When standing at rest, they favor balanced weight distribution, hands loose at sides with fingers naturally extended and still. During conversation, hands remain remarkably motionless unless deliberately gesturing. Their gaze is penetrating and anatomical; they look at people and visibly assess systems. They walk quietly, almost gliding, with the practiced silence of someone who has learned to enter spaces without announcing themselves.",
     "clothing_style": "Tier 3-4 working professional. During procedures: sterile surgical scrubs in muted grays or deep blue, clinical and worn with the ease of someone who lives in them. Off-hours: practical, high-function clothing in neutral tones — charcoal, slate, deep green. Form-fitting layers that don't restrict arm movement; clothes that shed biological contamination easily. No logos, no corpo branding, nothing that declares allegiance. Wears a surgical mask around their neck at all times, slipped up instinctively when stressed. Medical-grade gloves in a pocket or tucked into a waistband. No jewelry except a simple silver ring on the right ring finger — the kind you could sterilize in seconds if needed."
   },
-  "image_prompt": "Nneka Ekwensi, tall androgynous medical professional with warm medium-brown skin, high cheekbones, narrow jaw. Dark eyes with amber flecks. Long dark hair with silver at temples, pulled in tight braid. 178cm lean angular build. Wearing sterilized gray surgical scrubs, surgical mask draped around neck. Visible soft blue-green bioluminescent subdermal streaking along both forearms and collarbone, pulsing gently in dim clinical lighting. Preternatural stillness in posture, hands at sides with extended fingers. Clinical expression, penetrating gaze, meticulous unblemished skin. Cyberpunk 2226 Great Lakes Metropolitan Zone, sterile medical bay or corridor, cool LED lighting casting sharp shadows. Professional, controlled, economical movement. --ar 2:3 --v 6",
+  "image_prompt": "Noor Khorasani, a lean 178cm medical professional with warm medium brown skin, golden and olive undertones reflecting Middle Eastern, Hispanic, and Pacific Islander ancestry. High defined cheekbones, narrow jaw, dark eyes with amber flecks. Dark brown hair with silver at temples, pulled back tight. Bioluminescent blue-green subdermal streaking glowing faintly along both forearms and collarbone in delicate branching patterns. Clinical surgical scrubs in muted gray-blue, surgical mask looped around neck. Preternatural stillness, penetrating gaze, economical precise movements. Faint contact dermatitis on knuckles, thin scar on right wrist underside. Cool laboratory lighting casting subtle glow on bioluminescent augmentations. GLMZ medical facility, sterile and clinical aesthetic, professional neutrality in expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 51.9,
-    "Pacific Islander": 33.2,
-    "East Asian": 14.9
+    "Middle Eastern": 46.5,
+    "Hispanic/Latin American": 27,
+    "Pacific Islander": 26.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 37.9
+      },
+      "Arab Gulf": {
+        "Kuwaiti": 4.3,
+        "Yemeni": 4.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 27
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 26.5
+      }
+    }
+  }
 }

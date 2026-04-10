@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62c7574a6f773ee1dedc340",
   "type": "character",
-  "name": "Mikhail Horváth",
+  "name": "Kit Shirazi",
   "aliases": [
     "Fracture",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
-  "description": "Ihaia Nystrom-Keita is average height but with a presence that fills more space than the body accounts for. At 63, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a breacher out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIhaia Nystrom-Keita has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Kit Shirazi is average height but with a presence that fills more space than the body accounts for. At 63, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a breacher out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKit Shirazi has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.37,
@@ -260,7 +260,7 @@
     "Brawler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underbelly",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -280,32 +280,11 @@
     "The Narrows Compact",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Clover",
-    "Breck Tannen",
-    "Coherent Radiation Scalpel CRS-7 'Suture'",
-    "MERIDIAN",
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Quilt",
-    "Specter",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "Tessera TK-11 Specter 'Whisper'",
-    "The Fathom Line",
-    "The Narrows",
-    "The Peninsula",
-    "The Pure Hand",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European (Slavic) dominant with significant East Asian, Indigenous American, Middle Eastern, and Hispanic heritage. The genetic blend produces striking features: Slavic bone structure and build foundation, with East Asian eye shape and cheekbone prominence, warmed by Middle Eastern and Indigenous American undertones.",
+    "heritage": "Tri-continental blend: 36.3% East Asian, 34.8% Middle Eastern, 28.9% South Asian ancestry creates a striking phenotype. East Asian bone structure provides the foundation — prominent cheekbones and subtle eye shape — while Middle Eastern warmth and South Asian depth layer through skin tone and facial structure. The genetic convergence produces a complexion that speaks to movement across multiple continents, with warmth that defies simple categorization.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Lean and wiry with dense musculature earned through decades of close-quarters work. Shoulders broad but not bulky; the kind of compact strength that doesn't announce itself until it moves.",
@@ -313,8 +292,8 @@
     "hair_style": "Pulled back in a tight, practical braid. No vanity in it.",
     "hair_length": "Medium",
     "eye_color": "Amber-brown with slight epicanthic fold from East Asian ancestry, slightly yellowed at the whites from age and augmentation feedback",
-    "skin_tone": "Warm olive with golden-bronze undertones — a complex blend reflecting Eastern European base warmed by East Asian, Middle Eastern, and Indigenous American heritage. Weathered to a deeper patina from decades of work.",
-    "complexion": "Heavily lined, particularly around the eyes and mouth. Weathered rather than aged poorly. Skin bears the texture of old scar tissue, partially smoothed by time. Strong Slavic jawline with prominent cheekbones sharpened by East Asian ancestry, asymmetrical from an old fracture that healed without surgical correction.",
+    "skin_tone": "Deep golden-bronze with warm undertones — the natural result of East Asian, Middle Eastern, and South Asian genetic convergence. Weathered to a richer patina from decades of work across multiple latitudes, with underlying luminosity that catches light across the cheekbones and brow ridge.",
+    "complexion": "Heavily lined, particularly around the eyes and mouth. Weathered rather than aged poorly. Skin bears the texture of old scar tissue, partially smoothed by time. Prominent East Asian cheekbones complemented by the broader, more angular facial structure suggested by Middle Eastern and South Asian ancestry — a balanced asymmetry. Asymmetrical from an old fracture that healed without surgical correction, creating subtle irregularity in the orbital structure.",
     "distinguishing_marks": [
       "Jagged scar running from left temple to left jawline, approximately 8cm, pale and silvery with age.",
       "Burn scar across the back of both hands — irregular, circa 20% surface area, from an old thermal incident.",
@@ -326,17 +305,44 @@
     "posture_movement": "Economical and precise. She doesn't move unless there's a target or a reason. When she does move, it's with the controlled fluidity of someone trained to operate in confined spaces — minimal wasted motion, shoulders low, center of gravity forward. Her head turns before her body does, a habit born from the cyberears' directional input. At rest, she appears coiled rather than relaxed.",
     "clothing_style": "Tier 5 practical — worn dark synthetics (black, charcoal, deep navy) that don't snag or reflect. Cargo pants with reinforced knees and thighs. A fitted, long-sleeved compression shirt under a gray technical jacket with internal pockets and matte finish. Heavy boots with reinforced ankles and grip soles suitable for vertical surfaces. No logos, no corporate branding, no jewelry. The outfit is designed to be forgettable in poor lighting and invisible in shadows. Everything fits close to the body — nothing loose that could be grabbed in a fight."
   },
-  "image_prompt": "Cyberpunk 2226, compact lethal operative, 168cm, olive-bronze skin with Slavic-East Asian heritage features: high prominent cheekbones, amber-brown epicanthic eyes, strong jawline asymmetrical from old fracture. Steel gray hair in tight braid. Jagged temple-to-jaw scar, burn scars on hands, white eyebrow scar. Industrial satin-black cyberears with swiveling directional mics where natural ears should be, chrome contact points. Subdermal forearm weapon mounts with subtle ridges and deployment scars. Coiled posture, economical movement. Dark synthetics: black cargo pants with reinforced knees, fitted compression shirt, gray matte-finish technical jacket, heavy grip-soled boots. Dimly lit urban corridor or safe house interior, cool blue-amber lighting. Tense, controlled presence, predatory rest. Cyberpunk noir aesthetic, photorealistic, gritty and worn. --ar 2:3 --v 6",
+  "image_prompt": "Kit Shirazi, 168cm lean operative with deep golden-bronze skin tone reflecting East Asian, Middle Eastern, and South Asian heritage blend. Steel gray hair braided back, amber-brown eyes with epicanthic fold and yellowed whites. Sharp East Asian cheekbones balanced with broader South Asian-Middle Eastern facial structure, heavily lined face weathered from decades of work. Distinctive jagged silvery scar running left temple to jawline, burn scars on hands, cybernetic black satin ears with chrome contacts flush-mounted where natural ears should be. Coiled posture, economical movement. Wearing fitted dark synthetic compression shirt and gray technical jacket, reinforced cargo pants, heavy ankle boots—all matte black and charcoal, no logos. Industrial sci-fi operative aesthetic. GLMZ, Great Lakes Metropolitan Zone. Moody shadows and neon-filtered lighting, urban dystopian setting, cool color palette with warm skin tone contrast. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 45.9,
-    "East Asian": 15.7,
-    "Indigenous American": 11.2,
-    "Middle Eastern": 10.2,
-    "Hispanic/Latin American": 8.7,
-    "Northern European": 8.3
+    "East Asian": 36.3,
+    "Middle Eastern": 34.8,
+    "South Asian": 28.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 18.8
+      },
+      "Korean": {
+        "Korean": 11.5
+      },
+      "Japanese": {
+        "Japanese": 6
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 34.8
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 19.6
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 3.9,
+        "Pashtun": 2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 3.4
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Kenosha Crossing transit hub, Ferrogate Transit Security post C-7, near outside the Pulaski Gate",
-  "description": "Tavishi is broad-shouldered and soft-faced, with warm dark brown skin, a close beard that he keeps meticulously trimmed, and geneware cat ears — tawny, tipped with white — that he got at nineteen with three months of saved wages and has never regretted. The ears move expressively and he is bad at hiding it: they fold back when he is nervous, swivel toward sounds he is trying to catch. He is in good shape but carries himself with a slight forward hunch, as if bracing against weather, which is his default posture when he is uncertain about something — which is often.\n\nHe is three years into the Ferrogate Transit Security job and he still hasn't decided if it suits him or if he suits it. He is genuinely kind, which creates problems at Kenosha Crossing — a major hub where the desperate, the unhoused, the fare-evaders, and the genuinely dangerous all move through the same turnstiles. His supervisor tells him to be consistent. His instincts tell him to be human. Most days he finds a middle ground that satisfies neither. He prays to the Kenosha E.L.F. — a transit spirit locals call Corrigan — leaving small data packets of safe-passage wishes before his shift. He was raised with E.L.F. devotion and wears it without embarrassment.",
+  "description": "Diego Kowalczyk is broad-shouldered and soft-faced, with warm dark brown skin, a close beard that he keeps meticulously trimmed, and geneware cat ears — tawny, tipped with white — that he got at nineteen with three months of saved wages and has never regretted. The ears move expressively and he is bad at hiding it: they fold back when he is nervous, swivel toward sounds he is trying to catch. He is in good shape but carries himself with a slight forward hunch, as if bracing against weather, which is his default posture when he is uncertain about something — which is often.\n\nHe is three years into the Ferrogate Transit Security job and he still hasn't decided if it suits him or if he suits it. He is genuinely kind, which creates problems at Kenosha Crossing — a major hub where the desperate, the unhoused, the fare-evaders, and the genuinely dangerous all move through the same turnstiles. His supervisor tells him to be consistent. His instincts tell him to be human. Most days he finds a middle ground that satisfies neither. He prays to the Kenosha E.L.F. — a transit spirit locals call Corrigan — leaving small data packets of safe-passage wishes before his shift. He was raised with E.L.F. devotion and wears it without embarrassment.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -183,7 +183,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenosha Crossing transit hub",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -203,32 +203,14 @@
     "Ferrogate Transit",
     "Kenosha Crossing",
     "The Portico",
-    "The Wire Taps",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Wire Taps",
     "Chimera-Null",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Auricula Felis Modification",
-    "Avon Curve",
-    "Bioacoustic Communication Membrane",
-    "Bogdan Achebe-Svanstrom",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kwabena Ilyich Ferreira-Sattout",
-    "MERIDIAN",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
-    "NeuralPath VerbatimX Lexical Recall Aid",
-    "Slagworks Industrial",
-    "Specter",
-    "TESSERA CR-12 'Whisper'",
-    "Tafara Quiñones-Saarinen",
-    "Tessera Corponation",
-    "Tessera TK-11 Specter 'Whisper'",
-    "The Heritage Vault",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Eastern European (35.7%) with significant Hispanic/Latin American (30.6%) and Northern European (20.1%) ancestry, complemented by Middle Eastern (10.0%) and Pacific Islander (3.6%) heritage. A complex genetic mosaic reflecting the Ubiquitous Diaspora.",
+    "heritage": "Eastern European (35.6%) forms the genetic foundation, substantially blended with Hispanic/Latin American (22.6%), Middle Eastern (19.9%), South Asian (16.8%), and Southeast Asian (5.1%) ancestry. This creates a warm, balanced phenotype where no single heritage dominates—a true genetic mosaic of the Ubiquitous Diaspora, resulting in soft facial geometry with rounded contours, warm earth-toned coloring, and features that don't resolve into any single regional category.",
     "height_cm": 182,
     "weight_kg": 84,
     "build": "Broad-shouldered and solidly muscled from transit security work, but without the hard definition of someone who optimizes their body. Carries himself with a slight forward hunch, a protective posture that reads as cautious rather than confident.",
@@ -236,8 +218,8 @@
     "hair_style": "Short, neat, closely cropped with clean lines — maintained but not obsessive",
     "hair_length": "Short",
     "eye_color": "Warm brown, natural",
-    "skin_tone": "Warm medium tan with subtle olive undertones, reflecting the blended heritage of Eastern European, Hispanic/Latin American, and Northern European ancestry with warmth from Middle Eastern and Pacific Islander components",
-    "complexion": "Soft-featured face with gentle contours, youthful despite three years of transit hub stress. Close-trimmed beard kept meticulously neat, suggesting attention to grooming as a form of control. Warm expression that tends toward concern rather than hardness. No visible acne or major scarring.",
+    "skin_tone": "Warm medium tan with golden-amber undertones—the result of balanced blending across Eastern European, Hispanic/Latin American, Middle Eastern, and South Asian ancestry, with subtle Southeast Asian warmth beneath. Not dark, not light, but a harmonious middle ground that suggests no single heritage.",
+    "complexion": "Soft-featured face with rounded contours influenced equally by South Asian and Southeast Asian heritage mixed with Eastern European bone structure and Hispanic warmth. Youthful despite three years of transit hub stress. Close-trimmed beard kept meticulously neat, suggesting attention to grooming as a form of control. Warm expression that tends toward concern rather than hardness. Gentle cheekbones, a rounded jawline that softens his square shoulders. No visible acne or major scarring.",
     "distinguishing_marks": [
       "Geneware cat ears, tawny with white-tipped inner fur, mounted where human ears would be — fully articulate and visibly responsive to emotion and sound",
       "Small ritual scars or tattoos consistent with E.L.F. devotion on left wrist (small data-packet motif, personally religious rather than gang-affiliated)"
@@ -246,16 +228,61 @@
     "posture_movement": "Default posture is a slight forward hunch, as if bracing against weather or uncertainty. Movements are deliberate rather than fluid — he doesn't sprawl or take up unnecessary space. His ears swivel toward sounds he's trying to catch, and fold back when nervous, revealing his emotional state involuntarily. His gait is steady and measured, suited to crowd navigation.",
     "clothing_style": "Ferrogate Transit Authority uniform (Tier 3-4 working class standard): charcoal gray tactical pants with cargo pockets, black composite boots with reinforced soles, gray button-up security shirt with FTA insignia on the shoulder. Over it a lightweight reflective transit vest for visibility in the hub. Personal layer: a simple pendant or small charm related to E.L.F. devotion worn under the uniform, removed or hidden during shift but present in his off-hours. Off-duty: clean, modest clothing — no affectation or luxury goods, the wardrobe of someone who saves money for things that matter (like geneware ears)."
   },
-  "image_prompt": "Diego Kowalczyk, 182cm transit security worker with warm olive-tan complexion and gentle features, black closely-cropped hair, wearing charcoal gray FTA tactical uniform with reflective safety vest, black reinforced boots. Distinctive tawny and white geneware cat ears with articulate responsiveness, subvocal comm barely visible on jaw. Neatly trimmed beard, soft warm brown eyes, subtle E.L.F. devotion ritual marking on left wrist. Slight protective forward hunch, deliberate measured movements, cautious gentle demeanor. Cyberpunk 2226 Great Lakes Metropolitan Zone transit hub interior, neon-lit corridor with crowd motion blur, cool white and amber safety lighting casting shadows across features, emotional vulnerability evident in ear positioning. Medium shot, contemplative expression. Cyberpunk 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Diego Kowalczyk, a 182cm broad-shouldered transit security officer with warm medium tan skin and soft, rounded facial features reflecting blended Eastern European, Hispanic, Middle Eastern, and South Asian ancestry. Short black hair, warm brown eyes, meticulously trimmed beard. Tawny and white articulate geneware cat ears mounted expressively on his head, ears swiveling with alertness. Ferrogate Transit Authority uniform: charcoal gray tactical pants, reinforced black composite boots, gray security shirt with FTA insignia, lightweight reflective transit vest. Protective forward hunch posture, cautious expression with warm concern rather than hardness. Standing in a Great Lakes Metropolitan Zone transit hub, neon signage reflected in polished floor surfaces, cool blues and amber lighting. Deliberate, measured stance. Modest, utilitarian aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 35.7,
-    "Hispanic/Latin American": 30.6,
-    "Northern European": 20.1,
-    "Middle Eastern": 10.0,
-    "Pacific Islander": 3.6
+    "Eastern European": 35.6,
+    "Hispanic/Latin American": 22.6,
+    "Middle Eastern": 19.9,
+    "South Asian": 16.8,
+    "Southeast Asian": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 24.9,
+        "Romanian": 7.4
+      },
+      "Slavic East": {
+        "Russian": 0.1,
+        "Belarusian": 3.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 22.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 19.9
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.6
+      },
+      "Indian": {
+        "Telugu": 3.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 5
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 3.2
+      },
+      "Thai": {
+        "Thai": 0.5
+      },
+      "Filipino": {
+        "Tagalog": 1.2,
+        "Waray": 0.2
+      }
+    }
+  }
 }

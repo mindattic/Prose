@@ -14,7 +14,7 @@ namespace StreetSamurai.UnitTests;
 public class RealDataTests
 {
     private static readonly string EngineDataDir = Path.Combine(
-        FindRepoRoot(), "engine_data");
+        FindRepoRoot(), "engine", "data");
 
     private ReadOnlyDataGuard guard = null!;
     private IPathProvider paths = null!;
@@ -91,7 +91,7 @@ public class RealDataTests
     public void CharacterRepository_KyleExists()
     {
         var repo = new CharacterRepository(paths);
-        var kyle = repo.GetByName("Kyle");
+        var kyle = repo.GetByName("Kyle Ellen Corbin-Vasik");
         Assert.That(kyle, Is.Not.Null, "Kyle should exist in the character database");
         Assert.That(kyle!.Description, Is.Not.Empty, "Kyle should have a description");
     }
@@ -283,7 +283,7 @@ public class RealDataTests
     [Test]
     public void LoggingService_SearchReturnsResults_WhenLogsExist()
     {
-        var logDir = Path.Combine(paths.DataRoot, "logs");
+        var logDir = paths.LogDir;
         var svc = new LoggingService(paths);
 
         if (Directory.Exists(logDir) && Directory.GetFiles(logDir, "log-*.txt").Length > 0)
@@ -496,7 +496,7 @@ public class RealDataTests
         var dir = AppDomain.CurrentDomain.BaseDirectory;
         while (dir != null)
         {
-            if (Directory.Exists(Path.Combine(dir, "engine_data"))) return dir;
+            if (Directory.Exists(Path.Combine(dir, "engine", "data"))) return dir;
             dir = Directory.GetParent(dir)?.FullName;
         }
         // Fallback: relative from test project
@@ -513,20 +513,21 @@ internal class RealDataPathProvider : IPathProvider
     public RealDataPathProvider(string engineDataDir)
     {
         engineData = engineDataDir;
-        root = Directory.GetParent(engineDataDir)!.FullName;
+        // engine/data -> engine -> repo root
+        root = Directory.GetParent(Directory.GetParent(engineDataDir)!.FullName)!.FullName;
     }
 
     public string DataRoot => root;
     public string WorldbuildingDir => Path.Combine(root, "worldbuilding");
-    public string CharactersDir => Path.Combine(root, "people");
+    public string CharactersDir => Path.Combine(engineData, "people");
     public string EssencesDir => Path.Combine(root, "essences");
-    public string StoriesDir => Path.Combine(root, "stories");
+    public string StoriesDir => Path.Combine(engineData, "stories");
     public string EngineDataDir => engineData;
     public string NarrativeBiblePath => Path.Combine(root, "narrative_bible.md");
     public string WorldDir => Path.Combine(root, "world");
-    public string FacetsDir => Path.Combine(root, "character", "facets");
+    public string FacetsDir => Path.Combine(engineData, "facets");
     public string GraphDir => Path.Combine(engineData, "graph");
-    public string LogDir => Path.Combine(root, "logs");
-    public string ExportDir => Path.Combine(root, "exports");
-    public string ArchiveDir => Path.Combine(root, "archives");
+    public string LogDir => Path.Combine(root, "engine", "logs");
+    public string ExportDir => Path.Combine(root, "engine", "exports");
+    public string ArchiveDir => Path.Combine(root, "engine", "archives");
 }

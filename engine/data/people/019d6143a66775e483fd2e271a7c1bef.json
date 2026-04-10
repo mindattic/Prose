@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66775e483fd2e271a7c1bef",
   "type": "character",
-  "name": "Ember Khorasani-Halverson",
+  "name": "Odina Asomaning-Raghavan",
   "aliases": [
     "Twice",
     "N2"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "The Stockyard, Iron Bend, near Pulaski and Chicago Ave",
-  "description": "Nnamdi is tall and broad-shouldered, built like someone who grew fast and hasn't finished, with very dark brown skin, a shaved head, and a jagged scar bisecting his right eyebrow from a fall three years ago. He has geneware color-cycling pupils — shifts between grey and gold in a slow pulse — which he got on credit from a Stockyard bodmod stall and hasn't finished paying off. His jaw is always slightly set, and he has the particular stillness of someone who learned early that looking ready prevents more problems than looking friendly. He walks with an economy of motion that is entirely self-taught.\n\nNnamdi aged out of the Brightmoor Reclamation Orphanage at sixteen and has been in Iron Bend since. He is technically a prospect for the Stockyard Irons, a mid-level territorial gang, which means he runs perimeter watches, collects small-vendor protection fees, and waits to be tested in ways he's trying not to think about. He is not by nature violent — which is the central tension of his life. He's good at watching and remembering and intimidating by presence alone, and he has told himself that is enough to build on. He has a small personal ELF shrine tattooed on his inner wrist — not digital, just ink — in the shape of a data-stream sigil.",
+  "description": "Odina Asomaning-Raghavan is tall and broad-shouldered, built like someone who grew fast and hasn't finished, with very dark brown skin, a shaved head, and a jagged scar bisecting his right eyebrow from a fall three years ago. He has geneware color-cycling pupils — shifts between grey and gold in a slow pulse — which he got on credit from a Stockyard bodmod stall and hasn't finished paying off. His jaw is always slightly set, and he has the particular stillness of someone who learned early that looking ready prevents more problems than looking friendly. He walks with an economy of motion that is entirely self-taught.\n\nOdina Asomaning-Raghavan aged out of the Brightmoor Reclamation Orphanage at sixteen and has been in Iron Bend since. He is technically a prospect for the Stockyard Irons, a mid-level territorial gang, which means he runs perimeter watches, collects small-vendor protection fees, and waits to be tested in ways he's trying not to think about. He is not by nature violent — which is the central tension of his life. He's good at watching and remembering and intimidating by presence alone, and he has told himself that is enough to build on. He has a small personal ELF shrine tattooed on his inner wrist — not digital, just ink — in the shape of a data-stream sigil.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -157,7 +157,7 @@
     "Generous Fool": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,26 +179,13 @@
     "Iron Bend",
     "TESSERA ES-4 'Perimeter'",
     "Arcturus Defense Solutions",
-    "Gold",
-    "Iron",
     "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Irontide Tidal Energy",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Osvaldo Mensah-Kovalenko",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "The Fathom Line",
-    "The Heidelberg Scar",
-    "Tiare Nishi-Anim",
-    "Yuki Nwosu-Petrenko"
+    "Gold",
+    "Iron"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed Middle Eastern (44.5%), East Asian (38%), Sub-Saharan African (15.8%), and Eastern European (1.7%) ancestry. The combination produces warm-toned deep brown skin with subtle golden undertones, sharp angular facial structure with both Middle Eastern and East Asian features — high cheekbones, defined nose bridge, strong jaw — and the inherent warmth of blended African heritage in the richness of complexion.",
+    "heritage": "Mixed Sub-Saharan African (25.8%), Indigenous American (20.1%), South Asian (19.8%), Hispanic/Latin American (17.9%), and Southeast Asian (16.4%) ancestry. This complex blend produces warm deep brown skin with subtle golden and reddish undertones, broad facial structure with high cheekbones characteristic of both Indigenous American and South Asian heritage, and the rich warmth of African and Latin American ancestry blended across the complexion. Features are neither sharply angular nor soft — a balanced synthesis of multiple continental ancestries.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Tall and broad-shouldered with the angular musculature of rapid adolescent growth not yet fully settled into adult mass. Long-limbed, still carrying some of the ungainliness of a teenager who outgrew himself.",
@@ -206,8 +193,8 @@
     "hair_style": "Shaved close to the scalp",
     "hair_length": "Shaved",
     "eye_color": "Color-cycling geneware pupils — cycle between grey and gold in slow, deliberate pulses. Sclera remains natural brown-black.",
-    "skin_tone": "Deep warm brown with golden undertones, uniform complexion across face and body with the subtle richness that comes from multiple heritage blending",
-    "complexion": "Clean-shaven, jawline angular and prominent with the high cheekbones characteristic of East Asian and Middle Eastern genetics. Skin condition unremarkable — no visible acne or dermatological marks beyond the scar. Facial expression habitually neutral, jaw set with the stillness of someone who learned to read rooms before learning to smile in them.",
+    "skin_tone": "Deep warm brown with golden and subtle reddish undertones, uniform complexion across face and body with the characteristic richness that comes from African, Indigenous American, South Asian, and Southeast Asian heritage blending",
+    "complexion": "Clean-shaven, jawline broad and prominent with high cheekbones characteristic of Indigenous American and South Asian genetics. Skin condition unremarkable — no visible acne or dermatological marks beyond the scar. Facial expression habitually neutral, jaw set with the stillness of someone who learned to read rooms before learning to smile in them.",
     "distinguishing_marks": [
       "Jagged scar bisecting the right eyebrow, running approximately 4cm from temple to bridge of nose, with visible white scarring — three years old, healed but still prominent",
       "Small ELF shrine tattoo on inner right wrist in the shape of a vertical data-stream sigil, rendered in black ink, approximately 3cm tall"
@@ -216,15 +203,52 @@
     "posture_movement": "Economy of motion that is entirely self-taught. Walks with minimal wasted energy, shoulders held level, never fidgeting. Stillness is his default state — he sits motionless in stairwells for hours. When he moves, it is deliberate and unhurried, the body language of someone who learned that sudden movement draws attention and attention draws problems.",
     "clothing_style": "Tier 4-5 working class / gang prospect. Typically wears a graphite-grey hoodie (no corporate branding, generic manufacture), dark cargo pants with worn knees, and scuffed black synthetic-leather boots with reinforced toe caps. Underneath, a faded white t-shirt. No visible gang insignia beyond informal markers — a brass knuckle ring on his left hand, a frayed paracord wristband in black on his right wrist. Clothing is functional and cheap, maintained rather than stylish, with small tears and stains that suggest hard use and indifference to appearance."
   },
-  "image_prompt": "Ember Khorasani-Halverson, 188cm tall mixed-heritage East Asian Middle Eastern Sub-Saharan African youth, deep warm brown skin with golden undertones, sharp angular cheekbones and prominent jawline, three-year-old jagged scar bisecting right eyebrow, shaved black hair, color-cycling geneware pupils pulsing grey-to-gold, natural brown-black sclera, clean-shaven, neutral expression. Wearing faded graphite-grey hoodie, dark worn cargo pants, scuffed black synthetic-leather boots, white t-shirt underneath. Small vertical ELF data-stream sigil tattoo on inner right wrist in black ink, brass knuckle ring on left hand, frayed black paracord wristband on right wrist. Economy of motion, completely still posture leaning against a neon-lit urban stairwell wall, motionless in the shadows, hands relaxed at sides. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, cool industrial lighting with distant neon spill, photorealistic, atmospheric urban noir setting, moody and contemplative, hard-used clothing showing wear patterns. --ar 2:3 --v 6",
+  "image_prompt": "Odina Asomaning-Raghavan, 188cm tall mixed-heritage neo-noir youth with deep warm brown skin blending Sub-Saharan African, Indigenous American, South Asian, Hispanic, and Southeast Asian features. Shaved head, clean-shaven face with broad high cheekbones and prominent jawline. Striking geneware pupils cycling between grey and gold in slow pulses against natural brown-black sclera. Jagged white scar bisecting right eyebrow. Small black ELF shrine data-stream sigil tattoo on inner right wrist. Tall angular build, long-limbed teenager frame. Wearing graphite-grey hoodie, dark cargo pants with worn knees, scuffed black synthetic-leather boots with reinforced toes. Faded white undershirt visible. Brass knuckle ring on left hand, frayed black paracord wristband on right. Posture motionless and economical, jaw set neutral expression, the stillness of someone reading danger in every room. GLMZ, neon-lit stairwell or industrial district. Hard sidelighting emphasizing the scar and cycling eye-geneware. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 44.5,
-    "East Asian": 38.0,
-    "Sub-Saharan African": 15.8,
-    "Eastern European": 1.7
+    "Sub-Saharan African": 25.8,
+    "Indigenous American": 20.1,
+    "South Asian": 19.8,
+    "Hispanic/Latin American": 17.9,
+    "Southeast Asian": 16.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 25.8
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 7.5,
+        "Ho-Chunk": 3.7
+      },
+      "Andean": {
+        "Mapuche": 1.6,
+        "Quechua": 2.7
+      },
+      "Mesoamerican": {
+        "Zapotec": 3.9,
+        "Nahua": 0.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 19.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 17.9
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 16.4
+      }
+    }
+  }
 }

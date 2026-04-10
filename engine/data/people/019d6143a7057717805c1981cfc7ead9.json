@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7057717805c1981cfc7ead9",
   "type": "character",
-  "name": "Khalil Mansour",
+  "name": "Khalil Migizi",
   "aliases": [
     "Tsetse",
     "Null"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Hough Reclamation, GLMZ, near Western and Division",
-  "description": "Tsetseg is lean and angular with a long neck and the kind of stillness that belongs to people who grew up in crowded spaces and learned to take up exactly the amount of room they needed and no more. Their skin is deep brown with a warm undertone, and they have patterned irises — a cosmetic mod done with pigment injections, producing a geometric ring of burnt orange around the pupil that makes their gaze unsettling in photographs. Their hair is kept very short, almost shaved. They dress functionally, with a persistent preference for dark colors that won't show damage from protest conditions.\n\nTsetseg has lived in Hough Reclamation their entire life and has watched three different waves of supposed 'revitalization' turn into displacement. They are twenty-four years old and already tired of promises. What they are not tired of is logistics — they have a genuine gift for coordination, for understanding how bodies move through space, how information needs to flow in chaotic conditions, how to build a supply chain out of mutual obligation and goodwill. They coordinate Shelf Mutual Aid, a network that distributes food, medical supplies, and emergency housing connections across two districts. They have a complicated relationship with attention — they need people to show up and to trust the network, but they find visibility personally uncomfortable.",
+  "description": "Khalil Migizi is lean and angular with a long neck and the kind of stillness that belongs to people who grew up in crowded spaces and learned to take up exactly the amount of room they needed and no more. Their skin is deep brown with a warm undertone, and they have patterned irises — a cosmetic mod done with pigment injections, producing a geometric ring of burnt orange around the pupil that makes their gaze unsettling in photographs. Their hair is kept very short, almost shaved. They dress functionally, with a persistent preference for dark colors that won't show damage from protest conditions.\n\nKhalil Migizi has lived in Hough Reclamation their entire life and has watched three different waves of supposed 'revitalization' turn into displacement. They are twenty-four years old and already tired of promises. What they are not tired of is logistics — they have a genuine gift for coordination, for understanding how bodies move through space, how information needs to flow in chaotic conditions, how to build a supply chain out of mutual obligation and goodwill. They coordinate Shelf Mutual Aid, a network that distributes food, medical supplies, and emergency housing connections across two districts. They have a complicated relationship with attention — they need people to show up and to trust the network, but they find visibility personally uncomfortable.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -157,7 +157,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,34 +173,13 @@
     "Hough Reclamation",
     "The Reclamation Assembly",
     "Dredge Mining Collective",
-    "GLMZ",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Ringo Corponation",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Highland Park Autonomous Zone",
-    "Ihaia Nystrom-Keita",
-    "Independent Micro-Grid Power Cooperative",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Stonepath Logistics",
-    "TESSERA CR-12 'Whisper'",
-    "The Collective",
-    "The Heidelberg Scar",
-    "The Pure Hand",
-    "The Shelf",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern with Eastern European and Sub-Saharan African ancestry, creating a complex phenotype: warm medium-to-deep brown skin tone with subtle olive undertones from the Middle Eastern base, enhanced by the Sub-Saharan African genetics. Facial structure reflects the Middle Eastern primary ancestry with Eastern European secondary features softening the overall geometry.",
+    "heritage": "Complex multi-continental phenotype with Middle Eastern primary ancestry (32%) blended with significant Indigenous American (19.4%), Hispanic/Latin American (19.1%), and South Asian (14.6%) components, alongside Sub-Saharan African (10.3%) and East Asian (4.6%) contributions. This genetic constellation produces a warm medium-brown complexion with golden and olive undertones, facial structure that combines angular Middle Eastern features with the broader, more prominent cheekbones characteristic of Indigenous American and South Asian ancestry, and a refined bone structure that bridges all these traditions. The skin carries warmth from African heritage with richness and depth from South Asian genetics.",
     "height_cm": 171,
     "weight_kg": 58,
     "build": "Lean and angular with minimal soft tissue, long-limbed and economical in movement. The build of someone who has never had excess and doesn't waste energy on unnecessary gesture.",
@@ -208,8 +187,8 @@
     "hair_style": "Cut very close to the scalp, almost shaved, maintained with utilitarian precision every two weeks",
     "hair_length": "Shaved",
     "eye_color": "Deep brown with geometric ring of burnt orange pigment injected around each pupil, creating an unsettling starburst pattern",
-    "skin_tone": "Warm medium-brown with olive undertones, even throughout, unburned despite irregular sleep schedules. The tone reflects the dominant Middle Eastern ancestry with subtle warmth from Sub-Saharan African heritage.",
-    "complexion": "Sharp cheekbones characteristic of Middle Eastern and Eastern European ancestry, long neck, minimal facial hair, skin condition pragmatic rather than maintained — a few healing acne marks on the jawline, hands calloused from handling boxes and climbing fire escapes.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones, even throughout, unburned despite irregular sleep schedules. The tone reflects rich South Asian depth layered with warm Sub-Saharan African tones and subtle Middle Eastern warmth.",
+    "complexion": "Angular cheekbones with pronounced width characteristic of Indigenous American and South Asian ancestry, long neck, minimal fine facial hair following South Asian patterns, skin condition pragmatic rather than maintained — a few healing acne marks on the jawline, hands calloused from handling boxes and climbing fire escapes. Facial structure shows refined Middle Eastern angularity softened by broader Indigenous American proportions.",
     "distinguishing_marks": [
       "Geometric patterned irises: burnt orange pigment arranged in a perfect four-pointed starburst around both pupils, done with cheap cosmetic injection three years ago, slightly uneven but deliberate",
       "Small round scar on the underside of left wrist where the mesh implant was installed, site occasionally irritated and red",
@@ -220,14 +199,57 @@
     "posture_movement": "Stillness is their default state — they move with precision and economy, never fidgeting. When in motion, they flow between spaces like they're calculating the path beforehand. In crowds, they occupy exactly the space their body requires and no more. Their hands are often doing small logistics work — arranging items, checking lists, adjusting straps. Their gaze is level and unflinching, the geometric irises making direct eye contact feel confrontational even when they don't intend it.",
     "clothing_style": "Strictly functional Tier 4-5 utilitarian wear: black or dark grey heavy cotton blend work pants with multiple cargo pockets and reinforced stress points, often paint-stained or marked with food residue. Black long-sleeve thermal shirt layered under a dark green or black technical vest with chest pockets and inventory loops. On colder days, a battered black puffer jacket with patches of reflective tape added by hand. Worn black steel-toed boots, always laced tight. A canvas crossbody bag that never leaves their side, containing supply lists, medical inventory, and backup power cells. No visible brands or logos — all functional, all weathered, all chosen for durability over appearance. Occasionally wears a surgical mask even when not required, less from caution than from a desire to be less visible."
   },
-  "image_prompt": "Khalil Mansour, 2226 cyberpunk character, 171cm lean angular build, warm medium-brown skin with olive undertones, shaved black hair, geometric burnt orange starburst augmented irises creating unsettling eye pattern. Sharp cheekbones, long neck, healing acne marks and calloused hands. Subcutaneous mesh implant grid visible on left wrist with faint blue diagnostic glow, thin white rib scar, bruising pattern on shins and forearms. Wearing black heavy-duty work pants with cargo pockets, black thermal long-sleeve under dark technical vest, battered black puffer jacket with hand-applied reflective tape, worn black steel-toed boots, canvas crossbody bag. Standing in utilitarian stillness, precise economical posture, level unflinching gaze. Surgical mask worn. Dark industrial setting, cool blue-grey cyberpunk lighting with thermal shimmer, weathered urban environment, great lakes metropolitan zone aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Khalil Migizi, 171cm lean angular figure, warm medium-brown skin with golden and olive undertones reflecting Middle Eastern, Indigenous American, South Asian, Sub-Saharan African, and Hispanic heritage blend. Shaved black hair, angular cheekbones with indigenous width, long neck. Striking geometric burnt-orange starburst pattern injected around deep brown eyes creating haunting four-pointed design. Visible subdermal mesh grid on left wrist glowing faint blue. Healing acne marks on jawline, calloused hands. Wearing black long-sleeve thermal under dark technical vest, paint-stained dark grey cargo pants, worn black steel-toed boots, battered black puffer jacket with hand-added reflective tape. Canvas crossbody bag. Surgical mask obscuring lower face. Precise, economical posture, unflinching level gaze. GLMZ utilitarian aesthetic, industrial setting with warehouse shadows and neon diagnostic light reflecting off implant, cool blue and warm tungsten lighting, gritty texture, Tier 4-5 district atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 75.6,
-    "Eastern European": 15.7,
-    "Sub-Saharan African": 8.7
+    "Middle Eastern": 32,
+    "Indigenous American": 19.4,
+    "Hispanic/Latin American": 19.1,
+    "South Asian": 14.6,
+    "Sub-Saharan African": 10.3,
+    "East Asian": 4.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 20,
+        "Tajik Persian": 12
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 19.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 14
+      },
+      "Central American": {
+        "Nicaraguan": 3.5,
+        "Salvadoran": 1.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 11.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 10.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.6
+      }
+    }
+  }
 }

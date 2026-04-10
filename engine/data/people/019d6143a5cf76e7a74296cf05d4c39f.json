@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cf76e7a74296cf05d4c39f",
   "type": "character",
-  "name": "Andrei Strömqvist-Ionescu",
+  "name": "Sibusiso Tovar-Strömqvist",
   "aliases": [
     "Cae",
     "The Calculator"
@@ -13,7 +13,7 @@
   "age": 14,
   "status": "active",
   "location": "Engelheim, Axiom Preparatory Academy dormitory block, near Lincoln and Belmont",
-  "description": "Caetano is tall for his age and gangly in the way of someone who grew fast and hasn't caught up with himself yet. He has his Asabere grandfather's deep copper-brown skin and his Ylinen grandmother's pale grey-green eyes, a combination that draws stares in both the corporate school halls and on the Tier 1 streets where he grew up. He dresses in Axiom-issued uniforms with the obsessive precision of someone who cannot afford to give anyone a reason to question his belonging — collar always straight, shoes always clean. His only cosmetic mod is a pair of pattern-irises his mother saved two years for: slow-rotating geometric fractals in navy blue that he initially hated and now considers his single point of vanity.\n\nHe is brilliant and he knows it and he is deeply, quietly ashamed of both facts. He came from Chatham Flats on a full mathematics scholarship and has spent eighteen months learning to perform wealth — which fork, which laugh, which opinions are safe. He is kind to people he forgets are watching and cold to people he thinks are judging him. He misses his mother with a grief he treats like a structural flaw he needs to engineer around.",
+  "description": "Sibusiso Tovar-Strömqvist is tall for his age and gangly in the way of someone who grew fast and hasn't caught up with himself yet. He has his Asabere grandfather's deep copper-brown skin and his Ylinen grandmother's pale grey-green eyes, a combination that draws stares in both the corporate school halls and on the Tier 1 streets where he grew up. He dresses in Axiom-issued uniforms with the obsessive precision of someone who cannot afford to give anyone a reason to question his belonging — collar always straight, shoes always clean. His only cosmetic mod is a pair of pattern-irises his mother saved two years for: slow-rotating geometric fractals in navy blue that he initially hated and now considers his single point of vanity.\n\nHe is brilliant and he knows it and he is deeply, quietly ashamed of both facts. He came from Chatham Flats on a full mathematics scholarship and has spent eighteen months learning to perform wealth — which fork, which laugh, which opinions are safe. He is kind to people he forgets are watching and cold to people he thinks are judging him. He misses his mother with a grief he treats like a structural flaw he needs to engineer around.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -166,7 +166,7 @@
     "Quick Study": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Engelheim",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,53 +180,94 @@
     "Grandmother",
     "Engelheim",
     "Big Rig",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
-    "The Pale Mile",
-    "Arcturus Defense Solutions ETF-3 'Mantis'",
-    "Anatoliy Faye-Nkrumah",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Arcturus KS-7 'Nursery'",
-    "Saodat Mirzoyan-Fubara",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "The Heritage Vault",
-    "The Open Syllabus",
-    "The Pure Hand",
-    "Uncle Jun's Synth-Noodle Window",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Vuk Jorgensen-Toure"
+    "Neural Palate",
+    "The Pale Mile",
+    "Arcturus Defense Solutions ETF-3 'Mantis'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Eastern European (60.1%) with Northern European (25.6%) and East Asian (14.3%) ancestry, creating a distinctive mixed phenotype. Predominantly Slavic features with subtle Northern European lightness and East Asian facial structure blending.",
+    "heritage": "Sub-Saharan African (35.3%), Northern European (34.2%), Hispanic/Latin American (12.3%), East Asian (12.0%), and South Asian (6.2%) ancestry create a striking polychromatic phenotype. Warm mid-brown base skin with golden undertones from the African and Latin American heritage, subtly lightened and cooled by Northern European genetics, with East Asian facial structure contributing slight epicanthal folds and cheekbone prominence. South Asian heritage adds warmth to complexion and subtle softness to facial geometry.",
     "height_cm": 183,
     "weight_kg": 62,
     "build": "Gangly and still-growing, lean without musculature, all elbows and wrists — the awkward frame of a fourteen-year-old who shot up too fast. There's a fragility to him that reads as either privileged or hungry depending on who's looking.",
     "hair_color": "Dark brown with subtle warm undertones",
     "hair_style": "Neatly combed, parted on the left side",
     "hair_length": "Short",
-    "eye_color": "Pale grey-green with cosmetic navy blue rotating geometric fractals (patterned irises), slow-scrolling mandala-like designs visible under direct light",
-    "skin_tone": "Light olive to warm beige, the blended result of Eastern European Slavic base with Northern European paleness and East Asian undertones. Neither distinctly warm nor cool, but a subtle mid-tone that shifts slightly depending on lighting.",
-    "complexion": "Clear, youthful skin with the precision-grooming habits of someone monitoring his own appearance obsessively. No visible acne or blemishes. Faint freckles sparse across his nose bridge — more characteristic of Northern European heritage. Slight dark circles under his eyes from chronic sleep deficit. Subtle epicanthal fold at the eye corners reflecting East Asian ancestry.",
+    "eye_color": "Warm brown base with cosmetic navy blue rotating geometric fractals (patterned irises), slow-scrolling mandala-like designs visible under direct light",
+    "skin_tone": "Warm mid-brown with golden undertones, the blended result of strong Sub-Saharan African heritage softened by Northern European lightness and enriched by Latin American and South Asian warmth. A luminous complexion that reads differently in varied lighting — deeper in shadows, almost bronze in direct sunlight.",
+    "complexion": "Clear, youthful skin with the precision-grooming habits of someone monitoring his own appearance obsessively. No visible acne or blemishes. Subtle freckles sparse across his nose bridge and cheekbones — a mixing of African and Northern European heritage genetics. Slight dark circles under his eyes from chronic sleep deficit. Pronounced epicanthal fold at the eye corners reflecting East Asian ancestry. Cheekbone structure shows South Asian softness alongside East Asian prominence.",
     "distinguishing_marks": [
-      "Faint two-inch scar on his left palm from childhood — consistent with a fall rather than violence, pale against his olive-toned skin",
+      "Faint two-inch scar on his left palm from childhood — consistent with a fall rather than violence, paler silvery tone against his warm brown skin",
       "Barely-visible injection site scarring on his right temple where the Axiom neural-link was installed; healed cleanly, only visible in certain light"
     ],
     "visible_augmentations": "Cosmetic patterned irises (navy blue fractal rotations) that rotate slowly, most visible in low light or when he's tired and not thinking to control his expression. The neural-link hardware is subcutaneous; no visible ports or jacks. Occasionally wears a thin clear AR interface band on his right wrist during academy hours, standard Axiom student issue.",
     "posture_movement": "Upright, almost rigidly correct posture — trained into him by eighteen months of performing at Axiom. His walk is careful and economical, minimizing space. When he forgets he's being watched, his shoulders curve inward slightly. His hands move with precision; he doesn't gesture loosely. Makes minimal eye contact with authority figures but holds it steadily with peers he trusts.",
     "clothing_style": "Axiom Preparatory Academy uniform: charcoal blazer with navy trim and the school crest, white button-down shirt (always pressed, collar points perfectly aligned), charcoal trousers with a knife-edge crease, black leather shoes polished to a mirror shine. Outside academy hours, he wears a grey Axiom hoodie and dark jeans without a wrinkle. No visible branding or luxury items. Everything is clean, precise, and deliberately unremarkable — the clothing of someone trying to be invisible."
   },
-  "image_prompt": "Andrei Strömqvist-Ionescu, 183cm lean Eastern European-Nordic-East Asian teenage boy in charcoal Axiom preparatory blazer with navy trim, white pressed shirt, perfect creases, black polished shoes. Light olive skin tone, dark brown neatly-parted short hair, pale grey-green eyes with slow-rotating navy blue fractal mandala patterns (cosmetic implant, visible in low light), subtle epicanthal folds, minimal freckles across nose. Rigidly correct posture, economical movements, precise hand position. Faint childhood scar on left palm. Cyberpunk academy setting, clean minimalist aesthetic, cool blue-grey institutional lighting casting subtle shadows under his dark circles from sleep deficit. AR interface band on right wrist. Anxious but controlled demeanor, trying to be invisible, clinical precision grooming. Axiom neural-link healed scar barely visible on right temple. 2226 Great Lakes Metropolitan Zone cyberpunk aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Sibusiso Tovar-Strömqvist, 183cm lean teenage boy, warm bronze-golden skin tone blending Sub-Saharan African warmth with Northern European coolness and Latin American richness, faint scattered freckles across nose and cheekbones, prominent East Asian cheekbones with soft South Asian facial geometry, slight epicanthal folds. Dark brown hair neatly parted left, short. Navy blue fractal mandala-pattern cosmetic irises rotating slowly in warm brown base, dark circles under eyes. Axiom Preparatory Academy charcoal blazer with navy trim, pristine white button-down shirt, knife-edge creased charcoal trousers, black polished leather shoes, thin clear AR wristband. Rigidly upright posture, economical careful movement, precise hand gestures, barely-visible temple scar from neural-link implant. GLMZ, Great Lakes Metropolitan Zone academy corridor, cool fluorescent overhead lighting with warm accent light catching his golden skin undertones, clinical focused expression, bookish and controlled demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 60.1,
-    "Northern European": 25.6,
-    "East Asian": 14.3
+    "Sub-Saharan African": 35.3,
+    "Northern European": 34.2,
+    "Hispanic/Latin American": 12.3,
+    "East Asian": 12,
+    "South Asian": 6.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 11.5
+      },
+      "Southern African": {
+        "South African": 2.5,
+        "Zimbabwean": 17.4
+      },
+      "Central African": {
+        "Congolese": 0.9,
+        "Angolan": 3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 1.1,
+        "Irish": 0.8
+      },
+      "Germanic": {
+        "German": 32.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 12.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 1.3,
+        "Shanghainese": 0.6
+      },
+      "Korean": {
+        "Korean": 10.1
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.5,
+        "Sinhalese": 1.4
+      },
+      "Indian": {
+        "Kannada": 1.4,
+        "Punjabi": 0.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.8
+      }
+    }
+  }
 }

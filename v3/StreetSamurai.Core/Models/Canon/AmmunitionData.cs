@@ -4,7 +4,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// An ammunition type in the Meridian 88 world.
+/// An ammunition type in the GLMZ world.
 /// Cross-references compatible weapons by name.
 /// </summary>
 public class AmmunitionData : ICanonEntity

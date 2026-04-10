@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60f7e7f989cd1744012a826",
   "type": "character",
-  "name": "Aroha Faalele",
+  "name": "Meera Song",
   "aliases": [
     "Kestrel",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Fanta Pena-Baah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fanta Pena-Baah describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Meera Song is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Meera Song describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.34,
@@ -264,7 +264,7 @@
     "Arsonist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,35 +277,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Shelf",
-    "Slagworks Industrial",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Breck Tannen",
-    "Fanta Dzhuraev-Mboyo",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Irontide Tidal Energy",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Oumarou Svec-Ranginui",
-    "Prophet",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "Yannick Tambadou-Reinholt",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Slagworks Industrial",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander-Northern European with significant Southeast Asian and Sub-Saharan African blend (Ubiquitous Diaspora mix: 28% Pacific Islander, 25% Northern European, 21% Southeast Asian, 16% Sub-Saharan African, 10% East Asian). Features reflect this complex ancestry: warm medium-golden brown skin with subtle warm undertones from Pacific and Southeast Asian heritage, balanced with Northern European fair undertones beneath. High cheekbones and angular jawline show influence across multiple ancestry groups. Eye shape carries slight Southeast Asian epicanthic fold softness blended with broader Northern European socket structure.",
+    "heritage": "South Asian-East Asian-Central Asian blend (Ubiquitous Diaspora mix: 38.4% South Asian, 33.7% East Asian, 16.5% Central Asian, 9.2% Hispanic/Latin American, 2.2% Sub-Saharan African). Features reflect this complex ancestry: warm medium brown skin with golden undertones from South and East Asian heritage, enriched by Central Asian depth and subtle warmth from Hispanic/Latin American and Sub-Saharan African components. High cheekbones and angular jawline show influence across South and East Asian ancestry. Eye shape carries Southeast Asian epicanthic fold structure blended with broader Central Asian socket depth. Facial geometry reflects the convergence of South Asian and East Asian bone structure with Central Asian weathering potential.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Lean and angular with visible musculature — economical rather than bulky. Titanium bone lacing gives him a subtle rigidity in posture; no wasted mass, all functional density.",
@@ -313,8 +292,8 @@
     "hair_style": "Short, close-cropped fade on sides, slightly longer on top — low maintenance, practical",
     "hair_length": "Short",
     "eye_color": "Warm brown with amber undertones",
-    "skin_tone": "Medium golden-brown complexion with warm undertones, sun-darkened from outdoor work and exposure. Reflects Pacific Islander and Southeast Asian warmth balanced with Northern European fair substrate.",
-    "complexion": "Angular, high-cheekboned face reflecting mixed ancestry. Sharp jawline with subtle fullness at the cheeks from Southeast Asian and Pacific Islander heritage. Face carries few lines — early weathering from stress rather than age. Skin is clean but marked by occupational scars; no grooming vanity, but meticulous about scar management as part of operational security.",
+    "skin_tone": "Medium warm brown complexion with golden undertones and subtle reddish undertones from the South Asian-East Asian-Central Asian-Hispanic/Latin American genetic blend, sun-darkened from outdoor work and exposure. Rich, complex depth from the confluence of multiple ancestral regions.",
+    "complexion": "Angular, high-cheekboned face reflecting South Asian-East Asian-Central Asian-Hispanic/Latin American ancestry convergence. Sharp jawline with subtle fullness at the cheeks from South Asian heritage, refined by East Asian bone structure. Face carries few lines — early weathering from stress rather than age. Skin is clean but marked by occupational scars; no grooming vanity, but meticulous about scar management as part of operational security.",
     "distinguishing_marks": [
       "Ragged scar tissue across right temple and upper scalp where cortical bomb was surgically removed — appears as a web of pale, kinked lines where hair no longer grows cleanly",
       "Pale surgical scars on both wrists (nerve integration points for bone lacing installation, approximately 8cm each)",
@@ -325,16 +304,56 @@
     "posture_movement": "Stands with weight balanced and centered, never fully relaxed but never tense — a coiled baseline. Moves with deliberate efficiency; no extraneous gestures. Eyes track threat vectors habitually. When handling equipment or working a site, his movements become almost meditative — slow, precise, repeatable. Natural left-hand dominant but practiced ambidextrous.",
     "clothing_style": "Tier 3-4 utilitarian: reinforced cargo pants (gray or black synthweave blend), durable work boots (steel-toed, modified), fitted tactical tank or henley (dark colors, moisture-wicking fabric). Oversized work jacket or reinforced denim over layers — pockets loaded with tools, dead drop tokens, secure comms units. No chrome jewelry or aesthetic chrome — everything is functional. No corporate branding. Carries himself like someone who owns nothing valuable except knowledge and capability."
   },
-  "image_prompt": "Aroha Faalele, tall lean cyberpunk operative, Pacific Islander-Northern European-Southeast Asian mixed ancestry, warm golden-brown skin with subtle warm undertones, angular high-cheekboned face, warm amber-brown eyes. Dark brown short hair with fade sides. Right temple scarred with ragged pale scar webbing where cortical bomb removed, visible through short hair. Both wrists show pale surgical scars from bone lacing integration. Burn scar on left forearm mottled and discolored. Circuit-board tattoo on right inner wrist. Wearing dark gray reinforced cargo pants, steel-toed work boots, fitted tactical tank under oversized reinforced denim jacket, pockets loaded with tools and secure comms. Coiled balanced posture, precise economical movement, chrome glinting subtly beneath skin at joints under strong industrial lighting. 2226 GLMZ underground facility, cool blue-white overhead lights casting shadows across scarred features, functional no-vanity aesthetic, dangerous capable presence --ar 2:3 --v 6",
+  "image_prompt": "Meera Song, tall lean man with warm medium brown skin, golden undertones blending South Asian, East Asian, Central Asian, and subtle Hispanic heritage. High angular cheekbones, sharp jawline, warm brown amber-tinted eyes with East Asian epicanthic fold. Dark brown close-cropped fade haircut. Visible pale surgical scars on both wrists, ragged scar tissue web across right temple where hair doesn't grow. Burn mark on left forearm. Small circuit-board tattoo on right inner wrist. Standing coiled and balanced in dark synthetic tactical clothing: black cargo pants, steel-toed work boots, dark henley, oversized reinforced work jacket. Subtle chrome glinting beneath skin at joints under neon lighting. GLMZ, Great Lakes Metropolitan Zone, industrial demolition site with cool blue-green neon casting sharp shadows, photorealistic, gritty neo-noir urban aesthetic, dust and concrete in background, focused intense expression, occupational wear, functional gear, no ornamental chrome --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 28.3,
-    "Northern European": 25.3,
-    "Southeast Asian": 21.0,
-    "Sub-Saharan African": 15.7,
-    "East Asian": 9.7
+    "South Asian": 38.4,
+    "East Asian": 33.7,
+    "Central Asian": 16.5,
+    "Hispanic/Latin American": 9.2,
+    "Sub-Saharan African": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 4.1,
+        "Tamil Sri Lankan": 1.5
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 32.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 33.7
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 14.1,
+        "Hazara": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 0.8
+      },
+      "Caribbean": {
+        "Cuban": 3.5,
+        "Dominican": 3.2
+      },
+      "Central American": {
+        "Honduran": 1.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 1.5,
+        "South African": 0.7
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Damen and Armitage",
-  "description": "Idris Vega-Acheampong is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a rigger out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Idris Vega-Acheampong agrees on two things: she is worth the fee, and she is terrible company at dinner.",
+  "description": "Aero Kristjánsson is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a rigger out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Aero Kristjánsson agrees on two things: she is worth the fee, and she is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.23,
@@ -262,7 +262,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,33 +275,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Shelf",
     "The Gradient Compact",
     "Slagworks Industrial",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Quiet Room",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European dominant with significant Pacific Islander and minor Sub-Saharan African ancestry — Scandinavian-Polynesian mixed heritage with warm undertones from African genetics. Strong Nordic bone structure softened by Pacific Islander features.",
+    "heritage": "Predominantly East Asian (61%) with substantial Sub-Saharan African (28%) and minor Eastern European (11%) ancestry. The genetic blend creates a striking fusion: high, angular cheekbones from East Asian lineage are deepened and warmed by African heritage, while subtle structural elements from Eastern European ancestry add definition to the jawline. The result is a face with exceptional symmetry and dimension — sharp planes softened by rich, warm undertones.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and densely muscled, low center of gravity — built like a boxer or gymnast rather than a bodybuilder. Shoulders broad for her frame, legs thick and functional. Every kilogram is intentional.",
@@ -309,8 +290,8 @@
     "hair_style": "Pulled back in a tight, functional braid or wrapped in a headwrap — nothing loose that could catch in machinery",
     "hair_length": "Medium (pulled back)",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Medium tan with golden-warm undertones — the blend of Scandinavian fairness with Pacific Islander and African warmth creates a rich honey-bronze complexion with slight olive cast",
-    "complexion": "Face mapped with old scars — a thin line bisecting her left cheekbone, puckering at her jaw from burns, a jagged mark across her forehead near the hairline. Skin is weathered, kept clean but not moisturized. No makeup. Nordic cheekbone structure visible beneath scars. Eyes have the flat, assessing quality of someone who reads people for work.",
+    "skin_tone": "Deep warm bronze with subtle golden undertones — the result of East Asian base enriched by Sub-Saharan African warmth and Eastern European influence creates a rich, even complexion that reads as burnished copper in certain light",
+    "complexion": "Face mapped with old scars — a thin line bisecting her left cheekbone, puckering at her jaw from burns, a jagged mark across her forehead near the hairline. Skin is weathered, kept clean but not moisturized. No makeup. High, prominent cheekbones characteristic of East Asian ancestry visible beneath scars, structure emphasized rather than softened. Cheekbone prominence deepened by Sub-Saharan African heritage, creating sculpted definition. Eyes have the flat, assessing quality of someone who reads people for work.",
     "distinguishing_marks": [
       "Thin horizontal scar across left cheekbone, white and precise — old combat wound",
       "Burn scar tissue around left jawline, slightly discolored and puckered",
@@ -321,14 +302,43 @@
     "posture_movement": "Moves with economy and precision — no wasted motion. Shoulders squared and balanced. Head stays level. Eyes constantly tracking, peripheral vision well-used. Sits in ways that allow quick movement. Doesn't fidget; doesn't relax into furniture. Default resting expression is neutral to slightly suspicious.",
     "clothing_style": "Tier 3-4 pragmatic runner aesthetic. Insulated jacket in charcoal gray or black — modular, many pockets, reinforced at elbows and shoulders. Utility pants with cargo pockets, worn at cuffs and knees. Steel-toed boots, scuffed and maintained. No logos or corp branding. Undersuit visible at neck and wrists — thin thermal layer for temp regulation and minor impact protection. A leather biker jacket over top on colder days, weather-beaten and patched. Minimal jewelry except a worn metal cuff on right wrist (datum counter or personal talisman). Everything is black, gray, or dark blue — nothing draws attention."
   },
-  "image_prompt": "Aero Kristjánsson, compact intense woman, 158cm tall, honey-bronze complexion with Scandinavian-Polynesian heritage, dark brown eyes, black hair pulled tight in functional braid, silver at temples. Nordic cheekbones scarred: thin line across left cheekbone, burn puckering at jaw, jagged forehead scar. Weathered skin, no makeup, flat assessing gaze. Visible silver-chrome breathing apparatus at neck and collarbone with pale blue LED pulses, chrome plating at shoulders and chest. Worn black insulated modular jacket, reinforced elbows, utility cargo pants, scuffed steel-toed boots, thin thermal undersuit visible at neck and wrists, leather biker jacket over top, worn metal datum counter cuff on right wrist. Moves with precision economy, shoulders squared, head level, alert peripheral vision. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody neon-lit corridor or industrial rooftop, cool blue and amber lighting, resolute neutral expression, ready for movement, gritty runner aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Aero Kristjánsson, compact athletic woman of mixed East Asian-African-European descent, height 158cm. Deep bronze skin with golden undertones, burnished copper in light. High sculpted cheekbones, dark brown eyes assessing and alert. Black hair pulled back tight in functional braid, silver at temples. Face weathered with old combat scars: thin white line bisecting left cheekbone, burn scars at jaw, jagged forehead scar. No makeup, weathered skin. Chrome and silver breathing apparatus visible at collarbone and neck with pale blue LED pulses, chrome plating on shoulders and upper chest. Wearing modular charcoal insulated jacket with reinforced elbows, cargo utility pants worn at cuffs, steel-toed scuffed boots, thin thermal undersuit visible at neck and wrists. Worn leather biker jacket overtop. Metal cuff on right wrist. Posture rigid and balanced, eyes tracking, no wasted movement. Neutral suspicious expression. GLMZ aesthetic, gritty industrial setting, cool overhead lighting, shadows emphasizing scar tissue and chrome augmentation. Mood: dangerous, focused, experienced runner. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 59.3,
-    "Pacific Islander": 34.2,
-    "Sub-Saharan African": 6.5
+    "East Asian": 61,
+    "Sub-Saharan African": 28,
+    "Eastern European": 11
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 27.5
+      },
+      "Chinese": {
+        "Mandarin Northern": 33.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 8.7,
+        "Zambian": 1.2
+      },
+      "Central African": {
+        "Congolese": 10.4,
+        "Angolan": 0.7
+      },
+      "West African": {
+        "Ghanaian": 7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 7.9,
+        "Romanian": 3.1
+      }
+    }
+  }
 }

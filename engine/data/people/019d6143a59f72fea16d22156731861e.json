@@ -1,7 +1,7 @@
 {
   "id": "019d6143a59f72fea16d22156731861e",
   "type": "character",
-  "name": "Dmitri Björnsdóttir-Bergqvist-Ionescu",
+  "name": "Rohan Khoury-Mukherjee-Hossain",
   "aliases": [
     "Bimbi",
     "The Shelf Oracle"
@@ -13,7 +13,7 @@
   "age": 82,
   "status": "active",
   "location": "The Shelf, Washburn Commons — apartment 14-G above the Ferrogate Transit hub, near Ashland and Division",
-  "description": "Abimbola is a small, wire-thin woman whose skin has the deep matte darkness of old carbon fiber, mapped with fine wrinkles that seem to trace circuit patterns when the light catches them right. Her left eye was replaced after a workplace pressure incident with a ceramic prosthetic that never quite matched — it's a milky amber orb with a fixed iris, which she's decorated over the decades with hand-painted Yoruba adinkra symbols using surgical-grade pigment ink. Her real eye is still sharp and black and misses nothing. She keeps her white hair in elaborate plaited towers pinned with salvaged data-spikes, and she dresses in layered synthsilk robes in rust and ochre that billow when she walks. She moves slowly but with enormous deliberateness, as though every step is a considered choice.\n\nAbimbola spent forty years as a lower-tier archive technician for Axiom's municipal records division, cataloguing what was supposed to be destroyed and quietly, carefully not destroying it. She has an almost religious relationship with information — she believes that forgetting is a form of violence and that memory is the only true resistance available to people without power. She is warm to anyone who sits still long enough to listen, but her warmth has a quality of assessment in it, as though she is deciding whether you are worth the particular truth she plans to share with you.",
+  "description": "Rohan Khoury-Mukherjee-Hossain is a small, wire-thin woman whose skin has the deep matte darkness of old carbon fiber, mapped with fine wrinkles that seem to trace circuit patterns when the light catches them right. Her left eye was replaced after a workplace pressure incident with a ceramic prosthetic that never quite matched — it's a milky amber orb with a fixed iris, which she's decorated over the decades with hand-painted Yoruba adinkra symbols using surgical-grade pigment ink. Her real eye is still sharp and black and misses nothing. She keeps her white hair in elaborate plaited towers pinned with salvaged data-spikes, and she dresses in layered synthsilk robes in rust and ochre that billow when she walks. She moves slowly but with enormous deliberateness, as though every step is a considered choice.\n\nRohan Khoury-Mukherjee-Hossain spent forty years as a lower-tier archive technician for Axiom's municipal records division, cataloguing what was supposed to be destroyed and quietly, carefully not destroying it. She has an almost religious relationship with information — she believes that forgetting is a form of violence and that memory is the only true resistance available to people without power. She is warm to anyone who sits still long enough to listen, but her warmth has a quality of assessment in it, as though she is deciding whether you are worth the particular truth she plans to share with you.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -176,7 +176,7 @@
     "War Weary": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,25 +244,13 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Shelf",
     "Bathysphere Networks",
-    "Stratum",
-    "ARCHIVE",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Rust",
-    "Anatoliy Faye-Nkrumah",
-    "Chronicle",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Glenville Sound",
-    "Idris Forsberg-Quaye",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "TESSERA CR-12 'Whisper'",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure"
+    "Pressure Drop",
+    "Circuit",
+    "Stratum"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (34.5%), East Asian (20.7%), South Asian (18.8%), Northern European (9.8%), Sub-Saharan African (8.8%), Hispanic/Latin American (7.4%). Complex multi-continental ancestry expressed in warm-deep skin tones with subtle golden and bronze undertones; facial structure shows Eastern European bone prominence with East Asian eye shape characteristics and South Asian cheekbone definition; overall appearance reflects genuine Ubiquitous Diaspora mixing rather than any single dominant lineage.",
+    "heritage": "South Asian (36.2%), Middle Eastern (22.8%), Hispanic/Latin American (12.4%), Pacific Islander (11.5%), Northern European (9.1%), Sub-Saharan African (8.0%). Genetic ancestry creates warm-deep brown skin with golden and subtle bronze undertones; facial structure blends South Asian cheekbone definition with Middle Eastern brow and nose characteristics, softened by Pacific Islander face shape and African lip fullness, with Northern European bone structure deepened beneath richly pigmented surface. Appearance embodies genuine Ubiquitous Diaspora mixing.",
     "height_cm": 152,
     "weight_kg": 44,
     "build": "Wire-thin and diminished by age, but held upright with deliberate posture. No excess flesh; skeletal prominence at shoulders and wrists. Appears carved rather than diminished.",
@@ -270,8 +258,8 @@
     "hair_style": "Elaborate plaited towers pinned with salvaged data-spikes; intricate cornrow-derived braiding pattern maintained with precision",
     "hair_length": "Medium (approximately 25-30cm, styled upward)",
     "eye_color": "Left eye: milky amber ceramic prosthetic with hand-painted Yoruba adinkra symbols in surgical-grade pigment ink. Right eye: natural dark brown, sharp and alert.",
-    "skin_tone": "Warm deep brown with golden-bronze undertones characteristic of Eastern European-East Asian-South Asian blending; richly pigmented with undertones suggesting advanced age and sun exposure; skin texture resembles weathered carbon fiber in dim light",
-    "complexion": "Extensively mapped with fine wrinkles that follow no standard anatomical pattern — appear almost like circuit traces when light catches them. No cosmetic treatments or geneware modifications. Skin condition reflects decades of exposure to server room temperatures and archive environments. Facial structure shows blended ancestry: Eastern European cheekbone and jaw definition, East Asian eye shape proportion, South Asian skin depth.",
+    "skin_tone": "Warm deep brown with golden and subtle bronze undertones; melanin-rich pigmentation reflecting blended South Asian, Middle Eastern, Sub-Saharan African, Pacific Islander, and Hispanic/Latin American ancestry, with Northern European influence visible only in bone structure beneath surface. Texture resembles weathered carbon fiber in dim light; decades of sun exposure and controlled archive environments evident in patina.",
+    "complexion": "Extensively mapped with fine wrinkles following non-standard anatomical patterns—appearing almost like circuit traces when light catches them. No cosmetic treatments or geneware modifications. Facial structure shows balanced blending: South Asian cheekbone prominence and skin depth; Middle Eastern brow definition and nasal structure; Pacific Islander and African features evident in face shape, lip fullness, and overall facial proportions; Northern European bone structure subtly softened and deepened by melanin-rich pigmentation across all ancestral components.",
     "distinguishing_marks": [
       "Left eye socket: ceramic prosthetic replacement from occupational pressure incident, decades old, deliberately left unmatchable to right eye",
       "Both hands: subdermal thermal stabilizer implants visible as faint linear scarring along palm sides and wrist creases",
@@ -281,17 +269,64 @@
     "posture_movement": "Moves with extreme deliberateness, as though each step is a considered transaction with gravity. Stands upright despite age and thinness. Hands move with precision. Stillness is her default state; motion is purposeful. Head turns slowly to regard speakers.",
     "clothing_style": "Layered synthsilk robes in rust and ochre tones that billow when walking. Clothing suggests Tier 3 status — well-maintained, chosen for comfort and aesthetics rather than status signaling. Fabrics are vintage quality, maintained over decades. Wears salvaged data-spikes as both hair ornaments and sometimes as necklace elements. No corpo branding; styling reflects personal history rather than current affiliation."
   },
-  "image_prompt": "An elderly woman of intricate mixed heritage (Eastern European, East Asian, South Asian, African, Northern European, Hispanic ancestry expressed in warm deep brown skin with golden undertones) standing with deliberate, upright posture despite wire-thin frame. Height 152cm, weight 44kg, skeletal prominence at shoulders. White hair elaborately braided upward in cornrows adorned with salvaged data-spikes. Left eye is a milky amber ceramic prosthetic with hand-painted Yoruba adinkra symbols; right eye deep brown and sharp. Face and neck extensively tattooed with fine adinkra patterns applied over decades. Warm-toned deep skin texture resembles weathered carbon fiber. Wears layered rust and ochre synthsilk robes flowing around her thin frame. Subdermal thermal stabilizer scars visible on both hands and wrists. Archive librarian aesthetic, 2226, cyberpunk Great Lakes Metropolitan Zone, soft diffuse lighting that catches the circuit-like wrinkles on her face, contemplative stillness, dignified bearing --ar 2:3 --v 6",
+  "image_prompt": "Rohan Khoury-Mukherjee-Hossain, elderly figure with warm deep brown skin rich with golden and bronze undertones, standing with deliberate upright posture despite wire-thin build. White hair elaborately braided into towers pinned with salvaged data-spikes, styled upward. Left eye replaced with milky amber ceramic prosthetic decorated with hand-painted Yoruba adinkra symbols; right eye natural dark brown and alert. Face mapped with fine circuit-like wrinkles, blended ancestral features showing South Asian cheekbone definition, Middle Eastern brow structure, Pacific Islander face shape, and African lip fullness. Extensive adinkra pattern tattoos covering face and neck in surgical-grade pigment. Hands showing faint linear scars from subdermal thermal stabilizers. Wearing layered synthsilk robes in rust and ochre tones billow around thin frame. Standing in archive or server room environment with soft lighting catching weathered skin texture and emphasizing tattoo patterns. GLMZ 2200s, intentional augmentation aesthetic, honored modifications, decades of personal history visible. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 34.5,
-    "East Asian": 20.7,
-    "South Asian": 18.8,
-    "Northern European": 9.8,
-    "Sub-Saharan African": 8.8,
-    "Hispanic/Latin American": 7.4
+    "South Asian": 36.2,
+    "Middle Eastern": 22.8,
+    "Hispanic/Latin American": 12.4,
+    "Pacific Islander": 11.5,
+    "Northern European": 9.1,
+    "Sub-Saharan African": 8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Kannada": 27.3,
+        "Punjabi": 8.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 22.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 12.4
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 2.3,
+        "Samoan": 1.1
+      },
+      "Melanesian": {
+        "Fijian": 1.2,
+        "Ni-Vanuatu": 0.5
+      },
+      "Micronesian": {
+        "Kiribati": 4.9,
+        "Marshallese": 1.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 2.8,
+        "Irish": 4.2
+      },
+      "Germanic": {
+        "German": 1.5,
+        "Swiss German": 0.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65775f4bf76c2e90f51329e",
   "type": "character",
-  "name": "Idris Chatterjee",
+  "name": "Idris Szczypiński",
   "aliases": [
     "Councilor Maïté",
     "the Old Crow"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Mexicantown Libre, near Ashland and Chicago Ave",
-  "description": "Maïté is short, heavyset, and moves through a room like she's already decided where she's going and expects the room to adjust. Her skin is a warm medium brown, deeply lined around the eyes and mouth in ways she has never addressed because she considers cosmetic smoothing a form of dishonesty in a politician. Her hair is dyed a flat, vivid black — one small vanity — and she wears it in a thick braid. Her only augmentation is a cochlear enhancer she got for hearing loss, which she will tell you about unprompted because she believes people hide medical realities out of pride and that this is stupid.\n\nShe has chaired the Mexicantown Libre neighborhood council for eleven years and before that spent twenty years running the district's mutual aid food and medicine network. She knows every family in a twelve-block radius, every outstanding debt to the community, and every favor owed to her personally. She is not idealistic — she is pragmatic in the specific way of someone who has spent decades watching idealism not feed anyone. She will work with people she disagrees with if they can produce results. She will not pretend to like them.",
+  "description": "Idris Szczypiński is short, heavyset, and moves through a room like she's already decided where she's going and expects the room to adjust. Her skin is a warm medium brown, deeply lined around the eyes and mouth in ways she has never addressed because she considers cosmetic smoothing a form of dishonesty in a politician. Her hair is dyed a flat, vivid black — one small vanity — and she wears it in a thick braid. Her only augmentation is a cochlear enhancer she got for hearing loss, which she will tell you about unprompted because she believes people hide medical realities out of pride and that this is stupid.\n\nShe has chaired the Mexicantown Libre neighborhood council for eleven years and before that spent twenty years running the district's mutual aid food and medicine network. She knows every family in a twelve-block radius, every outstanding debt to the community, and every favor owed to her personally. She is not idealistic — she is pragmatic in the specific way of someone who has spent decades watching idealism not feed anyone. She will work with people she disagrees with if they can produce results. She will not pretend to like them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -154,7 +154,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,21 +170,11 @@
     "Mexicantown Libre",
     "Zheng-dao Bioelectric",
     "The Quiet Room",
-    "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus KS-7 'Nursery'",
-    "Emeka Johansson-Orozco",
-    "Green Bay Community Table",
-    "Mirabel Osei-Quispe",
-    "Neuromorphic Pressure Cestus",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant South Asian and Southeast Asian ancestry — a genetic blend that manifests in warm brown skin with subtle golden and olive undertones, strong cheekbones, and dark expressive eyes characteristic of mixed Caribbean and subcontinent heritage",
+    "heritage": "Sub-Saharan African (34.4%), Eastern European (29.3%), East Asian (12.6%), Indigenous American (8.9%), Hispanic/Latin American (8.4%), and Northern European (6.4%) ancestry — a complex genetic blend creating warm deep brown skin with subtle golden undertones, strong defined cheekbones characteristic of African and Slavic heritage, slightly broader facial structure influenced by Indigenous American genetics, and dark expressive eyes with a slight East Asian epicanthic fold. Features reflect the substantial African and Eastern European foundation with layered contributions from Asian, Amerindian, and Latin American ancestry.",
     "height_cm": 157,
     "weight_kg": 78,
     "build": "Heavyset, solid through the torso and shoulders — not fat but densely packed with sixty-one years of work. Strong legs, thick wrists. Carries herself like someone who has lifted, carried, and held things up for decades.",
@@ -192,8 +182,8 @@
     "hair_style": "Thick braid, usually pinned or coiled at the nape",
     "hair_length": "Long (to mid-back when unbraided)",
     "eye_color": "Dark brown, sharp and assessing",
-    "skin_tone": "Warm medium-dark brown with golden and subtle olive undertones — the blended result of Latin American, South Asian, and Southeast Asian ancestry",
-    "complexion": "Deeply lined around eyes and mouth — laugh lines and stress lines she has never bothered to smooth. Weathered but not sagging. Skin is clear, well-moisturized, cared for functionally rather than cosmetically. No makeup beyond lip balm. Features show the broad cheekbones and defined jaw structure common to her mixed heritage.",
+    "skin_tone": "Deep warm brown with golden undertones — the blended result of substantial Sub-Saharan African ancestry (34.4%) combined with Eastern European (29.3%), East Asian (12.6%), Indigenous American (8.9%), Hispanic/Latin American (8.4%), and Northern European (6.4%) heritage creating rich, complex depth",
+    "complexion": "Deeply lined around eyes and mouth — laugh lines and stress lines she has never bothered to smooth. Weathered but not sagging. Skin is clear, well-moisturized, cared for functionally rather than cosmetically. No makeup beyond lip balm. Features show the prominent cheekbones and defined jaw structure reflecting African and Eastern European ancestry, with subtle eye shape influenced by East Asian heritage and broader facial width reflecting Indigenous American genetics.",
     "distinguishing_marks": [
       "Faded subdermal loyalty tattoo along the inside of her left forearm (three interlocking circles), glows faintly gold under certain light frequencies — personal memorial to a defunct mutual aid organization",
       "A thin white scar along her left temple, barely visible, from a 2189 street collision"
@@ -202,14 +192,67 @@
     "posture_movement": "Moves with deliberate efficiency — no wasted motion, no second-guessing. Walks into rooms like she owns them or at minimum knows exactly what needs doing. Stands with weight balanced, shoulders back. Sits with elbows on the table, comfortable taking up space. Makes direct eye contact. Her default expression is neutral assessment.",
     "clothing_style": "Tier 3-4 practical wear: well-maintained but not new. Dark jeans or work pants, sturdy shoes (usually black or brown leather, resoled multiple times). Layered tops — thermal base, cotton shirt, often a faded denim or canvas jacket with pockets. A thick knit cardigan in winter. All clothing shows wear but is clean and intentionally kept. No logos, no corporate branding. A worn leather belt holding everything together. Occasional council medallion on a lanyard when doing official work."
   },
-  "image_prompt": "Idris Chatterjee, a 61-year-old woman of mixed Hispanic/Latin American, South Asian, and Southeast Asian heritage, standing in a dimly lit GLMZ corridor in 2226. Warm medium-dark brown skin with golden undertones, sharp dark brown eyes, deeply lined face showing decades of work and weathering. Long thick black hair (graying at roots) braided and pinned at nape. Heavyset, compact build with strong shoulders. Wearing layered practical clothing: dark work pants, thermal base, cotton shirt, faded denim jacket with visible pockets, worn leather belt. Metallic cochlear enhancer nodes visible at ear bases, scratched and functional. Subdermal gold-glowing tattoo visible on inner left forearm. Thin white scar on left temple. Direct gaze, neutral assessment expression, posture confident and efficient. Standing in industrial lighting with neon accent colors reflecting off worn leather and metal augmentations. Cyberpunk utilitarian aesthetic, no corporate branding. Cinematic, character study portrait --ar 2:3 --v 6",
+  "image_prompt": "Idris Szczypiński, 157cm tall, heavyset 61-year-old woman with deep warm brown skin and golden undertones, strong defined cheekbones blending Sub-Saharan African and Eastern European features with subtle East Asian eye shape and broader Indigenous American facial structure. Long thick black hair with gray roots at the part, braided and coiled at nape. Dark brown sharp eyes with weathered laugh lines and stress lines, faded subdermal gold-glowing three-circle tattoo on inside left forearm, thin white scar on left temple. Worn metallic cochlear enhancer nodes at base of ears. Wearing layered practical neo-noir clothing: thermal base, faded cotton shirt, dark work jeans, well-worn black leather resoled shoes, canvas jacket with pockets, worn leather belt. Posture balanced and direct, neutral assessment expression. Standing in GLMZ 2226 setting with neon-tinted industrial lighting, gritty urban background, confident taking up space. Functional aesthetic, no corporate branding, council medallion visible on lanyard. Cinematic GLMZ 2200s style, character-focused portrait lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 52.9,
-    "South Asian": 30.0,
-    "Southeast Asian": 17.1
+    "Sub-Saharan African": 34.4,
+    "Eastern European": 29.3,
+    "East Asian": 12.6,
+    "Indigenous American": 8.9,
+    "Hispanic/Latin American": 8.4,
+    "Northern European": 6.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 14.9,
+        "South African": 19.5
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 17.2
+      },
+      "Magyar-Romanian": {
+        "Romanian": 6.1
+      },
+      "Slavic West": {
+        "Slovak": 6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 12.6
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 4.4,
+        "Cherokee": 0.4
+      },
+      "Great Lakes Nations": {
+        "Menominee": 2.7
+      },
+      "Andean": {
+        "Aymara": 1.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 8.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 5.9
+      },
+      "British Isles": {
+        "English": 0.2,
+        "Scottish": 0.3
+      }
+    }
+  }
 }

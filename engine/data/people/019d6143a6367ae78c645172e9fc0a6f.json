@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6367ae78c645172e9fc0a6f",
   "type": "character",
-  "name": "Imani Malhotra",
+  "name": "Renata Cardenas",
   "aliases": [
     "Isa",
     "The Cartographer"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Lakeview Neon, Axiom Creative Division offices and a private studio in Calumet Rise",
-  "description": "Isadora is striking in the composed, deliberate way of someone who has studied what 'striking' means and engineered it. She has deep Ghana-coastal black skin and keeps her hair in elaborate braided architecture that incorporates fiber-optic threads so fine they're almost invisible until she moves and the light catches them. She dresses in Axiom's tier-3 corporate aesthetic — fitted, neutral-toned, expensive in ways that don't announce themselves. Her eyes have been modified with multi-focal lenses that let her perceive both standard visual space and the VR overlay simultaneously, a practical tool she's had for so long she forgets it's augmentation.\n\nIsadora designs premium VR experiences for Axiom's top-tier client division — not games, but immersive narrative environments that wealthy clients pay enormous sums to inhabit for a few hours. She is extraordinarily good at her job, recognized within Axiom as one of their most valuable creative assets, and she is slowly and quietly losing her mind from the gap between what she is capable of making and what she is permitted to make. Her personal studio in Calumet Rise is where she makes what she actually wants to make — raw, politically uncomfortable VR spaces that she has never shown to anyone.",
+  "description": "Renata Cardenas is striking in the composed, deliberate way of someone who has studied what 'striking' means and engineered it. She has deep Ghana-coastal black skin and keeps her hair in elaborate braided architecture that incorporates fiber-optic threads so fine they're almost invisible until she moves and the light catches them. She dresses in Axiom's tier-3 corporate aesthetic — fitted, neutral-toned, expensive in ways that don't announce themselves. Her eyes have been modified with multi-focal lenses that let her perceive both standard visual space and the VR overlay simultaneously, a practical tool she's had for so long she forgets it's augmentation.\n\nRenata Cardenas designs premium VR experiences for Axiom's top-tier client division — not games, but immersive narrative environments that wealthy clients pay enormous sums to inhabit for a few hours. She is extraordinarily good at her job, recognized within Axiom as one of their most valuable creative assets, and she is slowly and quietly losing her mind from the gap between what she is capable of making and what she is permitted to make. Her personal studio in Calumet Rise is where she makes what she actually wants to make — raw, politically uncomfortable VR spaces that she has never shown to anyone.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -192,7 +192,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -207,26 +207,13 @@
   "related_entities": [
     "Lakeview Neon",
     "Calumet Rise",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Lacuna Genomics",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Alper Inoue-Aidoo",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Eshe Pena-Baah",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Patient Zero",
-    "Réginald Asomaning-Čabarkapa",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Filament",
-    "The Pure Hand",
-    "Tiare Nishi-Anim",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "CHROMEWORKS Auris Focal Directional Hearing Suite"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (43.5%) with significant South Asian (23.1%), Hispanic/Latin American (20.2%), and Eastern European (13.2%) ancestry. This genetic blend creates a rich phenotype: the deep warm-brown skin tone and facial structure draw primarily from West African heritage, while South Asian ancestry contributes subtle depth to complexion and eye shape, Latin American heritage adds warm undertones and facial contour variation, and Eastern European ancestry introduces fine textural complexity to skin and subtle variation in feature definition.",
+    "heritage": "Predominantly Hispanic/Latin American (49.6%) with substantial Sub-Saharan African (39.5%) and Indigenous American (10.9%) ancestry. This genetic blend creates a striking phenotype: warm deep-brown skin tone with rich undertones draws from the combined African and Latin American heritage, while Indigenous American ancestry contributes subtle bone structure definition and warm golden notes to complexion. The result is luminous deep chocolate-brown skin with golden warmth, high pronounced cheekbones with strong contour, and a defined jawline reflecting the ancestral blend of African and Indigenous features.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and precise, with the controlled posture of someone who has learned to move deliberately. Long-limbed, minimal body fat, built for endurance rather than strength.",
@@ -234,8 +221,8 @@
     "hair_style": "Elaborate braided architecture with geometric patterns; braids incorporate fine near-invisible fiber-optic filaments that catch light when she moves",
     "hair_length": "Long (waist-length when fully extended, typically worn pinned or coiled)",
     "eye_color": "Dark brown with patterned geometric irises (Adinkra symbols, cosmetic modification)",
-    "skin_tone": "Rich warm brown with deep undertones—a complex blend of West African depth, South Asian warmth, and Latin American golden notes. Not pure black but a luminous deep chocolate-brown with subtle warmth when light hits it.",
-    "complexion": "Flawless and deliberately maintained, minimal natural aging visible. Composed expression. High, pronounced cheekbones with subtle South Asian contour, strong jawline with warm-toned definition. No visible scarring or blemishes.",
+    "skin_tone": "Luminous deep chocolate-brown with warm golden undertones—a complex blend of Sub-Saharan African depth, Hispanic/Latin American warmth, and Indigenous American golden notes. Rich and dimensional, glowing warmth beneath the surface.",
+    "complexion": "Flawless and deliberately maintained, minimal natural aging visible. High, pronounced cheekbones with strong definition reflecting Indigenous and African ancestry, powerful jawline with warm-toned contour. No visible scarring or blemishes.",
     "distinguishing_marks": [
       "Micro-scarring along the temporal region behind left ear where neural interface port was installed (visible only in direct side-profile lighting)"
     ],
@@ -243,15 +230,46 @@
     "posture_movement": "Moves with studied precision and minimal wasted motion. Her gaze often has a fractional delay before focusing, a tell that she's processing dual visual layers simultaneously. Sits with deliberate posture. Hands still when not actively working. Her stillness has an engineered quality to it—relaxation that required effort to perfect.",
     "clothing_style": "Axiom tier-3 corporate aesthetic: fitted, expensive, deliberately understated. Neutral color palette (charcoal, cream, deep blue, graphite). High-quality natural fabrics with subtle tech integration. Tailored jackets over smart-fabric layers. Minimal jewelry—one understated silver ring on right index finger. Personal studio wear is looser, darker, more experimental but equally precise."
   },
-  "image_prompt": "Imani Malhotra, 172cm tall lean professional, rich warm deep-brown skin tone with luminous undertones, high cheekbones, strong defined jawline, long black hair with geometric braids embedded with fiber-optic threads that glow faintly, dark brown eyes with geometric Adinkra pattern overlays, subtle neural interface scarring visible behind left ear in profile, dressed in charcoal tailored corporate jacket over cream smart-fabric, silver ring on right index finger, composed expression with engineered precision, standing in modern GLMZ corporate office with soft neon ambient lighting casting warm tones across her face, her gaze has slight processing delay suggesting dual-layer vision overlay, minimalist aesthetic, cyberpunk 2226, professional headshot lighting --ar 2:3 --v 6",
+  "image_prompt": "Renata Cardenas, 2226 neo-noir corporate executive, luminous deep chocolate-brown skin with golden undertones, high pronounced cheekbones, strong jawline, dark eyes with geometric Adinkra symbol irises showing technological enhancement, long black waist-length braided hair woven with fiber-optic threads catching light, 172cm lean precise build, wearing charcoal Axiom tier-3 tailored jacket over smart-fabric layers, minimal silver jewelry, subtle neural interface micro-scar behind left ear visible in side-profile, studied precise posture, fraction-second gaze delay suggesting dual visual processing, Great Lakes Metropolitan Zone corporate environment, cool overhead lighting casting sharp shadows, 2:3 portrait composition emphasizing deliberate stillness and engineered composure, GLMZ 2200s aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 43.5,
-    "South Asian": 23.1,
-    "Hispanic/Latin American": 20.2,
-    "Eastern European": 13.2
+    "Hispanic/Latin American": 49.6,
+    "Sub-Saharan African": 39.5,
+    "Indigenous American": 10.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 21.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 21.3
+      },
+      "Mexican": {
+        "Mexican": 7.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 31.2,
+        "Gabonese": 8.3
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 2.1,
+        "Lakota": 1.9
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 2,
+        "Ojibwe": 4.2
+      },
+      "Mesoamerican": {
+        "Nahua": 0.7
+      }
+    }
+  }
 }

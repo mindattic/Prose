@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68170da98ce79ab12002805",
   "type": "character",
-  "name": "Thandiwe Esquivel",
+  "name": "Vale Esquivel",
   "aliases": [
     "Remi-Leke",
     "The Candle"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Hamtramck Enclave, specifically the Chapel of the Quiet Crossing — a converted boiler room beneath a tenement block, near Ashland and Chicago Ave",
-  "description": "Oluwaremilekun is a large, slow-moving woman whose presence seems to lower the ambient noise of whatever room she enters. Her skin is very dark and carries a faint bioluminescent undertone — a geneware mod she got thirty years ago, meant to glow softly gold, though now the pigment has mellowed with age into something closer to candlelight. She keeps her silver-threaded hair in elaborate wraps of faded indigo cloth, and her eyes are the dusty amber of old circuit boards. She wears no jewelry except a single chain with a data locket containing the logged final heartbeats of everyone she has ever sat with at the end — over four hundred entries. She moves through the world with enormous gentleness and without hurry.\n\nShe was not always this calm. Neighbors who knew her in middle age remember a woman of ferocious opinions and a laugh that rattled windows. She still has both, but they've been refined into something quieter. She believes dying is the most intimate thing a person ever does, and that nobody should do it alone or afraid, and she has organized her entire life around that conviction. She has no particular theology — she works with families of every tradition and defers to their practices — but she privately believes the E.L.F.s carry the echoes of the dead in their signal patterns, and she leaves small data offerings at the chapel's resident shrine every morning.",
+  "description": "Vale Esquivel is a large, slow-moving woman whose presence seems to lower the ambient noise of whatever room she enters. Her skin is very dark and carries a faint bioluminescent undertone — a geneware mod she got thirty years ago, meant to glow softly gold, though now the pigment has mellowed with age into something closer to candlelight. She keeps her silver-threaded hair in elaborate wraps of faded indigo cloth, and her eyes are the dusty amber of old circuit boards. She wears no jewelry except a single chain with a data locket containing the logged final heartbeats of everyone she has ever sat with at the end — over four hundred entries. She moves through the world with enormous gentleness and without hurry.\n\nShe was not always this calm. Neighbors who knew her in middle age remember a woman of ferocious opinions and a laugh that rattled windows. She still has both, but they've been refined into something quieter. She believes dying is the most intimate thing a person ever does, and that nobody should do it alone or afraid, and she has organized her entire life around that conviction. She has no particular theology — she works with families of every tradition and defers to their practices — but she privately believes the E.L.F.s carry the echoes of the dead in their signal patterns, and she leaves small data offerings at the chapel's resident shrine every morning.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -173,7 +173,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,37 +230,21 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Circuit",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Carrion Defense Works",
+    "Chicago",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Indigo",
+    "The Boilermaker",
+    "Sweeper-11",
     "Slagworks Industrial",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Sweeper-11",
     "Nightlight",
-    "Gold",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Brecken Yılmaz-Osei",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "Lumen",
-    "MERIDIAN",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Oumarou Svec-Ranginui",
-    "Rashaad Tumelo-Koskinen",
-    "Solina Barreto-Kiptoo",
-    "Sulfur Crown Agriculture",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (31.6%) with significant Sub-Saharan African (25.8%), Central Asian (22.5%), and Middle Eastern (20.1%) ancestry — a genuinely diaspora-blended phenotype reflecting the Ubiquitous Diaspora. Features reflect this complex admixture: warm-toned deep brown skin with subtle golden undertones from diverse ancestry lines, facial structure showing the blended geometry of multiple continental origins.",
+    "heritage": "Hispanic/Latin American (42.9%) with significant Southeast Asian (35.3%) and South Asian (21.8%) ancestry — a genuinely diaspora-blended phenotype reflecting the Ubiquitous Diaspora. Features reflect this complex admixture: warm-toned medium-deep brown skin with subtle golden and olive undertones from the Latin American, Southeast Asian, and South Asian ancestry lines, facial structure showing the blended geometry of multiple continental origins.",
     "height_cm": 178,
     "weight_kg": 92,
     "build": "Large-framed, substantial without heaviness — the build of someone who has carried weight (literal and emotional) with grace. Soft musculature, no visible tension in shoulders or neck.",
@@ -268,8 +252,8 @@
     "hair_style": "Wrapped in elaborate sections using faded indigo cloth, wrapped tightly at the crown and secured with simple brass pins",
     "hair_length": "Long (extends to mid-back when unwrapped, but always kept bound)",
     "eye_color": "Dusty amber with flecks of darker gold — human baseline, no augmentation",
-    "skin_tone": "Deep warm brown with golden undertones — the blended warmth of Latin American, African, Central Asian, and Middle Eastern ancestry creating a rich, unified complexion",
-    "complexion": "Aged gracefully; fine lines around the eyes and mouth from decades of listening intently. Skin texture is smooth and cared-for. The bioluminescent geneware creates a faint warm golden undertone beneath the surface, most visible in low light or along the cheekbones and inner forearms — like old candlelight trapped just beneath the skin. The glow is gentle, almost imperceptible in daylight.",
+    "skin_tone": "Medium-deep warm brown with golden and subtle olive undertones — the blended warmth of Hispanic/Latin American, Southeast Asian, and South Asian ancestry creating a rich, unified complexion",
+    "complexion": "Aged gracefully; fine lines around the eyes and mouth from decades of listening intently. Skin texture is smooth and cared-for. Facial structure shows the blended geometry of multiple continental origins — stronger cheekbones and browline from Southeast Asian ancestry, fuller face shape from South Asian heritage, warmth and softness from Hispanic/Latin American genetics. The bioluminescent geneware creates a faint warm golden undertone beneath the surface, most visible in low light or along the cheekbones and inner forearms — like old candlelight trapped just beneath the skin. The glow is gentle, almost imperceptible in daylight.",
     "distinguishing_marks": [
       "A thin, pale surgical scar along the inside of her left wrist from the neural pain-monitoring implant installation, nearly invisible with age but present if you know to look.",
       "Fine burnished marks on both palms and inner forearms — ritual scarification from her early thirties, West African tradition, very subtle but intentional."
@@ -278,15 +262,45 @@
     "posture_movement": "Moves with deliberate slowness — not infirmity, but intention. She takes full steps, plants her feet carefully. Her shoulders are relaxed and open. When sitting, she settles into stillness like water finding its level. Her gaze is unhurried; she looks at people for the full duration of listening, not glancing away.",
     "clothing_style": "Simple, tactile fabrics in muted colors. A worn linen tunic in cream or soft grey, layered with a heavy indigo shawl (hand-dyed, fraying at the edges, clearly decades old). Loose trousers in neutral tones. Bare feet or simple leather sandals indoors; sturdy canvas slip-ons for street work. Her single piece of jewelry is a worn silver chain with a small data locket the size of a thumb drive, always visible at her sternum. No makeup, no adornment. Tier 3 practical, but aged with intention and care — nothing disposable about her appearance."
   },
-  "image_prompt": "Thandiwe Esquivel, a 178cm woman with deep warm brown skin and subtle bioluminescent glow beneath the surface, visible in dim light along cheekbones and forearms. Silver-white hair with dark roots, wrapped tightly in elaborate sections of faded indigo cloth secured with brass pins. Dusty amber eyes with gold flecks. Age-worn face with fine lines, gracefully aged, ritual scarification marks visible on forearms. Wearing a worn cream linen tunic layered with a decades-old hand-dyed indigo shawl, loose neutral trousers, simple leather sandals. Worn silver chain with small data locket visible at sternum. Posture deliberate and slow, shoulders relaxed and open, complete stillness when seated. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, soft warm lighting emphasizing the faint internal glow, contemplative mood, listening intently to unseen companion. --ar 2:3 --v 6",
+  "image_prompt": "Vale Esquivel, 178cm tall with substantial frame, medium-deep warm brown skin with golden and olive undertones blending Hispanic/Latin American, Southeast Asian, and South Asian ancestry. Silver-white hair with dark roots, wrapped tightly in faded indigo cloth with brass pins, extends to mid-back when loose. Dusty amber eyes with dark gold flecks. Aged gracefully with fine lines around eyes and mouth, blended facial structure showing Southeast Asian cheekbones, South Asian fullness, Latin American warmth. Faint bioluminescent glow beneath skin visible in low light, most apparent on cheekbones and forearms. Subtle ritual scarification marks on palms and inner forearms, surgical scar on left wrist. Wears worn cream linen tunic with heavy hand-dyed indigo shawl fraying at edges, loose neutral trousers, simple leather sandals. Worn silver chain with small data locket at sternum. Posture deliberate and intentional, shoulders relaxed and open, unhurried gaze. GLMZ Great Lakes Metropolitan Zone, dim neon-ambient interior lighting, warm glow highlighting bioluminescent skin undertones, contemplative expression, standing with calm presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 31.6,
-    "Sub-Saharan African": 25.8,
-    "Central Asian": 22.5,
-    "Middle Eastern": 20.1
+    "Hispanic/Latin American": 42.9,
+    "Southeast Asian": 35.3,
+    "South Asian": 21.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 13.1,
+        "Nicaraguan": 29.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 3
+      },
+      "Cambodian": {
+        "Khmer": 11.9
+      },
+      "Indonesian": {
+        "Sundanese": 20.4
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 4.7,
+        "Tamil Sri Lankan": 3.3
+      },
+      "Nepali": {
+        "Nepali": 2.4
+      },
+      "Indian": {
+        "Bengali": 11.4
+      }
+    }
+  }
 }

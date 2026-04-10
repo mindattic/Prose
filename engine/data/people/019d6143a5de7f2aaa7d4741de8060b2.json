@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5de7f2aaa7d4741de8060b2",
   "type": "character",
-  "name": "Juno Matai-Mbekele",
+  "name": "Juno Kulkarni-Wickramasinghe",
   "aliases": [
     "Señora Coco",
     "The Mouth of the Shelf"
@@ -13,7 +13,7 @@
   "age": 91,
   "status": "active",
   "location": "The Shelf, Precinct 1 — Corner unit, Calle Baja Residency Block, near Western and Division",
-  "description": "Consuela Otieno-Papadreou is ninety-one years old and she will tell you so before you've finished introducing yourself, usually followed by: 'and I have outlived three landlords, two corponation district managers, and everyone who ever told me to be quieter.' She is small and enormously present, using a walker she has decorated with woven wire charms and a small battery-powered light shaped like a fish that she received from a grandchild and refuses to remove. Her skin is very dark and very lined and she leans into every line with the comfort of someone who earned them. She wears her natural hair close-cropped and white and favors bright colors that she says 'make you easy to find in a crowd, which is exactly where an old woman should be.'\n\nShe has no augmentations and hasn't wanted any. She has no pension beyond UBC, having spent her working years in informal caregiving and community organizing that the formal economy never counted. She is the social infrastructure of Precinct 1: she knows who is fighting with their partner, who has gone three days without eating, who is hiding an injury they can't afford to report, who the new family in Block C actually is and whether they need help or are the kind of trouble the block doesn't need. She dispenses this information with the authority of someone who has been paying attention for nine decades, and she does so from her corner unit's open window, which functions as an informal exchange point for most of the block's social life. She prays daily to the E.L.F. she calls La Luzita — a small grid presence that flickers the hallway lights in what she interprets as responses.",
+  "description": "Juno Kulkarni-Wickramasinghe is ninety-one years old and she will tell you so before you've finished introducing yourself, usually followed by: 'and I have outlived three landlords, two corponation district managers, and everyone who ever told me to be quieter.' She is small and enormously present, using a walker she has decorated with woven wire charms and a small battery-powered light shaped like a fish that she received from a grandchild and refuses to remove. Her skin is very dark and very lined and she leans into every line with the comfort of someone who earned them. She wears her natural hair close-cropped and white and favors bright colors that she says 'make you easy to find in a crowd, which is exactly where an old woman should be.'\n\nShe has no augmentations and hasn't wanted any. She has no pension beyond UBC, having spent her working years in informal caregiving and community organizing that the formal economy never counted. She is the social infrastructure of Precinct 1: she knows who is fighting with their partner, who has gone three days without eating, who is hiding an injury they can't afford to report, who the new family in Block C actually is and whether they need help or are the kind of trouble the block doesn't need. She dispenses this information with the authority of someone who has been paying attention for nine decades, and she does so from her corner unit's open window, which functions as an informal exchange point for most of the block's social life. She prays daily to the E.L.F. she calls La Luzita — a small grid presence that flickers the hallway lights in what she interprets as responses.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -158,7 +158,7 @@
     "Anchor": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,25 +228,12 @@
     "Cinderblock Ai",
     "The Shelf",
     "Kang-Petrov Arms KPS-410 'Hallway'",
-    "Elena Vasquez-9",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dragan Petersen-Bah",
-    "Ezio Kaboré-Malhotra",
-    "Grosse Pointe Enclosure",
-    "Irontide Tidal Energy",
-    "Isadora Mwangi-Thorvaldsen",
-    "Lazarus EC-4 'Companion'",
-    "Nnamdi Ostrowski-Faletolu",
-    "The Pure Hand",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Yannick Tofauti-Szarvásy"
+    "Corner Slice",
+    "Elena Vasquez-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African and Pacific Islander with significant Central Asian and North African admixture. The genetic blend creates a striking phenotype: deep brown skin with warm undertones reflecting the African and North African heritage, combined with the broader facial structure and eye shape influenced by Pacific Islander ancestry, with subtle Central Asian characteristics in cheekbone prominence and eye placement.",
+    "heritage": "Predominantly South Asian (82.9%) with significant Hispanic/Latin American (8.8%) and Northern European (8.3%) admixture. The genetic blend creates a distinctive phenotype: warm medium-to-deep brown skin with golden undertones reflecting South Asian heritage, combined with facial structure influenced by Hispanic/Latin American ancestry—wider cheekbones, fuller lips, and slightly broader nose bridge—with subtle Northern European characteristics visible in eye placement and bone definition.",
     "height_cm": 152,
     "weight_kg": 58,
     "build": "Slight and compact, all wiry sinew and no excess — the build of someone who has spent nine decades moving through the world with purpose and minimal resource. Her frame suggests durability rather than fragility.",
@@ -254,8 +241,8 @@
     "hair_style": "Close-cropped, maintained in neat rows",
     "hair_length": "Short",
     "eye_color": "Dark brown, sharp and alert",
-    "skin_tone": "Deep warm brown with subtle golden undertones, rich and luminous despite age",
-    "complexion": "Heavily lined face that maps nine decades of attention and care. The lines reflect both Sub-Saharan and Pacific Islander aging patterns — skin maintains elasticity and depth rather than becoming papery, with pronounced nasolabial folds and forehead creases deepened by decades of close observation and slight smiles. Eyes are bright and direct, set with the broader orbital structure of Pacific Islander heritage. Her expression defaults to slight amusement, as if she has seen something funny in nearly everything.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, rich and luminous despite age. The tone reflects South Asian foundation with slight warmth from Hispanic/Latin American ancestry, maintaining depth and radiance rather than becoming ashen with age.",
+    "complexion": "Heavily lined face that maps nine decades of attention and care. The lines reflect South Asian and Hispanic aging patterns—skin maintains elasticity and depth rather than becoming papery, with pronounced nasolabial folds characteristic of Hispanic/Latin American heritage and forehead creases deepened by decades of close observation. Eyes are bright and direct, with the warm, expressive eye shape and slightly wider-set placement characteristic of South Asian heritage blended with slightly fuller eyelids from Hispanic/Latin American ancestry. Her expression defaults to slight amusement, as if she has seen something funny in nearly everything.",
     "distinguishing_marks": [
       "Extensive fine wrinkles across forehead and around eyes, each crease deepened by decades of close observation and slight smiles",
       "Age spots on the backs of both hands, scattered like old maps",
@@ -266,15 +253,46 @@
     "posture_movement": "Moves slowly but with absolute intention, never hesitant. Uses her walker not as a crutch but as an anchor point for her presence — it becomes an extension of her social radius. She plants herself in her window like a flagpole. When she moves through the block, people part and reassemble around her trajectory.",
     "clothing_style": "Bright, deliberate colors — electric blues, hot oranges, vivid purples — in layered, comfortable fits that accommodate her build and her need to move freely. Heavy cotton, knit, nothing synthetic. Patterns that read like Tier 5 thrift and intention rather than poverty: a yellow print dress over a blue long-sleeved shirt, a purple cardigan with mismatched buttons that she has reinforced with bright thread. Worn slip-on shoes, sensible, scuffed. A shawl she wraps differently each day, color-coordinated with what she is wearing. Everything suggests someone with no money and absolute style."
   },
-  "image_prompt": "Juno Matai-Mbekele, 152cm elderly woman with deep warm brown skin and sharp dark eyes, short white close-cropped hair, face mapped with nine decades of fine wrinkles and slight smile-creases, age spots on weathered hands. Wearing vibrant layered vintage thrift: electric blue long-sleeved shirt under a yellow patterned dress, purple cardigan with mismatched reinforced buttons, colorful wrapped shawl. Using a decorated walker with woven wire charms and battery fish-light. Posture of absolute intention despite slowness. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit urban interior, warm window light catching her luminous skin, deliberate style radiating presence and history, no visible augmentation, entirely human. --ar 2:3 --v 6",
+  "image_prompt": "Juno Kulkarni-Wickramasinghe, 152cm tall elderly woman with warm deep brown skin and golden undertones, white close-cropped hair in neat rows, dark sharp eyes with South Asian expressiveness, heavily lined face mapping nine decades of life. Wears electric blue long-sleeved shirt under yellow print dress, purple cardigan with reinforced mismatched buttons, colorful draped shawl, scuffed slip-on shoes. Using a walker decorated with woven wire charms and small battery-powered fish light. Standing by window in GLMZ Great Lakes Metropolitan Zone apartment, neon signs casting cool light through glass, her bright clothing vibrant against urban decay backdrop. Expression of gentle amusement. Absolute presence despite small frame. Natural, no augmentations visible. Cinematic GLMZ 2200s aesthetic, warm color contrast, documentary realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 32.7,
-    "Pacific Islander": 32.0,
-    "Central Asian": 21.5,
-    "North African": 13.8
+    "South Asian": 82.9,
+    "Hispanic/Latin American": 8.8,
+    "Northern European": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 69.5
+      },
+      "Indian": {
+        "Punjabi": 10.7,
+        "Telugu": 2.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.6
+      },
+      "Caribbean": {
+        "Cuban": 1.4,
+        "Haitian": 0.8
+      },
+      "Central American": {
+        "Salvadoran": 0.5,
+        "Honduran": 1.5
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 0.6
+      },
+      "Scandinavian": {
+        "Swedish": 7.7
+      }
+    }
+  }
 }

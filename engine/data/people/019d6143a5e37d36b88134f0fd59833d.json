@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e37d36b88134f0fd59833d",
   "type": "character",
-  "name": "Aero Haraldsen",
+  "name": "Aero Sow",
   "aliases": [
     "Nurse Dara",
     "D"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "The Narrows, Ironvein Corridor — Ironvein Free Clinic, also makes rounds to Brightmoor Reclamation and Hough Reclamation, near Halsted and Chicago Ave",
-  "description": "Dara is a compact, densely energetic woman with dark olive skin, heavy black eyebrows she has never once thought to alter, and grey threading through tight black curls she keeps pulled back. She has a subdermal health-monitoring implant on her inner wrist — standard for clinic workers — but her most distinctive feature is purely biological: she has the kind of face that defaults to concerned even when she isn't, an expression her patients mistake for worry and which is actually just her thinking. She wears her clinic jacket everywhere, even off shift, which she considers a kind of liability and hasn't stopped doing.\n\nShe has worked the Ironvein Free Clinic for fourteen years, funded by a patchwork of neighborhood donations, a small Axiom charitable grant she has to re-apply for annually and hates, and what she politely calls community contributions. The clinic is not licensed by any corponation medical authority, which means it operates in a legal grey zone that gets darker some years than others. She has delivered children, set fractures, managed chronic conditions on medication dosages she calculates by hand because the patients can't afford proper automated dispensers, and once kept a man alive for six hours with equipment held together by improvisation while waiting for a transfer that almost didn't come. She does not discuss this. She is not a martyr. She is exhausted and committed and clear-eyed about both.",
+  "description": "Aero Sow is a compact, densely energetic woman with dark olive skin, heavy black eyebrows she has never once thought to alter, and grey threading through tight black curls she keeps pulled back. She has a subdermal health-monitoring implant on her inner wrist — standard for clinic workers — but her most distinctive feature is purely biological: she has the kind of face that defaults to concerned even when she isn't, an expression her patients mistake for worry and which is actually just her thinking. She wears her clinic jacket everywhere, even off shift, which she considers a kind of liability and hasn't stopped doing.\n\nShe has worked the Ironvein Free Clinic for fourteen years, funded by a patchwork of neighborhood donations, a small Axiom charitable grant she has to re-apply for annually and hates, and what she politely calls community contributions. The clinic is not licensed by any corponation medical authority, which means it operates in a legal grey zone that gets darker some years than others. She has delivered children, set fractures, managed chronic conditions on medication dosages she calculates by hand because the patients can't afford proper automated dispensers, and once kept a man alive for six hours with equipment held together by improvisation while waiting for a transfer that almost didn't come. She does not discuss this. She is not a martyr. She is exhausted and committed and clear-eyed about both.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -171,7 +171,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,32 +239,15 @@
     "The Narrows Compact",
     "WELLSPRING",
     "Ironvein",
+    "GLMZ",
     "The Gradient Compact",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Pellucid Systems",
     "Chicago",
-    "Aurochs Medical Complex",
-    "Breck Tannen",
-    "Fanta Popov-Adjei",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kairos",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Obafemi Szczypiński-Lautoa",
-    "Oluwadarasimi Pettersson-Faye",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Praevex",
-    "Slagworks Industrial",
-    "The Narrows",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vuk Jorgensen-Toure"
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American (29.6%), Northern European (19.0%), Middle Eastern (18.3%), Hispanic/Latin American (15.9%), East Asian (9.7%), Sub-Saharan African (7.5%) — a complex global ancestry reflecting the Ubiquitous Diaspora. Her features show the blended result: warm brown skin with subtle olive and reddish undertones from the convergence of Indigenous American, Hispanic, and Middle Eastern ancestry, enriched by East Asian and African heritage creating depth and complexity in her complexion.",
+    "heritage": "Southeast Asian (45.4%), Sub-Saharan African (31.7%), South Asian (16.6%), East Asian (6.3%) — a convergence of deep pan-Asian and African ancestry reflecting the Ubiquitous Diaspora. Her features show this dominant blend: warm golden-brown skin with subtle amber and warm undertones from the Southeast Asian and South Asian mix, enriched by Sub-Saharan depth creating luminosity and complexity in her complexion.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and densely muscled, economical in frame. Years of standing, lifting patients, and moving quickly through clinic corridors have built functional strength without bulk. No softness.",
@@ -272,8 +255,8 @@
     "hair_style": "Pulled back tightly, usually in a braid or secured knot. Practical. Never decorative.",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Dark brown, unremarkable",
-    "skin_tone": "Warm medium-brown with olive undertones and subtle reddish warmth, reflecting the blend of Indigenous American, Hispanic, Middle Eastern, and East Asian ancestry with Sub-Saharan depth",
-    "complexion": "Weathered but healthy. Fine lines around eyes and mouth from squinting at work and expressions of concentration. Heavy, natural black eyebrows she has never altered. No makeup. Slight tension in the jaw at rest. Her face defaults to a concerned expression even in neutral state — a biological resting expression, not an emotional one. Facial structure shows the blended heritage: slightly broader cheekbones from Indigenous American ancestry, subtle Middle Eastern nose structure, East Asian eye shape contributing to her serious, focused gaze.",
+    "skin_tone": "Warm golden-brown with amber undertones, deep luminous quality from Sub-Saharan richness blended with Southeast Asian warmth and South Asian undertones",
+    "complexion": "Weathered but healthy. Fine lines around eyes and mouth from squinting at work and expressions of concentration. Heavy, natural black eyebrows she has never altered. No makeup. Slight tension in the jaw at rest. Her face defaults to a concerned expression even in neutral state — a biological resting expression, not an emotional one. Facial structure shows the blended heritage: prominent Southeast Asian cheekbones with broad planes, South Asian nose structure with subtle width, East Asian eye shape contributing to her serious focused gaze, Sub-Saharan fullness in lips and facial width creating approachable warmth despite her stern demeanor.",
     "distinguishing_marks": [
       "Small linear scar on left index finger from a scalpel slip during her first year at the clinic",
       "Faint white line across her right knuckle from a door latch accident in her thirties",
@@ -283,17 +266,45 @@
     "posture_movement": "Alert, efficient posture. She moves with purpose and minimal wasted motion. Stands slightly forward on the balls of her feet, ready to respond. Her hands move deliberately — a practiced bedside manner that reads as both competent and careful. Rarely sits still. When she does sit, she sits at the edge of seats, as if prepared to stand again at any moment.",
     "clothing_style": "Her clinic jacket — faded grey-blue, synthetic blend, bearing small stains and worn cuffs — is her default outer layer regardless of shift status. Beneath: simple t-shirts or long-sleeved shirts in muted colors (grey, black, dark green). Worn utility pants with deep pockets for medical supplies and patient notes. Scuffed, functional shoes with arch support. No jewelry. Minimal personal ornamentation. Tier 4 working-class, practical to the point of invisibility. The clinic jacket is her uniform and her shield, and she knows it."
   },
-  "image_prompt": "Aero Haraldsen, 158cm tall, compact muscular frame, warm medium-brown skin with olive undertones, blended Indigenous American and global heritage ancestry visible in facial structure and complexion. Black hair with grey threading pulled back in tight braid, dark brown eyes showing concentration and concern even at rest. Fine lines around eyes, natural heavy black eyebrows, no makeup, slight jaw tension. Wearing faded grey-blue clinic jacket over dark long-sleeved shirt, worn utility pants, scuffed supportive shoes. Subdermal health implant visible as faint geometric outline on inner left wrist. Alert posture, standing forward on balls of feet, hands positioned deliberately. Small scars on left index finger and right knuckle visible. Clinic corridor background, cool overhead lighting, tired but focused expression. Cyberpunk 2226, Great Lakes Metropolitan Zone, working-class medical professional, practical and shield-like presence. --ar 2:3 --v 6",
+  "image_prompt": "Aero Sow, 158cm compact frame, dark golden-brown skin with warm amber undertones reflecting Southeast Asian, Sub-Saharan African, South Asian, and East Asian heritage blend. Black hair shot through with grey, pulled back tightly in a braid. Dark brown eyes, serious focused expression, fine lines at eyes and mouth, prominent Southeast Asian cheekbones, South Asian nose, East Asian eye shape, Sub-Saharan lip fullness. Weathered but healthy complexion, no makeup. Faint geometric scar outline of subdermal implant on inner left wrist. Wearing faded grey-blue clinic jacket with worn cuffs over dark muted t-shirt, utility pants with deep pockets, scuffed arch-support shoes. Alert posture, standing forward on balls of feet, hands positioned carefully. Small linear scar on left index finger, callused palms. GLMZ, Great Lakes Metropolitan Zone clinic setting, cool fluorescent overhead lighting casting slight shadows on her concentrated expression, clinical but human presence, ready to respond, tier 4 working-class medical professional. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 29.6,
-    "Northern European": 19.0,
-    "Middle Eastern": 18.3,
-    "Hispanic/Latin American": 15.9,
-    "East Asian": 9.7,
-    "Sub-Saharan African": 7.5
+    "Southeast Asian": 45.4,
+    "Sub-Saharan African": 31.7,
+    "South Asian": 16.6,
+    "East Asian": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 35.6
+      },
+      "Vietnamese": {
+        "Vietnamese": 2.1
+      },
+      "Thai": {
+        "Thai": 7.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 31.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Kannada": 14.8,
+        "Gujarati": 1.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 2.6,
+        "Mandarin Northern": 3.7
+      }
+    }
+  }
 }

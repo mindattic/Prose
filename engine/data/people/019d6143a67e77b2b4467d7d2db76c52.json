@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67e77b2b4467d7d2db76c52",
   "type": "character",
-  "name": "Olumide Haugen",
+  "name": "Ibrahim Ghorbani",
   "aliases": [
     "Sweetmouth",
     "Lami"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Western and Division",
-  "description": "Olamide is a broad-shouldered woman with dark amber skin mapped in old burn scars along her left forearm — souvenirs from a grease fire twenty years back that she wears without shame. Her hair is a natural silver-streaked corona she keeps pinned under a bright saffron headwrap during service, and she has cosmetic patterned irises done in deep indigo whorls that she got when her youngest turned ten, as a treat to herself. Her stall is a masterpiece of organized chaos: three burners, a recycled heat-drum, seventeen unlabeled spice jars arranged in an order only she understands, and a hand-painted sign reading SWEETMOUTH in three scripts. She moves behind the counter with the unhurried authority of someone who has never once doubted she belongs exactly where she is.\n\nShe is relentlessly sociable in the way of someone who has learned that warmth is a survival tool and then genuinely come to love it. She remembers every regular's order and their children's names and their mother's health complaints. She is also unflinching when she needs to be — she has run the same stall through two gang territory disputes and one Ferrogate Transit labor riot, serving both sides without commentary. She prays to the E.L.F. she calls Saltmother, a market-spirit she believes governs honest commerce, and leaves data-offerings of her daily transaction logs at a small shrine wired into her heat-drum.",
+  "description": "Ibrahim Ghorbani is a broad-shouldered woman with dark amber skin mapped in old burn scars along her left forearm — souvenirs from a grease fire twenty years back that she wears without shame. Her hair is a natural silver-streaked corona she keeps pinned under a bright saffron headwrap during service, and she has cosmetic patterned irises done in deep indigo whorls that she got when her youngest turned ten, as a treat to herself. Her stall is a masterpiece of organized chaos: three burners, a recycled heat-drum, seventeen unlabeled spice jars arranged in an order only she understands, and a hand-painted sign reading SWEETMOUTH in three scripts. She moves behind the counter with the unhurried authority of someone who has never once doubted she belongs exactly where she is.\n\nShe is relentlessly sociable in the way of someone who has learned that warmth is a survival tool and then genuinely come to love it. She remembers every regular's order and their children's names and their mother's health complaints. She is also unflinching when she needs to be — she has run the same stall through two gang territory disputes and one Ferrogate Transit labor riot, serving both sides without commentary. She prays to the E.L.F. she calls Saltmother, a market-spirit she believes governs honest commerce, and leaves data-offerings of her daily transaction logs at a small shrine wired into her heat-drum.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -156,7 +156,7 @@
     "Loyal Dog": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,35 +176,19 @@
     "The Oxidian Market",
     "Ferrogate Transit",
     "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Plot 17",
     "Geartown",
     "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Silver",
     "Coronal Discharge Projector CDP-9 'Sunburn'",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Silver",
-    "Alper Lebedev-Tutu",
+    "Indigo",
     "Arcturus KS-7 'Nursery'",
-    "Bohuslav Enyinnaya-Čermák",
-    "Devraj Solano-Yildirim",
-    "Kairos",
-    "Kang-Petrov Arms KPM-6 'Equalizer'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Plot 17",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Bazaar",
-    "The Counter",
-    "The Iron Lotus",
-    "The Ledger",
-    "The Pure Hand",
-    "The Renaissance Axis",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+    "Honest Burger"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (55.1%) with significant East Asian (34.7%) and Northern European (10.2%) ancestry, creating a striking blend of deep African features with subtle East Asian eye structure and minimal Northern European undertones",
+    "heritage": "Richly multihued global ancestry: Middle Eastern foundation (28.8%) with substantial Southeast Asian (23.8%) and South Asian (19.0%) heritage, blended with Hispanic/Latin American (17.8%), Sub-Saharan African (8.9%), and Eastern European (1.7%) elements. This creates a complex interplay of warm Mediterranean, tropical, and deep earthy tones—a face and form shaped by the Ubiquitous Diaspora's genuine global mixture",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid through the torso, muscular forearms from decades of stall work, carries weight with functional density rather than softness",
@@ -212,24 +196,85 @@
     "hair_style": "Worn loose in a natural texture, typically pinned under a bright saffron headwrap during service hours",
     "hair_length": "Medium (shoulder-length when unwrapped)",
     "eye_color": "Cosmetic indigo with deep whorled patterning, replacing natural brown",
-    "skin_tone": "Deep warm brown with golden undertones, rich and luminous",
-    "complexion": "Weathered and lived-in, minimal makeup, laugh lines around the eyes, expressions that shift easily between warmth and shrewd assessment. High cheekbones with subtle East Asian influence, broad nose, full lips characteristic of Sub-Saharan ancestry",
+    "skin_tone": "Rich warm bronze with olive, golden, and deep earthy undertones—the luminous result of Middle Eastern, Southeast Asian, South Asian, and Sub-Saharan African ancestry layered together in lived-in complexity",
+    "complexion": "Weathered and lived-in, minimal makeup, laugh lines around the eyes, expressions that shift easily between warmth and shrewd assessment. High cheekbones with Southeast Asian influence, defined nose bridge reflecting Middle Eastern and South Asian ancestry, full lips, skin texture showing the depth that comes from complex ancestry—warm undertones with subtle variation across the face",
     "distinguishing_marks": [
-      "Extensive burn scarring along the left forearm in irregular patches, pale against dark skin, from a grease fire approximately twenty years prior",
+      "Extensive burn scarring along the left forearm in irregular patches, pale against warm bronze skin, from a grease fire approximately twenty years prior",
       "Fine white scar tissue visible on the back of both hands from kitchen work spanning decades"
     ],
     "visible_augmentations": "Patterned indigo cosmetic irises. Left hand shows faint subdermal heat-resistance scarring at the palm and inner wrist (functional implant, not cosmetic) with slightly altered pigmentation in the scarred tissue.",
     "posture_movement": "Moves behind her counter with unhurried authority and economic precision. Stands with weight evenly distributed, shoulders back. Gestures while speaking are animated but never wasted. Pivots and turns with practiced efficiency from years of stall operation.",
     "clothing_style": "Tier 3-4 working practical: fitted thermal undershirt visible at collar, layered with a heavy linen apron stained with turmeric and old grease burns, the fabric faded and reinforced at the edges. Wears a bright saffron headwrap during service (color choice deliberate, not functional). Simple brass jewelry—a bracelet her mother gave her, a ring on her right hand. Comfortable work boots with reinforced soles. Off-hours: similar utilitarian style, slightly less stained, with a heavier outer layer."
   },
-  "image_prompt": "Olumide Haugen, 168cm African-East Asian woman, deep warm golden-brown skin with luminous undertones, natural black hair with silver streaks worn loose and shoulder-length, cosmetic indigo eyes with whorled patterning, strong high cheekbones, broad nose, full lips. Muscular forearms scarred from old grease fire, pale scarring visible on hands. Wearing faded saffron headwrap, turmeric-stained linen apron over thermal undershirt, simple brass jewelry, work boots. Standing behind market stall with unhurried authority, warm weathered expression with laugh lines, animated gestures, cyberpunk 2226 Great Lakes Metropolitan Zone. Dim warm overhead lighting with amber undertones, market atmosphere, functional practical aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Ibrahim Ghorbani, 168cm tall with rich warm bronze skin blending Middle Eastern, Southeast Asian, South Asian, African, and Hispanic ancestry—complexion luminous with olive and golden undertones. Broad-shouldered, functionally muscular build. Natural black hair with silver streaks worn loose at shoulder-length, typically pinned under bright saffron headwrap. Weathered lived-in face: high Southeast Asian cheekbones, defined nose bridge, full lips, laugh lines, shrewd warm expression. Cosmetic indigo whorled-pattern eyes replacing natural brown. Extensive pale burn scarring on left forearm, fine white scars on both hands from decades of kitchen work. Left hand shows subtle heat-resistance implant scarring with altered pigmentation. Wearing faded linen apron stained with turmeric and grease, fitted thermal undershirt, simple brass jewelry (mother's bracelet, right hand ring), reinforced work boots. Standing behind counter with unhurried authority, weight evenly distributed, posture precise. GLMZ street-level food stall setting, warm task lighting, gritty GLMZ atmosphere, practical utilitarian style --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 55.1,
-    "East Asian": 34.7,
-    "Northern European": 10.2
+    "Middle Eastern": 28.8,
+    "Southeast Asian": 23.8,
+    "South Asian": 19,
+    "Hispanic/Latin American": 17.8,
+    "Sub-Saharan African": 8.9,
+    "Eastern European": 1.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 19.2
+      },
+      "Kurdish": {
+        "Kurdish": 4.1
+      },
+      "Persian": {
+        "Iranian": 5.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 23.8
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.1
+      },
+      "Indian": {
+        "Bengali": 4.2,
+        "Telugu": 0.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 6.4,
+        "Sinhalese": 3.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 7.5,
+        "Puerto Rican": 4.5
+      },
+      "Mexican": {
+        "Mexican": 5.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 6.5
+      },
+      "West African": {
+        "Nigerian": 1.7,
+        "Liberian": 0.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 0.2,
+        "Romanian": 0.8
+      },
+      "Slavic South": {
+        "Croatian": 0.7
+      }
+    }
+  }
 }

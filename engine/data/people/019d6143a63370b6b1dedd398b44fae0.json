@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63370b6b1dedd398b44fae0",
   "type": "character",
-  "name": "Elsa Thakur",
+  "name": "Zuri Makwa",
   "aliases": [
     "Patch"
   ],
@@ -12,7 +12,7 @@
   "age": 41,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Milwaukee and North Ave",
-  "description": "Ingrid is a compact woman with dark brown skin and frost-pale freckles scattered across her nose and cheekbones — a genetic echo of her Finnish grandfather that surprises people expecting uniformity. Her hair grows in dense coils that she keeps pinned under a faded surgical cap she has not replaced in six years. Her hands are her most remarkable feature: steady, large-knuckled, permanently stained with the blue-gray residue of antiseptic gel. She wears magnification implants that give her left eye a slightly oversized, luminous quality, like a cat watching from a dim room.\n\nPatch is brusque in the way of people who have learned that warmth invites dependency they cannot sustain. She charges what people can pay — sometimes nothing, sometimes a favor, sometimes the Φ40 she actually needs for supply runs. She keeps a small data-shrine to the E.L.F. known as Suture-3 above her surgical table: a tangle of copper wire and expired med-patch wrappers, to which she mutters brief petitions before complicated procedures. She does not talk about where she trained.",
+  "description": "Zuri Makwa is a compact woman with dark brown skin and frost-pale freckles scattered across her nose and cheekbones — a genetic echo of her Finnish grandfather that surprises people expecting uniformity. Her hair grows in dense coils that she keeps pinned under a faded surgical cap she has not replaced in six years. Her hands are her most remarkable feature: steady, large-knuckled, permanently stained with the blue-gray residue of antiseptic gel. She wears magnification implants that give her left eye a slightly oversized, luminous quality, like a cat watching from a dim room.\n\nPatch is brusque in the way of people who have learned that warmth invites dependency they cannot sustain. She charges what people can pay — sometimes nothing, sometimes a favor, sometimes the Φ40 she actually needs for supply runs. She keeps a small data-shrine to the E.L.F. known as Suture-3 above her surgical table: a tangle of copper wire and expired med-patch wrappers, to which she mutters brief petitions before complicated procedures. She does not talk about where she trained.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -179,7 +179,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,40 +232,22 @@
     "The Narrows Compact",
     "The CEO",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "GLMZ",
     "The Gradient Compact",
-    "VitaCore FlowGuard Hemodynamic Regulator",
     "Residue (I Still Have Your Feed)",
+    "VitaCore FlowGuard Hemodynamic Regulator",
     "The Suture Collective",
+    "Copper",
+    "Frost",
     "Gravimetric Collapse Charge GCC-9",
     "The Pure Hand",
-    "Copper",
+    "Compass Rose",
     "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Aurochs Medical Complex",
-    "Crucible TR-7 'Triage'",
-    "Devraj Solano-Yildirim",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Night Market Noodles",
-    "Nkechi Alvarado-Ostrowski",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Orbital Drop Pod",
-    "Philibert Mwangi-Djordjevic",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sustrel",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Gauze",
-    "The Narrows",
-    "The Quiet Room",
-    "Yannick Tambadou-Reinholt"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic blend: South Asian (30.6%), Northern European (27.5%), Sub-Saharan African (26.1%), and Hispanic/Latin American (15.8%). This combination produces warm-toned deep brown skin with subtle undertones reflecting the global mix, fine freckle patterns across cheekbones and nose bridge, and naturally textured hair with salt-and-pepper threading.",
+    "heritage": "Complex multiethnic blend: Indigenous American (38.8%), Sub-Saharan African (27.3%), South Asian (25.3%), and East Asian (8.6%). This combination produces warm-toned deep brown skin with golden and reddish undertones, high prominent cheekbones characteristic of Indigenous and South Asian genetics, and naturally textured hair with premature salt-and-pepper threading.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and lean, muscled through the shoulders and forearms from years of precise manual work. No excess fat; efficient frame built for long hours standing at a surgical table.",
@@ -273,8 +255,8 @@
     "hair_style": "Coiled, kept pinned beneath a faded surgical cap; rarely fully exposed",
     "hair_length": "Medium (when unpinned, falls to mid-neck)",
     "eye_color": "Left eye: augmented with a slightly yellowed surgical-grade magnification lens giving it an enlarged, luminous quality. Right eye: dark brown, unmodified.",
-    "skin_tone": "Warm-toned deep brown with golden and reddish undertones reflecting South Asian, Sub-Saharan African, and Hispanic ancestry blending",
-    "complexion": "Weathered but not aged; scattered frost-pale freckles across nose and cheekbones from Northern European ancestry. Hands permanently stained with antiseptic residue in the nail beds and callus creases. Fine lines around the eyes from years of precision work under poor lighting. High cheekbones with slight width characteristic of South Asian-African genetic blending.",
+    "skin_tone": "Warm-toned deep brown with golden and reddish undertones from the blending of Indigenous American, Sub-Saharan African, and South Asian ancestry",
+    "complexion": "Weathered but not aged; high, prominent cheekbones with angular structure characteristic of Indigenous and South Asian-African genetic blending. Face shows fine lines around the eyes from years of precision work under poor lighting. Hands permanently stained with antiseptic residue in the nail beds and callus creases.",
     "distinguishing_marks": [
       "Faint burn scar on the inside of her left wrist, approximately 3cm long, pale and old.",
       "Small laceration scar above her right eyebrow, approximately 1cm, barely visible but present when light hits certain angles.",
@@ -284,15 +266,46 @@
     "posture_movement": "Economical and still; moves with the precision of someone who has trained their body not to waste energy. Stands with weight balanced slightly forward, ready. Her hands are rarely still — they fidget with instruments, surgical gloves, or the copper wire tangle of her data-shrine. Eye contact is direct but brief, the gaze of someone used to evaluating injury rather than engaging socially.",
     "clothing_style": "Tier 5 utilitarian: faded surgical cap (six years old, stained, but functional); a grease-stained white coat over a dark synthetic tank top; cargo pants with multiple pockets filled with medical supplies; worn boots with reinforced soles for standing. No jewelry. A worn cloth wristband on her left wrist conceals the old burn scar. Everything is functional, nothing is new, everything is clean enough to work in."
   },
-  "image_prompt": "Elsa Thakur, a 162cm surgical tech with warm deep brown skin and multiethnic features, standing in a dimly lit underground clinic. She wears a faded six-year-old surgical cap over black hair with salt-and-pepper threading, a stained white coat over dark synthetic tank top, and cargo pants. Her left eye gleams with a yellowed surgical-grade magnification implant; her right eye is naturally dark brown. Freckles scatter across her nose and high cheekbones. Antiseptic stains mark her hands and fingernails. She stands with economical precision, barely still, one hand near a copper wire data-shrine. A faint burn scar is concealed under her left wrist's cloth band. Cyberpunk 2226, Great Lakes Metropolitan Zone clinic aesthetic, cool blue-green surgical lighting casting shadows, worn utilitarian gear, the gaze of someone used to evaluating injury --ar 2:3 --v 6",
+  "image_prompt": "Zuri Makwa, a 162cm compact lean surgical technician in her 40s with warm deep brown skin with golden and reddish undertones. High prominent angular cheekbones reflecting Indigenous American, Sub-Saharan African, and South Asian ancestry. Black hair with salt-and-pepper threading at temples, coiled and pinned under a faded six-year-old surgical cap. Left eye augmented with yellowed surgical magnification lens, luminous and oversized; right eye dark brown and unmodified. Fine lines around eyes from precision work under poor lighting. Faint burn scar on inner left wrist, small laceration scar above right eyebrow. Chronic blue-gray discoloration in fingernails from antiseptic exposure. Wearing faded white surgical coat stained with grease over dark synthetic tank, cargo pants with multiple pockets, worn reinforced boots. Worn cloth wristband on left wrist. Posture economical and precise, weight forward. Hands fidgeting with surgical instruments. Direct brief eye contact. GLMZ, Great Lakes Metropolitan Zone, dimly lit underground clinic with neon-edged surgical lighting, focused and evaluative expression, utilitarian and functional. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 30.6,
-    "Northern European": 27.5,
-    "Sub-Saharan African": 26.1,
-    "Hispanic/Latin American": 15.8
+    "Indigenous American": 38.8,
+    "Sub-Saharan African": 27.3,
+    "South Asian": 25.3,
+    "East Asian": 8.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 34.7,
+        "Mapuche": 4.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 8.3
+      },
+      "East African": {
+        "Somali": 1.8,
+        "Ethiopian": 17.2
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 25.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.6
+      },
+      "Chinese": {
+        "Shanghainese": 4.3,
+        "Hakka": 1.7
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a77ce89b533d6383e67d5f",
   "type": "character",
-  "name": "Flux Soriano",
+  "name": "Flux Petrović",
   "aliases": [
     "Scratch Saint",
     "Ali"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Edgewater Prism, owns a studio called Meridian Flesh on the third floor of a converted light-industrial building, near Clark and Belmont",
-  "description": "Alistair is a large man who carries himself with the deliberate calm of someone who learned early that large men moving quickly frighten people. His Malian-Yoruba-Welsh heritage is apparent in his height — he got the build from somewhere in that chain — and the particular architecture of his face: a broad forehead, heavy brow, warm dark skin, a flat nose his Welsh great-grandmother would have described as a gift, and eyes he has modified to a deep photochromatic violet that darkens to near-black in bright light. His arms are extensively tattooed in his own work, a living portfolio that has evolved over twenty years — the older pieces fading beneath newer ones in deliberate palimpsest. He wears his graying locs pinned up when working and lets them fall to his shoulders otherwise.\n\nMeridian Flesh is one of the most respected body art studios in Edgewater Prism, operating in a tier that serves both clients who want cosmetic geneware integration and clients who want work that means something. Alistair does not distinguish between the two in terms of attention, but he does distinguish in terms of conversation — he will talk for an hour with a client who knows what they want and why, and simply be professionally efficient with a client who just wants the cat ears everyone else has. He has opinions about the difference between body art and body decoration and will share them if asked, diplomatically, and will share them if not asked, less diplomatically after his second cup of coffee.",
+  "description": "Flux Petrović is a large man who carries himself with the deliberate calm of someone who learned early that large men moving quickly frighten people. His Malian-Yoruba-Welsh heritage is apparent in his height — he got the build from somewhere in that chain — and the particular architecture of his face: a broad forehead, heavy brow, warm dark skin, a flat nose his Welsh great-grandmother would have described as a gift, and eyes he has modified to a deep photochromatic violet that darkens to near-black in bright light. His arms are extensively tattooed in his own work, a living portfolio that has evolved over twenty years — the older pieces fading beneath newer ones in deliberate palimpsest. He wears his graying locs pinned up when working and lets them fall to his shoulders otherwise.\n\nMeridian Flesh is one of the most respected body art studios in Edgewater Prism, operating in a tier that serves both clients who want cosmetic geneware integration and clients who want work that means something. Flux Petrović does not distinguish between the two in terms of attention, but he does distinguish in terms of conversation — he will talk for an hour with a client who knows what they want and why, and simply be professionally efficient with a client who just wants the cat ears everyone else has. He has opinions about the difference between body art and body decoration and will share them if asked, diplomatically, and will share them if not asked, less diplomatically after his second cup of coffee.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -178,7 +178,7 @@
     "Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,36 +237,11 @@
     "Pilsen Veil",
     "Grandmother",
     "The Heritage Vault",
-    "Arcturus CK-5 'Bloodhound'",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Auricula Felis Modification",
-    "Bathysphere Networks",
-    "Brewer's Spine",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Helix Biosystems",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "Lazarus EC-4 'Companion'",
-    "LifeWire EvenKeel Mood Regulation Implant",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Mika Sorel",
-    "Nurlan Morita-Antwi",
-    "Slagworks Industrial",
-    "SynapTech AromaVeil Olfactory Filter",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Burden Clause",
-    "The Nearfield",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant Middle Eastern, Sub-Saharan African, and Eastern European ancestry — a complex blend that reads as warm deep brown skin with subtle reddish undertones, strong bone structure reflecting Mediterranean and Levantine features, and the build characteristic of West African genetic distribution",
+    "heritage": "Eurasian blend with Eastern European dominance (58.6%) tempered by Hispanic/Latin American (26.3%) and East Asian (15.1%) ancestry — creating a warm medium-brown complexion with golden undertones, Slavic angular bone structure softened by subtle East Asian eye geometry, and a substantial build reflecting the distributed genetics of his diverse heritage",
     "height_cm": 193,
     "weight_kg": 104,
     "build": "Large-framed and broad-shouldered with substantial muscle mass carried without aggression; deliberate in movement, economical in gesture. The weight is distributed across a solid foundation — not fat, not bodybuilder-sculpted, but the build of someone who has spent two decades standing at a workstation with precision tools",
@@ -274,8 +249,8 @@
     "hair_style": "Worn in locs, typically pinned up during work hours in a loose crown; worn loose and falling to shoulders in off-hours",
     "hair_length": "Medium to Long (pinned and loose respectively)",
     "eye_color": "Photochromatic iris modification — deep violet in normal light, darkening to near-black in bright light; modification was integrated at the sclera level with subtle luminescence at the edges of the iris during transition",
-    "skin_tone": "Warm deep brown with reddish undertones; even pigmentation with age-appropriate weathering reflecting the blended heritage of Hispanic/Latin American, Middle Eastern, Sub-Saharan African, and Eastern European ancestry",
-    "complexion": "Clean-shaven or very close-cropped facial hair; no visible scarring on the face; the skin shows the even tone of someone who takes care of it and who spends controlled hours indoors under studio lighting. Strong cheekbones and defined jawline reflecting mixed heritage. His expression defaults to calm attentiveness — the resting face of someone listening",
+    "skin_tone": "Warm medium brown with subtle golden undertones; even pigmentation with age-appropriate weathering reflecting the balanced blend of Eastern European, Hispanic/Latin American, and East Asian ancestry",
+    "complexion": "Clean-shaven or very close-cropped facial hair; no visible scarring on the face; the skin shows the even tone of someone who takes care of it and who spends controlled hours indoors under studio lighting. Angular Slavic cheekbones and defined jawline with subtle monolid characteristics and soft eye-shape geometry from East Asian ancestry. His expression defaults to calm attentiveness — the resting face of someone listening",
     "distinguishing_marks": [
       "Both forearms and upper arms are extensively tattooed in overlapping designs spanning twenty years of his own work — a living portfolio of evolving style with deliberate palimpsest layering where newer pieces integrate with and reference older work beneath them",
       "Bioluminescent gene-mod design running the length of his spine beneath the skin — a trail of symbols in a script of his own invention, visible as subtle tracery under the skin in daylight and fully luminescent (soft blue-white) only in complete darkness"
@@ -284,15 +259,46 @@
     "posture_movement": "Moves with deliberate slowness and precision — a conscious choice to avoid the threat-response that large men moving quickly can trigger. His posture is upright and open, shoulders relaxed. When working, he enters a state of focused stillness, hands moving with surgical precision while the rest of his body remains stable. In conversation, he makes direct eye contact and lets silences sit without filling them",
     "clothing_style": "Studio uniform consists of fitted dark clothing (black or dark gray) that doesn't show pigment transfer from his work — typically well-tailored technical trousers and a long-sleeve compression shirt or fitted henley that displays his tattoo work on the forearms and upper arms. Over this, he wears a custom lab coat in matte black or dark charcoal with reinforced cuffs and an internal array of tool pockets; the coat fits him precisely and is clearly tailored for someone his size. Outside the studio, he wears similar colors and fits — quality technical fabrics, Tier 3 sustainable brands (Refugium, Reweave collective), no logos or corporate affiliation. His jewelry is minimal: a wedding band in dark platinum, and occasionally a single silver ring on his right index finger that he removes during client work. His locs are typically secured with silver or dark metal cuffs when pinned. There is no aspect of his appearance that reads as ostentatious, but everything reads as chosen and maintained with intention"
   },
-  "image_prompt": "Flux Soriano, 193cm tall broad-shouldered precision craftsman with warm deep brown skin and reddish undertones, dark locs pinned in loose crown with silver cuffs, distinctive photochromatic violet eyes with subtle luminescence at iris edges. Extensive layered tattoo work covering both forearms and upper arms in evolving palimpsest style. Wearing custom matte black lab coat with reinforced cuffs over fitted compression shirt, dark technical trousers, dark platinum wedding band visible. Clean-shaven, calm attentive expression, upright open posture. Standing in cyberpunk 2226 precision studio with soft studio lighting illuminating his face and arm tattoos, dark minimalist background, professional and intentional aesthetic, Tier 3 sustainable technical fabrics, no corporate branding. Mood: focused, patient, masterful. Cyberpunk 2200s aesthetic, warm studio lighting --ar 2:3 --v 6",
+  "image_prompt": "Flux Petrović, 2226 neo-noir artisan — tall 193cm broad-shouldered Eastern European-Hispanic-East Asian man with warm medium-brown skin and golden undertones. Dark brown locs with silver threading, half-pinned in deliberate crown style. Striking photochromatic violet eyes glowing at edges with bio-modification luminescence. Clean-shaven with angular Slavic cheekbones softened by subtle East Asian geometry. Extensive layered tattoo portfolio across both forearms and upper arms — twenty years of intricate overlapping designs showcasing professional craftsmanship. Wearing custom tailored black matte lab coat with reinforced cuffs and precision tool pockets over fitted dark compression henley. Dark platinum wedding band, minimal silver jewelry. Positioned in studio workspace under controlled lighting, hands poised with surgical precision over precision tools. Posture upright and open, expression of calm attentiveness. Direct eye contact, still and deliberate. No ostentatious elements — everything intentional and chosen. GLMZ 2200s aesthetic, professional precision workspace setting, studio ambient lighting with subtle luminescence from iris modification --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 53.7,
-    "Middle Eastern": 24.9,
-    "Sub-Saharan African": 16.3,
-    "Eastern European": 5.1
+    "Eastern European": 58.6,
+    "Hispanic/Latin American": 26.3,
+    "East Asian": 15.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 49.8
+      },
+      "Slavic East": {
+        "Russian": 4.5,
+        "Ukrainian": 4.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 12.3
+      },
+      "Central American": {
+        "Salvadoran": 6.1
+      },
+      "Caribbean": {
+        "Puerto Rican": 5.5,
+        "Haitian": 2.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 8.7
+      },
+      "Chinese": {
+        "Cantonese": 3.5,
+        "Shanghainese": 2.9
+      }
+    }
+  }
 }

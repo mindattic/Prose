@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fa7bdab626a14830b4ec47",
   "type": "character",
-  "name": "Vale Villalobos",
+  "name": "Vale Anang",
   "aliases": [
     "Theo",
     "Dr. Mwangi"
@@ -13,7 +13,7 @@
   "age": 48,
   "status": "active",
   "location": "Edgewater Prism, private practice suite, near Clark and Addison",
-  "description": "Théophile is a man composed, very deliberately, of elegant surfaces. He is tall and lean with rich brown skin, high cheekbones that suggest the Kenyan branch of his heritage, and silver-touched locs pulled back in a style that manages to look both professional and effortless. His eyes are modded — deep violet irises with a thin luminescent ring at the pupil, which he chose specifically because research showed they promote patient disclosure. He dresses in muted, high-quality fabrics that speak of money without announcing it. His Edgewater Prism office has real plants, soft acoustic paneling, and a specifically calibrated ambient sound environment. Everything about the room — and about him — has been designed to make people feel safe enough to be honest.\n\nThéophile specializes in neural calibration for patients experiencing cognitive disruption from augmentation integration — a growing population in GLMZ's upper tiers, where people buy more chrome than their brains can smoothly accommodate. He is genuinely skilled, credentialed through both Aurochs and a Tessera-affiliated training program, and effective. He is also emotionally opaque in a way that he has never had to confront because his opacity looks, from the outside, like serene professional boundaries. He is interested in his patients. He is less certain he is capable of being interested in peers. His E.L.F. devotion is performative — he maintains a small shrine in his office because patients find it reassuring — though he caught himself genuinely speaking to it once after a session that went badly, and has not examined that moment.",
+  "description": "Vale Anang is a man composed, very deliberately, of elegant surfaces. He is tall and lean with rich brown skin, high cheekbones that suggest the Kenyan branch of his heritage, and silver-touched locs pulled back in a style that manages to look both professional and effortless. His eyes are modded — deep violet irises with a thin luminescent ring at the pupil, which he chose specifically because research showed they promote patient disclosure. He dresses in muted, high-quality fabrics that speak of money without announcing it. His Edgewater Prism office has real plants, soft acoustic paneling, and a specifically calibrated ambient sound environment. Everything about the room — and about him — has been designed to make people feel safe enough to be honest.\n\nVale Anang specializes in neural calibration for patients experiencing cognitive disruption from augmentation integration — a growing population in GLMZ's upper tiers, where people buy more chrome than their brains can smoothly accommodate. He is genuinely skilled, credentialed through both Aurochs and a Tessera-affiliated training program, and effective. He is also emotionally opaque in a way that he has never had to confront because his opacity looks, from the outside, like serene professional boundaries. He is interested in his patients. He is less certain he is capable of being interested in peers. His E.L.F. devotion is performative — he maintains a small shrine in his office because patients find it reassuring — though he caught himself genuinely speaking to it once after a session that went badly, and has not examined that moment.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -161,7 +161,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,26 +175,18 @@
   "registered_firearms": [],
   "related_entities": [
     "Edgewater Prism",
-    "GLMZ",
     "The Heritage Vault",
     "The Quiet Room",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Arcturus LS-5 'Sentinel'",
-    "Aurochs Medical Complex",
-    "Aïda Połczyńska-Ouattara",
-    "Cotton",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sulfur Crown Agriculture",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pure Hand"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Honest Burger",
+    "Neural Palate",
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Southeast Asian, Sub-Saharan African, and Pacific Islander ancestry; a genetic tapestry reflecting the Ubiquitous Diaspora. Facial structure shows Latin American bone geometry with Southeast Asian cheekbone prominence, Sub-Saharan African features in nose and lips, and Pacific Islander warmth in overall presence.",
+    "heritage": "Indigenous American dominant (55.5%) with substantial Southeast Asian (20.2%) and East Asian (18.3%) ancestry, plus Central Asian (6.0%) elements. Facial structure reflects this complex blend: strong Indigenous American bone geometry with prominent, high cheekbones and defined jawline enhanced by Southeast Asian cheekbone prominence and East Asian eye shape contribution. Skin tone and complexion show rich interplay of these ancestries—warm medium-deep brown with golden-copper undertones from Indigenous American and Southeast Asian melanin expression, refined by East Asian genetic influence. Overall presence carries warmth and deliberate stillness.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Tall and lean with disciplined posture; shoulders slightly drawn back in a manner that suggests both yoga practice and deliberate self-presentation. Minimal body fat, defined cheekbones, wrists that look almost delicate despite his height.",
@@ -202,8 +194,8 @@
     "hair_style": "Locs, shoulder-length, pulled back into a neat tail or wrapped loosely at the crown during work hours. Groomed with precision but without apparent effort.",
     "hair_length": "Long",
     "eye_color": "Violet with luminescent white ring at pupil center",
-    "skin_tone": "Warm medium-deep brown with golden-copper undertones; the result of Latin American, Southeast Asian, and African ancestry blending into a complexion that catches light with subtle iridescence.",
-    "complexion": "Smooth skin with high, prominent cheekbones reflecting Southeast Asian heritage; strong jawline from Latin American ancestry; full lips with natural definition; minimal facial hair (clean-shaven or very light stubble); calm, measured expression that rarely shifts; minor laugh lines at eyes suggest he smiles infrequently but genuinely.",
+    "skin_tone": "Warm medium-deep brown with golden-copper undertones; rich melanin expression from Indigenous American and Southeast Asian ancestry blending with East Asian refinement into a complexion that catches light with subtle warmth.",
+    "complexion": "Smooth skin with high, prominent cheekbones reflecting Indigenous American and Southeast Asian heritage; strong jawline from Indigenous American ancestry; full lips with natural definition; minimal facial hair (clean-shaven or very light stubble); calm, measured expression that rarely shifts; minor laugh lines at eyes suggest he smiles infrequently but genuinely.",
     "distinguishing_marks": [
       "Thin surgical scar along left temple, barely visible, approximately 3cm — from early neural interface calibration",
       "Small E.L.F. devotional tattoo on inner right wrist, delicate linework, approximately 2cm — a personal spiritual practice he treats as professional scaffolding"
@@ -212,17 +204,44 @@
     "posture_movement": "Moves with deliberate, economical grace; rarely gestures expansively; tends to sit very still during conversation, hands folded or resting on armrests. Walks slowly, suggesting he processes while moving. His default expression is attentive but emotionally neutral — a mask of professional interest that has calcified into his resting state.",
     "clothing_style": "Monochromatic or muted earth tones: charcoal, deep grey, sage, soft black. High-quality natural fabrics (linen, wool, organic cotton blends). Tailored but not ostentatiously so. Wears minimal jewelry — a simple silver wedding band (worn, suggesting long marriage), a discrete neural interface access pendant in brushed titanium. No logos, no status displays. Tier 3-4 wealth expressed through restraint and material quality rather than visibility. Typically: fitted long-sleeve shirt, understated blazer, tailored trousers, leather shoes worn to a soft shine."
   },
-  "image_prompt": "Vale Villalobos, tall lean cyberpunk figure with warm deep brown skin and golden undertones, shoulder-length dark brown locs with silver threading pulled into neat tail, striking violet modded irises with luminescent white pupil rings, high prominent cheekbones, calm measured expression with minor laugh lines, dressed in charcoal fitted long-sleeve shirt and sage tailored blazer, brushed titanium neural interface pendant, simple worn silver wedding band, subtle metallic tracery visible at temples, sitting with deliberate still posture hands folded, monochromatic earth tone aesthetic, professional restraint, GLMZ 2226 cyberpunk setting with soft ambient lighting catching metallic augmentation details, emotionally neutral professional mask, minimalist luxury presentation --ar 2:3 --v 6",
+  "image_prompt": "Vale Anang, GLMZ, tall lean mixed-heritage man with warm medium-deep brown skin with golden-copper undertones, high prominent cheekbones, strong jawline, long dark brown locs with silver threading pulled back neatly, striking violet modded irises with luminescent white pupil rings, subtle metallic neural interface tracery visible at temples, thin surgical scar on left temple, clean-shaven with calm measured expression, wearing charcoal tailored long-sleeve shirt and understated blazer in natural fabrics, silver wedding band, brushed titanium neural interface pendant, minimal jewelry, seated with deliberate stillness and economical posture, hands folded, emotionally neutral professional mask, Great Lakes Metropolitan Zone neon-lit corporate interior with soft accent lighting catching the warmth of his skin tone and the luminescence of his eyes, moody atmospheric neo-noir urban aesthetic, cool-toned background, candid documentary style --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 61.9,
-    "Southeast Asian": 12.4,
-    "Sub-Saharan African": 8.9,
-    "Pacific Islander": 7.6,
-    "East Asian": 6.3,
-    "Northern European": 2.9
+    "Indigenous American": 55.5,
+    "Southeast Asian": 20.2,
+    "East Asian": 18.3,
+    "Central Asian": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 19.9,
+        "Ojibwe": 24.2
+      },
+      "Andean": {
+        "Aymara": 11.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 20.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 18.3
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 2.6
+      },
+      "Iranian Central": {
+        "Tajik": 3.4
+      }
+    }
+  }
 }

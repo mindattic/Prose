@@ -1,7 +1,7 @@
 {
   "id": "019d6143a675736ba7fc6619624cfd23",
   "type": "character",
-  "name": "Anya Bah-Popescu",
+  "name": "Tuva Bah-Kristjánsson",
   "aliases": [
     "Prism",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and Damen",
-  "description": "Obed Eriksson-Diallo are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 38, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a fixer out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nObed Eriksson-Diallo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Tuva Bah-Kristjánsson are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 38, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a fixer out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nTuva Bah-Kristjánsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.17,
@@ -262,7 +262,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,46 +277,22 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
     "The Unfinished Theorem",
     "Burden of Longitude",
-    "The Milwaukee Core",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Dzemal Acholonu-Patagiri",
-    "Emeka Johansson-Orozco",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Quilt",
-    "Slagworks Industrial",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA TN-1 'Cradle'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European, South Asian, Sub-Saharan African, Pacific Islander, and North African blend—a striking combination reflecting the Ubiquitous Diaspora. Genetic heritage manifests in warm-brown undertones with subtle olive and amber depth, sharp angular facial structure with broader cheekbones, and natural textural variation in hair.",
+    "heritage": "Northern European (50%), Sub-Saharan African (40%), and East Asian (10%) blend—a striking combination reflecting the Ubiquitous Diaspora. This genetic mix manifests in warm medium-brown skin with golden undertones, angular facial structure with prominent cheekbones balanced by subtle East Asian eye shape, and natural textural variation influenced by the fuller hair texture heritage of Sub-Saharan ancestry.",
     "height_cm": 188,
     "weight_kg": 102,
     "build": "Broad-shouldered and heavily muscled through the chest and core, carrying weight with deliberate solidity rather than softness. Their frame suggests functional strength — the kind built through labor or combat training, not aesthetics.",
     "hair_color": "Dark brown with silver-gray threading at the temples",
     "hair_style": "Pulled back tight, secured with a utilitarian clip. Pragmatic rather than fashionable.",
     "hair_length": "Medium",
-    "eye_color": "Pale gray-blue, alert and assessing",
-    "skin_tone": "Warm medium-brown with golden and olive undertones—the natural blend of Eastern European, South Asian, and Sub-Saharan ancestry combined with Pacific Islander influence. Rich depth that darkens slightly in shadow but luminous in direct light.",
-    "complexion": "Face is angular and weathered with prominent cheekbones and defined jaw structure typical of the ancestry blend. Minimal grooming beyond the functional — no visible cosmetics. Skin shows the wear of stress and environmental exposure. Faint scar tissue pattern along the left jawline. Nose structure reflects mixed heritage—refined bridge with subtle width.",
+    "eye_color": "Deep brown with gray undertones, alert and assessing",
+    "skin_tone": "Warm medium-brown with golden undertones—the natural blend of Northern European, Sub-Saharan African, and East Asian ancestry. Rich depth that darkens slightly in shadow but luminous in direct light.",
+    "complexion": "Face is angular and weathered with prominent cheekbones and defined jaw structure reflecting mixed heritage proportions. Minimal grooming beyond the functional — no visible cosmetics. Skin shows the wear of stress and environmental exposure. Faint scar tissue pattern along the left jawline. Nose structure reflects mixed heritage—refined bridge with subtle width and character.",
     "distinguishing_marks": [
       "Thin, pale scar running from left temple to cheekbone, roughly 8cm, acquired years ago",
       "Visible chrome seam along the sternum where synthetic lungs were installed — a deliberate choice to leave unsealed, letting metallic silver show beneath worn clothing",
@@ -326,16 +302,35 @@
     "posture_movement": "Carries themselves with the controlled tension of someone always assessing threat vectors. Movements are economical and deliberate — no wasted motion. They favor stillness over fidgeting; when they do move, it's purposeful. Their default expression is neutral to the point of opacity, a learned defense mechanism.",
     "clothing_style": "Tier 3-4 utilitarian. Worn synthetic jacket with reinforced seams and multiple pockets, the kind designed for function rather than fashion. Underneath, thermal layers in muted grays and blacks. Cargo pants with tool loops. Boots are heavy, practical, scuffed from actual use. Nothing new or shiny — everything has been broken in through real work. No corporate branding, but the gear quality suggests someone with steady income and practical priorities."
   },
-  "image_prompt": "Anya Bah-Popescu, 188cm tall muscular operative in cyberpunk 2226 GLMZ setting. Warm medium-brown skin with golden undertones, blending Eastern European and South Asian heritage. Angular weathered face with prominent cheekbones, pale gray-blue eyes alert and assessing. Dark brown hair with silver threading pulled back tight. Visible chrome seam along sternum showing synthetic lung system. Thin scar from temple to cheekbone. Wearing worn utilitarian synthetic jacket, reinforced and patched, thermal layers, cargo pants with tool loops, heavy scuffed boots. Standing in neon-lit industrial space, cool blue and amber lighting casting shadows across face. Controlled posture, neutral expression, hands showing calluses and work scars. Mechanical whisper of breathing audible in still air. Gritty, lived-in aesthetic, no corporate polish. Cyberpunk noir mood, functional and dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Tuva Bah-Kristjánsson, 188cm tall mixed-heritage neo-noir operative. Warm medium-brown skin with golden undertones, angular weathered face with prominent cheekbones, faint scar running left temple to cheekbone. Deep brown eyes alert and assessing. Dark brown hair with silver threading at temples, pulled back tight. Broad muscular build, deliberate posture of controlled tension. Worn synthetic jacket with reinforced seams, thermal layers underneath, heavy practical boots. Visible chrome seam at sternum where synthetic lungs were installed—silver metallic showing beneath clothing. Neo-noir Great Lakes Metropolitan Zone, 2226. Utilitarian, non-concealment aesthetic. Neutral expression. Industrial lighting, moody atmosphere, cinematic depth. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 27.6,
-    "South Asian": 25.3,
-    "Sub-Saharan African": 25.1,
-    "Pacific Islander": 13.2,
-    "North African": 8.8
+    "Northern European": 50.2,
+    "Sub-Saharan African": 40,
+    "East Asian": 9.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "English": 41.8,
+        "Irish": 8.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 40
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.4
+      },
+      "Chinese": {
+        "Fujianese": 0.4
+      }
+    }
+  }
 }

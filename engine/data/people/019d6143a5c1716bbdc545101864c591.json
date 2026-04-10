@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c1716bbdc545101864c591",
   "type": "character",
-  "name": "Sterling Möller",
+  "name": "Sterling Touré",
   "aliases": [
     "Benny O",
     "Checkpoint Benny"
@@ -13,7 +13,7 @@
   "age": 55,
   "status": "active",
   "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
-  "description": "Benedikt Oyelaran-Tsetsegmaa has worked the Deepwell Station transit checkpoint for eleven years and has achieved a kind of architectural permanence — people plan around him the way they plan around a pillar. He is a large man running toward stout, with dark mahogany skin and a white-streaked beard he keeps neatly shaped, and the Ferrogate Transit Security uniform has been let out at the seams twice and still fits like a compromise. His eyes are dark and deeply patient, with irises that have a cosmetic starburst pattern he got twenty years ago for a partner who liked them and has never removed.\n\nHe is not a man of action and has never wanted to be. His role is documentation, verification, and the particular human skill of reading a crowd for the one person who is about to do something that will require paperwork. He is extraordinarily good at this. He knows the names of at least three hundred regular commuters and the names of their children and pets. He knows which merchants are running slightly over load limit and which ones are struggling enough that flagging them would destroy them. He makes these calls dozens of times a day, which is a kind of power he thinks about more than he lets on.",
+  "description": "Sterling Touré has worked the Deepwell Station transit checkpoint for eleven years and has achieved a kind of architectural permanence — people plan around him the way they plan around a pillar. He is a large man running toward stout, with dark mahogany skin and a white-streaked beard he keeps neatly shaped, and the Ferrogate Transit Security uniform has been let out at the seams twice and still fits like a compromise. His eyes are dark and deeply patient, with irises that have a cosmetic starburst pattern he got twenty years ago for a partner who liked them and has never removed.\n\nHe is not a man of action and has never wanted to be. His role is documentation, verification, and the particular human skill of reading a crowd for the one person who is about to do something that will require paperwork. He is extraordinarily good at this. He knows the names of at least three hundred regular commuters and the names of their children and pets. He knows which merchants are running slightly over load limit and which ones are struggling enough that flagging them would destroy them. He makes these calls dozens of times a day, which is a kind of power he thinks about more than he lets on.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,33 +242,15 @@
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
   ],
   "related_entities": [
-    "Deepwell Station",
     "Ferrogate Transit",
+    "Deepwell Station",
     "Mahogany",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Arcturus GE-1 'Garrison'",
-    "Arcturus PX-1 'Phantom'",
-    "Blessed Nkemdirim",
-    "Chronicle",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Low Register",
-    "MERIDIAN",
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Ringo PD-1 'Citizen'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
-    "Ximena Bautista-Nwosu",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Cargo Tacos"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "East Asian (35.8%) with significant Hispanic/Latin American (27.4%) and Eastern European (20.4%) ancestry, complemented by Sub-Saharan African (13.7%) and Southeast Asian (2.7%) heritage—a complex global genetic blend reflected in warm-toned skin with layered undertones and diverse facial structure",
+    "heritage": "Complex global genetic blend dominated by Hispanic/Latin American (33.6%), Sub-Saharan African (23.2%), and Indigenous American (17.8%) ancestry, with meaningful contributions from Southeast Asian (12.3%), East Asian (8.6%), and Northern European (4.5%) heritage. This creates a richly layered phenotype: warm golden-brown skin with caramel and amber undertones, rounded cheekbone prominence from African and Indigenous lineages balanced by the structured facial planes of Southeast and East Asian ancestry, and a fuller nasal bridge characteristic of the African and Indigenous American components.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Large-framed, running to stout through the midsection, shoulders still broad but softened by age and eleven years of sitting on a checkpoint stool. Arms retain thickness despite reduced muscle tone.",
@@ -276,8 +258,8 @@
     "hair_style": "Close-cropped on the sides and back, longer on top (combed back); beard neatly shaped and maintained, covering the lower face and jaw",
     "hair_length": "Short (scalp) / Medium (beard)",
     "eye_color": "Dark brown with cosmetic starburst pattern radiating from the pupil in silver-white threads",
-    "skin_tone": "Warm golden-brown with subtle olive and amber undertones, reflecting the interplay of East Asian, Hispanic, Eastern European, African, and Southeast Asian ancestry",
-    "complexion": "Well-maintained despite age; minimal scarring, clear skin with the refined bone structure and cheekbone prominence characteristic of East Asian heritage softened by the broader nasal bridge and fuller features of Hispanic and African ancestry. Crow's feet around the eyes from decades of patient observation and focus. Lines around the mouth suggest a man who smiles more than frowns but keeps most expressions measured.",
+    "skin_tone": "Warm golden-brown with subtle amber and caramel undertones, reflecting the interplay of Hispanic, Sub-Saharan African, Indigenous American, Southeast Asian, and East Asian ancestry",
+    "complexion": "Well-maintained despite age; minimal scarring, clear skin with the rounded cheekbone prominence and fuller nasal bridge characteristic of African and Indigenous American heritage balanced by the structured facial planes of Southeast and East Asian ancestry. Crow's feet around the eyes from decades of patient observation and focus. Lines around the mouth suggest a man who smiles more than frowns but keeps most expressions measured.",
     "distinguishing_marks": [
       "Cosmetic starburst iris mod in both eyes: silver-white radial lines emanating from pupils, giving a deliberate, almost hypnotic quality to his gaze.",
       "Thin horizontal scar along the right temple, old and pale, barely visible beneath short hair.",
@@ -287,16 +269,72 @@
     "posture_movement": "Sits with deliberate stillness on his checkpoint stool, spine straight but shoulders relaxed. When standing, moves with economical precision — no wasted motion. Walks slowly, methodically. His gaze is constant and navigational; he watches people the way a chess player watches a board. Hands are steady, often folded or resting on the checkpoint desk. Speaks rarely and listens more than talks, creating an impression of depth.",
     "clothing_style": "Ferrogate Transit Security uniform (grey-blue shirt with embroidered logo, dark grey trousers, utility belt with credential holder and access card); uniform is let out at the seams and fitted like a compromise but maintained with care. Under-shirt typically visible at the collar, plain dark colour. Work boots, scuffed but polished. No jewelry except a plain metal wedding band (worn, suggesting decades). A small personal thermos (matte black, worn from use) rests beside him during shifts — clearly brought from home."
   },
-  "image_prompt": "Sterling Möller, 188cm tall checkpoint security officer with warm golden-brown skin reflecting East Asian, Hispanic, Eastern European, African, and Southeast Asian heritage. Dark brown hair with silver streaking, close-cropped with longer top combed back; neatly maintained beard with silver threading. Striking cosmetic starburst iris modification in both eyes—silver-white radial lines from pupils creating hypnotic gaze. Dignified posture sitting on checkpoint stool, large-framed with softened shoulders from age. Wearing grey-blue Ferrogate Transit Security uniform, fitted and maintained despite alterations. Black polymer wrist scanner on left wrist, hearing aid visible in ear. Pale scar on right temple barely visible under hair. Hands steady and folded. Matte black thermos beside him. Cyberpunk 2226 transit checkpoint setting with neon signage and diffused amber-blue lighting. Composed, watchful expression. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Touré, 188cm tall checkpoint guard in his 60s, broad-shouldered build softened by age, warm golden-brown skin with caramel undertones reflecting Hispanic, Sub-Saharan African, Indigenous American, Southeast Asian and East Asian heritage. Dark brown hair with silver streaking, close-cropped sides with longer swept-back top; neatly maintained beard covering jaw with silver-white threading. Dark brown eyes with striking silver-white starburst cosmetic mod radiating from pupils. Faded horizontal scar on right temple. Ferrogate Transit Security uniform: grey-blue shirt with logo, dark grey trousers, utility belt with biometric scanner on left wrist. Beige-gray hearing aid visible in right ear. Plain worn metal wedding band. Sits with deliberate stillness on checkpoint stool, hands folded, matte black thermos beside him. GLMZ transit station setting, cool blue-grey checkpoint lighting, fluorescent overhead glow, contemplative expression, deep watchful gaze. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 35.8,
-    "Hispanic/Latin American": 27.4,
-    "Eastern European": 20.4,
-    "Sub-Saharan African": 13.7,
-    "Southeast Asian": 2.7
+    "Hispanic/Latin American": 33.6,
+    "Sub-Saharan African": 23.2,
+    "Indigenous American": 17.8,
+    "Southeast Asian": 12.3,
+    "East Asian": 8.6,
+    "Northern European": 4.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 15.3
+      },
+      "Mexican": {
+        "Mexican": 18.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 20
+      },
+      "East African": {
+        "Tanzanian": 2.2,
+        "Ethiopian": 1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 17.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 4.3
+      },
+      "Laotian": {
+        "Laotian": 5.1
+      },
+      "Cambodian": {
+        "Khmer": 2.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.3
+      },
+      "Chinese": {
+        "Mandarin Northern": 1.6
+      },
+      "Korean": {
+        "Korean": 6.7
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 2
+      },
+      "Germanic": {
+        "German": 2.4,
+        "Swiss German": 0.1
+      }
+    }
+  }
 }

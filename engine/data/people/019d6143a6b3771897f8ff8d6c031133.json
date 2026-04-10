@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b3771897f8ff8d6c031133",
   "type": "character",
-  "name": "Ivana Sokolov",
+  "name": "Elsa Cissé",
   "aliases": [
     "Roki"
   ],
@@ -12,7 +12,7 @@
   "age": 17,
   "status": "active",
   "location": "Highland Park Autonomous Zone, plays at the interchange market and wherever she can find foot traffic, near Michigan Ave and Oak",
-  "description": "Rokhaya is seventeen and already magnetic in the way that hasn't learned to hide itself yet — all unmediated attention and physical expressiveness, tall for her age with a loose-limbed quality that makes her seem to occupy more space than she does. Her skin is deep brown, her natural hair enormous and unshaped in a way she's started to think of as deliberate. She has no mods, which is unusual enough in her peer group to be its own statement, though she hasn't entirely decided if the statement is ideological or financial. Her instrument — she won't call it a build, she calls it Grief — is a custom piezoelectric body harp she assembled herself from salvaged industrial sensors, resonance chambers stripped from defunct comm towers, and a frame welded out of scrap titanium.\n\nRokhaya busks in Highland Park Autonomous Zone and the surrounding interchange markets, playing soundscapes that don't resolve into melody so much as environment — textures of sound that make people stop walking and not entirely know why. She's been doing this for two years and has cultivated a following she's largely unaware of, because she doesn't have a mesh presence and all her listeners spread word of mouth. She is brilliant and doesn't have the critical vocabulary to know it, which makes her both vulnerable to people who will use that gap and oddly protected by having no idea what she's worth.",
+  "description": "Elsa Cissé is seventeen and already magnetic in the way that hasn't learned to hide itself yet — all unmediated attention and physical expressiveness, tall for her age with a loose-limbed quality that makes her seem to occupy more space than she does. Her skin is deep brown, her natural hair enormous and unshaped in a way she's started to think of as deliberate. She has no mods, which is unusual enough in her peer group to be its own statement, though she hasn't entirely decided if the statement is ideological or financial. Her instrument — she won't call it a build, she calls it Grief — is a custom piezoelectric body harp she assembled herself from salvaged industrial sensors, resonance chambers stripped from defunct comm towers, and a frame welded out of scrap titanium.\n\nElsa Cissé busks in Highland Park Autonomous Zone and the surrounding interchange markets, playing soundscapes that don't resolve into melody so much as environment — textures of sound that make people stop walking and not entirely know why. She's been doing this for two years and has cultivated a following she's largely unaware of, because she doesn't have a mesh presence and all her listeners spread word of mouth. She is brilliant and doesn't have the critical vocabulary to know it, which makes her both vulnerable to people who will use that gap and oddly protected by having no idea what she's worth.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -158,7 +158,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,30 +170,18 @@
     "Highland Park Autonomous Zone",
     "Ferrogate Transit",
     "The Interchange",
-    "Thought Primitive",
-    "Pennywhistle",
-    "The Resonance Communion",
-    "Titanium",
-    "Tin Man",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "GLMZ",
-    "Glenville Sound",
-    "Lacuna Genomics",
-    "Plot 17",
-    "Praevex",
-    "Prophet",
-    "Solina Barreto-Kiptoo",
-    "The Pure Hand",
     "The Whispering Implant",
-    "The Wire Taps",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Thought Primitive",
+    "The Resonance Communion",
+    "Pennywhistle",
+    "Plot 17",
+    "TESSERA CORPONATION Anima Vox Consciousness Expansion Suite",
+    "Titanium",
+    "Tin Man"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Eastern European, and Sub-Saharan African — a tri-continental blend expressing itself in warm-toned deep brown skin, broad facial structure, and expressive features that reflect the genetic diversity of the Ubiquitous Diaspora",
+    "heritage": "Middle Eastern (31.9%), Northern European (21.5%), South Asian (16.5%), Sub-Saharan African (16.1%), Eastern European (10.9%), and Southeast Asian (3.1%) — a truly global genetic mosaic. Her skin reflects the dominant Middle Eastern and South Asian heritage with warm golden-brown tones, tempered by Northern European fairness that prevents deeper saturation. Sub-Saharan African ancestry contributes to her rich undertones and the warmth in her complexion. Eastern European heritage adds subtle cool undertones that create complexity in her coloring. The result is a warm-toned, luminous brown skin with golden and honey undertones, even in tone across her frame.",
     "height_cm": 178,
     "weight_kg": 58,
     "build": "Tall and lean with an unselfconscious lankiness — long limbs that seem to move through space with minimal efficiency but maximum expressiveness. Wiry muscle from handling salvage and her instrument, no body fat to speak of.",
@@ -201,8 +189,8 @@
     "hair_style": "Unshaped natural hair, worn in a large, loose cloud that she occasionally binds with scrap wire or fabric scraps when it interferes with playing",
     "hair_length": "Long (shoulder-length and outward)",
     "eye_color": "Deep brown, almost black, with visible intensity — the kind of gaze that holds attention without trying",
-    "skin_tone": "Deep warm brown reflecting the blended ancestry of three continents, with even complexion and subtle golden undertones",
-    "complexion": "Clear skin with the texture of someone who doesn't obsess over maintenance; a few minor burn scars on her knuckles from welding. Her face is broad-boned and expressive, reflecting her multi-continental heritage, with full lips and a slight asymmetry to her smile. No cosmetic grooming beyond basic hygiene.",
+    "skin_tone": "Warm golden-brown with honey undertones, reflecting the balanced interplay of Middle Eastern (31.9%) and South Asian (16.5%) as primary heritage contributors, enriched by Sub-Saharan African warmth (16.1%), with Northern European (21.5%) influence creating luminosity and preventing excessive depth, and Eastern European (10.9%) adding subtle cool undertones for complexity",
+    "complexion": "Clear skin with the texture of someone who doesn't obsess over maintenance; a few minor burn scars on her knuckles from welding. Her face is refined but expressive, with high, defined cheekbones from her Middle Eastern and South Asian heritage balanced by a slightly angular jawline influenced by Northern European genetics. Full lips with warm pigmentation. Faint warmth and golden undertones throughout her complexion. No cosmetic grooming beyond basic hygiene.",
     "distinguishing_marks": [
       "Linear scar along the outer edge of her right palm, 8cm long, from a welding accident two years ago",
       "Calluses on her fingertips and palms from handling raw metal and piezoelectric elements",
@@ -212,14 +200,74 @@
     "posture_movement": "Moves with an unselfconscious fluidity that suggests she's not constantly aware of her own body in space. When sitting, she tends to fold herself into asymmetrical positions. When standing, there's a slight sway as though she's always listening to something others can't hear. Her hands move constantly — even when still, her fingers tap rhythms against her legs or whatever surface is nearby.",
     "clothing_style": "Tier 3-4 working-class aesthetic with salvage elements. Typically wears oversized, thrifted band shirts or plain cotton tees under a patched denim jacket held together with wire and safety pins. Her pants are usually dark, practical, with reinforced pockets for tools and sensor components. She wears mismatched socks by habit and boots salvaged from a Tier 4 surplus market — scuffed and taped at the seams but functional. No jewelry except a length of copper wire wrapped around her left wrist as both fidget tool and talisman. Her clothes smell faintly of solder flux and dust from the interchange markets."
   },
-  "image_prompt": "Ivana Sokolov, tall lean 178cm woman, deep warm brown skin with golden undertones blending Hispanic/Latin American, Eastern European and Sub-Saharan African heritage, broad expressive face with full lips, natural black hair with rust undertones in a large loose cloud, deep brown intense eyes. Wearing oversized thrifted band tee under patched denim jacket held with wire and safety pins, dark practical pants, scuffed salvaged boots. Copper wire wrapped around left wrist, welding burn scars visible on knuckles and wrist. Standing with subtle sway in Great Lakes Metropolitan Zone interchange market, neon signs reflected in worn metal surfaces around her, warm amber and cool blue cyberpunk 2226 lighting, dust particles floating in air, hands moving expressively, fingers tapping rhythm, unselfconscious fluidity, no augmentations, entirely organic human, introspective mood, background blur of salvage electronics and market chaos, candid documentary realism --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Elsa Cissé, a 178cm tall lean musician with rich golden-brown skin and honey undertones reflecting Middle Eastern, South Asian, and Sub-Saharan African heritage. Long black hair with rust undertones in a loose natural cloud, deep brown intense gaze. Refined face with high cheekbones and angular jawline, full lips, clear complexion with minor welding scars on knuckles. Unshaped natural aesthetic, no augmentations. Wearing oversized thrifted band tee under patched denim jacket held with wire and safety pins, dark practical pants, salvaged scuffed boots. Copper wire wrapped around left wrist, fidgeting hands with visible calluses. Standing with slight sway as if listening to unheard music. Moody neon-lit interchange market setting, cool blues and warm golds reflecting off metal surfaces and sensor components. Atmospheric dust and solder flux haze. Contemplative, present, unself-conscious expressiveness. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.0,
-    "Eastern European": 32.7,
-    "Sub-Saharan African": 28.3
+    "Middle Eastern": 31.9,
+    "Northern European": 21.5,
+    "South Asian": 16.5,
+    "Sub-Saharan African": 16.1,
+    "Eastern European": 10.9,
+    "Southeast Asian": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 19
+      },
+      "Arab Gulf": {
+        "Iraqi": 2.6,
+        "Yemeni": 2.3
+      },
+      "Kurdish": {
+        "Kurdish": 8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 7.1,
+        "English": 6.4
+      },
+      "Germanic": {
+        "German": 5.1,
+        "Austrian": 2.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 8.6
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 6.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 12.6,
+        "Somali": 1.3
+      },
+      "West African": {
+        "Senegalese": 2.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 8.8
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 2.1
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 3.1
+      }
+    }
+  }
 }

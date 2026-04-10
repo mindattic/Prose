@@ -1,7 +1,7 @@
 {
   "id": "019d6143a688731cb5033e5c9c33dd01",
   "type": "character",
-  "name": "Drift Mwangi-Deshpande",
+  "name": "Drift Zielinski-Nygaard",
   "aliases": [
     "Wren",
     "The Wren"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Pilsen Veil, near Ashland and Division",
-  "description": "Wren is compact and restless, with warm brown skin, a mess of thick natural hair dyed an oxidized copper that they refuse to maintain so the roots always show, and a pair of geneware cat ears — black, slightly larger than natural — that they got at sixteen and now consider embarrassingly juvenile but can't bring themselves to remove because their late grandmother loved them. They have an omnidirectional recording implant behind their left ear that means they are always, technically, filming, and people who know this have complicated feelings about being around them.\n\nThey make films that are not films exactly — hour-long VR experiences that place the viewer inside the nervous system of someone surviving something: a three-day eviction, a corporate audit, a birth, a first heartbreak at age sixty-two. Wren sources their subjects entirely from their neighborhood in Pilsen Veil, refusing to aestheticize poverty they don't live in, and they have a reputation for brutal honesty and an equally brutal ability to make you cry in under four minutes. They are vibrating with ideas at all times, finish other people's sentences constantly, and have never once in their life been on time to anything.",
+  "description": "Drift Zielinski-Nygaard is compact and restless, with warm brown skin, a mess of thick natural hair dyed an oxidized copper that they refuse to maintain so the roots always show, and a pair of geneware cat ears — black, slightly larger than natural — that they got at sixteen and now consider embarrassingly juvenile but can't bring themselves to remove because their late grandmother loved them. They have an omnidirectional recording implant behind their left ear that means they are always, technically, filming, and people who know this have complicated feelings about being around them.\n\nThey make films that are not films exactly — hour-long VR experiences that place the viewer inside the nervous system of someone surviving something: a three-day eviction, a corporate audit, a birth, a first heartbreak at age sixty-two. Drift Zielinski-Nygaard sources their subjects entirely from their neighborhood in Pilsen Veil, refusing to aestheticize poverty they don't live in, and they have a reputation for brutal honesty and an equally brutal ability to make you cry in under four minutes. They are vibrating with ideas at all times, finish other people's sentences constantly, and have never once in their life been on time to anything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -188,7 +188,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,37 +250,11 @@
     "Grandmother",
     "The Gradient Compact",
     "Copper",
-    "Arcturus Exo-Runner Frame",
-    "Auricula Felis Modification",
-    "Axolotl Regenerative Suite",
-    "Axonal Stretch Resonance Lance",
-    "Aïssé Dragomirescu-Faalelei",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Irkalla",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Neuromorphic Pressure Cestus",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Rongo Delgado-Opoku",
-    "SynapTech AromaVeil Olfactory Filter",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "TESSERA TC-3 'Crucible'",
-    "The Iron Lotus",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Drift"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (43.6%), Pacific Islander (20.8%), South Asian (16.8%), Indigenous American (13.1%), Hispanic/Latin American (5.7%) — a striking blend resulting in warm deep brown skin with golden-bronze undertones, facial structure reflecting the mix of African width and definition with South Asian and Pacific Islander softness, and Indigenous American bone structure evident in cheekbones and jaw",
+    "heritage": "Eastern European (31.1%), East Asian (29.9%), South Asian (12.0%), Sub-Saharan African (10.4%), Northern European (9.8%), Southeast Asian (6.8%) — a striking global synthesis creating warm medium-brown skin with golden undertones. Facial structure reflects the dominant Eastern European and East Asian mix: high, prominent cheekbones with slight East Asian eye shape variation, softened by South Asian warmth in the lower face and lips. Sub-Saharan African depth adds luminosity and richness to overall coloring. Northern European and Southeast Asian heritage creates subtle softening in bone structure and skin undertones.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, all restless energy with minimal fat mass — the build of someone who forgets to eat and moves constantly. Slight shoulders, narrow chest, quick-twitch muscle definition in forearms and legs.",
@@ -288,8 +262,8 @@
     "hair_style": "Deliberately unmaintained thick natural coils, chaotic and shoulder-length, copper color fading unevenly as regrowth emerges",
     "hair_length": "Medium to Long",
     "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Deep warm brown with golden-bronze undertones, melanin-rich and luminous",
-    "complexion": "Clear-faced with the slightly hollowed cheeks of chronic irregular eating, dark circles under eyes from late-night editing sessions. Minor acne scarring on jawline. Expressive face that moves constantly, with facial structure reflecting African, South Asian, and Pacific Islander heritage — defined cheekbones, slightly full lips, warm depth to features.",
+    "skin_tone": "Warm medium brown with golden undertones and luminous depth — melanin-rich and glowing, the result of East Asian, Eastern European, South Asian, and Sub-Saharan African heritage blending into a unified, warm complexion",
+    "complexion": "Clear-faced with slightly hollowed cheeks from chronic irregular eating, dark circles under eyes from late-night editing sessions. Minor acne scarring on jawline. Expressive face that moves constantly, with facial structure reflecting the blend of East Asian and Eastern European bone prominence, South Asian softness in the lower face and full lips, and Sub-Saharan African warmth and depth creating overall luminosity.",
     "distinguishing_marks": [
       "Twin small tattoos on inner wrists: Irkalla circuit symbols in silver ink, one on each side",
       "Faint scar across left knuckle from a filmmaking accident with salvaged equipment at age nineteen",
@@ -299,16 +273,58 @@
     "posture_movement": "Perpetually forward-leaning, as if about to interrupt or bolt. Fidgets with hands constantly — gestures while talking, taps fingers on surfaces rhythmically. Walks fast with quick, efficient strides. Often caught mid-gesture when listening, finishing sentences with their hands before their mouth catches up. Cat ears twitch with attention, betraying emotional states they try to hide.",
     "clothing_style": "Tier 3-4 working creative: layered, functional, thrifted. Favors oversized band tees (mostly defunct GLMZ indie labels) tucked into high-waisted secondhand jeans with ripped knees. Worn Axiom-branded hoodie in faded charcoal (salvaged from dumpster, now a uniform). Scuffed black Shenzen knockoff sneakers patched multiple times. Carries a weathered shoulder bag made from recycled synth-leather stuffed with recording gear, hard drives, noodle receipts, and cables. Silver rings on most fingers — some handmade, some stolen from street markets. No corporate branding except what's incidental. Looks like they've just come from a 36-hour edit session or are about to have one."
   },
-  "image_prompt": "Drift Mwangi-Deshpande, 158cm lean wiry figure, deep warm golden-brown skin with luminous undertones, shoulder-length chaotic copper coils with dark roots, dark observant eyes, expressive face with defined cheekbones and jawline scarring. Black geneware cat ears protruding responsively from head. Wearing oversized faded band tee tucked into ripped high-waisted jeans, worn charcoal Axiom hoodie, patched black sneakers. Silver rings on most fingers, haptic feedback gloves with visible nodes, weathered synth-leather shoulder bag. Perpetually forward-leaning posture, mid-gesture with twitching cat ears betraying emotion. Hollowed cheeks, dark circles from late-night work. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial setting, amber LED recording implant barely visible behind left ear, sitting among scattered hard drives and recording equipment, moody blue-purple ambient lighting, exhausted creative energy --ar 2:3 --v 6",
+  "image_prompt": "Drift Zielinski-Nygaard, 158cm compact wiry frame with quick restless energy, warm golden-brown skin reflecting East Asian and Eastern European heritage blend with South Asian and Sub-Saharan African depth. High prominent cheekbones, slight epicanthic folds, dark observant eyes, expressive hollow-cheeked face with minor jawline scarring and dark circles. Oxidized copper shoulder-length natural coils with dark brown roots, constantly fidgeting. Black geneware cat ears with emotional responsiveness perked with excitement, small amber LED visible behind left ear. Wearing oversized faded band tee tucked into ripped high-waisted jeans, charcoal Axiom hoodie, patched black Shenzen sneakers, silver rings, weathered recycled synth-leather shoulder bag stuffed with recording gear. Forward-leaning posture mid-gesture, hands animated. 2226 neo-noir Great Lakes Metropolitan Zone, late-night edit session lighting, neon glow on skin, moody and creative energy, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 43.6,
-    "Pacific Islander": 20.8,
-    "South Asian": 16.8,
-    "Indigenous American": 13.1,
-    "Hispanic/Latin American": 5.7
+    "Eastern European": 31.1,
+    "East Asian": 29.9,
+    "South Asian": 12,
+    "Sub-Saharan African": 10.4,
+    "Northern European": 9.8,
+    "Southeast Asian": 6.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 31.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 29.9
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 9.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 7.8
+      },
+      "Southern African": {
+        "Zimbabwean": 2.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 8.9
+      },
+      "Germanic": {
+        "German": 0.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 6.8
+      }
+    }
+  }
 }

@@ -26,7 +26,7 @@ public class SemanticIndexServiceTests
         });
         graph.AddTestNode("axiom", "Axiom Industries", "organization", new()
         {
-            ["description"] = "The dominant corponation in Meridian 88. Infrastructure, surveillance, corporate sovereignty.",
+            ["description"] = "The dominant corponation in GLMZ. Infrastructure, surveillance, corporate sovereignty.",
             ["sector"] = "Infrastructure",
         });
         graph.AddTestNode("the_shelf", "The Shelf", "place", new()

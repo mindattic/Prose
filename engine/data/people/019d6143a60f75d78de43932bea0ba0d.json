@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60f75d78de43932bea0ba0d",
   "type": "character",
-  "name": "Ragna Strömqvist",
+  "name": "Vladislav Balasanyan",
   "aliases": [
     "Scalpel",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
-  "description": "Fanta Popov-Adjei is compact and densely muscled, built low to the ground like something designed to survive impacts. At 58, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a wheelman out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFanta Popov-Adjei has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "description": "Vladislav Balasanyan is compact and densely muscled, built low to the ground like something designed to survive impacts. At 58, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a wheelman out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nVladislav Balasanyan has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.11,
@@ -265,7 +265,7 @@
     "Cockroach": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -280,40 +280,15 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "The Gradient Compact",
     "Stratum",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Dzemal Acholonu-Patagiri",
-    "Ezio Kaboré-Malhotra",
-    "Fanta Dzhuraev-Mboyo",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Ilhan Sandstrom-Badu",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Oumarou Svec-Ranginui",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Fathom Line",
-    "The Skinners",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yuki Nwosu-Petrenko"
+    "Pellucid Systems"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European and Eastern European with secondary East Asian and minor Hispanic admixture. Scandinavian-Slavic bone structure dominates — high cheekbones, strong jaw — with subtle East Asian epicanthic fold variation around eyes and slight facial width averaging from mixed ancestry. The result is distinctly pan-European with understated Asian influence visible primarily in eye shape and subtle midface proportions.",
+    "heritage": "Eastern European and Middle Eastern dominant (69.7%), with significant Northern European (17.7%) and minor South Asian (9.8%) and Sub-Saharan African (2.8%) ancestry. The genetic blend creates a striking Eurasian phenotype — sharp Eastern European bone structure (high cheekbones, strong jaw) merged with Middle Eastern facial breadth and warmth. Northern European undertones cool the complexion while South Asian and African ancestry add subtle richness to skin depth and warmth. The synthesis produces a weathered Mediterranean-Caucasian appearance with Middle Eastern softness counterbalancing Slavic angularity.",
     "height_cm": 168,
     "weight_kg": 79,
     "build": "Compact and densely muscled, built low to the ground with a center of gravity that favors lateral movement and impact absorption. Shoulders broad relative to frame, legs thick and powerful. No excess fat — the physique of someone who treats their body as operational equipment.",
@@ -321,8 +296,8 @@
     "hair_style": "Close-cropped, military neat",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint network scarring in left iris from old neural interface burn",
-    "skin_tone": "Cool-toned pale to medium — characteristic Northern European base with Eastern European olive undertones. Weathered from years of outdoor contract work, with minimal warm brown coloration. Sun damage visible but not deep.",
-    "complexion": "Strong Scandinavian-Slavic features: high angular cheekbones, broad forehead, pronounced jawline. Face carries fine lines around eyes and mouth, legacy of squinting through years of high-speed pursuits. Clean-shaven. Scar tissue visible along right jawline, thin and pale. Skin texture weathered but maintained — evidence of functional discipline rather than vanity. Subtle East Asian influence visible in eye shape and slight facial width.",
+    "skin_tone": "Medium warm olive — Northern European base enriched by Eastern European and Middle Eastern ancestry, with depth added by South Asian and Sub-Saharan African admixture. Weathered from years of outdoor contract work with visible sun damage but resilient texture. The complexion carries genuine warmth despite cool undertones, distinctly Mediterranean rather than Scandinavian.",
+    "complexion": "Blended Eurasian features: high angular cheekbones with slight fullness through the midface typical of Middle Eastern ancestry, broad forehead, pronounced jawline characteristic of Eastern European heritage. Eyes set with moderate depth. Face marked by fine lines around eyes and mouth from years of tactical focus and squinting. Clean-shaven with visible five-o'clock shadow. Scar tissue visible along right jawline, thin and pale against warm skin tone. Skin texture weathered but maintained — evidence of functional discipline.",
     "distinguishing_marks": [
       "Three parallel lines scarred into right temple — tribal marking origin unclear, possibly heritage, possibly earned",
       "Burn scar across left palm and wrist in scattered pattern, consistent with neural jack calibration trauma",
@@ -332,15 +307,59 @@
     "posture_movement": "Moves with economical precision — no wasted motion, weight distributed low. Sits with back always to wall or corner. Right hand unconsciously rests near smartgun link integration point. Eyes track movement vectors in crowds. Walks with slight favoring of left leg during extended periods — residual compensation from old injury. Overall bearing suggests someone perpetually aware of nearest exits and vehicle trajectories.",
     "clothing_style": "Tier 3-4 practical — reinforced synth-leather jacket in faded charcoal over smart-weave undershirt that monitors vitals. Heavy cargo pants with mag-sealed pockets and knee armor integration points. Steel-toed ankle boots with grip-sole designed for vehicle footwork. Minimal branding — function over identification. One piece of jewelry: worn titanium signet ring on left ring finger, inherited from his mentor. No visible corp-affiliation markers."
   },
-  "image_prompt": "Ragna Strömqvist, hardened contract operative in cyberpunk 2226, close-cropped salt-and-pepper hair, pale cool-toned weathered Northern European-Eastern European complexion with subtle East Asian features, dark brown eyes with neural damage scarring, strong angular Scandinavian cheekbones and jawline, three parallel temple scars, burn scar on left wrist, neural interface jack visible at skull base, smartgun link port on right forearm with blue LED, clean-shaven with fine lines around eyes, built compact and muscular at 168cm, dense frame showing years of operational discipline. Wearing faded charcoal synth-leather reinforced jacket over smart-weave undershirt, heavy mag-sealed cargo pants, steel-toed boots, worn titanium signet ring. Standing in neon-lit Great Lakes Metropolitan Zone parking structure, back to wall, weight distributed low, right hand near smartgun integration point, eyes tracking shadows. Moody blue-cyan cyberpunk lighting with scattered amber accent lights, cold industrial concrete, slight rain-slick surfaces, cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Vladislav Balasanyan, GLMZ, compact muscular Eastern European-Middle Eastern man with warm olive skin, salt-and-pepper close-cropped hair, dark brown eyes with neural scarring, high cheekbones and strong jaw. Right temple marked with three parallel tribal scars, right forearm bearing smartgun link port with brushed steel housing and blue LED. Worn titanium signet ring, reinforced charcoal synth-leather jacket over smart-weave undershirt, heavy cargo pants with knee armor points, steel-toed boots. Military posture, sitting with back to wall, eyes tracking movement. Neural interface jack visible at base of skull. Great Lakes Metropolitan Zone neon-lit underground station, amber and blue lighting, weathered functionality, tactical alertness. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 50.2,
-    "Eastern European": 36.9,
-    "East Asian": 9.0,
-    "Hispanic/Latin American": 3.9
+    "Eastern European": 37.4,
+    "Middle Eastern": 32.3,
+    "Northern European": 17.7,
+    "South Asian": 9.8,
+    "Sub-Saharan African": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 2.9,
+        "Polish": 0.7
+      },
+      "Slavic South": {
+        "Slovenian": 7.3,
+        "Croatian": 5.6
+      },
+      "Magyar-Romanian": {
+        "Romanian": 15.5,
+        "Hungarian": 5.4
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 32.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 2.9
+      },
+      "British Isles": {
+        "Irish": 12.2
+      },
+      "Scandinavian": {
+        "Swedish": 2.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 9.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 1.5,
+        "Nigerian": 1.3
+      }
+    }
+  }
 }

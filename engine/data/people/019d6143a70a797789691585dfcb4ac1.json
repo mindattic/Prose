@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70a797789691585dfcb4ac1",
   "type": "character",
-  "name": "Ember Odinga",
+  "name": "Ember Magnúsdóttir",
   "aliases": [
     "Tãm",
     "Ghostlight"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Highland Park Autonomous Zone, sleeping in rotating crash spots, near Michigan Ave and Walton",
-  "description": "Tãmzin is wiry and perpetually in motion, the kind of person who sits cross-legged on surfaces not designed for sitting and who always seems to be angled slightly toward an exit. Their skin is a warm medium brown, decorated with hand-applied luminescent tattoos — not geneware, but UV-reactive ink applied in sessions they traded for or self-administered — that map constellations native to parts of the sky no longer visible through GLMZ's light pollution. Cat ears in matte grey sit atop their head, a cosmetic mod they got at sixteen and have never regretted; they tend to press flat when Tãmzin is anxious. Their eyes are patterned with a radial fracture iris mod, deep amber cracked through with lines of pale gold, and they cycle through four colors of hair via a basic follicle-mod — currently a washed-out rust that fades to near-white at the tips.\n\nTãmzin's installations appear overnight on surfaces they have no permission to use: the underside of Ferrogate overpasses, the water-stained ceilings of underpasses in Highland Park, the blank flanks of corporate logistics buildings along the Blackpipe Corridor. The projectors are small, disguised, solar-trickle powered, and booby-trapped with data-noise payloads that corrupt the first attempt at a clean scan. The content is always the same thematic territory — the lake before the city, the people who lived where the towers now stand, animals that no longer exist — rendered in holographic depth that catches passersby off-guard at night. Tãmzin has been detained three times and released twice; the third detention record is sealed, which Tãmzin will not explain.",
+  "description": "Ember Magnúsdóttir is wiry and perpetually in motion, the kind of person who sits cross-legged on surfaces not designed for sitting and who always seems to be angled slightly toward an exit. Their skin is a warm medium brown, decorated with hand-applied luminescent tattoos — not geneware, but UV-reactive ink applied in sessions they traded for or self-administered — that map constellations native to parts of the sky no longer visible through GLMZ's light pollution. Cat ears in matte grey sit atop their head, a cosmetic mod they got at sixteen and have never regretted; they tend to press flat when Ember Magnúsdóttir is anxious. Their eyes are patterned with a radial fracture iris mod, deep amber cracked through with lines of pale gold, and they cycle through four colors of hair via a basic follicle-mod — currently a washed-out rust that fades to near-white at the tips.\n\nEmber Magnúsdóttir's installations appear overnight on surfaces they have no permission to use: the underside of Ferrogate overpasses, the water-stained ceilings of underpasses in Highland Park, the blank flanks of corporate logistics buildings along the Blackpipe Corridor. The projectors are small, disguised, solar-trickle powered, and booby-trapped with data-noise payloads that corrupt the first attempt at a clean scan. The content is always the same thematic territory — the lake before the city, the people who lived where the towers now stand, animals that no longer exist — rendered in holographic depth that catches passersby off-guard at night. Ember Magnúsdóttir has been detained three times and released twice; the third detention record is sealed, which Ember Magnúsdóttir will not explain.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -156,7 +156,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,38 +175,19 @@
   "related_entities": [
     "Highland Park Autonomous Zone",
     "Blackpipe Corridor",
-    "GLMZ",
     "Ferrogate Transit",
-    "Neurochemical Dispersal Grenade",
     "Palladian Construction",
-    "Flicker",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Neurochemical Dispersal Grenade",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+    "GLMZ",
+    "GLMZ",
     "The Pale Mile",
-    "Gold",
-    "Rust",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Ihaia Nystrom-Keita",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Tabula",
-    "Tessera Corponation",
-    "Tessera Personal Defense System TPDS-1 'Reflex'",
-    "The Pure Hand",
-    "The Undertow"
+    "Gold"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (34.4%) with significant Sub-Saharan African (30.7%), Hispanic/Latin American (14.9%), Eastern European (11.4%), and North African (8.6%) ancestry—a complex diaspora blend creating warm bronze-brown undertones with subtle golden and olive facets",
+    "heritage": "Northern European (39.2%) with substantial North African (30.6%) and Southeast Asian (30.2%) ancestry—a true Ubiquitous Diaspora blend. Nordic bone structure softened by North African width and Southeast Asian delicacy; warm golden-bronze skin with subtle olive undertones reflecting the seamless tri-regional genetic mix",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Wiry and angular, all elbows and sharp shoulders; built for moving through tight spaces and climbing. Muscle definition comes from constant motion rather than intentional training.",
@@ -214,8 +195,8 @@
     "hair_style": "Shoulder-length, usually unstyled and slightly matted; often pulled back with whatever's available",
     "hair_length": "Medium",
     "eye_color": "Deep amber with pale gold radial fracture pattern (iris mod)",
-    "skin_tone": "Warm bronze-brown with golden and subtle olive undertones, reflecting the Southeast Asian-African-Hispanic blend; medium depth with warm luminosity",
-    "complexion": "Angular face with high, prominent cheekbones typical of Southeast Asian-African heritage; skin shows signs of irregular sleep and poor nutrition—slight darkness under eyes, a few healing scratches from installation work. The underlying bone structure is defined by mixed ancestry: slightly wider facial width from African heritage, subtle epicanthal character from Southeast Asian ancestry, refined by Hispanic and Eastern European admixture. No significant acne or blemishing, but weathered by sun exposure and inconsistent skincare.",
+    "skin_tone": "Golden-bronze with warm luminosity and subtle olive facets, medium depth—balanced warm undertones from Northern European, North African, and Southeast Asian ancestry blending seamlessly",
+    "complexion": "Angular face with Nordic-influenced bone structure widened by North African heritage and refined by Southeast Asian delicacy; high, prominent cheekbones reflecting the tri-regional ancestry; straight to slightly upturned eye placement. Skin shows signs of irregular sleep and poor nutrition—slight darkness under eyes, a few healing scratches from installation work. Sun-exposed and weathered despite inconsistent skincare; no significant acne but traces of lived hardship.",
     "distinguishing_marks": [
       "UV-reactive luminescent constellation tattoos across both shoulders and upper back, mapping extinct star patterns, visible only under UV light in faint cyan and violet",
       "Faint scar on left inner wrist from self-administered geneware cosmetic procedure at age 16",
@@ -224,18 +205,35 @@
     ],
     "visible_augmentations": "Matte grey cosmetic cat ears mounted via geneware integration at the temporal region, capable of flattening against skull when anxious; patterned iris modification visible in direct light (fractured amber/gold); cycled follicle color mod (current rust-to-white). Luminescent tattoos invisible in standard light.",
     "posture_movement": "Restless and angled—sits cross-legged or perched on edges, rarely fully relaxed. Moves with efficient economy; capable of sudden speed and precision. Eyes constantly assess surroundings, especially exits and sightlines. Hands fidget with components or tools even when at rest. Cat ears twitch reactively with mood shifts.",
-    "clothing_style": "Tier 4-5 salvage aesthetic. Worn 5-panel cap (black, faded logo unidentifiable), oversized black military-surplus jacket with welded patches and tool loops, fitted grey thermal undershirt with burn holes. Cargo pants with reinforced knees and multiple pockets, cuffed at ankles over worn synthetic ankle boots with grip soles. Webbing belt rigged with component pouches and a small multi-tool. No jewelry except a loose beaded bracelet (salvaged). Clothing is functional, layered, and designed for climbing and rapid movement—not for style, though the aesthetic reads intentional."
+    "clothing_style": "Tier 4-5 salvage aesthetic. Worn 5-panel cap (black, faded logo unidentifiable), oversized black military-surplus jacket with welded patches and tool loops, fitted grey thermal undershirt with burn holes. Cargo pants with reinforced knees and multiple pockets, cuffed at ankles over worn synthetic ankle boots with grip soles. Webbing belt rigged with component pouches and a small multi-tool. No jewelry except a loose beaded bracelet (salvaged). Functional, layered, designed for climbing and rapid movement."
   },
-  "image_prompt": "Ember Odinga, 2226 cyberpunk gutter hacker, 168cm wiry frame with angular shoulders. Warm bronze-brown skin with golden undertones reflecting Southeast Asian-African-Hispanic heritage, high defined cheekbones, deep amber fractured-gold iris mods. Matte grey geneware cat ears atop temples (slightly flattened), rust-colored hair with white-blonde tips shoulder-length and matted, worn black 5-panel cap. Dark military-surplus jacket with welded patches and tool loops over grey thermal undershirt with burn holes, cargo pants with reinforced knees cuffed at worn synthetic boots. Webbing belt with component pouches, loose beaded salvage bracelet. UV-reactive cyan-violet constellation tattoos faintly visible on shoulders under harsh industrial lighting. Restless posture perched on edge, hands fidgeting with tech components, cat ears twitching with focus. Urban salvage workshop setting, neon and sodium-vapor lighting casting sharp shadows, rain-slicked metal surfaces, scattered geneware parts. Weathered skin, dark under-eye shadows, slight installation scratches visible. Efficient, predatory readiness in stance and eye contact. Cyberpunk 2200s aesthetic, gritty and augmented. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Ember Magnúsdóttir, 168cm wiry angular frame, golden-bronze skin with warm olive undertones blending Northern European Nordic structure, North African width, and Southeast Asian delicacy. Sharp cheekbones, angular face, deep amber eyes with pale gold fracture iris mod. Rust-blonde medium-length unstyled hair, shoulder-length slightly matted. Matte grey cosmetic cat ears twitching, mounted at temples via geneware. Wearing worn black military-surplus jacket with welded patches, grey thermal undershirt with burn holes, reinforced cargo pants, synthetic ankle boots. Black 5-panel cap. Component pouches and multi-tool on webbing belt. Restless posture, hands fidgeting with salvaged components. UV-reactive cyan-violet constellation tattoos faintly visible on shoulders. Faint wrist scar, pale burn mark on right forearm. Poor sleep visible under eyes, few healing scratches. Dark moody underground installation setting, warm neon glow reflecting off chrome and circuit boards, sharp shadows emphasizing angular features, neo-noir dystopian aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 34.4,
-    "Sub-Saharan African": 30.7,
-    "Hispanic/Latin American": 14.9,
-    "Eastern European": 11.4,
-    "North African": 8.6
+    "Northern European": 39.2,
+    "North African": 30.6,
+    "Southeast Asian": 30.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 39.2
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 15.7,
+        "Egyptian": 14.9
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 2.2,
+        "Sumatran": 28
+      }
+    }
+  }
 }

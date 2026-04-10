@@ -4,7 +4,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// Entertainment media in Meridian 88 — movies, shows, music, bands, games,
+/// Entertainment media in GLMZ — movies, shows, music, bands, games,
 /// neural-feed experiences, underground art, and pop culture artifacts.
 /// </summary>
 public class EntertainmentData : ICanonEntity

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c47b239164126e70285bb0",
   "type": "character",
-  "name": "Sol Árnason-Sepúlveda-Khorasani",
+  "name": "Sol Árnason-Karimi-Lindström",
   "aliases": [
     "Bless",
     "Little Meridian"
@@ -13,7 +13,7 @@
   "age": 12,
   "status": "active",
   "location": "Waukegan Industrial Shelf — sleeps in the migrant processing annex, spends days in the surrounding industrial lots, near Lake Shore and Navy Pier",
-  "description": "Blessed is small for twelve, with the particular watchfulness of a child who has learned to read rooms before entering them. She has her mother's wide-set eyes — very dark, with a double ring of amber at the iris edge that might be a natural mutation or might be the residue of a cheap geneware treatment she does not remember receiving. Her skin is a warm medium brown, her hair grown out unevenly from what was once a close cut, and she has a scar along the jawline from broken transit container glass that she accepts as simply part of her face. She carries a bag that is larger than seems reasonable for her size, and its contents are carefully organized: water purification tabs, a change of clothes, a notebook filled with tiny writing, and a collection of small objects she has found and kept for reasons she does not always explain.\n\nBlessed is not a sad child. She is a serious one. She has been in the Waukegan processing annex for four months, technically awaiting placement, practically forgotten by a system that has more cases than it can hold. She has mapped the entire industrial shelf by foot, knows which warehouses leave food waste accessible, which security patrols are on which rotation, and which of the adult migrants in the annex are safe to sleep near. She is not looking for someone to save her. She is looking for someone to go to Meridian Core with.",
+  "description": "Sol Árnason-Karimi-Lindström is small for twelve, with the particular watchfulness of a child who has learned to read rooms before entering them. She has her mother's wide-set eyes — very dark, with a double ring of amber at the iris edge that might be a natural mutation or might be the residue of a cheap geneware treatment she does not remember receiving. Her skin is a warm medium brown, her hair grown out unevenly from what was once a close cut, and she has a scar along the jawline from broken transit container glass that she accepts as simply part of her face. She carries a bag that is larger than seems reasonable for her size, and its contents are carefully organized: water purification tabs, a change of clothes, a notebook filled with tiny writing, and a collection of small objects she has found and kept for reasons she does not always explain.\n\nSol Árnason-Karimi-Lindström is not a sad child. She is a serious one. She has been in the Waukegan processing annex for four months, technically awaiting placement, practically forgotten by a system that has more cases than it can hold. She has mapped the entire industrial shelf by foot, knows which warehouses leave food waste accessible, which security patrols are on which rotation, and which of the adult migrants in the annex are safe to sleep near. She is not looking for someone to save her. She is looking for someone to go to Meridian Core with.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -163,7 +163,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Waukegan Industrial Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -215,23 +215,16 @@
   "related_entities": [
     "Helix Biosystems",
     "Meridian Core",
-    "The Waukegan Industrial Shelf",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Waukegan Industrial Shelf",
     "Irontide Tidal Energy",
     "Residue (I Still Have Your Feed)",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Glass",
     "Arcturus KS-7 'Nursery'",
-    "Lazarus EC-4 'Companion'",
-    "MERIDIAN",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Compact",
-    "The Heidelberg Scar"
+    "Glass"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern with significant East Asian ancestry, blended with Hispanic/Latin American and minor Northern European heritage. The genetic combination produces a striking phenotype: warm olive-brown skin with subtle golden undertones from the Middle Eastern majority, refined facial structure reflecting East Asian ancestry, and the particular bone structure and feature distribution of her mixed heritage creating an appearance distinctly of the Ubiquitous Diaspora.",
+    "heritage": "Predominantly Northern European (54.8%) with significant Middle Eastern (39.5%) and minor South Asian (5.7%) ancestry. The genetic combination creates a striking Ubiquitous Diaspora phenotype: warm olive skin with golden undertones from the blended ancestry, refined facial structure balancing Northern European bone structure with Middle Eastern and South Asian features, creating distinctive cheekbones and eye shape that marks her as unmistakably diaspora-heritage.",
     "height_cm": 145,
     "weight_kg": 38,
     "build": "Slight and wiry with the compact efficiency of a child who has learned to move without wasting energy. Lean muscle from constant walking across industrial terrain, no excess weight.",
@@ -239,25 +232,53 @@
     "hair_style": "Grown out unevenly from a previous close cut, longer on one side than the other — the result of four months without proper grooming access. Pulled back with whatever she has available.",
     "hair_length": "Medium, uneven",
     "eye_color": "Very dark brown with a distinctive double ring of amber at the iris edge — either a natural genetic variation or subcutaneous geneware artifact",
-    "skin_tone": "Warm olive-brown with golden undertones, deepened by months of sun exposure across industrial terrain. The particular warmth reflects her Middle Eastern majority ancestry blended with East Asian refinement.",
-    "complexion": "Serious, alert expression. Fine-featured face with the characteristic bone structure of mixed Middle Eastern and East Asian heritage — defined cheekbones, refined nose, watchful eyes showing the wariness of premature responsibility. Skin shows the wear of outdoor living — small abrasions, slight windburn. Accepts rather than hides the scar along her jawline.",
+    "skin_tone": "Warm olive with golden undertones, deepened by months of sun exposure across industrial terrain. The particular warmth reflects Northern European majority ancestry blended with Middle Eastern and South Asian heritage, creating a luminous quality even under harsh lighting.",
+    "complexion": "Serious, alert expression. Fine-featured face with mixed heritage bone structure — defined cheekbones from Middle Eastern ancestry balanced by Northern European refinement, refined nose, watchful dark eyes with distinctive amber iris rings showing the wariness of premature responsibility. Skin shows the wear of outdoor living — small abrasions, slight windburn. Accepts rather than hides the scar along her jawline.",
     "distinguishing_marks": [
-      "Linear scar along the jawline from left angle of jaw to mid-chin, approximately 8cm, from broken transit container glass — edges slightly raised, pale against her skin tone",
+      "Linear scar along the jawline from left angle of jaw to mid-chin, approximately 8cm, from broken transit container glass — edges slightly raised, pale against her olive skin tone",
       "Small burn mark on the back of her right hand, partially faded, origin unknown to her"
     ],
     "visible_augmentations": "None visible. The amber iris rings may be subcutaneous or biological residue, indeterminate.",
     "posture_movement": "Moves with deliberate efficiency and minimal sound, a habit of not drawing attention. Stands slightly tensed, ready to orient toward exits or threats. Her posture is neither defeated nor defiant — simply functional. Maintains careful eye contact when she chooses to engage.",
     "clothing_style": "Tier 5 migrant — hand-me-downs from processing annex donation bins. Oversized thermal layer (probably meant for an adult), patched grey cargo pants with multiple pockets she has filled with small useful objects, worn athletic shoes held together with synthetic cord. A jacket two sizes too large in faded blue that serves as both warmth and portable storage. No branding visible. Everything has been chosen and organized for utility rather than appearance."
   },
-  "image_prompt": "Cyberpunk 2226, young girl with mixed Middle Eastern and East Asian heritage, warm olive-brown skin with golden undertones, dark uneven shoulder-length hair, very dark brown eyes with amber iris rings, compact 145cm wiry frame. Fine-featured serious face showing watchfulness and premature responsibility, pale jawline scar from left angle to mid-chin, small faded burn mark on right hand. Wearing oversized faded blue jacket two sizes too large, patched grey cargo pants, worn synthetic cord shoes, oversized thermal layer. Standing with tense functional posture ready to move, minimal expression, industrial Great Lakes Metropolitan background with neon-edged structures and urban decay, cool evening lighting with warm practical equipment glow, documentary realism style --ar 2:3 --v 6",
+  "image_prompt": "A lean 12-year-old girl with warm olive skin and golden undertones standing in a industrial neo-noir zone, 2226. Dark brown uneven hair pulled back, very dark brown eyes with distinctive amber iris rings. Fine-featured face with mixed Northern European and Middle Eastern ancestry, defined cheekbones, small jawline scar visible against olive skin. Wearing oversized faded blue jacket, patched grey cargo pants, worn athletic shoes tied with synthetic cord. Alert, watchful posture, functional stance ready to move. Industrial grime and sun exposure on skin, small abrasions visible. Harsh neon and arc lamp lighting casting long shadows. Mood: serious, efficient, wary but not defeated. Neo-noir Ubiquitous Diaspora aesthetic, gritty urban environment, concrete and metal surroundings --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 57.5,
-    "East Asian": 23.2,
-    "Hispanic/Latin American": 11.7,
-    "Northern European": 7.6
+    "Northern European": 54.8,
+    "Middle Eastern": 39.5,
+    "South Asian": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 31.6
+      },
+      "British Isles": {
+        "Welsh": 12.8
+      },
+      "Germanic": {
+        "German": 6,
+        "Swiss German": 4.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 23.1,
+        "Jordanian": 8.9
+      },
+      "Arab Gulf": {
+        "Yemeni": 2.3,
+        "Iraqi": 5.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5.7
+      }
+    }
+  }
 }

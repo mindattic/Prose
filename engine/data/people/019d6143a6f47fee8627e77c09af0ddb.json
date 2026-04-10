@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f47fee8627e77c09af0ddb",
   "type": "character",
-  "name": "Lark Haraldsen",
+  "name": "Lark Ergashev",
   "aliases": [
     "Teddy",
     "Old Hinge"
@@ -13,7 +13,7 @@
   "age": 85,
   "status": "active",
   "location": "Montclare Quiet — the Ferrogate Retirees' Lodge, room 4, near Milwaukee and Damen",
-  "description": "Tewodros Halim-Czajkowski is ninety kilograms of sheer persistent presence folded into a body that has clearly decided aging is a negotiation rather than a concession. He uses a cane — a beautiful one, hand-carved composite with an inlaid Ferrogate Transit sigil at the grip that he stripped from a decommissioned station plaque decades ago as an act of deliberate appropriation. His skin is a deep reddish-brown, deeply lined, with a broad nose and heavy brows that give him a permanently skeptical expression even when he's delighted. His hair is white and abundant at the sides, bald at the crown, and he has geneware tiger-lily irises — orange and black — that he got at sixty-five when he decided he'd earned something absurd. He dresses in his union colors when he goes out: a deep red that's faded to rust.\n\nTewodros spent thirty-two years as a transit worker on the Ferrogate lines before rising to lead the Transit Workers' Union through the longest legal labor action in GLMZ history — the Forty-Day Suspension of 2168, which ended with a contract that is still cited as the benchmark for worker protections in the city. He is revered and resented in approximately equal measure by different factions of Meridian labor politics, and he has opinions about all of them. His short-term memory is beginning to fray at the edges, which enrages him, and he compensates with notes, a very organized room, and a studied refusal to appear confused. He knows more about how Ferrogate Transit actually works — the unofficial systems, the unofficial relationships, the hands that have been greased and the ones that haven't — than most current executives.",
+  "description": "Lark Ergashev is ninety kilograms of sheer persistent presence folded into a body that has clearly decided aging is a negotiation rather than a concession. He uses a cane — a beautiful one, hand-carved composite with an inlaid Ferrogate Transit sigil at the grip that he stripped from a decommissioned station plaque decades ago as an act of deliberate appropriation. His skin is a deep reddish-brown, deeply lined, with a broad nose and heavy brows that give him a permanently skeptical expression even when he's delighted. His hair is white and abundant at the sides, bald at the crown, and he has geneware tiger-lily irises — orange and black — that he got at sixty-five when he decided he'd earned something absurd. He dresses in his union colors when he goes out: a deep red that's faded to rust.\n\nTewodros spent thirty-two years as a transit worker on the Ferrogate lines before rising to lead the Transit Workers' Union through the longest legal labor action in GLMZ history — the Forty-Day Suspension of 2168, which ended with a contract that is still cited as the benchmark for worker protections in the city. He is revered and resented in approximately equal measure by different factions of Meridian labor politics, and he has opinions about all of them. His short-term memory is beginning to fray at the edges, which enrages him, and he compensates with notes, a very organized room, and a studied refusal to appear confused. He knows more about how Ferrogate Transit actually works — the unofficial systems, the unofficial relationships, the hands that have been greased and the ones that haven't — than most current executives.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -268,7 +268,6 @@
   "related_entities": [
     "Ferrogate Transit",
     "Montclare Quiet",
-    "GLMZ",
     "Sulfur Crown Agriculture",
     "Volkov-Saito Precision VS-40 'Magistrate'",
     "SynapTech GripTrue Palmar Adhesion Implant",
@@ -277,25 +276,13 @@
     "Slagworks Industrial",
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "GLMZ",
     "Arcturus CK-5 'Bloodhound'",
-    "Rust",
-    "Lead",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Brecken Yılmaz-Osei",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "MERIDIAN",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Collective",
-    "The Quiet Room",
-    "The Wire Taps"
+    "Lead"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Southeast Asian, Northern European, and Hispanic/Latin American blend: warm golden-bronze undertones from Southeast Asian ancestry, cooled by Northern European paleness, enriched by Hispanic/Latin American depth. A rare tri-continental mix resulting in warm amber-brown tones with subtle golden highlights.",
+    "heritage": "Central Asian, Southeast Asian, Hispanic/Latin American, Sub-Saharan African, and Eastern European blend: warm golden-bronze base from Central Asian and Southeast Asian ancestry (60.7% combined), deepened and enriched by Hispanic/Latin American (24.1%) and Sub-Saharan African (11.2%) genetics, with subtle cool undertones from Eastern European heritage (4.0%). The resulting complexion is a luminous deep amber-brown with golden highlights and warm undertones—a five-region synthesis creating unusual depth and richness.",
     "height_cm": 175,
     "weight_kg": 90,
     "build": "Broad-shouldered and solid despite age, with softening around the midsection but no fragility. Carries himself like someone accustomed to taking up space and being listened to.",
@@ -303,25 +290,67 @@
     "hair_style": "Full at the sides and back, bald crown; groomed but deliberately unfussy",
     "hair_length": "Medium",
     "eye_color": "Tiger-lily geneware: orange irises with black radial striations and amber outer ring",
-    "skin_tone": "Warm amber-bronze with golden undertones, sun-darkened to deep honey-brown in exposed areas. The blend creates an unusually rich, luminous quality—neither purely cool nor purely warm, but harmoniously balanced.",
-    "complexion": "Heavily lined face — forehead, around eyes, deep nasolabial folds shaped by decades of expression. Heavy, prominent brows that naturally furrow. Broad nose with slight bridge break from old injury and flared nostrils characteristic of Southeast Asian and Hispanic ancestry blend. Jaw still defined beneath age. Expression resting into permanent skepticism. Skin textured from decades of sun exposure and urban wear, with slight freckling across cheekbones from mixed heritage photosensitivity.",
+    "skin_tone": "Deep warm amber-brown with golden undertones, sun-darkened to rich mahogany in exposed areas. The blend creates a luminous quality—Central Asian and Southeast Asian warmth enriched by Sub-Saharan and Hispanic/Latin American depth, cooled subtly by Eastern European heritage threads.",
+    "complexion": "Heavily lined face—forehead, around eyes, deep nasolabial folds shaped by decades of expression. Heavy, prominent brows that naturally furrow. Broad nose with slight bridge break from old injury and flared nostrils. Fuller lips suggesting Hispanic/Latin American and Sub-Saharan African heritage. Jaw still defined beneath age. Expression resting into permanent skepticism. Skin textured from decades of sun exposure and urban wear, with freckling and subtle darker patches across cheekbones from mixed heritage photosensitivity.",
     "distinguishing_marks": [
       "Diagonal scar across left temple, faded white, approximately 4cm, from a 2156 workplace incident",
       "Callused palms and fingers from thirty-two years of manual transit work",
       "Small tattoo on inner left wrist: three interlocking rings in faded black (union solidarity mark from 2140s)"
     ],
-    "visible_augmentations": "Tiger-lily irises unmistakable at close range — cosmetic geneware, deliberately conspicuous. Hearing aid unit visible in left ear (brass-colored external component, worn openly, not concealed). Hand-carved composite cane with inlaid ferrogate transit sigil at grip — marks both mobility need and deliberate appropriation of defunct infrastructure.",
-    "posture_movement": "Moves deliberately, not slowly — each motion economical and purposeful. Cane is not primarily support but punctuation; he uses it to gesture, tap for emphasis, anchor himself while standing. Leans forward slightly when listening, eyes narrowing. Favors left leg slightly. Sits with one knee crossed, hands folded or gesturing. Presence fills rooms despite physical diminishment.",
-    "clothing_style": "Tier 3-4 retiree with deliberate labor pride. Deep rust-red Ferrogate union colors — cardigan or short-sleeved button-up depending on season, faded but maintained with care. Dark practical trousers, worn leather belt. Scuffed work boots or slip-on shoes. No jewelry except wedding band and a bronze Ferrogate 50-year service pin on his collar. All clothing shows signs of regular wear and careful mending rather than replacement."
+    "visible_augmentations": "Tiger-lily irises unmistakable at close range—cosmetic geneware, deliberately conspicuous. Hearing aid unit visible in left ear (brass-colored external component, worn openly, not concealed). Hand-carved composite cane with inlaid ferrogate transit sigil at grip—marks both mobility need and deliberate appropriation of defunct infrastructure.",
+    "posture_movement": "Moves deliberately, not slowly—each motion economical and purposeful. Cane is not primarily support but punctuation; he uses it to gesture, tap for emphasis, anchor himself while standing. Leans forward slightly when listening, eyes narrowing. Favors left leg slightly. Sits with one knee crossed, hands folded or gesturing. Presence fills rooms despite physical diminishment.",
+    "clothing_style": "Tier 3-4 retiree with deliberate labor pride. Deep rust-red Ferrogate union colors—cardigan or short-sleeved button-up depending on season, faded but maintained with care. Dark practical trousers, worn leather belt. Scuffed work boots or slip-on shoes. No jewelry except wedding band and a bronze Ferrogate 50-year service pin on his collar. All clothing shows signs of regular wear and careful mending rather than replacement."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Lark Haraldsen, 175cm tall senior man with warm amber-bronze skin tone reflecting Southeast Asian, Northern European, and Hispanic ancestry blend. Deep-set tiger-lily geneware eyes with orange irises and black striations glowing softly in urban shadow. White hair with dark temples, bald crown, medium length, groomed unfussy. Heavily lined face with perpetual skepticism, prominent furrowed brows, broad nose with old break, defined jaw. Visible faded 4cm temple scar. Wearing faded deep rust-red Ferrogate union cardigan over practical dark trousers, scuffed work boots. Hand-carved ferrogate transit cane in hand with visible sigil grip. Brass hearing aid visible in left ear. Bronze 50-year service pin on collar. Callused working hands. Deliberate purposeful posture, leaning slightly forward with cane as punctuation rather than support. Great Lakes Metropolitan Zone megacity background with neon transit signage, retro-industrial architecture, warm amber streetlight, rain-slicked surfaces. Mood: weathered dignity, permanent skepticism, earned authority. --ar 2:3 --v 6",
+  "image_prompt": "Lark Ergashev, weathered Central Asian-Southeast Asian-Hispanic-Sub-Saharan-Eastern European blend man, 175cm tall, deep amber-brown skin with golden undertones, mahogany sun-darkened patches. White hair with dark temple patches, bald crown, medium length, full sides and back. Heavily lined face with permanent skepticism, broad nose with old injury, fuller lips, deep nasolabial folds. Tiger-lily geneware eyes: brilliant orange irises with black radial striations and amber rings. Faded 4cm diagonal scar left temple. Brass hearing aid visible in left ear. Age-worn but dignified presence. Wearing faded rust-red Ferrogate union cardigan, dark practical trousers, worn leather belt, scuffed work boots. Hand-carved composite cane with transit sigil inlay in grip, used as gesture and punctuation. Bronze Ferrogate 50-year service pin on collar. Union tattoo visible on inner left wrist—three interlocking rings. Leans forward slightly, economical purposeful movement despite mobility need. Deep urban setting, GLMZ 2200s Great Lakes Metropolitan Zone, warm evening neon light catching gold undertones in skin, serious expression, room presence despite physical diminishment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 36.9,
-    "Northern European": 35.0,
-    "Hispanic/Latin American": 28.1
+    "Central Asian": 35.4,
+    "Southeast Asian": 25.3,
+    "Hispanic/Latin American": 24.1,
+    "Sub-Saharan African": 11.2,
+    "Eastern European": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Kyrgyz": 35.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 25.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 11,
+        "Guatemalan": 7.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 3.2,
+        "Dominican": 0.9
+      },
+      "Mexican": {
+        "Mexican": 1.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 6.8,
+        "Zimbabwean": 1.7
+      },
+      "West African": {
+        "Ghanaian": 2.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 3.9,
+        "Serbian": 0.1
+      }
+    }
+  }
 }

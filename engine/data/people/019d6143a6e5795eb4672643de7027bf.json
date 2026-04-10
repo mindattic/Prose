@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e5795eb4672643de7027bf",
   "type": "character",
-  "name": "Drift Haraldsen",
+  "name": "Yemi Szabó",
   "aliases": [
     "Patch",
     "The Excluded"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Shelf (transient, moves between zones), near Halsted and Division",
-  "description": "Søren Mikkelsen-Achebe does not exist in any database that matters. Danish and Igbo, compact and angular, with the particular alertness of someone who has learned to assess exits before they assess people. They keep their hair shaved close, wear clothing chosen for pockets and durability rather than warmth, and move through The Shelf and surrounding zones in a pattern deliberately irregular enough to prevent easy tracking. Their face carries old scarring along the jaw from an incident they describe as 'an administrative disagreement' and do not elaborate on. They have no legal identity — not purged like some, but never properly established, a bureaucratic ghost who aged out of a temporary shelter system at eighteen into a city that had no record they'd ever existed.\n\nSøren learned medicine the way people learn most things on The Shelf: by necessity, from whoever would teach them, and through trial and error that sometimes had irreversible consequences. They are not a doctor. They are something more useful in their ecosystem — a person who can stitch, set, administer, and diagnose without requiring identification, insurance, or the kind of paperwork that flags someone's location to an enforcement database. They operate out of a rotating series of semi-permanent locations: a converted storage unit, a sympathetic shopkeeper's back room, the gutted lower level of a building that should have been demolished two years ago. Word of mouth only. No signs. No fixed schedule.\n\nSøren is not ideologically committed to any particular vision of revolution or reform. They are committed to the person in front of them not dying. This makes them invaluable to almost everyone and trusted completely by almost no one, because a medic who treats everyone is a medic who might treat your enemy. They have learned to live with this. They have learned to live with most things.",
+  "description": "Yemi Szabó in any database that matters. Danish and Igbo, compact and angular, with the particular alertness of someone who has learned to assess exits before they assess people. They keep their hair shaved close, wear clothing chosen for pockets and durability rather than warmth, and move through The Shelf and surrounding zones in a pattern deliberately irregular enough to prevent easy tracking. Their face carries old scarring along the jaw from an incident they describe as 'an administrative disagreement' and do not elaborate on. They have no legal identity — not purged like some, but never properly established, a bureaucratic ghost who aged out of a temporary shelter system at eighteen into a city that had no record they'd ever existed.\n\nSøren learned medicine the way people learn most things on The Shelf: by necessity, from whoever would teach them, and through trial and error that sometimes had irreversible consequences. They are not a doctor. They are something more useful in their ecosystem — a person who can stitch, set, administer, and diagnose without requiring identification, insurance, or the kind of paperwork that flags someone's location to an enforcement database. They operate out of a rotating series of semi-permanent locations: a converted storage unit, a sympathetic shopkeeper's back room, the gutted lower level of a building that should have been demolished two years ago. Word of mouth only. No signs. No fixed schedule.\n\nSøren is not ideologically committed to any particular vision of revolution or reform. They are committed to the person in front of them not dying. This makes them invaluable to almost everyone and trusted completely by almost no one, because a medic who treats everyone is a medic who might treat your enemy. They have learned to live with this. They have learned to live with most things.",
   "psychology": {
     "facet_weights": {
       "wound": 0.81,
@@ -233,7 +233,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf (transient",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,30 +248,13 @@
   "related_entities": [
     "The Undertow",
     "The Shelf",
-    "Big Rig",
     "The Gradient Compact",
-    "Irontide Tidal Energy",
-    "Anatoliy Faye-Nkrumah",
-    "Axolotl Regenerative Suite",
-    "Ezio Kaboré-Malhotra",
-    "Ferrogate Enforcer Cruiser",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Independent Micro-Grid Power Cooperative",
-    "Meridian Core",
-    "Nkechi Alvarado-Ostrowski",
-    "Old Harbor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Circuit",
-    "The Listener",
-    "The Pure Hand",
-    "The Suture Collective",
-    "Timur Osei-Bjelke",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Yannick Tofauti-Szarvásy"
+    "Big Rig",
+    "Irontide Tidal Energy"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-Pacific Diaspora blend: primary ancestry from Hispanic/Latin American (30%), East Asian (26.3%), and Pacific Islander (25.2%) with secondary contributions from Sub-Saharan African (7.9%), Middle Eastern (7%), and Northern European (3.6%). This creates a distinctly mixed phenotype that resists easy categorization — the Ubiquitous Diaspora made flesh.",
+    "heritage": "Complex mixed ancestry: Eastern European foundation (49.7%) interwoven with Sub-Saharan African (17.3%), East Asian (17.2%), Pacific Islander (9.5%), and South Asian (6.3%). This genetic combination produces a phenotype that resists categorization—warm deep bronze skin with olive-gold undertones, angular cheekbones and defined jawline shaped by East Asian and Pacific Islander structure, and the rich depth of Sub-Saharan heritage throughout. A person who embodies the Ubiquitous Diaspora: ancestry rendered visible as layered human complexity.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Compact and angular, wiry rather than muscular — the build of someone who moves efficiently rather than powerfully, with minimal excess mass. Economical frame suited to navigating tight spaces and extended periods on minimal calories.",
@@ -279,8 +262,8 @@
     "hair_style": "Shaved close to the scalp, maintained every 4-5 days with a handheld clippers; regrowth pattern visible as dark stubble",
     "hair_length": "Shaved",
     "eye_color": "Amber-brown, naturally alert with a quality of rapid assessment",
-    "skin_tone": "Warm golden-bronze with olive undertones — the result of Hispanic, East Asian, and Pacific Islander ancestry blending with Sub-Saharan depth. Medium to medium-dark, with sun-exposure variation from outdoor movement between zones creating subtle shadowing across shoulders and forearms.",
-    "complexion": "Prominent cheekbones with angular jawline showing slight age-softening but defined by habit of clenching — the bone structure reflects East Asian and Pacific Islander heritage. Skin shows the dryness of someone who forgets to hydrate regularly and spends time in climate-controlled/poorly ventilated spaces. Fine lines around the eyes from constant squinting focus. No cosmetic grooming — functional only. Subtle warm undertones across cheeks and bridge of nose.",
+    "skin_tone": "Deep warm bronze with olive and golden undertones—the result of Eastern European, Sub-Saharan African, East Asian, and Pacific Islander ancestry blending. Medium-dark with sun-exposure variation from outdoor movement between zones creating subtle shadowing across shoulders and forearms.",
+    "complexion": "Prominent angular cheekbones and defined jawline shaped by East Asian and Pacific Islander heritage, with rich Sub-Saharan depth and warmth. Bone structure shows slight age-softening but remains defined by habit of clenching. Skin shows dryness from irregular hydration and time in climate-controlled spaces. Fine lines around eyes from constant squinting focus. Warm undertones across cheeks and bridge of nose. No cosmetic grooming—functional only.",
     "distinguishing_marks": [
       "Jagged scar tissue along the left jaw from angle of ear to midpoint of chin, approximately 12cm in length, pale and well-healed but visibly uneven — consistent with deep laceration closed without professional sutures",
       "Smaller scar, roughly 2cm, on the back of the right hand between thumb and forefinger — medical puncture or blade accident",
@@ -291,17 +274,69 @@
     "posture_movement": "Moves with economical precision — minimal wasted motion, feet placed deliberately. Stands slightly pigeon-toed, a habit from years of navigating tight spaces. Head positioning constantly scans environment, eyes register exits and sightlines before settling on people. Hands rest at sides or folded, not gestural. When working, movements become meditative and precise. Breathing pattern suggests someone accustomed to holding breath or managing anxiety. Does not take up space unnecessarily.",
     "clothing_style": "Tier 4-5 utilitarian: Layered for pockets and durability over warmth. Default uniform consists of: dark grey or black surplus cargo pants with reinforced seaming and multiple deep pockets, worn loose to allow freedom of movement and conceal equipment. Long-sleeved undershirt (cotton blend, faded black or charcoal) worn under a heavy canvas work jacket or surplus medical coat with internal pockets — deliberately oversized to allow for layers and concealment. Footwear is scuffed, resoled boots with good traction and ankle support. No jewelry, no identifying marks, no brand logos visible. Clothing is chosen for function and anonymity, regularly rotated through charity bins and trade networks to prevent pattern recognition. Everything is intentionally unremarkable."
   },
-  "image_prompt": "Portrait of Drift Haraldsen, 2226 cyberpunk era, compact 168cm frame with warm golden-bronze skin blending East Asian, Hispanic, and Pacific Islander heritage. Dark brown hair shaved close with silver threading at temples, amber-brown eyes constantly assessing surroundings. Prominent cheekbones, angular jawline with jagged 12cm scar along left jaw from ear to chin, faint wrist scarring barely visible. Dressed in oversized dark grey canvas work jacket over faded black long-sleeved undershirt, surplus cargo pants, scuffed boots. Battered titanium diagnostic wand in reinforced pocket. No augmentations, no chrome, deliberately anonymous. Pigeon-toed stance, minimal wasted motion, head tilted in environmental scan. Dry skin with fine lines around eyes from constant focus. Underground clinic lighting, neon-edged shadows, GLMZ 2226 aesthetic, cool color grade with warm skin tones contrasting. Mood: paranoid precision, unaugmented and self-reliant, ghost in the machine who refuses the machine. --ar 2:3 --v 6",
+  "image_prompt": "Yemi Szabó, 168cm wiry figure with deep warm bronze skin and olive-gold undertones, shaved dark hair with silver at temples, prominent angular cheekbones and defined jawline. Amber-brown eyes alert and assessing. Jagged 12cm scar along left jaw from ear to chin, pale and well-healed. Wearing oversized dark grey canvas work jacket over faded black long-sleeved undershirt, reinforced cargo pants, scuffed boots with good traction. Battered titanium diagnostic wand visible in reinforced pocket. Posture economical and precise, slightly pigeon-toed stance. Stands in shadow of GLMZ industrial corridor, cool neon lighting catching bronze skin tones and scar tissue detail. GLMZ, clinical and cautious bearing, minimal visible augmentation. Hands at sides, scanning environment. Moody atmospheric lighting with blue-grey shadows, warm skin contrast. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.0,
-    "East Asian": 26.3,
-    "Pacific Islander": 25.2,
-    "Sub-Saharan African": 7.9,
-    "Middle Eastern": 7.0,
-    "Northern European": 3.6
+    "Eastern European": 49.7,
+    "Sub-Saharan African": 17.3,
+    "East Asian": 17.2,
+    "Pacific Islander": 9.5,
+    "South Asian": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 6.3
+      },
+      "Slavic East": {
+        "Belarusian": 3.2,
+        "Russian": 1.4
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 38.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 17.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.7
+      },
+      "Chinese": {
+        "Sichuanese": 1.6,
+        "Hakka": 0.9
+      },
+      "Japanese": {
+        "Japanese": 7
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 3.7,
+        "Tongan": 1
+      },
+      "Micronesian": {
+        "Kiribati": 0.1,
+        "Marshallese": 1
+      },
+      "Melanesian": {
+        "Fijian": 2,
+        "Ni-Vanuatu": 1.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4
+      },
+      "Indian": {
+        "Bengali": 2.3
+      }
+    }
+  }
 }

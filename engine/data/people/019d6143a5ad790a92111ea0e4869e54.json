@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ad790a92111ea0e4869e54",
   "type": "character",
-  "name": "Remi Rentería",
+  "name": "Remi Douangpanya",
   "aliases": [
     "No aliases — refuses them on principle"
   ],
@@ -12,7 +12,7 @@
   "age": 22,
   "status": "active",
   "location": "Mexicantown Libre, living communally in a building called the Stack, near Ashland and Division",
-  "description": "Amara is young and loud about it — she has the particular energy of someone who has concluded that patience is a trap laid by people who benefit from delay. She is dark-skinned and angular, with natural hair grown into a dense crown she clips with political buttons and small brass charms. Her geneware is exuberant: color-shifting hair underlayer that blooms from black to vivid copper to green depending on ambient temperature and her mood; she had it done as soon as she could afford it and considers it a form of emotional honesty, not vanity. Her arms are covered in handpoked ink — dates, phrases, names of people and places that matter to her, in at least four scripts.\n\nAmara coordinates street mobilizations for a loose coalition she calls the Libre Front — not an organization exactly, more a persistent methodology: show up, be visible, make the cost of ignoring you higher than the cost of addressing you. She has been arrested twice, released both times due to procedural errors she suspects were deliberate tests of whether she'd sign anything. She signed nothing. She is not naive — she knows spectacle alone changes little — but she also knows that the invisible don't get concessions, and she is determinedly, loudly, exasperatingly visible.",
+  "description": "Remi Douangpanya is young and loud about it — she has the particular energy of someone who has concluded that patience is a trap laid by people who benefit from delay. She is dark-skinned and angular, with natural hair grown into a dense crown she clips with political buttons and small brass charms. Her geneware is exuberant: color-shifting hair underlayer that blooms from black to vivid copper to green depending on ambient temperature and her mood; she had it done as soon as she could afford it and considers it a form of emotional honesty, not vanity. Her arms are covered in handpoked ink — dates, phrases, names of people and places that matter to her, in at least four scripts.\n\nRemi Douangpanya coordinates street mobilizations for a loose coalition she calls the Libre Front — not an organization exactly, more a persistent methodology: show up, be visible, make the cost of ignoring you higher than the cost of addressing you. She has been arrested twice, released both times due to procedural errors she suspects were deliberate tests of whether she'd sign anything. She signed nothing. She is not naive — she knows spectacle alone changes little — but she also knows that the invisible don't get concessions, and she is determinedly, loudly, exasperatingly visible.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -170,7 +170,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,38 +238,15 @@
     "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
     "The Underlayer Collective",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Gravimetric Collapse Charge GCC-9",
     "Copper",
-    "Brass",
-    "Cezar Watanabe-Gyasi",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Ilhan Sandstrom-Badu",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obinna Czekalski-Fonoti",
-    "Oumarou Svec-Ranginui",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "The Augmentation Rights Coalition",
-    "The Collective",
-    "The Ledger",
-    "The Undertow",
-    "Théodore Achebe-Faatasi",
-    "Toluwani Przhevalskyj-Mboyo",
-    "Vuk Jorgensen-Toure",
-    "Zurab Ivanov-Appiah"
+    "Gravimetric Collapse Charge GCC-9",
+    "Brass"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: Hispanic/Latin American (36.7%), Sub-Saharan African (33.5%), East Asian (24.9%), and Middle Eastern (4.9%). The combination produces warm-toned deep brown skin with subtle golden undertones, angular facial structure reflecting East Asian and African ancestry, and a distinctive phenotype that marks her as a product of the Ubiquitous Diaspora rather than any single geographic origin.",
+    "heritage": "Multiethnic diaspora blend: Southeast Asian (26.2%), East Asian (25.7%), Hispanic/Latin American (24.1%), Sub-Saharan African (14.9%), Middle Eastern (6.2%), South Asian (2.9%). The combination produces warm-toned deep brown skin with golden undertones and subtle olive accents, angular facial structure reflecting the interplay of Southeast and East Asian ancestry with African heritage, and a distinctive phenotype that marks her as a product of the Ubiquitous Diaspora—no single origin point, genuinely transnational in her genetic composition.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Angular and lean, all sharp geometry — narrow shoulders, pronounced collarbones, wiry muscle from constant motion rather than deliberate training. No softness; her body reads as kinetic.",
@@ -277,8 +254,8 @@
     "hair_style": "Dense natural crown worn loose, densely packed with political buttons, brass charms, and small pins",
     "hair_length": "Long (shoulder-blade length when unpinned, worn up most of the time)",
     "eye_color": "Dark brown, alert and direct",
-    "skin_tone": "Deep warm brown with golden undertones, high contrast — the blended result of substantial African and Hispanic ancestry with East Asian influence creating a rich, even complexion without harsh demarcation lines",
-    "complexion": "Angular facial structure with high, prominent cheekbones and sharp jawline reflecting both African and East Asian heritage. The bone structure is refined and geometric. Skin is clear but marked by the wear of irregular sleep and constant sun exposure during street actions. No makeup; minimal grooming beyond pragmatism.",
+    "skin_tone": "Deep warm brown with golden undertones and subtle olive accents—the blended result of substantial Southeast/East Asian and African ancestry with Latin American and Middle Eastern influence creating a rich, nuanced complexion without harsh demarcation lines",
+    "complexion": "Angular facial structure with high, prominent cheekbones and sharp jawline reflecting the geometric influence of East and Southeast Asian heritage blended with African features. The bone structure is refined and angular. Skin is clear but marked by the wear of irregular sleep and constant sun exposure during street actions. No makeup; minimal grooming beyond pragmatism.",
     "distinguishing_marks": [
       "Both forearms densely covered in hand-poked tattoos in at least four scripts (Latin, Arabic, Cyrillic, possibly Mandarin) — dates, names, phrases, coordinates of places and people significant to her activism",
       "Small scar on left temple, approximately 1cm, from a street arrest in 2224",
@@ -289,15 +266,65 @@
     "posture_movement": "Constantly in motion, restless — fidgets with clothing, pins, phone. When standing still, she leans forward slightly as if mid-argument. Eyes scan crowds and exits; body language radiates coiled energy. She moves through space with the territorial awareness of someone used to street actions and crowd dynamics. Hand gestures are expressive and frequent.",
     "clothing_style": "Tier 4-5 utilitarian activist wear. Typically black or dark earth-tone cotton, deliberately worn and patched — oversized hoodies and button-ups layered, cargo pants or jeans with visible wear and pockets, scuffed combat boots (practical, not aesthetic). Visible political patches, badges, and protest tape on clothing. Carries an old canvas messenger bag covered in stickers and hand-drawn graphics. No corporate logos, no premium materials; everything chosen for durability and functionality. Appearance is deliberately anti-aesthetic, rejecting Tier 1-2 grooming signals."
   },
-  "image_prompt": "Remi Rentería, 168cm lean angular activist, deep warm brown skin with golden undertones, high sharp cheekbones and geometric face structure reflecting multiethnic diaspora heritage. Dense natural black hair with temperature-responsive geneware copper-to-green color shifts, worn long and pinned up with protest buttons and brass charms. Dark brown eyes alert and direct, scanning surroundings. Both forearms covered in hand-poked multilingual activist tattoos. Small scar on left temple, three claw marks visible on right collarbone. Wearing oversized layered black hoodie and patched cargo pants, scuffed combat boots, old canvas messenger bag covered in stickers. Restless posture, leaning forward mid-conversation, fidgeting with pins. 2226 Great Lakes Metropolitan Zone cyberpunk setting, street-level activist at protest barrier, neon sodium lighting casting long shadows, urban decay background with holographic activism displays, geneware hair glowing soft green from emotional intensity, wet concrete reflecting light, cinematic documentary style --ar 2:3 --v 6",
+  "image_prompt": "GLMZ activist portrait: Remi Douangpanya, 168cm lean angular figure with deep warm brown skin with golden and olive undertones. High prominent cheekbones and sharp jawline blending Southeast Asian, East Asian, African, Latin American and Middle Eastern heritage. Dense natural black crown with color-shifting copper-to-green geneware underlayer responsive to emotion, long hair pulled back with political pins and brass charms. Dark brown alert eyes scanning crowd, forward-leaning restless posture radiating coiled energy. Forearms densely covered in hand-poked tattoos across multiple scripts, visible scar on left temple, three parallel marks on right collarbone. Wearing deliberately worn black oversized hoodie and button-up layered over patched cargo pants, scuffed combat boots. Old canvas messenger bag covered in protest stickers and hand-drawn graphics. Political patches and protest tape visible on clothing. Great Lakes Metropolitan Zone street setting, neon-tinged industrial backdrop, moody street action lighting, activist aesthetic, anti-corporate styling, constant motion and restless fidgeting, GLMZ 2200s gritty realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 36.7,
-    "Sub-Saharan African": 33.5,
-    "East Asian": 24.9,
-    "Middle Eastern": 4.9
+    "Southeast Asian": 26.2,
+    "East Asian": 25.7,
+    "Hispanic/Latin American": 24.1,
+    "Sub-Saharan African": 14.9,
+    "Middle Eastern": 6.2,
+    "South Asian": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 26.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 25.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 9.8,
+        "Nicaraguan": 2.6
+      },
+      "Caribbean": {
+        "Dominican": 9.2,
+        "Puerto Rican": 2.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 5.9
+      },
+      "Central African": {
+        "Congolese": 5.7,
+        "Cameroonian": 3.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 2.8
+      },
+      "Kurdish": {
+        "Kurdish": 2.5
+      },
+      "Arab Levantine": {
+        "Lebanese": 0.3,
+        "Jordanian": 0.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.9
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68a790aa6f30f0983be6be5",
   "type": "character",
-  "name": "Onyx Nygaard",
+  "name": "Onyx Deshpande",
   "aliases": [
     "Ozzy",
     "the Calibrator"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Aurochs Medical Complex, Neuro-Integration Ward, Sub-Level 3, near sub-level access near State and Van Buren",
-  "description": "Osvaldo is slight and precise — he moves like someone aware that the instruments around him are expensive, with a narrow, angular face framed by straight black hair that shifts color at the roots depending on his neural activity (a geneware mod he got in his twenties and now can't fully suppress). His skin is the color of polished teak, and he has the mild, distracted affect of someone who spends most of his time listening to signals other people can't hear. He has patterned irises, a geometric spirograph in copper and pale green, which he chose specifically because he wanted something that moved — the pattern rotates slowly when he's focused, quickly when he's agitated. His hands are long-fingered and completely still even when the rest of him isn't.\n\nHe calibrates neural interfaces — the delicate, often deeply personal process of helping someone's brain learn to interpret new sensory data from augmentations without going into sensory cascade. He is very good at this and knows it, which manifests not as arrogance but as a certain serene confidence that can read as emotional distance. What he doesn't broadcast is that he finds the work almost spiritual: he is, essentially, teaching people to perceive the world in new ways, and this strikes him as the most important thing a person can do. He volunteers one afternoon a week in the Rehabilitation annex, calibrating low-income patients for free on his own time.",
+  "description": "Onyx Deshpande is slight and precise — he moves like someone aware that the instruments around him are expensive, with a narrow, angular face framed by straight black hair that shifts color at the roots depending on his neural activity (a geneware mod he got in his twenties and now can't fully suppress). His skin is the color of polished teak, and he has the mild, distracted affect of someone who spends most of his time listening to signals other people can't hear. He has patterned irises, a geometric spirograph in copper and pale green, which he chose specifically because he wanted something that moved — the pattern rotates slowly when he's focused, quickly when he's agitated. His hands are long-fingered and completely still even when the rest of him isn't.\n\nHe calibrates neural interfaces — the delicate, often deeply personal process of helping someone's brain learn to interpret new sensory data from augmentations without going into sensory cascade. He is very good at this and knows it, which manifests not as arrogance but as a certain serene confidence that can read as emotional distance. What he doesn't broadcast is that he finds the work almost spiritual: he is, essentially, teaching people to perceive the world in new ways, and this strikes him as the most important thing a person can do. He volunteers one afternoon a week in the Rehabilitation annex, calibrating low-income patients for free on his own time.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -191,7 +191,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -208,24 +208,16 @@
   "related_entities": [
     "Aurochs Medical Complex",
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Neural Palate",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
     "The Pure Hand",
     "The Pale Mile",
-    "Teak",
-    "Bridgepoint",
-    "Helix Biosystems",
-    "Ilhan Sandstrom-Badu",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Slagworks Industrial",
-    "Tenderloin",
-    "The Resonance Communion",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+    "Teak"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Central Asian-Northern European blend (Kazakh-Scandinavian ancestry) with secondary East Asian and Eastern European admixture. High cheekbones and angular facial structure reflect Central Asian heritage; skin carries warm undertones from the mixed ancestry. Eyes and hair show the complex interplay of steppe and northern genetic expression.",
+    "heritage": "Complex multicontinental blend: 45% Middle Eastern, 24.7% Sub-Saharan African, 15.4% South Asian, and 14.9% Central Asian ancestry. This rare combination produces exceptional visual complexity—warm deep brown skin with golden luminescence from the convergence of Middle Eastern, South Asian, and Sub-Saharan African genetic expressions. The Middle Eastern and Central Asian components contribute sharp, refined facial geometry with pronounced high cheekbones and angular bone structure. Sub-Saharan African heritage enriches the warm undertones and contributes to the skin's radiant depth. South Asian ancestry softens the angularity while adding to the golden luminosity. The result is a striking synthesis: a face of geometric precision rendered in warm, glowing brown with subtle golden iridescence.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Slight and angular, almost ascetic—minimal muscle mass but precise posture suggesting deliberate physical control. Narrow shoulders, long-limbed proportions that read as slightly fragile despite evident discipline.",
@@ -233,8 +225,8 @@
     "hair_style": "Straight, combed back cleanly, maintained with clinical precision",
     "hair_length": "Medium (collar-length)",
     "eye_color": "Patterned irises: geometric spirograph in copper and pale green that rotates—slow rotation indicates focus, rapid rotation indicates agitation",
-    "skin_tone": "Warm medium brown with golden undertones—the result of Central Asian, Northern European, and East Asian admixture. Polished appearance with even, luminous undertones suggesting mixed heritage complexity.",
-    "complexion": "Sharp, high-cheekboned facial structure reflecting Central Asian ancestry; mild, somewhat distant expression; impeccable grooming; minimal facial hair (clean-shaven); skin shows no scarring or blemishes—carefully maintained. Subtle warmth to complexion from layered ancestry.",
+    "skin_tone": "Deep warm brown with luminous golden undertones—the radiant synthesis of Middle Eastern, Sub-Saharan African, South Asian, and Central Asian genetic heritage. Rich, polished appearance with even, radiant undertones suggesting complex multicontinental layering.",
+    "complexion": "Sharp, high-cheekboned facial structure reflecting Middle Eastern and Central Asian ancestry; warm, deep complexion enriched and luminized by Sub-Saharan African and South Asian heritage; mild, somewhat distant expression; impeccable grooming; minimal facial hair (clean-shaven); skin shows no scarring or blemishes—carefully maintained. The complexion carries subtle warmth and luminosity characteristic of this rare ancestry blend, with refined geometric bone structure and glowing brown depths.",
     "distinguishing_marks": [
       "Subtle subdermal tracery visible along left temple (neural resonance implant access point), faint iridescent shimmer under certain light angles",
       "Long-fingered hands marked by microlacerations and faint scar tissue on fingertips from years of precision calibration work—nearly invisible to untrained observation"
@@ -243,15 +235,55 @@
     "posture_movement": "Moves with economical precision, as if calibrated himself. Hands remain almost completely still even during conversation—a learned occupational habit. Walks slowly, deliberately, with awareness of fragile equipment around him. Affects mild emotional distance masked by serene confidence. When engaged in work, becomes almost meditative in stillness.",
     "clothing_style": "Tier 2 corporate-adjacent professional: charcoal or navy compression-weave shirts (thermoregulating, durable) under lightweight lab coats bearing Aurochs Medical Complex insignia and embroidered credentials. Dark fitted trousers. Minimal jewelry except for a thin platinum band on left ring finger (possibly medical alert or neural interface synchronizer). Shoes: premium synthetic leather, orthopedic—built for long standing. Overall aesthetic is clean, precise, slightly ascetic. No visible brand-flexing or ornamentation. Suggests someone who allocates resources toward equipment and experience rather than status display."
   },
-  "image_prompt": "Onyx Nygaard, cyberpunk 2226, Central Asian-Northern European mixed heritage with warm golden-brown skin tone and sharp high cheekbones. Shoulder-length black hair with copper-to-violet chromatic root shift. Striking geometric spirograph irises in copper and pale green that slowly rotate—calm focus state. Tall and angular build, long-limbed and precise. Wearing charcoal compression-weave shirt under Aurochs Medical Complex lab coat with embroidered credentials, dark fitted trousers, orthopedic synthetic leather shoes. Subtle iridescent shimmer visible along left temple at neural implant integration point. Serene, meditative expression. Hands completely still, bearing faint microlacerations from precision calibration work. Standing in minimalist clinic or research facility with cool clinical lighting, soft ambient glow catching iridescent implant marks. Atmosphere of calm competence and controlled focus. Cyberpunk medical professional aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Onyx Deshpande, GLMZ, portrait of a precise medical technician with deep warm-brown skin glowing with golden luminescence from rare multicontinental ancestry. Sharp geometric facial structure with prominent high cheekbones, refined Middle Eastern and Central Asian bone architecture softened by Sub-Saharan African warmth. Medium-length black hair combed back cleanly with copper-to-violet chromatic root-shift. Most striking feature: geometric spirograph irises in rotating copper and pale green patterns showing neural focus state. Ascetic build, long-limbed and angular. Wearing charcoal compression-weave shirt under lightweight Aurochs Medical Complex lab coat with embroidered credentials, dark fitted trousers, premium orthopedic synthetic leather shoes. Thin platinum band on left ring finger. Subtle iridescent shimmer visible at left temple where neural resonance implant integrates with skin. Serene, emotionally distant expression with impeccable grooming. Meditative stillness, hands completely still despite conversation. Clinical laboratory setting with soft overhead lighting highlighting golden skin luminescence and temple iridescence. Neo-noir medical aesthetic, precise and ascetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 48.3,
-    "Northern European": 28.7,
-    "East Asian": 13.8,
-    "Eastern European": 9.2
+    "Middle Eastern": 45,
+    "Sub-Saharan African": 24.7,
+    "South Asian": 15.4,
+    "Central Asian": 14.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 37.1
+      },
+      "Kurdish": {
+        "Kurdish": 7.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 11.5
+      },
+      "Central African": {
+        "Congolese": 8.9
+      },
+      "West African": {
+        "Nigerian": 4.3
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 12.4,
+        "Tamil Sri Lankan": 3
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 1.3,
+        "Buryat": 0.5
+      },
+      "Turkic": {
+        "Kazakh": 5
+      },
+      "Iranian Central": {
+        "Hazara": 4,
+        "Tajik": 4.1
+      }
+    }
+  }
 }

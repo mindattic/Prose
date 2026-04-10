@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70e775996c7b1ca9591c1ea",
   "type": "character",
-  "name": "Slate Möller-Tovar",
+  "name": "Slate Touré-Najjar",
   "aliases": [
     "Patch"
   ],
@@ -12,7 +12,7 @@
   "age": 41,
   "status": "active",
   "location": "Gravesend Basin, operating out of a decommissioned Ferrogate Transit maintenance shed, near Ashland and Chicago Ave",
-  "description": "Vashti is a broad-shouldered woman with the particular kind of calm that comes from having done terrible things enough times that they no longer register as remarkable. Her skin is deep brown and unmarked except for a long scar along her left jaw that she refuses to have cosmetically repaired — a reminder, she says, to stay humble. Her hair is cut close on the sides and left natural on top, shot through with gray she doesn't bother hiding. She wears surgical-grade contact lenses that tint her irises pale gold, useful for the magnification assists built into the lens substrate. She moves with the unhurried efficiency of a woman who has learned that urgency creates mistakes.\n\nShe was a licensed surgical technician for Aurochs Medical Complex for eleven years before a licensing dispute — she maintains it was fabricated by a superior who wanted her caseload — ended her legitimate career. She drifted sideways into the gray market, then further. Now she runs a small but reliable operation: procurement, preservation, brokerage. She tells herself she mostly sources from consenting donors and the already-dead, and this is true often enough that she can sleep. She is professional, fair by the standards of Gravesend Basin, and genuinely good at her work. The horror of her trade does not read on her face.",
+  "description": "Slate Touré-Najjar is a broad-shouldered woman with the particular kind of calm that comes from having done terrible things enough times that they no longer register as remarkable. Her skin is deep brown and unmarked except for a long scar along her left jaw that she refuses to have cosmetically repaired — a reminder, she says, to stay humble. Her hair is cut close on the sides and left natural on top, shot through with gray she doesn't bother hiding. She wears surgical-grade contact lenses that tint her irises pale gold, useful for the magnification assists built into the lens substrate. She moves with the unhurried efficiency of a woman who has learned that urgency creates mistakes.\n\nShe was a licensed surgical technician for Aurochs Medical Complex for eleven years before a licensing dispute — she maintains it was fabricated by a superior who wanted her caseload — ended her legitimate career. She drifted sideways into the gray market, then further. Now she runs a small but reliable operation: procurement, preservation, brokerage. She tells herself she mostly sources from consenting donors and the already-dead, and this is true often enough that she can sleep. She is professional, fair by the standards of Gravesend Basin, and genuinely good at her work. The horror of her trade does not read on her face.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -185,7 +185,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,37 +255,17 @@
     "Ferrogate Transit",
     "Gravesend Basin",
     "The Iron Lotus",
+    "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
+    "Arcturus KS-7 'Nursery'",
+    "Slate",
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Pale Mile",
-    "Gold",
-    "Chicago",
-    "Arcturus KS-7 'Nursery'",
-    "Arcturus NX-1 'Sandman'",
-    "Calumet Rise",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Helix Biosystems",
-    "Kang-Petrov Arms KPA-25EM 'Tempest'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Ringo AX-12 'Harvester'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "Sagyn Padilla-Nti",
-    "Slagworks Industrial",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Basin",
-    "The Compact",
-    "The Ledger",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy",
-    "Yuliya Morozova"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian, Sub-Saharan African, and Hispanic/Latin American blend — a striking combination reflecting the Ubiquitous Diaspora. Southeast Asian bone structure evident in cheekbones and eye shape, Sub-Saharan African heritage in rich skin depth and hair texture, Hispanic/Latin American warmth in undertones and facial proportions.",
+    "heritage": "Predominantly Sub-Saharan African (63%) with significant Southeast Asian (11.8%), Middle Eastern (8.4%), and East Asian (8.3%) ancestry, complemented by Indigenous American (7.3%) and minor Hispanic/Latin American (1.2%) heritage. This complex admixture creates striking phenotypic depth: Sub-Saharan African foundation evident in rich skin melanization, textured hair, and facial structure; Southeast Asian and East Asian elements visible in cheekbone prominence and eye shape; Middle Eastern and Indigenous American ancestry contributing to overall facial proportions and warm undertones.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and solid without heaviness, muscular through the chest and forearms from decades of precise surgical work. Carries herself with the compact efficiency of someone who doesn't waste movement.",
@@ -293,8 +273,8 @@
     "hair_style": "Undercut — shaved close to scalp on sides and back, natural texture left full on top and slightly longer",
     "hair_length": "Short on sides, medium on crown",
     "eye_color": "Pale gold (surgically tinted magnification contact lenses; natural dark brown beneath)",
-    "skin_tone": "Rich warm brown with undertones reflecting the blend of Southeast Asian, African, and Latin heritage — deep and even, weathered from exposure and time",
-    "complexion": "Unlined face for her age, skin kept meticulously clean and unmarred by choice. No makeup. Minimal grooming — practical rather than aesthetic. Cheekbones defined with the characteristic prominence of Southeast Asian ancestry, softened by Sub-Saharan depth and warmth.",
+    "skin_tone": "Deep warm brown with complex multivalent undertones — rich melanized base from Sub-Saharan African ancestry (63%), warmed and subtly cooled by Southeast Asian heritage, brightened by Middle Eastern warmth, with the cooler golden undertones characteristic of East Asian ancestry, further enriched by Indigenous American and Hispanic/Latin American heritage creating an even, weathered depth from exposure and time",
+    "complexion": "Unlined face for her age, skin kept meticulously clean and unmarred by choice. No makeup. Minimal grooming — practical rather than aesthetic. Prominent, angular cheekbones characteristic of East Asian and Southeast Asian ancestry, deepened and warmed by dominant Sub-Saharan African heritage. Facial structure reflects the geometric harmony of her genetic blend: broader nose bridge with subtle refinement from Middle Eastern ancestry, full lips typical of Sub-Saharan African heritage, eye shape showing Southeast Asian influence. Overall facial proportions balanced by Indigenous American ancestry contribution.",
     "distinguishing_marks": [
       "Long thin scar running along the left jaw from angle to chin, pale and precise, deliberately never cosmetically repaired"
     ],
@@ -302,14 +282,63 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion, no unnecessary speed. Hands are always slightly relaxed and ready. Eyes register everything. Sits upright. When she pauses, she becomes still in a way that reads as attentiveness rather than idleness.",
     "clothing_style": "Practical Tier 4 workwear: surgical-grade gray-blue scrubs under a weathered black synthleather apron with deep pockets, kept obsessively clean. Insulated field jacket in dark charcoal for transport work. Steel-toed boots, well-maintained. No jewelry. Clothing prioritizes function and easy sterilization over appearance. Everything fits precisely."
   },
-  "image_prompt": "Slate Möller-Tovar, a 178cm surgical specialist with rich warm brown skin blending Southeast Asian, Sub-Saharan African, and Hispanic heritage. Black hair with gray threading in a precise undercut. Dark eyes beneath pale gold magnification lenses. Long thin scar along left jaw. Wearing surgical-gray scrubs under weathered black synthleather apron, dark charcoal insulated jacket. Steel-toed boots. Haptic feedback nodes visible across palms. Subdermal cool-pack sleeve along left forearm. Posture economical and attentive, hands relaxed and ready. Cyberpunk 2226 medical facility setting, cool LED overhead lighting, shallow depth of field, cinematic, --ar 2:3 --v 6",
+  "image_prompt": "Slate Touré-Najjar, 178cm surgical specialist in 2226, deep warm-brown skin with multivalent undertones blending Sub-Saharan African, Southeast Asian, and East Asian heritage. Angular, geometric cheekbones, subtle Middle Eastern refinement, natural dark brown eyes behind pale gold surgical magnification lenses. Black hair with salt-gray threading, undercut style — shaved sides, full natural texture on crown. Thin precise scar along left jawline. Muscular, broad-shouldered frame. Wearing surgical-grade gray-blue scrubs under weathered black synthleather apron, dark charcoal insulated jacket, steel-toed boots. Faint metallic scarring on hands from haptic feedback nodes, subdermal thermal discoloration visible on left forearm. Utterly composed, efficient posture, hands slightly ready. GLMZ GLMZ setting, clinical lighting, hyper-competent surgical professional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 38.7,
-    "Sub-Saharan African": 35.1,
-    "Hispanic/Latin American": 26.2
+    "Sub-Saharan African": 63,
+    "Southeast Asian": 11.8,
+    "Middle Eastern": 8.4,
+    "East Asian": 8.3,
+    "Indigenous American": 7.3,
+    "Hispanic/Latin American": 1.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 63
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 3.2
+      },
+      "Thai": {
+        "Thai": 5.6
+      },
+      "Indonesian": {
+        "Balinese": 1.4,
+        "Sumatran": 1.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 2.4
+      },
+      "Kurdish": {
+        "Kurdish": 6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 6.8
+      },
+      "Chinese": {
+        "Fujianese": 1.5
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 2.6,
+        "Nahua": 4.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 1.2
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
-  "description": "Hadiya Holm-Danquah are slight and easy to overlook, which is exactly the point. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a infiltrator out of The Underbelly, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Hadiya Holm-Danquah describe them as a precision instrument — point them at a problem and get out of the way.",
+  "description": "Vesper Hernández are slight and easy to overlook, which is exactly the point. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a infiltrator out of The Underbelly, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Vesper Hernández describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.28,
@@ -257,7 +257,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underbelly",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -270,31 +270,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lazarus LX-2 'Lab Rat'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "TERMINUS",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "Yusra Ntambwe-Cakić"
+    "Neural Palate",
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Pacific Islander-dominant with significant Hispanic/Latin American and South Asian admixture. This creates a striking blend: the warm, rich skin tones and robust bone structure of Pacific Islander ancestry form the foundation, enriched by the angular facial geometry and dark hair of Hispanic/Latin heritage, with subtle South Asian eye shape and cheekbone prominence adding complexity to the overall appearance.",
+    "heritage": "Predominantly Hispanic/Latin American (80.6%) with significant South Asian (12.2%) and Southeast Asian (7.2%) admixture. The angular facial geometry characteristic of Hispanic/Latin ancestry forms the foundation—sharp cheekbones and jawline—enriched by the more prominent, sculpted cheekbone structure of South Asian genetics. Southeast Asian admixture adds subtle refinement to eye shape and overall facial proportions, creating a striking fusion where no single ancestry dominates the visual whole. Warm, golden undertones run throughout.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and wiry with minimal body fat — built for speed and infiltration rather than strength. Shoulders slightly narrower than average, core visibly defined. No wasted mass.",
@@ -302,8 +286,8 @@
     "hair_style": "Pulled back in a tight, functional braid; practical for fieldwork and to expose augmentations",
     "hair_length": "Medium",
     "eye_color": "Deep brown with warm amber undertones — natural, unaugmented",
-    "skin_tone": "Rich warm bronze with golden undertones, even complexion reflecting the blend of Pacific Islander warmth and South Asian depth",
-    "complexion": "Strong, defined cheekbones with subtle South Asian prominence, angular jawline showing Hispanic/Latin structure, calm expression. Minimal scarring on face — they don't get caught often enough to show it. Eyes track everything with quiet intensity. Skin shows disciplined self-maintenance despite the Underbelly location. Facial structure carries the distinctive strength of Pacific Islander heritage softened by South Asian and Hispanic features.",
+    "skin_tone": "Medium bronze with golden warmth, even complexion blending the rich tones of Hispanic/Latin and South Asian heritage with Southeast Asian subtlety",
+    "complexion": "Striking fusion of heritage: South Asian-prominent, sculpted cheekbones paired with the angular jawline of Hispanic/Latin structure. Southeast Asian eye shape adds almond-tilt and subtle epicanthal fold. Calm, focused expression. Eyes track everything with quiet intensity. Skin shows disciplined self-maintenance despite Underbelly location—no blemishes, but bearing the patient wear of fieldwork.",
     "distinguishing_marks": [
       "Chrome neural dampener visible at the base of skull, seamlessly integrated but unmistakable — silver-grey with faint pulse of internal LED when active",
       "Thin tactical scar running along right collarbone, approximately 8cm, pale and well-healed",
@@ -314,14 +298,41 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Sits with spine straight, alert. Habit of checking exits and sightlines. Handshake is firm but brief. Speaks quietly; people lean in to listen. Default stance is relaxed but ready, like a coiled spring.",
     "clothing_style": "Tier 4 functional — dark, fitted, minimal branding. Form-fitting tactical jacket with reinforced shoulders and hidden pockets. Matte-black under-armor mesh visible at collar. Combat boots with grip soles and hidden blade sheaths. Layers designed for rapid concealment or tactical loadout. No jewelry. Worn Φ500-1200 range in gear total — investment in tools, not aesthetics."
   },
-  "image_prompt": "Vesper Hernández, cyberpunk 2226, lean and wiry frame, rich warm bronze skin with golden undertones, defined cheekbones with South Asian prominence and Hispanic angular jawline, deep brown eyes with amber warmth, dark brown hair with silver at temples pulled in tight tactical braid exposing chrome neural dampener at skull base with faint LED pulse, chrome and subdermal armor plating visible on forearms, thin scar on collarbone, burn mark on left wrist, dark fitted tactical jacket with reinforced shoulders and matte-black under-armor mesh at collar, combat boots with grip soles, minimal jewelry, alert poised posture suggesting coiled readiness, deliberate economical movement, quiet intense gaze, Underbelly location with neon rim lighting casting shadows across face, cyberpunk chrome aesthetic, low-key professional infiltrator aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "Vesper Hernández, 168cm lean operative with medium bronze skin blending Hispanic, South Asian, and Southeast Asian heritage. Sharp Hispanic/Latin cheekbones enhanced by South Asian prominence; Southeast Asian eye shape with deep brown amber-toned eyes. Dark brown hair with silver temples pulled in tight braid, exposing chrome neural dampener at skull base with faint LED glow. Visible subdermal armor plating ridges on forearms. Wearing matte-black fitted tactical jacket with reinforced shoulders, under-armor mesh collar visible, dark combat boots. Pale tactical scar along right collarbone, circular burn mark on left wrist. Calm, focused expression, alert posture. GLMZ GLMZ Underbelly setting, moody blue-neon and cool shadows, cinematic lighting emphasizing chrome implants and worn tactical gear, low-angle shot emphasizing ready stance --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 41.3,
-    "Hispanic/Latin American": 36.1,
-    "South Asian": 22.6
+    "Hispanic/Latin American": 80.6,
+    "South Asian": 12.2,
+    "Southeast Asian": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 67.5
+      },
+      "Caribbean": {
+        "Cuban": 10.5
+      },
+      "Central American": {
+        "Nicaraguan": 2.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 4.8,
+        "Tamil Sri Lankan": 1.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 5.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 7.2
+      }
+    }
+  }
 }

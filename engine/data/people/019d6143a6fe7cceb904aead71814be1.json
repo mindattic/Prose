@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fe7cceb904aead71814be1",
   "type": "character",
-  "name": "Orion Vasquez-Alfarsi",
+  "name": "Orion Thorvaldsdóttir",
   "aliases": [
     "Void",
     "T-Void"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Brightmoor Reclamation, squats in an abandoned Ferrogate Transit relay station, near Halsted and Division",
-  "description": "Toivo is a skinny nineteen-year-old with the kind of energy that only reads as charisma or catastrophe depending on the day. He's all long limbs and fast hands, hair in a dozen thin braids dyed alternating orange and white that he keeps tied back while working. His geneware is cheap and obviously DIY-adjacent — cat ears that didn't integrate quite right and sit slightly asymmetrical on his head, one a little higher than the other, which he claims is intentional but isn't. His fingertips are perpetually stained with chromatic aerosol pigment in colors that don't exist in the standard spectrum.\n\nWhat he does with a wall is extraordinary. Toivo paints living murals — his aerosol formulas include bioluminescent reactive compounds he mixes himself from salvaged materials, so his work changes with light conditions, breathing and shifting from dawn to dusk to full dark when it blazes. He's been arrested four times by Ferrogate Transit security for unauthorized installation on their infrastructure. He considers this a metric of success. Offstage he is loud, impatient, genuinely sweet when he trusts someone, and absolutely certain he is going to be famous someday. He is probably right.",
+  "description": "Orion Thorvaldsdóttir is a skinny nineteen-year-old with the kind of energy that only reads as charisma or catastrophe depending on the day. He's all long limbs and fast hands, hair in a dozen thin braids dyed alternating orange and white that he keeps tied back while working. His geneware is cheap and obviously DIY-adjacent — cat ears that didn't integrate quite right and sit slightly asymmetrical on his head, one a little higher than the other, which he claims is intentional but isn't. His fingertips are perpetually stained with chromatic aerosol pigment in colors that don't exist in the standard spectrum.\n\nWhat he does with a wall is extraordinary. Orion Thorvaldsdóttir paints living murals — his aerosol formulas include bioluminescent reactive compounds he mixes himself from salvaged materials, so his work changes with light conditions, breathing and shifting from dawn to dusk to full dark when it blazes. He's been arrested four times by Ferrogate Transit security for unauthorized installation on their infrastructure. He considers this a metric of success. Offstage he is loud, impatient, genuinely sweet when he trusts someone, and absolutely certain he is going to be famous someday. He is probably right.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -182,7 +182,7 @@
     "Beauty Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brightmoor Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -202,58 +202,81 @@
     "Grand Corridor",
     "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
     "The Reclamation Assembly",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Pure Hand",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Abeke Soriano-Dlamini",
-    "Auricula Felis Modification",
-    "Bintou Halvorsen-Osei",
     "GLMZ",
-    "Ilhan Sandstrom-Badu",
-    "Iowan Behemoth — 'Palisade'",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Patient Zero",
-    "TESSERA PG-2 'Signature'",
-    "Tafadzwa Björk-Enyinnaya",
-    "Tender Collapse",
-    "Tenderloin",
-    "Tessera Nexus Town Car",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "Veslemøy Achebe-Tursynov"
+    "The Pure Hand",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Middle Eastern, Pacific Islander, and East Asian mixed ancestry — a striking blend of features from three continents. The combination creates warm, olive-toned skin with subtle golden undertones characteristic of Middle Eastern and Pacific Islander genetics, complemented by the facial structure and eye characteristics influenced by East Asian heritage.",
+    "heritage": "Northern European, Sub-Saharan African, South Asian, and East Asian mixed ancestry — a striking global blend. The combination creates warm, deep brown skin with subtle golden undertones from the South Asian and East Asian components, enriched by the darker pigmentation from Sub-Saharan African heritage (47.4% Northern European providing lighter undertone variation), creating a complex, multifaceted complexion that shifts warmly under artificial light with pronounced depth and dimension.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Wiry and lean with long limbs; the build of someone who moves constantly and eats inconsistently. Defined shoulders and forearms from repetitive spraying motions, minimal body fat.",
     "hair_color": "Natural dark brown with DIY dyed braids in alternating neon orange and white",
     "hair_style": "Thin braids, typically pulled back with salvaged wire or fabric scraps while working; loose and chaotic when down",
     "hair_length": "Medium, past shoulder length when unbraided",
-    "eye_color": "Dark brown with subtle amber undertone, characteristic of mixed Middle Eastern and East Asian ancestry",
-    "skin_tone": "Warm olive with golden undertones — a rich blend of Middle Eastern, Pacific Islander, and East Asian heritage creating a complexion that glows warmly under artificial light",
-    "complexion": "Defined cheekbones and balanced facial structure reflecting the blend of ancestral features — sharp angles softened by the warm, olive-toned complexion. Perpetually sleep-deprived appearance with dark under-eye circles. Skin shows the wear of late-night work and inconsistent hygiene — occasional aerosol chemical burns on cheeks and neck from spray blowback. Fingers stained with chromatic pigments in impossible hues (electric purple, synthetic cyan, neon lime) that don't wash out completely.",
+    "eye_color": "Deep brown with warm golden undertones, reflecting the balanced interplay of Sub-Saharan African, South Asian, and East Asian heritage",
+    "skin_tone": "Warm deep brown with golden undertones and subtle lighter variations from Northern European genetics — a rich, multifaceted blend creating a complexion that glows warmly under artificial light with pronounced depth and natural dimension across the face",
+    "complexion": "Rounded to angular facial structure reflecting the diverse ancestral blend — higher cheekbones characteristic of East and South Asian genetics, complemented by broader facial proportions influenced by Sub-Saharan African heritage, softened by Northern European genetic contribution. Deep warm brown base with golden warmth. Perpetually sleep-deprived appearance with dark under-eye circles. Skin shows the wear of late-night work and inconsistent hygiene — occasional aerosol chemical burns on cheeks and neck from spray blowback. Fingers stained with chromatic pigments in impossible hues (electric purple, synthetic cyan, neon lime) that don't wash out completely.",
     "distinguishing_marks": [
       "Chemical burn scars on right cheekbone from early aerosol experimentation, roughly 2cm in length, slightly raised and discolored",
       "Ferrogate Transit security marker tattoo on left wrist (mandatory after second arrest) — small geometric symbol in black ink",
       "Accidental spray-paint splatter scar on left hand webbing, iridescent pigment still faintly visible under skin"
     ],
-    "visible_augmentations": "Asymmetrically positioned DIY cat ears mounted on skull via subdermal anchors — left ear sits approximately 0.5cm higher than right, both with slight rotational drift during movement. Ears are cheap cosmetic grade (synthetic cartilage, basic servo motors) with visible misalignment that Toivo claims is intentional. Fingertips display slow-cycling chromatic nail enhancement (consumer-grade bioelectric implants) that shift through unnatural color gradients — currently cycling through violet-to-magenta-to-cyan range.",
-    "posture_movement": "Restless and kinetic; rarely still for more than seconds. Moves with purpose and speed, shoulders slightly forward. Hands are constantly in motion even at rest — fingers flexing, gesturing, mimicking spray motions. When concentrating on art, enters a state of complete focus that contrasts sharply with his baseline hyperactivity. Default expression is wide-eyed enthusiasm or mischievous intensity.",
-    "clothing_style": "Tier 5 utilitarian with deliberate aesthetic flair. Typically wears paint-splattered cargo pants (multiple pockets for materials, cuffs stained with permanent chromatic residue) and oversized thrifted tech-company t-shirts from defunct 2180s-era startups. Layered jackets salvaged from Brightmoor recyclers — current favorite is a faded synthetic-fiber windbreaker with LED panel strips he's rewired himself (malfunctioning, blinks irregularly). Worn canvas sneakers with custom-painted soles. Carries a salvaged military-grade harness vest modified to hold aerosol cans, brushes, and chemical bottles. Heavy reliance on found/salvaged accessories: wire bracelets, scrap-metal rings, a cracked safety visor worn pushed up on his forehead."
+    "visible_augmentations": "Asymmetrically positioned DIY cat ears mounted on skull via subdermal anchors — left ear sits approximately 0.5cm higher than right, both with slight rotational drift during movement. Ears are cheap cosmetic grade (synthetic cartilage, basic servo motors) with visible misalignment that Orion claims is intentional. Fingertips display slow-cycling chromatic nail enhancement (consumer-grade bioelectric implants) that shift through unnatural color gradients — currently cycling through violet-to-magenta-to-cyan range.",
+    "posture_movement": "Restless and kinetic; rarely still for more than seconds. Moves with purpose and speed, shoulders slightly forward. Hands are constantly in motion even at rest — fingers flexing, gesturing, mimicking spray motions. When concentrating on art, enters a state of complete focus that contrasts sharply with baseline hyperactivity. Default expression is wide-eyed enthusiasm or mischievous intensity.",
+    "clothing_style": "Tier 5 utilitarian with deliberate aesthetic flair. Typically wears paint-splattered cargo pants (multiple pockets for materials, cuffs stained with permanent chromatic residue) and oversized thrifted tech-company t-shirts from defunct 2180s-era startups. Layered jackets salvaged from Brightmoor recyclers — current favorite is a faded synthetic-fiber windbreaker with LED panel strips rewired (malfunctioning, blinks irregularly). Worn canvas sneakers with custom-painted soles. Carries a salvaged military-grade harness vest modified to hold aerosol cans, brushes, and chemical bottles. Heavy reliance on found/salvaged accessories: wire bracelets, scrap-metal rings, a cracked safety visor worn pushed up on forehead."
   },
-  "image_prompt": "Orion Vasquez-Alfarsi, 2226 cyberpunk street artist, 178cm tall lean wiry frame, warm olive skin with golden undertones blending Middle Eastern, Pacific Islander, and East Asian heritage, dark brown eyes with amber flecks. Medium-length braids in neon orange and white, dark brown natural roots. Asymmetrical DIY subdermal cat ear implants with visible servo motors, misaligned and drifting. Fingertips with slow-cycling chromatic bioelectric nail enhancements shifting violet-magenta-cyan. Chemical burn scars on right cheekbone, iridescent spray-paint scar on left hand. Sleep-deprived with dark under-eye circles, restless hyperkinetic energy frozen mid-gesture, wide-eyed mischievous intensity. Wearing paint-splattered cargo pants, oversized defunct tech-company t-shirt, malfunctioning LED windbreaker with irregular blinking panels, worn custom-painted canvas sneakers. Military-grade harness vest modified with aerosol cans and brushes. Wire bracelets, scrap-metal rings, cracked safety visor pushed up on forehead. Fingers stained impossible pigment colors. Ferrogate Transit security tattoo on left wrist. Neon-lit Great Lakes megacity street art environment, cyberpunk 2200s aesthetic, moody atmospheric lighting, hyper-detailed character study --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Orion Thorvaldsdóttir, 178cm lean wiry figure with complex warm deep brown skin with golden undertones reflecting global ancestry blend. Dark natural braids with neon orange and white DIY dye, loosely framing defined cheekbones. Deep warm brown eyes with perpetual sleep-deprived dark circles. Asymmetrical DIY cat ears with servo motors mounted via subdermal anchors on shaved sides of head. Chemical burn scars visible on right cheek, ferrogate transit tattoo on left wrist. Fingers stained with impossible chromatic pigments (electric purple, synthetic cyan, neon lime), fingertips displaying slow-cycling violet-magenta-cyan bioelectric nail implants. Wearing oversized faded 2180s tech startup t-shirt splattered with paint residue, recycled synthetic-fiber windbreaker with malfunctioning LED strips, paint-stained cargo pants, worn custom-painted canvas sneakers. Salvaged military harness vest with aerosol cans and brushes. Wire bracelets, scrap-metal rings, cracked safety visor pushed up on forehead. Restless kinetic posture, hands in motion, wide-eyed mischievous intensity. Neon underground art studio setting with harsh blue and pink LED lighting casting complex shadows across mixed-heritage features. Gritty, lived-in aesthetic with spray-paint murals in background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 40.4,
-    "Pacific Islander": 30.6,
-    "East Asian": 29.0
+    "Northern European": 47.4,
+    "Sub-Saharan African": 23.5,
+    "South Asian": 14.9,
+    "East Asian": 14.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 47.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 14.3
+      },
+      "Central African": {
+        "Gabonese": 9.2
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 11.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1.6,
+        "Tamil Sri Lankan": 0.2
+      },
+      "Nepali": {
+        "Nepali": 1.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6.7
+      },
+      "Chinese": {
+        "Cantonese": 1.4,
+        "Shanghainese": 1
+      },
+      "Korean": {
+        "Korean": 5.1
+      }
+    }
+  }
 }

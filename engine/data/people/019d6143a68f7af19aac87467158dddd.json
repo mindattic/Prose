@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Aurochs Medical Complex, Tier 3 Neuro-Calibration Suite, Bay 7, near Milwaukee and Damen",
-  "description": "Ovídio is slight and precise, the kind of person who takes up exactly as much space as needed and not a centimeter more. He has warm brown skin and keeps his hair in neat, shoulder-length locs that he ties back during procedures. His eyes are natural — he's deeply principled about not modifying anything that could affect his calibration sensitivity — but he wears a pair of Tessera-brand neural interface gloves that translate micromotor input into the diagnostic rigs he uses daily. He has the quiet intensity of someone who genuinely finds the human brain beautiful, which is either reassuring or unsettling depending on how he says it.\n\nHe is methodical to the point that colleagues sometimes mistake it for coldness, but patients who return for follow-up appointments often describe him as the only doctor who actually listened. He is deeply interested in each patient's subjective experience of their augmentations — how they dream differently, whether music sounds wrong, whether their sense of time has shifted — and takes notes in a personal journal that he keeps entirely separate from his Aurochs medical records. He prays regularly to a data shrine near his workstation dedicated to an E.L.F. he calls the Quiet Current, which he believes smooths the feedback loops of difficult calibrations.",
+  "description": "Esteban Echeverría is slight and precise, the kind of person who takes up exactly as much space as needed and not a centimeter more. He has warm brown skin and keeps his hair in neat, shoulder-length locs that he ties back during procedures. His eyes are natural — he's deeply principled about not modifying anything that could affect his calibration sensitivity — but he wears a pair of Tessera-brand neural interface gloves that translate micromotor input into the diagnostic rigs he uses daily. He has the quiet intensity of someone who genuinely finds the human brain beautiful, which is either reassuring or unsettling depending on how he says it.\n\nHe is methodical to the point that colleagues sometimes mistake it for coldness, but patients who return for follow-up appointments often describe him as the only doctor who actually listened. He is deeply interested in each patient's subjective experience of their augmentations — how they dream differently, whether music sounds wrong, whether their sense of time has shifted — and takes notes in a personal journal that he keeps entirely separate from his Aurochs medical records. He prays regularly to a data shrine near his workstation dedicated to an E.L.F. he calls the Quiet Current, which he believes smooths the feedback loops of difficult calibrations.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +179,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -225,23 +225,12 @@
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "Tessera Corponation",
     "Irontide Tidal Energy",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Stalker",
-    "The Milwaukee Core",
-    "Ambrosia Fekete-Waiyaki",
-    "Breck Tannen",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy"
+    "Neural Palate",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant Southeast Asian ancestry and minor Northern European admixture. The combination creates distinctive features: warm medium-to-golden brown skin tone with subtle Southeast Asian eye shape characteristics, Latin American facial bone structure with higher cheekbones, and a complexion reflecting the blend of these ancestries.",
+    "heritage": "Hispanic/Latin American (60.2%) with substantial Sub-Saharan African (36.9%) ancestry and minor Central Asian (2.9%) admixture. This genetic combination creates a striking phenotype: rich deep brown skin with warm undertones from the Latin American and African heritage blend, prominent cheekbones and defined facial structure reflecting both Hispanic/Latin American and African ancestry, with subtle eye shape variation from Central Asian heritage. The overall effect is a distinctive and complex appearance grounded in the dominant Latin American and African genetic heritage.",
     "height_cm": 172,
     "weight_kg": 63,
     "build": "Lean and economical, with the precise musculature of someone who moves deliberately. Narrow shoulders, long fingers. No wasted mass.",
@@ -249,8 +238,8 @@
     "hair_style": "Shoulder-length locs, typically bound back with a simple fabric tie during work",
     "hair_length": "Long",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Warm golden-brown with Southeast Asian depth, reflecting the blend of Hispanic/Latin American and Southeast Asian ancestry",
-    "complexion": "Clear, well-maintained skin with minimal facial hair. Moderate-width face with prominent cheekbones characteristic of Hispanic/Latin American heritage, subtle epicanthal fold variation reflecting Southeast Asian ancestry, and a contemplative expression. Grooming is meticulous but understated.",
+    "skin_tone": "Deep warm brown with golden and reddish undertones reflecting the blend of Hispanic/Latin American and Sub-Saharan African ancestry, with subtle Central Asian influence visible in undertone complexity",
+    "complexion": "Clear, well-maintained skin with minimal facial hair. Moderate-width face with prominent cheekbones characteristic of Hispanic/Latin American and African heritage, defined jawline, strong facial structure, and a contemplative expression. Grooming is meticulous but understated.",
     "distinguishing_marks": [
       "Faint bioluminescent tracery along the left forearm in delicate branching patterns resembling neural pathways, soft blue-green glow visible in dim light, acquired at age nineteen and maintained",
       "Fine surgical scars at both temples from early neural interface calibration work, barely visible unless examined closely"
@@ -259,14 +248,52 @@
     "posture_movement": "Moves with economical precision, never gesturing broadly. Stands still for extended periods without fidgeting. Hands are often in a state of readiness or focused intentionality. Eye contact is steady and deliberate. Overall bearing suggests someone comfortable with silence and meticulous work.",
     "clothing_style": "Tier 3 professional-practical: fitted charcoal or navy tunic-style shirts with moisture-wicking synthetic fabric, clean and pressed. Slim dark trousers or specialized work pants with reinforced pockets for diagnostic tools. Comfortable non-marking shoes suitable for standing all day. A worn leather journal always visible in his left breast pocket or nearby. No visible corporate branding beyond the required Aurochs Medical Complex ID badge. Occasionally wears a simple woven prayer bracelet on his right wrist."
   },
-  "image_prompt": "Esteban Echeverría, a 172cm lean-built man with warm golden-brown skin reflecting Hispanic/Latin American and Southeast Asian heritage, standing in a medical facility corridor in 2226. Dark brown shoulder-length locs bound back with a fabric tie. Deep brown eyes with steady, contemplative expression. Fine-featured face with prominent cheekbones. Wearing a fitted charcoal moisture-wicking tunic and slim dark work pants. Black Tessera HapticDrive neural interface gloves with silver nodes visible on palms. Soft blue-green bioluminescent branching tracery glowing faintly along left forearm in dim ambient light. Worn leather journal tucked in left breast pocket. Prayer bracelet on right wrist. Precise posture, economical movement, aura of meticulous professionalism. Futuristic medical facility lighting, cool cyberpunk aesthetic, professional composure --ar 2:3 --v 6",
+  "image_prompt": "Esteban Echeverría, a lean 172cm tall figure with deep warm brown skin reflecting Hispanic/Latin American and Sub-Saharan African heritage. Shoulder-length dark brown textured locs bound back with a fabric tie. Deep brown natural eyes, prominent cheekbones, defined facial structure, steady contemplative expression. Meticulous grooming, faint surgical scars at temples barely visible. Wearing fitted charcoal tunic-style shirt and slim dark work trousers, clean professional appearance. Tessera HapticDrive neural interface gloves with black synthetic leather and silver contact nodes on both hands. Left forearm displays faint bioluminescent neural pathway tracery in soft blue-green, glowing subtly in low light. Simple woven prayer bracelet on right wrist, worn leather journal visible in left breast pocket. Standing with economical posture, hands in state of readiness. Medical complex ID badge visible. GLMZ near-future aesthetic, Great Lakes Metropolitan Zone setting, cool professional lighting with subtle glow from bioluminescent augmentation, muted color palette with accent of blue-green light, atmospheric depth, professional medical setting background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 63.1,
-    "Southeast Asian": 32.0,
-    "Northern European": 4.9
+    "Hispanic/Latin American": 60.2,
+    "Sub-Saharan African": 36.9,
+    "Central Asian": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 9.2,
+        "Cuban": 38.2
+      },
+      "Central American": {
+        "Honduran": 6.8,
+        "Salvadoran": 3.4
+      },
+      "South American": {
+        "Peruvian": 1.2,
+        "Argentine": 1.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 23.2
+      },
+      "Central African": {
+        "Cameroonian": 12.2,
+        "Congolese": 1.5
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 0.3,
+        "Tajik": 0.6
+      },
+      "Turkic": {
+        "Uzbek": 0.3
+      },
+      "Mongolic": {
+        "Mongolian": 0.7,
+        "Buryat": 1
+      }
+    }
+  }
 }

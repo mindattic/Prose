@@ -1,13 +1,13 @@
 {
   "id": "c38fec6b74c44c20c29c1af5c4e13f31",
-  "name": "Binta Balogun",
+  "name": "Nayeli Citlali",
   "type": "character",
   "aliases": [
     "The Bazaar",
     "Whisperchain"
   ],
   "role": "Private Investigator",
-  "description": "Hadiya Novak-Tetteh is not exactly a private investigator, though she's licensed as one. She is an information broker — someone who collects, synthesizes, trades, and weaponizes knowledge. Every conversation she has is simultaneously social and transactional. Every relationship is genuine and exploitable. She exists at the center of a web of intelligence that spans all five tiers of GLMZ, and her real product isn't investigation — it's understanding.\n\nHer network is her masterwork. Over fifteen years, she has cultivated sources in every meaningful institution in the city: corporate employees who share gossip for pocket money, CorpSec officers who trade case details for favors, tunnel dwellers who report on underground movement for food credits, service workers in the Spires who overhear conversations their employers forget they're present for. No single source knows anything critical. The power is in the synthesis — combining a hundred fragments of mundane information into a picture that reveals something nobody wanted revealed.\n\nShe is frequently hired as an investigator but her real business is the information exchange itself. Clients come to her because they need to know something. She already knows it, or she knows who knows it, or she can find out within 48 hours. Her fee structure is unusual: sometimes she charges Quanta, sometimes she charges in information, and sometimes she charges in future favors. The favor economy is her real currency. Half the powerful people in GLMZ owe her something, and she collects when the time is right.",
+  "description": "Nayeli Citlali is not exactly a private investigator, though she's licensed as one. She is an information broker — someone who collects, synthesizes, trades, and weaponizes knowledge. Every conversation she has is simultaneously social and transactional. Every relationship is genuine and exploitable. She exists at the center of a web of intelligence that spans all five tiers of GLMZ, and her real product isn't investigation — it's understanding.\n\nHer network is her masterwork. Over fifteen years, she has cultivated sources in every meaningful institution in the city: corporate employees who share gossip for pocket money, CorpSec officers who trade case details for favors, tunnel dwellers who report on underground movement for food credits, service workers in the Spires who overhear conversations their employers forget they're present for. No single source knows anything critical. The power is in the synthesis — combining a hundred fragments of mundane information into a picture that reveals something nobody wanted revealed.\n\nShe is frequently hired as an investigator but her real business is the information exchange itself. Clients come to her because they need to know something. She already knows it, or she knows who knows it, or she can find out within 48 hours. Her fee structure is unusual: sometimes she charges Quanta, sometimes she charges in information, and sometimes she charges in future favors. The favor economy is her real currency. Half the powerful people in GLMZ owe her something, and she collects when the time is right.",
   "affiliation": "Independent — operates a gray-market information exchange alongside investigation services",
   "tier": "Tier 2",
   "location": "A shifting series of meeting points across the Circuit — never the same place twice in a month, near North Ave and Milwaukee",
@@ -65,26 +65,16 @@
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Circuit",
     "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'",
+    "Circuit",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "The Milwaukee Core",
-    "Biometric Denial Charge BDC-1",
-    "Brecken Yılmaz-Osei",
-    "Emeka Johansson-Orozco",
-    "Green Bay Community Table",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sulfur Crown Agriculture",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Cosmopolitan blend: Sub-Saharan African (25.2%), Hispanic/Latin American (23.5%), Eastern European (20.5%), Southeast Asian (16.2%), East Asian (10.2%), South Asian (4.4%). The combination produces a phenotype that resists easy categorization — warm-toned medium brown skin with subtle golden undertones from the Latin American and Southeast Asian contributions, bone structure showing the angular definition of Eastern European ancestry combined with the refined cheekbones common to East and Southeast Asian genetics.",
+    "heritage": "Ubiquitous Diaspora synthesis: Indigenous American (40.3%), Sub-Saharan African (24.9%), Southeast Asian (19.0%), Eastern European (8.9%), East Asian (6.9%). The combination produces a phenotype of striking integration — warm medium brown skin with golden and subtle reddish undertones from Indigenous American and African ancestry, bone structure showing high prominent cheekbones characteristic of Southeast and East Asian heritage combined with the angular jawline definition from Indigenous American genetics, creating a face that is simultaneously delicate and severe. The structural influences from Eastern European ancestry add subtle depth to facial planes while maintaining the warmth of her primary ancestry groups.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and angular, shoulders slightly narrow but defined through careful maintenance rather than natural muscularity. The kind of frame that moves efficiently through crowds without drawing attention — economical, controlled.",
@@ -92,8 +82,8 @@
     "hair_style": "Pulled back in a tight, practical braid that starts at the crown and ends mid-back. No ornamentation. The style reads as deliberate restraint.",
     "hair_length": "Long",
     "eye_color": "Dark brown, alert and constantly evaluating",
-    "skin_tone": "Medium brown with warm golden undertones, complexion reflecting the synthesis of Sub-Saharan, Latin American, and Southeast Asian heritage with Eastern European bone structure",
-    "complexion": "Kept meticulously maintained but without the sheen of expensive cosmetics — this is hygiene, not vanity. Fine lines around the eyes from constant focus work and reading small text. A small scar through the left eyebrow (old, well-healed) that she makes no effort to conceal. Jawline prominent and unmarked, cheekbones high and defined.",
+    "skin_tone": "Medium warm brown with golden and subtle reddish undertones, reflecting the synthesis of Indigenous American, Sub-Saharan African, and Southeast Asian heritage with structural influences from Eastern European ancestry",
+    "complexion": "Kept meticulously maintained but without the sheen of expensive cosmetics — this is hygiene, not vanity. Fine lines around the eyes from constant focus work and reading small text. A small scar through the left eyebrow (old, well-healed) that she makes no effort to conceal. Jawline prominent and unmarked, cheekbones high and defined with the characteristic structure of her Southeast Asian and Indigenous American ancestry. Facial planes show subtle depth from Eastern European influence.",
     "distinguishing_marks": [
       "Thin white scar running through the left eyebrow, approximately 2cm, jagged from impact rather than surgery",
       "Small circular burn mark on the inside of the right wrist, approximately 5mm diameter, old enough to be pale against her skin — consistent with interrogation-era violence or a calculated accident",
@@ -103,14 +93,55 @@
     "posture_movement": "Stillness is her default state. She sits perfectly upright in meetings, weight balanced, hands visible on the table. Her movements are minimal and purposeful — no fidgeting, no nervous tics. When she walks, her gait is direct and economical. She listens more than she speaks, head tilted at a slight angle as if every word is being parsed and cross-referenced in real time. Her eyes rarely break contact, and when they do, it's to observe something in the environment, not from discomfort.",
     "clothing_style": "Tier 3-4 professional wear with Tier 2 precision. She favors charcoal and black — a high-end wool blend coat (no logos, no corporate markers), slim-fit dark trousers, and a series of neutral turtlenecks or simple button-ups in cream, grey, or black. The shoes are always maintained leather, expensive enough to last years but unremarkable in style. She wears a single piece of jewelry: a thin bracelet made from brushed steel or similar matte metal, nothing decorative. Her clothing is deliberately unremarkable — the goal is to be forgotten immediately after being seen. Everything fits perfectly, suggesting either custom tailoring or meticulous personal maintenance. No visible corporate or faction markers. A simple messenger bag, worn leather, always with her."
   },
-  "image_prompt": "Binta Balogun, woman with warm medium brown skin and refined angular features blending East European bone structure with Sub-Saharan and Southeast Asian heritage, 168cm lean frame, black hair with silver temple streaks pulled in tight practical braid, dark observant eyes with barely perceptible ocular augmentation shimmer, thin white scar through left eyebrow, dressed in unremarkable charcoal wool coat and cream turtleneck, brushed steel bracelet, worn leather messenger bag, sitting in perfect stillness at a corporate boardroom table with matte black surfaces and cool blue-grey lighting, cyberpunk 2226, minimalist aesthetic, deliberate restraint, atmosphere of quiet intelligence and calculated presence, shallow depth of field focusing on her face, neon-tinged window reflections in background, cinematic, cyberpunk noir, professional but purposefully forgettable appearance --ar 2:3 --v 6",
+  "image_prompt": "Nayeli Citlali, 168cm lean angular frame, medium warm brown skin with golden undertones, high cheekbones and angular jaw from blended Indigenous American and Southeast Asian ancestry. Black hair with silver streaks at temples, pulled back in tight braid mid-back. Dark brown evaluating eyes with faint scar through left eyebrow, small burn mark on right wrist, faint constellation implant scarring on left forearm. Slight pupil reflectivity suggesting ocular augmentation. Meticulously groomed, no cosmetics. Charcoal wool coat, black slim trousers, cream turtleneck, worn leather messenger bag, brushed steel bracelet. Perfect upright posture, economical controlled movement, direct intense gaze. GLMZ Great Lakes Metropolitan Zone, dim neon-filtered office or transit hub lighting, slight reflective glow on skin from augmentation tech, mood of calculated restraint and constant evaluation, atmospheric depth-of-field background --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 25.2,
-    "Hispanic/Latin American": 23.5,
-    "Eastern European": 20.5,
-    "Southeast Asian": 16.2,
-    "East Asian": 10.2,
-    "South Asian": 4.4
+    "Indigenous American": 40.3,
+    "Sub-Saharan African": 24.9,
+    "Southeast Asian": 19,
+    "Eastern European": 8.9,
+    "East Asian": 6.9
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 40.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 11.3
+      },
+      "East African": {
+        "Tanzanian": 3.5,
+        "Ugandan": 2.3
+      },
+      "West African": {
+        "Sierra Leonean": 2.5,
+        "Nigerian": 5.3
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 19
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 4.4,
+        "Belarusian": 0.9
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 3.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 6.9
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A shifting series of meeting points across the Circuit"
+  }
 }

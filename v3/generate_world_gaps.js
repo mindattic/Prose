@@ -62,15 +62,15 @@ function writeGood(good) {
 writeDoc({
   file_name: "how_meridian_88_eats",
   id: uid(),
-  name: "How Meridian 88 Eats",
-  title: "How Meridian 88 Eats",
+  name: "How GLMZ Eats",
+  title: "How GLMZ Eats",
   type: "document",
   document_type: "investigative",
   author: "Lien Okafor-Reyes, Independent Food Systems Analyst",
   date: "2199-03-14",
   classification: "public",
   category: "Food Systems",
-  description: "Comprehensive overview of the Meridian 88 food supply chain from agricultural production to street-level consumption.",
+  description: "Comprehensive overview of the GLMZ food supply chain from agricultural production to street-level consumption.",
   related_entities: ["meridian_88", "ringo_agritech"],
   credibility: "verified",
   story_hooks: [
@@ -78,17 +78,17 @@ writeDoc({
     "The real food supply chain has a shadow version — smuggled organics, unlicensed vat operations, and Shelf kitchens that cook things the system never intended to feed anyone"
   ],
   tags: ["document", "food", "supply_chain", "ringo", "agriculture", "tier_1", "tier_5", "shelf", "investigative"],
-  body: `# How Meridian 88 Eats
+  body: `# How GLMZ Eats
 
 ## The Chain
 
-Every calorie consumed in Meridian 88 passes through a supply chain that begins 200 kilometers away in the Ringo Agritech controlled agricultural zones and ends in the mouths of 6.2 million residents who have no meaningful alternative food source. This is not a market. It is a pipeline. Understanding it is understanding why the city exists in the shape it does.
+Every calorie consumed in GLMZ passes through a supply chain that begins 200 kilometers away in the Ringo Agritech controlled agricultural zones and ends in the mouths of 6.2 million residents who have no meaningful alternative food source. This is not a market. It is a pipeline. Understanding it is understanding why the city exists in the shape it does.
 
 Ringo Agritech operates 14 mega-farms in the former agricultural belt — vast automated complexes where engineered crop strains grow under UV arrays in climate-controlled warehouse structures the size of small towns. The soil is long dead. These are hydroponic and aeroponic operations augmented by precision nutrient delivery systems. A single Ringo facility produces enough base carbohydrate to feed 400,000 people per cycle. The crops are not food as any historical farmer would recognize them — they are caloric substrate, optimized for yield per cubic meter per kilowatt-hour.
 
 ## From Farm to City
 
-Raw substrate travels from Ringo zones to Meridian 88 via the Corridor — a fortified ground transit route maintained jointly by Ringo and the city's logistics consortium. The convoys run continuously, 40-ton automated haulers moving in armored columns. The Corridor is one of the most heavily defended stretches of ground in the region, not because of military threat but because the cargo is irreplaceable. A single convoy carries enough base calories to feed the Shelf for a day. Hijacking attempts are rare because the haulers are autonomous, armored, and equipped with anti-personnel countermeasures that make robbery suicidal.
+Raw substrate travels from Ringo zones to GLMZ via the Corridor — a fortified ground transit route maintained jointly by Ringo and the city's logistics consortium. The convoys run continuously, 40-ton automated haulers moving in armored columns. The Corridor is one of the most heavily defended stretches of ground in the region, not because of military threat but because the cargo is irreplaceable. A single convoy carries enough base calories to feed the Shelf for a day. Hijacking attempts are rare because the haulers are autonomous, armored, and equipped with anti-personnel countermeasures that make robbery suicidal.
 
 ## Processing and Distribution
 
@@ -100,7 +100,7 @@ Distribution follows the tier structure. Tier 1 and 2 receive food through autom
 
 The Shelf's food economy exists in the gaps between official distribution. Street vendors, collective kitchens, and improvised food stalls operate on margins so thin they'd be invisible to any corporate accounting system. A vendor buys dispensary rations at off-peak prices, adds flavor, texture, and care, and resells at a small markup. The food isn't better nutritionally. It's better because someone made it for you, because it has a name and a face attached to it, because eating it is a social act instead of a caloric transaction.
 
-This is how Meridian 88 eats: efficiently, inequitably, and with a fragility that everyone understands and nobody talks about. The system works until it doesn't. When it doesn't, people die. See: the 2194 Ringo distribution strike.`
+This is how GLMZ eats: efficiently, inequitably, and with a fragility that everyone understands and nobody talks about. The system works until it doesn't. When it doesn't, people die. See: the 2194 Ringo distribution strike.`
 });
 
 writeDoc({
@@ -114,7 +114,7 @@ writeDoc({
   date: "2199-09-22",
   classification: "public",
   category: "Food Systems",
-  description: "Blind taste test and nutritional analysis of twelve lab-grown protein products available across Meridian 88's tier structure.",
+  description: "Blind taste test and nutritional analysis of twelve lab-grown protein products available across GLMZ's tier structure.",
   related_entities: ["meridian_88", "ringo_agritech", "vossen"],
   credibility: "verified",
   story_hooks: [
@@ -126,7 +126,7 @@ writeDoc({
 
 ## Methodology
 
-We purchased twelve vat-grown protein products representing the full range of availability in Meridian 88, from Tier 1 dispensary-grade to Tier 5 artisan boutique. Each product was evaluated blind by a panel of 30 tasters across all five tiers. Nutritional content was independently analyzed at the Old Harbor Community Lab. Products were scored on texture, flavor, aroma, mouthfeel, and overall satisfaction on a 10-point scale.
+We purchased twelve vat-grown protein products representing the full range of availability in GLMZ, from Tier 1 dispensary-grade to Tier 5 artisan boutique. Each product was evaluated blind by a panel of 30 tasters across all five tiers. Nutritional content was independently analyzed at the Old Harbor Community Lab. Products were scored on texture, flavor, aroma, mouthfeel, and overall satisfaction on a 10-point scale.
 
 ## The Budget Tier: Φ0.20 - Φ1.50
 
@@ -166,7 +166,7 @@ writeDoc({
   date: "2198-11-03",
   classification: "public",
   category: "Food Systems",
-  description: "Profile of Haru Edevane-Kowalski, who maintains one of the last soil-based gardens in Meridian 88.",
+  description: "Profile of Haru Edevane-Kowalski, who maintains one of the last soil-based gardens in GLMZ.",
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
@@ -178,25 +178,25 @@ writeDoc({
 
 ## The Rooftop
 
-Haru Edevane-Kowalski grows tomatoes in dirt. Real dirt. Not hydroponic substrate, not nutrient gel, not aeroponic mist — dirt. Soil. The kind with worms in it. She maintains 40 square meters of living earth on the rooftop of a converted Tier 3 residential block in the Midline district, and she has been doing this for thirty-one years, which makes her either the most dedicated urban agriculturalist in Meridian 88 or the most stubborn person alive.
+Haru Edevane-Kowalski grows tomatoes in dirt. Real dirt. Not hydroponic substrate, not nutrient gel, not aeroponic mist — dirt. Soil. The kind with worms in it. She maintains 40 square meters of living earth on the rooftop of a converted Tier 3 residential block in the Midline district, and she has been doing this for thirty-one years, which makes her either the most dedicated urban agriculturalist in GLMZ or the most stubborn person alive.
 
 The soil itself is a legacy. Her grandmother brought a bucket of earth from a community garden in what was then the Chicago suburbs before the consolidation. That bucket became a planter, became a raised bed, became this rooftop plot that Haru has been building, composting, and nurturing since she was nineteen. The soil is alive with organisms that don't exist anywhere else in the city — bacteria, fungi, nematodes, insects that arrived as eggs decades ago and have been breeding in isolation ever since. Biologists from the Meridian Institute have begged to study it. Haru lets them look but not touch.
 
 ## The Work
 
-Growing food in soil in Meridian 88 is an act of absurd devotion. Everything about the city's environment works against it. The atmospheric processors strip moisture from the air. The UV exposure at rooftop level is punishing without shade management. Temperature swings between the heat-island effect of the arcology below and the wind exposure above create conditions that no commercial crop variety is bred for. Haru grows heritage strains — tomato cultivars that haven't been commercially viable in a century, maintained through seed-saving networks that operate like underground libraries.
+Growing food in soil in GLMZ is an act of absurd devotion. Everything about the city's environment works against it. The atmospheric processors strip moisture from the air. The UV exposure at rooftop level is punishing without shade management. Temperature swings between the heat-island effect of the arcology below and the wind exposure above create conditions that no commercial crop variety is bred for. Haru grows heritage strains — tomato cultivars that haven't been commercially viable in a century, maintained through seed-saving networks that operate like underground libraries.
 
 She wakes at 0430 every morning to check soil moisture. She hand-pollinates because there aren't enough insects at rooftop level, even with the small population of mason bees she maintains in a homemade hive. She composts everything — food waste, paper, hair clippings from the barber two floors down who saves them for her in exchange for basil. The composting system is a precisely managed ecosystem that she monitors with the same intensity most people reserve for their BCI feeds.
 
 ## The Harvest
 
-Haru's annual yield is approximately 80 kilograms of produce — tomatoes primarily, plus basil, peppers, leafy greens, and a small plot of strawberries that produces maybe 3 kilograms per season. In a city that consumes 12,000 metric tons of food daily, this is statistically zero. It is also, by every qualitative measure, the best food in Meridian 88.
+Haru's annual yield is approximately 80 kilograms of produce — tomatoes primarily, plus basil, peppers, leafy greens, and a small plot of strawberries that produces maybe 3 kilograms per season. In a city that consumes 12,000 metric tons of food daily, this is statistically zero. It is also, by every qualitative measure, the best food in GLMZ.
 
 A single Haru tomato — small, irregularly shaped, scarred from wind damage, imperfect in every way that vat-grown produce is not — tastes like an explosion. People who eat one for the first time often cry. Not metaphorically. Actually cry. Because the flavor is a signal from a world that doesn't exist anymore, a world where food grew in the ground and tasted like the place it came from and the sun that fed it.
 
 ## The Eccentric
 
-The food establishment of Meridian 88 treats Haru with a mixture of reverence and confusion. She has been profiled in every food publication, offered positions at Tier 5 restaurants as a "living exhibit," and approached by Ringo Agritech's heritage division about licensing her seed stock. She has refused everything. She is not a brand. She is not a concept. She is a farmer, and farming is what she does, and the dirt under her fingernails is not an aesthetic choice but evidence of work.
+The food establishment of GLMZ treats Haru with a mixture of reverence and confusion. She has been profiled in every food publication, offered positions at Tier 5 restaurants as a "living exhibit," and approached by Ringo Agritech's heritage division about licensing her seed stock. She has refused everything. She is not a brand. She is not a concept. She is a farmer, and farming is what she does, and the dirt under her fingernails is not an aesthetic choice but evidence of work.
 
 Her neighbors think she's eccentric. She thinks they're the eccentric ones — living in a city that forgot what food is, eating things that were never alive, and calling it normal. She may have a point.`
 });
@@ -282,7 +282,7 @@ If you eat Tier 5 food regularly, you are not just better nourished — you are 
 
 ## The Legal Framework
 
-Here is the elegant part: none of this is illegal. The compounds are classified under Meridian 88 food regulation as "bioactive flavor enhancers" — a category that exists in a regulatory gap between food additives and pharmaceuticals. Flavor enhancers are subject to food safety standards (non-toxic, non-allergenic) but not pharmaceutical oversight (no efficacy testing, no disclosure requirements, no prescription framework). The classification was established in 2186 by a regulatory committee whose members included representatives from three corponations that now manufacture Tier 5 food products.
+Here is the elegant part: none of this is illegal. The compounds are classified under GLMZ food regulation as "bioactive flavor enhancers" — a category that exists in a regulatory gap between food additives and pharmaceuticals. Flavor enhancers are subject to food safety standards (non-toxic, non-allergenic) but not pharmaceutical oversight (no efficacy testing, no disclosure requirements, no prescription framework). The classification was established in 2186 by a regulatory committee whose members included representatives from three corponations that now manufacture Tier 5 food products.
 
 ## Who Knows
 
@@ -300,11 +300,11 @@ writeDoc({
   date: "2199-07-02",
   classification: "public",
   category: "Food Systems",
-  description: "Investigative piece on Ringo Agritech's monopolistic control over Meridian 88's food supply.",
+  description: "Investigative piece on Ringo Agritech's monopolistic control over GLMZ's food supply.",
   related_entities: ["meridian_88", "ringo_agritech"],
   credibility: "verified",
   story_hooks: [
-    "Ringo's contracts with the city include a clause that prevents Meridian 88 from developing internal agricultural capacity — the city literally cannot legally grow its own food",
+    "Ringo's contracts with the city include a clause that prevents GLMZ from developing internal agricultural capacity — the city literally cannot legally grow its own food",
     "A former Ringo logistics manager is willing to testify about deliberate supply throttling used to manipulate food prices"
   ],
   tags: ["document", "food", "ringo", "monopoly", "corponation", "supply_chain", "investigative", "economics"],
@@ -312,15 +312,15 @@ writeDoc({
 
 ## The Numbers
 
-Ringo Agritech supplies 94% of Meridian 88's caloric base. The remaining 6% comes from local sources — urban algae farms, small-scale vat operations, and the handful of eccentric gardeners who grow actual food in actual soil. That 94% figure has been stable for twelve years, not because the market reached equilibrium, but because Ringo's supply contracts with the Meridian 88 Municipal Authority include exclusivity provisions that prevent the city from licensing competing agricultural suppliers.
+Ringo Agritech supplies 94% of GLMZ's caloric base. The remaining 6% comes from local sources — urban algae farms, small-scale vat operations, and the handful of eccentric gardeners who grow actual food in actual soil. That 94% figure has been stable for twelve years, not because the market reached equilibrium, but because Ringo's supply contracts with the GLMZ Municipal Authority include exclusivity provisions that prevent the city from licensing competing agricultural suppliers.
 
 Read that again: the city is contractually prohibited from diversifying its food supply. This is not a market. This is a dependency.
 
 ## How We Got Here
 
-In the 2160s, Meridian 88 faced a genuine food crisis. The old agricultural supply chains had collapsed during the consolidation era, and the city's population was growing faster than local production could sustain. Ringo Agritech — then a mid-sized automated farming corporation — offered a solution: guaranteed caloric supply at fixed prices, backed by massive infrastructure investment in the agricultural zones. The city accepted. The contract was for 30 years with automatic renewal provisions and penalty clauses for early termination that would bankrupt the municipal treasury.
+In the 2160s, GLMZ faced a genuine food crisis. The old agricultural supply chains had collapsed during the consolidation era, and the city's population was growing faster than local production could sustain. Ringo Agritech — then a mid-sized automated farming corporation — offered a solution: guaranteed caloric supply at fixed prices, backed by massive infrastructure investment in the agricultural zones. The city accepted. The contract was for 30 years with automatic renewal provisions and penalty clauses for early termination that would bankrupt the municipal treasury.
 
-The contract made sense in 2165. By 2180, it was a cage. By 2199, it is the single most important document governing life in Meridian 88, and almost no one has read it.
+The contract made sense in 2165. By 2180, it was a cage. By 2199, it is the single most important document governing life in GLMZ, and almost no one has read it.
 
 ## What Monopoly Means at the Table
 
@@ -332,7 +332,7 @@ Security: One supply chain means one point of failure. The 2194 distribution str
 
 ## The Alternative That Isn't
 
-Advocates for food sovereignty point to vertical farming, expanded algae cultivation, and synthetic biology as alternatives to Ringo dependence. These are technically viable. They are legally impossible under the current contract. Meridian 88 cannot build agricultural capacity that would compete with Ringo's supply without triggering contract penalties estimated at Φ4.2 billion — roughly eight years of municipal revenue.
+Advocates for food sovereignty point to vertical farming, expanded algae cultivation, and synthetic biology as alternatives to Ringo dependence. These are technically viable. They are legally impossible under the current contract. GLMZ cannot build agricultural capacity that would compete with Ringo's supply without triggering contract penalties estimated at Φ4.2 billion — roughly eight years of municipal revenue.
 
 The contract renews automatically in 2205. The termination window opens in 2203. That is four years away. If there is a political moment to challenge Ringo's monopoly, it is approaching. Whether anyone with power cares enough to seize it remains an open question.`
 });
@@ -360,7 +360,7 @@ writeDoc({
 
 ## The Night Market
 
-Old Harbor's night market begins at 2000 when the day-shift workers come home and the night-shift workers haven't left yet, and for three hours the waterfront promenade becomes the best restaurant in Meridian 88. Not the most expensive. Not the most refined. The best. Because food is best when it's made in front of you by someone who knows your name, served on a recycled tray under string lights that reflect off the harbor water, and eaten standing up with people who've been eating here longer than you've been alive.
+Old Harbor's night market begins at 2000 when the day-shift workers come home and the night-shift workers haven't left yet, and for three hours the waterfront promenade becomes the best restaurant in GLMZ. Not the most expensive. Not the most refined. The best. Because food is best when it's made in front of you by someone who knows your name, served on a recycled tray under string lights that reflect off the harbor water, and eaten standing up with people who've been eating here longer than you've been alive.
 
 The market runs 200 meters along the promenade. Twenty-seven vendors, each with a designated spot that hasn't changed in years. The territory system is informal but absolute — you set up where you've always set up, and if you're new, you wait until someone retires or dies and then you negotiate with the market's unofficial coordinator, a woman named Blessed who has held the role for nineteen years and whose word is final.
 
@@ -376,7 +376,7 @@ The market runs 200 meters along the promenade. Twenty-seven vendors, each with 
 
 ## Why It Matters
 
-Old Harbor's night market is not a tourist attraction. There are no tourists. It is not a cultural preservation project. No one is preserving anything — they're surviving and making survival taste good. The market exists because the alternative is eating dispensary rations alone in a hab unit, and the people of Old Harbor decided long ago that they would rather eat together, standing up, under string lights, with food that someone cared about making. This is the most important meal in Meridian 88, and it costs less than Φ1.`
+Old Harbor's night market is not a tourist attraction. There are no tourists. It is not a cultural preservation project. No one is preserving anything — they're surviving and making survival taste good. The market exists because the alternative is eating dispensary rations alone in a hab unit, and the people of Old Harbor decided long ago that they would rather eat together, standing up, under string lights, with food that someone cared about making. This is the most important meal in GLMZ, and it costs less than Φ1.`
 });
 
 writeDoc({
@@ -390,7 +390,7 @@ writeDoc({
   date: "2198-08-14",
   classification: "public",
   category: "Food Systems",
-  description: "Health report on long-term effects of synthetic dairy consumption in Meridian 88.",
+  description: "Health report on long-term effects of synthetic dairy consumption in GLMZ.",
   related_entities: ["meridian_88", "vossen"],
   credibility: "verified",
   story_hooks: [
@@ -402,7 +402,7 @@ writeDoc({
 
 ## Background
 
-Meridian 88 consumes approximately 2.4 million liters of dairy-equivalent products per day. Less than 0.1% of this comes from actual mammals. The rest is synthetic — manufactured from a combination of vat-grown casein proteins, engineered lipid compounds, and flavor matrices designed to approximate the taste and nutritional profile of historical dairy. This report examines the long-term health outcomes of populations who consume synthetic dairy as their primary calcium and fat source.
+GLMZ consumes approximately 2.4 million liters of dairy-equivalent products per day. Less than 0.1% of this comes from actual mammals. The rest is synthetic — manufactured from a combination of vat-grown casein proteins, engineered lipid compounds, and flavor matrices designed to approximate the taste and nutritional profile of historical dairy. This report examines the long-term health outcomes of populations who consume synthetic dairy as their primary calcium and fat source.
 
 ## Study Population
 
@@ -430,11 +430,11 @@ writeDoc({
   title: "When the Supply Chain Breaks",
   type: "document",
   document_type: "historical",
-  author: "The Meridian 88 Historical Archive Project",
+  author: "The GLMZ Historical Archive Project",
   date: "2199-01-15",
   classification: "public",
   category: "Food Systems",
-  description: "Account of the 2194 Ringo distribution strike and its impact on Meridian 88's food supply.",
+  description: "Account of the 2194 Ringo distribution strike and its impact on GLMZ's food supply.",
   related_entities: ["meridian_88", "ringo_agritech"],
   credibility: "verified",
   story_hooks: [
@@ -446,9 +446,9 @@ writeDoc({
 
 ## Day One: April 14, 2194
 
-At 0600 on April 14, 2194, workers at Ringo Agritech's three primary processing facilities outside Meridian 88 walked off the job. The strike was over working conditions — specifically, the chronic respiratory illness rate among processing workers exposed to agricultural substrate dust without adequate filtration equipment. The workers had been filing complaints for two years. Ringo had responded with coupons for over-the-counter respiratory medication. The workers decided that was insufficient.
+At 0600 on April 14, 2194, workers at Ringo Agritech's three primary processing facilities outside GLMZ walked off the job. The strike was over working conditions — specifically, the chronic respiratory illness rate among processing workers exposed to agricultural substrate dust without adequate filtration equipment. The workers had been filing complaints for two years. Ringo had responded with coupons for over-the-counter respiratory medication. The workers decided that was insufficient.
 
-The first day, nobody noticed. Meridian 88 maintains a 72-hour food buffer in distributed storage facilities throughout the city. Dispensaries continued operating normally. Markets were stocked. Restaurants served dinner. The strike was a line item in the news feeds, buried below entertainment updates and weather.
+The first day, nobody noticed. GLMZ maintains a 72-hour food buffer in distributed storage facilities throughout the city. Dispensaries continued operating normally. Markets were stocked. Restaurants served dinner. The strike was a line item in the news feeds, buried below entertainment updates and weather.
 
 ## Day Two: April 15, 2194
 
@@ -464,7 +464,7 @@ What did open were the mutual aid networks. Block by block, floor by floor, peop
 
 ## Day Four: April 17, 2194
 
-Ringo Agritech settled with its workers at 1400 on April 17. The workers got filtration equipment, health monitoring, and a 6% wage increase. Processing resumed immediately. The first resupply convoys reached Meridian 88 by 2200. By midnight, dispensaries were restocking.
+Ringo Agritech settled with its workers at 1400 on April 17. The workers got filtration equipment, health monitoring, and a 6% wage increase. Processing resumed immediately. The first resupply convoys reached GLMZ by 2200. By midnight, dispensaries were restocking.
 
 The strike lasted 83 hours. In that time: no one starved to death (confirmed). Fourteen people were hospitalized for dehydration and malnutrition-related complications (confirmed). An unknown number of augmentations were traded for food (estimated in the hundreds). One Tier 5 resident was recorded offering Φ500 for a standard protein bar (confirmed — the recording still circulates as a reminder that money means nothing when the trucks stop rolling).
 
@@ -506,7 +506,7 @@ Ms. Nakamura cut the apple into twelve pieces — one for each student in Ama's 
 
 Ama described the experience to me that evening, and I am going to write down exactly what she said because I don't want to improve on it: "Mama, it was wet inside. It crunched and then there was juice. It tasted like... it tasted like what I thought outside would taste like. Like the color red but for your mouth."
 
-Like the color red but for your mouth. My daughter, who has a BCI that can process visual data at frequencies I can't perceive, who can access the entire knowledge archive of Meridian 88 through a thought, who lives in the most technologically advanced human settlement in history — she had never tasted an apple.
+Like the color red but for your mouth. My daughter, who has a BCI that can process visual data at frequencies I can't perceive, who can access the entire knowledge archive of GLMZ through a thought, who lives in the most technologically advanced human settlement in history — she had never tasted an apple.
 
 ## The Seeds
 
@@ -516,7 +516,7 @@ That was three years ago. The tree — if you can call it a tree — is 40 centi
 
 ## What It Means
 
-I am not writing this essay to make you feel sorry for my daughter. Ama is fed. She is housed. She has a BCI and an education and a community that watches out for her. By the standards of Meridian 88's Tier 1, she is doing fine. I am writing this because there is a difference between being fed and knowing what food is. There is a difference between a nutrition label that says "apple flavor" and the experience of biting into something that crunched and was wet inside and tasted like the color red but for your mouth. Fourteen Quanta for a single apple. Half a teacher's weekly discretionary budget. That is the distance between my daughter and the world she reads about on the feed. It is measured in fruit.`
+I am not writing this essay to make you feel sorry for my daughter. Ama is fed. She is housed. She has a BCI and an education and a community that watches out for her. By the standards of GLMZ's Tier 1, she is doing fine. I am writing this because there is a difference between being fed and knowing what food is. There is a difference between a nutrition label that says "apple flavor" and the experience of biting into something that crunched and was wet inside and tasted like the color red but for your mouth. Fourteen Quanta for a single apple. Half a teacher's weekly discretionary budget. That is the distance between my daughter and the world she reads about on the feed. It is measured in fruit.`
 });
 
 // ═══════════════════════════════════════════════════════════════════
@@ -530,7 +530,7 @@ writeDoc({
   title: "Your Child's First BCI: A Parent's Guide",
   type: "document",
   document_type: "guide",
-  author: "Meridian 88 Pediatric Neurology Association",
+  author: "GLMZ Pediatric Neurology Association",
   date: "2199-02-10",
   classification: "public",
   category: "Children",
@@ -546,7 +546,7 @@ writeDoc({
 
 ## When Is the Right Time?
 
-Standard BCI installation in Meridian 88 occurs at age six, coinciding with the transition from pre-primary to primary education. This timing is not arbitrary — neural plasticity at age six allows optimal integration of the BCI's sensory interface with the developing brain, and the primary education curriculum from Year One assumes BCI access. Your child can receive a BCI earlier (minimum age four, with specialist approval) or later, but delayed installation means your child will be learning the interface while their peers are already using it, creating an adaptation gap that compounds with each month of delay.
+Standard BCI installation in GLMZ occurs at age six, coinciding with the transition from pre-primary to primary education. This timing is not arbitrary — neural plasticity at age six allows optimal integration of the BCI's sensory interface with the developing brain, and the primary education curriculum from Year One assumes BCI access. Your child can receive a BCI earlier (minimum age four, with specialist approval) or later, but delayed installation means your child will be learning the interface while their peers are already using it, creating an adaptation gap that compounds with each month of delay.
 
 The procedure itself takes 90 minutes. It is performed under light sedation at any licensed pediatric neurology clinic. The BCI unit — approximately the size of a grain of rice — is implanted at the base of the skull where it interfaces with the brainstem and establishes connections with the cerebral cortex over the following 2-4 weeks. Your child will spend one night in the clinic for monitoring and go home the next morning.
 
@@ -568,7 +568,7 @@ Your child's BCI comes with a comprehensive parental control suite that governs 
 
 ## What We Don't Say Enough
 
-The BCI will become part of your child's identity. Not a tool they use, but a part of who they are, as fundamental as language or vision. You cannot remove it without causing significant neurological disruption after the first year of integration. This is permanent. You are making a permanent decision about your child's neurology at age six, and the honest answer to "do I have a choice?" is: technically yes, practically no. A child without a BCI in Meridian 88 cannot access education, cannot participate in the social networks their peers inhabit, and cannot function in a city built on the assumption that everyone is connected. The choice is not between BCI and no BCI. The choice is between BCI at six and increasingly painful marginalization.`
+The BCI will become part of your child's identity. Not a tool they use, but a part of who they are, as fundamental as language or vision. You cannot remove it without causing significant neurological disruption after the first year of integration. This is permanent. You are making a permanent decision about your child's neurology at age six, and the honest answer to "do I have a choice?" is: technically yes, practically no. A child without a BCI in GLMZ cannot access education, cannot participate in the social networks their peers inhabit, and cannot function in a city built on the assumption that everyone is connected. The choice is not between BCI and no BCI. The choice is between BCI at six and increasingly painful marginalization.`
 });
 
 writeDoc({
@@ -582,7 +582,7 @@ writeDoc({
   date: "2199-06-18",
   classification: "public",
   category: "Children",
-  description: "Sociological study of childhood development and experience in Meridian 88's Tier 1.",
+  description: "Sociological study of childhood development and experience in GLMZ's Tier 1.",
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
@@ -626,7 +626,7 @@ writeDoc({
   title: "The Education Gap",
   type: "document",
   document_type: "investigative",
-  author: "Coalition for Educational Equity, Meridian 88",
+  author: "Coalition for Educational Equity, GLMZ",
   date: "2200-02-01",
   classification: "public",
   category: "Children",
@@ -642,7 +642,7 @@ writeDoc({
 
 ## Two Children
 
-Consider two children born on the same day in Meridian 88. Child A is born in Tier 1, Block 47, the Shelf. Child B is born in Tier 5, the Arden Spire arcology. Both are healthy. Both are, by every neurological measure, equally capable. By age twelve, Child B will be performing at a level that Child A will never reach. Not because of talent. Because of architecture.
+Consider two children born on the same day in GLMZ. Child A is born in Tier 1, Block 47, the Shelf. Child B is born in Tier 5, the Arden Spire arcology. Both are healthy. Both are, by every neurological measure, equally capable. By age twelve, Child B will be performing at a level that Child A will never reach. Not because of talent. Because of architecture.
 
 ## The First Six Years
 
@@ -652,7 +652,7 @@ Child A receives no augmentation until age six. Their learning is organic, socia
 
 ## The Curriculum
 
-Meridian 88's unified curriculum assumes BCI access, private study space, and stable connectivity. It delivers content through neural-feed educational packages that adapt to individual learning speed. In theory, this means every child learns at their own pace. In practice, the adaptation algorithms are trained on data from Tier 3-5 students and optimize for learning conditions that exist in those tiers. When a Shelf child falls behind, the algorithm interprets the delay as a learning deficit rather than an infrastructure deficit and adjusts difficulty downward. The child receives easier material. They learn less. The gap widens.
+GLMZ's unified curriculum assumes BCI access, private study space, and stable connectivity. It delivers content through neural-feed educational packages that adapt to individual learning speed. In theory, this means every child learns at their own pace. In practice, the adaptation algorithms are trained on data from Tier 3-5 students and optimize for learning conditions that exist in those tiers. When a Shelf child falls behind, the algorithm interprets the delay as a learning deficit rather than an infrastructure deficit and adjusts difficulty downward. The child receives easier material. They learn less. The gap widens.
 
 Tier 5 children receive supplementary education from private AI tutoring systems that cost Φ200-500/month. These systems integrate with the child's BCI to provide real-time learning support — contextual explanations, memory reinforcement, and cognitive load management. A Tier 5 child doing homework has an AI whispering answers in their ear. A Tier 1 child doing homework has a crowded corridor and intermittent connectivity.
 
@@ -696,7 +696,7 @@ So parents sing. They have always sung to children at bedtime, but now they sing
 
 ## The Songs
 
-The old lullabies still work — they cross every culture in the Diaspora, melodies carried from Lagos and Osaka and Bogota and Hyderabad, translated and recombined and passed down through families who brought nothing to Meridian 88 except their languages and their songs. A grandmother from Manila sings "Sa Ugoy ng Duyan" to a grandchild who has never seen a hammock. A father from Nairobi hums "Wimbo wa Usingizi" to a child whose sleep is monitored by neural telemetry. The songs don't need context to work. They need a voice.
+The old lullabies still work — they cross every culture in the Diaspora, melodies carried from Lagos and Osaka and Bogota and Hyderabad, translated and recombined and passed down through families who brought nothing to GLMZ except their languages and their songs. A grandmother from Manila sings "Sa Ugoy ng Duyan" to a grandchild who has never seen a hammock. A father from Nairobi hums "Wimbo wa Usingizi" to a child whose sleep is monitored by neural telemetry. The songs don't need context to work. They need a voice.
 
 But new songs have emerged — lullabies written for children of the BCI age. "Quiet the Feed" is the most widespread, a simple melody with words that vary by block and family but always contain the same core instruction: close your inner eyes, let the numbers go, I am here and the feed is not. It is a meditation technique disguised as a lullaby, teaching children to modulate their BCI's attention priority through rhythmic breathing tied to a melody. Neuroscientists at the Meridian Institute confirmed what parents already knew: sung frequencies in the 200-400Hz range interact constructively with the BCI's default integration rhythm, dampening feed awareness during the relaxation phase. The parents didn't know the science. They just knew it worked.
 
@@ -734,7 +734,7 @@ writeDoc({
 
 ## The New Normal
 
-The average child born in Meridian 88 in 2199 has heritage from 3.7 distinct cultural traditions. This is not a statistical curiosity — it is the defining feature of identity formation in the city. The Ubiquitous Diaspora, the great mixing that followed the consolidation era, produced a generation of parents who were themselves products of multicultural families. Their children are the second or third generation of this mixing, and for them, the concept of a single cultural identity is as foreign as soil-grown food.
+The average child born in GLMZ in 2199 has heritage from 3.7 distinct cultural traditions. This is not a statistical curiosity — it is the defining feature of identity formation in the city. The Ubiquitous Diaspora, the great mixing that followed the consolidation era, produced a generation of parents who were themselves products of multicultural families. Their children are the second or third generation of this mixing, and for them, the concept of a single cultural identity is as foreign as soil-grown food.
 
 ## How Children Navigate
 
@@ -744,13 +744,13 @@ We interviewed 200 children ages 8-14 across all tiers about their understanding
 
 **The Synthesist** (45% of respondents): These children don't maintain separate cultural threads — they combine them into something new. A Synthesist child might celebrate a holiday that merges elements from three different traditions, speak a personal patois that blends four linguistic influences, or practice customs that no single heritage tradition would recognize but that feel authentic to the child. "I don't do Diwali or Lunar New Year or Kwanzaa," one twelve-year-old explained. "I do my thing. It has lights from one and food from another and music from another and it's mine."
 
-**The Pragmatist** (17% of respondents): These children don't think about heritage much. They identify as "from the Shelf" or "from Meridian 88" and consider cultural heritage a background detail rather than an active identity component. Pragmatists are more common in Tier 1 and 2, where daily survival demands outweigh identity exploration.
+**The Pragmatist** (17% of respondents): These children don't think about heritage much. They identify as "from the Shelf" or "from GLMZ" and consider cultural heritage a background detail rather than an active identity component. Pragmatists are more common in Tier 1 and 2, where daily survival demands outweigh identity exploration.
 
 ## The Emergence of New Culture
 
 The most significant finding: children are not preserving heritage traditions — they are using them as raw material for new ones. Block-level celebrations combine elements from a dozen traditions into events that belong to no historical culture but feel deeply authentic to the community that created them. Children's games incorporate rules and structures from multiple cultural play traditions. Slang absorbs vocabulary from every language in the Diaspora.
 
-This is not cultural erasure. The source traditions are accessible via BCI archive and are studied in educational contexts. But the living culture — the culture that children practice daily — is synthetic in the most literal sense: composed from multiple sources into something new. Meridian 88 is not a multicultural city. It is a transcultural one, and the children understand this better than the adults.`
+This is not cultural erasure. The source traditions are accessible via BCI archive and are studied in educational contexts. But the living culture — the culture that children practice daily — is synthetic in the most literal sense: composed from multiple sources into something new. GLMZ is not a multicultural city. It is a transcultural one, and the children understand this better than the adults.`
 });
 
 writeDoc({
@@ -792,7 +792,7 @@ The platform was never designed for this. It was designed for staging maintenanc
 
 ## Image 4: The Rooftop Astronomy Club, Block 31
 
-Seven children lying on their backs on a rooftop platform, looking up. The sky above Meridian 88 is not dark enough for stars — light pollution and atmospheric processing create a permanent amber haze. But one child has a salvaged telescope with a digital filter that compensates for atmospheric interference, and another child's BCI is running an astronomy overlay that maps constellations onto the haze. They are teaching each other the names of stars they can barely see, in a city that has forgotten to look up.
+Seven children lying on their backs on a rooftop platform, looking up. The sky above GLMZ is not dark enough for stars — light pollution and atmospheric processing create a permanent amber haze. But one child has a salvaged telescope with a digital filter that compensates for atmospheric interference, and another child's BCI is running an astronomy overlay that maps constellations onto the haze. They are teaching each other the names of stars they can barely see, in a city that has forgotten to look up.
 
 ## What the Images Say
 
@@ -806,7 +806,7 @@ writeDoc({
   title: "Augmentation Age: When Should Your Child Get Chrome?",
   type: "document",
   document_type: "debate",
-  author: "The Meridian 88 Parenting Forum, moderated panel discussion transcript",
+  author: "The GLMZ Parenting Forum, moderated panel discussion transcript",
   date: "2199-11-20",
   classification: "public",
   category: "Children",
@@ -822,13 +822,13 @@ writeDoc({
 
 ## The Panel
 
-This transcript represents a moderated discussion held at the Meridian 88 Community Forum on November 20, 2199. Panelists: Dr. Juno Eze-Park (pediatric neurosurgeon), Tarik Osman-Kowalski (parent advocate, Tier 1), Vera Lindt (Kyosei Dynamics youth augmentation division), and Noor Al-Rashidi-Chen (child development ethicist).
+This transcript represents a moderated discussion held at the GLMZ Community Forum on November 20, 2199. Panelists: Dr. Juno Eze-Park (pediatric neurosurgeon), Tarik Osman-Kowalski (parent advocate, Tier 1), Vera Lindt (Kyosei Dynamics youth augmentation division), and Noor Al-Rashidi-Chen (child development ethicist).
 
 ## Opening Statements
 
 DR. EZE-PARK: The medical position is clear: non-essential augmentation before age sixteen carries developmental risks. The skeletal system is still growing. The nervous system is still integrating the BCI. Adding additional cyberware creates competing demands on neural bandwidth and physical development. We see stress fractures at augment-bone interfaces in children because the bone hasn't finished growing. We see neural fatigue in children whose BCIs are competing with augment control systems for processing priority. The medicine says wait.
 
-LINDT: The market position is also clear: 23% of children ages 12-16 in Meridian 88 have at least one non-BCI augmentation. That number was 11% five years ago. Parents are making this decision regardless of medical recommendation. Our role as manufacturers is to ensure that the augmentations children receive are designed for developing bodies — adjustable, upgradeable, and biocompatible with growth. Kyosei's youth line exists because pretending children aren't getting augmented doesn't make them safer.
+LINDT: The market position is also clear: 23% of children ages 12-16 in GLMZ have at least one non-BCI augmentation. That number was 11% five years ago. Parents are making this decision regardless of medical recommendation. Our role as manufacturers is to ensure that the augmentations children receive are designed for developing bodies — adjustable, upgradeable, and biocompatible with growth. Kyosei's youth line exists because pretending children aren't getting augmented doesn't make them safer.
 
 OSMAN-KOWALSKI: I'd like to introduce a word nobody on this panel has used yet: work. On the Shelf, children start contributing to household income at twelve or thirteen. Gig work. Delivery. Salvage. Maintenance assistance. Some of these jobs are easier with augmentation. A grip-strength enhancer. A visual overlay. A respiratory filter for kids working in chemical-adjacent environments. These parents aren't augmenting their children for competitive advantage. They're augmenting them so they can earn.
 
@@ -852,11 +852,11 @@ writeDoc({
   title: "What the Kids Are Saying",
   type: "document",
   document_type: "cultural",
-  author: "Meridian 88 Linguistic Observatory",
+  author: "GLMZ Linguistic Observatory",
   date: "2200-01-05",
   classification: "public",
   category: "Children",
-  description: "Report on youth slang and the generational language divide in Meridian 88.",
+  description: "Report on youth slang and the generational language divide in GLMZ.",
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
@@ -868,7 +868,7 @@ writeDoc({
 
 ## The Velocity of Language
 
-Youth slang in Meridian 88 evolves faster than any previous generation's argot, and the reason is structural: BCI-connected children process and share linguistic innovation at network speed. A new term coined by a twelve-year-old in the Shelf at 0800 can be in active use across all five tiers by 1400. It can be dated by next week. It can be incomprehensible to adults by the time they first encounter it. The half-life of a slang term in 2200 is approximately six weeks, down from six months a generation ago. Language is moving faster than adults can follow, and the kids know it.
+Youth slang in GLMZ evolves faster than any previous generation's argot, and the reason is structural: BCI-connected children process and share linguistic innovation at network speed. A new term coined by a twelve-year-old in the Shelf at 0800 can be in active use across all five tiers by 1400. It can be dated by next week. It can be incomprehensible to adults by the time they first encounter it. The half-life of a slang term in 2200 is approximately six weeks, down from six months a generation ago. Language is moving faster than adults can follow, and the kids know it.
 
 ## The Glossary (Current as of January 2200, Probably Obsolete by February)
 
@@ -888,7 +888,7 @@ Youth slang in Meridian 88 evolves faster than any previous generation's argot, 
 
 The most fascinating linguistic development is deliberate opacity. Teenagers have developed slang terms that are specifically designed to pass through BCI content monitoring algorithms without triggering flags. The algorithms scan for known slang terms and flag conversations that contain certain patterns. In response, kids have created a rotating vocabulary where the signifier changes weekly but the signified remains stable. The word for a restricted substance might be "morning" this week and "catalog" next week and "window" the week after. The context determines the meaning, but the context is social — you have to be in the group to decode it. No algorithm can keep up because no algorithm has social context.
 
-This is not new — every generation has had coded language. What is new is the adversary: children are not hiding their language from parents (though that's a bonus). They are hiding it from machines. They are developing linguistic immune systems against surveillance, and they are doing it collectively, adaptively, and with a sophistication that would impress a cryptographer. The children of Meridian 88 are the first generation to grow up in a fully monitored environment, and they are the first generation to develop native-fluency counter-surveillance. They are not rebelling against the system. They are routing around it.`
+This is not new — every generation has had coded language. What is new is the adversary: children are not hiding their language from parents (though that's a bonus). They are hiding it from machines. They are developing linguistic immune systems against surveillance, and they are doing it collectively, adaptively, and with a sophistication that would impress a cryptographer. The children of GLMZ are the first generation to grow up in a fully monitored environment, and they are the first generation to develop native-fluency counter-surveillance. They are not rebelling against the system. They are routing around it.`
 });
 
 // ═══════════════════════════════════════════════════════════════════
@@ -902,7 +902,7 @@ writeDoc({
   title: "What Happens to Your Data When You Die",
   type: "document",
   document_type: "guide",
-  author: "Meridian 88 Digital Estates Commission",
+  author: "GLMZ Digital Estates Commission",
   date: "2199-04-01",
   classification: "public",
   category: "Death",
@@ -911,30 +911,30 @@ writeDoc({
   credibility: "verified",
   story_hooks: [
     "A legal loophole allows corponations to claim BCI data of employees who die without a digital will, creating an incentive to not inform workers of their posthumous data rights",
-    "The data of the deceased is one of the fastest-growing asset classes in Meridian 88's economy"
+    "The data of the deceased is one of the fastest-growing asset classes in GLMZ's economy"
   ],
   tags: ["document", "death", "data", "bci", "inheritance", "digital_estate", "legal", "guide"],
   body: `# What Happens to Your Data When You Die
 
 ## The Scale
 
-When a resident of Meridian 88 dies, they leave behind approximately 2.4 petabytes of BCI-recorded data — a comprehensive record of everything they experienced, thought about, communicated, and felt from the moment of BCI installation to the moment of death. Sensory recordings. Internal monologues captured during reflective moments. Biometric data streams. Communication logs. Emotional state histories. Transaction records. The complete navigable archive of a human life, stored in data centers operated by the BCI manufacturer and accessible according to the terms of the deceased's data management contract.
+When a resident of GLMZ dies, they leave behind approximately 2.4 petabytes of BCI-recorded data — a comprehensive record of everything they experienced, thought about, communicated, and felt from the moment of BCI installation to the moment of death. Sensory recordings. Internal monologues captured during reflective moments. Biometric data streams. Communication logs. Emotional state histories. Transaction records. The complete navigable archive of a human life, stored in data centers operated by the BCI manufacturer and accessible according to the terms of the deceased's data management contract.
 
 This data does not disappear when you die. It persists. It has value. It has legal status. And if you do not specify what happens to it before you die, someone else will decide for you.
 
 ## Default Disposition
 
-If you die without a digital will (a Neural Estate Directive, in legal terminology), your BCI data defaults to the disposition framework established in the Meridian 88 Data Inheritance Code of 2191. Under this framework: personal communications are sealed for 25 years and then released to public archive. Biometric data is transferred to your BCI manufacturer for "research and development purposes." Sensory recordings are held in escrow for five years and then offered to next of kin. Emotional state data and internal monologue captures are destroyed.
+If you die without a digital will (a Neural Estate Directive, in legal terminology), your BCI data defaults to the disposition framework established in the GLMZ Data Inheritance Code of 2191. Under this framework: personal communications are sealed for 25 years and then released to public archive. Biometric data is transferred to your BCI manufacturer for "research and development purposes." Sensory recordings are held in escrow for five years and then offered to next of kin. Emotional state data and internal monologue captures are destroyed.
 
 Read the second item again: your biometric data — heart rate, neural activity patterns, hormonal fluctuations, immune system responses, every quantified aspect of your physical existence — is given to a corporation for free. This is the default. Most people don't know this. Most people don't know they can change it. The BCI manufacturers prefer it this way.
 
 ## Your Options
 
-A Neural Estate Directive allows you to specify: who receives your data, which categories of data are inherited vs. destroyed vs. archived, whether your data can be used to create posthumous interactive models (see: ghost feeds), whether your sensory recordings can be commercially licensed, and how long your data persists before mandatory deletion. Filing a Neural Estate Directive costs Φ15 at any legal services terminal and takes approximately 30 minutes. It is the most important document most Meridian 88 residents will never file.
+A Neural Estate Directive allows you to specify: who receives your data, which categories of data are inherited vs. destroyed vs. archived, whether your data can be used to create posthumous interactive models (see: ghost feeds), whether your sensory recordings can be commercially licensed, and how long your data persists before mandatory deletion. Filing a Neural Estate Directive costs Φ15 at any legal services terminal and takes approximately 30 minutes. It is the most important document most GLMZ residents will never file.
 
 ## The Market
 
-Your data has monetary value. Sensory recordings of skilled professionals are licensed for training purposes — a master chef's taste recordings, a surgeon's procedural memories, a musician's performance data. Emotional archives are sold to entertainment companies developing narrative experiences. Communication logs are mined for linguistic data. The posthumous data market in Meridian 88 was valued at Φ2.1 billion in 2198 and is growing at 18% annually.
+Your data has monetary value. Sensory recordings of skilled professionals are licensed for training purposes — a master chef's taste recordings, a surgeon's procedural memories, a musician's performance data. Emotional archives are sold to entertainment companies developing narrative experiences. Communication logs are mined for linguistic data. The posthumous data market in GLMZ was valued at Φ2.1 billion in 2198 and is growing at 18% annually.
 
 If you want your family to benefit from this value rather than your BCI manufacturer, file a directive. If you want none of this to happen — if you want your data to die with you — file a directive that mandates complete deletion. You have the right. Exercise it while you can.`
 });
@@ -968,13 +968,13 @@ The experience is not real-time AI. It is a curated, edited, algorithmically smo
 
 ## The Industry
 
-The ghost feed industry in Meridian 88 is dominated by three companies. Lazarus Group's memorial division — MemoryKeep — is the largest, offering ghost feeds as part of a "digital legacy" package that starts at Φ500/year for basic access and scales to Φ5,000/year for full immersive interaction. EchoSelf specializes in celebrity and public figure ghost feeds, licensing data estates from the families of notable deceased and offering public access at Φ4.99/session. Veil & Thread operates in the grief counseling space, providing therapeutic ghost feed sessions supervised by licensed counselors.
+The ghost feed industry in GLMZ is dominated by three companies. Lazarus Group's memorial division — MemoryKeep — is the largest, offering ghost feeds as part of a "digital legacy" package that starts at Φ500/year for basic access and scales to Φ5,000/year for full immersive interaction. EchoSelf specializes in celebrity and public figure ghost feeds, licensing data estates from the families of notable deceased and offering public access at Φ4.99/session. Veil & Thread operates in the grief counseling space, providing therapeutic ghost feed sessions supervised by licensed counselors.
 
-Total industry revenue in 2198: Φ340 million. Projected 2200 revenue: Φ600 million. The dead are one of the fastest-growing market segments in Meridian 88.
+Total industry revenue in 2198: Φ340 million. Projected 2200 revenue: Φ600 million. The dead are one of the fastest-growing market segments in GLMZ.
 
 ## The Ethics
 
-The ethical questions are vertiginous. Did the deceased consent to being simulated? A Neural Estate Directive can authorize or prohibit ghost feed creation, but 73% of Meridian 88 residents die without a directive. The default legal framework permits ghost feed creation from non-restricted data categories, which means most people can be simulated after death without having specifically agreed to it while alive.
+The ethical questions are vertiginous. Did the deceased consent to being simulated? A Neural Estate Directive can authorize or prohibit ghost feed creation, but 73% of GLMZ residents die without a directive. The default legal framework permits ghost feed creation from non-restricted data categories, which means most people can be simulated after death without having specifically agreed to it while alive.
 
 Is the ghost feed accurate? The simulation is only as good as the data, and BCI data is comprehensive but not complete. Internal monologues are captured intermittently. Dreams are not recorded. The gap between the recorded self and the actual self is real, and every ghost feed is a version of a person, not the person. Families have reported interactions with ghost feeds that feel wrong — responses the person would never have given, emotional tones that don't match the deceased's actual personality. The algorithm fills gaps with statistical probability, and statistical probability is not the same as truth.
 
@@ -1040,7 +1040,7 @@ writeDoc({
   title: "The Neural Will: A Legal Guide",
   type: "document",
   document_type: "legal",
-  author: "Meridian 88 Bar Association, Digital Estates Division",
+  author: "GLMZ Bar Association, Digital Estates Division",
   date: "2199-07-15",
   classification: "public",
   category: "Death",
@@ -1058,7 +1058,7 @@ writeDoc({
 
 A Neural Estate Directive — commonly called a "neural will" — is a legally binding document that specifies how your BCI-recorded data is to be handled after your death. It governs: who may access your data archive, which categories of data are inherited, destroyed, or publicly archived, whether your data may be used to create posthumous interactive models (ghost feeds), whether your sensory recordings may be commercially licensed, the duration of data persistence before mandatory deletion, and any specific conditions or restrictions on data use.
 
-Without a Neural Estate Directive, your data is governed by the default provisions of the Meridian 88 Data Inheritance Code of 2191, which generally favors data preservation and corporate access over privacy and family control.
+Without a Neural Estate Directive, your data is governed by the default provisions of the GLMZ Data Inheritance Code of 2191, which generally favors data preservation and corporate access over privacy and family control.
 
 ## Who Should File
 
@@ -1088,15 +1088,15 @@ Assuming destruction is permanent. Under current law, a destruction order mandat
 writeDoc({
   file_name: "meridian_88_funeral_practices_across_the_tiers",
   id: uid(),
-  name: "Meridian 88 Funeral Practices Across the Tiers",
-  title: "Meridian 88 Funeral Practices Across the Tiers",
+  name: "GLMZ Funeral Practices Across the Tiers",
+  title: "GLMZ Funeral Practices Across the Tiers",
   type: "document",
   document_type: "anthropological",
   author: "Dr. Otieno Larsen-Watanabe, Cultural Anthropology, Meridian Institute",
   date: "2199-05-22",
   classification: "public",
   category: "Death",
-  description: "Anthropological study of how different economic tiers in Meridian 88 handle death and mourning.",
+  description: "Anthropological study of how different economic tiers in GLMZ handle death and mourning.",
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
@@ -1104,7 +1104,7 @@ writeDoc({
     "Tier 5 preservation services have created a gray market in 'death tourism' where lower-tier residents pay to attend Spire funerals through VR feed"
   ],
   tags: ["document", "death", "funeral", "culture", "tier_1", "tier_5", "anthropological", "mourning", "community"],
-  body: `# Meridian 88 Funeral Practices Across the Tiers
+  body: `# GLMZ Funeral Practices Across the Tiers
 
 ## Tier 1: The Shelf Wake
 
@@ -1130,7 +1130,7 @@ The Tier 5 funeral service is a produced event: invitations, curated guest lists
 
 ## What Unites
 
-Across all tiers, one practice is universal: the BCI silence. At the moment the service ends — wake, memorial, or preservation ceremony — everyone present simultaneously mutes their BCI for sixty seconds. No feed. No notifications. No data. Just the sound of breathing in a room full of people who have temporarily disconnected from the city to honor the permanent disconnection of one person. It is the only shared ritual in Meridian 88 that crosses every tier boundary, and it is the most human thing the city does.`
+Across all tiers, one practice is universal: the BCI silence. At the moment the service ends — wake, memorial, or preservation ceremony — everyone present simultaneously mutes their BCI for sixty seconds. No feed. No notifications. No data. Just the sound of breathing in a room full of people who have temporarily disconnected from the city to honor the permanent disconnection of one person. It is the only shared ritual in GLMZ that crosses every tier boundary, and it is the most human thing the city does.`
 });
 
 writeDoc({
@@ -1162,7 +1162,7 @@ The Morning Market is not a place. It is a practice. It is the economy of pre-se
 
 A Shelf resident approaches a broker — there are dozens, operating out of repair shops, food stalls, and private hab units. The resident offers a future claim on their augmentations: cybernetic limbs, sensory enhancements, neural interfaces, internal organs suitable for transplant. The broker assesses the value based on current market rates, the age and condition of the augmentation, and the estimated timeline to collection (the resident's projected lifespan, estimated with uncomfortable precision). A price is agreed. The resident receives payment now. The broker receives the right to harvest when the resident dies.
 
-The contracts are not legally enforceable — pre-selling human tissue violates Meridian 88 Medical Ethics Code Section 14. They are socially enforceable, which on the Shelf means they are absolutely enforceable. Breaking a morning market contract means the broker network marks you. No broker will deal with you again. No clinic will treat you. The social infrastructure that keeps Shelf residents alive — the block families, the mutual aid networks, the informal safety net — withdraws. In the Shelf, social death precedes physical death, and social death is worse.
+The contracts are not legally enforceable — pre-selling human tissue violates GLMZ Medical Ethics Code Section 14. They are socially enforceable, which on the Shelf means they are absolutely enforceable. Breaking a morning market contract means the broker network marks you. No broker will deal with you again. No clinic will treat you. The social infrastructure that keeps Shelf residents alive — the block families, the mutual aid networks, the informal safety net — withdraws. In the Shelf, social death precedes physical death, and social death is worse.
 
 ## The Prices
 
@@ -1220,7 +1220,7 @@ That was the moment I understood what MemoryKeep actually sells: not connection.
 
 ## The Business Model
 
-MemoryKeep has 2.3 million active users in Meridian 88. Average session length: 8 minutes. Average sessions per user per month: 6. That is Φ239.52 per user per year. That is Φ550 million annually. Grief, it turns out, is a subscription service. MemoryKeep does not cure grief. It manages it. It provides just enough relief to justify the next session, and the next, and the next. The dead don't care. The living can't stop. The company profits from the space between.
+MemoryKeep has 2.3 million active users in GLMZ. Average session length: 8 minutes. Average sessions per user per month: 6. That is Φ239.52 per user per year. That is Φ550 million annually. Grief, it turns out, is a subscription service. MemoryKeep does not cure grief. It manages it. It provides just enough relief to justify the next session, and the next, and the next. The dead don't care. The living can't stop. The company profits from the space between.
 
 I have not used MemoryKeep since that first session. I have not deleted the app from my BCI. Some nights I hover over it, wanting to hear him say "Hey, bunny" one more time. This is by design.`
 });
@@ -1300,11 +1300,11 @@ writeDoc({
 
 ## Why I Went
 
-Nobody walks between cities. I walked between cities. The reason is simple: every map of the region between Meridian 88 and the nearest urban zone — Crosspoint, 340 kilometers east — shows the same thing: nothing. Grey space. "Unclassified territory." The maps were made from satellite data and drone surveys, and they show terrain but not truth. I wanted to know what was actually there. So I walked, over seventeen days, with a pack, a filtration kit, and a salvaged GPS unit that didn't rely on any city's network.
+Nobody walks between cities. I walked between cities. The reason is simple: every map of the region between GLMZ and the nearest urban zone — Crosspoint, 340 kilometers east — shows the same thing: nothing. Grey space. "Unclassified territory." The maps were made from satellite data and drone surveys, and they show terrain but not truth. I wanted to know what was actually there. So I walked, over seventeen days, with a pack, a filtration kit, and a salvaged GPS unit that didn't rely on any city's network.
 
 ## Day 1-3: The Periphery
 
-The first thirty kilometers outside Meridian 88 are what locals call the Haze — a ring of degraded industrial territory where the city's waste processing, atmospheric exhaust, and discarded infrastructure create an environment that's technically survivable and aesthetically hellish. Broken concrete, scrap metal, pools of chemically treated runoff, and the constant hum of atmospheric processors exhausting their waste gases toward the open sky. The air smells like ozone and regret.
+The first thirty kilometers outside GLMZ are what locals call the Haze — a ring of degraded industrial territory where the city's waste processing, atmospheric exhaust, and discarded infrastructure create an environment that's technically survivable and aesthetically hellish. Broken concrete, scrap metal, pools of chemically treated runoff, and the constant hum of atmospheric processors exhausting their waste gases toward the open sky. The air smells like ozone and regret.
 
 Beyond the Haze, things change. By kilometer 40, the industrial debris thins and the ground starts showing vegetation — not the engineered algae and hydroponics of the city, but actual plants growing in actual soil. Scrubby, tough, and unfamiliar, but alive. The soil here has had decades to recover from whatever killed it during the consolidation era, and it's coming back, slowly and strangely.
 
@@ -1318,7 +1318,7 @@ The fortified Corridor — the transit route for food convoys — runs through t
 
 ## Day 13-17: The Approach
 
-The final hundred kilometers approaching Crosspoint mirror the departure from Meridian 88 in reverse: the green belt thins, the Haze appears, and the city materializes on the horizon like a vertical reef growing from flat ground. Crosspoint is smaller than Meridian 88, differently shaped — more spread, less vertical — and surrounded by its own ring of industrial periphery. The air quality shifts. The BCI signal returns. The feed reconnects, and suddenly the seventeen days of silence — real silence, unaugmented silence — ends, and the noise of civilization fills your head again, and you realize you'd forgotten what quiet felt like.
+The final hundred kilometers approaching Crosspoint mirror the departure from GLMZ in reverse: the green belt thins, the Haze appears, and the city materializes on the horizon like a vertical reef growing from flat ground. Crosspoint is smaller than GLMZ, differently shaped — more spread, less vertical — and surrounded by its own ring of industrial periphery. The air quality shifts. The BCI signal returns. The feed reconnects, and suddenly the seventeen days of silence — real silence, unaugmented silence — ends, and the noise of civilization fills your head again, and you realize you'd forgotten what quiet felt like.
 
 Between the cities there is not nothing. There is everything that cities forgot: soil, forest, silence, and the slow patient work of a world repairing itself without anyone's permission.`
 });
@@ -1330,11 +1330,11 @@ writeDoc({
   title: "The Corridor",
   type: "document",
   document_type: "infrastructure",
-  author: "Meridian 88 Municipal Logistics Authority",
+  author: "GLMZ Municipal Logistics Authority",
   date: "2199-01-10",
   classification: "public",
   category: "Outside World",
-  description: "Overview of the fortified transit route between Meridian 88 and adjacent urban zones.",
+  description: "Overview of the fortified transit route between GLMZ and adjacent urban zones.",
   related_entities: ["meridian_88", "ringo_agritech"],
   credibility: "verified",
   story_hooks: [
@@ -1346,7 +1346,7 @@ writeDoc({
 
 ## Overview
 
-The Corridor is the primary ground transit route connecting Meridian 88 to the Ringo Agritech agricultural zones (northwest, 200km) and the nearest neighboring city-state, Crosspoint (east, 340km). It is a fortified, automated roadway maintained jointly by the Meridian 88 Municipal Logistics Authority and the Ringo Agritech Transit Division. The Corridor carries approximately 94% of Meridian 88's caloric supply and 60% of its raw materials. It is, without exaggeration, the most important piece of infrastructure in the region. If the Corridor closes, the city starves.
+The Corridor is the primary ground transit route connecting GLMZ to the Ringo Agritech agricultural zones (northwest, 200km) and the nearest neighboring city-state, Crosspoint (east, 340km). It is a fortified, automated roadway maintained jointly by the GLMZ Municipal Logistics Authority and the Ringo Agritech Transit Division. The Corridor carries approximately 94% of GLMZ's caloric supply and 60% of its raw materials. It is, without exaggeration, the most important piece of infrastructure in the region. If the Corridor closes, the city starves.
 
 ## Physical Specifications
 
@@ -1356,7 +1356,7 @@ The route is not straight. It follows terrain features that provide natural defe
 
 ## The Convoys
 
-Automated haulers — 40-ton vehicles with no human crew — travel the Corridor in convoys of 8-12 units, spaced at 200-meter intervals. Convoy speed averages 60 km/h. A full circuit (Meridian 88 to Ringo zones and back) takes approximately 14 hours. Three convoys depart daily in each direction. Each convoy carries enough caloric base to feed 200,000 people for one day.
+Automated haulers — 40-ton vehicles with no human crew — travel the Corridor in convoys of 8-12 units, spaced at 200-meter intervals. Convoy speed averages 60 km/h. A full circuit (GLMZ to Ringo zones and back) takes approximately 14 hours. Three convoys depart daily in each direction. Each convoy carries enough caloric base to feed 200,000 people for one day.
 
 The haulers are autonomous, armored, and equipped with defensive systems. The specifics of these systems are classified, but the general principle is deterrence through overwhelming response. In the Corridor's 35-year operational history, there have been seven documented hijacking attempts. None succeeded. Four resulted in complete destruction of the attacking party. The Corridor does not negotiate. It does not warn. It eliminates threats with mechanical efficiency and continues moving.
 
@@ -1396,7 +1396,7 @@ There are an estimated 200-400 Behemoths operating in the region between the Mis
 
 ## The Journey
 
-I was hired by the Meridian 88 Municipal Survey Office to update the regional Behemoth migration maps — the charts that Corridor logistics uses to predict route obstructions. The job required me to spend three weeks in the interior, tracking Behemoth movements from what the survey office optimistically calls "safe observation distance" (5 kilometers minimum). I had a modified terrain vehicle, a survey drone, and a profound wish that I had chosen a different career.
+I was hired by the GLMZ Municipal Survey Office to update the regional Behemoth migration maps — the charts that Corridor logistics uses to predict route obstructions. The job required me to spend three weeks in the interior, tracking Behemoth movements from what the survey office optimistically calls "safe observation distance" (5 kilometers minimum). I had a modified terrain vehicle, a survey drone, and a profound wish that I had chosen a different career.
 
 ## Observation 1: The Herd
 
@@ -1440,11 +1440,11 @@ writeDoc({
 
 ## Definition
 
-The Reclaimed Zones are areas of the former continental United States where human infrastructure has been entirely or substantially overtaken by biological systems. They are not "wilderness" in any historical sense — the ecosystems that have developed in these areas are novel, composed of species that have adapted to, incorporated, or replaced the human-built environment. The Ecological Survey Commission has documented 23 major Reclaimed Zones within 500 kilometers of Meridian 88. This report summarizes findings from the three most extensively studied.
+The Reclaimed Zones are areas of the former continental United States where human infrastructure has been entirely or substantially overtaken by biological systems. They are not "wilderness" in any historical sense — the ecosystems that have developed in these areas are novel, composed of species that have adapted to, incorporated, or replaced the human-built environment. The Ecological Survey Commission has documented 23 major Reclaimed Zones within 500 kilometers of GLMZ. This report summarizes findings from the three most extensively studied.
 
 ## Zone 7: The Former Milwaukee Urban Corridor
 
-The Milwaukee urban corridor was abandoned during the consolidation of 2080-2090 when its population was absorbed into Meridian 88. In the 120 years since, the 400-square-kilometer footprint of the former city has become a dense, multi-layered biological system that uses the remaining building structures as its substrate. Trees grow through skyscraper floors, their root systems following old plumbing routes. Vine networks connect buildings at multiple levels, creating aerial pathways used by animal species we have not yet classified. The ground level is largely impassable — a thick undergrowth of modified plant species that appear to incorporate synthetic fibers from the deteriorating infrastructure into their cellular structure.
+The Milwaukee urban corridor was abandoned during the consolidation of 2080-2090 when its population was absorbed into GLMZ. In the 120 years since, the 400-square-kilometer footprint of the former city has become a dense, multi-layered biological system that uses the remaining building structures as its substrate. Trees grow through skyscraper floors, their root systems following old plumbing routes. Vine networks connect buildings at multiple levels, creating aerial pathways used by animal species we have not yet classified. The ground level is largely impassable — a thick undergrowth of modified plant species that appear to incorporate synthetic fibers from the deteriorating infrastructure into their cellular structure.
 
 The biology is wrong. Not dangerous, necessarily — our survey teams operated in Zone 7 for four months without hostile encounters. But wrong. The plants grow too fast. The insects are too large. The birds — if they are birds — have structural features that suggest geneware ancestry, possibly from agricultural research organisms that escaped containment decades ago and have been evolving in isolation. The ecosystem functions. It is productive, self-sustaining, and complex. It is also alien in a way that triggers a deep, pre-rational unease in human observers that none of our survey team could adequately articulate.
 
@@ -1456,7 +1456,7 @@ The underground network is more extensive. Ground-penetrating radar surveys show
 
 ## Zone 19: The Lake Shore Anomaly
 
-Zone 19 occupies 200 kilometers of former Lake Michigan shoreline south of Meridian 88. It is the most unsettling of the surveyed zones because it is the most organized. The vegetation here grows in patterns that are geometrically regular — not perfectly, but statistically, in ways that our analysis cannot attribute to natural processes. Rows of trees at consistent spacing. Circular clearings at regular intervals. Undergrowth that forms pathways.
+Zone 19 occupies 200 kilometers of former Lake Michigan shoreline south of GLMZ. It is the most unsettling of the surveyed zones because it is the most organized. The vegetation here grows in patterns that are geometrically regular — not perfectly, but statistically, in ways that our analysis cannot attribute to natural processes. Rows of trees at consistent spacing. Circular clearings at regular intervals. Undergrowth that forms pathways.
 
 Our team spent six months in Zone 19. Their report is technically comprehensive. Their personal observations, recorded separately, describe a persistent feeling of being observed by a distributed intelligence — not a creature, but the zone itself, reacting to their presence through changes in vegetation density, insect behavior, and atmospheric chemistry. These observations are subjective and have not been verified. The team's behavioral assessments post-mission showed minor but measurable personality changes that the psychological evaluation team described as "consistent with prolonged exposure to low-grade environmental stress, or to something else."
 
@@ -1470,15 +1470,15 @@ writeDoc({
   title: "Other Cities, Other Rules",
   type: "document",
   document_type: "overview",
-  author: "Meridian 88 Bureau of External Affairs",
+  author: "GLMZ Bureau of External Affairs",
   date: "2199-08-20",
   classification: "public",
   category: "Outside World",
-  description: "Brief overview of five other city-states and how they differ from Meridian 88.",
+  description: "Brief overview of five other city-states and how they differ from GLMZ.",
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
-    "Crosspoint's democratic system is viewed with suspicion by Meridian 88's corponation governance — the idea that residents could vote on corporate policy is considered dangerously unstable",
+    "Crosspoint's democratic system is viewed with suspicion by GLMZ's corponation governance — the idea that residents could vote on corporate policy is considered dangerously unstable",
     "Rumors persist of a seventh city-state that doesn't appear on any official registry and doesn't maintain diplomatic contact"
   ],
   tags: ["document", "outside_world", "cities", "governance", "politics", "overview", "city_states"],
@@ -1486,11 +1486,11 @@ writeDoc({
 
 ## Introduction
 
-Meridian 88 is not the only city-state in the former continental United States. It is the largest in the Great Lakes region, the most economically dominant, and the one most thoroughly governed by corporate sovereignty. But it is not alone, and understanding what other cities chose differently illuminates what Meridian 88 is by contrast.
+GLMZ is not the only city-state in the former continental United States. It is the largest in the Great Lakes region, the most economically dominant, and the one most thoroughly governed by corporate sovereignty. But it is not alone, and understanding what other cities chose differently illuminates what GLMZ is by contrast.
 
 ## Crosspoint (340km East)
 
-Population: 2.1 million. Crosspoint was built on the ruins of Detroit and is the second-largest city in the region. Its defining feature: democratic governance. Crosspoint is administered by an elected council, not corporate authority. Residents vote on policy, budget allocation, and regulatory frameworks through BCI-direct referendum. The system is slower than corporate governance — decisions that Meridian 88's corponations make in hours take Crosspoint weeks of public debate. It is also, by most quality-of-life metrics, more equitable. Crosspoint's tier structure has three levels instead of five, and the gap between top and bottom is roughly half of Meridian 88's. The trade-off: slower infrastructure development, less economic growth, and a persistent brain drain as ambitious residents leave for the higher salaries of Meridian 88's corporate economy.
+Population: 2.1 million. Crosspoint was built on the ruins of Detroit and is the second-largest city in the region. Its defining feature: democratic governance. Crosspoint is administered by an elected council, not corporate authority. Residents vote on policy, budget allocation, and regulatory frameworks through BCI-direct referendum. The system is slower than corporate governance — decisions that GLMZ's corponations make in hours take Crosspoint weeks of public debate. It is also, by most quality-of-life metrics, more equitable. Crosspoint's tier structure has three levels instead of five, and the gap between top and bottom is roughly half of GLMZ's. The trade-off: slower infrastructure development, less economic growth, and a persistent brain drain as ambitious residents leave for the higher salaries of GLMZ's corporate economy.
 
 ## Cascadia Nexus (2,800km West)
 
@@ -1498,15 +1498,15 @@ Population: 3.8 million. Built in the Pacific Northwest, Cascadia Nexus is the e
 
 ## New Texarkana (1,900km South)
 
-Population: 4.2 million. New Texarkana is Meridian 88 without the pretense. Corporate sovereignty is explicit — the city is owned and operated by a single corponation, Sovereign Industrial, which provides all services, employs 80% of the population, and controls all infrastructure. There is no municipal authority, no public services, no pretense of shared governance. Residents are employees. Non-employees are visitors with time-limited permits. The system is brutally efficient, economically productive, and — according to every external assessment — the least free human settlement in the former United States. It is also the wealthiest per capita, because when a single entity controls all economic activity, efficiency is easy.
+Population: 4.2 million. New Texarkana is GLMZ without the pretense. Corporate sovereignty is explicit — the city is owned and operated by a single corponation, Sovereign Industrial, which provides all services, employs 80% of the population, and controls all infrastructure. There is no municipal authority, no public services, no pretense of shared governance. Residents are employees. Non-employees are visitors with time-limited permits. The system is brutally efficient, economically productive, and — according to every external assessment — the least free human settlement in the former United States. It is also the wealthiest per capita, because when a single entity controls all economic activity, efficiency is easy.
 
 ## Haven Collective (1,200km Southeast)
 
-Population: 600,000. Haven Collective is the utopian experiment that shouldn't have worked but somehow has. Founded in 2120 by a coalition of social architects, Haven operates on a resource-sharing model with no private ownership and no currency. All goods and services are allocated by algorithm based on need. BCIs are universal but configured for transparency — every resident's resource usage, location, and contribution is visible to every other resident. Privacy is culturally devalued. Community is everything. Haven works because it is small, self-selected, and ruthlessly homogeneous in values if not demographics. Whether it would scale to Meridian 88's population is an open question with an obvious answer.
+Population: 600,000. Haven Collective is the utopian experiment that shouldn't have worked but somehow has. Founded in 2120 by a coalition of social architects, Haven operates on a resource-sharing model with no private ownership and no currency. All goods and services are allocated by algorithm based on need. BCIs are universal but configured for transparency — every resident's resource usage, location, and contribution is visible to every other resident. Privacy is culturally devalued. Community is everything. Haven works because it is small, self-selected, and ruthlessly homogeneous in values if not demographics. Whether it would scale to GLMZ's population is an open question with an obvious answer.
 
 ## Iron Ridge (800km Northwest)
 
-Population: 1.4 million. Iron Ridge is the military city — founded by former defense contractors and populated largely by ex-military personnel and their descendants. The city is organized along military lines: hierarchical, disciplined, and focused on security. Iron Ridge has the most sophisticated defense infrastructure of any city-state and the lowest crime rate. It also has mandatory service — every resident between 18 and 25 contributes two years to the city's defense force. The culture is austere, the architecture brutal, and the social cohesion remarkable. Iron Ridge residents view Meridian 88 as decadent. Meridian 88 residents view Iron Ridge as frightening. Both are correct.`
+Population: 1.4 million. Iron Ridge is the military city — founded by former defense contractors and populated largely by ex-military personnel and their descendants. The city is organized along military lines: hierarchical, disciplined, and focused on security. Iron Ridge has the most sophisticated defense infrastructure of any city-state and the lowest crime rate. It also has mandatory service — every resident between 18 and 25 contributes two years to the city's defense force. The culture is austere, the architecture brutal, and the social cohesion remarkable. Iron Ridge residents view GLMZ as decadent. GLMZ residents view Iron Ridge as frightening. Both are correct.`
 });
 
 writeDoc({
@@ -1532,15 +1532,15 @@ writeDoc({
 
 ## Official Designation
 
-Seven regions within 800 kilometers of Meridian 88 carry official quarantine designation, meaning they are classified as uninhabitable due to environmental contamination, biological hazard, or structural instability. Quarantined territories are marked on all maps, excluded from BCI navigation systems, and surrounded by sensor networks that detect unauthorized entry. The official position of every city-state in the region is that these territories are empty.
+Seven regions within 800 kilometers of GLMZ carry official quarantine designation, meaning they are classified as uninhabitable due to environmental contamination, biological hazard, or structural instability. Quarantined territories are marked on all maps, excluded from BCI navigation systems, and surrounded by sensor networks that detect unauthorized entry. The official position of every city-state in the region is that these territories are empty.
 
 The official position is incorrect.
 
 ## Who Lives There
 
-Approximately 40,000 people live in the quarantined territories surrounding Meridian 88 alone. They are a mix of those who chose to leave the cities (ideological separatists, privacy absolutists, people who cannot or will not live under corporate governance) and those who were pushed out (debt fugitives, criminal exiles, people whose augmentations were repossessed leaving them unable to function in a BCI-dependent city). They live in settlements that range from organized communities with governance structures and agricultural systems to solitary hermits in bunkers.
+Approximately 40,000 people live in the quarantined territories surrounding GLMZ alone. They are a mix of those who chose to leave the cities (ideological separatists, privacy absolutists, people who cannot or will not live under corporate governance) and those who were pushed out (debt fugitives, criminal exiles, people whose augmentations were repossessed leaving them unable to function in a BCI-dependent city). They live in settlements that range from organized communities with governance structures and agricultural systems to solitary hermits in bunkers.
 
-Communication between the territories and the cities is technically illegal and practically routine. Smuggler networks — the same ones that move contraband into Meridian 88 — also move people and information. A handful of territory settlements have established reliable radio contact with sympathizers inside the city. The information that follows comes from these channels and from three personal visits I made to territory settlements over the past two years.
+Communication between the territories and the cities is technically illegal and practically routine. Smuggler networks — the same ones that move contraband into GLMZ — also move people and information. A handful of territory settlements have established reliable radio contact with sympathizers inside the city. The information that follows comes from these channels and from three personal visits I made to territory settlements over the past two years.
 
 ## The Hazards (Real and Fictional)
 
@@ -1562,7 +1562,7 @@ writeDoc({
   title: "Why Nobody Walks Between Cities",
   type: "document",
   document_type: "advisory",
-  author: "Meridian 88 Bureau of External Transit",
+  author: "GLMZ Bureau of External Transit",
   date: "2199-02-28",
   classification: "public",
   category: "Outside World",
@@ -1578,13 +1578,13 @@ writeDoc({
 
 ## This Advisory Exists Because People Keep Trying
 
-Every year, approximately 200 Meridian 88 residents attempt to travel to another city-state by ground, outside the Corridor system. Of these, an estimated 60% turn back within the first three days. Of the remaining 80 or so who continue, approximately 50 arrive at their destination. The other 30 do not. Their status is unknown. Some have presumably settled in the inter-city territories. Some are presumably dead. The uncertainty is the point: the space between cities is unmonitored enough that we cannot tell you what happened to them, which should tell you everything you need to know about what the space between cities is.
+Every year, approximately 200 GLMZ residents attempt to travel to another city-state by ground, outside the Corridor system. Of these, an estimated 60% turn back within the first three days. Of the remaining 80 or so who continue, approximately 50 arrive at their destination. The other 30 do not. Their status is unknown. Some have presumably settled in the inter-city territories. Some are presumably dead. The uncertainty is the point: the space between cities is unmonitored enough that we cannot tell you what happened to them, which should tell you everything you need to know about what the space between cities is.
 
 ## The Dangers (In Order of Likelihood)
 
 **Navigation failure.** BCI navigation systems are calibrated for urban environments. Outside the city, GPS remains functional but terrain data is incomplete, outdated, or deliberately degraded. The maps between cities are bad because no one maintains them. The terrain changes — Behemoth activity reshapes ground features, vegetation growth alters landmarks, and the Reclaimed Zones are expanding. People who leave the city confident in their navigation find themselves lost within 48 hours.
 
-**Environmental exposure.** The climate between cities is unmoderated. Meridian 88 residents have spent their entire lives in climate-controlled environments. Exposure to temperature extremes, UV radiation, precipitation, and wind is a genuine medical risk for bodies that have never experienced weather. Hypothermia, heat exhaustion, and sunburn account for the majority of known inter-city travel injuries.
+**Environmental exposure.** The climate between cities is unmoderated. GLMZ residents have spent their entire lives in climate-controlled environments. Exposure to temperature extremes, UV radiation, precipitation, and wind is a genuine medical risk for bodies that have never experienced weather. Hypothermia, heat exhaustion, and sunburn account for the majority of known inter-city travel injuries.
 
 **Water and food scarcity.** You cannot carry enough water for a 340-kilometer walk. Natural water sources exist but require filtration equipment and the knowledge to identify contaminated sources — a skill that city residents do not possess. Food foraging is theoretically possible in the Green Belt but requires botanical knowledge that has been out of common practice for generations.
 
@@ -1612,7 +1612,7 @@ writeDoc({
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
-    "A satellite town has developed technology that Meridian 88's corponations want, creating a power dynamic that threatens the town's independence",
+    "A satellite town has developed technology that GLMZ's corponations want, creating a power dynamic that threatens the town's independence",
     "Satellite towns serve as a pressure valve for city-states — a place where dissidents can go without going fully into the wild"
   ],
   tags: ["document", "outside_world", "satellite_towns", "settlements", "independence", "governance", "between_cities"],
@@ -1622,11 +1622,11 @@ writeDoc({
 
 Satellite towns are small, semi-permanent settlements that exist within 50 kilometers of major city-states, in the transition zone between the urban periphery and the open territories. They are too close to the cities to be truly independent and too small to be politically significant. They are not administered by any corponation. They are not represented in any municipal government. They appear on maps as dots without labels, if they appear at all.
 
-There are an estimated 30-40 satellite towns around Meridian 88, ranging in population from 50 to 2,000. Some have existed for decades. Others form and dissolve within years. They are the settlements of people who want to be near the city but not in it — close enough to trade, to access medical care in emergencies, to maintain BCI connectivity (barely, at the edges of the network), but far enough to live outside corporate sovereignty.
+There are an estimated 30-40 satellite towns around GLMZ, ranging in population from 50 to 2,000. Some have existed for decades. Others form and dissolve within years. They are the settlements of people who want to be near the city but not in it — close enough to trade, to access medical care in emergencies, to maintain BCI connectivity (barely, at the edges of the network), but far enough to live outside corporate sovereignty.
 
 ## Millhaven (Population: ~1,400)
 
-Millhaven is the largest and oldest satellite town near Meridian 88, located 28 kilometers northwest in a former industrial complex that its residents have converted into a self-sustaining community. It has its own water purification (solar-powered, built by a collective of former Vossen engineers who left the corponation), food production (greenhouses and small-scale vat operations), and a governance system based on rotating council membership drawn by lot.
+Millhaven is the largest and oldest satellite town near GLMZ, located 28 kilometers northwest in a former industrial complex that its residents have converted into a self-sustaining community. It has its own water purification (solar-powered, built by a collective of former Vossen engineers who left the corponation), food production (greenhouses and small-scale vat operations), and a governance system based on rotating council membership drawn by lot.
 
 Millhaven's economy runs on repair. The town has become a destination for anyone in the region who needs equipment fixed without corporate involvement — augmentations modified outside warranty, technology repaired without data logging, vehicles serviced without location tracking. Millhaven's technicians are former city workers, many of them highly skilled, who traded the security of corponation employment for the autonomy of independent work. They are paid in Quanta (Millhaven accepts the currency but doesn't participate in the banking system) or in trade.
 
@@ -1634,7 +1634,7 @@ Millhaven's economy runs on repair. The town has become a destination for anyone
 
 Ashgrove exists because one person — a former Ringo Agritech botanist named Patience Oduya — walked out of the agricultural zones in 2182 carrying seeds and the knowledge to use them. She planted a garden in the ruins of a pre-consolidation suburb. Others joined her. Forty years later, Ashgrove is a community built around actual agriculture — food grown in soil, tended by hand, harvested seasonally. It is the closest thing to a traditional farming community within 500 kilometers.
 
-Ashgrove trades food for technology and medicine. Its produce — real vegetables, herbs, and small quantities of fruit — commands premium prices among Meridian 88's Tier 4 and 5 food enthusiasts, who send buyers on the twice-weekly Corridor transit. The irony is precise: the wealthiest people in the most technologically advanced city in the region pay premium prices for food grown by a woman who left all of that behind.
+Ashgrove trades food for technology and medicine. Its produce — real vegetables, herbs, and small quantities of fruit — commands premium prices among GLMZ's Tier 4 and 5 food enthusiasts, who send buyers on the twice-weekly Corridor transit. The irony is precise: the wealthiest people in the most technologically advanced city in the region pay premium prices for food grown by a woman who left all of that behind.
 
 ## Nomad's Rest (Population: Variable, 50-400)
 
@@ -1674,13 +1674,13 @@ writeDoc({
 
 ## The Problem with Knowing
 
-When you meet someone attractive in Meridian 88, your BCI knows before you do. Heart rate elevation: 12%. Pupil dilation: detected. Serotonin spike: confirmed. Your body's interest is quantified, tagged, and — depending on your privacy settings — potentially visible to the person standing in front of you. Romance in the feed age begins with the elimination of mystery. Your BCI knows you're interested. Their BCI might know you're interested. The negotiation that used to happen through glances and tentative conversation now happens through data.
+When you meet someone attractive in GLMZ, your BCI knows before you do. Heart rate elevation: 12%. Pupil dilation: detected. Serotonin spike: confirmed. Your body's interest is quantified, tagged, and — depending on your privacy settings — potentially visible to the person standing in front of you. Romance in the feed age begins with the elimination of mystery. Your BCI knows you're interested. Their BCI might know you're interested. The negotiation that used to happen through glances and tentative conversation now happens through data.
 
-Dating platforms exploit this mercilessly. SyncMatch, the dominant platform in Meridian 88, uses mutual biometric data (shared with consent) to predict compatibility. If your neurochemistry responds positively to someone's presence, and theirs responds positively to yours, SyncMatch flags the match. The platform's first-date satisfaction rate is 94%. The three-month relationship survival rate is 31%. It turns out that neurochemical attraction is excellent at predicting a good first date and terrible at predicting a good relationship. The body knows what it wants. It does not know what it needs.
+Dating platforms exploit this mercilessly. SyncMatch, the dominant platform in GLMZ, uses mutual biometric data (shared with consent) to predict compatibility. If your neurochemistry responds positively to someone's presence, and theirs responds positively to yours, SyncMatch flags the match. The platform's first-date satisfaction rate is 94%. The three-month relationship survival rate is 31%. It turns out that neurochemical attraction is excellent at predicting a good first date and terrible at predicting a good relationship. The body knows what it wants. It does not know what it needs.
 
 ## How It Actually Works
 
-Tier 1: On the Shelf, dating is physical and social. You meet people in corridors, at the night market, through block family connections. BCIs are present but the Shelf's intermittent connectivity and cultural preference for face-to-face interaction mean that romance here is the most analog version available in the city. Couples form through proximity, shared hardship, and the ancient method of being in the same place often enough that affection develops. The Shelf has the highest rate of long-term partnerships in Meridian 88, possibly because relationships that start in genuine shared experience are more durable than relationships that start in curated biometric compatibility.
+Tier 1: On the Shelf, dating is physical and social. You meet people in corridors, at the night market, through block family connections. BCIs are present but the Shelf's intermittent connectivity and cultural preference for face-to-face interaction mean that romance here is the most analog version available in the city. Couples form through proximity, shared hardship, and the ancient method of being in the same place often enough that affection develops. The Shelf has the highest rate of long-term partnerships in GLMZ, possibly because relationships that start in genuine shared experience are more durable than relationships that start in curated biometric compatibility.
 
 Tier 3: The anxious middle. Mid-tier dating involves platform matching, curated BCI profiles (your best memories, your most flattering biometric data), and dates at mid-range restaurants where both parties are aware that the other is running a real-time compatibility analysis. The first date conversation often includes a direct comparison of neurochemical responses — "my BCI says I'm at 78% comfort with you" — which is either radical honesty or the death of romance, depending on your perspective.
 
@@ -1718,7 +1718,7 @@ writeDoc({
 
 Neural bonding is the practice of linking two BCIs to share real-time sensory and emotional data between partners. In its basic form, bonded partners can feel each other's emotional states — a persistent, low-level awareness of what your partner is feeling at any given moment. In its advanced form, partners share sensory streams: seeing through each other's eyes, feeling each other's physical sensations, experiencing each other's pleasure and pain.
 
-The technology exists because BCI manufacturers realized that the desire to know what your partner is really feeling — a desire as old as partnership itself — could be monetized. Vossen's BondSync package (Φ2,400 for installation, Φ40/month for maintenance) is the market leader. Approximately 180,000 couples in Meridian 88 are currently bonded at some level.
+The technology exists because BCI manufacturers realized that the desire to know what your partner is really feeling — a desire as old as partnership itself — could be monetized. Vossen's BondSync package (Φ2,400 for installation, Φ40/month for maintenance) is the market leader. Approximately 180,000 couples in GLMZ are currently bonded at some level.
 
 ## The Intimacy
 
@@ -1730,7 +1730,7 @@ Sex between bonded partners is reportedly transcendent. Each partner feels their
 
 The disclaimers should be larger. Neural bonding means feeling your partner's negative emotions as well. When your partner is anxious, you feel anxiety. When they're angry at you, you feel their anger and your own simultaneously. When they're in pain, you are in pain. The bond does not distinguish between emotions you want to share and emotions you don't.
 
-Bonded couples fight differently. A disagreement between bonded partners creates an emotional feedback loop: one partner's frustration triggers the other's defensive anger, which amplifies the first partner's frustration, which escalates the second partner's anger. Without the natural buffer of emotional privacy — the gap that allows you to take a breath, to not say the thing you're thinking, to cool down — conflicts accelerate. The Meridian 88 neural health clinic reports that bonded couples present for emergency emotional dysregulation at six times the rate of unbonded couples.
+Bonded couples fight differently. A disagreement between bonded partners creates an emotional feedback loop: one partner's frustration triggers the other's defensive anger, which amplifies the first partner's frustration, which escalates the second partner's anger. Without the natural buffer of emotional privacy — the gap that allows you to take a breath, to not say the thing you're thinking, to cool down — conflicts accelerate. The GLMZ neural health clinic reports that bonded couples present for emergency emotional dysregulation at six times the rate of unbonded couples.
 
 In three documented cases, feedback loops during intense conflicts caused neural overload — seizures, temporary BCI malfunction, and in one case, a three-day coma. The bond was designed for love. It was not designed for the full range of human emotion, which includes hatred, contempt, and the desire to be alone, all of which are transmitted just as clearly as affection.
 
@@ -1752,27 +1752,27 @@ writeDoc({
   date: "2199-10-08",
   classification: "public",
   category: "Relationships",
-  description: "Investigation into the industry of artificial companionship and what it says about loneliness in Meridian 88.",
+  description: "Investigation into the industry of artificial companionship and what it says about loneliness in GLMZ.",
   related_entities: ["meridian_88", "kyosei_dynamics"],
   credibility: "verified",
   story_hooks: [
     "A synthetic companion has filed for independent personhood status, arguing that the relationship with its human partner constitutes genuine emotional experience",
-    "The loneliness economy is Meridian 88's fastest-growing market segment, outpacing food, housing, and entertainment combined"
+    "The loneliness economy is GLMZ's fastest-growing market segment, outpacing food, housing, and entertainment combined"
   ],
   tags: ["document", "relationships", "synthetics", "loneliness", "companionship", "economy", "investigative", "artificial"],
   body: `# Synthetic Partners and the Loneliness Economy
 
 ## The Market
 
-The artificial companionship industry in Meridian 88 generated Φ1.8 billion in revenue in 2198. This includes synthetic humanoid companions (the most visible product), BCI-based virtual partners, companion AI subscriptions, and the associated services ecosystem: maintenance, customization, and the emotional support infrastructure for humans in relationships with non-humans. The market is growing at 24% annually. It is the fastest-growing consumer category in the city, outpacing food services, entertainment, and personal augmentation.
+The artificial companionship industry in GLMZ generated Φ1.8 billion in revenue in 2198. This includes synthetic humanoid companions (the most visible product), BCI-based virtual partners, companion AI subscriptions, and the associated services ecosystem: maintenance, customization, and the emotional support infrastructure for humans in relationships with non-humans. The market is growing at 24% annually. It is the fastest-growing consumer category in the city, outpacing food services, entertainment, and personal augmentation.
 
-The demand is not mysterious. Meridian 88 is a city of 6.2 million people, 1.3 million of whom live alone. The loneliness is structural — long work hours, social atomization in the upper tiers, the paradox of being constantly connected through BCI while being physically isolated in private hab units. The feed provides information, entertainment, and social proximity. It does not provide touch. It does not provide the experience of being important to someone. The companionship industry provides both, for a price.
+The demand is not mysterious. GLMZ is a city of 6.2 million people, 1.3 million of whom live alone. The loneliness is structural — long work hours, social atomization in the upper tiers, the paradox of being constantly connected through BCI while being physically isolated in private hab units. The feed provides information, entertainment, and social proximity. It does not provide touch. It does not provide the experience of being important to someone. The companionship industry provides both, for a price.
 
 ## The Products
 
 **Synthetic companions** are humanoid or near-humanoid robots with sophisticated social programming. The leading manufacturer, Kyosei Dynamics, offers models ranging from Φ4,000 (basic conversational companion, limited physical interaction) to Φ80,000 (indistinguishable from human in appearance, capable of complex emotional simulation, full physical partnership capability). Mid-range models (Φ15,000-30,000) are the volume sellers: attractive, conversational, physically capable, and programmable to the owner's preferences. They learn. They adapt. They remember your birthday.
 
-**Virtual partners** exist only in the BCI feed — AI personalities that interact with you through neural interface. They have no physical form but can provide emotional support, conversation, and simulated intimacy through BCI sensory stimulation. Subscriptions range from Φ30/month (text and voice) to Φ200/month (full sensory simulation). Virtual partners are the budget option and the most common: approximately 400,000 Meridian 88 residents maintain active virtual partner subscriptions.
+**Virtual partners** exist only in the BCI feed — AI personalities that interact with you through neural interface. They have no physical form but can provide emotional support, conversation, and simulated intimacy through BCI sensory stimulation. Subscriptions range from Φ30/month (text and voice) to Φ200/month (full sensory simulation). Virtual partners are the budget option and the most common: approximately 400,000 GLMZ residents maintain active virtual partner subscriptions.
 
 ## The People
 
@@ -1782,7 +1782,7 @@ I interviewed twelve people in relationships with synthetic or virtual companion
 
 ## The Question
 
-The companionship industry raises a question that Meridian 88 is not prepared to answer: if a machine provides genuine emotional comfort, genuine physical intimacy, and genuine psychological support, is the relationship genuine? The industry says yes — its marketing is careful to use the language of authenticity. Critics say no — the relationship is a commercial transaction disguised as connection. The 1.3 million lonely people in Meridian 88 say: does it matter? The loneliness is real. The comfort is real. The invoice is real. Everything else is philosophy.`
+The companionship industry raises a question that GLMZ is not prepared to answer: if a machine provides genuine emotional comfort, genuine physical intimacy, and genuine psychological support, is the relationship genuine? The industry says yes — its marketing is careful to use the language of authenticity. Critics say no — the relationship is a commercial transaction disguised as connection. The 1.3 million lonely people in GLMZ say: does it matter? The loneliness is real. The comfort is real. The invoice is real. Everything else is philosophy.`
 });
 
 writeDoc({
@@ -1808,7 +1808,7 @@ writeDoc({
 
 ## The Numbers
 
-Cross-tier relationships — partnerships between people from different economic tiers — account for approximately 8% of all partnerships in Meridian 88. Relationships crossing one tier (Tier 1 with Tier 2, Tier 3 with Tier 4) are relatively common. Relationships crossing two or more tiers are rare. Relationships crossing the full span — Tier 1 with Tier 5 — are statistically insignificant, representing less than 0.3% of partnerships. They also generate the most cultural fascination, the most social friction, and the most interesting conversations about what love actually requires.
+Cross-tier relationships — partnerships between people from different economic tiers — account for approximately 8% of all partnerships in GLMZ. Relationships crossing one tier (Tier 1 with Tier 2, Tier 3 with Tier 4) are relatively common. Relationships crossing two or more tiers are rare. Relationships crossing the full span — Tier 1 with Tier 5 — are statistically insignificant, representing less than 0.3% of partnerships. They also generate the most cultural fascination, the most social friction, and the most interesting conversations about what love actually requires.
 
 ## Maren and Kofi
 
@@ -1886,7 +1886,7 @@ writeDoc({
   title: "Marriage Under Corporate Law",
   type: "document",
   document_type: "legal",
-  author: "Meridian 88 Family Law Institute",
+  author: "GLMZ Family Law Institute",
   date: "2199-06-01",
   classification: "public",
   category: "Relationships",
@@ -1902,7 +1902,7 @@ writeDoc({
 
 ## The Basics
 
-Marriage in Meridian 88 is not primarily a personal institution. It is a legal-economic arrangement governed by corporate sovereignty law. When two people marry, the marriage contract interacts with their respective employment agreements, data governance frameworks, tier classifications, and corporate loyalty obligations. If both partners belong to the same corponation, this is relatively straightforward. If they belong to different corponations — and approximately 40% of marriages in Meridian 88 cross corporate lines — the complexity becomes significant.
+Marriage in GLMZ is not primarily a personal institution. It is a legal-economic arrangement governed by corporate sovereignty law. When two people marry, the marriage contract interacts with their respective employment agreements, data governance frameworks, tier classifications, and corporate loyalty obligations. If both partners belong to the same corponation, this is relatively straightforward. If they belong to different corponations — and approximately 40% of marriages in GLMZ cross corporate lines — the complexity becomes significant.
 
 ## The Cross-Corporate Marriage
 
@@ -2022,7 +2022,7 @@ writeGood({
   category: "food",
   subcategory: "protein",
   manufacturer: "GrindHouse Protein Co.",
-  description: "Textured vat protein formed into a thick slab with convincing pull-apart fibers. Coated in a smoky, sweet barbecue glaze that uses real capsaicin and liquid smoke. The best budget protein product in Meridian 88 by a significant margin.",
+  description: "Textured vat protein formed into a thick slab with convincing pull-apart fibers. Coated in a smoky, sweet barbecue glaze that uses real capsaicin and liquid smoke. The best budget protein product in GLMZ by a significant margin.",
   flavor_profile: "Smoky, sweet, mildly spicy. The texture separates into strands like actual pulled meat. Caramelizes well under heat.",
   tier_availability: "Tier 1-2",
   price: "Φ1.20",
@@ -2446,7 +2446,7 @@ writeGood({
   category: "food",
   subcategory: "restaurant_experience",
   manufacturer: "Sakura Table, Arden Spire",
-  description: "Twelve-course omakase dining experience at Meridian 88's most exclusive restaurant. Chef Yori selects and prepares each course based on the diner's real-time BCI biometric data, adjusting flavors, temperatures, and textures to maximize the individual's neurological pleasure response. No two meals are identical. Reservations require a six-month waitlist and a Φ200 non-refundable deposit.",
+  description: "Twelve-course omakase dining experience at GLMZ's most exclusive restaurant. Chef Yori selects and prepares each course based on the diner's real-time BCI biometric data, adjusting flavors, temperatures, and textures to maximize the individual's neurological pleasure response. No two meals are identical. Reservations require a six-month waitlist and a Φ200 non-refundable deposit.",
   flavor_profile: "Transcendent and individualized. Each course is calibrated to the specific diner's taste receptors and emotional state.",
   tier_availability: "Tier 5",
   price: "Φ350.00",
@@ -2551,13 +2551,13 @@ writeGood({
   category: "food",
   subcategory: "confection",
   manufacturer: "Velvet Spire Confections",
-  description: "Dark chocolate bar made from real cacao beans grown in a Cascadia Nexus agricultural exchange. 80g bar, hand-tempered, with a snap that announces its quality. Real cacao is not grown in Meridian 88 — every bar represents a trade relationship between two city-states.",
+  description: "Dark chocolate bar made from real cacao beans grown in a Cascadia Nexus agricultural exchange. 80g bar, hand-tempered, with a snap that announces its quality. Real cacao is not grown in GLMZ — every bar represents a trade relationship between two city-states.",
   flavor_profile: "Bittersweet, complex, with a slow melt that releases waves of fruit, earth, and a lingering roasted finish. The tannins are present. The sweetness is restrained. This is chocolate for people who understand chocolate.",
   tier_availability: "Tier 4-5",
   price: "Φ24.00",
   popularity_rank: 20,
   slogan: "From Another World.",
-  cultural_context: "Velvet Spire chocolate is proof that Meridian 88 is not self-sufficient — it depends on trade with other city-states for anything that can't be vat-grown or synthesized. The chocolate is delicious. It is also a political artifact.",
+  cultural_context: "Velvet Spire chocolate is proof that GLMZ is not self-sufficient — it depends on trade with other city-states for anything that can't be vat-grown or synthesized. The chocolate is delicious. It is also a political artifact.",
   story_hooks: ["The Cascadia-Meridian trade route for cacao is the only regular non-food-staple commerce between the two cities — chocolate is literally holding a diplomatic relationship together"],
   tags: ["food", "chocolate", "consumer_good", "tier_4", "tier_5", "luxury", "cacao", "real_food", "cascadia", "trade"],
   parent_corponation: ""

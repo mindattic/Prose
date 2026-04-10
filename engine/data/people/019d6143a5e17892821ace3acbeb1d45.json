@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e17892821ace3acbeb1d45",
   "type": "character",
-  "name": "Slate Keïta-Wójcik",
+  "name": "Slate Chakraborty-Tamale",
   "aliases": [
     "Cece"
   ],
@@ -12,7 +12,7 @@
   "age": 28,
   "status": "active",
   "location": "Hamtramck Enclave, Sunspot Crèche (Level 3, Residency Block 7), near Pulaski and Chicago Ave",
-  "description": "Céleste is compact and soft-featured with warm medium-brown skin, natural hair kept in large twisted sections pinned up during work hours, and cat ears — a geneware mod chosen at seventeen that they have never regretted for a single day. The ears are dark at the base, fading to a sandy cream at the tips, and they rotate independently, which the children find endlessly entertaining. They have color-shifting irises that cycle slowly through green and amber depending on light and mood, and small, precise hands that are somehow always in motion — braiding a child's hair, mending a torn fabric toy, writing incident reports.\n\nCéleste is genuinely good at this job in a way that is hard to fake: they hold attention without demanding it, de-escalate without humiliating, and remember every child's particular fear and comfort. Off the clock, they are wry and easily overwhelmed by adult socializing after a day of managing thirty small humans. They have strong opinions about UBC stipend policy, childcare worker wages, and the specific way that Palladian's creche management software misclassifies emotional labor as 'supplementary service.' They write long complaint threads on local community meshes that get more engagement than they expect.",
+  "description": "Slate Chakraborty-Tamale is compact and soft-featured with warm medium-brown skin, natural hair kept in large twisted sections pinned up during work hours, and cat ears — a geneware mod chosen at seventeen that they have never regretted for a single day. The ears are dark at the base, fading to a sandy cream at the tips, and they rotate independently, which the children find endlessly entertaining. They have color-shifting irises that cycle slowly through green and amber depending on light and mood, and small, precise hands that are somehow always in motion — braiding a child's hair, mending a torn fabric toy, writing incident reports.\n\nSlate Chakraborty-Tamale is genuinely good at this job in a way that is hard to fake: they hold attention without demanding it, de-escalate without humiliating, and remember every child's particular fear and comfort. Off the clock, they are wry and easily overwhelmed by adult socializing after a day of managing thirty small humans. They have strong opinions about UBC stipend policy, childcare worker wages, and the specific way that Palladian's creche management software misclassifies emotional labor as 'supplementary service.' They write long complaint threads on local community meshes that get more engagement than they expect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -180,7 +180,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,31 +232,22 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Palladian Construction",
+    "Plot 17",
     "Timekeeper",
     "The Wire Taps",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "The Gradient Compact",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Tessera Phased Array Disruptor PAD-3 'Sunspot'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "Chicago",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Iskander Tuivaga-Mbeki",
-    "Patient Zero",
-    "Plot 17",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Clock",
-    "The Iron Lotus"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Slate",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with Eastern European and South Asian ancestry; this blending manifests in warm deep brown skin with subtle golden and olive undertones, rounded facial structure with high cheekbones, and the natural texture and movement of their dark brown hair",
+    "heritage": "54.5% Sub-Saharan African, 28% South Asian, 17.5% Eastern European ancestry creates a striking phenotype: deep warm brown skin with golden undertones and subtle olive complexity, rounded facial structure with prominent high cheekbones, full lips, and naturally textured dark brown hair with warm richness throughout",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and slight, with soft rounded shoulders and a center of gravity that makes them naturally stable—built for sitting cross-legged on floor cushions and being grabbed by small hands without toppling",
@@ -264,8 +255,8 @@
     "hair_style": "Worn in large twisted sections; pinned up in a practical cluster during work hours, loose and flowing off-shift",
     "hair_length": "Long",
     "eye_color": "Color-shifting irides that cycle slowly between warm green and amber depending on ambient light and emotional state",
-    "skin_tone": "Deep warm brown with golden and subtle olive undertones from the ancestry blend",
-    "complexion": "Clear and expressive with rounded facial contours, laugh lines at the corners of their eyes and a tendency toward a slight smile; hands show minor wear from frequent hand-washing and fabric work",
+    "skin_tone": "Deep warm brown with golden undertones and subtle olive complexity from the tri-continental ancestry blend",
+    "complexion": "Clear and expressive with rounded facial contours reflecting the Sub-Saharan and South Asian heritage, laugh lines at the corners of their eyes and a tendency toward a slight smile; hands show minor wear from frequent hand-washing and fabric work",
     "distinguishing_marks": [
       "Pair of independently articulating cat ears (geneware mod) positioned above natural ears, dark brown at base fading to sandy cream at tips—natural-looking despite modification, with visible individual fur structure",
       "Faint white scar on left palm from a childhood burn, barely noticeable"
@@ -274,14 +265,38 @@
     "posture_movement": "Moves with economical, purposeful grace—rarely still for more than a few seconds. Hands are constantly in micro-motion: gesturing while speaking, braiding, mending, writing. Sits comfortably on the floor, cross-legged or kneeling. When tired, slight forward slouch in shoulders. Cat ears orient toward speakers and sound sources unconsciously.",
     "clothing_style": "Tier 3-4 working professional. Favors layered, practical clothing: soft knit cardigans (often in earth tones or deep jewel colors), utility pants or loose trousers with multiple pockets, minimal jewelry except for a thin silver mesh bracelet (gift, worn daily). Shoes are comfortable and scuffed—designed for being on feet all day. At work: hair pinned up, sleeves rolled or pushed up, an apron with pockets. Off-shift: slightly more relaxed but still practical; favors natural fabrics."
   },
-  "image_prompt": "Slate Keïta-Wójcik, 2226 cyberpunk era, petite 158cm figure with compact build and soft rounded shoulders. Deep warm brown skin with golden undertones, clear complexion with laugh lines, long natural dark brown hair twisted in sections and pinned up for work. Color-shifting green-to-amber irides visible in warm light. Distinctive dark-to-cream gradient articulating cat ears (geneware mod) positioned above natural ears, rotating toward nearby sounds. Wearing layered practical clothing: soft earth-tone knit cardigan, utility pants with pockets, scuffed comfortable work shoes. Hands in constant micro-motion, cross-legged seated position, economical graceful movement. Thin silver mesh bracelet visible. Warm indoor lighting in a working professional space, intimate scale, focused concentration on fabric or detailed task, cyberpunk Great Lakes Metropolitan Zone setting, slightly relaxed posture during off-shift moment --ar 2:3 --v 6",
+  "image_prompt": "Slate Chakraborty-Tamale, 158cm petite figure with compact build, deep warm brown skin with golden undertones, rounded high cheekbones, full lips, long dark brown hair in twisted sections pinned up, geneware cat ears dark brown fading to cream tips positioned above natural ears independently articulating, color-shifting green-amber irides, wearing layered earth-tone cardigan and utility pants with multiple pockets, thin silver mesh bracelet, comfortable worn shoes, hands in micro-motion gesturing expressively, slight smile with laugh lines, seated cross-legged on floor cushion in GLMZ residential workspace, warm ambient lighting casting golden highlights on skin and hair, scattered fabric scraps and mending tools nearby, cat ears oriented toward sound source, economical purposeful posture, photorealistic character portrait, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 72.1,
-    "Eastern European": 14.2,
-    "South Asian": 13.7
+    "Sub-Saharan African": 54.5,
+    "South Asian": 28,
+    "Eastern European": 17.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 24.3
+      },
+      "Central African": {
+        "Cameroonian": 7.8,
+        "Congolese": 11.7
+      },
+      "West African": {
+        "Nigerian": 10.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 28
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 17.5
+      }
+    }
+  }
 }

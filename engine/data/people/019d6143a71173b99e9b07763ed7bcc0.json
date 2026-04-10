@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71173b99e9b07763ed7bcc0",
   "type": "character",
-  "name": "Zephyr Zaragoza",
+  "name": "Zephyr Pathak",
   "aliases": [
     "Vest",
     "The Notary"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin, third sublevel — a waterlogged print shop behind the Gorgon Laundry, near sub-level access near LaSalle and Congress",
-  "description": "Veslemøy is a compact, unhurried woman with deep umber skin mapped by a web of fine scar lines across her right hand — remnants of a chemical burn from a botched laminate batch two decades ago. She keeps her silver-streaked hair pinned severely back, and her eyes have been fitted with patterned irises that shift between amber and pale green depending on the light, a cosmetic mod she chose purely because it unsettles clients enough to keep them respectful. She wears reading lenses on a chain around her neck that she rarely actually uses; it's theater, part of the persona of a woman who does serious paperwork. She smells always faintly of solvent and cardamom tea.\n\nShe is meticulous to the point of ceremony — she will not begin a forgery until she has reviewed a client's source documentation twice, made handwritten notes, and brewed a fresh cup of tea. She finds sloppiness morally offensive, and genuinely takes pride in work that is beautiful as well as functional. She keeps a personal ethics ledger: she will not forge documents for labor traffickers, will not fabricate child identities for anything she deems suspect, and has turned down lucrative contracts on these grounds without visible regret. This does not make her kind. She is professional, which is a different thing entirely.",
+  "description": "Zephyr Pathak is a compact, unhurried woman with deep umber skin mapped by a web of fine scar lines across her right hand — remnants of a chemical burn from a botched laminate batch two decades ago. She keeps her silver-streaked hair pinned severely back, and her eyes have been fitted with patterned irises that shift between amber and pale green depending on the light, a cosmetic mod she chose purely because it unsettles clients enough to keep them respectful. She wears reading lenses on a chain around her neck that she rarely actually uses; it's theater, part of the persona of a woman who does serious paperwork. She smells always faintly of solvent and cardamom tea.\n\nShe is meticulous to the point of ceremony — she will not begin a forgery until she has reviewed a client's source documentation twice, made handwritten notes, and brewed a fresh cup of tea. She finds sloppiness morally offensive, and genuinely takes pride in work that is beautiful as well as functional. She keeps a personal ethics ledger: she will not forge documents for labor traffickers, will not fabricate child identities for anything she deems suspect, and has turned down lucrative contracts on these grounds without visible regret. This does not make her kind. She is professional, which is a different thing entirely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -178,7 +178,7 @@
     "Dreamer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,33 +246,14 @@
     "Helix Cortex Laminate — 'The Second Skin'",
     "The Gradient Compact",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Adaeze Chen-Hawkins",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pale Mile",
-    "Dragan Petersen-Bah",
-    "GLMZ",
-    "Last Word",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Basin",
-    "The Glass Garden",
-    "The Heidelberg Scar",
-    "The Ledger",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vesna Čolić-Strand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Witness",
-    "Yuki Nwosu-Petrenko"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Haze Johansson",
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European dominant (34.6%) with significant Hispanic/Latin American (17.8%), Sub-Saharan African (15.7%), and North African (15.4%) ancestry, creating a striking phenotypic blend. Slavic bone structure and eye-set tempered by warmer Mediterranean and African features; the result is a face that defies simple categorization—angular yet full, with the particular character that emerges from multiple continental ancestries meeting in one person.",
+    "heritage": "Richly blended continental ancestry: South Asian dominant (35.2%) combined with substantial Sub-Saharan African (32.1%), significant Indigenous American (15.3%), and East Asian (9.1%) genetics, with smaller contributions from Hispanic/Latin American and Northern European ancestry. This creates a phenotype that bridges multiple facial traditions—defined South Asian cheekbones and jawline softened by fuller lips and broader nasal structure from Sub-Saharan heritage, with subtle epicanthic eye geometry from East Asian ancestry and the particular facial proportions characteristic of Indigenous American genetics. The result is an angular yet full face with deep character—bone structure that refuses simple categorization, marked by the particular vitality that emerges when multiple continental ancestries blend into one person.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, with the precise economy of movement of someone who has spent two decades bent over detail work. Minimal fat; functional muscle in forearms and shoulders from decades of hand labor.",
@@ -280,27 +261,79 @@
     "hair_style": "Pinned severely back in a tight bun or crown braid, not a strand loose",
     "hair_length": "Medium (shoulder-length when down, but habitually secured)",
     "eye_color": "Cosmetically modified: dual-iris implants that shift between deep amber and pale celadon green depending on ambient light and angle, creating an unsettling kaleidoscopic effect",
-    "skin_tone": "Warm medium brown with subtle golden undertones—the result of Eastern European olive base enriched by North African and Sub-Saharan ancestry, neither dark nor light but distinctly warm and alive",
-    "complexion": "Finely lined around eyes and mouth from decades of close work and squinting. Skin is clean, slightly weathered, with the particular dryness of someone who works constantly around solvents. Bone structure shows clear Eastern European influence in high cheekbones and defined jawline, softened by fuller lips and slightly broader nose characteristic of Sub-Saharan and North African heritage. No makeup. Expression is habitually neutral—professional distance is a habit worn as easily as her clothes.",
+    "skin_tone": "Rich warm brown with golden and reddish undertones—the result of South Asian base enriched by Sub-Saharan African and Indigenous American ancestry, creating a complexion that is alive and deeply saturated",
+    "complexion": "Finely lined around eyes and mouth from decades of close work and squinting. Skin is clean, slightly weathered, with the particular dryness of someone who works constantly around solvents. Bone structure shows defined cheekbones and strong jawline enriched by fuller lips and slightly broader nose, with subtle East Asian eye geometry. No makeup. Expression is habitually neutral—professional distance is a habit worn as easily as her clothes.",
     "distinguishing_marks": [
       "Web of fine white scar tissue covering the dorsal surface of her right hand and extending partway up her wrist—chemical burn damage from a botched laminate batch approximately twenty years prior, the scars raised slightly and almost geometric in their patterning",
       "Small, precise tattoo on her left inner wrist: a typographic ornament, possibly a printer's mark or dingbat, in black ink, roughly 2cm across"
     ],
-    "visible_augmentations": "Cosmetic iris modifications are immediately obvious and deliberately unsettling—the dual-tone, patterned nature of her eyes draws attention and holds it slightly too long. Subdermal haptic sensors in fingertips are not visibly obvious but create subtle micro-scarring and slightly raised dermal texture on her fingerpads if examined closely. Reading lenses on a beaded chain around her neck (rarely used; primarily theatrical).",
+    "visible_augmentations": "Cosmetic iris modifications are immediately obvious and deliberately unsettling—the dual-tone, patterned nature of her eyes draws attention and holds it slightly too long. Subdermal haptic sensors in fingertips create subtle micro-scarring and slightly raised dermal texture on her fingerpads if examined closely. Reading lenses on a beaded chain around her neck (rarely used; primarily theatrical).",
     "posture_movement": "Economical and precise. She moves without wasted motion, shoulders slightly forward from decades of desk work. When handling objects—paper, documents, tools—her movements become almost ritualistic in their deliberation. Her hands are steady. She does not fidget. Her default expression is professional distance verging on coldness, but her eyes—those unsettling, color-shifting eyes—suggest someone calculating several steps ahead.",
     "clothing_style": "Tier 3 / working professional: well-maintained but worn. Dark, neutral palette (charcoal, deep navy, black). Favors structured, practical pieces: heavy cotton or wool blend shirts; precise tailoring despite the garments' age; a long canvas apron (invariably stained with inks and solvents) worn during work hours. Wears good gloves—leather, supple from oil, often removed but always within reach. A long coat of unknown original color, faded to a uniform grey-brown from solvent exposure and time, worn unbuttoned. Practical footwear, well-maintained. No jewelry except the reading lens chain and, possibly, a small religious token worn discretely beneath her collar."
   },
-  "image_prompt": "Zephyr Zaragoza, compact wiry woman of 158cm, warm medium-brown skin with golden undertones blending Eastern European, North African, and Sub-Saharan heritage. Severe black hair with silver streaks pinned tight in crown braid. Striking cosmetically-modified dual-iris implants shifting between deep amber and pale celadon green in kaleidoscopic patterns—unsettling and calculating gaze. Finely lined face, high Slavic cheekbones softened by fuller lips and broader nose, weathered from decades of detail work. Geometric white scar tissue webs across right hand and wrist, raised and precise. Small typographic tattoo on left inner wrist. Wearing well-worn dark charcoal structured shirt, solvent-stained canvas apron, long faded grey-brown coat, supple leather gloves nearby. Reading lenses on beaded chain around neck. Professional coldness tempered by eyes that suggest someone thinking three steps ahead. Minimalist aesthetic, economical movements. Cyberpunk 2200s workshop setting, cool overhead lighting casting shadows across scarred hands and color-shifting eyes, hyperrealistic detail, introspective mood, film noir undertones --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Pathak, 158cm compact-build mixed heritage woman of South Asian, Sub-Saharan African, Indigenous American, and East Asian descent, rich warm golden-brown skin tone. Finely lined face with defined cheekbones, stronger jawline, fuller lips, subtle eye geometry—continental features blended seamlessly. Natural black hair with silver streaking severely pinned in tight crown braid. Striking cosmetic dual-iris implants shifting between deep amber and pale celadon green—unsettling kaleidoscopic effect. Fine white scar tissue webbing right hand and wrist from chemical burn. Small typographic tattoo on left inner wrist. Wearing faded grey-brown long coat over dark structured shirt, worn canvas apron stained with inks and solvents, leather gloves, practical boots. Reading lens beaded chain around neck. Professional distance expression, calculating gaze. Hands steady and precise. GLMZ Great Lakes Metropolitan Zone setting, overhead workshop lighting casting shadows on her weathered features, color-shifting eyes catching ambient light, solvent-dry skin texture visible, economy of movement, precision and ritual evident in her posture. Noir aesthetic, cool film lighting, slight desaturated color palette with jewel-tone emphasis on her eyes. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 34.6,
-    "Hispanic/Latin American": 17.8,
-    "Sub-Saharan African": 15.7,
-    "North African": 15.4,
-    "Northern European": 11.4,
-    "East Asian": 5.1
+    "South Asian": 35.2,
+    "Sub-Saharan African": 32.1,
+    "Indigenous American": 15.3,
+    "East Asian": 9.1,
+    "Hispanic/Latin American": 5.5,
+    "Northern European": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 1.4
+      },
+      "Pakistani": {
+        "Sindhi": 8.8,
+        "Pashtun": 19.5
+      },
+      "Indian": {
+        "Gujarati": 1.7,
+        "Bengali": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 8.1
+      },
+      "Southern African": {
+        "South African": 1.8
+      },
+      "East African": {
+        "Ugandan": 22.2
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 13.4,
+        "Aymara": 1.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 9.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 5,
+        "Honduran": 0.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 0.1,
+        "Swedish": 1.7
+      },
+      "Germanic": {
+        "German": 1
+      }
+    }
+  }
 }

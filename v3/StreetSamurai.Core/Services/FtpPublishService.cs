@@ -58,27 +58,34 @@ public class FtpPublishService
             onProgress?.Invoke(i + 1, files.Length, fileName);
 
             var success = false;
-            for (int attempt = 0; attempt < 3 && !success; attempt++)
+            var fileBytes = await File.ReadAllBytesAsync(file, ct);
+            var maxAttempts = fileBytes.Length > 1_000_000 ? 5 : 3; // more retries for large files
+
+            for (int attempt = 0; attempt < maxAttempts && !success; attempt++)
             {
                 try
                 {
                     if (attempt > 0)
                     {
-                        await Task.Delay(2000, ct); // Wait between retries
-                        onProgress?.Invoke(i + 1, files.Length, $"{fileName} (retry {attempt})");
+                        var backoff = (int)(1000 * Math.Pow(2, attempt)); // exponential: 2s, 4s, 8s, 16s
+                        await Task.Delay(backoff, ct);
+                        onProgress?.Invoke(i + 1, files.Length, $"{fileName} (retry {attempt}/{maxAttempts - 1})");
                     }
 
                     var uploadUri = $"{baseUri}/{fileName}";
                     var request = CreateRequest(uploadUri, WebRequestMethods.Ftp.UploadFile, credentials);
-                    var fileBytes = await File.ReadAllBytesAsync(file, ct);
+                    // Scale timeout with file size: 30s base + 1s per 100KB
+                    var timeoutMs = 30_000 + (fileBytes.Length / 100);
+                    request.Timeout = Math.Max(timeoutMs, 300_000);
+                    request.ReadWriteTimeout = request.Timeout;
                     request.ContentLength = fileBytes.Length;
 
                     var requestStream = await request.GetRequestStreamAsync();
                     try
                     {
-                        // Write in chunks
+                        // Scale chunk size with file: 32KB for small, 128KB for large
+                        int chunkSize = fileBytes.Length > 500_000 ? 128 * 1024 : 32 * 1024;
                         int offset = 0;
-                        int chunkSize = 32 * 1024;
                         while (offset < fileBytes.Length)
                         {
                             int count = Math.Min(chunkSize, fileBytes.Length - offset);
@@ -97,12 +104,27 @@ public class FtpPublishService
                         using var response = (FtpWebResponse)await request.GetResponseAsync();
                         response.Close();
                     }
-                    catch { /* Response may fail after stream close issue — check file exists instead */ }
+                    catch { /* Response may fail after stream close issue — verify size below */ }
+
+                    // Verify upload by checking remote file size
+                    try
+                    {
+                        var sizeRequest = CreateRequest(uploadUri, WebRequestMethods.Ftp.GetFileSize, credentials);
+                        using var sizeResponse = (FtpWebResponse)await sizeRequest.GetResponseAsync();
+                        var remoteSize = sizeResponse.ContentLength;
+                        sizeResponse.Close();
+                        if (remoteSize >= 0 && remoteSize != fileBytes.Length)
+                        {
+                            Serilog.Log.Warning("FTP size mismatch for {File}: local={Local} remote={Remote}", fileName, fileBytes.Length, remoteSize);
+                            if (attempt < maxAttempts - 1) continue; // retry on size mismatch
+                        }
+                    }
+                    catch { /* Size check not supported by all servers — skip */ }
 
                     success = true;
                     uploaded++;
                 }
-                catch (Exception ex) when (attempt < 2)
+                catch (Exception ex) when (attempt < maxAttempts - 1)
                 {
                     Serilog.Log.Debug("FTP upload attempt {Attempt} failed for {File}: {Msg}", attempt + 1, fileName, ex.Message);
                 }
@@ -110,7 +132,7 @@ public class FtpPublishService
                 {
                     failed++;
                     errors.Add($"{fileName}: {ex.Message}");
-                    Serilog.Log.Warning(ex, "FTP upload failed for {FileName} after 3 attempts", fileName);
+                    Serilog.Log.Warning(ex, "FTP upload failed for {FileName} after {Attempts} attempts", fileName, maxAttempts);
                 }
             }
 

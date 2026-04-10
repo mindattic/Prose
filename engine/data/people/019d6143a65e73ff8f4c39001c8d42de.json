@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65e73ff8f4c39001c8d42de",
   "type": "character",
-  "name": "Alofa Taualagi",
+  "name": "Leszek Nurzhanov",
   "aliases": [
     "The Cartographer",
     "Mudfish",
@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "Old Harbor, occasionally The Shelf, near Michigan Ave and Roosevelt",
-  "description": "Mwangi is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Mwangi survived by learning what the city planners never published: the actual geography of GLMZ, the tunnels under The Shelf that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
+  "description": "Leszek Nurzhanov is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Leszek Nurzhanov survived by learning what the city planners never published: the actual geography of GLMZ, the tunnels under The Shelf that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -228,7 +228,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,44 +246,24 @@
   ],
   "related_entities": [
     "The Meridian Core",
-    "Tibor Osei-Svanstrom",
+    "Frost Boudiaf",
     "Meridian Core",
-    "GLMZ",
     "The Circuit",
     "The Shelf",
+    "The Blind",
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Stratum",
+    "Circuit",
     "Witness",
     "Silver",
     "Copper",
+    "Harbor Fish Shack",
     "Arcturus KS-7 'Nursery'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Emeka Johansson-Orozco",
-    "Iowan Behemoth — 'Palisade'",
-    "Isadora Mwangi-Thorvaldsen",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Maïmouna Drăghici-Abara",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Obafemi Szczypiński-Lautoa",
-    "Old Harbor",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Pikasso Wemba-Þórðarson",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA TC-3 'Crucible'",
-    "Tabula",
-    "The Blind",
-    "The Ledger",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VSK-8 'Rapier'"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Mixed Pacific Islander, South Asian, Hispanic/Latin American, and Sub-Saharan African ancestry—a striking blend resulting in warm-toned deep brown skin with subtle golden and reddish undertones. Features reflect this global mix: broad facial structure with defined cheekbones, full lips, and a nose with both West African and South Asian characteristics. The overall effect is powerfully cosmopolitan, embodying the Ubiquitous Diaspora.",
+    "heritage": "Central Asian (29.5%), Eastern European (20.8%), Sub-Saharan African (18.4%), North African (16.0%), and Northern European (15.3%) ancestry creates a striking multifaceted phenotype. The Central Asian heritage dominates facial structure with high, prominent cheekbones and angular features. Sub-Saharan and North African ancestry contribute to fuller lips and warm undertones. Eastern European and Northern European heritage add definition to the jawline and eye shape. The overall effect is powerfully cosmopolitan—a face that embodies the Ubiquitous Diaspora without clear singular origin.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and densely muscled through manual labor, tapering slightly at the waist—the build of someone accustomed to precise, sustained physical work rather than explosiveness",
@@ -291,8 +271,8 @@
     "hair_style": "Close-cropped, neat, shaped by habit rather than vanity",
     "hair_length": "Short",
     "eye_color": "Dark brown (natural); left eye contains subtle amber-tinted ocular overlay",
-    "skin_tone": "Deep warm brown with golden and reddish undertones from the blend of Pacific Islander, South Asian, Hispanic/Latin American, and Sub-Saharan African heritage, weathered by constant outdoor exposure in the Harbor",
-    "complexion": "Weathered but maintained—lines around the eyes from constant squinting at distances and reading maps, skin creased by concentration; no facial hair, clean-shaven daily. Facial structure shows the broad cheekbones and defined features characteristic of mixed Pacific Islander and South Asian heritage.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones—the result of Central Asian warmth mixed with Sub-Saharan and North African melanin, brightened by Eastern European and Northern European ancestry. Weathered by constant outdoor exposure, showing deep creasing from years of concentrated work.",
+    "complexion": "Weathered but maintained—lines radiating from the corners of dark brown eyes from constant squinting at distances and reading maps, deep concentration creases across the forehead. High, defined cheekbones with Central Asian structure. Fuller lips characteristic of Sub-Saharan and North African heritage. Moderate-width nose reflecting the blend of ancestry. Angular jaw from Eastern European heritage. No facial hair, clean-shaven daily. Skin shows the patina of constant outdoor work but careful maintenance.",
     "distinguishing_marks": [
       "Thin white scar running from left temple down to jawline, approximately 8cm, origin unclear but old",
       "Callused palms and fingers on right hand, particularly pronounced on index and middle fingers from years of drawing and writing",
@@ -302,15 +282,64 @@
     "posture_movement": "Stillness is his default state—when standing, weight centered, shoulders back but not rigid. Eyes in constant, unconscious motion even when his body is motionless, cataloguing angles and distances. When moving, economical: no wasted motion, footfalls deliberate and quiet. Hands remain occupied—adjusting clothing, touching wall surfaces as he passes, checking pocket contents through fabric. When engaged in conversation, he maintains direct eye contact but his gaze occasionally drifts to measure doorways, sightlines, exit proximity.",
     "clothing_style": "Tier 4 working-class utility: layered thermals in muted greys and blacks beneath a faded orange dockworker's vest (genuine vintage, not reproduced) with dozens of hand-stitched pockets, each one containing something specific—tools, samples, rolled papers. Lightweight cargo trousers in weathered grey canvas, reinforced at knees and thighs. Heavy boots, practical rather than fashionable, resoled multiple times. A long fieldcoat in dark green canvas, treated for water resistance, multiple interior pockets. No visible branding or corpo affiliations; clothing chosen for function and repairability. Everything shows wear but nothing shows neglect."
   },
-  "image_prompt": "Cyberpunk 2226, Alofa Taualagi, 188cm tall, densely muscled dockworker build. Deep warm brown skin with golden and reddish undertones blending Pacific Islander, South Asian, Hispanic, and African heritage. Dark brown eyes with subtle amber ocular overlay in left eye. Black hair with silver at temples, close-cropped. Weathered face with concentration lines, thin white scar from temple to jawline. Left arm industrial prosthetic from elbow down, gunmetal grey and oxidized copper plating, deliberately unupgraded. Right hand with prominent calluses. Wearing layered grey and black thermals, faded orange vintage dockworker's vest with hand-stitched pockets, weathered grey canvas cargo trousers, heavy practical boots, long dark green canvas fieldcoat. Direct gaze, economical posture, hands checking pocket contents. Harbor setting, neon-tinted industrial lighting, moody atmospheric depth. Cyberpunk working-class aesthetic, functional fashion, worn but maintained gear. --ar 2:3 --v 6",
+  "image_prompt": "Leszek Nurzhanov, 188cm tall, weathered and muscular, GLMZ GLMZ. Warm deep brown skin with golden undertones reflecting Central Asian, Eastern European, Sub-Saharan African, North African, and Northern European heritage. High angular cheekbones, fuller lips, dark eyes with amber ocular overlay glinting in light. Black hair with silver at temples, close-cropped. Thin 8cm scar running left temple to jawline. Left arm salvaged prosthetic hardware—gunmetal grey and oxidized copper from elbow down, weathered industrial aesthetic. Wearing faded orange vintage dockworker's vest over grey thermals, weathered grey cargo trousers, practical heavy boots. Long dark green canvas fieldcoat. Subdermal data grid scars visible on right forearm. Posture economical and alert—weight centered, eyes constantly measuring distances and sightlines. Urban industrial setting, cool neon and concrete ambiance, natural weathered lighting, contemplative mood, hands near pocket or wall surface, measuring everything. Neo-noir utilitarian aesthetic, no corpo branding. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.5,
-    "Pacific Islander": 26.1,
-    "South Asian": 22.5,
-    "Sub-Saharan African": 20.9
+    "Central Asian": 29.5,
+    "Eastern European": 20.8,
+    "Sub-Saharan African": 18.4,
+    "North African": 16,
+    "Northern European": 15.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 29.5
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 5.3,
+        "Czech": 1.1
+      },
+      "Slavic East": {
+        "Belarusian": 11.4
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 4.5,
+        "Zimbabwean": 1.8
+      },
+      "East African": {
+        "Rwandan": 3.2,
+        "Ethiopian": 1.1
+      },
+      "Central African": {
+        "Congolese": 3.2,
+        "Cameroonian": 4.6
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Algerian": 2.7,
+        "Mauritanian": 7.7
+      },
+      "Amazigh": {
+        "Berber": 5.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 13.3,
+        "Welsh": 2
+      }
+    }
+  }
 }

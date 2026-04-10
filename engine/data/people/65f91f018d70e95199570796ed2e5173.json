@@ -1,13 +1,13 @@
 {
   "id": "65f91f018d70e95199570796ed2e5173",
-  "name": "Kalani Matai",
+  "name": "Siddharth Deshpande",
   "type": "character",
   "aliases": [
     "The Hivemind",
     "Crowd"
   ],
   "role": "Private Investigator",
-  "description": "Naima Orlov-Twumasi is either the future of private investigation or an ethical catastrophe in progress, depending on who you ask. She built MeridianEyes, a mesh-based platform that crowdsources investigative work to a network of over 30,000 gig participants across all five tiers of GLMZ. When a case comes in, she breaks it into hundreds of tiny, anonymized tasks — confirm a sighting, photograph a location, check a public record, note an anomaly — and distributes them to participants who earn micro-bounties for completing them.\n\nThe results are staggering. She solves cases faster than any individual investigator, covers more ground than any surveillance system, and generates more data points than any corporate intelligence operation. Her missing-persons recovery time averages eleven hours. Her platform has been used for everything from finding lost pets to tracking corporate fugitives, and it processes over 50,000 micro-tasks per week.\n\nThe ethical questions are equally staggering. MeridianEyes turns every participant into an unwitting surveillance node. The platform's anonymization protocols mean participants don't know what case they're contributing to or who benefits from their observations. Privacy advocates have called it 'distributed totalitarianism.' Naima argues that every participant is voluntary, every task is legal, and the platform includes safeguards against misuse. She's mostly right. The 'mostly' keeps her up at night, though she'd never admit it.",
+  "description": "Siddharth Deshpande is either the future of private investigation or an ethical catastrophe in progress, depending on who you ask. She built MeridianEyes, a mesh-based platform that crowdsources investigative work to a network of over 30,000 gig participants across all five tiers of GLMZ. When a case comes in, she breaks it into hundreds of tiny, anonymized tasks — confirm a sighting, photograph a location, check a public record, note an anomaly — and distributes them to participants who earn micro-bounties for completing them.\n\nThe results are staggering. She solves cases faster than any individual investigator, covers more ground than any surveillance system, and generates more data points than any corporate intelligence operation. Her missing-persons recovery time averages eleven hours. Her platform has been used for everything from finding lost pets to tracking corporate fugitives, and it processes over 50,000 micro-tasks per week.\n\nThe ethical questions are equally staggering. MeridianEyes turns every participant into an unwitting surveillance node. The platform's anonymization protocols mean participants don't know what case they're contributing to or who benefits from their observations. Privacy advocates have called it 'distributed totalitarianism.' Naima argues that every participant is voluntary, every task is legal, and the platform includes safeguards against misuse. She's mostly right. The 'mostly' keeps her up at night, though she'd never admit it.",
   "affiliation": "Operates 'MeridianEyes' — a mesh-based platform that crowdsources investigative work to thousands of gig participants",
   "tier": "Tier 2",
   "location": "A co-working space in Burnside Corridor that she treats as her command center — multiple screens, standing desk, energy drinks, near Milwaukee and North Ave",
@@ -68,21 +68,14 @@
     "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
   ],
   "related_entities": [
-    "GLMZ",
     "Burnside Pocket",
-    "The Milwaukee Core",
-    "Deniz Salazar-Quansah",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ",
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander dominant (47.6%) with significant Middle Eastern (25.0%), Hispanic/Latin American (13.5%), Eastern European (8.8%), and Sub-Saharan African (5.1%) ancestry. This creates a striking polychromatic blend: warm bronze-golden undertones from Pacific Islander heritage mixed with olive and amber warmth from Middle Eastern lineage, enriched by the depth of African and Latin American ancestry, with subtle cool undertones from Eastern European genetics.",
+    "heritage": "South Asian dominant (49.1%) with significant Southeast Asian (28.8%), East Asian (17.1%), and Sub-Saharan African (5.0%) ancestry. This creates a rich, complex blend: warm medium-brown base tone from South Asian heritage with golden and amber undertones, layered with the warmer ochre tones of Southeast Asian genetics, brightened by the luminosity of East Asian ancestry, and deepened by the warm richness of African heritage. The result is a polychromatic golden-bronze complexion with subtle warm undertones throughout.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and angular, tense musculature from long hours at standing desks and stress. Shoulders slightly hunched forward from habitual posture over interfaces.",
@@ -90,8 +83,8 @@
     "hair_style": "Pulled back in a tight, utilitarian braid; a few strands always escaping near her temples",
     "hair_length": "Long",
     "eye_color": "Hazel with flecks of amber",
-    "skin_tone": "Warm golden-bronze with olive undertones, deeper and richer than medium brown. Sun-kissed warmth characteristic of Pacific Islander heritage, layered with amber and ochre notes from Middle Eastern and Latin American ancestry.",
-    "complexion": "Strong, prominent cheekbones with defined jawline reflecting Pacific Islander structure. Warm, luminous skin beneath fatigue — faint shadows under eyes from irregular sleep patterns. A thin scar runs along her left temple to ear (old head trauma, partially covered by hair). Minimal makeup, functional grooming.",
+    "skin_tone": "Warm golden-bronze medium brown with amber undertones, reflecting the blended warmth of South Asian, Southeast Asian, and East Asian heritage enriched by Sub-Saharan African depth. Sun-kissed luminosity characteristic of tropical ancestry regions.",
+    "complexion": "Strong, prominent cheekbones with defined jawline reflecting South and Southeast Asian bone structure, with subtle East Asian eye shape characteristics and warmth from African ancestry. Warm, luminous skin beneath fatigue — faint shadows under eyes from irregular sleep patterns. A thin scar runs along her left temple to ear (old head trauma, partially covered by hair). Minimal makeup, functional grooming.",
     "distinguishing_marks": [
       "Linear scar along left temple extending to ear, approximately 8cm, pale and well-healed",
       "Small burn mark on right forearm (inside wrist), circular, diameter ~1.5cm, from old neural interface calibration accident",
@@ -101,13 +94,47 @@
     "posture_movement": "Economical, restless. Hands frequently gesture as if manipulating invisible interfaces mid-air (haptic muscle memory). Eyes dart constantly, scanning environments as if cataloging details. Sits with spine curved, shoulders tense. Walks with purpose, minimal wasted motion.",
     "clothing_style": "Tier 3-4 practical: fitted black Helios-brand tactical jacket with asymmetrical pockets (usually over a plain grey or charcoal compression shirt). Dark utility cargo pants with reinforced knees and thigh pockets. Matte black steel-toed boots, worn but maintained. Minimalist silver watch (functional, not decorative) on right wrist. No jewelry. Favors dark, unreflective fabrics. Occasionally wears a faded denim jacket over everything — a relic from before MeridianEyes success."
   },
-  "image_prompt": "Kalani Matai, 2226 cyberpunk hacker, golden-bronze Pacific Islander skin with olive undertones, warm amber-flecked hazel eyes. Long dark brown hair with auburn hints pulled back in utilitarian braid. Lean 172cm frame, tense posture hunched over haptic interface. Sharp cheekbones, defined jawline, fatigue shadows under eyes. Thin pale scar temple-to-ear, faint target tattoo inside left wrist, subtle LED ring around left pupil visible in light. Wearing fitted black Helios tactical jacket over grey compression shirt, dark utility cargo pants, matte black steel-toed boots. Hands mid-gesture manipulating invisible AR interface. Cyberpunk GLMZ apartment backdrop, cool LED light casting shadows across determined face. Restless, calculating expression, dark unreflective aesthetic. Professional data runner vibe, minimal jewelry, silver functional watch. Neural port barely visible at nape. Moody atmospheric lighting, cinematic depth. --ar 2:3 --v 6",
+  "image_prompt": "Siddharth Deshpande, androgynous figure with warm golden-bronze skin tone reflecting South Asian, Southeast Asian, East Asian, and African heritage. 172cm tall, lean angular build. Dark brown hair with auburn undertones pulled back in tight utilitarian braid, escaping wisps at temples. Hazel eyes with amber flecks, left pupil faintly rimmed with LED augmentation. Prominent cheekbones and defined jawline. Thin pale scar along left temple to ear. Dressed in fitted black Helios tactical jacket over grey compression shirt, dark utility cargo pants, matte black steel-toed boots. Minimalist silver functional watch on right wrist. GLMZ Great Lakes Metropolitan Zone setting, neon-lit environment. Tense posture, hunched shoulders, hands mid-gesture manipulating invisible haptic interfaces. Restless energy, eyes scanning surroundings. Fatigue shadows under eyes. Functional grooming, no jewelry, unreflective dark fabrics. Atmospheric lighting emphasizing warm skin undertones against cool cyber-environment. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 47.6,
-    "Middle Eastern": 25.0,
-    "Hispanic/Latin American": 13.5,
-    "Eastern European": 8.8,
-    "Sub-Saharan African": 5.1
+    "South Asian": 49.1,
+    "Southeast Asian": 28.8,
+    "East Asian": 17.1,
+    "Sub-Saharan African": 5
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 39.2
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 5.8,
+        "Baloch": 4.1
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 28.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6.4
+      },
+      "Chinese": {
+        "Sichuanese": 4.7
+      },
+      "Korean": {
+        "Korean": 6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 5
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A co-working space in Burnside Corridor that she treats as her command center"
+  }
 }

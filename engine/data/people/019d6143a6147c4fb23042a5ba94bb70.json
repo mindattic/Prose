@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6147c4fb23042a5ba94bb70",
   "type": "character",
-  "name": "Vega Boateng-Kovalenko",
+  "name": "Vega Ly-Kowalczyk",
   "aliases": [
     "The Handshake",
     "QT-3",
@@ -14,7 +14,7 @@
   "age": 49,
   "status": "active",
   "location": "The Circuit — maintains a modest apartment with no personal effects and exceptional sight lines, near Damen and Armitage",
-  "description": "Felix Drum is the Quiet Table's hands in the physical world. When information needs to be collected in person, when dead drops need servicing, when a meeting requires the implicit suggestion that non-cooperation would be unwise — Felix handles it. He is not muscle in the traditional sense. He is presence. The kind of calm, attentive, well-dressed man who makes you want to cooperate because the alternative seems profoundly unappealing without him ever specifying why.\n\nBefore the Quiet Table, Felix spent twenty years in private security — first for corporate executives, then for politicians, then for people who existed in the space between those categories. He was very good at keeping people alive. He was less good at caring about whether they deserved to be alive. The moral vacancy started small and grew until he walked away from a client who was using his protection to facilitate human trafficking. He reported the client to the authorities. Nothing happened. He reported the client to someone else. Something happened. That was the last year of his legitimate career.\n\nFelix is average height, solidly built without being imposing, with the kind of face that belongs in a crowd — pleasant, forgettable, professional. He keeps his hair short, his clothes clean, and his posture perfect. The only augmentation anyone notices is a slight heaviness to his handshake — the reinforced bones in his hands and forearms are subtle but present. Everything else is hidden, maintained, and ready.",
+  "description": "Vega Ly-Kowalczyk is the Quiet Table's hands in the physical world. When information needs to be collected in person, when dead drops need servicing, when a meeting requires the implicit suggestion that non-cooperation would be unwise — Felix handles it. He is not muscle in the traditional sense. He is presence. The kind of calm, attentive, well-dressed man who makes you want to cooperate because the alternative seems profoundly unappealing without him ever specifying why.\n\nBefore the Quiet Table, Felix spent twenty years in private security — first for corporate executives, then for politicians, then for people who existed in the space between those categories. He was very good at keeping people alive. He was less good at caring about whether they deserved to be alive. The moral vacancy started small and grew until he walked away from a client who was using his protection to facilitate human trafficking. He reported the client to the authorities. Nothing happened. He reported the client to someone else. Something happened. That was the last year of his legitimate career.\n\nFelix is average height, solidly built without being imposing, with the kind of face that belongs in a crowd — pleasant, forgettable, professional. He keeps his hair short, his clothes clean, and his posture perfect. The only augmentation anyone notices is a slight heaviness to his handshake — the reinforced bones in his hands and forearms are subtle but present. Everything else is hidden, maintained, and ready.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -179,7 +179,7 @@
     "Social Chameleon": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -198,37 +198,16 @@
   "related_entities": [
     "The Circuit",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+    "Circuit",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pure Hand",
-    "Glass",
-    "Bioacoustic Communication Membrane",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Kyle Ellen Corbin-Vasik",
-    "Lazarus LX-2 'Lab Rat'",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Mika Sorel",
-    "Noir Dining",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Cigarette' Pen Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA TX-12 'Chorus'",
-    "Tessera Corponation",
-    "Tessera Networked SMG TNSM-3 'Chorus'",
-    "The Burden Clause",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "Vantablack VS-3 'Skin Job'",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Felix Drum",
+    "Glass"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant Hispanic/Latin American and Eastern European ancestry, creating a striking phenotype. Rich melanin undertones base his complexion, with warm undertones from Hispanic heritage and subtle Eastern European influence visible in facial structure. A rare genetic combination that reads as deliberately ambiguous — difficult to place at first glance, which suits his profession.",
+    "heritage": "Complex multicultural blend: Southeast Asian (29.2%), Hispanic/Latin American (19.0%), Northern European (17.4%), Eastern European (16.2%), Sub-Saharan African (11.3%), and Indigenous American (6.9%). The combination creates subtle phenotypic layering — warm golden-brown undertones from Southeast Asian ancestry blend with olive richness from Hispanic heritage, anchored by deeper melanin from Sub-Saharan African genetics. Northern and Eastern European ancestry contributes defined cheekbones and angular jaw structure. Indigenous American ancestry adds subtle broadness to facial planes. The result is genuinely difficult to categorize at first glance — deliberately ambiguous, which suits his profession.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Solidly compact without visible bulk — the build of someone who trains for function rather than appearance. Broad shoulders, economical muscle distribution, minimal body fat. Moves like a person accustomed to carrying weight efficiently.",
@@ -236,8 +215,8 @@
     "hair_style": "Close-cropped, military precision, no styling product",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber undertones",
-    "skin_tone": "Rich warm brown — deeper base from Sub-Saharan ancestry with olive-warm undertones from Hispanic and Middle Eastern heritage. Weathered by Great Lakes climate exposure but with the underlying luminosity that comes from melanin-rich skin.",
-    "complexion": "Clean-shaven, minimal scarring on the face. Facial structure shows the broader nose and fuller lips characteristic of Sub-Saharan ancestry, with cheekbones and jaw definition influenced by Eastern European heritage. Expression naturally neutral. The kind of face that does not arrest attention — this is intentional and cultivated.",
+    "skin_tone": "Warm golden-brown with olive undertones — a complex blend where Southeast Asian warmth meets Hispanic depth and Sub-Saharan melanin richness. The base is medium-dark with subtle luminosity characteristic of melanin-rich skin. Weathered by Great Lakes climate exposure but retains underlying radiance.",
+    "complexion": "Clean-shaven, minimal scarring on the face. Facial structure shows balanced features from mixed ancestry: moderately broad nose and full lips from Sub-Saharan and Hispanic heritage, high defined cheekbones from Eastern European genetics, slightly broader face planes from Indigenous American ancestry, subtle eye shape influence from Southeast Asian genetics. Expression naturally neutral. The kind of face that does not arrest attention — this is intentional and cultivated.",
     "distinguishing_marks": [
       "Thin white scar on the left knuckle from a decade-old surveillance job in Detroit.",
       "Callusing across both hands consistent with daily combat training and reinforced skeletal work.",
@@ -247,15 +226,70 @@
     "posture_movement": "Upright, economical gait, never hurried. Stands with weight distributed evenly, hands visible and relaxed. Eyes move constantly but without apparent anxiety — threat assessment is passive, automatic. Enters rooms slowly, positions himself with clear sight lines. Never fidgets. Never raises his voice. The physical language is: I have considered all outcomes.",
     "clothing_style": "Tier 3 professional — clean, well-maintained, deliberately forgettable. Dark slacks or charcoal jeans. Neutral-toned button-up shirts (cotton, never synthetic — easier to move in, easier to clean). A grey wool coat for outdoor work, no logos, no augmentation bling. Shoes are quality leather boots, broken in, maintained. Everything is functional, nothing is fashionable. The aesthetic communicates: I am someone you can trust to handle the unglamorous work."
   },
-  "image_prompt": "Vega Boateng-Kovalenko, a 178cm man of rich warm brown complexion with Sub-Saharan and Eastern European features, graying dark brown close-cropped hair, deep brown eyes with amber undertones. Clean-shaven, calm neutral expression. Wearing charcoal jeans and a neutral button-up shirt under a grey wool coat, quality leather boots. Standing with perfect postural control, weight balanced, hands relaxed and visible, eyes alert but passive. Faded white scar on left knuckle, subtle burn mark on right wrist visible. Subcutaneous augmentations only — no visible chrome. Great Lakes urban environment, cyberpunk 2226, cool daylight or neon interior lighting, moody atmospheric tone. Professional fixer aesthetic, the physical language of calculated readiness. --ar 2:3 --v 6",
+  "image_prompt": "Vega Ly-Kowalczyk, 178cm tall, solidly compact mixed-heritage male with warm golden-brown skin with olive undertones and deep melanin richness. Dark brown hair graying at temples, close-cropped military style. Deep brown eyes with amber undertones. High defined cheekbones, moderately broad nose, full lips, slightly broad face planes — perfectly balanced multicultural phenotype. Clean-shaven. Subtle hand callusing and faded burn mark on inner wrist. Wearing charcoal jeans, neutral-toned cotton button-up shirt, grey wool coat, quality leather boots. Standing upright with economical posture, hands visible and relaxed. Expression naturally neutral, eyes alert but passive. Great Lakes Metropolitan Zone office interior, cool fluorescent and ambient neon lighting, GLMZ, professional noir atmosphere, the physical language communicates calculated competence and trustworthy capability. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 51.9,
-    "Hispanic/Latin American": 22.0,
-    "Eastern European": 20.4,
-    "Middle Eastern": 5.7
+    "Southeast Asian": 29.2,
+    "Hispanic/Latin American": 19,
+    "Northern European": 17.4,
+    "Eastern European": 16.2,
+    "Sub-Saharan African": 11.3,
+    "Indigenous American": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 29.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 2.9
+      },
+      "Caribbean": {
+        "Dominican": 3.8
+      },
+      "South American": {
+        "Colombian": 5.2,
+        "Argentine": 7.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 13.4
+      },
+      "Germanic": {
+        "Swiss German": 4
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 8.8
+      },
+      "Slavic West": {
+        "Polish": 3.9,
+        "Sorbian": 3.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 5.8
+      },
+      "Central African": {
+        "Gabonese": 5.5
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Mapuche": 4,
+        "Quechua": 2
+      },
+      "Great Lakes Nations": {
+        "Menominee": 0.9
+      }
+    }
+  }
 }

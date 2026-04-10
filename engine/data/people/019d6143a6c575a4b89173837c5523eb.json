@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c575a4b89173837c5523eb",
   "type": "character",
-  "name": "Rafael Haraldsen",
+  "name": "Marek Szabó",
   "aliases": [
     "Sao",
     "Saoirse the Terrible (self-applied, ironic)"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Norwood Quiet — the community center on the third floor of the Meridian Commons building, and their own apartment two blocks north, near North Ave and Milwaukee",
-  "description": "Saoirse Gwamba-Eriksdóttir has the posture of someone who spent three decades making themselves large enough to fill a classroom, and they have never lost it despite retirement. They are lean and angular, with the golden-brown skin of their Malawian and Icelandic inheritance, sharp cheekbones, and close-cropped hair they dye a warm amber because they have earned the right to do whatever they like with their hair. Their eyes are dark and quick-moving, always tracking who is paying attention and who has gone somewhere else in their head. They have bioluminescent geneware — a soft teal glow in the skin along their jawline and collarbones — which in their classroom days had the practical benefit of making them extremely visible when the lights went out during power fluctuations, and which in retirement they simply enjoy.\n\nThey are the kind of teacher who is still teaching whether they are in a classroom or not, and they are constitutionally incapable of watching someone struggle with a problem they could help solve. This makes them exhausting and irreplaceable in equal measure. They took on the Norwood Quiet Community Council chair position because no one else would and have been trying to resign for two years. They have opinions about pedagogy, about corponation educational sponsorship programs, about how children are being failed by the system, and they will share all of these opinions clearly and with supporting examples.",
+  "description": "Marek Szabó has the posture of someone who spent three decades making themselves large enough to fill a classroom, and they have never lost it despite retirement. They are lean and angular, with the golden-brown skin of their Malawian and Icelandic inheritance, sharp cheekbones, and close-cropped hair they dye a warm amber because they have earned the right to do whatever they like with their hair. Their eyes are dark and quick-moving, always tracking who is paying attention and who has gone somewhere else in their head. They have bioluminescent geneware — a soft teal glow in the skin along their jawline and collarbones — which in their classroom days had the practical benefit of making them extremely visible when the lights went out during power fluctuations, and which in retirement they simply enjoy.\n\nThey are the kind of teacher who is still teaching whether they are in a classroom or not, and they are constitutionally incapable of watching someone struggle with a problem they could help solve. This makes them exhausting and irreplaceable in equal measure. They took on the Norwood Quiet Community Council chair position because no one else would and have been trying to resign for two years. They have opinions about pedagogy, about corponation educational sponsorship programs, about how children are being failed by the system, and they will share all of these opinions clearly and with supporting examples.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -160,7 +160,7 @@
     "Dreamer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,58 +176,107 @@
     "Norwood Quiet",
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Compass Rose",
-    "Nightlight",
-    "The Milwaukee Core",
-    "Acoustic Marrow Shear Rifle AMSR-6 'Tutor'",
-    "Alper Lebedev-Tutu",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Iowan Behemoth — 'Palisade'",
-    "Kang Athletics KA-900 'Sensei'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "MERIDIAN",
-    "Noir Dining",
-    "Osvaldo Mensah-Kovalenko",
-    "Solveig Tambadou-Kereselidze",
-    "The Open Syllabus",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Washburn Commons"
+    "Nightlight"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Cosmopolitan blend reflecting 42% Hispanic/Latin American, 31% Northern European, 22% Sub-Saharan African, and 4% North African ancestry. Features a striking combination of warm Latin complexion with Northern European bone structure and Sub-Saharan African facial proportions, creating a uniquely nuanced appearance.",
+    "heritage": "Genuine Ubiquitous Diaspora synthesis: Eastern European (28.6%), Northern European (22%), South Asian (18.8%), Hispanic/Latin American (17.7%), Southeast Asian (9.8%), Indigenous American (3.1%). The combination produces a distinctly cosmopolitan phenotype—Eastern European bone structure and cheekbones softened by South and Southeast Asian proportions, Northern European baseline warmed by South Asian and Latin American undertones, with subtle Indigenous American influence in facial width and eye shape. A face that belongs equally to no single region and unmistakably to the post-diaspora world.",
     "height_cm": 173,
     "weight_kg": 61,
-    "build": "Lean and angular with a commanding presence; decades of classroom posture have made them naturally expansive despite their thin frame. Minimal muscle definition but wire-taut core and shoulders squared from standing.",
+    "build": "Lean and angular with commanding presence; decades of classroom posture have made them naturally expansive despite thin frame. Minimal muscle definition but wire-taut core and shoulders squared from standing.",
     "hair_color": "Amber-dyed (natural color darkened to gray-brown underneath)",
     "hair_style": "Close-cropped, neat, deliberately maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown, perpetually alert",
-    "skin_tone": "Warm medium-brown complexion with golden undertones, reflecting the rich blend of Latin American warmth, Sub-Saharan depth, and Northern European undertones — neither light nor dark but a harmonious mid-range that catches light distinctly.",
-    "complexion": "Prominent cheekbones with gentle width across the face reflecting Sub-Saharan ancestry; fine, defined facial structure with balanced proportions. Minimal wrinkling despite age — skin well-maintained. Dark circles under eyes suggest habit of late-night reading and correspondence. Expression naturally skeptical and observant.",
+    "skin_tone": "Warm medium complexion with golden-honey luminosity—a balanced synthesis of South Asian warmth, Eastern European undertones, Latin American richness, Southeast Asian depth, and Northern European baseline. Catches light with distinct warm radiance across cheekbones and forehead.",
+    "complexion": "Moderate, balanced cheekbones reflecting South and Southeast Asian ancestry combined with Eastern European structure; facial width and proportions show harmonious blend across all ancestry groups rather than dominance of any single tradition. Softer overall proportion than pure Northern European, with slight fullness in lower face suggesting South Asian heritage. Minimal wrinkling despite age—skin well-maintained. Dark circles under eyes from habit of late-night reading. Expression naturally skeptical and observant.",
     "distinguishing_marks": [
       "Soft bioluminescent teal glow running along jawline from ear to chin, subtle in daylight but luminous in low-light conditions",
-      "Matching teal bioluminescent line tracing collarbones and upper sternum — visible when wearing open-necked clothing",
+      "Matching teal bioluminescent line tracing collarbones and upper sternum—visible when wearing open-necked clothing",
       "Small circular scar on left temple, approximately 1cm diameter, consistent with implant insertion point (voice amplification implant installed ~40 years ago)"
     ],
-    "visible_augmentations": "Bioluminescent geneware traces (teal, jaw and collarbones — glows softly in darkness). Voice amplification implant scar barely visible at left temple. Cognitive support mesh is subcutaneous and invisible. Minor tech accessibility aural implant behind left ear (for municipal vidlink accessibility).",
-    "posture_movement": "Stands and walks with deliberate verticality — shoulders back, chin slightly elevated, as if perpetually addressing a room. Moves with economical precision. Hands gesture while speaking, fingers quick and expressive. Makes direct eye contact habitually. Sits forward on chairs rather than back. Movement patterns suggest someone still instinctively 'on stage' despite retirement.",
-    "clothing_style": "Tier 3-4 working-professional aesthetic, carried into retirement with no irony. Favors well-fitted, durable clothing: linen and cotton blends, earth and warm tones (rust, cream, muted gold). Typically wears: tailored button-up shirts (often with sleeves rolled to show jawline augmentation), dark practical trousers or midi skirts, sensible boots or slip-ons with good support. Cardigan or structured jacket for council meetings. Minimal jewelry — a simple watch with readable face, one silver ring. No corporate logos or status wear. Reading glasses on a thin cord. Crossbody bag with worn canvas fabric, stuffed with papers and teaching materials."
+    "visible_augmentations": "Bioluminescent geneware traces (teal, jaw and collarbones—glows softly in darkness). Voice amplification implant scar barely visible at left temple. Cognitive support mesh is subcutaneous and invisible. Minor tech accessibility aural implant behind left ear (for municipal vidlink accessibility).",
+    "posture_movement": "Stands and walks with deliberate verticality—shoulders back, chin slightly elevated, as if perpetually addressing a room. Moves with economical precision. Hands gesture while speaking, fingers quick and expressive. Makes direct eye contact habitually. Sits forward on chairs rather than back. Movement patterns suggest someone still instinctively 'on stage' despite retirement.",
+    "clothing_style": "Tier 3-4 working-professional aesthetic, carried into retirement with no irony. Favors well-fitted, durable clothing: linen and cotton blends, earth and warm tones (rust, cream, muted gold). Typically wears: tailored button-up shirts (often with sleeves rolled to show jawline augmentation), dark practical trousers or midi skirts, sensible boots or slip-ons with good support. Cardigan or structured jacket for council meetings. Minimal jewelry—a simple watch with readable face, one silver ring. No corporate logos or status wear. Reading glasses on thin cord. Crossbody bag with worn canvas fabric, stuffed with papers and teaching materials."
   },
-  "image_prompt": "Professional-aged Rafael Haraldsen, 173cm lean frame with warm medium-brown skin and golden undertones, reflecting Latin American, Northern European, and African heritage blend. Close-cropped amber-dyed hair with gray-brown roots, sharp cheekbones, alert dark brown eyes with subtle dark circles. Subtle teal bioluminescent glow tracing jawline and collarbones (visible in soft light). Wearing rolled-sleeve tailored rust-colored linen shirt showing jawline glow, dark practical trousers, sensible boots. Standing with deliberate upright posture, shoulders squared, chin slightly elevated. Faint 1cm circular scar at left temple from implant. Crossbody canvas bag. Reading glasses on cord. Expression observant and skeptical. Cyberpunk 2226 Great Lakes Metropolitan Zone interior, warm ambient lighting highlighting skin tone and subtle bioluminescence, neo-professional aesthetic, scholarly atmosphere, age 60s with preserved vitality. --ar 2:3 --v 6",
+  "image_prompt": "Marek Szabó, 173cm lean angular figure with commanding posture, standing with shoulders squared and chin elevated. Warm medium skin tone with golden-honey luminosity blending Eastern European, Northern European, South Asian, Hispanic, Southeast Asian, and Indigenous American heritage—balanced facial proportions with moderate cheekbones and harmonious feature synthesis. Short amber-dyed hair with gray-brown undertones, dark brown alert eyes, natural skeptical expression. Dark circles under eyes. Soft bioluminescent teal glow tracing jawline and collarbones, subtle in daylight but luminous in shadows. Small circular implant scar at left temple. Wearing well-fitted tailored rust-toned linen shirt with sleeves rolled, dark practical trousers, sensible boots. Simple silver watch, reading glasses on thin cord. Crossbody canvas bag filled with papers. Standing in warm-lit interior space, perhaps a library or council chamber, hands gesturing expressively mid-speech. GLMZ Great Lakes Metropolitan Zone aesthetic. Late afternoon golden light catching skin tone and subtle bioluminescent traces. Mood: intellectually engaged, direct, observant. Professional but lived-in appearance. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 42.3,
-    "Northern European": 31.2,
-    "Sub-Saharan African": 22.1,
-    "North African": 4.4
+    "Eastern European": 28.6,
+    "Northern European": 22,
+    "South Asian": 18.8,
+    "Hispanic/Latin American": 17.7,
+    "Southeast Asian": 9.8,
+    "Indigenous American": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 11.8,
+        "Romanian": 9.9
+      },
+      "Slavic East": {
+        "Ukrainian": 2.7,
+        "Russian": 4.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 3.1,
+        "English": 9.9
+      },
+      "Germanic": {
+        "Austrian": 4.2,
+        "German": 2
+      },
+      "Scandinavian": {
+        "Swedish": 1.5,
+        "Norwegian": 1.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 11,
+        "Malayali": 4.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 17.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 5.8
+      },
+      "Laotian": {
+        "Laotian": 2.4
+      },
+      "Filipino": {
+        "Cebuano": 1.3,
+        "Tagalog": 0.3
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 2
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 0.8
+      },
+      "Plains Nations": {
+        "Cherokee": 0.2,
+        "Lakota": 0.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f5721191da3a3ef8d0a76e",
   "type": "character",
-  "name": "Nova Nygaard-Möller-Delgado",
+  "name": "Nova Delgado-Touré-Boateng",
   "aliases": [
     "Theo",
     "the Glossologist"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "University Spine, Deepwell Station archival annex, near sub-level access near LaSalle and Congress",
-  "description": "Theophane is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before GLMZ — the creoles that emerged on the Shelf, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
+  "description": "Nova Delgado-Touré-Boateng is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before GLMZ — the creoles that emerged on the Shelf, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -188,7 +188,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,38 +234,22 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Deepwell Station",
     "University Spine",
-    "GLMZ",
+    "Deepwell Station",
     "Ashford Signal",
-    "The Shelf",
     "Palladian Construction",
+    "The Shelf",
+    "GLMZ",
     "Lacuna Genomics",
     "SynapTech IrisBloom Ocular Color Modulator",
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Ambassador Silk",
-    "Arcturus KS-7 'Nursery'",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Ihaia Nystrom-Keita",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Pepetua Alimasi-Vartanyan",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Tessera Industries Sensory Overload Grenade SOG-3 'Flashbang Plus'",
-    "The Heritage Vault",
-    "The Signal",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "East Asian (30.9%) / Hispanic-Latin American (29.6%) / Northern European (21.8%) / South Asian (17.7%) — a striking global blend reflected in his features. His bone structure shows East Asian elements in the cheekbones and eye shape, with Latin American warmth in his coloring, Northern European height and build, and South Asian depth to his skin tone.",
+    "heritage": "Sub-Saharan African (46.2%) / Eastern European (18.2%) / Hispanic-Latin American (18.1%) / Southeast Asian (7.7%) / South Asian (5.6%) / East Asian (4.2%) — a striking global blend with Sub-Saharan African features as the dominant genetic foundation. His bone structure shows strength from African ancestry in the broader cheekbones and prominent jaw, with warmth in his coloring from Latin American and South Asian heritage, Eastern European depth in his eye-set, and subtle Southeast and East Asian refinement in his facial proportions.",
     "height_cm": 183,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick-chested, with soft accumulation around the middle — the body of someone who was athletic in youth and has spent fifteen years hunched over archival terminals. Still carries strength in the upper back and arms.",
@@ -273,8 +257,8 @@
     "hair_style": "Close-cropped, neat, maintained with minimal fuss",
     "hair_length": "Short",
     "eye_color": "Deep violet with radial fracture pattern (cosmetic iris mod)",
-    "skin_tone": "Warm medium golden-brown with layered undertones — the golden warmth of East and South Asian heritage blending with the tan of Latin American ancestry and the depth of Northern European olive. Darker on face and forearms from years of travel between districts.",
-    "complexion": "Lined around the eyes and mouth from concentration and conversation, with slightly broader cheekbones and softer eye shape suggesting East Asian ancestry. Keeps his face clean-shaven. Skin texture shows minor sun damage on the bridge of his nose — older scarring, pre-mod work. Perpetually slightly tired look, but sharp and engaged in conversation.",
+    "skin_tone": "Warm medium-to-deep brown with complex undertones — the rich depth of Sub-Saharan African heritage as the primary base, brightened by golden warmth from Latin American and South Asian ancestry, with subtle olive undertones from Eastern European genetics. Darker on face and forearms from years of travel between districts.",
+    "complexion": "Lined around the eyes and mouth from concentration and conversation, with broader cheekbones and stronger jaw characteristic of Sub-Saharan African ancestry. Keeps his face clean-shaven. Skin texture shows minor sun damage on the bridge of his nose — older scarring, pre-mod work. Perpetually slightly tired look, but sharp and engaged in conversation.",
     "distinguishing_marks": [
       "Fine scar running 2cm along the left temple, barely visible, possibly from childhood injury",
       "Retractive claw apparatus visible on right hand only — incomplete geneware modification showing partial keratin plates along fingers 2-4, with visible junction scarring where the work was abandoned eight years ago. The claws are dark gray-black, retracted at rest but visibly mechanical beneath the skin.",
@@ -284,15 +268,76 @@
     "posture_movement": "Sits slightly forward when focused, with shoulders rounded inward. Hands move constantly during speech — tracing complex patterns in the air with fingers and wrists, mapping out grammar structures and phonemic relationships that only he can see. These hand movements are precise and purposeful, almost ritualistic. Walks with deliberate pace, unhurried. Has developed a habit of tilting his head slightly when listening, as if his acoustic implants are actively tuning.",
     "clothing_style": "Tier 2-3 hybrid: University-issue smart-weave clothing mixed with personal pieces. Usually wears loose linen or cotton shirts (sleeves rolled to mid-forearm, showing the incomplete right-hand modification) in neutral tones — cream, gray, soft blues. Trousers are practical, often University-branded. Jacket is a well-worn charcoal wool blazer with reinforced elbows, suggesting years of leaning on archival terminals. Carries a worn leather satchel with visible signal-logging equipment. Shoes are practical and broken-in. Overall appearance suggests comfort with institutional affiliation but resistance to full corporate compliance — he looks professorial rather than corporate, invested in his work rather than his appearance."
   },
-  "image_prompt": "Nova Nygaard-Möller-Delgado, tall 183cm academic archivisist with warm golden-brown skin blending East Asian, Hispanic, Northern European, and South Asian heritage. Strong cheekbones, slightly tired lined face, clean-shaven. Dark brown hair with silver at temples, short and neat. Deep violet cosmetic iris mods with radial fracture pattern. Right hand showing incomplete dark gray-black claw apparatus with mechanical scarring, fingers extended mid-gesture tracing invisible linguistic patterns. Broad shoulders, athletic-turned-soft build. Wearing cream linen shirt with rolled sleeves, charcoal wool blazer with reinforced elbows, practical trousers, worn leather satchel with signal-logging tech. Slight forward lean, head tilted as if acoustic implants tuning. University archival annex setting, cool blue archival lighting, terminal glow reflecting on face and augmented hand. Cyberpunk 2226, intellectual intensity mixed with subtle tech modification. --ar 2:3 --v 6",
+  "image_prompt": "Nova Delgado-Touré-Boateng, a 183cm linguist in 2226 neo-noir Great Lakes Metropolitan Zone. Warm deep-brown skin with complex golden undertones reflecting mixed Sub-Saharan African, Latin American, Southeast Asian and Eastern European heritage. Dark brown hair with silver at temples, close-cropped. Striking deep violet cosmetic iris modification with radial fracture pattern. Strong prominent cheekbones and jaw, lined face showing concentration, clean-shaven. Right hand visible with incomplete dark gray-black retractive claw apparatus showing mechanical edges and junction scarring. Small faded Shelf-Creole tattoo on left wrist. Fine scar along left temple. Wearing rolled-sleeve cream linen shirt over practical University-branded trousers, charcoal wool blazer with reinforced elbows, carrying worn leather signal-logging satchel. Sitting slightly forward with rounded shoulders at archival terminal in dim institutional annex lighting. Hands gesturing expressively in air, mapping phonemic patterns. Tired but sharp expression. Over-ear acoustic enhancement headphones visible. Professorial rather than corporate aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 30.9,
-    "Hispanic/Latin American": 29.6,
-    "Northern European": 21.8,
-    "South Asian": 17.7
+    "Sub-Saharan African": 46.2,
+    "Eastern European": 18.2,
+    "Hispanic/Latin American": 18.1,
+    "Southeast Asian": 7.7,
+    "South Asian": 5.6,
+    "East Asian": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 17
+      },
+      "Central African": {
+        "Cameroonian": 8.4
+      },
+      "East African": {
+        "Ethiopian": 5.2,
+        "Rwandan": 15.6
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 6.8
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 1,
+        "Romanian": 2
+      },
+      "Slavic West": {
+        "Sorbian": 8.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9.7
+      },
+      "South American": {
+        "Ecuadorian": 8.4
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 3.8
+      },
+      "Cambodian": {
+        "Khmer": 2.8
+      },
+      "Indonesian": {
+        "Javanese": 1,
+        "Sundanese": 0.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.1
+      },
+      "Nepali": {
+        "Nepali": 3.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 4.2
+      }
+    }
+  }
 }

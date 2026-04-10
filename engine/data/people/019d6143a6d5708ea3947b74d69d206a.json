@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d5708ea3947b74d69d206a",
   "type": "character",
-  "name": "Vale Sesay",
+  "name": "Vale Malhotra",
   "aliases": [
     "Pebble"
   ],
@@ -12,7 +12,7 @@
   "age": 9,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Milwaukee and North Ave",
-  "description": "Solène is small even for nine, with deep brown skin mapped by old scrapes and one faded chemical burn along her left forearm she got from a leaking pipe in the Blackpipe tunnels. Her hair is coiled tight and usually stuffed under a too-large knit cap she refuses to remove. Her eyes are large and very dark, permanently watchful, the way only children who sleep lightly develop. She has geneware cat-whisker sensory implants — not her choice, inherited from her mother — and they twitch involuntarily when she's nervous, which other kids tease her about.\n\nSolène runs messages between the Blackpipe fences and the Narrows stall-vendors, earning a few Φ per run. She's illiterate in formal script but has memorized dozens of symbols by shape and can navigate the Corridor's maze of maintenance corridors better than most adults. She laughs easily and loudly but goes very quiet the instant something feels wrong — other runners have learned to watch her like a weather vane. She has a fierce attachment to a cracked ELF shrine wedged in a drainage alcove that she tends with water-drop offerings every morning.",
+  "description": "Vale Malhotra is small even for nine, with deep brown skin mapped by old scrapes and one faded chemical burn along her left forearm she got from a leaking pipe in the Blackpipe tunnels. Her hair is coiled tight and usually stuffed under a too-large knit cap she refuses to remove. Her eyes are large and very dark, permanently watchful, the way only children who sleep lightly develop. She has geneware cat-whisker sensory implants — not her choice, inherited from her mother — and they twitch involuntarily when she's nervous, which other kids tease her about.\n\nVale Malhotra runs messages between the Blackpipe fences and the Narrows stall-vendors, earning a few Φ per run. She's illiterate in formal script but has memorized dozens of symbols by shape and can navigate the Corridor's maze of maintenance corridors better than most adults. She laughs easily and loudly but goes very quiet the instant something feels wrong — other runners have learned to watch her like a weather vane. She has a fierce attachment to a cracked ELF shrine wedged in a drainage alcove that she tends with water-drop offerings every morning.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -156,7 +156,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,27 +169,16 @@
     "GLMZ",
     "The Narrows Compact",
     "The Calumet Sink",
+    "GLMZ",
+    "Arcturus KS-7 'Nursery'",
     "Axonal Stretch Resonance Lance",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Ferrogate Transit",
-    "Lazarus LX-2 'Lab Rat'",
-    "NeuralPath VerbatimX Lexical Recall Aid",
-    "Nnamdi Ostrowski-Faletolu",
-    "Prosper Dembélé-Ranginui",
-    "Scarecrow",
-    "The Corridor",
-    "The Filament",
-    "The Narrows",
-    "The Pure Hand",
-    "Uncle Noodle"
+    "Compass Rose",
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (65.2%) with significant Middle Eastern (17.8%) and North African (4.6%) ancestry, blended with minor Hispanic/Latin American (6.5%), Southeast Asian (3.2%), and East Asian (2.7%) heritage. Her features reflect this primary West African and Levantine mix.",
+    "heritage": "Predominantly South Asian (63.8%) with significant Southeast Asian (15.8%), East Asian (11.8%), and Central Asian (8.6%) ancestry. Her features reflect a rich Pan-Asian blend where South Asian bone structure—pronounced cheekbones and defined facial geometry—merges seamlessly with Southeast Asian refinement and East Asian eye shape. Central Asian heritage adds subtle width to her face and delicate nose bridge. The combination creates a distinctive look: warm golden-brown skin with olive undertones, dark expressive eyes with characteristic East Asian lid structure, and angular features that speak to generations of mixed continental heritage.",
     "height_cm": 125,
     "weight_kg": 24,
     "build": "Small-framed and wiry, undersized even for her age. Lean muscle from constant running through tight spaces, no body fat reserves. Proportionally long limbs for climbing and ducking.",
@@ -197,28 +186,59 @@
     "hair_style": "Tightly coiled, worn in close braids underneath a perpetually oversized charcoal knit cap she keeps pulled low",
     "hair_length": "Short (hidden)",
     "eye_color": "Very dark brown, nearly black",
-    "skin_tone": "Deep warm brown with subtle golden and olive undertones from her Middle Eastern and North African heritage, creating a rich complexion that shifts in different light.",
-    "complexion": "Sharp, angular face with prominent cheekbones characteristic of her Sub-Saharan and North African ancestry. Skin shows wear — old scrape marks on knees and hands, faded dirt permanent in the creases of her palms. Perpetually alert expression, eyes tracking movement. Slight warmth and depth to her features from the blended heritage.",
+    "skin_tone": "Warm medium-golden brown with olive undertones, deepening toward amber in sunlight. The blend of South Asian warmth with Southeast Asian subtlety creates a rich complexion that shifts between warm bronze and cooler olive depending on light angle and environment.",
+    "complexion": "Angular face with defined cheekbones reflecting Pan-Asian heritage, the South Asian prominence softened by Southeast Asian refinement and Central Asian delicacy. Dark expressive eyes set with subtle East Asian epicanthic fold, creating characteristic depth. Skin shows wear—old scrape marks on knees and hands, faded dirt permanent in the creases of her palms. Perpetually alert expression, eyes tracking movement with the intensity of inherited geneware sensory enhancement.",
     "distinguishing_marks": [
-      "Faded chemical burn scar running along the outer left forearm, pale and slightly textured, approximately 8cm in length — memento of a leaking coolant pipe in the Blackpipe tunnels.",
+      "Faded chemical burn scar running along the outer left forearm, pale and slightly textured, approximately 8cm in length—memento of a leaking coolant pipe in the Blackpipe tunnels.",
       "Small scars on both knuckles from crawling through rough maintenance corridors.",
       "A thin, almost imperceptible line of fine silver sensory filaments (cat-whisker geneware) extending from her left cheekbone and right temple, visible only in direct light and when they twitch involuntarily."
     ],
     "visible_augmentations": "Fine silver sensory whisker filaments barely visible along cheekbones and temples, inherited geneware from her mother. They twitch noticeably when she's nervous or processing environmental stimuli.",
-    "posture_movement": "Moves with practiced economy — crouching, sliding, climbing rather than walking. Head held slightly tilted, as if always listening. Goes from loose and laughing to perfectly still and silent in milliseconds when danger is sensed. Fidgets with the brim of her cap when anxious.",
-    "clothing_style": "Tier 5 street kid. Oversized knit cap (charcoal, holes patched with thread). Mismatched compression layer under a faded gray tech-fabric hoodie two sizes too large, stolen or scavenged. Cargo pants with more pockets than seams intact, one leg cuffed shorter where a burn melted the original hem. Worn synthetic sneakers held together with e-tape, sole separating at the toe. A length of cord around her waist holds a water bottle and a small shrine-maintenance kit. No jewelry except a twisted bit of copper wire looped around her wrist — a talisman or marker."
+    "posture_movement": "Moves with practiced economy—crouching, sliding, climbing rather than walking. Head held slightly tilted, as if always listening. Goes from loose and laughing to perfectly still and silent in milliseconds when danger is sensed. Fidgets with the brim of her cap when anxious.",
+    "clothing_style": "Tier 5 street kid. Oversized knit cap (charcoal, holes patched with thread). Mismatched compression layer under a faded gray tech-fabric hoodie two sizes too large, stolen or scavenged. Cargo pants with more pockets than seams intact, one leg cuffed shorter where a burn melted the original hem. Worn synthetic sneakers held together with e-tape, sole separating at the toe. A length of cord around her waist holds a water bottle and a small shrine-maintenance kit. No jewelry except a twisted bit of copper wire looped around her wrist—a talisman or marker."
   },
-  "image_prompt": "Vale Sesay, 125cm tall street kid with deep rich brown skin and subtle golden-olive undertones, sharp angular face with prominent cheekbones, very dark brown eyes constantly alert and tracking. Wearing oversized charcoal knit cap pulled low, faded gray tech-fabric hoodie two sizes too large, mismatched cargo pants with one leg shorter from a burn, worn synthetic sneakers taped together. Fine silver sensory whisker filaments barely visible along cheekbones and temples. Faded 8cm chemical burn scar on left forearm, small scars on knuckles. Twisted copper wire bracelet. Crouching in dimly-lit maintenance corridor or rooftop shadow, head tilted as if listening, perfectly still posture. Cyberpunk 2226, neon light catching the sensory filaments, gritty industrial Great Lakes Metropolitan Zone setting, rain-slicked surfaces, bioluminescent corner-lighting --ar 2:3 --v 6",
+  "image_prompt": "Vale Malhotra, 125cm tall wiry street kid, warm golden-brown skin with olive undertones blending South Asian, Southeast Asian, East Asian, and Central Asian heritage. Angular Pan-Asian face with defined cheekbones, very dark brown nearly-black eyes with subtle East Asian fold, natural deep black hair hidden under oversized charcoal knit cap pulled low. Faded chemical burn scar on left forearm, silver sensory whisker filaments along cheekbones visible in light. Wears two-sizes-too-large faded gray tech-fabric hoodie, mismatched compression layer, torn cargo pants cuffed unevenly, worn synthetic sneakers held with e-tape. Copper wire talisman looped around wrist. Crouching pose, head tilted as if listening, perpetually alert expression. Dark industrial setting, neon glow from distance, moody GLMZ Great Lakes Metropolitan Zone aesthetic, shadow and ambient light catching silver augmentations --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 65.2,
-    "Middle Eastern": 17.8,
-    "Hispanic/Latin American": 6.5,
-    "North African": 4.6,
-    "Southeast Asian": 3.2,
-    "East Asian": 2.7
+    "South Asian": 63.8,
+    "Southeast Asian": 15.8,
+    "East Asian": 11.8,
+    "Central Asian": 8.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 47.3,
+        "Punjabi Pakistani": 16.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 15.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 10.8
+      },
+      "Japanese": {
+        "Japanese": 1
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kyrgyz": 0.7
+      },
+      "Iranian Central": {
+        "Tajik": 4.6,
+        "Hazara": 1.5
+      },
+      "Mongolic": {
+        "Buryat": 1.8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d47d9e8f34b66fff0e4b3b",
   "type": "character",
-  "name": "Cleo Khorasani",
+  "name": "Cleo Huitzil",
   "aliases": [
     "Solvie",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin, specifically a converted shipping office above the Tideline Brokerage pawn front, near Ashland and Division",
-  "description": "Solveig is a broad-shouldered woman with deep brown skin and the pale silver hair that runs in her Norwegian grandmother's line, kept in a severe bun pinned with a data-spike she uses as a stylus. Her face is heavy-featured and composed, the kind of face that has absorbed a great deal of information without letting any of it back out. She wears reading lenses with ledger overlays almost always active, giving her irises a faint amber glow when she's calculating — which is nearly always. A small tattoo on her left wrist reads 'Φ+Φ=Φ' in the old symbolic script, her personal joke about compound interest.\n\nSolveig runs her loan operation with the temperament of an extremely patient accountant who happens to employ two large men with ceramic-reinforced knuckles. She is not cruel; she is precise. Late payments are met first with reminders, then with restructured terms, then with consequences calibrated to the debtor's ability to absorb them. She considers gratuitous violence wasteful and unprofessional. She genuinely believes she provides a service to people the corponation banks won't touch, and this belief is not entirely wrong, which is what makes her dangerous. She prays to the E.L.F. Φ-Mater every Thursday, leaving small interest-accruing data packages as offerings.",
+  "description": "Cleo Huitzil is a broad-shouldered woman with deep brown skin and the pale silver hair that runs in her Norwegian grandmother's line, kept in a severe bun pinned with a data-spike she uses as a stylus. Her face is heavy-featured and composed, the kind of face that has absorbed a great deal of information without letting any of it back out. She wears reading lenses with ledger overlays almost always active, giving her irises a faint amber glow when she's calculating — which is nearly always. A small tattoo on her left wrist reads 'Φ+Φ=Φ' in the old symbolic script, her personal joke about compound interest.\n\nCleo Huitzil runs her loan operation with the temperament of an extremely patient accountant who happens to employ two large men with ceramic-reinforced knuckles. She is not cruel; she is precise. Late payments are met first with reminders, then with restructured terms, then with consequences calibrated to the debtor's ability to absorb them. She considers gratuitous violence wasteful and unprofessional. She genuinely believes she provides a service to people the corponation banks won't touch, and this belief is not entirely wrong, which is what makes her dangerous. She prays to the E.L.F. Φ-Mater every Thursday, leaving small interest-accruing data packages as offerings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +179,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,37 +228,15 @@
     "Gravesend Basin",
     "Grandmother",
     "Tessera Corponation",
-    "Adaeze Chen-Hawkins",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Haze Johansson",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "The Pale Mile",
-    "Nightlight",
-    "Anatoliy Faye-Nkrumah",
-    "Cezar Watanabe-Gyasi",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Last Word",
-    "Lazarus IDP-1 'Teeth'",
-    "LifeWire EvenKeel Mood Regulation Implant",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "The Burden Clause",
-    "The Ledger",
-    "The Pure Hand",
-    "The Threshold",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov"
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Middle Eastern, Hispanic/Latin American, Sub-Saharan African, Pacific Islander, East Asian, and Eastern European—a complex Ubiquitous Diaspora blend. The result is a striking convergence: the broad cheekbones and nose structure suggest Sub-Saharan and Middle Eastern ancestry; the warm golden undertones and skin depth carry Hispanic and Pacific Islander genetics; the eye shape and subtle facial geometry show East Asian influence; the overall frame and bone structure reflect the diversity of her complete genetic tapestry.",
+    "heritage": "Predominantly Indigenous American (76.1%) with significant East Asian (13.0%) and Sub-Saharan African (10.9%) ancestry. Strong Indigenous American bone structure—broad cheekbones and pronounced nose—enhanced by Sub-Saharan African definition in facial geometry. East Asian ancestry subtly influences eye shape and upper eyelid structure. The blending creates a distinctive angular face with warm, equatorial skin tones and the geometric precision of multiple continental heritages converging.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial without excess softness; a frame built for stability and presence rather than speed. Muscular through the chest and upper back, thickening slightly at the midline—a body that suggests physical capability gone a bit complacent with middle age and office work.",
@@ -266,8 +244,8 @@
     "hair_style": "Severe bun, pinned with a customized data-spike stylus",
     "hair_length": "Long (gathered up)",
     "eye_color": "Deep brown, with a faint amber glow when retinal overlay is active (ledger mode)",
-    "skin_tone": "Warm deep brown with golden undertones blending toward bronze; complexion carries the even tone of someone who works indoors under controlled lighting, with the luminosity that comes from ancestry spanning equatorial and subtropical regions.",
-    "complexion": "Strong-featured face reflecting diverse ancestry: broad nose with definition, prominent cheekbones that suggest Sub-Saharan and Middle Eastern genetics, eye shape with subtle East Asian influence. Skin condition is immaculate and well-maintained, suggesting disciplined skincare. No visible wrinkles despite her age—either excellent genetics or subtle geneware maintenance. Expression typically neutral, jaw often set in calculation.",
+    "skin_tone": "Warm bronze-brown with golden undertones; complexion carries the even tone of someone who works indoors under controlled lighting, with the luminosity from ancestry spanning equatorial and Indigenous American regions.",
+    "complexion": "Angular face with strong Indigenous American structure: broad nose with refined definition from Sub-Saharan African ancestry, prominent high cheekbones characteristic of Indigenous genetics, eye shape showing subtle East Asian influence creating a distinctive upper-lid geometry. Skin condition is immaculate and well-maintained, suggesting disciplined skincare and possible subtle geneware maintenance. No visible wrinkles despite her age. Expression typically neutral, jaw often set in calculation.",
     "distinguishing_marks": [
       "Small tattoo on inner left wrist reading 'Φ+Φ=Φ' in old symbolic mathematical script, approximately 2cm tall, black ink with faint silver undertone from subdermal augmentation beneath the skin",
       "Faint white scar along the right temple, barely visible, approximately 3cm long—old injury, cleanly healed"
@@ -276,17 +254,37 @@
     "posture_movement": "Sits with perfect spine alignment; moves with deliberate economy of motion—no wasted gestures. Her hands move with precision when working, hovering over surfaces as if calculating weight and balance. When standing, she settles her weight evenly on both feet, giving the impression of immobility. Her fingers occasionally vibrate slightly at the tips when she's reading a nervous client—a tell she's reading their tells.",
     "clothing_style": "Tier 3-4 professional: tailored but practical. Favors long-sleeved shirts in muted grays and blacks to minimize distraction; high-quality synthetic blends that don't wrinkle. A charcoal wool vest, custom-fitted, worn over everything in the office. Flat black shoes with reinforced soles. A simple platinum bracelet on her right wrist—no visible branding, but the weight and finish suggest genuine pre-Collapse manufacture or high-end corpo reproduction. A leather ledger folio in weathered charcoal, always within arm's reach. Jewelry is minimal: a plain gold ring on her left ring finger (professional habit, not romantic statement)."
   },
-  "image_prompt": "Cleo Khorasani, a 178cm tall corporate analyst with deep warm bronze skin and golden undertones reflecting Middle Eastern, Hispanic, African, and Pacific Islander ancestry. Severe silver-white hair pulled into a tight bun pinned with a polished chrome data-spike etched with circuit patterns. Strong-featured face with prominent cheekbones and broad nose, reading lenses with faint green overlay active on her cheekbones. Sitting with perfect posture at a sleek desk, wearing a tailored charcoal wool vest over a long-sleeved gray shirt. Subdermal tech barely visible beneath her fingertip skin as she hovers over a holographic interface. Faint scar along right temple. Minimal jewelry: platinum bracelet, gold ring. Immaculate professional bearing. Cyberpunk 2200s Great Lakes Metropolitan corporate office, cool blue-green ambient lighting, late night work session, calculating neutral expression. --ar 2:3 --v 6",
+  "image_prompt": "Cleo Huitzil, professional fixer in GLMZ Great Lakes zone. Stern Indigenous American-East Asian-African blend woman with angular high cheekbones, broad nose, deep brown eyes with subtle upturned lids, pale silver hair in severe bun pinned with chrome data-spike. Warm bronze-brown immaculate skin. Wearing tailored charcoal gray shirt and custom wool vest, reading lenses with green-tinted active overlay on cheekbones, platinum bracelet catching light. Seated at desk in dim cool-lit office with vertical blinds casting hard shadows, hands poised over surface with faint subdermal shimmer visible in fingertips. Neutral cold expression, perfect posture, ledger folio within reach. Neo-noir noir lighting, sharp focus, intricate detail on augmentations, professional atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 25.8,
-    "Hispanic/Latin American": 22.6,
-    "Sub-Saharan African": 17.5,
-    "Pacific Islander": 13.7,
-    "East Asian": 13.3,
-    "Eastern European": 7.1
+    "Indigenous American": 76.1,
+    "East Asian": 13,
+    "Sub-Saharan African": 10.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 5.1,
+        "Ojibwe": 2.1
+      },
+      "Plains Nations": {
+        "Lakota": 20.3,
+        "Choctaw": 48.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 13
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 3.7,
+        "Cameroonian": 7.2
+      }
+    }
+  }
 }

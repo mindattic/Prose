@@ -23,7 +23,7 @@ public class ContextAnalyzerService
             .Where(c => !string.IsNullOrEmpty(c)));
 
         var system = """
-            You are a psychological context analyzer for a cyberpunk narrative engine.
+            You are a psychological context analyzer for a neo-noir narrative engine.
             Given a scene description and character relationships, extract:
             1. psychological_triggers: tags that activate character facets (e.g., "violence", "betrayal", "moral_choice")
             2. dominant_emotion: the primary emotional tone

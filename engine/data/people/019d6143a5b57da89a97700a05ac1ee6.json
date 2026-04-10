@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b57da89a97700a05ac1ee6",
   "type": "character",
-  "name": "Nikhil Wickramasinghe",
+  "name": "Nyx Saito",
   "aliases": [
     "The Mother",
     "Mrs. Morozova"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Shelf — Tier Four, three corridors south of Chen's, near Western and Division",
-  "description": "Anya is built like someone who has carried heavy things her entire life — broad shoulders, thick forearms, hands that look like they could crush walnuts or cradle a child with equal confidence. She came to GLMZ from the Volgograd displacement zone when she was nineteen, pregnant, speaking four words of English: 'please,' 'help,' 'work,' and 'no.' She now speaks roughly forty words of English, all of them practical. She communicates primarily through a translation app on a cracked tablet that she holds like a shield. Her face is weathered beyond her years — deep lines around her mouth, sun damage from agricultural work in the displacement camps, a scar across her left eyebrow from a piece of industrial debris. She is not soft. She is not hard. She is a woman who has been carrying impossible weight for so long that her skeleton has restructured itself around the burden. She scraped together Kyle's fee by selling her blood to a Helix BioSystems collection point three times a week for two months. Kyle took the job at half rate. She does not know this and he will never tell her.",
+  "description": "Nyx Saito is built like someone who has carried heavy things her entire life — broad shoulders, thick forearms, hands that look like they could crush walnuts or cradle a child with equal confidence. She came to GLMZ from the Volgograd displacement zone when she was nineteen, pregnant, speaking four words of English: 'please,' 'help,' 'work,' and 'no.' She now speaks roughly forty words of English, all of them practical. She communicates primarily through a translation app on a cracked tablet that she holds like a shield. Her face is weathered beyond her years — deep lines around her mouth, sun damage from agricultural work in the displacement camps, a scar across her left eyebrow from a piece of industrial debris. She is not soft. She is not hard. She is a woman who has been carrying impossible weight for so long that her skeleton has restructured itself around the burden. She scraped together Kyle's fee by selling her blood to a Helix BioSystems collection point three times a week for two months. Kyle took the job at half rate. She does not know this and he will never tell her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -218,7 +218,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,31 +232,18 @@
   "registered_firearms": [],
   "related_entities": [
     "Helix Biosystems",
-    "GLMZ",
     "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
     "TESSERA TN-1 'Cradle'",
-    "The Pure Hand",
     "Burden of Longitude",
+    "The Pure Hand",
     "Slagworks Industrial",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Blessed Nkemdirim",
-    "Free Assembly",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kyle Ellen Corbin-Vasik",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Nnamdi Ostrowski-Faletolu",
-    "SynapTech ReadRoom Pro Social Cue Implant",
-    "Tenderloin",
-    "The Ghost Ronin",
-    "The Voltage Saints"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed ancestry from Sub-Saharan African (40.8%), South Asian (28.3%), Northern European (23.6%), and Middle Eastern (7.3%) heritage. A striking blend resulting in warm brown skin with subtle golden and reddish undertones, facial structure reflecting the diverse genetic contributions across multiple continents.",
+    "heritage": "Polychromatic blend of South Asian (25%), East Asian (22.2%), Sub-Saharan African (16%), Southeast Asian (15.2%), Eastern European (11%), and Hispanic/Latin American (10.6%) ancestry. Facial structure reflects this continental convergence: broader nose with slight flare from South Asian and African heritage, defined cheekbones elevated by East Asian genetics, slightly hooded eyes characteristic of East and Southeast Asian lineage, and warm golden undertones across medium-deep brown skin from the full ancestral blend.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Powerfully built with broad shoulders and thick forearms developed from decades of manual labor. Not muscular in a refined sense — the build of someone whose body has been shaped by carrying, lifting, and sustained physical work. Core strength evident despite modest body fat.",
@@ -264,8 +251,8 @@
     "hair_style": "Pulled back in a practical braid, often loose and slightly disheveled by end of shift",
     "hair_length": "Long",
     "eye_color": "Deep brown with tired intensity",
-    "skin_tone": "Warm medium brown with golden undertones, weathered by UV exposure in displacement camps and industrial environments",
-    "complexion": "Lined face showing environmental wear, especially around the mouth and eyes. Deep creases between eyebrows. Sun damage visible as uneven pigmentation across cheekbones and forehead. Lips full and naturally pigmented but often pale from fatigue. Permanent furrow in brow from chronic worry. Facial structure shows diverse ancestry with broader nose and defined cheekbones.",
+    "skin_tone": "Warm medium-deep brown with golden undertones, weathered by UV exposure in displacement camps and industrial environments. Complexion reflects the depth and warmth of multiple continental ancestries blended into unified warm coloration.",
+    "complexion": "Lined face showing environmental wear, especially around the mouth and eyes. Deep creases between eyebrows suggesting the convergence of South Asian width with East Asian angularity, African feature prominence, and Southeast Asian softness. Sun damage visible as uneven pigmentation across cheekbones and forehead. Lips full and naturally pigmented but often pale from fatigue. Permanent furrow in brow from chronic worry. High, prominent cheekbones from East Asian and African heritage blended with broader facial planes from South Asian ancestry.",
     "distinguishing_marks": [
       "Jagged scar across left eyebrow, approximately 3cm, from industrial debris wound — healed poorly, raised tissue",
       "Calluses covering palms and finger joints, thick and yellowed",
@@ -276,15 +263,73 @@
     "posture_movement": "Moves with economical efficiency, no wasted motion. Shoulders slightly hunched forward — occupational posture from assembly line work. When stationary, weight shifts between feet as if perpetually braced for the next task. Hands move with surprising gentleness despite their size and strength. Eye contact minimal, gaze often directed downward or at her cracked tablet.",
     "clothing_style": "Tier Four survival wear. Factory-issue grey coveralls, worn thin at elbows and knees, with Volzhskiy Manufacturing Corp logo faded to barely visible. Underneath: a faded long-sleeved shirt (undershirt of some kind, likely thermal). Worn work boots with visible tape around the seams. A heavy canvas jacket, oversized, likely secondhand, patched at several points. The jacket is layered and functional — pockets stuffed with small necessities. Holds a cracked tablet with visible damage to the screen corner, protected in a makeshift cloth wrap. No jewelry. No accessories beyond necessity."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of a weary factory worker named Nikhil Wickramasinghe, 168cm tall with powerful broad-shouldered build from decades of manual labor. Warm medium-brown skin with golden undertones, lined weathered face with deep creases, dark faded gray-streaked hair pulled back in practical braid, tired deep brown eyes with minimal eye contact. Jagged scar across left eyebrow, calloused hands, visible needle marks on forearms. Wearing worn thin grey factory coveralls with faded Volzhskiy Manufacturing Corp logo, thermal undershirt, patched oversized canvas jacket, taped work boots. Holds cracked tablet in cloth wrap. Hunched posture suggesting assembly line work, weight shifted as if braced for next task. Gritty industrial lighting, Great Lakes Metropolitan Zone displacement camp aesthetic, weathered and exhausted expression, documentary-style realism, cyberpunk dystopian undertones. --ar 2:3 --v 6",
+  "image_prompt": "Nyx Saito, GLMZ, 168cm powerfully-built woman with warm medium-deep brown skin blending South Asian, East Asian, African, Southeast Asian, Eastern European, and Hispanic heritage. Deep brown tired eyes, dark hair with gray at temples pulled back in loose practical braid. Face lined and weathered with high prominent cheekbones, broader nose with slight flare, slightly hooded eyes. Three-centimeter jagged scar across left eyebrow from industrial wound. Weathered complexion with sun damage across cheekbones and forehead. Hands calloused and yellowed, marked with needle scars from repeated blood collection. Wearing faded factory-gray coveralls worn at elbows and knees, heavy patched canvas jacket, thermal undershirt, taped work boots. Holding cracked tablet in cloth wrap. Hunched posture from assembly line work, weight shifted between feet, gaze directed downward. Standing in industrial displacement camp or factory setting, dim industrial lighting, tired and stoic expression, economical stillness. Neo-noir Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 40.8,
-    "South Asian": 28.3,
-    "Northern European": 23.6,
-    "Middle Eastern": 7.3
+    "South Asian": 25,
+    "East Asian": 22.2,
+    "Sub-Saharan African": 16,
+    "Southeast Asian": 15.2,
+    "Eastern European": 11,
+    "Hispanic/Latin American": 10.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 5.1,
+        "Pashtun": 8.2
+      },
+      "Indian": {
+        "Gujarati": 2.4
+      },
+      "Sri Lankan": {
+        "Sinhalese": 9.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12
+      },
+      "Korean": {
+        "Korean": 10.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 1.6,
+        "Cameroonian": 5.8
+      },
+      "West African": {
+        "Guinean": 3,
+        "Nigerian": 0.6
+      },
+      "East African": {
+        "Ugandan": 5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 15.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 11
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 2.2
+      },
+      "Mexican": {
+        "Mexican": 1.4
+      },
+      "Central American": {
+        "Nicaraguan": 7
+      }
+    }
+  }
 }

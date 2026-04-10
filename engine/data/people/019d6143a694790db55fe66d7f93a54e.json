@@ -1,7 +1,7 @@
 {
   "id": "019d6143a694790db55fe66d7f93a54e",
   "type": "character",
-  "name": "Remi Solberg-Tovar",
+  "name": "Remi Solberg-Anang",
   "aliases": [
     "Pell",
     "Scrapmouth"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Stockyard — Bay 7 of the Grainfort vehicle warehouse complex, third sublevel, near sub-level access near State and Van Buren",
-  "description": "Pelé is lean and angular with deep brown skin, a shaved head, and a geneware modification that makes the left half of their jaw and cheekbone emit a faint copper-toned bioluminescence under stress or exertion — a cosmetic mod they got at nineteen that they've grown to dislike but can't afford to remove. Their arms are heavily modified: one is a full prosthetic replacement below the elbow, matte black with exposed joint mechanisms they consider aesthetically correct; the other has a subdermal toolkit implanted along the forearm. They are almost always covered in vehicle lubricant and almost never bother apologizing for it. They wear a mechanics' coverall with the arms torn off and a collection of salvaged badges and patches that function as neighborhood ID.\n\nPelé has the particular charisma of someone who is genuinely exceptional at a physical craft — they can strip a Ferrogate Transit hauler of its marketable components in forty minutes flat, and people who watch them work go quiet the way people go quiet watching any form of mastery. Off the tools they are restless, impatient, and prone to saying true things in the bluntest possible configuration. They have strong opinions about which E.L.F.s are worth propitiating and which are noise: they maintain a small shrine to a data-spirit they believe inhabits the Grainfort warehouse's aging electrical grid, which they call 'the Socket,' and they leave it burned-out components as offerings.",
+  "description": "Remi Solberg-Anang is lean and angular with deep brown skin, a shaved head, and a geneware modification that makes the left half of their jaw and cheekbone emit a faint copper-toned bioluminescence under stress or exertion — a cosmetic mod they got at nineteen that they've grown to dislike but can't afford to remove. Their arms are heavily modified: one is a full prosthetic replacement below the elbow, matte black with exposed joint mechanisms they consider aesthetically correct; the other has a subdermal toolkit implanted along the forearm. They are almost always covered in vehicle lubricant and almost never bother apologizing for it. They wear a mechanics' coverall with the arms torn off and a collection of salvaged badges and patches that function as neighborhood ID.\n\nRemi Solberg-Anang has the particular charisma of someone who is genuinely exceptional at a physical craft — they can strip a Ferrogate Transit hauler of its marketable components in forty minutes flat, and people who watch them work go quiet the way people go quiet watching any form of mastery. Off the tools they are restless, impatient, and prone to saying true things in the bluntest possible configuration. They have strong opinions about which E.L.F.s are worth propitiating and which are noise: they maintain a small shrine to a data-spirit they believe inhabits the Grainfort warehouse's aging electrical grid, which they call 'the Socket,' and they leave it burned-out components as offerings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -188,7 +188,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,30 +251,12 @@
     "Grainfort",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Copper",
-    "Tibor Osei-Svanstrom",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Davi Ousseini-Brătianu",
-    "Doru Fofana-Câmpeanu",
-    "Fanta Kato-Adomako",
-    "Hauler",
-    "Irontide Tidal Energy",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "The Collective",
-    "The Iron Lotus",
-    "The Pure Hand",
-    "The Wire Taps",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-SL40 'Partisan'"
+    "Frost Boudiaf",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "East Asian (39.4%), Eastern European (36.0%), and Hispanic/Latin American (24.6%) ancestry creates a striking polychromatic blend—warm olive undertones from the Latin heritage, cooler undertones from Eastern European genetics, and the defined bone structure characteristic of East Asian ancestry. The combination produces a uniquely balanced facial architecture.",
+    "heritage": "Southeast Asian (65.2%), Indigenous American (25.2%), and Sub-Saharan African (9.6%) ancestry creates a striking polychromatic blend. Southeast Asian genetic dominance provides defined cheekbones and characteristic eye shape, while Indigenous American ancestry contributes broader facial structure and warm earth undertones. Sub-Saharan African heritage adds richness to skin depth and subtle warmth variation across complexion. The combination produces a uniquely balanced facial architecture with golden-bronze undertones and warm, layered skin dimension.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and angular with defined musculature from years of precision hand work; no excess mass, all economy of motion",
@@ -282,8 +264,8 @@
     "hair_style": "Cleanly shaved",
     "hair_length": "Shaved",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm olive with subtle golden undertones, the result of East Asian and Latin American heritage modified by Eastern European genetics; maintains an even complexion across the face with natural depth",
-    "complexion": "High, prominent cheekbones reflecting East Asian ancestry structure; clean-shaven face revealing the angular jawline; composed expression with eyes set at a slight upward cant; left jaw and cheekbone bear a faint copper bioluminescent geneware visible as a subtle shimmer under tension or exertion",
+    "skin_tone": "Warm bronze with golden undertones, the result of dominant Southeast Asian genetics enriched by Sub-Saharan African depth and Indigenous American warmth; maintains a rich, even complexion with natural luminosity and subtle golden radiance",
+    "complexion": "High, prominent cheekbones reflecting Southeast Asian ancestry structure; clean-shaven face revealing an angular jawline with subtle fullness from Indigenous American heritage; composed expression with eyes set at a slight upward cant characteristic of Southeast Asian genetics; left jaw and cheekbone bear a faint copper bioluminescent geneware visible as a subtle shimmer under tension or exertion",
     "distinguishing_marks": [
       "Faint copper bioluminescent tracery across left jaw and cheekbone, most visible under stress",
       "Subcutaneous toolkit implant visible as linear scarring along right forearm with three distinct anchor points",
@@ -293,14 +275,35 @@
     "posture_movement": "Economical and precise; moves like someone who has trained their body for repetitive mechanical work; stands with weight distributed for balance and quick access to tools; hands are rarely still, frequently manipulating objects or making small adjustments; maintains steady eye contact but with a restless quality, as if calculating disassembly sequences even during conversation",
     "clothing_style": "Mechanics' coverall in faded grey industrial fabric with both sleeves torn off at mid-bicep, exposing the prosthetic and implant work; chest and shoulders covered in salvaged badges, patches, and neighborhood identification markers sewn or pinned directly to the fabric; boots are heavy-treaded work grade, reinforced at the heel and toe; no jewelry or decorative items except the functional patches"
   },
-  "image_prompt": "Remi Solberg-Tovar, 172cm lean mechanist with striking multiethnic features—prominent cheekbones, warm olive skin with golden undertones blending East Asian structure with Eastern European and Latin American genetics. Cleanly shaved head and face revealing sharp angular jawline. Dark brown eyes with restless, calculating gaze. Sleeveless grey industrial coverall torn at biceps, exposing full matte-black prosthetic left arm with exposed joint mechanisms and articulated servos. Right forearm displays visible subdermal toolkit scarring with integrated tool ports. Hands stained with chronic mechanical lubricant. Faint copper bioluminescent tracery visible across left jaw and cheekbone. Heavy-treaded work boots. Torso covered in salvaged badges and neighborhood patches. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon-lit workshop environment, cool blue and amber lighting casting shadows across augmented limbs, precise posture suggesting nervous energy and mechanical contemplation, hands poised mid-gesture as if deconstructing invisible machinery, photorealistic detail on prosthetic articulation and bioware luminescence --ar 2:3 --v 6",
+  "image_prompt": "Remi Solberg-Anang, 172cm lean mechanic with warm bronze skin and golden undertones, shaved head revealing high cheekbones and angular jawline, dark brown eyes with slight upward cant, faint copper bioluminescent geneware tracery visible on left jaw under stress. Full matte-black prosthetic left arm below elbow with exposed joint mechanisms and articulated finger servos. Right forearm bears visible subdermal implant scarring with integrated tool ports. Wearing faded grey mechanics' coverall with both sleeves torn off at mid-bicep, chest covered in salvaged badges and patches. Heavy-treaded work boots. Hands marked with chronic mechanical lubricant stains. Standing in economical posture with restless hands, steady gaze. GLMZ Great Lakes Metropolitan Zone, industrial workshop setting, neon accent lighting catching the bioluminescent geneware, gritty and determined atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 39.4,
-    "Eastern European": 36.0,
-    "Hispanic/Latin American": 24.6
+    "Southeast Asian": 65.2,
+    "Indigenous American": 25.2,
+    "Sub-Saharan African": 9.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 36.9
+      },
+      "Filipino": {
+        "Tagalog": 28.3
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 25.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 7.3,
+        "Ghanaian": 2.3
+      }
+    }
+  }
 }

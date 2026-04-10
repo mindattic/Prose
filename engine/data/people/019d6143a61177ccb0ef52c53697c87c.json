@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61177ccb0ef52c53697c87c",
   "type": "character",
-  "name": "Frost Strömqvist",
+  "name": "Ama Hayashi",
   "aliases": [
     "Yonder",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Pulaski and Chicago Ave",
-  "description": "Fatoumata Borg-Agyeman is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a face out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fatoumata Borg-Agyeman describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Ama Hayashi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a face out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Ama Hayashi describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.84,
@@ -263,7 +263,7 @@
     "Problem Solver": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,30 +281,14 @@
   ],
   "related_entities": [
     "Ashfield",
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
-    "Slagworks Industrial",
-    "Chicago",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ihaia Nystrom-Keita",
-    "MERIDIAN",
-    "Meridian Munitions Twin PDW MTP-2 'Gemini'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Pikasso Wemba-Þórðarson",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Clock",
-    "The Fathom Line",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (Slavic majority with Carpathian influences) / Southeast Asian / Northern European / South Asian — a complex diaspora blend resulting in striking phenotypic diversity. High cheekbones and angular structure from Eastern European ancestry, warm golden-brown undertones from Southeast Asian heritage, and cool-toned undertones from Northern European genetics create a unique chromatic layering across her features.",
+    "heritage": "East Asian (39%) / Sub-Saharan African (34.5%) / South Asian (26.5%) — a striking diaspora blend creating phenotypic richness. High, prominent cheekbones and angular bone structure from East Asian ancestry; warm, deep undertones from Sub-Saharan African heritage; refined facial proportions and eye shape influenced by South Asian genetics. The combination produces a commanding presence with layered complexity across her features.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and densely muscled — broad shoulders, thick forearms, compact center of gravity. Built for leverage and power absorption rather than speed. Functional musculature, no wasted frame.",
@@ -312,8 +296,8 @@
     "hair_style": "Tight braids pulled back into a practical crown braid, secured with matte black fasteners",
     "hair_length": "Medium (shoulder-length when unbraided)",
     "eye_color": "Dark brown — unaugmented but with faint scarring at the inner corners suggesting past orbital trauma",
-    "skin_tone": "Warm medium-brown complexion with golden undertones layered over cool undertones — a result of Eastern European and Southeast Asian ancestry blending with Northern European genetics. Sun-damaged from outdoor work and industrial exposure, creating uneven patina across forearms and shoulders.",
-    "complexion": "Strong, angular jaw with pronounced cheekbones reflecting Slavic and Southeast Asian ancestry; slightly broader across the face than purely Northern European features. A scar bisects her left eyebrow horizontally. Her expression defaults to neutral, professionally unremarkable. Calloused knuckles, cracked palms from pre-augmentation labor. Faint epicanthal fold suggestion from Southeast Asian heritage, contributing to the intensity of her gaze.",
+    "skin_tone": "Rich deep brown complexion with warm golden undertones — a result of East Asian, Sub-Saharan African, and South Asian ancestry blending. Sun-damaged from outdoor work and industrial exposure, creating uneven patina across forearms and shoulders.",
+    "complexion": "Strong, angular jaw with pronounced cheekbones reflecting East Asian structure; broad across the face with South Asian refinement and Sub-Saharan African depth. A scar bisects her left eyebrow horizontally. Her expression defaults to neutral, professionally unremarkable. Calloused knuckles, cracked palms from pre-augmentation labor. Subtle epicanthal fold from East Asian heritage, contributing to the intensity of her gaze.",
     "distinguishing_marks": [
       "Horizontal scar across left eyebrow, 3cm long, pale and old",
       "Burn scar on inside of right wrist (chemical splash, faded to white), 4cm diameter",
@@ -324,15 +308,37 @@
     "posture_movement": "Economical, controlled, always balanced. She stands with weight centered, ready to shift instantly. Walks with precision, each step deliberate. When relaxed (rare), slight forward lean. In negotiation or threat, she goes perfectly still — predatory stillness, not nervous tension.",
     "clothing_style": "Tier 4 utilitarian. Reinforced cargo pants (synthetic weave, dark grey, multiple zippered pockets), fitted black long-sleeve shirt (thermal-resistant material, loose enough to hide gear), steel-toed boots (practical, not fashionable). Over it: a worn synthetic leather jacket (charcoal, no logos, deliberately unmarked) with internal holsters. Minimal jewelry — matte black watch (military-grade chronometer, visible wear). No corporate branding, no gang colors. Everything functional, everything durable, nothing that draws unnecessary attention when she's off the clock."
   },
-  "image_prompt": "Frost Strömqvist, cyberpunk 2226, GLMZ operative with Eastern European/Southeast Asian/Northern European/South Asian ancestry. Stocky 168cm frame, densely muscled build, warm medium-brown skin with golden undertones and sun damage. Dark braids pulled into crown braid. Strong angular jaw with high cheekbones, horizontal scar bisecting left eyebrow, unaugmented dark brown eyes with orbital scarring. Chrome reflex wiring visible at wrists and neck threading under skin, gunmetal hydraulic joint housings at elbows. Wearing reinforced dark grey cargo pants, black thermal-resistant long-sleeve shirt, charcoal synthetic leather jacket with internal holsters, steel-toed boots, matte black military chronometer. Posture perfectly centered and controlled, economical movement. Borg family sigil tattoo (three stacked circles) on left forearm. Industrial warehouse setting, cool neon backlighting mixing blue and amber, overhead work lamps casting shadows across scarred face. Atmospheric, gritty, utilitarian. --ar 2:3 --v 6",
+  "image_prompt": "Ama Hayashi, a 168cm stocky muscled woman with rich deep brown skin and warm golden undertones blending East Asian, Sub-Saharan African, and South Asian heritage. Dark brown eyes with subtle inner corner scarring, high angular cheekbones, slight epicanthal fold. Dark brown hair with auburn hints pulled into tight crown braids. Horizontal scar across left eyebrow, burn scar on right wrist, geometric three-circle tattoo on left forearm. Visible chrome reflex wiring threading beneath skin at wrists and neck, gunmetal hydraulic joint housings at elbows. Wearing reinforced dark grey cargo pants, fitted black thermal-resistant long-sleeve shirt, worn charcoal synthetic leather jacket with internal holsters, steel-toed boots, matte black military chronometer. Perfectly still, predatory composure, weight centered. Standing in a gritty industrial GLMZ facility with harsh overhead lighting casting sharp shadows across her augmented frame, neon blue and steel grey ambient light. GLMZ, Tier 4 utilitarian aesthetic, no corporate branding, professional and dangerous --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 48.9,
-    "Southeast Asian": 23.6,
-    "Northern European": 17.5,
-    "South Asian": 10.0
+    "East Asian": 39,
+    "Sub-Saharan African": 34.5,
+    "South Asian": 26.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 28
+      },
+      "Korean": {
+        "Korean": 11
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 34.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 15.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 10.6
+      }
+    }
+  }
 }

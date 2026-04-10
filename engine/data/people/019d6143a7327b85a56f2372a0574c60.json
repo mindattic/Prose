@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7327b85a56f2372a0574c60",
   "type": "character",
-  "name": "Tendai Boateng",
+  "name": "Tendai Ozcoidi",
   "aliases": [
     "The Ledger",
     "Yus"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Gravesend Basin, The Float — a converted barge-shop called Tamboli's Provisions, near Pulaski and Chicago Ave",
-  "description": "Yusuf is a broad, slow-moving man who has cultivated the appearance of a tired grandfather — thick silver streaks in his close-cropped black hair, reading glasses perpetually perched on a nose broken twice and set once, a cardigan with one pocket always stuffed with hard candies he offers freely. His skin is a warm brown, deeply lined around the eyes, and his left hand carries a subdermal ledger implant that projects a faint green glow through the skin of his palm when he activates it — the only augmentation he's ever bothered with. He dresses in laundered but mended clothing, never anything that suggests wealth, because wealth makes people count what they owe you and start thinking about not paying.\n\nHe is meticulous, patient, and genuinely warm in the way that only the most dangerous people can afford to be. He has run numbers and books in Gravesend Basin for twenty-three years and has outlasted four gang transitions, two corporate annexation attempts, and one actual flood. He does not threaten people. He employs a man named Calin for that. What Yusuf does is remember — every debt, every late payment, every excuse — and he waits with the equanimity of someone who has priced your failure into the original agreement.",
+  "description": "Tendai Ozcoidi is a broad, slow-moving man who has cultivated the appearance of a tired grandfather — thick silver streaks in his close-cropped black hair, reading glasses perpetually perched on a nose broken twice and set once, a cardigan with one pocket always stuffed with hard candies he offers freely. His skin is a warm brown, deeply lined around the eyes, and his left hand carries a subdermal ledger implant that projects a faint green glow through the skin of his palm when he activates it — the only augmentation he's ever bothered with. He dresses in laundered but mended clothing, never anything that suggests wealth, because wealth makes people count what they owe you and start thinking about not paying.\n\nHe is meticulous, patient, and genuinely warm in the way that only the most dangerous people can afford to be. He has run numbers and books in Gravesend Basin for twenty-three years and has outlasted four gang transitions, two corporate annexation attempts, and one actual flood. He does not threaten people. He employs a man named Calin for that. What Tendai Ozcoidi does is remember — every debt, every late payment, every excuse — and he waits with the equanimity of someone who has priced your failure into the original agreement.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -169,7 +169,7 @@
     "Grudge Holder": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,36 +226,22 @@
     "Gravesend Basin",
     "The CEO",
     "The Iron Lotus",
+    "Provisions",
     "Fenwick Float",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Adaeze Chen-Hawkins",
-    "Silver",
-    "Arcturus CK-5 'Bloodhound'",
-    "Nightlight",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Cezar Watanabe-Gyasi",
-    "GLMZ",
-    "Lazarus IDP-1 'Teeth'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "The Ledger",
-    "The Meridian Barge",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore HydraSync Fluid Balance Monitor",
-    "Vuk Jorgensen-Toure"
+    "Silver",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Haze Johansson",
+    "Palm Leaf",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant Hispanic/Latin American and South Asian ancestry, creating a richly blended phenotype—the genetic legacy of the Ubiquitous Diaspora. His features reflect this complex mixture: the broad facial structure and bone density of West/Central African heritage, the warm undertones and eye shape influenced by Latin American and South Asian genetics, with subtle East Asian and Pacific Islander contributions visible in the slight epicanthic fold and cheekbone prominence.",
+    "heritage": "Profoundly mixed diaspora phenotype reflecting Sub-Saharan African (38.7%), Indigenous American (17.5%), Middle Eastern (13.7%), Southeast Asian (12.9%), Hispanic/Latin American (9.5%), and South Asian (7.7%) ancestry. His features show the broad facial structure and bone density of West/Central African heritage, combined with the angular cheekbone prominence and slight epicanthic fold from Southeast Asian and Indigenous American genetics. Middle Eastern and South Asian ancestry contribute to his warm undertones and eye shape, while the overall result is a distinctly cosmopolitan blend—the biological reality of the Ubiquitous Diaspora written into his face.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick through the chest and abdomen, soft rather than muscular—the build of a man who has stopped moving fast and started thinking deeply. No visible weakness, but no suggestion of physical threat.",
@@ -263,8 +249,8 @@
     "hair_style": "Close-cropped, neat, combed back from his forehead",
     "hair_length": "Short",
     "eye_color": "Dark brown, yellowed slightly at the sclera from decades of indoor work and ambient GLMZ air",
-    "skin_tone": "Rich warm brown with reddish-golden undertones—the result of Sub-Saharan, Hispanic, and South Asian genetic blending. Deeply weathered from two decades under barge lights and occasional sunlight, with the particular patina of someone who has lived through decades of the GLMZ's industrial climate.",
-    "complexion": "Deeply lined around the eyes and mouth, suggesting patient observation rather than age alone. His nose is visibly broken—set crooked twice, giving his face an asymmetrical, lived-in quality. High, prominent cheekbones reflect his mixed ancestry. Stubble visible most days. Warm and grandfatherly rather than threatening. The overall effect is of a face that has absorbed decades of story—lined, weathered, but fundamentally kind.",
+    "skin_tone": "Medium-deep warm brown with golden and reddish undertones—the result of layered Sub-Saharan, Southeast Asian, Indigenous American, Middle Eastern, and South Asian genetic blending. Deeply weathered from two decades under barge lights and occasional sunlight, with the particular patina of someone who has lived through decades of the GLMZ's industrial climate.",
+    "complexion": "Deeply lined around the eyes and mouth, suggesting patient observation rather than age alone. His nose is visibly broken—set crooked twice, giving his face an asymmetrical, lived-in quality. High, prominent cheekbones reflect his mixed ancestry, with subtle angular definition from Indigenous American and Southeast Asian heritage blending with broader African facial structure. Stubble visible most days. Warm and grandfatherly rather than threatening. The overall effect is of a face that has absorbed decades of story—lined, weathered, but fundamentally kind.",
     "distinguishing_marks": [
       "Crooked nose, broken twice and reset once, sits slightly off-center to his left",
       "Fine network of lines radiating from the corners of both eyes, deepest on the left",
@@ -275,16 +261,82 @@
     "posture_movement": "Moves slowly and deliberately, never rushing. He leans against counters and walls often, conserving energy. His hands gesture with open-palmed calm—nothing quick or aggressive. He sits more than he stands. His gaze is patient and rests on people's faces for uncomfortable lengths of time, as if reading ledger entries written on their skin.",
     "clothing_style": "Tier 4 working-class, deliberately underdressed for his wealth and power. Mended cardigans in faded jewel tones or grey, always one pocket stuffed with hard candies in paper wrappers. Laundered button-ups beneath, sleeves rolled to the elbows. Well-fitted but not expensive trousers, often with a patched pocket. Worn leather slippers indoors at Tamboli's Provisions. A battered wristwatch—mechanical, not smart—wound by hand each morning. No jewelry except a tarnished silver wedding band."
   },
-  "image_prompt": "Tendai Boateng, a 178cm broad-shouldered man with rich warm brown skin blending Sub-Saharan African, Hispanic, and South Asian heritage. Short black hair with thick silver streaks, combed back. Dark brown eyes yellowed at the sclera. Crooked nose set off-center, deeply lined face with high cheekbones, reading glasses on a chain. Wearing a faded jewel-toned mended cardigan over a rolled-sleeve button-up, well-fitted trousers with a patched pocket, worn leather slippers. Mechanical wristwatch, tarnished silver wedding band. Patient, grandfatherly expression. Leaning casually against a counter in soft industrial lighting, surrounded by the ambient glow of barge lights and holographic implant traces. Cyberpunk 2226, GLMZ aesthetics, patient and contemplative mood, detailed character portrait --ar 2:3 --v 6",
+  "image_prompt": "Tendai Ozcoidi, 178cm tall broad-shouldered man with warm medium-deep brown skin blending Sub-Saharan African, Indigenous American, Southeast Asian, Middle Eastern, and South Asian heritage. Crooked nose set off-center, high prominent cheekbones, deeply lined face with grandfatherly warmth. Black hair with silver streaks, close-cropped and neat, dark brown eyes with yellowed sclera. Wearing faded jewel-tone mended cardigan over rolled-sleeve button-up, patched trousers, worn leather slippers. Tarnished silver wedding band, mechanical wristwatch, reading glasses on chain around neck. Subtle faint green holographic glow emanating from left palm showing ledger entries. Slow deliberate posture leaning against counter, hands open-palmed and calm. Indoor GLMZ industrial setting with barge lights, weathered and patient expression suggesting decades of observation. GLMZ, warm and grandfatherly but fundamentally observant, aged by climate and contemplation. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 56.7,
-    "Hispanic/Latin American": 27.4,
-    "South Asian": 11.2,
-    "East Asian": 3.6,
-    "Pacific Islander": 1.1
+    "Sub-Saharan African": 38.7,
+    "Indigenous American": 17.5,
+    "Middle Eastern": 13.7,
+    "Southeast Asian": 12.9,
+    "Hispanic/Latin American": 9.5,
+    "South Asian": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 15
+      },
+      "Southern African": {
+        "South African": 4.5,
+        "Mozambican": 5
+      },
+      "Central African": {
+        "Cameroonian": 2.2,
+        "Congolese": 12
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 17.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 2.5
+      },
+      "Kurdish": {
+        "Kurdish": 5.3
+      },
+      "Persian": {
+        "Iranian": 4.8,
+        "Afghan Dari": 1.1
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 5.1
+      },
+      "Vietnamese": {
+        "Vietnamese": 7.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 0.3,
+        "Venezuelan": 0.3
+      },
+      "Mexican": {
+        "Mexican": 2.7
+      },
+      "Central American": {
+        "Honduran": 4.2,
+        "Salvadoran": 2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 3.4
+      },
+      "Pakistani": {
+        "Pashtun": 0.8,
+        "Punjabi Pakistani": 0.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.8
+      }
+    }
+  }
 }

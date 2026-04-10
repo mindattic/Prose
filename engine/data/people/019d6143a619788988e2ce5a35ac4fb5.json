@@ -1,7 +1,7 @@
 {
   "id": "019d6143a619788988e2ce5a35ac4fb5",
   "type": "character",
-  "name": "Meera Okonkwo-Rahman",
+  "name": "Meera Vasquez-Alfarsi-Rahman",
   "aliases": [
     "Gav",
     "Old Concrete"
@@ -13,7 +13,7 @@
   "age": 62,
   "status": "active",
   "location": "Hough Reclamation, near Kedzie and Division",
-  "description": "Gavril is a heavyset man with a dark complexion going ashy at the edges, a silver beard kept short and neat, and the particular kind of stillness that comes from having survived more than one round of everything. He has a prosthetic left hand — a basic civic-grade model that he's had for twenty-two years and painted to match nothing, leaving it the utilitarian grey it came in. He wears reading glasses he doesn't need augmented, just prefers, and he is almost always carrying something — a bag of supplies, someone's paperwork, a covered dish.\n\nGavril has been a Hough Reclamation neighborhood council member for fourteen years, which is long enough that he has seen four different corponation community liaison programs cycle through, promise the world, and quietly exit. He runs the Hough mutual aid grid — a distributed network of food stores, medical supply lockers, and emergency shelter contacts that has kept the neighborhood fed and housed during two infrastructure blackouts and a Ferrogate transit strike. He is not charismatic in the convention sense. He is simply reliable, which in Hough Reclamation is rarer and more valued.",
+  "description": "Meera Vasquez-Alfarsi-Rahman is a heavyset man with a dark complexion going ashy at the edges, a silver beard kept short and neat, and the particular kind of stillness that comes from having survived more than one round of everything. He has a prosthetic left hand — a basic civic-grade model that he's had for twenty-two years and painted to match nothing, leaving it the utilitarian grey it came in. He wears reading glasses he doesn't need augmented, just prefers, and he is almost always carrying something — a bag of supplies, someone's paperwork, a covered dish.\n\nMeera Vasquez-Alfarsi-Rahman has been a Hough Reclamation neighborhood council member for fourteen years, which is long enough that he has seen four different corponation community liaison programs cycle through, promise the world, and quietly exit. He runs the Hough mutual aid grid — a distributed network of food stores, medical supply lockers, and emergency shelter contacts that has kept the neighborhood fed and housed during two infrastructure blackouts and a Ferrogate transit strike. He is not charismatic in the convention sense. He is simply reliable, which in Hough Reclamation is rarer and more valued.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -175,7 +175,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,29 +242,11 @@
     "Ferrogate Transit",
     "The Reclamation Assembly",
     "Highland Park Autonomous Zone",
-    "Silver",
-    "Breck Tannen",
-    "Collinwood Docks",
-    "Eshe Pena-Baah",
-    "Fanta Hedlund-Diarra",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'",
-    "GLMZ",
-    "Jefferson Switch",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nneka Lindqvist-Okafor",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Vuk Jorgensen-Toure"
+    "Silver"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian, Sub-Saharan African, Middle Eastern, Eastern European, East Asian, and Pacific Islander blend—a genetic map of the Ubiquitous Diaspora. The combination produces warm deep brown skin with subtle golden undertones from South Asian ancestry, richly pigmented from African heritage, with the bone structure showing the angular planes influenced by Middle Eastern and Eastern European genetics. Features reflect this complex admixture: the width and prominence of cheekbones carries African and South Asian traits, while the bridge of the nose and eye-set show Middle Eastern and Eastern European influence. Fine details—the particular curve of the ears, the texture of hair roots—speak to the minority East Asian and Pacific Islander contributions woven through the genetic pattern.",
+    "heritage": "South Asian (31.2%), Indigenous American (27.7%), Middle Eastern (14.7%), Northern European (8.9%), Southeast Asian (8.9%), and Hispanic/Latin American (8.6%)—a profound genetic blend from the Ubiquitous Diaspora. The combination produces warm deep brown skin with golden undertones from South Asian and Indigenous American ancestry. The bone structure shows the angular planes influenced by Indigenous American and Middle Eastern genetics: broad, prominent cheekbones characteristic of Indigenous American heritage, balanced with the finer nasal bridge and eye-set from Middle Eastern ancestry. The overall facial geometry reflects this complex admixture—wider-set eyes with slight epicanthic fold hints from Southeast Asian heritage, strong jaw structure, and the particular prominence of the brow ridge that speaks to both Indigenous American and Northern European contributions. Fine details—the curve of the ears, the subtle eye shape carrying Southeast Asian traces, the texture of hair roots—weave through the dominant genetic patterns of South Asian warmth and Indigenous American bone structure.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Heavyset and solid, carrying weight evenly through the torso and shoulders. Not soft—there is muscle underneath decades of steady living. The kind of bulk that comes from physical work and not fighting against it.",
@@ -272,28 +254,80 @@
     "hair_style": "Short, neat, kept close to the scalp with deliberate care",
     "hair_length": "Short",
     "eye_color": "Dark brown, unremarkable",
-    "skin_tone": "Warm deep brown with golden undertones—the particular weathering of a man in his sixties who has worked outdoors and in variable conditions. The skin holds its richness without ashiness, a testament to the South Asian and African components of his ancestry.",
-    "complexion": "Lined face, grooves around the eyes and mouth from decades of listening and thinking. The facial structure reflects his mixed heritage: broad cheekbones, prominent brow ridge, the kind of bone geometry that reads as unmistakably diaspora. Clean-shaven except for the silver beard on the lower jaw. Skin is clear and well-maintained, not vain about it but disciplined.",
+    "skin_tone": "Warm deep brown with golden undertones—the particular weathering of a person in their sixties who has worked outdoors and in variable conditions. The skin holds its richness without ashiness, a testament to the South Asian and Indigenous American components of ancestry. Even melanin distribution characteristic of mixed heritage with strong Indigenous American and South Asian ancestry, with subtle warm undertones from Middle Eastern genetics.",
+    "complexion": "Lined face, grooves around the eyes and mouth from decades of listening and thinking. The facial structure reflects mixed heritage: broad, high cheekbones with strong Indigenous American character, prominent brow ridge, finer nasal bridge from Middle Eastern ancestry, and angular planes that read as unmistakably diaspora. Clean-shaven except for the silver beard on the lower jaw. Skin is clear and well-maintained, not vain about it but disciplined.",
     "distinguishing_marks": [
       "Thin horizontal scar across the left inner forearm, pale and old, visible above the prosthetic wrist—approximately 3 inches long",
       "Age spots on both hands, clustered across knuckles and the backs of the hands",
-      "Calluses on the palms and fingers of his right hand, worn smooth from two decades of use"
+      "Calluses on the palms and fingers of right hand, worn smooth from two decades of use"
     ],
-    "visible_augmentations": "Civic-grade prosthetic left hand in utilitarian grey polymer—functional, unpainted, with visible articulation servos at the knuckles and wrist joint. The hand is older, shows minor cosmetic wear, and moves with deliberate precision. Standard-issue vision correction lens in wire-rimmed reading glasses he wears regularly, not augmented optics.",
-    "posture_movement": "Still and economical. He doesn't gesture broadly or fill space with movement. Stands with weight balanced, slight forward cant from years of listening to people. Walks at a measured pace. The prosthetic hand moves with conscious intent—he has learned its capabilities and limits over twenty-two years and doesn't pretend it's anything other than what it is. Right hand does most fine work, left hand steadies and assists.",
-    "clothing_style": "Tier 4 working practical. Worn but clean utility jacket in dark grey canvas, often with pockets visibly stuffed with papers, supply receipts, or neighborhood contact data. Durable trousers, comfortable shoes broken in over years. No chrome, no status signifiers. A cloth bag—often canvas or heavy cotton, patched and repatched—carries whatever needs carrying. Wire-rimmed reading glasses on a cord. A simple watch, analog, that he actually reads. No jewelry. Everything about his appearance says: I have things to do and limited time for nonsense."
+    "visible_augmentations": "Civic-grade prosthetic left hand in utilitarian grey polymer—functional, unpainted, with visible articulation servos at the knuckles and wrist joint. The hand is older, shows minor cosmetic wear, and moves with deliberate precision. Standard-issue vision correction lens in wire-rimmed reading glasses worn regularly, not augmented optics.",
+    "posture_movement": "Still and economical. Doesn't gesture broadly or fill space with movement. Stands with weight balanced, slight forward cant from years of listening to people. Walks at a measured pace. The prosthetic hand moves with conscious intent—learned its capabilities and limits over twenty-two years and doesn't pretend it's anything other than what it is. Right hand does most fine work, left hand steadies and assists.",
+    "clothing_style": "Tier 4 working practical. Worn but clean utility jacket in dark grey canvas, often with pockets visibly stuffed with papers, supply receipts, or neighborhood contact data. Durable trousers, comfortable shoes broken in over years. No chrome, no status signifiers. A cloth bag—often canvas or heavy cotton, patched and repatched—carries whatever needs carrying. Wire-rimmed reading glasses on a cord. A simple watch, analog, that he actually reads. No jewelry. Everything about appearance says: I have things to do and limited time for nonsense."
   },
-  "image_prompt": "Meera Okonkwo-Rahman, a 178cm heavyset man in his sixties with warm deep brown skin and golden undertones, reflecting South Asian, Sub-Saharan African, Middle Eastern, Eastern European, East Asian and Pacific Islander heritage. Silver hair with dark roots, short and neat. Lined face with broad heritage-mixed cheekbones, prominent brow ridge, dark eyes behind wire-rimmed reading glasses on a cord. Clean-shaven with a silver beard on the lower jaw. Right hand shows age spots and deep calluses; left hand is a utilitarian grey polymer civic-grade prosthetic with visible servo articulation, twenty-two years of deliberate wear. Thin pale 3-inch scar visible on left inner forearm above the prosthetic. Wearing a worn but clean dark grey canvas utility jacket stuffed with papers and contact data, durable trousers, broken-in shoes. Carrying a patched canvas cloth bag. Analog watch on wrist. Still posture, economical movement, slight forward cant. Great Lakes Metropolitan Zone 2226 cyberpunk setting, cool neon-filtered lighting, mid-shift shadows, standing in a neighborhood data collection hub or community center. Mood: measured, disciplined, purposeful, no-nonsense. --ar 2:3 --v 6",
+  "image_prompt": "Meera Vasquez-Alfarsi-Rahman, a weathered man in his sixties with warm deep brown skin glowing with golden undertones, mixed Indigenous American and South Asian heritage visible in broad high cheekbones and strong angular planes. Silver hair with dark undertones, cut short and neat, silver beard on lower jaw. Dark brown unremarkable eyes behind wire-rimmed reading glasses on a cord. Heavyset solid build, 178cm tall, lined face with deep grooves around eyes and mouth from decades of listening. Civic-grade grey polymer prosthetic left hand with visible servos, old utilitarian wear. Thin pale scar on left forearm above prosthetic. Age spots clustered on both hands, calluses on right hand. Wearing dark grey worn canvas utility jacket stuffed with papers and receipts, durable practical trousers, broken-in comfortable shoes. Patched canvas cloth bag. Simple analog watch. No jewelry, no chrome augmentations. Still economical posture, weight balanced, measured movements. Great Lakes Metropolitan Zone 2226 near-future megacity setting, indoor neighborhood office or community workspace, warm diffused lighting across his face emphasizing the richness of his skin tone and the depth of his lined features, practical and grounded atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 29.2,
-    "Sub-Saharan African": 26.1,
-    "Middle Eastern": 20.1,
-    "Eastern European": 11.5,
-    "East Asian": 7.7,
-    "Pacific Islander": 5.4
+    "South Asian": 31.2,
+    "Indigenous American": 27.7,
+    "Middle Eastern": 14.7,
+    "Northern European": 8.9,
+    "Southeast Asian": 8.9,
+    "Hispanic/Latin American": 8.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 19.6,
+        "Baloch": 11.6
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 8.4
+      },
+      "Mesoamerican": {
+        "Nahua": 13.4,
+        "Zapotec": 5.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 14.7
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 5.5,
+        "Swedish": 1.4
+      },
+      "Germanic": {
+        "German": 2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 3.9,
+        "Cebuano": 2.3
+      },
+      "Thai": {
+        "Thai": 0.4
+      },
+      "Vietnamese": {
+        "Vietnamese": 2.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 2.8,
+        "Peruvian": 0.7
+      },
+      "Mexican": {
+        "Mexican": 5.1
+      }
+    }
+  }
 }

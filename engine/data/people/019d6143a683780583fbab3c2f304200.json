@@ -1,7 +1,7 @@
 {
   "id": "019d6143a683780583fbab3c2f304200",
   "type": "character",
-  "name": "Zara Szczypiński",
+  "name": "Zara Tuivailala",
   "aliases": [
     "Tobi",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "University Spine, Brewer's Spine sublevel archive stacks, near sub-level access near State and Van Buren",
-  "description": "Oluwatokunbo is a broad-shouldered woman with deep umber skin mapped by decades of fluorescent archival light — her eyes carry the particular fatigue of someone who has spent a career reading things that no longer want to be read. She keeps her silver-streaked hair in tight wrapped cords pinned with antique data-spike styluses, and her fingers are perpetually ink-stained despite no physical ink being involved; a psychosomatic habit she developed after thirty years of interfacing with degraded data substrates. A small bioluminescent glyph — an old Polynesian voyaging star chart commissioned from a gene-artist — pulses faintly along her left forearm when she's excited, which colleagues use as a more reliable indicator of her enthusiasm than her carefully measured words.\n\nShe speaks with the precise, unhurried authority of someone who has outlasted three department chairs and four curriculum overhauls and considers herself accountable only to the dead languages she serves. Students find her terrifying; junior colleagues find her generous in ways they don't expect. She has no patience for academic posturing but extraordinary patience for a corrupted file, and she treats both the E.L.F. that haunts her archive terminal — she calls it Grandmother — and a first-year graduate student with the same respectful directness. Her secret grief is that she has reconstructed seventeen languages that no living person will ever speak again.",
+  "description": "Zara Tuivailala is a broad-shouldered woman with deep umber skin mapped by decades of fluorescent archival light — her eyes carry the particular fatigue of someone who has spent a career reading things that no longer want to be read. She keeps her silver-streaked hair in tight wrapped cords pinned with antique data-spike styluses, and her fingers are perpetually ink-stained despite no physical ink being involved; a psychosomatic habit she developed after thirty years of interfacing with degraded data substrates. A small bioluminescent glyph — an old Polynesian voyaging star chart commissioned from a gene-artist — pulses faintly along her left forearm when she's excited, which colleagues use as a more reliable indicator of her enthusiasm than her carefully measured words.\n\nShe speaks with the precise, unhurried authority of someone who has outlasted three department chairs and four curriculum overhauls and considers herself accountable only to the dead languages she serves. Students find her terrifying; junior colleagues find her generous in ways they don't expect. She has no patience for academic posturing but extraordinary patience for a corrupted file, and she treats both the E.L.F. that haunts her archive terminal — she calls it Grandmother — and a first-year graduate student with the same respectful directness. Her secret grief is that she has reconstructed seventeen languages that no living person will ever speak again.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -163,7 +163,7 @@
     "Beauty Seeker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -184,35 +184,19 @@
     "Brightmoor Reclamation",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Zheng-dao Bioelectric",
+    "Plot 17",
+    "Patience",
     "The Heritage Vault",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "ARCHIVE",
     "Silver",
     "Vantablack Strata",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Déjà Vu",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Celeste Abram",
-    "Clay",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "MERIDIAN",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Sulfur Crown Agriculture",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Archive",
-    "The Pure Hand",
-    "The Question",
-    "The Reclamation Assembly",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure"
+    "Clay"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (38.7%) with substantial Eastern European (26.2%) and East Asian (16.4%) ancestry, complemented by Middle Eastern (15.4%) and minor Northern European (3.3%) heritage. This rare global combination produces a striking phenotype: deep brown skin with warm undertones carrying subtle complexity from the East Asian and Middle Eastern admixture, creating a richly nuanced tone rather than simple umber.",
+    "heritage": "Pacific Islander (40.2%) forms the genetic foundation, complemented by Indigenous American (18.2%), East Asian (18.1%), South Asian (8.9%), Hispanic/Latin American (8.8%), and Southeast Asian (5.8%) ancestry. This rare Oceanic-centric diaspora blend creates a distinctive phenotype: the broad facial structure and fuller proportions of Pacific Islander and Indigenous American ancestry combine with the refined cheekbone definition and eye shape of East Asian heritage, while South Asian and Southeast Asian contributions add warmth and complexity to skin tone. The result is a face that reads as distinctly multicultural, grounded in Oceanic genetics but enriched by continental Asian and Americas-origin lineages.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and sturdy, with the kind of frame that suggests decades of seated work — solid through the torso, slightly softened at the middle from a lifetime of archive-stack caffeine and desk meals, but still carrying underlying strength",
@@ -220,8 +204,8 @@
     "hair_style": "Tight wrapped cords, pinned with antique data-spike styluses at the crown and sides; kept severe and functional",
     "hair_length": "Medium (cords fall to mid-shoulder)",
     "eye_color": "Deep brown with faint archival-gray overlay from ocular enhancement",
-    "skin_tone": "Deep warm brown with subtle golden undertones from East Asian ancestry blend, the particular ashy undertone that comes from decades under fluorescent archival lighting creating a matte, understated finish",
-    "complexion": "Lined face with deep grooves bracketing her mouth and forehead creases from sustained focus work; facial structure shows blended ancestry with broader cheekbones characteristic of Sub-Saharan and East Asian heritage, balanced by Eastern European bone structure; skin texture slightly weathered and papery from air-recycled archive environments; minimal makeup, dark circles under eyes suggesting chronic sleep debt",
+    "skin_tone": "Warm medium brown with golden and olive undertones, luminous rather than matte. The tone reflects the sun-adapted pigmentation of Pacific seafaring populations blended with warmer complexion contributions from East Asian, Southeast Asian, and South Asian ancestry, creating a richly dimensional finish that catches light distinctly despite decades under archival lighting.",
+    "complexion": "Lined face with deep grooves bracketing mouth and forehead creases from sustained focus work. Facial structure reflects the broader, more angular cheekbones and fuller facial proportions of Pacific Islander and Indigenous American ancestry, balanced by the refined eye shape and defined cheekbone structure of East Asian heritage. Warm golden-olive undertones remain visible even in weathered skin texture. Minimal makeup; dark circles under eyes suggesting chronic sleep debt. Subtle South Asian influence visible in nostril shape and overall facial proportion harmony.",
     "distinguishing_marks": [
       "Bioluminescent glyph on left forearm — a Polynesian voyaging star chart in faded cyan-green bioware, pulses visibly when animated or engaged with work",
       "Chronic ink-staining along cuticles and nail beds of both hands (psychosomatic, despite using no physical ink)"
@@ -231,16 +215,82 @@
     "clothing_style": "Tier 2/3 academic blend — clean but worn linen blazers (cream, gray, pale brown tones), layered under thermal undershirts in cooler archive environments. Prefers high-necked shirts to minimize profile. Archive-grade utility trousers with reinforced pockets, sensible flat-soled shoes (worn leather, well-maintained but clearly years old). Adds a faded university spine wool scarf in winter. No visible jewelry except functional styluses in hair. Overall appearance is deliberately understated — money enough for quality basics, no interest in display.",
     "age_apparent": "Late 50s to early 60s"
   },
-  "image_prompt": "Zara Szczypiński, late 50s archive researcher in cyberpunk 2226 Great Lakes Metropolitan Zone, deep warm brown skin with subtle golden undertones and weathered texture from decades of fluorescent archival work. Black hair in tight wrapped cords adorned with antique data-spike styluses, silver threading visible throughout. Deep brown eyes with faint archival-gray ocular enhancement overlay, direct unflinching gaze. Lined face with pronounced grooves and forehead creases, blended Sub-Saharan African and Eastern European bone structure, dark circles suggesting chronic sleep debt. Worn cream linen blazer over high-necked thermal undershirt, archive-grade utility trousers, sensible flat-soled worn leather shoes. Faded cyan-green bioluminescent Polynesian star chart glyph on left forearm, slightly desaturated from age and pulsing softly. Sitting hunched in an archival workspace surrounded by degraded media, fluorescent blue-white lighting casting harsh shadows across her weathered features. Hands positioned with precision, fingers showing faint ink-staining at cuticles despite using no physical ink. Deliberate, economical posture. Understated academic aesthetic, no jewelry except functional styluses. Mood: focused, isolated, carrying the weight of preserved knowledge. Cyberpunk atmosphere, retro-futuristic archive environment --ar 2:3 --v 6",
+  "image_prompt": "A late-fifties Pacific Islander-Oceanic diaspora woman with warm medium-brown skin, golden-olive undertones luminous even under archival lighting, sitting hunched in a data archive facility, 2226. Her face reflects rich ancestral blending — broad Pacific cheekbones balanced with refined East Asian eye shape, weathered from decades of focused archive work with deep mouth grooves and forehead creases. Black hair with silver threading braided into functional cords pinned with antique data-spike styluses. Her left forearm glows with a faded cyan-green bioluminescent Polynesian star chart. Wearing cream linen blazer layered over high-necked thermal shirt, archive-grade utility trousers, worn leather flat shoes. Hands stained with chronic ink marks, fingers positioned with precision. Direct, unflinching eye contact. Ocular enhancement visible as faint silver threading at eye corners. Surrounded by degraded data carriers and holographic archival displays casting cool blue light. The scene captures both her deliberate stillness and the weight of decades spent preserving forgotten information. Mood: focused, weathered, quietly resolute. GLMZ 2200s aesthetic, archival setting, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 38.7,
-    "Eastern European": 26.2,
-    "East Asian": 16.4,
-    "Middle Eastern": 15.4,
-    "Northern European": 3.3
+    "Pacific Islander": 40.2,
+    "Indigenous American": 18.2,
+    "East Asian": 18.1,
+    "South Asian": 8.9,
+    "Hispanic/Latin American": 8.8,
+    "Southeast Asian": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 11
+      },
+      "Melanesian": {
+        "Fijian": 14.2
+      },
+      "Micronesian": {
+        "Palauan": 15
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 6.9,
+        "Ojibwe": 5.1
+      },
+      "Plains Nations": {
+        "Muscogee": 3,
+        "Cherokee": 0.9
+      },
+      "Mesoamerican": {
+        "Maya": 2.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 7.6
+      },
+      "Korean": {
+        "Korean": 1.7
+      },
+      "Japanese": {
+        "Japanese": 8.8
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 8.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 3.9
+      },
+      "Caribbean": {
+        "Puerto Rican": 2.8,
+        "Dominican": 1.4
+      },
+      "Central American": {
+        "Guatemalan": 0.7
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 0.9
+      },
+      "Laotian": {
+        "Laotian": 2.7
+      },
+      "Indonesian": {
+        "Sundanese": 2.2
+      }
+    }
+  }
 }

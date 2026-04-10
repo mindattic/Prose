@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73a765088be2a3d64abcfdd",
   "type": "character",
-  "name": "Zephyr Lindström-Achebe",
+  "name": "Zephyr Soriano-Chowdhury",
   "aliases": [
     "Zubi",
     "The Wax Prophet"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, sub-level studio called The Marrow, near sub-level access near State and Van Buren",
-  "description": "Zubaidah is a broad-shouldered woman with deep amber skin mapped by decades of bioluminescent tattoos she acquired piecemeal from artists she traded music for — constellations of pale blue light pulse along her collarbones when she is performing or intensely moved. Her hair is shaved close except for a single thick braid at the back, dyed a permanent interference-pattern silver that shifts between grey and violet. Her hands are her most arresting feature: large, calloused, and adorned with sub-dermal vibration emitters implanted along each finger so she can feel sound frequencies directly in her palms. She walks with the unhurried authority of someone who has outlasted trends.\n\nShe composes what she calls 'weight music' — dense, slow-moving sonic sculptures assembled from salvaged industrial machinery, fermented water-pressure feedback loops, and recordings made inside the bodies of willing volunteers via swallowed microphone capsules. Her work is not pleasant in any conventional sense but it is affecting in ways listeners struggle to articulate afterward. She is reverent toward E.L.F.s and maintains a standing altar of magnetic tape spools and old hard-drive platters in her studio, making weekly data offerings to a local E.L.F. she calls Grandmother Hum, who she credits with inspiring her best compositions.",
+  "description": "Zephyr Soriano-Chowdhury is a broad-shouldered woman with deep amber skin mapped by decades of bioluminescent tattoos she acquired piecemeal from artists she traded music for — constellations of pale blue light pulse along her collarbones when she is performing or intensely moved. Her hair is shaved close except for a single thick braid at the back, dyed a permanent interference-pattern silver that shifts between grey and violet. Her hands are her most arresting feature: large, calloused, and adorned with sub-dermal vibration emitters implanted along each finger so she can feel sound frequencies directly in her palms. She walks with the unhurried authority of someone who has outlasted trends.\n\nShe composes what she calls 'weight music' — dense, slow-moving sonic sculptures assembled from salvaged industrial machinery, fermented water-pressure feedback loops, and recordings made inside the bodies of willing volunteers via swallowed microphone capsules. Her work is not pleasant in any conventional sense but it is affecting in ways listeners struggle to articulate afterward. She is reverent toward E.L.F.s and maintains a standing altar of magnetic tape spools and old hard-drive platters in her studio, making weekly data offerings to a local E.L.F. she calls Grandmother Hum, who she credits with inspiring her best compositions.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -175,7 +175,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,62 +224,112 @@
     "Hamtramck Enclave",
     "Grandmother",
     "The Marrow Ledger",
+    "Pressure Drop",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "The Marrow Exchange",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver",
+    "The Marrow Exchange",
     "The Pure Hand",
     "Gravimetric Collapse Charge GCC-9",
-    "The Pale Mile",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus BH-2 'Marrow'",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Eshe Pena-Baah",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Helix Biosystems",
-    "Iowan Behemoth — 'Cathedral'",
-    "MERIDIAN",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Listener",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (73%) with Sub-Saharan African (14%) and Middle Eastern (13%) ancestry, creating a complexion with warm golden-bronze undertones and fine facial features characteristic of Southeast Asian genetics blended with broader bone structure from African heritage",
+    "heritage": "Richly blended phenotype reflecting South Asian dominance (36.6%) combined with substantial Hispanic/Latin American (27.7%) and Sub-Saharan African (19.0%) ancestry, with meaningful contributions from Indigenous American (7.4%), Eastern European (5.6%), and East Asian (3.7%) heritage. This creates warm medium-brown skin with golden-bronze undertones, broad bone structure from African and Indigenous American genetics, balanced facial proportions from the South Asian-Hispanic foundation, and refined cheekbone and eye geometry from Eastern European and East Asian components.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid without excess fat; decades of manual instrument-building and performance have left her muscular through the chest and back, with a slightly thickened waist suggesting age and sustained physicality rather than decline",
     "hair_color": "Permanent interference-pattern silver with violet undertones",
     "hair_style": "Shaved close to the scalp except for a single thick braid extending down the back, worn loose or wrapped around itself",
     "hair_length": "Shaved except for long braid",
-    "eye_color": "Deep brown with warm undertones, naturally warm; cochlear amplifiers give them a barely perceptible crystalline quality at certain angles",
-    "skin_tone": "Warm golden-bronze, the result of Southeast Asian ancestry (73%) creating the primary tone, enriched by Sub-Saharan African (14%) and Middle Eastern (13%) heritage; smooth and well-maintained despite age",
-    "complexion": "Lined around the eyes and mouth from fifty-two years of intense listening and emotional expression; skin unmarked by acne or significant scarring; naturally expressive face with fine facial structure reflecting Southeast Asian ancestry, settling into a neutral contemplative state; subtle depth to cheekbones and jawline from blended heritage",
+    "eye_color": "Deep warm brown with subtle crystalline quality from cochlear amplifiers catching light at certain angles",
+    "skin_tone": "Warm medium-brown with golden-bronze undertones, smooth and well-maintained despite fifty-two years; reflects the blended convergence of South Asian, Hispanic/Latin American, and Sub-Saharan African ancestry",
+    "complexion": "Lined around the eyes and mouth from decades of intense listening and emotional expression; skin unmarked by acne or significant scarring; naturally expressive face with balanced structure reflecting South Asian-Hispanic-African convergence and refined details from Eastern European and East Asian heritage; subtle depth to cheekbones and jawline from diverse ancestral blend",
     "distinguishing_marks": [
       "Bioluminescent constellation tattoos in pale blue across both collarbones that pulse softly when performing or emotionally activated",
       "Additional bioluminescent patterns scattered across shoulders and upper back in spiraling geometric designs, glowing faintly in darkness",
       "Fine tracery of old scars on the inside of both forearms from early tattoo work and experimental augmentation installations"
     ],
-    "visible_augmentations": "Sub-dermal vibration emitter nodes visible as faint metallic glints along each finger, most obvious on the knuckles and palm-side; subtle neural interface port barely visible at the base of her skull beneath the close-shaved hair; cochlear amplifiers create minimal external change but her ear cartilage is slightly modified",
+    "visible_augmentations": "Sub-dermal vibration emitter nodes visible as faint metallic glints along each finger, most obvious on the knuckles and palm-side; subtle neural interface port barely visible at the base of her skull beneath the close-shaved hair; cochlear amplifiers create minimal external change but ear cartilage is slightly modified",
     "posture_movement": "Moves with economical grace, unhurried and deliberate; walks with weight distributed through her center, shoulders back but not rigid; hands often hang at rest with fingers slightly curled, as if listening; when seated, she tends to occupy space fully without tension; her gaze lingers on things others miss — acoustic details in environments",
     "clothing_style": "Tier 3-4 working-class eclectic; favors layered, tactile fabrics: heavy linen shirts dyed indigo or charcoal, worn leather vests salvaged and relined, loose canvas pants with deep pockets for equipment; sturdy unmarked boots with worn soles; no corporate branding or luxury indicators; jewelry limited to simple metal rings on most fingers (custom-made, likely by trade with other artisans); occasionally wears a long wool shawl dyed with natural dyes, treating it as both practical and ceremonial"
   },
-  "image_prompt": "Zephyr Lindström-Achebe, 52-year-old Southeast Asian-African-Middle Eastern woman with warm golden-bronze skin, shaved head with silver braid down her back, standing in a dimly lit workshop, 2226. Her bioluminescent blue constellation tattoos pulse softly across her collarbones and spiral up her shoulders, glowing faintly in the low light. Fine laugh lines frame warm brown eyes with a crystalline augmentation quality. Wearing layered indigo linen shirt and worn leather vest, fingers adorned with simple metal rings, sub-dermal vibration nodes visible as metallic glints on knuckles. She stands with economical grace, centered and present, hands relaxed at rest. Soft amber workshop lighting catches the worn textures of her clothes and the subtle scars on her forearms. Cyberpunk 2220s aesthetic, contemplative expression, acoustic engineer or sound artist workspace in background. Atmospheric, tactile lighting emphasizing augmentations and bioluminescent marks. --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Soriano-Chowdhury, fifty-two year old sonic artist, warm medium-brown skin with golden undertones reflecting South Asian-Hispanic-African blended ancestry, deep warm brown eyes with subtle crystalline augmentation gleam, shaved head with single thick silver-violet braid down back. Broad-shouldered muscular build, lined face showing decades of intense listening, fine cheekbones and jawline showing East Asian refinement. Pale blue bioluminescent constellations glowing softly on collarbones and spiraling geometric patterns across upper back. Metallic sub-dermal nodes glinting on fingers. Layered working-class aesthetic: indigo linen shirt, worn leather vest, canvas pants, sturdy boots. Neural port visible at skull base. Standing with economical grace, hands slightly curled, centered posture. GLMZ Great Lakes Metropolitan Zone, warm indoor ambient lighting with accent on bioluminescent tattoos, moody and contemplative, detailed portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 73.1,
-    "Sub-Saharan African": 13.8,
-    "Middle Eastern": 13.1
+    "South Asian": 36.6,
+    "Hispanic/Latin American": 27.7,
+    "Sub-Saharan African": 19,
+    "Indigenous American": 7.4,
+    "Eastern European": 5.6,
+    "East Asian": 3.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.2
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 11.1
+      },
+      "Indian": {
+        "Marathi": 14.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 13.1
+      },
+      "Central American": {
+        "Nicaraguan": 14.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 12.2
+      },
+      "West African": {
+        "Liberian": 1
+      },
+      "East African": {
+        "Rwandan": 5.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 2.5,
+        "Aymara": 1.6
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 1,
+        "Ojibwe": 1.2
+      },
+      "Plains Nations": {
+        "Lakota": 1,
+        "Cherokee": 0.1
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 1.9,
+        "Hungarian": 0.3
+      },
+      "Slavic East": {
+        "Russian": 3.3
+      },
+      "Slavic South": {
+        "Croatian": 0.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 3.2
+      },
+      "Korean": {
+        "Korean": 0.5
+      }
+    }
+  }
 }

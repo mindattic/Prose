@@ -1,7 +1,7 @@
 {
   "id": "019d6143a717797eb01932b2fbf81ef5",
   "type": "character",
-  "name": "Chidi Benali",
+  "name": "Hinano Masoe",
   "aliases": [
     "Jade",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near State and Madison",
-  "description": "Vuk Edlund-Gyan is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 54, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a data thief out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Vuk Edlund-Gyan lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Hinano Masoe is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 54, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a data thief out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Hinano Masoe lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.43,
@@ -261,7 +261,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,27 +274,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Kamala Blomberg-Konadu",
-    "Lazarus EC-4 'Companion'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "TESSERA CR-12 'Whisper'",
-    "The Arrangement",
-    "The Fathom Line",
-    "The Peninsula",
-    "The Wire Taps",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Pan-African and Southeast Asian fusion with Latin American admixture. Strong Sub-Saharan African baseline (33%) blended with North African (29.7%) creating warm deep brown tones, complemented by Southeast Asian (19.9%) and Hispanic/Latin American (17.4%) features that add subtle complexity to facial structure and skin undertones.",
+    "heritage": "Pacific Islander dominant (50.6%) with Northern European (21.2%), Sub-Saharan African (14.8%), Eastern European (10.3%), and Middle Eastern (3.1%) ancestry. The genetic mix creates a warm golden-brown complexion with Pacific Islander bone structure and fullness, brightened by Northern European undertones, deepened by African heritage, and subtle Eastern European angularity in the cheekbones.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and solid, muscular through the shoulders and torso with a low center of gravity. Hands are large-knuckled and scarred, built for precision and force. No excess fat, but thick-boned and dense.",
@@ -302,8 +289,8 @@
     "hair_style": "Pulled back in a tight, utilitarian braid, no vanity in the arrangement",
     "hair_length": "Medium",
     "eye_color": "Deep brown with alert, assessing quality",
-    "skin_tone": "Deep warm brown with golden undertones, weathered by age and exposure. The tone reflects strong Sub-Saharan African ancestry with North African warmth and subtle Southeast Asian depth.",
-    "complexion": "Lined face, crow's feet and forehead creases that map decades of squinting at screens and problems. Bone structure shows Southeast Asian influence in cheekbones and jawline proportion, African heritage in facial width and lip fullness. Scarred upper lip from an old break. Jawline still strong. Minimal makeup, rough-groomed.",
+    "skin_tone": "Warm golden-brown with olive undertones, weathered by age and exposure. The tone reflects the dominant Pacific Islander ancestry with luminous warmth, deepened by Sub-Saharan African heritage, and subtle cool undertones from Northern and Eastern European genetic contribution.",
+    "complexion": "Lined face, crow's feet and forehead creases that map decades of squinting at screens and problems. Bone structure shows Pacific Islander influence in wide cheekbones, full facial features, and robust jawline proportion, with subtle Eastern European angularity and African heritage in facial width and lip fullness. Scarred upper lip from an old break. Jawline still strong. Minimal makeup, rough-groomed.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone, surgical precision in the old wound",
       "Burn scars across the backs of both hands in scattered patches, from reactive armor testing",
@@ -313,15 +300,62 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight balanced on the balls of her feet, ready to shift. Eyes constantly scanning. Her hands rest palms-down on tables, never crossed. When seated, she takes the chair with the best sightline to the door.",
     "clothing_style": "Tier 3 utilitarian: dark reinforced synthweave jacket with cargo pockets, many of them loaded and zipped. Black tactical pants with knee reinforcement and thigh pockets. Scuffed boots rated for industrial environments. A gray undershirt visible at the collar. No logos, no affectation, no jewelry except a worn chronometer on her left wrist. Everything functional, nothing decorative."
   },
-  "image_prompt": "Chidi Benali, 168cm tall, deep warm brown skin with golden undertones, weathered face with strong cheekbones and Southeast Asian influence mixed with African heritage features. Steel gray hair with dark roots pulled tight in utilitarian braid. Deep brown alert eyes, lined face showing decades of experience. Thin white scar temple to cheekbone, burn scars on backs of hands, faded circuit board tattoo on right forearm. Dark titanium cranial port visible at base of skull with surgical scarring. Wearing dark reinforced synthweave tactical jacket with loaded cargo pockets, black knee-reinforced tactical pants, scuffed industrial boots, gray undershirt. Worn chronometer on left wrist. Standing balanced on balls of feet, weight ready to shift, posture economically precise. Scanning gaze. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial noir lighting, gritty urban setting, motion-ready stance. Completely functional aesthetic, zero affectation. --ar 2:3 --v 6",
+  "image_prompt": "Hinano Masoe, 168cm stocky muscular woman with warm golden-brown skin blending Pacific Islander, Northern European, Sub-Saharan African, Eastern European, and Middle Eastern ancestry. Steel gray hair pulled back in tight braid, deep brown alert eyes. Lined weathered face with wide cheekbones, robust jawline, subtle Eastern European angularity, full lips, scarred upper lip. Thin white surgical scar from left temple to cheekbone. Large scarred hands with burn patches. Exposed dark titanium cranial implant at base of skull with fine scarring. Faded black circuit board tattoo on right forearm. Wearing dark reinforced synthweave cargo jacket, black tactical pants with knee reinforcement, scuffed industrial boots, gray undershirt at collar, worn chronometer on left wrist. Economical posture, weight on balls of feet, alert scanning gaze. GLMZ, Great Lakes Metropolitan Zone, moody industrial lighting, standing ready with tactical awareness, no-nonsense presence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 33.0,
-    "North African": 29.7,
-    "Southeast Asian": 19.9,
-    "Hispanic/Latin American": 17.4
+    "Pacific Islander": 50.6,
+    "Northern European": 21.2,
+    "Sub-Saharan African": 14.8,
+    "Eastern European": 10.3,
+    "Middle Eastern": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Micronesian": {
+        "Palauan": 5.3,
+        "Kiribati": 2.7
+      },
+      "Melanesian": {
+        "Papua New Guinean": 9.2
+      },
+      "Polynesian": {
+        "Tongan": 14.4,
+        "Samoan": 19
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 21.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 14.8
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 2.4,
+        "Ukrainian": 0.9
+      },
+      "Slavic South": {
+        "Bosnian": 2.2
+      },
+      "Slavic West": {
+        "Czech": 4.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 1.1
+      },
+      "Arab Gulf": {
+        "Yemeni": 1.8,
+        "Iraqi": 0.2
+      }
+    }
+  }
 }

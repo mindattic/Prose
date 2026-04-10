@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6257443ab54f3aa2bf88bf5",
   "type": "character",
-  "name": "Haze Tlaloc",
+  "name": "Haze Mukherjee",
   "aliases": [
     "Daemon",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Halima Zakharov-Boateng is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 28, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHalima Zakharov-Boateng operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Haze Mukherjee is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 28, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHaze Mukherjee operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.11,
@@ -262,7 +262,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,45 +279,23 @@
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
+    "Harbor Fish Shack",
     "Slagworks Industrial",
-    "Arcturus HD-1 'Homestead'",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Glenville Sound",
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Prophet",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "TERMINUS",
-    "TESSERA WL-6 'Stacker'",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Indigenous American dominant (39.2%) with Eastern European (23.1%), Southeast Asian (17.8%), Northern European (11.3%), and North African (8.6%) ancestry — a striking genetic blend creating angular features with warm golden-brown undertones",
+    "heritage": "Hispanic/Latin American dominant (62.6%) with South Asian (32.8%) and Sub-Saharan African (4.6%) ancestry — a striking genetic blend creating angular features with warm rich brown undertones. The Latin American and South Asian mix produces defined cheekbones with refined facial geometry, while the Sub-Saharan African ancestry contributes depth and warmth to skin tone and subtle features around the eyes and lips.",
     "height_cm": 182,
     "weight_kg": 78,
     "build": "Athletic and lean with defined musculature — dancer's grace combined with fighter's economy of movement. No excess weight, all functional.",
     "hair_color": "Dark brown, naturally",
     "hair_style": "Short, kept practical and low-maintenance. Occasionally stubbled at the edges where he's trimmed it himself.",
     "hair_length": "Short",
-    "eye_color": "Cybernetic — chrome iris rings with variable luminescence; natural eye color (dark brown) visible around the augmentation",
-    "skin_tone": "Warm golden-brown with subtle clay undertones — the Indigenous American and North African ancestry creates a rich, warm complexion with slight reddish undertones in certain light",
-    "complexion": "High, prominent cheekbones characteristic of Indigenous American ancestry; angular jawline with Southeast Asian influence creating refined facial geometry. Sharp nose bridge. Features are striking and memorable rather than conventionally handsome — the blend creates an austere, focused appearance. Minimal facial hair, kept clean. Skin shows minor scarring around the cybernetic eye installation at orbital bone. Sleep deprivation leaves faint darkness under eyes but he's adapted enough that it doesn't show dramatically.",
+    "eye_color": "Cybernetic — chrome iris rings with variable luminescence; natural dark brown eye visible around the augmentation",
+    "skin_tone": "Warm deep brown with golden-olive undertones — the Latin American and South Asian ancestry creates a rich, warm complexion with subtle honey-bronze notes in certain light, grounded by the Sub-Saharan African heritage contribution to depth",
+    "complexion": "High, prominent cheekbones characteristic of Latin American and South Asian ancestry blended together; angular jawline creating refined facial geometry. Sharp nose bridge with subtle broadness from Sub-Saharan African heritage. Features are striking and memorable rather than conventionally handsome — the blend creates an austere, focused appearance. Minimal facial hair, kept clean. Skin shows minor scarring around the cybernetic eye installation at orbital bone. Sleep deprivation leaves faint darkness under eyes but he's adapted enough that it doesn't show dramatically.",
     "distinguishing_marks": [
       "Thin scar running from left temple to cheekbone, approximately 8cm, partially concealed by the chrome iris ring of his left cybernetic eye",
       "Burn scar on right forearm (approximately 12cm) partially covered by subdermal armor plating — visible only at wrist where chrome meets skin",
@@ -328,16 +306,39 @@
     "posture_movement": "Moves with precision and minimal wasted motion — body always positioned for lateral shift or rapid response. Walks quietly despite height. Sits with spine straight, weight forward on thighs. Eyes track movement even when body is still. Rests rarely and incompletely — appears coiled even when stationary.",
     "clothing_style": "Tier 3-4 practical wear. Black reinforced cargo pants with utility webbing (worn brands, functional). Sleeveless or short-sleeved tops that expose the arm plating deliberately — a display of capability and commitment. Dark colors dominating (charcoal, black, deep blue). Jackets are oversized and layered for utility and concealment. Heavy boots — scuffed, rebanded multiple times. No visible branding or corpo insignia. Clothing shows wear consistent with active work rather than poverty."
   },
-  "image_prompt": "Haze Tlaloc, 182cm tall lean athletic male, warm golden-brown skin with Indigenous American and Eastern European features, sharp high cheekbones, angular jawline, dark brown eyes with chrome cybernetic iris rings, short dark brown hair. Visible subdermal military armor plating across torso and forearms with filed-down serial numbers, deliberately exposed. Scar from left temple to cheekbone, burn scar on right forearm. Sleeveless dark top revealing arm augmentations, black reinforced cargo pants, heavy scuffed boots. Posture coiled and precise, eyes tracking movement. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody neon-lit background, atmospheric lighting emphasizing the contrast between scarred skin and metallic implants, gritty industrial setting, professional portrait style --ar 2:3 --v 6",
+  "image_prompt": "Haze Mukherjee, 182cm tall lean athletic male with warm deep brown skin and golden-olive undertones, dark brown close-cropped hair, sharp angular features blending Latin American and South Asian heritage. Prominent cheekbones, defined jawline, chrome iris rings surrounding dark brown cybernetic eyes with visible scarring at left temple. Visible subdermal military-grade armor plating across torso and forearms with scratched metallic seams visible beneath warm brown skin. Burn scars and micro-scarring on forearms. Sleeveless black top exposing arm plating, oversized dark reinforced jacket, black cargo pants with utility webbing, heavy scuffed boots. Coiled posture, intense focused gaze, precision movement. GLMZ, Great Lakes Metropolitan Zone, neon-lit industrial setting, cool blue and warm amber lighting, gritty worn aesthetic, film noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 39.2,
-    "Eastern European": 23.1,
-    "Southeast Asian": 17.8,
-    "Northern European": 11.3,
-    "North African": 8.6
+    "Hispanic/Latin American": 62.6,
+    "South Asian": 32.8,
+    "Sub-Saharan African": 4.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 20.1
+      },
+      "Caribbean": {
+        "Cuban": 2.8,
+        "Dominican": 7.9
+      },
+      "South American": {
+        "Colombian": 31.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 32.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 1.7,
+        "Ethiopian": 2.9
+      }
+    }
+  }
 }

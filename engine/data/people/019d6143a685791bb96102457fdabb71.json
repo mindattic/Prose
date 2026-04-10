@@ -1,7 +1,7 @@
 {
   "id": "019d6143a685791bb96102457fdabb71",
   "type": "character",
-  "name": "Diego Zaragoza",
+  "name": "Siddharth Pathak",
   "aliases": [
     "Ori",
     "The Soap Queen"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, Wash-Block 7 (a row of steam-vented stalls near the Enclave's main pedestrian artery), near Western and Chicago Ave",
-  "description": "Orinola is a broad-shouldered woman whose arms are ropey with muscle from decades of wringing, hauling, and pressing. Her skin is deep brown and perpetually damp at the temples, and she wears her silver-streaked hair pinned back under a waxed canvas cap. She has no dramatic augmentations — just a single subdermal temp-sensor strip along her left forearm so she always knows the water temperature without testing it by hand, a practical choice made thirty years ago and never regretted. Her face is a map of practical expressions: skeptical squint, satisfied nod, the slow blink she uses when someone is wasting her time.\n\nShe runs Szczepańska's Wash & Mend out of a narrow storefront that smells of lye, eucalyptus pressing compound, and the faint burnt-sugar scent of the seam-welder she uses for alterations. She knows every household in a four-block radius by the state of their laundry. She can tell you who is sick (strange smell, unwashed for two weeks), who just got lucky (dress shirts pressed three days in a row), and who is grieving (everything black, brought in without a word). She is not a gossip — she is a reader. There is a difference, and she will explain it to you firmly if you confuse the two.",
+  "description": "Siddharth Pathak is a broad-shouldered woman whose arms are ropey with muscle from decades of wringing, hauling, and pressing. Her skin is deep brown and perpetually damp at the temples, and she wears her silver-streaked hair pinned back under a waxed canvas cap. She has no dramatic augmentations — just a single subdermal temp-sensor strip along her left forearm so she always knows the water temperature without testing it by hand, a practical choice made thirty years ago and never regretted. Her face is a map of practical expressions: skeptical squint, satisfied nod, the slow blink she uses when someone is wasting her time.\n\nShe runs Szczepańska's Wash & Mend out of a narrow storefront that smells of lye, eucalyptus pressing compound, and the faint burnt-sugar scent of the seam-welder she uses for alterations. She knows every household in a four-block radius by the state of their laundry. She can tell you who is sick (strange smell, unwashed for two weeks), who just got lucky (dress shirts pressed three days in a row), and who is grieving (everything black, brought in without a word). She is not a gossip — she is a reader. There is a difference, and she will explain it to you firmly if you confuse the two.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -168,7 +168,7 @@
     "Mentor": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -214,41 +214,14 @@
     "Hamtramck Enclave",
     "Tessera Corponation",
     "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Silver",
-    "Palette",
-    "Clover",
     "Chicago",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Arcturus HD-1 'Homestead'",
-    "Breck Tannen",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Dzemal Acholonu-Patagiri",
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Ihaia Nystrom-Keita",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Narrowcast",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Counter",
-    "The Pure Hand",
-    "The Seam",
-    "Tomasz Wren",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Silver",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Felix Roundtree"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Northern European (45.2%) with significant Hispanic/Latin American (22.7%) and Middle Eastern (18.6%) ancestry, creating a striking phenotype blend. Secondary contributions from Eastern European (5.6%), South Asian (5.9%), and Sub-Saharan African (2.0%) heritage create subtle depth in features and skin undertones.",
+    "heritage": "Predominantly North African (71.4%) with significant South Asian (14.9%) and Hispanic/Latin American (13.7%) ancestry. North African heritage dominates facial structure, bone prominence, and base skin tone. South Asian ancestry contributes subtle depth to facial features and warm undertones. Hispanic/Latin American heritage adds warmth and richness to complexion. The combination creates a striking phenotype with strong Mediterranean-North African structure enhanced by South and Central American warmth.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solidly muscled through the arms and upper back from five decades of manual labor. Not lean, not heavy — compact and functional, with the kind of strength that comes from repetitive work rather than augmentation. Slight thickening at the waist from middle age and a lifestyle of early mornings in humid heat.",
@@ -256,8 +229,8 @@
     "hair_style": "Pinned back tightly, usually under a waxed canvas work cap",
     "hair_length": "Medium (shoulder-length when unpinned, kept practical)",
     "eye_color": "Dark brown, clear and observant",
-    "skin_tone": "Warm medium brown with subtle golden and olive undertones from Mediterranean and Middle Eastern ancestry, weathered from steam and humidity exposure. The base carries warmth from Latin American heritage with depth from Sub-Saharan and South Asian genetics.",
-    "complexion": "Lined face with deep-set eyes and a prominent nose showing Mediterranean structure. Perpetually damp at the temples from the steam environment. Skin texture is thick and resilient, sun-damaged and creased around the eyes and mouth from squinting and decades of expression — skepticism carved into features with the kind of character lines that suggest both hardship and resolve. Cheekbones show subtle prominence from Eastern European and Middle Eastern ancestry. No cosmetic grooming; practical and unadorned.",
+    "skin_tone": "Warm medium-deep brown with golden, olive, and terracotta undertones. North African base richly blended with Latin American warmth and South Asian depth. Weathered from steam and humidity exposure, carrying the patina of decades in heat and moisture.",
+    "complexion": "Lined face with deep-set eyes and a prominent nose showing North African and Mediterranean structure. Cheekbones show the subtle prominence and warmth characteristic of North African ancestry blended with South Asian depth. Face shape carries slight Latin American warmth around the jawline. Perpetually damp at the temples from the steam environment. Skin texture is thick and resilient, sun-damaged and creased around the eyes and mouth from squinting and decades of expression — skepticism carved into features with the kind of character lines that suggest both hardship and resolve. No cosmetic grooming; practical and unadorned.",
     "distinguishing_marks": [
       "Faded blue subdermal indicator light along the left forearm (temperature-sensing strip, barely visible unless she moves her arm in specific light)",
       "Stress fracture scar on right palm, pale and old, from a seam-welder accident twenty-three years ago",
@@ -268,17 +241,35 @@
     "posture_movement": "Economical and efficient. No wasted motion. She stands with weight distributed evenly, shoulders back. Her movements are measured and deliberate — a person who has learned not to jerk or rush around hot water and machinery. When listening, she delivers the slow blink: a three-second pause with eyes closed, a gesture that says *I hear you, but I am deciding if you are worth my response*. When working, her hands move with practiced precision.",
     "clothing_style": "Tier 4 working-class practical. Heavy canvas work apron in faded indigo, stained with pressing compound and mineral deposits from decades of use, worn over a plain long-sleeved undershirt (changed daily, always dark colors) to protect from splashing and heat. The waxed canvas cap is her signature — cream-colored, decades old, kept waterproofed and functional. Heavy-soled work shoes, scuffed and re-soled twice. A thin synthetic watch on her right wrist (not augmented, purely functional, set to water-temperature precision). No jewelry except a plain iron wedding band, worn thin. Her clothing carries the faint smell of eucalyptus and lye even after washing."
   },
-  "image_prompt": "Diego Zaragoza, 168cm, middle-aged woman with warm olive-toned skin and Mediterranean-Middle Eastern features, dark brown hair with silver streaks pinned back under a cream waxed canvas work cap. Deep-set observant dark eyes, lined face carved with decades of skepticism and focus. Broad shoulders, compact muscular build from manual labor, wearing a faded indigo canvas work apron over dark long-sleeved undershirt, heavy work shoes. Faint blue subdermal indicator light visible on left forearm. Scarred hands showing old chemical and work burns. Standing in a humid industrial laundry setting, warm steam rising around her, soft golden light catching the weathered texture of her skin. Posture economical and deliberate. Cyberpunk 2226, Great Lakes Metropolitan Zone. Realistic, gritty, dignified working-class aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Siddharth Pathak, a middle-aged woman with warm medium-deep brown skin blending North African, South Asian, and Latin American heritage. Prominent cheekbones and strong Mediterranean nose structure. Dark brown eyes, weathered and observant. Face lined with character from decades of work, particularly around eyes and mouth from squinting in steam. Dark brown hair with silver streaks pulled back tightly under a cream-colored waxed canvas work cap. Faded blue subdermal light barely visible on left forearm. Wearing faded indigo canvas work apron heavily stained with pressing compound, over dark long-sleeved undershirt. Heavy-soled work shoes. Thin synthetic watch on right wrist, plain iron wedding band worn thin. Hands bear faint chemical burns and old scars. Standing in a humid laundry facility backlit by warm industrial lighting, steam rising around her. Posture economical and efficient, weight evenly distributed, shoulders back. Expression serious and contemplative. GLMZ, working-class Tier 4, gritty realism, faint smell of eucalyptus and lye suggested in atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 45.2,
-    "Hispanic/Latin American": 22.7,
-    "Middle Eastern": 18.6,
-    "South Asian": 5.9,
-    "Eastern European": 5.6,
-    "Sub-Saharan African": 2.0
+    "North African": 71.4,
+    "South Asian": 14.9,
+    "Hispanic/Latin American": 13.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 71.4
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 14.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 5.3,
+        "Colombian": 4.8
+      },
+      "Caribbean": {
+        "Puerto Rican": 3.6
+      }
+    }
+  }
 }

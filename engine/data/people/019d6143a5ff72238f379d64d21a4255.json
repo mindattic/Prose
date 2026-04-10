@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ff72238f379d64d21a4255",
   "type": "character",
-  "name": "Frost Dalgaard-Jaramillo",
+  "name": "Frost Matai-Fassi",
   "aliases": [
     "Zero-K",
     "K"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Garret, rents a room in a converted water tower shared with five others, near Damen and Armitage",
-  "description": "Ekene moves through spaces with the particular quality of someone who is always listening — head slightly tilted, eyes unfocused, processing acoustic information before visual. Their Igbo-Polish-Malagasy heritage has produced a face that strangers frequently find difficult to read and then realize they've been trying to categorize incorrectly: a long jaw, widely-spaced dark eyes with yellow-ringed irises (geneware, chosen deliberately to resemble a secondary predator), skin the deep warm brown of their father's Igbo family with the occasional Malagasy undertone that shifts in certain light. Their hair is shaved close at the temples and maintained in a structured vertical ridge down the center that they dye in bands of frequency-reactive pigment — it shifts color with ambient sound, which means at their own sets it becomes a visual instrument.\n\nEkene does not play music so much as engineer environments. Their sets at the Garret's underground circuit are classified by regular attendees as physically affecting — subsonic layers, frequencies that produce specific emotional states, structures that take an hour to resolve and leave people feeling like they've been somewhere. They are precise about sound in the way a surgeon is precise about incision, and they have a corresponding social bluntness — they find small talk genuinely effortful and do not produce it. People who understand what they do treat them with considerable respect. People who don't frequently mistake their quietness for shyness, which is incorrect.",
+  "description": "Frost Matai-Fassi moves through spaces with the particular quality of someone who is always listening — head slightly tilted, eyes unfocused, processing acoustic information before visual. Their Igbo-Polish-Malagasy heritage has produced a face that strangers frequently find difficult to read and then realize they've been trying to categorize incorrectly: a long jaw, widely-spaced dark eyes with yellow-ringed irises (geneware, chosen deliberately to resemble a secondary predator), skin the deep warm brown of their father's Igbo family with the occasional Malagasy undertone that shifts in certain light. Their hair is shaved close at the temples and maintained in a structured vertical ridge down the center that they dye in bands of frequency-reactive pigment — it shifts color with ambient sound, which means at their own sets it becomes a visual instrument.\n\nFrost Matai-Fassi does not play music so much as engineer environments. Their sets at the Garret's underground circuit are classified by regular attendees as physically affecting — subsonic layers, frequencies that produce specific emotional states, structures that take an hour to resolve and leave people feeling like they've been somewhere. They are precise about sound in the way a surgeon is precise about incision, and they have a corresponding social bluntness — they find small talk genuinely effortful and do not produce it. People who understand what they do treat them with considerable respect. People who don't frequently mistake their quietness for shyness, which is incorrect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -178,7 +178,7 @@
     "Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,46 +228,28 @@
     "The Nearfield",
     "Zheng-dao Bioelectric",
     "Glenville Sound",
+    "Frequency",
     "The Heritage Vault",
     "Bathysphere Networks",
+    "Circuit",
     "Irkalla",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Alper Lebedev-Tutu",
-    "Aurochs Medical Complex",
-    "Breck Tannen",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Highland Park Autonomous Zone",
-    "Independent Darknet Node Architecture",
-    "Kang Athletics KA-200 'Padwork'",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Pirjo Asante-Ulukhan",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "TESSERA PG-2 'Signature'",
-    "The Ferment Quarter",
-    "The Quiet Room",
-    "The Third Rail",
-    "Veslemøy Achebe-Tursynov",
-    "WELLSPRING"
+    "Frost",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (43.9%), Hispanic/Latin American (28.9%), East Asian (24.2%), with minor South Asian (3.0%) ancestry—a striking genetic blend reflected in warm-toned skin with subtle golden undertones, angular facial structure with wide-set eyes, and a distinctive mix of Northern European and East Asian bone structure",
+    "heritage": "Pacific Islander (54.0%), North African (28.5%), Indigenous American (17.5%) ancestry—a striking genetic blend. Warm medium-brown skin with golden and bronze undertones characteristic of Oceanic ancestry, enriched by North African depth and Indigenous American earth tones. Robust facial structure combines high, prominent cheekbones and defined jawline from Pacific Islander and North African lineages with the broader facial geometry and eye-set spacing typical of Indigenous American heritage. The overall effect is a luminous, sun-adapted complexion that shifts perceptibly under different lighting.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, with long limbs and minimal body fat—the build of someone who moves through space precisely rather than powerfully. Shoulders narrow, hips defined, chest flat. Moves with economical efficiency.",
     "hair_color": "Black base with frequency-reactive pigment bands in shifting purples, teals, and magentas—reactive to ambient sound frequencies",
-    "hair_style": "Structured vertical ridge down the center of the scalp, shaved close at the temples exposing pale skin",
+    "hair_style": "Structured vertical ridge down the center of the scalp, shaved close at the temples exposing medium-brown skin",
     "hair_length": "Short (ridge approximately 8cm tall when standing)",
     "eye_color": "Dark brown iris with distinctive bright yellow ring around the pupil (deliberate geneware modification)",
-    "skin_tone": "Warm medium brown with golden undertones—a nuanced blend of Northern European fairness, East Asian warmth, and Latin American sun-kissed pigmentation that shifts perceptibly under different lighting, creating a unique luminescent quality",
-    "complexion": "Angular jaw with prominent cheekbones reflecting mixed Northern European and East Asian ancestry, widely-spaced eyes giving an unusual, deliberately difficult-to-categorize facial structure. Minimal facial hair. Skin clear, well-maintained but without cosmetic attention—focused grooming. Expression typically neutral or slightly distant, eyes often unfocused as if processing invisible information.",
+    "skin_tone": "Warm medium brown with golden and bronze undertones—a nuanced blend of Pacific Islander warmth, North African richness, and Indigenous American earth tones that shifts perceptibly under different lighting, creating a luminous, sun-adapted quality",
+    "complexion": "Robust facial structure with high, prominent cheekbones and defined jawline reflecting Pacific Islander and North African ancestry, combined with the broader facial geometry and widely-spaced eyes characteristic of Indigenous American heritage, creating an unusually striking, deliberately difficult-to-categorize facial structure. Minimal facial hair. Skin clear, well-maintained but without cosmetic attention—focused grooming. Expression typically neutral or slightly distant, eyes often unfocused as if processing invisible information.",
     "distinguishing_marks": [
       "Hairline tattoo along both ears in fine geometric patterns resembling frequency waveforms, visible because of close temple shaving",
       "Faint scar tissue ridge along the right collarbone from cochlear implant installation, approximately 4cm long"
@@ -276,15 +258,51 @@
     "posture_movement": "Moves with deliberate, economical precision. Head frequently tilted at slight angle as if listening to distant sound. Eyes unfocused or gazing past immediate surroundings. Rarely makes unnecessary gestures. When standing still, weight balanced evenly. When walking, movement is fluid but purposeful, not casual. Minimal fidgeting. Gives impression of someone internally focused, processing invisible data.",
     "clothing_style": "Tier 2 working-artist aesthetic with deliberate sonic/technical elements. Favors sleeveless or mesh-back garments to display haptic feedback array and allow skin contact with air for acoustic sensitivity. Primary colors: blacks, deep greys, occasionally matte metallics. Clothing is well-maintained but not luxurious—functional, modular pieces from mid-range corpo brands. Often wears a custom rig vest with integrated haptic feedback visualization (LEDs that mirror the subdermal array's activation patterns). Minimalist jewelry: small geometric earrings or ear cuffs that complement the hairline tattoos. Footwear is practical—modified boots with enhanced grip for standing long hours at equipment."
   },
-  "image_prompt": "Frost Dalgaard-Jaramillo, 2226 cyberpunk character, 178cm lean angular build, warm medium-brown skin with golden undertones reflecting mixed Northern European, Hispanic, and East Asian heritage, sharp angular jawline with wide-set eyes, dark brown eyes with bright yellow pupil rings (geneware modification), black hair with frequency-reactive purple-teal-magenta bands and vertical ridge shaved at temples exposing pale skin, visible geometric frequency waveform tattoos along ears, cochlear implant ports behind ears, subdermal haptic feedback array visible across upper back, sleeveless mesh-back tech vest with integrated LED haptic visualization in blacks and deep grey, minimalist geometric earrings, modified practical boots, posture shows internal focus with head slightly tilted as if listening to invisible data, economical precise movement, neutral distant expression, moody cyberpunk studio lighting with cool blue-purple ambient light against warm golden skin tones, neon accent lighting highlighting the yellow iris modification and reactive hair pigment system, cinematic 2200s tech-noir atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Frost Matai-Fassi, GLMZ, lean angular figure with warm medium-brown luminous skin blending Pacific Islander, North African, and Indigenous American heritage. High cheekbones, defined jawline, widely-spaced dark eyes with distinctive bright yellow iris rings (geneware modification). Black hair with frequency-reactive purple-teal-magenta pigment bands forming vertical ridge down center, shaved temples exposing geometric hairline frequency-waveform tattoos. Sleeveless mesh-back technical rig vest in black and matte grey displaying subdermal haptic feedback array on upper back and shoulders (subtle surface texture variation visible). Minimalist geometric earrings complementing tattoos. Modified boots with enhanced grip. Head tilted as if listening, expression neutral and internally focused, eyes slightly unfocused as if processing invisible data. Cochlear implant ports visible behind ears. Standing in urban sonic workspace with ambient acoustic lighting, atmospheric synth glow, GLMZ 2200s aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 43.9,
-    "Hispanic/Latin American": 28.9,
-    "East Asian": 24.2,
-    "South Asian": 3.0
+    "Pacific Islander": 54,
+    "North African": 28.5,
+    "Indigenous American": 17.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 30.9,
+        "Tongan": 5.7
+      },
+      "Melanesian": {
+        "Ni-Vanuatu": 7.6
+      },
+      "Micronesian": {
+        "Palauan": 7.8,
+        "Marshallese": 2
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 0.2,
+        "Tuareg": 0.3
+      },
+      "Nile Valley": {
+        "Egyptian": 2.3,
+        "Sudanese": 0.9
+      },
+      "Maghreb": {
+        "Tunisian": 24.8
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 15.3
+      },
+      "Andean": {
+        "Quechua": 1.5,
+        "Mapuche": 0.7
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66176bf92901f7a0b4be830",
   "type": "character",
-  "name": "Nova Kovács",
+  "name": "Nova Karunaratne",
   "aliases": [
     "Bismuth",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
-  "description": "Ngaire Arai-Ofori-Atta are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 31, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a sniper out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nNgaire Arai-Ofori-Atta have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
+  "description": "Nova Karunaratne are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 31, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a sniper out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nNova Karunaratne have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.12,
@@ -262,7 +262,7 @@
     "Berserker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,33 +279,14 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "Geartown",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Doru Fofana-Câmpeanu",
-    "Eshe Pena-Baah",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Narrowcast",
-    "Prophet",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Spire Light on Still Water",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora blend: primary ancestry from Hispanic/Latin American (21.7%), Eastern European (20.8%), and East Asian (18.6%) regions, with significant contributions from Southeast Asian (15.1%), Northern European (12.8%), and Sub-Saharan African (11.0%) lineages. This creates a striking pan-global phenotype — angular facial structure from Eastern European stock, warm golden-brown undertones from Latin American and African heritage, with subtle East Asian eye shape and cheekbone prominence.",
+    "heritage": "Complex pan-global diaspora phenotype reflecting balanced East Asian (37.5%), Sub-Saharan African (24.8%), and Northern European (14.3%) ancestry, with meaningful contributions from South Asian (12.6%), Southeast Asian (6.6%), and Hispanic/Latin American (4.2%) lineages. This genetic layering creates a distinctly cosmopolitan appearance: East Asian and Southeast Asian ancestry shape prominent, high-set cheekbones and subtle epicanthic eye geometry; Sub-Saharan African heritage contributes warm, deep brown undertones and fuller lip contours; Northern European ancestry adds angular facial planes and jaw definition; South Asian genetics contribute warmth to overall complexion. The result is a striking multi-heritage phenotype that transcends singular regional categorization — skin tone, facial structure, and coloring reflect genuine global ancestry mixing rather than any single continental origin.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and angular with ropy muscle definition — the build of someone who trains for precision and endurance rather than mass. Low body fat, visible shoulder and forearm musculature from repetitive rifle work and weapon maintenance.",
@@ -313,8 +294,8 @@
     "hair_style": "Pulled back in a tight, functional braid or wrapped low at the base of the skull",
     "hair_length": "Medium",
     "eye_color": "Dark brown, alert and unwavering",
-    "skin_tone": "Warm golden-bronze with subtle olive undertones — the layered complexity of multi-regional ancestry. Slight ashen quality consistent with nocturnal lifestyle has muted natural vibrancy, but underlying warmth remains visible on cheekbones and neck.",
-    "complexion": "Sharp, high cheekbones with subtle East Asian contour, squared jaw with Eastern European angularity, and hollow temples. Skin is clear but marked by the exhaustion of circadian inversion — faint dark crescents under eyes. Clean-shaven or minimal facial hair. Expression typically neutral, eyes tracking environments with predatory awareness. Subtle warmth in skin tone visible despite fatigue, suggesting genetic resilience to circadian disruption.",
+    "skin_tone": "Rich warm bronze with complex golden and mahogany undertones — the result of East Asian, Sub-Saharan African, and South Asian genetic layering. Deep enough to show the full warmth of African heritage contribution, yet with the subtle golden quality from East and South Asian ancestry. Slight ashen quality consistent with nocturnal lifestyle has muted natural vibrancy, but underlying warmth remains visible on cheekbones and neck.",
+    "complexion": "Prominent high cheekbones with East Asian and Southeast Asian contour, squared jaw with Northern European angularity, and hollow temples suggesting mixed-ancestry facial structure. Fuller lips reflecting Sub-Saharan African heritage. Skin is clear but marked by the exhaustion of circadian inversion — faint dark crescents under eyes. Clean-shaven or minimal facial hair. Expression typically neutral, eyes tracking environments with predatory awareness. The interplay of warm deep brown tone despite fatigue suggests genetic resilience to circadian disruption.",
     "distinguishing_marks": [
       "Thin scar running from left temple to jaw line — clean surgical appearance, likely from injury or augmentation surgery",
       "Faint burn marks on right forearm and wrist — heat scarring from rifle handling and stim-synthesizer thermal venting",
@@ -324,17 +305,73 @@
     "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion. Shoulders slightly forward, spine straight. When stationary, weight shifts subtly between feet as if constantly ready to move. Head movement is controlled, eyes scanning in practiced patterns. Hands remain visible and relaxed unless in high-stress situations. Walking gait is smooth and measured, heel-to-toe placement that minimizes sound.",
     "clothing_style": "Tier 4 practical utilitarian — form-fitted tactical cargo pants in dark gray or black, reinforced at knees and ankles. Fitted long-sleeve compression shirt or tactical undershirt to conceal and protect augmentation sites. Heavy insulated jacket or modular body armor overlay in matte charcoal. Worn synthetic boots with good ankle support and grip soles. Minimal jewelry except for a functional watch (analog, not networked) and a single silver ring on right hand. Everything is clean but not new — maintained rather than flashy. No corporate logos, no obvious gang colors."
   },
-  "image_prompt": "Nova Kovács, 188cm lean cyberpunk operative with golden-bronze skin, high Slavic cheekbones and subtle East Asian eye contours, dark alert eyes, black hair pulled tight in low braid. Sharp facial structure, faint nocturnal exhaustion under eyes, thin scar from temple to jaw, visible chrome augmentations on left forearm with amber LED pulses, burn scarring on right wrist, geometric tattoo marks on inner forearm. Dressed in dark tactical compression shirt under matte charcoal modular armor, fitted black cargo pants, worn synthetic boots. Posture economical and predatory, shoulders slightly forward, ready stance. Neon-lit GLMZ corridor background, cool blue and amber lighting casting shadows across cybernetic augmentation sites, metallic sheen catching light. Moody, focused, nocturnal operative aesthetic, cyberpunk 2226 --ar 2:3 --v 6",
+  "image_prompt": "Nova Karunaratne, 188cm tall lean angular neo-noir operative with rich warm bronze skin reflecting complex East Asian, Sub-Saharan African, and Northern European heritage. High prominent cheekbones, dark alert eyes, black hair pulled back in tight braid. Clean-shaven with faint surgical scar from temple to jawline. Wearing dark tactical cargo pants, fitted compression undershirt, matte charcoal modular body armor jacket. Chrome synthesizer interface visible on left forearm with amber LED pulses, geometric tattoo marks on left inner forearm. Posture economical and controlled, standing ready in shadows of neon-lit GLMZ industrial district, cool blue and amber lighting, slight exhaust haze, 2226 neo-noir urban aesthetic, cinematic noir mood, hyper-realistic skin texture showing genetic complexity, predatory alertness in eyes, nocturnal warrior demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 21.7,
-    "Eastern European": 20.8,
-    "East Asian": 18.6,
-    "Southeast Asian": 15.1,
-    "Northern European": 12.8,
-    "Sub-Saharan African": 11.0
+    "East Asian": 37.5,
+    "Sub-Saharan African": 24.8,
+    "Northern European": 14.3,
+    "South Asian": 12.6,
+    "Southeast Asian": 6.6,
+    "Hispanic/Latin American": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 11.8,
+        "Mandarin Northern": 24.6
+      },
+      "Korean": {
+        "Korean": 1.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 7.4
+      },
+      "East African": {
+        "Ethiopian": 3.1,
+        "Somali": 0.3
+      },
+      "Southern African": {
+        "South African": 9.6,
+        "Zambian": 4.4
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 1.5,
+        "English": 4.2
+      },
+      "Scandinavian": {
+        "Swedish": 0.7,
+        "Norwegian": 0.1
+      },
+      "Germanic": {
+        "German": 7.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 12.6
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 4.9
+      },
+      "Cambodian": {
+        "Khmer": 1.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 3.3,
+        "Salvadoran": 0.9
+      }
+    }
+  }
 }

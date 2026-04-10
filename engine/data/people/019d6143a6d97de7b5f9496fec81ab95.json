@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d97de7b5f9496fec81ab95",
   "type": "character",
-  "name": "Bakhtiyor Lautoa",
+  "name": "Sekou Balogun",
   "aliases": [
     "Mama Soraya",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Gravesend Basin, operates out of a converted shipping container turned tea house called The Counting Jar, near Halsted and Division",
-  "description": "Soraya is a broad-shouldered woman whose face carries the particular weathered softness of someone who has spent decades making difficult decisions and sleeping soundly afterward. Her skin is a deep warm brown, her hair gone fully silver and kept in tight finger-coils close to her scalp, and her eyes are a pale amber that people often mistake for lens mods — they're entirely natural, a gift from some Kasparian ancestor she'll never meet. She favors heavy linen wraps in ochre and rust, always a calculating pad visible in the folds of her clothing, always a cup of something hot in her hand. She has bioluminescent tracery along her left forearm from an old mod she got in her forties — faint blue-green lines that pulse when her pulse elevates, which is almost never.\n\nSoraya runs her loan operation with the patient confidence of someone who has never once needed to raise her voice to collect a debt. She's genuinely warm to the people of Gravesend Basin, knows three generations of most families, attends naming ceremonies and memorial feeds, and charges 40% interest on loans that legitimate institutions would never extend to begin with. She does not consider herself a predator. She considers herself infrastructure. Her books are immaculate, her memory for numbers is legendary, and she has a gift for knowing exactly how much rope to give someone before pulling.",
+  "description": "Sekou Balogun is a broad-shouldered woman whose face carries the particular weathered softness of someone who has spent decades making difficult decisions and sleeping soundly afterward. Her skin is a deep warm brown, her hair gone fully silver and kept in tight finger-coils close to her scalp, and her eyes are a pale amber that people often mistake for lens mods — they're entirely natural, a gift from some Kasparian ancestor she'll never meet. She favors heavy linen wraps in ochre and rust, always a calculating pad visible in the folds of her clothing, always a cup of something hot in her hand. She has bioluminescent tracery along her left forearm from an old mod she got in her forties — faint blue-green lines that pulse when her pulse elevates, which is almost never.\n\nSekou Balogun runs her loan operation with the patient confidence of someone who has never once needed to raise her voice to collect a debt. She's genuinely warm to the people of Gravesend Basin, knows three generations of most families, attends naming ceremonies and memorial feeds, and charges 40% interest on loans that legitimate institutions would never extend to begin with. She does not consider herself a predator. She considers herself infrastructure. Her books are immaculate, her memory for numbers is legendary, and she has a gift for knowing exactly how much rope to give someone before pulling.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -170,7 +170,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,32 +226,11 @@
   "related_entities": [
     "Gravesend Basin",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pale Mile",
-    "Rust",
-    "Babatunde Öztürk-Savea",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Ferrogate Enforcer Cruiser",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Helix Biosystems Cortical Patience Engine",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "TESSERA ES-4 'Perimeter'",
-    "Tessera TP-0 'Shepherd's Crook'",
-    "The Basin",
-    "The Gate",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander (59.9%) with Central Asian (24.6%) and South Asian (15.5%) ancestry—a striking blend of Oceanic, Steppe, and Subcontinental genetics. The combination creates warm golden-brown skin tones with subtle olive undertones, broad facial structure with strong cheekbones, and the robust build characteristic of Pacific Islander populations.",
+    "heritage": "Northern European (38%), Sub-Saharan African (31.2%), South Asian (21.6%), Middle Eastern (7%), and Hispanic/Latin American (2.2%) ancestry—a striking global blend. The combination creates warm medium-brown skin with golden undertones, balanced facial structure reflecting African and South Asian features with Northern European bone structure, and a sturdy build suggesting endurance and presence.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid without heaviness; a body built for endurance and presence rather than speed. Strong core, thick forearms, the kind of frame that suggests physical labor in her past and deliberate maintenance now.",
@@ -259,8 +238,8 @@
     "hair_style": "Tight finger-coils, close to scalp, meticulously maintained",
     "hair_length": "Short",
     "eye_color": "Pale amber, naturally translucent—often mistaken for optical augmentation",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, weathered but well-kept. The blended ancestry creates a rich, even complexion that deepens slightly in sun exposure.",
-    "complexion": "Face lined with decades of decision-making; creases around eyes and mouth suggest frequent mild expressions rather than habitual frowning. Broad cheekbones and strong jaw reflect Pacific Islander and Central Asian ancestry. Skin shows even texture and good care—no visible scarring on the face. Minimal makeup, if any. Expression carries quiet authority.",
+    "skin_tone": "Warm medium-brown with golden undertones, weathered but well-kept. The blended ancestry creates an even complexion that deepens slightly in sun exposure, reflecting the warmth of Sub-Saharan African and South Asian heritage balanced with Northern European genetics.",
+    "complexion": "Face lined with decades of decision-making; creases around eyes and mouth suggest frequent mild expressions rather than habitual frowning. Strong cheekbones and defined jaw reflecting the blend of African, South Asian, and Northern European ancestry. Skin shows even texture and good care—no visible scarring on the face. Minimal makeup, if any. Expression carries quiet authority.",
     "distinguishing_marks": [
       "Bioluminescent vein tracery on left forearm: faint blue-green lines branching from wrist to elbow, pulsing faintly with elevated heart rate (old mod, circa 2190s)",
       "Small scar on right palm, likely from sharp object or industrial accident, partially obscured by subdermal memory chip implant site"
@@ -269,14 +248,64 @@
     "posture_movement": "Moves with deliberate economy; never rushed, never wasted motion. Sits solidly, takes up space without apology. Hands are constantly in motion when thinking—shuffling imaginary papers, calculating on fingertips. Her stillness when listening is absolute and unsettling.",
     "clothing_style": "Heavy linen wraps in ochre, rust, and earth tones—intentionally evocative of West African textile traditions, but in contemporary cuts suitable for Tier 4 Gravesend Basin. Layers that allow concealment of a calculating pad in the folds. Always carries a cup (tea, coffee, warm milk—never empty-handed). Practical footwear, worn but maintained. No visible corporate branding; clothes read as 'community fixture' rather than 'wealthy' or 'struggling.' A single piece of jewelry: a worn silver bracelet that has belonged to her for decades."
   },
-  "image_prompt": "Bakhtiyor Lautoa, 172cm tall, solid enduring build with broad shoulders. Golden-brown skin with subtle olive undertones, Pacific Islander and Central Asian ancestry evident in strong cheekbones and broad facial structure. Silver-white hair in tight finger-coils close to scalp, meticulously maintained. Pale amber eyes, naturally translucent. Face lined with decades of quiet authority, creases around eyes and mouth. Left forearm displays faint bioluminescent blue-green vein tracery pulsing softly. Wearing layered earth-tone linen wraps in ochre and rust, contemporary Tier 4 cut, holding a ceramic cup, worn silver bracelet visible on wrist. Practical worn footwear. Sitting solidly in an industrial-chic Gravesend Basin interior, warm ambient lighting catching the bioluminescent tracery. Cyberpunk 2220s aesthetic, moody atmospheric lighting, composed and watchful presence. --ar 2:3 --v 6",
+  "image_prompt": "Sekou Balogun, a 172cm woman with warm medium-brown skin and golden undertones, standing in GLMZ Gravesend Basin. Short silver-white finger-coils frame her face. Pale amber eyes, naturally translucent. Strong defined cheekbones and jaw reflecting blended African, South Asian, and Northern European heritage. Lined face suggesting decades of quiet authority. Wearing layered earth-tone linen wraps in ochre and rust, intentionally West African-inspired textile design in contemporary cut. Holding a steaming cup of tea, never empty-handed. Left forearm shows faint blue-green bioluminescent vein tracery pulsing subtly. Broad shoulders, solid enduring frame. Moving with deliberate economy, absolute stillness when listening. Worn silver bracelet visible on wrist. No corporate branding. Tier 4 community fixture aesthetic. Indoor lighting casting warm shadows, mood contemplative and commanding. Ultradetailed realism, neo-noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 59.9,
-    "Central Asian": 24.6,
-    "South Asian": 15.5
+    "Northern European": 38,
+    "Sub-Saharan African": 31.2,
+    "South Asian": 21.6,
+    "Middle Eastern": 7,
+    "Hispanic/Latin American": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 21.1
+      },
+      "British Isles": {
+        "Scottish": 5.5
+      },
+      "Germanic": {
+        "German": 11.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 31.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.4
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 10.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 4.3,
+        "Syrian": 2.3
+      },
+      "Arab Gulf": {
+        "Iraqi": 0.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 1.1,
+        "Dominican": 0.6
+      },
+      "Mexican": {
+        "Mexican": 0.2
+      },
+      "South American": {
+        "Venezuelan": 0.2,
+        "Brazilian": 0.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62170bdb97c4a3d7795dbb6",
   "type": "character",
-  "name": "Luca Tuivailala",
+  "name": "Luca Hernández",
   "aliases": [
     "Surge",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Lake Shore Drive and Division",
-  "description": "Hadiya Hayashi-Amankwah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 30, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a ghost out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHadiya Hayashi-Amankwah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Luca Hernández is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 30, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a ghost out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nLuca Hernández operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.76,
@@ -260,7 +260,7 @@
     "Opportunist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,36 +277,14 @@
     "Adaptive Camouflage Skin",
     "The Narrows Compact",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
     "Burden of Longitude",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Mika Sorel",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Pyroelectric Sebum Volatilization Projector",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Spire Light on Still Water",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "The Narrows",
-    "The Shelf",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Sub-Saharan African (56.3%) with substantial Pacific Islander ancestry (35.5%) and Hispanic/Latin American heritage (8.2%) — a complex diaspora blend creating rich warm tones with the robust frame characteristic of equatorial and island populations",
+    "heritage": "Predominantly Hispanic/Latin American (85.4%) with significant Sub-Saharan African (11.9%) and minor Eastern European (2.7%) ancestry — a diaspora blend creating warm deep brown tones with subtle complexity. The robust frame reflects Caribbean and Central/South American genetic patterns with strength markers from mixed African ancestry.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and heavily muscled, density rather than bulk — the physique of someone who trains methodically and carries their weight as functional mass. No wasted frame.",
@@ -314,8 +292,8 @@
     "hair_style": "Pulled back tight, secured with a matte-black titanium clasp",
     "hair_length": "Long — shoulder-length, practical",
     "eye_color": "Dark brown, natural — no augmentation",
-    "skin_tone": "Deep warm brown with reddish undertones — the rich melanin density of Sub-Saharan and Pacific heritage creates a complexion that catches light with subtle warmth. Visible chromatic patterning from dermal camouflage creates shifting iridescent patches across shoulders, collarbone, and upper chest",
-    "complexion": "Strong cheekbones and defined jaw reflecting Sub-Saharan and Pacific Islander ancestry — facial structure is broad and angular rather than delicate. Skin is clear, methodically maintained, with visible chrome pigment cells creating a subtle oil-slick shimmer across muscular surfaces when light hits at angle. Minimal cosmetics — efficiency over aesthetics.",
+    "skin_tone": "Deep warm brown with golden-amber undertones — the melanin density of Hispanic/Latin American and Sub-Saharan ancestry creates a complexion that catches light with rich warmth. Visible chromatic patterning from dermal camouflage creates shifting iridescent patches across shoulders, collarbone, and upper chest.",
+    "complexion": "Strong, prominent cheekbones and defined angular jaw reflecting blended Hispanic/Latin and African ancestry — facial structure is broad and sculpted rather than delicate. Skin is clear, methodically maintained, with visible chrome pigment cells creating a subtle oil-slick shimmer across muscular surfaces when light hits at angle. Minimal cosmetics — efficiency over aesthetics.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to ear, legacy of Narrows street work, barely noticeable unless you know to look",
       "Chromatic dermal patterning across both shoulders and upper back — intentional augmentation, deep iridescent blue-to-green shifts under movement",
@@ -325,14 +303,44 @@
     "posture_movement": "Compact, economical — shoulders slightly forward, weight centered. Moves like someone trained in close-quarters work, every gesture calculated for minimal wasted motion. Stillness is her default state; when she moves, it's with purpose. Eyes track entry/exit points and high-ground positions automatically.",
     "clothing_style": "Tier 2-3 practical — matte-black reinforced synthweave jacket over fitted base layer, cargo pants with titanium-reinforced pockets, low-profile ankle boots with steel toe caps. No logos or corp insignia. All gear is functional, minimal ornamentation. Colors are blacks, grays, deep blues — nothing that stands out in the Spires or the Shelf. Clothing is designed for mobility and concealment, not status."
   },
-  "image_prompt": "Luca Tuivailala, cyberpunk 2226, deep warm brown skin with Sub-Saharan and Pacific Islander heritage reflected in strong angular features and broad shoulders, 178cm tall, muscled functional build. Long black hair pulled back tight with titanium clasp, dark natural eyes. Chromatic iridescent dermal augmentation patterning across shoulders and upper chest in blue-to-green shimmer, visible under movement. Thin white temple-to-ear scar barely visible. Wearing matte-black reinforced synthweave jacket over fitted base layer, cargo pants with titanium pockets, steel-toed ankle boots. Compact economical posture, weight centered, eyes tracking environment like trained operative. Great Lakes Metropolitan Zone neon-lit industrial setting, moody cyberpunk lighting casting shadows across chrome-shimmer skin, high-contrast blacks and deep blues, surveillance cameras and megastructure in background, gritty Spires aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Luca Hernández, 178cm tall, deep warm brown skin with golden undertones, strong angular cheekbones and defined jaw, shoulder-length black hair pulled back tight with titanium clasp, iridescent chrome dermal augmentation shimmering across shoulders and upper back in blues and greens. Dark brown eyes. Broad muscular build, functional density. Wearing matte-black reinforced synthweave jacket, fitted base layer, cargo pants with titanium pockets, steel-toed ankle boots. Thin white scar from left temple to ear. Compact posture, economical movement, still and controlled. GLMZ Great Lakes Metropolitan Zone, Spires aesthetic, moody neon-touched lighting, neutral shadows, professional fixer energy. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 56.3,
-    "Pacific Islander": 35.5,
-    "Hispanic/Latin American": 8.2
+    "Hispanic/Latin American": 85.4,
+    "Sub-Saharan African": 11.9,
+    "Eastern European": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 22.6
+      },
+      "Central American": {
+        "Salvadoran": 18.1
+      },
+      "South American": {
+        "Colombian": 44.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 11.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 0.9,
+        "Ukrainian": 0.9
+      },
+      "Slavic West": {
+        "Polish": 0.2
+      },
+      "Slavic South": {
+        "Bulgarian": 0.7
+      }
+    }
+  }
 }

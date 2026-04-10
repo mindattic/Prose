@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72d7532926d05181e41611b",
   "type": "character",
-  "name": "Rehana Árnason-Krishnamurthy",
+  "name": "Soledad Jaramillo-Konaté",
   "aliases": [
     "Sarge",
     "Old Copper"
@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "Montclare Quiet — a ground-floor unit in a Ferrogate Transit pension block, unit 3, near Milwaukee and Damen",
-  "description": "Youssouf is built like something that was once very large and has been slowly compressed by time — broad shoulders still present but rounded, a barrel chest that has dropped an inch or two, hands that could palm a person's skull still steady and enormous. His skin is a warm mid-brown with reddish undertones, and his face is a landscape of old decisions: a jaw broken twice and reset imperfectly, a nose that went left somewhere in the Kenosha Crossing siege of 2154, a ragged scar running from his right temple into his hairline where his combat geneware was surgically removed after decommissioning. His remaining hair is white and kept in a close crop. He walks with a slight forward lean, always, like he's still expecting incoming.\n\nHe fought thirteen years for Ringo Corporation's private military division, first as infantry, then as a squad sergeant during the Corporate Wars' most brutal middle phase. He came home to a pension that looked decent on paper and has eroded to almost nothing through inflation, while Ringo's lobbying ensured veteran benefits stayed frozen. He is not a bitter man — not exactly — but he has an acute and permanent awareness of exactly how much he was worth to the people who used him, which is different from bitterness the way a bone fracture is different from a bruise. He has three grandchildren living with him and that, he will tell you, is the only math that matters.",
+  "description": "Soledad Jaramillo-Konaté is built like something that was once very large and has been slowly compressed by time — broad shoulders still present but rounded, a barrel chest that has dropped an inch or two, hands that could palm a person's skull still steady and enormous. His skin is a warm mid-brown with reddish undertones, and his face is a landscape of old decisions: a jaw broken twice and reset imperfectly, a nose that went left somewhere in the Kenosha Crossing siege of 2154, a ragged scar running from his right temple into his hairline where his combat geneware was surgically removed after decommissioning. His remaining hair is white and kept in a close crop. He walks with a slight forward lean, always, like he's still expecting incoming.\n\nHe fought thirteen years for Ringo Corporation's private military division, first as infantry, then as a squad sergeant during the Corporate Wars' most brutal middle phase. He came home to a pension that looked decent on paper and has eroded to almost nothing through inflation, while Ringo's lobbying ensured veteran benefits stayed frozen. He is not a bitter man — not exactly — but he has an acute and permanent awareness of exactly how much he was worth to the people who used him, which is different from bitterness the way a bone fracture is different from a bruise. He has three grandchildren living with him and that, he will tell you, is the only math that matters.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -187,7 +187,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,8 +253,8 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
   "related_entities": [
-    "Kenosha Crossing",
     "Ferrogate Transit",
+    "Kenosha Crossing",
     "Montclare Quiet",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
@@ -263,31 +263,12 @@
     "Crucible Industries Siege-12 'Battering Ram'",
     "Ringo Corponation",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus CK-5 'Bloodhound'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Altan Tanaka-Frimpong",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Exo-Runner Frame",
-    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
-    "Breck Tannen",
-    "Cinderblock Ai",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Ihaia Nystrom-Keita",
-    "Kamala Mori-Sefa",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solveig Tambadou-Kereselidze",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Veslemøy Achebe-Tursynov",
-    "Vojislav Addo-Mensimah",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Palm Leaf",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Southeast Asian and South Asian dominant (66.6% combined), with significant Middle Eastern (15.7%), Hispanic/Latin American (9.9%), and minor Sub-Saharan African (5.5%) and Eastern European (2.3%) ancestry. A complex tapestry of the Ubiquitous Diaspora—features reflecting the blended genetics of a globally mixed heritage rather than any single continental origin.",
+    "heritage": "Hispanic/Latin American dominant (60.6%), with significant Sub-Saharan African (23.2%), East Asian (10.2%), and Pacific Islander (6.0%) ancestry. A striking blend of the Ubiquitous Diaspora—features reflecting Latin American warmth enriched by deep African heritage, with subtle East Asian undertones in cheekbone structure and Pacific Islander contribution to broader facial geometry creating a complex, globally mixed appearance.",
     "height_cm": 188,
     "weight_kg": 102,
     "build": "Formerly massive and muscular, now settled into a broad, heavy frame. Shoulders still wide but rounded with age; barrel chest has dropped slightly. Arms retain functional thickness despite reduced definition. Overall impression: a compression of something that was once formidable.",
@@ -295,8 +276,8 @@
     "hair_style": "Close military crop, precise and maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with subtle olive undertones from Southeast and South Asian ancestry, enriched by Middle Eastern warmth and hints of deeper amber from Sub-Saharan heritage. Mid-to-deep brown at full saturation, luminous rather than ashy.",
-    "complexion": "Weathered and lined, the landscape of seven decades and thirteen years of combat service. High cheekbones characteristic of Southeast Asian ancestry, softened by age. Jaw shows asymmetrical healing from two breaks and imperfect resets, with a broader structure reflecting South Asian heritage. Nose deviates noticeably left from trauma sustained during the Kenosha Crossing siege of 2154, bridge structure broader than typical European norms. Face retains strong bone structure despite aging. Grooming is meticulous—evidence of discipline maintained.",
+    "skin_tone": "Deep mahogany brown with warm reddish undertones—the luminous result of Latin American and Sub-Saharan African heritage blending. Rich saturation with equatorial warmth rather than ashy coolness. East Asian and Pacific Islander ancestry contribute subtle depth and undertone complexity.",
+    "complexion": "Weathered and lined, the landscape of seven decades and thirteen years of combat service. Broad, prominent cheekbones with warm projection from Latin American and African heritage, with subtle East Asian angularity. Jaw shows asymmetrical healing from two breaks and imperfect resets, displaying the fuller structure of Latin American and Sub-Saharan ancestry mixed with slight Pacific Islander breadth. Nose deviates noticeably left from trauma sustained during the Kenosha Crossing siege of 2154, bridge structure broader and more rounded than typical European norms, with subtle flaring reflecting African and Pacific Islander features. Face retains strong bone structure despite aging. Grooming is meticulous—evidence of discipline maintained.",
     "distinguishing_marks": [
       "Ragged surgical scar running from right temple into hairline where combat geneware was surgically extracted post-decommissioning",
       "Fine webwork of older scars across knuckles and backs of both hands from decades of reinforced strikes",
@@ -306,17 +287,46 @@
     "posture_movement": "Slight forward lean—habitual, automatic, as though still braced for incoming fire. Movements economical and precise despite age. Hands are steady and purposeful. When at rest, an underlying tension in shoulders and chest, never fully relaxed.",
     "clothing_style": "Tier 4 practical: faded Ringo Corporation retro-issue grey work shirt (kept for sentimental/identity reasons, worn soft), black synthetic cargo pants with reinforced knees, scuffed composite work boots. A vest in faded navy, pockets filled with maintenance tools and small repair supplies. No jewelry. Wears a digital wristband—old model, probably non-functional subdermal comms interface monitor. Everything is clean and maintained with care, but all items are years old and showing wear."
   },
-  "image_prompt": "Portrait of Rehana Árnason-Krishnamurthy, a weathered 70-year-old veteran in cyberpunk 2226, 188cm tall with golden-brown skin bearing the warmth of Southeast and South Asian ancestry blended with Middle Eastern tones. Close-cropped white hair frames a lined face with high cheekbones and a deviated nose from old combat trauma. Dark brown eyes hold decades of discipline. Wearing a faded grey Ringo Corporation work shirt over a navy vest, black cargo pants, scuffed composite boots. Surgical scar visible at right temple. Hands show faint knuckle plate implants. Slight forward lean in posture suggesting battle-readiness even in rest. Weathered and scarred but meticulously maintained. Neon-lit maintenance workshop setting, cool blue-green overhead lights casting shadows across tired but resolute features. Cinematic, gritty realism. --ar 2:3 --v 6",
+  "image_prompt": "Soledad Jaramillo-Konaté, 188cm tall broad-shouldered man with deep mahogany skin and warm brown undertones, weathered face with asymmetrical jaw, deviated nose, prominent scars from combat extraction at right temple and across knuckles, white military-crop hair, dark brown eyes, seated in dimly-lit industrial setting. Wearing faded grey Ringo Corporation work shirt, black reinforced cargo pants, faded navy vest filled with repair tools, scuffed composite boots. Hands show visible knuckle plates under dark skin. Posture tense, forward-leaning, habitual vigilance despite seven decades of life. Subtle cybernetic augmentation visible in stiff leg movement and surgical scar tissue at temple. GLMZ, neon rim lighting, industrial backdrop, photorealistic, dignified worn professionalism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 34.0,
-    "South Asian": 32.6,
-    "Middle Eastern": 15.7,
-    "Hispanic/Latin American": 9.9,
-    "Sub-Saharan African": 5.5,
-    "Eastern European": 2.3
+    "Hispanic/Latin American": 60.6,
+    "Sub-Saharan African": 23.2,
+    "East Asian": 10.2,
+    "Pacific Islander": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 42.3,
+        "Nicaraguan": 18.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 23.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 10.2
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 4
+      },
+      "Micronesian": {
+        "Palauan": 0.5,
+        "Kiribati": 1.1
+      },
+      "Melanesian": {
+        "Fijian": 0.3,
+        "Papua New Guinean": 0.1
+      }
+    }
+  }
 }

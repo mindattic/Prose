@@ -151,7 +151,7 @@ public class DynamicPlaceGenerator
         if (places.GetByName(name) != null) return name;
 
         var system = """
-            You are generating a place for cyberpunk fiction set in Meridian 88 (2100).
+            You are generating a place for near-future fiction set in GLMZ (2100).
             This place is being discovered during a story — describe what the characters see,
             hear, smell, and feel when they arrive. Be specific and atmospheric.
 

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71e76ec85de174e09b7b88e",
   "type": "character",
-  "name": "Reed Thorvaldsdóttir-Boateng",
+  "name": "Cruz Hernández-Delgado",
   "aliases": [
     "Magnet",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near State and Monroe",
-  "description": "Ximena Engstrom-Fofana is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a fixer out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nXimena Engstrom-Fofana is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Cruz Hernández-Delgado is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a fixer out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCruz Hernández-Delgado is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.67,
@@ -262,7 +262,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,36 +277,14 @@
   "related_entities": [
     "Bioelectric Muscle Fiber",
     "Masquerade",
-    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "TESSERA CR-12 'Whisper'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Sub-Saharan African, Northern European, Pacific Islander, and Southeast Asian ancestry. The genetic blend manifests in a complexion that bridges warm medium-brown with subtle golden undertones, bone structure showing East Asian cheekbones and brow ridge alongside broader features typical of Pacific Islander and African heritage, creating a distinctly pan-Asian-Pacific appearance.",
+    "heritage": "Complex global ancestry: 41% Hispanic/Latin American, 23% Sub-Saharan African, 21% East Asian, 15% South Asian. This rare quaternary blend manifests in warm medium-brown skin with golden undertones, bone structure combining East Asian cheekbones with broader African and South Asian nasal bridge, fuller lips, and slightly wider face. The genetic mosaic creates a distinctly multicultural appearance — neither regionally locked nor easily categorized.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Lean and long-limbed with developed musculature from years of field work. Synthetic muscle fiber in legs adds subtle bulk to calves and thighs — visible as a slight chromatic sheen under skin. Moves with economical, practiced precision.",
@@ -314,8 +292,8 @@
     "hair_style": "Pulled back in a tight, functional braid. Minimal styling — practicality over aesthetics.",
     "hair_length": "Long",
     "eye_color": "Warm brown with faint augmentation scarring at the orbital corners",
-    "skin_tone": "Warm medium-brown with golden undertones, sun-weathered from decades of variable outdoor work. Blended ancestry shows in subtle depth — neither purely warm nor cool, but a balanced fusion of East Asian golden warmth and Sub-Saharan richness with Northern European and Pacific undertones.",
-    "complexion": "Mapped with old scar tissue — three thin parallel lines across left cheekbone, puckered burn scar along right temple hairline, white knife-wound scar bisecting upper lip. Minimal makeup. Skin shows texture and history; grooming is clean but not refined. Facial structure reflects East Asian ancestry in eye shape and upper face, with broader nasal bridge and fuller lips from African and Pacific Islander heritage.",
+    "skin_tone": "Warm medium-brown with golden undertones, sun-weathered from decades of variable outdoor work. The blended ancestry creates subtle depth — warm East Asian-Latin golden tones enriched by Sub-Saharan richness and South Asian complexion, creating a balanced fusion rather than stark contrast.",
+    "complexion": "Mapped with old scar tissue — three thin parallel lines across left cheekbone, puckered burn scar along right temple hairline, white knife-wound scar bisecting upper lip. Minimal makeup. Skin shows texture and history; grooming is clean but not refined. Facial structure reflects the multicultural ancestry: East Asian eye shape and upper face definition, broader nasal bridge from African heritage, fuller lips and slightly wider face from South Asian and African genetics, creating a cosmopolitan blend.",
     "distinguishing_marks": [
       "Three parallel scars across left cheekbone, approximately 8cm total length, surgical-clean edges suggesting deliberate marking rather than accidental injury",
       "Puckered thermal burn scar along right temple, fading to pale pink, approximately 4cm diameter",
@@ -323,20 +301,58 @@
       "Chrome-visible synthetic muscle fiber replacement visible along both shins — metallic shimmer beneath skin at calf, particularly visible under bright light",
       "Faint augmentation scarring at orbital corners where early optic work was considered but not pursued"
     ],
-    "visible_augmentations": "Synthetic muscle fiber replacement visible in legs as subtle chromatic shimmer under skin, especially calves and thighs — noticeable when she moves quickly or wears form-fitting clothing. Gecko-grip fingertip implants visible as faint metallic stippling on fingertips and toe pads when hands/feet are examined closely. No obvious chrome plating or obvious neural ports.",
+    "visible_augmentations": "Synthetic muscle fiber replacement visible in legs as subtle chromatic shimmer under skin, especially calves and thighs — noticeable when moving quickly or wearing form-fitting clothing. Gecko-grip fingertip implants visible as faint metallic stippling on fingertips and toe pads when hands/feet are examined closely. No obvious chrome plating or obvious neural ports.",
     "posture_movement": "Stands with shoulders relaxed but spine straight. Moves with deliberate economy — every motion purposeful, no wasted energy. Favors stairs with caution due to synthetic leg limitations but compensates with handrail usage. Climbs with unusual fluidity thanks to gecko-grip implants. Resting expression is neutral to slightly weary; maintains eye contact during negotiations.",
     "clothing_style": "Tier 3-4 functional wear. Standard: fitted dark synthweave pants with cargo pockets, reinforced synthetic leather jacket (usually charcoal or black, worn but maintained), layered base clothes in neutral tones. Footwear is always climbing-friendly (grippy soles). Jewelry minimal — watch with encrypted display (professional tool, not fashion), no other visible adornment. Clothing shows wear and repair but is clean and intentional. No corp branding. Dressed for function and mobility, not status."
   },
-  "image_prompt": "Reed Thorvaldsdóttir-Boateng, 183cm tall mixed-heritage woman with warm medium-brown skin blending East Asian, African, Pacific Islander ancestry. Angular cheekbones, almond-shaped warm brown eyes with subtle augmentation scarring at orbital corners. Long salt-and-pepper gray hair in tight functional braid. Visible facial scars: three parallel lines across left cheekbone, thermal burn scar right temple, vertical white knife scar bisecting upper lip. Lean muscular build, subtle metallic shimmer visible on calves from synthetic muscle fiber augmentation. Wearing fitted dark synthweave tactical pants, worn charcoal synthetic leather jacket over neutral base layers, climbing-grip footwear. Faint metallic stippling on fingertips from gecko-grip implants. Posture relaxed but alert, standing in dim cyberpunk 2226 setting with neon accent lighting casting shadows across weathered face. Professional, weary expression. Practical, utilitarian aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait: Cruz Hernández-Delgado, 183cm lean muscular frame with salt-and-pepper braid, warm medium-brown skin with golden undertones reflecting multicultural East Asian-Hispanic-Sub-Saharan-South Asian heritage. Angular cheekbones with broader nasal bridge and fuller lips, weathered complexion marked by three parallel scars on left cheekbone, thermal burn scar on right temple, white vertical scar bisecting upper lip. Warm brown eyes with faint orbital augmentation scarring. Dressed in charcoal synthetic leather jacket over dark synthweave tactical pants, minimal chrome jewelry, encrypted watch visible. Standing in neutral pose with straight spine, deliberate movement. Subtle chromatic shimmer visible on shins from synthetic muscle fiber implants. Neutral weary expression. Neon-lit GLMZ urban environment, cool blue and amber backlighting, gritty industrial setting. Professional, seasoned field operative aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 38.9,
-    "Sub-Saharan African": 18.7,
-    "Northern European": 18.3,
-    "Pacific Islander": 13.0,
-    "Southeast Asian": 11.1
+    "Hispanic/Latin American": 41.1,
+    "Sub-Saharan African": 23,
+    "East Asian": 20.9,
+    "South Asian": 15
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 15.1
+      },
+      "South American": {
+        "Brazilian": 3
+      },
+      "Central American": {
+        "Salvadoran": 8.8,
+        "Honduran": 14.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 10.9
+      },
+      "East African": {
+        "Kenyan": 12.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 7.9
+      },
+      "Korean": {
+        "Korean": 8.7
+      },
+      "Chinese": {
+        "Hakka": 4.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 6.2,
+        "Kannada": 8.8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5eb75ffa4900396d989adb6",
   "type": "character",
-  "name": "Ingrid Tlemcani",
+  "name": "Ananya Esquivel",
   "aliases": [
     "Del",
     "Mama Delphine"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave — Brewer's Spine block, ground floor of a converted residential tower, near Halsted and Chicago Ave",
-  "description": "Delphine is a broad-shouldered woman with deep umber skin mapped by the fine white creases of a life spent hunched over steam presses and hand-stitching in bad light. Her hair is a natural silver-white cloud she keeps pinned under rotating headscarves — turquoise today, burgundy tomorrow — and her forearms are permanently reddened from elbow to wrist by decades of hot water and chemical rinse. She wears a single geneware modification: iridescent patterned irises in amber and green that she got on a payment plan fifteen years ago as a birthday gift to herself, and she considers them the most beautiful thing she owns. A small ELF shrine sits on the shelf above her industrial washer — a beaten copper bowl filled with USB sticks, a hand-stitched doll, and a melted votive candle — and she murmurs to it every morning before the first load goes in.\n\nDelphine runs her shop with the calm authority of someone who has outlasted three corporate rezoning attempts, two floods, and a husband. She charges fair prices and remembers every customer's preferred fold. She will take payment in Quanta or in trade — she once accepted a working compressor and six months of pest control services. She has no interest in gossip as entertainment, but she absorbs it as raw material, filing it away with the same precision she applies to alteration measurements. If you want to know what is actually happening in Hamtramck Enclave, you sit in her plastic chair and you wait.",
+  "description": "Ananya Esquivel is a broad-shouldered woman with deep umber skin mapped by the fine white creases of a life spent hunched over steam presses and hand-stitching in bad light. Her hair is a natural silver-white cloud she keeps pinned under rotating headscarves — turquoise today, burgundy tomorrow — and her forearms are permanently reddened from elbow to wrist by decades of hot water and chemical rinse. She wears a single geneware modification: iridescent patterned irises in amber and green that she got on a payment plan fifteen years ago as a birthday gift to herself, and she considers them the most beautiful thing she owns. A small ELF shrine sits on the shelf above her industrial washer — a beaten copper bowl filled with USB sticks, a hand-stitched doll, and a melted votive candle — and she murmurs to it every morning before the first load goes in.\n\nAnanya Esquivel runs her shop with the calm authority of someone who has outlasted three corporate rezoning attempts, two floods, and a husband. She charges fair prices and remembers every customer's preferred fold. She will take payment in Quanta or in trade — she once accepted a working compressor and six months of pest control services. She has no interest in gossip as entertainment, but she absorbs it as raw material, filing it away with the same precision she applies to alteration measurements. If you want to know what is actually happening in Hamtramck Enclave, you sit in her plastic chair and you wait.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -160,7 +160,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -181,47 +181,20 @@
     "Hamtramck Enclave",
     "Brewer's Spine",
     "Riverbottom",
-    "The Shelf",
     "Zheng-dao Bioelectric",
-    "Flicker",
+    "The Shelf",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Copper",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Chicago",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Altan Tanaka-Frimpong",
-    "Anatoliy Faye-Nkrumah",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dzemal Acholonu-Patagiri",
-    "Ferrogate Transit",
-    "Grosse Pointe Enclosure",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Street-Custom Razorwire Wraps 'Glass Hands'",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "TESSERA Widow Mk. III",
-    "The Pure Hand",
-    "The Seam",
-    "Tomasz Wren",
-    "Tshiamo Vukić-Arellano",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Yuliya Morozova"
+    "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African Berber and Arab (54.1%) with Northern European (22.9%), Hispanic/Latin American (15.3%), and Indigenous American (7.7%) ancestry. A striking blend resulting in warm medium-to-deep brown skin with subtle olive and amber undertones, reflecting the complex admixture of Mediterranean, Celtic, Iberian, and indigenous bloodlines.",
+    "heritage": "A striking blend of Hispanic/Latin American (35.6%), South Asian (35.3%), Southeast Asian (20.6%), Sub-Saharan African (4.4%), and East Asian (4.1%) ancestry. This complex admixture creates warm medium-to-deep brown skin with subtle golden, olive, and amber undertones—a living map of the Ubiquitous Diaspora, reflecting generations of global movement and cultural synthesis.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, thick through the torso and upper body from decades of physical labor. Muscle beneath a layer of earned weight — powerful forearms and hands, slightly stooped posture from years bent over work surfaces.",
@@ -229,7 +202,7 @@
     "hair_style": "Worn in a full, voluminous cloud, pinned and secured under rotating headscarves (cotton, hand-dyed or batik patterns). Today turquoise; rotation includes burgundy, indigo, rust.",
     "hair_length": "Medium (shoulder-length when unpinned, entirely covered during work)",
     "eye_color": "Iridescent amber and green patterned irises (geneware modification, 15 years old). Whites of eyes clear, warm brown undertone visible at iris edges.",
-    "skin_tone": "Warm medium-to-deep brown with subtle olive and amber undertones, reflecting North African, Southern European, and Iberian heritage. Even complexion across face and neck.",
+    "skin_tone": "Warm medium-to-deep brown with golden, olive, and amber undertones reflecting the balanced blend of Hispanic/Latin American, South Asian, and Southeast Asian heritage with subtle Sub-Saharan African depth. Even complexion across face and neck with natural richness and warmth.",
     "complexion": "Weathered but dignified. Fine creases map her forehead, eyes, and around her mouth — the geography of five decades of precise work and quiet observation. Skin shows the cumulative mark of steam and chemical exposure: permanently reddened forearms (elbow to wrist) with visible discoloration but no scarring. Small age spots on her hands and temples. Lips naturally dark with warm undertones, no makeup. Expression neutral at rest — neither stern nor welcoming, simply present.",
     "distinguishing_marks": [
       "Chemical burn discoloration on both forearms from elbow to wrist — a uniform reddish-brown patina from decades of laundry work, no raised scarring",
@@ -240,15 +213,69 @@
     "posture_movement": "Carries herself with the quiet authority of someone who has survived three rezoning attempts and two floods. Moves economically — no wasted motion. When working, her hands move with absolute precision and muscle memory. At rest, she is still, observant. Her gaze settles on people and objects with the patience of someone who listens more than she speaks. Walks with a slight forward tilt in her shoulders, the residual curve of a life spent leaning toward work.",
     "clothing_style": "Practical and modest — favors long-sleeved cotton shifts or chemises in neutral colors (cream, pale gray, taupe) to protect her arms during work. Wears a heavy canvas apron with deep pockets over her shift, usually stained faintly with water marks and lint. During the day, her feet are in soft slip-on work clogs. In the evening, she switches to comfortable flat sandals. Her headscarves are her only indulgence and color — expensive cotton or silk-cotton blends in patterns she chooses with care. No jewelry except a thin, worn gold band on her left ring finger (her late husband's). Tier 4 working-class aesthetic: everything serviceable, nothing wasted, nothing that announces itself."
   },
-  "image_prompt": "Ingrid Tlemcani, 168cm tall, broad-shouldered laundry worker with warm medium-brown skin bearing North African, Southern European, and Indigenous ancestry. Silver-white hair in voluminous cloud beneath turquoise hand-dyed headscarf with batik patterns. Iridescent amber-green geneware irises visible in side-lighting. Weathered face with fine creases from five decades of work, lips naturally dark. Both forearms show uniform reddish-brown chemical discoloration from elbow to wrist. Wearing cream cotton long-sleeved shift beneath heavy stained canvas work apron with deep pockets. Small dark age spots on temples and hands. Slight forward shoulder tilt, economical posture of someone carrying quiet authority. Soft work clogs on feet. Standing in 2226 cyberpunk laundry facility, warm steam rising, industrial lighting creating depth, her gaze patient and observant. Tier 4 working-class aesthetic, nothing performative, everything worn by years of honest labor. --ar 2:3 --v 6",
+  "image_prompt": "Ananya Esquivel, 168cm tall, medium build with powerful forearms and slight forward-leaning posture, warm medium-deep brown skin with golden and olive undertones blending South Asian, Hispanic/Latin American, and Southeast Asian heritage. Natural silver-white hair in voluminous shoulder-length cloud, secured under a turquoise hand-dyed headscarf. Iridescent amber-green patterned geneware irises visible in profile lighting. Age 50s, weathered dignified face with fine creases, chemical burn discoloration on both forearms from elbow to wrist (reddish-brown patina), small age spots on temples and hands. Wearing cream-colored long-sleeved cotton shift with heavy canvas work apron stained with water marks, soft work clogs. Neutral at-rest expression, observant and still. GLMZ Great Lakes Metropolitan Zone setting, industrial laundry workspace with steam and soft overhead lighting catching her iridescent eyes, photorealistic, dignified working-class character study, warm color grading --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 54.1,
-    "Northern European": 22.9,
-    "Hispanic/Latin American": 15.3,
-    "Indigenous American": 7.7
+    "Hispanic/Latin American": 35.6,
+    "South Asian": 35.3,
+    "Southeast Asian": 20.6,
+    "Sub-Saharan African": 4.4,
+    "East Asian": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 35.6
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 7.2,
+        "Kannada": 3.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1
+      },
+      "Nepali": {
+        "Nepali": 23.9
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 6.9
+      },
+      "Thai": {
+        "Thai": 10.4
+      },
+      "Indonesian": {
+        "Sumatran": 1.7,
+        "Javanese": 1.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 2.3
+      },
+      "East African": {
+        "Kenyan": 0.7
+      },
+      "Southern African": {
+        "Botswanan": 1.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 2.7
+      },
+      "Korean": {
+        "Korean": 0.9
+      },
+      "Japanese": {
+        "Japanese": 0.5
+      }
+    }
+  }
 }

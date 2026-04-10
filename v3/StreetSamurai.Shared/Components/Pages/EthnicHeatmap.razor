@@ -40,6 +40,7 @@
 
 @code {
     private List<HeritageEntry> heritageData = [];
+    private List<TopRegionEntry> hierarchy = [];
     private int totalCharacters;
     private int totalReferences;
     private int uniqueGroups;
@@ -49,7 +50,6 @@
         if (firstRender)
         {
             ParseHeritages();
-            var hierarchy = BuildHierarchy();
             StateHasChanged();
             await Task.Delay(100);
             await JS.InvokeVoidAsync("heritageTreemap.render", "heritage-treemap", hierarchy);
@@ -58,29 +58,65 @@
 
     private void ParseHeritages()
     {
-        var weightedCounts = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase);
+        // Accumulate three-tier ancestry_detail across all characters
+        // Structure: region → sub-region → nationality → total weight
+        var regionTotals = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase);
+        var subRegionTotals = new Dictionary<string, Dictionary<string, double>>(StringComparer.OrdinalIgnoreCase);
+        var nationalityTotals = new Dictionary<string, Dictionary<string, Dictionary<string, double>>>(StringComparer.OrdinalIgnoreCase);
+
         var characters = CharRepo.GetAll();
         totalCharacters = characters.Count;
 
         foreach (var c in characters)
         {
-            var ancestry = c.GeneticAncestry;
-            if (ancestry == null || ancestry.Count == 0) continue;
-
-            // Each character contributes their percentages (so 40% African = 0.4 weight)
-            foreach (var (group, pct) in ancestry)
+            var detail = c.AncestryDetail;
+            if (detail == null || detail.Count == 0)
             {
-                if (pct <= 0) continue;
-                weightedCounts[group] = weightedCounts.GetValueOrDefault(group) + pct;
+                // Fall back to flat genetic_ancestry for characters without detail
+                var flat = c.GeneticAncestry;
+                if (flat == null || flat.Count == 0) continue;
+                foreach (var (region, pct) in flat)
+                {
+                    if (pct <= 0) continue;
+                    regionTotals[region] = regionTotals.GetValueOrDefault(region) + pct;
+                }
+                continue;
+            }
+
+            foreach (var (region, subRegions) in detail)
+            {
+                foreach (var (subRegion, nationalities) in subRegions)
+                {
+                    foreach (var (nationality, pct) in nationalities)
+                    {
+                        if (pct <= 0) continue;
+
+                        // Region totals
+                        regionTotals[region] = regionTotals.GetValueOrDefault(region) + pct;
+
+                        // Sub-region totals
+                        if (!subRegionTotals.ContainsKey(region))
+                            subRegionTotals[region] = new(StringComparer.OrdinalIgnoreCase);
+                        subRegionTotals[region][subRegion] = subRegionTotals[region].GetValueOrDefault(subRegion) + pct;
+
+                        // Nationality totals
+                        if (!nationalityTotals.ContainsKey(region))
+                            nationalityTotals[region] = new(StringComparer.OrdinalIgnoreCase);
+                        if (!nationalityTotals[region].ContainsKey(subRegion))
+                            nationalityTotals[region][subRegion] = new(StringComparer.OrdinalIgnoreCase);
+                        nationalityTotals[region][subRegion][nationality] =
+                            nationalityTotals[region][subRegion].GetValueOrDefault(nationality) + pct;
+                    }
+                }
             }
         }
 
-        // Convert weighted counts to display values (average percentage across population)
-        var totalWeight = weightedCounts.Values.Sum();
-        uniqueGroups = weightedCounts.Count;
+        var totalWeight = regionTotals.Values.Sum();
+        uniqueGroups = regionTotals.Count;
         totalReferences = (int)totalWeight;
 
-        heritageData = weightedCounts
+        // Build flat list for the table
+        heritageData = regionTotals
             .OrderByDescending(kv => kv.Value)
             .Select(kv => new HeritageEntry
             {
@@ -89,60 +125,50 @@
                 pct = totalWeight > 0 ? (kv.Value * 100.0 / totalWeight).ToString("F1") : "0"
             })
             .ToList();
-    }
 
-
-    // Map specific ancestry groups to their parent region for drill-down
-    private static readonly Dictionary<string, string> GroupToRegion = new(StringComparer.OrdinalIgnoreCase)
-    {
-        // East Asian
-        ["Chinese"] = "East Asian",
-        ["Korean"] = "East Asian",
-        ["Japanese"] = "East Asian",
-        // Southeast Asian
-        ["Vietnamese"] = "Southeast Asian",
-        ["Filipino"] = "Southeast Asian",
-        ["Indonesian"] = "Southeast Asian",
-        ["Laotian"] = "Southeast Asian",
-        ["Cambodian"] = "Southeast Asian",
-        ["Thai"] = "Southeast Asian",
-        // These map to themselves (already top-level regions)
-        ["Sub-Saharan African"] = "Sub-Saharan African",
-        ["Hispanic/Latin American"] = "Hispanic/Latin American",
-        ["South Asian"] = "South Asian",
-        ["Northern European"] = "Northern European",
-        ["Eastern European"] = "Eastern European",
-        ["Middle Eastern"] = "Middle Eastern",
-        ["Pacific Islander"] = "Pacific Islander",
-        ["Indigenous American"] = "Indigenous American",
-        ["Central Asian"] = "Central Asian",
-        ["North African"] = "North African",
-    };
-
-    private List<RegionEntry> BuildHierarchy()
-    {
-        // Group the flat heritageData into regions with drill-down sub-groups
-        var regionMap = new Dictionary<string, List<HeritageEntry>>();
-
-        foreach (var entry in heritageData)
-        {
-            var region = GroupToRegion.GetValueOrDefault(entry.name, entry.name);
-            if (!regionMap.ContainsKey(region))
-                regionMap[region] = [];
-            regionMap[region].Add(entry);
-        }
-
-        var totalWeight = heritageData.Sum(e => e.value);
-
-        return regionMap
-            .Select(kv => new RegionEntry
+        // Build three-tier hierarchy for the treemap
+        hierarchy = regionTotals
+            .OrderByDescending(kv => kv.Value)
+            .Select(kv =>
             {
-                name = kv.Key,
-                value = kv.Value.Sum(e => e.value),
-                pct = totalWeight > 0 ? (kv.Value.Sum(e => e.value) * 100.0 / totalWeight).ToString("F1") : "0",
-                subGroups = kv.Value.Count > 1 ? kv.Value : []
+                var regionName = kv.Key;
+                var regionValue = (int)Math.Round(kv.Value);
+
+                // Build sub-region entries with nationality drill-down
+                var subs = subRegionTotals.GetValueOrDefault(regionName)?
+                    .OrderByDescending(s => s.Value)
+                    .Select(s =>
+                    {
+                        var nats = nationalityTotals
+                            .GetValueOrDefault(regionName)?
+                            .GetValueOrDefault(s.Key)?
+                            .OrderByDescending(n => n.Value)
+                            .Select(n => new HeritageEntry
+                            {
+                                name = n.Key,
+                                value = (int)Math.Round(n.Value),
+                                pct = totalWeight > 0 ? (n.Value * 100.0 / totalWeight).ToString("F1") : "0"
+                            })
+                            .ToList() ?? [];
+
+                        return new RegionEntry
+                        {
+                            name = s.Key,
+                            value = (int)Math.Round(s.Value),
+                            pct = totalWeight > 0 ? (s.Value * 100.0 / totalWeight).ToString("F1") : "0",
+                            subGroups = nats.Count > 1 ? nats : []
+                        };
+                    })
+                    .ToList() ?? [];
+
+                return new TopRegionEntry
+                {
+                    name = regionName,
+                    value = regionValue,
+                    pct = totalWeight > 0 ? (kv.Value * 100.0 / totalWeight).ToString("F1") : "0",
+                    subGroups = subs.Count > 1 ? subs : []
+                };
             })
-            .OrderByDescending(r => r.value)
             .ToList();
     }
 
@@ -159,5 +185,13 @@
         public int value { get; init; }
         public string pct { get; init; } = "0";
         public List<HeritageEntry> subGroups { get; init; } = [];
+    }
+
+    private record TopRegionEntry
+    {
+        public string name { get; init; } = "";
+        public int value { get; init; }
+        public string pct { get; init; } = "0";
+        public List<RegionEntry> subGroups { get; init; } = [];
     }
 }

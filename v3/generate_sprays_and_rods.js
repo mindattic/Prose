@@ -98,7 +98,7 @@ function getExistingWeaponNames() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is QUANTA, symbol Φ. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is QUANTA, symbol Φ. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification. Synthetics (artificial humans) exist but are socially marginalized.
 
@@ -140,7 +140,7 @@ const BATCHES = [
     label: 'Spray Weapons (Batch 1 of 2)',
     count: 10,
     category: 'spray',
-    prompt: `Generate exactly 10 SPRAY WEAPONS (chemical/aerosol) for Meridian 88. These are the first 10 of 20 total sprays.
+    prompt: `Generate exactly 10 SPRAY WEAPONS (chemical/aerosol) for GLMZ. These are the first 10 of 20 total sprays.
 
 Include in this batch:
 1. A cheap Tier 1 "Shelf" pepper spray — the cheapest self-defense option, sold in vending machines
@@ -169,7 +169,7 @@ Lethality guidelines:
     label: 'Spray Weapons (Batch 2 of 2)',
     count: 10,
     category: 'spray',
-    prompt: `Generate exactly 10 MORE SPRAY WEAPONS (chemical/aerosol) for Meridian 88. These are the second 10 of 20 total sprays.
+    prompt: `Generate exactly 10 MORE SPRAY WEAPONS (chemical/aerosol) for GLMZ. These are the second 10 of 20 total sprays.
 
 Include in this batch:
 1. A nausea-inducing spray — triggers extreme vomiting within seconds, crowd dispersal tool
@@ -200,7 +200,7 @@ Lethality guidelines:
     label: 'Electric Shock Rods (Batch 1 of 2)',
     count: 10,
     category: 'melee',
-    prompt: `Generate exactly 10 ELECTRIC SHOCK RODS/BATONS for Meridian 88. These are the first 10 of 20 total.
+    prompt: `Generate exactly 10 ELECTRIC SHOCK RODS/BATONS for GLMZ. These are the first 10 of 20 total.
 
 Include in this batch:
 1. A basic security stun baton — standard issue for building security, affordable
@@ -230,7 +230,7 @@ Lethality guidelines:
     label: 'Electric Shock Rods (Batch 2 of 2)',
     count: 10,
     category: 'melee',
-    prompt: `Generate exactly 10 MORE ELECTRIC SHOCK RODS/BATONS for Meridian 88. These are the second 10 of 20 total.
+    prompt: `Generate exactly 10 MORE ELECTRIC SHOCK RODS/BATONS for GLMZ. These are the second 10 of 20 total.
 
 Include in this batch:
 1. A heavy shock maul — two-handed weapon, massive electrical discharge, anti-vehicle capable
@@ -274,7 +274,7 @@ async function main() {
 
     const systemPrompt = `${WORLD_CONTEXT}
 
-You are a world-building assistant generating weapons for a cyberpunk setting. Generate EXACTLY ${batch.count} weapons as a JSON array.
+You are a world-building assistant generating weapons for a near-future megacity setting. Generate EXACTLY ${batch.count} weapons as a JSON array.
 
 ${SCHEMA_TEMPLATE.replace('<CATEGORY>', batch.category)}
 

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6777c1eb557730f98b53156",
   "type": "character",
-  "name": "Sol Fassi",
+  "name": "Sol Sigurdsson",
   "aliases": [
     "Obi",
     "The Builder"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Circuit, Tessera Data Infrastructure Campus — sublevel architecture labs, near sub-level access near Dearborn and Jackson",
-  "description": "Obi is a tall man, broad-shouldered in the way of someone who used to be athletic and still carries the frame even though he hasn't run for pleasure in years. His skin is deep brown with a slight copper undertone, his hair kept in short locs with faint bioluminescent threading — pale blue, installed three years ago on a whim after a bad quarter, never removed because he found he liked falling asleep with his own reflection glowing in dark windows. A long scar runs from his right jaw to his collarbone, a datacable accident from his apprenticeship that he jokes about at onboarding events and never thinks about otherwise. His hands are always moving — sketching invisible architecture in the air, tapping schemas on any flat surface, folding and unfolding the same worn slip of paper that contains, on inspection, a hand-drawn map of a data-garden topology he designed at twenty-two and never built.\n\nHe is genuinely, almost naively enthusiastic about the elegance of systems — not their power or their profitability, but the specific beauty of a well-designed data flow, the satisfaction of a topology that handles load gracefully under stress. His colleagues find this endearing and occasionally exhausting. He mentors junior architects with real investment, remembers their names and their specific technical gaps, brings food to late-night sessions without being asked. He also has a catastrophic tendency to lose track of time inside a problem, to miss meetings and social obligations not from negligence but from a consuming absorption that his ex-partner described, accurately, as 'disappearing into the machine.'",
+  "description": "Sol Sigurdsson is a tall man, broad-shouldered in the way of someone who used to be athletic and still carries the frame even though he hasn't run for pleasure in years. His skin is deep brown with a slight copper undertone, his hair kept in short locs with faint bioluminescent threading — pale blue, installed three years ago on a whim after a bad quarter, never removed because he found he liked falling asleep with his own reflection glowing in dark windows. A long scar runs from his right jaw to his collarbone, a datacable accident from his apprenticeship that he jokes about at onboarding events and never thinks about otherwise. His hands are always moving — sketching invisible architecture in the air, tapping schemas on any flat surface, folding and unfolding the same worn slip of paper that contains, on inspection, a hand-drawn map of a data-garden topology he designed at twenty-two and never built.\n\nHe is genuinely, almost naively enthusiastic about the elegance of systems — not their power or their profitability, but the specific beauty of a well-designed data flow, the satisfaction of a topology that handles load gracefully under stress. His colleagues find this endearing and occasionally exhausting. He mentors junior architects with real investment, remembers their names and their specific technical gaps, brings food to late-night sessions without being asked. He also has a catastrophic tendency to lose track of time inside a problem, to miss meetings and social obligations not from negligence but from a consuming absorption that his ex-partner described, accurately, as 'disappearing into the machine.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -193,7 +193,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,35 +254,20 @@
     "The Circuit",
     "The Gilt Frame",
     "ARCHITECT",
+    "The Accidental",
+    "Dearborn Forge",
     "Tessera Corponation",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Circuit",
     "Copper",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "The Pure Hand",
     "The Pale Mile",
-    "Lead",
-    "Abeke Soriano-Dlamini",
-    "Alper Lebedev-Tutu",
-    "Altan Tanaka-Frimpong",
-    "Anatoliy Faye-Nkrumah",
-    "Bathysphere Networks",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Kenji Guerrero-Osei-Mensah",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Temur Achebe-Lindqvist",
-    "The Heidelberg Scar",
-    "Undertow",
-    "Veslemøy Achebe-Tursynov",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Whim",
+    "Lead"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "North African dominant with significant Pacific Islander and Eastern European ancestry, complemented by Hispanic/Latin American, Central Asian, and minor South Asian heritage—a complex global blend reflected in warm brown skin with subtle golden and olive undertones, East-meets-Mediterranean facial structure",
+    "heritage": "Northern European dominant (52%) with substantial Hispanic/Latin American (32%) and Sub-Saharan African (16%) ancestry—a striking global blend. Broad Nordic-Iberian facial structure enriched by African heritage creates warm, dimensioned features: high cheekbones with strong definition, prominent jaw reflecting Northern European ancestry, and the warm depth of African genetic contribution. The combination produces a uniquely balanced phenotype.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Broad-shouldered and tall with the residual frame of former athleticism; still carries lean muscle definition in his upper body despite years of sedentary work, slight softening at the midsection from long hours in climate-controlled labs",
@@ -290,26 +275,49 @@
     "hair_style": "Short locs, approximately 8-10cm in length, evenly maintained, bioluminescent fibers woven through at intervals",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm medium-to-deep brown with golden-olive undertones from North African-Pacific Islander blend, sun-avoidant pallor from sublevel work creating subtle ashy muting beneath warm base",
-    "complexion": "Clean-shaven, well-maintained but not groomed with particular attention; broad cheekbones and slightly angular jaw reflect North African-Eastern European mix; skin shows minimal sun exposure from extended sublevel work, slight pallor beneath warm tone; fine lines around the eyes from concentration and screen work",
-    "distinguishing_marks": [
-      "Long diagonal scar running from right jaw to right collarbone, approximately 12cm in length, pale and well-healed from datacable accident during apprenticeship, unrepaired on principle"
-    ],
+    "skin_tone": "Warm medium-brown with golden and amber undertones—the genetic blend of Northern European, Hispanic/Latin American, and Sub-Saharan African ancestry creating rich chromatic depth. Sublevel work has created subtle ashy muting beneath the warm base, sun-avoidant pallor indicating extended time away from natural light.",
+    "complexion": "Clean-shaven, well-maintained but not meticulously groomed. Broad high cheekbones with strong definition and warm depth, firm jaw reflecting the Nordic-Iberian-African genetic blend. Skin shows minimal sun exposure from extended sublevel work, creating subtle pallor beneath the naturally warm undertone. Fine lines around the eyes from concentration and extended screen work. Diagonal scar from right jaw to right collarbone (approximately 12cm), pale and well-healed from datacable accident during apprenticeship, unrepaired on principle.",
     "visible_augmentations": "Pale blue bioluminescent threading woven through hair locs (glows softly in low-light conditions). No other visible chrome or external augmentation — neural latency implant, haptic feedback overlays, and neural interface ports are subcutaneous/internal",
     "posture_movement": "Habitually animated hands even at rest; constant subtle movement — sketching invisible patterns in air, fingers tapping rhythmic schemas on nearby surfaces, folding and unfolding worn paper compulsively. Posture slightly forward-leaning when focused, as though pulled toward problems. Gait efficient and purposeful but often distracted, occasionally walks into doorframes mid-thought",
     "clothing_style": "Tier 1 corporate professional with deliberate informality — high-quality base layers (thermal responsive mesh undershirts, usually charcoal or matte black), unmarked Tessera engineer vest (gray composite, minimal branding, functional pockets), fitted black cargo pants with reinforced deep thigh pockets for tools and worn paper, low-profile haptic interface gloves (matte finish, fingertips exposed), scuffed synthetic leather ankle boots rated for sublevel humidity. No jewelry. Clothing is clean but shows wear patterns consistent with long hours; occasionally has faint dust from data-conduit maintenance areas on shoulders or sleeves"
   },
-  "image_prompt": "Sol Fassi, 188cm tall engineer with warm golden-brown skin tone and broad cheekbones reflecting North African-Pacific Islander heritage, short black locs with pale blue bioluminescent threading glowing softly, dark brown eyes, visible 12cm pale scar from right jaw to collarbone. Clean-shaven, lean athletic build with slight midsection softening. Wearing unmarked gray composite Tessera engineer vest over charcoal thermal mesh, fitted black cargo pants, matte haptic interface gloves, scuffed synthetic leather boots. Hands animatedly sketching invisible patterns mid-thought. Standing in shadowy sublevel data-conduit area with cool blue bioluminescent hair lighting face, cyberpunk 2226, corporate tech aesthetic, concentrated expression, atmospheric overhead lighting casting subtle shadows. --ar 2:3 --v 6",
+  "image_prompt": "Sol Sigurdsson, tall broad-shouldered neo-noir engineer, 188cm, warm medium-brown skin with golden-amber undertones from mixed Northern European-Hispanic-African ancestry, subtle pallor from sublevel work. Dark natural eyes, black short locs with pale blue bioluminescent threading glowing softly. Strong Nordic-Iberian facial structure with high cheekbones and defined jaw, enriched by African heritage warmth. Pale well-healed diagonal scar running from right jaw to collarbone. Clean-shaven. Wearing unmarked gray Tessera engineer vest over thermal responsive charcoal base layer, fitted black cargo pants, haptic gloves, scuffed leather boots. Habitually animated hands mid-gesture, forward-leaning posture, fine lines around eyes from concentration. In neon-lit sublevel tech facility or data-conduit maintenance area, dust on shoulders. Moody, focused expression. GLMZ aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 33.4,
-    "Pacific Islander": 20.1,
-    "Eastern European": 16.8,
-    "Hispanic/Latin American": 15.4,
-    "Central Asian": 11.0,
-    "South Asian": 3.3
+    "Northern European": 52.2,
+    "Hispanic/Latin American": 32.2,
+    "Sub-Saharan African": 15.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "English": 38.4,
+        "Welsh": 13.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 2.8,
+        "Colombian": 2.5
+      },
+      "Central American": {
+        "Salvadoran": 12
+      },
+      "Mexican": {
+        "Mexican": 14.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 4.2,
+        "Malian": 1.6
+      },
+      "Southern African": {
+        "South African": 9.8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c47c2690dddc128fed51c6",
   "type": "character",
-  "name": "Zen Wojciechowski",
+  "name": "Zen Solberg",
   "aliases": [
     "Bless",
     "The Mouth",
@@ -14,7 +14,7 @@
   "age": 24,
   "status": "active",
   "location": "Old Harbor, near Michigan Ave South and Cermak",
-  "description": "Blessed Nkemdirim runs a pirate broadcast out of a rotating series of signal-masked locations across Old Harbor, producing a daily audio-visual feed called 'Harbor Frequency' that has become, for a substantial portion of the district's population, the closest thing to actual news they have access to. She is compact and restless, with deep brown skin, natural hair she keeps wrapped in a rotating collection of printed fabrics, and the particular kind of energy that reads as enthusiasm until you're on the wrong side of it and recognize it as something more relentless. Her eyes are quick and evaluative in a way she has stopped trying to soften; she watches people the way a cartographer watches terrain. She is almost always in motion, or appears to be — even seated, her hands are working, her attention is cycling.\n\nShe grew up in Old Harbor, the second of four children of a harbor logistics worker and a schoolteacher who lost her position when the district's public education contract was absorbed by a Spire EdTech subsidiary. The family did not leave because they could not, and then because they chose not to, and Blessed absorbed both the helplessness and the stubbornness of that distinction. She started broadcasting at nineteen, initially as a way to circulate information about enforcement sweeps and eviction notices — practical, immediate, unglamorous. Harbor Frequency evolved into something more: investigative segments, community commentary, intercepted corporate communications she's never explained how she obtained, and a call-in segment where Old Harbor residents speak on-air about things that would not otherwise be recorded anywhere. She has been arrested twice for unlicensed broadcasting. Both times she was back on air within seventy-two hours from a different location.\n\nShe is not naive about what she is or what she's doing. She understands that she is a small signal in a very large noise floor, and she has made her peace with scale — or tells herself she has. What she hasn't made peace with is the gap between what she knows and what she can prove, between what she broadcasts and what it actually changes. She fills that gap with work, with speed, with the belief that bearing witness is not nothing even when it is not enough. She is twenty-four and has already developed the particular exhaustion of someone who has been urgently awake for too long.",
+  "description": "Zen Solberg runs a pirate broadcast out of a rotating series of signal-masked locations across Old Harbor, producing a daily audio-visual feed called 'Harbor Frequency' that has become, for a substantial portion of the district's population, the closest thing to actual news they have access to. She is compact and restless, with deep brown skin, natural hair she keeps wrapped in a rotating collection of printed fabrics, and the particular kind of energy that reads as enthusiasm until you're on the wrong side of it and recognize it as something more relentless. Her eyes are quick and evaluative in a way she has stopped trying to soften; she watches people the way a cartographer watches terrain. She is almost always in motion, or appears to be — even seated, her hands are working, her attention is cycling.\n\nShe grew up in Old Harbor, the second of four children of a harbor logistics worker and a schoolteacher who lost her position when the district's public education contract was absorbed by a Spire EdTech subsidiary. The family did not leave because they could not, and then because they chose not to, and Blessed absorbed both the helplessness and the stubbornness of that distinction. She started broadcasting at nineteen, initially as a way to circulate information about enforcement sweeps and eviction notices — practical, immediate, unglamorous. Harbor Frequency evolved into something more: investigative segments, community commentary, intercepted corporate communications she's never explained how she obtained, and a call-in segment where Old Harbor residents speak on-air about things that would not otherwise be recorded anywhere. She has been arrested twice for unlicensed broadcasting. Both times she was back on air within seventy-two hours from a different location.\n\nShe is not naive about what she is or what she's doing. She understands that she is a small signal in a very large noise floor, and she has made her peace with scale — or tells herself she has. What she hasn't made peace with is the gap between what she knows and what she can prove, between what she broadcasts and what it actually changes. She fills that gap with work, with speed, with the belief that bearing witness is not nothing even when it is not enough. She is twenty-four and has already developed the particular exhaustion of someone who has been urgently awake for too long.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -232,7 +232,7 @@
     "Info Broker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,43 +249,22 @@
     "Cartographer",
     "The Iron Lotus",
     "WELLSPRING",
+    "Frequency",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Big Rig",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "The Gradient Compact",
     "Lacuna Genomics",
+    "Big Rig",
     "Witness",
+    "Harbor Fish Shack",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Pure Hand",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Déjà Vu",
-    "Abeke Soriano-Dlamini",
-    "Bioacoustic Communication Membrane",
-    "Brecken Yılmaz-Osei",
-    "Chronicle",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Osvaldo Mensah-Kovalenko",
-    "PulsePoint MoodGlow Affective Display Implant",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Tapetum Lucidum Integration",
-    "Temitán Asabere-Zubkov",
-    "The Human Baseline Alliance",
-    "The Question",
-    "The Spire"
+    "Déjà Vu"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Cosmopolitan blend of Eastern European, Hispanic/Latin American, Southeast Asian, Pacific Islander, Middle Eastern, and Sub-Saharan African ancestry — the genetic legacy of the Ubiquitous Diaspora. Her features reflect this complex mixture: the angular bone structure carries Eastern European and Sub-Saharan African definition, softened by Southeast Asian and Pacific Islander proportions. Hispanic/Latin American warmth threads through her complexion and eye shape.",
+    "heritage": "Ubiquitous Diaspora blend with dominant Hispanic/Latin American (34.2%) and Southeast Asian (31.1%) ancestry, substantive Sub-Saharan African (19.7%) heritage, and minor contributions from Middle Eastern (6.0%), Eastern European (5.4%), and East Asian (3.6%) lineages. Her features reflect this weighted mix: Southeast Asian facial structure provides delicate proportions and eye shape, while Hispanic/Latin American and Sub-Saharan African ancestry contribute warmth, bone definition, and deeper complexion. The result is a face that reads as genuinely Pan-Global without clear singular origin.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, all restless kinetic energy — lean muscle without bulk, built for sustained motion rather than strength. Her frame suggests someone who moves constantly and eats irregularly.",
@@ -293,8 +272,8 @@
     "hair_style": "Wrapped in rotating printed cotton fabrics — geometric patterns, protest slogans, recycled textile prints; when unwrapped, kept in close braids or natural texture coils",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Deep brown with amber undertones, ocular implant hardware around the iris — micro-recording lenses catch light with a subtle iridescent sheen",
-    "skin_tone": "Warm medium-deep brown with olive undertones and subtle golden warmth — a complex blend reflecting her mixed ancestry across multiple continents",
-    "complexion": "Angular features with a Southeast Asian delicacy balanced against Eastern European definition — high cheekbones, strong nose bridge, defined jawline with subtle fullness in the lower face reflecting Pacific Islander and Hispanic heritage. Skin is clear but weathered by irregular sleep and constant outdoor movement. Dark circles under her eyes are permanent fixtures. Her expression defaults to evaluative intensity.",
+    "skin_tone": "Medium-deep warm brown with golden undertones — the blended result of Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage creating complex, luminous depth",
+    "complexion": "Southeast Asian delicacy in overall face shape — softer cheekbone prominence, refined nose bridge — balanced against Sub-Saharan African definition in jaw and brow structure. High cheekbones with subtle fullness in lower face and lips reflecting Hispanic/Latin American heritage. Skin is clear but weathered by irregular sleep and constant outdoor movement. Dark circles under her eyes are permanent fixtures. Her expression defaults to evaluative intensity.",
     "distinguishing_marks": [
       "Thin scar along her left temple, about 3cm, from a crowd-control baton strike during an enforcement sweep in 2224",
       "Subvocal microphone implant visible as a faint line of scar tissue along the right side of her neck, just below the jawline",
@@ -305,17 +284,65 @@
     "posture_movement": "Never fully still. Even seated, her hands are working — adjusting her wrap, checking equipment, scripting notes with worn stylus on recycled paper. She moves through space with the efficiency of someone who has mapped every alley and shortcut in Old Harbor. Her gait is quick and purposeful. Her attention cycles visibly — scanning faces, frequencies, the environment for usable information. When she focuses on someone, it's complete but analytical; she watches the way a predator watches terrain.",
     "clothing_style": "Tier 4 working-class, deliberately anti-corporate. Worn black utility pants with multiple pockets and repair patches. Layered tops — often a faded printed tee under a modified surplus military jacket with circuit-pattern embroidery added by hand. Her wrap-fabric rotates but always carries visual weight — protest imagery, community symbols, recycled materials. Boots are scuffed, well-maintained, practical for running. She wears a secondary microphone jack visible at her collarbone on a frayed cord. Her only jewelry is a series of mismatched silver rings, gifts from contacts or salvage."
   },
-  "image_prompt": "Zen Wojciechowski, 158cm wiry cyberpunk activist, warm medium-deep brown skin with olive undertones, angular Southeast Asian-influenced features with Eastern European definition, deep brown eyes with visible ocular implant hardware catching iridescent light. Natural deep brown-black hair wrapped in geometric-patterned recycled cotton fabric with protest slogans. Scar on left temple, subvocal mic implant scar on neck. Wearing faded black utility pants with patches, layered under modified surplus military jacket with hand-embroidered circuit patterns. Mismatched silver rings on fingers, secondary microphone jack visible at collarbone on frayed cord. Compact muscular build, perpetually alert posture, dark circles under eyes. Old Harbor alleyway setting, neon overhead glow casting hard shadows, late evening atmosphere, her hands gesturing in analysis of salvaged tech equipment, cinematic 2226 cyberpunk aesthetic, gritty documentary realism --ar 2:3 --v 6",
+  "image_prompt": "Zen Solberg, 158cm compact wiry frame, medium-deep warm brown skin with golden undertones reflecting Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage blend. Delicate Southeast Asian facial structure with high cheekbones and refined nose, balanced against strong Sub-Saharan African jaw definition. Deep brown eyes with amber undertones, cyber-augmented with visible ocular implant hardware catching light with iridescent sheen. Thin temple scar on left side from enforcement strike. Shoulder-length natural deep brown-black hair wrapped in geometric-patterned recycled cotton fabric with protest slogans. Worn black utility pants with patches, faded printed tee layered under modified surplus military jacket with hand-stitched circuit-pattern embroidery. Scuffed boots. Frayed microphone cord at collarbone. Mismatched silver rings. Tense analytical expression, dark circles under eyes. Seated in Old Harbor urban environment, hands working with equipment, quick purposeful movement captured mid-motion. GLMZ setting, neon-lit evening warehouse backdrop, cold industrial lighting with warm skin tone contrast. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 30.4,
-    "Hispanic/Latin American": 26.7,
-    "Southeast Asian": 18.9,
-    "Pacific Islander": 13.6,
-    "Middle Eastern": 6.5,
-    "Sub-Saharan African": 3.9
+    "Hispanic/Latin American": 34.2,
+    "Southeast Asian": 31.1,
+    "Sub-Saharan African": 19.7,
+    "Middle Eastern": 6,
+    "Eastern European": 5.4,
+    "East Asian": 3.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 13.4
+      },
+      "Caribbean": {
+        "Haitian": 13.2
+      },
+      "South American": {
+        "Venezuelan": 5.5,
+        "Peruvian": 2.1
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 31.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 15.5
+      },
+      "East African": {
+        "Ugandan": 4.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 1.1
+      },
+      "Slavic South": {
+        "Slovenian": 4.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3
+      },
+      "Japanese": {
+        "Japanese": 0.6
+      }
+    }
+  }
 }

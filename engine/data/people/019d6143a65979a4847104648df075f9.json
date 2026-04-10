@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65979a4847104648df075f9",
   "type": "character",
-  "name": "Ember Adeyemi",
+  "name": "Daria Espinoza",
   "aliases": [
     "The Widow",
     "Mira"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "The Stockyard — runs a licensed salvage and recycling operation called Osei Reclamation Partners as a front, near Western and Division",
-  "description": "Mirabel is a large woman in the way that suggests she was powerful when young and has redistributed rather than diminished — broad-shouldered, dark Ghanaian-Peruvian complexioned, with silver-streaked locs pinned up under a work cap and hands that have been repairing things so long they are covered in small, deliberate scars. Her most visible augmentation is a color-changing dermal layer on her forearms, purchased cheaply years ago and now cycling slowly and randomly through muted terracottas and greens regardless of her mood — the emotional-feedback calibration broke years ago and she never had it fixed. She finds it calming, she says.\n\nMirabel is fifty-four years old and has been running the same operation for twenty-two of them. She survived her husband's death, a protection shakedown that left her with a broken orbital socket, three attempted hostile takeovers from larger criminal enterprises, and a Ferrogate Transit zoning audit that came terrifyingly close to her back warehouse. She has the patience and situational awareness of someone who has been out-waited by every threat she has ever faced. She is not warm, exactly — she extends professional courtesy and charges fair rates, which in the Stockyard passes for warmth. She is intensely loyal to the small circle of people who have been loyal to her, and has long since made peace with the fact that the list is short.",
+  "description": "Daria Espinoza is a large woman in the way that suggests she was powerful when young and has redistributed rather than diminished — broad-shouldered, dark Ghanaian-Peruvian complexioned, with silver-streaked locs pinned up under a work cap and hands that have been repairing things so long they are covered in small, deliberate scars. Her most visible augmentation is a color-changing dermal layer on her forearms, purchased cheaply years ago and now cycling slowly and randomly through muted terracottas and greens regardless of her mood — the emotional-feedback calibration broke years ago and she never had it fixed. She finds it calming, she says.\n\nDaria Espinoza is fifty-four years old and has been running the same operation for twenty-two of them. She survived her husband's death, a protection shakedown that left her with a broken orbital socket, three attempted hostile takeovers from larger criminal enterprises, and a Ferrogate Transit zoning audit that came terrifyingly close to her back warehouse. She has the patience and situational awareness of someone who has been out-waited by every threat she has ever faced. She is not warm, exactly — she extends professional courtesy and charges fair rates, which in the Stockyard passes for warmth. She is intensely loyal to the small circle of people who have been loyal to her, and has long since made peace with the fact that the list is short.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -187,7 +187,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -258,32 +258,14 @@
     "TESSERA Widow Mk. III",
     "The Reclamation Assembly",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "The Gradient Compact",
     "Silver",
-    "The Pure Hand",
-    "Anatoliy Faye-Nkrumah",
-    "Bogdan Achebe-Svanstrom",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Doru Fofana-Câmpeanu",
-    "Fanta Popov-Adjei",
-    "Kairos",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Noir Dining",
-    "Orhan Dlamini-Kurikka",
-    "Oxytrel",
-    "Pikasso Wemba-Þórðarson",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA ES-4 'Perimeter'",
-    "The Coffin Nails",
-    "The Driftyard",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (38.3%), East Asian (36.2%), and Eastern European (25.5%) — a striking tricontinent blend. The Sub-Saharan African heritage manifests in her deep complexion, facial structure, and hair texture. The East Asian ancestry contributes to her eye shape, bone structure, and the subtle geometry of her face. The Eastern European ancestry adds depth to her skin undertones and contributes to her substantial build and strong frame.",
+    "heritage": "Hispanic/Latin American (42.4%), Eastern European (27.6%), Sub-Saharan African (21.6%), and Southeast Asian (8.4%) — a striking quadricontinental blend. Her features reflect this complex ancestry: warm golden-brown skin with deep undertones from Sub-Saharan heritage, prominent cheekbones with subtle Southeast Asian geometry, a strong jaw with Eastern European definition, and broad facial planes that speak to multiple continental lineages. The result is a confident, grounded presence where four genetic streams converge into harmonious integration.",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Broad-shouldered and substantial, the muscular frame of her younger years redistributed into solid mass — thick through the torso and arms, strong-legged. No softness, but no visible tension either. The physique of someone who has spent decades handling heavy machinery and salvage work.",
@@ -291,8 +273,8 @@
     "hair_style": "Locs, pinned up and secured under a work cap during operating hours",
     "hair_length": "Long (shoulder-length when unpinned)",
     "eye_color": "Deep brown, unaugmented",
-    "skin_tone": "Rich deep brown with warm undertones — a complex blend where Sub-Saharan depth meets East Asian and Eastern European undertones, creating a complexion that holds warmth across all lighting conditions. The tone photographs beautifully in natural light but maintains its richness under fluorescent glare.",
-    "complexion": "Weathered and lined, particularly around the eyes and forehead — the map of two decades of squinting at ledgers and machinery. The facial structure shows the influence of her tricontinent heritage: broader cheekbones with subtle East Asian geometry, a strong jaw with Eastern European prominence, and the confident bone structure of Sub-Saharan ancestry. No makeup. Grooming is functional: she keeps herself clean and her hands meticulously maintained despite the work, a point of quiet pride.",
+    "skin_tone": "Rich warm brown with golden undertones — a complex interplay where Hispanic warmth and Sub-Saharan depth meet Eastern European bone structure and Southeast Asian subtlety, creating a complexion that holds luminosity across all lighting conditions. The tone photographs beautifully in natural light but maintains its richness under fluorescent glare.",
+    "complexion": "Weathered and lined, particularly around the eyes and forehead — the map of two decades of squinting at ledgers and machinery. The facial structure shows the influence of her quadricontinental heritage: Southeast Asian-descended cheekbones with subtle definition, a strong jaw with Eastern European prominence, broad facial planes reflecting Sub-Saharan ancestry, and the warmth of Hispanic-descended features. The overall effect is confident and grounded. No makeup. Grooming is functional: she keeps herself clean and her hands meticulously maintained despite the work, a point of quiet pride.",
     "distinguishing_marks": [
       "Dense network of small, deliberate scars across both hands and forearms — individual marks from twenty-two years of precise repair and salvage work, each one catalogued in her memory",
       "Faint but visible scar tissue around the right orbital socket, evidence of old trauma and reinforcement surgery; the repair work is competent but not cosmetic-grade, slightly asymmetrical when caught in certain light",
@@ -300,16 +282,64 @@
     ],
     "visible_augmentations": "Color-changing dermal layer covering both forearms from wrist to elbow, cycling slowly and randomly through muted terracotta, sage green, and dusty ochre tones independent of her emotional state (the feedback calibration failed years ago and was never repaired). The effect is hypnotic and slightly unsettling — like watching rust and verdigris move across living skin. Subdermal RFID scanner in right palm is invisible but leaves a faint pale scar-line where it was installed.",
     "posture_movement": "Moves with the economical precision of someone who has learned to conserve energy over decades. Stands with weight evenly distributed, shoulders back but not rigid. Her gaze is direct and her attention is absolute when focused on a person or task — she does not fidget or look away. When walking through the salvage yard, her path is efficient; she knows exactly where every piece of inventory is. Her hands move with surgical deliberateness, even when performing rough work.",
-    "clothing_style": "Strictly utilitarian Tier 3-4 workwear: heavy canvas pants with reinforced pockets (always full of small tools, inventory tags, worn data-chips), steel-toed boots scuffed and resoled multiple times, a layered system of durable shirts and vests in grays and dark blues. A long canvas work coat with multiple pockets, bearing the faded logo of Osei Reclamation Partners. She wears a battered work cap during operating hours — not for fashion, but to keep her locs secured and debris out. No jewelry except a old band on her left ring finger, never removed. All clothing is functional, well-maintained, but clearly well-worn. Nothing nuevo, nothing flashy. In the Stockyard, her appearance signals exactly what she is: a veteran operator who spends her money on inventory and security, not status."
+    "clothing_style": "Strictly utilitarian Tier 3-4 workwear: heavy canvas pants with reinforced pockets (always full of small tools, inventory tags, worn data-chips), steel-toed boots scuffed and resoled multiple times, a layered system of durable shirts and vests in grays and dark blues. A long canvas work coat with multiple pockets, bearing the faded logo of Osei Reclamation Partners. She wears a battered work cap during operating hours — not for fashion, but to keep her locs secured and debris out. No jewelry except a old band on her left ring finger, never removed. All clothing is functional, well-maintained, but clearly well-worn. Nothing nuevo, nothing flashy."
   },
-  "image_prompt": "Ember Adeyemi, a 178cm salvage operator with deep rich brown skin and strong tricontinent features, standing in a cyberpunk 2226 industrial salvage yard. Her dark locs are pinned under a weathered work cap. She wears gray and blue utilitarian workwear with a faded canvas coat bearing reclamation logos. Her muscular frame is substantial and economical, marked by decades of precision work. Both forearms are covered with color-shifting dermal augmentation that cycles through muted terracotta, sage green, and dusty ochre tones. Her hands bear deliberate work scars and calluses. Her deep unaugmented brown eyes are focused and direct. Faint scar tissue marks her right orbital socket. She stands with perfect postural economy, weight evenly distributed. Around her: stacked salvage components, metal debris, industrial lighting creating sharp shadows. Cyberpunk 2200s aesthetic. Moody, focused, professional. Overcast industrial lighting. --ar 2:3 --v 6",
+  "image_prompt": "Daria Espinoza, 178cm tall salvage yard operator with quadricontinental heritage: rich warm golden-brown skin with Sub-Saharan depth, prominent Eastern European jaw, subtle Southeast Asian cheekbone geometry, dark brown locs with silver threading pinned under worn work cap. Deep brown eyes, weathered face lined from two decades of precision work, faint scar tissue around right orbital socket. Broad-shouldered, substantial build, strong hands scarred from years of machinery and salvage work. Wearing heavy canvas work coat faded Osei Reclamation Partners logo, gray and dark blue layered workwear, steel-toed boots. Forearms display hypnotic color-shifting dermal augmentation in terracotta, sage green, dusty ochre tones. Standing in GLMZ salvage yard at dusk, industrial lighting, surrounded by metal scraps and electronics. Direct gaze, economical posture, absolute focus. Utilitarian aesthetic, veteran operator, no flash, pure function. Cinematic, atmospheric industrial lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 38.3,
-    "East Asian": 36.2,
-    "Eastern European": 25.5
+    "Hispanic/Latin American": 42.4,
+    "Eastern European": 27.6,
+    "Sub-Saharan African": 21.6,
+    "Southeast Asian": 8.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 29.6,
+        "Venezuelan": 12.8
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 19.5
+      },
+      "Slavic South": {
+        "Bosnian": 1.4,
+        "Croatian": 0.8
+      },
+      "Slavic East": {
+        "Belarusian": 2.1,
+        "Russian": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 11.5,
+        "Mozambican": 4.7
+      },
+      "East African": {
+        "Kenyan": 1.5,
+        "Rwandan": 0.3
+      },
+      "Central African": {
+        "Congolese": 2.3,
+        "Angolan": 1.3
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.5
+      },
+      "Laotian": {
+        "Laotian": 2.8
+      },
+      "Filipino": {
+        "Tagalog": 2.3,
+        "Waray": 0.8
+      }
+    }
+  }
 }

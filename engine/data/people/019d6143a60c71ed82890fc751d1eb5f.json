@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60c71ed82890fc751d1eb5f",
   "type": "character",
-  "name": "Lars Pathak",
+  "name": "Rohan Mwangi",
   "aliases": [
     "Ez",
     "Grease"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Geartown, the workshop district — specifically a half-indoor bay called 'Tamboli's' on the corner of Flue Street and Anvil Row, near Milwaukee and North Ave",
-  "description": "Ezra is a tall, slope-shouldered man running to comfortable thickness in the middle, with dark copper skin, a full black beard going silver at the chin, and close-cropped hair that is always slightly more singed at the edges than it was last week. His right hand is cybernetic from the wrist — not a prestige replacement but a working salvage prosthetic he rebuilt himself from three incompatible donor parts, and it shows: it is mismatched chrome and matte black polymer, three fingers slightly longer than the original scale, with a multitool socket in the palm he added himself. He finds it better than the original.\n\nHe has the specific personality of a man who loves his work with an intensity he cannot quite transfer to human beings. Not that he dislikes people — he likes them fine, he just relates to machines better, and machines know it. He has a reputation across Geartown for resurrecting drones and ground vehicles that any two other mechanics would have written off, and he charges less than he should and more than clients want to pay, which puts him in a permanent state of negotiation with his own finances. He is at his most relaxed covered in lubricant and at his most uncomfortable receiving compliments.",
+  "description": "Rohan Mwangi is a tall, slope-shouldered man running to comfortable thickness in the middle, with dark copper skin, a full black beard going silver at the chin, and close-cropped hair that is always slightly more singed at the edges than it was last week. His right hand is cybernetic from the wrist — not a prestige replacement but a working salvage prosthetic he rebuilt himself from three incompatible donor parts, and it shows: it is mismatched chrome and matte black polymer, three fingers slightly longer than the original scale, with a multitool socket in the palm he added himself. He finds it better than the original.\n\nHe has the specific personality of a man who loves his work with an intensity he cannot quite transfer to human beings. Not that he dislikes people — he likes them fine, he just relates to machines better, and machines know it. He has a reputation across Geartown for resurrecting drones and ground vehicles that any two other mechanics would have written off, and he charges less than he should and more than clients want to pay, which puts him in a permanent state of negotiation with his own finances. He is at his most relaxed covered in lubricant and at his most uncomfortable receiving compliments.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -256,46 +256,28 @@
     "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
     "Ferrogate Transit",
     "Zheng-dao Bioelectric",
+    "Switchback",
     "Geartown",
     "Copper",
     "Silver",
-    "The Milwaukee Core",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus KS-7 'Nursery'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Devraj Solano-Yildirim",
-    "Free Assembly",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nneka Lindqvist-Okafor",
-    "O'Hare Sovereign",
-    "Slagworks Industrial",
-    "Switchback",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Reclamation Assembly",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
-    "Witness",
-    "Yuki Nwosu-Petrenko"
+    "Corner Slice",
+    "Compass Rose",
+    "Palm Leaf"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Cosmopolitan blend of South Asian (32%), Northern European (30%), Hispanic/Latin American (29%), East Asian (6%), and Sub-Saharan African (3%). The mix produces a warm, complex phenotype: moderate browning from South Asian and Latin American ancestry with Northern European bone structure and slight East Asian eye geometry.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Sub-Saharan African (34.2%), South Asian (27.4%), Eastern European (14.8%), Southeast Asian (12.5%), Hispanic/Latin American (11.1%). This multidirectional ancestry produces a distinctive warm-toned phenotype with layered features. The Sub-Saharan African and South Asian components contribute significant melanin depth and warm undertones; Eastern European ancestry shows through bone structure and subtle complexion variations; Southeast Asian heritage visible in subtle eye geometry and cheekbone prominence; Hispanic/Latin American ancestry adds olive-golden warmth throughout. The result is a man whose face reads as genuinely uncertain of origin—deliberately cosmopolitan in ways that defy easy categorization.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Tall and slope-shouldered with a comfortable thickening through the torso; the build of a man who spends sixteen hours a day bending over workbenches and doesn't prioritize the gym. Still carries functional strength in his upper back and forearms.",
     "hair_color": "Black with silver threading at the beard line",
     "hair_style": "Close-cropped, slightly singed at the edges from repeated exposure to heat sources and welding proximity",
     "hair_length": "Short",
-    "eye_color": "Deep brown with subtle epicanthal fold suggestion from East Asian ancestry, unremarkable and pragmatic",
-    "skin_tone": "Warm medium-bronze with complex undertones — the golden warmth of South Asian heritage blended with the olive-tan of Hispanic/Latin American ancestry, further deepened by years of workshop exposure and ambient heat. Slight warmth from Sub-Saharan ancestry in the undertones.",
-    "complexion": "Weathered and practical. Deep creases around the eyes and mouth from squinting at small mechanical tolerances. Full black beard with silver at the chin, kept trimmed but not groomed. Perpetually stained with machine oil and trace metals; the staining is so consistent it reads as intentional. Facial structure shows balanced blend: moderate cheekbone prominence, straight nose bridge with subtle broadness, full lips.",
+    "eye_color": "Deep brown with subtle epicanthal fold suggestion from Southeast Asian ancestry, unremarkable and pragmatic",
+    "skin_tone": "Rich warm bronze with complex undertone layering—deepened baseline from Sub-Saharan African heritage, golden warmth layered from South Asian and Hispanic/Latin American ancestry, further warmed by years of workshop exposure and ambient heat. Skin reads as genuinely sun-weathered and heat-treated, not temporary tanning.",
+    "complexion": "Weathered and practical. Deep creases around the eyes and mouth from squinting at small mechanical tolerances. Full black beard with silver at the chin, kept trimmed but not groomed. Perpetually stained with machine oil and trace metals; the staining is so consistent it reads as intentional. Facial structure shows balanced multiheric blend: prominent cheekbones from South Asian and Sub-Saharan African ancestry, straight nose bridge with subtle broadness, full lips, moderate wideness across the jaw suggesting Eastern European heritage contribution.",
     "distinguishing_marks": [
-      "Burn scar on the back of his left forearm, roughly three centimeters long, pale against his bronze skin — from a hot component slip during a drone rebuild in his thirties.",
+      "Burn scar on the back of his left forearm, roughly three centimeters long, pale silvery-white against his bronze skin — from a hot component slip during a drone rebuild in his thirties.",
       "A fine white scar running along his right temple to his cheekbone, barely visible unless the light catches it — old welding accident, before the cybernetic hand.",
       "Grease stains under his fingernails that never fully wash out; a permanent occupational signature."
     ],
@@ -303,16 +285,60 @@
     "posture_movement": "Slouches slightly from years of leaning over workbenches; shoulders curve inward at rest. Moves with deliberate precision when working — economical, no wasted motion. Walks with a mechanic's shuffle, one hand usually half-extended as if reaching toward something. Rarely makes direct eye contact with people, but watches machines and hands with intense focus. At ease only when holding a tool or diagnosing a problem.",
     "clothing_style": "Tier 4 utilitarian. Worn canvas work pants with oil-stained legs, multiple cargo pockets holding small components, a reinforced waistband to support his lower back. Thermal undershirt (usually grey or black, always marked with grease). Overshirt varies by season but always a heavy canvas or synthetic weave with scorched edges and a faded logo for a tool supplier that stopped operating in 2198. Steel-toed boots, resoled three times, scuffed and heat-marked. A battered pair of magnification goggles hangs around his neck ninety percent of the day. No jewelry. Carries a rag perpetually stuffed in his back pocket. His hands are the only thing about him that look intentional — the cybernetic one because it is, the organic one because it is calloused into a tool itself."
   },
-  "image_prompt": "Lars Pathak, tall broad-shouldered man with warm bronze skin and mixed heritage features, dark eyes, short black hair with silver threading at beard line. Hunched posture from decades at workbenches. Full trimmed black beard with silver, perpetually stained with machine oil. Visible burn scar on left forearm, white scar along right temple. Right hand is completely cybernetic — mismatched salvage prosthetic with burnished chrome fingers and matte black polymer wrist, oversized servos, integrated multitool socket with visible solder marks. Left forearm shows faint hexagonal thermal sensor outline. Wearing oil-stained canvas work pants, heat-scorched thermal undershirt, heavy canvas overshirt with burnt edges, magnification goggles hanging at neck, steel-toed boots. Workshop setting, amber workshop lighting, neon glow on chrome prosthetic, grease-stained hands, mechanical focus, cyberpunk 2226, intense concentration, diagnostic moment, urban Great Lakes Metropolitan Zone --ar 2:3 --v 6",
+  "image_prompt": "A tall man of mixed heritage in his fifties, rich warm bronze skin with deep melanin depth, weathered from years in workshop heat. Prominent South Asian and Sub-Saharan African cheekbones, full lips, subtle widened jaw from Eastern European ancestry. Black hair close-cropped with silver threading at beard line, deep brown eyes with slight epicanthal fold. Deep creases around eyes and mouth, full trimmed black beard with silver at chin, perpetually stained with machine oil. Burned scars visible on left forearm and right temple-cheekbone. Right hand entirely mismatched cybernetic prosthetic—burnished chrome palm with three oversized fingers, matte black polymer wrist coupling, custom multitool socket with hand-etched '+' symbol, audible servos. Subdermal thermal sensor hexagon outline faintly visible on left forearm. Slouched posture from decades of workbench labor, wearing scorched heavy canvas overshirt with faded 2198-era tool supplier logo, oil-stained canvas work pants, heat-marked steel-toed boots. Magnification goggles hanging around neck. Grease under fingernails, rag in back pocket. GLMZ Great Lakes Metropolitan Zone, industrial workshop setting, harsh overhead LED lighting casting sharp shadows, machinery and salvage parts in background, utterly utilitarian and tool-focused presence, no ornamentation, economical precision in every movement --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 32.0,
-    "Northern European": 30.2,
-    "Hispanic/Latin American": 28.6,
-    "East Asian": 6.3,
-    "Sub-Saharan African": 2.9
+    "Sub-Saharan African": 34.2,
+    "South Asian": 27.4,
+    "Eastern European": 14.8,
+    "Southeast Asian": 12.5,
+    "Hispanic/Latin American": 11.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 16.9
+      },
+      "East African": {
+        "Ethiopian": 1.5,
+        "Kenyan": 0.4
+      },
+      "West African": {
+        "Ghanaian": 15.4
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 14.3
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 13.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 14.8
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 7.7
+      },
+      "Thai": {
+        "Thai": 4.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 6.1
+      },
+      "South American": {
+        "Colombian": 2.7,
+        "Peruvian": 2.3
+      }
+    }
+  }
 }

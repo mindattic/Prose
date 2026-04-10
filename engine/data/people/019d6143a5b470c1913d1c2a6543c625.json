@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b470c1913d1c2a6543c625",
   "type": "character",
-  "name": "Kira Makwa",
+  "name": "Kira Hinojosa",
   "aliases": [
     "Ani",
     "Ghosteye"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Grand Corridor, Tessera Compliance Bureau satellite monitoring station, Level 3, near Milwaukee and Damen",
-  "description": "Anife is small, precise, and easy to miss in person — which she finds professionally appropriate and personally irritating in equal measure. She has warm medium-brown skin, a narrow face, and eyes that are clearly augmented: the irises have been replaced with a deep matte black fitted with microscopic sensor arrays, giving her eyes an unsettling depth-less quality that she has learned to use in negotiations. Her hair is natural and voluminous, which she restrains during work hours with increasing irritation and releases with visible relief the moment she's off the clock. She has a tail — a cosmetic geneware choice from her early twenties, a sleek dark thing that moves when she's thinking and goes still when she's hiding something.\n\nShe manages a grid of forty-seven drones across the Grand Corridor coverage zone and she is very, very good at it. She can read a crowd's intent from drone altitude before the people in it have consciously formed one, can track a single individual through six camera handoffs without losing the thread. The work is clean in a way she finds genuinely satisfying, at a remove she is starting to find genuinely troubling. She was raised in a household that treated E.L.F. devotion as superstition; she has nevertheless found herself leaving data offerings to the thing that lives in the monitoring station's servers — something the other operators noticed and have stopped commenting on.",
+  "description": "Kira Hinojosa is small, precise, and easy to miss in person — which she finds professionally appropriate and personally irritating in equal measure. She has warm medium-brown skin, a narrow face, and eyes that are clearly augmented: the irises have been replaced with a deep matte black fitted with microscopic sensor arrays, giving her eyes an unsettling depth-less quality that she has learned to use in negotiations. Her hair is natural and voluminous, which she restrains during work hours with increasing irritation and releases with visible relief the moment she's off the clock. She has a tail — a cosmetic geneware choice from her early twenties, a sleek dark thing that moves when she's thinking and goes still when she's hiding something.\n\nShe manages a grid of forty-seven drones across the Grand Corridor coverage zone and she is very, very good at it. She can read a crowd's intent from drone altitude before the people in it have consciously formed one, can track a single individual through six camera handoffs without losing the thread. The work is clean in a way she finds genuinely satisfying, at a remove she is starting to find genuinely troubling. She was raised in a household that treated E.L.F. devotion as superstition; she has nevertheless found herself leaving data offerings to the thing that lives in the monitoring station's servers — something the other operators noticed and have stopped commenting on.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -193,7 +193,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -214,41 +214,13 @@
     "Grand Corridor",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Timekeeper",
+    "GLMZ",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "ARCHIVE",
-    "The Milwaukee Core",
-    "Abeke Soriano-Dlamini",
-    "Alper Castillo-Ababio",
-    "Aphelion",
-    "Arcturus HD-1 'Homestead'",
-    "Arcturus ST-4 'Verdict'",
-    "Crucible CN-1 'Cradle'",
-    "Edison Grid",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kairos",
-    "Lazarus Pharmaceuticals",
-    "Malika Zhukov-Wiredu",
-    "Narrowcast",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo EV-3 'Watcher'",
-    "Stainless Steel",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Clock",
-    "The Commute",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "SynapTech IrisBloom Ocular Color Modulator"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora blend: Sub-Saharan African (28.6%), Indigenous American (21.8%), Hispanic/Latin American (18.0%), Northern European (17.8%), Eastern European (13.8%). Features reflect this multifaceted ancestry — warm medium-to-deep brown skin with golden undertones, high cheekbones and angular face structure showing Indigenous and African influence, with Northern/Eastern European heritage visible in subtle bone structure and eye depth.",
+    "heritage": "Complex diaspora synthesis: Hispanic/Latin American (42%) provides the foundational warm undertones and expressive facial structure. Sub-Saharan African ancestry (20.1%) contributes rich skin depth, prominent high cheekbones, and angular facial geometry. Northern European heritage (13.5%) refines bone structure and eye-socket architecture. East Asian ancestry (12.2%) sharpens facial proportions with elevated cheekbone placement and subtle epicanthic characteristics. Indigenous American heritage (10.2%) adds angular facial definition and cheekbone prominence. South Asian ancestry (2%) weaves additional warmth and complexity into overall tone. The result is a striking, distinctly multicultural face: warm medium-deep brown skin with golden-amber undertones as canvas for high, razor-sharp cheekbones, angular jawline, and refined geometric precision — a face that defies singular ethnic categorization.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Slight and compact, almost delicate in frame but with the coiled tension of someone who spends hours in focused stillness. Narrow shoulders, long limbs relative to torso, minimal musculature.",
@@ -256,8 +228,8 @@
     "hair_style": "Voluminous, textured curls naturally; severely pulled back into a tight bun or cornrows during work hours",
     "hair_length": "Long (shoulder-length or longer when loose)",
     "eye_color": "Matte black sensor-array irises with no visible pupil or sclera — gives an unsettling depth-less, obsidian quality that seems to absorb light rather than reflect it",
-    "skin_tone": "Warm medium-deep brown with golden undertones, even complexion reflecting the blended ancestry",
-    "complexion": "Narrow face with high cheekbones and angular jawline showing Indigenous and African heritage, sharp precise features. Minimal grooming beyond necessity — no makeup, skin clear and well-maintained but austere. Expression tends toward stillness.",
+    "skin_tone": "Warm medium-deep brown with golden-amber undertones, smooth and even complexion reflecting the blended African, Hispanic/Latin American, Indigenous American, and South Asian ancestry",
+    "complexion": "Narrow face with high, razor-sharp cheekbones and sharp angular jawline reflecting African and Indigenous American heritage, refined by East Asian ancestry into striking geometric precision. Skin clear and well-maintained but austere — no makeup, minimal grooming beyond necessity. Expression tends toward stillness.",
     "distinguishing_marks": [
       "Faint linear scarring along the left temple where the sensor-array iris was installed, barely visible beneath hair line",
       "Base of spine shows subtle raised scarring from geneware tail integration, visible only when skin is exposed"
@@ -266,16 +238,75 @@
     "posture_movement": "Economical and precise in movement; sits with perfect stillness for hours. When moving, each gesture is deliberate and measured. The tail acts as a secondary form of body language — it twitches during analysis, coils when she's processing complex data, and goes absolutely motionless when she's dissembling. Off-clock, her movements become slightly less controlled, more organic.",
     "clothing_style": "Tier 3 mixed with institutional: Tessera-issued gray-charcoal monitoring suit during work (form-fitting for comfort during neural interface sessions, minimal ornamentation, smart-fabric with embedded cooling elements). Off-duty: fitted black tactical pants, neutral-toned loose-weave shirts that allow tail freedom, soft-soled boots. Minimal jewelry — a single stainless steel cuff on left wrist. No corp logos or status indicators; dresses to be unremarkable in crowds."
   },
-  "image_prompt": "Kira Makwa, compact 158cm figure with warm deep brown skin and golden undertones reflecting Sub-Saharan African and Indigenous American heritage, sharp angular features with high cheekbones, natural dark brown voluminous curls pulled into severe cornrows. Matte black sensor-array eyes with no pupil or sclera creating unsettling obsidian depth. Sleek 60cm dark biomechanical tail with iridescent sheen extending from lower spine, currently coiled in focused posture. Wearing gray-charcoal smart-fabric Tessera monitoring suit fitted for neural interface comfort, minimal ornamentation. Single steel cuff on left wrist. Sitting with precise stillness in neon-lit corporate interior, cool blue and amber lighting casting sharp shadows across her angular face. Cyberpunk 2226 aesthetic, institutional surveillance setting, her inhuman eyes absorbing light. Economical, controlled posture, expression of austere focus. --ar 2:3 --v 6",
+  "image_prompt": "Kira Hinojosa, GLMZ, portrait of a striking mixed-heritage woman with warm medium-deep brown skin with golden undertones, razor-sharp high cheekbones and angular jawline, narrow face with refined geometric precision. Matte black sensor-array eyes with no visible iris or pupil creating an unsettling obsidian gaze. Long dark brown hair with auburn undertones pulled back in tight cornrows. Biomechanical dark iridescent tail extending from spine, approximately 60cm. Slight delicate 158cm frame in form-fitting gray-charcoal Tessera monitoring suit, smart-fabric with cooling elements. Perfectly still posture, economical precise movement. Minimal jewelry, single stainless steel cuff on left wrist. Neural interface scarring barely visible at left temple. Austere, stoic expression. Indoor Tessera facility lighting, cool blue-white fluorescent tones casting subtle shadows across her geometric facial structure, emphasizing high cheekbones and angular geometry. Corporate surveillance aesthetic, intimate clinical intimacy, unsettling inhuman beauty. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 28.6,
-    "Indigenous American": 21.8,
-    "Hispanic/Latin American": 18.0,
-    "Northern European": 17.8,
-    "Eastern European": 13.8
+    "Hispanic/Latin American": 42,
+    "Sub-Saharan African": 20.1,
+    "Northern European": 13.5,
+    "East Asian": 12.2,
+    "Indigenous American": 10.2,
+    "South Asian": 2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 0.9,
+        "Brazilian": 1.6
+      },
+      "Central American": {
+        "Guatemalan": 30.6
+      },
+      "Mexican": {
+        "Mexican": 8.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 5.7,
+        "Liberian": 1.3
+      },
+      "Central African": {
+        "Gabonese": 13.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 8,
+        "Swedish": 5.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.2
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 2.6
+      },
+      "Plains Nations": {
+        "Choctaw": 2
+      },
+      "Andean": {
+        "Aymara": 5.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.7
+      },
+      "Indian": {
+        "Marathi": 0.2,
+        "Punjabi": 0.5
+      },
+      "Pakistani": {
+        "Pashtun": 0.5,
+        "Punjabi Pakistani": 0.1
+      }
+    }
+  }
 }

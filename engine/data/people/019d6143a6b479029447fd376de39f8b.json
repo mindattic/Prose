@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b479029447fd376de39f8b",
   "type": "character",
-  "name": "Leilani Taualagi-Ionescu",
+  "name": "Ingrid Lindström-Seo",
   "aliases": [
     "Roksa",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "The Shelf, Precinct 4 — Apartment stack above the old Ferrogate maintenance depot, near Western and Division",
-  "description": "Roksana Diedhiou-Pribilof is a compact, high-voltage woman who has never learned to fill a room quietly. Her hair is natural and shot through with the kind of silver that arrives at the temples first and then conquers everything, worn in a structured wrap she pins with a Ferrogate union badge from 2161 — the old design, before the merger downgraded the insignia. Her geneware is minimal and aging: faint bioluminescent tracery under her forearms that pulses softly in blue when her blood pressure rises, a cosmetic choice from her forties that now serves as an involuntary emotional barometer everyone around her has learned to read. She moves quickly for her age and has the handshake of someone who spent decades using physical presence to establish authority at negotiating tables.\n\nShe is furious about her pension. Not in the vague way of someone who expected more from life, but in the precise, documented way of someone who can tell you exactly which Ferrogate Transit clause was quietly amended in 2191 to reduce survivor benefit calculations, who approved it, and what it cost her annually. She runs an informal advisory service out of her apartment — residents bring her their benefit disputes, their severance irregularities, their corponation contract fine print — and she helps them fight back. She charges nothing but accepts food. Her relationship with the Ferrogate Transit E.L.F. known as the Line-Keeper is complicated: she respects it but disputes its memory of the 2178 strike.",
+  "description": "Ingrid Lindström-Seo is a compact, high-voltage woman who has never learned to fill a room quietly. Her hair is natural and shot through with the kind of silver that arrives at the temples first and then conquers everything, worn in a structured wrap she pins with a Ferrogate union badge from 2161 — the old design, before the merger downgraded the insignia. Her geneware is minimal and aging: faint bioluminescent tracery under her forearms that pulses softly in blue when her blood pressure rises, a cosmetic choice from her forties that now serves as an involuntary emotional barometer everyone around her has learned to read. She moves quickly for her age and has the handshake of someone who spent decades using physical presence to establish authority at negotiating tables.\n\nShe is furious about her pension. Not in the vague way of someone who expected more from life, but in the precise, documented way of someone who can tell you exactly which Ferrogate Transit clause was quietly amended in 2191 to reduce survivor benefit calculations, who approved it, and what it cost her annually. She runs an informal advisory service out of her apartment — residents bring her their benefit disputes, their severance irregularities, their corponation contract fine print — and she helps them fight back. She charges nothing but accepts food. Her relationship with the Ferrogate Transit E.L.F. known as the Line-Keeper is complicated: she respects it but disputes its memory of the 2178 strike.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -180,7 +180,7 @@
     "Standard Bearer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,27 +246,14 @@
     "Ferrogate Transit",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "The Shelf",
+    "Pressure Drop",
     "The Fathom Line",
     "The Gradient Compact",
-    "Silver",
-    "Aleut Corporation",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Fanta Kato-Adomako",
-    "Felix Drum",
-    "GLMZ",
-    "MERIDIAN",
-    "Meridian Core",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Réginald Asomaning-Čabarkapa",
-    "Solina Barreto-Kiptoo",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Yannick Tofauti-Szarvásy"
+    "Silver"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Cosmopolitan diaspora blend: East Asian (21.8%), Pacific Islander (19.1%), Eastern European (15.8%), Northern European (15.4%), Sub-Saharan African (15.0%), and South Asian (12.9%) ancestry creates a striking phenotype—warm brown skin with golden undertones from the layered heritage, high cheekbones and defined facial structure reflecting East Asian and South Asian influences, combined with the robust frame and pronounced jawline of Northern/Eastern European genetics",
+    "heritage": "Ubiquitous diaspora blend: East Asian (46.4%) provides dominant facial structure with high cheekbones and eye shape; Northern European (26.5%) contributes robust jawline and bone density; Southeast Asian (10.6%) adds warmth and subtle softness to features; Hispanic/Latin American (8.6%) and Sub-Saharan African (7.9%) deepen skin undertones and add richness to overall phenotype. The result is a striking warm medium-brown complexion with golden-amber undertones, angular yet approachable facial geometry, and the kind of structural strength that reads as competence rather than aggression.",
     "height_cm": 158,
     "weight_kg": 61,
     "build": "Compact and dense, shoulders still squared from decades of standing across negotiating tables; no excess weight, wiry musculature beneath aging skin that suggests physical work rather than gym discipline",
@@ -274,8 +261,8 @@
     "hair_style": "Structured wrap pinned with a 2161 Ferrogate union badge (old design, pre-merger); tightly secured, practical, worn as deliberate identity marker",
     "hair_length": "Medium (wrapped)",
     "eye_color": "Brown, natural; right eye bears a faint consumer-grade reading lens implant visible as subtle prismatic refraction at certain angles",
-    "skin_tone": "Warm medium-brown with golden undertones, weathered from seventy-one years and outdoor maintenance work at the depot memorial wall; the tone reflects the complex interplay of East Asian, Pacific Islander, African, and South Asian ancestry",
-    "complexion": "Lined face with pronounced forehead creases and deep nasolabial folds from decades of sustained intensity; skin condition good for her age, well-maintained; strong jawline, high cheekbones with structure reflecting the East Asian and South Asian components of her heritage",
+    "skin_tone": "Warm medium-brown with golden-amber undertones, weathered from seventy-one years and outdoor maintenance work at the depot memorial wall; the tone reflects balanced blending of East Asian warmth, Southeast Asian depth, Northern European undertones, and African heritage richness",
+    "complexion": "Lined face with pronounced forehead creases and deep nasolabial folds from decades of sustained intensity; skin condition good for her age, well-maintained; strong jawline showing Northern European angularity tempered by East Asian refinement, high cheekbones with definition enhanced by Sub-Saharan African and Hispanic/Latin American heritage warmth and depth",
     "distinguishing_marks": [
       "Bioluminescent subdermal tracery running across both forearms in delicate branching patterns, blue in color, barely visible at rest but pulses noticeably brighter when stress elevates blood pressure",
       "Calluses on right hand palm and fingers from decades of handshakes and physical labor",
@@ -286,17 +273,60 @@
     "posture_movement": "Moves with purposeful quickness despite age; walks from the core outward, grounded stance, no shuffling. Hand gestures are economical and emphatic—decades of negotiating table authority embedded in her physical grammar. Her default expression hovers between attentiveness and irritation. She makes direct eye contact and holds it.",
     "clothing_style": "Tier 4 working-class, carefully maintained: heavy cotton union-embroidered work shirt (vintage Ferrogate Transit colors, faded), dark practical trousers with cargo pockets, sturdy reinforced shoes suitable for standing all day at the memorial wall. Always wears the 2161 union badge pinned to her wrap. No visible corp branding. Clothing is functional, clean, and chosen to signal allegiance rather than fashion. Small personal touches: a hand-stitched patch on her left shoulder commemorating the 2178 strike."
   },
-  "image_prompt": "Leilani Taualagi-Ionescu, 71-year-old working-class union organizer, cyberpunk 2226 Great Lakes Metropolitan Zone. Medium-brown skin with warm golden undertones reflecting complex East Asian, Pacific Islander, African, and Eastern European heritage. Silver-grey hair wrapped and pinned with vintage 2161 Ferrogate union badge, dark roots visible. Lined face with high prominent cheekbones and strong jawline, deep nasolabial folds from decades of intensity. Brown natural eyes, right eye with subtle consumer-grade prismatic reading lens visible in light. Compact 158cm frame, wiry musculature, no excess weight. Wearing faded vintage Ferrogate Transit work shirt, dark cargo trousers, sturdy reinforced shoes. Blue bioluminescent subdermal branching patterns visible across both forearms, barely glowing at rest. Pale burn scar on left inner wrist from 2156. Direct unflinching gaze, posture grounded and purposeful. Standing at rain-slicked memorial wall, moody cyberpunk city lighting, neon reflections on wet ground. Attentive and slightly irritated expression. Analog watch, hand-stitched strike commemorative patch on shoulder. Worn decades-old union badge as identity marker. Cinematic, gritty realism, dusk hour with sodium lights and distant holographic advertisements. --ar 2:3 --v 6",
+  "image_prompt": "Ingrid Lindström-Seo, 71-year-old union organizer, GLMZ, medium-brown skin with golden-amber undertones reflecting East Asian, Northern European, Southeast Asian, Hispanic, and African heritage blend. Angular high cheekbones, strong jawline, natural brown eyes with subtle right-eye lens implant visible as prismatic glint. Silver-grey hair wrapped tightly and pinned with faded 2161 Ferrogate union badge. Weathered face with deep expression lines from decades of intensity. Wearing vintage faded union-embroidered work shirt in Ferrogate Transit colors, dark cargo trousers, reinforced shoes. Blue bioluminescent branching tracery visible on both forearms, faintly glowing. Faded burn scar on left wrist, callused right hand. Standing with grounded purposeful posture, making direct eye contact, default expression between attentiveness and irritation. Memorial wall in soft background. Worn working-class aesthetic, no corpo branding. Natural morning light emphasizing the golden undertones in her skin, the blue glow of her augmented forearm tracery, the faded union patch on her left shoulder. Mood: determined, skeptical, rooted in working history. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 21.8,
-    "Pacific Islander": 19.1,
-    "Eastern European": 15.8,
-    "Northern European": 15.4,
-    "Sub-Saharan African": 15.0,
-    "South Asian": 12.9
+    "East Asian": 46.4,
+    "Northern European": 26.5,
+    "Southeast Asian": 10.6,
+    "Hispanic/Latin American": 8.6,
+    "Sub-Saharan African": 7.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 34.9
+      },
+      "Chinese": {
+        "Mandarin Northern": 11.2,
+        "Fujianese": 0.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 26.5
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 8
+      },
+      "Laotian": {
+        "Laotian": 2.1
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 6.7
+      },
+      "Central American": {
+        "Guatemalan": 0.7,
+        "Salvadoran": 1.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 5.1
+      },
+      "West African": {
+        "Sierra Leonean": 2.8
+      }
+    }
+  }
 }

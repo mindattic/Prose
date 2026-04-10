@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a17b4abcdfe86ce5ab219f",
   "type": "character",
-  "name": "Lark Amrani",
+  "name": "Lark Madrigal",
   "aliases": [
     "Brother Prokhor",
     "The Bolt-Monk"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Brightmoor Reclamation, the Tessellated Chapel — a repurposed Ferrogate Transit relay station, near Western and Division",
-  "description": "Prokhor is lean in the way of someone who forgets to eat when absorbed in something, with long-fingered hands that are always slightly ink-stained from the circuit diagrams he draws as meditative practice. His Zambian-Russian heritage gives him warm brown skin and broad cheekbones, and he keeps his head shaved except for a central strip of hair that he has grown into a narrow topknot. His most visible modification is a bioluminescent stripe running from his left temple to his jaw that pulses in slow rhythms matching his resting heartrate — a devotional mod he received during his ordination into the Circuit Path, meant to make the soul's rhythm visible to the world.\n\nHe came to the circuit monks after a breakdown at nineteen, when a corporate data compression project he'd been laboring on for Tessera was quietly canceled without credit or compensation. The spiritual collapse that followed became the foundation of something else. He is earnest to a degree that can be disarming or irritating depending on the listener, but there is nothing performative about his faith — he genuinely believes that the act of building and repairing circuits is a form of prayer, and that the monks' practice of meditating through hardware maintenance brings them closer to something real. He struggles with anger, which he has mostly converted into fierce advocacy.",
+  "description": "Lark Madrigal is lean in the way of someone who forgets to eat when absorbed in something, with long-fingered hands that are always slightly ink-stained from the circuit diagrams he draws as meditative practice. His Zambian-Russian heritage gives him warm brown skin and broad cheekbones, and he keeps his head shaved except for a central strip of hair that he has grown into a narrow topknot. His most visible modification is a bioluminescent stripe running from his left temple to his jaw that pulses in slow rhythms matching his resting heartrate — a devotional mod he received during his ordination into the Circuit Path, meant to make the soul's rhythm visible to the world.\n\nHe came to the circuit monks after a breakdown at nineteen, when a corporate data compression project he'd been laboring on for Tessera was quietly canceled without credit or compensation. The spiritual collapse that followed became the foundation of something else. He is earnest to a degree that can be disarming or irritating depending on the listener, but there is nothing performative about his faith — he genuinely believes that the act of building and repairing circuits is a form of prayer, and that the monks' practice of meditating through hardware maintenance brings them closer to something real. He struggles with anger, which he has mostly converted into fierce advocacy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -177,7 +177,7 @@
     "Perpetual Student": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brightmoor Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,33 +234,18 @@
   "related_entities": [
     "Brightmoor Reclamation",
     "Ferrogate Transit",
-    "The Reclamation Assembly",
     "The Circuit",
+    "The Reclamation Assembly",
     "FOUNDATION",
     "The Heritage Vault",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Tessera Corponation",
-    "The Pure Hand",
-    "Breck Tannen",
-    "Korrath",
-    "Lazarus Pharmaceuticals",
-    "Malika Zhukov-Wiredu",
-    "Narrowcast",
-    "NeuralPath ClearRun Focus Regulation Implant",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "Sustrel",
-    "TESSERA PG-2 'Signature'",
-    "The Congregation",
-    "The Listener",
-    "The Signal",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Circuit",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian and North African with significant Southeast Asian and South Asian ancestry, creating a striking blend of features from across the diaspora. The East Asian foundation (35.9%) provides the eye shape and bone structure, while North African heritage (31.7%) contributes warmth and depth to complexion. Southeast Asian (17.3%) and South Asian (10.2%) ancestry layer additional nuance into skin tone and facial geometry, with traces of Eastern European (4.9%) adding subtle cool undertones.",
+    "heritage": "Predominantly Hispanic/Latin American (67.6%) with significant Northern European (11.8%), East Asian (10.0%), and smaller portions of Sub-Saharan African (5.7%) and Southeast Asian (4.9%) ancestry. This creates a warm, sun-kissed complexion with strong Latin American foundation, enhanced by subtle East Asian bone structure and the depth and warmth from African ancestry. Northern European traces add slight cool undertones to an otherwise warm, golden palette.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, the build of someone whose body follows the rhythm of their mind rather than disciplined training. Long-limbed with visible tendons in forearms and hands; slight forward shoulder curve from years hunched over circuit boards.",
@@ -268,8 +253,8 @@
     "hair_style": "Central strip of hair grown into a narrow, carefully maintained topknot; the sides of his skull are shaved smooth and regularly maintained",
     "hair_length": "Shaved on sides, medium-length topknot",
     "eye_color": "Deep brown, warm and attentive",
-    "skin_tone": "Warm medium-deep brown with golden undertones, the result of layered East Asian, North African, and Southeast Asian heritage creating luminous depth—darker and richer than his previous description, with subtle warmth that catches light distinctly",
-    "complexion": "Clean-shaven with prominent cheekbones and slight hollowness suggesting irregular eating habits. The facial structure reflects East and Southeast Asian bone geometry softened by North African warmth. Skin is clear but weathered from hours under workstation LEDs. Expression defaults to focused intensity, softened by genuine kindness.",
+    "skin_tone": "Warm golden-brown with luminous richness—predominantly Latin American undertone enhanced by East Asian subtlety and African depth. Sun-warmed complexion that glows distinctly in light, catching highlights with warm golden reflections.",
+    "complexion": "Clean-shaven with prominent cheekbones and slight hollowness suggesting irregular eating habits. The facial structure reflects Latin American geometry with subtle East Asian influence in eye placement and bone definition, warmed by African ancestry contributing depth and richness to overall tone. Skin is clear but weathered from hours under workstation LEDs. Expression defaults to focused intensity, softened by genuine kindness.",
     "distinguishing_marks": [
       "Bioluminescent stripe running from left temple to left jawline, pulsing in slow rhythm — cyan-blue in color, most visible in dim light or evening hours",
       "Faint, systematic burn scars across the backs of both hands from soldering work — old, healed, pale against his skin",
@@ -279,16 +264,60 @@
     "posture_movement": "Moves with deliberate, economical precision — no wasted motion. His hands are constantly slightly active, fingers making micro-movements as if working through problems. When listening, he tilts his head slightly, a habit from focusing on faint electronic hums. Sits cross-legged frequently, even informally.",
     "clothing_style": "Tier 3-4 working class with ascetic undertones. Favors loose, practical clothing: worn canvas work robes in muted grays and blacks (monastic order signature), layered with a sleeveless thermal underneath. Carries a worn leather satchel with hand tools and circuit components. His clothing shows signs of minor burns and staining but is kept scrupulously clean. No corporate logos or luxury indicators; everything is functional and intentionally simple. Bare feet when possible, calloused and steady."
   },
-  "image_prompt": "Lark Amrani, cyberpunk 2226, lean 178cm East Asian and North African diaspora male with warm deep brown skin and golden undertones, high prominent cheekbones, close-shaved sides with dark brown topknot, deep brown eyes. Distinctive cyan-blue bioluminescent stripe pulsing slowly down left temple to jawline. Faint soldering scars on backs of hands, ink-stained knuckles. Wearing worn gray canvas work robes with minimal monastic aesthetic, sleeveless thermal layer underneath, carrying weathered leather tool satchel. Deliberate economical posture, slight forward shoulder curve, bare calloused feet. Cross-legged seated position in dim underground workshop, neon cyan accent lighting catching the bioluminescent stripe, LED workstation glow illuminating focused, kind expression, hands making micro-movements over circuit board. Cyberpunk ascetic hacker aesthetic, meditative intensity, authentic working-class diaspora futurism. --ar 2:3 --v 6",
+  "image_prompt": "Lark Madrigal, GLMZ, Great Lakes Metropolitan Zone. Tall lean figure, 178cm, warm golden-brown skin with luminous undertones reflecting Latin American, East Asian, and African heritage. Clean-shaven with prominent cheekbones, deep brown attentive eyes. Dark brown hair shaved at sides with central topknot. Distinctive cyan-blue bioluminescent stripe running from left temple to jawline, pulsing softly. Faint pale soldering scars across both hands, ink stains on knuckles. Wears loose, practical canvas work robes in muted grays and blacks over sleeveless thermal, worn leather satchel with tools. Bare feet, calloused and steady. Posture precise and economical, fingers subtly moving. Focused intensity softened by kindness. Workstation-weathered skin. Sitting cross-legged in dim workshop lighting, cyan bioluminescence visible against darkness, monastic ascetic aesthetic, hands active with circuit work, moody neo-noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 35.9,
-    "North African": 31.7,
-    "Southeast Asian": 17.3,
-    "South Asian": 10.2,
-    "Eastern European": 4.9
+    "Hispanic/Latin American": 67.6,
+    "Northern European": 11.8,
+    "East Asian": 10,
+    "Sub-Saharan African": 5.7,
+    "Southeast Asian": 4.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 25.9
+      },
+      "Mexican": {
+        "Mexican": 24.1
+      },
+      "Central American": {
+        "Salvadoran": 17.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 7,
+        "English": 1.1
+      },
+      "Scandinavian": {
+        "Danish": 2.6
+      },
+      "Germanic": {
+        "Swiss German": 1.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 5.3
+      },
+      "Korean": {
+        "Korean": 4.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 5.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 3.6,
+        "Javanese": 1.3
+      }
+    }
+  }
 }

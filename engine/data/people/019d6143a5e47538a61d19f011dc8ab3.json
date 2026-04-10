@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Spire, Axiom R&D Sublevel 4 ('The Pit'), near sub-level access near LaSalle and Congress",
-  "description": "Dariusz is slight and angular, with warm brown skin, high cheekbones inherited from a Tibetan great-grandmother, and eyes that are naturally a startling pale grey — no augmentation, just genetics. He keeps his dark hair grown out just past his ears and perpetually tangled, secured with whatever clip or rubber band is nearest. There's always something on his lab coat: a smear of bioluminescent culture medium, a printed reminder he forgot to read, a small sticker of a cartoon E.L.F. figure his sister sent him. He moves with the slightly distracted energy of someone whose internal monologue is always two sentences ahead of the room.\n\nDariusz is genuinely passionate about biochem in a way that Axiom has been carefully trying to redirect toward profitable applications. He processes the world through curiosity first, emotion second, and social obligation a distant third. He's not unkind — he's simply elsewhere. He grew up in a small Tier 2 family in Hamtramck Enclave, the first in his family to get a corporate lab placement, and he carries that fact with a mix of pride and low-level guilt that he handles by working too many extra hours and forgetting to eat lunch.",
+  "description": "Indigo Bangura is slight and angular, with warm brown skin, high cheekbones inherited from a Tibetan great-grandmother, and eyes that are naturally a startling pale grey — no augmentation, just genetics. He keeps his dark hair grown out just past his ears and perpetually tangled, secured with whatever clip or rubber band is nearest. There's always something on his lab coat: a smear of bioluminescent culture medium, a printed reminder he forgot to read, a small sticker of a cartoon E.L.F. figure his sister sent him. He moves with the slightly distracted energy of someone whose internal monologue is always two sentences ahead of the room.\n\nIndigo Bangura is genuinely passionate about biochem in a way that Axiom has been carefully trying to redirect toward profitable applications. He processes the world through curiosity first, emotion second, and social obligation a distant third. He's not unkind — he's simply elsewhere. He grew up in a small Tier 2 family in Hamtramck Enclave, the first in his family to get a corporate lab placement, and he carries that fact with a mix of pride and low-level guilt that he handles by working too many extra hours and forgetting to eat lunch.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -177,7 +177,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spire",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,38 +236,16 @@
     "Hamtramck Enclave",
     "Grandmother",
     "The Spire",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Quiet Room",
     "Autonomous Adhesive Denial Drone AADD-2 'Barnacle'",
     "Red Granite Pit",
-    "The Pale Mile",
-    "Alper Inoue-Aidoo",
-    "Arcturus ST-4 'Verdict'",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Djeneba Park-Traore",
-    "Ferrogate Transit",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Ghostbridge Island",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Corponation",
-    "Tessera Personal Defense System TPDS-1 'Reflex'",
-    "The Delray Sacrifice Zone",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Unfinished Theorem",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Vuk Jorgensen-Toure",
-    "Ximena Bautista-Nwosu"
+    "Indigo",
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (51.8%), Northern European (25.1%), Hispanic/Latin American (23.1%) — a complex genetic mosaic creating warm brown skin with subtle golden and olive undertones, prominent bone structure reflecting African and Latin ancestry, and the pale grey eyes from Northern European heritage",
+    "heritage": "East Asian (32.4%), Northern European (30.3%), Sub-Saharan African (21.7%), Central Asian (15.6%) — a striking genetic mosaic with balanced contributions across four distinct regions. Warm medium-brown skin with golden undertones and subtle olive cast reflects the harmonic blend of equatorial and temperate ancestry. Mixed facial bone structure combines East Asian cheekbone definition with broader Sub-Saharan nasal geometry, while pale grey eyes carry Northern European recessive traits against warm undertones. Central Asian ancestry manifests subtly in face shape and slight epicanthic variation.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Slight and angular, almost ascetic — narrow shoulders, long-limbed with minimal musculature. The build of someone who forgets to eat regularly and spends 10+ hours daily hunched over lab benches.",
@@ -275,8 +253,8 @@
     "hair_style": "Perpetually tangled, unstyled, secured with whatever clip or elastic band is nearest — often mismatched or repurposed",
     "hair_length": "Medium (just past ears)",
     "eye_color": "Pale grey (natural, non-augmented)",
-    "skin_tone": "Warm medium brown with golden and subtle olive undertones — the blended result of dominant Sub-Saharan African ancestry with Northern European and Latin American genetic contribution",
-    "complexion": "High, prominent cheekbones with defined facial structure reflecting African and Latin ancestry. Skin clear but often shows signs of fatigue — mild dark circles under eyes from late lab hours. Face carries a perpetually distracted expression, as if listening to an internal thought one step ahead of conversation.",
+    "skin_tone": "Warm medium brown with golden undertones and subtle olive cast — the balanced blended result of East Asian, Sub-Saharan African, Northern European, and Central Asian ancestry",
+    "complexion": "Mixed facial structure showing harmonious East Asian and Sub-Saharan African blending — high, defined cheekbones with moderate prominence, almond-shaped eye geometry softened by broader nasal base and full nasal bridge. Skin texture even but often shows signs of fatigue — mild dark circles under eyes from late lab hours. Face carries a perpetually distracted expression, as if listening to an internal thought one step ahead of conversation.",
     "distinguishing_marks": [
       "Bioluminescent skin modification on both forearms — soft blue-green pigmentation that intensifies under UV light, applied at age 22 to celebrate Axiom placement",
       "Occasional chemical stains on hands and wrists (lab work), usually faint and varied in color depending on recent substrate cultures"
@@ -285,14 +263,47 @@
     "posture_movement": "Moves with distracted, slightly hurried energy — shoulders slightly forward in a perpetual lean, as if physically angled toward the next thought. Fidgety hands when stationary. When focused on work, becomes unnaturally still. Makes minimal eye contact in conversation, gaze drifting to equipment or middle distance.",
     "clothing_style": "Axiom-issued lab coat (Tier 2 standard — durable polymer blend, slightly wrinkled, always stained with something) worn over simple, functional clothing: dark synthetic shirt, grey or black tapered trousers, worn soft-soled lab shoes. Pockets bulging with notebook, pen, swipe card, sometimes a protein bar he forgot to eat. A small cartoon E.L.F. figure sticker adhered to his coat lapel (gift from sister). Headphones around his neck or in ears during commute. No jewelry except a faded rubber band on left wrist (used to secure hair when clip is lost)."
   },
-  "image_prompt": "Indigo Bangura, cyberpunk 2226 genetic researcher, 172cm tall with angular build and warm medium-brown skin with golden undertones. Pale grey eyes, dark tangled hair past ears, perpetually distracted expression. Wearing wrinkled Axiom lab coat with chemical stains over dark synthetic shirt and grey tapered trousers. Bioluminescent blue-green forearm modifications glowing softly under lab UV lighting. Neural uplink port visible at base of skull. Slight forward shoulder lean, fidgety hands, minimal eye contact posture. Lab bench environment with holographic displays, soft blue bioluminescence illuminating workspace, late night 2200s aesthetic, focused and exhausted mood, moody laboratory lighting --ar 2:3 --v 6",
+  "image_prompt": "Indigo Bangura, 172cm tall, lean angular neo-noir scientist, warm medium-brown skin with golden undertones, pale grey eyes, dark nearly-black medium-length tangled hair, mixed East Asian-African-Northern European-Central Asian features with defined cheekbones and broad nasal structure. Wearing wrinkled Axiom-issued lab coat over dark synthetic shirt and grey tapered trousers, soft lab shoes. Both forearms glow with bioluminescent blue-green modifications, subtle chemical stains on hands. Distracted expression, slightly forward shoulder posture, hands fidgeting. E.L.F. sticker on coat lapel, worn rubber band on left wrist. Neural uplink port visible at base of skull. Headphones around neck. Standing in futuristic lab environment, GLMZ, cool fluorescent and soft UV lighting highlighting bioluminescent arm mods, tired but focused demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 51.8,
-    "Northern European": 25.1,
-    "Hispanic/Latin American": 23.1
+    "East Asian": 32.4,
+    "Northern European": 30.3,
+    "Sub-Saharan African": 21.7,
+    "Central Asian": 15.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 32.4
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 4.3,
+        "Austrian": 3.2
+      },
+      "Scandinavian": {
+        "Swedish": 10.3,
+        "Finnish": 12.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 16.2,
+        "Kenyan": 5.5
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 7.7,
+        "Turkmen": 3.6
+      },
+      "Mongolic": {
+        "Buryat": 4.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72e74808633c5c21de9dc19",
   "type": "character",
-  "name": "Thora Keïta",
+  "name": "Devi Chakraborty",
   "aliases": [
     "Architect Seven",
     "The Widow of Column D",
@@ -14,7 +14,7 @@
   "age": 58,
   "status": "active",
   "location": "The Spire, near Lake Shore Drive and Division",
-  "description": "Yseult is a tall, angular woman of Italian-Lao descent whose posture suggests someone who has spent decades deciding which rooms to fill and which to empty. Her silver-streaked black hair is worn in a severe architectural roll, and her clothing is always monochrome — charcoals and off-whites — chosen, she once said, so that nothing she wears competes with what she is looking at. The fine lines around her eyes and the deliberate economy of her expressions give her the quality of a building that has been renovated so many times only the original load-bearing structure remains.",
+  "description": "Devi Chakraborty is a tall, angular woman of Italian-Lao descent whose posture suggests someone who has spent decades deciding which rooms to fill and which to empty. Her silver-streaked black hair is worn in a severe architectural roll, and her clothing is always monochrome — charcoals and off-whites — chosen, she once said, so that nothing she wears competes with what she is looking at. The fine lines around her eyes and the deliberate economy of her expressions give her the quality of a building that has been renovated so many times only the original load-bearing structure remains.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -227,7 +227,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spire",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,27 +244,11 @@
     "The Shelf",
     "The Spire",
     "ARCHITECT",
-    "ARCHIVE",
-    "Silver",
-    "GLMZ",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Old Harbor",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Tessera Corponation",
-    "Tessera TKR-SL 'Inquisitor'",
-    "The Archive",
-    "The Flood Register",
-    "The Pure Hand",
-    "The Question",
-    "Vesna Čolić-Strand",
-    "Yannick Tofauti-Szarvásy"
+    "Silver"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant Northern European, Pacific Islander, and South Asian ancestry, creating a striking high-contrast phenotype. Her genetic makeup produces rich warm undertones with complex layered heritage visible in facial structure and overall bearing.",
+    "heritage": "Complex multihemispheric ancestry: Hispanic/Latin American (32.9%) and South Asian (26.8%) form the dominant base, creating warm golden-bronze undertones and defined facial structure. Northern European (18.9%) ancestry adds subtle cool undertones and lighter features to the mix. East Asian (8.2%), Indigenous American (8.0%), and North African (5.2%) heritage further refine her appearance with layered geometric features and warm depth. This blend produces luminous golden-bronze skin with a unique warm-cool balance, visible in facial geometry that combines sharp cheekbones with broader facial planes, and bearing that suggests both precision and ancestral presence.",
     "height_cm": 180,
     "weight_kg": 62,
     "build": "Tall and angular, with the deliberate leanness of someone who treats her body as functional infrastructure rather than aesthetic concern. Shoulders held level; minimal subcutaneous fat; visible muscle definition in forearms and neck from decades of precision work.",
@@ -272,8 +256,8 @@
     "hair_style": "Severe architectural roll pinned at the nape, not a strand displaced",
     "hair_length": "Medium (shoulder-length when unrolled)",
     "eye_color": "Dark brown with faint iridescent shimmer at certain angles indicating retinal overlay hardware",
-    "skin_tone": "Deep warm brown with subtle golden undertones, even throughout, minimal sun exposure despite frequent outdoor documentation work. The depth and richness of her complexion reflects the strength of her Sub-Saharan ancestry balanced with Northern European and Pacific Islander heritage creating luminous quality.",
-    "complexion": "Fine lines concentrated around eyes and mouth from decades of focused scrutiny and minimal expression. Skin texture is smooth but not soft — well-maintained through corporate-tier medical access. High cheekbones and defined jawline reflect mixed ancestry. No visible blemishes or cosmetic augmentation; grooming is utilitarian and precise.",
+    "skin_tone": "Warm golden-bronze throughout, medium-deep saturation with subtle cool undertones from Northern European ancestry. The complexion is luminous and even, reflecting the balanced blend of South Asian and Hispanic/Latin American heritage with grounding from Indigenous American and North African ancestry. Creates a unique warm-cool luminescence even despite frequent outdoor work exposure.",
+    "complexion": "Fine lines concentrated around eyes and mouth from decades of focused scrutiny and minimal expression. Skin texture is smooth but not soft — well-maintained through corporate-tier medical access. High, defined cheekbones with subtle broader planes reflecting the blend of South Asian, Indigenous American, and Northern European ancestry. Defined jawline with warm undertone and slight width suggesting multihemispheric heritage. No visible blemishes or cosmetic augmentation; grooming is utilitarian and precise.",
     "distinguishing_marks": [
       "Thin, barely-visible scar along the left temple where retinal overlay was installed approximately thirty years ago, visible only in certain light",
       "Small circular scar on the inside of each wrist (cochlear filter installation points, now largely faded)",
@@ -283,17 +267,60 @@
     "posture_movement": "Moves with architectural efficiency — no wasted motion, each step deliberate and directional. When standing still, her weight is perfectly balanced. When observing spaces, she becomes nearly motionless, eyes moving in slow architectural sweeps. Her hand movements are slow and controlled, tactile; she touches surfaces as if reading them. Her expressions are minimal; emotion registers primarily in eye focus and the angle of her head.",
     "clothing_style": "Exclusively monochrome — charcoal gray, off-white, black, pale cream. High-end corpo-casual: fitted but structured fabrics, minimal branding, tailored cuts that suggest both precision and invisibility. Spire-tier wardrobe but worn without ostentation. Always wears a lightweight technical jacket in charcoal, pockets reinforced for carrying the analog camera and design instruments. No jewelry beyond a single titanium watch with analog face. Footwear is understated technical — expensive but designed for ten-hour days on feet, worn building sites."
   },
-  "image_prompt": "Portrait of Thora Keïta, a striking tall angular woman with deep rich brown skin and luminous quality, black hair with silver threading pulled into severe architectural roll, dark penetrating eyes with subtle iridescent retinal overlay shimmer. High cheekbones, defined jawline, minimal expression. Wearing charcoal technical jacket over monochrome fitted clothing, titanium analog watch. Standing with perfect architectural posture in cyberpunk 2226 setting, dim corporate lighting casting sharp shadows across her face, emphasizing the faint temple scar. Cool color palette with warm skin tones creating high contrast. 2200s aesthetic, precise and utilitarian. --ar 2:3 --v 6",
+  "image_prompt": "Devi Chakraborty, a 180cm tall angular woman with warm golden-bronze skin reflecting South Asian, Hispanic, Indigenous American, and Northern European ancestry. Dark hair with silver streaks pulled into severe architectural roll. Dark brown eyes with subtle iridescent retinal overlay shimmer. Fine lines around eyes from decades of focused work. High defined cheekbones with subtle broader planes. Faint scar visible on left temple in certain lighting. Minimal expression, emotional depth in eye focus. Wearing monochrome charcoal technical jacket over pale cream shirt, titanium analog watch, expensive understated technical footwear. Standing with perfect postural balance, hands positioned with mechanical precision. GLMZ, Great Lakes Metropolitan Zone, photorealistic portrait, cool LED lighting highlighting skin luminescence, architectural precision evident in bearing and gaze, mood of focused intensity and technological integration, sharp focus on facial geometry --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 51.0,
-    "Northern European": 16.9,
-    "Pacific Islander": 10.3,
-    "Hispanic/Latin American": 8.5,
-    "Eastern European": 7.1,
-    "South Asian": 6.2
+    "Hispanic/Latin American": 32.9,
+    "South Asian": 26.8,
+    "Northern European": 18.9,
+    "East Asian": 8.2,
+    "Indigenous American": 8,
+    "North African": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 32.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 26.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 14.5,
+        "Scottish": 4.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 2.8
+      },
+      "Chinese": {
+        "Shanghainese": 4
+      },
+      "Japanese": {
+        "Japanese": 1.4
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 2.2,
+        "Menominee": 1.5
+      },
+      "Andean": {
+        "Mapuche": 4.3
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Mauritanian": 5.2
+      }
+    }
+  }
 }

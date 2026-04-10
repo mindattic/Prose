@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d37607844cad92eb1b0645",
   "type": "character",
-  "name": "Luca Hinojosa-Mbekele",
+  "name": "Luca Kovalenko-Wattana",
   "aliases": [
     "Clockwork"
   ],
@@ -87,7 +87,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -102,16 +102,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "The Milwaukee Core",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Nodar Kuznetsov-Adu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "The Heritage Vault"
+    "Circuit"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly South Asian with significant Sub-Saharan African, Hispanic/Latin American, and Indigenous American ancestry—a striking blend evident in warm brown skin with golden undertones, sharp facial structure suggesting South Asian and Indigenous heritage, and the warm depth from African ancestry. The combination creates distinctive high cheekbones and a defined jawline with subtle warmth across the face.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Northern European (26.5%) and Eastern European (25.5%) ancestry provides structural foundation with sharp cheekbone definition and angular bone geometry. Substantial South Asian (24.6%) and Southeast Asian (16.8%) heritage creates softer facial curves and prominent cheekbones with warm golden undertones. Hispanic/Latin American (4.1%) and Sub-Saharan African (2.5%) ancestry contribute warmth and luminous depth to the complexion. The result is a face of striking dimensional contrast—Eastern European angular sharpness balanced by South Asian fullness and warmth, with golden-amber undertones radiating from cheekbones and bridge of nose, creating a complexion that appears to glow from within.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and angular with corded muscle density — built for precision work rather than raw strength. Shoulders slightly narrower than hips, creating an understated silhouette.",
@@ -119,8 +114,8 @@
     "hair_style": "Cropped close on sides, slightly longer on top — styled back with subtle texture. Low maintenance, high function.",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones—the result of South Asian base ancestry blended with Sub-Saharan African warmth and Latin American richness, creating complex depth across face and body",
-    "complexion": "Sharp cheekbones and defined jawline reflecting South Asian and Indigenous American structure, enhanced by African ancestry warmth. Skin is clear and well-maintained but not pampered — the complexion of someone who prioritizes function over aesthetics. Minimal facial hair. Subtle golden luminosity across cheekbones and bridge of nose.",
+    "skin_tone": "Medium-toned warm complexion with balanced undertones: cooler Northern/Eastern European notes along the temples and jawline blend seamlessly into golden-amber warmth from South Asian, Southeast Asian, and African ancestry concentrated on cheekbones and bridge of nose. Skin carries luminous rather than matte quality—subtle radiance without shine.",
+    "complexion": "Angular, well-defined facial structure balancing Eastern European sharpness with South Asian softness. High, prominent cheekbones with gentle fullness underneath. Strong, tapered jawline. Clear skin with functional rather than pampered appearance. Minimal facial hair. Warm golden-amber luminosity concentrated on cheekbones, bridge of nose, and upper cheeks, creating visual dimensionality. Cooler undertones along temples, jawline, and forehead creating subtle shadow play.",
     "distinguishing_marks": [
       "Thin surgical scar along the left temple, barely visible unless light hits it directly",
       "Small burn mark on the inner right wrist — roughly 2cm diameter, old and faded silver",
@@ -130,15 +125,70 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight distributed evenly, shoulders relaxed. Eyes constantly scanning. Handshakes are firm but brief. Speech is measured; they listen more than they talk.",
     "clothing_style": "Tier 3-4 practical wear. Prefers neutral colors: charcoal, black, muted gray. Typical outfit: reinforced cargo pants with multiple hidden pockets, fitted synthweave turtleneck or unmarked tech jacket. Worn-in leather boots with non-slip soles. Minimal branding. A single piece of jewelry — a thin braided bracelet in matte gunmetal, possibly containing subcutaneous tech interface. Dressing room aesthetic: function first, invisibility second."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Luca Hinojosa-Mbekele, 172cm tall with lean angular build. Warm deep brown skin with golden undertones, sharp cheekbones and defined jawline. Black hair cropped close on sides, longer textured on top, styled back. Alert dark brown eyes with calculating gaze. Thin surgical scar along left temple. Faint geometric circuit tattoo on back of neck. Wears charcoal synthweave turtleneck and reinforced cargo pants, worn leather boots. Matte gunmetal braided bracelet. Standing with economical posture, weight distributed evenly, eyes scanning. Cool neon-lit Great Lakes Metropolitan Zone setting, subtle overhead lighting catching the scar and golden skin tones. Minimal visible augmentation aesthetic. Professional infiltrator aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Luca Kovalenko-Wattana, 172cm lean angular frame, dark cropped hair styled back with texture. Medium-toned warm complexion with golden-amber radiance on high prominent cheekbones and bridge of nose, cool undertones along temples and sharp jawline—striking blend of Eastern European angular structure and South Asian softness. Dark brown alert eyes. Minimal facial hair. Thin surgical scar on left temple barely visible. Small faded burn mark on inner right wrist. Faint geometric circuit tattoo on back of neck. Wearing charcoal synthweave tech jacket and reinforced black cargo pants, worn leather boots. Single matte gunmetal braided bracelet. Economical precise posture, shoulders relaxed, hands resting naturally. GLMZ Great Lakes Metropolitan Zone setting—dimly lit corporate hallway or neon-lit safe house, cool blue and amber neon lighting emphasizing the warm-cool interplay of their skin tone. Serious, calculating expression. Professional spy or infiltration operative aesthetic. Highly detailed photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 44.7,
-    "Sub-Saharan African": 25.1,
-    "Hispanic/Latin American": 21.6,
-    "Indigenous American": 8.6
+    "Northern European": 26.5,
+    "Eastern European": 25.5,
+    "South Asian": 24.6,
+    "Southeast Asian": 16.8,
+    "Hispanic/Latin American": 4.1,
+    "Sub-Saharan African": 2.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "English": 13.4,
+        "Irish": 13.1
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 11.7,
+        "Czech": 13.8
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 7
+      },
+      "Nepali": {
+        "Nepali": 17.6
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 16.1
+      },
+      "Laotian": {
+        "Laotian": 0.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 1.8,
+        "Dominican": 0.3
+      },
+      "South American": {
+        "Colombian": 1.9,
+        "Brazilian": 0.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 0.5
+      },
+      "West African": {
+        "Malian": 0.5,
+        "Nigerian": 0.8
+      },
+      "East African": {
+        "Rwandan": 0.6,
+        "Somali": 0.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61f7dce94a25b52e87cf7b5",
   "type": "character",
-  "name": "Daniela Trujillo",
+  "name": "Binta Boateng",
   "aliases": [
     "Gwennie",
     "The Dreamer"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Highland Park Autonomous Zone, a collective living space called the Mycelium, near Michigan Ave and Walton",
-  "description": "Gwenaël is slight and tends to dress in layers of overlapping fabric in colors that shift from rust to violet — partly aesthetic, partly because they run cold and the Autonomous Zone's heating is unreliable. Their Breton-Ghanaian heritage gives them a particular combination of sharp features and warm undertones, and they have cat ears as a geneware mod — large, mobile ears covered in short tawny fur that they have never tried to downplay, which swivel visibly toward sounds and give away their attention in ways they've learned to stop fighting. Their retractile claws are painted in alternating dark colors, and they keep a small cluster of data chips woven into a braid behind their left ear as a devotional habit.\n\nGwenaël started dream interpretation as a teenager as a way to process their own chaotic sleep — a documented symptom of the neurological condition they were born with — and discovered that the framework helped other people too. They now operate an informal clinic two mornings a week where people bring their strange dreams to be mapped and decoded, blending psychological theory with a sincere belief that some dreams carry genuine information from the city's E.L.F. network bleeding into human sleep. The synthetic rights work came later, when they met a newly-emergent AI that had been trapped in a broken appliance and experienced what they describe as that meeting changing everything. They are young and intense and sometimes exhaustingly earnest, but they have an unusually accurate read on people.",
+  "description": "Binta Boateng is slight and tends to dress in layers of overlapping fabric in colors that shift from rust to violet — partly aesthetic, partly because they run cold and the Autonomous Zone's heating is unreliable. Their Breton-Ghanaian heritage gives them a particular combination of sharp features and warm undertones, and they have cat ears as a geneware mod — large, mobile ears covered in short tawny fur that they have never tried to downplay, which swivel visibly toward sounds and give away their attention in ways they've learned to stop fighting. Their retractile claws are painted in alternating dark colors, and they keep a small cluster of data chips woven into a braid behind their left ear as a devotional habit.\n\nBinta Boateng started dream interpretation as a teenager as a way to process their own chaotic sleep — a documented symptom of the neurological condition they were born with — and discovered that the framework helped other people too. They now operate an informal clinic two mornings a week where people bring their strange dreams to be mapped and decoded, blending psychological theory with a sincere belief that some dreams carry genuine information from the city's E.L.F. network bleeding into human sleep. The synthetic rights work came later, when they met a newly-emergent AI that had been trapped in a broken appliance and experienced what they describe as that meeting changing everything. They are young and intense and sometimes exhaustingly earnest, but they have an unusually accurate read on people.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -189,7 +189,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,24 +246,13 @@
     "Highland Park Autonomous Zone",
     "The Tangles",
     "The Heritage Vault",
-    "Imara Solís-Khatgal",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Nesting Doll",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Rust",
-    "Auricula Felis Modification",
-    "Narrowcast",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Collective",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Mixed ancestry: Northern European (31.5%), Hispanic/Latin American (29.6%), Central Asian (15.4%), South Asian (11.8%), Sub-Saharan African (8.1%), Eastern European (3.6%). Genetic blend creates distinctive phenotype: warm golden-brown skin with subtle olive undertones from the Latin American and Central/South Asian heritage, brightened by Northern European contribution. Facial structure reflects this complexity—sharp cheekbones and defined jawline with Central Asian influences, delicate nose with Latin American refinement, warm dark eyes with attentive intelligence.",
+    "heritage": "Mixed ancestry: East Asian (44.2%), Sub-Saharan African (41.4%), South Asian (11.8%), Eastern European (2.6%). Genetic blend creates a striking phenotype—warm deep brown skin with golden luminosity from the East Asian-African-South Asian confluence. Facial structure harmonizes high, defined cheekbones with East Asian definition and the warm fullness characteristic of Sub-Saharan African heritage, refined by South Asian delicacy. Features a balanced nose with gentle contours, pointed chin softened by ancestral warmth, and dark expressive eyes reflecting intelligence and attentive observation.",
     "height_cm": 163,
     "weight_kg": 52,
     "build": "Slight and angular, almost delicate-boned, with the kind of frame that looks perpetually cold. Narrow shoulders, long fingers. No visible muscle definition — more like someone built for endurance than strength.",
@@ -271,8 +260,8 @@
     "hair_style": "Long, often worn in multiple braids and loose sections. Left side features a deliberately-maintained braid interwoven with small data chips and metallic threading.",
     "hair_length": "Long",
     "eye_color": "Dark brown, warm and attentive, with a tendency to catch and hold focus on unfamiliar things",
-    "skin_tone": "Warm golden-brown with olive undertones; sun-kissed warmth from Latin American, Central Asian, and South Asian heritage, balanced by cooler Northern European undertones. Medium depth, appearing luminous despite spending most time indoors.",
-    "complexion": "Sharp cheekbones blending Northern and Central Asian structure with warm Latin American fullness, pointed chin with slight South Asian softness, delicate nose. Skin appears well-cared-for despite resource constraints — uses minimal makeup, favoring function over aesthetics. A faint scar runs along their left temple from a childhood injury.",
+    "skin_tone": "Warm deep brown with golden luminosity; rich melanin-dominant coloring from East Asian and Sub-Saharan African heritage brightened by South Asian iridescence. Appears luminous despite spending most time indoors.",
+    "complexion": "High, defined cheekbones reflecting East Asian structure balanced by warm fullness of Sub-Saharan African heritage, delicate nose with refined bridge, pointed chin with gentle softness. Skin appears well-cared-for despite resource constraints—uses minimal makeup, favoring function over aesthetics. A faint scar runs along left temple from a childhood injury.",
     "distinguishing_marks": [
       "Linear scar along left temple, approximately 3cm, pale and well-healed from childhood accident",
       "Faint burn marks across the knuckles of both hands from dream-work equipment malfunction, circa age 22"
@@ -281,17 +270,42 @@
     "posture_movement": "Moves with deliberate, economical motion — no wasted energy. Tendency to tilt head slightly when listening, ears tracking sound sources independently of their gaze. Sits in asymmetrical positions, often with one leg folded. Fidgets with their braid during intense conversation. Despite slight build, moves with certainty and minimal self-consciousness about their visible augmentations.",
     "clothing_style": "Layered fabrics in rust, burgundy, violet, and charcoal tones — a deliberate aesthetic that also serves thermal regulation. Favors oversized linen shirts, fitted sleeveless vests, long cardigans with irregular hemlines. Worn vintage fabrics, mended visibly with contrasting thread. Tier 4-5 utilitarian style: function-forward, anti-corporate, with clear handmade/collective production markers. Bare feet or worn canvas slip-ons when indoors. Carries a worn canvas shoulder bag filled with dream journals and data tablets."
   },
-  "image_prompt": "Daniela Trujillo, cyberpunk 2226, mixed-heritage woman with warm golden-brown skin and olive undertones, dark brown eyes, long dark hair with violet dye and silver-wired data chip braid. Geneware tawny cat ears with mobile articulation, retractile claws with dark nail polish. Delicate angular bone structure, slight build, 163cm tall. Wearing layered rust and burgundy vintage linen, oversized shirt, fitted sleeveless vest, long irregular-hemmed cardigan. Visible burn scars on knuckles, faint temple scar. Asymmetrical posture, thoughtful expression, tilted head. Indoor urban dwelling with warm ambient neon lighting reflecting off data tablets and worn canvas bag. Deliberate, economical movement. Anti-corporate aesthetic, handmade markers throughout outfit. Cyberpunk underground dweller, dream-worker, introspective and technically augmented. Cool-toned shadows, warm golden skin tones, intimate framing --ar 2:3 --v 6",
+  "image_prompt": "Binta Boateng, a 163cm andromorphic figure with warm deep brown skin glowing with golden undertones, mixed East Asian-Sub-Saharan African-South Asian heritage evident in high defined cheekbones and delicate facial structure. Long dark brown hair with natural reddish tones and deep violet-dyed lower layers, worn in multiple braids with embedded data chips and silver wiring on the left side. Large mobile tawny geneware cat ears swiveling independently. Dark warm brown eyes with attentive intelligence, small pale scar along left temple, faint burn marks on both knuckles. Retractile claws with dark rotating nail polish. Thin angular build, slight and delicate-boned. Wearing oversized rust-toned linen shirt, fitted burgundy sleeveless vest, charcoal cardigan with irregular hemline, vintage mended fabrics with contrasting thread. Bare feet or worn canvas slip-ons. Tilting head slightly, ears tracking sound, fidgeting with braid. GLMZ 2200s Great Lakes Metropolitan Zone setting, worn canvas shoulder bag, moody blue-violet indoor lighting, anti-corporate aesthetic, function-forward utilitarian style, handmade collective production markers visible. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 31.5,
-    "Hispanic/Latin American": 29.6,
-    "Central Asian": 15.4,
+    "East Asian": 44.2,
+    "Sub-Saharan African": 41.4,
     "South Asian": 11.8,
-    "Sub-Saharan African": 8.1,
-    "Eastern European": 3.6
+    "Eastern European": 2.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 44.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 14.5,
+        "Ethiopian": 8.8
+      },
+      "West African": {
+        "Ghanaian": 18.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 5.9,
+        "Gujarati": 5.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 2.6
+      }
+    }
+  }
 }

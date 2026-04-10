@@ -1,7 +1,7 @@
 {
   "id": "019d6143a620734f92cb6d678eebc22c",
   "type": "character",
-  "name": "Kai Szczypiński-Keïta-Quiñones",
+  "name": "Kai Okonkwo-Keïta-Fassi",
   "aliases": [
     "Neon",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near North Ave and Milwaukee",
-  "description": "Hadiya Arai-Ofori-Atta are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a cleaner out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHadiya Arai-Ofori-Atta operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Kai Okonkwo-Keïta-Fassi are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a cleaner out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nKai Okonkwo-Keïta-Fassi operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -260,7 +260,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,34 +273,17 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Compass Rose",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sorin Ekwensi-Balasanyan",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European (Polish-Scandinavian base with Slavic features) with significant Sub-Saharan African and Hispanic/Latin American ancestry creating a striking phenotypic blend. Genetic mix produces warm-toned brown skin with subtle undertones reflecting the Eastern European paleness beneath, creating a distinctive mid-to-warm brown complexion. Facial structure shows Slavic angularity combined with West African bone structure — high, prominent cheekbones with wider nasal base and fuller lip structure than typical Eastern European features alone would produce.",
+    "heritage": "Mixed Sub-Saharan African (56.3%) and North African (39.6%) ancestry with minor South Asian heritage (4.1%), creating a phenotype centered in West and Central African features with Mediterranean North African influence. Bone structure reflects African heritage — prominent, high cheekbones with wider nasal base and fuller lip structure. Skin tone is rich warm brown from the blended ancestry, with the even complexion characteristic of this genetic mix. The combination produces a distinctly African-rooted appearance with subtle Mediterranean warmth from North African ancestry.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean with corded muscle from sustained physical activity. Minimal body fat, efficient musculature optimized for speed and endurance rather than strength. Restless posture suggests constant low-level kinetic energy.",
@@ -308,8 +291,8 @@
     "hair_style": "Pulled back in a tight, functional braid. Kept short enough for quick maintenance between jobs.",
     "hair_length": "Short to medium",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm medium brown — the genetic blend of Eastern European base with Sub-Saharan and Hispanic ancestry creates a rich, warm undertone rather than cool. Skin has an even tone across the face and body, characteristic of the admixed ancestry.",
-    "complexion": "Sharp cheekbones prominent from Slavic heritage, set in a face with wider bone structure from African ancestry. Angular jaw with subtle fullness in lower face. Skin shows the wear of chemical exposure — faint discoloration around the hairline from repeated contact with industrial solvents. Otherwise clear, with the kind of tight alertness that comes from chronic low-level stress. No grooming excess; functional only.",
+    "skin_tone": "Rich warm brown — the genetic blend of West/Central African and North African ancestry creates deep, even toning across face and body with warm undertones. Skin has the characteristic even distribution of melanin from this ancestry mix.",
+    "complexion": "Strong, prominent cheekbones set in a face with the broader bone structure characteristic of Sub-Saharan African heritage. Angular jaw with fuller lower face structure. Skin shows the wear of chemical exposure — faint discoloration around the hairline from repeated contact with industrial solvents. Otherwise clear, with the kind of tight alertness that comes from chronic low-level stress. No grooming excess; functional only.",
     "distinguishing_marks": [
       "Visible neural interface jack at base of skull — chrome-plated, rectangular, approximately 3cm across, sits at the C7 vertebra. Shows minor scarring around the edges from repeated insertion cycles.",
       "Thin scar along inner left forearm, approximately 8cm, pale and old — consistent with early augmentation work or accident.",
@@ -319,15 +302,43 @@
     "posture_movement": "Moves with economical efficiency — no wasted motion. Stands with weight distributed to ball of feet, ready to pivot or run. Hands rest in lap or at sides, never crossed over torso. Default expression: guarded neutrality. Eyes constantly scanning environment. Speaks quietly, listens more than talks.",
     "clothing_style": "Tier 3-4 utilitarian. Unmarked dark synthfabric cargo pants with multiple pockets for tools and supplies. Reinforced work boots with chemical-resistant soles, scuffed and stained. Sleeveless or short-sleeved tops that expose the jack — a deliberate choice, not accidental. Thin leather gloves (left hand missing two fingers on the glove — modification to accommodate regular neural jack insertion). No corporate branding, no status indicators. Clothing is expendable and replaceable; color palette is grays, blacks, deep greens."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Kai Szczypiński-Keïta-Quiñones, 168cm lean wiry frame, warm medium-brown skin with Eastern European-African-Hispanic ancestry blend visible in sharp Slavic cheekbones set in wider African bone structure, natural dark brown eyes with guarded neutral expression. Black hair in tight functional braid with silver synthetic threading. Sleeveless dark synthfabric top exposing chrome neural interface jack at base of skull (C7), minor scarring around jack edges. Thin pale 8cm scar on inner left forearm. White chemical burn patches across both knuckles from occupational exposure. Leather gloves on hands, left glove missing two fingers. Dark cargo pants, scuffed reinforced boots. Economical posture, weight on balls of feet, hands at sides. Constant environmental scanning. Industrial underground setting, cool neon accent lighting, moody atmospheric shadows. Utilitarian aesthetic, no corporate branding. Cyberpunk gritty realism --ar 2:3 --v 6",
+  "image_prompt": "Kai Okonkwo-Keïta-Fassi, 168cm lean muscular frame, rich warm brown skin from West African and North African heritage blend, prominent high cheekbones and angular jaw, natural dark brown eyes. Black hair with silver threads pulled back in tight functional braid. Sleeveless dark synth top exposing chrome neural interface jack at base of skull with visible scarring. Dark cargo pants, reinforced work boots, thin leather gloves with modified left hand. Chemical burn marks on knuckles, faint scar on inner left forearm. Guarded neutral expression, alert scanning gaze. GLMZ Great Lakes Metropolitan Zone, moody industrial interior lighting with cool blue-grey neon accents, standing in economical ready posture, no wasted motion, constant kinetic readiness. Gritty utilitarian atmosphere, expendable clothing, minimal chrome augmentation visible. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 87.8,
-    "Sub-Saharan African": 5.8,
-    "Hispanic/Latin American": 5.2,
-    "Northern European": 1.2
+    "Sub-Saharan African": 56.3,
+    "North African": 39.6,
+    "South Asian": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 4,
+        "Ethiopian": 10.3
+      },
+      "West African": {
+        "Liberian": 22.7,
+        "Nigerian": 19.3
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Algerian": 17.5
+      },
+      "Amazigh": {
+        "Kabyle": 16.3,
+        "Berber": 5.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 3.8
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.3
+      }
+    }
+  }
 }

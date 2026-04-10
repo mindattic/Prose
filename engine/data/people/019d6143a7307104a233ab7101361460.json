@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7307104a233ab7101361460",
   "type": "character",
-  "name": "Indigo Sepúlveda-Tamale",
+  "name": "Indigo Bah-Tamale",
   "aliases": [
     "Lieutenant Tanabe",
     "Yuki",
@@ -14,7 +14,7 @@
   "age": 29,
   "status": "alive",
   "location": "Meridian Core — Axiom Industries Security Division, Floor 47. Clean apartment in the corporate residential block, Level 30.",
-  "description": "Yuki moves like someone who has been evaluated her entire adult life and has decided to make every\nevaluation flawless. Not arrogant — precise. Every step measured, every gesture controlled, every\nword vetted by some internal review board that never adjourns. She is 5'8\", athletic, with the\nparticular build that comes from corporate training programs designed to maximize combat efficiency\nwithout sacrificing the professional appearance Axiom demands of its security personnel. Her black\nhair is kept in a regulation-length bob that frames a face built for stillness — high cheekbones,\ndark eyes that assess before they acknowledge, a mouth that defaults to a neutral line that gives\naway nothing.\n\nHer uniform is always immaculate. Her augments are always calibrated. Her quarterly performance\nreviews are always exceptional. She is, on paper and in practice, the model Axiom operative: a\nproduct of the Shelf who climbed out through sheer competence and disciplined compliance. The\ncorporation holds her up as proof that the system works — that anyone with talent and willingness\ncan ascend. They do not mention what she had to leave behind to do it.\n\nFirst impression: a professional. Competent, controlled, slightly cold. The kind of person you\nrespect and don't approach. Second impression, available only to those who knew her before: a\nwoman who is performing the role of herself with such precision that the performance has become\nindistinguishable from reality. She's not pretending. She's not honest either. She's something\nworse — she's forgotten where the mask ends.",
+  "description": "Indigo Bah-Tamale moves like someone who has been evaluated her entire adult life and has decided to make every\nevaluation flawless. Not arrogant — precise. Every step measured, every gesture controlled, every\nword vetted by some internal review board that never adjourns. She is 5'8\", athletic, with the\nparticular build that comes from corporate training programs designed to maximize combat efficiency\nwithout sacrificing the professional appearance Axiom demands of its security personnel. Her black\nhair is kept in a regulation-length bob that frames a face built for stillness — high cheekbones,\ndark eyes that assess before they acknowledge, a mouth that defaults to a neutral line that gives\naway nothing.\n\nHer uniform is always immaculate. Her augments are always calibrated. Her quarterly performance\nreviews are always exceptional. She is, on paper and in practice, the model Axiom operative: a\nproduct of the Shelf who climbed out through sheer competence and disciplined compliance. The\ncorporation holds her up as proof that the system works — that anyone with talent and willingness\ncan ascend. They do not mention what she had to leave behind to do it.\n\nFirst impression: a professional. Competent, controlled, slightly cold. The kind of person you\nrespect and don't approach. Second impression, available only to those who knew her before: a\nwoman who is performing the role of herself with such precision that the performance has become\nindistinguishable from reality. She's not pretending. She's not honest either. She's something\nworse — she's forgotten where the mask ends.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -240,7 +240,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -262,41 +262,16 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Pullman Works",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Clearpath",
     "Specter ID Spoofer — 'Janus Mask'",
-    "Slagworks Industrial",
-    "Alper Inoue-Aidoo",
-    "Altan Tanaka-Frimpong",
-    "Arcturus HW-1 'Goliath'",
-    "Arcturus ST-4 'Verdict'",
-    "Breck Tannen",
-    "Chen Wei-Lin",
-    "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Imara Solís-Bekele",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kyle Ellen Corbin-Vasik",
-    "MERIDIAN",
-    "New Windsor / Novaya Windsorka",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Slipcast",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Stonepath Logistics",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Gutter Prophets",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Question",
-    "Vuk Jorgensen-Toure"
+    "Indigo",
+    "Honest Burger",
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (62.1%) with substantial Sub-Saharan African (25.6%) and Central Asian (12.3%) ancestry. The genetic blend creates warm, richly saturated skin tones with prominent melanin expression across the spectrum, combined with facial structure reflecting the diverse geographic origins of her mixed heritage.",
+    "heritage": "Predominantly Sub-Saharan African (74.8%) with significant East Asian (18.9%) and Northern European (6.3%) ancestry. The genetic blend creates deep, richly saturated skin tones with prominent melanin expression. Facial structure reflects the dominant African heritage with high, prominent cheekbones and broader geometry, refined by the East Asian ancestry contributing subtle almond-shaped eye geometry and refined facial proportions. The Northern European ancestry contributes minimal visible influence given its low percentage.",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Athletic and lean with defined musculature from corporate combat training regimens. No excess body fat; every line suggests functional precision rather than aesthetic cultivation.",
@@ -304,8 +279,8 @@
     "hair_style": "Regulation-length bob, blunt-cut, frames face precisely at jaw line",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and analytical",
-    "skin_tone": "Deep warm brown with golden undertones — the result of African and Latin American ancestry dominant in her genetic profile, enriched by subtle warmth from Central Asian heritage. Rich melanin expression, luminous rather than matte.",
-    "complexion": "High, prominent cheekbones with broader facial structure reflecting her multi-continental ancestry; face sculpted by the blended genetics of three major heritage regions. Skin immaculate — corporate-grade skincare regimen evident. Rich, warm undertones across all exposed skin. No visible scarring on face. Expression defaults to professional neutrality.",
+    "skin_tone": "Deep warm brown with rich golden undertones — the result of dominant Sub-Saharan African ancestry with East Asian influence adding refined warmth. Rich melanin expression, luminous rather than matte.",
+    "complexion": "High, prominent cheekbones with facial structure reflecting predominantly African heritage; subtle almond eye shape from East Asian ancestry combined with broader, more angular facial geometry from African genetic influence. Skin immaculate — corporate-grade skincare regimen evident. Rich, warm undertones across all exposed skin. No visible scarring on face. Expression defaults to professional neutrality.",
     "distinguishing_marks": [
       "Faint linear scar along left trapezius, approximately 4cm, consistent with combat training wound — visible only when neck is exposed",
       "No visible tattoos; corporate policy prohibits them"
@@ -314,14 +289,42 @@
     "posture_movement": "Moves with measured efficiency — no wasted motion, no casual slouching. Steps are deliberate and grounded. Hands remain visible and controlled. Head positioning suggests constant environmental assessment. Stands at attention even when nominally at rest. Movement is precise enough to unsettle observers who expect human variability.",
     "clothing_style": "Axiom security uniform when on-duty: tailored charcoal tactical weave, minimal insignia, matte finish. Off-duty: high-tier Tier 1-2 minimalist corporate wear — monochromatic, fitted, expensive in restraint rather than embellishment. No jewelry. No personal customization. Every garment is neutral, functional, and perfectly maintained."
   },
-  "image_prompt": "Indigo Sepúlveda-Tamale, 173cm tall corporate security operative with rich warm brown skin from Latin American and African ancestry, short blunt-cut black bob framing sharp cheekbones, dark analytical eyes. Athletic lean build in tailored charcoal Axiom tactical uniform with matte finish. Standing at rigid attention in minimalist pose, posture suggesting neural enhancement. Cool corporate floor lighting casting precision shadows across her face. Cyberpunk 2226 Great Lakes Metropolitan Zone, geometric composition emphasizing controlled stillness and professional neutrality. High-resolution detail on skin tone warmth and precise uniform tailoring. Mood: coldly efficient, perpetually assessing. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Bah-Tamale, GLMZ, 173cm athletic security operative with deep warm brown luminous skin and rich golden undertones from sub-Saharan African and East Asian heritage. High prominent cheekbones, subtle almond eye shape, dark brown analytical gaze, short blunt-cut black bob framing jaw. Immaculate complexion, corporate-grade skincare. Wearing tailored charcoal tactical weave security uniform with minimal insignia, matte finish. Posture rigidly efficient and alert, movement precise and measured. Professional neural enhancement suggested by preternatural control. Standing in neon-lit corporate hallway, Great Lakes Metropolitan Zone floor 47, cool blue-white lighting casting subtle shadows across defined facial structure. No visible augmentations, no jewelry, perfect restraint. Expression neutral, calculating, ready. Neo-noir corporate aesthetic, photorealistic, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 62.1,
-    "Sub-Saharan African": 25.6,
-    "Central Asian": 12.3
+    "Sub-Saharan African": 74.8,
+    "East Asian": 18.9,
+    "Northern European": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 7.6,
+        "Tanzanian": 16.7
+      },
+      "West African": {
+        "Senegalese": 48.3
+      },
+      "Southern African": {
+        "South African": 1.8,
+        "Zambian": 0.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 14.1
+      },
+      "Japanese": {
+        "Japanese": 4.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 6.3
+      }
+    }
+  }
 }

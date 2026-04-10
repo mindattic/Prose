@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6167c149f96b65f48fadadc",
   "type": "character",
-  "name": "Drift Lindström-Esquivel-Vasquez-Alfarsi",
+  "name": "Drift Tanaka-Johansson-Jeong",
   "aliases": [
     "Red Pen"
   ],
@@ -88,7 +88,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -102,20 +102,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "Arcturus Exo-Runner Frame",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Sorin Ekwensi-Balasanyan",
-    "Sulfur Crown Agriculture",
-    "The Heritage Vault",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore SteadyThread Precision Motor Implant"
+    "Circuit"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (45.4%) with significant Sub-Saharan African (21.3%), Hispanic/Latin American (21.1%), and Middle Eastern (7.6%) ancestry; minor East Asian and North African heritage. A truly global genetic blend reflected in warm golden-brown undertones, high cheekbones with defined structure, and warm-hued eye coloring.",
+    "heritage": "Predominantly East Asian (62.3%) with significant Sub-Saharan African (19.5%) and Eastern European (18.2%) ancestry. The genetic blend manifests in warm medium-brown skin tone with golden undertones, angular cheekbones with defined structure typical of East Asian heritage softened and widened by Sub-Saharan African ancestry, and warm-hued dark brown eyes with amber highlights reflecting the warmth of the African heritage component.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Lean and efficient, shoulders squared from years of moving through crowds and confrontations. No wasted mass — functional muscle in forearms and legs.",
@@ -123,8 +114,8 @@
     "hair_style": "Pulled back in a tight, practical braid that wraps around the crown; allows full peripheral vision",
     "hair_length": "Long (shoulder-blade length when unbound)",
     "eye_color": "Warm dark brown with amber undertones, alert and constantly scanning",
-    "skin_tone": "Warm golden-brown complexion; sun-weathered texture. Rich undertones from Southeast Asian and African ancestry with warm accents from Latin American heritage. Deeper in sun-exposed areas, luminous where protected.",
-    "complexion": "High, defined cheekbones with gentle width across face reflecting Southeast Asian structure; strong jaw with subtle softness from African heritage. Minimal makeup — practical grooming. A faint scar runs through her left eyebrow, giving her resting expression an intensity that isn't entirely accidental. Warm undertones visible especially around cheeks and temples.",
+    "skin_tone": "Medium-warm brown complexion with subtle golden undertones; sun-weathered texture reflecting the blended ancestry. Deeper in sun-exposed areas, luminous where protected. The warmth is enriched by Sub-Saharan African heritage with the structure of East Asian genetics.",
+    "complexion": "High, defined cheekbones with balanced facial width — East Asian structure enriched by the warmth and dimensionality of Sub-Saharan African heritage, framed by the subtle bone structure of Eastern European ancestry. Strong jaw with understated softness. Minimal makeup — practical grooming. A faint scar runs through her left eyebrow, giving her resting expression an intensity that isn't entirely accidental. Warm undertones visible especially around cheeks and temples.",
     "distinguishing_marks": [
       "Thin scar through left eyebrow, approximately 3cm, pale and old — source unknown",
       "Tattooed circuit pattern on inner left wrist in black ink: interconnected nodes forming a simplified map of The Circuit's main streets",
@@ -134,17 +125,43 @@
     "posture_movement": "Economical and alert. Walks with purpose, rarely fidgets. Leans against walls or furniture in social situations rather than sitting — maintains sight lines. Speaks with measured deliberation; people instinctively listen. Her gaze lands on faces and holds them.",
     "clothing_style": "Tier 3-4 pragmatic: fitted charcoal insulated jacket with multiple utility pockets and reinforced elbows (Akira-brand second season), dark gray cargo pants with thigh holster for data-chip case, scuffed black ankle boots with grip-tread. Layers underneath for temperature regulation. A worn leather cord with a single unmarked data-stick hangs under her collar. Her aesthetic prioritizes function over fashion, but the cuts and materials suggest measured investment — nothing cheap, nothing flashy."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Drift Lindström-Esquivel-Vasquez-Alfarsi, 172cm lean-muscled woman with warm golden-brown skin reflecting Southeast Asian, African, and Latin American heritage. High cheekbones, strong jaw, dark brown eyes with amber warmth, alert gaze. Black hair with silver temples pulled into tight practical braid. Thin pale scar through left eyebrow. Subdermal LED grids faintly glowing blue-green on temples, chromed ear jack port visible. Wearing fitted charcoal utility jacket with reinforced elbows, dark cargo pants, scuffed black ankle boots. Worn leather cord with data-stick beneath collar. Leaning against wall in Circuit street alley, neon-soaked nightscape behind, maintaining perfect sight lines. Economical posture, measured intensity. Rain-slicked pavement, cyberpunk neo-noir lighting, cool accent neons bleeding across warm skin tones. --ar 2:3 --v 6",
+  "image_prompt": "Drift Tanaka-Johansson-Jeong, 172cm lean figure, medium-warm brown skin with golden undertones and sun-weathered texture, high defined cheekbones blending East Asian structure with Sub-Saharan African warmth, warm dark brown eyes with amber highlights, alert gaze. Natural black hair with silver threads at temples, pulled back in tight practical braid. Faint scar through left eyebrow giving intense expression. Subdermal blue-green LED grid glowing faintly at temples, chrome jack port visible behind left ear. Wearing fitted charcoal insulated jacket with utility pockets, dark gray cargo pants with thigh holster, scuffed black ankle boots. Worn leather cord with data-stick hanging under collar. Tattooed circuit pattern visible on inner left wrist. Standing alert in neon-lit GLMZ undercity alley, 2226 near-future megacity setting, economical posture, measured intensity, holding sight lines. Cool blue and amber lighting, rain-slicked pavement, industrial architecture. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 45.4,
-    "Sub-Saharan African": 21.3,
-    "Hispanic/Latin American": 21.1,
-    "Middle Eastern": 7.6,
-    "East Asian": 3.1,
-    "North African": 1.5
+    "East Asian": 62.3,
+    "Sub-Saharan African": 19.5,
+    "Eastern European": 18.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 10.1
+      },
+      "Japanese": {
+        "Japanese": 26.7
+      },
+      "Chinese": {
+        "Shanghainese": 25.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 11.8,
+        "Mozambican": 7.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 7.6,
+        "Slovenian": 8.4
+      },
+      "Slavic East": {
+        "Ukrainian": 1.6,
+        "Belarusian": 0.6
+      }
+    }
+  }
 }

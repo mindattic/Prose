@@ -1,7 +1,7 @@
 {
   "id": "019d6143a739725db30f8e011c60e5ac",
   "type": "character",
-  "name": "Sable Arredondo-Bergqvist",
+  "name": "Sable Karunaratne-Adu",
   "aliases": [
     "Auntie Zo",
     "The Grid"
@@ -13,7 +13,7 @@
   "age": 83,
   "status": "active",
   "location": "Norwood Quiet, Sub-Level Archive Room B, Norwood Community Center, near sub-level access near Dearborn and Jackson",
-  "description": "Zoë Mbekele-Thorvaldsdóttir is eighty-three years old and moving toward ninety with the absolute intention of getting there. They are tall, angular, and have the particular stillness of someone who spent forty years in climate-controlled data vaults — a stillness that feels chosen rather than aged-into. Their silver-white locs are pinned up with an assortment of data chits they've been meaning to process for years; occasionally one falls out and turns out to contain something remarkable. Their eyes are cosmetically modified — deep violet irises with a ringed amber pattern — a gift from a colleague at retirement that they wear with solemn appreciation. Their hands are the most augmented part of them: three fingers on the right hand are partial haptic-interface prosthetics from a vault accident in 2181, matte grey and slightly longer than biological scale, precise as instruments.\n\nThey ran Axiom's Regional Memory Index for nineteen years, cataloguing corporate history with the meticulous care of someone who understood that the shape of what gets kept is the shape of what gets to be real. When they retired, they took nothing they weren't entitled to — but they remember everything. They now run the Norwood Community Archive on volunteer time and a small community council stipend, and they are doing for the neighborhood what they always privately wished they could do for the corporation: keeping the record honestly. They communicate with three E.L.F.s they have named and consider colleagues. They are not particularly warm but they are absolutely reliable, and in Norwood Quiet that is a form of love.",
+  "description": "Sable Karunaratne-Adu is eighty-three years old and moving toward ninety with the absolute intention of getting there. They are tall, angular, and have the particular stillness of someone who spent forty years in climate-controlled data vaults — a stillness that feels chosen rather than aged-into. Their silver-white locs are pinned up with an assortment of data chits they've been meaning to process for years; occasionally one falls out and turns out to contain something remarkable. Their eyes are cosmetically modified — deep violet irises with a ringed amber pattern — a gift from a colleague at retirement that they wear with solemn appreciation. Their hands are the most augmented part of them: three fingers on the right hand are partial haptic-interface prosthetics from a vault accident in 2181, matte grey and slightly longer than biological scale, precise as instruments.\n\nThey ran Axiom's Regional Memory Index for nineteen years, cataloguing corporate history with the meticulous care of someone who understood that the shape of what gets kept is the shape of what gets to be real. When they retired, they took nothing they weren't entitled to — but they remember everything. They now run the Norwood Community Archive on volunteer time and a small community council stipend, and they are doing for the neighborhood what they always privately wished they could do for the corporation: keeping the record honestly. They communicate with three E.L.F.s they have named and consider colleagues. They are not particularly warm but they are absolutely reliable, and in Norwood Quiet that is a form of love.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -181,7 +181,7 @@
     "Nostalgic": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,36 +255,23 @@
     "Norwood Quiet",
     "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
     "The Reclamation Assembly",
-    "Riddle",
     "Chronicle",
     "ShieldTech SB-3 'Groundstrike'",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "The Accidental",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Dearborn Forge",
     "Irontide Tidal Energy",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "ARCHIVE",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Bashir Quansah-Mehrotra",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Slagworks Industrial",
-    "The Archive",
-    "The Question",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Zara Bergqvist",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant East Asian and South Asian admixture. Warm medium-brown skin tone with golden undertones characteristic of blended Hispanic-East Asian heritage, combined with the fine facial structure suggesting South Asian ancestry. Features a striking mix: East Asian bone structure in the cheekbones and eye shape, Hispanic warmth in skin tone and facial geometry, with subtle South Asian refinement in nose and lip structure.",
+    "heritage": "South Asian primary (46.2%) with substantial Central Asian (33.2%) and Southeast Asian (15.0%) admixture, with minor Hispanic/Latin American (5.6%) influence. The genetic blend creates a harmonious cross-Greater Asian phenotype: refined South Asian bone structure in the nose and orbital region, combined with the high prominent cheekbones characteristic of Central Asian heritage, and the fine facial geometry of Southeast Asian ancestry. South Asian fullness in the lower face and around the eyes is modulated by Central Asian angularity, while Southeast Asian features contribute delicate proportionality throughout. The overall effect is a sophisticated blend across the diaspora with subtle warmth from Latin American ancestry.",
     "height_cm": 185,
     "weight_kg": 68,
     "build": "Tall and angular with the lean musculature of someone who has spent eight decades moving deliberately. Shoulders slightly rounded from decades hunched over archival terminals, but spine still straight by force of will. Long-limbed and economical in their frame.",
@@ -292,8 +279,8 @@
     "hair_style": "Locs gathered into a loose crown-pin, with at least six data chits of varying ages woven throughout as both functional storage and inadvertent jewelry",
     "hair_length": "Long",
     "eye_color": "Deep violet iris with concentric amber ring patterning (cosmetically modified geneware)",
-    "skin_tone": "Warm medium brown with golden undertones, characteristic of Hispanic-East Asian blending, with the ashen quality of someone who spent four decades under artificial lighting",
-    "complexion": "Face lined with the specific geography of concentration—deep creases between brows, laugh lines unused for years, skin texture weathered but well-maintained. Fine East Asian bone structure visible in cheekbones and orbital structure; slight fullness in lower face suggesting South Asian heritage. Minimal facial hair, meticulously groomed. Expression tends toward stillness.",
+    "skin_tone": "Deep warm brown with subtle golden-amber undertones from the South Asian-Southeast Asian-Central Asian blend, tempered by the ashen quality of someone who spent four decades under artificial lighting",
+    "complexion": "Face lined with the specific geography of concentration—deep creases between brows, laugh lines unused for years, skin texture weathered but well-maintained. Refined South Asian nose with subtle Central Asian lengthening, South Asian orbital anatomy with Central Asian cheekbone prominence creating striking definition. Fine-boned Southeast Asian geometry visible in the jaw and temple region. Slight fullness in lower face and around eyes from South Asian heritage, balanced by Central Asian angularity. Minimal facial hair, meticulously groomed. Expression tends toward stillness.",
     "distinguishing_marks": [
       "Thin white scar running along the inside of the right wrist, barely visible—souvenir of the 2181 vault accident that took three fingers",
       "Faint stippled burn pattern across the back of the right forearm, consistent with electrical contact damage from the same incident",
@@ -303,14 +290,47 @@
     "posture_movement": "Moves with deliberate, economical precision—no wasted motion. Hands move first; the rest of the body follows. When sitting, they adopt a posture of absolute stillness, the kind that suggests deep listening rather than passivity. When walking, gait is steady and upright despite age. Long pauses between speaking and moving, as though calculating weight and balance.",
     "clothing_style": "Tier 3-4 utilitarian archive worker aesthetic: well-maintained grey linen shirt with multiple pockets for data chits and archival tools, dark wool slacks, reinforced black canvas work boots (same brand and model for the past six years). A long charcoal cardigan—hand-knitted, old—worn over everything in the climate-controlled vault. No jewelry except the data chits in their hair. Clothing is scrupulously clean but shows careful mending; nothing is new, everything is functional."
   },
-  "image_prompt": "Sable Arredondo-Bergqvist, 185cm tall androgynous figure with warm golden-brown skin blending Hispanic and East Asian heritage, silver-white locs crowned with data chits. Sharp East Asian cheekbones, South Asian bone structure, modified violet eyes with amber rings. Eighty-year-old archival expert with lean angular build, standing in soft blue vault lighting. Right hand visibly augmented with grey haptic-interface prosthetics, hairline circuitry visible. Wearing grey linen archival shirt, dark wool slacks, reinforced black boots, charcoal hand-knitted cardigan. Posture deliberate and economical, expression still and contemplative. Deep concentration lines between brows. Faint scars on right wrist and burn marks on forearm visible. Age spots on hands. Cyberpunk 2226, Great Lakes Metropolitan Zone archival vault setting, cool fluorescent and warm ambient lighting mixing --ar 2:3 --v 6",
+  "image_prompt": "Sable Karunaratne-Adu, 185cm tall archival keeper, silver-white locs in crown-pin adorned with data chits, deep warm brown skin with golden undertones blending South Asian, Central Asian, and Southeast Asian heritage. Refined South Asian nose and orbital structure combined with prominent Central Asian cheekbones and fine Southeast Asian facial geometry, creating striking definition. Violet eyes with amber concentric rings—cosmetically modified geneware. Weathered face with concentration-lines, minimal facial hair, expression of absolute stillness. Right hand visibly augmented with three matte-grey haptic-interface prosthetics, hairline circuitry visible under translucent synthetic skin. Wearing grey linen utilitarian shirt with multiple pockets, dark wool slacks, reinforced black canvas work boots. Hand-knitted charcoal cardigan draped over everything. Standing in climate-controlled archive vault with soft blue-white LED lighting, surrounded by data storage systems. Posture economical and precise, hands positioned first. Mood: contemplative, decades of careful listening, no wasted motion. GLMZ, Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 55.5,
-    "East Asian": 34.6,
-    "South Asian": 9.9
+    "South Asian": 46.2,
+    "Central Asian": 33.2,
+    "Southeast Asian": 15,
+    "Hispanic/Latin American": 5.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 46.2
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Uzbek": 11.7
+      },
+      "Mongolic": {
+        "Kalmyk": 1.6
+      },
+      "Iranian Central": {
+        "Tajik": 19.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 12.3
+      },
+      "Indonesian": {
+        "Javanese": 2.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 3.2,
+        "Guatemalan": 2.4
+      }
+    }
+  }
 }

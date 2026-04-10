@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c972fbb6a7bd03af49f1d4",
   "type": "character",
-  "name": "Rio Olofsson",
+  "name": "Rio Szczypiński",
   "aliases": [
     "Brax",
     "Noodle Boy (hates it)"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Copperhead, street level — corner pitch near the Copperhead Transit Hub mouth, near Milwaukee and North Ave",
-  "description": "Braxo is a lean young man, all elbows and restless energy, with close-cropped black hair and a jaw that always looks like it needs another day of growth. He has his Guinean grandfather's deep brown skin and his Bosnian grandmother's sharp cheekbones, and he has cat ears — small, tawny, semi-expressive — mounted via a Helix genemod he saved three months of UBC stipend for at seventeen because he thought they'd make him look 'elevated.' They do not make him look elevated. They do make him look like exactly who he is: a cheerful young man who is trying very hard and mostly succeeding. His cart is a battered silver rig he inherited from a previous vendor, pasted over with good-luck ELF shrine stickers and a hand-painted sign in four languages.\n\nHe operates his cart with the manic efficiency of someone who cannot afford to miss a service window. His noodle broth is genuinely excellent — a recipe he built over four years of experimentation, drawing on whatever his parents cooked and whatever he could reverse-engineer from mid-tier restaurant menus he couldn't afford to eat at. He talks too much when he's happy, goes very quiet when he's worried, and has a genuine talent for remembering exactly what every regular customer ordered last time.",
+  "description": "Rio Szczypiński is a lean young man, all elbows and restless energy, with close-cropped black hair and a jaw that always looks like it needs another day of growth. He has his Guinean grandfather's deep brown skin and his Bosnian grandmother's sharp cheekbones, and he has cat ears — small, tawny, semi-expressive — mounted via a Helix genemod he saved three months of UBC stipend for at seventeen because he thought they'd make him look 'elevated.' They do not make him look elevated. They do make him look like exactly who he is: a cheerful young man who is trying very hard and mostly succeeding. His cart is a battered silver rig he inherited from a previous vendor, pasted over with good-luck ELF shrine stickers and a hand-painted sign in four languages.\n\nHe operates his cart with the manic efficiency of someone who cannot afford to miss a service window. His noodle broth is genuinely excellent — a recipe he built over four years of experimentation, drawing on whatever his parents cooked and whatever he could reverse-engineer from mid-tier restaurant menus he couldn't afford to eat at. He talks too much when he's happy, goes very quiet when he's worried, and has a genuine talent for remembering exactly what every regular customer ordered last time.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -156,7 +156,7 @@
     "People Pleaser": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Copperhead",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,35 +175,16 @@
     "The CEO",
     "Grandmother",
     "Copperhead",
+    "Plot 17",
     "Arcturus Defense Solutions",
     "Silver",
+    "Corner Slice",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Milwaukee Core",
-    "Ablonite-KR",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Autonomous Adhesive Denial Drone AADD-2 'Barnacle'",
-    "Dragan Petersen-Bah",
-    "Florentiu Sagna-Wrzesniewski",
-    "Four Walls, No Ceiling",
-    "GLMZ",
-    "Helix Biosystems",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Pirjo Asante-Ulukhan",
-    "Plot 17",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA TK-4 'Hellhound'",
-    "Tafara Quiñones-Saarinen",
-    "The Heritage Vault",
-    "The Underlayer Collective",
-    "Witness"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian, Sub-Saharan African, East Asian, and Eastern European blend — a complex diaspora ancestry reflecting the Ubiquitous Mixing of 2226. The combination manifests as warm-toned brown skin with subtle golden undertones, facial structure showing the influence of multiple continental lineages: broader cheekbones with East Asian influence, angular jaw definition from Eastern European heritage, and full, expressive features reflecting African ancestry. Southeast Asian heritage contributes to eye shape and overall facial proportions.",
+    "heritage": "Predominantly Eastern European (89.2%) with minor Sub-Saharan African (7.5%) and Northern European (3.3%) ancestry. Eastern European genetics dominate: angular facial structure with sharp jawline, moderate-to-high cheekbones, and straight nose typical of Polish-Ukrainian lineages. Sub-Saharan African ancestry contributes warmth to overall skin tone, subtle fullness to lips and lower face, and slight broadening of nasal base. Northern European trace ancestry adds depth to eye color and slight coolness to undertones beneath the warm base. The genetic expression reads as distinctly Central/Eastern European with warm, sun-marked character.",
     "height_cm": 175,
     "weight_kg": 62,
     "build": "Lean and wiry, all elbows and restless kinetic energy — the physiology of someone who moves constantly between cart stations and supplier runs. Minimal body fat, efficient muscle.",
@@ -211,25 +192,62 @@
     "hair_style": "Close-cropped, deliberately low-maintenance",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with bronze undertones — neither purely deep nor medium, but a rich blended tone reflecting the interplay of Southeast Asian, Sub-Saharan African, East Asian, and Eastern European ancestry",
-    "complexion": "Facial structure shows blended heritage: moderate cheekbone prominence, angular jawline with warmth, expressive mobile features. Perpetual stubble shadow (two to three days growth standard), skin weathered slightly from cart-side heat and sun exposure. Animated expression — eyebrows mobile, mouth rarely still.",
+    "skin_tone": "Warm golden-tan, medium depth — Eastern European base enriched and deepened by Sub-Saharan African ancestry contribution. Golden undertones from sun exposure and heat work. Lived-in quality from cart-side environment.",
+    "complexion": "Strong Eastern European bone structure: sharp jawline, moderate-to-high cheekbones, straight nose with slight width at base from African heritage. Sub-Saharan ancestry adds warmth and subtle fullness to lower face and lips. Perpetual stubble shadow (two to three days growth standard), skin weathered from cart-side heat and sun exposure. Animated expression — eyebrows mobile, mouth rarely still.",
     "distinguishing_marks": [
       "Small tawny cat ears mounted via Helix Biosystems genemod surgery scars visible behind ears where mod plates inserted, semi-expressive cartilage control.",
-      "Minor burn scar on the back of right hand from cart steam accident, approximately 5cm, pale against brown skin."
+      "Minor burn scar on the back of right hand from cart steam accident, approximately 5cm, pale against golden-tan skin."
     ],
     "visible_augmentations": "Tawny geneware cat ears (Helix Biosystems cosmetic mod) — semi-expressive, respond to emotion and attention. No chrome, no LED optics, no subdermal plating visible. Deliberately minimal augmentation profile.",
     "posture_movement": "Hunched slightly forward from years of leaning over cart counters. Moves with rapid, efficient gestures — hand-talking constantly when animated. Fidgets with cart equipment during customer lulls. Stance shifts weight frequently, ready to pivot. Eyes track customers and foot traffic continuously.",
     "clothing_style": "Tier 4 utilitarian: heat-resistant synthetic apron (food-stained, patterned with faded ELF shrine motifs he refuses to replace), black thermal underlayer, reinforced cargo pants with multiple utility pockets (flour, salt, spice packets). Worn Copperhead Collective vendor badge on lanyard. Footwear is scuffed, solvent-stained work boots. Occasional hoodie in cooler months — generic brand, no logos. Jewelry: single silver ring (family heirloom) on left hand. Overall aesthetic screams 'working class street vendor' rather than aspirational."
   },
-  "image_prompt": "Rio Olofsson, street food vendor in 2226 Great Lakes Metropolitan Zone, warm golden-brown skin reflecting mixed Southeast Asian, Sub-Saharan African, East Asian, and Eastern European heritage, 175cm lean frame with efficient muscle, short black natural hair, dark brown expressive eyes, semi-expressive tawny cat ears from genemod mounted behind ears showing surgical scars, perpetual stubble shadow, animated mobile features with prominent cheekbones and angular jawline, minor pale burn scar on back of right hand, hunched posture from years leaning over cart counter, wearing food-stained heat-resistant synthetic apron with faded ELF shrine motifs, black thermal underlayer, reinforced cargo pants with utility pockets, worn Copperhead Collective vendor badge on lanyard, scuffed solvent-stained work boots, single silver family heirloom ring, fidgeting hand gestures, rapid kinetic energy, tracking customers with sharp eye contact, cyberpunk street vendor aesthetic, warm neon cart lighting, urban food stall setting with steam and ambient glow, gritty working-class atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Rio Szczypiński, 175cm lean neo-noir street vendor with golden-tan warm skin tone and sharp Eastern European features softened by Sub-Saharan African ancestry warmth. Close-cropped black hair, dark brown eyes, animated expression. Small tawny geneware cat ears with visible surgery scars behind ears, semi-expressive. Perpetual three-day stubble, weathered complexion. Hunched slightly forward stance, rapid hand gestures. Wearing heat-resistant apron stained with food and faded shrine motifs, black thermal underlayer, reinforced cargo pants with utility pockets, scuffed work boots, Copperhead Collective vendor badge. Silver family heirloom ring on left hand. Pale burn scar visible on right hand. Standing at food cart in neon-lit Great Lakes Metropolitan Zone street market, warm LED ambient lighting casting golden glow on skin, foot traffic blurred in background, GLMZ aesthetic, working class street vendor energy, kinetic and restless, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 33.9,
-    "Sub-Saharan African": 26.0,
-    "East Asian": 25.2,
-    "Eastern European": 14.9
+    "Eastern European": 89.2,
+    "Sub-Saharan African": 7.5,
+    "Northern European": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 14.5,
+        "Belarusian": 28.1
+      },
+      "Slavic West": {
+        "Czech": 14.4
+      },
+      "Slavic South": {
+        "Bosnian": 7.7,
+        "Croatian": 24.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 1.3,
+        "Ivorian": 1.4
+      },
+      "Central African": {
+        "Gabonese": 1.1,
+        "Cameroonian": 0.2
+      },
+      "East African": {
+        "Ethiopian": 2.4,
+        "Rwandan": 1.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 1.6
+      },
+      "Germanic": {
+        "German": 1.5,
+        "Austrian": 0.2
+      }
+    }
+  }
 }

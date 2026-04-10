@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65d7c7696741a308f2b377c",
   "type": "character",
-  "name": "Mourad Bautista",
+  "name": "Olumide Bergqvist",
   "aliases": [
     "Mira",
     "Slava"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Bronzeline — office above a fabrication shop on Copper Haul Street; operates across The Shelf and lower Grand Corridor, near Pulaski and Chicago Ave",
-  "description": "Miroslava is medium height with a fluid quality to their movements — Samoan and Slavic ancestry combining into broad shoulders, strong hands, and a face whose expressions they have learned to deploy like instruments rather than leak involuntarily. Their hair is grown to the jaw and shifts through three or four colors depending on their mood thanks to chromatic follicle modification; they typically let it settle to charcoal gray while working, which they describe as professional, though their clients find the occasional bleed of deep violet when they are agitated more unnerving than reassuring. They have cat ears — soft grey, mobile, a mod that predates their PI license and that they have kept because they pick up certain vocal frequencies the human ear misses, which turns out to be professionally useful in a way they did not originally intend.\n\nMiroslava runs a small private investigation practice that caters to Tier 2 and low Tier 3 clients — people who cannot afford legal representation and cannot access Metro Police interest because their problems are too small or too inconvenient. They find missing persons. They document infidelity for separation proceedings. They trace where someone's inheritance went. They do not describe this work as glamorous and they are not performing humility when they say it. They have a gift for putting people at ease that coexists uncomfortably with a deep private reserve, and they pray to three different ELFs with equal commitment, which their neighbors in Bronzeline find ecumenically admirable.",
+  "description": "Olumide Bergqvist is medium height with a fluid quality to their movements — Samoan and Slavic ancestry combining into broad shoulders, strong hands, and a face whose expressions they have learned to deploy like instruments rather than leak involuntarily. Their hair is grown to the jaw and shifts through three or four colors depending on their mood thanks to chromatic follicle modification; they typically let it settle to charcoal gray while working, which they describe as professional, though their clients find the occasional bleed of deep violet when they are agitated more unnerving than reassuring. They have cat ears — soft grey, mobile, a mod that predates their PI license and that they have kept because they pick up certain vocal frequencies the human ear misses, which turns out to be professionally useful in a way they did not originally intend.\n\nOlumide Bergqvist runs a small private investigation practice that caters to Tier 2 and low Tier 3 clients — people who cannot afford legal representation and cannot access Metro Police interest because their problems are too small or too inconvenient. They find missing persons. They document infidelity for separation proceedings. They trace where someone's inheritance went. They do not describe this work as glamorous and they are not performing humility when they say it. They have a gift for putting people at ease that coexists uncomfortably with a deep private reserve, and they pray to three different ELFs with equal commitment, which their neighbors in Bronzeline find ecumenically admirable.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bronzeline",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -259,45 +259,26 @@
     "Bronzeline",
     "Thermal Signature Inverter TSI-2 'Cold Case'",
     "The Shelf",
+    "Charcoal",
     "Marrowvault Cryogenics",
-    "Tessera Corponation",
-    "The Pure Hand",
-    "Copper",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Auricula Felis Modification",
-    "Bioacoustic Communication Membrane",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
     "GLMZ",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Lacuna Genomics",
-    "Nnamdi Ostrowski-Faletolu",
-    "Philibert Mwangi-Djordjevic",
-    "Pikasso Wemba-Þórðarson",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "The Question",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Tessera Corponation",
+    "Chicago",
+    "Copper",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with North African and South Asian ancestry—the result of the Ubiquitous Diaspora. Features reflect this blend: warm golden-brown skin with subtle olive undertones from the North African component, high cheekbones with defined structure, dark expressive eyes with warm undertones. The South Asian heritage adds subtle refinement to facial geometry and eye shape.",
+    "heritage": "Genetic mosaic reflecting Southeast Asian dominance (42.9%) blended with significant Sub-Saharan African (19.1%), Eastern European (18.2%), Hispanic/Latin American (12.5%), and East Asian (7.3%) ancestry. This combination creates a striking warm golden-brown complexion with layered undertones—olive and deep amber from the Southeast Asian-Sub-Saharan African-Eastern European blend, enriched by Hispanic/Latin American warmth. Southeast Asian heritage provides refined facial geometry and warm undertones; Sub-Saharan African ancestry contributes structural definition and skin depth; Eastern European heritage adds subtle bone prominence and cooler undertone complexity; Hispanic/Latin American and East Asian components refine eye shape and enhance cheekbone prominence. The result is a face of geometric precision and warm depth: high defined cheekbones with strong structural presence, warm-to-amber dark eyes with subtle epicanthal variation, and facial architecture that balances Southeast Asian refinement with the warmth and presence of African and Latin American heritage.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid without heaviness; strong through the chest and forearms from years of fieldwork and manual note-taking. Moves with deliberate economy—no wasted motion, weight always balanced, the physical carriage of someone trained to observe and remain observant.",
     "hair_color": "Chromatic follicle mod—base charcoal gray with mood-reactive chromatic bleed; shifts toward deep violet when agitated, settles to slate or near-black at rest. Occasionally holds jewel tones (sapphire, plum) when in lighter mood.",
     "hair_style": "Jaw-length, textured, often worn loose or loosely pulled back during fieldwork; styled with precision that reads as discipline rather than vanity.",
     "hair_length": "Medium",
-    "eye_color": "Dark brown, natural—warm, attentive, difficult to read despite their expressiveness.",
-    "skin_tone": "Warm golden-brown complexion reflecting the blend of Hispanic/Latin American and North African ancestry; rich undertone with subtle olive notes from Maghrebi heritage, enhanced by South Asian refinement to facial planes.",
-    "complexion": "Clean-shaven or very lightly stubbled, depending on fieldwork schedule. Skin is clear and well-maintained; their face is their professional instrument and they treat it accordingly. Expression control is noticeable—a precision to how they smile or furrow, as though each micro-expression is chosen rather than leaked. Facial structure shows defined cheekbones and strong jawline characteristic of mixed Mediterranean-North African heritage.",
+    "eye_color": "Dark brown with warm amber undertones, natural—attentive and expressive yet difficult to fully read, reflecting the warmth of their blended heritage.",
+    "skin_tone": "Warm golden-brown complexion with layered undertones: olive and deep amber from the Southeast Asian-Sub-Saharan African-Eastern European blend, with subtle cooler notes from Eastern European ancestry, enriched by Hispanic/Latin American warmth. Rich, complex undertone that reads as deeply warm rather than cool.",
+    "complexion": "Clean-shaven or very lightly stubbled, depending on fieldwork schedule. Skin is clear and well-maintained; their face is their professional instrument and they treat it accordingly. Expression control is noticeable—a precision to how they smile or furrow, as though each micro-expression is chosen rather than leaked. Facial structure shows defined cheekbones and strong jawline characteristic of the Southeast Asian-Sub-Saharan African blend, with subtle but present bone prominence at temples and forehead from Eastern European heritage.",
     "distinguishing_marks": [
       "Soft grey cosmetic cat ears (feline-shaped, mobile, implanted at age 22) positioned where human ears would be; enhanced audio reception visible only in their attentive rotation toward sound sources.",
       "Small ritual scars on the inside of both wrists—thin, deliberate lines from ELF shrine maintenance practices, barely visible unless actively looking."
@@ -306,14 +287,63 @@
     "posture_movement": "Upright, centered, economical. Walks with weight in their hips and feet—grounded. Head position indicates active listening; ears rotate subtly toward conversational partners or environmental noise. Hands are expressive during client meetings but controlled during fieldwork. Overall bearing suggests someone comfortable in small rooms and tighter spaces, at ease with prolonged observation and patience.",
     "clothing_style": "Tier 2-3 practical: tailored but not expensive. Favors fitted trousers (often charcoal, dark grey, or black) with reinforced pockets for recording devices and documentation materials. Layered tops—breathable under-layer with a structured overshirt or light jacket in muted earth tones or cool neutrals. Footwear is comfortable, durable, broken in; usually low-profile boots or practical street shoes suitable for afternoon stakeouts. Jewellery is minimal: a small ELF shrine medallion worn close to the skin, visible only if their shirt shifts. No visible corpo branding or luxury indicators; their presentation reads as competent working professional rather than aspirational."
   },
-  "image_prompt": "Mourad Bautista, cyberpunk 2226, mixed Hispanic-North African-South Asian heritage with warm golden-brown skin and olive undertones, defined cheekbones, dark expressive eyes. Jaw-length chromatic follicle-modded hair (charcoal gray base with mood-reactive violet shift), soft grey mobile cat ears implanted where human ears sit. Subvocal throat node barely visible. Clean-shaven, focused expression. Wearing fitted dark grey trousers and layered earth-tone structured overshirt, practical low-profile boots. Small ELF shrine medallion at collar. Broad-shouldered, grounded posture, economical movement. Professional observer bearing. Urban Great Lakes Metropolitan Zone setting, neon-tinged evening light catching the subvocal implant and chromatic hair undertones. Moody, attentive, competent. --ar 2:3 --v 6",
+  "image_prompt": "Olumide Bergqvist, GLMZ, 172cm tall with warm golden-brown skin and layered undertones reflecting Southeast Asian, Sub-Saharan African, Eastern European, Hispanic, and East Asian heritage. Dark brown eyes with amber warmth, defined cheekbones, strong jawline. Medium-length chromatic hair (charcoal base, mood-reactive violet undertones), jaw-length and textured. Mobile grey cat ears positioned where human ears would be. Clean-shaven or lightly stubbled. Wearing fitted charcoal trousers with reinforced pockets, layered practical clothing in earth tones and cool neutrals, broken-in low-profile boots. Subtle throat-mounted subvocal implant barely visible. Small ELF shrine medallion. Upright posture, grounded stance, attentive expression. Professional fieldwork aesthetic, disciplined bearing. Indoor lighting catching the chrome implants, urban Great Lakes Metropolitan Zone background, neo-noir surveillance aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 57.6,
-    "North African": 36.3,
-    "South Asian": 6.1
+    "Southeast Asian": 42.9,
+    "Sub-Saharan African": 19.1,
+    "Eastern European": 18.2,
+    "Hispanic/Latin American": 12.5,
+    "East Asian": 7.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 26.1
+      },
+      "Laotian": {
+        "Laotian": 9.7
+      },
+      "Filipino": {
+        "Cebuano": 7.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 11.1
+      },
+      "Southern African": {
+        "Zambian": 1.3
+      },
+      "West African": {
+        "Guinean": 6,
+        "Nigerian": 0.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 18.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 7.2
+      },
+      "Mexican": {
+        "Mexican": 1.2
+      },
+      "South American": {
+        "Brazilian": 4.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 5.5,
+        "Sichuanese": 1.8
+      }
+    }
+  }
 }

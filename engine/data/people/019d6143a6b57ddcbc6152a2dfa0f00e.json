@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b57ddcbc6152a2dfa0f00e",
   "type": "character",
-  "name": "Ama Ozcoidi",
+  "name": "Ibrahim Haddad",
   "aliases": [
     "Alloy",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Belmont",
-  "description": "Rongo Borg-Agyeman are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 52, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a cleaner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nRongo Borg-Agyeman have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
+  "description": "Ibrahim Haddad are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 52, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a cleaner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIbrahim Haddad have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.71,
@@ -261,7 +261,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,33 +276,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "Canopy Station Nine",
     "Geartown",
+    "Canopy",
     "Lazarus LX-2 'Lab Rat'",
-    "Clover",
-    "Bioelectric Muscle Fiber",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Iowan Behemoth — 'Palisade'",
-    "MERIDIAN",
-    "Makena Johanssen-Diallo",
-    "Meridian Core",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Slagworks Industrial",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "The Canopy",
-    "The Gutter Prophets",
-    "The Pure Hand",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (48.8%) with significant Indigenous American ancestry (28.4%), complemented by Northern European (15.0%) and East Asian (7.4%) genetic contributions. This creates a striking phenotype: deep melanin-rich skin with warm undertones, angular facial structure combining African and Indigenous bone architecture, with subtle eye shape variation from East Asian heritage.",
+    "heritage": "Striking global confluence: Middle Eastern (33.1%), Hispanic/Latin American (26.0%), South Asian (16.3%), Sub-Saharan African (13.2%), Southeast Asian (6.2%), Indigenous American (5.2%). This ancestry blend creates a distinctive phenotype — warm deep brown skin with golden and ashy undertones, angular facial structure combining African strength with Indigenous American prominence, South Asian refinement, and Southeast Asian eye variation.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Athletic and lean with visible muscle definition; the economy of movement in a dancer or martial artist — no wasted mass, joints and tendons clearly defined. Age has added subtle thickness to the core but stripped away any softness elsewhere.",
@@ -310,8 +293,8 @@
     "hair_style": "Kept short and severe, pulled back from the face — practical for work, no vanity",
     "hair_length": "Short",
     "eye_color": "Left eye: warm brown with subtle amber undertones from complex ancestry, natural. Right eye: polished chrome with faint circuitry visible at the iris, LED-ringed pupil that adjusts visibly when focusing or recording",
-    "skin_tone": "Deep warm brown with ashy undertones from nocturnal living; melanin-rich complexion shaped by Sub-Saharan and Indigenous American heritage, showing minimal sun damage despite age",
-    "complexion": "Sharp facial structure — high cheekbones with Indigenous American prominence, defined jaw with African strength, slight eye shape variation suggesting East Asian ancestry. Skin is weathered in a deliberate way: small precise scars near the temples and along the left jawline, evidence of old augmentation surgery. No cosmetic softening; they wear their profession visibly. Expression is neutral at rest.",
+    "skin_tone": "Deep warm brown with golden and ashy undertones from nocturnal living and diverse ancestry; melanin-rich complexion shaped by Middle Eastern, Hispanic/Latin American, South Asian, Sub-Saharan African, Southeast Asian, and Indigenous American heritage, showing minimal sun damage despite age",
+    "complexion": "Sharp angular facial structure — high cheekbones with Indigenous American and South Asian prominence, strong defined jaw reflecting African and Middle Eastern heritage, subtle eye shape variation suggesting Southeast Asian ancestry. Skin is weathered in a deliberate way: small precise scars near the temples and along the left jawline, evidence of old augmentation surgery. No cosmetic softening; they wear their profession visibly. Expression is neutral at rest.",
     "distinguishing_marks": [
       "Surgical scar running from left temple down to the jawline, thin and clean, marking the cybernetic eye installation",
       "Network of thin white scars across both knuckles and the backs of the hands — trauma from close-quarters work",
@@ -322,16 +305,61 @@
     "posture_movement": "Moves with economical precision — every gesture serves a purpose. The body is coiled but not tense; this is the default state of someone who processes threat constantly. Turns using the whole body rather than just the head, likely a compensation for the monoocular focus of the cybernetic eye. Walks quietly, weight forward on the balls of the feet. When at rest, hands are often visible and open — a calculated tell that they're not a threat to people who understand the language.",
     "clothing_style": "Tier 4 practical — dark, muted colors that don't catch light. Synthweave cargo pants with reinforced thigh pockets for tools. Lightweight tactical jacket with internal pockets, collar always high to protect the neck in close-quarters situations. No logos or corp branding. Boots are worn but well-maintained, studded grip on the soles. All clothing is chosen for mobility and concealment; nothing restricts movement. A single piece of jewelry: a thin silver band on the right ring finger, inscribed with something too small to read at a distance."
   },
-  "image_prompt": "Ama Ozcoidi, a 178cm tall mixed-heritage operative in the cyberpunk 2226 GLMZ: deep rich brown skin with subtle warmth, sharp angular face combining Sub-Saharan African and Indigenous American features, silver-grey hair cut severe and short. Left eye warm amber-brown natural, right eye polished chrome cybernetic with visible micro-servos and LED iris. Surgical scars mark the temple-to-jawline cybernetic installation, knuckle scars from close-quarters combat, cultural scarification on right shoulder blade. Athletic lean build, coiled precision posture. Dark tactical synthweave cargo pants, lightweight reinforced jacket with high collar, studded boots, minimal jewelry—silver band on right ring finger. Monofilament whip concealed in left forearm. Neutral expression at rest, economical movement. Nocturnal aesthetic, neon-lit alley setting with rain-slicked concrete, cool blue and purple ambient lighting casting chrome eye glow. Mood: professional, dangerous calm, threat-aware. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Ibrahim Haddad, 178cm tall athletic lean build with visible muscle definition. Deep warm brown skin with golden and ashy undertones blending Middle Eastern, Hispanic, South Asian, Sub-Saharan African, Southeast Asian, and Indigenous American heritage. Sharp angular facial structure with high cheekbones and strong jaw, surgical scar from left temple to jawline. Silver-grey hair cut short and severe. Left eye warm brown with amber undertones, right eye polished chrome cybernetic with LED-ringed pupil and visible micro-servos. Left forearm augmented with concealed monofilament hardware, subtly thicker and smoother than natural. Hands marked with thin white scars from close-quarters work. Wearing dark muted tactical synthweave cargo pants, lightweight reinforced jacket with high collar, worn studded boots. Silver ring on right ring finger. Posture economical and coiled, moving with precision. Neutral expression at rest. Neon-lit urban environment, low-key moody lighting catching the chrome eye. Professional, dangerous, nocturnal operative aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 48.8,
-    "Indigenous American": 28.4,
-    "Northern European": 15.0,
-    "East Asian": 7.4,
-    "Hispanic/Latin American": 0.4
+    "Middle Eastern": 33.1,
+    "Hispanic/Latin American": 26,
+    "South Asian": 16.3,
+    "Sub-Saharan African": 13.2,
+    "Southeast Asian": 6.2,
+    "Indigenous American": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 19.5,
+        "Tajik Persian": 13.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 23,
+        "Puerto Rican": 3
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 10.9
+      },
+      "Pakistani": {
+        "Sindhi": 5.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 7.3,
+        "Ugandan": 1.5
+      },
+      "Central African": {
+        "Angolan": 4.4
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Waray": 2
+      },
+      "Cambodian": {
+        "Khmer": 4.2
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 5.2
+      }
+    }
+  }
 }

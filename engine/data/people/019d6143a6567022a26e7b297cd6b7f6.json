@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6567022a26e7b297cd6b7f6",
   "type": "character",
-  "name": "Briar Konaté-Vestergaard",
+  "name": "Briar Tofauti-Cardenas",
   "aliases": [
     "Mat",
     "Grease"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Geartown, Bay 14 of the Rusted Meridian self-service garage complex on Spindle Row, near Milwaukee and Damen",
-  "description": "Matteo is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips — a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay — the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind — genuinely not — but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit's maintenance culture that he will share with anyone who stands still long enough.",
+  "description": "Briar Tofauti-Cardenas is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips — a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay — the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind — genuinely not — but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit's maintenance culture that he will share with anyone who stands still long enough.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -157,7 +157,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,24 +176,12 @@
     "Palladian Construction",
     "Zheng-dao Bioelectric",
     "Geartown",
-    "SPINDLE",
     "The Pure Hand",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Milwaukee Core",
-    "Abeke Soriano-Dlamini",
-    "Alper Lebedev-Tutu",
-    "Devraj Solano-Yildirim",
-    "Doru Fofana-Câmpeanu",
-    "Dzemal Acholonu-Patagiri",
-    "Hauler",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Slagworks Industrial"
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European, East Asian, and Sub-Saharan African — a striking tri-continental blend. Scandinavian bone structure softened by East Asian features around the eyes and cheekbones, with warm Sub-Saharan undertones to skin and hair texture. The result is someone whose ancestry reads as genuinely cosmopolitan rather than fitting any single regional category.",
+    "heritage": "Predominantly Pacific Islander ancestry (85.6%) with secondary influences from Hispanic/Latin American (6.4%), South Asian (5.0%), and Sub-Saharan African (3.0%) heritage. The genetic blend produces characteristic Pacific Islander bone structure and facial features—broad face, fuller features, strong jaw—with warm, melanin-rich skin that reflects the multi-regional ancestry. The darker complexion carries undertones of warmth from both South Asian and Sub-Saharan heritage, creating depth and richness typical of oceanic-diaspora populations rather than any single continental ancestry.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with concentrated wiry muscle across shoulders and forearms — the build of someone who applies precision force repeatedly rather than bulk. Minimal body fat, visible tendon definition in hands and wrists.",
@@ -201,8 +189,8 @@
     "hair_style": "Close-cropped natural cut, textured and even, with deliberate gradient fade applied via cheap geneware dye",
     "hair_length": "Short",
     "eye_color": "Dark brown with subtle retinal overlay grid visible under bright light — air-gapped schematic overlay, non-networked",
-    "skin_tone": "Warm medium brown with golden and reddish undertones from the tri-continental blend — neither strictly light nor dark, but a complex warm-toned medium that catches light distinctly",
-    "complexion": "Clear, unremarkable skin with permanent minor scarring on knuckles and across the back of both hands. Cuticles perpetually stained with machine oil and grease that he no longer bothers to fully clean. Stubble-beard kept at 1-2 days growth, neither maintained nor fully grown. Expression defaults to focused intensity even at rest. Fine facial structure reflects East Asian heritage while broader face shape suggests Northern European ancestry.",
+    "skin_tone": "Warm deep brown with golden undertones, sun-weathered and luminous — reflects Pacific Islander genetic dominance (85.6%) with subtle warmth and depth from South Asian and Sub-Saharan heritage blending. Melanin-rich skin catches light with natural radiance characteristic of tropical ancestry.",
+    "complexion": "Clear, unremarkable skin with permanent minor scarring on knuckles and across the back of both hands. Cuticles perpetually stained with machine oil and grease that he no longer bothers to fully clean. Stubble-beard kept at 1-2 days growth, neither maintained nor fully grown. Expression defaults to focused intensity even at rest. Broad facial structure with fuller features characteristic of Pacific Islander heritage—wider nose bridge, prominent cheekbones, substantial jaw—complemented by warm depth and richness of complexion.",
     "distinguishing_marks": [
       "Palladian corporate apprenticeship tattoo on left forearm (three interlocking gears in corporate blue), partially covered by an amateur geometric overlay of black lines and angles applied post-buyout",
       "Scattered oil-burn scars across both hands and forearms — minor, faded, accumulated",
@@ -212,14 +200,51 @@
     "posture_movement": "Stands with weight forward slightly, hands active and restless when not working — fingers unconsciously mimicking mechanical motions. Moves with economical efficiency, no wasted motion. When focused on machinery, entire body locks into stillness. When not working, appears slightly disconnected, gaze unfocused, as if processing power is allocated elsewhere. Often mid-sentence trails off if mechanical sound interrupts attention.",
     "clothing_style": "Tier 4 utilitarian — work-worn Carhartt-equivalent synthdenim coveralls in faded gray, perpetually stained with machine oil and coolant. Base layer typically a cheap thermal undershirt in dark gray or black, sleeves rolled or pushed up. Steel-toed work boots, scuffed and practical. Leather apron hung in bay, not on body. A single silver chain around his neck (no pendant) — inherited, not augmented. No jewelry. Clothes are functional maintenance gear, not fashion, but worn with unconscious confidence. Smells consistently of synthetic machine oil and welding flux."
   },
-  "image_prompt": "Briar Konaté-Vestergaard, mixed-heritage cyberpunk mechanic in 2226 Great Lakes Metropolitan Zone. Lean 178cm frame with wiry muscle, warm medium brown skin blending Scandinavian, East Asian, and Sub-Saharan features. Dark brown eyes with barely-visible retinal overlay grid. Short dark brown hair fading to bioluminescent teal at tips, subtle glow in workshop shadows. Worn gray synthdenim coveralls stained with machine oil, rolled sleeves showing oil-burn scars and corporate gear tattoo on left forearm. Black haptic feedback glove on right hand with faint blue circuit tracery. Silver inheritance chain around neck. Steel-toed boots scuffed from years of precision work. Focused intensity expression, hands restless with mechanical gestures. Standing in dim cyberpunk workshop with machinery and neon accent lighting, atmospheric industrial setting, shallow depth of field on face, gritty realistic aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Briar Tofauti-Cardenas, a lean 178cm Pacific Islander-diaspora mechanic with warm deep brown skin and golden undertones, close-cropped dark hair fading to bioluminescent teal at tips. Broad Pacific Islander facial features, dark eyes with faint retinal grid overlay. Wearing faded gray Carhartt-equivalent work coveralls stained with machine oil, dark thermal undershirt, steel-toed boots. Black leather haptic feedback glove on right hand with blue circuit tracery. Oil-burn scars across knuckles and forearms, geometric tattoo overlay on left forearm. Silver chain around neck, 1-2 days stubble. Standing in GLMZ industrial workshop bay, hands active and restless, weight forward. Economical posture, unfocused gaze as if processing elsewhere. Machine oil and welding flux scents. Moody workshop lighting with blue-teal neon accents reflecting off metal surfaces and his glowing hair. GLMZ 2200s gritty aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 46.9,
-    "East Asian": 40.4,
-    "Sub-Saharan African": 12.7
+    "Pacific Islander": 85.6,
+    "Hispanic/Latin American": 6.4,
+    "South Asian": 5,
+    "Sub-Saharan African": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 52.5,
+        "Ni-Vanuatu": 33.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 2.4
+      },
+      "Central American": {
+        "Salvadoran": 3.4,
+        "Honduran": 0.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 2.7
+      },
+      "Nepali": {
+        "Nepali": 2.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 1.3
+      },
+      "East African": {
+        "Ugandan": 1.4
+      },
+      "Southern African": {
+        "Zambian": 0.3
+      }
+    }
+  }
 }

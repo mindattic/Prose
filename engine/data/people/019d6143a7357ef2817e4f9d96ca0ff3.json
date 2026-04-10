@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7357ef2817e4f9d96ca0ff3",
   "type": "character",
-  "name": "Rio Boateng-Árnason-Boudiaf",
+  "name": "Rio Haraldsen-Park-Horváth",
   "aliases": [
     "Z",
     "Zib"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Laceworks, mobile — regular circuit through three intersections near the Lace Bridge underpass, near Lincoln and Belmont",
-  "description": "Zibby moves through the Laceworks like a current — always in motion, always aware of every exit. They're lean and compact with close-cropped hair that shifts color throughout the day via a follicular genemod cycling through rust, copper, and near-black in slow waves. Their irises are patterned in concentric hexagons, gold on brown, which they claim was a 'random outcome' from a budget gene clinic but is actually a deliberate aesthetic choice they're embarrassed to admit cost them six months of savings. They dress in layers they can shed fast: patchwork thermals, a jacket with thirty pockets, boots that are two sizes too large because they bought them for the hidden cavity under the left insole.\n\nTheir cart is a salvaged medical trolley rigged with a privacy shroud — a local-field scrambler that makes recordings of their transactions come out as static. The stock changes daily: today it's archived pre-corporate streaming libraries, tomorrow it's unlicensed sensory recordings from restricted-access Axiom research facilities, the day after it's soft intelligence packages compiled from public scraping and a handful of human sources they pay in trade. They're smart, funny, genuinely good at reading people, and trying very hard to project the kind of confidence that only comes from not worrying about rent. They do worry about rent.",
+  "description": "Rio Haraldsen-Park-Horváth moves through the Laceworks like a current — always in motion, always aware of every exit. They're lean and compact with close-cropped hair that shifts color throughout the day via a follicular genemod cycling through rust, copper, and near-black in slow waves. Their irises are patterned in concentric hexagons, gold on brown, which they claim was a 'random outcome' from a budget gene clinic but is actually a deliberate aesthetic choice they're embarrassed to admit cost them six months of savings. They dress in layers they can shed fast: patchwork thermals, a jacket with thirty pockets, boots that are two sizes too large because they bought them for the hidden cavity under the left insole.\n\nTheir cart is a salvaged medical trolley rigged with a privacy shroud — a local-field scrambler that makes recordings of their transactions come out as static. The stock changes daily: today it's archived pre-corporate streaming libraries, tomorrow it's unlicensed sensory recordings from restricted-access Axiom research facilities, the day after it's soft intelligence packages compiled from public scraping and a handful of human sources they pay in trade. They're smart, funny, genuinely good at reading people, and trying very hard to project the kind of confidence that only comes from not worrying about rent. They do worry about rent.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -157,7 +157,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Laceworks",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,34 +176,16 @@
     "Emberlace Systems",
     "Irontide Tidal Energy",
     "The Gradient Compact",
-    "SynapTech IrisBloom Ocular Color Modulator",
+    "Circuit",
     "Copper",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
     "SHROUD",
-    "Static",
-    "Rust",
-    "Gold",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Aybek Alvarez-Okonkwo",
-    "Emeka Johansson-Orozco",
-    "Immaculée Dalgaard-Nwosu",
-    "Iowan Behemoth — 'Obelisk'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Makena Johanssen-Diallo",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obafemi Szczypiński-Lautoa",
-    "Priya Subramaniam-Vogt",
-    "Slagworks Industrial",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Third Rail",
-    "Vuk Jorgensen-Toure",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Gold"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Northern European ancestry, complemented by Sub-Saharan African and North African heritage. The genetic blend creates warm brown skin with subtle golden undertones, angular facial structure, and the capacity for the distinctive color-cycling hair modification.",
+    "heritage": "Striking genetic mosaic of East Asian (50%), Eastern European (28%), Northern European (11.2%), and South Asian (10.8%) ancestry. The blend creates distinctive warm medium golden-brown skin with subtle olive undertones and a unique facial geometry combining East Asian angular cheekbones with Eastern European jaw definition and South Asian depth. Features reflect the full complexity of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and compact, wiry muscle definition from constant movement through crowded streets. Low body fat, economical frame built for speed and navigation rather than strength.",
@@ -211,8 +193,8 @@
     "hair_style": "Close-cropped, textured, reveals scalp and ear geometry",
     "hair_length": "Short",
     "eye_color": "Gold and brown concentric hexagonal pattern (cosmetic gene-mod, appears non-human but natural to the eye)",
-    "skin_tone": "Warm medium-golden brown with olive undertones, reflecting the blend of Latin American, Northern European, Sub-Saharan African, and North African ancestry",
-    "complexion": "Sharp cheekbones, angular jaw with slightly broader facial structure from the diverse heritage mix, quick-reading expression. Skin clear but weathered from outdoor street work. Minimal grooming beyond functional — nail beds show dirt from handling hardware.",
+    "skin_tone": "Warm medium golden-brown with olive undertones, reflecting the harmonious blend of East Asian, Eastern European, Northern European, and South Asian ancestry",
+    "complexion": "Sharp, angular cheekbones with East Asian prominence, combined with the stronger jaw and brow ridge structure of Eastern European heritage. Slight fullness in lower face from South Asian ancestry. Dark eye region characteristic of East Asian ancestry with prominent orbital definition. Skin clear but weathered from outdoor street work. Minimal grooming beyond functional — nail beds show dirt from handling hardware.",
     "distinguishing_marks": [
       "Subdermal haptic patch visible as faint rectangular outline on left inner forearm, roughly 4cm x 2cm, slightly raised when active",
       "Small scar at left eyebrow, likely from street incident, adds to alert expression"
@@ -221,15 +203,59 @@
     "posture_movement": "Never still. Weight shifts constantly, always oriented toward exits and sightlines. Moves with economical grace through crowds — practiced at threading tight spaces. Hands are active, touching surfaces for balance and texture feedback. Eyes move before head does.",
     "clothing_style": "Tier 4-5 utilitarian: layered thermals in muted grays and browns, oversized lightweight jacket with excessive pockets (many empty for shed-and-abandon tactic), reinforced cargo pants with external straps and loops, boots two sizes too large for hidden insole cavity. Everything worn-in, patched, functional. No brands visible. Clothes designed for rapid disassembly and movement, not appearance. Carries a worn messenger bag across torso."
   },
-  "image_prompt": "Rio Boateng-Árnason-Boudiaf, cyberpunk 2226, lean 168cm figure with warm golden-brown skin tone and olive undertones reflecting mixed Latin American, Northern European, African and North African heritage. Short textured close-cropped hair shifting between rust-red and copper tones via genemod. Striking angular features with sharp cheekbones and quick-reading expression. Gold and brown concentric hexagonal patterned eyes (cosmetic gene-mod). Small scar at left eyebrow. Wearing muted gray and brown layered thermals under oversized lightweight utilitarian jacket with excessive pockets, reinforced cargo pants with straps, oversized boots. Worn messenger bag across torso. Subdermal haptic patch visible on left forearm. Never still, weight constantly shifting, oriented toward exits, hands active. Threading through neon-lit crowded GLMZ street corridor at dusk, rain-slicked surfaces, warm amber and cool blue cyberpunk lighting casting geometric shadows. Alert, economical movement, eyes moving before head. Gritty, functional, worn aesthetic. Cyberpunk low-tier street operative aesthetic, high contrast lighting --ar 2:3 --v 6",
+  "image_prompt": "Rio Haraldsen-Park-Horváth, GLMZ, lean 168cm figure in muted gray-brown utilitarian layers and oversized tactical jacket with excessive pockets, reinforced cargo pants, weathered messenger bag. Warm golden-brown skin with olive undertones, sharp angular cheekbones blending East Asian and Eastern European features, dark eye region, defined jaw. Color-cycling rust-red and copper short-cropped textured hair reveals ear geometry. Striking gold and brown concentric hexagonal cybernetic iris pattern catching light. Small scar at left eyebrow, alert expression. Visible haptic patch outline on left forearm. Constant fidgeting posture, weight shifted, hands active, eyes moving—practiced urban street grace. Gritty street-level setting, neon-edged shadows, weathered surfaces, harsh overhead lighting catching hair color shifts and iris geometry. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 44.1,
-    "Northern European": 34.1,
-    "Sub-Saharan African": 11.1,
-    "North African": 10.7
+    "East Asian": 50,
+    "Eastern European": 28,
+    "Northern European": 11.2,
+    "South Asian": 10.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 23.6
+      },
+      "Chinese": {
+        "Cantonese": 8.3,
+        "Shanghainese": 3.2
+      },
+      "Korean": {
+        "Korean": 14.9
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 6.9,
+        "Croatian": 9.4
+      },
+      "Slavic East": {
+        "Belarusian": 7
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 2.1,
+        "Romanian": 2.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 11.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 3.3,
+        "Tamil Sri Lankan": 0.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1.3
+      },
+      "Nepali": {
+        "Nepali": 5.5
+      }
+    }
+  }
 }

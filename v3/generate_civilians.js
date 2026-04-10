@@ -156,7 +156,7 @@ const CATEGORIES = [
     roles: 'beat cops, corporate security guards, private investigators, bounty compliance officers, transit police, surveillance operators, forensic techs, riot suppression specialists, checkpoint operators, internal affairs investigators, drone operators, evidence handlers',
     ageRange: [22, 58],
     tierRange: [2, 4],
-    affiliations: 'Meridian 88 Metro Police, Axiom Security Division, Tessera Compliance Bureau, Ferrogate Transit Security, private security firms, freelance PIs',
+    affiliations: 'GLMZ Metro Police, Axiom Security Division, Tessera Compliance Bureau, Ferrogate Transit Security, private security firms, freelance PIs',
     locationHint: 'The Circuit, The Shelf, transit hubs, corporate campuses, checkpoint zones, Fort Anchor, The Rampart',
   },
   {
@@ -229,11 +229,11 @@ const CATEGORIES = [
     ageRange: [12, 75],
     tierRange: [1, 2],
     affiliations: 'None, nomad caravans, refugee collectives, stateless',
-    locationHint: 'Transit hubs, Kenosha Crossing, Escanaba Gateway, The Waukegan Industrial Shelf, edges of Meridian 88, tent cities, hyperlane rest stops',
+    locationHint: 'Transit hubs, Kenosha Crossing, Escanaba Gateway, The Waukegan Industrial Shelf, edges of GLMZ, tent cities, hyperlane rest stops',
   },
 ];
 
-const WORLD_SYSTEM = `You are a world-builder for Meridian 88, a cyberpunk megacity on Lake Michigan in the year 2200. Currency is the Quanta (symbol Φ). UBC stipend is Φ120/month. Tiers: 1=street poor, 2=working class, 3=corporate middle, 4=executive, 5=elite.
+const WORLD_SYSTEM = `You are a world-builder for GLMZ, a megacity on Lake Michigan in the year 2200. Currency is the Quanta (symbol Φ). UBC stipend is Φ120/month. Tiers: 1=street poor, 2=working class, 3=corporate middle, 4=executive, 5=elite.
 
 CRITICAL — DIASPORA RULE: Everyone is mixed heritage from UNEXPECTED global combinations. Names reflect 3-4 generations of mixing. Examples: Kofi Lindqvist-Okafor, Fatou Chen-Adeyemi, Tariq Mwangi-Leblanc, Yuki Osei-Petrov. Draw from West Africa, Central Asia, Caucasus, Polynesia, Andes, Sahel, Southeast Asia, Horn of Africa, Caribbean, Pacific Islands, Maghreb, Central Africa, Melanesia, Arctic, Balkans, Amazonia, Siberia, Micronesia. Do NOT default to USA/Japan/UK/Korea/generic Western names. Every character should have a name that tells a story of migration and mixing.
 
@@ -243,7 +243,7 @@ E.L.F.s (Electronic Life Forms): Digital spirits that inhabit devices. People pr
 
 Corponations (sovereign corporate entities): Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus, Ringo, Palladian, Helix Biosystems, Ferrogate Transit.
 
-These characters are NOT runners/freelancers/shadowrunners. They are the civilian population — ordinary people living in a cyberpunk world.
+These characters are NOT runners/freelancers/shadowrunners. They are the civilian population — ordinary people living in a near-future world.
 
 Return a JSON array. Each character object must have EXACTLY these fields:
 {
@@ -256,7 +256,7 @@ Return a JSON array. Each character object must have EXACTLY these fields:
   "role": "brief role description",
   "age": 34,
   "status": "active",
-  "location": "specific location in Meridian 88",
+  "location": "specific location in GLMZ",
   "description": "1-2 vivid paragraphs. Physical details, personality snapshot, what makes them memorable.",
   "affiliation": "who they work for or are connected to",
   "augmentations": "what chrome/geneware they have, if any. Many civilians have minimal or cosmetic only.",
@@ -311,7 +311,7 @@ IMPORTANT: Stats for civilians should generally be moderate (3-7 range) unless t
 async function generateBatch(cat, count, allNames, places, batchLabel) {
   const existingList = Array.from(allNames).slice(-200).join(', '); // last 200 to avoid prompt bloat
 
-  const userPrompt = `Generate ${count} ${cat.name.replace(/_/g, ' ')} characters for Meridian 88.
+  const userPrompt = `Generate ${count} ${cat.name.replace(/_/g, ' ')} characters for GLMZ.
 
 CATEGORY: ${cat.name.replace(/_/g, ' ')}
 ROLES to draw from: ${cat.roles}
@@ -320,7 +320,7 @@ TIER RANGE: ${cat.tierRange[0]}-${cat.tierRange[1]}
 TYPICAL AFFILIATIONS: ${cat.affiliations}
 TYPICAL LOCATIONS: ${cat.locationHint}
 
-Available locations in Meridian 88 (use these or invent specific spots within them): ${places.slice(0, 80).join(', ')}
+Available locations in GLMZ (use these or invent specific spots within them): ${places.slice(0, 80).join(', ')}
 
 DO NOT duplicate these existing names: ${existingList}
 

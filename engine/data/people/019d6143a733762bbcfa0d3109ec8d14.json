@@ -1,7 +1,7 @@
 {
   "id": "019d6143a733762bbcfa0d3109ec8d14",
   "type": "character",
-  "name": "Zephyr Nwosu-Olofsson",
+  "name": "Zephyr Hernández-Olofsson",
   "aliases": [
     "Zib",
     "The Pole"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Burnished Market, stall cluster near the Alban Souk border, Calumet Rise, near Halsted and Division",
-  "description": "Zbigniew is a compact man with a permanent five-day beard the colour of iron filings and a complexion that sits somewhere between olive and warm brown depending on the light — an inheritance from a Polish grandfather and a Ghanaian grandmother that he describes as 'maximum average.' His eyes are augmented with data-overlay lenses that give his irises a faint amber grid pattern; the left one has a slow drift that he's never gotten fixed because the repair estimate was 'an absolute scandal.' He dresses in the studied nondescriptness of someone who doesn't want to be remembered: mid-grey layers, nothing with a logo, shoes that could belong to six different professions. His stall front is officially a media archive service — data recovery, legacy file transfer, antique format conversion — which is completely true and also a cover for everything else.\n\nHe's been in the Burnished Market for eleven years and has a quality that experienced market-walkers learn to recognise: the stillness of someone who is always listening more than they appear to be. He is affable in a careful, calibrated way, and his sense of humour is so dry it can take a full beat for people to realise a joke has been made. He has never been arrested. He considers this his primary professional achievement.",
+  "description": "Zephyr Hernández-Olofsson is a compact man with a permanent five-day beard the colour of iron filings and a complexion that sits somewhere between olive and warm brown depending on the light — an inheritance from a Polish grandfather and a Ghanaian grandmother that he describes as 'maximum average.' His eyes are augmented with data-overlay lenses that give his irises a faint amber grid pattern; the left one has a slow drift that he's never gotten fixed because the repair estimate was 'an absolute scandal.' He dresses in the studied nondescriptness of someone who doesn't want to be remembered: mid-grey layers, nothing with a logo, shoes that could belong to six different professions. His stall front is officially a media archive service — data recovery, legacy file transfer, antique format conversion — which is completely true and also a cover for everything else.\n\nHe's been in the Burnished Market for eleven years and has a quality that experienced market-walkers learn to recognise: the stillness of someone who is always listening more than they appear to be. He is affable in a careful, calibrated way, and his sense of humour is so dry it can take a full beat for people to realise a joke has been made. He has never been arrested. He considers this his primary professional achievement.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -177,7 +177,7 @@
     "Info Broker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -202,31 +202,14 @@
     "The Gradient Compact",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "ARCHIVE",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nesting Doll",
-    "Iron",
-    "Emeka Johansson-Orozco",
-    "Last Word",
-    "MERIDIAN",
-    "Makena Johanssen-Diallo",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Philibert Mwangi-Djordjevic",
-    "Ringo DV-4 'Courier'",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "The Bazaar",
-    "The Counter",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy"
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Drift",
+    "Iron"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (36.5%), Northern European (22.0%), Hispanic/Latin American (12.6%), South Asian (12.1%), East Asian (9.2%), Eastern European (7.6%) — a truly pan-global mixture resulting in warm mid-brown skin with complex undertones, subtle warm golden highlights beneath the surface, and facial structure reflecting the blend of West African, Scandinavian, Mediterranean, and pan-Asian ancestry",
+    "heritage": "South Asian (31.8%), Hispanic/Latin American (27.2%), East Asian (23.5%), Eastern European (8.9%), Sub-Saharan African (7.5%), Southeast Asian (1.1%) — a distinctly pan-Asian and Latin American foundation with African and Eastern European undertones, creating warm golden-brown skin with complex layered depth, broad cheekbones reflecting East and South Asian ancestry, and facial structure balancing pan-Asian angularity with Hispanic warmth and subtle Sub-Saharan richness",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Compact and economical — neither lean nor heavy, structured like someone who moves through crowded spaces efficiently. Shoulders squared, no wasted bulk.",
@@ -234,8 +217,8 @@
     "hair_style": "Short, swept back, functional",
     "hair_length": "Short",
     "eye_color": "Natural brown with faint amber grid pattern overlay (augmented left lens); left iris shows minor drift",
-    "skin_tone": "Warm mid-brown with golden undertones, deepening slightly at temples and jawline — the result of blended Sub-Saharan, South Asian, and Northern European ancestry creating depth and richness",
-    "complexion": "Five-day stubble in iron-grey, persistent across all seasons. Even complexion with no visible scarring. Forehead and around the eyes shows the wear of concentration — fine lines that suggest chronic focus. Facial structure reflects pan-global ancestry: broader cheekbones with subtle East Asian influence, balanced with West African warmth and Northern European angularity. Clean but not groomed; the appearance of someone who maintains standards without vanity.",
+    "skin_tone": "Warm golden-brown with honeyed undertones, slightly deeper at temples and jawline — the result of South Asian and East Asian dominance blended with Hispanic and Sub-Saharan warmth, creating luminous mid-to-deep brown complexion",
+    "complexion": "Five-day stubble in iron-grey, persistent across all seasons. Even complexion with no visible scarring. Forehead and around the eyes shows the wear of concentration — fine lines that suggest chronic focus. Facial structure reflects dominant South and East Asian ancestry: high, pronounced cheekbones with characteristic East Asian geometry, softened by South Asian fullness and Hispanic warmth, anchored by Sub-Saharan depth. Clean but not groomed; the appearance of someone who maintains standards without vanity.",
     "distinguishing_marks": [
       "Faint silvery scar tissue running 3cm along the underside of left forearm near wrist — old, precise, consistent with surgical intervention or careful blade work",
       "Augmentation port scar behind left ear, barely visible under close inspection — roughly 8mm diameter, healed smooth"
@@ -244,17 +227,56 @@
     "posture_movement": "Stillness is his default — minimal gesture, economical motion. Hands rest in lap or on counter surface. When he moves through the market, he navigates without apparent urgency, head tracking conversations and movement around him. Doesn't make eye contact unless necessary; when he does, it's deliberate. Turns to face people only partially, as if ready to pivot away.",
     "clothing_style": "Deliberately unremarkable: mid-grey merino layers, matte textiles, nothing with visible branding. Worn jacket in charcoal, practical pockets, no decoration. Shoes are functional and forgettable — could be construction worker, data courier, or archival technician. A scarf in neutral tone, wrapped once, used interchangeably for warmth or to obscure the lower face. The effect is studied nondescriptness — expensive enough to suggest competence, generic enough to resist memory."
   },
-  "image_prompt": "Zephyr Nwosu-Olofsson, compact mixed-heritage man 168cm, warm mid-brown skin with golden undertones, dark hair with premature grey swept back short, five-day iron-grey stubble, natural brown eyes with subtle amber grid augmentation in left iris showing minor drift, fine concentration lines around eyes, economical posture at rest, hands relaxed, wearing layered mid-grey merino and charcoal jacket, neutral-toned scarf draped once, functional dark shoes, minimal visible augmentation, studied nondescript appearance, cyberpunk 2200s Great Lakes Metropolitan setting, dimly lit market or data den, still and deliberate presence, ready to pivot, no eye contact, moody atmospheric lighting, photorealistic, intimate portraiture, --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Zephyr Hernández-Olofsson, 168cm compact build, warm golden-brown skin with honeyed undertones, high East Asian cheekbones softened by South Asian fullness, five-day iron-grey stubble, dark brown hair with grey threading swept back short, left eye with subtle amber augmented grid pattern and slight inward drift, natural brown right eye, faint silvery scar on underside of left forearm, augmentation port scar behind left ear barely visible, minimal expression, deliberate stillness, wearing mid-grey merino layers under charcoal jacket with practical pockets, neutral grey scarf wrapped once, functional forgettable shoes, nondescript aesthetic suggesting competence and erasure, standing partially turned as if ready to pivot, dim market lighting catching the amber grid in left eye, shallow depth of field, cinematic, moody and restrained, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.5,
-    "Northern European": 22.0,
-    "Hispanic/Latin American": 12.6,
-    "South Asian": 12.1,
-    "East Asian": 9.2,
-    "Eastern European": 7.6
+    "South Asian": 31.8,
+    "Hispanic/Latin American": 27.2,
+    "East Asian": 23.5,
+    "Eastern European": 8.9,
+    "Sub-Saharan African": 7.5,
+    "Southeast Asian": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 15.3,
+        "Bengali": 16.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 22.4,
+        "Guatemalan": 4.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 17.9,
+        "Sichuanese": 5.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 8.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 6.7
+      },
+      "East African": {
+        "Somali": 0.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Waray": 0.7,
+        "Bicolano": 0.4
+      }
+    }
+  }
 }

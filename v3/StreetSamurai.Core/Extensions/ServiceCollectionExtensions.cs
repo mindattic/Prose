@@ -247,6 +247,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ReputationTracker>();
         services.AddSingleton<ConsequenceEngine>();
 
+        // Milestone 2 story engine services
+        services.AddSingleton<DialogueService>();
+        services.AddSingleton<ArcTrackerService>();
+        services.AddSingleton<ContinuityValidatorService>();
+        services.AddSingleton<SuggestionEngineService>();
+
         return services;
     }
 }

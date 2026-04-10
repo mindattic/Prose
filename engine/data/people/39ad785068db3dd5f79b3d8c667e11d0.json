@@ -1,7 +1,7 @@
 {
   "id": "39ad785068db3dd5f79b3d8c667e11d0",
   "type": "character",
-  "name": "Camila Adeyemi-Wójcik",
+  "name": "Sage Čabarkapa-Inthavong",
   "aliases": [
     "Auntie Flour",
     "The Baker",
@@ -13,8 +13,8 @@
   "role": "Baker. Makes real bread from real flour in a brick oven she built with her hands.",
   "age": 63,
   "status": "active",
-  "location": "Block 9, The Shelf — a ground-floor unit converted into a bakery with a brick oven built into the wall",
-  "description": "The Bread Baker of Block 9 is 63 years old. Nobody uses her real name anymore, not even her. She is Auntie Flour, or The Baker, or Block 9, depending on who is speaking and how hungry they are. She is short, broad, with hands that look like they were designed for kneading dough — thick-fingered, strong, permanently dusted with flour that has worked into the creases of her skin and will not wash out and she has stopped trying.\n\nShe bakes real bread. From real flour. In a brick oven she built herself over three months from salvaged bricks and clay she mixed by hand. The oven takes up a third of her apartment. She does not care.\n\nThe flour comes from rooftop wheat grown by Plot 17 — the agricultural bot that manages the Block 9 garden cooperative. The wheat is ground by hand in a stone mill she traded six months of bread to acquire. The yeast is a sourdough culture she has maintained for 11 years. She calls it \"the old man.\"\n\nShe bakes 40 loaves a day. She loses money on every single one. The flour costs more than she charges. The fuel for the oven costs more than she charges. Her time costs more than she charges. She has a four-month waiting list. She does not take advance payment. You show up on your day, you pay what she asks, you take your bread.\n\nPeople cry when they eat it. Not because it is the best bread — it is good bread, honest bread, but it is not technically extraordinary. People cry because a human being made it with her hands. In a world of nutrient paste and synthesized carbohydrates and food printers that can replicate any flavor, a woman got up at 4 AM and mixed flour and water and salt and the old man, and she kneaded it, and she shaped it, and she put it in an oven she built, and she waited, and she pulled it out, and it is bread. A person made this. A person's hands were in this. That is why people cry.",
+  "location": "Block 9, The Shelf — a ground-floor unit converted into a bakery with a brick oven built into the wall, near Ashland and Division",
+  "description": "Sage Čabarkapa-Inthavong is 63 years old. Nobody uses her real name anymore, not even her. She is Auntie Flour, or The Baker, or Block 9, depending on who is speaking and how hungry they are. She is short, broad, with hands that look like they were designed for kneading dough — thick-fingered, strong, permanently dusted with flour that has worked into the creases of her skin and will not wash out and she has stopped trying.\n\nShe bakes real bread. From real flour. In a brick oven she built herself over three months from salvaged bricks and clay she mixed by hand. The oven takes up a third of her apartment. She does not care.\n\nThe flour comes from rooftop wheat grown by Plot 17 — the agricultural bot that manages the Block 9 garden cooperative. The wheat is ground by hand in a stone mill she traded six months of bread to acquire. The yeast is a sourdough culture she has maintained for 11 years. She calls it \"the old man.\"\n\nShe bakes 40 loaves a day. She loses money on every single one. The flour costs more than she charges. The fuel for the oven costs more than she charges. Her time costs more than she charges. She has a four-month waiting list. She does not take advance payment. You show up on your day, you pay what she asks, you take your bread.\n\nPeople cry when they eat it. Not because it is the best bread — it is good bread, honest bread, but it is not technically extraordinary. People cry because a human being made it with her hands. In a world of nutrient paste and synthesized carbohydrates and food printers that can replicate any flavor, a woman got up at 4 AM and mixed flour and water and salt and the old man, and she kneaded it, and she shaped it, and she put it in an oven she built, and she waited, and she pulled it out, and it is bread. A person made this. A person's hands were in this. That is why people cry.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -188,32 +188,20 @@
   "carried_weapons": [],
   "registered_firearms": [],
   "related_entities": [
-    "Plot 17",
-    "Block 9 Rooftop Garden Cooperative",
-    "Emile Nakamura-Osei",
-    "The Shelf",
-    "Adaeze Volkov-Tuilagi",
-    "Blessed Nkemdirim",
-    "Brecken Yılmaz-Osei",
-    "Cinderblock Ai",
-    "Dae-jung Seo",
-    "Florentiu Sagna-Wrzesniewski",
-    "Glenville Sound",
-    "Iowan Behemoth — 'Palisade'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obinna Ferhat-Tuilagi",
-    "Riverbottom",
-    "Rodney Sisk",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Bread Baker",
     "The Brick Oven",
+    "Cinderblock Ai",
+    "The Shelf",
+    "Resonant Microwave Denial System RMDS-4 'Crowdbreaker'",
+    "Plot 17",
+    "Honest Burger",
     "The Pure Hand",
-    "The Slagshore"
+    "The Paste Bar",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Clay"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multi-continental blend: 38.4% Sub-Saharan African (dominant), 26.7% Hispanic/Latin American, 16.1% Eastern European, 8% Southeast Asian, 5.9% Northern European, 4.9% South Asian. Phenotype reflects rich admixture—warm deep brown skin with subtle golden and reddish undertones from the Latin American and Northern European ancestry, bone structure showing the broad cheekbones and defined features from West African heritage, with secondary definition from Eastern European and Southeast Asian lines.",
+    "heritage": "Eastern European-Southeast Asian blend with Pacific Islander and South Asian ancestry: 51.6% Eastern European (dominant), 25.3% Southeast Asian, 12% Pacific Islander, 10.9% South Asian, 0.2% Sub-Saharan African. Phenotype reflects this primary mix—warm medium-deep brown skin with golden and olive undertones from the Southeast Asian and Pacific Islander heritage, bone structure showing defined angular cheekbones characteristic of Eastern European ancestry, with secondary facial breadth from Pacific Islander and Southeast Asian lines. The blend creates a distinctive phenotype: the structural angularity of Eastern Europe softened and warmed by the golden undertones and fuller features of Southeast Asian and Pacific Islander ancestry.",
     "height_cm": 157,
     "weight_kg": 78,
     "build": "Broad, compact, densely muscled through the shoulders and core. Decades of kneading and physical labor have built functional strength rather than appearance—no wasted frame, everything compressed and purposeful.",
@@ -221,8 +209,8 @@
     "hair_style": "Pulled back in a thick, practical braid or wrapped in a cloth. Always secured. Always out of the way.",
     "hair_length": "Medium (shoulder-length when unbound)",
     "eye_color": "Dark brown, warm, slightly creased at the corners",
-    "skin_tone": "Deep warm brown with golden and subtle reddish undertones, weathered by heat from the oven and age. The warmth reflects her blended ancestry—the richness of Sub-Saharan African base with the golden tones from Latin American and Northern European heritage.",
-    "complexion": "Lined face—forehead, around eyes, bracketing the mouth. Laugh lines deeper than worry lines. Skin has the texture of someone who has spent 11 years standing in front of a brick oven; not damaged, but seasoned. Flour dust permanently embedded in the creases of her face, particularly around her nose and temples, visible even after washing. Broad, defined cheekbones characteristic of West African heritage, with slight angular definition from Eastern European ancestry.",
+    "skin_tone": "Medium-deep warm brown with golden and olive undertones, weathered by heat from the oven and age. The warmth and depth reflect her blended ancestry—the golden richness of Southeast Asian and Pacific Islander heritage layered beneath the angular structure of Eastern European heritage.",
+    "complexion": "Lined face—forehead, around eyes, bracketing the mouth. Laugh lines deeper than worry lines. Skin has the texture of someone who has spent 11 years standing in front of a brick oven; not damaged, but seasoned. Flour dust permanently embedded in the creases of her face, particularly around her nose and temples, visible even after washing. Defined angular cheekbones characteristic of Eastern European ancestry, with subtle broader facial structure from Southeast Asian and Pacific Islander ancestry, creating a distinctive blended phenotype.",
     "distinguishing_marks": [
       "Calluses on both palms and all ten fingers, thick and silvered from decades of kneading dough",
       "Faint burn scars on the inside of both forearms (splashes from early oven experiments, healed long ago)",
@@ -233,17 +221,57 @@
     "posture_movement": "Moves with economical precision—no wasted motion. Slight forward lean from decades of tending the oven. Hands gesture while speaking, flour dust trailing from her fingers. When still, she seems coiled, ready to move. When moving, she moves with purpose and balance. Walks with the careful solidity of someone used to standing for 16 hours a day.",
     "clothing_style": "Tier 4 practical. Heavy canvas apron, flour-stained white, always worn. Underneath: thermal base layer (dark blue or black, functional) and a loose linen shirt or sweater in neutral tones—grays, creams, soft browns. All clothing shows honest wear and repeated washing. She owns five aprons; they rotate through the wash cycle. Bare feet in her bakery space (for balance on the tiled floor), or practical canvas slip-ons when she leaves Block 9. No jewelry except a simple copper ring on her left index finger, worn smooth from 40+ years of wear. No decoration. No chrome. No statement. Everything is functional or beloved."
   },
-  "image_prompt": "Camila Adeyemi-Wójcik, 157cm tall, compact densely-muscled frame, deep warm brown skin with golden undertones, weathered by heat and age. Broad defined cheekbones, dark brown warm eyes creased at corners, steel-gray hair braided back practically. Lined face with laugh lines deeper than worry lines, flour dust permanently embedded in facial creases. Flour-stained white canvas apron over dark thermal base and loose linen shirt in neutral tones, honest wear throughout. Calloused hands with silvered calluses from decades of dough kneading, faint healed burn scars on forearms, long thin scar on left wrist. Simple worn copper ring on left index finger. Standing in warm brick oven glow, 2226 cyberpunk bakery Block 9, economical posture with slight forward lean, hands gesturing with flour dust trailing. Unaugmented. No chrome. Functional. Purposeful. Warm overhead bakery lighting. Bare feet on tiled floor. --ar 2:3 --v 6",
+  "image_prompt": "Sage Čabarkapa-Inthavong, 157cm tall, compact and densely muscled, medium-deep warm brown skin with golden and olive undertones, defined angular cheekbones, dark warm brown eyes creased at corners, steel gray hair with black undertones pulled back in thick practical braid, lined face weathered by oven heat, flour dust permanently embedded in facial creases and palms, silvered calluses on all fingers, faint burn scars on forearms, thin scar along left wrist, simple copper ring worn smooth on left index finger. Wearing flour-stained white canvas apron over dark thermal base layer and loose cream linen shirt, bare feet on tiled bakery floor or canvas slip-ons outside. Moving with economical precision, slight forward lean, coiled readiness, hands gesturing with flour dust trailing. GLMZ, Great Lakes Metropolitan Zone, Block 9 bakery interior with brick oven glow, warm tungsten lighting casting shadows on her weathered face, no augmentations, unaugmented hands as her technology, honest wear visible on all clothing, functional aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 38.4,
-    "Hispanic/Latin American": 26.7,
-    "Eastern European": 16.1,
-    "Southeast Asian": 8.0,
-    "Northern European": 5.9,
-    "South Asian": 4.9
+    "Eastern European": 51.6,
+    "Southeast Asian": 25.3,
+    "Pacific Islander": 12,
+    "South Asian": 10.9,
+    "Sub-Saharan African": 0.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 32.2,
+        "Czech": 19.4
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 17.1
+      },
+      "Thai": {
+        "Thai": 8.2
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 2.8,
+        "Palauan": 2
+      },
+      "Melanesian": {
+        "Fijian": 5.6,
+        "Ni-Vanuatu": 1.6
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 2.3,
+        "Kannada": 2.6
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 0.1,
+        "South African": 0.1
+      }
+    }
+  }
 }

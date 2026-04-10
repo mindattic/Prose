@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69e7905b003070d523b3f96",
   "type": "character",
-  "name": "Rune Kowalczyk",
+  "name": "Rune Delgado",
   "aliases": [
     "Prissy",
     "The Needle"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, shop front on Czerny Row beneath the Ferrogate overpass, near Ashland and Chicago Ave",
-  "description": "Priscila is a broad-shouldered woman whose hands tell her whole biography — thick calluses on her fingertips, ink stains in the whorls of her thumb, and a faint chemical burn scar along her left palm from an incident with synth-dye she doesn't discuss. Her hair is silver-streaked black, worn in a tight bun stabbed through with two long needles she uses as both tools and weapons of emphasis, jabbing the air when she makes a point. Her skin is deep brown and she has the mild bioluminescent pattern along her clavicle and shoulders — a pale amber tracery she got at forty as a birthday gift to herself, though she admits it's harder to see now that her skin has 'settled,' as she calls it.\n\nShe speaks plainly and fast, with a West African lilt layered under a flat Midwestern vowel she picked up from forty years in the Enclave. She is not warm exactly, but she is fair — customers who come in broke and come back with money find she remembers. She hoards thread colors obsessively, labeling them with her own taxonomy: 'lake green,' 'rust that means something,' 'the blue they stopped making.' She prays to the ELF that lives in her industrial sewing machine every morning, leaving a small data chip of her stitch-count logs as offering.",
+  "description": "Rune Delgado is a broad-shouldered woman whose hands tell her whole biography — thick calluses on her fingertips, ink stains in the whorls of her thumb, and a faint chemical burn scar along her left palm from an incident with synth-dye she doesn't discuss. Her hair is silver-streaked black, worn in a tight bun stabbed through with two long needles she uses as both tools and weapons of emphasis, jabbing the air when she makes a point. Her skin is deep brown and she has the mild bioluminescent pattern along her clavicle and shoulders — a pale amber tracery she got at forty as a birthday gift to herself, though she admits it's harder to see now that her skin has 'settled,' as she calls it.\n\nShe speaks plainly and fast, with a West African lilt layered under a flat Midwestern vowel she picked up from forty years in the Enclave. She is not warm exactly, but she is fair — customers who come in broke and come back with money find she remembers. She hoards thread colors obsessively, labeling them with her own taxonomy: 'lake green,' 'rust that means something,' 'the blue they stopped making.' She prays to the ELF that lives in her industrial sewing machine every morning, leaving a small data chip of her stitch-count logs as offering.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -169,7 +169,7 @@
     "Nostalgic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,37 +237,15 @@
     "Ferrogate Transit",
     "Lazarus LP-3 'Clinic Spider'",
     "Stratum",
-    "The Pure Hand",
-    "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pale Mile",
-    "Rust",
     "Chicago",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Lebedev-Tutu",
-    "Altan Tanaka-Frimpong",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Dzemal Acholonu-Patagiri",
-    "Emeka Johansson-Orozco",
-    "Gauss Flechette Repeater GFR-3 'Needlerain'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Marrowvault Cryogenics",
-    "Nkechi Alvarado-Ostrowski",
-    "Nnamdi Ostrowski-Faletolu",
-    "Pikasso Wemba-Þórðarson",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Roshani Mvula-Atencio",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore ClearCourse Addiction Suppressor",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Silver",
+    "The Pure Hand",
+    "Palm Leaf",
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Eastern European and Sub-Saharan African with significant Southeast Asian, Middle Eastern, and Northern European ancestry — a complex diaspora blend resulting in warm-toned deep brown skin with subtle golden undertones, angular facial structure showing Eastern European bone prominence, and dark hair with natural silvering",
+    "heritage": "Predominantly Hispanic/Latin American (49.3%) with significant South Asian (25.6%) and Northern European (17.3%) ancestry, plus smaller contributions from Central Asian (5.7%) and Southeast Asian (2.1%) heritage — a rich Ubiquitous Diaspora blend creating warm golden-brown skin with olive and amber undertones, balanced facial geometry where South Asian cheekbone prominence softens Northern European angularity, and naturally dark hair with silver streaking",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and sturdy, with thick musculature in her forearms and upper back from decades of hand-sewing and machine work. Not heavy, but densely packed — the build of someone who has spent her life pulling thread tight.",
@@ -275,8 +253,8 @@
     "hair_style": "Worn in a tight, functional bun secured with two long steel sewing needles used as pins",
     "hair_length": "Medium (when released, falls to mid-shoulder)",
     "eye_color": "Dark brown, sharp and observant",
-    "skin_tone": "Deep warm brown with golden undertones, blended ancestry creating richly complex coloration; weathered by age and studio lighting, showing deeper freckling across nose and cheekbones",
-    "complexion": "Lined face that shows her age without apology; pronounced crow's feet from squinting at fine detail work; creases around her mouth from decades of speaking plainly. High, angular cheekbones typical of Eastern European heritage softened by the broader facial structure of Sub-Saharan ancestry. Skin texture shows minor sun damage on her forearms. Hands are the focal point — thick calluses on fingertips, chemical burn scar along left palm (pale, webbed tissue), ink stains in thumb whorls that never fully wash out.",
+    "skin_tone": "Warm golden-brown with olive and amber undertones from the harmonious blend of Hispanic/Latin American majority ancestry with South Asian and Northern European secondary contributions; weathered by age and studio lighting, showing deeper freckling across nose and cheekbones with minor sun damage on forearms",
+    "complexion": "Lined face that shows her age without apology; pronounced crow's feet from squinting at fine detail work; creases around her mouth from decades of speaking plainly. Cheekbones display the balanced blend of South Asian fullness with Northern European definition, set against the warm golden-brown complexion characteristic of her primary Hispanic/Latin American heritage. Skin texture shows minor sun damage on her forearms and the patina of age. Hands are the focal point — thick calluses on fingertips, chemical burn scar along left palm (pale, webbed tissue), ink stains in thumb whorls that never fully wash out.",
     "visible_augmentations": "Faint amber bioluminescent tracery visible along clavicles and shoulders when lighting is indirect or dim — appears as delicate, branching lines. Subtle mechanical whir in both hands when she moves — stabilizer servos in knuckles and wrist joints, visible only as slight rigidity in finger articulation and the occasional metallic click when joints lock for precision work. No visible external ports or chrome.",
     "posture_movement": "Stands and sits with perfect spinal alignment from years of bench work — rarely slouches. Moves efficiently and deliberately, no wasted motion. Hands move with precision even at rest; she fidgets with thread or needles, constantly testing tension. When speaking, she jabs the air with her needles for emphasis, a habit so ingrained it's become gesture-language. Her gait is steady and slightly stiff in the hips — age and long hours.",
     "clothing_style": "Tier 3 working-class practical: fitted indigo work apron over grey or black long-sleeved shirts (sleeves always rolled to mid-forearm despite the cold, exposing her scarred hands and augmented shoulders). Loose grey trousers with deep pockets full of thread spools, measuring tape, and loose needles. Worn leather slip-ons with good arch support. A heavy wool cardigan in charcoal or dark green for the walk to and from the shop. No jewelry except a plain band on her right ring finger — she threads a new one through it every few years when the old wears through. Her apron pockets are worn at specific points where she habitually reaches.",
@@ -287,17 +265,70 @@
       "Permanent ink staining in the whorls of both thumbs and two fingers of right hand from years of marking fabric"
     ]
   },
-  "image_prompt": "A 168cm woman with deep warm brown skin and golden undertones in her 60s, standing in a textile studio workshop lit by soft amber overhead lighting. She has black hair streaked with silver, pulled into a tight functional bun secured with two steel sewing needles. Sharp dark brown eyes, lined face with pronounced crow's feet, high angular cheekbones blended with broader Sub-Saharan features. Her forearms are muscular and scarred; left palm shows distinctive pale webbed chemical burn scar. Wearing a fitted indigo work apron over a black long-sleeved shirt with rolled-up sleeves, exposing subtle amber bioluminescent tracery patterns running along both clavicles and shoulders. Grey trousers with deep worn pockets. Worn leather slip-ons. Heavy charcoal wool cardigan draped nearby. Her hands show thick calluses, ink stains, and mechanical precision as she holds steel needles. Standing with perfect posture, hands moving with practiced precision. Dim studio lighting catches the faint glow of her shoulder augmentation. Cyberpunk 2226, GLMZ textile district, utilitarian professional. --ar 2:3 --v 6",
+  "image_prompt": "Rune Delgado, 168cm tall broad-shouldered woman with warm golden-brown skin and olive undertones, sharp dark brown eyes lined by decades of detail work, black hair with silver streaking pinned in bun with steel needles. Warm-toned complexion with South Asian cheekbone fullness balanced by Northern European definition, freckling across nose and cheekbones, lined face showing her age. Rolled-up grey long-sleeved shirt exposing scarred hands with visible calluses and pale webbed chemical burn scar on left palm, permanent ink stains on thumbs. Indigo work apron over grey trousers, worn leather slip-ons. Faint amber bioluminescent tracery visible along clavicles and shoulders, subtle mechanical precision in hand movements, standing with perfect posture in a small GLMZ textile studio, warm studio lighting catching the lines of her face and the scarred detail work of her hands, contemplative and focused, Tier 3 working-class aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 27.7,
-    "Sub-Saharan African": 26.5,
-    "Southeast Asian": 18.6,
-    "Middle Eastern": 14.5,
-    "Northern European": 8.8,
-    "Central Asian": 3.9
+    "Hispanic/Latin American": 49.3,
+    "South Asian": 25.6,
+    "Northern European": 17.3,
+    "Central Asian": 5.7,
+    "Southeast Asian": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 30.7
+      },
+      "Central American": {
+        "Costa Rican": 2.9,
+        "Salvadoran": 2.3
+      },
+      "Mexican": {
+        "Mexican": 13.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 3.8
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.5
+      },
+      "Indian": {
+        "Tamil": 13.3,
+        "Bengali": 3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 9.6
+      },
+      "Scandinavian": {
+        "Finnish": 6.2
+      },
+      "Germanic": {
+        "German": 1.5
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 5.1,
+        "Tajik": 0.6
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 1
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.5
+      },
+      "Laotian": {
+        "Laotian": 0.6
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7287608a31e06709a00538b",
   "type": "character",
-  "name": "Aponi Migizi-Strömqvist-Lindström",
+  "name": "Rajan Popescu-Strömqvist-Petrović",
   "aliases": [
     "Mama Yewande",
     "The Professor"
@@ -13,7 +13,7 @@
   "age": 72,
   "status": "active",
   "location": "Montclare Quiet, Crossfield Residential Block, Apartment 12, near Milwaukee and Damen",
-  "description": "Yewande is a solidly built woman who moves through the world with the particular velocity of someone who has been managing too many things for too long and has stopped expecting anyone else to help. Her skin is warm brown, her natural hair grown out in a large grey-streaked afro that she pins up for practical reasons and lets down when she is at home with the children. She wears reading glasses she has repaired with printed components at least four times — new ones would be Φ40 she does not have. Her one cosmetic modification is color-shifting hair panels at her temples, installed decades ago in a deep red that cycles slowly to amber; she keeps them because her granddaughter loves the colors and asks to watch them change.\n\nYewande taught history and civics at Montclare Secondary for thirty-one years. She was good at it in the specific way that means students remember her fifteen years later and attribute their ability to think clearly to something she said. She retired at sixty-two expecting a quiet ten years. Her daughter died in a transit accident when her daughter's children were four and six; Yewande took them in without discussion. They are now ten and twelve, and she is running a household of three on a teacher's pension and the UBC stipend and the very occasional tutoring session when she can find one. She does this without complaint, but she is tired in a bone-deep way that she does not fully acknowledge to herself, and she is privately terrified of what happens to the children if something happens to her.",
+  "description": "Rajan Popescu-Strömqvist-Petrović is a solidly built woman who moves through the world with the particular velocity of someone who has been managing too many things for too long and has stopped expecting anyone else to help. Her skin is warm brown, her natural hair grown out in a large grey-streaked afro that she pins up for practical reasons and lets down when she is at home with the children. She wears reading glasses she has repaired with printed components at least four times — new ones would be Φ40 she does not have. Her one cosmetic modification is color-shifting hair panels at her temples, installed decades ago in a deep red that cycles slowly to amber; she keeps them because her granddaughter loves the colors and asks to watch them change.\n\nRajan Popescu-Strömqvist-Petrović taught history and civics at Montclare Secondary for thirty-one years. She was good at it in the specific way that means students remember her fifteen years later and attribute their ability to think clearly to something she said. She retired at sixty-two expecting a quiet ten years. Her daughter died in a transit accident when her daughter's children were four and six; Rajan Popescu-Strömqvist-Petrović took them in without discussion. They are now ten and twelve, and she is running a household of three on a teacher's pension and the UBC stipend and the very occasional tutoring session when she can find one. She does this without complaint, but she is tired in a bone-deep way that she does not fully acknowledge to herself, and she is privately terrified of what happens to the children if something happens to her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -171,7 +171,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,25 +235,13 @@
   "related_entities": [
     "Montclare Quiet",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Accidental",
     "Tessera TAR-12 'Consensus'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Ambassador Silk",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Idris Forsberg-Quaye",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Solina Barreto-Kiptoo",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Open Syllabus"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Indigenous American (Anishinaabe/Great Lakes region) with East Asian and Northern European ancestry; strong cheekbones and facial structure reflecting Indigenous heritage, warm medium-brown skin with subtle golden undertones from the East Asian and Northern European admixture",
+    "heritage": "Kaleidoscopic diaspora ancestry: Eastern European (30.6%), South Asian (30.5%), Sub-Saharan African (23.4%), Northern European (13%), with traces of Hispanic/Latin American (2.5%). Features reflect this complex multilayered blend—warm deep brown skin with golden and olive undertones from the convergence of South Asian, Eastern European, and African ancestry; strong facial structure with prominent cheekbones characteristic of Eastern European and Sub-Saharan African heritage; subtle eye shape and facial geometry suggesting South Asian heritage; natural texture and depth to features from this rich genetic composition",
     "height_cm": 165,
     "weight_kg": 78,
     "build": "Solidly built, with the muscular softness of someone who has carried children and responsibility for decades; strong shoulders and core from years of standing and managing, no visible loss of strength despite age",
@@ -261,8 +249,8 @@
     "hair_style": "Worn natural in a large afro, typically pinned up during the day for practicality; let down at home",
     "hair_length": "Long (shoulder-length when loose)",
     "eye_color": "Deep brown, sharp and observant",
-    "skin_tone": "Warm medium brown with golden undertones, reflecting the blended ancestry of Indigenous American, East Asian, and Northern European heritage",
-    "complexion": "Lined face that reads as kind rather than worn; deep smile lines around eyes and mouth; skin well-maintained but not pampered; slightly higher cheekbones and subtle eye shape reflecting East Asian ancestry; reading glasses with visible repaired printed components at the bridge",
+    "skin_tone": "Warm deep brown with golden and olive undertones, reflecting the complex blend of South Asian, Eastern European, Sub-Saharan African, and Northern European ancestry",
+    "complexion": "Lined face that reads as kind rather than worn; deep smile lines around eyes and mouth; skin well-maintained but not pampered; prominent cheekbones with facial structure reflecting Eastern European and African heritage; reading glasses with visible repaired printed components at the bridge",
     "visible_augmentations": "Color-shifting hair panels at temples (visible when hair is pulled back or in certain light, deep red transitioning to amber in slow cycles); reading glasses with 3D-printed repair components visible at bridge and hinge",
     "distinguishing_marks": [
       "Color-shifting hair panel implants at both temples, cosmetic geneware installed in 2168, deep red cycling slowly to amber",
@@ -272,14 +260,69 @@
     "posture_movement": "Moves with purposeful efficiency—no wasted motion, economy of gesture developed over decades of classroom management and household logistics. Stands straight despite fatigue. When still, shoulders carry slight tension of constant vigilance. Walks with the particular gait of someone accustomed to being in motion.",
     "clothing_style": "Tier 3-4 practical: well-maintained but affordable clothing, favoring comfort and durability over fashion. Typically wears simple cotton blouses or cardigans over practical trousers or long skirts; flat shoes for walking the neighborhood. A single piece of jewelry—a thin bracelet that belonged to her daughter. Clothes are clean and pressed but show signs of modest wear. No status markers; grooming is functional rather than aesthetic."
   },
-  "image_prompt": "Aponi Migizi-Strömqvist-Lindström, 165cm tall, Indigenous American heritage with East Asian and Northern European ancestry, warm medium-brown skin with golden undertones, sharp cheekbones, deep brown observant eyes. Natural grey and dark brown hair in a large afro, pinned up during day. Color-shifting hair panel implants at temples cycling deep red to amber. Reading glasses with visible 3D-printed repairs. Kind lined face with deep smile lines, strong shoulders and solid build from decades of responsibility. Wearing practical cotton cardigan and long skirt, flat shoes, thin bracelet from daughter. Standing in home interior or neighborhood street, purposeful posture with economy of movement. Soft warm lighting, cyberpunk 2226 Great Lakes Metropolitan Zone setting, functional rather than fashionable, no status markers, well-maintained but worn clothing. --ar 2:3 --v 6",
+  "image_prompt": "Rajan Popescu-Strömqvist-Petrović, 165cm tall, warm deep brown skin with golden undertones, prominent cheekbones reflecting Eastern European and African heritage. Natural grey-streaked dark brown afro worn loose to shoulder-length at home. Deep brown observant eyes with fine smile lines; reading glasses with visible 3D-printed repair components. Age-worn kind face. Color-shifting hair panels at temples cycling deep red to amber. Wearing practical cotton cardigan and long skirt, flat shoes. Standing in modest home interior with purpose and quiet strength, posture straight despite age. Soft warm lighting. GLMZ, Great Lakes Metropolitan Zone aesthetic. Realistic, dignified, lived-in. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 71.5,
-    "East Asian": 17.5,
-    "Northern European": 11.0
+    "Eastern European": 30.6,
+    "South Asian": 30.5,
+    "Sub-Saharan African": 23.4,
+    "Northern European": 13,
+    "Hispanic/Latin American": 2.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 11.5,
+        "Polish": 4.9
+      },
+      "Slavic East": {
+        "Russian": 3.4
+      },
+      "Slavic South": {
+        "Bulgarian": 10.8
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 7.2
+      },
+      "Nepali": {
+        "Nepali": 20.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.6,
+        "Sinhalese": 1.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 6.2,
+        "South African": 7.3
+      },
+      "East African": {
+        "Somali": 4.1
+      },
+      "West African": {
+        "Ivorian": 5.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 10.6
+      },
+      "Germanic": {
+        "Dutch": 1.6,
+        "German": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 1.8,
+        "Colombian": 0.7
+      }
+    }
+  }
 }

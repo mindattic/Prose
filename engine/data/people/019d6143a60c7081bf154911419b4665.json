@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60c7081bf154911419b4665",
   "type": "character",
-  "name": "Solveig Owusu",
+  "name": "Imani Owusu",
   "aliases": [
     "Easy",
     "the Needle"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Shelf, a cramped pharmacy wedged between a noodle shop and a data-shrine kiosk called Careful Chemistry, near Ashland and Division",
-  "description": "Ezio is young for the weight he carries — not literally, he is slight and fine-featured, with warm brown skin and close-cropped natural hair he sometimes dyes in patterns he forgets to maintain, so he often walks around with half a geometric design fading out above his ear. He has cat ears (genetic mod, a muted tawny color) that he got at seventeen because everyone was getting them and which have since become simply part of his face. They are expressive in ways he can't always control and which betray him in negotiations. He moves quickly and quietly, the particular efficiency of someone working in a very small space.\n\nHe is the most educated person most of his clients have ever interacted with and he wears that knowledge carefully, always aware of how easily expertise becomes condescension. He studied pharmacology on a Tessera corporate scholarship, finished in the top ten percent, and then declined his Tessera placement offer — an act of financial self-immolation that his family still hasn't fully forgiven. He came back to the Shelf because this is where he grew up and this is where people couldn't afford what they needed, and those two facts seemed sufficient. He is earnest about this in a way that occasionally makes people uncomfortable, because genuine selflessness is disorienting in GLMZ. He is also, privately, somewhat overwhelmed.",
+  "description": "Imani Owusu is young for the weight he carries — not literally, he is slight and fine-featured, with warm brown skin and close-cropped natural hair he sometimes dyes in patterns he forgets to maintain, so he often walks around with half a geometric design fading out above his ear. He has cat ears (genetic mod, a muted tawny color) that he got at seventeen because everyone was getting them and which have since become simply part of his face. They are expressive in ways he can't always control and which betray him in negotiations. He moves quickly and quietly, the particular efficiency of someone working in a very small space.\n\nHe is the most educated person most of his clients have ever interacted with and he wears that knowledge carefully, always aware of how easily expertise becomes condescension. He studied pharmacology on a Tessera corporate scholarship, finished in the top ten percent, and then declined his Tessera placement offer — an act of financial self-immolation that his family still hasn't fully forgiven. He came back to the Shelf because this is where he grew up and this is where people couldn't afford what they needed, and those two facts seemed sufficient. He is earnest about this in a way that occasionally makes people uncomfortable, because genuine selflessness is disorienting in GLMZ. He is also, privately, somewhat overwhelmed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -170,7 +170,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,31 +224,17 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Burden Clause",
     "WELLSPRING",
     "The Shelf",
-    "Tessera Corponation",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Aphelion",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
-    "Irontide Tidal Energy",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
     "Plot 17",
-    "Ringo PD-1 'Citizen'",
-    "Slagworks Industrial",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Undertow",
-    "Yuki Nwosu-Petrenko"
+    "Tessera Corponation",
+    "Aphelion",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: predominantly Sub-Saharan African (41.3%, particularly West African genetic markers), Northern European (26.3%), with significant Southeast Asian (15.1%), East Asian (7.3%), South Asian (5.5%), and Pacific Islander (4.5%) contributions. The genetic mix produces a unique phenotype that doesn't fit traditional regional categories.",
+    "heritage": "Complex diaspora ancestry: Middle Eastern (30.7%), Sub-Saharan African (27.9%), South Asian (27.7%), and Hispanic/Latin American (13.7%) genetic contributions. The blend produces a striking phenotype with warm golden-brown skin tones, refined bone structure reflecting African and South Asian ancestry, and subtle warm undertones from the Middle Eastern and Latin American heritage. The genetic mix creates a luminous quality that transcends traditional regional categories.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and fine-featured, lean without appearing frail; the build of someone who moves efficiently in confined spaces and forgets to eat regularly. Narrow shoulders, delicate wrists, minimal muscle definition but functional strength.",
@@ -256,8 +242,8 @@
     "hair_style": "Close-cropped, natural texture with asymmetrical dye work in various stages of fade-out",
     "hair_length": "Short",
     "eye_color": "Warm brown, natural",
-    "skin_tone": "Deep warm brown with subtle undertones reflecting the complex ancestry blend—warmer golden notes from West African and Southeast Asian heritage, with cooler undertones from Northern and East Asian ancestry creating an unusual luminous quality",
-    "complexion": "Clear, youthful face with fine bone structure reflecting the ancestral diversity: delicate cheekbones with subtle width, refined jawline, and minimal facial hair. The facial structure shows the elegant blending of African and Northern European bone architecture with softer Southeast and East Asian features. Maintains basic grooming but without vanity—hands often show dried medicinal residue or faint chemical stains from compounding work. Eyes carry a tired attentiveness, the look of someone who listens to people's pain regularly.",
+    "skin_tone": "Warm golden-brown with luminous undertones from the blended Middle Eastern, Sub-Saharan African, South Asian, and Hispanic/Latin American ancestry—creating an unusual radiant quality that seems to glow under certain lighting",
+    "complexion": "Clear, youthful face with fine bone structure reflecting ancestral diversity: prominent cheekbones with elegant width, refined jawline with subtle warm undertones, and minimal facial hair. The facial structure beautifully blends African and South Asian bone architecture with warm undertones from Middle Eastern and Latin American heritage. Maintains basic grooming but without vanity—hands often show dried medicinal residue or faint chemical stains from compounding work. Eyes carry a tired attentiveness, the look of someone who listens to people's pain regularly.",
     "distinguishing_marks": [
       "Genetic cat ears (muted tawny color with warm brown undertones, positioned slightly higher and more alert than human ears, with fine fur covering) — expressive and difficult to control, betraying emotion during negotiations.",
       "Small chemical burn scar on the webbing between right thumb and index finger, pale and faint from approximately five years prior.",
@@ -267,17 +253,55 @@
     "posture_movement": "Moves with quiet efficiency—the particular grace of someone accustomed to working in very small spaces without wasted motion. Leans forward when listening, creating an impression of genuine focus. Hands are frequently in motion (counting pills, gesturing while explaining medication interactions, fidgeting with compounding tools). Cat ears swivel and flatten with emotion he doesn't always recognize in himself: skepticism, concern, pleasure, embarrassment. His posture is open but his movements are self-contained.",
     "clothing_style": "Tier 4 practical with careful intentionality. White or pale grey lab coat (clean but with faint stains) worn over simple, well-fitted clothes—typically dark cargo pants with deep pockets and plain long-sleeve shirts in muted colors (black, charcoal, slate blue). Wears durable, quiet shoes suitable for standing 12+ hours. No jewelry or corpo insignia. Occasionally wears an old digital watch his mother gave him. Overall impression: someone who spent money on education and is now investing in reliability rather than status."
   },
-  "image_prompt": "Solveig Owusu, 168cm lean pharmaceutical specialist with deep warm brown skin and subtle luminous undertones, standing in a neon-lit 2226 GLMZ medical compound. Close-cropped black hair with fading muted blue geometric patterns, natural warm brown eyes with tired attentiveness. Most distinctly: expressive tawny genetic cat ears positioned high on head, currently alert and slightly forward. Wearing clean white lab coat over dark cargo pants and slate blue long-sleeve shirt, hands showing faint chemical stains from compounding work. Fine-featured face with delicate cheekbones, open posture, subtle faint bioluminescent pulse visible at inner left forearm under harsh clinical lighting. Efficient, self-contained movement caught mid-gesture. Cyberpunk 2226, biological augmentation aesthetic, clinical setting with holographic pharmaceutical displays in background, cool fluorescent and warm accent lighting --ar 2:3 --v 6",
+  "image_prompt": "Imani Owusu, a 168cm lean biomodified pharmacist in 2226 near-future megacity setting. Striking warm golden-brown skin with luminous undertones blending Middle Eastern, Sub-Saharan African, South Asian, and Latin American heritage. Expressive muted tawny genetic cat ears with fine fur, positioned alert on head. Close-cropped natural black hair with fading muted blue-green geometric patterns, asymmetrically styled. Warm brown eyes with tired attentiveness, refined bone structure with prominent cheekbones and elegant jawline. Faint chemical burn scar on right hand webbing, bioluminescent pulse visible at inner left forearm under lab lighting. Wearing clean white lab coat over dark muted-color long-sleeve shirt and dark cargo pants, durable shoes. Posture leans forward with genuine focus, hands in motion. No chrome augmentations, biological modifications only. Standing in small pharmacy compounding space with cool neon overhead lighting casting shadows across face, creating luminous skin glow. Mood: dedicated, slightly weary, emotionally present. Great Lakes Metropolitan Zone aesthetic, Tier 4 practical minimalism. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 41.3,
-    "Northern European": 26.3,
-    "Southeast Asian": 15.1,
-    "East Asian": 7.3,
-    "South Asian": 5.5,
-    "Pacific Islander": 4.5
+    "Middle Eastern": 30.7,
+    "Sub-Saharan African": 27.9,
+    "South Asian": 27.7,
+    "Hispanic/Latin American": 13.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 5,
+        "Jordanian": 11.1
+      },
+      "Kurdish": {
+        "Kurdish": 3.6
+      },
+      "Persian": {
+        "Iranian": 11
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 17.7
+      },
+      "Central African": {
+        "Gabonese": 10.2
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 11.1,
+        "Punjabi": 16.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 1.2,
+        "Brazilian": 0.3
+      },
+      "Central American": {
+        "Honduran": 2.6
+      },
+      "Mexican": {
+        "Mexican": 9.6
+      }
+    }
+  }
 }

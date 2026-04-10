@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65d781c8b0f151217457d5b",
   "type": "character",
-  "name": "Delta Thakur",
+  "name": "Delta Erikstad",
   "aliases": [
     "Mira",
     "the Night Nurse"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Narrows — fourth floor walk-up at Ironvein Cross Block 7, apartment 4F, near Armitage and Milwaukee",
-  "description": "Miroslava Toure-Ahtiainen occupies the strange position of being simultaneously the most essential and the most legally precarious person on her block. She is a compact woman with Finnish-Malian heritage — pale olive skin, dark eyes with the particular steadiness of someone trained to look at things that are unpleasant without flinching, close-cropped dark hair she bleaches copper at the tips. She lost her Axiom-affiliated nursing license six years ago in a dispute over billing fraud she reported rather than participated in, and has been operating without it ever since, a fact every person in the Narrows knows and nobody discusses with outsiders. Her apartment's second room has been converted: examination table, sterilization cabinet, a pharmaceutical cold-locker that she restocks through supply chains she has spent years building from salvage dealers, sympathetic Helix Biosystems mid-tier employees, and the occasional Axiom clinic discard.\n\nShe is tired in the structural sense — not temporarily but chronically, the kind of tired that has become load-bearing in her personality. She does not complain about it. She has a way of sitting across from a patient that makes them feel she has all the time in the world, which is technically a lie but functionally true because she has arranged her life so that the work is always the priority. She has a cat — a real one, no mods, orange — named Thiamine, after a vitamin deficiency she sees more than she should in the Narrows. The cat sits on the examination table and judges everyone equally.",
+  "description": "Delta Erikstad occupies the strange position of being simultaneously the most essential and the most legally precarious person on her block. She is a compact woman with Finnish-Malian heritage — pale olive skin, dark eyes with the particular steadiness of someone trained to look at things that are unpleasant without flinching, close-cropped dark hair she bleaches copper at the tips. She lost her Axiom-affiliated nursing license six years ago in a dispute over billing fraud she reported rather than participated in, and has been operating without it ever since, a fact every person in the Narrows knows and nobody discusses with outsiders. Her apartment's second room has been converted: examination table, sterilization cabinet, a pharmaceutical cold-locker that she restocks through supply chains she has spent years building from salvage dealers, sympathetic Helix Biosystems mid-tier employees, and the occasional Axiom clinic discard.\n\nShe is tired in the structural sense — not temporarily but chronically, the kind of tired that has become load-bearing in her personality. She does not complain about it. She has a way of sitting across from a patient that makes them feel she has all the time in the world, which is technically a lie but functionally true because she has arranged her life so that the work is always the priority. She has a cat — a real one, no mods, orange — named Thiamine, after a vitamin deficiency she sees more than she should in the Narrows. The cat sits on the examination table and judges everyone equally.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -176,7 +176,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,33 +242,11 @@
     "Ironvein",
     "The Gradient Compact",
     "Copper",
-    "The Pale Mile",
-    "The Milwaukee Core",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Brecken Yılmaz-Osei",
-    "Hamtramck Enclave",
-    "Irontide Tidal Energy",
-    "Isadora Vukić-Nambiar",
-    "Jitterbug",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Old Harbor",
-    "Patient Zero",
-    "Sustrel",
-    "The Narrows",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (40%), Hispanic/Latin American (29%), East Asian (20%), Southeast Asian (10%) — a striking polyglot ancestry creating warm golden-brown undertones with subtle complexity. The blend manifests in her cheekbone structure, eye shape, and skin depth.",
+    "heritage": "Northern European (43.7%), South Asian (34.5%), Hispanic/Latin American (10.6%), East Asian (5.8%), Southeast Asian (5.4%) — a striking polycultural blend creating warm golden-brown undertones with subtle complexity. The dominant Northern European and South Asian ancestry creates high, angular cheekbones balanced with broader facial proportions; East and Southeast Asian ancestry refines the eye shape and adds depth to the midface. Hispanic/Latin American heritage contributes warmth and definition to the jaw structure. The result is a face that reads as genuinely multicontinental, each ancestry visible yet seamlessly integrated.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and spare, almost sinewy — the build of someone who forgets to eat regularly and moves with efficient precision. Shoulders slightly forward from years of leaning over examination tables.",
@@ -276,8 +254,8 @@
     "hair_style": "Close-cropped, practical, asymmetrical fade on the left side where she tucks it behind her ear to access the left eye mod",
     "hair_length": "Short",
     "eye_color": "Dark brown (natural); left eye has a faint amber-gold luminescence from the diagnostic HUD overlay when active",
-    "skin_tone": "Warm golden-brown with subtle olive undertones — the complexion of blended South Asian, Hispanic, and East Asian heritage. Sun-kissed depth underneath, though currently sallow from chronic sleep deprivation.",
-    "complexion": "Prominent cheekbones with an angular quality that speaks to East and South Asian bone structure; narrow face with slightly broader jaw base from the Hispanic ancestry blend. Lines around the eyes and mouth from years of close focus work and low-level stress. Skin is clear but texture-worn; she does not prioritize skincare. Dark circles are permanent fixtures. No makeup.",
+    "skin_tone": "Warm golden-brown with olive undertones — the complexion of blended Northern European (cool blonde genetics showing as warmth in underlying tone) and South Asian (deeper melanin) with enriching notes from Hispanic/Latin American, East Asian, and Southeast Asian ancestry. Currently sallow from chronic sleep deprivation, with a sun-kissed depth that emerges when she actually sleeps.",
+    "complexion": "High, angular cheekbones with refined bone structure reflecting the interplay of Northern European angularity and South Asian broader proportions; narrow face with balanced jaw from the harmonious blend of all ancestry groups. The bridge of her nose shows subtle width characteristic of South Asian genetics, while eye area geometry bears East Asian refinement. Hispanic/Latin American heritage adds warmth to her jaw definition and overall skin undertone depth. Lines around the eyes and mouth from years of close focus work and low-level stress. Skin is clear but texture-worn; she does not prioritize skincare. Dark circles are permanent fixtures. No makeup.",
     "distinguishing_marks": [
       "Thin surgical scar running 3cm along her left temple from a circa-2220 procedure related to the HUD overlay installation",
       "Pale burn mark on the inside of her right forearm from a sterilization cabinet malfunction in 2223",
@@ -287,15 +265,67 @@
     "posture_movement": "She moves with economy and care, never wasting motion. When sitting with a patient, she settles completely still — not tense, just focused. When alone or walking between rooms, she moves like someone conserving energy for the next thing. Her gaze is direct and unsettling; she looks at things, not past them. She favors her left side slightly when standing for long periods.",
     "clothing_style": "Tier 4 practical — mostly dark, washable fabrics. A rotation of three or four medical scrub sets in navy and charcoal, worn under a gray linen overshirt with multiple pockets. Comfortable worn shoes (Helix-brand non-slip soles, salvaged from a clinic supply drop). A single piece of jewelry: a thin titanium band on her right ring finger, no inscription. In colder months, a threadbare wool sweater that has been mended multiple times. Everything is clean but nothing is new."
   },
-  "image_prompt": "Delta Thakur, mixed-heritage biomedic in cyberpunk 2226, compact 162cm frame with warm golden-brown skin and sharp angular cheekbones blending South Asian and East Asian features. Dark brown hair with copper tips, close-cropped asymmetrical fade. Left eye glowing faint amber from diagnostic HUD implant, faint surgical scar on left temple. Dark circles, sallow complexion from sleep deprivation. Wearing navy medical scrubs under gray linen overshirt with multiple pockets, worn Helix-brand shoes, thin titanium ring. Standing in a dim clinic examination room with cool blue-white medical lighting, perfectly still posture, direct gaze, economical movement. Clinical focus, exhausted precision. Cyberpunk medical aesthetic, worn but functional, intense concentration --ar 2:3 --v 6",
+  "image_prompt": "Delta Erikstad, 162cm tall, compact sinewy build, dark brown hair with copper bleached tips in close-cropped asymmetrical fade. Warm golden-brown skin with subtle olive undertones reflecting blended Northern European, South Asian, Hispanic, East and Southeast Asian heritage — high angular cheekbones with refined eye geometry, sallow from chronic sleep deprivation with permanent dark circles. Left eye glowing faint amber from active diagnostic HUD overlay, left pupil non-reactive. Surgical scar along left temple, old needle-track marks on inner elbows, pale burn mark on right forearm. Wearing navy medical scrubs under gray linen overshirt with multiple pockets, worn Helix-brand non-slip shoes, thin titanium ring on right ring finger. Direct unsettling gaze, completely still posture, moves with economical precision. GLMZ clinic interior, cool blue-white LED lighting, sitting perfectly motionless with patient, tension of focus without physical tension, the atmosphere of someone conserving energy, ultra-detailed facial features showing genuine multicontinental ancestry, medical fatigue, sci-fi diagnostic technology --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 40.1,
-    "Hispanic/Latin American": 29.2,
-    "East Asian": 20.3,
-    "Southeast Asian": 10.4
+    "Northern European": 43.7,
+    "South Asian": 34.5,
+    "Hispanic/Latin American": 10.6,
+    "East Asian": 5.8,
+    "Southeast Asian": 5.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 29.7
+      },
+      "British Isles": {
+        "Scottish": 14
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 12.8
+      },
+      "Pakistani": {
+        "Sindhi": 7.4,
+        "Punjabi Pakistani": 4.8
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 9.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 6.4
+      },
+      "South American": {
+        "Brazilian": 2.7
+      },
+      "Central American": {
+        "Salvadoran": 1,
+        "Nicaraguan": 0.5
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.7
+      },
+      "Japanese": {
+        "Japanese": 0.2
+      },
+      "Chinese": {
+        "Hakka": 1.4,
+        "Mandarin Northern": 0.5
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.4
+      }
+    }
+  }
 }

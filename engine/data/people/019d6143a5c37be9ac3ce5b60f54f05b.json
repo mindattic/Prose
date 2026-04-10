@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c37be9ac3ce5b60f54f05b",
   "type": "character",
-  "name": "Mika Erikstad-Szczypiński",
+  "name": "Mika Erikstad-Masoe",
   "aliases": [
     "Bint",
     "The Closer"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Bridgepoint, near Armitage and Milwaukee",
-  "description": "Bintou Skarsgård-Nakweti has the kind of face that has made a professional peace with itself — laugh lines earned, not resented, a slight asymmetry to her jaw from an old fracture improperly set in a clinic that has since been demolished. Her skin is a warm medium brown, her natural hair locs wrapped daily in a practiced spiral that she pins with a series of small copper rings, each one a different diameter. Her left forearm bears a pattern of raised scarification from a traditional ceremony on her mother's side — she is the only person in her family who continued the practice. She moves with the unhurried deliberateness of someone who long ago stopped needing to prove anything.\n\nShe has worked bounty compliance for seventeen years and describes the job with the matter-of-fact affect of a plumber describing pipe fittings. She brings people in. She does it legally, with documentation, on licensed warrants. She is not sentimental about it but she has rules: no minors, no medical emergencies untreated, no warrants that smell like private vendettas wearing legal paperwork. She has turned down more contracts than most operators accept. Her reputation for selectivity is itself a business asset.",
+  "description": "Mika Erikstad-Masoe has the kind of face that has made a professional peace with itself — laugh lines earned, not resented, a slight asymmetry to her jaw from an old fracture improperly set in a clinic that has since been demolished. Her skin is a warm medium brown, her natural hair locs wrapped daily in a practiced spiral that she pins with a series of small copper rings, each one a different diameter. Her left forearm bears a pattern of raised scarification from a traditional ceremony on her mother's side — she is the only person in her family who continued the practice. She moves with the unhurried deliberateness of someone who long ago stopped needing to prove anything.\n\nShe has worked bounty compliance for seventeen years and describes the job with the matter-of-fact affect of a plumber describing pipe fittings. She brings people in. She does it legally, with documentation, on licensed warrants. She is not sentimental about it but she has rules: no minors, no medical emergencies untreated, no warrants that smell like private vendettas wearing legal paperwork. She has turned down more contracts than most operators accept. Her reputation for selectivity is itself a business asset.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bridgepoint",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -252,35 +252,13 @@
   "related_entities": [
     "Bridgepoint",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Copper",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Dragan Petersen-Bah",
-    "GLMZ",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
-    "Ihaia Nystrom-Keita",
-    "Kwabena Ilyich Ferreira-Sattout",
-    "Lazarus Pharmaceutical Emetix-9 'Purge'",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nnenna Baluarte-Volkov",
     "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "The Ghost Ronin",
-    "The Pure Hand",
-    "The Wire Taps"
+    "Copper",
+    "Arcturus KS-7 'Nursery'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (44.1%) with significant Northern European (26.9%) and Eastern European (14.4%) ancestry, complemented by Middle Eastern (7.4%) and East Asian (7.2%) genetic contributions. Her phenotype reflects this complex diaspora blend: warm medium-brown skin with subtle undertones from her Middle Eastern and East Asian heritage, facial structure showing the broad cheekbones and defined bone geometry of African ancestry softened by Northern European features, eye shape and slight epicanthal fold hints reflecting her East Asian component.",
+    "heritage": "Kaleidoscopic diaspora blend: Southeast Asian (26.2%), North African (22.8%), Pacific Islander (16.1%), Eastern European (13.3%), Hispanic/Latin American (11.3%), and East Asian (10.3%). Her phenotype is a study in graceful genetic convergence—warm medium-brown skin with golden and olive undertones from the Southeast Asian and North African components creating subtle warmth across cheekbones and nose bridge, facial structure showing the broad cheekbones and defined angles characteristic of North African ancestry softened by Southeast Asian and Pacific Islander fullness in the face, eye shape reflecting the subtle epicanthal fold from her East Asian ancestry, bone geometry that speaks to Eastern European legacy without dominating the overall impression, the blended ancestry creating subtle variation in skin tone texture across the face.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and functionally muscular, shoulders broad from years of physical restraint work, no excess softness but not hard-carved either. Built for sustained effort rather than explosive power.",
@@ -288,8 +266,8 @@
     "hair_style": "Locs wrapped daily in a practiced spiral, pinned with small copper rings of varying diameters",
     "hair_length": "Medium (locs reach mid-back when unwrapped)",
     "eye_color": "Deep brown, sharp and reading-focused",
-    "skin_tone": "Warm medium brown with subtle golden and olive undertones from her diverse ancestry",
-    "complexion": "Face marked by laugh lines around eyes and mouth, slight asymmetrical set to jaw from an old fracture improperly healed, skin maintained with functional care rather than aesthetic obsession. No cosmetic smoothing. Subtle variation in skin tone texture reflecting the blended ancestry. The face of someone who has made peace with earning its marks.",
+    "skin_tone": "Warm medium brown with golden and olive undertones, richly blended from Southeast Asian, North African, and Pacific Islander ancestry",
+    "complexion": "Face marked by laugh lines around eyes and mouth, slight asymmetrical set to jaw from an old fracture improperly healed, skin maintained with functional care rather than aesthetic obsession. No cosmetic smoothing. The blended ancestry creates subtle variation in skin tone texture across the face—warmth concentrating slightly more in the cheeks and across the bridge of the nose, the face of someone who has made peace with earning its marks.",
     "distinguishing_marks": [
       "Raised scarification pattern across left forearm in traditional West African ceremonial design, approximately 20cm span, executed in parallel lines with deliberate keloid formation",
       "Old fracture line barely visible along left jawline, healed unevenly, gives subtle asymmetry to her bite"
@@ -298,16 +276,71 @@
     "posture_movement": "Moves with unhurried deliberateness, economical and purposeful. No wasted motion, no nervous energy. Walks with her weight centered, hands ready but not guarded. When seated, she is patient and still. Her gaze settles and holds.",
     "clothing_style": "Tier 3-4 working professional. Favors fitted cargo jackets in grey or rust-brown synthetic leather with reinforced seams and multiple breast pockets, paired with reinforced trousers in dark synthetic weave. Wears a worn but well-maintained smartwatch on left wrist (warrant verification, message alerts). Small copper rings visible on her fingers — functional jewelry with sentimental weight. Boots are orthopaedic-grade, upgraded leather, broken in but maintained. Denim on days she is not actively fielding contracts. Minimal jewelry beyond the ear prosthetics and her working rings; a small woven cord bracelet on right wrist (traditional marker of her mother's lineage). No visible corporate branding or tier signifiers."
   },
-  "image_prompt": "Mika Erikstad-Szczypiński, a 172cm lean and functionally muscular woman with warm medium-brown skin bearing golden and olive undertones, standing in a cyberpunk 2226 urban setting. Her natural black locs with grey temples are wrapped in copper rings and pinned in practiced spirals reaching mid-back. Deep brown sharp eyes with subtle epicanthal folds set in a face marked by laugh lines and asymmetrical jaw structure from an old healed fracture. Raised West African ceremonial scarification patterns visible across her left forearm. Amber-brown cat ear prosthetics replace her human ears with metallic sheen at skull interface. Faint hydraulic-assist servo articulation visible at wrists, right palm bearing a blue-LED biometric interface port. She wears a fitted rust-brown synthetic leather cargo jacket with reinforced seams, dark synthetic trousers, orthopaedic-grade upgraded leather boots. Small copper functional rings on fingers, smartwatch on left wrist, woven cord bracelet on right wrist marking her mother's lineage. Her posture is unhurried and economical, weight centered, patient and deliberate. Great Lakes Metropolitan Zone neon-lit evening ambient lighting, neutral professional demeanor. --ar 2:3 --v 6",
+  "image_prompt": "Mika Erikstad-Masoe, 172cm lean muscular figure with warm medium-brown skin showing golden and olive undertones, broad cheekbones with North African definition softened by Southeast Asian fullness, subtle East Asian eye shape, asymmetrical jawline from old healed fracture, laugh lines around deep brown eyes, natural black locs with grey at temples wrapped in copper rings reaching mid-back. Amber-brown cat ear prosthetics replacing human ears with metallic sheen. West African ceremonial scarification across left forearm in parallel keloid lines. Forearm servo augmentation visible, biometric interface port on right palm with blue LED. Wearing fitted rust-brown synthetic leather cargo jacket with reinforced seams, dark synthetic weave trousers, orthopaedic leather boots. Copper rings on fingers, smartwatch on left wrist, woven cord bracelet on right wrist. Standing with economical posture, centered weight, patient gaze. GLMZ Great Lakes Metropolitan Zone setting, cool industrial lighting with warm accent highlights on skin tones, professional warrant agent aesthetic, no corporate branding --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 44.1,
-    "Northern European": 26.9,
-    "Eastern European": 14.4,
-    "Middle Eastern": 7.4,
-    "East Asian": 7.2
+    "Southeast Asian": 26.2,
+    "North African": 22.8,
+    "Pacific Islander": 16.1,
+    "Eastern European": 13.3,
+    "Hispanic/Latin American": 11.3,
+    "East Asian": 10.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 13.6
+      },
+      "Cambodian": {
+        "Khmer": 12.6
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 12.1,
+        "Tuareg": 10.7
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 12.7
+      },
+      "Micronesian": {
+        "Palauan": 1.8
+      },
+      "Melanesian": {
+        "Papua New Guinean": 0.2,
+        "Ni-Vanuatu": 1.4
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 0.3,
+        "Slovenian": 1.2
+      },
+      "Magyar-Romanian": {
+        "Romanian": 2.5,
+        "Hungarian": 1.3
+      },
+      "Slavic West": {
+        "Polish": 8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 11.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 2.9
+      },
+      "Chinese": {
+        "Mandarin Northern": 7.4
+      }
+    }
+  }
 }

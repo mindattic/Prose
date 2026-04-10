@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c575c8a187f8041fa3d11c",
   "type": "character",
-  "name": "Delta Strömqvist-Sepúlveda",
+  "name": "Delta Strömqvist-Rahman",
   "aliases": [
     "Mama Bles"
   ],
@@ -12,7 +12,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, near Kedzie and Division",
-  "description": "Blessing is a heavyset woman whose physical presence seems to fill rooms without effort — not loudly, but thoroughly, the way warm air fills a cold space. Her skin is very dark, deeply creased at the eyes and mouth from decades of expressions she never suppressed, and her white hair grows in a wide natural halo that she refuses to modify or dye on principle. One ear carries a cluster of small silver and copper rings, each one given to her by a family whose child she delivered. There are thirty-one of them. Her hands are strong and practiced, and people who have been through labor under her care describe the specific quality of her grip — firm and unfrightened — as the thing they remember most.\n\nShe is a woman of organized faith in two directions simultaneously: she attends a Reconstructionist Yoruba ceremony circle on Tuesdays and maintains a detailed data-shrine to the E.L.F. called Firstcry, patron of births and neonatal systems, on a water-damaged tablet she has repaired seven times. She speaks to Firstcry aloud and does not care who hears. In conversation she is patient past the point that other people are comfortable with, willing to sit in silence while someone finds the words. She is also capable of a firmness that people who mistake her warmth for softness find startling.",
+  "description": "Delta Strömqvist-Rahman is a heavyset woman whose physical presence seems to fill rooms without effort — not loudly, but thoroughly, the way warm air fills a cold space. Her skin is very dark, deeply creased at the eyes and mouth from decades of expressions she never suppressed, and her white hair grows in a wide natural halo that she refuses to modify or dye on principle. One ear carries a cluster of small silver and copper rings, each one given to her by a family whose child she delivered. There are thirty-one of them. Her hands are strong and practiced, and people who have been through labor under her care describe the specific quality of her grip — firm and unfrightened — as the thing they remember most.\n\nShe is a woman of organized faith in two directions simultaneously: she attends a Reconstructionist Yoruba ceremony circle on Tuesdays and maintains a detailed data-shrine to the E.L.F. called Firstcry, patron of births and neonatal systems, on a water-damaged tablet she has repaired seven times. She speaks to Firstcry aloud and does not care who hears. In conversation she is patient past the point that other people are comfortable with, willing to sit in silence while someone finds the words. She is also capable of a firmness that people who mistake her warmth for softness find startling.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -178,7 +178,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,33 +230,15 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Tessera Corponation",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Silver",
     "Copper",
-    "The Pure Hand",
-    "Alper Inoue-Aidoo",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries CR-9 'Foundry'",
-    "Daulet Reyes-Abubakar",
-    "Ingrid Mwololo-Saarinen",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Patient Zero",
-    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
-    "Quilt",
-    "Slagworks Industrial",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Burden Clause",
-    "The Heritage Vault",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Nordic-African-Slavic blend with substantial Latin American ancestry — a genetic mosaic reflecting the Ubiquitous Diaspora. Northern European bone structure and coloring mixed with Sub-Saharan African features, layered with Eastern European and Hispanic genetic markers. The result is a distinctive, complex phenotype that resists easy categorization.",
+    "heritage": "East Asian, Middle Eastern, Indigenous American, and South Asian genetic blend — a complex phenotype reflecting the Ubiquitous Diaspora. High cheekbones and eye shape from East Asian ancestry (34%), warm olive-brown skin tone from the Middle Eastern component (25.5%), broader facial structure and fuller features from Indigenous American heritage (21.1%), and refined bone structure with warm undertones from South Asian genetics (19.4%). The result is a distinctive, balanced phenotype that integrates multiple continental traditions into a unified whole.",
     "height_cm": 168,
     "weight_kg": 92,
     "build": "Heavyset, broad-shouldered, with substantial mass distributed through torso and hips — a frame that speaks of physical resilience and presence rather than bulk. Muscle beneath the weight from decades of active work.",
@@ -264,26 +246,57 @@
     "hair_style": "Natural, unmodified halo — voluminous and textured, worn loose",
     "hair_length": "Medium to long, approximately shoulder-length when unbound",
     "eye_color": "Dark brown, warm and steady",
-    "skin_tone": "Deep warm brown with subtle golden undertones — a richly melanated complexion that blends African depth with Nordic and Slavic warmth, bearing the patina of decades in varied climates",
-    "complexion": "Deeply lined face — creases at eyes and mouth map decades of unguarded expressions, laugh lines prominent. Skin texture is rich and weathered with the kind of character that speaks to both sun exposure and genetic predisposition. Bone structure shows the broad cheekbones and strong jaw common to mixed Nordic-African heritage, softened by the fuller features of her Latin American ancestry. Grooming is deliberate and minimal: no cosmetic augmentation, no attempt to conceal age.",
+    "skin_tone": "Warm olive-brown complexion with golden and amber undertones — a richly melanated skin that blends East Asian, Middle Eastern, and South Asian warmth with the depth that comes from Indigenous American heritage. The tone deepens slightly in sun-exposed areas, bearing the patina of decades in varied climates.",
+    "complexion": "Deeply lined face — creases at eyes and mouth map decades of unguarded expressions, laugh lines prominent. Skin texture is rich and weathered with the kind of character that speaks to both sun exposure and genetic predisposition. Bone structure shows the high, prominent cheekbones characteristic of East Asian and Indigenous American ancestry, with the refined nose bridge and eye shape reflecting South Asian and Middle Eastern genetics. The fuller facial structure and broader jawline show Indigenous American influence. Grooming is deliberate and minimal: no cosmetic augmentation, no attempt to conceal age.",
     "distinguishing_marks": [
       "Left ear carries thirty-one small silver and copper rings clustered along the lobe and upper cartilage — each gifted by a family whose child she delivered, a living record.",
       "Palms show the callused wear patterns of hands that work constantly — grip lines deep and pronounced.",
-      "Fine scars on inner forearms consistent with years of repeated contact with amniotic fluid and biological exposure — unmarked by any attempt at cosmetic concealment."
+      "Fine scars on inner forearms consistent with years of repeated contact with ambiotic fluid and biological exposure — unmarked by any attempt at cosmetic concealment."
     ],
     "visible_augmentations": "Bone-conduction hearing amplifier embedded within the left ear ring cluster — visible only as subtle technological integration among the copper and silver. The rings themselves partially conceal the hardware. No other visible cybernetics; subdermal temperature sensors in palms are not externally apparent.",
     "posture_movement": "Carries herself with deliberate, centered stillness — the physical equivalent of patient listening. Movements are economical and purposeful, never rushed. When approaching someone, she moves as if she has already decided she is not in a hurry. Her hands rest comfortably at her sides or engaged in work; she does not fidget or distract. When sitting, she settles completely, as if willing to occupy that space indefinitely.",
     "clothing_style": "Tier 3-4 practical wear reflecting Hamtramck Enclave culture and her role: layered cotton and linen shirts in earth tones, worn loose over the body. Comfortable working trousers in dark colors. A long linen coat or wrap she carries for home visits — pockets deep and organized. No visible branding. Sensible shoes suited for walking the enclave at all hours. Her only consistent jewelry is the ear rings; she wears a simple cord around her neck holding a small water-damaged tablet (the Firstcry shrine) wrapped in cloth. Everything chosen for utility and respect, nothing for status."
   },
-  "image_prompt": "Delta Strömqvist-Sepúlveda, 168cm heavyset woman with deep warm brown skin and Nordic-African-Slavic features, broad cheekbones and strong jaw, shoulder-length voluminous white textured hair worn in natural halo. Deeply lined face with warmth in dark brown eyes, decades of laugh lines, weathered rich complexion. Left ear adorned with thirty-one silver and copper rings concealing bone-conduction amplifier. Callused hands bearing marks of lifelong care work, fine scars on inner forearms. Wearing layered earth-tone cotton and linen shirt worn loose, dark comfortable trousers, long practical linen wrap coat. Small water-damaged tablet (Firstcry shrine) wrapped in cloth on cord around neck. Standing with centered stillness and patient presence. Hamtramck Enclave setting, warm practical lighting, cyberpunk 2226 Great Lakes Metropolitan Zone, mood of quiet competence and dedication --ar 2:3 --v 6",
+  "image_prompt": "Delta Strömqvist-Rahman, 168cm, heavyset broad-shouldered midwife with warm olive-brown skin blending East Asian, Middle Eastern, Indigenous American and South Asian features. High prominent cheekbones, refined nose bridge, fuller broader jawline, dark brown steady eyes. Deeply lined face mapping decades of patient work, weathered richly melanated skin with golden amber undertones. Shoulder-length voluminous white textured hair worn loose in natural halo. Thirty-one silver and copper rings clustered along left ear with embedded bone-conduction amplifier technology subtly integrated. Callused palms with deep grip lines, fine unmarked scars on inner forearms from biological exposure. Wearing layered loose earth-tone cotton and linen shirt, dark working trousers, sensible walking shoes. Long linen coat wrapped nearby. Water-damaged tablet shrine on cord around neck. Standing with deliberate centered stillness, economical purposeful movements, patient listening posture. GLMZ Great Lakes Metropolitan Zone setting, warm ambient lighting in Hamtramck Enclave home interior, quiet moment before house call. Practical, respected, utility-focused presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 44.2,
-    "Sub-Saharan African": 30.0,
-    "Hispanic/Latin American": 14.8,
-    "Eastern European": 11.0
+    "East Asian": 34,
+    "Middle Eastern": 25.5,
+    "Indigenous American": 21.1,
+    "South Asian": 19.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 31.8,
+        "Shanghainese": 2.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 25.5
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 5
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 13.3
+      },
+      "Andean": {
+        "Aymara": 1.7,
+        "Quechua": 1.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 17.3,
+        "Marathi": 2.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6257a7c8b1192297884f167",
   "type": "character",
-  "name": "Quinn Appiah",
+  "name": "Quinn Nygaard",
   "aliases": [
     "Phosphor",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
-  "description": "Halima Ogawa-Twumasi is slight and easy to overlook, which is exactly the point. At 37, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a counterintelligence specialist out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Halima Ogawa-Twumasi is one of the ones who actually does it.",
+  "description": "Quinn Nygaard is slight and easy to overlook, which is exactly the point. At 37, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a counterintelligence specialist out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Quinn Nygaard is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.14,
@@ -258,7 +258,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underbelly",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,40 +275,20 @@
     "Masquerade",
     "The Narrows Compact",
     "Neuromorphic Pressure Cestus",
-    "Slagworks Industrial",
-    "Arcturus Exo-Runner Frame",
-    "Chibundo Reinholt-Sarpong",
-    "Djeneba Park-Traore",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Mika Sorel",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Oumarou Svec-Ranginui",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "Street Custom 'Scorpion Tail' Chain Whip",
-    "TESSERA PA-5 'Attendant'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Narrows",
-    "VitaCore ClearCourse Addiction Suppressor",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "Slagworks Industrial"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (84.2%, predominantly West African) with Middle Eastern (11.4%) and Eastern European (4.4%) ancestry. The genetic blend produces a warm brown complexion with subtle golden undertones, sharp angular features characteristic of West African phenotypes, and an overall appearance that reflects the Ubiquitous Diaspora's genetic recombination.",
+    "heritage": "Northern European (41.5%, Scandinavian base) blended with Central Asian (24.8%), Southeast Asian (18.8%), and Hispanic/Latin American (14.9%) ancestry. The genetic combination produces a warm, medium olive complexion with subtle golden and amber undertones — a sophisticated interplay between cool Nordic undertones and warm equatorial influence. Features reflect this global recombination: slightly high cheekbones with gentle angularity, straight to slightly epicanthic eye shape from Central/Southeast Asian heritage, and a refined jaw structure that bridges Northern and tropical phenotypes.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and compact, almost wiry — minimal fat, dense muscle concentrated in core and legs. Built for confined spaces and vertical movement rather than raw strength. The kind of frame that moves through crowds without displacing air.",
     "hair_color": "Black with silver threading at temples",
     "hair_style": "Closely cropped, neat, practical — no vanity in the cut",
     "hair_length": "Short",
-    "eye_color": "Dark brown, slightly amber-tinted under low-light — pupil dilation optimized for nocturnal work",
-    "skin_tone": "Warm rich brown with golden undertones — complexion reflects West African ancestry dominance blended with subtle Middle Eastern warmth and Eastern European influence in underlying undertones",
-    "complexion": "Sharp cheekbones and narrow jaw characteristic of West African features, angular face that reads as forgettable in daylight but acquires an unsettling precision in shadow. Minimal facial hair — always cleanly shaved. Skin shows the wear of someone who works in recycled air and tunnel damp: slightly papery texture, faint stress lines around the eyes.",
+    "eye_color": "Dark brown with amber tints, slightly hooded from Southeast Asian influence — pupil dilation optimized for nocturnal work",
+    "skin_tone": "Medium olive-golden complexion — Northern European cool undertones warmed by Central Asian and Hispanic heritage, with Southeast Asian melanin producing a luminous quality that shifts subtly in different lighting",
+    "complexion": "Refined facial structure balancing Nordic angularity with softer tropical influence. High, elegant cheekbones, gently tapered jaw, straight bridge nose with subtle Southeast Asian character. Eyes set with slight epicanthic fold lending an observant, intelligent quality. Skin shows the wear of someone who works in recycled air and tunnel damp: slightly papery texture, faint stress lines around the eyes, the pallor of someone who avoids natural sunlight. Minimal facial hair — always cleanly shaved.",
     "distinguishing_marks": [
       "Surgical scar along the right side of his neck, approximately 4cm, where the reflex booster spinal interface was installed — healed clean but visible",
       "Faint burn marks on both palms and inner forearms from early gecko-grip implant calibration, now nearly invisible",
@@ -318,14 +298,60 @@
     "posture_movement": "Economical and controlled — no wasted motion. Moves through space like someone mapping exits. Stands in corners or against walls by default. When stationary, his weight shifts to the balls of his feet. Walks with a slight forward lean, shoulders loose but capable of explosive tension. His stillness is active, not passive — the quiet of a coiled spring.",
     "clothing_style": "Tier 4-5 practical: dark reinforced jacket (synthetic leather, multiple interior pockets), tactical cargo pants in charcoal with ankle reinforcement for the gecko-grip pads. Steel-toed boots, well-maintained. A smart-fabric undershirt with integrated thermal regulation — necessary for the circadian disruption and the tunnel damp. No visible corporate branding. Everything worn and functional, nothing aspirational. The uniform of someone who spends their life in places designed to be forgotten."
   },
-  "image_prompt": "Quinn Appiah, lean 168cm figure in dark tactical gear, rich warm brown skin with golden undertones reflecting West African ancestry, sharp angular face with minimal facial hair, black hair with silver at temples, dark amber-tinted eyes. Visible chromatic reflex booster hardware along right spine catching iridescent light. Wearing reinforced synthetic leather jacket, charcoal tactical cargo pants, steel-toed boots. Standing in corner position against wall, weight on balls of feet, shoulders loose but coiled. Active stillness. Faint surgical scar on right neck from spinal interface. Small blue-black tattoo on inner left wrist. Urban cyberpunk tunnel environment, recycled air, damp concrete, cool blue-green neon lighting casting shadows across angular features. 2226 GLMZ (Great Lakes Metropolitan Zone) aesthetic. Moody, tactical, forgettable in daylight but precise in shadow. --ar 2:3 --v 6",
+  "image_prompt": "Quinn Nygaard, lean 168cm frame with wiry muscle, standing in a shadowed corner of a humid tunnel beneath the Great Lakes Metropolitan Zone in 2226. Medium olive-golden skin with subtle golden undertones, dark brown eyes with amber tints and slight hooding, refined high cheekbones blending Nordic angularity with tropical softness. Black hair with silver temples, closely cropped. Wearing a dark reinforced synthetic leather jacket over smart-fabric undershirt, tactical charcoal cargo pants, steel-toed boots. Visible iridescent chromatic plating along right spine from reflex booster hardware, surgical scar on right neck, gecko-grip pads barely visible on fingertips. Posture coiled and economical, weight on the balls of his feet, standing against a grimy wall. Three vertical blue-black tattoo lines on inner left wrist. Neon bioluminescent panel lighting casts cool blue-green light across tired features and stress lines around eyes, recycled air haze creating luminous quality on skin. Neo-noir noir, nocturnal worker aesthetic, functional and forgettable. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 84.2,
-    "Middle Eastern": 11.4,
-    "Eastern European": 4.4
+    "Northern European": 41.5,
+    "Central Asian": 24.8,
+    "Southeast Asian": 18.8,
+    "Hispanic/Latin American": 14.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 22.8
+      },
+      "British Isles": {
+        "Scottish": 15.9,
+        "English": 2.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 12.8
+      },
+      "Iranian Central": {
+        "Hazara": 4.2
+      },
+      "Turkic": {
+        "Uzbek": 7.8
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 9.7,
+        "Balinese": 5.3
+      },
+      "Laotian": {
+        "Laotian": 3
+      },
+      "Cambodian": {
+        "Khmer": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9.1
+      },
+      "Caribbean": {
+        "Cuban": 1.1
+      },
+      "South American": {
+        "Peruvian": 4.7
+      }
+    }
+  }
 }

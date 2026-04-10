@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5dd7016b418eb3a19d14c5b",
   "type": "character",
-  "name": "Zoya Vasquez-Alfarsi",
+  "name": "Aponi Tlaloc",
   "aliases": [
     "Coco",
     "Night Nurse Coco"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Hough Reclamation, the Lowgate Community Clinic (unlicensed, Helix Biosystems-adjacent but not officially affiliated), near Ashland and Chicago Ave",
-  "description": "Colette is small and moves quickly, the way people do when they've spent years navigating narrow corridors between occupied beds. She has warm dark skin, natural hair worn in a high puff that she wraps in a green cloth when on shift, and eyes that are an unsettling pale grey — a side effect of a retinal enhancement she got from a discount clinic at twenty-three that was slightly misaligned and gives her a perpetual look of seeing through whoever she's talking to. She wears color-changing nail polish that she updates with her mood, a small indulgence in an otherwise spartan wardrobe of scrubs and waterproof boots. On her left shoulder, barely visible above her collar, is a small tattoo of the Helix Biosystems caduceus crossed out with a red line — a private protest she keeps covered at work.\n\nColette has the specific exhaustion of someone who has been running on competence and controlled fury for years. She is technically excellent and emotionally present in a way that astonishes patients who expected institutional indifference, but beneath this is a bone-deep tiredness at the structural conditions she's fighting every shift with inadequate supplies and no institutional backing. She has a dark humor that surfaces as small sharp jokes in the worst moments, which her colleagues either love or find disturbing. She maintains a fierce and slightly desperate optimism about specific patients while holding no illusions about the system itself.",
+  "description": "Aponi Tlaloc is small and moves quickly, the way people do when they've spent years navigating narrow corridors between occupied beds. She has warm dark skin, natural hair worn in a high puff that she wraps in a green cloth when on shift, and eyes that are an unsettling pale grey — a side effect of a retinal enhancement she got from a discount clinic at twenty-three that was slightly misaligned and gives her a perpetual look of seeing through whoever she's talking to. She wears color-changing nail polish that she updates with her mood, a small indulgence in an otherwise spartan wardrobe of scrubs and waterproof boots. On her left shoulder, barely visible above her collar, is a small tattoo of the Helix Biosystems caduceus crossed out with a red line — a private protest she keeps covered at work.\n\nAponi Tlaloc has the specific exhaustion of someone who has been running on competence and controlled fury for years. She is technically excellent and emotionally present in a way that astonishes patients who expected institutional indifference, but beneath this is a bone-deep tiredness at the structural conditions she's fighting every shift with inadequate supplies and no institutional backing. She has a dark humor that surfaces as small sharp jokes in the worst moments, which her colleagues either love or find disturbing. She maintains a fierce and slightly desperate optimism about specific patients while holding no illusions about the system itself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -180,7 +180,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,29 +235,16 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Helix Biosystems",
     "Hough Reclamation",
+    "Helix Biosystems",
     "The Reclamation Assembly",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Pale Mile",
     "Chicago",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Lebedev-Tutu",
-    "Blackmarket",
-    "Crucible TR-7 'Triage'",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Narrowcast",
-    "Pikasso Wemba-Þórðarson",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "The Heritage Vault"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian dominant (51.7%) with significant Middle Eastern (19.7%), Indigenous American (14.3%), and Hispanic/Latin American (10.4%) ancestry, creating a striking blend of subcontinental and pan-American features",
+    "heritage": "Pan-global synthesis: Indigenous American foundation (42.2%) with prominent Mesoamerican features blended through Hispanic/Latin American (19.1%), Sub-Saharan African (16.2%), Southeast Asian (16.0%), and South Asian (6.5%) ancestry. The result is a complex interplay of angular Indigenous American bone structure warmed by African and Latin American undertones, refined by Southeast and South Asian genetic contributions—truly multicontinental in feature distribution",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Lean and compact, muscular in the specific way of someone who moves efficiently through tight spaces for hours—low body fat, defined shoulders and forearms from years of patient handling and IV work",
@@ -265,8 +252,8 @@
     "hair_style": "Worn in a high puff, typically wrapped in a green cloth during work shifts; natural texture, well-maintained despite minimal grooming budget",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Pale grey with subtle iridescence—a visible artifact of misaligned retinal enhancement; unnaturally reflective in low light, creating an unsettling 'looking through you' quality",
-    "skin_tone": "Warm medium to medium-deep brown with golden and olive undertones characteristic of South Asian-Middle Eastern blending, enriched by Indigenous American and Hispanic ancestry contributions",
-    "complexion": "Clean, minimal makeup, dark circles under eyes from chronic night-shift sleep deprivation; skin shows resilience rather than softness—calloused fingertips from years of clinical work, no visible dermatitis despite frequent handwashing; cheekbones show the angular geometry of South Asian and Indigenous American heritage; nose bridge defined with subtle structural diversity from pan-ancestry mixing",
+    "skin_tone": "Warm medium-deep brown with rich golden and reddish undertones; the complex result of Indigenous American base enriched by Hispanic/Latin warmth and Sub-Saharan depth, tempered by Southeast and South Asian refinement",
+    "complexion": "Clean, minimal makeup, dark circles under eyes from chronic night-shift sleep deprivation; skin shows resilience rather than softness—calloused fingertips from years of clinical work, no visible dermatitis despite frequent handwashing; cheekbones show prominent angular geometry characteristic of Indigenous American heritage, enhanced by the warm bronze tones of African and Latin ancestry; nose bridge defined and refined with the structural diversity of genuine pan-global genetic expression; facial structure blends the directness of Mesoamerican features with softer contours from Southeast Asian ancestry",
     "distinguishing_marks": [
       "Small caduceus tattoo crossed with a red line on left shoulder, just above collar—deliberately positioned to hide under scrub neckline",
       "Fine white scar on right palm from a needle-stick incident, approximately 2cm long",
@@ -276,16 +263,62 @@
     "posture_movement": "Economical and rapid, movements calibrated for confined spaces—never wastes motion, walks with purpose, tends to scan rooms for patients who need attention; stands with shoulders slightly forward from years of bedside work; maintains eye contact in a way that feels penetrating rather than warm due to the pale grey augmented eyes",
     "clothing_style": "Tier 3 practical: well-worn but clean hospital scrubs in charcoal grey (neutral color, hides stains), paired with non-slip waterproof boots (Bauer brand, durable utility level); off-shift: simple layered clothing—black fitted tees, worn denim, an oversized grey hoodie with Lowgate Clinic's faded logo; no jewelry except the color-changing nail polish; a green cloth headwrap in natural cotton, worn both as functional hair management and cultural assertion"
   },
-  "image_prompt": "Zoya Vasquez-Alfarsi, 158cm lean clinical nurse with warm medium-brown skin and golden olive undertones from South Asian-Middle Eastern-Indigenous American heritage blend, wearing charcoal hospital scrubs tucked into waterproof boots, black hair in high puff wrapped in faded green cotton headwrap, unnaturally pale grey augmented eyes with faint luminescence in clinic lighting, color-shifting nail polish cycling blues and greys, fine scars visible on right palm and left forearm from clinical work, defined muscular shoulders and forearms, economical efficient posture, dark circles from night shifts, minimal makeup, penetrating eye contact, Lowgate Clinic setting with dim monitor glow and fluorescent overhead lights casting sharp shadows, cyberpunk 2226 medical facility aesthetic, gritty realistic detail, --ar 2:3 --v 6",
+  "image_prompt": "Aponi Tlaloc, 158cm lean medical worker, warm deep brown skin with golden undertones, angular Mesoamerican cheekbones softened by pan-global ancestry (Indigenous American, African, Southeast Asian, Latin American, South Asian blend), natural shoulder-length black hair in high puff wrapped in green cloth, pale grey luminescent augmented eyes with unsettling reflectivity, dark circles from night-shift exhaustion, calloused clinical hands with color-shifting blue-grey nail polish, small caduceus tattoo with red line on shoulder, GLMZ Great Lakes Metropolitan Zone, wearing charcoal grey hospital scrubs and worn Bauer boots, standing in harsh clinic fluorescent lighting with economical posture, scan-the-room awareness, penetrating gaze, moody atmospheric background of medical facility at night, cinematic lighting emphasizing the otherworldly quality of her augmented eyes --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 51.7,
-    "Middle Eastern": 19.7,
-    "Indigenous American": 14.3,
-    "Hispanic/Latin American": 10.4,
-    "East Asian": 3.9
+    "Indigenous American": 42.2,
+    "Hispanic/Latin American": 19.1,
+    "Sub-Saharan African": 16.2,
+    "Southeast Asian": 16,
+    "South Asian": 6.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 42.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 8.8
+      },
+      "South American": {
+        "Venezuelan": 3.4,
+        "Peruvian": 6.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 0.3,
+        "Tanzanian": 2.6
+      },
+      "West African": {
+        "Liberian": 7.8
+      },
+      "Central African": {
+        "Angolan": 3.8,
+        "Congolese": 1.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 8.6
+      },
+      "Cambodian": {
+        "Khmer": 0.4
+      },
+      "Laotian": {
+        "Laotian": 7
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 2.4,
+        "Pashtun": 4.1
+      }
+    }
+  }
 }

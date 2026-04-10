@@ -7,7 +7,7 @@
     "The Swarm"
   ],
   "role": "Private Investigator",
-  "description": "Bao Hedlund-Conteh is the eye in the sky — or more accurately, the hundred eyes in the sky, the walls, the ventilation systems, and the cracks in the pavement. He is a drone specialist who has built the most sophisticated personal surveillance network in GLMZ's lower tiers, and he uses it to conduct investigations without ever leaving his rooftop workshop.\n\nHis fleet numbers over three hundred drones of varying sizes, from bird-scale reconnaissance units to insect-scale infiltrators that can pass through a building's air filtration system without triggering sensors. He builds them himself, maintains them himself, and controls them through a neural interface that allows him to process multiple drone feeds simultaneously — a cognitive feat that would overwhelm most BCI users but which Bao has trained for since childhood.\n\nThe limitation is the one you'd expect: he's physically helpless. His investigative skills are extraordinary as long as a drone can go where he needs to look, but he cannot conduct interviews, chase suspects, or handle any situation that requires a human being in the room. He compensates by partnering with more physically capable investigators when cases require it, and by designing his drones to be so capable that physical presence is rarely necessary. His clients love the results and are occasionally disturbed by the process — there's something inherently unsettling about knowing that any insect in the room might be watching you.",
+  "description": "Briar Hinojosa is the eye in the sky — or more accurately, the hundred eyes in the sky, the walls, the ventilation systems, and the cracks in the pavement. He is a drone specialist who has built the most sophisticated personal surveillance network in GLMZ's lower tiers, and he uses it to conduct investigations without ever leaving his rooftop workshop.\n\nHis fleet numbers over three hundred drones of varying sizes, from bird-scale reconnaissance units to insect-scale infiltrators that can pass through a building's air filtration system without triggering sensors. He builds them himself, maintains them himself, and controls them through a neural interface that allows him to process multiple drone feeds simultaneously — a cognitive feat that would overwhelm most BCI users but which Bao has trained for since childhood.\n\nThe limitation is the one you'd expect: he's physically helpless. His investigative skills are extraordinary as long as a drone can go where he needs to look, but he cannot conduct interviews, chase suspects, or handle any situation that requires a human being in the room. He compensates by partnering with more physically capable investigators when cases require it, and by designing his drones to be so capable that physical presence is rarely necessary. His clients love the results and are occasionally disturbed by the process — there's something inherently unsettling about knowing that any insect in the room might be watching you.",
   "affiliation": "Independent — operates a licensed surveillance firm as cover for investigative work",
   "tier": "Tier 3",
   "location": "A rooftop workshop in the Canopy, surrounded by charging stations, repair benches, and dozens of dormant drones, near Clark and Belmont",
@@ -65,22 +65,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Ringo EV-3 'Watcher'",
-    "GLMZ",
     "Canopy Station Nine",
     "The Quiet Room",
-    "Anatoliy Faye-Nkrumah",
-    "Cezar Watanabe-Gyasi",
-    "MERIDIAN",
-    "Makena Johanssen-Diallo",
-    "Meridian Munitions Twin PDW MTP-2 'Gemini'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Othniel Babić-Asantewaa",
-    "The Canopy",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Neural Palate",
+    "Canopy",
+    "Bao's Last Cart",
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Eastern European (51.1%) with significant Hispanic/Latin American (42.4%) and Sub-Saharan African (6.5%) ancestry, creating a complex blend of Slavic and Mediterranean features with subtle African characteristics.",
+    "heritage": "Briar is a striking genetic mosaic of the Ubiquitous Diaspora: predominantly Hispanic/Latin American (59.6%) with substantial North African (17.2%) and Southeast Asian (14.2%) ancestry, creating a richly blended phenotype. Sub-Saharan African (5.8%) and Eastern European (3.2%) ancestry contribute depth to his bone structure and skin undertones, resulting in a face that reads as distinctly multicultural—neither fully of any one region, but unmistakably of this era.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Wiry and compact, with minimal muscle definition — years of rooftop-bound work have left him lean without athleticism. His frame is tense, coiled rather than relaxed.",
@@ -88,8 +82,8 @@
     "hair_style": "Pulled back in a short tail; practical, rarely combed",
     "hair_length": "Medium",
     "eye_color": "Dark brown with faint networked scarring visible in the sclera (neural interface integration site)",
-    "skin_tone": "Medium olive-bronze tone, the result of Eastern European base with Latin American and African undertones. Warm but not pale, with subtle golden-brown depth throughout.",
-    "complexion": "High, defined cheekbones reflecting Eastern European structure, with broader nasal bridge and fuller lips characteristic of his Hispanic ancestry. Perpetually tired eyes with dark circles. Skin shows faint sun damage despite minimal outdoor exposure — a consequence of his mixed heritage's varied melanin distribution. Fine crow's feet suggest constant squinting at screens. Slight tautness to his jaw when concentrating.",
+    "skin_tone": "Warm medium bronze with golden undertones—a luminous blend of Hispanic, North African, and Southeast Asian ancestry. The complexion is even and radiant despite minimal sun exposure, with natural resilience across varied melanin zones.",
+    "complexion": "His face reflects the confluence of three dominant ancestries: modest cheekbone projection characteristic of Southeast Asian heritage, a broader nasal bridge with defined nostrils reflecting North African influence, and fuller lips with naturally deeper pigmentation common to both Hispanic and Sub-Saharan lineages. His jaw structure shows the subtle angular quality of Eastern European ancestry. Dark circles perpetually shadow his eyes, and fine crow's feet suggest constant screen-squinting. When concentrating, slight tautness draws across his jaw. His skin shows resilience and natural sun protection from his Sub-Saharan and North African heritage lines.",
     "distinguishing_marks": [
       "Faint surgical scar running from behind his right ear down the jawline, barely visible unless he turns profile — BCI anchor point",
       "Two parallel burn scars on his left forearm from a drone battery malfunction, roughly 8cm long",
@@ -99,11 +93,64 @@
     "posture_movement": "Hunched shoulders from desk work, minimal hand gestures. When standing, his weight shifts constantly as if his body is perpetually restless while his mind is elsewhere. He moves with surprising quietness for his build — light, practiced steps.",
     "clothing_style": "Tier 3-4 utilitarian: custom-fitted smart-fabric cargo jacket with reinforced pockets for tools and spare drone components, matte black with no logos. Wear patterns visible on the elbows and cuffs. Underneath, a faded thermal shirt with a barely-visible kill-switch symbol screenprinted on the chest. Dark indigo work pants with tool loops and cargo pockets, most of them filled. Worn slate-gray canvas boots with non-reflective soles. A battered pair of AR glasses on a neck strap, lenses perpetually smudged. No jewelry, no affectations — everything on his body serves a function."
   },
-  "image_prompt": "Briar Hinojosa, 168cm wiry lean cyberpunk hacker, medium olive-bronze skin tone with Eastern European and Latin American features, high cheekbones, dark brown eyes with subtle neural scarring in sclera, black hair with silver temples in short tail, gaunt tired expression with dark circles and crow's feet. Faint surgical scar behind right ear, burn scars on left forearm. Hunched posture from desk work, restless weight-shifting stance. Wearing matte black smart-fabric cargo jacket with visible wear, faded thermal shirt with kill-switch symbol, dark indigo cargo work pants, slate-gray canvas boots. AR glasses on neck strap, smudged lenses. Rooftop environment, neon-lit 2226 Great Lakes Metropolitan Zone, moody cool lighting, neural interface active, quiet menacing presence, cyberpunk dystopian atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Briar Hinojosa, a 168cm lean neo-noir engineer in 2226, with warm bronze skin blending Hispanic, North African, and Southeast Asian heritage. Black hair with silver temples pulled into a practical tail. Dark brown eyes with neural scarring visible in the whites. Modest cheekbones, broader nasal bridge, fuller lips. Perpetually tired with dark circles and crow's feet from screen work. Faint surgical scar behind right ear (BCI port, hidden by hair). Two parallel burn scars on left forearm. Hunched posture from desk work. Wearing matte black smart-fabric cargo jacket with tool pockets and visible wear patterns, faded thermal shirt with kill-switch symbol, dark indigo cargo work pants, worn slate-gray canvas boots. Smudged AR glasses on neck strap. Neo-noir dystopian workspace, cool blue-green neon lighting reflecting off tools and drone components, tense coiled energy, hands moving with practiced precision. Moody atmospheric haze, high-contrast shadows. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 51.1,
-    "Hispanic/Latin American": 42.4,
-    "Sub-Saharan African": 6.5
+    "Hispanic/Latin American": 59.6,
+    "North African": 17.2,
+    "Southeast Asian": 14.2,
+    "Sub-Saharan African": 5.8,
+    "Eastern European": 3.2
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 54.6,
+        "Puerto Rican": 5
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 1.5,
+        "Berber": 4.5
+      },
+      "Nile Valley": {
+        "Sudanese": 1.6,
+        "Egyptian": 0.5
+      },
+      "Maghreb": {
+        "Algerian": 7.9,
+        "Tunisian": 1.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 0.4
+      },
+      "Filipino": {
+        "Tagalog": 8.4
+      },
+      "Laotian": {
+        "Laotian": 5.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 1.2,
+        "Ivorian": 2.3
+      },
+      "Central African": {
+        "Cameroonian": 1.4,
+        "Gabonese": 0.9
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 3.2
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A rooftop workshop in the Canopy"
+  }
 }

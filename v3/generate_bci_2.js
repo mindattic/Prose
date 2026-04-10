@@ -141,7 +141,7 @@ function getExistingNames() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Meridian 88, year 2200. Great Lakes megacity. Currency: Φ (QUANTA). Tiers: 1 (Shelf/poorest) to 5 (Spire/elite). Ubiquitous Diaspora: fully interbred humanity. BCIs are as fundamental as smartphones. Iowan Behemoths are autonomous machines, NOT synthetic life.
+const WORLD_CONTEXT = `GLMZ, year 2200. Great Lakes megacity. Currency: Φ (QUANTA). Tiers: 1 (Shelf/poorest) to 5 (Spire/elite). Ubiquitous Diaspora: fully interbred humanity. BCIs are as fundamental as smartphones. Iowan Behemoths are autonomous machines, NOT synthetic life.
 
 BCI Manufacturers: TESSERA CORPONATION (enterprise/security), ARCTURUS DEFENSE SOLUTIONS (military/combat), LAZARUS PHARMACEUTICALS (medical), NeuralPath (consumer "Samsung"), CortexDynamics (performance), MindBridge (budget), SynapTech (premium "Apple").`;
 
@@ -251,7 +251,7 @@ async function generateCategory(catDef) {
     // Only send the last 80 names to keep prompt size reasonable
     const existingShort = allExisting.slice(-80).map(n => n.replace(/[^a-zA-Z0-9 ]/g, '').substring(0, 40));
 
-    const system = `You generate BCI (Brain-Computer Interface) cyberware entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} BCI objects. No explanation, no markdown fencing, just the raw JSON array.
+    const system = `You generate BCI (Brain-Computer Interface) cyberware entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} BCI objects. No explanation, no markdown fencing, just the raw JSON array.
 
 ${WORLD_CONTEXT}
 

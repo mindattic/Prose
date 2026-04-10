@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e67438955a08cf61c33c3c",
   "type": "character",
-  "name": "Arc Sigurdsson-Kowalczyk-Valenzuela",
+  "name": "Arc Sigurdsson-Park-Tamale",
   "aliases": [
     "the Norwegian Tuareg",
     "Dar"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Grand Crossing Gate, running a semi-permanent caravan market in the loading apron outside the main checkpoint, near Milwaukee and North Ave",
-  "description": "Darqawi is a commanding presence without performing it — she is tall, angular, with silver-threaded locs wrapped under a bright indigo cloth that she reties differently each day but always precisely. Her skin is dark with a reddish undertone and her eyes are light brown, which she has enhanced with irises patterned to shift between amber and pale gold depending on the light — a functional modification, she says, for reading conditions at dawn and dusk, which is when most caravan decisions are made. The back of both her hands carry geometric tattoos that are Tuareg in origin and Norse in their second layer, inked over each other across generations. She moves like someone who has learned to conserve effort over distance.\n\nDarqawi runs the Meridian Outer Loop caravan, a loose coalition of nomadic traders that has been making the circuit of GLMZ's transit hubs for eleven years. The caravan carries seasonal goods — preserved food, hand-maintained tools, pirated entertainment chips, specific medications that are easier to find on the road than in the city, news — and trades in whatever is undervalued at one hub and needed at the next. She is not sentimental about commerce and she is not romantic about the road, which is what makes her good at both. The caravan is her responsibility. She feels this at all times.",
+  "description": "Arc Sigurdsson-Park-Tamale is a commanding presence without performing it — she is tall, angular, with silver-threaded locs wrapped under a bright indigo cloth that she reties differently each day but always precisely. Her skin is dark with a reddish undertone and her eyes are light brown, which she has enhanced with irises patterned to shift between amber and pale gold depending on the light — a functional modification, she says, for reading conditions at dawn and dusk, which is when most caravan decisions are made. The back of both her hands carry geometric tattoos that are Tuareg in origin and Norse in their second layer, inked over each other across generations. She moves like someone who has learned to conserve effort over distance.\n\nArc Sigurdsson-Park-Tamale runs the Meridian Outer Loop caravan, a loose coalition of nomadic traders that has been making the circuit of GLMZ's transit hubs for eleven years. The caravan carries seasonal goods — preserved food, hand-maintained tools, pirated entertainment chips, specific medications that are easier to find on the road than in the city, news — and trades in whatever is undervalued at one hub and needed at the next. She is not sentimental about commerce and she is not romantic about the road, which is what makes her good at both. The caravan is her responsibility. She feels this at all times.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -158,7 +158,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Crossing Gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,47 +174,34 @@
   "related_entities": [
     "Grand Crossing Gate",
     "The Circuit",
-    "GLMZ",
     "The Iron Lotus",
+    "Pressure Drop",
     "Meridian Core",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
+    "Circuit",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Indigo",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Origin",
     "The Pure Hand",
-    "The Pale Mile",
     "Déjà Vu",
-    "Gold",
-    "The Milwaukee Core",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus GE-1 'Garrison'",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Iowan Behemoth — 'Palisade'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "TESSERA ES-4 'Perimeter'",
-    "The Bazaar",
-    "The Gutter Prophets",
-    "The Heritage Vault",
-    "Yannick Tofauti-Szarvásy",
-    "Yolanda Dzhaksybekov-Ferreira"
+    "Compass Rose",
+    "The Pale Mile",
+    "GLMZ",
+    "Gold"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (39.1%) with significant Eastern European (29.8%) ancestry, blended with East Asian (11.2%), Hispanic/Latin American (10.6%), South Asian (4.9%), and Southeast Asian (4.4%) heritage. The result is a striking phenotype combining broad Sub-Saharan African features with secondary influences from Eurasian and Asian ancestry lines.",
+    "heritage": "Complex polycontinental blend with East Asian dominance (37.3%) creating the foundation of bone structure and eye geometry, anchored by substantial Hispanic/Latin American (27.3%) and Southeast Asian (14.1%) ancestry that adds warmth and dimensional undertone. Pacific Islander (9.3%) and Sub-Saharan African (9.1%) contributions deepen and saturate the skin tone with golden-bronze richness, while Eastern European (2.9%) adds angular definition to the jawline and facial planes. The result is a striking phenotype that reads as authentically multiple ancestries simultaneously—a face where East and Southeast Asian bone structure meets Pan-American warmth meets African depth, creating something that refuses singular categorization.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Tall and angular with minimal excess mass — the build of someone who has walked thousands of kilometers. Shoulders broad but lean, no bulk. Economical musculature in the forearms and legs from decades of manual labor and load-bearing.",
     "hair_color": "Dyed indigo with silver roots showing through at the temples and crown",
     "hair_style": "Locs, wrapped daily in bright indigo cloth tied with precision and retied differently each day. When unwrapped, the locs fall to shoulder length.",
     "hair_length": "Long",
-    "eye_color": "Light brown, augmented with geometric irises that shift between amber and pale gold depending on ambient light conditions",
-    "skin_tone": "Deep warm brown with reddish-golden undertones reflecting the dominant Sub-Saharan ancestry with secondary European and South Asian influences — rich and complex rather than uniform.",
-    "complexion": "Weathered but sharp. Minimal cosmetic grooming — functional and direct. Fine lines around the eyes from squinting at dawn/dusk conditions. High, defined cheekbones with subtle Southeast Asian influence in the bone structure. Skin shows the texture of sun exposure and dry climates over decades, not aging damage. Broad nose characteristic of Sub-Saharan ancestry. Strong jawline with secondary Eurasian definition.",
+    "eye_color": "Light brown with geometric augmented irises that shift between amber and pale gold depending on ambient light conditions",
+    "skin_tone": "Deep warm honey-bronze with golden, olive, and russet undertones—a richly saturated multitonal complexion that reflects East Asian, Southeast Asian, Hispanic/Latin American, Pacific Islander, and Sub-Saharan African heritage in perfect balance. Neither dark nor light, but dynamically warm across all lighting conditions.",
+    "complexion": "Weathered but sharp. Minimal cosmetic grooming — functional and direct. Fine lines around the eyes from squinting at dawn/dusk conditions. High, defined cheekbones with the distinctive bone structure of East and Southeast Asian ancestry. Skin shows the texture of sun exposure and dry climates over decades, not aging damage. Nose bridges multiple ancestry groups—subtly flared with the characteristic geometry of mixed East Asian-Hispanic-African heritage, neither broad nor narrow but proportionally balanced. Strong jawline with angular, defined Eastern European-influenced structure. Eyes set with the characteristic almond geometry of East Asian ancestry, surrounded by the warmer undertones of Sub-Saharan and Latin American heritage.",
     "distinguishing_marks": [
       "Geometric Tuareg-origin tattoos covering the back of both hands in interconnected diamond and cross patterns, dark indigo-black in color",
       "A second layer of Norse geometric tattoos (runic-adjacent symbols) inked over the Tuareg patterns on both hands, creating a palimpsest effect — a physical record of cultural blending across generations",
@@ -224,17 +211,66 @@
     "posture_movement": "Moves with economic precision — no wasted motion, no performance. Stands with weight balanced, ready to shift. Walks with the gait of someone accustomed to long distances and uneven terrain. When seated, she remains alert, spine straight, hands often occupied with task work (mending, counting, organizing). Her default state is observant — she scans before she commits.",
     "clothing_style": "Tier 4-5 nomadic practical. Layered: a fitted dark gray thermal under a reversible canvas jacket (rust-red on one side, charcoal on the other). Loose tan cargo pants with reinforced knees and multiple pockets, worn soft from use. Boots are good-quality but clearly repaired multiple times (visible stitching, replaced heel). Over everything, a long indigo scarf — matching the cloth in her hair — that serves as sun protection and cold layer, never purely decorative. Carries a leather satchel with worn handles and visible brass fixtures. No visible jewelry except the cloth wrappings themselves. Everything is maintained, nothing is new."
   },
-  "image_prompt": "Arc Sigurdsson-Kowalczyk-Valenzuela, 183cm tall, deep warm brown skin with golden undertones, strong Sub-Saharan African features with subtle Southeast Asian bone structure. Shoulder-length indigo locs wrapped in matching indigo cloth, silver roots visible at temples. Light brown augmented eyes shifting amber-gold. Weathered, sharp features, high cheekbones, fine lines from sun exposure. Geometric Tuareg and Norse tattoo palimpsest covering both hands in dark indigo-black. Pale scar tissue on left forearm. Dressed in worn nomadic layers: dark gray thermal, reversible rust-red and charcoal canvas jacket, tan reinforced cargo pants, well-repaired boots. Long indigo scarf draped as functional protection. Worn leather satchel with brass fixtures. Economical posture, alert and observant. Cyberpunk 2226, Great Lakes Metropolitan Zone, dusk light catching her augmented irises, standing in a transit hub with industrial architecture behind her, unadorned and practical. --ar 2:3 --v 6",
+  "image_prompt": "Arc Sigurdsson-Park-Tamale, tall angular figure with warm deep honey-bronze skin, high defined cheekbones reflecting East and Southeast Asian bone structure, light brown eyes with subtle amber-gold augmented irises. Long indigo locs wrapped in matching indigo cloth tied at crown, silver roots visible at temples. Layered nomadic clothing: fitted dark gray thermal, reversible rust and charcoal canvas jacket, worn tan cargo pants, repaired boots. Long indigo scarf draped as sun protection. Geometric palimpsest tattoos covering both hands—Tuareg and Norse patterns layered together. Fine scar tissue visible on left forearm. Leather satchel with brass fixtures. Economic, alert posture, observant gaze. Standing in warm dusk light, Great Lakes Metropolitan Zone rooftop or dry terrain. GLMZ, worn practical aesthetic, no chrome or visible cybernetics except eye augmentation. Richly saturated warm skin tone, multiple heritage phenotype, weathered but sharp features --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 39.1,
-    "Eastern European": 29.8,
-    "East Asian": 11.2,
-    "Hispanic/Latin American": 10.6,
-    "South Asian": 4.9,
-    "Southeast Asian": 4.4
+    "East Asian": 37.3,
+    "Hispanic/Latin American": 27.3,
+    "Southeast Asian": 14.1,
+    "Pacific Islander": 9.3,
+    "Sub-Saharan African": 9.1,
+    "Eastern European": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 26.6
+      },
+      "Chinese": {
+        "Shanghainese": 3.1,
+        "Mandarin Northern": 0.9
+      },
+      "Japanese": {
+        "Japanese": 6.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 27.3
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 1.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 2.8
+      },
+      "Cambodian": {
+        "Khmer": 10
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tokelauan": 4.7,
+        "Hawaiian": 4.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 9.1
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 2
+      },
+      "Slavic South": {
+        "Serbian": 0.9
+      }
+    }
+  }
 }

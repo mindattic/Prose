@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b47a2c9d24f08ac29db1fd",
   "type": "character",
-  "name": "Arden Mazurek",
+  "name": "Arden Erikstad",
   "aliases": [
     "Hardline",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 46,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Rongo Belov-Ntim is lean and angular, all sharp edges and visible tension. At 46, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a netrunner out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nRongo Belov-Ntim is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Arden Erikstad is lean and angular, all sharp edges and visible tension. At 46, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a netrunner out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nArden Erikstad is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.22,
@@ -259,7 +259,7 @@
     "Pattern Reader": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,59 +273,113 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Blessed Nkemdirim",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Fanta Hedlund-Diarra",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'",
-    "Ilhan Sandstrom-Badu",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Mireille Fontaine-Obi",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nneka Lindqvist-Okafor",
-    "Réginald Asomaning-Čabarkapa",
-    "Solveig Tambadou-Kereselidze",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Eastern European, South Asian, and East Asian tri-heritage ancestry creating a distinctive phenotype. The combination manifests in his angular facial structure with high, sharp cheekbones characteristic of Eastern European ancestry, layered with the deeper eye-set and facial proportions common to South Asian genetics, and refined further by East Asian skeletal features that contribute to his lean, efficient build.",
+    "heritage": "Arden is a striking product of the Ubiquitous Diaspora—a complex genetic blend where East Asian (23.5%), Central Asian (23.1%), and Southeast Asian (22.6%) ancestry forms the dominant phenotype, tempered by significant Northern European (20.6%), Hispanic/Latin American (8.0%), and trace Sub-Saharan African (2.2%) contributions. This creates a truly cosmopolitan face that resists singular categorization. His bone structure reflects the high, sharp cheekbones of Central and East Asian genetics, the refined orbital structure of Southeast Asian ancestry, and the skeletal efficiency of Northern European lineage—resulting in an angular, balanced intersection of multiple continental features rather than a dominant heritage.",
     "height_cm": 178,
     "weight_kg": 68,
-    "build": "Lean and angular with visible musculature — the stripped-down frame of someone who carries only functional mass. His shoulders are broad but not heavy; his limbs show the kind of definition that comes from maintenance, not vanity.",
+    "build": "Lean and angular with visible musculature—the stripped-down frame of someone who carries only functional mass. His shoulders are broad but not heavy; his limbs show the kind of definition that comes from maintenance, not vanity.",
     "hair_color": "Salt-and-pepper gray with darker roots",
     "hair_style": "Kept short and practical, sometimes unwashed, combed back without care for styling",
     "hair_length": "Short",
     "eye_color": "Dark brown, often bloodshot from extended jack-in sessions",
-    "skin_tone": "Warm medium-brown with subtle undertones reflecting his mixed ancestry — the natural depth of tri-heritage genetics rendered matte by indoor living, lacking the luminosity of sun exposure. The tone sits at the intersection of Eastern European fairness diluted by South Asian and East Asian melanin distribution.",
-    "complexion": "Gaunt facial structure with prominent, high cheekbones and a sharp jawline reflecting his blended ancestry. Deep-set eyes framed by the eye-fold characteristics of his East and South Asian heritage. Stress lines around the mouth and forehead. Skin shows the wear of age and poor sleep habits — not scarred, but weathered. Three-day stubble is his default state.",
+    "skin_tone": "Warm golden-tan medium brown—the natural result of dominant East, Central, and Southeast Asian melanin (69.2% combined) tempered by Northern European and Latin American genetics. The tone carries subtle warm undertones suggesting equatorial ancestry, with an underlying luminosity despite chronic indoor living. Matte from poor sun exposure but naturally rich in depth and complexity.",
+    "complexion": "Distinctly angular facial structure with prominent, high cheekbones and a sharp jawline reflecting his predominantly Asian ancestry. The orbital geometry shows characteristic eye-fold features from his East and Southeast Asian heritage, balanced with the deeper orbital depth of Central Asian genetics and refined by Northern European bone structure. Stress lines around the mouth and forehead map his years of neural-interfacing. Skin bears the weathering of age and chronic sleep deprivation—not scarred except where noted, but with a worn, used quality. Three-day stubble is his perpetual state.",
     "distinguishing_marks": [
       "Pale surgical scar running from left temple to jawline, approximately 8cm, partially hidden by the angle of his face",
-      "Burn scar on right forearm (wrist to elbow), roughly 12cm in length, from a Jack-in accident three years prior — the skin is waxy and discolored",
+      "Burn scar on right forearm (wrist to elbow), roughly 12cm in length, from a Jack-in accident three years prior—the skin is waxy and discolored",
       "Small tattoo on the inner left wrist: a circuit pattern in faded black ink, self-applied, marking his first contract debt"
     ],
-    "visible_augmentations": "Chrome pain editor visible at left temple and along the left jawline — sleek metallic panels with barely-concealed wiring beneath, no effort made to cosmetically hide it. The augmentation catches light unnaturally. Bone lacing is not visibly apparent but manifests in the unusual density of his frame and the way he moves with efficiency that seems biomechanically optimized.",
-    "posture_movement": "Economical and controlled — no wasted motion. He stands with a slight forward lean, hands often resting near his sides or pockets. Walks with a networker's alertness, eyes tracking patterns and exits. When seated, he's coiled rather than relaxed. His movements suggest he's always calculating distance and angle.",
-    "clothing_style": "Tier 4 utilitarian — functional over fashion. Black or dark gray synth-leather jacket, worn at the cuffs, over an unmarked compression shirt. Loose tactical pants with reinforced pockets and cargo straps, worn matte black. Feet in scuffed runners with custom insoles. A worn braided cord around his wrist (memento or talisman — unclear to outsiders). Everything is practical; nothing is pristine. Occasional neural interface jack visible at the base of his neck, partially hidden by collar."
+    "visible_augmentations": "Chrome pain editor visible at left temple and along the left jawline—sleek metallic panels with barely-concealed wiring beneath, no effort made to cosmetically hide it. The augmentation catches light unnaturally. Bone lacing is not visibly apparent but manifests in the unusual density of his frame and the way he moves with biomechanical optimization.",
+    "posture_movement": "Economical and controlled—no wasted motion. He stands with a slight forward lean, hands often resting near his sides or pockets. Walks with a networker's alertness, eyes tracking patterns and exits. When seated, he's coiled rather than relaxed. His movements suggest he's always calculating distance and angle.",
+    "clothing_style": "Tier 4 utilitarian—functional over fashion. Black or dark gray synth-leather jacket, worn at the cuffs, over an unmarked compression shirt. Loose tactical pants with reinforced pockets and cargo straps, worn matte black. Feet in scuffed runners with custom insoles. A worn braided cord around his wrist (memento or talisman—unclear to outsiders). Everything is practical; nothing is pristine. Occasional neural interface jack visible at the base of his neck, partially hidden by collar."
   },
-  "image_prompt": "Arden Mazurek, gaunt tri-heritage man of Eastern European, South Asian, and East Asian descent, 178cm lean build, short salt-and-pepper hair, warm medium-brown skin tone, sharp cheekbones, deep-set dark eyes bloodshot from neural jacking. Three-day stubble. Pale surgical scar from left temple to jawline. Burn scar visible on right forearm. Chrome pain editor augmentation visible at left temple with exposed wiring, catching harsh light. Wearing worn black synth-leather jacket over compression shirt, tactical matte-black pants, scuffed runners, braided cord around wrist. Neural interface jack at neck base. Economical posture, coiled alertness. Cyberpunk 2226, Great Lakes Metropolitan Zone, indoor neon-tinged lighting with hard shadows emphasizing his weathered features and chrome augmentations. Mood: tired, calculating, hardened by years of contract work. Sharp angular composition. Gritty, worn aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Arden Erikstad, GLMZ, cosmopolitan mixed-heritage man with warm golden-tan medium brown skin, sharp high cheekbones and angular jawline, dark brown eyes bloodshot from neural jacking, salt-and-pepper gray hair kept short and unwashed, three-day stubble. Pale 8cm scar visible from left temple to jawline. Chrome pain editor augmentation visible at left temple with exposed metallic panels and wiring catching sharp light. Lean 178cm frame with visible musculature, wearing worn black synth-leather jacket over compression shirt, tactical cargo pants with reinforced pockets, scuffed runners. Visible burn scar on right forearm. Neural interface jack at base of neck. Standing in forward lean posture with coiled alertness, eyes tracking. Worn braided cord around left wrist. Matte black utilitarian aesthetic. Gritty Great Lakes Metropolitan Zone industrial setting, cool neon accent lighting, worn concrete environment, urban neo-noir atmosphere. High contrast, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 34.8,
-    "South Asian": 32.8,
-    "East Asian": 32.4
+    "East Asian": 23.5,
+    "Central Asian": 23.1,
+    "Southeast Asian": 22.6,
+    "Northern European": 20.6,
+    "Hispanic/Latin American": 8,
+    "Sub-Saharan African": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 7,
+        "Hakka": 7.6
+      },
+      "Korean": {
+        "Korean": 8.9
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 4.7
+      },
+      "Turkic": {
+        "Uyghur": 10.2
+      },
+      "Iranian Central": {
+        "Tajik": 6.4,
+        "Hazara": 1.8
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 14.3
+      },
+      "Indonesian": {
+        "Javanese": 1.1
+      },
+      "Filipino": {
+        "Waray": 4.5,
+        "Bicolano": 2.7
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 2.9,
+        "German": 2.1
+      },
+      "British Isles": {
+        "English": 7.7
+      },
+      "Scandinavian": {
+        "Swedish": 0.8,
+        "Norwegian": 7.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 0.3,
+        "Dominican": 0.3
+      },
+      "South American": {
+        "Peruvian": 0.6,
+        "Colombian": 2.2
+      },
+      "Central American": {
+        "Salvadoran": 4.4,
+        "Guatemalan": 0.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 0.5,
+        "Zimbabwean": 0.3
+      },
+      "West African": {
+        "Guinean": 1.4
+      }
+    }
+  }
 }

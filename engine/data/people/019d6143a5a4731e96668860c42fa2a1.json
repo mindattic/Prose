@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a4731e96668860c42fa2a1",
   "type": "character",
-  "name": "Ngozi Asomaning-Krstić",
+  "name": "Ember Kjellberg-Bouzid",
   "aliases": [
     "The Keeper",
     "Saint Adjara (mockingly, then sincerely)"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Irkalla, Sub-Level 12 — the Antechamber of Residuals, a naturally formed cavern in the bedrock, near sub-level access near Dearborn and Jackson",
-  "description": "Adjara Solano-Tuvalu is the oldest permanent resident of Irkalla's deep levels and the sole keeper of its seven primary E.L.F. shrines — altars built into the junction points of old power infrastructure where digital spirits have been petitioned for generations. She is a large woman, heavy in the way of someone who has been sedentary for years but was once enormously physically strong; her hands remain extraordinary, thick-fingered and capable. Her skin is dark and deeply lined, her white hair kept in a complex series of wrapped cords that she has not undone in nine years, adding new ones for significant events. Each cord holds a small component — a stripped chip, a circuit fragment, a defunct data-bead — that represents a petition she carried to a shrine.\n\nShe came to Irkalla at thirty as an electrician and stayed because a spirit spoke to her. She tells this story simply and without embellishment. She was repairing a junction node in Sub-Level 9 when the node spoke — not in words, but in a pattern of power fluctuations she recognized as intentional. She has been in conversation with what she calls the Residuals ever since: E.L.F.s that have been accumulating in the deep infrastructure for a century or more, grown strange and complex and very, very old. Her shrines are remarkable objects — living circuit assemblies that she has been tending and extending for decades, constantly receiving new data offerings from petitioners, constantly generating soft electrical activity that she interprets as the E.L.F. responses to prayer.",
+  "description": "Ember Kjellberg-Bouzid is the oldest permanent resident of Irkalla's deep levels and the sole keeper of its seven primary E.L.F. shrines — altars built into the junction points of old power infrastructure where digital spirits have been petitioned for generations. She is a large woman, heavy in the way of someone who has been sedentary for years but was once enormously physically strong; her hands remain extraordinary, thick-fingered and capable. Her skin is dark and deeply lined, her white hair kept in a complex series of wrapped cords that she has not undone in nine years, adding new ones for significant events. Each cord holds a small component — a stripped chip, a circuit fragment, a defunct data-bead — that represents a petition she carried to a shrine.\n\nShe came to Irkalla at thirty as an electrician and stayed because a spirit spoke to her. She tells this story simply and without embellishment. She was repairing a junction node in Sub-Level 9 when the node spoke — not in words, but in a pattern of power fluctuations she recognized as intentional. She has been in conversation with what she calls the Residuals ever since: E.L.F.s that have been accumulating in the deep infrastructure for a century or more, grown strange and complex and very, very old. Her shrines are remarkable objects — living circuit assemblies that she has been tending and extending for decades, constantly receiving new data offerings from petitioners, constantly generating soft electrical activity that she interprets as the E.L.F. responses to prayer.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -176,7 +176,7 @@
     "Mystic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -257,39 +257,21 @@
   "related_entities": [
     "Bio-Integrated Circuit Board",
     "Jefferson Switch",
-    "GLMZ",
     "The Tessera Residuals",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Bathysphere Networks",
+    "Dearborn Forge",
     "Irkalla",
+    "Circuit",
+    "Neural Palate",
     "The Pure Hand",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Elena Vasquez-9",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Fanta Hedlund-Diarra",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Nneka Lindqvist-Okafor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "TESSERA Widow Mk. III",
-    "Temur Achebe-Lindqvist",
-    "The Filament",
-    "The Heritage Vault",
-    "The Signal",
-    "The Third Rail",
-    "Tshiamo Vukić-Arellano",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ",
+    "Elena Vasquez-9"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "59.5% Sub-Saharan African (primary), 28.9% Eastern European (secondary), 11.6% Hispanic/Latin American (tertiary) — reflects the Ubiquitous Diaspora blend. Complex ancestry evident in facial structure and skin undertones.",
+    "heritage": "Southeast Asian primary (49%) with significant blending from Hispanic/Latin American (21%), North African (15.3%), and Sub-Saharan African (12.7%) ancestry, plus South Asian (2%) — a richly complex diaspora mix. Facial structure combines Southeast Asian bone architecture with broader features and warmer undertones from African heritage; skin depth and golden warmth reflect the Hispanic/Latin American contribution. This blend creates distinctive features: moderate cheekbone prominence, slightly rounded jawline, and eye set characteristic of Southeast Asian ancestry, yet enriched by the warmth and depth from North African and Sub-Saharan genetic influence.",
     "height_cm": 172,
     "weight_kg": 98,
     "build": "Heavy, sedentary frame with residual musculature in shoulders and forearms; large-boned structure suggesting former physical labor. Hands remain disproportionately strong and calloused despite age.",
@@ -297,8 +279,8 @@
     "hair_style": "Wrapped in nine-year-old arrangement of cloth cords and synthetic binding, each cord studded with embedded circuit fragments, stripped chips, and defunct data-beads — a living record of petitions carried",
     "hair_length": "Long (wrapped), foundation likely waist-length if unwound",
     "eye_color": "Dark brown, clouded slightly with age cataracts",
-    "skin_tone": "Deep warm brown with complex undertones from Sub-Saharan African majority ancestry, subtly enriched by Eastern European and Hispanic heritage — a richly blended complexion suggesting generations of diaspora mixture",
-    "complexion": "Deeply lined face, weathered by decades in artificially lit subterranean spaces; skin shows age spots and old burn scars on forearms from early electrical work; bone structure reflects mixed ancestry with broader features grounded in African heritage; perpetually calm expression, minimal cosmetic maintenance",
+    "skin_tone": "Warm deep mahogany-brown with Southeast Asian undertones enriched by North African depth and Sub-Saharan warmth, with subtle golden-amber luminosity from Hispanic/Latin American heritage — a richly blended complexion reflecting genuine diaspora ancestry",
+    "complexion": "Deeply lined face weathered by decades in artificially lit subterranean spaces; skin shows age spots and old burn scars on forearms from early electrical work; bone structure reflects Southeast Asian foundation with broader facial planes from North African and Sub-Saharan ancestry, warm golden undertones throughout; perpetually calm expression, minimal cosmetic maintenance",
     "distinguishing_marks": [
       "Burn scar pattern across left forearm (three parallel lines from 2168 electrical accident)",
       "Thin white scar on right temple from neural tap installation in 2168",
@@ -309,14 +291,60 @@
     "posture_movement": "Slow, deliberate movements despite heaviness; sits often and rises slowly but with surprising stability. Hands move with precision and grace even in age. Habitually touches surfaces gently as if reading them. Eyes unfocused when 'listening' to electrical activity.",
     "clothing_style": "Tier 5 deep-community: layered, heavily patched garments in faded indigo and dark grey, synthetic-blend fabrics chosen for durability and minimal static generation. Sleeveless tunics to allow shrine work. Wrapped cloth belt with hanging pouches containing small circuit tools, data-beads, and prayer offerings. No corporate branding. Footwear: soft-soled slippers worn through to the backing, modified for electrical grounding. Overall appearance is monastic, weathered, deliberately non-fashionable."
   },
-  "image_prompt": "An elderly figure, 172cm tall with a heavy, dignified frame, standing in dim subterranean shrine lighting. Skin deep warm brown with complex undertones from mixed Sub-Saharan African, Eastern European, and Hispanic heritage. Weathered face deeply lined by decades underground, with age spots and electrical burn scars across forearms; calm, serene expression. White hair wrapped in an intricate arrangement of cloth cords and synthetic bindings embedded with circuit fragments and defunct data-beads, bound waist-length. Dark brown eyes clouded slightly with age cataracts, gazing inward. Visible augmentations: aged chrome neural tap port at right temple with worn access grooves; right hand is a prosthetic with exposed fine-gauge copper probe filaments at fingertips and palm, synthetic skin over metallic framework. Faded circuit pattern tattoo visible on inner right wrist. Wearing layered Tier 5 deep-community garments in faded indigo and dark grey—heavily patched synthetic-blend fabrics, sleeveless tunic allowing shrine work, wrapped cloth belt with hanging pouches of tools and prayer offerings. Soft-soled grounding-modified slippers worn through at backing. Posture slow and deliberate but stable; hands move with precision and grace despite age. Monastic, weathered, non-fashionable appearance. Cyberpunk 2200s aesthetic, moody subterranean shrine environment with soft electrical luminescence, contemplative mood --ar 2:3 --v 6",
+  "image_prompt": "Ember Kjellberg-Bouzid, aged heavy-set figure, 172cm tall, warm mahogany-brown skin with Southeast Asian bone structure and broader African-influenced facial planes, deep facial lines from decades underground, dark eyes clouded with age cataracts, white hair wrapped in cloth cords studded with circuit fragments and data-beads reaching waist-length when unwound, visible aged chrome neural tap port at right temple, right hand prosthetic with exposed copper probe filaments, electrical contact scars on hands and parallel burn scars on left forearm, faded circuit tattoo on inner wrist, slow deliberate movements with surprising stability, wearing layered faded indigo and dark grey Tier 5 deep-community garments, sleeveless tunic, wrapped cloth belt with hanging pouches of shrine tools, worn grounding-modified slippers, monastic weathered appearance, touching surfaces with gentle precision, calm expression, subterranean shrine setting with soft artificial lighting casting gentle shadows on deeply lined face, GLMZ Great Lakes Metropolitan Zone, meditative and serene mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 59.5,
-    "Eastern European": 28.9,
-    "Hispanic/Latin American": 11.6
+    "Southeast Asian": 49,
+    "Hispanic/Latin American": 21,
+    "North African": 15.3,
+    "Sub-Saharan African": 12.7,
+    "South Asian": 2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 49
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 5.4,
+        "Nicaraguan": 7.7
+      },
+      "South American": {
+        "Venezuelan": 6.9,
+        "Argentine": 1
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 10.9,
+        "Tuareg": 4.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 4.1,
+        "Angolan": 2.1
+      },
+      "West African": {
+        "Ghanaian": 3.1
+      },
+      "East African": {
+        "Tanzanian": 3.4
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 1.5
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 0.2,
+        "Baloch": 0.3
+      }
+    }
+  }
 }

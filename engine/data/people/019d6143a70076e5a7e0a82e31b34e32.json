@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70076e5a7e0a82e31b34e32",
   "type": "character",
-  "name": "Rowan Wójcik",
+  "name": "Rowan Kulkarni",
   "aliases": [
     "Toll",
     "Mama Toll"
@@ -13,7 +13,7 @@
   "age": 51,
   "status": "active",
   "location": "South Deering Sump, specifically the Boilerplate Quarter commercial strip, near North Ave and Damen",
-  "description": "Toluwani is a large woman who moves with the deliberate economy of someone who learned long ago that size is information and waste is weakness. Her skin is very dark, mapped with a network of old scar tissue on the left forearm that she has never had repaired — she calls it the ledger, because each one corresponds to a lesson, and she is still learning. Her hair is thick and natural, shot through with silver she refuses to cover, worn pulled back for work and loose at home. Her eyes are unmodded warm brown and miss nothing. She has retractable ceramic-composite knuckle caps, practical rather than decorative, and a torso subdermal weave that she describes as 'just common sense at my age.'\n\nShe has worked the Boilerplate Quarter for twenty-three years, first as a runner, then as muscle, then as the person who decides how the Quarter works. She is not precisely in charge of a gang — she is more the load-bearing wall of an informal security arrangement that has kept the Sump's legitimate small businesses from being absorbed by three different Stockyard-adjacent syndicates. She collects her fees, handles disputes, and occasionally applies physical remediation to problems that require it. The shopkeepers mostly think of her the way people think of weather — a constant, sometimes destructive, ultimately just a feature of the environment. A few of them genuinely love her.",
+  "description": "Rowan Kulkarni is a large woman who moves with the deliberate economy of someone who learned long ago that size is information and waste is weakness. Her skin is very dark, mapped with a network of old scar tissue on the left forearm that she has never had repaired — she calls it the ledger, because each one corresponds to a lesson, and she is still learning. Her hair is thick and natural, shot through with silver she refuses to cover, worn pulled back for work and loose at home. Her eyes are unmodded warm brown and miss nothing. She has retractable ceramic-composite knuckle caps, practical rather than decorative, and a torso subdermal weave that she describes as 'just common sense at my age.'\n\nShe has worked the Boilerplate Quarter for twenty-three years, first as a runner, then as muscle, then as the person who decides how the Quarter works. She is not precisely in charge of a gang — she is more the load-bearing wall of an informal security arrangement that has kept the Sump's legitimate small businesses from being absorbed by three different Stockyard-adjacent syndicates. She collects her fees, handles disputes, and occasionally applies physical remediation to problems that require it. The shopkeepers mostly think of her the way people think of weather — a constant, sometimes destructive, ultimately just a feature of the environment. A few of them genuinely love her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -191,7 +191,7 @@
     "Enforcer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "South Deering Sump",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -252,34 +252,16 @@
     "South Deering Sump",
     "Gage Circuit",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Adaeze Chen-Hawkins",
-    "Lazarus LX-2 'Lab Rat'",
+    "Haze Johansson",
     "Silver",
+    "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Arcturus Exo-Runner Frame",
-    "Calumet Rise",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Enforcer Cruiser",
-    "GLMZ",
-    "Irontide Tidal Energy",
-    "Nnamdi Ostrowski-Faletolu",
-    "Palladian Construction",
-    "Stainless Steel",
-    "TESSERA TC-3 'Crucible'",
-    "The Arrangement",
-    "The Ledger",
-    "The Pure Hand",
-    "The Stockyard",
-    "The Sump",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+    "Compass Rose",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European (38.8%) with significant Northern European (28.4%) and East Asian (26.1%) ancestry, plus Sub-Saharan African (6.7%). The combination creates warm-toned brown skin with subtle undertones from the Northern and East Asian components—a slight golden warmth beneath the deeper pigmentation. Facial structure shows the broader cheekbones and eye shape characteristic of East Asian heritage, balanced with the stronger jaw and brow ridge from Eastern European ancestry.",
+    "heritage": "South Asian (34.8%) with significant Sub-Saharan African (28.1%) and Northern European (18.4%) ancestry, plus Southeast Asian (10.6%), Middle Eastern (6.4%), and minimal East Asian (1.7%) components. The combination creates deep warm brown skin with complex undertones—golden warmth from the South Asian and Southeast Asian heritage blending with the richer pigmentation from Sub-Saharan African ancestry, cooled slightly by Northern European influence. Facial structure shows the fuller cheekbones and slightly rounded face characteristic of South Asian heritage, balanced with the broader bone structure from Sub-Saharan African ancestry and the stronger jaw from Northern European genetics.",
     "height_cm": 183,
     "weight_kg": 94,
     "build": "Large-framed, powerfully built without excess fat. Broad shoulders, thick torso, strong legs. Carries weight like ballast — centered, deliberate. No vanity in the musculature; it is functional infrastructure.",
@@ -287,8 +269,8 @@
     "hair_style": "Thick, coarse natural texture. Pulled back in a utilitarian braid during work hours; worn loose and voluminous at home or during off-hours.",
     "hair_length": "Long (mid-back length)",
     "eye_color": "Warm brown, unmodified. Clear, direct gaze with crow's feet at the corners from decades of squinting at fine print and reading body language.",
-    "skin_tone": "Deep warm brown, evenly pigmented with subtle golden undertones from the East Asian and Northern European components blending with the Sub-Saharan African base",
-    "complexion": "Weathered and lined in ways that suggest age, exposure, and chronic attention to detail rather than neglect. Minimal makeup. A small scar at the left corner of her mouth, barely visible unless she's smiling. Broader cheekbones with slight epicanthic fold at the inner eyes, strong jawline. Her face reads as purposeful rather than decorative.",
+    "skin_tone": "Deep warm brown with golden-amber undertones, the result of complex blending: South Asian and Southeast Asian warmth layered over Sub-Saharan African richness and cooled by Northern European influence. Evenly pigmented with subtle depth from the four major ancestry components.",
+    "complexion": "Weathered and lined in ways that suggest age, exposure, and chronic attention to detail rather than neglect. Minimal makeup. Fuller cheekbones from South Asian heritage combined with broader bone structure from Sub-Saharan African ancestry, creating a face with both rounded warmth and structural strength. Strong jawline and defined brow bone from Northern European genetics. A small scar at the left corner of her mouth, barely visible unless she's smiling. Her face reads as purposeful rather than decorative.",
     "distinguishing_marks": [
       "Network of thin white scar tissue across the entire left forearm from wrist to elbow — deliberately unrepaired, each scar corresponding to a specific lesson or negotiation outcome. Called 'the ledger.'",
       "Small burn scar on the inside of her right wrist, old enough to be pale pink against her skin tone.",
@@ -299,15 +281,69 @@
     "posture_movement": "Stands with weight centered on the balls of her feet, not squared-off like a statue but ready. Moves with economical precision — no wasted motion, no flourish. Each step is deliberate. Her gaze sweeps environments in a specific pattern. Hands are usually at rest but positioned where they can move quickly. When speaking to someone, she maintains eye contact in a way that is not aggressive but communicates that she is processing everything.",
     "clothing_style": "Tier 4 working-class practical. Standard work uniform: charcoal or black reinforced canvas pants with deep pockets and knee reinforcement, tactical-cut. Steel-toed boots (currently a pair of Volkov brand, seven years old, re-soled twice). Long-sleeved shirts in neutral colors (gray, black, dark blue) — long sleeves specifically to display the ledger on her left arm as a kind of warning or credential, depending on context. A heavy canvas overcoat in charcoal, lined with thermal webbing, worn open. No jewelry except a plain stainless steel watch that has been repaired and customized so many times it is mostly practical rather than original. Lacks corpo styling entirely; has the look of someone who spends money on function and durability, not status."
   },
-  "image_prompt": "Rowan Wójcik, 183cm tall, powerfully built woman with deep warm brown skin and subtle golden undertones. Natural black hair with silver streaks, long and braided back. Broad cheekbones with slight East Asian eye shape, strong Eastern European jawline, weathered face with deliberate crow's feet. Warm brown unmodified eyes with direct, processing gaze. Visible ceramic-composite knuckle caps on relaxed hands. Left forearm covered in deliberate white scar tissue network (the ledger). Small mouth scar, jawline blade scar, faint three-circle tattoo on right inner forearm. Wearing charcoal reinforced canvas tactical pants, long-sleeved dark neutral shirt displaying the ledger, heavy charcoal canvas overcoat with thermal webbing worn open, seven-year-old Volkov steel-toed boots. Plain stainless steel customized watch. Standing centered on balls of feet in ready posture, economical movements, no wasted motion. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial warehouse setting, cool blue-grey lighting with warm practical work-light, gritty and functional aesthetic, no corpo style, function over status --ar 2:3 --v 6",
+  "image_prompt": "Rowan Kulkarni, a 183cm tall, powerfully built woman with deep warm brown skin and golden-amber undertones reflecting her South Asian, Sub-Saharan African, Northern European, and Southeast Asian heritage. Mid-back length black hair with silver-white streaking, pulled into a utilitarian braid, framing a weathered face with fuller cheekbones, strong jawline, and warm brown eyes showing crow's feet. Visible ceramic-composite knuckle caps on both hands with subtle off-white sheen. Left forearm displayed in long-sleeved dark gray shirt, showing intricate white scar tissue ledger running from wrist to elbow—deliberately unrepaired scars marking negotiations. Small blade scar along left jawline. Faint three-circle tattoo visible on right inner forearm. Worn charcoal canvas overcoat with thermal webbing lining, tactical-cut reinforced pants, steel-toed Volkov boots (seven-year-old, re-soled). Plain stainless steel watch showing heavy customization. Standing centered and ready, economical posture, direct penetrating gaze. GLMZ Great Lakes Metropolitan Zone, industrial lowlight warehouse or negotiation setting with cool neon accent lighting, gritty functional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 38.8,
-    "Northern European": 28.4,
-    "East Asian": 26.1,
-    "Sub-Saharan African": 6.7
+    "South Asian": 34.8,
+    "Sub-Saharan African": 28.1,
+    "Northern European": 18.4,
+    "Southeast Asian": 10.6,
+    "Middle Eastern": 6.4,
+    "East Asian": 1.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Telugu": 34.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 5.6,
+        "Senegalese": 2.4
+      },
+      "Central African": {
+        "Congolese": 15.8
+      },
+      "Southern African": {
+        "Mozambican": 2.8,
+        "Botswanan": 1.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 18.4
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 3.8
+      },
+      "Indonesian": {
+        "Javanese": 1.6
+      },
+      "Cambodian": {
+        "Khmer": 5.2
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 1.9
+      },
+      "Persian": {
+        "Iranian": 4.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.9
+      },
+      "Chinese": {
+        "Hakka": 0.8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5dd7342b1c2ac8b3938c91b",
   "type": "character",
-  "name": "Amara Bustamante",
+  "name": "Katarzyna Szabó",
   "aliases": [
     "the Chrome Penitent",
     "Connie"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Bronzeline, between the transit overpass and the Copperhead boundary wall — operates from a repurposed shipping container shrine, near North Ave and Damen",
-  "description": "Conleth is rangy and restless, with pale olive skin covered in a patchwork of chrome prayer engravings — not augmentations exactly, but surface-etched circuitry in copper and silver, pressed into the skin of their forearms and hands by a practitioner they describe only as 'someone who understood what I was trying to do.' Their eyes are natural brown, their hair changes color by the week using a dye geneware follicle mod — currently deep amber. They have a split lip scar that never fully healed and they run their tongue over it when thinking. They are almost always moving: shifting weight, gesturing, pacing the small interior of their container-shrine.\n\nChrome prayer is not a unified religion — it is a practice: the belief that augmentation creates points of spiritual contact between the organic and the informatic, and that prayer directed through chrome reaches frequencies unaugmented speech cannot. Conleth came to it through their own experience of augmentation after an accident — they received emergency chassis work that saved their left arm, and during the recovery felt something they could only describe as 'being spoken to through the metal.' They do not claim this was an E.L.F., a god, or their own concussed mind. They claim it was real and that it changed their understanding of the body. Now they run an open-door shrine where anyone can come for chrome blessing, circuit prayer, or just to sit with someone who won't ask where they came from.",
+  "description": "Katarzyna Szabó is rangy and restless, with pale olive skin covered in a patchwork of chrome prayer engravings — not augmentations exactly, but surface-etched circuitry in copper and silver, pressed into the skin of their forearms and hands by a practitioner they describe only as 'someone who understood what I was trying to do.' Their eyes are natural brown, their hair changes color by the week using a dye geneware follicle mod — currently deep amber. They have a split lip scar that never fully healed and they run their tongue over it when thinking. They are almost always moving: shifting weight, gesturing, pacing the small interior of their container-shrine.\n\nChrome prayer is not a unified religion — it is a practice: the belief that augmentation creates points of spiritual contact between the organic and the informatic, and that prayer directed through chrome reaches frequencies unaugmented speech cannot. Katarzyna Szabó came to it through their own experience of augmentation after an accident — they received emergency chassis work that saved their left arm, and during the recovery felt something they could only describe as 'being spoken to through the metal.' They do not claim this was an E.L.F., a god, or their own concussed mind. They claim it was real and that it changed their understanding of the body. Now they run an open-door shrine where anyone can come for chrome blessing, circuit prayer, or just to sit with someone who won't ask where they came from.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -160,7 +160,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bronzeline",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,31 +180,19 @@
     "Bronzeline",
     "Copperhead",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "The Accidental",
     "Tessera Corponation",
-    "Babel",
+    "Circuit",
     "Copper",
     "Silver",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Compass Rose",
     "The Pale Mile",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Axolotl Regenerative Suite",
-    "Emeka Johansson-Orozco",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Nnenna Boateng-Szymański",
-    "Obafemi Szczypiński-Lautoa",
-    "Saodat Mirzoyan-Fubara",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Circuit",
-    "The Heritage Vault",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (59.2%), Sub-Saharan African (26.0%), Middle Eastern (14.8%) — a rich tri-continental blend reflected in warm golden-brown skin with subtle undertones from each ancestry, creating a complex warm undertone palette",
+    "heritage": "Sub-Saharan African (55.5%), Eastern European (35.5%), Hispanic/Latin American (4.4%), South Asian (3.0%), East Asian (1.6%) — a striking multi-continental blend dominated by Sub-Saharan African and Eastern European heritage. The primary ancestry creates richly melanated skin with warm golden undertones; Eastern European heritage adds subtle cool undertones creating complexity in how light plays across features. South Asian and Latin American admixture contributes warmth and slight midface widening. East Asian ancestry contributes minimal but present refinement to bone structure.",
     "height_cm": 177,
     "weight_kg": 68,
     "build": "Rangy and lean, long-limbed with minimal body fat; the build of someone in constant motion, muscles defined but not bulky, shoulders slightly hunched from habitual forward posture",
@@ -212,26 +200,81 @@
     "hair_style": "Shoulder-length, textured, often pulled back with wire or fabric scraps; shows regrowth bands of natural dark brown underneath",
     "hair_length": "Medium",
     "eye_color": "Natural warm brown, observant and alert",
-    "skin_tone": "Warm golden-brown with honeyed undertones — a harmonious blend of Latin American, Sub-Saharan African, and Middle Eastern ancestry. Sun-kissed on exposed areas (forearms, neck, upper chest) from street-level living",
-    "complexion": "Strong, defined cheekbones and angular jaw reflecting African heritage features; perpetually tired-looking around the eyes from irregular sleep. Skin shows signs of street-level living — minor scarring, solar exposure on forearms and neck. Constant subtle movement of facial muscles, tongue running over split lip scar when thinking. Facial structure carries warmth from Latin American ancestry with the angular bone structure influenced by African heritage and Middle Eastern features in nose and brow ridge.",
+    "skin_tone": "Deep warm brown with golden undertones — richly melanated from dominant Sub-Saharan African heritage (55.5%), warmed further by Latin American and South Asian admixture. Sun-kissed on exposed areas (forearms, neck, upper chest) from street-level living. Eastern European heritage (35.5%) creates subtle cool undertones visible in shadows and cooler lighting, generating visual complexity as light plays across the skin.",
+    "complexion": "Strong, defined cheekbones with angular jaw reflecting Sub-Saharan African heritage; slight widening across midface from South Asian ancestry (3%); refined jaw contours influenced by Eastern European heritage. Perpetually tired-looking around the eyes from irregular sleep. Minor scarring and solar exposure on forearms and neck from street living. Constant subtle facial muscle movement, tongue running over split lip scar when thinking. Bone geometry carries African-dominant structure with subtle South and East Asian refinement.",
     "distinguishing_marks": [
       "Split lip scar (vertical, center of lower lip, never fully healed, tissue lighter than surrounding skin)",
       "Copper and silver prayer engravings across both forearms — intricate etched circuitry patterns pressed into skin, creating raised silvery-copper lines that catch light when moving",
       "Prayer circuit etchings continue across the back of both hands in geometric mandala-like patterns, ending at fingertips",
       "Network of thin white scars along left shoulder and upper left arm where chassis meets organic tissue (emergency augmentation junction lines)"
     ],
-    "visible_augmentations": "Left arm from elbow down is a functional chrome chassis (basic-grade emergency replacement) — matte dark metal with polished sections, covered in exterior copper-silver prayer etchings that mirror the organic circuitry on their biological arm. Joint seams visible at wrist and elbow. The contrast between organic right arm (warm golden-brown skin with etchings) and metallic left arm (etched chrome) is striking and deliberate. No visible ocular or neural augmentations.",
-    "posture_movement": "Almost never still — weight shifts constantly, hands gesture while speaking, paces in tight circles during conversation. Moves with economical grace despite restlessness, as if their body is tuned to the frequency of their own prayers. Leans forward when listening, head tilted slightly. Left arm moves with subtle mechanical precision, not quite matching organic arm's fluidity, but they move it with complete comfort and intention.",
-    "clothing_style": "Tier 4-5 practical streetwear, worn but maintained: oversized linen shirt (cream or pale gray, sleeves rolled to mid-forearm to display prayer etchings) layered under a patched canvas vest covered in small metal buttons, charms, and wire-wound symbols. Loose-fitting dark cargo pants with multiple pockets (some containing prayer cards, wire, small offerings). Worn canvas shoes. Accessorized with salvaged jewelry — twisted copper wire bracelets, a single silver chain worn visible, fabric wraps around wrists. Everything suggests improvisation and spiritual intentionality rather than fashion."
+    "visible_augmentations": "Left arm from elbow down is a functional chrome chassis (basic-grade emergency replacement) — matte dark metal with polished sections, covered in exterior copper-silver prayer etchings that mirror the organic circuitry on biological right arm. Joint seams visible at wrist and elbow. Striking contrast between organic right arm (deep warm brown skin with prayer etchings) and metallic left arm (etched chrome). No visible ocular or neural augmentations.",
+    "posture_movement": "Almost never still — weight shifts constantly, hands gesture while speaking, paces in tight circles during conversation. Moves with economical grace despite restlessness, as if tuned to frequency of own prayers. Leans forward when listening, head tilted slightly. Left arm moves with subtle mechanical precision, not quite matching organic arm's fluidity, but moved with complete comfort and intention.",
+    "clothing_style": "Tier 4-5 practical streetwear, worn but maintained: oversized linen shirt (cream or pale gray, sleeves rolled to mid-forearm to display prayer etchings) layered under patched canvas vest covered in small metal buttons, charms, and wire-wound symbols. Loose-fitting dark cargo pants with multiple pockets (some containing prayer cards, wire, small offerings). Worn canvas shoes. Accessorized with salvaged jewelry — twisted copper wire bracelets, single silver chain worn visible, fabric wraps around wrists. Everything suggests improvisation and spiritual intentionality."
   },
-  "image_prompt": "Cyberpunk 2226 character Amara Bustamante: 177cm tall lean figure with warm golden-brown skin blending Latin American, Sub-Saharan African, and Middle Eastern heritage. Deep textured amber hair (geneware-modified, shoulder-length, pulled back with wire scraps showing dark brown regrowth). Sharp defined cheekbones, warm brown eyes, split lip scar center lower lip. Cream linen shirt rolled to mid-forearm displaying intricate copper-silver prayer circuit etchings on both arms, extending in mandala patterns across hands. Left arm replaced with matte dark chrome chassis from elbow down with etched prayer patterns mirroring organic arm, visible joint seams. Patched canvas vest with metal buttons and wire-wound charms, dark cargo pants. Twisted copper wire bracelets, silver chain, fabric wrist wraps. Posture slightly forward-leaning, restless energy, hands gesturing. Sun-kissed exposed skin, minor scars, street-worn but maintained. Great Lakes Metropolitan Zone neon-lit background, evening lighting catching chrome and copper etchings, spiritual and practical aesthetic. Cyberpunk street culture atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait of Katarzyna Szabó, tall lean androgynous figure with deep warm-brown richly melanated skin with golden undertones showing subtle cool undertones in shadows. Angular cheekbones, defined jaw, warm brown observant eyes, tired expression. Natural dark brown hair with deep amber geneware modification showing regrowth bands, shoulder-length textured, pulled back with wire scraps. Vertical split lip scar on lower lip. Right arm deep brown skin covered in intricate copper-silver prayer etchings in circuitry patterns across forearm and hand. Left arm replaced with matte dark chrome chassis from elbow down, polished sections, exterior prayer etchings mirroring right arm, mechanical joint seams at wrist and elbow. Wearing oversized cream linen shirt with rolled sleeves, patched canvas vest with metal buttons and wire-wound charms, dark cargo pants, worn canvas shoes. Twisted copper wire bracelets, visible silver chain, fabric wrist wraps. Hunched shoulders, constant subtle motion captured mid-gesture, forward-leaning posture, economical grace despite restlessness. Street-level living signs — minor scarring, solar exposure on forearms and neck, worn but intentionally maintained clothing. Spiritual and improvised aesthetic. Great Lakes Metropolitan Zone urban environment, cool evening lighting catching prayer etchings, neo-noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 59.2,
-    "Sub-Saharan African": 26.0,
-    "Middle Eastern": 14.8
+    "Sub-Saharan African": 55.5,
+    "Eastern European": 35.5,
+    "Hispanic/Latin American": 4.4,
+    "South Asian": 3,
+    "East Asian": 1.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 14.4,
+        "Nigerian": 10.9
+      },
+      "Southern African": {
+        "South African": 3.9,
+        "Botswanan": 3.5
+      },
+      "Central African": {
+        "Angolan": 19.1,
+        "Congolese": 3.7
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 35.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1.9
+      },
+      "Central American": {
+        "Salvadoran": 1
+      },
+      "South American": {
+        "Peruvian": 1.5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.8,
+        "Sinhalese": 0.8
+      },
+      "Nepali": {
+        "Nepali": 1.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.2
+      },
+      "Chinese": {
+        "Shanghainese": 0.5,
+        "Cantonese": 0.1
+      },
+      "Korean": {
+        "Korean": 0.8
+      }
+    }
+  }
 }

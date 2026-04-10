@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7247c099dbb0ded5045e7f3",
   "type": "character",
-  "name": "Vesper Ixchel-Villalobos",
+  "name": "Vesper Konaté-Villalobos",
   "aliases": [
     "Spore",
     "Mama Spore"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Irkalla, Sub-Level 7 — the 'Bloom Halls', a repurposed water reclamation chamber, near sub-level access near State and Van Buren",
-  "description": "Yetunde Abashidze-Tarawa is a broad-shouldered woman who moves through her fungal gardens with the deliberate grace of someone who has learned to never knock anything over in the dark. She is tall, with deep brown skin that has taken on an extraordinary quality in her years underground: faint bioluminescent patches on her forearms and the sides of her neck — not implants, but a genuine dermal symbiosis with a engineered photobacterial culture she cultivated herself and chose to inoculate into her own skin thirty years ago. In the dim blue-green glow of the Bloom Halls, she is hauntingly beautiful. On the rare occasions she surfaces, people stare.\n\nShe grows over forty varieties of engineered and wild-caught fungus in a network of cultivation racks that fill three former water reclamation chambers. She trades in food, medicine (several of her cultures have antibiotic and analgesic properties), and a mild psychoactive she calls Quietcap that she dispenses only to people she has personally assessed as not in crisis. She is the closest thing Irkalla's sub-level community has to a matriarch, doctor, and pharmacist — a role she accepted reluctantly and now occupies with the resigned authority of someone who knows no one else will do it.",
+  "description": "Vesper Konaté-Villalobos is a broad-shouldered woman who moves through her fungal gardens with the deliberate grace of someone who has learned to never knock anything over in the dark. She is tall, with deep brown skin that has taken on an extraordinary quality in her years underground: faint bioluminescent patches on her forearms and the sides of her neck — not implants, but a genuine dermal symbiosis with a engineered photobacterial culture she cultivated herself and chose to inoculate into her own skin thirty years ago. In the dim blue-green glow of the Bloom Halls, she is hauntingly beautiful. On the rare occasions she surfaces, people stare.\n\nShe grows over forty varieties of engineered and wild-caught fungus in a network of cultivation racks that fill three former water reclamation chambers. She trades in food, medicine (several of her cultures have antibiotic and analgesic properties), and a mild psychoactive she calls Quietcap that she dispenses only to people she has personally assessed as not in crisis. She is the closest thing Irkalla's sub-level community has to a matriarch, doctor, and pharmacist — a role she accepted reluctantly and now occupies with the resigned authority of someone who knows no one else will do it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +179,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,27 +244,14 @@
     "Helix Biosystems",
     "The Reclamation Assembly",
     "Ferrofluid Induction Cannon FIC-6 'Ironbloom'",
-    "Aslan Vasquez-Chatterjee",
-    "Irkalla",
-    "Tessera Corponation",
-    "Nightlight",
-    "Anatoliy Faye-Nkrumah",
-    "Imara Solís-Khatgal",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Noir Dining",
-    "Sisay Bergqvist-Mallari",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech DuskBloom Low-Light Ocular Tuner",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore BloomFilter Olfactory Modulation Implant",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+    "Tessera Corponation",
+    "Irkalla",
+    "Nightlight"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant East Asian, Indigenous American, Sub-Saharan African, South Asian, and Eastern European ancestry — a complex multiethnic blend reflecting the Ubiquitous Diaspora. Her features carry the mestizaje of the Americas with East Asian eye shape and cheekbone structure, Sub-Saharan African lip fullness and hair texture, and South Asian warmth in her skin undertones.",
+    "heritage": "Complex multiethnic blend of Hispanic/Latin American (34.3%), Middle Eastern (21.8%), Indigenous American (18.6%), Sub-Saharan African (14.3%), South Asian (6.9%), and Southeast Asian (4.1%) ancestry — the Ubiquitous Diaspora made flesh. Her features reflect this global convergence: warm golden-brown skin with subtle undertones from the Latin, Middle Eastern, and South Asian components; fuller lips and natural textural richness from Sub-Saharan ancestry; defined cheekbones and a refined nose bridge carrying Middle Eastern structure; slight epicanthal fold at the eyes reflecting Southeast Asian lineage; and the broad facial plane characteristic of Indigenous American heritage. A living mosaic of the 22nd century's population mobility.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial, muscular through deliberate work rather than training — strong core and forearms from thirty years of careful handling in tight spaces, carrying nutrient loads, and tending cultivation racks. Not heavy, but densely built.",
@@ -272,8 +259,8 @@
     "hair_style": "Kept in tight, practical braids pinned close to the scalp; functional, no ornamentation",
     "hair_length": "Medium",
     "eye_color": "Deep brown, slightly yellowed at the whites from decades in low-light conditions",
-    "skin_tone": "Rich warm brown with golden undertones — the blended result of Hispanic, Indigenous American, Sub-Saharan African, and South Asian ancestry, slightly desiccated from underground humidity cycles",
-    "complexion": "Weathered but clear; minimal cosmetic care; fine lines around the eyes from constant low-light focus; slight age spots on temples. Slightly broad nose bridge with fuller lips reflecting her diverse ancestry. Her face carries the still attention of someone who listens more than speaks.",
+    "skin_tone": "Rich golden-brown with warm, honeyed undertones — the natural blending of Hispanic, Middle Eastern, Indigenous American, Sub-Saharan African, and South Asian heritage, slightly desiccated from underground humidity cycles",
+    "complexion": "Weathered but clear; minimal cosmetic care; fine lines around the eyes from constant low-light focus; subtle age spots on temples. Moderate nose bridge with fuller lips reflecting her diverse ancestry. Defined cheekbones carrying Middle Eastern structure. Her face carries the still attention of someone who listens more than speaks.",
     "distinguishing_marks": [
       "Faint bioluminescent patches across both forearms in abstract, organic patterns — blue-green photobacterial symbiote that glows softly in darkness, visible at night like living tattoos.",
       "Similar bioluminescent patches along both sides of the neck, fading toward the collarbone.",
@@ -284,17 +271,65 @@
     "posture_movement": "Moves with deliberate economy in confined spaces — no wasted motion, minimal jarring. Her gait is slow and careful even when moving quickly, a learned habit. When still, she has an almost meditative posture: shoulders relaxed, hands usually occupied (checking something, touching something, listening through her fingertips). In her gardens, she moves like she's underwater.",
     "clothing_style": "Tier 5 utilitarian: layered linen and moisture-wicking synth fabrics in muted grays, deep greens, and blacks — practical for temperature fluctuation and fungal spore exposure. Loose fitting to allow movement and air circulation. A long sleeveless vest (no collar, open front) worn over a long-sleeved undershirt — both enable visibility and access to her bioluminescent patches. Worn leather apron with deep pockets and reinforced seams, darkened by thirty years of work. Simple canvas slip-on shoes with good grip. No jewelry except a single thin bracelet of braided plant fiber. Clothes are clean but well-mended, showing careful maintenance rather than replacement."
   },
-  "image_prompt": "Vesper Ixchel-Villalobos, a 178cm tall 82kg woman with warm golden-brown skin reflecting Hispanic, East Asian, Indigenous American, Sub-Saharan African, and South Asian heritage. Steel gray braids pinned close to her scalp. Deep brown eyes with slightly yellowed whites. Fine lines around her eyes, weathered but clear complexion, fuller lips, broad nose bridge. Faint blue-green bioluminescent patterns glowing softly on both forearms and neck in abstract organic shapes. Deep scar on right outer forearm partially obscured by bioluminescence. Small mesh respiratory filter ports flanking her septum. Wearing loose layered linen in muted grays and deep greens, long-sleeved undershirt beneath sleeveless open vest, worn leather work apron with reinforced seams, canvas slip-ons with good grip. Single braided plant fiber bracelet. Deliberate, economical posture with relaxed shoulders. Underground hydroponic garden setting, soft blue-green bioluminescent glow illuminating her in darkness, moisture-laden air, fungal spore wisps visible in light. Meditative, careful, underwater-like movement. Cyberpunk 2200s aesthetic, subtle biological augmentation, no obvious chrome. --ar 2:3 --v 6",
+  "image_prompt": "Vesper Konaté-Villalobos, 178cm tall, broad-shouldered and dense-muscled from decades of cultivation work, standing in soft bioluminescent blue-green glow from organic patches on her forearms and neck. Rich golden-brown skin with warm undertones blending Hispanic, Middle Eastern, Indigenous American, Sub-Saharan, South Asian, and Southeast Asian heritage; weathered face with defined cheekbones, fuller lips, slight epicanthal folds, fine lines around deep brown eyes with yellowed whites. Steel gray braids pinned close to scalp. Wearing muted utilitarian layers: long-sleeved undershirt, sleeveless open vest, darkened leather work apron with deep pockets. Simple canvas slip-on shoes. Single braided plant fiber bracelet. Subtle nasal respiratory filter implant barely visible. Faint industrial burn scar on right forearm partially covered by bioluminescent symbiote. Standing in underground hydroponic garden setting, GLMZ, low-light cultivation space, meditative posture, hands occupied with careful work, economy of movement, atmospheric moisture visible in air, warm practical lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.6,
-    "East Asian": 21.3,
-    "Indigenous American": 20.7,
-    "Sub-Saharan African": 11.0,
-    "South Asian": 9.7,
-    "Eastern European": 6.7
+    "Hispanic/Latin American": 34.3,
+    "Middle Eastern": 21.8,
+    "Indigenous American": 18.6,
+    "Sub-Saharan African": 14.3,
+    "South Asian": 6.9,
+    "Southeast Asian": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 19.4
+      },
+      "South American": {
+        "Peruvian": 8.3
+      },
+      "Caribbean": {
+        "Puerto Rican": 6.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 5.9,
+        "Emirati": 10.6
+      },
+      "Kurdish": {
+        "Kurdish": 5.3
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 4.6,
+        "Maya": 14
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 2,
+        "Senegalese": 0.6
+      },
+      "Central African": {
+        "Congolese": 11.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 4.9,
+        "Gujarati": 2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 4.1
+      }
+    }
+  }
 }

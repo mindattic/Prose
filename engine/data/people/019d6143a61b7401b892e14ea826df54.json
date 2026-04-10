@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61b7401b892e14ea826df54",
   "type": "character",
-  "name": "Vikram Krishnamurthy",
+  "name": "Quinn Wojciechowski",
   "aliases": [
     "The Librarian",
     "Old Glass",
@@ -14,7 +14,7 @@
   "age": 61,
   "status": "active",
   "location": "The Circuit — operates from a private booth in a members-only tea house called The Leaf, near Damen and Armitage",
-  "description": "Glass Maren has been trading information in GLMZ for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists — consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years — a three-person operation that competes with Sable's network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence — who's doing what right now — the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven't planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
+  "description": "Quinn Wojciechowski has been trading information in GLMZ for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists — consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years — a three-person operation that competes with Sable's network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence — who's doing what right now — the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven't planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -193,41 +193,17 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Circuit",
     "VERIDIAN GHOST",
-    "ARCHIVE",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Circuit",
     "Silver",
     "Glass",
-    "Arcturus KS-7 'Nursery'",
-    "Chronicle",
-    "Ekaterina Dawit-Sulupinar",
-    "Emeka Johansson-Orozco",
-    "Kamala Blomberg-Konadu",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "LifeWire EvenKeel Mood Regulation Implant",
-    "Oumarou Svec-Ranginui",
-    "Ouroboros Systems Paradox Quantum Processing Array",
-    "Oxytrel",
-    "Patience Obumseli-Ferencz",
-    "Quilt",
-    "Sable",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Archive",
-    "The Pure Hand",
-    "Vantablack Media Confessor Tap — 'The Booth'",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (74.8%) with significant Sub-Saharan African (15.8%) and Pacific Islander (9.4%) ancestry—a genetic blend reflecting the Ubiquitous Diaspora. Predominantly South Asian skeletal and facial structure with melanin contributions from African and Oceanic lineages.",
+    "heritage": "Eastern European (28.9%), East Asian (25.2%), Southeast Asian (25.1%), Pacific Islander (11.9%), Sub-Saharan African (4.9%), and South Asian (4.0%) ancestry—a complex genetic blend reflecting the Ubiquitous Diaspora. The phenotype reflects balanced contributions across multiple continental lineages: moderate East and Southeast Asian skeletal structure tempered by Eastern European bone density and frame, creating a tall lean silhouette. Warm medium-brown skin tone with amber and bronze undertones from the layered contributions of Southeast Asian, Pacific Islander, and Sub-Saharan African ancestry, creating a sun-kissed appearance maintained through consistent protection and indoor work habits.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and angular, the frame of someone who has never carried excess — shoulders still straight despite age, but with the subtle stoop of someone who has spent decades bent over documents and archives",
@@ -235,8 +211,8 @@
     "hair_style": "Parted to the left, combed back in a style unchanged since the 2190s — carefully maintained rather than fashionable",
     "hair_length": "Medium, just touching the collar",
     "eye_color": "Deep brown with subtle warmth, sharp and attentive, with faint cataracts beginning at the edges — a sign of age he refuses to have corrected surgically",
-    "skin_tone": "Warm medium brown, the result of South Asian genetics brightened by Pacific Islander heritage—sun-kissed amber undertones beneath the surface, maintained by consistent sun discipline and indoor work habits",
-    "complexion": "Clean-shaven, skin weathered into careful lines rather than deep wrinkles — a face that reads as distinguished rather than aged. Fine capillaries visible at the temples. Small scar at the left jawline, thin and old, possibly from a blade or surgical incision from his corporate days. Subtle prominence of cheekbones and defined jawline reflecting South Asian ancestry, with slight facial width from African heritage.",
+    "skin_tone": "Warm medium brown with amber and bronze undertones, the result of Eastern European, East Asian, Southeast Asian, Pacific Islander, and Sub-Saharan African genetic contributions—sun-kissed and maintained by consistent sun discipline and indoor work habits",
+    "complexion": "Clean-shaven, skin weathered into careful lines rather than deep wrinkles — a face that reads as distinguished rather than aged. Fine capillaries visible at the temples. Small scar at the left jawline, thin and old, possibly from a blade or surgical incision from his corporate days. Balanced cheekbone prominence and defined jawline reflecting the confluence of East Asian and Eastern European bone structure, with moderate facial width from Southeast Asian and Pacific Islander heritage, and subtle warm undertones from Sub-Saharan African ancestry.",
     "distinguishing_marks": [
       "Thin surgical scar running 2cm along the left jawline, pale and precise, dating from his pharmaceutical analyst years (likely implant insertion scar)",
       "Age spots on the back of his hands, small and regular, suggesting careful sun protection throughout life",
@@ -246,14 +222,77 @@
     "posture_movement": "Moves with deliberate slowness — not infirmity, but intention. Sits with perfect posture, hands folded or occupied with tea. Eyes track conversations without head movement. Speaks rarely and only to make a point; long silences are comfortable for him. Walks as if conserving energy, each step measured.",
     "clothing_style": "Tier 2-3 aesthetic frozen in time: charcoal or navy wool slacks tailored to fit his lean frame, linen shirts in cream or pale blue with mother-of-pearl buttons, always pressed. A dark wool blazer (the same one, rotated through careful dry cleaning) with a subtle sheen from age. A silk scarf in neutral tones, tied with precision. Shoes are oxford loafers, black leather, maintained to mirror polish. A mechanical watch (not smart, not networked) with a leather band. Everything is expensive and nothing is new — the wardrobe of someone who understands that fashion changes but quality endures."
   },
-  "image_prompt": "Vikram Krishnamurthy, distinguished South Asian-heritage man in his 70s with warm medium-brown skin and silver-white hair, 188cm tall, lean angular build. Clean-shaven with defined cheekbones, sharp observant brown eyes with age cataracts, thin pale surgical scar at left jawline. Wearing impeccably tailored charcoal wool slacks, cream linen shirt with mother-of-pearl buttons, dark wool blazer with subtle sheen, neutral silk scarf tied with precision, mirror-polish black oxford loafers, mechanical watch with leather band. Seated with perfect posture in dim archive or study setting, hands folded, contemplative expression. Cyberpunk 2226, warm amber lighting casting shadows across distinguished face, neo-noir aesthetic. Hyper-detailed, photorealistic, moody atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Quinn Wojciechowski, distinguished 2226 archival researcher, warm medium-brown skin with amber undertones, silver-white hair parted left and combed back, deep attentive brown eyes with age-softened edges. Lean 188cm frame in tailored charcoal wool slacks, cream linen shirt with pearl buttons, aged dark wool blazer with subtle sheen, silk scarf in neutral tones tied with precision. Black oxford loafers polished to mirror shine. Mechanical watch with leather band. Clean-shaven face marked by fine weathered lines and a thin surgical scar along left jawline, age spots on hands from decades of sun discipline. Posture perfectly straight, movement deliberate and measured. GLMZ 2200s archive setting, warm amber and indigo lighting, background of holographic data and vintage documents, introspective mood of measured contemplation, subtle exhaustion of lifelong institutional work. High resolution, sharp focus on facial dignity and worn quality of timeless clothing. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 74.8,
-    "Sub-Saharan African": 15.8,
-    "Pacific Islander": 9.4
+    "Eastern European": 28.9,
+    "East Asian": 25.2,
+    "Southeast Asian": 25.1,
+    "Pacific Islander": 11.9,
+    "Sub-Saharan African": 4.9,
+    "South Asian": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 1.3,
+        "Polish": 1
+      },
+      "Slavic South": {
+        "Bulgarian": 3.6
+      },
+      "Slavic East": {
+        "Russian": 23
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 19.8
+      },
+      "Korean": {
+        "Korean": 5.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 17.3
+      },
+      "Cambodian": {
+        "Khmer": 6.6
+      },
+      "Indonesian": {
+        "Javanese": 0.7,
+        "Sumatran": 0.5
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 5.9
+      },
+      "Polynesian": {
+        "Samoan": 4.6,
+        "Hawaiian": 1.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 4.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.4,
+        "Sinhalese": 0.2
+      },
+      "Indian": {
+        "Bengali": 0.7
+      }
+    }
+  }
 }

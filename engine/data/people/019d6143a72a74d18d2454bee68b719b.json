@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Shelf, Brewer's Spine, near Halsted and Chicago Ave",
-  "description": "Yewande is a broad-shouldered woman with deep umber skin mapped by old scalpel scars she gave herself during teaching demonstrations, and hair grown to silver-streaked natural coils she keeps pinned with surgical clamps when she works. Her left eye is a battlefield prosthetic—matte grey iris, slightly too large for the socket, giving her a permanent look of asymmetric scrutiny. She moves with the deliberate economy of someone who has performed appendectomies in turbulent environments and knows that wasted motion costs lives.\n\nShe left the Aurochs Medical Complex after seventeen years when she refused to deny care to an uninsured dockworker whose employer had flagged him as a liability. She set up on The Shelf within six months with secondhand equipment and a reputation that spread faster than she intended. She is brisk, unsentimental, and privately devastated by every patient she loses—she lights a data candle to the local E.L.F. she calls Saint Incision after each death, leaving a recorded voice note describing what she could have done better.",
+  "description": "Atlas Johansson is a broad-shouldered woman with deep umber skin mapped by old scalpel scars she gave herself during teaching demonstrations, and hair grown to silver-streaked natural coils she keeps pinned with surgical clamps when she works. Her left eye is a battlefield prosthetic—matte grey iris, slightly too large for the socket, giving her a permanent look of asymmetric scrutiny. She moves with the deliberate economy of someone who has performed appendectomies in turbulent environments and knows that wasted motion costs lives.\n\nShe left the Aurochs Medical Complex after seventeen years when she refused to deny care to an uninsured dockworker whose employer had flagged him as a liability. She set up on The Shelf within six months with secondhand equipment and a reputation that spread faster than she intended. She is brisk, unsentimental, and privately devastated by every patient she loses—she lights a data candle to the local E.L.F. she calls Saint Incision after each death, leaving a recorded voice note describing what she could have done better.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -179,7 +179,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,29 +237,16 @@
     "Helix Biosystems",
     "Brewer's Spine",
     "The Shelf",
-    "Silver",
-    "Slagworks Industrial",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Chicago",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Anatoliy Faye-Nkrumah",
-    "Crucible Industries CT-X 'Gauntlet'",
-    "Davi Ousseini-Brătianu",
-    "Fanta Popov-Adjei",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Mika Sorel",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo RR-1 'Rattlesnake'",
-    "Sorin Ekwensi-Balasanyan",
-    "The Pure Hand",
-    "The Suture Collective"
+    "Chicago",
+    "Silver",
+    "Atlas",
+    "Slagworks Industrial",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic blend: 33% Hispanic/Latin American, 30% East Asian, 27% South Asian, 10% Sub-Saharan African. Her features reflect this complex diaspora — warm bronze-brown skin with subtle golden undertones from the South Asian ancestry, high and prominent cheekbones with slight East Asian cant, full lips and broader nose bridge typical of Latin American and African heritage, creating a striking and unconventional face that reads as distinctly 2226 GLMZ rather than any single geographic origin.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Northern European (44.2%) and Indigenous American (31.8%) form her dominant genetic foundation, creating strong structural features. Layered with significant Hispanic/Latin American (8.8%), Sub-Saharan African (8.6%), and Southeast Asian (6.6%) ancestry, her phenotype reads as distinctly 2226 — a striking synthesis rather than any single origin. Her bone structure balances Northern European angularity with Indigenous American prominence, her skin tone carries warmth from Latin American and African ancestry, and her overall presence reflects generations of global mixing.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and powerfully built, with dense musculature across her chest and back — the physiology of someone who has spent decades performing surgical work and moving heavy equipment. Not lean, not soft; economical and functional.",
@@ -267,8 +254,8 @@
     "hair_style": "Kept in natural coils, pinned back with surgical clamps during work; otherwise loose but controlled",
     "hair_length": "Medium to long (shoulder-length when unpinned)",
     "eye_color": "Right eye: dark brown, natural. Left eye: matte grey iris, prosthetic, slightly oversized for the socket",
-    "skin_tone": "Warm bronze-brown with golden undertones, ranging from caramel to rich mahogany across her body",
-    "complexion": "Weathered but meticulously maintained. Minimal scarring on the face itself, but her hands and forearms show fine linear marks from years of surgical work and self-inflicted teaching demonstrations. High cheekbones with subtle East Asian structure, full lips, broad nose bridge reflecting her multiethnic ancestry. Her expression defaults to focused attentiveness; the asymmetric prosthetic gives her an appearance of permanent analytical scrutiny.",
+    "skin_tone": "Warm olive-bronze, the result of her multiethnic ancestry blending — fair enough to show Northern European heritage, deep enough to reflect Indigenous American, African, and Southeast Asian lineage. Even complexion with subtle warm undertones across her body, ranging from cream-toned to soft bronze.",
+    "complexion": "Weathered but meticulously maintained. Minimal scarring on the face itself; her Indigenous American and African ancestry gives her skin a resilient quality that resists superficial damage. High, prominent cheekbones with structural definition from her Northern European and Indigenous American heritage. Full lips with subtle melanin variation. Moderate-width nose bridge reflecting her genetic diversity. Her expression defaults to focused attentiveness; the asymmetric prosthetic gives her an appearance of permanent analytical scrutiny.",
     "distinguishing_marks": [
       "Fine linear scars across both forearms and the backs of both hands, self-inflicted during surgical demonstrations, arranged in clusters.",
       "Thin surgical scar running from her left temple down to her cheekbone, partially obscured by the prosthetic socket.",
@@ -279,15 +266,61 @@
     "posture_movement": "She moves with deliberate economy and surgical precision — no wasted motion, each gesture purposeful. She stands slightly forward-leaning, as if perpetually ready to respond to an emergency. Her hands are constantly active: adjusting clamps in her hair, checking vital readouts, repositioning instruments. When still, she appears coiled rather than relaxed.",
     "clothing_style": "Tier 5 practical. Typically wears a heavily modified surgical scrub top (faded teal, stained with iodine and old blood she no longer bothers to fully clean), reinforced cargo pants with multiple utility pockets filled with instruments, and scuffed no-name synthleather boots rated for biohazard environments. A long grey coat (salvaged from the Aurochs Medical Complex departure) covers everything when she moves through Brewer's Spine. She wears no jewelry except for a worn data-embedded pendant under her shirt — the E.L.F. saint candle for her lost patients. Gloves are usually surgical nitrile, often ripped and replaced mid-procedure."
   },
-  "image_prompt": "Atlas Johansson, cyberpunk 2226, GLMZ street surgeon: warm bronze-brown skin with golden undertones, high cheekbones with subtle East Asian structure, full lips, dark brown right eye and oversized matte grey prosthetic left eye implant with chrome socket, dark coiled hair pinned back with surgical clamps, faded teal stained surgical scrub top, reinforced cargo pants, scuffed synthleather boots, fine surgical scars across hands and forearms, subdermal haptic mesh with faint luminescent tracery, grey salvaged medical coat, worn data pendant, surgical nitrile gloves. Standing in dim bioluminescent medical setting, forward-leaning posture, hands active and tense, focused analytical expression. Cyberpunk noir lighting, utilitarian and functional aesthetic, medical equipment in background. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Atlas Johansson, a 178cm powerfully-built surgeon in 2226 GLMZ near-future megacity setting. Medium-long natural dark brown coils with silver streaking, warm olive-bronze skin reflecting multiethnic Diaspora heritage (Northern European, Indigenous American, Hispanic, African, Southeast Asian blend). High prominent cheekbones, full lips, moderate nose bridge. Left eye is matte grey prosthetic in oversized chrome socket, giving analytical intensity; right eye natural dark brown. Weathered face with surgical precision focus. Fine linear scars across forearms and hands in clusters, burn mark on right wrist. Wearing faded teal surgical scrub top (iodine-stained), reinforced cargo pants with utility pockets, scuffed biohazard-rated boots. Long salvaged grey coat over shoulders. Surgical nitrile gloves, some ripped. Subdermal haptic tracery faintly luminescent across hands. Forward-leaning posture, hands active and purposeful. Dim clinical lighting casting harsh shadows across her mixed features, emphasizing the prosthetic's chrome. Brewer's Spine medical district background, sterile and industrial. Worn data-embedded pendant visible at neckline. Mood: focused, coiled, surgical precision incarnate. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.4,
-    "East Asian": 29.5,
-    "South Asian": 26.8,
-    "Sub-Saharan African": 10.3
+    "Northern European": 44.2,
+    "Indigenous American": 31.8,
+    "Hispanic/Latin American": 8.8,
+    "Sub-Saharan African": 8.6,
+    "Southeast Asian": 6.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 28.1,
+        "Swiss German": 5.2
+      },
+      "British Isles": {
+        "English": 7.1,
+        "Irish": 3.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 31.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 0.3,
+        "Salvadoran": 0.1
+      },
+      "Mexican": {
+        "Mexican": 4.5
+      },
+      "Caribbean": {
+        "Dominican": 3.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 8.6
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 3
+      },
+      "Thai": {
+        "Thai": 1
+      },
+      "Laotian": {
+        "Laotian": 2.6
+      }
+    }
+  }
 }

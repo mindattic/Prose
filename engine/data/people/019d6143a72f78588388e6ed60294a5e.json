@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72f78588388e6ed60294a5e",
   "type": "character",
-  "name": "Aero Ingebrigtsen",
+  "name": "Aero Taufa",
   "aliases": [
     "Ysa",
     "Ironmask"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Dearborn Forge, near Damen and Armitage",
-  "description": "Ysolde is wiry and kinetic, never quite still — they bounce a knee, tap a pattern on surfaces, turn a stylus through their fingers in endless loops. Their skin is medium brown, their eyes modified to shift through a slow amber-to-green cycle they bought on installment from a bodmod stall and haven't finished paying off. They keep their hair long and loose on days off and braided tight when they're working, and they have a small constellation of bioluminescent freckles across their nose and cheekbones that pulse faintly when they're excited or angry — which is most of the time.\n\nYsolde organizes Ferrogate Transit maintenance workers across three Dearborn Forge yards, in direct defiance of both Ferrogate's union-busting contractors and a faction within the official union that has grown comfortable with management. They're charismatic in the way of someone who has figured out exactly how to make you feel heard and then redirect that energy into collective action — they're not manipulative, exactly, but they are deliberate. They take risks that frighten older organizers. They also show up at 05:30 when someone's shift starts and stay until the last worker goes home.",
+  "description": "Aero Taufa is wiry and kinetic, never quite still — they bounce a knee, tap a pattern on surfaces, turn a stylus through their fingers in endless loops. Their skin is medium brown, their eyes modified to shift through a slow amber-to-green cycle they bought on installment from a bodmod stall and haven't finished paying off. They keep their hair long and loose on days off and braided tight when they're working, and they have a small constellation of bioluminescent freckles across their nose and cheekbones that pulse faintly when they're excited or angry — which is most of the time.\n\nAero Taufa organizes Ferrogate Transit maintenance workers across three Dearborn Forge yards, in direct defiance of both Ferrogate's union-busting contractors and a faction within the official union that has grown comfortable with management. They're charismatic in the way of someone who has figured out exactly how to make you feel heard and then redirect that energy into collective action — they're not manipulative, exactly, but they are deliberate. They take risks that frighten older organizers. They also show up at 05:30 when someone's shift starts and stay until the last worker goes home.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -194,7 +194,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dearborn Forge",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -260,33 +260,11 @@
     "Dearborn Forge",
     "Dredge Mining Collective",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus CK-5 'Bloodhound'",
-    "Cezar Watanabe-Gyasi",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Lyric",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Mexicantown Libre",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Gallows' Recurve Bow",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Collective",
-    "The Driftyard",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "Tshiamo Vukić-Arellano"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (Scandinavian) dominant with significant South Asian, East Asian, and Middle Eastern admixture; reflects the Ubiquitous Diaspora with a complex phenotype blending Nordic base with subtle South and East Asian features",
+    "heritage": "Pacific Islander dominant (59.6%) with substantial Eastern European (13.5%), North African (10.0%), Sub-Saharan African (9.6%), and Hispanic/Latin American (7.3%) ancestry; phenotype reflects the Ubiquitous Diaspora's genetic lottery—warm Polynesian bone structure and skin undertones blended with Eastern European angularity in the jaw and cheekbones, North African depth in eye-setting and complexion richness, Sub-Saharan African features in lip fullness and facial proportions, and Hispanic/Latin American warmth in overall coloration. Results in a complexion that reads as deeply sun-kissed golden-bronze with dimensional warmth",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and kinetic, lean muscle with minimal body fat; shoulders slightly narrower than hips; posture that suggests constant motion even when standing still",
@@ -294,8 +272,8 @@
     "hair_style": "Worn long and loose on days off in natural waves; pulled into tight, compact braids on working days—typically 4-6 thick plaits secured at the nape with recycled polymer clips",
     "hair_length": "Long (shoulder-length when loose, mid-back when braided)",
     "eye_color": "Modified: cycles slowly from amber through chartreuse to soft green on ~8-second loop; irises are slightly larger than baseline due to implant housing",
-    "skin_tone": "Fair to light skin with warm golden undertones; reflects Northern European base with subtle warmth from South Asian and Middle Eastern admixture, creating a complexion that appears luminous and warm-neutral rather than pure pale",
-    "complexion": "Youthful face with high cheekbones and a sharp jawline showing South Asian angularity blended with Northern European structure; skin is generally clear but shows signs of inconsistent sleep and stress—faint darkening under eyes; a small scar on the left temple (about 1cm, thin) from a bodmod session gone slightly wrong; subtle epicanthic fold characteristics from East Asian ancestry blend with broader eye set",
+    "skin_tone": "Warm medium-golden brown with golden-bronze undertones; deep enough to reflect Sub-Saharan and North African richness, luminous enough to carry Pacific Islander and Hispanic/Latin warmth, with subtle cooler notes from Eastern European genetics creating dimensional complexity—reads as sun-touched and dimensional rather than flat",
+    "complexion": "Strong multicontinental structure: high cheekbones with Pacific Islander prominence softened by Eastern European angularity, sharp jawline with North African depth, fuller lips reflecting Sub-Saharan and Hispanic/Latin ancestry, eye-set that balances Pacific Islander spacing with Eastern European intensity. Skin is generally clear but shows signs of inconsistent sleep and stress—faint darkening under eyes; a small scar on the left temple (about 1cm, thin) from a bodmod session gone slightly wrong; subtle interplay of feature sets from diverse ancestry blend creates distinctive, feature-rich appearance",
     "distinguishing_marks": [
       "Bioluminescent freckle array across nose bridge and upper cheekbones (approximately 12-15 points), pale blue-white when active, barely visible when dormant; pulses noticeably during elevated emotional states",
       "Matching bioluminescent freckle constellation across upper chest (visible only if shirt is open or loose-fitting), radiating outward from sternum in a loose star pattern",
@@ -305,15 +283,59 @@
     "posture_movement": "Restless and economical; bounces left knee in rapid intervals when sitting; habitually rotates a stylus or small object (pen, data-chip, transit token) through fingers in continuous loops; walks with quick, efficient strides; hands gesticulate frequently during conversation; eyes track movement and entrances constantly; overall impression is of someone running on high alert but not agitated—controlled kinetic energy",
     "clothing_style": "Tier 3-4 working class with militant undertones; prefers fitted, durable clothing in muted colors (charcoal, deep blue, rust); typically wears secondhand surplus work pants with reinforced knees, thermal base layers, and a faded Ferrogate maintenance union jacket (unofficial, from a previous campaign) with hand-stitched patches; multiple cargo pockets filled with union literature, encrypted data-chips, and snack bars; insulated boots with grip treads suitable for yard work; a worn canvas shoulder bag with frayed straps that carries personal items and organizing materials; minimal jewelry except for a recycled-metal ring on left ring finger (no clear symbolism, just worn). Appearance communicates 'always ready to move, always working, always listening.'"
   },
-  "image_prompt": "Aero Ingebrigtsen, 168cm wiry lean figure, fair warm-golden skin blending Northern European and South Asian heritage, high cheekbones with subtle East Asian angularity, dark brown hair with red undertones worn long in braids secured with polymer clips, cybernetic eyes cycling amber-chartreuse-green on 8-second loop with oversized irises, bioluminescent freckle constellations pale blue-white across nose and upper chest pulsing softly, faint scar on left temple, controlled kinetic posture, deep blue thermal base layer visible under faded Ferrogate maintenance union jacket with hand-stitched patches, reinforced work pants, grip-treaded boots, worn canvas shoulder bag, recycled-metal ring, hands gesticulating expressively, eyes tracking constantly, cyberpunk 2226 Great Lakes Metropolitan Zone, industrial maintenance yard setting with neon-tinted evening lighting casting warm amber and cool blues, neural implant scar visible on inner forearm, restless energy despite controlled stance, organized working-class aesthetic communicating constant readiness --ar 2:3 --v 6",
+  "image_prompt": "Aero Taufa, 168cm lean wiry figure with warm golden-bronze skin complexion blending Pacific Islander, Eastern European, North African, and Latin warmth, high sharp cheekbones with angular jawline, dark brown hair with red undertones worn in thick braids down mid-back secured with polymer clips, modified eyes cycling slowly through amber-chartreuse-soft green in 8-second loop with slightly enlarged irises, faint bioluminescent freckle array across nose bridge and cheekbones (pale blue-white, subtle), matching constellation on upper chest, small temple scar, restless posture radiating controlled kinetic energy, wearing faded charcoal Ferrogate maintenance union jacket with hand-stitched patches over thermal base layer, reinforced cargo work pants, grip-tread boots, worn canvas shoulder bag, recycled-metal ring, deep urban nocturne GLMZ setting in Great Lakes Metropolitan Zone maintenance yard with cool blue-amber neon accent lighting, industrial scaffolding and machinery in soft focus background, atmospheric mist, character caught mid-gesture with hands animated in conversation or organizing, sharp focus on face showing the dimensional beauty of blended ancestry, cinematic neo-noir noir aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 60.8,
-    "South Asian": 16.7,
-    "East Asian": 14.3,
-    "Middle Eastern": 8.2
+    "Pacific Islander": 59.6,
+    "Eastern European": 13.5,
+    "North African": 10,
+    "Sub-Saharan African": 9.6,
+    "Hispanic/Latin American": 7.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tokelauan": 59.6
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 6.6
+      },
+      "Slavic West": {
+        "Sorbian": 2.3
+      },
+      "Magyar-Romanian": {
+        "Romanian": 4.6
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 1.2,
+        "Egyptian": 0.4
+      },
+      "Maghreb": {
+        "Moroccan": 4.6,
+        "Mauritanian": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 8.7
+      },
+      "Southern African": {
+        "Zimbabwean": 0.3,
+        "South African": 0.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 6.4,
+        "Haitian": 0.9
+      }
+    }
+  }
 }

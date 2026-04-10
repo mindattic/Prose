@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72e71fdb16d8adc15972df4",
   "type": "character",
-  "name": "Sibusiso Traoré-Calvillo-Johansson",
+  "name": "Sibusiso Traoré-Sokolov-Kariuki",
   "aliases": [
     "Yse",
     "Four-Hands"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Deepwell Station — Line 9 operations hub, near sub-level access near Dearborn and Jackson",
-  "description": "Yseult is lean and angular, the kind of person who looks like she was built for efficiency rather than comfort — high cheekbones, close-set amber eyes with patterned irises she had done in a sunburst design in her twenties (the pattern has faded slightly at the edges but she has not refreshed it, which she considers a form of autobiography). Her skin is a warm medium brown and she keeps her locs pinned back under her operator's cap on shift; off shift they fall to her shoulders and she wears them down with the aggressive relief of someone who spends eight hours in a hat. She has a geneware tail — a slim, black-furred addition she got at twenty-two — that she has learned to keep disciplined and still while operating but which betrays her moods with embarrassing fidelity the moment she is off duty.\n\nYseult has the particular personality of someone who has driven the same route for nine years and has achieved a kind of zen mastery over the repetition — she finds the variation inside the sameness, the way a musician finds different things in a familiar song each time. She is sardonic in the way of someone who has heard every possible excuse for fare evasion and has developed a taxonomy of them. She is fiercely protective of her passengers in a detached, professional way that occasionally shocks people who expect indifference. She is a union rep for the Ferrogate Transit Workers Collective and takes that role with more seriousness than she takes almost anything else.",
+  "description": "Sibusiso Traoré-Sokolov-Kariuki is lean and angular, the kind of person who looks like she was built for efficiency rather than comfort — high cheekbones, close-set amber eyes with patterned irises she had done in a sunburst design in her twenties (the pattern has faded slightly at the edges but she has not refreshed it, which she considers a form of autobiography). Her skin is a warm medium brown and she keeps her locs pinned back under her operator's cap on shift; off shift they fall to her shoulders and she wears them down with the aggressive relief of someone who spends eight hours in a hat. She has a geneware tail — a slim, black-furred addition she got at twenty-two — that she has learned to keep disciplined and still while operating but which betrays her moods with embarrassing fidelity the moment she is off duty.\n\nSibusiso Traoré-Sokolov-Kariuki has the particular personality of someone who has driven the same route for nine years and has achieved a kind of zen mastery over the repetition — she finds the variation inside the sameness, the way a musician finds different things in a familiar song each time. She is sardonic in the way of someone who has heard every possible excuse for fare evasion and has developed a taxonomy of them. She is fiercely protective of her passengers in a detached, professional way that occasionally shocks people who expect indifference. She is a union rep for the Ferrogate Transit Workers Collective and takes that role with more seriousness than she takes almost anything else.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -193,7 +193,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,35 +255,15 @@
     "Ferrogate Transit",
     "Deepwell Station",
     "Dredge Mining Collective",
-    "Geartown",
     "Tessera TAR-12 'Consensus'",
+    "Geartown",
+    "Dearborn Forge",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Elena Vasquez-9",
-    "Crucible Industries CT-X 'Gauntlet'",
-    "Fanta Popov-Adjei",
-    "Galvanic Disruption Gauntlet GDG-2 'Palsy'",
-    "Kairos",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "MERIDIAN",
-    "Meridian Core",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Tessera Corponation",
-    "Tessera TK-7 Service Pistol 'Ticker'",
-    "The Clock",
-    "The Collective",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Wire Taps",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant"
+    "Elena Vasquez-9"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (44.1%), Hispanic/Latin American (42.8%), Northern European (13.1%) — resulting in warm medium-to-deep brown skin with subtle golden undertones; facial structure combines prominent cheekbones and defined jawline from African and Latin American ancestry with slight narrower eye placement; features reflect the genetic complexity of the Ubiquitous Diaspora",
+    "heritage": "Ubiquitous Diaspora global blend: Sub-Saharan African (33.8%) provides rich deep brown base with warm undertones; Eastern European (30.4%) adds pale undertone complexity and facial structure definition; Hispanic/Latin American (10.6%), Middle Eastern (10.1%), Southeast Asian (9.3%), and Indigenous American (5.8%) layer in olive warmth, subtle facial feature blending, and eye shape variation. Result: warm deep brown skin with golden-olive undertones, high prominent cheekbones with strong African-Latin definition, eye shape widened slightly by Southeast Asian heritage, even complexion reflecting genuine global ancestry",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with defined musculature from years of postural control and gym work; economical movement suggests someone built for precision rather than power",
@@ -291,8 +271,8 @@
     "hair_style": "Locs typically pinned back under operator's cap during shifts; worn loose and falling to shoulders off-duty",
     "hair_length": "Shoulder-length",
     "eye_color": "Amber with faded sunburst iris pattern (custom geneware, applied in her twenties, pattern edges now worn)",
-    "skin_tone": "Warm deep brown with golden undertones, weathered around the eyes from nine years of focused attention; reflects blended African, Latin American, and subtle Northern European ancestry",
-    "complexion": "High, prominent cheekbones with strong definition; warm complexion with even tone; close-set eyes that narrow when concentrating; minimal facial hair; skin shows professional care but no vanity augmentation",
+    "skin_tone": "Warm deep brown with golden and subtle olive undertones, weathered around the eyes from nine years of focused attention; reflects blended Sub-Saharan African, Eastern European, Hispanic/Latin American, Middle Eastern, Southeast Asian, and Indigenous American ancestry",
+    "complexion": "High, prominent cheekbones with strong definition from African-Latin ancestry; warm even tone with subtle olive undertones from Middle Eastern and Southeast Asian heritage; eye shape shows slight wideness characteristic of Southeast Asian genetics; defined jawline reflects Eastern European contribution; minimal facial hair; skin shows professional care but no vanity augmentation",
     "distinguishing_marks": [
       "Faded sunburst pattern tattooed across both irises in amber-gold, edges blurred from age and lack of refresh",
       "Small linear scar along the left temple, approximately 3cm, consistent with old impact injury",
@@ -302,14 +282,77 @@
     "posture_movement": "Upright, economical posture with hands frequently at rest position — practiced neutrality offset by tail betraying genuine emotional state the moment she relaxes; movements are efficient and deliberate; walks with slight forward lean as if perpetually bracing",
     "clothing_style": "On-shift: grey Ferrogate Transit standard-issue operator uniform with union rep badge on collar; black polymer utility jacket with reflective striping. Off-shift: worn combat-style pants, fitted athletic shirts, heavy-soled boots suitable for sparring gym; minimal jewelry except union wrist mark. Tier 3-4 working class aesthetic — functional, maintained but not fashionable, pockets optimized for tools and union materials"
   },
-  "image_prompt": "Sibusiso Traoré-Calvillo-Johansson, 172cm lean-muscled transit operator, warm deep brown skin with golden undertones, dark brown shoulder-length locs partially pinned back, amber faded geneware eyes with worn sunburst pattern, high prominent cheekbones reflecting blended African-Latino-Nordic heritage, small temple scar, black-furred geneware tail barely visible, neural jack port at base of skull, grey Ferrogate Transit operator uniform with black reflective utility jacket, union gear-and-tram wrist tattoo, upright economical posture with forward lean, cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit transit station background with warm industrial lighting, professional and composed expression, --ar 2:3 --v 6",
+  "image_prompt": "Sibusiso Traoré-Sokolov-Kariuki, a 172cm lean-built transit operator with warm deep brown skin blended from Sub-Saharan African, Eastern European, Hispanic/Latin American, Middle Eastern, Southeast Asian, and Indigenous American ancestry; high prominent cheekbones, slightly widened eye shape, amber irises with faded sunburst geneware pattern, dark shoulder-length locs pinned under grey operator's cap; small temple scar visible; black-furred geneware tail curled behind, neural jack port at skull base; wearing grey Ferrogate Transit uniform with black polymer utility jacket and reflective striping, union badge on collar; union gear tattoo on inner wrist; upright economical posture, hands at rest; standing in neon-lit transit station with blue-green overhead lighting, faint holographic departure boards reflected in polished floor, tired but focused expression; GLMZ, working-class aesthetic, professional dignity; --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 44.1,
-    "Hispanic/Latin American": 42.8,
-    "Northern European": 13.1
+    "Sub-Saharan African": 33.8,
+    "Eastern European": 30.4,
+    "Hispanic/Latin American": 10.6,
+    "Middle Eastern": 10.1,
+    "Southeast Asian": 9.3,
+    "Indigenous American": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 5.1
+      },
+      "Central African": {
+        "Congolese": 9.9,
+        "Angolan": 0.6
+      },
+      "West African": {
+        "Nigerian": 18.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 24,
+        "Romanian": 6.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Argentine": 9.2
+      },
+      "Mexican": {
+        "Mexican": 0.6
+      },
+      "Caribbean": {
+        "Dominican": 0.6,
+        "Cuban": 0.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 10.1
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 4.6
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.8
+      },
+      "Indonesian": {
+        "Sundanese": 3.9
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 1.6,
+        "Mixtec": 1.2
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 0.3
+      },
+      "Plains Nations": {
+        "Muscogee": 2.7
+      }
+    }
+  }
 }

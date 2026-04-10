@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cb7ada84dcaec731bfc55a",
   "type": "character",
-  "name": "Rowan Thakur-Vestergaard-Madrigal",
+  "name": "Rowan Erikstad-Volkov-Horváth",
   "aliases": [
     "Bren",
     "The Suit Whisperer"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Lakeview Neon, a narrow second-floor shop above a synth-sake bar called The Peristaltic, near North Ave and Milwaukee",
-  "description": "Brenno is lanky and precise, the kind of man who looks slightly annoyed at rest but is actually just concentrating. He has warm-amber skin, dark eyes with geneware irises that shift between deep violet and burnt gold depending on his mood — installed partly for aesthetics, mostly because he wanted to test how clients reacted to them before doing a full commission. His hands are his most important feature: long-fingered, callus-mapped, perpetually holding something — chalk, thread, a measuring tape coiled around two knuckles. He keeps his head shaved and wears a single garnet stud in his left ear that has been there since he was nineteen.\n\nHe works at the seam between tiers: his clients are Tier 2 people who want to look Tier 3, and occasional Tier 3 people who want something that doesn't look corporate-issued. He is perceptive about bodies and what people want their bodies to say, which makes him an accidental confessor — clients will tell him things in the fitting room they'd tell nobody else. He is not a gossip, but he is an archivist. He remembers everything.",
+  "description": "Rowan Erikstad-Volkov-Horváth is lanky and precise, the kind of man who looks slightly annoyed at rest but is actually just concentrating. He has warm-amber skin, dark eyes with geneware irises that shift between deep violet and burnt gold depending on his mood — installed partly for aesthetics, mostly because he wanted to test how clients reacted to them before doing a full commission. His hands are his most important feature: long-fingered, callus-mapped, perpetually holding something — chalk, thread, a measuring tape coiled around two knuckles. He keeps his head shaved and wears a single garnet stud in his left ear that has been there since he was nineteen.\n\nHe works at the seam between tiers: his clients are Tier 2 people who want to look Tier 3, and occasional Tier 3 people who want something that doesn't look corporate-issued. He is perceptive about bodies and what people want their bodies to say, which makes him an accidental confessor — clients will tell him things in the fitting room they'd tell nobody else. He is not a gossip, but he is an archivist. He remembers everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -158,7 +158,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,42 +173,21 @@
   "related_entities": [
     "Lakeview Neon",
     "Zheng-Dao Bioelectric Peristaltic Breach Driver",
+    "The Accidental",
     "Vantablack Media Confessor Tap — 'The Booth'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Tessera Corponation",
     "SynapTech IrisBloom Ocular Color Modulator",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Slagworks Industrial",
-    "Gold",
-    "The Milwaukee Core",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Ambassador Silk",
-    "Bintou Halvorsen-Osei",
-    "Brecken Yılmaz-Osei",
-    "Cinderblock Ai",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dzemal Acholonu-Patagiri",
-    "Dzintars Ababio-Suleimenov",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Irkalla",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Narrowcast",
-    "Noir Dining",
-    "Solina Barreto-Kiptoo",
-    "The Burnished Market",
-    "The Heritage Vault",
-    "The Seam",
-    "Tshiamo Vukić-Arellano",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Compass Rose",
+    "Gold"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, South Asian, and East Asian ancestry—a complex tri-continental blend resulting in warm, golden-bronze skin with subtle warm undertones. The genetic mix creates distinctive facial architecture: higher cheekbones with gentle angularity from East Asian heritage, warm depth from South Asian ancestry, and the sun-kissed warmth of Hispanic/Latin American genetics.",
+    "heritage": "Eastern European (52.6%), Southeast Asian (31.7%), and East Asian (15.7%) ancestry—a striking tri-continental blend. The dominant Eastern European genetics provides strong Slavic bone structure with sharp, high cheekbones and angular facial planes. Southeast Asian ancestry contributes warm undertones, slightly broader facial width, and characteristic eye placement. East Asian genetics refines the overall structure with subtle jawline definition and refined orbital geometry. The result is a uniquely balanced face: Slavic angularity softened by Southeast and East Asian warmth and proportion.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Lanky and angular, almost concave through the chest—the build of someone who has spent two decades bent over a work table. Long limbs with visible musculature only in forearms and shoulders from repetitive precision work.",
@@ -216,8 +195,8 @@
     "hair_style": "Completely shaved, scalp maintained smooth with occasional faint surgical-grade scarring from old augmentation work",
     "hair_length": "Shaved",
     "eye_color": "Geneware irises—deep violet at rest, shifting to burnt gold under emotional intensity or bright light; sclera warm brown",
-    "skin_tone": "Golden-bronze with warm undertones—the result of blended Hispanic/Latin American, South Asian, and East Asian ancestry. Luminous in natural light, deepening subtly in shadow.",
-    "complexion": "Clean, minimal acne scarring. Fine lines around eyes from decades of close-focus work and squinting. A small burn scar on the bridge of his nose (accidental). Perpetually neat despite the work—someone who understands the power of presentation. Slight downward set to his mouth at rest, giving an impression of concentration or mild disapproval. Facial structure reflects tri-continental heritage: defined cheekbones, warm eye setting, refined jawline.",
+    "skin_tone": "Medium olive with cool-warm balance—the result of Eastern European paleness enriched by Southeast and East Asian warmth. Luminous in natural light, deepening subtly in shadow with a balanced neutral undertone rather than pure cool cast.",
+    "complexion": "Clean, minimal acne scarring. Fine lines around eyes from decades of close-focus work and squinting. A small burn scar on the bridge of his nose (accidental). Perpetually neat despite the work—someone who understands the power of presentation. Slight downward set to his mouth at rest, giving an impression of concentration or mild disapproval. Facial structure reflects tri-continental heritage: prominent Slavic cheekbones with Southeast Asian eye placement and East Asian refinement in jawline and orbital structure. Warm brown undertones visible in skin depth.",
     "distinguishing_marks": [
       "Garnet stud earring in left ear lobe, worn continuously since age nineteen—slightly darkened from oxidation",
       "Network of pale thread-thin scars across both palms and inner wrists from sewing machine accidents and needle work",
@@ -228,14 +207,50 @@
     "posture_movement": "Stands with a slight forward lean, as if perpetually leaning over a work surface. Shoulders rolled inward. Movements are economical and precise—no wasted motion. Hands are always occupied or positioned near fabric; he handles textiles with the deliberation others reserve for explosives. Walks with purpose but not haste. Rarely makes sudden movements.",
     "clothing_style": "High-Tier 2 aesthetic executed with Tier 3 practicality. Typically wears fitted but functional garments—tailored merino blend shirts in neutral grays, blacks, deep blues; straight-cut work pants with reinforced pockets and seams (often his own creation); a charcoal or black overshirt or light jacket, always open. Shoes are understated—quality leather derby or slip-ons, well-maintained but worn. A cloth tape measure usually coiled around his neck or wrist. Jewelry is minimal: the garnet earring, occasionally a thin steel bracelet on his right wrist. His clothes fit him perfectly because he is his own first client. Nothing cheap, nothing flashy. Everything says 'I know what I'm doing.'"
   },
-  "image_prompt": "Rowan Thakur-Vestergaard-Madrigal, 2226 cyberpunk artisan tailor, shaved head with faint augmentation scarring, golden-bronze skin with warm undertones from blended Hispanic/Latin American, South Asian, and East Asian heritage. Violet geneware irises shifting to burnt gold. Lanky angular frame, 183cm tall, bent posture from decades of precision work. Wearing perfectly-fitted charcoal merino blend shirt, open black overshirt, reinforced work pants, quality leather slip-ons. Cloth tape measure coiled around neck. Garnet earring in left lobe glinting faintly. Small pale burn scar on bridge of nose. Hands with subdermal augmentation precision, thread-thin scars across palms visible. Fine lines around eyes from close-focus work. Standing in workshop bathed in cool overhead LED and warm accent lighting, surrounded by high-end fabrics and textile tools. Mood: focused, composed, deliberate. Cyberpunk 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Erikstad-Volkov-Horváth, 183cm tall, lean angular build with inward-rolled shoulders, shaved head with faint augmentation scars. Medium olive skin with cool-warm balance reflecting Eastern European-Southeast Asian-East Asian heritage. Sharp Slavic cheekbones softened by Southeast Asian warmth, refined East Asian jawline. Geneware violet-to-gold shifting irises with warm brown sclera, slight downward mouth set suggesting focus. Garnet earring in left lobe, faint scars on palms and bridge of nose. Wearing tailored charcoal overshirt over fitted gray merino blend shirt, straight-cut reinforced work pants, quality leather slip-ons, cloth tape measure around neck. Standing with forward lean over invisible work surface, hands positioned with mechanical precision. Cool workshop lighting casting subtle shadows, emphasizing tri-continental facial architecture and understated augmentation. GLMZ, Great Lakes Metropolitan Zone, meticulous artisan aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 47.0,
-    "South Asian": 28.9,
-    "East Asian": 24.1
+    "Eastern European": 52.6,
+    "Southeast Asian": 31.7,
+    "East Asian": 15.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 17.5,
+        "Ukrainian": 2.9
+      },
+      "Slavic South": {
+        "Serbian": 25.5
+      },
+      "Slavic West": {
+        "Slovak": 6.7
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 22.3
+      },
+      "Laotian": {
+        "Laotian": 4.2
+      },
+      "Indonesian": {
+        "Balinese": 5.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.1
+      },
+      "Japanese": {
+        "Japanese": 3.4
+      },
+      "Chinese": {
+        "Fujianese": 5.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6de7fc9a5ecc3b0582a70c7",
   "type": "character",
-  "name": "Atlas Johansson-Mbekele",
+  "name": "Atlas Chakraborty-Mukherjee",
   "aliases": [
     "Tectonic",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Pulaski and Chicago Ave",
-  "description": "Stanislav Lebedev-Tutu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Stanislav Lebedev-Tutu lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Atlas Chakraborty-Mukherjee is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Atlas Chakraborty-Mukherjee lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.48,
@@ -263,7 +263,7 @@
     "Thief": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Lattice",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,35 +277,16 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
     "The Unfinished Theorem",
     "The Nearfield",
-    "Slagworks Industrial",
     "Chicago",
-    "Breck Tannen",
-    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
-    "Crucible RE-2 'Receptionist'",
-    "Djeneba Park-Traore",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "TESSERA WL-6 'Stacker'",
-    "The Heritage Vault",
-    "The Lattice",
-    "The Narrows",
-    "The Quiet Room",
-    "The Shelf",
-    "Tomasz Wren"
+    "Atlas",
+    "Slagworks Industrial",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-diaspora mixed ancestry: predominantly Sub-Saharan African (52%), with significant Northern European (23.6%), South Asian (14.2%), and Hispanic/Latin American (10.2%) genetic contributions. The blend manifests in rich deep-brown skin with warm undertones, prominent cheekbones with slight South Asian angularity, and the jaw structure reflecting multiple continental lineages. His appearance defies simple categorization—a true product of the Ubiquitous Diaspora.",
+    "heritage": "Pan-diaspora mixed ancestry: predominantly South Asian (52.8%), with significant Sub-Saharan African (27.3%), Southeast Asian (10.1%), and Hispanic/Latin American (9.8%) genetic contributions. The blend creates a striking phenotype—warm deep brown skin with golden undertones, high angular cheekbones with pronounced South Asian structure softened and broadened by Sub-Saharan facial geometry, a strong jawline reflecting the convergence of multiple continental lineages, and eyes that carry the uncommon pale gray of recessive genetics expressing through dominant melanin ancestry. His appearance embodies the Ubiquitous Diaspora—rooted in South Asia yet enriched by African, Southeast Asian, and Latin American heritage in visible, harmonious measure.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Athletic and lean with functional musculature—dancer's flexibility married to fighter's efficiency. No wasted mass; every movement economical.",
@@ -313,8 +294,8 @@
     "hair_style": "Short, practical cut kept at regulation length; no styling affectation",
     "hair_length": "Short",
     "eye_color": "Pale gray, unaugmented",
-    "skin_tone": "Deep warm brown with rich undertones—darker from the Sub-Saharan majority of his ancestry, with warmth that speaks to the blended heritage running through him. The tone is even and luminous, neither ashy nor ruddy, reflecting the genetic harmony of his mixed background.",
-    "complexion": "Well-defined facial structure with prominent cheekbones inherited from both African and South Asian ancestry, creating sharp definition. Smooth, well-maintained dark skin. Minimal scars on the face itself—most damage is on the body, hidden. Sharp, alert expression; eyes track movement habitually.",
+    "skin_tone": "Warm deep brown with golden undertones—the South Asian foundation enriched by Sub-Saharan warmth, Southeast Asian depth, and Latin American richness. The tone is even and luminous, neither ashy nor ruddy, with visible warmth that reflects strong melanin density. The skin appears translucent in certain light, revealing the natural golden warmth beneath the surface.",
+    "complexion": "Well-defined facial structure with high, prominent cheekbones inherited from South Asian ancestry, broadened and softened by Sub-Saharan genetic influence, creating a striking balance between sharp angularity and harmonious width. The nose shows South Asian structure with subtle Sub-Saharan influence in the bridge and base. Smooth, melanin-rich dark skin with natural luminosity and excellent elasticity. Minimal facial scarring—most damage concentrated on the body. Sharp, alert expression; eyes track movement habitually.",
     "distinguishing_marks": [
       "Thin surgical scar running down the right side of his neck from clavicle to jaw—nerve bundle realignment for the chrome arm",
       "Burn scar across the inside of his left forearm, three inches long—old contract gone sideways",
@@ -324,15 +305,53 @@
     "posture_movement": "Moves with economical precision, weight always balanced. No nervous tics or wasted gestures. When standing, shoulders square but relaxed. When moving, every motion has purpose—he doesn't shuffle or sprawl. Right arm hangs slightly differently than a human's would, the chrome responding to neural input with imperceptible lag.",
     "clothing_style": "Tier 4 working-class practical: unmarked dark synth-fiber jacket with reinforced shoulders, matte black thermals underneath, cargo pants with too many pockets—most kept stocked with tools and data-storage media. Worn leather gloves on the organic hand only; the chrome arm bare. Boots are scuffed but well-maintained, suitable for climbing scaffolding and quick exits. No logos, no flash, no corp affiliation markers. Everything chosen for function, not fashion."
   },
-  "image_prompt": "Atlas Johansson-Mbekele, cyberpunk 2226, full-body portrait of a 178cm athletic man with rich deep-brown skin reflecting Sub-Saharan, Northern European, South Asian, and Hispanic ancestry. Sharp cheekbones, pale gray unaugmented eyes, dark hair in short practical cut. Pale gray eyes with sharp alert expression. Full-replacement industrial chrome right arm with matte finish and visible smartgun link panel on inner wrist, mechanical fingers showing wear patterns. Thin surgical scar down right neck, burn scar on left forearm, keloid scarring on right shoulder. Dark synth-fiber jacket with reinforced shoulders over matte black thermals, cargo pants with multiple pockets, scuffed boots, leather glove on organic left hand only. Economical stance, perfectly balanced posture, every movement purposeful. Neon-lit Great Lakes Metropolitan Zone rooftop setting at dusk, chrome arm catching fragmented holographic light, moody cyberpunk atmosphere, high contrast lighting, gritty realism --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait: Atlas Chakraborty-Mukherjee, 178cm lean athletic build with warm deep brown skin, golden undertones, high angular South Asian cheekbones softened by Sub-Saharan facial geometry, striking pale gray unaugmented eyes contrasting dark melanin-rich skin, short dark brown practical hair. Full cybernetic right arm industrial chrome with visible wear, matte finish, integrated smartgun link panel on inner wrist. Surgical scar right neck, burn scar left forearm, keloid shoulder scarring. Wearing unmarked dark synth-fiber jacket with reinforced shoulders, matte black thermals, cargo pants loaded with tools and data storage, scuffed but maintained boots, leather glove on organic left hand only. Chrome arm bare. Economical precise posture, alert sharp expression, movement efficient and balanced. Great Lakes Metropolitan Zone industrial setting, neon ambient lighting casting cool shadows across warm skin, gritty neo-noir urban aesthetic, moody tension, functional not flashy --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 52.0,
-    "Northern European": 23.6,
-    "South Asian": 14.2,
-    "Hispanic/Latin American": 10.2
+    "South Asian": 52.8,
+    "Sub-Saharan African": 27.3,
+    "Southeast Asian": 10.1,
+    "Hispanic/Latin American": 9.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 32.8
+      },
+      "Pakistani": {
+        "Sindhi": 20
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 5.6,
+        "Ivorian": 2
+      },
+      "Southern African": {
+        "Zambian": 16.3,
+        "Zimbabwean": 3.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 10.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.2
+      },
+      "Central American": {
+        "Nicaraguan": 1.3,
+        "Costa Rican": 0.4
+      },
+      "South American": {
+        "Brazilian": 0.6,
+        "Venezuelan": 0.3
+      }
+    }
+  }
 }

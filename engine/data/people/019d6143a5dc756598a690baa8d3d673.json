@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5dc756598a690baa8d3d673",
   "type": "character",
-  "name": "Lark Lautoa",
+  "name": "Lark Pham",
   "aliases": [
     "Dina",
     "Dina the Pack"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Grand Crossing Gate market stalls, currently stall seven (temporary), near North Ave and Damen",
-  "description": "Chidinma wears the caravan on her body like a second skin — she is draped in the layered evidence of ten years of wandering trade routes, and the effect is simultaneously chaotic and perfectly intentional. Her dark brown skin is warm and clear except for three thin ritual scars on her left cheekbone, and her hair grows in a massive natural cloud that she pins with whatever she has at hand: transit tokens, stylus caps, a single wing-shaped bone clasp that came from somewhere she won't specify. Her irises are modified to display a slow-spinning geometric pattern, amber and rust, which she uses as a distraction tool in negotiations more often than she admits. She is medium-height and stocky, with the particular physical confidence of someone accustomed to moving heavy loads.\n\nChidinma runs a one-woman mobile trade operation between the outer transit corridors, specializing in the categories of goods that regulated markets won't carry — not weapons or pharmaceuticals, but the strange soft contraband of a corponation city: unbranded food that doesn't carry a Zheng-Dao or Axiom nutritional stamp, books printed on actual paper, unlicensed music files, hand-made items that would violate Ringo manufacturing monopolies, and the occasional comfort object from somewhere far away that someone desperately needs to feel like themselves again. She is not sentimental about this. It is commerce. But she is extremely good at identifying what a person actually needs, which is the core of the business.",
+  "description": "Lark Pham wears the caravan on her body like a second skin — she is draped in the layered evidence of ten years of wandering trade routes, and the effect is simultaneously chaotic and perfectly intentional. Her dark brown skin is warm and clear except for three thin ritual scars on her left cheekbone, and her hair grows in a massive natural cloud that she pins with whatever she has at hand: transit tokens, stylus caps, a single wing-shaped bone clasp that came from somewhere she won't specify. Her irises are modified to display a slow-spinning geometric pattern, amber and rust, which she uses as a distraction tool in negotiations more often than she admits. She is medium-height and stocky, with the particular physical confidence of someone accustomed to moving heavy loads.\n\nLark Pham runs a one-woman mobile trade operation between the outer transit corridors, specializing in the categories of goods that regulated markets won't carry — not weapons or pharmaceuticals, but the strange soft contraband of a corponation city: unbranded food that doesn't carry a Zheng-Dao or Axiom nutritional stamp, books printed on actual paper, unlicensed music files, hand-made items that would violate Ringo manufacturing monopolies, and the occasional comfort object from somewhere far away that someone desperately needs to feel like themselves again. She is not sentimental about this. It is commerce. But she is extremely good at identifying what a person actually needs, which is the core of the business.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -191,7 +191,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Crossing Gate market stalls",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -261,39 +261,13 @@
     "Stratum",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Pellucid Systems",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Ringo Corponation",
     "Déjà Vu",
-    "Rust",
-    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
-    "Blackmarket",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Grand Corridor",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Patient Zero",
-    "Pirjo Asante-Ulukhan",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech VocalShift Laryngeal Tone Modulator",
-    "The Bazaar",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vantablack VS-3 'Skin Job'",
-    "Vesna Kiptoo-Ravelonarison",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Compass Rose"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Pacific Islander predominant (31.5%) with significant Sub-Saharan African (19.2%), North African (16.6%), and Hispanic/Latin American (15.0%) ancestry, with East Asian and Southeast Asian contributions. This diverse mix creates warm, rich melanated skin tones with subtle undertones reflecting the Mediterranean and tropical heritage components.",
+    "heritage": "Deeply mixed ancestry combining Sub-Saharan African (24.8%), Southeast Asian (23.6%), Eastern European (21.7%), Hispanic/Latin American (17.8%), and Indigenous American (12.1%) heritage. This complex blend creates warm, rich melanated skin with golden undertones and subtle olive depth—the luminous richness that emerges from African and Southeast Asian ancestry mixing with the cooler undertones of Eastern European and Indigenous American genetics. Her features reflect this global synthesis: defined cheekbones and strong jaw from African ancestry, with slight eye shape and facial structure hints from Southeast Asian heritage, rounded by the broader face proportions and stronger jaw sometimes seen in Indigenous American genetics, tempered by Eastern European bone structure.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Stocky and compact with well-developed shoulders and forearms from years of moving trade goods; solid rather than soft, with visible muscle definition beneath her warm brown skin. Her frame speaks of functional strength rather than aesthetics.",
@@ -301,8 +275,8 @@
     "hair_style": "Massive natural crown worn unpinned or loosely gathered with whatever is at hand — transit tokens, stylus caps, a single ivory bone clasp. The effect is deliberately chaotic but carefully maintained.",
     "hair_length": "Long (shoulder-length and beyond when fully extended)",
     "eye_color": "Modified: amber and rust geometric pattern spinning slowly within dark brown irises",
-    "skin_tone": "Warm deep brown with golden and reddish undertones reflecting Pacific Islander and North African heritage, even and clear with subtle richness",
-    "complexion": "Clear skin with deliberate ritual character — three thin, precise ritual scars running vertically down her left cheekbone in pale relief. No visible acne, minimal aging lines despite age 34. Grooming is functional rather than ornate; she maintains herself with the efficiency of someone constantly in transit. Facial structure reflects blended Pacific Islander and African ancestry with defined cheekbones and strong jaw.",
+    "skin_tone": "Warm deep brown with golden undertones and subtle olive depth reflecting the blend of Sub-Saharan African, Southeast Asian, and Indigenous American ancestry—even and clear with luminous richness",
+    "complexion": "Clear skin with deliberate ritual character — three thin, precise ritual scars running vertically down her left cheekbone in pale relief. No visible acne, minimal aging lines despite age 34. Grooming is functional rather than ornate; she maintains herself with the efficiency of someone constantly in transit. Facial structure reflects the synthesis of African, Southeast Asian, and Indigenous American ancestry with defined cheekbones, strong jaw, and balanced width through the face.",
     "distinguishing_marks": [
       "Three thin ritual scars on left cheekbone, vertical orientation, pale and precise — marks of heritage or initiation",
       "Faint circular burn mark on inside of right wrist, approximately 3cm diameter, partially faded — consistent with industrial accident or tool mishap"
@@ -311,17 +285,69 @@
     "posture_movement": "Moves with the deliberate, efficient physicality of someone accustomed to loading and unloading cargo. Her stance is grounded and stable, weight distributed for balance. She stands slightly forward of her center of gravity, ready to move. When stationary at her stall, she occupies space with comfortable authority — no nervous shifting. Her hands are frequently in motion, arranging goods or gesturing during negotiation. Her gaze is direct and assessing.",
     "clothing_style": "Layered in the deliberately chaotic aesthetic of a long-term trader. Her default outfit consists of: a base layer of durable, unmarked utility clothing (Tier 3-4 quality, practical fabrics); multiple outer layers in varying states of repair and modification — canvas vests, linen overshirts, a heavy wool coat patched with fabric scraps in contrasting colors; cargo trousers with deep pockets and utility loops holding various tools and small trade goods; reinforced boots with worn leather and metal heel-taps. Accessories include: a collection of small pouches hung from a worn leather belt, a hand-woven satchel across her chest, and various tokens/charms hanging from her clothing. Colors are muted earth tones (browns, deep reds, forest green, charcoal) interrupted by occasional bright fabric patches. Her clothing is visibly maintained and cleaned but bears the creases and wear of constant movement. Nothing is new; everything is deliberately chosen and functional. No corp branding visible."
   },
-  "image_prompt": "Lark Lautoa, a 168cm stocky trader with warm deep brown skin reflecting Pacific Islander, North African, and Sub-Saharan heritage. Natural black hair with grey threads in a massive chaotic crown adorned with transit tokens and bone clasps. Three precise vertical ritual scars down left cheekbone. Modified eyes with slow-spinning amber and rust geometric patterns within dark brown irises. Functional build with visible muscle definition. Wearing layered utilitarian clothing: patched wool coat over canvas vests and utility layers in earth tones, cargo trousers with deep pockets, reinforced boots with metal heel-taps. Hand-woven satchel across chest, worn leather belt with small pouches and charms. Standing with grounded, stable posture in a marketplace stall setting, direct assessing gaze, hands ready for motion. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-reflected ambient lighting on her modified eyes, industrial trading post background, moody atmospheric lighting highlighting her ritual scars and genetic heritage. Efficient, authoritative presence. --ar 2:3 --v 6",
+  "image_prompt": "Lark Pham, a 34-year-old trader with warm deep brown skin with golden undertones, standing in GLMZ setting. Mixed Sub-Saharan African, Southeast Asian, and Indigenous American heritage evident in her defined cheekbones, strong jaw, and balanced facial proportions. Three vertical ritual scars on left cheekbone in pale relief. Massive natural black hair crown with grey threads, loosely gathered with transit tokens and bone clasps. Striking modified eyes: amber and rust geometric patterns spinning slowly within dark brown irises. Stocky, muscular 168cm frame wearing layered earth-tone trader's clothing: patched wool coat, canvas vest, linen overshirt, utility cargo pants, reinforced boots with metal heel-taps. Multiple pouches, hand-woven satchel across chest, various charms hanging from clothing. Direct, assessing gaze. Standing grounded and stable in a market stall setting, surrounded by trade goods. Warm ambient lighting highlighting her luminous skin tone and the intricate detail of her augmented eyes. Neo-noir atmosphere, neon signs in background, efficient and functional aesthetic. Age-worn but carefully maintained appearance. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 31.5,
-    "Sub-Saharan African": 19.2,
-    "North African": 16.6,
-    "Hispanic/Latin American": 15.0,
-    "East Asian": 11.0,
-    "Southeast Asian": 6.7
+    "Sub-Saharan African": 24.8,
+    "Southeast Asian": 23.6,
+    "Eastern European": 21.7,
+    "Hispanic/Latin American": 17.8,
+    "Indigenous American": 12.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 18.9
+      },
+      "Southern African": {
+        "Zambian": 3.6,
+        "Mozambican": 2.3
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 23.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 18.4,
+        "Romanian": 1.4
+      },
+      "Slavic East": {
+        "Ukrainian": 0.3,
+        "Belarusian": 0.2
+      },
+      "Slavic South": {
+        "Bulgarian": 1.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 5.8,
+        "Nicaraguan": 1.5
+      },
+      "South American": {
+        "Ecuadorian": 4.3
+      },
+      "Mexican": {
+        "Mexican": 6.2
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 0.3,
+        "Aymara": 0.7
+      },
+      "Mesoamerican": {
+        "Mixtec": 8.6
+      },
+      "Plains Nations": {
+        "Cherokee": 2.5
+      }
+    }
+  }
 }

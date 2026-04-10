@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6087e0abb02bea9a9dd651e",
   "type": "character",
-  "name": "Onyx Arredondo",
+  "name": "Onyx Kariuki",
   "aliases": [
     "Geo",
     "Eulo"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Rampart, Axiom Security Division deployment barracks, Block 9",
-  "description": "Eulogio is a big man going legitimately soft — broad shoulders still evident under a frame that has acquired weight in the middle over thirty years of corporate security work, hands that are scarred at the knuckles and disproportionately large. His skin is deep brown, his head shaved close on the sides and going grey on top, and he has a wide flat nose that has been broken twice and set imperfectly each time. He looks, at first glance, like exactly what he is — or was. The geneware bioluminescent patches along his forearms, faint green that pulse slowly when he's calm, were a retirement gift to himself after his twenty-fifth year: the only truly soft thing about his physical presentation.\n\nHe has spent three decades on the Axiom deployment line and he is tired in a way that has calcified into something almost peaceful. He runs the suppression team with the exhausted competence of someone who has seen every version of a bad situation and developed a preference for the versions that end without anyone in the medical unit. The younger specialists find him difficult — he doesn't perform enthusiasm, doesn't buy into Axiom's internal culture of aggressive loyalty, answers questions with more honesty than the questioner usually wants. He lights a stick of incense at the Block 9 E.L.F. terminal every evening — whatever spirit occupies the barracks' old ventilation system, he's been leaving smoke-offerings for fifteen years and it hasn't killed him yet.",
+  "description": "Onyx Kariuki is a big man going legitimately soft — broad shoulders still evident under a frame that has acquired weight in the middle over thirty years of corporate security work, hands that are scarred at the knuckles and disproportionately large. His skin is deep brown, his head shaved close on the sides and going grey on top, and he has a wide flat nose that has been broken twice and set imperfectly each time. He looks, at first glance, like exactly what he is — or was. The geneware bioluminescent patches along his forearms, faint green that pulse slowly when he's calm, were a retirement gift to himself after his twenty-fifth year: the only truly soft thing about his physical presentation.\n\nHe has spent three decades on the Axiom deployment line and he is tired in a way that has calcified into something almost peaceful. He runs the suppression team with the exhausted competence of someone who has seen every version of a bad situation and developed a preference for the versions that end without anyone in the medical unit. The younger specialists find him difficult — he doesn't perform enthusiasm, doesn't buy into Axiom's internal culture of aggressive loyalty, answers questions with more honesty than the questioner usually wants. He lights a stick of incense at the Block 9 E.L.F. terminal every evening — whatever spirit occupies the barracks' old ventilation system, he's been leaving smoke-offerings for fifteen years and it hasn't killed him yet.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -192,7 +192,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Rampart",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -213,35 +213,14 @@
     "Cinderblock Ai",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
+    "Handed",
     "The Pure Hand",
     "ShieldTech SB-3 'Groundstrike'",
-    "Handed",
-    "Arcturus CK-5 'Bloodhound'",
-    "Arcturus Defense Solutions Albedo Negation Shell",
-    "Bogdan Achebe-Svanstrom",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "GLMZ",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "MERIDIAN",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TESSERA ES-4 'Perimeter'",
-    "The Bread Baker of Block 9",
-    "The Threshold",
-    "Timur Osei-Bjelke",
-    "Vuk Jorgensen-Toure",
-    "WELLSPRING"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed ancestry from Hispanic/Latin American, Sub-Saharan African, Pacific Islander, East Asian, Indigenous American, and Southeast Asian heritage. The combination creates rich warm-brown skin with subtle undertones reflecting his diverse genetic background—Caribbean and Latin rhythms meeting Central African depth, with Pacific Islander and East Asian features softly present in his facial structure.",
+    "heritage": "Mixed ancestry with substantial Sub-Saharan African (38.1%) and North African (21.3%) foundations, combined with significant Eastern European (20.7%), Middle Eastern (10.7%), East Asian (5.7%), and Hispanic/Latin American (3.5%) heritage. This creates a distinctive phenotype: deep warm brown skin with golden and reddish undertones from the African base, refined by North African warmth and Eastern European cool undertones blending into subtle olive. Facial structure reflects the dominant Sub-Saharan and North African genetics — broad, prominent features with secondary influences from Eastern European bone structure and subtle East Asian cheekbone and eye shape definition.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Broad-shouldered and thickening through the torso — the muscular frame of a younger man softened by age and desk time, but still dense and substantial. His center of gravity remains low and functional.",
@@ -249,8 +228,8 @@
     "hair_style": "Clipped close on the sides, longer on top but receding slightly at the temples",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-to-deep brown with golden and reddish undertones from his blended ancestry, weathered and uneven from decades of outdoor deployment",
-    "complexion": "Broad, flat nose with subtle width reflecting Pacific Islander and sub-Saharan heritage, set slightly off-center from two previous breaks. Heavy brow ridge. Deep nasolabial lines. Sparse grey stubble on the jaw most mornings — he shaves every other day now. Cheekbones show subtle East Asian influence softened by his broader African and Indigenous American heritage. Skin has the dull, leathered quality of someone who spent three decades under GLMZ industrial lighting and open-air riot protocols.",
+    "skin_tone": "Deep warm brown with golden and reddish undertones layered with subtle olive undertones from North African and Eastern European blending. Weathered and uneven from decades of outdoor deployment and industrial lighting exposure.",
+    "complexion": "Broad, prominent nose with substantial width reflecting Sub-Saharan African heritage, set slightly off-center from two previous breaks. Heavy brow ridge characteristic of North African and Sub-Saharan ancestry. Deep nasolabial lines. Sparse grey stubble on the jaw most mornings — he shaves every other day now. Cheekbones show subtle definition from East Asian ancestry softened by his stronger Sub-Saharan African and North African heritage base. Skin has the dull, leathered quality of someone who spent three decades under GLMZ industrial lighting and open-air riot protocols.",
     "distinguishing_marks": [
       "Knuckle scarring across both hands — white, healed marks from impact injuries, left hand more heavily scarred than right",
       "Linear scar tissue along the left knee, visible during uniform changes — pale, approximately 8cm in length, site of skeletal reinforcement insertion",
@@ -260,17 +239,61 @@
     "posture_movement": "Stands with weight balanced forward slightly, hands often at rest with fingers slightly curled — occupational muscle memory from riot-line positioning. Moves with deliberate economy, no wasted motion. Walks with a faint left-leg favor on days when the knee is stiff. Rarely makes sudden movements. His default expression is neutral-to-stern; smiling requires visible effort.",
     "clothing_style": "Standard Axiom Security Division suppression specialist uniform when on-shift: grey-black modular body armor with Axiom division patch on chest, load-bearing harness, tactical trousers with reinforced knees, steel-toed boots. Off-shift: plain grey or charcoal sweats, unmarked t-shirts, worn leather jacket from a previous decade. Minimal personal accessories — a single worn wedding ring, no visible jewelry. Everything utilitarian. Tier 3-4 corporate security aesthetic, practical and worn in."
   },
-  "image_prompt": "Onyx Arredondo, 188cm tall security specialist with warm medium-brown skin blending Hispanic, African, Pacific Islander, and East Asian heritage. Steel-grey hair clipped short with receding temples, dark brown eyes, broad nose slightly off-center, heavy brow ridge, deep weathered lines. Scarred knuckles on both hands, faint bioluminescent green patches glowing along both forearms in parallel lines. Wearing grey-black modular Axiom Security armor with tactical harness and reinforced knees, steel-toed boots. Worn leather jacket over plain t-shirt. Single worn wedding ring. Standing in low power stance with forward weight balance, stern neutral expression, muscular build softened by age. Industrial GLMZ evening lighting casting shadows across scarred face and glowing forearm augmentations. Cyberpunk 2226, corporate security dystopia, practical and worn aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Onyx Kariuki, 188cm imposing security officer with deep warm brown skin blended with golden undertones and subtle olive undertones, weathered from decades of industrial deployment. Steel grey hair clipped close on sides with receding temples, dark brown eyes, heavy brow ridge, prominent broad nose set off-center from past breaks. Deep facial lines, sparse grey stubble. Subtle East Asian cheekbone definition softened by dominant Sub-Saharan and North African heritage. Broad-shouldered muscular build softening with age, dense and substantial. Wearing standard Axiom Security grey-black modular tactical armor with chest patch, load-bearing harness, reinforced tactical trousers, steel-toed boots. Faint green bioluminescent geneware patches visible on forearms in dim industrial lighting. Scarred knuckles visible on both hands, left hand more heavily marked. Neutral-stern expression, deliberate economical posture with forward weight balance. GLMZ GLMZ industrial setting, harsh overhead fluorescent and neon lighting casting sharp shadows, worn concrete and steel environment, corporate security aesthetic, —ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 31.6,
-    "Sub-Saharan African": 28.7,
-    "Pacific Islander": 21.0,
-    "East Asian": 7.2,
-    "Indigenous American": 6.1,
-    "Southeast Asian": 5.4
+    "Sub-Saharan African": 38.1,
+    "North African": 21.3,
+    "Eastern European": 20.7,
+    "Middle Eastern": 10.7,
+    "East Asian": 5.7,
+    "Hispanic/Latin American": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 30.7,
+        "Gabonese": 7.4
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Kabyle": 4.8
+      },
+      "Nile Valley": {
+        "Egyptian": 16.5
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 3.4,
+        "Croatian": 4.5
+      },
+      "Slavic West": {
+        "Polish": 3.3,
+        "Sorbian": 3
+      },
+      "Slavic East": {
+        "Ukrainian": 6.5
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 10.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 5.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 3.5
+      }
+    }
+  }
 }

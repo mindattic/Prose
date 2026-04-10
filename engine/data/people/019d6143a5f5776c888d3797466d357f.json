@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f5776c888d3797466d357f",
   "type": "character",
-  "name": "Vega Okafor",
+  "name": "Vega Kjellberg",
   "aliases": [
     "Drag",
     "Forty-Four"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, near Western and Chicago Ave",
-  "description": "Dragan Asiedu-Kovalchuk has been walking the same eight-block stretch of Hamtramck Enclave for eleven years and knows it the way other people know their own bodies — by feel, by the small wrongnesses that signal something is off. He is a large man gone slightly soft in the middle, with a lined face, grey threading through his dark hair and the short beard he keeps carefully trimmed. His skin is a medium olive-brown. He has the deliberate gait of someone whose knees have opinions. He wears his Metro Police uniform with the slightly rumpled dignity of a man who stopped trying to look sharp and started trying to look consistent.\n\nDragan is a beat cop of the old morphology — not particularly interested in arrest statistics, deeply interested in the neighborhood as a living system. He knows who runs the community market on Piast Street, which building's water recycler is failing, where the teenage congregation spots are and which of them are benign. He has opinions about everything and shares most of them freely, which has kept him at the same pay grade for the last decade. He drinks too much coffee, worries about his daughter's corporate debt, and has never once in thirty years of service drawn his weapon outside of a qualification range.",
+  "description": "Vega Kjellberg has been walking the same eight-block stretch of Hamtramck Enclave for eleven years and knows it the way other people know their own bodies — by feel, by the small wrongnesses that signal something is off. He is a large man gone slightly soft in the middle, with a lined face, grey threading through his dark hair and the short beard he keeps carefully trimmed. His skin is a medium olive-brown. He has the deliberate gait of someone whose knees have opinions. He wears his Metro Police uniform with the slightly rumpled dignity of a man who stopped trying to look sharp and started trying to look consistent.\n\nDragan is a beat cop of the old morphology — not particularly interested in arrest statistics, deeply interested in the neighborhood as a living system. He knows who runs the community market on Piast Street, which building's water recycler is failing, where the teenage congregation spots are and which of them are benign. He has opinions about everything and shares most of them freely, which has kept him at the same pay grade for the last decade. He drinks too much coffee, worries about his daughter's corporate debt, and has never once in thirty years of service drawn his weapon outside of a qualification range.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -192,7 +192,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -259,26 +259,12 @@
     "Hamtramck Enclave",
     "CONGREGATION",
     "Ringo CP-2 'Constable'",
-    "SynapTech ReadRoom Social Cue Enhancer",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Arcturus ST-4 'Verdict'",
-    "GLMZ",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo WP-6 'Nightwatch'",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Witness",
-    "Yannick Tofauti-Szarvásy"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European-dominant mixed ancestry (65.9% Eastern European, 20% Sub-Saharan African, 14.1% Hispanic/Latin American). Slavic bone structure with Sub-Saharan African and Latin American features creating distinctive blended phenotype.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Northern European 40.3% (fair base, Nordic bone structure), Southeast Asian 21.8% (eye shape, facial feature softness, pigmentation depth), Sub-Saharan African 13.3% (feature warmth, fullness, undertone richness), Eastern European 12.7% (cheekbone prominence, jaw definition), North African 6.7% (nose bridge character, bridge height), Hispanic/Latin American 5.2% (warmth, feature integration). Creates distinctive phenotype: Nordic-strong bone structure softened by Southeast Asian and African feature fullness, warm golden-brown complexion, balanced facial proportions reflecting global genetic convergence.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large-framed, solidly muscled in shoulders and chest, softening at the middle from a decade of desk time and routine. Carries weight with the settled confidence of someone who no longer needs to prove anything physical.",
@@ -286,8 +272,8 @@
     "hair_style": "Short, practical, combed back without styling product",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and observant",
-    "skin_tone": "Medium warm brown with olive undertones, reflecting the blend of Eastern European fair base with Sub-Saharan African and Latin American pigmentation. Even complexion with subtle golden warmth.",
-    "complexion": "Heavily lined face, particularly around eyes and forehead — lines that map eleven years of studying the same eight blocks. Strong Slavic cheekbone structure softened by fuller features from African and Latin heritage. Well-maintained short beard, salt-and-pepper, trimmed with precision. Skin shows sun exposure and age without neglect. Broad nose bridge with slight Latin American character.",
+    "skin_tone": "Warm medium-golden brown, balancing Northern European undertone with Southeast Asian and Sub-Saharan depth and warmth. Even, sun-exposed complexion with consistent undertone throughout.",
+    "complexion": "Heavily lined face, particularly around eyes and forehead — lines mapping eleven years of studying the same eight blocks. Strong Nordic cheekbone structure softened by fuller Southeast Asian and African feature heritage, creating balanced facial proportions. Well-maintained short beard, salt-and-pepper, trimmed with precision. Skin shows sun exposure and age without neglect. Nose bridge shows North African and Latin character — broad with subtle curve, integrated into Southeast Asian-influenced nasal structure.",
     "distinguishing_marks": [
       "Thin white scar along left temple, approximately 3cm, from firearm incident in his twenties",
       "Faint webbed scarring on left knee, barely visible beneath uniform trousers, from surgical implant installation"
@@ -296,14 +282,80 @@
     "posture_movement": "Deliberate, economical gait with a slight favor to the right leg. Stands with hands often clasped in front or resting at duty belt. Moves through space as someone who has claimed it through repetition rather than dominance. Pauses frequently to observe, head slightly tilted — a listener's posture.",
     "clothing_style": "GLMZ Metro Police regulation uniform: grey-blue tactical fatigues, reinforced canvas, worn to comfortable softness. Patches showing Hamtramck district and 11-year service bar. Scuffed black polymer boots, practical rather than polished. Coffee stains on cuffs are accepted rather than fought. Off-duty: durable working clothes — canvas jacket, thermal underlayers, no affectation."
   },
-  "image_prompt": "Vega Okafor, 188cm tall East European-African-Latin hybrid heritage, medium warm brown skin with olive undertones, dark eyes with crow's feet from decade of street work. Short dark hair with grey threading, salt-pepper trimmed beard. Strong Slavic cheekbones, broad nose, lined weathered face showing 11 years of service. Thin white scar on left temple. Wearing worn GLMZ Metro Police grey-blue tactical uniform, scuffed boots, chrome and polymer neural badge at hip. Standing in economical posture with slight right-leg favor, listening stance. Cyberpunk 2226 Great Lakes Metropolitan Zone, indoor precinct lighting or street neon. Worn confidence, no affectation, detective energy. --ar 2:3 --v 6",
+  "image_prompt": "Vega Kjellberg, 188cm tall neo-noir police detective in 2226 Great Lakes Metropolitan Zone. Warm golden-brown skin tone blending Nordic bone structure with Southeast Asian and Sub-Saharan African heritage softness. Dark brown eyes with age lines mapping eleven years of street work. Salt-and-pepper trimmed beard, short dark brown hair. Solidly muscled but settled build, favoring right leg slightly. Grey-blue GLMZ Metro Police tactical uniform, worn soft from use, Hamtramck district patch visible. Scuffed black polymer boots. Left ear neural interface port visible. Right hip chrome-polymer police badge-link. White scar along left temple. Deliberate posture, observant gaze slightly tilted listening expression. Standing in neon-lit Hamtramck district precinct, blue and amber light casting long shadows. Tired but focused street cop energy, 2200s neo-noir police procedural aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 65.9,
-    "Sub-Saharan African": 20.0,
-    "Hispanic/Latin American": 14.1
+    "Northern European": 40.3,
+    "Southeast Asian": 21.8,
+    "Sub-Saharan African": 13.3,
+    "Eastern European": 12.7,
+    "North African": 6.7,
+    "Hispanic/Latin American": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 19.9
+      },
+      "Germanic": {
+        "German": 17,
+        "Swiss German": 3.4
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 10.3,
+        "Tagalog": 1.5
+      },
+      "Indonesian": {
+        "Javanese": 10
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 7.2
+      },
+      "Central African": {
+        "Congolese": 1.8
+      },
+      "East African": {
+        "Tanzanian": 4.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 4.3
+      },
+      "Slavic East": {
+        "Belarusian": 1.8,
+        "Ukrainian": 1.5
+      },
+      "Slavic South": {
+        "Slovenian": 5.1
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 4.2
+      },
+      "Nile Valley": {
+        "Egyptian": 1.2,
+        "Sudanese": 1.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 2.9
+      },
+      "Mexican": {
+        "Mexican": 0.7
+      },
+      "Central American": {
+        "Honduran": 1.6
+      }
+    }
+  }
 }

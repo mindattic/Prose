@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c27c46bc163f4d89345b13",
   "type": "character",
-  "name": "Ash Johansson-Hernández-Boudiaf",
+  "name": "Ash Esquivel-Vasquez-Alfarsi-Nazari",
   "aliases": [
     "Tempest",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Addison",
-  "description": "Sagyn Padilla-Nti are average height but with a presence that fills more space than the body accounts for. At 37, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a fixer out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nSagyn Padilla-Nti are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
+  "description": "Ash Esquivel-Vasquez-Alfarsi-Nazari are average height but with a presence that fills more space than the body accounts for. At 37, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a fixer out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAsh Esquivel-Vasquez-Alfarsi-Nazari are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.12,
@@ -260,7 +260,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,41 +277,18 @@
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
   ],
   "related_entities": [
-    "GLMZ",
     "Canopy Station Nine",
     "The Heritage Vault",
+    "Diaspora Table",
     "Geartown",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
+    "Canopy",
     "Lazarus LX-2 'Lab Rat'",
-    "Brecken Yılmaz-Osei",
-    "Constance",
-    "Crucible LL-4 'Peacekeeper'",
-    "Djeneba Park-Traore",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "MERIDIAN",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Prophet",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Lattice Whisper Node",
-    "The Canopy",
-    "The Fathom Line",
-    "The Nearfield",
-    "The Pure Hand",
-    "Vespid Dynamics",
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Multiethnic diaspora: 39% Hispanic/Latin American, 20% Sub-Saharan African, 19% Southeast Asian, 12% North African, 10% East Asian. Features reflect this complex blend—warm golden-brown skin with subtle undertones from African and Southeast Asian ancestry, high cheekbones and jaw structure influenced by East Asian and Latin American genetics, with the warm coloration from North African heritage creating depth in their complexion.",
+    "heritage": "Multiethnic diaspora: 46.7% Middle Eastern, 30.4% Hispanic/Latin American, 19.4% East Asian, 3.5% Sub-Saharan African. Features reflect this complex blend—warm golden-brown skin with subtle olive and amber undertones from Middle Eastern and Hispanic ancestry, high cheekbones and narrow jaw structure influenced by East Asian and Middle Eastern genetics, with the warm coloration creating depth and luminosity in their complexion.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and economical — muscle distributed for function rather than aesthetics. Wiry frame that suggests sustained training and controlled caloric intake. No excess, no softness.",
@@ -319,8 +296,8 @@
     "hair_style": "Pulled back tight, often in a high knot or secured with industrial clips",
     "hair_length": "Medium — shoulder-length when unbound, kept severe",
     "eye_color": "Dark brown with faint amber undertone",
-    "skin_tone": "Golden-warm brown — rich medium tone with undertones reflecting Sub-Saharan, Southeast Asian, and North African ancestry. Warm undertones create a luminous quality beneath environmental weathering.",
-    "complexion": "Sharp-featured face with high cheekbones and narrow jaw reflecting East Asian and Latin American genetics. Warm golden-brown skin shows the texture of someone who spends time exposed to environmental stress — not weathered, but marked. Subtle variation in tone consistent with multiethnic ancestry. Minimal grooming affectation; they look like they shave when practical rather than cosmetic.",
+    "skin_tone": "Golden-warm brown — medium tone with olive and amber undertones reflecting the dominance of Middle Eastern and Hispanic ancestry, balanced by East Asian structure. Warm undertones create a luminous quality beneath environmental weathering.",
+    "complexion": "Sharp-featured face with high cheekbones and narrow jaw reflecting East Asian and Middle Eastern genetics. Golden-warm skin with subtle olive undertones shows the texture of someone who spends time exposed to environmental stress — not weathered, but marked. Subtle variation in tone consistent with multiethnic ancestry. Minimal grooming affectation; they look like they shave when practical rather than cosmetic.",
     "distinguishing_marks": [
       "Surgical scar running 8cm along the left collarbone — clean line, old enough to have faded to pale silver",
       "Burn marks across the knuckles of both hands — small, overlapping, consistent with sustained exposure to heat or chemical contact",
@@ -330,16 +307,49 @@
     "posture_movement": "Moves with economical precision — no wasted motion, no performative gesture. They stand slightly asymmetrical, weight favoring the right side. Their gaze is direct and sustained, holding eye contact longer than social convention suggests is comfortable. When still, they radiate coiled readiness rather than relaxation.",
     "clothing_style": "Tier 3-4 practical aesthetics with deliberate wear markers. Black synthetic jacket with reinforced shoulders and visible stitching — custom-fitted, nondescript brand. Underneath: gray compression shirt that serves both function and thermoregulation. Cargo pants in matte charcoal with multiple sealed pockets and subtle tool loops. Boots are heavy-soled, modular, the kind that can be repaired or upgraded in the field. No jewelry except a thin steel bracelet on the left wrist — possibly functional, possibly not. Clothing shows signs of regular maintenance but not vanity — everything is serviceable, nothing is new."
   },
-  "image_prompt": "Ash Johansson-Hernández-Boudiaf, 172cm lean-muscled figure with golden-warm medium brown skin reflecting multiethnic ancestry (Hispanic, Sub-Saharan African, Southeast Asian, North African, East Asian blend). Sharp-featured face with high cheekbones, narrow jaw, dark brown eyes with amber undertones. Black hair pulled back severe and tight, silver threading at temples. Visible chrome biosynthesizer at neck/upper chest with blue pulse-LEDs, neural ports behind left ear. Surgical scar along left collarbone, burn marks on knuckles, lattice scars on right forearm. Wearing black reinforced synthetic jacket, gray compression shirt, matte charcoal cargo pants, heavy modular boots. Steel bracelet on left wrist. Direct intense gaze, economical posture radiating coiled readiness. Standing in neon-lit GLMZ urban environment, cyberpunk 2226 Great Lakes Metropolitan Zone, cool blue and amber industrial lighting, worn interior workspace or transit hub, atmospheric haze, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Ash Esquivel-Vasquez-Alfarsi-Nazari, GLMZ, 172cm lean androgynous figure with golden-warm brown skin and subtle olive undertones from Middle Eastern-Hispanic-East Asian ancestry blend. Sharp high cheekbones, narrow jaw, dark brown eyes with amber undertones. Black hair with silver threading at temples pulled back severe and tight. Exposed chrome biosynthesizer at neck base with pulsing blue LEDs, neural ports behind left ear. Visible scars: 8cm surgical line on collarbone, burn marks on knuckles, lattice marks on right forearm. Wearing black reinforced synthetic jacket, gray compression shirt, matte charcoal cargo pants, heavy modular boots. Steel bracelet on left wrist. Standing slightly asymmetrical, weight favored right, coiled readiness, direct penetrating gaze. Industrial warehouse setting, cool blue-white overhead lighting mixing with warm ambient neon, urban decay background, atmospheric mist and subtle rain. Cinematic, high contrast, sharp detail on facial features and augmentation work, moody neo-noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.0,
-    "Sub-Saharan African": 20.2,
-    "Southeast Asian": 18.9,
-    "North African": 11.7,
-    "East Asian": 10.2
+    "Middle Eastern": 46.7,
+    "Hispanic/Latin American": 30.4,
+    "East Asian": 19.4,
+    "Sub-Saharan African": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 10.7,
+        "Yemeni": 7.8
+      },
+      "Persian": {
+        "Iranian": 28.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 7.1,
+        "Salvadoran": 1.7
+      },
+      "Mexican": {
+        "Mexican": 7.5
+      },
+      "South American": {
+        "Colombian": 1.1,
+        "Ecuadorian": 13
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 19.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 3.5
+      }
+    }
+  }
 }

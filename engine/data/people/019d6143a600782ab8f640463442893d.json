@@ -1,7 +1,7 @@
 {
   "id": "019d6143a600782ab8f640463442893d",
   "type": "character",
-  "name": "Rune Salazar",
+  "name": "Rune Erikstad",
   "aliases": [
     "Eke",
     "The Pharmacist"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "The Narrows, Irkalla, near Halsted and Chicago Ave",
-  "description": "Ekwueme is tall and painfully thin in the way of someone who grew up on UBC stipend food and spent their teens in a growth spurt the nutrition couldn't fully support. His skin is a blue-black that catches the Narrows' neon in purples and greens, and he has a habit of standing slightly too still, which people find either reassuring or unsettling depending on their business with him. His hair is kept very short; he has a small bioluminescent strip tattooed along his left jawline that glows a steady, dim teal — a medic's mark used by unlicensed practitioners in Irkalla to signal availability. His eyes are clear and attentive in a way that makes people feel examined, which is accurate. He carries his stock in a decommissioned Helix Biosystems medical case, battered and re-stickered many times over, that he keeps chained to his wrist.\n\nEkwueme is twenty-three years old and already exhausted by things that would exhaust a person twice his age. He trained through a community apprenticeship program under a retired Aurochs Medical Complex nurse who has since died. He knows more clinical pharmacology than most people with actual licenses and has never been able to afford to sit the exams. He is not idealistic in the way of someone who has never done the work; he is idealistic in the way of someone who has done the work and keeps doing it anyway, which is a different and more serious condition. He doesn't enjoy the gray-market side of his trade. He does it because the alternative is that the people who need the gray-market side of his trade go to people who will hurt them.",
+  "description": "Rune Erikstad is tall and painfully thin in the way of someone who grew up on UBC stipend food and spent their teens in a growth spurt the nutrition couldn't fully support. His skin is a blue-black that catches the Narrows' neon in purples and greens, and he has a habit of standing slightly too still, which people find either reassuring or unsettling depending on their business with him. His hair is kept very short; he has a small bioluminescent strip tattooed along his left jawline that glows a steady, dim teal — a medic's mark used by unlicensed practitioners in Irkalla to signal availability. His eyes are clear and attentive in a way that makes people feel examined, which is accurate. He carries his stock in a decommissioned Helix Biosystems medical case, battered and re-stickered many times over, that he keeps chained to his wrist.\n\nRune Erikstad is twenty-three years old and already exhausted by things that would exhaust a person twice his age. He trained through a community apprenticeship program under a retired Aurochs Medical Complex nurse who has since died. He knows more clinical pharmacology than most people with actual licenses and has never been able to afford to sit the exams. He is not idealistic in the way of someone who has never done the work; he is idealistic in the way of someone who has done the work and keeps doing it anyway, which is a different and more serious condition. He doesn't enjoy the gray-market side of his trade. He does it because the alternative is that the people who need the gray-market side of his trade go to people who will hurt them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -163,7 +163,7 @@
     "Nostalgic": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,31 +183,13 @@
     "WELLSPRING",
     "TESSERA PG-2 'Signature'",
     "Irkalla",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Pellucid Systems",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus HX-1 'Headsman'",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Ezio Kaboré-Malhotra",
-    "Kairos",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Lazarus LP-3 'Clinic Spider'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "ShieldTech CLA-3 'Cascade'",
-    "Slagworks Industrial",
-    "Stainless Steel",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Narrows",
-    "The Pure Hand"
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian (31.4%) with significant Hispanic/Latin American (27.8%) and Pacific Islander (26.9%) ancestry, creating a striking pan-Asian-Pacific phenotype with secondary Latin American features. Northern European (11.9%) ancestry contributes subtle undertones to his overall appearance.",
+    "heritage": "Predominantly Eastern European (53.3%) with significant East Asian (25.1%) and South Asian (11.0%) ancestry, creating a striking Eurasian phenotype. Secondary Northern European (6.0%) and Indigenous American (4.6%) ancestry add subtle depth. The blend produces distinctive angular features: Eastern European bone structure in the long jaw and cheekbones, East Asian eye set and epicanthal fold, South Asian warmth enriching the undertone, Indigenous American and Northern European paleness creating complexity underneath. A person genuinely difficult to place at first glance—the genetic diaspora made visible.",
     "height_cm": 189,
     "weight_kg": 68,
     "build": "Tall and wiry—lanky in the way of someone who grew too fast on insufficient calories and never quite filled out. His frame is angular, all long limbs and prominent joints; his chest is narrow but his shoulders are broad enough to suggest potential muscle under different circumstances.",
@@ -215,8 +197,8 @@
     "hair_style": "Closely cropped, neat, practical; kept short enough that maintenance takes seconds",
     "hair_length": "Short",
     "eye_color": "Dark brown, nearly black—clear and unaugmented, but unnaturally alert and tracking",
-    "skin_tone": "Warm tan to light brown with golden undertones from the East Asian-Pacific Islander-Hispanic blend; catches ambient neon (especially the Narrows' reds and purples) and throws it back in shifted hues—greens and violets bleeding across his shoulders and neck in low light",
-    "complexion": "Clean-shaven with defined cheekbones and a long jaw reflecting East Asian and Pacific Islander ancestry structure. Eyes set with the characteristic shape of his East Asian heritage. Skin is clear but shows the faint pallor of someone who works nights and moves between climate-controlled interiors. No visible scarring on the face, but there is a careful, examined quality to his expression—the look of someone who watches people for a living.",
+    "skin_tone": "Warm medium tan with golden-olive undertones from the Eastern European-East Asian-South Asian blend; catches ambient neon with subtle shifts—greens and violets bleeding across his shoulders and neck in low light, underlying coolness visible in winter pallor despite the warmth",
+    "complexion": "Clean-shaven with defined cheekbones and a long jaw reflecting Eastern European bone structure, tempered and refined by East Asian eye set and facial proportions, warmed by South Asian and Indigenous American undertones. Eyes set with characteristic monolid or reduced epicanthic fold of his East Asian heritage. Skin is clear but shows the faint pallor of someone who works nights and moves between climate-controlled interiors. No visible scarring on the face, but there is a careful, examined quality to his expression—the look of someone who watches people for a living.",
     "distinguishing_marks": [
       "Bioluminescent geneware tattoo running along the left jawline from below the ear to the chin; thin, precise line glowing steady teal approximately 0.5 cm in brightness; marks him as an unlicensed medical practitioner",
       "Small, faint surgical scars on both inner wrists (subcutaneous sensor implants from his apprenticeship training, non-functional but never removed)"
@@ -225,16 +207,62 @@
     "posture_movement": "Stands very still by default—an economical stance that reads as either meditation or surveillance depending on context. When he moves, it is deliberate and precise; no wasted motion. He does not gesture much when speaking. His attention is complete when directed at someone; he makes sustained eye contact that most people find either deeply reassuring or deeply unsettling. He walks slowly, which allows him to observe without appearing to observe.",
     "clothing_style": "Tier 4 / working-class practical. Typically wears dark, well-maintained clothing: matte-black or charcoal synth-cotton long-sleeve shirt (loose fit, arm cuffs rolled to mid-forearm to keep hands visible and free); dark gray utility trousers with reinforced pockets, several Velcro-sealed compartments for inventory; black composite boots with grip soles (required for Narrows micro-terrain). No jewelry except the chain on his wrist. A worn, oversized hooded jacket (actual fabric, likely salvaged wool-blend) in dark olive that he sheds in the pharmacy but carries always. Patch on left shoulder: faded Irkalla Mutual Aid Collective circle-and-flame in white. No visible Helix Biosystems branding, though his case is unmistakably their decommissioned design."
   },
-  "image_prompt": "Rune Salazar, tall wiry East Asian-Pacific Islander man with golden-tan skin, sharp cheekbones and long jaw, short black hair, dark eyes. Unaugmented but alert gaze. Bioluminescent teal tattoo glowing along left jawline. Matte-black synth-cotton long-sleeve shirt with rolled cuffs, dark gray utility trousers, black composite boots. Worn olive wool-blend hooded jacket draped over shoulders. Battered stainless steel Helix Biosystems medical case chained to left wrist. Still, economical posture—complete stillness reading as meditation or surveillance. Low neon lighting casting shifted greens and violets across shoulders. Great Lakes Metropolitan Zone pharmacy setting, cyberpunk 2226, moody atmospheric lighting, working-class practical aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Rune Erikstad, 189cm tall wiry figure, Eastern European-East Asian-South Asian Eurasian blend with striking angular cheekbones and long jaw, monolid East Asian eye set, warm golden-olive medium tan skin with neon-reactive undertones, dark brown nearly-black eyes, short black hair with warm tone, clean-shaven. Left jawline marked with steady teal bioluminescent geneware tattoo from ear to chin glowing in low light. Wears matte-black synth-cotton long-sleeve shirt with rolled cuffs, dark gray utility trousers, black composite boots, worn dark olive wool-blend hooded jacket, faded white Irkalla circle-and-flame patch on left shoulder. Battered Helix Biosystems stainless steel medical case chained to left wrist. Stands economical and still with complete, unsettling eye contact. GLMZ Great Lakes Metropolitan Zone, nighttime pharmacy or narrows setting, ambient neon casting greens and violets across his skin, climate-controlled interior with subtle pallor contrasting warm undertones, medic aesthetics, unlicensed practitioner energy --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 31.4,
-    "Hispanic/Latin American": 27.8,
-    "Pacific Islander": 26.9,
-    "Northern European": 11.9,
-    "South Asian": 2.0
+    "Eastern European": 53.3,
+    "East Asian": 25.1,
+    "South Asian": 11,
+    "Northern European": 6,
+    "Indigenous American": 4.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 13.8
+      },
+      "Slavic South": {
+        "Serbian": 39.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 25.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 7.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.6
+      },
+      "Nepali": {
+        "Nepali": 2.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 0.8,
+        "Austrian": 2.7
+      },
+      "British Isles": {
+        "Scottish": 1.9,
+        "English": 0.6
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 3.2,
+        "Aymara": 0.8
+      },
+      "Mesoamerican": {
+        "Zapotec": 0.3,
+        "Mixtec": 0.3
+      }
+    }
+  }
 }

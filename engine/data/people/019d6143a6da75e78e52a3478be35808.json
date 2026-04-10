@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6da75e78e52a3478be35808",
   "type": "character",
-  "name": "Briar Taufa",
+  "name": "Briar Ingebrigtsen",
   "aliases": [
     "Dry-River"
   ],
@@ -12,7 +12,7 @@
   "age": 58,
   "status": "active",
   "location": "Kenosha Crossing — the tarp-city south of the hyperlane interchange, near past the Kedzie Barrier",
-  "description": "Soraya is a broad-shouldered woman whose face has been scoured into deep lines by decades of wind off a dying inland sea. Her skin is the color of dark river silt, mapped with faint scars from salt-chap and sun. She wears a patchwork thermal wrap she's been mending for eleven years, and her left hand is missing two fingers — lost to a harvesting machine when she was thirty. Her eyes are still and watchful, the particular calm of someone who has already lost most of what there was to lose.\n\nShe came from a drowned agricultural collective somewhere south of what used to be a great lake, following the hyperlane north when the floods took the last of the soil. She does not talk about the collective. She talks about weather — wind pressure, cloud formations, the smell of rain before it arrives — with the precision of someone whose life once depended on it. At Kenosha Crossing she has become a de facto matriarch of the tarp-city's oldest cluster, settling disputes with an economy of words that makes younger drifters uneasy. She prays to the E.L.F. she calls Grandmother Antenna, leaving small braids of wire at junction boxes.",
+  "description": "Briar Ingebrigtsen is a broad-shouldered woman whose face has been scoured into deep lines by decades of wind off a dying inland sea. Her skin is the color of dark river silt, mapped with faint scars from salt-chap and sun. She wears a patchwork thermal wrap she's been mending for eleven years, and her left hand is missing two fingers — lost to a harvesting machine when she was thirty. Her eyes are still and watchful, the particular calm of someone who has already lost most of what there was to lose.\n\nShe came from a drowned agricultural collective somewhere south of what used to be a great lake, following the hyperlane north when the floods took the last of the soil. She does not talk about the collective. She talks about weather — wind pressure, cloud formations, the smell of rain before it arrives — with the precision of someone whose life once depended on it. At Kenosha Crossing she has become a de facto matriarch of the tarp-city's oldest cluster, settling disputes with an economy of words that makes younger drifters uneasy. She prays to the E.L.F. she calls Grandmother Antenna, leaving small braids of wire at junction boxes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -157,7 +157,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenosha Crossing",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,33 +173,15 @@
     "Kenosha Crossing",
     "Dredge Mining Collective",
     "Grandmother",
+    "Pressure Drop",
     "The Meridian Drift",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Compass Rose",
-    "Weathervane",
-    "Adaeze Soumaré-Papadimitriou",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "CHROMEWORKS FlexSheath Graphene Spine",
-    "Carrion Defense Works Scythe CDW-20 'Reaper'",
-    "Crucible Industries BioVault Genetic Archive Bunker",
-    "Dzintars Ababio-Suleimenov",
-    "Helix Biosystems Subdermal Pressure Lattice",
-    "Iowan Behemoth — 'Palisade'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Obafemi Szczypiński-Lautoa",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "The Collective",
-    "The Compact",
-    "The Gutter Prophets",
-    "Thibault Achebe-Sørensen",
-    "Yannick Tofauti-Szarvásy"
+    "Weathervane"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Pacific Islander (44.3%), Sub-Saharan African (38.2%), and East Asian (17.5%) ancestry — a striking blend evident in her broad facial structure with high cheekbones, the warmth of her deep brown skin with subtle golden undertones from Pacific heritage, and the slight epicanthal fold at her eyes reflecting her East Asian genetics",
+    "heritage": "Predominantly East Asian (42.4%) with significant Southeast Asian (17.5%), Sub-Saharan African (14.0%), and Hispanic/Latin American (11.8%) ancestry, plus Eastern European (11.6%) and South Asian (2.7%) components. Her facial structure reflects this complex blend: prominent Southeast Asian cheekbones, broader Sub-Saharan nasal features, and the slight epicanthal fold characteristic of East Asian genetics. The overall effect is a richly mixed phenotype where no single heritage dominates her appearance.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, with the compact muscularity of someone who has done manual labor for decades. Not lean — her frame carries functional mass. Her posture is upright despite age, though her shoulders slope slightly forward from years of hunching against wind.",
@@ -207,8 +189,8 @@
     "hair_style": "Worn in a single long braid, bound with strips of faded cloth and threaded with thin wire at irregular intervals — a functional choice that also serves as prayer offerings",
     "hair_length": "Long",
     "eye_color": "Dark brown, almost black, with a milky film from age-related cataracts beginning to form",
-    "skin_tone": "Deep warm brown with golden and reddish undertones — the sun-darkened richness of Pacific Islander and Sub-Saharan heritage, weathered to a dusty patina by decades of salt and wind exposure",
-    "complexion": "Heavily lined face, particularly around the eyes and mouth, with the characteristic broad nasal bridge and full lips reflecting her Pacific Islander and African ancestry. Skin is weathered and dry from decades of wind and salt exposure. Faint crosshatch scarring visible on cheeks and forehead from repeated salt-chap and sun damage. Her left hand is missing the index and middle fingers — a clean amputation at the second knuckle from a harvesting machine accident.",
+    "skin_tone": "Deep warm brown with golden, reddish, and subtle olive undertones — a complex blend reflecting East Asian warmth, Southeast Asian depth, Sub-Saharan richness, and Eastern European undertones, weathered to a dusty patina by decades of salt and wind exposure",
+    "complexion": "Heavily lined face, particularly around the eyes and mouth, with moderate to prominent cheekbones and full lips reflecting her East and Southeast Asian heritage blended with Sub-Saharan and Hispanic/Latin American features. Nasal bridge shows East Asian characteristics with slight broadening from Sub-Saharan genetics. Skin is weathered and dry from decades of wind and salt exposure. Faint crosshatch scarring visible on cheeks and forehead from repeated salt-chap and sun damage. Her left hand is missing the index and middle fingers — a clean amputation at the second knuckle from a harvesting machine accident.",
     "distinguishing_marks": [
       "Parallel burn scars running down her left forearm from an old thermal accident, three thin white lines approximately 8cm long",
       "Faint agricultural tattoo on her right inner wrist — a symbol of her former collective, now deliberately worn so faintly it reads like a ghost mark",
@@ -219,14 +201,62 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Her gait is slightly favoring her right side from decades of compensating for her missing left fingers. She stands with weight distributed evenly, shoulders back, chin slightly raised as if reading the sky. Her remaining left hand often rests against her thermal wrap, a habitual gesture of checking the weave. When she sits, she folds into herself compactly, spine curved, ready to rise quickly.",
     "clothing_style": "Tier 5 refugee wear. Her primary garment is a patchwork thermal wrap she has been mending for eleven years — it is a palimpsest of repairs made from salvaged fabric scraps, sealed seams, and reinforced panels. The base color is faded grey-brown, with visible patches of blue tarp material, cream-colored synthetic fibers, and darker wool inserts. The wrap is layered with a thin undershirt (probably salvaged) and cargo pants with multiple pockets, all heavily worn. She wears weathered boots with the left foot's laces wrapped around the ankle to compensate for her missing fingers' inability to tie knots. A belt of braided paracord holds everything in place. Around her neck hangs a collection of wire braids and small junction-box offerings, and she often carries a notebook for weather observations made with a pencil stub."
   },
-  "image_prompt": "Briar Taufa, elderly woman with Pacific Islander and Sub-Saharan African heritage, deep warm brown skin with golden undertones, silver-grey hair in a long braid threaded with wire, dark brown eyes with cataracts, heavily weathered face with deep lines and faint crosshatch scarring, left hand missing index and middle fingers, parallel burn scars on left forearm, broad facial structure with high cheekbones and full lips, upright posture with slight forward shoulder slope. Wearing tier-5 refugee patchwork thermal wrap in faded grey-brown with blue tarp patches and wool inserts, layered with salvaged undershirt and worn cargo pants, weathered boots with wrapped left laces, braided paracord belt, wire braids and junction-box offerings around neck, clutching weather observation notebook. Cyberpunk 2226 GLMZ setting, industrial waterfront ruins with salt-weathered structures, cool blue-grey lighting suggesting dawn or overcast weather, her unaugmented form standing resolute against abandoned infrastructure, atmospheric haze from industrial decay, contemplative stance gazing toward horizon --ar 2:3 --v 6",
+  "image_prompt": "A weathered woman, 172cm tall, with deep warm brown skin bearing golden and olive undertones from complex East Asian, Southeast Asian, Sub-Saharan, and Hispanic ancestry. Silver-grey hair in a long braid bound with faded cloth and thin wire offerings. Prominent cheekbones, full lips, slight epicanthal fold at dark brown eyes clouded with age-related cataracts. Her left hand missing index and middle fingers. Parallel burn scars on her left forearm, faint ghost tattoo on inner wrist. Heavily lined face and weathered complexion from decades of salt and wind exposure. Wearing a patchwork thermal wrap of grey-brown base with blue tarp patches, cream synthetic panels, and wool inserts—mended for eleven years. Thin undershirt, worn cargo pants with multiple pockets, weathered boots with wrapped ankle laces, paracord belt. Wire braids and junction-box offerings hang at her neck. She stands upright with shoulders slightly forward, weight distributed evenly, reading the sky. GLMZ, GLMZ refugee enclave, salt-weathered aesthetic, dystopian dawn lighting casting long shadows, wire and salvage details, spiritually resistant unaugmented figure, gritty and dignified --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 44.3,
-    "Sub-Saharan African": 38.2,
-    "East Asian": 17.5
+    "East Asian": 42.4,
+    "Southeast Asian": 17.5,
+    "Sub-Saharan African": 14,
+    "Hispanic/Latin American": 11.8,
+    "Eastern European": 11.6,
+    "South Asian": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 42.4
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 17.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 14
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 0.9
+      },
+      "Central American": {
+        "Honduran": 1.8,
+        "Costa Rican": 1.7
+      },
+      "South American": {
+        "Brazilian": 6.3,
+        "Peruvian": 1.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 9.5,
+        "Serbian": 2.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 2.2,
+        "Bengali": 0.3
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 0.2
+      }
+    }
+  }
 }

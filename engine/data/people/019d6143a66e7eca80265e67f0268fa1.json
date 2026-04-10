@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66e7eca80265e67f0268fa1",
   "type": "character",
-  "name": "Slate Madrigal-Larsdóttir",
+  "name": "Slate Madrigal-Sepúlveda",
   "aliases": [
     "Noma",
     "the Duchess"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Undertow — operates from a tea house called the Deep Current that they also own legitimately, near Fullerton and Damen",
-  "description": "Nnọmá is striking in a way that takes a moment to parse: medium height, deliberately ambiguous in presentation, with dark sienna skin and bioluminescent sub-epidermal patterning along their collarbones and temples that pulses in slow blue-green cycles — a geneware mod they describe as 'the best investment I ever made.' Their hair is grown long and worn in elaborate stacked forms held with copper wire, and they dress in layered, draped garments that suggest both ceremony and practicality. Their voice is a low, unhurried instrument they use with evident pleasure.\n\nNnọmá built the Deep Current into GLMZ's most reliable neutral ground for compute transactions over twelve years of patient relationship management. They know the value of reputation — not just for quality, but for discretion. Stolen processing cycles from corporate mainframes, black-market AI training data, ghost server allocations on dormant Axiom nodes — Nnọmá doesn't produce any of it, they simply know everyone who does and everyone who needs it. They take ten percent and remember everything. They have a genuine passion for the tea house itself, keep an excellent selection, and make the rounds of every table during service hours like a host who actually enjoys their guests.",
+  "description": "Slate Madrigal-Sepúlveda is striking in a way that takes a moment to parse: medium height, deliberately ambiguous in presentation, with dark sienna skin and bioluminescent sub-epidermal patterning along their collarbones and temples that pulses in slow blue-green cycles — a geneware mod they describe as 'the best investment I ever made.' Their hair is grown long and worn in elaborate stacked forms held with copper wire, and they dress in layered, draped garments that suggest both ceremony and practicality. Their voice is a low, unhurried instrument they use with evident pleasure.\n\nSlate Madrigal-Sepúlveda built the Deep Current into GLMZ's most reliable neutral ground for compute transactions over twelve years of patient relationship management. They know the value of reputation — not just for quality, but for discretion. Stolen processing cycles from corporate mainframes, black-market AI training data, ghost server allocations on dormant Axiom nodes — Slate Madrigal-Sepúlveda doesn't produce any of it, they simply know everyone who does and everyone who needs it. They take ten percent and remember everything. They have a genuine passion for the tea house itself, keep an excellent selection, and make the rounds of every table during service hours like a host who actually enjoys their guests.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -188,7 +188,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Undertow",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,33 +238,18 @@
   "related_entities": [
     "The Undertow",
     "DEEP CURRENT",
-    "GLMZ",
     "Bathysphere Networks",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Irontide Tidal Energy",
     "Stratum",
     "Chimera-Null",
     "Copper",
-    "Alper Lebedev-Tutu",
-    "Archer's Line",
-    "Emeka Johansson-Orozco",
-    "Kenji Guerrero-Osei-Mensah",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Weartech ShockWeave SW-3 'Thistle'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nodar Kuznetsov-Adu",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Tenderloin",
-    "The Archive",
-    "The Arrangement",
-    "The Collective",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure",
-    "Zheng-dao Bioelectric"
+    "Slate",
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Pan-diaspora ancestry: 36.8% Hispanic/Latin American, 31.4% East Asian, 18.2% Sub-Saharan African, 13.6% South Asian. Genetic signature reflects the Ubiquitous Diaspora—a complex blend producing distinctive phenotypic synthesis across multiple continental lineages.",
+    "heritage": "Predominantly Hispanic/Latin American (65.6%) with significant Eastern European (14.2%), Middle Eastern (11.9%), and smaller East Asian (5.2%) and Southeast Asian (3.1%) components. This creates a striking phenotype: warm Latin American base tones enriched by Levantine angularity, Eastern European bone structure subtly present in cheekbone prominence, and East/Southeast Asian influences visible in eye shape and subtle facial proportions. A true Ubiquitous Diaspora signature—luminous warmth with architectural precision.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and graceful, economical in movement, with subtle musculature suggesting decades of deliberate posture work rather than gym conditioning",
@@ -272,8 +257,8 @@
     "hair_style": "Elaborately stacked and sculpted forms, held in place with hand-wound copper wire that catches light; each section roughly palm-sized, creating a geometric crown effect",
     "hair_length": "Long (shoulder to mid-back when fully unbound)",
     "eye_color": "Dark brown, alert and intelligent; reflective quality suggests subcutaneous neural enhancements",
-    "skin_tone": "Warm medium-deep brown with olive undertones—a rich synthesis of East Asian, South Asian, Sub-Saharan, and Latin American ancestry creating luminous warmth rather than cool or pure sienna",
-    "complexion": "Smooth, well-maintained skin with no visible scarring; face shows balanced East Asian and African features—slightly wider cheekbones with graceful angularity, strong defined jawline with soft contours; eyes set with distinctive depth; grooming is meticulous but not sterile; expression defaults to composed watchfulness",
+    "skin_tone": "Warm medium-deep bronze with golden-olive undertones—a luminous synthesis of Latin American warmth, Levantine depth, and Eastern European complexity creating an almost iridescent quality in certain light",
+    "complexion": "Smooth, well-maintained skin with no visible scarring; face shows striking blended features—high, defined cheekbones with slight angularity (Eastern European/Middle Eastern influence), strong jawline with warm rounded contours (Latin American heritage), eyes set deep with graceful almond shape (East Asian heritage woven through), nose with subtle bridge prominence and warm flare; grooming is meticulous but not sterile; expression defaults to composed watchfulness",
     "distinguishing_marks": [
       "Bioluminescent subepidermal patterning along collarbones in branching patterns, glowing soft blue-green in slow 3-4 second pulse cycles; most visible when wearing open-necked clothing",
       "Matching bioluminescent patterning along both temples in delicate tracery, also blue-green and pulsing; becomes more pronounced in dim light or high emotional states",
@@ -283,15 +268,59 @@
     "posture_movement": "Moves with deliberate, economical grace — no wasted motion. Sits in positions that suggest both relaxation and readiness; often turns head slightly before speaking, as if scenting the social temperature of a room. Hands are expressive but controlled. Maintains eye contact with disarming directness. When at rest, their bioluminescence pulses subtly, creating a meditative rhythm that draws focus",
     "clothing_style": "Layered, draped garments in natural fibers (linen, hemp, silk, lightweight wool) in muted earth tones (charcoal, deep olive, rust, cream) with occasional jewel tones. Deliberately ungendered silhouette — loose over-robes worn over fitted base layers. Favors garments that conceal or reveal the bioluminescent patterning strategically depending on context. Several pieces are clearly custom-tailored; quality suggests mid-to-high Tier 2 status without announcing it. Feet are bare or in simple leather sandals indoors; functional dark boots for outdoor movement. Minimal jewelry beyond the copper wire in hair; occasionally wears a thin silver chain with an unidentifiable pendant. Grooming and presentation suggest someone who has spent considerable time thinking about how they wish to be perceived, and who has settled on 'trustworthy, present, and faintly otherworldly.'"
   },
-  "image_prompt": "Portrait of Slate Madrigal-Larsdóttir, cyberpunk 2226, 168cm lean figure with warm olive-brown skin reflecting East Asian and Sub-Saharan African ancestry. Deep black hair sculpted into geometric sections with copper wire detailing, grey at temples. Angular face with defined cheekbones and sharp jawline, dark brown eyes with neural enhancement shimmer. Bioluminescent blue-green subepidermal patterning glowing along collarbones and temples in branching tracery patterns, pulsing softly. Open-necked charcoal linen over-robe in layered natural fibers, strategically revealing shoulder patterning. Composed, watchful expression with meditative presence. Soft volumetric lighting in dimly-lit interior setting, catching the copper wire highlights and illuminating the bioluminescent geneware enhancements. Trustworthy yet faintly otherworldly demeanor. Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Slate Madrigal-Sepúlveda, a 168cm lean figure with striking blended heritage—warm bronze skin with golden-olive undertones, high angular cheekbones softened by Latin warmth, deep-set almond-shaped dark eyes with neural enhancement glimmer, strong graceful jawline. Shoulder-length natural deep black hair elaborately sculpted into geometric sections and bound with hand-wound copper wire catching light. Bioluminescent subepidermal patterning glows soft blue-green along collarbones and temples in delicate branching tracery. Wearing layered earth-tone draped linen and silk in charcoal and deep olive, loose over-robe silhouette, deliberately ungendered. Bare feet or simple leather sandals. Composed, watchful posture with deliberate economical grace. GLMZ setting, dim interior lighting with soft blue-green bioluminescence casting subtle glow on face and shoulders. Meditative, trustworthy presence with otherworldly quality. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 36.8,
-    "East Asian": 31.4,
-    "Sub-Saharan African": 18.2,
-    "South Asian": 13.6
+    "Hispanic/Latin American": 65.6,
+    "Eastern European": 14.2,
+    "Middle Eastern": 11.9,
+    "East Asian": 5.2,
+    "Southeast Asian": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 30.6,
+        "Peruvian": 9.2
+      },
+      "Central American": {
+        "Honduran": 19.7,
+        "Guatemalan": 6.1
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 14.2
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 2.6,
+        "Afghan Dari": 2.2
+      },
+      "Arab Levantine": {
+        "Jordanian": 4.3,
+        "Syrian": 2.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.5
+      },
+      "Japanese": {
+        "Japanese": 3
+      },
+      "Chinese": {
+        "Hakka": 0.7
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 3.1
+      }
+    }
+  }
 }

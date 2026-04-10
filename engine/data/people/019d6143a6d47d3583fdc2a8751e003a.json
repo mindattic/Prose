@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d47d3583fdc2a8751e003a",
   "type": "character",
-  "name": "Orion Nazari",
+  "name": "Orion Deshpande",
   "aliases": [
     "Whisper"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -102,15 +102,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian Core",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Zheng-dao Bioelectric"
+    "Meridian Core"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Middle Eastern dominant with Hispanic/Latin American, Sub-Saharan African, and South Asian ancestry. Strong Levantine and North African features blended with Latin American warmth and sub-Saharan bone structure.",
+    "heritage": "South Asian dominant (62.9%) with significant Hispanic/Latin American (24.9%) and Eastern European (12.2%) ancestry. Strong South Asian bone structure blended with Latin American warmth creates rich golden undertones and defined angularity. Eastern European heritage adds subtle coolness and facial structure refinement. A sophisticated genetic synthesis of subcontinental, Iberian-influenced, and Central European characteristics.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and angular with defined musculature; maintained through discipline rather than bulk. High center of gravity, built for mobility and sustained physical exertion rather than power.",
@@ -118,8 +114,8 @@
     "hair_style": "Slicked back into a tight high ponytail, secured with a minimalist chrome clip",
     "hair_length": "Long",
     "eye_color": "Dark brown with mild heterochromia—left eye shows faint amber threading, likely subcutaneous neural interface indicators",
-    "skin_tone": "Deep warm bronze with golden-amber undertones; sun-kissed despite Tier 1 indoor lifestyle. Rich complexion reflecting Middle Eastern and African heritage with Latin warmth.",
-    "complexion": "Strong cheekbones with defined angularity, prominent jawline reflecting Middle Eastern structure softened by sub-Saharan fullness. Skin shows the precision of someone using high-end dermal maintenance, but not obsessively. A faint scar runs along her left temple, partially hidden by hairline.",
+    "skin_tone": "Warm medium-deep brown with golden-olive undertones. Rich luminous complexion reflecting dominant South Asian heritage warmed by Hispanic/Latin American influence, subtly cooled by Eastern European undertones. Sun-kissed glow suggesting time under natural light despite Tier 1 indoor lifestyle.",
+    "complexion": "Strong defined cheekbones with balanced angularity characteristic of South Asian-Eastern European blend, prominent jawline softened by Latin warmth. Skin shows the precision of someone using high-end dermal maintenance. A faint scar runs along her left temple, partially hidden by hairline.",
     "distinguishing_marks": [
       "Thin white scar along left temple, approximately 3cm, likely from blunt-force trauma—partially concealed by hairline",
       "Faint burn mark on inside of right wrist, roughly 2cm diameter, consistent with industrial accident or interrogation scar",
@@ -129,15 +125,39 @@
     "posture_movement": "Precise and economical. She moves with the coiled readiness of someone trained in violence, but masks it under a veneer of corporate polish. Handshakes are firm but brief. She rarely fidgets; instead, her eyes do most of the work—scanning rooms systematically, calculating angles. When seated, she maintains an open posture that nonetheless keeps her center of gravity low.",
     "clothing_style": "Tier 1 corporate minimalist. Typically wears tailored black or charcoal blazers over understated base layers—often Zheng-Dao-aligned brands with subtle sigils. Prefers fitted tactical pants with hidden pockets over skirts. Footwear is always practical: matte-black neural-responsive shoes that adjust to terrain. Jewelry is minimal—a simple platinum band on her right ring finger and understated earrings that double as neural interface nodes. Her overall aesthetic reads as 'lethal efficiency wrapped in corporate respectability.'"
   },
-  "image_prompt": "Orion Nazari, woman with deep bronze skin and golden-amber undertones, platinum blonde hair in sleek high ponytail with dark roots, dark brown eyes with faint amber neural interface threading in left eye. Sharp cheekbones and defined jawline reflecting Middle Eastern and African heritage. 172cm tall, lean angular build, coiled and precise. Wearing tailored black blazer over dark base layer, fitted tactical pants, matte-black neural-responsive shoes. Zheng-Dao corporate sigil visible on right collarbone. Faint scar along left temple. Minimalist platinum jewelry. Corporate Tier 1 aesthetic—lethal efficiency masked by polish. Cyberpunk 2226, Great Lakes Metropolitan Zone, cool neon-tinged ambient lighting, neutral corporate office or high-tech facility background, scanning gaze with controlled intensity, posture suggesting trained combat readiness beneath professional veneer --ar 2:3 --v 6",
+  "image_prompt": "Orion Deshpande, 172cm lean angular woman with warm medium-deep golden-brown skin reflecting South Asian-Hispanic-Eastern European heritage blend. Platinum blonde hair with dark roots slicked back in tight ponytail, secured with chrome clip. Dark brown eyes with amber neural interface threading in left eye. Defined cheekbones, prominent jawline, faint 3cm scar along left temple hidden by hairline. Matte black Zheng-Dao corporate sigil tattoo on right collarbone. Wearing tailored black blazer over understated base layer, fitted tactical pants, matte-black neural-responsive shoes. Minimal platinum jewelry including ring and neural interface earrings. Coiled posture suggesting trained violence masked under corporate polish. Precise economical movement, scanning gaze. Corporate minimalist aesthetic with lethal efficiency. GLMZ Great Lakes Metropolitan Zone setting, neon-tinged office lighting, cold professional atmosphere, depth of field focusing on her calculating expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 64.4,
-    "Hispanic/Latin American": 20.6,
-    "Sub-Saharan African": 11.3,
-    "South Asian": 3.7
+    "South Asian": 62.9,
+    "Hispanic/Latin American": 24.9,
+    "Eastern European": 12.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 62.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.1
+      },
+      "Caribbean": {
+        "Cuban": 7.6
+      },
+      "South American": {
+        "Brazilian": 8.6,
+        "Venezuelan": 1.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 5.1,
+        "Sorbian": 7.1
+      }
+    }
+  }
 }

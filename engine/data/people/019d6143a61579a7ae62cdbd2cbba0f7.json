@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61579a7ae62cdbd2cbba0f7",
   "type": "character",
-  "name": "Esteban Rentería-Larsdóttir-Keïta",
+  "name": "Nikhil Rahman-Keïta-Dalgaard",
   "aliases": [
     "Fest",
     "the Kid"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Escanaba Gateway, Bay 7 worker dormitories (when employed); otherwise Kenosha Crossing transit hall, near outside the Pulaski Gate",
-  "description": "Festus is tall in the way that suggests he is not finished growing yet, with the loose-limbed coordination of someone who learned to navigate moving surfaces — airship decks, cargo holds, swaying rail bridges — before flat ground. He has his Andean grandmother's broad cheekbones and his Dalmatian grandfather's tendency toward sunburn, which means his face is a patchwork of tan and pink that he tries to hide under a pulled-down work cap he has not washed in six months. His hair is overgrown and dark, curling at his ears. He has a cat tail — a geneware mod his older sister got him for his sixteenth birthday, rust-orange, which he cannot stop using expressively and which he is embarrassed about when he notices people noticing.\n\nHe has been working the airship circuit between Escanaba Gateway and the Great Lakes transfer hubs for two years, doing cargo sorting and hull maintenance — work that pays enough to eat if he does not stop moving. He is fundamentally optimistic in a way that is either admirable or delusional depending on how the month has gone. He has a plan. The plan changes every three weeks. The core of it — get stable, get a real room, maybe a Guild contract — has not changed. He is nineteen and he is trying.",
+  "description": "Nikhil Rahman-Keïta-Dalgaard is tall in the way that suggests he is not finished growing yet, with the loose-limbed coordination of someone who learned to navigate moving surfaces — airship decks, cargo holds, swaying rail bridges — before flat ground. He has his Andean grandmother's broad cheekbones and his Dalmatian grandfather's tendency toward sunburn, which means his face is a patchwork of tan and pink that he tries to hide under a pulled-down work cap he has not washed in six months. His hair is overgrown and dark, curling at his ears. He has a cat tail — a geneware mod his older sister got him for his sixteenth birthday, rust-orange, which he cannot stop using expressively and which he is embarrassed about when he notices people noticing.\n\nHe has been working the airship circuit between Escanaba Gateway and the Great Lakes transfer hubs for two years, doing cargo sorting and hull maintenance — work that pays enough to eat if he does not stop moving. He is fundamentally optimistic in a way that is either admirable or delusional depending on how the month has gone. He has a plan. The plan changes every three weeks. The core of it — get stable, get a real room, maybe a Guild contract — has not changed. He is nineteen and he is trying.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -162,7 +162,7 @@
     "Lone Wolf": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Escanaba Gateway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,47 +178,27 @@
     "Escanaba Gateway",
     "Kenosha Crossing",
     "Ringo RB-1 'Judas Goat'",
-    "GLMZ",
     "Grandmother",
     "The CEO",
     "Meridian Core",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Arcturus Defense Solutions Microwave Area Denial MAD-3 'Sunburn'",
-    "Rust",
-    "Alper Lebedev-Tutu",
-    "Deku Barrientos-Osei",
-    "Devraj Solano-Yildirim",
-    "Ferrogate Transit",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus EC-4 'Companion'",
-    "Marrowvault Cryogenics",
-    "Obafemi Szczypiński-Lautoa",
-    "Ringo DV-4 'Courier'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "Synaptic Drift Emitter SDE-4 'Lullaby'",
-    "The Heritage Vault",
-    "The Meridian Drift",
-    "The Pure Hand",
-    "The Underlayer Collective",
-    "The Unfinished Theorem",
-    "The Wire Taps",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "Circuit",
+    "Cargo Tacos",
+    "GLMZ"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant Southeast Asian and Sub-Saharan African ancestry. The combination produces warm, complex skin tones with Southeast Asian eye shape and bone structure blended with Latin American facial proportions and Sub-Saharan African undertones in skin pigmentation.",
+    "heritage": "South Asian dominant (44.3%) with significant Sub-Saharan African (28.0%) and East Asian (27.7%) admixture. This creates a striking multihued phenotype: South Asian ancestry contributes prominent high cheekbones and strong jawline definition, while East Asian heritage influences eye shape, orbital structure, and facial width. Sub-Saharan African ancestry enriches skin pigmentation with warm golden and mahogany undertones and contributes to hair texture variation. The result is a complexion that is deeply melanated with luminous golden-brown tones, with facial bone structure reflecting the confluence of all three ancestral regions.",
     "height_cm": 188,
     "weight_kg": 71,
     "build": "Tall and loose-limbed, still growing into his frame. Wiry rather than muscular, with the unfinished coordination of a late adolescent. Shoulders slightly hunched from years working in cramped cargo holds.",
     "hair_color": "Dark brown, natural",
     "hair_style": "Overgrown and curling, pushed back or hidden under a work cap",
     "hair_length": "Medium, past the ears",
-    "eye_color": "Brown",
-    "skin_tone": "Warm golden-brown with reddish undertones from the Sub-Saharan ancestry component, displaying significant sun exposure variation — deeper tan on forearms and neck, persistent pink-red patches on cheekbones and nose bridge from chronic sunburn. The base tone is richly melanated with Southeast Asian warmth.",
-    "complexion": "Southeast Asian-influenced eye shape with higher cheekbones that blend Andean prominence with broader facial structure. Face shows patchwork pigmentation from repeated sun exposure and incomplete healing. Slightly chapped lips. Usually unshaven or with thin stubble. Expressions animated, eyes reflective and uncertain.",
+    "eye_color": "Warm deep brown",
+    "skin_tone": "Deep golden-brown, richly melanated with luminous undertones that shift between warm bronze and mahogany depending on light and angle. Sun-exposed areas on forearms, neck, and shoulders show darker browning. Persistent pink-red patches and flaking skin visible on cheekbones, nose bridge, and shoulders from chronic sunburn and incomplete healing.",
+    "complexion": "High, defined cheekbones with South Asian prominence combined with broader facial structure from East Asian heritage. Eye shape shows East Asian influence with warm brown irises set in slightly rounded orbits. Patchwork pigmentation visible from repeated sun exposure—darker areas contrast with lighter healing scars. Slightly chapped lips with sun damage. Usually unshaven or with thin stubble. Expressions animated, eyes reflective and uncertain.",
     "distinguishing_marks": [
       "Rust-orange geneware cat tail, approximately 60cm long, extending from base of spine, visibly expressive and used unconsciously for balance and emotion",
       "Irregular sunburn scarring across shoulders and upper back in geometric patterns consistent with cargo-hold work without proper protection",
@@ -228,14 +208,39 @@
     "posture_movement": "Moves with practiced balance on unstable surfaces — slightly rocking gait, frequent minor weight shifts even when standing still. Uses tail unconsciously for counterbalance. Often glances upward as if checking for deck movement. Pulls cap down when self-conscious.",
     "clothing_style": "Tier 4-5 worn workwear. Gray or faded blue Ferrogate Transit-branded cargo pants, reinforced knees and thighs, multiple cargo pockets. Thermal underlayer visible at neck (faded orange or rust-colored, matching tail). Worn steel-toed work boots, laces frayed. Heavy canvas jacket over everything, lined but not waterproofed, with grease stains and patched left sleeve. Cap is visibly old, brim creased, possibly once had a logo (faded). No visible jewelry except for a frayed cordage bracelet (transit worker culture marker)."
   },
-  "image_prompt": "Esteban, a tall 188cm lean adolescent male in cyberpunk 2226, genetic mix of Hispanic/Latin American, Southeast Asian, and Sub-Saharan African ancestry. Warm golden-brown skin with sun-damaged patchwork pigmentation and chronic sunburn across cheekbones and bridge of nose. Southeast Asian eye shape with higher cheekbones, animated brown eyes reflecting uncertainty. Dark curling hair past ears, often hidden under a worn work cap. Thin stubble on angular jawline. Distinctive rust-orange geneware cat tail extending from spine, approximately 60cm long and visibly expressive. Wearing faded gray Ferrogate Transit cargo pants with reinforced knees, rust-colored thermal underlayer, heavy grease-stained canvas jacket with patched left sleeve, worn steel-toed work boots. Posture shows practiced balance with slight rocking gait and unconscious tail movements for counterbalance. Solar-scarred shoulders visible, 2cm pale burn scar on left forearm. Standing in dim industrial airship cargo hold lighting, oil-stained hands, expression focused but uncertain, cap pulled down self-consciously. Cyberpunk aesthetic, working-class transit culture, lived-in weathered appearance. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Nikhil Rahman-Keïta-Dalgaard, 188cm tall lean neo-noir cargo worker, late adolescent with deep golden-brown melanated skin with warm bronze undertones, high defined cheekbones and strong jawline blending South Asian features with broader East Asian facial structure. Warm brown eyes, dark curly hair past ears pushed back under worn Ferrogate Transit cap. Visible chronic sunburn scarring on cheekbones and nose bridge with patchwork pigmentation. Expressive rust-orange geneware cat tail extending from spine, actively repositioning for balance. Wearing faded blue cargo pants with reinforced knees, rust-colored thermal underlayer visible, heavy patched canvas jacket with grease stains, worn steel-toed work boots. Frayed cordage bracelet on wrist. Slight rocking stance as if compensating for ship movement. Unshaven with uncertain but animated expression. GLMZ airship cargo hold aesthetic, industrial setting, warm overhead work lights casting shadows on facial scarring, dust and metal reflected in atmospheric haze. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 58.5,
-    "Southeast Asian": 33.5,
-    "Sub-Saharan African": 8.0
+    "South Asian": 44.3,
+    "Sub-Saharan African": 28,
+    "East Asian": 27.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 44.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 17.8
+      },
+      "Southern African": {
+        "Zimbabwean": 2.4,
+        "Botswanan": 2
+      },
+      "East African": {
+        "Kenyan": 5.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 22.3,
+        "Shanghainese": 5.4
+      }
+    }
+  }
 }

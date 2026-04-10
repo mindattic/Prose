@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6dc75bd8d48e81c55b00ac2",
   "type": "character",
-  "name": "Diego Halverson-Calvillo-Chatterjee",
+  "name": "Diego Adeyemi-Calvillo-Nwosu",
   "aliases": [
     "Pip"
   ],
@@ -12,7 +12,7 @@
   "age": 9,
   "status": "active",
   "location": "Blackpipe Corridor, near Milwaukee and Damen",
-  "description": "Sorrel is small even for nine, with the wiry toughness of a child raised on rationed calories and open air. Her skin is a deep warm brown, her hair a wild halo of tight curls she keeps stuffed under a salvaged Ferrogate Transit cap three sizes too large. She has a cosmetic mod she didn't choose — a faint bioluminescent ring around each iris, blue-green, that her mother installed before disappearing, supposedly to help her be seen in the dark tunnels under Blackpipe. She has not decided whether she loves it or hates it.\n\nSorrel runs messages for anyone who pays her two Φ or more per delivery: small-time vendors, people who distrust the comm-net, the occasional ELF-shrine keeper who needs physical tokens carried between altars. She is deeply superstitious and leaves pinches of copper filings at every E.L.F. junction box she passes, convinced this is why she has never been caught. Her emotional range is vast but controlled — she laughs easily and cries silently. She is fiercely loyal to the three other children she sleeps near in a maintenance alcove off Corridor 7, and would walk into a burning block for any of them.",
+  "description": "Diego Adeyemi-Calvillo-Nwosu is small even for nine, with the wiry toughness of a child raised on rationed calories and open air. Her skin is a deep warm brown, her hair a wild halo of tight curls she keeps stuffed under a salvaged Ferrogate Transit cap three sizes too large. She has a cosmetic mod she didn't choose — a faint bioluminescent ring around each iris, blue-green, that her mother installed before disappearing, supposedly to help her be seen in the dark tunnels under Blackpipe. She has not decided whether she loves it or hates it.\n\nDiego Adeyemi-Calvillo-Nwosu runs messages for anyone who pays her two Φ or more per delivery: small-time vendors, people who distrust the comm-net, the occasional ELF-shrine keeper who needs physical tokens carried between altars. She is deeply superstitious and leaves pinches of copper filings at every E.L.F. junction box she passes, convinced this is why she has never been caught. Her emotional range is vast but controlled — she laughs easily and cries silently. She is fiercely loyal to the three other children she sleeps near in a maintenance alcove off Corridor 7, and would walk into a burning block for any of them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -153,7 +153,7 @@
     "Generous Fool": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Blackpipe Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -165,28 +165,16 @@
     "Blackpipe Corridor",
     "Ferrogate Transit",
     "ShieldTech SB-3 'Groundstrike'",
-    "Aslan Vasquez-Chatterjee",
-    "Copper",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Blackmarket",
-    "Ferrogate Enforcer Cruiser",
-    "Kairos",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
     "Noir Dining",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TESSERA PG-2 'Signature'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Pure Hand",
-    "The Sump",
-    "Zurab Ivanov-Appiah"
+    "GLMZ",
+    "Kel Adeyemi-Strand",
+    "Arcturus KS-7 'Nursery'",
+    "Copper",
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian dominant (56.3%) with significant Hispanic/Latin American (28.4%) and South Asian (15.3%) ancestry, creating a striking pan-Asian blend with warm undertones from the Latin and South Asian components",
+    "heritage": "Predominantly Sub-Saharan African (73.6%) with significant Hispanic/Latin American (22.5%) and minor East Asian (3.9%) ancestry. Her features reflect this rich blend: deep dark brown skin with warm golden undertones enriched by Latin American heritage, subtle East Asian influence visible in the slight epicanthic fold of her eyelids and cheekbone structure, creating a striking fusion of continental features.",
     "height_cm": 125,
     "weight_kg": 28,
     "build": "Wiry and slight, all lean muscle and prominent joints from a childhood of sparse meals and constant movement. Her frame is deceptively strong—capable of running rooftops for hours without fatigue.",
@@ -194,8 +182,8 @@
     "hair_style": "Tight, natural curls worn loose and voluminous when uncovered",
     "hair_length": "Medium (shoulder-length when released from cap)",
     "eye_color": "Dark brown with bioluminescent blue-green ring around each iris",
-    "skin_tone": "Light to medium warm brown with golden undertones—the East Asian base enriched by South Asian warmth and Latin American sun exposure",
-    "complexion": "Smooth, sun-darkened from outdoor exposure, cheeks slightly hollowed from rationed diet. Clean but weathered, with the restless energy of constant motion written across her features. Her expression is often guarded but her eyes betray quick intelligence and curiosity. Subtle warm undertones across the bridge of nose and cheekbones reflect mixed heritage.",
+    "skin_tone": "Deep warm brown with golden undertones—rich Sub-Saharan African base warmed by Latin American heritage, with subtle East Asian luminosity across the high cheekbones and bridge of nose",
+    "complexion": "Smooth, sun-darkened from outdoor exposure, cheekbones defined and prominent with the subtle lift characteristic of East Asian ancestry blended with the broad strength of African features. Her expression is often guarded but her eyes betray quick intelligence and curiosity. Warm golden undertones across the bridge of nose and cheekbones reflect her mixed heritage. Slight epicanthic fold of eyelids adds dimension to her sharp, watchful gaze.",
     "distinguishing_marks": [
       "Bioluminescent rings circling both irises in faint blue-green, glowing softly in low light—installed by her mother, involuntary but now a signature feature",
       "A thin scar across her left knuckle from a message delivery gone wrong, barely visible",
@@ -205,14 +193,45 @@
     "posture_movement": "Constantly restless, weight always ready to shift. She moves with economical grace—quick, efficient, never wasting motion. Her gait is a runner's gait, even when standing still. Her hands fidget with small objects (copper filings, message tokens) when idle. Her eyes track movement instinctively; situational awareness is habitual. When at rest, she curls inward slightly, taking up minimal space.",
     "clothing_style": "A salvaged Ferrogate Transit cap three sizes too large that she wears constantly, the brim softened from wear. Underneath: layered hand-me-downs patched with mismatched fabric—thermal undershirt, oversized grey utility jacket with multiple pockets (for messages and copper offerings), cargo pants with reinforced knees from rooftop crawling. Worn synthetic running shoes with taped seams. A single copper wire wrapped around her left wrist as both charm and tool. Tier 5 functional—nothing new, everything salvaged or traded. A small cloth pouch at her hip holds her day's earnings in Φ tokens."
   },
-  "image_prompt": "Cyberpunk 2226 Great Lakes Metropolitan Zone, Diego Halverson-Calvillo-Chatterjee: 125cm tall wiry frame, East Asian-dominant features with warm golden-brown skin, slight sun-darkened complexion, dark eyes glowing with soft bioluminescent blue-green iris rings in low light, shoulder-length natural black curls with reddish undertones, restless energy coiled in economical movement. Wearing oversized faded Ferrogate Transit cap, layered patched hand-me-downs, grey utility jacket with numerous pockets, cargo pants with reinforced knees, worn taped-seam running shoes, copper wire charm around left wrist. Lean muscles and prominent joints, callused hands fidgeting with message token, guarded expression betraying quick intelligence. Situational awareness etched in tracked-movement eyes. Urban tunnel rooftop environment, neon-contaminated shadow lighting catching the bioluminescent glow, gritty salvage aesthetic, runner's ready posture, minimal space-taking curl, Φ-token pouch visible at hip. Cybernetic-human hybrid child of the Ubiquitous Diaspora, exhausted but alert --ar 2:3 --v 6",
+  "image_prompt": "Diego Adeyemi-Calvillo-Nwosu, 12-year-old rooftop runner in GLMZ, deep warm brown skin with golden undertones, dark eyes glowing with soft bioluminescent blue-green rings, prominent cheekbones blending Sub-Saharan African and East Asian heritage, tight natural black curls with reddish undertones escaping from oversized worn Ferrogate Transit cap, wiry lean frame, wearing patched grey utility jacket with multiple pockets, cargo pants with reinforced knees, worn synthetic shoes, copper wire wrapped around left wrist, sitting perched on rain-slicked GLMZ rooftop at dusk, city lights reflecting off wet surfaces below, neon glow from distant advertising towers casting purple and cyan shadows, her bioluminescent irises casting faint blue-green light in gathering darkness, expression alert and guarded, hands fidgeting with copper filings, urban dystopian Great Lakes Metropolitan skyline in soft focus background, cinematic neo-noir lighting, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 56.3,
-    "Hispanic/Latin American": 28.4,
-    "South Asian": 15.3
+    "Sub-Saharan African": 73.6,
+    "Hispanic/Latin American": 22.5,
+    "East Asian": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 58.6,
+        "Ethiopian": 15
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 17.7
+      },
+      "South American": {
+        "Brazilian": 2.5,
+        "Venezuelan": 0.5
+      },
+      "Central American": {
+        "Nicaraguan": 1.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.7
+      },
+      "Chinese": {
+        "Cantonese": 0.2
+      },
+      "Korean": {
+        "Korean": 3
+      }
+    }
+  }
 }

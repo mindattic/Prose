@@ -29,7 +29,7 @@ from constants import ANTHROPIC_API_KEY, DATA_DIR, CONCURRENCY, MODEL, SKIP_CHAR
 
 console = Console()
 
-SYSTEM_PROMPT = """You are adjusting a cyberpunk character's physical description to match their actual genetic ancestry.
+SYSTEM_PROMPT = """You are adjusting a neo-noir character's physical description to match their actual genetic ancestry.
 
 WORLD: Great Lakes Metropolitan Zone (GLMZ), 2226. The Ubiquitous Diaspora means everyone is mixed heritage from unexpected global combinations. Ancestry is INDEPENDENT of surname.
 
@@ -53,7 +53,7 @@ PRESERVE EXACTLY (do not change these):
 - distinguishing_marks
 
 Then generate a NEW image_prompt (Midjourney-style) from the UPDATED physical_description.
-Include: cyberpunk 2200s, their actual physical traits, clothing, mood/setting, lighting.
+Include: GLMZ 2200s, their actual physical traits, clothing, mood/setting, lighting.
 End with --ar 2:3 --v 6
 
 CRITICAL: Return ONLY a raw JSON object with two keys: "physical_description" (object) and "image_prompt" (string).

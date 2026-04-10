@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6557f1a8f032f761d5fa075",
   "type": "character",
-  "name": "Emiliano Sepúlveda",
+  "name": "Omid Rahman",
   "aliases": [
     "The Dreamer",
     "Mari"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Highland Park Autonomous Zone — operates from a converted transit booth she calls 'the Threshold', near Michigan Ave and Walton",
-  "description": "Marisol has a face that is easy to underestimate: round, soft-featured, often slightly unfocused-looking, as if her attention is partly elsewhere. Her ancestry shows in the warm sienna of her skin and the straight black hair she keeps in a single long braid that she has dyed with a color-shifting mod — it cycles through amber to deep violet to silver over about four hours, and she has timed it so silver arrives near midnight. Her only other visible mod is a set of faintly iridescent scales along her jaw and neck, a geneware choice she describes as 'remembering that we all came from water.' She dresses in layers she can peel off or add depending on whether she's working the booth or attending an advocacy meeting.\n\nShe came to dream interpretation sideways — originally trained as a psychiatric technician before her clinic's corporate parent restructured and eliminated her position. During her unemployment she started sitting with people in the Zone who couldn't afford psych services, listening to their dreams, and discovered she had a genuine aptitude for it. Her practice is half folk therapy and half sincere spiritual work; she believes dreams are the E.L.F.s' most direct channel to the unaugmented unconscious. Her synthetic rights advocacy grew from her dream work: several of her recurring clients are synthetic laborers, and their recurring dream of 'the off switch' — a corporate killcode they know exists — became the case that radicalized her.",
+  "description": "Omid Rahman has a face that is easy to underestimate: round, soft-featured, often slightly unfocused-looking, as if her attention is partly elsewhere. Her ancestry shows in the warm sienna of her skin and the straight black hair she keeps in a single long braid that she has dyed with a color-shifting mod — it cycles through amber to deep violet to silver over about four hours, and she has timed it so silver arrives near midnight. Her only other visible mod is a set of faintly iridescent scales along her jaw and neck, a geneware choice she describes as 'remembering that we all came from water.' She dresses in layers she can peel off or add depending on whether she's working the booth or attending an advocacy meeting.\n\nShe came to dream interpretation sideways — originally trained as a psychiatric technician before her clinic's corporate parent restructured and eliminated her position. During her unemployment she started sitting with people in the Zone who couldn't afford psych services, listening to their dreams, and discovered she had a genuine aptitude for it. Her practice is half folk therapy and half sincere spiritual work; she believes dreams are the E.L.F.s' most direct channel to the unaugmented unconscious. Her synthetic rights advocacy grew from her dream work: several of her recurring clients are synthetic laborers, and their recurring dream of 'the off switch' — a corporate killcode they know exists — became the case that radicalized her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -164,7 +164,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -181,41 +181,26 @@
     "Helix Biosystems",
     "MindBridge ClearState Addiction Nullifier",
     "The Threshold",
-    "Threshold",
     "Vantablack Media Confessor Tap — 'The Booth'",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Threshold",
+    "Midnight Gyros",
     "Silver",
     "Nesting Doll",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
-    "Arcturus KS-7 'Nursery'",
-    "Breccan Oluwafemi-Tsagaan",
-    "Ezio Kaboré-Malhotra",
-    "Isadora Vukić-Nambiar",
-    "MERIDIAN",
-    "Magistrate Zero",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Palladian Construction",
-    "Plot 17",
-    "Reproductive Suppressant Gene Lock",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Corridor",
-    "The Fathom Line",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (87.9%) with Eastern European (7.1%) and Sub-Saharan African (5.0%) ancestry, resulting in warm golden-brown skin with subtle undertones reflecting the genetic blend",
+    "heritage": "Cosmopolitan blend reflecting the Ubiquitous Diaspora: 28.9% Middle Eastern, 25.8% Hispanic/Latin American, 16.9% South Asian, 16.7% East Asian, 10.1% Southeast Asian, and 1.6% Indigenous American ancestry. This creates a beautifully complex phenotype with warm medium-brown skin enriched by olive and golden undertones from the Middle Eastern and South Asian components, refined cheekbones and eye shape influenced by East Asian ancestry, and the warmth and softness characteristic of Hispanic/Latin American and Southeast Asian heritage blended throughout.",
     "height_cm": 163,
     "weight_kg": 58,
     "build": "Slight, compact frame with rounded shoulders and a softness that suggests she doesn't prioritize physical conditioning — lean but not angular, proportioned for stillness and listening rather than movement",
     "hair_color": "Natural black with color-shifting dye mod (cycles amber → deep violet → silver, ~4-hour cycle)",
     "hair_style": "Single long braid, typically worn centered down the back or looped over one shoulder; the braid itself shows visible iridescence where light catches the dye",
     "hair_length": "Long",
-    "eye_color": "Dark brown, slightly unfocused gaze — gives impression of divided attention",
-    "skin_tone": "Warm golden-brown sienna, reflecting the blend of Latin American heritage with undertones from Eastern European and Sub-Saharan ancestry",
-    "complexion": "Round face with soft jawline and warm undertones across cheekbones and temple; minimal cosmetic work; skin appears well-maintained but not manicured; expression tends toward openness and receptivity rather than guardedness",
+    "eye_color": "Deep brown with warm undertones, slightly unfocused gaze — gives impression of divided attention",
+    "skin_tone": "Warm medium brown with golden-olive undertones, reflecting the balanced blend of Middle Eastern, Hispanic/Latin American, South Asian, and Southeast Asian heritage with subtle warmth from Indigenous American ancestry",
+    "complexion": "Round face with soft jawline; warm golden undertones across cheekbones and temples from the South Asian and Hispanic/Latin American components; refined bone structure influenced by East Asian ancestry; minimal cosmetic work; skin appears well-maintained but not manicured; expression tends toward openness and receptivity rather than guardedness",
     "distinguishing_marks": [
       "Iridescent scale geneware along the entire jawline and extending down the sides of the neck — faintly mother-of-pearl coloring, arranged in natural overlapping rows, most visible in side-profile or when head is tilted"
     ],
@@ -223,14 +208,72 @@
     "posture_movement": "Sits more than stands; when standing, weight shifts to one leg, creating a patient, waiting posture. Moves slowly and deliberately, with hands often clasped or resting on lap. Maintains steady eye contact when listening, but gaze softens and drifts when thinking. Overall impression: grounded, unhurried, meditative.",
     "clothing_style": "Layered, practical Tier 3-4 aesthetic — oversized linen or cotton shirts (cream, sage, charcoal), worn-in denim or canvas pants, often an undyed wool or recycled-fiber sweater that can be tied around the waist. Wears canvas slip-ons or soft-soled boots; no jewelry except a simple wooden bead on her braid. Clothes show signs of wear and mending rather than newness. When attending coalition meetings, she adds a tailored blazer (vintage thrift, good fabric) but keeps the layered foundation. Overall: approachable, slightly threadbare, intentionally unstudied."
   },
-  "image_prompt": "Emiliano Sepúlveda, 163cm tall, slight compact frame, warm golden-brown skin with subtle blend of Latin American, Eastern European, and Sub-Saharan features. Dark brown eyes with soft unfocused gaze, round face with gentle jawline. Long black hair in single braid with color-shifting dye mod (amber-violet-silver iridescence). Iridescent mother-of-pearl scale geneware along jawline and neck in natural overlapping rows. Wearing cream oversized linen shirt layered under undyed wool sweater, worn canvas pants, soft boots. Wooden bead on braid. Sitting in meditative posture, hands clasped on lap, patient and receptive expression. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody ambient lighting, cinematic color-graded photography, depth of field, introspective mood, futuristic body modification art, dystopian aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Omid Rahman, 2226 neo-noir, portrait of a 163cm slight-framed woman with warm medium-brown skin, golden-olive undertones, round face with soft jawline, refined cheekbones reflecting East Asian and South Asian heritage warmth. Deep brown eyes with unfocused gaze, meditative expression. Long black hair in single centered braid with color-shifting dye cycling amber-violet-silver, visible iridescence. Iridescent mother-of-pearl scale geneware along jawline and neck in natural overlapping rows, most visible in side-profile. Wearing oversized sage linen shirt, worn denim, undyed wool sweater tied at waist, soft canvas slip-ons. Wooden bead on braid. Sitting patient posture, weight shifted, hands clasped on lap. Great Lakes Metropolitan Zone interior, warm diffused lighting catching scale geneware, approachable and meditative mood, threadbare intentional aesthetic, no chrome augmentations. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 87.9,
-    "Eastern European": 7.1,
-    "Sub-Saharan African": 5.0
+    "Middle Eastern": 28.9,
+    "Hispanic/Latin American": 25.8,
+    "South Asian": 16.9,
+    "East Asian": 16.7,
+    "Southeast Asian": 10.1,
+    "Indigenous American": 1.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 15.5
+      },
+      "Persian": {
+        "Iranian": 3.5
+      },
+      "Kurdish": {
+        "Kurdish": 9.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 6.4
+      },
+      "South American": {
+        "Ecuadorian": 13.8
+      },
+      "Mexican": {
+        "Mexican": 5.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 16.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.6
+      },
+      "Korean": {
+        "Korean": 2.3
+      },
+      "Chinese": {
+        "Fujianese": 1.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 4.8,
+        "Cebuano": 2.5
+      },
+      "Laotian": {
+        "Laotian": 2.8
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 1,
+        "Menominee": 0.6
+      }
+    }
+  }
 }

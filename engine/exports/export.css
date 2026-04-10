@@ -17,6 +17,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Outfit', 'Helvet
 .sidebar-nav li a:hover i { color: var(--text); }
 .sidebar-nav li a span { flex: 1; }
 .nav-count { color: var(--muted); font-size: 11px; min-width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+.nav-group-header { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; padding: 10px 16px 2px; font-weight: 600; }
 .sidebar-toggle { display: none; position: fixed; top: 8px; left: 8px; z-index: 300; background: var(--surface); border: 1px solid var(--border); color: var(--text); width: 36px; height: 36px; border-radius: 4px; cursor: pointer; font-size: 18px; }
 
 /* Main content */
@@ -30,7 +31,10 @@ a { color: var(--link); text-decoration: none; } a:hover { text-decoration: unde
 /* Dashboard */
 .dashboard { text-align: center; padding: 20px 0; }
 .dash-subtitle { color: var(--muted); margin-bottom: 24px; font-size: 14px; }
-.dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.dash-group-header { color: var(--text); font-weight: 600; font-size: 1.1rem; text-align: left; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.dash-group-header:first-child { margin-top: 0; }
+.dash-group-count { color: var(--muted); font-size: 0.85rem; font-weight: 400; }
+.dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 8px; }
 .dash-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 16px; text-align: center; text-decoration: none; transition: border-color 0.2s, transform 0.1s; }
 .dash-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
 .dash-icon { font-size: 24px; color: var(--accent); margin-bottom: 8px; }

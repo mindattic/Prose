@@ -251,7 +251,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -267,55 +267,16 @@
     "Tessera Industries Void Grenade VG-1 'Black Hole'",
     "The Circuit",
     "Myoelectric Seizure Projector MSP-6 'Marionette'",
-    "Free Assembly",
     "Vantablack-CNX",
+    "Free Assembly",
     "NeuralPath EasePoint Chronic Pain Implant",
-    "Elegy",
-    "Carrion Defense Works",
+    "Circuit",
     "The Pure Hand",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
-    "Blackmarket",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Davi Ousseini-Brătianu",
-    "Emeka Johansson-Orozco",
-    "Eshe Pena-Baah",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Green Bay Community Table",
-    "Kairos",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kyle Ellen Corbin-Vasik",
-    "Lacunal",
-    "MERIDIAN",
-    "Meridian Core",
-    "Mika Sorel",
-    "Ngaire Kuznetsov-Adu",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Photonic Stress Fracture Pistol PSFP-3 'Cleaver'",
-    "PulsePoint MoodGlyph Affective Display Implant",
-    "Ringo Corponation Deniable Address Shard",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "TESSERA CORPONATION Elysia Sensorum Totalis",
-    "The Ghost Ronin",
-    "The Meridian Core",
-    "The Question",
-    "The Quiet Room",
-    "The Resonance Communion",
-    "The Third Rail",
-    "Timur Osei-Bjelke",
-    "Vantablack VD-2 'Paparazzi'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly South Asian (52.8%) with significant Indigenous American ancestry (26.3%), East Asian (19.4%), and trace Sub-Saharan African (1.5%) heritage — a genetic map of the Ubiquitous Diaspora. Her features reflect this complex blend: the bone structure carries South Asian and Indigenous American characteristics, while East Asian heritage softens certain angles. Her skin tone is a warm deep brown with subtle golden undertones from the South Asian and Indigenous American ancestry mix.",
+    "heritage": "Indigenous American (44.1%) forms the structural foundation of her face — strong cheekbones and broader midface geometry — enriched by South Asian (19.2%) facial definition and Southeast Asian (16.5%) softness around the eyes and upper lid structure. Northern European (11.6%) ancestry adds subtle brow ridge definition and jaw line clarity, while Hispanic/Latin American (7.6%) and trace East Asian (1.0%) heritage blend seamlessly into the overall composition. The result is a face of striking mixed ancestry where Indigenous American prominence reads first, but South and Southeast Asian influence softens and redefines the geometry — high cheekbones with gentle epicanthic folds, a face that speaks of the Ubiquitous Diaspora without hierarchy.",
     "height_cm": 173,
     "weight_kg": 61,
     "build": "Lean and economical — muscle distributed for leverage and endurance rather than bulk. The physiology of someone who solved movement problems decades ago and hasn't wasted energy since.",
@@ -323,8 +284,8 @@
     "hair_style": "Pulled back severely into a minimalist braid, kept away from the face",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Dark brown, sharp and unblinking",
-    "skin_tone": "Warm deep brown with golden undertones, reflecting the blend of South Asian, Indigenous American, and East Asian heritage",
-    "complexion": "Weathered but precise — no softness, no excess. Skin pulled tight over sharp cheekbones with the subtle broader face structure common to South Asian and Indigenous American ancestry. The upper half of her face is all hard lines and intentional angles, enhanced by high prominent cheekbones. Where the chrome jaw begins, the contrast is surgical: human skin ends in a clean margin, metal begins.",
+    "skin_tone": "Warm medium-deep brown with golden undertones — the result of Indigenous American, South Asian, and Southeast Asian ancestry blending. The tone is rich and dimensioned, even across the face, neither pale nor intensely dark.",
+    "complexion": "Weathered but precise — no softness, no excess. Skin pulled tight over high cheekbones that reflect Indigenous American prominence and South Asian definition. Broader midface structure from Indigenous American heritage, with subtle epicanthic fold softness from Southeast Asian ancestry. Upper half of face is all hard lines and intentional angles. Where the chrome jaw begins, the contrast is surgical: human skin ends in a clean margin, metal begins.",
     "distinguishing_marks": [
       "Chrome jaw replacement extends from below the cheekbones to the base of the skull, with visible articulated hinge joints at both corners of the mandible — brushed steel finish with hairline seams revealing internal mechanics.",
       "Thin scar tissue traces the margin where organic flesh meets chrome, perfectly healed but visible under certain light.",
@@ -334,15 +295,62 @@
     "posture_movement": "Economical and predatory. She doesn't gesture — she orients. Movement is always directional, never wasted. Uses shoulders, chin, chrome jaw, environmental edges (tables, doorframes, ledges) as manipulation tools with fluid, practiced precision. Stands with weight on balls of feet, ready to redirect. When she animates her jaw to speak or smile, the transition from stillness to expression is so seamless it retroactively makes the stillness more unsettling.",
     "clothing_style": "Minimal, practical, tier-neutral in a way that reads as deliberate invisibility. Usually black or charcoal — fitted combat-utility pants with reinforced seams, sleeveless or short-sleeved to display the shoulder scarring (a statement piece that reads as 'do not mistake me for someone you can hurt'). Sometimes a leather or polymer jacket, always worn open. No visible branding. No jewelry. No affectations. Everything she wears is designed to be forgotten the moment you stop looking at her — except the jaw, which you cannot forget."
   },
-  "image_prompt": "Sable, a 173cm lean cyberpunk operative in the Great Lakes Metropolitan Zone, 2226. South Asian and Indigenous American heritage with warm deep brown skin and golden undertones, sharp high cheekbones, dark unblinking eyes. Black hair with silver threading pulled into severe braid. Distinctive brushed steel chrome mandible replacement with visible mechanical hinges and articulated joints. Pale burn scarring across right shoulder and upper back visible through sleeveless black combat-utility top. Predatory, economical posture with weight on balls of feet. Charcoal fitted pants, open polymer jacket. Cold, calculated expression. Neon-lit industrial urban setting, cyberpunk aesthetic. Low-angle lighting emphasizing the chrome jaw and facial structure. Photorealistic digital art, moody atmospheric cyberpunk lighting. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait of Sable, a 173cm lean woman with mixed ancestry — Indigenous American, South Asian, and Southeast Asian heritage dominant in her sharp facial geometry and high cheekbones, tempered with Northern European definition. Warm medium-deep brown skin with golden undertones. Black hair with silver-grey threading pulled back into a severe minimalist braid. Dark brown unblinking eyes. Her most striking feature: a brushed steel chrome jaw replacement extending from below her cheekbones with visible mechanical hinges at both corners, sharp surgical margin between organic flesh and metal. Pale burn scarring across her right shoulder and upper back visible against her skin. Wearing black combat-utility fitted pants and sleeveless top to display the scarring as intentional statement. Leather polymer jacket worn open. No jewelry, no branding. Economical posture, weight on balls of feet, predatory stillness. Cool neon-blue and charcoal lighting, shadows emphasizing the chrome jaw articulation and the contrast between organic and mechanical. Moody, high-contrast neo-noir urban aesthetic. Cinematic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 52.8,
-    "Indigenous American": 26.3,
-    "East Asian": 19.4,
-    "Sub-Saharan African": 1.5
+    "Indigenous American": 44.1,
+    "South Asian": 19.2,
+    "Southeast Asian": 16.5,
+    "Northern European": 11.6,
+    "Hispanic/Latin American": 7.6,
+    "East Asian": 1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 34.5
+      },
+      "Plains Nations": {
+        "Muscogee": 9.6
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 19.2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 8.7
+      },
+      "Thai": {
+        "Thai": 7.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 7.2,
+        "Swedish": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.6
+      },
+      "Korean": {
+        "Korean": 0.3
+      },
+      "Chinese": {
+        "Cantonese": 0.1
+      }
+    }
+  }
 }
