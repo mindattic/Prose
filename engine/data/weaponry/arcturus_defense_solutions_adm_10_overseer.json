@@ -1,0 +1,49 @@
+{
+  "id": "d99a987e3e85d7bc82e260cd473078dd",
+  "name": "Arcturus Defense Solutions ADM-10 'Overseer'",
+  "type": "weapon",
+  "aliases": [
+    "Overseer",
+    "ADM-10",
+    "Big Brother"
+  ],
+  "category": "dmr",
+  "description": "The ADM-10 Overseer is Arcturus' corporate security DMR, designed to provide precision overwatch for corporate facility perimeters and urban security operations. The rifle fires 6.5mm caseless from a 20-round magazine and features an integrated smart-scope that combines optical magnification with BCI-enhanced target identification, distance ranging, wind measurement, and ballistic calculation in a single neural overlay.\n\nThe Overseer's smart-scope connects to Arcturus' corporate surveillance network, overlaying real-time intelligence on the marksman's field of view. Security camera feeds, personnel tracking data, threat assessments, and engagement authorization status are all displayed in the BCI neural overlay. The marksman sees not just their target but the entire tactical picture, making informed engagement decisions without relying on radio communication.\n\nAt Φ14,000, the Overseer is priced for institutional procurement. Arcturus deploys them at corporate campuses, industrial facilities, and anywhere their interests require precision overwatch. The weapon's surveillance integration makes it as much an intelligence tool as a weapon — the marksman provides eyes and analysis as well as lethal capability. In Arcturus doctrine, the designated marksman is the team's most information-rich position.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — corporate security overwatch authorization",
+  "base_technologies": [
+    "Integrated BCI smart-scope",
+    "Surveillance network overlay",
+    "Real-time intelligence feed",
+    "Automated ballistic calculation"
+  ],
+  "specifications": "caliber: 6.5mm caseless\neffective_range: 800m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds\nweight: 4.5 kg",
+  "tactical_use": "The Overseer provides precision fire support integrated with real-time intelligence. The marksman's surveillance overlay allows threat identification and engagement authorization without radio communication, reducing response time and preventing miscommunication errors. The smart-scope's automated ballistic calculation delivers firing solutions for any range and wind condition within the weapon's envelope, allowing rapid engagement of multiple targets at varying distances.",
+  "cultural_context": "The Overseer embodies Arcturus' approach to security: total information dominance expressed through precision violence. The weapon's integration with corporate surveillance networks means the marksman is watching everything the cameras see, knowing everything the database knows about every person in their field of fire. For corporate personnel, the Overseer's presence is reassuring. For everyone else, it is the knowledge that somewhere above, someone who knows your name is looking at you through a scope.",
+  "known_users": [
+    "Arcturus corporate overwatch teams",
+    "Facility perimeter security",
+    "Urban security marksmen"
+  ],
+  "story_hooks": [
+    "An Overseer marksman's surveillance overlay was compromised, displaying falsified intelligence that led them to engage an undercover operative who was actually on the same side.",
+    "The Overseer's surveillance feed has been recording and storing everything the marksman sees for years. This accumulated visual intelligence — including private moments witnessed from overwatch positions — has been discovered by a data thief."
+  ],
+  "ammunition_type": [
+    "6.5mm caseless match",
+    "6.5mm caseless AP"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "surveillance",
+    "smart_scope",
+    "corporate",
+    "overwatch",
+    "Arcturus",
+    "tier 3"
+  ],
+  "physical_description": "The ADM-10 Overseer is a lean, utilitarian rifle with a matte charcoal receiver and weathered polymer furniture scored by field use. Its integrated smart-scope dominates the upper rail—a bulky optics pod with faint circuit-trace patterns visible beneath scratched composite casing, its lens ringed with condensation and micro-scratches. The 6.5mm caseless magazine well shows wear marks from repeated reloads, and the stock bears the faded Arcturus logo, partially obscured by mounting hardware and cable routing.",
+  "visual_prompt": "Arcturus ADM-10 Overseer DMR rifle, gritty cyberpunk neo-noir product photography, matte charcoal polymer and weathered composite materials, integrated smart-scope with faint circuit patterns, 6.5mm caseless magazine, detailed mechanical components, worn field-used condition, studio lighting on dark industrial background, moody atmospheric rain-slicked aesthetic, high detail texture"
+}

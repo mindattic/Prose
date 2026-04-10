@@ -1,0 +1,45 @@
+{
+  "name": "Meridian Domestic VL-2 'Valet'",
+  "type": "automaton",
+  "classification": "Domestic",
+  "aliases": [
+    "Valet",
+    "The Dresser",
+    "Clothes Horse"
+  ],
+  "manufacturer": "MERIDIAN DOMESTIC SYSTEMS",
+  "description": "The VL-2 is a specialized wardrobe management automaton — a ceiling-mounted rail system with a single articulated arm and an array of garment-handling tools. It occupies the owner's closet or dressing room, managing clothing inventory, performing minor repairs, pressing garments, and coordinating outfit selections based on calendar events, weather data, and the owner's established preferences. The VL-2 tracks every piece of clothing in its care, logging wear frequency, cleaning status, and condition assessment.\n\nThe VL-2 is not a general-purpose domestic unit. It does exactly one thing: it manages clothes. Meridian Domestic built it for clients who own wardrobes worth more than most people's apartments — people for whom a mismanaged garment represents a financial loss. The unit handles fabrics that would be destroyed by standard cleaning automata: hand-sewn silks, synthetic-weave body armor disguised as business attire, temperature-regulating smart fabrics that require specific folding patterns to maintain molecular alignment.\n\nThe VL-2's client base is vanishingly small and absurdly wealthy. It costs Φ120,000 installed. Meridian Domestic technicians visit quarterly for calibration. The entire product exists to serve perhaps three thousand people in GLMZ who own enough expensive clothing to justify a dedicated machine to care for it. It is, by any reasonable measure, the most frivolous automaton ever manufactured. It sells out every production run.",
+  "tier_availability": "Tier 4-5",
+  "legality": "Consumer — luxury",
+  "autonomy_level": "Fully autonomous — wardrobe management AI",
+  "dimensions": "3.0m rail length, 1.8m arm reach",
+  "weight": "60 kg (installed)",
+  "power_source": "Hardwired residential power",
+  "locomotion": "Ceiling-mounted rail and articulated arm",
+  "armament": [],
+  "sensors": [
+    "Fabric composition analysis",
+    "Stain detection (UV/IR)",
+    "Garment dimension tracking",
+    "Climate monitoring for storage optimization"
+  ],
+  "countermeasures": "None. It organizes closets.",
+  "known_deployments": [
+    "Private dressing rooms and wardrobes in Tier 4-5 residences"
+  ],
+  "story_hooks": [
+    "A VL-2's garment tracking log reveals that a specific jacket was worn on dates that correspond exactly to a series of murders. The owner doesn't know the VL-2 keeps records this detailed. Neither did the killer.",
+    "A VL-2 has detected trace chemical residue on garments that indicates its owner has been visiting a location with a very specific atmospheric composition — one consistent with underground pharmaceutical manufacturing. The machine flagged it as a potential fabric-damaging contaminant."
+  ],
+  "cultural_context": "The VL-2 is a punchline in lower-tier districts — a machine that costs more than a house, built to fold rich people's clothes. Comedians reference it as shorthand for absurd wealth disparity. 'I can't afford food, but somewhere a robot is pressing a billionaire's cufflinks.'",
+  "tags": [
+    "automaton",
+    "domestic",
+    "wardrobe",
+    "luxury",
+    "meridian domestic",
+    "tier 4",
+    "tier 5"
+  ],
+  "id": "5fa92eb910c9ff8b9a81a51113d3db35"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "57b43abc31105c27a6bfb6feb0625e72",
+  "name": "Iowan Behemoth — 'Obelisk'",
+  "type": "automaton",
+  "classification": "Iowan Behemoth",
+  "aliases": [
+    "Obelisk",
+    "The Needle",
+    "Stillpoint"
+  ],
+  "manufacturer": "Unknown — origin disputed",
+  "description": "Obelisk does not move. It is the only Behemoth that has never been observed in motion. It stands in the exact geographic center of Iowa — a perfect vertical spike of dark metal rising 120 meters from a base embedded deep in the bedrock. Its surface is seamless, without visible joints, hatches, or sensor arrays. It reflects no radar, absorbs most visible light, and maintains a surface temperature exactly matching the ambient air at all times, making it nearly invisible to thermal imaging. From a distance it looks like a shadow with no source.\n\nObelisk's classification as a Behemoth is debated. It has no legs, no locomotion, no apparent function. But it shares characteristics with other Behemoths: self-repair capability (scratches on its surface heal within hours), unknown power source, and pre-collapse origin. Most compellingly, every other Behemoth in Iowa has been observed traveling to Obelisk's location at irregular intervals. They arrive, stand near it for hours or days, and then resume their normal patterns. Palisade's road network converges on it. Leviathan's tunnels spiral around it. Cathedral's signal is strongest when facing it. Obelisk appears to be the hub of whatever the Behemoths are collectively doing.\n\nThe area within one kilometer of Obelisk is anomalous. Electronic equipment malfunctions. Compass needles point toward it instead of north. People who spend more than a few hours in its proximity report vivid dreams about machinery and geometric patterns. The ground around its base vibrates at a frequency just below human hearing, producing a persistent sense of unease. Three research expeditions have attempted to study Obelisk up close. All three abandoned their missions within 48 hours, citing equipment failure and 'psychological distress.' Their sensor data was corrupted beyond recovery.",
+  "tier_availability": "N/A — uncontrolled autonomous entity",
+  "legality": "N/A — no jurisdiction claims authority over Behemoths",
+  "autonomy_level": "Unknown — stationary, purpose unknown",
+  "dimensions": "120m height, 8m base width, tapers to 2m at apex",
+  "weight": "Unknown — embedded in bedrock to unknown depth",
+  "power_source": "Unknown — no emissions, no thermal signature, no energy consumption detected",
+  "locomotion": "None — stationary",
+  "armament": [
+    "None confirmed",
+    "Proximity effects cause equipment failure and psychological distress",
+    "Electromagnetic anomaly field (1 km radius)"
+  ],
+  "sensors": [
+    "Unknown — no visible sensor systems",
+    "Appears to be aware of approaching entities (Behemoths change behavior near it)",
+    "Possible deep-earth monitoring through bedrock connection"
+  ],
+  "countermeasures": "Obelisk has never needed countermeasures because no one has successfully mounted an attack. Equipment fails near it. Targeting systems lose lock. Even manually aimed weapons seem to miss, though this may be observer bias combined with the psychological effects of proximity. The more practical countermeasure is that attacking the thing every other Behemoth visits seems profoundly unwise.",
+  "known_deployments": [
+    "Geographic center of Iowa — has never moved",
+    "All Behemoth paths converge on its location",
+    "Anomalous zone documented since first surveys in 2155"
+  ],
+  "story_hooks": [
+    "Obelisk has started humming. The subsonic vibration that was previously just below perception has increased to an audible frequency, and it's getting louder. Behemoths across the state are changing their routes, converging on Obelisk's location. Something is about to happen.",
+    "A dying engineer claims to have been part of the team that built Obelisk — decades before the Behemoths appeared. She says it's a key, and someone is about to turn it. She needs to reach it before they do."
+  ],
+  "cultural_context": "Obelisk is the dark heart of Behemoth mythology. Every theory about what the Behemoths are and what they want eventually circles back to Obelisk. It is the closest thing the wasteland has to a holy site — a place of pilgrimage for those who worship the machines, a place of dread for those who fear them, and a place of obsessive interest for those who study them. No one is neutral about Obelisk.",
+  "tags": [
+    "automaton",
+    "behemoth",
+    "iowan",
+    "stationary",
+    "anomaly",
+    "colossal",
+    "wasteland",
+    "mystery",
+    "hub",
+    "nexus"
+  ]
+}

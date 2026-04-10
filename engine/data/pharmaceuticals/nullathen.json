@@ -1,0 +1,41 @@
+{
+  "name": "Nullathen",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Zero",
+    "the Nothing",
+    "Glass"
+  ],
+  "category": "emotional_regulator",
+  "subcategory": "emotional_flatliner",
+  "manufacturer": "Nightshade Pharmatech",
+  "description": "Nullathen is a broad-spectrum emotional suppressor that induces a state of complete affective neutrality — the user retains full cognitive function, sensory perception, and motor control, but experiences no emotional response to any stimulus for the duration. Originally developed as a trauma-insulation agent for first responders and military field surgeons, it has found widespread use among trauma survivors, professional interrogators, mercenaries, and anyone required to perform tasks they would otherwise find unbearable.",
+  "method_of_use": "injection",
+  "effects": [
+    "Complete suppression of all emotional affect — no fear, grief, guilt, disgust, joy, or empathy",
+    "Full cognitive and motor function retained",
+    "Removal of emotional interference from decision-making",
+    "Elimination of trauma activation — triggers have no effect during dose",
+    "Physical sensations remain intact; only emotional coloring is removed",
+    "Users describe the state as 'watching yourself from outside' or 'the world in glass'"
+  ],
+  "side_effects": [
+    "Emotional return on clearance can be violent — suppressed affect floods back",
+    "Repeated use causes progressive emotional blunting between doses",
+    "Dissociative identity effects with long-term use — the 'glass self' may feel more real than the emotional self",
+    "Users may make decisions under Nullathen that their emotional self would never make — with full memory",
+    "Rare: permanent partial emotional suppression after extended use",
+    "Extreme addiction risk in trauma survivors — the absence of pain becomes addictive"
+  ],
+  "duration": "8 hours",
+  "addiction_risk": "extreme",
+  "tier_availability": "All tiers",
+  "legality": "restricted",
+  "street_price": "Φ90 per vial (street); Φ220 through licensed medical providers",
+  "cultural_context": "Nullathen occupies a strange cultural space in GLMZ — it is simultaneously a legitimate medical tool and one of the most ethically contested drugs on the market. Trauma clinics use controlled doses for desensitization therapy. Corporate security firms and interrogation contractors use it to keep operators functional during brutal work. On the Shelf, it's called 'Glass' and is used by people who need to do terrible things to survive — collections work, violence, witnessing things that would break an unmedicated mind. The ethics of Nullathen use are extensively debated: if you commit an act under Nullathen that you wouldn't commit otherwise, who is responsible?",
+  "story_hooks": [
+    "A Tier 1 enforcer has been using Nullathen for three years to get through their work. They've recently noticed they need it to get through ordinary conversations. A street doc tells them their baseline emotional capacity is degrading permanently — but stopping means feeling everything they've done.",
+    "A corporate interrogator used Nullathen during a session that crossed serious legal lines. The subject died. The interrogator remembers everything clearly but feels nothing about it — and isn't sure if they ever will again.",
+    "Someone is selling Nullathen to grief support group members in Tier 2, targeting people who are already struggling. The seller has a legitimate medical license and technically isn't breaking any laws. Someone in the group wants that to change."
+  ]
+}

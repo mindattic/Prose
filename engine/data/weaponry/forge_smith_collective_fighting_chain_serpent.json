@@ -1,0 +1,47 @@
+{
+  "id": "e0e81a3b3e5bedf8c4a147f59fb8acae",
+  "name": "Forge-Smith Collective Fighting Chain 'Serpent'",
+  "type": "weapon",
+  "aliases": [
+    "Serpent",
+    "Fighting Chain",
+    "Iron Snake",
+    "The Coil"
+  ],
+  "category": "melee",
+  "description": "A two-meter weighted chain with shaped striking links at both ends, constructed from case-hardened carbon-lattice steel. The Serpent is an ancient weapon type rebuilt with modern materials — each link is individually forged and case-hardened to resist deformation on impact, and the terminal striking weights are machined from solid Ablonite-KR ceramic for maximum impact damage and the material's characteristic thermal reaction against ferrous targets.\n\nThe Forge-Smith Collective's chain fighters represent one of GLMZ's oldest continuous martial traditions — chain fighting predates the city's corporate era and has been passed through community lineages for generations. The weapon's appeal is its versatility: it can strike, wrap, disarm, entangle, and control space. A skilled chain fighter in a corridor is a moving perimeter of steel that can engage threats from multiple angles simultaneously.\n\nThe Serpent's ceramic terminal weights add a modern edge to the traditional weapon. On impact with cybernetic components, the Ablonite-KR's reactive properties generate localized heating that damages sensitive electronics and causes pain responses in biological tissue adjacent to implant housings. Chain fighters have adapted their techniques to exploit this property, targeting the joints and connection points of augmented opponents where ceramic-on-metal contact causes maximum disruption.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 1-2 (artisan availability)",
+  "legality": "Unlicensed — artisan production",
+  "base_technologies": [
+    "Case-hardened carbon-lattice chain links",
+    "Ablonite-KR ceramic terminal weights",
+    "Traditional chain-fighting geometry"
+  ],
+  "specifications": "total_length: 2 meters\nweight: 1.4 kg\nlink_material: Case-hardened carbon-lattice steel\nterminal_weights: Ablonite-KR ceramic, 150 g each\nlink_count: 36\npower_requirement: None",
+  "tactical_use": "The Serpent excels in corridor fighting and one-versus-many engagements where its rotating arc creates a lethal perimeter. The chain's flexibility allows strikes around corners, over obstacles, and past defensive positions. The ceramic terminal weights deliver crushing impact damage enhanced by Ablonite-KR's reactive properties against cybernetic targets. In grappling range, the chain wraps limbs for control and pain compliance. The weapon's primary limitation is its minimum effective range — inside the chain's arc, the wielder is vulnerable, and a fast opponent who closes past the striking distance neutralizes the weapon.",
+  "cultural_context": "Chain fighting in GLMZ carries a lineage that practitioners take seriously — techniques are passed from teacher to student in an unbroken tradition that predates the city's current corporate structure. The Forge-Smith Collective views chain-fighting as a cultural heritage practice, and the production of Serpent chains is considered as much a preservation effort as a commercial activity. Annual chain-fighting gatherings function as both competition and cultural celebration, with veteran practitioners demonstrating historical techniques alongside modern adaptations.",
+  "known_users": [
+    "Traditional chain-fighting lineage practitioners",
+    "Lower-tier martial artists",
+    "Community defense specialists"
+  ],
+  "story_hooks": [
+    "The oldest chain-fighting lineage in GLMZ is dying — its last master has no students willing to commit to the decade-long training tradition. A cultural heritage group is trying to preserve the techniques before they are lost.",
+    "A chain-fighter's Serpent has been forensically linked to damage at three separate crime scenes — but the fighter has alibis for all three incidents. Either the forensics are wrong or someone is using an identical chain to frame them."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "chain",
+    "traditional",
+    "Ablonite-KR",
+    "ceramic",
+    "artisan",
+    "tier 1",
+    "cultural"
+  ],
+  "physical_description": "A two-meter length of case-hardened carbon-lattice steel chain, each link individually forged and bearing the subtle stress-marks of impact training. The striking weights at both ends are machined from dull gray Ablonite-KR ceramic, their surfaces etched with micro-fractures that catch light like frost. The chain itself shows a patina of oil and handling wear, with rust blooming faintly at stress points where the metal has been worked and rewelded.",
+  "visual_prompt": "weighted fighting chain, carbon-lattice steel links, ceramic striking weights, neo-noir gritty, detailed product photography, worn patina, oil-dark metal, macro detail of forged links, dark industrial background, harsh overhead lighting, 35mm film grain, StreetSamurai aesthetic"
+}

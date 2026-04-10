@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Elite Hands",
-      "Patient Investigator",
-      "Chrome-Armed",
-      "Contained Fury",
-      "Trauma-Hardened"
+      "elite hands",
+      "patient investigator",
+      "chrome-armed",
+      "contained fury",
+      "trauma-hardened"
     ]
   },
   "behavioral": {
@@ -213,7 +213,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

@@ -1,0 +1,53 @@
+@* Renders text with entity names as clickable cross-reference links.
+   Usage:
+     <XrefText Text="@someField" />
+     <XrefText Text="@longDescription" Paragraphs="true" />
+*@
+
+@inject XrefService Xref
+@inject NavigationManager Nav
+
+@if (Paragraphs)
+{
+    @foreach (var para in GetParagraphs())
+    {
+        <p>@RenderSegments(para)</p>
+    }
+}
+else
+{
+    @RenderSegments(Text ?? "")
+}
+
+@code {
+    [Parameter, EditorRequired] public string Text { get; set; } = "";
+
+    /// <summary>When true, splits on blank lines and wraps each paragraph in a &lt;p&gt; tag.</summary>
+    [Parameter] public bool Paragraphs { get; set; }
+
+    private IEnumerable<string> GetParagraphs() =>
+        (Text ?? "").Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries);
+
+    private RenderFragment RenderSegments(string text) => builder =>
+    {
+        int seq = 0;
+        foreach (var seg in Xref.ParseSegments(text))
+        {
+            if (seg is XrefSegment xref)
+            {
+                builder.OpenElement(seq++, "a");
+                builder.AddAttribute(seq++, "href", $"/entity/{xref.Entry.Id}");
+                builder.AddAttribute(seq++, "class", $"xref-link xref-{xref.Entry.Type}");
+                builder.AddAttribute(seq++, "title", string.IsNullOrWhiteSpace(xref.Entry.Subtitle)
+                    ? xref.Entry.Type
+                    : $"{xref.Entry.Type} — {xref.Entry.Subtitle}");
+                builder.AddContent(seq++, xref.Text);
+                builder.CloseElement();
+            }
+            else
+            {
+                builder.AddContent(seq++, seg.Text);
+            }
+        }
+    };
+}

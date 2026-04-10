@@ -1,0 +1,46 @@
+{
+  "id": "e9f65143c0ccbf2261ede7f4d8d57849",
+  "name": "Crucible Industries Titan-500 'Earthquake'",
+  "type": "weapon",
+  "aliases": [
+    "Earthquake",
+    "Titan",
+    "The Five Hundred"
+  ],
+  "category": "revolver",
+  "description": "The Crucible Industries Titan-500 is a five-shot double-action revolver chambered in .500 S&W Magnum — the most powerful conventional handgun cartridge in production. The frame is investment-cast stainless steel with integral compensator ports in the barrel that redirect muzzle gases upward to counteract the cartridge's extraordinary recoil. Even with the compensator, firing the Titan-500 is a physical event that requires both hands, locked wrists, and a firm stance.\n\nThe .500 S&W Magnum round was designed for a world that no longer exists — specifically, for hunting large dangerous game in wilderness that has since been developed or abandoned. In GLMZ, the cartridge's original purpose is irrelevant. What matters is that the round delivers energy levels normally associated with rifle cartridges from a handheld platform, making it effective against targets that shrug off conventional pistol calibers: heavily augmented individuals, improvised armored vehicles, barricade materials, and the rare biological threats that inhabit the peripheral wastelands.\n\nThe Earthquake is an absurd weapon by most reasonable standards. It is too heavy for comfortable carry, too powerful for most encounters, and too slow to reload for sustained engagements. But for the specific situations where nothing else in a handgun will do — and those situations do exist in GLMZ's margins — the Titan-500 is the answer to a question nobody wanted to ask.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — heavy weapons permit required",
+  "base_technologies": [
+    "Investment-cast stainless frame",
+    "Integral compensator",
+    "Heavy-duty cylinder"
+  ],
+  "specifications": "caliber: .500 S&W Magnum\neffective_range: 50 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 5 rounds (cylinder)\nweight: 2.1 kg",
+  "tactical_use": "An extreme-power revolver for engagements against heavily armored, augmented, or otherwise resistant targets. The .500 S&W Magnum round penetrates light vehicle armor and defeats most personal body armor through sheer energy transfer. Recoil is extreme even with the compensator — follow-up shots require significant recovery time. Best deployed as a first-shot weapon against high-value hard targets.",
+  "cultural_context": "The Earthquake is a conversation piece, a tool of last resort, and a symbol of excess depending on context. Owning one marks someone as either a professional who faces extraordinary threats, or an enthusiast with more money than sense. In either case, producing a Titan-500 in any social setting immediately changes the dynamic.",
+  "known_users": [
+    "Wasteland expedition teams",
+    "Anti-augmentation enforcement",
+    "Heavy threat response teams",
+    "Collectors and enthusiasts"
+  ],
+  "story_hooks": [
+    "An Earthquake round is found embedded in the wall of a Spire apartment — fired from outside the building, through reinforced glass, from a distance that shouldn't be possible with a handgun. The angle suggests the shooter was at ground level, two hundred meters away.",
+    "A bounty hunter carries a Titan-500 loaded with five different specialty rounds, each one for a different type of target. When one round goes missing, the target it was designed for needs to be warned."
+  ],
+  "ammunition_type": [
+    ".500 S&W Magnum"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "extreme_power",
+    "heavy",
+    "magnum",
+    "specialist"
+  ],
+  "physical_description": "The Titan-500 is a brutish instrument of stainless steel and polymer, its frame scarred from heavy use and poorly-maintained storage. The barrel bristles with compensator ports that catch light like predatory teeth, while the cylinder sits recessed and heavy, designed to contain cartridges that look like miniature artillery rounds. The grip is wrapped in worn synthetic material, darkened by sweat and gun oil, with visible stress cracks at the base where countless shooters have fought its recoil.",
+  "visual_prompt": "Crucible Industries Titan-500 revolver, .500 S&W Magnum, stainless steel frame with compensator ports, heavy-duty double-action, worn synthetic grip, product photography, neo-noir gritty industrial aesthetic, rain-slicked metal surfaces, neon reflection, dark background, detailed craftsmanship, weathered tactical firearm, GLMZ militarized zone"
+}

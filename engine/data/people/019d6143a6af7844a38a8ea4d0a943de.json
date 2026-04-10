@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Specialist Clinician",
-      "Biotech Skeptic",
-      "Community Anchor",
-      "Reluctant Investigator",
-      "Tail-Speaker"
+      "specialist clinician",
+      "biotech skeptic",
+      "community anchor",
+      "reluctant investigator",
+      "tail-speaker"
     ]
   },
   "behavioral": {
@@ -210,7 +210,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

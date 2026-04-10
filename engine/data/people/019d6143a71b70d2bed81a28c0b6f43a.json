@@ -85,7 +85,7 @@
   ],
   "story_hooks": [
     "A recovered data core contains footage from the night Old Harbor flooded — the official record doesn't match",
-    "Wren's theory about deliberate flooding finds proof, and the proof implicates a corporation that still operates in M88",
+    "Wren's theory about deliberate flooding finds proof, and the proof implicates a corporation that still operates in GLMZ",
     "A pre-collapse system she's analyzing activates when she interfaces with it — and it tries to communicate",
     "A corporate buyer pressures the Saints for a specific artifact, and Wren realizes they know what's down there"
   ],
@@ -237,7 +237,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Indigenous American": {

@@ -30,10 +30,19 @@
     "control",
     "medical",
     "cold",
-    "armor"
+    "armor",
+    "truck",
+    "van",
+    "train",
+    "cargo",
+    "military",
+    "electric",
+    "aerial"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "Tessera Corponation"
-  ]
+  ],
+  "physical_description": "A boxy, unmarked transit van with reinforced steel plating and visible electromagnetic shielding arrays running along its chassis. The exterior is matte gunmetal gray with faded Tessera Transit decals, rain-slicked and scarred from industrial district routes. Oversized cooling vents and antenna clusters protrude from the roof; the windows are either absent or sealed with opaque composite panels, giving it the appearance of a mobile vault on bad suspension.",
+  "visual_prompt": "Armored data courier van, matte gray steel, Faraday cage design, electromagnetic shielding visible, rain-wet industrial parking lot, neon reflections, gritty cyberpunk neo-noir, detailed product photography, worn tactical aesthetic, dark moody lighting, heavy weathering, technical military grade construction, photorealistic"
 }

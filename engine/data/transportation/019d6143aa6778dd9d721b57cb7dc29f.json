@@ -31,7 +31,12 @@
     "rain",
     "motorcycle",
     "train",
-    "chase"
+    "chase",
+    "van",
+    "bicycle",
+    "rail",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -40,5 +45,7 @@
     "Ferrogate Transit",
     "GLMZ",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "physical_description": "A compact electric motorcycle with a utilitarian frame of brushed steel and reinforced polymer, painted in faded Ferrogate blue with gray accents along the fairings. The seat is worn leather over a rigid chassis, and the handlebars are wrapped in grip tape darkened by years of rain and sweat. A sturdy light bar runs above the headlight, and the wheels bear the scuffs and grime of constant patrol across wet pavement.",
+  "visual_prompt": "compact electric motorcycle, Ferrogate blue and gray livery, worn leather seat, brushed steel frame, utilitarian design, neo-noir gritty aesthetic, detailed product photography, rain-wet surface, dark industrial background, cyberpunk police vehicle, functional and practical, neon-lit shadows, high contrast lighting"
 }

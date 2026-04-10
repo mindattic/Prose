@@ -31,7 +31,14 @@
     "market",
     "vehicle",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "ground",
+    "car",
+    "truck",
+    "cargo",
+    "civilian",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -39,5 +46,7 @@
     "Ferrogate Transit",
     "GLMZ",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ]
+  ],
+  "physical_description": "A boxy three-wheeled frame of welded steel and scuffed aluminum, its gunmetal-gray paint worn to bare metal at stress points. The open cab features a cracked vinyl seat and a steering column wrapped in electrical tape, while the flatbed rear bears countless dents, rust blooms, and faded cargo tie-down marks. LED strips flicker along the frame edges—some working, some dark—and the solid rubber tires are perpetually slick with rain runoff and industrial grime.",
+  "visual_prompt": "gritty neo-noir electric cargo trike, three-wheeled vehicle, worn steel and aluminum frame, gunmetal gray paint with rust blooms, open cab with cracked vinyl, flatbed rear with dents, flickering LED strips, rain-slicked, industrial decay, detailed product photography, dark warehouse background, cyberpunk aesthetic, photorealistic, moody lighting"
 }

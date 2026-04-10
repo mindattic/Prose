@@ -1,0 +1,47 @@
+{
+  "id": "a128d216e8bcc1db180dd27101b50e49",
+  "type": "faction",
+  "name": "The Daybreak Network",
+  "aliases": [
+    "Daybreak",
+    "The Network",
+    "Sunrise Runners"
+  ],
+  "motto": "Get in. Get the package. Get out before dawn.",
+  "description": "The Daybreak Network is a runner network — an organized group of approximately 120 couriers, infiltrators, and extraction specialists who move things (objects, data, people) from Point A to Point B in situations where normal logistics aren't an option. Too dangerous for a courier service, too delicate for a criminal gang, too illegal for a security firm — that's Daybreak's niche.\n\nThe Network operates on a cellular model: small teams of two to four runners who specialize in different types of operations. 'Ghosts' handle infiltration and extraction from secure facilities. 'Sparks' handle electronic payloads — data transfers that need physical transport because network transmission would be detected. 'Shepherds' handle people — escorting VIPs, witnesses, or fugitives through dangerous territory. 'Mules' handle physical cargo — objects too valuable, too dangerous, or too illegal for any other transport method.\n\nDaybreak's reputation is built on discretion and reliability. They don't ask what they're carrying. They don't ask why. They deliver, they bill, and they disappear. The Network's runners are a cross-section of GLMZ's skilled underground: former corporate couriers, ex-military pathfinders, augmented athletes who discovered that their skills were more valuable in the gray market than in legitimate competition.",
+  "ideology": "Deliver the package. Everything else is someone else's problem. The Daybreak Network's philosophy is radical simplicity: they do one thing, they do it well, and they don't complicate it with questions they don't need answered.",
+  "territory": "No fixed base. Daybreak runners operate from personal locations and meet at rotating drop points. The Network's communication infrastructure is built for mobility.",
+  "leadership": "A coordinator known as 'Dispatch' — no relation to the Wire Taps' Dispatch — manages job intake, team assignment, and payment. Dispatch's identity is known only to team leaders.",
+  "methods": [
+    "Infiltration and extraction from secure facilities",
+    "Physical data transport bypassing network surveillance",
+    "VIP and witness escort through dangerous territory",
+    "Cargo transport for high-value or high-risk items",
+    "Route planning through urban and Underworld environments",
+    "Rapid response — Daybreak can deploy teams within an hour of contract"
+  ],
+  "resources": [
+    "120 skilled runners with diverse specialties",
+    "A communication and dispatch system designed for rapid deployment",
+    "Intimate knowledge of GLMZ's transit systems, maintenance corridors, and Underworld routes",
+    "Equipment caches at strategic locations",
+    "Dispatch's organizational efficiency",
+    "A reputation for reliable delivery that generates premium contract rates"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "Daybreak represents the human infrastructure that connects GLMZ's various factions — the neutral logistics network that keeps the gray economy moving.",
+  "story_hooks": [
+    "A Daybreak team has been ambushed and their cargo taken. The cargo was a sealed container that the team was told contained data storage. It didn't. What was inside is something that changes the nature of the job from delivery to survival.",
+    "Dispatch has received a contract from someone claiming to be a dead person. The delivery address is a location in the Underworld that doesn't appear on any map. The pay is ten times the normal rate."
+  ],
+  "tags": [
+    "faction",
+    "mercenary",
+    "runner",
+    "courier",
+    "logistics",
+    "infiltration",
+    "network"
+  ]
+}

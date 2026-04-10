@@ -1,0 +1,49 @@
+{
+  "id": "257136d56c7af8731f1c65d32d09693d",
+  "name": "Crucible PD-3 'Watchdog'",
+  "type": "weapon",
+  "aliases": [
+    "Watchdog",
+    "Home Guard",
+    "Nightstand Gun"
+  ],
+  "category": "pistol",
+  "description": "A full-sized 9mm semi-automatic pistol with integrated smart-lock biometric security — the weapon will only fire for its registered owner, identified by grip-pattern recognition and palm-vein scanning. The Watchdog is designed for home defense, with a full-length barrel for accuracy, a 15-round magazine for sustained engagement, and a rail-mounted flashlight that activates automatically when the weapon is drawn from its charging dock. The biometric lock ensures that the weapon cannot be used against its owner if seized during a struggle.\n\nCrucible markets the Watchdog as the responsible home defense choice — a weapon that combines stopping power with safety features that prevent unauthorized use. The biometric registration process takes 48 hours, during which the weapon's AI learns its owner's grip characteristics under various conditions: sweaty hands, cold hands, gloved hands, injured hands. The system claims a 99.7% authorized-user recognition rate, which sounds impressive until you calculate that 0.3% of 50,000 units represents 150 weapons that might not fire when their owners need them most.\n\nThe Watchdog's biometric data is stored locally on the weapon and transmitted to Crucible's cloud backup 'for warranty purposes.' This means Crucible maintains a database of biometric grip patterns, palm-vein scans, and usage logs for every Watchdog owner — a database that law enforcement has subpoenaed seventeen times in the past two years.",
+  "manufacturer": "CRUCIBLE INDUSTRIAL",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — civilian self-defense with biometric registration",
+  "street_price": "Φ1,200",
+  "base_technologies": [
+    "Biometric grip-pattern recognition",
+    "Palm-vein authentication",
+    "Integrated smart-lock system"
+  ],
+  "specifications": "caliber: 9mm\naction: Semi-automatic, striker-fired\nmagazine: 15 rounds\neffective range: 25 meters\nweight: 0.8 kg\nlength: 200mm\nbiometric lock: Grip pattern + palm vein (99.7% recognition)\naccessories: Integrated rail flashlight, charging dock",
+  "tactical_use": "Home defense with biometric safety. The Watchdog provides confidence that the weapon will function for its owner and nobody else. The integrated flashlight and generous magazine capacity address the typical home defense scenario: disoriented, scared, in the dark, possibly facing multiple threats.",
+  "cultural_context": "The Watchdog represents the premium end of civilian self-defense — a weapon for people who can afford to worry about safety features. Its biometric lock is both its selling point and its critique: the wealthy can afford weapons that only they can fire, while the poor carry Nail Biters that anyone can pick up and use. Even self-defense is tiered in GLMZ.",
+  "known_users": [
+    "Mid-to-upper tier homeowners",
+    "Small business operators",
+    "Corporate employees with home security concerns"
+  ],
+  "story_hooks": [
+    "A Watchdog's biometric system has been hacked — the weapon now responds to a grip pattern that doesn't belong to its registered owner. Someone has added themselves to the weapon's authorized user list remotely, through Crucible's cloud backup system.",
+    "A home invasion survivor's Watchdog failed to authenticate during the attack — the 0.3% failure rate hit at the worst possible moment. The survivor is suing Crucible. The discovery process is uncovering the full scope of the biometric database."
+  ],
+  "ammunition_type": [
+    "9mm"
+  ],
+  "tags": [
+    "pistol",
+    "weapon",
+    "civilian",
+    "personal defense",
+    "biometric",
+    "smart-lock",
+    "crucible",
+    "home",
+    "tier 2"
+  ],
+  "physical_description": "The Watchdog is a utilitarian polymer-framed 9mm with a matte black finish showing surface scratches and wear around the grip. Its full-length barrel sits crowned with a Picatinny rail that mounts a compact LED unit, while the slide bears faded Crucible Industrial stampings. The grip panels feature subtle geometric texturing for the biometric sensors—palm-vein scanner integrated into the right side, grip-pattern recognition woven through the frame itself.",
+  "visual_prompt": "gritty product photography of a matte black 9mm pistol, neo-noir cyberpunk aesthetic, worn polymer frame with visible scratches, integrated biometric sensor panels on grip, picatinny rail-mounted tactical light, industrial studio lighting, dark wet concrete background, detailed close-up, moody neon reflection, professional weapon photography, dystopian near-future"
+}

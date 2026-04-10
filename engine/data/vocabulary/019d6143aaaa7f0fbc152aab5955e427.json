@@ -1,16 +1,23 @@
 {
   "id": "019d6143aaaa7f0fbc152aab5955e427",
   "term": "Fixer",
-  "definition": "A middleman who connects clients with operators and handles logistics — the essential node",
-  "origin": "Shelf Cant — pre-Meridian criminal slang",
-  "usage": "underworld, universal",
-  "tier": "Tier 1-3",
-  "category": "crime",
-  "example": "Sable is the best fixer on the Shelf.",
+  "definition": "An intermediary who holds contracts in their head — literally. Fixers do not post jobs. They do not keep lists. The work exists only in their memory, in encrypted neural storage with deadman protection, or not at all. A fixer is a living index of available work, vetted clients, and known operators — and they carry that index the way anyone carries their reasons for living: quietly, carefully, and with the understanding that losing it means losing everything.",
+  "origin": "Shelf Cant — pre-GLMZ criminal underworld. The term predates the corponations and referred originally to anyone who 'fixed' problems for money. The meaning narrowed as the job economy professionalized into its current form.",
+  "usage": "Universal across all tiers, though the register differs. A Shelf kid says 'fixer.' A Tier 3 operative says 'handler.' A corporate executive says 'consulting intermediary' and means the same thing.",
+  "tier": "All",
+  "category": "crime, labor, economy",
+  "extended": "The fundamental constraint of the GLMZ contract economy is exposure. Any job posting that exists in a system — a message board, a darkweb forum, an encrypted channel — is a liability. Corponation security runs automated sweeps constantly. The CMPD does the same. The gangs have their own watchers. The moment a contract exists as data, it can be found, traced, and used. This is not paranoia. This has happened, repeatedly, catastrophically, to people who thought their encryption was sufficient.\n\nFixers solved this by removing the data entirely. The job lives in a head. The client approaches the fixer through an established channel — a specific bar stool, a particular vendor cart, a face known since childhood. The fixer already knows what work is available because clients tell them directly, in person, never twice the same way. The operator approaches the fixer the same way. The fixer assesses fit — skills, reliability, current heat level, whether the operator looks like someone who's been sleeping — and either makes the introduction or doesn't. There is no application. There is no negotiation about whether you're qualified. The fixer already knows.\n\nThis requires memory at scale. Mid-tier fixers know dozens of operators personally. Senior fixers carry hundreds of open relationships — not just names, but full operational pictures: what someone is good for, what they're not, who they owe, who owes them, what they'll refuse. Some fixers augment this with encrypted neural storage — a hippocampal extension that can hold and retrieve structured data with the same access pattern as normal memory. These implants universally include deadman triggering: a tamper-detection layer that will corrupt or wipe the stored data if the fixer is killed, tortured, neurally scanned without authorization, or simply fails to authenticate on a rolling schedule. The data dies with the fixer, by design. This is the point.\n\nOperators who want work learn to build fixer relationships the same way they build any professional relationship: over time, through demonstrated competence, through referrals from operators the fixer already trusts. Walking up to a fixer cold and asking for work is not done. The best a cold contact can produce is an introduction to someone lower in the chain — a street-level broker who runs errands for the real fixer and can observe you over several small jobs before reporting back. This process takes months. Sometimes years. There is no shortcut.\n\nPayment clears through QUANTA (Φ) — cash-equivalent crypto that routes through enough dead shells to be functionally untraceable if both parties are careful. Some fixers take a cut of the contract value. Some charge a flat broker fee. Some work on long-term retainer from clients who want ongoing access to the operator pool. The rates are not published. You learn them by asking, and the asking itself is information the fixer files away.",
+  "example": "\"Sable doesn't post jobs. If you're waiting for a posting, you're not the kind of operator Sable works with.\"",
+  "related_entities": ["Sable Keïta-Suzuki", "Quinn Wojciechowski", "The Shelf", "QUANTA"],
   "tags": [
     "crime",
-    "elf",
     "underworld",
-    "shelf"
+    "economy",
+    "labor",
+    "shelf",
+    "spires",
+    "all_tiers",
+    "fixer",
+    "contracts"
   ]
 }

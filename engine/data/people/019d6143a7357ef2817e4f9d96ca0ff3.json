@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Information Broker",
-      "Street Savvy",
-      "Mobile Vendor",
-      "Laceworks Local",
-      "Archive Hoarder"
+      "information broker",
+      "street savvy",
+      "mobile vendor",
+      "laceworks local",
+      "archive hoarder"
     ]
   },
   "behavioral": {
@@ -212,7 +212,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Craftsman",
-      "Community Elder",
-      "Suppressed Activist",
-      "Devout",
-      "Honest"
+      "craftsman",
+      "community elder",
+      "suppressed activist",
+      "devout",
+      "honest"
     ]
   },
   "behavioral": {
@@ -278,7 +278,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

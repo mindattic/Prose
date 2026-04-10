@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Body Artist",
-      "Geneware Specialist",
-      "Information Broker (Passive)",
-      "Precise and Guarded",
-      "Grey Market Connections"
+      "body artist",
+      "geneware specialist",
+      "information broker (passive)",
+      "precise and guarded",
+      "grey market connections"
     ]
   },
   "behavioral": {
@@ -286,7 +286,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

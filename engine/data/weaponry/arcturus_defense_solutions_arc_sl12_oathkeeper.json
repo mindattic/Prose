@@ -1,0 +1,48 @@
+{
+  "id": "54f1bd3cb134ab6aa786e50f368f6185",
+  "name": "Arcturus Defense Solutions ARC-SL12 'Oathkeeper'",
+  "type": "weapon",
+  "aliases": [
+    "Oathkeeper",
+    "ARC-SL12",
+    "The Smart Twelve"
+  ],
+  "category": "shotgun",
+  "description": "The Arcturus Defense Solutions ARC-SL12 is a semi-automatic shotgun chambered in 12 gauge with BCI smart-link integration, the same pattern-prediction system as the Harbinger, and an additional capability: automated ammunition selection. The weapon feeds from a dual-stack magazine holding six rounds of two different ammunition types — typically buckshot and slug — and the BCI system automatically selects the appropriate round based on the operator's target distance and intent.\n\nThe Oathkeeper's automated ammunition selection works by reading the operator's pre-motor targeting data through the BCI link. When the operator aims at a close target with intent to fire, the system chambers buckshot. When the operator aims at a distant target or a specific point on a target, the system chambers a slug. The transition between ammunition types takes 0.4 seconds — during which the weapon ejects the previously chambered round and feeds the selected type from the appropriate magazine column.\n\nThis system is, by most accounts, terrifyingly effective. An operator with an Oathkeeper moves through a multi-threat environment where targets are at varied distances, and the weapon automatically provides the optimal ammunition for each engagement without conscious selection. The operator simply aims and fires, and the weapon's AI handles the tactical decision of what to fire. This level of automation makes the Oathkeeper one of the most controversial weapons Arcturus produces.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 5",
+  "legality": "Military-restricted — autonomous ammunition selection classified as semi-autonomous weapons system",
+  "base_technologies": [
+    "BCI smart-link",
+    "Automated ammunition selection",
+    "Dual-stack magazine",
+    "Pre-motor intent reading",
+    "Pattern prediction"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 55 meters (smart-linked slug), 30 meters (smart-linked buckshot)\nrate_of_fire: Semi-automatic (0.4s ammunition type transition)\nmagazine_capacity: 6 rounds (3+3 dual-stack)\nweight: 4.1 kg\nBCI_latency: <8ms",
+  "tactical_use": "A smart-linked shotgun with automated ammunition selection based on the operator's targeting intent. The dual-stack magazine maintains loaded status with two ammunition types simultaneously. The BCI system reads targeting intent and chambers the appropriate round automatically. Pattern prediction displays expected impact area before firing. Reduces cognitive load in multi-threat environments by eliminating ammunition-selection decisions. Limited magazine capacity requires frequent reloading.",
+  "cultural_context": "The Oathkeeper crosses a line that many weapons professionals are uncomfortable with. The automated ammunition selection means the weapon is making tactical decisions — choosing what kind of violence to deliver based on its reading of the operator's neural state. Proponents argue the operator retains trigger control. Critics argue that a weapon choosing its own ammunition type is one step from choosing its own targets. The debate is ongoing and unlikely to resolve.",
+  "known_users": [
+    "Arcturus special operations teams",
+    "Tier 5 tactical units",
+    "Weapons technology evaluators"
+  ],
+  "story_hooks": [
+    "An Oathkeeper's ammunition selection system chooses a slug round for a close target where buckshot would have been appropriate — and the slug over-penetrates, killing someone in the next room. Analysis reveals the weapon's AI classified the close target as armored when they weren't.",
+    "The automated ammunition selection protocol is leaked online, and weapons engineers worldwide begin understanding how close Arcturus is to fully autonomous fire control. The ethical implications dominate public discourse for weeks."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "smart_link",
+    "BCI",
+    "arcturus",
+    "automated",
+    "controversial"
+  ],
+  "physical_description": "The ARC-SL12 is a brutalist semi-automatic shotgun with a reinforced polymer receiver matte-black from factory wear and carbon scoring. Its barrel is shortened to 18 inches, stubby and aggressive, with a dual-stack magazine well running beneath the action like exposed spine. The BCI smart-link node sits flush-mounted on the receiver's right side, a small cluster of sensor arrays and haptic feedback pads etched with faint Arcturus Defense logos, its casing weathered aluminum showing micro-scratches and old fingerprints.",
+  "visual_prompt": "semi-automatic shotgun with integrated BCI smart-link node, reinforced polymer and weathered aluminum, matte-black finish with carbon scoring, 18-inch barrel, dual-stack magazine well, industrial neo-noir design, gritty worn materials, detailed product photography, dark studio background with rain-slicked floor reflection, cyberpunk military hardware aesthetic, moody lighting"
+}

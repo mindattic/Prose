@@ -33,11 +33,20 @@
     "shelf",
     "narrows",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "ground",
+    "truck",
+    "motorcycle",
+    "bicycle",
+    "cargo",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
     "The Narrows",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "A utilitarian steel-frame bicycle with reinforced welds and a welded cargo box or flat deck mounted over the rear wheel, designed to carry 50-100kg of freight. The frame is bare metal or chipped black paint, rust blooming at joints, with mismatched tires and hand-bent cargo racks held together with wire and brackets salvaged from other machines. Electric-assist models carry a weathered lithium pack zip-tied to the downtube, wiring taped and re-taped; human-powered variants are leaner, meaner, stripped to essential geometry.",
+  "visual_prompt": "gritty cargo bicycle with steel frame and rusted welds, heavy-duty cargo box, chipped black paint, mismatched tires, wire reinforcement, cyberpunk street delivery vehicle, neo-noir product photography, industrial decay, rain-slicked metal, dark studio background, detailed weathering, functional brutalism, shallow depth of field"
 }

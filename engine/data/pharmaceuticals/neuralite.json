@@ -1,0 +1,39 @@
+{
+  "name": "Neuralite",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Flashburn",
+    "Whiteroom"
+  ],
+  "category": "augment_interactive",
+  "subcategory": "neural_overclock",
+  "manufacturer": "Street lab (Shelf origin, GLMZ South Corridor)",
+  "description": "An unregulated nootropic-stimulant compound that binds to BCI interface nodes and artificially amplifies signal throughput, overclocking the BCI's processing architecture and the organic neural tissue it interfaces with simultaneously. Users describe thinking at speeds that feel inhuman — pattern recognition becomes overwhelming, data streams resolve into crystalline clarity, and reaction loops close in microseconds. The cost is catastrophic: the same amplification that accelerates cognition generates heat and electrical feedback that can cook SNT and cause cascading neural hemorrhage.",
+  "method_of_use": "neural_direct",
+  "effects": [
+    "BCI processing speed increased 200-400% above baseline",
+    "Simultaneous data-stream processing without cognitive bottleneck",
+    "Tactical pattern recognition at near-predictive levels",
+    "Subjective time dilation — seconds feel like minutes",
+    "Full sensory augment integration sharpens to crystal resolution"
+  ],
+  "side_effects": [
+    "Severe risk of seizure (estimated 1 in 12 uses)",
+    "SNT interface burn — permanent degradation of BCI node tissue",
+    "Cerebral hemorrhage in cases of hardware incompatibility",
+    "Post-use cognitive fog lasting 6-24 hours",
+    "Tinnitus and visual static from sensory augment bleed",
+    "Documented cases of personality fragmentation with repeated use"
+  ],
+  "duration": "8-15 minutes",
+  "addiction_risk": "extreme",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ 300-500",
+  "cultural_context": "Called 'Whiteroom' because users report that at peak effect, the sensory overload resolves into a white void of pure cognition — no body, no room, just thought. Beloved and feared in equal measure by Shelf hackers, combat runners, and anyone who needs to win one critical moment and doesn't care about the aftermath. There's a saying on the Shelf: 'Whiteroom once, you understand everything. Whiteroom twice, you understand nothing.' Helix Biosystems has been quietly studying overdose survivors — the partial SNT burns show properties they haven't been able to replicate in controlled conditions.",
+  "story_hooks": [
+    "A teenage Shelf hacker used Neuralite to crack a Lazarus data vault and survived, but the burn left her BCI stuck in a partial overclock state — she now processes at 140% continuously and is slowly losing the ability to sleep or experience linear time.",
+    "Someone is distributing Neuralite in Tier 3 disguised as a licensed BCI optimization supplement, and the victims — mid-level corporate employees — are having seizures in office buildings, creating a scandal that implicates either a competitor or an insider.",
+    "A fixer is hiring a team to extract a Shelf chemist who claims to have developed a version of Neuralite with a safe ceiling — and every major corp plus two military contractors want her dead before she can publish."
+  ]
+}

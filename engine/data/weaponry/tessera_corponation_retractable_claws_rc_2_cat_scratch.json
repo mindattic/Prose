@@ -1,0 +1,47 @@
+{
+  "id": "58c4f504b7552f579df13228cc93d75e",
+  "name": "Tessera Corponation Retractable Claws RC-2 'Cat Scratch'",
+  "type": "weapon",
+  "aliases": [
+    "Cat Scratch",
+    "RC-2",
+    "Tessera Claws",
+    "Kitty"
+  ],
+  "category": "melee",
+  "description": "A set of three retractable claws per hand, surgically mounted to the metacarpal bones and deployed through armored sheaths in the knuckle skin. Each claw is 12 centimeters of monocrystalline carbon-lattice composite — harder than surgical steel, lighter than aluminum, and sharp enough to score glass. The claws deploy in 0.15 seconds via a BCI-linked command or a deliberate fist-clenching gesture, and retract with the same speed.\n\nTessera developed the RC-2 as a personal defense augmentation for high-value individuals who require constant protection but cannot carry visible weapons. The claws are completely concealed when retracted — even detailed hand examination reveals only faint scars at the knuckle deployment points. Deployment is silent and instant, transforming an apparently unarmed hand into a weapon capable of shredding soft armor and inflicting deep lacerating wounds.\n\nThe surgical implantation procedure is invasive and painful, requiring modification of the hand's skeletal structure to accommodate the claw housings. Recipients report a persistent awareness of the hardware inside their hands — a subtle weight and tension that never fully fades. Long-term users describe developing an instinctive relationship with the claws, deploying them reflexively in response to perceived threats before conscious decision-making occurs. Tessera considers this a feature; psychologists are less certain.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 4+ (surgical implant)",
+  "legality": "Restricted — implanted weapon classification, registration required",
+  "base_technologies": [
+    "Retractable monocrystalline claw mechanism",
+    "BCI-linked deployment",
+    "Skeletal integration surgical mounting"
+  ],
+  "specifications": "claw_length: 12 cm (deployed)\nclaw_count: 3 per hand, 6 total\ndeployment_time: 0.15 seconds\nmaterial: Monocrystalline carbon-lattice composite\nretraction: BCI command or gesture-triggered\nconcealment: Complete when retracted\npower_source: Body kinetic energy harvesting — indefinite",
+  "tactical_use": "The Cat Scratch transforms the wielder's hands into close-quarters weapons that cannot be disarmed, confiscated, or detected by conventional screening. The claws are effective against soft armor and unprotected targets, and their deployment speed means the first strike typically lands before the target registers the threat. In grappling situations, the claws provide an overwhelming advantage — every grab becomes a cutting attack. The primary limitation is reach; the claws add only 12 centimeters to the hand's natural range, making them purely close-quarters weapons.",
+  "cultural_context": "Implanted weapons represent a philosophical line that many GLMZ residents are uncomfortable crossing — the permanent integration of lethal hardware into the human body. The RC-2 in particular has generated debate about where the boundary lies between self-defense augmentation and becoming a weapon. Individuals with implanted claws are required to register with municipal security, and some establishments post signage prohibiting entry by individuals with registered implanted weapons — a form of discrimination that aug-rights groups are actively challenging.",
+  "known_users": [
+    "Tessera high-value assets",
+    "Registered implanted-weapon carriers",
+    "Personal security specialists with permanent deployment needs"
+  ],
+  "story_hooks": [
+    "An RC-2 recipient's claws have begun deploying involuntarily — the BCI link is interpreting normal stress responses as deployment commands. Three people have been injured by accidental deployments in public, and the recipient is terrified of their own hands.",
+    "A black-market surgeon is performing RC-2 implantations without Tessera's quality control — the claws work, but the skeletal modifications are causing progressive bone degradation. Recipients are developing crippling hand injuries months after implantation."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "claws",
+    "implant",
+    "retractable",
+    "BCI",
+    "tier 4",
+    "cyberware",
+    "concealed"
+  ],
+  "physical_description": "Three surgical-grade monocrystalline carbon-lattice claws per hand, each 12cm long and filed to a lethal edge, sit dormant beneath reinforced knuckle sheaths of scarred dermaplast. When retracted, only faint surgical scars betray their presence; deployed, they catch neon and streetlight in sharp, predatory glints. The mounting points show the wear of repeated deployment cycles—micro-scratches in the surrounding skin tissue, slight discoloration around the surgical sites.",
+  "visual_prompt": "retractable claws mounted on human hand, monocrystalline carbon-lattice material, surgical scarring around knuckles, deployed and retracted states, product photography, gritty neo-noir aesthetic, dark rain-slicked background, neon reflection on blade edges, detailed close-up, cyberpunk medical augmentation, worn practical tech"
+}

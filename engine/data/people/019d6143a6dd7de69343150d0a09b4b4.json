@@ -14,7 +14,7 @@
   "age": 35,
   "status": "active",
   "location": "Unknown — operates entirely through remote infrastructure. Physical location has not been confirmed by any crew member in four years., near North Ave and Damen",
-  "description": "Nobody in Channel Zero has met Specter in person. This is not an inconvenience — it is the operational model. Specter designed Channel Zero as a fully remote crew: three operators who plan, execute, and debrief through encrypted communication channels without ever occupying the same physical space. The arrangement eliminates the single point of failure that destroys most runner crews — you cannot raid a safe house that doesn't exist, you cannot capture a crew that never meets, you cannot turn a member against colleagues they've never seen.\n\nSpecter's real identity is one of M88's better-kept secrets. What's known: she has been net running for at least fifteen years. Her intrusion methodology combines social engineering, zero-day exploitation, and a patience that suggests either exceptional discipline or inhuman processing capacity. She breaches corporate data architectures the way water breaches stone — slowly, persistently, finding the natural fracture lines rather than forcing them. The data she extracts is surgical: specific files, specific records, specific communications. She does not exfiltrate bulk data because bulk data is noise. She extracts meaning.\n\nShe communicates through text and voice synthesis. The voice is warm, wry, and deliberate — either genuine or an excellent performance. The crew has debated which. The debate is itself part of the operational security: if your own team can't confirm your identity, your adversaries have no chance.",
+  "description": "Nobody in Channel Zero has met Specter in person. This is not an inconvenience — it is the operational model. Specter designed Channel Zero as a fully remote crew: three operators who plan, execute, and debrief through encrypted communication channels without ever occupying the same physical space. The arrangement eliminates the single point of failure that destroys most runner crews — you cannot raid a safe house that doesn't exist, you cannot capture a crew that never meets, you cannot turn a member against colleagues they've never seen.\n\nSpecter's real identity is one of GLMZ's better-kept secrets. What's known: she has been net running for at least fifteen years. Her intrusion methodology combines social engineering, zero-day exploitation, and a patience that suggests either exceptional discipline or inhuman processing capacity. She breaches corporate data architectures the way water breaches stone — slowly, persistently, finding the natural fracture lines rather than forcing them. The data she extracts is surgical: specific files, specific records, specific communications. She does not exfiltrate bulk data because bulk data is noise. She extracts meaning.\n\nShe communicates through text and voice synthesis. The voice is warm, wry, and deliberate — either genuine or an excellent performance. The crew has debated which. The debate is itself part of the operational security: if your own team can't confirm your identity, your adversaries have no chance.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -31,7 +31,7 @@
     ],
     "core_desires": [
       "To build an intelligence operation that is genuinely untouchable — a crew that cannot be found, cannot be captured, cannot be stopped",
-      "To understand the deep architecture of M88's corporate data networks — the hidden connections, the sealed systems, the things that exist below the visible internet",
+      "To understand the deep architecture of GLMZ's corporate data networks — the hidden connections, the sealed systems, the things that exist below the visible internet",
       "To matter to people she'll never meet — to have the crew's trust be real despite the distance"
     ],
     "coping_mechanisms": [
@@ -84,7 +84,7 @@
   ],
   "narrative_function": "Specter drives the cybercrime procedural genre — her stories are about data theft, system infiltration, and the invisible war that happens in network architecture. She also embodies the paranoia of the digital world: a leader who might be anyone, whose trust model is built on performance rather than presence. Her anonymity raises the question that defines Channel Zero — is remote trust real trust?",
   "augmentations": "Unknown — Specter's physical characteristics are unconfirmed. Her net running capability suggests high-tier neural interface hardware, likely military or experimental grade. Her operational speed implies significant cognitive enhancement. Her four years of successful anonymity suggests counter-surveillance augmentation. All of this is inference, not fact.",
-  "daily_life": "Unknown. Specter is present on Channel Zero's communication channels during M88 daylight hours, suggesting she operates on local time. She responds to messages within minutes during operational periods and within hours during off-periods. She shares operational intelligence, coordinates planning, and maintains crew communication infrastructure. Beyond this, nothing is confirmed.",
+  "daily_life": "Unknown. Specter is present on Channel Zero's communication channels during GLMZ daylight hours, suggesting she operates on local time. She responds to messages within minutes during operational periods and within hours during off-periods. She shares operational intelligence, coordinates planning, and maintains crew communication infrastructure. Beyond this, nothing is confirmed.",
   "affiliation": "Channel Zero",
   "uses_facets": false,
   "narration_voice": "",
@@ -227,7 +227,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

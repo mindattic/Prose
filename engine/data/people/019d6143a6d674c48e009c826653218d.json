@@ -96,10 +96,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Community Hub",
-      "Information Broker",
-      "Covert Vulnerability",
-      "E.L.F. Neutral"
+      "community hub",
+      "information broker",
+      "covert vulnerability",
+      "e.l.f. neutral"
     ]
   },
   "behavioral": {
@@ -210,7 +210,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

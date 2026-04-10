@@ -1,0 +1,47 @@
+{
+  "id": "acf279066965364261fddb1d6f6b92d1",
+  "name": "Meridian Armory Collective Peacekeeper MAC-1 'Long Arm of the Law'",
+  "type": "weapon",
+  "aliases": [
+    "Long Arm",
+    "MAC-1",
+    "Peacekeeper",
+    "The Reach"
+  ],
+  "category": "sniper",
+  "description": "A precision rifle produced by the Meridian Armory Collective, a consortium of small manufacturers that pooled resources to produce a weapon system competitive with corporate offerings. The MAC-1 fires smart rounds equipped with micro-guidance fins that receive BCI corrections from the operator during flight.\n\nThe Peacekeeper was designed for municipal security forces that cannot afford Tessera or Arcturus platforms but still need precision engagement capability. The weapon is deliberately utilitarian — no luxury finishes, no proprietary components, and a modular design that allows field repair with standard tools. What it lacks in sophistication it compensates for with reliability and a price point that puts precision capability in the hands of community defense organizations.\n\nThe MAC-1's smart round guidance is less precise than military-grade systems, but within 1,500 meters it achieves hit probabilities that rival weapons costing ten times as much.",
+  "manufacturer": "MERIDIAN ARMORY COLLECTIVE",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — municipal security and authorized civilians",
+  "base_technologies": [
+    "Cooperative manufacturing consortium",
+    "Budget smart-round guidance",
+    "Modular field-serviceable design"
+  ],
+  "specifications": "caliber: 6.5mm smart round with micro-guidance fins\neffective_range: 100-1,500 meters\nrate_of_fire: Semi-automatic, 1 round per 2 seconds\ncapacity: 8-round detachable magazine\nweight: 5.2 kg\npower_source: BCI link powers guidance corrections, no external power",
+  "tactical_use": "The Peacekeeper fills the gap between unguided precision rifles and corporate smart-weapon platforms. Municipal security teams deploy MAC-1 operators as overwatch during community defense operations, providing precision support that previously required hiring corporate contractors. The weapon's BCI guidance is effective but less responsive than military systems — operators describe it as 'suggesting' rather than 'commanding' the round's trajectory.",
+  "cultural_context": "The Meridian Armory Collective represents a rare example of grassroots manufacturing competing with corporate defense production. The MAC-1 has become a symbol of community self-reliance in the middle tiers, and its affordability has democratized precision weapons capability. Corporate manufacturers view the MAC with disdain, but their sales teams have noticed the dent in their market share.",
+  "known_users": [
+    "Municipal security forces",
+    "Community defense organizations",
+    "Tier 3 militia groups"
+  ],
+  "story_hooks": [
+    "The Meridian Armory Collective's manufacturing facility was vandalized — precision tooling destroyed, inventory stolen. The damage pattern suggests corporate sabotage targeting a competitor that was getting too successful.",
+    "A batch of MAC-1 smart rounds has been modified with a secondary guidance override — someone can redirect the rounds mid-flight to hit unintended targets. The modified rounds are already in circulation."
+  ],
+  "ammunition_type": [
+    "6.5mm BCI-guided smart round"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "smart-round",
+    "community",
+    "affordable",
+    "tier 3",
+    "BCI"
+  ],
+  "physical_description": "The MAC-1 is a utilitarian precision rifle with a matte charcoal composite stock and stamped steel receiver, its surfaces scarred by field use and maintenance. A modular rail system runs the length of the barrel, supporting interchangeable scope mounts and a distinctive guidance fin receiver pod mounted above the chamber. The weapon bears the aesthetic of function over form—bare metal, friction tape on the grip, and a magazine well designed for quick-change under fire.",
+  "visual_prompt": "tactical sniper rifle, modular military design, matte charcoal composite stock, stamped steel receiver, guidance pod mounted on barrel, neo-noir gritty aesthetic, worn surfaces, product photography, dark industrial background, moody neon accent lighting, detailed metalwork, professional equipment photography, cyberpunk near-future"
+}

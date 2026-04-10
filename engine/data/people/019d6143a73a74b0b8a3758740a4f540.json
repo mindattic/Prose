@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Archivist",
-      "Institutional",
-      "Morally Conflicted",
-      "Expert",
-      "Quietly Brave"
+      "archivist",
+      "institutional",
+      "morally conflicted",
+      "expert",
+      "quietly brave"
     ]
   },
   "behavioral": {
@@ -239,7 +239,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

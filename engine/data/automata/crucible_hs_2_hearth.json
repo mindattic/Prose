@@ -1,0 +1,45 @@
+{
+  "name": "Crucible HS-2 'Hearth'",
+  "type": "automaton",
+  "classification": "Domestic",
+  "aliases": [
+    "Hearth",
+    "House Sitter",
+    "The Warden"
+  ],
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "description": "The HS-2 is a home security and monitoring automaton — a wall-mounted unit resembling a large smoke detector that serves as the brain of a residential security system. It manages door locks, window sensors, motion detectors, and external cameras, providing consolidated alerts to the homeowner's personal device. Unlike standalone security systems, the HS-2 uses behavioral analysis to distinguish between routine household activity and genuine intrusion — it learns when you come home, when you leave, when the cleaning automaton runs its cycle, and stops alerting on predictable events.\n\nThe HS-2's value proposition is that it eliminates false alarms while maintaining vigilance. Traditional security systems in GLMZ generate so many false positives that most owners disable them within six months. The HS-2's false alarm rate is under two percent after its initial thirty-day learning period. When it alerts you, something is actually wrong. This reliability has made it Crucible's best-selling consumer product by a factor of three.\n\nThe HS-2 also serves as an entry point for Crucible's ecosystem. It coordinates with Crucible cleaning automata, maintenance units, and the CN-1 childcare platform, creating an integrated domestic management system. Critics note that this ecosystem lock-in means Crucible eventually controls every automated system in the home, with the HS-2 sitting at the center like a spider in a web — tracking, coordinating, and reporting everything that happens within the residence to a device that the homeowner controls but Crucible manufactured.",
+  "tier_availability": "Tier 2",
+  "legality": "Consumer — unrestricted",
+  "autonomy_level": "Fully autonomous — behavioral security AI",
+  "dimensions": "0.3m diameter, 0.1m depth (wall-mounted)",
+  "weight": "2 kg",
+  "power_source": "Hardwired residential power with 48-hour battery backup",
+  "locomotion": "None — wall-mounted",
+  "armament": [],
+  "sensors": [
+    "Door and window contact sensors",
+    "Motion detection array",
+    "External camera integration",
+    "Audio anomaly detection"
+  ],
+  "countermeasures": "Backup battery ensures continued operation during power cuts. Tamper detection alerts if the unit is physically disturbed. Can be defeated by jamming wireless communication between sensors.",
+  "known_deployments": [
+    "Widespread in Tier 2-3 residential units"
+  ],
+  "story_hooks": [
+    "An HS-2's behavioral learning has detected a pattern its owner hasn't noticed: someone enters the apartment every Tuesday between 2:00 and 2:45 AM while the owner is asleep. The HS-2 classified it as routine after the third occurrence and stopped alerting. Whoever is entering the apartment has been doing it for months.",
+    "A neighborhood's worth of HS-2 units have been compromised — their behavioral data aggregated to create a complete picture of when every home in the block is empty. The burglaries that follow are surgically precise."
+  ],
+  "cultural_context": "The HS-2 embodies the paradox of automated security: a system designed to protect you that also maps every aspect of your domestic life. Crucible knows when you sleep, when you wake, when you leave, when you return. They promise this data is secure. GLMZ residents have learned that 'secure' and 'private' are not the same word.",
+  "tags": [
+    "automaton",
+    "domestic",
+    "security",
+    "consumer",
+    "crucible",
+    "surveillance",
+    "tier 2"
+  ],
+  "id": "9a98d23b36c26005935aa345c1c30d09"
+}

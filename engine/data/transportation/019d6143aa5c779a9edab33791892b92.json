@@ -32,11 +32,16 @@
     "corporate",
     "underworld",
     "vehicle",
-    "armor"
+    "armor",
+    "military",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "GLMZ",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": "The Arcturus Bulwark is a hulking eight-wheeled platform of weathered composite armor plating in matte gunmetal gray, its sloped panels scarred by impact marks and chemical weathering from acid rain. Reinforced viewports sit behind heavy ballistic glass, and the chassis rides low on independent suspension that creaks under its own weight. A pintle-mount sits bare on the roof—ready for whatever security detail deems necessary.",
+  "visual_prompt": "armored personnel carrier, eight-wheeled military vehicle, matte gunmetal gray composite armor, weathered battle-scarred plating, heavy ballistic glass viewports, pintle mount roof, rain-slicked industrial setting, gritty neo-noir aesthetic, detailed product photography, low angle shot, neon reflection on wet asphalt, dark ominous lighting, dystopian near-future, worn tactical hardware"
 }

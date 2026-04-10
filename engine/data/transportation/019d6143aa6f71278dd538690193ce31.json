@@ -32,7 +32,10 @@
     "night",
     "survival",
     "shelf",
-    "tier 1"
+    "tier 1",
+    "ground",
+    "van",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -41,5 +44,7 @@
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "The Collective",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "Weathered steel cables, some corroded to a dull rust-brown patina, crisscross between blocky concrete and prefab structures at varying heights and angles. Pulley harnesses are jury-rigged affairs—repurposed climbing gear, salvaged industrial pulleys, frayed rope, and zip-tie reinforcements, each one slightly different from the next. The cables sag noticeably in places, some wrapped in faded electrical tape or cloth to improve grip; spray-painted warning marks and community symbols mark known trouble spots.",
+  "visual_prompt": "worn steel cables strung between industrial concrete buildings, rusted pulley harnesses and climbing gear, gritty neo-noir rooftop transit system, detailed weathered metal and frayed rope, spray paint marks, rain-slicked surfaces, dark moody lighting, cyberpunk infrastructure, product photography style, urban decay aesthetic"
 }

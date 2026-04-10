@@ -31,7 +31,12 @@
     "vehicle",
     "circuit",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "ground",
+    "cargo",
+    "electric",
+    "manual",
+    "subterranean"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -39,5 +44,7 @@
     "GLMZ",
     "Kelpline Logistics HarbourSkate MX-40 Magnetic Levitation Cargo Sled",
     "Osvaldo Mensah-Kovalenko"
-  ]
+  ],
+  "physical_description": "A skeletal aluminum chassis barely two feet wide, scarred by countless asphalt impacts and patched with mismatched carbon-fiber panels. The frame sits inches above the ground, its undercarriage bristling with exposed magnetic coils and a jury-rigged electric motor that hums with an unstable whine. Scuffed grip tape covers the rider's bay where shoulders and hips lock in; brake cables run visibly along the sides, frayed where they've been hastily re-soldered.",
+  "visual_prompt": "gritty neo-noir street luge sled, low-profile motorized racing vehicle, supine riding position, exposed magnetic coils and electric motor, scarred aluminum frame, carbon-fiber patches, worn grip tape, industrial decay aesthetic, rain-slicked concrete background, moody neon rim lighting, detailed product photography, cyberpunk underground racing culture, dangerous minimalist design"
 }

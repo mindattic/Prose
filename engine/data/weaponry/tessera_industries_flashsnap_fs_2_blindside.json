@@ -1,0 +1,45 @@
+{
+  "id": "d1c33015510f70fb352596fb28fb5965",
+  "name": "Tessera Industries FlashSnap FS-2 'Blindside'",
+  "type": "weapon",
+  "aliases": [
+    "Blindside",
+    "FS-2",
+    "Flash Pop",
+    "Whiteout"
+  ],
+  "category": "self_defense",
+  "description": "A thumb-sized civilian flashbang device that produces a disorienting burst of light and sound sufficient to cause temporary blindness and auditory confusion without the concussive force or permanent damage potential of military-grade flashbang grenades. The FS-2 activates by pulling a ring tab, producing a 3-million-candela flash and a 130-decibel crack after a 1.5-second delay. The effect on unprotected individuals within five meters is approximately four seconds of visual whiteout and eight seconds of auditory ringing.\n\nTessera designed the FS-2 with strict output limits to keep it within civilian defense regulations. The flash intensity is high enough to overwhelm unfiltered human eyes and most consumer-grade optical augmentations, but falls below the threshold that causes retinal damage in healthy eyes. The acoustic burst is painful but does not cause the pressure-wave injuries associated with military concussion grenades. The 1.5-second delay allows the user to throw the device, close their eyes, and cover their ears.\n\nThe FS-2 is sold individually at Φ30 and is popular enough that convenience stores in Tier 1-3 stock them alongside candy and batteries. The device has a shelf life of five years and requires no maintenance. Its simplicity has made it one of the default self-defense tools for people who cannot afford reusable electronic devices — Φ30 for one use that might save your life is an easy calculation.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Controlled photonic burst generation",
+    "Civilian-rated acoustic pressure output",
+    "Time-delayed chemical ignition"
+  ],
+  "specifications": "flash output: 3 million candela\nacoustic output: 130 dB at 1 meter\ndelay: 1.5 seconds after ring-pull\neffective radius: 5 meters\nblinding duration: ~4 seconds\nauditory disruption: ~8 seconds\nweight: 12 g\ndimensions: 3 cm x 1.5 cm diameter\ncost: Φ30\nshelf life: 5 years",
+  "tactical_use": "Pull the ring tab, throw the device toward the threat, close your eyes tightly, and cover your ears. After the 1.5-second delay, the flash and crack will disorient anyone within five meters who was not prepared. Open your eyes and run immediately — you have approximately four seconds before the attacker's vision clears. Combine with a SmokePop for extended concealment: flash to disorient, smoke to obscure your escape route.",
+  "cultural_context": "The FS-2 has become as commonplace as cigarette lighters in GLMZ's lower tiers. People carry them in pockets, on keychains, and in the bottom of bags alongside their other daily essentials. Tessera's success with the FS-2 has spawned numerous imitations, some of which exceed civilian output limits and cause genuine eye damage. The distinctive 'crack' of an FS-2 detonation is common enough that experienced GLMZ residents can identify it by sound and know to look away before the flash.",
+  "known_users": [],
+  "story_hooks": [
+    "A batch of counterfeit FS-2 devices with military-grade flash output has blinded three people permanently — the counterfeits are visually identical to legitimate units and are circulating in the same retail channels.",
+    "A creative thief has developed a technique using FS-2 devices to defeat biometric locks — the flash is intense enough to overload the retinal scanner's sensor, causing it to default to an unlocked state."
+  ],
+  "ammunition_type": [
+    "Chemical flash-bang capsule"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "flash",
+    "escape",
+    "throwable",
+    "single_use",
+    "tier_1",
+    "affordable"
+  ],
+  "physical_description": "A worn aluminum cylinder the size of a lighter, matte black with faded Tessera Industries branding and a pull-ring mechanism threaded through its cap. The casing shows stress marks from repeated handling, and the ring tab is slightly bent from pocket wear. A small pressure-relief valve on the side hints at the chemical charge within.",
+  "visual_prompt": "gritty product photography, thumb-sized flashbang device, matte black aluminum cylinder, worn Tessera Industries branding, pull-ring mechanism, detailed macro shot, neo-noir lighting, dark background, industrial materials, realistic wear marks, cyberpunk aesthetic, tactical self-defense gear, moody underlit studio"
+}

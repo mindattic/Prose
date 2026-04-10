@@ -1,0 +1,45 @@
+{
+  "id": "e03824b765f974a1f8be7a994914a587",
+  "name": "Electromagnetic Barrier Principles",
+  "brand_name": "",
+  "product_name": "",
+  "type": "technology",
+  "aliases": [
+    "EM Barriers",
+    "Force Field Theory",
+    "Barrier Physics"
+  ],
+  "subcategory": "defense",
+  "description": "The fundamental physics of electromagnetic barriers in 2200 rest on the controlled generation and manipulation of magnetic monopoles — particles that were theorized for centuries before being reliably produced in Crucible Industries' Monopole Foundry in 2147. Magnetic monopoles, unlike conventional magnets with inseparable north and south poles, carry a single magnetic charge. When accelerated through precisely tuned emitter arrays, monopoles can be arranged into crystalline lattice structures that exist as standing waves in electromagnetic flux — barriers that interact with matter and energy as though they were solid surfaces.\n\nThe key breakthrough was not the production of monopoles themselves but the development of lattice stabilization algorithms by TESSERA's Applied Physics Division in 2159. These algorithms control the spacing, orientation, and oscillation frequency of monopoles within the barrier lattice, determining the barrier's properties: density, permeability, durability, and energy consumption. A denser lattice stops more but costs more power. A tuned lattice can selectively permit passage of objects matching specific electromagnetic signatures while blocking everything else. The mathematics are fiendishly complex, and the stabilization algorithms are among the most closely guarded trade secrets in the defense industry.\n\nBarrier technology's fundamental limitation is thermodynamic. Every joule of kinetic or electromagnetic energy the barrier absorbs must be dissipated, and the lattice itself radiates waste heat proportional to the energy it blocks. Sustained bombardment heats the barrier until the monopole lattice destabilizes and collapses — the failure mode that makes sustained fire the universal counter to barrier technology. Research into heat-sink lattice geometries and active cooling systems continues, but no solution has eliminated this constraint. The theoretical maximum continuous absorption for a personal-scale barrier remains approximately 2.4 megajoules before thermal collapse.",
+  "tier_availability": "Tier 3",
+  "developers": [
+    "CRUCIBLE INDUSTRIES",
+    "TESSERA"
+  ],
+  "base_technologies": [
+    "Magnetic monopole production",
+    "Lattice stabilization algorithms",
+    "Standing-wave electromagnetic flux",
+    "Thermal dissipation modeling"
+  ],
+  "enables": [
+    "Personal shield units",
+    "Building-scale deflectors",
+    "Tactical barrier projectors",
+    "Selective-permeability membranes"
+  ],
+  "social_impact": "The understanding of barrier physics has become a strategic resource. Corponations that control the fundamental research control who can and cannot build shields. Crucible Industries' monopole production monopoly and TESSERA's algorithm patents create a duopoly that dictates the terms of barrier technology access worldwide. Independent researchers who publish barrier physics advances tend to receive lucrative job offers — or disappear.",
+  "story_hooks": [
+    "A university researcher claims to have developed a barrier lattice that operates at room temperature regardless of incoming energy — if true, it would make shields effectively invulnerable. She has gone into hiding.",
+    "Crucible's Monopole Foundry has been producing monopoles with anomalous properties for the past six months — barriers built with them are 30% stronger but occasionally exhibit behavior the stabilization algorithms cannot predict."
+  ],
+  "tags": [
+    "defense",
+    "technology",
+    "forcefield",
+    "physics",
+    "monopole",
+    "fundamental",
+    "tier 3"
+  ]
+}

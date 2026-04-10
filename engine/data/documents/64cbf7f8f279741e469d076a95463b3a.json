@@ -1,0 +1,28 @@
+{
+  "name": "Fragment — BCI Error Log, Anomalous",
+  "type": "document",
+  "document_type": "fragment",
+  "author": "Unknown / BCI Diagnostic System",
+  "date": "unknown",
+  "classification": "restricted",
+  "description": "A BCI diagnostic log that shows the device attempting to connect to a neural mesh that doesn't exist. The mesh ID resolves to no known network. The connection attempts occur at exactly 3:17 AM every night. The user is asleep. The BCI is not in sleep mode during these attempts.",
+  "related_entities": [],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "What network is the BCI trying to reach?",
+    "Why 3:17 AM specifically?",
+    "Is the user aware?"
+  ],
+  "tags": [
+    "document",
+    "fragment",
+    "incomplete",
+    "data log",
+    "BCI",
+    "neural mesh",
+    "3:17 AM",
+    "anomaly",
+    "diagnostic"
+  ],
+  "id": "64cbf7f8f279741e469d076a95463b3a"
+}

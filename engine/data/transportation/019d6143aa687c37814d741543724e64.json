@@ -34,7 +34,10 @@
     "tunnel",
     "rain",
     "vehicle",
-    "train"
+    "train",
+    "subterranean",
+    "rail",
+    "van"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -42,5 +45,7 @@
     "Narrowcast",
     "New Windsor / Novaya Windsorka",
     "Sterling-Nakamura Augmented Reality Court System"
-  ]
+  ],
+  "physical_description": "The Gravity Train exists only in fragmented testimony and hand-drawn schematics smuggled from deep-Underworld explorers—no intact vessel has ever been recovered. What little evidence exists suggests a sleek, aerodynamic capsule of dark composite material, its surface scarred by earth-friction and sealed with corroded locks. The theoretical design shows a teardrop profile, barely wider than a human torso, with reinforced impact plating along its nose cone and what might be magnetic dampers running its length.",
+  "visual_prompt": "sleek teardrop capsule vehicle, dark composite material, earth-scarred surface, corroded metal seals, magnetic dampers, neo-noir aesthetic, industrial decay, gritty weathered texture, underground tunnel cross-section, gravity physics diagram overlay, moody blue-grey lighting, detailed product photography, mysterious artifact, worn high-tech engineering, dark background"
 }

@@ -95,10 +95,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Precision Artist",
-      "Gene-Mod Expert",
-      "Quiet Authority",
-      "Ritualist"
+      "precision artist",
+      "gene-mod expert",
+      "quiet authority",
+      "ritualist"
     ]
   },
   "behavioral": {
@@ -250,7 +250,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

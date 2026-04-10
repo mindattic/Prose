@@ -1,0 +1,51 @@
+{
+  "name": "Arcturus LS-5 'Sentinel'",
+  "type": "automaton",
+  "classification": "Security",
+  "aliases": [
+    "Sentinel",
+    "Lobby Guard",
+    "The Pillar"
+  ],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The LS-5 is a corporate lobby security platform — a tall, cylindrical unit standing 2.3 meters with a rotating sensor head and two retractable arm assemblies concealed within its chassis. In standby mode, it resembles a decorative column, finished in brushed steel or custom corporate livery. Arcturus deliberately designed it to look architectural — something you might walk past in a lobby without registering it as a machine. This is intentional. The LS-5 is meant to be discovered only when it activates, and by then it has already scanned, assessed, and targeted.\n\nWhen triggered, the LS-5's transformation is fast and startling. The arm assemblies deploy in 0.8 seconds — one carrying a focused sonic projector capable of disorienting targets at 20-meter range, the other carrying a kinetic restraint launcher that fires a weighted bolas designed to entangle limbs. The sensor head exposes a full threat-assessment suite that had been passively scanning through the unit's decorative exterior the entire time. The LS-5 was watching before you knew it was there.\n\nArcturus markets the LS-5 to corporations that want visible security without visible security — buildings where armed guards would undermine the corporate aesthetic but where the threat of intrusion is real. The LS-5 provides deterrence through ambush rather than presence. You don't see it. You don't know it's there. Then you do something you shouldn't, and a column deploys weapons at you.",
+  "tier_availability": "Tier 3-4",
+  "legality": "Commercial — armed security platform license required",
+  "autonomy_level": "Semi-autonomous — passive scanning with activation protocols",
+  "dimensions": "2.3m height, 0.6m diameter",
+  "weight": "280 kg",
+  "power_source": "Hardwired building power with 8-hour battery backup",
+  "locomotion": "Stationary — floor-bolted installation",
+  "armament": [
+    "Focused sonic projector (20m effective range)",
+    "Kinetic bolas launcher (15m effective range)",
+    "Integrated alarm and lockdown trigger"
+  ],
+  "sensors": [
+    "Passive millimeter-wave scanning",
+    "Thermal imaging through decorative shell",
+    "Audio analysis",
+    "Network-integrated threat database"
+  ],
+  "countermeasures": "The unit is stationary — once its position is known, it can be avoided. The decorative shell is not armored. EMP disrupts the deployment mechanism. The sonic projector is directional and can be flanked.",
+  "known_deployments": [
+    "Corporate headquarters lobbies across Tier 3-5 districts",
+    "High-security commercial installations"
+  ],
+  "story_hooks": [
+    "A team needs to infiltrate a corporate lobby that has LS-5 units disguised as architectural elements. They don't know how many there are or which columns are machines. The building plans show six decorative columns. Only four are structural.",
+    "An LS-5 activated during a routine fire evacuation and restrained three employees who were running toward an emergency exit. Its threat-assessment AI interpreted running humans as hostile. Arcturus settled the lawsuits quietly."
+  ],
+  "cultural_context": "The LS-5 represents corporate paranoia made architectural — buildings that are literally armed, where the walls might attack you. Employees in LS-5-equipped buildings report a persistent low-grade anxiety about their environment. The furniture might be a weapon. The column might deploy. You never really relax.",
+  "tags": [
+    "automaton",
+    "security",
+    "lobby",
+    "corporate",
+    "arcturus",
+    "concealed",
+    "tier 3",
+    "tier 4"
+  ],
+  "id": "c474a7f80c542f888b31ed3c5b264a9c"
+}

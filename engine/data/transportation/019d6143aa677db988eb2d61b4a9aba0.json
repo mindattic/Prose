@@ -32,11 +32,18 @@
     "desperate",
     "armor",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "civilian",
+    "truck",
+    "van",
+    "military",
+    "electric"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "Vantablack FH-20 'Convoy'"
-  ]
+  ],
+  "physical_description": "A battered yellow school bus, its original paint faded to the color of old bone, reinforced with welded steel plating and ballistic polymer panels that bulge awkwardly beneath the windows. Rusted bumpers frame a reinforced grille, and the familiar SCHOOL BUS lettering is scarred with impact marks. Wire cages seal the windows; a rotating spotlight and compact radar dome sit bolted to the roof beside communications antennae that angle toward the perpetually gray sky.",
+  "visual_prompt": "gritty neo-noir armored school bus, faded yellow paint with steel reinforcement plates, ballistic polymer panels, wire-caged windows, rusted metal details, rotating spotlight on roof, rain-slicked industrial lot, dark moody lighting, weathered and worn, cyberpunk dystopian transport, detailed product photography, 4k, cinematic"
 }

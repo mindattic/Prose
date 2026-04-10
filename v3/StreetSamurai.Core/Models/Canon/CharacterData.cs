@@ -226,6 +226,14 @@ public class SpeechPatterns
     [JsonPropertyName("cadence")] public string Cadence { get; set; } = "";
     [JsonPropertyName("verbal_tics")] public List<string> VerbalTics { get; set; } = [];
     [JsonPropertyName("example_lines")] public List<string> ExampleLines { get; set; } = [];
+    /// <summary>Topics, words, or registers this character deflects from or never uses.</summary>
+    [JsonPropertyName("avoidances")] public List<string> Avoidances { get; set; } = [];
+    /// <summary>How this character says one thing while meaning another — the gap between surface and intent.</summary>
+    [JsonPropertyName("subtext")] public string Subtext { get; set; } = "";
+    /// <summary>Specific dialog behaviors under emotional pressure — tells, deflections, escalations.</summary>
+    [JsonPropertyName("under_pressure")] public string UnderPressure { get; set; } = "";
+    /// <summary>How their speech changes when they genuinely trust someone vs. performing normalcy.</summary>
+    [JsonPropertyName("intimacy_register")] public string IntimacyRegister { get; set; } = "";
 }
 
 public class CharacterRelationship

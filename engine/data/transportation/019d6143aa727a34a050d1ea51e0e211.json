@@ -31,7 +31,13 @@
     "surveillance",
     "rooftop",
     "tier 3",
-    "tier 5"
+    "tier 5",
+    "car",
+    "aircraft",
+    "cargo",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
@@ -39,5 +45,7 @@
     "Symbiont",
     "Tessera AutoCab",
     "Wren Okafor-Bjarnadóttir"
-  ]
+  ],
+  "physical_description": "The Sparrow is a compact, angular aircraft with a weather-beaten composite fuselage painted matte gunmetal grey, its surface cratered by years of acid rain and UV exposure. Twin ducted rotors mounted on articulated arms fold against the narrow cabin—barely wide enough for two cramped seats—while exposed hydraulic lines and patched paneling hint at constant maintenance. A cracked polycarbonate canopy dominates the nose, and faded Tessera Transit decals peel from the tail boom.",
+  "visual_prompt": "compact autonomous VTOL air taxi, matte grey weathered composite hull, exposed hydraulic lines, ducted rotors folded, cracked polycarbonate canopy, patched fuselage, faded corporate decals, industrial drone aesthetic, gritty neo-noir, detailed product photography, dark moody lighting, rain-slicked surfaces, worn high-tech, dark background, cyberpunk transportation"
 }

@@ -1,0 +1,48 @@
+{
+  "id": "bc96cb3dc917546a76b9a278ff20c0f4",
+  "name": "Kang-Petrov Arms KPM-12 'Steadfast'",
+  "type": "weapon",
+  "aliases": [
+    "Steadfast",
+    "KPM-12",
+    "The Constant"
+  ],
+  "category": "dmr",
+  "description": "The KPM-12 Steadfast is a battle-DMR hybrid that sacrifices extreme accuracy for sustained-fire capability. Where conventional DMRs are precision instruments that demand careful shooting, the Steadfast is designed for designated marksmen who operate as part of assault elements and need to maintain precision fire while moving and shooting rapidly. The weapon chambers 7.62mm caseless with a heavy barrel that resists thermal shift during sustained engagement.\n\nThe Steadfast's BCI integration focuses on moving-target engagement rather than static precision. The AI tracks target movement vectors and provides a continuously updated lead indicator in the neural overlay, allowing the marksman to maintain effective fire on moving targets at ranges up to 500 meters. The weapon's 1.5-MOA accuracy is modest by DMR standards but maintained consistently through high round counts and rapid-fire sequences.\n\nKang-Petrov prices the Steadfast at Φ3,500, positioning it between their Equalizer and premium competitors. Its customers are operators who need a marksman's reach with a rifleman's tempo — squad-level marksmen who engage targets of opportunity while keeping pace with their assault element rather than providing static overwatch. The weapon fills a role that traditional DMR doctrine doesn't acknowledge: the moving marksman.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Heavy barrel thermal resistance",
+    "BCI moving-target tracking",
+    "Sustained-fire accuracy maintenance"
+  ],
+  "specifications": "caliber: 7.62mm caseless\neffective_range: 500m (moving engagement), 650m (static)\nrate_of_fire: Semi-automatic (rapid capable)\nmagazine_capacity: 20 rounds\nweight: 4.5 kg",
+  "tactical_use": "The Steadfast enables precision fire from assault elements in motion. Traditional DMR doctrine positions the marksman in a static overwatch role, but many operations require the marksman to advance with the squad. The KPM-12's moving-target AI and thermal-resistant barrel maintain engagement capability during the kind of rapid, mobile shooting that would degrade a traditional precision rifle's accuracy. The weapon trades peak accuracy for consistency under stress.",
+  "cultural_context": "The Steadfast represents a doctrinal shift in how designated marksmen are employed. Rather than separating the marksman from the squad, the KPM-12 integrates them into the assault element as a mobile precision asset. This approach appeals to freelance teams where separating a member for static overwatch reduces an already small team's maneuver capability. The weapon is practical rather than prestigious — no one brags about carrying a Steadfast, but no one regrets having one.",
+  "known_users": [
+    "Squad-integrated marksmen",
+    "Mobile security details",
+    "Freelance assault teams",
+    "Patrol precision elements"
+  ],
+  "story_hooks": [
+    "A Steadfast marksman tracked a moving target through a crowd at 400 meters using the BCI lead indicator. The shot was clean — but the AI's movement prediction was based on the target's walking pace, and they stopped to tie their shoe. The round missed the target and hit a vendor stall.",
+    "Kang-Petrov is developing a Steadfast variant with a fully automatic mode for suppressive precision fire. The prototype achieves 2-MOA accuracy at 300 rpm — terrifying if it reaches production."
+  ],
+  "ammunition_type": [
+    "7.62mm caseless standard",
+    "7.62mm caseless match"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "mobile",
+    "assault",
+    "moving_target",
+    "Kang-Petrov",
+    "tier 2"
+  ],
+  "physical_description": "The KPM-12 Steadfast is a utilitarian rifle with a reinforced polymer receiver darkened by carbon scoring and field wear. Its heavy barrel is wrapped in heat-dispersing composite that's scarred from countless engagements, while the stock bears the dents and tape repairs of frontline service. Modular rail systems along the upper receiver show patchy rust beneath hastily applied protective coating.",
+  "visual_prompt": "KPM-12 Steadfast DMR rifle, 7.62mm caseless, heavy barrel with heat wrap, modular rail system, worn polymer receiver, carbon-scored metal, battle-scarred composite stock, tactical rail system, product photography, gritty neo-noir aesthetic, industrial decay, dark studio background, detailed weathering, professional military hardware, moody lighting"
+}

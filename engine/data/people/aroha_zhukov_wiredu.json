@@ -1,0 +1,61 @@
+{
+  "id": "db87a3b10b3d6c2fc18fcb31cd01e21f",
+  "name": "Aroha Zhukov-Wiredu",
+  "type": "character",
+  "aliases": [
+    "Hound",
+    "The Tracker"
+  ],
+  "role": "Private Investigator",
+  "description": "Aroha Zhukov-Wiredu was a military tracker for Sterling-Nakamura's urban warfare division before going freelance. In the military she tracked deserters, infiltrators, and enemy combatants through the most hostile urban environments on the planet. In civilian life she tracks fugitives, missing persons, and anyone who doesn't want to be found — and she finds them, because in twenty years of tracking she has never lost a quarry.\n\nHer method is relentlessly physical. She operates below the digital layer entirely, reading the city the way a forest tracker reads the woods — broken stems become scuff marks, animal tracks become footprints, disturbed earth becomes moved debris. She can determine how long ago someone passed through a corridor by the rate at which dust has resettled. She can estimate a target's physical condition by the depth and spacing of their footprints. She can predict where someone will go based on the urban terrain the way a hunter predicts where an animal will drink.\n\nShe is a blunt instrument in a world that increasingly values digital sophistication, and she doesn't care. Her clients hire her when the target has gone analog — when they've ditched their BCI, abandoned their digital identity, and disappeared into the physical city. Other investigators stop at that point. Aroha starts. She will follow a target until one of them collapses, and it's never her.",
+  "affiliation": "Independent — operates on retainer for three Tier 2-3 firms who need fieldwork done",
+  "tier": "Tier 2",
+  "location": "A spartan apartment above a gym in Steamvent Alley — nothing on the walls, nothing personal, packed bag always by the door",
+  "specialization": "Physical tracking and fugitive recovery in urban environments",
+  "methods": [
+    "Urban tracking — reading footprints, disturbances, and physical evidence of passage through city environments",
+    "Endurance pursuit — following a target on foot for days at a pace they can't sustain",
+    "Behavioral prediction based on military psychology profiling",
+    "Using the city's infrastructure against targets — knowing which routes funnel into dead ends",
+    "Setting physical surveillance traps — tripwires, motion sensors, pressure plates"
+  ],
+  "notable_cases": [
+    "Tracked a corporate defector across seven districts over nine days, following physical signs of passage through areas with no electronic surveillance",
+    "Recovered a kidnap victim by literally following the tire marks of the vehicle from the abduction site through seventeen kilometers of Shelf streets",
+    "Found a serial arsonist by identifying the pattern of their scouting routes — they always walked the target site three times before striking"
+  ],
+  "equipment": [
+    "Military-grade boots with terrain analysis sensors — reads surface composition and recent disturbances",
+    "Miniaturized drone with thermal imaging for aerial tracking",
+    "Physical restraints — she always brings the target back, alive if possible",
+    "Nutritional implant that allows extended operations without food stops",
+    "Weatherproof field kit — she's tracked targets through three-day storms without shelter"
+  ],
+  "personality": "Aroha is Maori-Russian-Ghanaian, forty years old, stocky and powerful with dark skin, close-cropped black hair, and a face that has been broken and reset enough times to have its own topography. She doesn't talk much because talking wastes energy and energy is a finite resource during pursuit. She thinks in distances, timelines, and probabilities. She can read a person's weight, gait, speed, and emotional state from their footprints, and she considers this skill more reliable than any BCI scan. She has no social life because every hour not spent tracking is an hour spent preparing to track. She is not unfriendly — she is simply monomaniacally focused on a single skill, and everything else in her life has atrophied.",
+  "relationships": [
+    {
+      "name": "Sergeant Major Dato Engstrom-Fofana",
+      "type": "former commanding officer",
+      "description": "Still active in Sterling-Nakamura's military — occasionally passes Aroha intelligence when their interests align"
+    },
+    {
+      "name": "Amara Lindqvist-Diallo",
+      "type": "professional acquaintance",
+      "description": "Amara has hired Aroha twice for tracking in child recovery cases — they respect each other's abilities but disagree on methods"
+    }
+  ],
+  "story_hooks": [
+    "Aroha is hired to track someone who is clearly a better tracker than she is — for the first time in her career, she's following someone who knows exactly how to avoid being followed by someone with her skills",
+    "A target she's pursuing leads her into the Underbelly, where her surface-tracking skills are useless — she needs help from someone who knows the tunnels",
+    "Sterling-Nakamura contacts her with a contract that's technically legal but morally unconscionable — track a group of refugees who are fleeing corporate territory"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "tracker",
+    "military",
+    "physical",
+    "steamvent_alley",
+    "human"
+  ]
+}

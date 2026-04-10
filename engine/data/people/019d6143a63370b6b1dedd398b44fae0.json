@@ -99,7 +99,7 @@
       "street doc",
       "struck-off surgeon",
       "community anchor",
-      "Suture-3 devotee",
+      "suture-3 devotee",
       "gray market medic"
     ]
   },
@@ -275,7 +275,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Indigenous American": {

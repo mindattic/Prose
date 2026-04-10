@@ -1,0 +1,46 @@
+{
+  "id": "c7190f60e5c058ea75dfb45d12192c6b",
+  "name": "Zheng-Dao Heavy Industries Mass Driver MD-10 'Trebuchet'",
+  "type": "weapon",
+  "aliases": [
+    "Trebuchet",
+    "MD-10",
+    "Mass Driver",
+    "The Siege Engine"
+  ],
+  "category": "exotic",
+  "description": "A man-portable electromagnetic mass driver that accelerates a 500-gram steel slug to Mach 3. The Trebuchet is, in essence, a scaled-down naval weapon system — the same magnetic acceleration technology that launches anti-ship projectiles, compressed into a shoulder-fired platform that weighs 25 kg.\n\nZheng-Dao designed the MD-10 for anti-vehicle and anti-structure operations where conventional anti-materiel rifles lack the kinetic energy to defeat hardened targets. The weapon's 500-gram slug delivers approximately 500 kilojoules of kinetic energy on impact — equivalent to a small explosive charge, but delivered as pure physical force. The slug does not explode; it simply transfers its kinetic energy to the target, producing catastrophic structural failure through impact dynamics.\n\nThe Trebuchet's recoil is managed by a magnetic recoil dampening system that distributes the reaction force over 200 milliseconds, reducing felt recoil to manageable levels for a braced operator. Without this system, the weapon's recoil would break the operator's shoulder.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — heavy weapons and electromagnetic accelerator authorization",
+  "base_technologies": [
+    "Man-portable electromagnetic mass acceleration",
+    "Magnetic recoil dampening",
+    "Heavy-slug hypervelocity ballistics"
+  ],
+  "specifications": "caliber: 500-gram steel slug\neffective_range: 100-2,000 meters\nrate_of_fire: 1 round per 30 seconds (manual reload and capacitor recharge)\ncapacity: 1 round (single-shot)\nweight: 25 kg weapon, 8 kg power pack\npower_source: Dorsal fusion cell, 10 shots per cell",
+  "tactical_use": "The Trebuchet is deployed against targets that shrug off conventional anti-materiel weapons — main battle vehicles, reinforced command bunkers, and armored infrastructure. A single MD-10 slug can disable a medium armored vehicle through kinetic shock alone, and the weapon's pure-kinetic nature means it defeats reactive armor that is designed to counter chemical-energy warheads. Operators describe firing the Trebuchet as 'throwing a building at someone' — the slug's mass and velocity create an impact that nothing survives.",
+  "cultural_context": "The MD-10 occupies a unique niche as a man-portable weapon that delivers vehicle-grade destructive force. In GLMZ's military culture, Trebuchet operators are regarded with a mixture of respect and pity — respect for the devastating capability they bring to a fight, and pity for the physical toll of carrying and operating a 25-kilogram weapon that punishes the body even with magnetic recoil dampening. Veterans of MD-10 operations report chronic shoulder and spinal injuries.",
+  "known_users": [
+    "Zheng-Dao anti-vehicle warfare teams",
+    "Heavy weapons specialists"
+  ],
+  "story_hooks": [
+    "A Trebuchet slug was found embedded in the foundation of a building — fired from ground level, it punched through the entire structure and buried itself in the earth beneath. The building is now structurally compromised, and the residents are refusing to evacuate because they have nowhere to go.",
+    "A black-market armorer has modified an MD-10 to fire shaped projectiles instead of solid slugs — the modified rounds mushroom on impact, creating a wider damage radius at the cost of penetration. The modification turns a precision anti-vehicle weapon into a terror weapon."
+  ],
+  "ammunition_type": [
+    "500-gram steel slug"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "mass-driver",
+    "electromagnetic",
+    "anti-vehicle",
+    "heavy",
+    "tier 5"
+  ],
+  "physical_description": "The Trebuchet is a brutalist block of burnished steel and carbon composite, roughly the size of a rifle but substantially heavier and more angular. Its barrel is a dark matte cylinder ringed with cooling vanes, while the stock is reinforced polymer scarred from field use. A thick capacitor pack dominates the rear, its surface etched with fading Zheng-Dao ideograms and warning labels in three languages.",
+  "visual_prompt": "man-portable electromagnetic mass driver, shoulder-fired weapon, dark matte steel barrel with cooling fins, reinforced polymer stock, capacitor pack, industrial brutalist design, gritty neo-noir, worn tactical hardware, product photography, rain-slicked metal, neon reflection on steel, dark background, detailed weathering, 25kg military weapon system"
+}

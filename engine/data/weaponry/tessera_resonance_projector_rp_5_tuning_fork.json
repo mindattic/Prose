@@ -1,0 +1,46 @@
+{
+  "id": "ad79fa04d1706ecebf565620206e81ee",
+  "name": "Tessera Resonance Projector RP-5 'Tuning Fork'",
+  "type": "weapon",
+  "aliases": [
+    "Tuning Fork",
+    "RP-5",
+    "Resonance Projector",
+    "The Hum"
+  ],
+  "category": "exotic",
+  "description": "A sonic weapon that projects a focused infrasonic beam capable of inducing resonance in solid structures, organic tissue, and cybernetic implants. The RP-5 fires a directed sound pulse at frequencies between 7-18 Hz — below the threshold of human hearing but within the range that causes involuntary physiological responses including nausea, disorientation, bowel disruption, and panic.\n\nTessera developed the Resonance Projector as a crowd-control tool, but its applications have expanded far beyond non-lethal suppression. At maximum power, the RP-5's infrasonic beam can induce structural resonance in buildings, causing micro-fractures that accumulate into catastrophic failure over sustained exposure. Against personnel, high-power settings can rupture blood vessels, dislodge retinas, and stop hearts.\n\nThe weapon is invisible and nearly silent — targets experience its effects without understanding their source. This makes the Resonance Projector uniquely terrifying. Victims feel their bodies betraying them, their organs vibrating, their vision blurring, with no visible attacker and no audible weapon.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Non-lethal classification at low power; Military restricted at full power",
+  "base_technologies": [
+    "Directed infrasonic beam generation",
+    "Variable-frequency resonance targeting",
+    "Sub-audible sonic weapon engineering"
+  ],
+  "specifications": "caliber: N/A — focused infrasonic beam\neffective_range: 10-300 meters\nrate_of_fire: Continuous beam, adjustable power\ncapacity: N/A — limited by power supply\nweight: 8.4 kg\npower_source: Integrated power cell, 30 minutes continuous at full power",
+  "tactical_use": "The Tuning Fork is deployed for area denial, crowd dispersal, and non-lethal incapacitation at low power settings. At full power, it becomes a lethal weapon that kills without leaving ballistic evidence. Intelligence operatives have used the RP-5 to induce 'natural' deaths — heart failure, stroke, aneurysm — that pass autopsy examination unless the examiner specifically tests for resonance damage to tissue. The weapon's dual-use nature makes it politically versatile — the same tool that disperses a protest at low power can assassinate a dissident at full power.",
+  "cultural_context": "The existence of sonic weapons has created a new form of paranoia in GLMZ. When people feel unexplained nausea, dizziness, or panic, they wonder if they are being targeted by a weapon they cannot see or hear. This phenomenon — called 'the hum' in popular culture — has become a catch-all explanation for everything from genuine weapon use to psychosomatic symptoms. Tessera neither confirms nor denies which incidents involve their technology.",
+  "known_users": [
+    "Tessera crowd management division",
+    "Corporate intelligence services"
+  ],
+  "story_hooks": [
+    "Residents of a Tier 2 block have been experiencing chronic nausea, insomnia, and nosebleeds for weeks. They believe they are being targeted by a sonic weapon, but no device has been found. The symptoms are real — the cause could be an RP-5, industrial equipment, or something else entirely.",
+    "A Tessera engineer has leaked specifications for an RP-5 variant tuned to the resonant frequency of specific cyberware models. The weapon would selectively destroy augmentations without harming organic tissue — or it would, if the frequency targeting were precise enough."
+  ],
+  "ammunition_type": [
+    "Directed infrasonic pulse"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "sonic",
+    "infrasonic",
+    "non-lethal",
+    "crowd-control",
+    "tier 4"
+  ],
+  "physical_description": "The RP-5 resembles a reinforced acoustic cannon mounted on a rifle stock—a matte-black titanium barrel assembly, scuffed and patched with industrial tape, feeds into a resonance chamber housing visible through a scratched polycarbonate window. The weapon's grip is wrapped in worn synthetic leather, and a battered analog frequency dial sits where a traditional sight would be, its markings half-worn away. Cooling vents run along the barrel, perpetually weeping condensation.",
+  "visual_prompt": "tactical sonic weapon, infrasonic projector, gritty cyberpunk, worn matte-black titanium and polycarbonate, analog frequency dial, industrial tape patches, product photography, dark studio background, neon rim light, detailed weathering, near-future military hardware, neo-noir aesthetic, rain-slicked metal, professional gear shot"
+}

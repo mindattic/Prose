@@ -1,0 +1,42 @@
+{
+  "id": "a3b69f89cae28a5e7dd9d2fd22957845",
+  "name": "Meridian Audio Concepts SirenSphere S-7 'Dome'",
+  "type": "weapon",
+  "aliases": [
+    "Dome",
+    "S-7",
+    "Sound Cage",
+    "The Bubble"
+  ],
+  "category": "self_defense",
+  "description": "A throwable sonic deterrent that creates a spherical zone of intolerable sound when deployed. The S-7 is a 6-centimeter rubberized sphere containing a multi-directional speaker array powered by a high-density capacitor. When armed and thrown, impact sensors activate the device on landing, generating a 155-decibel omni-directional sonic field within a three-meter radius. The sound profile cycles through twelve frequencies specifically selected to cause maximum discomfort across different hearing ranges, including frequencies that resonate painfully with common cochlear implant models.\n\nMeridian Audio Concepts developed the S-7 as a 'drop and run' deterrent — the user throws the device at or near the threat, and the resulting wall of sound creates an impassable zone of pain while the user escapes in the opposite direction. The sphere operates for forty-five seconds before the capacitor depletes, after which the device is inert and non-recoverable. At Φ85 per unit, the S-7 is a single-use investment, but repeat customers are common enough that Meridian sells them in packs of three.\n\nThe S-7's impact on augmented individuals with cochlear implants or audio-processing cyberware is disproportionately severe — the resonance frequencies can cause feedback loops in audio hardware that result in incapacitating pain well beyond the physical sound's effect. This has led to complaints from augmented communities that the S-7 is discriminatory in its design.",
+  "manufacturer": "MERIDIAN AUDIO CONCEPTS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Multi-directional speaker array miniaturization",
+    "Impact-activated deployment",
+    "Augmentation-resonant frequency cycling"
+  ],
+  "specifications": "output: 155 dB within 3 meter radius\nfrequency cycling: 12 targeted frequencies\nactivation: impact sensor on landing\nduration: 45 seconds\nweight: 95 g\ndiameter: 6 cm\ncost: Φ85 (single), Φ220 (3-pack)\nreusable: no — single deployment",
+  "tactical_use": "Arm by twisting the top hemisphere 90 degrees, then throw at the ground near the threat. The impact sensor triggers on any surface contact greater than 2G, so a firm toss to the ground is sufficient. Move away from the device before activation — the 155 dB output is harmful to the user within three meters. The S-7 is particularly effective in enclosed spaces where the sound reflects and amplifies. In open spaces, the effective radius may be slightly reduced.",
+  "cultural_context": "The S-7 has found a niche as the preferred deterrent for people who don't trust their aim with sprays or their nerve with direct confrontation. Throwing something is intuitive and doesn't require pointing at an attacker. Meridian Audio Concepts leans into this psychology with marketing that shows ordinary people — commuters, parents, night-shift workers — deploying the S-7 without breaking stride. The product's augmentation-resonance issue has made it controversial, with some arguing it's a feature and others calling it a design flaw that disproportionately harms the aug-dependent.",
+  "known_users": [],
+  "story_hooks": [
+    "A street gang has weaponized the S-7 by deploying dozens simultaneously in enclosed transit stations — the overlapping sonic fields create conditions so severe that even filtered security forces cannot enter, allowing the gang to operate freely for the forty-five-second window.",
+    "Meridian Audio Concepts is under investigation after a deaf individual with cochlear implants suffered permanent implant damage from an S-7 deployed by a panicking bystander — the device's aug-resonance feature is being called an accessibility rights violation."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "sonic",
+    "throwable",
+    "single_use",
+    "area_denial",
+    "tier_2"
+  ],
+  "physical_description": "A scuffed rubberized sphere roughly the size of a racquetball, its matte black surface webbed with stress cracks and abraded patches revealing dull gray composite underneath. A recessed pressure plate sits flush on one hemisphere, surrounded by micro-perforations where the speaker array vents sound. The device feels heavier than it looks, packed tight with capacitor weight.",
+  "visual_prompt": "rubberized black sphere sonic grenade, stress cracks and wear marks, recessed pressure plate, speaker array perforations, heavy industrial product photography, gritty neo-noir aesthetic, dark studio background, harsh side lighting, shallow depth of field, detailed texture, cyberpunk tech, worn matte finish, 35mm film grain"
+}

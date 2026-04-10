@@ -1,0 +1,61 @@
+{
+  "id": "14df5f3628215265b1714a8923c5ae8a",
+  "name": "Cezar Watanabe-Gyasi",
+  "type": "character",
+  "aliases": [
+    "The Adjuster",
+    "Numbers"
+  ],
+  "role": "Private Investigator",
+  "description": "Cezar Watanabe-Gyasi is the PI that fraud investigators dream of and fraudsters have nightmares about — a methodical, meticulous, mathematically minded investigator who specializes in the art of proving that the numbers don't lie, even when people do.\n\nHis professional life is insurance fraud. He works on retainer for three of GLMZ's largest insurance underwriters and two corporate risk assessment firms, investigating claims that statistical analysis has flagged as potentially fraudulent. His cases range from individual claimants faking cyberware injuries to elaborate multi-year fraud operations involving dozens of participants and millions of Quanta. He approaches every case with the same patient methodology: gather the numbers, analyze the patterns, find the anomaly, prove the fraud.\n\nThe mundanity of his work is his greatest asset. Nobody pays attention to the insurance investigator. He moves through corporate offices, medical facilities, repair shops, and financial institutions with the invisibility of someone who belongs everywhere and nowhere. His interviews are so bland that subjects relax and contradict themselves. His reports are so thorough that legal challenges are futile. He is not exciting, not dramatic, and not interested in being either. He is simply very, very good at mathematics, and in a city built on financial transactions, mathematics is power.",
+  "affiliation": "Retained by three insurance underwriters and two corporate risk assessment firms",
+  "tier": "Tier 3",
+  "location": "A boring office in Glassway designed to be forgettable — beige walls, standard furniture, nothing that reveals personality",
+  "specialization": "Insurance fraud investigation and financial crime analysis",
+  "methods": [
+    "Statistical analysis of claim patterns to identify anomalies",
+    "Forensic accounting — following money through complex financial structures",
+    "Scene reconstruction — determining whether an incident matches the filed claim",
+    "Behavioral analysis of claimants using standardized interview protocols",
+    "Cross-referencing claim histories across multiple insurance providers to identify serial fraudsters"
+  ],
+  "notable_cases": [
+    "Identified a fraud ring that had filed Φ47 million in false cyberware malfunction claims across twelve insurance providers over four years",
+    "Proved that a 'destroyed' warehouse full of pharmaceutical inventory had actually been emptied and sold on the black market before a conveniently timed fire",
+    "Exposed a doctor who was performing unnecessary surgeries and filing insurance claims for procedures that never happened — affecting over 300 patients"
+  ],
+  "equipment": [
+    "Custom financial analysis software that can process millions of transactions and flag anomalies",
+    "Forensic scene reconstruction tools — scanners, measurement devices, material analysis equipment",
+    "Database access to major insurance claim repositories — legitimate, paid for by retainer clients",
+    "A deliberately unremarkable appearance — he can enter any corporate environment without being noticed",
+    "Voice stress analysis software integrated into his BCI — detects deception during interviews"
+  ],
+  "personality": "Cezar is Romanian-Japanese-Ghanaian, forty-two years old, average height, average build, average face — a man engineered by genetics and choice to be forgettable, and he has weaponized that forgettability into a career. He is methodical, patient, and finds genuine pleasure in the mathematics of fraud — the patterns, the anomalies, the moment when numbers that are supposed to add up don't. He is the least dramatic PI in GLMZ and is fine with that. His cases don't involve shootouts or car chases; they involve spreadsheets and depositions and the quiet satisfaction of proving that someone lied with numbers. He has no enemies because nobody considers him a threat until it's too late.",
+  "relationships": [
+    {
+      "name": "Dr. Solene Gutierrez-Appiah",
+      "type": "consulting expert",
+      "description": "A medical professional he consults on healthcare fraud cases — provides the clinical knowledge he lacks"
+    },
+    {
+      "name": "Thandiwe Karlsen-Boateng",
+      "type": "occasional collaborator",
+      "description": "Refers corporate fraud cases down to Cezar when they're beneath her tier — he refers corporate espionage up to her when they're above his"
+    }
+  ],
+  "story_hooks": [
+    "A routine insurance fraud investigation uncovers a financial pattern so large and so systemic that it suggests one of the insurance companies he works for is itself the fraud",
+    "A fraudster he exposed five years ago has rebuilt their operation on a scale that makes the original look like practice — and they've designed it specifically to be invisible to his methods",
+    "Cezar discovers that the statistical analysis tools he's been using for a decade contain a hidden bias that has caused him to miss a specific type of fraud — and now he has to determine how many cases he got wrong"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "insurance_fraud",
+    "financial",
+    "glassway",
+    "forensic_accounting",
+    "human"
+  ]
+}

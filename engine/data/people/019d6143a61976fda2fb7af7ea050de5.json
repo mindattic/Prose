@@ -155,8 +155,8 @@
       "unlicensed",
       "expelled",
       "young",
-      "Old-Harbor",
-      "Gate-9",
+      "old-harbor",
+      "gate-9",
       "tactile-augmented",
       "sleep-deprived"
     ]
@@ -283,7 +283,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

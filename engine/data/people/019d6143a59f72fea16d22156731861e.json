@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Archivist",
-      "Community Elder",
-      "Information Broker",
-      "Keeper of Secrets",
-      "ELF Devotee"
+      "archivist",
+      "community elder",
+      "information broker",
+      "keeper of secrets",
+      "elf devotee"
     ]
   },
   "behavioral": {
@@ -280,7 +280,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

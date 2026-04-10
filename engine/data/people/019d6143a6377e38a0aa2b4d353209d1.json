@@ -94,11 +94,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Midwife",
-      "Community Advocate",
-      "Reproductive Health",
-      "Information Hub",
-      "Regulatory Grey Zone"
+      "midwife",
+      "community advocate",
+      "reproductive health",
+      "information hub",
+      "regulatory grey zone"
     ]
   },
   "behavioral": {
@@ -273,7 +273,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Craftsperson",
-      "Guarded",
-      "Street Competent",
-      "Hidden Depth",
-      "Mechanical Savant"
+      "craftsperson",
+      "guarded",
+      "street competent",
+      "hidden depth",
+      "mechanical savant"
     ]
   },
   "behavioral": {
@@ -283,7 +283,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Southeast Asian": {

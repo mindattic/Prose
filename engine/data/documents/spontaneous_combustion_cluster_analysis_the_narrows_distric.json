@@ -1,0 +1,29 @@
+{
+  "id": "658516ae07105e52d67ccd73c896b5ff",
+  "name": "Spontaneous Combustion Cluster Analysis: The Narrows District",
+  "type": "document",
+  "document_type": "investigation_report",
+  "author": "GLMZ Fire Investigation Bureau",
+  "date": "2199-07-03",
+  "classification": "restricted",
+  "description": "Between January and June 2199, the Narrows District experienced fourteen incidents of spontaneous combustion affecting both organic and inorganic materials. Seven involved human subjects. All seven survived, though with significant burns. The remaining seven involved structural materials, furniture, electronics, and in one case a parked vehicle.\n\nStatistical analysis rules out coincidence. The probability of fourteen spontaneous combustion events occurring within a 1.2 square kilometer area over six months, given baseline rates, is approximately one in 10^19. The events cluster geographically around a three-block radius centered on the intersection of Reclamation Avenue and Pipe Street, and temporally around the hours of 03:00 to 05:00 — the period of lowest human activity in the district.\n\nInvestigation found no common accelerant, no common ignition source, and no common environmental factor among the fourteen incidents. The human subjects shared no employer, no social connections, no medical provider, and no genetic markers beyond the baseline Narrows population. The only common factor identified is proximity — all fourteen events occurred within 400 meters of a sealed maintenance access point leading to Underworld Level B12.\n\nThermal analysis of the burn patterns reveals a consistent anomaly: the ignition point in every case was internal. Materials burned from the inside out. In the human cases, burns originated in deep tissue and propagated outward — the inverse of normal combustion. Three of the human victims had BCI implants, and in all three cases, the implant housing showed signs of extreme heat exposure consistent with the implant being the ignition origin, despite no electrical malfunction being detected.\n\nThe investigation remains open. A proposal to unseal the B12 access point and investigate the Underworld connection was vetoed by the Narrows District Council on grounds of cost. Fire Marshal Priya Volkov-Osei has requested the veto be overridden. Her request is pending.",
+  "related_entities": [
+    "The Narrows",
+    "GLMZ Fire Investigation Bureau",
+    "Underworld"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "What is causing internal ignition?",
+    "Connection between BCIs and the combustion events",
+    "What is behind the sealed B12 access point?"
+  ],
+  "tags": [
+    "paranormal",
+    "combustion",
+    "narrows",
+    "investigation",
+    "BCI",
+    "underworld"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "6d5aaf7d951ac72f25669ad3a619fb63",
+  "type": "place",
+  "name": "The Gravel Pit",
+  "aliases": [
+    "Gravel",
+    "The Pit",
+    "GP"
+  ],
+  "description": "The Gravel Pit occupies the basement of a condemned residential tower in Pilsen Slab, accessible through a service entrance that hasn't had a functioning lock since 2187. The ceiling is low enough that anyone over 180 centimeters learns to duck within the first visit or wears the lesson on their forehead. The bar is a sheet of industrial plating balanced on cinder blocks. The drinks are measured in confidence rather than precision, and the house pour is a grain alcohol blend that regulars call Pavement — not because of the taste, which is worse than pavement, but because of what it does to you on the way home.\n\nWhat makes the Gravel Pit essential is Maret. Maret Johansson-Afolabi tends bar six nights a week and has done so for eleven years. She is sixty-three years old, built like a dock pylon, and knows more about the freelance economy of southern Meridian than any fixer operating above Tier 2. She doesn't sell information — she trades it, and only to people she's decided deserve it. The evaluation process is opaque. Some runners have been coming to the Pit for years and Maret still treats them like strangers. Others walk in once and leave with a contract. Her judgment is personal, idiosyncratic, and almost never wrong.\n\nThe back corner of the Pit, behind a curtain made from welded-together pull tabs, is where the real business happens. It's not a back room — it's a back corner with a curtain, which is the Shelf version of a back room. Fixers meet runners here. Debts get settled. Occasionally someone doesn't walk out, and Maret adds another pull tab to the curtain. The Gravel Pit doesn't pretend to be anything. It is a hole in the ground where dangerous people drink cheap poison and make arrangements that keep the Shelf's economy turning. It is honest about this in a way that more expensive establishments cannot afford to be.",
+  "atmosphere": {
+    "sights": [
+      "Low concrete ceiling stained with decades of condensation and smoke residue",
+      "The bar — industrial plating on cinder blocks, surprisingly level",
+      "Maret behind the bar, arms crossed, evaluating every new face with surgical patience",
+      "The pull-tab curtain glinting in the dim light, each tab a story nobody tells"
+    ],
+    "sounds": [
+      "The hum of the condemned building's residual power grid, irregular and threatening",
+      "Glasses on metal — no wood surfaces in the Pit, everything rings",
+      "Conversations held at volumes calibrated to not carry past the speaker's table",
+      "Maret's laugh, rare, startling, genuinely warm when it happens"
+    ],
+    "smells": [
+      "Pavement — the house pour, sharp enough to sting the eyes from across the bar",
+      "Concrete dust that never settles, a permanent mineral taste in the air",
+      "Sweat and ozone from cheap cyberware running hot in a poorly ventilated room"
+    ],
+    "feel": "Dangerous and honest. The Gravel Pit doesn't perform edge — it is edge. Everyone here is armed, broke, working, or some combination. The violence is real but rare, because Maret doesn't tolerate it and nobody wants to lose access to her network.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "Pilsen Slab",
+      "Old Harbor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Shelf-tier freelancers looking for work",
+    "Fixers who operate below the Circuit's notice",
+    "Off-duty dock workers from Old Harbor",
+    "Runners between jobs, stretching their last Φ"
+  ],
+  "notable_locations": [
+    "The pull-tab curtain corner — where contracts are made",
+    "Maret's stool behind the bar — the only comfortable seat in the building"
+  ],
+  "coordinates": {
+    "lat": 41.8563,
+    "lng": -87.6625
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 1",
+    "shelf",
+    "pilsen_slab",
+    "fixer",
+    "contracts"
+  ],
+  "related_entities": [
+    "Maret Johansson-Afolabi",
+    "Old Harbor",
+    "Pilsen Slab"
+  ]
+}

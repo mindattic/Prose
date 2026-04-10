@@ -32,10 +32,15 @@
     "chase",
     "food",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "electric",
+    "manual",
+    "ground"
   ],
   "parent_corponation": "Ringo Corponation",
   "related_entities": [
     "Ringo Corponation"
-  ]
+  ],
+  "physical_description": "A boxy, reinforced polymer cart roughly the size of a food truck, painted in Ringo's signature corporate gray with faded neon accent strips along the edges. The serving counter folds out from the front with worn stainless steel surfaces, while a compact electric motor hums beneath a weathered chassis scarred by years of street-level use. Rain-slicked surfaces reflect the glow of its integrated LED menu display, and a small antenna protrudes from the roof—constantly syncing transaction data back to Ringo's servers.",
+  "visual_prompt": "gritty motorized vendor cart, corporate gray polymer chassis, worn stainless steel serving counter, faded neon accent strips, rain-slicked surfaces, compact electric motor, data antenna, neo-noir street commerce, cyberpunk aesthetics, detailed product photography, dark rainy background, industrial decay, worn metal and plastic materials, moody neon reflection"
 }

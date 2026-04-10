@@ -1,0 +1,40 @@
+{
+  "name": "Serathex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "cooldown",
+    "the muzzle",
+    "still"
+  ],
+  "category": "emotional_regulator",
+  "subcategory": "anger_suppressor",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Serathex is a targeted limbic-cortical modulator that intercepts anger cascades before they reach behavioral expression, reducing aggression, irritability, and rage responses without the sedative profile of older antipsychotics. It is widely prescribed for anger disorder diagnoses, mandated for certain categories of violent offenders under community supervision, and quietly distributed through workplace wellness programs in high-stress environments where management considers employee anger a liability.",
+  "method_of_use": "oral",
+  "effects": [
+    "Suppression of anger escalation and aggressive impulses",
+    "Maintained cognitive function and emotional baseline",
+    "Reduced irritability and frustration response",
+    "Improved perceived patience and interpersonal tolerance",
+    "Mild mood elevation at standard doses"
+  ],
+  "side_effects": [
+    "Suppression of protective anger — users may fail to defend themselves or others",
+    "Frustration still accumulates internally without behavioral release — can manifest as depression",
+    "Court-mandated users often feel the drug is used to make them compliant rather than healthy",
+    "Withdrawal anger can be significantly more intense than pre-treatment baseline",
+    "Long-term use associated with emotional passivity and reduced self-advocacy",
+    "Frequently prescribed to Shelf residents by wellness programs as a social control measure"
+  ],
+  "duration": "10-12 hours",
+  "addiction_risk": "low",
+  "tier_availability": "All tiers",
+  "legality": "prescription",
+  "street_price": "Φ22 per tablet",
+  "cultural_context": "Serathex is politically charged in GLMZ. Tier 4 and 5 users take it voluntarily to manage executive stress and maintain professional composure. Tier 1 and 2 residents are frequently prescribed it under coercive conditions — community supervision requirements, workplace wellness mandates, Shelf clinic protocols. Shelf activists call it 'the muzzle' and argue that the anger being suppressed is legitimate political anger about systemic conditions. Novafold's marketing is conspicuously silent about this dimension of use.",
+  "story_hooks": [
+    "A community organizer on mandatory Serathex under a supervision order discovers the drug is suppressing not just their anger but their ability to feel outrage at injustice — going off it is a violation of their terms, but staying on it feels like a kind of surrender",
+    "A Novafold internal review shows that Serathex is prescribed at three times the rate in Tier 1-2 zip codes compared to Tier 3-4, despite no difference in diagnosed anger disorders — someone leaks the data",
+    "A Tier 4 executive secretly stops taking their voluntary Serathex prescription and realizes, for the first time in years, how angry they actually are at their employer"
+  ]
+}

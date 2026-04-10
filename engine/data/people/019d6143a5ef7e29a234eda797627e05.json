@@ -125,14 +125,16 @@
   "related_entities": [],
   "genetic_ancestry": {
     "East Asian": 36.6,
-    "Sub-Saharan African": 22.0,
+    "Sub-Saharan African": 22,
     "Northern European": 19.8,
     "Southeast Asian": 18.6,
-    "Hispanic/Latin American": 3.0
+    "Hispanic/Latin American": 3
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {
@@ -148,7 +150,7 @@
     },
     "Sub-Saharan African": {
       "East African": {
-        "Kenyan": 22.0
+        "Kenyan": 22
       }
     },
     "Northern European": {

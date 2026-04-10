@@ -1,0 +1,80 @@
+{
+  "id": "2eb5edcd5227779f12751148e4ba56dd",
+  "type": "place",
+  "name": "The Meridian Fold",
+  "aliases": [
+    "AZ-4",
+    "The Fold",
+    "The Big One"
+  ],
+  "description": "The Meridian Fold is the largest of the Lost Blocks, encompassing approximately six square blocks in the heart of the Circuit District. It is named by Dr. Sato Mbeki-Larsen, whose Theory of Urban Cysts was inspired in part by the Fold's sheer scale — this is not a hidden courtyard or a sealed alley, this is a significant piece of urban territory that is visible from orbit and absent from the ground. The Fold contains an estimated 18 buildings, a network of streets, two plazas, and what satellite imagery suggests is a small market or commercial district. It is the most complex, the most populated, and the most active of all the Lost Blocks. It is also the one that is growing.\n\nThe Meridian Fold became inaccessible in 2207 — the earliest of the confirmed Lost Blocks. For nearly two decades, it has existed as a visible, thermally active, power-consuming ghost neighborhood in the center of the district. Thermal imaging shows approximately 120 heat signatures — the largest concentration of any Lost Block — engaged in daily patterns that suggest not just habitation but community. Signatures congregate in the plazas. Groups move together. There are patterns that look like social behavior, like commerce, like daily life conducted at a scale that implies organization.\n\nBut the Fold is growing. Dr. Anand-Petrov's decadal analysis shows approximately 7% expansion — the highest rate of any Lost Block. The growth follows the street grid, extending along existing axes. A building that was demonstrably outside the Fold in 2224 — a four-story commercial building at the corner of Meridian Avenue and Circuit Street, occupied by a data storage firm — is now inside it. The building's former occupants describe a sudden transition: they arrived at work on a Monday morning and the entrance was a wall. Their equipment, their files, their personal belongings — all inside, all visible on satellite, all unreachable. The insurance claim is still in litigation. The building is still inside the Fold, its windows visible from orbit, its doors accessible to no one.\n\nDr. Mbeki-Larsen's model predicts that the Meridian Fold is in an early acceleration phase. If the model is correct, the growth rate will increase before stabilizing at a boundary that the math defines but that no one wants to calculate. The Fold is the Lost Block that forces the question: what happens when the anomaly stops being something you can ignore? What happens when it swallows your office, your apartment, your street? What happens when it stops being a curiosity and starts being a crisis?",
+  "atmosphere": {
+    "sights": [
+      "From satellite: six blocks of dense urban space — buildings, streets, two plazas, what appears to be a market area with stalls or tables",
+      "From street level: walls. Continuous, unbroken, unremarkable walls surrounding six blocks of absent city",
+      "The absorbed building at Meridian and Circuit — windows visible from certain vantage points above, dark at street level",
+      "Thermal imaging showing 120 signatures in complex social patterns — groups, gatherings, movement that implies community"
+    ],
+    "sounds": [
+      "The surrounding Circuit District is a busy commercial zone — the ambient noise masks any sound that might escape the Fold",
+      "Some workers in buildings adjacent to the Fold's perimeter report feeling low-frequency vibration through shared walls — not heard, felt"
+    ],
+    "smells": [
+      "Faintly, and only at certain times — usually late evening — a smell of cooking from the Fold's perimeter. Spiced, unfamiliar, gone before you're sure it was there.",
+      "The commercial bustle of the Circuit District overwhelms any consistent olfactory signal"
+    ],
+    "feel": "The Meridian Fold feels like a presence. The other Lost Blocks feel like absences — spaces that should be there and aren't. The Fold feels like something that is there, that is large, that is active, and that is growing. Standing at its perimeter wall, you don't feel the 'forgotten memory' of Linden Block or the calm of the Caulfield Pocket. You feel proximity to something that has mass and momentum. The Fold is not hiding. The Fold is expanding. The Fold has plans.",
+    "tags": []
+  },
+  "demographics": "Approximately 120 individuals based on thermal imaging — the largest Lost Block population. Movement patterns suggest organized social structures, commercial activity, and communal gathering. The Shadow Census estimates 30-35 household units.",
+  "economy": "Unknown internally, but the postal service delivers to five addresses within the Fold — the most of any Lost Block. Power consumption is the highest of any Lost Block, consistent with both residential and commercial activity.",
+  "power_structure": "Unknown, but the organized movement patterns visible in thermal imaging suggest some form of governance or coordination.",
+  "dangers": [
+    "Growth — the Fold is expanding at 7% per decade and accelerating. Adjacent properties are at risk of absorption.",
+    "The absorbed data storage building — whoever stored data there has lost physical access to their archives",
+    "Low-frequency vibration felt through shared walls — unknown source, unknown effect",
+    "17 of 23 'navigation ghost' incidents occurred near the Fold — it is the most active perimeter"
+  ],
+  "opportunities": [
+    "Five active postal delivery addresses — the most communication channels of any Lost Block",
+    "The absorbed building's former occupants can describe the transition in detail",
+    "The Fold's growth makes it the best candidate for studying the expansion mechanism",
+    "Dr. Mbeki-Larsen's model makes testable predictions about the Fold's future boundary"
+  ],
+  "story_hooks": [
+    "The data storage building contained client archives. Someone important stored something they can't afford to lose in a building the city swallowed. They want it back.",
+    "The Fold's market area shows activity consistent with commerce. Who is buying? Who is selling? What is the currency?",
+    "A building on the Fold's predicted expansion boundary gets a new tenant who refuses to leave despite warnings. They want to be absorbed. They want to get in."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Meridian Avenue (Circuit District — northern perimeter)",
+      "Circuit Street (Circuit District — western perimeter)",
+      "Multiple Circuit District commercial and residential blocks"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Approximately 120 thermal signatures in organized social patterns",
+    "Postal delivery drones servicing five active addresses",
+    "Dr. Sato Mbeki-Larsen's research team monitoring growth",
+    "Insurance adjusters from the absorbed building's coverage provider"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 46.82,
+    "lng": -87.87,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "lost_block",
+    "spatial_anomaly",
+    "new_weird",
+    "inexplicable",
+    "meridian_88",
+    "circuit_district",
+    "growing"
+  ]
+}

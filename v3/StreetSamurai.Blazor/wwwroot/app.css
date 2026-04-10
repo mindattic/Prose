@@ -32,7 +32,7 @@ html, body {
 .card-header { padding: 10px; }
 
 /* Icon gutter inside buttons — skip icon-only buttons */
-.btn i.bi { margin-right: 6px; }
+.btn i.bi { margin-right: 5px; }
 .btn i.bi:only-child, .btn-sq i.bi, .tb i.bi { margin-right: 0; }
 
 /* Right-align action button columns */
@@ -180,6 +180,173 @@ h1:focus {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
+}
+
+/* ── XRef Links ─────────────────────────────────────────────────── */
+.xref-link {
+    color: #58a6ff;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(88,166,255,0.4);
+    transition: color 0.1s, border-color 0.1s;
+}
+.xref-link:hover { color: #79c0ff; border-bottom-color: #79c0ff; text-decoration: none; }
+.xref-link.xref-character  { color: #79c0ff; }
+.xref-link.xref-synthetic  { color: #d2a8ff; }
+.xref-link.xref-place      { color: #7ee787; }
+.xref-link.xref-faction    { color: #ffa657; }
+.xref-link.xref-corponation { color: #f85149; }
+.xref-link.xref-technology { color: #56d364; }
+.xref-link.xref-vocabulary { color: #e3b341; border-bottom-style: dashed; }
+.xref-link.xref-weapon     { color: #ff7b72; }
+.xref-link.xref-equipment  { color: #aac8f5; }
+.xref-link.xref-cyberware  { color: #d2a8ff; }
+
+/* ── Entity Type Badges ──────────────────────────────────────────── */
+.entity-detail-type-badge,
+.search-result-badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.badge-character  { background: rgba(88,166,255,0.15);  color: #79c0ff;  border: 1px solid rgba(88,166,255,0.3); }
+.badge-synthetic  { background: rgba(210,168,255,0.15); color: #d2a8ff;  border: 1px solid rgba(210,168,255,0.3); }
+.badge-place      { background: rgba(126,231,135,0.15); color: #7ee787;  border: 1px solid rgba(126,231,135,0.3); }
+.badge-faction    { background: rgba(255,166,87,0.15);  color: #ffa657;  border: 1px solid rgba(255,166,87,0.3); }
+.badge-corponation { background: rgba(248,81,73,0.15);  color: #f85149;  border: 1px solid rgba(248,81,73,0.3); }
+.badge-technology { background: rgba(86,211,100,0.15);  color: #56d364;  border: 1px solid rgba(86,211,100,0.3); }
+.badge-vocabulary { background: rgba(227,179,65,0.15);  color: #e3b341;  border: 1px solid rgba(227,179,65,0.3); }
+.badge-weapon     { background: rgba(255,123,114,0.15); color: #ff7b72;  border: 1px solid rgba(255,123,114,0.3); }
+.badge-equipment  { background: rgba(170,200,245,0.15); color: #aac8f5;  border: 1px solid rgba(170,200,245,0.3); }
+.badge-cyberware  { background: rgba(210,168,255,0.15); color: #d2a8ff;  border: 1px solid rgba(210,168,255,0.3); }
+.badge-document   { background: rgba(139,148,158,0.15); color: #8b949e;  border: 1px solid rgba(139,148,158,0.3); }
+
+/* ── XRef Chips ──────────────────────────────────────────────────── */
+.xref-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.xref-chip {
+    display: inline-block; padding: 2px 10px; border-radius: 12px;
+    font-size: 0.75rem; text-decoration: none;
+    color: #58a6ff; background: rgba(88,166,255,0.08);
+    border: 1px solid rgba(88,166,255,0.3);
+    transition: background 0.1s;
+}
+.xref-chip:hover { background: rgba(88,166,255,0.18); text-decoration: none; color: #79c0ff; }
+.xref-chip.xref-character { color: #79c0ff; border-color: rgba(121,192,255,0.3); background: rgba(121,192,255,0.08); }
+.xref-chip.xref-synthetic { color: #d2a8ff; border-color: rgba(210,168,255,0.3); background: rgba(210,168,255,0.08); }
+.xref-chip.xref-place     { color: #7ee787; border-color: rgba(126,231,135,0.3); background: rgba(126,231,135,0.08); }
+.xref-chip.xref-faction   { color: #ffa657; border-color: rgba(255,166,87,0.3);  background: rgba(255,166,87,0.08); }
+.xref-chip.xref-unknown   { color: #8b949e; border-color: rgba(139,148,158,0.3); background: rgba(139,148,158,0.08); }
+
+/* ── Entity Detail Page ──────────────────────────────────────────── */
+.entity-detail-page { max-width: 860px; padding-bottom: 40px; }
+.entity-detail-header {
+    padding-bottom: 16px; margin-bottom: 20px;
+    border-bottom: 1px solid #21262d;
+    display: flex; flex-direction: column; gap: 6px;
+}
+.entity-detail-nav { margin-bottom: 4px; }
+.entity-detail-name { font-size: 1.6rem; font-weight: 700; margin: 0; color: #e6edf3; }
+.entity-detail-subtitle { font-size: 0.85rem; margin-top: 2px; }
+.entity-detail-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.entity-tag {
+    font-size: 0.65rem; padding: 1px 7px;
+    background: #21262d; border-radius: 3px;
+    color: #8b949e; border: 1px solid #30363d;
+}
+.entity-detail-body { display: flex; flex-direction: column; gap: 20px; }
+.entity-section { display: flex; flex-direction: column; gap: 6px; }
+.entity-section-label {
+    font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em; color: #8b949e;
+}
+.entity-section p { margin-bottom: 0.6rem; line-height: 1.65; }
+.entity-meta-row {
+    display: flex; flex-wrap: wrap; gap: 16px;
+    padding: 10px 0;
+    border-top: 1px solid #21262d; border-bottom: 1px solid #21262d;
+}
+.entity-meta-item { display: flex; flex-direction: column; gap: 2px; font-size: 0.85rem; }
+.entity-meta-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: #8b949e; }
+.entity-list { padding-left: 1.2rem; margin: 0; display: flex; flex-direction: column; gap: 5px; }
+.entity-list li { line-height: 1.5; }
+.entity-relationship {
+    padding: 8px 0; border-bottom: 1px solid #21262d;
+    display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline;
+}
+.entity-relationship:last-child { border-bottom: none; }
+.entity-rel-name { font-weight: 600; }
+.entity-rel-type { font-size: 0.75rem; }
+.entity-rel-desc { width: 100%; font-size: 0.85rem; margin-top: 2px; }
+.entity-notable-loc {
+    padding: 8px 10px; background: #161b22;
+    border: 1px solid #21262d; border-radius: 4px; margin-bottom: 6px;
+}
+.entity-example {
+    border-left: 3px solid #30363d; padding-left: 12px;
+    color: #8b949e; font-style: italic; margin: 0;
+}
+
+/* ── Search Overlay ──────────────────────────────────────────────── */
+.search-overlay-backdrop {
+    position: fixed; inset: 0;
+    background: rgba(1,4,9,0.75);
+    backdrop-filter: blur(2px);
+    z-index: 9998;
+}
+.search-overlay-panel {
+    position: fixed; top: 15vh; left: 50%; transform: translateX(-50%);
+    width: min(640px, 90vw); background: #161b22;
+    border: 1px solid #30363d; border-radius: 8px;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+    z-index: 9999; overflow: hidden;
+}
+.search-overlay-input-row {
+    display: flex; align-items: center;
+    padding: 12px 16px; gap: 10px;
+    border-bottom: 1px solid #21262d;
+}
+.search-overlay-icon { color: #8b949e; font-size: 1rem; flex-shrink: 0; }
+.search-overlay-input {
+    flex: 1; background: none; border: none; outline: none;
+    color: #e6edf3; font-size: 1rem; font-family: inherit;
+}
+.search-overlay-input::placeholder { color: #484f58; }
+.search-overlay-clear {
+    background: none; border: none; color: #8b949e;
+    cursor: pointer; padding: 0; line-height: 1; font-size: 1rem; display: flex;
+}
+.search-overlay-clear:hover { color: #e6edf3; }
+.search-overlay-results { max-height: 420px; overflow-y: auto; }
+.search-overlay-result {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px; cursor: pointer; gap: 12px;
+    transition: background 0.05s;
+}
+.search-overlay-result:hover, .search-overlay-result.selected { background: #21262d; }
+.search-result-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.search-result-name {
+    font-size: 0.9rem; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis; color: #e6edf3;
+}
+.search-result-sub {
+    font-size: 0.75rem; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+    flex-shrink: 0; max-width: 220px;
+}
+.search-overlay-footer {
+    padding: 8px 16px; border-top: 1px solid #21262d; font-size: 0.75rem;
+}
+.search-overlay-footer kbd {
+    background: #21262d; border: 1px solid #30363d;
+    border-radius: 3px; padding: 0 4px;
+    font-size: 0.7rem; color: #8b949e;
+}
+.search-overlay-empty, .search-overlay-hint {
+    padding: 24px 16px; text-align: center; font-size: 0.85rem;
 }
 
 /* ── Entity links in rich editor ─────────────────────── */
@@ -333,3 +500,17 @@ textarea.auto-grow {
 
 /* ReadOnly mode: hide New buttons and export buttons across all dictionary pages */
 .readonly-mode .dict-list .btn-outline-danger { display: none !important; }
+/* ── GeoMap entity detail map ─────────────────────────────────────────── */
+.geo-map-container {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+.geo-map-placeholder {
+    padding: 10px 12px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background: #161b22;
+}

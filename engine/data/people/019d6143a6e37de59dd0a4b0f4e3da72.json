@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Artist",
-      "Community Anchor",
-      "Information Node",
-      "Spiritual Practitioner",
-      "Tier 2"
+      "artist",
+      "community anchor",
+      "information node",
+      "spiritual practitioner",
+      "tier 2"
     ]
   },
   "behavioral": {
@@ -266,7 +266,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Pacific Islander": {

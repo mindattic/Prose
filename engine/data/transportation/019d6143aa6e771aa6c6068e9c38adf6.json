@@ -32,10 +32,18 @@
     "food",
     "water",
     "shelf",
-    "tier 1"
+    "tier 1",
+    "ground",
+    "cargo",
+    "electric",
+    "solar",
+    "manual",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
     "The Garden of Wires"
-  ]
+  ],
+  "physical_description": "A compact electric cart with a reinforced aluminum frame, weathered by constant exposure to rain and UV exposure across the rooftops. Its bed is constructed from salvaged composite panels and repurposed cargo netting, stained with soil residue and rust bloom. Solar cells are bolted haphazardly across the top, their efficiency degraded but functional, while the wheels are chunky all-terrain rubber wrapped in friction tape for purchase on wet concrete.",
+  "visual_prompt": "gritty neo-noir rooftop garden cart, weathered aluminum frame, salvaged composite bed, solar panels bolted on top, chunky rubber wheels, soil-stained netting, rust bloom, rain-wet surfaces, detailed product photography, dark moody lighting, industrial decay aesthetic, cyberpunk setting, worn practical technology, close-up focus on construction details"
 }

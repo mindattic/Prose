@@ -1,0 +1,46 @@
+{
+  "id": "32623717d546d968a8db8c696cfb017b",
+  "name": "Vanta Ordnance Nullifier VN-6 'Flatline'",
+  "type": "weapon",
+  "aliases": [
+    "Flatline",
+    "VN-6",
+    "The Eraser",
+    "Zero Line"
+  ],
+  "category": "sniper",
+  "description": "A coilgun sniper rifle that fires magnetically-stabilized ceramic projectiles specifically designed to defeat energy-dispersing armor systems. Standard kinetic rounds lose effectiveness against reactive armor that distributes impact energy across its surface. The Nullifier's ceramic penetrators shatter on contact, converting a single impact point into thousands of micro-fragments that overwhelm the armor's dispersal capacity.\n\nVanta Ordnance is a small firm founded by former Arcturus engineers who believed the defense giant was too conservative in its approach to armor defeat. The VN-6 represents their thesis — that the future of precision weapons lies not in greater velocity but in smarter projectile behavior.\n\nThe Nullifier has found a dedicated following among operators who frequently engage targets wearing next-generation defensive systems. Where a conventional round might be turned by reactive plating, the Flatline's fragmenting ceramic penetrator finds a way through.",
+  "manufacturer": "VANTA ORDNANCE",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — corporate security and military contractors",
+  "base_technologies": [
+    "Coilgun magnetic acceleration",
+    "Fragmenting ceramic penetrator design",
+    "Anti-reactive-armor ballistics"
+  ],
+  "specifications": "caliber: 5mm ceramic fragmenting penetrator\neffective_range: 200-1,800 meters\nrate_of_fire: Semi-automatic, 1 round per 4 seconds\ncapacity: 6-round sealed magazine\nweight: 7.8 kg\npower_source: Internal capacitor bank, 24 shots per charge",
+  "tactical_use": "The Flatline is deployed specifically against targets wearing advanced armor that defeats conventional precision weapons. Operators describe the engagement philosophy as 'cracking the egg' — the ceramic fragmenter's multi-point impact overwhelms armor that was designed to handle single-point kinetic strikes. The weapon is less effective against unarmored targets, as the fragmenting round disperses energy rather than concentrating it.",
+  "cultural_context": "Vanta Ordnance has cultivated a rebellious identity, positioning themselves as innovators challenging Arcturus's dominance. Their marketing materials feature the tagline 'What they defend against, we defeat.' The company's small size means Nullifier production is limited, and wait lists extend six months or more. Operators who carry a Flatline are making a statement about both their threat assessment and their professional network.",
+  "known_users": [
+    "Vanta Ordnance demonstration team",
+    "Independent armor-defeat specialists"
+  ],
+  "story_hooks": [
+    "Arcturus has filed a corporate espionage claim against Vanta Ordnance, alleging that the Nullifier's coilgun technology was stolen from an abandoned Arcturus project. Vanta's founders say they developed it independently — the truth could determine the company's survival.",
+    "A Flatline round defeated a new prototype armor system during a live demonstration, embarrassing the armor manufacturer in front of their biggest client. Someone at Vanta had inside information about the armor's dispersal frequency."
+  ],
+  "ammunition_type": [
+    "5mm ceramic fragmenting penetrator"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "coilgun",
+    "anti-armor",
+    "ceramic",
+    "tier 4",
+    "boutique"
+  ],
+  "physical_description": "The VN-6 is a skeletal affair of matte gunmetal and carbon composite, its barrel a precisely machined tube of darkened steel that seems to absorb light. The coil housing runs the length of the receiver in visible rings of copper and ceramic, scarred from field maintenance and the heat cycles of repeated firing. Its stock is wrapped in worn synthetic grip tape, and the charging mechanism sits proud and utilitarian—no frills, just the brutal geometry of a tool designed to punch through what shouldn't be punched through.",
+  "visual_prompt": "matte gunmetal sniper rifle coilgun, carbon composite stock, visible copper coil housing, darkened steel barrel, worn synthetic grip tape, technical product photography, neo-noir gritty aesthetic, industrial precision weapon, detailed mechanical components, rain-slicked metal, dark studio background, moody lighting, worn near-future tech"
+}

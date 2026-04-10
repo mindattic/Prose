@@ -1,0 +1,46 @@
+{
+  "id": "05894b609203e41828c91b41da5efea4",
+  "name": "Tessera TK-9 Proteus 'Shapeshifter'",
+  "type": "weapon",
+  "aliases": [
+    "Shapeshifter",
+    "Proteus",
+    "TK-9"
+  ],
+  "category": "pistol",
+  "description": "The Tessera TK-9 Proteus is a modular semi-automatic pistol system chambered in 9x19mm, designed around a serialized fire control unit that can be dropped into multiple frame sizes and configurations. A single TK-9 purchase includes a compact carry frame, a full-size duty frame, and a subcompact backup frame — all accepting the same trigger assembly, magazine release, and fire control group.\n\nThe modularity of the Proteus extends to its barrel system. Quick-change barrels in standard, threaded, and extended lengths snap into any frame configuration without tools, allowing an operator to transform the weapon's profile in under thirty seconds. Tessera markets this as 'mission-adaptive architecture' — a single registered weapon that fills three roles.\n\nThe Shapeshifter has found particular favor among operators who cross between district tiers regularly and need to adjust their visible armament to match local customs and security expectations. A compact Proteus passes through Mid-tier checkpoints unremarked; the same fire control unit in a full-size frame with an extended barrel becomes a credible duty weapon for higher-threat environments.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — single registration covers all configurations",
+  "base_technologies": [
+    "Modular fire control unit",
+    "Quick-change barrel system",
+    "Multi-frame architecture"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 35-55 meters (configuration dependent)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10-17 rounds (configuration dependent)\nweight: 0.52-0.82 kg (configuration dependent)",
+  "tactical_use": "A versatile modular pistol system that adapts to different operational requirements. The compact frame suits concealed carry, the full-size frame suits duty carry, and the subcompact frame serves as an emergency backup. Operators can reconfigure the weapon between missions or even during extended operations. The trade-off is that no single configuration is as optimized as a purpose-built weapon.",
+  "cultural_context": "The Proteus appeals to the practically minded — people who appreciate engineering solutions and hate redundancy. In certain circles, carrying a Proteus signals adaptability and resourcefulness. Tessera's marketing leans heavily into the 'one weapon, every mission' narrative, which resonates with independent operators who can't afford separate firearms for every situation.",
+  "known_users": [
+    "Cross-district couriers",
+    "Independent operators",
+    "Tessera field investigators",
+    "Budget-conscious professionals"
+  ],
+  "story_hooks": [
+    "A Proteus fire control unit is found at three separate crime scenes — in three different frame configurations. The registered owner is in a coma.",
+    "Tessera releases a firmware update for the Proteus biometric module that secretly logs location data every time the weapon is assembled."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "modular",
+    "tessera",
+    "versatile",
+    "adaptive"
+  ],
+  "physical_description": "The Tessera TK-9 Proteus is a modular pistol system built around a serialized fire control unit that accepts multiple frame configurations—compact, full-size, and subcompact—all finished in mil-spec matte black polymer and cold-rolled steel. Quick-change barrels in standard, threaded, and extended profiles snap into place without tools, their wear patterns and micro-scratches telling stories of field swaps. The frame surfaces are textured for grip in wet conditions, with faint Tessera Corp logos stamped into the slide, barely visible under accumulated carbon and rain residue.",
+  "visual_prompt": "modular semi-automatic pistol system, matte black steel and polymer, gritty neo-noir, detailed product photography, worn surfaces, quick-change barrel system, multiple frame configurations, rain-slicked industrial lighting, dark background, tactical aesthetic, near-future military hardware, scratched finishes, practical design, close-up macro photography"
+}

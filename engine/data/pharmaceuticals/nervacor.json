@@ -1,0 +1,38 @@
+{
+  "name": "Nervacor",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Hellfire",
+    "the Scream",
+    "Whitenoise",
+    "All-Over"
+  ],
+  "category": "poison_toxin",
+  "subcategory": "sensory overload toxin — pan-nociceptive activation agent",
+  "manufacturer": "Unknown — formula appears to derive from multiple independent Shelf synthesis operations",
+  "description": "Nervacor is a broad-spectrum nociceptive activator that simultaneously triggers every pain receptor, pressure receptor, and thermoreceptor in the human nervous system at maximum signal intensity, producing a total-body pain experience of absolute severity. There is no localized source — every square centimeter of skin, every joint, every organ, every nerve fires at once. Subjects are rendered immediately and completely incapacitated, typically losing voluntary motor control within seconds as the nervous system is overwhelmed. The compound does not cause tissue damage — the agony is neurological signal, not injury — but the psychological experience is described by survivors as the most intense suffering a human nervous system can produce.",
+  "method_of_use": "injection",
+  "effects": [
+    "Immediate total-body maximum-intensity pain signal activation",
+    "Complete motor incapacitation within 5-10 seconds",
+    "Loss of coherent thought and speech — subjects cannot provide information or coordinate resistance",
+    "Full consciousness preserved throughout — victim experiences every second"
+  ],
+  "side_effects": [
+    "Cardiovascular stress from pain response — cardiac events possible in subjects with pre-existing conditions",
+    "Psychological trauma is severe and lasting — PTSD rates near 100% in survivors",
+    "Accidental BCI pain-filter override — if subject has active pain management implants, a dangerous feedback loop can cause the implant to burn out",
+    "Prolonged exposure (multiple doses or extended-release formulations) risks permanent sensory sensitization"
+  ],
+  "duration": "8-20 minutes standard dose; effect ends abruptly, leaving subject physically unharmed but psychologically shattered",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ250–Φ700 per dose",
+  "cultural_context": "Nervacor is pure cruelty made chemical — a torture instrument that leaves no marks, no evidence, and no lasting physical injury. On the Shelf it is used by particularly brutal enforcers and collection agents as a payment-extraction tool. It has spread into corpo security use in off-the-books detention situations. The fact that it causes no tissue damage has made it paradoxically attractive to operators who need to hurt someone without producing injuries that can be documented. Survivors of Nervacor exposure often have difficulty describing what happened — the experience is so far outside normal pain reference points that language fails. They often just say: 'all of it, all at once.'",
+  "story_hooks": [
+    "A Shelf debt collector who has used Nervacor as a professional tool for three years is starting to experience intrusive sensory episodes — brief flashes of phantom full-body pain, lasting seconds, happening more frequently. He doesn't know if it's psychological, exposure-related, or if someone is dosing him.",
+    "A medical researcher has quietly documented that Nervacor leaves a detectable neurochemical signature in cerebrospinal fluid for up to two weeks — meaning it could be forensically proven that torture occurred. She needs someone to help her get this information out without getting disappeared.",
+    "A corpo black-site has been using Nervacor on detainees and logging deaths as 'cardiac events' — someone on the inside wants it stopped and is looking for a crew willing to take the evidence and the bodies somewhere they can't be buried again."
+  ]
+}

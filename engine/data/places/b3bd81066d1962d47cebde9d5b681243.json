@@ -1,0 +1,41 @@
+{
+  "id": "b3bd81066d1962d47cebde9d5b681243",
+  "type": "place",
+  "name": "Hot Dog Theorem",
+  "aliases": [
+    "Theorem",
+    "HDT"
+  ],
+  "description": "A hot dog cart parked outside the ruins of the University of Chicago campus. The owner, a former computational mathematics adjunct named Dr. Priya Nakamura-Owusu, was denied tenure in 2191 and started selling hot dogs the next day. She's been here since. The dogs are vat-protein, snapped into natural casings she sources from a guy in the Stockyards, and served on synth-bread with a rotating selection of toppings she calls 'proofs.' Today's proof might be kimchi-sauerkraut fusion. Tomorrow's might be pickled beet relish. She will explain the mathematical reasoning behind each topping if asked. Do not ask unless you have time.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "South Side workers",
+    "Former academics",
+    "Anyone who appreciates hot dogs with footnotes"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.789,
+    "lng": -87.599
+  },
+  "tags": [
+    "place",
+    "street_vendor",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Dr. Priya Nakamura-Owusu"
+  ]
+}

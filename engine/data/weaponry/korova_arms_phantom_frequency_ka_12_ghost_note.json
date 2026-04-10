@@ -1,0 +1,47 @@
+{
+  "id": "446e79e770f97d25dbd42d27a76353c0",
+  "name": "Korova Arms Phantom Frequency KA-12 'Ghost Note'",
+  "type": "weapon",
+  "aliases": [
+    "Ghost Note",
+    "KA-12",
+    "Phantom Frequency",
+    "Silent Scream"
+  ],
+  "category": "exotic",
+  "description": "A sonic weapon that projects focused ultrasonic pulses at frequencies above human hearing. The Ghost Note's beam causes intense localized heating in tissue at the focal point, producing burns and internal damage without any audible warning. At maximum power, the ultrasonic focus can raise tissue temperature to 80°C at a depth of 3cm — sufficient to cook organs beneath the skin.\n\nKorova Arms designed the KA-12 for covert operations where the cause of death must be untraceable by conventional forensic methods. Ultrasonic tissue damage mimics the presentation of certain rare medical conditions — internal burns without external marks, organ damage without penetrating trauma. A Ghost Note kill requires a medical examiner specifically trained to identify ultrasonic heating patterns.\n\nThe weapon is disguised as a commercial ultrasonic range-finder, complete with functional range-finding capability. The lethal mode is accessed through a BCI-authenticated interface that does not appear on the device's physical controls.",
+  "manufacturer": "KOROVA ARMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Officially classified as a commercial surveying tool",
+  "base_technologies": [
+    "High-intensity focused ultrasound weaponization",
+    "Concealed weapon integration",
+    "Ultrasonic tissue ablation"
+  ],
+  "specifications": "caliber: N/A — focused ultrasonic beam\neffective_range: 5-50 meters\nrate_of_fire: Continuous beam, 5-second exposure for lethal effect\ncapacity: 20 lethal-duration exposures per charge\nweight: 1.2 kg\npower_source: Integrated power cell, 8 hours standby / 100 seconds active beam",
+  "tactical_use": "The Ghost Note is deployed for deniable assassination and covert elimination. The weapon's disguise as commercial equipment allows operators to carry it through security checkpoints unchallenged. Engagement protocol involves sustained beam exposure from close range — the operator holds the 'range-finder' pointed at the target for 5 seconds, during which the target experiences a sensation of intense warmth that rapidly escalates to searing internal pain. By the time the target reacts, the damage is done.",
+  "cultural_context": "Korova Arms' entire product philosophy centers on weapons that officially do not exist. The Ghost Note is their most commercially successful non-weapon, with units circulating through intelligence communities worldwide. The device's dual-function design — legitimate surveying tool and covert weapon — represents the ultimate expression of plausible deniability. Operators who carry the KA-12 can truthfully state they are carrying a range-finder.",
+  "known_users": [
+    "Intelligence services (unattributed)",
+    "Corporate espionage operators"
+  ],
+  "story_hooks": [
+    "An autopsy revealed internal burns consistent with ultrasonic heating in a person who died of apparent organ failure. The medical examiner has identified the pattern in three other recent deaths. Someone is using a Ghost Note systematically, and the victims are all connected to the same corporate board.",
+    "Korova's disguise has been compromised — a security company has developed a scanner that detects the KA-12's ultrasonic emitter, distinguishing it from legitimate range-finding equipment. Korova is scrambling to redesign their concealment before their entire product line becomes detectable."
+  ],
+  "ammunition_type": [
+    "Focused ultrasonic beam"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "sonic",
+    "ultrasonic",
+    "covert",
+    "assassination",
+    "tier 4",
+    "disguised"
+  ],
+  "physical_description": "The Ghost Note is a compact, matte-black device resembling a modified microphone or sensor array, roughly the size of a clenched fist with a brushed titanium emission head. Its surface is scarred with wear marks and illegible serial number scratches, while a recessed power dial and frequency modulator sit beneath a reinforced grip wrapped in worn synthetic rubber. A single status light—currently dark—sits flush with the casing, and thin cables route internally to a detachable power pack designed to clip against a rig or be palm-concealed.",
+  "visual_prompt": "compact ultrasonic weapon device, matte black titanium and polymer, worn gritty texture, sci-fi medical instrument aesthetic, detailed product photography, dark industrial background, neon reflection, professional spy gadget, near-future tech, forensic precision engineering, studio lighting, rain-slicked surface, minimal branding, cyberpunk noir"
+}

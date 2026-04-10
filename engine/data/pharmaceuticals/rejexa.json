@@ -1,0 +1,38 @@
+{
+  "name": "Rejexa",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Peacetide",
+    "Anti-war"
+  ],
+  "category": "augment_interactive",
+  "subcategory": "rejection_cycle_breaker",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "A broad-spectrum immunosuppressant and neuro-interface stabilizer developed specifically to interrupt acute augment rejection cycles, where the body's immune system and nervous system begin treating chrome as foreign matter, causing inflammation, nerve pain, motor dysfunction, and potentially fatal immune cascade. Rejexa buys time — it doesn't fix the underlying rejection, but it suppresses the immune response and stabilizes BCI interface tissue long enough for surgical intervention. Without it, acute rejection is often fatal within 72 hours.",
+  "method_of_use": "injection",
+  "effects": [
+    "Interrupts acute immune rejection of augments within 20-40 minutes",
+    "Stabilizes BCI interface nodes against inflammatory degradation",
+    "Reduces nerve pain at chrome anchor points to manageable levels",
+    "Restores motor function in rejecting augmented limbs (temporary)",
+    "Buys 48-72 hours for surgical correction of rejection cause"
+  ],
+  "side_effects": [
+    "Full immune suppression — user becomes vulnerable to infection during treatment",
+    "Liver stress with repeated doses",
+    "Does not address underlying rejection cause — symptom management only",
+    "Psychological: patients who depend on Rejexa long-term often develop severe anxiety about their chrome",
+    "Black market versions frequently underdosed, failing to fully halt rejection"
+  ],
+  "duration": "48-72 hours (per dose)",
+  "addiction_risk": "low",
+  "tier_availability": "All tiers",
+  "legality": "prescription",
+  "street_price": "Φ 600-900 (street); Φ 1,200 (clinic)",
+  "cultural_context": "Rejexa is the drug that keeps the augmented underclass alive. In Tier 1-2, where augment installation is often done in unlicensed chop-shops with substandard chrome, rejection cycles are common. The problem is that Lazarus prices the clinical version at Φ 1,200 per dose — out of reach for most Shelf residents — and the street versions are frequently cut. There is a quiet, ongoing humanitarian crisis on the Shelf where people die from augment rejection not because the treatment doesn't exist but because they cannot afford it. Lazarus is aware of this and has repeatedly lobbied against generic alternatives.",
+  "story_hooks": [
+    "A Shelf clinic doctor has been manufacturing unlicensed Rejexa and distributing it at cost — she's saved dozens of lives, but Lazarus's legal division has filed criminal charges and sent collectors to shut her down, and her patients are organizing to protect her.",
+    "A Tier 4 corporate fixer is experiencing recurring rejection cycles in his high-end military-grade chrome — which shouldn't be possible, and suggests either his chrome was sabotaged or he's been unknowingly dosed with a rejection-triggering compound by a rival.",
+    "The street Rejexa supply in the South Corridor has been contaminated — it appears to suppress rejection for 24 hours before actually accelerating the immune response, and people are dying on a delay while believing they've been treated."
+  ]
+}

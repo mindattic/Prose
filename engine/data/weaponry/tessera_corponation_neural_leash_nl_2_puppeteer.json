@@ -1,0 +1,46 @@
+{
+  "id": "97d6a6b5ac354ce419b233724687a259",
+  "name": "Tessera Corponation Neural Leash NL-2 'Puppeteer'",
+  "type": "weapon",
+  "aliases": [
+    "Puppeteer",
+    "NL-2",
+    "Neural Leash",
+    "The String"
+  ],
+  "category": "melee",
+  "description": "A flexible weapon that combines a conductive polymer whip with a neural-disruption pulse generator, allowing the operator to deliver targeted cognitive interference through physical contact at range. The Puppeteer is 1.8 meters of polymer cord that, on contact with bare skin or conductive cyberware surfaces, delivers a precisely calibrated electromagnetic pulse that temporarily overrides voluntary motor control — causing the target's muscles to obey the pulse's frequency rather than the target's own neural commands.\n\nThe effect is not paralysis — it is involuntary movement. Targets struck by the Puppeteer do not freeze; they move in ways they did not intend, their limbs responding to electromagnetic commands rather than conscious will. At low settings, this manifests as loss of coordination and involuntary jerking. At high settings, the operator can induce specific gross motor patterns — causing a target to drop a held weapon, take a step in a specific direction, or raise their arms. The control is imprecise and cannot produce fine motor manipulation, but the ability to make an opponent's body betray them is tactically devastating.\n\nTessera developed the NL-2 under a contract from their corrections division for a restraint tool that could control prisoners without physical contact. The weapon's capability has since expanded far beyond its original scope, and the ethical implications of a weapon that puppets another person's body have generated ongoing controversy that Tessera has largely ignored.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 4+ (highly restricted)",
+  "legality": "Restricted — neural-override weapon, prohibited in most jurisdictions",
+  "base_technologies": [
+    "Conductive polymer neural interface",
+    "Motor-control electromagnetic override",
+    "Targeted involuntary-movement induction"
+  ],
+  "specifications": "total_length: 1.8 meters\nweight: 450 g\ncontact_type: Conductive polymer on bare skin or cyberware\neffect_range: Contact only — requires physical touch\ncontrol_precision: Gross motor only — no fine manipulation\npower_source: Handle power cell, 40 activations\neffect_duration: 5-15 seconds per contact",
+  "tactical_use": "The Puppeteer is used to control rather than damage. An operator who lands a contact strike can force the target to drop their weapon, move out of cover, or turn to face away — creating openings that would be impossible to achieve through conventional combat. Against augmented targets, the neural override propagates through cybernetic motor pathways with enhanced effect, making the weapon more powerful against the most dangerous opponents. The limitation is the contact requirement — the polymer cord must touch skin or conductive surface, meaning armored targets who deny skin contact are largely immune.",
+  "cultural_context": "The Puppeteer has crossed a line that even GLMZ's desensitized population finds disturbing. A weapon that takes away bodily autonomy — that makes your own muscles work against you — evokes a specific horror that transcends physical pain. Confirmed incidents of NL-2 use have generated public outrage disproportionate to the weapon's actual damage potential, because the violation is psychological rather than physical. Anti-corporate activists have made the Puppeteer a symbol of corporate control made literal — a corporation that can puppet your body as easily as it puppets your livelihood.",
+  "known_users": [
+    "Tessera corrections division",
+    "Corporate detainment teams",
+    "Covert operatives requiring non-lethal control"
+  ],
+  "story_hooks": [
+    "A Puppeteer operator has discovered that sustained contact with a specific type of neural implant creates a persistent connection — the target continues responding to commands even after the whip is withdrawn. Tessera is very interested in this development.",
+    "An NL-2 was used during a public arrest, and bystander footage of the target being puppeted against their will has gone viral. The political fallout is threatening Tessera's operating licenses in three districts."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "whip",
+    "neural",
+    "motor-control",
+    "override",
+    "tier 4",
+    "controversial"
+  ],
+  "physical_description": "The Puppeteer is a coiled length of dull-gray conductive polymer, its surface marked by hairline fractures and corrosion stains from repeated use in the acid rain of the GLMZ. At its grip end sits a blocky controller module—scuffed titanium housing with worn rubber panels and a single amber indicator light that flickers when the pulse generator cycles. The whip itself moves with an unsettling rigidity, its fibers threaded with conductive filament that catches overhead neon in thin, sickly lines.",
+  "visual_prompt": "worn conductive polymer whip with neural pulse generator, grimy titanium grip module, gritty near-future weapon, product photography, dark industrial background, rain-slicked surface, amber indicator light, neon reflection, cyberpunk noir, detailed weathering, bare concrete floor, moody lighting, high contrast"
+}

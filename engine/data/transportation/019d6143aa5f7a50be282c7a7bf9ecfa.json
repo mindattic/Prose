@@ -32,11 +32,18 @@
     "rooftop",
     "chase",
     "lake",
-    "tier 5"
+    "tier 5",
+    "aircraft",
+    "cargo",
+    "civilian",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "NeuralPath Apex Social Integration BCI"
-  ]
+  ],
+  "physical_description": "The Axiom Apex is a sleek six-seat VTOL with a narrow fuselage of brushed titanium and reinforced composite panels, its edges weathered by salt spray and industrial fallout from the Lakes. Twin vertical thrusters dominate the rear, their housings scarred from countless rooftop landings, while the cockpit features wraparound laminated glass tinted to reduce thermal signature. Interior surfaces gleam with carbon fiber and supple leather worn smooth by executive use, though the exterior hull bears the faint oxidation marks of a machine that moves between two worlds.",
+  "visual_prompt": "luxury corporate VTOL aircraft, sleek brushed titanium fuselage, twin vertical thrusters, rooftop landing pad, neo-noir gritty aesthetic, weathered industrial materials, dark rain-slicked background, product photography lighting, detailed mechanical components, great lakes industrial setting, cyberpunk executive transport, high-tech worn surfaces, moody atmospheric lighting"
 }

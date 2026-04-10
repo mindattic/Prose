@@ -31,7 +31,10 @@
     "ai",
     "hover",
     "water",
-    "lake"
+    "lake",
+    "hovercraft",
+    "military",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -40,5 +43,7 @@
     "The Burden Clause",
     "The Shore Dogs",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": "A battered military hovercraft roughly 12 meters long, its hull scarred aluminum and composite paneling streaked with rust and salt spray. The massive lift fans roar beneath a reinforced skirt of fraying rubber and canvas, while a stubby turret mount sits forward of the pilot cabin. Weathered military gray paint flakes under layers of grime and ice residue; the windscreen is reinforced polycarbonate, perpetually fogged and scratched.",
+  "visual_prompt": "military hovercraft, lake patrol vehicle, worn aluminum hull, salt-corroded panels, massive lift fans, gritty neo-noir, industrial decay, rain-slicked surfaces, dark stormy water backdrop, detailed product photography, tactical military gray paint, rusted metal, reinforced composite materials, dystopian Great Lakes setting, moody cinematic lighting"
 }

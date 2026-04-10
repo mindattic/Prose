@@ -1,0 +1,38 @@
+{
+  "name": "Noctavel",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Blackmilk",
+    "The Cradle",
+    "Mama"
+  ],
+  "category": "sleep_dream",
+  "subcategory": "deep_sleep_inducer",
+  "manufacturer": "Street chemist (Shelf origin, now widely distributed)",
+  "description": "Noctavel began as a Shelf synthesis — a crude but effective blend of synthetic endorphins, GABA modulators, and an unidentified SNT-derivative that produces a profoundly deep, warm, and utterly safe-feeling sleep state. It was designed by Shelf chemists to help people sleep through violence, hunger, and chronic stress without the pharmaceutical price tag. The formula has since been reverse-engineered and iterated upon across dozens of unlicensed labs, and the current street version is significantly more refined than the original, though still wildly variable in concentration between batches.",
+  "method_of_use": "vapor",
+  "effects": [
+    "Deep, slow-wave-dominant sleep within 10-15 minutes",
+    "Profound sense of physical safety and warmth during onset",
+    "Suppression of environmental noise sensitivity during sleep",
+    "Mild euphoric onset before unconsciousness",
+    "Sleep maintained through significant external disturbance"
+  ],
+  "side_effects": [
+    "Highly variable concentration between batches — overdose risk is real",
+    "Heavy users develop tolerance rapidly requiring escalating doses",
+    "Withdrawal produces severe insomnia and anxiety",
+    "Some batches contain adulterants causing respiratory depression",
+    "Users sometimes sleep through genuine emergencies"
+  ],
+  "duration": "6-10 hours (dose-dependent, highly variable)",
+  "addiction_risk": "extreme",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ8 per cartridge",
+  "cultural_context": "Noctavel is Shelf survival culture distilled into a vapor cartridge. When you live somewhere loud, dangerous, and without security, being able to sleep is not guaranteed — and chronic sleep deprivation kills as surely as violence. Noctavel was born from need and remains the most widely used sleep drug on the Shelf by volume. Its addictive profile is devastating and Shelf communities have complicated relationships with it — it keeps people alive in the short term and destroys them in the long term. Upper tiers occasionally use it as an extreme recreational sleep experience, which residents of the Shelf find obscene.",
+  "story_hooks": [
+    "Someone has started distributing Noctavel cartridges spiked with a paralytic in Tier 1 blocks — people are sleeping and not waking up, and it's being written off as overdose by city health authorities who don't care about Shelf casualties.",
+    "A Shelf community leader wants the crew to track down and destroy a new Noctavel synthesis operation — not because the drug is harmful in principle, but because this particular batch is extremely pure and extremely addictive, and it's being used to deliberately hook an entire block before raising prices."
+  ]
+}

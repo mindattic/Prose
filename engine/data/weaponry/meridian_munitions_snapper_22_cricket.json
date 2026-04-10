@@ -1,0 +1,46 @@
+{
+  "id": "f49183ad6be198c3082e4674ba8b6c26",
+  "name": "Meridian Munitions Snapper-22 'Cricket'",
+  "type": "weapon",
+  "aliases": [
+    "Cricket",
+    "Snapper",
+    "Twenty-Two Wheel"
+  ],
+  "category": "revolver",
+  "description": "The Meridian Munitions Snapper-22 is an eight-shot double-action revolver chambered in .22 LR, built with a lightweight aluminum frame and a three-inch barrel. It is the cheapest revolver Meridian Munitions produces — cheaper even than the Roundhouse — and fills the absolute bottom of the revolver market. The small caliber allows eight rounds in a compact cylinder, giving the Cricket more capacity than most revolvers twice its price.\n\nThe Cricket is not a weapon anyone chooses if they have other options. The .22 LR round from a three-inch barrel is marginal for self-defense by any standard, and the aluminum frame feels insubstantial in hand. But the weapon is nearly silent compared to larger calibers, produces virtually no recoil, and costs so little that losing or discarding it carries no financial consequence. These characteristics have made it unexpectedly popular among populations who need a weapon that won't draw attention.\n\nIn Shelf districts, the Cricket occupies a specific niche: it is the weapon people carry when they don't want anyone to know they're carrying a weapon. The mild report won't echo through apartment corridors, the small frame disappears in a coat pocket, and the .22 LR round — while weak — is still lethal at the distances that matter in hallways and stairwells.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — minimal registration required",
+  "base_technologies": [
+    "Aluminum frame",
+    "Eight-shot cylinder",
+    "Compact design"
+  ],
+  "specifications": "caliber: .22 LR\neffective_range: 10 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 8 rounds (cylinder)\nweight: 0.28 kg",
+  "tactical_use": "A minimal-capability deep-concealment revolver. The .22 LR round is insufficient against any form of body armor and marginal against unarmored targets. The eight-round capacity provides more opportunities to land a decisive hit than the caliber might otherwise allow. The weapon's primary tactical value is concealability and discretion — it is very quiet and very small.",
+  "cultural_context": "The Cricket is the weapon of people who can't afford to be seen carrying a weapon. Its very existence is a commentary on the layers of vulnerability in GLMZ — there are people for whom even the act of being armed is dangerous, and the Cricket is designed for them.",
+  "known_users": [
+    "Shelf residents needing extreme concealment",
+    "Individuals in restricted zones",
+    "Elderly residents who cannot manage recoil",
+    "Couriers carrying contraband who need plausible deniability"
+  ],
+  "story_hooks": [
+    "A witness protection subject is given a Cricket as their only defense — eight rounds of .22 LR against professional killers. The weapon's inadequacy is the point: if the situation reaches the Cricket, the protection has already failed.",
+    "A string of murders in a residential block are committed with .22 LR — the rounds are so quiet that neighbors don't hear the shots, and the weapon is never found because it's worth less than a meal."
+  ],
+  "ammunition_type": [
+    ".22 LR"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "cheap",
+    "quiet",
+    "concealed",
+    "minimal"
+  ],
+  "physical_description": "The Cricket is a compact revolver with a dull aluminum frame showing micro-scratches and patina from years of pocket carry. Its three-inch barrel tapers slightly, and the eight-shot cylinder sits squat and efficient beneath a utilitarian rear sight. The grip is molded polymer, discolored from handling, with a faint Meridian Munitions stamp worn nearly illegible by wear.",
+  "visual_prompt": "gritty neo-noir product photography, compact .22 revolver with brushed aluminum frame and polymer grip, worn patina and scratches, three-inch barrel, eight-shot cylinder, cyberpunk industrial aesthetic, dark studio background with neon reflection, detailed macro lighting, street-worn practical weapon, high contrast shadows, 2090s near-future design language"
+}

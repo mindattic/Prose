@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Logistician",
-      "Mutual Aid",
-      "Community Anchor",
-      "Burnout Risk",
-      "Quietly Compromised"
+      "logistician",
+      "mutual aid",
+      "community anchor",
+      "burnout risk",
+      "quietly compromised"
     ]
   },
   "behavioral": {
@@ -210,7 +210,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

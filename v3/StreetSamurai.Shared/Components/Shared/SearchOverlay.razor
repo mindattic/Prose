@@ -1,0 +1,181 @@
+@* Global search overlay. Triggered by Ctrl+K or the search button in the nav.
+   Renders a modal over the current page with live search results.
+*@
+
+@inject DatabaseService Db
+@inject XrefService Xref
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+@inject SearchTriggerService SearchTrigger
+@implements IDisposable
+
+@if (open)
+{
+    <div class="search-overlay-backdrop" @onclick="Close"></div>
+    <div class="search-overlay-panel" @onkeydown="OnKeyDown">
+        <div class="search-overlay-input-row">
+            <i class="bi bi-search search-overlay-icon"></i>
+            <input @ref="inputRef" type="text" class="search-overlay-input"
+                   placeholder="Search entities…"
+                   @bind="query" @bind:event="oninput"
+                   @oninput="OnInput" />
+            @if (!string.IsNullOrWhiteSpace(query))
+            {
+                <button class="search-overlay-clear" @onclick="Clear">
+                    <i class="bi bi-x"></i>
+                </button>
+            }
+        </div>
+
+        @if (results.Count > 0)
+        {
+            <div class="search-overlay-results">
+                @for (int i = 0; i < results.Count; i++)
+                {
+                    var idx = i;
+                    var r = results[i];
+                    <div class="search-overlay-result @(idx == selectedIndex ? "selected" : "")"
+                         @onclick="() => Navigate(r)"
+                         @onmouseover="() => selectedIndex = idx">
+                        <div class="search-result-left">
+                            <span class="search-result-badge badge-@r.Type">@r.Type</span>
+                            <span class="search-result-name">@r.Name</span>
+                        </div>
+                        @if (!string.IsNullOrWhiteSpace(r.Subtitle))
+                        {
+                            <span class="search-result-sub text-muted">@r.Subtitle</span>
+                        }
+                    </div>
+                }
+            </div>
+            <div class="search-overlay-footer text-muted">
+                <small><kbd>↑↓</kbd> navigate &nbsp; <kbd>↵</kbd> open &nbsp; <kbd>Esc</kbd> close</small>
+            </div>
+        }
+        else if (!string.IsNullOrWhiteSpace(query) && query.Length >= 2)
+        {
+            <div class="search-overlay-empty text-muted">No results for "<strong>@query</strong>"</div>
+        }
+        else
+        {
+            <div class="search-overlay-hint text-muted">
+                Type to search characters, places, factions, corps, tech, and more
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private bool open;
+    private string query = "";
+    private List<SearchItem> results = [];
+    private int selectedIndex = 0;
+    private ElementReference inputRef;
+    private CancellationTokenSource? debounce;
+
+    public async Task OpenAsync()
+    {
+        open = true;
+        query = "";
+        results = [];
+        selectedIndex = 0;
+        StateHasChanged();
+        await Task.Delay(50);
+        try { await JS.InvokeVoidAsync("focusElement", inputRef); } catch { }
+    }
+
+    private void Close()
+    {
+        open = false;
+        query = "";
+        results = [];
+    }
+
+    private void Clear()
+    {
+        query = "";
+        results = [];
+        selectedIndex = 0;
+    }
+
+    private async void OnInput(ChangeEventArgs e)
+    {
+        query = e.Value?.ToString() ?? "";
+        debounce?.Cancel();
+        debounce = new CancellationTokenSource();
+        var token = debounce.Token;
+        await Task.Delay(150, token).ContinueWith(_ =>
+        {
+            if (!token.IsCancellationRequested) InvokeAsync(() => { RunSearch(); StateHasChanged(); });
+        }, TaskContinuationOptions.OnlyOnRanToCompletion);
+    }
+
+    private void RunSearch()
+    {
+        if (query.Length < 2) { results = []; return; }
+
+        // Search xref index first (names/aliases — fast, comprehensive)
+        var xrefMatches = Xref.AllEntries()
+            .Where(e => e.DisplayName.Contains(query, StringComparison.OrdinalIgnoreCase))
+            .Take(12)
+            .Select(e => new SearchItem(e.Id, e.DisplayName, e.Type, e.Subtitle))
+            .ToList();
+
+        // Fall back to full-text search for additional results
+        if (xrefMatches.Count < 8)
+        {
+            var textMatches = Db.Search(query, 12)
+                .Where(r => !string.IsNullOrWhiteSpace(r.EntityId))
+                .Where(r => xrefMatches.All(x => x.Id != r.EntityId))
+                .Take(8 - xrefMatches.Count)
+                .Select(r => new SearchItem(r.EntityId, r.EntityName, r.EntityType, r.Heading));
+            xrefMatches.AddRange(textMatches);
+        }
+
+        results = xrefMatches.Take(12).ToList();
+        selectedIndex = 0;
+    }
+
+    private void OnKeyDown(KeyboardEventArgs e)
+    {
+        switch (e.Key)
+        {
+            case "ArrowDown":
+                selectedIndex = Math.Min(selectedIndex + 1, results.Count - 1);
+                break;
+            case "ArrowUp":
+                selectedIndex = Math.Max(selectedIndex - 1, 0);
+                break;
+            case "Enter":
+                if (results.Count > 0) Navigate(results[selectedIndex]);
+                break;
+            case "Escape":
+                Close();
+                break;
+        }
+    }
+
+    private void Navigate(SearchItem item)
+    {
+        Close();
+        Nav.NavigateTo($"/entity/{item.Id}");
+    }
+
+    private record SearchItem(string Id, string Name, string Type, string Subtitle);
+
+    protected override void OnInitialized()
+    {
+        SearchTrigger.OnOpenRequested += HandleOpenRequest;
+    }
+
+    private async Task HandleOpenRequest()
+    {
+        await OpenAsync();
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        SearchTrigger.OnOpenRequested -= HandleOpenRequest;
+    }
+}

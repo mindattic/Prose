@@ -33,7 +33,8 @@
     "shadow",
     "stealth",
     "drone",
-    "shelf"
+    "shelf",
+    "electric"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -44,5 +45,7 @@
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "The Shelf",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": "A matte-black quadcopter no larger than a raven, its chassis molded from composite polymers scarred by industrial particulate. Four rotors barely disturb the air, their edges serrated to shear sound into white noise. A single lens, obsidian and recessed, sits flush with the fuselage—no glint, no reflection, just absence.",
+  "visual_prompt": "matte-black surveillance drone, raven-sized quadcopter, composite polymer chassis, recessed obsidian lens, serrated rotor blades, product photography, gritty neo-noir aesthetic, industrial decay, dark rain-slicked background, whisper-quiet design, military-grade stealth, detailed texturing, moody cinematic lighting, cyberpunk surveillance technology"
 }

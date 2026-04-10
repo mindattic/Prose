@@ -1,0 +1,27 @@
+{
+  "id": "ff0b91061eee5f3dc246e622fc1c4f39",
+  "name": "Tessera Internal Memo Re Neural Interface Rejection Rates Q3 2199",
+  "type": "document",
+  "document_type": "corporate_memo",
+  "author": "Dr. Soren Achebe-Park, Tessera Neural Products Division",
+  "date": "2199-10-14",
+  "classification": "classified",
+  "description": "INTERNAL — DISTRIBUTION: NEURAL PRODUCTS DIVISION LEADERSHIP ONLY\n\nThis memo addresses the Q3 rejection rate data for our Generation 4 neural interface line. The headline number is 4.7%, which is within our published tolerance of 5%. However, the headline number conceals a distribution problem that I believe requires immediate attention.\n\nAmong Tier 4-5 clients receiving installation at certified Tessera medical facilities, the rejection rate is 1.2% — excellent, and consistent with our clinical trial data. Among Tier 2-3 clients receiving installation at licensed third-party clinics, the rejection rate rises to 6.8%. Among clients whose installation provenance is unknown — likely Shelf-level unlicensed installers working with gray-market units — the estimated rejection rate based on emergency room admissions data is between 15% and 22%.\n\nThe variance is not a product defect. It is an installation quality problem. Our hardware performs as specified when installed correctly. The issue is that 'installed correctly' requires sterile conditions, calibrated neural mapping equipment, and a trained surgeon — resources that are not available at every price point.\n\nI am raising this because our marketing division is currently preparing a campaign to expand Gen 4 distribution into Tier 2 markets, where installation quality is the primary variable. If we proceed with this campaign without simultaneously investing in installer certification programs, we will sell more units and generate more rejection events. The rejection events will generate lawsuits. The lawsuits will cost more than the installer certification program.\n\nI have attached a cost-benefit analysis. I do not expect it to be read.",
+  "related_entities": [
+    "Tessera Corponation"
+  ],
+  "credibility": "leaked",
+  "story_hooks": [
+    "Tessera knowingly pushing products into markets without adequate installation infrastructure",
+    "The cost-benefit memo that predicted the problem"
+  ],
+  "tags": [
+    "corporate",
+    "tessera",
+    "cyberware",
+    "neural-interface",
+    "memo",
+    "classified",
+    "rejection-rate"
+  ]
+}

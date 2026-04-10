@@ -1,0 +1,28 @@
+{
+  "name": "Fragment — Elevator Maintenance Record",
+  "type": "document",
+  "document_type": "fragment",
+  "author": "Building Maintenance System",
+  "date": "unknown",
+  "classification": "restricted",
+  "description": "Log showing that the elevator in a Ghost Building traveled to Floor 13 seventeen times in one month. Floor 13 does not exist. The elevator's weight sensor recorded passengers on each trip. The cumulative weight varied but averaged 73 kg — consistent with one adult human.",
+  "related_entities": [],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "Who is riding the elevator to a floor that doesn't exist?",
+    "What is on Floor 13?",
+    "Why does 73 kg recur?"
+  ],
+  "tags": [
+    "document",
+    "fragment",
+    "incomplete",
+    "data log",
+    "elevator",
+    "ghost building",
+    "floor 13",
+    "73 kg",
+    "anomaly"
+  ],
+  "id": "94a2ae13c84688a25ec76365db59a318"
+}

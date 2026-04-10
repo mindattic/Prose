@@ -1,0 +1,41 @@
+{
+  "id": "b9c798fbb88d97db7671ecf1224363f0",
+  "type": "place",
+  "name": "Kettle Row",
+  "aliases": [
+    "The Kettles"
+  ],
+  "description": "A communal soup kitchen on Green Bay's west side, run by a rotating crew of volunteers from the Lakeshore Mutual Aid Network. Three industrial kettles, each big enough to bathe in, produce a continuous supply of soup from dawn to midnight. The recipe is 'whatever we have plus water plus heat plus time.' On good days, it's hearty and filling. On lean days, it's warm water with nutritional supplements dissolved in it. Both versions are free. Kettle Row has fed more people in Green Bay than any restaurant in the city's history, and nobody who works there considers that an achievement — they consider it a failure of every system that made Kettle Row necessary.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Green Bay's unhoused population",
+    "Day laborers",
+    "Mutual aid volunteers",
+    "Anyone who needs a meal"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.508,
+    "lng": -88.02
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Lakeshore Mutual Aid Network"
+  ]
+}

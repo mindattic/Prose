@@ -1,0 +1,40 @@
+{
+  "id": "8ac06742aae0f118d71e7ccd9b7d5a53",
+  "type": "place",
+  "name": "Chili Trench",
+  "aliases": [
+    "The Trench"
+  ],
+  "description": "A chili stand in the basement of a Cicero warehouse, accessible by a set of stairs that descend below street level — hence the name. Hector Lindberg-Osei makes a single pot of chili every day, enough for about eighty bowls, using vat-beef, synth-kidney beans, and a chili powder he buys in bulk from a Circuit-tier spice dealer. A bowl is Φ3 with synth-cornbread. The chili is thick, aggressively spiced, and served at a temperature that suggests Hector is testing your commitment. Regulars bring their own bowls. First-timers get disposable cups and a look of mild pity.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Cicero warehouse workers",
+    "Chili chasers",
+    "People who own their own bowls"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.845,
+    "lng": -87.754
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Hector Lindberg-Osei"
+  ]
+}

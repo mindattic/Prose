@@ -26,6 +26,7 @@ public class DistrictData : ICanonEntity
     [JsonPropertyName("notable_locations")] public List<NotableLocation> NotableLocations { get; set; } = [];
     [JsonPropertyName("coordinates")] public GeoCoordinates Coordinates { get; set; } = new();
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("related_entities")] public List<string> RelatedEntities { get; set; } = [];
 }
 
 public class GeoCoordinates

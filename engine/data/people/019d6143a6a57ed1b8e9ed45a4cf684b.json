@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Expert",
-      "Incorruptible",
-      "Cold-Burning",
-      "Institutional Memory",
-      "Dangerous Archive"
+      "expert",
+      "incorruptible",
+      "cold-burning",
+      "institutional memory",
+      "dangerous archive"
     ]
   },
   "behavioral": {
@@ -295,7 +295,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

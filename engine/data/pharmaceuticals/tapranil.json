@@ -1,0 +1,37 @@
+{
+  "name": "Tapranil",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Stepdown",
+    "Taper",
+    "the Ladder"
+  ],
+  "category": "withdrawal_aid",
+  "subcategory": "gradual_step_down_formulation",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Tapranil is a modular step-down system — a series of six progressively weaker formulations (T6 through T1) designed to wean users off opioid-class and synthetic analgesic dependencies by providing diminishing but real receptor activation at each stage. Each stage lasts two weeks, giving the brain time to adjust incrementally rather than suffering acute withdrawal. The T1 formulation provides only 3% of the original receptor activation.",
+  "method_of_use": "sublingual",
+  "effects": [
+    "Controlled receptor activation at decreasing doses",
+    "Prevention of acute withdrawal syndrome",
+    "Managed craving reduction",
+    "Preserved physical function throughout process"
+  ],
+  "side_effects": [
+    "Mild withdrawal symptoms at each step-down transition",
+    "Psychological resistance to advancing stages ('stage stall')",
+    "Some users stabilize on T2 or T3 and refuse to continue — creating a milder dependency",
+    "Mood variability at transitions"
+  ],
+  "duration": "12-week full course (2 weeks per stage)",
+  "addiction_risk": "moderate",
+  "tier_availability": "All tiers",
+  "legality": "prescription",
+  "street_price": "Φ35 per stage (Φ210 full course); individual stages sold separately on street for Φ55-80",
+  "cultural_context": "Tapranil is the most widely distributed recovery drug in GLMZ — Novafold runs subsidized programs at Tier 2 clinics and even some Shelf outreach points. The street trade in individual Tapranil stages is significant: users buy T3 or T4 strips not to taper off but to manage withdrawal when they can't afford their primary substance. Stage stall — getting stuck on T2 — is considered a mild addiction in itself and quietly tolerated by many harm-reduction advocates as a better outcome than returning to harder substances.",
+  "story_hooks": [
+    "A Shelf outreach worker is running an unofficial Tapranil distribution point funded by stolen clinic supply — the players must decide whether to expose it or protect it",
+    "A major Tapranil shipment to a Tier 2 clinic has been intercepted and broken into individual stages for street resale — finding the supply chain leads somewhere unexpected",
+    "Someone the players care about has been on T2 for eight months and calls it success; the players must decide whether to push them to finish or accept this as good enough"
+  ]
+}

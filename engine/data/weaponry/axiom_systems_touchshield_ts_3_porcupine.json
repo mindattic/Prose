@@ -1,0 +1,44 @@
+{
+  "id": "808a0fe62cc03c806ecad718d382c0c4",
+  "name": "Axiom Systems TouchShield TS-3 'Porcupine'",
+  "type": "weapon",
+  "aliases": [
+    "Porcupine",
+    "TS-3",
+    "Shock Patch",
+    "Contact Mine"
+  ],
+  "category": "self_defense",
+  "description": "An adhesive-backed electrical discharge patch that can be applied to clothing, bags, or directly to skin, delivering a 55,000-volt shock to anyone who touches the protected surface. The TS-3 is a thin, flexible circuit printed on a polymer substrate with a pressure-sensitive trigger — any contact pressure above 500 grams activates the discharge. The user's own skin is insulated by the adhesive backing, while the outer surface is the active electrode.\n\nAxiom Systems markets the TS-3 as passive defense — protection that works even when the user cannot actively respond. Patches are commonly applied to purse straps, jacket shoulders, backpack handles, and anywhere a pickpocket or grab-attacker is likely to make contact. The patches are disposable, with each containing a single-discharge capacitor that depletes on first activation. They are sold in packs of five for Φ60.\n\nThe TS-3 has found unexpected popularity among delivery workers and couriers who are frequently targeted for their cargo. Applied to the handles of delivery containers, the patches deter grab-and-run theft with painful consistency. The primary limitation is single-use — once triggered, the patch is spent and must be replaced. Axiom is developing a rechargeable variant, but the current disposable model dominates the market.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Flexible printed circuit electrodes",
+    "Pressure-sensitive discharge trigger",
+    "Adhesive-insulated user protection"
+  ],
+  "specifications": "voltage: 55,000V\namperage: 2.8 milliamps\ntrigger threshold: 500 grams contact pressure\nuses: single discharge per patch\npatch dimensions: 5 cm x 5 cm\nthickness: 0.4 mm\nweight: 3 g per patch\ncost: Φ60 for 5-pack\nshelf life: 18 months",
+  "tactical_use": "Apply patches to surfaces most likely to be grabbed during an attack — bag straps, collar area, wrist cuffs, wallet pockets. The TS-3 is a deterrent, not an incapacitator — the shock is painful and surprising but brief. Its value is in discouraging follow-up grabs after the first contact. For maximum coverage, apply multiple patches to different grab points. Replace triggered patches promptly — a spent patch is just a sticker.",
+  "cultural_context": "The TS-3 has introduced the concept of 'passive defense zoning' to personal security — making your own body and belongings a hazard to touch without permission. This idea resonates strongly in a city where personal space is constantly violated by crowds, predators, and opportunists. Some Tier 1-2 residents apply patches to their children's school bags and jackets, normalizing from a young age the idea that one's body and property should be defended even passively.",
+  "known_users": [],
+  "story_hooks": [
+    "A Tier 2 market vendor has been found applying TS-3 patches to merchandise to prevent shoplifting — a customer with a pacemaker was hospitalized after handling a patched product, raising questions about liability when passive defense harms innocent people.",
+    "Someone has developed bootleg TS-3 patches with dramatically increased voltage that are being sold as genuine — the counterfeits are visually identical but deliver discharges that cause burns and tissue damage."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "stun",
+    "electrical",
+    "passive",
+    "adhesive",
+    "disposable",
+    "tier_1",
+    "anti_grab"
+  ],
+  "physical_description": "A thin, translucent polymer patch no larger than a playing card, with a dull copper electrode grid visible beneath the surface and a matte black adhesive backing. Fine stress cracks spider across the polymer from repeated flexing, and the edges show slight curling from age or moisture exposure. A small red indicator dot marks the activation threshold.",
+  "visual_prompt": "gritty product photography of electrical discharge patch, translucent polymer substrate with copper electrode grid, matte black adhesive backing, stress cracks visible, red indicator dot, dark rain-slicked background, neo-noir lighting, macro detail, worn near-future tech, close-up macro shot, cinematic, moody"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "b6e8f7d9e2ac3b5d16feb98fbbc642ae",
+  "name": "Arcturus Defense Solutions Combat Falchion CF-5 'Cleaver'",
+  "type": "weapon",
+  "aliases": [
+    "Cleaver",
+    "CF-5",
+    "The Butcher",
+    "Wedge"
+  ],
+  "category": "melee",
+  "description": "A heavy single-edged chopping sword with a forward-weighted blade designed for maximum kinetic energy transfer on impact. The CF-5 does not vibrate, heat, or resonate — it is simply an extremely well-engineered piece of sharpened metal built from aerogel-reinforced tungsten composite that combines devastating weight with a blade tough enough to chop through structural steel without chipping.\n\nArcturus developed the Cleaver for field engineers and combat sappers who needed a tool capable of cutting through cables, conduits, light barriers, and — when necessary — people, without relying on power sources that might fail in adverse conditions. The weapon requires no batteries, no fuel cells, no capacitors. It works when everything else has stopped working, and it works by being heavy, sharp, and nearly indestructible.\n\nThe CF-5 has earned a reputation as the most honest weapon in GLMZ — it makes no pretense of sophistication and offers no technological crutch. Its weight (2.8 kg) makes it exhausting to wield for extended periods, limiting it to short, decisive engagements. Users either end the fight in the first three swings or they are in serious trouble. This binary outcome has given the weapon a fatalistic cult following among operators who prefer certainty to complexity.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — industrial/combat tool classification",
+  "base_technologies": [
+    "Aerogel-reinforced tungsten composite",
+    "Forward-weighted blade geometry",
+    "Zero-power-dependency design"
+  ],
+  "specifications": "blade_length: 55 cm\ntotal_length: 75 cm\nweight: 2.8 kg\nblade_material: Aerogel-reinforced tungsten composite\nedge_hardness: 72 HRC equivalent\npower_requirement: None\nmaintenance: Manual sharpening only",
+  "tactical_use": "The Cleaver excels in environments where electronic weapons fail — EMP zones, power-denial areas, and infrastructure collapse scenarios. Its weight makes each swing a commitment, but the kinetic energy behind that weight defeats light armor and structural materials through sheer force. Combat sappers use it to cut through utility conduits and barrier materials. In combat, the weapon's forward balance makes it devastating in downward strikes but slow to recover, demanding a fighting style built around single decisive blows rather than rapid exchanges.",
+  "cultural_context": "The CF-5 has become a symbol of analog resilience in a city increasingly dependent on electronic everything. Its users tend to be philosophical about their choice — they speak of 'trusting the edge' in a way that carries implications beyond weapon selection. In GLMZ's occasional infrastructure failures, when powered weapons become expensive paperweights, Cleaver carriers become disproportionately important. The weapon has a small but dedicated following who maintain that the simplest solution is always the most reliable.",
+  "known_users": [
+    "Arcturus combat engineers",
+    "Infrastructure salvage teams",
+    "Analog-philosophy combatants"
+  ],
+  "story_hooks": [
+    "During a district-wide power failure, a single operator armed with a CF-5 held a corridor against a dozen attackers whose powered weapons had all died. The story has become legend, but the operator has disappeared.",
+    "An aerogel-reinforced tungsten shipment bound for Arcturus was hijacked — enough material to produce hundreds of Cleavers. Someone is equipping an army with EMP-proof weapons."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "falchion",
+    "analog",
+    "tungsten",
+    "aerogel",
+    "tier 2",
+    "unpowered"
+  ],
+  "physical_description": "The CF-5 Cleaver is a brutalist chopping sword with a forward-weighted blade of dull gunmetal grey, its aerogel-tungsten composite surface bearing the micro-scratches and discoloration of field use. The handle wraps in worn synthetic grip material, darkened by rain and sweat, with a pronounced crossguard of the same composite material. Despite its substantial heft—evident in the blade's thickness and aggressive geometry—the weapon carries no moving parts, no electronics, no visible damage.",
+  "visual_prompt": "heavy chopping sword with forward-weighted blade, dull gunmetal grey tungsten composite, worn synthetic grip, brutalist industrial design, field-worn and weathered, neo-noir product photography, gritty tactical weapon, dark rain-slicked background, sharp focus, detailed metallurgy, cyberpunk aesthetic"
+}

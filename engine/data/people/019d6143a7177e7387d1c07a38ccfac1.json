@@ -99,12 +99,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Veteran",
-      "Mediator",
-      "Pension Resident",
-      "Trauma Carrier",
-      "Community Fixture",
-      "Evidence Holder"
+      "veteran",
+      "mediator",
+      "pension resident",
+      "trauma carrier",
+      "community fixture",
+      "evidence holder"
     ]
   },
   "behavioral": {
@@ -310,7 +310,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

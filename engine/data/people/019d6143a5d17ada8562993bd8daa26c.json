@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Empath",
-      "Technician",
-      "Ethically Complex",
-      "Isolated",
-      "Pattern Reader"
+      "empath",
+      "technician",
+      "ethically complex",
+      "isolated",
+      "pattern reader"
     ]
   },
   "behavioral": {
@@ -287,7 +287,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

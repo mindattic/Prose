@@ -37,12 +37,18 @@
     "drone",
     "shelf",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "utility",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "Ringo Corponation",
   "related_entities": [
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Ringo Corponation",
     "The Swarm"
-  ]
+  ],
+  "physical_description": "Shoebox-sized chassis of scuffed polymer and exposed aluminum frame, weathered to dull gray-brown by rain and street grime. Six articulated legs with rubber treads grip concrete and metal surfaces, each joint clicking audibly as the unit navigates terrain. A small cargo compartment runs the length of the body, sealed with corroded latches; faded RingoMart orange stripe peels along the sides. Running lights flicker amber at the front, often burnt out or dimmed by months of gutter-crawling.",
+  "visual_prompt": "small delivery robot, shoebox-sized, weathered aluminum and gray polymer chassis, six articulated legs with rubber treads, orange stripe peeling, gritty neo-noir product photography, rain-slicked concrete background, amber running lights, industrial decay, detailed mechanical joints, dark moody lighting, cyberpunk street-level commerce"
 }

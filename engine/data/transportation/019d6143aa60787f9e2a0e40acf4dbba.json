@@ -31,12 +31,19 @@
     "control",
     "bar",
     "tier 3",
-    "tier 5"
+    "tier 5",
+    "civilian",
+    "van",
+    "train",
+    "electric",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Ferrogate Metro Bus",
     "Ferrogate Transit",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": "A sleek composite-bodied shuttle with reinforced polycarbonate windows tinted to opaque black, bearing the Axiom corporate logo in brushed chrome. The hull is immaculate white with subtle wear patterns around the wheel wells and lower paneling—evidence of GLMZ's corrosive rain and industrial grit. LED strips run along the undercarriage, casting cold blue light on the pavement, while the interior glows with warm halogen amber visible only through the driver's reinforced cabin.",
+  "visual_prompt": "sleek corporate shuttle bus, white composite hull with black tinted windows, brushed chrome Axiom logo, LED undercarriage lighting, rain-slicked pavement, neo-noir industrial backdrop, gritty cyberpunk aesthetic, detailed product photography, dark moody lighting, corporate dystopian, neon reflections, worn futuristic transit vehicle, high contrast shadows"
 }

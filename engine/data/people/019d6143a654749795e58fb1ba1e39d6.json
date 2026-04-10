@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Elder Sage",
-      "Underground Legend",
-      "Exacting Mentor",
-      "Keeper of Secrets",
-      "Moral Complexity"
+      "elder sage",
+      "underground legend",
+      "exacting mentor",
+      "keeper of secrets",
+      "moral complexity"
     ]
   },
   "behavioral": {
@@ -270,7 +270,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Eastern European": {

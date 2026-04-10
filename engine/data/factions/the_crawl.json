@@ -1,0 +1,57 @@
+{
+  "id": "0da46e412ee67a319c9ec0ebfd5c43ff",
+  "type": "faction",
+  "name": "The Crawl",
+  "aliases": [
+    "Crawlers",
+    "The Tunnel Rats",
+    "Deep Crawl"
+  ],
+  "motto": "Down here, nobody owns the dark.",
+  "description": "The Crawl is a criminal network that operates exclusively in the Underworld — the vast tunnel system beneath GLMZ. Approximately 500 members strong, the Crawl controls the smuggling routes, hidden spaces, and transit corridors that thread through the tunnels, charging tolls, providing guides, and enforcing an Underworld order that exists nowhere in any official record.\n\nThe Crawl's members are Underworld natives — people born in the tunnels, or who came down and never went back up. They know the Underworld the way surface dwellers know their neighborhoods: every passage, every dead end, every flooded section, every blind spot in the surveillance networks that the corponations occasionally extend into the upper tunnels. This knowledge is their primary currency. Need to move something through the Underworld? You hire the Crawl. Need to find someone who's gone underground? You hire the Crawl. Need to hide? You pay the Crawl for a space, and they'll make sure nobody finds you unless someone else pays more.\n\nThe Crawl is not a traditional criminal organization so much as a guild of tunnel-dwellers who have organized for mutual benefit and territorial control. Their criminality is opportunistic — they provide logistics and spatial services, and they don't much care what those services are used for. Smugglers, refugees, fugitives, resistance cells, corporate black-ops teams — the Crawl serves them all with the same professional indifference.",
+  "ideology": "The Underworld is free territory. No corponation, no government, no surface law applies below. The Crawl exists to maintain this freedom — which also happens to be extremely profitable.",
+  "territory": "The Underworld tunnel system beneath GLMZ. The Crawl doesn't control all of it — some sections are held by other groups or are genuinely uncharted — but they control enough to tax most traffic.",
+  "leadership": "The Depth Warden, a figure known as Mole, who has reportedly not seen sunlight in eleven years. Mole leads through knowledge — they know more about the Underworld's layout than any other living person.",
+  "methods": [
+    "Toll collection on Underworld transit routes",
+    "Guide services through unmapped tunnel sections",
+    "Provision of hidden spaces for cargo storage and human concealment",
+    "Smuggling logistics — moving goods through tunnels to avoid surface customs",
+    "Intelligence gathering through observation of Underworld traffic",
+    "Tunnel maintenance — the Crawl keeps their routes passable because their business depends on it"
+  ],
+  "resources": [
+    "500 members with unmatched Underworld knowledge",
+    "Control of major transit routes through the tunnel system",
+    "Hidden storage facilities throughout the Underworld",
+    "A mapping system of Underworld passages that no surface organization possesses",
+    "Relationships with every organization that needs Underworld access",
+    "Mole's encyclopedic knowledge of the tunnels"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "The Crawl and the Harbor Rats cooperate on smuggling operations that require both port access and Underworld transit. The relationship is stable and mutually profitable.",
+      "tags": [
+        "criminal",
+        "logistics"
+      ]
+    }
+  ],
+  "narrative_function": "The Crawl represents the literal underground — the shadow city beneath the shadow city, where the rules are different because nobody bothered to make them.",
+  "story_hooks": [
+    "The Crawl has mapped a new section of the Underworld that shouldn't exist — tunnels that don't appear on any historical infrastructure plan, that use construction techniques nobody recognizes, and that go deeper than anything else in the system.",
+    "Mole is dying and the Crawl's succession is contested. Without Mole's knowledge, entire sections of the Underworld become impassable — and the organizations that depend on those routes are already positioning to control the outcome."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "underworld",
+    "tunnels",
+    "smuggling",
+    "guides",
+    "organized crime"
+  ]
+}

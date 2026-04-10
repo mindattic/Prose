@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Artist",
-      "Tech-Skilled",
-      "Corporate Survivor",
-      "Guilt-Driven",
-      "Tier 3"
+      "artist",
+      "tech-skilled",
+      "corporate survivor",
+      "guilt-driven",
+      "tier 3"
     ]
   },
   "behavioral": {
@@ -280,7 +280,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

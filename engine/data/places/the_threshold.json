@@ -1,0 +1,86 @@
+{
+  "id": "ac9746806c13a9130830bfc66b451fc4",
+  "type": "place",
+  "name": "The Threshold",
+  "aliases": [
+    "The Forgetting Door",
+    "The Frame",
+    "Memory Gate"
+  ],
+  "description": "The Threshold is a doorframe. It stands on Shelf Tier 2, at the end of a short dead-end alley off Buttress Street, between a laundromat and a building that has been vacant for eleven years. The doorframe is wooden, old, and unremarkable in its construction — standard residential interior frame, approximately 80 centimeters wide and 200 centimeters tall, with simple trim and no hardware. There is no door in the frame. There is no building attached to it. It stands alone, bolted to a concrete pad that someone poured at some point for reasons that are not recorded. Walking through it costs you one memory.\n\nThe effect was first documented in 2187 when a Shelf resident named Tomás Mwangi-Johansson walked through the frame on a dare and immediately forgot the name of his childhood dog. Not temporarily — permanently. The memory was excised as if it had never existed. He remembers having a dog. He remembers the dog's color, size, and temperament. He cannot remember its name. BCI memory logs from before the event confirm the dog's name was Pepper. The name means nothing to him. It is a word. It was a memory. The Threshold took it.\n\nThe effect is consistent: walk through the frame, lose one memory. Always one. Never more. The memory lost varies — it is never the same type of memory twice in the same person, and there is no pattern to what is taken. It could be a name, a face, a skill, a sensation, a fact. One woman forgot the taste of coffee. One man forgot how to whistle. One child forgot that she was afraid of the dark and has not been afraid since. The loss is permanent. BCI memory augmentation cannot restore it — the memory is not suppressed or inaccessible; it is gone, removed from the neural substrate with a precision that neurosurgeons describe as \"impossible without tissue destruction.\" There is no tissue destruction. The brain is intact. The memory is not.\n\nThe Threshold has not been removed. Early proposals to demolish it were met with unexpected community resistance. The residents of Shelf Tier 2 protect the Threshold the way they protect other neighborhood fixtures — not because they understand it, but because it is theirs. A hand-painted sign, maintained by anonymous hands, reads: \"One memory. Choose to walk. Choose not to. It's yours.\" Some people walk through deliberately. They want to forget something. The Threshold does not take requests — you cannot choose which memory it takes. But for some people, any subtraction is welcome. They walk through and lose something, and sometimes what they lose is the thing they needed to lose, and sometimes it is not, and either way it is gone. The Threshold is patient. It has been taking memories for at least thirty-nine years. It shows no signs of stopping. It shows no signs of anything. It is a doorframe. It stands in an alley. It waits.",
+  "atmosphere": {
+    "sights": [
+      "A plain wooden doorframe standing alone in a dead-end alley, bolted to a concrete pad, with no door and no building",
+      "The hand-painted sign: 'One memory. Choose to walk. Choose not to. It's yours.'",
+      "People approaching the frame slowly, standing before it, deciding",
+      "People walking away from the frame, looking inward, trying to figure out what they've lost"
+    ],
+    "sounds": [
+      "The ambient sounds of the Shelf — foot traffic, distant music, the hum of infrastructure",
+      "Quiet in the alley — the dead-end dampens street noise, creating a pocket of relative silence",
+      "Occasionally: a sharp exhale from someone who has just walked through and realized what is missing"
+    ],
+    "smells": [
+      "Old wood — the frame itself smells like aged timber, dry and warm",
+      "Laundromat detergent from the adjacent business",
+      "The particular still-air smell of dead-end alleys"
+    ],
+    "feel": "Choice. The Threshold does not compel. It does not attract. It does not threaten. It stands there, and you decide. The weight of the decision is the atmosphere — not the frame itself, which is passive and plain, but the knowledge of what it does and the question of whether you are willing to pay the price. People stand before the Threshold for minutes, sometimes hours, weighing the value of their memories against the desire to lose one. The frame waits. It is very good at waiting.",
+    "tags": []
+  },
+  "demographics": "No residents. The alley sees 20-40 visitors per day — some deliberate, some curious, some who came to watch others decide.",
+  "economy": "None. The Threshold cannot be monetized. Several attempts to charge admission to the alley were shut down by the Tier 2 community.",
+  "power_structure": "Informally governed by the Shelf Tier 2 neighborhood. The sign is maintained anonymously. The concrete pad is swept regularly by unknown hands.",
+  "dangers": [
+    "Permanent memory loss — the core function of the Threshold is, by any clinical definition, brain damage",
+    "The inability to choose which memory is taken — the loss may be trivial or devastating",
+    "Addiction — a small number of individuals have walked through the Threshold repeatedly, losing memory after memory. The community monitors for this behavior.",
+    "Unknown long-term effects of cumulative memory removal"
+  ],
+  "opportunities": [
+    "Neuroscience — the Threshold removes memories with a precision that no technology can replicate, suggesting an understanding of neural architecture far beyond current science",
+    "Therapeutic potential — for individuals with traumatic memories, the Threshold offers a drastic but effective intervention (with the caveat that it may not take the traumatic memory)",
+    "Understanding the nature of memory itself — what the Threshold does challenges assumptions about how memories are stored and what it means to forget"
+  ],
+  "story_hooks": [
+    "Someone walks through the Threshold and loses the memory of a person who is standing right next to them. They look at their partner and see a stranger.",
+    "A researcher discovers that the memories taken by the Threshold are not destroyed — they are somewhere. The question is where.",
+    "The Threshold takes a memory from someone who walks through, and the person standing nearby gains it. The memories are not disappearing. They are being moved."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Buttress Street, Shelf Tier 2",
+      "An unnamed laundromat",
+      "A vacant building (unoccupied since 2188)"
+    ],
+    "exits": [
+      "The alley opens onto Buttress Street"
+    ],
+    "tags": []
+  },
+  "frequented_by": [
+    "People who want to forget something",
+    "People who are curious about forgetting",
+    "Researchers and neuroscientists",
+    "The anonymous maintainers of the sign and the concrete pad"
+  ],
+  "notable_locations": [
+    "The Frame — the Threshold itself, plain and patient",
+    "The Sign — hand-painted, maintained, the community's only commentary on the anomaly",
+    "The Bench — placed across the alley from the frame, where people sit and decide"
+  ],
+  "coordinates": {
+    "district": "The Shelf",
+    "tier": 2,
+    "street": "Buttress Street (dead-end alley)"
+  },
+  "tags": [
+    "inexplicable",
+    "anomaly",
+    "new_weird",
+    "shelf",
+    "memory",
+    "forgetting",
+    "doorframe"
+  ]
+}

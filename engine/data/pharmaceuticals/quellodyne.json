@@ -1,0 +1,38 @@
+{
+  "name": "Quellodyne",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Quiet",
+    "the Hush",
+    "Quell"
+  ],
+  "category": "withdrawal_aid",
+  "subcategory": "craving_suppressor",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Quellodyne is a selective nucleus accumbens modulator that suppresses the 'wanting' signal — the compulsive drive toward a substance — without affecting emotional range, pleasure capacity, or motivational function. Unlike older craving suppressors that left patients feeling affectively blunted, Quellodyne targets only the specific anticipatory dopamine signatures associated with learned substance-seeking behavior. It is the most widely prescribed withdrawal support medication in GLMZ's Tier 2-4 range.",
+  "method_of_use": "oral",
+  "effects": [
+    "Selective suppression of substance-craving impulses",
+    "Preserved emotional range and hedonic capacity",
+    "Reduced anxiety associated with abstinence",
+    "Mild stabilization of mood variability during withdrawal periods"
+  ],
+  "side_effects": [
+    "Reduced general motivation and ambition in some users ('the Quiet' — a known cultural side effect)",
+    "Mild physical dependency after 6+ weeks of use — requires gradual taper",
+    "Occasional appetite suppression",
+    "BCI users may notice subtle dampening of reward-feedback loops during skill acquisition",
+    "Emotional responses to genuine positive events may feel slightly muted"
+  ],
+  "duration": "8-12 hours per dose; typically prescribed as 90-day course",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "prescription",
+  "street_price": "Φ40 per pill (Φ12 with Tier 3 health coverage)",
+  "cultural_context": "Quellodyne is so widely used in Tier 2 that 'being on Quell' carries no stigma — it's practically normalized as part of working-class recovery culture. The side effect of reduced ambition has become its own cultural touchstone: 'Quell-quiet' describes anyone who's stable, functional, and has stopped reaching. Corporate Tier 4 HR departments quietly screen for long-term Quellodyne use, viewing it as a marker of 'limited growth trajectory.' On the Shelf, it's ground up and combined with stimulants to blunt the crash cycle.",
+  "story_hooks": [
+    "A character has been on Quellodyne so long they've forgotten what wanting something actually feels like — and someone needs them to want something very badly, very soon",
+    "A Shelf chemist has reverse-engineered Quellodyne but altered the selectivity threshold — their version suppresses all wanting, not just substance cravings, and it's been distributed as the legitimate product in a Tier 2 neighborhood",
+    "A Tier 4 executive discovers their entire recovery-support team has been quietly dosing communal water filtration with Quellodyne to keep the workforce 'stable' — and compliant"
+  ]
+}

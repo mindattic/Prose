@@ -1,0 +1,46 @@
+{
+  "id": "58cdb741664018c2024c2d5bc4851f84",
+  "name": "Crucible Industries DeepGreen Oceanic Carbon Sequestration",
+  "brand_name": "Crucible",
+  "product_name": "DeepGreen OCS-4",
+  "type": "technology",
+  "aliases": [
+    "DeepGreen",
+    "OCS-4",
+    "Ocean Carbon Sink",
+    "Deep Sequestration"
+  ],
+  "subcategory": "environmental",
+  "description": "The DeepGreen OCS-4 is an underwater installation that accelerates natural oceanic carbon absorption by stimulating phytoplankton growth across vast areas of ocean surface. The system consists of a network of seafloor-mounted nutrient dispersal units that release precisely calibrated mixtures of iron, nitrogen, and phosphorus compounds into upwelling currents, fertilizing the surface waters and triggering massive phytoplankton blooms. The phytoplankton absorb CO2 through photosynthesis, and when they die, their carbon-rich remains sink to the deep ocean floor, sequestering the carbon for geological timescales.\n\nA single DeepGreen installation — a network of 200 dispersal units covering a 100-square-kilometer seafloor area — can stimulate phytoplankton growth sufficient to sequester approximately 2 million metric tons of carbon per year. Crucible operates 35 installations worldwide, predominantly in nutrient-poor tropical ocean regions where natural upwelling is limited and the potential for bloom stimulation is highest. The installations are entirely automated, with dispersal timing and nutrient ratios controlled by AI systems that monitor ocean chemistry, water temperature, and existing biological activity to optimize bloom conditions.\n\nThe ecological side effects of large-scale ocean fertilization have been debated for over a century, and DeepGreen has not resolved the controversy. The phytoplankton blooms alter local marine food webs — some species benefit enormously from the increased primary production while others are displaced. Oxygen depletion in the deep ocean beneath bloom zones has been documented, creating dead zones at depth even as surface productivity increases. Crucible publishes annual environmental impact reports that emphasize the carbon sequestration benefits while acknowledging 'localized ecological adjustments' — a phrase that marine biologists consider dangerously euphemistic.",
+  "tier_availability": "Tier 4",
+  "developers": [
+    "CRUCIBLE INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Precision nutrient dispersal",
+    "Phytoplankton bloom stimulation",
+    "Deep ocean carbon sequestration",
+    "Marine ecosystem AI monitoring"
+  ],
+  "enables": [
+    "Gigatonne-scale carbon sequestration",
+    "Ocean surface productivity enhancement",
+    "Climate engineering at scale",
+    "Marine carbon credit generation"
+  ],
+  "social_impact": "DeepGreen represents the most ambitious deliberate intervention in Earth's carbon cycle ever attempted. The scale of carbon sequestration is meaningful — Crucible's 35 installations collectively remove approximately 70 million tons of carbon from the atmosphere per year. But the ecological cost is poorly understood and potentially irreversible. Marine biologists warn that the deep-ocean dead zones created by bloom die-off could expand and merge, creating vast oxygen-depleted regions that fundamentally alter deep-ocean ecosystems. Crucible argues that the climate benefits outweigh the ecological risks. The fish that once lived in those deep waters cannot argue back.",
+  "story_hooks": [
+    "A DeepGreen installation in the South Pacific has stopped producing phytoplankton blooms despite continuing to disperse nutrients — something in the water is consuming the nutrients before the phytoplankton can use them, and the something is growing.",
+    "Deep-ocean surveys beneath a DeepGreen bloom zone have discovered biological structures on the seafloor that are not phytoplankton remains — organized, geometric patterns of carbon-rich material that appear to have been deliberately arranged."
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "terraforming",
+    "ocean",
+    "carbon",
+    "sequestration",
+    "crucible",
+    "tier 4"
+  ]
+}

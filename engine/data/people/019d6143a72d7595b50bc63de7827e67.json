@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Grief-Masked",
-      "Caregiver Load",
-      "Bureaucratic Fluency",
-      "NDA Holder",
-      "Quietly Extraordinary"
+      "grief-masked",
+      "caregiver load",
+      "bureaucratic fluency",
+      "nda holder",
+      "quietly extraordinary"
     ]
   },
   "behavioral": {
@@ -281,7 +281,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

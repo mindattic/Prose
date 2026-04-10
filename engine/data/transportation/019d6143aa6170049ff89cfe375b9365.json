@@ -32,11 +32,17 @@
     "corporate",
     "pain",
     "hover",
-    "drone"
+    "drone",
+    "van",
+    "electric",
+    "solar",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Arcturus LS-5 'Sentinel'",
     "TESSERA CR-12 'Whisper'"
-  ]
+  ],
+  "physical_description": "A quadcopter-frame drone the size of a large mastiff, built from reinforced polymer and brushed steel, its four rotors encased in protective carbon-fiber rings. Rain-slicked surfaces bear the faded Axiom corporate logo and district jurisdiction markings; scuff marks and micro-fractures from impact tests scar its chassis. Sensor arrays cluster beneath its belly like a predator's eyes—camera lenses, LIDAR emitters, and the squat cylindrical housing of its kinetic deterrent system catching weak neon light.",
+  "visual_prompt": "military drone quadcopter, large dog-sized, worn steel and polymer chassis, scuffed and battle-tested, sensor clusters and camera arrays, kinetic deterrent system visible, rain-wet surfaces, faded corporate markings, neo-noir gritty aesthetic, product photography, dark industrial background, moody neon accent lighting, detailed mechanical components, worn technology, cyberpunk military hardware"
 }

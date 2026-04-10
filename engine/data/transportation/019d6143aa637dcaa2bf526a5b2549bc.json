@@ -32,11 +32,20 @@
     "night",
     "airship",
     "zeppelin",
-    "lake"
+    "lake",
+    "boat",
+    "aircraft",
+    "cargo",
+    "civilian",
+    "ground",
+    "aerial",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "Tenderloin"
-  ]
+  ],
+  "physical_description": "The Cargo Zeppelin Tender is a squat, utilitarian VTOL with a reinforced titanium-composite hull scarred by years of rough docking procedures and weather exposure. Its fuselage is industrial gray with faded Ferrogate Transit livery, four downward-angled turbofan pods mounted on articulated gimbals, and a reinforced ventral coupling plate studded with magnetic locks and hydraulic connectors. The cockpit is cramped and forward-facing, surrounded by reinforced polycarbonate scratched from salt spray and industrial grit, with worn control surfaces and jury-rigged proximity warning systems taped to the frame.",
+  "visual_prompt": "gritty near-future VTOL cargo tender, industrial titanium hull with faded corporate livery, worn gray metal with rust streaks, four turbofan pods, reinforced docking coupling, cyberpunk neo-noir, detailed product photography, dark rain-slicked background, moody atmospheric lighting, weathered technical aesthetic, StreetSamurai universe"
 }

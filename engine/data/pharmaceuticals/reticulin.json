@@ -1,0 +1,40 @@
+{
+  "name": "Reticulin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Webmind",
+    "Net",
+    "Reticle"
+  ],
+  "category": "cognitive_enhancer",
+  "subcategory": "pattern_recognition_enhancement",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Reticulin is a cortical synchronization agent that enhances connectivity between the brain's pattern-detection networks — particularly between the visual cortex, hippocampus, and prefrontal association areas — allowing users to perceive structural relationships, anomalies, and recurring patterns in complex datasets that would otherwise require extensive deliberate analysis. Preferred by financial analysts, forensic investigators, and systems security professionals who need to find signal in noise.",
+  "method_of_use": "oral",
+  "effects": [
+    "Dramatically enhanced ability to detect patterns in complex data",
+    "Increased sensitivity to anomalies, outliers, and structural relationships",
+    "Improved intuitive recognition of familiar patterns in novel contexts",
+    "Enhanced visual-spatial pattern processing when BCI-linked to data visualization",
+    "Feeling of data 'making sense' at a pre-verbal, gestalt level"
+  ],
+  "side_effects": [
+    "Apophenia — perception of meaningful patterns in random data",
+    "Hypervigilance and mild paranoia as pattern-detection extends to environment",
+    "Difficulty disengaging pattern-seeking when off-task",
+    "Visual pareidolia — faces and shapes appearing in textures and static",
+    "Post-dose: world feels random and meaningless by contrast — existential flatness",
+    "Rare: pattern obsession — inability to stop analyzing a dataset until a pattern is found"
+  ],
+  "duration": "5-7 hours",
+  "addiction_risk": "moderate",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ 28-40 per dose",
+  "cultural_context": "Reticulin is the drug of investigation and analysis — used by forensic accountants chasing financial fraud, threat analysts parsing security feeds, and epidemiologists tracking outbreak patterns through city health data. The street name 'Webmind' describes the phenomenology: users report feeling like they can see the underlying structure of systems, the threads connecting disparate events. The paranoia side effect is documented but underreported; many users believe their enhanced pattern recognition is revealing genuine conspiracies rather than generating false positives. There is a small but active community of Reticulin users who share their 'discoveries.'",
+  "story_hooks": [
+    "A forensic analyst on Reticulin has found a pattern in the city's public health data that suggests a deliberate, long-term contamination event — but she can't tell if what she's seeing is real or the drug's apophenia at work, and the pattern is so disturbing that she's afraid to find out.",
+    "A Nightshade Pharmatech version of Reticulin called 'Net' is circulating in Tier 2, and users are forming increasingly elaborate theories about city governance that range from partially accurate to delusionally conspiratorial — someone is going to act on one of these theories soon.",
+    "A Shelf kid with an old, janky BCI and a stolen prescription of Reticulin starts seeing a pattern in the city's garbage collection routes that shouldn't be there — something is being moved through the waste system."
+  ]
+}

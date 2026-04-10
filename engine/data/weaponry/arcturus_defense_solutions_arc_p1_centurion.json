@@ -1,0 +1,47 @@
+{
+  "id": "7bbe371e17db2b2b95e9c9bb17589a19",
+  "name": "Arcturus Defense Solutions ARC-P1 'Centurion'",
+  "type": "weapon",
+  "aliases": [
+    "Centurion",
+    "ARC-P",
+    "The Corporate Fist"
+  ],
+  "category": "pistol",
+  "description": "The Arcturus Defense Solutions ARC-P1 is a full-size combat pistol chambered in .45 ACP, built on a steel frame with an integrated accessory rail and oversized trigger guard for gloved operation. The weapon is over-engineered by civilian standards — the slide rails are hand-fitted, the barrel bushing is match-grade, and the frame is coated in Arcturus's proprietary CeraShield finish that resists corrosion, abrasion, and chemical exposure.\n\nThe Centurion is Arcturus's entry into the conventional firearms market, and it reflects the company's military contracting DNA. Every component is built to survive conditions that most civilian pistols will never encounter. The result is a heavy, accurate, exceptionally reliable pistol that costs four times what a comparable weapon from any other manufacturer would cost.\n\nArcturus doesn't compete on price. The Centurion exists as a halo product — proof that the same company building electromagnetic accelerator rifles and directed-energy platforms can also make a conventional pistol better than anyone else. Whether that premium is justified is debatable, but the people who buy Centurions don't care about the debate.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — enhanced registration required",
+  "base_technologies": [
+    "Hand-fitted slide rails",
+    "Match-grade barrel",
+    "CeraShield coating",
+    "Steel frame"
+  ],
+  "specifications": "caliber: .45 ACP\neffective_range: 50 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10 rounds\nweight: 1.15 kg",
+  "tactical_use": "A premium combat pistol offering exceptional accuracy and reliability in adverse conditions. The .45 ACP round provides solid terminal performance against unarmored and lightly armored targets. The weight helps manage recoil for follow-up shots. Suitable for deliberate aimed fire in defensive and offensive operations. The integrated rail supports lights, lasers, and compact optics.",
+  "cultural_context": "The Centurion is a statement piece for people who want everyone to know they can afford the best conventional sidearm available. In firearms culture, it occupies a position similar to a luxury watch — technically unnecessary given cheaper alternatives, but carrying one says something specific about the owner's resources and priorities.",
+  "known_users": [
+    "Arcturus Defense Solutions executive protection teams",
+    "Wealthy collectors",
+    "High-end private security",
+    "Corponation board members (personal defense)"
+  ],
+  "story_hooks": [
+    "An Arcturus executive is murdered with his own Centurion — and the CeraShield coating has been chemically stripped in a way that shouldn't be possible outside an Arcturus facility.",
+    "A batch of counterfeit Centurions is circulating that are externally perfect copies but built with substandard internals. Someone has access to Arcturus manufacturing data."
+  ],
+  "ammunition_type": [
+    ".45 ACP"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "premium",
+    "arcturus",
+    "military_grade",
+    "accurate"
+  ],
+  "physical_description": "The Centurion is a brutal slab of steel and purpose, its matte CeraShield finish a dull gunmetal gray that sheds light like wet concrete. Hand-fitted slide rails catch the rain without rusting, and the oversized trigger guard yawns open like a mouth built for gloved fingers. Heavy as a brick, it sits in the palm with the weight of something that was never meant to fail.",
+  "visual_prompt": "full-size .45 ACP pistol, matte gunmetal gray CeraShield finish, steel frame, integrated accessory rail, oversized trigger guard, hand-fitted slide rails, product photography, gritty neo-noir, rain-slicked, industrial decay, dark moody lighting, worn tactical weapon, detailed metalwork, concrete background, cyberpunk aesthetic, photorealistic"
+}

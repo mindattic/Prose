@@ -1,0 +1,46 @@
+{
+  "id": "475cd161f1970fa38bf10e165aeae4b9",
+  "name": "Crucible Industries Cyclone-20 'Sandstorm'",
+  "type": "weapon",
+  "aliases": [
+    "Sandstorm",
+    "Cyclone",
+    "Twenty Gauge"
+  ],
+  "category": "shotgun",
+  "description": "The Crucible Industries Cyclone-20 is a semi-automatic shotgun chambered in 20 gauge with a gas-operated action and a five-round detachable box magazine. The smaller 20-gauge chambering reduces recoil by approximately thirty percent compared to 12-gauge alternatives while maintaining effective close-range lethality, making the Cyclone accessible to shooters who find full-size combat shotguns unmanageable.\n\nThe Sandstorm fills a gap in Crucible's lineup between their pistol-caliber weapons and the full-size Storm-12. The 20-gauge round patterns slightly tighter than 12-gauge at equivalent distances, which can be an advantage in environments where collateral damage is a concern — hospital corridors, residential hallways, and other spaces where a 12-gauge buckshot spread might catch bystanders. Crucible markets this as 'precision shotgunning,' which is marketing hyperbole but contains a kernel of truth.\n\nThe weapon has found particular favor among security personnel who are assigned to sensitive facilities — medical centers, data archives, residential compounds — where the reduced noise, reduced recoil, and tighter pattern of 20-gauge are preferred over the raw power of 12-gauge. The Cyclone proves that a smaller shotgun shell, properly deployed, is more than adequate for most defensive scenarios.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "Gas-operated semi-automatic",
+    "20-gauge chambering",
+    "Detachable box magazine"
+  ],
+  "specifications": "caliber: 20 gauge\neffective_range: 30 meters (buckshot), 40 meters (slug)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 5 rounds (detachable box)\nweight: 2.8 kg",
+  "tactical_use": "A reduced-recoil semi-automatic shotgun for security applications where 12-gauge power is unnecessary or excessive. The 20-gauge round provides adequate close-range lethality with less noise, less recoil, and a tighter pattern. The semi-automatic action enables rapid follow-up shots. Suitable for sensitive-environment security where collateral damage and noise discipline matter.",
+  "cultural_context": "The Sandstorm is the 'smart' shotgun choice — the weapon carried by security teams who have thought carefully about their environment and chosen capability appropriate to their actual threat profile rather than defaulting to maximum firepower. It represents a mature approach to armed security that values precision over power.",
+  "known_users": [
+    "Medical facility security",
+    "Data center defense teams",
+    "Residential compound security",
+    "Recoil-sensitive operators"
+  ],
+  "story_hooks": [
+    "A Sandstorm loaded with experimental 20-gauge flechette rounds turns a routine security response into a massacre — the flechettes penetrate walls that buckshot wouldn't, hitting people in adjacent rooms.",
+    "Crucible Industries is producing a 20-gauge smart-round that steers itself toward the center of mass after leaving the barrel. The prototype is stolen before it enters production."
+  ],
+  "ammunition_type": [
+    "20 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "semi_auto",
+    "20_gauge",
+    "reduced_recoil",
+    "precision"
+  ],
+  "physical_description": "The Cyclone-20 is a compact, utilitarian shotgun with a matte-black polymer stock and foregrip that shows stress cracks from heavy use. The gas tube running along the top of the barrel catches ambient neon in dull glints, while the five-round magazine well is reinforced with worn steel banding. Its profile is deliberately squat and brutal, designed for close-quarters work in the tight corridors of GLMZ industrial zones.",
+  "visual_prompt": "semi-automatic shotgun, 20-gauge, matte black polymer and steel, gas-operated, compact tactical profile, worn and weathered, detailed product photography, gritty neo-noir aesthetic, industrial cyberpunk, dark studio background, neon rim lighting, close-up of receiver and gas tube, utilitarian design, rain-slicked surfaces, photorealistic"
+}

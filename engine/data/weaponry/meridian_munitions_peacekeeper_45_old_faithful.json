@@ -1,0 +1,46 @@
+{
+  "id": "81c50a5bb9a1514b4a1832b0c6e72c5d",
+  "name": "Meridian Munitions Peacekeeper-45 'Old Faithful'",
+  "type": "weapon",
+  "aliases": [
+    "Old Faithful",
+    "Peacekeeper",
+    "The Workhorse Wheel"
+  ],
+  "category": "revolver",
+  "description": "The Meridian Munitions Peacekeeper-45 is a six-shot double-action revolver chambered in .45 ACP using half-moon clips. The weapon is Meridian Munitions' mid-range revolver offering, built with a carbon steel frame and a four-inch barrel. It fills the gap between their bottom-shelf Wheelgun-38 and the premium offerings from Volkov-Saito and Crucible — a functional .45 caliber revolver at a price that working people can afford.\n\nThe .45 ACP cartridge in a revolver produces less felt recoil than in a semi-automatic because the revolver's heavier frame and cylinder absorb more energy. This makes the Peacekeeper surprisingly pleasant to shoot for its caliber. The half-moon clips provide a faster reload than individual cartridge loading, and the .45 ACP's subsonic velocity makes it inherently quieter than magnum cartridges — a consideration in residential environments where the Peacekeeper is commonly kept.\n\nOld Faithful earned its nickname through sheer endurance. Meridian Munitions over-builds the Peacekeeper's lockup mechanism relative to the mild pressures of .45 ACP, resulting in a revolver that continues to function accurately long after the cosmetic finish has worn away to bare steel. Multi-generational Peacekeeper owners are not uncommon — families pass down well-worn examples that still shoot straight after decades of use.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "Carbon steel frame",
+    "Half-moon clip system",
+    "Overbuilt lockup mechanism"
+  ],
+  "specifications": "caliber: .45 ACP\neffective_range: 30 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 6 rounds (cylinder, half-moon clip)\nweight: 0.94 kg",
+  "tactical_use": "A reliable mid-range revolver delivering .45 ACP stopping power with manageable recoil. The half-moon clip system enables faster reloads than traditional revolver loading. The overbuilt mechanism ensures long-term reliability. The .45 ACP's subsonic velocity makes it suitable for residential defense without extreme noise signature.",
+  "cultural_context": "The Peacekeeper is the revolver that families hand down. Its unpretentious construction and exceptional longevity have made it a symbol of working-class permanence in a world of disposable goods. Owning a Peacekeeper that belonged to your parent carries emotional weight in Shelf and Mid communities — it means something survived and kept working.",
+  "known_users": [
+    "Multi-generational Shelf families",
+    "Working-class personal defense",
+    "Revolver owners who prioritize longevity",
+    "Budget .45 carriers"
+  ],
+  "story_hooks": [
+    "A Peacekeeper with three generations of family history is stolen, and the theft triggers a Shelf community response disproportionate to the weapon's monetary value — because the revolver is irreplaceable in ways that have nothing to do with guns.",
+    "A cache of century-old Peacekeepers is discovered in a sealed basement, still functional. The question is why someone hid fifty revolvers in a wall a hundred years ago."
+  ],
+  "ammunition_type": [
+    ".45 ACP"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "reliable",
+    "durable",
+    "heritage",
+    "family"
+  ],
+  "physical_description": "A utilitarian .45 revolver with a brushed carbon steel frame showing honest wear—scratches, minor pitting, and faint rust bloom along the cylinder. The four-inch barrel is dark and utilitarian, the grips weathered polymer in charcoal gray. Half-moon clips sit in the cylinder's chambers like teeth. No flash, no ergonomic flourishes; it's built for function and built to last.",
+  "visual_prompt": "worn .45 revolver with carbon steel frame, half-moon clips visible in cylinder, dark brushed metal with patina, weathered polymer grips, four-inch barrel, gritty product photography, neo-noir industrial aesthetic, detailed mechanical components, moody studio lighting, dark background, realistic weathering and wear, StreetSamurai tabletop RPG style"
+}

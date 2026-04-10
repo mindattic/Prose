@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Community Anchor",
-      "Information Hub",
-      "Skilled Cook",
-      "Guild Member",
-      "ELF Devotee"
+      "community anchor",
+      "information hub",
+      "skilled cook",
+      "guild member",
+      "elf devotee"
     ]
   },
   "behavioral": {
@@ -218,7 +218,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

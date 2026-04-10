@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Quiet Observer",
-      "Institutional Loyalist Under Strain",
-      "E.L.F. Devotee",
-      "Reluctant Witness",
-      "Hidden Courage"
+      "quiet observer",
+      "institutional loyalist under strain",
+      "e.l.f. devotee",
+      "reluctant witness",
+      "hidden courage"
     ]
   },
   "behavioral": {
@@ -269,7 +269,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Southeast Asian": {

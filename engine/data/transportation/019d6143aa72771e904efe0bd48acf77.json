@@ -30,7 +30,10 @@
     "medical",
     "drone",
     "tier 2",
-    "tier 4"
+    "tier 4",
+    "aircraft",
+    "cargo",
+    "aerial"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
@@ -38,5 +41,7 @@
     "Lacuna Genomics",
     "Pikasso Wemba-Þórðarson",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
-  ]
+  ],
+  "physical_description": "A bulbous, white-and-grey medical pod roughly the size of a delivery van, supported by four articulated drone arms that fold against its body during flight. The chassis is scarred composite plastic, scuffed from repeated emergency landings and hasty transfers. Red medical insignia and Tessera branding are faded across its hull, while a transparent stabilization chamber dominates its underside—visible through reinforced polycarbonate that's yellowed with age and chemical residue.",
+  "visual_prompt": "Tessera Ambulance Drone, autonomous medical transport, white-grey composite hull, four articulated mechanical arms, transparent stabilization pod underneath, neon red medical cross branding, worn scuffed plastic, rain-slicked surface, industrial neo-noir aesthetic, gritty product photography, dark stormy GLMZ skyline background, high-tech meets decay, detailed mechanical joints, moody cinematic lighting"
 }

@@ -1,0 +1,48 @@
+{
+  "id": "805cf0f4a25b41d9acc3a9f281cece3c",
+  "name": "Crucible Industries Scatterpulse SP-1 'Static Cling'",
+  "type": "weapon",
+  "aliases": [
+    "Static Cling",
+    "SP-1",
+    "Scatterpulse",
+    "The Clinger"
+  ],
+  "category": "melee",
+  "description": "A compact electromagnetic scatter pistol that fires a burst of electrostatically charged micro-pellets designed to adhere to conductive surfaces on impact. Unlike conventional scatter weapons that rely on kinetic penetration, the Scatterpulse's pellets are coated with a conductive adhesive polymer that bonds to metal, carbon composite, and cyberware housings. Once adhered, the pellets discharge their stored charge in a cascading pulse that disrupts electronic systems and causes involuntary muscle contractions in biological tissue adjacent to cybernetic implants.\n\nThe SP-1 was developed as a non-lethal compliance tool for corporate security details tasked with subduing augmented individuals without destroying expensive cyberware. The pellets' adhesive coating means they cannot be simply brushed off — removal requires a solvent or careful mechanical extraction, during which the pellets continue their intermittent discharge cycle. Targets hit by the Scatterpulse describe the experience as being covered in electric bees.\n\nCrucible markets the weapon as Tier 2 compliant on the basis of its non-lethal classification, though emergency medical reports document at least twelve cardiac events linked to Scatterpulse discharges interacting with thoracic cyberware. Crucible maintains that these incidents resulted from 'pre-existing implant conditions' rather than weapon effects.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — non-lethal compliance tool classification",
+  "base_technologies": [
+    "Electrostatic micro-pellet projection",
+    "Conductive adhesive polymer coating",
+    "Cascading discharge pulse architecture"
+  ],
+  "specifications": "pellet_count: ~400 per cartridge\neffective_range: 3-12 meters\nrate_of_fire: Semi-automatic, 1 shot per 0.6 seconds\ncapacity: 8-cartridge magazine\nweight: 1.4 kg\npower_source: Integrated charge cell, 40 shots\ndischarge_duration: 90 seconds per pellet after adhesion",
+  "tactical_use": "Security teams use the Scatterpulse to disable augmented targets without engaging in physical confrontation. A single well-placed shot coats a target's cybernetic limb or torso augmentation in discharging pellets, causing involuntary spasms and system disruption that renders most aug-dependent individuals temporarily helpless. The weapon is most effective against heavily augmented targets — the more cyberware a person carries, the more conductive surfaces the pellets can bond to. Against unaugmented individuals, the weapon causes painful but manageable skin irritation.",
+  "cultural_context": "The Scatterpulse has earned genuine hatred in GLMZ's augmented communities. It is viewed as a weapon designed to punish people for their cyberware — to turn their body modifications into liabilities. The phrase 'getting clinged' has entered slang as a description of any situation where a person's strengths are weaponized against them. Several aug-rights advocacy groups have filed legal challenges against the SP-1's non-lethal classification, citing the cardiac incident reports.",
+  "known_users": [
+    "Corporate security compliance teams",
+    "GLMZ Municipal Security (limited deployment)",
+    "Private augmented-individual detention contractors"
+  ],
+  "story_hooks": [
+    "A modified Scatterpulse has appeared that fires pellets with a 48-hour discharge cycle instead of 90 seconds — targets are incapacitated for days. Someone has weaponized the compliance tool.",
+    "An aug-rights activist has developed a spray-on coating that neutralizes Scatterpulse adhesion — and Crucible Industries wants the formula suppressed."
+  ],
+  "ammunition_type": [
+    "Electrostatic micro-pellet cartridge"
+  ],
+  "tags": [
+    "weapon",
+    "melee",
+    "scatter",
+    "electromagnetic",
+    "non-lethal",
+    "anti-cyberware",
+    "tier 2",
+    "compliance"
+  ],
+  "physical_description": "The SP-1 is a stubby, industrial-looking device barely larger than a fist, its weathered titanium-alloy chassis scored with impact marks and streaked with corrosion. A fat barrel assembly dominates the front, ringed with copper contact strips that have oxidized to a dull green patina. The grip is wrapped in worn synthetic rubber, tacky with accumulated grime, and a small capacitor bank visible through a cracked polymer window on the side pulses with a faint amber light.",
+  "visual_prompt": "compact electromagnetic scatter pistol, industrial titanium housing, worn copper contact strips, oxidized green patina, fat barrel assembly, synthetic rubber grip, visible amber capacitor bank behind cracked polymer window, gritty neo-noir product photography, detailed weathering and corrosion, dark studio background, moody neon rim lighting, cyberpunk tech, high contrast shadows"
+}

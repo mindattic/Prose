@@ -1,0 +1,39 @@
+{
+  "name": "Immuflex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "the balance",
+    "chrome-immune",
+    "modtabs"
+  ],
+  "category": "medical",
+  "subcategory": "immune modulator for heavy augmentation",
+  "manufacturer": "Helix Biosystems",
+  "description": "An advanced immunomodulatory therapy for individuals with augmentation loads exceeding 40% body mass replacement, where standard rejection suppressors become insufficient and the immune system requires comprehensive recalibration rather than simple suppression. Immuflex works by reprogramming regulatory T-cell populations to recognize a vastly expanded set of synthetic materials as self, while simultaneously boosting innate immunity to compensate for the adaptive suppression required. It is a sophisticated and expensive intervention that heavy augment users cannot function without.",
+  "method_of_use": "injection",
+  "effects": [
+    "comprehensive immune recalibration for heavy-augment physiology",
+    "regulatory T-cell reprogramming for synthetic material tolerance",
+    "compensatory innate immunity enhancement",
+    "reduces systemic inflammation from multiple augment-tissue interfaces",
+    "monthly dosing cycle"
+  ],
+  "side_effects": [
+    "flu-like symptoms for 48–72 hours post-injection during recalibration phase",
+    "narrow therapeutic window — overdose causes autoimmune flares",
+    "extremely dangerous if administered to someone below 30% augmentation load",
+    "expensive monitoring requirements",
+    "rare: immune system lock into tolerogenic state, reducing pathogen response to dangerous levels"
+  ],
+  "duration": "30 days per injection cycle",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ1,200–Φ3,000 per monthly injection",
+  "cultural_context": "Immuflex is the drug of the heavily augmented — full-conversion operators, corporate security with military-grade chrome, workers in industries that require extreme augmentation. The cost creates a brutal economic trap: heavy augmentation is often required for certain high-paying jobs, but maintaining that augmentation costs a significant fraction of that income. Tier 3 heavy-augment workers sometimes form medication co-ops to share monitoring costs. On the Shelf, former military operators with heavy chrome and no income are among the most medically precarious people in GLMZ.",
+  "story_hooks": [
+    "A veteran full-conversion operative living on the Shelf can't afford Immuflex and is weeks away from a systemic immune collapse — she has skills that anyone willing to pay for her medication could use.",
+    "A Helix researcher has developed a one-time gene therapy that could replace monthly Immuflex injections permanently — the therapy was quietly shelved when the financial modeling showed it would destroy a major revenue stream.",
+    "Someone is selling black-market Immuflex to low-augmentation users as a performance drug with catastrophic results — the autoimmune flares are being written off as chrome rejection by overwhelmed Shelf clinics."
+  ]
+}

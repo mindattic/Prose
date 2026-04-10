@@ -1,0 +1,39 @@
+{
+  "name": "Dermatrel",
+  "type": "pharmaceutical",
+  "aliases": [
+    "scar fade",
+    "clean skin",
+    "port eraser"
+  ],
+  "category": "medical",
+  "subcategory": "anti-scarring compound for augment sites",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Dermatrel is a topical and injectable anti-fibrotic compound specifically formulated for augmentation installation sites, where the body's normal scarring response creates fibrous capsules around chrome, distorts SNT interface margins, and produces the raised, discolored tissue known as 'port scarring' or 'chrome keloid.' It breaks down excess collagen deposition and promotes organized tissue remodeling, keeping augment sites clean and functional.",
+  "method_of_use": "dermal_patch",
+  "effects": [
+    "dissolves excess fibrous capsule around augment sites",
+    "reduces chrome keloid formation",
+    "improves cosmetic appearance of augmentation scars",
+    "prevents fibrous tissue from interfering with augment function",
+    "softens and remodels existing port scarring"
+  ],
+  "side_effects": [
+    "local skin sensitivity and redness",
+    "temporary augment interface disruption during active treatment",
+    "skin thinning at application site with prolonged use",
+    "rare cases of excessive collagen dissolution causing weak tissue",
+    "staining of skin at patch site"
+  ],
+  "duration": "Patch worn 72 hours; treatment course 4-8 weeks",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 2-3",
+  "legality": "legal",
+  "street_price": "Φ40 per patch (generic); Φ120 per patch (Lazarus cosmetic grade)",
+  "cultural_context": "Port scarring is a class marker in GLMZ. Tier 4-5 augment recipients get premium surgical installation and immediate Dermatrel treatment — their chrome sits flush in unmarked skin. Tier 1-2 residents who got budget installs or black-market work carry the raised, discolored tissue of augments that healed badly. Lazarus markets premium Dermatrel as 'invisible augmentation' to the upper tiers. On the Shelf, people use it for function — fibrous capsules can literally lock up a joint or degrade a neural interface.",
+  "story_hooks": [
+    "Port scarring patterns have become a form of identity among Shelf communities — some residents are deliberately stopping Dermatrel treatment to preserve the marks of their chrome history",
+    "A counterfeit Dermatrel patch is dissolving tissue indiscriminately, causing augment sites to open up and chrome to become exposed",
+    "A character notices that a contact's freshly clean augment sites suggest recent expensive Dermatrel treatment — but this person claims to be Tier 1"
+  ]
+}

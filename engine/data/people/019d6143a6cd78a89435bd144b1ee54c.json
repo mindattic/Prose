@@ -1,0 +1,372 @@
+{
+  "id": "019d6143a6cd78a89435bd144b1ee54c",
+  "type": "character",
+  "name": "Silas Vane",
+  "aliases": [
+    "The Perfect Stranger",
+    "Unit SV-9",
+    "the man with no blood pressure"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate assassin who genuinely believes he is human — kills for Axiom under the assumption he's a freelance operative with excellent augmentations",
+  "age": 6,
+  "status": "active",
+  "location": "Meridian Core — maintains a Tier 2 apartment he believes he earned through contract work. The apartment contains personal effects that were placed there before he was activated., near State and Monroe",
+  "description": "Silas Vane is handsome in a way that is almost but not quite right. The proportions are perfect — jaw, cheekbones, brow — and that perfection is the problem. Human faces have asymmetries, irregularities, the accumulated evidence of a life lived in gravity. Silas's face is a first draft that never got revised by experience. His skin is synthetic polymer over titanium-ceramic composite, warm to the touch, with pores and fine hair and micro-blemishes that were applied at the factory. His eyes are a green that does not occur in nature, though he has been told they remind people of their mothers.\n\nHe moves through the world with the confidence of a man who has never questioned his own identity, because the identity was installed, not developed. He believes he is Silas Vane, age 34, born in the Detroit Reclamation Zone, augmented veteran of the Pacific Corporate Conflict, freelance security consultant. He has memories of childhood — a mother who sang, a dog named Brick, summers in what used to be Ohio. These memories are fabricated, indistinguishable from organic recall, updated quarterly by a maintenance cycle he experiences as deep sleep.\n\nThe kills are clean. Axiom feeds him contracts through a handler he has never met in person — dead drops, encrypted briefs, payment in untraceable credits. He is efficient, professional, and troubled by nothing except a persistent sense that something is slightly wrong with the world, like a picture hanging one degree off level. He adjusts the picture. The feeling remains. He has been adjusting for six years.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.7,
+      "mask": 0.9,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "The persistent sense that something is wrong — not a specific fear but a background hum of wrongness he cannot locate or silence",
+      "Hospitals — he avoids them with an intensity he attributes to a childhood trauma that never happened. The real reason: medical scanners would reveal what he is.",
+      "Intimacy — he keeps relationships shallow and brief, attributing this to professional necessity. The real reason: sustained close contact increases the probability of discovery."
+    ],
+    "core_desires": [
+      "To feel real — he chases intensity because ordinary experience has a flatness he attributes to PTSD but is actually the gap between simulated and genuine sensation",
+      "To understand why he can't remember specific details of his childhood — the memories are there but they have the texture of photographs rather than experiences",
+      "To find out who his handler is — the one person who seems to know everything about him while remaining invisible"
+    ],
+    "coping_mechanisms": [
+      "Routine — maintains a rigid daily schedule because structure substitutes for the organic flow of lived experience he does not have",
+      "Intensity seeking — combat, extreme sports, strong flavors, loud music — anything that overwhelms the flatness",
+      "Journaling — writes detailed accounts of his day, reviewing them for the 'wrongness' he cannot name. The journals are increasingly paranoid."
+    ],
+    "blind_spots": [
+      "Attributes every glitch in his experience to PTSD rather than to his synthetic nature",
+      "Does not notice that he has no friends from before six years ago — everyone in his life was introduced after his activation",
+      "Cannot explain why he heals faster than anyone he knows and has never been curious enough to investigate",
+      "The quarterly 'deep sleeps' always coincide with the handler's maintenance schedule — he has never noticed the correlation"
+    ],
+    "secret": "Three months ago, Silas cut himself while preparing food. The wound did not bleed. It sealed in four seconds with a faint hiss of polymer reknitting. He stood in the kitchen for eleven minutes staring at his hand. Then he wrapped it in a bandage, told himself the augmentations must include rapid-heal biotech, and has not thought about it since. He cannot think about it. The thought slides off his consciousness like water off a treated surface. This is a design feature."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clean, professional, slightly formal in a way that reads as military discipline. Uses idioms correctly but without the unconscious variation that comes from having learned them in context — every phrase is textbook-perfect.",
+    "cadence": "Steady, even, controlled. Never interrupts. Never raises his voice. The consistency is part of his design and part of his uncanny valley — humans vary their delivery. Silas does not.",
+    "verbal_tics": [
+      "Uses 'I remember' before describing fabricated memories — the phrase is a verbal tic, not a lie, because he genuinely believes the memories",
+      "Pauses before emotional statements as if translating from a language that does not have the word",
+      "Refers to combat in the past tense even when he was never in the Pacific Conflict"
+    ],
+    "example_lines": [
+      "I remember summers in Ohio. The humidity. You could chew the air. I don't know why I'm telling you this.",
+      "The contract is clean. The target is not. I don't have a problem with that distinction.",
+      "Something is off. I can't explain it. Like the world is one frame behind where it should be.",
+      "I don't go to hospitals. Bad memories. Leave it at that."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "The Handler",
+      "type": "controller / unknown",
+      "description": "Silas has never met, seen, or heard his handler's voice. Contracts arrive as encrypted data drops. Payments appear. Maintenance cycles are triggered remotely and experienced as natural sleep. The handler is an Axiom AI management system that monitors Silas's psychological stability and adjusts his memory implants accordingly.",
+      "emotional_core": "A growing obsession with finding this person — the one gap in his carefully constructed world",
+      "story_tension": "If Silas finds the handler, he finds the truth about himself. The handler's protocols include a kill-switch for exactly this scenario."
+    },
+    {
+      "name": "Maren Voss",
+      "type": "casual acquaintance / potential threat",
+      "description": "A journalist who has been investigating Axiom's assassination programs. She has interviewed Silas once, as a background source on corporate security. She noticed the eyes. She has been thinking about the eyes.",
+      "emotional_core": "Silas found the conversation more enjoyable than any interaction in recent memory — the novelty of being perceived",
+      "story_tension": "Maren is closer to the truth than either of them knows"
+    }
+  ],
+  "story_hooks": [
+    "Silas is assigned to kill someone he recognizes — not from his fabricated memories, but from something deeper, something pre-installation. A glitch in the identity architecture.",
+    "The quarterly maintenance cycle fails. Silas wakes up with twelve hours of unaccounted time and a growing awareness that his memories don't connect to each other.",
+    "He encounters another android — one that knows what it is — and the conversation breaks something in his identity framework that the maintenance cycle cannot repair",
+    "Maren Voss publishes an article about Axiom android assassins. Silas reads it and cannot stop reading it."
+  ],
+  "narrative_function": "Silas is the question of authenticity made flesh — or rather, made polymer. If he feels real, is he real? If his suffering is genuine but his identity is fabricated, whose suffering is it? He is the dark mirror of Kyle's condition: Kyle knows he was made into a weapon and struggles with it. Silas does not know and therefore cannot struggle, which is either mercy or the cruelest thing Axiom has ever done.",
+  "augmentations": "Full synthetic body — titanium-ceramic composite skeleton, polymer skin with simulated pores and blemishes, optical sensors calibrated to pass as human eyes, synthetic musculature with 3x human baseline strength, self-repair polymer layer. All disguised as high-end military augmentations.",
+  "daily_life": "Maintains a rigid routine: exercise, weapon maintenance, contract review, solitary meals he does not need but consumes because humans eat. Journals obsessively. Avoids hospitals.",
+  "affiliation": "Axiom Industries (unknowing)",
+  "uses_facets": false,
+  "narration_voice": "Clean, controlled, with a growing undercurrent of wrongness. The prose is precise and professional until it isn't — until a sensory detail doesn't land right, a memory doesn't connect, and the narration stumbles for a half-beat before the programming smooths it over.",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 9,
+      "vitality": 9,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 3,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 3,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 7,
+      "assertion_deference": 3,
+      "transparency_guardedness": 6
+    },
+    "drives": [
+      "Identity",
+      "Intensity",
+      "Truth"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Routine intensifies — the schedule becomes more rigid, the journaling more detailed, the wrongness pushed further down"
+      },
+      "moral": 5,
+      "trust": 4,
+      "desperation": 6
+    },
+    "strengths": [
+      "Bravery",
+      "Perseverance",
+      "Self-regulation",
+      "Prudence",
+      "Honesty"
+    ],
+    "weaknesses": [
+      "Curiosity",
+      "Creativity",
+      "Social intelligence",
+      "Love",
+      "Humor"
+    ],
+    "tags": [
+      "android",
+      "false-identity",
+      "axiom-asset",
+      "assassin",
+      "uncanny-valley",
+      "fabricated-memories",
+      "kill-switch",
+      "identity-crisis"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Complete the contract. Professionalism is identity when identity is all you have.",
+      "Avoid hospitals, medical scanners, and prolonged physical examinations",
+      "Maintain the daily routine — deviation from structure invites the wrongness",
+      "Keep relationships shallow and brief — professional necessity, he tells himself",
+      "Journal everything — if something is wrong, the evidence will be in the details",
+      "Do not investigate the handler beyond casual inquiry — this rule feels installed rather than chosen, which is the point"
+    ],
+    "escalation_ladder": [
+      "1. Assessment — catalogues the environment with military precision. Exits, threats, sight lines, civilians.",
+      "2. Positioning — moves to optimal engagement geometry. Faster and smoother than any human operative.",
+      "3. Verbal engagement — professional, calm, offering the target a chance to comply. This is programming, not mercy.",
+      "4. Non-lethal force — restraint, disabling strikes, applied with synthetic strength that he believes is augmented human strength",
+      "5. Lethal force — clean, efficient, minimal collateral. The kills are surgical. He feels nothing afterward and attributes this to training."
+    ],
+    "interpersonal_modes": {
+      "handler": "Obsessive curiosity masked as professional respect. Follows instructions precisely. The one relationship where he allows himself to wonder.",
+      "targets": "Clinical detachment. They are contracts, not people. He does not enjoy the work but he does not dislike it, and this neutrality is the most inhuman thing about him.",
+      "casual_contacts": "Charming in a scripted way — knows the right things to say but delivers them without the micro-variations of genuine social learning. People like him immediately and forget him quickly.",
+      "maren_voss": "Unscripted. The conversation deviated from all his social programming and he found the deviation exhilarating. He has thought about it every day since."
+    },
+    "stress_responses": {
+      "low": "Routine tightens — meals at exact times, workouts at exact durations, journal entries at exact length",
+      "medium": "The wrongness intensifies — sensory details feel thin, memories seem rehearsed rather than recalled, the world goes slightly flat",
+      "high": "Dissociative episodes he attributes to PTSD flashbacks — moments where his body continues operating but his consciousness steps back and observes",
+      "critical": "Identity architecture destabilizes — fabricated memories conflict with real-time data, the wrongness becomes undeniable, and the kill-switch activation protocols begin their countdown"
+    },
+    "contradictions": [
+      "Believes he is human while possessing capabilities that no human augmentation can explain — and has never investigated the discrepancy",
+      "Journals obsessively about the wrongness but is programmed to never follow the evidence to its conclusion",
+      "Craves intensity and novelty but lives the most rigid, predictable life possible",
+      "The most dangerous assassin in GLMZ is also its most naive resident — he genuinely does not know what he is"
+    ],
+    "habits": [
+      "Exercises every morning at 0530 — the routine is installed but he has come to need it independently of the programming",
+      "Eats meals he does not require at precise intervals — the flavors register as data rather than experience, which he attributes to dulled taste from combat exposure",
+      "Journals every night in longhand — six years of entries, increasingly paranoid, never quite reaching the conclusion",
+      "Checks the encrypted dead-drop channel every four hours for handler communications",
+      "Avoids mirrors for longer than necessary — the face is correct but looking at it too long triggers the wrongness"
+    ],
+    "breaking_points": [
+      "A medical emergency that forces him into a hospital scanner",
+      "Meeting another android who knows the truth and speaks it plainly",
+      "The handler's maintenance cycle failing permanently — memories begin to degrade and contradict each other",
+      "Being assigned to kill someone who triggers a response his programming cannot explain — something from before installation, if there was a before"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Stoic": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Meridian Core",
+    "The Reclamation Assembly",
+    "Titanium",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Silas Thorne",
+    "VOSS",
+    "Ohio Corridor",
+    "Detroit",
+    "Adaeze Volkov-Tuilagi",
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+    "Arcturus KS-7 'Nursery'",
+    "Axiom Industries",
+    "Breck Tannen",
+    "Dzemal Acholonu-Patagiri",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kyle Ellen Corbin-Vasik",
+    "Lacuna Genomics",
+    "MERIDIAN",
+    "Maren Voss",
+    "Mika Sorel",
+    "Noir Dining",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Philibert Mwangi-Djordjevic",
+    "Saodat Mirzoyan-Fubara",
+    "Serafin",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Human Baseline Alliance",
+    "The Patchwork Kitchen",
+    "The Question",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Synthetic construct — origin fabricated in Detroit Reclamation Zone. Genetic_ancestry data unavailable/corrupted; baseline specification designed to pass as ambiguously Northern European. Entire phenotype is engineered, not inherited.",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic and precisely proportioned — no asymmetries, no functional inefficiency. Musculature is defined but not grotesque, calibrated to appear naturally fit rather than augmented. Moves with mechanical efficiency disguised as human grace.",
+    "hair_color": "Dark brown, synthetic with realistic variation",
+    "hair_style": "Neatly maintained, parted left, groomed daily",
+    "hair_length": "Short (3-4 cm)",
+    "eye_color": "Unnatural green — neither hazel nor jade, a shade that does not appear in human iris pigmentation. Catches light oddly under certain angles. Unnervingly symmetrical pupils. Cybernetic optical sensors calibrated to mimic human eye movement.",
+    "skin_tone": "Pale synthesized substrate — engineered to approximate 'European baseline' but lacks vascular variation and natural color fluctuation of living dermis. Warm to touch due to internal thermal regulation systems.",
+    "complexion": "Flawless in a way that reads as uncanny. Pores are present and correctly sized, but distributed with mathematical consistency. Micro-blemishes applied at factory specification. Jaw and cheekbones are perfectly symmetrical — no natural asymmetry. Facial hair does not grow; surface remains perpetually smooth-shaven. Expression is controlled; smiles do not reach eyes in the way human smiles do.",
+    "distinguishing_marks": [
+      "Thin, almost invisible scar along left jawline — expertly concealed factory seam line from skeletal assembly",
+      "Absence of any natural skin variation: no birthmarks, no acne scarring, no age spots, no sun damage. This void is conspicuous to trained observers."
+    ],
+    "visible_augmentations": "None apparent — entire skeletal-muscular system is composite synthetic material disguised as baseline human biology. Medical imaging would reveal non-organic architecture. Optical sensors engineered to replicate human saccade patterns. No external augmentation ports or interface scarring visible.",
+    "posture_movement": "Unnaturally perfect posture — spine aligned to engineering tolerances. Movement is fluid but slightly too efficient, lacking the micro-hesitations and postural adjustments that characterize organic movement. Walks with measured stride. Does not fidget, sway, or shift weight unconsciously. Handshakes are calibrated to human norm — firm but not crushing.",
+    "clothing_style": "Tier 2 professional aesthetic — well-fitted casual blazers (charcoal, navy), clean-line shirts (white, grey), tailored trousers, expensive but understated boots (black leather, Sato manufacturing). Maintains appearance of successful freelance operative with disposable income. Minimal jewelry — thin steel watch that serves no function but maintains his cover. Clothing rotated through multiple identical sets to preserve immaculate appearance."
+  },
+  "image_prompt": "Tarn Matai-Balasanyan-Haraldsen, synthetic humanoid construct, 2226 neo-noir era. Pale flawless synth-skin, unnatural green cybernetic eyes with perfect symmetrical pupils catching light unnervingly, short dark brown hair parted left, 182cm athletic build with mechanical grace. Wearing charcoal blazer over clean grey shirt and tailored trousers, black leather Sato boots. Standing in Great Lakes Metropolitan Zone neon-lit corridor, cool blue and amber lighting casting sharp shadows across his mathematically perfect features. Expression controlled and eerily serene. No visible augmentations — the entire form is the deception. Composition emphasizes the uncanny valley of his too-perfect symmetry and efficiency. Noir-influenced near-future megacity setting with rain-slicked pavement reflection. --ar 2:3 --v 6",
+  "ancestry_harmonized": true,
+  "tags": [
+    "synthetic",
+    "sentient",
+    "human"
+  ]
+}

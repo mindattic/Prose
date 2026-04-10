@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Sky-Born",
-      "Bioluminescent",
-      "Airship Courier",
-      "Rootless",
-      "Carrying Secrets"
+      "sky-born",
+      "bioluminescent",
+      "airship courier",
+      "rootless",
+      "carrying secrets"
     ]
   },
   "behavioral": {
@@ -265,7 +265,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

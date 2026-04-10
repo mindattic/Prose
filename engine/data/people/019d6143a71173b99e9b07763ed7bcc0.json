@@ -95,10 +95,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Artisan",
-      "Principled Criminal",
-      "Information Broker (Passive)",
-      "Ritual Thinker"
+      "artisan",
+      "principled criminal",
+      "information broker (passive)",
+      "ritual thinker"
     ]
   },
   "behavioral": {
@@ -282,7 +282,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

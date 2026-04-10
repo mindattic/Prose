@@ -99,7 +99,7 @@
       "street medic",
       "unlicensed surgeon",
       "community anchor",
-      "E.L.F. devotee",
+      "e.l.f. devotee",
       "stubborn idealist"
     ]
   },
@@ -266,7 +266,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Indigenous American": {

@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Surgeon",
-      "Institutional Power",
-      "Hidden Compassion",
-      "E.L.F. Devotee",
-      "Moral Anchor"
+      "surgeon",
+      "institutional power",
+      "hidden compassion",
+      "e.l.f. devotee",
+      "moral anchor"
     ]
   },
   "behavioral": {
@@ -248,7 +248,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

@@ -1,0 +1,46 @@
+{
+  "id": "37ba5854665e95109bda729485de64de",
+  "name": "Arcturus Defense Solutions Citadel Mobile Barrier",
+  "brand_name": "Arcturus",
+  "product_name": "Citadel MBG-12",
+  "type": "technology",
+  "aliases": [
+    "Citadel",
+    "MBG-12",
+    "Rolling Shield",
+    "Mobile Dome"
+  ],
+  "subcategory": "defense",
+  "description": "A vehicle-mounted barrier generator that projects a protective dome around a moving convoy. The Citadel MBG-12 is installed on armored personnel carriers and executive transport vehicles, generating a hemispherical shield with a 15-meter radius that moves with the vehicle. The system uses a phased array of monopole emitters mounted on the vehicle's roof and fenders, with real-time field geometry adjustments calculated by an onboard AI that compensates for vehicle speed, terrain, and incoming threat vectors.\n\nThe mobile barrier presents unique engineering challenges that static installations avoid. A moving barrier must continuously reshape itself as the vehicle turns, accelerates, and brakes, requiring emitter output adjustments on a millisecond timescale. The Citadel's AI processes telemetry from 400 sensors per second to maintain field integrity during maneuvers. At speeds above 180 km/h, the field begins to develop turbulence in its leading edge — chaotic oscillations in the monopole lattice that create brief vulnerability windows. Arcturus rates the Citadel for safe operation at speeds up to 160 km/h, though field operators routinely exceed this.\n\nThe MBG-12 consumes power at roughly eight times the rate of an equivalent static barrier due to the constant field reshaping, limiting its operational endurance to approximately 45 minutes on a dedicated reactor feed. Convoy operations typically designate one vehicle as the shield carrier, sacrificing cargo or passenger capacity for the Citadel's generator, reactor, and cooling systems. The system costs 1.8 million Φ per vehicle installation, placing it firmly in the domain of corporate military logistics and executive protection details for the highest-tier corponation officers.",
+  "tier_availability": "Tier 5",
+  "developers": [
+    "ARCTURUS DEFENSE SOLUTIONS"
+  ],
+  "base_technologies": [
+    "Mobile monopole phased arrays",
+    "Real-time field geometry AI",
+    "High-frequency emitter adjustment",
+    "Vehicle-integrated power systems"
+  ],
+  "enables": [
+    "Protected convoy movement",
+    "Mobile command post shielding",
+    "Executive motorcade defense",
+    "Field hospital protection"
+  ],
+  "social_impact": "The Citadel has made executive transport a visible display of corporate power. Convoys moving through contested districts with their barriers active are impossible to miss — the dome distorts the air above the vehicles like a heat mirage, and any debris or projectiles that contact it flash violet and deflect. For district residents who live without any protection, watching a corporate convoy roll through their neighborhood inside an impenetrable bubble is a daily reminder of their expendability.",
+  "story_hooks": [
+    "A Citadel-equipped convoy was ambushed in the Gulch using a previously unknown weapon that caused the barrier to implode inward rather than collapse — the occupants were killed by their own shield.",
+    "An executive's Citadel unit has been modified to extend its field over a 50-meter radius at reduced strength, creating a protected zone large enough to hold a clandestine meeting in the open — the question is who they are meeting."
+  ],
+  "tags": [
+    "defense",
+    "technology",
+    "forcefield",
+    "shield",
+    "mobile",
+    "vehicle",
+    "arcturus",
+    "tier 5"
+  ]
+}

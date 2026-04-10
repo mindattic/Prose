@@ -96,10 +96,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Artisan",
-      "Underpaid Expert",
-      "Quiet Pride",
-      "Archive Keeper"
+      "artisan",
+      "underpaid expert",
+      "quiet pride",
+      "archive keeper"
     ]
   },
   "behavioral": {
@@ -202,7 +202,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

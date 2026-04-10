@@ -1,0 +1,49 @@
+{
+  "id": "ba70e69b5bd8ef61ca6a6b15b85c62bf",
+  "name": "Tessera Neural Assault System TNAS-1 'Puppeteer'",
+  "type": "weapon",
+  "aliases": [
+    "Puppeteer",
+    "TNAS-1",
+    "Ghost Rifle"
+  ],
+  "category": "assault_rifle",
+  "description": "The TNAS-1 Puppeteer represents Tessera's most aggressive integration of neural technology with small arms. The weapon cannot be fired by trigger pull — it has no trigger. The Puppeteer fires exclusively through BCI neural command, with the operator's intent translated into firing decisions by an onboard neural interpretation engine. Think 'fire' and it fires. Think 'burst' and it fires three rounds. Think 'suppress' and it dumps a magazine at the designated area.\n\nThe rifle chambers 5.8mm caseless and features a free-floating barrel in a fully sealed receiver that eliminates environmental ingress. Without a trigger mechanism, trigger guard, or manual safety, the weapon's exterior is a smooth polymer shell with no external controls beyond a physical power switch. The BCI link handles everything — fire mode selection, round counting, malfunction diagnostics, and even thermal management alerts.\n\nThe Puppeteer is the most controversial weapon in production. Advocates praise its response time — neural firing commands bypass the mechanical delay of trigger pull, reducing time-to-fire by approximately 80 milliseconds. Critics argue that a weapon fired by thought is a weapon that can be fired by intrusive thoughts, hacked neural commands, or BCI malfunction. Tessera's liability waivers for the TNAS-1 are longer than the user manual.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — requires BCI certification and psychological screening",
+  "base_technologies": [
+    "Neural intent firing system",
+    "Sealed triggerless receiver",
+    "BCI neural interpretation engine",
+    "Thought-command fire control"
+  ],
+  "specifications": "caliber: 5.8mm caseless\neffective_range: 500m\nrate_of_fire: 850 rpm (cyclic, neural-commanded)\nmagazine_capacity: 35 rounds\nweight: 3.1 kg",
+  "tactical_use": "The Puppeteer offers the fastest possible engagement time for any conventional firearm. The 80ms advantage over trigger-fired weapons is marginal in isolation but decisive in close-quarters engagements where reaction time determines survival. The sealed receiver and lack of external mechanisms make the weapon virtually maintenance-free in the field. However, any disruption to the operator's BCI link renders the weapon completely inoperable — it becomes an expensive club.",
+  "cultural_context": "The Puppeteer provokes visceral reactions. Neural-purists see it as the natural evolution of human-weapon integration. Traditional operators view it as a weapon that can be turned against its user by anyone with a BCI hack. The psychological screening requirement has created a secondary market for forged certification documents, and several incidents of accidental discharge by stressed operators have fueled regulatory campaigns.",
+  "known_users": [
+    "Tessera elite security",
+    "BCI-specialized operators",
+    "Neural warfare units"
+  ],
+  "story_hooks": [
+    "A Puppeteer operator's BCI was hacked during an engagement, causing the weapon to fire on friendly targets. The neural intrusion was so subtle the operator believed they were shooting at enemies.",
+    "A black-market neural interface claiming to be Puppeteer-compatible is actually recording the operator's neural patterns for resale to a data broker."
+  ],
+  "ammunition_type": [
+    "5.8mm caseless standard",
+    "5.8mm caseless subsonic"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "neural",
+    "BCI",
+    "triggerless",
+    "controversial",
+    "Tessera",
+    "tier 4"
+  ],
+  "physical_description": "The Puppeteer is a sleek, angular rifle with a sealed polymer receiver in matte gunmetal gray, its surfaces scratched and salt-stained from heavy use. Where a trigger guard would sit, there's only smooth housing—a neural interface plate runs along the underside, pocked with contact nodes that gleam dully beneath gun oil residue. The free-floating barrel protrudes from a sealed shroud, its muzzle brake marked with faint tooling scars, and the entire frame has the utilitarian brutality of a weapon designed to be thought into violence rather than pulled.",
+  "visual_prompt": "TNAS-1 Puppeteer neural assault rifle, matte gunmetal gray sealed receiver, no trigger guard, neural interface plate with contact nodes, 5.8mm caseless, angled futuristic design, industrial product photography, gritty neo-noir aesthetic, worn scratched surfaces, dark studio background, moody cinematic lighting, detailed mechanical precision, cyberpunk weaponry, rain-slicked reflections"
+}

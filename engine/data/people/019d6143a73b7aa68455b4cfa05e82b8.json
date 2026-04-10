@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Street-smart",
-      "Hyperactive",
-      "Loyal",
-      "Route-memory",
-      "Observant"
+      "street-smart",
+      "hyperactive",
+      "loyal",
+      "route-memory",
+      "observant"
     ]
   },
   "behavioral": {
@@ -207,7 +207,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

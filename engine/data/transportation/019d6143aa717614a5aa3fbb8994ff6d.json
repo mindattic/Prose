@@ -34,12 +34,17 @@
     "vehicle",
     "circuit",
     "tier 4",
-    "tier 5"
+    "tier 5",
+    "truck",
+    "manual",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "Sagyn Padilla-Nti",
     "Somadina Karlsen-Sow"
-  ]
+  ],
+  "physical_description": "The Tempest is a sleek, knife-blade fuselage of scuffed titanium-composite with heat-scorched panels from repeated hydrogen turbine burns. The single teardrop cockpit sits flush against the hull, its reinforced canopy scratched from countless near-misses through GLMZ's tight airspace. Faded Sterling-Nakamura racing stripes run its length, and the undercarriage bristles with anti-grav emitters that hum with barely-contained power.",
+  "visual_prompt": "gritty neo-noir racing aircraft, single-seat air racer, knife-blade fuselage, scuffed titanium hull, heat-scorched panels, teardrop cockpit, anti-grav emitters, faded racing stripes, industrial decay aesthetic, detailed product photography, dark moody lighting, rain-slicked surfaces, cyberpunk near-future, worn high-tech"
 }

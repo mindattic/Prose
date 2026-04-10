@@ -1,0 +1,40 @@
+{
+  "name": "Dopavren",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Sunstart",
+    "the Dawn",
+    "Doppy"
+  ],
+  "category": "withdrawal_aid",
+  "subcategory": "dopamine_system_restorator",
+  "manufacturer": "Nightshade Pharmatech (licensed); widely counterfeited",
+  "description": "Dopavren is a dopamine system restorator — a tyrosine hydroxylase upregulator combined with D1/D2 receptor sensitization compounds that rebuilds the brain's capacity to produce and respond to natural dopamine after it has been depleted or desensitized by stimulant abuse, chronic BCI overstimulation, or synthetic reward-loop dependencies. It is one of the few effective treatments for post-stimulant anhedonia — the devastating inability to feel pleasure that follows heavy Adrenyx, chrome-jacking, or synthetic euphoric use. Nightshade holds the license, which gives the drug a complicated reputation.",
+  "method_of_use": "neural_direct",
+  "effects": [
+    "Gradual restoration of dopamine synthesis capacity",
+    "Progressive resensitization of depleted dopamine receptors",
+    "Return of capacity for natural pleasure, motivation, and reward response",
+    "Reduction of post-stimulant anhedonia and emotional blunting",
+    "Improved drive and goal-directed behavior as treatment progresses"
+  ],
+  "side_effects": [
+    "First week: heightened sensitivity — ordinary stimuli can feel overwhelming, even painful",
+    "Compulsive behavior risk during resensitization window — some users redirect the restored reward circuitry into new obsessive patterns",
+    "Insomnia during peak resensitization phase",
+    "Rare: dopaminergic overcorrection producing brief hypomanic episodes",
+    "Neural direct administration carries standard BCI interface risks — headache, brief signal dropout, 0.3% chance of interface irritation with certain older implant models",
+    "Nightshade's legitimate product is effective; street counterfeits often contain undisclosed dopamine agonists that short-circuit recovery by providing direct stimulation"
+  ],
+  "duration": "4-6 hours per dose; full restorative course 8-16 weeks",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 1-2",
+  "legality": "restricted",
+  "street_price": "Φ120 per dose (Φ75 for counterfeit — widely circulated)",
+  "cultural_context": "Dopavren is what people reach for when they've burned out their ability to feel good about anything — a state common enough on the Shelf that 'flatline affect' is recognized slang for the condition it treats. The drug has a complicated relationship with Nightshade's dual-use reputation: it works, it's relatively safe in the legitimate form, but the restricted status means most Shelf users are getting counterfeits. The compulsive behavior redirection side effect has a street name — 'the Pivot' — and there are documented cases of users who recovered from stimulant addiction only to develop intense gambling, sexual compulsion, or violence patterns during the resensitization window.",
+  "story_hooks": [
+    "A contact a character relies on has been flatlined for months after a bad stimulant run — Dopavren is the only thing that will bring them back to functional, but the Nightshade distribution point for their district has gone dark",
+    "Someone is deliberately flooding a Tier 2 neighborhood with counterfeit Dopavren that contains a concealed agonist — keeping residents cycling through a false recovery that maintains their dependency and their predictability",
+    "A character mid-course on Dopavren hits the compulsive behavior window at exactly the wrong moment — and the thing their resensitized reward circuitry latches onto is deeply inconvenient for everyone around them"
+  ]
+}

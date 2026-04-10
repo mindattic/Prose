@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Craftsperson",
-      "Spiritual",
-      "Stubborn",
-      "Observant",
-      "Market Fixture"
+      "craftsperson",
+      "spiritual",
+      "stubborn",
+      "observant",
+      "market fixture"
     ]
   },
   "behavioral": {
@@ -214,7 +214,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

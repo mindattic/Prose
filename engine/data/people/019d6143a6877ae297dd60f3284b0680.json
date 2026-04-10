@@ -97,10 +97,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Neighborhood Elder",
-      "Skilled Craftsperson",
-      "Secret-Keeper",
-      "Quiet Authority"
+      "neighborhood elder",
+      "skilled craftsperson",
+      "secret-keeper",
+      "quiet authority"
     ]
   },
   "behavioral": {
@@ -282,7 +282,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

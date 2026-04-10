@@ -102,14 +102,14 @@ const products = [
     type: "consumer_good",
     category: "street_food",
     subcategory: "shelf bento",
-    manufacturer: "M88 Transit Catering Corp",
+    manufacturer: "GLMZ Transit Catering Corp",
     description: "Pre-packed meal tray sold at mass driver stations and transit hubs. Rice, protein portion, pickled vegetable, and a flavor sachet. Sealed, shelf-stable for 72 hours. Eaten standing up on platforms across the city.",
     flavor_profile: "Inoffensive, vaguely teriyaki, the rice is acceptable, the protein is identifiable as protein",
     tier_availability: "Tier 1-3",
     price: "Φ2.50",
     popularity_rank: 3,
     slogan: "Eat. Move. Repeat.",
-    cultural_context: "The TransitBento is not good food. Everyone knows this. But it's available at every station, it won't make you sick, and you can eat it one-handed while checking your BCI feed. It is the most consumed prepared meal in M88 by volume.",
+    cultural_context: "The TransitBento is not good food. Everyone knows this. But it's available at every station, it won't make you sick, and you can eat it one-handed while checking your BCI feed. It is the most consumed prepared meal in GLMZ by volume.",
     story_hooks: [
       "Transit Catering Corp's contract with the city is up for renewal — competing bids are coming in and the lobbying has turned ugly.",
       "Someone is using TransitBento packaging to smuggle data chips between stations — the uniform boxes are never inspected."
@@ -121,7 +121,7 @@ const products = [
     type: "consumer_good",
     category: "street_food",
     subcategory: "shelf bento",
-    manufacturer: "M88 Transit Catering Corp",
+    manufacturer: "GLMZ Transit Catering Corp",
     description: "The popular variant with a curry sauce packet that actually has some kick. Same tray format, slightly more expensive, and the stations that carry it sell out faster.",
     flavor_profile: "Warm, turmeric-forward curry with a cumin backbone, the sauce makes the rice actually enjoyable",
     tier_availability: "Tier 1-3",
@@ -221,7 +221,7 @@ const products = [
     price: "Φ0.40",
     popularity_rank: 6,
     slogan: "Fuel for the day.",
-    cultural_context: "NutriTubes are the absolute floor of food in M88. Eating them means you cannot afford even Kanto Blocks. They are distributed free at aid stations during crises. Tier 3+ residents have usually never tasted one and don't want to.",
+    cultural_context: "NutriTubes are the absolute floor of food in GLMZ. Eating them means you cannot afford even Kanto Blocks. They are distributed free at aid stations during crises. Tier 3+ residents have usually never tasted one and don't want to.",
     story_hooks: [
       "Meridian Basic Services is a government-contracted supplier — the contract is enormously profitable because the production cost is almost nothing.",
       "NutriTube Original's 'beef stew' flavor was designed by an AI that has never experienced food — a food scientist wants to redesign the line but can't get funding."
@@ -258,7 +258,7 @@ const products = [
     price: "Φ3.80",
     popularity_rank: 14,
     slogan: "Ninety seconds to Saigon.",
-    cultural_context: "QuickBowl Pho is the go-to sick-day food across M88. The broth steam and the star anise smell are associated with recovery and comfort. People hoard them.",
+    cultural_context: "QuickBowl Pho is the go-to sick-day food across GLMZ. The broth steam and the star anise smell are associated with recovery and comfort. People hoard them.",
     story_hooks: [
       "Saigon Express Foods is a front company for a Tier 4 investment group that buys up ethnic food brands — the original Vietnamese family that created the recipe received nothing."
     ],
@@ -276,7 +276,7 @@ const products = [
     price: "Φ3.50",
     popularity_rank: 17,
     slogan: "Party in a box.",
-    cultural_context: "West African diaspora food culture is strong in M88. QuickBowl Jollof is not as good as homemade but it's good enough to argue about, which is the whole point of jollof.",
+    cultural_context: "West African diaspora food culture is strong in GLMZ. QuickBowl Jollof is not as good as homemade but it's good enough to argue about, which is the whole point of jollof.",
     story_hooks: [
       "Lagos Kitchen Co. sponsors a popular BCI cooking competition where contestants try to make better jollof than the QuickBowl — the show is rigged."
     ],
@@ -306,13 +306,13 @@ const products = [
     category: "street_food",
     subcategory: "insect protein crisps",
     manufacturer: "HopperSnacks Inc.",
-    description: "Cricket-flour crisps in a foil bag. Crunchy, salty, and completely normalized — nobody in M88 thinks twice about eating insects. They're just chips.",
+    description: "Cricket-flour crisps in a foil bag. Crunchy, salty, and completely normalized — nobody in GLMZ thinks twice about eating insects. They're just chips.",
     flavor_profile: "Sharp vinegar tang with sea salt, light crispy texture, subtle nuttiness from the cricket flour",
     tier_availability: "Tier 1-3",
     price: "Φ1.50",
     popularity_rank: 7,
     slogan: "Crunch time.",
-    cultural_context: "Insect protein is the default protein source for most of M88. CrunchHoppers are the market leader in snack crisps — they outsell synth-potato chips three to one. Asking if someone eats insects is like asking if they breathe air.",
+    cultural_context: "Insect protein is the default protein source for most of GLMZ. CrunchHoppers are the market leader in snack crisps — they outsell synth-potato chips three to one. Asking if someone eats insects is like asking if they breathe air.",
     story_hooks: [
       "HopperSnacks' cricket farms are automated and enormous — a firmware glitch once shut down production for three days and the city nearly panicked."
     ],
@@ -433,13 +433,13 @@ const products = [
     category: "street_food",
     subcategory: "coffee substitute",
     manufacturer: "Grindhouse Beverages",
-    description: "Roasted chicory and mushroom blend that approximates coffee's bitterness and ritual without any actual coffee. Sold in bulk tins. What 90% of M88 drinks when they say 'coffee.'",
+    description: "Roasted chicory and mushroom blend that approximates coffee's bitterness and ritual without any actual coffee. Sold in bulk tins. What 90% of GLMZ drinks when they say 'coffee.'",
     flavor_profile: "Bitter, earthy, roasty with a slight mushroom undertone, produces good crema when prepared well",
     tier_availability: "Tier 1-3",
     price: "Φ2.00",
     popularity_rank: 6,
     slogan: "Close enough.",
-    cultural_context: "Black Mud is not trying to fool anyone. Everyone knows it's not coffee. But it's hot, it's bitter, it's ritual, and it works. The morning cup of Black Mud is how most of M88 starts its day.",
+    cultural_context: "Black Mud is not trying to fool anyone. Everyone knows it's not coffee. But it's hot, it's bitter, it's ritual, and it works. The morning cup of Black Mud is how most of GLMZ starts its day.",
     story_hooks: [
       "Grindhouse has quietly started adding a mild cognitive enhancer to their blend — it's technically legal but undisclosed.",
       "A Black Mud shortage caused by supply chain disruption led to citywide irritability — the correlation was measurable in crime statistics."
@@ -458,7 +458,7 @@ const products = [
     price: "Φ2.80",
     popularity_rank: 11,
     slogan: "Twenty reasons to come home.",
-    cultural_context: "Golden Dragon wontons are one of those products where the frozen version has become the default. Most people in M88 have never had a handmade wonton and don't know the difference.",
+    cultural_context: "Golden Dragon wontons are one of those products where the frozen version has become the default. Most people in GLMZ have never had a handmade wonton and don't know the difference.",
     story_hooks: [
       "A handmade wonton shop in Tier 2 is struggling to compete with Golden Dragon's prices — the owner refuses to use synth-protein and is going bankrupt."
     ],
@@ -488,13 +488,13 @@ const products = [
     category: "street_food",
     subcategory: "real meat",
     manufacturer: "Skewer King (chain)",
-    description: "Synth-chicken satay with peanut sauce from M88's largest street food chain. Not real meat but close enough, and the peanut sauce is genuinely good. Served from bright orange carts.",
+    description: "Synth-chicken satay with peanut sauce from GLMZ's largest street food chain. Not real meat but close enough, and the peanut sauce is genuinely good. Served from bright orange carts.",
     flavor_profile: "Char-grilled synth-chicken with a rich, sweet-spicy peanut sauce, served with compressed rice cubes",
     tier_availability: "Tier 2-3",
     price: "Φ4.00",
     popularity_rank: 16,
     slogan: "The King of the Street.",
-    cultural_context: "Skewer King has over 400 carts across M88. The bright orange is recognizable from a block away. It's the McDonald's of street food — consistent, available, and nobody's favorite but everyone's fallback.",
+    cultural_context: "Skewer King has over 400 carts across GLMZ. The bright orange is recognizable from a block away. It's the McDonald's of street food — consistent, available, and nobody's favorite but everyone's fallback.",
     story_hooks: [
       "Skewer King's franchise model is exploitative — cart operators work 14-hour days and keep less than 30% of revenue."
     ],
@@ -567,9 +567,9 @@ const products = [
     price: "Φ4.50",
     popularity_rank: 29,
     slogan: "Sunday morning, any day.",
-    cultural_context: "Dim sum culture persists in M88, but most people can't afford to sit down at a restaurant. DimSum Express packages are the weekday substitute — eaten at home, pretending it's a proper dim sum morning.",
+    cultural_context: "Dim sum culture persists in GLMZ, but most people can't afford to sit down at a restaurant. DimSum Express packages are the weekday substitute — eaten at home, pretending it's a proper dim sum morning.",
     story_hooks: [
-      "The 'shrimp' is vat-grown crustacean protein — real shrimp hasn't been commercially available in M88 for a decade."
+      "The 'shrimp' is vat-grown crustacean protein — real shrimp hasn't been commercially available in GLMZ for a decade."
     ],
     tags: ["street_food", "frozen_meal", "consumer_good", "dim_sum", "tier_2", "tier_3"]
   },
@@ -585,7 +585,7 @@ const products = [
     price: "Φ1.50",
     popularity_rank: 15,
     slogan: "Wrap anything.",
-    cultural_context: "Flatbread Factory naan is the universal edible platform of M88. People wrap Kanto Blocks in it. They wrap NutriTube paste in it. They wrap leftovers in it. It makes everything slightly more dignified.",
+    cultural_context: "Flatbread Factory naan is the universal edible platform of GLMZ. People wrap Kanto Blocks in it. They wrap NutriTube paste in it. They wrap leftovers in it. It makes everything slightly more dignified.",
     story_hooks: [
       "Flatbread Factory's preservative allows 90-day shelf life — nobody knows exactly what it is and the formula is classified as a trade secret."
     ],
@@ -633,13 +633,13 @@ const products = [
     category: "street_food",
     subcategory: "snack",
     manufacturer: "Old Harbor Collective Kitchen",
-    description: "Paper-thin sheets of dried, seasoned algae. Crispy, salty, faintly oceanic. Sold in flat packs of ten sheets. The seaweed snack of M88.",
+    description: "Paper-thin sheets of dried, seasoned algae. Crispy, salty, faintly oceanic. Sold in flat packs of ten sheets. The seaweed snack of GLMZ.",
     flavor_profile: "Crispy, intensely umami, sesame-oil-kissed, dissolves on the tongue with a salt finish",
     tier_availability: "Tier 1-3",
     price: "Φ0.60",
     popularity_rank: 14,
     slogan: "Thin. Crisp. Real.",
-    cultural_context: "Algae crackers are what children eat as their first snack. They're packed in school lunches, eaten at desks, and crumbled over noodles. They are the cheapest real food in M88 — made from harbor algae that grows endlessly.",
+    cultural_context: "Algae crackers are what children eat as their first snack. They're packed in school lunches, eaten at desks, and crumbled over noodles. They are the cheapest real food in GLMZ — made from harbor algae that grows endlessly.",
     story_hooks: [
       "The algae used for crackers is the same strain as the bioluminescent Glow Wraps — processed differently, it loses the glow but keeps the nutrition."
     ],
@@ -657,9 +657,9 @@ const products = [
     price: "Φ1.60",
     popularity_rank: 11,
     slogan: "Simple. Full. Done.",
-    cultural_context: "QuickBowl Dal is the cheapest self-heating meal that doesn't taste like compromise. Aid workers distribute it during crises because it's filling, cheap, and culturally acceptable across most of M88's demographics.",
+    cultural_context: "QuickBowl Dal is the cheapest self-heating meal that doesn't taste like compromise. Aid workers distribute it during crises because it's filling, cheap, and culturally acceptable across most of GLMZ's demographics.",
     story_hooks: [
-      "The lentils are one of the few crops still grown in soil within M88's agricultural zones — the farming cooperative that supplies Atlas is under pressure to switch to vat production."
+      "The lentils are one of the few crops still grown in soil within GLMZ's agricultural zones — the farming cooperative that supplies Atlas is under pressure to switch to vat production."
     ],
     tags: ["street_food", "flash_heated", "consumer_good", "dal", "vegetarian", "tier_1", "tier_2", "tier_3", "affordable"]
   },
@@ -711,7 +711,7 @@ const products = [
     price: "Φ1.50",
     popularity_rank: 13,
     slogan: "No slogan — they sell themselves by smell.",
-    cultural_context: "Baozi vendors are the heart of any night market. The sight of bamboo steamers stacked six high, steam pouring into the night air, is one of M88's most iconic images. Everyone has a favorite vendor.",
+    cultural_context: "Baozi vendors are the heart of any night market. The sight of bamboo steamers stacked six high, steam pouring into the night air, is one of GLMZ's most iconic images. Everyone has a favorite vendor.",
     story_hooks: [
       "A legendary baozi vendor known only as 'Uncle Steam' has been operating in the same spot for 30 years — the spot is now marked for transit expansion."
     ],
@@ -753,7 +753,7 @@ const products = [
     price: "Φ8.00",
     popularity_rank: 12,
     slogan: "Where you end and begin.",
-    cultural_context: "Anyone with synth-skin grafts — which is a significant portion of M88's population — needs this or something like it. Without moisturizer, synth-skin cracks, peels, and looks obviously artificial. DermaSoft is the premium option.",
+    cultural_context: "Anyone with synth-skin grafts — which is a significant portion of GLMZ's population — needs this or something like it. Without moisturizer, synth-skin cracks, peels, and looks obviously artificial. DermaSoft is the premium option.",
     story_hooks: [
       "DermaSoft's moisturizer interacts badly with a common black-market synth-skin brand, causing accelerated degradation — the company knows but hasn't issued a warning because the black-market product is 'not their problem.'"
     ],
@@ -771,7 +771,7 @@ const products = [
     price: "Φ6.00",
     popularity_rank: 15,
     slogan: "Because it's part of you.",
-    cultural_context: "Tail care is as normal as hair care in M88. TailSilk is the brand people grow up with. The pink bottle is an icon. Geneware kids beg their parents for the 'sparkle edition' with holographic packaging.",
+    cultural_context: "Tail care is as normal as hair care in GLMZ. TailSilk is the brand people grow up with. The pink bottle is an icon. Geneware kids beg their parents for the 'sparkle edition' with holographic packaging.",
     story_hooks: [
       "TailSilk has been accused of engineering their formula to cause mild dryness if you stop using it — creating dependency on the product.",
       "A competing brand markets 'natural tail care' and has been running a smear campaign suggesting TailSilk causes fur discoloration."
@@ -1138,7 +1138,7 @@ const products = [
     category: "household",
     subcategory: "air filtration",
     manufacturer: "AtmoTech Systems",
-    description: "Standard replacement filter for residential air recyclers. Every dwelling in M88 has an air recycler; every recycler needs a new filter every 90 days. This is the most-purchased household item in the city.",
+    description: "Standard replacement filter for residential air recyclers. Every dwelling in GLMZ has an air recycler; every recycler needs a new filter every 90 days. This is the most-purchased household item in the city.",
     flavor_profile: "Dense carbon-fiber mesh, sealed in foil until installation, no scent when new",
     tier_availability: "Tier 1-4",
     price: "Φ8.00",
@@ -1211,7 +1211,7 @@ const products = [
     type: "consumer_good",
     category: "household",
     subcategory: "water treatment",
-    manufacturer: "AquaSystems M88",
+    manufacturer: "AquaSystems GLMZ",
     description: "Replacement cartridge for residential water recyclers. Filters and purifies greywater back to potable standard. Replace every 60 days. Without it, your water recycler produces water you shouldn't drink.",
     flavor_profile: "Carbon and resin filtration media, sealed in sterile packaging",
     tier_availability: "Tier 1-3",
@@ -1237,7 +1237,7 @@ const products = [
     price: "Φ15.00",
     popularity_rank: 18,
     slogan: "Light that lives.",
-    cultural_context: "LumiGlow lamps are beloved. They're alive, they're beautiful, and they don't cost electricity. In the Shelf, they're aspirational — a small luxury that transforms a bleak space. In Tier 3, they're standard decor. The soft blue-green glow visible through windows is an M88 signature.",
+    cultural_context: "LumiGlow lamps are beloved. They're alive, they're beautiful, and they don't cost electricity. In the Shelf, they're aspirational — a small luxury that transforms a bleak space. In Tier 3, they're standard decor. The soft blue-green glow visible through windows is an GLMZ signature.",
     story_hooks: [
       "BioLight's algae strain was developed by Old Harbor bio-engineers who received a one-time licensing fee — the company earns millions annually from their work.",
       "Some people have emotional attachments to their LumiGlow — killing the algae through neglect feels like a small death."
@@ -1293,7 +1293,7 @@ const products = [
     price: "Φ2.50",
     popularity_rank: 7,
     slogan: "Your space. No visitors.",
-    cultural_context: "Insects in M88 are persistent, numerous, and in some cases gene-modded escapees from research facilities. BugOut is baseline pest control. The Shelf has insect problems that BugOut can only slow, not stop.",
+    cultural_context: "Insects in GLMZ are persistent, numerous, and in some cases gene-modded escapees from research facilities. BugOut is baseline pest control. The Shelf has insect problems that BugOut can only slow, not stop.",
     story_hooks: [
       "A gene-modded cockroach variant that's BugOut-resistant has been spreading through Shelf Block 9 — it's a minor ecological crisis.",
       "BugOut's active ingredient bioaccumulates in the harbor water system — it's contributing to aquatic ecosystem damage."
@@ -1306,7 +1306,7 @@ const products = [
     category: "household",
     subcategory: "power",
     manufacturer: "VoltWorks",
-    description: "Rechargeable battery pack compatible with most household devices, portable electronics, and small augment chargers. Holds 10,000mAh equivalent. The universal power brick of M88.",
+    description: "Rechargeable battery pack compatible with most household devices, portable electronics, and small augment chargers. Holds 10,000mAh equivalent. The universal power brick of GLMZ.",
     flavor_profile: "Dense, heavy for its size, warm when charging, indicator light shows charge level",
     tier_availability: "Tier 1-4",
     price: "Φ10.00",
@@ -1343,13 +1343,13 @@ const products = [
     category: "household",
     subcategory: "repair",
     manufacturer: "QuickFix Consumer",
-    description: "Industrial-strength adhesive that bonds metal, plastic, ceramic, and synth-skin. The universal repair tool of M88. If it's broken, you FixAll it before you can afford to replace it.",
+    description: "Industrial-strength adhesive that bonds metal, plastic, ceramic, and synth-skin. The universal repair tool of GLMZ. If it's broken, you FixAll it before you can afford to replace it.",
     flavor_profile: "Sharp solvent smell, sets in 60 seconds, cures completely in 24 hours",
     tier_availability: "Tier 1-4",
     price: "Φ3.00",
     popularity_rank: 8,
     slogan: "Broken? Fixed.",
-    cultural_context: "FixAll is the duct tape of M88. Every household has a tube. People repair augments with it, seal leaks with it, fix furniture with it. In the Shelf, FixAll keeps life literally held together. The tube is always half-empty.",
+    cultural_context: "FixAll is the duct tape of GLMZ. Every household has a tube. People repair augments with it, seal leaks with it, fix furniture with it. In the Shelf, FixAll keeps life literally held together. The tube is always half-empty.",
     story_hooks: [
       "FixAll's formula is actually over-engineered for consumer use — it was originally a military prosthetic adhesive that found a wider market."
     ],
@@ -1402,13 +1402,13 @@ const products = [
     category: "stimulant",
     subcategory: "energy tablet",
     manufacturer: "NeuroVolt Pharmaceuticals",
-    description: "Small white tablet providing 6 hours of enhanced alertness and energy. Stronger than caffeine, milder than prescription stimulants. The most commonly consumed stimulant in M88.",
+    description: "Small white tablet providing 6 hours of enhanced alertness and energy. Stronger than caffeine, milder than prescription stimulants. The most commonly consumed stimulant in GLMZ.",
     flavor_profile: "Bitter if chewed, chalky, designed to be swallowed whole with water",
     tier_availability: "Tier 1-4",
     price: "Φ1.00",
     popularity_rank: 2,
     slogan: "Six more hours.",
-    cultural_context: "SparkTabs are the coffee of M88 — except they work better and everyone knows the crash is coming. Workers pop them at the start of shifts. Students pop them before exams. The question isn't whether you use SparkTabs but how many per day.",
+    cultural_context: "SparkTabs are the coffee of GLMZ — except they work better and everyone knows the crash is coming. Workers pop them at the start of shifts. Students pop them before exams. The question isn't whether you use SparkTabs but how many per day.",
     story_hooks: [
       "NeuroVolt has been gradually increasing SparkTab potency by 2% annually — each individual tablet seems the same but the cumulative tolerance effect drives higher consumption.",
       "A cluster of cardiac events among Shelf laborers has been linked to SparkTab overuse — NeuroVolt's response is that 'recommended dosage' warnings are clearly printed."
@@ -1446,7 +1446,7 @@ const products = [
     price: "Φ2.50",
     popularity_rank: 10,
     slogan: "Soft landing.",
-    cultural_context: "The SparkTab-CrashKit cycle is M88's most common drug routine. Pop SparkTabs for energy, take CrashKit to recover, repeat. NeuroVolt sells both. The irony is not lost on anyone but no one has a better option.",
+    cultural_context: "The SparkTab-CrashKit cycle is GLMZ's most common drug routine. Pop SparkTabs for energy, take CrashKit to recover, repeat. NeuroVolt sells both. The irony is not lost on anyone but no one has a better option.",
     story_hooks: [
       "CrashKit's anxiolytic component is the same compound found in mood candy at a lower dose — it creates a subtle emotional dependency on the recovery cycle.",
       "A Shelf health worker has been advocating for SparkTab regulation using CrashKit sales data to demonstrate the scope of stimulant dependency — NeuroVolt's lawyers have sent cease-and-desist letters."
@@ -1484,7 +1484,7 @@ const products = [
     price: "Φ4.00",
     popularity_rank: 11,
     slogan: "Tonight, you sleep.",
-    cultural_context: "Insomnia is epidemic in M88. BCI activity, stimulant use, light pollution, noise, and stress all conspire against sleep. DreamPatch is the over-the-counter solution. Millions use it nightly. The alternative is lying awake listening to your BCI hum.",
+    cultural_context: "Insomnia is epidemic in GLMZ. BCI activity, stimulant use, light pollution, noise, and stress all conspire against sleep. DreamPatch is the over-the-counter solution. Millions use it nightly. The alternative is lying awake listening to your BCI hum.",
     story_hooks: [
       "DreamPatch's melatonin analog has been linked to unusually vivid dreams that some users find disturbing — a BCI forum community is mapping the dream patterns.",
       "SomnaWell's data shows that DreamPatch users develop tolerance within 6 months and need to double the dose — the company considers this 'normal adaptation.'"
@@ -1522,7 +1522,7 @@ const products = [
     price: "Φ15.00",
     popularity_rank: 13,
     slogan: "Breathe. Again.",
-    cultural_context: "Anxiety is so common in M88 that CalmVapor inhalers are carried like keys and wallets. Pulling one out in a meeting isn't stigmatized — it's just someone managing their neurochemistry. The lavender puff before a difficult conversation is a shared human moment.",
+    cultural_context: "Anxiety is so common in GLMZ that CalmVapor inhalers are carried like keys and wallets. Pulling one out in a meeting isn't stigmatized — it's just someone managing their neurochemistry. The lavender puff before a difficult conversation is a shared human moment.",
     story_hooks: [
       "CalmVapor's compound is chemically similar to a controlled substance at higher doses — the line between 'wellness product' and 'drug' is regulatory, not pharmacological.",
       "A trend of 'stacking' CalmVapor with FocusBite produces a state of calm hyper-focus that users call 'the zone' — it's effective but the long-term neurological effects are unknown."
@@ -1597,7 +1597,7 @@ const products = [
     price: "Φ4.00",
     popularity_rank: 12,
     slogan: "A little better. Every day.",
-    cultural_context: "MoodLift occupies the gray zone between supplement and medication. It doesn't fix depression, but it makes the day slightly more bearable. Millions chew it daily. The fact that a city's baseline emotional management comes in gum form says everything about M88.",
+    cultural_context: "MoodLift occupies the gray zone between supplement and medication. It doesn't fix depression, but it makes the day slightly more bearable. Millions chew it daily. The fact that a city's baseline emotional management comes in gum form says everything about GLMZ.",
     story_hooks: [
       "MoodLift's classification as a 'wellness supplement' rather than a medication means it bypasses pharmaceutical oversight — the compound would require a prescription if it were in pill form.",
       "SomnaWell's internal research shows MoodLift is less effective than they claim but the placebo effect accounts for most of the benefit — and the placebo effect is real, so does it matter?"
@@ -1648,13 +1648,13 @@ const products = [
     category: "stimulant",
     subcategory: "side effect management",
     manufacturer: "CortexCare Medical",
-    description: "Dissolving tablet placed against the cheek that relaxes jaw muscles for 8 hours. For the millions of M88 residents who grind their teeth from stimulant use, stress, and BCI-related tension.",
+    description: "Dissolving tablet placed against the cheek that relaxes jaw muscles for 8 hours. For the millions of GLMZ residents who grind their teeth from stimulant use, stress, and BCI-related tension.",
     flavor_profile: "Mild vanilla, dissolves slowly against the cheek, gentle muscle relaxation",
     tier_availability: "Tier 2-4",
     price: "Φ3.00",
     popularity_rank: 17,
     slogan: "Unclench.",
-    cultural_context: "Teeth grinding is so common in M88 that dental prosthetics are partly driven by it. GrindGuard is the maintenance product for a city that runs on tension. Dentists recommend it. SparkTab users need it.",
+    cultural_context: "Teeth grinding is so common in GLMZ that dental prosthetics are partly driven by it. GrindGuard is the maintenance product for a city that runs on tension. Dentists recommend it. SparkTab users need it.",
     story_hooks: [
       "GrindGuard is essentially treating a side effect of SparkTabs — and CortexCare and NeuroVolt are both owned by the same parent company."
     ],
@@ -1715,7 +1715,7 @@ const products = [
     price: "Φ3.00",
     popularity_rank: 3,
     slogan: "Your cloud. Your way.",
-    cultural_context: "Vaping is ubiquitous in M88. VoltCloud is the market leader. The vapor clouds in transit stations, work areas, and social spaces are constant. Flavor choice is personal expression — Classic users are considered no-nonsense.",
+    cultural_context: "Vaping is ubiquitous in GLMZ. VoltCloud is the market leader. The vapor clouds in transit stations, work areas, and social spaces are constant. Flavor choice is personal expression — Classic users are considered no-nonsense.",
     story_hooks: [
       "VoltCloud's synth-nicotine is engineered to be 20% more addictive than natural nicotine — the company's internal documents confirm this but they argue it's 'consumer preference optimization.'",
       "Used VoltCloud cartridges are a major waste problem — millions end up in the harbor monthly."
@@ -1734,7 +1734,7 @@ const products = [
     price: "Φ3.00",
     popularity_rank: 1,
     slogan: "Your cloud. Your way.",
-    cultural_context: "Mint Ice is M88's most popular vapor flavor by a significant margin. The menthol clouds are the default smell of public spaces. People who don't vape can still identify the Mint Ice exhale. It's the baseline scent of the city.",
+    cultural_context: "Mint Ice is GLMZ's most popular vapor flavor by a significant margin. The menthol clouds are the default smell of public spaces. People who don't vape can still identify the Mint Ice exhale. It's the baseline scent of the city.",
     story_hooks: [
       "Mint Ice's menthol compound has a mild bronchodilator effect that makes users feel like they're breathing better after vaping — it's medicinal theater that drives consumption."
     ],
@@ -1784,7 +1784,7 @@ const products = [
     category: "tobacco_vapor",
     subcategory: "mood vapor",
     manufacturer: "SomnaWell Health",
-    description: "Vapor cartridge delivering micro-dose emotional modulation compounds. 'Ease' provides mild relaxation and emotional softening. The most controversial consumer product in M88 — is it self-care or self-medication?",
+    description: "Vapor cartridge delivering micro-dose emotional modulation compounds. 'Ease' provides mild relaxation and emotional softening. The most controversial consumer product in GLMZ — is it self-care or self-medication?",
     flavor_profile: "Warm, slightly sweet, almost imperceptible taste, minimal vapor — designed for discreet use",
     tier_availability: "Tier 3-4",
     price: "Φ10.00",
@@ -1793,7 +1793,7 @@ const products = [
     cultural_context: "MoodMist is the product everyone has an opinion about. Supporters call it emotional self-regulation. Critics call it mood control in a cartridge. The truth is that millions use it quietly and the societal effects of widespread emotional modulation are only beginning to be understood.",
     story_hooks: [
       "MoodMist's 'Ease' variant has been detected in the bloodwork of a Tier 4 executive who claims to have never used it — someone is dosing their environment.",
-      "SomnaWell's product line now covers sleep, anxiety, mood, and meditation — they are becoming the pharmacological manager of M88's emotional life."
+      "SomnaWell's product line now covers sleep, anxiety, mood, and meditation — they are becoming the pharmacological manager of GLMZ's emotional life."
     ],
     tags: ["tobacco_vapor", "mood", "consumer_good", "vape", "emotional_modulation", "tier_3", "tier_4", "controversial"]
   },
@@ -1920,7 +1920,7 @@ const products = [
     price: "Φ1.50",
     popularity_rank: 20,
     slogan: "The harbor smoke.",
-    cultural_context: "HarborBlend is Old Harbor's tobacco identity. The clay pipes are hand-shaped by local artisans. Sitting on the harbor wall smoking HarborBlend is a tradition that predates M88 itself. The harbor herbs change seasonally, so the blend shifts with the months.",
+    cultural_context: "HarborBlend is Old Harbor's tobacco identity. The clay pipes are hand-shaped by local artisans. Sitting on the harbor wall smoking HarborBlend is a tradition that predates GLMZ itself. The harbor herbs change seasonally, so the blend shifts with the months.",
     story_hooks: [
       "The harbor herbs in HarborBlend include a local plant that produces a mild euphoric compound — it's been in the blend so long that nobody thinks of it as a drug.",
       "Old Harbor Smoke Co. is three people working out of a converted shipping container — they have no interest in scaling up."
@@ -2011,13 +2011,13 @@ const products = [
     category: "medicine_otc",
     subcategory: "pain relief",
     manufacturer: "CortexCare Medical",
-    description: "Fast-dissolving tablet for BCI-related headaches — the dull, pressure headaches caused by neural interface activity, signal processing, and HUD eye strain. Works in 15 minutes. The most consumed painkiller in M88.",
+    description: "Fast-dissolving tablet for BCI-related headaches — the dull, pressure headaches caused by neural interface activity, signal processing, and HUD eye strain. Works in 15 minutes. The most consumed painkiller in GLMZ.",
     flavor_profile: "Dissolves on the tongue, slightly chalky, mild mint, relief begins as a cooling sensation behind the eyes",
     tier_availability: "Tier 1-4",
     price: "Φ1.50",
     popularity_rank: 2,
     slogan: "Clear the noise.",
-    cultural_context: "BCI headaches are the common cold of M88. Everyone gets them. SynapsClear is in every pocket, every desk drawer, every medicine cabinet. Asking someone for a SynapsClear is like asking for a tissue — it's expected, it's normal, it's constant.",
+    cultural_context: "BCI headaches are the common cold of GLMZ. Everyone gets them. SynapsClear is in every pocket, every desk drawer, every medicine cabinet. Asking someone for a SynapsClear is like asking for a tissue — it's expected, it's normal, it's constant.",
     story_hooks: [
       "SynapsClear works by temporarily reducing BCI signal processing — the headache relief is actually your neural interface throttling down. CortexCare doesn't advertise this.",
       "Long-term SynapsClear use correlates with reduced BCI responsiveness — people who pop them daily may be slowly degrading their interface performance."
@@ -2187,7 +2187,7 @@ const products = [
     price: "Φ10.00",
     popularity_rank: 15,
     slogan: "Reset. Restore. Restart.",
-    cultural_context: "Synth-food dominance means most of M88's population has compromised gut flora. GutReset is the periodic maintenance — people do a course every few months to keep their digestive system functional. The irony of needing medicine to tolerate your food is not lost on anyone.",
+    cultural_context: "Synth-food dominance means most of GLMZ's population has compromised gut flora. GutReset is the periodic maintenance — people do a course every few months to keep their digestive system functional. The irony of needing medicine to tolerate your food is not lost on anyone.",
     story_hooks: [
       "BioStable Health also supplies the synth-food additives that compromise gut flora — the cycle is fully vertically integrated."
     ],
@@ -2241,7 +2241,7 @@ const products = [
     price: "Φ2.00",
     popularity_rank: 11,
     slogan: "Cool down. Fight back.",
-    cultural_context: "FeverDown patches are the universal sign of illness in M88. Seeing someone on the transit with a blue patch on their forehead tells you to keep your distance. Parents apply them to children with the same care and worry parents have always had.",
+    cultural_context: "FeverDown patches are the universal sign of illness in GLMZ. Seeing someone on the transit with a blue patch on their forehead tells you to keep your distance. Parents apply them to children with the same care and worry parents have always had.",
     story_hooks: [
       "FeverDown's antipyretic compound interacts with certain BCI configurations to cause mild hallucinations — it's a known side effect that's considered acceptable because the alternative is uncontrolled fever."
     ],
@@ -2404,7 +2404,7 @@ const products = [
     category: "stationery",
     subcategory: "art supplies",
     manufacturer: "SilkLine Art Supply",
-    description: "Set of 12 charcoal sticks in varying hardnesses, plus a kneaded eraser. For drawing on real paper with real materials. The act of making marks with carbon on fiber is ancient and, in M88, radical.",
+    description: "Set of 12 charcoal sticks in varying hardnesses, plus a kneaded eraser. For drawing on real paper with real materials. The act of making marks with carbon on fiber is ancient and, in GLMZ, radical.",
     flavor_profile: "Dusty, dark, the satisfying scratch of charcoal on textured paper, fingers blackened by use",
     tier_availability: "Tier 3-5",
     price: "Φ18.00",
@@ -2412,7 +2412,7 @@ const products = [
     slogan: "Make your mark.",
     cultural_context: "Drawing by hand is an art practice that BCI-generated imagery can't replace — because the point isn't the image, it's the process. SilkLine supplies the small but passionate analog art community. Charcoal drawings are valued precisely because they're imperfect and human.",
     story_hooks: [
-      "The analog art scene in M88 is growing — galleries that show only hand-made work have waiting lists, and the movement is seen by some corporations as a subtle form of anti-technology protest."
+      "The analog art scene in GLMZ is growing — galleries that show only hand-made work have waiting lists, and the movement is seen by some corporations as a subtle form of anti-technology protest."
     ],
     tags: ["stationery", "art", "consumer_good", "charcoal", "drawing", "analog", "tier_3", "tier_4", "tier_5"]
   },
@@ -2422,13 +2422,13 @@ const products = [
     category: "stationery",
     subcategory: "ink",
     manufacturer: "TrueInk Body Art Supply",
-    description: "Set of 8 professional tattoo inks in the colors most popular in M88's street tattoo scene. Compatible with both traditional needle guns and modern applicators. Formulated for both organic skin and synth-skin.",
+    description: "Set of 8 professional tattoo inks in the colors most popular in GLMZ's street tattoo scene. Compatible with both traditional needle guns and modern applicators. Formulated for both organic skin and synth-skin.",
     flavor_profile: "Vivid pigments, thick consistency, formulated for color retention in both natural and synthetic dermis",
     tier_availability: "Tier 2-4",
     price: "Φ30.00",
     popularity_rank: 18,
     slogan: "Permanent. Personal. Yours.",
-    cultural_context: "Tattooing is a major art form in M88 — one of the few body modifications that isn't electronic or genetic. Tattoos on chrome-adjacent skin have a particular aesthetic. TrueInk's dual-formulation for organic and synth-skin solved a real problem for tattoo artists working on augmented clients.",
+    cultural_context: "Tattooing is a major art form in GLMZ — one of the few body modifications that isn't electronic or genetic. Tattoos on chrome-adjacent skin have a particular aesthetic. TrueInk's dual-formulation for organic and synth-skin solved a real problem for tattoo artists working on augmented clients.",
     story_hooks: [
       "TrueInk's synth-skin formulation contains a bonding agent that, under UV light, reveals hidden patterns — some tattoo artists use this for 'secret tattoos' visible only under specific conditions.",
       "A Tier 1 tattoo artist using TrueInk has become famous for work that incorporates the visible boundary between organic and chrome skin into the design — the art acknowledges the body it's on."
@@ -2447,7 +2447,7 @@ const products = [
     price: "Φ12.00",
     popularity_rank: 16,
     slogan: "Hold the moment.",
-    cultural_context: "Instant photos are cherished objects in M88. They're taped to walls, tucked into wallets, given as love tokens. The slight imperfection — the light leaks, the soft focus, the chemical color — is the point. A physical photo says 'I was here, with you, and I wanted to remember with my hands, not my interface.'",
+    cultural_context: "Instant photos are cherished objects in GLMZ. They're taped to walls, tucked into wallets, given as love tokens. The slight imperfection — the light leaks, the soft focus, the chemical color — is the point. A physical photo says 'I was here, with you, and I wanted to remember with my hands, not my interface.'",
     story_hooks: [
       "ReelPrint cameras cannot be hacked, surveilled, or remotely accessed — they're used by people who want to document things without creating a digital record.",
       "A collection of ReelPrint photos documenting life in the Shelf has become an underground art exhibition — the raw, unfiltered images are more powerful than any BCI-captured content."
@@ -2460,13 +2460,13 @@ const products = [
     category: "stationery",
     subcategory: "paper goods",
     manufacturer: "Kodan Paper Works",
-    description: "Set of 10 blank postcards made from heavyweight paper with a letterpress-printed border. For writing messages by hand and delivering them physically. The most deliberately anachronistic product in M88.",
+    description: "Set of 10 blank postcards made from heavyweight paper with a letterpress-printed border. For writing messages by hand and delivering them physically. The most deliberately anachronistic product in GLMZ.",
     flavor_profile: "Thick, textured card stock, debossed border pattern, cream colored, satisfying to write on",
     tier_availability: "Tier 3-5",
     price: "Φ10.00",
     popularity_rank: 24,
     slogan: "Say it by hand.",
-    cultural_context: "Sending a handwritten postcard in M88 is an act of extraordinary intimacy. You wrote it by hand. You delivered it physically. It exists as a single object that can't be copied or forwarded. It's the most personal form of communication possible in a networked world.",
+    cultural_context: "Sending a handwritten postcard in GLMZ is an act of extraordinary intimacy. You wrote it by hand. You delivered it physically. It exists as a single object that can't be copied or forwarded. It's the most personal form of communication possible in a networked world.",
     story_hooks: [
       "A postcard delivery service has emerged in Tier 3 — bicycle couriers who deliver handwritten cards same-day. It's become a romantic gesture trend."
     ],
@@ -2497,13 +2497,13 @@ const products = [
     category: "stationery",
     subcategory: "ink",
     manufacturer: "SilkLine Art Supply",
-    description: "Bottle of traditional sumi ink for calligraphy and brush painting. Ground from actual soot and animal glue following ancient methods. In M88, calligraphy is meditation — the brush, the ink, the paper, and nothing else.",
+    description: "Bottle of traditional sumi ink for calligraphy and brush painting. Ground from actual soot and animal glue following ancient methods. In GLMZ, calligraphy is meditation — the brush, the ink, the paper, and nothing else.",
     flavor_profile: "Dense black, slight pine-soot smell, the ink flows differently than any synthetic pigment",
     tier_availability: "Tier 3-5",
     price: "Φ20.00",
     popularity_rank: 25,
     slogan: "The old way.",
-    cultural_context: "Calligraphy practice in M88 is a growing movement — part meditation, part art, part deliberate slow living. The practitioners are diverse — ex-corporate executives, Shelf artists who saved for the supplies, geneware people whose hands make the brush strokes unique.",
+    cultural_context: "Calligraphy practice in GLMZ is a growing movement — part meditation, part art, part deliberate slow living. The practitioners are diverse — ex-corporate executives, Shelf artists who saved for the supplies, geneware people whose hands make the brush strokes unique.",
     story_hooks: [
       "A calligraphy collective has started writing protest slogans using traditional methods and posting them in public spaces — the hand-brushed characters are more impactful than any digital display."
     ],
@@ -2533,13 +2533,13 @@ const products = [
     category: "stationery",
     subcategory: "paper goods",
     manufacturer: "Kodan Paper Works",
-    description: "Pack of 20 real paper envelopes. For sealing letters, postcards, and documents in physical form. Self-adhesive seal. In M88, a sealed envelope implies contents too sensitive for digital transmission.",
+    description: "Pack of 20 real paper envelopes. For sealing letters, postcards, and documents in physical form. Self-adhesive seal. In GLMZ, a sealed envelope implies contents too sensitive for digital transmission.",
     flavor_profile: "Crisp paper, satisfying seal, the finality of closing a physical envelope",
     tier_availability: "Tier 3-5",
     price: "Φ8.00",
     popularity_rank: 26,
     slogan: "Seal it. Send it. Mean it.",
-    cultural_context: "Receiving a physical envelope in M88 makes your heart rate spike. It could be a love letter, a threat, a legal document, or a photograph. The physicality implies weight — emotional, legal, or personal. Nobody sends junk mail on paper.",
+    cultural_context: "Receiving a physical envelope in GLMZ makes your heart rate spike. It could be a love letter, a threat, a legal document, or a photograph. The physicality implies weight — emotional, legal, or personal. Nobody sends junk mail on paper.",
     story_hooks: [
       "A blackmail ring uses PaperMoon envelopes to deliver demands — the untraceable nature of physical mail makes investigation difficult."
     ],
@@ -2588,7 +2588,7 @@ const products = [
     category: "stationery",
     subcategory: "paper goods",
     manufacturer: "Kodan Paper Works",
-    description: "Brass seal stamp and colored wax sticks for sealing envelopes and documents. Choose a letter initial or custom design. Pure ceremony — pure meaning. Sealing a letter with wax in M88 is like drawing a sword.",
+    description: "Brass seal stamp and colored wax sticks for sealing envelopes and documents. Choose a letter initial or custom design. Pure ceremony — pure meaning. Sealing a letter with wax in GLMZ is like drawing a sword.",
     flavor_profile: "The smell of melting wax, the satisfying press of brass into soft wax, the crack when broken",
     tier_availability: "Tier 4-5",
     price: "Φ35.00",
@@ -2629,7 +2629,7 @@ const products = [
     category: "electronics",
     subcategory: "disposable comm",
     manufacturer: "TechDrop Inc.",
-    description: "Single-use communication device with a 72-hour battery life. Pre-loaded with 100 minutes of encrypted voice and 500 text messages. Snap it in half when done — the internals self-destruct. The burner phone of M88.",
+    description: "Single-use communication device with a 72-hour battery life. Pre-loaded with 100 minutes of encrypted voice and 500 text messages. Snap it in half when done — the internals self-destruct. The burner phone of GLMZ.",
     flavor_profile: "Cheap plastic, small screen, basic interface, satisfying snap when destroyed",
     tier_availability: "Tier 1-4",
     price: "Φ5.00",
@@ -2839,7 +2839,7 @@ const products = [
     price: "Φ18.00",
     popularity_rank: 12,
     slogan: "Fix it yourself.",
-    cultural_context: "NanoTool is the Swiss Army knife of M88. The augment diagnostic port is what makes it essential — basic chrome troubleshooting without a clinic visit. People who carry a NanoTool are considered practical, self-reliant, and slightly paranoid about letting technicians touch their augments.",
+    cultural_context: "NanoTool is the Swiss Army knife of GLMZ. The augment diagnostic port is what makes it essential — basic chrome troubleshooting without a clinic visit. People who carry a NanoTool are considered practical, self-reliant, and slightly paranoid about letting technicians touch their augments.",
     story_hooks: [
       "The diagnostic port on the NanoTool can, with modified firmware, access restricted augment settings — it's become a tool for homebrew augment modification."
     ],
@@ -2955,7 +2955,7 @@ const products = [
     price: "Φ5.00",
     popularity_rank: 10,
     slogan: "Feed the glow.",
-    cultural_context: "Bioluminescent fish tanks are common home decor in M88 — living light in water. GloFeed is the maintenance cost of that beauty. The fish are gene-modded to glow, but the glow requires specific nutrients. It's subscription biology.",
+    cultural_context: "Bioluminescent fish tanks are common home decor in GLMZ — living light in water. GloFeed is the maintenance cost of that beauty. The fish are gene-modded to glow, but the glow requires specific nutrients. It's subscription biology.",
     story_hooks: [
       "GloFeed's luminescence compounds are derived from the same algae strain as LumiGlow lamps — BioLight Designs and AquaPet are in a quiet patent dispute.",
       "Dumping bioluminescent fish in the harbor has created a population of feral glowing fish — beautiful and ecologically disruptive."
@@ -3084,7 +3084,7 @@ const products = [
     price: "Φ8.00",
     popularity_rank: 12,
     slogan: "Living light. Take it home.",
-    cultural_context: "GloFish are the most popular pet in M88. They're small, they're beautiful, they're low-maintenance, and they glow. A small tank of GloFish is in millions of homes. Children press their faces against the glass. Adults watch them to decompress. They're alive, they're luminous, and in a concrete city, that matters.",
+    cultural_context: "GloFish are the most popular pet in GLMZ. They're small, they're beautiful, they're low-maintenance, and they glow. A small tank of GloFish is in millions of homes. Children press their faces against the glass. Adults watch them to decompress. They're alive, they're luminous, and in a concrete city, that matters.",
     story_hooks: [
       "The gene-modding process for GloFish has a failure rate — fish that don't express the luminescent gene are culled. The scale of this culling is enormous and invisible.",
       "A coral-colored variant has been released that costs Φ20 and glows in two colors — the status competition of pet fish colors has begun."
@@ -3145,7 +3145,7 @@ const products = [
     price: "Φ50.00",
     popularity_rank: 15,
     slogan: "Remember what chocolate tastes like.",
-    cultural_context: "Most of M88 has never tasted real chocolate. Synth-chocolate is the default and it's adequate. But real chocolate is transcendent — the complexity, the depth, the mouthfeel are irreproducible. A bar of Maison Cacao is a gift that says 'I think you deserve the actual world.'",
+    cultural_context: "Most of GLMZ has never tasted real chocolate. Synth-chocolate is the default and it's adequate. But real chocolate is transcendent — the complexity, the depth, the mouthfeel are irreproducible. A bar of Maison Cacao is a gift that says 'I think you deserve the actual world.'",
     story_hooks: [
       "Maison Cacao's cacao farm is in a climate-controlled agricultural dome that requires enormous energy — the carbon footprint of real chocolate is staggering, which Maison Cacao does not advertise.",
       "A Tier 1 child who received a bar of Maison Cacao as a charity gift described the experience as 'tasting something that belonged to a different world' — the quote went viral and became both marketing gold and a condemnation of inequality."
@@ -3166,7 +3166,7 @@ const products = [
     slogan: "The estate experience.",
     cultural_context: "Owning a bag of Sato Estate beans is owning a Φ200 luxury that depletes by the cup. Having real coffee-making equipment on display in your kitchen is a wealth signal as clear as jewelry. The smell of freshly ground real coffee from an apartment means money lives there.",
     story_hooks: [
-      "Sato's beans are currently the most expensive legal consumer product per kilogram in M88 — more expensive than most drugs, which creates ironic commentary.",
+      "Sato's beans are currently the most expensive legal consumer product per kilogram in GLMZ — more expensive than most drugs, which creates ironic commentary.",
       "A Tier 5 executive hosts a weekly 'coffee circle' where real coffee is served — the invitations are coveted networking opportunities disguised as casual gatherings."
     ],
     tags: ["luxury", "coffee", "consumer_good", "real_food", "tier_4", "tier_5", "rare", "status"]
@@ -3177,7 +3177,7 @@ const products = [
     category: "luxury",
     subcategory: "physical newspaper",
     manufacturer: "Meridian Media Group",
-    description: "Printed daily newspaper on real paper. Eight pages of M88 news, finance, culture, and opinion. Published every morning at 6 AM, available at Tier 3-5 newsstands. By the time you read it, the news is old. That's not the point.",
+    description: "Printed daily newspaper on real paper. Eight pages of GLMZ news, finance, culture, and opinion. Published every morning at 6 AM, available at Tier 3-5 newsstands. By the time you read it, the news is old. That's not the point.",
     flavor_profile: "Broadsheet format, newsprint smell, ink that transfers to fingers, the satisfying fold and snap of opening a newspaper",
     tier_availability: "Tier 3-5",
     price: "Φ5.00",
@@ -3205,7 +3205,7 @@ const products = [
     cultural_context: "Real leather is rare enough to be remarkable. Synth-leather is good — but people who can tell the difference can always tell. A Provenance wallet is a quiet signal of wealth and connection to the pre-synthetic world. The patina that develops over years makes each piece unique.",
     story_hooks: [
       "Provenance Artisan Goods' supply chain passes through jurisdictions with poor animal welfare standards — the 'artisan' branding obscures industrial farming practices.",
-      "Real leather repair is a specialized skill that only a handful of M88 craftspeople know — finding one is its own quest."
+      "Real leather repair is a specialized skill that only a handful of GLMZ craftspeople know — finding one is its own quest."
     ],
     tags: ["luxury", "leather", "consumer_good", "real", "artisan", "tier_4", "tier_5", "rare", "status"]
   },
@@ -3277,7 +3277,7 @@ const products = [
     price: "Φ300.00",
     popularity_rank: 30,
     slogan: "Time. Made by hands.",
-    cultural_context: "A mechanical watch is the ultimate analog luxury. It tells you something you already know — the time. It does it less accurately than your BCI. It requires manual winding. And it is, for these reasons, one of the most coveted objects in M88. It says 'I value craft over function. I value beauty over efficiency. I can afford to.'",
+    cultural_context: "A mechanical watch is the ultimate analog luxury. It tells you something you already know — the time. It does it less accurately than your BCI. It requires manual winding. And it is, for these reasons, one of the most coveted objects in GLMZ. It says 'I value craft over function. I value beauty over efficiency. I can afford to.'",
     story_hooks: [
       "Pressed Time's master watchmaker is 78 years old and has trained only three apprentices — when she retires, the craft may not survive.",
       "A Tier 5 collector has commissioned a Pressed Time watch with a custom complication that tracks the mass driver schedule — the most expensive transit tool ever created."
@@ -3395,7 +3395,7 @@ const products = [
     price: "Φ3.00",
     popularity_rank: 7,
     slogan: "Shine anywhere.",
-    cultural_context: "ChromeShine Wipes are in pockets and bags across M88. Quick-wiping your chrome prosthetic before a meeting or a date is normal grooming behavior. The wipe packets are a constant litter problem.",
+    cultural_context: "ChromeShine Wipes are in pockets and bags across GLMZ. Quick-wiping your chrome prosthetic before a meeting or a date is normal grooming behavior. The wipe packets are a constant litter problem.",
     story_hooks: [
       "The wipes contain a micro-RFID tag for inventory tracking that CyberCare claims is inert after use — privacy advocates disagree."
     ],
@@ -3407,15 +3407,15 @@ const products = [
     category: "hygiene",
     subcategory: "lip care",
     manufacturer: "DermaSoft Biocosmetics",
-    description: "Lip balm formulated for the dry, recycled air of M88 habitation blocks. Works on both natural and synth-reconstructed lips. SPF-equivalent UV protection for those near exterior windows.",
+    description: "Lip balm formulated for the dry, recycled air of GLMZ habitation blocks. Works on both natural and synth-reconstructed lips. SPF-equivalent UV protection for those near exterior windows.",
     flavor_profile: "Slight vanilla, waxy, hydrating, lasts 4 hours between applications",
     tier_availability: "Tier 1-4",
     price: "Φ2.00",
     popularity_rank: 13,
     slogan: "Protect what speaks.",
-    cultural_context: "Dry lips are universal in M88's recycled-air environment. LipShield is gender-neutral, tier-universal, and in every pocket. The small tube is one of the most common personal items in the city.",
+    cultural_context: "Dry lips are universal in GLMZ's recycled-air environment. LipShield is gender-neutral, tier-universal, and in every pocket. The small tube is one of the most common personal items in the city.",
     story_hooks: [
-      "LipShield's SPF compound is unnecessary for most M88 residents who never see direct sunlight — but removing it would require admitting that."
+      "LipShield's SPF compound is unnecessary for most GLMZ residents who never see direct sunlight — but removing it would require admitting that."
     ],
     tags: ["hygiene", "lip_care", "consumer_good", "moisturizer", "tier_1", "tier_2", "tier_3", "tier_4", "ubiquitous"]
   },
@@ -3449,7 +3449,7 @@ const products = [
     price: "Φ1.50",
     popularity_rank: 5,
     slogan: "Clean hands. Safe hands.",
-    cultural_context: "Hand sanitizer use in M88 is compulsive and justified. Population density, augment-related biohazards, and engineered pathogens make hand hygiene a survival habit. The pocket gel is as essential as keys.",
+    cultural_context: "Hand sanitizer use in GLMZ is compulsive and justified. Population density, augment-related biohazards, and engineered pathogens make hand hygiene a survival habit. The pocket gel is as essential as keys.",
     story_hooks: [
       "MedReady's sanitizer destroys beneficial skin microbiome along with pathogens — dermatologists are concerned about long-term skin health effects."
     ],
@@ -3559,7 +3559,7 @@ const products = [
     price: "Φ4.00",
     popularity_rank: 16,
     slogan: "Protect the connection.",
-    cultural_context: "Static discharge in M88's dry recycled-air environments is a constant threat to electronics and augments. StaticShield is preventive maintenance — the alternative is replacement parts.",
+    cultural_context: "Static discharge in GLMZ's dry recycled-air environments is a constant threat to electronics and augments. StaticShield is preventive maintenance — the alternative is replacement parts.",
     story_hooks: [
       "StaticShield's anti-static compound leaves a conductive residue that theoretically could be exploited for electronic surveillance — the risk is theoretical but nonzero."
     ],
@@ -3613,7 +3613,7 @@ const products = [
     price: "Φ18.00",
     popularity_rank: 17,
     slogan: "Grow something real.",
-    cultural_context: "Growing food — even just herbs — in M88 is an act of quiet rebellion against total food-system dependency. GreenGrow pods sit on kitchen counters and windowsills. The small green living thing in a concrete environment matters more than the herbs it produces.",
+    cultural_context: "Growing food — even just herbs — in GLMZ is an act of quiet rebellion against total food-system dependency. GreenGrow pods sit on kitchen counters and windowsills. The small green living thing in a concrete environment matters more than the herbs it produces.",
     story_hooks: [
       "GreenGrow's soil pods use a proprietary growing medium that can't be reused — you need to buy refills, making the 'self-sufficiency' dependent on a supply chain.",
       "Some users have started growing unauthorized plant varieties in GreenGrow pods — the LED spectrum and nutrient mix turns out to support more than just basil."
@@ -3626,7 +3626,7 @@ const products = [
     category: "household",
     subcategory: "cleaning device",
     manufacturer: "HomeServ Robotics",
-    description: "Small autonomous floor-cleaning robot. Navigates rooms, sweeps, and returns to its charging dock. Basic AI — it's not smart, but it's persistent. Handles the dust, chrome flakes, and fur that accumulate in M88 households.",
+    description: "Small autonomous floor-cleaning robot. Navigates rooms, sweeps, and returns to its charging dock. Basic AI — it's not smart, but it's persistent. Handles the dust, chrome flakes, and fur that accumulate in GLMZ households.",
     flavor_profile: "Quiet hum, small disc shape, bumps off furniture, charging dock light, oddly endearing",
     tier_availability: "Tier 2-4",
     price: "Φ25.00",
@@ -3691,7 +3691,7 @@ const products = [
     price: "Φ6.00",
     popularity_rank: 20,
     slogan: "Remember everything.",
-    cultural_context: "MemLock is ubiquitous in M88's education system. Students take it during exam periods. Professionals take it when learning new skills. The ethical debate about cognitive enhancement in education is over — everyone uses it, so not using it is a disadvantage.",
+    cultural_context: "MemLock is ubiquitous in GLMZ's education system. Students take it during exam periods. Professionals take it when learning new skills. The ethical debate about cognitive enhancement in education is over — everyone uses it, so not using it is a disadvantage.",
     story_hooks: [
       "MemLock enhances consolidation of ALL memories from the day — including traumatic ones. People who take it after bad days report more vivid nightmares and stronger negative memories.",
       "CogniChew has quietly developed a prescription-strength version that borders on eidetic memory induction — it's not on the market yet."
@@ -3710,7 +3710,7 @@ const products = [
     price: "Φ2.00",
     popularity_rank: 7,
     slogan: "Pain stops here.",
-    cultural_context: "Chronic pain is epidemic in M88 — from augment junctions, from labor, from injury, from the cumulative damage of hard living. PainNull strips are carried by a significant percentage of the population. Offering one is kindness. Needing one is normal.",
+    cultural_context: "Chronic pain is epidemic in GLMZ — from augment junctions, from labor, from injury, from the cumulative damage of hard living. PainNull strips are carried by a significant percentage of the population. Offering one is kindness. Needing one is normal.",
     story_hooks: [
       "PainNull's analgesic compound is mildly addictive — not enough to cause acute dependence but enough that long-term users experience rebound pain when they stop.",
       "PharmaClear has market data showing PainNull consumption rises in direct correlation with Shelf poverty metrics — they consider this a growth indicator."

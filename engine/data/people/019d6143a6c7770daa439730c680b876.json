@@ -95,12 +95,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Street Performer",
-      "Acrobat",
-      "Puppet Maker",
-      "ELF Adjacent",
-      "Tier 1 Survivor",
-      "Unpolished Talent"
+      "street performer",
+      "acrobat",
+      "puppet maker",
+      "elf adjacent",
+      "tier 1 survivor",
+      "unpolished talent"
     ]
   },
   "behavioral": {
@@ -265,7 +265,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

@@ -96,10 +96,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Devout (E.L.F.)",
-      "Union Member",
-      "Quiet Protector",
-      "Route Memorist"
+      "devout (e.l.f.)",
+      "union member",
+      "quiet protector",
+      "route memorist"
     ]
   },
   "behavioral": {
@@ -212,7 +212,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

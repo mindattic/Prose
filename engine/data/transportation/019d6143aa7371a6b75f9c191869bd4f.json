@@ -32,11 +32,19 @@
     "control",
     "night",
     "tier 2",
-    "tier 4"
+    "tier 4",
+    "ground",
+    "car",
+    "cargo",
+    "civilian",
+    "utility",
+    "electric"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "GLMZ",
     "Ringo PD-1 'Citizen'"
-  ]
+  ],
+  "physical_description": "A compact four-seater electric sedan with a matte charcoal composite body, rain-spotted and bearing faint scratches from years of GLMZ streets. The interior is upholstered in synthetic gray fabric, climate vents running along the dashboard, with a central touchscreen interface that glows soft blue. Multiple small black camera domes are visible in the corners of the cabin and mounted externally on the frame—unobtrusive but unmistakable.",
+  "visual_prompt": "compact autonomous electric taxi cab, matte charcoal composite body, rain-wet streets reflection, interior synthetic gray upholstery, blue-glowing touchscreen dashboard, small black surveillance camera domes visible, neo-noir gritty aesthetic, cyberpunk near-future, detailed product photography, dark industrial background, neon reflection on wet surface, worn practical design, no chrome"
 }

@@ -37,12 +37,17 @@
     "vehicle",
     "hover",
     "stealth",
-    "shelf"
+    "shelf",
+    "aircraft",
+    "electric",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Erkin Nordin-Asante-Mensah",
     "GLMZ",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": "The Nighthawk is a sleek, angular frame of matte-black radar-absorbing composite that seems to swallow light rather than reflect it. Its rotors are wrapped in sound-dampening mesh that mutes even the faintest whine to barely-audible whispers, while heat-sink vanes run along its fuselage like gills, bleeding thermal signature into the night air. The hull bears the micro-scarring of operational wear—stress fractures sealed with dark epoxy, sensor ports recessed deep into shadow, the whole machine designed to be felt rather than seen.",
+  "visual_prompt": "matte black VTOL aircraft, stealth design, radar-absorbing composite hull, sound-dampened rotors, angular fuselage, heat-sink vanes, micro-scarring and epoxy repairs, recessed sensor ports, gritty near-future military tech, neo-noir product photography, dark moody lighting, industrial wear, classified weapons platform, detailed textures, cinematic shadows, cyberpunk aesthetic"
 }

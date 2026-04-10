@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Resourceful",
-      "Community-minded",
-      "Self-Neglecting",
-      "Technically Gifted",
-      "Quietly Defiant"
+      "resourceful",
+      "community-minded",
+      "self-neglecting",
+      "technically gifted",
+      "quietly defiant"
     ]
   },
   "behavioral": {
@@ -276,7 +276,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

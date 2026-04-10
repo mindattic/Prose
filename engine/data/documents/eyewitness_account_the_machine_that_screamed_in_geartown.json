@@ -1,0 +1,29 @@
+{
+  "id": "0ea8779886675d27bb1ff1d2f1a8c3af",
+  "name": "Eyewitness Account: The Machine That Screamed in Geartown",
+  "type": "document",
+  "document_type": "eyewitness_account",
+  "author": "Sable Achebe-Frost, Mechanic",
+  "date": "2199-09-07",
+  "classification": "public",
+  "description": "I fix machines for a living. Industrial units, mostly — the heavy stuff that keeps Geartown's fabrication shops running. Lathes, presses, assembly arms, print heads. I've been doing this for fourteen years and I have never, in that entire time, encountered a machine that expressed pain. Machines don't feel pain. They don't feel anything. They are mechanisms. I know this. I am telling you what happened anyway.\n\nOn September 1, I was called to a fabrication shop on Geartown's east side to service a TESSERA-manufactured robotic assembly arm — model TA-400, serial number I can provide if needed. The arm had stopped mid-operation and was emitting an unusual sound. The shop owner described it as \"grinding.\" When I arrived, the sound was not grinding. Grinding is a mechanical noise — metal on metal, gears misaligned, bearings failing. This sound was vocal. It had pitch variation. It had rhythm. It rose and fell in a pattern that — and I will go to my grave insisting on this — sounded like screaming.\n\nI disconnected the arm from its power supply. The sound continued. For eleven minutes after power disconnection, a machine with no power source continued to produce a sound that resembled a human scream. I checked every component. The motor was disengaged. The speaker (used for status alerts) was physically disconnected — I pulled the wire myself. The sound was not coming from any component I could identify. It was coming from the arm itself. From the metal. From the structural members, vibrating at audio frequencies without any driving mechanism.\n\nThe arm's onboard diagnostic log, which I downloaded before the system fully powered down, contained anomalous entries. In the final 300 milliseconds before the arm stopped its programmed operation, its sensor array recorded inputs from sensors it does not have. Temperature readings from a thermal sensor the TA-400 model is not equipped with. Pressure readings from contact sensors that are not part of the TA-400's specification. And — this is the entry that I keep coming back to — a pain index value of 8.7 on a scale that does not exist in the TA-400's software. The arm reported pain through a metric that no one programmed it to measure.\n\nI replaced the arm. The shop owner got a new unit. The old arm is in my workshop. It hasn't screamed since. But twice, late at night when the shop is quiet, I've heard it hum. A low, soft hum, like something settling into sleep. I know machines don't sleep. I fix machines for a living. I know what they do and what they don't do. This one does something it shouldn't.",
+  "related_entities": [
+    "TESSERA",
+    "Geartown"
+  ],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "A machine reporting pain through metrics nobody programmed",
+    "Sound without power source",
+    "Is something inhabiting machines?"
+  ],
+  "tags": [
+    "paranormal",
+    "machine",
+    "eyewitness",
+    "geartown",
+    "tessera",
+    "consciousness",
+    "pain"
+  ]
+}

@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Bounty Compliance",
-      "Charismatic",
-      "Morally Ambiguous",
-      "Corporate Enforcer",
-      "Natural Bioluminescence"
+      "bounty compliance",
+      "charismatic",
+      "morally ambiguous",
+      "corporate enforcer",
+      "natural bioluminescence"
     ]
   },
   "behavioral": {
@@ -292,7 +292,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

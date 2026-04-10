@@ -32,7 +32,15 @@
     "underworld",
     "tunnel",
     "rain",
-    "vehicle"
+    "vehicle",
+    "subterranean",
+    "rail",
+    "train",
+    "van",
+    "electric",
+    "manual",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -41,5 +49,7 @@
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
     "The Crawl",
     "Vespid Dynamics Reconnaissance Beetle RB-2"
-  ]
+  ],
+  "physical_description": "A squat, heavily armored tracked vehicle resembling a cross between a mining cart and a military transport, its welded steel hull scarred by years of tunnel navigation. The cabin sits high over twin caterpillar treads caked in mineral deposits and dark residue, with reinforced viewport shutters flanking a brutalist windscreen. Twin halogen rigs protrude from the chassis like insectoid eyes, their lenses fogged and yellowed from phosphorescent fungi and acidic runoff.",
+  "visual_prompt": "tracked underground vehicle, neo-noir gritty aesthetic, weathered steel hull with welded seams, sealed cabin with reinforced viewports, twin caterpillar treads caked in mineral residue, industrial halogen lights mounted on chassis, dark cavern environment, detailed product photography, cyberpunk mining equipment, worn metallic surfaces, moody cinematic lighting, dramatic shadows, 35mm film grain"
 }

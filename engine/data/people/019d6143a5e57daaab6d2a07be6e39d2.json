@@ -94,11 +94,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Pharmacist",
-      "Corporate Employee",
-      "Ethical Risk-Taker",
-      "Information Holder",
-      "Anxious Idealist"
+      "pharmacist",
+      "corporate employee",
+      "ethical risk-taker",
+      "information holder",
+      "anxious idealist"
     ]
   },
   "behavioral": {
@@ -282,7 +282,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Southeast Asian": {

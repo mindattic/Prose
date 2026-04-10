@@ -1,0 +1,40 @@
+{
+  "id": "780f43db09d6f38dc6da0715e818c287",
+  "type": "place",
+  "name": "The Bean Counter",
+  "aliases": [
+    "Bean Counter"
+  ],
+  "description": "A coffee and sandwich shop in Oshkosh that combines meticulous coffee preparation with aggressively practical sandwiches. The coffee is real-bean, prepared with the precision of a chemistry lab. The sandwiches are vat-meat, real cheese (when available), and fresh bread from a local bakery. Coffee is Φ5-8. Sandwiches are Φ8-12. Owner Abena Svensson-Fischer counts everything — beans per cup, grams per portion, seconds per brew — and has spreadsheets tracking the optimal preparation of every item on the menu. The food is excellent. The process is exhausting to watch.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Oshkosh office workers",
+    "Precision coffee seekers",
+    "Spreadsheet enthusiasts"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.025,
+    "lng": -88.543
+  },
+  "tags": [
+    "place",
+    "cafe",
+    "food",
+    "tier_2"
+  ],
+  "related_entities": [
+    "Abena Svensson-Fischer"
+  ]
+}

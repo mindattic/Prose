@@ -1,0 +1,44 @@
+{
+  "id": "dcfec2fd27ab87d9422eb92e86da329b",
+  "name": "SentryGuard NeuralBurn NB-3 'Brainfreeze'",
+  "type": "weapon",
+  "aliases": [
+    "Brainfreeze",
+    "NB-3",
+    "Aug Spray",
+    "Neuro Mace"
+  ],
+  "category": "self_defense",
+  "description": "An advanced chemical spray formulated specifically to disrupt neural-interface connections in augmented attackers. The NB-3 combines a standard capsaicin base with SentryGuard's proprietary NeuroDisrupt compound — a synthetic irritant that interferes with the electrochemical signaling between biological neural tissue and cybernetic interface ports. When sprayed on exposed skin near BCI connection points, the compound causes temporary signal degradation that manifests as lag, phantom inputs, and sensory static in augmented systems.\n\nThe NB-3 is marketed as the answer to the 'augmentation gap' — the reality that a chemically enhanced or cybernetically augmented mugger has significant advantages over an unaugmented victim. By temporarily disrupting the attacker's augmentations, the spray theoretically levels the playing field. In practice, the effect is inconsistent — military-grade interfaces with sealed housings are largely immune, while consumer-grade open-port installations are significantly affected.\n\nSentryGuard prices the NB-3 at roughly four times the cost of the standard PS-1, putting it at the upper limit of what Tier 2 residents can afford. This pricing has drawn criticism that SentryGuard is essentially selling protection against augmented crime as a luxury product.",
+  "manufacturer": "SENTRYGUARD CONSUMER DEFENSE",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "NeuroDisrupt compound synthesis",
+    "BCI signal interference chemistry",
+    "Dual-action capsaicin-neural formula"
+  ],
+  "specifications": "capacity: 8 bursts\nrange: 2.5 meters directed stream\nSHU rating: 3.8 million (capsaicin component)\nNeuroDisrupt effect: 3-8 minutes BCI degradation\nweight: 62 g\neffectiveness vs sealed BCI: minimal\neffectiveness vs open-port BCI: significant",
+  "tactical_use": "Target exposed skin near visible BCI ports — the neck, temples, and behind the ears are optimal. The NeuroDisrupt compound needs proximity to neural interface hardware to be effective. Against unaugmented attackers, it functions as a standard pepper spray with slightly reduced potency. Best used as an opening move to degrade the attacker's augmented reflexes before fleeing.",
+  "cultural_context": "The NB-3 represents a growing market segment: anti-augmentation self-defense. As the augmentation gap widens between those who can afford combat-grade cyberware and those who cannot, products that promise to neutralize that advantage are increasingly popular. Critics call them 'aug-hate in a can,' while proponents argue they are the only equalizer available to unaugmented citizens. SentryGuard walks a careful line in their marketing, never explicitly framing augmented people as threats while clearly implying it.",
+  "known_users": [],
+  "story_hooks": [
+    "An augmented rights group is suing SentryGuard, claiming the NB-3 marketing constitutes incitement against augmented citizens and that the compound causes permanent damage to certain BCI models.",
+    "Someone has been spraying NB-3 on augmented people who aren't committing crimes — a pattern of hate attacks that SentryGuard's PR team is desperately trying to distance from their product."
+  ],
+  "ammunition_type": [
+    "OC + NeuroDisrupt aerosol canister"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "pepper_spray",
+    "chemical",
+    "anti_augmentation",
+    "bci_disruption",
+    "tier_2"
+  ],
+  "physical_description": "A compact aerosol canister roughly the size of a lighter, housed in scuffed matte-black polymer with faded SentryGuard branding worn down to bare plastic. The nozzle is a reinforced steel actuator designed for one-handed deployment, with a safety collar that's seen enough use to be permanently loose. A faint chemical residue stains the seams where the canister halves meet.",
+  "visual_prompt": "Compact black aerosol spray canister, worn matte polymer with faded corporate branding, steel nozzle, cyberpunk product photography, gritty neo-noir aesthetic, rain-slicked reflective surface, dark industrial background, detailed product shot, dystopian near-future, chemical irritant weapon, worn consumer defense tech, shallow depth of field"
+}

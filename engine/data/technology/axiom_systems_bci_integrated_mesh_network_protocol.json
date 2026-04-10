@@ -1,0 +1,46 @@
+{
+  "id": "1673c4e3f9b70378de23af020c0d064c",
+  "name": "Axiom Systems BCI-Integrated Mesh Network Protocol",
+  "brand_name": "Axiom",
+  "product_name": "NeuralMesh NMP-6",
+  "type": "technology",
+  "aliases": [
+    "NeuralMesh",
+    "NMP-6",
+    "Brain Net",
+    "BCI Mesh"
+  ],
+  "subcategory": "infrastructure",
+  "description": "The NeuralMesh NMP-6 is the network protocol that enables Brain-Computer Interface devices to communicate with each other and with digital infrastructure. Unlike conventional wireless networking, which transmits data through radio frequency signals to base stations, NeuralMesh uses each BCI as both a client and a relay node, creating a mesh network where data hops between nearby BCIs on its way to its destination. Every BCI-equipped person is simultaneously a network user and a piece of network infrastructure.\n\nThe protocol operates in a dedicated frequency band allocated by the GLMZ Communications Authority, using ultra-wideband transmission at power levels low enough to be safe for continuous cranial proximity. Data throughput per hop is approximately 10 gigabits per second, with typical latency of 0.3 milliseconds per hop. In a dense urban environment where BCI-equipped individuals are rarely more than 5 meters apart, the mesh provides coverage that is effectively ubiquitous — there is no location in GLMZ where a BCI-equipped person is out of range of the network, because there is no location where there are no BCI-equipped people nearby.\n\nAxiom Systems designed NeuralMesh as the default networking layer for their BCI hardware, and the protocol has become the de facto standard as Axiom's BCIs dominate the market. The protocol includes built-in encryption, identity verification, and traffic routing, but Axiom maintains administrative access to the routing layer — they can observe traffic patterns (though not content, due to encryption), prioritize or deprioritize specific data types, and in extreme cases, isolate individual BCIs from the mesh entirely. This administrative capability is documented in the BCI's terms of service, which approximately 0.01% of users have read.",
+  "tier_availability": "Tier 2",
+  "developers": [
+    "AXIOM SYSTEMS"
+  ],
+  "base_technologies": [
+    "BCI radio transceiver integration",
+    "Mesh routing protocols",
+    "Ultra-wideband cranial-safe transmission",
+    "Distributed network topology"
+  ],
+  "enables": [
+    "Ubiquitous BCI connectivity",
+    "Infrastructure-free networking",
+    "Peer-to-peer BCI communication",
+    "Mesh-resilient data routing"
+  ],
+  "social_impact": "NeuralMesh has made network access inseparable from human presence. Where there are people, there is network — and where there is network, there is Axiom's infrastructure. The protocol has eliminated the concept of 'dead zones' in urban areas and made network coverage a function of population density rather than tower placement. It has also made every BCI user an involuntary piece of corporate infrastructure — your brain's interface is relaying other people's data whether you know it or not. Privacy advocates have raised concerns about the routing layer's ability to track individual BCI locations through the mesh, effectively creating a real-time map of every BCI-equipped person in the city.",
+  "story_hooks": [
+    "The NeuralMesh has begun routing data through paths that Axiom's routing algorithms did not select — traffic is being diverted through specific BCIs in specific locations, and the pattern suggests someone else is controlling the mesh.",
+    "An independent security researcher has discovered that NeuralMesh's encryption has a backdoor — not a vulnerability, but a deliberate key escrow system that allows Axiom to decrypt any traffic on the mesh. Axiom's terms of service mention 'lawful intercept capability' but do not mention that the capability is always active."
+  ],
+  "tags": [
+    "infrastructure",
+    "technology",
+    "network",
+    "bci",
+    "mesh",
+    "axiom",
+    "wireless",
+    "tier 2"
+  ]
+}

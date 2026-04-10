@@ -34,7 +34,13 @@
     "lake",
     "circuit",
     "tier 2",
-    "tier 4"
+    "tier 4",
+    "van",
+    "hovercraft",
+    "electric",
+    "manual",
+    "aquatic",
+    "subterranean"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -43,5 +49,7 @@
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "Kelpline Logistics TideRunner FR-12 Amphibious Surface Effect Shuttle",
     "The Keel"
-  ]
+  ],
+  "physical_description": "A sleek, narrow hull of scarred composite and welded steel, maybe 16 feet stem to stern, with twin submerged foils angled like predatory fins. The cockpit is stripped to essentials—a reinforced pilot seat, exposed hydraulic lines, and a jury-rigged control column wrapped in grip tape and scars from a hundred near-misses. Salt-crusted, oil-stained, patched with mismatched plating; racing numbers spray-painted in fading phosphorescent green.",
+  "visual_prompt": "Gritty neo-noir hydrofoil racer, narrow composite hull, twin submerged foils, worn steel and scarred composite, salt-crusted, oil-stained, phosphorescent racing numbers, exposed hydraulic lines, minimalist cockpit, product photography, dark rain-slicked industrial background, neon reflection on wet surface, detailed weathering, cyberpunk aesthetic, high contrast lighting"
 }

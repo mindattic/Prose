@@ -33,7 +33,14 @@
     "medical",
     "zeppelin",
     "drone",
-    "lake"
+    "lake",
+    "van",
+    "boat",
+    "aircraft",
+    "cargo",
+    "luxury",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -41,5 +48,7 @@
     "NeuralPath Cascade Standard Feed BCI",
     "Yuki Nwosu-Petrenko",
     "ZhengDao Bioelectric LumbarBrace Pro"
-  ]
+  ],
+  "physical_description": "The Kite is a stubby, utilitarian frame of brushed titanium and composite panels, its fuselage scarred by years of rough landings and weather exposure. Four vectored turbofans hang from articulated pylons, their intake grilles caked with industrial grime and the occasional patched burn mark. The cargo bay dominates the center mass—a weathered aluminum drum ribbed with loading struts—while the cramped flight deck sits forward like an afterthought, its canopy scratched and yellowed from salt spray and acid rain.",
+  "visual_prompt": "Sterling-Nakamura SN Kite VTOL freighter aircraft, gritty industrial cargo drone, worn titanium composite fuselage, patched turbofan engines, weathered aluminum cargo bay, scratched canopy, rain-slicked surface, neo-noir cyberpunk aesthetic, detailed product photography, dark moody lighting, industrial decay, high resolution, technical blueprint style"
 }

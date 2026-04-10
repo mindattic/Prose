@@ -31,7 +31,11 @@
     "dark",
     "airship",
     "zeppelin",
-    "lake"
+    "lake",
+    "cargo",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -40,5 +44,7 @@
     "GLMZ",
     "The Crawl",
     "Vantablack FH-20 'Convoy'"
-  ]
+  ],
+  "physical_description": "A massive envelope of weathered silver-grey fabric stretched over a skeletal framework of reinforced aluminum and carbon composite, its surface patched and re-sealed countless times with industrial tape and sealant. The gondola slung beneath is a utilitarian cage of welded steel and riveted panels, streaked with rust-bloom and hydraulic stains, bristling with electric motors, ballast tanks, and cargo rigging. Running lights—amber and red—are recessed into the frame, their glow muted by years of precipitation buildup on the housings.",
+  "visual_prompt": "massive cargo zeppelin airship, weathered silver-grey fabric envelope, skeletal aluminum framework, industrial gondola with rigging and ballast tanks, neon amber running lights, rust and hydraulic stains, rain-slicked surfaces, neo-noir gritty aesthetic, detailed product photography, dark stormy sky background, cyberpunk industrial, worn practical technology, moody atmospheric lighting"
 }

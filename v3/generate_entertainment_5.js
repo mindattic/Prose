@@ -210,7 +210,7 @@ Each needs a name reflecting the Ubiquitous Diaspora, a platform/medium, and why
     count: 15,
     prompt: `Generate {count} traditions for GLMZ (2183-2226). Include:
 - Corporate-era holidays (mandatory celebration days created by corponations for productivity/morale)
-- Remembrance days (marking disasters, wars, the founding of M88, the Fall of old nations)
+- Remembrance days (marking disasters, wars, the founding of GLMZ, the Fall of old nations)
 - Shelf community celebrations (grassroots holidays born from Tier 1 culture — raw, genuine, defiant)
 - Synthetic awareness days (marking milestones in synthetic rights or synthetic-related events)
 - Cross-tier traditions that everyone participates in differently depending on their tier
@@ -222,7 +222,7 @@ Each tradition should have a specific date or time of year, origin story, and ho
     prompt: `Generate {count} holidays for GLMZ (2183-2226). Include:
 - Official corporate holidays (days off mandated by corponation charters — some genuine, some cynical)
 - Underground holidays (not officially recognized but widely observed on the Shelf)
-- Memorial days for specific events in M88 history (2183-2226)
+- Memorial days for specific events in GLMZ history (2183-2226)
 - Celebration days for technological milestones (first BCI, first synthetic awakening, etc.)
 - Dark holidays (days that mark tragedies — observed quietly, some suppressed by corponations)
 Each needs a name, date, origin, and how people actually observe it across tiers.`
@@ -249,7 +249,7 @@ Each term needs the word/phrase, definition, usage example, tier of origin, and 
 - E.L.F. theories (fears and beliefs about emergent digital life forms)
 - BCI paranoia (what people think BCIs really do to your brain — some concerns are valid)
 - Synthetic conspiracies (are they replacing humans? do they have a secret network? are they truly conscious?)
-- Historical cover-ups (what really happened during key events in M88 history)
+- Historical cover-ups (what really happened during key events in GLMZ history)
 - Tier conspiracy (is tier mobility actually possible or is it an illusion?)
 For each, indicate whether it is TRUE, PARTIALLY TRUE, or FALSE — but the public doesn't know which.`
   },
@@ -300,9 +300,9 @@ Each entry MUST have exactly these fields:
   "origin_year": number between 2183 and 2226,
   "tier_association": "Tier 1|Tier 1-2|Tier 2-3|Tier 3-4|Tier 4-5|All tiers",
   "status": "active|growing|declining|underground|suppressed|defunct",
-  "cultural_impact": "1-2 sentences on how this affects daily life in M88",
+  "cultural_impact": "1-2 sentences on how this affects daily life in GLMZ",
   "key_figures": ["1-3 names of notable people/entities associated with this"],
-  "locations": ["1-3 specific places in M88 where this is centered"],
+  "locations": ["1-3 specific places in GLMZ where this is centered"],
   "corporate_stance": "endorsed|tolerated|monitored|opposed|co-opted|unaware",
   "story_hooks": ["3 narrative hooks for stories involving this entry"],
   "tags": ["6-10 relevant tags for graph DB connectivity"]${category === 'slang' ? `,

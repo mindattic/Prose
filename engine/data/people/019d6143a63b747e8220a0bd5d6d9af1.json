@@ -27,7 +27,7 @@
     "core_fears": [
       "That the restraint will break — that someone will push too far and the violence his father's death put in him will come out and prove every assumption about him right",
       "That Ruth's legal approach is noble but insufficient — that the excluded need force, not frameworks, and his restraint is cowardice wearing principle's clothes",
-      "That his father's killer is still working security somewhere in M88, protected by the same jurisdictional gap that killed his father"
+      "That his father's killer is still working security somewhere in GLMZ, protected by the same jurisdictional gap that killed his father"
     ],
     "core_desires": [
       "To honor his mother's work — to prove that community defense can be sustained without becoming the thing it opposes",
@@ -44,7 +44,7 @@
       "He measures his worth by his physical utility and doesn't recognize his emotional value to the crew and community",
       "He assumes his restraint is a choice he can always make, but the accumulation of absorbed violence is eroding the foundation"
     ],
-    "secret": "He has identified the private security firm that employed the contractor who killed his father. The firm still operates in M88. He has the contractor's name. He has done nothing with this information because acting on it would betray everything Ruth has taught him. The information sits in his chest like a second heartbeat."
+    "secret": "He has identified the private security firm that employed the contractor who killed his father. The firm still operates in GLMZ. He has the contractor's name. He has done nothing with this information because acting on it would betray everything Ruth has taught him. The information sits in his chest like a second heartbeat."
   },
   "speech_patterns": {
     "vocabulary": "Direct, physical, occasionally quoting his mother's community defense principles. He speaks in concrete terms — bodies, spaces, threats. Abstract concepts get translated into physical metaphors.",
@@ -235,7 +235,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

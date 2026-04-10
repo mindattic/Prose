@@ -108,11 +108,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Observer",
-      "Engineer",
-      "Keeper",
-      "Whisperer",
-      "Unaugmented"
+      "observer",
+      "engineer",
+      "keeper",
+      "whisperer",
+      "unaugmented"
     ]
   },
   "behavioral": {
@@ -231,7 +231,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

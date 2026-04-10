@@ -107,7 +107,7 @@ function getExistingNames() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: GLMZ (M88), year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (the symbol is \u03A6, representing QUANTA, not the Greek letter). Society is tiered:
+const WORLD_CONTEXT = `Setting: GLMZ (GLMZ), year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (the symbol is \u03A6, representing QUANTA, not the Greek letter). Society is tiered:
 - Tier 1 "The Shelf" — poorest, most dangerous. Reclaimed industrial zones, acid rain, patched infrastructure.
 - Tier 2 "Circuit" — working class. Factory workers, transit operators, street vendors. Clean but functional.
 - Tier 3 — middle management, cubicle workers, small business owners.

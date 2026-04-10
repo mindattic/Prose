@@ -1,0 +1,46 @@
+{
+  "id": "f7e13597fceff6d74d4a1b247da2d876",
+  "name": "Tessera TKS-SL 'Adjudicator'",
+  "type": "weapon",
+  "aliases": [
+    "Adjudicator",
+    "TKS-SL",
+    "Smart Scatter"
+  ],
+  "category": "shotgun",
+  "description": "The Tessera TKS-SL is a semi-automatic shotgun chambered in 12 gauge with BCI smart-link integration, biometric authentication, and Tessera's proprietary variable-choke system that is controlled electronically through the neural interface. The shooter can adjust the choke — and therefore the shot spread — by thought alone, selecting from five preset patterns between shots without touching any physical control.\n\nThe Adjudicator's neural choke control is the weapon's defining feature. Where the Arcturus Scatterstorm uses electromagnetic fields to shape its flechette pattern, the TKS-SL uses a conventional barrel with a mechanically actuated choke ring driven by piezoelectric motors. The five presets range from 'cylinder' (maximum spread) to 'extra-full' (tightest pattern), and the shooter selects between them through BCI command. The transition takes approximately 0.3 seconds — fast enough to adjust between shots in a deliberate engagement.\n\nTessera developed the Adjudicator for their senior tactical teams as a single weapon that could replace multiple shotgun configurations. An operator with a TKS-SL can breach a door with a wide-pattern slug, clear the room beyond with buckshot on cylinder choke, then tighten to extra-full for a precision engagement at hallway distance — all without removing their hand from the grip or their eye from the sight picture.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — BCI registration and corponation tactical authorization required",
+  "base_technologies": [
+    "BCI smart-link",
+    "Neural variable-choke control",
+    "Piezoelectric choke motors",
+    "Biometric authentication"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 25-50 meters (choke dependent)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 6+1 rounds (tube)\nweight: 3.9 kg\nBCI_latency: <12ms\nchoke_transition: 0.3 seconds",
+  "tactical_use": "A smart-linked shotgun with neural variable-choke control. The five choke presets allow real-time pattern adjustment for different engagement distances and scenarios. The BCI interface enables choke selection without physical manipulation. Best deployed by trained operators who can exploit the variable-choke capability during multi-phase operations — breaching, room clearing, and corridor engagement from a single weapon.",
+  "cultural_context": "The Adjudicator represents Tessera's approach to smart weapons: taking conventional technology and adding just enough neural integration to meaningfully improve capability. Where Arcturus builds entirely new weapon concepts, Tessera enhances proven designs. The TKS-SL is a conventional shotgun with an unconventional choke system, and that conservative philosophy appeals to operators who trust shotgun fundamentals but want a technological edge.",
+  "known_users": [
+    "Tessera senior tactical teams",
+    "BCI-equipped security operators",
+    "Tessera facility rapid-response units"
+  ],
+  "story_hooks": [
+    "An Adjudicator's choke system receives a BCI command that didn't come from the shooter — someone with access to the neural link is adjusting the weapon remotely, widening the pattern to cause collateral damage during a precision engagement.",
+    "The piezoelectric choke motors in a batch of Adjudicators are failing due to a materials defect, locking the choke in the tightest setting. Tessera's tactical teams are unknowingly carrying shotguns that will pattern like rifles."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "smart_link",
+    "BCI",
+    "tessera",
+    "variable_choke"
+  ],
+  "physical_description": "The Tessera TKS-SL is a brutalist semi-automatic shotgun with a matte-black polymer receiver and worn stainless steel barrel, its surfaces etched with handling marks and faint corrosion. A sleek neural interface module sits mounted above the trigger guard, its status lights bleeding faint amber in low light, while the mechanized choke ring at the barrel's mouth bears the telltale scuff marks of countless adjustments. The weapon feels heavy and purposeful—industrial, not elegant.",
+  "visual_prompt": "semi-automatic shotgun, matte black polymer receiver, stainless steel barrel, neural interface module mounted above trigger guard, piezoelectric choke mechanism, worn tactical weapon, gritty neo-noir product photography, dark rain-slicked background, moody neon rim lighting, detailed close-up, industrial cyberpunk aesthetic, weathered military hardware"
+}

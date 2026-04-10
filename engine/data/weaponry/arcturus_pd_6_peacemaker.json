@@ -1,0 +1,49 @@
+{
+  "id": "3f7d5ecb004de80849b41e89d9dcbd12",
+  "name": "Arcturus PD-6 'Peacemaker'",
+  "type": "weapon",
+  "aliases": [
+    "Peacemaker",
+    "Heavy Civilian",
+    "Overkill Carry"
+  ],
+  "category": "pistol",
+  "description": "A compact .45 ACP semi-automatic pistol marketed for civilian self-defense, representing the opposite philosophy of the Citizen's minimalism. The Peacemaker is overbuilt — a stainless steel frame, match-grade barrel, tritium night sights, and a 10-round magazine of hollow-point .45 ACP that will stop anything short of armored cyberware. Arcturus designed it for civilians who want the same stopping power as professional operators, packaged in a weapon that fits in a belt holster.\n\nThe Peacemaker is controversial because it represents deliberate escalation of civilian armament. The .45 ACP hollow-point round is a manstopper — designed to expand on impact, create maximum tissue destruction, and transfer all kinetic energy to the target. This is not a deterrent. It is a killing tool marketed to people who park in office garages and buy groceries on their way home. Arcturus's marketing — 'When Peace Requires Authority' — positions the weapon as a civic responsibility, as if carrying a .45 designed for maximum lethality is an act of community service.\n\nThe PD-6 has become the weapon of choice for civilian gun enthusiasts in GLMZ who view self-defense as an identity rather than a contingency. These owners train, practice, accessorize, and carry daily with a commitment that approaches religious devotion. The weapon has spawned a subculture of civilian operators who dress, train, and equip themselves like professional security without the license, experience, or accountability. Arcturus encourages this subculture because it sells weapons, accessories, training courses, and the lifestyle that goes with them.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — civilian self-defense permit with enhanced caliber authorization",
+  "street_price": "Φ1,600",
+  "base_technologies": [
+    "Match-grade barrel manufacturing",
+    "Stainless steel frame construction",
+    "Tritium illumination sight system"
+  ],
+  "specifications": "caliber: .45 ACP\naction: Semi-automatic, single-action\nmagazine: 10 rounds\neffective range: 25 meters\nweight: 0.9 kg\nlength: 205mm\nsights: Tritium night sights\nfinish: Stainless steel, brushed",
+  "tactical_use": "Personal defense with maximum stopping power. The Peacemaker is designed to end threats with minimal rounds fired — the .45 ACP hollow-point creates wound channels that incapacitate faster than smaller calibers. The match-grade barrel provides accuracy that exceeds most civilian shooters' capability.",
+  "cultural_context": "The Peacemaker has become a cultural marker in GLMZ — carrying one signals a specific identity: someone who takes self-defense seriously enough to carry a .45, trains regularly, and has adopted the mindset that they might need to kill someone today. The weapon has created a civilian operator subculture that mimics military culture without military accountability.",
+  "known_users": [
+    "Civilian gun enthusiasts",
+    "Small business owners in high-threat areas",
+    "Former security professionals",
+    "The civilian operator subculture"
+  ],
+  "story_hooks": [
+    "A Peacemaker owner shot and killed a teenager who was reaching for a BCI display pad that the shooter mistook for a weapon. The legal defense is citing Arcturus's training program, which teaches civilians to 'treat every potential threat as a confirmed threat.' Arcturus's marketing created the mindset that killed the teenager.",
+    "Arcturus has discovered that a competitor is selling counterfeit Peacemakers with inferior metallurgy — the weapons fire normally for 200 rounds, then the barrel fails catastrophically. Thirty thousand counterfeit units are in civilian hands, and there's no way to identify them without firing them."
+  ],
+  "ammunition_type": [
+    "45_acp"
+  ],
+  "tags": [
+    "pistol",
+    "weapon",
+    "civilian",
+    "personal defense",
+    "heavy",
+    "arcturus",
+    "enthusiast",
+    "tier 2"
+  ],
+  "physical_description": "The Arcturus PD-6 is a compact, heavy-feeling pistol with a brushed stainless steel slide that's already showing micro-scratches and the dull patina of constant handling. The frame is blocky, industrial—no flourishes—with a deep-set trigger guard and aggressive grip texture that bites into palm skin. Tritium night sights glow faint green in the dark, and the 10-round magazine sits flush against the grip, making it only marginally concealable.",
+  "visual_prompt": "compact .45 ACP pistol, brushed stainless steel, tactical night sights, gritty product photography, worn grip texture, industrial design, neo-noir lighting, dark rain-slicked background, detailed metalwork, professional operator aesthetic, close-up macro shot, moody blue-amber neon reflection"
+}

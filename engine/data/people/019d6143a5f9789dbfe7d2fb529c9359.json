@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Community Elder",
-      "E.L.F. Devotee",
-      "Living History",
-      "Quiet Burden",
-      "Moral Weight"
+      "community elder",
+      "e.l.f. devotee",
+      "living history",
+      "quiet burden",
+      "moral weight"
     ]
   },
   "behavioral": {
@@ -232,7 +232,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

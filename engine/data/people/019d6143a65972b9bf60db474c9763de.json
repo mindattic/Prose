@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Master Mechanic",
-      "Blunt and Reliable",
-      "Long Institutional Memory",
-      "Bioluminescent Tells",
-      "Quietly Scarred"
+      "master mechanic",
+      "blunt and reliable",
+      "long institutional memory",
+      "bioluminescent tells",
+      "quietly scarred"
     ]
   },
   "behavioral": {
@@ -250,7 +250,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

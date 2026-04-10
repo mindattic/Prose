@@ -108,11 +108,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Baker",
-      "Artisan",
-      "Unaugmented",
-      "Community Anchor",
-      "Resistance"
+      "baker",
+      "artisan",
+      "unaugmented",
+      "community anchor",
+      "resistance"
     ]
   },
   "behavioral": {
@@ -231,7 +231,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Eastern European": {

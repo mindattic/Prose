@@ -1,0 +1,41 @@
+{
+  "name": "Rekovane",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Truce",
+    "Quiet the Body",
+    "Rejbreak"
+  ],
+  "category": "augment_interactive",
+  "subcategory": "rejection_cycle_breaker",
+  "manufacturer": "Novafold Pharmaceuticals (standard); unlicensed Shelf lab variants widespread",
+  "description": "An emergency immunosuppressant-neuromodulator hybrid specifically engineered to interrupt acute and chronic augment rejection cycles — the process by which the body's immune and nervous systems begin attacking synthetic implants, causing inflammation, signal degradation, pain, and eventual hardware failure. Rekovane suppresses the targeted immune cascade, re-establishes BCI handshake stability, and buys critical time for proper surgical intervention or long-term management. It is one of the most necessary drugs on the Shelf, where substandard chrome, poor installation, and lack of follow-up care make rejection events devastatingly common.",
+  "method_of_use": "injection",
+  "effects": [
+    "Rapid interruption of acute rejection immune cascade within 15-20 minutes",
+    "Restoration of degraded BCI signal stability",
+    "Reduction of inflammation at augment mounting points",
+    "Pain relief from rejection-associated nerve inflammation",
+    "Stabilization of hardware-tissue interface for 48-72 hours",
+    "Re-establishment of motor control in rejection-compromised augmented limbs"
+  ],
+  "side_effects": [
+    "Broad immunosuppression — severe infection risk during and after dosing",
+    "Rekovane treats rejection symptoms, not causes — repeated dosing without surgical correction leads to cascading hardware failure",
+    "Unlicensed variants frequently under-dosed or contaminated, causing partial rejection suppression that masks severity",
+    "Steroid-like metabolic effects with chronic use",
+    "Neural interface scar tissue accumulation with repeated rejection-and-suppression cycles",
+    "Psychological distress from repeated confrontation with body's rejection of its own augments"
+  ],
+  "duration": "48-72 hours active suppression per dose",
+  "addiction_risk": "low",
+  "tier_availability": "All tiers",
+  "legality": "prescription",
+  "street_price": "Φ90-150 (licensed, black market); Φ30-60 (unlicensed Shelf variants)",
+  "cultural_context": "Rekovane is a tragedy metric. In Tier 4-5, it's a brief emergency intervention before a skilled surgeon corrects whatever caused the rejection — a minor incident. In Tier 1-2, it's a permanent lifestyle. Shelf residents with secondhand or unlicensed chrome experience chronic rejection cycles they cannot afford to surgically correct, so they manage the symptoms with Rekovane indefinitely, knowing each dose is borrowing time. Medtechs on the Shelf maintain Rekovane supply chains as a matter of community survival. Novafold has resisted pressure to make it freely available, arguing that subsidized Rekovane would undercut incentive for proper augment installation — a position that is, in Shelf communities, considered a death sentence delivered in corporate language.",
+  "story_hooks": [
+    "A Shelf medtech's Rekovane supply has been cut off — a Novafold distribution agreement with a Tier 2 pharmacy chain now prohibits sales in Shelf-adjacent zones, officially to combat 'misuse.' Dozens of people on chronic rejection management are days from hardware failure and the medtech needs a solution fast.",
+    "A batch of unlicensed Rekovane has been circulating on the Shelf that doesn't suppress rejection — it masks the neurological pain signals while the rejection continues unimpeded, leading users to believe they're stable while their hardware deteriorates. Someone is manufacturing it, and it's unclear whether it's incompetence or deliberate.",
+    "A Tier 4 corporate fixer has developed spontaneous rejection of military-grade chrome they've had for a decade — something that shouldn't be possible with quality hardware. Their company's medical team is baffled. Someone may have introduced a biological agent specifically designed to trigger rejection in a particular chrome model."
+  ]
+}

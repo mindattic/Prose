@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Twelve-Fingered",
-      "Fabrication-Prodigy",
-      "Labor-Conscious",
-      "Tactile-Thinker",
-      "Guild-Apprentice"
+      "twelve-fingered",
+      "fabrication-prodigy",
+      "labor-conscious",
+      "tactile-thinker",
+      "guild-apprentice"
     ]
   },
   "behavioral": {
@@ -218,7 +218,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

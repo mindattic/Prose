@@ -1,0 +1,46 @@
+{
+  "id": "e018f26f58ae390357846484302f8e98",
+  "name": "Crucible Industries Arc Mace AM-2 'Thunderhead'",
+  "type": "weapon",
+  "aliases": [
+    "Thunderhead",
+    "AM-2",
+    "Arc Mace",
+    "Ball Lightning"
+  ],
+  "category": "melee",
+  "description": "A flanged mace with an electrically charged head that generates visible electrical arcs between its flanges during activation. The AM-2 combines medieval impact weapon geometry with modern electrical discharge technology — the flanged head concentrates kinetic force into narrow contact areas that defeat armor through focused pressure, while the electrical arcs discharge through the point of contact, delivering stunning force directly into the wound channel.\n\nThe weapon's flanges are constructed from conductive carbon-lattice composite with insulating gaps between them, creating a multi-pole electrical system that generates arcing between flanges when the head is charged. The visual effect is dramatic — a halo of crackling blue-white arcs surrounding the weapon's head that illuminates surrounding space and produces an aggressive electrical buzzing. The combined kinetic and electrical impact has been measured as sufficient to defeat Level III body armor and incapacitate the wearer through the armor itself.\n\nCrucible developed the Arc Mace for close-quarters engagements against heavily armored opponents where cutting weapons struggle and conventional impact weapons lack stopping power. The AM-2 does not need to penetrate armor — it defeats it through concentrated force and electrical discharge transmitted through conductive armor materials. Against the increasingly common composite body armor in GLMZ, the weapon's dual-mode attack presents a threat that cannot be defended against by any single armor type.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — electrical/impact weapon dual classification",
+  "base_technologies": [
+    "Multi-pole flanged electrical discharge",
+    "Focused-pressure impact geometry",
+    "Conductive carbon-lattice flanges"
+  ],
+  "specifications": "head_diameter: 10 cm across flanges\nhandle_length: 45 cm\ntotal_weight: 1.8 kg\nflanges: 6, conductive carbon-lattice\narc_voltage: 30,000 volts between flanges\npower_source: Handle capacitor, 100 discharges\nimpact_rating: Defeats Level III body armor",
+  "tactical_use": "The Arc Mace is deployed against armored opponents in close quarters. The flanged head concentrates impact force into narrow lines that dent and deform armor panels, while the electrical discharge transmits through the deformation to the wearer's body. Against composite armor, the combination of mechanical deformation and electrical penetration overwhelms protection that would resist either threat individually. The weapon's dramatic electrical display also serves as an intimidation tool — the visible arcs and aggressive buzzing discourage opponents from closing to engagement range.",
+  "cultural_context": "The Arc Mace has revived interest in historical impact weapons that had been largely forgotten in GLMZ's blade-centric combat culture. The weapon's effectiveness against modern armor has demonstrated that medieval design principles — concentrate force, defeat protection through pressure rather than penetration — remain tactically valid when combined with modern materials. A small but dedicated subculture of mace-fighters has emerged, styling themselves as 'new crusaders' with varying degrees of historical awareness and irony.",
+  "known_users": [
+    "Anti-armor close-combat specialists",
+    "Corporate heavy security",
+    "Mace-fighting enthusiasts"
+  ],
+  "story_hooks": [
+    "An Arc Mace was used to breach a powered armor suit from the outside — the electrical discharge overloaded the suit's systems while the flanged impact compromised the structural integrity. The operator inside survived but their cyberware was permanently damaged by the electrical surge.",
+    "A fight club has emerged in the mid-tiers where participants use Arc Maces in full armor — the combination of impact and electrical discharge creates a spectacle that has attracted betting interest from all tier levels."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "mace",
+    "electrical",
+    "impact",
+    "anti-armor",
+    "tier 3",
+    "flanged"
+  ],
+  "physical_description": "The Thunderhead's flanged head is a brutal geometry of charred carbon-lattice composite, its conductive surfaces scarred from repeated electrical discharge and impact trauma. Insulating gaps between the flanges create a skeletal cage effect, with visible corrosion staining the contact points where arcs have burned their signature into the metal. The reinforced steel shaft bears a worn grip wrapped in frayed synthetic leather, and the whole weapon carries the acrid smell of ozone and burned polymer.",
+  "visual_prompt": "gritty neo-noir product photography, electrically charged medieval mace with carbon-lattice flanged head, visible electrical arcs between flanges, conductive metal surfaces with burn scars, insulating gaps creating skeletal cage effect, worn steel shaft, frayed leather grip, industrial brutalism, dark studio background, detailed weathering and corrosion, cyberpunk weapon design, moody lighting emphasizing electrical discharge, 50mm macro lens"
+}

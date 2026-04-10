@@ -1,0 +1,33 @@
+{
+  "id": "df8bbad70524101101e88a192f77170a",
+  "name": "The Beaumont Transit Hub Dropout",
+  "type": "document",
+  "document_type": "incident_report",
+  "author": "Ferrogate Transit Security Division",
+  "date": "2199-08-08",
+  "classification": "classified",
+  "description": "On August 1st, 2199, three minors — ages 9, 11, and 13, names withheld by protective order — were documented entering the Beaumont Junction transit hub on the southern edge of GLMZ at 14:22:07. They were traveling unaccompanied to visit a relative in the Shelf District. Their tickets were valid. Their BCI tags registered at the entrance scanner.\n\nAt 14:22:09 — two seconds after the entrance scan — every camera within a 400-meter radius of Beaumont Junction experienced a synchronized dropout. Not a power failure. Not a network interruption. A dropout: cameras remained powered, connected, and recording, but the recorded frames contain no image data. Black frames. For exactly ninety seconds — 14:22:09 to 14:23:39 — every optical sensor in the area produced nothing.\n\nWhen the cameras resumed, the three children were not in the transit hub. They were not on any platform. They were not in any vehicle. Their BCI tags did not register at any subsequent scanner. The ninety seconds of blackout have been analyzed by four independent forensic imaging teams. The cameras were not hacked — their firmware shows no intrusion. They were not physically obscured — other environmental sensors (thermal, acoustic, barometric) continued to function normally throughout the dropout. The cameras simply stopped seeing.\n\nThermal sensors indicate that at 14:22:30 — twenty-one seconds into the dropout — the ambient temperature in the hub's main concourse dropped by 4.2 degrees Celsius over a span of three seconds, then returned to normal. No HVAC event accounts for this. The three children have not been found. Their BCI tags have not pinged any node in the GLMZ network since 14:22:07 on August 1st, 2199. Whatever took them also took ninety seconds of light.",
+  "related_entities": [
+    "Ferrogate Transit",
+    "Beaumont Junction",
+    "GLMZ",
+    "Shelf District"
+  ],
+  "credibility": "suppressed",
+  "story_hooks": [
+    "What can cause a synchronized optical dropout across hundreds of cameras?",
+    "What caused the temperature drop, and is it related to the disappearance?",
+    "Have there been other disappearances during camera dropouts?"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "disappearance",
+    "children",
+    "transit",
+    "camera",
+    "meridian_88"
+  ]
+}

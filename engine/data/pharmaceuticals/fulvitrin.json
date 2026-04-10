@@ -1,0 +1,36 @@
+{
+  "name": "Fulvitrin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Ghost Dose",
+    "Phantom",
+    "the Clean One"
+  ],
+  "category": "poison_toxin",
+  "subcategory": "fast-acting untraceable assassination compound",
+  "manufacturer": "Nightshade Pharmatech (denied) — possibly Spire-level custom synthesis",
+  "description": "Fulvitrin is an engineered peptide toxin that triggers catastrophic mitochondrial failure in cardiac and neural tissue within 4-8 minutes of administration, causing what presents as sudden cardiac arrest with no unusual markers. The compound is specifically engineered to be fully metabolized and enzymatically degraded within 90 minutes of death, leaving no detectable residue in any standard or advanced forensic panel. BCI health monitors log the event as an arrhythmic cardiac event — expected in someone of any age — and the compound's metabolic ghost is indistinguishable from endogenous biochemistry.",
+  "method_of_use": "injection",
+  "effects": [
+    "Rapid cardiac arrest within 4-8 minutes",
+    "Simultaneous neural tissue failure preventing resuscitation",
+    "Complete metabolic self-erasure within 90 minutes post-mortem",
+    "Presents identically to natural sudden cardiac death on all standard diagnostic systems"
+  ],
+  "side_effects": [
+    "None relevant to the target; handler risks include accidental self-injection — there is no antidote",
+    "Requires cold-chain storage — degrades rapidly above 8°C, becoming ineffective but still detectable in the degraded form",
+    "The degraded form is actually detectable, meaning improper storage creates evidence where the intact compound would not"
+  ],
+  "duration": "4-8 minutes to lethality; compound undetectable within 90 minutes",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 4-5",
+  "legality": "illegal",
+  "street_price": "Φ60,000–Φ150,000 per dose",
+  "cultural_context": "Fulvitrin is not a street drug. It does not circulate on the Shelf or even in Tier 3 criminal networks. It exists at the apex of GLMZ's assassination economy — the instrument of Spire politics, of corporate succession, of the kind of killing that needs to be invisible not just to law enforcement but to the victim's own security apparatus. Acquiring Fulvitrin requires connections that most people in GLMZ don't know exist. Each dose is believed to be individually tracked by its manufacturer, meaning using it creates a ledger entry somewhere in a database that someone very powerful controls. That is understood to be intentional.",
+  "story_hooks": [
+    "A forensic pathologist who specializes in BCI-adjacent death investigation has seen three 'cardiac events' in six months that share a statistical signature she can't quite name — she doesn't have evidence of anything, just a feeling, and that feeling is getting her noticed.",
+    "A fixer is offered a Fulvitrin contract through channels they've never used before — and the payout is so large it means either the target is extremely important or the fixer is being set up to take a fall for something already done.",
+    "Someone is selling what they claim is Fulvitrin on a gray-market broker network at 1/10th the going rate. It might be counterfeit, or it might be the degraded form — detectable, evidence-creating — and someone might be selling it specifically to leave trails."
+  ]
+}

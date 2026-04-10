@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Scrap Merchant",
-      "Technical Intuitive",
-      "E.L.F. Devotee",
-      "Shelf Regular",
-      "Potential Asset"
+      "scrap merchant",
+      "technical intuitive",
+      "e.l.f. devotee",
+      "shelf regular",
+      "potential asset"
     ]
   },
   "behavioral": {
@@ -292,7 +292,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

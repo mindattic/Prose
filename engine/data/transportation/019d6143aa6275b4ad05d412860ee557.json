@@ -30,11 +30,18 @@
     "power",
     "bar",
     "food",
-    "water"
+    "water",
+    "truck",
+    "boat",
+    "cargo",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig"
-  ]
+  ],
+  "physical_description": "A broad, utilitarian steel hull with sloped sides and a shallow draft, designed to navigate the cramped canal locks of the GLMZ's industrial spine. Rust blooms across welded seams and corroded anchor points; the deck is scarred by decades of cargo handling, with reinforced tie-down cleats and weathered wood planking patched over with sheet metal. A modest pilothouse sits forward, its windows thick with grime and salt residue, while the stern features a jury-rigged diesel engine exhaust that vents in lazy plumes.",
+  "visual_prompt": "industrial canal barge, flat-bottomed steel cargo vessel, rust-streaked hull, grimy pilothouse windows, weathered wood and sheet metal deck, diesel exhaust, moody gray water, rain-slicked surfaces, neo-noir industrial decay, gritty product photography, cinematic lighting, dark polluted canal backdrop, worn metal textures, 2070s near-future"
 }

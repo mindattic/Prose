@@ -31,7 +31,10 @@
     "night",
     "storm",
     "shelf",
-    "tier 1"
+    "tier 1",
+    "ground",
+    "van",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -39,5 +42,7 @@
     "Crucible Industries Orbital Elevator Graviton Assist",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "Weathered hemp and synthetic rope strung between salvaged steel girders and concrete building edges, with planks of treated wood and reclaimed metal grating forming the walking surface. The bridges sway visibly in the humid Great Lakes wind, their railings wrapped in frayed rope that's been rewrapped so many times the original color is lost beneath layers of dirt, rust stain, and residents' chalk marks. Sections show crude repairs: welded patches, bolt-reinforced joints, and newer rope spliced into older strands.",
+  "visual_prompt": "gritty neo-noir rope bridge network between industrial buildings, weathered hemp and synthetic rope railings, salvaged wood planks and metal grating walkway, rust-stained steel girders, rain-slicked surfaces, swaying cables, worn patches and crude repairs, dark concrete architecture, moody atmospheric lighting, detailed product photography, cinematic depth of field, cyberpunk industrial aesthetic"
 }

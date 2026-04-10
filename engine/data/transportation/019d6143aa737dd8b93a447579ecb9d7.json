@@ -31,11 +31,17 @@
     "night",
     "vehicle",
     "tier 2",
-    "tier 4"
+    "tier 4",
+    "van",
+    "cargo",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "GLMZ",
     "Tessera Corponation"
-  ]
+  ],
+  "physical_description": "A boxy white delivery van, roughly 4.5 meters long, with a seamless composite hull that's already showing micro-cracks and rain-stain discoloration. Sliding side doors, reinforced cargo bay, and a stubby autonomous sensor array mounted on the roof—all designed for anonymous, tireless work. The paint is matte and industrial, deliberately unmarked except for faded Tessera Transit decals that could belong to any of the thousands clogging GLMZ streets.",
+  "visual_prompt": "white autonomous delivery van, boxy utilitarian design, neo-noir gritty, rain-slicked industrial streets, weathered composite hull, faded corporate decals, sensor array roof-mounted, cyberpunk logistics, worn matte finish, detailed product photography, dark wet asphalt background, overhead neon glow, photorealistic, dystopian near-future"
 }

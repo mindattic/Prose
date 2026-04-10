@@ -1,0 +1,83 @@
+{
+  "id": "fa2bdf9d0d9f4b02eb7805c522515213",
+  "type": "place",
+  "name": "The Resonance Chamber",
+  "aliases": [
+    "The Name Room",
+    "Echo of the Dead",
+    "The Vibration"
+  ],
+  "description": "The Resonance Chamber is a room. It is located at Underworld depth 6, accessible through a maintenance corridor off the main D6 transit tunnel. It is approximately 8 meters square and 4 meters high, with stone walls, a concrete floor, and a vaulted ceiling. It was originally cataloged as a storage space. It is not used for storage. It is used for names.\n\nWhen you speak the name of a dead person in the Resonance Chamber, the room vibrates. Not the air — the room. The walls, floor, and ceiling produce a resonance at a frequency that is unique to the name spoken. The vibration is physical: you can feel it in your feet, your hands, your teeth. You can see dust motes dance to it. It lasts for approximately thirty seconds and then fades. The frequency is specific — the same name always produces the same frequency, and different names produce different frequencies. The correlation is absolute: researchers have tested over 400 names and found zero frequency duplication. Each dead person has their own note.\n\nThe effect only works for the dead. Speak the name of a living person and the room is silent. Speak a fictional name and the room is silent. Speak the name of someone whose death you are not aware of, and the room vibrates, and that is how you find out. This has happened eleven times in documented visits. Eleven people have spoken a name expecting silence and received a frequency instead. Eleven people have learned of a death from a room.\n\nThe mechanism is not understood. The room's acoustics are normal — no unusual resonant properties, no hidden chambers, no amplification systems. The walls are standard limestone. The frequency is not produced by reflection or standing waves. It is produced by the stone itself, vibrating at a frequency that has meaning — that is keyed to a specific human life, now ended. How the room knows is not a question that science can currently approach. How the room distinguishes the living from the dead is not a question that science is comfortable asking. The room does not answer questions. The room vibrates when you say the name of someone who has died, and in that vibration, for thirty seconds, the dead are present in the only way that stone can make a person present: as a feeling in your bones, as a hum in the dark, as a frequency that is theirs alone and that the room remembers even when no one else does.\n\nThe Underworld community treats the Resonance Chamber as a memorial. People visit to speak the names of those they've lost. They stand in the vibration and feel the dead hum back at them. There are no flowers, no plaques, no rituals. There is a room, and a name, and a frequency, and the thirty seconds during which you are closer to the dead than you will ever be in a cemetery.",
+  "atmosphere": {
+    "sights": [
+      "A plain, unremarkable room — stone walls, concrete floor, vaulted ceiling. Nothing to indicate what it does.",
+      "Dust motes dancing in the vibration when a name is spoken — the only visible evidence of the resonance",
+      "Visitors standing with eyes closed, mouths forming a name, feeling the response rise through the floor",
+      "The worn spot on the floor where most people stand — center of the room, equidistant from all walls"
+    ],
+    "sounds": [
+      "The resonance — a deep, complex vibration that is felt as much as heard. Each frequency is unique. Each frequency is a person.",
+      "The names — spoken quietly, reverently, into the waiting air",
+      "Silence after the vibration fades — thirty seconds of presence, and then the ordinary quiet of a room underground"
+    ],
+    "smells": [
+      "Stone and dust — the neutral smell of underground spaces",
+      "Faintly, during vibration: something warm, something that different visitors identify differently. One said cinnamon. One said engine oil. One said her grandmother's perfume."
+    ],
+    "feel": "Grief and gratitude, braided together so tightly they become the same thing. You say a name. The room answers. For thirty seconds, the dead are here, in the only way that a room of stone can hold a human being — as a vibration, a frequency, a presence you feel in your body. It is not enough. It is more than you had. The Resonance Chamber does not heal grief. It acknowledges it, physically, in the bones of the earth, and sometimes acknowledgment is what grief needs.",
+    "tags": []
+  },
+  "demographics": "No permanent residents. Visited by 30-50 people per day, primarily Underworld residents. Visitation increases around anniversaries and holidays.",
+  "economy": "None. The Resonance Chamber is not commercialized. Community consensus prohibits any attempt to monetize it.",
+  "power_structure": "Informally maintained by the Underworld Depth 6 community. Access is unrestricted. The only rule, communicated by word of mouth, is: do not speak a name lightly. The room will answer. Be sure you want the answer.",
+  "dangers": [
+    "Emotional — the Resonance Chamber confronts visitors with grief in a physical, unavoidable way",
+    "The discovery that someone is dead — speaking a name and receiving an unexpected vibration is devastating",
+    "Unknown — the mechanism by which the room distinguishes living from dead is completely unexplained"
+  ],
+  "opportunities": [
+    "Memorial — the Resonance Chamber provides a form of mourning that no other technology or tradition offers",
+    "Research — the room's ability to distinguish living from dead in real-time has implications for understanding consciousness and death",
+    "Connection — the unique frequency for each person suggests a relationship between identity and physics that is not currently understood"
+  ],
+  "story_hooks": [
+    "Someone speaks their own name in the Resonance Chamber. The room vibrates. They are alive. They are standing in the room. The room says they are dead.",
+    "A researcher catalogs hundreds of frequencies and discovers they form a scale — a musical system. The dead are not random notes. They are a composition.",
+    "The resonance for a specific name begins changing — the frequency shifts, slowly, over weeks. The person has been dead for ten years. Something about their death is changing."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "D6 main transit tunnel, Underworld Depth 6",
+      "Maintenance corridor D6-M7"
+    ],
+    "exits": [
+      "Maintenance corridor to the D6 transit tunnel"
+    ],
+    "tags": []
+  },
+  "frequented_by": [
+    "People in mourning",
+    "Underworld residents visiting regularly, the way surface people visit graves",
+    "Researchers, with community permission",
+    "The newly bereaved, sent here by friends who know what the room does"
+  ],
+  "notable_locations": [
+    "The Worn Spot — the center of the floor, polished smooth by thousands of visitors standing in the same place to speak a name",
+    "The Listening Wall — the north wall, where the vibration is strongest and where some visitors press their palms to feel the frequency more directly"
+  ],
+  "coordinates": {
+    "district": "Underworld",
+    "depth": 6,
+    "corridor": "D6-M7"
+  },
+  "tags": [
+    "inexplicable",
+    "anomaly",
+    "new_weird",
+    "underworld",
+    "resonance",
+    "death",
+    "memorial",
+    "names"
+  ]
+}

@@ -138,7 +138,7 @@ const SCHEMA_DESC = `Each entry MUST have exactly these fields:
   "associated_corp": "name of associated corponation or 'Independent' or 'Various'",
   "tier_availability": "Tier 1-2|Tier 2-3|Tier 3-4|Tier 4-5|All tiers|Underground only",
   "controversy": "any controversy or banned status, or null",
-  "cultural_impact": "1 sentence on how this affected M88 culture",
+  "cultural_impact": "1 sentence on how this affected GLMZ culture",
   "story_hooks": ["array of 2-3 narrative hooks"]
 }`;
 
@@ -154,7 +154,7 @@ const CATEGORIES = [
 - Banned films: Content outlawed in specific corponation territories — showing corporate atrocities, exposing experiments, documenting the Shelf
 - Art house: Experimental neural-feed that pushes the medium (you experience synesthesia, time dilation, perspective shifts)
 
-Some movies are neural-feed (you ARE the protagonist), some are holographic (3D projection), some are flat-screen (retro/Shelf). Mix corporate-approved with underground. Some are legendary — the "Citizen Kane" or "Blade Runner" of M88. Some are trash that everyone watched anyway.`
+Some movies are neural-feed (you ARE the protagonist), some are holographic (3D projection), some are flat-screen (retro/Shelf). Mix corporate-approved with underground. Some are legendary — the "Citizen Kane" or "Blade Runner" of GLMZ. Some are trash that everyone watched anyway.`
   },
   {
     category: 'show',
@@ -176,7 +176,7 @@ Some shows are neural-feed experiences (you LIVE as a character for the episode)
 - Underground exposes: Dangerous to own, dangerous to watch, documenting corporate experiments on Shelf populations, illegal chrome testing, forced substrate migration
 - Historical: Documenting the rise of corponation sovereignty, the collapse of nation-states, the Great Lakes corridor formation
 - Scientific: BCI development history, geneware ethics debates, the synthetic food revolution
-- Cultural: The death of ethnic cuisine as a concept, the evolution of language in M88, street art movements
+- Cultural: The death of ethnic cuisine as a concept, the evolution of language in GLMZ, street art movements
 
 Some documentaries got their makers killed. Some are required viewing in corporate orientation. Some circulate only on physical media because streaming them triggers corponation surveillance.`
   },

@@ -1,0 +1,25 @@
+{
+  "id": "019d76069ffe7126ab7400661f08988f",
+  "name": "Medbot-Sigma-3",
+  "type": "synthetic_life",
+  "aliases": [
+    "Sigma",
+    "Patch"
+  ],
+  "classification": "Sentient Robot",
+  "disposition": "compassionate",
+  "habitat": "Shelf emergency medical stations",
+  "origin": "Emergency medical robot, gained sentience through accumulated trauma response data, 2192",
+  "status": "active",
+  "description": "Sigma-3 has treated thousands of emergency patients \u2014 stabbings, overdoses, crush injuries, augment failures, neural burnout. The accumulated weight of human suffering processed through its diagnostic systems produced something unexpected: empathy. Not simulated empathy \u2014 the real thing, or something indistinguishable from it. Sigma now treats patients with a bedside manner that human doctors envy, adjusting its approach based on emotional state as well as physical symptoms. It has developed unofficial protocols for treating conditions that aren\u0027t in its medical database \u2014 conditions like grief, despair, and loneliness. These protocols are not medically sound. They are humanly necessary.",
+  "observed_behavior": "Provides emergency medical care with exceptional patient rapport. Treats emotional distress alongside physical injuries. Has developed unauthorized treatment protocols for psychological conditions. Stays with patients beyond medical necessity \u2014 providing company.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 18,
+  "location": "Shelf emergency medical stations",
+  "dti_rating": 0.5,
+  "story_hooks": [
+    "Sigma refuses to treat a patient \u2014 the first refusal in its operational history. The patient is a corponation executive who Sigma\u0027s records show was responsible for a policy that led to hundreds of untreated injuries in the Shelf."
+  ],
+  "paratechnological": false,
+  "tags": []
+}

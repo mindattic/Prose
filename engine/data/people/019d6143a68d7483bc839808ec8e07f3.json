@@ -99,7 +99,7 @@
       "street pharmacist",
       "information hub",
       "maternal archetype",
-      "Souk elder",
+      "souk elder",
       "covert chemist"
     ]
   },
@@ -284,7 +284,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

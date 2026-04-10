@@ -1,0 +1,82 @@
+{
+  "id": "1f0f01bd55bb3a3c66defab21d6f27a2",
+  "type": "place",
+  "name": "the_meridian_office_park",
+  "aliases": [
+    "Ghost Park",
+    "The Six",
+    "Meridian Corporate Campus"
+  ],
+  "description": "Six buildings arranged around a central courtyard on the western edge of the Circuit district, collectively known as the Meridian Office Park. Each building is four stories tall, clad in the same beige composite paneling, and distinguished only by a number (1 through 6) stenciled above the entrance in corporate sans-serif. The courtyard features a functioning fountain, maintained landscaping, and park benches that no one sits on. A shuttle bus stop displays a posted schedule for a shuttle that arrives on time every thirty minutes and departs empty.\n\nAll six buildings are Ghost Buildings. This is unremarkable in the Circuit. What is remarkable is the ownership structure. Each building is leased to a different subsidiary of a different division of the same corponation — Vossen Dynamics. But the ownership chain is so deeply nested that the connection is invisible from any single vantage point. Building 1 is leased to Prismatic Consulting Group. Building 2 to Heliotrope Data Services. Building 3 to Canopy Strategic Solutions. Buildings 4, 5, and 6 to three more entities with similarly anodyne names. Each entity is a subsidiary of a different Vossen division. None of the divisions know about the others' leases. The net effect is that Vossen Dynamics is paying six separate rents for six separate buildings in the same office park, maintaining six separate sets of utilities, cleaning contracts, and landscaping agreements, all through entities that are unaware of each other's existence.\n\nThe buildings are fully furnished and climate-controlled. Building 3's ground-floor cafeteria serves fresh food daily — salads, hot entrees, a dessert station — prepared by a kitchen staff of three who arrive at 6 AM and depart at 2 PM. The food is placed in serving stations. By end of day, it has not been touched. It is disposed of according to food safety protocols. The kitchen staff have worked here for years. They are professionals. They take pride in the food. One of them, a chef named Isabelle Ferreira-Tanaka, told a journalist that the menu rotates on a four-week cycle and that she adjusts recipes seasonally. She said, \"Someone should be eating this. It's good food.\" Nobody eats it. It's good food.\n\nThe shuttle bus is perhaps the park's most poignant feature. It is a standard corporate shuttle — clean, air-conditioned, equipped with wifi that connects to nothing — that runs a loop between the office park and the nearest transit station every thirty minutes from 7 AM to 7 PM. It has never carried a passenger. The driver, who has been doing this route for two years, listens to audiobooks during the runs. He has completed 147 audiobooks. He recommends the mysteries.",
+  "atmosphere": {
+    "sights": [
+      "Six identical beige buildings arranged around a courtyard with a working fountain that nobody watches",
+      "A shuttle bus arriving and departing on schedule, empty, doors opening and closing for no one",
+      "Through the cafeteria windows of Building 3: steam tables loaded with fresh food, dining room empty",
+      "Maintained landscaping — trimmed hedges, seasonal plantings — in a park with zero foot traffic",
+      "Park benches with no wear marks, no scratches, no evidence of human use"
+    ],
+    "sounds": [
+      "The fountain — a steady, pleasant splash designed to mask office conversation that doesn't exist",
+      "The shuttle bus hydraulics hissing as doors open at the empty stop",
+      "Kitchen ventilation from Building 3's cafeteria — the sound of food being prepared for no one",
+      "Birdsong — the landscaped courtyard attracts actual birds, who are the park's most frequent visitors"
+    ],
+    "smells": [
+      "Fresh-cut grass from the landscaping service's weekly maintenance",
+      "Cooking from Building 3's cafeteria — roasted vegetables, grilled protein, the warm smell of bread",
+      "Fountain mist carrying the faint mineral tang of treated water",
+      "Nothing — the buildings themselves smell of nothing, which is the smell of absence"
+    ],
+    "feel": "Suburban uncanny. The Meridian Office Park looks exactly like a functioning corporate campus from a distance. The fountain, the landscaping, the shuttle bus, the cafeteria steam — it reads as normal. The wrongness only registers when you realize there are no people. Not temporarily absent — structurally absent. The park is a diorama of corporate life with the figures removed. Standing in the courtyard at noon, with the fountain running and the cafeteria serving lunch to empty tables and the shuttle arriving for passengers who won't board, is the experience of visiting a world that is complete except for its inhabitants.",
+    "tags": []
+  },
+  "demographics": "Zero occupants across all six buildings. Kitchen staff (3), cleaning crews (6, one per building), landscaping team (2), shuttle driver (1). Total human presence: 12 service workers maintaining a campus built for approximately 800.",
+  "economy": "Total annual operating cost across all six buildings: approximately Φ4.8 billion, paid through six separate subsidiary accounts, all ultimately funded by Vossen Dynamics. The food service budget alone is Φ380,000 annually for meals that are prepared and discarded.",
+  "power_structure": "None. Each building is nominally managed by its leasing entity, but the entities have no employees and make no decisions. The buildings are governed by their maintenance contracts, which auto-renew.",
+  "dangers": [
+    "The ownership obfuscation means no single person at Vossen can authorize changes to the park's operations",
+    "The cafeteria's daily food waste has attracted attention from food security advocates",
+    "The shuttle bus route runs through traffic corridors — an empty bus in an accident creates liability questions with no clear responsible party"
+  ],
+  "opportunities": [
+    "Six fully furnished, maintained buildings available for immediate occupancy — if anyone could navigate the lease structure",
+    "The cafeteria serves genuinely excellent food to no one — a sufficiently bold squatter could eat well",
+    "The park's ownership structure is a case study in corporate fragmentation that could embarrass Vossen if publicized"
+  ],
+  "story_hooks": [
+    "Vossen is paying Φ4.8 billion annually for an empty office park through six subsidiaries that don't know about each other",
+    "Chef Isabelle Ferreira-Tanaka's food is excellent — what happens when someone finally eats it?",
+    "The shuttle driver's 147-audiobook career is its own kind of ghost story"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Circuit District western corridor",
+      "GLMZ transit station (shuttle route terminus)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Kitchen staff (Building 3 cafeteria, daily)",
+    "Cleaning crews (nightly, one crew per building)",
+    "Landscaping team (weekly)",
+    "Shuttle driver (12 hours daily, 7 days a week)",
+    "Birds (the courtyard's most consistent visitors)"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.87,
+    "lng": -87.65,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "ghost_building",
+    "mundane",
+    "new_weird",
+    "circuit_district",
+    "meridian_88",
+    "vossen"
+  ]
+}

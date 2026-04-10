@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3j6u9m10mo</Fingerprint>
-      <Integrity>cbI0DnnCt8iGu+hvm58oyTWKmqrhxwpnMo92egR7CJg=</Integrity>
+      <Fingerprint>r0vsmm9yxc</Fingerprint>
+      <Integrity>9XVQ8dZSZ0vy9teWrrdgo/HS7HsOeDFHD2PLiVyzKjk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>12954</FileLength>
-      <LastWriteTime>Thu, 09 Apr 2026 01:43:08 GMT</LastWriteTime>
+      <FileLength>19952</FileLength>
+      <LastWriteTime>Fri, 10 Apr 2026 05:15:19 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -39,6 +39,26 @@
       <FileLength>2148</FileLength>
       <LastWriteTime>Thu, 09 Apr 2026 15:32:12 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\geomap.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>StreetSamurai.MAUI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/geomap.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>o1keuccog8</Fingerprint>
+      <Integrity>BFUqwV1fM8ObSSsyCMByNErx/2pV/VH4ipB58ght6ps=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>2811</FileLength>
+      <LastWriteTime>Fri, 10 Apr 2026 06:15:03 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\geomap.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))">
       <SourceType>Package</SourceType>
@@ -92,12 +112,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fgvuj6zoro</Fingerprint>
-      <Integrity>v/U8uOi9qHxKSiKhAj8YFgQbKWP6Mgx1hWnTzI4jlsA=</Integrity>
+      <Fingerprint>1vxyhb8or8</Fingerprint>
+      <Integrity>E+O0CtlfOjPNdXQj9SP81mqS5MdnKBUmLJeyApdUPUA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>1611</FileLength>
-      <LastWriteTime>Mon, 06 Apr 2026 06:14:14 GMT</LastWriteTime>
+      <FileLength>2486</FileLength>
+      <LastWriteTime>Fri, 10 Apr 2026 06:14:22 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\loader.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))">
@@ -112,12 +132,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wh2i8qzmhc</Fingerprint>
-      <Integrity>3MKH5aqkiKqEBcvsCnmixjmdCiSDIZRQjnN84Y6zFn4=</Integrity>
+      <Fingerprint>v841gwy5xg</Fingerprint>
+      <Integrity>QUQ4MwuzOJWg5gOyBeeiIYTQNB+Av+/mphJDdW7sE/4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>22451</FileLength>
-      <LastWriteTime>Fri, 10 Apr 2026 02:19:02 GMT</LastWriteTime>
+      <FileLength>22090</FileLength>
+      <LastWriteTime>Fri, 10 Apr 2026 06:14:29 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))">

@@ -28,11 +28,17 @@
     "transportation",
     "trust",
     "tender",
-    "night"
+    "night",
+    "truck",
+    "cargo",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Hauler",
     "Vantablack FH-20 'Convoy'"
-  ]
+  ],
+  "physical_description": "A boxy, utilitarian electric cargo truck with a weathered steel frame and faded industrial yellow paint, streaked with rust and road grime. The cabin sits high above massive pneumatic tires, with reinforced bumpers scarred from countless dock impacts. Charging ports glow faintly along the flanks, and the cargo bed is lined with wear-darkened aluminum plating, its surface etched with decades of loading marks and shipping stickers.",
+  "visual_prompt": "massive electric cargo truck, weathered steel frame, faded industrial yellow paint with rust streaks, gritty neo-noir aesthetic, worn aluminum cargo bed, pneumatic tires, glowing charging ports, dark rain-slicked industrial background, detailed product photography, cyberpunk near-future, moody neon lighting, realistic weathering and decay"
 }

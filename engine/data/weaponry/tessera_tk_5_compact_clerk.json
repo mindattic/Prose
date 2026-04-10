@@ -1,0 +1,45 @@
+{
+  "id": "7be796b60fb98e8afd0bb7ce5cf7d1ab",
+  "name": "Tessera TK-5 Compact 'Clerk'",
+  "type": "weapon",
+  "aliases": [
+    "Clerk",
+    "TK-5",
+    "Office Gun"
+  ],
+  "category": "pistol",
+  "description": "The Tessera TK-5 Compact is a subcompact semi-automatic pistol chambered in .380 ACP, issued to Tessera Corponation administrative staff who are authorized to carry but whose roles don't warrant a full-size sidearm. The weapon features the same biometric grip lock as the TK-7 but in a frame small enough to fit in a desk drawer or blazer pocket. The finish is a discreet dark gray that matches Tessera's corporate color palette.\n\nThe Clerk is the weapon of bureaucrats, accountants, and junior managers who work in Tessera facilities where carrying a sidearm is company policy regardless of role. Most TK-5 carriers have completed only the minimum required firearms qualification and hope never to use the weapon. The heavy double-action trigger and conservative .380 ACP chambering reflect this reality — Tessera designed the weapon to be as difficult to accidentally discharge as possible while still being technically functional.\n\nIn Tessera's corporate culture, the TK-5 is a uniform accessory rather than a weapon. Employees drawer it at the start of their shift and holster it without thinking, the same way they clip on their ID badge. The biometric lock means it's essentially a paperweight to anyone who isn't its registered user, which is both a security feature and a tacit acknowledgment that most TK-5 carriers would be more dangerous to themselves than an attacker.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — corponation-registered",
+  "base_technologies": [
+    "Biometric grip lock",
+    "Subcompact frame",
+    "Heavy double-action trigger"
+  ],
+  "specifications": "caliber: .380 ACP\neffective_range: 8 meters\nrate_of_fire: Semi-automatic (double-action)\nmagazine_capacity: 6 rounds\nweight: 0.38 kg",
+  "tactical_use": "A minimal-capability personal defense weapon for non-combat personnel. The biometric lock prevents unauthorized use. The heavy trigger and small caliber prioritize safety over effectiveness. In a genuine threat scenario, the TK-5 is better than nothing but not by a wide margin. Tessera security doctrine advises TK-5 carriers to shelter in place and wait for armed security response rather than attempt to engage threats.",
+  "cultural_context": "The Clerk is a punchline in Tessera security circles and an accepted reality in administrative ones. Carrying a TK-5 says 'I am required to be armed but I am not expected to fight.' In the broader GLMZ culture, the existence of a corponation that arms its accountants is either reassuring or disturbing depending on one's perspective.",
+  "known_users": [
+    "Tessera administrative staff",
+    "Tessera junior management",
+    "Tessera facility support personnel"
+  ],
+  "story_hooks": [
+    "A Tessera accountant discovers financial irregularities and flees the building with only their TK-5 and the data on their terminal. The corponation wants both recovered.",
+    "A Tessera facility lockdown traps a floor of administrative staff with their TK-5s — and something in the building that their .380 ACPs cannot stop."
+  ],
+  "ammunition_type": [
+    ".380 ACP"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "subcompact",
+    "corporate",
+    "tessera",
+    "administrative"
+  ],
+  "physical_description": "A palm-sized semi-automatic pistol finished in matte charcoal gray, its compact polymer frame bears the faint Tessera corporate logo stamped into the grip. The slide shows microscopic wear marks from desk drawer storage and nervous handling, while the biometric lock panel on the grip reflects dull overhead light. A thin layer of industrial grime clings to the trigger guard despite its youth.",
+  "visual_prompt": "subcompact pistol, matte charcoal gray finish, biometric grip lock, .380 ACP, desk drawer wear, corporate minimalist design, product photography, neo-noir gritty aesthetic, dark studio background, harsh side lighting, shallow depth of field, detailed metalwork, worn polymer grip, industrial decay, cyberpunk near-future"
+}

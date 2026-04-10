@@ -1,0 +1,504 @@
+@page "/entity/{EntityId}"
+
+@inject CharacterRepository CharRepo
+@inject SyntheticLifeRepository SynthRepo
+@inject DistrictRepository PlaceRepo
+@inject FactionRepository FactionRepo
+@inject CorponationRepository CorpRepo
+@inject TechnologyRepository TechRepo
+@inject WeaponryRepository WeaponRepo
+@inject EquipmentRepository EquipRepo
+@inject CyberwareRepository CyberRepo
+@inject VocabularyRepository VocabRepo
+@inject XrefService Xref
+@inject NavigationManager Nav
+
+<div class="entity-detail-page">
+
+@if (notFound)
+{
+    <div class="text-muted p-4">Entity not found: <code>@EntityId</code></div>
+}
+else if (character != null)
+{
+    <EntityDetailHeader Name="@character.Name" Type="character" TypeLabel="Character"
+                        Subtitle="@character.Role" BackRoute="/characters"
+                        Tags="@character.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(character.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@character.Description" Paragraphs="true" />
+            </div>
+        }
+        <div class="entity-meta-row">
+            @if (!string.IsNullOrWhiteSpace(character.Location))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Location</span> <XrefText Text="@character.Location" /></div>
+            }
+            @if (character.Age > 0)
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Age</span> @character.Age</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(character.Status))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Status</span> @character.Status</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(character.Affiliation))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Affiliation</span> <XrefText Text="@character.Affiliation" /></div>
+            }
+        </div>
+        @if (!string.IsNullOrWhiteSpace(character.Augmentations))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Augmentations</div>
+                <XrefText Text="@character.Augmentations" />
+            </div>
+        }
+        @if (character.Relationships.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Relationships</div>
+                @foreach (var r in character.Relationships)
+                {
+                    <div class="entity-relationship">
+                        <span class="entity-rel-name"><XrefText Text="@r.Name" /></span>
+                        <span class="entity-rel-type text-muted">@r.Type</span>
+                        @if (!string.IsNullOrWhiteSpace(r.Description))
+                        {
+                            <div class="entity-rel-desc text-muted"><XrefText Text="@r.Description" /></div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+        @if (character.StoryHooks.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Story Hooks</div>
+                <ul class="entity-list">
+                    @foreach (var h in character.StoryHooks)
+                    {
+                        <li><XrefText Text="@h" /></li>
+                    }
+                </ul>
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(character.NarrativeFunction))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Narrative Function</div>
+                <XrefText Text="@character.NarrativeFunction" Paragraphs="true" />
+            </div>
+        }
+    </div>
+}
+else if (synthetic != null)
+{
+    <EntityDetailHeader Name="@synthetic.Name" Type="synthetic" TypeLabel="Synthetic"
+                        Subtitle="@synthetic.Classification" BackRoute="/synthetics"
+                        Tags="@synthetic.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(synthetic.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@synthetic.Description" Paragraphs="true" />
+            </div>
+        }
+        <div class="entity-meta-row">
+            @if (!string.IsNullOrWhiteSpace(synthetic.Location))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Location</span> <XrefText Text="@synthetic.Location" /></div>
+            }
+            @if (!string.IsNullOrWhiteSpace(synthetic.Habitat))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Habitat</span> @synthetic.Habitat</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(synthetic.Disposition))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Disposition</span> @synthetic.Disposition</div>
+            }
+            @if (synthetic.DtiRating > 0)
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">DTI</span> @synthetic.DtiRating.ToString("F1")</div>
+            }
+        </div>
+        @if (!string.IsNullOrWhiteSpace(synthetic.ObservedBehavior))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Observed Behavior</div>
+                <XrefText Text="@synthetic.ObservedBehavior" />
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(synthetic.Origin))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Origin</div>
+                <XrefText Text="@synthetic.Origin" />
+            </div>
+        }
+        @if (synthetic.StoryHooks.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Story Hooks</div>
+                <ul class="entity-list">
+                    @foreach (var h in synthetic.StoryHooks)
+                    {
+                        <li><XrefText Text="@h" /></li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+}
+else if (place != null)
+{
+    <EntityDetailHeader Name="@place.Name" Type="place" TypeLabel="Place"
+                        Subtitle="@(place.Tags.FirstOrDefault() ?? "")" BackRoute="/places"
+                        Tags="@place.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(place.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@place.Description" Paragraphs="true" />
+            </div>
+        }
+        @if (place.Coordinates.Lat != 0 || place.Coordinates.Lng != 0)
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Location</div>
+                <GeoMap Lat="@place.Coordinates.Lat" Lng="@place.Coordinates.Lng" Title="@place.Name" />
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(place.Atmosphere?.Feel))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Feel</div>
+                <em class="text-muted"><XrefText Text="@place.Atmosphere.Feel" /></em>
+            </div>
+        }
+        <div class="entity-meta-row">
+            @if (!string.IsNullOrWhiteSpace(place.Demographics))
+            {
+                <div class="entity-meta-item" style="flex:2"><span class="entity-meta-label">Demographics</span> @place.Demographics</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(place.PowerStructure))
+            {
+                <div class="entity-meta-item" style="flex:2"><span class="entity-meta-label">Power</span> <XrefText Text="@place.PowerStructure" /></div>
+            }
+        </div>
+        @if (place.Dangers.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Dangers</div>
+                <ul class="entity-list">
+                    @foreach (var d in place.Dangers) { <li><XrefText Text="@d" /></li> }
+                </ul>
+            </div>
+        }
+        @if (place.Opportunities.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Opportunities</div>
+                <ul class="entity-list">
+                    @foreach (var o in place.Opportunities) { <li><XrefText Text="@o" /></li> }
+                </ul>
+            </div>
+        }
+        @if (place.FrequentedBy.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Frequented By</div>
+                <div class="xref-chips">
+                    @foreach (var name in place.FrequentedBy)
+                    {
+                        var e = Xref.Resolve(name);
+                        @if (e != null) {
+                            <a href="/entity/@e.Id" class="xref-chip xref-@e.Type">@name</a>
+                        } else {
+                            <span class="xref-chip xref-unknown">@name</span>
+                        }
+                    }
+                </div>
+            </div>
+        }
+        @if (place.NotableLocations.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Notable Locations</div>
+                @foreach (var loc in place.NotableLocations)
+                {
+                    <div class="entity-notable-loc">
+                        <div class="fw-bold small">@loc.Name</div>
+                        @if (!string.IsNullOrWhiteSpace(loc.Description))
+                        {
+                            <div class="text-muted"><XrefText Text="@loc.Description" /></div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+        @if (place.StoryHooks.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Story Hooks</div>
+                <ul class="entity-list">
+                    @foreach (var h in place.StoryHooks) { <li><XrefText Text="@h" /></li> }
+                </ul>
+            </div>
+        }
+    </div>
+}
+else if (faction != null)
+{
+    <EntityDetailHeader Name="@faction.Name" Type="faction" TypeLabel="Faction"
+                        Subtitle="@faction.Motto" BackRoute="/factions"
+                        Tags="@faction.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(faction.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@faction.Description" Paragraphs="true" />
+            </div>
+        }
+        <div class="entity-meta-row">
+            @if (!string.IsNullOrWhiteSpace(faction.Territory))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Territory</span> <XrefText Text="@faction.Territory" /></div>
+            }
+            @if (!string.IsNullOrWhiteSpace(faction.Leadership))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Leadership</span> <XrefText Text="@faction.Leadership" /></div>
+            }
+        </div>
+        @if (!string.IsNullOrWhiteSpace(faction.Ideology))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Ideology</div>
+                <XrefText Text="@faction.Ideology" />
+            </div>
+        }
+        @if (faction.Goals.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Goals</div>
+                <ul class="entity-list">
+                    @foreach (var g in faction.Goals) { <li><XrefText Text="@g" /></li> }
+                </ul>
+            </div>
+        }
+        @if (faction.StoryHooks.Any())
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Story Hooks</div>
+                <ul class="entity-list">
+                    @foreach (var h in faction.StoryHooks) { <li><XrefText Text="@h" /></li> }
+                </ul>
+            </div>
+        }
+    </div>
+}
+else if (corponation != null)
+{
+    <EntityDetailHeader Name="@corponation.Name" Type="corponation" TypeLabel="Corponation"
+                        Subtitle="@corponation.Sector" BackRoute="/corps"
+                        Tags="@corponation.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(corponation.FoundingStory))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Overview</div>
+                <XrefText Text="@corponation.FoundingStory" Paragraphs="true" />
+            </div>
+        }
+        <div class="entity-meta-row">
+            @if (!string.IsNullOrWhiteSpace(corponation.Valuation))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Valuation</span> @corponation.Valuation</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(corponation.Employees))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Employees</span> @corponation.Employees</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(corponation.SovereignTerritory))
+            {
+                <div class="entity-meta-item"><span class="entity-meta-label">Territory</span> <XrefText Text="@corponation.SovereignTerritory" /></div>
+            }
+        </div>
+        @if (!string.IsNullOrWhiteSpace(corponation.KeyDetail))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Key Detail</div>
+                <XrefText Text="@corponation.KeyDetail" />
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(corponation.SecurityForce))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Security</div>
+                <XrefText Text="@corponation.SecurityForce" />
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(corponation.FullText))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Full Entry</div>
+                <XrefText Text="@corponation.FullText" Paragraphs="true" />
+            </div>
+        }
+    </div>
+}
+else if (technology != null)
+{
+    <EntityDetailHeader Name="@(technology.ProductName.Length > 0 ? technology.ProductName : technology.Name)"
+                        Type="technology" TypeLabel="Technology"
+                        Subtitle="@technology.Subcategory" BackRoute="/technology"
+                        Tags="@technology.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(technology.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@technology.Description" Paragraphs="true" />
+            </div>
+        }
+    </div>
+}
+else if (weapon != null)
+{
+    <EntityDetailHeader Name="@weapon.Name" Type="weapon" TypeLabel="Weapon"
+                        Subtitle="@weapon.Category" BackRoute="/weaponry"
+                        Tags="@weapon.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(weapon.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@weapon.Description" Paragraphs="true" />
+            </div>
+        }
+    </div>
+}
+else if (equipment != null)
+{
+    <EntityDetailHeader Name="@(equipment.ProductName.Length > 0 ? equipment.ProductName : equipment.Name)"
+                        Type="equipment" TypeLabel="Equipment"
+                        Subtitle="@equipment.Category" BackRoute="/equipment"
+                        Tags="@equipment.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(equipment.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@equipment.Description" Paragraphs="true" />
+            </div>
+        }
+    </div>
+}
+else if (cyberware != null)
+{
+    <EntityDetailHeader Name="@(cyberware.ProductName.Length > 0 ? cyberware.ProductName : cyberware.Name)"
+                        Type="cyberware" TypeLabel="Cyberware"
+                        Subtitle="@cyberware.Tier" BackRoute="/cyberware"
+                        Tags="@cyberware.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(cyberware.Description))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Description</div>
+                <XrefText Text="@cyberware.Description" Paragraphs="true" />
+            </div>
+        }
+    </div>
+}
+else if (vocabEntry != null)
+{
+    <EntityDetailHeader Name="@vocabEntry.Term" Type="vocabulary" TypeLabel="Vocabulary"
+                        Subtitle="@vocabEntry.Tier" BackRoute="/vocabulary"
+                        Tags="@vocabEntry.Tags" />
+    <div class="entity-detail-body">
+        @if (!string.IsNullOrWhiteSpace(vocabEntry.Definition))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Definition</div>
+                <p>@vocabEntry.Definition</p>
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(vocabEntry.Origin))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Origin</div>
+                <XrefText Text="@vocabEntry.Origin" />
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(vocabEntry.Example))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Example</div>
+                <blockquote class="entity-example">@vocabEntry.Example</blockquote>
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(vocabEntry.Usage))
+        {
+            <div class="entity-section">
+                <div class="entity-section-label">Usage Context</div>
+                @vocabEntry.Usage
+            </div>
+        }
+    </div>
+}
+
+</div>
+
+@code {
+    [Parameter] public string EntityId { get; set; } = "";
+
+    private CharacterData? character;
+    private SyntheticLifeData? synthetic;
+    private DistrictData? place;
+    private FactionData? faction;
+    private CorponationData? corponation;
+    private TechnologyData? technology;
+    private WeaponryData? weapon;
+    private EquipmentData? equipment;
+    private CyberwareData? cyberware;
+    private VocabularyEntry? vocabEntry;
+    private bool notFound;
+
+    protected override void OnParametersSet()
+    {
+        character = null; synthetic = null; place = null; faction = null;
+        corponation = null; technology = null; weapon = null; equipment = null;
+        cyberware = null; vocabEntry = null; notFound = false;
+
+        if (string.IsNullOrWhiteSpace(EntityId)) { notFound = true; return; }
+
+        character   = CharRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (character != null) return;
+        synthetic   = SynthRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (synthetic != null) return;
+        place       = PlaceRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (place != null) return;
+        faction     = FactionRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (faction != null) return;
+        corponation = CorpRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (corponation != null) return;
+        technology  = TechRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (technology != null) return;
+        weapon      = WeaponRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (weapon != null) return;
+        equipment   = EquipRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (equipment != null) return;
+        cyberware   = CyberRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (cyberware != null) return;
+        vocabEntry  = VocabRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
+        if (vocabEntry != null) return;
+
+        notFound = true;
+    }
+}

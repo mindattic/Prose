@@ -403,7 +403,7 @@ emit({
   author: "Dex Mwangi-Reyes, Licensed Scavenger",
   date: "2199-08-14",
   classification: "public",
-  description: `My name is Dex Mwangi-Reyes, license number SC-2281-M88, and I've been scavenging the Underworld for eleven years. I know what lives down there. Rats the size of terriers. Feral cats that glow — the ones that escaped from the biolabs, bred true, now they're everywhere below B20. Roaches so big you can hear them walking. I know the fauna. What I saw on B44 was not fauna.
+  description: `My name is Dex Mwangi-Reyes, license number SC-2281-GLMZ, and I've been scavenging the Underworld for eleven years. I know what lives down there. Rats the size of terriers. Feral cats that glow — the ones that escaped from the biolabs, bred true, now they're everywhere below B20. Roaches so big you can hear them walking. I know the fauna. What I saw on B44 was not fauna.
 
 I was running a salvage job in Sector 3, pulling copper from decommissioned conduit on B44 — it's not deep enough to be dangerous if you know what you're doing, and I know what I'm doing. I had my headlamp on, my motion tracker on, and my sidearm on my hip because you don't go below B30 without one. At approximately 14:30, my motion tracker picked up movement in a side passage — something large, moving at about half a meter per second, which is slow for a human but fast for anything else I know of down there.
 

@@ -29,12 +29,22 @@
     "corporate",
     "vehicle",
     "fire",
-    "tier 5"
+    "tier 5",
+    "van",
+    "boat",
+    "cargo",
+    "luxury",
+    "electric",
+    "hybrid",
+    "aerial",
+    "space"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "Kang Athletics KA-200 'Padwork'",
     "Nnamdi Ostrowski-Faletolu"
-  ]
+  ],
+  "physical_description": "The Axiom shuttle is a sleek delta-wing craft, roughly 60 meters long, with a heat-scarred fuselage of reinforced carbon-composite beneath patchy thermal plating that gleams dull silver under GLMZ's perpetual cloud cover. Its three massive fusion engines are recessed into the aft section, their nozzles blackened from repeated launches. The passenger cabin viewport runs like a thin bright line along the upper hull, a single eye of reinforced sapphire that reflects the city lights below.",
+  "visual_prompt": "Axiom orbital shuttle, delta-wing spacecraft, heat-scarred silver fuselage, reinforced carbon composite, massive fusion engines, detailed product photography, dark hangar bay background, neo-noir gritty aesthetic, worn aerospace tech, neon runway lights reflecting off hull, rain-slicked tarmac, industrial decay, high-angle composition, cinematic lighting, cyberpunk atmosphere, sharp focus on thermal plating details"
 }

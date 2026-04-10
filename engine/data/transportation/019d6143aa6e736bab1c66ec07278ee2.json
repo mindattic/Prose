@@ -29,10 +29,19 @@
     "ai",
     "elf",
     "shelf",
-    "tier 1"
+    "tier 1",
+    "civilian",
+    "van",
+    "cargo",
+    "utility",
+    "electric",
+    "manual",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "The Shelf"
-  ]
+  ],
+  "physical_description": "Weathered steel cable runs vertically along concrete tower faces, threaded through corroded pulleys bolted into crumbling facade. Suspension seats are mismatched—some salvaged office chairs welded to rusted metal frames, others jury-rigged plywood platforms with frayed nylon straps. Rust blooms orange and brown across all metal surfaces; exposed wiring and makeshift brake assemblies dangle from the motor housing at each building's crown. Wind-scoured paint peels in long strips, revealing layers of primer and bare metal beneath.",
+  "visual_prompt": "industrial chairlift exterior building, gritty neo-noir aesthetic, weathered steel cable suspension system, rusted metal seats dangling from corroded pulleys, rain-slicked concrete tower, neon city lights reflecting wet surfaces, detailed product photography, dark moody lighting, cyberpunk decay, worn industrial equipment, dystopian transit infrastructure"
 }

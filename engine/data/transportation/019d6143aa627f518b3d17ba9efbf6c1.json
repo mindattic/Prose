@@ -33,7 +33,13 @@
     "vehicle",
     "armor",
     "shelf",
-    "tier 5"
+    "tier 5",
+    "cargo",
+    "military",
+    "civilian",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -45,5 +51,7 @@
     "TESSERA CR-12 'Whisper'",
     "Tessera Corponation Palimpsest Identity Engine",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "The Sovereign is a low, elongated beast of reinforced composite and ballistic steel, its obsidian exterior unmarked by rain or time, with subtle Axiom insignia etched into the driver's panel. Tinted one-way glass runs the length of its profile, revealing nothing of the interior's obscene comfort. Its electric drive is utterly silent—only the faint hiss of suspension and the whisper of air displacement announce its passage through the rain-slicked streets.",
+  "visual_prompt": "luxury limousine, obsidian black armor plating, tinted one-way glass, neo-noir gritty aesthetic, wet rain-slicked pavement, neon reflections, reinforced composite materials, whisper-quiet electric vehicle, product photography, dark moody lighting, cyberpunk near-future, detailed undercarriage, threat and power, Axiom branding, high contrast shadows, professional automotive render"
 }

@@ -1,0 +1,45 @@
+{
+  "id": "b61f197cdd3f52cb029332fe6f23b98d",
+  "name": "Crucible Industries Storm Platform CP-8 'Deluge'",
+  "type": "weapon",
+  "aliases": [
+    "Deluge",
+    "CP-8",
+    "Storm",
+    "The Downpour"
+  ],
+  "category": "support",
+  "description": "A man-portable squad support weapon that fires caseless 6mm rounds from a 200-round helical magazine at 1,400 rounds per minute. The Storm Platform is Crucible's mainline suppression tool — designed to pin entire squads behind cover while assault elements maneuver.\n\nThe CP-8 uses a rotating barrel cluster of three barrels that cycle to manage heat distribution, allowing sustained fire for 8-second bursts without thermal degradation. The weapon feeds from a drum-style helical magazine worn on the operator's back, connected by an armored feed chute that allows full range of motion.\n\nCrucible designed the Deluge to be the loudest thing in any engagement. The weapon's acoustic signature at full cyclic rate is physically disorienting to personnel within 30 meters of the firing position — a deliberate feature that Crucible calls 'ambient suppression.' You don't need to hit someone to suppress them when the sound alone triggers a primal fear response.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted — squad support weapon authorization",
+  "base_technologies": [
+    "High-cyclic rotating barrel cluster",
+    "Helical magazine feed system",
+    "Acoustic suppression engineering"
+  ],
+  "specifications": "caliber: 6mm caseless\neffective_range: 50-800 meters\nrate_of_fire: 1,400 rounds per minute (cyclic)\ncapacity: 200-round helical drum\nweight: 11.2 kg weapon, 4.8 kg loaded magazine\npower_source: None — mechanical action",
+  "tactical_use": "The Deluge is deployed as the centerpiece of squad-level fire-and-maneuver tactics. The weapon's extreme rate of fire and acoustic signature fix enemy positions, creating windows for assault teams to close distance. Operators learn to fire in controlled bursts that maintain the psychological pressure of sustained fire while conserving ammunition. In urban environments, the CP-8's penetration characteristics allow suppressive fire through light cover, denying concealment as well as movement.",
+  "cultural_context": "The sound of a Deluge is one of the most recognized auditory signatures in GLMZ's conflict zones. Lower-tier residents who live near corporate borders describe it as 'the rain' — a hammering roar that signals active combat and the need to shelter. Crucible's marketing leans into the weather metaphor, with promotional materials declaring 'When it rains, nothing grows.'",
+  "known_users": [
+    "Crucible Industries assault squads",
+    "Corporate rapid-reaction teams"
+  ],
+  "story_hooks": [
+    "A Deluge was recovered from a Tier 2 gang hideout — a weapon that should be impossible to obtain outside military channels. The serial number traces to a shipment that was reported destroyed in transit.",
+    "Crucible is testing a CP-8 variant with smart ammunition that adjusts trajectory mid-flight to avoid designated 'no-strike' zones — a response to mounting civilian casualty concerns."
+  ],
+  "ammunition_type": [
+    "6mm caseless"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "machine-gun",
+    "suppression",
+    "high-cyclic",
+    "tier 4"
+  ],
+  "physical_description": "The CP-8 Deluge is a brutalist assembly of stamped steel and reinforced polymer, its three-barrel cluster wrapped in ribbed heat-dissipation fins that gleam dull chrome under industrial lighting. The weapon's frame bears Crucible's austere branding and shows battle-worn scratches through flaking black paint, with the armored feed chute running from the drum magazine like a mechanical spine. Its profile is deliberately massive—built to intimidate and suppress rather than seduce.",
+  "visual_prompt": "Crucible Industries CP-8 Deluge squad support weapon, rotating triple-barrel cluster, ribbed heat fins, stamped steel frame, worn black paint, armored feed chute, helical magazine drum, industrial product photography, gritty neo-noir aesthetic, dark studio background, harsh overhead lighting, detailed mechanical texture, cyberpunk military hardware, rain-slicked surfaces"
+}

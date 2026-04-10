@@ -1,0 +1,46 @@
+{
+  "id": "56bd33d3e78804ff9cb0f8c02486b442",
+  "name": "Meridian Munitions Over-Under Coach 'Double Tap'",
+  "type": "weapon",
+  "aliases": [
+    "Double Tap",
+    "O/U Coach",
+    "The Stack"
+  ],
+  "category": "shotgun",
+  "description": "The Meridian Munitions Over-Under Coach is a break-action over-under shotgun chambered in 12 gauge with two 18-inch barrels and exposed hammers. Unlike the premium Volkov-Saito Duelist, the Double Tap is a budget over-under built for function rather than aesthetics. The receiver is stamped steel, the stock is hardwood with minimal finishing, and the barrels are blued with a simple bead front sight.\n\nThe Double Tap offers the same two-shot capability as the Stagecoach side-by-side in a vertical barrel arrangement that is slightly narrower and easier to point in tight spaces. The over-under configuration also places the barrels on the same vertical axis, which some shooters find provides a more natural sighting plane than side-by-side barrels. The exposed hammers allow visual verification of cocked/uncocked status and provide a manual safety that requires no training to understand.\n\nMeridian Munitions produces the Over-Under Coach in larger quantities than the Stagecoach, as the vertical barrel arrangement is easier to manufacture with their existing tooling. The weapon fills the same market niche — absolute minimum shotgun for people who value simplicity — with a slightly different ergonomic profile. Customer choice between the two comes down to personal preference: wide and flat, or tall and narrow.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — minimal registration required",
+  "base_technologies": [
+    "Over-under break action",
+    "Exposed hammers",
+    "Stamped steel receiver"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 25 meters (buckshot)\nrate_of_fire: Two shots (break-action reload)\nmagazine_capacity: 2 rounds\nweight: 2.7 kg",
+  "tactical_use": "A minimal-capacity break-action shotgun offering two shots of 12 gauge in a vertical barrel arrangement. Same tactical profile as side-by-side break actions — devastating two-shot capability with no follow-up after that. The narrower profile compared to side-by-side designs may be advantageous in very tight spaces. Reload time is slightly faster than side-by-side due to the narrower action.",
+  "cultural_context": "The Double Tap is the Stagecoach's vertical cousin — same philosophy, slightly different shape. In Shelf markets, the choice between them is one of the few consumer preferences that residents exercise with genuine enthusiasm. Online forums debate the relative merits with a passion that outsiders find baffling and participants find essential.",
+  "known_users": [
+    "Shelf residents (over-under preference)",
+    "Budget shotgun buyers",
+    "Simple-weapon advocates",
+    "Rural settlers"
+  ],
+  "story_hooks": [
+    "A Double Tap loaded with a slug in one barrel and buckshot in the other is used in a home defense incident where the first shot (slug) penetrates a wall and kills an intruder in the next room, and the second shot (buckshot) stops a second intruder in the doorway. The defender didn't know there were two intruders.",
+    "A trend of modifying Double Taps to accept inserts that fire smaller-caliber rounds from the 12-gauge barrels creates a new class of improvised multi-caliber weapon in the Shelf."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "over_under",
+    "break_action",
+    "simple",
+    "budget"
+  ],
+  "physical_description": "A utilitarian break-action shotgun with stacked 12-gauge barrels aligned vertically, narrower in profile than side-by-side designs. The stamped steel receiver shows honest wear and patina, paired with rough-hewn hardwood furniture that's seen better days; exposed hammer mechanisms sit proud on either side. Blued barrel finish is mottled with surface rust in places, a simple brass bead catching what little light penetrates the industrial gloom.",
+  "visual_prompt": "weathered stamped steel shotgun, over-under barrels, exposed hammers, rough hardwood stock, blued metal with rust patina, gritty product photography, neo-noir industrial aesthetic, dark rain-slicked background, detailed mechanical wear, 1980s military hardware style, moody neon rim lighting, functional brutalism"
+}

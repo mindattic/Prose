@@ -36,11 +36,19 @@
     "train",
     "spire",
     "tier 3",
-    "tier 5"
+    "tier 5",
+    "civilian",
+    "rail",
+    "maglev",
+    "cargo",
+    "luxury",
+    "aerial"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "Ferrogate CL-9 L-Train",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": "Sleek titanium-composite pods suspended on a carbon-fiber rail, their hulls a pristine pearl-white that catches neon bleed from the city below. Interior walls are brushed steel and climate-controlled polymer, with ergonomic seating upholstered in synthetic leather that shows no wear. The biometric scanner at each entrance glows soft blue, a gentle reminder of access denied.",
+  "visual_prompt": "elevated monorail pod, pearl-white titanium composite, carbon-fiber rail, neo-noir aesthetic, rain-slicked industrial backdrop, neon glow reflection, sleek corporate design, detailed product photography, dark moody lighting, gritty cyberpunk cityscape below, minimalist interior, biometric scanner detail, wet pavement reflections, high contrast shadows"
 }

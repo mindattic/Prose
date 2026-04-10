@@ -123,7 +123,7 @@ Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/
 
 Corponations are sovereign corporate entities. Key corponations: Arcturus (defense/security), TESSERA (biotech/geneware), Ringo (media/entertainment), Ouroboros (finance/insurance), Vantablack (stealth tech/intelligence), Lazarus (medical/pharmaceuticals), Crucible (heavy industry/manufacturing).
 
-Apparel must account for augment compatibility (chrome openings, port access), geneware accommodation (tail holes, horn clearance, wing slits, fur-friendly fabrics), and the full spectrum of body modification. Clothing in M88 is functional, political, and personal. What you wear signals tier, affiliation, and survival strategy.`;
+Apparel must account for augment compatibility (chrome openings, port access), geneware accommodation (tail holes, horn clearance, wing slits, fur-friendly fabrics), and the full spectrum of body modification. Clothing in GLMZ is functional, political, and personal. What you wear signals tier, affiliation, and survival strategy.`;
 
 // ── Schema Definition ──
 const SCHEMA_INSTRUCTIONS = `Each item MUST have exactly these fields:
@@ -133,14 +133,14 @@ const SCHEMA_INSTRUCTIONS = `Each item MUST have exactly these fields:
   "category": "uniform|formal_wear|cultural_subcultural|protective_work",
   "subcategory": "more specific subcategory",
   "manufacturer": "Brand/Corp name",
-  "description": "1-2 paragraphs describing the item, its construction, materials, and how it fits into M88 life. Keep grounded and real, not parody.",
+  "description": "1-2 paragraphs describing the item, its construction, materials, and how it fits into GLMZ life. Keep grounded and real, not parody.",
   "tier_availability": "Tier 1-2|Tier 2-3|Tier 3-4|Tier 4-5|All tiers",
   "price": "Φ amount",
   "augment_compatible": true/false,
   "geneware_compatible": true/false,
   "durability": "disposable|low|medium|high|extreme",
   "legal_status": "legal|restricted|gray_market|illegal",
-  "cultural_context": "how people relate to this item in M88 society",
+  "cultural_context": "how people relate to this item in GLMZ society",
   "story_hooks": ["array of 2-3 narrative hooks"],
   "tags": ["array of relevant tags for search/filtering"]
 }`;

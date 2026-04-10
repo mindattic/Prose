@@ -1,0 +1,46 @@
+{
+  "id": "b0654ee2da2eeb051dcdfca6dba9519e",
+  "name": "Sable Precision Works Mirage SPW-7 'Heat Shimmer'",
+  "type": "weapon",
+  "aliases": [
+    "Heat Shimmer",
+    "Mirage",
+    "SPW-7",
+    "Desert Ghost"
+  ],
+  "category": "sniper",
+  "description": "A thermally-cooled precision rifle that uses a cryogenic barrel jacket to eliminate heat mirage and thermal bloom from its firing signature. The Mirage SPW-7 fires conventional high-velocity rounds but wraps them in a suite of technologies designed to make the shooter invisible to thermal detection systems.\n\nSable Precision Works is a boutique manufacturer operating out of a single facility in GLMZ's industrial sector. They produce fewer than 200 Mirage units per year, each hand-fitted and individually calibrated. The rifle's cryogenic jacket maintains the barrel at near-ambient temperature even during sustained fire, and the weapon's stock incorporates a thermal regulation mesh that masks the shooter's body heat signature from the shoulders up.\n\nThe Mirage has become the weapon of choice for independent contractors who operate without the institutional support of corporate sniper teams. Where Arcturus shooters rely on guided rounds and overwhelming technology, Mirage operators rely on fundamentals — concealment, patience, and precision.",
+  "manufacturer": "SABLE PRECISION WORKS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — restricted to bonded security contractors",
+  "base_technologies": [
+    "Cryogenic barrel thermal management",
+    "Thermal signature masking",
+    "Hand-fitted precision mechanics"
+  ],
+  "specifications": "caliber: 7.62mm match-grade\neffective_range: 100-2,200 meters\nrate_of_fire: Bolt-action, 1 round per 3 seconds\ncapacity: 5-round internal magazine\nweight: 6.1 kg with cryogenic jacket\npower_source: Micro cryo-cell, 4 hours continuous cooling",
+  "tactical_use": "The Mirage excels in environments saturated with thermal detection — corporate enclaves, security corridors, and automated defense zones. While the round itself is conventional, the rifle's thermal masking transforms the operator into a gap in sensor coverage. Shooters report that security drones will scan directly over a Mirage position and register nothing. The weapon's limitation is its reliance on the cryo-cell — when the coolant runs out, the rifle is just an expensive bolt gun.",
+  "cultural_context": "Sable Precision Works has cultivated a mystique around the Mirage that borders on artisanal fetishism. Each rifle ships with a hand-written card from the master armorer who built it. Independent contractors who carry Mirages form loose professional networks and share intelligence about sensor patterns and detection gaps. They call themselves 'shimmer artists.'",
+  "known_users": [
+    "Independent precision contractors",
+    "Select corporate security advisors"
+  ],
+  "story_hooks": [
+    "A shimmer artist was killed in their hide position — someone tracked them despite the thermal masking. Either the Mirage's cryogenic system has a flaw, or someone has developed a counter-detection method.",
+    "Sable Precision Works has gone silent — their facility is locked down and no new Mirages have shipped in months. Existing units are commanding Φ80,000+ on the black market."
+  ],
+  "ammunition_type": [
+    "7.62mm match-grade"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "precision",
+    "stealth",
+    "thermal",
+    "tier 4",
+    "boutique"
+  ],
+  "physical_description": "The Mirage SPW-7 is a lean, utilitarian rifle wrapped in matte-black composite and brushed titanium, its barrel encased in a frosted-silver cryogenic jacket that sweats faintly with condensation. The stock is reinforced polymer embedded with thermal mesh that looks like circuit tracery under harsh light, and the entire frame bears the micro-scarring of hand-assembly—tool marks, precision-fitted seams, the patina of individualized calibration. Despite its surgical precision, the weapon carries the worn aesthetic of a tool built to survive rain, grime, and the constant thermal stress of the GLMZ.",
+  "visual_prompt": "Sable Precision Works Mirage SPW-7 sniper rifle, matte black composite and frosted silver cryogenic barrel jacket, detailed product photography, neo-noir gritty aesthetic, worn titanium components, thermal mesh circuitry on stock, rain-slicked industrial backdrop, moody neon reflection, professional gun photography, dark studio lighting, cyberpunk near-future weapon design, hand-assembled precision engineering visible"
+}

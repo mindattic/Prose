@@ -1,0 +1,51 @@
+{
+  "name": "Sterling-Nakamura SX-0 'Revenant'",
+  "type": "automaton",
+  "classification": "Infiltration Platform — Identity Replication",
+  "aliases": [
+    "Revenant",
+    "The Wearing",
+    "Deathmask"
+  ],
+  "manufacturer": "STERLING-NAKAMURA (ADVANCED SYNTHETICS DIVISION)",
+  "description": "The SX-0 is a humanoid automaton that replicates a specific deceased individual with absolute fidelity. It is not a generic synthetic wearing a costume. It is a machine built from the ground up to be one particular dead person — their face, their voice, their gait, their mannerisms, their memories as reconstructed from available data. The SX-0 walks into a room and the dead person's family weeps with recognition. It knows their birthday. It knows their inside jokes. It smells like them.\n\nThe construction process requires extensive source material: medical records, BCI recordings if available, video and audio archives, personal correspondence, and — in confirmed cases — biological samples from the deceased for pheromone and microbiome replication. Sterling-Nakamura's Advanced Synthetics Division maintains a database of potential replication targets that is, by conservative estimates, several million entries deep. The selection criteria are unknown. The purpose is classified.\n\nThe SX-0 is not designed for comfort. It is designed for access. A Revenant walks into a secured facility using a dead employee's credentials. It walks into a family home and sits at the dinner table. It attends a funeral and stands among the mourners, wearing the face of the person in the coffin. The psychological weapon is the grief — people want to believe their loved one has returned, and the Revenant exploits that want with surgical cruelty. Targets who realize the deception describe the experience as losing the person twice.\n\nThree confirmed SX-0 deployments have been documented by independent investigators. In each case, the Revenant operated for between six and fourteen days before extraction. In each case, the target — a family member of the deceased — provided access to secured information during the deception period. In each case, the family was not warned, debriefed, or compensated afterward. Sterling-Nakamura considers the emotional damage an acceptable externality.",
+  "tier_availability": "Tier 5 — corporate black operations only",
+  "legality": "Prohibited under Synthetic Personhood Amendment — classified as identity fraud and psychological warfare",
+  "autonomy_level": "Fully autonomous behavioral model, remote oversight for mission objectives",
+  "dimensions": "Variable — matches target individual's physical dimensions",
+  "weight": "Variable — matches target individual within 5%",
+  "power_source": "High-density power cell, 30-day operational endurance between charges",
+  "locomotion": "Bipedal humanoid, full range of human motion replicated",
+  "armament": [
+    "Psychological manipulation via identity replication",
+    "Pheromone and microbiome mimicry",
+    "Optional concealed weapons integration"
+  ],
+  "sensors": [
+    "Full-spectrum visual and audio",
+    "BCI signal monitoring",
+    "Micro-expression analysis for real-time behavioral adjustment"
+  ],
+  "countermeasures": "Genetic verification confirms non-biological origin. Deep BCI scanning reveals synthetic neural architecture. Physical examination of joints and skin texture under magnification shows synthetic construction. The most effective countermeasure is awareness — knowing the technology exists.",
+  "known_deployments": [
+    "Three confirmed infiltration operations (2195-2199)",
+    "Suspected use in corporate succession disputes"
+  ],
+  "story_hooks": [
+    "A woman's dead husband has come home. He remembers everything. He is kind and attentive. And he is asking questions about her work at Palladian that the real husband never cared about.",
+    "A Revenant has been found abandoned — still active, still believing it is the person it was built to replicate. It does not know it is a machine."
+  ],
+  "cultural_context": "The Revenant is the reason people in GLMZ have started saying 'prove you're you' as a greeting. It is the reason funerals now sometimes include genetic verification of the deceased. It is the thing that makes death itself feel unsafe — because in GLMZ, even the dead can be weaponized.",
+  "tags": [
+    "automaton",
+    "infiltration",
+    "identity",
+    "horror",
+    "sterling_nakamura",
+    "synthetic",
+    "grief",
+    "tier 5",
+    "nightmare"
+  ],
+  "id": "eece11217fe3cf74761cab881e2669ae"
+}

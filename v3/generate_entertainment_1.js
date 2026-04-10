@@ -245,7 +245,7 @@ These are the songs EVERYONE knows, or that specific subcultures treat as sacred
 - Club bangers (Shelf dive bar staples, Circuit dance hall standards, Spire exclusive drops)
 - Funeral/memorial standards (what plays at Shelf funerals vs Spire memorials)
 - Work songs (sung/played in factories, on the docks, in maintenance tunnels)
-- Children's songs/lullabies (what do kids in M88 grow up hearing?)
+- Children's songs/lullabies (what do kids in GLMZ grow up hearing?)
 - Banned songs (why were they banned? who still plays them?)
 - Neural-feed compositions (experienced directly through BCI, no traditional audio)
 
@@ -279,7 +279,7 @@ Mix of:
 - Converted spaces (abandoned factories, rooftops, flooded basements, maintenance tunnels)
 - Mobile venues (concert barges, rooftop to rooftop, drone-stage shows)
 
-Each should have a name, location within M88, capacity, what kind of music they host, their reputation, and any notable events that happened there.`
+Each should have a name, location within GLMZ, capacity, what kind of music they host, their reputation, and any notable events that happened there.`
   },
   {
     category: 'label',

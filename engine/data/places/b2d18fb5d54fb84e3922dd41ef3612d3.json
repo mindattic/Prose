@@ -1,0 +1,68 @@
+{
+  "id": "b2d18fb5d54fb84e3922dd41ef3612d3",
+  "type": "place",
+  "name": "Volkov's",
+  "aliases": [
+    "The Russian",
+    "Volk",
+    "The Wolf Den"
+  ],
+  "description": "Volkov's is a bar in Green Bay's industrial Shelf district that has been operating continuously since 2161, making it one of the oldest establishments in the northern corridor. The original Volkov — Pyotr Volkov-Asante — opened it in a decommissioned meat locker attached to a processing plant. The processing plant is gone. The meat locker remains, and so does the cold. Volkov's is kept at a permanent 4 degrees Celsius, partly because the refrigeration system is embedded in the walls and would cost more to remove than to run, and partly because the current owner — Pyotr's granddaughter, Zoya Volkov-Otieno — believes that a cold bar keeps its patrons honest. People who are cold don't linger without purpose. They drink, they talk, they do their business, and they leave. Zoya respects efficiency.\n\nThe bar caters to the factory workers and shipping crews who keep Green Bay's manufacturing corridor operational. These are Tier 1 workers doing Tier 0 labor — the kind of physical, dangerous, exhausting work that machines could theoretically do but that remains cheaper to assign to humans who need the Φ badly enough to risk their bodies. Volkov's is where these workers decompress, which means it is occasionally violent, frequently loud, and always honest about the cost of the work that pays for the drinks. The walls are covered in plaques bearing the names of workers killed in industrial accidents. There are 341 plaques. Zoya adds new ones personally.\n\nThe useful thing about Volkov's, from a freelancer's perspective, is that factory workers see everything. Shipping manifests, production schedules, security rotations, waste disposal patterns — the granular operational data of Green Bay's industrial base passes through the hands of the people drinking at Volkov's. Zoya doesn't trade information herself, but she doesn't prevent her customers from doing so, and she maintains a strict policy of not remembering faces. The cold helps. People in heavy coats with their collars up all look the same.",
+  "atmosphere": {
+    "sights": [
+      "Breath visible in the air — Volkov's is cold enough to see your own exhalations year-round",
+      "341 memorial plaques covering every wall, names and dates of industrial dead",
+      "Zoya behind the bar in a heavy work coat, pouring vodka with the precision of a factory line",
+      "Patrons in industrial gear, still wearing their shift equipment, too tired or too cold to change"
+    ],
+    "sounds": [
+      "The refrigeration system humming in the walls — the building's mechanical heartbeat, sixty years running",
+      "Heavy boots on a concrete floor, the percussion of exhausted workers finding their seats",
+      "Shot glasses hitting the bar — Volkov's doesn't do sipping drinks",
+      "Factory shift whistles audible through the walls, marking the rhythm of the district"
+    ],
+    "smells": [
+      "Cold — the particular sharp smell of refrigerated air, a ghost of the meat locker this used to be",
+      "Vodka, served at temperature, barely distinguishable from the ambient chill",
+      "Industrial lubricant and metal shavings, carried in on workers' clothes"
+    ],
+    "feel": "Austere and respectful. Volkov's is not fun. It is necessary. The cold and the memorial plaques create an atmosphere of functional solemnity — this is where you acknowledge the cost of staying alive in Green Bay's industrial corridor, one drink at a time.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "Green Bay Industrial Shelf",
+      "Ashwaubenon manufacturing corridor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Factory workers from Green Bay's manufacturing corridor",
+    "Shipping crews between hauls",
+    "Freelancers looking for industrial intelligence",
+    "Family members of the names on the wall, visiting on anniversaries"
+  ],
+  "notable_locations": [
+    "The memorial wall — 341 plaques and counting, the corridor's most honest record of industrial cost",
+    "The freezer booth — the original meat locker's deepest corner, used for conversations that need maximum privacy"
+  ],
+  "coordinates": {
+    "lat": 44.5133,
+    "lng": -88.0158
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 1",
+    "shelf",
+    "green_bay",
+    "industrial",
+    "memorial"
+  ],
+  "related_entities": [
+    "Zoya Volkov-Otieno",
+    "Green Bay Industrial Shelf"
+  ]
+}

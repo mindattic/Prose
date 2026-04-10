@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Street-Wise",
-      "Cartographer",
-      "Courier",
-      "Protective",
-      "Trauma-Masked"
+      "street-wise",
+      "cartographer",
+      "courier",
+      "protective",
+      "trauma-masked"
     ]
   },
   "behavioral": {
@@ -205,7 +205,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

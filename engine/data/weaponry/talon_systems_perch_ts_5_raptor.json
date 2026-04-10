@@ -1,0 +1,46 @@
+{
+  "id": "c718ea090bc32277234897c5c402ac1e",
+  "name": "Talon Systems Perch TS-5 'Raptor'",
+  "type": "weapon",
+  "aliases": [
+    "Raptor",
+    "TS-5",
+    "Perch",
+    "Bird of Prey"
+  ],
+  "category": "sniper",
+  "description": "A lightweight precision carbine designed for aerial platform integration — drones, VTOL craft, and grav-assisted jump harnesses. The Raptor weighs just 3.1 kg and uses a gyrostabilized barrel assembly that maintains accuracy during the extreme vibration and angular displacement of aerial movement.\n\nTalon Systems recognized that the proliferation of personal flight systems in GLMZ created a need for precision weapons optimized for airborne engagement. Conventional sniper rifles are unwieldy in harness, their optics designed for stable ground positions. The TS-5 was built from the ground up for shooters who are falling, hovering, or banking through urban canyons.\n\nThe Raptor's BCI integration includes an inertial navigation system that calculates firing solutions based on the shooter's velocity, acceleration, and angular rate. It allows precision engagement during maneuvers that would make conventional aim impossible.",
+  "manufacturer": "TALON SYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — aerial security and rapid response teams",
+  "base_technologies": [
+    "Gyrostabilized aerial barrel assembly",
+    "Inertial navigation firing solutions",
+    "Lightweight aerial platform integration"
+  ],
+  "specifications": "caliber: 5.56mm match-grade\neffective_range: 50-800 meters (aerial), 100-1,200 meters (ground)\nrate_of_fire: Semi-automatic, 2 rounds per second\ncapacity: 20-round detachable magazine\nweight: 3.1 kg\npower_source: Gyrostabilizer: micro-cell, 6 hours continuous",
+  "tactical_use": "The Raptor is deployed by aerial rapid-response teams who need precision capability without the weight and bulk of conventional sniper platforms. Operators in grav-harnesses use the TS-5 to engage targets from angles that ground-based shooters cannot achieve — above, behind, and through vertical urban terrain. The weapon's lighter caliber is compensated by engagement geometry that allows shots into unarmored areas that horizontal shooters cannot access.",
+  "cultural_context": "Talon Systems has tapped into GLMZ's growing aerial combat culture — a world where the vertical dimension of the city is as tactically relevant as the horizontal. Raptor operators call themselves 'roosters' and compete in informal accuracy competitions conducted from moving aerial platforms. The weapon has also found civilian following among recreational precision shooters who compete in aerial marksmanship courses.",
+  "known_users": [
+    "Talon Systems aerial demonstration team",
+    "Corporate aerial rapid-response units"
+  ],
+  "story_hooks": [
+    "A Raptor operator engaged a target from a grav-harness during a rainstorm and the gyrostabilizer malfunctioned — the round struck a child in a residential unit three floors below the intended target. The operator turned themselves in. Their employer is trying to make them disappear.",
+    "Talon Systems is developing a drone-mounted variant of the Raptor that removes the human operator entirely. The autonomous aerial sniper platform has attracted both military contracts and intense regulatory opposition."
+  ],
+  "ammunition_type": [
+    "5.56mm match-grade"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "aerial",
+    "lightweight",
+    "gyrostabilized",
+    "tier 4",
+    "BCI"
+  ],
+  "physical_description": "The TS-5 Raptor is a skeletal precision carbine of matte gunmetal and carbon composite, its frame stripped to essentials—no unnecessary mass, no chrome. The gyrostabilized barrel assembly protrudes like a mantis limb, ringed with vibration-damping rings that have begun to show micro-fractures from heavy use. Mounting hardpoints along its spine are scuffed and worn, their quick-release mechanisms bearing the ghost marks of repeated attachment and detachment.",
+  "visual_prompt": "lightweight precision carbine sniper rifle, carbon composite and gunmetal, gyrostabilized barrel assembly, aerial weapon system, gritty neo-noir, worn tactical gear, detailed product photography, dark industrial background, rain-slicked metallic surfaces, cyberpunk military hardware, minimalist design, high-tech worn practical aesthetic, studio lighting on matte finishes"
+}

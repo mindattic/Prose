@@ -1,0 +1,46 @@
+{
+  "id": "fea678aee125111522ad35e6a4bb5fb9",
+  "name": "Kang-Petrov Arms KPA-25EM 'Tempest'",
+  "type": "weapon",
+  "aliases": [
+    "Tempest",
+    "KPA-25EM",
+    "Storm Rail"
+  ],
+  "category": "assault_rifle",
+  "description": "The KPA-25EM Tempest is Kang-Petrov's second-generation electromagnetic rifle, addressing the Thunderclap's limitations with a dual-stage acceleration system and improved capacitor technology. The Tempest fires 4mm tungsten-composite penetrators — an upgrade from the Thunderclap's steel-core rounds — and achieves velocities approaching the Arcturus MAR-8X at two-thirds the cost.\n\nKang-Petrov's engineering team reverse-engineered the acceleration physics from captured MAR-8X units and developed their own implementation using commercially available components. The Tempest's capacitor system is distributed through the weapon's body rather than concentrated in a single pack, reducing the catastrophic failure risk that plagues Thunderclap modifications. Power supply provides 50 shots per charge with a 60-second recharge cycle.\n\nArcturus has filed seventeen patent infringement claims against the Tempest, all of which Kang-Petrov has contested in corporate arbitration. The legal battle has become a proxy war over whether electromagnetic weapons technology can be monopolized. Meanwhile, the Tempest ships to any buyer with Φ8,000 and standard licensing.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Available — standard licensing (pending litigation)",
+  "base_technologies": [
+    "Dual-stage electromagnetic acceleration",
+    "Distributed capacitor architecture",
+    "Tungsten-composite penetrators"
+  ],
+  "specifications": "caliber: 4mm tungsten-composite penetrator\neffective_range: 650m\nrate_of_fire: 180 rpm (capacitor-limited)\nmagazine_capacity: 50 penetrators per charge\nweight: 4.1 kg",
+  "tactical_use": "The Tempest provides near-military electromagnetic capability to operators outside the corporate military pipeline. Its tungsten-composite penetrators defeat Level III armor at engagement range, and the distributed capacitor system eliminates the single-point failure that makes Thunderclap modifications dangerous. The weapon functions as a squad-level anti-armor asset for forces that cannot afford or access Arcturus platforms.",
+  "cultural_context": "The Tempest is a direct challenge to Arcturus' dominance in electromagnetic weapons, and the ongoing legal battle has made it a symbol of resistance against corporate technology monopolies. Buying a Tempest is partly a practical decision and partly a political statement. Kang-Petrov prints 'INNOVATION CANNOT BE MONOPOLIZED' on every Tempest shipping crate.",
+  "known_users": [
+    "Anti-corporate militia forces",
+    "Independent security contractors",
+    "Tier 3 defense cooperatives"
+  ],
+  "story_hooks": [
+    "Arcturus has lost patience with legal channels and is planning a covert operation to sabotage Kang-Petrov's Tempest manufacturing facility.",
+    "A Tempest purchased through legitimate channels came with hidden firmware that scans for and logs the presence of nearby Arcturus equipment — Kang-Petrov is building an intelligence map of Arcturus deployments through their customers' weapons."
+  ],
+  "ammunition_type": [
+    "4mm tungsten-composite penetrator"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "electromagnetic",
+    "railgun",
+    "Kang-Petrov",
+    "anti_monopoly",
+    "tier 3"
+  ],
+  "physical_description": "The KPA-25EM Tempest is a brutalist assault rifle with a reinforced polymer stock and angular steel receiver, its matte gunmetal finish worn smooth at grip points and scarred by field use. Capacitor coils run the length of the barrel shroud in visible parallel lines, their copper windings dull beneath a thin layer of protective resin that's begun to yellow with age. The weapon carries the functional aesthetics of reverse-engineered hardware—efficient, slightly inelegant, built to work rather than impress.",
+  "visual_prompt": "KPA-25EM Tempest assault rifle, matte gunmetal steel and worn polymer, parallel copper capacitor coils running barrel shroud, brutalist angular design, detailed product photography, cyberpunk neo-noir gritty aesthetic, industrial worn finish, dark studio background, moody atmospheric lighting, tactical weapon design, 2080s near-future"
+}

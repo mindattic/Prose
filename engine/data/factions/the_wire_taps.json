@@ -1,0 +1,47 @@
+{
+  "id": "e45afd6e584a27c15a26e5746e30d217",
+  "type": "faction",
+  "name": "The Wire Taps",
+  "aliases": [
+    "Taps",
+    "Wiretappers",
+    "The Ears"
+  ],
+  "motto": "Everyone's talking. We're the ones listening.",
+  "description": "The Wire Taps are a small but influential criminal operation of about 60 members specializing in surveillance, eavesdropping, and the sale of private information. Not corporate intelligence like the Flicker Collective deals in — personal information. Conversations, locations, relationships, habits, secrets, lies. The Wire Taps sell the private lives of GLMZ's citizens to anyone willing to pay: jealous spouses, paranoid employers, stalkers, blackmailers, private investigators, and occasionally law enforcement agencies that can't get a warrant.\n\nThe organization's technical capability is remarkable for its size. Members include former corporate surveillance technicians, ex-Axiom Security signal intelligence operators, and BCI modification specialists who can install monitoring capabilities in personal neural interfaces without the owner's knowledge. Their equipment ranges from off-the-shelf listening devices to custom-built surveillance drones to BCI parasites — tiny programs that ride on a target's neural interface and transmit their perceptions to a receiver.\n\nThe Wire Taps operate on a simple business model: clients request surveillance of a target, the Taps provide a quote based on the target's security posture, and upon acceptance, they deliver recorded material in the client's preferred format. No moral judgments. No questions about intent. The Taps have facilitated divorces, corporate espionage, political blackmail, stalking, and at least one murder where surveillance data was used to plan the killing. They consider themselves a neutral service provider.",
+  "ideology": "Privacy is an illusion in GLMZ — the corponations already monitor everything. The Wire Taps simply democratize surveillance, making it available to individuals rather than just institutions. This framing makes their work feel less predatory than it is.",
+  "territory": "Distributed throughout GLMZ with no central location. Operatives work from personal residences and rented technical spaces.",
+  "leadership": "An individual known only as 'Dispatch' coordinates operations and manages client relationships. Dispatch communicates exclusively through text and has never been seen in person by any Taps member.",
+  "methods": [
+    "Audio and visual surveillance using custom and commercial equipment",
+    "BCI parasites that monitor targets' neural interface activity",
+    "Surveillance drone deployment in urban environments",
+    "Physical tailing and observation",
+    "Social media and public data aggregation",
+    "Sale of compiled surveillance packages to clients"
+  ],
+  "resources": [
+    "60 skilled surveillance operatives",
+    "Custom surveillance technology including BCI parasites",
+    "A drone fleet modified for urban surveillance",
+    "Former corporate surveillance expertise",
+    "An archive of surveillance data that grows daily",
+    "Dispatch's organizational skill and perfect anonymity"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Wire Taps represent the erosion of privacy taken to its logical conclusion — a world where your most private moments are a commodity someone else can purchase.",
+  "story_hooks": [
+    "A client has hired the Wire Taps to surveil someone who turns out to be under Axiom Security protection. The Taps have accidentally captured corporate intelligence that Axiom will kill to protect.",
+    "Dispatch has gone silent. Operations continue on autopilot, but without Dispatch's coordination, the Taps' clients are starting to receive each other's surveillance packages — and the resulting exposure is creating cascading crises."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "surveillance",
+    "espionage",
+    "privacy",
+    "data",
+    "information"
+  ]
+}

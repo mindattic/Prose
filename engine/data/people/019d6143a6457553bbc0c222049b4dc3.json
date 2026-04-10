@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "War Witness",
-      "Undeceived",
-      "Moral Weight",
-      "Elder Authority",
-      "Tremor-Haunted"
+      "war witness",
+      "undeceived",
+      "moral weight",
+      "elder authority",
+      "tremor-haunted"
     ]
   },
   "behavioral": {
@@ -289,7 +289,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

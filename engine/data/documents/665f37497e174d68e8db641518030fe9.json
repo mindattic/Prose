@@ -1,0 +1,32 @@
+{
+  "id": "665f37497e174d68e8db641518030fe9",
+  "name": "The Shadow Census",
+  "type": "document",
+  "document_type": "analysis",
+  "author": "Unknown (distributed anonymously via dead-drop network)",
+  "date": "2226-01-01",
+  "classification": "unverified",
+  "description": "Someone has been counting the Lost Block population for years. Not through official channels — the Urban Observatory's thermal survey is the closest any institution has come to acknowledging the Lost Block inhabitants, and that study was published only last month. This count has been running since at least 2216, possibly longer. It reaches the public through a dead-drop network: printed documents left in specific locations around the Circuit District, updated annually, always on January 1st.\n\nThe methodology is documented in exhaustive detail. The Shadow Census — as the dead-drop community has named it — uses power consumption analysis as its primary tool, cross-referenced with waste heat measurement and water usage patterns extrapolated from publicly available Ouroboros grid data. The author demonstrates that individual household power consumption creates a unique signature: timing, duration, magnitude, and cycling patterns that correspond to specific activities (cooking, lighting, climate control, electronics operation). By disaggregating the bulk power consumption data for Lost Block coordinates, the author has reconstructed what they claim is a household-level census of every occupied unit in every Lost Block.\n\nThe Shadow Census estimates 340-400 individuals across all seven Lost Blocks. This is consistent with the Urban Observatory's thermal count of 340, lending credibility to both analyses. But the Shadow Census goes further. It has ten years of data. And the data tells a story that the thermal survey, with its 90-day window, could not.\n\nThe population has been stable for at least a decade. Not approximately stable — precisely stable. The power consumption patterns show the same number of distinct household signatures year after year. No new signatures appear. No existing signatures disappear. The daily rhythms are consistent — the same units activate at the same times, consume the same amounts, cycle through the same patterns. There are no births — no new, small-consumption signatures appearing in existing households. There are no deaths — no signatures going dark. No growth. No decline. Exactly the same number, year after year, living exactly the same patterns, consuming exactly the same resources.\n\nThe author of the Shadow Census offers no interpretation. The final page of each annual report contains only the data tables and a single sentence: 'The count is the same.' Ten years of counting. Ten years of the same answer. Whatever is living in the Lost Blocks, it does not change.",
+  "related_entities": [
+    "Lost Blocks",
+    "GLMZ",
+    "Circuit District",
+    "Ouroboros"
+  ],
+  "credibility": "credible",
+  "story_hooks": [
+    "Who is the Shadow Census author, and how do they access disaggregated Ouroboros grid data?",
+    "A population that doesn't change for a decade — are these people, or are they patterns?"
+  ],
+  "tags": [
+    "document",
+    "lost_block",
+    "spatial_anomaly",
+    "new_weird",
+    "inexplicable",
+    "meridian_88",
+    "census",
+    "population",
+    "ouroboros"
+  ]
+}

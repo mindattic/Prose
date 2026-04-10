@@ -1,0 +1,48 @@
+{
+  "id": "dc6bb6c16fbd07a2a644da120119d47c",
+  "name": "Kang-Petrov Arms KPS-7V 'Verdict'",
+  "type": "weapon",
+  "aliases": [
+    "Verdict",
+    "KPS-7V",
+    "Judge"
+  ],
+  "category": "smg",
+  "description": "The KPS-7V Verdict is Kang-Petrov's heavy-caliber SMG, chambered in .45 ACP caseless — an old cartridge concept rendered in modern caseless form. The Verdict prioritizes stopping power over penetration, delivering heavy, slow projectiles that transfer maximum energy to the target. Against unarmored opponents, the .45 caseless round is devastating. Against body armor, it is a firm shove.\n\nThe weapon's design is deliberately retro-futurist, with angular polymer furniture over a stamped steel receiver that echoes mid-20th-century submachine guns. Kang-Petrov's design team included historical weapons enthusiasts who wanted to prove that heavy-caliber SMGs remained tactically relevant in an era of high-velocity micro-calibers. The Verdict's 25-round magazine and 600 rpm cyclic rate provide sustained close-range firepower with terminal effects that smaller calibers struggle to match.\n\nAt Φ1,500, the Verdict appeals to operators who value knockdown power and operators who appreciate the weapon's aggressive aesthetic. In Tier 2-3 zones where body armor is rare, the .45 caseless round's stopping power makes the Verdict genuinely terrifying at close range. In zones where armor is common, it is a relic outclassed by armor-piercing alternatives.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Heavy-caliber caseless conversion",
+    "Retro-futurist design language",
+    "Maximum energy transfer optimization"
+  ],
+  "specifications": "caliber: .45 ACP caseless\neffective_range: 75m\nrate_of_fire: 600 rpm (cyclic)\nmagazine_capacity: 25 rounds\nweight: 2.6 kg",
+  "tactical_use": "The Verdict excels against unarmored targets at close range. Its heavy .45 caseless round delivers stopping power that lighter calibers cannot match, putting targets down with fewer hits. In environments where body armor is uncommon — Tier 1-2 zones, criminal enforcement, wildlife defense — the Verdict's terminal performance is superior to lighter-caliber alternatives. Against armored opponents, operators should switch to AP-capable platforms.",
+  "cultural_context": "The Verdict has a cult following driven by its combination of retro aesthetics and modern performance. Weapons collectors prize its design language, and street operators appreciate its visceral stopping power. The weapon has appeared in several popular media properties, boosting its cultural visibility beyond its tactical merits. In some communities, carrying a Verdict is a fashion statement as much as a tactical choice.",
+  "known_users": [
+    "Street-level operators",
+    "Tier 1-2 enforcers",
+    "Weapons collectors",
+    "Retro-tech enthusiasts"
+  ],
+  "story_hooks": [
+    "A media personality popularized the Verdict in a streaming series, causing demand to spike 400%. Kang-Petrov can't manufacture them fast enough, and counterfeit Verdicts are flooding the market with dangerous quality variations.",
+    "A series of enforcement killings all used .45 ACP caseless ammunition — a caliber rare enough that the supply chain is traceable to a single distributor."
+  ],
+  "ammunition_type": [
+    ".45 ACP caseless standard",
+    ".45 ACP caseless hollow-point"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "heavy_caliber",
+    "retro",
+    "stopping_power",
+    "Kang-Petrov",
+    "tier 1"
+  ],
+  "physical_description": "The KPS-7V Verdict is a compact, brutish SMG with sharp-edged polymer grips in matte black and stamped steel receiver panels that show deliberate tool marks and micro-corrosion. Its angular profile recalls pre-digital submachine guns, but the caseless magazine well and integrated rail system mark it as contemporary—a weapon that looks equally at home in a 1940s crime scene or a 2090s back-alley firefight. The charging handle sits proud and textured for wet-gloved operation.",
+  "visual_prompt": "Kang-Petrov KPS-7V Verdict submachine gun, compact SMG with angular black polymer furniture and weathered stamped steel receiver, retro-futurist design, neo-noir gritty aesthetic, detailed product photography, rain-slicked metal surfaces, worn tactical rails, dark studio background, industrial cyberpunk weapon, professional lighting on matte finishes, cinematic"
+}

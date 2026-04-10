@@ -1,0 +1,38 @@
+{
+  "name": "Chromalex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "chrome peace",
+    "the daily",
+    "tolerance tabs"
+  ],
+  "category": "medical",
+  "subcategory": "augment rejection suppressor",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "A broad-spectrum immunosuppressant engineered specifically for cybernetic implant tolerance, targeting the T-cell response pathways that identify synthetic materials as foreign bodies. Chromalex is the most widely prescribed drug in GLMZ — missing more than three consecutive doses can trigger acute rejection syndrome, causing the body to violently attack implanted chrome. Available in generic and premium formulations.",
+  "method_of_use": "oral",
+  "effects": [
+    "sustained immune tolerance of cybernetic implants",
+    "prevention of rejection cascades",
+    "reduction of chronic low-grade inflammation at implant sites",
+    "stabilization of the organic-synthetic interface membrane"
+  ],
+  "side_effects": [
+    "elevated infection susceptibility",
+    "mild fatigue in first two weeks of use",
+    "liver enzyme elevation with long-term use",
+    "rebound hyperimmune response if abruptly discontinued",
+    "rare: implant micro-encapsulation if dose is inconsistent"
+  ],
+  "duration": "24 hours per dose",
+  "addiction_risk": "none",
+  "tier_availability": "All tiers",
+  "legality": "prescription",
+  "street_price": "Φ8–Φ22 per day depending on formulation",
+  "cultural_context": "Chromalex or its generics are as mundane as vitamins in 2200 — anyone with chrome takes it, full stop. On the Shelf, missing doses because you can't afford them is a quiet crisis. Tier 1 clinics ration it, and Shelf residents sometimes share pills, cutting them in half and hoping it's enough. Tier 4-5 users take Chromalex Premium, a time-release sublingual formula with added anti-inflammatory compounds. The phrase 'forgot my chrome peace' is slang for being dangerously distracted or off-balance.",
+  "story_hooks": [
+    "A Shelf-based fixer's chrome is beginning to reject — they have four days before their arm starts seizing. Their supplier was just killed and the nearest clinic is in Tier 2 territory with a three-day waiting list.",
+    "Someone is systematically poisoning a neighborhood's Chromalex supply with a compound that accelerates rejection rather than suppressing it — the chrome in the district is turning on its owners.",
+    "A Novafold whistleblower claims the generic formulation is intentionally less effective than clinical trials show, forcing Tier 1-2 users into more frequent purchases of the 'enhanced' version."
+  ]
+}

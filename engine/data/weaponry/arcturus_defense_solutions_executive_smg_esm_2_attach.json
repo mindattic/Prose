@@ -1,0 +1,48 @@
+{
+  "id": "8fc07859e7b1f43bcc6c90e8a6a8c073",
+  "name": "Arcturus Defense Solutions Executive SMG ESM-2 'Attaché'",
+  "type": "weapon",
+  "aliases": [
+    "Attaché",
+    "ESM-2",
+    "Briefcase Gun"
+  ],
+  "category": "smg",
+  "description": "The ESM-2 Attaché is disguised as a corporate briefcase. The weapon is permanently integrated into a standard Arcturus executive carry case, with the barrel concealed behind a false panel that deploys on BCI command. The operator carries the briefcase normally, and upon neural activation, the front panel drops, exposing the barrel and trigger assembly. The weapon fires through the opened panel while the operator holds the case by its handle.\n\nChambered in 4.6mm caseless with a 20-round internal magazine, the Attaché provides 3 seconds of automatic fire at 700 rpm. The BCI link handles targeting through the executive carry case's integrated sensors — the operator does not aim in any conventional sense. They point the case and the onboard system manages fire distribution across the threat zone.\n\nArcturus developed the Attaché for executives who travel through hostile territory and require personal defense capability that is genuinely invisible. The weapon passes standard security scans when the case is closed — the components are distributed through the case's structure in a pattern that mimics ordinary electronics. At Φ15,000, the Attaché is among the most expensive SMGs in production, but its customers have expense accounts.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Highly restricted — executive protection authorization",
+  "base_technologies": [
+    "Concealed weapon integration",
+    "Scan-defeating component distribution",
+    "BCI autonomous targeting",
+    "Disguised carry system"
+  ],
+  "specifications": "caliber: 4.6mm caseless\neffective_range: 30m\nrate_of_fire: 700 rpm (cyclic)\nmagazine_capacity: 20 rounds (internal)\nweight: 2.5 kg (complete case)",
+  "tactical_use": "The Attaché is a single-use emergency weapon. Its 20-round internal magazine provides one engagement's worth of firepower — enough to neutralize an immediate threat and create space for evacuation. The scan-defeating design allows the weapon to enter spaces where all visible weapons are prohibited, providing defense where it would otherwise be impossible. Once deployed, the disguise is blown and the case must be reloaded by Arcturus technicians.",
+  "cultural_context": "The Attaché is an open secret in corporate executive circles. Everyone knows Arcturus makes a weapon disguised as a briefcase. No one knows who carries one. This uncertainty is itself a deterrent — any Arcturus executive's briefcase might contain a weapon, which means threatening any Arcturus executive carries a specific risk. The weapon's existence has influenced corporate fashion; some executives carry deliberately oversized briefcases as a bluff.",
+  "known_users": [
+    "Arcturus executives",
+    "Corporate VIPs in hostile territories",
+    "Executive protection principals"
+  ],
+  "story_hooks": [
+    "An executive's Attaché deployed accidentally during a board meeting when a BCI glitch interpreted a stressful negotiation as a threat response. No one was hit, but the footage is now leverage.",
+    "A counterfeit Attaché has appeared on the black market — it looks identical to the genuine article but contains a bomb instead of a weapon, targeting executives who trust the Arcturus brand."
+  ],
+  "ammunition_type": [
+    "4.6mm caseless frangible"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "concealed",
+    "disguised",
+    "executive",
+    "BCI",
+    "Arcturus",
+    "tier 4"
+  ],
+  "physical_description": "A scuffed titanium-composite briefcase in matte gunmetal gray, its corners dented from years of corporate hallway transit. The case's front panel bears faint stress marks around concealed hinges; a small neural-interface jack sits flush near the handle. When deployed, the barrel assembly retracts from behind the false front, exposing brushed steel and carbon fiber trigger components.",
+  "visual_prompt": "Matte gunmetal briefcase with integrated SMG barrel assembly, neo-noir product photography, gritty worn titanium composite, stress marks and scuffs, neural interface jack detail, dark studio background, harsh side lighting, corporate weapon hybrid, detailed mechanical components, 4.6mm caseless ammunition visible, cyberpunk executive carry case"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "42299a8f70dbae1c2dfe2cc07963490b",
+  "name": "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
+  "type": "weapon",
+  "aliases": [
+    "Quicksilver",
+    "Memory Balisong",
+    "Liquid Blade",
+    "The Dancer"
+  ],
+  "category": "melee",
+  "description": "A butterfly knife (balisong) constructed entirely from shape-memory alloy, allowing the blade and handles to flex, deform, and recover their geometry through rapid manipulation. The Quicksilver takes the traditional balisong — already one of the most dynamic manual weapons in existence — and adds the shape-memory property that allows the blade to deform around obstacles and snap back to cutting rigidity faster than the eye can follow.\n\nStreet-level bladesmiths in GLMZ's Filipino diaspora community developed the Quicksilver by adapting industrial shape-memory alloy stock to traditional balisong proportions. The manufacturing process is closely guarded within the community, and production is limited to a handful of smiths who learned the technique from its originator — a retired metalworker named Dante Villanueva-Obi who combined his industrial materials knowledge with his grandmother's balisong traditions.\n\nThe weapon's manipulation characteristics are unique — the shape-memory handles flow through the user's fingers with less resistance than conventional steel, enabling manipulation speeds that blur the boundary between weapon handling and sleight of hand. Expert Quicksilver users can open, close, and transition the knife through positions so rapidly that observers cannot determine whether the blade is deployed or stowed at any given moment. This ambiguity is itself a tactical advantage.",
+  "manufacturer": "FILIPINO DIASPORA BLADESMITHS",
+  "tier_availability": "Tier 1-2 (community availability)",
+  "legality": "Unlicensed — artisan production, concealed weapon where applicable",
+  "base_technologies": [
+    "Shape-memory alloy full construction",
+    "Traditional balisong mechanics",
+    "Deformation-recovery manipulation dynamics"
+  ],
+  "specifications": "blade_length: 11 cm\ntotal_length: 25 cm (open), 14 cm (closed)\nweight: 160 g\nmaterial: Shape-memory alloy throughout\ntransition_temperature: 30°C (slightly below body heat)\nrecovery_time: <1 second from any deformation\nproduction: Community-limited, ~50 units per year",
+  "tactical_use": "The Quicksilver's tactical advantage is speed of deployment and the ambiguity of its state. A user can have the blade open and cutting before an observer registers the threat, and the shape-memory property means the blade recovers from impacts and deflections that would render a conventional balisong inoperable. The weapon's small size limits it to close-quarters and grappling range, but within that range, the manipulation speed and deformation recovery make it exceptionally difficult to disarm or disable.",
+  "cultural_context": "The Quicksilver is a cultural artifact of GLMZ's Filipino diaspora — a community that maintained balisong traditions across generations of displacement and mixing. The weapon's development by a retired metalworker using industrial materials embodies the diaspora's pattern of adapting traditional practices to available resources. The community's protectiveness of the manufacturing process reflects both practical concerns (limiting supply maintains quality and value) and cultural ones (the technique belongs to the community, not to corporate replication).",
+  "known_users": [
+    "Filipino diaspora martial practitioners",
+    "Traditional balisong artists",
+    "Close-quarters specialists with community connections"
+  ],
+  "story_hooks": [
+    "Dante Villanueva-Obi has died, and his manufacturing notes are missing. Three of his students each claim to have the complete technique, but each produces slightly different blades. The community must determine which version is the authentic continuation — or whether all three are needed.",
+    "A corporate materials company has obtained a Quicksilver and reverse-engineered the alloy composition. They plan to mass-produce balisongs using the technique. The community is divided between those who want to fight the appropriation and those who see wider availability as a form of cultural victory."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "knife",
+    "balisong",
+    "shape-memory",
+    "traditional",
+    "artisan",
+    "tier 1",
+    "cultural",
+    "Filipino"
+  ],
+  "physical_description": "The Quicksilver is a balisong with a dull silver-grey finish that catches light unevenly across its surface, the memory alloy showing microscopic stress lines from countless cycles of deformation and recovery. The handles are wrapped in frayed synthetic grip-tape worn dark from sweat and use, while the blade itself appears almost liquid in its stillness—ready to ripple. Faint etching marks line the spine, a maker's signature from the Filipino diaspora craftspeople of the GLMZ.",
+  "visual_prompt": "street-custom butterfly knife balisong, shape-memory alloy silver-grey metal, worn grip tape, neo-noir gritty aesthetic, detailed product photography, dark rain-slicked background, cyberpunk tool, industrial craftsmanship, close-up macro shot, moody neon rim lighting, worn texture detail"
+}

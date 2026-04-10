@@ -1,0 +1,47 @@
+{
+  "id": "c4fce4c8ede5361673cc00c9c1e70a59",
+  "name": "Volkov-Saito Precision VSR-20 'Partisan'",
+  "type": "weapon",
+  "aliases": [
+    "Partisan",
+    "VSR-20",
+    "The Insurgent's Friend"
+  ],
+  "category": "assault_rifle",
+  "description": "Volkov-Saito Precision built the VSR-20 for asymmetric warfare. The Partisan is a select-fire rifle chambered in 6.8mm caseless with a heavy barrel profile optimized for sustained accurate fire from fixed positions. Where other assault rifles prioritize mobility and rate of fire, the VSR-20 prioritizes first-round accuracy and sustained fire without thermal degradation.\n\nThe rifle features a liquid-cooled barrel jacket that circulates a thermal management fluid, allowing the VSR-20 to maintain accuracy through extended engagements that would warp a conventional barrel. A built-in bipod deploys from the forend, and the stock adjusts for length, cheek height, and cant angle to accommodate any shooter regardless of body type or prosthetic configuration.\n\nVolkov-Saito markets the Partisan to defensive security forces and territorial militias, but its true customer base is any group expecting to fight a sustained engagement against a superior force. The VSR-20 does not win firefights through volume — it wins through persistent, accurate, demoralizing fire that pins advancing forces and bleeds them at range.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Liquid-cooled barrel system",
+    "Adaptive ergonomic stock",
+    "Heavy barrel sustained-fire profile"
+  ],
+  "specifications": "caliber: 6.8mm caseless\neffective_range: 600m\nrate_of_fire: 600 rpm (cyclic)\nmagazine_capacity: 25 rounds\nweight: 4.5 kg",
+  "tactical_use": "The VSR-20 excels in defensive engagements where sustained accuracy matters more than mobility. Its liquid-cooled barrel maintains sub-MOA accuracy through hundreds of rounds that would render conventional barrels inaccurate. Paired with a competent marksman and good cover, a single Partisan can suppress an advancing squad. The heavy caliber and accurate fire create a psychological deterrent beyond its physical lethality.",
+  "cultural_context": "The Partisan has become synonymous with community defense against corporate expansion. Its name invokes historical resistance movements, and Volkov-Saito has leaned into this identity. In Tier 1-2 communities facing corporate encroachment, the VSR-20 represents the ability to impose costs on aggression. Corporate security briefings list the Partisan as a primary threat indicator for organized local resistance.",
+  "known_users": [
+    "Territorial defense militias",
+    "Settlement security forces",
+    "Anti-corporate resistance cells"
+  ],
+  "story_hooks": [
+    "A Volkov-Saito engineer is secretly providing Partisan maintenance manuals and upgrade kits to resistance groups — the company officially denies involvement while quietly supporting their best customers.",
+    "A settlement's defense depends on three Partisan operators holding a chokepoint. If any of them fall, the position is lost and the community is overrun."
+  ],
+  "ammunition_type": [
+    "6.8mm caseless match",
+    "6.8mm caseless AP"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "precision",
+    "defensive",
+    "sustained_fire",
+    "resistance",
+    "tier 2"
+  ],
+  "physical_description": "The VSR-20 is a utilitarian instrument of precision, its matte-black polymer furniture scarred from field use and stippled for grip. The barrel wears a distinctive ribbed thermal jacket of brushed steel, with fluid-circulation ports visible along its length like augmented anatomy. A deployed bipod extends from the forend in weathered aluminum, while the adjustable stock shows wear marks from countless repositionings—this is a weapon built for work, not show.",
+  "visual_prompt": "Volkov-Saito VSR-20 Partisan assault rifle, detailed product photography, matte black polymer and brushed steel barrel jacket, thermal cooling ribbed design, deployed bipod, 6.8mm caseless, neo-noir gritty aesthetic, worn tactical furniture, dark studio background, industrial lighting, high detail, cyberpunk military hardware, weathered and field-tested appearance"
+}

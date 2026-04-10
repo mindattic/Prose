@@ -97,7 +97,7 @@
     "tags": [
       "death midwife",
       "threshold ritualist",
-      "Irkalla resident",
+      "irkalla resident",
       "grief specialist",
       "medical adjacent"
     ]
@@ -212,7 +212,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

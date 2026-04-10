@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Q-Zero",
-      "Analogue Specialist",
-      "Living Archive",
-      "Off-Grid",
-      "Corporate Exile"
+      "q-zero",
+      "analogue specialist",
+      "living archive",
+      "off-grid",
+      "corporate exile"
     ]
   },
   "behavioral": {
@@ -255,7 +255,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

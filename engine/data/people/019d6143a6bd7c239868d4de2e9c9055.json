@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Surveillance",
-      "Keeper of Secrets",
-      "Moral Burden",
-      "Long Service",
-      "E.L.F. Devout"
+      "surveillance",
+      "keeper of secrets",
+      "moral burden",
+      "long service",
+      "e.l.f. devout"
     ]
   },
   "behavioral": {
@@ -298,7 +298,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

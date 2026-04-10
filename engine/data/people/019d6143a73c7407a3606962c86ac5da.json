@@ -97,10 +97,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Medical Authority",
-      "Corporate Adversary",
-      "Suppressed Evidence",
-      "Running on Fumes"
+      "medical authority",
+      "corporate adversary",
+      "suppressed evidence",
+      "running on fumes"
     ]
   },
   "behavioral": {
@@ -223,7 +223,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

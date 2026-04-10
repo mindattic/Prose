@@ -1,0 +1,39 @@
+{
+  "name": "Chromolyx",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Rust",
+    "Chrome Fever",
+    "the Grind"
+  ],
+  "category": "poison_toxin",
+  "subcategory": "augment-specific toxin — cyberware cascade agent",
+  "manufacturer": "Nightshade Pharmatech (denied) — suspected joint development with a rogue Lazarus Pharmaceuticals materials division",
+  "description": "Chromolyx is engineered to target the biochemical interface layer between organic tissue and cybernetic augmentation — specifically the SNT-bonding proteins that allow chrome to communicate with the nervous system. Once introduced, it causes progressive interface layer breakdown: augments begin misfiring, sending incorrect signals, then lose coordination, then attempt autonomous function as their control signals become corrupted. A heavily augmented subject becomes their own worst enemy — their own chrome attacks them.",
+  "method_of_use": "injection",
+  "effects": [
+    "progressive SNT-chrome interface degradation",
+    "augments begin misfiring within 20 minutes — involuntary activation, incorrect force calibration, sensory implant distortion",
+    "advanced chrome loses motor coordination — subjects with augmented limbs may find them acting against their will",
+    "weapons-grade augments may discharge or activate spontaneously",
+    "pain-suppression implants invert — amplifying sensation instead of blocking it"
+  ],
+  "side_effects": [
+    "subjects with minimal augmentation experience only mild symptoms — Chromolyx scales with augment load",
+    "chrome lockup during cascade can cause physical injury (broken bones from limb spasm, retinal damage from optical misfires)",
+    "full cascade in a heavily augmented subject is potentially lethal — augment-induced internal injury",
+    "subjects with military-grade chrome experience accelerated cascade — designed hardening protocols interact badly with the compound",
+    "permanent SNT-interface scarring in 40% of cases — reduced augment performance long-term"
+  ],
+  "duration": "2-5 hours of active cascade; interface damage may be permanent",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 2-3",
+  "legality": "illegal",
+  "street_price": "Φ 2,000–4,500 per dose",
+  "cultural_context": "The great equalizer in a world where chrome means power. A Shelf runner with a syringe of Chromolyx can bring down a corpo enforcer with Φ200,000 in augmentation — the more chrome they carry, the harder they fall. This has shifted tactical thinking across GLMZ: heavily augmented operators now run pre-mission biochem sweeps, and certain Tier 4 executives have reduced their augment load specifically because they're afraid of Chromolyx. The irony — chrome as vulnerability — is not lost on GLMZ's cultural commentators.",
+  "story_hooks": [
+    "A corpo security chief with full military-grade augmentation is hit with Chromolyx during a routine sweep. Their own chrome nearly kills them before the cascade is stopped. Someone on the inside provided access — and the chief knows it.",
+    "A black-market Chromolyx batch has been engineered with a longer cascade window — 12 hours instead of 5. The supplier is testing a new formula and the test subjects are real operators in the field.",
+    "A Shelf medic has developed a partial countermeasure — a compound that slows Chromolyx cascade enough to get a subject to a chrome surgeon. They're selling it quietly, but both Nightshade and Lazarus want the formula suppressed."
+  ]
+}

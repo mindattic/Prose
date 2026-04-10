@@ -1,0 +1,40 @@
+{
+  "name": "Foxfire",
+  "type": "pharmaceutical",
+  "aliases": [
+    "fox",
+    "glow-cook",
+    "the shimmer"
+  ],
+  "category": "street_concoction",
+  "subcategory": "bioluminescent_psychedelic",
+  "manufacturer": "Cultivar collective known as 'The Garden', Gary Ruins",
+  "description": "A liquid extract brewed from genetically-drifted bioluminescent fungi cultivated in the flooded basement levels of the Gary Ruins — fungi that have been growing in contact with leached geneware runoff for decades and have mutated into something novel. The brew causes vivid phosphene hallucinations, a feeling of bodily warmth, and in some users, temporary bioluminescence of the skin and mucous membranes. The Garden treats it as a sacrament. Everyone else treats it as the cheapest trip available.",
+  "method_of_use": "oral",
+  "effects": [
+    "intense visual hallucinations with luminescent quality",
+    "profound sense of bodily warmth and connectedness",
+    "temporary skin bioluminescence in ~30% of users",
+    "time distortion",
+    "synesthesia"
+  ],
+  "side_effects": [
+    "severe nausea in first 30 minutes",
+    "liver stress with repeated use",
+    "prolonged photosensitivity lasting days",
+    "in rare cases, bioluminescence becomes permanent",
+    "fungal spore inhalation risk if brew is improperly sealed",
+    "psychotic breaks in users with latent neurological conditions"
+  ],
+  "duration": "6-10 hours",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ8-15 per bottle",
+  "cultural_context": "The Garden is a genuine subculture in the Gary Ruins — they've been cultivating their fungi for thirty years and view Foxfire as a spiritual tool. They sell excess product only reluctantly, and there are counterfeit batches made by opportunists that have caused deaths. True Garden-brewed Foxfire comes in hand-sealed clay bottles with a thumbprint in the wax. The glowing skin effect has made it fashionable in certain underground art scenes.",
+  "story_hooks": [
+    "A Tier 3 biotech researcher has quietly identified that the Gary fungi have developed genuinely novel enzymatic properties — someone powerful wants The Garden's location and cultivation methods, and they're not asking nicely",
+    "A user's permanent bioluminescence is spreading — it's not just cosmetic anymore, and it's attracting attention from Helix Biosystems",
+    "The Garden's eldest cultivar has died, and a succession dispute is fracturing the collective — someone needs to broker peace before the knowledge of proper cultivation dies with the conflict"
+  ]
+}

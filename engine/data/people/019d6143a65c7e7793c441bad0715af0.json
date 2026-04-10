@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Disappeared",
-      "Former Corporate",
-      "Information Asset",
-      "Haunted",
-      "The Data She Carries"
+      "disappeared",
+      "former corporate",
+      "information asset",
+      "haunted",
+      "the data she carries"
     ]
   },
   "behavioral": {
@@ -284,7 +284,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

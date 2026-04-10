@@ -1,0 +1,39 @@
+{
+  "name": "Dravosyn",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Dopfloor",
+    "Baseload",
+    "D-Ground"
+  ],
+  "category": "withdrawal_aid",
+  "subcategory": "dopamine_system_restorator",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Dravosyn is a dopamine precursor and D2/D4 receptor sensitivity restorator developed specifically for post-stimulant and post-synthetic-high recovery, where the dopamine system has been so heavily depleted or downregulated that users cannot feel motivation, pleasure, or drive. It works by flooding the system with bioavailable dopamine precursors while simultaneously upregulating receptor sensitivity, restoring the capacity for natural reward over a 60-day course.",
+  "method_of_use": "oral",
+  "effects": [
+    "Dopamine system floor restoration",
+    "Gradual return of motivation and drive",
+    "Improved executive function",
+    "Restored capacity for natural pleasure responses",
+    "Reduced anhedonia"
+  ],
+  "side_effects": [
+    "First two weeks: intense restlessness as dopamine rises before receptor sensitivity normalizes",
+    "Compulsive behavior risk during peak phase",
+    "Insomnia",
+    "Mild paranoia in users with pre-existing conditions",
+    "If combined with stimulants during course: dangerous dopamine spike"
+  ],
+  "duration": "60-day course; restoration effects persist",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "prescription",
+  "street_price": "Φ22 per week",
+  "cultural_context": "Dravosyn addresses what Shelf users call 'the gray' — the flatlined motivational state after years on Voraxin, synthetic highs, or heavy stimulant use where nothing feels worth doing. It's considered a miracle drug by some recovery advocates, but the restless peak phase in weeks 2-3 has caused problems — users in that window have elevated impulsivity and sometimes relapse or act out violently.",
+  "story_hooks": [
+    "A contact is in the Dravosyn peak phase — unusually impulsive and energetic — and the players need to deal with them carefully before they do something irreversible",
+    "Someone in the gray after years of drug use is offered Dravosyn by a stranger with unclear motives — is it genuine help or a way to manipulate them during the vulnerable peak phase?",
+    "A Shelf community has collectively decided to pool resources for a Dravosyn run for several members, and the players must source it without a prescription"
+  ]
+}

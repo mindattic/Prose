@@ -94,11 +94,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Observer",
-      "Ethical",
-      "Paralyzed",
-      "Talented",
-      "Witness"
+      "observer",
+      "ethical",
+      "paralyzed",
+      "talented",
+      "witness"
     ]
   },
   "behavioral": {
@@ -205,7 +205,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

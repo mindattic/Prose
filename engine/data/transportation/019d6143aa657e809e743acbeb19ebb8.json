@@ -35,7 +35,15 @@
     "circuit",
     "old harbor",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "civilian",
+    "van",
+    "ferry",
+    "utility",
+    "electric",
+    "solar",
+    "aerial",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -43,5 +51,7 @@
     "Deku Barrientos-Osei",
     "Ferrogate CL-9 L-Train",
     "The Keel"
-  ]
+  ],
+  "physical_description": "Twin hulls of salt-corroded aluminum and composite plating support a boxy passenger cabin with reinforced polycarbonate windows clouded by years of spray and industrial particulates. Rust blooms around the ferry's superstructure where fresh water runoff meets corroded metal, while faded Ferrogate Transit decals peel from the hull. The open deck railings are worn smooth by countless hands, and the boarding ramp bears deep gouges from freight containers and desperate foot traffic.",
+  "visual_prompt": "weathered electric catamaran ferry, twin hulls salt-corroded aluminum, industrial polycarbonate cabin windows, worn metal railings, rust blooms and peeling transit decals, dark rain-slicked harbor at dusk, neon distant skyline reflection, gritty neo-noir aesthetic, detailed product photography, moody cinematic lighting, Great Lakes industrial decay"
 }

@@ -1,0 +1,48 @@
+{
+  "id": "dc228236b3445bd968250cf26c258c2e",
+  "name": "Tessera Predictive Marksman Rifle TPMR-4 'Cassandra'",
+  "type": "weapon",
+  "aliases": [
+    "Cassandra",
+    "TPMR-4",
+    "Fortune Teller"
+  ],
+  "category": "dmr",
+  "description": "The TPMR-4 Cassandra takes Tessera's predictive targeting AI to its logical extreme. The weapon's AI doesn't just track current target position — it models probable future positions based on movement history, environmental constraints, and behavioral analysis. The system calculates where the target will be when the bullet arrives and fires at that predicted position. The operator's role is reduced to target selection; the AI handles timing and aim.\n\nThe Cassandra fires 7mm caseless through a precision barrel, and the BCI integration is deeper than any competing platform. The AI requires full neural access to the operator's visual processing centers, essentially borrowing the operator's eyes as biological sensors while providing the firing solution through the same neural pathway. Some operators describe the experience as the weapon aiming itself through their body.\n\nAt Φ28,000, the Cassandra is Tessera's most expensive DMR. Its predictive capability is genuinely remarkable — in controlled tests, the system predicts target position with sufficient accuracy to hit running targets at 700 meters using the operator's trigger timing as the variable the AI cannot control. This is the weapon's vulnerability: the human is the weakest link in the chain, and the AI knows it.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — advanced BCI weapons licensing",
+  "base_technologies": [
+    "Predictive behavioral targeting AI",
+    "Deep neural visual integration",
+    "Probabilistic firing solution",
+    "Human-AI shared targeting system"
+  ],
+  "specifications": "caliber: 7mm caseless\neffective_range: 800m (static), 700m (predictive moving)\nrate_of_fire: Semi-automatic (AI-timed)\nmagazine_capacity: 15 rounds\nweight: 4.4 kg",
+  "tactical_use": "The Cassandra defeats evasive movement through prediction. Targets that zigzag, sprint between cover, or use irregular movement patterns to defeat conventional marksmen are vulnerable to the AI's behavioral modeling. The system's effectiveness increases with observation time — the longer the AI watches a target move, the more accurately it predicts future positions. First shots at newly acquired targets are less accurate than fifth or sixth shots against targets the AI has been tracking.",
+  "cultural_context": "The Cassandra raises profound questions about the nature of skill. If the AI handles aiming and timing, what does the operator contribute? Tessera argues the operator provides judgment — choosing which targets to engage and when. Critics argue the Cassandra is an autonomous weapon with a human signature requirement, performing the killing function independently while a human provides legal cover. The weapon's name is darkly appropriate: Cassandra predicted the future but could not change it.",
+  "known_users": [
+    "Tessera advanced operations",
+    "AI-integrated marksman teams",
+    "Counter-evasion specialists"
+  ],
+  "story_hooks": [
+    "A Cassandra's predictive AI began modeling a target's behavior with such accuracy that it predicted the target would enter a specific building at a specific time — 72 hours in advance. The operator reported the prediction to command. It was correct.",
+    "An operator became psychologically dependent on the Cassandra's deep neural integration, unable to function as a marksman without the AI's presence in their visual cortex. The weapon became an addiction."
+  ],
+  "ammunition_type": [
+    "7mm caseless match"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "AI",
+    "predictive",
+    "neural",
+    "advanced",
+    "Tessera",
+    "tier 4"
+  ],
+  "physical_description": "The Cassandra is a lean, modular 7mm platform finished in matte gunmetal with stress-fracture patterns etched across the receiver from thermal cycling. Its stock is reinforced carbon-composite, scuffed and field-wrapped with grip tape; the barrel wears a custom muzzle brake with cooling vanes that glow faintly from residual heat. A bulky neural interface crown sits atop the action, studded with contact points that weep tiny corrosion trails down the weapon's spine.",
+  "visual_prompt": "Tessera Cassandra TPMR-4 sniper rifle, neo-noir gritty, matte gunmetal receiver with thermal stress fractures, carbon-composite stock wrapped in worn grip tape, custom cooling vanes on muzzle brake, bulky neural interface crown with contact points, detailed product photography, rain-slicked industrial setting, dark moody lighting, cyberpunk weapon design, weathered military hardware, shallow depth of field"
+}

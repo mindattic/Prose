@@ -99,7 +99,7 @@
       "stateless",
       "elder",
       "community leader",
-      "E.L.F. devotee",
+      "e.l.f. devotee",
       "refugee",
       "spiritual authority"
     ]
@@ -215,7 +215,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

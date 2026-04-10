@@ -1,0 +1,46 @@
+{
+  "id": "2309767192fd5678b78838f94304ab27",
+  "name": "Hearthstone Firearms Plinker-22 'Tin Can'",
+  "type": "weapon",
+  "aliases": [
+    "Tin Can",
+    "Plinker",
+    "The Twenty-Two"
+  ],
+  "category": "pistol",
+  "description": "The Hearthstone Plinker-22 is a semi-automatic pistol chambered in .22 LR, built with a zinc-alloy slide and polymer frame that together weigh less than a loaded magazine for most duty pistols. The weapon is sold in the sporting goods section of general retailers alongside fishing rods and camp stoves. It costs less than a quality pair of boots.\n\nThe Plinker serves two populations with zero overlap. Recreational shooters in the Mids buy it for target practice and weekend plinking at sanctioned ranges — it is cheap to shoot, fun to use, and mechanically simple enough to teach firearms basics. Shelf residents buy it because it is the second-cheapest gun available and marginally more reliable than the cheapest. In either context, nobody mistakes it for a serious defensive weapon.\n\nHearthstone makes no pretense about the Plinker's capabilities. Their marketing materials describe it as 'recreational' and 'introductory,' and the packaging includes a prominent disclaimer that the weapon is 'not recommended as a primary personal defense tool.' This disclaimer satisfies Hearthstone's legal department while tacitly acknowledging that many buyers will ignore it entirely.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — minimal registration required",
+  "base_technologies": [
+    "Zinc-alloy slide",
+    "Polymer frame",
+    "Simple blowback action"
+  ],
+  "specifications": "caliber: .22 LR\neffective_range: 20 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10 rounds\nweight: 0.32 kg",
+  "tactical_use": "No meaningful tactical application. The .22 LR round from this barrel length is insufficient against any form of body armor and marginal against unarmored targets. In absolute extremis, it is better than nothing. Effective only as a training tool for basic marksmanship fundamentals.",
+  "cultural_context": "The Tin Can is childhood nostalgia for Mid-district residents who grew up shooting at ranges with their parents. For Shelf residents, it is a grim reminder that even the most basic self-defense comes with a price tag. The weapon occupies completely different emotional spaces depending on who is holding it.",
+  "known_users": [
+    "Recreational shooters",
+    "Firearms training students",
+    "Shelf residents (self-defense)",
+    "Youth shooting programs"
+  ],
+  "story_hooks": [
+    "A Shelf teenager with nothing but a Plinker-22 successfully defends their family against armed intruders — the story goes viral and becomes a flashpoint for arguments about arms access and inequality.",
+    "Someone is converting Plinker-22s to fire a proprietary micro-cartridge with ten times the standard muzzle energy. The modifications are invisible from the outside."
+  ],
+  "ammunition_type": [
+    ".22 LR"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "recreational",
+    "cheap",
+    "training",
+    "shelf"
+  ],
+  "physical_description": "The Plinker-22 is a skeletal thing of brushed zinc-alloy and molded polymer, all hard angles and minimalist geometry. Its slide shows the dull patina of industrial casting, occasionally scuffed or salt-stained from careless storage. The polymer grip is usually sun-faded or discolored, sometimes wrapped in electrical tape or worn paracord for better purchase in sweaty hands.",
+  "visual_prompt": "gritty product photography, cheap semi-automatic .22 pistol, zinc-alloy slide with industrial patina, polymer frame, minimal design, worn and weathered, neo-noir lighting, dark studio background, shallow depth of field, harsh shadows, detailed macro, cyberpunk aesthetic, utilitarian and disposable, rain-slicked reflections, close-up tactical gear photography"
+}

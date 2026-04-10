@@ -134,7 +134,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Eastern European": {
@@ -142,7 +144,7 @@
         "Polish": 41.9
       },
       "Slavic South": {
-        "Serbian": 2.0,
+        "Serbian": 2,
         "Croatian": 4.3
       }
     },

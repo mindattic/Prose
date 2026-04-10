@@ -1,0 +1,48 @@
+{
+  "id": "ed924a7f10a1f6035446b762f8bccf14",
+  "name": "Meridian Munitions Street PDW MSP-7 'Alleycat'",
+  "type": "weapon",
+  "aliases": [
+    "Alleycat",
+    "MSP-7",
+    "Cat Gun"
+  ],
+  "category": "smg",
+  "description": "The MSP-7 Alleycat is Meridian Munitions' dedicated street-level PDW, designed for the reality of urban self-defense in Tier 2-3 zones. The weapon fires 5.7mm caseless from a 20-round magazine and features Meridian's open-architecture BCI module for operators who have basic neural interfaces. For those without BCI, the weapon includes conventional micro red-dot sights and a manual safety.\n\nThe Alleycat's distinguishing feature is its integrated smart-holster system. The weapon's grip contains a biometric lock that releases only for registered users, preventing the weapon from being used against its owner if seized. The holster communicates with the weapon's BCI module to track draw/reholster cycles, and Meridian's companion app provides usage analytics that many operators find useful for training.\n\nAt Φ1,800, the Alleycat sits comfortably in the affordable professional range. It is not cheap enough to be disposable or expensive enough to represent an investment. It is a working tool priced for working people — exactly the market Meridian has cultivated. The weapon is reliable without being remarkable, accurate without being precise, and effective without being devastating.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Biometric grip lock",
+    "Smart-holster integration",
+    "Dual BCI/manual operation"
+  ],
+  "specifications": "caliber: 5.7mm caseless\neffective_range: 100m\nrate_of_fire: 800 rpm (cyclic)\nmagazine_capacity: 20 rounds\nweight: 1.4 kg",
+  "tactical_use": "The Alleycat provides reliable personal defense for urban operators. Its biometric grip lock ensures the weapon cannot be turned against its owner, and the dual BCI/manual operation means it functions regardless of the operator's augmentation level. The 5.7mm round offers better penetration than 9mm against soft armor while remaining controllable in the lightweight platform. The smart-holster analytics help operators train their draw speed and weapon handling.",
+  "cultural_context": "The Alleycat is the PDW of GLMZ's urban middle class — security contractors, shop owners in rough neighborhoods, and anyone whose daily commute passes through contested zones. It is the weapon equivalent of a reliable car: not exciting, not prestigious, but always there when you need it. Meridian's marketing emphasizes the Alleycat's approachability, featuring ordinary people in ordinary situations rather than operators in tactical gear.",
+  "known_users": [
+    "Urban security contractors",
+    "Shop owners",
+    "Commuters in contested zones",
+    "Personal defense carriers"
+  ],
+  "story_hooks": [
+    "An Alleycat's biometric lock was hacked, and the weapon was used in a crime while still registered to its original owner. The forensic trail leads back to the victim, not the perpetrator.",
+    "Meridian's companion app usage data was subpoenaed by a corponation, revealing the locations and weapon-handling habits of thousands of Alleycat owners — a privacy nightmare."
+  ],
+  "ammunition_type": [
+    "5.7mm caseless standard",
+    "5.7mm caseless hollow-point"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "PDW",
+    "urban",
+    "biometric",
+    "Meridian",
+    "tier 2"
+  ],
+  "physical_description": "The MSP-7 Alleycat is a compact, utilitarian PDW with a polymer lower receiver in matte gunmetal gray, its surfaces marked by micro-scratches and scuff marks from street carry. The upper assembly is reinforced steel, visibly worn at the charging handle and ejection port. Its grip houses a faint blue LED indicator beneath the biometric scanner, and the integrated smart-holster system adds subtle weight to the weapon's profile, with thin data-ribbon connectors visible along the frame.",
+  "visual_prompt": "gritty street PDW submachine gun, matte gunmetal polymer and worn steel, compact urban tactical weapon, blue biometric LED, detailed product photography, rain-slicked surfaces, neo-noir cyberpunk aesthetic, industrial materials, dark moody background, worn edges, practical street-level tech"
+}

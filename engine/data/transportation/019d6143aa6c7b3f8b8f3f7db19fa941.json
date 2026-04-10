@@ -35,7 +35,13 @@
     "shelf",
     "narrows",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "ground",
+    "car",
+    "truck",
+    "cargo",
+    "civilian",
+    "electric"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -44,5 +50,7 @@
     "The Burden Clause",
     "The Narrows",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "A skeletal two-wheeled passenger cart welded from salvaged aluminum and rusted steel, its frame reinforced with duct tape and cable ties. The weathered passenger pod sits low between the wheels, its vinyl seat cracked and patched, with frayed safety straps hanging loose. The tow harness—either a mechanical coupling for burnt-out delivery drones or worn leather traces for human runners—trails forward into the perpetual rain-slicked streets.",
+  "visual_prompt": "gritty neo-noir two-wheeled rickshaw cart, salvaged aluminum frame, rusted steel reinforcements, cracked vinyl passenger pod, worn leather harness, detailed product photography, cyberpunk street transport, rain-slicked industrial aesthetic, duct tape repairs, dark moody background, high contrast lighting, worn materials, dystopian near-future"
 }

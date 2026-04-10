@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "Western border — splits time between the farmstead and the border communities he serves",
-  "description": "Nadira Balasanyan is the reason the food reaches the people who need it. While Madre plans the raids and Cutter runs point, Tomas handles everything that happens after the harvest arrives at the farmstead — storage, preservation, transport, distribution, and the delicate political work of ensuring that limited food reaches the most desperate communities without triggering conflict between them. He is part logistics officer, part farmer, part diplomat, and entirely exhausted.\n\nHe grew up in one of the border communities Red Lantern feeds — a settlement of two hundred people that existed in the gap between M88's governance and the Iowa wastes. He watched his community shrink every year as food became scarcer and the corps showed no interest in feeding people who couldn't pay. He joined Red Lantern not to fight Behemoths but to build a supply chain that could keep the communities alive. Madre saw his value immediately: Tomas turns calories into survival. Without him, the raids are just resource extraction. With him, they're a lifeline.\n\nTomas is medium build, weathered but not broken, with farmer's hands and a diplomat's voice. He dresses practically and keeps a small leather notebook in his chest pocket — handwritten records of every community's needs, resources, and political dynamics. His face is kind but tired, with lines that deepen when he's doing the math on how many people need feeding versus how much food they have. The math never works. He distributes anyway.",
+  "description": "Nadira Balasanyan is the reason the food reaches the people who need it. While Madre plans the raids and Cutter runs point, Tomas handles everything that happens after the harvest arrives at the farmstead — storage, preservation, transport, distribution, and the delicate political work of ensuring that limited food reaches the most desperate communities without triggering conflict between them. He is part logistics officer, part farmer, part diplomat, and entirely exhausted.\n\nHe grew up in one of the border communities Red Lantern feeds — a settlement of two hundred people that existed in the gap between GLMZ's governance and the Iowa wastes. He watched his community shrink every year as food became scarcer and the corps showed no interest in feeding people who couldn't pay. He joined Red Lantern not to fight Behemoths but to build a supply chain that could keep the communities alive. Madre saw his value immediately: Tomas turns calories into survival. Without him, the raids are just resource extraction. With him, they're a lifeline.\n\nTomas is medium build, weathered but not broken, with farmer's hands and a diplomat's voice. He dresses practically and keeps a small leather notebook in his chest pocket — handwritten records of every community's needs, resources, and political dynamics. His face is kind but tired, with lines that deepen when he's doing the math on how many people need feeding versus how much food they have. The math never works. He distributes anyway.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -251,7 +251,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

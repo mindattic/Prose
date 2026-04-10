@@ -1,0 +1,45 @@
+{
+  "id": "072c3a4511c039396355ba651c26342c",
+  "name": "Crucible Industries SmokePop SP-1 'Curtain Call'",
+  "type": "weapon",
+  "aliases": [
+    "Curtain Call",
+    "SP-1",
+    "Smoke Ball",
+    "Poof"
+  ],
+  "category": "self_defense",
+  "description": "A golf-ball-sized smoke capsule that detonates on sharp impact, releasing a dense cloud of opaque white smoke that fills approximately 25 cubic meters within two seconds. The SP-1 uses a binary chemical system — two chambers separated by a breakable membrane mix on impact, producing an exothermic reaction that generates a thick, non-toxic smoke with light-scattering particles that defeat standard and infrared optical systems. The cloud persists for twenty to forty seconds depending on air movement.\n\nCrucible Industries adapted the SP-1 from military smoke-screen technology for the civilian self-defense market. The capsule is inert until impact — it can be carried in a pocket, dropped, or jostled without risk of accidental detonation. The impact threshold is calibrated to approximately 3G of sudden deceleration, meaning a firm throw at the ground or against a wall is sufficient, but dropping from pocket height is not. Each capsule is single-use and sold in packs of three for Φ45.\n\nThe SP-1 has become one of the most popular escape tools in GLMZ, valued for its simplicity and reliability. There is no aiming requirement, no activation sequence, and no skill involved — throw it at the ground and run in the other direction. Crucible's marketing slogan — 'Exit Stage Left' — has become common slang for escaping a dangerous situation.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Binary chemical smoke generation",
+    "Impact-triggered membrane rupture",
+    "IR-scattering particle suspension"
+  ],
+  "specifications": "smoke volume: 25 cubic meters in 2 seconds\ncloud persistence: 20-40 seconds\nimpact threshold: 3G deceleration\ndiameter: 4.3 cm\nweight: 35 g per capsule\ncost: Φ45 per 3-pack\ntoxicity: non-toxic, mild respiratory irritation with prolonged exposure\noptical defeat: visible light and standard infrared",
+  "tactical_use": "Throw the capsule hard at the ground between yourself and the attacker. Do not throw it at the attacker — you want the smoke between you, not around them. Begin running before the capsule hits the ground; the smoke generates fast enough that you will be obscured by the time the attacker reacts. Move perpendicular to your last known direction of travel if possible. The twenty-second window is sufficient to reach cover or a populated area if you run immediately.",
+  "cultural_context": "The SP-1 has made 'smoke bombing' a verb in GLMZ. 'She smoke-bombed out of there' means someone escaped a bad situation cleanly. The capsules are carried by runners, couriers, and anyone whose survival strategy is speed rather than confrontation. Crucible Industries has leaned into the theatrical associations — their packaging features stage curtain imagery, and limited editions come in colored-smoke variants (red, blue, green) that are functionally identical but aesthetically dramatic.",
+  "known_users": [],
+  "story_hooks": [
+    "A coordinated robbery crew has been deploying dozens of SP-1 capsules simultaneously in commercial districts, creating city-block-sized smoke screens that disable security cameras while the crew operates inside the cloud.",
+    "Someone has modified SP-1 capsules to include a persistent marking dye that is invisible in the smoke but stains everything it touches — an anti-theft measure that Crucible denies manufacturing."
+  ],
+  "ammunition_type": [
+    "Binary chemical smoke capsule"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "smoke",
+    "escape",
+    "throwable",
+    "single_use",
+    "tier_1",
+    "affordable"
+  ],
+  "physical_description": "A scuffed, matte-white sphere roughly the size of a golf ball, its polymer casing bearing faint stress marks and manufacturing seams. The surface is etched with minimal branding—just 'SP-1' and a small Crucible Industries logo stamped in gray. Two thin pressure-release vents run along its equator, and the casing has a slightly tacky, friction-enhanced grip that prevents accidental rolling.",
+  "visual_prompt": "golf ball-sized white polymer sphere, industrial self-defense device, gritty product photography, matte finish with wear marks, minimal branding etched in gray, dark rain-slicked metal background, harsh neon rim lighting, macro detail shot, cyberpunk neo-noir aesthetic, dystopian military tech civilian adaptation, worn practical design"
+}

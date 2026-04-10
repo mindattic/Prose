@@ -1,3 +1,23 @@
+// Focus helper — used by SearchOverlay to focus the input after mount
+window.focusElement = function(el) { if (el) { el.focus(); } };
+
+// Shared Google Maps API loader — deduplicates script injection across meridianMap + geoMap
+window.__gmapsLoad = function(apiKey, cb) {
+    if (window.google && window.google.maps) { if (cb) cb(); return; }
+    window.__gmapsCbs = window.__gmapsCbs || [];
+    if (cb) window.__gmapsCbs.push(cb);
+    if (window.__gmapsLoading) return;
+    window.__gmapsLoading = true;
+    var s = document.createElement('script');
+    s.src = 'https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=__gmapsReady';
+    s.async = true; s.defer = true;
+    document.head.appendChild(s);
+};
+window.__gmapsReady = function() {
+    (window.__gmapsCbs || []).forEach(function(cb) { try { cb(); } catch(e) {} });
+    window.__gmapsCbs = [];
+};
+
 // Unified loader — used for both app startup and page navigation.
 // The overlay element must exist in the HTML with id="app-loader" and child id="loader-ms".
 (function() {

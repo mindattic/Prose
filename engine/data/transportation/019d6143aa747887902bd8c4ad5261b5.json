@@ -31,10 +31,15 @@
     "surveillance",
     "vehicle",
     "chase",
-    "tier 4"
+    "tier 4",
+    "cargo",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "Wauwatosa Nexus"
-  ]
+  ],
+  "physical_description": "A sleek four-door sedan in corporate gray, its surfaces etched with the micro-scratches of a thousand commutes and corporate parking lots. The chassis is composite polymer over reinforced steel, angular and efficient—no chrome, no flourish, just clean lines and tinted windows that obscure the occupant from the rain-slicked streets. A small Tessera logo glows faintly on the hood, and the interior visible through the glass is immaculate beige leather, utterly devoid of character.",
+  "visual_prompt": "sleek corporate sedan, matte gray composite polymer, tinted windows, neo-noir gritty aesthetic, detailed product photography, rain-slicked asphalt reflection, cyberpunk executive vehicle, sterile design, dark moody lighting, industrial decay background, worn parking garage, corporate surveillance tech, detailed materials, cinematic"
 }

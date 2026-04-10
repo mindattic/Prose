@@ -31,12 +31,20 @@
     "water",
     "lake",
     "tier 3",
-    "tier 4"
+    "tier 4",
+    "ground",
+    "boat",
+    "aircraft",
+    "electric",
+    "manual",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Sine"
-  ]
+  ],
+  "physical_description": "The Wave Runner is a sleek personal watercraft with a reinforced polymer hull in faded pearl-gray, its surface etched with salt corrosion and micro-abrasions from years of Great Lakes use. Twin jet intakes flank a narrow operator's seat, with a wraparound windscreen of scratched composite plastic and exposed aluminum tubing at the frame joints. Control systems are mounted on reinforced handlebars with worn grip tape, and the fuel access panel bears faded Sterling-Nakamura insignia half-obscured by weathering.",
+  "visual_prompt": "sleek personal watercraft, faded pearl-gray hull with salt corrosion and micro-scratches, twin jet intakes, reinforced polymer and aluminum frame, worn composite windscreen, gritty neo-noir aesthetic, detailed product photography, dark industrial background, moody lighting, weathered recreation tech, Great Lakes industrial decay"
 }

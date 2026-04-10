@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Lore Keeper",
-      "Institutional Memory",
-      "Guilt-Carrier",
-      "Community Anchor",
-      "Obsessive Archivist"
+      "lore keeper",
+      "institutional memory",
+      "guilt-carrier",
+      "community anchor",
+      "obsessive archivist"
     ]
   },
   "behavioral": {
@@ -283,7 +283,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

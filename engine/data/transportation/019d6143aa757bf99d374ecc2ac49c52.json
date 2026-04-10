@@ -31,11 +31,17 @@
     "control",
     "clothing",
     "tier 3",
-    "tier 4"
+    "tier 4",
+    "civilian",
+    "van",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "Aybek Alvarez-Okonkwo",
     "Tomáš Ekwuosi-Ranginui"
-  ]
+  ],
+  "physical_description": "Segmented rubber and steel conveyor belts embedded flush into reinforced concrete, each section roughly 1.5 meters wide and 20-30 meters long. The surface is mottled with grease stains, scuffed rubber, and patches of darker wear where millions of feet have worn grooves into the material. Rusted steel edge-guards frame each section, some bent or missing entirely, and hydraulic pistons beneath occasionally leak fluid onto the static sidewalk beside it.",
+  "visual_prompt": "worn conveyor belt walkway embedded in cracked concrete, neo-noir gritty aesthetic, grease stains and rust, dim industrial lighting, rain-wet surface reflecting neon, 1980s brutalist infrastructure, detailed product photography, dark moody background, cyberpunk urban decay, technical close-up of mechanical wear"
 }

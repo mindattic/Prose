@@ -27,7 +27,11 @@
     "underground",
     "transportation",
     "control",
-    "underworld"
+    "underworld",
+    "subterranean",
+    "rail",
+    "train",
+    "van"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -36,5 +40,7 @@
     "Patient Zero",
     "Slagworks Industrial",
     "The Collective"
-  ]
+  ],
+  "physical_description": "A weathered aluminum cylinder roughly two meters long and one meter in diameter, its original industrial beige paint flaking to reveal rust-orange beneath. The hatch is manual-crank, its grip worn smooth by countless hands; inside, a single bench seat of cracked leather faces a small porthole scratched from years of transit. Cryptic stenciled markings—faded serial numbers and ideograms no one can decipher—run the capsule's length, and the seams weep condensation that never quite dries.",
+  "visual_prompt": "weathered aluminum transit capsule, manual hatch, worn leather seat, industrial decay, rust streaks, faded stencil markings, neon reflected on wet metal, gritty product photography, dark rain-slicked background, neo-noir, dystopian infrastructure, detailed close-up, moody lighting, 35mm film grain"
 }

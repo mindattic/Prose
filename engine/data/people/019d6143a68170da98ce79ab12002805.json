@@ -102,7 +102,7 @@
       "death midwife",
       "community anchor",
       "grief worker",
-      "ELF devotee",
+      "elf devotee",
       "estranged parent"
     ]
   },
@@ -270,7 +270,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

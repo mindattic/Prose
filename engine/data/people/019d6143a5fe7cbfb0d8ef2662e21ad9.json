@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Orphan",
-      "Street Kid",
-      "ELF Devotee",
-      "Watcher",
-      "Emotionally Older Than She Looks"
+      "orphan",
+      "street kid",
+      "elf devotee",
+      "watcher",
+      "emotionally older than she looks"
     ]
   },
   "behavioral": {
@@ -204,7 +204,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "North African": {

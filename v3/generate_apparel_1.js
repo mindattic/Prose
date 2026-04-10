@@ -214,7 +214,7 @@ const BATCHES = [
   {
     label: 'Pants Batch 3 — Tier 2-3 Everyday Jeans/Pants',
     count: 10,
-    prompt: `Generate {count} PANTS/LEGWEAR items: Tier 2-3 everyday jeans and pants. Self-repairing jeans (basic nano-thread), regular denim, synth-cotton chinos, joggers, sweatpants, comfortable daily-wear pants. What most people in M88 wear every day. Normal clothes. Prices Φ15-Φ75.`
+    prompt: `Generate {count} PANTS/LEGWEAR items: Tier 2-3 everyday jeans and pants. Self-repairing jeans (basic nano-thread), regular denim, synth-cotton chinos, joggers, sweatpants, comfortable daily-wear pants. What most people in GLMZ wear every day. Normal clothes. Prices Φ15-Φ75.`
   },
   {
     label: 'Pants Batch 4 — Tier 2-3 Tactical/Cargo',

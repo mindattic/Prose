@@ -32,7 +32,10 @@
     "wealth",
     "tunnel",
     "vehicle",
-    "tier 5"
+    "tier 5",
+    "electric",
+    "manual",
+    "ground"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -42,5 +45,7 @@
     "Sherman Heights",
     "The Heritage Vault",
     "The Peninsula"
-  ]
+  ],
+  "physical_description": "The Heritage Roadster is a sleek, low-slung machine with a stretched hood and gracefully swept fenders, its lines evoking pre-collapse muscle car aesthetics. Hand-stitched leather seats in deep burgundy sit beneath a frameless windshield, while polished chrome trim catches the neon glow of the GLMZ streets. The body is immaculate—a sharp contrast to the worn infrastructure around it—finished in pearl white or matte charcoal, its electric drivetrain humming silently beneath.",
+  "visual_prompt": "Sterling-Nakamura Heritage Roadster, hand-built electric sports car, retro-futuristic design, pearl white paint, chrome details, leather interior visible through open door, neo-noir aesthetic, gritty rain-slicked street at night, neon reflections, detailed product photography, moody lighting, dark background, GLMZ cyberpunk setting, luxury vehicle, impractical beauty, 8k"
 }

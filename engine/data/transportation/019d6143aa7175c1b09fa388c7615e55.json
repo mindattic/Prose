@@ -34,11 +34,17 @@
     "stealth",
     "tier 2",
     "tier 3",
-    "tier 4"
+    "tier 4",
+    "ground",
+    "civilian",
+    "luxury",
+    "electric"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Arcturus PX-1 'Phantom'",
     "The Whispering Implant"
-  ]
+  ],
+  "physical_description": "The SN Phantom is a lean, angular frame wrapped in matte-black composite paneling that drinks light rather than reflects it. Its body hums with barely-contained electric potential, reinforced with scuffed carbon-weave fairings and grip-tape footboards worn smooth by heavy use. Rain beads and slides off its noise-dampening surfaces, leaving no trace.",
+  "visual_prompt": "sleek matte-black electric motorcycle, neo-noir gritty aesthetic, rain-slicked surface, carbon composite panels, minimal chrome accents, dark studio background, detailed product photography, worn grip tape, cyberpunk near-future design, moody dramatic lighting, industrial wear patterns, sharp angular lines, professional technical rendering"
 }

@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Union Leader",
-      "Community Anchor",
-      "Political Broker",
-      "Grandmother",
-      "Compromised Idealist"
+      "union leader",
+      "community anchor",
+      "political broker",
+      "grandmother",
+      "compromised idealist"
     ]
   },
   "behavioral": {
@@ -280,7 +280,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Indigenous American": {

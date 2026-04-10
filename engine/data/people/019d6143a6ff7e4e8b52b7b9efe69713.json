@@ -3,8 +3,7 @@
   "type": "character",
   "name": "Wren Möller-Montalvo",
   "aliases": [
-    "Tok",
-    "Pixel"
+    "Tok"
   ],
   "species": "human",
   "gender": "nonbinary",
@@ -96,7 +95,7 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Q-zero ghost",
+      "q-zero ghost",
       "scrapper",
       "data-thief",
       "community archivist (unofficial)",
@@ -276,7 +275,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

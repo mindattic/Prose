@@ -1,0 +1,81 @@
+{
+  "id": "ecbd9dc2a2711f92ff2ad8514dfc0a2c",
+  "type": "place",
+  "name": "the_eternal_cafeteria",
+  "aliases": [
+    "The Cafeteria That Feeds No One",
+    "Ghost Kitchen",
+    "Meridian Dining Hall B"
+  ],
+  "description": "On the second floor of a Ghost Building at 4200 Circuit Boulevard, there is a cafeteria that serves 200 meals a day to no one. It has been doing this for approximately seven years. The kitchen is professionally equipped — commercial ovens, a six-burner range, a walk-in refrigerator, a prep station with stainless steel counters, and a dishwasher that runs three cycles per day cleaning dishes that have not been used. The dining room seats 120 at thirty tables, each set with napkin dispensers, salt and pepper shakers, and laminated table-tent menus that list the day's offerings.\n\nThe food is real. A kitchen staff of four — two cooks, one prep worker, one dishwasher — arrives at 5:30 AM and prepares breakfast service (7:00-9:00 AM), lunch service (11:30 AM-1:30 PM), and an afternoon snack service (3:00-4:00 PM). The menu is varied and competent: scrambled eggs and toast for breakfast, rotating entrees for lunch (pasta, stir-fry, grilled proteins, vegetarian options), fresh fruit and baked goods for afternoon snack. The food is placed in serving stations with heat lamps or refrigeration as appropriate. At the end of each service window, unconsumed food — which is all of it — is disposed of according to food safety regulations. Daily food waste: approximately 80 kilograms.\n\nThe kitchen staff are professionals who take their work seriously. Head cook Ade Nakamura-Breki has worked the cafeteria for five years and maintains a recipe database of over 300 dishes that she rotates through a seasonal cycle. She adjusts portions to minimize waste, though minimizing waste in a cafeteria with zero diners means something different than it usually does. She has reduced daily waste from 120 kilograms to 80 through careful menu planning. She is proud of this achievement. When asked who she is cooking for, she says, \"The menu.\" She means this literally — her job, as she understands it, is to execute the menu, and the menu does not specify that anyone must eat the results.\n\nThe procurement system orders fresh ingredients three times weekly from standard food service distributors. The invoices are paid automatically. The budget — approximately Φ180,000 per month — is allocated from a departmental account that belongs to a corporate entity called Meridian Dining Services LLC, which has no parent company, no board of directors, and no purpose beyond operating this cafeteria. The entity was incorporated in 2218. Its incorporation documents list a registered agent who died in 2220. The agent's death did not affect the entity's operations because the entity's operations require no human oversight. The money flows. The food is made. Nobody eats it. The cycle continues.",
+  "atmosphere": {
+    "sights": [
+      "Steam tables loaded with fresh food at every meal service — entrees, sides, salads, desserts — untouched",
+      "A dining room with 120 seats, every table set with napkins and condiments, every chair empty",
+      "Kitchen staff working with professional focus — chopping, sauteing, plating — as if the dining room were full",
+      "A daily specials board updated each morning in colorful chalk marker, advertising meals to no one",
+      "The dishwasher cycling through clean dishes — cleaning what was never dirtied, a Sisyphean appliance"
+    ],
+    "sounds": [
+      "Kitchen sounds — the sizzle of a pan, the thunk of a knife on a cutting board, the hum of the commercial refrigerator",
+      "The dishwasher's rhythmic cycle — wash, rinse, sanitize — running on schedule for dishes that were never used",
+      "Muzak playing through the dining room's ceiling speakers at a volume calibrated for conversational background — background to no conversations",
+      "The snap of heat lamp bulbs clicking on as serving stations are activated for each meal period"
+    ],
+    "smells": [
+      "Cooking — real cooking, good cooking. Garlic, roasted vegetables, fresh bread, caramelized onions.",
+      "Industrial cleaning solution from the nightly sanitization of the kitchen and dining surfaces",
+      "The slightly stale warmth of food sitting under heat lamps for two hours before disposal",
+      "Coffee — a commercial drip brewer produces two pots per meal service, both discarded at the end"
+    ],
+    "feel": "Heartbreaking. The Eternal Cafeteria is the Ghost Building phenomenon distilled to its most human expression. Real people make real food with real skill, and the food goes into the trash because the system that pays for it doesn't know nobody's eating it and nobody who knows has the authority to make it stop. The dining room at lunch — tables set, music playing, food steaming under heat lamps, every chair empty — is the saddest room in GLMZ. It is a room designed for gathering in which no one gathers. It smells wonderful.",
+    "tags": []
+  },
+  "demographics": "Four kitchen staff (daily). One cleaning crew member (nightly). Zero diners.",
+  "economy": "Monthly operating budget of approximately Φ180,000, covering food procurement, staff salaries, equipment maintenance, and utilities. Annual cost: Φ2.16 million to feed nobody. The budget has never been audited because the entity that funds it has no oversight structure.",
+  "power_structure": "Head cook Ade Nakamura-Breki is the de facto manager of the cafeteria. She makes all menu decisions, staffing decisions, and procurement decisions within the automated budget. She reports to no one. Her performance reviews are generated automatically by the HR system based on attendance records.",
+  "dangers": [
+    "Daily disposal of 80 kg of fresh food in a city where Shelf residents experience food insecurity",
+    "The kitchen operates with no health inspections because the Ghost Building is not registered as a food service establishment",
+    "Staff psychological wellbeing — cooking for no one for years takes a toll that the automated HR system cannot detect"
+  ],
+  "opportunities": [
+    "Redirecting the cafeteria's food output to Shelf communities could feed dozens of families daily",
+    "The cafeteria's budget is a functional economic entity that could be repurposed if anyone could claim authority over it",
+    "Ade Nakamura-Breki's 300-dish recipe database, developed in isolation, may contain genuinely innovative cuisine"
+  ],
+  "story_hooks": [
+    "Ade's cooking is excellent and nobody has ever tasted it — what happens when someone walks in and sits down?",
+    "80 kg of food wasted daily while the Shelf goes hungry is the moral calculus of the Ghost Building economy",
+    "The registered agent who incorporated Meridian Dining Services LLC died five years ago — who created this entity and why?"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "4200 Circuit Boulevard, Circuit District",
+      "Adjacent Ghost Buildings in the Circuit corridor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Kitchen staff (four, daily, 5:30 AM to 4:30 PM)",
+    "Food service delivery drivers (three times weekly)",
+    "The cleaning crew member assigned to the second floor (nightly)",
+    "Nobody else — though the cafeteria is unlocked and technically accessible to anyone in the building"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.88,
+    "lng": -87.64,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "ghost_building",
+    "mundane",
+    "new_weird",
+    "labor",
+    "circuit_district",
+    "meridian_88"
+  ]
+}

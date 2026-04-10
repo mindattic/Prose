@@ -98,10 +98,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Cultivator",
-      "Station Anchor",
-      "Quiet Authority",
-      "Keeper of Dangerous Knowledge"
+      "cultivator",
+      "station anchor",
+      "quiet authority",
+      "keeper of dangerous knowledge"
     ]
   },
   "behavioral": {
@@ -282,7 +282,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

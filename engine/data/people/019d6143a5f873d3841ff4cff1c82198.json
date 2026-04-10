@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Resource Vendor",
-      "Ethics-Driven Criminal",
-      "Information Source",
-      "Migrant Advocate",
-      "Brilliant Mess"
+      "resource vendor",
+      "ethics-driven criminal",
+      "information source",
+      "migrant advocate",
+      "brilliant mess"
     ]
   },
   "behavioral": {
@@ -238,7 +238,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

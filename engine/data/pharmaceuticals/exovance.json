@@ -1,0 +1,38 @@
+{
+  "name": "Exovance",
+  "type": "pharmaceutical",
+  "aliases": [
+    "The Override",
+    "Peacecall"
+  ],
+  "category": "augment_interactive",
+  "subcategory": "augment_sensitivity_modulator",
+  "manufacturer": "Street lab (Shelf origin, GLMZ North Corridor)",
+  "description": "The pharmacological inverse of sensitivity dampeners — Exovance is a compound that dramatically amplifies augment haptic and sensory feedback, pushing chrome sensitivity far beyond factory calibration. Users describe their augments becoming overwhelming presences — a chrome hand can feel individual fibers in fabric, pressure-sensitive augments register air currents, optical augments resolve detail at ranges they weren't designed for. The amplification is indiscriminate and cannot be focused; everything comes in louder.",
+  "method_of_use": "sublingual",
+  "effects": [
+    "Augment haptic sensitivity increased 300-500% above baseline",
+    "Optical augments resolve detail beyond rated range",
+    "Auditory augments achieve near-sonar sensitivity to vibration",
+    "Chrome limbs can detect micro-tremors and surface texture at granular resolution",
+    "Subjective experience of augments as fully integrated body parts rather than tools"
+  ],
+  "side_effects": [
+    "Sensory overload in high-stimulus environments (crowds, combat, machinery)",
+    "Optical augments become painful in bright light",
+    "Auditory augments can be disabled by loud sounds",
+    "Psychological: users sometimes cannot tolerate returning to baseline sensitivity",
+    "Reported cases of users destroying their own augment calibration hardware to stay at amplified sensitivity permanently"
+  ],
+  "duration": "2-4 hours",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ 120-200",
+  "cultural_context": "Exovance has a cult following among people who describe heavy augmentation as alienating — the chrome doesn't feel like theirs, it feels bolted on. Exovance, for a few hours, makes the machine feel alive. There's a small but visible subculture on the Shelf who use it not for function but for experience, running their hands over textured surfaces or listening to music through amplified audio augments. The darker use is in interrogation — forcing someone to take Exovance and then applying controlled sensory input through their chrome is reportedly agonizing.",
+  "story_hooks": [
+    "A Helix researcher who lost both arms in a lab accident and received chrome replacements has become addicted to Exovance because it's the only time she feels human — she's been secretly synthesizing her own supply and the formula is dangerously impure.",
+    "A torture facilitator working for a Tier 4 corporate security division has been using Exovance on subjects with augments, and the method has left a forensic chemical signature that a detective has now traced to a specific Shelf lab.",
+    "An operator discovers that at peak Exovance effect, her tactile augments can detect the micro-vibrations of hidden electronics through walls — making her an accidental counter-surveillance specialist, and now someone wants to use her as a tool."
+  ]
+}

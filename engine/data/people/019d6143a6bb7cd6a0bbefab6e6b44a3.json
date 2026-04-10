@@ -97,7 +97,7 @@
     "Ruth's health deteriorates — the biosystem warnings are getting more frequent and the anger is extracting its biological price"
   ],
   "narrative_function": "Ruth drives the stories about the cost of doing the right thing. Last Light's operations don't end in heist scores or data extraction — they end in small victories that prevent larger tragedies, paid for with exhaustion, poverty, and the slow erosion of hope. Ruth is the moral center of the Shelf runner ecosystem and the character who asks: what does it cost to be good in a world that doesn't pay for it?",
-  "augmentations": "Legal database cortex — complete M88 jurisdictional code, precedent, and regulatory framework stored in long-term memory. Outdated now, but the institutional knowledge remains valuable. Voice amplification implant for addressing crowds and confronting security forces — her voice carries. Stress-monitoring biosystem that alerts her when her blood pressure enters dangerous territory. No combat augmentations.",
+  "augmentations": "Legal database cortex — complete GLMZ jurisdictional code, precedent, and regulatory framework stored in long-term memory. Outdated now, but the institutional knowledge remains valuable. Voice amplification implant for addressing crowds and confronting security forces — her voice carries. Stress-monitoring biosystem that alerts her when her blood pressure enters dangerous territory. No combat augmentations.",
   "daily_life": "Wakes at 0530. Checks overnight messages from community contacts for protection requests, eviction notices, or security force movements on the Shelf. Prioritizes cases with her crew. Spends the day on active protection work — legal intervention when possible, physical presence when necessary. Evenings she holds open hours at the community center for anyone who needs help navigating the system. Cooks for the crew because nobody else will. Sleeps five hours and considers it a luxury.",
   "affiliation": "Last Light",
   "uses_facets": false,
@@ -240,7 +240,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

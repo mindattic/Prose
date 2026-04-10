@@ -98,10 +98,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Wayfinder",
-      "Undertow-born",
-      "Trusted Neutral",
-      "Listener"
+      "wayfinder",
+      "undertow-born",
+      "trusted neutral",
+      "listener"
     ]
   },
   "behavioral": {
@@ -273,7 +273,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

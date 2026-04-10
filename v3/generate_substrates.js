@@ -164,7 +164,7 @@ const CATEGORIES = [
   {
     category: 'metal',
     count: 5,
-    prompt: `Generate {count} energy materials for GLMZ. Materials specifically designed for power storage, generation, and transmission. Include: room-temperature superconductor cables, ultra-dense battery substrate materials (100x the energy density of 2024 lithium), thermoelectric conversion materials (turn any heat differential into power), wireless power transmission materials, and quantum-dot power storage matrices. These materials underpin M88's power infrastructure.`
+    prompt: `Generate {count} energy materials for GLMZ. Materials specifically designed for power storage, generation, and transmission. Include: room-temperature superconductor cables, ultra-dense battery substrate materials (100x the energy density of 2024 lithium), thermoelectric conversion materials (turn any heat differential into power), wireless power transmission materials, and quantum-dot power storage matrices. These materials underpin GLMZ's power infrastructure.`
   },
 ];
 

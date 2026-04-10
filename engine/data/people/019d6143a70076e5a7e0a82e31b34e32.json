@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Veteran",
-      "Pragmatic-Moral",
-      "Load-Bearing",
-      "Quietly Guilty",
-      "Respected"
+      "veteran",
+      "pragmatic-moral",
+      "load-bearing",
+      "quietly guilty",
+      "respected"
     ]
   },
   "behavioral": {
@@ -292,7 +292,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

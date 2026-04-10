@@ -1,0 +1,38 @@
+{
+  "name": "Rejexin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "hard-stop",
+    "Reji",
+    "the wall"
+  ],
+  "category": "medical",
+  "subcategory": "augment rejection suppressor — acute intervention",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "An emergency-grade immunosuppressant administered when standard rejection suppressors have failed or been missed too long. Rejexin floods the system with targeted cytokine blockers and corticosteroid analogues to halt an active rejection cascade. It is not a daily medication — it is a crisis drug, used when a person's body is actively trying to push out their implants.",
+  "method_of_use": "injection",
+  "effects": [
+    "halts acute rejection cascade within 20–40 minutes",
+    "dramatically reduces implant site swelling",
+    "buys 72-hour window to stabilize on a maintenance suppressor",
+    "suppresses fever associated with chrome rejection"
+  ],
+  "side_effects": [
+    "extreme fatigue post-dose",
+    "immune system nearly offline for 48–72 hours",
+    "risk of secondary infection is severe",
+    "blood pressure crash in 8% of users",
+    "vomiting during administration is common"
+  ],
+  "duration": "72-hour immune suppression window",
+  "addiction_risk": "none",
+  "tier_availability": "All tiers",
+  "legality": "prescription",
+  "street_price": "Φ180–Φ400 per dose",
+  "cultural_context": "On the Shelf, Rejexin is what you get someone when they've been skipping Tol because they couldn't afford it. Street medics carry it alongside trauma supplies. Lazarus marks it up aggressively; a gray-market version called 'hard-stop' circulates in Tier 1, diluted to 70% potency, which is enough to slow a cascade but not always stop it. The phrase 'needs a Reji' has become slang for anyone in a crisis of their own making.",
+  "story_hooks": [
+    "A street medic is running low on Rejexin during a district blackout, and three patients in different stages of rejection are waiting — she has to decide who gets the last full dose.",
+    "Lazarus has patented the most effective Rejexin formulation and is using that monopoly to pressure a Tier 2 clinic into providing patient data as payment in kind.",
+    "Someone is deliberately withholding Rejexin from a political prisoner whose augments are rejecting — slow, deniable, and leaving no obvious marks."
+  ]
+}

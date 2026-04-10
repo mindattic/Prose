@@ -33,7 +33,15 @@
     "tunnel",
     "chase",
     "stealth",
-    "water"
+    "water",
+    "subterranean",
+    "rail",
+    "train",
+    "truck",
+    "van",
+    "boat",
+    "cargo",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -41,5 +49,7 @@
     "Freestone",
     "Hookworm",
     "The Third Rail"
-  ]
+  ],
+  "physical_description": "A massive, undulating mat of bioluminescent fungal tissue, roughly 12 feet across, its surface rippling with soft violet and sickly green phosphorescence that pulses with an organic rhythm. The fungal material is spongy yet firm, its texture resembling calcified coral or diseased leather, with natural depressions worn smooth by years of riders and cargo. Where frequent weight settles, the growth has hardened into crude furniture—raised edges become handholds, dense knots form seat-like protrusions—and the whole thing trails thin rhizoid tendrils into the water that contract and release with an unsettling, almost respiratory motion.",
+  "visual_prompt": "bioluminescent fungal raft, glowing violet and sickly green, organic living surface, pulsing with slow rhythm, neo-noir gritty, detailed product photography, wet underground cavern setting, phosphorescent fungi texture, worn handholds and seat formations, trailing tendrils in dark water, cyberpunk biology, dark moody lighting, industrial decay aesthetic, macro detail on fungal tissue"
 }

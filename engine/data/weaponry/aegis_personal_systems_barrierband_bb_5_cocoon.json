@@ -1,0 +1,43 @@
+{
+  "id": "8573fb47e32b49146ff32faa45b286b8",
+  "name": "Aegis Personal Systems BarrierBand BB-5 'Cocoon'",
+  "type": "weapon",
+  "aliases": [
+    "Cocoon",
+    "BB-5",
+    "Body Shield",
+    "The Bubble"
+  ],
+  "category": "self_defense",
+  "description": "A belt-worn personal electromagnetic barrier that generates a brief repulsive field on activation, physically pushing back anyone within a one-meter radius with approximately 200 newtons of force — equivalent to a hard shove from a large adult. The BB-5 does not create a persistent shield; instead, it fires a single omnidirectional electromagnetic pulse that interacts with the iron content in blood and the metallic components of clothing, cyberware, and weapons to create a momentary repulsive wave.\n\nAegis developed the BB-5 from military crowd-control technology, scaling it down to a consumer wearable that clips onto a standard belt or waistband. The device is roughly the size of a smartphone and weighs 240 grams, most of which is the high-density capacitor that stores the charge for the repulsive pulse. A full charge provides three activations, with a fifteen-second recharge delay between pulses. The activation button is positioned for thumb access on the wearer's hip.\n\nThe BB-5 is Aegis's flagship consumer product and represents the most affordable personal barrier technology available. At Φ850, it is beyond Tier 1 budgets but accessible to Tier 2-3 residents who prioritize personal safety investments. The device has limitations — the repulsive force decreases with distance, is less effective against individuals with minimal metallic content (unaugmented, no metal jewelry or closures), and the three-pulse capacity means it is a short-duration deterrent rather than sustained protection.",
+  "manufacturer": "AEGIS PERSONAL SYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Electromagnetic repulsion field generation",
+    "High-density capacitor miniaturization",
+    "Metallic-content interaction physics"
+  ],
+  "specifications": "repulsive force: ~200 N at 0.5 meters\neffective radius: 1 meter\npulses per charge: 3\nrecharge delay between pulses: 15 seconds\nfull recharge time: 2 hours\nweight: 240 g\ndimensions: 14 cm x 7 cm x 2 cm\nmounting: belt clip or waistband\ncost: Φ850",
+  "tactical_use": "Activate when an attacker closes to within one meter. The repulsive pulse will push them back approximately one to two meters depending on their mass and metallic content. Use the created distance to flee or deploy secondary deterrents. The fifteen-second recharge between pulses means the BB-5 is best used as an opening move rather than sustained defense. Against multiple attackers, the omnidirectional pulse affects all individuals within range simultaneously, including the user's companions — warn allies before activation.",
+  "cultural_context": "The BB-5 represents the democratization of barrier technology that was previously available only to corporate executives and VIPs. Aegis markets it as 'the first push back' — a philosophical statement about personal space in a city that constantly violates it. The device has become a symbol of middle-tier aspiration: affording a BB-5 means you've reached a level of economic security where you can invest in not being touched against your will.",
+  "known_users": [],
+  "story_hooks": [
+    "A BB-5 activation in a crowded transit car sent twelve people stumbling and caused a chain-reaction injury pile-up — the user claims they were being pickpocketed, but the victims are filing suit for the collateral damage.",
+    "Aegis is quietly recalling a production batch after discovering the electromagnetic pulse interferes with certain models of cardiac pacemaker at close range — the recall notice was sent privately rather than publicly to avoid brand damage."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "barrier",
+    "electromagnetic",
+    "wearable",
+    "belt",
+    "tier_2",
+    "push_field"
+  ],
+  "physical_description": "The BB-5 'Cocoon' is a matte-black rectangular unit roughly the size of a deck of cards, with scuffed titanium-alloy edges and a worn polymer grip surface. Its face displays a single pressure-sensitive activation pad surrounded by faded warning labels, while the rear clips mount to a belt via reinforced anchor points. Fine stress fractures web across its casing from repeated use, and the seams show traces of corrosion around the electromagnetic coil vents.",
+  "visual_prompt": "matte black personal defense device, worn titanium edges, pressure activation pad, belt-mounted wearable, gritty product photography, cyberpunk noir aesthetic, detailed close-up, rain-slicked industrial lighting, stressed polymer casing, electromagnetic coil vents visible, dark studio background, worn tech"
+}

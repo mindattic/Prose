@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Maker",
-      "Craft Identity",
-      "Inherited Responsibility",
-      "Geartown Local",
-      "Technical Expert"
+      "maker",
+      "craft identity",
+      "inherited responsibility",
+      "geartown local",
+      "technical expert"
     ]
   },
   "behavioral": {
@@ -241,7 +241,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Central Asian": {

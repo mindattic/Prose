@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Healer",
-      "Community Anchor",
-      "Information Broker (passive)",
-      "Morally Grounded",
-      "Quietly Dangerous"
+      "healer",
+      "community anchor",
+      "information broker (passive)",
+      "morally grounded",
+      "quietly dangerous"
     ]
   },
   "behavioral": {
@@ -227,7 +227,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Pacific Islander": {

@@ -1,0 +1,46 @@
+{
+  "id": "fb22e2591f349f3e7be26583eac18cde",
+  "name": "Crucible Industries Sentinel CR-40 'Tombstone'",
+  "type": "weapon",
+  "aliases": [
+    "Tombstone",
+    "CR-40",
+    "Grave Marker",
+    "The Headstone"
+  ],
+  "category": "sniper",
+  "description": "A heavy conventional sniper rifle chambered in a proprietary 12.7mm round that Crucible designed specifically for maximum terminal effect against cyber-augmented targets. The round carries a micro-EMP charge that detonates on penetration, frying cyberware in a localized radius around the wound channel.\n\nThe Tombstone was born from battlefield intelligence suggesting that heavily augmented combatants could survive wounds that would kill an unaugmented human. Crucible's solution was elegant — don't just wound them, kill their augmentations simultaneously. A cyber-limb that goes dead becomes dead weight. A reflex booster that shorts out leaves its user slower than baseline. Ocular implants that fry blind their owner.\n\nThe CR-40 is a brutalist weapon — heavy, loud, and unsubtle. It makes no concessions to stealth or portability. It exists for one purpose: to put augmented targets in the ground and make sure their chrome dies with them.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — military and authorized corporate security",
+  "base_technologies": [
+    "Anti-cyberware EMP payload delivery",
+    "Heavy-caliber precision engineering",
+    "Localized electromagnetic disruption"
+  ],
+  "specifications": "caliber: 12.7mm EMP-core\neffective_range: 200-2,000 meters\nrate_of_fire: Bolt-action, 1 round per 4 seconds\ncapacity: 5-round detachable magazine\nweight: 14.2 kg\npower_source: EMP charge is self-contained in each round",
+  "tactical_use": "The Tombstone is deployed against heavily augmented targets where conventional precision weapons might not achieve a clean kill. The micro-EMP detonation ensures that even a non-fatal hit will disable critical cyberware, leaving the target vulnerable to follow-up engagement. Corporate security teams facing augmented breach teams have adopted the CR-40 as their primary anti-personnel tool, often positioning a Tombstone operator to engage the most heavily modified threat first.",
+  "cultural_context": "Among the augmented communities of GLMZ, the Tombstone is spoken of with particular dread. A round that kills your chrome is more than a weapon — it is an existential threat to people whose identity is bound up in their modifications. Anti-augmentation extremists have adopted the Tombstone as a symbol, and graffiti of the CR-40's distinctive bull-pup silhouette has appeared in augmented-friendly districts as a threat.",
+  "known_users": [
+    "Crucible Industries anti-augmentation warfare division",
+    "Corporate breach response teams"
+  ],
+  "story_hooks": [
+    "A Tombstone round hit an augmented civilian in a crowded market — the micro-EMP disabled cyberware in everyone within a 5-meter radius. The weapon's designers swore the EMP effect was localized. Something has changed.",
+    "An underground augmentation clinic has begun installing EMP-hardened implants specifically to counter the Tombstone threat. Crucible wants to know how they obtained the weapon's EMP frequency specifications."
+  ],
+  "ammunition_type": [
+    "12.7mm EMP-core"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "anti-cyberware",
+    "EMP",
+    "heavy",
+    "tier 4",
+    "augmentation"
+  ],
+  "physical_description": "The Tombstone is a brutalist instrument of steel and worn composite, its barrel thick and purposeful, finished in matte gunmetal with faint corrosion blooming at stress points. The stock bears scuffed polymer panels and crude grip tape, while the action sits exposed and utilitarian—no chrome, no elegance, just brutal function. Faint scorch marks ring the chamber from repeated micro-EMP detonations, and the magazine well shows the scratches of countless reloads in fieldwork.",
+  "visual_prompt": "Crucible Industries Tombstone CR-40 sniper rifle, heavy 12.7mm, worn matte gunmetal steel, composite stock with grip tape, exposed mechanical action, product photography, gritty neo-noir, industrial decay, dark concrete background, moody studio lighting, detailed weathering, tactical rail system, professional weapon photography, cyberpunk noir aesthetic"
+}

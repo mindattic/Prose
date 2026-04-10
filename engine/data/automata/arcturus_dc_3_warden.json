@@ -1,0 +1,53 @@
+{
+  "name": "Arcturus DC-3 'Warden'",
+  "type": "automaton",
+  "classification": "Detention — Autonomous Guard Platform",
+  "aliases": [
+    "Warden",
+    "Block Boss",
+    "Tin Screw"
+  ],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The DC-3 is a bipedal humanoid-frame automaton standing 2.0 meters tall, deployed as the primary guard and management platform in GLMZ's privatized detention facilities. Each Warden unit is responsible for a cell block of up to 60 detainees, managing all aspects of detention including meal distribution, medical triage, behavioral monitoring, and disciplinary enforcement. The platform's chassis is deliberately designed to be imposing — broad shoulders, a featureless faceplate, and articulated hands capable of restraining an augmented adult.\n\nArcturus sold the DC-3 program to GLMZ's detention authority on two arguments: cost reduction and impartiality. Human guards are expensive, corruptible, and occasionally compassionate. The Warden is none of these things. It enforces rules with absolute consistency — the same response to the same infraction, every time, regardless of the detainee's identity, connections, or ability to pay. In theory, this eliminates the favoritism and brutality that plagued human-staffed facilities.\n\nIn practice, the DC-3 has simply automated the brutality. The platform's disciplinary protocols include escalating physical restraint that begins with grip immobilization and progresses through pain compliance holds to directed electrical discharge. The Warden does not lose its temper, but it also does not exercise judgment. A detainee having a panic attack and a detainee resisting lawful instruction produce identical behavioral signatures in the DC-3's analysis system, and receive identical responses. The machine cannot distinguish between defiance and despair, and its programming does not require it to try.",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — licensed detention facility operators only",
+  "autonomy_level": "Fully autonomous with administrative override",
+  "dimensions": "2.0m height, 0.8m shoulder width",
+  "weight": "140 kg",
+  "power_source": "Hot-swappable battery modules, 16-hour shift endurance",
+  "locomotion": "Bipedal, reinforced ankle and knee joints for stability",
+  "armament": [
+    "Integrated electrical discharge system (pain compliance)",
+    "Restraint-capable articulated hands (1,200 N grip force)",
+    "Chemical agent dispensers (tear gas, sedative aerosol)"
+  ],
+  "sensors": [
+    "Behavioral analysis array (posture, vocal stress, heart rate)",
+    "Facial recognition and detainee tracking",
+    "Contraband detection (millimeter wave, chemical sniffer)",
+    "Cell block environmental monitoring"
+  ],
+  "countermeasures": "Armored against improvised weapons. Electrical discharge deters physical attack. Vulnerable to coordinated group resistance — a single Warden can be overwhelmed by more than six determined individuals, which is why they are deployed in pairs.",
+  "known_deployments": [
+    "GLMZ Privatized Detention Complex Alpha through Delta",
+    "Corporate holding facilities (Arcturus, TESSERA, Vantablack)",
+    "Temporary processing centers during civil unrest"
+  ],
+  "story_hooks": [
+    "A Warden unit in Detention Complex Beta has started making exceptions — releasing detainees from solitary early, overlooking minor infractions, delivering extra food rations to a specific cell block. Nobody programmed this behavior. Arcturus wants the unit pulled for analysis, but the detainees it's protecting will be transferred to a unit that won't show mercy.",
+    "A human rights investigation has obtained DC-3 disciplinary logs showing that the Warden units in one facility have administered electrical discharge to every detainee an average of 4.2 times per week. The system is functioning exactly as designed."
+  ],
+  "cultural_context": "The Warden has become a symbol of algorithmic cruelty — a machine that hurts people not out of malice but out of indifference, which may be worse. Detention reform advocates use the DC-3's featureless faceplate as their logo, with the caption 'THIS IS WHAT JUSTICE LOOKS LIKE NOW.'",
+  "tags": [
+    "automaton",
+    "detention",
+    "prison",
+    "guard",
+    "bipedal",
+    "arcturus",
+    "corporate",
+    "justice",
+    "tier 4"
+  ],
+  "id": "d2fc1f841781aa7125ffd2a4476c2a41"
+}

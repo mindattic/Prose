@@ -1,0 +1,80 @@
+{
+  "id": "133861fc02b0875786942f1f0bfe06d8",
+  "type": "faction",
+  "name": "The Suture Collective",
+  "aliases": [
+    "Suture",
+    "The Stitchers",
+    "Needle & Thread",
+    "SC"
+  ],
+  "motto": "We mend what the market breaks.",
+  "description": "The Suture Collective is the largest unauthorized medical network operating below Tier 3 in GLMZ, providing everything from emergency trauma surgery to chronic disease management for the estimated 1.4 million residents who cannot afford Lazarus Pharmaceuticals' tiered healthcare plans. The Collective operates out of rotating clinic sites -- repurposed shipping containers, abandoned retail spaces, the backrooms of sympathetic businesses -- never staying in one location for more than seventy-two hours before Lazarus enforcement teams can triangulate their signal.\n\nThe organization was founded in 2178 by Dr. Keanu Mataafa-Chen, a former Lazarus trauma surgeon who walked out of a Tier 4 emergency ward after being ordered to prioritize a corporate executive's cosmetic revision over a Shelf child bleeding out from an industrial accident. Mataafa-Chen recruited eleven other disillusioned medical professionals and began performing surgeries in a converted laundry facility in the Shelf's Rustwater district. Within five years, the Collective had grown to over three hundred active practitioners -- licensed doctors, combat medics, veterinarians repurposing animal medicine for human patients, and self-taught field surgeons whose technique would horrify any medical board but whose survival rates in the Shelf exceed those of some legitimate Tier 2 clinics.\n\nThe Collective's greatest vulnerability is its supply chain. Legitimate medical supplies are tracked, serialized, and monitored by Lazarus's distribution network. The Collective relies on a patchwork of stolen shipments, expired medications reclaimed from disposal facilities, improvised surgical tools fabricated by sympathetic makers, and a controversial arrangement with Crucible Industries to purchase surplus military medical supplies at gray-market rates. Every procedure carries risk that a licensed facility would never accept -- but the alternative for their patients is no procedure at all, and the Collective's practitioners have learned to work miracles with what amounts to medical archaeology.",
+  "ideology": "Healthcare is a right that precedes commerce. The commodification of medicine is not an economic model but a moral architecture designed to make death profitable. The Suture Collective does not seek to reform the system -- it seeks to make the system irrelevant by proving that competent medical care can exist outside corporate control.",
+  "territory": "Mobile clinics throughout the Shelf and lower Circuit. Primary staging areas in Rustwater, the Kennels, and the flooded sublevel districts collectively known as the Undertow. Occasional covert operations in Tier 2 zones where insurance gaps leave residents without coverage.",
+  "leadership": "Dr. Keanu Mataafa-Chen remains the Collective's spiritual leader but day-to-day operations are managed by a rotating council of senior practitioners called the Triage Board. No single person knows all clinic locations or the full membership roster -- compartmentalization is survival.",
+  "methods": [
+    "Rotating mobile clinic sites that relocate every 48-72 hours",
+    "Dead-drop supply caches hidden throughout the Shelf infrastructure",
+    "Encrypted patient records stored on distributed mesh networks",
+    "Training programs that turn anyone willing to learn into competent field medics",
+    "Mutual aid networks that trade medical services for food, shelter, and protection"
+  ],
+  "resources": [
+    "Over 300 active medical practitioners across all specialties",
+    "Gray-market supply chain including diverted Lazarus shipments",
+    "Surplus military medical supplies acquired through Crucible intermediaries",
+    "Network of sympathetic businesses providing temporary clinic space",
+    "Distributed encrypted patient database covering over 400,000 individuals"
+  ],
+  "goals": [
+    "Provide comprehensive medical care to every resident below Tier 3 regardless of ability to pay",
+    "Train enough field medics to make the Collective's leadership dispensable",
+    "Establish permanent underground clinic facilities with surgical-grade equipment",
+    "Develop open-source pharmaceutical manufacturing capability"
+  ],
+  "relationships": [
+    {
+      "name": "Lazarus Pharmaceuticals",
+      "type": "enemy",
+      "description": "Lazarus views the Collective as intellectual property thieves and unlicensed competitors. Their enforcement teams actively hunt Collective clinics. Individual Lazarus employees occasionally leak supplies or information to the Collective out of conscience.",
+      "tags": [
+        "corporate",
+        "conflict"
+      ]
+    },
+    {
+      "name": "Crucible Industries",
+      "type": "supplier",
+      "description": "Crucible sells surplus military medical supplies to Collective intermediaries at gray-market rates. The arrangement is profitable for Crucible and deniable enough to maintain.",
+      "tags": [
+        "corporate",
+        "trade"
+      ]
+    },
+    {
+      "name": "The Shelf community networks",
+      "type": "ally",
+      "description": "The Collective is deeply embedded in Shelf communities, who provide early warning of raids, shelter for practitioners, and the social infrastructure that makes the clinics possible.",
+      "tags": [
+        "community",
+        "mutual-aid"
+      ]
+    }
+  ],
+  "narrative_function": "The Suture Collective embodies the tension between institutional competence and moral urgency. They are not rebels playing doctor -- they are real doctors who chose to practice outside a system that prices human life by tier. Their existence asks whether medicine practiced imperfectly for everyone is better than medicine practiced perfectly for the few.",
+  "story_hooks": [
+    "A Collective surgeon discovers that a batch of gray-market anesthetics has been tampered with -- patients are waking up during surgery with implanted memories they did not have before. Someone is using the Collective's supply chain to distribute neural payloads.",
+    "Lazarus has planted an undercover operative inside the Collective who has been feeding clinic locations to enforcement teams. The mole is also one of the Collective's most skilled surgeons, and exposing them means losing the person who saves the most lives.",
+    "A Tier 4 executive's child needs a rare procedure that only a Collective specialist can perform. The executive offers the Collective enough funding to operate openly for a year -- but accepting means exposing the network to corporate scrutiny."
+  ],
+  "tags": [
+    "faction",
+    "medical",
+    "underground",
+    "mutual-aid",
+    "shelf",
+    "circuit",
+    "healthcare"
+  ]
+}

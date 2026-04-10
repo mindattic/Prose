@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Technical Expert",
-      "Salvage Specialist",
-      "Hidden Past",
-      "Geartown Fixture",
-      "Reluctant Mentor"
+      "technical expert",
+      "salvage specialist",
+      "hidden past",
+      "geartown fixture",
+      "reluctant mentor"
     ]
   },
   "behavioral": {
@@ -214,7 +214,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "North African": {

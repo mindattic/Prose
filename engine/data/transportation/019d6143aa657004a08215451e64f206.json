@@ -29,11 +29,18 @@
     "ai",
     "control",
     "underworld",
-    "vehicle"
+    "vehicle",
+    "cargo",
+    "civilian",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "The Shaft"
-  ]
+  ],
+  "physical_description": "A massive steel platform roughly 20×30 feet, supported by thick hydraulic columns and anchored to weathered concrete. Rust blooms through chipped industrial-gray paint, and safety rails—dented from decades of cargo impacts—run along three sides, their yellow warning stripes faded to sickly mustard. Hydraulic hoses thick as fire hoses snake across the platform's underside, weeping fluid onto the corroded deck below.",
+  "visual_prompt": "industrial freight elevator platform, massive steel slab, hydraulic columns, worn gray paint with rust blooms, dented safety railings, yellow warning stripes, neon-lit tower backdrop, rain-slicked surfaces, gritty neo-noir, detailed product photography, dark atmospheric lighting, cyberpunk industrial decay, chrome and corrosion, overhead shot"
 }

@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "E.L.F. Attuned",
-      "Community Anchor",
-      "Diviner",
-      "Long Memory",
-      "Electrical Listener"
+      "e.l.f. attuned",
+      "community anchor",
+      "diviner",
+      "long memory",
+      "electrical listener"
     ]
   },
   "behavioral": {
@@ -275,7 +275,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

@@ -1,0 +1,28 @@
+{
+  "id": "94d34160450a2efcd9c6e523dafbff40",
+  "name": "rounding_errors",
+  "type": "document",
+  "document_type": "financial_analysis",
+  "author": "Dr. Priya Chatterjee-Nakamura, Corporate Forensics Division, GLMZ Municipal Authority",
+  "date": "2224-09-03",
+  "classification": "public",
+  "description": "The prevailing theory about Ghost Buildings is that they are evidence of something sinister — money laundering, surveillance infrastructure, or corporate espionage staging grounds. The prevailing theory is almost certainly wrong. The reality is more banal and, in its way, more disturbing: Ghost Buildings are what happens when organizational systems become too large to fully know themselves. They are corporate forgotten subscriptions, scaled to architecture.\n\nConsider Arcturus Industrial Solutions, the Tier 4 corponation that owns, operates, or has equity stake in approximately 2,300 commercial properties across the Great Lakes Maritime Zone. Arcturus's real estate portfolio is managed by a division of 340 people who oversee acquisition, leasing, maintenance, and disposition of these properties. Each property manager handles approximately seven properties. They know which buildings are occupied, which are between tenants, and which are undergoing renovation. What they do not know — what no one at Arcturus appears to know — is that fourteen of their properties have been completely unoccupied for periods ranging from two to eleven years while continuing to generate maintenance expenses, utility charges, and contractual obligations that auto-renew without human review.\n\nI identified these fourteen properties through a cross-reference of Arcturus's public utility filings with their occupancy declarations submitted to the Municipal Authority. The utility filings show consistent consumption patterns. The occupancy declarations list active tenants. The tenants are Arcturus subsidiaries. The subsidiaries have no employees. The circle is complete, and no human is inside it.\n\nHow does this happen? The same way you keep paying for a streaming service you signed up for three years ago and never use. Except the service is a building. The monthly charge is Φ400,000. And the auto-renewal clause is buried in a contract that was negotiated by a procurement team that has since been reorganized twice. The contract is in the system. The system pays the contract. Nobody reviews the system because the payments are within normal variance for a corponation of Arcturus's size. Φ400,000 per month is a rounding error when your quarterly revenue is Φ190 billion.\n\nBuilding 7C on Meridian Row is the purest example. Arcturus acquired the building through a subsidiary merger in 2213. The merged entity was dissolved. Its assets were distributed. But the building's maintenance contracts were assigned to a holding company that nobody dissolved because nobody remembered it existed. The holding company's bank account receives automatic transfers from Arcturus's general operating fund. The transfers trigger contract payments. The contracts trigger services. Cleaning crews clean. Utility companies provide power. Elevator technicians inspect elevators that nobody rides. The lights in Building 7C are on right now. They have been on for four years. Nobody at Arcturus can tell you why because nobody at Arcturus knows Building 7C exists.",
+  "related_entities": [
+    "Arcturus Industrial Solutions",
+    "GLMZ",
+    "Building 7C"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "If the buildings are truly just forgotten, why has no auditor flagged the spending in eleven years?",
+    "Building 7C has started ordering furniture — rounding errors don't furnish themselves"
+  ],
+  "tags": [
+    "document",
+    "ghost_building",
+    "mundane",
+    "financial",
+    "arcturus",
+    "meridian_88"
+  ]
+}

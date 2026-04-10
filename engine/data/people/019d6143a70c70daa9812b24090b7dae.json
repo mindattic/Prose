@@ -10,10 +10,10 @@
   "species": "human",
   "gender": "non-binary",
   "pronouns": "they/them",
-  "role": "Neighbor / tech scavenger / reluctant sidekick / Kyle's closest friend",
+  "role": "Tech scavenger / reluctant sidekick / Q-zero survivalist",
   "age": 19,
   "status": "alive",
-  "location": "The Shelf — Level 12, Unit 1207, directly adjacent to Kyle's unit. The wall between them is thin enough that Kyle can hear Pixel's music, soldering iron, and running commentary on whatever they're disassembling., near Ashland and Chicago Ave",
+  "location": "The Shelf — Level 12, Unit 1207, near Wacker and State",
   "description": "Mika Petrović is a controlled explosion of salvaged technology and nervous energy. They're slight — 5'6\", wiry,\nthe kind of build that comes from skipping meals when a project gets interesting. Their skin is a light\nbrown, perpetually smudged with solder flux and thermal paste, and their natural hair (what's left of\nit) is buzzed short on the right side, grown out in uneven dark curls on the left, and streaked with\na color that changes monthly depending on what dye they've scavenged. Currently: a violent, glitchy\nmagenta that's already fading to pink at the roots.\n\nThe augments are the first thing you notice. Mika Petrović's left eye is a salvaged Axiom Industries corporate\nscanner — matte black, slightly too large for the socket, with a faint amber ring that pulses when it's\nprocessing. It was designed to scan inventory in a warehouse. Mika Petrović repurposed it to read security\nsystems, identify augmentation models, and spot structural weaknesses in hardware. It also gives them\nsplitting headaches when it overclocks, which it does constantly because they pushed it past its specs.\nTheir right hand and forearm are aftermarket — a patchwork prosthetic cobbled from three different\nmanufacturer lines, matte grey with visible seams where the components don't quite match. It works\nbeautifully. It looks like a junk drawer. Their ears are studded with micro-receivers that pick up\nlocal comm frequencies, and there's a thin data-port scar behind their right ear where they hard-jack\ninto systems.\n\nFirst impression: an annoying kid who won't shut up and has too many blinking lights on their body.\nDeeper impression: a desperately clever person who has turned themselves into a Swiss Army knife because\nbeing useful is the only survival strategy they trust.",
   "psychology": {
     "facet_weights": {
@@ -63,13 +63,6 @@
   },
   "relationships": [
     {
-      "name": "Kyle",
-      "type": "neighbor / one-sided friendship / fascination",
-      "description": "Pixel is magnetically drawn to Kyle's anachronism. In a world where everyone is augmented, connected,\nand optimized, Kyle moves through space like a relic — blade, discipline, silence. Pixel finds this\ninfuriating and beautiful. They keep trying to help, offering tech upgrades, tactical data, security\nhacks, and Kyle keeps refusing, and Pixel keeps offering, because the offering is the point. It's how\nthey say \"I see you and I don't want you to die.\" Kyle would describe Pixel as \"the loud neighbor.\"\nPixel would describe Kyle as \"my friend,\" full stop, no qualifications.",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
       "name": "Mrs. Chen",
       "type": "surrogate grandmother / employer of sorts",
       "description": "Mrs. Chen tolerates Pixel the way a building tolerates weather — with endurance and occasional\nstructural complaints. But she also feeds them extra on bad days, lets them sleep in the back of\nthe shop when their unit's power goes out, and once chased off a debt collector with a cleaver on\nPixel's behalf. Pixel maintains her shop's electrical systems, refrigeration, and the ancient point-\nof-sale terminal. They are the closest thing either has to family, disguised as a business arrangement.",
@@ -101,7 +94,7 @@
   ],
   "narrative_function": "Pixel is Kyle's mirror — same orphan origin, opposite coping strategy. Where Kyle retreated into\ndiscipline and silence, Pixel exploded outward into noise and technology. They represent the question:\nwhat would Kyle have become without Seo? Not worse, necessarily — just different. Pixel survived\nwithout a code, without a mentor, without a sword. They survived by being useful, by being fast, by\nbeing loud enough that no one could ignore them.\n\nPixel also represents the generation that inherited the Consolidation Wars without fighting them.\nThey don't have Kyle's martial trauma or Seo's guilt or Mrs. Chen's grief. They have something\narguably worse: they grew up in the aftermath and were told this was normal. Their rebellion isn't\nphilosophical — it's practical. They scavenge and hack and build because the system wasn't designed\nto include them, so they'll include themselves.\n\nThe question Pixel poses to Kyle: Can you protect someone who doesn't fight the way you do? Can\nyour code accommodate someone whose weapon is a soldering iron instead of a sword?",
   "augmentations": "",
-  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "daily_life": "",
   "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
@@ -186,7 +179,6 @@
       "Full emotional shutdown disguised as a system diagnostic"
     ],
     "interpersonal_modes": {
-      "kyle": "Magnetic fascination with his anachronism; offers help as a way of saying I see you and I do not want you to die",
       "mrs_chen": "Surrogate grandmother relationship disguised as business arrangement; the closest thing to family",
       "sable": "Professional respect tinged with terror — cannot read a closed system",
       "parents": "The wound everything else is built around; never discussed, always present",
@@ -223,7 +215,7 @@
     "secondary_weapon": "",
     "armor": "",
     "vehicle": "",
-    "residence": "",
+    "residence": "The Shelf — Level 12, Unit 1207",
     "clothing_style": "",
     "favorite_drink": "",
     "favorite_food": "",
@@ -302,7 +294,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Eastern European": {

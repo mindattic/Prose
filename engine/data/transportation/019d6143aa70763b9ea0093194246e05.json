@@ -35,12 +35,20 @@
     "water",
     "lake",
     "tier 4",
-    "tier 5"
+    "tier 5",
+    "submarine",
+    "military",
+    "civilian",
+    "electric",
+    "ground",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Bathysphere Networks",
     "Dredge Mining Collective Underwater Resource Extraction Platform",
     "Noir Dining"
-  ]
+  ],
+  "physical_description": "A sleek, flattened hull of brushed titanium and composite polymer, roughly three meters long with swept-back wing surfaces that fold against its body. The Manta's exterior bears the salt-stained patina of frequent submersion—corroded access panels, patched welds, and a single reinforced viewport of scratched polymer that reveals nothing of the cramped interior. Navigation lights sit dormant along its dorsal ridge, dark as dead eyes.",
+  "visual_prompt": "Sterling-Nakamura Manta submersible, one-person underwater vessel, sleek ray-like form, brushed titanium hull with composite panels, salt-corroded weathering, folded wing surfaces, reinforced viewport, gritty neo-noir aesthetic, detailed product photography, dark water-stained background, industrial decay, cyberpunk near-future, moody lighting, worn military-grade engineering"
 }

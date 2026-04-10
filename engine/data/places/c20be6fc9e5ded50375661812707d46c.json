@@ -1,0 +1,40 @@
+{
+  "id": "c20be6fc9e5ded50375661812707d46c",
+  "type": "place",
+  "name": "Ivory & Saffron",
+  "aliases": [
+    "I&S"
+  ],
+  "description": "A Persian restaurant in Ravenswood serving dishes that most diners in the corridor have never encountered. Tahdig — the crispy golden rice from the bottom of the pot — is the signature (Φ18 as a side, and worth every quanta). Ghormeh sabzi — an herb stew with vat-lamb (Φ26). Joojeh kebab — saffron-marinated vat-chicken grilled over charcoal (Φ24). Chef-owner Shirin Okafor-Hosseini uses real saffron, which at current prices makes it one of the most expensive spices in the corridor. The saffron turns rice golden, flavors broth with an earthy sweetness, and justifies its cost by transforming everything it touches.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ravenswood residents",
+    "Persian cuisine enthusiasts",
+    "Tahdig devotees"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.975,
+    "lng": -87.675
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_3"
+  ],
+  "related_entities": [
+    "Shirin Okafor-Hosseini"
+  ]
+}

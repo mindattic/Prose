@@ -1,0 +1,46 @@
+{
+  "id": "4280e581f115af36a170266d2a1afe28",
+  "name": "Ouroboros Systems Engram Cognitive Backup Protocol",
+  "brand_name": "Ouroboros",
+  "product_name": "Engram CBP-2",
+  "type": "technology",
+  "aliases": [
+    "Engram",
+    "CBP-2",
+    "Brain Backup",
+    "Cognitive Snapshot"
+  ],
+  "subcategory": "neural_interface",
+  "description": "The Engram CBP-2 is Ouroboros's entry into the cognitive preservation market -- a system that creates periodic comprehensive snapshots of a user's entire cognitive state, including personality patterns, skill matrices, knowledge bases, and emotional response profiles. Unlike TESSERA's Mnemon, which records experiential memories, the Engram captures who you are rather than what you experienced -- your decision-making patterns, your expertise, your personality traits, your cognitive architecture. A complete Engram snapshot, Ouroboros claims, contains enough information to reconstruct a functional model of the subject's mind.\n\nThe Engram's primary commercial application is cognitive insurance for corporate executives. A snapshot taken before a dangerous operation, a risky negotiation, or a medical procedure serves as a baseline -- if the subject suffers cognitive damage, the Engram provides a reference point for neural reconstruction. Ouroboros also markets the technology to organizations seeking to preserve institutional knowledge: a retiring executive's decades of experience and intuition captured in a format that can theoretically be used to train their successor or even to create an AI advisory system that thinks like the original.\n\nThe technology's existential implications are the subject of intense philosophical and legal debate. An Engram snapshot is not a person -- it cannot think, feel, or act on its own. But it contains enough information to create something that could, if loaded into an appropriate substrate. Ouroboros has publicly stated that it does not offer cognitive reconstruction from Engram snapshots, but the technology to do so exists, and the temptation to resurrect a deceased genius, a murdered executive, or a lost loved one from their last Engram snapshot has driven a black-market cognitive reconstruction industry that operates at the bleeding edge of identity law and metaphysics.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "OUROBOROS SYSTEMS"
+  ],
+  "base_technologies": [
+    "Comprehensive cognitive state mapping",
+    "Personality pattern extraction",
+    "Skill matrix serialization"
+  ],
+  "enables": [
+    "Complete cognitive state backup",
+    "Post-trauma cognitive reconstruction reference",
+    "Institutional knowledge preservation",
+    "AI advisory system training from human cognitive patterns",
+    "Black-market cognitive reconstruction"
+  ],
+  "social_impact": "The Engram has forced GLMZ to confront questions that philosophy has debated for centuries: what is identity, is it transferable, and does a copy of a mind have the same moral weight as the original? The legal system has no framework for these questions, creating a gray zone where cognitive data has the legal status of property but the emotional significance of a person. Engram snapshots of deceased loved ones are traded, hoarded, and fought over in estate disputes with an intensity that suggests the line between data and soul is thinner than the law acknowledges.",
+  "story_hooks": [
+    "A black-market cognitive reconstruction has been performed using the Engram snapshot of a murdered corporate executive. The reconstructed entity claims to know who killed the original and demands justice -- but has no legal standing as a person and may be a manipulated copy designed to point blame at a specific target.",
+    "An Engram snapshot taken from a living subject has been loaded into an AI system without their knowledge, creating a digital entity that thinks, responds, and behaves exactly like the subject. The original discovers their cognitive double and must determine whether to destroy it -- an act that feels uncomfortably like murder."
+  ],
+  "tags": [
+    "technology",
+    "neural",
+    "cognitive",
+    "backup",
+    "ouroboros",
+    "identity",
+    "bci",
+    "preservation"
+  ]
+}
