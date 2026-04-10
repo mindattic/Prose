@@ -102,7 +102,7 @@
       "underground archivist",
       "market personality",
       "cultural agitator",
-      "Freeburn adjacent"
+      "freeburn adjacent"
     ]
   },
   "behavioral": {
@@ -218,7 +218,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

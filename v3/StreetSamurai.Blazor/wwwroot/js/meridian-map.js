@@ -11,22 +11,14 @@ window.meridianMap = {
     currentTheme: 'dark',
 
     init: function (elementId, apiKey) {
-        if (!this.scriptLoaded) {
-            var script = document.createElement('script');
-            script.src = 'https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=meridianMap._onLoad';
-            script.async = true;
-            script.defer = true;
-            this._pendingElementId = elementId;
-            document.head.appendChild(script);
-            this.scriptLoaded = true;
-        } else if (window.google && window.google.maps) {
-            this._createMap(elementId);
-        }
-    },
-
-    _onLoad: function () {
-        if (window.meridianMap._pendingElementId) {
-            window.meridianMap._createMap(window.meridianMap._pendingElementId);
+        var self = this;
+        self._pendingElementId = elementId;
+        if (window.google && window.google.maps) {
+            self._createMap(elementId);
+        } else {
+            window.__gmapsLoad(apiKey, function () {
+                if (self._pendingElementId) self._createMap(self._pendingElementId);
+            });
         }
     },
 

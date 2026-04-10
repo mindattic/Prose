@@ -31,11 +31,18 @@
     "power",
     "shelf",
     "circuit",
-    "tier 1"
+    "tier 1",
+    "civilian",
+    "van",
+    "rail",
+    "cargo",
+    "electric"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Narrowcast",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "Converted freight trolleys with reinforced steel frames, their original industrial gray paint weathered to dull charcoal beneath streaks of rust and rain stain. Wooden bench seating lines the interior, worn smooth by decades of use, while the exterior bristles with safety rails and jury-rigged grab handles fashioned from salvaged pipe. Embedded track grooves run through cracked asphalt and cobblestone, the trolley's wheels grinding audibly as it creeps through narrow residential corridors.",
+  "visual_prompt": "gritty neo-noir streetcar, converted industrial freight trolley, weathered steel frame, rust and rain-stained gray paint, wooden worn benches, salvaged pipe railings, embedded track in cracked asphalt, narrow urban alley, neon glow reflected on wet surfaces, detailed product photography, dark moody lighting, dystopian near-future"
 }

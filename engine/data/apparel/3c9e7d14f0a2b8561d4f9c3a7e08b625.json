@@ -26,7 +26,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "A SoftShell was recovered from a crime scene with a strike deformation pattern that doesn't match any registered weapon caliber in the M88 database.",
+    "A SoftShell was recovered from a crime scene with a strike deformation pattern that doesn't match any registered weapon caliber in the GLMZ database.",
     "Rheon quietly recalled a batch of Mark IIIs for a stiffening failure — but the recall notice never reached the black market units already in circulation.",
     "A corporate fixer was photographed at a peace summit — image analysis suggests they're wearing a SoftShell under diplomatic clothing, which is a treaty violation."
   ],
@@ -66,5 +66,6 @@
     "cultural_context": "Worn by mid-tier corporate workers, security-conscious professionals, street fixers, and anyone in moderate-risk occupations. Signals pragmatic self-preservation without overt paranoia — 'I take reasonable precautions.' Common in GLMZ professional districts and mixed-tier neighborhoods.",
     "condition_typical": "Pristine on first wear (with fading chemical smell). Remains crisp through standard washing. Over time, embossed pattern may slightly diminish; perforated panels retain texture. Rarely visibly damaged unless subjected to actual ballistic impact, at which point localized rigification leaves permanent stress marks in the composite."
   },
-  "image_prompt": "Close-up fashion photograph of an off-white Rheon Systems SoftShell Ballistic Underlayer on a lean androgynous neo-noir model, shot from the side. The garment's embossed triple-hex pattern catches cool blue-tinted studio lighting, creating subtle relief across the torso. Model's skin tone contrasts with the pale fabric. Visible perforated underarm panel. Dark industrial backdrop with faint neon glow. Minimalist, clinical aesthetic. Professional product photography style with moody overhead lighting. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion photograph of an off-white Rheon Systems SoftShell Ballistic Underlayer on a lean androgynous neo-noir model, shot from the side. The garment's embossed triple-hex pattern catches cool blue-tinted studio lighting, creating subtle relief across the torso. Model's skin tone contrasts with the pale fabric. Visible perforated underarm panel. Dark industrial backdrop with faint neon glow. Minimalist, clinical aesthetic. Professional product photography style with moody overhead lighting. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion photograph of an off-white Rheon Systems SoftShell Ballistic Underlayer on a lean androgynous neo-noir model, shot from the side. The garment's embossed triple-hex pattern catches cool blue-tinted studio lighting, creating subtle relief across the torso. Model's skin tone contrasts with the pale fabric. Visible perforated underarm panel. Dark industrial backdrop with faint neon glow. Minimalist, clinical aesthetic. Professional product photography style with moody overhead lighting. --ar 2:3 --v 6"
 }

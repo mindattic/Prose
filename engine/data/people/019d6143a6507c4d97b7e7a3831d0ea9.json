@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Apprentice",
-      "Guild Worker",
-      "Technically Skilled",
-      "Quietly Ambitious",
-      "Documentation Instinct"
+      "apprentice",
+      "guild worker",
+      "technically skilled",
+      "quietly ambitious",
+      "documentation instinct"
     ]
   },
   "behavioral": {
@@ -211,7 +211,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

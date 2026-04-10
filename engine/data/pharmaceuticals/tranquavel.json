@@ -1,0 +1,41 @@
+{
+  "name": "Tranquavel",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Smoothers",
+    "Vel",
+    "the Prescription"
+  ],
+  "category": "emotional_regulator",
+  "subcategory": "anxiety_dampener",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Tranquavel is GLMZ's most prescribed pharmaceutical — a next-generation anxiolytic that modulates cortisol-SNT feedback loops to reduce chronic and situational anxiety without sedation or cognitive impairment. Unlike older benzodiazepine-class drugs, Tranquavel is engineered to integrate with common BCI architectures, allowing the drug's effects to be fine-tuned via neural interface. It is marketed as 'the anxiety solution for people who can't afford to slow down.'",
+  "method_of_use": "dermal_patch",
+  "effects": [
+    "Sustained reduction of background anxiety and hypervigilance",
+    "Lowered cortisol and stress hormone cascade",
+    "BCI-modulated dosing — users can dial effect intensity via interface",
+    "Improved sleep onset without sedation",
+    "Reduction in somatic anxiety symptoms (tremor, nausea, chest tightness)",
+    "Mild euphoric baseline — a persistent sense that things are manageable"
+  ],
+  "side_effects": [
+    "Suppression of adaptive fear responses — users may underestimate genuine danger",
+    "Emotional flattening at high doses",
+    "BCI dependency loop — users become anxious when disconnected from dosing interface",
+    "Withdrawal causes rebound anxiety significantly worse than baseline",
+    "Long-term use restructures SNT anxiety pathways, making natural regulation difficult",
+    "Corporate-prescribed versions may include employer-accessible usage telemetry"
+  ],
+  "duration": "24 hours (patch replaced daily)",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 2-3",
+  "legality": "prescription",
+  "street_price": "Φ12 per patch (Φ340 per month subscription through Lazarus MedNet)",
+  "cultural_context": "Tranquavel is so ubiquitous in Tier 2-3 that going off it is treated as eccentric or irresponsible. Corporate wellness programs provide it free to employees — a benefit that also means employers can monitor usage data. In Tier 3, 'are you on your vel?' is casual small talk. The drug's cultural penetration is so deep that Lazarus has successfully lobbied to have anxiety disorders reclassified as 'productivity impediments,' making Tranquavel eligible for workplace safety subsidies. Critics call it a chemical leash. On the Shelf, counterfeit patches are common and dangerously underdosed — withdrawal from fake Tranquavel has killed people.",
+  "story_hooks": [
+    "A Tier 3 corporate analyst discovers her Tranquavel patches include a hidden telemetry module that has been sending her emotional state data — and her conversations — to her employer's HR division for the past eighteen months.",
+    "Someone has gone off Tranquavel cold after years of use and is experiencing terrifying rebound anxiety — and starting to feel things they've been chemically suppressing for a decade, including rage at people who are still very much alive and powerful.",
+    "A Shelf street lab is producing near-perfect counterfeit Tranquavel patches — except one batch in ten contains a different compound entirely. Someone needs to find out who's behind it before more people die from the wrong patch."
+  ]
+}

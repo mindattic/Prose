@@ -1,0 +1,39 @@
+{
+  "name": "Axodrine",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Axo",
+    "Fastburn",
+    "Wire"
+  ],
+  "category": "cognitive_enhancer",
+  "subcategory": "accelerated_skill_acquisition",
+  "manufacturer": "Helix Biosystems",
+  "description": "Axodrine is a neuroplasticity accelerant that temporarily increases the rate of synaptic remodeling, allowing new motor programs, procedural skills, and technical knowledge to be inscribed into neural architecture in a fraction of the time normally required. Used in conjunction with BCI-delivered training simulations, it can compress weeks of skill development into days. Helix designed it for military rapid-deployment training; it has since migrated into corporate retraining programs and the gray market.",
+  "method_of_use": "injection",
+  "effects": [
+    "Dramatically accelerated motor learning and procedural skill acquisition",
+    "Faster integration of BCI-delivered training content",
+    "Heightened neural responsiveness to practice and repetition",
+    "Compressed skill consolidation timelines",
+    "Increased tolerance for cognitive and physical training loads"
+  ],
+  "side_effects": [
+    "Existing skills can be partially overwritten if similar motor programs are trained during the active window",
+    "Severe physical and mental fatigue post-training session",
+    "Skills acquired under Axodrine are initially unstable — they degrade rapidly if not reinforced within 48 hours",
+    "Neuroinflammation with repeated use",
+    "Occasionally produces phantom skill-memories — the sensation of being able to do things you haven't actually trained"
+  ],
+  "duration": "Training window: 4-6 hours; neuroplasticity elevation persists 8-12 hours",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 3-4",
+  "legality": "restricted",
+  "street_price": "Φ 55 per injection",
+  "cultural_context": "Axodrine is the drug of reinvention. In a city where your economic tier is largely determined by your certified skill set, the ability to rapidly acquire new capabilities is enormously valuable. Tier 2 workers use it to attempt Tier 3 certifications. Tier 3 workers use it to stay competitive as job requirements shift. There is an entire underground industry of 'accelerated credential mills' — unlicensed training facilities that pair Axodrine with pirated BCI training programs and promise new professional certifications in a week. The skill instability problem means many of these credentials are fragile — workers who trained under Axodrine without proper reinforcement find their abilities beginning to erode under real-world conditions.",
+  "story_hooks": [
+    "A credential mill on the Tier 1-2 border has been selling accelerated surgical certifications — people are performing medical procedures with Axodrine-acquired skills that were never properly reinforced, and the complication rate is climbing.",
+    "A player character needs a specific skill set urgently — a contact can get them Axodrine and a BCI training package, but the skill will be unstable without follow-up practice they may not have time for.",
+    "Someone has figured out how to use Axodrine's skill-overwrite effect deliberately — a fixer is offering a service that erases specific trained behaviors from targets, a kind of pharmaceutical reprogramming that is deeply illegal and deeply in demand."
+  ]
+}

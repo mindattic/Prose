@@ -30,7 +30,14 @@
     "corporate",
     "control",
     "vehicle",
-    "tier 5"
+    "tier 5",
+    "cargo",
+    "luxury",
+    "electric",
+    "combustion",
+    "manual",
+    "aerial",
+    "space"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -39,5 +46,7 @@
     "Tessera Nexus Town Car",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": "The SkyLux is a sleek, teardrop-shaped craft of brushed titanium and composite polymers, its fuselage bearing the inevitable micro-scratches and weathering of high-altitude operation. Four tinted windows curve seamlessly into the hull, and its undercarriage hums with barely-contained repulsor tech. Despite its pristine engineering, there's something almost sterile about it—a vehicle designed to exist above the world rather than within it.",
+  "visual_prompt": "sleek teardrop-shaped flying car, brushed titanium hull, tinted windows, repulsor tech undercarriage, gritty neo-noir aesthetic, detailed product photography, dark industrial background, rain-slicked surfaces, subtle neon reflection, high-tech luxury vehicle, worn future technology, moody lighting, 8k detail"
 }

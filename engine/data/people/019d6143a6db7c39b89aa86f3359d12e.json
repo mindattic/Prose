@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Weatherwise",
-      "Reliable",
-      "Scarred Worker",
-      "Quietly Faithful",
-      "Blacklisted"
+      "weatherwise",
+      "reliable",
+      "scarred worker",
+      "quietly faithful",
+      "blacklisted"
     ]
   },
   "behavioral": {
@@ -284,7 +284,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

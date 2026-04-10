@@ -1,0 +1,41 @@
+{
+  "id": "c2bc618174dbef80b1f738b64472951e",
+  "type": "place",
+  "name": "Harbor Fish Shack",
+  "aliases": [
+    "Fish Shack",
+    "Harbor"
+  ],
+  "description": "A fried fish restaurant on the Waukegan harbor serving beer-battered vat-perch, vat-walleye, and vat-catfish with fries, coleslaw, and tartar sauce. A fish plate is Φ12. A fish sandwich is Φ8. The shack is literally a shack — corrugated metal walls, picnic table seating, a view of the harbor that makes up for the lack of decor. Owner Blessing Lindqvist-Hansen loves fish, loves frying, and considers the view a free amenity that no restaurant designer could improve upon. On summer evenings, the shack serves until the oil runs out.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Waukegan harbor visitors",
+    "Fish fry devotees",
+    "Summer evening diners"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.363,
+    "lng": -87.828
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_2"
+  ],
+  "related_entities": [
+    "Blessing Lindqvist-Hansen"
+  ]
+}

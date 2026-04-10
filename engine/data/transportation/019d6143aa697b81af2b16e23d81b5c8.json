@@ -33,7 +33,13 @@
     "desperate",
     "drone",
     "shelf",
-    "tier 1"
+    "tier 1",
+    "cargo",
+    "civilian",
+    "electric",
+    "manual",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -41,5 +47,7 @@
     "Arcturus Mule Cargo Drone",
     "Crucible ER-5 'First Response'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "A battered Arcturus Mule cargo drone, its matte gray composite hull scarred by impact marks and patched with mismatched industrial tape. The cargo bay has been gutted and replaced with a welded-steel seat frame bolted directly to the frame, fitted with frayed nylon straps and a single cracked safety harness that looks like it was salvaged from something else entirely. Exposed wiring and hastily-soldered battery connections run along the underside, still dripping residue from whatever adhesive holds them in place.",
+  "visual_prompt": "battered gray cargo drone with human seat welded inside, exposed wiring, industrial tape patches, cracked safety harness, worn composite hull, rain-slicked metal, product photography, gritty cyberpunk, neo-noir, dark moody lighting, detailed wear and corrosion, desperate jury-rigged engineering, dark background"
 }

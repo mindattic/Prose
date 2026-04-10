@@ -100,8 +100,8 @@
       "neural calibrator",
       "technician",
       "off-books work",
-      "Tremor-Null devotee",
-      "Geartown cooperative"
+      "tremor-null devotee",
+      "geartown cooperative"
     ]
   },
   "behavioral": {
@@ -271,7 +271,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

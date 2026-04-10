@@ -1,0 +1,48 @@
+{
+  "id": "834207db94b4ec31c88f56857b51073a",
+  "name": "Tessera Networked DMR TNDM-6 'Oracle'",
+  "type": "weapon",
+  "aliases": [
+    "Oracle",
+    "TNDM-6",
+    "Prophet Rifle"
+  ],
+  "category": "dmr",
+  "description": "The TNDM-6 Oracle is Tessera's networked designated marksman rifle, extending their distributed targeting philosophy to precision engagement. When multiple Oracles are deployed, the weapons share ballistic data — wind readings from one position correct calculations at another, and target tracking data from multiple angles provides three-dimensional position estimates that no single marksman could achieve.\n\nThe Oracle fires 7mm caseless from a precision-machined barrel, and its BCI smart-scope incorporates Tessera's predictive targeting AI. The AI models target movement patterns and generates firing solutions that lead moving targets at distances where human prediction fails. When networked with other Oracles, the predictive model improves as multiple observation angles refine the target's movement vector.\n\nTessera sells the Oracle at Φ16,000 per unit, with squad packs of four available at Φ58,000. The networking protocol automatically distributes the most accurate ballistic data to the marksman with the best engagement angle, creating a dynamic fire-control solution that constantly optimizes which marksman should take which shot. In practice, Oracle teams achieve engagement rates that exceed the sum of their individual capabilities.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — networked weapons licensing",
+  "base_technologies": [
+    "Distributed ballistic data sharing",
+    "Predictive target movement AI",
+    "Multi-angle position estimation",
+    "Dynamic fire-control optimization"
+  ],
+  "specifications": "caliber: 7mm caseless\neffective_range: 900m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 15 rounds\nweight: 4.6 kg",
+  "tactical_use": "The Oracle transforms a group of marksmen into a precision fire network. Shared ballistic data eliminates individual measurement errors, predictive targeting AI defeats evasive movement, and dynamic fire-control optimization ensures each shot is taken by the marksman with the highest probability of success. In overwatch scenarios with multiple elevated positions, an Oracle network provides interlocking precision fire that is nearly impossible to evade.",
+  "cultural_context": "The Oracle represents Tessera's conviction that networking improves every military capability. Critics argue that networked marksmen lose the individual judgment and initiative that make traditional marksmen effective. Tessera responds with engagement statistics. The philosophical debate between networked collective capability and individual excellence is nowhere more sharply drawn than in the precision shooting community, where marksmanship is traditionally the most individualistic of military skills.",
+  "known_users": [
+    "Tessera precision teams",
+    "Corporate military overwatch",
+    "Networked security deployments"
+  ],
+  "story_hooks": [
+    "An Oracle network was hacked to inject a false target — the system displayed a phantom hostile that multiple marksmen engaged simultaneously, wasting ammunition and revealing their positions.",
+    "Two opposing forces both deployed Oracle networks. The weapons accidentally connected to each other's mesh, and for a brief moment both sides had complete visibility of the other's positions and targeting data."
+  ],
+  "ammunition_type": [
+    "7mm caseless match",
+    "7mm caseless AP"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "networked",
+    "AI",
+    "predictive",
+    "Tessera",
+    "tier 4"
+  ],
+  "physical_description": "The Oracle is a lean, modular DMR with a matte gunmetal finish showing stress fractures and carbon scoring along its receiver. Its barrel is wrapped in heat-dissipating mesh, and the integrated smart-scope juts forward like a predator's eye, its lens ringed with worn contact points where networked handshakes occur. The whole assembly has the utilitarian grace of something designed for function over form—no unnecessary angles, just efficient geometry held together by precision engineering and desperation.",
+  "visual_prompt": "Tessera TNDM-6 Oracle DMR, matte gunmetal precision rifle with integrated smart-scope, modular 7mm caseless designated marksman weapon, gritty neo-noir product photography, worn heat-dissipating mesh barrel, cyberpunk military hardware, dark rain-slicked background, industrial detail, technical aesthetic, shallow depth of field, moody lighting"
+}

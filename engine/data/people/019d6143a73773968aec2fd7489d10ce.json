@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Loan Shark",
-      "Bookmaker",
-      "Street Financier",
-      "Basin Fixture",
-      "Information Hoarder"
+      "loan shark",
+      "bookmaker",
+      "street financier",
+      "basin fixture",
+      "information hoarder"
     ]
   },
   "behavioral": {
@@ -217,7 +217,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

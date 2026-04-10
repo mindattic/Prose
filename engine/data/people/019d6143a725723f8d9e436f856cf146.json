@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Veteran Practitioner",
-      "Street Medic",
-      "Community Anchor",
-      "Quietly Furious",
-      "Pragmatic Idealist"
+      "veteran practitioner",
+      "street medic",
+      "community anchor",
+      "quietly furious",
+      "pragmatic idealist"
     ]
   },
   "behavioral": {
@@ -241,7 +241,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

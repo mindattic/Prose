@@ -1,0 +1,33 @@
+{
+  "id": "4e72294689d6b39bccbe13e80643608f",
+  "name": "The Quanta Wars: Corporate Battle for the Validation Network",
+  "type": "document",
+  "document_type": "historical",
+  "author": "Dr. Lin Xiaoming-Okafor, Strategic Studies, Zurich Enclave",
+  "date": "2196-02-28",
+  "classification": "public",
+  "description": "Between 2172 and 2179, the twelve member corponations of the QFIC fought a series of economic conflicts — conducted through market manipulation, infrastructure sabotage, regulatory warfare, and proxy violence — over control of the Quanta validation network. These conflicts, collectively known as the Quanta Wars, determined the power structure that governs the global currency to this day. Understanding the Wars is essential to understanding why Sterling-Nakamura chairs the QFIC, why Axiom controls security, why certain corponations have disproportionate influence over monetary policy, and why the validation network is structured to resist the dominance of any single entity while simultaneously guaranteeing the dominance of the collective.\n\nThe First Quanta War (2172-2174) was fought between Sterling-Nakamura and the Meridian Consortium — a loose alliance of five mid-tier corponations that sought to challenge Sterling-Nakamura's architectural control of the EDN. The Consortium's grievance was legitimate: Sterling-Nakamura had designed the Quanta protocol, built the initial EDN infrastructure, and retained proprietary control of the node selection algorithm that determined which nodes verified which transactions. This gave Sterling-Nakamura effective control of the money supply — not in theory but in practice, because the entity that decides which nodes verify transactions decides which transactions are verified. The Consortium demanded open-source publication of the selection algorithm and distributed governance of the EDN. Sterling-Nakamura refused.\n\nThe war was fought economically. The Consortium began building parallel verification infrastructure — unlicensed EDN nodes running reverse-engineered verification protocols — in an attempt to create a competing validation network that would force Sterling-Nakamura to negotiate. Sterling-Nakamura responded by flagging transactions verified by Consortium nodes as \"unconfirmed,\" effectively making any Quanta touched by the competing network suspect. Vendors began refusing Quanta that had been verified through Consortium infrastructure. The Consortium's member companies found their own financial operations degraded by the stigma attached to their network. Within 18 months, two Consortium members had defected back to Sterling-Nakamura's standard EDN, and the remaining three capitulated in exchange for increased node allocation quotas and a seat on the newly created Protocol Oversight Committee — a body that advises on protocol changes but has no binding authority.\n\nThe Second Quanta War (2176-2179) was larger, more violent, and more consequential. It pitted Axiom — which had grown from a security contractor to a full-spectrum military-economic power — against Sterling-Nakamura's control of the QFIC chairmanship. Axiom's argument was simple: the entity that secures the network should govern the network. Sterling-Nakamura's counter-argument was equally simple: the entity that designed the network should govern the network. The conflict escalated from regulatory maneuvering to proxy warfare when Axiom-contracted security teams began physically seizing EDN nodes in disputed territories — regions where corponation sovereignty boundaries were unclear or contested. Sterling-Nakamura retaliated by restricting Axiom's access to the Quantum Compute Exchange, effectively throttling the AI systems that Axiom relied on for security operations. For three years, the two most powerful corponations on Earth fought over who controlled the infrastructure of money, while the rest of the world watched their currency fluctuate with each tactical move.\n\nThe war ended with the Treaty of Singapore (2179), which established the current QFIC power structure: Sterling-Nakamura retains permanent chairmanship and protocol authority; Axiom controls network security and physical infrastructure protection; the remaining ten members share governance of monetary policy through weighted voting proportional to their node contributions. The Treaty is, in essence, a peace agreement between two superpowers, with the other ten members serving as a stabilizing bloc that prevents either dominant power from achieving total control. The structure has held for eighteen years. But treaties are agreements between rational actors, and the assumption of rationality is itself a vulnerability. The Quanta Wars ended because both sides calculated that peace was more profitable than war. If that calculation changes — if one side concludes that the cost of war is less than the cost of the status quo — the infrastructure of global money becomes a battlefield again. The nodes that verify your morning coffee purchase are also the strategic assets that two corponations once fought a war to control. The peace is real. The peace is also provisional.",
+  "related_entities": [
+    "sterling_nakamura",
+    "axiom",
+    "qfic"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "Evidence of a secret third Quanta War being fought in cyberspace — Axiom and Sterling-Nakamura are again competing for control, this time through their respective AIs",
+    "A character discovers that the Treaty of Singapore contains a classified annex specifying conditions under which the treaty automatically dissolves"
+  ],
+  "tags": [
+    "document",
+    "quanta",
+    "currency",
+    "historical",
+    "war",
+    "corporate_conflict",
+    "sterling_nakamura",
+    "axiom",
+    "qfic",
+    "edn",
+    "treaty"
+  ]
+}

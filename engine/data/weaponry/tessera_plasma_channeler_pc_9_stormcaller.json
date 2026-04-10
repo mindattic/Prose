@@ -1,0 +1,46 @@
+{
+  "id": "ac4a82c1dc7c26b0211b12188d719c66",
+  "name": "Tessera Plasma Channeler PC-9 'Stormcaller'",
+  "type": "weapon",
+  "aliases": [
+    "Stormcaller",
+    "PC-9",
+    "Plasma Channeler",
+    "Lightning Rod"
+  ],
+  "category": "exotic",
+  "description": "A directed energy weapon that ionizes a path through the air and then discharges a high-voltage current along the ionized channel — essentially creating a guided lightning bolt. The PC-9 fires a UV laser pulse that strips electrons from air molecules along its path, creating a conductive plasma channel. A fraction of a second later, the weapon discharges its capacitor bank through this channel, delivering a 50,000-volt electrical arc to the target.\n\nTessera developed the Stormcaller for anti-electronics warfare — the electrical discharge overloads and destroys circuit boards, power systems, and electronic components. Against personnel, the effect is equivalent to a lightning strike. Against vehicles, the discharge can fry every electronic system simultaneously, turning a functioning machine into an inert metal shell.\n\nThe weapon produces a distinctive crack-boom signature — the UV laser pulse followed by the thunderclap of electrical discharge. In GLMZ's enclosed spaces, the sound is physically painful and the flash can cause temporary blindness.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — directed energy weapons authorization",
+  "base_technologies": [
+    "Laser-induced plasma channel generation",
+    "High-voltage directed electrical discharge",
+    "Atmospheric ionization targeting"
+  ],
+  "specifications": "caliber: N/A — laser-guided electrical discharge\neffective_range: 10-200 meters (dependent on atmospheric conditions)\nrate_of_fire: 1 discharge per 10 seconds (capacitor recharge)\ncapacity: 6 discharges per power cell\nweight: 11.4 kg\npower_source: Dual capacitor bank with rapid-charge power cell",
+  "tactical_use": "The Stormcaller is deployed for anti-electronics warfare, vehicle disabling, and engagement of targets in conductive environments. The weapon's electrical discharge follows the path of least resistance after reaching the target, meaning it can chain through multiple electronic systems and even jump between closely-spaced targets. In wet environments — rain, standing water, flooded corridors — the Stormcaller's effectiveness is dramatically amplified, with the discharge spreading through the water to affect a wide area.",
+  "cultural_context": "The PC-9 has earned a mythological reputation in GLMZ, where residents describe its use as 'being struck by lightning indoors.' The weapon's visual effect — a brilliant electrical arc from weapon to target — is one of the most dramatic sights in modern combat, and combat footage of Stormcaller engagements has become a genre of underground entertainment media. Tessera has attempted to suppress these recordings without success.",
+  "known_users": [
+    "Tessera electronic warfare division",
+    "Anti-vehicle specialist teams"
+  ],
+  "story_hooks": [
+    "A Stormcaller was discharged in a Tier 2 market during a rainstorm. The electrical discharge spread through rainwater and standing puddles, killing the target and twelve bystanders through electrocution. The operator claims the weapon's performance specifications did not account for the environmental conditions.",
+    "Someone has modified a PC-9 to sustain its plasma channel for multiple seconds rather than a single discharge — creating a continuous lightning bolt that can be swept across targets like a beam weapon. The modification is unstable and has killed two operators, but the third survived and is offering demonstrations."
+  ],
+  "ammunition_type": [
+    "Laser-guided electrical discharge"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "directed-energy",
+    "electrical",
+    "plasma",
+    "anti-electronics",
+    "tier 5"
+  ],
+  "physical_description": "The PC-9 resembles a reinforced rifle with a bulbous, heat-scored capacitor housing running along its top rail—the casing scorched black and silver from repeated discharge cycles. Its barrel is a precisely-machined ceramic-coated tube ringed with copper contact points, while the stock is reinforced polymer wrapped in friction tape, worn smooth from gloved hands. Faint scorch marks and electrical burn patterns spider across the weapon's frame, evidence of its volatile nature.",
+  "visual_prompt": "Tessera Stormcaller plasma channeler rifle, gritty cyberpunk weapon, neo-noir industrial design, worn black and silver metal, ceramic barrel with copper contacts, reinforced polymer stock, electrical burn scars, heat-damaged casing, detailed product photography, dark rain-slicked background, moody neon reflection, tactical military aesthetic, weathered condition, precise engineering"
+}

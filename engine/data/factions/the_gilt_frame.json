@@ -1,0 +1,47 @@
+{
+  "id": "ac5cff040a91d37fe488ab4590052622",
+  "type": "faction",
+  "name": "The Gilt Frame",
+  "aliases": [
+    "Gilt",
+    "The Frame",
+    "GF"
+  ],
+  "motto": "The right fake is worth more than the wrong real.",
+  "description": "The Gilt Frame is a forgery and counterfeiting ring of approximately 30 members that produces the highest-quality counterfeit goods in GLMZ — fake luxury augmentations, counterfeited corporate credentials, forged art, and replicated Φ currency (though currency counterfeiting has become nearly impossible with quantum-encrypted transactions, the Gilt Frame manages to counterfeit physical Φ tokens that still circulate in the lower tiers).\n\nThe Frame's specialty is augmentation counterfeiting — producing convincing replicas of high-end augmentations from manufacturers like Crucible Industries and TESSERA that look, scan, and partially function like the genuine article but cost a fraction of the price. These counterfeits range from cosmetic augmentations (fake chrome that looks expensive but has no functional capability) to functional but inferior copies (augmentations that work but fail sooner and perform worse than genuine models). The market for these counterfeits is enormous among Tier-2 and Tier-3 residents who want to project a status their income doesn't support.\n\nThe Frame also produces forged corporate documentation — employee credentials, security clearances, authorization codes — that are used by other criminal organizations for infiltration and fraud. Their forgeries are good enough to fool automated verification systems, which is a technical achievement that requires deep understanding of corporate security architecture.",
+  "ideology": "Everything is a copy of something. The corponations sell brand identity as much as functionality. The Gilt Frame sells the same brand identity at a better price. In a world where image is everything, the image is the product.",
+  "territory": "Hidden workshops in the Circuit. The Frame moves locations frequently to avoid corporate anti-counterfeiting operations.",
+  "leadership": "An artist known only as 'Vermeer' whose attention to detail in counterfeiting borders on obsessive. Vermeer is rumored to have been a legitimate artisan before turning to forgery.",
+  "methods": [
+    "Counterfeiting of luxury augmentations",
+    "Forgery of corporate credentials and documentation",
+    "Counterfeiting of physical Φ currency tokens",
+    "Art forgery for the upper-tier market",
+    "Reverse engineering of corporate security verification systems",
+    "Distribution through a network of resellers"
+  ],
+  "resources": [
+    "30 skilled forgers and counterfeiters",
+    "Hidden workshops with precision fabrication equipment",
+    "Deep knowledge of corporate security and verification systems",
+    "Vermeer's artistic skill and obsessive attention to detail",
+    "A distribution network of resellers across tiers",
+    "A client base that values appearance over authenticity"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Gilt Frame asks what 'real' means in a world where the distinction between genuine and counterfeit is increasingly a matter of who holds the trademark.",
+  "story_hooks": [
+    "A Gilt Frame counterfeit augmentation has performed better than the genuine article it was copying. The forgers don't understand how — they built it to the same specifications. Something in their manufacturing process is producing results that exceed the original design.",
+    "Vermeer has been commissioned to forge something that isn't a product or a document — a person. Someone wants a perfect physical duplicate of a specific individual, and the purpose is unclear."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "forgery",
+    "counterfeit",
+    "augment",
+    "circuit",
+    "art"
+  ]
+}

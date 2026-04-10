@@ -1,0 +1,46 @@
+{
+  "id": "3d08fbe1efd8ae8db599c6ea5570af06",
+  "name": "Korova Arms Whisper KA-9 'Lullaby'",
+  "type": "weapon",
+  "aliases": [
+    "Lullaby",
+    "KA-9",
+    "Quiet Time",
+    "The Nanny"
+  ],
+  "category": "sniper",
+  "description": "A compact precision rifle firing micro-caliber chemical-tipped rounds designed for silent elimination. The Whisper KA-9 uses an integral closed-bolt suppressor and subsonic propellant that reduces its acoustic signature to under 45 decibels — quieter than a conversation.\n\nKorova Arms specializes in deniable-operations equipment, and the Lullaby is their masterwork. The rifle's 2mm rounds carry a fast-acting neurosuppressant payload that induces cardiac arrest within 8-12 seconds of skin penetration. The wound channel is so small that it can be mistaken for an insect bite during cursory examination. Only a detailed autopsy with toxicology screening reveals the cause of death.\n\nThe KA-9 is technically classified as a medical delivery device in Korova's product catalog — a classification that their legal department defends with straight faces and impeccable documentation.",
+  "manufacturer": "KOROVA ARMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Officially does not exist as a weapon system",
+  "base_technologies": [
+    "Micro-caliber chemical delivery",
+    "Integral closed-bolt suppression",
+    "Neurosuppressant payload engineering"
+  ],
+  "specifications": "caliber: 2mm chemical-tipped micro-round\neffective_range: 30-400 meters\nrate_of_fire: Semi-automatic, 1 round per 2 seconds\ncapacity: 8-round sealed magazine\nweight: 2.8 kg\npower_source: None — mechanical action",
+  "tactical_use": "The Lullaby is used for assassinations that must appear natural or accidental. Operators engage targets in crowds, through open windows, or during routine activities. The micro-caliber round's minimal penetration means there is no exit wound and no collateral damage. The neurosuppressant causes symptoms consistent with sudden cardiac death. Medical examiners who are not specifically looking for a 2mm puncture wound will rule the death natural.",
+  "cultural_context": "In GLMZ's intelligence community, a 'lullaby' has become slang for any clean, untraceable kill. The weapon's existence is an open secret among fixers and high-tier operators, but Korova's legal fiction as a medical device manufacturer makes official action impossible. When corporate executives begin dying of sudden heart failure at statistically improbable rates, people whisper about lullabies.",
+  "known_users": [
+    "Unnamed intelligence services",
+    "High-tier independent contractors"
+  ],
+  "story_hooks": [
+    "A medical examiner has noticed a pattern — seven sudden cardiac deaths in three months, all in the same corporate hierarchy. She found the puncture wound on the third victim.",
+    "Korova Arms has released a new chemical payload that leaves no detectable trace — even toxicology screening comes back clean. The only evidence is a 2mm hole that closes within hours."
+  ],
+  "ammunition_type": [
+    "2mm neurosuppressant micro-round"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "assassination",
+    "chemical",
+    "stealth",
+    "tier 4",
+    "deniable"
+  ],
+  "physical_description": "The Whisper KA-9 is a skeletal thing of matte-black composite and brushed titanium, barely longer than a forearm. Its integral suppressor is a tapered cylinder that runs most of the barrel's length, studded with micro-vents that look like corrosion but are precision-engineered. The stock is minimalist—folding polymer with worn grip tape—and the whole assembly weighs less than a brick, designed to disappear under a coat or across a back.",
+  "visual_prompt": "compact precision rifle, matte black composite and brushed titanium, integral suppressor, skeletal minimalist design, worn grip tape, studio product photography, gritty neo-noir aesthetic, detailed mechanical components, dark background, moody lighting, near-future weapon, industrial design, technical photography"
+}

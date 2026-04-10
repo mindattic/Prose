@@ -1,0 +1,29 @@
+{
+  "id": "9eb748e23e9d92cfa3f26497ec249dbd",
+  "name": "Acoustic Anomaly Survey: Lake Michigan Substructure",
+  "type": "document",
+  "document_type": "investigation_report",
+  "author": "Palladian Environmental Monitoring Division",
+  "date": "2199-09-18",
+  "classification": "restricted",
+  "description": "Palladian's underwater acoustic monitoring array, installed in 2195 to track structural integrity of GLMZ's lake-facing foundation walls, has been recording an anomalous sound pattern since August 2199. The sound originates from approximately 400 meters below the lake surface, at a point roughly 2 kilometers from the city's foundation. It is a low-frequency oscillation in the 2-8 Hz range — below the threshold of human hearing but within the detection range of modern hydrophones.\n\nThe sound is not continuous. It occurs in bursts lasting between 4 and 17 minutes, separated by intervals of 2 to 9 hours. There is no discernible pattern to the timing, though several team members have noted — informally and without statistical support — that the bursts seem to increase in frequency during periods of high electromagnetic activity in the city above, such as during major data transfers or industrial operations.\n\nSpectral analysis reveals a complexity that is inconsistent with geological or mechanical sources. The waveform contains harmonic structures, frequency modulations, and what one acoustic engineer described as \"something that looks disturbingly like syntax.\" When the waveform is pitch-shifted into the audible range, it sounds — and this is subjective, and should be treated accordingly — like a voice. Not a human voice. Not a synthetic voice. Something that uses the same structural principles as vocalization without being vocalization.\n\nThree hypotheses are currently under evaluation. First: the sound is produced by thermal venting from a previously unmapped geothermal feature, and the apparent complexity is pareidolia — the human tendency to perceive patterns in noise. Second: the sound is an artifact of the monitoring array itself, a feedback loop created by the interaction of the hydrophones with the city's electromagnetic emissions. Third: the sound is being produced by something at the bottom of Lake Michigan that is, for lack of a better word, talking.\n\nPalladian has classified the data as proprietary and has not shared it with municipal authorities. Internal memos suggest this is less about commercial sensitivity and more about not wanting to be the corporation that publicly suggests there's something living at the bottom of the lake.",
+  "related_entities": [
+    "Palladian",
+    "Lake Michigan",
+    "GLMZ"
+  ],
+  "credibility": "suppressed",
+  "story_hooks": [
+    "What is at the bottom of Lake Michigan?",
+    "Is something communicating?",
+    "Why is Palladian hiding the data?"
+  ],
+  "tags": [
+    "paranormal",
+    "acoustic",
+    "lake-michigan",
+    "underwater",
+    "anomaly",
+    "palladian"
+  ]
+}

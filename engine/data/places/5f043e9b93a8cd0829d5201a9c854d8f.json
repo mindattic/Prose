@@ -1,0 +1,40 @@
+{
+  "id": "5f043e9b93a8cd0829d5201a9c854d8f",
+  "type": "place",
+  "name": "Dawn Bread",
+  "aliases": [
+    "Dawn"
+  ],
+  "description": "A bread cart that appears outside the Oshkosh labor exchange every morning at 4:30 AM. By the time workers line up for day assignments at 5 AM, there's fresh flatbread available for Φ1 per piece. The baker, Sahara Gustafsson-Chen, starts work at 2 AM in a kitchen she shares with three other Shelf businesses on a time-rotation basis. Her bread is simple, warm, and serves a single purpose: making sure the people who do the hardest work start the day with something in their stomachs. She considers this a minimum standard of civilization, not charity.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Oshkosh day laborers",
+    "Early morning workers",
+    "Labor exchange crowd"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.025,
+    "lng": -88.543
+  },
+  "tags": [
+    "place",
+    "street_vendor",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Sahara Gustafsson-Chen"
+  ]
+}

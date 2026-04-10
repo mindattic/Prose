@@ -1,0 +1,47 @@
+{
+  "id": "fff654ef03b981e1fbfd5311dee59f9f",
+  "type": "faction",
+  "name": "The Red Ledger",
+  "aliases": [
+    "Red Ledger",
+    "The Bookkeepers",
+    "RL"
+  ],
+  "motto": "Every debt gets paid. We keep the books.",
+  "description": "The Red Ledger is a criminal lending and debt enforcement operation of approximately 90 members that functions as the Shelf's unofficial banking system. In a tier where corporate financial services don't operate because the population isn't profitable enough to serve, the Red Ledger fills the gap — offering loans, managing savings, facilitating transactions, and providing the financial infrastructure that legitimate institutions refuse to provide.\n\nThe catch, of course, is the interest rates. The Red Ledger charges rates that would be criminal in a jurisdiction with consumer protection laws, which GLMZ is not. A Shelf resident who borrows Φ1,000 to cover an augmentation repair might owe Φ3,000 within six months. The Ledger's enforcers — called 'collectors' — ensure repayment through escalating pressure: reminders, public shaming, property seizure, physical intimidation, and, in extreme cases, seizure of the debtor's augmentations (sold to the Cutters Guild to satisfy the debt).\n\nWhat prevents the Red Ledger from being pure predation is its other function: it genuinely facilitates economic activity in the Shelf. Without the Ledger's loans, many Shelf businesses couldn't start. Without its transaction services, trade between neighborhoods would be slower and less reliable. The Ledger is a parasite and a circulatory system simultaneously, and the Shelf's relationship with it is the same as its relationship with every other institution that exploits the desperate: hatred, dependence, and the absence of alternatives.",
+  "ideology": "Money makes the world move. We make the money move. The Red Ledger views itself as an essential financial service provider operating in a market that legitimate institutions have abandoned. The exploitation is acknowledged internally as the cost of operating without institutional protections.",
+  "territory": "Throughout the Shelf, with collection offices (called 'branches') in every major Shelf neighborhood.",
+  "leadership": "The Comptroller — a man named Idris Osei-Volkov — runs the Ledger with the fastidious precision of an actual banker. He worked for a legitimate financial institution before it withdrew from the Shelf, and he took its methods (if not its morals) with him.",
+  "methods": [
+    "High-interest lending to Shelf residents and businesses",
+    "Transaction facilitation and savings management",
+    "Debt collection through escalating enforcement",
+    "Augmentation seizure for debt satisfaction",
+    "Financial record-keeping for the informal economy",
+    "Money laundering for other criminal organizations"
+  ],
+  "resources": [
+    "90 employees including lenders, collectors, and administrators",
+    "Branch offices throughout the Shelf",
+    "Significant financial reserves from lending operations",
+    "Idris's banking expertise applied to the informal economy",
+    "Relationships with virtually every business and individual in the Shelf",
+    "Detailed financial records on the Shelf's population"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Red Ledger represents the exploitation that fills the gap when legitimate institutions withdraw — and the uncomfortable reality that even predatory services can be essential.",
+  "story_hooks": [
+    "Idris has discovered that someone is forging Red Ledger debt records — creating fictional debts and using Ledger collectors to enforce them. The fake debts are targeting specific individuals, and the pattern suggests someone is using the Ledger as a weapon.",
+    "A Shelf business owner has organized a debt strike — a group refusal to pay Ledger debts. The Comptroller can't let the strike succeed without destroying the Ledger's business model. The strikers can't back down without losing everything."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "finance",
+    "lending",
+    "shelf",
+    "debt",
+    "organized crime"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "769a51c68791c4653107679f40633acc",
+  "name": "Iowan Behemoth — 'Palisade'",
+  "type": "automaton",
+  "classification": "Iowan Behemoth",
+  "aliases": [
+    "Palisade",
+    "The Wall",
+    "Flatline"
+  ],
+  "manufacturer": "Unknown — origin disputed",
+  "description": "Palisade defies the typical Behemoth profile. It is not tall — it stands barely four stories high. But it is enormous in footprint, a flat, rectangular platform over 200 meters long and 100 meters wide, crawling on hundreds of small, independently articulated legs like a mechanical centipede the size of a city block. Its upper surface is a featureless expanse of armored plating broken only by regularly spaced turret housings, most of which appear inactive. Palisade moves across the wasteland like a mobile airfield, its passage flattening everything in its path into a smooth, compressed road surface.\n\nThe roads Palisade leaves behind are its most notable feature. Wherever it travels, it deposits a layer of compressed aggregate and bonding agent that creates a durable, flat roadway — a highway built by a machine for machines. These roads connect points of apparent significance: old military installations, mineral deposits, locations where other Behemoths frequently pause. The network has been growing for decades, and satellite mapping reveals a pattern that suggests deliberate infrastructure development. Palisade is building a road system across the wasteland, and no one asked it to.\n\nHuman communities have begun using Palisade's roads for trade routes, which presents a dilemma. The roads are the best-maintained infrastructure in the wasteland, but they also attract other Behemoths. Palisade's routes seem designed to facilitate machine traffic, and the other Behemoths use them. A settlement built along a Palisade road gets excellent trade access and a front-row seat to regular Behemoth passage — a trade-off that different communities evaluate very differently.",
+  "tier_availability": "N/A — uncontrolled autonomous entity",
+  "legality": "N/A — no jurisdiction claims authority over Behemoths",
+  "autonomy_level": "Fully autonomous — infrastructure construction behavior",
+  "dimensions": "12m height, 200m length, 100m width",
+  "weight": "Estimated 40,000+ metric tons",
+  "power_source": "Unknown — internal material processing suggests thermal conversion",
+  "locomotion": "Myriapod crawler, hundreds of small articulated legs (~4 km/h)",
+  "armament": [
+    "Turret housings (mostly inactive, 6 confirmed operational with rotary cannons)",
+    "Sheer mass — anything in its path is crushed and incorporated",
+    "Road-building machinery repurposed as grinding/crushing systems"
+  ],
+  "sensors": [
+    "Ground-penetrating radar (surveys terrain ahead of path)",
+    "GPS-equivalent positioning (unknown satellite network)",
+    "Material composition analysis in road-building systems"
+  ],
+  "countermeasures": "Palisade is essentially unkillable through conventional means — its distributed leg system means losing dozens of legs barely affects its movement, and its flat profile presents minimal target area. Its mass makes it immune to anything short of nuclear weapons. The practical approach is simply not being in its path, which is predictable from its road network.",
+  "known_deployments": [
+    "Entire Iowa wasteland — road network spans 3,000+ km",
+    "Roads extend into Nebraska, Illinois, Missouri, and Minnesota",
+    "Has been observed building road toward GLMZ (currently 40 km out)"
+  ],
+  "story_hooks": [
+    "Palisade's road is approaching a major city. The road leads directly to the city wall. Municipal authorities are debating whether to reinforce the wall or open a gate — because the trade opportunities of a Behemoth-grade highway are enormous, but so are the risks.",
+    "Someone has discovered that Palisade's roads contain embedded data conduits — fiber optic cables woven into the aggregate. The roads aren't just roads. They're a network. And something is already using it."
+  ],
+  "cultural_context": "Palisade has reshaped wasteland geography more than any other single force. Its road network defines trade routes, settlement locations, and political boundaries. Maps of the wasteland are increasingly organized around Palisade roads. Some scholars argue that Palisade is terraforming — rebuilding infrastructure for a civilization that doesn't exist yet.",
+  "tags": [
+    "automaton",
+    "behemoth",
+    "iowan",
+    "infrastructure",
+    "road-builder",
+    "colossal",
+    "wasteland",
+    "myriapod",
+    "network"
+  ]
+}

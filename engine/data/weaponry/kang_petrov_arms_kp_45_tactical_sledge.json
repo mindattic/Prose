@@ -1,0 +1,47 @@
+{
+  "id": "6ec7ac3702c6483a9bb2512101ea15b1",
+  "name": "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
+  "type": "weapon",
+  "aliases": [
+    "Sledge",
+    "KP-45T",
+    "The Hammer"
+  ],
+  "category": "pistol",
+  "description": "The Kang-Petrov KP-45 Tactical is the heavy-caliber variant of the ubiquitous KP platform, chambered in .45 ACP with a threaded barrel, suppressor-height sights, and an accessory rail. The frame is wider than the standard KP-19, accommodating a double-stack .45 magazine that gives the weapon a distinctly blocky, aggressive profile.\n\nKang-Petrov designed the Sledge for contract security operators who need more stopping power than 9mm but can't justify the expense of a Volkov-Saito or Arcturus platform. It delivers .45 ACP performance at a price point that bulk purchasers find acceptable, with the same parts-availability advantage that makes the KP-19 so popular. The threaded barrel accepts standard suppressors, making it one of the cheapest suppressor-ready .45 platforms on the market.\n\nThe Sledge is the workhorse's bigger, meaner sibling. It lacks refinement but compensates with brute functionality. Security teams who operate in noise-sensitive environments — residential districts, hospital corridors, corporate campuses after hours — favor it for its suppressor compatibility and adequate performance at a fraction of premium pricing.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration; suppressor requires separate license",
+  "base_technologies": [
+    "Threaded barrel",
+    "Suppressor-height sights",
+    "Double-stack magazine",
+    "Steel-reinforced polymer frame"
+  ],
+  "specifications": "caliber: .45 ACP\neffective_range: 45 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 12 rounds\nweight: 0.95 kg",
+  "tactical_use": "A suppressor-ready duty pistol offering .45 ACP stopping power at budget pricing. Effective for security operations in noise-sensitive environments when paired with a suppressor. The double-stack magazine provides reasonable capacity for the caliber. Suitable for close to medium range engagements against unarmored and lightly armored targets.",
+  "cultural_context": "The Sledge is the weapon of choice for security contractors who need results without corporate branding. It carries no prestige and no stigma — it is simply a tool. In the Mid districts, seeing a security guard with a suppressed Sledge is unremarkable, which is exactly the point.",
+  "known_users": [
+    "Contract security operators",
+    "Hospital security teams",
+    "Corporate campus night security",
+    "Budget-conscious bounty hunters"
+  ],
+  "story_hooks": [
+    "A suppressed Sledge is used in an assassination that was meant to look like a security response — the weapon is traced to a legitimate security contractor who claims it was stolen.",
+    "Kang-Petrov is releasing a smart-link compatible KP-45S, and someone is sabotaging the production line."
+  ],
+  "ammunition_type": [
+    ".45 ACP"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "suppressed",
+    "tactical",
+    "budget",
+    "security"
+  ],
+  "physical_description": "The Sledge is a chunky, utilitarian powerhouse—a matte-black steel frame widened to accommodate stacked .45 rounds, its grip textured with worn polymer that's seen hard use. The threaded barrel extends forward with suppressor-ready precision, while picatinny rails run the length of the slide, collecting the scratches and dust of street work. Suppressor-height sights sit proud above the frame, their tritium inserts dimly glowing in the perpetual GLMZ rain.",
+  "visual_prompt": "industrial .45 tactical pistol, matte black steel, wide polymer grip, threaded barrel, picatinny rails, suppressor-height sights, worn grip tape, detailed product shot, gritty neo-noir, rain-slicked metal, dark studio background, weathered finish, cyberpunk weapon design, professional tactical photography"
+}

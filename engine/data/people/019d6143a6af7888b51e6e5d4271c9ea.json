@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Stateless Minor",
-      "Solo Wanderer",
-      "Partial Geneware",
-      "Threat-Reader",
-      "Caravan Rat"
+      "stateless minor",
+      "solo wanderer",
+      "partial geneware",
+      "threat-reader",
+      "caravan rat"
     ]
   },
   "behavioral": {
@@ -249,7 +249,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

@@ -1,0 +1,42 @@
+{
+  "id": "33f702e8b82aab2f4b805e6ff3f3dc67",
+  "name": "NullPoint Technologies SynapseJam SJ-3 'Migraine'",
+  "type": "weapon",
+  "aliases": [
+    "Migraine",
+    "SJ-3",
+    "Neural Fog",
+    "Brain Stutter"
+  ],
+  "category": "self_defense",
+  "description": "A directed BCI disruption device that fires a focused electromagnetic pulse calibrated to the operating frequencies of common neural interface models. Unlike the omnidirectional NG-1, the SJ-3 is a point-and-shoot device that delivers its disruption field in a narrow cone, affecting only the targeted individual within a five-meter range. The SJ-3's pulse causes a brief but intense disruption of BCI signal processing, manifesting as a 'neural stutter' — a two-to-four-second window during which augmented cognitive functions (enhanced reflexes, threat assessment, sensory processing) experience cascading errors.\n\nThe SJ-3 represents NullPoint's second-generation BCI defense technology, incorporating frequency profiles for the forty most common neural interface models in GLMZ. The device automatically scans for BCI signal emissions and adjusts its disruption pulse to match the detected interface's operating frequency, significantly increasing effectiveness compared to the broadband interference of the NG-1. This targeting capability also means the SJ-3 is less likely to affect bystanders' augmentations — though it will still disrupt any BCI system within its cone.\n\nPriced at Φ680, the SJ-3 is a significant investment but has found a market among individuals who have been specifically victimized by augmented criminals and are willing to invest in targeted countermeasures. NullPoint sells the device through security consultants rather than retail channels, partly for liability management and partly to ensure purchasers receive training in appropriate use.",
+  "manufacturer": "NULLPOINT TECHNOLOGIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Frequency-adaptive BCI disruption",
+    "Neural interface model profiling",
+    "Directed electromagnetic pulse focusing"
+  ],
+  "specifications": "disruption range: 5 meters directional cone (15-degree width)\neffect: 2-4 second neural stutter (cascading BCI processing errors)\nfrequency profiles: 40 common neural interface models\nauto-detection: scans for BCI signal emissions\npulses per charge: 10\nrecharge: 2 hours\nweight: 145 g\ndimensions: 12 cm x 4 cm cylinder\ncost: Φ680",
+  "tactical_use": "Point the device at the augmented attacker and press the activation button. The SJ-3 will auto-detect their BCI frequency and deliver a tuned disruption pulse. The resulting neural stutter causes a two-to-four-second window of impaired cognitive function — use this window to deploy other deterrents or flee. The directed cone means you can target an individual without affecting nearby civilians in most situations. Ineffective against individuals with hardwired-only augmentations or military-grade shielded interfaces.",
+  "cultural_context": "The SJ-3 has elevated the BCI defense conversation from broad disruption to targeted countermeasures, and this precision has made it simultaneously more socially acceptable and more controversial. Proponents argue that targeting a specific attacker's augmentations is more ethical than disrupting everyone nearby. Opponents argue that the device's frequency-profiling capability is one step from a neural weapon — a tool designed to attack someone's brain. The legal and ethical framework for BCI countermeasures is years behind the technology.",
+  "known_users": [],
+  "story_hooks": [
+    "A modified SJ-3 has been recovered that extends the neural stutter duration to minutes rather than seconds — the victim experienced a prolonged cognitive shutdown that caused permanent memory loss around the event.",
+    "NullPoint's frequency profile database has been leaked, and black-market developers are using it to create offensive neural attack tools that target specific BCI models with destructive rather than disruptive pulses."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "bci_defense",
+    "directed",
+    "neural_disruption",
+    "frequency_adaptive",
+    "tier_3"
+  ],
+  "physical_description": "The SJ-3 resembles a compact, industrial pistol grip wrapped in scuffed polymer composite and worn titanium-alloy plating. A targeting reticle module sits atop the frame, its lens scratched from repeated use, while the emission chamber—a ribbed cylindrical housing—protrudes from the barrel like a suppressor. Weathered grip tape and stress fractures along the trigger guard suggest field abuse; a faint blue indicator light pulses weakly near the capacitor housing.",
+  "visual_prompt": "gritty neo-noir BCI disruption device, compact tactical pistol form factor, worn titanium and scuffed polymer, industrial targeting optics, ribbed emission chamber, blue indicator light, detailed product photography, rain-slicked metallic surfaces, dark background, cyberpunk weapon, street-level tech, realistic wear and tear, 2080s aesthetic"
+}

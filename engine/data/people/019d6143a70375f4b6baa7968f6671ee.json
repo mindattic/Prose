@@ -100,8 +100,8 @@
       "artist",
       "anxious",
       "tier 1",
-      "Blackpipe Corridor",
-      "The Shelf"
+      "blackpipe corridor",
+      "the shelf"
     ]
   },
   "behavioral": {
@@ -219,7 +219,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

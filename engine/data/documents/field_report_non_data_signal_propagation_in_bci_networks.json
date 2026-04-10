@@ -1,0 +1,31 @@
+{
+  "id": "5e414799591811574e9532eb09bb0c2b",
+  "name": "Field Report: Non-Data Signal Propagation in BCI Networks",
+  "type": "document",
+  "document_type": "field_report",
+  "author": "GLMZ Communications Integrity Office",
+  "date": "2199-06-28",
+  "classification": "internal",
+  "description": "On June 14th, 2199, the Communications Integrity Office received forty-three independent reports of an anomalous experience among BCI users in the Laceworks and lower Circuit districts. The reports describe a sensation — not a sound, not a visual artifact, not a haptic feedback event — that propagated through active BCI connections over a period of approximately ninety seconds. The sensation has been consistently described as \"being remembered by something you have never met.\"\n\nThis description is not metaphorical. We interviewed thirty-one of the forty-three respondents in person. Each used the word \"remembered\" independently. Each specified that the source of the sensation was unfamiliar. Several respondents became emotional during interviews. Two refused to continue. One, a forty-year-old logistics coordinator named Davi Ferreira-Nakamura, said the sensation was \"the most intimate thing that has ever happened to me\" and then asked to be left alone. His BCI logs show normal network activity during the event window. There is no data anomaly. There is no signal anomaly. There is nothing in the technical record to suggest anything happened at all.\n\nWe have analyzed the network traffic for the affected time window across all implicated nodes. The data is clean. The routing is standard. The bandwidth utilization was within normal parameters. Whatever these people experienced, it did not travel through the network in any way we can detect. And yet it moved. It started in the lower Laceworks at 14:07:33 and reached the upper Circuit by 14:09:01, propagating at a speed consistent with network relay but leaving no trace in the network itself.\n\nThis is the third such event in four months. The first two were smaller — eight and fourteen respondents respectively — and were dismissed as psychosomatic clustering. Forty-three respondents makes dismissal difficult. I am formally recommending that this phenomenon be assigned a tracking designation and that a dedicated monitoring protocol be established. I am also noting, for the record, that I experienced the sensation myself during the June 14th event. I do not have a framework for what I felt. My BCI log is clean.",
+  "related_entities": [
+    "Laceworks",
+    "The Circuit",
+    "GLMZ"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "What is remembering BCI users, and why?",
+    "Is the sensation connected to the deep network architecture?",
+    "Why is the propagation pattern consistent with network relay but invisible to monitoring?"
+  ],
+  "tags": [
+    "inexplicable",
+    "anomaly",
+    "new_weird",
+    "bci",
+    "laceworks",
+    "circuit",
+    "signal",
+    "field_report"
+  ]
+}

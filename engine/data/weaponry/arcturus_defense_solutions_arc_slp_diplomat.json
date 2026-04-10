@@ -1,0 +1,47 @@
+{
+  "id": "d15ca523c387f9991545522f660fc1a5",
+  "name": "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
+  "type": "weapon",
+  "aliases": [
+    "Diplomat",
+    "ARC-SLP",
+    "The Handshake"
+  ],
+  "category": "pistol",
+  "description": "The Arcturus Defense Solutions ARC-SLP is a smart-linked compact pistol chambered in 9x19mm, designed specifically for executive protection details who operate in social environments where overt weapons are inappropriate. The weapon's profile is deliberately minimized — thin slide, flush sights, recessed controls — and the frame is finished in a matte gray that doesn't catch light or draw attention under clothing.\n\nThe Diplomat's BCI integration is tuned for the specific challenges of protection work in crowded social environments. The threat detection system is optimized for close-range engagement in dense civilian clusters, providing the shooter with precision guidance that minimizes collateral risk. The system can distinguish between a reaching-for-a-weapon motion and a reaching-for-a-glass motion with ninety-two percent accuracy — a capability that has prevented multiple misidentification incidents during field deployment.\n\nArcturus developed the Diplomat after a high-profile incident where an executive's bodyguard discharged a conventional weapon in a crowded reception, killing a bystander. The project mandate was simple: build a weapon that makes sure the right person gets shot and nobody else does. The result is the most expensive compact 9mm pistol ever manufactured, and every Spire protection detail wants one.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — requires BCI registration and executive protection license",
+  "base_technologies": [
+    "BCI smart-link",
+    "Crowd-safe targeting AI",
+    "Minimized profile design",
+    "Motion-intent classification"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 40 meters (smart-linked)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 12 rounds\nweight: 0.62 kg\nBCI_latency: <6ms\nmotion_classification_accuracy: 92%",
+  "tactical_use": "A precision smart-linked compact pistol for executive protection in social environments. The crowd-safe targeting system reduces collateral risk by providing the shooter with real-time assessment of bystander positions and shot angles. The minimized profile enables concealment under formal attire. Optimized for close-range precision rather than extended engagement.",
+  "cultural_context": "The Diplomat is invisible by design — its entire purpose is to not exist until the moment it's needed. In Spire social circles, the knowledge that every protection detail likely carries one creates an undercurrent of carefully managed tension at high-profile events. The weapon embodies the Spires' approach to violence: precise, controlled, and never acknowledged until it's over.",
+  "known_users": [
+    "Spire executive protection details",
+    "Arcturus VIP security teams",
+    "High-profile event security coordinators"
+  ],
+  "story_hooks": [
+    "A Diplomat's crowd-safe AI malfunctions during a reception and flags every person in the room as a threat simultaneously, causing the protection detail to evacuate their principal in a panic. The malfunction was not random.",
+    "An executive's protection detail member goes rogue and uses the Diplomat to assassinate their own principal — the crowd-safe system ensuring that no witnesses in the packed ballroom were harmed."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "smart_link",
+    "BCI",
+    "executive_protection",
+    "concealed",
+    "arcturus"
+  ],
+  "physical_description": "A compact 9mm pistol with a razor-thin slide and recessed controls designed to disappear under a jacket. The matte gray finish is deliberately unreflective, the sights are flush-mounted, and the grip shows subtle wear from frequent holstering. The frame is polymer-reinforced steel with a faint BCI interface node visible near the trigger guard—functional, not decorative.",
+  "visual_prompt": "compact 9mm pistol, matte gray finish, minimalist design, flush sights, neo-noir product photography, gritty industrial aesthetic, worn polymer and steel, dark moody lighting, shallow depth of field, rain-slicked surface reflection, cyberpunk detail, executive protection weapon, unreflective surfaces, detailed trigger mechanism, professional studio photography, dark background"
+}

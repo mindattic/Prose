@@ -1,0 +1,45 @@
+{
+  "id": "eb6d50e05d64bf200b9774914f078568",
+  "name": "Zheng-Dao Heavy Industries Thunderhead ZD-20 'Cloudburst'",
+  "type": "weapon",
+  "aliases": [
+    "Cloudburst",
+    "ZD-20",
+    "Thunderhead",
+    "Storm Front"
+  ],
+  "category": "support",
+  "description": "A man-portable grenade launcher system that fires programmable airburst munitions capable of detonating at a precise distance from the launcher. The Thunderhead's BCI integration allows the operator to designate an airburst point in three-dimensional space, and the munition detonates at that exact coordinate regardless of intervening obstacles.\n\nZheng-Dao designed the ZD-20 to defeat the problem of targets hiding behind cover — rather than penetrating the cover, the Cloudburst launches a grenade over or around it, with the airburst point set behind the obstacle. The BCI-programmed fuze measures distance from the muzzle and detonates at the designated range, producing a lethal fragmentation radius of 5 meters.\n\nThe Thunderhead is fed from a revolver-style 6-round cylinder, and each round can be independently programmed with a different airburst distance. An experienced operator can engage six different targets at six different ranges in under 10 seconds, placing fragmentation behind cover at each point.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — military and corporate security forces",
+  "base_technologies": [
+    "Programmable airburst fuze technology",
+    "BCI-designated detonation point control",
+    "Revolving cylinder feed system"
+  ],
+  "specifications": "caliber: 25mm programmable airburst grenade\neffective_range: 50-400 meters (airburst), 600 meters maximum trajectory\nrate_of_fire: Semi-automatic, 1 round per 1.5 seconds\ncapacity: 6-round revolving cylinder\nweight: 6.8 kg loaded\npower_source: BCI-programmed fuze, no additional power",
+  "tactical_use": "The Cloudburst neutralizes the defensive advantage of cover. Operators designate airburst points behind walls, inside rooms through windows, and above rooftop positions. The weapon transforms every piece of cover into a potential kill zone — defenders who believe they are protected discover that the fragmentation arrives from above or behind. In urban operations, the Thunderhead is often paired with a conventional support weapon that forces defenders into cover, allowing the Cloudburst operator to engage them in their 'safe' positions.",
+  "cultural_context": "The Thunderhead has changed the way defenders think about cover in GLMZ's urban environment. The old rule — get behind something solid and you survive — no longer applies when grenades can be programmed to detonate behind your wall. Architectural firms have begun designing defensive positions with overhead protection as standard, and personal shelter products now advertise '360-degree fragmentation resistance.' Zheng-Dao markets the ZD-20 with the tagline 'Nowhere to hide.'",
+  "known_users": [
+    "Zheng-Dao corporate assault forces",
+    "Urban warfare specialists"
+  ],
+  "story_hooks": [
+    "A Thunderhead operator programmed an airburst point inside a residential apartment, killing a family that was sheltering during a corporate engagement. The operator claims their BCI was hacked and the detonation point was moved. The weapon's flight recorder has been confiscated by corporate investigators.",
+    "Zheng-Dao is developing a thermobaric airburst round for the Thunderhead — a munition that combines fragmentation with a fuel-air explosion. Field tests have been conducted in unpopulated sectors, but the blast effects exceeded projections by 300%."
+  ],
+  "ammunition_type": [
+    "25mm programmable airburst grenade"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "grenade-launcher",
+    "airburst",
+    "BCI",
+    "tier 3"
+  ],
+  "physical_description": "The Thunderhead ZD-20 is a brutalist tube-and-frame launcher, all scarred steel and worn polymer grips, with a boxy magazine feed and a targeting module the size of a fist mounted above the barrel. Streaked with rain residue and carbon scoring, the weapon bears Zheng-Dao's blocky logotype stamped into the receiver; the BCI neural port glows faintly amber when armed. Its weight settles heavy in the hands—industrial, unforgiving, built for function over finesse.",
+  "visual_prompt": "Zheng-Dao Heavy Industries grenade launcher, gritty neo-noir product shot, worn steel and scuffed polymer, boxy military design, rain-slicked surfaces, carbon scoring, faint amber neural interface glow, dark industrial background, detailed weathering, tactical attachment rail, moody neon rim lighting, cinematic product photography, cyberpunk aesthetic, utilitarian brutalism"
+}

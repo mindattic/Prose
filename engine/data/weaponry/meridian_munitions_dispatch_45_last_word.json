@@ -1,0 +1,46 @@
+{
+  "id": "a25b1e1ce9858acbccbca64e51b8aaa5",
+  "name": "Meridian Munitions Dispatch-45 'Last Word'",
+  "type": "weapon",
+  "aliases": [
+    "Last Word",
+    "Dispatch",
+    "The Forty-Five"
+  ],
+  "category": "pistol",
+  "description": "The Meridian Munitions Dispatch-45 is a full-size semi-automatic pistol chambered in .45 ACP, positioned as the most affordable full-power sidearm on the market. The frame is glass-filled nylon, the slide is carbon steel with a basic phosphate finish, and the sights are molded into the slide rather than separately installed. Everything about the Dispatch-45 communicates 'minimum viable product.'\n\nDespite its budget construction, the Dispatch-45 is surprisingly functional. Meridian Munitions learned from the Compact-7 that their customer base tolerates cheap materials but not unreliability. The Dispatch-45's action is simple, robust, and runs dirty without complaint. The .45 ACP round provides genuine stopping power, and the full-size frame absorbs enough recoil to make follow-up shots manageable for average shooters.\n\nThe Last Word has become the standard arm of Shelf district enforcers — informal community defense figures who maintain order where corponation security doesn't bother to reach. For these individuals, the Dispatch-45 provides the minimum capability needed to be taken seriously: a reliable .45 that hits hard enough to matter. The nickname reflects its role — when a Shelf enforcer draws a Last Word, the conversation is over.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "Glass-filled nylon frame",
+    "Carbon steel slide",
+    "Simplified action"
+  ],
+  "specifications": "caliber: .45 ACP\neffective_range: 35 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10 rounds\nweight: 0.82 kg",
+  "tactical_use": "A budget full-power sidearm suitable for personal defense and informal enforcement. The .45 ACP round provides adequate stopping power against unarmored targets. Accuracy is acceptable at close range. Reliability is the weapon's strongest feature — it continues to function in conditions that would choke more refined designs.",
+  "cultural_context": "The Last Word is a Shelf institution. It is the weapon that community enforcers carry when they walk the blocks at night, the weapon that shopkeepers keep under the counter, the weapon that says 'I am poor but I am not helpless.' In Shelf culture, the Dispatch-45 carries more respect than weapons costing ten times as much.",
+  "known_users": [
+    "Shelf district enforcers",
+    "Shelf shopkeepers",
+    "Community defense groups",
+    "Budget-conscious personal defense buyers"
+  ],
+  "story_hooks": [
+    "A Shelf enforcer's Last Word is used to kill a corponation middle manager — and the enforcer insists the weapon was in their holster the entire time. Ballistics confirm it's their gun.",
+    "Meridian Munitions announces they're discontinuing the Dispatch-45 due to new material regulations. Shelf communities begin stockpiling the weapon, driving prices up tenfold."
+  ],
+  "ammunition_type": [
+    ".45 ACP"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "budget",
+    "shelf",
+    "enforcer",
+    "stopping_power"
+  ],
+  "physical_description": "The Dispatch-45 is a utilitarian slab of a pistol—all flat planes and sharp angles molded from milky translucent nylon, the frame already stress-cracked and yellowed from years of grip sweat and cheap holster friction. Its carbon steel slide wears a dull phosphate gray, scratched bare to raw metal in places, the sights molded directly into the top like an afterthought. Everything about it screams 'made to work, not to impress'—a tool that costs almost nothing and looks it.",
+  "visual_prompt": "gritty product photography, budget semi-automatic pistol, translucent nylon frame yellowed and stress-cracked, dull phosphate gray carbon steel slide, molded sights, worn and scratched, utilitarian industrial design, dark rain-slicked background, neo-noir lighting, high detail, realistic materials, street-level worn aesthetic, cyberpunk gritty"
+}

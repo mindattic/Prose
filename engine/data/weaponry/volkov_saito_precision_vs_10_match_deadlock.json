@@ -1,0 +1,47 @@
+{
+  "id": "6109abe3759f1b5ca65066db81d3517d",
+  "name": "Volkov-Saito Precision VS-10 Match 'Deadlock'",
+  "type": "weapon",
+  "aliases": [
+    "Deadlock",
+    "VS-10M",
+    "The Match"
+  ],
+  "category": "pistol",
+  "description": "The Volkov-Saito VS-10 Match is a competition-grade semi-automatic pistol chambered in 10mm Auto, featuring a six-inch bull barrel, adjustable trigger, and a frame weight system that allows the shooter to customize the weapon's balance. It is the largest and heaviest pistol in Volkov-Saito's lineup, designed for shooters who want maximum accuracy from a maximum-power cartridge.\n\nThe Deadlock is an oddity in the Volkov-Saito catalog — a weapon that is too large and heavy for practical carry but too accurate and powerful to be dismissed as merely recreational. In competitive shooting, it dominates the open-caliber division. In the field, the rare operators who carry it pair the 10mm's terminal performance with a level of precision that turns every engagement into a surgical exercise.\n\nThe weapon's balance system uses tungsten inserts in the grip and dust cover that the shooter can rearrange to shift the center of gravity forward, rearward, or neutral. This customization means no two Deadlocks handle identically — each is tuned to its owner's grip, stance, and recoil management preferences. The result is a deeply personal weapon that rewards long-term familiarity.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — enhanced registration required",
+  "base_technologies": [
+    "Bull barrel",
+    "Adjustable trigger",
+    "Customizable balance system",
+    "Tungsten weight inserts"
+  ],
+  "specifications": "caliber: 10mm Auto\neffective_range: 75 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 14 rounds\nweight: 1.22 kg (adjustable)",
+  "tactical_use": "A precision large-caliber pistol offering exceptional accuracy at extended range. The 10mm Auto round provides superior terminal performance compared to 9mm and .45 ACP alternatives. The adjustable balance system allows the weapon to be optimized for the individual shooter. Too large for concealment — this is an open-carry or holster weapon for deliberate engagements.",
+  "cultural_context": "The Deadlock is the weapon of people who take shooting seriously as both skill and art. In competitive circles, it represents the pinnacle of pistol precision. Among working professionals, carrying a Deadlock says you are confident enough in your accuracy to carry a weapon that demands it.",
+  "known_users": [
+    "Competitive pistol shooters",
+    "Precision-focused security professionals",
+    "Weapons collectors",
+    "Shooting instructors"
+  ],
+  "story_hooks": [
+    "A Deadlock is used to make an impossible shot — a target hit at over one hundred meters through a gap in moving machinery. The shooter is either the best marksman in GLMZ or had help no one can identify.",
+    "A shipment of custom tungsten weight inserts for Deadlocks is intercepted — analysis reveals the inserts contain embedded tracking devices."
+  ],
+  "ammunition_type": [
+    "10mm Auto"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "precision",
+    "competition",
+    "10mm",
+    "customizable"
+  ],
+  "physical_description": "The VS-10 Match is a substantial, purposeful slab of matte gunmetal and polymer—six inches of fluted bull barrel dominating a reinforced frame that feels like holding a brick wrapped in precision engineering. Its adjustable trigger assembly gleams under grime, and the grip is textured with wear patterns from countless range sessions. Heavy enough to anchor a shooter's hand, it bears the scuffed aesthetic of a tool that's been maintained obsessively but used without vanity.",
+  "visual_prompt": "Volkov-Saito VS-10 Match pistol, 10mm semi-automatic, matte gunmetal finish, six-inch bull barrel, adjustable competition trigger, dark polymer grip, product photography, gritty neo-noir aesthetic, worn industrial aesthetic, detailed metallurgy, dramatic side-lighting, black background, cyberpunk tabletop RPG weapon, high contrast, professional gun photography"
+}

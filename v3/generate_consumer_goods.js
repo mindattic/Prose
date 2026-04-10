@@ -132,7 +132,7 @@ const CATEGORIES = [
   {
     category: 'soda',
     count: 90,
-    prompt: `Generate {count} sodas/soft drinks for GLMZ, ranked {rankStart} to {rankEnd} within the soda category (1 = most popular, the Coca-Cola equivalent of M88). Include: tamarind, hibiscus, yuzu, guava, ube, lychee, horchata, baobab, sorrel, passionfruit, mate, bissap flavors and many more global mashups. Some synth-flavored (cheaper, Tier 1-2), some real-extract (expensive, Tier 3-4). Brand names should sound futuristic but natural — real brand energy, not parody. Mix corporate mega-brands (#1-10) with mid-tier players (#11-40) and niche/street brands (#41-80). Prices range from Φ0.50 (cheapest synth) to Φ15 (premium real-extract).`
+    prompt: `Generate {count} sodas/soft drinks for GLMZ, ranked {rankStart} to {rankEnd} within the soda category (1 = most popular, the Coca-Cola equivalent of GLMZ). Include: tamarind, hibiscus, yuzu, guava, ube, lychee, horchata, baobab, sorrel, passionfruit, mate, bissap flavors and many more global mashups. Some synth-flavored (cheaper, Tier 1-2), some real-extract (expensive, Tier 3-4). Brand names should sound futuristic but natural — real brand energy, not parody. Mix corporate mega-brands (#1-10) with mid-tier players (#11-40) and niche/street brands (#41-80). Prices range from Φ0.50 (cheapest synth) to Φ15 (premium real-extract).`
   },
   {
     category: 'candy',
@@ -265,7 +265,7 @@ Each product MUST have exactly these fields:
   "price": "Φ amount",
   "popularity_rank": number,
   "slogan": "advertising tagline",
-  "cultural_context": "how people relate to this product in M88 society",
+  "cultural_context": "how people relate to this product in GLMZ society",
   "story_hooks": ["array of 2-3 narrative hooks for this product"]
 }
 

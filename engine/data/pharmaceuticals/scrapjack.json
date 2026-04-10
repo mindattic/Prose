@@ -1,0 +1,43 @@
+{
+  "name": "Scrapjack",
+  "type": "pharmaceutical",
+  "aliases": [
+    "jack",
+    "scrap",
+    "the scrape",
+    "chrome juice"
+  ],
+  "category": "street_concoction",
+  "subcategory": "chemical_augment_scrapping_high",
+  "manufacturer": "Shelf scrappers; no single manufacturer",
+  "description": "The chemical byproduct of boiling down decommissioned augmentation components — specifically the synthetic lubricant and signal-dampening fluids used in older chrome joints and actuators — reduced to a concentrated injectable. The fluid contains a complex mix of compounds including dissolved SNT-coating residue, synthetic myelin analogs, and proprietary chemical stabilizers that, when injected, create a chaotic but intense neurological experience. It's the literal scraping of discarded machines made into a drug.",
+  "method_of_use": "injection",
+  "effects": [
+    "intense disorganized euphoria",
+    "fragmented sensory experiences — phantom limb sensations even without augmentation",
+    "brief periods of extraordinary clarity alternating with confusion",
+    "in augmented users: temporary overclocking of chrome with unpredictable results",
+    "sensation of 'becoming metal' described by users"
+  ],
+  "side_effects": [
+    "heavy metal toxicity with repeated use — manganese, cadmium, trace chromium",
+    "neurological damage from inconsistent SNT-analog exposure",
+    "in augmented users: permanent chrome malfunction or rejection is possible",
+    "granulomatous tissue reactions at injection sites",
+    "psychosis with chronic use",
+    "tremors",
+    "liver damage from industrial compound filtration",
+    "deaths from batch contamination are common"
+  ],
+  "duration": "1-3 hours",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 1 only",
+  "legality": "illegal",
+  "street_price": "Φ4-8 per dose",
+  "cultural_context": "Scrapjack is the drug of the Shelf's scrapper culture — people who make their living pulling apart decommissioned machines and chrome. The joke is that scrappers get paid twice for their work: once for the metal, and once for the juice. It's considered the lowest rung of the drug market, used by people who are already at the margins of the margins. Scrapjack users are called 'chrome-drunk' or 'junkers,' and the drug is associated with the particular nihilism of people who have decided they don't expect to live long anyway.",
+  "story_hooks": [
+    "A batch of Scrapjack has been causing users to receive coherent data fragments — actual files, not random noise — suggesting the decommissioned hardware it was cooked from contained memory that wasn't properly wiped, and the data is sensitive",
+    "A Shelf scrapper has discovered that certain Lazarus Pharmaceuticals chrome components, when processed into Scrapjack, produce a dramatically different and far more dangerous compound — and Lazarus may have known this when they decommissioned the parts",
+    "A Tier 3 researcher studying heavy metal toxicity in Shelf populations has traced an unusual neurological condition back to Scrapjack use — the condition is devastating, but in a small number of users, it appears to have created genuine novel neural pathways"
+  ]
+}

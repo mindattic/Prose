@@ -93,11 +93,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Mycologist",
-      "Apothecary",
-      "Survivor",
-      "Pragmatist",
-      "Underground Elder"
+      "mycologist",
+      "apothecary",
+      "survivor",
+      "pragmatist",
+      "underground elder"
     ]
   },
   "behavioral": {
@@ -207,7 +207,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

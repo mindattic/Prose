@@ -33,12 +33,17 @@
     "vehicle",
     "food",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "civilian",
+    "utility",
+    "ground"
   ],
   "parent_corponation": "Ringo Corponation",
   "related_entities": [
     "Brecken Yılmaz-Osei",
     "Ringo Corponation",
     "Street Custom 'Four Horsemen' Pipe Pepperbox"
-  ]
+  ],
+  "physical_description": "A compact aluminum-frame trailer with weathered composite panels in corporate gray-blue, its hydraulic joints stained with rust-tinged hydraulic fluid. When deployed, it unfolds like a mechanical flower—aluminum struts lock into place, a retractable awning of faded synthetic fabric extends overhead, and modular shelving units slide into position. A grimy PoS terminal is bolted to the counter edge, its screen perpetually smudged; a small security camera mounted on the upper corner rotates with audible servo grinding.",
+  "visual_prompt": "weathered aluminum trailer popup stall, hydraulic joints, faded gray-blue composite panels, retractable awning, modular shelving, grimy point-of-sale terminal, security camera, rust stains, industrial neo-noir, gritty product photography, rain-slicked surfaces, neon reflection, dark moody background, detailed mechanical wear"
 }

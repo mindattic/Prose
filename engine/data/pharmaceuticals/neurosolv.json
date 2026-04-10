@@ -1,0 +1,38 @@
+{
+  "name": "Neurosolv",
+  "type": "pharmaceutical",
+  "aliases": [
+    "cooler",
+    "headwater",
+    "the damp"
+  ],
+  "category": "medical",
+  "subcategory": "neural inflammation reducer",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "An anti-neuroinflammatory compound formulated specifically for BCI-associated cerebral edema and glial scarring. Extended BCI use — particularly high-bandwidth sessions, combat BCI engagement, or jacked-in work shifts exceeding eight hours — causes measurable neuroinflammation around interface nodes and along data-pathway corridors in the brain. Neurosolv reduces this through selective COX-3 analog inhibition and targeted microglial suppression.",
+  "method_of_use": "oral",
+  "effects": [
+    "reduces BCI-associated cerebral edema",
+    "decreases glial scar formation around interface nodes",
+    "alleviates BCI headache and pressure sensation",
+    "slows long-term neural degradation from heavy BCI use"
+  ],
+  "side_effects": [
+    "cognitive blunting at higher doses",
+    "reduced BCI signal clarity while active — some users experience 'lag' sensation",
+    "rebound inflammation if discontinued abruptly",
+    "drowsiness",
+    "rare: paradoxical increase in interface sensitivity causing sensory flooding"
+  ],
+  "duration": "8–12 hours",
+  "addiction_risk": "low",
+  "tier_availability": "All tiers",
+  "legality": "legal",
+  "street_price": "Φ8–Φ25 per dose",
+  "cultural_context": "Anyone who jacks in hard knows the headache — the pressure behind the eyes after a long BCI session, the feeling that your skull is a size too small. Neurosolv is the aspirin of the augmented age. Data workers take it daily. Tier 1 hackers cut it with cheaper anti-inflammatories that don't cross the blood-brain barrier as cleanly. The long-term neural degradation from skipping it is well documented and largely ignored by people who have more immediate problems.",
+  "story_hooks": [
+    "A data-entry worker in Tier 2 is developing early-stage interface node scarring because her employer's mandatory overtime bans Neurosolv use during shifts — the company claims it reduces productivity metrics — and she's trying to build a case before the damage becomes permanent.",
+    "The Shelf version of Neurosolv is being cut with a compound that actually accelerates glial scarring over time while reducing short-term symptoms — someone is profiting from the long-term damage.",
+    "A character discovers that their neuroinflammation isn't from BCI overuse — something in their implants is deliberately triggering it, and Neurosolv is just masking the symptom."
+  ]
+}

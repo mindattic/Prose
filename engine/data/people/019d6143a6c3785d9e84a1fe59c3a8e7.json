@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Death Midwife",
-      "Memorial Geographer",
-      "Composed Under Pressure",
-      "Keeper of Secrets",
-      "Ethical Weight-Bearer"
+      "death midwife",
+      "memorial geographer",
+      "composed under pressure",
+      "keeper of secrets",
+      "ethical weight-bearer"
     ]
   },
   "behavioral": {
@@ -265,7 +265,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

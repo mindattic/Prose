@@ -94,11 +94,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Performer",
-      "Sharp",
-      "Guarded",
-      "Class-conscious",
-      "Institution"
+      "performer",
+      "sharp",
+      "guarded",
+      "class-conscious",
+      "institution"
     ]
   },
   "behavioral": {
@@ -206,7 +206,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

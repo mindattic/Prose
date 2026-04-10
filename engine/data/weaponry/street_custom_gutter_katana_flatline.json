@@ -1,0 +1,46 @@
+{
+  "id": "4c1d25f6ef046e3b1616a2cf5ecf258d",
+  "name": "Street-Custom Gutter Katana 'Flatline'",
+  "type": "weapon",
+  "aliases": [
+    "Flatline",
+    "Gutter Blade",
+    "Tier-Zero Katana",
+    "The Equalizer"
+  ],
+  "category": "melee",
+  "description": "A katana-length blade assembled from industrial waste materials — carbon-lattice offcuts from manufacturing, reclaimed structural composite, and scavenged handle wrapping. The Gutter Katana is not a product; it is a phenomenon. Across GLMZ's lower tiers, self-taught bladesmiths produce these weapons from whatever materials are available, and the results range from barely functional clubs to genuinely dangerous cutting weapons that rival corporate products.\n\nThe Flatline designation refers to a specific lineage of Gutter Katanas produced in the Undercroft district, where a network of anonymous smiths has developed a technique for heat-treating carbon-lattice offcuts that produces a blade of surprising quality. The process is passed from maker to maker without formal instruction — you learn by watching, and you prove your skill by producing a blade that passes a cutting test against a standardized target. Flatline blades are marked with a simple horizontal line etched near the guard.\n\nThe weapon represents the lower tiers' refusal to be disarmed by economics. Corporate weapons cost what lower-tier residents earn in months; a Flatline costs scavenging time and skill. The quality varies, but the cultural statement is consistent: access to violence is not a privilege reserved for those who can afford Crucible's price tags.",
+  "manufacturer": "UNDERCROFT STREET SMITHS",
+  "tier_availability": "Tier 1",
+  "legality": "Unlicensed — unregistered improvised weapon",
+  "base_technologies": [
+    "Reclaimed carbon-lattice heat treatment",
+    "Improvised composite construction",
+    "Community-transmitted forging techniques"
+  ],
+  "specifications": "blade_length: 60-72 cm (varies)\ntotal_length: 85-100 cm\nweight: 1.0-1.8 kg (varies by construction)\nblade_material: Heat-treated carbon-lattice offcuts\nedge_quality: Variable — ranging from crude to surprisingly refined\npower_requirement: None",
+  "tactical_use": "The Flatline's effectiveness depends entirely on the skill of the smith who made it. High-quality examples hold an edge comparable to entry-level corporate products and can defeat light body armor through material hardness alone. Lower-quality examples function as impact weapons that happen to have a sharp edge. Users compensate for inconsistency with aggression and familiarity — most Flatline carriers practice obsessively because they know their weapon will not compensate for poor technique the way a vibro-blade might.",
+  "cultural_context": "The Flatline is more than a weapon in the Undercroft — it is a cultural institution. The horizontal line mark has become a recognized symbol of lower-tier self-sufficiency, appearing as graffiti, tattoo, and brand mark across multiple districts. Corporate security personnel have learned to take Flatline carriers seriously despite the weapon's improvised appearance — the culture that produces these blades also produces the martial discipline to use them. The annual Flatline cutting competition draws hundreds of participants and is one of the Undercroft's most attended public events.",
+  "known_users": [
+    "Undercroft district residents",
+    "Lower-tier martial practitioners",
+    "Street-level operators on a budget"
+  ],
+  "story_hooks": [
+    "A Flatline blade was recovered from a Tier 4 assassination — metallurgical analysis shows it was made from carbon-lattice offcuts sourced from a Crucible Industries factory. Someone is stealing raw materials and feeding them to the street smiths.",
+    "The Undercroft's best-known Flatline smith has been kidnapped — and three different factions are claiming responsibility, each demanding a different ransom."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "katana",
+    "improvised",
+    "street-custom",
+    "carbon-lattice",
+    "tier 1",
+    "cultural"
+  ],
+  "physical_description": "The Flatline is a katana-length blade forged from layered carbon-lattice offcuts and structural composite, its surface bearing the dull grey-black patina of industrial salvage welded into lethal purpose. The edge catches light unevenly, revealing stress marks and subtle warping from street-level heat-treatment, while the handle wraps in frayed synthetic cord over a core of reclaimed metal tubing. Rust blooms at the tsuba—a crudely welded washer—and the whole weapon bears the weight of GLMZ's lower tiers: functional, scarred, dangerous.",
+  "visual_prompt": "gritty cyberpunk katana made from welded industrial scrap, carbon-lattice blade with dull grey-black patina, worn synthetic cord handle, crude metal tsuba, rust blooms and stress marks, moody neo-noir product photography, dark rain-slicked background, harsh neon rim lighting, detailed macro texture, StreetSamurai aesthetic, practical jury-rigged weaponry"
+}

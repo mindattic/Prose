@@ -1,0 +1,48 @@
+{
+  "id": "ced7a8a8130d19e4cba3846cb88011af",
+  "name": "Volkov-Saito Precision VSX-7 'Strelok'",
+  "type": "weapon",
+  "aliases": [
+    "Strelok",
+    "VSX-7",
+    "The Artisan"
+  ],
+  "category": "assault_rifle",
+  "description": "The VSX-7 Strelok is a hand-fitted competition and precision assault rifle that Volkov-Saito produces in limited runs of 200 units per year. Each rifle is assembled by a single gunsmith who signs the receiver, and the weapons are individually accuracy-tested to guarantee sub-quarter-MOA performance with match ammunition. The Strelok chambers 6.5mm caseless through a precision-lapped barrel with a match chamber cut to minimum tolerances.\n\nThe BCI integration on the VSX-7 goes beyond standard smart-link — the weapon's onboard processor builds a ballistic profile specific to each individual rifle, accounting for the unique harmonics of that particular barrel, action, and trigger. Over time, the system learns the rifle's behavior and provides corrections that make each Strelok more accurate the longer it is used. Volkov-Saito calls this 'weapon learning' and considers it their signature technology.\n\nAt Φ18,000, the Strelok is priced for professionals who measure their skill in fractions of an arc-minute. It is not a battlefield weapon — its tight tolerances make it sensitive to contamination, and its match chamber will not reliably feed anything except premium ammunition. But within its operating parameters, it is the most accurate assault rifle in production.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 4+",
+  "legality": "Available — premium licensing",
+  "base_technologies": [
+    "Hand-fitted precision assembly",
+    "Individual ballistic profiling",
+    "Weapon learning AI",
+    "Match-grade minimum-tolerance chamber"
+  ],
+  "specifications": "caliber: 6.5mm caseless match\neffective_range: 700m\nrate_of_fire: Semi-automatic (precision mode), 600 rpm (combat mode)\nmagazine_capacity: 20 rounds\nweight: 3.9 kg",
+  "tactical_use": "The Strelok excels in precision engagement roles where first-round accuracy at distance determines the outcome. Its weapon-learning system makes it increasingly effective in the hands of a consistent operator, rewarding disciplined marksmanship with corrections that compensate for environmental variables. The rifle is less suited to extended combat — its tight tolerances and sensitivity to contamination make it a liability in dirty, sustained engagements.",
+  "cultural_context": "Owning a Strelok signals mastery. The weapon's limited production and individual craftsmanship create a culture of ownership pride among operators who treat their rifles as partners rather than tools. Strelok owners often know their rifle's production number, their gunsmith's name, and their weapon's unique accuracy profile. In marksmanship circles, 'Strelok-grade' has become shorthand for the highest standard of precision.",
+  "known_users": [
+    "Elite marksmen",
+    "Competition shooters",
+    "Precision freelancers",
+    "Collector-operators"
+  ],
+  "story_hooks": [
+    "A stolen Strelok's weapon-learning system has been tracking its new user's firing patterns. Volkov-Saito can identify the thief by their unique neural signature recorded through the BCI link.",
+    "One of the 200 Streloks produced this year was assembled with a deliberate flaw by a disgruntled gunsmith. The barrel will catastrophically fail after approximately 500 rounds."
+  ],
+  "ammunition_type": [
+    "6.5mm caseless match"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "precision",
+    "limited_production",
+    "hand_fitted",
+    "Volkov-Saito",
+    "tier 4"
+  ],
+  "physical_description": "The VSX-7 is a lean, austere rifle of brushed titanium and polymer composites, its receiver hand-marked with Cyrillic gunsmith's marks that catch weak light. The precision-lapped barrel shows faint machine marks beneath a matte dark finish, while the stock is minimalist synthetic—scuffed from use but meticulously maintained. A compact ballistic processor module is flush-mounted along the upper receiver, its interface ports sealed against the GLMZ's perpetual drizzle.",
+  "visual_prompt": "precision assault rifle, brushed titanium receiver with cyrillic markings, 6.5mm caseless, minimalist polymer stock, ballistic processor module, gritty neo-noir product photography, dark industrial background, rain-wet surfaces, detailed mechanical components, worn tactical aesthetic, cyberpunk gunsmith craftsmanship, moody dramatic lighting"
+}

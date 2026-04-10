@@ -1,0 +1,47 @@
+{
+  "id": "20a2a3de0715db84079d6050f392ff88",
+  "name": "Arcturus Defense Solutions ARC-S12 'Harbinger'",
+  "type": "weapon",
+  "aliases": [
+    "Harbinger",
+    "ARC-S12",
+    "The Arcturus Twelve"
+  ],
+  "category": "shotgun",
+  "description": "The Arcturus Defense Solutions ARC-S12 is a semi-automatic shotgun chambered in 12 gauge with BCI smart-link integration and an onboard pattern-analysis system that calculates the expected spread pattern of each shell and displays it as an overlay on the shooter's visual field before firing. The weapon uses a short-stroke gas piston system and feeds from eight-round detachable magazines machined from aircraft-grade aluminum.\n\nThe Harbinger's smart-link system addresses the shotgun's traditional weakness: unpredictable patterning. Every shotshell produces a slightly different spread pattern based on manufacturing variation, barrel fouling, ambient temperature, and choke configuration. The ARC-S12's onboard sensors read each shell's characteristics as it chambers and calculate the expected pattern at the shooter's current point of aim, displaying this as a probability cloud in the BCI overlay. The shooter sees, before pulling the trigger, approximately where each pellet will land.\n\nThis capability transforms the shotgun from a point-and-hope weapon at extended range into a precision tool. Operators using the Harbinger can make informed decisions about shot angle and distance that maximize pellet density on target while minimizing spread beyond the target area. The system doesn't change the physics of the shotshell — it simply removes the guesswork, which turns out to be worth a considerable amount of money.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — BCI registration and tactical weapons license required",
+  "base_technologies": [
+    "BCI smart-link",
+    "Pattern-prediction system",
+    "Shell-characteristic sensing",
+    "Short-stroke gas piston"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 50 meters (smart-linked buckshot), 75 meters (smart-linked slug)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 8 rounds (detachable box)\nweight: 3.8 kg\nBCI_latency: <10ms",
+  "tactical_use": "A smart-linked combat shotgun providing real-time pattern prediction and shot-placement optimization. The BCI overlay displays expected pellet spread before firing, allowing operators to maximize hit probability and minimize collateral. The eight-round detachable magazine provides sustained fire capability. Effective at ranges exceeding conventional shotgun engagement distances due to the pattern-prediction system's ability to identify optimal shot timing.",
+  "cultural_context": "The Harbinger represents the application of smart-link technology to a weapon class that most people considered too 'simple' for computerization. Its effectiveness has challenged the assumption that shotguns are inherently imprecise weapons and raised questions about what other 'simple' technologies might benefit from neural integration. In firearms culture, the Harbinger is either the future of the shotgun or an overpriced solution to a problem that proper training already solves.",
+  "known_users": [
+    "Tier 4+ tactical teams",
+    "Arcturus breach units",
+    "Elite security contractors",
+    "Smart-linked weapons evaluators"
+  ],
+  "story_hooks": [
+    "A Harbinger's pattern-prediction system is hacked to display false spread patterns, causing the operator to misjudge their shots in a critical engagement. The hack was introduced through a firmware update that Arcturus didn't authorize.",
+    "The pattern-analysis data from Harbingers in the field is being collected and used to reverse-engineer the manufacturing tolerances of every shotshell brand — information that has significant commercial espionage value."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "smart_link",
+    "BCI",
+    "arcturus",
+    "pattern_prediction"
+  ],
+  "physical_description": "The ARC-S12 Harbinger is a compact semi-automatic shotgun with a utilitarian matte-black finish showing streaks of rust-orange along the gas piston housing. Its receiver bears faded Arcturus logos and a series of scratched wear marks around the magazine well, while the smart-link module—a bulky rectangular unit mounted above the barrel—displays a dull amber indicator light that flickers intermittently. The eight-round aluminum magazine sits heavy and industrial, its surface scuffed from repeated field reloading.",
+  "visual_prompt": "semi-automatic shotgun with smart-link system, matte black metal with rust streaks, mounted tactical module above barrel, amber indicator light, gritty industrial aesthetic, worn military hardware, detailed product photography, dark background, neo-noir lighting, rain-slicked surfaces, near-future gun design"
+}

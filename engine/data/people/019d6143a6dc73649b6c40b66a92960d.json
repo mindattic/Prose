@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Survivor",
-      "Technically Skilled",
-      "Grudge-Bearer",
-      "Quietly Principled",
-      "Mobile Asset"
+      "survivor",
+      "technically skilled",
+      "grudge-bearer",
+      "quietly principled",
+      "mobile asset"
     ]
   },
   "behavioral": {
@@ -252,7 +252,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

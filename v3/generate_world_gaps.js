@@ -2007,7 +2007,7 @@ writeGood({
   price: "Φ0.08",
   popularity_rank: 2,
   slogan: "Pure. Again.",
-  cultural_context: "ClearDrop is the cheapest branded water in M88. Everyone knows it's recycled. Nobody talks about what it's recycled from. The pouch design hasn't changed in 20 years and has become an accidental icon of Shelf life.",
+  cultural_context: "ClearDrop is the cheapest branded water in GLMZ. Everyone knows it's recycled. Nobody talks about what it's recycled from. The pouch design hasn't changed in 20 years and has become an accidental icon of Shelf life.",
   story_hooks: ["ClearDrop's filtration process removes 99.97% of contaminants — the 0.03% includes trace BCI-rejection medication metabolites from the source water"],
   tags: ["beverage", "water", "consumer_good", "tier_1", "tier_2", "shelf", "vossen", "recycled", "ubiquitous"],
   parent_corponation: "vossen"
@@ -2282,7 +2282,7 @@ writeGood({
   price: "Φ3.00",
   popularity_rank: 10,
   slogan: "The Way It Should Taste.",
-  cultural_context: "Mama Nkem started selling jollof rice kits from her hab unit 12 years ago. The business grew through word of mouth. The recipe is a Diaspora artifact — Nigerian foundation, adapted through three generations in M88, incorporating ingredients available locally.",
+  cultural_context: "Mama Nkem started selling jollof rice kits from her hab unit 12 years ago. The business grew through word of mouth. The recipe is a Diaspora artifact — Nigerian foundation, adapted through three generations in GLMZ, incorporating ingredients available locally.",
   story_hooks: ["Nkem's spice blend has become a minor cultural flashpoint — a food blogger's claim that it wasn't 'authentic' jollof sparked a three-week feed debate involving thousands of participants and zero resolution"],
   tags: ["food", "meal_kit", "consumer_good", "tier_2", "tier_3", "west_african", "jollof", "diaspora", "artisan"],
   parent_corponation: ""
@@ -2318,7 +2318,7 @@ writeGood({
   category: "food",
   subcategory: "prepared_meal",
   manufacturer: "MidCity Diner Chain (14 locations)",
-  description: "The signature dish of M88's most ubiquitous Tier 3 restaurant chain: a deep bowl of vat-grown ground protein in gravy over mashed starch, topped with melted synth-cheese and crispy fried allium. Served hot. Portions are generous. Nutritional value is secondary to emotional value.",
+  description: "The signature dish of GLMZ's most ubiquitous Tier 3 restaurant chain: a deep bowl of vat-grown ground protein in gravy over mashed starch, topped with melted synth-cheese and crispy fried allium. Served hot. Portions are generous. Nutritional value is secondary to emotional value.",
   flavor_profile: "Rich, salty, carb-heavy, with the specific comfort of food that is designed to make you feel like everything is going to be okay even when it isn't.",
   tier_availability: "Tier 3",
   price: "Φ5.50",
@@ -2389,7 +2389,7 @@ writeGood({
   price: "Φ14.00",
   popularity_rank: 25,
   slogan: "Real.",
-  cultural_context: "A real apple in M88 costs more than a Shelf resident's daily food budget. The fruit is eaten ceremonially — slowly, attentively, often shared. Giving someone an apple is an act of profound generosity.",
+  cultural_context: "A real apple in GLMZ costs more than a Shelf resident's daily food budget. The fruit is eaten ceremonially — slowly, attentively, often shared. Giving someone an apple is an act of profound generosity.",
   story_hooks: ["Orchard Prime's trees are descended from heritage varieties maintained by seed-saving networks — each tree is a genetic artifact of the pre-consolidation world"],
   tags: ["food", "fruit", "consumer_good", "tier_4", "tier_5", "luxury", "real_food", "apple", "rare"],
   parent_corponation: ""

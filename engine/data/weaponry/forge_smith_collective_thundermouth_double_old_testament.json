@@ -1,0 +1,49 @@
+{
+  "id": "ae77012f18f9e854e683fa6774b5f1e5",
+  "name": "Forge-Smith Collective Thundermouth Double 'Old Testament'",
+  "type": "weapon",
+  "aliases": [
+    "Old Testament",
+    "Thundermouth",
+    "The Sermon",
+    "Preacher"
+  ],
+  "category": "melee",
+  "description": "A hand-built break-action double-barrel shotgun constructed by the Forge-Smith Collective, a loose guild of independent weapons artisans operating in GLMZ's industrial underbelly. Each Thundermouth is unique — built from reclaimed industrial materials, hand-fitted, and test-fired by the smith who made it. The weapon uses conventional chemical propellant but the barrels are lined with carbon-lattice composite tubing that handles pressures far beyond what traditional steel can manage, allowing massively overcharged loads.\n\nThe Old Testament designation is not a model number — it is a cultural label applied to any Thundermouth that has been chambered for the Collective's proprietary 'sermon shells,' oversized 8-gauge cartridges packed with a mix of tungsten bearings and thermite fragments. On firing, the thermite ignites from propellant flash and the shot pattern arrives at the target already burning. The effect at close range is apocalyptic.\n\nThe Forge-Smith Collective operates without corporate oversight, patents, or quality standards beyond individual artisan pride. Each weapon bears the maker's mark — a personal sigil stamped into the receiver — and reputation within the Collective is built entirely on the reliability and lethality of the weapons produced. A smith whose weapon fails in the field loses standing that may take years to recover.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 1-3 (artisan availability)",
+  "legality": "Unlicensed — no corporate registration, no serial numbers",
+  "base_technologies": [
+    "Carbon-lattice barrel lining",
+    "Overcharged chemical propellant",
+    "Thermite-fragment incendiary loads"
+  ],
+  "specifications": "gauge: 8-gauge overcharged\neffective_range: 2-12 meters\nrate_of_fire: 2 shots, manual reload\ncapacity: 2-round break-action\nweight: 3.4-4.2 kg (varies by smith)\nbarrel_lining: Carbon-lattice composite\nload_type: Sermon shells — tungsten/thermite composite",
+  "tactical_use": "The Old Testament is not a precision weapon — it is a statement of overwhelming force at conversational distance. Users deploy it as a first-and-last resort in situations where negotiation has already failed. The thermite fragments continue burning for approximately four seconds after impact, making the weapon effective against armored targets that might shrug off conventional shot. The two-shot limitation means operators must make every trigger pull count or have a credible backup plan.",
+  "cultural_context": "The Forge-Smith Collective's weapons carry a cultural weight in GLMZ's lower tiers that corporate products cannot replicate. Owning a named smith's Thundermouth is a mark of status — it means someone with a reputation trusted you enough to sell you their work. The 'sermon shell' designation reflects the weapon's quasi-religious reputation: when the Old Testament speaks, the conversation is over. Aspiring smiths apprentice for years before they are permitted to stamp their mark on a receiver.",
+  "known_users": [
+    "Lower-tier enforcers with artisan connections",
+    "Forge-Smith Collective members",
+    "Independent operators who prefer analog reliability"
+  ],
+  "story_hooks": [
+    "A master smith's entire output has been bought by a single anonymous buyer — forty weapons in six months. Someone is arming a force with artisan-quality shotguns, and the Collective wants to know why.",
+    "A Thundermouth bearing a dead smith's mark has surfaced — but the weapon is newly built. Someone is forging artisan marks, and the Collective considers this a killing offense."
+  ],
+  "ammunition_type": [
+    "8-gauge sermon shell",
+    "8-gauge standard"
+  ],
+  "tags": [
+    "weapon",
+    "melee",
+    "shotgun",
+    "break-action",
+    "artisan",
+    "incendiary",
+    "tier 1",
+    "analog"
+  ],
+  "physical_description": "A brutish break-action shotgun assembled from welded industrial scrap—salvaged I-beam steel, cast iron receiver, and carbon-composite barrels wrapped in friction tape and etched serial numbers. The wood furniture is dark walnut, oil-stained and scarred from heavy use, with crude hand-forged trigger guard and hammer mechanisms. Rust blooms around the breach and muzzle crown, giving it the appearance of a weapon pulled from a factory floor and made lethal through sheer craftsmanship.",
+  "visual_prompt": "hand-forged double-barrel shotgun, industrial steel and walnut, rust-patina breach, carbon composite barrels, gritty neo-noir weapon, detailed product photography, dark rain-slicked background, neon reflection, worn craftsmanship, cyberpunk noir aesthetic, shallow depth of field, dramatic side-lighting"
+}

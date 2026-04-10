@@ -159,7 +159,7 @@ Each sport should have a founding year, governing body or lack thereof, and tier
 - Purist league teams (zero-aug, traditional)
 - Underground fighting stables
 - Automaton fighting teams/workshops
-Each team needs: founding year, sport/league, home district in M88, owner or sponsor (corponation or independent), notable achievements, rivalries. Team names should feel like real sports teams — not jokes.`
+Each team needs: founding year, sport/league, home district in GLMZ, owner or sponsor (corponation or independent), notable achievements, rivalries. Team names should feel like real sports teams — not jokes.`
   },
   {
     category: 'athlete',
@@ -192,7 +192,7 @@ Each needs: type of operation, legality, typical stakes, who runs it, tier avail
 - Deliberately analog games (no tech, played as rebellion against constant connectivity — popular in Shelf bars)
 - Card games played in bars and gambling dens (some with smart-ink cards that shift)
 - Strategy games based on corponation warfare and territory control
-- Children's games that have dark undertones reflecting M88 society
+- Children's games that have dark undertones reflecting GLMZ society
 - Collectible card games with physical and neural components
 - Dice games, tile games, abstract strategy
 Each needs: year introduced, player count, typical setting where it's played, cultural significance. Some should be ancient games that survived, others brand new.`
@@ -256,7 +256,7 @@ Each entry MUST have exactly these fields:
   "popularity_rank": number (${rankStart} to ${rankEnd} within this category),
   "legal_status": "legal|gray_market|illegal|varies_by_district",
   "corporate_ties": "associated corponation(s) or 'independent' or 'underground'",
-  "cultural_context": "how this fits into M88 society, who engages with it and why",
+  "cultural_context": "how this fits into GLMZ society, who engages with it and why",
   "controversy": "any scandal, danger, or debate surrounding this (or null if none)",
   "story_hooks": ["array of 2-3 narrative hooks for stories"]
 }

@@ -96,12 +96,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Fortune Seller",
-      "Data Mystic",
-      "E.L.F. Devotee",
-      "Community Elder",
-      "Neutral Ground",
-      "Oracle"
+      "fortune seller",
+      "data mystic",
+      "e.l.f. devotee",
+      "community elder",
+      "neutral ground",
+      "oracle"
     ]
   },
   "behavioral": {
@@ -292,7 +292,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Southeast Asian": {

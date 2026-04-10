@@ -1,0 +1,39 @@
+{
+  "name": "Pearlwater",
+  "type": "pharmaceutical",
+  "aliases": [
+    "pearl",
+    "milk water",
+    "white calm"
+  ],
+  "category": "street_concoction",
+  "subcategory": "homebrew anxiolytic-euphoriant",
+  "manufacturer": "Attributed to a Shelf chemist called 'Lena Vasquez' in the Milwaukee North Shelf; her formula has been widely copied",
+  "description": "A milky-white suspension of crude benzodiazepine analogue (synthesized from diverted agricultural chemicals) combined with a serotonin-modulating compound and suspended in a saline-and-glycerin base. One of the few Shelf drugs with a reputation for being relatively gentle — it produces calm, mild euphoria, and emotional softness without the brutal edge of stimulants or the danger of opioids. Still impure, still risky, but considered 'kind' by Shelf standards.",
+  "method_of_use": "sublingual",
+  "effects": [
+    "deep anxiolytic calm",
+    "mild euphoria and emotional warmth",
+    "reduced BCI notification anxiety and interface stress",
+    "social ease and openness",
+    "gentle sedation without loss of function at standard doses"
+  ],
+  "side_effects": [
+    "benzodiazepine-class physical dependence",
+    "withdrawal is medically dangerous and potentially fatal",
+    "respiratory depression at high doses",
+    "cognitive dulling with chronic use",
+    "the agricultural chemical precursors leave hepatotoxic metabolites"
+  ],
+  "duration": "3-5 hours",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ8-15 per dose",
+  "cultural_context": "Pearlwater has a reputation as the most 'humane' drug on the Shelf, which makes it both beloved and insidious — users don't feel like they're harming themselves, which makes it easy to use daily. It's popular among Shelf residents dealing with anxiety disorders, PTSD, and the psychological weight of constant threat. Mothers use it. Old men use it. It's the drug that doesn't feel like a drug until the withdrawal hits. Lena Vasquez, who created it, is a complicated figure — admired for making something that helps, and held responsible for the dependence it creates.",
+  "story_hooks": [
+    "Lena Vasquez has died and her formula died with her — the copies in circulation are increasingly impure, and the community that depends on Pearlwater is facing a crisis as withdrawal cases mount",
+    "A Tier 3 social worker has begun documenting Pearlwater use in a Shelf district and is trying to distinguish 'harm reduction' from 'complicity in addiction'",
+    "Someone is selling a counterfeit Pearlwater that looks identical but contains no benzodiazepine analogue — dependent users are going into withdrawal without understanding why, and the fake is being sold deliberately"
+  ]
+}

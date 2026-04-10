@@ -35,10 +35,20 @@
     "water",
     "lake",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "civilian",
+    "car",
+    "van",
+    "ferry",
+    "hovercraft",
+    "cargo",
+    "electric",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
     "The Pale Meridian Engines"
-  ]
+  ],
+  "physical_description": "Weathered fiberglass hulls, 18-24 feet long, painted faded blues and grays with chipped corporate logos or hand-stenciled operator names. Electric outboards hum quietly, their casings corroded by salt spray and industrial runoff. Vinyl bench seating shows water stains and duct-tape repairs; older unlicensed rigs sport salvaged seats from decommissioned vehicles, oil-stained canvas canopies, and visible jury-rigged wiring running along the gunwales.",
+  "visual_prompt": "gritty neo-noir fiberglass water taxi boat, weathered blue-gray hull, worn vinyl seating, electric outboard motor, rain-slicked surfaces, industrial harbor setting, detailed product photography, dark moody lighting, cyberpunk aesthetic, chipped paint, practical worn tech, dystopian near-future"
 }

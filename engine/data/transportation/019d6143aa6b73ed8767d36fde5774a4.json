@@ -29,11 +29,18 @@
     "weapon",
     "ai",
     "elf",
-    "vehicle"
+    "vehicle",
+    "cargo",
+    "manual",
+    "ground",
+    "aerial",
+    "space"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "GLMZ",
     "Kamm's Landing"
-  ]
+  ],
+  "physical_description": "A scorched, bullet-shaped capsule roughly three meters long, its ablative ceramic heat shield streaked with black char and stress fractures from multiple reentries. Welded titanium frame shows dents and hasty repairs; retro-rocket nozzles are crusted with oxidation. A single reinforced hatch with mechanical locks dominates one end, its hinges worn smooth from emergency egress.",
+  "visual_prompt": "Arcturus Defense orbital drop pod, scarred ceramic heat shield, charred black and scorched white, titanium frame with welded seams, retro-rocket nozzles oxidized, mechanical hatch, industrial decay, gritty product photography, dark rain-slicked hangar background, moody neon reflection, near-future military hardware, worn and battle-tested, detailed weathering, neo-noir atmosphere, studio lighting"
 }

@@ -33,7 +33,11 @@
     "underworld",
     "tunnel",
     "vehicle",
-    "drone"
+    "drone",
+    "aircraft",
+    "military",
+    "electric",
+    "solar"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -43,5 +47,7 @@
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "TESSERA ES-4 'Perimeter'",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": "A boxy, gun-metal frame roughly the size of a large dog, its composite hull scarred from industrial weather and shrapnel impacts. Twin rotors mounted on articulated arms fold flush against its body, while a gimbal-mounted sensor cluster dominates the forward section—optics and lidar stacked like a predator's eyes. Weathered decals mark corporate ownership; exposed wiring and patched armor plating speak to years of hard patrol duty.",
+  "visual_prompt": "autonomous military drone, gun-metal gray composite armor, weathered and battle-scarred, gritty neo-noir aesthetic, mounted sensors and optics cluster, industrial product photography, dark warehouse background, moody blue neon rim lighting, detailed mechanical joints, worn decals, cinematic cyberpunk realism, rain-slicked surfaces, shallow depth of field"
 }

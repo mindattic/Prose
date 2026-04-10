@@ -1,0 +1,41 @@
+{
+  "id": "ce46e124459d9c1c5df6d39d2981424c",
+  "type": "place",
+  "name": "Blackstone Pub",
+  "aliases": [
+    "Blackstone"
+  ],
+  "description": "A proper pub in the old South Loop, serving pints and proper pub food: bangers and mash, fish and chips, steak and kidney pie, all made with vat-proteins but prepared traditionally. A pint of locally brewed ale is Φ7. A plate of bangers and mash is Φ12. The pub is dark, wood-paneled (salvaged, not original), and has the atmosphere of a place that has been doing this for longer than it actually has. Owner Declan Nakamura-Byrne built the atmosphere deliberately — he studied pub design with the intensity of an architect and considers ambiance a structural element.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "South Loop workers",
+    "After-work pint crowd",
+    "Pub food traditionalists"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.868,
+    "lng": -87.624
+  },
+  "tags": [
+    "place",
+    "pub",
+    "food",
+    "nightlife",
+    "tier_2"
+  ],
+  "related_entities": [
+    "Declan Nakamura-Byrne"
+  ]
+}

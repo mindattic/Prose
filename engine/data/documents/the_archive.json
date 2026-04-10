@@ -1,0 +1,34 @@
+{
+  "id": "182c3b6f9d08517e92356388e98c2ec4",
+  "name": "The Archive",
+  "type": "document",
+  "document_type": "classified_briefing",
+  "author": "GLMZ Tunnel Authority, Director of Expansion, [REDACTED]",
+  "date": "2214-01-03",
+  "classification": "classified",
+  "description": "This briefing is classified at the highest level available to the Tunnel Authority. Distribution is restricted to the Director's office and the three section chiefs present at the discovery. What follows is an account of what Expansion Team 14 found during the southern bore extension on December 28th, 2213.\n\nAt a depth of approximately 45 meters, the bore struck a sealed chamber. The chamber is constructed of a material that is not concrete, not stone, and not metal — it is a composite that our materials team cannot identify. The walls are smooth and seamless. The chamber is 12 meters by 8 meters with a ceiling height of 3 meters. It contains 4,712 data shards arranged on shelving units that are integrated into the walls — not mounted, not bolted, but continuous with the wall material. The shelving and the walls are a single piece.\n\nThe data shards are standard-format optical crystals compatible with current GLMZ reading hardware. This is significant because the chamber, based on geological context and the undisturbed state of the surrounding rock, predates the tunnel system by a minimum of 80 years. Optical crystal data storage was not developed until 2171. The chamber has been sealed since at least 2130. The shards contain data about people. Biographical information, medical records, residential addresses, employment histories, relationship networks. The data is comprehensive, detailed, and written in standard GLMZ data formatting conventions that were not established until 2185.\n\nThe people in the records do not exist. We have cross-referenced every name, every biometric marker, every address against the full municipal database. No matches. Birth dates in the records range from 2230 to 2290. The people described in these shards have not been born yet. The records describe their lives in detail — careers, illnesses, marriages, children, deaths. One record describes a woman who will be born in 2247 and die in 2319, survived by three children whose records are also in the archive. Her cause of death is listed. Her final address is a building that does not yet exist, on a street that has not yet been named, in a district that has not yet been zoned.\n\nI do not know what to do with this information. I am not certain anyone does. The chamber has been sealed and the bore route has been diverted. I am recommending that this remain classified indefinitely.",
+  "related_entities": [
+    "Underworld",
+    "GLMZ",
+    "Tunnel Authority"
+  ],
+  "credibility": "classified",
+  "story_hooks": [
+    "Who built the Archive, and how did they know the future?",
+    "Are the futures described in the shards fixed, or do they change?",
+    "What happens when someone from the Archive's records is actually born?"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "glmz",
+    "object",
+    "underworld",
+    "archive",
+    "impossible_origin",
+    "temporal",
+    "precognition"
+  ]
+}

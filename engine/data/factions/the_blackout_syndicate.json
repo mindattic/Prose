@@ -1,0 +1,57 @@
+{
+  "id": "3bc3efeb0d8171705f0157880eec1ce0",
+  "type": "faction",
+  "name": "The Blackout Syndicate",
+  "aliases": [
+    "Blackout",
+    "The Syndicate",
+    "Power Brokers"
+  ],
+  "motto": "When the lights go out, we're the ones holding the switch.",
+  "description": "The Blackout Syndicate is a mid-tier criminal operation of approximately 180 members that exploits GLMZ's power infrastructure for profit. Their specialty is energy — stealing it, rerouting it, selling it, and, when the price is right, cutting it off. In a city where Ouroboros Energy's grid is the circulatory system and power interruption can kill people whose augmentations depend on external charge, the Blackout Syndicate has found a uniquely dangerous niche.\n\nThe Syndicate's core business is power theft — tapping into Ouroboros Energy's distribution grid to provide cheap, unlicensed power to Shelf residents and businesses who can't afford corporate rates. This makes them popular in the lower tiers, where the Syndicate's jury-rigged power connections are the difference between functioning augments and dead chrome. But the Syndicate also runs protection rackets based on the threat of power interruption: pay up, or the lights go out. This works because in the lower Shelf, a power outage doesn't just mean darkness — it means BCI shutdowns, augment failures, life-support interruptions, and the cascading emergencies that follow when technology people depend on to live stops working.\n\nThe Syndicate recruits heavily from Ouroboros Energy's lower-tier workforce — technicians, linemen, and grid operators who have the skills to manipulate power infrastructure and the grievances to motivate their defection from legitimate employment.",
+  "ideology": "Power is the most basic resource, and Ouroboros Energy's monopoly on it is the most fundamental injustice in GLMZ. The Syndicate corrects this by redistributing power — while also making a profit, because revolution doesn't pay the bills.",
+  "territory": "Throughout the Shelf, wherever power infrastructure can be accessed. The Syndicate's primary hub is a substation in the deep Shelf they've appropriated and modified.",
+  "leadership": "A former Ouroboros grid supervisor named Yuki Nakamura-Davies, called 'the Breaker,' who was fired for reporting unsafe conditions in Shelf power infrastructure and responded by stealing the infrastructure instead.",
+  "methods": [
+    "Power theft from the Ouroboros Energy grid",
+    "Sale of unlicensed power to Shelf residents and businesses",
+    "Protection rackets based on power interruption threats",
+    "Infrastructure sabotage for hire — disrupting power to specific targets",
+    "Recruitment of Ouroboros Energy technical workers",
+    "Maintenance of jury-rigged power distribution networks"
+  ],
+  "resources": [
+    "180 members with electrical and infrastructure expertise",
+    "An appropriated substation serving as base of operations",
+    "Jury-rigged power distribution networks throughout the Shelf",
+    "Insider knowledge of Ouroboros Energy's grid architecture",
+    "The ability to cause targeted power outages",
+    "Yuki's engineering expertise and personal grudge against Ouroboros"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "Ouroboros Energy",
+      "type": "enemy",
+      "description": "The Syndicate steals from Ouroboros's grid and recruits from its workforce. Ouroboros has designated the Syndicate a 'critical infrastructure threat' and maintains a dedicated security team to counter their operations.",
+      "tags": [
+        "corporate",
+        "infrastructure"
+      ]
+    }
+  ],
+  "narrative_function": "The Blackout Syndicate represents the weaponization of infrastructure — the realization that controlling what people need to survive is the most fundamental form of power.",
+  "story_hooks": [
+    "The Breaker has discovered a hidden section of the Ouroboros grid that doesn't appear on any official schematic — power being routed somewhere that doesn't officially exist, consuming enough energy to run a small city.",
+    "A Blackout Syndicate power interruption went wrong: instead of a targeted outage, an entire Shelf sector lost power for six hours. Seventeen people died. Yuki is looking for who sabotaged the operation, because the failure wasn't accidental."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "power",
+    "energy",
+    "infrastructure",
+    "shelf",
+    "organized crime"
+  ]
+}

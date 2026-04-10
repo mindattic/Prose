@@ -159,10 +159,10 @@
       "double-life",
       "corporate-auditor",
       "saboteur",
-      "Null-Seven",
+      "null-seven",
       "systems-thinker",
       "emotionally-sealed",
-      "Heliostat"
+      "heliostat"
     ]
   },
   "behavioral": {
@@ -290,7 +290,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

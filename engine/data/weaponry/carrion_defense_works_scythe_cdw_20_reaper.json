@@ -1,0 +1,46 @@
+{
+  "id": "a95cf34ce690e60bb480b72943419007",
+  "name": "Carrion Defense Works Scythe CDW-20 'Reaper'",
+  "type": "weapon",
+  "aliases": [
+    "Reaper",
+    "CDW-20",
+    "Scythe",
+    "The Harvesting"
+  ],
+  "category": "support",
+  "description": "A mounted heavy support weapon that fires 15mm explosive-tipped rounds from a belt-fed automatic action at 400 RPM. The Scythe is designed as a squad-level destructive weapon — each round carries enough explosive filler to breach light walls and each burst leaves a path of destruction that Carrion's marketing materials describe as 'cultivated denial.'\n\nThe CDW-20 is mounted on a two-wheeled cart that a single operator can drag into position, deploying the weapon on its integral bipod in under 30 seconds. The cart carries 400 rounds of linked ammunition and a blast shield that protects the operator from incoming fire — though not from the weapon's own considerable backblast.\n\nCarrion designed the Reaper for offensive suppression — not merely pinning an enemy behind cover, but systematically destroying the cover itself. A 5-second burst from the CDW-20 can demolish a concrete barricade, collapse a sandbagged position, or reduce a ground-floor room to rubble.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted — heavy automatic weapons authorization",
+  "base_technologies": [
+    "Heavy explosive-tipped ammunition engineering",
+    "Cart-mounted rapid deployment system",
+    "Structural demolition through sustained fire"
+  ],
+  "specifications": "caliber: 15mm explosive-tipped\neffective_range: 100-1,000 meters\nrate_of_fire: 400 rounds per minute\ncapacity: 400-round linked belt on cart\nweight: 28 kg weapon, 85 kg cart with ammunition\npower_source: None — conventional chemical propellant",
+  "tactical_use": "The Reaper is deployed to systematically dismantle defensive positions that lighter weapons cannot defeat. Operators engage fortified positions with sustained bursts that first destroy cover, then the defenders behind it. The weapon's explosive rounds produce secondary fragmentation from the cover material itself — concrete spall, glass fragments, and structural debris become additional projectiles. In the hands of a skilled operator, the CDW-20 turns an enemy's fortification into a weapon against them.",
+  "cultural_context": "Carrion Defense Works embraces their reputation as manufacturers of weapons that exist on the threshold between military and atrocity. The Reaper embodies this ethos — a weapon designed not just to kill, but to destroy the environment around the target. In GLMZ's post-engagement damage assessments, CDW-20 fire patterns are easily identified by the systematic structural destruction they leave behind. Humanitarian observers call it 'calculated ruin.'",
+  "known_users": [
+    "Carrion Defense Works assault division",
+    "Corporate demolition-through-fire specialists"
+  ],
+  "story_hooks": [
+    "A Reaper was used to demolish a community center in the lower tiers during what was supposed to be a targeted engagement against a single individual inside. The building was reduced to rubble. The target survived — they were not in the building at the time.",
+    "Carrion has received a massive order for CDW-20 systems from an anonymous buyer. The quantity — 200 units — suggests someone is arming for a war larger than any recent corporate dispute."
+  ],
+  "ammunition_type": [
+    "15mm explosive-tipped linked belt"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "heavy",
+    "explosive",
+    "mounted",
+    "demolition",
+    "tier 4"
+  ],
+  "physical_description": "The CDW-20 is a brutalist assembly of stamped steel and reinforced polymer, its barrel scarred from repeated firing and patched with welded seams. The two-wheeled cart sits low and wide, painted industrial grey with faded Carrion Defense Works stenciling, its ammunition belt coiled like a serpent in the feed mechanism. The integral blast shield is dented and scorched, its surface etched with the ghost-marks of muzzle flash.",
+  "visual_prompt": "heavy support weapon mounted on cart, 15mm belt-fed autocannon, industrial grey steel, weathered and scarred metal, integral bipod and blast shield, ammunition belt visible, gritty neo-noir aesthetic, worn military hardware, detailed product photography, dark studio background, high contrast lighting, cyberpunk utilitarian design, dystopian near-future, realistic textures"
+}

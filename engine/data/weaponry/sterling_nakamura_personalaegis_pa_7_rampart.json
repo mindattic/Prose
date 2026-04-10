@@ -1,0 +1,43 @@
+{
+  "id": "27c72b0146b853e88365574abca92df3",
+  "name": "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+  "type": "weapon",
+  "aliases": [
+    "Rampart",
+    "PA-7",
+    "Pocket Shield",
+    "Wall"
+  ],
+  "category": "self_defense",
+  "description": "A handheld hardlight projector that generates a 60-centimeter-diameter disc of semi-solid photonic matter, functioning as a personal shield capable of deflecting physical blows, absorbing low-velocity projectiles, and blocking chemical sprays. The PA-7 is the first consumer-grade hardlight product, adapted from Sterling-Nakamura's military hardlight barrier systems with drastically reduced power and duration to meet civilian safety standards and battery constraints.\n\nThe shield disc projects from a grip-activated emitter roughly the size of a flashlight handle. When activated, the disc materializes in approximately 0.3 seconds and maintains coherence for up to eight seconds per activation, with four activations per charge. The hardlight surface has the approximate stopping power of 6mm polycarbonate — sufficient to block a punch, a knife slash, or a low-velocity flechette round, but not rated against standard firearms ammunition or high-energy weapons.\n\nSterling-Nakamura prices the PA-7 at Φ2,400, firmly in the Tier 3-4 market segment. The device is marketed through personal security consultants and high-end lifestyle retailers, emphasizing its technological sophistication and the prestige of carrying hardlight technology. The limited eight-second activation window per use means the PA-7 is a reactive tool — something deployed in the critical seconds of an encounter rather than a sustained defensive system.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Consumer-grade hardlight photonic projection",
+    "Semi-solid photonic matter generation",
+    "Grip-activated rapid deployment"
+  ],
+  "specifications": "shield diameter: 60 cm disc\nactivation time: 0.3 seconds\nshield duration: 8 seconds per activation\nactivations per charge: 4\nstopping power: equivalent to 6mm polycarbonate\nweight: 320 g\nlength: 16 cm (handle)\nrecharge time: 4 hours\ncost: Φ2,400",
+  "tactical_use": "Deploy the shield between yourself and the immediate threat. The disc projects perpendicular to the handle axis, so hold the PA-7 like a flashlight pointed at the attacker. The eight-second window requires decisive action — deploy the shield, then immediately move to cover or escape. Against melee attackers, the hardlight disc can be used to physically push back — the surface is rigid enough to strike with. Not effective against firearms; do not rely on it to stop bullets.",
+  "cultural_context": "The PA-7 is the first time hardlight technology has appeared in a consumer product, and Sterling-Nakamura has leveraged this heavily in marketing. Carrying a PA-7 is a statement that you have access to the cutting edge of materials science in your pocket. Tech enthusiasts and early adopters drove initial sales, but the device has found practical adoption among Tier 3-4 residents who transit through areas where knife crime and physical assault are common. The brief shield duration is a frequent criticism, but Sterling-Nakamura frames it as a design feature — the PA-7 gives you eight seconds, and eight seconds is enough to change an outcome.",
+  "known_users": [],
+  "story_hooks": [
+    "A PA-7 was used to block a knife attack on a corporate executive, and the attacker's blade shattered against the hardlight surface — fragments injured bystanders, raising questions about whether defensive hardlight creates secondary hazards.",
+    "Sterling-Nakamura's military division is concerned that civilian PA-7 units are being reverse-engineered to understand hardlight emitter construction — consumer devices are appearing in black-market workshops where they are being studied for weaponization."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "barrier",
+    "hardlight",
+    "shield",
+    "handheld",
+    "tier_3",
+    "premium"
+  ],
+  "physical_description": "The PA-7 resembles a reinforced flashlight wrapped in brushed titanium-aluminum composite, its grip textured with worn rubber and faint circuit traces. The emitter head flares slightly, housing the hardlight projection matrix behind a scuffed lens assembly. Accumulated grime collects in the seams; the battery indicator—a thin strip of degraded LED—flickers amber when low.",
+  "visual_prompt": "handheld hardlight projector, titanium-aluminum casing, weathered grip, industrial product photography, gritty neo-noir aesthetic, worn tactical equipment, faint blue photonic glow in emitter lens, dark concrete background, moody overhead lighting, detailed wear patterns, cyberpunk near-future tech, functional military-civilian crossover design"
+}

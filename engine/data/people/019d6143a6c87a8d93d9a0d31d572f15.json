@@ -97,12 +97,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Educator",
-      "Union Veteran",
-      "Community Organizer",
-      "Adult Literacy Teacher",
-      "Compromised Idealist",
-      "Network Hub"
+      "educator",
+      "union veteran",
+      "community organizer",
+      "adult literacy teacher",
+      "compromised idealist",
+      "network hub"
     ]
   },
   "behavioral": {
@@ -296,7 +296,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

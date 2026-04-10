@@ -97,10 +97,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Community Anchor",
-      "Compromised",
-      "Veteran Beat",
-      "De-escalator"
+      "community anchor",
+      "compromised",
+      "veteran beat",
+      "de-escalator"
     ]
   },
   "behavioral": {
@@ -233,7 +233,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

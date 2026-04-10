@@ -31,12 +31,19 @@
     "control",
     "vehicle",
     "tier 3",
-    "tier 4"
+    "tier 4",
+    "ground",
+    "cargo",
+    "luxury",
+    "electric",
+    "space"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "Axiom Systems White Noise Bubble Generator WNB-1",
     "Tessera Corponation",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": "A teardrop-shaped capsule roughly the size of a reclining chair, built from scuffed polycarbonate and dull aluminum frames. The transparent shell shows hairline stress fractures and condensation residue from countless commutes; interior upholstery is worn synthetic leather the color of old concrete, with exposed foam padding where the seats have split. The pod's undercarriage is visible through the translucent floor—exposed servos, battery casings, and jury-rigged suspension components.",
+  "visual_prompt": "single-occupant autonomous vehicle pod, teardrop shape, transparent polycarbonate shell, scuffed and weathered, worn aluminum frame, gritty neo-noir, product photography, dark rain-slicked street background, neon reflection, industrial decay, detailed mechanical undercarriage visible, cyberpunk transport, moody lighting, dystopian urban transport, worn synthetic interior"
 }

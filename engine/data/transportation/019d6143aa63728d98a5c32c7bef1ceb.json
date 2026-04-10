@@ -31,7 +31,13 @@
     "underworld",
     "tunnel",
     "dark",
-    "survival"
+    "survival",
+    "subterranean",
+    "rail",
+    "train",
+    "electric",
+    "manual",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -40,5 +46,7 @@
     "Narrowcast",
     "Noir Dining",
     "Switchback"
-  ]
+  ],
+  "physical_description": "A skeletal iron frame cart barely three meters long, its riveted chassis streaked with rust and mineral deposits from decades of tunnel work. Corroded steel wheels sit locked in a groove of equally ancient track, while a manual brake lever juts from the side like a broken tooth. The cart's electric assist motor—a jury-rigged unit bolted to the frame—hums with an irregular, asthmatic whine.",
+  "visual_prompt": "worn industrial mining cart, narrow-gauge rails, riveted steel frame, rust and mineral crusts, manual brake lever, old electric motor, dark tunnel background, moody neo-noir lighting, gritty product photography, decrepit industrial aesthetic, abandoned underground machinery, detailed weathering, cyberpunk decay, high contrast shadows"
 }

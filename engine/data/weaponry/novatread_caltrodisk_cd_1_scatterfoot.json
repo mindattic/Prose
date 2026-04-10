@@ -1,0 +1,46 @@
+{
+  "id": "92637461eb4137358260171f322428b0",
+  "name": "NovaTread CaltroDisk CD-1 'Scatterfoot'",
+  "type": "weapon",
+  "aliases": [
+    "Scatterfoot",
+    "CD-1",
+    "Spike Strip",
+    "Runner's Friend"
+  ],
+  "category": "self_defense",
+  "description": "A palm-sized disc that, when thrown on the ground, breaks apart into eighteen spring-loaded micro-caltrops that scatter across approximately four square meters of surface. Each micro-caltrop is a 2-centimeter tetrahedral spike made of hardened polymer — sharp enough to puncture standard footwear soles and embed in the foot, but designed to break off at the base rather than cause deep penetration wounds. The intent is to make pursuit painful and slow rather than to cause serious injury.\n\nNovaTread developed the CD-1 specifically for the 'run and scatter' self-defense scenario — the user throws the disc behind them while fleeing, forcing the pursuer to either stop, navigate around the caltrop field, or step through it and suffer multiple foot punctures. The caltrops are bright orange, making them visible enough that a cautious pursuer will slow down to avoid them, while a reckless pursuer will hit several at full speed.\n\nThe CD-1 is sold in packs of two for Φ40. NovaTread includes a small collection magnet in each pack for retrieval of deployed caltrops — the polymer construction means they are not ferromagnetic, but each caltrop contains a small iron bead for magnetic cleanup. GLMZ municipal codes require deployed caltrops to be collected within one hour to avoid hazard to pedestrians, a regulation that is effectively unenforceable given the circumstances under which they are typically deployed.",
+  "manufacturer": "NOVATREAD TACTICAL CONSUMER",
+  "tier_availability": "Tier 1+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Spring-loaded caltrop dispersal mechanism",
+    "Breakaway-tip polymer spike design",
+    "Magnetic recovery bead embedding"
+  ],
+  "specifications": "caltrops per disc: 18\nscatter radius: ~4 square meters\ncaltrop size: 2 cm tetrahedral\ncaltrop material: hardened polymer with iron recovery bead\npenetration depth: 4-8 mm (limited by breakaway tip)\nweight: 55 g per disc\ndisc diameter: 6 cm\ncost: Φ40 per 2-pack\ncolor: bright orange (high visibility)\nrecovery: included magnetic collection tool",
+  "tactical_use": "While running from a pursuer, throw the CD-1 disc hard at the ground behind you. The impact breaks the disc housing and the spring mechanism scatters the caltrops in a fan pattern. Do not throw backwards over your shoulder — throw down and behind at a 45-degree angle for optimal scatter. The bright orange color is intentional: a visible hazard that causes a pursuer to hesitate is as valuable as an invisible one they step on. Do not use in areas where barefoot pedestrians are common.",
+  "cultural_context": "The CD-1 has become the signature tool of GLMZ's runner culture — not recreational runners, but the delivery couriers, message carriers, and independent operators whose job is to move quickly through hostile territory. The orange caltrop scatter has become a visual shorthand in street art and graffiti for escape and freedom. NovaTread sponsors community 'scatter drills' in Tier 1-2 neighborhoods, teaching residents escape techniques that combine caltrops, smoke, and flash devices for maximum survival probability.",
+  "known_users": [],
+  "story_hooks": [
+    "A modified CD-1 has appeared with caltrops that carry a contact irritant — the spikes not only puncture but deliver a chemical payload that causes the wound to burn intensely, making it impossible to continue running even after removing the caltrop.",
+    "A Tier 1 neighborhood has started deploying CD-1 caltrops permanently across certain alleyways as improvised perimeter defense — the orange field has become a boundary marker that local residents navigate around but outsiders stumble into."
+  ],
+  "ammunition_type": [
+    "Polymer micro-caltrop disc"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "caltrops",
+    "escape",
+    "throwable",
+    "area_denial",
+    "single_use",
+    "tier_1",
+    "runner"
+  ],
+  "physical_description": "A scuffed polymer disc the size of a coaster, matte gunmetal gray with faded orange warning stripes around its perimeter. The surface bears stress fractures and impact marks from repeated use. When depressed at the center, a subtle mechanical click confirms the spring mechanism is armed—the disc feels heavier than its size suggests, weighted with the compressed payload beneath a scored separation line.",
+  "visual_prompt": "product photography, palm-sized polymer disc, matte gunmetal gray with orange warning stripes, stress fractures and impact marks, mechanical spring-loaded mechanism visible, scattered tetrahedral polymer spikes nearby, dark industrial background, moody neo-noir lighting, gritty worn texture, tactical self-defense gear, close-up detail shot, cinematic"
+}

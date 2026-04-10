@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Steadfast",
-      "Observant",
-      "Burdened",
-      "Ritualistic",
-      "Transit-Attuned"
+      "steadfast",
+      "observant",
+      "burdened",
+      "ritualistic",
+      "transit-attuned"
     ]
   },
   "behavioral": {
@@ -244,7 +244,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Central Asian": {

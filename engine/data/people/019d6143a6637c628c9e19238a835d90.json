@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Death Work",
-      "Grief Specialist",
-      "Terminal Secret",
-      "Community Service",
-      "Emotionally Durable"
+      "death work",
+      "grief specialist",
+      "terminal secret",
+      "community service",
+      "emotionally durable"
     ]
   },
   "behavioral": {
@@ -212,7 +212,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

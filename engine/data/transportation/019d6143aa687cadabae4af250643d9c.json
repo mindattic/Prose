@@ -31,7 +31,13 @@
     "market",
     "hover",
     "tier 4",
-    "tier 5"
+    "tier 5",
+    "electric",
+    "manual",
+    "ground",
+    "aerial"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "physical_description": "A scarred polymer platform roughly 1.8 meters long and 0.6 meters wide, its surface pitted from impact with rain-slicked concrete and industrial debris. The underside bristles with exposed emitter arrays and heat-dissipation fins, their aluminum oxidized to dull gray. A central battery pack—bulky, always warm to the touch—dominates the topside, wrapped in fraying carbon-weave tape and crowned with flickering status LEDs that cycle through amber warnings. The deck itself is bare composite, grip-tape worn to slickness in high-contact zones.",
+  "visual_prompt": "gritty neo-noir grav-board hovering above wet concrete, worn polymer deck with exposed aluminum emitters, weathered carbon-weave battery housing, flickering amber LED indicators, rain-slicked surface, industrial setting, detailed product photography, dark moody lighting, cyberpunk tech worn practical not flashy, high contrast shadows, realistic material deterioration"
 }

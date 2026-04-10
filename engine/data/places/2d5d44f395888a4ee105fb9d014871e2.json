@@ -1,0 +1,40 @@
+{
+  "id": "2d5d44f395888a4ee105fb9d014871e2",
+  "type": "place",
+  "name": "Nomad Kitchen",
+  "aliases": [
+    "Nomad"
+  ],
+  "description": "A pop-up restaurant in Chicago that changes location every two weeks, operating from borrowed kitchens, event spaces, warehouses, and occasionally someone's apartment. Chef Kosi Lindqvist-Okafor announces each location forty-eight hours in advance via encrypted message to a subscriber list. The menu changes with the location — a warehouse dinner might be rustic and smoky (Φ35), an apartment dinner intimate and French (Φ45). The unpredictability is deliberate: Kosi believes restaurants should be events, not addresses, and that food tastes different depending on where you eat it.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Pop-up chasers",
+    "Encrypted message subscribers",
+    "People who enjoy logistical dining"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.895,
+    "lng": -87.653
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_3"
+  ],
+  "related_entities": [
+    "Kosi Lindqvist-Okafor"
+  ]
+}

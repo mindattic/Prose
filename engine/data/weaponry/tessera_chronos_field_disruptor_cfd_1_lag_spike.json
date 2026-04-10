@@ -1,0 +1,45 @@
+{
+  "id": "759c25b9bd2ada423a5b3de23e2a676e",
+  "name": "Tessera Chronos Field Disruptor CFD-1 'Lag Spike'",
+  "type": "weapon",
+  "aliases": [
+    "Lag Spike",
+    "CFD-1",
+    "Chronos Disruptor",
+    "Slow Zone"
+  ],
+  "category": "exotic",
+  "description": "A classified experimental weapon that projects a localized temporal distortion field — an area approximately 3 meters in diameter where the passage of time is slowed relative to the surrounding environment. Targets within the field experience subjective time normally, but external observers see them moving at approximately one-tenth normal speed.\n\nTessera's quantum physics division developed the Chronos Disruptor based on theoretical work suggesting that gravitational manipulation at extreme intensities can produce time dilation effects. The CFD-1 does not stop time — it creates a steep temporal gradient that slows all processes within the field, from chemical reactions to neural signaling to projectile trajectories.\n\nThe weapon is Tessera's most classified project, with fewer than five operational units in existence. The temporal distortion field persists for approximately 10 seconds before the quantum effects collapse, and the energy required to maintain even this brief distortion requires a power system that occupies a small vehicle. The man-portable designation is generous — the weapon is backpack-mounted and requires a two-person crew.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 5",
+  "legality": "Classified — existence officially denied",
+  "base_technologies": [
+    "Localized temporal field generation",
+    "Gravitational time dilation manipulation",
+    "Quantum temporal distortion engineering"
+  ],
+  "specifications": "caliber: N/A — projected temporal distortion field\neffective_range: 10-40 meters (field projection point)\nrate_of_fire: 1 field per 120 seconds (quantum field regeneration)\ncapacity: 3 fields per power cell\nweight: 38 kg (weapon and power system, two-person crew)\npower_source: Experimental quantum power cell, non-rechargeable",
+  "tactical_use": "The Lag Spike is deployed to freeze high-value targets in relative time, allowing operators to approach, restrain, and extract them while they are effectively immobilized. From the target's perspective, they see the world suddenly accelerate — operators appear to move at ten times normal speed, and they are restrained before they can react. The weapon has also been used to freeze incoming projectiles in flight, creating a brief window where a protected area is effectively immune to ballistic threats.",
+  "cultural_context": "The CFD-1's existence is unknown to the general population of GLMZ. Among the handful of individuals who have encountered its effects, the experience is described as profoundly disorienting — the world seems to jump forward, with gaps in memory and perception that feel like a corrupted recording. Tessera's quantum physics division treats the project with religious secrecy, and personnel involved in its development are forbidden from acknowledging its existence even within Tessera's own corporate structure.",
+  "known_users": [
+    "Tessera quantum operations team (estimated 3-5 personnel)"
+  ],
+  "story_hooks": [
+    "A security camera in a Tier 4 corridor recorded footage that appears to show time moving at different speeds in different parts of the frame — people on the left side of the image moving normally while people on the right appear frozen. The footage has been classified and the camera's storage has been seized.",
+    "A CFD-1 field collapsed prematurely during a classified operation, and the temporal gradient's sudden equalization produced a burst of exotic radiation. Three operators are experiencing time at a slightly different rate than the surrounding world — they are aging faster than normal, and Tessera cannot fix it."
+  ],
+  "ammunition_type": [
+    "Temporal distortion field"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "temporal",
+    "classified",
+    "experimental",
+    "tier 5",
+    "time"
+  ],
+  "physical_description": "The CFD-1 resembles a bulky, jury-rigged particle accelerator compressed into a shoulder-mounted cannon housing—all exposed titanium ribbing, frayed coolant lines, and a dish-shaped emitter array ringed with burnt copper coils. The barrel is wrapped in degraded thermal tape, and a cracked LED readout flickers along its side, displaying cryptic temporal variance metrics that never quite stabilize. A thick umbilical cable snakes from the rear, terminating in a worn battery harness that hums with an unsettling, almost organic frequency.",
+  "visual_prompt": "shoulder-mounted temporal weapon, particle accelerator cannon, burnt copper coils, frayed coolant lines, exposed titanium ribbing, cracked LED readout, thermal tape wrapped barrel, gritty neo-noir product photography, industrial decay, rain-slicked metal surfaces, dark studio background, moody cinematic lighting, detailed weathering, StreetSamurai aesthetic"
+}

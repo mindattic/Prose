@@ -1,0 +1,37 @@
+{
+  "name": "Morrivan",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Quiet",
+    "Blankwall",
+    "The Still"
+  ],
+  "category": "sleep_dream",
+  "subcategory": "nightmare_suppressor",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Morrivan is the clinical standard for nightmare disorder in GLMZ, specifically formulated to address the epidemic of chrome rejection trauma, combat PTSD, and the specific dissociative nightmare profiles caused by failed BCI integration. It works by selectively dampening amygdala hyperactivation during REM sleep while preserving normal dream architecture, preventing the formation of fear-state dream loops without eliminating dreaming entirely. Lazarus developed it in direct response to the chrome rejection crisis of the 2180s and holds the dominant market share.",
+  "method_of_use": "oral",
+  "effects": [
+    "Elimination of trauma-triggered nightmare loops",
+    "Reduction of amygdala hyperactivation during REM",
+    "Preservation of normal non-threatening dream content",
+    "Reduced nighttime cortisol spikes",
+    "Improved sleep quality metrics"
+  ],
+  "side_effects": [
+    "Emotional flattening during waking hours (dose-dependent)",
+    "Suppression extends to positive intense dreams in some users",
+    "Withdrawal nightmares are significantly more severe than baseline",
+    "Long-term use associated with reduced emotional processing capacity"
+  ],
+  "duration": "6-8 hours",
+  "addiction_risk": "moderate",
+  "tier_availability": "All tiers",
+  "legality": "prescription",
+  "street_price": "Φ12 per tablet; Φ40 on Shelf without prescription",
+  "cultural_context": "Morrivan is everywhere. Chrome rejection — where the body and mind rebel against cyberware implantation — produces a specific category of nightmare so severe that some patients don't survive the sleep deprivation. Combat veterans, Shelf survivors, anyone who has been through serious trauma uses it or has used it. On the Shelf, it's traded like currency and sometimes used recreationally for its emotional-blunting waking effects by people who simply don't want to feel anything for a while.",
+  "story_hooks": [
+    "A Tier 1 black market Morrivan supply has been cut with an amygdala amplifier instead of a suppressant — Shelf residents are experiencing the worst nightmares of their lives, and someone is doing it deliberately.",
+    "A soldier is the sole witness to a war crime but has suppressed the memory so thoroughly with Morrivan that they genuinely cannot recall it — the nightmare that would prove what they saw is pharmacologically locked away."
+  ]
+}

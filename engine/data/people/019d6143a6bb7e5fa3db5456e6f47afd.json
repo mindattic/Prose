@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Information Dense",
-      "Pattern Recognition",
-      "Gray Market",
-      "Suppressed Evidence",
-      "Geartown Institution"
+      "information dense",
+      "pattern recognition",
+      "gray market",
+      "suppressed evidence",
+      "geartown institution"
     ]
   },
   "behavioral": {
@@ -241,7 +241,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

@@ -1,0 +1,43 @@
+{
+  "name": "Meridian Domestic PB-4 'Nana'",
+  "type": "automaton",
+  "classification": "Domestic",
+  "aliases": [
+    "Nana",
+    "Pet Bot",
+    "The Sitter"
+  ],
+  "manufacturer": "MERIDIAN DOMESTIC SYSTEMS",
+  "description": "The PB-4 is a pet care automaton — a small wheeled unit the size of a footstool that feeds, waters, and monitors domestic animals when owners are away. It dispenses food on schedule from internal reservoirs, maintains water bowls via a pump connection, and monitors animal vital signs through a passive biometric scanner. If the animal shows signs of distress, injury, or illness, the PB-4 alerts the owner and, if no response is received within thirty minutes, contacts an emergency veterinary service.\n\nThe PB-4 was designed for the substantial population of GLMZ workers who keep pets but work twelve-hour shifts in corporate facilities with no-pet policies. The unit cannot walk a dog, play with a cat, or provide companionship — it feeds, waters, and monitors. It is the bare minimum of automated animal care, and Meridian Domestic does not pretend otherwise. The marketing is refreshingly honest: 'Your pet won't starve while you're at work.'\n\nThe PB-4's biometric scanner has proven unexpectedly useful beyond its intended purpose. Veterinary researchers have used aggregated PB-4 data (anonymized, Meridian Domestic claims) to track disease patterns in the urban animal population. Two outbreaks of canine respiratory virus were identified weeks earlier than they would have been through traditional veterinary reporting, because PB-4 units across the city simultaneously flagged elevated breathing rates in dogs within specific neighborhoods.",
+  "tier_availability": "Tier 1",
+  "legality": "Consumer — unrestricted",
+  "autonomy_level": "Fully autonomous — simple feeding and monitoring",
+  "dimensions": "0.3m height, 0.4m diameter",
+  "weight": "8 kg",
+  "power_source": "Lithium polymer, 48-hour endurance",
+  "locomotion": "Three-wheel omnidirectional",
+  "armament": [],
+  "sensors": [
+    "Passive biometric scanner",
+    "Food level monitoring",
+    "Water quality sensor"
+  ],
+  "countermeasures": "None. It feeds pets.",
+  "known_deployments": [
+    "Extremely widespread across all tiers"
+  ],
+  "story_hooks": [
+    "PB-4 units across a specific district are all reporting the same anomaly: elevated stress hormones in every animal they monitor. Something in the environment is affecting the animals — a subsonic frequency, a chemical contaminant, something that humans can't detect but animals can.",
+    "A PB-4's biometric data shows that the 'dog' it has been feeding for six months has vital signs inconsistent with any known canine breed. The heart rate is too slow, the breathing pattern is wrong, and the thermal signature is three degrees below normal for a mammal. Whatever is eating from that bowl is not a dog."
+  ],
+  "cultural_context": "The PB-4 represents the atomization of GLMZ — a city where people work so much they need a machine to feed their pets. Animal welfare advocates argue the PB-4 enables neglect by making it survivable. Pet owners argue it's the only way they can have animals at all. Both are correct.",
+  "tags": [
+    "automaton",
+    "domestic",
+    "pet care",
+    "consumer",
+    "meridian domestic",
+    "tier 1"
+  ],
+  "id": "07514ed90d298e338f301de46e172451"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "cd238ea2050bacb5b54204a5a5f7c460",
+  "name": "Fenris Ballistics Packmaster FB-12 'Alpha'",
+  "type": "weapon",
+  "aliases": [
+    "Alpha",
+    "FB-12",
+    "Packmaster",
+    "Lead Dog"
+  ],
+  "category": "support",
+  "description": "A BCI-networked support weapon system designed to be operated in synchronized pairs or groups. When two or more Packmasters are linked through their operators' BCI connections, the weapons coordinate their fire patterns automatically — one suppresses while the other repositions, creating continuous overlapping fire without communication delay.\n\nFenris Ballistics designed the Alpha around the concept of pack hunting — multiple weapons acting as a single predatory system. Each Packmaster fires standard 6.5mm caseless rounds at a modest 500 RPM, but when two weapons synchronize, their combined fire pattern becomes greater than the sum of its parts. The BCI network calculates optimal firing arcs, coordinates reload timing, and ensures that at least one weapon is always active.\n\nThe system's intelligence grows with additional units. Two Packmasters coordinate. Four create adaptive fire patterns. Eight approach autonomous behavior, with the BCI network predicting enemy movement and pre-positioning fire to intercept.",
+  "manufacturer": "FENRIS BALLISTICS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — military squad-level procurement",
+  "base_technologies": [
+    "BCI-networked fire coordination",
+    "Multi-weapon synchronization algorithms",
+    "Emergent tactical behavior from weapon linking"
+  ],
+  "specifications": "caliber: 6.5mm caseless\neffective_range: 50-800 meters\nrate_of_fire: 500 rounds per minute per weapon\ncapacity: 200-round box magazine\nweight: 8.2 kg\npower_source: BCI synchronization: operator neural interface, no additional power",
+  "tactical_use": "The Packmaster is deployed in coordinated pairs or groups where BCI-linked operators can maintain neural synchronization. The system excels in defensive positions where two or more Alpha operators can establish overlapping fire zones with automated coordination. The BCI link reduces communication overhead to zero — operators simply think about firing and the network handles deconfliction, timing, and coverage optimization.",
+  "cultural_context": "Fenris's pack-hunting philosophy has created a unique subculture among Packmaster operators. Teams that have fought together develop a neural synchronization depth that approaches telepathy during engagements. Long-term Packmaster teams report shared dreams, involuntary mimicry of each other's habits, and difficulty operating independently. Neurologists have raised concerns about the long-term cognitive effects of sustained tactical BCI linking, but operators dismiss the warnings — the pack is stronger than the individual.",
+  "known_users": [
+    "Fenris Ballistics synchronized fire teams",
+    "Corporate defensive garrisons"
+  ],
+  "story_hooks": [
+    "A four-operator Packmaster team went dark during a routine patrol. When found, all four were seated in a circle, weapons down, neural links still active. They appear conscious but unresponsive — their BCI synchronization has locked them in a shared neural state that nobody knows how to interrupt.",
+    "An eight-Packmaster network achieved a level of synchronization that Fenris engineers say should not be possible. The weapon system began predicting attacks before any sensor data indicated a threat — as if the networked weapons developed a form of precognition."
+  ],
+  "ammunition_type": [
+    "6.5mm caseless"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "networked",
+    "BCI",
+    "synchronized",
+    "squad",
+    "tier 4"
+  ],
+  "physical_description": "The FB-12 'Alpha' is a compact, angular support weapon with a reinforced polymer chassis in matte gunmetal gray, its surfaces etched with wear marks and thermal scoring. A cluster of BCI-link nodes runs along the upper receiver in dull copper, their contacts oxidized from rain exposure. The weapon's frame is deliberately modular—quick-detach sections suggest frequent field modification, and jury-rigged wire harnesses snake between components where factory connections have failed.",
+  "visual_prompt": "Fenris FB-12 Alpha support weapon system, matte gunmetal gray polymer chassis, gritty cyberpunk neo-noir aesthetic, worn thermal scoring, oxidized copper BCI nodes, modular quick-detach sections, jury-rigged wire harnesses, detailed product photography, industrial decay, rain-slicked surfaces, dark studio background, technical precision meets street-worn deterioration, 6.5mm caseless ammunition feed system visible"
+}

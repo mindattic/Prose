@@ -1,0 +1,47 @@
+{
+  "id": "b96943d1edf8175292bd326f6bd6c95f",
+  "name": "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
+  "type": "weapon",
+  "aliases": [
+    "Phantom",
+    "VS-Noir",
+    "The Black Revolver"
+  ],
+  "category": "revolver",
+  "description": "The Volkov-Saito VS-R357 Noir is a six-shot double-action revolver chambered in .357 Magnum, finished entirely in a matte black DLC (diamond-like carbon) coating that absorbs light and eliminates reflection. The weapon is designed for discrete carry — no polished surfaces, no visible logos, no chrome or stainless gleam. Even the front sight is a low-profile black serrated ramp that disappears against dark backgrounds.\n\nThe Phantom is Volkov-Saito's concession to the tactical market. Where their other revolvers celebrate craftsmanship and visual appeal, the Noir hides both. The DLC coating is functionally superior to traditional bluing or plating — harder, more corrosion-resistant, and essentially maintenance-free — but its primary purpose is aesthetic stealth. The Phantom is a weapon designed to be invisible in a dark room, unnoticed in a holster, and unremarkable on a security camera.\n\nThe weapon underneath the coating is pure Volkov-Saito: precision-machined frame, tuned trigger, match-grade barrel. The Phantom shoots as well as any revolver in the VS lineup. It simply refuses to be seen doing it. This combination of high performance and low visibility has made it the weapon of choice for discrete protection details and individuals who need excellent capability without any visual signature.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — enhanced registration required",
+  "base_technologies": [
+    "DLC coating",
+    "Anti-reflective design",
+    "Precision construction",
+    "Low-profile sights"
+  ],
+  "specifications": "caliber: .357 Magnum\neffective_range: 50 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 6 rounds (cylinder)\nweight: 1.0 kg",
+  "tactical_use": "A precision revolver optimized for visual discretion. The DLC coating eliminates light reflection and resists environmental damage. The low-profile design minimizes printing under clothing. Performance matches Volkov-Saito's standard precision revolvers. Best suited for protection details and operators who require high capability without visual presence.",
+  "cultural_context": "The Phantom is the revolver you carry when you don't want anyone to know you carry a revolver. In protection circles, it represents the philosophy that the best weapon is the one nobody knows exists until it appears. Volkov-Saito doesn't advertise the Noir — its reputation spreads through professional networks exclusively.",
+  "known_users": [
+    "Discrete protection details",
+    "Undercover operatives",
+    "Privacy-conscious carriers",
+    "Low-visibility security professionals"
+  ],
+  "story_hooks": [
+    "A Phantom is used in an assassination, and the lack of any reflective surface means security cameras captured nothing — no glint, no outline, no evidence that a weapon was present at all.",
+    "Volkov-Saito's DLC coating supplier is compromised, and the next batch of Phantoms ships with a coating that fluoresces under UV light — making every weapon in the batch visible to anyone with a blacklight."
+  ],
+  "ammunition_type": [
+    ".357 Magnum"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "stealth",
+    "precision",
+    "discrete",
+    "DLC_coating"
+  ],
+  "physical_description": "A six-shot .357 Magnum revolver wrapped in matte black DLC coating that seems to drink light rather than reflect it. The frame and cylinder are unmarked, featureless—even the front sight is a low black ramp that bleeds into shadow. The grip is textured polymer, worn smooth from handling, with no visible branding or ornamentation.",
+  "visual_prompt": "matte black DLC revolver, .357 magnum, low-profile sights, textured polymer grip, product photography, gritty neo-noir aesthetic, industrial lighting, rain-slicked surface, dark background, tactical weapon, cyberpunk, detailed metal texture, no reflection, worn practical design"
+}

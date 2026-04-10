@@ -151,7 +151,7 @@ const CATEGORIES = [
   {
     category: 'podcast',
     count: 18,
-    prompt: `Generate {count} podcasts/audio shows from GLMZ, 2183-2226. In 2200, podcasts stream through neural feed or old-school audio. Include: pirate radio shows broadcasting from the Shelf, corporate-sponsored interview programs, underground political commentary, comedy shows, true crime about M88's underworld, tech review shows about new chrome/geneware, philosophy discussions about consciousness and augmentation, storytelling shows, music critique. Some are massive with millions of neural-feed subscribers, some are tiny Shelf operations.`
+    prompt: `Generate {count} podcasts/audio shows from GLMZ, 2183-2226. In 2200, podcasts stream through neural feed or old-school audio. Include: pirate radio shows broadcasting from the Shelf, corporate-sponsored interview programs, underground political commentary, comedy shows, true crime about GLMZ's underworld, tech review shows about new chrome/geneware, philosophy discussions about consciousness and augmentation, storytelling shows, music critique. Some are massive with millions of neural-feed subscribers, some are tiny Shelf operations.`
   },
   {
     category: 'broadcast',
@@ -229,7 +229,7 @@ Each entry MUST have exactly these fields:
   "year": number between 2183 and 2226,
   "tier_association": "Tier 1|Tier 2|Tier 3|Tier 4|Tier 5|All tiers|Tier 1-2|Tier 3-4|Tier 4-5",
   "medium": "how this is consumed/experienced (neural feed, physical, holographic, audio, etc.)",
-  "cultural_impact": "1-2 sentences on why this matters in M88 society",
+  "cultural_impact": "1-2 sentences on why this matters in GLMZ society",
   "controversy": "any controversy or tension around this (or null if none)",
   "status": "active|defunct|banned|underground|legendary|archived",
   "tags": ["array", "of", "relevant", "tags"],

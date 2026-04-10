@@ -1,0 +1,28 @@
+{
+  "name": "Fragment — Water Treatment Sensor Data",
+  "type": "document",
+  "document_type": "fragment",
+  "author": "Water Treatment Monitoring System",
+  "date": "unknown",
+  "classification": "restricted",
+  "description": "Sensor readings from the Shelf water supply showing a compound that the system cannot identify. The compound appears for 4 hours every 11 days on a precise schedule. It is not harmful. Chemical analysis returns: \"STRUCTURE: [UNRESOLVABLE]. ORIGIN: [UNRESOLVABLE]. RECOMMENDATION: [NO DATA].\"",
+  "related_entities": [],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "What is the unidentifiable compound?",
+    "Why does it appear on a precise 11-day schedule?",
+    "Who or what is introducing it?"
+  ],
+  "tags": [
+    "document",
+    "fragment",
+    "incomplete",
+    "data log",
+    "water treatment",
+    "the shelf",
+    "unknown compound",
+    "schedule",
+    "anomaly"
+  ],
+  "id": "be0834567a701318468446b6f50ea67b"
+}

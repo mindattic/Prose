@@ -1,0 +1,47 @@
+{
+  "id": "de910905910ef2b613eaa0baea0d1f78",
+  "name": "Kang-Petrov Arms KPS-3M 'Mongrel'",
+  "type": "weapon",
+  "aliases": [
+    "Mongrel",
+    "KPS-3M",
+    "Junkyard Special"
+  ],
+  "category": "smg",
+  "description": "The KPS-3M Mongrel is Kang-Petrov's modular SMG platform designed to accept components scavenged from other weapons. The receiver has universal attachment points that mate with barrels, stocks, grips, and magazines from over forty different weapon systems. A Mongrel might have a Tessera barrel, a Crucible stock, and a Meridian magazine, all functioning together through Kang-Petrov's universal interface system.\n\nThe base Mongrel kit — receiver, bolt, and basic furniture — costs Φ300. Everything else is salvageable. Kang-Petrov publishes compatibility guides listing which components from which manufacturers fit the Mongrel's universal interface, and the community has expanded this list through experimentation. The weapon's reliability depends entirely on the quality of components used — a Mongrel built from premium salvage outperforms a Mongrel built from garbage.\n\nThe KPS-3M exists because weapons break, get abandoned, and accumulate in conflict zones faster than they can be manufactured or disposed of. The Mongrel transforms this surplus of parts into functional weapons, recycling the detritus of violence into tools for survival. It is simultaneously the most innovative and most desperate weapon in production.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Available — basic licensing",
+  "base_technologies": [
+    "Universal component interface",
+    "Cross-manufacturer compatibility",
+    "Modular salvage architecture"
+  ],
+  "specifications": "caliber: Variable (depends on barrel/magazine configuration)\neffective_range: Variable (30-150m depending on build)\nrate_of_fire: Variable (depends on bolt and caliber)\nmagazine_capacity: Variable (depends on magazine used)\nweight: 1.5-3.0 kg (depends on configuration)",
+  "tactical_use": "The Mongrel's tactical value is adaptability. In environments where resupply is impossible, the ability to scavenge components from any weapon system and build a functional SMG is invaluable. Operators in prolonged sieges, behind enemy lines, or in collapsed infrastructure zones can maintain armed capability by harvesting parts from the battlefield. The weapon's performance ceiling is limited by available components, but its performance floor is 'functional firearm from scrap metal.'",
+  "cultural_context": "The Mongrel is the weapon of improvisation and survival. Every Mongrel is unique — a physical record of what was available, what was scavenged, and what was needed. In Tier 1 communities, Mongrel-building is a respected skill, and gunsmiths who can assemble reliable weapons from random parts are valued members of any settlement. The weapon is ugly, inconsistent, and deeply personal. No two are alike.",
+  "known_users": [
+    "Scavengers",
+    "Siege survivors",
+    "Frontier gunsmiths",
+    "Anyone with parts and desperation"
+  ],
+  "story_hooks": [
+    "A Mongrel recovered from a crime scene contains components from weapons that were supposed to be destroyed in an Arcturus decommissioning. Someone is diverting 'destroyed' weapon parts into the salvage market.",
+    "A legendary gunsmith builds Mongrels that outperform factory weapons — their builds are collector's items worth Φ5,000+. They've been kidnapped by a faction that wants exclusive access to their skills."
+  ],
+  "ammunition_type": [
+    "Variable — depends on configuration"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "modular",
+    "salvage",
+    "improvised",
+    "Kang-Petrov",
+    "tier 1"
+  ],
+  "physical_description": "The KPS-3M Mongrel is a utilitarian SMG receiver of matte gunmetal and scuffed polymer, its frame riddled with standardized mounting points and quick-release lugs that accommodate a dozen different component lineages. Its modular nature means no two Mongrels look identical—one might sport a scratched chrome barrel from a Tessera pistol, a worn composite stock salvaged from a Crucible rifle, mismatched grips taped at the seams. The universal interface system is visible as a series of precision-machined hardpoints running along the receiver, their tolerances worn but functional, giving the weapon the frankenstein appearance of something assembled from a junkyard but engineered to actually work.",
+  "visual_prompt": "modular SMG receiver, matte gunmetal and scuffed polymer, multiple quick-release mounting points, frankenstein weapon assembled from salvage parts, worn chrome and composite materials, precise machined hardpoints, gritty neo-noir, cyberpunk, detailed product photography, dark rain-slicked background, industrial decay, practical worn tech, no chrome reflections"
+}

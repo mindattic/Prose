@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Unaccompanied Minor",
-      "Survivor Intelligence",
-      "Geographic Memory",
-      "Grieving",
-      "Quietly Determined"
+      "unaccompanied minor",
+      "survivor intelligence",
+      "geographic memory",
+      "grieving",
+      "quietly determined"
     ]
   },
   "behavioral": {
@@ -250,7 +250,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

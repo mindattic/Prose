@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "Western border — bunks at the farmstead but spends most of his time in the field",
-  "description": "Slate Cervantes-Echeverría has killed more Behemoths than anyone currently operating on M88's western border. Not the most ever — that record belongs to a Gleaner named Doss who went out eleven years ago and did not return — but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don't die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter's count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge — the border communities where GLMZ's governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn't feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn't be. She trained him, kept him alive, and watched him become the most effective field operative she'd ever worked with. She also watched him become colder with each raid, and that's the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator — no wasted motion, constant awareness, an animal stillness when he's watching something. His eyes are the most unsettling thing about him — pale, steady, and focused in a way that makes people feel like terrain being assessed.",
+  "description": "Slate Cervantes-Echeverría has killed more Behemoths than anyone currently operating on GLMZ's western border. Not the most ever — that record belongs to a Gleaner named Doss who went out eleven years ago and did not return — but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don't die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter's count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge — the border communities where GLMZ's governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn't feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn't be. She trained him, kept him alive, and watched him become the most effective field operative she'd ever worked with. She also watched him become colder with each raid, and that's the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator — no wasted motion, constant awareness, an animal stillness when he's watching something. His eyes are the most unsettling thing about him — pale, steady, and focused in a way that makes people feel like terrain being assessed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -242,7 +242,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

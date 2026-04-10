@@ -100,7 +100,7 @@
       "puppeteer",
       "satirist",
       "tier-1",
-      "UBC-dependent",
+      "ubc-dependent",
       "neighborhood-fixture"
     ]
   },
@@ -239,7 +239,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

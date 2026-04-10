@@ -1,0 +1,46 @@
+{
+  "id": "bcd2c02b532b9e9bab5d6c7108e671aa",
+  "name": "Crucible Industries Resonance Katana RK-7 'Singing Edge'",
+  "type": "weapon",
+  "aliases": [
+    "Singing Edge",
+    "RK-7",
+    "The Singer",
+    "Hum Blade"
+  ],
+  "category": "melee",
+  "description": "A katana-profile blade constructed from layered carbon-lattice composite with an integrated piezoelectric vibration system that oscillates the cutting edge at 40,000 cycles per second. The RK-7's blade appears to shimmer slightly when activated — a visual artifact of the micro-vibration that gives the weapon its name. The harmonic frequency was specifically chosen to match the resonant failure point of common body armor polymers, allowing the blade to slice through protective materials that would stop a conventional edge.\n\nCrucible Industries developed the Resonance Katana as a prestige product for their executive protection line — a melee weapon elegant enough to be carried openly in corporate settings without appearing crude, while maintaining genuine combat lethality. The handle houses a micro-capacitor that powers the vibration system for approximately four hours of continuous use, and the blade's carbon-lattice construction makes it lighter than a traditional steel katana while being substantially harder.\n\nThe weapon has found an unexpected secondary market among GLMZ's dueling culture, where augmented combatants settle disputes in semi-legal arenas. The Singing Edge's ability to defeat armor while remaining a recognizably traditional weapon form has made it the prestige choice for duelists who value aesthetics alongside function. Master bladesmiths at Crucible hand-tune each blade's resonance frequency, and no two Singing Edges produce exactly the same tone.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — registered melee weapon, executive carry permit",
+  "base_technologies": [
+    "Piezoelectric edge vibration",
+    "Carbon-lattice composite blade",
+    "Harmonic armor-resonance tuning"
+  ],
+  "specifications": "blade_length: 71 cm\ntotal_length: 102 cm\nweight: 0.9 kg\nedge_oscillation: 40,000 Hz\npower_source: Handle-integrated micro-capacitor, 4 hours continuous\nblade_material: Layered carbon-lattice composite\nhardness: 78 HRC equivalent",
+  "tactical_use": "The Singing Edge is deployed in close-quarters situations where firearms are impractical, prohibited, or undesirable. Executive bodyguards carry it as a secondary weapon for scenarios where gunfire would cause unacceptable collateral damage. In dueling contexts, the blade's vibration system allows it to defeat opponents' armor without requiring superhuman striking force, leveling the field between augmented and unaugmented combatants. Operators learn to use the audible hum as a psychological weapon — the sound of a Singing Edge activating has ended more confrontations than the blade itself.",
+  "cultural_context": "The katana form carries cultural weight in GLMZ that transcends its Japanese origins — after generations of diaspora mixing, the weapon represents discipline and martial tradition without belonging exclusively to any heritage. Crucible's decision to build a high-tech katana was a calculated cultural play, and it worked. Owning a Singing Edge signals both wealth and martial competence. The dueling community has developed a ranking system based partly on the tonal quality of a duelist's blade — higher-pitched resonance is considered more prestigious.",
+  "known_users": [
+    "Crucible Industries executive protection details",
+    "GLMZ dueling circuit elite",
+    "Corporate diplomats with martial training"
+  ],
+  "story_hooks": [
+    "A Singing Edge was used in a high-profile duel and the blade's resonance frequency matched a tone that caused a spectator's cochlear implant to malfunction — raising questions about whether the weapon was deliberately tuned to harm augmented bystanders.",
+    "A Crucible master bladesmith has gone independent and is producing unauthorized Singing Edges with custom resonance tuning that can defeat specific armor types on request. Crucible wants them shut down."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "katana",
+    "vibro-blade",
+    "carbon-lattice",
+    "tier 3",
+    "prestige",
+    "dueling"
+  ],
+  "physical_description": "A sleek katana-profile blade of dark carbon-lattice composite with subtle iridescent striations visible along its length, the edge catching light with an almost liquid shimmer when powered. The handle is wrapped in worn synthetic leather over a reinforced grip, with a small piezoelectric module visible near the tsuba—weathered but functional, bearing the faint serial markings of Crucible Industries. Faint scoring and patina mark the blade's surface, evidence of previous use despite its prestige origins.",
+  "visual_prompt": "Japanese katana sword, carbon-lattice composite blade with iridescent shimmer, piezoelectric vibration system visible at base, worn synthetic leather grip, dark metal tsuba, gritty neo-noir product photography, industrial decay backdrop, rain-slicked surface reflection, detailed macro focus on blade edge, cyberpunk aesthetic, moody neon accent lighting, 4k, photorealistic"
+}

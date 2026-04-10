@@ -1,0 +1,41 @@
+{
+  "id": "97f3df7c2fca8f039132fae3ac950722",
+  "type": "place",
+  "name": "The Night Owl Bakery",
+  "aliases": [
+    "Night Owl",
+    "Owl"
+  ],
+  "description": "A bakery in Ukrainian Village that operates from 8 PM to 6 AM — reverse hours, serving the night shift economy. Bread, rolls, pastries, and a dense chocolate cake that has developed a cult following. Everything is baked with real flour, real sugar, and vat-butter, which puts Night Owl firmly in Circuit territory price-wise: a loaf of bread is Φ8, pastries are Φ4-6. Owner Olesya Okafor-Kovalenko starts baking at 6 PM and the smell hits the street by 7:30 PM, which is the only advertisement she needs. The cake — the cake is Φ15 per slice and worth every quanta.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Night shift workers",
+    "Late-night carb seekers",
+    "Chocolate cake cultists"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.899,
+    "lng": -87.677
+  },
+  "tags": [
+    "place",
+    "cafe",
+    "food",
+    "tier_2"
+  ],
+  "related_entities": [
+    "Olesya Okafor-Kovalenko"
+  ]
+}

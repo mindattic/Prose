@@ -1,0 +1,36 @@
+{
+  "name": "Cordathin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Heartstring",
+    "the Slow Goodbye",
+    "Six-Month"
+  ],
+  "category": "poison_toxin",
+  "subcategory": "slow-kill cardiac mimetic",
+  "manufacturer": "Unknown — suspected Nightshade Pharmatech black-lab synthesis",
+  "description": "Cordathin is a lipid-soluble compound that binds to cardiac ion channels and progressively dysregulates calcium flux over a period of four to seven months, producing symptoms indistinguishable from idiopathic dilated cardiomyopathy. Standard autopsies and BCI health monitors interpret Cordathin-induced degradation as natural cardiac disease, logging it as progressive heart failure with no flagged anomalies. A single dermal exposure is sufficient for a lethal dose.",
+  "method_of_use": "dermal_patch",
+  "effects": [
+    "Undetectable progressive cardiac deterioration",
+    "Mimics natural heart disease progression",
+    "Fatal within 4-7 months at standard dosing",
+    "Leaves no toxicological signature in standard panels"
+  ],
+  "side_effects": [
+    "Victim experiences genuine fatigue, edema, and dyspnea consistent with heart failure — no unusual symptoms to raise suspicion",
+    "Antidote window closes after 72 hours of exposure",
+    "Accidental contact during application is fatal to the handler without immediate chelation"
+  ],
+  "duration": "4-7 months to lethality; compound is metabolized and undetectable after 3 weeks",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 3-4",
+  "legality": "illegal",
+  "street_price": "Φ18,000–Φ45,000 per dose depending on provenance verification",
+  "cultural_context": "Cordathin is the preferred instrument of corporate succession wars — used to remove executives, board members, and political rivals who cannot be touched openly. Its six-month window allows the poisoner to be nowhere near the city when the target dies. In Spire circles it is spoken of in euphemism: someone who has been 'given their notice' or 'put on the calendar.' Street-level fixers rarely handle it — the margins are too thin and the clientele too dangerous. Most doses are brokered through intermediaries with no names.",
+  "story_hooks": [
+    "A Tier 4 corporate doctor notices a statistical anomaly — three executives at the same firm have died of 'heart failure' in eighteen months, all under sixty, all in perfect BCI-monitored health six months prior. She starts asking questions and something starts asking questions back.",
+    "A fixer is hired to retrieve an antidote for a client who has already been dosed — but the only supplier of the chelation compound is the same person who ordered the poisoning.",
+    "A street chemist on the Shelf claims she reverse-engineered Cordathin from a sample and can produce a detection assay — making her the most dangerous woman in GLMZ to certain people in the Spire."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "33e9377f9c4950717a785d8ac8409af4",
+  "name": "TESSERA NL-6 'Web Caster'",
+  "type": "weapon",
+  "aliases": [
+    "Web Caster",
+    "Net Gun",
+    "Spider Shot"
+  ],
+  "category": "less-lethal",
+  "description": "A shoulder-fired net launcher that deploys a 4-meter weighted polymer net at ranges up to 15 meters. The net's edges carry tungsten weights that wrap around the target upon impact, and the polymer mesh contracts slightly as it cools from deployment temperature, tightening around the subject's body. A single NL-6 net can immobilize an adult human for 3-5 minutes — long enough for security personnel to approach and apply conventional restraints.\n\nTESSERA designed the Web Caster for high-value capture operations where the target must be taken alive and uninjured. The net itself causes no physical damage — it restrains without striking, compresses without crushing, and immobilizes without the electrical discharge or chemical exposure of other less-lethal systems. This makes it the preferred tool for apprehending individuals who have value — corporate assets, witnesses, hostages, and anyone whose injuries would create liability.\n\nThe weapon's limitation is its single-shot design and its vulnerability to edged tools. The polymer net can be cut with any sharp blade in under 10 seconds, meaning the Web Caster is only effective against targets who are unarmed, surprised, or both. Against a prepared target with a knife, the net is a momentary inconvenience. TESSERA's response to this limitation was the NL-6B variant, which coats the net polymer in a contact adhesive that bonds to skin and clothing, making cutting the net a process that also involves cutting yourself free of your own clothes.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security and law enforcement",
+  "street_price": "Φ2,800 (nets Φ200 each, single-use)",
+  "base_technologies": [
+    "Weighted polymer net deployment",
+    "Thermal-contraction restraint",
+    "Optional contact adhesive coating"
+  ],
+  "specifications": "net diameter: 4 meters deployed\neffective range: 15 meters\ncapacity: 1 net (single-use cartridge)\nrestraint duration: 3-5 minutes without intervention\nweight: 3.0 kg\nlength: 550mm\nvariant: NL-6B with contact adhesive coating",
+  "tactical_use": "Non-damaging target capture and immobilization. Used when the target must be taken alive and uninjured for operational, legal, or value reasons. Operators typically deploy the Web Caster as a first-contact tool, then approach with conventional restraints.",
+  "cultural_context": "The Web Caster is regarded as the most humane capture tool in GLMZ's security arsenal, which says more about the rest of the arsenal than it does about the Web Caster. Being netted is humiliating and frightening but rarely causes lasting physical harm, which makes it the preferred tool for situations that will be recorded.",
+  "known_users": [
+    "Corporate asset recovery teams",
+    "Law enforcement capture units",
+    "Bounty hunters",
+    "Wildlife management in GLMZ's urban ecology"
+  ],
+  "story_hooks": [
+    "A Web Caster net has been recovered with modifications — the polymer mesh has been infused with a slow-release sedative that absorbs through the skin over 60 seconds, putting the restrained target to sleep. No need for personnel to approach. The target is simply packaged for collection.",
+    "Someone has been netting people in the Shelf — firing Web Casters from rooftops and leaving the targets restrained for hours until the net degrades. No robbery, no assault, no apparent motive. Just the humiliation of being trapped and helpless while people walk past."
+  ],
+  "ammunition_type": [
+    "net_cartridge"
+  ],
+  "tags": [
+    "less-lethal",
+    "weapon",
+    "net",
+    "capture",
+    "restraint",
+    "tessera",
+    "security",
+    "tier 2"
+  ],
+  "physical_description": "The NL-6 is a boxy, utilitarian launcher built from scuffed titanium-composite housing and weathered polymer grips, roughly the size of a short-barreled shotgun. Its shoulder stock shows stress fractures sealed with industrial tape, and the barrel assembly is scratched from years of field use. A manual pressure gauge on the side indicates deployment readiness, its needle worn into illegibility.",
+  "visual_prompt": "tactical net launcher, shoulder-fired weapon, titanium composite housing, weathered polymer grips, industrial design, gritty worn surfaces, pressure gauge detail, dark studio lighting, neo-noir product photography, rain-slicked metal, cyberpunk military hardware, detailed mechanical components, worn tactical gear aesthetic, dark background"
+}

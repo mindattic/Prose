@@ -97,10 +97,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Vendor",
-      "Ambitious",
-      "Community Node",
-      "Secret Keeper (Reluctant)"
+      "vendor",
+      "ambitious",
+      "community node",
+      "secret keeper (reluctant)"
     ]
   },
   "behavioral": {
@@ -275,7 +275,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

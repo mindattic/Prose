@@ -28,10 +28,17 @@
     "transportation",
     "water",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "civilian",
+    "van",
+    "boat",
+    "electric",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
     "TESSERA TX-0 'Mimic'"
-  ]
+  ],
+  "physical_description": "A narrow, flat-bottomed electric gondola stretches roughly 8 meters, its hull patched with decades of repairs—welded steel, composite patches, and worn wood railings stained by canal water and industrial runoff. The cabin is enclosed in weathered polycarbonate and corroded aluminum frames, with strings of faded LED strips running along the interior. A worn pole lies across the stern, though most modern versions rely on a quiet electric motor hidden beneath the waterline, its battery pack visible as a bulging compartment along the keel.",
+  "visual_prompt": "Narrow electric gondola moored in rain-slicked canal, worn steel hull with welded patches, faded LED strips inside weathered polycarbonate cabin, industrial waterfront backdrop, neo-noir gritty aesthetic, moody cinematic lighting, detailed product photography, dark water reflection, rust and age visible, cyberpunk near-future setting"
 }

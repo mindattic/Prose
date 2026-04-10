@@ -1,0 +1,41 @@
+{
+  "id": "739037bb9b09cd935d336679d4e6c9fb",
+  "type": "place",
+  "name": "Sizzle Pit Pizza",
+  "aliases": [
+    "Sizzle Pit",
+    "SP"
+  ],
+  "description": "A pizza parlor in Logan Square serving deep-dish pizza with real dough, synth-cheese, and a choice of vat-meat toppings. A small deep-dish is Φ12. A large feeds four people and costs Φ28. The dough is the pride of the operation — fermented for forty-eight hours, which gives it a flavor complexity that synth-dough can't match. The sauce is canned tomatoes, which at Circuit prices means actual tomatoes that were actually canned. Owner Gianni Okafor-Rossi learned deep-dish from a neighbor who learned it from a pizzaiolo who claimed a lineage going back to the original Chicago pizza wars of the twentieth century. Whether this is true matters less than the pizza, which is excellent.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Logan Square families",
+    "Deep-dish devotees",
+    "Groups splitting a large pie"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.924,
+    "lng": -87.698
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_2"
+  ],
+  "related_entities": [
+    "Gianni Okafor-Rossi"
+  ]
+}

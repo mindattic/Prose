@@ -34,7 +34,12 @@
     "rooftop",
     "vehicle",
     "tier 2",
-    "tier 3"
+    "tier 3",
+    "van",
+    "boat",
+    "electric",
+    "manual",
+    "aerial"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -43,5 +48,7 @@
     "Independent Micro-Grid Power Cooperative",
     "Ringo DV-4 'Courier'",
     "Thermal Dump Radiator Fins"
-  ]
+  ],
+  "physical_description": "A compact carbon-fiber frame backpack the size of a large duffel, matte gunmetal and scuffed black polymer with visible stress fractures along the edges. When deployed, twin rigid wings of ripstop nylon stretch taut from reinforced aluminum spars, their surfaces patched and re-stitched from hard landings. Four ducted electric fans—salvaged from industrial equipment and jury-rigged with visible wiring—protrude from the wing leading edges, their housings pitted and corroded from rain and exhaust exposure.",
+  "visual_prompt": "worn carbon-fiber paraglider backpack with deployed nylon wings, electric ducted fans, patched ripstop fabric, industrial aluminum spars, gritty neo-noir aesthetic, rain-slicked surface, detailed product photography, matte gunmetal and black polymer, cyberpunk near-future, dark studio background, neon accent lighting, weathered street-tech equipment"
 }

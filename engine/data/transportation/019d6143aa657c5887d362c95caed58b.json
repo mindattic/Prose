@@ -33,7 +33,13 @@
     "bar",
     "vehicle",
     "chase",
-    "armor"
+    "armor",
+    "van",
+    "cargo",
+    "military",
+    "luxury",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -42,5 +48,7 @@
     "Tessera Nexus Town Car",
     "The Portico",
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": "A boxy, utilitarian sedan with reinforced steel plating and a low-slung profile, painted in corporate gray with faded Ferrogate insignia on the doors. The roof bristles with weathered light bars and a siren speaker, while the windshield is reinforced polycarbonate with visible stress fractures. Heavy-duty suspension and thick-tread tires show the wear of constant patrol, and the entire frame bears the scars of countless minor impacts and street encounters.",
+  "visual_prompt": "Ferrogate Enforcer Cruiser patrol vehicle, neo-noir gritty aesthetic, boxy armored sedan, faded gray paint, weathered light bars and siren, reinforced polycarbonate windshield, heavy industrial suspension, rain-slicked surface, dark moody lighting, detailed product photography, cyberpunk near-future, worn metal plating, corporate dystopian, GLMZ street patrol, dark background"
 }

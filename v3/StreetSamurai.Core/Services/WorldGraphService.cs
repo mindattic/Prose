@@ -856,6 +856,28 @@ public class WorldGraphService : IWorldGraphService
                 AddNode(new WorldNode { Id = locId, Name = loc.Name, NodeType = EntityTypes.Place, Properties = locProps });
                 AddEdge(new WorldEdge { Source = locId, Target = id, RelationType = "located_in", Description = $"{loc.Name} is inside {d.Name}" });
             }
+
+            foreach (var exit in d.Connections.Exits)
+            {
+                if (string.IsNullOrWhiteSpace(exit.Destination)) continue;
+                var destId = Slugify(exit.Destination);
+                if (!_nodes.ContainsKey(destId))
+                    AddNode(new WorldNode { Id = destId, Name = exit.Destination, NodeType = EntityTypes.Place });
+                var exitDesc = string.IsNullOrWhiteSpace(exit.Description)
+                    ? $"{exit.Direction} exit from {d.Name} to {exit.Destination} ({exit.Type})"
+                    : exit.Description;
+                AddEdge(new WorldEdge { Source = id, Target = destId, RelationType = "connected_via_exit",
+                    Description = exitDesc, Weight = exit.Restricted ? 0.5 : 1.0 });
+            }
+
+            foreach (var related in d.RelatedEntities)
+            {
+                if (string.IsNullOrWhiteSpace(related)) continue;
+                var relId = Slugify(related);
+                if (!_nodes.ContainsKey(relId))
+                    AddNode(new WorldNode { Id = relId, Name = related, NodeType = EntityTypes.Unknown });
+                AddEdge(new WorldEdge { Source = id, Target = relId, RelationType = "related_to", Weight = 0.5 });
+            }
         }
     }
 

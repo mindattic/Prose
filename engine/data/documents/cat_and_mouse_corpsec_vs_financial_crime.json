@@ -1,0 +1,32 @@
+{
+  "id": "b04b4a3dbd9aedaf7913a230bc7c838c",
+  "name": "Cat and Mouse: CorpSec vs. Financial Crime",
+  "type": "document",
+  "document_type": "crime_report",
+  "author": "Sterling-Nakamura Security Research — Quarterly Threat Assessment",
+  "date": "2197-05-01",
+  "classification": "restricted",
+  "description": "The war between corporate financial security and criminal money movement is not a war that either side is winning. It is an arms race that continuously escalates, with each advance in detection technology met by a corresponding advance in evasion technique, in a cycle that has no end state and no equilibrium. This quarterly assessment summarizes the current state of play and projects threat evolution over the next 12-18 months.\n\nDetection capabilities have advanced significantly since the deployment of Sterling-Nakamura's ARGUS system in 2194. ARGUS monitors the global Quanta transaction stream in real-time, processing approximately 847 billion transactions per day through a pattern recognition AI that identifies anomalies indicative of tumbling, consumer washing, structuring, and other laundering techniques. The system flags approximately 2.3 million transactions daily for human review. Of these, approximately 14,000 are confirmed as illicit activity. The false positive rate is 99.4%. This means that for every criminal transaction detected, ARGUS incorrectly flags 165 legitimate transactions. The human review teams — approximately 8,000 analysts across all QFIC member corponations — cannot process the volume. Backlog averages 11 days. By the time a flagged transaction is reviewed, the funds have moved, been tumbled, been spent, or been converted to goods. ARGUS sees everything. It understands almost nothing.\n\nThe criminal response to ARGUS has been sophisticated. Within six months of ARGUS deployment, the major laundromats adapted their techniques to exploit the system's known weaknesses. ARGUS excels at detecting patterns — repeated transaction amounts, regular timing intervals, network topology consistent with tumbling cascades. The laundromats responded with chaos injection: randomized amounts, randomized timing, randomized routing that generates no detectable pattern because there is no pattern. The transactions look random because they are random, directed only by the destination requirement and a minimum throughput target. ARGUS cannot distinguish between genuinely random legitimate transactions and deliberately randomized criminal ones, because by definition they have the same statistical properties.\n\nThe next generation of threats involves adversarial AI — criminal organizations deploying artificial intelligence systems specifically trained to defeat ARGUS. We have confirmed the existence of at least three such systems, informally designated PHANTOM, SMOKESCREEN, and VANISH by our threat classification team. These AIs do not merely avoid detection. They actively probe ARGUS's detection boundaries by generating test transactions designed to map the system's sensitivity thresholds. They learn what ARGUS flags and what it misses, and they adapt their evasion strategies in real-time. We are engaged in an AI-versus-AI arms race where both sides are learning and adapting faster than human analysts can follow. The criminal AIs have one critical advantage: they need only evade detection. We need to achieve detection. In information security, the attacker's advantage is structural and permanent. They need to find one gap. We need to close them all.\n\nOur projection for the next 18 months: detection rates will plateau at approximately 5% of illicit transaction volume. Criminal techniques will continue to outpace our detection capabilities. The fundamental architectural limitation — that the Quanta system was designed for verification, not for surveillance, and that privacy-destroying surveillance was bolted on after the fact rather than built into the foundation — cannot be overcome without a ground-up redesign of the EDN that the QFIC will not authorize because it would interrupt the transaction flow and cost the global economy approximately Φ800 billion per hour of downtime. We are fighting a war with the tools we have. The tools we need do not exist and cannot be built without destroying the thing we are trying to protect.",
+  "related_entities": [
+    "sterling_nakamura",
+    "axiom",
+    "qfic"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "A character gains access to one of the criminal adversarial AIs and must decide whether to sell it, use it, or report it",
+    "An ARGUS analyst realizes the system has been compromised from within — someone inside Sterling-Nakamura is feeding detection thresholds to the criminal AIs"
+  ],
+  "tags": [
+    "document",
+    "quanta",
+    "currency",
+    "crime",
+    "corpsec",
+    "detection",
+    "ai",
+    "sterling_nakamura",
+    "axiom",
+    "arms_race"
+  ]
+}

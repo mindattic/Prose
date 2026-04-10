@@ -30,7 +30,12 @@
     "elf",
     "shelf",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "ground",
+    "truck",
+    "cargo",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -39,5 +44,7 @@
     "Hookworm",
     "Ringo DV-4 'Courier'",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": "A stripped-down electric skateboard with a warped plank of carbon fiber or weathered wood bolted to mismatched aluminum trucks, the undercarriage a tangle of exposed wiring and a bulky battery pack held down with automotive tape and zip-ties. The hub motors in the rear wheels are salvaged from dead appliances—dented, repaired with epoxy, their casings scrawled with gang tags or worn smooth by countless hands. Most Dervishes bear the scars of hard riding: cracked grip tape, chipped edges, burn marks from friction, and the acrid smell of overworked electronics.",
+  "visual_prompt": "gritty DIY electric skateboard, salvaged hub motors, exposed wiring, taped battery pack, weathered carbon fiber and wood plank, worn aluminum trucks, cyberpunk neo-noir aesthetic, detailed product photography, dark industrial background, rain-slicked surface, neon rim lighting, dystopian street culture"
 }

@@ -34,7 +34,11 @@
     "vehicle",
     "drone",
     "energy",
-    "fire"
+    "fire",
+    "rail",
+    "electric",
+    "nuclear",
+    "ground"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -42,5 +46,7 @@
     "Brecken Yılmaz-Osei",
     "GLMZ",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": "A massive tracked colossus of weathered steel and composite plating, roughly 80 meters long and 12 stories tall, its hull scarred with impact marks and streaked with rust-colored rain stains. Articulated sensor arrays and gun turrets protrude at irregular angles from its sloped armor; the tracks are each the size of a transport truck, treads caked with industrial sludge and debris. Faded Arcturus Defense markings barely visible beneath layers of grime; three vertical exhaust stacks belch thin smoke, and running lights glow weak amber through corroded fixtures.",
+  "visual_prompt": "massive military tracked siege platform vehicle, 80 meters long, weathered steel hull, rust stains, gritty neo-noir aesthetic, industrial decay, articulated gun turrets, sensor arrays, thick tank treads caked with mud, faded corporate markings, weak amber running lights, rain-slicked armor plating, dark stormy sky, cinematic product photography, dystopian near-future, detailed weathering, ominous presence"
 }

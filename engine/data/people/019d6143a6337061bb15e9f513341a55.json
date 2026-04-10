@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Territorial",
-      "Competent",
-      "Quietly Protective",
-      "Private",
-      "Place-Bonded"
+      "territorial",
+      "competent",
+      "quietly protective",
+      "private",
+      "place-bonded"
     ]
   },
   "behavioral": {
@@ -238,7 +238,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

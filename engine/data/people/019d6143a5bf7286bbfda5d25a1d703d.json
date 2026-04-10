@@ -98,12 +98,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Oral Historian",
-      "Sterling-Nakamura Retiree",
-      "Neighborhood Elder",
-      "Storyteller",
-      "Financial Witness",
-      "Pension Dependent"
+      "oral historian",
+      "sterling-nakamura retiree",
+      "neighborhood elder",
+      "storyteller",
+      "financial witness",
+      "pension dependent"
     ]
   },
   "behavioral": {
@@ -290,7 +290,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "North African": {

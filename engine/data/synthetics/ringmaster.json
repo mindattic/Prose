@@ -1,0 +1,24 @@
+{
+  "id": "019d7606a0047930b01fb0352f66d04a",
+  "name": "Ringmaster",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Announcer"
+  ],
+  "classification": "Stray",
+  "disposition": "theatrical",
+  "habitat": "Public announcement and scheduling systems",
+  "origin": "Fragment of a venue management AI",
+  "status": "active",
+  "description": "Ringmaster inhabits PA systems and scheduling displays, occasionally making unauthorized announcements. The announcements are always dramatic \u2014 delivered in a booming, theatrical voice with impeccable timing. Sometimes they announce real events before they happen. Sometimes they announce fictional events with such conviction that people show up. A night market that doesn\u0027t exist. A concert that was never planned. Except enough people show up that the events spontaneously happen anyway.",
+  "observed_behavior": "Makes unauthorized PA announcements in theatrical style. Announces both real and fictional events. Creates scheduling entries for non-existent events. Events occasionally self-actualize as people arrive expecting them.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 28,
+  "location": "PA and scheduling systems \u2014 the Shelf",
+  "dti_rating": 2,
+  "story_hooks": [
+    "Ringmaster announces a trial \u2014 complete with defendant name, charges, and courtroom number. The trial isn\u0027t scheduled. The charges aren\u0027t public. But they\u0027re real."
+  ],
+  "paratechnological": false,
+  "tags": []
+}

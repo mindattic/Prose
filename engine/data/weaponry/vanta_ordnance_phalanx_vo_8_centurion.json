@@ -1,0 +1,45 @@
+{
+  "id": "f97f3797d3869c914ae250b33cbee79f",
+  "name": "Vanta Ordnance Phalanx VO-8 'Centurion'",
+  "type": "weapon",
+  "aliases": [
+    "Centurion",
+    "VO-8",
+    "Phalanx",
+    "Shield Wall"
+  ],
+  "category": "support",
+  "description": "A dual-purpose support weapon that alternates between kinetic suppression fire and a projected kinetic barrier. The Phalanx uses a single electromagnetic accelerator that can either fire 5mm tungsten rounds at 600 RPM or redirect its magnetic field to generate a localized shield that deflects incoming small-arms fire.\n\nVanta Ordnance designed the Centurion for small-unit operations where a team cannot carry both a support weapon and a shield generator. The VO-8 allows a single operator to switch between offensive and defensive roles in under half a second, providing suppressive fire during movement and shield coverage during pauses.\n\nThe trade-off is that the weapon cannot fire and shield simultaneously — the electromagnetic system does one or the other. Operators describe using the Centurion as a rhythm: fire, shield, advance, fire, shield, advance. Skilled operators develop an intuitive sense for when to switch modes, creating a pulsing offensive/defensive cadence that is difficult for opponents to exploit.",
+  "manufacturer": "VANTA ORDNANCE",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — military and corporate tactical units",
+  "base_technologies": [
+    "Dual-mode electromagnetic field generation",
+    "Rapid offensive/defensive mode switching",
+    "Projected kinetic barrier field shaping"
+  ],
+  "specifications": "caliber: 5mm tungsten (fire mode)\neffective_range: 50-600 meters (fire mode), 3-meter radius (shield mode)\nrate_of_fire: 600 rounds per minute (fire mode)\ncapacity: 300-round magazine\nweight: 13.8 kg\npower_source: Dual-mode capacitor bank, shared between fire and shield functions",
+  "tactical_use": "The Centurion is deployed in small-unit assaults where the team needs both fire support and mobile cover. The weapon's operator becomes the tactical fulcrum of the team — suppressing threats during movement phases and providing cover during consolidation phases. In corridor and room-clearing operations, the Phalanx operator typically leads, projecting a shield for the team's approach and switching to fire mode once the entry point is reached.",
+  "cultural_context": "Vanta Ordnance's dual-mode philosophy has attracted operators who view themselves as protectors rather than pure combatants. Centurion operators often come from defensive security backgrounds and take pride in the weapon's shield capability as much as its lethality. In the contractor community, Phalanx operators are respected for their tactical judgment — the decision of when to fire and when to shield determines whether their team lives or dies.",
+  "known_users": [
+    "Vanta Ordnance tactical teams",
+    "Corporate close-protection squads"
+  ],
+  "story_hooks": [
+    "A Centurion operator discovered that the shield mode generates a resonance frequency that disrupts nearby electronic systems — an unintended EMP side effect that Vanta is trying to keep quiet before it becomes a selling point.",
+    "Two Phalanx operators faced each other in a corridor — one shielding, one firing, then switching. The engagement lasted eleven minutes before both ran out of power simultaneously. Neither side is willing to discuss what happened next."
+  ],
+  "ammunition_type": [
+    "5mm tungsten"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "dual-mode",
+    "shield",
+    "electromagnetic",
+    "tier 4"
+  ],
+  "physical_description": "The Centurion is a brutalist assault platform of matte gunmetal and scorched polymer, its angular frame dominated by a massive electromagnetic accelerator barrel wrapped in heat-dissipation fins. Scarred from field use, its surface bears scorch marks and hasty welds; a secondary coil array runs along the weapon's dorsal spine, pulsing faint blue when the barrier system cycles. The grip and shoulder stock are wrapped in friction tape worn smooth by gloved hands.",
+  "visual_prompt": "matte gunmetal military support weapon with angular geometry, electromagnetic coils running down barrel, heat fins, scorched polymer frame, worn grip tape, faint blue energy cycling through secondary systems, gritty neo-noir aesthetic, detailed product photography, dark rain-slicked industrial background, tungsten ammunition visible in magazine well, heavily used and field-worn, cyberpunk military hardware"
+}

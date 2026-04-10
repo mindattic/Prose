@@ -1,5 +1,9 @@
 // generate_lived_world.js — Texture of daily life in GLMZ, 2200
 // 60 documents + 6 synthetics
+//
+// NAMING RULE FOR SYNTHETICS: Robots, androids, AIs, and synthetic persons DO NOT use
+// Ubiquitous Diaspora human heritage names (e.g. "Flux Strömqvist-Villalobos").
+// Use: model designations, community nicknames, callsigns, or single evocative names.
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');

@@ -1,0 +1,37 @@
+{
+  "name": "Verathin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Gospel",
+    "Confessor",
+    "the Open Door"
+  ],
+  "category": "poison_toxin",
+  "subcategory": "BCI-integrated truth serum — cognitive suppression agent",
+  "manufacturer": "Helix Biosystems (classified research derivative; production source disputed)",
+  "description": "Verathin is a neuroactive compound that selectively suppresses the prefrontal executive functions responsible for deception, confabulation, and deliberate information withholding by flooding anterior cingulate cortex synapses with a synthetic SNT-derived inhibitor. When administered to a subject with an active BCI, Verathin interfaces with the neural-link's communication protocols to make voluntary suppression of outgoing data neurologically impossible — the subject experiences the desire to withhold information but finds themselves unable to act on it, speaking or transmitting answers involuntarily. Without a BCI, it functions as a profound disinhibitor reducing deception capacity to approximately 15% of baseline.",
+  "method_of_use": "injection",
+  "effects": [
+    "Suppression of deliberate deception and information withholding",
+    "BCI-integrated: forces involuntary data transmission to any linked interrogation system",
+    "Subject retains full memory of the interrogation",
+    "Emotional disinhibition — subject may confess beliefs, fears, and loyalties unprompted"
+  ],
+  "side_effects": [
+    "Severe psychological violation response post-session — high rates of acute stress disorder",
+    "Subjects with military-grade BCI encryption may experience seizures as the compound fights hardened protocols",
+    "Memory of the interrogation is retained and fully intact — subjects know exactly what they revealed",
+    "Approximately 8% of subjects develop permanent deception-suppression syndrome requiring psychiatric intervention"
+  ],
+  "duration": "2-4 hours",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 3-4",
+  "legality": "illegal",
+  "street_price": "Φ3,500–Φ8,000 per dose",
+  "cultural_context": "Verathin sits at the intersection of GLMZ's two great anxieties: surveillance and the self. In a society where BCIs already track and transmit constantly, Verathin represents the final theft — the removal of the last private space, the interior voice that can still choose what to say. Corporate interrogators call sessions 'consultations.' Survivors call them something else. The psychological aftermath of a Verathin interrogation is recognized in underground medical circles as a distinct trauma category. Some victims report they can no longer trust their own impulse to speak for months afterward.",
+  "story_hooks": [
+    "A corporate whistleblower contacts a journalist claiming she was Verathin-interrogated by her employer and doesn't know what she told them — or what they're going to do with it.",
+    "A black-market antidote is circulating that supposedly blocks Verathin's BCI interface, but it requires a dangerous firmware mod that three people have already died from attempting.",
+    "An interrogator who has administered Verathin hundreds of times begins experiencing the inverse effect — she finds herself compulsively confessing things to strangers, and she's starting to understand why her subjects always looked the way they did."
+  ]
+}

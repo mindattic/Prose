@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Analytical",
-      "Ethically murky",
-      "Observant",
-      "Quietly dangerous",
-      "Intellectual hoarder"
+      "analytical",
+      "ethically murky",
+      "observant",
+      "quietly dangerous",
+      "intellectual hoarder"
     ]
   },
   "behavioral": {
@@ -283,7 +283,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

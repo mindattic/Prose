@@ -32,7 +32,13 @@
     "vehicle",
     "train",
     "armor",
-    "drone"
+    "drone",
+    "cargo",
+    "military",
+    "electric",
+    "ground"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": "A hulking, boxy transport vehicle with welded steel plating and reinforced composite panels, painted institutional grey-black with faded Ferrogate Transit markings. The cabin sits forward and elevated, separated from the sealed rear compartment by a reinforced bulkhead, with no windows save for the driver's narrow, mesh-protected viewport. Rust blooms around the seams where rain-slicked metal meets worn rubber, and the entire frame bears the dents and scorches of prior extraction attempts.",
+  "visual_prompt": "armored prison transport vehicle, neo-noir gritty aesthetic, worn steel plating, institutional grey-black paint, reinforced composite panels, sealed rear compartment, rain-slicked metal, rust weathering, mesh-protected viewport, militarized design, cyberpunk dystopian, detailed product photography, dark moody lighting, industrial decay, high contrast shadows, dystopian transport"
 }

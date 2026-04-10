@@ -295,19 +295,19 @@ public class DatabaseService : IDatabaseService
 
         // Search entities first (exact and partial name matches)
         foreach (var c in Characters.Where(c => c.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || c.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
-            results.Add(new SearchResult { EntityType = "character", EntityName = c.Name, Route = "/characters", FileName = "characters.json", Heading = c.Role, Context = Trunc(c.Description, 200) });
+            results.Add(new SearchResult { EntityId = c.Id, EntityType = "character", EntityName = c.Name, Route = "/characters", FileName = "characters.json", Heading = c.Role, Context = Trunc(c.Description, 200) });
         foreach (var d in Districts.Where(d => d.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || d.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
-            results.Add(new SearchResult { EntityType = "place", EntityName = d.Name, Route = "/places", FileName = "districts.json", Heading = "", Context = Trunc(d.Description, 200) });
+            results.Add(new SearchResult { EntityId = d.Id, EntityType = "place", EntityName = d.Name, Route = "/places", FileName = "districts.json", Heading = "", Context = Trunc(d.Description, 200) });
         foreach (var f in Factions.Where(f => f.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || f.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
-            results.Add(new SearchResult { EntityType = "faction", EntityName = f.Name, Route = "/factions", FileName = "factions.json", Heading = f.Motto, Context = Trunc(f.Description, 200) });
+            results.Add(new SearchResult { EntityId = f.Id, EntityType = "faction", EntityName = f.Name, Route = "/factions", FileName = "factions.json", Heading = f.Motto, Context = Trunc(f.Description, 200) });
         foreach (var c in Corponations.Where(c => c.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || c.Sector.Contains(q, StringComparison.OrdinalIgnoreCase)))
-            results.Add(new SearchResult { EntityType = "corponation", EntityName = c.Name, Route = "/corps", FileName = "corponations.json", Heading = c.Sector, Context = Trunc(c.FoundingStory, 200) });
+            results.Add(new SearchResult { EntityId = c.Id, EntityType = "corponation", EntityName = c.Name, Route = "/corps", FileName = "corponations.json", Heading = c.Sector, Context = Trunc(c.FoundingStory, 200) });
         foreach (var w in Weaponry.Where(w => w.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || w.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
-            results.Add(new SearchResult { EntityType = "weapon", EntityName = w.Name, Route = "/weaponry", FileName = "weaponry.json", Heading = w.Category, Context = Trunc(w.Description, 200) });
+            results.Add(new SearchResult { EntityId = w.Id, EntityType = "weapon", EntityName = w.Name, Route = "/weaponry", FileName = "weaponry.json", Heading = w.Category, Context = Trunc(w.Description, 200) });
         foreach (var e in Equipment.Where(e => e.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || e.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
-            results.Add(new SearchResult { EntityType = "equipment", EntityName = e.Name, Route = "/equipment", FileName = "equipment.json", Heading = e.Category, Context = Trunc(e.Description, 200) });
+            results.Add(new SearchResult { EntityId = e.Id, EntityType = "equipment", EntityName = e.Name, Route = "/equipment", FileName = "equipment.json", Heading = e.Category, Context = Trunc(e.Description, 200) });
         foreach (var t in Technology.Where(t => t.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || t.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
-            results.Add(new SearchResult { EntityType = "technology", EntityName = t.Name, Route = "/technology", FileName = "technology.json", Heading = t.Subcategory, Context = Trunc(t.Description, 200) });
+            results.Add(new SearchResult { EntityId = t.Id, EntityType = "technology", EntityName = t.Name, Route = "/technology", FileName = "technology.json", Heading = t.Subcategory, Context = Trunc(t.Description, 200) });
 
         if (results.Count >= maxResults) return results.Take(maxResults).ToList();
 
@@ -345,6 +345,7 @@ public class DatabaseService : IDatabaseService
 
 public record SearchResult
 {
+    public string EntityId { get; init; } = "";
     public string FileName { get; init; } = "";
     public string Heading { get; init; } = "";
     public int LineNumber { get; init; }

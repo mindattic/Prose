@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Veteran Surgeon",
-      "Institutional Insider",
-      "Covert Idealist",
-      "Emotional Fortress",
-      "Technical Authority"
+      "veteran surgeon",
+      "institutional insider",
+      "covert idealist",
+      "emotional fortress",
+      "technical authority"
     ]
   },
   "behavioral": {
@@ -248,7 +248,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

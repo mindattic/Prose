@@ -31,11 +31,19 @@
     "rain",
     "train",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "civilian",
+    "van",
+    "rail",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Ferrogate CL-9 L-Train",
     "The Burnline"
-  ]
+  ],
+  "physical_description": "A battered electric transit bus, its once-blue polymer hull now faded to slate gray under decades of acid rain and industrial grime. Rust blooms around the wheel wells and door frames; the windows are scratched milky from years of abrasion. Dents and impact scars map its flanks, and the grab rails—welded steel tubes—are worn smooth by ten thousand desperate hands. Flickering LED route displays barely function; the interior lighting flickers in rhythm with the dying battery pack.",
+  "visual_prompt": "worn electric transit bus, faded blue-gray polymer hull, rust blooms, scratched windows, neo-noir gritty industrial, acid rain weathered, cyberpunk decay, detailed product photography, steel grab rails, LED route displays, dark wet street background, moody neon reflection, 35mm film grain, dystopian near-future"
 }

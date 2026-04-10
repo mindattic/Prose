@@ -1,0 +1,38 @@
+{
+  "name": "Katavrin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Ghostcalm",
+    "Kava-K",
+    "the Still"
+  ],
+  "category": "withdrawal_aid",
+  "subcategory": "withdrawal_symptom_suppressor",
+  "manufacturer": "Street chemist (widely produced; original formula attributed to a Shelf lab called 'Calm Hand')",
+  "description": "Katavrin is an unlicensed but widely available withdrawal symptom suppressor targeting the physical horror of acute withdrawal: vomiting, muscle cramps, sweating, tremor, and autonomic instability. It doesn't address dependency or craving — it just makes the body tolerable during the worst days. Derived partly from alpha-2 adrenergic agonist chemistry with added muscle relaxant and antiemetic compounds, Katavrin is crude but effective.",
+  "method_of_use": "oral",
+  "effects": [
+    "Suppression of vomiting and nausea",
+    "Muscle cramp relief",
+    "Reduced tremor",
+    "Autonomic stabilization (heart rate, blood pressure)",
+    "Mild sedation"
+  ],
+  "side_effects": [
+    "Significant hypotension — dangerous if combined with anything cardiovascular",
+    "Excessive sedation if overdosed",
+    "Rebound autonomic instability on discontinuation if used more than 7 days",
+    "Variable potency between batches — Shelf production quality is inconsistent"
+  ],
+  "duration": "6-10 hours per dose",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ8-15 per dose depending on batch quality",
+  "cultural_context": "Katavrin is the drug that makes withdrawal survivable for people who can't access clinics. On the Shelf, it's as common as painkillers — every block has someone who knows where to get it. Some Shelf medics quietly stock it and consider it essential harm-reduction material. Novafold has lobbied to have it classified as a controlled substance, allegedly because it competes with their legal alternatives, though the official justification is safety concerns about inconsistent production.",
+  "story_hooks": [
+    "The Calm Hand lab that originated Katavrin has been raided — someone wants the formula suppressed, and the Shelf community that depends on it needs help rebuilding supply",
+    "A batch of Katavrin has been deliberately contaminated — someone is using the withdrawal-aid supply chain as a vector for something else",
+    "A Novafold lobbyist approaches the players about shutting down Katavrin production; the money is good, but the consequences are obvious"
+  ]
+}

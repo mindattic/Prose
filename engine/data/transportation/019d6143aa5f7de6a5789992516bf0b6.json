@@ -34,11 +34,17 @@
     "water",
     "tier 1",
     "tier 2",
-    "tier 4"
+    "tier 4",
+    "utility",
+    "electric",
+    "ground",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Amara Diallo-Ranginui",
     "Kang-Petrov Arms KPS-9 'Rattler'"
-  ]
+  ],
+  "physical_description": "A squat, boxy vehicle roughly the size of a delivery truck, constructed from weathered steel and scuffed polymer paneling in faded municipal grey. Its rotating brush array extends from the undercarriage like mechanical bristles, while dual suction vents hum along its flanks; the paint is streaked with rust bloom and chemical residue from years of nocturnal scrubbing. A single amber beacon rotates atop its cabin, casting weak light across rain-slicked pavement as it methodically traverses its assigned routes.",
+  "visual_prompt": "autonomous street sweeper vehicle, weathered grey steel, rotating brush mechanism, industrial near-future, neo-noir gritty aesthetic, detailed product photography, rain-slicked urban ground, amber warning light, worn polymer panels, rust streaks, dark moody lighting, cyberpunk municipal tech, dystopian infrastructure, highly detailed, cinematic"
 }

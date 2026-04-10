@@ -3,7 +3,7 @@ const path = require('path');
 const crypto = require('crypto');
 
 const documentsDir = path.resolve(__dirname, '..', 'engine', 'data', 'documents');
-const genewareDir = path.resolve(__dirname, '..', 'engine', 'data', 'geneware');
+const genewareDir = path.resolve(__dirname, '..', 'engine', 'data', 'genemods');
 
 function generateId() {
   return crypto.randomBytes(16).toString('hex');

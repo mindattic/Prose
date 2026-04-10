@@ -11,7 +11,7 @@ const settings = JSON.parse(fs.readFileSync(
   path.join(process.env.LOCALAPPDATA, 'MindAttic', 'StreetSamurai', 'Settings.json'), 'utf8'));
 const API_KEY = settings.ApiKey;
 const MODEL = 'claude-sonnet-4-6';
-const ENGINE_DATA = path.join(__dirname, '..', 'engine_data');
+const ENGINE_DATA = path.join(__dirname, '..', 'engine', 'data');
 const OUTPUT_DIR = path.join(ENGINE_DATA, 'pharmaceuticals');
 const WAIT_MS = 3000;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -139,7 +139,7 @@ const CATEGORIES = [
   {
     category: 'emotional_regulator',
     count: 25,
-    prompt: `Generate {count} emotional regulators for GLMZ. The pharmacology of feelings. Include: grief suppressors (popular after loss — suppress mourning so you can keep working), anxiety dampeners (the most prescribed drug category in M88), confidence builders (chemical courage for job interviews, confrontations, public speaking), emotional flatliners that let you feel nothing for 8 hours (popular with trauma survivors, interrogators, and people doing terrible jobs), bonding enhancers that deepen trust and attachment (used in corporate team-building AND romantic relationships — ethically questionable), anger suppressors, motivation injectors, and contentment sustainers. These drugs prop up a society that demands emotional performance. Legal to restricted.`
+    prompt: `Generate {count} emotional regulators for GLMZ. The pharmacology of feelings. Include: grief suppressors (popular after loss — suppress mourning so you can keep working), anxiety dampeners (the most prescribed drug category in GLMZ), confidence builders (chemical courage for job interviews, confrontations, public speaking), emotional flatliners that let you feel nothing for 8 hours (popular with trauma survivors, interrogators, and people doing terrible jobs), bonding enhancers that deepen trust and attachment (used in corporate team-building AND romantic relationships — ethically questionable), anger suppressors, motivation injectors, and contentment sustainers. These drugs prop up a society that demands emotional performance. Legal to restricted.`
   },
   {
     category: 'sleep_dream',
@@ -218,7 +218,7 @@ Each pharmaceutical MUST have exactly these fields:
   "tier_availability": "Tier 1-2|Tier 2-3|Tier 3-4|Tier 4-5|All tiers|Tier 1 only|Military only",
   "legality": "legal|prescription|restricted|illegal|military_only",
   "street_price": "Φ amount",
-  "cultural_context": "how this drug fits into M88 society — who uses it, why, what it means",
+  "cultural_context": "how this drug fits into GLMZ society — who uses it, why, what it means",
   "story_hooks": ["array of 2-3 narrative hooks for this drug"]
 }
 

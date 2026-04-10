@@ -1,0 +1,45 @@
+{
+  "id": "a2fea2db03032b96f74f4f570ee162d9",
+  "name": "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+  "type": "weapon",
+  "aliases": [
+    "Cauterizer",
+    "TL-3",
+    "The Iron",
+    "Burnblade"
+  ],
+  "category": "melee",
+  "description": "A longsword-profile weapon with a blade that incorporates a resistive heating element running the full length of its cutting edge, raising the blade temperature to 1,400 degrees Celsius within three seconds of activation. The Cauterizer does not merely cut — it melts through materials that a conventional blade could never penetrate, leaving cauterized wounds that seal as they open and slag-edged cuts through metal and composite barriers.\n\nThe blade itself is constructed from a tungsten-ceramic composite that withstands its own operating temperature without deformation. A thermal insulation layer separates the heated edge from the blade's spine, allowing the weapon to be wielded without protective gloves — though the radiant heat from the active edge is uncomfortable at close proximity and can cause minor burns to exposed skin within 30 centimeters. The handle contains a compact fuel cell that provides approximately 90 minutes of continuous heating.\n\nArcturus designed the Cauterizer for breaching operations where powered cutting tools are too bulky and explosives too dangerous. The weapon can cut through reinforced doors, security barriers, and light vehicle armor given 10-15 seconds of sustained contact. Its adoption as a combat weapon was driven by field operatives who discovered that the psychological impact of a glowing blade was as tactically valuable as its cutting capability.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — thermal weapon classification",
+  "base_technologies": [
+    "Resistive edge heating element",
+    "Tungsten-ceramic thermal blade",
+    "Compact hydrogen fuel cell"
+  ],
+  "specifications": "blade_length: 85 cm\ntotal_length: 118 cm\nweight: 2.1 kg\nedge_temperature: 1,400°C operational\nheat_time: 3 seconds to operational temperature\npower_source: Compact hydrogen fuel cell, 90 minutes continuous\nblade_material: Tungsten-ceramic composite\nthermal_insulation: Aerogel-reinforced spine barrier",
+  "tactical_use": "The Cauterizer serves dual roles as a breaching tool and close-combat weapon. Breaching teams use it to cut through barriers silently when explosive charges would alert defenders or risk structural damage. In combat, the weapon's thermal edge defeats any personal armor by melting through it rather than relying on kinetic force. The radiant heat creates a 30cm danger zone around the active blade, discouraging grappling and close-in defense. The visible glow of the heated edge in dim environments makes the wielder a conspicuous target, requiring tactical awareness about when to activate.",
+  "cultural_context": "The glowing blade of an active Cauterizer has become one of GLMZ's most recognizable visual threats. Security footage of thermal longsword breaches has circulated widely enough that the image carries immediate cultural meaning: someone with a Cauterizer is not negotiating. The weapon has also developed a grim reputation in GLMZ's medical community — cauterized wounds are notoriously difficult to treat, as the thermal damage extends deep into surrounding tissue and resists standard surgical repair.",
+  "known_users": [
+    "Arcturus breaching teams",
+    "Corporate heavy assault operators",
+    "Tier 4+ enforcement specialists"
+  ],
+  "story_hooks": [
+    "A series of vault breaches used Cauterizers to cut through walls rather than doors — bypassing all security on the entry points. The thieves left the slag-edged cuts as calling cards.",
+    "A Cauterizer has been recovered with its thermal limiter removed — the edge temperature exceeded 2,000°C and partially melted the blade's own structure. Someone is pushing the weapon beyond its design limits for a specific target."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "longsword",
+    "thermal",
+    "breaching",
+    "tier 4",
+    "tungsten-ceramic"
+  ],
+  "physical_description": "A longsword-profile blade of dull tungsten-ceramic composite, its cutting edge lined with exposed resistive coils that glow faint amber when dormant. The spine is wrapped in worn synthetic grip material, darkened by years of sweat and rain, with a simple crossguard of brushed steel showing scuff marks from close-quarters work. Heat scarring radiates outward from the blade's fuller in faint discoloration patterns, evidence of repeated thermal cycling.",
+  "visual_prompt": "gritty neo-noir melee weapon, thermal longsword with glowing heating coils along blade edge, tungsten-ceramic composite material, worn synthetic grip, industrial product photography, dark rain-slicked background, cyberpunk aesthetic, detailed close-up, amber and steel tones, weathered and battle-used, high contrast lighting"
+}

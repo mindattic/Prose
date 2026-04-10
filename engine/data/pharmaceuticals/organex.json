@@ -1,0 +1,39 @@
+{
+  "name": "Organex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "organ oil",
+    "synth-life",
+    "the maintenance"
+  ],
+  "category": "medical",
+  "subcategory": "synthetic organ maintenance",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Organex is a comprehensive maintenance compound for synthetic and hybrid organ systems, delivering a precisely formulated combination of enzymatic precursors, SNT nutrition factors, and anti-degradation compounds that keep artificial organs functioning at specification. Synthetic hearts, lungs, livers, and kidneys all require regular Organex supplementation — without it, synthetic organ efficiency degrades by approximately 3–5% per month, eventually leading to organ failure.",
+  "method_of_use": "oral",
+  "effects": [
+    "maintenance of synthetic organ performance at design specifications",
+    "prevention of SNT degradation within organ structures",
+    "sustained enzymatic function in hybrid liver and kidney analogs",
+    "preservation of electrochemical signaling in synthetic cardiac tissue",
+    "extension of synthetic organ operational lifespan"
+  ],
+  "side_effects": [
+    "mild digestive disruption as enzymatic compounds interact with gut flora",
+    "metallic taste with some formulations",
+    "if used with a fully organic system, mild temporary organ stress",
+    "long-term use without monitoring can mask early organ failure symptoms",
+    "rare: compound accumulation causing toxicity in patients with compromised hybrid kidneys"
+  ],
+  "duration": "24 hours per dose",
+  "addiction_risk": "none",
+  "tier_availability": "All tiers",
+  "legality": "legal",
+  "street_price": "Φ15–Φ40 per day",
+  "cultural_context": "Organex is a life drug in the most literal sense — anyone with a synthetic organ dies without it. The tiered pricing model is a source of ongoing political rage: the Lazarus generic is functional but associated with faster organ degradation over years, while the premium formulation demonstrably extends synthetic organ life. Tier 1 residents with synthetic organs are in a permanent financial bind. Organex theft and counterfeiting is a major criminal enterprise on the Shelf. The phrase 'down to my last Organex' means someone is close to the edge of survival.",
+  "story_hooks": [
+    "A counterfeiting operation has flooded the Tier 1-2 market with Organex that looks identical to the real product but contains no active compounds — people with synthetic organs are beginning to degrade and don't know why.",
+    "A Lazarus executive with a synthetic heart has been found dead — their Organex was replaced with a compound that accelerated organ failure over six weeks, perfectly mimicking natural degradation.",
+    "A Shelf community has organized a collective Organex purchase program — buying bulk and distributing it at cost — and Lazarus is using every legal tool available to shut it down."
+  ]
+}

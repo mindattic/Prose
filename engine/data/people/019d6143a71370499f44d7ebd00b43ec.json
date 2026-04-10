@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Neural Specialist",
-      "Dual Identity",
-      "Corporate Exile",
-      "Dangerous Knowledge",
-      "Hidden Investigator"
+      "neural specialist",
+      "dual identity",
+      "corporate exile",
+      "dangerous knowledge",
+      "hidden investigator"
     ]
   },
   "behavioral": {
@@ -256,7 +256,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

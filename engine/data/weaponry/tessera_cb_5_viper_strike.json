@@ -1,0 +1,49 @@
+{
+  "id": "37479ebf91b101a860a39644b11f3988",
+  "name": "TESSERA CB-5 'Viper Strike'",
+  "type": "weapon",
+  "aliases": [
+    "Viper Strike",
+    "Poison Bow",
+    "Chemical Bow"
+  ],
+  "category": "crossbow",
+  "description": "A compact repeating crossbow with an integrated chemical payload injection system. The CB-5 fires short bolts from a 12-bolt gravity-feed magazine, each bolt hollow and loaded with 0.5ml of operator-selected chemical agent that is injected into the wound channel upon impact through a pressure-activated plunger mechanism. The bolt itself causes minimal physical damage — a 4mm puncture wound that might go unnoticed in a chaotic environment. The chemical payload does the killing.\n\nTESSERA supplies the CB-5 with a catalog of approved chemical loadouts: fast-acting paralytic agents for capture operations, delayed-onset neurotoxins for deniable assassination, and incapacitating sedatives for extraction. The weapon's true danger is its versatility — any liquid agent that fits in a 0.5ml reservoir can be loaded, and the underground market has developed payloads that TESSERA never intended: synthetic opioid overdose loads, corrosive agents, and tailored biotoxins designed for specific genetic profiles.\n\nThe CB-5 is nearly silent, fires rapidly, and delivers chemical payloads that can kill hours after exposure. It is the preferred weapon for operators who need their target to die somewhere else, at some other time, from what looks like something other than murder.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — classified as chemical weapon delivery system",
+  "street_price": "Φ11,000 (chemical loadouts Φ200-2,000 per bolt)",
+  "base_technologies": [
+    "Pressure-activated chemical injection",
+    "Gravity-feed repeating mechanism",
+    "Micro-reservoir bolt design"
+  ],
+  "specifications": "bolt velocity: 60 m/s\neffective range: 25 meters\nmagazine: 12-bolt gravity feed\nchemical payload: 0.5ml per bolt\nbolt diameter: 4mm\nweight: 2.0 kg\nlength: 380mm\nacoustic signature: Below ambient noise floor",
+  "tactical_use": "Chemical payload delivery for assassination, capture, and covert operations. Operators select bolts loaded with appropriate agents for the mission objective. The weapon's low bolt velocity and small wound profile mean targets may not realize they've been hit until the chemical payload takes effect.",
+  "cultural_context": "The CB-5 is feared because it represents death by ambiguity. A target hit by a Viper Strike bolt might feel a brief sting and think nothing of it until the paralytic kicks in an hour later. In a city where people are constantly jostled, bumped, and crowded, a 4mm puncture wound is indistinguishable from everyday urban abrasion. The weapon exploits the anonymity of city life as a delivery mechanism.",
+  "known_users": [
+    "TESSERA covert operations division",
+    "Corporate espionage units",
+    "At least two known contract killers specializing in deniable operations"
+  ],
+  "story_hooks": [
+    "A series of apparently unrelated deaths across GLMZ — heart failure, stroke, respiratory arrest — have one thing in common: each victim has a 4mm puncture wound that was missed during initial examination. Someone is conducting a systematic assassination campaign with a Viper Strike, and the targets don't know they're dying until it's too late.",
+    "A CB-5 bolt has been recovered loaded with an agent that doesn't appear in any chemical database. Analysis reveals it's a tailored biotoxin engineered to affect only individuals with a specific genetic marker found in approximately 2% of GLMZ's population. This is a weapon designed for ethnic targeting."
+  ],
+  "ammunition_type": [
+    "chemical_bolt"
+  ],
+  "tags": [
+    "crossbow",
+    "weapon",
+    "chemical",
+    "poison",
+    "silent",
+    "assassination",
+    "tessera",
+    "covert",
+    "tier 4"
+  ],
+  "physical_description": "The CB-5 is a skeletal thing of matte-black polymer and brushed steel, barely larger than a handgun despite its lethal reach. The gravity-feed magazine sits atop the receiver like a vertical clip, holding twelve hollow bolts in a transparent polycarbonate tube clouded with use. A small pressure gauge and chemical selector dial glow faintly with bioluminescent paint, their edges worn smooth by countless gloved hands. The whole assembly feels cold and purposeful—function stripped down to its meanest geometry.",
+  "visual_prompt": "compact repeating crossbow, matte black polymer frame, brushed steel components, hollow bolts in transparent magazine, pressure gauge, chemical selector dial, bioluminescent paint wear, product photography, gritty neo-noir, cyberpunk, detailed mechanical design, dark background, industrial lighting, rain-slicked reflections, worn tactical equipment aesthetic"
+}

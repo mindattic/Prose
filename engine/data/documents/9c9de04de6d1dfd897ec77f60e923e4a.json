@@ -1,0 +1,28 @@
+{
+  "name": "Fragment — CorpSec Incident Log, Partial",
+  "type": "document",
+  "document_type": "fragment",
+  "author": "CorpSec",
+  "date": "unknown",
+  "classification": "classified",
+  "description": "Responding officers arrived at [LOCATION REDACTED] at 22:14. Found [REDACTED] in a state of [REDACTED]. Officers describe the scene as [REDACTED]. One officer's BCI malfunctioned upon entry and has not been [REDACTED]. Recommend: classifying this incident as [REDACTED]. No further action.",
+  "related_entities": [],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "What did the officers find?",
+    "Why did the BCI malfunction?",
+    "Why was no further action taken?"
+  ],
+  "tags": [
+    "document",
+    "fragment",
+    "incomplete",
+    "incident log",
+    "corpsec",
+    "redacted",
+    "BCI malfunction",
+    "classified",
+    "cover-up"
+  ],
+  "id": "9c9de04de6d1dfd897ec77f60e923e4a"
+}

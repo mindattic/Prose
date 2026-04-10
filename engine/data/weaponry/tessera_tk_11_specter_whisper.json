@@ -1,0 +1,46 @@
+{
+  "id": "8bfd626c3c40d0d1df92cf704a60ee40",
+  "name": "Tessera TK-11 Specter 'Whisper'",
+  "type": "weapon",
+  "aliases": [
+    "Whisper",
+    "Specter",
+    "TK-11"
+  ],
+  "category": "pistol",
+  "description": "The Tessera TK-11 Specter is an integrally suppressed semi-automatic pistol chambered in .45 ACP subsonic, designed from the ground up as a quiet weapon rather than a conventional pistol with a suppressor attached. The barrel and suppressor are a single monolithic unit — there is no thread, no attachment point, no way to separate the two without destroying the weapon. This integrated design reduces the overall length compared to a pistol-plus-suppressor combination and eliminates the point-of-impact shift that threaded suppressors can introduce.\n\nThe Specter is quiet. Not movie-quiet — there is still a mechanical clack from the action cycling and a muted thump from the subsonic round breaking the air — but quiet enough that the sound does not carry beyond twenty meters in an urban environment with ambient noise. Combined with the .45 ACP's inherent subsonic velocity, the weapon produces no supersonic crack, making it extraordinarily difficult to locate by sound alone.\n\nTessera developed the Specter under a classified corponation internal security contract and subsequently released a commercial version with identical performance. The message was clear: what Tessera uses to protect its own interests, it is willing to sell to those who can afford it. The commercial Specter costs as much as a mid-range vehicle.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — suppressed weapon license required",
+  "base_technologies": [
+    "Integral suppressor design",
+    "Monolithic barrel-suppressor unit",
+    "Subsonic optimization"
+  ],
+  "specifications": "caliber: .45 ACP subsonic\neffective_range: 35 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10 rounds\nweight: 1.05 kg\nsound_signature: <75dB at 1 meter",
+  "tactical_use": "A purpose-built quiet weapon for operations requiring minimal sound signature. The integral suppressor provides consistent performance without the drawbacks of detachable suppressors. Effective at close range against unarmored targets. The subsonic .45 ACP round sacrifices velocity for silence, reducing effectiveness against body armor. Best employed in environments where sound discipline is paramount.",
+  "cultural_context": "The Whisper occupies a morally ambiguous space in GLMZ's weapons culture. Owning one is legal with proper licensing, but it marks the owner as someone who has specifically planned for situations requiring silence — which implies premeditation. Law enforcement and corponation security view Specter owners with heightened scrutiny.",
+  "known_users": [
+    "Tessera internal security",
+    "Licensed covert operations contractors",
+    "High-end personal security details",
+    "Collectors of specialized weapons"
+  ],
+  "story_hooks": [
+    "A series of silent killings in the Mids all trace to .45 ACP subsonic rounds — but the ballistic signatures come from three different Specters, all registered to the same corporate shell company.",
+    "A Tessera engineer who worked on the Specter program is selling design documents that reveal the weapon has a hidden acoustic signature — a frequency fingerprint that Tessera can use to identify every shot fired by every Specter ever manufactured."
+  ],
+  "ammunition_type": [
+    ".45 ACP subsonic"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "suppressed",
+    "silent",
+    "tessera",
+    "covert"
+  ],
+  "physical_description": "The TK-11 Specter is a compact, matte-black semi-automatic pistol with a monolithic suppressor barrel that runs the full length of the slide, giving it a sleek, almost surgical appearance. The polymer grip shows minor wear and stress marks from repeated draws, while the stainless steel components bear the dull sheen of practical use rather than polished chrome. Designed for function over form, it sits heavy in the hand with no protruding threads or attachment points—just one unified, purpose-built instrument.",
+  "visual_prompt": "matte black tactical pistol with integrated suppressor, monolithic barrel design, semi-automatic .45 ACP, worn polymer grip, stainless steel slide, product photography, gritty neo-noir aesthetic, detailed mechanical components, dark studio background, moody industrial lighting, cyberpunk weapon design, practical worn finish, no reflections"
+}

@@ -14,7 +14,7 @@
   "age": 51,
   "status": "active",
   "location": "Western border of GLMZ — operates from a fortified farmstead that serves as Red Lantern's staging area",
-  "description": "Esteban Jaramillo-Ionescu-Ozcoidi has been raiding Iowa for food for twenty-three years. She was one of the first Gleaner Brigade volunteers when the agricultural collapse turned the breadbasket into contested territory — a landscape of mega-scale automated farms defended by corporate security and increasingly hostile Behemoth fauna that emerged from the ecological disruption. She survived because she learned to read the land the way her grandmother read weather: patterns in the soil, in the animal movement, in the electromagnetic signatures that Behemoths leave before they surface.\n\nShe built Red Lantern from other long-term Gleaners — the ones who'd survived enough raids to develop the institutional knowledge that keeps you alive in Behemoth territory. The crew runs two to three deep raids per month, crossing the western jurisdictional boundary into the Iowa wastes to harvest, scavenge, or trade with the scattered farming settlements that still exist between corporate zones. Every raid is a survival operation. The Behemoths are not hypothetical. The corporate security drones are not hypothetical. The food they bring back feeds communities on M88's western edge that would otherwise starve.\n\nMadre is stocky, sun-darkened, with deep lines around eyes that have spent two decades squinting against prairie wind and scanning horizons for Behemoth sign. Her hair is gray-streaked and kept in a practical braid. She moves with the rolling gait of someone who has walked more miles than she has ridden, and her hands are calloused from farm tools as much as from weapons. She is called Madre because she has buried more young Gleaners than she can count and because she feeds the people who can't feed themselves.",
+  "description": "Esteban Jaramillo-Ionescu-Ozcoidi has been raiding Iowa for food for twenty-three years. She was one of the first Gleaner Brigade volunteers when the agricultural collapse turned the breadbasket into contested territory — a landscape of mega-scale automated farms defended by corporate security and increasingly hostile Behemoth fauna that emerged from the ecological disruption. She survived because she learned to read the land the way her grandmother read weather: patterns in the soil, in the animal movement, in the electromagnetic signatures that Behemoths leave before they surface.\n\nShe built Red Lantern from other long-term Gleaners — the ones who'd survived enough raids to develop the institutional knowledge that keeps you alive in Behemoth territory. The crew runs two to three deep raids per month, crossing the western jurisdictional boundary into the Iowa wastes to harvest, scavenge, or trade with the scattered farming settlements that still exist between corporate zones. Every raid is a survival operation. The Behemoths are not hypothetical. The corporate security drones are not hypothetical. The food they bring back feeds communities on GLMZ's western edge that would otherwise starve.\n\nMadre is stocky, sun-darkened, with deep lines around eyes that have spent two decades squinting against prairie wind and scanning horizons for Behemoth sign. Her hair is gray-streaked and kept in a practical braid. She moves with the rolling gait of someone who has walked more miles than she has ridden, and her hands are calloused from farm tools as much as from weapons. She is called Madre because she has buried more young Gleaners than she can count and because she feeds the people who can't feed themselves.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -87,10 +87,10 @@
     "A raid encounters a Behemoth that does not behave like an animal — it waits, it watches, it lets them pass. The implications are staggering.",
     "A corporate agriculture firm moves to secure a section of Iowa that Red Lantern's routes depend on — survival versus sovereignty",
     "A young Gleaner dies on a raid Madre planned, and the community blames her leadership for the loss",
-    "Madre's seismic implants begin detecting a new pattern — something larger than any recorded Behemoth, moving toward M88's western border"
+    "Madre's seismic implants begin detecting a new pattern — something larger than any recorded Behemoth, moving toward GLMZ's western border"
   ],
-  "narrative_function": "Madre drives the survival horror genre within M88. Her stories are about the cost of food — the literal, physical, terrifying cost of feeding a population that a collapsing ecosystem cannot support. She is the frontier, the border between the city and the wild. Her Behemoth encounters are the closest the narrative gets to creature horror.",
-  "augmentations": "Seismic-sensitivity implants in both feet — detect ground vibration patterns associated with Behemoth movement up to 2km away. Enhanced olfactory processing for tracking environmental chemical changes (Behemoth pheromone traces, soil toxicity, weather shifts). Cardiopulmonary endurance package for sustained physical performance in extreme conditions. Subdermal emergency beacon linked to M88's western defense network.",
+  "narrative_function": "Madre drives the survival horror genre within GLMZ. Her stories are about the cost of food — the literal, physical, terrifying cost of feeding a population that a collapsing ecosystem cannot support. She is the frontier, the border between the city and the wild. Her Behemoth encounters are the closest the narrative gets to creature horror.",
+  "augmentations": "Seismic-sensitivity implants in both feet — detect ground vibration patterns associated with Behemoth movement up to 2km away. Enhanced olfactory processing for tracking environmental chemical changes (Behemoth pheromone traces, soil toxicity, weather shifts). Cardiopulmonary endurance package for sustained physical performance in extreme conditions. Subdermal emergency beacon linked to GLMZ's western defense network.",
   "daily_life": "Wakes before dawn. Checks seismic readings, weather patterns, and satellite feeds for Behemoth activity along the western corridor. Plans routes for upcoming raids or reviews post-raid logistics. Spends afternoons training crew and maintaining the farmstead's defenses. Evenings she cooks — enormous meals for whoever is at the farmstead, because feeding people is not separate from the mission; it is the mission. Sleeps light, always.",
   "affiliation": "Red Lantern",
   "uses_facets": false,
@@ -239,7 +239,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

@@ -29,10 +29,17 @@
     "weapon",
     "gun",
     "corporate",
-    "hover"
+    "hover",
+    "aircraft",
+    "rail",
+    "military",
+    "combustion",
+    "aerial"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "ARCTURUS DEFENSE Raptorclaw Mk4 Combat Arm"
-  ]
+  ],
+  "physical_description": "The Arcturus Raptor is a sleek, predatory airframe of matte gunmetal and scorched composite paneling, its twin turbofan engines mounted dorsally like mantis shoulders. Articulated weapon pods hang beneath its belly in asymmetric clusters—some scarred from impact, others still pristine—while a powerful searchlight array dominates the nose cone, its lens yellowed by years of atmospheric penetration. The fuselage bears faded SafePassage Insurance decals and stress fractures that hint at repeated combat deployments.",
+  "visual_prompt": "military attack VTOL gunship, matte gunmetal and scorched composite, twin turbofan engines, articulated weapon pods, searchlight array, worn battle-scarred paneling, neo-noir gritty aesthetic, detailed product photography, dark rain-slicked background, industrial decay, high-tech weaponry, moody dramatic lighting, cyberpunk military hardware"
 }

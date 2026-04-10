@@ -1,0 +1,37 @@
+{
+  "name": "Myovex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Freeze",
+    "Statue",
+    "Stillwater"
+  ],
+  "category": "poison_toxin",
+  "subcategory": "paralytic agent — skeletal muscle blocker",
+  "manufacturer": "Nightshade Pharmatech (gray-label production line, officially discontinued)",
+  "description": "Myovex is a fast-acting competitive neuromuscular blocking agent derived from modified curare alkaloids fused with synthetic SNT-targeting ligands, causing complete skeletal muscle paralysis within 90 seconds of injection while leaving the victim fully conscious and aware. Diaphragm paralysis occurs at higher doses, requiring ventilator support to prevent asphyxiation. At standard kidnapping doses, respiratory function is preserved but the victim cannot move, speak, or signal distress.",
+  "method_of_use": "injection",
+  "effects": [
+    "Complete skeletal muscle paralysis within 60-90 seconds",
+    "Full consciousness and sensory awareness preserved",
+    "Paralysis of voluntary musculature including facial expression and vocalization",
+    "Dose-dependent respiratory compromise at 150% standard dose"
+  ],
+  "side_effects": [
+    "Extreme psychological trauma from conscious paralysis",
+    "Autonomic dysregulation causing bradycardia and hypotension",
+    "BCI distress signals remain active and must be separately jammed",
+    "Residual muscle weakness for 12-24 hours post-recovery"
+  ],
+  "duration": "45-90 minutes at standard dose; extended doses can maintain paralysis for up to 6 hours",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ400–Φ900 per vial",
+  "cultural_context": "Myovex is the workhorse paralytic of GLMZ's kidnapping economy, favored by Shelf gangs, corpo extraction teams, and anyone who needs a body moved without damage. The fact that victims remain fully conscious is considered a feature by interrogators and a horror by everyone else. Emergency responders have a dark nickname for Myovex victims found alone: 'screamers' — people found rigid and aware, unable to call for help. Nightshade officially discontinued the product line after a high-profile kidnapping case, but production never actually stopped.",
+  "story_hooks": [
+    "A runner wakes up paralyzed in the back of a transport with no memory of being taken — their BCI was jammed but is coming back online, and they have approximately 40 minutes of paralysis left to figure out where they're going before they arrive.",
+    "A Tier 3 nurse has been quietly stockpiling Myovex from supply chain discrepancies — the question is whether she's selling it or planning to use it on someone specific.",
+    "A Shelf fixer discovers that the 'standard dose' of Myovex circulating in their district has been cut with something that extends paralysis to 18 hours — someone is upgrading the kidnapping market for a reason."
+  ]
+}

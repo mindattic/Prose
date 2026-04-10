@@ -15,7 +15,7 @@
   "role": "Protagonist — freelance enforcer, facility survivor, the Street Samurai",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — moves between ungoverned zones and corpo territory, near Western and Chicago Ave",
+  "location": "The Pivot — 1554 W Chicago Ave (also 801 N Ashland), upper floor, West Town sector near the Circuit's western boundary",
   "description": "Kyle carries hardware that was never meant to leave the facility. NeoCortex Program Atlas, Subprogram A-7: a high-density electrode array with 32,768 electrodes and 256 threads — roughly 8x the density of standard Tier 3 corpo implants. The implant gives him cognitive processing speed comparable to Tier 3-4 augmented, reaction time in the top 0.1% of recorded human performance, and fragmentary access to sensory data streams. The catch: the hardware was never calibrated for long-term stability. He experiences periodic neural static, memory bleed from other test subjects, and micro-seizures that are getting more frequent. No corpo surgeon will touch it. He maintains it himself with salvaged tools and stolen pharmaceutical stabilizers, the way you would maintain a weapon that is also a time bomb. He carries a katana — carbon-nanotube composite blade with a piezoelectric disruption layer that shorts neural implants on contact. The katana is not nostalgia. It is the only weapon that works everywhere Kyle needs to go.",
   "psychology": {
     "facet_weights": {
@@ -83,6 +83,13 @@
       "description": "Mrs. Chen runs a shop in the Shelf. She feeds Kyle, patches his clothes, and pretends not to notice the blood.",
       "emotional_core": "Unconditional care that Kyle does not know how to receive",
       "story_tension": "If the Shelf is threatened, Kyle will burn everything to protect her."
+    },
+    {
+      "name": "Pixel",
+      "type": "neighbor / the one across the hall",
+      "description": "She lives in Unit 2E. Kyle knows the sound of her music through the door before he knows anything else about her day. She has extracted two bullets from him and calibrated his NeoCortex hardware four times. He calls her the neighbor. He opens the door when she knocks, which is not nothing.",
+      "emotional_core": "Kyle does not have a word for what Pixel is to him. This does not mean she isn't the thing.",
+      "story_tension": "She knows his hardware better than he does. There are things in his diagnostic data she has not told him about."
     }
   ],
   "story_hooks": [
@@ -174,12 +181,12 @@
       "Curiosity"
     ],
     "tags": [
-      "Street-raised",
-      "Addiction:stabilizers",
-      "Trauma:facility",
-      "Augmented:NeoCortex-degrading",
-      "Mentor-shaped:Seo",
-      "Self-taught"
+      "street-raised",
+      "addiction:stabilizers",
+      "trauma:facility",
+      "augmented:neocortex-degrading",
+      "mentor-shaped:seo",
+      "self-taught"
     ]
   },
   "behavioral": {
@@ -277,7 +284,7 @@
     "secondary_weapon": "",
     "armor": "",
     "vehicle": "",
-    "residence": "",
+    "residence": "The Pivot — Unit 2F, 1554 W Chicago Ave / 801 N Ashland, West Town sector",
     "clothing_style": "",
     "favorite_drink": "",
     "favorite_food": "",
@@ -292,8 +299,12 @@
     "Duelist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
-    "familiar_zones": [],
+    "home_turf": "The Pivot — West Town / Circuit boundary",
+    "familiar_zones": [
+      "The Shelf",
+      "The Circuit",
+      "West Town sector"
+    ],
     "zone_reputation": {},
     "no_go_zones": [],
     "range": "local"
@@ -352,7 +363,9 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
   ],
   "related_entities": [
+    "Pixel",
     "The Shelf",
+    "The Pivot",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Aphelion",
     "Chicago",
@@ -360,14 +373,16 @@
     "Atlas",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf",
+  "district": "West Town",
   "genetic_ancestry": {
     "East Asian": 43.6,
     "Northern European": 39.9,
     "Eastern European": 16.5
   },
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

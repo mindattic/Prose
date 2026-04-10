@@ -36,7 +36,10 @@
     "refugee",
     "desperate",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "subterranean",
+    "rail",
+    "electric"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -45,5 +48,7 @@
     "Ferrogate Transit",
     "Patient Zero",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": "Massive iron-ribbed tunnel infrastructure descends in concentric circles, with rusted steel support beams and concrete walls slick with mineral seepage and bioluminescent algae bloom. Upper levels gleam with faded Ferrogate signage and flickering sodium-vapor fixtures, while lower sections deteriorate into bare stone and corroded rail lines that disappear into absolute darkness, the metal worn smooth by decades of unseen transit.",
+  "visual_prompt": "abandoned subway tunnel system, neo-noir gritty industrial, rusted steel beams and concrete walls, bioluminescent algae glow, flickering sodium vapor lights fading to darkness, decrepit ferrogate signage, corroded train rails, deep perspective descending into black void, cyberpunk decay, detailed architectural photography, moody dark background, wet reflective surfaces, 35mm film grain"
 }

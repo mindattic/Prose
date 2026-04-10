@@ -1,0 +1,46 @@
+{
+  "id": "f5136cb678701c5de683bad765ee53d0",
+  "name": "Tessera Autonomous Rifle Platform TARP-3 'Delegate'",
+  "type": "weapon",
+  "aliases": [
+    "Delegate",
+    "TARP-3",
+    "The Drone Rifle"
+  ],
+  "category": "assault_rifle",
+  "description": "The TARP-3 Delegate is an assault rifle designed to be wielded by humanoid combat drones rather than human operators. Tessera engineered every aspect of the weapon for machine operation — the grip pressure requirements exceed human hand strength, the trigger pull weight is set at 15 kilograms, and the manual of arms requires motor precision that only servos can deliver. A human can physically carry the Delegate but cannot effectively operate it.\n\nThe weapon fires 6mm caseless through a conventional gas system, but its fire-control is entirely machine-mediated. A hardened data port replaces the BCI link, connecting directly to the combat drone's targeting system. The Delegate achieves consistent sub-half-MOA accuracy at all ranges because the platform holding it does not breathe, flinch, or fatigue. Rate of fire is limited by the weapon's cyclic rate rather than the operator's trigger finger.\n\nTessera sells the TARP-3 exclusively as part of complete drone weapon systems, bundled with their combat automata. The weapon is useless without a drone, and the drone is less effective without its purpose-built weapon. This interdependency is deliberate — Tessera wants to sell platforms, not components.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — autonomous weapons platform regulations",
+  "base_technologies": [
+    "Machine-optimized ergonomics",
+    "Hardened data port fire-control",
+    "Servo-grade operational requirements"
+  ],
+  "specifications": "caliber: 6mm caseless\neffective_range: 550m\nrate_of_fire: 800 rpm (cyclic)\nmagazine_capacity: 40 rounds\nweight: 3.6 kg",
+  "tactical_use": "The TARP-3 delivers inhuman accuracy from an inhuman platform. Combat drones carrying Delegates provide persistent, tireless fire support without risk to human operators. The machine-optimized design prevents field capture and use by human adversaries, ensuring that even if a drone is disabled, its weapon cannot be turned against friendly forces. Drone-Delegate teams are typically deployed in fire-and-forget perimeter defense roles.",
+  "cultural_context": "The Delegate represents the dehumanization of combat taken to its logical extreme — a weapon that humans cannot use, carried by machines that cannot choose not to. Anti-autonomous weapons activists target the TARP-3 specifically because it is a rifle, the most human of weapons, redesigned to exclude humans entirely. Tessera's marketing avoids showing the Delegate in human hands, reinforcing the separation between people and the violence conducted on their behalf.",
+  "known_users": [
+    "Tessera combat drone platforms",
+    "Automated perimeter defense systems",
+    "Corporate facility security drones"
+  ],
+  "story_hooks": [
+    "A technician has modified a Delegate to be human-operable by reducing the trigger weight and adding a conventional grip. The weapon's machine-precision accuracy is lost, but now a human can carry a rifle that corporate databases say only drones can use.",
+    "A combat drone carrying a Delegate has gone offline but continues to patrol its assigned route and engage targets. The drone's AI is damaged, and no one knows what its current targeting parameters are."
+  ],
+  "ammunition_type": [
+    "6mm caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "autonomous",
+    "drone",
+    "machine",
+    "Tessera",
+    "tier 4"
+  ],
+  "physical_description": "The TARP-3 Delegate is a brutalist slab of brushed titanium and polymer composite, all hard angles and oversized mechanical geometry designed for servo hands rather than flesh. The grip is grotesquely thick, textured with industrial knurling that would shred human skin; the trigger guard is a reinforced loop sized for a drone's actuator finger. A hardened data port protrudes from the receiver like a tumor, replacing any organic interface, and the whole assembly bears the scuffed, utilitarian wear of a tool built for function over form.",
+  "visual_prompt": "TARP-3 Delegate assault rifle, brutalist titanium drone weapon, oversized mechanical grip, hardened data port on receiver, industrial knurling texture, gritty product photography, dark studio background, neo-noir lighting, worn metal finish, 6mm caseless military platform, detailed mechanical components, cyberpunk industrial aesthetic, high contrast shadows"
+}

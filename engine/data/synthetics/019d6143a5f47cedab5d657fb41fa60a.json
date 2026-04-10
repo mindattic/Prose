@@ -1,12 +1,13 @@
 {
   "id": "019d6143a5f47cedab5d657fb41fa60a",
   "type": "character",
-  "name": "Kohana Sefanaia",
+  "name": "Doc Rusty",
   "aliases": [
     "MED-4R",
     "The Patchwork Doctor",
     "Rusty",
-    "that clanking medic down by the harbor"
+    "that clanking medic down by the harbor",
+    "Kohana Sefanaia"
   ],
   "species": "robot",
   "gender": "none",
@@ -331,7 +332,7 @@
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Kohana carries the genetic legacy of the Pacific diaspora — strong Pacific Islander foundation (34.6%) blended with Indigenous American ancestry (21.2%), Northern European (19.4%), Sub-Saharan African (18.1%), and East Asian (6.7%) heritage. This genetic tapestry would manifest in warm, deep brown skin tones with golden and reddish undertones, broad facial structure, and strong bone architecture. However, Kohana's physical form is entirely cybernetic chassis — all genetic heritage exists only in archived DNA records, if they exist at all.",
+    "heritage": "Synthetic construct, Hagen-Krupp MESU-4R military chassis — no biological ancestry. Manufactured 2166 for deployment in the Pacific Corporate Conflict. No genetic heritage; entirely mechanical in origin.",
     "height_cm": 212,
     "weight_kg": 310,
     "build": "Tall, angular, deliberately skeletal — designed for functional reach and precision rather than strength. Bipedal chassis with long articulated joints. Posture optimized for surgical positioning; naturally bends forward slightly.",
@@ -354,6 +355,7 @@
   },
   "image_prompt": "Doc Rusty in 2226 Great Lakes Metropolitan Zone: a towering 212cm skeletal cybernetic chassis of rust-brown oxidized steel, severely corroded from three decades in salt-spray harbor environments. Six articulated arms — four surgical manipulators hanging at left flank, two heavier utility arms retracted along right side. Forward-leaning posture, eternally bent as if examining a patient. Quad optical cluster glowing soft electric blue in diamond formation. Exposed internal surgical suite visible through corroded plating gaps: retractable sterilization arms, micro-welders, precision instruments. Diagonal stress fracture sealed with surgical adhesive across chest plate. Blast scars on left shoulder from 2170s combat. Hydraulic fluid staining copper-colored around joints. Patient photographs taped to torso. Bloodstains baked into metal crevices. Stethoscope looped like talisman. Standing in converted shipping container clinic with patient blankets and salvaged tarps hanging behind. Dim amber work-light casting sharp shadows. Absolute stillness. Predator made of steel. Mechanical grace. Ocean rust. Healing hands. Neo-noir surgical saint. --ar 2:3 --v 6",
   "tags": [
+    "synthetic",
     "sentient"
   ]
 }

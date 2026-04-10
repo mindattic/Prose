@@ -1,0 +1,39 @@
+{
+  "name": "Tachydrin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Quickfire",
+    "Sprint",
+    "Tach"
+  ],
+  "category": "cognitive_enhancer",
+  "subcategory": "processing_speed_bci_amplifier",
+  "manufacturer": "Helix Biosystems",
+  "description": "Tachydrin is a neuroelectric transmission accelerant specifically formulated for BCI-integrated users, reducing synaptic relay latency and increasing the firing synchrony between organic neural tissue and synthetic BCI interface nodes. The result is a subjective acceleration of thought — data parsed faster, decisions made faster, responses delivered faster — with BCI-linked users reporting up to 40% improvement in interface throughput. Without a BCI, effects are modest; with one, it's transformative.",
+  "method_of_use": "neural_direct",
+  "effects": [
+    "40-60% increase in BCI data throughput",
+    "Subjective acceleration of thought and reaction time",
+    "Faster pattern matching and query resolution",
+    "Reduced latency between intention and BCI command execution",
+    "Heightened sense of cognitive clarity and speed"
+  ],
+  "side_effects": [
+    "Severe sensory overload if BCI bandwidth is exceeded — migraines, visual artifacts",
+    "Perception of time slowing — social interactions feel agonizingly slow",
+    "Post-dose mental exhaustion proportional to throughput used",
+    "Interface burn: micro-damage to BCI-organic junction points with repeated use",
+    "Rare: cascade overload — seizure-like neural feedback loop in high-integration users"
+  ],
+  "duration": "3-5 hours",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ 40-65 per dose",
+  "cultural_context": "Tachydrin is the drug of choice for data analysts, algorithmic traders, systems architects, and anyone whose job performance is measured in milliseconds of BCI response. Helix markets it as a professional tool. The 'Sprint' street name captures both its effect and its trajectory — users feel superhuman, then crater. Corporate athletes who use it to outperform colleagues rarely acknowledge the interface burn accumulating in their BCI junctions until they're looking at expensive repair surgery or permanent latency degradation. It's the drug that separates the merely augmented from the truly fast.",
+  "story_hooks": [
+    "A Tier 4 algorithmic trader has been running Tachydrin daily for two years and is faster than anyone in her firm — but her BCI junction is degrading and she's been hiding the diagnostic reports, knowing she'll be replaced the moment she slows down.",
+    "A street version called 'Sprint' has emerged on Tier 2, synthesized without Helix's organic buffer compounds — it's cheaper and hits harder but the cascade overload rate is one in twenty doses, and emergency wards are filling up.",
+    "A player in a competitive BCI-linked strategy gaming circuit has tested clean for Tachydrin — but her times suggest otherwise, and investigation reveals she's using a Nightshade Pharmatech analog that defeats standard screening."
+  ]
+}

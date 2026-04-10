@@ -1,0 +1,44 @@
+{
+  "id": "3a13539494e3165f310e600d5b625eed",
+  "name": "Axiom Systems DermaShock DS-4 'Nettle'",
+  "type": "weapon",
+  "aliases": [
+    "Nettle",
+    "DS-4",
+    "Shock Patch",
+    "Skin Zapper"
+  ],
+  "category": "self_defense",
+  "description": "Adhesive patches applied directly to the skin that deliver a 30,000-volt contact discharge when touched by another person's bare skin. The DS-4 uses the body's natural bioelectric field as a circuit component — the wearer's skin provides the ground path, and the patch's outer surface is the active electrode. When another person's skin contacts the patch, their body completes the circuit, receiving the full discharge. The patches are flesh-toned and nearly invisible when applied, designed to be placed on commonly grabbed areas: forearms, upper arms, shoulders, and the back of the neck.\n\nAxiom developed the DS-4 as the most discreet anti-grab defense available. Unlike electrified clothing or visible deterrents, the patches are undetectable until triggered. Each patch contains a micro-capacitor that provides a single discharge, after which the patch is spent. They adhere for up to twelve hours before the medical-grade adhesive degrades, and they are waterproof and sweat-resistant.\n\nThe DS-4 is sold in sheets of ten patches for Φ35. Their disposable nature and low cost have made them popular across all tiers, from Tier 1 residents who apply them before walking through dangerous areas to Tier 4 professionals who wear them to business meetings where unwanted physical contact is a concern. Axiom's marketing is deliberately vague about use cases, allowing customers to project their own needs onto the product.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Bioelectric circuit integration",
+    "Micro-capacitor single-discharge design",
+    "Medical-grade conductive adhesive"
+  ],
+  "specifications": "voltage: 30,000V\namperage: 1.8 milliamps\ndischarge trigger: skin-to-skin contact through patch\nuses: single discharge per patch\npatch dimensions: 4 cm x 4 cm\nthickness: 0.3 mm\nadhesion duration: up to 12 hours\nweight: 2 g per patch\ncost: Φ35 per sheet of 10\nwater resistance: waterproof",
+  "tactical_use": "Apply patches to areas most likely to be grabbed: forearms (for wrist-grab defense), shoulders (for rear-grab defense), and the back of the neck (for headlock defense). Space patches to cover the most probable contact points. The single-discharge nature means each patch defends against one grab. Apply multiple patches for multi-contact protection. The patches trigger on bare skin contact only — they will not discharge through thick gloves, though thin fabric may allow partial discharge.",
+  "cultural_context": "The DS-4 has introduced the concept of the body itself as a defended surface. In Tier 1-2 communities, applying patches before going out has become as routine as checking the weather. The patches have also found an unexpected market in nightlife districts, where they are used to deter unwanted touching in crowded venues — a Φ3.50 patch that shocks someone who grabs you without consent has resonated powerfully with communities tired of physical boundary violations.",
+  "known_users": [],
+  "story_hooks": [
+    "Medical facilities have reported patients arriving with DS-4 patches still active — healthcare workers have been shocked while examining patients, creating a new workplace hazard in emergency medicine.",
+    "A nightclub in Tier 3 has started selling DS-4 patches at the door alongside drink tickets — the club's assault incidents dropped dramatically, but the patches have also been used offensively by patrons shocking people they simply dislike."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "electrical",
+    "anti_grab",
+    "adhesive",
+    "disposable",
+    "skin_worn",
+    "tier_1",
+    "discreet"
+  ],
+  "physical_description": "Flesh-toned adhesive patches roughly the size of a postage stamp, with a barely-visible metallic contact grid embedded beneath the biocompatible polymer surface. The backing is medical-grade, slightly tacky to the touch, with faint circuit traces visible under direct light. They're designed to vanish against skin tone once applied, leaving only the faintest shimmer of the active electrode catching the light.",
+  "visual_prompt": "product photography of adhesive bioelectric patches, flesh-tone polymer with embedded metallic grid, medical-grade backing, gritty neo-noir aesthetic, dark industrial background, moody neon rim lighting, close-up macro detail, worn cyberpunk tech, high contrast shadows, realistic materials, clinical yet dangerous"
+}

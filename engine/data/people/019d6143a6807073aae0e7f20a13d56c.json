@@ -95,11 +95,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Artist",
-      "Scene Connector",
-      "Underground",
-      "Spiritual Naivety",
-      "Tier 1"
+      "artist",
+      "scene connector",
+      "underground",
+      "spiritual naivety",
+      "tier 1"
     ]
   },
   "behavioral": {
@@ -267,7 +267,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

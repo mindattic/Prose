@@ -1,0 +1,50 @@
+{
+  "id": "e6e0153dff6bcf282d9c406e50457634",
+  "name": "Lazarus NB-4 'Jellyfish'",
+  "type": "weapon",
+  "aliases": [
+    "Jellyfish",
+    "Nerve Net",
+    "Tangle Zapper"
+  ],
+  "category": "stun weapon",
+  "description": "A launcher that fires a 2-meter conductive mesh net that wraps around the target and delivers a sustained electrical discharge through its entire surface area. The Jellyfish combines physical restraint with electrical incapacitation — the target is simultaneously immobilized by the weighted net and subjected to a full-body shock that prevents any coordinated muscle movement to escape. The net's conductive fibers are woven with shape-memory alloy that contracts upon deployment, tightening around the target and increasing electrical contact area.\n\nLazarus designed the NB-4 for live capture operations where the target must be taken intact — corporate espionage extraction, witness retrieval, and bounty collection. The Jellyfish is the preferred tool for operatives who need their target alive, conscious, and unable to resist. The net's shape-memory contraction means that struggling makes the restraint tighter and the electrical contact more complete, creating a negative feedback loop that punishes resistance until the target stops moving.\n\nThe weapon's most disturbing characteristic is its duration. The net's integrated battery sustains the electrical discharge for up to three minutes — far longer than necessary for incapacitation. Lazarus claims the extended duration is a safety feature that ensures the target remains incapacitated during operator approach. Critics note that three minutes of full-body electrical discharge causes lasting nerve damage and psychological trauma that serves no legitimate operational purpose.",
+  "manufacturer": "LAZARUS BIOWORKS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — licensed capture operations only",
+  "street_price": "Φ3,500 (nets Φ600 each, single-use)",
+  "base_technologies": [
+    "Conductive mesh deployment",
+    "Shape-memory alloy contraction",
+    "Sustained full-body discharge"
+  ],
+  "specifications": "range: 8 meters\nnet diameter: 2 meters deployed\ndischarge: 30,000 volts sustained, 3-minute battery\nnet weight: 1.2 kg\nlauncher weight: 2.1 kg\nlength: 340mm\nreload: Single-use net cartridge",
+  "tactical_use": "Live capture and restraint. Operators fire the Jellyfish at targets who must be taken alive, then approach once the electrical discharge has ensured compliance. The net can be deactivated manually by the operator or will exhaust its battery after three minutes. Effective against augmented targets — the full-body discharge affects biological and cybernetic systems simultaneously.",
+  "cultural_context": "The Jellyfish has become associated with forced extraction and kidnapping. Being 'jellied' is slang for being captured against your will, and the weapon's distinctive deployment sound — a wet snap as the net expands — is recognized and feared in communities where extraction operations are common. Bounty hunters who carry Jellyfish launchers are treated with particular wariness.",
+  "known_users": [
+    "Corporate extraction teams",
+    "Licensed bounty hunters",
+    "Lazarus Bioworks security forces",
+    "Known to be used by criminal kidnapping operations"
+  ],
+  "story_hooks": [
+    "A Jellyfish net has been recovered from a crime scene with modifications — the electrical discharge has been replaced with a chemical payload that absorbs through the skin on contact. Someone is converting restraint tools into poison delivery systems.",
+    "A bounty hunter's Jellyfish launcher has been traced to three separate abductions — but the bounty hunter died six months ago. Someone is using a dead operator's equipment and license to conduct extractions under a ghost identity."
+  ],
+  "ammunition_type": [
+    "net_cartridge"
+  ],
+  "tags": [
+    "stun",
+    "weapon",
+    "net",
+    "electrical",
+    "capture",
+    "lazarus",
+    "restraint",
+    "bounty",
+    "tier 3"
+  ],
+  "physical_description": "The Jellyfish is a compact launcher roughly the size of a flare gun, its polymer housing scarred and stained from field use, with exposed grip-tape worn smooth by repeated handling. Twin capacitor banks run along its barrel, their casings showing faded Lazarus Bioworks decals and the characteristic copper corrosion of salt-city humidity. The firing chamber is reinforced with scuffed titanium bands, and a manual charge indicator glows a sickly amber when armed.",
+  "visual_prompt": "Lazarus NB-4 Jellyfish stun launcher, compact polymer weapon with dual capacitor banks, weathered grip-tape, exposed titanium reinforcement, faded corporate decals, gritty neo-noir product photography, dark rain-slicked background, industrial decay aesthetic, detailed worn materials, neon amber charge indicator, near-future tactical equipment"
+}

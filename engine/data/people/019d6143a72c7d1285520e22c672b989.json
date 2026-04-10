@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Master Craftsperson",
-      "Perceptive",
-      "Self-Sufficient",
-      "Discreet",
-      "Quietly Sentimental"
+      "master craftsperson",
+      "perceptive",
+      "self-sufficient",
+      "discreet",
+      "quietly sentimental"
     ]
   },
   "behavioral": {
@@ -275,7 +275,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Middle Eastern": {

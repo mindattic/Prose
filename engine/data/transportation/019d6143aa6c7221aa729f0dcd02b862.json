@@ -31,12 +31,18 @@
     "vehicle",
     "shelf",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "ground",
+    "moped",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Doru Fofana-Câmpeanu",
     "Obafemi Szczypiński-Lautoa",
     "The Shelf"
-  ]
+  ],
+  "physical_description": "A compact electric scooter with a worn aluminum step-through frame, its original color long obscured by mismatched replacement panels in faded blacks, grays, and industrial blues. The deck is scuffed polymer, the handlebars wrapped in frayed grip tape or electrical tape. Visible wiring, a jury-rigged battery pack, and misaligned wheel assemblies from three different manufacturers mark it as a survivor of a dozen repair cycles.",
+  "visual_prompt": "gritty patchwork electric scooter, mismatched replacement parts, faded industrial colors, worn aluminum frame, neo-noir aesthetic, detailed product photography, rain-slicked surfaces, dark studio background, cyberpunk decay, visible repairs and wiring, realistic materials, street-worn"
 }

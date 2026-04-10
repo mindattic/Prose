@@ -30,10 +30,14 @@
     "elf",
     "bar",
     "vehicle",
-    "tier 1"
+    "tier 1",
+    "ground",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
-  ]
+  ],
+  "physical_description": "A crude, angular platform roughly four feet wide and two feet tall, its front face armored with welded-together dumpster lids and dented car hoods, their industrial gray paint peeling to reveal rust and primer underneath. The whole structure sits low on mismatched wheels — some shopping cart casters, others salvaged skateboard trucks — creating an unstable but functional rolling mass. Graffiti tags and protest slogans cover its sides in faded spray paint, and crude handles fashioned from rebar and duct-wrapped PVC pipe jut from the sides for pushing.",
+  "visual_prompt": "gritty neo-noir detailed product photography, improvised metal shield sled, welded dumpster lids and car hood armor, shopping cart wheels, protest graffiti tags, duct tape and rebar handles, industrial gray paint peeling rust, dark warehouse background, moody neon edge lighting, cyberpunk resistance aesthetic, worn dystopian craftsmanship"
 }

@@ -1,0 +1,48 @@
+{
+  "id": "4e052a3f951cd395a1a5c4cf8c90b4cc",
+  "type": "faction",
+  "name": "The Deep Archive",
+  "aliases": [
+    "Deep Archive",
+    "The Archive",
+    "DA"
+  ],
+  "motto": "History is the one thing they can't manufacture.",
+  "description": "The Deep Archive is a community of approximately 800 historians, researchers, librarians, and obsessive record-keepers dedicated to preserving an accurate history of GLMZ — a project that puts them in direct conflict with every corponation, faction, and institution that has an interest in controlling how the past is remembered.\n\nIn GLMZ, history is not neutral. Corporate PR departments maintain official narratives that minimize inconvenient truths. The Meridian Quorum's public records are carefully curated. Vantablack Media's historical programming tells the story the sponsors want told. And beneath all of this, the actual history — the displacement, the violence, the broken promises, the failed systems, the lives ruined and the lives saved — gets buried under layers of managed narrative until nobody can distinguish what happened from what's convenient to believe happened.\n\nThe Deep Archive exists to dig through those layers. Its members maintain a distributed, encrypted database of historical records — corporate documents, municipal records, personal testimony, photographs, video, audio, and physical artifacts — that together constitute the most comprehensive and least flattering history of GLMZ in existence. The Archive is not a propaganda operation: it preserves records that complicate every narrative, including the narratives of resistance movements that the Archive's members might personally support. History, in the Archive's philosophy, is only useful when it's honest.",
+  "ideology": "Accurate history is the prerequisite for meaningful change. You cannot fix a system you don't understand, and you cannot understand a system whose history has been rewritten by the people who benefit from it. The Archive's mission is preservation of truth, not advocacy for any particular interpretation.",
+  "territory": "No physical headquarters — the Archive is distributed across encrypted nodes maintained by individual members. A few semi-public reading rooms exist in the Circuit and Old Harbor.",
+  "leadership": "Chief Archivist Miriam Chen-Adeyemi, a former university historian who was denied tenure for publishing research that contradicted Axiom's official founding narrative.",
+  "methods": [
+    "Collection and preservation of historical records from all sources",
+    "Verification and authentication of historical documents",
+    "Maintenance of a distributed encrypted historical database",
+    "Publication of historical research through independent channels",
+    "Oral history collection from long-term GLMZ residents",
+    "Providing historical context to journalists, researchers, and legal teams"
+  ],
+  "resources": [
+    "800 dedicated researchers and archivists",
+    "A distributed encrypted database of historical records",
+    "Authentication expertise for historical document verification",
+    "Miriam Chen-Adeyemi's academic credentials and research skills",
+    "Relationships with journalists and legal teams who use Archive research",
+    "The irreplaceable value of accurate historical records"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Deep Archive represents the fight for historical truth — the conviction that accurate memory is the foundation of meaningful action.",
+  "story_hooks": [
+    "The Archive has authenticated a document that contradicts the official account of GLMZ's founding — a document that, if published, would undermine the legal basis of corporate sovereignty in the city. Miriam is trying to decide whether to publish and is receiving pressure from every direction.",
+    "Someone is systematically accessing and corrupting the Archive's database — not destroying records but subtly altering them, changing dates, names, and details in ways that make false narratives appear true. The corruption has been happening for months, and Miriam doesn't know how deep it goes."
+  ],
+  "tags": [
+    "faction",
+    "cultural",
+    "history",
+    "archive",
+    "records",
+    "circuit",
+    "old harbor",
+    "truth"
+  ]
+}

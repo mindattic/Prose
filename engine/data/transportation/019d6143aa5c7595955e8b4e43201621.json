@@ -33,11 +33,20 @@
     "vehicle",
     "tier 2",
     "tier 3",
-    "tier 4"
+    "tier 4",
+    "ground",
+    "exosuit",
+    "cargo",
+    "military",
+    "civilian",
+    "luxury",
+    "electric"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Lazarus LX-2 'Lab Rat'",
     "Ringo DV-4 'Courier'"
-  ]
+  ],
+  "physical_description": "The Arcturus Exo-Runner is a reinforced titanium-composite frame that wraps around the wearer's legs from hip to ankle, all scuffed matte-black plating and exposed hydraulic lines. Worn leather straps cinch across thighs and calves, and the knee joints are thick mechanical hinges that click audibly with each stride. Most units show stress fractures in the frame and tape-patched hydraulic seals—testaments to hard miles and harder falls.",
+  "visual_prompt": "Arcturus Exo-Runner lower-body exoskeleton frame, matte black titanium composite, exposed hydraulic lines, worn leather straps, mechanical knee joints, scuffed and battle-tested, gritty neo-noir product photography, dark industrial background, moody neon rim lighting, detailed mechanical engineering, cyberpunk street gear, rain-slicked surfaces, high contrast"
 }

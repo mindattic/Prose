@@ -1,0 +1,48 @@
+{
+  "id": "95380f7bf29ed9ab87fecdf8c3ebdb9f",
+  "name": "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
+  "type": "weapon",
+  "aliases": [
+    "Heavy Verdict",
+    "AMDMR-5",
+    "Wall Breaker"
+  ],
+  "category": "dmr",
+  "description": "The AMDMR-5 is a semi-automatic anti-materiel DMR chambered in 12.7mm caseless — a round that blurs the boundary between rifle ammunition and small cannon shells. Crucible designed the weapon for engaging light vehicles, equipment, and hardened positions at distances where conventional DMR calibers are insufficient. Each round delivers enough energy to penetrate engine blocks, disable communications equipment, and breach reinforced walls.\n\nThe rifle weighs 9 kilograms unloaded and requires either augmented operator strength, a supported firing position, or an exoframe to operate effectively. The recoil management system uses a long-travel hydraulic buffer that absorbs the 12.7mm impulse over a 15cm stroke, reducing felt recoil to levels comparable to a heavy battle rifle. The BCI integration provides structural analysis that identifies high-value material targets and optimal aim points for maximum effect.\n\nAt Φ8,500, the AMDMR-5 provides anti-materiel capability at a fraction of dedicated anti-materiel rifle costs. Its semi-automatic operation allows rapid engagement of multiple material targets — a capability that bolt-action anti-materiel rifles cannot match. The 8-round magazine capacity reflects the weapon's role: this is not a weapon for sustained fire, but for deliberate destruction of high-value targets.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — anti-materiel weapons licensing",
+  "base_technologies": [
+    "Heavy-caliber semi-automatic action",
+    "Long-travel hydraulic recoil buffer",
+    "BCI structural analysis targeting"
+  ],
+  "specifications": "caliber: 12.7mm caseless\neffective_range: 1,200m\nrate_of_fire: Semi-automatic (limited by recoil recovery)\nmagazine_capacity: 8 rounds\nweight: 9.0 kg",
+  "tactical_use": "The AMDMR-5 provides squad-level anti-materiel capability. Its 12.7mm round defeats light vehicle armor, communications equipment, and fortified positions at ranges exceeding one kilometer. The semi-automatic action allows rapid target transitions between material objectives — disabling a vehicle's engine, its communications antenna, and its weapon mount in three shots. Against personnel, the weapon is devastatingly excessive, which is sometimes the point.",
+  "cultural_context": "The AMDMR-5 represents escalation. When someone deploys a 12.7mm DMR, the message is that vehicles, equipment, and cover are all valid targets. The weapon's presence on a battlefield changes the tactical calculus — nothing short of hardened bunker construction provides safety. In asymmetric conflicts, a single AMDMR-5 can deny an entire road to vehicle traffic, making it a strategic asset for forces that lack anti-vehicle weapons.",
+  "known_users": [
+    "Anti-materiel specialists",
+    "Vehicle denial teams",
+    "Heavy marksmen",
+    "Siege warfare operators"
+  ],
+  "story_hooks": [
+    "A single AMDMR-5 operator has been systematically disabling a corponation's supply vehicles along a trade route, costing them millions in delayed shipments. The corponation wants the shooter found — but the 1,200-meter engagement range means no one has seen them.",
+    "An AMDMR-5 was used to breach a safe room wall during a corporate extraction. The weapon's 12.7mm round penetrated the reinforced concrete that the safe room's designers guaranteed would stop any personal weapon."
+  ],
+  "ammunition_type": [
+    "12.7mm caseless AP",
+    "12.7mm caseless explosive"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "anti_materiel",
+    "heavy",
+    "vehicle_denial",
+    "Crucible",
+    "tier 3"
+  ],
+  "physical_description": "The Verdict is a brutalist slab of matte gunmetal and composite polymer, its receiver scarred by handling and field maintenance. The barrel extends long and thick with a pronounced muzzle brake, while the stock telescopes back into a reinforced shoulder assembly housing the hydraulic buffer system. Wear marks streak the finish where gloved hands grip, and the charging handle bears the dull shine of repeated use.",
+  "visual_prompt": "semi-automatic anti-materiel rifle, matte gunmetal receiver, thick barrel with muzzle brake, composite polymer stock, hydraulic recoil system, industrial neo-noir, gritty worn surfaces, detailed product photography, dark studio background, rain-slicked reflections, cyberpunk weapon design, technical precision, heavy tactical DMR, weathered military hardware"
+}

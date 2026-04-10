@@ -97,10 +97,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Observer",
-      "Steady Hand",
-      "Transit Worker",
-      "Reluctant Witness"
+      "observer",
+      "steady hand",
+      "transit worker",
+      "reluctant witness"
     ]
   },
   "behavioral": {
@@ -278,7 +278,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

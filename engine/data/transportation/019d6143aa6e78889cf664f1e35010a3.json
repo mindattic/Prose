@@ -33,7 +33,16 @@
     "storm",
     "water",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "truck",
+    "van",
+    "boat",
+    "aircraft",
+    "hovercraft",
+    "electric",
+    "manual",
+    "ground",
+    "subterranean"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -41,5 +50,7 @@
     "Lake Skimmer Hydrofoil",
     "Narrowcast",
     "The Third Rail"
-  ]
+  ],
+  "physical_description": "A stubby, reinforced aluminum hull painted industrial gray, its flat bottom scarred by years of scraping concrete and rusted rebar. Corroded copper wiring snakes along the gunwales, feeding a jury-rigged electric motor salvaged from industrial equipment, while a cracked lexan windscreen—yellowed and scratched—offers minimal protection from the fetid spray. The deck is ribbed with non-slip grating, stained dark with decades of sewage residue that no amount of scrubbing will lift.",
+  "visual_prompt": "flat-bottomed electric boat, industrial aluminum hull, grimy gray weathered metal, corroded wiring, cracked windscreen, product photography, gritty neo-noir aesthetic, cyberpunk, dark underground setting, detailed wear and rust, moody lighting, dystopian near-future, worn practical technology, detailed textures, dark background"
 }

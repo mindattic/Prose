@@ -1,0 +1,49 @@
+{
+  "id": "bb417803a6d993f690c5b17978a00d45",
+  "name": "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+  "type": "weapon",
+  "aliases": [
+    "Riot Answer",
+    "Composite Tonfa",
+    "The Response",
+    "People's Baton"
+  ],
+  "category": "melee",
+  "description": "A tonfa — the Okinawan side-handled baton — constructed from aerogel-reinforced carbon composite, produced in large numbers by the Forge-Smith Collective as a direct response to corporate security's standard-issue Peacekeeper batons. The Riot Answer is explicitly designed to be the weapon that communities use to fight back against the tools of corporate enforcement: it blocks baton strikes, controls armored limbs, and delivers impact force sufficient to defeat the light body armor worn by security patrols.\n\nThe tonfa's side handle allows the weapon to be used in multiple configurations — extended for reach, retracted for close defense, spun for momentum strikes, and braced for blocks. The aerogel reinforcement absorbs shock from impacts that would shatter conventional composites, and the weapon's 600-gram weight provides enough mass for effective strikes without the exhaustion of heavier weapons. The Forge-Smith Collective sells Riot Answers in pairs and provides basic instruction in tonfa technique with every purchase.\n\nThe weapon's development was deliberate and political. The Forge-Smith Collective designed the Riot Answer after analyzing the most common security weapons deployed against lower-tier communities and engineering a counter for each. The tonfa's blocking capability defeats baton strikes. Its control techniques counter grab-and-restrain tactics. Its impact force defeats standard security armor. The weapon is not just a product — it is an argument that community self-defense is achievable with the right tools and training.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 1+ (mass availability)",
+  "legality": "Legal — classified as defensive martial arts equipment",
+  "base_technologies": [
+    "Aerogel-reinforced carbon composite",
+    "Side-handled multi-configuration design",
+    "Shock-absorbing defensive construction"
+  ],
+  "specifications": "shaft_length: 50 cm\nhandle: Side-mounted, 12 cm perpendicular grip\nweight: 600 g each (sold in pairs)\nmaterial: Aerogel-reinforced carbon composite\nshock_absorption: Rated for repeated full-force baton impacts\nretail_price: Φ180 per pair\nclassification: Defensive martial arts equipment (legal)",
+  "tactical_use": "The Riot Answer excels in defensive fighting against baton-armed opponents. The side handle provides leverage for blocks that absorb and redirect strikes, and the tonfa's spinning capability generates striking force from angular momentum rather than raw strength. Paired tonfas allow simultaneous offense and defense — one blocks while the other strikes, creating a rhythm of attack and defense that baton-armed opponents struggle to interrupt. The weapon is also effective for limb control, using the side handle as a lever to trap and redirect an opponent's arms.",
+  "cultural_context": "The Riot Answer is the Forge-Smith Collective's most politically significant product. It was designed as a weapon of resistance and is marketed as such — the Collective's literature explicitly states that the tonfa is intended to 'answer' corporate security's enforcement tools with community-accessible defensive capability. The weapon has been adopted by community defense training programs across the lower tiers, and tonfa practice has become a communal activity that builds both martial skill and social solidarity. Corporate security analysts have noted the trend with concern.",
+  "known_users": [
+    "Community defense training groups",
+    "Lower-tier martial practitioners",
+    "Civil defense organizers",
+    "Protest security volunteers"
+  ],
+  "story_hooks": [
+    "A community defense group trained with Riot Answers successfully repelled a corporate security incursion — the first documented case of a lower-tier community defending its space against armed corporate forces using organized martial resistance. The footage is spreading, and other communities want to learn.",
+    "The Forge-Smith Collective has been issued a cease-and-desist order claiming the Riot Answer's design infringes on a corporate patent for side-handled impact weapons. The patent is 150 years old and almost certainly public domain, but the legal challenge will cost more to fight than the Collective can afford."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "tonfa",
+    "defensive",
+    "aerogel",
+    "artisan",
+    "tier 1",
+    "legal",
+    "community",
+    "resistance"
+  ],
+  "physical_description": "A compact tonfa roughly sixteen inches long when fully extended, its primary shaft wrapped in matte charcoal composite that shows stress fractures from repeated impact. The side handle is reinforced with worn grip tape, and the striking end bears a blunt, slightly flattened head scarred from sustained use against ballistic plating. Aerogel layers visible at stress points give the weapon a subtly translucent quality under harsh light, like looking through industrial frost.",
+  "visual_prompt": "gritty product photography, tactical tonfa baton with aerogel-reinforced carbon composite shaft, matte charcoal finish with visible stress fractures, worn grip tape, blunt striking end, neo-noir industrial aesthetic, detailed close-up, dark rain-slicked background, harsh neon rim lighting, cyberpunk weapon design, practical worn surfaces, no chrome or polish, street-level enforcement tool"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "77be09ea7ef2f90d6b030cdfb6c19225",
+  "name": "Zheng-Dao Heavy Industries Dragon's Breath DB-8 'Kiln'",
+  "type": "weapon",
+  "aliases": [
+    "Kiln",
+    "DB-8",
+    "Dragon Shot",
+    "The Furnace"
+  ],
+  "category": "sniper",
+  "description": "A precision thermal lance rifle that fires a concentrated plasma bolt at hypersonic velocities. Unlike continuous-beam thermal weapons, the Dragon's Breath packages its energy into a discrete projectile — a magnetically-contained plasma mass roughly the size of a marble that maintains coherence for approximately 800 meters before dispersing.\n\nZheng-Dao developed the DB-8 for anti-armor precision work. The plasma bolt delivers approximately 40 megajoules of thermal energy on impact, sufficient to melt through 15cm of composite armor plating. Against personnel, the effect is catastrophic and leaves forensic evidence that is difficult to interpret — investigators unfamiliar with the weapon initially classify DB-8 kills as industrial accidents.\n\nThe weapon requires a dedicated cooling system that circulates liquid nitrogen through the barrel assembly between shots, giving the rifle its characteristic frost-coated appearance in the field.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — heavy weapons authorization and thermal weapons permit",
+  "base_technologies": [
+    "Magnetically-contained plasma bolt generation",
+    "Hypersonic plasma projectile stabilization",
+    "Cryogenic barrel cooling"
+  ],
+  "specifications": "caliber: Plasma bolt, 12mm containment diameter\neffective_range: 100-800 meters\nrate_of_fire: 1 shot per 15 seconds (cooling cycle)\ncapacity: 8 plasma charges\nweight: 14 kg rifle, 6 kg cooling pack\npower_source: Dual fusion cell, 16 shots per charge pair",
+  "tactical_use": "The Kiln fills a niche between conventional anti-materiel rifles and directed energy weapons. Its plasma bolt penetrates targets that would shrug off conventional rounds, while its discrete-projectile nature avoids the sustained-beam detection signatures that betray conventional thermal weapons. Operators deploy the DB-8 against fortified positions, armored vehicles, and hardened command posts where a single precision strike can change the tactical situation.",
+  "cultural_context": "Zheng-Dao's weapons division has a reputation for building equipment that is simultaneously elegant and terrifying. The Dragon's Breath embodies this philosophy — a weapon of extraordinary precision that kills through localized incineration. In corporate conflict zones, the discovery of plasma-scorched impact craters is enough to trigger evacuation protocols.",
+  "known_users": [
+    "Zheng-Dao corporate military",
+    "Select heavy weapons specialists"
+  ],
+  "story_hooks": [
+    "A DB-8 plasma bolt struck a residential building in Tier 3, melting through the exterior wall and killing a family inside. The intended target was in the building next door. Someone is using heavy weapons with unacceptable collateral risk.",
+    "Zheng-Dao is developing a rapid-fire variant of the Dragon's Breath that eliminates the cooling cycle — if they succeed, it will be the most destructive man-portable weapon in GLMZ."
+  ],
+  "ammunition_type": [
+    "Magnetically-contained plasma charge"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "plasma",
+    "thermal",
+    "anti-armor",
+    "heavy",
+    "tier 5"
+  ],
+  "physical_description": "The Kiln is a brutalist thermal lance rifle with a reinforced composite stock scarred from field use and a barrel assembly wrapped in heat-dissipation fins that radiate a dull gunmetal gray. Its receiver is stamped steel with Zheng-Dao's ideograph burned into the left side, and the charging mechanism is a heavy lever that requires deliberate, mechanical operation. The weapon's signature feature is its magnetic containment coil wrapped around the barrel's muzzle—a ring of blackened copper and rare-earth magnets that hums faintly when powered, leaving faint burn marks on the surrounding metal from repeated thermal discharge.",
+  "visual_prompt": "Precision sniper rifle with heavy thermal barrel assembly, blackened steel and composite materials, magnetic coil ring at muzzle glowing faintly blue, heat-dissipation fins along barrel, worn military-grade finish, scratched and battle-scarred, industrial neo-noir aesthetic, gritty detailed product photography, dark moody lighting, rain-slicked background, cyberpunk military hardware, technical and functional design, no chrome or polish"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "0ec099522fff4cbf0f1e8e8c53d929eb",
+  "name": "Meridian Munitions Compact Rifle MCR-2 'Errand'",
+  "type": "weapon",
+  "aliases": [
+    "Errand",
+    "MCR-2",
+    "The Runner"
+  ],
+  "category": "assault_rifle",
+  "description": "The MCR-2 Errand is Meridian Munitions' ultracompact assault rifle, designed for couriers, drivers, and operators who need a rifle that disappears into a messenger bag. With the stock folded, the weapon measures 380mm overall — shorter than most submachine guns — yet fires the same 6mm caseless round as the larger MM-4 Breadwinner. Magazine compatibility between the two weapons is deliberate, allowing operators to standardize on a single ammunition type across their primary and backup weapons.\n\nThe Errand sacrifices barrel length for concealability, which reduces effective range to 250 meters and increases muzzle flash and report. A compact suppressor threaded to the barrel adds 120mm but brings both signatures down to manageable levels. The BCI aim-assist system is particularly valuable on the MCR-2, where the short sight radius would otherwise make iron-sight accuracy challenging.\n\nMeridian markets the Errand as a vehicle defense weapon and personal protection rifle, but its concealability makes it popular with operators who need to carry a rifle where rifles aren't welcome. In Tier 2-3 zones with weapons checkpoints, the MCR-2 passes for electronics equipment in a sufficiently cluttered bag.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — concealed weapon regulations apply",
+  "base_technologies": [
+    "Ultracompact folding design",
+    "Magazine compatibility with MM-4 platform",
+    "Compact suppressor integration"
+  ],
+  "specifications": "caliber: 6mm caseless\neffective_range: 250m (unsuppressed), 220m (suppressed)\nrate_of_fire: 750 rpm (cyclic)\nmagazine_capacity: 35 rounds (MM-4 compatible)\nweight: 2.4 kg",
+  "tactical_use": "The MCR-2 fills the gap between a submachine gun and a full-size rifle. Its rifle-caliber round provides better terminal performance than pistol-caliber PDWs while its compact dimensions allow concealed carry in civilian environments. The suppressed configuration is a favorite of covert operators who need to engage targets without advertising their position. Magazine commonality with the MM-4 simplifies logistics for teams carrying both platforms.",
+  "cultural_context": "The Errand is the weapon of people who go places. Couriers, fixers, negotiators, and anyone whose job involves moving through spaces where visible weapons invite trouble. Its name reflects its intended user — someone running errands in dangerous territory who needs insurance that fits in a shoulder bag. In freelancer circles, drawing an MCR-2 from a messenger bag has become a cliched movie move, but it works.",
+  "known_users": [
+    "Couriers and runners",
+    "Covert operators",
+    "Vehicle crews",
+    "Personal protection details"
+  ],
+  "story_hooks": [
+    "A courier's MCR-2 was scanned at a weapons checkpoint that supposedly couldn't detect the weapon — the scanner operator is taking bribes, but from whom?",
+    "Someone has been planting MCR-2s in dead drops across a Tier 3 zone. The weapons are clean, loaded, and positioned at locations that suggest a planned coordinated attack."
+  ],
+  "ammunition_type": [
+    "6mm caseless standard",
+    "6mm caseless subsonic"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "compact",
+    "concealed",
+    "courier",
+    "suppressed",
+    "Meridian",
+    "tier 2"
+  ],
+  "physical_description": "The MCR-2 Errand is a brutalist assembly of matte gunmetal and scuffed polymer, its compact profile dominated by a stubby 180mm barrel and angular receiver etched with wear marks from countless courier runs. The folded stock collapses the weapon to the size of a large pistol, though the aggressive cooling fins along the barrel and the threaded muzzle give it an industrial, purposeful edge. Scratch marks and faint corrosion creep across its frame—evidence of rain-slicked GLMZ nights and the kind of abuse that comes with being a working tool rather than a showpiece.",
+  "visual_prompt": "compact assault rifle, ultrashort barrel, folded stock, matte gunmetal finish, scuffed black polymer grips, threaded muzzle, industrial design, gritty neo-noir product photography, worn tactical firearm, detailed metal textures, rain-weathered steel, dark studio background, dramatic side lighting, cinematic depth of field, cyberpunk aesthetic"
+}

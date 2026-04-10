@@ -1,0 +1,48 @@
+{
+  "id": "9fd0baa23ec3473a14b9815d4a05d0ac",
+  "type": "faction",
+  "name": "The Neon Vipers",
+  "aliases": [
+    "Vipers",
+    "Neons",
+    "NV"
+  ],
+  "motto": "Strike fast. Disappear faster.",
+  "description": "The Neon Vipers are a Circuit street gang of about 90 members known for two things: speed and flash. In a neighborhood full of criminal organizations that project menace through bulk and brutality, the Vipers project it through velocity — augmented reflexes, modified motorcycles, and a hit-and-run operational style that makes them nearly impossible to pin down.\n\nThe gang's core activity is smash-and-grab robbery: high-speed raids on delivery vehicles, warehouse loading docks, and retail establishments where the Vipers strike fast enough that security systems don't have time to respond and vanish into the Circuit's dense traffic before pursuit can organize. Their augmented reflexes (most members have reaction-enhancement implants) and custom vehicles (stripped-down motorcycles modified for maximum acceleration) make them the fastest criminal outfit in the city.\n\nThe Vipers' secondary business is racing — illegal augmented-vehicle races through the Circuit's streets that draw betting crowds and generate income through entry fees and gambling. These races serve double duty as recruitment events: prospective Vipers must complete a race without crashing, and the races themselves are the Vipers' most effective marketing tool, drawing young Circuit residents who want the speed and the flash and the feeling of being alive in a way that working a corporate job never provides.",
+  "ideology": "Speed is freedom. If you're fast enough, nobody can catch you, control you, or make you do anything you don't choose to do. This philosophy is simple, adolescent, and genuinely motivating for young people trapped in a system designed to keep them in place.",
+  "territory": "The Circuit's eastern corridor, centered on a stretch of highway known as 'the Viper Strip.' Their garage — where vehicles are modified and maintained — is a converted parking structure.",
+  "leadership": "A 26-year-old man named Dex Okafor-Reyes, called 'Quicksilver,' who holds the Circuit speed record for the Viper Strip run and leads with the charisma of someone who is genuinely, dangerously good at the thing his gang does.",
+  "methods": [
+    "High-speed smash-and-grab robbery targeting delivery vehicles and loading docks",
+    "Illegal augmented-vehicle racing for income and recruitment",
+    "Hit-and-run operations against rival gangs",
+    "Delivery services — moving small packages faster than any other ground courier",
+    "Gambling operations around racing events",
+    "Vehicle modification services sold to the public"
+  ],
+  "resources": [
+    "90 members with augmented reflexes and custom vehicles",
+    "A garage/chop shop for vehicle modification",
+    "The fastest ground-level mobility in GLMZ",
+    "Betting income from racing operations",
+    "A reputation for speed that deters pursuit",
+    "Youth — the Vipers are young, fearless, and high on their own adrenaline"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Vipers represent the raw appeal of speed as freedom — and the question of what happens when you're fast enough to run but not wise enough to know where you're running to.",
+  "story_hooks": [
+    "A Viper race has gone catastrophically wrong — a racer crashed into a crowded street market, killing civilians. Dex is facing pressure from both the law and other gangs to turn over the racer. He won't.",
+    "Someone has been sabotaging Viper motorcycles. Two racers are dead from vehicle failures that look like accidents but aren't. Dex needs to find the saboteur before his gang's trust in their equipment — and in him — collapses."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "gang",
+    "speed",
+    "racing",
+    "circuit",
+    "street",
+    "vehicles"
+  ]
+}

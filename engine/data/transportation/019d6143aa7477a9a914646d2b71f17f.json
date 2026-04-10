@@ -35,11 +35,17 @@
     "freedom",
     "vehicle",
     "refugee",
-    "escape"
+    "escape",
+    "subterranean",
+    "rail",
+    "train",
+    "cargo"
   ],
   "parent_corponation": "",
   "related_entities": [
     "GLMZ",
     "The Crawl"
-  ]
+  ],
+  "physical_description": "The Meridian Underground Railroad exists as a labyrinthine network rather than a discrete object—corroded steel rails buried beneath decades of sediment, concrete passages reinforced with salvaged industrial framework, and wooden support structures darkened by mineral seepage and age. Weathered signage, hand-painted route markers, and jury-rigged lighting systems (salvaged neon tubes, oil lamps, bioluminescent fungi in some sections) guide travelers through tunnels that smell of rust, water, and earth. The infrastructure bears the scars of thirty years: graffiti memorials, makeshift stations carved into bedrock, and countless repair patches welded onto failing infrastructure by anonymous hands.",
+  "visual_prompt": "underground railroad network, neo-noir gritty aesthetic, corroded steel rails and concrete tunnels, weathered hand-painted signs, salvaged neon lighting casting blue shadows, bioluminescent markers, industrial decay, water-slicked surfaces, dark moody atmosphere, detailed texture, cinematic lighting, abandoned infrastructure, cyberpunk realism, shot from tunnel perspective looking down rails into darkness"
 }

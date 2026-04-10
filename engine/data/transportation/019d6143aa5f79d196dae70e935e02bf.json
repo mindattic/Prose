@@ -33,11 +33,21 @@
     "market",
     "vehicle",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "ground",
+    "van",
+    "motorcycle",
+    "bicycle",
+    "military",
+    "luxury",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "GLMZ",
     "Ringo DV-4 'Courier'"
-  ]
+  ],
+  "physical_description": "A pair of scuffed reinforced polymer boots welded to aluminum frame chassis, each mounted with four ferrous-core wheels that hum faintly with electromagnetic charge. Frayed wiring runs along the ankle supports, some joints wrapped in electrical tape or salvaged cord. The original military variants bore clean Arcturus Defense branding; most street versions show crude knockoff seals, rust blooming around the magnetic actuators, and impact scars from countless collisions with concrete and steel.",
+  "visual_prompt": "motorized inline skates, magnetic wheels, worn aluminum frame, reinforced polymer boots, cyberpunk courier gear, neo-noir gritty aesthetic, electromagnetic tech, rust and tape repairs, detailed product photography, dark industrial background, moody neon reflection, street-level technology"
 }

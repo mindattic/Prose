@@ -1,0 +1,38 @@
+{
+  "name": "Genostabil",
+  "type": "pharmaceutical",
+  "aliases": [
+    "drift blocker",
+    "fixative",
+    "anchor"
+  ],
+  "category": "medical",
+  "subcategory": "geneware expression stabilizer",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Genostabil suppresses epigenetic drift in cosmetic and functional geneware by maintaining a controlled methylation environment around modified gene sequences. Without regular dosing, geneware modifications — decorative pigmentation, structural features, bioluminescent patterns, cosmetic morphological changes — gradually shift away from their designed expression, producing unwanted secondary traits or losing intended features entirely. It is taken daily by anyone with active geneware.",
+  "method_of_use": "oral",
+  "effects": [
+    "stabilizes geneware expression to designed parameters",
+    "prevents unwanted secondary trait emergence",
+    "maintains cosmetic modifications",
+    "extends functional geneware efficacy"
+  ],
+  "side_effects": [
+    "suppresses the body's natural adaptive epigenetic response",
+    "prolonged use can cause difficulty with non-geneware genetic adaptation",
+    "rare paradoxical expression events",
+    "skin dryness and texture changes",
+    "mild hormonal interference in high doses"
+  ],
+  "duration": "48 hours per dose",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ55 per week (generic); Φ180 per week (Lazarus premium)",
+  "cultural_context": "Geneware is fashion in 2200, and Genostabil is what keeps that fashion from becoming a horror show. The Tier 3-4 geneware community treats it like skincare — premium formulations are marketed with phrases like 'your design, preserved.' Off the Shelf, people who got cheap black-market geneware and can't afford Genostabil develop drift syndrome: scales where smooth skin was designed, colors bleeding into unwanted areas, structural features warping.",
+  "story_hooks": [
+    "A character's geneware is drifting despite taking Genostabil — someone has been substituting their prescription with placebos, and their body is changing in ways they didn't choose",
+    "A Shelf geneware artist is creating deliberate drift art — clients who stop taking Genostabil on a schedule to produce controlled, evolving body modifications",
+    "Lazarus holds the patent on the only effective stabilizer for a new generation of geneware — and is using that leverage to control what modifications people are allowed to keep"
+  ]
+}

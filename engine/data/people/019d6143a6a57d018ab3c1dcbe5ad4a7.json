@@ -101,7 +101,7 @@
       "artisan",
       "political dresser",
       "claw geneware",
-      "ELF devotee",
+      "elf devotee",
       "idealist-pragmatist",
       "involuntary operative"
     ]
@@ -269,7 +269,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

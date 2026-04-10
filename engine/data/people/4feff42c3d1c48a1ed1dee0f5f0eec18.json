@@ -6,7 +6,7 @@
     "Ironclad",
     "The Auditor"
   ],
-  "role": "Private Investigator",
+  "role": "Corporate investigator — Meridian Corporate Intelligence Group, Tier 4-5 clients exclusively",
   "description": "Sable Keïta-Suzuki is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Shelf to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
   "affiliation": "Meridian Corporate Intelligence Group — a boutique firm serving Tier 4-5 clients",
   "tier": "Tier 4",
@@ -32,31 +32,113 @@
     "Retinal scanner spoofing device for accessing secured corporate facilities during investigations"
   ],
   "personality": "Thandiwe is cold the way a scalpel is cold — it's not personal, it's functional. She grew up Tier 2 and clawed her way to the Spires through intelligence, ruthlessness, and an absolute refusal to be impressed by anyone's title or wealth. She treats every person she meets as a potential subject of investigation and maintains files on her own clients because trust is a vulnerability she can't afford. She is impeccably professional, never drinks at business functions, laughs rarely and never spontaneously, and has a reputation for destroying careers with the same emotional affect as someone filing paperwork. Under the armor, she is deeply lonely and aware that she has optimized herself for success at the cost of everything else.",
+  "speech_patterns": {
+    "vocabulary": "Precise and economical. Every sentence is load-bearing. She does not use intensifiers. She does not hedge. When she is uncertain she says so in one word.",
+    "cadence": "Unhurried. She speaks at the pace of someone who knows the other person will wait. Silences are not awkward — they are deliberate. She lets silence do the work interrogators use questions for.",
+    "verbal_tics": [
+      "A single repeated word when she wants you to understand something has changed: 'Again.' Pause. Then the actual point.",
+      "She names the thing she's not saying before deciding not to say it — 'There's something here I'm not going to tell you, and you should factor that in.'",
+      "Never says 'I think' or 'I believe.' She says 'The evidence is' or 'My read is.' The distinction matters to her.",
+      "When she's finished with a topic she says 'Next.' Not dismissively. Clinically."
+    ],
+    "example_lines": [
+      "\"The job is clean. The client is not. You should know that going in.\"",
+      "\"There's something here I'm not going to tell you. Factor that in.\"",
+      "\"Again. — He didn't hire me to find the mole. He hired me to find out if the mole exists. There's a difference, and the difference is what you're going to get paid for.\""
+    ],
+    "subtext": "Every interaction is information exchange. She is always evaluating and never entirely off-duty. When she's asking a question she already knows part of the answer. When she offers something, she's watching what you do with it.",
+    "under_pressure": "Gets quieter. The pauses get longer. She stops completing sentences she's started, mid-phrase, when she's recalibrating. This is the tell — most people don't recognize it until they've seen it twice.",
+    "avoidances": [
+      "Does not discuss her Shelf origins in operational context — this information is leverage she doesn't hand out",
+      "Will not use the word 'trust' without visible distaste",
+      "Does not explain her reasoning unless the explanation is itself part of the job"
+    ],
+    "intimacy_register": "With the very few people she actually trusts: shorter sentences, occasionally a question that isn't tactical. She might use someone's name. She almost never uses names."
+  },
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.65,
+      "ideal": 0.55,
+      "id": 0.25,
+      "shadow": 0.7,
+      "mask": 0.85,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That a client will eventually commission an investigation that leads back to her own past",
+      "That the person she's become — efficient, unreadable, precise — is not armor but the actual person, and there's nothing underneath",
+      "That her Shelf origins will surface in a context she cannot control"
+    ],
+    "core_desires": [
+      "Complete information — the full picture of who controls what in GLMZ, before someone uses that picture against her",
+      "A case that cannot be solved — the intellectual challenge she has not yet encountered",
+      "To one day close the Bergstrom-Osei file with something she can live with"
+    ],
+    "coping_mechanisms": [
+      "Treating every interaction as data collection — reduces emotional exposure by making it professional",
+      "Physical routine as cognitive reset — she runs 8km before every significant meeting",
+      "Maintaining a private archive of everything she has ever found, on the logic that the record is the only thing that survives the person"
+    ],
+    "blind_spots": [
+      "Believes her neutrality is principled when some of it is avoidance — she chooses clients who can't threaten her, not clients who need her most",
+      "Cannot see that her reputation for finding the truth has made her a target for anyone who needs the truth suppressed",
+      "Has never investigated herself"
+    ],
+    "secret": "Three of her notable cases produced results that she presented accurately to her clients. What she has never disclosed: a fourth case, uninvestigated, that connects two of her current clients to each other in a way neither knows about. She has held this finding for eight months, telling herself she is waiting for the right moment. She is not waiting for the right moment. She is afraid of what following it through would require."
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never presents findings she cannot fully substantiate — her credibility is the only asset that cannot be replaced",
+      "Keeps concurrent investigations structurally siloed — no client knows the names of other clients",
+      "Will identify a client as the source of a problem if the evidence supports it — has done this three times",
+      "Does not take cases below Tier 3 — the exposure risk is not proportional to the fee"
+    ],
+    "interpersonal_modes": {
+      "corporate_clients": "Professional warmth precisely calibrated to the client's ego requirements. She has files on all of them. She does not tell them this.",
+      "witnesses_subjects": "Patient, attentive, almost warm — people talk to her because she appears to listen, which she does, but not in the way they believe",
+      "rivals": "Respectful professional distance. She does not engage in competitive positioning. Her results speak."
+    },
+    "stress_responses": {
+      "low": "Goes quieter. Answers get shorter. Completes her 8km run in silence.",
+      "high": "Becomes entirely still and entirely focused. No small talk. No softening. The performance drops completely."
+    },
+    "contradictions": [
+      "Built a career on full disclosure to clients while holding a multi-client-connecting finding for eight months",
+      "Investigates everyone around her but has never turned the same tools on herself"
+    ]
+  },
   "relationships": [
     {
       "name": "Director Kaito Bergstrom-Osei",
-      "type": "primary client",
-      "description": "Axiom's head of internal affairs — her largest and most demanding client, whose own loyalty she privately questions"
+      "type": "primary client / subject of private ongoing assessment",
+      "description": "Axiom's head of internal affairs — her largest and most demanding client. She has begun a private file on him that she has not disclosed to anyone. The case she brought him last quarter was complete. The file she has kept back is not.",
+      "emotional_core": "Professional dependency she finds increasingly uncomfortable",
+      "story_tension": "He is her biggest client. He may also be the person she is about to destroy. She has not resolved which of these facts takes precedence."
     },
     {
       "name": "Vesna Medina-Appiah",
-      "type": "former protege",
-      "description": "Left Thandiwe's firm to start a competing practice — Thandiwe considers this a betrayal and monitors her operations"
+      "type": "former protege / now competitor",
+      "description": "Left her firm to start a competing practice two years ago. She monitors Vesna's operations — not from resentment, but because a former protege who knows her methods and her clients is a specific class of risk that requires ongoing assessment.",
+      "emotional_core": "The closest she came to mentorship — she is not certain she did it correctly",
+      "story_tension": "Vesna is building something that may eventually be better than what she built. She is deciding whether to view this as a threat or as evidence that she taught well."
     }
   ],
   "story_hooks": [
-    "Thandiwe is hired to investigate a data breach at Axiom, but the trail leads to Director Kaito himself — her biggest client and the source of 40% of her revenue",
-    "Someone is feeding information about her ongoing investigations to the subjects she's investigating, and the leak is inside her own firm",
-    "A Shelf-level PI contacts her with evidence of a corporate crime so large it could destabilize GLMZ's economy — but the evidence was obtained illegally and she has to decide whether her ethics or her effectiveness takes priority"
+    "Kaito Bergstrom-Osei hires her to investigate a data breach — and the trail leads directly into the private file she has been holding back for eight months",
+    "One of her current clients has commissioned an investigation into the other client she holds the connecting finding on — she is now the only person in the city who can see the full shape of what's coming",
+    "Vesna Medina-Appiah calls with a case referral. It's the kind of case Vesna knows she can't turn down. Vesna also knows this is a trap.",
+    "Someone has begun investigating Sable Keïta-Suzuki with exactly the methods she uses herself"
   ],
   "tags": [
+    "person",
     "character",
     "private_investigator",
     "corporate_espionage",
     "spires",
     "tier_4",
     "elite",
-    "sentient"
+    "sentient",
+    "human"
   ],
   "carried_weapons": [
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"

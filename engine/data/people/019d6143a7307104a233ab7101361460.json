@@ -103,7 +103,7 @@
   ],
   "narrative_function": "Yuki is the road not taken. She is what Kyle would be if he'd stayed with Axiom — successful,\nstable, effective, and slowly being consumed by the machine she chose. She represents the argument\nthat principles are a luxury, that pragmatism is survival, that the system is ugly but it works\nfor those willing to work it.\n\nBut she also mirrors Kyle's hypocrisy from the other side. He calls himself a samurai while doing\nmercenary work. She calls herself an officer while enforcing corporate will on communities like\nthe one she grew up in. Neither of them is fully honest about what they are. But Yuki's dishonesty\nis state-sponsored, which makes it invisible, and Kyle's is self-imposed, which makes it romantic.\nThe story should question both.\n\nShe is the tension between where you came from and what you became. She buried the same moral\ndoubts Kyle couldn't swallow. She chose pragmatism. It works. She has healthcare. She has security.\nShe has a clean ceiling to stare at for thirty-seven minutes every morning while she doesn't think\nabout whether any of it was worth it.\n\nThe question she poses to Kyle: Was leaving brave, or was it easy? Was staying cowardly, or was\nit the harder choice — to look at the machine every day and keep going? The story should make\nboth answers feel true and neither feel sufficient.",
   "augmentations": "",
-  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "daily_life": "",
   "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
@@ -297,7 +297,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

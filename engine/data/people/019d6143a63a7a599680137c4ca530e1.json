@@ -89,7 +89,7 @@
     "A rival courier crew offers to merge — more resources but less freedom. Jinx has to decide what Switchback is for.",
     "Jinx's ankle augmentations start failing. The budget Shelf-installed hardware has a shelf life, and it's expiring."
   ],
-  "narrative_function": "Jinx represents the young, reckless energy of M88's excluded — people who turned their disadvantage into velocity. Her stories are chase sequences and narrow escapes that carry the exhilaration of movement and the underlying terror of a world where stopping means being caught. She is what Kyle might have been without the facility — talented, endangered, and too young for the weight she carries.",
+  "narrative_function": "Jinx represents the young, reckless energy of GLMZ's excluded — people who turned their disadvantage into velocity. Her stories are chase sequences and narrow escapes that carry the exhilaration of movement and the underlying terror of a world where stopping means being caught. She is what Kyle might have been without the facility — talented, endangered, and too young for the weight she carries.",
   "augmentations": "Spring-loaded ankle reinforcement — absorbs impact from drops up to three stories and provides explosive vertical leap capability. Gecko-grip dermal pads on palms and fingertips for surface adhesion on most building materials. Reflex enhancer (budget model, Shelf-installed) that boosts reaction time by approximately 0.15 seconds. Internal GPS and route-mapping overlay — displays jurisdiction boundaries, camera positions, and patrol timing in her visual field.",
   "daily_life": "Wakes at dawn. Runs the rooftops for an hour — partly exercise, partly route checking. Picks up contracts from dead drops and encrypted message boards. Coordinates crew assignments based on package priority and risk level. Eats street food on the move. Spends evenings maintaining gear and arguing with Puck about routes. Falls asleep wherever she stops moving, which is usually the rooftop squat but sometimes a fire escape or a hammock strung between air conditioning units.",
   "affiliation": "Switchback",
@@ -236,7 +236,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

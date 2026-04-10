@@ -1,0 +1,40 @@
+{
+  "id": "f0b2830cf6611073e7fd03b2f575b027",
+  "type": "place",
+  "name": "The Roost",
+  "aliases": [
+    "Roost"
+  ],
+  "description": "A rotisserie restaurant in Ravenswood that does one thing with total commitment: rotisserie vat-chicken. The birds rotate on a wall of spits behind the counter, dripping fat onto potatoes roasting below. A half chicken with roasted potatoes and salad is Φ22. A whole chicken to-go is Φ34. The chicken is brined, herb-rubbed, and roasted until the skin crackles and the meat falls from the bone. Chef-owner Ama Lindqvist-Petersen considers the rotisserie the most honest cooking method and the whole chicken the most democratic meal — it feeds a family, it's the same from any angle, and it doesn't pretend to be anything other than what it is.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ravenswood families",
+    "Rotisserie enthusiasts",
+    "People buying dinner for four"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.974,
+    "lng": -87.672
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_3"
+  ],
+  "related_entities": [
+    "Ama Lindqvist-Petersen"
+  ]
+}

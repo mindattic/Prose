@@ -1,0 +1,33 @@
+{
+  "id": "8ed1ef254a017fe6acba1d086c4e7b04",
+  "name": "The Printer",
+  "type": "document",
+  "document_type": "field_report",
+  "author": "Underworld Exploration Corps, Linguist Specialist Tariq Svensson-Abubakar",
+  "date": "2212-04-06",
+  "classification": "classified",
+  "description": "The device was found in an Underworld chamber at sub-level 12, accessible only through a maintenance shaft that required three hours of crawling to traverse. The chamber is approximately 4 meters by 6 meters, carved from bedrock, and contains nothing but the device and its output. The output is paper. Thousands of pages, stacked in neat columns around the room, some reaching the ceiling. The oldest pages, based on paper degradation analysis, are approximately 200 years old. The newest page was produced while we watched.\n\nThe device is a box. Flat black, 60 centimeters square, 20 centimeters tall. It has no visible input mechanism — no feed tray, no ink reservoir, no data port. At irregular intervals — we observed periods between 4 minutes and 3 hours — a sheet of paper emerges from a slot on its front face. The paper is warm. It is a standard cellulose-based paper that could have been manufactured anywhere, except that chemical analysis reveals no bleaching agents, no sizing compounds, and no manufacturing residues of any kind. The paper is pure cellulose. It should not exist in sheet form without processing. It exists in sheet form.\n\nThe text on the pages is dense, consistent, and written in no language that any member of my team or any consultant we have engaged can identify. It is not a cipher — the character frequency distribution does not match any known language encrypted or otherwise. It is not random — there are clear syntactic structures, recurring symbols, and what appear to be paragraph breaks and section headings. The character set contains approximately 4,000 unique symbols. The text changes — no two pages are identical. Whatever this device is writing, it is writing a lot of it, and it has been writing continuously for centuries.\n\nI brought three pages to the surface. Within six hours, the text on two of them had changed. Not faded — changed. Different characters in different arrangements on the same paper. The third page remains stable. I do not know why. I have sealed it in an airtight container and I am trying not to think about it.",
+  "related_entities": [
+    "Underworld",
+    "GLMZ"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "What language is the Printer writing in, and who can read it?",
+    "Why does the text change on some pages but not others?",
+    "What has it been writing for 200 years?"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "glmz",
+    "object",
+    "underworld",
+    "machine",
+    "impossible_origin",
+    "language",
+    "text"
+  ]
+}

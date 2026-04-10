@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Expert",
-      "Institutionally Compromised",
-      "Principled",
-      "E.L.F.-Adjacent",
-      "Politically Exposed"
+      "expert",
+      "institutionally compromised",
+      "principled",
+      "e.l.f.-adjacent",
+      "politically exposed"
     ]
   },
   "behavioral": {
@@ -244,7 +244,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Pacific Islander": {

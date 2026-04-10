@@ -98,12 +98,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Biotech Retiree",
-      "Community Council Chair",
-      "Civic Organizer",
-      "Helix Biosystems Network",
-      "Cat Ears",
-      "Covert Investigator"
+      "biotech retiree",
+      "community council chair",
+      "civic organizer",
+      "helix biosystems network",
+      "cat ears",
+      "covert investigator"
     ]
   },
   "behavioral": {
@@ -320,7 +320,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

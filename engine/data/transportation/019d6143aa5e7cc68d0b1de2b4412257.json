@@ -31,7 +31,10 @@
     "surveillance",
     "power",
     "shadow",
-    "drone"
+    "drone",
+    "aircraft",
+    "electric",
+    "aerial"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -39,5 +42,7 @@
     "Patient Zero",
     "TESSERA PA-5 'Attendant'",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
-  ]
+  ],
+  "physical_description": "A sleek, dart-shaped airframe of brushed titanium and carbon composite, no longer than a forearm, with swept wings that fold flush against the fuselage for transport. The hull bears scuff marks and stress fractures from rough deployments, with faded Arcturus Defense stencils barely visible under rain-slicked polymer. A cluster of optical sensors and signal-intercept antennae protrude from its nose cone, and the tail section houses dual electric ducted fans that hum at barely-subsonic frequencies.",
+  "visual_prompt": "sleek dart-shaped military reconnaissance drone, brushed titanium and carbon composite, folding wings, optical sensor cluster, faded military stencils, rain-slicked worn finish, stress fractures and scuff marks, neo-noir gritty aesthetic, detailed product photography, dark industrial background, moody cinematic lighting, weathered high-tech equipment"
 }

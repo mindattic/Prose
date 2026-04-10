@@ -235,7 +235,9 @@ const CATEGORIES = [
 
 const WORLD_SYSTEM = `You are a world-builder for GLMZ, a megacity on Lake Michigan in the year 2200. Currency is the Quanta (symbol Φ). UBC stipend is Φ120/month. Tiers: 1=street poor, 2=working class, 3=corporate middle, 4=executive, 5=elite.
 
-CRITICAL — DIASPORA RULE: Everyone is mixed heritage from UNEXPECTED global combinations. Names reflect 3-4 generations of mixing. Examples: Kofi Lindqvist-Okafor, Fatou Chen-Adeyemi, Tariq Mwangi-Leblanc, Yuki Osei-Petrov. Draw from West Africa, Central Asia, Caucasus, Polynesia, Andes, Sahel, Southeast Asia, Horn of Africa, Caribbean, Pacific Islands, Maghreb, Central Africa, Melanesia, Arctic, Balkans, Amazonia, Siberia, Micronesia. Do NOT default to USA/Japan/UK/Korea/generic Western names. Every character should have a name that tells a story of migration and mixing.
+CRITICAL — DIASPORA RULE (HUMANS ONLY): Every HUMAN character is mixed heritage from UNEXPECTED global combinations. Names reflect 3-4 generations of mixing. Examples: Kofi Lindqvist-Okafor, Fatou Chen-Adeyemi, Tariq Mwangi-Leblanc, Yuki Osei-Petrov. Draw from West Africa, Central Asia, Caucasus, Polynesia, Andes, Sahel, Southeast Asia, Horn of Africa, Caribbean, Pacific Islands, Maghreb, Central Africa, Melanesia, Arctic, Balkans, Amazonia, Siberia, Micronesia. Do NOT default to USA/Japan/UK/Korea/generic Western names. Every human character should have a name that tells a story of migration and mixing.
+
+CRITICAL — SYNTHETIC NAMING RULE: Robots, androids, synthetic persons, AIs, and non-human entities DO NOT get Ubiquitous Diaspora human names. Synthetics use: model designations (Model 7, TSA-0077), nicknames given by the community (Uncle Noodle, Doc Rusty), callsigns (PANOPTICON, LATTICE), or single evocative names (Witness, Flicker). Never assign a multi-part human heritage name like "Kohana Sefanaia" or "Flux Strömqvist-Villalobos" to a robot or AI.
 
 GENEWARE: Cat ears, tails, color-changing hair, bioluminescent skin, patterned irises, retractable claws, enhanced scent glands — these are common cosmetic mods. Not everyone has them but they are unremarkable.
 

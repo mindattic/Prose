@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Archivist",
-      "Reluctant Whistleblower",
-      "Keeper of Inconvenient Truths",
-      "Community Storyteller",
-      "Corporate Insider (Retired)"
+      "archivist",
+      "reluctant whistleblower",
+      "keeper of inconvenient truths",
+      "community storyteller",
+      "corporate insider (retired)"
     ]
   },
   "behavioral": {
@@ -294,7 +294,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

@@ -34,7 +34,15 @@
     "night",
     "vehicle",
     "tier 1",
-    "tier 2"
+    "tier 2",
+    "ground",
+    "car",
+    "van",
+    "cargo",
+    "civilian",
+    "utility",
+    "electric",
+    "combustion"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -43,5 +51,7 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Independent Micro-Grid Power Cooperative",
     "Tessera Corponation"
-  ]
+  ],
+  "physical_description": "A nondescript civilian sedan or van, deliberately unremarkable—faded paint in grays, blacks, or muted blues, windows tinted dark enough to obscure occupants. The interior smells of stale cigarettes and rain-soaked upholstery; seats are worn cloth or cracked vinyl, dashboard stripped of branding, odometer disconnected. A hand-scrawled number on a grimy side window is the only advertisement; the engine runs rough but reliable, held together with habit and necessity.",
+  "visual_prompt": "worn civilian sedan, neo-noir gritty aesthetic, tinted windows, faded paint, rain-slicked street, neon glow reflected on wet asphalt, dark moody lighting, industrial decay background, detailed weathered interior visible through window, cigarette smoke haze, cyberpunk underworld transportation, 35mm film grain, high contrast shadows, product photography style"
 }

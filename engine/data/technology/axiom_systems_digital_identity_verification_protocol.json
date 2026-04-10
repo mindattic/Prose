@@ -1,0 +1,46 @@
+{
+  "id": "458cc5482bfab58f8a2ac9971899375e",
+  "name": "Axiom Systems Digital Identity Verification Protocol",
+  "brand_name": "Axiom",
+  "product_name": "TrueID DVP-4",
+  "type": "technology",
+  "aliases": [
+    "TrueID",
+    "DVP-4",
+    "Digital ID",
+    "Identity Protocol"
+  ],
+  "subcategory": "infrastructure",
+  "description": "The TrueID DVP-4 is the digital identity verification system integrated into every BCI that confirms a user's identity for all network transactions, physical access control, financial operations, and social interactions that require authentication. TrueID generates a cryptographic identity certificate derived from the user's unique BCI hardware signature, biometric data (neural pattern, retinal scan, fingerprint, voice print), and a knowledge factor (a passphrase or neural gesture that only the user can produce). All three factors must align for identity verification to succeed.\n\nThe protocol operates continuously and transparently — the user's BCI constantly broadcasts a low-power identity beacon that nearby systems can query for verification purposes. Walking into a building, making a purchase, or accessing a network resource triggers an automatic TrueID verification that completes in under 50 milliseconds, fast enough to be imperceptible. The user does not need to present identification, swipe a card, or enter a password — their BCI handles all authentication automatically. This convenience has made TrueID the universal identity layer in GLMZ: there is no transaction, no door, no system that does not verify identity through TrueID.\n\nThe implications of universal digital identity are profound. Every interaction is logged. Every movement through a door, every purchase, every network access creates a timestamped identity record in Axiom's verification database. Axiom's privacy policy states that verification records are retained for 7 years and accessible only to the user and to authorities with valid legal process — but the definition of 'authorities' in a corporate sovereignty context includes the governing corponation of the user's residential block, the corponation that owns any building the user enters, and any organization with a valid data-sharing agreement with Axiom. The practical result is near-total surveillance disguised as convenience.",
+  "tier_availability": "Tier 1",
+  "developers": [
+    "AXIOM SYSTEMS"
+  ],
+  "base_technologies": [
+    "Multi-factor cryptographic identity",
+    "Continuous identity broadcasting",
+    "Biometric-neural verification",
+    "Universal authentication integration"
+  ],
+  "enables": [
+    "Frictionless identity verification",
+    "Universal access control",
+    "Automated financial authentication",
+    "Continuous location tracking"
+  ],
+  "social_impact": "TrueID has eliminated anonymity in GLMZ for anyone with a BCI — which is nearly everyone. You cannot walk down a street, enter a building, or buy a cup of water without your identity being verified and logged. The system's proponents argue that universal identity verification has virtually eliminated identity fraud and significantly reduced violent crime (criminals can be instantly identified from any verification log). Its critics argue that it has created a world where privacy exists only for those who can afford the extremely specialized and illegal process of identity spoofing — a service that the darknet provides at prices that start at 50,000 Φ and go up from there.",
+  "story_hooks": [
+    "A person has been verified by TrueID in two locations simultaneously — the same identity certificate, confirmed by the same biometric data, in two different buildings 5 kilometers apart. Either TrueID has been compromised, or there are two people with the same identity.",
+    "A black-market identity forge has been producing TrueID certificates that pass all verification checks — not by cracking the cryptography, but by cloning the BCI hardware signatures of existing users. The victims don't know their identities have been duplicated until transactions they didn't make appear on their records."
+  ],
+  "tags": [
+    "infrastructure",
+    "technology",
+    "network",
+    "identity",
+    "verification",
+    "bci",
+    "axiom",
+    "tier 1"
+  ]
+}

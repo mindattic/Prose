@@ -1,0 +1,46 @@
+{
+  "id": "5714f7429e334b3445e24046e15dae34",
+  "name": "TESSERA Industries Mnemon Total Recall Memory System",
+  "brand_name": "TESSERA",
+  "product_name": "Mnemon TRM-5",
+  "type": "technology",
+  "aliases": [
+    "Mnemon",
+    "TRM-5",
+    "Total Recall",
+    "Memory Box"
+  ],
+  "subcategory": "neural_interface",
+  "description": "The Mnemon TRM-5 is a neural recording system that captures, stores, and enables playback of complete human experiential memory -- not just visual and auditory data, but the full sensory spectrum including proprioception, emotional state, and cognitive context. A memory recorded by the Mnemon is not a video; it is a complete experiential snapshot that, when played back through a compatible BCI, allows the viewer to experience the original event exactly as the recorder experienced it -- seeing through their eyes, feeling their emotions, thinking their thoughts. The system records continuously, storing approximately 90 days of experiential data on an implanted solid-state archive before older memories are overwritten unless manually preserved.\n\nTESSERA markets the Mnemon as a professional tool -- investigators use it to create legally admissible experiential evidence, medical professionals record procedures for training, and corporate executives record meetings to ensure perfect recall. The official use cases are mundane. The actual use cases have created an entirely new economy. Memory trading -- the sale and distribution of recorded experiences -- has become one of GLMZ's fastest-growing gray markets. A recorded experience of a Tier 5 luxury vacation sells for thousands. A combat memory from an Arcturus operator provides an adrenaline experience no simulation can match. More intimately, recorded memories of deceased loved ones have become the most emotionally valuable commodity in the city -- the ability to experience a dead person's last birthday, their last conversation, their last moment of joy, exactly as they experienced it.\n\nThe Mnemon's darker applications involve memory manipulation. While the official system records without alteration, modified firmware can edit recorded memories before playback -- removing details, adding false elements, or blending multiple memories into fabricated experiences that feel completely authentic. This capability has made memory-based evidence legally controversial and personally devastating, as individuals can no longer trust their own recorded experiences. TESSERA's official position is that memory tampering is a criminal misuse of their technology. TESSERA's classified position, according to leaked internal documents, is that memory editing capability is a feature, not a bug.",
+  "tier_availability": "Tier 3+ (recording); Tier 2+ (playback-only consumer devices)",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Full-spectrum neural state recording",
+    "Experiential data compression and storage",
+    "BCI-mediated memory playback protocols"
+  ],
+  "enables": [
+    "Complete experiential memory capture and playback",
+    "Legally admissible experiential evidence",
+    "Memory trading economy",
+    "Preservation of deceased persons' experiences",
+    "Memory editing and fabrication"
+  ],
+  "social_impact": "The Mnemon has destabilized the concept of personal memory as private and reliable. Recorded memories can be shared, sold, stolen, edited, and fabricated with equal ease. The memory trading economy has created new forms of intimacy (sharing experiences directly) and new forms of violation (memory theft, involuntary recording, experience trafficking). The philosophical implications are staggering -- if your memories can be perfectly recorded and played back by someone else, what makes your experience uniquely yours?",
+  "story_hooks": [
+    "A murder victim's Mnemon implant contains a recording of their death -- but when the recording is played back, the victim's emotional state is calm and accepting, inconsistent with violent death. Either the memory has been edited or the victim knew they were going to die and chose not to resist.",
+    "A black-market memory dealer has obtained a Mnemon recording from inside a corponation board meeting where a decision was made that would cause public outrage. The recording is experiential -- anyone who plays it back will know not just what was said but what the participants felt while saying it. The emotional context is more damning than the words."
+  ],
+  "tags": [
+    "technology",
+    "neural",
+    "memory",
+    "recording",
+    "tessera",
+    "bci",
+    "experience",
+    "surveillance"
+  ]
+}

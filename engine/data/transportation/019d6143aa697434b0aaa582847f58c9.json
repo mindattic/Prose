@@ -31,11 +31,17 @@
     "vehicle",
     "desperate",
     "circuit",
-    "tier 1"
+    "tier 1",
+    "ground",
+    "electric",
+    "manual",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Slagworks Industrial",
     "Tsveta Nwosu-Karlsdóttir"
-  ]
+  ],
+  "physical_description": "A patchwork chassis of welded steel frames, mismatched fenders, and cannibalized engine blocks—no two Junkers look alike. Rust blooms across primer-gray panels; vinyl seats are duct-taped and split; the windshield is often cracked or replaced with salvaged acrylic. Smoke leaks from seams and exhaust ports; the frame rattles with every pothole, held together by hope, wire, and spot welds that glow cherry-red in the rain.",
+  "visual_prompt": "gritty neo-noir junkyard car, welded steel frame, mismatched fenders, rusted metal body, duct tape interior, smoking exhaust, rain-slicked, neon reflection, industrial decay, worn cyberpunk, detailed product shot, dark wet background, harsh shadows, practical worn aesthetic"
 }

@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Community Elder",
-      "Climate Refugee",
-      "Undocumented",
-      "ELF Devotee",
-      "Forty-Year Survivor"
+      "community elder",
+      "climate refugee",
+      "undocumented",
+      "elf devotee",
+      "forty-year survivor"
     ]
   },
   "behavioral": {
@@ -275,7 +275,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

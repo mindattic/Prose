@@ -1,0 +1,47 @@
+{
+  "id": "a17ee79d652aef9d9d4f169ffd372b27",
+  "name": "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+  "type": "weapon",
+  "aliases": [
+    "Thunderclap",
+    "KPA-20E",
+    "The Budget Rail"
+  ],
+  "category": "assault_rifle",
+  "description": "Kang-Petrov's first electromagnetic accelerator rifle brings railgun technology to the mass market. The KPA-20E Thunderclap uses a single-stage magnetic acceleration system to fire 3mm steel-core projectiles at supersonic velocity. It lacks the power and range of Arcturus' MAR-8X, but at Φ5,500 it costs less than a quarter of the military platform and requires no BCI integration to operate.\n\nThe Thunderclap's capacitor system is integrated into the rifle's stock, providing 40 shots per charge. Recharging takes 120 seconds from a standard power outlet. The weapon has no moving bolt or gas system — projectiles are loaded from a gravity-fed hopper atop the receiver and accelerated through the barrel by electromagnetic coils. This mechanical simplicity means there are no extraction or feeding failures, though the hopper is vulnerable to contamination if left uncovered.\n\nCritics from the premium arms manufacturers dismiss the Thunderclap as a toy — its 3mm projectiles lack the penetration of larger tungsten penetrators, and the single-stage acceleration limits velocity. But for operators who want electromagnetic capability without corporate entanglement, the KPA-20E democratizes access to technology that was previously exclusive to military budgets.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Single-stage electromagnetic acceleration",
+    "Gravity-fed hopper magazine",
+    "Integrated capacitor stock"
+  ],
+  "specifications": "caliber: 3mm steel-core projectile\neffective_range: 400m\nrate_of_fire: 200 rpm (capacitor-limited)\nmagazine_capacity: 40 projectiles per charge\nweight: 3.8 kg",
+  "tactical_use": "The KPA-20E provides electromagnetic capability at a fraction of military cost. While it cannot match the MAR-8X's penetration or range, the Thunderclap's steel-core projectiles defeat Level II body armor and most personal barriers. The lack of chemical propellant means no muzzle flash and minimal sound signature — the electromagnetic hum and supersonic crack are the only signatures. Useful for operators who need the advantages of EM acceleration without the expense.",
+  "cultural_context": "The Thunderclap represents Kang-Petrov's mission to democratize weapons technology. Corporate arms manufacturers have lobbied for restrictions on civilian electromagnetic weapons, arguing that the technology is inherently military-grade. Kang-Petrov's legal team has fought every restriction, positioning the KPA-20E as a test case for whether corponations can monopolize entire categories of arms technology.",
+  "known_users": [
+    "Independent operators",
+    "Tech-forward militia groups",
+    "Tier 2-3 security contractors"
+  ],
+  "story_hooks": [
+    "Arcturus Defense Solutions is funding a legal campaign to classify all electromagnetic weapons as military-exclusive technology — if they succeed, every KPA-20E owner becomes a felon overnight.",
+    "A hacker collective has published modifications that double the Thunderclap's acceleration power. The mod works, but the capacitor stock has a 5% chance of catastrophic failure per shot."
+  ],
+  "ammunition_type": [
+    "3mm steel-core",
+    "3mm tungsten-tipped"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "electromagnetic",
+    "railgun",
+    "affordable",
+    "Kang-Petrov",
+    "tier 2"
+  ],
+  "physical_description": "The KPA-20E is a brutalist slab of matte-black composite and brushed steel, all sharp angles and no grace. Cooling fins ridge the barrel assembly like industrial ribbing, and the oversized capacitor stock sits heavy and bulbous against the receiver, its surface etched with charging indicators that glow faint amber. A gravity-fed hopper crowns the top rail, its transparent polymer clouded from dust and handling.",
+  "visual_prompt": "matte black and brushed steel electromagnetic rifle, angular brutalist design, ribbed cooling fins on barrel, glowing amber capacitor indicators, gravity hopper, product photography, gritty neo-noir, industrial decay aesthetic, studio lighting, dark background, worn military hardware, detailed textures, cyberpunk weapon"
+}

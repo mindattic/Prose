@@ -1,0 +1,47 @@
+{
+  "id": "c912b6349d3d9dfafde6fefe19c1d6dd",
+  "name": "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
+  "type": "weapon",
+  "aliases": [
+    "Arbiter",
+    "VS-9E",
+    "The Elite"
+  ],
+  "category": "pistol",
+  "description": "The Volkov-Saito VS-9 Elite is a competition-grade semi-automatic pistol chambered in 9x19mm, featuring a five-inch match barrel, adjustable rear sight, and an ambidextrous safety. The frame is machined aluminum with aggressive stippling, and the slide is lightened with precision-cut windows that reduce reciprocating mass for faster cycling.\n\nThe Arbiter exists in the narrow space between duty weapon and competition gun. Volkov-Saito designed it for the licensed enforcement market where accuracy at distance matters more than concealability — corponation investigators, warrant service teams, and the rare licensed bounty agent who can afford to choose their equipment. The five-inch barrel extracts maximum velocity from 9mm ammunition, and the tuned trigger breaks at exactly 1.4kg with zero overtravel.\n\nIn competitive shooting circuits — which still exist in the Mids as a sanctioned recreational activity — the Arbiter dominates the production pistol division. Its accuracy at twenty-five meters is surgical, and the light slide cycles fast enough for rapid target transitions. The weapon's competition pedigree translates directly to real-world performance, which is how Volkov-Saito justifies the price.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — enhanced registration required",
+  "base_technologies": [
+    "Match-grade barrel",
+    "Lightened slide",
+    "Precision trigger",
+    "Adjustable sights"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 60 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 17 rounds\nweight: 0.88 kg",
+  "tactical_use": "A precision pistol optimized for accuracy and speed. Excels at aimed fire at distances where standard duty pistols lose effectiveness. The competition-tuned trigger rewards disciplined shooters. Best suited for situations where precise shot placement is more important than volume of fire.",
+  "cultural_context": "The Arbiter is the weapon of quiet professionals who measure their worth in shot groups rather than firefights survived. In Mid recreational shooting clubs, owning one is a marker of serious commitment to the discipline. Among working professionals, carrying an Arbiter says you value precision over intimidation.",
+  "known_users": [
+    "Corponation investigators",
+    "Competitive shooters",
+    "Licensed bounty agents",
+    "Warrant service teams"
+  ],
+  "story_hooks": [
+    "A competitive shooter is found dead with an Arbiter that has been modified to fire in three-round bursts — a modification that requires machine-shop precision and intimate knowledge of the weapon's internals.",
+    "Volkov-Saito is sponsoring a shooting competition with a Φ250,000 prize — and three of the registered competitors are wanted fugitives using false identities."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "precision",
+    "competition",
+    "accurate",
+    "professional"
+  ],
+  "physical_description": "The VS-9 Elite is a lean, purposeful instrument of brushed steel and machined aluminum, its slide scarred by precision cuts that expose the internal geometry beneath. The five-inch barrel sits proud and true, while aggressive grip stippling catches the light like sandpaper under neon. Wear marks trace the ejection port and safety lever—honest marks from hands that know their trade.",
+  "visual_prompt": "Volkov-Saito VS-9 Elite semi-automatic pistol, competition-grade 9mm, brushed steel slide with precision-cut lightening windows, aluminum frame with aggressive stippling, five-inch match barrel, ambidextrous safety, detailed product photography, dark rain-slicked background, neon reflection, gritty neo-noir aesthetic, worn tactical gear, high contrast lighting, professional gunsmith quality"
+}

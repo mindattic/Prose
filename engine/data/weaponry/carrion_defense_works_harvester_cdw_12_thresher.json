@@ -1,0 +1,45 @@
+{
+  "id": "a16b24622013f673010cc12f5945160d",
+  "name": "Carrion Defense Works Harvester CDW-12 'Thresher'",
+  "type": "weapon",
+  "aliases": [
+    "Thresher",
+    "CDW-12",
+    "Harvester",
+    "Meat Grinder"
+  ],
+  "category": "support",
+  "description": "A man-portable flechette support weapon that fires dense clouds of 2mm steel flechettes at a cyclic rate sufficient to saturate a 10-meter wide corridor with lethal projectiles. The Harvester uses a multi-stage electromagnetic accelerator fed from a backpack-mounted flechette hopper containing 8,000 rounds.\n\nCarrion Defense Works designed the Thresher for corridor clearing operations — the close-quarters nightmare scenarios inside GLMZ's dense urban superstructures where conventional support weapons are too slow to track fast-moving threats in tight spaces. The CDW-12's flechette cloud does not require precision aiming; the operator simply points the weapon in the direction of the threat and lets the statistical spread ensure hits.\n\nThe Thresher's lethality comes from volume rather than individual round energy. A single flechette might not penetrate heavy armor, but a cloud of 200 flechettes fired in a half-second burst will find every gap, seam, and joint in any protective system. Medical teams recovering bodies from Thresher engagements describe the results as 'difficult to identify.'",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted — antipersonnel area weapons authorization",
+  "base_technologies": [
+    "Electromagnetic flechette cloud projection",
+    "High-capacity backpack feed system",
+    "Statistical saturation targeting"
+  ],
+  "specifications": "caliber: 2mm steel flechette\neffective_range: 10-100 meters\nrate_of_fire: 4,000 flechettes per minute\ncapacity: 8,000-round backpack hopper\nweight: 6.8 kg weapon, 12 kg loaded hopper\npower_source: Backpack capacitor, 2,000 flechettes per charge cycle",
+  "tactical_use": "The Thresher is deployed in close-quarters environments where precision is less important than total coverage. Corridor clearing, room breaching, and tunnel operations are its primary applications. The weapon's flechette spread pattern can be adjusted from a tight 5-degree cone to a wide 30-degree fan depending on the engagement environment. Operators describe using the CDW-12 as 'painting' a space with steel — every surface within the engagement zone receives multiple impacts.",
+  "cultural_context": "Carrion Defense Works has earned a reputation for weapons that prioritize lethality over precision, and the Harvester is their most extreme expression of this philosophy. Humanitarian organizations have repeatedly called for a ban on flechette cloud weapons, citing the indiscriminate nature of area-saturation fire. Carrion's legal defense argues that the weapon reduces collateral damage by confining lethality to a defined engagement zone — a claim that requires a very specific definition of 'collateral.'",
+  "known_users": [
+    "Carrion Defense Works assault teams",
+    "Corporate breach and clearing units"
+  ],
+  "story_hooks": [
+    "A Thresher was used in a residential corridor dispute, saturating a section of Tier 2 housing with flechettes. Fourteen people died, including six who were in adjacent rooms when the flechettes penetrated thin interior walls. The operator claims they were told the area was evacuated.",
+    "Carrion is developing a flechette variant that carries a micro-payload of incapacitating agent on each dart — turning the Thresher from a lethal weapon into a theoretically non-lethal area denial tool. Field tests suggest the dosage calculation needs work."
+  ],
+  "ammunition_type": [
+    "2mm steel flechette"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "flechette",
+    "area-denial",
+    "close-quarters",
+    "tier 4"
+  ],
+  "physical_description": "The CDW-12 Thresher is a brutal, drum-fed flechette cannon with a reinforced polymer chassis scored by heat stress and impact damage. Its barrel assembly is a hexagonal bundle of accelerator coils wrapped in burnt-copper heat shielding, fed by a chunky ammunition hopper that mounts across the operator's back like a mechanical parasite. The weapon's frame is matte gunmetal gray, stained with propellant residue and streaked with rust blooming beneath the paint.",
+  "visual_prompt": "CDW-12 Thresher flechette cannon, drum-fed support weapon, reinforced polymer and gunmetal chassis, hexagonal accelerator coil barrel, burnt-copper heat shielding, ammunition hopper, industrial military hardware, gritty neo-noir aesthetic, worn metal surfaces, product photography, dark rain-slicked background, detailed mechanical components, near-future dystopian, cyberpunk weapon design, streetsamurai"
+}

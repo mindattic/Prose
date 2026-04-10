@@ -35,7 +35,11 @@
     "train",
     "circuit",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "civilian",
+    "rail",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -45,5 +49,7 @@
     "TESSERA PG-2 'Signature'",
     "Vesna Čolić-Strand",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": "The CL-9 is a corroded steel tube on wheels, its once-white exterior now streaked with rust-orange and industrial grime, graffiti layered beneath decades of failed cleaning attempts. Interior walls are scarred aluminum, their synthetic panels peeling to expose wiring and structural ribs; overhead rails are pitted and discolored, casting hard shadows across rows of metal seats bolted to the floor. Windows are reinforced polycarbonate, clouded and scratched, with emergency route maps barely legible beneath condensation and fingerprints.",
+  "visual_prompt": "gritty neo-noir elevated train car interior, worn steel and aluminum, rust streaks and graffiti, flickering neon signage, harsh shadows, industrial decay, cramped metal seating, condensation-covered windows, dystopian public transit, detailed weathering and corrosion, dark moody lighting, 1980s brutalist infrastructure, cyberpunk grime aesthetic, product photography style, high contrast"
 }

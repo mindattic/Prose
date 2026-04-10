@@ -1,0 +1,47 @@
+{
+  "id": "b7dab3fa4e5eba4b125f4350a3d93f3b",
+  "name": "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
+  "type": "weapon",
+  "aliases": [
+    "Bone Key",
+    "Ablonite Punch",
+    "The Opener",
+    "Ceramic Fist"
+  ],
+  "category": "melee",
+  "description": "A T-handled push dagger with a short, thick blade of Ablonite-KR reactive ceramic designed for punching through body armor at contact range. The Bone Key is gripped in the fist with the blade protruding between the index and middle fingers, and its design philosophy is brutally simple: get close enough to touch your target, then drive the blade straight through whatever they are wearing.\n\nThe Ablonite-KR blade is only 8 centimeters long — far shorter than conventional fighting knives — but its ceramic hardness exceeds the rating of any personal armor currently manufactured. The push-dagger configuration channels the wielder's entire punching force directly behind the blade tip, concentrating impact energy into a contact area smaller than a fingertip. Against standard ballistic vests, the Bone Key punches clean through. Against hardened plate, it cracks the material and penetrates on the second strike.\n\nThe Forge-Smith Collective produces Bone Keys as a direct response to the increasing prevalence of body armor in GLMZ's lower tiers. As ballistic protection has trickled down from corporate security to street-level combatants, the old calculus of knife fighting has changed — a conventional blade bouncing off a Φ200 armor vest is a death sentence for the knife wielder. The Bone Key restores the equation by making armor irrelevant at grappling range.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 1-2 (artisan availability)",
+  "legality": "Unlicensed — classified as armor-defeating weapon where detected",
+  "base_technologies": [
+    "Ablonite-KR reactive ceramic blade",
+    "Push-dagger force concentration",
+    "Anti-armor contact penetration"
+  ],
+  "specifications": "blade_length: 8 cm\ntotal_length: 14 cm (grip to tip)\nweight: 95 g\nblade_material: Ablonite-KR reactive ceramic\npenetration_rating: Exceeds Level IV ballistic armor\ngrip_type: T-handle push configuration\nconcealment: Palm-sized — easily hidden in a closed fist",
+  "tactical_use": "The Bone Key is a grappling-range weapon for defeating armored opponents. Users close to contact distance — through crowd movement, social approach, or ambush — and deliver punching strikes directly to center mass. The ceramic blade penetrates armor that would stop conventional knives and most handgun rounds. The weapon's short range and single-purpose design mean it is carried as a backup or assassination tool rather than a primary fighting weapon. Experienced users target the gaps between armor plates — joints, underarms, throat — for maximum effect.",
+  "cultural_context": "The Bone Key represents the lower tiers' answer to the armor proliferation problem: if armor makes knives obsolete, make a knife that ignores armor. The weapon has become culturally significant as a symbol of refusal to accept disadvantage — a ceramic fist that punches through the protection money can buy. In lower-tier slang, 'having a key' means having an answer to a seemingly impossible problem. The Forge-Smith Collective sells Bone Keys at cost to community defense groups, viewing them as equalizers rather than profit centers.",
+  "known_users": [
+    "Lower-tier community defense groups",
+    "Close-quarters assassination specialists",
+    "Street fighters facing armored opponents"
+  ],
+  "story_hooks": [
+    "A Bone Key was found driven through a Tier 4 executive's ballistic vest — the blade was still embedded in the ceramic armor plate, fused by Ablonite-KR's reactive properties. The executive survived, but the attacker got close enough to land the blow despite a four-person security detail.",
+    "The Forge-Smith Collective has received a bulk order for 500 Bone Keys from an anonymous buyer. The Collective is debating whether to fill the order — that many armor-defeating weapons in one buyer's hands represents a military capability, not self-defense."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "dagger",
+    "push-dagger",
+    "Ablonite-KR",
+    "ceramic",
+    "armor-defeating",
+    "tier 1",
+    "artisan"
+  ],
+  "physical_description": "The Bone Key is a compact T-handled push dagger with a blade of Ablonite-KR ceramic—a dull, almost bone-white material with hairline stress fractures visible under close inspection. The handle is wrapped in worn synthetic grip material stained with old oil and use, designed to sit flush in a closed fist with the 8-centimeter blade extending between the index and middle fingers. The blade edge catches light with an unnatural hardness, its tip worn to a cruel point from contact with materials it was designed to breach.",
+  "visual_prompt": "push dagger, bone-white ceramic blade, worn synthetic T-handle grip, industrial gritty neo-noir, detailed product photography, contact weapon, oil-stained tactical tool, dark rain-slicked background, close-up macro shot, worn cyberpunk weaponry, extreme shallow depth of field, harsh studio lighting, dystopian near-future"
+}

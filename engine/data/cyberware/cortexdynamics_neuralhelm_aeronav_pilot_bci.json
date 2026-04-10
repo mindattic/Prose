@@ -1,0 +1,62 @@
+{
+  "id": "c59e83a1047fb2d6e3907c4a1b82df60",
+  "name": "CortexDynamics NeuralHelm AeroNav Pilot BCI",
+  "brand_name": "CortexDynamics",
+  "product_name": "NeuralHelm AeroNav Pilot BCI",
+  "type": "cyberware",
+  "aliases": [
+    "the Helm",
+    "SkyBrain",
+    "AeroLink",
+    "CortexWings",
+    "the Yoke"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The NeuralHelm AeroNav is CortexDynamics' professional pilot-rated neural interface, certified for atmospheric, sub-orbital, and aquatic vehicle neural link operations across GLMZ's densely regulated airspace and waterway corridors. At its core, the NeuralHelm functions as a low-latency bidirectional bridge between the pilot's motor and spatial cognition centers and a vehicle's fly-by-wire or drive-by-wire control architecture, translating navigational intent into control surface commands with a measured neural-to-output latency of 8 milliseconds — roughly one-sixth the reaction time of conventional manual control. The implant's spatial processing enhancement suite expands the user's innate three-dimensional reasoning capacity by overlaying a persistent volumetric situational awareness model into working memory: traffic corridors, collision envelopes, weather shear layers, and ATC instruction queues are experienced as felt spatial knowledge rather than processed visual data, freeing visual attention for threat assessment and passenger management. The AeroNav variant includes GLMZ Aerial Transit Authority-compliant transponder authentication, allowing the implant to serve as the pilot's primary licensing credential and flight log simultaneously, with tamper-evident neural-signed records of every flight hour automatically submitted to regulatory systems.\n\nThe NeuralHelm is the implant of choice for commercial transport pilots, corporate shuttle operators, emergency medevac crews, and the growing class of Tier 3-4 independent freight contractors who run the cargo arteries between GLMZ's stacked districts and the outlying industrial zones. Certified NeuralHelm pilots command premium rates over conventional licensed operators, and the implant has effectively become the minimum expected standard for anything above basic ground-vehicle operation in competitive transport markets. Among the city's underground racing circuits — particularly the illegal aerial drag runs through the Shelf's industrial superstructure — grey-market NeuralHelms with regulatory transponders spoofed or removed are the preferred edge, turning the professional tool into a precision instrument of spectacular illegal velocity.",
+  "manufacturer": "CORTEXDYNAMICS",
+  "tier_availability": "Tier 3-4",
+  "legality": "Licensed",
+  "installation_requirements": "CortexDynamics certified installation center; GLMZ Aerial Transit Authority pilot licensing pre-requisite for full activation; 4-week vehicle-type calibration program per certified vehicle class; vehicle manufacturer compatibility verification required",
+  "rejection_risk": "Moderate — the spatial processing enhancement requires significant reorganization of parietal lobe neural pathways; approximately 8% of candidates experience integration complications requiring extended calibration or partial feature rollback; full rejection rare but disorienting",
+  "maintenance": "Bimonthly CortexDynamics remote calibration sync; vehicle-class recertification annually or upon switching primary vehicle type; regulatory transponder firmware updated quarterly by GLMZ ATA; physical inspection recommended after high-G events or cranial trauma",
+  "specifications": "{\"neural_latency\": \"8ms neural-to-control-surface output\", \"vehicle_classes\": \"atmospheric fixed-wing, rotary, aquatic surface, aquatic submersible, ground heavy-freight (cert sold separately per class)\", \"spatial_overlay\": \"volumetric situational awareness model, 4km radius full-resolution, 40km radius threat-envelope\", \"regulatory_integration\": \"GLMZ ATA-compliant transponder auth and tamper-evident flight log\", \"simultaneous_links\": \"up to 3 vehicle systems concurrent (navigation, weapons-lock disabled on civilian cert)\", \"weather_integration\": \"real-time atmospheric data ingestion via city mesh, felt as proprioceptive pressure mapping\", \"g-force_compensation\": \"vestibular override up to 9G sustained before mandatory safety interrupt\", \"power_source\": \"bioelectric primary, vehicle-tap secondary during active link\", \"form_factor\": \"bilateral temporal implant nodes, 14mm x 8mm each\"}",
+  "side_effects": [
+    "Spatial disorientation on foot: users frequently experience mild vertigo and depth-perception distortion when navigating on foot in enclosed spaces, as the volumetric awareness model struggles to contextualize non-vehicle environments at human walking scale",
+    "Vehicle phantom limb syndrome: pilots who log extensive hours report a persistent sense of 'missing' the vehicle's sensory envelope when not linked — a felt absence of the 4km spatial bubble that some describe as a form of claustrophobia in ordinary rooms",
+    "Velocity fixation: the neural latency optimization pathways can cause users to perceive unaugmented activities — walking, cycling, conversation — as frustratingly slow, contributing to risk-seeking behavior and a well-documented preference for high-speed activities off-duty",
+    "Regulatory compliance intrusion: the ATA transponder integration occasionally generates administrative anxiety responses — users report a persistent low-grade awareness of airspace regulations even while dreaming or in social situations"
+  ],
+  "cultural_context": "In GLMZ's transit culture, a NeuralHelm scar (bilateral temple ridges, nicknamed 'wingmarks') is a mark of professional credibility in transport circles and genuine cachet in the underground racing scene. Licensed NeuralHelm pilots occupy a respected middle-class niche: skilled enough to be irreplaceable, augmented enough to be competitive, but still human enough that Iowan Behemoth automation hasn't rendered them obsolete — yet. The grey-market transponder-spoofed variants, known as 'ghost helms,' are a persistent regulatory headache for the ATA and a status symbol in Shelf-level racing culture, where the ability to fly or drive at neural-link speeds through illegal corridors without a regulatory trail is the highest expression of personal freedom many Shelf residents can conceive of.",
+  "known_users": [
+    "commercial atmospheric transport pilots",
+    "corporate shuttle and executive transport operators",
+    "emergency medevac and trauma response crews",
+    "Tier 3-4 independent cargo freight contractors",
+    "underground aerial and ground racing circuit competitors using grey-market units",
+    "GLMZ Harbor Authority aquatic corridor pilots"
+  ],
+  "story_hooks": [
+    "A medevac pilot with a NeuralHelm has gone missing mid-flight — their vehicle was found landed on autopilot with no pilot aboard and the neural link log showing a clean disconnect, which should be physically impossible while airborne at speed. The ATA wants it ruled equipment failure; the pilot's family insists they were extracted mid-flight by someone who knew how to spoof a clean disconnect.",
+    "The crew needs to move cargo through a restricted GLMZ airspace corridor that requires a certified NeuralHelm pilot with active ATA credentials. Their usual contact's license has just been suspended following a politically motivated regulatory complaint. They need to either find a willing certified pilot fast, or locate someone who can spoof the NeuralHelm transponder authentication well enough to fool ATA checkpoint sensors.",
+    "CortexDynamics has quietly pushed a NeuralHelm firmware update that subtly degrades performance on non-CortexDynamics-certified vehicle hardware — a move that benefits their vehicle manufacturing partners but is causing dangerous micro-latency spikes that pilots haven't consciously noticed yet. A cargo pilot who survived a near-fatal incident has pieced it together and needs help getting the evidence to a regulator who hasn't been bought."
+  ],
+  "street_price": "Φ14,500",
+  "licensed_price": "Φ27,000 (vehicle-class certification add-ons Φ3,000–Φ8,000 each; employer transport subsidies common)",
+  "tags": [
+    "cyberware",
+    "bci",
+    "pilot",
+    "navigation",
+    "vehicle-link",
+    "cortexdynamics",
+    "professional-grade",
+    "tier3",
+    "tier4",
+    "spatial-processing",
+    "aerial",
+    "aquatic",
+    "transport",
+    "professional"
+  ]
+}

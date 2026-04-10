@@ -1,0 +1,40 @@
+{
+  "id": "3fce9a9f255cf93d809955d6a3e49e10",
+  "type": "place",
+  "name": "Sakura Garden",
+  "aliases": [
+    "Sakura"
+  ],
+  "description": "A Japanese restaurant in Lakeview serving sushi, sashimi, and izakaya small plates in a space decorated with actual cherry blossom branches — artificial, but convincing enough to create an atmosphere that transports. The sashimi uses colony-caught lake fish and vat-grown tuna. An eight-piece sashimi plate is Φ30. Izakaya plates — grilled vat-chicken skewers, edamame, gyoza — are Φ10-16 each. Chef Yui Osei-Tanaka runs both the sushi bar and the kitchen, which would be impossible for most people but appears effortless for her.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Lakeview diners",
+    "Sushi and izakaya enthusiasts",
+    "Date night couples"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.943,
+    "lng": -87.653
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_3"
+  ],
+  "related_entities": [
+    "Yui Osei-Tanaka"
+  ]
+}

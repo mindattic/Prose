@@ -1,0 +1,43 @@
+{
+  "id": "c84c371c2e1e208b41b7fdde58caf765",
+  "name": "NullPoint Technologies NeuroGuard NG-1 'Static'",
+  "type": "weapon",
+  "aliases": [
+    "Static",
+    "NG-1",
+    "Brain Shield",
+    "Null Field"
+  ],
+  "category": "self_defense",
+  "description": "A pendant-sized device that generates a localized electromagnetic interference field designed to disrupt BCI communications within a two-meter radius. The NG-1 does not damage augmentations — it creates a zone of signal noise that degrades the wireless protocols used by neural interfaces to communicate with external systems. For attackers relying on BCI-coordinated combat augmentations, reflex-enhancement systems, or wirelessly linked targeting assists, the NG-1's interference field introduces lag, dropped connections, and phantom inputs that severely degrade their performance.\n\nNullPoint Technologies is a small GLMZ firm founded by former neurosecurity researchers who recognized that the proliferation of combat-grade BCI augmentations among street-level criminals had created a defensive gap for unaugmented citizens. The NG-1 is their flagship product: affordable BCI disruption for people who cannot afford BCI augmentations of their own. The device is worn on a cord around the neck and activated by pressing a button on its face.\n\nThe NG-1's interference field is indiscriminate — it affects all BCI communications within range, including the user's own augmentations if they have them, and the augmentations of innocent bystanders. This has generated controversy, as the device can disrupt medical-grade neural interfaces (pain management, seizure prevention, mood regulation) in addition to combat augmentations. NullPoint's legal defense — that the device is no different from a radio jammer in principle — has not satisfied augmented rights advocates. The NG-1 retails for Φ190.",
+  "manufacturer": "NULLPOINT TECHNOLOGIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Localized BCI signal interference generation",
+    "Wireless neural protocol disruption",
+    "Miniaturized electromagnetic noise field"
+  ],
+  "specifications": "interference radius: 2 meters\naffected protocols: standard BCI wireless communications\neffect on augmentations: signal lag, dropped connections, phantom inputs\nactivation: button press on device face\nbattery life: 45 minutes continuous\ncharging: micro-cell, 1 hour recharge\nweight: 28 g\nworn: neck pendant on cord\ncost: Φ190\nlimitations: does not affect hardwired augmentations",
+  "tactical_use": "Activate when threatened by an augmented attacker. The interference field degrades their BCI-dependent systems — reflex enhancement, targeting assists, sensory augmentation, and communication links will all experience disruption. The effect is not incapacitation but degradation: an augmented attacker becomes significantly less effective but is not disabled. Combine with physical deterrents (sprays, stun devices) for maximum effect. Be aware that your own augmentations and those of nearby civilians will also be affected.",
+  "cultural_context": "The NG-1 sits at the intersection of personal defense and augmented rights, a position that generates constant debate. Unaugmented citizens view it as an essential equalizer in a world where augmented predators have overwhelming advantages. Augmented communities view it as a device that treats their bodies as threats to be disrupted. NullPoint navigates this tension by marketing exclusively to the unaugmented demographic and avoiding any messaging that frames augmented individuals as inherently dangerous — though the product's existence makes that implication unavoidable.",
+  "known_users": [],
+  "story_hooks": [
+    "A hospital emergency room near a Tier 2 transit hub has seen a spike in augmentation-related medical emergencies — patients with seizure-prevention BCIs are having episodes triggered by NG-1 devices activated by commuters passing through the area.",
+    "NullPoint Technologies has been approached by a corporate faction wanting to license the NG-1's technology for a building-scale system — the implications of BCI disruption as architectural security are profound and troubling."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "bci_defense",
+    "electromagnetic",
+    "neural_disruption",
+    "pendant",
+    "tier_2",
+    "anti_augmentation"
+  ],
+  "physical_description": "A brushed titanium pendant roughly the size of a postage stamp, its surface etched with faint circuit traces that catch the light like old scars. A thin cord of frayed synthetic fiber runs through a reinforced eyelet, and the device's edges show micro-fractures from repeated impact. A single amber LED sits recessed beneath a scratch-resistant polymer window, dormant until activated.",
+  "visual_prompt": "worn titanium pendant with circuit etchings, amber LED window, frayed synthetic fiber cord, gritty product photography, cyberpunk noir aesthetic, detailed close-up, dark rain-slicked background, industrial decay, neon reflection, moody lighting, realistic wear marks and micro-fractures, near-future tech"
+}

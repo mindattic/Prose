@@ -1,0 +1,38 @@
+{
+  "name": "Cortivane",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Goldthread",
+    "Weave"
+  ],
+  "category": "augment_interactive",
+  "subcategory": "chrome_enhancer",
+  "manufacturer": "Nightshade Pharmatech (licensed); also produced by Shelf labs",
+  "description": "A conductive neuroactive compound that temporarily improves the signal fidelity between the nervous system and electromechanical augments by depositing a short-lived bioelectric enhancement layer across nerve-chrome interfaces. Unlike brute-force overclocking compounds, Cortivane works with the body's existing electrical signaling — it makes the conversation between flesh and machine cleaner and faster rather than louder. The result is augment performance that feels effortless and precise rather than powerful and raw: fine motor tasks with chrome become extraordinary, response latency drops to near-zero, and complex augment systems (multi-joint limbs, integrated tool arrays) operate with fluid coordination.",
+  "method_of_use": "dermal_patch",
+  "effects": [
+    "Signal fidelity between nerve and chrome increased — precision tasks dramatically improved",
+    "Augment response latency reduced to near-zero",
+    "Multi-system augment coordination becomes fluid and automatic",
+    "Subtle strength and speed improvement (10-20%) as a side effect of efficiency gains",
+    "Users report augments feeling 'part of them' rather than tools — proprioception fully integrated"
+  ],
+  "side_effects": [
+    "Bioelectric enhancement layer degrades suddenly rather than gradually — performance cliff rather than fade",
+    "Nerve irritation at patch sites with frequent use",
+    "Users with substandard chrome experience hardware incompatibility — the cleaner signal exposes firmware errors that were previously masked by signal noise",
+    "Psychological dependency — baseline chrome performance feels broken afterward",
+    "Rare: bioelectric layer deposits in unintended nerve pathways, causing phantom sensations in non-augmented areas"
+  ],
+  "duration": "6-10 hours",
+  "addiction_risk": "moderate",
+  "tier_availability": "Tier 3-4",
+  "legality": "restricted",
+  "street_price": "Φ 250-400",
+  "cultural_context": "Cortivane occupies a unique niche — it's the augment drug that professionals use. Surgeons with chrome instruments, architects who work with haptic design rigs, musicians with augmented limbs, and high-end security contractors all have Cortivane somewhere in their kit. It doesn't feel like a drug — it feels like what augmentation was supposed to feel like before cost-cutting and hardware compromises got involved. Nightshade's licensed version is sold to Tier 3-4 clients at a premium; the Shelf labs produce a cruder version that works but has a shorter duration and more pronounced nerve irritation.",
+  "story_hooks": [
+    "A Tier 4 microsurgeon has been quietly using Cortivane for every procedure for two years — his outcomes are extraordinary and he's built his reputation on it, but his baseline chrome performance has degraded so severely without the drug that he can no longer operate safely unmedicated.",
+    "Nightshade is being investigated for selling their Cortivane formula to a military contractor who has been using it to push soldiers' chrome beyond what should be physiologically possible, and a whistleblower needs extraction before the evidence disappears.",
+    "A Shelf-born chrome artisan has reverse-engineered Cortivane and improved it — her version lasts twice as long with half the nerve irritation — and she's about to be bought out, shut down, or disappeared by Nightshade before she can distribute the formula."
+  ]
+}

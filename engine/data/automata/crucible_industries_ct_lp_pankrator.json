@@ -1,0 +1,53 @@
+{
+  "id": "eecb1067b4fae545dca87e6b64a99518",
+  "name": "Crucible Industries CT-LP 'Pankrator'",
+  "type": "automaton",
+  "classification": "Training",
+  "aliases": [
+    "Pankrator",
+    "The Olympian",
+    "Iron Wrestler"
+  ],
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "description": "The CT-LP Pankrator is Crucible Industries' competition-grade grappling automaton, designed specifically for wrestling, judo, and submission grappling training at the highest level. Where the Gauntlet is a generalist, the Pankrator is a specialist — its entire chassis is optimized for ground fighting, with a low center of gravity, exceptional hip mobility, and grip strength calibrated to match the strongest human athletes pound-for-pound. Its synthetic skin has a texture and friction coefficient that simulates a sweaty human body in a gi or rashguard, depending on the training mode.\n\nPankrator's grappling AI is considered the most sophisticated submission-fighting system ever developed. It has been trained on competition footage from every major grappling organization for the last thirty years, and its positional awareness — its understanding of leverage, base, and weight distribution — exceeds what any single human grappler can maintain. At high difficulty settings, rolling with a Pankrator is described by world-champion grapplers as 'humiliating' — the machine finds submissions from positions that shouldn't yield them and escapes positions that should be inescapable.\n\nThe machine's most valued feature for competitive grapplers is its ability to simulate specific opponents. Given competition footage of an upcoming opponent, Pankrator can replicate their game — their preferred positions, submissions, escapes, and tendencies — with uncanny accuracy. Championship-level competitors consider a Pankrator unit loaded with opponent data to be as essential as a strength coach. The competitive advantage is significant enough that some governing bodies have debated restricting Pankrator use during competition preparation, though no rules have been implemented.",
+  "tier_availability": "Tier 3",
+  "legality": "Licensed facility use; consumer sale restricted in some jurisdictions",
+  "autonomy_level": "Advanced adaptive — specialist grappling AI, opponent simulation capability",
+  "dimensions": "1.7m height, 0.9m width, low-center-of-gravity frame",
+  "weight": "160 kg (competition weight class configurable via ballast)",
+  "power_source": "Rechargeable battery, 8-hour continuous grappling",
+  "locomotion": "Bipedal with full ground mobility — can fight from every standard grappling position",
+  "armament": [
+    "Grappling-capable limbs (variable grip strength)",
+    "Submission holds calibrated to training or competition intensity",
+    "Sweep and takedown capability"
+  ],
+  "sensors": [
+    "Pressure mapping across entire body surface",
+    "Joint angle monitoring (sub-degree accuracy)",
+    "Opponent balance and base analysis",
+    "Submission depth tracking (knows exactly how deep a hold is)"
+  ],
+  "countermeasures": "Tap detection is hardware-level — any tap on the machine or the mat within reach triggers instant release. Verbal tap detection via microphone. Submission force limits enforced per weight class and training level. Override requires physical key held by supervising coach.",
+  "known_deployments": [
+    "Olympic wrestling training centers",
+    "Professional MMA camps (grappling-focused)",
+    "Jiu-Jitsu competition academies",
+    "Military combatives (ground fighting module)"
+  ],
+  "story_hooks": [
+    "A Pankrator loaded with a specific fighter's data has been stolen the week before a championship bout. The fighter's entire game plan is in that machine's memory, and it's now in the hands of their opponent's camp.",
+    "A grappling prodigy has been training exclusively with Pankrator units since childhood and has never rolled with a human. Their technique is flawless but their competition instincts are untested. Their first tournament is this week."
+  ],
+  "cultural_context": "In grappling circles, a Pankrator is simply called 'the mat partner that never taps.' Gyms that own one attract serious competitors like magnets. The machines have elevated the technical level of competitive grappling worldwide, compressing decades of evolution into years.",
+  "tags": [
+    "automaton",
+    "training",
+    "grappling",
+    "wrestling",
+    "jiu-jitsu",
+    "competition",
+    "crucible",
+    "specialist"
+  ]
+}

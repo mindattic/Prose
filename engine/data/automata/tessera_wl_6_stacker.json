@@ -1,0 +1,46 @@
+{
+  "name": "TESSERA WL-6 'Stacker'",
+  "type": "automaton",
+  "classification": "Industrial",
+  "aliases": [
+    "Stacker",
+    "Box Mover",
+    "The Arm"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The WL-6 is a warehouse logistics automaton — a rail-mounted platform that traverses the ceiling of warehouse facilities on an overhead gantry system, lifting, moving, and stacking cargo containers with a pair of heavy-duty articulated arms capable of handling loads up to 2,000 kilograms. The unit moves in three dimensions — along the length and width of the warehouse on its gantry rail, and vertically through a hydraulic lift that lowers it to floor level for pickup and raises it to maximum racking height for stacking.\n\nTESSERA's WL-6 has transformed warehouse operations in GLMZ from a labor-intensive industry into a machine-operated one. A single WL-6 unit replaces approximately forty human warehouse workers in throughput, operating continuously across three shifts without breaks, errors, or workers' compensation claims. A standard distribution center deploys twelve to twenty WL-6 units and employs fewer than ten human workers — technicians, supervisors, and the legally required safety officer.\n\nThe displacement is total and unapologetic. TESSERA's sales materials include a cost comparison chart showing the WL-6's annual operating cost (Φ8,000 in electricity and maintenance) versus the equivalent labor cost (Φ960,000 in wages and benefits for forty workers). The chart does not include what happens to the forty workers. That is not TESSERA's problem. That has never been TESSERA's problem.",
+  "tier_availability": "Tier 2-3",
+  "legality": "Commercial — industrial automation license",
+  "autonomy_level": "Fully autonomous — warehouse management AI integration",
+  "dimensions": "2.0m arm span, 1.5m gantry platform",
+  "weight": "800 kg",
+  "power_source": "Hardwired building power through gantry rail",
+  "locomotion": "Overhead gantry rail system, three-axis movement",
+  "armament": [],
+  "sensors": [
+    "Container identification (barcode/RFID)",
+    "Weight measurement",
+    "Spatial mapping for optimal stacking",
+    "Proximity detection for human safety zones"
+  ],
+  "countermeasures": "Rail-dependent — removing or damaging gantry sections immobilizes the unit. The arms are powerful but slow; they cannot react quickly to unexpected situations. Power disruption stops all units simultaneously.",
+  "known_deployments": [
+    "Distribution centers and warehouses across GLMZ's industrial districts"
+  ],
+  "story_hooks": [
+    "A WL-6 has been rearranging containers in a bonded warehouse at night — moving specific containers to the back where inventory checks rarely reach, replacing them with identically labeled containers from a shipment that arrived off-manifest. Something is being swapped, and the machine is doing the swapping.",
+    "A WL-6's proximity safety system failed and the unit dropped a 2,000 kg container onto the warehouse floor during a shift change. Three workers died. TESSERA's investigation concludes the safety system was deliberately disabled. The question is whether it was sabotage by a displaced worker or a cost-cutting measure by management."
+  ],
+  "cultural_context": "The WL-6 is the symbol of industrial displacement — the machine that took the warehouse jobs and never gave them back. Former warehouse workers in GLMZ refer to the units as 'replacements' with a bitterness that has not diminished over years. 'You've been Stacked' has entered the vocabulary as slang for being automated out of employment.",
+  "tags": [
+    "automaton",
+    "industrial",
+    "warehouse",
+    "logistics",
+    "tessera",
+    "gantry",
+    "tier 2",
+    "tier 3"
+  ],
+  "id": "4aeac7a4330e3be11d05bd022076217b"
+}

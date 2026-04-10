@@ -33,7 +33,12 @@
     "power",
     "underworld",
     "rain",
-    "vehicle"
+    "vehicle",
+    "walker",
+    "cargo",
+    "military",
+    "electric",
+    "ground"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -41,5 +46,7 @@
     "Bathysphere Networks",
     "The Warden",
     "Warden"
-  ]
+  ],
+  "physical_description": "The Arcturus Warden is a four-meter-tall hexapod frame of weathered titanium-composite plating, its segmented legs articulated with servo-driven joints that leave faint hydraulic fluid streaks down its flanks. Rain and industrial grime have worn its matte gunmetal finish to a dull grey-brown patina, with rust bloom creeping along seams where maintenance crews can't quite keep up. The central cargo pod is a reinforced cube of scarred steel, its hatches bearing impact dents and repair welds, while optical sensors and targeting mounts cluster at the head like the compound eyes of some predatory insect.",
+  "visual_prompt": "six-legged military exoskeleton carrier, insectoid frame, weathered titanium plating, gunmetal grey with rust bloom, articulated servo joints, reinforced cargo pod, rain-slicked industrial setting, gritty neo-noir product photography, detailed mechanical joints, dark moody lighting, cyberpunk military hardware, worn tactical vehicle, detailed grit and decay"
 }

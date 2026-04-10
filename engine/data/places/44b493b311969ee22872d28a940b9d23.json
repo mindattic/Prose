@@ -1,0 +1,69 @@
+{
+  "id": "44b493b311969ee22872d28a940b9d23",
+  "type": "place",
+  "name": "The Boilermaker",
+  "aliases": [
+    "Boiler",
+    "The Maker",
+    "BM"
+  ],
+  "description": "The Boilermaker is a fighting bar. This requires clarification, because many Shelf and Circuit establishments feature fights — accidental, intentional, or somewhere in between. The Boilermaker is different. It is a bar where fighting is a scheduled activity, like live music or trivia night, except the trivia is whether you can take a punch and the music is the sound of someone finding out. The main floor features a recessed area — originally a loading dock pit — that serves as a ring. Fights happen Tuesday and Thursday nights, bare-knuckle, voluntary, with a purse funded by the cover charge. The rules are simple: no weapons, no cyberware activation, no killing. Everything else is negotiable.\n\nThe bar occupies a former boiler manufacturing facility in Racine, midway between Milwaukee and Chicago on the corridor's lakefront. The owner, Henk Steuben-Adjei, is a retired contractor whose body is roughly sixty percent replacement parts — not from combat, but from thirty years of industrial work that took pieces of him one accident at a time. He runs the fights with the calm efficiency of someone who understands what bodies can endure and what they can't, and he'll stop a bout the instant it crosses from competition into damage. The crowd respects this because Henk's judgment has been proven correct often enough that questioning it seems foolish, and because Henk, even at sixty-seven and mostly prosthetic, is still the most dangerous person in the building.\n\nThe Boilermaker serves a function in the corridor's freelance economy that is rarely discussed openly: it lets people prove themselves. A runner who needs to establish a reputation, a fixer who needs to demonstrate that their muscle is real, a new face who needs to show that they're worth hiring — the Boilermaker's ring is where that happens. Winning is good. Losing well is almost as good. What matters is that you stepped in, that the crowd saw it, and that word spreads through the Circuit that you are someone who does not avoid difficult situations. Henk keeps a board of champions behind the bar — names and dates, going back to the Boilermaker's opening in 2183. Getting your name on the board is worth more than most contracts pay.",
+  "atmosphere": {
+    "sights": [
+      "The recessed ring — a loading dock pit repurposed for bare-knuckle bouts, blood-stained concrete",
+      "Henk's champion board — forty years of names, dates, and the occasional drawing of a particularly memorable knockout",
+      "Henk at ringside, prosthetic arms folded, reading a fight's trajectory before the fighters know it",
+      "The crowd around the pit, leaning in, the light from below making everyone look like they're watching a forge"
+    ],
+    "sounds": [
+      "Fists on flesh — the particular sound of a bare-knuckle bout, muffled and immediate",
+      "The crowd — not screaming but murmuring, a collective assessment of each exchange",
+      "Henk's whistle — short, sharp, absolute. When he blows it, the fight is over.",
+      "Beer bottles clinking in the pauses between rounds"
+    ],
+    "smells": [
+      "Sweat and adrenaline — the ring area has its own microclimate of exertion",
+      "Old iron — the boiler factory's ghost, metal and heat baked into the building's bones",
+      "Antiseptic from the first aid station Henk maintains with professional thoroughness"
+    ],
+    "feel": "Honest. The Boilermaker strips everything to its simplest form: two people, a pit, and the question of what you're made of. The violence is controlled, consensual, and meaningful — which makes it the most civilized fighting you'll find in the corridor.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "Racine lakefront",
+      "Milwaukee-Chicago corridor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Fighters — professional, amateur, and freelancers building reputations",
+    "Fixers scouting muscle for contracts",
+    "Circuit workers who treat fight nights like sporting events",
+    "Corridor travelers passing through Racine who heard about Tuesday nights"
+  ],
+  "notable_locations": [
+    "The pit — recessed loading dock, the corridor's most respected fighting ring",
+    "The champion board — forty years of names, the corridor's unofficial Hall of Fame"
+  ],
+  "coordinates": {
+    "lat": 42.7261,
+    "lng": -87.7829
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 2",
+    "circuit",
+    "racine",
+    "fighting",
+    "reputation",
+    "lakefront"
+  ],
+  "related_entities": [
+    "Henk Steuben-Adjei",
+    "Racine"
+  ]
+}

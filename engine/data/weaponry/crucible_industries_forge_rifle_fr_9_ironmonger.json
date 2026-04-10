@@ -1,0 +1,48 @@
+{
+  "id": "1e14a3d56db2901b053b47d62ef623b3",
+  "name": "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
+  "type": "weapon",
+  "aliases": [
+    "Ironmonger",
+    "FR-9",
+    "The Forge"
+  ],
+  "category": "assault_rifle",
+  "description": "Crucible Industries built the FR-9 for environments that destroy lesser weapons. The Ironmonger's monolithic steel-ceramic receiver is milled from a single block of composite material, eliminating weak points at joins and seams. It chambers the heavy 7.62mm caseless round and delivers it with a long-stroke gas piston system that cycles reliably through sand, mud, chemical contamination, and temperature extremes from -40C to 65C.\n\nThe FR-9 lacks the smart features of its Tessera and Arcturus competitors. There is no BCI link, no targeting AI, no electromagnetic acceleration. What it offers is mechanical perfection — a weapon that fires when the trigger is pulled, every time, in any condition. The iron sights are tritium-illuminated. The magazine is a standard 30-round steel box. The charging handle is oversized for gloved or prosthetic hands.\n\nCrucible markets the Ironmonger to frontier security forces, mining operations, and independent militias who operate beyond reliable maintenance infrastructure. It has become the weapon of choice for operators who distrust networked systems and prefer the certainty of analog reliability.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — licensed civilian and security",
+  "base_technologies": [
+    "Monolithic steel-ceramic composite",
+    "Long-stroke gas piston",
+    "Tritium-illuminated iron sights"
+  ],
+  "specifications": "caliber: 7.62mm caseless\neffective_range: 600m\nrate_of_fire: 650 rpm (cyclic)\nmagazine_capacity: 30 rounds\nweight: 4.1 kg",
+  "tactical_use": "The FR-9 is the weapon you bring when nothing else will work. Its heavier caliber provides superior barrier penetration and stopping power compared to intermediate rounds, and its mechanical simplicity means field repairs require basic tools and no diagnostic software. Operators sacrifice smart-link precision for the guarantee that the weapon functions regardless of EMP, jamming, or network compromise.",
+  "cultural_context": "The Ironmonger has a cult following among anti-corporate frontier communities and old-school operators who view BCI-linked weapons as surveillance tools with triggers. Crucible cultivates this identity deliberately — their marketing emphasizes independence, self-reliance, and freedom from corporate ecosystems. In Tier 1-2 settlements, the FR-9 is often the most advanced weapon available and the most trusted.",
+  "known_users": [
+    "Frontier security forces",
+    "Independent mining operations",
+    "Anti-corporate militia groups",
+    "Tier 2 settlement defense"
+  ],
+  "story_hooks": [
+    "A Crucible Industries factory has been producing FR-9s with hidden RFID trackers at the request of a corponation that wants to map militia supply chains.",
+    "An FR-9 recovered from a crime scene has serial numbers that trace back to a batch supposedly destroyed in a factory fire — someone faked the destruction records."
+  ],
+  "ammunition_type": [
+    "7.62mm caseless standard",
+    "7.62mm caseless heavy"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "analog",
+    "reliable",
+    "frontier",
+    "Crucible",
+    "tier 2"
+  ],
+  "physical_description": "The Ironmonger is a brutalist instrument of matte gunmetal and scorched steel, its monolithic receiver unmarked by seams or fasteners. The long-stroke piston system runs visibly along the top rail, a mechanical reminder of its function over form philosophy. Wear patterns stripe the handguard and stock—salt-etched, oil-dark, the scars of reliable service in the GLMZ's unforgiving environments.",
+  "visual_prompt": "heavy assault rifle, monolithic steel receiver, matte gunmetal finish, long-stroke piston system, brutalist industrial design, worn metal surfaces, oil-stained, gritty neo-noir weaponry, detailed mechanical components, dark studio background, cinematic product photography, cyberpunk near-future, weathered and battle-tested"
+}

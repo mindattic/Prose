@@ -32,10 +32,17 @@
     "rain",
     "train",
     "tier 3",
-    "tier 4"
+    "tier 4",
+    "civilian",
+    "van",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Ferrogate CL-9 L-Train"
-  ]
+  ],
+  "physical_description": "A compact, boxy cable car measuring roughly 3m long and 2m wide, with a steel frame wrapped in scuffed brushed aluminum paneling. Reinforced tempered glass windows run along both sides, their surfaces etched with condensation and grime, while the interior reveals worn fabric seats and a grimy floor marked by countless footprints. A thick cable attachment mechanism dominates the roof, and a single blinking red indicator light pulses near the cabin door.",
+  "visual_prompt": "gritty neo-noir cable car, compact boxy design, brushed aluminum hull with weathered patina, reinforced tempered glass windows, steel frame, worn fabric seating visible through windows, thick cable attachment, red indicator light, dark rain-slicked background, industrial decay, detailed product photography, moody overhead lighting, 1980s-90s utilitarian design, cyberpunk utility aesthetic"
 }

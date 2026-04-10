@@ -1,0 +1,50 @@
+{
+  "id": "35b296362060a65bf7820abdbc658f67",
+  "name": "Arcturus RL-2 'Bouncer'",
+  "type": "weapon",
+  "aliases": [
+    "Bouncer",
+    "Rubber Rifler",
+    "Hard No"
+  ],
+  "category": "less-lethal",
+  "description": "A magazine-fed semi-automatic carbine that fires rubber-composite projectiles at velocities calibrated to cause maximum pain with minimum penetration. The Bouncer's rounds are 18mm rubber-jacketed cylinders that deform on impact, spreading their kinetic energy across a larger surface area than conventional bullets. The result is a deep-tissue bruise that hurts for days but doesn't break the skin — in theory. In practice, the RL-2 at close range delivers impacts that crack ribs, rupture blood vessels, and cause internal bleeding that only becomes apparent hours later.\n\nArcturus designed the Bouncer for sustained riot suppression — the semi-automatic action and 20-round magazine allow operators to maintain a volume of fire comparable to conventional carbines without the political consequences of firing live ammunition. The weapon's effective range of 50 meters and its rapid-fire capability mean that a squad of four Bouncer-equipped operators can deliver the equivalent of a beating to an entire crowd simultaneously, from a safe distance.\n\nThe RL-2 has been involved in more civilian injury incidents than any other weapon system in GLMZ. Its less-lethal classification means it is deployed casually, frequently, and without the hesitation that accompanies firearms. Security personnel who would think twice before firing a bullet will empty a Bouncer magazine without a second thought, because the rounds are 'safe.' The cumulative medical data — 47 confirmed fatalities, over 3,000 serious injuries annually — tells a different story.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security and law enforcement",
+  "street_price": "Φ1,800 (rubber rounds Φ5 each)",
+  "base_technologies": [
+    "Rubber-composite projectile design",
+    "Velocity-calibrated gas system",
+    "High-volume semi-automatic action"
+  ],
+  "specifications": "caliber: 18mm rubber composite\naction: Semi-automatic, gas-operated\nmagazine: 20 rounds\neffective range: 50 meters\nmuzzle velocity: 90 m/s\nimpact energy: 35 joules (designed threshold)\nweight: 3.1 kg\nlength: 680mm",
+  "tactical_use": "Sustained riot suppression and crowd control. Operators engage crowds with rapid semi-automatic fire, targeting center mass to create pain compliance at volume. The 20-round magazine and semi-automatic action allow a tempo of fire that keeps crowds moving and prevents reorganization.",
+  "cultural_context": "The Bouncer is the weapon that GLMZ's lower tiers encounter most frequently. It is the sound of a protest ending, the impact of a labor action being suppressed, the bruise that tells you the system noticed your dissent. Its rubber rounds don't kill often enough to make headlines, but they hurt consistently enough to make a point.",
+  "known_users": [
+    "Corporate security riot teams (all major corponations)",
+    "GLMZ law enforcement crowd control units",
+    "Event security teams",
+    "Private security at labor dispute sites"
+  ],
+  "story_hooks": [
+    "Autopsy records from a protest suppression operation show that 12 of the RL-2 rounds recovered from casualties were not rubber-composite — they were lead-core rounds in rubber jackets, designed to look less-lethal while delivering ballistic impacts. Someone in the supply chain is loading kill rounds into riot guns.",
+    "An RL-2 has been modified to fire at twice the standard velocity — 180 m/s instead of 90 — turning every round into a potential skull-fracture. The modification is a simple spring swap that takes 30 seconds. Instructions have been posted on security forums, and someone is distributing modified springs to operators."
+  ],
+  "ammunition_type": [
+    "18mm_rubber"
+  ],
+  "tags": [
+    "less-lethal",
+    "weapon",
+    "carbine",
+    "rubber",
+    "riot",
+    "crowd-control",
+    "arcturus",
+    "security",
+    "tier 2"
+  ],
+  "physical_description": "The Arcturus RL-2 is a compact, utilitarian carbine with a matte-black polymer receiver and reinforced steel barrel shroud worn smooth by heavy use. Its ergonomic grip and integrated rail system show scuff marks and faded manufacturer stamps, while the 20-round magazine sits flush against the lower receiver, etched with faint capacity indicators. The whole assembly carries the austere, purposeful look of equipment designed for punishment rather than precision.",
+  "visual_prompt": "Arcturus RL-2 Bouncer semi-automatic carbine, less-lethal rubber projectile weapon, matte black polymer and steel construction, gritty worn finish, detailed product photography, neo-noir industrial aesthetic, rain-slicked concrete background, moody neon rim lighting, tactical rail system, 20-round magazine, cyberpunk near-future militarized zone, high contrast shadows, technical specification style lighting"
+}

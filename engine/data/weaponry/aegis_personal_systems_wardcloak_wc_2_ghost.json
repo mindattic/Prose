@@ -1,0 +1,44 @@
+{
+  "id": "62ee9c0feabcc513a2b7d30c811da559",
+  "name": "Aegis Personal Systems WardCloak WC-2 'Ghost'",
+  "type": "weapon",
+  "aliases": [
+    "Ghost",
+    "WC-2",
+    "Vanish Coat",
+    "Cloak Shield"
+  ],
+  "category": "self_defense",
+  "description": "A lightweight jacket with integrated micro-emitters in the lining that, when activated, projects a localized visual distortion field around the wearer. The WC-2 does not render the user invisible — instead, it creates a visual 'smear' effect that makes the wearer's outline indistinct and difficult to track, similar to looking at a figure through heavily textured glass. The distortion is most effective in low-light conditions and against optical systems that rely on edge detection algorithms.\n\nAegis developed the WC-2 after market research showed that many self-defense encounters could be avoided entirely if the potential victim was simply harder to see. The jacket's distortion field runs on a distributed battery network woven into the garment's lining, providing twelve minutes of continuous distortion on a full charge. The activation switch is inside the left pocket, accessible without removing the hand. The jacket itself is a nondescript urban design available in charcoal, navy, and dark green.\n\nThe WC-2 is priced at Φ1,600, positioning it as a premium tier investment. Its primary market is people who commute through high-risk areas during low-light hours — night-shift workers, late-service employees, anyone who regularly walks through places where being visible makes you a target. The distortion effect has limitations: it is ineffective in bright light, does not defeat thermal imaging, and the micro-emitter grid creates a faint shimmer visible to anyone who knows what to look for.",
+  "manufacturer": "AEGIS PERSONAL SYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Distributed micro-emitter visual distortion",
+    "Edge-detection algorithm disruption",
+    "Wearable photonic interference grid"
+  ],
+  "specifications": "distortion type: visual edge disruption\neffective conditions: low-light, artificial lighting\nduration: 12 minutes continuous\ncharging: removable battery pack, 3-hour charge\njacket weight: 680 g (including electronics)\navailable sizes: XS-3XL\navailable colors: charcoal, navy, dark green\ncost: Φ1,600\nlimitations: ineffective in daylight, does not defeat thermal imaging",
+  "tactical_use": "Activate before entering high-risk areas rather than in response to a threat — the distortion needs to be active before the attacker selects you as a target. Move steadily through low-light areas; the distortion is most effective when the wearer is in motion, as stationary silhouettes are easier to resolve through the interference. The WC-2 is a prevention tool, not a combat tool — if an attacker has already engaged, the distortion provides minimal advantage.",
+  "cultural_context": "The WC-2 has introduced a new concept to GLMZ's personal defense market: avoidance as defense. Rather than tools that react to attacks, it prevents targeting entirely. This philosophy has resonated with residents who are tired of the escalation cycle where better defense tools lead to more aggressive attackers. Some urban safety advocates call the WC-2 the most ethical defense product on the market because it prevents conflict rather than winning it. Critics note that only people who can afford Φ1,600 get to be invisible.",
+  "known_users": [],
+  "story_hooks": [
+    "Security forces have complained that WC-2 wearers are invisible to their patrol algorithms, creating blind spots in surveillance coverage that criminals have begun to exploit — not by committing crimes in the jackets, but by mapping the blind spots the jackets create.",
+    "Aegis has received reports that a competitor has reverse-engineered the micro-emitter grid and is selling distortion panels that can be sewn into any garment — destroying Aegis's monopoly on wearable visual distortion."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "barrier",
+    "visual_distortion",
+    "wearable",
+    "jacket",
+    "stealth",
+    "tier_3",
+    "avoidance"
+  ],
+  "physical_description": "A charcoal-grey synthetic shell jacket with reinforced seams and a high collar, its lining threaded with barely-visible copper-wire emitters that catch the light like veins. The fabric is worn smooth in places from heavy use, with scuffed elbow patches and a faded AEGIS logo on the left breast. Micro-capacitor nodes cluster at the shoulders and spine where the distortion field generators sit, adding subtle weight and bulk to an otherwise unremarkable piece of street wear.",
+  "visual_prompt": "gritty cyberpunk tactical jacket, worn synthetic grey material, copper wire mesh visible in lining, shoulder-mounted tech nodes, neo-noir product photography, dark warehouse background, moody blue-amber lighting, detailed fabric texture, rain-slicked surface, industrial decay aesthetic, close-up shot of micro-emitters, realistic weathering"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Dermasyn",
+  "type": "pharmaceutical",
+  "aliases": [
+    "scar-gone",
+    "smooth",
+    "seal"
+  ],
+  "category": "medical",
+  "subcategory": "anti-scarring compound for augment sites",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Dermasyn is a topical and injectable anti-fibrotic compound specifically formulated for the complex scar patterns that form at augment installation sites, where organic tissue must interface cleanly with synthetic structures. It combines matrix metalloproteinase regulators with targeted scar remodeling peptides to prevent hypertrophic scarring, keloid formation, and the fibrous encapsulation that can impair augment function. Both cosmetic and functional applications are standard.",
+  "method_of_use": "dermal_patch",
+  "effects": [
+    "prevention and treatment of hypertrophic scarring at augment sites",
+    "inhibition of fibrous capsule formation around implants",
+    "cosmetic normalization of skin at augment-organic interfaces",
+    "preservation of tactile sensitivity in skin adjacent to chrome",
+    "reduction of chronic pain from scar tissue tension against implant edges"
+  ],
+  "side_effects": [
+    "local skin thinning with prolonged use at application site",
+    "mild itching during active scar remodeling",
+    "if applied to non-scar tissue, can cause temporary loss of skin texture",
+    "rare: paradoxical fibrosis in patients with certain genetic profiles",
+    "not effective for internal scarring without injectable formulation"
+  ],
+  "duration": "continuous — patch replaced every 3 days",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 2-3",
+  "legality": "legal",
+  "street_price": "Φ30–Φ65 per patch",
+  "cultural_context": "Dermasyn addresses something that matters deeply in GLMZ's augmentation culture: the look of the chrome-skin interface. A clean, smooth merge between organic and synthetic is a point of pride; thick, ropy scarring at implant sites marks poor surgical care, Shelf-grade installation, or inability to afford proper post-op medication. Tier 4-5 users use premium Dermasyn formulations that leave interfaces virtually invisible. On the Shelf, augment scars are common and sometimes worn as marks of identity — the 'raw edge' aesthetic of visible, unmedicated chrome interfaces has become a Tier 1 cultural symbol of authenticity versus the 'smooth' of the upper tiers.",
+  "story_hooks": [
+    "A Tier 3 cosmetic augment surgeon is being blackmailed — someone has evidence they've been using off-spec Dermasyn that looks good short-term but causes progressive internal fibrosis around implants, quietly destroying clients' augment function over years.",
+    "The 'raw edge' aesthetic has become politically charged — a Shelf rights movement is using visible augment scars as a symbol, and a Tier 4 fashion house has appropriated the look using cosmetic scarring, causing a furious cultural conflict.",
+    "A Novafold chemist has accidentally discovered that Dermasyn's scar-remodeling peptides, at high concentrations, can dissolve the fibrous capsules that form around poorly integrated SNT — potentially offering a non-surgical fix for thousands of people with botched SNT installations."
+  ]
+}

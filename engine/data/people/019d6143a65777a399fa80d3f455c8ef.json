@@ -98,7 +98,7 @@
       "orphan",
       "gang-prospect",
       "caretaker",
-      "E.L.F.-devotee",
+      "e.l.f.-devotee",
       "stockyard-survivor",
       "searching"
     ]
@@ -208,7 +208,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

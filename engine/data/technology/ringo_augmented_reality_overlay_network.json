@@ -1,0 +1,46 @@
+{
+  "id": "e92ac3cfe653538067c44eeb807a23b7",
+  "name": "Ringo Augmented Reality Overlay Network",
+  "brand_name": "Ringo",
+  "product_name": "RingoVision ARON-3",
+  "type": "technology",
+  "aliases": [
+    "RingoVision",
+    "ARON-3",
+    "AR Net",
+    "Overlay Network"
+  ],
+  "subcategory": "infrastructure",
+  "description": "RingoVision ARON-3 is the augmented reality infrastructure layer that projects digital content directly into BCI users' visual perception. The system overlays digital information onto the user's natural vision in real time — navigation markers, product information, social data, advertising, and interactive interfaces all appear as though they exist in physical space. The technology does not use screens or projectors; it works directly through the BCI's neural interface, adding visual data to the brain's visual processing stream before conscious perception occurs.\n\nThe ARON-3 infrastructure consists of spatial anchoring beacons installed throughout GLMZ's physical environment — small devices that broadcast precise location data allowing the BCI to align digital overlays with physical space accurately to within 1 millimeter. Ringo has installed approximately 2 million anchoring beacons across the city, embedded in buildings, street furniture, vehicles, and infrastructure. The beacons are powered by ambient RF energy harvested from the NeuralMesh's transmissions, requiring no dedicated power supply and no maintenance.\n\nThe AR overlay is on by default for all BCI users. The baseline overlay includes navigation assistance, emergency information, and — inevitably — advertising. Users can customize their overlay through Ringo's interface, but the advertising layer cannot be disabled without a premium subscription costing 100 Φ per month. The standard ad load is approximately 40 visual interruptions per hour — product highlights on store fronts, branded navigation markers, sponsored information overlays that replace neutral data with promotional content. The overlay has become so integrated with daily perception that many users report difficulty navigating unfamiliar areas with it disabled — they have lost the ability to read physical signage because they have never needed to.",
+  "tier_availability": "Tier 2",
+  "developers": [
+    "RINGO"
+  ],
+  "base_technologies": [
+    "BCI visual cortex integration",
+    "Spatial anchoring beacon network",
+    "Real-time overlay rendering",
+    "Perception-layer content injection"
+  ],
+  "enables": [
+    "Ubiquitous augmented reality",
+    "Neural-integrated navigation",
+    "Perception-layer advertising",
+    "Digital-physical space integration"
+  ],
+  "social_impact": "RingoVision has blurred the line between reality and commercial content to the point of indistinguishability. Users cannot always tell whether what they see is real or overlaid — a problem that Ringo considers a feature, not a bug, because indistinguishable ads are more effective ads. The psychological effects of constant perception-layer content injection are studied but poorly understood: some researchers report increased rates of derealization disorder among heavy AR users, while others note that younger users who have never experienced unaugmented reality show no psychological distress from the overlay because they have no baseline 'real' perception to compare it to.",
+  "story_hooks": [
+    "RingoVision has begun overlaying content that users have not requested and that doesn't match any advertiser's campaign — images of places, people, and events that appear hyperrealistic but correspond to nothing in any database. Someone is using the perception-layer overlay to show people things that don't exist.",
+    "A group of users has discovered that disabling their RingoVision overlay reveals physical graffiti and signage that the AR system was covering up — messages, warnings, and art that someone placed in the physical world knowing that AR users would never see them."
+  ],
+  "tags": [
+    "infrastructure",
+    "technology",
+    "network",
+    "ar",
+    "augmented-reality",
+    "ringo",
+    "visual",
+    "tier 2"
+  ]
+}

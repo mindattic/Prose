@@ -1,0 +1,48 @@
+{
+  "id": "16b33dbd7e40f36a3f72e1e15b4bf154",
+  "name": "Arcturus Defense Solutions AR-7 'Mandate'",
+  "type": "weapon",
+  "aliases": [
+    "Mandate",
+    "AR-7",
+    "The Corpo Standard"
+  ],
+  "category": "assault_rifle",
+  "description": "The standard-issue assault rifle of Arcturus Defense Solutions' corporate security divisions, the AR-7 Mandate represents the baseline of modern military lethality. Chambered in 6.5mm caseless, the rifle feeds from a 40-round helical magazine and features an integrated BCI smart-link port that allows neural fire-control for sub-MOA accuracy at combat distances. The polymer-ceramic receiver shrugs off environmental abuse from arctic operations to equatorial humidity.\n\nThe Mandate earned its name from the corporate policy that made it the mandatory sidearm for all Arcturus ground personnel above E-3 clearance. Its ubiquity in corporate conflict zones has made it one of the most recognized weapons on GLMZ, and surplus units flood grey markets whenever Arcturus rotates inventory cycles. Street-modified Mandates with disabled IFF transponders are a common sight in freelancer arsenals.\n\nCultural significance runs deep — owning a Mandate signals either corporate affiliation or the connections to acquire military hardware. In the lower tiers, a clean Mandate commands respect and suspicion in equal measure.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — corporate-issued, grey market available",
+  "base_technologies": [
+    "BCI smart-link integration",
+    "Caseless ammunition system",
+    "Polymer-ceramic composite receiver"
+  ],
+  "specifications": "caliber: 6.5mm caseless\neffective_range: 550m\nrate_of_fire: 750 rpm (cyclic)\nmagazine_capacity: 40 rounds (helical)\nweight: 3.4 kg",
+  "tactical_use": "The AR-7 excels as a general-purpose combat rifle across all engagement distances inside 600 meters. Its BCI integration allows trained operators to achieve precision fire without traditional optics, while the caseless ammunition system eliminates extraction failures and reduces carried weight. Corporate fireteams rely on the Mandate as their backbone weapon, supplementing with specialist platforms as needed.",
+  "cultural_context": "The Mandate is the face of corporate military power. Seeing a column of Arcturus security carrying AR-7s is a common sight in contested economic zones, and the weapon's silhouette has become shorthand for corporate enforcement in street art and propaganda. Surplus Mandates are prized on the grey market — a clean unit with working BCI link fetches Φ4,500 or more.",
+  "known_users": [
+    "Arcturus Corporate Security",
+    "GLMZ PMC contractors",
+    "Tier 3+ freelancers"
+  ],
+  "story_hooks": [
+    "A shipment of 200 Mandates with disabled IFF transponders has gone missing from an Arcturus depot — someone inside is arming an insurgency.",
+    "A freelancer discovers their grey-market Mandate still has an active Arcturus tracking beacon embedded in the receiver."
+  ],
+  "ammunition_type": [
+    "6.5mm caseless standard",
+    "6.5mm caseless AP"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "corporate",
+    "military",
+    "BCI",
+    "smart-link",
+    "caseless",
+    "tier 3"
+  ],
+  "physical_description": "The AR-7 Mandate is a utilitarian assault rifle with a polymer-ceramic receiver that bears the scuffs and scratches of field use—a matte charcoal finish dulled further by rain-slick grime. Its angular profile is dominated by the helical magazine well and integrated neural interface port, a small chrome-ringed socket that gleams against the weathered composite stock. The 6.5mm caseless chamber sits beneath a mounting rail system thick with attachment points, most carrying the wear patterns of tactical gear cycling in and out.",
+  "visual_prompt": "Gritty neo-noir product photography of military assault rifle, matte charcoal polymer-ceramic receiver, helical magazine feed system, neural interface port detail, rain-weathered finish, industrial lighting, dark background, cinematic depth of field, close-up mechanical detail, worn tactical rail system, cyberpunk military hardware, ultra-detailed, photorealistic"
+}

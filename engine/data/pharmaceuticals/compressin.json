@@ -1,0 +1,38 @@
+{
+  "name": "Compressin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Timelapse",
+    "The Squeeze",
+    "Threehour"
+  ],
+  "category": "sleep_dream",
+  "subcategory": "sleep_compressor",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Compressin uses a patented SNT-mediated neural oscillation acceleration protocol to cycle the user through all necessary sleep stages — NREM 1 through 3 and full REM — in approximately 3 hours while delivering the full restorative biological value of an 8-hour sleep cycle. The drug interfaces directly with the user's BCI to monitor sleep stage transitions and administer microbursts of the active compound at precise intervals, making BCI ownership effectively mandatory for proper use. Without a BCI, efficacy drops significantly and stage-cycling errors can occur.",
+  "method_of_use": "oral",
+  "effects": [
+    "Complete 8-hour equivalent sleep cycle in 2.5-3.5 hours",
+    "Full cognitive restoration on waking",
+    "Physical recovery equivalent to normal sleep",
+    "Preserved dream architecture (though compressed)",
+    "BCI-monitored stage optimization"
+  ],
+  "side_effects": [
+    "Requires functional BCI for full efficacy — dangerous without",
+    "Significant cost makes regular use Tier 4+ only",
+    "Occasional stage-cycling errors cause confusional arousal",
+    "Long-term use may impair natural sleep rhythm generation",
+    "Dreams are brief but intense due to compression"
+  ],
+  "duration": "2.5-3.5 hours (equivalent to 8 hours natural sleep)",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 4-5",
+  "legality": "prescription",
+  "street_price": "Φ280 per dose",
+  "cultural_context": "Compressin is a status drug as much as a utility drug. In the Spire and upper Tier 4, sleeping only 3 hours and waking fully refreshed is a productivity flex, a signal that your time is too valuable to waste on a full night's rest. Executive culture has built entire scheduling paradigms around Compressin availability. For those who can't afford it, the drug represents everything wrong with the tiered system — the rich literally buy more hours in the day.",
+  "story_hooks": [
+    "A Lazarus executive wants someone to steal the Compressin SNT formulation before a patent expiry deal closes — if the formula goes generic, Lazarus loses a Φ40 billion annual revenue stream.",
+    "Someone has been distributing counterfeit Compressin on the Tier 3 market — the fake version lacks the SNT stage-cycling component, meaning users think they've slept but haven't, and the cognitive decline is being mistaken for a new neurological pathogen."
+  ]
+}

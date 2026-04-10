@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Small Sovereign",
-      "Accidental Confessor",
-      "Quiet Protector",
-      "Veteran Tradesperson",
-      "Controlled Order"
+      "small sovereign",
+      "accidental confessor",
+      "quiet protector",
+      "veteran tradesperson",
+      "controlled order"
     ]
   },
   "behavioral": {
@@ -292,7 +292,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

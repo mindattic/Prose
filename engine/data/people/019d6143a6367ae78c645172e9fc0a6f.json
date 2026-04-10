@@ -99,7 +99,7 @@
       "corponation-employed",
       "double-life",
       "tier-3",
-      "VR-designer",
+      "vr-designer",
       "suppressed-artist",
       "compartmentalized"
     ]
@@ -238,7 +238,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

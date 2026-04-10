@@ -1,7 +1,12 @@
+// NAMING RULE FOR SYNTHETICS: Robots, androids, AIs, and synthetic persons DO NOT use
+// Ubiquitous Diaspora human heritage names (e.g. "Flux Strömqvist-Villalobos", "Kohana Sefanaia").
+// Use: model designations (Model 7, TSA-0077), community nicknames (Uncle Noodle, Doc Rusty),
+// callsigns (PANOPTICON, LATTICE), or single evocative names (Witness, Flicker, Echo Null).
+
 const fs = require('fs');
 const path = require('path');
 
-const OUTPUT_DIR = path.join(__dirname, '..', 'engine_data', 'synthetics');
+const OUTPUT_DIR = path.join(__dirname, '..', 'engine', 'data', 'synthetics');
 
 // Gather existing filenames to avoid overwrites
 const existing = new Set(fs.readdirSync(OUTPUT_DIR).map(f => f.toLowerCase()));

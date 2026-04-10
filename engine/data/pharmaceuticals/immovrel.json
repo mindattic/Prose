@@ -1,0 +1,39 @@
+{
+  "name": "Immovrel",
+  "type": "pharmaceutical",
+  "aliases": [
+    "balance shot",
+    "chrome immune",
+    "the modulator"
+  ],
+  "category": "medical",
+  "subcategory": "immune modulator for augmented individuals",
+  "manufacturer": "Helix Biosystems",
+  "description": "Immovrel is a precision immune modulator designed for heavily augmented individuals whose immune systems have been destabilized by extensive chrome, SNT implants, and geneware — a condition called augment-induced immune dysregulation (AIID). It recalibrates immune response thresholds to tolerate high augment loads while preserving the ability to fight genuine pathogens, a balance that standard immunosuppressants like Toleryn cannot achieve at high augmentation levels.",
+  "method_of_use": "injection",
+  "effects": [
+    "recalibrates immune tolerance for high augment loads",
+    "prevents AIID inflammatory cascades",
+    "maintains pathogen-fighting capacity despite augment tolerance",
+    "reduces systemic inflammation in heavily augmented patients",
+    "stabilizes autoimmune responses triggered by SNT interfaces"
+  ],
+  "side_effects": [
+    "injection site reactions",
+    "two-week recalibration period with flu-like symptoms",
+    "rare severe allergic response to the modulator proteins themselves",
+    "requires precise dosing — over-modulation leaves patients vulnerable to infection",
+    "monthly injections required"
+  ],
+  "duration": "28-30 days per injection",
+  "addiction_risk": "none",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ320 per monthly injection",
+  "cultural_context": "Immovrel is for the seriously augmented — people whose chrome load is high enough that standard Toleryn alone can't manage the immune chaos. Tier 3 workers with extensive labor augments often need it by their forties. Tier 4 corporate soldiers with military-grade installs need it from day one. The monthly injection is a ritual in augment-heavy communities. On the Shelf, people who need Immovrel and can't afford it develop AIID — a slow inflammatory death.",
+  "story_hooks": [
+    "A Helix Biosystems researcher has discovered that Immovrel's modulation proteins can be tuned to make the immune system attack specific augment types — a biological weapon disguised as medicine",
+    "A character with extensive chrome is developing AIID symptoms despite regular Immovrel — their augments are generating a novel inflammatory signal the drug wasn't designed to handle",
+    "The monthly Immovrel injection for a Tier 3 community has been quietly discontinued — Helix is redirecting supply to a more profitable Tier 4 contract"
+  ]
+}

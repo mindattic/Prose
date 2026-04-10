@@ -1,0 +1,46 @@
+{
+  "name": "Ringo PT-8 'Truckline'",
+  "type": "automaton",
+  "classification": "Industrial",
+  "aliases": [
+    "Truckline",
+    "Road Train",
+    "Ghost Truck"
+  ],
+  "manufacturer": "RINGO",
+  "description": "The PT-8 is an autonomous freight transport — a full-size cargo vehicle with no cab, no windshield, and no accommodation for human occupancy. It is a box on wheels with an engine, a navigation system, and nothing else. Ringo stripped out everything a human driver would need and used the space for additional cargo capacity. The result is a vehicle that looks wrong — a truck without a front, a wheeled container that moves on its own through city streets and highway corridors.\n\nThe PT-8 operates on designated freight routes during designated hours, moving goods between distribution centers, manufacturing facilities, and shipping terminals. It communicates with traffic management systems, other PT-8 units, and a central dispatch that coordinates fleet movement to optimize delivery schedules. The units often travel in convoy — platoons of five to eight vehicles separated by half-second intervals, drafting behind the lead unit for fuel efficiency, moving at exactly the speed limit with mechanical precision that human drivers never achieve.\n\nThe PT-8 ended the long-haul trucking profession in GLMZ. The transition was not gradual — Ringo deployed its fleet over eighteen months and offered buyouts to every trucking company in the city. Companies that accepted received fair compensation. Companies that declined found themselves competing against vehicles that operated 24 hours a day, never needed rest stops, never violated hours-of-service regulations, and charged twenty percent less per ton-kilometer. The last independent trucking company in GLMZ closed fourteen months after PT-8 deployment began.",
+  "tier_availability": "Tier 2",
+  "legality": "Commercial — autonomous freight license",
+  "autonomy_level": "Fully autonomous — fleet navigation AI with central dispatch",
+  "dimensions": "2.8m height, 12.0m length, 2.5m width",
+  "weight": "8,000 kg (empty), 32,000 kg maximum loaded",
+  "power_source": "Hydrogen fuel cell, 800 km range per refueling",
+  "locomotion": "Six-axle wheeled, highway and urban road rated",
+  "armament": [],
+  "sensors": [
+    "360-degree LIDAR",
+    "GPS/inertial navigation",
+    "Vehicle-to-vehicle communication",
+    "Traffic management system integration",
+    "Cargo integrity monitoring"
+  ],
+  "countermeasures": "The unit follows traffic laws precisely — it will stop for any obstruction it cannot safely navigate around. Road blockades are effective. The cargo compartment's biometric lock can be defeated with industrial cutting tools. The vehicle itself has no defensive capability.",
+  "known_deployments": [
+    "Freight corridors throughout GLMZ and inter-city routes"
+  ],
+  "story_hooks": [
+    "A PT-8 has deviated from its assigned route and stopped in an abandoned industrial district. Its cargo manifest says empty. Its weight sensors say 28,000 kilograms. Dispatch cannot re-establish communication. The truck is sitting in the dark with something heavy inside it, and it isn't going anywhere.",
+    "A convoy of PT-8 units has been involved in a series of 'accidents' — vehicles that swerve into the convoy's path and are destroyed. Insurance claims are filed. But the timing is too precise, the accidents too consistent. Someone is crashing cars into autonomous trucks for the insurance payouts, and the trucks cannot swerve to avoid them because their safety programming prioritizes the convoy's stability."
+  ],
+  "cultural_context": "The PT-8 is the ghost that haunts the highways — driverless boxes moving goods through the night, headlights on empty corridors, the commerce of a city flowing without human hands on a single wheel. Former truckers gather at rest stops that no one uses anymore and talk about the road. The PT-8 does not stop at rest stops. It has no reason to.",
+  "tags": [
+    "automaton",
+    "industrial",
+    "freight",
+    "transport",
+    "ringo",
+    "vehicle",
+    "tier 2"
+  ],
+  "id": "886fa859127821243d05e9cdfff911fa"
+}

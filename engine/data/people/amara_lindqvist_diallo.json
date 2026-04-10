@@ -1,0 +1,62 @@
+{
+  "id": "eeb9a904e3a8156bd57b9a83188d9114",
+  "name": "Amara Lindqvist-Diallo",
+  "type": "character",
+  "aliases": [
+    "The Retriever",
+    "Auntie A"
+  ],
+  "role": "Private Investigator",
+  "description": "Amara Lindqvist-Diallo runs Bright Path Recovery, the most effective missing-child operation on the Shelf. She is forty-seven years old, Swedish-Malian heritage evident in her honey-brown skin and angular features, and she has been doing this work for twenty-two years — ever since her own younger sister vanished into the Shelf's underworld and was never found.\n\nHer method is fundamentally relational. She has spent two decades building a network of contacts among the people who see everything but are never asked: street vendors, waste collectors, tunnel dwellers, feral children, shelter workers, and the quiet army of grandmothers who sit on Shelf stoops watching the world. When a child goes missing, Amara activates this network like a nervous system, and information flows to her from a thousand points simultaneously. No technology can replicate what she's built because it's based on trust, and trust takes years.\n\nThe work pays well — desperate parents will mortgage everything for their child's return — and Amara charges on a sliding scale, taking corporate rates from those who can afford it and working for free for those who can't. She is chronically exhausted, carries the psychological weight of every child she's failed to find, and refuses to take a vacation because every day off is a day someone's kid is still out there. Her junior associates worry about her. They're right to worry.",
+  "affiliation": "Bright Path Recovery — her own firm, employing three junior associates",
+  "tier": "Tier 2",
+  "location": "A converted ground-floor storefront in the Narrows, deliberately non-threatening — children's drawings on the walls, tea always available",
+  "specialization": "Locating runaway minors and kidnap victims, specializing in Shelf-level disappearances",
+  "methods": [
+    "Building trust networks with street kids who act as her eyes and ears",
+    "Maintaining relationships with shelter operators, clinic workers, and food distribution points",
+    "Understanding the psychology of flight — predicting where runaways go based on age, trauma type, and available resources",
+    "Negotiating with gang leaders for safe passage and information exchange",
+    "Gentle interrogation techniques designed for traumatized subjects"
+  ],
+  "notable_cases": [
+    "Recovered eleven children from a labor trafficking ring operating out of a fabrication shop in Geartown — the largest single recovery in Shelf history",
+    "Found a runaway teenager who had been missing for two years by identifying the specific brand of street food they couldn't stop buying",
+    "Reunited a family separated during a district evacuation after a chemical spill, tracking them across three tiers"
+  ],
+  "equipment": [
+    "Trauma kit with sedatives, blankets, and comfort items for recovered victims",
+    "Secure vehicle with child locks and blast-resistant windows",
+    "Network of safe houses across Tiers 1-3",
+    "Non-lethal weapons only — stun baton and tranquilizer darts",
+    "Encrypted communicator linked to her associate network"
+  ],
+  "personality": "Amara is the kind of person who radiates safety the way some people radiate threat. She's large — tall and broad-shouldered with strong hands that have held a lot of shaking children. Her voice is low and steady and she never raises it, ever, because she learned early that volume triggers the people she's trying to help. She carries an enormous well of patience and an equally enormous well of rage — patience for the victims, rage for the people who create them. She has been known to weep openly after a recovery and then, hours later, beat critical information out of a trafficker with methodical calm.",
+  "relationships": [
+    {
+      "name": "Kwesi Park-Traore",
+      "type": "junior associate",
+      "description": "Her most promising trainee, a former runaway himself who understands the psychology firsthand"
+    },
+    {
+      "name": "Mama Ito",
+      "type": "informant",
+      "description": "An elderly woman who runs a soup kitchen in the Narrows and sees every child who passes through — Amara's most valuable single source"
+    }
+  ],
+  "story_hooks": [
+    "A child Amara recovered years ago has gone missing again — but this time they left voluntarily, and finding them means confronting whether recovery was the right choice in the first place",
+    "Someone is systematically killing her network of street-kid informants, and she can't go to CorpSec because they don't investigate Shelf murders",
+    "She receives credible information that her missing sister is alive, somewhere in the Underbelly, after twenty-two years"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "people_finder",
+    "missing_persons",
+    "children",
+    "narrows",
+    "shelf",
+    "human"
+  ]
+}

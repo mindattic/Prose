@@ -1,0 +1,49 @@
+{
+  "name": "Ringo CP-2 'Constable'",
+  "type": "automaton",
+  "classification": "Security",
+  "aliases": [
+    "Constable",
+    "Beat Cop",
+    "Tin Badge"
+  ],
+  "manufacturer": "RINGO",
+  "description": "The CP-2 is a public space security automaton — a bipedal platform standing 1.9 meters, designed to patrol corporate campuses, shopping districts, and public transit stations. It wears a high-visibility livery in the deploying organization's colors and is deliberately designed to look like a uniformed officer from a distance — broad-shouldered, upright posture, steady gait. Up close, the lack of a face dispels the illusion. The CP-2 has a smooth faceplate with a speaker grille and a status display that shows its operating organization's logo.\n\nThe CP-2 patrols assigned routes, responds to distress calls from fixed panic buttons in its territory, and intervenes in situations it classifies as criminal — theft, assault, vandalism. Its intervention capability is limited to verbal commands ('Stop. Security has been alerted. Remain where you are.'), physical presence (blocking exits, following suspects), and non-lethal restraint (wrist-mounted adhesive projectors that fire a quick-hardening polymer net). It cannot arrest, detain beyond the arrival of human security, or use lethal force under any programming.\n\nRingo markets the CP-2 as 'the security guard who never sleeps, never takes a bribe, and never uses excessive force.' Critics note that the CP-2 also never uses discretion — it enforces rules as written, which means a homeless person sleeping in a corporate lobby is treated with the same intervention protocol as an armed robber. The machine does not distinguish between crimes and inconveniences. Both are deviations from permitted behavior, and the CP-2 responds to deviations.",
+  "tier_availability": "Tier 2-3",
+  "legality": "Commercial — public security license required",
+  "autonomy_level": "Fully autonomous — patrol and intervention AI",
+  "dimensions": "1.9m height, 0.6m width",
+  "weight": "130 kg",
+  "power_source": "Lithium polymer, 20-hour patrol endurance, standing charge dock",
+  "locomotion": "Bipedal, standard walking pace with jogging capability",
+  "armament": [
+    "Wrist-mounted adhesive net projectors (2 shots per wrist, 10m range)",
+    "Loudspeaker for compliance commands"
+  ],
+  "sensors": [
+    "Optical recognition suite",
+    "Audio analysis (distress call detection)",
+    "Behavioral anomaly detection"
+  ],
+  "countermeasures": "The adhesive net can be dissolved with common industrial solvents. The unit is not heavily armored — sustained physical assault will damage optical sensors and joints. It can be outrun at full sprint.",
+  "known_deployments": [
+    "Corporate campuses, shopping districts, and transit stations across Tier 2-3 GLMZ"
+  ],
+  "story_hooks": [
+    "A CP-2 has detained a corporate whistleblower using its standard intervention protocol — the whistleblower was distributing documents in a corporate campus, which the CP-2 classified as 'unauthorized material distribution.' The documents contain evidence of criminal activity. The CP-2 doesn't know that. It just knows someone was handing out papers without permission.",
+    "Someone has reprogrammed a district's worth of CP-2 units to ignore crimes committed by individuals wearing a specific RFID badge. The badges are being distributed to members of an organized crime syndicate. The machines see them and classify them as authorized personnel."
+  ],
+  "cultural_context": "The CP-2 is the face of automated law enforcement — or rather, the facelessness of it. It represents a vision of security without judgment, which sounds equitable until you realize that judgment is what separates justice from compliance. The CP-2 enforces compliance. Whether it delivers justice is someone else's problem.",
+  "tags": [
+    "automaton",
+    "security",
+    "patrol",
+    "public",
+    "ringo",
+    "bipedal",
+    "non-lethal",
+    "tier 2",
+    "tier 3"
+  ],
+  "id": "012fbc3ff732ac2a417164f9640d0dc8"
+}

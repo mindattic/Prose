@@ -1,0 +1,46 @@
+{
+  "id": "929677d41d622a5dccf56679f7d21f78",
+  "name": "Volkov-Saito Precision VS-40 'Magistrate'",
+  "type": "weapon",
+  "aliases": [
+    "Magistrate",
+    "The Forty",
+    "Judge Gun"
+  ],
+  "category": "pistol",
+  "description": "The Volkov-Saito VS-40 is a full-size semi-automatic pistol chambered in .40 S&W, designed for the licensed enforcement and upscale personal protection market. The frame is machined from a single billet of aerospace-grade aluminum, and the slide features a distinctive angular profile with forward cocking serrations. The trigger is a crisp single-action with a 1.8kg break weight.\n\nVolkov-Saito markets the Magistrate to corponation security directors, licensed bounty enforcement agents, and wealthy individuals who want a sidearm that communicates authority without being ostentatious. The fit and finish are excellent — not decorative, but precisely crafted in a way that rewards close inspection. Every surface is functional, every angle deliberate.\n\nThe Magistrate has become the unofficial standard sidearm for mid-level corponation enforcement personnel who have enough rank to choose their own equipment but not enough to access military-grade smart-linked systems. It occupies a comfortable middle ground between the utilitarian Workhorse class and the high-tech weapons of the Spires.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — enhanced registration required",
+  "base_technologies": [
+    "Billet aluminum frame",
+    "Match-grade barrel",
+    "Precision single-action trigger"
+  ],
+  "specifications": "caliber: .40 S&W\neffective_range: 50 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 13 rounds\nweight: 0.92 kg",
+  "tactical_use": "A precision duty pistol with superior accuracy and ergonomics compared to budget-tier sidearms. The .40 S&W round provides better terminal performance against lightly armored targets than 9mm alternatives. Suitable for aimed fire in deliberate engagements. The single-action trigger rewards trained shooters.",
+  "cultural_context": "Carrying a Magistrate signals that you are serious, professional, and solvent enough to spend ten times what a Workhorse costs. In Mid and upper-Mid circles, it is a status marker that says 'I handle my own security problems.' Corponation enforcement agents who carry them tend to maintain them meticulously.",
+  "known_users": [
+    "Corponation security directors",
+    "Licensed bounty enforcement agents",
+    "Wealthy personal protection clients",
+    "Mid-level corponation enforcement personnel"
+  ],
+  "story_hooks": [
+    "A Magistrate with a unique serial number prefix keeps appearing at crime scenes across three districts — registered to a person who has been dead for two years.",
+    "A Volkov-Saito factory worker is smuggling out Magistrate frames with a hidden modification that no scanner has detected yet."
+  ],
+  "ammunition_type": [
+    ".40 S&W"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "precision",
+    "professional",
+    "enforcement",
+    "quality"
+  ],
+  "physical_description": "A full-size semi-automatic pistol with a boxy, utilitarian profile—aerospace aluminum frame matte gunmetal grey, slide scored with forward serrations that catch the light like worn machinery. The angular geometry speaks precision rather than flash: sharp edges, clean lines, the kind of tool that doesn't apologize. Even under GLMZ neon glow, the fit and finish read as deliberate, expensive restraint—no chrome, no flash, just the cold competence of something built to last.",
+  "visual_prompt": "neo-noir gritty semi-automatic pistol, angular aluminum frame matte gunmetal grey, forward cocking serrations, clean utilitarian design, professional enforcement aesthetic, detailed product photography, rain-slicked reflections, dark moody lighting, cyberpunk industrial, worn precision engineering, side profile and detail shots, 40 caliber professional sidearm"
+}

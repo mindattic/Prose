@@ -1,0 +1,49 @@
+{
+  "id": "5ae99a45ef6b8c54ecb5b717c3a6f3ec",
+  "name": "Tessera Personal Defense System TPDS-1 'Reflex'",
+  "type": "weapon",
+  "aliases": [
+    "Reflex",
+    "TPDS-1",
+    "Twitch Gun"
+  ],
+  "category": "smg",
+  "description": "The TPDS-1 Reflex is Tessera's BCI-optimized personal defense weapon, designed to be drawn and firing in under 400 milliseconds through neural command. The weapon's holster contains a capacitive sensor that detects the operator's BCI-transmitted draw signal before their hand physically reaches the weapon, pre-chambering a round and disengaging the safety during the draw stroke. By the time the Reflex clears the holster, it is ready to fire.\n\nChambered in 4.6mm high-velocity caseless from a 30-round magazine, the Reflex is a blowback-operated PDW with a cyclic rate of 900 rpm. The BCI fire-control system predicts the operator's intended point of aim based on neural signals and pre-adjusts the weapon's electronic sighting to compensate for draw-and-shoot inaccuracy. Tessera claims the system reduces first-shot time to 0.35 seconds from concealed carry.\n\nThe Reflex costs Φ6,500 and requires a compatible BCI implant with at least a Class 3 motor-interface rating. Without the neural link, the weapon functions as a conventional PDW — competent but unremarkable. With it, the Reflex becomes an extension of the operator's nervous system, firing at the speed of thought rather than the speed of muscle.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — BCI certification required",
+  "base_technologies": [
+    "BCI predictive draw system",
+    "Neural aim-prediction",
+    "Capacitive holster pre-chamber",
+    "Motor-interface integration"
+  ],
+  "specifications": "caliber: 4.6mm HV caseless\neffective_range: 150m\nrate_of_fire: 900 rpm (cyclic)\nmagazine_capacity: 30 rounds\nweight: 1.8 kg",
+  "tactical_use": "The Reflex is a reaction weapon — designed for the moment when an operator needs firepower immediately and has no time for a conventional draw. The BCI-predicted draw and pre-chambering shave critical fractions of a second off the engagement timeline. In close protection and executive security roles, those fractions determine whether the principal lives or dies. The weapon's limitations are its short range and small caliber, which restrict it to emergency engagements inside 50 meters.",
+  "cultural_context": "The Reflex represents the arms race between draw speed and threat speed. In a world where augmented attackers can close distance faster than unaugmented defenders can react, the TPDS-1 restores the reaction advantage to the defender. Corporate executives and high-value targets view the Reflex as essential insurance, while critics note that a weapon designed to fire faster than conscious thought raises uncomfortable questions about accountability.",
+  "known_users": [
+    "Executive protection details",
+    "Corporate VIP security",
+    "BCI-equipped close protection operators"
+  ],
+  "story_hooks": [
+    "A Reflex operator's BCI was subjected to a stress-injection hack that simulated a threat response, causing the weapon to pre-chamber and draw while the operator was in a crowded meeting.",
+    "Tessera's insurance actuaries have discovered that Reflex operators have a higher rate of accidental discharge than any other weapon system — the BCI-predicted draw sometimes fires on false positives."
+  ],
+  "ammunition_type": [
+    "4.6mm HV caseless",
+    "4.6mm HV caseless hollow-point"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "PDW",
+    "BCI",
+    "fast_draw",
+    "executive_protection",
+    "Tessera",
+    "tier 3"
+  ],
+  "physical_description": "The Reflex is a compact, angular submachine gun with a reinforced polymer lower receiver in matte black, its surfaces etched with wear marks and scuffed from holster draw cycles. The upper assembly is brushed titanium alloy, housing the neural interface contacts along the charging handle, with faint blue indicator lights beneath the dust cover. Its holster—a rigid synthetic frame with embedded capacitive pads—mounts securely to the operator's hip, its surfaces worn smooth from repeated practice draws.",
+  "visual_prompt": "compact submachine gun, matte black polymer and brushed titanium, neural interface contacts, worn tactical holster, gritty product photography, neo-noir aesthetic, detailed mechanical components, dark studio background, rain-slicked metal surfaces, cyberpunk weapon design, industrial wear and tear, professional military hardware, moody lighting"
+}

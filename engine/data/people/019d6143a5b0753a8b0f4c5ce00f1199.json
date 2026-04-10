@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Community Anchor",
-      "Information Hub",
-      "Skilled Tradesperson",
-      "Grief-Carrier",
-      "Neighborhood Historian"
+      "community anchor",
+      "information hub",
+      "skilled tradesperson",
+      "grief-carrier",
+      "neighborhood historian"
     ]
   },
   "behavioral": {
@@ -272,7 +272,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

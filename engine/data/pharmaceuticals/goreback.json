@@ -1,0 +1,41 @@
+{
+  "name": "Goreback",
+  "type": "pharmaceutical",
+  "aliases": [
+    "gore",
+    "the back",
+    "rebound"
+  ],
+  "category": "street_concoction",
+  "subcategory": "trauma_response_stimulant",
+  "manufacturer": "Street chemist 'Huit', South Shelf",
+  "description": "A brutal stimulant-analgesic combination synthesized from industrial epinephrine analogs, topical anesthetic compounds stripped from expired dental supplies, and a proprietary compound Huit claims comes from modified livestock antibiotics. Goreback is specifically designed for combat and violence — it suppresses pain, spikes aggression and physical output, and keeps you functional through injuries that would otherwise drop you. It's named for the moment when a fighter who should be down gets back up.",
+  "method_of_use": "injection",
+  "effects": [
+    "complete suppression of pain signals",
+    "dramatic increase in strength and aggression",
+    "ability to continue functioning through severe physical trauma",
+    "tunnel vision focus on immediate physical threat",
+    "adrenaline-state euphoria during active use"
+  ],
+  "side_effects": [
+    "inability to assess the severity of your own injuries — users die from wounds they didn't know were fatal",
+    "extreme aggression that does not discriminate between threats and allies",
+    "cardiac events from sustained epinephrine-analog load",
+    "crash: sudden total system shutdown when drug clears — dangerous if still in a combat situation",
+    "prolonged use causes adrenal burnout",
+    "kidney damage from compound filtration",
+    "PTSD symptoms intensified in aftermath"
+  ],
+  "duration": "45-90 minutes",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ18-30 per dose",
+  "cultural_context": "Goreback is the drug of the Shelf's violence economy — used by enforcers, gang soldiers, pit fighters, and anyone who needs to survive a situation that should kill them. Huit is known personally to most of the Shelf's fighting community and is reportedly protected by multiple factions simultaneously. The drug has a grim reputation even among people who use it: 'Goreback keeps you up long enough to die standing.'",
+  "story_hooks": [
+    "Huit has been kidnapped — multiple factions want exclusive supply rights to Goreback, and the bidding war is getting bloody",
+    "A Shelf enforcer survived injuries that genuinely should have been fatal, and now that the Goreback has worn off, they're slowly realizing just how badly they're hurt — they need medical help but their employer can't know they're compromised",
+    "Someone is distributing military-grade Goreback analogs on the Shelf at street prices — the quality is too high for a Shelf lab, suggesting a military or corporate supply chain has been breached"
+  ]
+}

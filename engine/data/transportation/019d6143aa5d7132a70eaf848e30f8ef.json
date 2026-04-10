@@ -36,10 +36,19 @@
     "chase",
     "poison",
     "tier 4",
-    "tier 5"
+    "tier 5",
+    "car",
+    "military",
+    "civilian",
+    "luxury",
+    "utility",
+    "manual",
+    "aerial"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Hookworm"
-  ]
+  ],
+  "physical_description": "The JP-4 is a bulky, angular frame of scuffed titanium alloy and cracked polymer panels, its hydrogen tanks visible through reinforced mesh venting. Soot streaks and corrosion marks the exhaust nozzles; the ignition controls bear worn-smooth grip tape over cracked plastic. A tangle of exposed fuel lines runs beneath patched thermal shielding, and the backplate shows burn scarring from countless hard landings.",
+  "visual_prompt": "military jetpack, hydrogen fuel tanks, worn titanium frame, cracked polymer panels, exposed fuel lines, soot-stained exhaust nozzles, gritty neo-noir, detailed product photography, industrial decay, rain-slicked metallic surfaces, dark studio background, cyberpunk near-future, weathered tech, high contrast lighting"
 }

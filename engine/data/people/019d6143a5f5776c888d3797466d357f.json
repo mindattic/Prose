@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Community anchor",
-      "Institutional loyalist with doubts",
-      "Street-level historian",
-      "Protective",
-      "Verbose"
+      "community anchor",
+      "institutional loyalist with doubts",
+      "street-level historian",
+      "protective",
+      "verbose"
     ]
   },
   "behavioral": {
@@ -293,7 +293,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Northern European": {

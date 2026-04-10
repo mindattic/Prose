@@ -1,0 +1,46 @@
+{
+  "id": "002fd03901c8567f48e570ffbba7e012",
+  "name": "Crucible Industries Kinetic Knuckles KK-3 'Jackhammer'",
+  "type": "weapon",
+  "aliases": [
+    "Jackhammer",
+    "KK-3",
+    "Kinetic Dusters",
+    "Pile Driver"
+  ],
+  "category": "melee",
+  "description": "A set of articulated knuckle plates that incorporate a miniaturized linear accelerator in each striking surface. When the wearer throws a punch, impact sensors trigger a magnetic pulse that drives a 50-gram tungsten slug forward within each knuckle plate at the moment of contact, multiplying the strike's kinetic energy by approximately five times. The effect turns a human punch into a force comparable to a sledgehammer blow.\n\nThe KK-3's accelerator system is powered by a capacitor bank worn as a wrist cuff, connected to the knuckle plates by flexible conductive threading woven into the glove. The system recharges between punches in approximately 0.4 seconds — fast enough to augment rapid combinations but slow enough that the first hit of a flurry is always the strongest. Each knuckle plate fires independently, meaning a four-knuckle impact delivers four separate accelerated strikes in rapid succession.\n\nCrucible developed the Jackhammer for operators who fight in environments where weapons cannot be drawn — crowd situations, security checkpoints, and the awkward grappling distances where firearms and blades are equally impractical. The weapon is concealable under standard gloves, activates on impact without any visible preparation, and turns bare-knuckle fighting into an armor-defeating capability.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — concealed augmented weapon permit",
+  "base_technologies": [
+    "Miniaturized linear magnetic acceleration",
+    "Impact-triggered kinetic multiplication",
+    "Articulated knuckle plate design"
+  ],
+  "specifications": "weight: 280 g (both hands)\nslug_mass: 50 g per knuckle plate\nforce_multiplication: ~5x base punch force\nrecharge_time: 0.4 seconds per strike\npower_source: Wrist-cuff capacitor bank, 500 strikes per charge\nconcealment: Under standard gloves\ntrigger: Impact-activated sensor",
+  "tactical_use": "The Jackhammer is deployed in situations where drawing a weapon is impossible, impractical, or would escalate a situation beyond desired levels. An operator wearing KK-3s can engage in what appears to be a bare-knuckle fight while delivering strikes with five times the expected force — an advantage that ends most encounters before the opponent understands what is happening. Against armored targets, the concentrated force of the accelerated tungsten slugs defeats soft armor and damages rigid plates through transmitted shock.",
+  "cultural_context": "The KK-3 has blurred the line between armed and unarmed combat in GLMZ. In a city where security screening is ubiquitous, a weapon that hides under gloves and activates on contact has made every handshake, every pat on the back, every casual touch a potential threat vector. Corporate security details have responded by adding concealed-weapon scanning to their screening protocols, but the KK-3's minimal metallic signature makes detection unreliable. The phrase 'loaded hands' has entered slang to describe anyone suspected of carrying concealed impact augmentation.",
+  "known_users": [
+    "Corporate undercover operatives",
+    "Close-quarters combat specialists",
+    "Executive protection details"
+  ],
+  "story_hooks": [
+    "A street fighter has been winning bare-knuckle matches with suspiciously devastating power — but no one can prove augmentation because the KK-3's signature is below detection thresholds. The betting pool around the fighter has attracted attention from people who want answers.",
+    "A prototype KK-4 has been stolen from Crucible — the upgraded model incorporates a shaped-charge element that turns each punch into a micro-explosion. The thief is testing it on people."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "knuckles",
+    "kinetic",
+    "concealed",
+    "tier 3",
+    "augmented",
+    "impact"
+  ],
+  "physical_description": "Articulated steel and carbon-fiber knuckle plates with dull gunmetal finish, scarred from repeated impacts and patched with mismatched repair tape. The striking surfaces are reinforced with tungsten inlays that catch light in dull glints. A bulky wrist cuff houses the capacitor bank—wrapped in worn rubber and threaded with visible conductive filament that snakes down the glove's interior, connections occasionally sparking with residual charge.",
+  "visual_prompt": "gritty neo-noir product photography, worn articulated knuckle plates with tungsten inlays, dull gunmetal finish, scuffed carbon fiber, bulky wrist-mounted capacitor cuff, conductive threading visible, industrial materials, scratched and patched, dark rain-slicked background, dramatic side lighting, cyberpunk melee weapon, detailed texture, weathered street-level tech"
+}

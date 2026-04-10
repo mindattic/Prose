@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Veteran",
-      "Community Anchor",
-      "Guilt-Carrier",
-      "Reluctant Authority",
-      "Keeper of Secrets"
+      "veteran",
+      "community anchor",
+      "guilt-carrier",
+      "reluctant authority",
+      "keeper of secrets"
     ]
   },
   "behavioral": {
@@ -298,7 +298,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Eastern European": {

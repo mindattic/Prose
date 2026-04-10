@@ -1,0 +1,40 @@
+{
+  "id": "57ebc501943c4a2d916ab73b6e4d80bf",
+  "type": "place",
+  "name": "The Glass Garden",
+  "aliases": [
+    "Glass Garden"
+  ],
+  "description": "A restaurant inside a temperature-controlled glass conservatory atop a Spire tower in downtown Chicago. The conservatory contains a working garden — real soil, real sunlight, real plants — and the restaurant serves what grows in it. The menu changes daily based on the harvest. On a summer day, dinner might be heirloom tomato salad, grilled lamb with mint from the garden, and strawberry shortcake with berries picked that morning. On a winter day, it's root vegetables, braised meats, and preserved fruit. The eight-course tasting menu is Φ260. Chef Soleil Lindqvist-Okafor considers the garden the chef and herself merely the translator.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Spire residents",
+    "Garden-to-table purists",
+    "People who miss sunlight on real soil"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.885,
+    "lng": -87.625
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_5"
+  ],
+  "related_entities": [
+    "Soleil Lindqvist-Okafor"
+  ]
+}

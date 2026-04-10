@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Lorekeeper",
-      "Community Anchor",
-      "Pacifist Stubborn",
-      "Grief-Carrier",
-      "Institutional Memory"
+      "lorekeeper",
+      "community anchor",
+      "pacifist stubborn",
+      "grief-carrier",
+      "institutional memory"
     ]
   },
   "behavioral": {
@@ -285,7 +285,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

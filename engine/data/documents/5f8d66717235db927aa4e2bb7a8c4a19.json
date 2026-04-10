@@ -1,0 +1,28 @@
+{
+  "name": "Fragment — Power Grid Anomaly Report",
+  "type": "document",
+  "document_type": "fragment",
+  "author": "Power Grid Monitoring / Unknown Engineer",
+  "date": "unknown",
+  "classification": "restricted",
+  "description": "Sector 14 drew 340% of baseline power for 0.7 seconds at 03:17:44.002. No equipment in Sector 14 accounts for this draw. The spike originated from [COORDINATES RESOLVE TO EMPTY LOT]. Recommend: [FIELD LEFT BLANK BY RESPONDING ENGINEER].",
+  "related_entities": [],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "What drew 340% power from an empty lot?",
+    "Why did the engineer leave the recommendation blank?",
+    "03:17 again — what happens at that time?"
+  ],
+  "tags": [
+    "document",
+    "fragment",
+    "incomplete",
+    "data log",
+    "power grid",
+    "sector 14",
+    "3:17 AM",
+    "anomaly",
+    "empty lot"
+  ],
+  "id": "5f8d66717235db927aa4e2bb7a8c4a19"
+}

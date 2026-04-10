@@ -11,7 +11,7 @@ const settings = JSON.parse(fs.readFileSync(
   path.join(process.env.LOCALAPPDATA, 'MindAttic', 'StreetSamurai', 'Settings.json'), 'utf8'));
 const API_KEY = settings.ApiKey;
 const MODEL = 'claude-sonnet-4-6';
-const ENGINE_DATA = path.join(__dirname, '..', 'engine_data');
+const ENGINE_DATA = path.join(__dirname, '..', 'engine', 'data');
 const NEWS_DIR = path.join(ENGINE_DATA, 'news');
 const BATCH_SIZE = 5; // articles per API call
 const PARALLEL = 3;

@@ -1,0 +1,70 @@
+{
+  "id": "a97d205e4eb49307fb52b9e21394af48",
+  "type": "place",
+  "name": "The Cartography Room",
+  "aliases": [
+    "Carto",
+    "The Map Room",
+    "TCR"
+  ],
+  "description": "The Cartography Room does not have a fixed location. It occupies a different space each week — a penthouse one Thursday, a private rail car the next, a sealed wing of a museum the Thursday after that. Invitations arrive as physical objects: hand-delivered brass cylinders containing a scroll with coordinates, a time, and a single-use biometric key that disintegrates after activation. The production value of these invitations alone would fund a Shelf bar for a month. The Cartography Room has been operating this way for nine years, and no one has ever identified its organizer. Theories range from a bored Spire heir to an Axiom social engineering experiment to an ELF testing information dissemination patterns. The truth is unknown. The parties are real.\n\nEach week's Cartography Room has a theme, executed with the resources of someone for whom money is a medium rather than a limitation. One week the space was a faithful recreation of a 1920s Chicago speakeasy, down to period-accurate cocktails and a jazz band playing instruments manufactured in that era. Another week it was a completely dark room — no light of any kind — where guests navigated by sound and touch and drank cocktails identified only by their temperature and texture. Another was held in a space made entirely of maps — walls, floor, ceiling, furniture, all constructed from antique and modern cartographic materials, the guests drinking among the geography of the world. The theme is never announced in advance. Arriving at the Cartography Room is always a discovery.\n\nThe guest list is the real mystery. Each week, approximately forty people receive invitations, and the selection appears to follow no discernible pattern. Spire executives attend alongside Circuit musicians. Laceworks artists arrive to find Shelf fixers. The curation seems designed to create maximum diversity of social tier, profession, and perspective within a single room — a forced collision of people who would never otherwise share a drink. For freelancers who receive an invitation — and some do, unpredictably, inexplicably — the Cartography Room is the single most valuable networking event in the corridor, because the person you're standing next to could be anyone, and whoever sent the invitation wanted the two of you in the same room. The question of why is the evening's real cocktail.",
+  "atmosphere": {
+    "sights": [
+      "Different every week — could be anything from a recreation of ancient Alexandria to an empty white void",
+      "The brass invitation cylinder, heavy in the hand, the only constant across all iterations",
+      "Forty people from every tier and profession, visibly uncertain of why they're here together",
+      "Whatever the theme demands — the budget has no apparent ceiling"
+    ],
+    "sounds": [
+      "Variable by theme — period-appropriate music, complete silence, environmental soundscapes",
+      "The particular sound of socially disparate people finding things to say to each other",
+      "No announcements, no introductions — the Cartography Room provides the space, not the structure",
+      "The hiss of the biometric key disintegrating after use — your invitation is gone"
+    ],
+    "smells": [
+      "Theme-dependent — one week wood smoke and old paper, the next ozone and rainwater",
+      "Cocktails matched to the theme with an attention to olfactory detail that suggests a professional perfumer",
+      "The brass of the invitation cylinder — metallic, specific, the smell of being chosen"
+    ],
+    "feel": "Unknowable. The Cartography Room feels like being inside someone else's dream — beautiful, disorienting, and shaped by an intelligence you can sense but cannot identify. The forced social diversity is either the point or a means to a point you'll never understand. Either way, you will remember the evening.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "Variable — the Cartography Room has no fixed location"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Forty weekly invitees from every tier, profession, and district — no pattern",
+    "Spire executives, Circuit artists, Shelf fixers, and everyone between",
+    "People who've been invited once and spend the rest of their lives hoping for another cylinder",
+    "The unknown organizer, presumably, watching from somewhere inside the room"
+  ],
+  "notable_locations": [
+    "Changes weekly — no fixed features, no permanent installations, nothing to find twice",
+    "The threshold — the moment of entry, when the week's theme reveals itself"
+  ],
+  "coordinates": {
+    "lat": 41.8796,
+    "lng": -87.6237
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 5",
+    "spire",
+    "chicago",
+    "mobile",
+    "invitation_only",
+    "mystery"
+  ],
+  "related_entities": [
+    "The Spire",
+    "Axiom",
+    "The Laceworks",
+    "The Circuit"
+  ]
+}

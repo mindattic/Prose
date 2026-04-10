@@ -30,12 +30,21 @@
     "trust",
     "corporate",
     "rooftop",
-    "tier 5"
+    "tier 5",
+    "van",
+    "boat",
+    "aircraft",
+    "helicopter",
+    "cargo",
+    "electric",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
     "LifeWire EchoForm Subvocal Communicator",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": "The Axiom Executive Helicopter cuts a sleek silhouette against GLMZ's grey skyline—carbon-composite fuselage in matte charcoal with brushed titanium accents, its four-blade rotor system wrapped in acoustic dampening panels that mute its signature whump to a whisper. Rain beads on its reinforced canopy; the interior visible through tinted windows glows soft amber from leather and recessed LED strips. Despite cutting-edge materials, wear shows in micro-scratches across the hull and the faint salt-stain residue from the lake winds.",
+  "visual_prompt": "Axiom Executive Helicopter, matte charcoal composite fuselage, brushed titanium accents, four-blade rotor, acoustic dampening panels, tinted canopy, rain-slicked surface, detailed product photography, cyberpunk neo-noir aesthetic, gritty industrial lighting, dark stormy background, professional luxury vehicle, worn future-tech, moody amber interior glow, studio product shot, high detail, shallow depth of field"
 }

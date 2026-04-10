@@ -1,0 +1,39 @@
+{
+  "name": "Virelux",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Vire",
+    "Spirelight",
+    "The White"
+  ],
+  "category": "recreational",
+  "subcategory": "designer euphoriant / Tier 5 luxury compound",
+  "manufacturer": "Helix Biosystems",
+  "description": "Virelux is Helix's ultra-premium designer recreational compound, available only through private prescription to verified Tier 5 clients — a bespoke SNT-derived euphoriant that is custom-tuned to each user's unique neural architecture on first use and recalibrates with each subsequent dose. The experience is described by users as 'the purest version of yourself, completely at peace, completely alive' — not a distortion of consciousness but its perfect expression. No two people experience Virelux identically.",
+  "method_of_use": "neural_direct",
+  "effects": [
+    "Profound, personalized euphoria calibrated to individual neural architecture",
+    "Feeling of being the best version of oneself",
+    "Perfect clarity and presence",
+    "Deep, quiet joy without agitation",
+    "Sense that everything in life has been leading to this moment and it is enough"
+  ],
+  "side_effects": [
+    "Ordinary life becomes difficult to value after extended use",
+    "Financial ruin — the price drives even Tier 5 users to extremes",
+    "Helix retains all neural calibration data from each use",
+    "Rare: the calibration process exposes vulnerabilities in neural architecture that Helix has been known to monetize",
+    "Nothing else is ever quite right again"
+  ],
+  "duration": "6-8 hours",
+  "addiction_risk": "extreme",
+  "tier_availability": "Tier 4-5",
+  "legality": "prescription",
+  "street_price": "Φ 4,200 per dose (no street version exists — yet)",
+  "cultural_context": "Virelux is a status symbol and a trap in equal measure. In the Spire, having a Virelux prescription signals that you are someone Helix has assessed as worth calibrating — a mark of neural distinction as much as wealth. The drug's social function in Tier 5 is complex: it's simultaneously a private experience (too personal to share) and a public declaration (everyone knows you use it). The fact that Helix retains all calibration data is an open secret that Spire users accept as the cost of admission. What Helix does with two decades of intimate neural portraits of the most powerful people in GLMZ is a question no one in a position to investigate seems eager to pursue.",
+  "story_hooks": [
+    "A Tier 5 Virelux user has discovered that her calibration data — her most intimate neural self — has been sold to a political consulting firm that is using it to construct messaging specifically designed to manipulate her, and she doesn't know whether to go to the authorities or go to war with Helix directly",
+    "Someone has stolen a Virelux dose intended for a specific Spire user — the calibration is keyed to that person's neural architecture, and using it with a different neural profile produces something Helix has never documented and explicitly says is impossible",
+    "The first street version of Virelux has appeared — crude, uncalibrated, and producing experiences that range from the transcendent to the catastrophic depending on the user's neural makeup — and whoever synthesized it clearly had access to Helix's proprietary SNT formulation process"
+  ]
+}

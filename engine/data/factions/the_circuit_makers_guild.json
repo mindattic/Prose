@@ -1,0 +1,49 @@
+{
+  "id": "e553e70ac70ec38e5a59109e8fc205bd",
+  "type": "faction",
+  "name": "The Circuit Makers Guild",
+  "aliases": [
+    "Makers Guild",
+    "CMG",
+    "The Makers"
+  ],
+  "motto": "Why buy it when you can build it better?",
+  "description": "The Circuit Makers Guild is a community of approximately 2,000 makers, tinkerers, hardware hackers, and DIY engineers who share workspace, tools, knowledge, and a collective conviction that the corporate monopoly on technology production can be challenged by ordinary people with soldering irons and stubbornness. The Guild operates six 'makerspaces' — community workshops equipped with fabrication tools, 3D printers, electronics workbenches, and the accumulated knowledge of people who have been taking things apart and putting them back together better since before there was a word for it.\n\nThe Guild's output ranges from practical (repaired appliances, modified augmentations, improvised medical devices for Shelf clinics) to creative (custom electronics art, experimental BCI modifications, homemade drones) to politically significant (open-source alternatives to corporate technology, augmentation firmware modifications that bypass corporate restrictions, and the occasional improvised device that the corponations would prefer didn't exist). The Guild is, in practice, the R&D department of GLMZ's underground economy.\n\nThe Guild maintains an open-door policy: anyone can join, anyone can learn, and the only requirement is a willingness to share what you know with others. This has made the makerspaces some of the most genuinely diverse spaces in GLMZ — corporate engineers sit next to Shelf tinkerers, learning from each other in a setting where expertise matters more than tier number.",
+  "ideology": "Technology belongs to everyone. The corponations' monopoly on manufacturing and design is not natural but imposed, and every device an ordinary person builds or modifies is an act of reclaiming technological agency. The Guild's politics are expressed through practice rather than protest: don't argue about access to technology. Build it yourself.",
+  "territory": "Six makerspaces: three in the Circuit, two in the Shelf, one in Old Harbor. The Circuit's main makerspace, called 'the Bench,' is the Guild's social and technical hub.",
+  "leadership": "No formal leader. The Guild is managed by makerspace coordinators who maintain facilities and organize programming. The most respected figure is Master Maker Indira Osei-Park, a 55-year-old engineer who has mentored hundreds of makers and whose custom devices are legendary.",
+  "methods": [
+    "Community makerspaces providing tools and workspace",
+    "Skill-sharing workshops teaching technical skills to anyone interested",
+    "Open-source technology development",
+    "Repair services for community members who can't afford corporate prices",
+    "Augmentation modification and firmware hacking",
+    "Collaborative design projects addressing community needs"
+  ],
+  "resources": [
+    "2,000 makers with diverse technical skills",
+    "Six equipped makerspaces with fabrication tools",
+    "A culture of knowledge-sharing that produces continuous innovation",
+    "Indira Osei-Park's expertise and mentorship",
+    "Relationships across tiers — the Guild is genuinely cross-class",
+    "A library of open-source designs and modifications"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Guild represents the democratization of technology — the proof that ordinary people, given tools and knowledge, can challenge corporate monopolies from a workbench.",
+  "story_hooks": [
+    "A Guild member has built something extraordinary — a device that does something no commercial technology can do, using principles nobody else has figured out. Corponations are interested. So are less legitimate organizations. The maker just wanted to solve a problem and is in over their head.",
+    "Axiom has filed a patent claim covering a design technique the Guild has been using for years. If the claim is upheld, half the Guild's projects become illegal. The Guild needs to prove prior art, but their documentation practices are, charitably, informal."
+  ],
+  "tags": [
+    "faction",
+    "cultural",
+    "makers",
+    "tech",
+    "diy",
+    "circuit",
+    "shelf",
+    "old harbor",
+    "community"
+  ]
+}

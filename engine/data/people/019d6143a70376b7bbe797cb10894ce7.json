@@ -94,11 +94,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Prosthetics Fitter",
-      "Community Elder",
-      "Craftsman",
-      "Mentor",
-      "Working Poor Adjacent"
+      "prosthetics fitter",
+      "community elder",
+      "craftsman",
+      "mentor",
+      "working poor adjacent"
     ]
   },
   "behavioral": {
@@ -277,7 +277,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

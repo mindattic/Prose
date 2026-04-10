@@ -94,11 +94,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Street Doc",
-      "Trauma Surgeon",
-      "Unlicensed",
-      "Veteran",
-      "Morally Anchored"
+      "street doc",
+      "trauma surgeon",
+      "unlicensed",
+      "veteran",
+      "morally anchored"
     ]
   },
   "behavioral": {
@@ -277,7 +277,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

@@ -1,0 +1,47 @@
+{
+  "id": "ee302d062d484ed681272db4c28a0e9b",
+  "name": "Ossuary Arms Memento Vivere OA-7 'Momento'",
+  "type": "weapon",
+  "aliases": [
+    "Momento",
+    "OA-7",
+    "Memento Vivere",
+    "Remember"
+  ],
+  "category": "exotic",
+  "description": "A unique electromagnetic weapon that fires a round containing a compressed data packet — a BCI-readable message encoded in the round's electromagnetic signature that the target's neural interface involuntarily processes on impact. The round delivers both physical damage and an information payload that forces the target's BCI to display a pre-loaded message, image, or data burst.\n\nOssuary Arms designed the OA-7 as a conceptual weapon — the idea that violence can carry a message is as old as warfare, but the Momento literalizes it. An operator loads a data packet into each round alongside the conventional kinetic payload. When the round strikes a BCI-equipped target, the electromagnetic burst from the impact interfaces with their neural hardware and displays the encoded content whether they want to see it or not.\n\nThe weapon has found use in psychological warfare, where the content of the data payload is as important as the physical damage. Threats, warnings, demands, and even advertisements have been delivered via Momento round. The weapon has also been used to deliver malware to BCI systems — a round that hacks as it kills.",
+  "manufacturer": "OSSUARY ARMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed as conventional weapon — data payload legality varies by content",
+  "base_technologies": [
+    "Electromagnetic data encoding in projectile",
+    "BCI-interface forced data injection",
+    "Kinetic/information hybrid payload"
+  ],
+  "specifications": "caliber: 7.62mm with embedded electromagnetic data module\neffective_range: 50-600 meters\nrate_of_fire: Semi-automatic, 1 round per 2 seconds\ncapacity: 8-round magazine\nweight: 4.8 kg\npower_source: Data encoding: pre-charged electromagnetic module per round",
+  "tactical_use": "The Momento is deployed in psychological warfare and intelligence operations where the message is as important as the bullet. Operators pre-load rounds with ultimatums, intelligence data, or malware payloads, then engage targets at range. Even non-fatal hits deliver the data payload, meaning the weapon can be aimed at extremities to wound and deliver a message simultaneously. In intelligence operations, the OA-7 has been used to inject tracking malware into a target's BCI — shot, infected, and tracked, in a single engagement.",
+  "cultural_context": "Ossuary Arms continues their philosophical approach to weaponry with the Memento Vivere — Latin for 'remember to live,' a counterpoint to their Memento Mori sniper rifle. The concept of a bullet carrying a message has captured the imagination of GLMZ's artistic and military communities alike. Some operators compose elaborate data payloads as a form of creative expression — the last thing a target sees is not a muzzle flash but a personally-crafted message from the person who shot them.",
+  "known_users": [
+    "Ossuary Arms collectors",
+    "Psychological warfare specialists",
+    "Intelligence operators"
+  ],
+  "story_hooks": [
+    "A series of Momento rounds have been recovered from non-fatal shootings across multiple tiers. Each round contains the same data payload — a countdown timer that is currently at 72 hours. Nobody knows what happens when it reaches zero, and the timer is displayed on every victim's BCI without their ability to dismiss it.",
+    "A black-hat hacker has begun selling pre-loaded Momento rounds containing BCI rootkit malware. A single non-fatal hit gives the buyer complete access to the target's neural interface. The rounds are being marketed to stalkers, corporate espionage operators, and worse."
+  ],
+  "ammunition_type": [
+    "7.62mm electromagnetic data-encoded"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "BCI",
+    "data-weapon",
+    "psychological",
+    "information",
+    "tier 3"
+  ],
+  "physical_description": "The Momento is a compact electromagnetic pistol with a reinforced polymer frame scorched dark grey and scarred from field use, its barrel wrapped in copper-wound coils that dissipate heat through weathered aluminum fins. The slide bears Ossuary's mark—a stylized skull over crossed syringes—and a small modular cartridge port on the left side accepts data-packet rounds. Its grip is wrapped in fraying black tape, and micro-LED indicators along the frame glow sickly amber when armed.",
+  "visual_prompt": "Compact electromagnetic pistol, dark grey polymer frame, copper coil barrel, weathered aluminum heat fins, micro-LED indicators glowing amber, modular cartridge port, skull-and-syringes manufacturer mark, frayed black tape grip, industrial metal finish, detailed product photography, neo-noir gritty aesthetic, dark background, studio lighting, worn military hardware, cyberpunk near-future technology"
+}

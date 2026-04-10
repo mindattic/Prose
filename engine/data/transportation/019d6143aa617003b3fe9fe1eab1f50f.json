@@ -29,7 +29,11 @@
     "ai",
     "corporate",
     "control",
-    "tier 5"
+    "tier 5",
+    "van",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -37,5 +41,7 @@
     "Silk Gland Integration",
     "Vesna Szymczak-Ranginui",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": "A sleek teardrop-shaped cabin of reinforced composite and privacy glass, approximately 4 meters long and 2.5 meters wide, suspended from a motorized carriage that grips overhead cable with ceramic-lined grip teeth. The exterior panels are brushed titanium-grey with faint scuff marks and salt-spray oxidation, while the interior visible through tinted windows glows with soft amber ambient lighting. Condensation streaks the glass from the constant temperature differential between the heated cabin and the cold rain-laden air of the upper atmosphere.",
+  "visual_prompt": "luxury cable car cabin suspended between skyscrapers, teardrop-shaped composite and reinforced glass, titanium-grey with weathering, privacy-tinted windows glowing amber, gripping cable system, rain-slicked neo-noir aesthetic, gritty near-future tech, dark stormy sky backdrop, detailed product photography, industrial decay meets high-tech, cinematic lighting"
 }

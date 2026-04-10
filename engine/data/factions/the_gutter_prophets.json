@@ -1,0 +1,47 @@
+{
+  "id": "3df1906ee7024bdebabf55a789429021",
+  "type": "faction",
+  "name": "The Gutter Prophets",
+  "aliases": [
+    "Gutter",
+    "Prophets",
+    "GP"
+  ],
+  "motto": "We see what the gutters see. The gutters see everything.",
+  "description": "The Gutter Prophets are a loose criminal intelligence network of approximately 100 members drawn from GLMZ's most overlooked population: the homeless, the destitute, the people who sit on street corners and sleep in doorways and occupy the spaces that everyone else walks past without seeing. The Prophets have weaponized invisibility — they watch, they listen, they remember, and they sell what they know.\n\nThe network was organized by a formerly homeless woman named Oracle (legal name: Patience Alvarez-Okonkwo) who recognized that the people the city treats as invisible occupy the city's most valuable surveillance positions: street corners, building entrances, transit stations, back alleys. They see who comes and goes. They hear conversations that speakers assume are private because the only person nearby is a nobody sleeping under a blanket. The Prophets collect this intelligence and sell it — to private investigators, to criminal organizations, to corporate security consultants, and to anyone who understands that the most valuable intelligence comes from the places nobody thinks to look.\n\nThe Prophets' intelligence is human-level rather than technical — they can't hack a network or intercept a BCI transmission, but they can tell you who met whom, when, where, and what they looked like while doing it. In a city obsessed with digital surveillance, the Prophets exploit the oldest surveillance technology there is: human eyes in public spaces.",
+  "ideology": "The invisible see everything. The Prophets believe that the same social forces that make them invisible give them power — the power of observation from a position that nobody monitors because nobody considers them worth monitoring.",
+  "territory": "Everywhere. Prophets operate in every district, on every major thoroughfare, in every transit station. Their 'headquarters' is wherever Oracle happens to be sitting.",
+  "leadership": "Oracle — Patience Alvarez-Okonkwo — coordinates the network from the street. She has a photographic memory, a talent for pattern recognition, and the absolute loyalty of people she fed and sheltered when nobody else would.",
+  "methods": [
+    "Street-level surveillance by members positioned in public spaces",
+    "Intelligence aggregation and pattern analysis by Oracle",
+    "Sale of human intelligence to paying clients",
+    "Counter-surveillance detection — Prophets notice when someone else is watching",
+    "Missing persons location — Prophets often know where people go when they disappear",
+    "Early warning — Prophets detect unusual activity before it registers on any system"
+  ],
+  "resources": [
+    "100 members positioned across GLMZ's public spaces",
+    "Oracle's photographic memory and analytical intelligence",
+    "Invisibility — the Prophets' greatest asset is that nobody considers them observers",
+    "Comprehensive street-level intelligence no technical system can replicate",
+    "Loyalty among members who owe Oracle their survival",
+    "Relationships with clients who value human intelligence"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Prophets represent the power of the overlooked — proof that the people a society ignores can see that society more clearly than anyone within it.",
+  "story_hooks": [
+    "Oracle has noticed a pattern: over the past month, seventeen people have entered a specific building in the Circuit and never come out. No system has flagged this because the people are entering legally, through the front door. But Oracle's people sit outside that building every day, and they count.",
+    "A client has hired the Prophets to find someone — and then hired a second group to eliminate the Prophets who know the target's location. Oracle knows about the second hire because her people saw it happen."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "intelligence",
+    "surveillance",
+    "street",
+    "invisible",
+    "human intel"
+  ]
+}

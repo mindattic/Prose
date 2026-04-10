@@ -96,11 +96,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Investigator",
-      "Institutional",
-      "Methodical",
-      "Morally Compromised",
-      "High Perception"
+      "investigator",
+      "institutional",
+      "methodical",
+      "morally compromised",
+      "high perception"
     ]
   },
   "behavioral": {
@@ -283,7 +283,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

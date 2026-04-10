@@ -34,7 +34,14 @@
     "dark",
     "cold",
     "water",
-    "lake"
+    "lake",
+    "subterranean",
+    "rail",
+    "train",
+    "van",
+    "boat",
+    "electric",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -44,5 +51,7 @@
     "GLMZ",
     "Patient Zero",
     "The Third Rail"
-  ]
+  ],
+  "physical_description": "The Underworld Raft is a utilitarian craft of mismatched construction: weathered wood planking lashed with corroded steel cable, or salvaged inflatable pontoons patched with industrial sealant and duct tape. Most sport a jury-rigged pole-and-pulley steering system, with some upgraded versions carrying a gutted electric motor salvaged from construction equipment, its battery pack wrapped in waterproof fabric and bolted to the frame. The entire raft bears the patina of constant exposure to cold, mineral-laden water—rust blooms, algae stains, and inexplicable corrosion patterns that spread faster than they should.",
+  "visual_prompt": "gritty neo-noir underground raft, weathered wood and corroded steel, salvaged electric motor, duct tape and industrial sealant, dark flooded tunnel setting, moody cinematic lighting, detailed product photography, worn cyberpunk aesthetic, cold blue-gray color palette, water-stained and patinated materials, dystopian industrial decay"
 }

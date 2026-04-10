@@ -1,0 +1,53 @@
+{
+  "id": "6eb237545ac109e14a8dc912ca88b608",
+  "name": "Crucible Industries CT-X 'Gauntlet'",
+  "type": "automaton",
+  "classification": "Training",
+  "aliases": [
+    "Gauntlet",
+    "The Obstacle",
+    "Iron Sensei"
+  ],
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "description": "The CT-X Gauntlet is a multi-discipline combat training platform that goes well beyond boxing. Standing two meters tall on a reinforced bipedal frame, it is built to practice striking, grappling, throws, and ground fighting. Its limbs feature variable-resistance joints that can simulate everything from a limp training dummy to a 150-kilogram wrestler fighting for a submission. The frame is wrapped in a synthetic skin material that approximates human tissue density, allowing practitioners to develop accurate targeting for pressure points and joint locks.\n\nThe Gauntlet's martial arts library contains over 40 codified fighting systems, from Muay Thai to Brazilian Jiu-Jitsu to Krav Maga, each programmed by world-class practitioners in motion-capture sessions. The machine can flow between styles mid-engagement, testing a trainee's ability to read and adapt to changing threats. At advanced settings, the Gauntlet doesn't telegraph its style switches — it reads the trainee's stance and base, identifies the style they're least prepared for, and shifts to exploit those gaps.\n\nCrucible Industries markets the Gauntlet as a professional-grade training tool for military special operations and executive protection teams. The reality is that its primary market is wealthy martial arts enthusiasts who want a training partner that never gets tired, never gets injured, and never holds back. The secondary market is corporate security firms that use it to evaluate combatives proficiency in their operatives. The tertiary market — which Crucible doesn't acknowledge — is underground fighting rings that use modified Gauntlets as opponents.",
+  "tier_availability": "Tier 3",
+  "legality": "Restricted — licensed purchasers only, modification voids warranty and legality",
+  "autonomy_level": "Advanced adaptive — multi-style combat AI, reads and exploits weaknesses",
+  "dimensions": "2.0m height, 0.8m width, reinforced bipedal frame",
+  "weight": "180 kg",
+  "power_source": "Hardline power with 2-hour battery backup",
+  "locomotion": "Bipedal, full martial arts mobility including ground transitions",
+  "armament": [
+    "Synthetic-skinned striking limbs (variable force)",
+    "Grappling-capable joint system",
+    "Takedown and throw capability"
+  ],
+  "sensors": [
+    "Full-body opponent tracking",
+    "Stance and weight distribution analysis",
+    "Joint angle monitoring (submission positions)",
+    "Heart rate and stress detection"
+  ],
+  "countermeasures": "Multiple safety systems: force ceiling per user weight class, automatic release on submissions after 3-second hold, tap-detection sensors, panic button on all four walls of training space. Modified units with disabled safety systems have caused serious injuries.",
+  "known_deployments": [
+    "Military special forces training centers",
+    "Executive protection academies",
+    "High-end private dojos",
+    "Underground fighting venues (modified)"
+  ],
+  "story_hooks": [
+    "An underground ring is offering 10,000 Φ to anyone who can last three rounds against a fully unlocked Gauntlet. The machine has put six people in the hospital. The seventh might be a character who needs the money badly enough.",
+    "A Gauntlet unit has been stolen from a military base. Its combat AI contains classified combatives techniques from three different special operations programs. The buyer could train an army."
+  ],
+  "cultural_context": "The Gauntlet represents the point where training equipment becomes dangerous equipment. The modification community around it is extensive and entirely illegal, with forums sharing guides for disabling safety limiters and uploading custom aggressive AI profiles.",
+  "tags": [
+    "automaton",
+    "training",
+    "martial arts",
+    "grappling",
+    "military",
+    "crucible",
+    "advanced",
+    "underground"
+  ]
+}

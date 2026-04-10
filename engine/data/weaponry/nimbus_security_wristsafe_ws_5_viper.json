@@ -1,0 +1,47 @@
+{
+  "id": "cc00edb6d5c61a3d126942920ccce615",
+  "name": "Nimbus Security WristSafe WS-5 'Viper'",
+  "type": "weapon",
+  "aliases": [
+    "Viper",
+    "WS-5",
+    "Defense Bracelet",
+    "Smart Bangle"
+  ],
+  "category": "self_defense",
+  "description": "A chunky fashion bracelet integrating three self-defense functions: a 60,000-volt contact stun, a short-range pepper spray cartridge (single burst, 1.5-meter range), and a GPS-linked distress beacon that transmits the wearer's location to emergency contacts. The WS-5 is activated by voice command, specific wrist gestures, or a hidden button sequence, with each function mapped to a different activation method to prevent accidental deployment.\n\nNimbus Security positioned the WS-5 as a comprehensive personal safety ecosystem compressed into a wearable form factor. The bracelet's exterior is brushed stainless steel with inlaid composite panels that conceal the spray nozzle, stun electrodes, and antenna. The pepper spray cartridge is a sealed, replaceable module that clicks into the bracelet's inner housing — Nimbus sells refill cartridges at Φ20 each. The stun function recharges wirelessly, and the distress beacon uses the wearer's phone connection for transmission.\n\nThe WS-5 retails at Φ520, making it a mid-tier investment. Nimbus markets it through fashion-forward channels, partnering with GLMZ style influencers who normalize wearing it as an accessory rather than a weapon. The bracelet has become popular among young professionals who want comprehensive protection without carrying multiple devices. Its main limitation is the single-burst pepper spray — once deployed, that function is unavailable until the cartridge is replaced.",
+  "manufacturer": "NIMBUS SECURITY",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Multi-function defense integration",
+    "Voice/gesture/button tri-modal activation",
+    "GPS-linked distress beacon"
+  ],
+  "specifications": "stun voltage: 60,000V at 3.5 milliamps\npepper spray range: 1.5 meters (single burst)\npepper spray SHU: 3.5 million\ndistress beacon: GPS location to emergency contacts via phone\nactivation modes: voice command, wrist gesture, hidden button\nstun charges per battery: 15\nbracelet material: brushed stainless steel + composite\nweight: 78 g\ncost: Φ520\nrefill cartridge: Φ20",
+  "tactical_use": "The WS-5's three functions are designed for escalating threat levels. At range (1-2 meters), deploy the pepper spray burst to create distance. At contact range, use the stun function to break a grab or deter an attacker. If unable to physically defend, activate the distress beacon to alert emergency contacts with your GPS location. Practice the activation gestures until they are muscle memory — in a crisis, fumbling with a voice command or button sequence costs seconds you don't have.",
+  "cultural_context": "The WS-5 represents the convergence of fashion, technology, and personal defense that defines GLMZ's consumer landscape. It is worn by people who refuse to choose between style and safety, and Nimbus's influencer marketing has successfully positioned it as a desirable accessory rather than a concession to danger. The bracelet has spawned social media trends where wearers share their WS-5 color combinations and customization, inadvertently advertising their defensive capabilities to potential attackers — a tension Nimbus has not addressed.",
+  "known_users": [],
+  "story_hooks": [
+    "A WS-5 distress beacon was activated during a kidnapping, allowing emergency contacts to track the victim's movement in real-time — but the kidnappers discovered the bracelet and destroyed it, raising questions about whether visible defense technology makes you a target for more thorough attackers.",
+    "Nimbus's gesture-recognition algorithm has been spoofed — a signal broadcast in a crowded venue caused every WS-5 in range to deploy its pepper spray simultaneously, hospitalizing dozens."
+  ],
+  "ammunition_type": [
+    "OC spray cartridge (replaceable)"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "disguised",
+    "bracelet",
+    "multi_function",
+    "stun",
+    "pepper_spray",
+    "distress_beacon",
+    "wearable",
+    "tier_2"
+  ],
+  "physical_description": "A heavy brushed stainless steel bracelet with inlaid composite panels that have begun to show micro-scratches and patina from daily wear. The band is roughly two centimeters wide, its surface interrupted by subtle seams marking the concealed spray nozzle and contact points for the stun function. A small, recessed button sits flush against the underside, nearly invisible unless you know where to look.",
+  "visual_prompt": "worn stainless steel security bracelet, brushed metal finish with composite inlays, chunky neo-noir wearable, gritty product photography, rain-slicked surface, dark studio background, industrial design, close-up detail, cyberpunk personal safety device, scuffed and lived-in, moody lighting, high contrast"
+}

@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Precision Artisan",
-      "Nocturnal",
-      "Archive Hoarder",
-      "Reluctant Criminal",
-      "Identity Scholar"
+      "precision artisan",
+      "nocturnal",
+      "archive hoarder",
+      "reluctant criminal",
+      "identity scholar"
     ]
   },
   "behavioral": {
@@ -278,7 +278,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

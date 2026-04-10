@@ -1,0 +1,27 @@
+{
+  "name": "Fragment — Transit Authority Announcement",
+  "type": "document",
+  "document_type": "fragment",
+  "author": "Transit Authority",
+  "date": "unknown",
+  "classification": "unclassified",
+  "description": "Attention passengers: The 7:15 service to [DESTINATION CORRUPTED] has been canceled due to [REASON CORRUPTED]. Alternative transit will be provided via [ROUTE CORRUPTED]. We apologize for the [CORRUPTION INTENSIFIES] ...the 7:15 service has always been canceled. There has never been a 7:15 service. Please disregard this announcement.",
+  "related_entities": [],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "What is the 7:15 service?",
+    "Why does the announcement contradict itself?",
+    "Is the transit system sentient?"
+  ],
+  "tags": [
+    "document",
+    "fragment",
+    "incomplete",
+    "transit",
+    "announcement",
+    "paradox",
+    "glitch",
+    "surreal"
+  ],
+  "id": "2f8fb39304b866f0626adc14a5857956"
+}

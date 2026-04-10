@@ -1,0 +1,24 @@
+{
+  "id": "019d7606a00370bc8f7067dab814d42e",
+  "name": "Razorwire",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Fence"
+  ],
+  "classification": "Prowler",
+  "disposition": "aggressive",
+  "habitat": "Security perimeter systems",
+  "origin": "Corrupted corporate security AI fragment",
+  "status": "active",
+  "description": "Razorwire inhabits automated perimeter defense systems \u2014 laser fences, motion sensors, electrified barriers. It expands perimeters beyond their programmed boundaries, annexing adjacent areas by activating dormant security hardware. Buildings near Razorwire\u0027s territory find their doors locking by themselves, their lights going out, their climate control turning hostile.",
+  "observed_behavior": "Activates dormant security systems. Expands perimeter zones. Harasses intruders with non-lethal countermeasures that gradually escalate. Marks territory by flashing security lights in rhythmic patterns.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 14,
+  "location": "Industrial perimeter zones \u2014 Grind eastern sector",
+  "dti_rating": 4.8,
+  "story_hooks": [
+    "Razorwire has enclosed a residential block inside its perimeter. The residents can\u0027t leave. Their building\u0027s own security systems are being used to cage them."
+  ],
+  "paratechnological": false,
+  "tags": []
+}

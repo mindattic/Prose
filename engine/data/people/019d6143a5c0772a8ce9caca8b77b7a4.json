@@ -98,7 +98,7 @@
       "master mechanic",
       "unlicensed aug repair",
       "prosthetic arm",
-      "E.L.F. devotee",
+      "e.l.f. devotee",
       "institutional knowledge"
     ]
   },
@@ -282,7 +282,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

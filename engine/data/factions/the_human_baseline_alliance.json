@@ -1,0 +1,48 @@
+{
+  "id": "9e2a80cd416bd0d81036f533e68f0d92",
+  "type": "faction",
+  "name": "The Human Baseline Alliance",
+  "aliases": [
+    "HBA",
+    "Baseline",
+    "The Naturals"
+  ],
+  "motto": "Human first. Human enough.",
+  "description": "The Human Baseline Alliance is a political advocacy group of approximately 7,000 members that occupies an uncomfortable position in GLMZ's political landscape: they advocate for unaugmented human rights without the religious framework of the Unbroken Flesh Tabernacle and without the anti-technology extremism of movements that want to abolish augmentation entirely. The HBA simply argues that choosing not to augment should not be a social or economic death sentence.\n\nIn GLMZ, the unaugmented face increasing discrimination: employers prefer augmented workers, social spaces are designed for augmented perception, public services assume BCI access, and the cultural assumption that augmentation is progress makes the unaugmented seem backward, stubborn, or poor. The HBA campaigns against this discrimination through legal advocacy, public education, and political lobbying for 'baseline accessibility' — the requirement that public services, employment, and social participation remain accessible to unaugmented humans.\n\nThe HBA is politically moderate and deliberately secular, which distinguishes it from the Tabernacle and makes it palatable to mainstream political observers. It doesn't oppose augmentation — many of its members are augmented themselves, advocating for the rights of unaugmented family members or out of principle. This moderation makes the HBA effective in legislative contexts where the Tabernacle's religious fervor is counterproductive.",
+  "ideology": "Augmentation should be a choice, not a requirement. The unaugmented deserve equal access to employment, services, and social participation. The HBA's position is one of accommodation rather than opposition — make room for everyone, augmented or not.",
+  "territory": "Offices in the Circuit and Shelf. Active chapters in every district.",
+  "leadership": "Chairperson Gabriel Okafor-Johansson, a former employment lawyer who became an advocate after representing dozens of clients fired for being unaugmented.",
+  "methods": [
+    "Legal advocacy for unaugmented workers' rights",
+    "Lobbying for baseline accessibility requirements",
+    "Public education about augmentation discrimination",
+    "Pro bono legal representation for discrimination cases",
+    "Coalition building with labor and civil rights organizations",
+    "Research and publication on the economic impact of augmentation requirements"
+  ],
+  "resources": [
+    "7,000 members across augmented and unaugmented populations",
+    "Legal team specializing in employment and accessibility law",
+    "Offices in the Circuit and Shelf",
+    "Gabriel Okafor-Johansson's legal expertise and advocacy skills",
+    "Coalition relationships with the UWF and other organizations",
+    "Research data on augmentation discrimination"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The HBA represents the right to remain human in a world that increasingly defines 'human' as 'augmented' — and the political courage of insisting that a slower pace is not the same as standing still.",
+  "story_hooks": [
+    "A major employer has announced an augmentation requirement for all positions — including roles where augmentation provides no functional benefit. The HBA is filing a landmark legal challenge, and the employer has hired lobbyists to rewrite the law before the case is heard.",
+    "An HBA member who is publicly unaugmented has been discovered to have a hidden BCI — installed against their will years ago, active and transmitting. The implications for the HBA's credibility and for the member's autonomy are devastating."
+  ],
+  "tags": [
+    "faction",
+    "political",
+    "rights",
+    "unaugmented",
+    "baseline",
+    "circuit",
+    "shelf",
+    "advocacy"
+  ]
+}

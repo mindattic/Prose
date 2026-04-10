@@ -30,7 +30,13 @@
     "rooftop",
     "shadow",
     "vehicle",
-    "drone"
+    "drone",
+    "truck",
+    "cargo",
+    "civilian",
+    "electric",
+    "ground",
+    "aerial"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -40,5 +46,7 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "TESSERA PA-5 'Attendant'",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
-  ]
+  ],
+  "physical_description": "The Arcturus Mule is a boxy, utilitarian frame of weathered titanium-alloy composite with a reinforced cargo bay dominating its center mass. Four heavy-duty rotors extend from articulated arms, their blades scarred from years of navigating GLMZ's cluttered airspace and acid rain. Its hull bears faded Iron Point markings and countless dents, stress fractures sealed with industrial epoxy, while running lights flicker amber through corroded lens covers.",
+  "visual_prompt": "gritty neo-noir cargo drone, weathered titanium composite, four heavy rotors, industrial design, acid-rain patina, faded markings, damaged lens covers, worn metal surfaces, detailed product photography, dark moody lighting, rain-slicked surfaces, cyberpunk logistics aesthetic, dystopian infrastructure"
 }

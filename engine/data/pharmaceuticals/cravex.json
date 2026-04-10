@@ -1,0 +1,37 @@
+{
+  "name": "Cravex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "the Quiet",
+    "Crave-Kill",
+    "Hushpill"
+  ],
+  "category": "withdrawal_aid",
+  "subcategory": "craving_suppressor",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Cravex is a selective mu-opioid and dopamine D3 receptor partial antagonist designed to suppress drug craving signals without blunting emotional range or reward capacity. It works by modulating the wanting circuitry specifically, leaving liking and general affect intact. Considered the gold standard craving suppressor for Tier 2-3 recovery programs.",
+  "method_of_use": "oral",
+  "effects": [
+    "Craving suppression without emotional blunting",
+    "Reduced cue-triggered relapse response",
+    "Preserved natural reward sensitivity",
+    "Mild anxiolytic effect"
+  ],
+  "side_effects": [
+    "Dry mouth",
+    "Mild insomnia in first week",
+    "Occasional dissociation from habitual desire states — users report feeling 'like a stranger in their own wants'",
+    "Rare: anhedonia if dosed incorrectly"
+  ],
+  "duration": "18-24 hours per dose",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "prescription",
+  "street_price": "Φ18 per tablet",
+  "cultural_context": "Cravex is the recovery drug people are willing to admit they take. In Tier 2 working neighborhoods it has near-zero stigma — it's understood as a tool, not a crutch. Recovery clinics dispense it in weekly blister packs. On the Shelf, it's stolen from clinics and sold at markup to people who can't access prescriptions.",
+  "story_hooks": [
+    "A Shelf dealer has been quietly taking Cravex to quit his own product — but the clinic that prescribes it is in Tier 3 and won't serve his address",
+    "Someone discovers that a loved one's personality shift isn't emotional — they've been on Cravex for two years and have genuinely lost the ability to want things habitually",
+    "A Novafold whistleblower claims the company deliberately calibrated Cravex's low addiction risk to be just high enough to ensure repeat prescriptions"
+  ]
+}

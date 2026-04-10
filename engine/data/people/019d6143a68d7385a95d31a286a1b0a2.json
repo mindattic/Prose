@@ -100,7 +100,7 @@
       "bioluminescent",
       "nomad",
       "water-tech",
-      "Axiom-fugitive"
+      "axiom-fugitive"
     ]
   },
   "behavioral": {
@@ -213,7 +213,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

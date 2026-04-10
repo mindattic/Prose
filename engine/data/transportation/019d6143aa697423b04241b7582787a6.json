@@ -30,10 +30,17 @@
     "freedom",
     "vehicle",
     "tier 1",
-    "tier 3"
+    "tier 3",
+    "ground",
+    "motorcycle",
+    "bicycle",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
     "The Neon Vipers"
-  ]
+  ],
+  "physical_description": "A skeletal aluminum frame painted in faded industrial gray, its welds visible and rough. The 2kW hub motor whines in the rear wheel, surrounded by mismatched spoke repairs and a chain held together with wire and prayer. A cracked polymer seat sits atop the frame, and the battery pack—a bulky rectangle of scuffed lithium cells—is bolted directly to the downtube with no aesthetic pretense.",
+  "visual_prompt": "worn electric bicycle, stripped aluminum frame, faded gray paint, exposed welds, mismatched repairs, hub motor, cracked seat, bolted battery pack, industrial gritty neo-noir, rain-slicked, product photography, dark wet concrete background, neon reflection, cyberpunk utility aesthetic, detailed weathering"
 }

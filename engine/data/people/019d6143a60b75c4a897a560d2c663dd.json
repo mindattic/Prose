@@ -97,12 +97,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Archivist",
-      "Community Elder",
-      "Oral Historian",
-      "Document Authenticator",
-      "Caregiver",
-      "Secret Keeper"
+      "archivist",
+      "community elder",
+      "oral historian",
+      "document authenticator",
+      "caregiver",
+      "secret keeper"
     ]
   },
   "behavioral": {
@@ -272,7 +272,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

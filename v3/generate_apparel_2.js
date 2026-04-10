@@ -178,7 +178,7 @@ const CATEGORIES = [
     count: 100,
     prompt: `Generate {count} TOPS (upper body garments, NOT jackets/outerwear) for GLMZ. Items {rankStart} through {rankEnd}.
 
-Include a diverse mix of: t-shirts, tank tops, dress shirts, blouses, sweaters, hoodies, thermal underlayers, armored vests (concealed carry style), smart-fabric shirts, corporate uniforms, Shelf patchwork tops (scavenged/repaired), band tees (for M88 bands), gang color tops, workwear shirts, henleys, turtlenecks, crop tops.
+Include a diverse mix of: t-shirts, tank tops, dress shirts, blouses, sweaters, hoodies, thermal underlayers, armored vests (concealed carry style), smart-fabric shirts, corporate uniforms, Shelf patchwork tops (scavenged/repaired), band tees (for GLMZ bands), gang color tops, workwear shirts, henleys, turtlenecks, crop tops.
 
 Mix ALL tiers across the batch:
 - Tier 1 (Shelf): cheap synth-fabric, repaired, scavenged, street vendor quality. Prices around 5-25 currency units.

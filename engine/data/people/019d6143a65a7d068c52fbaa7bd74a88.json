@@ -95,10 +95,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Craftsperson",
-      "Neighborhood Anchor",
-      "Gray Market Adjacent",
-      "Community Memory"
+      "craftsperson",
+      "neighborhood anchor",
+      "gray market adjacent",
+      "community memory"
     ]
   },
   "behavioral": {
@@ -212,7 +212,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

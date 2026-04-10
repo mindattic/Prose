@@ -93,11 +93,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Born-Under",
-      "Tunnel Guide",
-      "Spatial Savant",
-      "Child Laborer",
-      "Resilient"
+      "born-under",
+      "tunnel guide",
+      "spatial savant",
+      "child laborer",
+      "resilient"
     ]
   },
   "behavioral": {
@@ -209,7 +209,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Hispanic/Latin American": {

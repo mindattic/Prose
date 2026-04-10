@@ -1,0 +1,37 @@
+{
+  "name": "Mnestrin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Lockdown",
+    "The Stamp",
+    "Permanex"
+  ],
+  "category": "cognitive_enhancer",
+  "subcategory": "memory_consolidation",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Mnestrin accelerates and deepens the hippocampal consolidation process by flooding the brain with targeted BDNF analogues and glutamate receptor sensitizers during the critical post-learning window. Information absorbed in the 4 hours before dosing is stamped into long-term storage with exceptional fidelity. Originally developed as a therapeutic for patients with consolidation disorders, it has become standard issue for professional credentialing and high-stakes skill acquisition.",
+  "method_of_use": "sublingual",
+  "effects": [
+    "Near-perfect retention of material absorbed in the pre-dose window",
+    "Accelerated sleep-phase memory processing (often users report vivid, structured dreams)",
+    "Reduced memory decay rate for consolidated content",
+    "Improved recall precision under stress"
+  ],
+  "side_effects": [
+    "Intrusive recall — consolidated memories surface involuntarily during unrelated tasks",
+    "Emotional memories consolidated alongside procedural ones — trauma can be accidentally locked in with equal fidelity",
+    "Headache and mild nausea during consolidation window",
+    "Rare cases of memory bleed — fragmentary false memories formed from associative noise during consolidation"
+  ],
+  "duration": "Consolidation window: 4-6 hours post-dose; effects on memory are permanent",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "prescription",
+  "street_price": "Φ 24 per dose",
+  "cultural_context": "Mnestrin is the drug of students and certification-chasers. Novafold sells it as a study aid for the licensing exams that gatekeep Tier 2 workers from Tier 3 jobs — a quietly predatory market. There is an entire shadow economy of 'Mnestrin cram sessions' in which tutors charge by the hour to feed students dense material in the pre-dose window. Critics call it memory laundering — buying your way to expertise without earning it. The dark side is the emotional consolidation risk; there are support groups in Tier 2 districts for people who accidentally locked in trauma alongside their certification material.",
+  "story_hooks": [
+    "A corporate spy dosed a target with Mnestrin before exposing them to a fabricated set of 'memories' — technical documents, access codes, personnel files — now the target believes they know things they never actually learned, and an investigator has to figure out what was real.",
+    "A Tier 2 student consolidated the wrong person's study session — someone handed them the wrong pre-loaded BCI feed before they dosed, and now they have permanent detailed memories of a life and a skillset that isn't theirs.",
+    "Novafold is quietly aware that Mnestrin consolidates subliminal content with the same fidelity as conscious learning — and someone inside the company has been adding sub-threshold brand loyalty conditioning to the compound."
+  ]
+}

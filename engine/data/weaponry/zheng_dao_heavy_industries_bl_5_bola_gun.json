@@ -1,0 +1,49 @@
+{
+  "id": "19709d480a644b7b35fb2e99d8429937",
+  "name": "Zheng-Dao Heavy Industries BL-5 'Bola Gun'",
+  "type": "weapon",
+  "aliases": [
+    "Bola Gun",
+    "Leg Breaker",
+    "Trip Wire"
+  ],
+  "category": "less-lethal",
+  "description": "A launcher that fires a weighted bola — two 200-gram tungsten spheres connected by 1.5 meters of braided steel cable — at a fleeing target's legs. The bola wraps around the target's legs at shin height, the cable locks against itself via a ratchet mechanism, and the subject goes down. The BL-5 fires its payload at 40 m/s, giving the bola enough rotational energy to wrap tightly even against a sprinting target, and the ratchet lock prevents the cable from loosening once wrapped.\n\nZheng-Dao designed the BL-5 for fugitive apprehension — the classic problem of stopping a running person without shooting them. The bola solution is ancient, but the engineering is modern: the tungsten weights are precisely balanced, the cable is rated for 500 kg, and the ratchet mechanism adds a technological cruelty to a primitive concept. Once the bola is locked, it cannot be removed without a key tool that only the operator carries. The target remains immobilized until someone chooses to release them.\n\nThe BL-5's impact dynamics are classified as less-lethal, but the tungsten weights striking a target's shins at 40 m/s deliver impacts that frequently cause bone fractures. The weapon stops people from running by making it impossible for them to walk. Zheng-Dao's marketing materials describe the BL-5 as a 'mobility denial tool.' The targets describe it as getting their legs broken by a machine.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — law enforcement and security",
+  "street_price": "Φ2,200 (bolas Φ80 each)",
+  "base_technologies": [
+    "Precision-weighted bola deployment",
+    "Cable ratchet-lock mechanism",
+    "Rotational energy optimization"
+  ],
+  "specifications": "projectile: Dual 200g tungsten weights, 1.5m braided steel cable\ncapacity: 1 bola (magazine-fed reload)\neffective range: 20 meters\nlaunch velocity: 40 m/s\ncable strength: 500 kg rated\nweight: 2.5 kg\nlength: 350mm\nrelease: Proprietary key tool required",
+  "tactical_use": "Fugitive immobilization and pursuit termination. Operators fire the BL-5 at a fleeing target's legs, wrapping and locking the cable to force a fall. The ratchet mechanism ensures the target remains immobilized until the operator approaches and manually releases the bola.",
+  "cultural_context": "The BL-5 is despised by runners and couriers in GLMZ — the people most likely to be fleeing security forces on foot. 'Getting bola'd' is feared almost as much as getting shot, because the tibial fractures the weapon causes can end a running career permanently. Runners who survive a BL-5 hit often display the characteristic shin scars as marks of experience.",
+  "known_users": [
+    "Law enforcement pursuit units",
+    "Corporate security foot-chase teams",
+    "Bounty hunters",
+    "Licensed fugitive recovery operators"
+  ],
+  "story_hooks": [
+    "A modified BL-5 bola has been recovered with razor wire replacing the standard cable — the weapon wraps and locks like normal, but the cable cuts through tissue and tendon. Someone is converting a mobility denial tool into a mutilation weapon and selling it as standard equipment.",
+    "A courier was bola'd during a routine run and went down — but the package they were carrying detonated on impact, destroying everything within 10 meters. The BL-5 operator was killed by the blast. The package was designed to detonate if the courier was stopped. Someone anticipated the weapon and turned the courier into a bomb."
+  ],
+  "ammunition_type": [
+    "bola"
+  ],
+  "tags": [
+    "less-lethal",
+    "weapon",
+    "bola",
+    "restraint",
+    "pursuit",
+    "zheng-dao",
+    "security",
+    "tier 2"
+  ],
+  "physical_description": "The BL-5 resembles a flare gun crossed with a nail driver—a compact, angular launcher of brushed steel and worn polymer composite, its barrel scarred from repeated firings. The grip is wrapped in friction tape over synthetic material, the trigger guard oversized for gloved hands. A spring-tensioned magazine well on the underside holds the bola cartridge: two dull tungsten spheres visible through a reinforced polymer loading window, connected by coiled steel cable.",
+  "visual_prompt": "Zheng-Dao BL-5 bola gun launcher, gritty near-future tactical weapon, brushed steel and worn polymer, scarred barrel, friction-taped grip, product photography on dark concrete, moody neo-noir lighting, tungsten weight spheres visible, industrial design, detailed weathering, cyberpunk aesthetic, high contrast shadows, technical precision, worn surfaces"
+}

@@ -36,10 +36,16 @@
     "drone",
     "tier 1",
     "tier 2",
-    "tier 4"
+    "tier 4",
+    "cargo",
+    "luxury",
+    "electric",
+    "aerial"
   ],
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "Brecken Yılmaz-Osei"
-  ]
+  ],
+  "physical_description": "A compact quadcopter roughly the size of a shoebox, its reinforced polymer frame scarred from thousands of delivery runs through rain-slicked streets. Dull matte black plating covers the fuselage, with faded Tessera Transit decals peeling at the edges; the battery compartment shows rust staining around its seams. Four brushless motors, wrapped in frayed protective cages, click softly as they cool after flight.",
+  "visual_prompt": "compact autonomous delivery drone, quadcopter, matte black weathered polymer frame, worn tessera transit decals, reinforced cage motor guards, rust stains, gritty industrial product photography, neon rain reflection, dark moody background, cyberpunk neo-noir, detailed mechanical components, worn near-future aesthetic, shot from three-quarter angle"
 }

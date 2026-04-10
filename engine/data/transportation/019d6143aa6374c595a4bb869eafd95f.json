@@ -32,7 +32,14 @@
     "water",
     "tier 1",
     "tier 2",
-    "tier 3"
+    "tier 3",
+    "subterranean",
+    "rail",
+    "train",
+    "cargo",
+    "electric",
+    "manual",
+    "aquatic"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -40,5 +47,7 @@
     "Glenville Sound",
     "Patient Zero",
     "TESSERA CORPONATION Ironclad Executive BCI Suite"
-  ]
+  ],
+  "physical_description": "A massive steel cage suspended within a concrete-lined vertical shaft, its industrial framework layered with rust-bleeding corrosion and decades of mineral deposits. Thick steel cables, frayed at their anchor points, feed through a mechanical pulley system that groans with each descent. The cage's interior walls are scarred with graffiti, warning symbols, and the pale residue of lichen thriving in perpetual dampness.",
+  "visual_prompt": "industrial cargo elevator cage, corroded steel framework, thick frayed cables, concrete shaft walls, mineral deposits and water stains, dim amber emergency lighting, neo-noir gritty aesthetic, worn metal textures, dark moody underground setting, detailed product photography, cyberpunk dystopian infrastructure"
 }

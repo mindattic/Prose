@@ -1,0 +1,37 @@
+{
+  "name": "Somnivex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Deepcycle",
+    "The Optimizer",
+    "Cleanwave"
+  ],
+  "category": "sleep_dream",
+  "subcategory": "rem_optimizer",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Somnivex is a precision REM architecture optimizer that restructures the distribution of sleep stages across a normal sleep period, maximizing the ratio and quality of REM sleep without reducing slow-wave recovery phases. The compound works by modulating the cholinergic-aminergic balance during sleep cycling, extending REM windows and improving the neural consolidation efficiency that occurs within them. The result is dramatically improved memory consolidation, emotional processing, and creative cognitive function — users consistently outperform on memory tasks and report clearer, more organized thinking.",
+  "method_of_use": "oral",
+  "effects": [
+    "Significantly increased REM proportion of sleep cycle",
+    "Enhanced memory consolidation during sleep",
+    "Improved emotional processing efficiency",
+    "Better creative problem-solving upon waking",
+    "Improved BCI-neural integration during sleep maintenance cycles"
+  ],
+  "side_effects": [
+    "Increased dream intensity (not always welcome)",
+    "Reduced slow-wave sleep in some users causes physical fatigue despite mental restoration",
+    "Interaction with Morrivan causes stage-cycling disruption",
+    "Mild nausea on first 3-5 uses"
+  ],
+  "duration": "Active across full sleep period (6-9 hours)",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "legal",
+  "street_price": "Φ35 per dose",
+  "cultural_context": "Somnivex is the quiet achiever's drug — less glamorous than Compressin, less exciting than Lucivane, but consistently effective. Students taking certification exams, programmers debugging complex systems, and anyone in a knowledge-work field who needs to consolidate large amounts of new information uses it routinely. It has a reputation for being the drug of people who are serious about their work rather than their experience, which gives it a certain unglamorous respectability across Tiers 2-4.",
+  "story_hooks": [
+    "A student has been performing impossibly well after starting Somnivex — better than the drug's documented effects should allow. Investigation reveals their Somnivex supply has been laced with something that is uploading their consolidated memories to an external server during the enhanced REM phase.",
+    "A Novafold researcher wants to go public with data showing that long-term Somnivex use causes a gradual substitution of genuine memory with BCI-interpolated memory — users think they remember real events but are increasingly recalling synthetic reconstructions."
+  ]
+}

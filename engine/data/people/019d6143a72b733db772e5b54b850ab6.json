@@ -98,11 +98,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Echo Hunter",
-      "ELF-Tender",
-      "Undertow-Born",
-      "Too Young For This",
-      "Heard Something He Shouldn't Have"
+      "echo hunter",
+      "elf-tender",
+      "undertow-born",
+      "too young for this",
+      "heard something he shouldn't have"
     ]
   },
   "behavioral": {
@@ -288,7 +288,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "South Asian": {

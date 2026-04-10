@@ -1,0 +1,46 @@
+{
+  "id": "524bc94933718676220c834b3965ac44",
+  "name": "The Unmarked Knife",
+  "type": "weapon",
+  "aliases": [
+    "City Knife",
+    "The Gift",
+    "Shelf Steel"
+  ],
+  "category": "anomalous melee weapon",
+  "description": "There are approximately 200 of them in circulation in the Shelf. Identical 15-centimeter blades, single-edged, no manufacturer's mark, no serial number, no identifying feature of any kind. The alloy is unknown — metallurgical analysis returns contradictory results depending on the lab, the equipment, and apparently the mood of the analyst. The blades do not dull. They do not rust. They do not chip, bend, or break.\n\nThey appear. In drawers. In pockets. Under pillows. In the lining of a coat you've owned for years. No one has ever witnessed one materializing. No one has ever purchased one. They are never found by anyone who does not need one — and the definition of 'need' appears to be the city's, not the carrier's. A woman who had never held a knife found one in her apron pocket the morning her ex-husband was released from detention. A teenager found one in his schoolbag the week a gang began recruiting on his block. A grandmother found one in her knitting basket and laughed and said, \"I was wondering when you'd get around to it.\"\n\nThe knives cannot be sold. Every attempt to transfer one for money has resulted in the blade disappearing from the buyer within 24 hours and reappearing somewhere else — presumably wherever the city decides it is needed next. They can be given freely, but only if the giver genuinely does not want payment.\n\n\"The city decided you needed protecting.\" This is what Shelf residents say when someone finds an Unmarked Knife. They say it the way you'd say the sun came up. It is simply what happened.",
+  "manufacturer": "Unknown / Anomalous",
+  "tier_availability": "Tier 1 (Shelf only)",
+  "legality": "Unregulated — no manufacturer to regulate",
+  "street_price": "Cannot be sold",
+  "base_technologies": [
+    "Unknown alloy",
+    "Anomalous materialization",
+    "Self-maintenance"
+  ],
+  "specifications": "blade_length: 15cm\nedge: single\nalloy: unknown (contradictory analysis)\nweight: ~180g\ncount_in_circulation: ~200\nmanufacturer: none",
+  "tactical_use": "Personal defense. The knives are unremarkable in combat — a good blade, well-balanced, sharp. Their anomalous properties are in their origin, not their function.",
+  "cultural_context": "In the Shelf, finding an Unmarked Knife is treated not as a mystery but as a weather event. The city decided you needed protecting. You don't question weather. You carry the knife.",
+  "known_users": [
+    "Shelf residents selected by unknown criteria"
+  ],
+  "story_hooks": [
+    "Someone has begun collecting Unmarked Knives — buying them through intermediaries who claim to give them freely. They now have 31. The knives have not disappeared. Something about the collector's need is genuine enough that the city allows it. What does someone need 31 knives for?",
+    "A knife appears in the pocket of a Spire executive who has never visited the Shelf. She has no idea what it is. She is about to need it."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "anomaly",
+    "shelf",
+    "knife",
+    "new_weird",
+    "protection",
+    "city_agency",
+    "unknown_origin"
+  ],
+  "parent_corponation": "",
+  "physical_description": "A plain 15-centimeter blade of unknown dark alloy, single-edged and wickedly sharp, with a simple wrapped grip of worn synthetic material. No markings, no manufacturer stamps, no serial numbers—just a blade that catches light like oil on water and refuses all decay. The edge is mirror-bright despite whatever abuse it has weathered; the grip shows use but never deterioration.",
+  "visual_prompt": "unmarked knife blade, dark unknown alloy, 15cm single-edge, simple wrapped grip, no serial numbers, mirror-sharp edge, neo-noir gritty aesthetic, product photography, worn synthetic grip, oil-slick reflections, dark studio background, cyberpunk weapon, detailed, cinematic lighting, industrial decay"
+}

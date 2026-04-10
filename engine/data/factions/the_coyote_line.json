@@ -1,0 +1,48 @@
+{
+  "id": "3fa2685f892257d9c10ab4c06ccf947a",
+  "type": "faction",
+  "name": "The Coyote Line",
+  "aliases": [
+    "Coyotes",
+    "The Line",
+    "Border Runners"
+  ],
+  "motto": "Everyone deserves to arrive somewhere.",
+  "description": "The Coyote Line is a human smuggling operation of approximately 80 members that moves people into and out of GLMZ — refugees seeking entry to the city, fugitives seeking escape from it, and anyone in between who needs to cross borders that corporate sovereignty has made increasingly difficult to cross legally. The Line is the successor to a long tradition of human smuggling operations that have operated wherever borders exist, updated for a world where borders are defined by corporate jurisdictions rather than national ones.\n\nThe Line's operations range from the relatively benign (guiding refugee families through the wasteland corridors to GLMZ's external processing zones) to the morally complicated (smuggling individuals out of the city to escape corporate legal jurisdiction, often for a price that puts families in debt for years) to the genuinely dark (moving people who are not moving voluntarily, when the client pays enough). The Line's leadership maintains that they don't engage in human trafficking — that every person they move is moving by choice — but the distinction between smuggling and trafficking blurs when desperation is the commodity you're selling to.\n\nThe Line operates through a network of safe houses, vehicle caches, and wilderness routes that connect GLMZ to the outside world. Their guides — called 'coyotes,' after the centuries-old tradition — are skilled in navigation, survival, and the art of moving through spaces where being caught means death.",
+  "ideology": "Borders are violence against the desperate. The Coyote Line exists because the legal pathways into and out of GLMZ are controlled by corponations that decide who is welcome based on economic utility. The Line provides an alternative — imperfect, expensive, sometimes dangerous, but real.",
+  "territory": "The wilderness corridors surrounding GLMZ and a network of safe houses inside the city, concentrated in the Shelf and Old Harbor.",
+  "leadership": "A man named Joaquin Espinoza-Obi, called 'the Pathfinder,' who has been guiding people across borders for thirty years and shows no sign of stopping despite a price on his head from three different corporate jurisdictions.",
+  "methods": [
+    "Human smuggling through wilderness corridors",
+    "Safe house networks for people in transit",
+    "Document forgery for refugees and fugitives",
+    "Guide services through hostile terrain",
+    "Bribery of checkpoint personnel",
+    "Partnerships with other criminal organizations for logistics support"
+  ],
+  "resources": [
+    "80 experienced guides and support personnel",
+    "A network of safe houses inside and outside GLMZ",
+    "Vehicle caches along wilderness routes",
+    "Joaquin's thirty years of route knowledge",
+    "Relationships with refugee communities who provide intelligence",
+    "Document forgery capability"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Coyote Line represents the human cost of borders — and the moral complexity of people who profit from desperation while also genuinely saving lives.",
+  "story_hooks": [
+    "A Coyote Line guide has disappeared on a route they've run dozens of times, along with the twelve people they were guiding. Joaquin believes the route has been compromised and needs someone to find the missing group before whoever took them finishes whatever they started.",
+    "A corporate executive wants out of GLMZ — out of their contract, out of their identity, out of everything. They're offering the Line enough money to fund operations for a year. The problem: their former employer will tear the city apart looking for them."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "smuggling",
+    "refugees",
+    "transit",
+    "shelf",
+    "old harbor",
+    "wilderness"
+  ]
+}

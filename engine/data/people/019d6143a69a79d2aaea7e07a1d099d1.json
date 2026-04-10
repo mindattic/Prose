@@ -97,11 +97,11 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Technical Expert",
-      "Equipment Source",
-      "Living Archive",
-      "Gruff Mentor",
-      "Hidden Secret"
+      "technical expert",
+      "equipment source",
+      "living archive",
+      "gruff mentor",
+      "hidden secret"
     ]
   },
   "behavioral": {
@@ -242,7 +242,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Southeast Asian": {

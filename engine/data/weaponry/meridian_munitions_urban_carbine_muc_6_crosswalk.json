@@ -1,0 +1,48 @@
+{
+  "id": "89c042a4a6638f2f06684f244a92864d",
+  "name": "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+  "type": "weapon",
+  "aliases": [
+    "Crosswalk",
+    "MUC-6",
+    "Street Sweeper"
+  ],
+  "category": "assault_rifle",
+  "description": "The MUC-6 Crosswalk is Meridian Munitions' urban-optimized carbine, designed for the tight angles, short distances, and civilian density of city combat. The weapon features a short 280mm barrel with aggressive porting that reduces muzzle flash to near-invisible levels in daylight conditions. The integrated BCI link includes a threat-discrimination system that highlights hostile targets in the operator's neural display while tagging bystanders with caution markers.\n\nChambered in 6mm caseless with an optimized twist rate for close-range terminal performance, the Crosswalk sacrifices ballistic performance beyond 300 meters for devastating effect inside 150. The 6mm round at close range with the Crosswalk's optimized twist fragments reliably in soft tissue while losing energy rapidly after penetration, reducing the risk of overpenetration in populated environments.\n\nMeridian designed the MUC-6 for the urban operators who make up the majority of their customer base — freelancers, security contractors, and bounty hunters whose work happens on city streets, in parking structures, and through apartment corridors. At Φ3,400, the Crosswalk is moderately priced and brutally effective within its intended engagement envelope.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Flash-suppressed ported barrel",
+    "BCI threat-discrimination system",
+    "Close-range optimized twist rate"
+  ],
+  "specifications": "caliber: 6mm caseless\neffective_range: 300m (150m optimal)\nrate_of_fire: 800 rpm (cyclic)\nmagazine_capacity: 30 rounds\nweight: 2.6 kg",
+  "tactical_use": "The Crosswalk dominates urban combat inside 150 meters. Its threat-discrimination BCI overlay helps operators make shoot/no-shoot decisions in crowded environments, reducing collateral casualties. The flash-suppressed barrel allows firing in darkened interiors without destroying the operator's night vision or revealing their position. The close-range optimized ammunition fragments reliably in targets while minimizing danger to bystanders from overpenetration.",
+  "cultural_context": "The Crosswalk is the city gun — the weapon of operators who work where people live. Meridian's marketing emphasizes precision and responsibility, positioning the MUC-6 as the weapon of professionals who care about collateral damage. In practice, the 'Street Sweeper' nickname tells a different story. The weapon is devastatingly effective in close quarters, and not everyone who carries one shares Meridian's concern for bystanders.",
+  "known_users": [
+    "Urban freelancers",
+    "Bounty hunters",
+    "Building security teams",
+    "Close protection details"
+  ],
+  "story_hooks": [
+    "A Crosswalk's threat-discrimination system was hacked to tag a specific civilian as a hostile combatant. The operator fired before realizing the system was compromised.",
+    "Meridian is recalling a batch of MUC-6s after discovering the close-range ammunition fragments are leaving distinctive metallic residue that allows forensic identification of the specific weapon used — a feature no one requested and no one wants."
+  ],
+  "ammunition_type": [
+    "6mm caseless frangible",
+    "6mm caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "urban",
+    "CQB",
+    "low_flash",
+    "Meridian",
+    "tier 2"
+  ],
+  "physical_description": "The Crosswalk is a compact, angular carbine with a shortened 280mm barrel and aggressive radial porting along its length. The receiver is matte polymer composite in industrial gray-black, scarred from field use, with a reinforced picatinny rail system running its top and sides. Its integrated BCI module sits flush against the upper receiver as a subtle metallic bulge, its status lights dim and amber.",
+  "visual_prompt": "Meridian Munitions MUC-6 Crosswalk carbine, compact urban assault rifle, 280mm ported barrel, matte polymer receiver, industrial gray-black finish, integrated neural interface module, tactical rail system, 6mm caseless ammunition, detailed product photography, gritty neo-noir aesthetic, worn combat-used finish, rain-slicked surfaces, dark moody background, cyberpunk military hardware"
+}

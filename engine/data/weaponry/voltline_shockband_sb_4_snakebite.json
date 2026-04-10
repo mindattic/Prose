@@ -1,0 +1,44 @@
+{
+  "id": "91725b4636ae87361a15ed456f659938",
+  "name": "VoltLine ShockBand SB-4 'Snakebite'",
+  "type": "weapon",
+  "aliases": [
+    "Snakebite",
+    "SB-4",
+    "Zap Bracelet",
+    "Stun Bangle"
+  ],
+  "category": "self_defense",
+  "description": "A wearable stun device disguised as a chunky fashion bracelet, delivering a 75,000-volt discharge through electrode contacts on the outer surface when the wearer makes a fist and presses a concealed activation pad with their thumb. The SB-4 eliminates the primary weakness of handheld stun devices — fumbling for the device while under attack. Because it is already on the wearer's wrist, it is deployable in the same motion as a defensive push or palm strike.\n\nVoltLine's design team included industrial fashion consultants who ensured the SB-4 looks like a statement accessory rather than a weapon. It is available in matte black, brushed silver, rose gold, and seasonal limited editions that consistently sell out. The exterior is a textured composite that conceals the electrode contacts until the device is activated, at which point the contacts extend 2mm from the surface — enough to penetrate thin fabric.\n\nThe SB-4 charges wirelessly on a standard induction pad and provides twenty discharges per charge. A subtle LED on the inner surface — visible only to the wearer — indicates charge level. The device has become particularly popular among young professionals in Tier 2-3 who commute through less secure areas and want protection that integrates into their daily wear without requiring a separate device to remember or carry.",
+  "manufacturer": "VOLTLINE PERSONAL ELECTRONICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Wearable electrode integration",
+    "Concealed contact deployment",
+    "Wireless induction charging"
+  ],
+  "specifications": "voltage: 75,000V\namperage: 4.1 milliamps\nelectrode extension: 2mm from surface on activation\ndischarges per charge: 20\ncharging: wireless induction pad\nweight: 64 g\nform factor: bracelet, 7-9 cm adjustable diameter\ncost: Φ180\navailable finishes: matte black, brushed silver, rose gold, seasonal editions",
+  "tactical_use": "Make a fist to position thumb over the concealed activation pad. Push or strike the attacker with the outside of the wrist where the electrodes are positioned. Hold contact for at least one second. The SB-4 is most effective when used in conjunction with a palm-heel push to the attacker's chest or face — the electrical discharge adds incapacitating pain to the physical impact. The device works through thin clothing but not through jackets or armor.",
+  "cultural_context": "The SB-4 has succeeded where many self-defense products fail: it has become something people want to wear rather than something they feel obligated to carry. VoltLine's seasonal limited editions generate genuine fashion buzz, and the bracelet has been spotted on GLMZ media personalities who may or may not be sponsored. This normalization of wearable defense technology reflects a broader cultural shift — in GLMZ, carrying protection is not paranoia, it is baseline sensibility dressed up as style.",
+  "known_users": [],
+  "story_hooks": [
+    "A counterfeit SB-4 ring has been flooding Tier 1 markets with devices that look identical but use dangerously high amperage — they are causing burns and cardiac events, and VoltLine cannot identify the source.",
+    "A Tier 3 resident accidentally activated her SB-4 while touching a transit station's biometric scanner — the discharge corrupted the scanner's database, erasing the last six hours of identity logs, which happened to include a person of interest in a corporate espionage case."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "stun",
+    "electrical",
+    "wearable",
+    "fashion",
+    "bracelet",
+    "tier_2",
+    "everyday_carry"
+  ],
+  "physical_description": "A chunky bracelet of brushed titanium-alloy with a matte black polymer band, studded with two prominent electrode contacts on the outer surface that gleam dull silver under neon. The device sits heavy on the wrist, its edges worn smooth from repeated use, with faint scuff marks and the faded VoltLine logo stamped into the underside. A barely-visible thumb-pad sits recessed along the inner band, designed for concealment.",
+  "visual_prompt": "Wrist-worn stun device styled as chunky bracelet, brushed titanium and matte black polymer, dual electrode studs, neo-noir gritty product photography, worn industrial aesthetic, rain-slicked reflections, dark background, detailed macro shot, cyberpunk self-defense gear, practical jury-rigged tech"
+}

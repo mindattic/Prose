@@ -95,12 +95,12 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Elder",
-      "Community Anchor",
-      "Craftsperson",
-      "Spiritual Practitioner",
-      "Tier 2",
-      "Grieving Parent"
+      "elder",
+      "community anchor",
+      "craftsperson",
+      "spiritual practitioner",
+      "tier 2",
+      "grieving parent"
     ]
   },
   "behavioral": {
@@ -262,7 +262,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

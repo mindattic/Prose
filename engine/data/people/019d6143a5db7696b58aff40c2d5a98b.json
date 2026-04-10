@@ -96,10 +96,10 @@
     "strengths": [],
     "weaknesses": [],
     "tags": [
-      "Transit Worker",
-      "Union Organizer (Quiet)",
-      "Neighborhood Anchor",
-      "ELF Devotee"
+      "transit worker",
+      "union organizer (quiet)",
+      "neighborhood anchor",
+      "elf devotee"
     ]
   },
   "behavioral": {
@@ -238,7 +238,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Sub-Saharan African": {

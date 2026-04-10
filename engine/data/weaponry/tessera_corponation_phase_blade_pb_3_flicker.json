@@ -1,0 +1,46 @@
+{
+  "id": "fd653e761c5f0cadeedcee453666067f",
+  "name": "Tessera Corponation Phase Blade PB-3 'Flicker'",
+  "type": "weapon",
+  "aliases": [
+    "Flicker",
+    "PB-3",
+    "Phase Blade",
+    "Ghost Sword"
+  ],
+  "category": "melee",
+  "description": "An experimental blade weapon that uses a rapidly cycling electromagnetic field to alter the molecular alignment of its cutting edge 600 times per second, shifting between rigid and semi-fluid states. When rigid, the blade strikes with the hardness of diamond. When semi-fluid, the edge deforms around defensive contact and reforms on the other side, effectively flowing past blocks and parries. To an observer, the blade appears to flicker between solid and translucent, giving the weapon its name.\n\nTessera developed the Phase Blade using proprietary shape-memory alloy technology that responds to electromagnetic field cycling. The effect is visually unsettling and tactically devastating — an opponent attempting to block a Flicker strike feels their parry connect with something that has the consistency of heavy liquid before the blade resolidifies inside their guard. Traditional sword defense techniques become unreliable against a weapon that does not obey consistent physical rules.\n\nThe PB-3 is phenomenally expensive and mechanically fragile. The electromagnetic cycling system requires precise calibration, and physical shock from impacts gradually degrades the alignment until the blade begins phase-cycling erratically — sometimes remaining fluid when it should be rigid, or rigid when flow-through is needed. Each weapon has a rated operational life of approximately 200 engagements before requiring factory recalibration. Tessera charges Φ15,000 for each recalibration, ensuring a continuous revenue stream.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — experimental weapon classification",
+  "base_technologies": [
+    "Electromagnetic molecular phase cycling",
+    "Shape-memory alloy rapid-state transition",
+    "Adaptive edge rigidity control"
+  ],
+  "specifications": "blade_length: 75 cm\ntotal_length: 100 cm\nweight: 1.2 kg\nphase_cycle_rate: 600 Hz\npower_source: Pommel-integrated quantum cell, 3 hours active cycling\nblade_material: Tessera proprietary shape-memory alloy\noperational_life: ~200 engagements between recalibrations\nrecalibration_cost: Φ15,000",
+  "tactical_use": "The Flicker negates conventional melee defense by passing through blocks and parries during its semi-fluid phase. Opponents must develop entirely new defensive strategies, typically based on evasion rather than contact. The weapon is most effective in one-on-one engagements where the operator can exploit confusion and unfamiliarity. Against multiple opponents or in chaotic melee, the phase cycling becomes less advantageous as the weapon's fragility and power dependency become liabilities. Experienced Flicker users learn to time their strikes to the rigid phase for maximum damage while using the fluid phase to defeat incoming defense.",
+  "cultural_context": "The Flicker has become the ultimate prestige weapon in GLMZ's high-tier dueling circles — owning one signals both extraordinary wealth and commitment to melee combat at its most technical. The weapon has also generated philosophical debate about what constitutes a 'fair' weapon in dueling contexts, as many traditionalists argue that a blade that ignores parries violates the fundamental compact of swordfighting. Tessera has leaned into the controversy, marketing the PB-3 as 'the future of the edge.'",
+  "known_users": [
+    "Tessera Corponation elite security",
+    "Tier 4+ duelists",
+    "Experimental weapons collectors"
+  ],
+  "story_hooks": [
+    "A Flicker's phase cycling has begun synchronizing with its wielder's BCI implant, responding to intent rather than pre-programmed timing. Tessera wants the weapon back for study — the wielder considers it their property.",
+    "A duelist was killed when their opponent's Flicker malfunctioned mid-bout, remaining in rigid phase during what should have been a non-lethal fluid-phase touch. The death is ruled an accident, but the weapon's maintenance logs have been erased."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "sword",
+    "phase-blade",
+    "shape-memory",
+    "experimental",
+    "tier 4",
+    "prestige"
+  ],
+  "physical_description": "The Flicker's blade is a dull gunmetal gray, its surface etched with faint circuit patterns that glow a sickly cyan when powered. The cutting edge shimmers with a translucent quality, appearing to vibrate slightly even at rest, as if existing between states. The handle is wrapped in worn synthetic leather over a reinforced titanium core, with a thumb-guard scarred from repeated use and a capacitor pack bulging from the pommel.",
+  "visual_prompt": "experimental phase blade weapon, dull gunmetal gray with cyan circuit etchings, translucent flickering edge, worn synthetic leather grip, titanium reinforced, cyberpunk neo-noir, gritty product photography, dark rain-slicked background, detailed macro shot of oscillating cutting edge, industrial decay aesthetic, practical worn tech"
+}

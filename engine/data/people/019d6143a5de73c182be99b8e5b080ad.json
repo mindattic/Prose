@@ -89,7 +89,7 @@
     "A pre-collapse server farm recovered from the ruins contains data that multiple corps are willing to kill for",
     "Pike goes on an unauthorized deep dive and doesn't surface on schedule"
   ],
-  "narrative_function": "Corva drives the treasure-hunt-with-horror-elements stories of the Boneyard Saints. Her world is literally submerged — drowned infrastructure, forgotten technology, things that move in the dark water. She represents the scavenger economy of M88's margins, where the past is more valuable than the present, and recovering it requires going into places that feel actively hostile to human presence.",
+  "narrative_function": "Corva drives the treasure-hunt-with-horror-elements stories of the Boneyard Saints. Her world is literally submerged — drowned infrastructure, forgotten technology, things that move in the dark water. She represents the scavenger economy of GLMZ's margins, where the past is more valuable than the present, and recovering it requires going into places that feel actively hostile to human presence.",
   "augmentations": "Amphibious respiratory system — modified lungs that extract dissolved oxygen from water for up to 90 minutes before requiring surface air. Pressure-compensation implants in inner ear and sinuses. Sonar-processing cortex that interprets underwater acoustic data as spatial mapping. Thermal regulation dermal layer for extended cold-water immersion. Bio-luminescent dermal tattoos on her forearms that activate underwater — functional lighting, not cosmetic.",
   "daily_life": "Wakes at first light. Checks weather, tides, and water conditions. Reviews salvage contracts and scout reports from the crew. Dives most days — either contract work or reconnaissance for future operations. Returns to the dry dock to catalogue and store salvage. Evenings are maintenance — equipment, augmentations, the container itself. Eats fish she catches herself when possible. Sleeps to the sound of water against the dock pilings because silence makes her uneasy.",
   "affiliation": "Boneyard Saints",
@@ -239,7 +239,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "East Asian": {

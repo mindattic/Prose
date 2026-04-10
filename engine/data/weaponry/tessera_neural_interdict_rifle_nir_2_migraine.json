@@ -1,0 +1,47 @@
+{
+  "id": "00619979012b2785eacce7317371398f",
+  "name": "Tessera Neural Interdict Rifle NIR-2 'Migraine'",
+  "type": "weapon",
+  "aliases": [
+    "Migraine",
+    "NIR-2",
+    "Brain Spike",
+    "The Headache"
+  ],
+  "category": "sniper",
+  "description": "A precision weapon that fires a focused electromagnetic pulse shaped into a narrow beam, designed to disrupt neural implants and BCI systems at range. The NIR-2 does not fire a physical projectile — it delivers a shaped EMP pulse through a directional antenna disguised as a rifle barrel.\n\nThe Migraine's beam induces cascading failures in neural interface hardware, causing effects ranging from disorientation and seizures to permanent implant damage depending on exposure duration and target's augmentation level. Against unaugmented targets, the weapon produces a splitting headache and temporary cognitive impairment. Against someone running a full BCI suite, it can cause a neural crash that leaves them unconscious for hours.\n\nTessera developed the NIR-2 for non-lethal interdiction scenarios — disabling augmented targets without the collateral damage of kinetic weapons. In practice, the line between 'disabled' and 'brain-damaged' has proven difficult to control.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 5",
+  "legality": "Classified — non-lethal designation disputed",
+  "base_technologies": [
+    "Directional shaped EMP generation",
+    "Neural interface disruption targeting",
+    "Non-kinetic precision engagement"
+  ],
+  "specifications": "caliber: N/A — shaped EMP beam\neffective_range: 50-500 meters\nrate_of_fire: 1 pulse per 8 seconds\ncapacity: 12 pulses per power cell\nweight: 6.2 kg\npower_source: Dedicated EMP power cell, field-replaceable",
+  "tactical_use": "The Migraine is deployed against augmented targets that need to be neutralized without kinetic engagement — hostage situations involving augmented hostage-takers, corporate espionage targets carrying sensitive neural data, and augmented individuals who might trigger deadman switches if killed. The weapon's non-lethal classification allows its use in scenarios where lethal force authorization has not been granted, though its potential for permanent brain damage makes that classification increasingly controversial.",
+  "cultural_context": "The NIR-2 has become a flashpoint in debates about augmented rights in GLMZ. Disability advocates argue that a weapon specifically designed to attack neural implants constitutes targeted violence against augmented individuals. Tessera's defense — that the weapon is non-lethal and discriminate — rings hollow to anyone who has witnessed a neural crash firsthand. Underground augmentation communities have begun developing EMP-hardened implants specifically in response to the Migraine threat.",
+  "known_users": [
+    "Tessera special operations",
+    "Corporate hostage response teams"
+  ],
+  "story_hooks": [
+    "A modified NIR-2 was used in a crowded transit station, inducing neural crashes in every augmented person within a 50-meter radius. The weapon was supposed to be focused on a single target. Either it was modified for area effect, or the operator deliberately chose to attack a crowd.",
+    "A Tessera whistleblower has leaked documents showing that the NIR-2 was originally developed as a lethal weapon — the 'non-lethal' designation was a marketing decision, not an engineering one."
+  ],
+  "ammunition_type": [
+    "Shaped EMP pulse"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "EMP",
+    "neural",
+    "non-lethal",
+    "anti-augmentation",
+    "tier 5",
+    "BCI"
+  ],
+  "physical_description": "The NIR-2 resembles a brutalist sniper rifle, its chassis built from scuffed titanium-composite with exposed cooling fins running along the barrel assembly. The antenna array is concealed beneath a matte black shroud, pitted from repeated exposure to GLMZ's acidic rain, with faint scorch marks around the muzzle housing. Wear patterns suggest heavy field use—tape-wrapped grip, a cracked scope mount, and a power coupling that's been soldered and re-soldered too many times.",
+  "visual_prompt": "gritty neo-noir sniper rifle, EMP antenna weapon, worn titanium-composite chassis, matte black finish with rain damage, exposed cooling fins, industrial scorch marks, cracked optics, heavily used tactical gear, detailed product photography, dark rain-slicked background, cyberpunk aesthetic, weathered military hardware, precise mechanical detail, high contrast lighting"
+}

@@ -91,7 +91,7 @@
   ],
   "narrative_function": "Seo is the ghost in the machine of Kyle's psyche. Every moral decision Kyle makes is a conversation\nwith a dead man. Seo represents the possibility that a code of honor can exist in a dishonorable\nworld — but also the danger that such a code is just another story we tell ourselves to justify violence.\n\nHe poses the central question to Kyle: Can you live by a code that the man who taught it to you could\nnot? And if you can — does that redeem him, or just prove you haven't been tested enough yet?\n\nSeo is also the story's critique of the mentor archetype. He was not wise — he was traumatized.\nHe was not at peace — he was exhausted. His calm was not enlightenment but the stillness of a man\nwho had simply stopped running. Whether that distinction matters is up to Kyle to decide.",
   "augmentations": "",
-  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "daily_life": "",
   "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
@@ -156,7 +156,7 @@
       "swordmaster",
       "ghost-presence",
       "traumatized",
-      "14th-RPG",
+      "14th-rpg",
       "code-bearer"
     ]
   },
@@ -284,7 +284,9 @@
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Central Asian": {

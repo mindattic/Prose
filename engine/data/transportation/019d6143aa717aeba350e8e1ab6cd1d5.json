@@ -32,7 +32,12 @@
     "vehicle",
     "motorcycle",
     "tier 2",
-    "tier 3"
+    "tier 3",
+    "ground",
+    "bicycle",
+    "cargo",
+    "electric",
+    "manual"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -40,5 +45,7 @@
     "Arcturus PX-1 'Phantom'",
     "CHROMEWORKS Phantom Stealth Ocular Recorder",
     "Carbon Fiber"
-  ]
+  ],
+  "physical_description": "The Wraith's skeletal carbon-fiber frame is exposed and purposeful, every strut and joint visible beneath rain-beaded transparent polymer panels. Vertically-stacked power cells glow faintly blue along the sides, their industrial geometry softened only by weathered grip tape and reinforced cable runs. The motor housing sits naked behind translucent cowling, revealing brushless coils and cooling fins—a motorcycle that wears its engineering like scars.",
+  "visual_prompt": "lightweight electric motorcycle, exposed carbon fiber skeleton, transparent motor cowling, stacked blue power cells, gritty neo-noir, worn industrial aesthetic, product photography, rain-slicked surfaces, dark studio background, visible engineering, Sterling-Nakamura branding, near-future technology, detailed mechanical components, moody lighting"
 }

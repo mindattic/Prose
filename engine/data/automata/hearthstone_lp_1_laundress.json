@@ -1,0 +1,44 @@
+{
+  "name": "Hearthstone LP-1 'Laundress'",
+  "type": "automaton",
+  "classification": "Domestic",
+  "aliases": [
+    "Laundress",
+    "The Folder",
+    "Spin Cycle"
+  ],
+  "manufacturer": "HEARTHSTONE AUTOMATION",
+  "description": "The LP-1 is a laundry processing automaton — a stationary unit the size of a large wardrobe that accepts dirty clothing through a top-loading intake, washes, dries, folds, and sorts garments into designated output bins. It handles the entire laundry cycle without human intervention, from stain pre-treatment to fabric-appropriate drying to folding patterns customized per garment type. Feed it a basket of mixed laundry and it returns neat stacks sorted by owner (it identifies garments by size and wear-pattern matching).\n\nThe LP-1's mundane function belies its engineering sophistication. Its internal manipulation system — a series of soft-grip robotic fingers on articulated rails — can handle fabrics ranging from denim to lace without damage. Its stain analysis system identifies over three thousand compound types and selects appropriate chemical treatments from an internal reservoir of cleaning agents. It can remove blood, grease, chemical residue, and most organic stains with near-perfect reliability.\n\nHearthstone's most popular consumer unit after the HC-2 vacuum, the LP-1 is found in roughly one in three GLMZ households above the poverty line. It is boring. It is reliable. It folds better than any human alive. Hearthstone support technicians report that the most common service call is owners who have dropped small items — jewelry, data chips, loose ammunition — into the intake along with clothing. The LP-1 sorts these into a dedicated 'foreign object' bin. The contents of foreign object bins across GLMZ would make a fascinating sociological study.",
+  "tier_availability": "Tier 1-2",
+  "legality": "Consumer — unrestricted",
+  "autonomy_level": "Fully autonomous — garment processing AI",
+  "dimensions": "1.8m height, 1.0m width, 0.8m depth",
+  "weight": "120 kg",
+  "power_source": "Hardwired residential power plus water connection",
+  "locomotion": "Stationary",
+  "armament": [],
+  "sensors": [
+    "Fabric composition analysis",
+    "Stain compound identification",
+    "Garment size and type classification"
+  ],
+  "countermeasures": "None. It does laundry.",
+  "known_deployments": [
+    "Widespread in Tier 1-3 residential units"
+  ],
+  "story_hooks": [
+    "An LP-1's foreign object bin contained a micro data chip that fell out of a garment pocket. The chip contains encrypted financial transaction records linking a mid-tier bank manager to money laundering. The LP-1's owner has no idea — they just wanted clean shirts.",
+    "A forensic investigator realizes that LP-1 units in a residential building have been processing blood-stained clothing for a specific apartment for months. The stain analysis logs are stored locally. The machine has been quietly documenting evidence of violence that nobody reported."
+  ],
+  "cultural_context": "The LP-1 is aggressively mundane — a machine so boring that nobody thinks about it, which is exactly why it matters. Its stain analysis system is, functionally, a chemical forensics lab in every household. Law enforcement has begun issuing warrants for LP-1 processing logs in domestic violence and assault cases. Hearthstone did not design a surveillance tool. They accidentally built one anyway.",
+  "tags": [
+    "automaton",
+    "domestic",
+    "laundry",
+    "consumer",
+    "hearthstone",
+    "tier 1",
+    "tier 2"
+  ],
+  "id": "ccf80c81b471d6bbcfb8bc6e948f3bb7"
+}

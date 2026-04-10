@@ -306,12 +306,14 @@
     "Eastern European": 31.9,
     "Southeast Asian": 31.2,
     "South Asian": 27.1,
-    "Hispanic/Latin American": 6.0,
+    "Hispanic/Latin American": 6,
     "Sub-Saharan African": 3.8
   },
   "ancestry_harmonized": true,
   "tags": [
-    "sentient"
+    "person",
+    "sentient",
+    "human"
   ],
   "ancestry_detail": {
     "Eastern European": {

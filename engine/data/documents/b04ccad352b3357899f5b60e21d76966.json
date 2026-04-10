@@ -1,0 +1,27 @@
+{
+  "name": "Fragment — Recovered Neural Feed Clip, 2219",
+  "type": "document",
+  "document_type": "fragment",
+  "author": "Unknown / BCI Recording",
+  "date": "2219",
+  "classification": "restricted",
+  "description": "Someone's BCI recorded 14 seconds of what appears to be a news broadcast from a network that doesn't exist, reporting on events that haven't happened, in a city that isn't GLMZ. The anchor's face is partially corrupted. The chyron reads: \"[CITY NAME CORRUPTED] — YEAR 2— [CORRUPTED]\"",
+  "related_entities": [],
+  "credibility": "unconfirmed",
+  "story_hooks": [
+    "What network broadcast this?",
+    "Is this a transmission from another time or place?",
+    "What city is referenced?"
+  ],
+  "tags": [
+    "document",
+    "fragment",
+    "incomplete",
+    "news report",
+    "BCI",
+    "neural feed",
+    "temporal anomaly",
+    "unknown city"
+  ],
+  "id": "b04ccad352b3357899f5b60e21d76966"
+}

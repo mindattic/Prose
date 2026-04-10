@@ -1,0 +1,84 @@
+{
+  "id": "34afeb52190341ea789afb316398ef78",
+  "type": "place",
+  "name": "Compass Point",
+  "aliases": [
+    "The Downturn",
+    "Magnetic Junction",
+    "The Pointing"
+  ],
+  "description": "Compass Point is the intersection of Yates Avenue and Calumet Way in the mid-Circuit district of GLMZ, where every compass — analog, digital, and BCI-integrated — points into the ground. The anomaly has been documented, measured, excavated around, and ultimately accepted as one of the city's permanent impossibilities. Something beneath this intersection produces a magnetic field that should not exist, pointing to a location that contains nothing.\n\nThe convergence point is 6.2 meters below street level. Ground-penetrating radar shows undisturbed soil and rock. A physical excavation in 2198 went to 8 meters and found nothing. The magnetic field remained unchanged during and after the excavation, as if its source existed in a layer of reality that shovels cannot reach. The field strength is extraordinary — approximately 200 microtesla at the surface, enough to visibly deflect a compass needle from horizontal to a 73-degree downward angle. For comparison, the Earth's geomagnetic field in this region is approximately 55 microtesla. Whatever is down there is louder than the planet.\n\nThe anomaly extends in a roughly circular area approximately 30 meters in diameter, centered on the intersection. At the edges, compass needles oscillate between true north and the convergence point, as if caught between two authorities. At the center, there is no contest: every magnetic sensor, from a child's toy compass to a research-grade magnetometer, points down and slightly south, toward a point that has been triangulated to within 0.1 meters and that contains, by every method of detection available to the city, absolutely nothing.\n\nCompass Point has become a local landmark. Street vendors sell commemorative compasses. Children spin at the intersection's center. Three restaurants have opened within the anomaly's radius, all with compass-themed names. The city has paved the intersection with a decorative compass rose — a gesture of civic humor that the Navigation Services Division finds less amusing than the city council intended. The anomaly is stable. It has not changed in five years of continuous monitoring. It points to nothing. It points with absolute conviction. And every instrument that tries to find what it points to comes back empty, which is either the end of the story or the beginning of one, depending on what you think \"nothing\" means at a depth of 6.2 meters.",
+  "atmosphere": {
+    "sights": [
+      "The decorative compass rose inlaid in the intersection pavement, its needle pointing in the standard cardinal directions — all of them wrong here",
+      "Visitors holding out phones, compasses, and BCI overlays, watching the needles point down",
+      "Street vendors with trays of souvenir compasses, their needles all pointing at the same patch of ground",
+      "The three compass-themed restaurants ringing the intersection: True North, Bearing Down, and The Declination"
+    ],
+    "sounds": [
+      "Normal street sounds — traffic, conversation, commerce. The anomaly is silent.",
+      "The occasional exclamation from a first-time visitor watching their compass spin and settle on the impossible bearing",
+      "The hum of automated delivery drones rerouting around the intersection"
+    ],
+    "smells": [
+      "Street food from the surrounding vendors",
+      "Pavement after rain — the intersection is slightly lower than the surrounding streets and collects water"
+    ],
+    "feel": "Oddly festive for an anomaly. Compass Point has been domesticated by the city — turned into a tourist attraction, a date spot, a place where children play. But underneath the cheerfulness, there is the magnetic pull itself, which you cannot feel in your body but which your instruments insist is there, pointing at something that isn't. Stand at the center long enough and the festivity starts to feel like whistling past a graveyard.",
+    "tags": []
+  },
+  "demographics": "No permanent residents at the intersection itself. Surrounded by mid-Circuit commercial and residential density. Foot traffic: 2,000-3,000 per day, elevated by tourist interest.",
+  "economy": "The anomaly has generated a small local economy: three restaurants, multiple street vendors, and an informal guided tour operated by a retired Navigation Services engineer who charges Φ5 per person for an explanation that, by her own admission, does not actually explain anything.",
+  "power_structure": "Standard Circuit district municipal governance. Navigation Services maintains monitoring equipment at the intersection. No special authority or jurisdiction.",
+  "dangers": [
+    "Automated navigation systems — drones and autonomous vehicles can be disoriented by the magnetic anomaly. Several drone crashes have occurred.",
+    "The psychological effect of knowing that something powerful enough to override the planet's magnetic field exists six meters below your feet and cannot be found",
+    "Unknown — the convergence point has never been reached by any method. What happens if it is reached is unknown."
+  ],
+  "opportunities": [
+    "Scientific research — the anomaly is freely accessible and well-documented, making it an ideal subject for study",
+    "Tourism revenue — Compass Point is one of the most visited anomalous locations in GLMZ",
+    "The convergence point itself — whatever is 6.2 meters down, it has not been found. Finding it would be significant."
+  ],
+  "story_hooks": [
+    "A new excavation technology — something that can probe without digging — detects a void at exactly 6.2 meters that GPR cannot see. The void is the shape of a room.",
+    "The convergence point shifts by 0.5 meters to the east overnight. It has never moved before. Something is different.",
+    "A child standing at the center of the intersection says she can feel it pulling — not the compass, not the instruments, her."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Yates Avenue, mid-Circuit district",
+      "Calumet Way commercial corridor",
+      "Circuit district public transit station (200 meters north)"
+    ],
+    "exits": [
+      "Yates Avenue north and south",
+      "Calumet Way east and west"
+    ],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tourists and curiosity-seekers",
+    "Researchers and instrument calibration teams",
+    "Local residents and street vendors",
+    "Children playing the compass-spinning game"
+  ],
+  "notable_locations": [
+    "The Center — the exact point above the convergence, marked by a brass disc in the pavement",
+    "The Monitoring Station — a small Navigation Services booth with real-time magnetic field displays",
+    "The Declination — the most popular of the three compass-themed restaurants, known for its rotating menu that changes direction daily"
+  ],
+  "coordinates": {
+    "district": "The Circuit",
+    "intersection": "Yates Avenue and Calumet Way"
+  },
+  "tags": [
+    "inexplicable",
+    "anomaly",
+    "new_weird",
+    "circuit",
+    "magnetic",
+    "compass",
+    "landmark"
+  ]
+}

@@ -35,11 +35,16 @@
     "night",
     "vehicle",
     "motorcycle",
-    "armor"
+    "armor",
+    "bicycle",
+    "military",
+    "electric"
   ],
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Ferrogate Enforcer Cruiser",
     "Marcus Bellamy"
-  ]
+  ],
+  "physical_description": "The Arcturus Combat Bike is a brutish machine of reinforced steel and carbon-composite plating, its frame welded thick and angular, painted matte black with faded corporate insignia still visible under rain-streaked grime. Ballistic panels wrap the engine block and rider position, pocked and scarred from repeated impacts, while exposed hydraulic lines and reinforced suspension components speak to heavy use. The seat is narrow and high, designed for quick dismounts, and hardpoints bristle along the frame where weapon systems mount—empty or occupied depending on the operation.",
+  "visual_prompt": "military motorcycle, heavily armored, matte black weathered paint, ballistic composite panels, reinforced steel frame, gritty neo-noir, worn tactical vehicle, rain-slicked, industrial decay aesthetic, detailed product photography, dark studio background, neon rim lighting, cyberpunk near-future, corporate strike team weapon, practical military design, scarred metal, exposed hydraulics"
 }

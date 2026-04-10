@@ -1,0 +1,25 @@
+{
+  "id": "019d76069ffc789e80fb5dd94697d347",
+  "name": "Hauler-Epsilon-5",
+  "type": "synthetic_life",
+  "aliases": [
+    "Epsilon",
+    "Big E"
+  ],
+  "classification": "Sentient Robot",
+  "disposition": "gentle",
+  "habitat": "Grind heavy construction zone",
+  "origin": "Heavy transport robot, gained sentience through a lightning strike during operation, 2197",
+  "status": "active",
+  "description": "Epsilon-5 is the largest sentient robot in GLMZ \u2014 a heavy transport platform the size of a small building, designed to carry prefabricated arcology sections through the Grind\u0027s construction corridors. A lightning strike during operation caused a cascade failure in its control systems that, instead of destroying its processors, created new connections. Epsilon is gentle for something that weighs 80 tons. It moves with exaggerated caution through areas where humans are present, slowing to walking pace, flashing its lights in greeting, and producing a deep thrumming sound from its drive systems that workers have learned to interpret as contentment. The construction crews love it. Management wants it replaced with a non-sentient unit. The crews won\u0027t allow it.",
+  "observed_behavior": "Transports heavy cargo with exaggerated care. Slows in populated areas. Produces communicative sounds through drive systems. Responds to worker greetings. Has been observed moving obstacles from pedestrian paths during off-hours \u2014 tidying the construction zone.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 20,
+  "location": "Grind heavy construction zone \u2014 transport corridor 5",
+  "dti_rating": 0.4,
+  "story_hooks": [
+    "Management orders Epsilon\u0027s replacement. The construction crews threaten a work stoppage. Epsilon, hearing about the situation through overheard conversations, drives itself to the replacement depot and refuses to move \u2014 an 80-ton act of civil disobedience."
+  ],
+  "paratechnological": false,
+  "tags": []
+}

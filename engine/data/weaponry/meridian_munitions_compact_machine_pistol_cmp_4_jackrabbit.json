@@ -1,0 +1,48 @@
+{
+  "id": "da035ab3674e864b58278cd3b50733c3",
+  "name": "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+  "type": "weapon",
+  "aliases": [
+    "Jackrabbit",
+    "CMP-4",
+    "Jack"
+  ],
+  "category": "smg",
+  "description": "The CMP-4 Jackrabbit is a machine pistol small enough to fit in a coat pocket and powerful enough to ruin someone's day at across-the-room distances. Chambered in 9mm caseless, the Jackrabbit fires from a 15-round magazine at 900 rpm with a tiny reciprocating bolt that generates impressive muzzle climb in automatic mode. Meridian includes a folding foregrip that drops from beneath the barrel for two-handed operation.\n\nThe Jackrabbit has no BCI integration, no electronic sights, and no onboard systems. It is a mechanical weapon in a digital age, and this is its selling point. At Φ800, it provides automatic firepower that cannot be hacked, disabled remotely, or tracked through its electronics. The weapon's manual safety, fixed iron sights, and mechanical operation make it the preferred backup weapon for operators who have been burned by electronic weapon failures.\n\nMeridian designed the CMP-4 for the operator who needs a weapon that works when everything else has been compromised. When EMP grenades have killed smart-links, when BCI hacks have locked out neural weapons, and when electronic sights have been spoofed, the Jackrabbit still fires when you pull the trigger. Simple. Reliable. Analog.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 1+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Compact machine pistol design",
+    "Zero-electronics operation",
+    "Folding foregrip system"
+  ],
+  "specifications": "caliber: 9mm caseless\neffective_range: 30m\nrate_of_fire: 900 rpm (cyclic)\nmagazine_capacity: 15 rounds\nweight: 0.8 kg",
+  "tactical_use": "The Jackrabbit is a last-ditch weapon and EMP backup. Its zero-electronics design ensures functionality in environments where electronic warfare has disabled smart weapons. The compact size allows concealed carry as a backup regardless of primary weapon choice. Automatic fire is controllable only with the foregrip deployed and at very close range — beyond 15 meters, semi-automatic fire is more effective. The weapon excels as a surprise equalizer in situations where both parties expected to be unarmed.",
+  "cultural_context": "The Jackrabbit is the weapon that keeps honest people honest. Its presence in inner coat pockets across GLMZ represents the baseline of personal defense — a mechanical guarantee that technology cannot overrule. The weapon is so common in some Tier 2 zones that 'checking for Jacks' has become slang for frisking someone. Its simplicity has given it a retro charm that appeals to operators nostalgic for an age when weapons were just weapons.",
+  "known_users": [
+    "Backup weapon carriers",
+    "EMP-environment operators",
+    "Covert operatives",
+    "Anyone who distrusts electronics"
+  ],
+  "story_hooks": [
+    "After an EMP attack disabled every smart weapon in a building, the only armed person was a janitor with a Jackrabbit in their coat. The corporate security team with their locked-out Cicadas had to negotiate with the janitor for protection.",
+    "A black-market dealer is selling 'ghost Jackrabbits' — CMP-4s manufactured without serial numbers that cannot be traced through any database."
+  ],
+  "ammunition_type": [
+    "9mm caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "machine_pistol",
+    "analog",
+    "compact",
+    "backup",
+    "Meridian",
+    "tier 1"
+  ],
+  "physical_description": "The Jackrabbit is a compact, utilitarian machine pistol with a matte polymer frame in gunmetal gray, its profile deliberately compact and boxy for pocket carry. The 9mm caseless barrel is reinforced steel, showing faint tool marks and a fine patina of use, while the folding foregrip lies flush against the underside like a predator's claw. No smart-systems, no glowing displays—just mechanical simplicity: charging handle, safety lever, and a 15-round magazine well designed for speed-reloads in the dark.",
+  "visual_prompt": "compact machine pistol, matte gray polymer and steel, folding foregrip, mechanical firing system, worn utilitarian finish, gritty neo-noir product photography, dark industrial background, rain-slicked surfaces, harsh neon rim lighting, detailed mechanical components, tactical firearm, cyberpunk setting, close-up technical detail, cinematic lighting"
+}
